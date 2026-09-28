@@ -12,7 +12,7 @@ Two graph scopes:
 | Root (repo) | `graphify-out/graph.json` | `npm run graphify:refresh` / skill **graphify-root** |
 | Theme | `docs/[titulo-breve]/graphify-out/graph.json` | `npm run graphify:theme -- <slug>` / skill **graphify-theme** |
 | IEEE Thesaurus | `global/thesaurus/graphify-out/graph.json` | `npm run thesaurus:ieee` |
-| Todos (clon nuevo / refresh total, humano) | los tres anteriores | `pnpm run bootstrap` |
+| Todos (clon nuevo / refresh total) | los tres anteriores | `pnpm run bootstrap` / skill **rsl-bootstrap** |
 
 Keywords / PICO: validar cada término con `npm run thesaurus:lookup -- "<term>"` o `graphify explain "<term>" --graph global/thesaurus/graphify-out/graph.json` (UF = sinónimos, NT = específicos, USE = descriptor preferido). Si no existe, marcarlo como término libre; nunca inventar un descriptor IEEE.
 

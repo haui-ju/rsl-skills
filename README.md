@@ -2,10 +2,19 @@
 
 Nomenclatura skills: `rsl-*` / `graphify-*` (inglés).
 
+## Paso 0 — Preparar el entorno (recién clonado / máquina nueva)
+
+```text
+Usa rsl-bootstrap
+```
+
+El agente verifica/instala prerrequisitos (node + pnpm, pipx graphifyy, poppler), corre `pnpm install` y `pnpm run bootstrap` (grafo root + thesaurus IEEE + todos los temas) y reporta PASS/FAIL. A mano: ver [Clonar en otra máquina](#clonar-en-otra-máquina).
+
 ## Skills RSL
 
 | Skill | Qué hace | Salida |
 |-------|----------|--------|
+| `rsl-bootstrap` | Paso 0: deja el entorno y todos los grafos Graphify listos | `graphify-out/` · `global/thesaurus/graphify-out/` · `docs/*/graphify-out/` |
 | `rsl-topic-panel` | Estresa un tema (4 agentes + debate Mermaid + consenso) | `docs/[titulo-breve]/topic.md` |
 | `rsl-make-report` | Genera el informe UTP (7 puntos) | `docs/[titulo-breve]/informe.md` |
 | `rsl-polish-report` | Pule el informe (4 agentes) | `docs/[titulo-breve]/informe-polish.md` |
@@ -147,7 +156,8 @@ Derivados gitignored (licencia CC BY-NC-ND).
 ## Orden sugerido
 
 ```text
-rsl-topic-panel
+rsl-bootstrap             ← paso 0 (una vez por clon / máquina)
+  → rsl-topic-panel
   → rsl-make-report
   → PDFs en RSL/PDF/
   → graphify-theme (PASS)
