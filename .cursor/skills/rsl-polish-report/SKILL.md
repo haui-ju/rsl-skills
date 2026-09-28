@@ -44,10 +44,11 @@ Spanish académico-profesional with connectors; cohesive paragraphs.
 ## Procedure (required)
 
 1. Read `informe.md` (+ `topic.md`). Prefer theme Graphify lookup if `graphify-out/graph.json` exists (`graphify query ... --graph docs/[tema]/graphify-out/graph.json`). Do **not** refresh Graphify here. Avoid loading full PDFs; they live under `RSL/PDF/`.
-2. Launch in parallel: `critico-rsl`, `defensor-rsl`, `impacto-social-rsl`, `viabilidad-negocio-rsl`.
-3. Shared prompt: informe package + “Evalúa/mejora este INFORME. Responde en español con el formato de tu rol.”
+2. **Auditoría de vocabulario** (`playbooks/vocabulario-controlado.md`): extraer todos los términos EN de la sección 2 (PICOC, tabla y query) y correr **una** vez `pnpm -s thesaurus:check "…" "…"`. Si el informe no trae marco PICOC, construirlo en el polish.
+3. Launch in parallel: `critico-rsl`, `defensor-rsl`, `impacto-social-rsl`, `viabilidad-negocio-rsl`.
+   Shared prompt: informe package + tabla de `thesaurus:check` + “Evalúa/mejora este INFORME. Responde en español con el formato de tu rol.”
 4. Brief debate synthesis in chat.
-5. Write **`informe-polish.md`** (do not overwrite `informe.md` unless the user explicitly asks). Keep the same 7-point headings.
+5. Write **`informe-polish.md`** (do not overwrite `informe.md` unless the user explicitly asks). Keep the same 7-point headings. Sección 2 con el formato de `rsl-make-report` (PICOC + tabla con `Tipo`/`Pág. IEEE` + query por bloques + libres justificados): no preferidos sustituidos por su USE, UF incorporados, ningún término nuevo sin pasar por `thesaurus:check`.
 6. List main changes and still-missing PDFs under `RSL/PDF/`.
 7. Chat — siguiente paso (no ejecutar aquí):
 
@@ -62,3 +63,4 @@ Usa rsl-make-paper sobre docs/[titulo-breve]/
 - Dropping UTP section structure (incl. 1.1 / 1.2 / 1.3).
 - Moving or dumping PDFs into the theme root.
 - Saving outside `docs/[titulo-breve]/`.
+- Dejar en sección 2 descriptores inventados o no validados contra el thesaurus IEEE.

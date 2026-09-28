@@ -72,6 +72,7 @@ After all four return, the orchestrator (you):
 2. Optionally launch **one short follow-up** to critic and defender with the other’s key points (“responde a estos ataques/contraataques con evidencia web si hace falta”).
 3. Build recommendations that agents would force on each other.
 4. Force a **single converged topic** (not four alternatives). Prefer the sharpest version that survives the critic while keeping social/business value and SE alignment.
+5. **Tópicos (3) finales con vocabulario IEEE** (`playbooks/vocabulario-controlado.md`): una llamada `pnpm -s thesaurus:check "…"` con las formulaciones EN de los 3 tópicos; en `### Tópicos (3) finales` anotar por tópico `IEEE: <descriptor> (p.N)` o `Libre: <término>` (+ motivo). Esto alimenta el PICOC de `rsl-make-report`; no construir la query aquí.
 
 ### Write `topic.md`
 

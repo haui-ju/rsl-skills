@@ -83,6 +83,7 @@ Align the research problem with the ficha: the **problemática is an interrogati
    ```
    Prefer `RSL/MD/` chunks via locators; do **not** dump full PDFs. Do **not** refresh Graphify unless the user asks.
 4. If Graphify missing/stale and user attached new RSL files → suggest `Usa graphify-theme sobre docs/[tema]/`; still write `paper.md` from available sources.
+   **Términos técnicos (§1.1 Definiciones, §5 método):** reutilizar los descriptores de la sección 2 de la ficha; si aparece un término EN nuevo, validarlo con `pnpm -s thesaurus:check "…"` (`playbooks/vocabulario-controlado.md`). En el texto visible no citar el thesaurus como fuente de la definición; en §5 sí declarar que las cadenas usan vocabulario controlado IEEE + términos libres.
 5. Write **`paper.md`** with the **exact section structure** below — **maximal useful expansion**.
 6. Chat: path, sources, next step `Usa rsl-polish-paper sobre docs/[titulo-breve]/paper.md`
 

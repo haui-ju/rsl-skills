@@ -272,13 +272,64 @@ def lookup(q: str) -> None:
                 print(f"  {r}: {' | '.join(e[r])}")
 
 
+def resolve(q: str, terms: dict) -> dict | None:
+    k = key(q)
+    for cand in (k, k[:-1] if k.endswith("s") else k + "s", k[:-2] if k.endswith("es") else None):
+        if cand and cand in terms:
+            return terms[cand]
+    return None
+
+
+def near(q: str, terms: dict, n: int = 4) -> list[str]:
+    import difflib
+
+    k = key(q)
+    generic = {"with", "from", "large", "small", "high", "based", "using", "model", "models", "system", "systems"}
+    words = [w for w in re.split(r"[\s\-/]+", k) if len(w) > 3 and w not in generic]
+    close = difflib.get_close_matches(k, list(terms), n=n, cutoff=0.82)
+    exact_words = [w for w in words if w in terms]
+    contains_all = [t for t in terms if words and all(w in t.split() for w in words) and t != k]
+    df = {w: sum(w in t.split() for t in terms) for w in words}
+    contains_any = sorted(
+        (t for t in terms if any(w in t.split() for w in words) and terms[t]["preferred"]),
+        key=lambda t: (min(df[w] for w in words if w in t.split()), len(t.split()), t),
+    )
+    ranked = dict.fromkeys(close + exact_words + contains_all + contains_any)
+    return [terms[t]["term"] for t in ranked][:n]
+
+
+def check(queries: list[str]) -> None:
+    """Tabla Markdown lista para PICOC/keywords: estado IEEE de cada término."""
+    terms = json.loads(JSON_OUT.read_text(encoding="utf-8"))["terms"]
+    cell = lambda xs, lim=6: " · ".join(xs[:lim]) + (" …" if len(xs) > lim else "") if xs else "—"
+    print("| Término consultado | Estado | Descriptor IEEE | UF (sinónimos) | NT (específicos) | BT | Pág. | Cercanos (verificar, no equivalentes) |")
+    print("|---|---|---|---|---|---|---|---|")
+    for q in queries:
+        e = resolve(q, terms)
+        if e is None:
+            print(f"| {q} | LIBRE (sin descriptor IEEE) | — | — | — | — | — | {cell(near(q, terms))} |")
+            continue
+        status = "IEEE preferido"
+        if not e["preferred"]:
+            status = f"IEEE no preferido → USE"
+            pref = [terms[key(t)] for t in e["USE"] if key(t) in terms]
+            if pref:
+                e = pref[0]
+        uf = [t for t in e["UF"] if key(t) != key(q)]
+        print(f"| {q} | {status} | {e['term']} | {cell(uf)} | {cell(e['NT'])} | {cell(e['BT'], 3)} | p.{e['page']} | — |")
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--parse-only", action="store_true")
     ap.add_argument("--lookup")
+    ap.add_argument("--check", nargs="+", metavar="TERM")
     a = ap.parse_args()
     if a.lookup:
         lookup(a.lookup)
+        return
+    if a.check:
+        check(a.check)
         return
     if not PDF.exists():
         sys.exit(f"missing {PDF}")

@@ -57,13 +57,19 @@ Spanish **académico-profesional** with connectors; cohesive paragraphs; no coll
 
 - `global/lineas-utp.md`
 - `global/competencias.md`
+- `playbooks/vocabulario-controlado.md` — **protocolo obligatorio** para PICOC y palabras clave (thesaurus IEEE)
 - Optional prior verdict: `docs/[titulo-breve]/topic.md`
 
 ## Procedure (required)
 
 1. Resolve folder `docs/[titulo-breve]/` (same theme as `topic.md` if it exists). Ensure `RSL/PDF/` exists.
 2. Normalize título / problemática / objeto (may use afilado from `topic.md` if user agrees or verdict was GO_con_cambios).
-3. **Keywords** ES|EN + Scopus query (**always**).
+3. **PICOC + keywords + Scopus query (always)** siguiendo `playbooks/vocabulario-controlado.md`:
+   - Conceptos por componente (PICOC por defecto; PICO / PICOCT si el usuario lo pide).
+   - **Una** llamada `pnpm -s thesaurus:check "…" "…"` con todos los candidatos EN.
+   - Descriptor IEEE preferido cuando existe (USE si era no preferido); UF al mismo `OR`; LIBRE marcado y justificado.
+   - Query por bloques de componente; debajo, términos libres + páginas IEEE.
+   - Si falta el grafo del thesaurus → pedir `Usa rsl-bootstrap`; no inventar descriptores.
 4. **Up to 3 SLRs** (mínimo 2 revisiones; si no hay, mínimo 5 originales con antigüedad menor a 5 años). Download PDFs into `RSL/PDF/`. If fewer, add Scopus queries / placeholders. Never invent DOI/PDF.
 5. Sections 4–7 (section 4 ≤ 300 words; **citar las RSL de la sección 3**).
 6. Write `informe.md` with the **exact 7-point structure** below.
@@ -100,14 +106,22 @@ Exactly these 7 UTP points (do not invent a separate “paso 8” inside the fil
 
 ## 2. Palabras clave
 
-| Español | Inglés |
-|---------|--------|
-| ... | ... |
+**Marco PICOC (vocabulario controlado IEEE Thesaurus 2019):**
 
-**Query Scopus (sugerida):**
+| Componente | Concepto (ES) | Descriptor IEEE | Sinónimos (UF / variantes) | Términos libres (justificación) | Pág. IEEE |
+|------------|---------------|-----------------|----------------------------|----------------------------------|-----------|
+| P / I / C / O / Contexto | ... | ... o — | ... | ... | p.N o — |
+
+| Español | Inglés | Tipo | Pág. IEEE |
+|---------|--------|------|-----------|
+| ... | ... | IEEE · IEEE (USE desde "…") · Libre | p.N o — |
+
+**Query Scopus (sugerida, por bloques PICOC):**
 \`\`\`
 ...
 \`\`\`
+
+*Términos libres (sin descriptor IEEE):* ... — justificación breve.
 
 ## 3. Artículos de revisión de literatura relacionados con el tema de investigación
 
@@ -146,5 +160,6 @@ Exactly these 7 UTP points (do not invent a separate “paso 8” inside the fil
 - Launching polish agents (only suggest the invoke command in chat).
 - Leaving SLR PDFs outside `RSL/PDF/`.
 - Omitting keywords/query when SLRs are missing.
+- Keywords/PICOC sin `thesaurus:check`, o presentar como descriptor IEEE un término LIBRE / no preferido.
 - Colloquial prose in narrative sections.
 - Collapsing 1.1 / 1.2 / 1.3 into three top-level sections numbered 1–3.

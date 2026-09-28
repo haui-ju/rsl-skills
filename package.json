@@ -17,6 +17,7 @@
     "graphify:query": "graphify query",
     "thesaurus:ieee": "~/.local/share/pipx/venvs/graphifyy/bin/python scripts/thesaurus-ieee.py",
     "thesaurus:lookup": "~/.local/share/pipx/venvs/graphifyy/bin/python scripts/thesaurus-ieee.py --lookup",
+    "thesaurus:check": "~/.local/share/pipx/venvs/graphifyy/bin/python scripts/thesaurus-ieee.py --check",
     "graphify:open": "xdg-open graphify-out/graph.html || open graphify-out/graph.html || true"
   },
   "engines": {

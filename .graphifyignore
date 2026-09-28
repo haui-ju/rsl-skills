@@ -1,4 +1,4 @@
-# Root Graphify = project memory only (skills, agents, scripts, global/, README, candidatos, tools/).
+# Root Graphify = project memory only (skills, agents, scripts, global/, playbooks/, README, candidatos, tools/).
 # Theme corpora live in docs/[tema]/ and are indexed via: pnpm graphify:theme -- <slug>
 docs/**
 

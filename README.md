@@ -51,7 +51,9 @@ docs/[titulo-breve]/
 Root (proyecto):
 
 ```text
-graphify-out/     ← memoria Graphify del repo (skills, global/, README…)
+graphify-out/     ← memoria Graphify del repo (skills, global/, playbooks/, README…)
+global/           ← archivos generales que integra el usuario (líneas UTP, competencias, thesaurus)
+playbooks/        ← protocolos compartidos que siguen varias skills (p. ej. vocabulario-controlado.md)
 ```
 
 Agentes: `.cursor/agents/` (`critico-rsl`, `defensor-rsl`, `impacto-social-rsl`, `viabilidad-negocio-rsl`)
@@ -142,6 +144,7 @@ graphify query "digital accessibility" --graph docs/ia-inclusion-cognitiva-softw
 
 ```bash
 npm run thesaurus:ieee                              # PDF → ieee-thesaurus.json + graphify-out/graph.json
+pnpm -s thesaurus:check "machine learning" "autism" "large language models"   # tabla lista para PICOC
 npm run thesaurus:lookup -- "Human computer interaction"
 graphify explain "Assistive technology" --graph global/thesaurus/graphify-out/graph.json
 graphify path "Machine learning" "Usability" --graph global/thesaurus/graphify-out/graph.json
@@ -150,6 +153,8 @@ graphify path "Machine learning" "Usability" --graph global/thesaurus/graphify-o
 Aristas: `broader` (BT) · `narrower` (NT) · `related` (RT) · `use` (no preferido → preferido). Cada nodo lleva `p.N` del PDF.
 Si un concepto **no** aparece (p. ej. *Accessibility*, *Neurodiversity*, *LLM* en la edición 2019) se declara vacío de vocabulario y se usa término libre — no inventar descriptor IEEE.
 Derivados gitignored (licencia CC BY-NC-ND).
+
+**Protocolo en las skills:** `rsl-topic-panel` (tópicos), `rsl-make-report` (PICOC + keywords + query), `rsl-polish-report` (auditoría + crítico), `rsl-make-paper` (definiciones/método) siguen [`playbooks/vocabulario-controlado.md`](playbooks/vocabulario-controlado.md): descriptor IEEE preferido (USE si era no preferido) + UF al `OR` + términos libres marcados y justificados. Nunca un descriptor inventado.
 
 ---
 

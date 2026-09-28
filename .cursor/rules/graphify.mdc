@@ -14,7 +14,7 @@ Two graph scopes:
 | IEEE Thesaurus | `global/thesaurus/graphify-out/graph.json` | `npm run thesaurus:ieee` |
 | Todos (clon nuevo / refresh total) | los tres anteriores | `pnpm run bootstrap` / skill **rsl-bootstrap** |
 
-Keywords / PICO: validar cada término con `npm run thesaurus:lookup -- "<term>"` o `graphify explain "<term>" --graph global/thesaurus/graphify-out/graph.json` (UF = sinónimos, NT = específicos, USE = descriptor preferido). Si no existe, marcarlo como término libre; nunca inventar un descriptor IEEE.
+Keywords / PICO / PICOC / PICOCT / queries: seguir `playbooks/vocabulario-controlado.md`. Validar todos los términos en una llamada `pnpm -s thesaurus:check "t1" "t2" …` (detalle: `thesaurus:lookup`, `graphify explain … --graph global/thesaurus/graphify-out/graph.json`). UF = sinónimos, NT = específicos, USE = descriptor preferido. Si no existe → término libre justificado; nunca inventar un descriptor IEEE.
 
 ## Lookup (default — agents MAY query)
 
