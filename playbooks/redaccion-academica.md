@@ -10,7 +10,7 @@ Objetivo: prosa final académica, natural y limpia, que un docente lea de corrid
 |-----|---------|
 | Chequeo automático de forma | `pnpm -s redaccion:lint <archivo.md>` → FAIL bloquea; WARN se corrige o se justifica |
 | Citas en texto ↔ referencias | `pnpm -s paper:status docs/<slug> --cites [archivo]` |
-| Revisión con juicio (naturalidad, densidad) | agente `redaccion-rsl` |
+| Revisión con juicio (naturalidad, densidad, hilo entre oraciones y párrafos) | agente `redaccion-rsl` (tabla Hilo, R7) |
 
 `redaccion:lint` analiza solo prosa: omite tablas, código, encabezados, comentarios y la sección Referencias.
 
@@ -57,6 +57,21 @@ La notación compacta (×, →) solo se admite en tablas y figuras.
 
 - Título del paper ≤ 20 palabras, sin subtítulo en cascada (evitar "…: A, B y C — una revisión sistemática…").
 - El título del paper se mantiene **cercano al título tentativo de la ficha** (sección 7); si se cambia uno, se alinea el otro.
+
+### R7 — Coherencia y progresión: cada párrafo transmite algo y conduce al siguiente (FAIL)
+
+El lint no lo ve; lo juzga `redaccion-rsl` con la tabla Hilo. Un texto con siglas definidas y oraciones cortas puede fallar aquí.
+
+- **Una intención por párrafo, anunciada en su primera oración.** Si el párrafo no se resume en una línea ("este párrafo explica por qué se eligió PICOC"), está mal construido.
+- **Cada oración retoma algo de la anterior** (de lo conocido a lo nuevo). Prohibidas las cadenas de oraciones sueltas en las que cada punto define una cosa distinta.
+- **Transición entre párrafos y entre secciones.** El párrafo B se engancha con lo que dejó A: consecuencia (*por eso*, *de ahí que*), contraste (*sin embargo*), siguiente paso (*con esas palabras clave…*) o precisión (*esa decisión implica…*). No se salta de un tema a otro sin puente.
+- **Guiar al lector: primero la necesidad, después la herramienta.** No se abre un apartado con el nombre de la herramienta y su definición ("La selección se reporta conforme a PRISMA 2020, una guía de 27 ítems…"); primero se plantea qué problema resuelve.
+- **Decisiones de método, patrón fijo:** necesidad del estudio → por qué no basta la alternativa obvia → decisión → qué aporta según la fuente (cita) → cómo se aplica en esta revisión.
+
+| Antes (oraciones sueltas, empieza por la herramienta) | Después (hilo: necesidad → decisión → fuente → aplicación) |
+|---|---|
+| *Kitchenham y Charters (2007, p. 11) adoptan PICOC para la Ingeniería de Software a partir de la propuesta de Petticrew y Roberts. El marco suma dos componentes a la pregunta clínica de población, intervención y resultado: la comparación […] y el contexto […]. Se eligió porque esos dos componentes son centrales en este tema.* | *La pregunta de esta revisión no se limita a saber si la inteligencia artificial mejora la accesibilidad: exige además contrastarla con la accesibilidad sensorial y situar cada intervención en una fase del ciclo de vida. El marco clínico de población, intervención y resultado no deja lugar para esos dos ejes. Por eso se adoptó PICOC, que Kitchenham y Charters (2007, p. 11) recomiendan para la Ingeniería de Software y que añade precisamente la comparación y el contexto.* |
+| *La selección se reporta conforme a PRISMA 2020, una guía de 27 ítems con un diagrama de flujo que registra cuántos registros entran y salen en cada etapa (Page et al., 2021, p. 1).* | *Las ecuaciones recuperan muchos registros, y buena parte no responderá a la pregunta. Pasar de ese conjunto a los estudios incluidos exige decisiones que el lector debe poder revisar. Por eso la selección se documenta según PRISMA 2020 (Page et al., 2021, p. 1).* |
 
 ## Ejemplos (antes → después)
 

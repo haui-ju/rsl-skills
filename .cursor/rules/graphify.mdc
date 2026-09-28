@@ -5,7 +5,7 @@ alwaysApply: true
 
 # Graphify (FIS)
 
-Four graph scopes, same commands `pnpm graphify:<scope>:<refresh|status|query|open>`:
+Five graph scopes, same commands `pnpm graphify:<scope>:<refresh|status|query|open>`:
 
 | Scope | Graph path | Refresh |
 |-------|------------|---------|
@@ -13,9 +13,12 @@ Four graph scopes, same commands `pnpm graphify:<scope>:<refresh|status|query|op
 | theme | `docs/[titulo-breve]/graphify-out/graph.json` | `pnpm graphify:theme:refresh <slug>` / skill **graphify-theme** |
 | thesaurus (IEEE) | `global/thesaurus/graphify-out/graph.json` | `pnpm graphify:thesaurus:refresh` |
 | examples (papers) | `global/examples/graphify-out/graph.json` | `pnpm graphify:examples:refresh` |
-| Todos (clon nuevo / refresh total) | los cuatro anteriores | `pnpm run bootstrap` / skill **rsl-bootstrap** |
+| bibliography (fuentes metodológicas) | `global/bibliography/graphify-out/graph.json` | `pnpm graphify:bibliography:refresh` |
+| Todos (clon nuevo / refresh total) | los cinco anteriores | `pnpm run bootstrap` / skill **rsl-bootstrap** |
 
-Validar sin reconstruir: `pnpm graphify:<scope>:status`. Consultar: `pnpm graphify:root:query "…"`, `pnpm graphify:theme:query <slug> "…"`, `pnpm graphify:thesaurus:query "…"`, `pnpm graphify:examples:query "…"`.
+Validar sin reconstruir: `pnpm graphify:<scope>:status`. Consultar: `pnpm graphify:root:query "…"`, `pnpm graphify:theme:query <slug> "…"`, `pnpm graphify:thesaurus:query "…"`, `pnpm graphify:examples:query "…"`, `pnpm graphify:bibliography:query "…"`.
+
+Fuentes metodológicas (PICOC, PRISMA…): catálogo `global/bibliography/bibliography.md` primero (referencia, página citable); si falta la obra, PDF de acceso abierto en `global/bibliography/<carpeta>/` + `pnpm -s rsl:source <pdf>`.
 
 Keywords / marco de búsqueda (PICO, PIO, PICOC, PICOCT…) / queries: seguir `playbooks/vocabulario-controlado.md`. Validar todos los términos en una llamada `pnpm -s thesaurus:check "t1" "t2" …` (detalle: `thesaurus:lookup`, `graphify explain … --graph global/thesaurus/graphify-out/graph.json`). UF = sinónimos, NT = específicos, USE = descriptor preferido. Si no existe → término libre justificado; nunca inventar un descriptor IEEE. El marco (libre, `formato.marco` de `docs/<slug>/config.yml`, por defecto PICOCT) va versionado en `docs/<slug>/picoc/<fecha>-<MARCO>/picoc.md`, generado solo por la skill **rsl-picoc**, no en el informe; ver el último con `pnpm -s picoc:latest docs/<slug>` y verificar con `pnpm -s picoc:lint docs/<slug>`.
 

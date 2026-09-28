@@ -24,7 +24,7 @@ Invoke: `Usa rsl-polish-paper sobre docs/<slug>/`. Internal inputs (`topic.md`, 
 
 ## Polish rules
 
-Form: `playbooks/redaccion-academica.md` (siglas, one idea per sentence, 2–5 sentence paragraphs with real connectors, no work notation). On top of it, only for the polish:
+Form: `playbooks/redaccion-academica.md` (siglas, one idea per sentence, 2–5 sentence paragraphs with real connectors, no work notation, R7: each paragraph has one intention and leads into the next; need before tool). On top of it, only for the polish:
 
 - Compact document: only H2 groups and H3 sections (no `####`); per block one core idea plus minimal evidence; no wall paragraphs.
 - Contexto: about 4 linked paragraphs (norm/framework → delimit the object → anchors woven into one thread → tensions that lead to El problema); it does not dump the whole state of the art.
@@ -47,7 +47,11 @@ Language per `formato.idioma` (Abstract/Resumen per `formato.resumen`); headings
 
 Contexto 3–5 short paragraphs · El problema 3–4 (arises from the previous → question → gap → contrast) · Justificación 2–4 · Objetivo de la RSL 2–3 · Organización 1 (coherent with the `on` groups).
 
-- Metodología: tables and queries of the latest picoc as they are; `marco-pico` names the configured framework and its components in words; title from `paper:status`. PRISMA only from `RSL/seleccion/`.
+- Metodología: same content rules as the [Metodología template of rsl-make-paper](../rsl-make-paper/SKILL.md#metodología-template-draft); the polish only tightens the prose.
+  - Tables, keywords, Scopus and Web of Science queries and CI/CE criteria stay as in the latest picoc.
+  - The framework justification cites Kitchenham y Charters (2007) and the PRISMA paragraph cites Page et al. (2021), both from `global/bibliography/bibliography.md` with the printed page of the catalog.
+  - User markers (`X`, `n = X`, `[[ AGREGAR DIAGRAMA ]]`) are kept exactly; PRISMA counts only from `RSL/seleccion/`.
+  - Length: framework justification 1–2 paragraphs; the PRISMA paragraph 1 paragraph plus the numbered steps.
 - Resultados / Discusión / Conclusión: only from `RSL/extraccion/`, per `format.results_by`.
 - Presentation (tables, figures, order) may imitate the recurring structure of `global/examples/` (one graph query); never their text.
 - **Referencias** = every work cited, rebuilt every run, per `formato.citas` and `global/citation-style/<STYLE>.md`.
@@ -55,12 +59,12 @@ Contexto 3–5 short paragraphs · El problema 3–4 (arises from the previous �
 ## Procedure
 
 1. `pnpm -s paper:status docs/<slug>`. `ERROR` → stop and report. Nothing in **A mejorar** / **A reescribir** → only run `--cites` on the latest polish, report STALE / BLOCKED, stop (no version, no debate block). If the header says `etapas cerradas: …polish` (the latest version already has a finished polish) → `pnpm -s paper:status docs/<slug> --new-version`. Work only on A mejorar / A reescribir; STALE and BLOCKED are reported untouched (`WARN picoc …` → suggest `Usa rsl-picoc sobre docs/<slug>/`).
-2. Read once: the worked sections of the borrador (and of the current polish for `on`), the frozen neighbors, the picoc general question and RQs. Evidence only via `graphify query … --graph docs/<slug>/graphify-out/graph.json` (no refresh, no full PDFs).
+2. Read once: the worked sections of the borrador (and of the current polish for `on`), the frozen neighbors, the picoc general question and RQs; with Metodología in the run, also `global/bibliography/bibliography.md`. Evidence only via `graphify query … --graph docs/<slug>/graphify-out/graph.json` or `pnpm graphify:bibliography:query "…"` (no refresh, no full PDFs).
 3. Agents in parallel (mode **sección**; prompt = the worked sections with their state, frozen neighbors as short context, the rules above; "no releer archivos completos"; at most 8 items each; web only to verify a claim):
    - `critico-rsl` and `defensor-rsl` always.
    - `impacto-social-rsl` only if `justificacion` or `objetivo-rsl` is being worked.
 4. Brief synthesis in chat; write the polished sections (frozen copied unchanged; Referencias rebuilt).
-5. `redaccion-rsl` on the worked sections with `pnpm -s redaccion:lint docs/<slug>/paper/<fecha>/paper-polish.md`; apply its fixes (form only) until those sections have 0 FAIL and every WARN fixed or justified. FAILs inside frozen sections are reported (suggest `on`); they do not block.
+5. `redaccion-rsl` on the worked sections with `pnpm -s redaccion:lint docs/<slug>/paper/<fecha>/paper-polish.md`; apply its fixes (form only) until its verdict is PASS: every paragraph OK in the **Hilo** table (R7: one intention, transition from the previous paragraph, need before tool), 0 FAIL and every WARN fixed or justified. Its answer must include the Hilo table and the rewritten paragraphs; if they are missing, relaunch it (never apply its summary by hand). After applying, run it again on the changed paragraphs. FAILs inside frozen sections are reported (suggest `on`); they do not block.
 6. `citas-rsl` with `pnpm -s paper:status docs/<slug> --cites` until PASS or justified `PENDIENTE`.
 7. Append a block to `paper-debate.md` (keep earlier blocks): date, worked sections, agents used, key decisions table, Redacción and Citas pass/fail.
 8. `pnpm -s paper:status docs/<slug> --update polish` (no FAIL).
@@ -77,7 +81,7 @@ The last message of the skill is exactly one line:
 
 - Rewrite from scratch; editing previous versions, `paper-borrador.md`, informe, picoc or topic.
 - Editing frozen sections (except re-rendering citations if `formato.citas` changed), states in `config.yml`, `paper.shadow.yml` or `paper.state.jsonc`.
-- Generating off or BLOCKED sections; inventing PRISMA counts, results or DOI.
+- Generating off or BLOCKED sections; inventing PRISMA counts, search dates, results or DOI; replacing a user marker (`X`, `[[ … ]]`).
 - Deleting markers; `####` in the polish; raw debate inside `paper-polish.md`.
 - Delivering with `redaccion:lint` FAIL in worked sections or `--cites` FAIL.
 - Refreshing Graphify; copying from `global/examples/`.

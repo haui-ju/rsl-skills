@@ -13,6 +13,7 @@ WARN (revisar; corregir o justificar):
   - oraciones de más de N palabras
   - notación de trabajo en la prosa (×, →, A+B, sufijos -duro/-dura)
   - párrafos con más de 3 siglas distintas
+Marcadores del usuario (no fallan; se cuentan en la línea OK): [[ … ]] (p. ej. [[ AGREGAR DIAGRAMA ]]) y X como dato pendiente (n = X).
 
 Solo se analiza prosa: se omiten bloques de código, tablas, comentarios HTML, encabezados, enlaces y la sección Referencias.
 """
@@ -43,9 +44,12 @@ NOTATION = [
     (re.compile(r"\b\w+\+\w+\b"), "unión con + (p. ej. «GenAI+web»): usa «y» o reformula"),
     (re.compile(r"\b\w+-dur[oa]s?\b", re.I), "sufijo híbrido «-duro/-dura»: explica qué significa"),
 ]
-# Siglas que no requieren definición (unidades, romanos, nombres propios de norma ya expandidos por convención).
-ALLOW = {"TODO", "FIXME", "TBD", "XXX", "PENDIENTE", "II", "III", "IV", "VI", "VII", "VIII", "IX", "XI", "XII", "ISO", "IEEE", "ACM", "DOI", "URL", "PDF", "HTML", "AA", "AAA"}
+# Siglas que no requieren definición (unidades, romanos, operadores booleanos, nombres propios de norma ya expandidos por convención).
+ALLOW = {"TODO", "FIXME", "TBD", "XXX", "PENDIENTE", "AND", "OR", "NOT", "II", "III", "IV", "VI", "VII", "VIII", "IX", "XI", "XII", "ISO", "IEEE", "ACM", "DOI", "URL", "PDF", "HTML", "AA", "AAA"}
 ROMAN = re.compile(r"^[IVXLC]+$")
+CODE_ID = re.compile(r"^(?:RQ|CI|CE)\d+$")
+USER_BLOCK = re.compile(r"\[\[[^\[\]\n]+\]\]")
+USER_X = re.compile(r"(?<![\w-])X(?![\w-])")
 
 
 def prose_blocks(text: str) -> list[tuple[int, str]]:
@@ -64,6 +68,9 @@ def prose_blocks(text: str) -> list[tuple[int, str]]:
                 out.append((start, " ".join(buf)))
                 buf = []
             continue
+        if buf and re.match(r"^(?:[-*+]|\d+\.)\s", s):
+            out.append((start, " ".join(buf)))
+            buf = []
         if not buf:
             start = i
         buf.append(s)
@@ -122,11 +129,11 @@ def main(argv: list[str]) -> int:
             fails.append(f"L{n}: huella del flujo interno «{mi.group(0)}»")
         for cs in CODE_SPAN.finditer(p):
             fails.append(f"L{n}: código/ruta en la prosa {cs.group(0)}")
-        p = CODE_SPAN.sub("", p)
+        p = USER_BLOCK.sub("", CODE_SPAN.sub("", p))
         acr_here = set()
         for m in ACRONYM.finditer(p):
             a = m.group(1)
-            if a in ALLOW or ROMAN.match(a) or len(a) > 12 or re.match(r"\s\d", p[m.end():]):
+            if a in ALLOW or ROMAN.match(a) or CODE_ID.match(a) or len(a) > 12 or re.match(r"\s\d", p[m.end():]):
                 continue
             acr_here.add(a)
             if n in header_lines:
@@ -145,13 +152,17 @@ def main(argv: list[str]) -> int:
             if words > max_words:
                 warns.append(f"L{n}: oración de {words} palabras (máx. {max_words}): «{sent[:70]}…»")
 
+    body = re.sub(r"<!--.*?-->", "", text, flags=re.S)
+    body = re.sub(r"^```.*?^```", "", body, flags=re.S | re.M)
+    n_user = len(USER_BLOCK.findall(body)) + len(USER_X.findall(USER_BLOCK.sub("", body)))
+    pending = f"; {n_user} marcador(es) del usuario por completar (X, [[ … ]])" if n_user else ""
     for f in fails:
         print(f"  - {f}")
     for w in warns:
         print(f"  ~ {w}")
     if fails:
         return error(f"redacción de {path}: {len(fails)} error(es) y {len(warns)} aviso(s) (ver detalle arriba)", "corrígelos con redaccion-rsl según playbooks/redaccion-academica.md")
-    return ok(f"redacción de {path} sin errores ({len(warns)} aviso(s) a corregir o justificar)")
+    return ok(f"redacción de {path} sin errores ({len(warns)} aviso(s) a corregir o justificar{pending})")
 
 
 if __name__ == "__main__":

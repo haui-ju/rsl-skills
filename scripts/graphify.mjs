@@ -4,7 +4,7 @@
  *
  *   node scripts/graphify.mjs <alcance> <acción> [args]
  *
- * Alcances: root · theme · thesaurus · examples
+ * Alcances: root · theme · thesaurus · examples · bibliography
  * Acciones: refresh (actualizar) · status (validar) · query (consultar) · open (abrir graph.html)
  *
  *   pnpm graphify:root:query "skills rsl"
@@ -12,6 +12,7 @@
  *   pnpm graphify:theme:query ia-inclusion-cognitiva-software "cognitive accessibility"
  *   pnpm graphify:thesaurus:query "machine learning"
  *   pnpm graphify:examples:status
+ *   pnpm graphify:bibliography:query "PICOC"
  *
  * theme: si se omite el slug y solo hay un tema con RSL/, se usa ese.
  * status sale con código 1 si el grafo falta o está desactualizado.
@@ -33,7 +34,7 @@ const [scope, action, ...rest] = process.argv.slice(2);
 const flags = rest.filter((a) => a.startsWith('--'));
 const positional = rest.filter((a) => !a.startsWith('--'));
 
-const SCOPES = ['root', 'theme', 'thesaurus', 'examples'];
+const SCOPES = ['root', 'theme', 'thesaurus', 'examples', 'bibliography'];
 const ACTIONS = ['refresh', 'status', 'query', 'open'];
 
 function usage(msg) {
@@ -78,13 +79,14 @@ function graphPath(s, slug) {
     theme: `docs/${slug}/graphify-out/graph.json`,
     thesaurus: 'global/thesaurus/graphify-out/graph.json',
     examples: 'global/examples/graphify-out/graph.json',
+    bibliography: 'global/bibliography/graphify-out/graph.json',
   }[s];
 }
 
 function walk(dir, out = []) {
   if (!existsSync(dir)) return out;
   for (const n of readdirSync(dir)) {
-    if (['graphify-out', 'node_modules', '.git', '_raw', '__pycache__', 'thesaurus', 'examples', '.output', 'dist'].includes(n)) continue;
+    if (['graphify-out', 'node_modules', '.git', '_raw', '__pycache__', 'thesaurus', 'examples', 'bibliography', '.output', 'dist'].includes(n)) continue;
     const p = path.join(dir, n);
     const st = statSync(p);
     if (st.isDirectory()) walk(p, out);
@@ -203,6 +205,14 @@ switch (scope) {
     const rel = graphPath('examples');
     if (action === 'refresh') code = run(graphifyPy, ['scripts/graphify-examples.py', ...flags]);
     if (action === 'status') code = run(graphifyPy, ['scripts/graphify-examples.py', '--status']);
+    if (action === 'query') code = query(rel, positional);
+    if (action === 'open') code = openHtml(rel);
+    break;
+  }
+  case 'bibliography': {
+    const rel = graphPath('bibliography');
+    if (action === 'refresh') code = run(graphifyPy, ['scripts/graphify-bibliography.py', ...flags]);
+    if (action === 'status') code = run(graphifyPy, ['scripts/graphify-bibliography.py', '--status']);
     if (action === 'query') code = query(rel, positional);
     if (action === 'open') code = openHtml(rel);
     break;

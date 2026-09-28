@@ -4,7 +4,7 @@
  *
  *   pnpm run bootstrap
  *
- * Orden: prerrequisitos → root → thesaurus IEEE → ejemplos global/examples → temas docs/* con RSL/ → resumen.
+ * Orden: prerrequisitos → root → thesaurus IEEE → ejemplos global/examples → bibliografía global/bibliography → temas docs/* con RSL/ → resumen.
  * Los temas no re-extraen PDFs ya indexados (mismo sha en RSL/index-manifest.json).
  */
 import { spawnSync } from 'node:child_process';
@@ -58,6 +58,7 @@ if (existsSync(thesaurusPdf)) {
 }
 
 results.push(['ejemplos global/examples', run('Papers de ejemplo', graphifyPy, ['scripts/graphify-examples.py'])]);
+results.push(['bibliografía global/bibliography', run('Bibliografía compartida', graphifyPy, ['scripts/graphify-bibliography.py'])]);
 
 results.push(['temas docs/*', run('Temas (docs/* con RSL/)', 'node', ['scripts/graphify-theme-test.mjs', '--all'])]);
 

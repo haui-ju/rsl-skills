@@ -7,6 +7,10 @@ global/thesaurus/*.json
 
 # Regenerable pdftotext dumps
 **/RSL/MD/_raw/
+global/bibliography/**/_raw/
+
+# Bibliografía compartida: PDF sin licencia abierta (el enlace está en global/bibliography/bibliography.md)
+global/bibliography/picoc/kitchenham-charters-2007.pdf
 
 # Node / pnpm
 node_modules/

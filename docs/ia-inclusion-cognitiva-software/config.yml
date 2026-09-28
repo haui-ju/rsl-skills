@@ -21,7 +21,7 @@ Introducción:
   contexto: frozen
   problema: frozen
   justificacion: frozen
-  objetivo-rsl: frozen
+  objetivo-rsl: on
   organizacion: frozen
 
 Metodología:
@@ -30,7 +30,7 @@ Metodología:
   ecuacion-busqueda: on
   criterios-seleccion: on
   seleccion-prisma: on
-  calidad: on
+  calidad: off
 
 Resultados:
   distribucion: off

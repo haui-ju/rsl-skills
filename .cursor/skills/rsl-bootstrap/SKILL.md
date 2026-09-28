@@ -3,7 +3,7 @@ name: rsl-bootstrap
 description: >-
   Deja el entorno FIS listo tras clonar o en una máquina nueva: verifica e instala
   prerrequisitos (node/pnpm, pipx graphifyy, poppler), pnpm install del workspace
-  y pnpm run bootstrap (grafo root + thesaurus IEEE + ejemplos + todos los temas docs/*).
+  y pnpm run bootstrap (grafo root + thesaurus IEEE + ejemplos + bibliografía + todos los temas docs/*).
   Use when the user says rsl-bootstrap, prepara el entorno, setup, o acaba de clonar el repo.
 ---
 
@@ -11,7 +11,7 @@ description: >-
 
 Paso **0** del flujo: antes de `rsl-topic-panel` o cualquier skill que consulte Graphify.
 
-Invocar esta skill **es** la autorización explícita para regenerar los grafos (root, thesaurus, ejemplos, temas).
+Invocar esta skill **es** la autorización explícita para regenerar los grafos (root, thesaurus, ejemplos, bibliografía, temas).
 
 ## Procedure
 
@@ -35,6 +35,7 @@ Invocar esta skill **es** la autorización explícita para regenerar los grafos 
 PASS  root
 PASS  thesaurus IEEE     (SKIP si falta global/thesaurus/IEEE.pdf)
 PASS  ejemplos global/examples
+PASS  bibliografía global/bibliography
 PASS  temas docs/*
 ```
 
@@ -59,7 +60,7 @@ graphify query "cognitive accessibility" --graph docs/<slug>/graphify-out/graph.
 The last message of the skill is exactly one line:
 
 - Stop at the first failure (any prerequisite missing, `pnpm install` failed or `pnpm run bootstrap` reports FAIL): `ERROR: <requisito o grafo que falló y por qué>. <cómo arreglarlo>`. Do not continue with later steps.
-- Everything went well: `OK: entorno listo (requisitos, dependencias y grafos root, thesaurus, ejemplos y temas). Próximo paso: rsl-topic-panel (o la skill del tema en curso)`.
+- Everything went well: `OK: entorno listo (requisitos, dependencias y grafos root, thesaurus, ejemplos, bibliografía y temas). Próximo paso: rsl-topic-panel (o la skill del tema en curso)`.
 
 ## Forbidden
 

@@ -14,7 +14,7 @@ El agente verifica/instala prerrequisitos (node + pnpm, pipx graphifyy, poppler)
 
 | Skill | Qué hace | Salida |
 |-------|----------|--------|
-| `rsl-bootstrap` | Paso 0: deja el entorno y todos los grafos Graphify listos | `graphify-out/` · `global/thesaurus/graphify-out/` · `global/examples/graphify-out/` · `docs/*/graphify-out/` |
+| `rsl-bootstrap` | Paso 0: deja el entorno y todos los grafos Graphify listos | `graphify-out/` · `global/thesaurus/graphify-out/` · `global/examples/graphify-out/` · `global/bibliography/graphify-out/` · `docs/*/graphify-out/` |
 | `rsl-topic-panel` | Estresa un tema (4 agentes + debate Mermaid + consenso) | `docs/[titulo-breve]/topic.md` |
 | `rsl-make-report` | Genera el informe UTP (7 puntos) y llama a `rsl-picoc` para el marco de búsqueda | `docs/[titulo-breve]/informe.md` + `picoc/<fecha>-<MARCO>/` |
 | `rsl-polish-report` | Pule el informe (4 agentes); si el marco quedó desfasado llama a `rsl-picoc` (modo ligero si solo cambió la pregunta § 1.2) | `docs/[titulo-breve]/informe-polish.md` |
@@ -68,6 +68,7 @@ Root (proyecto):
 graphify-out/     ← memoria Graphify del repo (skills, global/, playbooks/, README…)
 global/           ← archivos generales que integra el usuario (líneas UTP, competencias, thesaurus)
   examples/       ← papers RSL reales de referencia (estructura/presentación; grafo propio)
+  bibliography/   ← fuentes metodológicas que citan todos los temas (Kitchenham 2007 · PRISMA 2020): PDF + MD + bibliography.md; grafo propio
   citation-style/ ← APA7.md · IEEE.md (reglas de citas; formato.citas de config.yml)
 playbooks/        ← protocolos compartidos que siguen varias skills (vocabulario-controlado.md, redaccion-academica.md)
 ```
@@ -84,7 +85,7 @@ Todos con `pnpm <comando>` (`pnpm -s` oculta el eco de pnpm).
 
 | Comando | Qué hace |
 |---------|----------|
-| `bootstrap` | Deja todo listo tras clonar: verifica prerrequisitos y construye los 4 grafos (root, thesaurus, ejemplos, temas). |
+| `bootstrap` | Deja todo listo tras clonar: verifica prerrequisitos y construye los 5 grafos (root, thesaurus, ejemplos, bibliografía, temas). |
 | `prisma:dev` | Levanta la herramienta del diagrama PRISMA en `http://localhost:3000`. |
 | `prisma:build` | Compila esa herramienta. |
 
@@ -92,15 +93,16 @@ Todos con `pnpm <comando>` (`pnpm -s` oculta el eco de pnpm).
 
 | Alcance | Qué contiene |
 |---------|--------------|
-| `root` | Memoria del repo: skills, agentes, reglas, scripts, `global/` (sin thesaurus ni ejemplos), playbooks, README. |
+| `root` | Memoria del repo: skills, agentes, reglas, scripts, `global/` (sin thesaurus, ejemplos ni bibliografía), playbooks, README. |
 | `theme` | Corpus de un tema `docs/<slug>/`: informe, topic, `picoc/`, última versión del paper y RSL en `RSL/MD`. |
 | `thesaurus` | IEEE Thesaurus 2019 (10.4k términos con BT/NT/RT/USE), desde `global/thesaurus/IEEE.pdf`. |
 | `examples` | Papers RSL de referencia en `global/examples/` (estructura por secciones). |
+| `bibliography` | Fuentes metodológicas compartidas en `global/bibliography/` (una carpeta por tema metodológico, MD con `[PDF p.N]`). |
 
 | Acción | Qué hace |
 |--------|----------|
 | `refresh` | Reconstruye el grafo (incremental: solo relee lo que cambió). |
-| `status` | Valida sin reconstruir: PASS si está al día; STALE/FAIL (exit 1) listando qué archivos son más nuevos. |
+| `status` | Valida sin reconstruir: OK si está al día; ERROR (exit 1) listando qué archivos son más nuevos o si falta el grafo. |
 | `query "…"` | Consulta el grafo → nodos con archivo y línea (menos tokens que leer archivos). Acepta `--budget N`. |
 | `open` | Abre `graph.html` en el navegador (thesaurus: vista agregada por comunidades). |
 
@@ -115,7 +117,8 @@ En `theme`, el `<slug>` se omite si solo hay un tema; `refresh`/`status` aceptan
 | `thesaurus:lookup "término"` | Ficha completa de un término IEEE (todas sus relaciones y página). |
 | `picoc:latest docs/<slug>` | Marco configurado en `config.yml` + último `picoc/<fecha>-<MARCO>/picoc.md`: OK, DESFASADO (cambiaste el marco) o FALTA → correr `rsl-picoc`; también imprime la carpeta de la siguiente versión. |
 | `picoc:lint docs/<slug>` | OK/ERROR del último picoc: marco = `config.yml`, pregunta general = § 1.2 de la ficha, una fila por componente 1:1 con las queries Scopus/WoS/IEEE Xplore, T = filtro de año, 1 RQ por componente, descriptores IEEE preferidos, libres al final, 5 o 6 keywords del paper (una por componente como mínimo) y al final criterios de inclusión y exclusión breves (idioma, tipo de documento y años de T). |
-| `redaccion:lint <archivo.md>` | Forma académica de informe o paper: FAIL por marcas pendientes (`[citar]`, TODO…), notas internas (panel, `topic.md`…) o siglas sin definir; avisos por frases largas, notación ×/+ y exceso de siglas. |
+| `redaccion:lint <archivo.md>` | Forma académica de informe o paper: FAIL por marcas pendientes (`[citar]`, TODO…), notas internas (panel, `topic.md`…) o siglas sin definir; avisos por frases largas, notación ×/+ y exceso de siglas. Los marcadores del usuario (`n = X`, `[[ AGREGAR DIAGRAMA ]]`) no fallan: se cuentan en la línea OK. |
+| `rsl:source <pdf>` | Convierte un PDF de `global/bibliography/<carpeta>/` en MD junto al PDF (índice con página del PDF) y deja el texto por página en `_raw/`; ERROR si no es un PDF real. |
 | `paper:status docs/<slug>` | Estado del paper según `config.yml`: qué se mejora (on) o reescribe (rewrite), stale, blocked; ERROR si se editó a mano una sección frozen; la línea OK indica el próximo paso. |
 | `paper:status docs/<slug> --init` | Crea `config.yml` y `paper/paper.shadow.yml` por defecto. |
 | `paper:status docs/<slug> --migrate` | Mueve el antiguo `config.yml` a `config.yml` y convierte el formato antiguo (enabled/frozen) al nuevo. |
@@ -272,6 +275,16 @@ pnpm -s picoc:lint docs/[titulo-breve]     # PASS/FAIL del último picoc
 pnpm -s redaccion:lint docs/[titulo-breve]/paper/<fecha>/paper-polish.md
 ```
 
+### Bibliografía compartida (`global/bibliography/`)
+
+Obras metodológicas que cualquier tema cita sin volver a buscarlas: `picoc/` (Kitchenham y Charters, 2007) y `prisma/` (Page et al., 2021). El catálogo [`global/bibliography/bibliography.md`](global/bibliography/bibliography.md) trae la referencia APA 7, el DOI o enlace, la licencia y los pasajes citables con su página. El PDF solo se versiona si su licencia es abierta; si no, queda en `.gitignore` y el catálogo guarda el enlace.
+
+```bash
+pnpm -s rsl:source global/bibliography/<carpeta>/<archivo>.pdf   # PDF → MD junto al PDF
+pnpm graphify:bibliography:refresh                               # tras agregar una obra
+pnpm graphify:bibliography:query "PICOC"
+```
+
 ### Papers de ejemplo (`global/examples/`)
 
 Grafo propio (no entra al root) con la estructura de papers RSL reales; las skills del paper lo consultan para imitar la presentación, nunca el texto.
@@ -315,7 +328,7 @@ Dejar todo listo:
 
 ```bash
 pnpm install          # workspace: root + tools/* (prisma-flow)
-pnpm run bootstrap    # root + thesaurus IEEE + ejemplos + todos los temas docs/* → resumen PASS/FAIL
+pnpm run bootstrap    # root + thesaurus IEEE + ejemplos + bibliografía + todos los temas docs/* → resumen PASS/FAIL
 ```
 
 Re-ejecutar `pnpm run bootstrap` solo cuando cambien skills/`global/`, temas o PDFs (o usar el comando puntual: `graphify:root:refresh`, `graphify:theme:refresh <slug>`, `graphify:thesaurus:refresh`).

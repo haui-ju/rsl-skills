@@ -88,7 +88,7 @@ sections:
   - { id: palabras-clave,      title: Palabras clave pertinentes,               group: metodologia, depends_on: [picoc] }
   - { id: ecuacion-busqueda,   title: Ecuación de búsqueda,                     group: metodologia, depends_on: [picoc] }
   - { id: criterios-seleccion, title: Criterios de inclusión y exclusión,       group: metodologia, depends_on: [topic.md, picoc] }
-  - { id: seleccion-prisma,    title: "Proceso de selección — Diagrama PRISMA", group: metodologia, depends_on: [RSL/seleccion] }
+  - { id: seleccion-prisma,    title: "Proceso de selección — Diagrama PRISMA", group: metodologia, depends_on: [picoc] }
   - { id: calidad,             title: Evaluación de calidad,                    group: metodologia, depends_on: [RSL/seleccion] }
   # Resultados (requieren RSL/seleccion y RSL/extraccion, preparados por el usuario)
   - { id: distribucion,        title: Distribución anual de publicaciones, group: resultados, depends_on: [RSL/extraccion] }

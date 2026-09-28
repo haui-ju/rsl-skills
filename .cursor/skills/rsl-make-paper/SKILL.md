@@ -39,15 +39,16 @@ Invoke: `Usa rsl-make-paper sobre docs/<slug>/`.
 4. Evidence, graph first (no full PDFs, no refresh):
    - `graphify query "<tema de la sección>" --graph docs/<slug>/graphify-out/graph.json` + `RSL/MD/` locators `[PDF p.N]`.
    - One `graphify query "<sección>" --graph global/examples/graphify-out/graph.json` per section for structure and presentation only; never copy text, data or citations. Our writing must exceed them.
+   - **Methodological sources** (Metodología in the run): read `global/bibliography/bibliography.md` first and cite what it lists (key, APA 7, citable passages with printed page); for more detail `pnpm graphify:bibliography:query "…"` and a pinpoint Read of the MD lines. Download only if the work is missing: open-access PDF with a verified DOI into `global/bibliography/<carpeta>/`, then `pnpm -s rsl:source <pdf>` (ERROR → stop), a row in the catalog and suggest `pnpm graphify:bibliography:refresh` to the user. No open PDF → cite from the verified record and mark `PENDIENTE` in the chat; never invent pages or DOI.
 5. Write each section **between its markers** (create them if new; order of `paper.shadow.yml`). Headings follow the merged format printed by `paper:status`: groups as numbered H2 (`## I. Introducción`), sections as H3, H4 subsections allowed in the draft; `## Referencias` is derived.
 6. Content per group:
    - **Introducción:** template below. For each anchor SLR: what it covers, n/DOI, what it does not cover (= gap). Every extra paragraph adds citation, delimitation, metric, ethics or SE-process detail; no stubs.
    - **Preguntas:** the picoc general question = problemática = § 1.2 (verbatim in the encabezado and in El problema 2.4, as an interrogative); its RQs give one specific objective each in Objetivo de la RSL and structure Organización. No new RQ.
-   - **Metodología:** tables, RQs, keywords and queries of the latest picoc **as they are**. `marco-pico` names the configured framework with its components in words (e.g. "Se adoptó el marco PIO (población, intervención y resultado)…") and gives one row per component with its RQ; title from `paper:status`. States that the strings mix IEEE controlled vocabulary and free terms. `criterios-seleccion` = the inclusion and exclusion criteria of the latest picoc, as they are (two bullet lists or a two-column table). PRISMA counts only from `RSL/seleccion/`; never invent counts.
+   - **Metodología:** tables, RQs, keywords, queries and criteria of the latest picoc **as they are**; section by section in [Metodología template](#metodología-template-draft).
    - **Resultados / Discusión / Conclusión:** only from `RSL/extraccion/`, by RQ or theme (`format.results_by`).
    - **Abstract / Resumen:** only when content sections exist; keywords = the `## Keywords` table of the latest picoc as it is (EN column in the Abstract, ES column in the Resumen; never add or drop one).
 7. `citas-rsl` on the worked sections only: `pnpm -s paper:status docs/<slug> --cites paper/<fecha>/paper-borrador.md` + its fixes until PASS or justified `PENDIENTE`.
-8. `pnpm -s redaccion:lint docs/<slug>/paper/<fecha>/paper-borrador.md` → 0 FAIL (WARN allowed in the draft).
+8. `pnpm -s redaccion:lint docs/<slug>/paper/<fecha>/paper-borrador.md` and a self-check of R7 (one intention per paragraph, transitions) → 0 FAIL in the worked sections (WARN allowed in the draft). FAILs inside frozen sections are reported (suggest `on`); they do not block.
 9. `pnpm -s paper:status docs/<slug> --update borrador`.
 10. Chat: copied sections and the citas result, then the Cierre line.
 
@@ -99,18 +100,55 @@ Language of `formato.idioma` (default Spanish académico-profesional, headings i
 <!-- /paper:section -->
 ```
 
+## Metodología template (draft)
+
+Order and letters (A., B., C.…) from `paper:status`; only the `on`/`rewrite` sections of the run. The group opens with one paragraph, before the first marker, that states what the method must guarantee (answer the question reproducibly) and announces the two decisions of the chapter: how the questions and search were framed (the framework) and how the selection is reported (PRISMA 2020), with their citations.
+
+Thread (R7 of `playbooks/redaccion-academica.md`): each section opens by picking up the previous one (framework → its components become keywords → keywords build one equation per base → the retrieved records are judged with the criteria → PRISMA documents that selection). Every method decision follows need → why the obvious alternative is not enough → decision → what the source says it adds (citation) → how it applies here. Never open a paragraph with the tool and its definition.
+
+- **`marco-pico`**
+  - One paragraph that names the framework of the latest picoc with its components in words (e.g. "Se adoptó el marco PICOC (población, intervención, comparación, resultado y contexto)…").
+  - Justify it in two or three sentences with the catalog source: Kitchenham y Charters (2007, p. 11) adopt PICOC for software engineering from Petticrew y Roberts (never attribute the framework itself to Kitchenham). Say why each added component applies to this theme. With a framework other than PICOC, say what it drops or adds (e.g. PICOCT adds the time window) and why; without T, the time window is an inclusion criterion.
+  - Then: the component table (`Tabla N — Marco <MARCO>`: one column per letter, the concept of each component), the general question (verbatim, as an interrogative) and the RQ table (`Componente | Código | Pregunta`).
+- **`palabras-clave`**
+  - The `## Palabras clave` table of the latest picoc as it is: `Componente | Palabras clave (ES) | Keywords (EN)`, grouped by component.
+  - One sentence says that the terms combine IEEE Thesaurus descriptors and free terms.
+- **`ecuacion-busqueda`**
+  - Only Scopus and Web of Science, one code block each, copied from the picoc. Other bases of the picoc (IEEE Xplore, the auxiliary search) do not go into the paper.
+  - One sentence on the Boolean logic (OR inside a component, AND between components). If the two bases search different fields (e.g. `TITLE-ABS-KEY` vs `ALL=`), justify it. Say when the date, document type and language filters are applied (after the search or during screening), coherent with the PRISMA steps.
+  - Close with: "La búsqueda se realizó el X en Scopus y Web of Science y recuperó X registros (Scopus: X; Web of Science: X)." `X` is a user marker; never fill it in.
+- **`criterios-seleccion`**
+  - The criteria of the latest picoc, same text, coded `CI1…` (inclusion) and `CE1…` (exclusion) in two bullet lists.
+  - Never add, merge or reword a criterion.
+- **`seleccion-prisma`**
+  - First paragraph: the selection is **reported** according to PRISMA 2020 (Page et al., 2021, p. 1), a reporting guideline with a 27-item checklist and a flow diagram; the execution follows Kitchenham y Charters. Say why it applies here, in one or two sentences, without overclaiming (it makes the searched corpus auditable; it does not prove gaps).
+  - Steps as a numbered list. Counts come from `RSL/seleccion/` when it exists; otherwise every count is `n = X` for the user to replace:
+    1. Registros identificados en Scopus (n = X) y en Web of Science (n = X).
+    2. Duplicados eliminados (n = X).
+    3. Excluidos por fecha de publicación (n = X).
+    4. Registros cribados por título y resumen (n = X); excluidos (n = X).
+    5. Informes buscados para recuperación (n = X); no recuperados (n = X).
+    6. Informes evaluados a texto completo (n = X); excluidos por no cumplir un criterio de inclusión o por cumplir uno de exclusión (n = X).
+    7. Estudios incluidos en la revisión (n = X).
+  - Then the line `[[ AGREGAR DIAGRAMA ]]` alone and the caption `*Fig. 1. Diagrama de flujo PRISMA 2020 del proceso de selección.*` The user draws the diagram; never generate it.
+- **`calidad`**
+  - Only when it is `on` and `RSL/seleccion/` exists.
+
+`X` and `[[ … ]]` are user markers: they stay as they are through make and polish, and `redaccion:lint` counts them without failing.
+
 ## Cierre
 
 The last message of the skill is exactly one line:
 
-- Stop at the first failure (any `paper:status` step returns `ERROR:` (including `nada que generar`), `--cites` stays failing or `redaccion:lint` has FAIL): `ERROR: <mensaje del script>. <cómo arreglarlo>`. Do not continue with later steps.
+- Stop at the first failure (any `paper:status` step returns `ERROR:` (including `nada que generar`), `--cites` stays failing or `redaccion:lint` has FAIL in a worked section): `ERROR: <mensaje del script>. <cómo arreglarlo>`. Do not continue with later steps.
 - Everything went well: `OK: borrador paper/<versión>/paper-borrador.md (mejoradas: …; reescritas: …; stale: …; blocked: …). Próximo paso: Usa rsl-polish-paper sobre docs/<slug>/`.
 
 ## Forbidden
 
 - Polish agents (only `citas-rsl`).
 - Editing previous versions, frozen/off sections, states in `config.yml`, `paper.shadow.yml` or `paper.state.jsonc`.
-- Generating BLOCKED sections; inventing PRISMA counts, results, citations or DOI.
+- Generating BLOCKED sections; inventing PRISMA counts (without `RSL/seleccion/` they are `X`), search dates, results, citations or DOI; replacing a user marker (`X`, `[[ … ]]`).
+- Bases other than Scopus and Web of Science in `ecuacion-busqueda`.
 - Deleting or renaming section markers; editing `informe*.md`, `picoc/` or `topic.md`.
 - A framework in Metodología different from `formato.marco`.
 - Internal traces in the text (`topic.md`, `informe`, panel, `GO_*`, skill names, repo paths).

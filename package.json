@@ -24,13 +24,18 @@
     "graphify:examples:status": "node scripts/graphify.mjs examples status",
     "graphify:examples:query": "node scripts/graphify.mjs examples query",
     "graphify:examples:open": "node scripts/graphify.mjs examples open",
+    "graphify:bibliography:refresh": "node scripts/graphify.mjs bibliography refresh",
+    "graphify:bibliography:status": "node scripts/graphify.mjs bibliography status",
+    "graphify:bibliography:query": "node scripts/graphify.mjs bibliography query",
+    "graphify:bibliography:open": "node scripts/graphify.mjs bibliography open",
     "thesaurus:check": "~/.local/share/pipx/venvs/graphifyy/bin/python scripts/thesaurus-ieee.py --check",
     "thesaurus:lookup": "~/.local/share/pipx/venvs/graphifyy/bin/python scripts/thesaurus-ieee.py --lookup",
     "picoc:lint": "python3 scripts/picoc-lint.py",
     "picoc:latest": "python3 scripts/picoc-lint.py --latest",
     "redaccion:lint": "python3 scripts/redaccion-lint.py",
     "paper:status": "python3 scripts/paper-manifest.py",
-    "qa:destroy": "python3 scripts/qa-destroy.py"
+    "qa:destroy": "python3 scripts/qa-destroy.py",
+    "rsl:source": "python3 scripts/rsl-source.py"
   },
   "engines": {
     "node": ">=18"

@@ -34,6 +34,8 @@ SCRIPT_OF = {
     "latest": "scripts/picoc-lint.py",
     "red": "scripts/redaccion-lint.py",
     "thes": "scripts/thesaurus-ieee.py",
+    "src": "scripts/rsl-source.py",
+    "bib": "scripts/graphify-bibliography.py",
 }
 
 
@@ -928,6 +930,85 @@ def _(sb):
     for other in ("rsl-make-report", "rsl-polish-report"):
         sb.check("rsl-picoc` never edits the informe" in (SKILLS / other / "SKILL.md").read_text(encoding="utf-8"),
                  f"{other}/SKILL.md no asume el enlace de la sección 2 del informe")
+
+
+# ======================= bibliografía y Metodología =======================
+
+@case("P07", "positivo", "rsl:source convierte un PDF real en MD junto al PDF y no lo rehace si está al día")
+def _(sb):
+    src = ROOT / "global" / "bibliography" / "prisma" / "page-2021-prisma-2020.pdf"
+    if not src.exists():
+        sb.check(False, f"falta {src.relative_to(ROOT)} (PDF CC BY de la bibliografía compartida)")
+        return
+    d = sb.base / "global" / "bibliography" / "prisma"
+    d.mkdir(parents=True, exist_ok=True)
+    shutil.copy(src, d / src.name)
+    rel = f"global/bibliography/prisma/{src.name}"
+    sb.run(["src", rel], "OK", has="generado")
+    md = d / f"{src.stem}.md"
+    sb.check(md.exists(), "rsl:source no escribió el MD junto al PDF")
+    sb.check(md.exists() and "Theme relevance" not in md.read_text(encoding="utf-8"), "el MD global arrastra los ganchos de relevancia de un tema")
+    sb.check((d / "_raw" / f"{src.stem}.txt").exists(), "rsl:source no dejó el texto por página en _raw/")
+    sb.run(["src", rel], "OK", has="ya estaba al día")
+    sb.run(["pnpm", "rsl:source", rel, "--force"], "OK", has="generado")
+
+
+@case("D29", "destruir", "rsl:source sin PDF, con ruta inexistente, con un .md o con un HTML disfrazado de .pdf")
+def _(sb):
+    sb.run(["src"], "ERROR", has="falta el PDF", code=2)
+    sb.run(["src", "global/bibliography/nada.pdf"], "ERROR", has="no existe")
+    f = sb.base / "global" / "bibliography" / "x"
+    f.mkdir(parents=True, exist_ok=True)
+    (f / "nota.md").write_text("# Nota\n", encoding="utf-8")
+    sb.run(["src", "global/bibliography/x/nota.md"], "ERROR", has="no es un archivo .pdf")
+    (f / "falso.pdf").write_text("<!DOCTYPE html><html>Just a moment...</html>", encoding="utf-8")
+    sb.run(["src", "global/bibliography/x/falso.pdf"], "ERROR", has="no es un PDF real")
+    sb.check(not (f / "falso.md").exists(), "rsl:source escribió un MD a partir de un PDF falso")
+
+
+@case("M19", "orden", "graphify:bibliography:status sin grafo: ERROR con el refresh como arreglo")
+def _(sb):
+    (sb.base / "global" / "bibliography").mkdir(parents=True, exist_ok=True)
+    sb.run(["bib", "--status"], "ERROR", has="graphify:bibliography:refresh")
+    sb.run(["bib", "--estado"], "ERROR", has="no reconocido", code=2)
+
+
+@case("M20", "orden", "seleccion-prisma sin RSL/seleccion no queda BLOCKED (los conteos van como X)")
+def _(sb):
+    t = sb.theme()
+    sb.run(["paper", t], "OK", lacks="seleccion-prisma (falta")
+
+
+@case("K07", "marco", "redaccion:lint acepta n = X y [[ AGREGAR DIAGRAMA ]] como marcadores del usuario, pero sigue fallando con TODO")
+def _(sb):
+    f = sb.base / "metodo.md"
+    f.write_text("# Método\n\nSe identificaron registros en Scopus (n = X) y en Web of Science (n = X). Se aplicaron los criterios CI1 y CE2.\n\n"
+                 "[[ AGREGAR DIAGRAMA ]]\n\n*Fig. 1. Diagrama de flujo PRISMA 2020.*\n", encoding="utf-8")
+    sb.run(["red", f], "OK", has="3 marcador(es) del usuario")
+    f.write_text(f.read_text(encoding="utf-8") + "\nTODO: revisar.\n", encoding="utf-8")
+    sb.run(["red", f], "ERROR", has="TODO")
+
+
+@case("S08", "skills", "Metodología: make y polish del paper usan la bibliografía compartida, solo Scopus y WoS y los marcadores del usuario")
+def _(sb):
+    make = (SKILLS / "rsl-make-paper" / "SKILL.md").read_text(encoding="utf-8")
+    polish = (SKILLS / "rsl-polish-paper" / "SKILL.md").read_text(encoding="utf-8")
+    for need in ("global/bibliography/bibliography.md", "rsl:source", "[[ AGREGAR DIAGRAMA ]]", "Web of Science", "n = X", "Excluidos por fecha de publicación", "CI1"):
+        sb.check(need in make, f"rsl-make-paper/SKILL.md no contiene «{need}»")
+    for need in ("global/bibliography/bibliography.md", "[[ AGREGAR DIAGRAMA ]]", "Hilo", "R7"):
+        sb.check(need in polish, f"rsl-polish-paper/SKILL.md no contiene «{need}»")
+    sb.check("R7" in make, "rsl-make-paper/SKILL.md no pide el hilo entre párrafos (R7)")
+    playbook = (ROOT / "playbooks" / "redaccion-academica.md").read_text(encoding="utf-8")
+    sb.check("### R7" in playbook, "playbooks/redaccion-academica.md no tiene la regla R7 de coherencia y progresión")
+    agent = (ROOT / ".cursor" / "agents" / "redaccion-rsl.md").read_text(encoding="utf-8")
+    sb.check("### Hilo" in agent, "redaccion-rsl no devuelve la tabla Hilo (intención y enlace de cada párrafo)")
+    cat = ROOT / "global" / "bibliography" / "bibliography.md"
+    sb.check(cat.exists(), "falta el catálogo global/bibliography/bibliography.md")
+    if cat.exists():
+        txt = cat.read_text(encoding="utf-8")
+        for key, folder in (("kitchenham-charters-2007", "picoc"), ("page-2021-prisma-2020", "prisma")):
+            sb.check(key in txt, f"el catálogo no lista {key}")
+            sb.check((ROOT / "global" / "bibliography" / folder / f"{key}.md").exists(), f"falta el MD de {key} en global/bibliography/{folder}/")
 
 
 
