@@ -11,7 +11,7 @@ Objetivo: términos **fieles al tema** (descriptor oficial + sinónimos oficiale
 - Cada generación es una versión trazable: `docs/<slug>/picoc/<AAAA-MM-DD>[-n]-<MARCO>/picoc.md` + `picoc-debate.md`. Solo la skill **`rsl-picoc`** crea versiones; las anteriores no se editan.
 - Si el usuario cambia `formato.marco`, el último picoc queda **DESFASADO** y hay que correr `rsl-picoc` (crea `<hoy>-<MARCO>/`).
 - El informe **no** contiene tablas ni queries: su sección 2 solo enlaza a la última versión. El paper siempre lee la última versión (`pnpm -s picoc:latest docs/<slug>`).
-- El picoc termina con los **criterios de inclusión y exclusión** (regla CR): qué debe cumplir un artículo para revisarse y qué lo descarta. La extracción de datos **no** va en el picoc.
+- El picoc fija las **keywords del paper** (regla KY: 5 o 6, las más relevantes) y termina con los **criterios de inclusión y exclusión** (regla CR): qué debe cumplir un artículo para revisarse y qué lo descarta. La extracción de datos **no** va en el picoc.
 
 ## Herramientas
 
@@ -67,6 +67,13 @@ Si `global/thesaurus/ieee-thesaurus.json` o el grafo no existen → pedir `Usa r
 - Los términos **libres** solo pueden ir **al final** de la tabla, cada uno con una justificación breve (por qué no hay descriptor IEEE).
 - Todo descriptor declarado en la tabla de componentes aparece en Palabras clave.
 
+### KY — Keywords del paper
+
+- Sección `## Keywords` justo después de `## Palabras clave`: tabla `Keyword (EN) | Palabra clave (ES) | Comp.` con **5 o 6 filas, nunca más**. Son las que van tal cual al Abstract y al Resumen del paper; viven en el picoc porque cambian con él.
+- Es la unión de los componentes, pero solo lo más relevante: al menos una keyword por componente del marco (salvo T) y ninguna repetida.
+- Cada keyword es un término inglés de la tabla Palabras clave, con su mismo componente; el español es su traducción exacta.
+- Preferir los términos que identifican el aporte y el vacío (lo que teclearía quien busca esta revisión) frente a los genéricos que ya dice el título.
+
 ### CR — Criterios de inclusión y exclusión
 
 - Última sección del picoc: `## Criterios de inclusión y exclusión` con dos listas de viñetas, `### Inclusión` (qué se acepta para revisar un artículo) y `### Exclusión` (qué lo descarta).
@@ -85,7 +92,7 @@ Si `global/thesaurus/ieee-thesaurus.json` o el grafo no existen → pedir `Usa r
 5. Clasificar por estado; expandir con criterio: UF al `OR` si nacen del tema; NT solo si están en el alcance; RT nunca automático; BT nunca en la query.
 6. Redactar las RQ por componente (R3).
 7. Construir las 3 queries con los **mismos** bloques (R2). Truncamiento (`*`) solo en términos libres o plurales.
-8. Redactar los criterios de inclusión y exclusión (CR) desde el alcance y las exclusiones de `topic.md` y el marco.
+8. Elegir las 5 o 6 keywords del paper (KY) y redactar los criterios de inclusión y exclusión (CR) desde el alcance y las exclusiones de `topic.md` y el marco.
 9. `pnpm -s picoc:lint docs/<slug>` → OK antes de entregar.
 
 ## Plantilla `picoc/<fecha>-<MARCO>/picoc.md`
@@ -125,6 +132,13 @@ Si `global/thesaurus/ieee-thesaurus.json` o el grafo no existen → pedir `Usa r
 | trastorno del espectro autista | Autism | P | IEEE | p.35 | — |
 | … (todas las IEEE primero) | | | | | |
 | neurodivergencia | neurodiversity | P | Libre | — | IEEE 2019 no tiene descriptor |
+
+## Keywords
+
+| Keyword (EN) | Palabra clave (ES) | Comp. |
+|--------------|--------------------|-------|
+| Autism | trastorno del espectro autista | P |
+| … (5 o 6 filas, al menos una por componente salvo T) | | |
 
 ## Query Scopus
 

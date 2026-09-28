@@ -53,6 +53,16 @@ Protocolo: [`playbooks/vocabulario-controlado.md`](../../../../playbooks/vocabul
 | lenguaje claro y lectura fácil | plain language / easy-to-read | O | Libre | — | Vocabulario operativo de la legibilidad cognitiva; sin descriptor IEEE |
 | carga cognitiva | cognitive load | O | Libre | — | Sin descriptor IEEE |
 
+## Keywords
+
+| Keyword (EN) | Palabra clave (ES) | Comp. |
+|--------------|--------------------|-------|
+| cognitive accessibility | accesibilidad cognitiva | P |
+| neurodiversity | neurodiversidad | P |
+| Artificial intelligence | inteligencia artificial | I |
+| large language models | modelos de lenguaje grandes | I |
+| accessibility metric | métricas de accesibilidad | O |
+
 ## Query Scopus
 
 ```text

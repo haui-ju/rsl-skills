@@ -28,7 +28,7 @@ Invoke: `Usa rsl-picoc sobre docs/<slug>/` · add `rewrite` to ignore the previo
 | Mode | When | Agents |
 |------|------|--------|
 | **completo** | No previous version, `rewrite`, or the marco changed | Yes (on the changed rows only if the marco changed) |
-| **criterios** | Only the inclusion/exclusion criteria change, or the previous version lacks them | `critico-rsl` and `defensor-rsl` on the criteria only |
+| **parcial** | Only the paper keywords or the inclusion/exclusion criteria change, or the previous version lacks them | `critico-rsl` and `defensor-rsl` on that part only |
 | **ligero** | Only the § 1.2 question changed (called by `rsl-polish-report`) | No |
 
 Nothing changed (`picoc:latest` OK, `picoc:lint` PASS, no `rewrite`) → report it and stop; no new version.
@@ -37,10 +37,10 @@ Nothing changed (`picoc:latest` OK, `picoc:lint` PASS, no `rewrite`) → report 
 
 1. `pnpm -s picoc:latest docs/<slug>` → marco, latest version and the exact `siguiente versión` folder to create (never compute it by hand). No `config.yml` → `pnpm -s paper:status docs/<slug> --init`. **ERROR** (unknown letter in the marco) → stop and tell the user which letter is invalid; do not guess.
 2. Pregunta general = the `¿…?` of § 1.2 of the ficha, copied literally.
-3. **Ligero / criterios:** copy the previous `picoc.md` into the `siguiente versión` folder. Ligero replaces only the general question; if the previous version has no criteria section, add it as in criterios mode. Criterios writes or rewrites only `## Criterios de inclusión y exclusión` (rule CR) and debates it (`critico-rsl`: criteria that cut valid evidence or cannot be checked; `defensor-rsl`: criteria the theme needs and are missing). Write a short `picoc-debate.md` (date, base version, what changed and why), go to step 7.
-4. **Completo — build.** Context from the theme graph (`graphify query "…" --graph docs/<slug>/graphify-out/graph.json`) and the previous version if any; do not read PDFs or refresh Graphify. One row per component of the marco, in order; all non-T components are AND blocks; T = year filter; no document-type filters in the queries. Close with `## Criterios de inclusión y exclusión` (rule CR): short bullets from the scope and exclusions of `topic.md` and the marco; inclusion always fixes language, document type and, with T, the same years. Validate every EN candidate in **one** `pnpm -s thesaurus:check "…" …` call. Run `picoc:lint` on the draft before the debate.
+3. **Ligero / parcial:** copy the previous `picoc.md` into the `siguiente versión` folder. Ligero replaces only the general question; if the previous version lacks `## Keywords` or the criteria, add them as in parcial mode. Parcial writes or rewrites only `## Keywords` (rule KY) and/or `## Criterios de inclusión y exclusión` (rule CR) and debates that part (`critico-rsl`: generic or redundant keywords, criteria that cut valid evidence or cannot be checked; `defensor-rsl`: what the theme needs and is missing). Write a short `picoc-debate.md` (date, base version, what changed and why), go to step 7.
+4. **Completo — build.** Context from the theme graph (`graphify query "…" --graph docs/<slug>/graphify-out/graph.json`) and the previous version if any; do not read PDFs or refresh Graphify. One row per component of the marco, in order; all non-T components are AND blocks; T = year filter; no document-type filters in the queries. After Palabras clave, `## Keywords` (rule KY): 5 or 6 of its terms, at least one per component except T, the ones the paper will use. Close with `## Criterios de inclusión y exclusión` (rule CR): short bullets from the scope and exclusions of `topic.md` and the marco; inclusion always fixes language, document type and, with T, the same years. Validate every EN candidate in **one** `pnpm -s thesaurus:check "…" …` call. Run `picoc:lint` on the draft before the debate.
 5. **Completo — debate** (parallel; prompt = only the component table, keywords, the `thesaurus:check` table and the lint output, not whole files; answers of at most 10 items; web only to verify a doubtful term):
-   - `critico-rsl` (marco mode): origin in the theme, recall vs. noise per block, blocks that cut the evidence, IEEE Xplore wildcards, criteria that exclude valid evidence or cannot be checked.
+   - `critico-rsl` (marco mode): origin in the theme, recall vs. noise per block, blocks that cut the evidence, IEEE Xplore wildcards, generic paper keywords, criteria that exclude valid evidence or cannot be checked.
    - `defensor-rsl` (marco mode): why each block, term and criterion is needed; terms or criteria the literature uses and are missing.
    - `redaccion-rsl`: prose of concepts, RQs, justifications and criteria only.
 6. **Completo — consolidate:** validate new terms with `thesaurus:check`, write `picoc.md` and `picoc-debate.md` (positions in a few bullets per agent, a decisions table, what is left for the user).
@@ -53,7 +53,7 @@ Nothing changed (`picoc:latest` OK, `picoc:lint` PASS, no `rewrite`) → report 
 The last message of the skill is exactly one line:
 
 - Stop at the first failure (`picoc:latest` gives an ERROR other than FALTA/DESFASADO (e.g. unknown letter), `thesaurus:check` fails, or `picoc:lint` is not OK after fixing): `ERROR: <mensaje del script>. <cómo arreglarlo>`. Do not continue with later steps.
-- Everything went well: `OK: marco <MARCO> en picoc/<carpeta>/ (modo <completo | criterios | ligero>), picoc:lint OK. Próximo paso: <la skill que la llamó | Usa rsl-make-paper sobre docs/<slug>/>`; nothing changed: `OK: el marco <MARCO> ya estaba al día; no se creó versión. Próximo paso: Usa rsl-make-paper sobre docs/<slug>/`.
+- Everything went well: `OK: marco <MARCO> en picoc/<carpeta>/ (modo <completo | parcial | ligero>), picoc:lint OK. Próximo paso: <la skill que la llamó | Usa rsl-make-paper sobre docs/<slug>/>`; nothing changed: `OK: el marco <MARCO> ya estaba al día; no se creó versión. Próximo paso: Usa rsl-make-paper sobre docs/<slug>/`.
 
 ## Forbidden
 

@@ -18,7 +18,7 @@ Síntesis de evidencia primaria sobre técnicas de IA aplicadas a artefactos y p
 
 ## 2. Palabras clave
 
-Las palabras clave, el marco PICOCT (población, intervención, comparación, resultado, contexto y tiempo), las queries y los criterios de inclusión y exclusión se encuentran en [picoc/2026-09-28-2-PICOCT/picoc.md](picoc/2026-09-28-2-PICOCT/picoc.md).
+Las palabras clave, el marco PICOCT (población, intervención, comparación, resultado, contexto y tiempo), las queries y los criterios de inclusión y exclusión se encuentran en [picoc/2026-09-28-3-PICOCT/picoc.md](picoc/2026-09-28-3-PICOCT/picoc.md).
 
 ## 3. Artículos de revisión de literatura relacionados con el tema de investigación
 

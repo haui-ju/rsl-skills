@@ -45,7 +45,7 @@ docs/[titulo-breve]/
   informe-polish.md
   picoc/                 ← marco de búsqueda versionado (solo rsl-picoc crea versiones; el paper lee la última)
     2026-09-28-PICOCT/   ← <fecha>-<MARCO> según formato.marco de config.yml
-      picoc.md           ← pregunta general, RQ por componente, tabla de componentes 1:1, palabras clave ES/EN, queries Scopus/WoS/IEEE Xplore, criterios de inclusión y exclusión
+      picoc.md           ← pregunta general, RQ por componente, tabla de componentes 1:1, palabras clave ES/EN, 5–6 keywords del paper, queries Scopus/WoS/IEEE Xplore, criterios de inclusión y exclusión
       picoc-debate.md    ← posturas de los agentes y decisiones
   paper/
     paper.shadow.yml     ← detalle técnico: títulos, capítulos, depends_on (rara vez se edita)
@@ -114,7 +114,7 @@ En `theme`, el `<slug>` se omite si solo hay un tema; `refresh`/`status` aceptan
 | `thesaurus:check "t1" "t2" …` | Valida varios términos contra IEEE: preferido / no preferido (→ USE) / libre, con sinónimos (UF), específicos (NT) y página. |
 | `thesaurus:lookup "término"` | Ficha completa de un término IEEE (todas sus relaciones y página). |
 | `picoc:latest docs/<slug>` | Marco configurado en `config.yml` + último `picoc/<fecha>-<MARCO>/picoc.md`: OK, DESFASADO (cambiaste el marco) o FALTA → correr `rsl-picoc`; también imprime la carpeta de la siguiente versión. |
-| `picoc:lint docs/<slug>` | OK/ERROR del último picoc: marco = `config.yml`, pregunta general = § 1.2 de la ficha, una fila por componente 1:1 con las queries Scopus/WoS/IEEE Xplore, T = filtro de año, 1 RQ por componente, descriptores IEEE preferidos, libres al final, y al final criterios de inclusión y exclusión breves (idioma, tipo de documento y años de T). |
+| `picoc:lint docs/<slug>` | OK/ERROR del último picoc: marco = `config.yml`, pregunta general = § 1.2 de la ficha, una fila por componente 1:1 con las queries Scopus/WoS/IEEE Xplore, T = filtro de año, 1 RQ por componente, descriptores IEEE preferidos, libres al final, 5 o 6 keywords del paper (una por componente como mínimo) y al final criterios de inclusión y exclusión breves (idioma, tipo de documento y años de T). |
 | `redaccion:lint <archivo.md>` | Forma académica de informe o paper: FAIL por marcas pendientes (`[citar]`, TODO…), notas internas (panel, `topic.md`…) o siglas sin definir; avisos por frases largas, notación ×/+ y exceso de siglas. |
 | `paper:status docs/<slug>` | Estado del paper según `config.yml`: qué se mejora (on) o reescribe (rewrite), stale, blocked; ERROR si se editó a mano una sección frozen; la línea OK indica el próximo paso. |
 | `paper:status docs/<slug> --init` | Crea `config.yml` y `paper/paper.shadow.yml` por defecto. |

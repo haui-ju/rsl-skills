@@ -8,6 +8,8 @@ Reglas:
   R2     una fila por componente del marco; keywords de cada fila (salvo T) == su bloque en Scopus, WoS e IEEE Xplore;
          T == filtro de año en las 3 bases; sin filtros de tipo de documento; IEEE Xplore ≤ 10 comodines
   R3     exactamente 1 RQ (¿…?) por componente del marco, enlazada desde la tabla
+  KY     '## Keywords' tras 'Palabras clave': 5 o 6 filas (EN · ES · Comp.) que van al paper; cada término sale de
+         Palabras clave con su mismo componente y cada componente del marco (salvo T) aporta al menos una
   CR     última sección '## Criterios de inclusión y exclusión' con '### Inclusión' y '### Exclusión': listas de viñetas
          breves (≤ 25 palabras, ≥ 2 por lista); la inclusión fija idioma, tipo de documento y, si hay T, sus mismos años
   KW     palabras clave ES/EN: primero descriptores IEEE preferidos (con pág.), libres solo al final y justificados
@@ -37,6 +39,7 @@ FORBIDDEN = ("Cribado", "T — Filtros", "T - Filtros", "Filtros", "Términos li
 FILTER_PREFIX = re.compile(r"(DT|PY|PUBYEAR|LIMIT-TO)\s*=?\s*$", re.I)
 QUESTION = re.compile(r"¿[^?]+\?", re.S)
 CRITERIA = "Criterios de inclusión y exclusión"
+KEYWORDS_MIN, KEYWORDS_MAX = 5, 6
 CRITERION_MAX_WORDS = 25
 LANGUAGE_RE = re.compile(r"idioma|inglés|español|portugués|francés|alemán|english|spanish", re.I)
 DOCTYPE_RE = re.compile(r"revista|congreso|conferencia|actas|arbitra|revisi[oó]n por pares|journal|proceedings", re.I)
@@ -313,8 +316,39 @@ def main(path: Path) -> int:
                 if k not in kw_ieee:
                     errs.append(f"KW: el descriptor '{name}' ({c}) falta en Palabras clave")
 
-    n_inc = n_exc = 0
     heads = re.findall(r"^##\s+(.+)$", text, flags=re.M)
+    kw_en = {}
+    for r in kw_rows:
+        for term in col(r, "Inglés").split("/"):
+            kw_en.setdefault(norm_text(term).casefold(), col(r, "Comp"))
+    ky_body = secs.get("Keywords")
+    ky_rows = table(ky_body or "")
+    if ky_body is None:
+        errs.append(f"KY: falta '## Keywords' ({KEYWORDS_MIN} o {KEYWORDS_MAX} palabras clave, las más relevantes, que van al paper)")
+    else:
+        pos = [h.strip() for h in heads]
+        if "Palabras clave" in pos and pos.index("Keywords") != pos.index("Palabras clave") + 1:
+            errs.append("KY: '## Keywords' va justo después de '## Palabras clave'")
+        if not KEYWORDS_MIN <= len(ky_rows) <= KEYWORDS_MAX:
+            errs.append(f"KY: '## Keywords' tiene {len(ky_rows)} filas; deben ser {KEYWORDS_MIN} o {KEYWORDS_MAX}, solo las más relevantes")
+        seen = set()
+        for r in ky_rows:
+            en, es, c = norm_text(col(r, "Keyword")), norm_text(col(r, "Palabra")), col(r, "Comp")
+            if not en or not es:
+                errs.append(f"KY: fila sin inglés o español ({en or es or '—'})")
+                continue
+            if en.casefold() in seen:
+                errs.append(f"KY: '{en}' repetida")
+            seen.add(en.casefold())
+            if en.casefold() not in kw_en:
+                errs.append(f"KY: '{en}' no está en la tabla 'Palabras clave' (las keywords salen de ahí)")
+            elif kw_en[en.casefold()] != c:
+                errs.append(f"KY: '{en}' es del componente {kw_en[en.casefold()]} en Palabras clave, no de {c or '—'}")
+        missing = [c for c in comps if c != "T" and c not in {col(r, "Comp") for r in ky_rows}]
+        if ky_rows and missing:
+            errs.append(f"KY: falta al menos una keyword de {', '.join(missing)} (deben estar todos los componentes del marco salvo T)")
+
+    n_inc = n_exc = 0
     crit = find(secs, CRITERIA)
     if crit is None:
         errs.append(f"CR: falta la sección final '## {CRITERIA}' (qué se acepta y qué no para revisar un artículo)")
@@ -352,7 +386,7 @@ def main(path: Path) -> int:
             print(f"  - {e}")
         return error(f"el picoc {rel(path)} ({marco}) tiene {len(errs)} error(es) (ver detalle arriba)", "corrígelo regenerando una versión con rsl-picoc")
     total = sum(len(t) for _, t in rows_terms)
-    return ok(f"picoc {rel(path)} ({marco}) válido: {len(rows_terms)} bloques, {total} términos, {len(rq_rows)} RQ" + (f", T {years[0]}–{years[1]}" if years else "") + f", 3 bases, {n_inc} criterios de inclusión y {n_exc} de exclusión")
+    return ok(f"picoc {rel(path)} ({marco}) válido: {len(rows_terms)} bloques, {total} términos, {len(rq_rows)} RQ" + (f", T {years[0]}–{years[1]}" if years else "") + f", 3 bases, {len(ky_rows)} keywords, {n_inc} criterios de inclusión y {n_exc} de exclusión")
 
 
 def resolve(arg: str) -> Path:

@@ -45,7 +45,7 @@ Invoke: `Usa rsl-make-paper sobre docs/<slug>/`.
    - **Preguntas:** the picoc general question = problemática = § 1.2 (verbatim in the encabezado and in El problema 2.4, as an interrogative); its RQs give one specific objective each in Objetivo de la RSL and structure Organización. No new RQ.
    - **Metodología:** tables, RQs, keywords and queries of the latest picoc **as they are**. `marco-pico` names the configured framework with its components in words (e.g. "Se adoptó el marco PIO (población, intervención y resultado)…") and gives one row per component with its RQ; title from `paper:status`. States that the strings mix IEEE controlled vocabulary and free terms. `criterios-seleccion` = the inclusion and exclusion criteria of the latest picoc, as they are (two bullet lists or a two-column table). PRISMA counts only from `RSL/seleccion/`; never invent counts.
    - **Resultados / Discusión / Conclusión:** only from `RSL/extraccion/`, by RQ or theme (`format.results_by`).
-   - **Abstract / Resumen:** only when content sections exist; keywords from the picoc.
+   - **Abstract / Resumen:** only when content sections exist; keywords = the `## Keywords` table of the latest picoc as it is (EN column in the Abstract, ES column in the Resumen; never add or drop one).
 7. `citas-rsl` on the worked sections only: `pnpm -s paper:status docs/<slug> --cites paper/<fecha>/paper-borrador.md` + its fixes until PASS or justified `PENDIENTE`.
 8. `pnpm -s redaccion:lint docs/<slug>/paper/<fecha>/paper-borrador.md` → 0 FAIL (WARN allowed in the draft).
 9. `pnpm -s paper:status docs/<slug> --update borrador`.

@@ -795,6 +795,31 @@ def _(sb):
     sb.run(["lint", t], "OK", has="2 criterios de inclusión")
 
 
+@case("K06", "marco", "keywords del paper: ausentes, fuera de lugar, más de 6, menos de 5, inventadas, de otro componente o sin cubrir un componente")
+def _(sb):
+    t = sb.theme()
+    f = next((t / "picoc").glob("*/picoc.md"))
+    good = f.read_text(encoding="utf-8")
+    start = good.index("\n## Keywords")
+    end = good.index("\n## Query Scopus")
+    ky, rest = good[start:end], good[:start] + good[end:]
+
+    def lint(text, has):
+        f.write_text(text, encoding="utf-8")
+        sb.run(["lint", t], "ERROR", has=has)
+
+    lint(rest, "falta '## Keywords'")
+    lint(rest.replace("\n## Criterios de inclusión", ky + "\n\n## Criterios de inclusión"), "justo después de '## Palabras clave'")
+    lint(good.replace("| accessibility evaluation | evaluación de accesibilidad | Co |", "| accessibility evaluation | evaluación de accesibilidad | Co |\n| Usability | usabilidad | O |"), "deben ser 5 o 6")
+    lint(good.replace("| neurodiversity | neurodiversidad | P |\n", "").replace("| WCAG | pautas WCAG | C |\n", ""), "deben ser 5 o 6")
+    lint(good.replace("| WCAG | pautas WCAG | C |", "| digital inclusion | inclusión digital | C |"), "no está en la tabla 'Palabras clave'")
+    lint(good.replace("| WCAG | pautas WCAG | C |", "| WCAG | pautas WCAG | O |"), "es del componente C")
+    lint(good.replace("| WCAG | pautas WCAG | C |", "| Usability | usabilidad | O |"), "falta al menos una keyword de C")
+    lint(good.replace("| WCAG | pautas WCAG | C |", "| neurodiversity | neurodiversidad | P |"), "repetida")
+    f.write_text(good, encoding="utf-8")
+    sb.run(["lint", t], "OK", has="6 keywords")
+
+
 # ============================== skills ================================
 
 SKILLS = ROOT / ".cursor" / "skills"

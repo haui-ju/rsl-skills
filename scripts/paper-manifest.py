@@ -72,7 +72,7 @@ DEFAULT_SHADOW = """\
 version: 1
 format:
   subsection_letters: true   # A. B. C. dentro de Metodología / Resultados
-  keywords_from: picoc       # palabras clave del abstract salen del último picoc/<fecha>-<MARCO>/picoc.md
+  keywords_from: picoc       # keywords del abstract = sección ## Keywords del último picoc/<fecha>-<MARCO>/picoc.md
   examples: global/examples  # papers de referencia (solo estructura / presentación)
 sections:
   - { id: encabezado,   title: "Título · Tema · Problemática · Objetivo", group: portada, depends_on: [topic.md, informe-polish.md, picoc] }
