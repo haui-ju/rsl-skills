@@ -18,7 +18,7 @@ El agente verifica/instala prerrequisitos (node + pnpm, pipx graphifyy, poppler)
 | `rsl-topic-panel` | Estresa un tema (4 agentes + debate Mermaid + consenso) | `docs/[titulo-breve]/topic.md` |
 | `rsl-make-report` | Genera el informe UTP (7 puntos) + marco de búsqueda aparte | `docs/[titulo-breve]/informe.md` + `picoc.md` |
 | `rsl-polish-report` | Pule el informe y su marco (4 agentes) | `docs/[titulo-breve]/informe-polish.md` + `picoc-polish.md` |
-| `rsl-make-paper` | Nueva versión del paper borrador, solo secciones `on` de `paper.yml` (+ agente `citas-rsl`) | `docs/[titulo-breve]/paper/<fecha>/paper-borrador.md` |
+| `rsl-make-paper` | Nueva versión del paper borrador, solo secciones `on` (mejorar) y `rewrite` (reescribir) de `paper.yml` (+ agente `citas-rsl`) | `docs/[titulo-breve]/paper/<fecha>/paper-borrador.md` |
 | `rsl-polish-paper` | Pule esas secciones (4 agentes + `citas-rsl`) → texto limpio + traza de debate | `paper/<fecha>/paper-polish.md` + `paper-debate.md` |
 
 ## Skills Graphify (memoria — **tú** las ejecutas)
@@ -40,7 +40,7 @@ docs/[titulo-breve]/
   picoc.md               ← marco PICO/PICOC/PICOCT: RQ por componente, keywords, tabla 1:1, queries Scopus/WoS/IEEE Xplore
   picoc-polish.md        ← marco pulido (rsl-polish-report)
   paper/
-    paper.yml            ← TÚ decides: cada sección on / frozen / off + formato (romana, APA/IEEE…)
+    paper.yml            ← TÚ decides: cada sección frozen / on / rewrite / off + formato (romana, APA/IEEE…)
     paper.shadow.yml     ← detalle técnico: títulos, capítulos, depends_on (rara vez se edita)
     paper.state.jsonc    ← hashes y versiones (lo gestiona pnpm paper:status; no editar)
     2026-09-05/          ← una carpeta por corrida (trazabilidad; nunca se editan las anteriores)
@@ -107,7 +107,7 @@ En `theme`, el `<slug>` se omite si solo hay un tema; `refresh`/`status` aceptan
 | `thesaurus:check "t1" "t2" …` | Valida varios términos contra IEEE: preferido / no preferido (→ USE) / libre, con sinónimos (UF), específicos (NT) y página. |
 | `thesaurus:lookup "término"` | Ficha completa de un término IEEE (todas sus relaciones y página). |
 | `picoc:lint docs/<slug>/picoc.md` | PASS/FAIL del marco: tabla = queries Scopus/WoS/IEEE Xplore (1:1), origen en el tema, 1 RQ por componente, descriptores IEEE preferidos. |
-| `paper:status docs/<slug>` | Estado del paper según `paper/paper.yml`: qué se regenera, stale, blocked; FAIL si se editó a mano una sección frozen. |
+| `paper:status docs/<slug>` | Estado del paper según `paper/paper.yml`: qué se mejora (on) o reescribe (rewrite), stale, blocked; FAIL si se editó a mano una sección frozen. |
 | `paper:status docs/<slug> --init` | Crea `paper/paper.yml` y `paper/paper.shadow.yml` por defecto. |
 | `paper:status docs/<slug> --migrate` | Convierte un `paper.yml` del formato antiguo (enabled/frozen) al nuevo. |
 | `paper:status docs/<slug> --new-version` | Crea `paper/<fecha>/` copiando la versión anterior. |
@@ -165,17 +165,21 @@ Solo editas una palabra por sección, agrupadas por capítulo:
 ```yaml
 Introducción:
   contexto:      frozen
-  objetivo-rsl:  on
+  problema:      on
+  objetivo-rsl:  rewrite
 ```
 
-| Estado | Efecto en la próxima corrida |
-|--------|------------------------------|
-| `on` | Se regenera (borrador y polish) |
-| `frozen` | Se copia tal cual; si cambia una fuente de `depends_on` (p. ej. `picoc.md`) queda **stale** y se avisa |
-| `off` | No se genera (por defecto todo lo posterior a la Introducción) |
+| Estado | Qué le dices | Efecto en la próxima corrida (borrador y polish) |
+|--------|--------------|--------------------------------------------------|
+| `frozen` | Está bien, no lo toques | Se copia tal cual; si cambia una fuente de `depends_on` (p. ej. `picoc.md`) queda **stale** y se avisa |
+| `on` | Revísalo y mejóralo | Conserva el texto actual como base y lo corrige, completa y pule; no lo reescribe |
+| `rewrite` | Reescríbelo / replantéalo | Descarta el texto actual y lo vuelve a escribir desde las fuentes; puede cambiar estructura y argumento |
+| `off` | No está activo | No se genera ni aparece (por defecto todo lo posterior a la Introducción) |
+
+Una sección en `on` que aún no tiene texto se escribe desde cero (sale como `reescribir (nueva)` en `paper:status`).
 
 ```bash
-pnpm -s paper:status docs/<slug>            # tabla: qué se regenera, stale, blocked; FAIL si editaste a mano una frozen
+pnpm -s paper:status docs/<slug>            # tabla: qué se mejora o reescribe, stale, blocked; FAIL si editaste a mano una frozen
 pnpm -s paper:status docs/<slug> --cites    # citas en texto vs Referencias (APA7 | IEEE según formato.citas)
 ```
 

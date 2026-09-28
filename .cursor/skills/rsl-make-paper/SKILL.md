@@ -3,7 +3,7 @@ name: rsl-make-paper
 description: >-
   Builds a new version docs/[short-title]/paper/<fecha>/paper-borrador.md — the
   rich draft of the RSL paper, section by section according to paper/paper.yml
-  (only sections marked on are regenerated; frozen/off ones are copied
+  (on = improve, rewrite = regenerate from scratch; frozen/off ones are copied
   from the previous version). Uses topic.md, informe, picoc.md, Graphify theme memory,
   RSL/MD and global/examples. Use when the user says rsl-make-paper. Does NOT
   launch the 4-agent debate (that is rsl-polish-paper); only citas-rsl at the end.
@@ -15,7 +15,16 @@ description: >-
 
 Write the **rich draft** of the RSL paper as a new version `paper/<fecha>/paper-borrador.md`. Single proposer flow (maximal useful expansion). The 4-agent debate belongs to **`rsl-polish-paper`**; here only **`citas-rsl`** runs at the end.
 
-Only the sections marked **`on`** in `paper/paper.yml` are (re)generated. **`frozen`** and **`off`** sections are copied unchanged from the previous version. Titles, groups and `depends_on` live in `paper/paper.shadow.yml`.
+Each section of `paper/paper.yml` has one state:
+
+| State | Meaning (user) | What this skill does on `paper-borrador.md` |
+|---|---|---|
+| `frozen` | "Está bien, no lo toques" | Copy byte for byte; never edit. |
+| `on` | "Revísalo y mejóralo" | Keep the previous text as the base (structure, argument, voice). Fix errors, fill gaps, add evidence, improve continuity. Do **not** rewrite from scratch. |
+| `rewrite` | "Reescríbelo / replantéalo" | Ignore the previous text; regenerate from the sources (topic, informe, picoc, RSL/MD, graph). Structure and argument may change. |
+| `off` | "No está activo" | Do nothing; the section does not appear. |
+
+An `on` section with no previous text is shown as `reescribir (nueva)` and is generated from the sources. Titles, groups and `depends_on` live in `paper/paper.shadow.yml`.
 
 ## Paths (required)
 
@@ -26,7 +35,7 @@ docs/[titulo-breve]/
   RSL/seleccion/  RSL/extraccion/                       (los prepara el USUARIO: queries, validación, PRISMA; solo lectura)
   graphify-out/                                         (memoria del tema — solo lookup)
   paper/
-    paper.yml            (lo edita el usuario: on / frozen / off + formato)
+    paper.yml            (lo edita el usuario: frozen / on / rewrite / off + formato)
     paper.shadow.yml     (títulos, grupos, depends_on, formato avanzado)
     paper.state.jsonc    (hashes y versiones — lo gestiona paper:status; no editar)
     <fecha>/
@@ -48,7 +57,7 @@ Usa rsl-make-paper sobre docs/ia-inclusion-cognitiva-software/
 ## Procedure (required)
 
 1. Resolve `docs/[titulo-breve]/`. If `paper/paper.yml` is missing → `pnpm -s paper:status docs/<slug> --init` (crea `paper.yml` + `paper.shadow.yml`; Introducción on, resto off). If `paper:status` says the old format → `--migrate`.
-2. `pnpm -s paper:status docs/<slug> --new-version` → creates `paper/<fecha>/` copying the previous version and prints the table. Work **only** on the sections listed in **A regenerar**. Report **STALE** (frozen whose sources changed: do not touch, the user decides) and **BLOCKED** (missing data, e.g. `RSL/extraccion`: do not generate, say what is missing).
+2. Run `pnpm -s paper:status docs/<slug>` first: if **A mejorar** and **A reescribir** are both empty (everything frozen/off), do not create a version; report STALE / BLOCKED and stop. Otherwise `pnpm -s paper:status docs/<slug> --new-version` → creates `paper/<fecha>/` copying the previous version and prints the table. Work **only** on the sections listed in **A mejorar (on)** — improve — and **A reescribir (rewrite)** — regenerate. Report **STALE** (frozen whose sources changed: do not touch, the user decides) and **BLOCKED** (missing data, e.g. `RSL/extraccion`: do not generate, say what is missing).
 3. Read internal inputs: ficha (`informe-polish.md` | `informe.md`), marco (`picoc-polish.md` | `picoc.md`), `topic.md`; and the **frozen** sections of the new version as context (coherence; never edit them).
 4. **Graphify first:**
    ```bash
@@ -57,7 +66,7 @@ Usa rsl-make-paper sobre docs/ia-inclusion-cognitiva-software/
    rg "^#" global/examples/*.md
    ```
    Theme graph + `RSL/MD/` locators for evidence (no full PDFs). Examples: only headings and a short passage per section to imitate **structure and presentation**; never copy their text, data or citations. Our writing must exceed their quality. Do not refresh Graphify.
-5. Write each section to regenerate **between its markers** (create them if the section is new; keep the order of `paper.shadow.yml`):
+5. Write each section to improve or rewrite **between its markers** (create them if the section is new; keep the order of `paper.shadow.yml`):
    ```markdown
    <!-- paper:section id=contexto -->
    ### Contexto
@@ -70,9 +79,9 @@ Usa rsl-make-paper sobre docs/ia-inclusion-cognitiva-software/
    - **Metodología:** from `picoc(-polish).md` — its RQs, keywords, tables and the 3 queries **as they are** (no new terms or RQ). PRISMA / selection only from `RSL/seleccion/` (user data); never invent counts.
    - **Resultados / Discusión / Conclusión:** only from `RSL/extraccion/` (user data), by RQ or by theme per `format.results_by`.
    - **Abstract / Resumen:** only when the content sections exist; keywords from `picoc` (`format.keywords_from`).
-7. **`citas-rsl`** (single agent) on the regenerated sections: `pnpm -s paper:status docs/<slug> --cites paper/<fecha>/paper-borrador.md` + agent fixes until PASS or justified `PENDIENTE`.
+7. **`citas-rsl`** (single agent) on the improved and rewritten sections: `pnpm -s paper:status docs/<slug> --cites paper/<fecha>/paper-borrador.md` + agent fixes until PASS or justified `PENDIENTE`.
 8. `pnpm -s paper:status docs/<slug> --update borrador`.
-9. Chat: version path, regenerated / copied / stale / blocked sections, sources, citas result, next step `Usa rsl-polish-paper sobre docs/[titulo-breve]/`.
+9. Chat: version path, improved / rewritten / copied / stale / blocked sections, sources, citas result, next step `Usa rsl-polish-paper sobre docs/[titulo-breve]/`.
 
 ## Writing style (required)
 

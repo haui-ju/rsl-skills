@@ -2,7 +2,7 @@
 """Manifiesto del paper RSL por secciones: docs/<slug>/paper/paper.yml (+ paper.shadow.yml, paper.state.jsonc).
 
 Uso:
-  python3 scripts/paper-manifest.py docs/<slug>                    # estado + qué regenerar (FAIL si una sección frozen fue editada)
+  python3 scripts/paper-manifest.py docs/<slug>                    # estado + qué mejorar / reescribir (FAIL si una sección frozen fue editada)
   python3 scripts/paper-manifest.py docs/<slug> --init             # crea paper.yml + paper.shadow.yml por defecto
   python3 scripts/paper-manifest.py docs/<slug> --migrate          # convierte el paper.yml antiguo (enabled/frozen) y paper.state.json
   python3 scripts/paper-manifest.py docs/<slug> --new-version      # crea paper/<fecha>/ copiando la versión anterior
@@ -10,7 +10,7 @@ Uso:
   python3 scripts/paper-manifest.py docs/<slug> --update polish    # registra hashes tras escribir paper-polish.md
   python3 scripts/paper-manifest.py docs/<slug> --cites [archivo]  # citas en texto vs referencias (format.citation)
 
-paper.yml lo edita el usuario (on / frozen / off + formato).
+paper.yml lo edita el usuario (frozen / on / rewrite / off + formato).
 paper.shadow.yml: títulos, grupos, depends_on y formato avanzado.
 paper.state.jsonc: hashes y versiones; lo gestiona este script.
 """
@@ -42,7 +42,7 @@ GROUPS = [
     ("discusion", "Discusión"),
     ("conclusion", "Conclusión"),
 ]
-STATES = {"on": (True, False), "frozen": (True, True), "off": (False, False)}
+STATES = {"on": (True, False), "rewrite": (True, False), "frozen": (True, True), "off": (False, False)}
 STATE_ALIASES = {True: "on", False: "off"}  # PyYAML lee on/off como booleanos
 FORMATO = {  # clave humana -> (clave interna, {valor humano: valor interno})
     "idioma": ("language", None),
@@ -57,6 +57,7 @@ DEFAULT_SHADOW = """\
 # Configuración técnica del paper; normalmente no se edita.
 # Para activar, congelar o apagar secciones edita paper.yml.
 #   title: encabezado que usa la skill · group: capítulo · depends_on: fuentes que, si cambian, marcan la sección como 'stale'
+#   depends_on especiales: all (todo el paper) · grupos (qué capítulos están on/frozen)
 #   derived: se reconstruye sola (Referencias sale de las citas del texto)
 version: 1
 format:
@@ -71,7 +72,7 @@ sections:
   - { id: problema,      title: El problema,        group: introduccion, depends_on: [picoc.md] }
   - { id: justificacion, title: Justificación,      group: introduccion, depends_on: [informe-polish.md] }
   - { id: objetivo-rsl,  title: Objetivo de la RSL, group: introduccion, depends_on: [picoc.md] }
-  - { id: organizacion,  title: Organización del contenido de la revisión, group: introduccion, depends_on: [paper/paper.yml] }
+  - { id: organizacion,  title: Organización del contenido de la revisión, group: introduccion, depends_on: [grupos] }
   # Metodología
   - { id: marco-pico,          title: "Pregunta PICO y sus componentes",        group: metodologia, depends_on: [picoc.md] }
   - { id: palabras-clave,      title: Palabras clave pertinentes,               group: metodologia, depends_on: [picoc.md] }
@@ -94,9 +95,10 @@ sections:
 
 HUMAN_HEADER = """\
 # Qué hacer con cada sección en la próxima corrida de rsl-make-paper / rsl-polish-paper:
-#   on      -> se (re)genera
-#   frozen  -> se copia tal cual (si cambia su fuente, se avisa como 'stale')
-#   off     -> no aparece
+#   frozen   -> está bien: no se toca, se copia tal cual (si cambia su fuente, se avisa como 'stale')
+#   on       -> revisar y mejorar: se conserva la base y se corrige / pule
+#   rewrite  -> reescribir: se replantea desde cero a partir de las fuentes
+#   off      -> inactivo: no se genera ni aparece
 # Detalle técnico (títulos, dependencias): paper.shadow.yml · Estado interno: paper.state.jsonc (no editar)
 
 formato:
@@ -184,7 +186,7 @@ class Paper:
             for sid, raw in block.items():
                 val = STATE_ALIASES.get(raw, raw)
                 if val not in STATES:
-                    errors.append(f"{sid}: estado '{raw}' no válido (usa on | frozen | off)")
+                    errors.append(f"{sid}: estado '{raw}' no válido (usa frozen | on | rewrite | off)")
                 states[sid] = val
         self.sections = shadow["sections"]
         self.ids = [s["id"] for s in self.sections]
@@ -230,6 +232,8 @@ class Paper:
         return {m.group(1): m.group(2) for m in SECTION_RE.finditer(f.read_text(encoding="utf-8"))} if f.exists() else {}
 
     def dep_hash(self, dep: str) -> str | None:
+        if dep == "grupos":
+            return sha(",".join(sorted({s.get("group", "") for s in self.sections if s.get("enabled")})).encode())
         if dep == "all":
             return sha(json.dumps({k: v.get("content_hash") for k, v in sorted(self.state["sections"].items())}).encode())
         if dep in self.ids:
@@ -325,6 +329,9 @@ def cmd_update(p: Paper, stage: str) -> int:
         if not sec.get("frozen"):
             st["sources_hash"] = p.sources(sec)
             st["status"] = "polished" if stage == "polish" else "borrador"
+        else:
+            old = st.get("sources_hash", {})
+            st["sources_hash"] = {d: old.get(d, h) for d, h in p.sources(sec).items()}
     p.state["versions"].setdefault(v, {})[stage] = True
     p.save_state()
     print(f"actualizado paper.state.jsonc · paper/{v}/{FILES[stage]} · {len(found)} secciones")
@@ -336,7 +343,7 @@ def cmd_status(p: Paper, header: bool = True) -> int:
         p.load()
     v = p.latest()
     current = {st: (p.read_sections(v, st) if v else {}) for st in FILES}
-    rows, regen, blocked, stale, errors = [], [], [], [], []
+    rows, improve, rewrite, blocked, stale, errors = [], [], [], [], [], []
     for sec in p.sections:
         sid = sec["id"]
         st = p.state["sections"].get(sid, {})
@@ -358,16 +365,20 @@ def cmd_status(p: Paper, header: bool = True) -> int:
                 h = st.get("content_hash", {}).get(stage)
                 if h and sid in secs and text_hash(secs[sid]) != h:
                     errors.append(f"frozen '{sid}' fue editado en paper/{v}/{FILES[stage]}")
+        elif sec["estado"] == "rewrite" or not any(sid in secs for secs in current.values()):
+            status = "reescribir" if sec["estado"] == "rewrite" else "reescribir (nueva)"
+            rewrite.append(sid)
         else:
-            status = "regenerar"
-            regen.append(sid)
+            status = "mejorar"
+            improve.append(sid)
         rows.append((sid, sec.get("estado", "auto"), status, ", ".join(changed) or "—", st.get("version", "—")))
     print(f"paper/ · última versión: {v or '—'} · idioma: {p.cfg.get('format', {}).get('language', 'es')} · citation: {p.cfg.get('format', {}).get('citation', 'apa7')} · numbering: {p.cfg.get('format', {}).get('numbering', 'roman')}")
     print("| Sección | estado | status | fuente cambiada | versión |")
     print("|---|---|---|---|---|")
     for r in rows:
         print("| " + " | ".join(r) + " |")
-    print(f"\nA regenerar: {', '.join(regen) or '—'}")
+    print(f"\nA mejorar (on): {', '.join(improve) or '—'}")
+    print(f"A reescribir (rewrite): {', '.join(rewrite) or '—'}")
     if stale:
         print(f"STALE (frozen, no se tocan; decide si descongelar): {'; '.join(stale)}")
     if blocked:

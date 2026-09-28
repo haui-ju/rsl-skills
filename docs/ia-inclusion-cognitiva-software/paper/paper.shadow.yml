@@ -1,6 +1,7 @@
 # Configuración técnica del paper; normalmente no se edita.
 # Para activar, congelar o apagar secciones edita paper.yml.
 #   title: encabezado que usa la skill · group: capítulo · depends_on: fuentes que, si cambian, marcan la sección como 'stale'
+#   depends_on especiales: all (todo el paper) · grupos (qué capítulos están on/frozen)
 #   derived: se reconstruye sola (Referencias sale de las citas del texto)
 version: 1
 format:
@@ -15,7 +16,7 @@ sections:
   - { id: problema,      title: El problema,        group: introduccion, depends_on: [picoc.md] }
   - { id: justificacion, title: Justificación,      group: introduccion, depends_on: [informe-polish.md] }
   - { id: objetivo-rsl,  title: Objetivo de la RSL, group: introduccion, depends_on: [picoc.md] }
-  - { id: organizacion,  title: Organización del contenido de la revisión, group: introduccion, depends_on: [paper/paper.yml] }
+  - { id: organizacion,  title: Organización del contenido de la revisión, group: introduccion, depends_on: [grupos] }
   # Metodología
   - { id: marco-pico,          title: "Pregunta PICO y sus componentes",        group: metodologia, depends_on: [picoc.md] }
   - { id: palabras-clave,      title: Palabras clave pertinentes,               group: metodologia, depends_on: [picoc.md] }

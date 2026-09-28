@@ -3,8 +3,8 @@ name: rsl-polish-paper
 description: >-
   Polishes the latest docs/[short-title]/paper/<fecha>/paper-borrador.md with 4
   agents + citas-rsl and writes paper-polish.md and paper-debate.md in that
-  version, section by section according to paper/paper.yml (only on
-  sections; frozen ones copied; stale ones reported). Use when the
+  version, section by section according to paper/paper.yml (on = improve,
+  rewrite = re-polish from scratch; frozen ones copied; stale ones reported). Use when the
   user says rsl-polish-paper.
 ---
 
@@ -12,19 +12,28 @@ description: >-
 
 ## Goal
 
-Polish the latest **`paper-borrador.md`** via 4-agent debate + `citas-rsl` → **`paper-polish.md`** (clean, ready to present) + **`paper-debate.md`** (trace), in the same version folder. Only sections marked **`on`** in `paper/paper.yml` are polished; **`frozen`** ones are copied byte for byte and **`off`** ones are omitted. Do not create from scratch (`rsl-make-paper`).
+Polish the latest **`paper-borrador.md`** via 4-agent debate + `citas-rsl` → **`paper-polish.md`** (clean, ready to present) + **`paper-debate.md`** (trace), in the same version folder. Each section of `paper/paper.yml` has one state:
+
+| State | Meaning (user) | What this skill does on `paper-polish.md` |
+|---|---|---|
+| `frozen` | "Está bien, no lo toques" | Copy byte for byte; never edit. |
+| `on` | "Revísalo y mejóralo" | Start from the current polished text. Agents review it and propose **targeted** fixes (grammar, continuity, precision, citations, trimming). Keep thesis, structure and what works. No rewrite from scratch. |
+| `rewrite` | "Reescríbelo / replantéalo" | Discard the current polished text; re-polish from the `paper-borrador.md` section. Agents may reframe the argument and structure. |
+| `off` | "No está activo" | Do nothing; the section does not appear. |
+
+An `on` section with no polished text yet (`reescribir (nueva)`) is polished from the borrador. Do not create from scratch (`rsl-make-paper`).
 
 ## Paths
 
 ```text
 docs/[titulo-breve]/paper/
-  paper.yml (on | frozen | off + formato) · paper.shadow.yml (títulos, depends_on) · paper.state.jsonc (no editar)
+  paper.yml (frozen | on | rewrite | off + formato) · paper.shadow.yml (títulos, depends_on) · paper.state.jsonc (no editar)
   <fecha>/paper-borrador.md → paper-polish.md + paper-debate.md
 topic/informe*/picoc* = insumo interno (NUNCA citar en el paper)
 global/examples/ (estructura) · global/citation-style/ (APA7 | IEEE)
 ```
 
-If the latest version **already has** a finished polish (`paper:status` shows it in `paper.state.jsonc`), first run `pnpm -s paper:status docs/<slug> --new-version` (copies draft and polish) and work in the new version. Never edit previous versions.
+If there is something to improve or rewrite and the latest version **already has** a finished polish (`paper:status` shows it in `paper.state.jsonc`), first run `pnpm -s paper:status docs/<slug> --new-version` (copies draft and polish) and work in the new version. Never edit previous versions.
 
 ## Division of labor
 
@@ -117,15 +126,15 @@ The **Problemática** header must be a research **question**.
 
 ## Procedure
 
-1. `pnpm -s paper:status docs/<slug>` (create a new version if the latest is already polished). Work only on **A regenerar**; report **STALE** and **BLOCKED** without touching them.
+1. `pnpm -s paper:status docs/<slug>`. If **A mejorar** and **A reescribir** are both empty (everything frozen/off): do **not** create a version or append a debate block; only run `--cites` on the latest polish, report STALE / BLOCKED and stop. Otherwise create a new version if the latest is already polished, work only on **A mejorar (on)** and **A reescribir (rewrite)** and report **STALE** and **BLOCKED** without touching them.
 2. Read the latest `paper-borrador.md` + ficha + `picoc(-polish).md` + `topic.md` (internal) + frozen sections (context).
 3. Graphify lookup (theme + examples; no refresh).
-4. Parallel on the sections to regenerate only: `critico-rsl`, `defensor-rsl`, `impacto-social-rsl`, `viabilidad-negocio-rsl`.
-   Prompt: sections to polish + frozen neighbors as context + format; problemática-pregunta; masticado; continuidad; no sabor lista-IA / internal files.
+4. Parallel on the sections to improve or rewrite only: `critico-rsl`, `defensor-rsl`, `impacto-social-rsl`, `viabilidad-negocio-rsl`.
+   Prompt: sections with their mode (`on` → targeted improvements, justify each change; `rewrite` → free to reframe) + frozen neighbors as context + format; problemática-pregunta; masticado; continuidad; no sabor lista-IA / internal files.
 5. Brief synthesis in chat.
 6. Write the polished sections between their markers in `paper-polish.md` (copy frozen ones unchanged; rebuild Referencias).
 7. **`citas-rsl`**: `pnpm -s paper:status docs/<slug> --cites` + agent fixes until PASS or justified `PENDIENTE`.
-8. Append to `paper-debate.md` a block for this run: date, regenerated sections, Mermaid + turnos, **Forma/gramática pass-fail** (3–5 corrections; if fail → rewrite before delivering) and **Citas pass-fail** (citas-rsl table). Do not delete earlier blocks.
+8. Append to `paper-debate.md` a block for this run: date, improved / rewritten sections, Mermaid + turnos, **Forma/gramática pass-fail** (3–5 corrections; if fail → rewrite before delivering) and **Citas pass-fail** (citas-rsl table). Do not delete earlier blocks.
 9. `pnpm -s paper:status docs/<slug> --update polish` (must end without FAIL).
 10. List changes, stale / blocked sections, PDF/Graphify gaps. Suggest marking validated sections as `frozen` in `paper/paper.yml`.
 

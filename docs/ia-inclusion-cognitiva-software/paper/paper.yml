@@ -1,44 +1,45 @@
 # Qué hacer con cada sección en la próxima corrida de rsl-make-paper / rsl-polish-paper:
-#   on      -> se (re)genera
-#   frozen  -> se copia tal cual (si cambia su fuente, se avisa como 'stale')
-#   off     -> no aparece
+#   frozen   -> está bien: no se toca, se copia tal cual (si cambia su fuente, se avisa como 'stale')
+#   on       -> revisar y mejorar: se conserva la base y se corrige / pule
+#   rewrite  -> reescribir: se replantea desde cero a partir de las fuentes
+#   off      -> inactivo: no se genera ni aparece
 # Detalle técnico (títulos, dependencias): paper.shadow.yml · Estado interno: paper.state.jsonc (no editar)
 
 formato:
-  idioma: es              # idioma del paper: es | en | pt | fr | de (cualquier código ISO 639-1)
-  numeracion: romana      # romana | arabiga | ninguna
-  citas: apa7             # apa7 | ieee
-  resumen: [en, es]       # idiomas del Abstract/Resumen
-  resultados_por: rq      # rq | tema
+  idioma: es # idioma del paper: es | en | pt | fr | de (cualquier código ISO 639-1)
+  numeracion: romana # romana | arabiga | ninguna
+  citas: apa7 # apa7 | ieee
+  resumen: [en, es] # idiomas del Abstract/Resumen
+  resultados_por: rq # rq | tema
 
 Portada:
-  encabezado: on
-  resumen:    off
+  encabezado: frozen
+  resumen: off
 
 Introducción:
-  contexto:      on
-  problema:      on
-  justificacion: on
-  objetivo-rsl:  on
-  organizacion:  on
+  contexto: frozen
+  problema: frozen
+  justificacion: frozen
+  objetivo-rsl: frozen
+  organizacion: frozen
 
 Metodología:
-  marco-pico:          off
-  palabras-clave:      off
-  ecuacion-busqueda:   off
+  marco-pico: off
+  palabras-clave: off
+  ecuacion-busqueda: off
   criterios-seleccion: off
-  seleccion-prisma:    off
-  calidad:             off
+  seleccion-prisma: off
+  calidad: off
 
 Resultados:
-  distribucion:        off
+  distribucion: off
   hallazgos-generales: off
-  resultados-rq:       off
+  resultados-rq: off
 
 Discusión:
   discusion-temas: off
-  discusion-rq:    off
-  amenazas:        off
+  discusion-rq: off
+  amenazas: off
 
 Conclusión:
   conclusion: off
