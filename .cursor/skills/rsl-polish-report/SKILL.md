@@ -18,7 +18,9 @@ Polish an existing `informe.md` via a 4-agent debate and save the result as **`i
 docs/[titulo-breve]/
   topic.md              (optional, from rsl-topic-panel)
   informe.md            (input, from rsl-make-report)
+  picoc.md              (input, from rsl-make-report)
   informe-polish.md     (output, this skill)
+  picoc-polish.md       (output, this skill)
   RSL/
     PDF/                (SLR PDFs — do not move; read if useful)
 ```
@@ -44,13 +46,14 @@ Spanish académico-profesional with connectors; cohesive paragraphs.
 ## Procedure (required)
 
 1. Read `informe.md` (+ `topic.md`). Prefer theme Graphify lookup if `graphify-out/graph.json` exists (`graphify query ... --graph docs/[tema]/graphify-out/graph.json`). Do **not** refresh Graphify here. Avoid loading full PDFs; they live under `RSL/PDF/`.
-2. **Auditoría de vocabulario** (`playbooks/vocabulario-controlado.md`): extraer todos los términos EN de la sección 2 (PICOC, tabla y query) y correr **una** vez `pnpm -s thesaurus:check "…" "…"`. Si el informe no trae marco PICOC, construirlo en el polish.
+2. **Auditoría del marco** (`playbooks/vocabulario-controlado.md`): leer `picoc.md` (si no existe, o si el informe aún trae tablas/queries en la sección 2, construirlo desde ahí). Correr `pnpm -s picoc:lint docs/[titulo-breve]/picoc.md` y **una** vez `pnpm -s thesaurus:check "…" "…"` con todos los términos EN de la tabla de búsqueda.
 3. Launch in parallel: `critico-rsl`, `defensor-rsl`, `impacto-social-rsl`, `viabilidad-negocio-rsl`.
-   Shared prompt: informe package + tabla de `thesaurus:check` + “Evalúa/mejora este INFORME. Responde en español con el formato de tu rol.”
+   Shared prompt: informe + `picoc.md` + salida del lint + tabla de `thesaurus:check` + “Evalúa/mejora este INFORME y su marco de búsqueda. Responde en español con el formato de tu rol.”
 4. Brief debate synthesis in chat.
-5. Write **`informe-polish.md`** (do not overwrite `informe.md` unless the user explicitly asks). Keep the same 7-point headings. Sección 2 con el formato de `rsl-make-report` (PICOC + tabla con `Tipo`/`Pág. IEEE` + query por bloques + libres justificados): no preferidos sustituidos por su USE, UF incorporados, ningún término nuevo sin pasar por `thesaurus:check`.
-6. List main changes and still-missing PDFs under `RSL/PDF/`.
-7. Chat — siguiente paso (no ejecutar aquí):
+5. Write **`informe-polish.md`** (do not overwrite `informe.md` unless the user explicitly asks). Keep the same 7-point headings. Sección 2 = solo el enlace: `Las palabras clave, el marco PICOCT y las queries se encuentran en [picoc-polish.md](picoc-polish.md).` (ajustar el nombre del marco).
+6. Write **`picoc-polish.md`** con la plantilla del playbook: reglas R1 (origen en el tema), R2 (tabla 1:1 con Scopus, Web of Science e IEEE Xplore) y R3 (1 RQ por componente); no preferidos sustituidos por su USE; ningún término nuevo sin `thesaurus:check`. `pnpm -s picoc:lint docs/[titulo-breve]/picoc-polish.md` → **PASS**.
+7. List main changes (informe y marco) and still-missing PDFs under `RSL/PDF/`.
+8. Chat — siguiente paso (no ejecutar aquí):
 
 ```text
 Usa rsl-make-paper sobre docs/[titulo-breve]/
@@ -63,4 +66,6 @@ Usa rsl-make-paper sobre docs/[titulo-breve]/
 - Dropping UTP section structure (incl. 1.1 / 1.2 / 1.3).
 - Moving or dumping PDFs into the theme root.
 - Saving outside `docs/[titulo-breve]/`.
-- Dejar en sección 2 descriptores inventados o no validados contra el thesaurus IEEE.
+- Dejar descriptores inventados o no validados contra el thesaurus IEEE.
+- Tablas o queries en la sección 2 del informe (solo el enlace a `picoc-polish.md`).
+- Entregar `picoc-polish.md` sin `picoc:lint` PASS (tabla ≠ query, términos sin origen en el tema, RQ faltantes).

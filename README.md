@@ -16,8 +16,8 @@ El agente verifica/instala prerrequisitos (node + pnpm, pipx graphifyy, poppler)
 |-------|----------|--------|
 | `rsl-bootstrap` | Paso 0: deja el entorno y todos los grafos Graphify listos | `graphify-out/` · `global/thesaurus/graphify-out/` · `docs/*/graphify-out/` |
 | `rsl-topic-panel` | Estresa un tema (4 agentes + debate Mermaid + consenso) | `docs/[titulo-breve]/topic.md` |
-| `rsl-make-report` | Genera el informe UTP (7 puntos) | `docs/[titulo-breve]/informe.md` |
-| `rsl-polish-report` | Pule el informe (4 agentes) | `docs/[titulo-breve]/informe-polish.md` |
+| `rsl-make-report` | Genera el informe UTP (7 puntos) + marco de búsqueda aparte | `docs/[titulo-breve]/informe.md` + `picoc.md` |
+| `rsl-polish-report` | Pule el informe y su marco (4 agentes) | `docs/[titulo-breve]/informe-polish.md` + `picoc-polish.md` |
 | `rsl-make-paper` | Genera la **Introducción** borrador (sin agentes; APA 7; puede ir larga con §1.1…) | `docs/[titulo-breve]/paper.md` |
 | `rsl-polish-paper` | Pule la Introducción (4 agentes) → texto limpio + traza de debate | `paper-polish.md` + `paper-debate.md` |
 
@@ -35,8 +35,10 @@ Mismo tema → **misma carpeta**:
 ```text
 docs/[titulo-breve]/
   topic.md
-  informe.md
+  informe.md             ← sección 2 solo enlaza al marco
   informe-polish.md
+  picoc.md               ← marco PICO/PICOC/PICOCT: RQ por componente, keywords, tabla 1:1, queries Scopus/WoS/IEEE Xplore
+  picoc-polish.md        ← marco pulido (rsl-polish-report)
   paper.md
   paper-polish.md        ← tema / problemática / objetivo + Intro fluida + 3 refs APA
   paper-debate.md        ← Mermaid + turnos (no va al documento)
@@ -154,7 +156,11 @@ Aristas: `broader` (BT) · `narrower` (NT) · `related` (RT) · `use` (no prefer
 Si un concepto **no** aparece (p. ej. *Accessibility*, *Neurodiversity*, *LLM* en la edición 2019) se declara vacío de vocabulario y se usa término libre — no inventar descriptor IEEE.
 Derivados gitignored (licencia CC BY-NC-ND).
 
-**Protocolo en las skills:** `rsl-topic-panel` (tópicos), `rsl-make-report` (PICOC + keywords + query), `rsl-polish-report` (auditoría + crítico), `rsl-make-paper` (definiciones/método) siguen [`playbooks/vocabulario-controlado.md`](playbooks/vocabulario-controlado.md): descriptor IEEE preferido (USE si era no preferido) + UF al `OR` + términos libres marcados y justificados. Nunca un descriptor inventado.
+**Protocolo en las skills:** `rsl-topic-panel` (tópicos), `rsl-make-report` (`picoc.md`), `rsl-polish-report` (`picoc-polish.md` + crítico), `rsl-make-paper` (definiciones, RQ en §4/§5) siguen [`playbooks/vocabulario-controlado.md`](playbooks/vocabulario-controlado.md): descriptor IEEE preferido (USE si era no preferido) + términos libres marcados y justificados; cada término con origen en el tema; tabla y queries (Scopus, Web of Science, IEEE Xplore) **1:1**; una pregunta por componente. Nunca un descriptor inventado.
+
+```bash
+pnpm -s picoc:lint docs/[titulo-breve]/picoc.md   # PASS/FAIL de las reglas 1:1, RQ e IEEE
+```
 
 ---
 

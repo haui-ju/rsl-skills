@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-28T02:05:30+00:00",
+  "updated_at": "2026-09-28T02:35:50+00:00",
   "entries": {
     "informe.md": {
       "source": "informe.md",
@@ -11,7 +11,7 @@
       "method": "theme-md",
       "status": "graphify_indexed",
       "md_created_at": "2026-09-05T03:14:36+00:00",
-      "graphify_indexed_at": "2026-09-28T02:05:30+00:00",
+      "graphify_indexed_at": "2026-09-28T02:35:50+00:00",
       "notes": "theme markdown",
       "heading_count": 11
     },
@@ -24,7 +24,7 @@
       "method": "theme-md",
       "status": "graphify_indexed",
       "md_created_at": "2026-09-05T03:08:41+00:00",
-      "graphify_indexed_at": "2026-09-28T02:05:30+00:00",
+      "graphify_indexed_at": "2026-09-28T02:35:50+00:00",
       "notes": "theme markdown",
       "heading_count": 29
     },
@@ -37,7 +37,7 @@
       "method": "pdftotext+structure",
       "status": "graphify_indexed",
       "md_created_at": "2026-09-05T03:08:41+00:00",
-      "graphify_indexed_at": "2026-09-28T02:05:30+00:00",
+      "graphify_indexed_at": "2026-09-28T02:35:50+00:00",
       "notes": "words:13220,alpha:0.93;headings:52",
       "heading_count": 52
     },
@@ -50,7 +50,7 @@
       "method": "pdftotext+structure",
       "status": "graphify_indexed",
       "md_created_at": "2026-09-05T03:08:41+00:00",
-      "graphify_indexed_at": "2026-09-28T02:05:30+00:00",
+      "graphify_indexed_at": "2026-09-28T02:35:50+00:00",
       "notes": "words:11983,alpha:0.93;headings:37",
       "heading_count": 37
     },
@@ -63,20 +63,20 @@
       "method": "pdftotext+structure",
       "status": "graphify_indexed",
       "md_created_at": "2026-09-05T03:14:36+00:00",
-      "graphify_indexed_at": "2026-09-28T02:05:30+00:00",
+      "graphify_indexed_at": "2026-09-28T02:35:50+00:00",
       "notes": "words:11709,alpha:0.91;headings:36",
       "heading_count": 36
     },
     "informe-polish.md": {
       "source": "informe-polish.md",
-      "source_sha256": "8b1ec37d379500ba2b40581d4c9effb5c7893dfa1c5b6144c995bc09f89b7f44",
-      "source_bytes": 11525,
+      "source_sha256": "cfd2ad3b9115f8d09d3d4c02bd82ca122c8c5dc730e7cf77709bdf1c9f510d30",
+      "source_bytes": 17570,
       "md": "informe-polish.md",
-      "md_sha256": "8b1ec37d379500ba2b40581d4c9effb5c7893dfa1c5b6144c995bc09f89b7f44",
+      "md_sha256": "cfd2ad3b9115f8d09d3d4c02bd82ca122c8c5dc730e7cf77709bdf1c9f510d30",
       "method": "theme-md",
       "status": "graphify_indexed",
-      "md_created_at": "2026-09-28T02:05:29+00:00",
-      "graphify_indexed_at": "2026-09-28T02:05:30+00:00",
+      "md_created_at": "2026-09-28T02:35:50+00:00",
+      "graphify_indexed_at": "2026-09-28T02:35:50+00:00",
       "notes": "theme markdown",
       "heading_count": 11
     },
@@ -89,7 +89,7 @@
       "method": "theme-md",
       "status": "graphify_indexed",
       "md_created_at": "2026-09-28T02:05:29+00:00",
-      "graphify_indexed_at": "2026-09-28T02:05:30+00:00",
+      "graphify_indexed_at": "2026-09-28T02:35:50+00:00",
       "notes": "theme markdown",
       "heading_count": 9
     },
@@ -102,7 +102,7 @@
       "method": "theme-md",
       "status": "graphify_indexed",
       "md_created_at": "2026-09-28T02:05:29+00:00",
-      "graphify_indexed_at": "2026-09-28T02:05:30+00:00",
+      "graphify_indexed_at": "2026-09-28T02:35:50+00:00",
       "notes": "theme markdown",
       "heading_count": 7
     },
@@ -115,7 +115,7 @@
       "method": "theme-md",
       "status": "graphify_indexed",
       "md_created_at": "2026-09-28T02:05:29+00:00",
-      "graphify_indexed_at": "2026-09-28T02:05:30+00:00",
+      "graphify_indexed_at": "2026-09-28T02:35:50+00:00",
       "notes": "theme markdown",
       "heading_count": 17
     }

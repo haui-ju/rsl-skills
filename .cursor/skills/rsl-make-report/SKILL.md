@@ -19,6 +19,7 @@ Receive a research topic and write a polished UTP `informe.md` in the theme fold
 docs/[titulo-breve]/
   topic.md              (optional, from rsl-topic-panel)
   informe.md            (this skill)
+  picoc.md              (this skill — marco PICO/PICOC/PICOCT, palabras clave, RQ, queries)
   RSL/
     PDF/                (SLR PDFs only — never next to .md)
 ```
@@ -64,16 +65,18 @@ Spanish **académico-profesional** with connectors; cohesive paragraphs; no coll
 
 1. Resolve folder `docs/[titulo-breve]/` (same theme as `topic.md` if it exists). Ensure `RSL/PDF/` exists.
 2. Normalize título / problemática / objeto (may use afilado from `topic.md` if user agrees or verdict was GO_con_cambios).
-3. **PICOC + keywords + Scopus query (always)** siguiendo `playbooks/vocabulario-controlado.md`:
-   - Conceptos por componente (PICOC por defecto; PICO / PICOCT si el usuario lo pide).
-   - **Una** llamada `pnpm -s thesaurus:check "…" "…"` con todos los candidatos EN.
-   - Descriptor IEEE preferido cuando existe (USE si era no preferido); UF al mismo `OR`; LIBRE marcado y justificado.
-   - Query por bloques de componente; debajo, términos libres + páginas IEEE.
+3. **`picoc.md` (always)** — archivo aparte, con la plantilla y las reglas R1–R3 de `playbooks/vocabulario-controlado.md`:
+   - Marco según el tema (PICO / PICOC / PICOCT; ver tabla del playbook).
+   - Pregunta general = problemática; **1 sub-pregunta por componente** (T incluido) con su dato a extraer.
+   - Cada término con `Origen en el tema` (título / problemática / objeto); nada genérico ni “porque existe en IEEE”.
+   - **Una** llamada `pnpm -s thesaurus:check "…" "…"`; descriptor preferido (USE si era no preferido); LIBRE marcado y justificado.
+   - Tabla de búsqueda **1:1** con los bloques de las queries **Scopus, Web of Science e IEEE Xplore** (mismos términos, mismo N). C/O fuera de la query → tabla de cribado.
+   - `pnpm -s picoc:lint docs/[titulo-breve]/picoc.md` → **PASS** antes de seguir.
    - Si falta el grafo del thesaurus → pedir `Usa rsl-bootstrap`; no inventar descriptores.
 4. **Up to 3 SLRs** (mínimo 2 revisiones; si no hay, mínimo 5 originales con antigüedad menor a 5 años). Download PDFs into `RSL/PDF/`. If fewer, add Scopus queries / placeholders. Never invent DOI/PDF.
 5. Sections 4–7 (section 4 ≤ 300 words; **citar las RSL de la sección 3**).
-6. Write `informe.md` with the **exact 7-point structure** below.
-7. Chat: path, SLRs found, queries pending, PDFs present/missing under `RSL/PDF/`.
+6. Write `informe.md` with the **exact 7-point structure** below (sección 2 = solo el enlace a `picoc.md`).
+7. Chat: paths (`informe.md`, `picoc.md` + resultado del lint), SLRs found, queries pending, PDFs present/missing under `RSL/PDF/`.
 8. Chat — **siguientes pasos** (no ejecutarlos aquí). Cerrar con:
 
 ```text
@@ -106,22 +109,7 @@ Exactly these 7 UTP points (do not invent a separate “paso 8” inside the fil
 
 ## 2. Palabras clave
 
-**Marco PICOC (vocabulario controlado IEEE Thesaurus 2019):**
-
-| Componente | Concepto (ES) | Descriptor IEEE | Sinónimos (UF / variantes) | Términos libres (justificación) | Pág. IEEE |
-|------------|---------------|-----------------|----------------------------|----------------------------------|-----------|
-| P / I / C / O / Contexto | ... | ... o — | ... | ... | p.N o — |
-
-| Español | Inglés | Tipo | Pág. IEEE |
-|---------|--------|------|-----------|
-| ... | ... | IEEE · IEEE (USE desde "…") · Libre | p.N o — |
-
-**Query Scopus (sugerida, por bloques PICOC):**
-\`\`\`
-...
-\`\`\`
-
-*Términos libres (sin descriptor IEEE):* ... — justificación breve.
+Las palabras clave, el marco PICOCT y las queries se encuentran en [picoc.md](picoc.md).
 
 ## 3. Artículos de revisión de literatura relacionados con el tema de investigación
 
@@ -161,5 +149,8 @@ Exactly these 7 UTP points (do not invent a separate “paso 8” inside the fil
 - Leaving SLR PDFs outside `RSL/PDF/`.
 - Omitting keywords/query when SLRs are missing.
 - Keywords/PICOC sin `thesaurus:check`, o presentar como descriptor IEEE un término LIBRE / no preferido.
+- Tablas PICOC, keywords o queries dentro de `informe.md` (van en `picoc.md`; sección 2 solo enlaza).
+- Tabla y query con términos distintos o distinto N; términos sin origen en el tema; componentes sin sub-pregunta.
+- Entregar `picoc.md` sin `picoc:lint` PASS.
 - Colloquial prose in narrative sections.
 - Collapsing 1.1 / 1.2 / 1.3 into three top-level sections numbered 1–3.

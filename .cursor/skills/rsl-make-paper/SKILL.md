@@ -76,14 +76,15 @@ Align the research problem with the ficha: the **problemática is an interrogati
 ## Procedure (required)
 
 1. Resolve `docs/[titulo-breve]/`. Prefer folder of existing `topic.md` / `informe.md`.
-2. Read **ficha** (`informe-polish.md` | `informe.md` | `ficha.md`) + `topic.md` (tema final, GO_*, exclusiones) — internal only.
+2. Read **ficha** (`informe-polish.md` | `informe.md` | `ficha.md`) + **marco** (`picoc-polish.md` | `picoc.md`) + `topic.md` (tema final, GO_*, exclusiones) — internal only.
 3. **Graphify first** (if `graphify-out/graph.json` exists):
    ```bash
    graphify query "<pregunta>" --graph docs/[titulo-breve]/graphify-out/graph.json
    ```
    Prefer `RSL/MD/` chunks via locators; do **not** dump full PDFs. Do **not** refresh Graphify unless the user asks.
 4. If Graphify missing/stale and user attached new RSL files → suggest `Usa graphify-theme sobre docs/[tema]/`; still write `paper.md` from available sources.
-   **Términos técnicos (§1.1 Definiciones, §5 método):** reutilizar los descriptores de la sección 2 de la ficha; si aparece un término EN nuevo, validarlo con `pnpm -s thesaurus:check "…"` (`playbooks/vocabulario-controlado.md`). En el texto visible no citar el thesaurus como fuente de la definición; en §5 sí declarar que las cadenas usan vocabulario controlado IEEE + términos libres.
+   **Términos técnicos (§1.1 Definiciones, §5 método):** reutilizar los descriptores de la tabla de búsqueda de `picoc(-polish).md`; si aparece un término EN nuevo, validarlo con `pnpm -s thesaurus:check "…"` (`playbooks/vocabulario-controlado.md`). En el texto visible no citar el thesaurus como fuente de la definición; en §5 sí declarar que las cadenas usan vocabulario controlado IEEE + términos libres.
+   **Preguntas:** la pregunta general de `picoc(-polish).md` es la problemática de §2/§2.4; sus sub-preguntas por componente (P, I, C, O, Co, T) estructuran §4 (objetivo general + objetivos específicos, uno por RQ) y §5 (cómo se organiza la revisión para responder cada RQ). No inventar RQ nuevas.
 5. Write **`paper.md`** with the **exact section structure** below — **maximal useful expansion**.
 6. Chat: path, sources, next step `Usa rsl-polish-paper sobre docs/[titulo-breve]/paper.md`
 

@@ -18,52 +18,7 @@ Síntesis de evidencia primaria sobre técnicas de IA aplicadas a artefactos y p
 
 ## 2. Palabras clave
 
-| Español | Inglés |
-|---------|--------|
-| revisión sistemática de la literatura | systematic literature review |
-| inteligencia artificial | artificial intelligence |
-| modelos de lenguaje grandes | large language models |
-| GenAI | generative AI |
-| accesibilidad cognitiva | cognitive accessibility |
-| neurodivergencia | neurodiversity / neurodivergence |
-| trastorno del espectro autista | autism spectrum disorder |
-| TDAH | ADHD |
-| discapacidad intelectual | intellectual disability |
-| ciclo de vida del software | software development life cycle |
-| verificación y validación | verification and validation |
-| pruebas de software | software testing |
-| auditoría de accesibilidad | accessibility audit |
-| WCAG | Web Content Accessibility Guidelines |
-| COGA | cognitive accessibility guidelines |
-| ingeniería de software | software engineering |
-
-**Query Scopus — estudios primarios (corpus de la RSL):**
-
-```
-TITLE-ABS-KEY (
-  ( "artificial intelligence" OR "machine learning" OR "large language model*" OR "generative AI" OR LLM )
-  AND
-  ( "cognitive accessibility" OR neurodivers* OR "intellectual disability" OR "autism spectrum" OR ADHD OR COGA OR "learning disabilit*" )
-  AND
-  ( "software engineering" OR "software development" OR "software testing" OR "verification and validation"
-    OR "accessibility evaluation" OR "accessibility audit" OR "requirements engineering" OR WCAG )
-)
-AND PUBYEAR > 2019
-AND ( LIMIT-TO ( DOCTYPE , "ar" ) OR LIMIT-TO ( DOCTYPE , "cp" ) )
-```
-
-**Query Scopus — localizar revisiones afines (no es el corpus primario):**
-
-```
-TITLE-ABS-KEY (
-  ( "systematic literature review" OR "scoping review" OR "systematic mapping" )
-  AND
-  ( "artificial intelligence" OR "machine learning" OR "large language model*" OR LLM )
-  AND
-  ( accessibility OR WCAG OR COGA OR neurodivers* OR "cognitive accessibility" )
-)
-AND PUBYEAR > 2019
-```
+Las palabras clave, el marco PICOCT y las queries se encuentran en [picoc.md](picoc.md).
 
 ## 3. Artículos de revisión de literatura relacionados con el tema de investigación
 
@@ -72,7 +27,7 @@ AND PUBYEAR > 2019
 | Referencia bibliográfica (APA) | DOI / URL | Razón | PDF |
 |--------------------------------|-----------|-------|-----|
 | Chemnad, K., & Othman, A. (2024). Digital accessibility in the era of artificial intelligence—Bibliometric analysis and systematic review. *Frontiers in Artificial Intelligence, 7*, Article 1349668. | https://doi.org/10.3389/frai.2024.1349668 | RSL (≈43 estudios) sobre IA y accesibilidad digital; documenta el **predominio de la discapacidad visual** y cobertura insuficiente de TEA/cognitivo/motor; justifica el contraste “vs sesgo visual”, sin taxonomía de fases SE. | `RSL/PDF/chemnad-othman-2024-digital-accessibility-ai.pdf` |
-| Perry, N., et al. (2024). AI technology to support adaptive functioning in neurodevelopmental conditions in everyday environments: A systematic review. *npj Digital Medicine, 7*, Article 207. | https://doi.org/10.1038/s41746-024-01355-7 | RSL (15 estudios) clínico-asistiva sobre IA y neurodesarrollo en entornos cotidianos; delimita lo que **no** es el aporte SE (outcomes clínicos vs fases/métricas de ingeniería). | `RSL/PDF/perry-etal-2024-ai-neurodevelopmental.pdf` |
+| Perry, N., et al. (2024). AI technology to support adaptive functioning in neurodevelopmental conditions in everyday environments: A systematic review. *npj Digital Medicine, 7*, Article 370. | https://doi.org/10.1038/s41746-024-01355-7 | RSL (15 estudios) clínico-asistiva sobre IA y neurodesarrollo en entornos cotidianos; delimita lo que **no** es el aporte SE (outcomes clínicos vs fases/métricas de ingeniería). | `RSL/PDF/perry-etal-2024-ai-neurodevelopmental.pdf` |
 | Aljedaani, W., & Mollik, R. H. (2026). Large language models for web accessibility: A systematic literature review. In *Proceedings of the 23rd International Web for All Conference (W4A ’26)* (pp. 160–171). ACM. | https://doi.org/10.1145/3800424.3800452 · espejo OA: https://arxiv.org/abs/2605.13873 | RSL de 38 estudios LLM×accesibilidad web; WCAG como marco dominante y **limitada consideración de COGA**; frontera GenAI+web sin matriz **fase SE × métrica** para perfiles cognitivos/neurodivergentes. | `RSL/PDF/aljedaani-mollik-2026-llm-web-accessibility.pdf` |
 
 **Fronteras de solapamiento (no sustituyen a las tres RSL ancla):**
