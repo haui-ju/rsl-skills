@@ -6,7 +6,7 @@ Uso:
 
 FAIL (bloquea la entrega):
   - marcas editoriales pendientes ([citar], (citar), TODO: citar, TODO, PENDIENTE, TBD, FIXME, ???)
-  - huellas del flujo interno en la prosa (topic.md, panel, GO_*, rsl-*, rutas, `código`, "Nota de artefacto")
+  - huellas del flujo interno en la prosa (topic.md, panel, GO_*, rsl-*, rutas, `código`, "Nota de artefacto") y apelaciones a quien lee ("el lector")
   - siglas usadas antes de definirse ("forma completa (SIGLA)" o "SIGLA (forma completa)");
     en el paper, el encabezado (Título/Tema/Problemática/Objetivo) no cuenta: las siglas se definen en el cuerpo
 WARN (revisar; corregir o justificar):
@@ -33,7 +33,7 @@ MARKERS = re.compile(
 )
 INTERNAL = re.compile(
     r"topic\.md|informe(?:-polish)?\.md|picoc(?:-polish|-debate)?\.md|\bpicoc/\d|\bpanel\b|\bGO_\w+|\brsl-[a-z-]+|RSL/(?:PDF|MD)|graphify|"
-    r"Nota de artefacto|\bveredicto\b",
+    r"Nota de artefacto|\bveredicto\b|\b(?:el|al|del|los|las|la|como|nuestros?|nuestras?) lector(?:es|as?)?\b(?! de pantalla)",
     re.I,
 )
 CODE_SPAN = re.compile(r"`[^`]+`")

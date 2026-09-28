@@ -600,12 +600,14 @@ def _(sb):
     sb.run(["pnpm", "thesaurus:check"], "ERROR")
 
 
-@case("D18", "destruir", "citas rotas: APA huérfana, IEEE fuera de orden y sin referencia")
+@case("D18", "destruir", "citas rotas: APA huérfana, IEEE fuera de orden y sin referencia; APA con página sí cuenta como citada")
 def _(sb):
     t = sb.theme()
     f = t / "apa.md"
     f.write_text("Texto (Gómez, 2023) y (Pérez, 2024).\n\n## Referencias\n\nPérez, J. (2024). *A*.\n\nRuiz, A. (2020). *B*.\n", encoding="utf-8")
     sb.run(["paper", t, "--cites", f], "ERROR", has="Gómez")
+    f.write_text("Según Ruiz y Soto (2020, p. 4), algo (Pérez et al., 2024, pp. 10–11).\n\n## Referencias\n\nPérez, J. (2024). *A*.\n\nRuiz, A., & Soto, B. (2020). *B*.\n", encoding="utf-8")
+    sb.run(["paper", t, "--cites", f], "OK")
     sb.set_yml(t, r"^(  citas:\s*)apa7", r"\g<1>ieee")
     f.write_text("Texto [2] y [1], luego [3]-[4].\n\n## Referencias\n\n[1] A.\n\n[2] B.\n\n[3] C.\n", encoding="utf-8")
     sb.run(["paper", t, "--cites", f], "ERROR", has="[4]")
@@ -979,7 +981,7 @@ def _(sb):
     sb.run(["paper", t], "OK", lacks="seleccion-prisma (falta")
 
 
-@case("K07", "marco", "redaccion:lint acepta n = X y [[ AGREGAR DIAGRAMA ]] como marcadores del usuario, pero sigue fallando con TODO")
+@case("K07", "marco", "redaccion:lint acepta n = X y [[ AGREGAR DIAGRAMA ]] como marcadores del usuario, pero sigue fallando con TODO y con apelaciones a «el lector» (no con «lector de pantalla»)")
 def _(sb):
     f = sb.base / "metodo.md"
     f.write_text("# Método\n\nSe identificaron registros en Scopus (n = X) y en Web of Science (n = X). Se aplicaron los criterios CI1 y CE2.\n\n"
@@ -987,6 +989,10 @@ def _(sb):
     sb.run(["red", f], "OK", has="3 marcador(es) del usuario")
     f.write_text(f.read_text(encoding="utf-8") + "\nTODO: revisar.\n", encoding="utf-8")
     sb.run(["red", f], "ERROR", has="TODO")
+    f.write_text("# Método\n\nSe probó con un lector de pantalla y con varios lectores de pantalla.\n", encoding="utf-8")
+    sb.run(["red", f], "OK")
+    f.write_text("# Método\n\nEsas decisiones son las que el lector debe poder revisar.\n", encoding="utf-8")
+    sb.run(["red", f], "ERROR", has="el lector")
 
 
 @case("S08", "skills", "Metodología: make y polish del paper usan la bibliografía compartida, solo Scopus y WoS y los marcadores del usuario")
@@ -995,11 +1001,15 @@ def _(sb):
     polish = (SKILLS / "rsl-polish-paper" / "SKILL.md").read_text(encoding="utf-8")
     for need in ("global/bibliography/bibliography.md", "rsl:source", "[[ AGREGAR DIAGRAMA ]]", "Web of Science", "n = X", "Excluidos por fecha de publicación", "CI1"):
         sb.check(need in make, f"rsl-make-paper/SKILL.md no contiene «{need}»")
-    for need in ("global/bibliography/bibliography.md", "[[ AGREGAR DIAGRAMA ]]", "Hilo", "R7"):
+    for need in ("global/bibliography/bibliography.md", "[[ AGREGAR DIAGRAMA ]]", "Hilo", "R7", "R8", "Sustento"):
         sb.check(need in polish, f"rsl-polish-paper/SKILL.md no contiene «{need}»")
     sb.check("R7" in make, "rsl-make-paper/SKILL.md no pide el hilo entre párrafos (R7)")
+    sb.check("R8" in make, "rsl-make-paper/SKILL.md no pide citar las afirmaciones importantes (R8)")
+    critic = (ROOT / ".cursor" / "agents" / "critico-rsl.md").read_text(encoding="utf-8")
+    sb.check("### Sustento" in critic, "critico-rsl no devuelve la tabla Sustento (afirmaciones importantes sin cita)")
     playbook = (ROOT / "playbooks" / "redaccion-academica.md").read_text(encoding="utf-8")
     sb.check("### R7" in playbook, "playbooks/redaccion-academica.md no tiene la regla R7 de coherencia y progresión")
+    sb.check("### R8" in playbook, "playbooks/redaccion-academica.md no tiene la regla R8 de sustento con citas")
     agent = (ROOT / ".cursor" / "agents" / "redaccion-rsl.md").read_text(encoding="utf-8")
     sb.check("### Hilo" in agent, "redaccion-rsl no devuelve la tabla Hilo (intención y enlace de cada párrafo)")
     cat = ROOT / "global" / "bibliography" / "bibliography.md"

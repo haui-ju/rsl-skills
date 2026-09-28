@@ -17,5 +17,13 @@ La página del PDF es la del MD (`[PDF p.N]`); la página impresa es la que va e
 |---|---|---|---|---|
 | kitchenham-charters-2007 | Sección 5.3.2 *Question Structure*: PICOC (*Population, Intervention, Comparison, Outcome, Context*) para estructurar las preguntas de investigación, atribuido a Petticrew y Roberts [25]; el contexto indica dónde se aplica la intervención. | 19 | 11 | Justificar el marco PICOC y sus componentes. |
 | kitchenham-charters-2007 | Sección 5.3.2: en ingeniería de software conviene no restringir la población al inicio porque hay pocos estudios primarios. | 19 | 11 | Justificar una población amplia. |
+| kitchenham-charters-2007 | Glosario: la revisión sistemática identifica, analiza e interpreta la evidencia disponible de forma no sesgada y (en cierto grado) repetible. | 7 | vi | Justificar el método por su repetibilidad. |
+| kitchenham-charters-2007 | Sección 5.3.2: las guías médicas plantean la pregunta desde población, intervención y resultados; PICOC las extiende con comparación y contexto. | 18–19 | 10–11 | Contrastar PICOC con el esquema clínico. |
+| kitchenham-charters-2007 | Sección 5.4: un protocolo predefinido reduce el sesgo del investigador; sin él, la selección puede guiarse por sus expectativas. | 20 | 12 | Justificar el protocolo previo. |
+| kitchenham-charters-2007 | Sección 6.1: descomponer la pregunta en sus componentes, listar sinónimos y variantes, usar los términos de indexación de las bases y combinar con AND y OR. | 22 | 14 | Justificar palabras clave, tesauro y ecuación. |
+| kitchenham-charters-2007 | Sección 6.1.4: la búsqueda debe ser transparente y replicable y documentarse con detalle suficiente. | 24 | 16 | Justificar la documentación de la búsqueda. |
+| kitchenham-charters-2007 | Sección 6.2.1: los criterios de selección se deciden al definir el protocolo para reducir el sesgo. | 26 | 18 | Justificar criterios fijados de antemano. |
+| kitchenham-charters-2007 | Sección 6.2.2: la selección es un proceso en varias etapas (título y resumen, luego texto completo). | 27 | 19 | Justificar las etapas de selección. |
+| page-2021-prisma-2020 | Resumen: PRISMA 2020 ayuda a informar de forma transparente por qué se hizo la revisión, qué se hizo y qué se encontró. | 2 | 1 | Justificar el reporte con PRISMA. |
 | page-2021-prisma-2020 | PRISMA 2020 consta de una lista de verificación de 27 ítems, una lista ampliada para el resumen y diagramas de flujo revisados. | 2 | 1 | Justificar PRISMA 2020 como guía de reporte. |
 | page-2021-prisma-2020 | Fig. 1: plantilla del diagrama de flujo PRISMA 2020 (identificación, cribado, inclusión, con n por etapa). | 6 | 5 | Estructurar la selección de estudios y el diagrama. |

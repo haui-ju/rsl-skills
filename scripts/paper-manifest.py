@@ -585,8 +585,9 @@ def cmd_status(p: Paper) -> int:
     return ok(f"paper/{c['version'] or '—'}: " + ", ".join(parts), next_step(p, c))
 
 
-APA_PAREN = re.compile(r"\(([^()]*?\b(?:19|20)\d{2}[a-z]?)\)")
-APA_NARR = re.compile(r"([A-ZÁÉÍÓÚÑ][\wÁÉÍÓÚÑáéíóúñ'\-]+)(?: et al\.| (?:y|&) [A-ZÁÉÍÓÚÑ][\w'\-]+)? \(((?:19|20)\d{2}[a-z]?)\)")
+APA_LOC = r"(?:,\s*(?:pp?\.|cap\.|párr\.)\s*[\w–\-, ]+?)?"
+APA_PAREN = re.compile(r"\(([^()]*?\b(?:19|20)\d{2}[a-z]?" + APA_LOC + r")\)")
+APA_NARR = re.compile(r"([A-ZÁÉÍÓÚÑ][\wÁÉÍÓÚÑáéíóúñ'\-]+)(?: et al\.| (?:y|&) [A-ZÁÉÍÓÚÑ][\w'\-]+)? \(((?:19|20)\d{2}[a-z]?)" + APA_LOC + r"\)")
 
 
 def split_refs(text: str) -> tuple[str, list[str], bool]:

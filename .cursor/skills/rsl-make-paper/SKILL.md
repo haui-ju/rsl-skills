@@ -48,7 +48,7 @@ Invoke: `Usa rsl-make-paper sobre docs/<slug>/`.
    - **Resultados / Discusión / Conclusión:** only from `RSL/extraccion/`, by RQ or theme (`format.results_by`).
    - **Abstract / Resumen:** only when content sections exist; keywords = the `## Keywords` table of the latest picoc as it is (EN column in the Abstract, ES column in the Resumen; never add or drop one).
 7. `citas-rsl` on the worked sections only: `pnpm -s paper:status docs/<slug> --cites paper/<fecha>/paper-borrador.md` + its fixes until PASS or justified `PENDIENTE`.
-8. `pnpm -s redaccion:lint docs/<slug>/paper/<fecha>/paper-borrador.md` and a self-check of R7 (one intention per paragraph, transitions) → 0 FAIL in the worked sections (WARN allowed in the draft). FAILs inside frozen sections are reported (suggest `on`); they do not block.
+8. `pnpm -s redaccion:lint docs/<slug>/paper/<fecha>/paper-borrador.md` and a self-check of R7 (one intention per paragraph, transitions) and R8 (important claims cited with verified sources; never "el lector") → 0 FAIL in the worked sections (WARN allowed in the draft). FAILs inside frozen sections are reported (suggest `on`); they do not block.
 9. `pnpm -s paper:status docs/<slug> --update borrador`.
 10. Chat: copied sections and the citas result, then the Cierre line.
 

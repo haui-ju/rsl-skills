@@ -7,7 +7,7 @@
         "borrador": "becd63baf4e1",
         "polish": "d4380bab31f5"
       },
-      "version": "2026-09-28-2",
+      "version": "2026-09-28-3",
       "sources_hash": {
         "topic.md": "b2bcfb779775",
         "informe-polish.md": "cc1997a5b60d",
@@ -20,7 +20,7 @@
         "borrador": "9275c27e1b79",
         "polish": "0a009831199c"
       },
-      "version": "2026-09-28-2",
+      "version": "2026-09-28-3",
       "sources_hash": {
         "RSL/MD": "ec05ded1dbef"
       },
@@ -31,7 +31,7 @@
         "borrador": "6755b22be5c0",
         "polish": "4ebbd870f641"
       },
-      "version": "2026-09-28-2",
+      "version": "2026-09-28-3",
       "sources_hash": {
         "picoc": "e106c9124351"
       },
@@ -42,7 +42,7 @@
         "borrador": "ef9a2b99a52e",
         "polish": "a99768828db1"
       },
-      "version": "2026-09-28-2",
+      "version": "2026-09-28-3",
       "sources_hash": {
         "informe-polish.md": "cc1997a5b60d"
       },
@@ -51,9 +51,9 @@
     "objetivo-rsl": {
       "content_hash": {
         "borrador": "16879d667612",
-        "polish": "0c898c82e6ca"
+        "polish": "35fb923565ab"
       },
-      "version": "2026-09-28-2",
+      "version": "2026-09-28-3",
       "sources_hash": {
         "picoc": "5db27122c711"
       },
@@ -64,7 +64,7 @@
         "borrador": "feb56ec9af3d",
         "polish": "d0cc5c433df7"
       },
-      "version": "2026-09-28-2",
+      "version": "2026-09-28-3",
       "sources_hash": {
         "grupos": "ae7b799633fe"
       },
@@ -75,16 +75,16 @@
         "borrador": "8376ef33b383",
         "polish": "287edba320b1"
       },
-      "version": "2026-09-28-2",
+      "version": "2026-09-28-3",
       "sources_hash": {},
       "status": "polished"
     },
     "marco-pico": {
       "content_hash": {
         "borrador": "dc870a2cb788",
-        "polish": "91778edd4788"
+        "polish": "1033f66c1257"
       },
-      "version": "2026-09-28-2",
+      "version": "2026-09-28-3",
       "sources_hash": {
         "picoc": "5db27122c711"
       },
@@ -93,9 +93,9 @@
     "palabras-clave": {
       "content_hash": {
         "borrador": "5cffcd8a0250",
-        "polish": "c0020290cb5b"
+        "polish": "afa86e355f9a"
       },
-      "version": "2026-09-28-2",
+      "version": "2026-09-28-3",
       "sources_hash": {
         "picoc": "5db27122c711"
       },
@@ -104,9 +104,9 @@
     "ecuacion-busqueda": {
       "content_hash": {
         "borrador": "57aa794bbbf7",
-        "polish": "7bcedffe72eb"
+        "polish": "a05e5a5bf2c6"
       },
-      "version": "2026-09-28-2",
+      "version": "2026-09-28-3",
       "sources_hash": {
         "picoc": "5db27122c711"
       },
@@ -115,9 +115,9 @@
     "criterios-seleccion": {
       "content_hash": {
         "borrador": "e68857e11eb5",
-        "polish": "2c4003cc2b0d"
+        "polish": "5e5b4b2e6a41"
       },
-      "version": "2026-09-28-2",
+      "version": "2026-09-28-3",
       "sources_hash": {
         "topic.md": "b2bcfb779775",
         "picoc": "5db27122c711"
@@ -127,9 +127,9 @@
     "seleccion-prisma": {
       "content_hash": {
         "borrador": "cb044dfdb952",
-        "polish": "24556293af3a"
+        "polish": "08548166c04d"
       },
-      "version": "2026-09-28-2",
+      "version": "2026-09-28-3",
       "sources_hash": {
         "picoc": "5db27122c711"
       },
@@ -153,6 +153,11 @@
     },
     "2026-09-28-2": {
       "from": "2026-09-28",
+      "borrador": false,
+      "polish": true
+    },
+    "2026-09-28-3": {
+      "from": "2026-09-28-2",
       "borrador": false,
       "polish": true
     }

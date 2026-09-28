@@ -24,7 +24,7 @@ Invoke: `Usa rsl-polish-paper sobre docs/<slug>/`. Internal inputs (`topic.md`, 
 
 ## Polish rules
 
-Form: `playbooks/redaccion-academica.md` (siglas, one idea per sentence, 2–5 sentence paragraphs with real connectors, no work notation, R7: each paragraph has one intention and leads into the next; need before tool). On top of it, only for the polish:
+Form: `playbooks/redaccion-academica.md` (siglas, one idea per sentence, 2–5 sentence paragraphs with real connectors, no work notation, R7: each paragraph has one intention and leads into the next; need before tool; R8: important claims are cited, only with verified sources; the voice is the review's, never "el lector"). On top of it, only for the polish:
 
 - Compact document: only H2 groups and H3 sections (no `####`); per block one core idea plus minimal evidence; no wall paragraphs.
 - Contexto: about 4 linked paragraphs (norm/framework → delimit the object → anchors woven into one thread → tensions that lead to El problema); it does not dump the whole state of the art.
@@ -61,7 +61,7 @@ Contexto 3–5 short paragraphs · El problema 3–4 (arises from the previous �
 1. `pnpm -s paper:status docs/<slug>`. `ERROR` → stop and report. Nothing in **A mejorar** / **A reescribir** → only run `--cites` on the latest polish, report STALE / BLOCKED, stop (no version, no debate block). If the header says `etapas cerradas: …polish` (the latest version already has a finished polish) → `pnpm -s paper:status docs/<slug> --new-version`. Work only on A mejorar / A reescribir; STALE and BLOCKED are reported untouched (`WARN picoc …` → suggest `Usa rsl-picoc sobre docs/<slug>/`).
 2. Read once: the worked sections of the borrador (and of the current polish for `on`), the frozen neighbors, the picoc general question and RQs; with Metodología in the run, also `global/bibliography/bibliography.md`. Evidence only via `graphify query … --graph docs/<slug>/graphify-out/graph.json` or `pnpm graphify:bibliography:query "…"` (no refresh, no full PDFs).
 3. Agents in parallel (mode **sección**; prompt = the worked sections with their state, frozen neighbors as short context, the rules above; "no releer archivos completos"; at most 8 items each; web only to verify a claim):
-   - `critico-rsl` and `defensor-rsl` always.
+   - `critico-rsl` and `defensor-rsl` always. `critico-rsl` must return the **Sustento** table (R8); each row is resolved with a verified source (theme corpus, `global/bibliography/bibliography.md`, existing references) or by rephrasing the claim as the review's own decision. Never invent a source.
    - `impacto-social-rsl` only if `justificacion` or `objetivo-rsl` is being worked.
 4. Brief synthesis in chat; write the polished sections (frozen copied unchanged; Referencias rebuilt).
 5. `redaccion-rsl` on the worked sections with `pnpm -s redaccion:lint docs/<slug>/paper/<fecha>/paper-polish.md`; apply its fixes (form only) until its verdict is PASS: every paragraph OK in the **Hilo** table (R7: one intention, transition from the previous paragraph, need before tool), 0 FAIL and every WARN fixed or justified. Its answer must include the Hilo table and the rewritten paragraphs; if they are missing, relaunch it (never apply its summary by hand). After applying, run it again on the changed paragraphs. FAILs inside frozen sections are reported (suggest `on`); they do not block.

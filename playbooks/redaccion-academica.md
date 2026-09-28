@@ -11,6 +11,7 @@ Objetivo: prosa final académica, natural y limpia, que un docente lea de corrid
 | Chequeo automático de forma | `pnpm -s redaccion:lint <archivo.md>` → FAIL bloquea; WARN se corrige o se justifica |
 | Citas en texto ↔ referencias | `pnpm -s paper:status docs/<slug> --cites [archivo]` |
 | Revisión con juicio (naturalidad, densidad, hilo entre oraciones y párrafos) | agente `redaccion-rsl` (tabla Hilo, R7) |
+| Afirmaciones importantes sin fuente (R8) | agente `critico-rsl` (tabla Sustento) |
 
 `redaccion:lint` analiza solo prosa: omite tablas, código, encabezados, comentarios y la sección Referencias.
 
@@ -20,6 +21,7 @@ Objetivo: prosa final académica, natural y limpia, que un docente lea de corrid
 
 - Prohibidas las marcas editoriales: `[citar]`, `(citar)`, `TODO`, `PENDIENTE`, `TBD`, `???`. Si una cita no se puede verificar, se reformula o se quita la afirmación y se avisa en el chat; nunca se entrega la marca.
 - Prohibidas las huellas del flujo interno: `topic.md`, `picoc/…/picoc.md` (salvo el enlace de la sección 2 del informe), "panel", "veredicto", `GO_*`, nombres de skills, rutas, código entre backticks, "Nota de artefacto", "ajuste previsto del protocolo".
+- La voz es la de la revisión, no la de quien lee: nada de "el lector", "como lector", "al lector" ni apelaciones a quien lee. Se escribe en impersonal o con la revisión como sujeto (*se documenta*, *esta revisión*, *la selección debe poder auditarse*).
 - Nada de frases telegráficas tipo lista ("Salvaguarda ética mínima: no X; no Y; señalar Z"): se redactan como oración.
 
 ### R2 — Siglas: definir y dosificar (FAIL si no se define)
@@ -65,13 +67,22 @@ El lint no lo ve; lo juzga `redaccion-rsl` con la tabla Hilo. Un texto con sigla
 - **Una intención por párrafo, anunciada en su primera oración.** Si el párrafo no se resume en una línea ("este párrafo explica por qué se eligió PICOC"), está mal construido.
 - **Cada oración retoma algo de la anterior** (de lo conocido a lo nuevo). Prohibidas las cadenas de oraciones sueltas en las que cada punto define una cosa distinta.
 - **Transición entre párrafos y entre secciones.** El párrafo B se engancha con lo que dejó A: consecuencia (*por eso*, *de ahí que*), contraste (*sin embargo*), siguiente paso (*con esas palabras clave…*) o precisión (*esa decisión implica…*). No se salta de un tema a otro sin puente.
-- **Guiar al lector: primero la necesidad, después la herramienta.** No se abre un apartado con el nombre de la herramienta y su definición ("La selección se reporta conforme a PRISMA 2020, una guía de 27 ítems…"); primero se plantea qué problema resuelve.
+- **Primero la necesidad, después la herramienta.** No se abre un apartado con el nombre de la herramienta y su definición ("La selección se reporta conforme a PRISMA 2020, una guía de 27 ítems…"); primero se plantea qué problema resuelve.
 - **Decisiones de método, patrón fijo:** necesidad del estudio → por qué no basta la alternativa obvia → decisión → qué aporta según la fuente (cita) → cómo se aplica en esta revisión.
 
 | Antes (oraciones sueltas, empieza por la herramienta) | Después (hilo: necesidad → decisión → fuente → aplicación) |
 |---|---|
 | *Kitchenham y Charters (2007, p. 11) adoptan PICOC para la Ingeniería de Software a partir de la propuesta de Petticrew y Roberts. El marco suma dos componentes a la pregunta clínica de población, intervención y resultado: la comparación […] y el contexto […]. Se eligió porque esos dos componentes son centrales en este tema.* | *La pregunta de esta revisión no se limita a saber si la inteligencia artificial mejora la accesibilidad: exige además contrastarla con la accesibilidad sensorial y situar cada intervención en una fase del ciclo de vida. El marco clínico de población, intervención y resultado no deja lugar para esos dos ejes. Por eso se adoptó PICOC, que Kitchenham y Charters (2007, p. 11) recomiendan para la Ingeniería de Software y que añade precisamente la comparación y el contexto.* |
-| *La selección se reporta conforme a PRISMA 2020, una guía de 27 ítems con un diagrama de flujo que registra cuántos registros entran y salen en cada etapa (Page et al., 2021, p. 1).* | *Las ecuaciones recuperan muchos registros, y buena parte no responderá a la pregunta. Pasar de ese conjunto a los estudios incluidos exige decisiones que el lector debe poder revisar. Por eso la selección se documenta según PRISMA 2020 (Page et al., 2021, p. 1).* |
+| *La selección se reporta conforme a PRISMA 2020, una guía de 27 ítems con un diagrama de flujo que registra cuántos registros entran y salen en cada etapa (Page et al., 2021, p. 1).* | *Las ecuaciones recuperan muchos registros, y buena parte no responderá a la pregunta. Pasar de ese conjunto a los estudios incluidos exige decisiones que deben quedar documentadas. Por eso la selección se documenta según PRISMA 2020 (Page et al., 2021, p. 1).* |
+
+### R8 — Sustento: lo importante se cita (FAIL)
+
+Una RSL sostiene lo que dice con fuentes. No todo va citado, pero sí lo que un revisor preguntaría "¿de dónde sale?". El lint no lo ve; lo juzgan `critico-rsl` (tabla Sustento) y `citas-rsl`.
+
+- **Lleva cita:** datos y cifras; tendencias o afirmaciones sobre el estado de la literatura ("pocos estudios…", "la mayoría…"); definiciones de marcos, normas y guías (PICOC, PRISMA, WCAG); la justificación de una decisión de método (por qué ese marco, esas bases, ese periodo, ese criterio); comparaciones con revisiones previas.
+- **No lleva cita:** lo que esta revisión decidió o hizo (la ecuación usada, los criterios fijados, los pasos seguidos), las transiciones y lo que se deduce de lo ya citado en el mismo párrafo.
+- En la mayoría de los párrafos de Introducción y en cada decisión de Metodología hay al menos una cita; un párrafo sin ninguna debe ser puramente descriptivo de lo que hizo la revisión.
+- **Nunca se inventa una fuente.** Solo se cita lo verificado: el corpus del tema (`RSL/MD/`, grafo del tema), el catálogo `global/bibliography/bibliography.md` o las referencias ya comprobadas. Si no hay fuente verificable, la afirmación se reformula como decisión propia o se retira, y la falta se anota en el debate.
 
 ## Ejemplos (antes → después)
 
