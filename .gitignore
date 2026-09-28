@@ -4,6 +4,8 @@ graphify-out/
 
 # IEEE Thesaurus derivados (CC BY-NC-ND; regenerar con pnpm graphify:thesaurus:refresh)
 global/thesaurus/*.json
+# ACM CCS 2012 derivado (regenerar con pnpm graphify:thesaurus:refresh)
+global/thesaurus/acm-ccs/*.json
 
 # Regenerable pdftotext dumps
 **/RSL/MD/_raw/

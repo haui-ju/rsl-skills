@@ -21,6 +21,7 @@ Objetivo: términos **fieles al tema** (descriptor oficial + sinónimos oficiale
 | Marco configurado + último picoc (OK · DESFASADO · FALTA) | `pnpm -s picoc:latest docs/<slug>` |
 | Validar muchos términos en **una** llamada (preferido) | `pnpm -s thesaurus:check "term 1" "term 2" …` → tabla Markdown |
 | Ficha completa de un término | `pnpm -s thesaurus:lookup "term"` |
+| Concepto ACM CCS 2012 (ruta, BT, NT) | `pnpm -s thesaurus:acm "term"` |
 | Vecinos con relación + página | `graphify explain "Term" --graph global/thesaurus/graphify-out/graph.json` |
 | Verificar el último picoc (marco, pregunta general, 1:1, RQ, IEEE) | `pnpm -s picoc:lint docs/<slug>` → debe dar PASS |
 
@@ -34,6 +35,9 @@ Si `global/thesaurus/ieee-thesaurus.json` o el grafo no existen → pedir `Usa r
 | **IEEE no preferido → USE** | Sustituir por el descriptor de la columna *Descriptor IEEE*; el término original queda como sinónimo. |
 | **LIBRE (sin descriptor IEEE)** | Mantener como término libre, al final de Palabras clave y con justificación breve (concepto posterior a 2019, estándar W3C, término clínico…). |
 | *Cercanos* | Pistas para explorar, **no** equivalentes. Solo reemplazan a un término libre si el significado es el mismo, y se justifica. |
+| *ACM CCS 2012* | Concepto de la clasificación de ACM (`global/thesaurus/acm-ccs/`), con su ruta. Respalda un término **libre** de informática que IEEE 2019 no tiene (p. ej. *Accessibility*); el tipo sigue siendo `Libre` y la justificación cita «ACM CCS: <concepto>». Sus NT son candidatos a términos del bloque si nacen del tema. |
+
+**Población clínica:** si IEEE no tiene el perfil (TDAH, dislexia, síndrome de Down…), verificarlo en MeSH (`https://id.nlm.nih.gov/mesh/lookup/descriptor?label=<término>&match=exact`) y citar en la justificación el descriptor y su identificador (p. ej. «MeSH *Dyslexia* (D004410)»); el tipo sigue siendo `Libre`.
 
 ## Reglas obligatorias
 

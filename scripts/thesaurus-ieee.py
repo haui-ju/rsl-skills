@@ -23,6 +23,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from rsl_out import Fail, error, ok, run  # noqa: E402
+from thesaurus_acm import acm_match, load_acm  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 THES_DIR = ROOT / "global" / "thesaurus"
@@ -319,19 +320,29 @@ def near(q: str, terms: dict, n: int = 4) -> list[str]:
 
 
 def check(queries: list[str]) -> int:
-    """Tabla Markdown lista para PICOC/keywords: estado IEEE de cada término."""
+    """Tabla Markdown lista para PICOC/keywords: estado IEEE de cada término y su concepto ACM CCS."""
     terms = load_terms()
+    acm = load_acm()
+
+    def acm_cell(q: str) -> str:
+        if acm is None:
+            return "(sin acm-ccs.json)"
+        e, near = acm_match(q, acm)
+        if e:
+            return f"{e['term']} ({e['paths'][0]})"
+        return ("cercanos: " + " · ".join(near)) if near else "—"
+
     queries = [q.strip() for q in queries]
     if not all(queries):
         raise Fail("hay términos vacíos en thesaurus:check", code=2)
     free = 0
     cell = lambda xs, lim=6: " · ".join(xs[:lim]) + (" …" if len(xs) > lim else "") if xs else "—"
-    print("| Término consultado | Estado | Descriptor IEEE | UF (sinónimos) | NT (específicos) | BT | Pág. | Cercanos (verificar, no equivalentes) |")
-    print("|---|---|---|---|---|---|---|---|")
+    print("| Término consultado | Estado | Descriptor IEEE | UF (sinónimos) | NT (específicos) | BT | Pág. | Cercanos (verificar, no equivalentes) | ACM CCS 2012 |")
+    print("|---|---|---|---|---|---|---|---|---|")
     for q in queries:
         e = resolve(q, terms)
         if e is None:
-            print(f"| {q} | LIBRE (sin descriptor IEEE) | — | — | — | — | — | {cell(near(q, terms))} |")
+            print(f"| {q} | LIBRE (sin descriptor IEEE) | — | — | — | — | — | {cell(near(q, terms))} | {acm_cell(q)} |")
             free += 1
             continue
         status = "IEEE preferido"
@@ -341,7 +352,7 @@ def check(queries: list[str]) -> int:
             if pref:
                 e = pref[0]
         uf = [t for t in e["UF"] if key(t) != key(q)]
-        print(f"| {q} | {status} | {e['term']} | {cell(uf)} | {cell(e['NT'])} | {cell(e['BT'], 3)} | p.{e['page']} | — |")
+        print(f"| {q} | {status} | {e['term']} | {cell(uf)} | {cell(e['NT'])} | {cell(e['BT'], 3)} | p.{e['page']} | — | {acm_cell(q)} |")
     return ok(f"{len(queries)} término(s) revisados: {len(queries) - free} con descriptor IEEE y {free} libre(s)")
 
 

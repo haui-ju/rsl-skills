@@ -30,6 +30,7 @@
     "graphify:bibliography:open": "node scripts/graphify.mjs bibliography open",
     "thesaurus:check": "~/.local/share/pipx/venvs/graphifyy/bin/python scripts/thesaurus-ieee.py --check",
     "thesaurus:lookup": "~/.local/share/pipx/venvs/graphifyy/bin/python scripts/thesaurus-ieee.py --lookup",
+    "thesaurus:acm": "~/.local/share/pipx/venvs/graphifyy/bin/python scripts/thesaurus_acm.py --lookup",
     "picoc:lint": "python3 scripts/picoc-lint.py",
     "picoc:latest": "python3 scripts/picoc-lint.py --latest",
     "redaccion:lint": "python3 scripts/redaccion-lint.py",

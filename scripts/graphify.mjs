@@ -188,13 +188,26 @@ switch (scope) {
   case 'thesaurus': {
     const rel = graphPath('thesaurus');
     const pdf = path.join(root, 'global', 'thesaurus', 'IEEE.pdf');
-    if (action === 'refresh') code = run(graphifyPy, ['scripts/thesaurus-ieee.py', ...flags]);
+    const acmDir = path.join(root, 'global', 'thesaurus', 'acm-ccs');
+    const acmXml = path.join(acmDir, 'acm-ccs-2012.xml');
+    if (action === 'refresh') {
+      code = run(graphifyPy, ['scripts/thesaurus-ieee.py', ...flags]);
+      if (!code && existsSync(acmXml)) code = run(graphifyPy, ['scripts/thesaurus_acm.py', ...flags]);
+    }
     if (action === 'status') {
       const src = [pdf, path.join(root, 'scripts', 'thesaurus-ieee.py')].filter(existsSync);
       code = report('thesaurus IEEE', rel, src);
       if (!existsSync(path.join(root, 'global', 'thesaurus', 'ieee-thesaurus.json'))) {
         console.log('FAIL  thesaurus IEEE: falta global/thesaurus/ieee-thesaurus.json');
         code = 1;
+      }
+      if (existsSync(acmXml)) {
+        const acmSrc = [acmXml, path.join(root, 'scripts', 'thesaurus_acm.py')];
+        code = report('thesaurus ACM CCS', 'global/thesaurus/acm-ccs/graphify-out/graph.json', acmSrc) || code;
+        if (!existsSync(path.join(acmDir, 'acm-ccs.json'))) {
+          console.log('FAIL  thesaurus ACM CCS: falta global/thesaurus/acm-ccs/acm-ccs.json');
+          code = 1;
+        }
       }
     }
     if (action === 'query') code = query(rel, positional);
