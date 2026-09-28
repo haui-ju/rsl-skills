@@ -68,6 +68,9 @@ El lint no lo ve; lo juzga `redaccion-rsl` con la tabla Hilo. Un texto con sigla
 - **Cada oración retoma algo de la anterior** (de lo conocido a lo nuevo). Prohibidas las cadenas de oraciones sueltas en las que cada punto define una cosa distinta.
 - **Transición entre párrafos y entre secciones.** El párrafo B se engancha con lo que dejó A: consecuencia (*por eso*, *de ahí que*), contraste (*sin embargo*), siguiente paso (*con esas palabras clave…*) o precisión (*esa decisión implica…*). No se salta de un tema a otro sin puente.
 - **Primero la necesidad, después la herramienta.** No se abre un apartado con el nombre de la herramienta y su definición ("La selección se reporta conforme a PRISMA 2020, una guía de 27 ítems…"); primero se plantea qué problema resuelve.
+- **Sin redundancia.** Cada argumento se dice una vez; si ya está en otro párrafo o sección, no se repite con otras palabras. Un texto más corto y conectado es mejor que uno largo que insiste.
+- **Apertura de sección.** Una sección se abre con su propio asunto; la Metodología empieza por lo que hizo la revisión (el método seguido), no resumiendo la Introducción ("Los objetivos anteriores…").
+- **Las citas dicen qué aporta el autor** con un verbo de contenido (*recomiendan*, *proponen*, *advierten*), no con fórmulas vagas ("lo retoman", "según").
 - **Decisiones de método, patrón fijo:** necesidad del estudio → por qué no basta la alternativa obvia → decisión → qué aporta según la fuente (cita) → cómo se aplica en esta revisión.
 
 | Antes (oraciones sueltas, empieza por la herramienta) | Después (hilo: necesidad → decisión → fuente → aplicación) |

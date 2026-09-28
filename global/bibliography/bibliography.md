@@ -24,6 +24,7 @@ La página del PDF es la del MD (`[PDF p.N]`); la página impresa es la que va e
 | kitchenham-charters-2007 | Sección 6.1.4: la búsqueda debe ser transparente y replicable y documentarse con detalle suficiente. | 24 | 16 | Justificar la documentación de la búsqueda. |
 | kitchenham-charters-2007 | Sección 6.2.1: los criterios de selección se deciden al definir el protocolo para reducir el sesgo. | 26 | 18 | Justificar criterios fijados de antemano. |
 | kitchenham-charters-2007 | Sección 6.2.2: la selección es un proceso en varias etapas (título y resumen, luego texto completo). | 27 | 19 | Justificar las etapas de selección. |
+| kitchenham-charters-2007 | Sección 6.2.2: se recomienda mantener una lista de estudios excluidos con el motivo de cada exclusión. | 28 | 20 | Justificar que la selección quede documentada. |
 | page-2021-prisma-2020 | Resumen: PRISMA 2020 ayuda a informar de forma transparente por qué se hizo la revisión, qué se hizo y qué se encontró. | 2 | 1 | Justificar el reporte con PRISMA. |
 | page-2021-prisma-2020 | PRISMA 2020 consta de una lista de verificación de 27 ítems, una lista ampliada para el resumen y diagramas de flujo revisados. | 2 | 1 | Justificar PRISMA 2020 como guía de reporte. |
 | page-2021-prisma-2020 | Fig. 1: plantilla del diagrama de flujo PRISMA 2020 (identificación, cribado, inclusión, con n por etapa). | 6 | 5 | Estructurar la selección de estudios y el diagrama. |

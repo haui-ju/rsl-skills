@@ -1001,7 +1001,7 @@ def _(sb):
     polish = (SKILLS / "rsl-polish-paper" / "SKILL.md").read_text(encoding="utf-8")
     for need in ("global/bibliography/bibliography.md", "rsl:source", "[[ AGREGAR DIAGRAMA ]]", "Web of Science", "n = X", "Excluidos por fecha de publicación", "CI1"):
         sb.check(need in make, f"rsl-make-paper/SKILL.md no contiene «{need}»")
-    for need in ("global/bibliography/bibliography.md", "[[ AGREGAR DIAGRAMA ]]", "Hilo", "R7", "R8", "Sustento"):
+    for need in ("global/bibliography/bibliography.md", "[[ AGREGAR DIAGRAMA ]]", "Hilo", "R7", "R8", "Sustento", "Minimal diff", "10 %", "No redundancy"):
         sb.check(need in polish, f"rsl-polish-paper/SKILL.md no contiene «{need}»")
     sb.check("R7" in make, "rsl-make-paper/SKILL.md no pide el hilo entre párrafos (R7)")
     sb.check("R8" in make, "rsl-make-paper/SKILL.md no pide citar las afirmaciones importantes (R8)")
@@ -1009,6 +1009,8 @@ def _(sb):
     sb.check("### Sustento" in critic, "critico-rsl no devuelve la tabla Sustento (afirmaciones importantes sin cita)")
     playbook = (ROOT / "playbooks" / "redaccion-academica.md").read_text(encoding="utf-8")
     sb.check("### R7" in playbook, "playbooks/redaccion-academica.md no tiene la regla R7 de coherencia y progresión")
+    sb.check("Sin redundancia" in playbook, "el playbook no prohíbe repetir argumentos (R7, Sin redundancia)")
+    sb.check("Los objetivos anteriores" in make, "rsl-make-paper no prohíbe abrir la Metodología resumiendo la Introducción")
     sb.check("### R8" in playbook, "playbooks/redaccion-academica.md no tiene la regla R8 de sustento con citas")
     agent = (ROOT / ".cursor" / "agents" / "redaccion-rsl.md").read_text(encoding="utf-8")
     sb.check("### Hilo" in agent, "redaccion-rsl no devuelve la tabla Hilo (intención y enlace de cada párrafo)")

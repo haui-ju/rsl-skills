@@ -16,7 +16,7 @@ Polishes the latest `paper-borrador.md` into **`paper-polish.md`** (clean, ready
 | State in `config.yml` | What this skill does |
 |---|---|
 | `frozen` | Copy byte for byte; never edit. |
-| `on` | Start from the current polished text; targeted fixes (grammar, continuity, precision, citations, trimming); keep thesis and structure. No polished text yet → polish from the borrador. **Re-polishing an already polished section = `on`.** |
+| `on` | **Minimal diff** on the current polished text: keep every sentence that has no problem; a fix replaces a word or a clause; a citation goes inside the sentence it supports. Keep thesis, structure and wording. No polished text yet → polish from the borrador. **Re-polishing an already polished section = `on`.** |
 | `rewrite` | Discard the polished text; re-polish from the borrador section; may reframe. |
 | `off` | Absent. |
 
@@ -26,6 +26,8 @@ Invoke: `Usa rsl-polish-paper sobre docs/<slug>/`. Internal inputs (`topic.md`, 
 
 Form: `playbooks/redaccion-academica.md` (siglas, one idea per sentence, 2–5 sentence paragraphs with real connectors, no work notation, R7: each paragraph has one intention and leads into the next; need before tool; R8: important claims are cited, only with verified sources; the voice is the review's, never "el lector"). On top of it, only for the polish:
 
+- **`on` does not grow the text.** An agent proposal that adds a sentence is accepted only to fix a FAIL (factual error, contradiction, important claim without citation that cannot go inside an existing sentence, "el lector"); anything else (limits, nuances, extra safeguards) goes to Pendientes in `paper-debate.md`. A worked section may not grow more than 10 % in words against the previous version unless the debate justifies it. When the user says a previous version read better, start from that version's text.
+- **No redundancy:** an argument is said once in the worked sections (e.g. "una ausencia solo es creíble si…" lives in one place). A citation says what the cited authors state or recommend, not a vague "lo retoman".
 - Compact document: only H2 groups and H3 sections (no `####`); per block one core idea plus minimal evidence; no wall paragraphs.
 - Contexto: about 4 linked paragraphs (norm/framework → delimit the object → anchors woven into one thread → tensions that lead to El problema); it does not dump the whole state of the art.
 - Anchors: one strong mention in Contexto; later only if they add progress.
@@ -63,7 +65,7 @@ Contexto 3–5 short paragraphs · El problema 3–4 (arises from the previous �
 3. Agents in parallel (mode **sección**; prompt = the worked sections with their state, frozen neighbors as short context, the rules above; "no releer archivos completos"; at most 8 items each; web only to verify a claim):
    - `critico-rsl` and `defensor-rsl` always. `critico-rsl` must return the **Sustento** table (R8); each row is resolved with a verified source (theme corpus, `global/bibliography/bibliography.md`, existing references) or by rephrasing the claim as the review's own decision. Never invent a source.
    - `impacto-social-rsl` only if `justificacion` or `objetivo-rsl` is being worked.
-4. Brief synthesis in chat; write the polished sections (frozen copied unchanged; Referencias rebuilt).
+4. Brief synthesis in chat; write the polished sections (frozen copied unchanged; Referencias rebuilt). Then compare the words of each worked section with the previous version (`wc -w` of the text between its markers) and trim any section that grew more than 10 % without a FAIL behind it.
 5. `redaccion-rsl` on the worked sections with `pnpm -s redaccion:lint docs/<slug>/paper/<fecha>/paper-polish.md`; apply its fixes (form only) until its verdict is PASS: every paragraph OK in the **Hilo** table (R7: one intention, transition from the previous paragraph, need before tool), 0 FAIL and every WARN fixed or justified. Its answer must include the Hilo table and the rewritten paragraphs; if they are missing, relaunch it (never apply its summary by hand). After applying, run it again on the changed paragraphs. FAILs inside frozen sections are reported (suggest `on`); they do not block.
 6. `citas-rsl` with `pnpm -s paper:status docs/<slug> --cites` until PASS or justified `PENDIENTE`.
 7. Append a block to `paper-debate.md` (keep earlier blocks): date, worked sections, agents used, key decisions table, Redacción and Citas pass/fail.

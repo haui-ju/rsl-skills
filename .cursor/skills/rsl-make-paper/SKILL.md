@@ -102,7 +102,7 @@ Language of `formato.idioma` (default Spanish académico-profesional, headings i
 
 ## Metodología template (draft)
 
-Order and letters (A., B., C.…) from `paper:status`; only the `on`/`rewrite` sections of the run. The group opens with one paragraph, before the first marker, that states what the method must guarantee (answer the question reproducibly) and announces the two decisions of the chapter: how the questions and search were framed (the framework) and how the selection is reported (PRISMA 2020), with their citations.
+Order and letters (A., B., C.…) from `paper:status`; only the `on`/`rewrite` sections of the run. The group opens with one short paragraph (2–3 sentences), before the first marker, that states the method followed (Kitchenham y Charters, 2007) and why it is fixed in a prior protocol (reproducibility, less researcher bias, with the catalog page), then announces the order of the sections. It never opens by recapping the Introducción ("Los objetivos anteriores…"): the Metodología starts with what the review did.
 
 Thread (R7 of `playbooks/redaccion-academica.md`): each section opens by picking up the previous one (framework → its components become keywords → keywords build one equation per base → the retrieved records are judged with the criteria → PRISMA documents that selection). Every method decision follows need → why the obvious alternative is not enough → decision → what the source says it adds (citation) → how it applies here. Never open a paragraph with the tool and its definition.
 
