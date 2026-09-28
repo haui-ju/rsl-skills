@@ -109,14 +109,14 @@ class Sandbox:
                       key=lambda v: (v[:10], int(v[11:] or 1)))
 
     def set_yml(self, t: Path, pattern: str, repl: str) -> None:
-        f = t / "paper" / "paper.yml"
+        f = t / "config.yml"
         txt = f.read_text(encoding="utf-8")
         new = re.sub(pattern, repl, txt, flags=re.M)
         assert new != txt, f"set_yml no cambió nada: {pattern}"
         f.write_text(new, encoding="utf-8")
 
     def states(self, t: Path, value: str) -> None:
-        f = t / "paper" / "paper.yml"
+        f = t / "config.yml"
         txt = re.sub(r"^(  [a-z-]+:\s+)(on|off|rewrite|frozen)\b", rf"\g<1>{value}", f.read_text(encoding="utf-8"), flags=re.M)
         f.write_text(txt, encoding="utf-8")
 
@@ -325,9 +325,9 @@ def _(sb):
 @case("M11", "orden", "--migrate sobre el formato nuevo no cambia nada")
 def _(sb):
     t = sb.theme()
-    before = (t / "paper" / "paper.yml").read_text(encoding="utf-8")
+    before = (t / "config.yml").read_text(encoding="utf-8")
     sb.run(["paper", t, "--migrate"], "OK", has="ya estaba")
-    sb.check((t / "paper" / "paper.yml").read_text(encoding="utf-8") == before, "--migrate modificó un paper.yml ya migrado")
+    sb.check((t / "config.yml").read_text(encoding="utf-8") == before, "--migrate modificó un config.yml ya migrado")
 
 
 @case("M12", "orden", "cambio de marco a mitad del flujo: secciones del marco BLOCKED")
@@ -355,21 +355,51 @@ def _(sb):
     sb.run(["latest", t], "OK", has=f"{TODAY}-2-PIO")
 
 
-@case("M15", "orden", "--init con un paper.yml existente no lo pisa")
+@case("M15", "orden", "--init con un config.yml existente no lo pisa")
 def _(sb):
     t = sb.theme()
     sb.set_yml(t, r"^(  citas:\s*)apa7", r"\g<1>ieee")
     sb.run(["paper", t, "--init"], "OK", has="ya existían")
-    sb.check("citas: ieee" in (t / "paper" / "paper.yml").read_text(encoding="utf-8"), "--init sobrescribió paper.yml")
+    sb.check("citas: ieee" in (t / "config.yml").read_text(encoding="utf-8"), "--init sobrescribió config.yml")
+
+
+@case("M17", "orden", "tema viejo con paper/paper.yml: ERROR hasta correr --migrate, que lo mueve a config.yml")
+def _(sb):
+    t = sb.theme(borrador=True)
+    sb.run(["paper", t, "--update", "borrador"], "OK", quiet=True)
+    (t / "config.yml").rename(t / "paper" / "paper.yml")
+    sb.run(["paper", t], "ERROR", has="--migrate")
+    sb.run(["latest", t], "ERROR", has="--migrate")
+    sb.run(["lint", t], "ERROR", has="--migrate")
+    sb.run(["paper", t, "--init"], "ERROR", has="--migrate")
+    sb.check(not (t / "config.yml").exists(), "--init creó config.yml encima de la configuración vieja")
+    sb.run(["paper", t, "--migrate"], "OK", has="movido a config.yml")
+    sb.check((t / "config.yml").exists() and not (t / "paper" / "paper.yml").exists(), "--migrate no movió paper/paper.yml")
+    sb.run(["paper", t], "OK", has="mejorar")
+    shutil.copy(t / "config.yml", t / "paper" / "paper.yml")
+    sb.run(["paper", t, "--migrate"], "ERROR", has="dos configuraciones")
+
+
+@case("M18", "orden", "--migrate de paper/paper.yml con el formato antiguo (enabled/frozen): lo mueve y lo convierte")
+def _(sb):
+    t = sb.theme()
+    (t / "config.yml").unlink()
+    (t / "paper" / "paper.yml").write_text(
+        "format: {}\nsections:\n  - {id: contexto, enabled: true}\n  - {id: problema, frozen: true}\n  - {id: abstract, enabled: false}\n",
+        encoding="utf-8")
+    sb.run(["paper", t, "--migrate"], "OK", has="convertido")
+    txt = (t / "config.yml").read_text(encoding="utf-8") if (t / "config.yml").exists() else ""
+    sb.check(re.search(r"^  contexto:\s+on", txt, re.M) and re.search(r"^  problema:\s+frozen", txt, re.M), "el formato antiguo no se convirtió bien")
+    sb.run(["paper", t], "OK")
 
 
 # ============================= destruir ===============================
 
 def yml(sb, t, text):
-    (t / "paper" / "paper.yml").write_text(text, encoding="utf-8")
+    (t / "config.yml").write_text(text, encoding="utf-8")
 
 
-@case("D01", "destruir", "paper.yml con YAML roto")
+@case("D01", "destruir", "config.yml con YAML roto")
 def _(sb):
     t = sb.theme()
     yml(sb, t, "formato:\n  idioma: es\n   citas: [apa7\n")
@@ -378,14 +408,14 @@ def _(sb):
     sb.run(["lint", t], "ERROR", has="YAML")
 
 
-@case("D02", "destruir", "paper.yml vacío: todo off, sin romperse")
+@case("D02", "destruir", "config.yml vacío: todo off, sin romperse")
 def _(sb):
     t = sb.theme()
     yml(sb, t, "")
     sb.run(["paper", t], "OK", has="on o rewrite")
 
 
-@case("D03", "destruir", "paper.yml que es una lista")
+@case("D03", "destruir", "config.yml que es una lista")
 def _(sb):
     t = sb.theme()
     yml(sb, t, "- a\n- b\n")
@@ -407,10 +437,10 @@ def _(sb):
     sb.run(["paper", t], "ERROR", has="contexto")
 
 
-@case("D06", "destruir", "sección inexistente en paper.yml")
+@case("D06", "destruir", "sección inexistente en config.yml")
 def _(sb):
     t = sb.theme()
-    p = t / "paper" / "paper.yml"
+    p = t / "config.yml"
     p.write_text(p.read_text(encoding="utf-8").replace("  contexto:", "  inventada: on\n  contexto:"), encoding="utf-8")
     sb.run(["paper", t], "ERROR", has="inventada")
 
@@ -582,9 +612,9 @@ def _(sb):
 @case("D19", "destruir", "finales de línea CRLF y BOM UTF-8")
 def _(sb):
     t = sb.theme(borrador=True)
-    for f in (t / "informe.md", t / "paper" / "paper.yml", next((t / "picoc").glob("*/picoc.md"))):
+    for f in (t / "informe.md", t / "config.yml", next((t / "picoc").glob("*/picoc.md"))):
         f.write_bytes(f.read_bytes().replace(b"\r\n", b"\n").replace(b"\n", b"\r\n"))
-    y = t / "paper" / "paper.yml"
+    y = t / "config.yml"
     y.write_bytes(b"\xef\xbb\xbf" + y.read_bytes())
     sb.run(["paper", t], "OK")
     sb.run(["lint", t], "OK")
@@ -736,6 +766,33 @@ def _(sb):
     sb.run(["lint", t], "ERROR", has="sin componente T")
     f.write_text(good.replace("| O | Métricas", "| C | Comparación | RQ3 | `x` | — | Procede de “sesgo” |\n| O | Métricas", 1), encoding="utf-8")
     sb.run(["lint", t], "ERROR", has="exactamente las filas")
+
+
+@case("K05", "marco", "criterios de inclusión y exclusión: ausentes, fuera de lugar, largos, incompletos o con otros años que T")
+def _(sb):
+    t = sb.theme()
+    f = next((t / "picoc").glob("*/picoc.md"))
+    good = f.read_text(encoding="utf-8")
+    head, crit = good.split("\n## Criterios de inclusión y exclusión", 1)
+    crit = "\n## Criterios de inclusión y exclusión" + crit
+
+    def lint(text, has):
+        f.write_text(text, encoding="utf-8")
+        sb.run(["lint", t], "ERROR", has=has)
+
+    lint(head, "falta la sección final")
+    lint(head.replace("\n## Descriptores revisados", crit + "\n\n## Descriptores revisados"), "debe ser la última sección")
+    lint(good.replace("### Exclusión", "### Descarte"), "falta '### Exclusión'")
+    lint(good.replace("- Revisiones sistemáticas y otros estudios secundarios.\n", ""), "al menos 2 criterios")
+    lint(good.replace("- Revisiones sistemáticas y otros estudios secundarios.", "- " + " ".join(["palabra"] * 30) + "."), "demasiado largo")
+    lint(good.replace(", en inglés o español", ""), "fijar el idioma")
+    lint(good.replace("Artículos de revista o de congreso revisados por pares", "Trabajos"), "tipo de documento")
+    lint(good.replace("entre 2020 y 2026", "entre 2018 y 2026"), "mismo periodo que T")
+    f.write_text(good, encoding="utf-8")
+    sb.run(["lint", t], "OK", has="3 criterios de inclusión y 2 de exclusión")
+    sb.set_yml(t, r"^(  marco:\s*)PICOCT", r"\g<1>PIO")
+    sb.add_picoc(t, "PIO", f"{TODAY}-2-PIO")
+    sb.run(["lint", t], "OK", has="2 criterios de inclusión")
 
 
 # ============================== skills ================================

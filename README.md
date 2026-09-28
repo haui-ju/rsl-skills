@@ -18,8 +18,8 @@ El agente verifica/instala prerrequisitos (node + pnpm, pipx graphifyy, poppler)
 | `rsl-topic-panel` | Estresa un tema (4 agentes + debate Mermaid + consenso) | `docs/[titulo-breve]/topic.md` |
 | `rsl-make-report` | Genera el informe UTP (7 puntos) y llama a `rsl-picoc` para el marco de búsqueda | `docs/[titulo-breve]/informe.md` + `picoc/<fecha>-<MARCO>/` |
 | `rsl-polish-report` | Pule el informe (4 agentes); si el marco quedó desfasado llama a `rsl-picoc` (modo ligero si solo cambió la pregunta § 1.2) | `docs/[titulo-breve]/informe-polish.md` |
-| `rsl-picoc` | Crea una versión nueva del marco de búsqueda con el marco de `paper.yml` (libre: PICO, PIO, PICOC, PICOCT, PICOS…; por defecto PICOCT): tabla por componente 1:1 con las queries, palabras clave IEEE (libres al final), modo completo (debate `critico-rsl` + `defensor-rsl` + `redaccion-rsl`) o ligero (solo actualiza la pregunta general, sin agentes), `picoc:lint` PASS | `docs/[titulo-breve]/picoc/<fecha>-<MARCO>/picoc.md` + `picoc-debate.md` |
-| `rsl-make-paper` | Nueva versión del paper borrador, solo secciones `on` (mejorar) y `rewrite` (reescribir) de `paper.yml` (+ agente `citas-rsl` y `redaccion:lint`) | `docs/[titulo-breve]/paper/<fecha>/paper-borrador.md` |
+| `rsl-picoc` | Crea una versión nueva del marco de búsqueda con el marco de `config.yml` (libre: PICO, PIO, PICOC, PICOCT, PICOS…; por defecto PICOCT): tabla por componente 1:1 con las queries, palabras clave IEEE (libres al final), modo completo (debate `critico-rsl` + `defensor-rsl` + `redaccion-rsl`) o ligero (solo actualiza la pregunta general, sin agentes), `picoc:lint` PASS | `docs/[titulo-breve]/picoc/<fecha>-<MARCO>/picoc.md` + `picoc-debate.md` |
+| `rsl-make-paper` | Nueva versión del paper borrador, solo secciones `on` (mejorar) y `rewrite` (reescribir) de `config.yml` (+ agente `citas-rsl` y `redaccion:lint`) | `docs/[titulo-breve]/paper/<fecha>/paper-borrador.md` |
 | `rsl-polish-paper` | Pule esas secciones (`critico-rsl` + `defensor-rsl`; `impacto-social-rsl` si están Justificación u Objetivo; luego `redaccion-rsl` + `citas-rsl`) → texto limpio + traza de debate | `paper/<fecha>/paper-polish.md` + `paper-debate.md` |
 | `rsl-qa-destroy` | Intenta romper el flujo a propósito (flujo positivo, orden mezclado, entradas destructivas, marco libre, revisión de skills y agentes) en un sandbox de `/tmp`; solo reporta | `qa/<fecha>/qa-report.md` + `qa-report.json` |
 | `rsl-qa-fix` | Arregla los fallos del último reporte, deja cada uno como caso de regresión y repite `qa:destroy` hasta OK | código corregido + `qa/<fecha>/qa-fix.md` |
@@ -39,15 +39,15 @@ Mismo tema → **misma carpeta**:
 
 ```text
 docs/[titulo-breve]/
+  config.yml             ← TÚ decides: cada sección del paper frozen / on / rewrite / off + formato (romana, APA/IEEE, marco PICOCT…)
   topic.md
   informe.md             ← sección 2 solo enlaza al marco
   informe-polish.md
   picoc/                 ← marco de búsqueda versionado (solo rsl-picoc crea versiones; el paper lee la última)
-    2026-09-28-PICOCT/   ← <fecha>-<MARCO> según formato.marco de paper.yml
-      picoc.md           ← pregunta general, RQ por componente, tabla de componentes 1:1, palabras clave ES/EN, queries Scopus/WoS/IEEE Xplore
+    2026-09-28-PICOCT/   ← <fecha>-<MARCO> según formato.marco de config.yml
+      picoc.md           ← pregunta general, RQ por componente, tabla de componentes 1:1, palabras clave ES/EN, queries Scopus/WoS/IEEE Xplore, criterios de inclusión y exclusión
       picoc-debate.md    ← posturas de los agentes y decisiones
   paper/
-    paper.yml            ← TÚ decides: cada sección frozen / on / rewrite / off + formato (romana, APA/IEEE, marco PICOCT…)
     paper.shadow.yml     ← detalle técnico: títulos, capítulos, depends_on (rara vez se edita)
     paper.state.jsonc    ← hashes y versiones (lo gestiona pnpm paper:status; no editar)
     2026-09-05/          ← una carpeta por corrida (trazabilidad; nunca se editan las anteriores)
@@ -68,7 +68,7 @@ Root (proyecto):
 graphify-out/     ← memoria Graphify del repo (skills, global/, playbooks/, README…)
 global/           ← archivos generales que integra el usuario (líneas UTP, competencias, thesaurus)
   examples/       ← papers RSL reales de referencia (estructura/presentación; grafo propio)
-  citation-style/ ← APA7.md · IEEE.md (reglas de citas; formato.citas de paper.yml)
+  citation-style/ ← APA7.md · IEEE.md (reglas de citas; formato.citas de config.yml)
 playbooks/        ← protocolos compartidos que siguen varias skills (vocabulario-controlado.md, redaccion-academica.md)
 ```
 
@@ -113,12 +113,12 @@ En `theme`, el `<slug>` se omite si solo hay un tema; `refresh`/`status` aceptan
 |---------|----------|
 | `thesaurus:check "t1" "t2" …` | Valida varios términos contra IEEE: preferido / no preferido (→ USE) / libre, con sinónimos (UF), específicos (NT) y página. |
 | `thesaurus:lookup "término"` | Ficha completa de un término IEEE (todas sus relaciones y página). |
-| `picoc:latest docs/<slug>` | Marco configurado en `paper.yml` + último `picoc/<fecha>-<MARCO>/picoc.md`: OK, DESFASADO (cambiaste el marco) o FALTA → correr `rsl-picoc`; también imprime la carpeta de la siguiente versión. |
-| `picoc:lint docs/<slug>` | OK/ERROR del último picoc: marco = `paper.yml`, pregunta general = § 1.2 de la ficha, una fila por componente 1:1 con las queries Scopus/WoS/IEEE Xplore, T = filtro de año, 1 RQ por componente, descriptores IEEE preferidos, libres al final. |
+| `picoc:latest docs/<slug>` | Marco configurado en `config.yml` + último `picoc/<fecha>-<MARCO>/picoc.md`: OK, DESFASADO (cambiaste el marco) o FALTA → correr `rsl-picoc`; también imprime la carpeta de la siguiente versión. |
+| `picoc:lint docs/<slug>` | OK/ERROR del último picoc: marco = `config.yml`, pregunta general = § 1.2 de la ficha, una fila por componente 1:1 con las queries Scopus/WoS/IEEE Xplore, T = filtro de año, 1 RQ por componente, descriptores IEEE preferidos, libres al final, y al final criterios de inclusión y exclusión breves (idioma, tipo de documento y años de T). |
 | `redaccion:lint <archivo.md>` | Forma académica de informe o paper: FAIL por marcas pendientes (`[citar]`, TODO…), notas internas (panel, `topic.md`…) o siglas sin definir; avisos por frases largas, notación ×/+ y exceso de siglas. |
-| `paper:status docs/<slug>` | Estado del paper según `paper/paper.yml`: qué se mejora (on) o reescribe (rewrite), stale, blocked; ERROR si se editó a mano una sección frozen; la línea OK indica el próximo paso. |
-| `paper:status docs/<slug> --init` | Crea `paper/paper.yml` y `paper/paper.shadow.yml` por defecto. |
-| `paper:status docs/<slug> --migrate` | Convierte un `paper.yml` del formato antiguo (enabled/frozen) al nuevo. |
+| `paper:status docs/<slug>` | Estado del paper según `config.yml`: qué se mejora (on) o reescribe (rewrite), stale, blocked; ERROR si se editó a mano una sección frozen; la línea OK indica el próximo paso. |
+| `paper:status docs/<slug> --init` | Crea `config.yml` y `paper/paper.shadow.yml` por defecto. |
+| `paper:status docs/<slug> --migrate` | Mueve el antiguo `config.yml` a `config.yml` y convierte el formato antiguo (enabled/frozen) al nuevo. |
 | `paper:status docs/<slug> --new-version` | Crea `paper/<fecha>/` copiando la versión anterior. |
 | `paper:status docs/<slug> --update borrador\|polish` | Registra hashes tras escribir el borrador o el polish. |
 | `paper:status docs/<slug> --cites [archivo]` | Citas en texto vs Referencias (APA 7 o IEEE según `formato.citas`); con `informe-polish.md` compara contra la tabla de la sección 3. |
@@ -154,7 +154,7 @@ Usa rsl-polish-report sobre docs/[titulo-breve]/informe.md
 Usa rsl-picoc sobre docs/[titulo-breve]/
 ```
 
-El marco sale de `formato.marco` en `paper/paper.yml` (por defecto PICOCT) y es libre: `P` población, `I` intervención, `C` comparación, `O` resultado, `T` tiempo, `S` diseño de estudio; la segunda `C` es contexto. Una letra fuera de esa lista es ERROR y nada continúa. Si lo cambias (p. ej. `marco: PIO`), `picoc:latest` marca DESFASADO, las secciones del paper que dependen del marco quedan BLOCKED y `rsl-picoc` crea `picoc/<fecha>-PIO/`. El cribado (inclusión/exclusión, tipo de documento) no va en el picoc: lo defines tú.
+El marco sale de `formato.marco` en `config.yml` (por defecto PICOCT) y es libre: `P` población, `I` intervención, `C` comparación, `O` resultado, `T` tiempo, `S` diseño de estudio; la segunda `C` es contexto. Una letra fuera de esa lista es ERROR y nada continúa. Si lo cambias (p. ej. `marco: PIO`), `picoc:latest` marca DESFASADO, las secciones del paper que dependen del marco quedan BLOCKED y `rsl-picoc` crea `picoc/<fecha>-PIO/`. El cribado (inclusión/exclusión, tipo de documento) no va en el picoc: lo defines tú.
 
 ### Crear el paper (borrador rico)
 
@@ -164,7 +164,7 @@ Usa `topic.md` + ficha (`informe-polish.md` / `informe.md`) + último `picoc/<fe
 Usa rsl-make-paper sobre docs/ia-inclusion-cognitiva-software/
 ```
 
-Salida: nueva carpeta `paper/<fecha>/paper-borrador.md`. La primera vez crea `paper/paper.yml` con solo la **Introducción** activada.
+Salida: nueva carpeta `paper/<fecha>/paper-borrador.md`. La primera vez crea `config.yml` con solo la **Introducción** activada.
 
 ### Pulir el paper (agentes + redacción + citas)
 
@@ -178,7 +178,7 @@ Salidas en la misma versión:
 
 Para volver a pulir un texto ya pulido, deja la sección en `on` (mejoras puntuales); `rewrite` la replantea desde el borrador. Si nada está en `on`/`rewrite`, `--new-version` no crea versión.
 
-### Regenerar solo algunas secciones (`paper/paper.yml`)
+### Regenerar solo algunas secciones (`config.yml`)
 
 Solo editas una palabra por sección, agrupadas por capítulo:
 
@@ -203,7 +203,7 @@ pnpm -s paper:status docs/<slug>            # tabla: qué se mejora o reescribe,
 pnpm -s paper:status docs/<slug> --cites    # citas en texto vs Referencias (APA7 | IEEE según formato.citas)
 ```
 
-- `formato` en `paper.yml`: `idioma` (es por defecto; en, pt, fr, de… cualquier código ISO 639-1), `numeracion` (romana | arabiga | ninguna), `citas` (apa7 | ieee), `resumen` (idiomas), `resultados_por` (rq | tema), `marco` (libre, letras P I C O T S, la segunda C = contexto; por defecto PICOCT; letra desconocida = ERROR).
+- `formato` en `config.yml`: `idioma` (es por defecto; en, pt, fr, de… cualquier código ISO 639-1), `numeracion` (romana | arabiga | ninguna), `citas` (apa7 | ieee), `resumen` (idiomas), `resultados_por` (rq | tema), `marco` (libre, letras P I C O T S, la segunda C = contexto; por defecto PICOCT; letra desconocida = ERROR).
 - `paper.shadow.yml`: títulos, capítulo y `depends_on` de cada sección, más formato avanzado (letras A–E, ejemplos). Solo si quieres cambiar dependencias o títulos.
 - Metodología sale del último picoc y dice explícitamente qué marco se usa (el de `formato.marco`). Resultados/Discusión/Conclusión necesitan `RSL/seleccion/` y `RSL/extraccion/` (**los preparas tú**: correr las queries, validar artículos, PRISMA); mientras no existan quedan **blocked**, nunca se inventan.
 - Añadir un paper de ejemplo: copiar el `.md` en `global/examples/` (convertido con `global/to-md.md`) y correr `pnpm graphify:examples:refresh`.
@@ -292,9 +292,9 @@ rsl-bootstrap             ← paso 0 (una vez por clon / máquina)
   → PDFs en RSL/PDF/
   → graphify-theme (PASS)
   → rsl-polish-report
-  → rsl-make-paper          ← paper/<fecha>/paper-borrador.md (secciones on de paper.yml)
+  → rsl-make-paper          ← paper/<fecha>/paper-borrador.md (secciones on de config.yml)
   → rsl-polish-paper        ← paper-polish.md limpio + paper-debate.md
-  → marcar frozen en paper.yml lo validado · activar Metodología · (tú: selección PRISMA) · activar Resultados…
+  → marcar frozen en config.yml lo validado · activar Metodología · (tú: selección PRISMA) · activar Resultados…
 ```
 (y de vez en cuando **`graphify-root`** si cambias skills / `global/`; tras tocar scripts o skills: **`rsl-qa-destroy`** → **`rsl-qa-fix`**)
 

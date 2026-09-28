@@ -3,7 +3,7 @@
 #   on       -> revisar y mejorar: se conserva la base y se corrige / pule
 #   rewrite  -> reescribir: se replantea desde cero a partir de las fuentes
 #   off      -> inactivo: no se genera ni aparece
-# Detalle técnico (títulos, dependencias): paper.shadow.yml · Estado interno: paper.state.jsonc (no editar)
+# Detalle técnico (títulos, dependencias): paper/paper.shadow.yml · Estado interno: paper/paper.state.jsonc (no editar)
 
 formato:
   idioma: es # idioma del paper: es | en | pt | fr | de (cualquier código ISO 639-1)

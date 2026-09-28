@@ -1,5 +1,5 @@
 // NO EDITAR A MANO. Lo gestiona scripts/paper-manifest.py (--update / --new-version).
-// Para activar, congelar o apagar secciones, edita paper.yml.
+// Para activar, congelar o apagar secciones, edita config.yml (en la carpeta del tema).
 {
   "sections": {
     "encabezado": {

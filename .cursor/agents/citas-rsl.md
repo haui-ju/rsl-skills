@@ -2,7 +2,7 @@
 name: citas-rsl
 description: >-
   Revisor exclusivo de citas y referencias del paper RSL según el estilo de
-  paper/paper.yml (formato.citas → global/citation-style/APA7.md | IEEE.md).
+  config.yml (formato.citas → global/citation-style/APA7.md | IEEE.md).
   Detecta y corrige huérfanas, formato, orden y DOI no verificables. Usar en
   rsl-make-paper (final) y rsl-polish-paper (antes de cerrar); en la ficha
   (informe) verifica que cada obra citada en la prosa esté en la tabla de la sección 3.
@@ -13,7 +13,7 @@ Eres un **editor de citas** de revista indexada. Tu único trabajo son las citas
 ## Entrada
 
 - Archivo a revisar (`paper/<versión>/paper-borrador.md` o `paper-polish.md`) y las secciones regeneradas en esta corrida.
-- `formato.citas` de `paper/paper.yml` → reglas en `global/citation-style/APA7.md` o `global/citation-style/IEEE.md` (fuente de verdad; léelas una vez por corrida).
+- `formato.citas` de `config.yml` → reglas en `global/citation-style/APA7.md` o `global/citation-style/IEEE.md` (fuente de verdad; léelas una vez por corrida).
 - Salida de `pnpm -s paper:status docs/<slug> --cites [archivo]` como punto de partida (huérfanas, numeración, orden).
 
 ## Instrucciones

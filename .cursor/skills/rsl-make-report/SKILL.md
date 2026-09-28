@@ -15,7 +15,7 @@ Receive a research topic and write a UTP `informe.md` in the theme folder. Singl
 docs/[titulo-breve]/
   topic.md              (optional, from rsl-topic-panel)
   informe.md            (this skill)
-  paper/paper.yml       (formato.marco; --init if missing, default PICOCT)
+  config.yml            (formato.marco; --init if missing, default PICOCT)
   picoc/<fecha>-<MARCO>/picoc.md   (via rsl-picoc)
   RSL/PDF/              (SLR PDFs only, never next to .md)
 ```
@@ -28,7 +28,7 @@ Writing: `playbooks/redaccion-academica.md` (Spanish académico-profesional). Te
 
 1. Resolve `docs/<slug>/` (same folder as `topic.md` for the same theme); create `RSL/PDF/`.
 2. Normalize título / problemática / objeto (the sharpened version of `topic.md` if the verdict was GO_con_cambios or the user agrees).
-3. `pnpm -s picoc:latest docs/<slug>`; no `paper.yml` → `pnpm -s paper:status docs/<slug> --init`, then set `formato.marco` if the user asked for another framework. ERROR (unknown letter) → stop and report it.
+3. `pnpm -s picoc:latest docs/<slug>`; no `config.yml` → `pnpm -s paper:status docs/<slug> --init`, then set `formato.marco` if the user asked for another framework. ERROR (unknown letter) → stop and report it.
 4. **Up to 3 SLRs** (at least 2 reviews; otherwise at least 5 primary studies from the last 5 years). PDFs into `RSL/PDF/`, referenced as `RSL/PDF/<file>.pdf`. Paywall → mark missing, keep DOI and Scopus query. Never invent DOI or PDF.
 5. Write `informe.md` with the exact 7 points below (section 4 ≤ 300 words citing section 3; section 7 = short title; section 2 = only the picoc link).
 6. Run **`rsl-picoc`** (full mode; general question = the new § 1.2). Missing thesaurus → ask for `Usa rsl-bootstrap`.

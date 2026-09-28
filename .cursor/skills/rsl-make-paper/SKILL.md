@@ -2,7 +2,7 @@
 name: rsl-make-paper
 description: >-
   Builds a new version docs/[short-title]/paper/<fecha>/paper-borrador.md — the
-  rich draft of the RSL paper, section by section according to paper/paper.yml
+  rich draft of the RSL paper, section by section according to config.yml
   (on = improve, rewrite = regenerate from scratch; frozen/off ones are copied
   from the previous version). Uses topic.md, informe, the latest picoc/<fecha>-<MARCO>/picoc.md, Graphify theme memory,
   RSL/MD and global/examples. Use when the user says rsl-make-paper. Does NOT
@@ -13,7 +13,7 @@ description: >-
 
 Writes the **rich draft** as a new version `paper/<fecha>/paper-borrador.md`. Single proposer; the 4-agent debate belongs to `rsl-polish-paper`; here only `citas-rsl` runs at the end.
 
-| State in `paper.yml` | What this skill does |
+| State in `config.yml` | What this skill does |
 |---|---|
 | `frozen` | Copy byte for byte; never edit. |
 | `on` | Improve the previous text (fix, fill gaps, add evidence, continuity); no rewrite from scratch. No previous text → generated (`reescribir (nueva)`). |
@@ -24,7 +24,7 @@ Writes the **rich draft** as a new version `paper/<fecha>/paper-borrador.md`. Si
 docs/[titulo-breve]/
   topic.md · informe-polish.md | informe.md · picoc/<último>/picoc.md   (internal inputs)
   RSL/MD/ (corpus) · RSL/seleccion/ + RSL/extraccion/ (user data, read only) · graphify-out/ (lookup only)
-  paper/paper.yml (user) · paper.shadow.yml (titles, groups, depends_on) · paper.state.jsonc (script only)
+  config.yml (user) · paper/paper.shadow.yml (titles, groups, depends_on) · paper/paper.state.jsonc (script only)
   paper/<fecha>/paper-borrador.md (THIS skill) · paper-polish.md + paper-debate.md (rsl-polish-paper)
 global/examples/ (structure reference) · global/citation-style/<STYLE>.md
 ```
@@ -33,7 +33,7 @@ Invoke: `Usa rsl-make-paper sobre docs/<slug>/`.
 
 ## Procedure
 
-1. No `paper/paper.yml` → `pnpm -s paper:status docs/<slug> --init`; old format → `--migrate`. Any `ERROR` (e.g. unknown letter in `formato.marco`) → stop and report it.
+1. No `config.yml` → `pnpm -s paper:status docs/<slug> --init`; old `paper/paper.yml` or old format → `--migrate`. Any `ERROR` (e.g. unknown letter in `formato.marco`) → stop and report it.
 2. `pnpm -s paper:status docs/<slug> --new-version`. It creates `paper/<fecha>/` (copy of the previous version) only if something is `on`/`rewrite`; otherwise it says so → report STALE / BLOCKED and stop. Work **only** on **A mejorar** and **A reescribir**. **STALE** frozen sections: do not touch (the user decides). **BLOCKED**: do not generate; say what is missing (`WARN picoc …` → suggest `Usa rsl-picoc sobre docs/<slug>/`; `RSL/extraccion` → user data).
 3. Inputs, read once: ficha, the latest picoc (path printed by `paper:status`), `topic.md`, and the frozen sections of the new version (coherence only).
 4. Evidence, graph first (no full PDFs, no refresh):
@@ -43,7 +43,7 @@ Invoke: `Usa rsl-make-paper sobre docs/<slug>/`.
 6. Content per group:
    - **Introducción:** template below. For each anchor SLR: what it covers, n/DOI, what it does not cover (= gap). Every extra paragraph adds citation, delimitation, metric, ethics or SE-process detail; no stubs.
    - **Preguntas:** the picoc general question = problemática = § 1.2 (verbatim in the encabezado and in El problema 2.4, as an interrogative); its RQs give one specific objective each in Objetivo de la RSL and structure Organización. No new RQ.
-   - **Metodología:** tables, RQs, keywords and queries of the latest picoc **as they are**. `marco-pico` names the configured framework with its components in words (e.g. "Se adoptó el marco PIO (población, intervención y resultado)…") and gives one row per component with its RQ; title from `paper:status`. States that the strings mix IEEE controlled vocabulary and free terms. Inclusion/exclusion and PRISMA only from `RSL/seleccion/`; never invent counts.
+   - **Metodología:** tables, RQs, keywords and queries of the latest picoc **as they are**. `marco-pico` names the configured framework with its components in words (e.g. "Se adoptó el marco PIO (población, intervención y resultado)…") and gives one row per component with its RQ; title from `paper:status`. States that the strings mix IEEE controlled vocabulary and free terms. `criterios-seleccion` = the inclusion and exclusion criteria of the latest picoc, as they are (two bullet lists or a two-column table). PRISMA counts only from `RSL/seleccion/`; never invent counts.
    - **Resultados / Discusión / Conclusión:** only from `RSL/extraccion/`, by RQ or theme (`format.results_by`).
    - **Abstract / Resumen:** only when content sections exist; keywords from the picoc.
 7. `citas-rsl` on the worked sections only: `pnpm -s paper:status docs/<slug> --cites paper/<fecha>/paper-borrador.md` + its fixes until PASS or justified `PENDIENTE`.
@@ -109,7 +109,7 @@ The last message of the skill is exactly one line:
 ## Forbidden
 
 - Polish agents (only `citas-rsl`).
-- Editing previous versions, frozen/off sections, states in `paper.yml`, `paper.shadow.yml` or `paper.state.jsonc`.
+- Editing previous versions, frozen/off sections, states in `config.yml`, `paper.shadow.yml` or `paper.state.jsonc`.
 - Generating BLOCKED sections; inventing PRISMA counts, results, citations or DOI.
 - Deleting or renaming section markers; editing `informe*.md`, `picoc/` or `topic.md`.
 - A framework in Metodología different from `formato.marco`.

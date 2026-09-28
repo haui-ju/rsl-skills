@@ -1,6 +1,6 @@
 # Debate del marco de búsqueda — 2026-09-28 · PICOCT
 
-- **Marco:** PICOCT (`formato.marco` de `paper/paper.yml`, valor por defecto).
+- **Marco:** PICOCT (`formato.marco` de `config.yml`, valor por defecto).
 - **Versión base:** `picoc.md` anterior, sin versionar (estructura antigua con cribado de C y O y filtros de T); se eliminó del tema y queda en el historial de git.
 - **Cambios de estructura pedidos por el usuario:**
   - los 6 componentes van en la tabla y P, I, C, O y Co entran como bloques AND;

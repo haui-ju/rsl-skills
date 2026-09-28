@@ -1,6 +1,6 @@
 """Versiones del marco de búsqueda: docs/<slug>/picoc/<AAAA-MM-DD>[-n]-<MARCO>/picoc.md.
 
-El marco activo sale de docs/<slug>/paper/paper.yml (formato.marco); si no está, PICOCT.
+El marco activo sale de docs/<slug>/config.yml (formato.marco); si no está, PICOCT.
 El marco es libre: cualquier combinación de letras del diccionario (PIO, PICO, PICOS, PICOCT…);
 la primera C es Comparación y la segunda, Contexto (Co). También se acepta una lista [P, I, O].
 """
@@ -27,14 +27,16 @@ NAMES = {
 DEFAULT_MARCO = "PICOCT"
 PICOC_DIR_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})(?:-([2-9]|[1-9]\d+))?-([A-Za-z]+)$")
 PICOC_FILE = "picoc.md"
+CONFIG = "config.yml"
+LEGACY_CONFIG = "paper/paper.yml"
 
 
 class MarcoError(ValueError):
-    fix = "corrige formato.marco en paper/paper.yml (letras P I C O T S; la segunda C es contexto)"
+    fix = "corrige formato.marco en config.yml (letras P I C O T S; la segunda C es contexto)"
 
 
 class ConfigError(MarcoError):
-    fix = "corrige la sintaxis de paper/paper.yml"
+    fix = "corrige la sintaxis de config.yml"
 
 
 class VersionError(MarcoError):
@@ -85,23 +87,27 @@ def component_words(value) -> str:
 
 
 def configured_marco(theme: Path) -> str:
-    """Marco de paper.yml como etiqueta canónica; lanza MarcoError si no es válido."""
-    yml = theme / "paper" / "paper.yml"
+    """Marco de config.yml como etiqueta canónica; lanza MarcoError si no es válido."""
+    yml = theme / CONFIG
+    if not yml.exists() and (theme / LEGACY_CONFIG).exists():
+        e = ConfigError(f"la configuración sigue en {LEGACY_CONFIG}; ahora va en {CONFIG}")
+        e.fix = "muévela con: pnpm -s paper:status <tema> --migrate"
+        raise e
     if yaml is None or not yml.exists():
         return DEFAULT_MARCO
     try:
         data = yaml.safe_load(yml.read_text(encoding="utf-8-sig"))
     except yaml.YAMLError as e:
         mark = getattr(e, "problem_mark", None)
-        raise ConfigError("paper/paper.yml no es YAML válido" + (f" (línea {mark.line + 1})" if mark else ""))
+        raise ConfigError("config.yml no es YAML válido" + (f" (línea {mark.line + 1})" if mark else ""))
     except UnicodeDecodeError:
-        raise ConfigError("paper/paper.yml no está en UTF-8")
+        raise ConfigError("config.yml no está en UTF-8")
     data = data or {}
     if not isinstance(data, dict):
-        raise ConfigError("paper/paper.yml debe ser un mapa clave: valor")
+        raise ConfigError("config.yml debe ser un mapa clave: valor")
     formato = data.get("formato") or {}
     if not isinstance(formato, dict):
-        raise ConfigError("formato de paper/paper.yml debe ser un bloque clave: valor")
+        raise ConfigError("formato de config.yml debe ser un bloque clave: valor")
     if "marco" not in formato:
         return DEFAULT_MARCO
     try:

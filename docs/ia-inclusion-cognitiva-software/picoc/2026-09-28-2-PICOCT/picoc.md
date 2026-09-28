@@ -2,11 +2,11 @@
 
 **Marco:** PICOCT · **Vocabulario:** IEEE Thesaurus 2019 + términos libres · **Tema:** Inteligencia artificial en el ciclo de vida del software para accesibilidad cognitiva y neurodivergencia: técnicas, fases de ingeniería y métricas de evaluación — una revisión sistemática de la literatura.
 
-Protocolo: [`playbooks/vocabulario-controlado.md`](../../../../playbooks/vocabulario-controlado.md) · Debate: [picoc-debate.md](picoc-debate.md) · Verificación: `pnpm -s picoc:lint docs/<slug>`
+Protocolo: [`playbooks/vocabulario-controlado.md`](../../../../playbooks/vocabulario-controlado.md) · Debate: [picoc-debate.md](picoc-debate.md) · Verificación: `pnpm -s picoc:lint docs/ia-inclusion-cognitiva-software`
 
 ## Pregunta general (problemática)
 
-¿Cómo se ha integrado la inteligencia artificial en el ciclo de vida del software para usuarios con discapacidad cognitiva y qué métricas de evaluación se reportan?
+¿Cómo se han integrado técnicas de inteligencia artificial en las fases del ciclo de vida del software —con énfasis en diseño, personalización en runtime y, sobre todo, verificación, evaluación y auditoría— orientadas a usuarios con discapacidad cognitiva o neurodivergencia; qué métricas se reportan (incluidas orientaciones COGA frente al núcleo WCAG); y qué celdas de la matriz *condición × técnica × fase SE × métrica* permanecen vacías frente al sesgo documentado hacia la accesibilidad sensorial/visual y frente a revisiones HCI/AT o GenAI+web que no estructuran el proceso de Ingeniería de Software?
 
 ## Preguntas por componente
 
@@ -197,10 +197,15 @@ AND PUBYEAR > 2019 AND PUBYEAR < 2027
 ### Inclusión
 
 - Estudios publicados entre 2020 y 2026.
-- Artículos de revista o de congreso revisados por pares, en inglés o español.
-- Estudios dirigidos a personas con discapacidad cognitiva o neurodivergencia.
+- Artículos de revista o de congreso revisados por pares, incluidas las actas publicadas como capítulos de libro, en inglés o español.
+- Estudios dirigidos a personas con discapacidad cognitiva o neurodivergencia: TEA, TDAH, discapacidad intelectual, dislexia o dificultades de aprendizaje.
+- Estudios en los que una técnica de inteligencia artificial identificada interviene en el software o en su proceso de desarrollo.
+- Estudios que aplican esa técnica en requisitos, diseño, desarrollo, personalización en tiempo de ejecución, pruebas, verificación y validación o auditoría.
+- Estudios con una evaluación empírica que reporta al menos una métrica o instrumento de evaluación.
 
 ### Exclusión
 
 - Registros duplicados entre bases de datos o sin texto completo accesible.
-- Revisiones sistemáticas y otros estudios secundarios.
+- Revisiones sistemáticas y otros estudios secundarios; se usan solo para delimitar el vacío.
+- Preprints, tesis, editoriales y resúmenes de congreso.
+- Robots sociales, tutores inteligentes, cribado clínico o tecnología de rehabilitación como producto principal, sin una fase del ciclo de vida del software.

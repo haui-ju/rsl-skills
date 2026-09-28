@@ -4,7 +4,7 @@ description: >-
   Polishes the latest docs/[short-title]/paper/<fecha>/paper-borrador.md with
   critico-rsl, defensor-rsl (impacto-social-rsl when justificacion/objetivo-rsl are in
   the run), redaccion-rsl and citas-rsl, and writes paper-polish.md and paper-debate.md in that
-  version, section by section according to paper/paper.yml (on = improve,
+  version, section by section according to config.yml (on = improve,
   rewrite = re-polish from scratch; frozen ones copied; stale ones reported). Use when the
   user says rsl-polish-paper.
 ---
@@ -13,7 +13,7 @@ description: >-
 
 Polishes the latest `paper-borrador.md` into **`paper-polish.md`** (clean, ready to present) and **`paper-debate.md`** (trace), in the same version folder. Does not create from scratch (`rsl-make-paper`).
 
-| State in `paper.yml` | What this skill does |
+| State in `config.yml` | What this skill does |
 |---|---|
 | `frozen` | Copy byte for byte; never edit. |
 | `on` | Start from the current polished text; targeted fixes (grammar, continuity, precision, citations, trimming); keep thesis and structure. No polished text yet → polish from the borrador. **Re-polishing an already polished section = `on`.** |
@@ -71,12 +71,12 @@ Contexto 3–5 short paragraphs · El problema 3–4 (arises from the previous �
 The last message of the skill is exactly one line:
 
 - Stop at the first failure (any `paper:status` step returns `ERROR:`, or `redaccion:lint` / `--cites` keep failing in the worked sections): `ERROR: <mensaje del script o sección que no pasó>. <cómo arreglarlo>`. Do not continue with later steps.
-- Everything went well: `OK: polish paper/<versión>/paper-polish.md (secciones: …; agentes: …). Próximo paso: congela en paper/paper.yml las secciones validadas, o Usa rsl-make-paper sobre docs/<slug>/ para los grupos pendientes`.
+- Everything went well: `OK: polish paper/<versión>/paper-polish.md (secciones: …; agentes: …). Próximo paso: congela en config.yml las secciones validadas, o Usa rsl-make-paper sobre docs/<slug>/ para los grupos pendientes`.
 
 ## Forbidden
 
 - Rewrite from scratch; editing previous versions, `paper-borrador.md`, informe, picoc or topic.
-- Editing frozen sections (except re-rendering citations if `formato.citas` changed), states in `paper.yml`, `paper.shadow.yml` or `paper.state.jsonc`.
+- Editing frozen sections (except re-rendering citations if `formato.citas` changed), states in `config.yml`, `paper.shadow.yml` or `paper.state.jsonc`.
 - Generating off or BLOCKED sections; inventing PRISMA counts, results or DOI.
 - Deleting markers; `####` in the polish; raw debate inside `paper-polish.md`.
 - Delivering with `redaccion:lint` FAIL in worked sections or `--cites` FAIL.

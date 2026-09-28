@@ -132,3 +132,15 @@ TITLE-ABS-KEY (
 - *User interfaces*: término genérico que reabriría el corpus de interacción persona-computador; el tema se refiere a interfaces adaptativas, que se buscan como término libre.
 - `COGA` como sigla suelta: coincide con un estudio genético sobre alcoholismo de amplio corpus biomédico; la accesibilidad cognitiva se busca con `"cognitive accessibility"`.
 - `blind` y `personaliz*`: recuperan ruido ajeno al tema (ensayos doble ciego, medicina y aprendizaje personalizados); se sustituyen por `blindness`, `"visually impaired"` y las frases de personalización en tiempo de ejecución.
+
+## Criterios de inclusión y exclusión
+
+### Inclusión
+
+- Artículos de revista o de congreso revisados por pares, en inglés o español.
+- Estudios dirigidos a personas con discapacidad cognitiva o neurodivergencia.
+
+### Exclusión
+
+- Registros duplicados entre bases de datos o sin texto completo accesible.
+- Revisiones sistemáticas y otros estudios secundarios.

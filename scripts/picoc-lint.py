@@ -2,12 +2,14 @@
 """Verifica docs/<slug>/picoc/<fecha>-<MARCO>/picoc.md contra playbooks/vocabulario-controlado.md.
 
 Reglas:
-  MARCO  **Marco:** == sufijo de la carpeta == formato.marco de paper/paper.yml (por defecto PICOCT)
+  MARCO  **Marco:** == sufijo de la carpeta == formato.marco de config.yml (por defecto PICOCT)
   PG     pregunta general == § 1.2 Problemática de la ficha (informe-polish.md | informe.md)
   R1     cada fila de la tabla de componentes justifica su origen citando el tema (“…”)
   R2     una fila por componente del marco; keywords de cada fila (salvo T) == su bloque en Scopus, WoS e IEEE Xplore;
          T == filtro de año en las 3 bases; sin filtros de tipo de documento; IEEE Xplore ≤ 10 comodines
   R3     exactamente 1 RQ (¿…?) por componente del marco, enlazada desde la tabla
+  CR     última sección '## Criterios de inclusión y exclusión' con '### Inclusión' y '### Exclusión': listas de viñetas
+         breves (≤ 25 palabras, ≥ 2 por lista); la inclusión fija idioma, tipo de documento y, si hay T, sus mismos años
   KW     palabras clave ES/EN: primero descriptores IEEE preferidos (con pág.), libres solo al final y justificados
   IEEE   cada descriptor declarado es preferido en ieee-thesaurus.json y está en su bloque
 
@@ -34,6 +36,10 @@ IEEE_MAX_WILDCARDS = 10
 FORBIDDEN = ("Cribado", "T — Filtros", "T - Filtros", "Filtros", "Términos libres")
 FILTER_PREFIX = re.compile(r"(DT|PY|PUBYEAR|LIMIT-TO)\s*=?\s*$", re.I)
 QUESTION = re.compile(r"¿[^?]+\?", re.S)
+CRITERIA = "Criterios de inclusión y exclusión"
+CRITERION_MAX_WORDS = 25
+LANGUAGE_RE = re.compile(r"idioma|inglés|español|portugués|francés|alemán|english|spanish", re.I)
+DOCTYPE_RE = re.compile(r"revista|congreso|conferencia|actas|arbitra|revisi[oó]n por pares|journal|proceedings", re.I)
 
 
 def rel(p: Path) -> Path:
@@ -152,7 +158,7 @@ def main(path: Path) -> int:
     elif folder != marco:
         errs.append(f"MARCO: **Marco:** {marco} pero la carpeta es {folder}")
     if configured != marco:
-        errs.append(f"MARCO: paper.yml pide {configured} y este picoc es {marco} (correr rsl-picoc)")
+        errs.append(f"MARCO: config.yml pide {configured} y este picoc es {marco} (correr rsl-picoc)")
 
     for k in secs:
         if any(k.casefold().startswith(f.casefold()) for f in FORBIDDEN):
@@ -237,7 +243,7 @@ def main(path: Path) -> int:
         if db == "IEEE Xplore" and q.count("*") > IEEE_MAX_WILDCARDS:
             errs.append(f"R2 [{db}]: {q.count('*')} comodines; IEEE Xplore admite {IEEE_MAX_WILDCARDS} (usar frases sin * fuera de P)")
         if re.search(r"DOCTYPE|\bDT\s*=", q):
-            errs.append(f"R2 [{db}]: quitar el filtro de tipo de documento (lo decide el usuario en el cribado)")
+            errs.append(f"R2 [{db}]: quitar el filtro de tipo de documento (va en los criterios de inclusión, no en la query)")
         blocks = query_blocks(q)
         if len(blocks) != len(rows_terms):
             errs.append(f"R2 [{db}]: {len(blocks)} bloques en la query vs {len(rows_terms)} componentes con keywords")
@@ -307,6 +313,38 @@ def main(path: Path) -> int:
                 if k not in kw_ieee:
                     errs.append(f"KW: el descriptor '{name}' ({c}) falta en Palabras clave")
 
+    n_inc = n_exc = 0
+    heads = re.findall(r"^##\s+(.+)$", text, flags=re.M)
+    crit = find(secs, CRITERIA)
+    if crit is None:
+        errs.append(f"CR: falta la sección final '## {CRITERIA}' (qué se acepta y qué no para revisar un artículo)")
+    else:
+        if not heads[-1].strip().casefold().startswith(CRITERIA.casefold()):
+            errs.append(f"CR: '## {CRITERIA}' debe ser la última sección (después va '{heads[-1].strip()}')")
+        subs = sections(crit, "###")
+        lists = {}
+        for name in ("Inclusión", "Exclusión"):
+            body = find(subs, name)
+            items = [norm_text(re.sub(r"^\s*[-*]\s+", "", l)) for l in (body or "").splitlines() if re.match(r"^\s*[-*]\s+\S", l)]
+            lists[name] = items
+            if body is None:
+                errs.append(f"CR: falta '### {name}' dentro de '## {CRITERIA}'")
+                continue
+            if len(items) < 2:
+                errs.append(f"CR: '### {name}' necesita al menos 2 criterios en viñetas (tiene {len(items)})")
+            for it in items:
+                if len(it.split()) > CRITERION_MAX_WORDS:
+                    errs.append(f"CR: criterio de {name.lower()} demasiado largo ({len(it.split())} palabras; máximo {CRITERION_MAX_WORDS}): «{it[:60]}…»")
+        inc = " ".join(lists.get("Inclusión", []))
+        n_inc, n_exc = len(lists.get("Inclusión", [])), len(lists.get("Exclusión", []))
+        if lists.get("Inclusión"):
+            if not LANGUAGE_RE.search(inc):
+                errs.append("CR: la inclusión debe fijar el idioma (p. ej. «artículos en inglés o español»)")
+            if not DOCTYPE_RE.search(inc):
+                errs.append("CR: la inclusión debe fijar el tipo de documento (p. ej. «artículos de revista o de congreso revisados por pares»)")
+            if years and not re.search(rf"{years[0]}\s*(?:[–-]|y|a|al|hasta)\s*{years[1]}", inc):
+                errs.append(f"CR: la inclusión debe usar el mismo periodo que T ({years[0]}–{years[1]})")
+
     for w in warns:
         print(f"WARN {w}")
     if errs:
@@ -314,7 +352,7 @@ def main(path: Path) -> int:
             print(f"  - {e}")
         return error(f"el picoc {rel(path)} ({marco}) tiene {len(errs)} error(es) (ver detalle arriba)", "corrígelo regenerando una versión con rsl-picoc")
     total = sum(len(t) for _, t in rows_terms)
-    return ok(f"picoc {rel(path)} ({marco}) válido: {len(rows_terms)} bloques, {total} términos, {len(rq_rows)} RQ" + (f", T {years[0]}–{years[1]}" if years else "") + ", 3 bases")
+    return ok(f"picoc {rel(path)} ({marco}) válido: {len(rows_terms)} bloques, {total} términos, {len(rq_rows)} RQ" + (f", T {years[0]}–{years[1]}" if years else "") + f", 3 bases, {n_inc} criterios de inclusión y {n_exc} de exclusión")
 
 
 def resolve(arg: str) -> Path:
@@ -336,7 +374,7 @@ def latest(arg: str) -> int:
     if not theme.is_dir():
         raise Fail(f"{arg} no es la carpeta de un tema", "usa docs/<slug>")
     marco, f, state = pv.status(theme)
-    src = "paper.yml" if (theme / "paper" / "paper.yml").exists() else "por defecto, sin paper.yml"
+    src = pv.CONFIG if (theme / pv.CONFIG).exists() else f"por defecto, sin {pv.CONFIG}"
     nxt = f"{rel(pv.next_dir(theme, marco))}/"
     print(f"marco: {marco} ({src})")
     print(f"último: {rel(f) if f else '—'}")

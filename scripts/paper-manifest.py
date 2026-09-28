@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
-"""Manifiesto del paper RSL por secciones: docs/<slug>/paper/paper.yml (+ paper.shadow.yml, paper.state.jsonc).
+"""Manifiesto del paper RSL por secciones: docs/<slug>/config.yml (+ paper/paper.shadow.yml, paper/paper.state.jsonc).
 
 Uso:
   python3 scripts/paper-manifest.py docs/<slug>                    # estado + qué mejorar / reescribir (FAIL si una sección frozen fue editada)
-  python3 scripts/paper-manifest.py docs/<slug> --init             # crea paper.yml + paper.shadow.yml por defecto
-  python3 scripts/paper-manifest.py docs/<slug> --migrate          # convierte el paper.yml antiguo (enabled/frozen) y paper.state.json
+  python3 scripts/paper-manifest.py docs/<slug> --init             # crea config.yml + paper/paper.shadow.yml por defecto
+  python3 scripts/paper-manifest.py docs/<slug> --migrate          # mueve paper/paper.yml a config.yml y convierte el formato antiguo (enabled/frozen)
   python3 scripts/paper-manifest.py docs/<slug> --new-version      # crea paper/<fecha>/ copiando la versión anterior
   python3 scripts/paper-manifest.py docs/<slug> --update borrador  # registra hashes tras escribir paper-borrador.md
   python3 scripts/paper-manifest.py docs/<slug> --update polish    # registra hashes tras escribir paper-polish.md
   python3 scripts/paper-manifest.py docs/<slug> --cites [archivo]  # citas en texto vs referencias (format.citation)
   python3 scripts/paper-manifest.py docs/<slug> --picoc            # marco configurado + último picoc/<fecha>-<MARCO>/picoc.md
 
-paper.yml lo edita el usuario (frozen / on / rewrite / off + formato).
+config.yml lo edita el usuario (frozen / on / rewrite / off + formato).
 paper.shadow.yml: títulos, grupos, depends_on y formato avanzado.
 paper.state.jsonc: hashes y versiones; lo gestiona este script.
 """
@@ -60,11 +60,12 @@ FORMATO = {  # clave humana -> (clave interna, {valor humano: valor interno})
     "resultados_por": ("results_by", {"rq": "rq", "tema": "tema"}),
     "marco": ("framework", None),
 }
+DEFAULT_FMT = {"language": "es", "numbering": "roman", "citation": "apa7", "abstract": ["en", "es"], "results_by": "rq", "framework": picoc_versions.DEFAULT_MARCO}
 DEFAULT_ON = {"encabezado", "contexto", "problema", "justificacion", "objetivo-rsl", "organizacion"}
 
 DEFAULT_SHADOW = """\
 # Configuración técnica del paper; normalmente no se edita.
-# Para activar, congelar o apagar secciones edita paper.yml.
+# Para activar, congelar o apagar secciones edita config.yml (en la carpeta del tema).
 #   title: encabezado que usa la skill · group: capítulo · depends_on: fuentes que, si cambian, marcan la sección como 'stale'
 #   depends_on especiales: all (todo el paper) · grupos (qué capítulos están on/frozen) · picoc (último picoc/<fecha>-<MARCO>/picoc.md)
 #   derived: se reconstruye sola (Referencias sale de las citas del texto)
@@ -108,7 +109,7 @@ HUMAN_HEADER = """\
 #   on       -> revisar y mejorar: se conserva la base y se corrige / pule
 #   rewrite  -> reescribir: se replantea desde cero a partir de las fuentes
 #   off      -> inactivo: no se genera ni aparece
-# Detalle técnico (títulos, dependencias): paper.shadow.yml · Estado interno: paper.state.jsonc (no editar)
+# Detalle técnico (títulos, dependencias): paper/paper.shadow.yml · Estado interno: paper/paper.state.jsonc (no editar)
 
 formato:
   idioma: {idioma}              # idioma del paper: es | en | pt | fr | de (cualquier código ISO 639-1)
@@ -121,15 +122,17 @@ formato:
 
 STATE_HEADER = """\
 // NO EDITAR A MANO. Lo gestiona scripts/paper-manifest.py (--update / --new-version).
-// Para activar, congelar o apagar secciones, edita paper.yml.
+// Para activar, congelar o apagar secciones, edita config.yml (en la carpeta del tema).
 """
 
 
 def render_human(fmt: dict, shadow_sections: list[dict], states: dict[str, str]) -> str:
     inv = {k: {iv: hv for hv, iv in (m or {}).items()} for k, (_, m) in FORMATO.items()}
+    fmt = {**DEFAULT_FMT, **{k: v for k, v in (fmt if isinstance(fmt, dict) else {}).items() if v}}
     human_fmt = {}
     for hk, (ik, m) in FORMATO.items():
-        v = fmt.get(ik) or (picoc_versions.DEFAULT_MARCO if hk == "marco" else None)
+        v = fmt[ik]
+        v = [v] if hk == "resumen" and isinstance(v, str) else v
         human_fmt[hk] = ", ".join(v) if hk == "resumen" else inv[hk].get(v, v)
     out = [HUMAN_HEADER.format(**human_fmt).rstrip("\n")]
     for gid, label in GROUPS:
@@ -145,8 +148,7 @@ def render_human(fmt: dict, shadow_sections: list[dict], states: dict[str, str])
 
 def default_human() -> str:
     shadow = yaml.safe_load(DEFAULT_SHADOW)
-    fmt = {"language": "es", "numbering": "roman", "citation": "apa7", "abstract": ["en", "es"], "results_by": "rq", "framework": picoc_versions.DEFAULT_MARCO}
-    return render_human(fmt, shadow["sections"], {i: "on" for i in DEFAULT_ON})
+    return render_human(DEFAULT_FMT, shadow["sections"], {i: "on" for i in DEFAULT_ON})
 
 
 def sha(data: bytes) -> str:
@@ -161,7 +163,8 @@ class Paper:
     def __init__(self, theme: Path):
         self.theme = theme
         self.dir = theme / "paper"
-        self.yml_path = self.dir / "paper.yml"
+        self.yml_path = theme / picoc_versions.CONFIG
+        self.legacy_yml_path = theme / picoc_versions.LEGACY_CONFIG
         self.shadow_path = self.dir / "paper.shadow.yml"
         self.state_path = self.dir / "paper.state.jsonc"
         self.legacy_state_path = self.dir / "paper.state.json"
@@ -184,6 +187,8 @@ class Paper:
         return data
 
     def load(self) -> None:
+        if not self.yml_path.exists() and self.legacy_yml_path.exists():
+            raise Fail(f"la configuración sigue en {self.rel(self.legacy_yml_path)}; ahora va en {self.rel(self.yml_path)}", "muévela con: pnpm -s paper:status <tema> --migrate")
         if not self.yml_path.exists():
             raise Fail(f"no existe {self.rel(self.yml_path)}", "crea el paper con: pnpm -s paper:status <tema> --init")
         human = self.read_yaml(self.yml_path)
@@ -248,13 +253,13 @@ class Paper:
         if errors:
             for e in errors:
                 print(f"  - {e}")
-            raise Fail(f"{self.rel(self.yml_path)} tiene {len(errors)} valor(es) inválido(s) (ver detalle arriba)", "corrígelos en paper.yml")
+            raise Fail(f"{self.rel(self.yml_path)} tiene {len(errors)} valor(es) inválido(s) (ver detalle arriba)", "corrígelos en config.yml")
         for sec in self.sections:
             if sec.get("derived"):
                 sec["enabled"], sec["frozen"] = True, False
                 continue
             if sec["id"] not in states:
-                print(f"WARN: '{sec['id']}' no está en paper.yml; se trata como off")
+                print(f"WARN: '{sec['id']}' no está en config.yml; se trata como off")
             sec["estado"] = states.get(sec["id"], "off")
             sec["enabled"], sec["frozen"] = STATES.get(sec["estado"], (False, False))
         self.state = self.read_state()
@@ -367,16 +372,18 @@ def next_step(p: Paper, c: dict | None = None) -> str:
     if c is None:
         return "rsl-make-paper"
     if not c["improve"] and not c["rewrite"]:
-        return "pon en on o rewrite las secciones a trabajar en paper/paper.yml"
+        return "pon en on o rewrite las secciones a trabajar en config.yml"
     vstate = p.state["versions"].get(c["version"], {}) if c["version"] else {}
     if vstate.get("borrador") and not vstate.get("polish"):
         return "rsl-polish-paper"
     if vstate.get("polish"):
-        return "congela en paper.yml las secciones validadas, o rsl-make-paper para una versión nueva"
+        return "congela en config.yml las secciones validadas, o rsl-make-paper para una versión nueva"
     return "rsl-make-paper"
 
 
 def cmd_init(p: Paper) -> int:
+    if not p.yml_path.exists() and p.legacy_yml_path.exists():
+        raise Fail(f"la configuración sigue en {p.rel(p.legacy_yml_path)}; ahora va en {p.rel(p.yml_path)}", "muévela con: pnpm -s paper:status <tema> --migrate (no --init)")
     p.dir.mkdir(parents=True, exist_ok=True)
     made, kept = [], []
     for path, content in ((p.shadow_path, DEFAULT_SHADOW), (p.yml_path, default_human())):
@@ -390,6 +397,13 @@ def cmd_init(p: Paper) -> int:
 
 
 def cmd_migrate(p: Paper) -> int:
+    moved = False
+    if p.legacy_yml_path.exists():
+        if p.yml_path.exists():
+            raise Fail(f"hay dos configuraciones: {p.rel(p.yml_path)} y {p.rel(p.legacy_yml_path)}", f"quédate con {p.rel(p.yml_path)} y borra {p.rel(p.legacy_yml_path)}")
+        p.legacy_yml_path.replace(p.yml_path)
+        print(f"movido {p.rel(p.legacy_yml_path)} -> {p.rel(p.yml_path)}")
+        moved = True
     if not p.yml_path.exists():
         raise Fail(f"no existe {p.rel(p.yml_path)}", "crea el paper con --init")
     old = p.read_yaml(p.yml_path)
@@ -398,7 +412,7 @@ def cmd_migrate(p: Paper) -> int:
         states = {}
         for s in old["sections"]:
             if not isinstance(s, dict) or "id" not in s:
-                raise Fail("paper.yml antiguo con una sección sin id", "corrígelo a mano antes de migrar")
+                raise Fail("config.yml antiguo con una sección sin id", "corrígelo a mano antes de migrar")
             if s.get("derived"):
                 continue
             sid = rename.get(s["id"], s["id"])
@@ -421,7 +435,8 @@ def cmd_migrate(p: Paper) -> int:
     c = report(p)
     if c["errors"]:
         return frozen_error(c)
-    return ok("paper.yml migrado al formato nuevo" if migrated else "paper.yml ya estaba en el formato nuevo; no se cambió nada", next_step(p, c))
+    done = [x for x, y in ((f"{picoc_versions.LEGACY_CONFIG} movido a {p.yml_path.name}", moved), (f"{p.yml_path.name} convertido al formato nuevo", migrated)) if y]
+    return ok(" y ".join(done) if done else f"{p.yml_path.name} ya estaba al día; no se cambió nada", next_step(p, c))
 
 
 def cmd_new_version(p: Paper) -> int:
@@ -432,7 +447,7 @@ def cmd_new_version(p: Paper) -> int:
         return frozen_error(c)
     if not c["improve"] and not c["rewrite"]:
         report(p)
-        return error("nada que generar: ninguna sección está en on o rewrite (no se creó versión)", "pon en on o rewrite las secciones a trabajar en paper/paper.yml")
+        return error("nada que generar: ninguna sección está en on o rewrite (no se creó versión)", "pon en on o rewrite las secciones a trabajar en config.yml")
     prev = p.latest()
     today = dt.date.today().isoformat()
     name, n = today, 1
@@ -492,7 +507,7 @@ def cmd_update(p: Paper, stage: str) -> int:
 def frozen_error(c: dict) -> int:
     for e in c["errors"]:
         print(f"  - {e}")
-    return error(f"{len(c['errors'])} sección(es) frozen fueron editadas", "restaura su texto (git checkout) o cambia su estado a on en paper.yml")
+    return error(f"{len(c['errors'])} sección(es) frozen fueron editadas", "restaura su texto (git checkout) o cambia su estado a on en config.yml")
 
 
 def classify(p: Paper) -> dict:
@@ -650,7 +665,7 @@ def cmd_cites(p: Paper, target: str | None) -> int:
 
 def cmd_picoc(p: Paper) -> int:
     marco, f, state = picoc_versions.status(p.theme)
-    print(f"marco: {marco} ({'paper.yml' if p.yml_path.exists() else 'por defecto, sin paper.yml'})")
+    print(f"marco: {marco} ({p.yml_path.name if p.yml_path.exists() else f'por defecto, sin {p.yml_path.name}'})")
     print(f"último: {p.rel(f) if f else '—'}")
     if state != "OK":
         return error(f"picoc {state}: el marco configurado es {marco} y el último es {p.rel(f) if f else 'ninguno'}", f"corre rsl-picoc (siguiente versión: {p.rel(picoc_versions.next_dir(p.theme, marco))}/)")
