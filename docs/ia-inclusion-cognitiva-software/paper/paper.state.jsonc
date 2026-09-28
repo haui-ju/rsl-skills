@@ -51,7 +51,7 @@
     "objetivo-rsl": {
       "content_hash": {
         "borrador": "16879d667612",
-        "polish": "7daea54cfe1a"
+        "polish": "0eb6f235d535"
       },
       "version": "2026-09-28-4",
       "sources_hash": {
@@ -104,7 +104,7 @@
     "ecuacion-busqueda": {
       "content_hash": {
         "borrador": "57aa794bbbf7",
-        "polish": "087c12dbade1"
+        "polish": "526a84b0d116"
       },
       "version": "2026-09-28-4",
       "sources_hash": {
@@ -115,7 +115,7 @@
     "criterios-seleccion": {
       "content_hash": {
         "borrador": "e68857e11eb5",
-        "polish": "1e1070de2102"
+        "polish": "87f254a1220c"
       },
       "version": "2026-09-28-4",
       "sources_hash": {
@@ -127,7 +127,7 @@
     "seleccion-prisma": {
       "content_hash": {
         "borrador": "cb044dfdb952",
-        "polish": "c903c12166a7"
+        "polish": "4846bae4cd7d"
       },
       "version": "2026-09-28-4",
       "sources_hash": {

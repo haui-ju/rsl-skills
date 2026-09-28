@@ -2,7 +2,7 @@
 
 ## 2026-09-28 · polish (versión nueva; base de texto: 2026-09-28-2)
 
-**Motivo:** el usuario rechazó la versión 3 por larga, redundante y mal conectada: la Metodología abría con «Los objetivos anteriores» y la cita del marco PICOC no decía qué aportaban los autores. Consideró mejor la versión 2. Esta versión parte del texto de la 2 y aplica solo cambios mínimos, que es lo que significa el estado `on`.
+**Motivo:** la versión 3 quedó larga, redundante y mal conectada: la Metodología abría con «Los objetivos anteriores» y la cita del marco PICOC no decía qué aportaban los autores. La versión 2 estaba mejor escrita, aunque los agentes habían dado PASS a la 3 porque comprobaban reglas y no comparaban con el texto anterior. Esta versión parte del texto de la 2 y aplica solo cambios mínimos, que es lo que significa el estado `on`.
 **Secciones trabajadas (on):** objetivo-rsl, apertura de II, marco-pico, palabras-clave, ecuacion-busqueda, criterios-seleccion, seleccion-prisma.
 **Frozen sin cambios:** encabezado, contexto, problema, justificacion, organizacion.
 **Agentes:** critico-rsl (Sustento), defensor-rsl, impacto-social-rsl, redaccion-rsl (Hilo; dos pasadas), citas-rsl (dos pasadas).
@@ -21,7 +21,7 @@
 | Tema | Propuesta | Decisión |
 |---|---|---|
 | Apertura de la Metodología | Usuario: «Los objetivos anteriores» es un mal inicio | Empieza por el método seguido (Kitchenham y Charters, 2007) y el porqué del protocolo previo, con cita (pp. vi, 12). |
-| Párrafo PICOC | Usuario: la versión 2 era clara | Texto de la versión 2 sin cambios, salvo la página (pp. 10–11), porque el esquema clínico se describe en la p. 10. |
+| Párrafo PICOC | La versión 2 lo explicaba con claridad | Texto de la versión 2 sin cambios, salvo la página (pp. 10–11), porque el esquema clínico se describe en la p. 10. |
 | «El lector» (E) | Regla R1 | «decisiones sucesivas que deben quedar documentadas», con cita pp. 19–20. |
 | Citas de método | Sustento (crítico) | Dentro de la oración que sostienen: p. 14 (B), p. 16 (C), p. 18 con «como recomiendan» (D). Sin oraciones nuevas. |
 | Redundancias | Defensor, crítico | Eliminadas: «Los registros no pertinentes… se descartan después en el cribado» (C); «sin ajustar el criterio…» (D); la cláusula que repetía el vínculo RQ–objetivo (A); «fija… fijadas». |
@@ -39,6 +39,10 @@
 - CI1 (2023) sin fuente; es literal del picoc y solo se corrige con rsl-picoc.
 - CE4 resumido sin robots sociales ni tutores inteligentes.
 - Título (R6) e Introducción (más breve): secciones frozen.
+
+### Comparación con la versión 2 (redaccion-rsl, tabla Comparación)
+
+Cada párrafo cambiado se comparó con su versión 2. Leen mejor y se quedan como en la v4: la apertura del Objetivo, la apertura de II, el párrafo de PICOC (solo cambia la página), el párrafo de las Tablas I y II y el de palabras clave. Leían peor y se reescribieron conservando su arreglo: el objetivo 1 («neurodivergentes» repetido), las salvaguardas («fija en el protocolo salvaguardas» forzado), campos y filtros (vuelve la oración de la v2 que se había quitado), criterios (vuelve «sin ajustar el criterio a lo que se iba encontrando», que explica por qué se fijan antes) y PRISMA (vuelve la cola de la v2, con la concordancia corregida).
 
 ### Redacción y citas
 

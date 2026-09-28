@@ -1014,6 +1014,8 @@ def _(sb):
     sb.check("### R8" in playbook, "playbooks/redaccion-academica.md no tiene la regla R8 de sustento con citas")
     agent = (ROOT / ".cursor" / "agents" / "redaccion-rsl.md").read_text(encoding="utf-8")
     sb.check("### Hilo" in agent, "redaccion-rsl no devuelve la tabla Hilo (intención y enlace de cada párrafo)")
+    sb.check("### Comparación" in agent, "redaccion-rsl no compara cada párrafo cambiado con la versión anterior (tabla Comparación)")
+    sb.check("Comparación" in polish, "rsl-polish-paper no pide a redaccion-rsl comparar con la versión anterior")
     cat = ROOT / "global" / "bibliography" / "bibliography.md"
     sb.check(cat.exists(), "falta el catálogo global/bibliography/bibliography.md")
     if cat.exists():

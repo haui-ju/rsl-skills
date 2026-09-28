@@ -17,6 +17,8 @@ Objetivo: prosa final académica, natural y limpia, que un docente lea de corrid
 
 ## Reglas
 
+**Principio:** las reglas son un mínimo, no la meta. Un texto puede pasar el lint y la tabla Hilo y leer peor. En cada pulido, un cambio entra solo si el párrafo queda mejor escrito que antes (más claro, fluido o breve) o si corrige un error real; ante la duda, se conserva el texto anterior. `redaccion-rsl` lo decide en su tabla Comparación.
+
 ### R1 — Texto final, no nota de trabajo (FAIL)
 
 - Prohibidas las marcas editoriales: `[citar]`, `(citar)`, `TODO`, `PENDIENTE`, `TBD`, `???`. Si una cita no se puede verificar, se reformula o se quita la afirmación y se avisa en el chat; nunca se entrega la marca.
