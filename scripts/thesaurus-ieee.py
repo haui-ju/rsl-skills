@@ -21,6 +21,9 @@ import unicodedata
 from datetime import datetime, timezone
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from rsl_out import Fail, error, ok, run  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 THES_DIR = ROOT / "global" / "thesaurus"
 PDF = THES_DIR / "IEEE.pdf"
@@ -265,18 +268,28 @@ def build_graph(data: dict) -> dict:
     return {"nodes": G.number_of_nodes(), "edges": G.number_of_edges(), "communities": len(communities), "graph": str(graph_path.relative_to(ROOT))}
 
 
-def lookup(q: str) -> None:
-    data = json.loads(JSON_OUT.read_text(encoding="utf-8"))
-    terms = data["terms"]
+def load_terms() -> dict:
+    if not JSON_OUT.exists():
+        raise Fail(f"falta {JSON_OUT.relative_to(ROOT)}", "genera el tesauro con: Usa rsl-bootstrap")
+    try:
+        return json.loads(JSON_OUT.read_text(encoding="utf-8"))["terms"]
+    except (json.JSONDecodeError, KeyError, UnicodeDecodeError):
+        raise Fail(f"{JSON_OUT.relative_to(ROOT)} está corrupto", "regenéralo con: pnpm graphify:thesaurus:refresh")
+
+
+def lookup(q: str) -> int:
+    terms = load_terms()
+    if not q.strip():
+        raise Fail("término vacío", code=2)
     hits = [terms[key(q)]] if key(q) in terms else [e for k, e in terms.items() if key(q) in k][:15]
     if not hits:
-        print(f"no IEEE term for: {q}")
-        return
+        return ok(f"'{q}' no tiene descriptor IEEE (término libre)")
     for e in hits:
         print(f"\n{e['term']}  [{'preferred' if e['preferred'] else 'non-preferred'} · p.{e['page']}]")
         for r in RELS:
             if e[r]:
                 print(f"  {r}: {' | '.join(e[r])}")
+    return ok(f"{len(hits)} descriptor(es) IEEE para '{q}'")
 
 
 def resolve(q: str, terms: dict) -> dict | None:
@@ -305,9 +318,13 @@ def near(q: str, terms: dict, n: int = 4) -> list[str]:
     return [terms[t]["term"] for t in ranked][:n]
 
 
-def check(queries: list[str]) -> None:
+def check(queries: list[str]) -> int:
     """Tabla Markdown lista para PICOC/keywords: estado IEEE de cada término."""
-    terms = json.loads(JSON_OUT.read_text(encoding="utf-8"))["terms"]
+    terms = load_terms()
+    queries = [q.strip() for q in queries]
+    if not all(queries):
+        raise Fail("hay términos vacíos en thesaurus:check", code=2)
+    free = 0
     cell = lambda xs, lim=6: " · ".join(xs[:lim]) + (" …" if len(xs) > lim else "") if xs else "—"
     print("| Término consultado | Estado | Descriptor IEEE | UF (sinónimos) | NT (específicos) | BT | Pág. | Cercanos (verificar, no equivalentes) |")
     print("|---|---|---|---|---|---|---|---|")
@@ -315,6 +332,7 @@ def check(queries: list[str]) -> None:
         e = resolve(q, terms)
         if e is None:
             print(f"| {q} | LIBRE (sin descriptor IEEE) | — | — | — | — | — | {cell(near(q, terms))} |")
+            free += 1
             continue
         status = "IEEE preferido"
         if not e["preferred"]:
@@ -324,28 +342,33 @@ def check(queries: list[str]) -> None:
                 e = pref[0]
         uf = [t for t in e["UF"] if key(t) != key(q)]
         print(f"| {q} | {status} | {e['term']} | {cell(uf)} | {cell(e['NT'])} | {cell(e['BT'], 3)} | p.{e['page']} | — |")
+    return ok(f"{len(queries)} término(s) revisados: {len(queries) - free} con descriptor IEEE y {free} libre(s)")
 
 
-def main() -> None:
+def main(argv: list[str]) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--parse-only", action="store_true")
     ap.add_argument("--lookup")
     ap.add_argument("--check", nargs="+", metavar="TERM")
-    a = ap.parse_args()
-    if a.lookup:
-        lookup(a.lookup)
-        return
+
+    def bad_args(msg: str):
+        raise Fail(f"argumentos inválidos ({msg})", 'usa --check "t1" "t2" … o --lookup "t"', 2)
+
+    ap.error = bad_args
+    a = ap.parse_args(argv)
+    if a.lookup is not None:
+        return lookup(a.lookup)
     if a.check:
-        check(a.check)
-        return
+        return check(a.check)
     if not PDF.exists():
-        sys.exit(f"missing {PDF}")
+        raise Fail(f"falta {PDF.relative_to(ROOT)}", "coloca el IEEE Thesaurus PDF ahí y vuelve a correr")
     data = parse()
     JSON_OUT.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
     print(json.dumps({"parse": data["stats"], "json": str(JSON_OUT.relative_to(ROOT))}, ensure_ascii=False))
     if not a.parse_only:
         print(json.dumps({"build": build_graph(data)}, ensure_ascii=False))
+    return ok(f"tesauro IEEE parseado ({data['stats'].get('terms', '?')} términos)")
 
 
 if __name__ == "__main__":
-    main()
+    run(main)

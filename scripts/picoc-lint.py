@@ -25,6 +25,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import picoc_versions as pv  # noqa: E402
+from rsl_out import Fail, error, ok, run  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 THES_JSON = ROOT / "global" / "thesaurus" / "ieee-thesaurus.json"
@@ -100,13 +101,13 @@ def query_blocks(q: str) -> list[list[str]]:
     return blocks
 
 
-def ficha_question(theme: Path) -> tuple[str | None, Path | None]:
+def ficha_questions(theme: Path) -> tuple[list[str], Path | None]:
     for name in ("informe-polish.md", "informe.md"):
         f = theme / name
         if f.is_file():
-            body = find(sections(f.read_text(encoding="utf-8"), "###"), "1.2")
-            return question(body), f
-    return None, None
+            body = find(sections(f.read_text(encoding="utf-8-sig"), "###"), "1.2") or ""
+            return [norm_text(q) for q in QUESTION.findall(body)], f
+    return [], None
 
 
 def paper_question(theme: Path) -> tuple[str | None, Path | None]:
@@ -125,7 +126,12 @@ def paper_question(theme: Path) -> tuple[str | None, Path | None]:
 
 
 def main(path: Path) -> int:
-    text = path.read_text(encoding="utf-8")
+    try:
+        text = path.read_text(encoding="utf-8-sig")
+    except UnicodeDecodeError:
+        raise Fail(f"{rel(path)} no está en UTF-8", "guárdalo como UTF-8")
+    if not text.strip():
+        raise Fail(f"{rel(path)} está vacío", "regenera el marco con rsl-picoc")
     secs = sections(text)
     theme = pv.theme_of(path.resolve())
     errs: list[str] = []
@@ -133,15 +139,13 @@ def main(path: Path) -> int:
 
     m = re.search(r"\*\*Marco:\*\*\s*([A-Za-z]+)\b", text)
     if not m:
-        print("FAIL: falta '**Marco:** <letras>' (p. ej. PICOCT, PIO)")
-        return 1
+        raise Fail(f"{rel(path)} no declara '**Marco:** <letras>' (p. ej. PICOCT, PIO)", "regenera el marco con rsl-picoc")
     try:
         marco = pv.marco_label(m.group(1))
         comps = pv.parse_marco(marco)
-        configured = pv.configured_marco(theme)
     except pv.MarcoError as e:
-        print(f"ERROR {e}")
-        return 1
+        raise Fail(f"**Marco:** de {rel(path)}: {e}", "regenera el marco con rsl-picoc")
+    configured = pv.configured_marco(theme)
     folder = pv.dir_marco(path)
     if folder is None:
         errs.append("MARCO: el archivo debe estar en picoc/<AAAA-MM-DD>[-n]-<MARCO>/picoc.md")
@@ -158,10 +162,14 @@ def main(path: Path) -> int:
     if not general:
         errs.append("PG: falta la pregunta general (¿…?)")
     else:
-        fq, ff = ficha_question(theme)
-        if fq is None:
+        fqs, ff = ficha_questions(theme)
+        if ff is None:
             warns.append("PG: no hay ficha (informe-polish.md / informe.md § 1.2) para comparar la pregunta general")
-        elif fq != general:
+        elif not fqs:
+            errs.append(f"PG: la § 1.2 de {rel(ff)} no tiene una pregunta ¿…?")
+        elif len(fqs) > 1:
+            errs.append(f"PG: la § 1.2 de {rel(ff)} tiene {len(fqs)} preguntas; debe haber una sola pregunta general")
+        elif fqs[0] != general:
             errs.append(f"PG: la pregunta general difiere de la § 1.2 de {rel(ff)} (debe copiarse literal)")
         pq, pf = paper_question(theme)
         if pq is not None and pq != general:
@@ -210,6 +218,8 @@ def main(path: Path) -> int:
                 errs.append("R2: T debe indicar el rango de años (p. ej. `2020–2026`)")
             else:
                 years = (int(ym.group(1)), int(ym.group(2)))
+                if years[0] > years[1]:
+                    errs.append(f"R2: T tiene los años invertidos ({years[0]}–{years[1]}); va del más antiguo al más reciente")
             continue
         terms = [norm_term(t) for t in re.findall(r"`([^`]+)`", kw)]
         if not terms:
@@ -241,12 +251,12 @@ def main(path: Path) -> int:
                 )
         if years:
             a, b = years
-            ok = {
+            has_year = {
                 "Scopus": re.search(rf"PUBYEAR\s*>\s*{a - 1}\b", q) and re.search(rf"PUBYEAR\s*<\s*{b + 1}\b", q),
                 "Web of Science": re.search(rf"PY\s*=\s*\(\s*{a}\s*-\s*{b}\s*\)", q),
                 "IEEE Xplore": re.search(rf"{a}\s*[–-]\s*{b}", body or ""),
             }[db]
-            if not ok:
+            if not has_year:
                 errs.append(f"R2 [{db}]: falta el filtro de año {a}–{b} de T")
         elif re.search(r"PUBYEAR|\bPY\s*=", q):
             errs.append(f"R2 [{db}]: filtro de año sin componente T en {marco}")
@@ -300,14 +310,11 @@ def main(path: Path) -> int:
     for w in warns:
         print(f"WARN {w}")
     if errs:
-        print(f"FAIL {rel(path)} ({marco})")
         for e in errs:
             print(f"  - {e}")
-        return 1
+        return error(f"el picoc {rel(path)} ({marco}) tiene {len(errs)} error(es) (ver detalle arriba)", "corrígelo regenerando una versión con rsl-picoc")
     total = sum(len(t) for _, t in rows_terms)
-    print(f"PASS {rel(path)} ({marco}) · {len(rows_terms)} bloques · {total} términos · {len(rq_rows)} RQ · T {years[0]}–{years[1]} · 3 bases" if years
-          else f"PASS {rel(path)} ({marco}) · {len(rows_terms)} bloques · {total} términos · {len(rq_rows)} RQ · 3 bases")
-    return 0
+    return ok(f"picoc {rel(path)} ({marco}) válido: {len(rows_terms)} bloques, {total} términos, {len(rq_rows)} RQ" + (f", T {years[0]}–{years[1]}" if years else "") + ", 3 bases")
 
 
 def resolve(arg: str) -> Path:
@@ -319,34 +326,46 @@ def resolve(arg: str) -> Path:
         return p / pv.PICOC_FILE
     f = pv.latest_file(p)
     if f is None:
-        sys.exit(f"FAIL: {arg} no tiene picoc/<fecha>-<MARCO>/picoc.md (correr rsl-picoc)")
+        raise Fail(f"{arg} no tiene picoc/<fecha>-<MARCO>/picoc.md", f"créalo con: Usa rsl-picoc sobre {arg.rstrip('/')}/")
     return f
 
 
 def latest(arg: str) -> int:
     theme = Path(arg)
     theme = theme if theme.is_absolute() else Path.cwd() / theme
-    try:
-        marco, f, state = pv.status(theme)
-    except pv.MarcoError as e:
-        print(f"ERROR formato.marco: {e}")
-        return 1
+    if not theme.is_dir():
+        raise Fail(f"{arg} no es la carpeta de un tema", "usa docs/<slug>")
+    marco, f, state = pv.status(theme)
     src = "paper.yml" if (theme / "paper" / "paper.yml").exists() else "por defecto, sin paper.yml"
+    nxt = f"{rel(pv.next_dir(theme, marco))}/"
     print(f"marco: {marco} ({src})")
     print(f"último: {rel(f) if f else '—'}")
-    print(f"estado: {state}" + ("" if state == "OK" else " → correr rsl-picoc"))
-    print(f"siguiente versión: {rel(pv.next_dir(theme, marco))}/")
-    return 0 if state == "OK" else 1
+    print(f"estado: {state}")
+    print(f"siguiente versión: {nxt}")
+    if state != "OK":
+        what = "no hay picoc" if state == "FALTA" else f"el último picoc no es {marco} (cambió formato.marco)"
+        return error(f"picoc {state}: {what}", f"corre rsl-picoc; la versión nueva va en {nxt}")
+    return ok(f"marco {marco} al día ({rel(f)})")
+
+
+def cli(args: list[str]) -> int:
+    try:
+        return dispatch(args)
+    except pv.MarcoError as e:
+        raise Fail(str(e), e.fix)
+
+
+def dispatch(args: list[str]) -> int:
+    if len(args) == 2 and args[0] == "--latest":
+        return latest(args[1])
+    if len(args) != 1 or args[0].startswith("-"):
+        print(__doc__)
+        return error("uso: picoc:lint <docs/slug | picoc.md> · picoc:latest <docs/slug>", code=2)
+    target = resolve(args[0])
+    if not target.is_file():
+        raise Fail(f"no existe {args[0]}", "indica docs/<slug> o un picoc.md")
+    return main(target)
 
 
 if __name__ == "__main__":
-    args = sys.argv[1:]
-    if len(args) == 2 and args[0] == "--latest":
-        sys.exit(latest(args[1]))
-    if len(args) != 1 or args[0].startswith("-"):
-        print(__doc__)
-        sys.exit(2)
-    target = resolve(args[0])
-    if not target.is_file():
-        sys.exit(f"FAIL: no existe {args[0]}")
-    sys.exit(main(target))
+    run(cli)

@@ -33,7 +33,7 @@ Writing: `playbooks/redaccion-academica.md` (Spanish académico-profesional). Te
 5. Write `informe.md` with the exact 7 points below (section 4 ≤ 300 words citing section 3; section 7 = short title; section 2 = only the picoc link).
 6. Run **`rsl-picoc`** (full mode; general question = the new § 1.2). Missing thesaurus → ask for `Usa rsl-bootstrap`.
 7. `pnpm -s redaccion:lint docs/<slug>/informe.md` (0 FAIL) and `pnpm -s paper:status docs/<slug> --cites docs/<slug>/informe.md` (PASS); fix and repeat.
-8. Chat: paths, picoc lint result, SLRs found, pending queries, PDFs present/missing. Next steps (do not run them; no Graphify refresh here): `Usa graphify-theme sobre docs/<slug>/` then `Usa rsl-polish-report sobre docs/<slug>/informe.md`.
+8. Chat: SLRs found, pending queries and PDFs present or missing (do not run the next skills; no Graphify refresh here), then the Cierre line.
 
 ## File template (`informe.md`)
 
@@ -87,6 +87,13 @@ Las palabras clave, el marco <MARCO> (<componentes en palabras>) y las queries s
 <!-- Título breve (≤ 20 palabras, sin subtítulo en cascada); será la base del título del paper. -->
 ...
 ```
+
+## Cierre
+
+The last message of the skill is exactly one line:
+
+- Stop at the first failure (any script returns `ERROR:`, `rsl-picoc` ends in ERROR, or `redaccion:lint` / `--cites` keep failing): `ERROR: <paso y script que falló, con su mensaje>. <cómo arreglarlo>`. Do not continue with later steps.
+- Everything went well: `OK: informe docs/<slug>/informe.md con <n> revisiones y marco <MARCO> en picoc/<carpeta>/. Próximo paso: Usa graphify-theme sobre docs/<slug>/ y luego Usa rsl-polish-report sobre docs/<slug>/informe.md`.
 
 ## Forbidden
 

@@ -67,7 +67,7 @@ Use the full template below. **Never skip** `## Tema final propuesto` or `## Dia
 
 **Mermaid (required):** after the global verdict, include a **flowchart** of how the agents argued (ronda 1 → objeciones/preguntas → ronda 2 → consenso). Node IDs camelCase without spaces; edge labels = the real short objections or questions of this run, quoted if they have special characters.
 
-In chat: path + one-line global verdict + pointer to Tema final.
+In chat: the Tema final in two lines, then the Cierre line.
 
 ## Output template (`topic.md`)
 
@@ -184,6 +184,13 @@ flowchart TD
 ### Listo para siguiente skill
 `rsl-make-report` sobre `docs/[titulo-breve]/`
 ```
+
+## Cierre
+
+The last message of the skill is exactly one line:
+
+- Stop at the first failure (no topic was given, or an agent could not return evidence): `ERROR: <qué faltó: tema, evidencia o consenso>. <qué debe aportar el usuario>`. Do not continue with later steps.
+- Everything went well: `OK: panel cerrado con veredicto <GO | GO_con_cambios | NO_GO>; tema final en docs/<slug>/topic.md. Próximo paso: Usa rsl-make-report sobre docs/<slug>/`.
 
 ## Forbidden
 

@@ -49,7 +49,7 @@ Invoke: `Usa rsl-make-paper sobre docs/<slug>/`.
 7. `citas-rsl` on the worked sections only: `pnpm -s paper:status docs/<slug> --cites paper/<fecha>/paper-borrador.md` + its fixes until PASS or justified `PENDIENTE`.
 8. `pnpm -s redaccion:lint docs/<slug>/paper/<fecha>/paper-borrador.md` → 0 FAIL (WARN allowed in the draft).
 9. `pnpm -s paper:status docs/<slug> --update borrador`.
-10. Chat: version path; improved / rewritten / copied / stale / blocked; citas result; next `Usa rsl-polish-paper sobre docs/<slug>/`.
+10. Chat: copied sections and the citas result, then the Cierre line.
 
 ## Writing
 
@@ -98,6 +98,13 @@ Language of `formato.idioma` (default Spanish académico-profesional, headings i
 ## Referencias
 <!-- /paper:section -->
 ```
+
+## Cierre
+
+The last message of the skill is exactly one line:
+
+- Stop at the first failure (any `paper:status` step returns `ERROR:` (including `nada que generar`), `--cites` stays failing or `redaccion:lint` has FAIL): `ERROR: <mensaje del script>. <cómo arreglarlo>`. Do not continue with later steps.
+- Everything went well: `OK: borrador paper/<versión>/paper-borrador.md (mejoradas: …; reescritas: …; stale: …; blocked: …). Próximo paso: Usa rsl-polish-paper sobre docs/<slug>/`.
 
 ## Forbidden
 

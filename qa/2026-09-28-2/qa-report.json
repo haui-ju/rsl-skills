@@ -1,0 +1,488 @@
+{
+  "date": "2026-09-28",
+  "total": 60,
+  "failed": 0,
+  "proposed": [],
+  "cases": [
+    {
+      "id": "P01",
+      "group": "positivo",
+      "desc": "flujo completo desde cero: init, picoc, versión, borrador, polish y segunda versión",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "P02",
+      "group": "positivo",
+      "desc": "cambio de marco a PIO con un picoc PIO válido",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "P03",
+      "group": "positivo",
+      "desc": "modo ligero: la § 1.2 cambia y una versión nueva con la pregunta nueva vuelve a pasar",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "P04",
+      "group": "positivo",
+      "desc": "thesaurus:check por pnpm (cableado de package.json)",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "P05",
+      "group": "positivo",
+      "desc": "lints de la ficha limpia y citas APA e IEEE correctas",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "P06",
+      "group": "positivo",
+      "desc": "pnpm con los scripts del paquete: paper:status, picoc:latest, picoc:lint",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M01",
+      "group": "orden",
+      "desc": "--update borrador sin versiones",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M02",
+      "group": "orden",
+      "desc": "--update polish cuando la versión no tiene paper-polish.md",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M03",
+      "group": "orden",
+      "desc": "--cites sin versiones del paper",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M04",
+      "group": "orden",
+      "desc": "picoc:lint antes de rsl-picoc",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M05",
+      "group": "orden",
+      "desc": "picoc:latest en un tema vacío (sin informe ni paper)",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M06",
+      "group": "orden",
+      "desc": "paper:status sin picoc: OK con BLOCKED y próximo paso rsl-picoc",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M07",
+      "group": "orden",
+      "desc": "paper:status sin informe: próximo paso rsl-make-report",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M08",
+      "group": "orden",
+      "desc": "dos --new-version el mismo día",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M09",
+      "group": "orden",
+      "desc": "--new-version con todo frozen/off no crea carpeta",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M10",
+      "group": "orden",
+      "desc": "editar una sección frozen: status, --update y --new-version fallan",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M11",
+      "group": "orden",
+      "desc": "--migrate sobre el formato nuevo no cambia nada",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M12",
+      "group": "orden",
+      "desc": "cambio de marco a mitad del flujo: secciones del marco BLOCKED",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M13",
+      "group": "orden",
+      "desc": "--update borrador cuando solo existe paper-polish.md",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M14",
+      "group": "orden",
+      "desc": "un picoc nuevo el mismo día con otro marco pasa a ser el último",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M15",
+      "group": "orden",
+      "desc": "--init con un paper.yml existente no lo pisa",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D01",
+      "group": "destruir",
+      "desc": "paper.yml con YAML roto",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D02",
+      "group": "destruir",
+      "desc": "paper.yml vacío: todo off, sin romperse",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D03",
+      "group": "destruir",
+      "desc": "paper.yml que es una lista",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D04",
+      "group": "destruir",
+      "desc": "estado de sección desconocido (maybe)",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D05",
+      "group": "destruir",
+      "desc": "estado de sección como lista [on]",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D06",
+      "group": "destruir",
+      "desc": "sección inexistente en paper.yml",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D07",
+      "group": "destruir",
+      "desc": "formato inválido: idioma, citas, numeracion, resumen, clave desconocida",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D08",
+      "group": "destruir",
+      "desc": "formato como texto en vez de bloque",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D09",
+      "group": "destruir",
+      "desc": "paper.state.jsonc corrupto, vacío y con tipos erróneos",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D10",
+      "group": "destruir",
+      "desc": "paper.shadow.yml ausente, roto y con ids repetidos",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D11",
+      "group": "destruir",
+      "desc": "marcadores rotos: sin cerrar, repetidos, anidados, cierre huérfano",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D12",
+      "group": "destruir",
+      "desc": "borrador sin marcadores, vacío, no UTF-8 y con id desconocido",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D13",
+      "group": "destruir",
+      "desc": "ficha sin pregunta en la § 1.2 y con dos preguntas",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D14",
+      "group": "destruir",
+      "desc": "picoc vacío, sin **Marco:**, sin queries, con DOCTYPE y con T invertido",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D15",
+      "group": "destruir",
+      "desc": "carpetas basura en picoc/ y paper/ se ignoran",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D16",
+      "group": "destruir",
+      "desc": "rutas: / final, absoluta, archivo en vez de tema, tema inexistente",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D17",
+      "group": "destruir",
+      "desc": "argumentos inválidos en todos los scripts",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D18",
+      "group": "destruir",
+      "desc": "citas rotas: APA huérfana, IEEE fuera de orden y sin referencia",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D19",
+      "group": "destruir",
+      "desc": "finales de línea CRLF y BOM UTF-8",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D20",
+      "group": "destruir",
+      "desc": "no se pierde nada si una versión del paper desaparece",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D21",
+      "group": "destruir",
+      "desc": "sin permisos de escritura: paper.state.jsonc de solo lectura y paper/ sin escritura (ataques A3, A9)",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D22",
+      "group": "destruir",
+      "desc": "versiones con fecha futura en picoc/ y paper/ (ataque A4)",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D23",
+      "group": "destruir",
+      "desc": "estados con mayúsculas o espacios se aceptan (ataque A5)",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D24",
+      "group": "destruir",
+      "desc": "carpetas de versión -0, -1 y -01 se ignoran y la versión nueva es la última (ataque A8)",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D25",
+      "group": "destruir",
+      "desc": "dos picoc con la misma fecha y número (ataque A11)",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D26",
+      "group": "destruir",
+      "desc": "rutas con espacios y acentos, y tema enlazado con symlink (ataques A1, A6)",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D27",
+      "group": "destruir",
+      "desc": "celda con \\| escapado y ? interna en una RQ (ataque A10)",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D28",
+      "group": "destruir",
+      "desc": "picoc.md convertido en carpeta (ataque A2)",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M16",
+      "group": "orden",
+      "desc": "borrar picoc/ con el paper ya generado: BLOCKED y próximo paso rsl-picoc (ataque A7)",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "K01",
+      "group": "marco",
+      "desc": "variantes válidas del marco: pio, ' PICOCT ', [p, i, o], PICOCTS, PICOS",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "K02",
+      "group": "marco",
+      "desc": "variantes inválidas: PIX, PICCC, 123, vacío, P-I-O, PICoO, solo T",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "K03",
+      "group": "marco",
+      "desc": "picoc con **Marco:** inválido o distinto de su carpeta",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "K04",
+      "group": "marco",
+      "desc": "picoc PIO con filtro de año o con una fila de más",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "S01",
+      "group": "skills",
+      "desc": "cada `pnpm -s X` citado en skills, agentes, playbooks y README existe en package.json",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "S02",
+      "group": "skills",
+      "desc": "rutas global/, playbooks/ y scripts/ citadas existen",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "S03",
+      "group": "skills",
+      "desc": "agentes *-rsl y skills rsl-* citados existen; nombre del frontmatter = carpeta",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "S04",
+      "group": "skills",
+      "desc": "cada skill rsl-* tiene la sección Cierre con el contrato OK/ERROR",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "S05",
+      "group": "skills",
+      "desc": "sin restos de reglas viejas (PICO | PICOC | PICOCT, picoc-polish, mínimos en agentes)",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "S06",
+      "group": "skills",
+      "desc": "README lista todas las skills rsl-*",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    }
+  ]
+}

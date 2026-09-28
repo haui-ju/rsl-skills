@@ -21,6 +21,10 @@ El agente verifica/instala prerrequisitos (node + pnpm, pipx graphifyy, poppler)
 | `rsl-picoc` | Crea una versión nueva del marco de búsqueda con el marco de `paper.yml` (libre: PICO, PIO, PICOC, PICOCT, PICOS…; por defecto PICOCT): tabla por componente 1:1 con las queries, palabras clave IEEE (libres al final), modo completo (debate `critico-rsl` + `defensor-rsl` + `redaccion-rsl`) o ligero (solo actualiza la pregunta general, sin agentes), `picoc:lint` PASS | `docs/[titulo-breve]/picoc/<fecha>-<MARCO>/picoc.md` + `picoc-debate.md` |
 | `rsl-make-paper` | Nueva versión del paper borrador, solo secciones `on` (mejorar) y `rewrite` (reescribir) de `paper.yml` (+ agente `citas-rsl` y `redaccion:lint`) | `docs/[titulo-breve]/paper/<fecha>/paper-borrador.md` |
 | `rsl-polish-paper` | Pule esas secciones (`critico-rsl` + `defensor-rsl`; `impacto-social-rsl` si están Justificación u Objetivo; luego `redaccion-rsl` + `citas-rsl`) → texto limpio + traza de debate | `paper/<fecha>/paper-polish.md` + `paper-debate.md` |
+| `rsl-qa-destroy` | Intenta romper el flujo a propósito (flujo positivo, orden mezclado, entradas destructivas, marco libre, revisión de skills y agentes) en un sandbox de `/tmp`; solo reporta | `qa/<fecha>/qa-report.md` + `qa-report.json` |
+| `rsl-qa-fix` | Arregla los fallos del último reporte, deja cada uno como caso de regresión y repite `qa:destroy` hasta OK | código corregido + `qa/<fecha>/qa-fix.md` |
+
+Todas las skills `rsl-*` terminan con una sola línea: `ERROR: <contexto>` si algo falló, u `OK: <qué se hizo>. Próximo paso: <skill>` si salió bien. Los scripts siguen el mismo contrato (última línea `OK:` o `ERROR:`; código de salida 0 o distinto de 0).
 
 ## Skills Graphify (memoria — **tú** las ejecutas)
 
@@ -110,14 +114,15 @@ En `theme`, el `<slug>` se omite si solo hay un tema; `refresh`/`status` aceptan
 | `thesaurus:check "t1" "t2" …` | Valida varios términos contra IEEE: preferido / no preferido (→ USE) / libre, con sinónimos (UF), específicos (NT) y página. |
 | `thesaurus:lookup "término"` | Ficha completa de un término IEEE (todas sus relaciones y página). |
 | `picoc:latest docs/<slug>` | Marco configurado en `paper.yml` + último `picoc/<fecha>-<MARCO>/picoc.md`: OK, DESFASADO (cambiaste el marco) o FALTA → correr `rsl-picoc`; también imprime la carpeta de la siguiente versión. |
-| `picoc:lint docs/<slug>` | PASS/FAIL del último picoc: marco = `paper.yml`, pregunta general = § 1.2 de la ficha, una fila por componente 1:1 con las queries Scopus/WoS/IEEE Xplore, T = filtro de año, 1 RQ por componente, descriptores IEEE preferidos, libres al final. |
+| `picoc:lint docs/<slug>` | OK/ERROR del último picoc: marco = `paper.yml`, pregunta general = § 1.2 de la ficha, una fila por componente 1:1 con las queries Scopus/WoS/IEEE Xplore, T = filtro de año, 1 RQ por componente, descriptores IEEE preferidos, libres al final. |
 | `redaccion:lint <archivo.md>` | Forma académica de informe o paper: FAIL por marcas pendientes (`[citar]`, TODO…), notas internas (panel, `topic.md`…) o siglas sin definir; avisos por frases largas, notación ×/+ y exceso de siglas. |
-| `paper:status docs/<slug>` | Estado del paper según `paper/paper.yml`: qué se mejora (on) o reescribe (rewrite), stale, blocked; FAIL si se editó a mano una sección frozen. |
+| `paper:status docs/<slug>` | Estado del paper según `paper/paper.yml`: qué se mejora (on) o reescribe (rewrite), stale, blocked; ERROR si se editó a mano una sección frozen; la línea OK indica el próximo paso. |
 | `paper:status docs/<slug> --init` | Crea `paper/paper.yml` y `paper/paper.shadow.yml` por defecto. |
 | `paper:status docs/<slug> --migrate` | Convierte un `paper.yml` del formato antiguo (enabled/frozen) al nuevo. |
 | `paper:status docs/<slug> --new-version` | Crea `paper/<fecha>/` copiando la versión anterior. |
 | `paper:status docs/<slug> --update borrador\|polish` | Registra hashes tras escribir el borrador o el polish. |
 | `paper:status docs/<slug> --cites [archivo]` | Citas en texto vs Referencias (APA 7 o IEEE según `formato.citas`); con `informe-polish.md` compara contra la tabla de la sección 3. |
+| `qa:destroy [--only grupo] [--keep] [--no-report]` | Arnés de `rsl-qa-destroy`: rompe el flujo en un sandbox y escribe `qa/<fecha>/qa-report.md`; nunca toca `docs/`. |
 
 ## Cómo ejecutar
 
@@ -291,7 +296,7 @@ rsl-bootstrap             ← paso 0 (una vez por clon / máquina)
   → rsl-polish-paper        ← paper-polish.md limpio + paper-debate.md
   → marcar frozen en paper.yml lo validado · activar Metodología · (tú: selección PRISMA) · activar Resultados…
 ```
-(y de vez en cuando **`graphify-root`** si cambias skills / `global/`)
+(y de vez en cuando **`graphify-root`** si cambias skills / `global/`; tras tocar scripts o skills: **`rsl-qa-destroy`** → **`rsl-qa-fix`**)
 
 ## Clonar en otra máquina
 

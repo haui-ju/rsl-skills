@@ -29,7 +29,8 @@
     "picoc:lint": "python3 scripts/picoc-lint.py",
     "picoc:latest": "python3 scripts/picoc-lint.py --latest",
     "redaccion:lint": "python3 scripts/redaccion-lint.py",
-    "paper:status": "python3 scripts/paper-manifest.py"
+    "paper:status": "python3 scripts/paper-manifest.py",
+    "qa:destroy": "python3 scripts/qa-destroy.py"
   },
   "engines": {
     "node": ">=18"

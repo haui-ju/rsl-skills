@@ -25,12 +25,28 @@ NAMES = {
     "S": "diseño de estudio",
 }
 DEFAULT_MARCO = "PICOCT"
-PICOC_DIR_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})(?:-(\d+))?-([A-Za-z]+)$")
+PICOC_DIR_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})(?:-([2-9]|[1-9]\d+))?-([A-Za-z]+)$")
 PICOC_FILE = "picoc.md"
 
 
 class MarcoError(ValueError):
-    pass
+    fix = "corrige formato.marco en paper/paper.yml (letras P I C O T S; la segunda C es contexto)"
+
+
+class ConfigError(MarcoError):
+    fix = "corrige la sintaxis de paper/paper.yml"
+
+
+class VersionError(MarcoError):
+    fix = "renombra o borra la carpeta indicada; las versiones las crea rsl-picoc"
+
+
+def version_date(s: str) -> dt.date | None:
+    """Fecha de una carpeta de versión, o None si no es una fecha real."""
+    try:
+        return dt.date.fromisoformat(s)
+    except ValueError:
+        return None
 
 
 def parse_marco(value) -> list[str]:
@@ -45,11 +61,15 @@ def parse_marco(value) -> list[str]:
         comps = []
         for ch in s.upper():
             comps.append("Co" if ch == "C" and "C" in comps else ch)
+    if not comps:
+        raise MarcoError(f"marco '{value}' vacío")
     bad = [c for c in comps if c not in NAMES]
     if bad:
         raise MarcoError(f"letra(s) desconocida(s) {', '.join(bad)} en el marco '{value}' (válidas: {', '.join(k for k in NAMES if k != 'Co')}; la segunda C es Contexto)")
     if len(set(comps)) != len(comps):
         raise MarcoError(f"componente repetido en el marco '{value}'")
+    if comps == ["T"]:
+        raise MarcoError(f"el marco '{value}' solo tiene T; necesita al menos un componente de búsqueda (P, I, C, O o S)")
     return comps
 
 
@@ -67,20 +87,47 @@ def component_words(value) -> str:
 def configured_marco(theme: Path) -> str:
     """Marco de paper.yml como etiqueta canónica; lanza MarcoError si no es válido."""
     yml = theme / "paper" / "paper.yml"
-    raw = DEFAULT_MARCO
-    if yaml is not None and yml.exists():
-        data = yaml.safe_load(yml.read_text(encoding="utf-8")) or {}
-        raw = (data.get("formato") or {}).get("marco") or DEFAULT_MARCO
-    return marco_label(raw)
+    if yaml is None or not yml.exists():
+        return DEFAULT_MARCO
+    try:
+        data = yaml.safe_load(yml.read_text(encoding="utf-8-sig"))
+    except yaml.YAMLError as e:
+        mark = getattr(e, "problem_mark", None)
+        raise ConfigError("paper/paper.yml no es YAML válido" + (f" (línea {mark.line + 1})" if mark else ""))
+    except UnicodeDecodeError:
+        raise ConfigError("paper/paper.yml no está en UTF-8")
+    data = data or {}
+    if not isinstance(data, dict):
+        raise ConfigError("paper/paper.yml debe ser un mapa clave: valor")
+    formato = data.get("formato") or {}
+    if not isinstance(formato, dict):
+        raise ConfigError("formato de paper/paper.yml debe ser un bloque clave: valor")
+    if "marco" not in formato:
+        return DEFAULT_MARCO
+    try:
+        return marco_label(formato["marco"])
+    except MarcoError as e:
+        raise MarcoError(f"formato.marco: {e}")
 
 
 def versions(theme: Path) -> list[Path]:
     d = theme / "picoc"
     if not d.is_dir():
         return []
-    vs = [p for p in d.iterdir() if p.is_dir() and PICOC_DIR_RE.match(p.name)]
-    key = lambda p: (PICOC_DIR_RE.match(p.name).group(1), int(PICOC_DIR_RE.match(p.name).group(2) or 1), p.stat().st_mtime)
-    return sorted(vs, key=key)
+    today = dt.date.today()
+    vs, seen = [], {}
+    for p in d.iterdir():
+        m = PICOC_DIR_RE.match(p.name)
+        if not (p.is_dir() and m and (day := version_date(m.group(1)))):
+            continue
+        if day > today:
+            raise VersionError(f"picoc/{p.name} tiene fecha futura")
+        k = (m.group(1), int(m.group(2) or 1))
+        if k in seen:
+            raise VersionError(f"picoc/{seen[k]} y picoc/{p.name} tienen la misma fecha y número; no se sabe cuál es la última")
+        seen[k] = p.name
+        vs.append((k, p))
+    return [p for _, p in sorted(vs, key=lambda x: x[0])]
 
 
 def next_dir(theme: Path, marco: str, today: str | None = None) -> Path:

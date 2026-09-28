@@ -64,7 +64,14 @@ Contexto 3–5 short paragraphs · El problema 3–4 (arises from the previous �
 6. `citas-rsl` with `pnpm -s paper:status docs/<slug> --cites` until PASS or justified `PENDIENTE`.
 7. Append a block to `paper-debate.md` (keep earlier blocks): date, worked sections, agents used, key decisions table, Redacción and Citas pass/fail.
 8. `pnpm -s paper:status docs/<slug> --update polish` (no FAIL).
-9. Chat: changes, stale / blocked, gaps; suggest freezing validated sections in `paper.yml`.
+9. Chat: changes, stale / blocked and gaps, then the Cierre line.
+
+## Cierre
+
+The last message of the skill is exactly one line:
+
+- Stop at the first failure (any `paper:status` step returns `ERROR:`, or `redaccion:lint` / `--cites` keep failing in the worked sections): `ERROR: <mensaje del script o sección que no pasó>. <cómo arreglarlo>`. Do not continue with later steps.
+- Everything went well: `OK: polish paper/<versión>/paper-polish.md (secciones: …; agentes: …). Próximo paso: congela en paper/paper.yml las secciones validadas, o Usa rsl-make-paper sobre docs/<slug>/ para los grupos pendientes`.
 
 ## Forbidden
 

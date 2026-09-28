@@ -22,6 +22,9 @@ import re
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from rsl_out import Fail, error, ok, run  # noqa: E402
+
 MARKERS = re.compile(
     r"\b(?:TODO|FIXME|TBD|XXX|PENDIENTE)\b|\?\?\?"
     r"|(?i:[\[(«\"]\s*citar?\b[^\])»\"]*[\])»\"]|\bcitar\s*$|:\s*citar\b|\[cita[^\]]*\])",
@@ -85,12 +88,20 @@ def is_defined(par: str, m: re.Match) -> bool:
 def main(argv: list[str]) -> int:
     if not argv or argv[0] in ("-h", "--help"):
         print(__doc__)
-        return 2
+        return error("uso: redaccion:lint <archivo.md> [--max-palabras N]", code=2) if not argv else ok("ayuda mostrada")
     path = Path(argv[0])
-    max_words = int(argv[argv.index("--max-palabras") + 1]) if "--max-palabras" in argv else 40
+    try:
+        max_words = int(argv[argv.index("--max-palabras") + 1]) if "--max-palabras" in argv else 40
+    except (IndexError, ValueError):
+        raise Fail("--max-palabras necesita un número entero", code=2)
     if not path.exists():
-        sys.exit(f"error: no existe {path}")
-    text = path.read_text(encoding="utf-8")
+        raise Fail(f"no existe {path}", "indica un archivo .md existente")
+    if path.is_dir():
+        raise Fail(f"{path} es una carpeta", "indica un archivo .md")
+    try:
+        text = path.read_text(encoding="utf-8")
+    except UnicodeDecodeError:
+        raise Fail(f"{path} no está en UTF-8", "guárdalo como UTF-8")
     fails: list[str] = []
     warns: list[str] = []
     seen: dict[str, int] = {}
@@ -134,17 +145,14 @@ def main(argv: list[str]) -> int:
             if words > max_words:
                 warns.append(f"L{n}: oración de {words} palabras (máx. {max_words}): «{sent[:70]}…»")
 
-    rel = path
-    if fails:
-        print(f"FAIL redacción · {rel} · {len(fails)} error(es), {len(warns)} aviso(s)")
-        for f in fails:
-            print(f"  - {f}")
-    else:
-        print(f"PASS redacción · {rel} · {len(warns)} aviso(s)")
+    for f in fails:
+        print(f"  - {f}")
     for w in warns:
         print(f"  ~ {w}")
-    return 1 if fails else 0
+    if fails:
+        return error(f"redacción de {path}: {len(fails)} error(es) y {len(warns)} aviso(s) (ver detalle arriba)", "corrígelos con redaccion-rsl según playbooks/redaccion-academica.md")
+    return ok(f"redacción de {path} sin errores ({len(warns)} aviso(s) a corregir o justificar)")
 
 
 if __name__ == "__main__":
-    sys.exit(main(sys.argv[1:]))
+    run(main)

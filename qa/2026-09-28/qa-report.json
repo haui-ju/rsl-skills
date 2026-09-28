@@ -1,0 +1,729 @@
+{
+  "date": "2026-09-28",
+  "total": 51,
+  "failed": 8,
+  "proposed": [
+    {
+      "id": "A1",
+      "comando": "paper:status / picoc:lint sobre 'docs/tema con ñ y espacios'",
+      "esperado": "OK",
+      "obtenido": "OK",
+      "rompe": false,
+      "por_que": "rutas reales con acentos y espacios"
+    },
+    {
+      "id": "A2",
+      "comando": "picoc:latest con picoc/<fecha>-PICOCT/picoc.md convertido en carpeta",
+      "esperado": "ERROR claro",
+      "obtenido": "ERROR: picoc FALTA",
+      "rompe": false,
+      "por_que": "no se cae; el mensaje podría nombrar la carpeta"
+    },
+    {
+      "id": "A3",
+      "comando": "chmod 444 paper.state.jsonc; paper:status --update borrador",
+      "esperado": "ERROR: sin permiso de escritura en paper.state.jsonc",
+      "obtenido": "ERROR: fallo interno (PermissionError)",
+      "rompe": true,
+      "por_que": "el usuario no sabe qué arreglar"
+    },
+    {
+      "id": "A4",
+      "comando": "picoc/2099-01-01-PICOCT/picoc.md válido; picoc:latest",
+      "esperado": "ERROR: versión con fecha futura",
+      "obtenido": "OK: marco PICOCT al día (2099-01-01-PICOCT)",
+      "rompe": true,
+      "por_que": "una carpeta con fecha futura queda como 'último' para siempre"
+    },
+    {
+      "id": "A5",
+      "comando": "paper.yml con 'contexto: Frozen'",
+      "esperado": "OK (estado sin distinguir mayúsculas)",
+      "obtenido": "ERROR: valor inválido",
+      "rompe": true,
+      "por_que": "valor humano razonable rechazado"
+    },
+    {
+      "id": "A6",
+      "comando": "tema como symlink",
+      "esperado": "OK",
+      "obtenido": "OK",
+      "rompe": false,
+      "por_que": "clones con enlaces"
+    },
+    {
+      "id": "A7",
+      "comando": "borrar picoc/ con el paper ya generado; paper:status",
+      "esperado": "OK con BLOCKED y próximo paso rsl-picoc",
+      "obtenido": "igual",
+      "rompe": false,
+      "por_que": "recuperación del flujo"
+    },
+    {
+      "id": "A8",
+      "comando": "carpetas paper/2026-09-28-0 y 2026-09-28-01; --new-version",
+      "esperado": "se ignoran o ERROR; la versión nueva es la última",
+      "obtenido": "crea 2026-09-28 que no queda como última (copia de -01)",
+      "rompe": true,
+      "por_que": "el orden de versiones se corrompe"
+    },
+    {
+      "id": "A9",
+      "comando": "chmod 555 paper/; --new-version",
+      "esperado": "ERROR: sin permiso de escritura en paper/",
+      "obtenido": "ERROR: fallo interno (PermissionError)",
+      "rompe": true,
+      "por_que": "mensaje no accionable"
+    },
+    {
+      "id": "A10",
+      "comando": "RQ con '\\|' escapado y '?' interna",
+      "esperado": "OK",
+      "obtenido": "OK",
+      "rompe": false,
+      "por_que": "tablas markdown reales"
+    },
+    {
+      "id": "A11",
+      "comando": "picoc/2026-09-28-PICOCT y 2026-09-28-PICO (misma fecha y n); picoc:latest",
+      "esperado": "ERROR: dos versiones con la misma fecha y número",
+      "obtenido": "elige por fecha de modificación en silencio",
+      "rompe": true,
+      "por_que": "resultado depende del reloj del sistema de archivos"
+    }
+  ],
+  "cases": [
+    {
+      "id": "P01",
+      "group": "positivo",
+      "desc": "flujo completo desde cero: init, picoc, versión, borrador, polish y segunda versión",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "P02",
+      "group": "positivo",
+      "desc": "cambio de marco a PIO con un picoc PIO válido",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "P03",
+      "group": "positivo",
+      "desc": "modo ligero: la § 1.2 cambia y una versión nueva con la pregunta nueva vuelve a pasar",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "P04",
+      "group": "positivo",
+      "desc": "thesaurus:check por pnpm (cableado de package.json)",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "P05",
+      "group": "positivo",
+      "desc": "lints de la ficha limpia y citas APA e IEEE correctas",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "P06",
+      "group": "positivo",
+      "desc": "pnpm con los scripts del paquete: paper:status, picoc:latest, picoc:lint",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M01",
+      "group": "orden",
+      "desc": "--update borrador sin versiones",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M02",
+      "group": "orden",
+      "desc": "--update polish cuando la versión no tiene paper-polish.md",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M03",
+      "group": "orden",
+      "desc": "--cites sin versiones del paper",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M04",
+      "group": "orden",
+      "desc": "picoc:lint antes de rsl-picoc",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M05",
+      "group": "orden",
+      "desc": "picoc:latest en un tema vacío (sin informe ni paper)",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M06",
+      "group": "orden",
+      "desc": "paper:status sin picoc: OK con BLOCKED y próximo paso rsl-picoc",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M07",
+      "group": "orden",
+      "desc": "paper:status sin informe: próximo paso rsl-make-report",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M08",
+      "group": "orden",
+      "desc": "dos --new-version el mismo día",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M09",
+      "group": "orden",
+      "desc": "--new-version con todo frozen/off no crea carpeta",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M10",
+      "group": "orden",
+      "desc": "editar una sección frozen: status, --update y --new-version fallan",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M11",
+      "group": "orden",
+      "desc": "--migrate sobre el formato nuevo no cambia nada",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M12",
+      "group": "orden",
+      "desc": "cambio de marco a mitad del flujo: secciones del marco BLOCKED",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M13",
+      "group": "orden",
+      "desc": "--update borrador cuando solo existe paper-polish.md",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M14",
+      "group": "orden",
+      "desc": "un picoc nuevo el mismo día con otro marco pasa a ser el último",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M15",
+      "group": "orden",
+      "desc": "--init con un paper.yml existente no lo pisa",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D01",
+      "group": "destruir",
+      "desc": "paper.yml con YAML roto",
+      "failed": true,
+      "crash": null,
+      "steps": [
+        {
+          "cmd": "/usr/bin/python3 scripts/picoc-lint.py --latest docs/t021",
+          "expect": "ERROR",
+          "code": 1,
+          "last": "            ^. reporta el caso con rsl-qa-destroy.",
+          "problems": [
+            "la última línea no empieza por OK: ni ERROR:",
+            "se esperaba ERROR y salió ?",
+            "falta en la salida: «YAML»"
+          ],
+          "suspect": "scripts/picoc-lint.py",
+          "output": "ERROR: fallo interno (ScannerError): mapping values are not allowed here\n  in \"<unicode string>\", line 3, column 9:\n       citas: [apa7\n            ^. reporta el caso con rsl-qa-destroy.\n"
+        },
+        {
+          "cmd": "/usr/bin/python3 scripts/picoc-lint.py docs/t021",
+          "expect": "ERROR",
+          "code": 1,
+          "last": "            ^. reporta el caso con rsl-qa-destroy.",
+          "problems": [
+            "la última línea no empieza por OK: ni ERROR:",
+            "se esperaba ERROR y salió ?",
+            "falta en la salida: «YAML»"
+          ],
+          "suspect": "scripts/picoc-lint.py",
+          "output": "ERROR: fallo interno (ScannerError): mapping values are not allowed here\n  in \"<unicode string>\", line 3, column 9:\n       citas: [apa7\n            ^. reporta el caso con rsl-qa-destroy.\n"
+        }
+      ]
+    },
+    {
+      "id": "D02",
+      "group": "destruir",
+      "desc": "paper.yml vacío: todo off, sin romperse",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D03",
+      "group": "destruir",
+      "desc": "paper.yml que es una lista",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D04",
+      "group": "destruir",
+      "desc": "estado de sección desconocido (maybe)",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D05",
+      "group": "destruir",
+      "desc": "estado de sección como lista [on]",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D06",
+      "group": "destruir",
+      "desc": "sección inexistente en paper.yml",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D07",
+      "group": "destruir",
+      "desc": "formato inválido: idioma, citas, numeracion, resumen, clave desconocida",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D08",
+      "group": "destruir",
+      "desc": "formato como texto en vez de bloque",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D09",
+      "group": "destruir",
+      "desc": "paper.state.jsonc corrupto, vacío y con tipos erróneos",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D10",
+      "group": "destruir",
+      "desc": "paper.shadow.yml ausente, roto y con ids repetidos",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D11",
+      "group": "destruir",
+      "desc": "marcadores rotos: sin cerrar, repetidos, anidados, cierre huérfano",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D12",
+      "group": "destruir",
+      "desc": "borrador sin marcadores, vacío, no UTF-8 y con id desconocido",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D13",
+      "group": "destruir",
+      "desc": "ficha sin pregunta en la § 1.2 y con dos preguntas",
+      "failed": true,
+      "crash": null,
+      "steps": [
+        {
+          "cmd": "/usr/bin/python3 scripts/picoc-lint.py docs/t040",
+          "expect": "ERROR",
+          "code": 0,
+          "last": "OK: picoc docs/t040/picoc/2026-09-28-PICOCT/picoc.md (PICOCT) válido: 5 bloques, 73 términos, 6 RQ, T 2020–2026, 3 bases.",
+          "problems": [
+            "se esperaba ERROR y salió OK"
+          ],
+          "suspect": "scripts/picoc-lint.py",
+          "output": "WARN PG: no hay ficha (informe-polish.md / informe.md § 1.2) para comparar la pregunta general\nOK: picoc docs/t040/picoc/2026-09-28-PICOCT/picoc.md (PICOCT) válido: 5 bloques, 73 términos, 6 RQ, T 2020–2026, 3 bases.\n"
+        },
+        {
+          "cmd": "/usr/bin/python3 scripts/picoc-lint.py docs/t040",
+          "expect": "ERROR",
+          "code": 0,
+          "last": "OK: picoc docs/t040/picoc/2026-09-28-PICOCT/picoc.md (PICOCT) válido: 5 bloques, 73 términos, 6 RQ, T 2020–2026, 3 bases.",
+          "problems": [
+            "se esperaba ERROR y salió OK",
+            "falta en la salida: «1.2»"
+          ],
+          "suspect": "scripts/picoc-lint.py",
+          "output": "OK: picoc docs/t040/picoc/2026-09-28-PICOCT/picoc.md (PICOCT) válido: 5 bloques, 73 términos, 6 RQ, T 2020–2026, 3 bases.\n"
+        }
+      ]
+    },
+    {
+      "id": "D14",
+      "group": "destruir",
+      "desc": "picoc vacío, sin **Marco:**, sin queries, con DOCTYPE y con T invertido",
+      "failed": true,
+      "crash": null,
+      "steps": [
+        {
+          "cmd": "/usr/bin/python3 scripts/picoc-lint.py docs/t045",
+          "expect": "ERROR",
+          "code": 1,
+          "last": "ERROR: el picoc docs/t045/picoc/2026-09-28-PICOCT/picoc.md (PICOCT) tiene 3 error(es) (ver detalle arriba). corrígelo regenerando una versión con rsl-picoc.",
+          "problems": [
+            "falta en la salida: «años»"
+          ],
+          "suspect": "scripts/picoc-lint.py",
+          "output": "  - R2 [Scopus]: falta el filtro de año 2026–2020 de T\n  - R2 [Web of Science]: falta el filtro de año 2026–2020 de T\n  - R2 [IEEE Xplore]: falta el filtro de año 2026–2020 de T\nERROR: el picoc docs/t045/picoc/2026-09-28-PICOCT/picoc.md (PICOCT) tiene 3 error(es) (ver detalle arriba). corrígelo regenerando una versión con rsl-picoc.\n"
+        }
+      ]
+    },
+    {
+      "id": "D15",
+      "group": "destruir",
+      "desc": "carpetas basura en picoc/ y paper/ se ignoran",
+      "failed": true,
+      "crash": null,
+      "steps": [
+        {
+          "cmd": "/usr/bin/python3 scripts/picoc-lint.py --latest docs/t046",
+          "expect": "OK",
+          "code": 0,
+          "last": "OK: marco PICOCT al día (docs/t046/picoc/2026-13-45-PICOCT/picoc.md).",
+          "problems": [
+            "falta en la salida: «2026-09-28-PICOCT»"
+          ],
+          "suspect": "scripts/picoc-lint.py",
+          "output": "marco: PICOCT (paper.yml)\núltimo: docs/t046/picoc/2026-13-45-PICOCT/picoc.md\nestado: OK\nsiguiente versión: docs/t046/picoc/2026-09-28-2-PICOCT/\nOK: marco PICOCT al día (docs/t046/picoc/2026-13-45-PICOCT/picoc.md).\n"
+        },
+        {
+          "cmd": "/usr/bin/python3 scripts/picoc-lint.py docs/t046",
+          "expect": "OK",
+          "code": 1,
+          "last": "ERROR: docs/t046/picoc/2026-13-45-PICOCT/picoc.md no declara '**Marco:** <letras>' (p. ej. PICOCT, PIO). regenera el marco con rsl-picoc.",
+          "problems": [
+            "se esperaba OK y salió ERROR"
+          ],
+          "suspect": "scripts/picoc-lint.py",
+          "output": "ERROR: docs/t046/picoc/2026-13-45-PICOCT/picoc.md no declara '**Marco:** <letras>' (p. ej. PICOCT, PIO). regenera el marco con rsl-picoc.\n"
+        },
+        {
+          "cmd": "/usr/bin/python3 scripts/paper-manifest.py docs/t046",
+          "expect": "OK",
+          "code": 0,
+          "last": "OK: paper/2026-99-99: 0 a mejorar, 6 a reescribir. Próximo paso: rsl-make-paper.",
+          "problems": [
+            "no debería aparecer: «2026-99-99»"
+          ],
+          "suspect": "scripts/paper-manifest.py",
+          "output": "paper/ · última versión: 2026-99-99 (etapas cerradas: ninguna) · idioma: es · citation: apa7 · numbering: roman · marco: PICOCT\n| Sección | estado | status | fuente cambiada | versión |\n|---|---|---|---|---|\n| encabezado | on | reescribir (nueva) | — | — |\n| resumen | off | off | — | — |\n| contexto | on | reescribir (nueva) | — | — |\n| problema | on | reescribir (nueva) | — | — |\n| justificacion | on | reescribir (nueva) | — | — |\n| objetivo-rsl | on | reescribir (nueva) | — | — |\n| organizacion | on | reescribir (nueva) | — | — |\n| marco-pico | off | off | — | — |\n| palabras-clave | off | off | — | — |\n| ecuacion-busqueda | off | off | — | — |\n| criterios-seleccion | off | off | — | — |\n| seleccion-prisma | off | off | — | — |\n| calidad | off | off | — | — |\n| distribucion | off | off | — | — |\n| hallazgos-generales | off | off | — | — |\n| resultados-rq | off | off | — | — |\n| discusion-temas | off | off | — | — |\n| discusion-rq | off | off | — | — |\n| amenazas | off | off | — | — |\n| conclusion | off | off | — | — |\n| referencias | auto | derived | — | — |\n\nA mejorar (on): —\nA reescribir (rewrite): encabezado, contexto, problema, justificacion, objetivo-rsl, organizacion\nOK: paper/2026-99-99: 0 a mejorar, 6 a reescribir. Próximo paso: rsl-make-paper.\n"
+        }
+      ]
+    },
+    {
+      "id": "D16",
+      "group": "destruir",
+      "desc": "rutas: / final, absoluta, archivo en vez de tema, tema inexistente",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D17",
+      "group": "destruir",
+      "desc": "argumentos inválidos en todos los scripts",
+      "failed": true,
+      "crash": null,
+      "steps": [
+        {
+          "cmd": "pnpm -s thesaurus:check",
+          "expect": "ERROR",
+          "code": 2,
+          "last": "thesaurus-ieee.py: error: argument --check: expected at least one argument",
+          "problems": [
+            "la última línea no empieza por OK: ni ERROR:",
+            "se esperaba ERROR y salió ?"
+          ],
+          "suspect": "package.json / scripts",
+          "output": "ERROR: argumentos inválidos (usa --check \"t1\" \"t2\" … o --lookup \"t\").\nusage: thesaurus-ieee.py [-h] [--parse-only] [--lookup LOOKUP]\n                         [--check TERM [TERM ...]]\nthesaurus-ieee.py: error: argument --check: expected at least one argument\n"
+        }
+      ]
+    },
+    {
+      "id": "D18",
+      "group": "destruir",
+      "desc": "citas rotas: APA huérfana, IEEE fuera de orden y sin referencia",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D19",
+      "group": "destruir",
+      "desc": "finales de línea CRLF y BOM UTF-8",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D20",
+      "group": "destruir",
+      "desc": "no se pierde nada si una versión del paper desaparece",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "K01",
+      "group": "marco",
+      "desc": "variantes válidas del marco: pio, ' PICOCT ', [p, i, o], PICOCTS, PICOS",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "K02",
+      "group": "marco",
+      "desc": "variantes inválidas: PIX, PICCC, 123, vacío, P-I-O, PICoO, solo T",
+      "failed": true,
+      "crash": null,
+      "steps": [
+        {
+          "cmd": "/usr/bin/python3 scripts/picoc-lint.py --latest docs/t060",
+          "expect": "ERROR",
+          "code": 0,
+          "last": "OK: marco PICOCT al día (docs/t060/picoc/2026-09-28-PICOCT/picoc.md).",
+          "problems": [
+            "se esperaba ERROR y salió OK",
+            "falta en la salida: «vacío»"
+          ],
+          "suspect": "scripts/picoc-lint.py",
+          "output": "marco: PICOCT (paper.yml)\núltimo: docs/t060/picoc/2026-09-28-PICOCT/picoc.md\nestado: OK\nsiguiente versión: docs/t060/picoc/2026-09-28-2-PICOCT/\nOK: marco PICOCT al día (docs/t060/picoc/2026-09-28-PICOCT/picoc.md).\n"
+        },
+        {
+          "cmd": "/usr/bin/python3 scripts/paper-manifest.py docs/t063",
+          "expect": "ERROR",
+          "code": 0,
+          "last": "OK: paper/—: 0 a mejorar, 3 a reescribir, 3 blocked. Próximo paso: Usa rsl-picoc sobre docs/t063/.",
+          "problems": [
+            "se esperaba ERROR y salió OK"
+          ],
+          "suspect": "scripts/paper-manifest.py",
+          "output": "paper/ · última versión: — (etapas cerradas: ninguna) · idioma: es · citation: apa7 · numbering: roman · marco: T\n| Sección | estado | status | fuente cambiada | versión |\n|---|---|---|---|---|\n| encabezado | on | blocked | — | — |\n| resumen | off | off | — | — |\n| contexto | on | reescribir (nueva) | — | — |\n| problema | on | blocked | — | — |\n| justificacion | on | reescribir (nueva) | — | — |\n| objetivo-rsl | on | blocked | — | — |\n| organizacion | on | reescribir (nueva) | — | — |\n| marco-pico | off | off | — | — |\n| palabras-clave | off | off | — | — |\n| ecuacion-busqueda | off | off | — | — |\n| criterios-seleccion | off | off | — | — |\n| seleccion-prisma | off | off | — | — |\n| calidad | off | off | — | — |\n| distribucion | off | off | — | — |\n| hallazgos-generales | off | off | — | — |\n| resultados-rq | off | off | — | — |\n| discusion-temas | off | off | — | — |\n| discusion-rq | off | off | — | — |\n| amenazas | off | off | — | — |\n| conclusion | off | off | — | — |\n| referencias | auto | derived | — | — |\n\nA mejorar (on): —\nA reescribir (rewrite): contexto, justificacion, organizacion\nBLOCKED (datos faltantes, no se generan): encabezado (falta picoc); problema (falta picoc); objetivo-rsl (falta picoc)\nWARN picoc DESFASADO: marco configurado T · último docs/t063/picoc/2026-09-28-PICOCT/picoc.md → correr rsl-picoc (las secciones que dependen de picoc quedan BLOCKED)\nOK: paper/—: 0 a mejorar, 3 a reescribir, 3 blocked. Próximo paso: Usa rsl-picoc sobre docs/t063/.\n"
+        }
+      ]
+    },
+    {
+      "id": "K03",
+      "group": "marco",
+      "desc": "picoc con **Marco:** inválido o distinto de su carpeta",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "K04",
+      "group": "marco",
+      "desc": "picoc PIO con filtro de año o con una fila de más",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "S01",
+      "group": "skills",
+      "desc": "cada `pnpm -s X` citado en skills, agentes, playbooks y README existe en package.json",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "S02",
+      "group": "skills",
+      "desc": "rutas global/, playbooks/ y scripts/ citadas existen",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "S03",
+      "group": "skills",
+      "desc": "agentes *-rsl y skills rsl-* citados existen; nombre del frontmatter = carpeta",
+      "failed": true,
+      "crash": null,
+      "steps": [
+        {
+          "cmd": "(verificación)",
+          "expect": "OK",
+          "code": 0,
+          "last": ".cursor/skills/rsl-qa-destroy/SKILL.md: la skill rsl-qa no existe en .cursor/skills/",
+          "problems": [
+            ".cursor/skills/rsl-qa-destroy/SKILL.md: la skill rsl-qa no existe en .cursor/skills/"
+          ],
+          "suspect": ".cursor/skills · .cursor/agents · README",
+          "output": ""
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "group": "skills",
+      "desc": "cada skill rsl-* tiene la sección Cierre con el contrato OK/ERROR",
+      "failed": true,
+      "crash": null,
+      "steps": [
+        {
+          "cmd": "(verificación)",
+          "expect": "OK",
+          "code": 0,
+          "last": ".cursor/skills/rsl-bootstrap/SKILL.md: falta '## Cierre'",
+          "problems": [
+            ".cursor/skills/rsl-bootstrap/SKILL.md: falta '## Cierre'"
+          ],
+          "suspect": ".cursor/skills · .cursor/agents · README",
+          "output": ""
+        },
+        {
+          "cmd": "(verificación)",
+          "expect": "OK",
+          "code": 0,
+          "last": ".cursor/skills/rsl-make-paper/SKILL.md: falta '## Cierre'",
+          "problems": [
+            ".cursor/skills/rsl-make-paper/SKILL.md: falta '## Cierre'"
+          ],
+          "suspect": ".cursor/skills · .cursor/agents · README",
+          "output": ""
+        },
+        {
+          "cmd": "(verificación)",
+          "expect": "OK",
+          "code": 0,
+          "last": ".cursor/skills/rsl-make-report/SKILL.md: falta '## Cierre'",
+          "problems": [
+            ".cursor/skills/rsl-make-report/SKILL.md: falta '## Cierre'"
+          ],
+          "suspect": ".cursor/skills · .cursor/agents · README",
+          "output": ""
+        },
+        {
+          "cmd": "(verificación)",
+          "expect": "OK",
+          "code": 0,
+          "last": ".cursor/skills/rsl-picoc/SKILL.md: falta '## Cierre'",
+          "problems": [
+            ".cursor/skills/rsl-picoc/SKILL.md: falta '## Cierre'"
+          ],
+          "suspect": ".cursor/skills · .cursor/agents · README",
+          "output": ""
+        },
+        {
+          "cmd": "(verificación)",
+          "expect": "OK",
+          "code": 0,
+          "last": ".cursor/skills/rsl-polish-paper/SKILL.md: falta '## Cierre'",
+          "problems": [
+            ".cursor/skills/rsl-polish-paper/SKILL.md: falta '## Cierre'"
+          ],
+          "suspect": ".cursor/skills · .cursor/agents · README",
+          "output": ""
+        },
+        {
+          "cmd": "(verificación)",
+          "expect": "OK",
+          "code": 0,
+          "last": ".cursor/skills/rsl-polish-report/SKILL.md: falta '## Cierre'",
+          "problems": [
+            ".cursor/skills/rsl-polish-report/SKILL.md: falta '## Cierre'"
+          ],
+          "suspect": ".cursor/skills · .cursor/agents · README",
+          "output": ""
+        },
+        {
+          "cmd": "(verificación)",
+          "expect": "OK",
+          "code": 0,
+          "last": ".cursor/skills/rsl-topic-panel/SKILL.md: falta '## Cierre'",
+          "problems": [
+            ".cursor/skills/rsl-topic-panel/SKILL.md: falta '## Cierre'"
+          ],
+          "suspect": ".cursor/skills · .cursor/agents · README",
+          "output": ""
+        }
+      ]
+    },
+    {
+      "id": "S05",
+      "group": "skills",
+      "desc": "sin restos de reglas viejas (PICO | PICOC | PICOCT, picoc-polish, mínimos en agentes)",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "S06",
+      "group": "skills",
+      "desc": "README lista todas las skills rsl-*",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    }
+  ]
+}

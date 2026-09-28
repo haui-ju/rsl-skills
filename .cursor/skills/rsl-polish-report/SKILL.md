@@ -26,7 +26,14 @@ The critic's job here: real contribution, no false claims, correct citations, co
    - Any other lint FAIL → **`rsl-picoc`** full mode.
    - PASS → nothing.
 5. Form and citations: `pnpm -s redaccion:lint docs/<slug>/informe-polish.md` and `pnpm -s paper:status docs/<slug> --cites docs/<slug>/informe-polish.md`. Give the lint output to **`redaccion-rsl`**; apply its fixes (form only) until 0 FAIL, every WARN fixed or justified, and `--cites` PASS.
-6. Chat: main changes, missing PDFs under `RSL/PDF/`, next step `Usa rsl-make-paper sobre docs/<slug>/`.
+6. Chat: main changes and missing PDFs under `RSL/PDF/`, then the Cierre line.
+
+## Cierre
+
+The last message of the skill is exactly one line:
+
+- Stop at the first failure (any script returns `ERROR:`, `rsl-picoc` ends in ERROR, or `redaccion:lint` / `--cites` keep failing): `ERROR: <paso y script que falló, con su mensaje>. <cómo arreglarlo>`. Do not continue with later steps.
+- Everything went well: `OK: informe pulido en docs/<slug>/informe-polish.md; marco <al día | regenerado en picoc/<carpeta>/>. Próximo paso: Usa rsl-make-paper sobre docs/<slug>/`.
 
 ## Forbidden
 

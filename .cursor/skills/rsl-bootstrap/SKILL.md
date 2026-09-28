@@ -47,12 +47,19 @@ pnpm -s thesaurus:check "Human computer interaction"
 graphify query "cognitive accessibility" --graph docs/<slug>/graphify-out/graph.json
 ```
 
-7. Chat: tabla requisito → ok/instalado/falta; resumen PASS/FAIL/SKIP; grafos generados; siguiente paso sugerido (`rsl-topic-panel` o el tema en curso).
+7. Chat: tabla requisito → ok/instalado/falta y resumen PASS/FAIL/SKIP de los grafos; luego la línea de Cierre.
 
 ## Notas
 
 - No gasta tokens LLM: temas se reconstruyen desde `RSL/MD/*.md` + `index-manifest.json` (PDFs con mismo sha se saltan); thesaurus se parsea local.
 - Idempotente: se puede re-ejecutar cuando cambien skills, `global/`, temas o PDFs.
+
+## Cierre
+
+The last message of the skill is exactly one line:
+
+- Stop at the first failure (any prerequisite missing, `pnpm install` failed or `pnpm run bootstrap` reports FAIL): `ERROR: <requisito o grafo que falló y por qué>. <cómo arreglarlo>`. Do not continue with later steps.
+- Everything went well: `OK: entorno listo (requisitos, dependencias y grafos root, thesaurus, ejemplos y temas). Próximo paso: rsl-topic-panel (o la skill del tema en curso)`.
 
 ## Forbidden
 

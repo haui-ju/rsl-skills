@@ -25,19 +25,22 @@ import shutil
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import picoc_versions  # noqa: E402
+from rsl_out import Fail, error, ok, run  # noqa: E402
+
 try:
     import yaml
 except ImportError:
-    sys.exit("error: falta PyYAML (pip install --user pyyaml | sudo pacman -S python-yaml | sudo apt install python3-yaml)")
-
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-import picoc_versions  # noqa: E402
+    print("ERROR: falta PyYAML. Instálalo: pip install --user pyyaml | sudo pacman -S python-yaml | sudo apt install python3-yaml.")
+    sys.exit(1)
 
 ROOT = Path(__file__).resolve().parent.parent
 FILES = {"borrador": "paper-borrador.md", "polish": "paper-polish.md"}
 OPTIONAL_DEPS = {"topic.md"}
-VERSION_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})(?:-(\d+))?$")
-SECTION_RE = re.compile(r"<!-- paper:section id=([\w-]+) -->\n(.*?)<!-- /paper:section -->", re.S)
+VERSION_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})(?:-([2-9]|[1-9]\d+))?$")
+SECTION_RE = re.compile(r"<!-- paper:section id=([\w-]+) -->\n?(.*?)<!-- /paper:section -->", re.S)
+MARK_RE = re.compile(r"<!--\s*(/)?\s*paper:section(?:\s+id=([\w-]+))?\s*-->")
 
 GROUPS = [
     ("portada", "Portada"),
@@ -166,18 +169,51 @@ class Paper:
     def rel(self, f: Path) -> Path:
         return f.relative_to(ROOT) if ROOT in f.parents else f
 
+    def read_yaml(self, path: Path) -> dict:
+        try:
+            data = yaml.safe_load(path.read_text(encoding="utf-8-sig"))
+        except yaml.YAMLError as e:
+            where = getattr(e, "problem_mark", None)
+            raise Fail(f"{self.rel(path)} no es YAML válido" + (f" (línea {where.line + 1})" if where else ""), "corrige la sintaxis (sangría, dos puntos, comillas)")
+        except UnicodeDecodeError:
+            raise Fail(f"{self.rel(path)} no está en UTF-8", "guárdalo como UTF-8")
+        if data is None:
+            data = {}
+        if not isinstance(data, dict):
+            raise Fail(f"{self.rel(path)} debe ser un mapa clave: valor", "restáuralo desde git o con --init")
+        return data
+
     def load(self) -> None:
         if not self.yml_path.exists():
-            sys.exit(f"error: no existe {self.rel(self.yml_path)} (usa --init)")
-        human = yaml.safe_load(self.yml_path.read_text(encoding="utf-8")) or {}
+            raise Fail(f"no existe {self.rel(self.yml_path)}", "crea el paper con: pnpm -s paper:status <tema> --init")
+        human = self.read_yaml(self.yml_path)
         if isinstance(human.get("sections"), list):
-            sys.exit(f"error: {self.rel(self.yml_path)} tiene el formato antiguo (enabled/frozen); usa --migrate")
+            raise Fail(f"{self.rel(self.yml_path)} tiene el formato antiguo (enabled/frozen)", "conviértelo con: pnpm -s paper:status <tema> --migrate")
         if not self.shadow_path.exists():
-            sys.exit(f"error: no existe {self.rel(self.shadow_path)} (usa --init para crearlo)")
-        shadow = yaml.safe_load(self.shadow_path.read_text(encoding="utf-8"))
-        self.cfg = {"format": dict(shadow.get("format") or {})}
+            raise Fail(f"no existe {self.rel(self.shadow_path)}", "recréalo con: pnpm -s paper:status <tema> --init")
+        shadow = self.read_yaml(self.shadow_path)
+        secs = shadow.get("sections")
+        if not isinstance(secs, list) or not secs or not all(isinstance(s, dict) and isinstance(s.get("id"), str) for s in secs):
+            raise Fail(f"{self.rel(self.shadow_path)} no tiene una lista 'sections' válida (cada una con id)", "restáuralo desde git o bórralo y corre --init")
+        ids = [s["id"] for s in secs]
+        dup = sorted({i for i in ids if ids.count(i) > 1})
+        if dup:
+            raise Fail(f"{self.rel(self.shadow_path)} repite secciones: {', '.join(dup)}", "deja un solo id por sección")
+        self.cfg = {"format": dict(shadow.get("format") or {}) if isinstance(shadow.get("format"), dict) else {}}
         errors: list[str] = []
-        for hk, v in (human.get("formato") or {}).items():
+        formato = human.get("formato") or {}
+        if not isinstance(formato, dict):
+            errors.append("formato debe ser un bloque clave: valor")
+            formato = {}
+        for hk, v in formato.items():
+            if hk in ("idioma",) and not (isinstance(v, str) and re.fullmatch(r"[a-z]{2}", v)):
+                errors.append(f"formato.idioma: '{v}' no válido (código ISO 639-1 de dos letras, p. ej. es, en)")
+                continue
+            if hk == "resumen":
+                v = [v] if isinstance(v, str) else v
+                if not (isinstance(v, list) and v and all(isinstance(x, str) and re.fullmatch(r"[a-z]{2}", x) for x in v)):
+                    errors.append(f"formato.resumen: '{v}' no válido (lista de códigos de idioma, p. ej. [en, es])")
+                    continue
             if hk not in FORMATO:
                 errors.append(f"formato.{hk} desconocido (válidos: {', '.join(FORMATO)})")
                 continue
@@ -188,7 +224,7 @@ class Paper:
                 except picoc_versions.MarcoError as e:
                     errors.append(f"formato.marco: {e}")
                     continue
-            if m is not None and v not in m:
+            if m is not None and (not isinstance(v, str) or v not in m):
                 errors.append(f"formato.{hk}: '{v}' no válido (usa {' | '.join(m)})")
                 continue
             self.cfg["format"][ik] = m[v] if m else v
@@ -197,12 +233,12 @@ class Paper:
             if key == "formato" or not isinstance(block, dict):
                 continue
             for sid, raw in block.items():
-                val = STATE_ALIASES.get(raw, raw)
-                if val not in STATES:
+                val = STATE_ALIASES.get(raw, raw.strip().lower() if isinstance(raw, str) else raw) if isinstance(raw, (str, bool)) else raw
+                if not isinstance(val, str) or val not in STATES:
                     errors.append(f"{sid}: estado '{raw}' no válido (usa frozen | on | rewrite | off)")
                 states[sid] = val
         self.cfg["format"].setdefault("framework", picoc_versions.DEFAULT_MARCO)
-        self.sections = shadow["sections"]
+        self.sections = secs
         for sec in self.sections:
             sec["title"] = str(sec.get("title", "")).replace("{marco}", self.cfg["format"]["framework"])
         self.ids = [s["id"] for s in self.sections]
@@ -210,7 +246,9 @@ class Paper:
             if sid not in self.ids:
                 errors.append(f"sección '{sid}' no existe en paper.shadow.yml (válidas: {', '.join(i for i in self.ids if i != 'referencias')})")
         if errors:
-            sys.exit("error en paper.yml:\n  - " + "\n  - ".join(errors))
+            for e in errors:
+                print(f"  - {e}")
+            raise Fail(f"{self.rel(self.yml_path)} tiene {len(errors)} valor(es) inválido(s) (ver detalle arriba)", "corrígelos en paper.yml")
         for sec in self.sections:
             if sec.get("derived"):
                 sec["enabled"], sec["frozen"] = True, False
@@ -226,12 +264,21 @@ class Paper:
                 src.setdefault("picoc", src.pop("picoc.md"))
 
     def read_state(self) -> dict:
-        if self.state_path.exists():
-            text = "\n".join(l for l in self.state_path.read_text(encoding="utf-8").splitlines() if not l.lstrip().startswith("//"))
-            return json.loads(text)
-        if self.legacy_state_path.exists():
-            return json.loads(self.legacy_state_path.read_text(encoding="utf-8"))
-        return {"sections": {}, "versions": {}}
+        path = self.state_path if self.state_path.exists() else (self.legacy_state_path if self.legacy_state_path.exists() else None)
+        if path is None:
+            return {"sections": {}, "versions": {}}
+        try:
+            text = "\n".join(l for l in path.read_text(encoding="utf-8").splitlines() if not l.lstrip().startswith("//"))
+            data = json.loads(text) if text.strip() else {}
+        except (json.JSONDecodeError, UnicodeDecodeError) as e:
+            raise Fail(f"{self.rel(path)} está corrupto ({e.__class__.__name__})", "restáuralo con git checkout, o bórralo para reconstruir el estado (se pierden los hashes de frozen)")
+        if not isinstance(data, dict):
+            raise Fail(f"{self.rel(path)} está corrupto (no es un objeto)", "restáuralo con git checkout o bórralo")
+        data.setdefault("sections", {})
+        data.setdefault("versions", {})
+        if not isinstance(data["sections"], dict) or not isinstance(data["versions"], dict):
+            raise Fail(f"{self.rel(path)} está corrupto (sections/versions)", "restáuralo con git checkout o bórralo")
+        return data
 
     def save_state(self) -> None:
         self.state_path.write_text(STATE_HEADER + json.dumps(self.state, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -239,9 +286,15 @@ class Paper:
             self.legacy_state_path.unlink()
 
     def versions(self) -> list[str]:
-        vs = [p.name for p in self.dir.iterdir() if p.is_dir() and VERSION_RE.match(p.name)] if self.dir.exists() else []
-        key = lambda v: (VERSION_RE.match(v).group(1), int(VERSION_RE.match(v).group(2) or 1))
-        return sorted(vs, key=key)
+        vs = []
+        for p in (self.dir.iterdir() if self.dir.exists() else []):
+            m = VERSION_RE.match(p.name)
+            if not (p.is_dir() and m and (day := picoc_versions.version_date(m.group(1)))):
+                continue
+            if day > dt.date.today():
+                raise Fail(f"paper/{p.name} tiene fecha futura", "renómbrala o bórrala; las versiones las crea --new-version")
+            vs.append(p.name)
+        return sorted(vs, key=lambda v: (v[:10], int(VERSION_RE.match(v).group(2) or 1)))
 
     def latest(self) -> str | None:
         vs = self.versions()
@@ -249,7 +302,36 @@ class Paper:
 
     def read_sections(self, version: str, stage: str) -> dict[str, str]:
         f = self.dir / version / FILES[stage]
-        return {m.group(1): m.group(2) for m in SECTION_RE.finditer(f.read_text(encoding="utf-8"))} if f.exists() else {}
+        if not f.exists():
+            return {}
+        try:
+            text = f.read_text(encoding="utf-8")
+        except UnicodeDecodeError:
+            raise Fail(f"{self.rel(f)} no está en UTF-8", "guárdalo como UTF-8")
+        problems, ids, open_id = [], [], None
+        for m in MARK_RE.finditer(text):
+            line = text.count("\n", 0, m.start()) + 1
+            if not m.group(1):
+                sid = m.group(2)
+                if open_id:
+                    problems.append(f"L{line}: '{sid}' se abre antes de cerrar '{open_id}'")
+                if not sid:
+                    problems.append(f"L{line}: marcador de apertura sin id")
+                elif sid in ids:
+                    problems.append(f"L{line}: la sección '{sid}' está repetida")
+                ids.append(sid)
+                open_id = sid or "?"
+            else:
+                if not open_id:
+                    problems.append(f"L{line}: cierre <!-- /paper:section --> sin apertura")
+                open_id = None
+        if open_id:
+            problems.append(f"la sección '{open_id}' no se cierra")
+        if problems:
+            for pr in problems:
+                print(f"  - {pr}")
+            raise Fail(f"{self.rel(f)} tiene marcadores de sección rotos", "cada sección va entre <!-- paper:section id=X --> y <!-- /paper:section -->, sin anidar ni repetir")
+        return {m.group(1): m.group(2) for m in SECTION_RE.finditer(text)}
 
     def dep_hash(self, dep: str) -> str | None:
         if dep == "grupos":
@@ -277,27 +359,46 @@ class Paper:
         return {d: self.dep_hash(d) for d in sec.get("depends_on", [])}
 
 
+def next_step(p: Paper, c: dict | None = None) -> str:
+    if not any((p.theme / f).is_file() for f in ("informe-polish.md", "informe.md")):
+        return "rsl-make-report"
+    if picoc_versions.status(p.theme)[2] != "OK":
+        return f"Usa rsl-picoc sobre {p.rel(p.theme)}/"
+    if c is None:
+        return "rsl-make-paper"
+    if not c["improve"] and not c["rewrite"]:
+        return "pon en on o rewrite las secciones a trabajar en paper/paper.yml"
+    vstate = p.state["versions"].get(c["version"], {}) if c["version"] else {}
+    if vstate.get("borrador") and not vstate.get("polish"):
+        return "rsl-polish-paper"
+    if vstate.get("polish"):
+        return "congela en paper.yml las secciones validadas, o rsl-make-paper para una versión nueva"
+    return "rsl-make-paper"
+
+
 def cmd_init(p: Paper) -> int:
     p.dir.mkdir(parents=True, exist_ok=True)
+    made, kept = [], []
     for path, content in ((p.shadow_path, DEFAULT_SHADOW), (p.yml_path, default_human())):
         if path.exists():
-            print(f"ya existe {p.rel(path)}")
+            kept.append(path.name)
         else:
             path.write_text(content, encoding="utf-8")
-            print(f"creado {p.rel(path)}")
-    return 0
+            made.append(path.name)
+    p.load()
+    return ok(f"paper/ listo (creados: {', '.join(made) or 'ninguno'}; ya existían: {', '.join(kept) or 'ninguno'})", next_step(p))
 
 
 def cmd_migrate(p: Paper) -> int:
     if not p.yml_path.exists():
-        sys.exit(f"error: no existe {p.rel(p.yml_path)}")
-    old = yaml.safe_load(p.yml_path.read_text(encoding="utf-8"))
-    if not isinstance(old.get("sections"), list):
-        print("paper.yml ya está en el formato nuevo")
-    else:
+        raise Fail(f"no existe {p.rel(p.yml_path)}", "crea el paper con --init")
+    old = p.read_yaml(p.yml_path)
+    if isinstance(old.get("sections"), list):
         rename = {"abstract": "resumen"}
         states = {}
         for s in old["sections"]:
+            if not isinstance(s, dict) or "id" not in s:
+                raise Fail("paper.yml antiguo con una sección sin id", "corrígelo a mano antes de migrar")
             if s.get("derived"):
                 continue
             sid = rename.get(s["id"], s["id"])
@@ -307,22 +408,31 @@ def cmd_migrate(p: Paper) -> int:
         p.yml_path.write_text(render_human(old.get("format") or {}, shadow["sections"], states), encoding="utf-8")
         print(f"migrado {p.rel(p.yml_path)} + creado {p.rel(p.shadow_path)}")
         if p.legacy_state_path.exists():
-            st = json.loads(p.legacy_state_path.read_text(encoding="utf-8"))
+            p.state = p.read_state()
             for a, b in rename.items():
-                if a in st.get("sections", {}):
-                    st["sections"][b] = st["sections"].pop(a)
-            p.state = st
+                if a in p.state["sections"]:
+                    p.state["sections"][b] = p.state["sections"].pop(a)
             p.save_state()
             print(f"migrado estado -> {p.rel(p.state_path)}")
-    return cmd_status(p)
+        migrated = True
+    else:
+        migrated = False
+    p.load()
+    c = report(p)
+    if c["errors"]:
+        return frozen_error(c)
+    return ok("paper.yml migrado al formato nuevo" if migrated else "paper.yml ya estaba en el formato nuevo; no se cambió nada", next_step(p, c))
 
 
 def cmd_new_version(p: Paper) -> int:
     p.load()
     c = classify(p)
+    if c["errors"]:
+        report(p)
+        return frozen_error(c)
     if not c["improve"] and not c["rewrite"]:
-        print("sin secciones on/rewrite: no se crea versión")
-        return cmd_status(p, header=False)
+        report(p)
+        return error("nada que generar: ninguna sección está en on o rewrite (no se creó versión)", "pon en on o rewrite las secciones a trabajar en paper/paper.yml")
     prev = p.latest()
     today = dt.date.today().isoformat()
     name, n = today, 1
@@ -336,23 +446,31 @@ def cmd_new_version(p: Paper) -> int:
                 shutil.copy2(p.dir / prev / f, p.dir / name / f)
     p.state["versions"][name] = {"from": prev, "borrador": False, "polish": False}
     p.save_state()
-    print(f"nueva versión: paper/{name}/ (copiada de {prev or '—'})")
-    return cmd_status(p, header=False)
+    c = report(p)
+    return ok(f"versión paper/{name}/ creada (copia de {prev or 'nada'}); a mejorar: {', '.join(c['improve']) or '—'}; a reescribir: {', '.join(c['rewrite']) or '—'}",
+              "escribir esas secciones en paper-borrador.md (rsl-make-paper) o pulirlas (rsl-polish-paper)")
 
 
 def cmd_update(p: Paper, stage: str) -> int:
     p.load()
     v = p.latest()
     if not v:
-        sys.exit("error: no hay versiones (usa --new-version)")
+        raise Fail("no hay versiones del paper", "crea una con --new-version (rsl-make-paper)")
+    if not (p.dir / v / FILES[stage]).exists():
+        raise Fail(f"no existe paper/{v}/{FILES[stage]}", "escribe el archivo antes de registrarlo")
     found = p.read_sections(v, stage)
     if not found:
-        sys.exit(f"error: paper/{v}/{FILES[stage]} no tiene marcadores <!-- paper:section id=… -->")
+        raise Fail(f"paper/{v}/{FILES[stage]} no tiene marcadores <!-- paper:section id=… -->", "envuelve cada sección con sus marcadores")
+    pre = classify(p)
+    if pre["errors"]:
+        report(p)
+        return frozen_error(pre)
     by_id = {s["id"]: s for s in p.sections}
+    unknown = []
     for sid, content in found.items():
         sec = by_id.get(sid)
         if sec is None:
-            print(f"WARN: sección '{sid}' no está en paper.shadow.yml")
+            unknown.append(sid)
             continue
         st = p.state["sections"].setdefault(sid, {})
         st.setdefault("content_hash", {})[stage] = text_hash(content)
@@ -363,10 +481,18 @@ def cmd_update(p: Paper, stage: str) -> int:
         else:
             old = st.get("sources_hash", {})
             st["sources_hash"] = {d: old.get(d, h) for d, h in p.sources(sec).items()}
+    if unknown:
+        raise Fail(f"paper/{v}/{FILES[stage]} tiene secciones que no existen en paper.shadow.yml: {', '.join(unknown)}", "usa los ids de paper.shadow.yml (no se registró nada)")
     p.state["versions"].setdefault(v, {})[stage] = True
     p.save_state()
-    print(f"actualizado paper.state.jsonc · paper/{v}/{FILES[stage]} · {len(found)} secciones")
-    return cmd_status(p, header=False)
+    c = report(p)
+    return ok(f"registradas {len(found)} secciones de paper/{v}/{FILES[stage]}", next_step(p, c))
+
+
+def frozen_error(c: dict) -> int:
+    for e in c["errors"]:
+        print(f"  - {e}")
+    return error(f"{len(c['errors'])} sección(es) frozen fueron editadas", "restaura su texto (git checkout) o cambia su estado a on en paper.yml")
 
 
 def classify(p: Paper) -> dict:
@@ -405,12 +531,9 @@ def classify(p: Paper) -> dict:
             "blocked": blocked, "stale": stale, "errors": errors}
 
 
-def cmd_status(p: Paper, header: bool = True) -> int:
-    if header:
-        p.load()
+def report(p: Paper) -> dict:
     c = classify(p)
     v, current, rows, improve, rewrite = c["version"], c["current"], c["rows"], c["improve"], c["rewrite"]
-    blocked, stale, errors = c["blocked"], c["stale"], c["errors"]
     fmt = p.cfg.get("format", {})
     vstate = p.state["versions"].get(v, {}) if v else {}
     stages = "/".join(s for s in FILES if vstate.get(s)) or "ninguna"
@@ -421,20 +544,30 @@ def cmd_status(p: Paper, header: bool = True) -> int:
         print("| " + " | ".join(r) + " |")
     print(f"\nA mejorar (on): {', '.join(improve) or '—'}")
     print(f"A reescribir (rewrite): {', '.join(rewrite) or '—'}")
-    if stale:
-        print(f"STALE (frozen, no se tocan; decide si descongelar): {'; '.join(stale)}")
-    if blocked:
-        print(f"BLOCKED (datos faltantes, no se generan): {'; '.join(blocked)}")
+    if c["stale"]:
+        print(f"STALE (frozen, no se tocan; decide si descongelar): {'; '.join(c['stale'])}")
+    if c["blocked"]:
+        print(f"BLOCKED (datos faltantes, no se generan): {'; '.join(c['blocked'])}")
     marco, pf, pstate = picoc_versions.status(p.theme)
     if pstate != "OK":
         print(f"WARN picoc {pstate}: marco configurado {marco} · último {p.rel(pf) if pf else '—'} → correr rsl-picoc (las secciones que dependen de picoc quedan BLOCKED)")
     marco_sec = next((secs["marco-pico"] for secs in (current["polish"], current["borrador"]) if "marco-pico" in secs), None)
     if marco_sec is not None and not re.search(rf"\b{marco}\b", marco_sec):
         print(f"WARN marco-pico no nombra el marco configurado ({marco})")
-    if errors:
-        print("FAIL:\n  - " + "\n  - ".join(errors))
-        return 1
-    return 0
+    return c
+
+
+def cmd_status(p: Paper) -> int:
+    p.load()
+    c = report(p)
+    if c["errors"]:
+        return frozen_error(c)
+    parts = [f"{len(c['improve'])} a mejorar", f"{len(c['rewrite'])} a reescribir"]
+    if c["stale"]:
+        parts.append(f"{len(c['stale'])} stale")
+    if c["blocked"]:
+        parts.append(f"{len(c['blocked'])} blocked")
+    return ok(f"paper/{c['version'] or '—'}: " + ", ".join(parts), next_step(p, c))
 
 
 APA_PAREN = re.compile(r"\(([^()]*?\b(?:19|20)\d{2}[a-z]?)\)")
@@ -465,8 +598,13 @@ def cmd_cites(p: Paper, target: str | None) -> int:
         v = p.latest()
         f = p.dir / v / FILES["polish"] if v and (p.dir / v / FILES["polish"]).exists() else (p.dir / v / FILES["borrador"] if v else None)
     if not f or not f.exists():
-        sys.exit("error: no hay archivo del paper que revisar")
-    text = f.read_text(encoding="utf-8")
+        raise Fail(f"no hay archivo que revisar ({target or 'el paper no tiene versiones'})", "indica un archivo existente o crea el borrador con rsl-make-paper")
+    if f.is_dir():
+        raise Fail(f"{target} es una carpeta, no un archivo", "indica el .md a revisar")
+    try:
+        text = f.read_text(encoding="utf-8")
+    except UnicodeDecodeError:
+        raise Fail(f"{f} no está en UTF-8", "guárdalo como UTF-8")
     body, refs, from_table = split_refs(text)
     issues: list[str] = []
     if style == "ieee":
@@ -504,52 +642,62 @@ def cmd_cites(p: Paper, target: str | None) -> int:
             issues.append(f"Referencias no están en orden alfabético: {surnames}")
     rel = f.relative_to(ROOT) if f.is_absolute() and ROOT in f.parents else f
     if issues:
-        print(f"FAIL citas ({style}) · {rel}")
         for i in issues:
             print(f"  - {i}")
-        return 1
-    print(f"PASS citas ({style}) · {rel} · {len(refs)} referencias")
-    return 0
+        return error(f"citas ({style}) de {rel}: {len(issues)} problema(s) (ver detalle arriba)", "corrígelos con citas-rsl y vuelve a correr --cites")
+    return ok(f"citas ({style}) de {rel} coherentes con {len(refs)} referencias")
 
 
 def cmd_picoc(p: Paper) -> int:
-    try:
-        marco, f, state = picoc_versions.status(p.theme)
-    except picoc_versions.MarcoError as e:
-        print(f"ERROR formato.marco: {e}")
-        return 1
+    marco, f, state = picoc_versions.status(p.theme)
     print(f"marco: {marco} ({'paper.yml' if p.yml_path.exists() else 'por defecto, sin paper.yml'})")
     print(f"último: {p.rel(f) if f else '—'}")
-    print(f"estado: {state}" + ("" if state == "OK" else " → correr rsl-picoc"))
-    return 0 if state == "OK" else 1
+    if state != "OK":
+        return error(f"picoc {state}: el marco configurado es {marco} y el último es {p.rel(f) if f else 'ninguno'}", f"corre rsl-picoc (siguiente versión: {p.rel(picoc_versions.next_dir(p.theme, marco))}/)")
+    return ok(f"marco {marco} al día ({p.rel(f)})")
+
+
+USAGE = "uso: paper:status docs/<slug> [--init | --migrate | --new-version | --update borrador|polish | --cites [archivo] | --picoc]"
 
 
 def main(argv: list[str]) -> int:
     if not argv or argv[0] in ("-h", "--help"):
         print(__doc__)
-        return 2
-    theme = Path(argv[0])
+        return error(USAGE, code=2) if not argv else ok("ayuda mostrada")
+    theme = Path(argv[0].rstrip("/") or "/")
     theme = theme if theme.is_absolute() else ROOT / theme
+    if not theme.exists():
+        raise Fail(f"no existe el tema {argv[0]}", "usa la carpeta docs/<slug> del tema")
     if not theme.is_dir():
-        sys.exit(f"error: no existe el tema {argv[0]}")
+        raise Fail(f"{argv[0]} es un archivo, no la carpeta de un tema", "usa la carpeta docs/<slug>")
     p = Paper(theme)
     flag = argv[1] if len(argv) > 1 else None
-    if flag == "--init":
-        return cmd_init(p)
-    if flag == "--migrate":
-        return cmd_migrate(p)
-    if flag == "--new-version":
-        return cmd_new_version(p)
-    if flag == "--update":
-        if len(argv) < 3 or argv[2] not in FILES:
-            sys.exit("uso: --update borrador|polish")
-        return cmd_update(p, argv[2])
-    if flag == "--cites":
-        return cmd_cites(p, argv[2] if len(argv) > 2 else None)
-    if flag == "--picoc":
-        return cmd_picoc(p)
-    return cmd_status(p)
+    extra = argv[2:]
+    try:
+        if flag is None:
+            return cmd_status(p)
+        if flag in ("--init", "--migrate", "--new-version", "--picoc") and extra:
+            raise Fail(f"{flag} no acepta argumentos ({' '.join(extra)})", USAGE, 2)
+        if flag == "--init":
+            return cmd_init(p)
+        if flag == "--migrate":
+            return cmd_migrate(p)
+        if flag == "--new-version":
+            return cmd_new_version(p)
+        if flag == "--update":
+            if len(extra) != 1 or extra[0] not in FILES:
+                raise Fail("--update necesita exactamente una etapa: borrador | polish", USAGE, 2)
+            return cmd_update(p, extra[0])
+        if flag == "--cites":
+            if len(extra) > 1:
+                raise Fail("--cites acepta un solo archivo", USAGE, 2)
+            return cmd_cites(p, extra[0] if extra else None)
+        if flag == "--picoc":
+            return cmd_picoc(p)
+    except picoc_versions.MarcoError as e:
+        raise Fail(str(e), e.fix)
+    raise Fail(f"opción desconocida {flag}", USAGE, 2)
 
 
 if __name__ == "__main__":
-    sys.exit(main(sys.argv[1:]))
+    run(main)

@@ -44,7 +44,14 @@ Nothing changed (`picoc:latest` OK, `picoc:lint` PASS, no `rewrite`) → report 
 6. **Completo — consolidate:** validate new terms with `thesaurus:check`, write `picoc.md` and `picoc-debate.md` (positions in a few bullets per agent, a decisions table, what is left for the user).
 7. `pnpm -s picoc:lint docs/<slug>` → **PASS** (fix and repeat).
 8. Section 2 of `informe.md` / `informe-polish.md` = only the link: `Las palabras clave, el marco <MARCO> (<componentes en palabras>) y las queries se encuentran en [picoc/<carpeta>/picoc.md](picoc/<carpeta>/picoc.md).`
-9. Chat: path, lint result, key decisions, paper sections now stale/blocked (`pnpm -s paper:status docs/<slug>`).
+9. Chat: key decisions and the paper sections now stale or blocked (`pnpm -s paper:status docs/<slug>`), then the Cierre line.
+
+## Cierre
+
+The last message of the skill is exactly one line:
+
+- Stop at the first failure (`picoc:latest` gives an ERROR other than FALTA/DESFASADO (e.g. unknown letter), `thesaurus:check` fails, or `picoc:lint` is not OK after fixing): `ERROR: <mensaje del script>. <cómo arreglarlo>`. Do not continue with later steps.
+- Everything went well: `OK: marco <MARCO> en picoc/<carpeta>/ (modo <completo | ligero>), picoc:lint OK. Próximo paso: <la skill que la llamó | Usa rsl-make-paper sobre docs/<slug>/>`; nothing changed: `OK: el marco <MARCO> ya estaba al día; no se creó versión. Próximo paso: Usa rsl-make-paper sobre docs/<slug>/`.
 
 ## Forbidden
 
