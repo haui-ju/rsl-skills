@@ -49,6 +49,7 @@ GROUPS = [
     ("resultados", "Resultados"),
     ("discusion", "Discusión"),
     ("conclusion", "Conclusión"),
+    ("declaraciones", "Declaraciones"),
 ]
 STATES = {"on": (True, False), "rewrite": (True, False), "frozen": (True, True), "off": (False, False)}
 STATE_ALIASES = {True: "on", False: "off"}  # PyYAML lee on/off como booleanos
@@ -90,6 +91,8 @@ sections:
   - { id: criterios-seleccion, title: Criterios de inclusión y exclusión,       group: metodologia, depends_on: [topic.md, picoc] }
   - { id: seleccion-prisma,    title: "Proceso de selección — Diagrama PRISMA", group: metodologia, depends_on: [picoc] }
   - { id: calidad,             title: Evaluación de calidad,                    group: metodologia, depends_on: [RSL/seleccion] }
+  - { id: extraccion-datos,    title: Extracción de datos,                      group: metodologia, depends_on: [picoc] }
+  - { id: sintesis,            title: Síntesis de datos,                        group: metodologia, depends_on: [picoc] }
   # Resultados (requieren RSL/seleccion y RSL/extraccion, preparados por el usuario)
   - { id: distribucion,        title: Distribución anual de publicaciones, group: resultados, depends_on: [RSL/extraccion] }
   - { id: hallazgos-generales, title: Hallazgos generales,                 group: resultados, depends_on: [RSL/extraccion] }
@@ -100,6 +103,8 @@ sections:
   - { id: amenazas,        title: Amenazas a la validez,                   group: discusion, depends_on: [ecuacion-busqueda, seleccion-prisma] }
   # Conclusión · Referencias
   - { id: conclusion,  title: Conclusión,  group: conclusion,  depends_on: [resultados-rq, discusion-rq] }
+  # Declaraciones (PRISMA 2020, ítems 24–27): registro y protocolo, financiamiento, conflictos, datos
+  - { id: declaraciones, title: Declaraciones, group: declaraciones, depends_on: [picoc] }
   - { id: referencias, title: Referencias, group: referencias, derived: true }
 """
 
@@ -204,6 +209,16 @@ class Paper:
         dup = sorted({i for i in ids if ids.count(i) > 1})
         if dup:
             raise Fail(f"{self.rel(self.shadow_path)} repite secciones: {', '.join(dup)}", "deja un solo id por sección")
+        added: set[str] = set()
+        defaults = yaml.safe_load(DEFAULT_SHADOW)["sections"]
+        for i, d in enumerate(defaults):
+            if d["id"] in ids:
+                continue
+            prev = next((defaults[j]["id"] for j in range(i - 1, -1, -1) if defaults[j]["id"] in ids), None)
+            pos = ids.index(prev) + 1 if prev else 0
+            secs.insert(pos, dict(d))
+            ids.insert(pos, d["id"])
+            added.add(d["id"])
         self.cfg = {"format": dict(shadow.get("format") or {}) if isinstance(shadow.get("format"), dict) else {}}
         errors: list[str] = []
         formato = human.get("formato") or {}
@@ -258,7 +273,7 @@ class Paper:
             if sec.get("derived"):
                 sec["enabled"], sec["frozen"] = True, False
                 continue
-            if sec["id"] not in states:
+            if sec["id"] not in states and sec["id"] not in added:
                 print(f"WARN: '{sec['id']}' no está en config.yml; se trata como off")
             sec["estado"] = states.get(sec["id"], "off")
             sec["enabled"], sec["frozen"] = STATES.get(sec["estado"], (False, False))

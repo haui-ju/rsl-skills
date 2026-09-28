@@ -6,12 +6,13 @@ Reglas:
   PG     pregunta general == § 1.2 Problemática de la ficha (informe-polish.md | informe.md)
   R1     cada fila de la tabla de componentes justifica su origen citando el tema (“…”)
   R2     una fila por componente del marco; keywords de cada fila (salvo T) == su bloque en Scopus, WoS e IEEE Xplore;
-         T == filtro de año en las 3 bases; sin filtros de tipo de documento; IEEE Xplore ≤ 10 comodines
+         filtros de CR en las queries: periodo (== T si lo hay) en las 3 bases; tipo de documento e idioma en Scopus y WoS;
+         acceso abierto en Scopus (OA) y anotado bajo WoS e IEEE Xplore; IEEE Xplore ≤ 10 comodines
   R3     exactamente 1 RQ (¿…?) por componente del marco, enlazada desde la tabla
   KY     '## Keywords' tras 'Palabras clave': 5 o 6 filas (EN · ES · Comp.) que van al paper; cada término sale de
          Palabras clave con su mismo componente y cada componente del marco (salvo T) aporta al menos una
   CR     última sección '## Criterios de inclusión y exclusión' con '### Inclusión' y '### Exclusión': listas de viñetas
-         breves (≤ 25 palabras, ≥ 2 por lista); la inclusión fija idioma, tipo de documento y, si hay T, sus mismos años
+         breves (≤ 25 palabras, ≥ 2 por lista); la inclusión fija periodo (== T), idioma, tipo de documento y acceso abierto
   KW     palabras clave ES/EN: primero descriptores IEEE preferidos (con pág.), libres solo al final y justificados
   IEEE   cada descriptor declarado es preferido en ieee-thesaurus.json y está en su bloque
 
@@ -36,13 +37,18 @@ THES_JSON = ROOT / "global" / "thesaurus" / "ieee-thesaurus.json"
 DATABASES = ("Scopus", "Web of Science", "IEEE Xplore")
 IEEE_MAX_WILDCARDS = 10
 FORBIDDEN = ("Cribado", "T — Filtros", "T - Filtros", "Filtros", "Términos libres")
-FILTER_PREFIX = re.compile(r"(DT|PY|PUBYEAR|LIMIT-TO)\s*=?\s*$", re.I)
+FILTER_PREFIX = re.compile(r"(DT|PY|LA|PUBYEAR|LIMIT-TO|DOCTYPE|LANGUAGE)\s*=?\s*$", re.I)
 QUESTION = re.compile(r"¿[^?]+\?", re.S)
 CRITERIA = "Criterios de inclusión y exclusión"
 KEYWORDS_MIN, KEYWORDS_MAX = 5, 6
 CRITERION_MAX_WORDS = 25
 LANGUAGE_RE = re.compile(r"idioma|inglés|español|portugués|francés|alemán|english|spanish", re.I)
 DOCTYPE_RE = re.compile(r"revista|congreso|conferencia|actas|arbitra|revisi[oó]n por pares|journal|proceedings", re.I)
+OA_RE = re.compile(r"acceso abierto|open access", re.I)
+PERIOD_RE = re.compile(r"(\d{4})\s*(?:[–-]|y|a|al|hasta)\s*(\d{4})")
+LANGS = {"English": r"ingl[eé]s|english", "Spanish": r"español|spanish", "Portuguese": r"portugu[eé]s|portuguese",
+         "French": r"franc[eé]s|french", "German": r"alem[aá]n|german"}
+DOCTYPES = {"ar": (r"revista|journal", "Article"), "cp": (r"congreso|conferencia|actas|proceedings", "Proceedings Paper")}
 
 
 def rel(p: Path) -> Path:
@@ -237,6 +243,16 @@ def main(path: Path) -> int:
             errs.append(f"R2: {c} tiene keywords repetidas")
         rows_terms.append((c, terms))
 
+    crit_inc = " ".join(
+        norm_text(re.sub(r"^\s*[-*]\s+", "", l))
+        for l in (find(sections(find(secs, CRITERIA) or "", "###"), "Inclusión") or "").splitlines()
+        if re.match(r"^\s*[-*]\s+\S", l)
+    )
+    cr_years = PERIOD_RE.search(crit_inc)
+    period = years or ((int(cr_years.group(1)), int(cr_years.group(2))) if cr_years else None)
+    cr_langs = {l for l, rx in LANGS.items() if re.search(rx, crit_inc, re.I)}
+    cr_types = {c for c, (rx, _) in DOCTYPES.items() if re.search(rx, crit_inc, re.I)}
+    cr_oa = bool(OA_RE.search(crit_inc))
     for db in DATABASES:
         body = find(secs, f"Query {db}")
         q = code_block(body)
@@ -245,8 +261,28 @@ def main(path: Path) -> int:
             continue
         if db == "IEEE Xplore" and q.count("*") > IEEE_MAX_WILDCARDS:
             errs.append(f"R2 [{db}]: {q.count('*')} comodines; IEEE Xplore admite {IEEE_MAX_WILDCARDS} (usar frases sin * fuera de P)")
-        if re.search(r"DOCTYPE|\bDT\s*=", q):
-            errs.append(f"R2 [{db}]: quitar el filtro de tipo de documento (va en los criterios de inclusión, no en la query)")
+        if db == "Scopus":
+            q_types = {c.lower() for c in re.findall(r"DOCTYPE\s*(?:,\s*\"|\()\s*(\w+)", q, re.I)}
+            q_langs = {l.capitalize() for l in re.findall(r"LANGUAGE\s*,\s*\"(\w+)\"", q, re.I)}
+        elif db == "Web of Science":
+            dt = re.search(r"\bDT\s*=\s*\(([^)]*)\)", q)
+            la = re.search(r"\bLA\s*=\s*\(([^)]*)\)", q)
+            names = {v.casefold(): c for c, (_, v) in DOCTYPES.items()}
+            q_types = {names.get(x.strip().strip('"').casefold(), x.strip()) for x in re.split(r"\s+OR\s+", dt.group(1))} if dt else set()
+            q_langs = {x.strip().strip('"').capitalize() for x in re.split(r"\s+OR\s+", la.group(1))} if la else set()
+        if db != "IEEE Xplore":
+            if not q_types:
+                errs.append(f"R2 [{db}]: falta el filtro de tipo de documento de los criterios de inclusión")
+            elif (q_types & set(DOCTYPES)) != cr_types:
+                errs.append(f"R2 [{db}]: el tipo de documento de la query ({', '.join(sorted(q_types))}) no coincide con los criterios de inclusión ({', '.join(sorted(cr_types)) or '—'})")
+            if not q_langs:
+                errs.append(f"R2 [{db}]: falta el filtro de idioma de los criterios de inclusión")
+            elif q_langs != cr_langs:
+                errs.append(f"R2 [{db}]: los idiomas de la query ({', '.join(sorted(q_langs))}) no coinciden con los criterios de inclusión ({', '.join(sorted(cr_langs)) or '—'})")
+        if cr_oa:
+            has_oa = re.search(r"\bOA\s*,\s*\"", q, re.I) if db == "Scopus" else OA_RE.search(body or "")
+            if not has_oa:
+                errs.append(f"R2 [{db}]: falta el filtro de acceso abierto de los criterios de inclusión" + ("" if db == "Scopus" else " (anotado bajo la query)"))
         blocks = query_blocks(q)
         if len(blocks) != len(rows_terms):
             errs.append(f"R2 [{db}]: {len(blocks)} bloques en la query vs {len(rows_terms)} componentes con keywords")
@@ -258,17 +294,17 @@ def main(path: Path) -> int:
                     + (f" · solo en query: {extra}" if extra else "")
                     + (f" · solo en tabla: {missing}" if missing else "")
                 )
-        if years:
-            a, b = years
+        if period:
+            a, b = period
             has_year = {
                 "Scopus": re.search(rf"PUBYEAR\s*>\s*{a - 1}\b", q) and re.search(rf"PUBYEAR\s*<\s*{b + 1}\b", q),
                 "Web of Science": re.search(rf"PY\s*=\s*\(\s*{a}\s*-\s*{b}\s*\)", q),
                 "IEEE Xplore": re.search(rf"{a}\s*[–-]\s*{b}", body or ""),
             }[db]
             if not has_year:
-                errs.append(f"R2 [{db}]: falta el filtro de año {a}–{b} de T")
+                errs.append(f"R2 [{db}]: falta el filtro de año {a}–{b} de " + ("T" if years else "los criterios de inclusión"))
         elif re.search(r"PUBYEAR|\bPY\s*=", q):
-            errs.append(f"R2 [{db}]: filtro de año sin componente T en {marco}")
+            errs.append(f"R2 [{db}]: filtro de año sin periodo en los criterios de inclusión")
 
     kw_rows = table(find(secs, "Palabras clave") or "")
     if not kw_rows:
@@ -375,7 +411,11 @@ def main(path: Path) -> int:
             if not LANGUAGE_RE.search(inc):
                 errs.append("CR: la inclusión debe fijar el idioma (p. ej. «artículos en inglés o español»)")
             if not DOCTYPE_RE.search(inc):
-                errs.append("CR: la inclusión debe fijar el tipo de documento (p. ej. «artículos de revista o de congreso revisados por pares»)")
+                errs.append("CR: la inclusión debe fijar el tipo de documento (p. ej. «artículos de revista revisados por pares»)")
+            if not cr_years:
+                errs.append("CR: la inclusión debe fijar el periodo (p. ej. «artículos publicados entre 2021 y 2026»)")
+            if not cr_oa:
+                errs.append("CR: la inclusión debe fijar el acceso abierto (criterio por defecto; «artículos de acceso abierto»)")
             if years and not re.search(rf"{years[0]}\s*(?:[–-]|y|a|al|hasta)\s*{years[1]}", inc):
                 errs.append(f"CR: la inclusión debe usar el mismo periodo que T ({years[0]}–{years[1]})")
 

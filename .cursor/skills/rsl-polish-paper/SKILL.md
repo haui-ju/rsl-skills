@@ -50,11 +50,11 @@ Language per `formato.idioma` (Abstract/Resumen per `formato.resumen`); headings
 
 Contexto 3–5 short paragraphs · El problema 3–4 (arises from the previous → question → gap → contrast) · Justificación 2–4 · Objetivo de la RSL 2–3 · Organización 1 (coherent with the `on` groups).
 
-- Metodología: same content rules as the [Metodología template of rsl-make-paper](../rsl-make-paper/SKILL.md#metodología-template-draft); the polish only tightens the prose.
-  - Tables, keywords, Scopus and Web of Science queries and CI/CE criteria stay as in the latest picoc.
-  - The framework justification cites Kitchenham y Charters (2007) and the PRISMA paragraph cites Page et al. (2021), both from `global/bibliography/bibliography.md` with the printed page of the catalog.
-  - User markers (`X`, `n = X`, `[[ AGREGAR DIAGRAMA ]]`) are kept exactly; PRISMA counts only from `RSL/seleccion/`.
-  - Length: framework justification 1–2 paragraphs; the PRISMA paragraph 1 paragraph plus the numbered steps.
+- Metodología: same content rules as the [Metodología template of rsl-make-paper](../rsl-make-paper/SKILL.md#metodología-template-draft); the polish only tightens the prose. What each section must report: `playbooks/estandares-rsl.md` (PRISMA 2020 item and Kitchenham y Charters page); a missing item in an `on` section is a finding for the critic.
+  - Tables, keywords, Scopus and Web of Science queries (with their filters) and CI/CE criteria stay as in the latest picoc.
+  - The framework justification cites Kitchenham y Charters (2007), the PRISMA paragraph cites Page et al. (2021) and the keywords cite the IEEE Thesaurus (IEEE, 2019) with the note under the table, all from `global/bibliography/bibliography.md` with the printed page of the catalog.
+  - User markers (`X`, `n = X`, `[[ … ]]`) are kept exactly; PRISMA counts only from `RSL/seleccion/`.
+  - Length: framework justification 1–2 paragraphs; the PRISMA paragraphs (guideline, then process with the reviewer markers) plus the numbered steps.
 - Resultados / Discusión / Conclusión: only from `RSL/extraccion/`, per `format.results_by`.
 - Presentation (tables, figures, order) may imitate the recurring structure of `global/examples/` (one graph query); never their text.
 - **Referencias** = every work cited, rebuilt every run, per `formato.citas` and `global/citation-style/<STYLE>.md`.

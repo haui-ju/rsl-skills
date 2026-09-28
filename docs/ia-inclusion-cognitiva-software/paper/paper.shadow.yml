@@ -24,6 +24,8 @@ sections:
   - { id: criterios-seleccion, title: Criterios de inclusión y exclusión,       group: metodologia, depends_on: [topic.md, picoc] }
   - { id: seleccion-prisma,    title: "Proceso de selección — Diagrama PRISMA", group: metodologia, depends_on: [picoc] }
   - { id: calidad,             title: Evaluación de calidad,                    group: metodologia, depends_on: [RSL/seleccion] }
+  - { id: extraccion-datos,    title: Extracción de datos,                      group: metodologia, depends_on: [picoc] }
+  - { id: sintesis,            title: Síntesis de datos,                        group: metodologia, depends_on: [picoc] }
   # Resultados (requieren RSL/seleccion y RSL/extraccion, preparados por el usuario)
   - { id: distribucion,        title: Distribución anual de publicaciones, group: resultados, depends_on: [RSL/extraccion] }
   - { id: hallazgos-generales, title: Hallazgos generales,                 group: resultados, depends_on: [RSL/extraccion] }
@@ -34,4 +36,5 @@ sections:
   - { id: amenazas,        title: Amenazas a la validez,                   group: discusion, depends_on: [ecuacion-busqueda, seleccion-prisma] }
   # Conclusión · Referencias
   - { id: conclusion,  title: Conclusión,  group: conclusion,  depends_on: [resultados-rq, discusion-rq] }
+  - { id: declaraciones, title: Declaraciones, group: declaraciones, depends_on: [picoc] }
   - { id: referencias, title: Referencias, group: referencias, derived: true }

@@ -11,7 +11,7 @@ formato:
   citas: apa7 # apa7 | ieee
   resumen: [en, es] # idiomas del Abstract/Resumen
   resultados_por: rq # rq | tema
-  marco: PICOC # marco de búsqueda libre: PICO, PIO, PICOC, PICOCT, PICOS… (por defecto PICOCT); al cambiarlo, correr rsl-picoc
+  marco: PICO # marco de búsqueda libre: PICO, PIO, PICOC, PICOCT, PICOS… (por defecto PICOCT); al cambiarlo, correr rsl-picoc
 
 Portada:
   encabezado: frozen
@@ -29,8 +29,10 @@ Metodología:
   palabras-clave: on
   ecuacion-busqueda: on
   criterios-seleccion: on
-  seleccion-prisma: on
+  seleccion-prisma: frozen
   calidad: off
+  extraccion-datos: off
+  sintesis: off
 
 Resultados:
   distribucion: off
@@ -44,5 +46,8 @@ Discusión:
 
 Conclusión:
   conclusion: off
+
+Declaraciones:
+  declaraciones: off
 
 # Referencias: automáticas (siempre se derivan de las citas del texto)

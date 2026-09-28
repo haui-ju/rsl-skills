@@ -52,8 +52,12 @@ Si `global/thesaurus/ieee-thesaurus.json` o el grafo no existen → pedir `Usa r
 - La **tabla de componentes** tiene **exactamente una fila por componente del marco**, en su orden (p. ej. PICOCT: P, I, C, O, Co, T · PIO: P, I, O). Todos entran; el usuario decide después cuál quitar.
 - Columna `Keywords`: cada término **escrito exactamente como va en la query**, entre backticks, separados por ` · ` (p. ej. `` `autism` · `"autism spectrum"` · `neurodivers*` ``).
 - Cada componente distinto de T es un bloque `( … OR … )` unido con `AND`, en el orden de la tabla, en **cada** query (Scopus, Web of Science, IEEE Xplore), con exactamente esos términos. Ni más ni menos.
-- **T** no tiene términos: su fila indica el rango de años (`2020–2026`) y en las queries es el filtro de año (`PUBYEAR > 2019 AND PUBYEAR < 2027` · `PY=(2020-2026)` · IEEE Xplore: filtro de la interfaz anotado bajo la query). Sin filtros de tipo de documento (`DOCTYPE`, `DT`): el tipo de documento es un criterio de inclusión (CR) y se aplica en el cribado.
-- Sin `T` en el marco no hay filtro de año. `S` (diseño de estudio) es un bloque más de la query.
+- **T** no tiene términos: su fila indica el rango de años (`2021–2026`), que es el mismo periodo de CR. `S` (diseño de estudio) es un bloque más de la query.
+- **Filtros de inclusión en cada query**, haya o no T: los límites que fija CR (periodo, tipo de documento, idioma y acceso abierto) van después de los bloques y coinciden con CR. Ejemplo (artículos de revista, 2021–2026, inglés o español, acceso abierto):
+  - Scopus: `PUBYEAR > 2020 AND PUBYEAR < 2027 AND (LIMIT-TO(DOCTYPE,"ar")) AND (LIMIT-TO(LANGUAGE,"English") OR LIMIT-TO(LANGUAGE,"Spanish")) AND (LIMIT-TO(OA,"all"))`.
+  - Web of Science: `AND PY=(2021-2026) AND DT=(Article) AND LA=(English OR Spanish)`; el acceso abierto no tiene etiqueta de campo y va como filtro de la interfaz anotado bajo la query.
+  - IEEE Xplore: todos los filtros de la interfaz, anotados bajo la query.
+  Estos filtros son límites de la búsqueda: se reportan completos en el paper y, en PRISMA, los registros que quitan van en *registros eliminados antes del cribado* (`playbooks/estandares-rsl.md`).
 - IEEE Xplore admite **10 comodines** por búsqueda: reservar `*` para las variantes morfológicas del bloque P y usar frases sin comodín en el resto (Scopus y Web of Science ya recuperan los plurales de las frases).
 
 ### R3 — Una pregunta por componente
@@ -79,7 +83,7 @@ Si `global/thesaurus/ieee-thesaurus.json` o el grafo no existen → pedir `Usa r
 
 - Última sección del picoc: `## Criterios de inclusión y exclusión` con dos listas de viñetas, `### Inclusión` (qué se acepta para revisar un artículo) y `### Exclusión` (qué lo descarta).
 - Criterios **breves**: uno por viñeta, verificable al leer título, resumen o texto completo, de 25 palabras como máximo. Al menos 2 por lista. Por ejemplo: «Artículos en inglés o español».
-- La inclusión fija siempre el **idioma** y el **tipo de documento** (p. ej. artículos de revista o de congreso revisados por pares). Si el marco tiene T, fija también el **mismo periodo** que T.
+- La inclusión fija siempre el **periodo**, el **idioma**, el **tipo de documento** (p. ej. artículos de revista revisados por pares) y el **acceso abierto** (por defecto; solo se omite si el usuario lo pide). Si el marco tiene T, el periodo es el mismo que T. Sin indicación del usuario, el periodo son los 5 últimos años completos más el año en curso.
 - Los criterios salen del tema: del alcance y las exclusiones de `topic.md` y de los componentes del marco. No se inventan restricciones que el tema no pide; tampoco se repite una query en forma de criterio.
 - Una exclusión no es solo la negación de una inclusión: nombra el caso concreto que se descarta (duplicados, sin texto completo, literatura gris, estudios fuera del alcance del tema).
 
@@ -92,7 +96,8 @@ Si `global/thesaurus/ieee-thesaurus.json` o el grafo no existen → pedir `Usa r
 4. Candidatos EN (2–4 por concepto: singular, guion, siglas) → **una** llamada `pnpm -s thesaurus:check …`.
 5. Clasificar por estado; expandir con criterio: UF al `OR` si nacen del tema; NT solo si están en el alcance; RT nunca automático; BT nunca en la query.
 6. Redactar las RQ por componente (R3).
-7. Construir las 3 queries con los **mismos** bloques (R2). Truncamiento (`*`) solo en términos libres o plurales.
+7. Construir las 3 queries con los **mismos** bloques y los filtros de CR (R2). Truncamiento (`*`) solo en términos libres o plurales.
+   Validar la búsqueda (Kitchenham y Charters, 2007, p. 14): listar en `## Validación de la búsqueda` 3–5 estudios relevantes ya conocidos (de `RSL/`, del informe o del tema) con su DOI, y marcar si la query de Scopus debería recuperarlos (sus términos aparecen en título, resumen o palabras clave). El usuario confirma la recuperación real en la base; si un estudio no se recuperaría, revisar los bloques.
 8. Elegir las 5 o 6 keywords del paper (KY) y redactar los criterios de inclusión y exclusión (CR) desde el alcance y las exclusiones de `topic.md` y el marco.
 9. `pnpm -s picoc:lint docs/<slug>` → OK antes de entregar.
 
@@ -124,7 +129,7 @@ Si `global/thesaurus/ieee-thesaurus.json` o el grafo no existen → pedir `Usa r
 |-------|----------|----|----------|------------------------|---------------|
 | P | … | RQ1 | `autism` · `"autism spectrum"` · `neurodivers*` | Autism (p.35) | Nace de “usuarios con … neurodivergencia”; `neurodivers*` sin descriptor IEEE |
 | … | … | … | … | … | … |
-| T | Ventana temporal | RQ6 | `2020–2026` | — | “…”; filtro de año en las 3 bases |
+| T | Ventana temporal | RQ6 | `2021–2026` | — | “…”; filtro de año en las 3 bases |
 
 ## Palabras clave
 
@@ -151,15 +156,20 @@ TITLE-ABS-KEY (
   AND ( <bloque O> )
   AND ( <bloque Co> )
 )
-AND PUBYEAR > 2019 AND PUBYEAR < 2027
+AND PUBYEAR > 2020 AND PUBYEAR < 2027
+AND ( LIMIT-TO ( DOCTYPE , "ar" ) )
+AND ( LIMIT-TO ( LANGUAGE , "English" ) OR LIMIT-TO ( LANGUAGE , "Spanish" ) )
+AND ( LIMIT-TO ( OA , "all" ) )
 ```
 
 ## Query Web of Science
 
 ```text
 ALL=( <bloque P> ) AND ALL=( <bloque I> ) AND ALL=( <bloque C> ) AND ALL=( <bloque O> ) AND ALL=( <bloque Co> )
-AND PY=(2020-2026)
+AND PY=(2021-2026) AND DT=(Article) AND LA=(English OR Spanish)
 ```
+
+Filtro de la interfaz: Open Access.
 
 ## Query IEEE Xplore
 
@@ -167,7 +177,13 @@ AND PY=(2020-2026)
 ( "IEEE Terms":"Autism" OR "autism spectrum" OR neurodivers* ) AND ( … ) AND ( … ) AND ( … ) AND ( … )
 ```
 
-Filtro de año en la interfaz: 2020–2026.
+Filtros de la interfaz: 2021–2026 · Journals · Open Access; el filtro que la interfaz no ofrezca se aplica en el cribado.
+
+## Validación de la búsqueda
+
+| Estudio conocido | DOI | Fuente | ¿Lo recupera la query de Scopus? |
+|---|---|---|---|
+| Autor et al. (año) | 10.… | `RSL/…` o informe | Sí: “…” en el título / No: falta el término … |
 
 ## Búsqueda auxiliar — localizar revisiones afines (opcional; no es el corpus primario)
 
@@ -177,9 +193,10 @@ Filtro de año en la interfaz: 2020–2026.
 
 ### Inclusión
 
-- Artículos publicados entre 2020 y 2026 (T).
+- Artículos publicados entre 2021 y 2026 (T).
 - Artículos en inglés o español.
-- Artículos de revista o de congreso revisados por pares.
+- Artículos de revista revisados por pares.
+- Artículos de acceso abierto.
 - … (un criterio breve por viñeta, salido del tema)
 
 ### Exclusión
@@ -198,7 +215,7 @@ Filtro de año en la interfaz: 2020–2026.
 - Usar un término **no preferido** como descriptor principal cuando existe su USE.
 - Justificación sin cita del tema, o sustituir un libre por un *cercano* no equivalente.
 - Tabla y query con términos distintos (R2), en cualquiera de las 3 bases; componentes del marco sin fila.
-- Secciones de extracción, “Cribado”, “T — Filtros” o “Términos libres” aparte (el cribado son los criterios de CR); filtros `DOCTYPE`/`DT` en las queries.
+- Secciones de extracción, “Cribado”, “T — Filtros” o “Términos libres” aparte (el cribado son los criterios de CR); filtros de la query distintos de CR, o CR sin acceso abierto (salvo que el usuario lo pida).
 - Términos libres antes que los IEEE en Palabras clave, o sin justificación.
 - Pregunta general distinta de la § 1.2 de la ficha; marco distinto del de `config.yml`.
 - Componentes sin RQ, o más de una por componente (R3).

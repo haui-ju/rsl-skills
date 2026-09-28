@@ -116,6 +116,9 @@ TITLE-ABS-KEY (
     OR "accessibility testing" OR "accessibility audit" )
 )
 AND PUBYEAR > 2019 AND PUBYEAR < 2027
+AND ( LIMIT-TO ( DOCTYPE , "ar" ) OR LIMIT-TO ( DOCTYPE , "cp" ) )
+AND ( LIMIT-TO ( LANGUAGE , "English" ) OR LIMIT-TO ( LANGUAGE , "Spanish" ) )
+AND ( LIMIT-TO ( OA , "all" ) )
 ```
 
 ## Query Web of Science
@@ -139,8 +142,10 @@ AND ALL=("software engineering" OR "software development" OR "software developme
   OR "code generation" OR "software testing" OR "automatic testing" OR "automated testing"
   OR "verification and validation" OR "system validation" OR "accessibility evaluation"
   OR "accessibility testing" OR "accessibility audit")
-AND PY=(2020-2026)
+AND PY=(2020-2026) AND DT=(Article OR "Proceedings Paper") AND LA=(English OR Spanish)
 ```
+
+Filtro de la interfaz: Open Access.
 
 ## Query IEEE Xplore
 
@@ -169,7 +174,7 @@ AND
   OR "accessibility testing" OR "accessibility audit" )
 ```
 
-Filtro de año en la interfaz: 2020–2026.
+Filtros de la interfaz: 2020–2026 · Journals y Conferences · Open Access.
 
 *Nota:* la query usa 8 comodines, por debajo del límite de 10 de IEEE Xplore; los comodines se reservan para el bloque P, donde las variantes morfológicas son muchas. Scopus y Web of Science recuperan los plurales de las frases sin comodín.
 
@@ -208,7 +213,7 @@ AND PUBYEAR > 2019 AND PUBYEAR < 2027
 ### Inclusión
 
 - Estudios publicados entre 2020 y 2026.
-- Artículos de revista o de congreso revisados por pares, en inglés o español.
+- Artículos de revista o de congreso revisados por pares, de acceso abierto, en inglés o español.
 - Estudios dirigidos a personas con discapacidad cognitiva o neurodivergencia.
 
 ### Exclusión

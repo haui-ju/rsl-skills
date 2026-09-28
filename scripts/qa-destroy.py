@@ -539,7 +539,7 @@ def _(sb):
     sb.run(["lint", t], "ERROR", has="1.2")
 
 
-@case("D14", "destruir", "picoc vacío, sin **Marco:**, sin queries, con DOCTYPE y con T invertido")
+@case("D14", "destruir", "picoc vacío, sin **Marco:**, sin queries, con tipo de documento distinto de CR y con T invertido")
 def _(sb):
     def mut(fn, has):
         t = sb.theme()
@@ -549,7 +549,7 @@ def _(sb):
     mut(lambda s: "", "vacío")
     mut(lambda s: s.replace("**Marco:** PICOCT", "Marco PICOCT"), "Marco")
     mut(lambda s: re.sub(r"## Query Web of Science.*?(?=## Query IEEE)", "", s, flags=re.S), "Web of Science")
-    mut(lambda s: s.replace("AND PUBYEAR > 2019 AND PUBYEAR < 2027", "AND PUBYEAR > 2019 AND PUBYEAR < 2027 AND DOCTYPE(ar)", 1), "tipo de documento")
+    mut(lambda s: s.replace(' OR LIMIT-TO ( DOCTYPE , "cp" )', "", 1), "tipo de documento")
     mut(lambda s: s.replace("`2020–2026`", "`2026–2020`"), "años")
 
 
@@ -760,14 +760,14 @@ def _(sb):
     sb.run(["lint", t], "ERROR", has="carpeta")
 
 
-@case("K04", "marco", "picoc PIO con filtro de año o con una fila de más")
+@case("K04", "marco", "picoc PIO con filtro de año distinto del periodo de CR o con una fila de más")
 def _(sb):
     t = sb.theme()
     sb.set_yml(t, r"^(  marco:\s*)PICOCT", r"\g<1>PIO")
     f = sb.add_picoc(t, "PIO", f"{TODAY}-2-PIO")
     good = f.read_text(encoding="utf-8")
-    f.write_text(re.sub(r"(TITLE-ABS-KEY \(.*?\n\))\n", r"\1\nAND PUBYEAR > 2019 AND PUBYEAR < 2027\n", good, count=1, flags=re.S), encoding="utf-8")
-    sb.run(["lint", t], "ERROR", has="sin componente T")
+    f.write_text(good.replace("AND PUBYEAR > 2020 AND PUBYEAR < 2027", "AND PUBYEAR > 2018 AND PUBYEAR < 2027", 1), encoding="utf-8")
+    sb.run(["lint", t], "ERROR", has="2021–2026 de los criterios de inclusión")
     f.write_text(good.replace("| O | Métricas", "| C | Comparación | RQ3 | `x` | — | Procede de “sesgo” |\n| O | Métricas", 1), encoding="utf-8")
     sb.run(["lint", t], "ERROR", has="exactamente las filas")
 
@@ -797,6 +797,25 @@ def _(sb):
     sb.set_yml(t, r"^(  marco:\s*)PICOCT", r"\g<1>PIO")
     sb.add_picoc(t, "PIO", f"{TODAY}-2-PIO")
     sb.run(["lint", t], "OK", has="2 criterios de inclusión")
+
+
+@case("K08", "marco", "filtros de inclusión en las queries: sin acceso abierto en CR o en Scopus, WoS sin tipo, idioma o nota de acceso abierto")
+def _(sb):
+    t = sb.theme()
+    f = next((t / "picoc").glob("*/picoc.md"))
+    good = f.read_text(encoding="utf-8")
+
+    def lint(text, has):
+        f.write_text(text, encoding="utf-8")
+        sb.run(["lint", t], "ERROR", has=has)
+
+    lint(good.replace(", de acceso abierto,", ","), "fijar el acceso abierto")
+    lint(good.replace('\nAND ( LIMIT-TO ( OA , "all" ) )', "", 1), "[Scopus]: falta el filtro de acceso abierto")
+    lint(good.replace(' AND DT=(Article OR "Proceedings Paper")', ""), "[Web of Science]: falta el filtro de tipo de documento")
+    lint(good.replace("LA=(English OR Spanish)", "LA=(English)"), "idiomas de la query")
+    lint(good.replace("Filtro de la interfaz: Open Access.", ""), "anotado bajo la query")
+    f.write_text(good, encoding="utf-8")
+    sb.run(["lint", t], "OK")
 
 
 @case("K06", "marco", "keywords del paper: ausentes, fuera de lugar, más de 6, menos de 5, inventadas, de otro componente o sin cubrir un componente")
@@ -999,9 +1018,9 @@ def _(sb):
 def _(sb):
     make = (SKILLS / "rsl-make-paper" / "SKILL.md").read_text(encoding="utf-8")
     polish = (SKILLS / "rsl-polish-paper" / "SKILL.md").read_text(encoding="utf-8")
-    for need in ("global/bibliography/bibliography.md", "rsl:source", "[[ AGREGAR DIAGRAMA ]]", "Web of Science", "n = X", "Excluidos por fecha de publicación", "CI1"):
+    for need in ("global/bibliography/bibliography.md", "rsl:source", "[[ AGREGAR DIAGRAMA ]]", "Web of Science", "n = X", "excluidos por los filtros de la base de datos", "Búsqueda por base de datos", "IEEE, 2019", "estandares-rsl.md", "número de revisores", "CI1"):
         sb.check(need in make, f"rsl-make-paper/SKILL.md no contiene «{need}»")
-    for need in ("global/bibliography/bibliography.md", "[[ AGREGAR DIAGRAMA ]]", "Hilo", "R7", "R8", "Sustento", "Minimal diff", "Write, do not bolt on", "No redundancy"):
+    for need in ("global/bibliography/bibliography.md", "[[ AGREGAR DIAGRAMA ]]", "estandares-rsl.md", "IEEE, 2019", "Hilo", "R7", "R8", "Sustento", "Minimal diff", "Write, do not bolt on", "No redundancy"):
         sb.check(need in polish, f"rsl-polish-paper/SKILL.md no contiene «{need}»")
     sb.check("R7" in make, "rsl-make-paper/SKILL.md no pide el hilo entre párrafos (R7)")
     sb.check("R8" in make, "rsl-make-paper/SKILL.md no pide citar las afirmaciones importantes (R8)")
