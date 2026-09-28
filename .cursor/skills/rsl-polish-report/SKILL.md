@@ -19,7 +19,7 @@ The critic's job here: real contribution, no false claims, correct citations, co
 
 1. Read `informe.md` (+ `topic.md` if present). Evidence via the theme graph (`graphify query "…" --graph docs/<slug>/graphify-out/graph.json`); no full PDFs, no Graphify refresh.
 2. Parallel: `critico-rsl`, `defensor-rsl`, `impacto-social-rsl`, `viabilidad-negocio-rsl` (mode **informe**: local evidence first, web only to verify a claim or a missing review; at most 10 items each). Prompt = informe text + "Evalúa/mejora este INFORME. Responde en español con el formato de tu rol." The search framework is not debated here (that is `rsl-picoc`).
-3. Brief synthesis in chat; write `informe-polish.md`. Section 2 = only the link to the latest `picoc/<carpeta>/picoc.md` (sentence in `rsl-picoc` step 8).
+3. Brief synthesis in chat; write `informe-polish.md`. Section 2 = only the link to the latest `picoc/<carpeta>/picoc.md` (`pnpm -s picoc:latest docs/<slug>`), with this sentence: `Las palabras clave, el marco <MARCO> (<componentes en palabras>), las queries y los criterios de inclusión y exclusión se encuentran en [picoc/<carpeta>/picoc.md](picoc/<carpeta>/picoc.md).` This skill owns the link; `rsl-picoc` never edits the informe.
 4. **Marco:** `pnpm -s picoc:latest docs/<slug>` and `pnpm -s picoc:lint docs/<slug>` (after writing `informe-polish.md`):
    - FALTA or DESFASADO → **`rsl-picoc`** full mode.
    - OK and the only lint FAIL is `PG` (the polished § 1.2 changed) → **`rsl-picoc`** light mode.

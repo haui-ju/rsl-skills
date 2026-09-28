@@ -10,7 +10,8 @@ Objetivo: términos **fieles al tema** (descriptor oficial + sinónimos oficiale
 - Letras válidas: `P` población · `I` intervención · `C` comparación · `O` resultado · `T` tiempo · `S` diseño de estudio. La **segunda** `C` es `Co` contexto (PICOC = P, I, C, O, Co). Una letra fuera de esta lista es **ERROR**: los scripts terminan con exit 1 y ninguna skill continúa hasta que el usuario la corrija.
 - Cada generación es una versión trazable: `docs/<slug>/picoc/<AAAA-MM-DD>[-n]-<MARCO>/picoc.md` + `picoc-debate.md`. Solo la skill **`rsl-picoc`** crea versiones; las anteriores no se editan.
 - Si el usuario cambia `formato.marco`, el último picoc queda **DESFASADO** y hay que correr `rsl-picoc` (crea `<hoy>-<MARCO>/`).
-- El informe **no** contiene tablas ni queries: su sección 2 solo enlaza a la última versión. El paper siempre lee la última versión (`pnpm -s picoc:latest docs/<slug>`).
+- `rsl-picoc` solo escribe la versión nueva de `picoc/`; lee el informe, `topic.md`, `config.yml` y el paper, pero nunca los modifica.
+- El informe **no** contiene tablas ni queries: su sección 2 solo enlaza a la última versión; ese enlace lo escriben `rsl-make-report` y `rsl-polish-report`. El paper siempre lee la última versión (`pnpm -s picoc:latest docs/<slug>`).
 - El picoc fija las **keywords del paper** (regla KY: 5 o 6, las más relevantes) y termina con los **criterios de inclusión y exclusión** (regla CR): qué debe cumplir un artículo para revisarse y qué lo descarta. La extracción de datos **no** va en el picoc.
 
 ## Herramientas

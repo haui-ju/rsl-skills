@@ -30,7 +30,7 @@ Writing: `playbooks/redaccion-academica.md` (Spanish académico-profesional). Te
 2. Normalize título / problemática / objeto (the sharpened version of `topic.md` if the verdict was GO_con_cambios or the user agrees).
 3. `pnpm -s picoc:latest docs/<slug>`; no `config.yml` → `pnpm -s paper:status docs/<slug> --init`, then set `formato.marco` if the user asked for another framework. ERROR (unknown letter) → stop and report it.
 4. **Up to 3 SLRs** (at least 2 reviews; otherwise at least 5 primary studies from the last 5 years). PDFs into `RSL/PDF/`, referenced as `RSL/PDF/<file>.pdf`. Paywall → mark missing, keep DOI and Scopus query. Never invent DOI or PDF.
-5. Write `informe.md` with the exact 7 points below (section 4 ≤ 300 words citing section 3; section 7 = short title; section 2 = only the picoc link).
+5. Write `informe.md` with the exact 7 points below (section 4 ≤ 300 words citing section 3; section 7 = short title; section 2 = only the picoc link, with this sentence: `Las palabras clave, el marco <MARCO> (<componentes en palabras>), las queries y los criterios de inclusión y exclusión se encuentran en [picoc/<carpeta>/picoc.md](picoc/<carpeta>/picoc.md).` This skill owns the link; `rsl-picoc` never edits the informe).
 6. Run **`rsl-picoc`** (full mode; general question = the new § 1.2). Missing thesaurus → ask for `Usa rsl-bootstrap`.
 7. `pnpm -s redaccion:lint docs/<slug>/informe.md` (0 FAIL) and `pnpm -s paper:status docs/<slug> --cites docs/<slug>/informe.md` (PASS); fix and repeat.
 8. Chat: SLRs found, pending queries and PDFs present or missing (do not run the next skills; no Graphify refresh here), then the Cierre line.

@@ -918,6 +918,19 @@ def build_sandbox() -> Path:
     return base
 
 
+@case("S07", "skills", "rsl-picoc solo escribe picoc/: no edita informe, paper ni config.yml")
+def _(sb):
+    txt = (SKILLS / "rsl-picoc" / "SKILL.md").read_text(encoding="utf-8")
+    body = txt.split("## Forbidden")[0]
+    for bad in ("--init", "--new-version", "--update", "Section 2 of"):
+        sb.check(bad not in body, f"rsl-picoc/SKILL.md pide '{bad}' fuera de Forbidden (la skill no puede escribir el informe ni el paper)")
+    sb.check("Read-only outside `picoc/`" in txt, "rsl-picoc/SKILL.md no declara que solo lee fuera de picoc/")
+    for other in ("rsl-make-report", "rsl-polish-report"):
+        sb.check("rsl-picoc` never edits the informe" in (SKILLS / other / "SKILL.md").read_text(encoding="utf-8"),
+                 f"{other}/SKILL.md no asume el enlace de la sección 2 del informe")
+
+
+
 def report_dir() -> Path:
     qa = ROOT / "qa"
     name, n = TODAY, 1

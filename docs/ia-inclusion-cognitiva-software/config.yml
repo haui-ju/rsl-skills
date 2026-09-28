@@ -11,26 +11,26 @@ formato:
   citas: apa7 # apa7 | ieee
   resumen: [en, es] # idiomas del Abstract/Resumen
   resultados_por: rq # rq | tema
-  marco: PICOCT # marco de búsqueda libre: PICO, PIO, PICOC, PICOCT, PICOS… (por defecto PICOCT); al cambiarlo, correr rsl-picoc
+  marco: PICOC # marco de búsqueda libre: PICO, PIO, PICOC, PICOCT, PICOS… (por defecto PICOCT); al cambiarlo, correr rsl-picoc
 
 Portada:
   encabezado: frozen
   resumen: off
 
 Introducción:
-  contexto: on
-  problema: on
-  justificacion: on
-  objetivo-rsl: on
-  organizacion: on
+  contexto: frozen
+  problema: frozen
+  justificacion: frozen
+  objetivo-rsl: frozen
+  organizacion: frozen
 
 Metodología:
-  marco-pico: off
-  palabras-clave: off
-  ecuacion-busqueda: off
-  criterios-seleccion: off
-  seleccion-prisma: off
-  calidad: off
+  marco-pico: on
+  palabras-clave: on
+  ecuacion-busqueda: on
+  criterios-seleccion: on
+  seleccion-prisma: on
+  calidad: on
 
 Resultados:
   distribucion: off
