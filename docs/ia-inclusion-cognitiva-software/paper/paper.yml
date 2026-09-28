@@ -17,11 +17,11 @@ Portada:
   resumen: off
 
 Introducción:
-  contexto: frozen
-  problema: frozen
-  justificacion: frozen
-  objetivo-rsl: frozen
-  organizacion: frozen
+  contexto: on
+  problema: on
+  justificacion: on
+  objetivo-rsl: on
+  organizacion: on
 
 Metodología:
   marco-pico: off

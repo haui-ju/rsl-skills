@@ -7,7 +7,8 @@ Uso:
 FAIL (bloquea la entrega):
   - marcas editoriales pendientes ([citar], (citar), TODO: citar, TODO, PENDIENTE, TBD, FIXME, ???)
   - huellas del flujo interno en la prosa (topic.md, panel, GO_*, rsl-*, rutas, `código`, "Nota de artefacto")
-  - siglas usadas antes de definirse ("forma completa (SIGLA)" o "SIGLA (forma completa)")
+  - siglas usadas antes de definirse ("forma completa (SIGLA)" o "SIGLA (forma completa)");
+    en el paper, el encabezado (Título/Tema/Problemática/Objetivo) no cuenta: las siglas se definen en el cuerpo
 WARN (revisar; corregir o justificar):
   - oraciones de más de N palabras
   - notación de trabajo en la prosa (×, →, A+B, sufijos -duro/-dura)
@@ -93,6 +94,8 @@ def main(argv: list[str]) -> int:
     fails: list[str] = []
     warns: list[str] = []
     seen: dict[str, int] = {}
+    header = re.search(r"<!-- paper:section id=encabezado -->(.*?)<!-- /paper:section -->", text, flags=re.S)
+    header_lines = range(text.count("\n", 0, header.start()) + 1, text.count("\n", 0, header.end()) + 2) if header else range(0)
 
     for m in re.finditer(r"^.*$", text, flags=re.M):
         line = m.group(0)
@@ -115,6 +118,8 @@ def main(argv: list[str]) -> int:
             if a in ALLOW or ROMAN.match(a) or len(a) > 12 or re.match(r"\s\d", p[m.end():]):
                 continue
             acr_here.add(a)
+            if n in header_lines:
+                continue
             if a not in seen:
                 seen[a] = n
                 if not is_defined(p, m):

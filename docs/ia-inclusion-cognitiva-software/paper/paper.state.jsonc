@@ -7,7 +7,7 @@
         "borrador": "becd63baf4e1",
         "polish": "d4380bab31f5"
       },
-      "version": "2026-09-05",
+      "version": "2026-09-27",
       "sources_hash": {
         "topic.md": "b2bcfb779775",
         "informe-polish.md": "cc1997a5b60d",
@@ -18,9 +18,9 @@
     "contexto": {
       "content_hash": {
         "borrador": "9275c27e1b79",
-        "polish": "10966c89b2a2"
+        "polish": "0a009831199c"
       },
-      "version": "2026-09-05",
+      "version": "2026-09-27",
       "sources_hash": {
         "RSL/MD": "ec05ded1dbef"
       },
@@ -29,9 +29,9 @@
     "problema": {
       "content_hash": {
         "borrador": "6755b22be5c0",
-        "polish": "2a39e7443d84"
+        "polish": "4ebbd870f641"
       },
-      "version": "2026-09-05",
+      "version": "2026-09-27",
       "sources_hash": {
         "picoc.md": "e106c9124351"
       },
@@ -40,9 +40,9 @@
     "justificacion": {
       "content_hash": {
         "borrador": "ef9a2b99a52e",
-        "polish": "53ce10a752b7"
+        "polish": "a99768828db1"
       },
-      "version": "2026-09-05",
+      "version": "2026-09-27",
       "sources_hash": {
         "informe-polish.md": "cc1997a5b60d"
       },
@@ -51,9 +51,9 @@
     "objetivo-rsl": {
       "content_hash": {
         "borrador": "ebd8a8c0c12b",
-        "polish": "c86b7fffb9d8"
+        "polish": "3694c05414c0"
       },
-      "version": "2026-09-05",
+      "version": "2026-09-27",
       "sources_hash": {
         "picoc.md": "e106c9124351"
       },
@@ -62,9 +62,9 @@
     "organizacion": {
       "content_hash": {
         "borrador": "feb56ec9af3d",
-        "polish": "300d57d53b92"
+        "polish": "d0cc5c433df7"
       },
-      "version": "2026-09-05",
+      "version": "2026-09-27",
       "sources_hash": {
         "grupos": "ae7b799633fe"
       },
@@ -73,9 +73,9 @@
     "referencias": {
       "content_hash": {
         "borrador": "6985deed0fd7",
-        "polish": "bd3953648b50"
+        "polish": "6f2e1b3edcfd"
       },
-      "version": "2026-09-05",
+      "version": "2026-09-27",
       "sources_hash": {},
       "status": "polished"
     }
@@ -83,6 +83,11 @@
   "versions": {
     "2026-09-05": {
       "borrador": true,
+      "polish": true
+    },
+    "2026-09-27": {
+      "from": "2026-09-05",
+      "borrador": false,
       "polish": true
     }
   }

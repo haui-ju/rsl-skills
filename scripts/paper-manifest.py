@@ -440,6 +440,8 @@ def cmd_cites(p: Paper, target: str | None) -> int:
                     cited.add((mm.group(1), mm.group(2)))
         for m in APA_NARR.finditer(body):
             cited.add((m.group(1), m.group(2)))
+        aliases = {m.group(2): m.group(1).split()[0] for m in re.finditer(r"([A-ZÁÉÍÓÚÑ][\w ]+?) \[([A-Z][\w]+)\]", body)}
+        cited = {(aliases.get(a, a), y) for a, y in cited}
         ref_keys = []
         for r in refs:
             mm = re.match(r"(?:[-*]\s*)?([A-ZÁÉÍÓÚÑ][\wÁÉÍÓÚÑáéíóúñ'\-]+)[^()]*?\(((?:19|20)\d{2}[a-z]?)\)", r)
