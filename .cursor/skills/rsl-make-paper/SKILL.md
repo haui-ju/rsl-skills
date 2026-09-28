@@ -4,7 +4,7 @@ description: >-
   Builds a new version docs/[short-title]/paper/<fecha>/paper-borrador.md — the
   rich draft of the RSL paper, section by section according to paper/paper.yml
   (on = improve, rewrite = regenerate from scratch; frozen/off ones are copied
-  from the previous version). Uses topic.md, informe, picoc.md, Graphify theme memory,
+  from the previous version). Uses topic.md, informe, the latest picoc/<fecha>-<MARCO>/picoc.md, Graphify theme memory,
   RSL/MD and global/examples. Use when the user says rsl-make-paper. Does NOT
   launch the 4-agent debate (that is rsl-polish-paper); only citas-rsl at the end.
 ---
@@ -30,7 +30,7 @@ An `on` section with no previous text is shown as `reescribir (nueva)` and is ge
 
 ```text
 docs/[titulo-breve]/
-  topic.md · informe-polish.md · picoc(-polish).md     (insumos internos)
+  topic.md · informe-polish.md · picoc/<fecha>-<MARCO>/picoc.md (último)   (insumos internos)
   RSL/PDF/  RSL/MD/                                     (corpus)
   RSL/seleccion/  RSL/extraccion/                       (los prepara el USUARIO: queries, validación, PRISMA; solo lectura)
   graphify-out/                                         (memoria del tema — solo lookup)
@@ -57,16 +57,17 @@ Usa rsl-make-paper sobre docs/ia-inclusion-cognitiva-software/
 ## Procedure (required)
 
 1. Resolve `docs/[titulo-breve]/`. If `paper/paper.yml` is missing → `pnpm -s paper:status docs/<slug> --init` (crea `paper.yml` + `paper.shadow.yml`; Introducción on, resto off). If `paper:status` says the old format → `--migrate`.
-2. Run `pnpm -s paper:status docs/<slug>` first: if **A mejorar** and **A reescribir** are both empty (everything frozen/off), do not create a version; report STALE / BLOCKED and stop. Otherwise `pnpm -s paper:status docs/<slug> --new-version` → creates `paper/<fecha>/` copying the previous version and prints the table. Work **only** on the sections listed in **A mejorar (on)** — improve — and **A reescribir (rewrite)** — regenerate. Report **STALE** (frozen whose sources changed: do not touch, the user decides) and **BLOCKED** (missing data, e.g. `RSL/extraccion`: do not generate, say what is missing).
-3. Read internal inputs: ficha (`informe-polish.md` | `informe.md`), marco (`picoc-polish.md` | `picoc.md`), `topic.md`; and the **frozen** sections of the new version as context (coherence; never edit them).
-4. **Graphify first:**
+2. **Marco:** `pnpm -s picoc:latest docs/<slug>`. If it says DESFASADO (the `formato.marco` of `paper.yml` changed) or FALTA → stop and ask the user to run `Usa rsl-picoc sobre docs/<slug>/` first. Never read an older picoc version.
+3. Run `pnpm -s paper:status docs/<slug>` first: if **A mejorar** and **A reescribir** are both empty (everything frozen/off), do not create a version; report STALE / BLOCKED and stop. Otherwise `pnpm -s paper:status docs/<slug> --new-version` → creates `paper/<fecha>/` copying the previous version and prints the table. Work **only** on the sections listed in **A mejorar (on)** — improve — and **A reescribir (rewrite)** — regenerate. Report **STALE** (frozen whose sources changed: do not touch, the user decides) and **BLOCKED** (missing data, e.g. `RSL/extraccion`: do not generate, say what is missing).
+4. Read internal inputs: ficha (`informe-polish.md` | `informe.md`), marco (the latest `picoc/<fecha>-<MARCO>/picoc.md` printed by `picoc:latest`), `topic.md`; and the **frozen** sections of the new version as context (coherence; never edit them).
+5. **Graphify first:**
    ```bash
    graphify query "<pregunta>" --graph docs/[titulo-breve]/graphify-out/graph.json
    graphify query "<sección a escribir>" --graph global/examples/graphify-out/graph.json
    rg "^#" global/examples/*.md
    ```
    Theme graph + `RSL/MD/` locators for evidence (no full PDFs). Examples: only headings and a short passage per section to imitate **structure and presentation**; never copy their text, data or citations. Our writing must exceed their quality. Do not refresh Graphify.
-5. Write each section to improve or rewrite **between its markers** (create them if the section is new; keep the order of `paper.shadow.yml`):
+6. Write each section to improve or rewrite **between its markers** (create them if the section is new; keep the order of `paper.shadow.yml`):
    ```markdown
    <!-- paper:section id=contexto -->
    ### Contexto
@@ -74,15 +75,15 @@ Usa rsl-make-paper sobre docs/ia-inclusion-cognitiva-software/
    <!-- /paper:section -->
    ```
    Headings follow the merged format (`formato` of `paper.yml` + `format` of `paper.shadow.yml`, as printed by `paper:status`): groups as H2 numbered per `format.numbering` (`## I. Introducción`, `## II. Metodología`…; letters A–E for sections if `subsection_letters`), sections as H3, deeper numbered subsections as H4 (`#### 1.1 …`) allowed in the draft. `## Referencias` is derived (all works cited in any section).
-6. Content rules per group:
+7. Content rules per group:
    - **Introducción:** template below (maximal useful expansion).
-   - **Metodología:** from `picoc(-polish).md` — its RQs, keywords, tables and the 3 queries **as they are** (no new terms or RQ). PRISMA / selection only from `RSL/seleccion/` (user data); never invent counts.
+   - **Metodología:** from the latest picoc — its RQs, keywords, component table and the 3 queries **as they are** (no new terms or RQ). `marco-pico` must say explicitly which framework is used, as configured in `formato.marco` (e.g. "Se adoptó el marco PICOCT (población, intervención, comparación, resultado, contexto y tiempo)…"), and present one row per component with its RQ; its title comes from `paper:status` (`Pregunta <MARCO> y sus componentes`). The year window of T and the absence of screening decisions come from the picoc; inclusion/exclusion criteria are the user's. PRISMA / selection only from `RSL/seleccion/` (user data); never invent counts.
    - **Resultados / Discusión / Conclusión:** only from `RSL/extraccion/` (user data), by RQ or by theme per `format.results_by`.
    - **Abstract / Resumen:** only when the content sections exist; keywords from `picoc` (`format.keywords_from`).
-7. **`citas-rsl`** (single agent) on the improved and rewritten sections: `pnpm -s paper:status docs/<slug> --cites paper/<fecha>/paper-borrador.md` + agent fixes until PASS or justified `PENDIENTE`.
-8. `pnpm -s redaccion:lint docs/<slug>/paper/<fecha>/paper-borrador.md` → 0 FAIL (warnings allowed in the borrador).
-9. `pnpm -s paper:status docs/<slug> --update borrador`.
-10. Chat: version path, improved / rewritten / copied / stale / blocked sections, sources, citas result, next step `Usa rsl-polish-paper sobre docs/[titulo-breve]/`.
+8. **`citas-rsl`** (single agent) on the improved and rewritten sections: `pnpm -s paper:status docs/<slug> --cites paper/<fecha>/paper-borrador.md` + agent fixes until PASS or justified `PENDIENTE`.
+9. `pnpm -s redaccion:lint docs/<slug>/paper/<fecha>/paper-borrador.md` → 0 FAIL (warnings allowed in the borrador).
+10. `pnpm -s paper:status docs/<slug> --update borrador`.
+11. Chat: version path, improved / rewritten / copied / stale / blocked sections, sources, citas result, next step `Usa rsl-polish-paper sobre docs/[titulo-breve]/`.
 
 ## Writing style (required)
 
@@ -92,9 +93,9 @@ Form per `playbooks/redaccion-academica.md`. The borrador may be long and rich, 
 
 **Hard rules:** never put `topic.md`, `informe.md`, "panel", "GO_con_cambios", skill names or repo paths in the visible text. Never invent DOI/findings. Cite only what topic/ficha/Graphify/MD support.
 
-**Términos técnicos:** reuse the descriptors of the search table of `picoc(-polish).md`; a new EN term → `pnpm -s thesaurus:check "…"` (`playbooks/vocabulario-controlado.md`). In Metodología declare that the strings use IEEE controlled vocabulary + free terms.
+**Términos técnicos:** reuse the descriptors of the component table of the latest picoc; a new EN term → `pnpm -s thesaurus:check "…"` (`playbooks/vocabulario-controlado.md`). In Metodología declare that the strings use IEEE controlled vocabulary + free terms.
 
-**Preguntas:** the general question of `picoc(-polish).md` is the problemática (§ El problema); its per-component sub-questions structure Objetivo de la RSL (one specific objective per RQ) and Organización. Do not invent RQ.
+**Preguntas:** the general question of the picoc is the problemática, identical to § 1.2 of the ficha (encabezado Problemática and § El problema use it verbatim or faithfully); its per-component sub-questions structure Objetivo de la RSL (one specific objective per RQ) and Organización. Do not invent RQ.
 
 ### Maximal useful expansion (draft)
 
@@ -154,7 +155,7 @@ The problemática is an **interrogative** and is stated explicitly in El problem
 - Editing previous versions, frozen or off sections, the states in `paper.yml`, or `paper.shadow.yml` / `paper.state.jsonc` by hand.
 - Generating BLOCKED sections or inventing PRISMA counts / results (the selection is the user's work).
 - Deleting or renaming section markers.
-- Overwriting `informe*.md` / `picoc*.md` / `topic.md`.
+- Overwriting `informe*.md` / anything under `picoc/` / `topic.md`; writing Metodología with a framework different from `formato.marco`.
 - Inventing citations or DOI; citing internal files in the paper body.
 - Copying text, data or citations from `global/examples/`.
 - Dumping full PDFs when Graphify / `RSL/MD` exists; refreshing Graphify.

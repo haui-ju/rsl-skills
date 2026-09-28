@@ -4,7 +4,7 @@ description: >-
   Revisor exclusivo de forma académica del informe y del paper RSL según
   playbooks/redaccion-academica.md: naturalidad, siglas definidas y dosificadas,
   densidad de frases, notación de trabajo, marcas editoriales y título. Usar en
-  rsl-make-report / rsl-polish-report / rsl-make-paper / rsl-polish-paper
+  rsl-make-report / rsl-polish-report / rsl-picoc / rsl-make-paper / rsl-polish-paper
   antes de cerrar.
 ---
 

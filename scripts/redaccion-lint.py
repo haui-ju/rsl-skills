@@ -28,7 +28,7 @@ MARKERS = re.compile(
     re.M,
 )
 INTERNAL = re.compile(
-    r"topic\.md|informe(?:-polish)?\.md|picoc(?:-polish)?\.md|\bpanel\b|\bGO_\w+|\brsl-[a-z-]+|RSL/(?:PDF|MD)|graphify|"
+    r"topic\.md|informe(?:-polish)?\.md|picoc(?:-polish|-debate)?\.md|\bpicoc/\d|\bpanel\b|\bGO_\w+|\brsl-[a-z-]+|RSL/(?:PDF|MD)|graphify|"
     r"Nota de artefacto|\bveredicto\b",
     re.I,
 )

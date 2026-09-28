@@ -1,33 +1,33 @@
 # Configuración técnica del paper; normalmente no se edita.
 # Para activar, congelar o apagar secciones edita paper.yml.
 #   title: encabezado que usa la skill · group: capítulo · depends_on: fuentes que, si cambian, marcan la sección como 'stale'
-#   depends_on especiales: all (todo el paper) · grupos (qué capítulos están on/frozen)
+#   depends_on especiales: all (todo el paper) · grupos (qué capítulos están on/frozen) · picoc (último picoc/<fecha>-<MARCO>/picoc.md)
 #   derived: se reconstruye sola (Referencias sale de las citas del texto)
 version: 1
 format:
   subsection_letters: true   # A. B. C. dentro de Metodología / Resultados
-  keywords_from: picoc       # palabras clave del abstract salen de picoc(-polish).md
+  keywords_from: picoc       # palabras clave del abstract salen del último picoc/<fecha>-<MARCO>/picoc.md
   examples: global/examples  # papers de referencia (solo estructura / presentación)
 sections:
-  - { id: encabezado,   title: "Título · Tema · Problemática · Objetivo", group: portada, depends_on: [topic.md, informe-polish.md, picoc.md] }
+  - { id: encabezado,   title: "Título · Tema · Problemática · Objetivo", group: portada, depends_on: [topic.md, informe-polish.md, picoc] }
   - { id: resumen,      title: "Abstract / Resumen + palabras clave",     group: portada, depends_on: [all] }
   # Introducción
   - { id: contexto,      title: Contexto,           group: introduccion, depends_on: [RSL/MD] }
-  - { id: problema,      title: El problema,        group: introduccion, depends_on: [picoc.md] }
+  - { id: problema,      title: El problema,        group: introduccion, depends_on: [picoc] }
   - { id: justificacion, title: Justificación,      group: introduccion, depends_on: [informe-polish.md] }
-  - { id: objetivo-rsl,  title: Objetivo de la RSL, group: introduccion, depends_on: [picoc.md] }
+  - { id: objetivo-rsl,  title: Objetivo de la RSL, group: introduccion, depends_on: [picoc] }
   - { id: organizacion,  title: Organización del contenido de la revisión, group: introduccion, depends_on: [grupos] }
   # Metodología
-  - { id: marco-pico,          title: "Pregunta PICO y sus componentes",        group: metodologia, depends_on: [picoc.md] }
-  - { id: palabras-clave,      title: Palabras clave pertinentes,               group: metodologia, depends_on: [picoc.md] }
-  - { id: ecuacion-busqueda,   title: Ecuación de búsqueda,                     group: metodologia, depends_on: [picoc.md] }
-  - { id: criterios-seleccion, title: Criterios de inclusión y exclusión,       group: metodologia, depends_on: [topic.md, picoc.md] }
+  - { id: marco-pico,          title: "Pregunta {marco} y sus componentes",        group: metodologia, depends_on: [picoc] }
+  - { id: palabras-clave,      title: Palabras clave pertinentes,               group: metodologia, depends_on: [picoc] }
+  - { id: ecuacion-busqueda,   title: Ecuación de búsqueda,                     group: metodologia, depends_on: [picoc] }
+  - { id: criterios-seleccion, title: Criterios de inclusión y exclusión,       group: metodologia, depends_on: [topic.md, picoc] }
   - { id: seleccion-prisma,    title: "Proceso de selección — Diagrama PRISMA", group: metodologia, depends_on: [RSL/seleccion] }
   - { id: calidad,             title: Evaluación de calidad,                    group: metodologia, depends_on: [RSL/seleccion] }
   # Resultados (requieren RSL/seleccion y RSL/extraccion, preparados por el usuario)
   - { id: distribucion,        title: Distribución anual de publicaciones, group: resultados, depends_on: [RSL/extraccion] }
   - { id: hallazgos-generales, title: Hallazgos generales,                 group: resultados, depends_on: [RSL/extraccion] }
-  - { id: resultados-rq,       title: Resultados por pregunta,             group: resultados, depends_on: [picoc.md, RSL/extraccion] }
+  - { id: resultados-rq,       title: Resultados por pregunta,             group: resultados, depends_on: [picoc, RSL/extraccion] }
   # Discusión
   - { id: discusion-temas, title: Discusión por tema,                      group: discusion, depends_on: [resultados-rq] }
   - { id: discusion-rq,    title: Discusión por pregunta de investigación, group: discusion, depends_on: [resultados-rq] }

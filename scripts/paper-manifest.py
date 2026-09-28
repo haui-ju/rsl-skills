@@ -9,6 +9,7 @@ Uso:
   python3 scripts/paper-manifest.py docs/<slug> --update borrador  # registra hashes tras escribir paper-borrador.md
   python3 scripts/paper-manifest.py docs/<slug> --update polish    # registra hashes tras escribir paper-polish.md
   python3 scripts/paper-manifest.py docs/<slug> --cites [archivo]  # citas en texto vs referencias (format.citation)
+  python3 scripts/paper-manifest.py docs/<slug> --picoc            # marco configurado + último picoc/<fecha>-<MARCO>/picoc.md
 
 paper.yml lo edita el usuario (frozen / on / rewrite / off + formato).
 paper.shadow.yml: títulos, grupos, depends_on y formato avanzado.
@@ -28,6 +29,9 @@ try:
     import yaml
 except ImportError:
     sys.exit("error: falta PyYAML (pip install --user pyyaml | sudo pacman -S python-yaml | sudo apt install python3-yaml)")
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import picoc_versions  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 FILES = {"borrador": "paper-borrador.md", "polish": "paper-polish.md"}
@@ -50,6 +54,7 @@ FORMATO = {  # clave humana -> (clave interna, {valor humano: valor interno})
     "citas": ("citation", {"apa7": "apa7", "ieee": "ieee"}),
     "resumen": ("abstract", None),
     "resultados_por": ("results_by", {"rq": "rq", "tema": "tema"}),
+    "marco": ("framework", {m: m for m in picoc_versions.COMPONENTS}),
 }
 DEFAULT_ON = {"encabezado", "contexto", "problema", "justificacion", "objetivo-rsl", "organizacion"}
 
@@ -57,33 +62,33 @@ DEFAULT_SHADOW = """\
 # Configuración técnica del paper; normalmente no se edita.
 # Para activar, congelar o apagar secciones edita paper.yml.
 #   title: encabezado que usa la skill · group: capítulo · depends_on: fuentes que, si cambian, marcan la sección como 'stale'
-#   depends_on especiales: all (todo el paper) · grupos (qué capítulos están on/frozen)
+#   depends_on especiales: all (todo el paper) · grupos (qué capítulos están on/frozen) · picoc (último picoc/<fecha>-<MARCO>/picoc.md)
 #   derived: se reconstruye sola (Referencias sale de las citas del texto)
 version: 1
 format:
   subsection_letters: true   # A. B. C. dentro de Metodología / Resultados
-  keywords_from: picoc       # palabras clave del abstract salen de picoc(-polish).md
+  keywords_from: picoc       # palabras clave del abstract salen del último picoc/<fecha>-<MARCO>/picoc.md
   examples: global/examples  # papers de referencia (solo estructura / presentación)
 sections:
-  - { id: encabezado,   title: "Título · Tema · Problemática · Objetivo", group: portada, depends_on: [topic.md, informe-polish.md, picoc.md] }
+  - { id: encabezado,   title: "Título · Tema · Problemática · Objetivo", group: portada, depends_on: [topic.md, informe-polish.md, picoc] }
   - { id: resumen,      title: "Abstract / Resumen + palabras clave",     group: portada, depends_on: [all] }
   # Introducción
   - { id: contexto,      title: Contexto,           group: introduccion, depends_on: [RSL/MD] }
-  - { id: problema,      title: El problema,        group: introduccion, depends_on: [picoc.md] }
+  - { id: problema,      title: El problema,        group: introduccion, depends_on: [picoc] }
   - { id: justificacion, title: Justificación,      group: introduccion, depends_on: [informe-polish.md] }
-  - { id: objetivo-rsl,  title: Objetivo de la RSL, group: introduccion, depends_on: [picoc.md] }
+  - { id: objetivo-rsl,  title: Objetivo de la RSL, group: introduccion, depends_on: [picoc] }
   - { id: organizacion,  title: Organización del contenido de la revisión, group: introduccion, depends_on: [grupos] }
   # Metodología
-  - { id: marco-pico,          title: "Pregunta PICO y sus componentes",        group: metodologia, depends_on: [picoc.md] }
-  - { id: palabras-clave,      title: Palabras clave pertinentes,               group: metodologia, depends_on: [picoc.md] }
-  - { id: ecuacion-busqueda,   title: Ecuación de búsqueda,                     group: metodologia, depends_on: [picoc.md] }
-  - { id: criterios-seleccion, title: Criterios de inclusión y exclusión,       group: metodologia, depends_on: [topic.md, picoc.md] }
+  - { id: marco-pico,          title: "Pregunta {marco} y sus componentes",        group: metodologia, depends_on: [picoc] }
+  - { id: palabras-clave,      title: Palabras clave pertinentes,               group: metodologia, depends_on: [picoc] }
+  - { id: ecuacion-busqueda,   title: Ecuación de búsqueda,                     group: metodologia, depends_on: [picoc] }
+  - { id: criterios-seleccion, title: Criterios de inclusión y exclusión,       group: metodologia, depends_on: [topic.md, picoc] }
   - { id: seleccion-prisma,    title: "Proceso de selección — Diagrama PRISMA", group: metodologia, depends_on: [RSL/seleccion] }
   - { id: calidad,             title: Evaluación de calidad,                    group: metodologia, depends_on: [RSL/seleccion] }
   # Resultados (requieren RSL/seleccion y RSL/extraccion, preparados por el usuario)
   - { id: distribucion,        title: Distribución anual de publicaciones, group: resultados, depends_on: [RSL/extraccion] }
   - { id: hallazgos-generales, title: Hallazgos generales,                 group: resultados, depends_on: [RSL/extraccion] }
-  - { id: resultados-rq,       title: Resultados por pregunta,             group: resultados, depends_on: [picoc.md, RSL/extraccion] }
+  - { id: resultados-rq,       title: Resultados por pregunta,             group: resultados, depends_on: [picoc, RSL/extraccion] }
   # Discusión
   - { id: discusion-temas, title: Discusión por tema,                      group: discusion, depends_on: [resultados-rq] }
   - { id: discusion-rq,    title: Discusión por pregunta de investigación, group: discusion, depends_on: [resultados-rq] }
@@ -107,6 +112,7 @@ formato:
   citas: {citas}             # apa7 | ieee
   resumen: [{resumen}]       # idiomas del Abstract/Resumen
   resultados_por: {resultados_por}      # rq | tema
+  marco: {marco}           # marco de búsqueda: PICO | PICOC | PICOCT (por defecto PICOCT); al cambiarlo, correr rsl-picoc
 """
 
 STATE_HEADER = """\
@@ -119,7 +125,7 @@ def render_human(fmt: dict, shadow_sections: list[dict], states: dict[str, str])
     inv = {k: {iv: hv for hv, iv in (m or {}).items()} for k, (_, m) in FORMATO.items()}
     human_fmt = {}
     for hk, (ik, m) in FORMATO.items():
-        v = fmt.get(ik)
+        v = fmt.get(ik) or (picoc_versions.DEFAULT_MARCO if hk == "marco" else None)
         human_fmt[hk] = ", ".join(v) if hk == "resumen" else inv[hk].get(v, v)
     out = [HUMAN_HEADER.format(**human_fmt).rstrip("\n")]
     for gid, label in GROUPS:
@@ -135,7 +141,7 @@ def render_human(fmt: dict, shadow_sections: list[dict], states: dict[str, str])
 
 def default_human() -> str:
     shadow = yaml.safe_load(DEFAULT_SHADOW)
-    fmt = {"language": "es", "numbering": "roman", "citation": "apa7", "abstract": ["en", "es"], "results_by": "rq"}
+    fmt = {"language": "es", "numbering": "roman", "citation": "apa7", "abstract": ["en", "es"], "results_by": "rq", "framework": picoc_versions.DEFAULT_MARCO}
     return render_human(fmt, shadow["sections"], {i: "on" for i in DEFAULT_ON})
 
 
@@ -175,6 +181,8 @@ class Paper:
                 errors.append(f"formato.{hk} desconocido (válidos: {', '.join(FORMATO)})")
                 continue
             ik, m = FORMATO[hk]
+            if hk == "marco":
+                v = str(v).upper()
             if m is not None and v not in m:
                 errors.append(f"formato.{hk}: '{v}' no válido (usa {' | '.join(m)})")
                 continue
@@ -188,7 +196,10 @@ class Paper:
                 if val not in STATES:
                     errors.append(f"{sid}: estado '{raw}' no válido (usa frozen | on | rewrite | off)")
                 states[sid] = val
+        self.cfg["format"].setdefault("framework", picoc_versions.DEFAULT_MARCO)
         self.sections = shadow["sections"]
+        for sec in self.sections:
+            sec["title"] = str(sec.get("title", "")).replace("{marco}", self.cfg["format"]["framework"])
         self.ids = [s["id"] for s in self.sections]
         for sid in states:
             if sid not in self.ids:
@@ -204,6 +215,10 @@ class Paper:
             sec["estado"] = states.get(sec["id"], "off")
             sec["enabled"], sec["frozen"] = STATES.get(sec["estado"], (False, False))
         self.state = self.read_state()
+        for st in self.state.get("sections", {}).values():
+            src = st.get("sources_hash") or {}
+            if "picoc.md" in src:
+                src.setdefault("picoc", src.pop("picoc.md"))
 
     def read_state(self) -> dict:
         if self.state_path.exists():
@@ -236,6 +251,9 @@ class Paper:
             return sha(",".join(sorted({s.get("group", "") for s in self.sections if s.get("enabled")})).encode())
         if dep == "all":
             return sha(json.dumps({k: v.get("content_hash") for k, v in sorted(self.state["sections"].items())}).encode())
+        if dep == "picoc":
+            f = picoc_versions.latest_file(self.theme)
+            return sha(f.read_bytes()) if f else None
         if dep in self.ids:
             return (self.state["sections"].get(dep, {}).get("content_hash") or {}).get("polish") or "-"
         p = self.theme / dep
@@ -372,7 +390,8 @@ def cmd_status(p: Paper, header: bool = True) -> int:
             status = "mejorar"
             improve.append(sid)
         rows.append((sid, sec.get("estado", "auto"), status, ", ".join(changed) or "—", st.get("version", "—")))
-    print(f"paper/ · última versión: {v or '—'} · idioma: {p.cfg.get('format', {}).get('language', 'es')} · citation: {p.cfg.get('format', {}).get('citation', 'apa7')} · numbering: {p.cfg.get('format', {}).get('numbering', 'roman')}")
+    fmt = p.cfg.get("format", {})
+    print(f"paper/ · última versión: {v or '—'} · idioma: {fmt.get('language', 'es')} · citation: {fmt.get('citation', 'apa7')} · numbering: {fmt.get('numbering', 'roman')} · marco: {fmt['framework']}")
     print("| Sección | estado | status | fuente cambiada | versión |")
     print("|---|---|---|---|---|")
     for r in rows:
@@ -383,6 +402,12 @@ def cmd_status(p: Paper, header: bool = True) -> int:
         print(f"STALE (frozen, no se tocan; decide si descongelar): {'; '.join(stale)}")
     if blocked:
         print(f"BLOCKED (datos faltantes, no se generan): {'; '.join(blocked)}")
+    marco, pf, pstate = picoc_versions.status(p.theme)
+    if pstate != "OK":
+        print(f"WARN picoc {pstate}: marco configurado {marco} · último {p.rel(pf) if pf else '—'} → correr rsl-picoc")
+    marco_sec = next((secs["marco-pico"] for secs in (current["polish"], current["borrador"]) if "marco-pico" in secs), None)
+    if marco_sec is not None and not re.search(rf"\b{marco}\b", marco_sec):
+        print(f"WARN marco-pico no nombra el marco configurado ({marco})")
     if errors:
         print("FAIL:\n  - " + "\n  - ".join(errors))
         return 1
@@ -462,6 +487,14 @@ def cmd_cites(p: Paper, target: str | None) -> int:
     return 0
 
 
+def cmd_picoc(p: Paper) -> int:
+    marco, f, state = picoc_versions.status(p.theme)
+    print(f"marco: {marco} ({'paper.yml' if p.yml_path.exists() else 'por defecto, sin paper.yml'})")
+    print(f"último: {p.rel(f) if f else '—'}")
+    print(f"estado: {state}" + ("" if state == "OK" else " → correr rsl-picoc"))
+    return 0 if state == "OK" else 1
+
+
 def main(argv: list[str]) -> int:
     if not argv or argv[0] in ("-h", "--help"):
         print(__doc__)
@@ -484,6 +517,8 @@ def main(argv: list[str]) -> int:
         return cmd_update(p, argv[2])
     if flag == "--cites":
         return cmd_cites(p, argv[2] if len(argv) > 2 else None)
+    if flag == "--picoc":
+        return cmd_picoc(p)
     return cmd_status(p)
 
 

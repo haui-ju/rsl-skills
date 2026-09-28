@@ -16,8 +16,9 @@ El agente verifica/instala prerrequisitos (node + pnpm, pipx graphifyy, poppler)
 |-------|----------|--------|
 | `rsl-bootstrap` | Paso 0: deja el entorno y todos los grafos Graphify listos | `graphify-out/` · `global/thesaurus/graphify-out/` · `global/examples/graphify-out/` · `docs/*/graphify-out/` |
 | `rsl-topic-panel` | Estresa un tema (4 agentes + debate Mermaid + consenso) | `docs/[titulo-breve]/topic.md` |
-| `rsl-make-report` | Genera el informe UTP (7 puntos) + marco de búsqueda aparte | `docs/[titulo-breve]/informe.md` + `picoc.md` |
-| `rsl-polish-report` | Pule el informe y su marco (4 agentes) | `docs/[titulo-breve]/informe-polish.md` + `picoc-polish.md` |
+| `rsl-make-report` | Genera el informe UTP (7 puntos) y llama a `rsl-picoc` para el marco de búsqueda | `docs/[titulo-breve]/informe.md` + `picoc/<fecha>-<MARCO>/` |
+| `rsl-polish-report` | Pule el informe (4 agentes); si el marco quedó desfasado llama a `rsl-picoc` | `docs/[titulo-breve]/informe-polish.md` |
+| `rsl-picoc` | Crea una versión nueva del marco de búsqueda con el marco de `paper.yml` (PICO / PICOC / PICOCT, por defecto PICOCT): tabla por componente 1:1 con las queries, palabras clave IEEE (libres al final), debate `critico-rsl` + `defensor-rsl` + `redaccion-rsl`, `picoc:lint` PASS | `docs/[titulo-breve]/picoc/<fecha>-<MARCO>/picoc.md` + `picoc-debate.md` |
 | `rsl-make-paper` | Nueva versión del paper borrador, solo secciones `on` (mejorar) y `rewrite` (reescribir) de `paper.yml` (+ agente `citas-rsl` y `redaccion:lint`) | `docs/[titulo-breve]/paper/<fecha>/paper-borrador.md` |
 | `rsl-polish-paper` | Pule esas secciones (4 agentes + `redaccion-rsl` + `citas-rsl`) → texto limpio + traza de debate | `paper/<fecha>/paper-polish.md` + `paper-debate.md` |
 
@@ -37,10 +38,12 @@ docs/[titulo-breve]/
   topic.md
   informe.md             ← sección 2 solo enlaza al marco
   informe-polish.md
-  picoc.md               ← marco PICO/PICOC/PICOCT: RQ por componente, keywords, tabla 1:1, queries Scopus/WoS/IEEE Xplore
-  picoc-polish.md        ← marco pulido (rsl-polish-report)
+  picoc/                 ← marco de búsqueda versionado (solo rsl-picoc crea versiones; el paper lee la última)
+    2026-09-28-PICOCT/   ← <fecha>-<MARCO> según formato.marco de paper.yml
+      picoc.md           ← pregunta general, RQ por componente, tabla de componentes 1:1, palabras clave ES/EN, queries Scopus/WoS/IEEE Xplore
+      picoc-debate.md    ← posturas de los agentes y decisiones
   paper/
-    paper.yml            ← TÚ decides: cada sección frozen / on / rewrite / off + formato (romana, APA/IEEE…)
+    paper.yml            ← TÚ decides: cada sección frozen / on / rewrite / off + formato (romana, APA/IEEE, marco PICOCT…)
     paper.shadow.yml     ← detalle técnico: títulos, capítulos, depends_on (rara vez se edita)
     paper.state.jsonc    ← hashes y versiones (lo gestiona pnpm paper:status; no editar)
     2026-09-05/          ← una carpeta por corrida (trazabilidad; nunca se editan las anteriores)
@@ -86,7 +89,7 @@ Todos con `pnpm <comando>` (`pnpm -s` oculta el eco de pnpm).
 | Alcance | Qué contiene |
 |---------|--------------|
 | `root` | Memoria del repo: skills, agentes, reglas, scripts, `global/` (sin thesaurus ni ejemplos), playbooks, README. |
-| `theme` | Corpus de un tema `docs/<slug>/`: informe, topic, `picoc.md`, última versión del paper y RSL en `RSL/MD`. |
+| `theme` | Corpus de un tema `docs/<slug>/`: informe, topic, `picoc/`, última versión del paper y RSL en `RSL/MD`. |
 | `thesaurus` | IEEE Thesaurus 2019 (10.4k términos con BT/NT/RT/USE), desde `global/thesaurus/IEEE.pdf`. |
 | `examples` | Papers RSL de referencia en `global/examples/` (estructura por secciones). |
 
@@ -106,7 +109,8 @@ En `theme`, el `<slug>` se omite si solo hay un tema; `refresh`/`status` aceptan
 |---------|----------|
 | `thesaurus:check "t1" "t2" …` | Valida varios términos contra IEEE: preferido / no preferido (→ USE) / libre, con sinónimos (UF), específicos (NT) y página. |
 | `thesaurus:lookup "término"` | Ficha completa de un término IEEE (todas sus relaciones y página). |
-| `picoc:lint docs/<slug>/picoc.md` | PASS/FAIL del marco: tabla = queries Scopus/WoS/IEEE Xplore (1:1), origen en el tema, 1 RQ por componente, descriptores IEEE preferidos. |
+| `picoc:latest docs/<slug>` | Marco configurado en `paper.yml` + último `picoc/<fecha>-<MARCO>/picoc.md`: OK, DESFASADO (cambiaste el marco) o FALTA → correr `rsl-picoc`. |
+| `picoc:lint docs/<slug>` | PASS/FAIL del último picoc: marco = `paper.yml`, pregunta general = § 1.2 de la ficha, una fila por componente 1:1 con las queries Scopus/WoS/IEEE Xplore, T = filtro de año, 1 RQ por componente, descriptores IEEE preferidos, libres al final. |
 | `redaccion:lint <archivo.md>` | Forma académica de informe o paper: FAIL por marcas pendientes (`[citar]`, TODO…), notas internas (panel, `topic.md`…) o siglas sin definir; avisos por frases largas, notación ×/+ y exceso de siglas. |
 | `paper:status docs/<slug>` | Estado del paper según `paper/paper.yml`: qué se mejora (on) o reescribe (rewrite), stale, blocked; FAIL si se editó a mano una sección frozen. |
 | `paper:status docs/<slug> --init` | Crea `paper/paper.yml` y `paper/paper.shadow.yml` por defecto. |
@@ -139,9 +143,17 @@ Usa rsl-make-report sobre docs/[titulo-breve]/
 Usa rsl-polish-report sobre docs/[titulo-breve]/informe.md
 ```
 
+### Marco de búsqueda (PICO / PICOC / PICOCT)
+
+```text
+Usa rsl-picoc sobre docs/[titulo-breve]/
+```
+
+El marco sale de `formato.marco` en `paper/paper.yml` (por defecto PICOCT). Si lo cambias (p. ej. `marco: PICO`), `picoc:latest` marca DESFASADO y `rsl-picoc` crea `picoc/<fecha>-PICO/`. El cribado (inclusión/exclusión, tipo de documento) no va en el picoc: lo defines tú.
+
 ### Crear el paper (borrador rico)
 
-Usa `topic.md` + ficha (`informe-polish.md` / `informe.md`) + `picoc.md` + Graphify + `RSL/MD/` + `global/examples/`.
+Usa `topic.md` + ficha (`informe-polish.md` / `informe.md`) + último `picoc/<fecha>-<MARCO>/picoc.md` + Graphify + `RSL/MD/` + `global/examples/`.
 
 ```text
 Usa rsl-make-paper sobre docs/ia-inclusion-cognitiva-software/
@@ -172,7 +184,7 @@ Introducción:
 
 | Estado | Qué le dices | Efecto en la próxima corrida (borrador y polish) |
 |--------|--------------|--------------------------------------------------|
-| `frozen` | Está bien, no lo toques | Se copia tal cual; si cambia una fuente de `depends_on` (p. ej. `picoc.md`) queda **stale** y se avisa |
+| `frozen` | Está bien, no lo toques | Se copia tal cual; si cambia una fuente de `depends_on` (p. ej. un picoc nuevo) queda **stale** y se avisa |
 | `on` | Revísalo y mejóralo | Conserva el texto actual como base y lo corrige, completa y pule; no lo reescribe |
 | `rewrite` | Reescríbelo / replantéalo | Descarta el texto actual y lo vuelve a escribir desde las fuentes; puede cambiar estructura y argumento |
 | `off` | No está activo | No se genera ni aparece (por defecto todo lo posterior a la Introducción) |
@@ -184,9 +196,9 @@ pnpm -s paper:status docs/<slug>            # tabla: qué se mejora o reescribe,
 pnpm -s paper:status docs/<slug> --cites    # citas en texto vs Referencias (APA7 | IEEE según formato.citas)
 ```
 
-- `formato` en `paper.yml`: `idioma` (es por defecto; en, pt, fr, de… cualquier código ISO 639-1), `numeracion` (romana | arabiga | ninguna), `citas` (apa7 | ieee), `resumen` (idiomas), `resultados_por` (rq | tema).
+- `formato` en `paper.yml`: `idioma` (es por defecto; en, pt, fr, de… cualquier código ISO 639-1), `numeracion` (romana | arabiga | ninguna), `citas` (apa7 | ieee), `resumen` (idiomas), `resultados_por` (rq | tema), `marco` (PICO | PICOC | PICOCT; por defecto PICOCT).
 - `paper.shadow.yml`: títulos, capítulo y `depends_on` de cada sección, más formato avanzado (letras A–E, ejemplos). Solo si quieres cambiar dependencias o títulos.
-- Metodología sale de `picoc.md`. Resultados/Discusión/Conclusión necesitan `RSL/seleccion/` y `RSL/extraccion/` (**los preparas tú**: correr las queries, validar artículos, PRISMA); mientras no existan quedan **blocked**, nunca se inventan.
+- Metodología sale del último picoc y dice explícitamente qué marco se usa (el de `formato.marco`). Resultados/Discusión/Conclusión necesitan `RSL/seleccion/` y `RSL/extraccion/` (**los preparas tú**: correr las queries, validar artículos, PRISMA); mientras no existan quedan **blocked**, nunca se inventan.
 - Añadir un paper de ejemplo: copiar el `.md` en `global/examples/` (convertido con `global/to-md.md`) y correr `pnpm graphify:examples:refresh`.
 
 ### Memoria Graphify — root
@@ -240,10 +252,11 @@ Aristas: `broader` (BT) · `narrower` (NT) · `related` (RT) · `use` (no prefer
 Si un concepto **no** aparece (p. ej. *Accessibility*, *Neurodiversity*, *LLM* en la edición 2019) se declara vacío de vocabulario y se usa término libre — no inventar descriptor IEEE.
 Derivados gitignored (licencia CC BY-NC-ND).
 
-**Protocolo en las skills:** `rsl-topic-panel` (tópicos), `rsl-make-report` (`picoc.md`), `rsl-polish-report` (`picoc-polish.md` + crítico), `rsl-make-paper` (definiciones, RQ en §4/§5) siguen [`playbooks/vocabulario-controlado.md`](playbooks/vocabulario-controlado.md): descriptor IEEE preferido (USE si era no preferido) + términos libres marcados y justificados; cada término con origen en el tema; tabla y queries (Scopus, Web of Science, IEEE Xplore) **1:1**; una pregunta por componente. Nunca un descriptor inventado.
+**Protocolo en las skills:** `rsl-topic-panel` (tópicos), `rsl-picoc` (marco versionado; lo llaman `rsl-make-report` y `rsl-polish-report`), `rsl-make-paper` (definiciones, RQ en §4/§5) siguen [`playbooks/vocabulario-controlado.md`](playbooks/vocabulario-controlado.md): descriptor IEEE preferido (USE si era no preferido) + términos libres marcados y justificados; cada componente justificado con una frase del tema; tabla de componentes y queries (Scopus, Web of Science, IEEE Xplore) **1:1**; una pregunta por componente; palabras clave libres solo al final. Nunca un descriptor inventado.
 
 ```bash
-pnpm -s picoc:lint docs/[titulo-breve]/picoc.md   # PASS/FAIL de las reglas 1:1, RQ e IEEE
+pnpm -s picoc:latest docs/[titulo-breve]   # marco configurado + último picoc (OK | DESFASADO | FALTA)
+pnpm -s picoc:lint docs/[titulo-breve]     # PASS/FAIL del último picoc
 ```
 
 **Redacción:** informe y paper siguen [`playbooks/redaccion-academica.md`](playbooks/redaccion-academica.md): texto final sin notas de trabajo ni marcas como `[citar]`; siglas definidas en su primera aparición y dosificadas; una idea por oración; sin notación ×/+ ni jerga interna en la prosa; citas coherentes con las referencias; título breve y cercano al título tentativo de la ficha. Las skills cierran con `redaccion:lint` (0 FAIL) y el agente `redaccion-rsl`.

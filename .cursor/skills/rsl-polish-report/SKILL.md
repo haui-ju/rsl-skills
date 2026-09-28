@@ -18,9 +18,8 @@ Polish an existing `informe.md` via a 4-agent debate and save the result as **`i
 docs/[titulo-breve]/
   topic.md              (optional, from rsl-topic-panel)
   informe.md            (input, from rsl-make-report)
-  picoc.md              (input, from rsl-make-report)
   informe-polish.md     (output, this skill)
-  picoc-polish.md       (output, this skill)
+  picoc/<fecha>-<MARCO>/picoc.md   (search framework — only rsl-picoc creates versions)
   RSL/
     PDF/                (SLR PDFs — do not move; read if useful)
 ```
@@ -46,12 +45,12 @@ Spanish académico-profesional following `playbooks/redaccion-academica.md`: fin
 ## Procedure (required)
 
 1. Read `informe.md` (+ `topic.md`). Prefer theme Graphify lookup if `graphify-out/graph.json` exists (`graphify query ... --graph docs/[tema]/graphify-out/graph.json`). Do **not** refresh Graphify here. Avoid loading full PDFs; they live under `RSL/PDF/`.
-2. **Auditoría del marco** (`playbooks/vocabulario-controlado.md`): leer `picoc.md` (si no existe, o si el informe aún trae tablas/queries en la sección 2, construirlo desde ahí). Correr `pnpm -s picoc:lint docs/[titulo-breve]/picoc.md` y **una** vez `pnpm -s thesaurus:check "…" "…"` con todos los términos EN de la tabla de búsqueda.
+2. **Estado del marco:** `pnpm -s picoc:latest docs/[titulo-breve]` y, si hay versión, `pnpm -s picoc:lint docs/[titulo-breve]`. Leer el último `picoc/<fecha>-<MARCO>/picoc.md` como contexto (no se edita aquí).
 3. Launch in parallel: `critico-rsl`, `defensor-rsl`, `impacto-social-rsl`, `viabilidad-negocio-rsl`.
-   Shared prompt: informe + `picoc.md` + salida del lint + tabla de `thesaurus:check` + “Evalúa/mejora este INFORME y su marco de búsqueda. Responde en español con el formato de tu rol.”
+   Shared prompt: informe + último picoc + salida del lint + “Evalúa/mejora este INFORME. Responde en español con el formato de tu rol.”
 4. Brief debate synthesis in chat.
-5. Write **`informe-polish.md`** (do not overwrite `informe.md` unless the user explicitly asks). Keep the same 7-point headings. Sección 2 = solo el enlace: `Las palabras clave, el marco PICOCT y las queries se encuentran en [picoc-polish.md](picoc-polish.md).` (ajustar el nombre del marco).
-6. Write **`picoc-polish.md`** con la plantilla del playbook: reglas R1 (origen en el tema), R2 (tabla 1:1 con Scopus, Web of Science e IEEE Xplore) y R3 (1 RQ por componente); no preferidos sustituidos por su USE; ningún término nuevo sin `thesaurus:check`. `pnpm -s picoc:lint docs/[titulo-breve]/picoc-polish.md` → **PASS**.
+5. Write **`informe-polish.md`** (do not overwrite `informe.md` unless the user explicitly asks). Keep the same 7-point headings. Sección 2 = solo el enlace a la última versión: `Las palabras clave, el marco <MARCO> (<componentes en palabras>) y las queries se encuentran en [picoc/<carpeta>/picoc.md](picoc/<carpeta>/picoc.md).`
+6. **Marco:** si la § 1.2 pulida cambió respecto de la pregunta general del picoc, o `picoc:latest` da DESFASADO / FALTA, o `picoc:lint` falla → ejecutar la skill **`rsl-picoc`** (lee y sigue `.cursor/skills/rsl-picoc/SKILL.md`), que crea una versión nueva y actualiza el enlace. No escribir `picoc-polish.md`.
 7. **Forma y citas del informe:** `pnpm -s redaccion:lint docs/[titulo-breve]/informe-polish.md` + `pnpm -s paper:status docs/[titulo-breve] --cites docs/[titulo-breve]/informe-polish.md`. Launch **`redaccion-rsl`** with the lint output; apply its fixes (form only) until lint has 0 FAIL and every WARN is fixed or justified, and `--cites` is PASS.
 8. List main changes (informe y marco) and still-missing PDFs under `RSL/PDF/`.
 9. Chat — siguiente paso (no ejecutar aquí):
@@ -68,6 +67,7 @@ Usa rsl-make-paper sobre docs/[titulo-breve]/
 - Moving or dumping PDFs into the theme root.
 - Saving outside `docs/[titulo-breve]/`.
 - Dejar descriptores inventados o no validados contra el thesaurus IEEE.
-- Tablas o queries en la sección 2 del informe (solo el enlace a `picoc-polish.md`).
+- Tablas o queries en la sección 2 del informe (solo el enlace a la última versión de `picoc/`).
 - Dejar en `informe-polish.md` notas de trabajo o trazabilidad interna ("Tema final consensuado en topic.md tras panel…", "Nota de artefacto", "exigidas por el panel", `[citar]`) o siglas sin definir.
-- Entregar `picoc-polish.md` sin `picoc:lint` PASS (tabla ≠ query, términos sin origen en el tema, RQ faltantes).
+- Editar a mano archivos de `picoc/` o crear `picoc-polish.md` (el marco solo lo versiona `rsl-picoc`).
+- Terminar con `picoc:lint` en FAIL o `picoc:latest` distinto de OK.

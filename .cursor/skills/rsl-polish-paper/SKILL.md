@@ -106,7 +106,7 @@ Language per `formato.idioma` (default `es`; body and headings in that language,
 
 ## II. Metodología            ← solo si hay secciones on en el grupo
 <!-- paper:section id=marco-pico -->
-### A. Pregunta PICO y sus componentes
+### A. Pregunta PICOCT y sus componentes   ← título según formato.marco
 <!-- /paper:section -->
 …
 
@@ -115,7 +115,7 @@ Language per `formato.idioma` (default `es`; body and headings in that language,
 <!-- /paper:section -->
 ```
 
-- Metodología: tables and queries from `picoc(-polish).md` as they are; PRISMA only from `RSL/seleccion/` (user data).
+- Metodología: tables and queries from the latest `picoc/<fecha>-<MARCO>/picoc.md` as they are; `marco-pico` states explicitly the framework configured in `formato.marco` (PICO | PICOC | PICOCT) and its components; PRISMA only from `RSL/seleccion/` (user data).
 - Resultados / Discusión / Conclusión: only from `RSL/extraccion/` (user data), per `format.results_by`.
 - Presentation (tables, figures, order within a group) imitating the recurring structure of `global/examples/` (`graphify query … --graph global/examples/graphify-out/graph.json`); never copy their text.
 
@@ -127,12 +127,12 @@ Language per `formato.idioma` (default `es`; body and headings in that language,
 
 ### Problemática = pregunta
 
-The **Problemática** header must be a research **question**.
+The **Problemática** header must be a research **question**, identical to the general question of the latest picoc (= § 1.2 of the ficha).
 
 ## Procedure
 
-1. `pnpm -s paper:status docs/<slug>`. If **A mejorar** and **A reescribir** are both empty (everything frozen/off): do **not** create a version or append a debate block; only run `--cites` on the latest polish, report STALE / BLOCKED and stop. Otherwise create a new version if the latest is already polished, work only on **A mejorar (on)** and **A reescribir (rewrite)** and report **STALE** and **BLOCKED** without touching them.
-2. Read the latest `paper-borrador.md` + ficha + `picoc(-polish).md` + `topic.md` (internal) + frozen sections (context).
+1. `pnpm -s picoc:latest docs/<slug>`: if DESFASADO or FALTA → stop and ask for `Usa rsl-picoc sobre docs/<slug>/`. Then `pnpm -s paper:status docs/<slug>`. If **A mejorar** and **A reescribir** are both empty (everything frozen/off): do **not** create a version or append a debate block; only run `--cites` on the latest polish, report STALE / BLOCKED and stop. Otherwise create a new version if the latest is already polished, work only on **A mejorar (on)** and **A reescribir (rewrite)** and report **STALE** and **BLOCKED** without touching them.
+2. Read the latest `paper-borrador.md` + ficha + latest `picoc/<fecha>-<MARCO>/picoc.md` + `topic.md` (internal) + frozen sections (context).
 3. Graphify lookup (theme + examples; no refresh).
 4. Parallel on the sections to improve or rewrite only: `critico-rsl`, `defensor-rsl`, `impacto-social-rsl`, `viabilidad-negocio-rsl`.
    Prompt: sections with their mode (`on` → targeted improvements, justify each change; `rewrite` → free to reframe) + frozen neighbors as context + format; problemática-pregunta; masticado; continuidad; no sabor lista-IA / internal files.

@@ -19,7 +19,7 @@ Objetivo: prosa final académica, natural y limpia, que un docente lea de corrid
 ### R1 — Texto final, no nota de trabajo (FAIL)
 
 - Prohibidas las marcas editoriales: `[citar]`, `(citar)`, `TODO`, `PENDIENTE`, `TBD`, `???`. Si una cita no se puede verificar, se reformula o se quita la afirmación y se avisa en el chat; nunca se entrega la marca.
-- Prohibidas las huellas del flujo interno: `topic.md`, `picoc.md` (salvo el enlace de la sección 2 del informe), "panel", "veredicto", `GO_*`, nombres de skills, rutas, código entre backticks, "Nota de artefacto", "ajuste previsto del protocolo".
+- Prohibidas las huellas del flujo interno: `topic.md`, `picoc/…/picoc.md` (salvo el enlace de la sección 2 del informe), "panel", "veredicto", `GO_*`, nombres de skills, rutas, código entre backticks, "Nota de artefacto", "ajuste previsto del protocolo".
 - Nada de frases telegráficas tipo lista ("Salvaguarda ética mínima: no X; no Y; señalar Z"): se redactan como oración.
 
 ### R2 — Siglas: definir y dosificar (FAIL si no se define)

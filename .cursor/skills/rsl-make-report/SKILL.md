@@ -19,7 +19,8 @@ Receive a research topic and write a polished UTP `informe.md` in the theme fold
 docs/[titulo-breve]/
   topic.md              (optional, from rsl-topic-panel)
   informe.md            (this skill)
-  picoc.md              (this skill — marco PICO/PICOC/PICOCT, palabras clave, RQ, queries)
+  paper/paper.yml       (formato.marco; created with --init if missing — default PICOCT)
+  picoc/<fecha>-<MARCO>/picoc.md   (via rsl-picoc — marco, palabras clave, RQ, queries)
   RSL/
     PDF/                (SLR PDFs only — never next to .md)
 ```
@@ -65,19 +66,13 @@ Spanish **académico-profesional** following `playbooks/redaccion-academica.md` 
 
 1. Resolve folder `docs/[titulo-breve]/` (same theme as `topic.md` if it exists). Ensure `RSL/PDF/` exists.
 2. Normalize título / problemática / objeto (may use afilado from `topic.md` if user agrees or verdict was GO_con_cambios).
-3. **`picoc.md` (always)** — archivo aparte, con la plantilla y las reglas R1–R3 de `playbooks/vocabulario-controlado.md`:
-   - Marco según el tema (PICO / PICOC / PICOCT; ver tabla del playbook).
-   - Pregunta general = problemática; **1 sub-pregunta por componente** (T incluido) con su dato a extraer.
-   - Cada término con `Origen en el tema` (título / problemática / objeto); nada genérico ni “porque existe en IEEE”.
-   - **Una** llamada `pnpm -s thesaurus:check "…" "…"`; descriptor preferido (USE si era no preferido); LIBRE marcado y justificado.
-   - Tabla de búsqueda **1:1** con los bloques de las queries **Scopus, Web of Science e IEEE Xplore** (mismos términos, mismo N). C/O fuera de la query → tabla de cribado.
-   - `pnpm -s picoc:lint docs/[titulo-breve]/picoc.md` → **PASS** antes de seguir.
-   - Si falta el grafo del thesaurus → pedir `Usa rsl-bootstrap`; no inventar descriptores.
+3. **Marco configurado:** `pnpm -s picoc:latest docs/[titulo-breve]`. Si no existe `paper/paper.yml` → `pnpm -s paper:status docs/[titulo-breve] --init` (queda `marco: PICOCT`, salvo que el usuario haya pedido PICO o PICOC: entonces editar `formato.marco`).
 4. **Up to 3 SLRs** (mínimo 2 revisiones; si no hay, mínimo 5 originales con antigüedad menor a 5 años). Download PDFs into `RSL/PDF/`. If fewer, add Scopus queries / placeholders. Never invent DOI/PDF.
 5. Sections 4–7 (section 4 ≤ 300 words, citing the reviews of section 3; section 7 = título breve per R6).
-6. Write `informe.md` with the **exact 7-point structure** below (sección 2 = solo el enlace a `picoc.md`).
-7. Chat: paths (`informe.md`, `picoc.md` + resultado del lint), SLRs found, queries pending, PDFs present/missing under `RSL/PDF/`.
-8. Chat — **siguientes pasos** (no ejecutarlos aquí). Cerrar con:
+6. Write `informe.md` with the **exact 7-point structure** below (sección 2 = solo el enlace al picoc).
+7. **Marco de búsqueda:** ejecutar la skill **`rsl-picoc`** (lee y sigue `.cursor/skills/rsl-picoc/SKILL.md`): pregunta general = § 1.2 recién escrita, versión nueva en `picoc/<hoy>-<MARCO>/`, `picoc:lint` PASS y enlace de la sección 2 actualizado. Si falta el thesaurus → pedir `Usa rsl-bootstrap`; no inventar descriptores.
+8. Chat: paths (`informe.md`, versión de `picoc/` + resultado del lint), SLRs found, queries pending, PDFs present/missing under `RSL/PDF/`.
+9. Chat — **siguientes pasos** (no ejecutarlos aquí). Cerrar con:
 
 ```text
 Usa graphify-theme sobre docs/[titulo-breve]/
@@ -109,7 +104,7 @@ Exactly these 7 UTP points (do not invent a separate “paso 8” inside the fil
 
 ## 2. Palabras clave
 
-Las palabras clave, el marco PICOCT y las queries se encuentran en [picoc.md](picoc.md).
+Las palabras clave, el marco PICOCT (población, intervención, comparación, resultado, contexto y tiempo) y las queries se encuentran en [picoc/<carpeta>/picoc.md](picoc/<carpeta>/picoc.md).
 
 ## 3. Artículos de revisión de literatura relacionados con el tema de investigación
 
@@ -149,9 +144,8 @@ Las palabras clave, el marco PICOCT y las queries se encuentran en [picoc.md](pi
 - Leaving SLR PDFs outside `RSL/PDF/`.
 - Omitting keywords/query when SLRs are missing.
 - Keywords/PICOC sin `thesaurus:check`, o presentar como descriptor IEEE un término LIBRE / no preferido.
-- Tablas PICOC, keywords o queries dentro de `informe.md` (van en `picoc.md`; sección 2 solo enlaza).
-- Tabla y query con términos distintos o distinto N; términos sin origen en el tema; componentes sin sub-pregunta.
-- Entregar `picoc.md` sin `picoc:lint` PASS.
+- Tablas PICOC, keywords o queries dentro de `informe.md` (van en `picoc/<fecha>-<MARCO>/picoc.md`; sección 2 solo enlaza).
+- Escribir el picoc a mano en vez de usar `rsl-picoc`; entregar con `picoc:lint` en FAIL.
 - Colloquial prose in narrative sections.
 - Entregar con `pnpm -s redaccion:lint docs/[titulo-breve]/informe.md` en FAIL: marcas editoriales (`[citar]`, `TODO`, `PENDIENTE`…), huellas internas (`topic.md`, panel, veredicto, `GO_*`, skills, rutas, "Nota de artefacto") o siglas sin definir.
 - Obras citadas en la prosa que no están en la tabla de la sección 3 (`pnpm -s paper:status docs/[titulo-breve] --cites docs/[titulo-breve]/informe.md` → PASS).
