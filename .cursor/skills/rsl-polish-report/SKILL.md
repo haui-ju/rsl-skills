@@ -2,72 +2,36 @@
 name: rsl-polish-report
 description: >-
   Polishes docs/[short-title]/informe.md with 4 agents and writes
-  docs/[short-title]/informe-polish.md. Use when the user says
+  docs/[short-title]/informe-polish.md (same 7 UTP points). Refreshes the search
+  framework through rsl-picoc only when needed. Use when the user says
   rsl-polish-report. Does not create the report from scratch.
 ---
 
 # rsl-polish-report
 
-## Goal
+Polish an existing `informe.md` into **`informe-polish.md`** (same folder, same UTP structure: 1.1–1.3 under point 1, points 2–7). Never overwrite `informe.md` unless asked.
 
-Polish an existing `informe.md` via a 4-agent debate and save the result as **`informe-polish.md`** in the same theme folder. Do not create the informe from scratch.
+Invoke: `Usa rsl-polish-report sobre docs/<slug>/informe.md` (or the folder). No path → ask.
 
-## Paths (required)
+The critic's job here: real contribution, no false claims, correct citations, coherence — not discarding the report.
 
-```text
-docs/[titulo-breve]/
-  topic.md              (optional, from rsl-topic-panel)
-  informe.md            (input, from rsl-make-report)
-  informe-polish.md     (output, this skill)
-  picoc/<fecha>-<MARCO>/picoc.md   (search framework — only rsl-picoc creates versions)
-  RSL/
-    PDF/                (SLR PDFs — do not move; read if useful)
-```
+## Procedure
 
-Preserve the UTP **7-point** structure from `rsl-make-report` (1.1–1.3 under point 1; points 2–7). Do not flatten or renumber.
-
-## Invoke
-
-```text
-Usa rsl-polish-report sobre docs/ia-pipelines-amenazas/informe.md
-```
-
-Or the folder `docs/ia-pipelines-amenazas/`. If omitted → ask for path under `docs/`.
-
-## Critic role
-
-Real contribution, no false claims, no nonsense, correct citations, coherence. Does **not** mean discard the report.
-
-## Writing style (required)
-
-Spanish académico-profesional following `playbooks/redaccion-academica.md`: final text without work notes, acronyms defined on first use and dosified, one idea per sentence, no ×/+/-duro notation in prose, citations coherent with the section 3 table, short tentative title (section 7) that will anchor the paper title.
-
-## Procedure (required)
-
-1. Read `informe.md` (+ `topic.md`). Prefer theme Graphify lookup if `graphify-out/graph.json` exists (`graphify query ... --graph docs/[tema]/graphify-out/graph.json`). Do **not** refresh Graphify here. Avoid loading full PDFs; they live under `RSL/PDF/`.
-2. **Estado del marco:** `pnpm -s picoc:latest docs/[titulo-breve]` y, si hay versión, `pnpm -s picoc:lint docs/[titulo-breve]`. Leer el último `picoc/<fecha>-<MARCO>/picoc.md` como contexto (no se edita aquí).
-3. Launch in parallel: `critico-rsl`, `defensor-rsl`, `impacto-social-rsl`, `viabilidad-negocio-rsl`.
-   Shared prompt: informe + último picoc + salida del lint + “Evalúa/mejora este INFORME. Responde en español con el formato de tu rol.”
-4. Brief debate synthesis in chat.
-5. Write **`informe-polish.md`** (do not overwrite `informe.md` unless the user explicitly asks). Keep the same 7-point headings. Sección 2 = solo el enlace a la última versión: `Las palabras clave, el marco <MARCO> (<componentes en palabras>) y las queries se encuentran en [picoc/<carpeta>/picoc.md](picoc/<carpeta>/picoc.md).`
-6. **Marco:** si la § 1.2 pulida cambió respecto de la pregunta general del picoc, o `picoc:latest` da DESFASADO / FALTA, o `picoc:lint` falla → ejecutar la skill **`rsl-picoc`** (lee y sigue `.cursor/skills/rsl-picoc/SKILL.md`), que crea una versión nueva y actualiza el enlace. No escribir `picoc-polish.md`.
-7. **Forma y citas del informe:** `pnpm -s redaccion:lint docs/[titulo-breve]/informe-polish.md` + `pnpm -s paper:status docs/[titulo-breve] --cites docs/[titulo-breve]/informe-polish.md`. Launch **`redaccion-rsl`** with the lint output; apply its fixes (form only) until lint has 0 FAIL and every WARN is fixed or justified, and `--cites` is PASS.
-8. List main changes (informe y marco) and still-missing PDFs under `RSL/PDF/`.
-9. Chat — siguiente paso (no ejecutar aquí):
-
-```text
-Usa rsl-make-paper sobre docs/[titulo-breve]/
-```
+1. Read `informe.md` (+ `topic.md` if present). Evidence via the theme graph (`graphify query "…" --graph docs/<slug>/graphify-out/graph.json`); no full PDFs, no Graphify refresh.
+2. Parallel: `critico-rsl`, `defensor-rsl`, `impacto-social-rsl`, `viabilidad-negocio-rsl` (mode **informe**: local evidence first, web only to verify a claim or a missing review; at most 10 items each). Prompt = informe text + "Evalúa/mejora este INFORME. Responde en español con el formato de tu rol." The search framework is not debated here (that is `rsl-picoc`).
+3. Brief synthesis in chat; write `informe-polish.md`. Section 2 = only the link to the latest `picoc/<carpeta>/picoc.md` (sentence in `rsl-picoc` step 8).
+4. **Marco:** `pnpm -s picoc:latest docs/<slug>` and `pnpm -s picoc:lint docs/<slug>` (after writing `informe-polish.md`):
+   - FALTA or DESFASADO → **`rsl-picoc`** full mode.
+   - OK and the only lint FAIL is `PG` (the polished § 1.2 changed) → **`rsl-picoc`** light mode.
+   - Any other lint FAIL → **`rsl-picoc`** full mode.
+   - PASS → nothing.
+5. Form and citations: `pnpm -s redaccion:lint docs/<slug>/informe-polish.md` and `pnpm -s paper:status docs/<slug> --cites docs/<slug>/informe-polish.md`. Give the lint output to **`redaccion-rsl`**; apply its fixes (form only) until 0 FAIL, every WARN fixed or justified, and `--cites` PASS.
+6. Chat: main changes, missing PDFs under `RSL/PDF/`, next step `Usa rsl-make-paper sobre docs/<slug>/`.
 
 ## Forbidden
 
-- Creating informe from scratch (`rsl-make-report`).
-- Topic-only panel without informe (`rsl-topic-panel`).
-- Dropping UTP section structure (incl. 1.1 / 1.2 / 1.3).
-- Moving or dumping PDFs into the theme root.
-- Saving outside `docs/[titulo-breve]/`.
-- Dejar descriptores inventados o no validados contra el thesaurus IEEE.
-- Tablas o queries en la sección 2 del informe (solo el enlace a la última versión de `picoc/`).
-- Dejar en `informe-polish.md` notas de trabajo o trazabilidad interna ("Tema final consensuado en topic.md tras panel…", "Nota de artefacto", "exigidas por el panel", `[citar]`) o siglas sin definir.
-- Editar a mano archivos de `picoc/` o crear `picoc-polish.md` (el marco solo lo versiona `rsl-picoc`).
-- Terminar con `picoc:lint` en FAIL o `picoc:latest` distinto de OK.
+- Creating the informe from scratch (`rsl-make-report`) or running the topic panel.
+- Changing the UTP structure; saving outside `docs/<slug>/`; moving PDFs.
+- Tables or queries in section 2; editing `picoc/` by hand.
+- Leaving work notes or internal traces (panel, `topic.md`, "Nota de artefacto", `[citar]`) or undefined acronyms.
+- Ending with `redaccion:lint` FAIL, `--cites` FAIL or `picoc:latest` different from OK.

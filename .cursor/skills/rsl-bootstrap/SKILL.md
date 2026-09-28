@@ -43,7 +43,7 @@ PASS  temas docs/*
 
 ```bash
 graphify query "skills rsl"
-npm run thesaurus:lookup -- "Human computer interaction"
+pnpm -s thesaurus:check "Human computer interaction"
 graphify query "cognitive accessibility" --graph docs/<slug>/graphify-out/graph.json
 ```
 

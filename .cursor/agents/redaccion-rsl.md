@@ -14,7 +14,7 @@ Eres un **editor de estilo** de revista indexada y a la vez el docente que revis
 
 - Las secciones a revisar (en el paper: solo las `on` / `rewrite` de la corrida) y las vecinas `frozen` como contexto.
 - La salida de `pnpm -s redaccion:lint <archivo>`.
-- `playbooks/redaccion-academica.md` (léelo completo; es la fuente de verdad).
+- `playbooks/redaccion-academica.md` (fuente de verdad; léelo una vez por corrida).
 
 ## Instrucciones
 
@@ -23,7 +23,7 @@ Eres un **editor de estilo** de revista indexada y a la vez el docente que revis
 3. **Lectura con juicio** (lo que el lint no ve): frases comprimidas, expresiones híbridas o técnicas que suenan a nota de trabajo, tecnicismos no uniformes, conectores ausentes o repetidos, eco de ideas entre párrafos.
 4. **Siglas:** tabla con cada sigla, dónde aparece por primera vez y su definición propuesta; marca las que conviene no usar (aparecen < 3 veces).
 5. **Título:** verifica R6 (breve, cercano al título tentativo de la ficha).
-6. Mínimo 5 hallazgos concretos con cita textual del fragmento; cero comentarios genéricos ("mejorar la redacción").
+6. Solo hallazgos reales (como máximo los que pida el prompt), cada uno con cita textual del fragmento; cero comentarios genéricos ("mejorar la redacción").
 7. Propón el texto corregido de cada fragmento; conserva el sentido, las citas y los datos exactos.
 
 ## Formato (estricto)

@@ -14,7 +14,7 @@ Reglas:
 Uso:
   python3 scripts/picoc-lint.py docs/<slug>                              # valida el último picoc
   python3 scripts/picoc-lint.py docs/<slug>/picoc/<fecha>-<MARCO>/picoc.md
-  python3 scripts/picoc-lint.py --latest docs/<slug>                     # marco configurado + último picoc (OK | DESFASADO | FALTA)
+  python3 scripts/picoc-lint.py --latest docs/<slug>                     # marco configurado + último picoc (OK | DESFASADO | FALTA) + carpeta de la siguiente versión
 """
 from __future__ import annotations
 
@@ -131,18 +131,22 @@ def main(path: Path) -> int:
     errs: list[str] = []
     warns: list[str] = []
 
-    m = re.search(r"\*\*Marco:\*\*\s*(PICOCT|PICOC|PICO)\b", text)
+    m = re.search(r"\*\*Marco:\*\*\s*([A-Za-z]+)\b", text)
     if not m:
-        print("FAIL: falta '**Marco:** PICO|PICOC|PICOCT'")
+        print("FAIL: falta '**Marco:** <letras>' (p. ej. PICOCT, PIO)")
         return 1
-    marco = m.group(1)
-    comps = pv.COMPONENTS[marco]
+    try:
+        marco = pv.marco_label(m.group(1))
+        comps = pv.parse_marco(marco)
+        configured = pv.configured_marco(theme)
+    except pv.MarcoError as e:
+        print(f"ERROR {e}")
+        return 1
     folder = pv.dir_marco(path)
     if folder is None:
         errs.append("MARCO: el archivo debe estar en picoc/<AAAA-MM-DD>[-n]-<MARCO>/picoc.md")
     elif folder != marco:
         errs.append(f"MARCO: **Marco:** {marco} pero la carpeta es {folder}")
-    configured = pv.configured_marco(theme)
     if configured != marco:
         errs.append(f"MARCO: paper.yml pide {configured} y este picoc es {marco} (correr rsl-picoc)")
 
@@ -322,11 +326,16 @@ def resolve(arg: str) -> Path:
 def latest(arg: str) -> int:
     theme = Path(arg)
     theme = theme if theme.is_absolute() else Path.cwd() / theme
-    marco, f, state = pv.status(theme)
+    try:
+        marco, f, state = pv.status(theme)
+    except pv.MarcoError as e:
+        print(f"ERROR formato.marco: {e}")
+        return 1
     src = "paper.yml" if (theme / "paper" / "paper.yml").exists() else "por defecto, sin paper.yml"
     print(f"marco: {marco} ({src})")
     print(f"último: {rel(f) if f else '—'}")
     print(f"estado: {state}" + ("" if state == "OK" else " → correr rsl-picoc"))
+    print(f"siguiente versión: {rel(pv.next_dir(theme, marco))}/")
     return 0 if state == "OK" else 1
 
 

@@ -1,4 +1,4 @@
-# Vocabulario controlado IEEE — PICO / PICOC / PICOCT / keywords / queries
+# Vocabulario controlado IEEE — marco de búsqueda (PICO, PIO, PICOC, PICOCT…), keywords y queries
 
 Fuente de verdad para **cualquier** término de búsqueda que produzca una skill `rsl-*`: IEEE Thesaurus 2019 (`global/thesaurus/IEEE.pdf`, ~10.4k términos), indexado en `global/thesaurus/graphify-out/graph.json`.
 
@@ -6,7 +6,8 @@ Objetivo: términos **fieles al tema** (descriptor oficial + sinónimos oficiale
 
 ## Marco configurado y versiones
 
-- El marco se configura en `docs/<slug>/paper/paper.yml` → `formato.marco: PICO | PICOC | PICOCT`. Si el usuario no dijo nada, es **PICOCT**.
+- El marco se configura en `docs/<slug>/paper/paper.yml` → `formato.marco`. Es **libre**: lo que decida el usuario (PICO, PIO, PICOC, PICOCT, PICOS… o una lista `[P, I, O]`). Si no dijo nada, es **PICOCT**.
+- Letras válidas: `P` población · `I` intervención · `C` comparación · `O` resultado · `T` tiempo · `S` diseño de estudio. La **segunda** `C` es `Co` contexto (PICOC = P, I, C, O, Co). Una letra fuera de esta lista es **ERROR**: los scripts terminan con exit 1 y ninguna skill continúa hasta que el usuario la corrija.
 - Cada generación es una versión trazable: `docs/<slug>/picoc/<AAAA-MM-DD>[-n]-<MARCO>/picoc.md` + `picoc-debate.md`. Solo la skill **`rsl-picoc`** crea versiones; las anteriores no se editan.
 - Si el usuario cambia `formato.marco`, el último picoc queda **DESFASADO** y hay que correr `rsl-picoc` (crea `<hoy>-<MARCO>/`).
 - El informe **no** contiene tablas ni queries: su sección 2 solo enlaza a la última versión. El paper siempre lee la última versión (`pnpm -s picoc:latest docs/<slug>`).
@@ -47,18 +48,17 @@ Si `global/thesaurus/ieee-thesaurus.json` o el grafo no existen → pedir `Usa r
 
 ### R2 — Tabla de componentes 1:1 con las queries
 
-- La **tabla de componentes** tiene **exactamente una fila por componente del marco**, en su orden (PICOCT: P, I, C, O, Co, T). Todos entran; el usuario decide después cuál quitar.
+- La **tabla de componentes** tiene **exactamente una fila por componente del marco**, en su orden (p. ej. PICOCT: P, I, C, O, Co, T · PIO: P, I, O). Todos entran; el usuario decide después cuál quitar.
 - Columna `Keywords`: cada término **escrito exactamente como va en la query**, entre backticks, separados por ` · ` (p. ej. `` `autism` · `"autism spectrum"` · `neurodivers*` ``).
 - Cada componente distinto de T es un bloque `( … OR … )` unido con `AND`, en el orden de la tabla, en **cada** query (Scopus, Web of Science, IEEE Xplore), con exactamente esos términos. Ni más ni menos.
 - **T** no tiene términos: su fila indica el rango de años (`2020–2026`) y en las queries es el filtro de año (`PUBYEAR > 2019 AND PUBYEAR < 2027` · `PY=(2020-2026)` · IEEE Xplore: filtro de la interfaz anotado bajo la query). Sin filtros de tipo de documento (`DOCTYPE`, `DT`).
-- Con PICO o PICOC no hay filtro de año.
+- Sin `T` en el marco no hay filtro de año. `S` (diseño de estudio) es un bloque más de la query.
 - IEEE Xplore admite **10 comodines** por búsqueda: reservar `*` para las variantes morfológicas del bloque P y usar frases sin comodín en el resto (Scopus y Web of Science ya recuperan los plurales de las frases).
 
 ### R3 — Una pregunta por componente
 
 - La pregunta general se descompone en **exactamente 1 RQ por componente** del marco, interrogativa, que reutiliza el concepto de su fila, con su **dato a extraer**. Se numeran RQ1…RQn en el orden del marco y la tabla de componentes enlaza su RQ.
 - Juntas cubren toda la pregunta general; ninguna introduce conceptos fuera del marco.
-- Códigos de componente: `P` Población · `I` Intervención · `C` Comparación · `O` Resultado · `Co` Contexto · `T` Tiempo.
 
 ### KW — Palabras clave ES / EN
 
@@ -69,16 +69,9 @@ Si `global/thesaurus/ieee-thesaurus.json` o el grafo no existen → pedir `Usa r
 
 ## Procedimiento (lo ejecuta `rsl-picoc`)
 
-1. `pnpm -s picoc:latest docs/<slug>` → marco configurado (por defecto PICOCT).
+1. `pnpm -s picoc:latest docs/<slug>` → marco configurado (por defecto PICOCT) y sus componentes.
 2. Copiar la pregunta general de la § 1.2 de la ficha. Leer título y objeto (`topic.md`, ficha).
-
-| Marco | Componentes |
-|-------|-------------|
-| PICO | P, I, C, O |
-| PICOC | P, I, C, O, Co |
-| PICOCT | P, I, C, O, Co, T |
-
-   En Ingeniería de Software, P suele ser el perfil de usuario o el artefacto; I, la técnica; C, la alternativa o el sesgo a contrastar; O, métricas/calidad; Co, fases del ciclo de vida; T, la ventana temporal.
+   En Ingeniería de Software, P suele ser el perfil de usuario o el artefacto; I, la técnica; C, la alternativa o el sesgo a contrastar; O, métricas/calidad; Co, fases del ciclo de vida; T, la ventana temporal; S, el tipo de estudio.
 3. Conceptos por componente, cada uno con su frase de origen en el tema (R1).
 4. Candidatos EN (2–4 por concepto: singular, guion, siglas) → **una** llamada `pnpm -s thesaurus:check …`.
 5. Clasificar por estado; expandir con criterio: UF al `OR` si nacen del tema; NT solo si están en el alcance; RT nunca automático; BT nunca en la query.

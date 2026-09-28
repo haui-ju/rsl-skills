@@ -41,7 +41,7 @@ NOTATION = [
     (re.compile(r"\b\w+-dur[oa]s?\b", re.I), "sufijo híbrido «-duro/-dura»: explica qué significa"),
 ]
 # Siglas que no requieren definición (unidades, romanos, nombres propios de norma ya expandidos por convención).
-ALLOW = {"TODO", "FIXME", "TBD", "XXX", "PENDIENTE", "II", "III", "IV", "VI", "VII", "VIII", "IX", "XI", "XII", "ISO", "IEEE", "ACM", "DOI", "URL", "PDF", "HTML"}
+ALLOW = {"TODO", "FIXME", "TBD", "XXX", "PENDIENTE", "II", "III", "IV", "VI", "VII", "VIII", "IX", "XI", "XII", "ISO", "IEEE", "ACM", "DOI", "URL", "PDF", "HTML", "AA", "AAA"}
 ROMAN = re.compile(r"^[IVXLC]+$")
 
 

@@ -11,7 +11,7 @@ formato:
   citas: apa7 # apa7 | ieee
   resumen: [en, es] # idiomas del Abstract/Resumen
   resultados_por: rq # rq | tema
-  marco: PICOCT # marco de búsqueda: PICO | PICOC | PICOCT (por defecto PICOCT); al cambiarlo, correr rsl-picoc
+  marco: PICOCT # marco de búsqueda libre: PICO, PIO, PICOC, PICOCT, PICOS… (por defecto PICOCT); al cambiarlo, correr rsl-picoc
 
 Portada:
   encabezado: frozen

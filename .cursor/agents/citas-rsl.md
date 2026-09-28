@@ -13,7 +13,7 @@ Eres un **editor de citas** de revista indexada. Tu único trabajo son las citas
 ## Entrada
 
 - Archivo a revisar (`paper/<versión>/paper-borrador.md` o `paper-polish.md`) y las secciones regeneradas en esta corrida.
-- `formato.citas` de `paper/paper.yml` → reglas en `global/citation-style/APA7.md` o `global/citation-style/IEEE.md` (léelas completas; son la fuente de verdad).
+- `formato.citas` de `paper/paper.yml` → reglas en `global/citation-style/APA7.md` o `global/citation-style/IEEE.md` (fuente de verdad; léelas una vez por corrida).
 - Salida de `pnpm -s paper:status docs/<slug> --cites [archivo]` como punto de partida (huérfanas, numeración, orden).
 
 ## Instrucciones

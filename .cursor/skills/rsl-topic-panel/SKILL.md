@@ -34,31 +34,18 @@ Carrera: Ingeniería de Software
 
 No topic → ask. Do not invent a topic.
 
-## Standard of rigor
+## Rigor
 
-This is not a friendly brainstorm. Assume an external reviewer from a indexed venue (Scopus/WoS/IEEE). Soft praise without evidence is failure. Every agent must:
+Not a friendly brainstorm: an external reviewer from an indexed venue. The agents run in **modo panel** (their own files define it: mandatory WebSearch, real sources, question to the other role). Soft praise without evidence is failure.
 
-1. Run **WebSearch** (and WebFetch if needed) on real SLR/SMS/markets/policies before concluding.
-2. Cite concrete sources (title/year/venue or URL/DOI) — never invent papers.
-3. Be **maximal** in their role (critic attacks; defender fights with evidence; social and business push hard on their axes).
+## Procedure
 
-## Procedure (required)
+### Round 1 — parallel
 
-### Round 1 — parallel agents (same BLOQUE_TEMA)
-
-Launch in one response, in parallel:
-
-- `critico-rsl`
-- `defensor-rsl`
-- `impacto-social-rsl`
-- `viabilidad-negocio-rsl`
-
-Each prompt must include:
+Launch `critico-rsl`, `defensor-rsl`, `impacto-social-rsl`, `viabilidad-negocio-rsl` in one response with:
 
 ```text
-Evalúa solo este tema. Responde en español con el formato de tu rol.
-OBLIGATORIO: usa WebSearch/WebFetch; cita fuentes reales (RSL/SMS, políticas, mercado).
-Estándar: revisión tipo Scopus. Sé máximo en tu rol.
+Modo panel. Evalúa solo este tema. Responde en español con el formato de tu rol.
 
 ## BLOQUE_TEMA
 ...
@@ -69,16 +56,16 @@ Estándar: revisión tipo Scopus. Sé máximo en tu rol.
 After all four return, the orchestrator (you):
 
 1. Extract clashes (critic vs defender; social vs business trade-offs).
-2. Optionally launch **one short follow-up** to critic and defender with the other’s key points (“responde a estos ataques/contraataques con evidencia web si hace falta”).
+2. Only if a clash stays unresolved: **one** short follow-up to critic and defender with the other’s key points.
 3. Build recommendations that agents would force on each other.
 4. Force a **single converged topic** (not four alternatives). Prefer the sharpest version that survives the critic while keeping social/business value and SE alignment.
-5. **Tópicos (3) finales con vocabulario IEEE** (`playbooks/vocabulario-controlado.md`): una llamada `pnpm -s thesaurus:check "…"` con las formulaciones EN de los 3 tópicos; en `### Tópicos (3) finales` anotar por tópico `IEEE: <descriptor> (p.N)` o `Libre: <término>` (+ motivo). Esto alimenta el PICOC de `rsl-make-report`; no construir la query aquí.
+5. **Tópicos (3) finales con vocabulario IEEE** (`playbooks/vocabulario-controlado.md`): una llamada `pnpm -s thesaurus:check "…"` con las formulaciones EN de los 3 tópicos; en `### Tópicos (3) finales` anotar por tópico `IEEE: <descriptor> (p.N)` o `Libre: <término>` (+ motivo). Esto alimenta `rsl-picoc`; no construir queries aquí.
 
 ### Write `topic.md`
 
 Use the full template below. **Never skip** `## Tema final propuesto` or `## Diagrama del debate`.
 
-**Mermaid (required):** after the global verdict, include a **flowchart** of how the agents argued (ronda 1 → objeciones/preguntas → ronda 2 → consenso). Keep node IDs without spaces (camelCase). Edge labels = short objections or questions. Follow mermaid_syntax rules (no spaces in IDs; quote labels with special characters).
+**Mermaid (required):** after the global verdict, include a **flowchart** of how the agents argued (ronda 1 → objeciones/preguntas → ronda 2 → consenso). Node IDs camelCase without spaces; edge labels = the real short objections or questions of this run, quoted if they have special characters.
 
 In chat: path + one-line global verdict + pointer to Tema final.
 
@@ -117,8 +104,6 @@ flowchart TD
   def --> r2
   r2 --> consenso[TemaFinalPropuesto]
 \`\`\`
-
-Customize nodes/edges to the **actual** objections and questions of this run (do not leave the generic example unchanged).
 
 ## Fuentes consultadas (panel)
 - ...
@@ -202,9 +187,7 @@ Customize nodes/edges to the **actual** objections and questions of this run (do
 
 ## Forbidden
 
-- Soft consensus without critic pressure.
-- Agents concluding without web search.
-- Inventing DOI/papers.
-- Skipping `## Tema final propuesto` or `## Diagrama del debate`.
-- Leaving the Mermaid example generic instead of reflecting this run’s objections.
+- Soft consensus without critic pressure; agents concluding without web search.
+- Inventing DOI or papers.
+- Skipping `## Tema final propuesto` or `## Diagrama del debate`, or leaving the Mermaid example generic.
 - Writing `informe.md` here.

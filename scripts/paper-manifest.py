@@ -35,6 +35,7 @@ import picoc_versions  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 FILES = {"borrador": "paper-borrador.md", "polish": "paper-polish.md"}
+OPTIONAL_DEPS = {"topic.md"}
 VERSION_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})(?:-(\d+))?$")
 SECTION_RE = re.compile(r"<!-- paper:section id=([\w-]+) -->\n(.*?)<!-- /paper:section -->", re.S)
 
@@ -54,7 +55,7 @@ FORMATO = {  # clave humana -> (clave interna, {valor humano: valor interno})
     "citas": ("citation", {"apa7": "apa7", "ieee": "ieee"}),
     "resumen": ("abstract", None),
     "resultados_por": ("results_by", {"rq": "rq", "tema": "tema"}),
-    "marco": ("framework", {m: m for m in picoc_versions.COMPONENTS}),
+    "marco": ("framework", None),
 }
 DEFAULT_ON = {"encabezado", "contexto", "problema", "justificacion", "objetivo-rsl", "organizacion"}
 
@@ -112,7 +113,7 @@ formato:
   citas: {citas}             # apa7 | ieee
   resumen: [{resumen}]       # idiomas del Abstract/Resumen
   resultados_por: {resultados_por}      # rq | tema
-  marco: {marco}           # marco de búsqueda: PICO | PICOC | PICOCT (por defecto PICOCT); al cambiarlo, correr rsl-picoc
+  marco: {marco}           # marco de búsqueda libre: PICO, PIO, PICOC, PICOCT, PICOS… (por defecto PICOCT); al cambiarlo, correr rsl-picoc
 """
 
 STATE_HEADER = """\
@@ -182,7 +183,11 @@ class Paper:
                 continue
             ik, m = FORMATO[hk]
             if hk == "marco":
-                v = str(v).upper()
+                try:
+                    v = picoc_versions.marco_label(v)
+                except picoc_versions.MarcoError as e:
+                    errors.append(f"formato.marco: {e}")
+                    continue
             if m is not None and v not in m:
                 errors.append(f"formato.{hk}: '{v}' no válido (usa {' | '.join(m)})")
                 continue
@@ -252,11 +257,15 @@ class Paper:
         if dep == "all":
             return sha(json.dumps({k: v.get("content_hash") for k, v in sorted(self.state["sections"].items())}).encode())
         if dep == "picoc":
-            f = picoc_versions.latest_file(self.theme)
-            return sha(f.read_bytes()) if f else None
+            _, f, state = picoc_versions.status(self.theme)
+            return sha(f.read_bytes()) if state == "OK" else None
         if dep in self.ids:
             return (self.state["sections"].get(dep, {}).get("content_hash") or {}).get("polish") or "-"
         p = self.theme / dep
+        if dep == "informe-polish.md" and not p.is_file():
+            p = self.theme / "informe.md"
+        if dep in OPTIONAL_DEPS and not p.exists():
+            return "-"
         if p.is_file():
             return sha(p.read_bytes())
         if p.is_dir():
@@ -310,6 +319,10 @@ def cmd_migrate(p: Paper) -> int:
 
 def cmd_new_version(p: Paper) -> int:
     p.load()
+    c = classify(p)
+    if not c["improve"] and not c["rewrite"]:
+        print("sin secciones on/rewrite: no se crea versión")
+        return cmd_status(p, header=False)
     prev = p.latest()
     today = dt.date.today().isoformat()
     name, n = today, 1
@@ -356,9 +369,7 @@ def cmd_update(p: Paper, stage: str) -> int:
     return cmd_status(p, header=False)
 
 
-def cmd_status(p: Paper, header: bool = True) -> int:
-    if header:
-        p.load()
+def classify(p: Paper) -> dict:
     v = p.latest()
     current = {st: (p.read_sections(v, st) if v else {}) for st in FILES}
     rows, improve, rewrite, blocked, stale, errors = [], [], [], [], [], []
@@ -390,8 +401,20 @@ def cmd_status(p: Paper, header: bool = True) -> int:
             status = "mejorar"
             improve.append(sid)
         rows.append((sid, sec.get("estado", "auto"), status, ", ".join(changed) or "—", st.get("version", "—")))
+    return {"version": v, "current": current, "rows": rows, "improve": improve, "rewrite": rewrite,
+            "blocked": blocked, "stale": stale, "errors": errors}
+
+
+def cmd_status(p: Paper, header: bool = True) -> int:
+    if header:
+        p.load()
+    c = classify(p)
+    v, current, rows, improve, rewrite = c["version"], c["current"], c["rows"], c["improve"], c["rewrite"]
+    blocked, stale, errors = c["blocked"], c["stale"], c["errors"]
     fmt = p.cfg.get("format", {})
-    print(f"paper/ · última versión: {v or '—'} · idioma: {fmt.get('language', 'es')} · citation: {fmt.get('citation', 'apa7')} · numbering: {fmt.get('numbering', 'roman')} · marco: {fmt['framework']}")
+    vstate = p.state["versions"].get(v, {}) if v else {}
+    stages = "/".join(s for s in FILES if vstate.get(s)) or "ninguna"
+    print(f"paper/ · última versión: {v or '—'} (etapas cerradas: {stages}) · idioma: {fmt.get('language', 'es')} · citation: {fmt.get('citation', 'apa7')} · numbering: {fmt.get('numbering', 'roman')} · marco: {fmt['framework']}")
     print("| Sección | estado | status | fuente cambiada | versión |")
     print("|---|---|---|---|---|")
     for r in rows:
@@ -404,7 +427,7 @@ def cmd_status(p: Paper, header: bool = True) -> int:
         print(f"BLOCKED (datos faltantes, no se generan): {'; '.join(blocked)}")
     marco, pf, pstate = picoc_versions.status(p.theme)
     if pstate != "OK":
-        print(f"WARN picoc {pstate}: marco configurado {marco} · último {p.rel(pf) if pf else '—'} → correr rsl-picoc")
+        print(f"WARN picoc {pstate}: marco configurado {marco} · último {p.rel(pf) if pf else '—'} → correr rsl-picoc (las secciones que dependen de picoc quedan BLOCKED)")
     marco_sec = next((secs["marco-pico"] for secs in (current["polish"], current["borrador"]) if "marco-pico" in secs), None)
     if marco_sec is not None and not re.search(rf"\b{marco}\b", marco_sec):
         print(f"WARN marco-pico no nombra el marco configurado ({marco})")
@@ -436,6 +459,8 @@ def cmd_cites(p: Paper, target: str | None) -> int:
     style = p.cfg.get("format", {}).get("citation", "apa7").lower()
     if target:
         f = Path(target)
+        if not f.exists() and (p.theme / target).exists():
+            f = p.theme / target
     else:
         v = p.latest()
         f = p.dir / v / FILES["polish"] if v and (p.dir / v / FILES["polish"]).exists() else (p.dir / v / FILES["borrador"] if v else None)
@@ -488,7 +513,11 @@ def cmd_cites(p: Paper, target: str | None) -> int:
 
 
 def cmd_picoc(p: Paper) -> int:
-    marco, f, state = picoc_versions.status(p.theme)
+    try:
+        marco, f, state = picoc_versions.status(p.theme)
+    except picoc_versions.MarcoError as e:
+        print(f"ERROR formato.marco: {e}")
+        return 1
     print(f"marco: {marco} ({'paper.yml' if p.yml_path.exists() else 'por defecto, sin paper.yml'})")
     print(f"último: {p.rel(f) if f else '—'}")
     print(f"estado: {state}" + ("" if state == "OK" else " → correr rsl-picoc"))
