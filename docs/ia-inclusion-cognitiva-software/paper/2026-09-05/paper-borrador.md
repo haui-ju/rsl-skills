@@ -102,11 +102,17 @@ El resto del trabajo se organiza, de forma prevista, así: (1) **Marco teórico 
 <!-- paper:section id=referencias -->
 ## Referencias
 
-*(Borrador de trabajo — las tres RSL ancla; `rsl-polish-paper` publica la lista limpia.)*
-
 Aljedaani, W., & Mollik, R. H. (2026). Large language models for web accessibility: A systematic literature review. In *Proceedings of the 23rd International Web for All Conference (W4A ’26)* (pp. 160–171). Association for Computing Machinery. https://doi.org/10.1145/3800424.3800452
+
+Bi, T., Xia, X., Lo, D., Grundy, J., Zimmermann, T., & Ford, D. (2022). Accessibility in software practice: A practitioner’s perspective. *ACM Transactions on Software Engineering and Methodology, 31*(4), 1–26. https://doi.org/10.1145/3503508
 
 Chemnad, K., & Othman, A. (2024). Digital accessibility in the era of artificial intelligence—Bibliometric analysis and systematic review. *Frontiers in Artificial Intelligence, 7*, Article 1349668. https://doi.org/10.3389/frai.2024.1349668
 
+Paiva, D. M. B., Freire, A. P., & de Mattos Fortes, R. P. (2021). Accessibility and software engineering processes: A systematic literature review. *Journal of Systems and Software, 171*, Article 110819. https://doi.org/10.1016/j.jss.2020.110819
+
 Perry, N., Sun, C., Munro, M., Boulton, K. A., & Guastella, A. J. (2024). AI technology to support adaptive functioning in neurodevelopmental conditions in everyday environments: A systematic review. *npj Digital Medicine, 7*, Article 370. https://doi.org/10.1038/s41746-024-01355-7
+
+World Wide Web Consortium. (2023). *Web Content Accessibility Guidelines (WCAG) 2.2* (W3C Recommendation). https://www.w3.org/TR/WCAG22/
+
+Xu, Z., Liu, F., Xia, G., Duan, Y., & Yu, L. (2025). A scoping review of inclusive and adaptive human–AI interaction design for neurodivergent users. *Disability and Rehabilitation: Assistive Technology, 21*(4), 943–961. https://doi.org/10.1080/17483107.2025.2579822
 <!-- /paper:section -->

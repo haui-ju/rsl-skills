@@ -284,7 +284,7 @@ def cmd_cites(p: Paper, target: str | None) -> int:
             cited.add((m.group(1), m.group(2)))
         ref_keys = []
         for r in refs:
-            mm = re.match(r"(?:[-*]\s*)?([A-ZÁÉÍÓÚÑ][\wÁÉÍÓÚÑáéíóúñ'\-]+),.*?\(((?:19|20)\d{2}[a-z]?)\)", r)
+            mm = re.match(r"(?:[-*]\s*)?([A-ZÁÉÍÓÚÑ][\wÁÉÍÓÚÑáéíóúñ'\-]+)[^()]*?\(((?:19|20)\d{2}[a-z]?)\)", r)
             if mm:
                 ref_keys.append((mm.group(1), mm.group(2)))
         issues += [f"({a}, {y}) citado sin referencia" for a, y in sorted(cited) if (a, y) not in ref_keys]

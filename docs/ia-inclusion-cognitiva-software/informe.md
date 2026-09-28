@@ -18,59 +18,7 @@ Síntesis de evidencia primaria sobre técnicas de IA aplicadas a artefactos y p
 
 ## 2. Palabras clave
 
-| Español | Inglés |
-|---------|--------|
-| revisión sistemática de la literatura | systematic literature review |
-| revisión de alcance | scoping review |
-| inteligencia artificial | artificial intelligence |
-| modelos de lenguaje grandes | large language models |
-| GenAI | generative AI |
-| accesibilidad cognitiva | cognitive accessibility |
-| neurodivergencia | neurodiversity / neurodivergence |
-| trastorno del espectro autista | autism spectrum disorder |
-| TDAH | ADHD |
-| discapacidad intelectual | intellectual disability |
-| diseño de software | software design |
-| ciclo de vida del software | software development life cycle |
-| verificación y validación | verification and validation |
-| pruebas de software | software testing |
-| usabilidad | usability |
-| accesibilidad web | web accessibility |
-| WCAG | Web Content Accessibility Guidelines |
-| COGA | cognitive accessibility guidelines |
-| personalización de interfaces | adaptive user interfaces |
-| ingeniería de software | software engineering |
-
-**Query Scopus (sugerida):**
-
-```
-TITLE-ABS-KEY (
-  ( "systematic literature review" OR "scoping review" OR "systematic mapping" )
-  OR
-  (
-    ( "artificial intelligence" OR "machine learning" OR "deep learning" OR "large language model*" OR GenAI OR LLM )
-    AND
-    ( "cognitive accessibility" OR neurodivers* OR "intellectual disability" OR autism OR ADHD OR COGA )
-    AND
-    ( "software engineering" OR "software development" OR "software testing" OR "verification and validation" OR "user interface" OR WCAG )
-  )
-)
-AND PUBYEAR > 2019
-```
-
-Query enfocada a **estudios primarios** (para la RSL propiamente dicha, no solo revisiones previas):
-
-```
-TITLE-ABS-KEY (
-  ( "artificial intelligence" OR "machine learning" OR LLM OR "large language model*" OR "generative AI" )
-  AND
-  ( "cognitive accessibility" OR neurodivers* OR "learning disabilit*" OR autism OR "ADHD" OR COGA )
-  AND
-  ( "software testing" OR "accessibility evaluation" OR "accessibility audit" OR "software development" OR "requirements engineering" OR "user interface" OR WCAG )
-)
-AND PUBYEAR > 2019
-AND ( LIMIT-TO ( DOCTYPE , "ar" ) OR LIMIT-TO ( DOCTYPE , "cp" ) )
-```
+Las palabras clave, el marco PICOCT y las queries se encuentran en [picoc.md](picoc.md).
 
 ## 3. Artículos de revisión de literatura relacionados con el tema de investigación
 
