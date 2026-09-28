@@ -41,7 +41,7 @@ Real contribution, no false claims, no nonsense, correct citations, coherence. D
 
 ## Writing style (required)
 
-Spanish académico-profesional with connectors; cohesive paragraphs.
+Spanish académico-profesional following `playbooks/redaccion-academica.md`: final text without work notes, acronyms defined on first use and dosified, one idea per sentence, no ×/+/-duro notation in prose, citations coherent with the section 3 table, short tentative title (section 7) that will anchor the paper title.
 
 ## Procedure (required)
 
@@ -52,8 +52,9 @@ Spanish académico-profesional with connectors; cohesive paragraphs.
 4. Brief debate synthesis in chat.
 5. Write **`informe-polish.md`** (do not overwrite `informe.md` unless the user explicitly asks). Keep the same 7-point headings. Sección 2 = solo el enlace: `Las palabras clave, el marco PICOCT y las queries se encuentran en [picoc-polish.md](picoc-polish.md).` (ajustar el nombre del marco).
 6. Write **`picoc-polish.md`** con la plantilla del playbook: reglas R1 (origen en el tema), R2 (tabla 1:1 con Scopus, Web of Science e IEEE Xplore) y R3 (1 RQ por componente); no preferidos sustituidos por su USE; ningún término nuevo sin `thesaurus:check`. `pnpm -s picoc:lint docs/[titulo-breve]/picoc-polish.md` → **PASS**.
-7. List main changes (informe y marco) and still-missing PDFs under `RSL/PDF/`.
-8. Chat — siguiente paso (no ejecutar aquí):
+7. **Forma y citas del informe:** `pnpm -s redaccion:lint docs/[titulo-breve]/informe-polish.md` + `pnpm -s paper:status docs/[titulo-breve] --cites docs/[titulo-breve]/informe-polish.md`. Launch **`redaccion-rsl`** with the lint output; apply its fixes (form only) until lint has 0 FAIL and every WARN is fixed or justified, and `--cites` is PASS.
+8. List main changes (informe y marco) and still-missing PDFs under `RSL/PDF/`.
+9. Chat — siguiente paso (no ejecutar aquí):
 
 ```text
 Usa rsl-make-paper sobre docs/[titulo-breve]/
@@ -68,4 +69,5 @@ Usa rsl-make-paper sobre docs/[titulo-breve]/
 - Saving outside `docs/[titulo-breve]/`.
 - Dejar descriptores inventados o no validados contra el thesaurus IEEE.
 - Tablas o queries en la sección 2 del informe (solo el enlace a `picoc-polish.md`).
+- Dejar en `informe-polish.md` notas de trabajo o trazabilidad interna ("Tema final consensuado en topic.md tras panel…", "Nota de artefacto", "exigidas por el panel", `[citar]`) o siglas sin definir.
 - Entregar `picoc-polish.md` sin `picoc:lint` PASS (tabla ≠ query, términos sin origen en el tema, RQ faltantes).

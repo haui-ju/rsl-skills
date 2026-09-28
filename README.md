@@ -18,8 +18,8 @@ El agente verifica/instala prerrequisitos (node + pnpm, pipx graphifyy, poppler)
 | `rsl-topic-panel` | Estresa un tema (4 agentes + debate Mermaid + consenso) | `docs/[titulo-breve]/topic.md` |
 | `rsl-make-report` | Genera el informe UTP (7 puntos) + marco de búsqueda aparte | `docs/[titulo-breve]/informe.md` + `picoc.md` |
 | `rsl-polish-report` | Pule el informe y su marco (4 agentes) | `docs/[titulo-breve]/informe-polish.md` + `picoc-polish.md` |
-| `rsl-make-paper` | Nueva versión del paper borrador, solo secciones `on` (mejorar) y `rewrite` (reescribir) de `paper.yml` (+ agente `citas-rsl`) | `docs/[titulo-breve]/paper/<fecha>/paper-borrador.md` |
-| `rsl-polish-paper` | Pule esas secciones (4 agentes + `citas-rsl`) → texto limpio + traza de debate | `paper/<fecha>/paper-polish.md` + `paper-debate.md` |
+| `rsl-make-paper` | Nueva versión del paper borrador, solo secciones `on` (mejorar) y `rewrite` (reescribir) de `paper.yml` (+ agente `citas-rsl` y `redaccion:lint`) | `docs/[titulo-breve]/paper/<fecha>/paper-borrador.md` |
+| `rsl-polish-paper` | Pule esas secciones (4 agentes + `redaccion-rsl` + `citas-rsl`) → texto limpio + traza de debate | `paper/<fecha>/paper-polish.md` + `paper-debate.md` |
 
 ## Skills Graphify (memoria — **tú** las ejecutas)
 
@@ -62,10 +62,10 @@ graphify-out/     ← memoria Graphify del repo (skills, global/, playbooks/, RE
 global/           ← archivos generales que integra el usuario (líneas UTP, competencias, thesaurus)
   examples/       ← papers RSL reales de referencia (estructura/presentación; grafo propio)
   citation-style/ ← APA7.md · IEEE.md (reglas de citas; formato.citas de paper.yml)
-playbooks/        ← protocolos compartidos que siguen varias skills (p. ej. vocabulario-controlado.md)
+playbooks/        ← protocolos compartidos que siguen varias skills (vocabulario-controlado.md, redaccion-academica.md)
 ```
 
-Agentes: `.cursor/agents/` (`critico-rsl`, `defensor-rsl`, `impacto-social-rsl`, `viabilidad-negocio-rsl`, `citas-rsl`)
+Agentes: `.cursor/agents/` (`critico-rsl`, `defensor-rsl`, `impacto-social-rsl`, `viabilidad-negocio-rsl`, `citas-rsl`, `redaccion-rsl`)
 
 ---
 
@@ -107,12 +107,13 @@ En `theme`, el `<slug>` se omite si solo hay un tema; `refresh`/`status` aceptan
 | `thesaurus:check "t1" "t2" …` | Valida varios términos contra IEEE: preferido / no preferido (→ USE) / libre, con sinónimos (UF), específicos (NT) y página. |
 | `thesaurus:lookup "término"` | Ficha completa de un término IEEE (todas sus relaciones y página). |
 | `picoc:lint docs/<slug>/picoc.md` | PASS/FAIL del marco: tabla = queries Scopus/WoS/IEEE Xplore (1:1), origen en el tema, 1 RQ por componente, descriptores IEEE preferidos. |
+| `redaccion:lint <archivo.md>` | Forma académica de informe o paper: FAIL por marcas pendientes (`[citar]`, TODO…), notas internas (panel, `topic.md`…) o siglas sin definir; avisos por frases largas, notación ×/+ y exceso de siglas. |
 | `paper:status docs/<slug>` | Estado del paper según `paper/paper.yml`: qué se mejora (on) o reescribe (rewrite), stale, blocked; FAIL si se editó a mano una sección frozen. |
 | `paper:status docs/<slug> --init` | Crea `paper/paper.yml` y `paper/paper.shadow.yml` por defecto. |
 | `paper:status docs/<slug> --migrate` | Convierte un `paper.yml` del formato antiguo (enabled/frozen) al nuevo. |
 | `paper:status docs/<slug> --new-version` | Crea `paper/<fecha>/` copiando la versión anterior. |
 | `paper:status docs/<slug> --update borrador\|polish` | Registra hashes tras escribir el borrador o el polish. |
-| `paper:status docs/<slug> --cites` | Citas en texto vs Referencias (APA 7 o IEEE según `formato.citas`). |
+| `paper:status docs/<slug> --cites [archivo]` | Citas en texto vs Referencias (APA 7 o IEEE según `formato.citas`); con `informe-polish.md` compara contra la tabla de la sección 3. |
 
 ## Cómo ejecutar
 
@@ -243,6 +244,12 @@ Derivados gitignored (licencia CC BY-NC-ND).
 
 ```bash
 pnpm -s picoc:lint docs/[titulo-breve]/picoc.md   # PASS/FAIL de las reglas 1:1, RQ e IEEE
+```
+
+**Redacción:** informe y paper siguen [`playbooks/redaccion-academica.md`](playbooks/redaccion-academica.md): texto final sin notas de trabajo ni marcas como `[citar]`; siglas definidas en su primera aparición y dosificadas; una idea por oración; sin notación ×/+ ni jerga interna en la prosa; citas coherentes con las referencias; título breve y cercano al título tentativo de la ficha. Las skills cierran con `redaccion:lint` (0 FAIL) y el agente `redaccion-rsl`.
+
+```bash
+pnpm -s redaccion:lint docs/[titulo-breve]/paper/<fecha>/paper-polish.md
 ```
 
 ### Papers de ejemplo (`global/examples/`)

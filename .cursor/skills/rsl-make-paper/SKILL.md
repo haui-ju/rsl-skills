@@ -80,12 +80,15 @@ Usa rsl-make-paper sobre docs/ia-inclusion-cognitiva-software/
    - **Resultados / Discusión / Conclusión:** only from `RSL/extraccion/` (user data), by RQ or by theme per `format.results_by`.
    - **Abstract / Resumen:** only when the content sections exist; keywords from `picoc` (`format.keywords_from`).
 7. **`citas-rsl`** (single agent) on the improved and rewritten sections: `pnpm -s paper:status docs/<slug> --cites paper/<fecha>/paper-borrador.md` + agent fixes until PASS or justified `PENDIENTE`.
-8. `pnpm -s paper:status docs/<slug> --update borrador`.
-9. Chat: version path, improved / rewritten / copied / stale / blocked sections, sources, citas result, next step `Usa rsl-polish-paper sobre docs/[titulo-breve]/`.
+8. `pnpm -s redaccion:lint docs/<slug>/paper/<fecha>/paper-borrador.md` → 0 FAIL (warnings allowed in the borrador).
+9. `pnpm -s paper:status docs/<slug> --update borrador`.
+10. Chat: version path, improved / rewritten / copied / stale / blocked sections, sources, citas result, next step `Usa rsl-polish-paper sobre docs/[titulo-breve]/`.
 
 ## Writing style (required)
 
 Write in the language of `formato.idioma` (default `es`: Spanish **académico-profesional**); headings (Introducción/Introduction, Referencias/References…) in that language too; connectors; cohesive paragraphs. Citations per `formato.citas` (paper.yml) following `global/citation-style/<STYLE>.md`.
+
+Form per `playbooks/redaccion-academica.md`. The borrador may be long and rich, but R1 (no work notes / markers), R2 (acronyms defined on first use; core acronyms defined at the start of the Introducción) and R5 (citas ↔ referencias) already apply; R3/R4 warnings are resolved in the polish.
 
 **Hard rules:** never put `topic.md`, `informe.md`, "panel", "GO_con_cambios", skill names or repo paths in the visible text. Never invent DOI/findings. Cite only what topic/ficha/Graphify/MD support.
 

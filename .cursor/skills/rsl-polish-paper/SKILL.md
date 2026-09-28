@@ -53,6 +53,9 @@ If there is something to improve or rewrite and the latest version **already has
 | **Contexto** | ~4 párrafos **enlazados**: WCAG/COGA → acotar objeto → tejer las anclas en un hilo → tensiones que preparan El problema. |
 | **Continuidad** | Cada párrafo abre con **conector real** (*En ese marco*, *A partir de*, *En consecuencia*, *Ese recorte exige*, *Así*, *De ahí que*, *A ello se suma*, *Por eso*, *El vacío, entonces*, *Con ese marco*…). |
 | **Sin eco cíclico** | Anclas: una mención fuerte en Contexto; después solo si aportan avance. |
+| **Siglas** | Definir en la primera aparición (forma completa + sigla); las del núcleo, al inicio del Contexto. Sigla solo si el término vuelve ≥ 3 veces; ≤ 3 siglas por párrafo; siempre la misma sigla. |
+| **Frases no comprimidas** | Una idea por oración (≤ 40 palabras), ≤ 1 inciso; si encadena tres tecnicismos, partir y explicar el vínculo. |
+| **Sin notación de trabajo** | Nada de ×, →, `A+B`, "-duro", "celda aguda", "remake", "gate" en la prosa; decirlo en palabras (tabla de `playbooks/redaccion-academica.md`). |
 | **Prohibido "sabor IA"** | Enumeraciones disfrazadas, tríos forzados, guiones largos en serie, verbos genéricos, meta-comentarios. |
 
 Coherence with frozen sections: read them as context; if a polished section contradicts a frozen one, report it in chat (do not edit the frozen one).
@@ -70,6 +73,8 @@ Language per `formato.idioma` (default `es`; body and headings in that language,
 **Problemática.** ¿…?
 
 **Objetivo.** … (una o dos oraciones)
+
+(Título ≤ 20 palabras, cercano al título tentativo de la ficha — sección 7 —, sin subtítulo en cascada. En Tema/Problemática/Objetivo, palabras completas en vez de siglas.)
 <!-- /paper:section -->
 
 ## I. Introducción
@@ -133,10 +138,11 @@ The **Problemática** header must be a research **question**.
    Prompt: sections with their mode (`on` → targeted improvements, justify each change; `rewrite` → free to reframe) + frozen neighbors as context + format; problemática-pregunta; masticado; continuidad; no sabor lista-IA / internal files.
 5. Brief synthesis in chat.
 6. Write the polished sections between their markers in `paper-polish.md` (copy frozen ones unchanged; rebuild Referencias).
-7. **`citas-rsl`**: `pnpm -s paper:status docs/<slug> --cites` + agent fixes until PASS or justified `PENDIENTE`.
-8. Append to `paper-debate.md` a block for this run: date, improved / rewritten sections, Mermaid + turnos, **Forma/gramática pass-fail** (3–5 corrections; if fail → rewrite before delivering) and **Citas pass-fail** (citas-rsl table). Do not delete earlier blocks.
-9. `pnpm -s paper:status docs/<slug> --update polish` (must end without FAIL).
-10. List changes, stale / blocked sections, PDF/Graphify gaps. Suggest marking validated sections as `frozen` in `paper/paper.yml`.
+7. **`redaccion-rsl`** on the improved/rewritten sections: `pnpm -s redaccion:lint docs/<slug>/paper/<fecha>/paper-polish.md` + agent; apply its fixes (form only, never in frozen sections) until those sections have 0 FAIL and every WARN is fixed or justified. FAIL lines that fall in frozen sections are reported in chat (suggest `on` for them); they do not block the run.
+8. **`citas-rsl`**: `pnpm -s paper:status docs/<slug> --cites` + agent fixes until PASS or justified `PENDIENTE`.
+9. Append to `paper-debate.md` a block for this run: date, improved / rewritten sections, Mermaid + turnos, **Redacción pass-fail** (redaccion-rsl table + lint result; if fail → fix before delivering) and **Citas pass-fail** (citas-rsl table). Do not delete earlier blocks.
+10. `pnpm -s paper:status docs/<slug> --update polish` (must end without FAIL).
+11. List changes, stale / blocked sections, PDF/Graphify gaps. Suggest marking validated sections as `frozen` in `paper/paper.yml`.
 
 ## Forbidden
 
@@ -144,6 +150,7 @@ The **Problemática** header must be a research **question**.
 - Editing frozen sections (only citation re-render if `formato.citas` changed), changing the states in `paper.yml`, or editing `paper.shadow.yml` / `paper.state.jsonc`.
 - Generating off or BLOCKED sections; inventing PRISMA counts or results.
 - Deleting markers; `#### 1.1` subsections in the polish.
+- Delivering with `redaccion:lint` in FAIL (markers like `[citar]`, internal traces, undefined acronyms) or `--cites` in FAIL.
 - Problemática afirmativa (debe ser ¿…?).
 - Párrafos-pared o Contexto que vuelque todo el estado del arte.
 - Raw debate inside paper-polish.md.

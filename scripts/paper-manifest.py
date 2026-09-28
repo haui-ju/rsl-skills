@@ -393,13 +393,17 @@ APA_PAREN = re.compile(r"\(([^()]*?\b(?:19|20)\d{2}[a-z]?)\)")
 APA_NARR = re.compile(r"([A-ZÁÉÍÓÚÑ][\wÁÉÍÓÚÑáéíóúñ'\-]+)(?: et al\.| (?:y|&) [A-ZÁÉÍÓÚÑ][\w'\-]+)? \(((?:19|20)\d{2}[a-z]?)\)")
 
 
-def split_refs(text: str) -> tuple[str, list[str]]:
+def split_refs(text: str) -> tuple[str, list[str], bool]:
     m = re.search(r"^##\s+(?:[IVXLC]+\.\s+|\d+\.\s+)?Referencias.*$", text, flags=re.M | re.I)
     if not m:
-        return text, []
+        rows = [l for l in text.splitlines() if l.lstrip().startswith("|")]
+        cells = [r.strip().strip("|").split("|")[0].strip() for r in rows]
+        refs = [c for c in cells if re.search(r"\((?:19|20)\d{2}[a-z]?\)", c)]
+        body = "\n".join(l for l in text.splitlines() if not l.lstrip().startswith("|"))
+        return body, refs, True
     body, tail = text[: m.start()], text[m.end():]
     refs = [l.strip() for l in tail.splitlines() if l.strip() and not l.startswith("<!--") and not l.startswith("#")]
-    return body, refs
+    return body, refs, False
 
 
 def cmd_cites(p: Paper, target: str | None) -> int:
@@ -413,7 +417,7 @@ def cmd_cites(p: Paper, target: str | None) -> int:
     if not f or not f.exists():
         sys.exit("error: no hay archivo del paper que revisar")
     text = f.read_text(encoding="utf-8")
-    body, refs = split_refs(text)
+    body, refs, from_table = split_refs(text)
     issues: list[str] = []
     if style == "ieee":
         order: list[int] = []
@@ -444,7 +448,7 @@ def cmd_cites(p: Paper, target: str | None) -> int:
         issues += [f"({a}, {y}) citado sin referencia" for a, y in sorted(cited) if (a, y) not in ref_keys]
         issues += [f"{a} ({y}) en Referencias pero no citado" for a, y in ref_keys if (a, y) not in cited]
         surnames = [a for a, _ in ref_keys]
-        if surnames != sorted(surnames, key=str.casefold):
+        if not from_table and surnames != sorted(surnames, key=str.casefold):
             issues.append(f"Referencias no están en orden alfabético: {surnames}")
     rel = f.relative_to(ROOT) if f.is_absolute() and ROOT in f.parents else f
     if issues:

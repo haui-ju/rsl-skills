@@ -52,7 +52,7 @@ No topic and no folder → ask. Do not invent a topic.
 
 ## Writing style (required)
 
-Spanish **académico-profesional** with connectors; cohesive paragraphs; no colloquial tone. Tables only where the template requires them.
+Spanish **académico-profesional** following `playbooks/redaccion-academica.md` (R1 texto final sin notas de trabajo, R2 siglas definidas y dosificadas, R3 una idea por oración, R4 sin notación ×/+/-duro en la prosa, R5 citas ↔ tabla de la sección 3, R6 título breve). Tables only where the template requires them. The template's instructions are HTML comments: never copy them as visible text.
 
 ## Project sources
 
@@ -74,7 +74,7 @@ Spanish **académico-profesional** with connectors; cohesive paragraphs; no coll
    - `pnpm -s picoc:lint docs/[titulo-breve]/picoc.md` → **PASS** antes de seguir.
    - Si falta el grafo del thesaurus → pedir `Usa rsl-bootstrap`; no inventar descriptores.
 4. **Up to 3 SLRs** (mínimo 2 revisiones; si no hay, mínimo 5 originales con antigüedad menor a 5 años). Download PDFs into `RSL/PDF/`. If fewer, add Scopus queries / placeholders. Never invent DOI/PDF.
-5. Sections 4–7 (section 4 ≤ 300 words; **citar las RSL de la sección 3**).
+5. Sections 4–7 (section 4 ≤ 300 words, citing the reviews of section 3; section 7 = título breve per R6).
 6. Write `informe.md` with the **exact 7-point structure** below (sección 2 = solo el enlace a `picoc.md`).
 7. Chat: paths (`informe.md`, `picoc.md` + resultado del lint), SLRs found, queries pending, PDFs present/missing under `RSL/PDF/`.
 8. Chat — **siguientes pasos** (no ejecutarlos aquí). Cerrar con:
@@ -113,7 +113,7 @@ Las palabras clave, el marco PICOCT y las queries se encuentran en [picoc.md](pi
 
 ## 3. Artículos de revisión de literatura relacionados con el tema de investigación
 
-*(Mínimo 2 artículos de revisión o, de no existir éstos, mínimo 5 artículos científicos originales con antigüedad menor a 5 años. Meta recomendada: 3 RSL.)*
+<!-- Mínimo 2 artículos de revisión o, de no existir éstos, mínimo 5 artículos científicos originales con antigüedad menor a 5 años. Meta recomendada: 3 RSL. -->
 
 | Referencia bibliográfica (APA) | DOI / URL | Razón | PDF |
 |--------------------------------|-----------|-------|-----|
@@ -126,19 +126,19 @@ Las palabras clave, el marco PICOCT y las queries se encuentran en [picoc.md](pi
 
 ## 4. Estado del conocimiento y necesidad de una nueva RSL
 
-(≤ 300 palabras; prosa profesional; **citar aquí las revisiones de la sección 3**)
+<!-- ≤ 300 palabras; prosa profesional; cita aquí (Autor, año) las revisiones de la sección 3 -->
 
 ## 5. Línea(s) de investigación de la UTP
 
-(Señale la(s) línea(s) a la que responde la investigación propuesta, **con justificación**: cómo el tema se asemeja y justifica con las líneas UTP.)
+<!-- Señale la(s) línea(s) a la que responde la investigación propuesta, con justificación: cómo el tema se asemeja y justifica con las líneas UTP. -->
 
 ## 6. Competencias de la carrera
 
-(Señale las competencias relacionadas con el tema, **con justificación**.)
+<!-- Señale las competencias relacionadas con el tema, con justificación. -->
 
 ## 7. Título tentativo de la RSL
 
-(Será ajustado a medida que se desarrolle la investigación.)
+<!-- Título breve (≤ 20 palabras, sin subtítulo en cascada); será la base del título del paper. -->
 ...
 ```
 
@@ -153,4 +153,6 @@ Las palabras clave, el marco PICOCT y las queries se encuentran en [picoc.md](pi
 - Tabla y query con términos distintos o distinto N; términos sin origen en el tema; componentes sin sub-pregunta.
 - Entregar `picoc.md` sin `picoc:lint` PASS.
 - Colloquial prose in narrative sections.
+- Entregar con `pnpm -s redaccion:lint docs/[titulo-breve]/informe.md` en FAIL: marcas editoriales (`[citar]`, `TODO`, `PENDIENTE`…), huellas internas (`topic.md`, panel, veredicto, `GO_*`, skills, rutas, "Nota de artefacto") o siglas sin definir.
+- Obras citadas en la prosa que no están en la tabla de la sección 3 (`pnpm -s paper:status docs/[titulo-breve] --cites docs/[titulo-breve]/informe.md` → PASS).
 - Collapsing 1.1 / 1.2 / 1.3 into three top-level sections numbered 1–3.
