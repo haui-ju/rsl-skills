@@ -1001,7 +1001,7 @@ def _(sb):
     polish = (SKILLS / "rsl-polish-paper" / "SKILL.md").read_text(encoding="utf-8")
     for need in ("global/bibliography/bibliography.md", "rsl:source", "[[ AGREGAR DIAGRAMA ]]", "Web of Science", "n = X", "Excluidos por fecha de publicación", "CI1"):
         sb.check(need in make, f"rsl-make-paper/SKILL.md no contiene «{need}»")
-    for need in ("global/bibliography/bibliography.md", "[[ AGREGAR DIAGRAMA ]]", "Hilo", "R7", "R8", "Sustento", "Minimal diff", "10 %", "No redundancy"):
+    for need in ("global/bibliography/bibliography.md", "[[ AGREGAR DIAGRAMA ]]", "Hilo", "R7", "R8", "Sustento", "Minimal diff", "Write, do not bolt on", "No redundancy"):
         sb.check(need in polish, f"rsl-polish-paper/SKILL.md no contiene «{need}»")
     sb.check("R7" in make, "rsl-make-paper/SKILL.md no pide el hilo entre párrafos (R7)")
     sb.check("R8" in make, "rsl-make-paper/SKILL.md no pide citar las afirmaciones importantes (R8)")
@@ -1014,8 +1014,9 @@ def _(sb):
     sb.check("### R8" in playbook, "playbooks/redaccion-academica.md no tiene la regla R8 de sustento con citas")
     agent = (ROOT / ".cursor" / "agents" / "redaccion-rsl.md").read_text(encoding="utf-8")
     sb.check("### Hilo" in agent, "redaccion-rsl no devuelve la tabla Hilo (intención y enlace de cada párrafo)")
-    sb.check("### Comparación" in agent, "redaccion-rsl no compara cada párrafo cambiado con la versión anterior (tabla Comparación)")
-    sb.check("Comparación" in polish, "rsl-polish-paper no pide a redaccion-rsl comparar con la versión anterior")
+    sb.check("### Calidad de prosa" in agent, "redaccion-rsl no juzga la calidad de la prosa de cada párrafo (tabla Calidad de prosa, R9)")
+    sb.check("Calidad de prosa" in polish and "R9" in polish, "rsl-polish-paper no exige la Calidad de prosa (R9) de redaccion-rsl")
+    sb.check("### R9" in playbook, "playbooks/redaccion-academica.md no tiene la regla R9 de prosa con sentido y elegancia")
     cat = ROOT / "global" / "bibliography" / "bibliography.md"
     sb.check(cat.exists(), "falta el catálogo global/bibliography/bibliography.md")
     if cat.exists():

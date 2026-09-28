@@ -17,7 +17,7 @@ Objetivo: prosa final académica, natural y limpia, que un docente lea de corrid
 
 ## Reglas
 
-**Principio:** las reglas son un mínimo, no la meta. Un texto puede pasar el lint y la tabla Hilo y leer peor. En cada pulido, un cambio entra solo si el párrafo queda mejor escrito que antes (más claro, fluido o breve) o si corrige un error real; ante la duda, se conserva el texto anterior. `redaccion-rsl` lo decide en su tabla Comparación.
+**Principio:** las reglas son un mínimo, no la meta. Un texto puede pasar el lint y la tabla Hilo y seguir mal escrito. La meta es R9: prosa con sentido, precisa, económica y elegante, juzgada por sí misma, sin depender de otras versiones. Un párrafo que ya cumple R9 no se toca.
 
 ### R1 — Texto final, no nota de trabajo (FAIL)
 
@@ -88,6 +88,22 @@ Una RSL sostiene lo que dice con fuentes. No todo va citado, pero sí lo que un 
 - **No lleva cita:** lo que esta revisión decidió o hizo (la ecuación usada, los criterios fijados, los pasos seguidos), las transiciones y lo que se deduce de lo ya citado en el mismo párrafo.
 - En la mayoría de los párrafos de Introducción y en cada decisión de Metodología hay al menos una cita; un párrafo sin ninguna debe ser puramente descriptivo de lo que hizo la revisión.
 - **Nunca se inventa una fuente.** Solo se cita lo verificado: el corpus del tema (`RSL/MD/`, grafo del tema), el catálogo `global/bibliography/bibliography.md` o las referencias ya comprobadas. Si no hay fuente verificable, la afirmación se reformula como decisión propia o se retira, y la falta se anota en el debate.
+
+### R9 — Prosa con sentido y elegancia (FAIL)
+
+El estándar es el de un artículo publicado: se lee de corrido, cada oración aporta y el tono es profesional. `redaccion-rsl` lo juzga párrafo por párrafo en su tabla **Calidad de prosa**; un párrafo falla si incumple cualquiera de estos cuatro criterios.
+
+- **Sentido.** Quien no conoce el proyecto entiende qué se dice y por qué. Cada cita deja claro qué afirman los autores y para qué se trae (*Kitchenham y Charters (2007, p. 11) lo recomiendan para la Ingeniería de Software*), no una mención suelta que obliga a adivinar.
+- **Precisión.** Palabra exacta y afirmación que se puede sostener; ni vaguedades ("aspectos", "diversos elementos") ni promesas mayores que el método ("otro investigador debe llegar a los mismos estudios").
+- **Economía.** Ninguna oración sobra: si al quitarla el párrafo no pierde nada, se quita. Nada de repetir una idea ya dicha, de explicar lo obvio ni de alargar con matices que no cambian la conclusión.
+- **Elegancia.** Orden natural (sujeto, verbo, complemento, sin inversiones forzadas como "fija en el protocolo salvaguardas éticas"); ritmo variado, sin cadenas de "Por eso… Así… En consecuencia…"; subordinación en lugar de oraciones yuxtapuestas; vocabulario académico sobrio, sin adornos ni coloquialismos.
+
+Al incorporar una observación de otro agente (una cita, un matiz, una corrección), se **reescribe la oración** para que la integre con naturalidad; no se pegan cláusulas al final ni se añaden oraciones que interrumpen el hilo.
+
+| Mal escrito (pasa el lint) | Bien escrito |
+|---|---|
+| *El esquema de las guías médicas, que ordena la pregunta en población, intervención y resultado, no deja un lugar explícito para esos dos ejes. Por eso se adoptó el marco (PICOC), que amplía ese esquema precisamente con la comparación y el contexto. Kitchenham y Charters (2007, pp. 10–11) lo retoman de Petticrew y Roberts para la Ingeniería de Software.* (la cita no dice qué aportan los autores) | *El marco habitual de las revisiones clínicas, que solo distingue población, intervención y resultado, no deja lugar para esos dos ejes. Por eso se adoptó el marco PICOC, que añade precisamente la comparación y el contexto. Kitchenham y Charters (2007, pp. 10–11) lo recomiendan para la Ingeniería de Software a partir de la propuesta de Petticrew y Roberts.* |
+| *Los objetivos anteriores incluyen señalar qué combinaciones carecen de evidencia, y esa conclusión solo es sólida si…* (abre la Metodología resumiendo la Introducción) | *Esta revisión siguió las directrices de Kitchenham y Charters (2007) para revisiones sistemáticas en Ingeniería de Software, que reúnen en un protocolo previo las decisiones sobre la pregunta, la búsqueda y la selección.* |
 
 ## Ejemplos (antes → después)
 
