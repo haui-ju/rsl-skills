@@ -18,7 +18,7 @@ El agente verifica/instala prerrequisitos (node + pnpm, pipx graphifyy, poppler)
 | `rsl-topic-panel` | Estresa un tema (4 agentes + debate Mermaid + consenso) | `docs/[titulo-breve]/topic.md` |
 | `rsl-make-report` | Genera el informe UTP (7 puntos) + marco de búsqueda aparte | `docs/[titulo-breve]/informe.md` + `picoc.md` |
 | `rsl-polish-report` | Pule el informe y su marco (4 agentes) | `docs/[titulo-breve]/informe-polish.md` + `picoc-polish.md` |
-| `rsl-make-paper` | Nueva versión del paper borrador, solo secciones `enabled` y no `frozen` de `paper.yml` (+ agente `citas-rsl`) | `docs/[titulo-breve]/paper/<fecha>/paper-borrador.md` |
+| `rsl-make-paper` | Nueva versión del paper borrador, solo secciones `on` de `paper.yml` (+ agente `citas-rsl`) | `docs/[titulo-breve]/paper/<fecha>/paper-borrador.md` |
 | `rsl-polish-paper` | Pule esas secciones (4 agentes + `citas-rsl`) → texto limpio + traza de debate | `paper/<fecha>/paper-polish.md` + `paper-debate.md` |
 
 ## Skills Graphify (memoria — **tú** las ejecutas)
@@ -40,8 +40,9 @@ docs/[titulo-breve]/
   picoc.md               ← marco PICO/PICOC/PICOCT: RQ por componente, keywords, tabla 1:1, queries Scopus/WoS/IEEE Xplore
   picoc-polish.md        ← marco pulido (rsl-polish-report)
   paper/
-    paper.yml            ← TÚ decides: secciones enabled / frozen + format (romana, APA/IEEE…)
-    paper.state.json     ← hashes y versiones (lo gestiona pnpm paper:status)
+    paper.yml            ← TÚ decides: cada sección on / frozen / off + formato (romana, APA/IEEE…)
+    paper.shadow.yml     ← detalle técnico: títulos, capítulos, depends_on (rara vez se edita)
+    paper.state.jsonc    ← hashes y versiones (lo gestiona pnpm paper:status; no editar)
     2026-09-05/          ← una carpeta por corrida (trazabilidad; nunca se editan las anteriores)
       paper-borrador.md  ← versión rica (rsl-make-paper)
       paper-polish.md    ← versión limpia para presentar (rsl-polish-paper)
@@ -60,7 +61,7 @@ Root (proyecto):
 graphify-out/     ← memoria Graphify del repo (skills, global/, playbooks/, README…)
 global/           ← archivos generales que integra el usuario (líneas UTP, competencias, thesaurus)
   examples/       ← papers RSL reales de referencia (estructura/presentación; grafo propio)
-  citation-style/ ← APA7.md · IEEE.md (reglas de citas; format.citation de paper.yml)
+  citation-style/ ← APA7.md · IEEE.md (reglas de citas; formato.citas de paper.yml)
 playbooks/        ← protocolos compartidos que siguen varias skills (p. ej. vocabulario-controlado.md)
 ```
 
@@ -107,10 +108,11 @@ En `theme`, el `<slug>` se omite si solo hay un tema; `refresh`/`status` aceptan
 | `thesaurus:lookup "término"` | Ficha completa de un término IEEE (todas sus relaciones y página). |
 | `picoc:lint docs/<slug>/picoc.md` | PASS/FAIL del marco: tabla = queries Scopus/WoS/IEEE Xplore (1:1), origen en el tema, 1 RQ por componente, descriptores IEEE preferidos. |
 | `paper:status docs/<slug>` | Estado del paper según `paper/paper.yml`: qué se regenera, stale, blocked; FAIL si se editó a mano una sección frozen. |
-| `paper:status docs/<slug> --init` | Crea `paper/paper.yml` por defecto. |
+| `paper:status docs/<slug> --init` | Crea `paper/paper.yml` y `paper/paper.shadow.yml` por defecto. |
+| `paper:status docs/<slug> --migrate` | Convierte un `paper.yml` del formato antiguo (enabled/frozen) al nuevo. |
 | `paper:status docs/<slug> --new-version` | Crea `paper/<fecha>/` copiando la versión anterior. |
 | `paper:status docs/<slug> --update borrador\|polish` | Registra hashes tras escribir el borrador o el polish. |
-| `paper:status docs/<slug> --cites` | Citas en texto vs Referencias (APA 7 o IEEE según `format.citation`). |
+| `paper:status docs/<slug> --cites` | Citas en texto vs Referencias (APA 7 o IEEE según `formato.citas`). |
 
 ## Cómo ejecutar
 
@@ -158,18 +160,27 @@ Salidas en la misma versión:
 
 ### Regenerar solo algunas secciones (`paper/paper.yml`)
 
-| Flag | Efecto en la próxima corrida |
-|------|------------------------------|
-| `enabled: false` | No se genera (por defecto todo lo posterior a la Introducción) |
-| `enabled: true` + `frozen: false` | Se regenera (borrador y polish) |
-| `frozen: true` | Se copia tal cual; si cambia una fuente de `depends_on` (p. ej. `picoc.md`) queda **stale** y se avisa |
+Solo editas una palabra por sección, agrupadas por capítulo:
 
-```bash
-pnpm -s paper:status docs/<slug>            # tabla: qué se regenera, stale, blocked; FAIL si editaste a mano un frozen
-pnpm -s paper:status docs/<slug> --cites    # citas en texto vs Referencias (APA7 | IEEE según format.citation)
+```yaml
+Introducción:
+  contexto:      frozen
+  objetivo-rsl:  on
 ```
 
-- `format` en `paper.yml`: `numbering` (roman | arabic | none), `citation` (apa7 | ieee), `abstract`, `results_by` (rq | tema)…
+| Estado | Efecto en la próxima corrida |
+|--------|------------------------------|
+| `on` | Se regenera (borrador y polish) |
+| `frozen` | Se copia tal cual; si cambia una fuente de `depends_on` (p. ej. `picoc.md`) queda **stale** y se avisa |
+| `off` | No se genera (por defecto todo lo posterior a la Introducción) |
+
+```bash
+pnpm -s paper:status docs/<slug>            # tabla: qué se regenera, stale, blocked; FAIL si editaste a mano una frozen
+pnpm -s paper:status docs/<slug> --cites    # citas en texto vs Referencias (APA7 | IEEE según formato.citas)
+```
+
+- `formato` en `paper.yml`: `idioma` (es por defecto; en, pt, fr, de… cualquier código ISO 639-1), `numeracion` (romana | arabiga | ninguna), `citas` (apa7 | ieee), `resumen` (idiomas), `resultados_por` (rq | tema).
+- `paper.shadow.yml`: títulos, capítulo y `depends_on` de cada sección, más formato avanzado (letras A–E, ejemplos). Solo si quieres cambiar dependencias o títulos.
 - Metodología sale de `picoc.md`. Resultados/Discusión/Conclusión necesitan `RSL/seleccion/` y `RSL/extraccion/` (**los preparas tú**: correr las queries, validar artículos, PRISMA); mientras no existan quedan **blocked**, nunca se inventan.
 - Añadir un paper de ejemplo: copiar el `.md` en `global/examples/` (convertido con `global/to-md.md`) y correr `pnpm graphify:examples:refresh`.
 
@@ -250,9 +261,9 @@ rsl-bootstrap             ← paso 0 (una vez por clon / máquina)
   → PDFs en RSL/PDF/
   → graphify-theme (PASS)
   → rsl-polish-report
-  → rsl-make-paper          ← paper/<fecha>/paper-borrador.md (secciones enabled de paper.yml)
+  → rsl-make-paper          ← paper/<fecha>/paper-borrador.md (secciones on de paper.yml)
   → rsl-polish-paper        ← paper-polish.md limpio + paper-debate.md
-  → congelar en paper.yml lo validado · activar Metodología · (tú: selección PRISMA) · activar Resultados…
+  → marcar frozen en paper.yml lo validado · activar Metodología · (tú: selección PRISMA) · activar Resultados…
 ```
 (y de vez en cuando **`graphify-root`** si cambias skills / `global/`)
 

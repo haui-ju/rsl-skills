@@ -1,15 +1,18 @@
 #!/usr/bin/env python3
-"""Manifiesto del paper RSL por secciones: docs/<slug>/paper/paper.yml (+ paper.state.json).
+"""Manifiesto del paper RSL por secciones: docs/<slug>/paper/paper.yml (+ paper.shadow.yml, paper.state.jsonc).
 
 Uso:
-  python3 scripts/paper-manifest.py docs/<slug>                    # estado + qué regenerar (FAIL si un frozen fue editado)
-  python3 scripts/paper-manifest.py docs/<slug> --init             # crea paper/paper.yml por defecto
+  python3 scripts/paper-manifest.py docs/<slug>                    # estado + qué regenerar (FAIL si una sección frozen fue editada)
+  python3 scripts/paper-manifest.py docs/<slug> --init             # crea paper.yml + paper.shadow.yml por defecto
+  python3 scripts/paper-manifest.py docs/<slug> --migrate          # convierte el paper.yml antiguo (enabled/frozen) y paper.state.json
   python3 scripts/paper-manifest.py docs/<slug> --new-version      # crea paper/<fecha>/ copiando la versión anterior
   python3 scripts/paper-manifest.py docs/<slug> --update borrador  # registra hashes tras escribir paper-borrador.md
   python3 scripts/paper-manifest.py docs/<slug> --update polish    # registra hashes tras escribir paper-polish.md
   python3 scripts/paper-manifest.py docs/<slug> --cites [archivo]  # citas en texto vs referencias (format.citation)
 
-paper.yml lo edita el usuario (enabled / frozen / format). paper.state.json lo gestiona este script.
+paper.yml lo edita el usuario (on / frozen / off + formato).
+paper.shadow.yml: títulos, grupos, depends_on y formato avanzado.
+paper.state.jsonc: hashes y versiones; lo gestiona este script.
 """
 from __future__ import annotations
 
@@ -31,50 +34,107 @@ FILES = {"borrador": "paper-borrador.md", "polish": "paper-polish.md"}
 VERSION_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})(?:-(\d+))?$")
 SECTION_RE = re.compile(r"<!-- paper:section id=([\w-]+) -->\n(.*?)<!-- /paper:section -->", re.S)
 
-DEFAULT_YML = """\
-# Manifiesto del paper RSL. Lo editas tú; las skills rsl-make-paper / rsl-polish-paper lo respetan.
-#   enabled: false -> la sección no se genera
-#   enabled: true + frozen: false -> se regenera en la próxima corrida
-#   frozen: true -> se copia tal cual (si cambia una fuente de depends_on queda 'stale' y se avisa)
-# Estado interno (hashes, versiones): paper.state.json (no editar).
+GROUPS = [
+    ("portada", "Portada"),
+    ("introduccion", "Introducción"),
+    ("metodologia", "Metodología"),
+    ("resultados", "Resultados"),
+    ("discusion", "Discusión"),
+    ("conclusion", "Conclusión"),
+]
+STATES = {"on": (True, False), "frozen": (True, True), "off": (False, False)}
+STATE_ALIASES = {True: "on", False: "off"}  # PyYAML lee on/off como booleanos
+FORMATO = {  # clave humana -> (clave interna, {valor humano: valor interno})
+    "idioma": ("language", None),
+    "numeracion": ("numbering", {"romana": "roman", "arabiga": "arabic", "ninguna": "none"}),
+    "citas": ("citation", {"apa7": "apa7", "ieee": "ieee"}),
+    "resumen": ("abstract", None),
+    "resultados_por": ("results_by", {"rq": "rq", "tema": "tema"}),
+}
+DEFAULT_ON = {"encabezado", "contexto", "problema", "justificacion", "objetivo-rsl", "organizacion"}
+
+DEFAULT_SHADOW = """\
+# Configuración técnica del paper; normalmente no se edita.
+# Para activar, congelar o apagar secciones edita paper.yml.
+#   title: encabezado que usa la skill · group: capítulo · depends_on: fuentes que, si cambian, marcan la sección como 'stale'
+#   derived: se reconstruye sola (Referencias sale de las citas del texto)
 version: 1
 format:
-  numbering: roman           # roman (I. II.) | arabic (1. 2.) | none
   subsection_letters: true   # A. B. C. dentro de Metodología / Resultados
-  citation: apa7             # apa7 | ieee  -> global/citation-style/APA7.md | IEEE.md
-  language: es
-  abstract: [en, es]         # Abstract + Resumen al inicio
   keywords_from: picoc       # palabras clave del abstract salen de picoc(-polish).md
-  results_by: rq             # rq (una subsección por RQ de picoc) | tema (categorías emergentes)
   examples: global/examples  # papers de referencia (solo estructura / presentación)
 sections:
-  - { id: encabezado,   title: "Título · Tema · Problemática · Objetivo", group: portada, enabled: true,  frozen: false, depends_on: [topic.md, informe-polish.md, picoc.md] }
-  - { id: abstract,     title: "Abstract / Resumen + palabras clave",     group: portada, enabled: false, frozen: false, depends_on: [all] }
-  # I. Introducción
-  - { id: contexto,      title: Contexto,              group: introduccion, enabled: true, frozen: false, depends_on: [RSL/MD] }
-  - { id: problema,      title: El problema,           group: introduccion, enabled: true, frozen: false, depends_on: [picoc.md] }
-  - { id: justificacion, title: Justificación,         group: introduccion, enabled: true, frozen: false, depends_on: [informe-polish.md] }
-  - { id: objetivo-rsl,  title: Objetivo de la RSL,    group: introduccion, enabled: true, frozen: false, depends_on: [picoc.md] }
-  - { id: organizacion,  title: Organización del contenido de la revisión, group: introduccion, enabled: true, frozen: false, depends_on: [paper/paper.yml] }
-  # II. Metodología
-  - { id: marco-pico,          title: "Pregunta PICO y sus componentes",       group: metodologia, enabled: false, frozen: false, depends_on: [picoc.md] }
-  - { id: palabras-clave,      title: Palabras clave pertinentes,              group: metodologia, enabled: false, frozen: false, depends_on: [picoc.md] }
-  - { id: ecuacion-busqueda,   title: Ecuación de búsqueda,                    group: metodologia, enabled: false, frozen: false, depends_on: [picoc.md] }
-  - { id: criterios-seleccion, title: Criterios de inclusión y exclusión,      group: metodologia, enabled: false, frozen: false, depends_on: [topic.md, picoc.md] }
-  - { id: seleccion-prisma,    title: "Proceso de selección — Diagrama PRISMA", group: metodologia, enabled: false, frozen: false, depends_on: [RSL/seleccion] }
-  - { id: calidad,             title: Evaluación de calidad,                   group: metodologia, enabled: false, frozen: false, depends_on: [RSL/seleccion] }
-  # III. Resultados (requieren RSL/seleccion y RSL/extraccion, preparados por el usuario)
-  - { id: distribucion,        title: Distribución anual de publicaciones, group: resultados, enabled: false, frozen: false, depends_on: [RSL/extraccion] }
-  - { id: hallazgos-generales, title: Hallazgos generales,                 group: resultados, enabled: false, frozen: false, depends_on: [RSL/extraccion] }
-  - { id: resultados-rq,       title: Resultados por pregunta,             group: resultados, enabled: false, frozen: false, depends_on: [picoc.md, RSL/extraccion] }
-  # IV. Discusión
-  - { id: discusion-temas, title: Discusión por tema,                      group: discusion, enabled: false, frozen: false, depends_on: [resultados-rq] }
-  - { id: discusion-rq,    title: Discusión por pregunta de investigación, group: discusion, enabled: false, frozen: false, depends_on: [resultados-rq] }
-  - { id: amenazas,        title: Amenazas a la validez,                   group: discusion, enabled: false, frozen: false, depends_on: [ecuacion-busqueda, seleccion-prisma] }
-  # V. Conclusión · VI. Referencias
-  - { id: conclusion,  title: Conclusión,  group: conclusion,  enabled: false, frozen: false, depends_on: [resultados-rq, discusion-rq] }
-  - { id: referencias, title: Referencias, group: referencias, enabled: true, derived: true }
+  - { id: encabezado,   title: "Título · Tema · Problemática · Objetivo", group: portada, depends_on: [topic.md, informe-polish.md, picoc.md] }
+  - { id: resumen,      title: "Abstract / Resumen + palabras clave",     group: portada, depends_on: [all] }
+  # Introducción
+  - { id: contexto,      title: Contexto,           group: introduccion, depends_on: [RSL/MD] }
+  - { id: problema,      title: El problema,        group: introduccion, depends_on: [picoc.md] }
+  - { id: justificacion, title: Justificación,      group: introduccion, depends_on: [informe-polish.md] }
+  - { id: objetivo-rsl,  title: Objetivo de la RSL, group: introduccion, depends_on: [picoc.md] }
+  - { id: organizacion,  title: Organización del contenido de la revisión, group: introduccion, depends_on: [paper/paper.yml] }
+  # Metodología
+  - { id: marco-pico,          title: "Pregunta PICO y sus componentes",        group: metodologia, depends_on: [picoc.md] }
+  - { id: palabras-clave,      title: Palabras clave pertinentes,               group: metodologia, depends_on: [picoc.md] }
+  - { id: ecuacion-busqueda,   title: Ecuación de búsqueda,                     group: metodologia, depends_on: [picoc.md] }
+  - { id: criterios-seleccion, title: Criterios de inclusión y exclusión,       group: metodologia, depends_on: [topic.md, picoc.md] }
+  - { id: seleccion-prisma,    title: "Proceso de selección — Diagrama PRISMA", group: metodologia, depends_on: [RSL/seleccion] }
+  - { id: calidad,             title: Evaluación de calidad,                    group: metodologia, depends_on: [RSL/seleccion] }
+  # Resultados (requieren RSL/seleccion y RSL/extraccion, preparados por el usuario)
+  - { id: distribucion,        title: Distribución anual de publicaciones, group: resultados, depends_on: [RSL/extraccion] }
+  - { id: hallazgos-generales, title: Hallazgos generales,                 group: resultados, depends_on: [RSL/extraccion] }
+  - { id: resultados-rq,       title: Resultados por pregunta,             group: resultados, depends_on: [picoc.md, RSL/extraccion] }
+  # Discusión
+  - { id: discusion-temas, title: Discusión por tema,                      group: discusion, depends_on: [resultados-rq] }
+  - { id: discusion-rq,    title: Discusión por pregunta de investigación, group: discusion, depends_on: [resultados-rq] }
+  - { id: amenazas,        title: Amenazas a la validez,                   group: discusion, depends_on: [ecuacion-busqueda, seleccion-prisma] }
+  # Conclusión · Referencias
+  - { id: conclusion,  title: Conclusión,  group: conclusion,  depends_on: [resultados-rq, discusion-rq] }
+  - { id: referencias, title: Referencias, group: referencias, derived: true }
 """
+
+HUMAN_HEADER = """\
+# Qué hacer con cada sección en la próxima corrida de rsl-make-paper / rsl-polish-paper:
+#   on      -> se (re)genera
+#   frozen  -> se copia tal cual (si cambia su fuente, se avisa como 'stale')
+#   off     -> no aparece
+# Detalle técnico (títulos, dependencias): paper.shadow.yml · Estado interno: paper.state.jsonc (no editar)
+
+formato:
+  idioma: {idioma}              # idioma del paper: es | en | pt | fr | de (cualquier código ISO 639-1)
+  numeracion: {numeracion}      # romana | arabiga | ninguna
+  citas: {citas}             # apa7 | ieee
+  resumen: [{resumen}]       # idiomas del Abstract/Resumen
+  resultados_por: {resultados_por}      # rq | tema
+"""
+
+STATE_HEADER = """\
+// NO EDITAR A MANO. Lo gestiona scripts/paper-manifest.py (--update / --new-version).
+// Para activar, congelar o apagar secciones, edita paper.yml.
+"""
+
+
+def render_human(fmt: dict, shadow_sections: list[dict], states: dict[str, str]) -> str:
+    inv = {k: {iv: hv for hv, iv in (m or {}).items()} for k, (_, m) in FORMATO.items()}
+    human_fmt = {}
+    for hk, (ik, m) in FORMATO.items():
+        v = fmt.get(ik)
+        human_fmt[hk] = ", ".join(v) if hk == "resumen" else inv[hk].get(v, v)
+    out = [HUMAN_HEADER.format(**human_fmt).rstrip("\n")]
+    for gid, label in GROUPS:
+        ids = [s["id"] for s in shadow_sections if s.get("group") == gid and not s.get("derived")]
+        if not ids:
+            continue
+        out.append(f"\n{label}:")
+        w = max(len(i) for i in ids) + 1
+        out += [f"  {(i + ':').ljust(w)} {states.get(i, 'off')}" for i in ids]
+    out.append("\n# Referencias: automáticas (siempre se derivan de las citas del texto)\n")
+    return "\n".join(out)
+
+
+def default_human() -> str:
+    shadow = yaml.safe_load(DEFAULT_SHADOW)
+    fmt = {"language": "es", "numbering": "roman", "citation": "apa7", "abstract": ["en", "es"], "results_by": "rq"}
+    return render_human(fmt, shadow["sections"], {i: "on" for i in DEFAULT_ON})
 
 
 def sha(data: bytes) -> str:
@@ -90,18 +150,71 @@ class Paper:
         self.theme = theme
         self.dir = theme / "paper"
         self.yml_path = self.dir / "paper.yml"
-        self.state_path = self.dir / "paper.state.json"
+        self.shadow_path = self.dir / "paper.shadow.yml"
+        self.state_path = self.dir / "paper.state.jsonc"
+        self.legacy_state_path = self.dir / "paper.state.json"
+
+    def rel(self, f: Path) -> Path:
+        return f.relative_to(ROOT) if ROOT in f.parents else f
 
     def load(self) -> None:
         if not self.yml_path.exists():
-            sys.exit(f"error: no existe {self.yml_path.relative_to(ROOT)} (usa --init)")
-        self.cfg = yaml.safe_load(self.yml_path.read_text(encoding="utf-8"))
-        self.sections = self.cfg["sections"]
+            sys.exit(f"error: no existe {self.rel(self.yml_path)} (usa --init)")
+        human = yaml.safe_load(self.yml_path.read_text(encoding="utf-8")) or {}
+        if isinstance(human.get("sections"), list):
+            sys.exit(f"error: {self.rel(self.yml_path)} tiene el formato antiguo (enabled/frozen); usa --migrate")
+        if not self.shadow_path.exists():
+            sys.exit(f"error: no existe {self.rel(self.shadow_path)} (usa --init para crearlo)")
+        shadow = yaml.safe_load(self.shadow_path.read_text(encoding="utf-8"))
+        self.cfg = {"format": dict(shadow.get("format") or {})}
+        errors: list[str] = []
+        for hk, v in (human.get("formato") or {}).items():
+            if hk not in FORMATO:
+                errors.append(f"formato.{hk} desconocido (válidos: {', '.join(FORMATO)})")
+                continue
+            ik, m = FORMATO[hk]
+            if m is not None and v not in m:
+                errors.append(f"formato.{hk}: '{v}' no válido (usa {' | '.join(m)})")
+                continue
+            self.cfg["format"][ik] = m[v] if m else v
+        states: dict[str, str] = {}
+        for key, block in human.items():
+            if key == "formato" or not isinstance(block, dict):
+                continue
+            for sid, raw in block.items():
+                val = STATE_ALIASES.get(raw, raw)
+                if val not in STATES:
+                    errors.append(f"{sid}: estado '{raw}' no válido (usa on | frozen | off)")
+                states[sid] = val
+        self.sections = shadow["sections"]
         self.ids = [s["id"] for s in self.sections]
-        self.state = json.loads(self.state_path.read_text(encoding="utf-8")) if self.state_path.exists() else {"sections": {}, "versions": {}}
+        for sid in states:
+            if sid not in self.ids:
+                errors.append(f"sección '{sid}' no existe en paper.shadow.yml (válidas: {', '.join(i for i in self.ids if i != 'referencias')})")
+        if errors:
+            sys.exit("error en paper.yml:\n  - " + "\n  - ".join(errors))
+        for sec in self.sections:
+            if sec.get("derived"):
+                sec["enabled"], sec["frozen"] = True, False
+                continue
+            if sec["id"] not in states:
+                print(f"WARN: '{sec['id']}' no está en paper.yml; se trata como off")
+            sec["estado"] = states.get(sec["id"], "off")
+            sec["enabled"], sec["frozen"] = STATES.get(sec["estado"], (False, False))
+        self.state = self.read_state()
+
+    def read_state(self) -> dict:
+        if self.state_path.exists():
+            text = "\n".join(l for l in self.state_path.read_text(encoding="utf-8").splitlines() if not l.lstrip().startswith("//"))
+            return json.loads(text)
+        if self.legacy_state_path.exists():
+            return json.loads(self.legacy_state_path.read_text(encoding="utf-8"))
+        return {"sections": {}, "versions": {}}
 
     def save_state(self) -> None:
-        self.state_path.write_text(json.dumps(self.state, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        self.state_path.write_text(STATE_HEADER + json.dumps(self.state, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        if self.legacy_state_path.exists():
+            self.legacy_state_path.unlink()
 
     def versions(self) -> list[str]:
         vs = [p.name for p in self.dir.iterdir() if p.is_dir() and VERSION_RE.match(p.name)] if self.dir.exists() else []
@@ -134,13 +247,43 @@ class Paper:
 
 
 def cmd_init(p: Paper) -> int:
-    if p.yml_path.exists():
-        print(f"ya existe {p.yml_path.relative_to(ROOT)}")
-        return 0
     p.dir.mkdir(parents=True, exist_ok=True)
-    p.yml_path.write_text(DEFAULT_YML, encoding="utf-8")
-    print(f"creado {p.yml_path.relative_to(ROOT)} (Introducción enabled; resto off)")
+    for path, content in ((p.shadow_path, DEFAULT_SHADOW), (p.yml_path, default_human())):
+        if path.exists():
+            print(f"ya existe {p.rel(path)}")
+        else:
+            path.write_text(content, encoding="utf-8")
+            print(f"creado {p.rel(path)}")
     return 0
+
+
+def cmd_migrate(p: Paper) -> int:
+    if not p.yml_path.exists():
+        sys.exit(f"error: no existe {p.rel(p.yml_path)}")
+    old = yaml.safe_load(p.yml_path.read_text(encoding="utf-8"))
+    if not isinstance(old.get("sections"), list):
+        print("paper.yml ya está en el formato nuevo")
+    else:
+        rename = {"abstract": "resumen"}
+        states = {}
+        for s in old["sections"]:
+            if s.get("derived"):
+                continue
+            sid = rename.get(s["id"], s["id"])
+            states[sid] = "frozen" if s.get("frozen") else ("on" if s.get("enabled") else "off")
+        shadow = yaml.safe_load(DEFAULT_SHADOW)
+        p.shadow_path.write_text(DEFAULT_SHADOW, encoding="utf-8")
+        p.yml_path.write_text(render_human(old.get("format") or {}, shadow["sections"], states), encoding="utf-8")
+        print(f"migrado {p.rel(p.yml_path)} + creado {p.rel(p.shadow_path)}")
+        if p.legacy_state_path.exists():
+            st = json.loads(p.legacy_state_path.read_text(encoding="utf-8"))
+            for a, b in rename.items():
+                if a in st.get("sections", {}):
+                    st["sections"][b] = st["sections"].pop(a)
+            p.state = st
+            p.save_state()
+            print(f"migrado estado -> {p.rel(p.state_path)}")
+    return cmd_status(p)
 
 
 def cmd_new_version(p: Paper) -> int:
@@ -174,7 +317,7 @@ def cmd_update(p: Paper, stage: str) -> int:
     for sid, content in found.items():
         sec = by_id.get(sid)
         if sec is None:
-            print(f"WARN: sección '{sid}' no está en paper.yml")
+            print(f"WARN: sección '{sid}' no está en paper.shadow.yml")
             continue
         st = p.state["sections"].setdefault(sid, {})
         st.setdefault("content_hash", {})[stage] = text_hash(content)
@@ -184,7 +327,7 @@ def cmd_update(p: Paper, stage: str) -> int:
             st["status"] = "polished" if stage == "polish" else "borrador"
     p.state["versions"].setdefault(v, {})[stage] = True
     p.save_state()
-    print(f"actualizado paper.state.json · paper/{v}/{FILES[stage]} · {len(found)} secciones")
+    print(f"actualizado paper.state.jsonc · paper/{v}/{FILES[stage]} · {len(found)} secciones")
     return cmd_status(p, header=False)
 
 
@@ -218,10 +361,10 @@ def cmd_status(p: Paper, header: bool = True) -> int:
         else:
             status = "regenerar"
             regen.append(sid)
-        rows.append((sid, "on" if sec.get("enabled") else "off", "sí" if sec.get("frozen") else "no", status, ", ".join(changed) or "—", st.get("version", "—")))
-    print(f"paper/ · última versión: {v or '—'} · citation: {p.cfg.get('format', {}).get('citation', 'apa7')} · numbering: {p.cfg.get('format', {}).get('numbering', 'roman')}")
-    print("| Sección | enabled | frozen | status | fuente cambiada | versión |")
-    print("|---|---|---|---|---|---|")
+        rows.append((sid, sec.get("estado", "auto"), status, ", ".join(changed) or "—", st.get("version", "—")))
+    print(f"paper/ · última versión: {v or '—'} · idioma: {p.cfg.get('format', {}).get('language', 'es')} · citation: {p.cfg.get('format', {}).get('citation', 'apa7')} · numbering: {p.cfg.get('format', {}).get('numbering', 'roman')}")
+    print("| Sección | estado | status | fuente cambiada | versión |")
+    print("|---|---|---|---|---|")
     for r in rows:
         print("| " + " | ".join(r) + " |")
     print(f"\nA regenerar: {', '.join(regen) or '—'}")
@@ -314,6 +457,8 @@ def main(argv: list[str]) -> int:
     flag = argv[1] if len(argv) > 1 else None
     if flag == "--init":
         return cmd_init(p)
+    if flag == "--migrate":
+        return cmd_migrate(p)
     if flag == "--new-version":
         return cmd_new_version(p)
     if flag == "--update":

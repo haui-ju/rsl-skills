@@ -3,8 +3,8 @@ name: rsl-make-paper
 description: >-
   Builds a new version docs/[short-title]/paper/<fecha>/paper-borrador.md — the
   rich draft of the RSL paper, section by section according to paper/paper.yml
-  (only enabled and non-frozen sections are regenerated; the rest is copied from
-  the previous version). Uses topic.md, informe, picoc.md, Graphify theme memory,
+  (only sections marked on are regenerated; frozen/off ones are copied
+  from the previous version). Uses topic.md, informe, picoc.md, Graphify theme memory,
   RSL/MD and global/examples. Use when the user says rsl-make-paper. Does NOT
   launch the 4-agent debate (that is rsl-polish-paper); only citas-rsl at the end.
 ---
@@ -15,7 +15,7 @@ description: >-
 
 Write the **rich draft** of the RSL paper as a new version `paper/<fecha>/paper-borrador.md`. Single proposer flow (maximal useful expansion). The 4-agent debate belongs to **`rsl-polish-paper`**; here only **`citas-rsl`** runs at the end.
 
-Only the sections of `paper/paper.yml` with `enabled: true` and `frozen: false` are (re)generated. Frozen and off sections are copied unchanged from the previous version.
+Only the sections marked **`on`** in `paper/paper.yml` are (re)generated. **`frozen`** and **`off`** sections are copied unchanged from the previous version. Titles, groups and `depends_on` live in `paper/paper.shadow.yml`.
 
 ## Paths (required)
 
@@ -26,8 +26,9 @@ docs/[titulo-breve]/
   RSL/seleccion/  RSL/extraccion/                       (los prepara el USUARIO: queries, validación, PRISMA; solo lectura)
   graphify-out/                                         (memoria del tema — solo lookup)
   paper/
-    paper.yml            (lo edita el usuario: enabled / frozen / format)
-    paper.state.json     (hashes y versiones — lo gestiona paper:status)
+    paper.yml            (lo edita el usuario: on / frozen / off + formato)
+    paper.shadow.yml     (títulos, grupos, depends_on, formato avanzado)
+    paper.state.jsonc    (hashes y versiones — lo gestiona paper:status; no editar)
     <fecha>/
       paper-borrador.md  (THIS skill)
       paper-polish.md    (rsl-polish-paper)
@@ -46,7 +47,7 @@ Usa rsl-make-paper sobre docs/ia-inclusion-cognitiva-software/
 
 ## Procedure (required)
 
-1. Resolve `docs/[titulo-breve]/`. If `paper/paper.yml` is missing → `pnpm -s paper:status docs/<slug> --init` (Introducción enabled; resto off).
+1. Resolve `docs/[titulo-breve]/`. If `paper/paper.yml` is missing → `pnpm -s paper:status docs/<slug> --init` (crea `paper.yml` + `paper.shadow.yml`; Introducción on, resto off). If `paper:status` says the old format → `--migrate`.
 2. `pnpm -s paper:status docs/<slug> --new-version` → creates `paper/<fecha>/` copying the previous version and prints the table. Work **only** on the sections listed in **A regenerar**. Report **STALE** (frozen whose sources changed: do not touch, the user decides) and **BLOCKED** (missing data, e.g. `RSL/extraccion`: do not generate, say what is missing).
 3. Read internal inputs: ficha (`informe-polish.md` | `informe.md`), marco (`picoc-polish.md` | `picoc.md`), `topic.md`; and the **frozen** sections of the new version as context (coherence; never edit them).
 4. **Graphify first:**
@@ -56,14 +57,14 @@ Usa rsl-make-paper sobre docs/ia-inclusion-cognitiva-software/
    rg "^#" global/examples/*.md
    ```
    Theme graph + `RSL/MD/` locators for evidence (no full PDFs). Examples: only headings and a short passage per section to imitate **structure and presentation**; never copy their text, data or citations. Our writing must exceed their quality. Do not refresh Graphify.
-5. Write each section to regenerate **between its markers** (create them if the section is new; keep the order of `paper.yml`):
+5. Write each section to regenerate **between its markers** (create them if the section is new; keep the order of `paper.shadow.yml`):
    ```markdown
    <!-- paper:section id=contexto -->
    ### Contexto
    …
    <!-- /paper:section -->
    ```
-   Headings follow `format`: groups as H2 numbered per `format.numbering` (`## I. Introducción`, `## II. Metodología`…; letters A–E for sections if `subsection_letters`), sections as H3, deeper numbered subsections as H4 (`#### 1.1 …`) allowed in the draft. `## Referencias` is derived (all works cited in any section).
+   Headings follow the merged format (`formato` of `paper.yml` + `format` of `paper.shadow.yml`, as printed by `paper:status`): groups as H2 numbered per `format.numbering` (`## I. Introducción`, `## II. Metodología`…; letters A–E for sections if `subsection_letters`), sections as H3, deeper numbered subsections as H4 (`#### 1.1 …`) allowed in the draft. `## Referencias` is derived (all works cited in any section).
 6. Content rules per group:
    - **Introducción:** template below (maximal useful expansion).
    - **Metodología:** from `picoc(-polish).md` — its RQs, keywords, tables and the 3 queries **as they are** (no new terms or RQ). PRISMA / selection only from `RSL/seleccion/` (user data); never invent counts.
@@ -75,7 +76,7 @@ Usa rsl-make-paper sobre docs/ia-inclusion-cognitiva-software/
 
 ## Writing style (required)
 
-Spanish **académico-profesional**; connectors; cohesive paragraphs. Citations per `format.citation` following `global/citation-style/<STYLE>.md`.
+Write in the language of `formato.idioma` (default `es`: Spanish **académico-profesional**); headings (Introducción/Introduction, Referencias/References…) in that language too; connectors; cohesive paragraphs. Citations per `formato.citas` (paper.yml) following `global/citation-style/<STYLE>.md`.
 
 **Hard rules:** never put `topic.md`, `informe.md`, "panel", "GO_con_cambios", skill names or repo paths in the visible text. Never invent DOI/findings. Cite only what topic/ficha/Graphify/MD support.
 
@@ -138,7 +139,7 @@ The problemática is an **interrogative** and is stated explicitly in El problem
 ## Forbidden
 
 - Launching the 4 polish agents (only `citas-rsl`).
-- Editing previous versions, frozen or off sections, or the `enabled` / `frozen` flags of `paper.yml`.
+- Editing previous versions, frozen or off sections, the states in `paper.yml`, or `paper.shadow.yml` / `paper.state.jsonc` by hand.
 - Generating BLOCKED sections or inventing PRISMA counts / results (the selection is the user's work).
 - Deleting or renaming section markers.
 - Overwriting `informe*.md` / `picoc*.md` / `topic.md`.
