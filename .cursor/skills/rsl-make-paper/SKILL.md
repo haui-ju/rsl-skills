@@ -1,47 +1,42 @@
 ---
 name: rsl-make-paper
 description: >-
-  Builds docs/[short-title]/paper.md — full academic Introduction for the RSL
-  (context, definitions, evidence state of the art, problem, justification,
-  objective, organization). Uses topic.md, ficha/informe, Graphify theme memory
-  and RSL/MD. Use when the user says rsl-make-paper. Does NOT launch the 4-agent
-  debate (that is rsl-polish-paper).
+  Builds a new version docs/[short-title]/paper/<fecha>/paper-borrador.md — the
+  rich draft of the RSL paper, section by section according to paper/paper.yml
+  (only enabled and non-frozen sections are regenerated; the rest is copied from
+  the previous version). Uses topic.md, informe, picoc.md, Graphify theme memory,
+  RSL/MD and global/examples. Use when the user says rsl-make-paper. Does NOT
+  launch the 4-agent debate (that is rsl-polish-paper); only citas-rsl at the end.
 ---
 
 # rsl-make-paper
 
 ## Goal
 
-Write a complete **Introducción** of the RSL paper as `paper.md` in the theme folder. Single proposer flow (draft listo para pulir). Do **not** launch `critico-rsl` / `defensor-rsl` / `impacto-social-rsl` / `viabilidad-negocio-rsl` here — that is **`rsl-polish-paper`**.
+Write the **rich draft** of the RSL paper as a new version `paper/<fecha>/paper-borrador.md`. Single proposer flow (maximal useful expansion). The 4-agent debate belongs to **`rsl-polish-paper`**; here only **`citas-rsl`** runs at the end.
 
-## Output path (required)
+Only the sections of `paper/paper.yml` with `enabled: true` and `frozen: false` are (re)generated. Frozen and off sections are copied unchanged from the previous version.
+
+## Paths (required)
 
 ```text
 docs/[titulo-breve]/
-  topic.md                 (from rsl-topic-panel — debate + consenso)
-  ficha.md                 (optional alias; see Inputs)
-  informe.md               (from rsl-make-report)
-  informe-polish.md        (from rsl-polish-report — preferred ficha)
-  paper.md                 (THIS skill)
-  RSL/PDF/  RSL/MD/        (SLR corpus)
-  graphify-out/            (theme memory — lookup only)
+  topic.md · informe-polish.md · picoc(-polish).md     (insumos internos)
+  RSL/PDF/  RSL/MD/                                     (corpus)
+  RSL/seleccion/  RSL/extraccion/                       (los prepara el USUARIO: queries, validación, PRISMA; solo lectura)
+  graphify-out/                                         (memoria del tema — solo lookup)
+  paper/
+    paper.yml            (lo edita el usuario: enabled / frozen / format)
+    paper.state.json     (hashes y versiones — lo gestiona paper:status)
+    <fecha>/
+      paper-borrador.md  (THIS skill)
+      paper-polish.md    (rsl-polish-paper)
+      paper-debate.md    (rsl-polish-paper)
+global/examples/*.md       (papers reales de referencia — estructura/presentación)
+global/citation-style/     (APA7.md · IEEE.md)
 ```
 
-Same theme → **reuse** the existing folder. Slug: 3–6 words, lowercase, hyphenated.
-
-## Inputs (required package)
-
-Resolve in this order; **ask** if the theme folder is missing:
-
-| Input | Role |
-|-------|------|
-| `topic.md` | Debate 4 agentes, veredicto, tema final, exclusiones |
-| **Ficha** | Prefer `informe-polish.md` → else `informe.md` → else `ficha.md` (user may attach `ficha.md`) |
-| Graphify | `graphify query … --graph docs/[tema]/graphify-out/graph.json` |
-| `RSL/MD/*.md` | Locators + texto indexable (prefer over raw PDF) |
-| User attachments | Extra PDF/MD of SLRs the user found — if PDF, place under `RSL/PDF/` (do not leave in theme root); suggest `graphify-theme` if new files need indexing |
-
-Never invent DOI/findings. Cite only what topic/ficha/Graphify/MD support.
+Same theme → **reuse** the existing folder. Never edit previous version folders.
 
 ## Invoke
 
@@ -49,103 +44,105 @@ Never invent DOI/findings. Cite only what topic/ficha/Graphify/MD support.
 Usa rsl-make-paper sobre docs/ia-inclusion-cognitiva-software/
 ```
 
-## Writing style (required)
-
-Spanish **académico-profesional**; connectors; cohesive paragraphs; **APA 7** in-text (`Autor, año`). No colloquial tone.
-
-**Citas — hard rules:** never put `` `topic.md` ``, `informe.md`, “panel”, “GO_con_cambios”, skill names, or repo paths in the visible paper text. Those files are **internal inputs** only.
-
-### Maximal useful expansion (required)
-
-`paper.md` is the **rich draft** so `rsl-polish-paper` can compact with substance. **Explayarse al máximo útil:**
-
-- Prefer **more** evidence paragraphs over a thin summary: for each anchor SLR, state *qué cubre*, *n/DOI*, *qué no cubre* (= hueco propio).
-- Pull findings from Graphify / `RSL/MD` locators (`[PDF p.N]`); quote or paraphrase only what the source supports.
-- Include frontiers (Xu, Paiva, Bi, normas, W3C) in-text when they delimit the topic.
-- Fill every subsection of the template; do not leave stubs.
-- Optional draft `## Referencias` (3 RSL ancla, APA 7) at the end.
-
-**Do not:** invent findings, dump full PDFs, or pad with empty repetition. Every extra paragraph must add citation, delimitation, metric, ethic, or SE-process detail.
-
-`paper.md` **may be long and numbered** (1.1, 2.3…). Camera-ready compact form = **`paper-polish.md`**.
-
-### Problemática = pregunta (required)
-
-Align the research problem with the ficha: the **problemática is an interrogative** (*¿Cómo…? / ¿En qué medida…?*). In §2 you may explain *why it arises* (trends, gaps, regulation), but the formulated problem itself remains a **question**. State that question explicitly in §2.4 (or §2 opening) so polish can lift it to the header.
-
 ## Procedure (required)
 
-1. Resolve `docs/[titulo-breve]/`. Prefer folder of existing `topic.md` / `informe.md`.
-2. Read **ficha** (`informe-polish.md` | `informe.md` | `ficha.md`) + **marco** (`picoc-polish.md` | `picoc.md`) + `topic.md` (tema final, GO_*, exclusiones) — internal only.
-3. **Graphify first** (if `graphify-out/graph.json` exists):
+1. Resolve `docs/[titulo-breve]/`. If `paper/paper.yml` is missing → `pnpm -s paper:status docs/<slug> --init` (Introducción enabled; resto off).
+2. `pnpm -s paper:status docs/<slug> --new-version` → creates `paper/<fecha>/` copying the previous version and prints the table. Work **only** on the sections listed in **A regenerar**. Report **STALE** (frozen whose sources changed: do not touch, the user decides) and **BLOCKED** (missing data, e.g. `RSL/extraccion`: do not generate, say what is missing).
+3. Read internal inputs: ficha (`informe-polish.md` | `informe.md`), marco (`picoc-polish.md` | `picoc.md`), `topic.md`; and the **frozen** sections of the new version as context (coherence; never edit them).
+4. **Graphify first:**
    ```bash
    graphify query "<pregunta>" --graph docs/[titulo-breve]/graphify-out/graph.json
+   graphify query "<sección a escribir>" --graph global/examples/graphify-out/graph.json
+   rg "^#" global/examples/*.md
    ```
-   Prefer `RSL/MD/` chunks via locators; do **not** dump full PDFs. Do **not** refresh Graphify unless the user asks.
-4. If Graphify missing/stale and user attached new RSL files → suggest `Usa graphify-theme sobre docs/[tema]/`; still write `paper.md` from available sources.
-   **Términos técnicos (§1.1 Definiciones, §5 método):** reutilizar los descriptores de la tabla de búsqueda de `picoc(-polish).md`; si aparece un término EN nuevo, validarlo con `pnpm -s thesaurus:check "…"` (`playbooks/vocabulario-controlado.md`). En el texto visible no citar el thesaurus como fuente de la definición; en §5 sí declarar que las cadenas usan vocabulario controlado IEEE + términos libres.
-   **Preguntas:** la pregunta general de `picoc(-polish).md` es la problemática de §2/§2.4; sus sub-preguntas por componente (P, I, C, O, Co, T) estructuran §4 (objetivo general + objetivos específicos, uno por RQ) y §5 (cómo se organiza la revisión para responder cada RQ). No inventar RQ nuevas.
-5. Write **`paper.md`** with the **exact section structure** below — **maximal useful expansion**.
-6. Chat: path, sources, next step `Usa rsl-polish-paper sobre docs/[titulo-breve]/paper.md`
+   Theme graph + `RSL/MD/` locators for evidence (no full PDFs). Examples: only headings and a short passage per section to imitate **structure and presentation**; never copy their text, data or citations. Our writing must exceed their quality. Do not refresh Graphify.
+5. Write each section to regenerate **between its markers** (create them if the section is new; keep the order of `paper.yml`):
+   ```markdown
+   <!-- paper:section id=contexto -->
+   ### Contexto
+   …
+   <!-- /paper:section -->
+   ```
+   Headings follow `format`: groups as H2 numbered per `format.numbering` (`## I. Introducción`, `## II. Metodología`…; letters A–E for sections if `subsection_letters`), sections as H3, deeper numbered subsections as H4 (`#### 1.1 …`) allowed in the draft. `## Referencias` is derived (all works cited in any section).
+6. Content rules per group:
+   - **Introducción:** template below (maximal useful expansion).
+   - **Metodología:** from `picoc(-polish).md` — its RQs, keywords, tables and the 3 queries **as they are** (no new terms or RQ). PRISMA / selection only from `RSL/seleccion/` (user data); never invent counts.
+   - **Resultados / Discusión / Conclusión:** only from `RSL/extraccion/` (user data), by RQ or by theme per `format.results_by`.
+   - **Abstract / Resumen:** only when the content sections exist; keywords from `picoc` (`format.keywords_from`).
+7. **`citas-rsl`** (single agent) on the regenerated sections: `pnpm -s paper:status docs/<slug> --cites paper/<fecha>/paper-borrador.md` + agent fixes until PASS or justified `PENDIENTE`.
+8. `pnpm -s paper:status docs/<slug> --update borrador`.
+9. Chat: version path, regenerated / copied / stale / blocked sections, sources, citas result, next step `Usa rsl-polish-paper sobre docs/[titulo-breve]/`.
 
-## File template (`paper.md`)
+## Writing style (required)
+
+Spanish **académico-profesional**; connectors; cohesive paragraphs. Citations per `format.citation` following `global/citation-style/<STYLE>.md`.
+
+**Hard rules:** never put `topic.md`, `informe.md`, "panel", "GO_con_cambios", skill names or repo paths in the visible text. Never invent DOI/findings. Cite only what topic/ficha/Graphify/MD support.
+
+**Términos técnicos:** reuse the descriptors of the search table of `picoc(-polish).md`; a new EN term → `pnpm -s thesaurus:check "…"` (`playbooks/vocabulario-controlado.md`). In Metodología declare that the strings use IEEE controlled vocabulary + free terms.
+
+**Preguntas:** the general question of `picoc(-polish).md` is the problemática (§ El problema); its per-component sub-questions structure Objetivo de la RSL (one specific objective per RQ) and Organización. Do not invent RQ.
+
+### Maximal useful expansion (draft)
+
+For each anchor SLR: *qué cubre*, *n/DOI*, *qué no cubre* (= own gap). Pull findings from Graphify / `RSL/MD` locators (`[PDF p.N]`). Frontiers (Xu, Paiva, norms, W3C) in-text when they delimit the topic. No stubs; every extra paragraph adds citation, delimitation, metric, ethic or SE-process detail.
+
+### Problemática = pregunta
+
+The problemática is an **interrogative** and is stated explicitly in El problema (subsection 2.4 in the draft).
+
+## Introducción template (draft)
 
 ```markdown
-# Introducción — [Título de la RSL]
+<!-- paper:section id=encabezado -->
+# [Título de la RSL]
+<!-- /paper:section -->
 
-## 1. Contexto
-### 1.1 Definiciones generales
-…
+## I. Introducción
 
-### 1.2 Lo que se sabe del tema hasta la fecha
-(Basado en evidencias / citas de las RSL ancla y frontera — rico)
+<!-- paper:section id=contexto -->
+### Contexto
+#### 1.1 Definiciones generales
+#### 1.2 Lo que se sabe del tema hasta la fecha
+#### 1.3 Situación actual y disputas
+<!-- /paper:section -->
 
-### 1.3 Situación actual y disputas
-…
+<!-- paper:section id=problema -->
+### El problema
+#### 2.1 Tendencias o nuevas perspectivas
+#### 2.2 Discrepancias existentes
+#### 2.3 Vacíos de conocimiento
+#### 2.4 Contraste: situación actual vs situación deseada (pregunta reformulada)
+<!-- /paper:section -->
 
-## 2. El problema
-(Abrir o cerrar con la **problemática en forma de pregunta**)
+<!-- paper:section id=justificacion -->
+### Justificación
+#### 3.1 Justificación de la elección del tema
+#### 3.2 Utilidad de los resultados de la revisión
+#### 3.3 Necesidad de una RSL
+<!-- /paper:section -->
 
-### 2.1 Tendencias o nuevas perspectivas
-…
+<!-- paper:section id=objetivo-rsl -->
+### Objetivo de la RSL
+<!-- /paper:section -->
 
-### 2.2 Discrepancias existentes
-…
+<!-- paper:section id=organizacion -->
+### Organización del contenido de la revisión
+<!-- /paper:section -->
 
-### 2.3 Vacíos de conocimiento
-…
-
-### 2.4 Contraste: situación actual vs situación deseada
-(Qué se propone estudiar; enfatizar contraste; **reformular la pregunta**)
-
-## 3. Justificación
-### 3.1 Justificación de la elección del tema
-…
-
-### 3.2 Utilidad de los resultados de la revisión
-…
-
-### 3.3 Necesidad de una RSL
-…
-
-## 4. Objetivo de la RSL
-(Respuesta operativa a la pregunta; unión problema ↔ fronteras)
-
-## 5. Organización del contenido de la revisión
-…
-
+<!-- paper:section id=referencias -->
 ## Referencias
-(Opcional borrador: 3 RSL ancla APA 7)
+<!-- /paper:section -->
 ```
 
 ## Forbidden
 
-- Launching the 4 polish agents.
-- Overwriting `informe.md` / `informe-polish.md` / `topic.md`.
-- Inventing citations or DOI.
-- Citing `topic.md`, panel verdicts, or repo paths in the paper body.
-- Dumping full PDFs when Graphify / `RSL/MD` exists.
-- Refreshing Graphify unless the user explicitly asks.
-- Saving outside `docs/[titulo-breve]/`.
-- Thin stub sections “to polish later”.
-- Expecting `paper.md` to be camera-ready (`paper-polish.md`).
+- Launching the 4 polish agents (only `citas-rsl`).
+- Editing previous versions, frozen or off sections, or the `enabled` / `frozen` flags of `paper.yml`.
+- Generating BLOCKED sections or inventing PRISMA counts / results (the selection is the user's work).
+- Deleting or renaming section markers.
+- Overwriting `informe*.md` / `picoc*.md` / `topic.md`.
+- Inventing citations or DOI; citing internal files in the paper body.
+- Copying text, data or citations from `global/examples/`.
+- Dumping full PDFs when Graphify / `RSL/MD` exists; refreshing Graphify.
+- Thin stub sections "to polish later".

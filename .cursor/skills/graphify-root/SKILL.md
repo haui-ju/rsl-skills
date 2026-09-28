@@ -19,16 +19,16 @@ Build / refresh the **repo-root** knowledge graph (skills, `global/`, README, ca
 
 ## Procedure
 
-1. Confirm workspace is FIS repo root (`package.json` with `graphify:refresh`).
+1. Confirm workspace is FIS repo root (`package.json` with `graphify:root:refresh`).
 2. Run from root:
 
 ```bash
-npm run graphify:refresh
+pnpm graphify:root:refresh
 ```
 
-Equivalent: `npm run graphify:update` or `graphify update .`
+Equivalent: `graphify update .`
 
-3. Verify `graphify-out/graph.json` exists. Optionally note `GRAPH_REPORT.md` / `graph.html`.
+3. Verify with `pnpm graphify:root:status` (PASS = al día). Optionally note `GRAPH_REPORT.md` / `graph.html`.
 4. Chat: path of graph, brief status (ok / error). Remind that themes need **graphify-theme**.
 
 ## Lookup (after graph exists)
@@ -51,6 +51,6 @@ Actualiza la memoria graphify del root
 
 ## Forbidden
 
-- Running `npm run graphify:theme` from this skill.
+- Running `pnpm graphify:theme:refresh` from this skill.
 - Refreshing because “the graph might be stale” without user request.
 - Inventing graph contents if update fails — report the error and install hint (`pipx install graphifyy`).

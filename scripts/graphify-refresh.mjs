@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Refresh Graphify at FIS repo root (AST/docs extract, no LLM required for update).
- * Usage: npm run graphify:refresh
+ * Usage: pnpm graphify:root:refresh
  */
 import { spawnSync } from 'node:child_process';
 import { existsSync } from 'node:fs';

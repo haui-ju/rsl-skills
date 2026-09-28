@@ -3,7 +3,7 @@ name: rsl-bootstrap
 description: >-
   Deja el entorno FIS listo tras clonar o en una máquina nueva: verifica e instala
   prerrequisitos (node/pnpm, pipx graphifyy, poppler), pnpm install del workspace
-  y pnpm run bootstrap (grafo root + thesaurus IEEE + todos los temas docs/*).
+  y pnpm run bootstrap (grafo root + thesaurus IEEE + ejemplos + todos los temas docs/*).
   Use when the user says rsl-bootstrap, prepara el entorno, setup, o acaba de clonar el repo.
 ---
 
@@ -11,7 +11,7 @@ description: >-
 
 Paso **0** del flujo: antes de `rsl-topic-panel` o cualquier skill que consulte Graphify.
 
-Invocar esta skill **es** la autorización explícita para regenerar los tres grafos (root, thesaurus, temas).
+Invocar esta skill **es** la autorización explícita para regenerar los grafos (root, thesaurus, ejemplos, temas).
 
 ## Procedure
 
@@ -25,6 +25,7 @@ Invocar esta skill **es** la autorización explícita para regenerar los tres gr
 | pipx | `pipx --version` | Arch `sudo pacman -S python-pipx` · Debian `sudo apt install pipx` · macOS `brew install pipx` |
 | graphify | `graphify --help` y `~/.local/share/pipx/venvs/graphifyy/bin/python` | `pipx install graphifyy && pipx ensurepath` · luego `graphify install --platform cursor` |
 | poppler | `pdftotext -v`, `pdftohtml -v`, `pdfinfo -v` | Arch `sudo pacman -S poppler` · Debian `sudo apt install poppler-utils` · macOS `brew install poppler` |
+| PyYAML (`paper:status`) | `python3 -c "import yaml"` | Arch `sudo pacman -S python-yaml` · Debian `sudo apt install python3-yaml` · macOS `pip3 install --user pyyaml` |
 
    Comandos con `sudo` o gestores del sistema: **pedir confirmación al usuario** antes de ejecutarlos (o que los corra él).
 3. `pnpm install` (workspace root + `tools/*`).
@@ -33,6 +34,7 @@ Invocar esta skill **es** la autorización explícita para regenerar los tres gr
 ```text
 PASS  root
 PASS  thesaurus IEEE     (SKIP si falta global/thesaurus/IEEE.pdf)
+PASS  ejemplos global/examples
 PASS  temas docs/*
 ```
 

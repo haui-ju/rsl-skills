@@ -1,106 +1,141 @@
 ---
 name: rsl-polish-paper
 description: >-
-  Polishes docs/[short-title]/paper.md with 4 agents and writes paper-polish.md
-  (tema/problemática-pregunta/objetivo + secciones Contexto…Organización + refs
-  APA 7) and paper-debate.md. Use when the user says rsl-polish-paper.
+  Polishes the latest docs/[short-title]/paper/<fecha>/paper-borrador.md with 4
+  agents + citas-rsl and writes paper-polish.md and paper-debate.md in that
+  version, section by section according to paper/paper.yml (only enabled and
+  non-frozen sections; frozen ones copied; stale ones reported). Use when the
+  user says rsl-polish-paper.
 ---
 
 # rsl-polish-paper
 
 ## Goal
 
-Polish **`paper.md`** via 4-agent debate → **`paper-polish.md`** (limpio) + **`paper-debate.md`** (traza). Do not create from scratch (`rsl-make-paper`). Do not overwrite `paper.md` unless asked.
+Polish the latest **`paper-borrador.md`** via 4-agent debate + `citas-rsl` → **`paper-polish.md`** (clean, ready to present) + **`paper-debate.md`** (trace), in the same version folder. Only sections with `enabled: true` and `frozen: false` in `paper/paper.yml` are polished; frozen ones are copied byte for byte. Do not create from scratch (`rsl-make-paper`).
 
 ## Paths
 
 ```text
-docs/[titulo-breve]/
-  paper.md → paper-polish.md + paper-debate.md
-  topic/informe* = insumo interno (NUNCA citar en el paper)
+docs/[titulo-breve]/paper/
+  paper.yml · paper.state.json
+  <fecha>/paper-borrador.md → paper-polish.md + paper-debate.md
+topic/informe*/picoc* = insumo interno (NUNCA citar en el paper)
+global/examples/ (estructura) · global/citation-style/ (APA7 | IEEE)
 ```
+
+If the latest version **already has** a finished polish (`paper:status` shows it in `paper.state.json`), first run `pnpm -s paper:status docs/<slug> --new-version` (copies draft and polish) and work in the new version. Never edit previous versions.
 
 ## Division of labor
 
-| | `paper.md` | `paper-polish.md` |
-|---|------------|-------------------|
+| | `paper-borrador.md` | `paper-polish.md` |
+|---|---------------------|-------------------|
 | Rol | Bodega rica (make se explaya) | Documento limpio, compacto |
-| Subsecciones 1.1/2.3 | Permitidas | **Prohibidas** |
-| Bloques | Outline numerado | **Exactamente** estos H2 en orden (ver abajo) |
+| Sub-subsecciones (`#### 1.1`) | Permitidas | **Prohibidas** |
+| Estructura | Grupos H2 numerados + secciones H3 | Igual (según `format`), solo H2/H3 |
 | Extensión | Larga | **Masticado**: lo central; párrafos cortos |
 
-## Fluidez y anti-“texto IA” (required — revisor de forma)
-
-El polish debe **leerse como prosa académica humana**, no como lista de bullets convertidos a párrafos.
+## Fluidez y anti-"texto IA" (required — revisor de forma)
 
 | Regla | Detalle |
 |-------|---------|
-| **Lo central primero** | Por bloque: 1 idea núcleo + evidencia mínima. Cortar listas de matices, acrónimos encadenados y “además / por otro lado / en este sentido” de relleno. |
-| **Párrafos cortos** | Ideal **2–4 oraciones** por párrafo. Máx. ~5. Nunca paredes de 8+ líneas. |
-| **Contexto** | ~4 párrafos **enlazados**: WCAG/COGA → acotar objeto → tejer las 3 anclas en un hilo (no fichas sueltas) → tensiones que preparan El problema. |
-| **Continuidad** | Cada párrafo abre con **conector real** (*En ese marco*, *A partir de*, *En consecuencia*, *Ese recorte exige*, *Así*, *De ahí que*, *Es precisamente desde…*, *A ello se suma*, *Por eso*, *El vacío, entonces*, *Por esa razón*, *Además*, *De ahí*, *En respuesta*, *Como complemento*, *Con ese marco*). Sin saltos definición→cita. |
-| **Sin eco cíclico** | Chemnad/Perry/Aljedaani: una mención fuerte en Contexto; en Problema/Objetivo solo si aportan avance. |
-| **Prohibido “sabor IA”** | Enumeraciones disfrazadas (A; B; C; D), tríos forzados en cada párrafo, guiones largos en serie, verbos genéricos (“se busca abordar”), meta-comentarios. |
+| **Lo central primero** | Por bloque: 1 idea núcleo + evidencia mínima. Cortar listas de matices, acrónimos encadenados y relleno. |
+| **Párrafos cortos** | Ideal **2–4 oraciones**; máx. ~5. |
+| **Contexto** | ~4 párrafos **enlazados**: WCAG/COGA → acotar objeto → tejer las anclas en un hilo → tensiones que preparan El problema. |
+| **Continuidad** | Cada párrafo abre con **conector real** (*En ese marco*, *A partir de*, *En consecuencia*, *Ese recorte exige*, *Así*, *De ahí que*, *A ello se suma*, *Por eso*, *El vacío, entonces*, *Con ese marco*…). |
+| **Sin eco cíclico** | Anclas: una mención fuerte en Contexto; después solo si aportan avance. |
+| **Prohibido "sabor IA"** | Enumeraciones disfrazadas, tríos forzados, guiones largos en serie, verbos genéricos, meta-comentarios. |
 
-En `paper-debate.md`, la sección **Forma / gramática** debe **validar** continuidad y fluidez (pass/fail + 3–5 correcciones). Si falla → reescribir el polish antes de entregar.
+Coherence with frozen sections: read them as context; if a polished section contradicts a frozen one, report it in chat (do not edit the frozen one).
 
-## Output template (`paper-polish.md`) — required
+## Output structure (`paper-polish.md`)
+
+Headings per `format` of `paper.yml` (defaults: roman numbering, letters A–E, APA 7). Every section between its markers, in the order of `paper.yml`:
 
 ```markdown
+<!-- paper:section id=encabezado -->
 # [Título de la RSL]
 
 **Tema.** … (enunciado corto)
+
 **Problemática.** ¿…?
-**Objetivo.** … (responde a la pregunta; una o dos oraciones)
 
-## Contexto
-(3–5 párrafos cortos: definiciones → lo central de las anclas → disputas)
+**Objetivo.** … (una o dos oraciones)
+<!-- /paper:section -->
 
-## El problema
-(3–4 párrafos: nace de lo anterior → pregunta → vacío → contraste actual/deseada)
+## I. Introducción
 
-## Justificación
-(2–4 párrafos: por qué el tema → utilidad/para quién → por qué RSL)
+<!-- paper:section id=contexto -->
+### Contexto
+(3–5 párrafos cortos)
+<!-- /paper:section -->
 
-## Objetivo de la RSL
-(2–3 párrafos: respuesta a la pregunta → delimitación → ética breve)
+<!-- paper:section id=problema -->
+### El problema
+(3–4 párrafos: nace de lo anterior → pregunta → vacío → contraste)
+<!-- /paper:section -->
 
-## Organización del contenido de la revisión
-(1 párrafo)
+<!-- paper:section id=justificacion -->
+### Justificación
+(2–4 párrafos)
+<!-- /paper:section -->
 
+<!-- paper:section id=objetivo-rsl -->
+### Objetivo de la RSL
+(2–3 párrafos)
+<!-- /paper:section -->
+
+<!-- paper:section id=organizacion -->
+### Organización del contenido de la revisión
+(1 párrafo, coherente con los grupos enabled de paper.yml)
+<!-- /paper:section -->
+
+## II. Metodología            ← solo si hay secciones enabled en el grupo
+<!-- paper:section id=marco-pico -->
+### A. Pregunta PICO y sus componentes
+<!-- /paper:section -->
+…
+
+<!-- paper:section id=referencias -->
 ## Referencias
-(3 RSL ancla, APA 7)
+<!-- /paper:section -->
 ```
 
-**Orden fijo:** Contexto → El problema → Justificación → Objetivo de la RSL → Organización → Referencias.  
-Sin `### 1.1` / `### 2.3`.
+- Metodología: tables and queries from `picoc(-polish).md` as they are; PRISMA only from `RSL/seleccion/` (user data).
+- Resultados / Discusión / Conclusión: only from `RSL/extraccion/` (user data), per `format.results_by`.
+- Presentation (tables, figures, order within a group) imitating the recurring structure of `global/examples/` (`graphify query … --graph global/examples/graphify-out/graph.json`); never copy their text.
 
-### APA 7
+### Citas y referencias
 
-- In-text `(Autor, año)`; DOI solo en Referencias.
-- **Prohibido:** ``topic.md``, panel, GO_*, skills, rutas.
-- Fronteras Xu/Paiva/Bi: in-text ok; lista final = solo 3 ancla (salvo pedido).
+- Style per `format.citation` → `global/citation-style/APA7.md` | `IEEE.md`.
+- **Referencias = all works cited** in the paper (anchors, frontiers, W3C norms, laws), rebuilt every run; never frozen.
+- **Prohibido:** `topic.md`, panel, GO_*, skills, paths.
 
 ### Problemática = pregunta
 
-Header **Problemática** must be a research **question**. Body may explain *why it arises*; that does not replace the interrogative form.
+The **Problemática** header must be a research **question**.
 
 ## Procedure
 
-1. Read `paper.md` + ficha + `topic.md` (internal).
-2. Graphify lookup (no refresh).
-3. Parallel: `critico-rsl`, `defensor-rsl`, `impacto-social-rsl`, `viabilidad-negocio-rsl`.
-4. Prompt: APA 7; problemática-pregunta; bloques ordenados **masticados**; continuidad; **prohibido** sabor lista-IA / topic.md.
-5. Síntesis breve en chat.
-6. Write `paper-debate.md` (Mermaid + turnos + **Forma/gramática pass-fail**).
-7. Write `paper-polish.md`. Si el revisor de forma falla → reescribir hasta pass.
-8. List changes; PDF/Graphify gaps.
+1. `pnpm -s paper:status docs/<slug>` (create a new version if the latest is already polished). Work only on **A regenerar**; report **STALE** and **BLOCKED** without touching them.
+2. Read the latest `paper-borrador.md` + ficha + `picoc(-polish).md` + `topic.md` (internal) + frozen sections (context).
+3. Graphify lookup (theme + examples; no refresh).
+4. Parallel on the sections to regenerate only: `critico-rsl`, `defensor-rsl`, `impacto-social-rsl`, `viabilidad-negocio-rsl`.
+   Prompt: sections to polish + frozen neighbors as context + `format`; problemática-pregunta; masticado; continuidad; no sabor lista-IA / internal files.
+5. Brief synthesis in chat.
+6. Write the polished sections between their markers in `paper-polish.md` (copy frozen ones unchanged; rebuild Referencias).
+7. **`citas-rsl`**: `pnpm -s paper:status docs/<slug> --cites` + agent fixes until PASS or justified `PENDIENTE`.
+8. Append to `paper-debate.md` a block for this run: date, regenerated sections, Mermaid + turnos, **Forma/gramática pass-fail** (3–5 corrections; if fail → rewrite before delivering) and **Citas pass-fail** (citas-rsl table). Do not delete earlier blocks.
+9. `pnpm -s paper:status docs/<slug> --update polish` (must end without FAIL).
+10. List changes, stale / blocked sections, PDF/Graphify gaps. Suggest freezing validated sections in `paper/paper.yml`.
 
 ## Forbidden
 
-- Remake from scratch; overwrite paper.md/informe/topic sin pedido.
-- Subsecciones tipo 1.1 en polish; omitir alguno de los 5 H2 de contenido.
+- Remake from scratch; editing previous versions, `paper-borrador.md`, informe, picoc or topic without request.
+- Editing frozen sections (only citation re-render if `format.citation` changed) or changing `enabled` / `frozen` flags.
+- Generating off or BLOCKED sections; inventing PRISMA counts or results.
+- Deleting markers; `#### 1.1` subsections in the polish.
 - Problemática afirmativa (debe ser ¿…?).
 - Párrafos-pared o Contexto que vuelque todo el estado del arte.
-- Debate crudo dentro de paper-polish.md.
-- Inventar DOI; refresh Graphify sin pedido.
+- Raw debate inside paper-polish.md.
+- Inventing DOI; refreshing Graphify without request; copying text from `global/examples/`.

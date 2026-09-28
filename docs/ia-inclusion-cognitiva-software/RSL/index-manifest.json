@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-28T02:35:50+00:00",
+  "updated_at": "2026-09-28T03:44:22+00:00",
   "entries": {
     "informe.md": {
       "source": "informe.md",
@@ -11,7 +11,7 @@
       "method": "theme-md",
       "status": "graphify_indexed",
       "md_created_at": "2026-09-05T03:14:36+00:00",
-      "graphify_indexed_at": "2026-09-28T02:35:50+00:00",
+      "graphify_indexed_at": "2026-09-28T03:44:22+00:00",
       "notes": "theme markdown",
       "heading_count": 11
     },
@@ -24,7 +24,7 @@
       "method": "theme-md",
       "status": "graphify_indexed",
       "md_created_at": "2026-09-05T03:08:41+00:00",
-      "graphify_indexed_at": "2026-09-28T02:35:50+00:00",
+      "graphify_indexed_at": "2026-09-28T03:44:22+00:00",
       "notes": "theme markdown",
       "heading_count": 29
     },
@@ -37,7 +37,7 @@
       "method": "pdftotext+structure",
       "status": "graphify_indexed",
       "md_created_at": "2026-09-05T03:08:41+00:00",
-      "graphify_indexed_at": "2026-09-28T02:35:50+00:00",
+      "graphify_indexed_at": "2026-09-28T03:44:22+00:00",
       "notes": "words:13220,alpha:0.93;headings:52",
       "heading_count": 52
     },
@@ -50,7 +50,7 @@
       "method": "pdftotext+structure",
       "status": "graphify_indexed",
       "md_created_at": "2026-09-05T03:08:41+00:00",
-      "graphify_indexed_at": "2026-09-28T02:35:50+00:00",
+      "graphify_indexed_at": "2026-09-28T03:44:22+00:00",
       "notes": "words:11983,alpha:0.93;headings:37",
       "heading_count": 37
     },
@@ -63,61 +63,74 @@
       "method": "pdftotext+structure",
       "status": "graphify_indexed",
       "md_created_at": "2026-09-05T03:14:36+00:00",
-      "graphify_indexed_at": "2026-09-28T02:35:50+00:00",
+      "graphify_indexed_at": "2026-09-28T03:44:22+00:00",
       "notes": "words:11709,alpha:0.91;headings:36",
       "heading_count": 36
     },
     "informe-polish.md": {
       "source": "informe-polish.md",
-      "source_sha256": "cfd2ad3b9115f8d09d3d4c02bd82ca122c8c5dc730e7cf77709bdf1c9f510d30",
-      "source_bytes": 17570,
+      "source_sha256": "cc1997a5b60db1615160d964f215f4205fe237a676d9095dee8801fe2fcf98de",
+      "source_bytes": 9722,
       "md": "informe-polish.md",
-      "md_sha256": "cfd2ad3b9115f8d09d3d4c02bd82ca122c8c5dc730e7cf77709bdf1c9f510d30",
+      "md_sha256": "cc1997a5b60db1615160d964f215f4205fe237a676d9095dee8801fe2fcf98de",
       "method": "theme-md",
       "status": "graphify_indexed",
-      "md_created_at": "2026-09-28T02:35:50+00:00",
-      "graphify_indexed_at": "2026-09-28T02:35:50+00:00",
+      "md_created_at": "2026-09-28T03:41:06+00:00",
+      "graphify_indexed_at": "2026-09-28T03:44:22+00:00",
       "notes": "theme markdown",
       "heading_count": 11
     },
-    "paper-debate.md": {
-      "source": "paper-debate.md",
+    "picoc.md": {
+      "source": "picoc.md",
+      "source_sha256": "e106c91243514d6d9706e545a61758f2aa8e01c3aa0de10cbbf56278dbc91284",
+      "source_bytes": 14380,
+      "md": "picoc.md",
+      "md_sha256": "e106c91243514d6d9706e545a61758f2aa8e01c3aa0de10cbbf56278dbc91284",
+      "method": "theme-md",
+      "status": "graphify_indexed",
+      "md_created_at": "2026-09-28T03:41:06+00:00",
+      "graphify_indexed_at": "2026-09-28T03:44:22+00:00",
+      "notes": "theme markdown",
+      "heading_count": 13
+    },
+    "paper/2026-09-05/paper-borrador.md": {
+      "source": "paper/2026-09-05/paper-borrador.md",
+      "source_sha256": "793156bb8c3801867162707ae236f2d674c51d99770dea82e329dcc5b249b4f4",
+      "source_bytes": 19365,
+      "md": "paper/2026-09-05/paper-borrador.md",
+      "md_sha256": "793156bb8c3801867162707ae236f2d674c51d99770dea82e329dcc5b249b4f4",
+      "method": "theme-md",
+      "status": "graphify_indexed",
+      "md_created_at": "2026-09-28T03:41:06+00:00",
+      "graphify_indexed_at": "2026-09-28T03:44:22+00:00",
+      "notes": "theme markdown",
+      "heading_count": 8
+    },
+    "paper/2026-09-05/paper-debate.md": {
+      "source": "paper/2026-09-05/paper-debate.md",
       "source_sha256": "c086a35437947b000d258277f579aa02374d0e49e4724a33420b9c62742a32a2",
       "source_bytes": 2760,
-      "md": "paper-debate.md",
+      "md": "paper/2026-09-05/paper-debate.md",
       "md_sha256": "c086a35437947b000d258277f579aa02374d0e49e4724a33420b9c62742a32a2",
       "method": "theme-md",
       "status": "graphify_indexed",
-      "md_created_at": "2026-09-28T02:05:29+00:00",
-      "graphify_indexed_at": "2026-09-28T02:35:50+00:00",
+      "md_created_at": "2026-09-28T03:41:06+00:00",
+      "graphify_indexed_at": "2026-09-28T03:44:22+00:00",
       "notes": "theme markdown",
       "heading_count": 9
     },
-    "paper-polish.md": {
-      "source": "paper-polish.md",
-      "source_sha256": "d2a55022c33a88898c9ed716f3ae0ef24e53f1891b529f41478137dcc6065692",
-      "source_bytes": 7134,
-      "md": "paper-polish.md",
-      "md_sha256": "d2a55022c33a88898c9ed716f3ae0ef24e53f1891b529f41478137dcc6065692",
+    "paper/2026-09-05/paper-polish.md": {
+      "source": "paper/2026-09-05/paper-polish.md",
+      "source_sha256": "fcd2d8fc6e2a4a8c1e0de9365740159bdee290fae867ae2a7add2eb5014806f2",
+      "source_bytes": 7591,
+      "md": "paper/2026-09-05/paper-polish.md",
+      "md_sha256": "fcd2d8fc6e2a4a8c1e0de9365740159bdee290fae867ae2a7add2eb5014806f2",
       "method": "theme-md",
       "status": "graphify_indexed",
-      "md_created_at": "2026-09-28T02:05:29+00:00",
-      "graphify_indexed_at": "2026-09-28T02:35:50+00:00",
+      "md_created_at": "2026-09-28T03:41:06+00:00",
+      "graphify_indexed_at": "2026-09-28T03:44:22+00:00",
       "notes": "theme markdown",
-      "heading_count": 7
-    },
-    "paper.md": {
-      "source": "paper.md",
-      "source_sha256": "07987b032e83521626201a86238ce74360cb7c689e7ea236d108be6f32e99f0d",
-      "source_bytes": 18912,
-      "md": "paper.md",
-      "md_sha256": "07987b032e83521626201a86238ce74360cb7c689e7ea236d108be6f32e99f0d",
-      "method": "theme-md",
-      "status": "graphify_indexed",
-      "md_created_at": "2026-09-28T02:05:29+00:00",
-      "graphify_indexed_at": "2026-09-28T02:35:50+00:00",
-      "notes": "theme markdown",
-      "heading_count": 17
+      "heading_count": 8
     }
   }
 }

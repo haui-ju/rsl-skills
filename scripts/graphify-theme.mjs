@@ -3,13 +3,13 @@
  * Theme Graphify orchestrator
  *
  * Stages:
- *   A prepare  → npm run graphify:theme -- <slug> --prepare-only
- *   C build+D  → npm run graphify:theme -- <slug>
- *   D verify   → npm run graphify:theme -- <slug> --verify-only
+ *   A prepare  → pnpm graphify:theme:refresh <slug> --prepare-only
+ *   C build+D  → pnpm graphify:theme:refresh <slug>
+ *   D verify   → pnpm graphify:theme:status <slug>
  *
  * Full:
- *   npm run graphify:theme -- <slug>
- *   npm run graphify:theme -- <slug> --force
+ *   pnpm graphify:theme:refresh <slug>
+ *   pnpm graphify:theme:refresh <slug> --force
  */
 import { spawnSync } from 'node:child_process';
 import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
@@ -29,11 +29,11 @@ if (!raw) {
   console.error(
     [
       'Usage:',
-      '  npm run graphify:theme -- <titulo-breve>',
-      '  npm run graphify:theme -- <titulo-breve> --prepare-only',
-      '  npm run graphify:theme -- <titulo-breve> --build-only',
-      '  npm run graphify:theme -- <titulo-breve> --verify-only',
-      '  npm run graphify:theme -- <titulo-breve> --force',
+      '  pnpm graphify:theme:refresh <titulo-breve>',
+      '  pnpm graphify:theme:refresh <titulo-breve> --prepare-only',
+      '  pnpm graphify:theme:refresh <titulo-breve> --build-only',
+      '  pnpm graphify:theme:refresh <titulo-breve> --verify-only',
+      '  pnpm graphify:theme:refresh <titulo-breve> --force',
     ].join('\n')
   );
   process.exit(1);

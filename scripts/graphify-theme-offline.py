@@ -44,6 +44,21 @@ def entry_key(rel: str) -> str:
     return rel.replace("\\", "/")
 
 
+PAPER_VERSION_RE = re.compile(r"^\d{4}-\d{2}-\d{2}(?:-(\d+))?$")
+
+
+def theme_md_files(theme: Path) -> list[Path]:
+    """theme/*.md + paper/<última versión>/*.md (solo la última, para no duplicar nodos)."""
+    files = sorted(theme.glob("*.md"))
+    paper = theme / "paper"
+    if paper.is_dir():
+        versions = [p for p in paper.iterdir() if p.is_dir() and PAPER_VERSION_RE.match(p.name)]
+        if versions:
+            latest = max(versions, key=lambda p: (p.name[:10], int(PAPER_VERSION_RE.match(p.name).group(1) or 1)))
+            files += sorted(latest.glob("*.md"))
+    return files
+
+
 def word_stats(text: str) -> tuple[int, float]:
     words = re.findall(r"[A-Za-zÁÉÍÓÚÜÑáéíóúüñ0-9]{2,}", text)
     if not words:
@@ -427,8 +442,13 @@ def prepare(theme: Path, force: bool = False) -> dict:
     skipped: list[str] = []
     converted: list[str] = []
 
-    for md in sorted(theme.glob("*.md")):
-        rel = entry_key(md.name)
+    current_md = theme_md_files(theme)
+    current_keys = {entry_key(str(md.relative_to(theme))) for md in current_md}
+    for k in [k for k, v in entries.items() if v.get("method") == "theme-md" and k not in current_keys]:
+        del entries[k]
+
+    for md in current_md:
+        rel = entry_key(str(md.relative_to(theme)))
         digest = sha256_file(md)
         prev = entries.get(rel)
         if (
@@ -610,8 +630,8 @@ def build_graph(theme: Path) -> dict:
     md_files: list[Path] = []
     indexed_keys: list[str] = []
 
-    for md in sorted(theme.glob("*.md")):
-        rel = entry_key(md.name)
+    for md in theme_md_files(theme):
+        rel = entry_key(str(md.relative_to(theme)))
         ent = entries.get(rel)
         if ent and ent.get("status") == "needs_agent":
             continue

@@ -241,6 +241,13 @@ def build_graph(data: dict) -> dict:
     graph_path = GRAPH_DIR / "graph.json"
     if not to_json(G, communities, str(graph_path), force=True, community_labels=labels):
         sys.exit("error: to_json refused")
+    try:
+        from graphify.exporters.html import to_html
+
+        # 10k nodos superan el límite de vis.js: vista agregada por comunidades.
+        to_html(G, communities, str(GRAPH_DIR / "graph.html"), community_labels=labels, node_limit=5000)
+    except Exception as e:
+        print(f"warn: graph.html skipped: {e}", file=sys.stderr)
     s = data["stats"]
     (GRAPH_DIR / "GRAPH_REPORT.md").write_text(
         "\n".join([

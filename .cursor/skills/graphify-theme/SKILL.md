@@ -33,10 +33,10 @@ Memoria **por tema** para que agentes consulten papers sin reabrir PDFs.
 
 | Stage | Comando | Qué hace |
 |-------|---------|----------|
-| **A** | `npm run graphify:theme -- <slug> --prepare-only` | Diff vs `RSL/index-manifest.json`. Nuevos/cambiados PDF → texto + **MD con muchos `##`/`###`** (Graphify solo indexa headings). Skip si hash igual y ya indexado. Exit `2` si queda `needs_agent`. |
+| **A** | `pnpm graphify:theme:refresh <slug> --prepare-only` | Diff vs `RSL/index-manifest.json`. Nuevos/cambiados PDF → texto + **MD con muchos `##`/`###`** (Graphify solo indexa headings). Skip si hash igual y ya indexado. Exit `2` si queda `needs_agent`. |
 | **B** | Solo si `needs_agent` | Leer PDF, escribir `RSL/MD/<stem>.md` rico (≥8 headings), luego `--stamp-agent`. **No** re-leer lo `graphify_indexed` con mismo hash. |
-| **C+D** | `npm run graphify:theme -- <slug>` | Build grafo + **verify** (falla si papers quedan con <8 nodos o queries vacías). |
-| Test | `npm run graphify:theme:test -- <slug>` | Corre pipeline completo y exige PASS. |
+| **C+D** | `pnpm graphify:theme:refresh <slug>` | Build grafo + **verify** (falla si papers quedan con <8 nodos o queries vacías). |
+| Status | `pnpm graphify:theme:status <slug>` | Valida sin reconstruir: grafo al día (ningún MD/PDF/paper más nuevo) + gates de verify. |
 
 ## Layout
 
@@ -54,7 +54,7 @@ docs/<slug>/
 ## Procedure (cuando invocan la skill)
 
 1. Resolver `docs/<slug>/` (preguntar si falta).
-2. **A** — `npm run graphify:theme -- <slug> --prepare-only`
+2. **A** — `pnpm graphify:theme:refresh <slug> --prepare-only`
 3. Si exit 2 / `needs_agent`:
    - Para cada PDF pendiente: extraer texto, escribir MD con Metadata, Abstract, Keywords, Concept/Finding hooks (`###`), secciones `##`, cuerpo.
    - Stamp:
@@ -65,8 +65,8 @@ docs/<slug>/
        --stamp-agent "RSL/PDF/<file>.pdf" \
        --stamp-notes "agent-rag"
      ```
-4. **C+D** — `npm run graphify:theme -- <slug>` (debe exit 0).
-5. Opcional — `npm run graphify:theme:test -- <slug>`.
+4. **C+D** — `pnpm graphify:theme:refresh <slug>` (debe exit 0).
+5. Opcional — `pnpm graphify:theme:status <slug>` (debe dar PASS).
 6. Chat: slug, nodos, manifest, skipped vs nuevos, `needs_agent` restantes, path del grafo.
 
 `--force` solo si el usuario pide rebuild total.

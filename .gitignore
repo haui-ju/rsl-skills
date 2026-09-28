@@ -2,7 +2,7 @@
 graphify-out/
 **/graphify-out/
 
-# IEEE Thesaurus derivados (CC BY-NC-ND; regenerar con pnpm run thesaurus:ieee)
+# IEEE Thesaurus derivados (CC BY-NC-ND; regenerar con pnpm graphify:thesaurus:refresh)
 global/thesaurus/*.json
 
 # Regenerable pdftotext dumps

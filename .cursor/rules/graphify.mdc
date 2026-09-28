@@ -5,16 +5,19 @@ alwaysApply: true
 
 # Graphify (FIS)
 
-Two graph scopes:
+Four graph scopes, same commands `pnpm graphify:<scope>:<refresh|status|query|open>`:
 
 | Scope | Graph path | Refresh |
 |-------|------------|---------|
-| Root (repo) | `graphify-out/graph.json` | `npm run graphify:refresh` / skill **graphify-root** |
-| Theme | `docs/[titulo-breve]/graphify-out/graph.json` | `npm run graphify:theme -- <slug>` / skill **graphify-theme** |
-| IEEE Thesaurus | `global/thesaurus/graphify-out/graph.json` | `npm run thesaurus:ieee` |
-| Todos (clon nuevo / refresh total) | los tres anteriores | `pnpm run bootstrap` / skill **rsl-bootstrap** |
+| root (repo) | `graphify-out/graph.json` | `pnpm graphify:root:refresh` / skill **graphify-root** |
+| theme | `docs/[titulo-breve]/graphify-out/graph.json` | `pnpm graphify:theme:refresh <slug>` / skill **graphify-theme** |
+| thesaurus (IEEE) | `global/thesaurus/graphify-out/graph.json` | `pnpm graphify:thesaurus:refresh` |
+| examples (papers) | `global/examples/graphify-out/graph.json` | `pnpm graphify:examples:refresh` |
+| Todos (clon nuevo / refresh total) | los cuatro anteriores | `pnpm run bootstrap` / skill **rsl-bootstrap** |
 
-Keywords / PICO / PICOC / PICOCT / queries: seguir `playbooks/vocabulario-controlado.md`. Validar todos los términos en una llamada `pnpm -s thesaurus:check "t1" "t2" …` (detalle: `thesaurus:lookup`, `graphify explain … --graph global/thesaurus/graphify-out/graph.json`). UF = sinónimos, NT = específicos, USE = descriptor preferido. Si no existe → término libre justificado; nunca inventar un descriptor IEEE.
+Validar sin reconstruir: `pnpm graphify:<scope>:status`. Consultar: `pnpm graphify:root:query "…"`, `pnpm graphify:theme:query <slug> "…"`, `pnpm graphify:thesaurus:query "…"`, `pnpm graphify:examples:query "…"`.
+
+Keywords / PICO / PICOC / PICOCT / queries: seguir `playbooks/vocabulario-controlado.md`. Validar todos los términos en una llamada `pnpm -s thesaurus:check "t1" "t2" …` (detalle: `thesaurus:lookup`, `graphify explain … --graph global/thesaurus/graphify-out/graph.json`). UF = sinónimos, NT = específicos, USE = descriptor preferido. Si no existe → término libre justificado; nunca inventar un descriptor IEEE. El marco va en `docs/<slug>/picoc.md` (`picoc-polish.md` tras el polish), no en el informe; verificar con `pnpm -s picoc:lint docs/<slug>/picoc.md`.
 
 ## Lookup (default — agents MAY query)
 
@@ -38,6 +41,6 @@ If `graphify-out/wiki/index.md` (or theme wiki) exists, navigate it before dumpi
 
 ## Refresh — human / skill owned
 
-**Never** run `npm run graphify:refresh`, `npm run graphify:theme`, or `graphify update` from `rsl-*` agents or casual coding unless the user **explicitly** invokes **graphify-root** / **graphify-theme** (or asks to refresh).
+**Never** run any `pnpm graphify:*:refresh` or `graphify update` from `rsl-*` agents or casual coding unless the user **explicitly** invokes **graphify-root** / **graphify-theme** (or asks to refresh).
 
 PDFs live under `docs/[tema]/RSL/PDF/` so they do not sit next to markdown. Theme Graphify indexes that corpus; optional `RSL/MD/` conversions are also welcome for lighter tokens.

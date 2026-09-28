@@ -4,7 +4,7 @@
  *
  *   pnpm run bootstrap
  *
- * Orden: prerrequisitos → root → thesaurus IEEE → temas docs/* con RSL/ → resumen.
+ * Orden: prerrequisitos → root → thesaurus IEEE → ejemplos global/examples → temas docs/* con RSL/ → resumen.
  * Los temas no re-extraen PDFs ya indexados (mismo sha en RSL/index-manifest.json).
  */
 import { spawnSync } from 'node:child_process';
@@ -39,6 +39,9 @@ if (!has('graphify') || !existsSync(graphifyPy)) {
 for (const bin of ['pdftotext', 'pdftohtml', 'pdfinfo']) {
   if (!has(bin)) missing.push(`${bin} (poppler):  sudo pacman -S poppler  |  sudo apt install poppler-utils  |  brew install poppler`);
 }
+if (spawnSync('python3', ['-c', 'import yaml'], { env }).status !== 0) {
+  missing.push('PyYAML (paper:status):  sudo pacman -S python-yaml  |  sudo apt install python3-yaml  |  pip install --user pyyaml');
+}
 if (missing.length) {
   console.error(['Faltan prerrequisitos:', ...[...new Set(missing)].map((m) => `  - ${m}`)].join('\n'));
   process.exit(1);
@@ -53,6 +56,8 @@ if (existsSync(thesaurusPdf)) {
   console.warn('\nWARN: global/thesaurus/IEEE.pdf no existe; se salta el thesaurus.');
   results.push(['thesaurus IEEE', null]);
 }
+
+results.push(['ejemplos global/examples', run('Papers de ejemplo', graphifyPy, ['scripts/graphify-examples.py'])]);
 
 results.push(['temas docs/*', run('Temas (docs/* con RSL/)', 'node', ['scripts/graphify-theme-test.mjs', '--all'])]);
 

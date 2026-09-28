@@ -3,9 +3,8 @@
  * Run prepare→build→verify for one theme (default: ia-inclusion-cognitiva-software)
  * or all docs/* that contain RSL/.
  *
- *   npm run graphify:theme:test
- *   npm run graphify:theme:test -- ia-inclusion-cognitiva-software
- *   npm run graphify:theme:test -- --all
+ *   node scripts/graphify-theme-test.mjs ia-inclusion-cognitiva-software
+ *   pnpm graphify:theme:refresh --all      (usa este script; también bootstrap)
  */
 import { spawnSync } from 'node:child_process';
 import { existsSync, readdirSync, statSync } from 'node:fs';

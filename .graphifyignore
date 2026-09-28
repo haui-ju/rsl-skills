@@ -1,9 +1,12 @@
 # Root Graphify = project memory only (skills, agents, scripts, global/, playbooks/, README, candidatos, tools/).
-# Theme corpora live in docs/[tema]/ and are indexed via: pnpm graphify:theme -- <slug>
+# Theme corpora live in docs/[tema]/ and are indexed via: pnpm graphify:theme:refresh <slug>
 docs/**
 
-# IEEE Thesaurus has its own graph: pnpm thesaurus:ieee → global/thesaurus/graphify-out/
+# IEEE Thesaurus has its own graph: pnpm graphify:thesaurus:refresh → global/thesaurus/graphify-out/
 global/thesaurus/**
+
+# Papers de ejemplo: grafo propio → pnpm graphify:examples:refresh → global/examples/graphify-out/
+global/examples/**
 
 # Nested / self graphs
 **/graphify-out/**
