@@ -1016,6 +1016,10 @@ def _(sb):
     sb.check("### Hilo" in agent, "redaccion-rsl no devuelve la tabla Hilo (intención y enlace de cada párrafo)")
     sb.check("### Calidad de prosa" in agent, "redaccion-rsl no juzga la calidad de la prosa de cada párrafo (tabla Calidad de prosa, R9)")
     sb.check("Calidad de prosa" in polish and "R9" in polish, "rsl-polish-paper no exige la Calidad de prosa (R9) de redaccion-rsl")
+    for name, txt in (("rsl-make-paper", make), ("rsl-polish-paper", polish)):
+        sb.check("quality reference" in txt, f"{name}/SKILL.md no usa las secciones frozen como referencia de calidad")
+        sb.check("why it failed" in txt and "AskQuestion" in txt, f"{name}/SKILL.md no pregunta por qué falló una sección rewrite antes de reescribirla")
+        sb.check("Base = this section" in txt, f"{name}/SKILL.md no toma la versión anterior como base de las secciones on")
     sb.check("### R9" in playbook, "playbooks/redaccion-academica.md no tiene la regla R9 de prosa con sentido y elegancia")
     cat = ROOT / "global" / "bibliography" / "bibliography.md"
     sb.check(cat.exists(), "falta el catálogo global/bibliography/bibliography.md")

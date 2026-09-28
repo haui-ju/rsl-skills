@@ -15,9 +15,9 @@ Writes the **rich draft** as a new version `paper/<fecha>/paper-borrador.md`. Si
 
 | State in `config.yml` | What this skill does |
 |---|---|
-| `frozen` | Copy byte for byte; never edit. |
-| `on` | Improve the previous text (fix, fill gaps, add evidence, continuity); no rewrite from scratch. No previous text → generated (`reescribir (nueva)`). |
-| `rewrite` | Ignore the previous text; regenerate from the sources. |
+| `frozen` | Validated by the user: copy byte for byte, never edit. It is also the **quality reference**: its register, precision and prose are the bar for every `on`/`rewrite` section of the run, so read it before writing and match it. |
+| `on` | **Base = this section in the previous version**; improve it (fix, fill gaps, add evidence, continuity, prose and sense per R9), keeping what works; never rewrite from scratch. No previous text → generated (`reescribir (nueva)`). |
+| `rewrite` | Ignore the previous text; regenerate from the sources. First know **why it failed**: look for the reason in the latest `paper-debate.md` (decisions, Pendientes) or in the user's message; if it is not written, ask the user with AskQuestion (e.g. no tiene sentido · mal escrito o torpe · contenido incorrecto o incompleto · enfoque equivocado · otro) before writing. Record the reason in the debate; the new text must fix exactly that. |
 | `off` | Absent. |
 
 ```text
@@ -35,7 +35,7 @@ Invoke: `Usa rsl-make-paper sobre docs/<slug>/`.
 
 1. No `config.yml` → `pnpm -s paper:status docs/<slug> --init`; old `paper/paper.yml` or old format → `--migrate`. Any `ERROR` (e.g. unknown letter in `formato.marco`) → stop and report it.
 2. `pnpm -s paper:status docs/<slug> --new-version`. It creates `paper/<fecha>/` (copy of the previous version) only if something is `on`/`rewrite`; otherwise it says so → report STALE / BLOCKED and stop. Work **only** on **A mejorar** and **A reescribir**. **STALE** frozen sections: do not touch (the user decides). **BLOCKED**: do not generate; say what is missing (`WARN picoc …` → suggest `Usa rsl-picoc sobre docs/<slug>/`; `RSL/extraccion` → user data).
-3. Inputs, read once: ficha, the latest picoc (path printed by `paper:status`), `topic.md`, and the frozen sections of the new version (coherence only).
+3. For every `rewrite` section, get the reason it failed (see the state table). Inputs, read once: ficha, the latest picoc (path printed by `paper:status`), `topic.md`, and the frozen sections of the new version (coherence and quality reference: match their register and prose).
 4. Evidence, graph first (no full PDFs, no refresh):
    - `graphify query "<tema de la sección>" --graph docs/<slug>/graphify-out/graph.json` + `RSL/MD/` locators `[PDF p.N]`.
    - One `graphify query "<sección>" --graph global/examples/graphify-out/graph.json` per section for structure and presentation only; never copy text, data or citations. Our writing must exceed them.

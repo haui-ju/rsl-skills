@@ -15,9 +15,9 @@ Polishes the latest `paper-borrador.md` into **`paper-polish.md`** (clean, ready
 
 | State in `config.yml` | What this skill does |
 |---|---|
-| `frozen` | Copy byte for byte; never edit. |
-| `on` | **Minimal diff** on the current polished text: keep every sentence that has no problem; a fix replaces a word or a clause; a citation goes inside the sentence it supports. Keep thesis, structure and wording. No polished text yet → polish from the borrador. **Re-polishing an already polished section = `on`.** |
-| `rewrite` | Discard the polished text; re-polish from the borrador section; may reframe. |
+| `frozen` | Validated by the user: copy byte for byte, never edit. It is also the **quality reference**: its register, precision and prose are the bar for every `on`/`rewrite` section of the run, so read it before writing and match it. |
+| `on` | **Base = this section as it stands in the previous version** (the new version starts as its copy); improve it, never throw it away. Keep what works; fix what is wrong (errors, contradictions, missing citations); refine the prose, the sense and the coherence of the words (R9). **Minimal diff**: keep every sentence that has no problem; a fix replaces a word or a clause; a citation goes inside the sentence it supports. Keep thesis, structure and wording. No polished text yet → polish from the borrador. **Re-polishing an already polished section = `on`.** |
+| `rewrite` | Discard the polished text and write the section again from the borrador and the sources; may reframe. First know **why it failed**: look for the reason in the latest `paper-debate.md` (decisions, Pendientes) or in the user's message; if it is not written, ask the user with AskQuestion (e.g. no tiene sentido · mal escrito o torpe · contenido incorrecto o incompleto · enfoque equivocado · otro) before writing. Record the reason in the debate; the new text must fix exactly that. |
 | `off` | Absent. |
 
 Invoke: `Usa rsl-polish-paper sobre docs/<slug>/`. Internal inputs (`topic.md`, informe, picoc) are never cited in the paper.
@@ -62,8 +62,9 @@ Contexto 3–5 short paragraphs · El problema 3–4 (arises from the previous �
 ## Procedure
 
 1. `pnpm -s paper:status docs/<slug>`. `ERROR` → stop and report. Nothing in **A mejorar** / **A reescribir** → only run `--cites` on the latest polish, report STALE / BLOCKED, stop (no version, no debate block). If the header says `etapas cerradas: …polish` (the latest version already has a finished polish) → `pnpm -s paper:status docs/<slug> --new-version`. Work only on A mejorar / A reescribir; STALE and BLOCKED are reported untouched (`WARN picoc …` → suggest `Usa rsl-picoc sobre docs/<slug>/`).
-2. Read once: the worked sections of the borrador (and of the current polish for `on`), the frozen neighbors, the picoc general question and RQs; with Metodología in the run, also `global/bibliography/bibliography.md`. Evidence only via `graphify query … --graph docs/<slug>/graphify-out/graph.json` or `pnpm graphify:bibliography:query "…"` (no refresh, no full PDFs).
+2. For every `rewrite` section, get the reason it failed (see the state table) before anything else. Read once: the frozen sections first, as the quality reference, then the worked sections of the borrador (and of the current polish for `on`), the frozen neighbors, the picoc general question and RQs; with Metodología in the run, also `global/bibliography/bibliography.md`. Evidence only via `graphify query … --graph docs/<slug>/graphify-out/graph.json` or `pnpm graphify:bibliography:query "…"` (no refresh, no full PDFs).
 3. Agents in parallel (mode **sección**; prompt = the worked sections with their state, frozen neighbors as short context, the rules above; "no releer archivos completos"; at most 8 items each; web only to verify a claim):
+   - Every prompt includes the state of each section, the reason for each `rewrite` and the frozen sections as the quality reference.
    - `critico-rsl` and `defensor-rsl` always. `critico-rsl` must return the **Sustento** table (R8); each row is resolved with a verified source (theme corpus, `global/bibliography/bibliography.md`, existing references) or by rephrasing the claim as the review's own decision. Never invent a source.
    - `impacto-social-rsl` only if `justificacion` or `objetivo-rsl` is being worked.
 4. Brief synthesis in chat; write the polished sections (frozen copied unchanged; Referencias rebuilt).
