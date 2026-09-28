@@ -127,6 +127,21 @@ Consulta (después de PASS):
 graphify query "digital accessibility" --graph docs/ia-inclusion-cognitiva-software/graphify-out/graph.json
 ```
 
+### Thesaurus IEEE (vocabulario controlado para PICO / keywords)
+
+`global/thesaurus/IEEE.pdf` (IEEE Thesaurus 2019, 594 págs., ~10.4k términos) **no** se indexa en el root: tiene grafo propio con relaciones BT/NT/RT/USE. Parse local por fuentes del PDF (negrita = preferido, cursiva = no preferido); 0 tokens LLM.
+
+```bash
+npm run thesaurus:ieee                              # PDF → ieee-thesaurus.json + graphify-out/graph.json
+npm run thesaurus:lookup -- "Human computer interaction"
+graphify explain "Assistive technology" --graph global/thesaurus/graphify-out/graph.json
+graphify path "Machine learning" "Usability" --graph global/thesaurus/graphify-out/graph.json
+```
+
+Aristas: `broader` (BT) · `narrower` (NT) · `related` (RT) · `use` (no preferido → preferido). Cada nodo lleva `p.N` del PDF.
+Si un concepto **no** aparece (p. ej. *Accessibility*, *Neurodiversity*, *LLM* en la edición 2019) se declara vacío de vocabulario y se usa término libre — no inventar descriptor IEEE.
+Derivados gitignored (licencia CC BY-NC-ND).
+
 ---
 
 ## Orden sugerido
@@ -142,10 +157,33 @@ rsl-topic-panel
 ```
 (y de vez en cuando **`graphify-root`** si cambias skills / `global/`)
 
-## Requisitos Graphify
+## Clonar en otra máquina
+
+Los grafos (`graphify-out/`) y el JSON del thesaurus están gitignored; se regeneran desde lo versionado (`RSL/MD/*.md`, `index-manifest.json`, `global/thesaurus/IEEE.pdf`). Los PDFs ya indexados **no** se re-extraen (mismo sha en el manifest) → 0 tokens.
+
+Requisitos (una vez por máquina):
 
 ```bash
-pipx install graphifyy
-pipx ensurepath && hash -r
+# Node >= 18 + pnpm (corepack enable)
+pipx install graphifyy && pipx ensurepath && hash -r
 graphify install --platform cursor
+sudo pacman -S poppler        # Debian/Ubuntu: poppler-utils · macOS: brew install poppler
+```
+
+Dejar todo listo:
+
+```bash
+pnpm install          # workspace: root + tools/* (prisma-flow)
+pnpm run bootstrap    # root + thesaurus IEEE + todos los temas docs/* → resumen PASS/FAIL
+```
+
+Re-ejecutar `pnpm run bootstrap` solo cuando cambien skills/`global/`, temas o PDFs (o usar el comando puntual: `graphify:refresh`, `graphify:theme -- <slug>`, `thesaurus:ieee`).
+
+## Tools (workspace pnpm)
+
+`tools/*` son paquetes del mismo repo (sin `.git` propio). PRISMA flow diagram:
+
+```bash
+pnpm prisma:dev       # http://localhost:3000
+pnpm prisma:build
 ```

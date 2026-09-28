@@ -1,9 +1,23 @@
-# Graphify memory / generated graphs (root + per-theme)
+# Graphify memory / generated graphs (root + per-theme + thesaurus) — regenerar con pnpm run bootstrap
 graphify-out/
 **/graphify-out/
+
+# IEEE Thesaurus derivados (CC BY-NC-ND; regenerar con pnpm run thesaurus:ieee)
+global/thesaurus/*.json
 
 # Regenerable pdftotext dumps
 **/RSL/MD/_raw/
 
-# Node
+# Node / pnpm
 node_modules/
+.pnpm-store/
+
+# Python
+__pycache__/
+*.pyc
+
+# Env / OS
+.env
+.env.*
+!.env.example
+.DS_Store

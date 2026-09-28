@@ -3,7 +3,11 @@
   "private": true,
   "type": "module",
   "description": "UTP RSL workflow (skills + Graphify memory)",
+  "packageManager": "pnpm@10.34.4",
   "scripts": {
+    "bootstrap": "node scripts/bootstrap.mjs",
+    "prisma:dev": "pnpm --filter prisma-flow dev",
+    "prisma:build": "pnpm --filter prisma-flow build",
     "graphify:refresh": "node scripts/graphify-refresh.mjs",
     "graphify:update": "node scripts/graphify-refresh.mjs",
     "graphify:theme": "node scripts/graphify-theme.mjs",
@@ -11,6 +15,8 @@
     "graphify:theme:verify": "node scripts/graphify-theme.mjs",
     "graphify:theme:test": "node scripts/graphify-theme-test.mjs",
     "graphify:query": "graphify query",
+    "thesaurus:ieee": "~/.local/share/pipx/venvs/graphifyy/bin/python scripts/thesaurus-ieee.py",
+    "thesaurus:lookup": "~/.local/share/pipx/venvs/graphifyy/bin/python scripts/thesaurus-ieee.py --lookup",
     "graphify:open": "xdg-open graphify-out/graph.html || open graphify-out/graph.html || true"
   },
   "engines": {

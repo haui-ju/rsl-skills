@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-05T03:14:37+00:00",
+  "updated_at": "2026-09-28T02:05:30+00:00",
   "entries": {
     "informe.md": {
       "source": "informe.md",
@@ -11,7 +11,7 @@
       "method": "theme-md",
       "status": "graphify_indexed",
       "md_created_at": "2026-09-05T03:14:36+00:00",
-      "graphify_indexed_at": "2026-09-05T03:14:37+00:00",
+      "graphify_indexed_at": "2026-09-28T02:05:30+00:00",
       "notes": "theme markdown",
       "heading_count": 11
     },
@@ -24,7 +24,7 @@
       "method": "theme-md",
       "status": "graphify_indexed",
       "md_created_at": "2026-09-05T03:08:41+00:00",
-      "graphify_indexed_at": "2026-09-05T03:14:37+00:00",
+      "graphify_indexed_at": "2026-09-28T02:05:30+00:00",
       "notes": "theme markdown",
       "heading_count": 29
     },
@@ -37,7 +37,7 @@
       "method": "pdftotext+structure",
       "status": "graphify_indexed",
       "md_created_at": "2026-09-05T03:08:41+00:00",
-      "graphify_indexed_at": "2026-09-05T03:14:37+00:00",
+      "graphify_indexed_at": "2026-09-28T02:05:30+00:00",
       "notes": "words:13220,alpha:0.93;headings:52",
       "heading_count": 52
     },
@@ -50,7 +50,7 @@
       "method": "pdftotext+structure",
       "status": "graphify_indexed",
       "md_created_at": "2026-09-05T03:08:41+00:00",
-      "graphify_indexed_at": "2026-09-05T03:14:37+00:00",
+      "graphify_indexed_at": "2026-09-28T02:05:30+00:00",
       "notes": "words:11983,alpha:0.93;headings:37",
       "heading_count": 37
     },
@@ -63,9 +63,61 @@
       "method": "pdftotext+structure",
       "status": "graphify_indexed",
       "md_created_at": "2026-09-05T03:14:36+00:00",
-      "graphify_indexed_at": "2026-09-05T03:14:37+00:00",
+      "graphify_indexed_at": "2026-09-28T02:05:30+00:00",
       "notes": "words:11709,alpha:0.91;headings:36",
       "heading_count": 36
+    },
+    "informe-polish.md": {
+      "source": "informe-polish.md",
+      "source_sha256": "8b1ec37d379500ba2b40581d4c9effb5c7893dfa1c5b6144c995bc09f89b7f44",
+      "source_bytes": 11525,
+      "md": "informe-polish.md",
+      "md_sha256": "8b1ec37d379500ba2b40581d4c9effb5c7893dfa1c5b6144c995bc09f89b7f44",
+      "method": "theme-md",
+      "status": "graphify_indexed",
+      "md_created_at": "2026-09-28T02:05:29+00:00",
+      "graphify_indexed_at": "2026-09-28T02:05:30+00:00",
+      "notes": "theme markdown",
+      "heading_count": 11
+    },
+    "paper-debate.md": {
+      "source": "paper-debate.md",
+      "source_sha256": "c086a35437947b000d258277f579aa02374d0e49e4724a33420b9c62742a32a2",
+      "source_bytes": 2760,
+      "md": "paper-debate.md",
+      "md_sha256": "c086a35437947b000d258277f579aa02374d0e49e4724a33420b9c62742a32a2",
+      "method": "theme-md",
+      "status": "graphify_indexed",
+      "md_created_at": "2026-09-28T02:05:29+00:00",
+      "graphify_indexed_at": "2026-09-28T02:05:30+00:00",
+      "notes": "theme markdown",
+      "heading_count": 9
+    },
+    "paper-polish.md": {
+      "source": "paper-polish.md",
+      "source_sha256": "d2a55022c33a88898c9ed716f3ae0ef24e53f1891b529f41478137dcc6065692",
+      "source_bytes": 7134,
+      "md": "paper-polish.md",
+      "md_sha256": "d2a55022c33a88898c9ed716f3ae0ef24e53f1891b529f41478137dcc6065692",
+      "method": "theme-md",
+      "status": "graphify_indexed",
+      "md_created_at": "2026-09-28T02:05:29+00:00",
+      "graphify_indexed_at": "2026-09-28T02:05:30+00:00",
+      "notes": "theme markdown",
+      "heading_count": 7
+    },
+    "paper.md": {
+      "source": "paper.md",
+      "source_sha256": "07987b032e83521626201a86238ce74360cb7c689e7ea236d108be6f32e99f0d",
+      "source_bytes": 18912,
+      "md": "paper.md",
+      "md_sha256": "07987b032e83521626201a86238ce74360cb7c689e7ea236d108be6f32e99f0d",
+      "method": "theme-md",
+      "status": "graphify_indexed",
+      "md_created_at": "2026-09-28T02:05:29+00:00",
+      "graphify_indexed_at": "2026-09-28T02:05:30+00:00",
+      "notes": "theme markdown",
+      "heading_count": 17
     }
   }
 }

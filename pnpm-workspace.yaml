@@ -1,0 +1,6 @@
+packages:
+  - 'tools/*'
+
+onlyBuiltDependencies:
+  - esbuild
+  - lightningcss
