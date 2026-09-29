@@ -15,6 +15,7 @@ Reglas:
          breves (≤ 25 palabras, ≥ 2 por lista); la inclusión fija periodo (== T), idioma, tipo de documento y acceso abierto
   KW     palabras clave ES/EN: primero descriptores IEEE preferidos (con pág.), libres solo al final y justificados
   IEEE   cada descriptor declarado es preferido en ieee-thesaurus.json y está en su bloque
+  VOC    **Vocabulario:** cita (IEEE, 2019) siempre, (ACM, 2012) si se usa «ACM CCS» y (NLM, 2026) si se usa «MeSH»; solo los usados
 
 Uso:
   python3 scripts/picoc-lint.py docs/<slug>                              # valida el último picoc
@@ -114,6 +115,24 @@ def query_blocks(q: str) -> list[list[str]]:
         inner = re.sub(r"^\s*ALL\s*=\s*", "", m.group(1))
         blocks.append([norm_term(t) for t in re.split(r"\s+OR\s+", inner.strip()) if t.strip()])
     return blocks
+
+
+VOCABS = {  # vocabulario -> (cita en la cabecera, uso en el cuerpo, nombre)
+    "IEEE": (r"\(IEEE,\s*\d{4}\)", None, "IEEE Thesaurus (IEEE, 2019)"),
+    "ACM": (r"\(ACM,\s*\d{4}\)", r"\bACM CCS\b", "ACM Computing Classification System (ACM, 2012)"),
+    "MeSH": (r"\(NLM,\s*\d{4}\)", r"\bMeSH\b", "Medical Subject Headings (NLM, 2026)"),
+}
+
+
+def vocab_header(text: str) -> str:
+    m = re.search(r"\*\*Vocabulario:\*\*(.*?)(?:·\s*\*\*Tema:\*\*|$)", text, flags=re.M)
+    return m.group(1) if m else ""
+
+
+def vocab_used(text: str) -> list[str]:
+    """Vocabularios que el picoc usa: IEEE siempre; ACM CCS y MeSH si alguna justificación los cita."""
+    body = "\n".join(l for l in text.splitlines() if "**Vocabulario:**" not in l)
+    return [k for k, (_, use, _) in VOCABS.items() if use is None or re.search(use, body)]
 
 
 def ficha_questions(theme: Path) -> tuple[list[str], Path | None]:
@@ -418,6 +437,15 @@ def main(path: Path) -> int:
                 errs.append("CR: la inclusión debe fijar el acceso abierto (criterio por defecto; «artículos de acceso abierto»)")
             if years and not re.search(rf"{years[0]}\s*(?:[–-]|y|a|al|hasta)\s*{years[1]}", inc):
                 errs.append(f"CR: la inclusión debe usar el mismo periodo que T ({years[0]}–{years[1]})")
+
+    head = vocab_header(text)
+    used = vocab_used(text)
+    for k, (cite, _, name) in VOCABS.items():
+        cited = bool(re.search(cite, head))
+        if k in used and not cited:
+            errs.append(f"VOC: la cabecera (**Vocabulario:**) debe citar {name}" + ("" if k == "IEEE" else f", porque las justificaciones usan {k if k == 'MeSH' else 'ACM CCS'}"))
+        elif cited and k not in used:
+            errs.append(f"VOC: la cabecera cita {name}, pero ninguna justificación lo usa (cita solo los vocabularios usados)")
 
     for w in warns:
         print(f"WARN {w}")

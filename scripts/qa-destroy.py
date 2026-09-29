@@ -1000,7 +1000,10 @@ def _(sb):
     sb.run(["paper", t], "OK", lacks="seleccion-prisma (falta")
 
 
-def metodologia(picoc: Path, extra_term: str | None = None) -> str:
+IEEE_NOTE = "_Nota._ En cursiva, descriptores del IEEE Thesaurus (IEEE, 2019); el resto son términos libres."
+
+
+def metodologia(picoc: Path, extra_term: str | None = None, note: str = IEEE_NOTE) -> str:
     """palabras-clave + ecuacion-busqueda copiadas del picoc (espejo), con prosa fija."""
     sys.path.insert(0, str(ROOT / "scripts"))
     import paper_picoc_sync as s
@@ -1010,7 +1013,7 @@ def metodologia(picoc: Path, extra_term: str | None = None) -> str:
         en = ts + ([extra_term] if extra_term and c == "P" else [])
         rows.append(f"| {c} | {', '.join(f'término {i + 1}' for i in range(len(en)))} | {', '.join(en)} |")
     return ("<!-- paper:section id=palabras-clave -->\n### B. Palabras clave pertinentes\n\nProsa fija de las palabras clave.\n\n"
-            "| Componente | Palabras clave (ES) | Keywords (EN) |\n|---|---|---|\n" + "\n".join(rows) + "\n<!-- /paper:section -->\n\n"
+            "| Componente | Palabras clave (ES) | Keywords (EN) |\n|---|---|---|\n" + "\n".join(rows) + f"\n\n{note}\n<!-- /paper:section -->\n\n"
             "<!-- paper:section id=ecuacion-busqueda -->\n### C. Ecuación de búsqueda\n\nProsa fija de la ecuación.\n\n"
             f"**Scopus**\n\n```text\n{m['queries']['Scopus']}```\n\n**Web of Science**\n\n```text\n{m['queries']['Web of Science']}```\n"
             "<!-- /paper:section -->\n\n")
@@ -1049,6 +1052,56 @@ def _(sb):
     sb.run(["paper", t], "OK", lacks="RESYNC")
     f.write_text(f.read_text(encoding="utf-8").replace("Prosa fija de las palabras clave.", "Prosa cambiada."), encoding="utf-8")
     sb.run(["paper", t], "ERROR", has="fuera de sus tablas")
+
+
+@case("M22", "orden", "vocabularios citados (VOC): picoc que usa ACM CCS sin citarla falla; el paper debe citar en la nota los mismos vocabularios que el picoc")
+def _(sb):
+    t = sb.theme(borrador=True)
+    v = sb.versions(t)[-1]
+    new = sb.add_picoc(t, "PICOCT", f"{TODAY}-2-PICOCT")
+    txt = new.read_text(encoding="utf-8").replace("IEEE 2019 no tiene *Accessibility*; las WCAG", "IEEE 2019 no tiene *Accessibility* (ACM CCS: *Accessibility*); las WCAG")
+    new.write_text(txt, encoding="utf-8")
+    sb.run(["lint", new], "ERROR", has="VOC")
+    new.write_text(txt.replace("IEEE Thesaurus (IEEE, 2019) y términos libres", "IEEE Thesaurus (IEEE, 2019) y términos libres; los de informática se contrastan con la ACM Computing Classification System (ACM, 2012)"), encoding="utf-8")
+    sb.run(["lint", new], "OK")
+    sb.set_yml(t, r"^(  palabras-clave:\s*)off", r"\g<1>on")
+    f = t / "paper" / v / "paper-borrador.md"
+    ref = "<!-- paper:section id=referencias -->"
+    base = f.read_text(encoding="utf-8")
+    f.write_text(base.replace(ref, metodologia(new) + ref), encoding="utf-8")
+    sb.run(["paper", t, "--picoc-sync", f"paper/{v}/paper-borrador.md"], "ERROR", has="ACM Computing Classification System")
+    sb.run(["paper", t, "--update", "borrador"], "ERROR", has="no copia")
+    acm = IEEE_NOTE.replace("; el resto son términos libres.", ". Los demás son términos libres; los de informática se contrastaron con la ACM Computing Classification System (Association for Computing Machinery [ACM], 2012).")
+    f.write_text(base.replace(ref, metodologia(new, note=acm) + ref), encoding="utf-8")
+    sb.run(["paper", t, "--picoc-sync", f"paper/{v}/paper-borrador.md"], "OK")
+    mesh = acm.replace("(Association for Computing Machinery [ACM], 2012).", "(Association for Computing Machinery [ACM], 2012) y los Medical Subject Headings (NLM, 2026).")
+    f.write_text(base.replace(ref, metodologia(new, note=mesh) + ref), encoding="utf-8")
+    sb.run(["paper", t, "--picoc-sync", f"paper/{v}/paper-borrador.md"], "ERROR", has="que el picoc no usa")
+
+
+@case("M23", "orden", "un formateador de Markdown (líneas vacías, *cursiva* → _cursiva_, relleno de tablas, [[ … ]]) no cuenta como editar una sección frozen, ni en la versión siguiente; un cambio de texto sí")
+def _(sb):
+    t = sb.theme(borrador=True)
+    sb.run(["paper", t, "--update", "borrador"], "OK", quiet=True)
+    sb.states(t, "frozen")
+    v = sb.versions(t)[-1]
+    f = t / "paper" / v / "paper-borrador.md"
+    txt = f.read_text(encoding="utf-8")
+    fmt = re.sub(r"(?<![\\*\w])\*(?![\s*])([^*\n]+?)(?<![\s\\])\*(?![*\w])", r"_\1_", txt)
+    fmt = re.sub(r"^\|(-+\|)+$", lambda m: "| " + " | ".join("---" for _ in m.group(0).strip("|").split("|")) + " |", fmt, flags=re.M)
+    fmt = fmt.replace("\n\n", "\n\n\n").replace("[[ ", "[[").replace(" ]]", "]]")
+    sb.check(fmt != txt, "el formateo simulado no cambió el borrador")
+    f.write_text(fmt, encoding="utf-8")
+    sb.run(["paper", t], "OK", lacks="fue editado")
+    sb.set_yml(t, r"^(  contexto:\s*)frozen", r"\g<1>on")
+    sb.run(["paper", t, "--new-version"], "OK", quiet=True)
+    v2 = sb.versions(t)[-1]
+    sb.run(["paper", t, "--update", "borrador"], "OK", quiet=True)
+    f2 = t / "paper" / v2 / "paper-borrador.md"
+    f2.write_text(f2.read_text(encoding="utf-8").replace("\n\n\n", "\n\n"), encoding="utf-8")
+    sb.run(["paper", t], "OK", lacks="fue editado")
+    f2.write_text(f2.read_text(encoding="utf-8").replace("# Inteligencia artificial para", "# IA para"), encoding="utf-8")
+    sb.run(["paper", t], "ERROR", has="frozen")
 
 
 @case("K07", "marco", "redaccion:lint acepta n = X y [[ AGREGAR DIAGRAMA ]] como marcadores del usuario, pero sigue fallando con TODO y con apelaciones a «el lector» (no con «lector de pantalla»)")

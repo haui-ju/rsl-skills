@@ -3,7 +3,8 @@
 Bloques espejo (se copian del picoc aunque la sección esté frozen; la prosa alrededor no se toca):
   marco-pico           Tabla del marco (concepto por componente), pregunta general (> ¿…?) y tabla de RQ
   palabras-clave       Tabla III: Keywords (EN) == términos de cada bloque de la query, mismo orden, ni uno más
-                       ni uno menos (el * cuenta); Palabras clave (ES): una traducción por término (mismo número)
+                       ni uno menos (el * cuenta); Palabras clave (ES): una traducción por término (mismo número);
+                       nota (_Nota._) que cita los mismos vocabularios que la cabecera del picoc (regla VOC)
   ecuacion-busqueda    bloques de Scopus y Web of Science idénticos a los del picoc (espacios aparte)
   criterios-seleccion  viñetas **CIn:** / **CEn:** con el mismo texto y orden que las listas del picoc
 """
@@ -21,6 +22,12 @@ MIRRORED = ("marco-pico", "palabras-clave", "ecuacion-busqueda", "criterios-sele
 DATABASES = ("Scopus", "Web of Science")
 FENCE_RE = re.compile(r"```[^\n]*\n.*?```", re.S)
 CRIT_RE = re.compile(r"^\s*[-*]\s+\*\*(C[IE])\d+:?\*\*:?\s*(.+)$", re.M)
+NOTE_RE = re.compile(r"^\s*[_*]Nota\.[_*].*$", re.M)
+PAPER_VOCAB = {  # cómo se nombra cada vocabulario en la nota del paper
+    "IEEE": (r"IEEE Thesaurus", r"\((?:Institute of Electrical and Electronics Engineers \[IEEE\]|IEEE),\s*\d{4}\)"),
+    "ACM": (r"ACM Computing Classification System", r"\((?:Association for Computing Machinery \[ACM\]|ACM),\s*\d{4}\)"),
+    "MeSH": (r"Medical Subject Headings", r"\((?:National Library of Medicine \[NLM\]|NLM),\s*\d{4}\)"),
+}
 TERM_SPLIT = re.compile(r',\s*(?=(?:[^"]*"[^"]*")*[^"]*$)')
 
 
@@ -30,7 +37,8 @@ def _bullets(body: str | None) -> list[str]:
 
 def mirror(picoc: Path) -> dict:
     """Lo que el paper debe copiar del picoc."""
-    secs = pl.sections(picoc.read_text(encoding="utf-8-sig"))
+    text = picoc.read_text(encoding="utf-8-sig")
+    secs = pl.sections(text)
     comp_rows = pl.table(pl.find(secs, "Tabla de componentes") or "")
     crit = pl.sections(pl.find(secs, pl.CRITERIA) or "", "###")
     return {
@@ -42,6 +50,7 @@ def mirror(picoc: Path) -> dict:
         "queries": {db: pl.code_block(pl.find(secs, f"Query {db}")) for db in DATABASES},
         "CI": _bullets(pl.find(crit, "Inclusión")),
         "CE": _bullets(pl.find(crit, "Exclusión")),
+        "vocabs": pl.vocab_used(text),
     }
 
 
@@ -105,6 +114,17 @@ def check_keywords(body: str, m: dict) -> list[str]:
         es = split_terms(es_cell)
         if len(es) != len(en):
             issues.append(f"palabras-clave [{c}]: {len(es)} términos en ES y {len(en)} en EN (una traducción por término)")
+    note = "\n".join(NOTE_RE.findall(body))
+    if not note:
+        issues.append("palabras-clave: falta la nota bajo la tabla (_Nota._ …) que cita los vocabularios del picoc")
+    else:
+        for k in PAPER_VOCAB:
+            name, cite = PAPER_VOCAB[k]
+            has = bool(re.search(name, note) and re.search(cite, note))
+            if k in m["vocabs"] and not has:
+                issues.append(f"palabras-clave: la nota no cita {pl.VOCABS[k][2]}, que el picoc usa")
+            elif k not in m["vocabs"] and re.search(name, note):
+                issues.append(f"palabras-clave: la nota cita {pl.VOCABS[k][2]}, que el picoc no usa")
     return issues
 
 
@@ -194,5 +214,5 @@ def prose_only(sid: str, content: str) -> str:
         return content
     text = FENCE_RE.sub("", content)
     keep = [l for l in text.splitlines()
-            if not l.strip().startswith("|") and not l.lstrip().startswith(">") and not CRIT_RE.match(l)]
+            if not l.strip().startswith("|") and not l.lstrip().startswith(">") and not CRIT_RE.match(l) and not NOTE_RE.match(l)]
     return "\n".join(keep)

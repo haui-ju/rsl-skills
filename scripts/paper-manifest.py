@@ -167,8 +167,34 @@ def text_hash(s: str) -> str:
     return sha(s.strip().encode("utf-8"))
 
 
+EMPH_RE = re.compile(r"(?<![\\*\w])\*(?![\s*])([^*\n]+?)(?<![\s\\])\*(?![*\w])")
+TABLE_SEP_RE = re.compile(r":?-+:?")
+
+
+def md_form(s: str) -> str:
+    """Texto sin lo que cambia un formateador de Markdown (líneas vacías, relleno de tablas, *cursiva* → _cursiva_, viñetas * → -, espacios en [[ … ]])."""
+    out = []
+    for ln in s.splitlines():
+        ln = ln.rstrip()
+        if not ln.strip():
+            continue
+        if ln.lstrip().startswith("|"):
+            cells = [c.strip() for c in ln.strip().strip("|").split("|")]
+            if all(TABLE_SEP_RE.fullmatch(c) for c in cells):
+                cells = ["---"] * len(cells)
+            ln = "| " + " | ".join(cells) + " |"
+        ln = re.sub(r"^(\s*)\* ", r"\1- ", ln)
+        ln = re.sub(r"\[\[\s*(.*?)\s*\]\]", r"[[\1]]", ln)
+        out.append(EMPH_RE.sub(r"_\1_", ln))
+    return "\n".join(out)
+
+
+def form_hash(s: str) -> str:
+    return text_hash(md_form(s))
+
+
 def prose_hash(sid: str, s: str) -> str:
-    return text_hash(sync.prose_only(sid, s))
+    return form_hash(sync.prose_only(sid, s))
 
 
 class Paper:
@@ -521,8 +547,9 @@ def cmd_update(p: Paper, stage: str) -> int:
             continue
         st = p.state["sections"].setdefault(sid, {})
         st.setdefault("content_hash", {})[stage] = text_hash(content)
+        st.setdefault("form_hash", {})[stage] = form_hash(content)
         if sid in sync.MIRRORED:
-            st.setdefault("prose_hash", {})[stage] = prose_hash(sid, content)
+            st.setdefault("mirror_form", {})[stage] = prose_hash(sid, content)
         st["version"] = v
         if not sec.get("frozen"):
             st["sources_hash"] = p.sources(sec)
@@ -571,13 +598,8 @@ def classify(p: Paper) -> dict:
             if mirrored and "picoc" in changed:
                 resync.append(sid)
             for stage, secs in current.items():
-                h = st.get("content_hash", {}).get(stage)
-                if not h or sid not in secs or text_hash(secs[sid]) == h:
+                if sid not in secs or not frozen_edited(p, sid, st, stage, secs[sid], v):
                     continue
-                if mirrored:
-                    ref = st.get("prose_hash", {}).get(stage) or legacy_prose_hash(p, sid, stage, h, v)
-                    if ref is None or prose_hash(sid, secs[sid]) == ref:
-                        continue
                 errors.append(f"frozen '{sid}' fue editado en paper/{v}/{FILES[stage]}" + (" (fuera de sus tablas, queries y criterios)" if mirrored else ""))
         elif sec["estado"] == "rewrite" or not any(sid in secs for secs in current.values()):
             status = "reescribir" if sec["estado"] == "rewrite" else "reescribir (nueva)"
@@ -590,17 +612,41 @@ def classify(p: Paper) -> dict:
             "blocked": blocked, "stale": stale, "resync": resync, "errors": errors}
 
 
-def legacy_prose_hash(p: Paper, sid: str, stage: str, h: str, v: str | None) -> str | None:
-    """Estado anterior al hash de prosa: lo deriva del texto registrado (versión de la sección o la de origen)."""
-    for cand in (p.state["sections"].get(sid, {}).get("version"), p.state["versions"].get(v, {}).get("from") if v else None):
-        if not cand or cand == v or not (p.dir / cand).is_dir():
+def frozen_edited(p: Paper, sid: str, st: dict, stage: str, cur: str, v: str | None) -> bool:
+    """Frozen: cuenta solo el contenido (no el formato); las secciones espejo del picoc, solo su prosa."""
+    h = st.get("content_hash", {}).get(stage)
+    if not h or text_hash(cur) == h:
+        return False
+    mirrored = sid in sync.MIRRORED
+    fp = (lambda s: prose_hash(sid, s)) if mirrored else form_hash
+    ref = st.get("mirror_form" if mirrored else "form_hash", {}).get(stage)
+    if ref is None:
+        old = registered_text(p, sid, stage, h, v)
+        if old is not None:
+            ref = fp(old)
+        elif mirrored:
+            raw = st.get("mirror_hash", {}).get(stage)
+            return raw is not None and raw != text_hash(sync.prose_only(sid, cur))
+    return ref is None or fp(cur) != ref
+
+
+def registered_text(p: Paper, sid: str, stage: str, h: str, v: str | None) -> str | None:
+    """Estado sin hash de forma: busca el texto registrado (versión de la sección y la cadena de versiones de origen)."""
+    cands, seen = [p.state["sections"].get(sid, {}).get("version")], {v}
+    cur = v
+    while cur and (cur := p.state["versions"].get(cur, {}).get("from")) and cur not in cands:
+        cands.append(cur)
+    cands += sorted(p.state["versions"], reverse=True)
+    for cand in cands:
+        if not cand or cand in seen or not (p.dir / cand).is_dir():
             continue
+        seen.add(cand)
         try:
             txt = p.read_sections(cand, stage).get(sid)
         except Fail:
             continue
         if txt is not None and text_hash(txt) == h:
-            return prose_hash(sid, txt)
+            return txt
     return None
 
 

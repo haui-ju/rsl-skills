@@ -10,6 +10,7 @@ El PDF se versiona en git solo si la licencia es abierta; si no, se ignora y el 
 | page-2021-prisma-2020 | Page, M. J., McKenzie, J. E., Bossuyt, P. M., Boutron, I., Hoffmann, T. C., Mulrow, C. D., Shamseer, L., Tetzlaff, J. M., Akl, E. A., Brennan, S. E., Chou, R., Glanville, J., Grimshaw, J. M., Hróbjartsson, A., Lalu, M. M., Li, T., Loder, E. W., Mayo-Wilson, E., McDonald, S., . . . Moher, D. (2021). The PRISMA 2020 statement: An updated guideline for reporting systematic reviews. *BMJ, 372*, Article n71. | [10.1136/bmj.n71](https://doi.org/10.1136/bmj.n71) · [PDF](https://eprints.whiterose.ac.uk/id/eprint/173303/1/bmj.n71.full.pdf) | `prisma/` | CC BY 4.0 (versionado) |
 | ieee-2019-thesaurus | Institute of Electrical and Electronics Engineers. (2019). *2019 IEEE thesaurus* (Version 1.0). | Sin DOI · [Acceso oficial](https://www.ieee.org/publications/services/thesaurus-access-page.html) | `../thesaurus/` (`IEEE.pdf`) | CC BY-NC-ND 4.0 |
 | acm-ccs-2012 | Association for Computing Machinery. (2012). *The 2012 ACM computing classification system*. | Sin DOI · [SKOS](https://dl.acm.org/pb-assets/dl_ccs/acm_ccs2012-1626988337597.xml) | `../thesaurus/acm-ccs/` (`acm-ccs-2012.xml`) | Uso libre educativo y de investigación (© ACM) |
+| nlm-2026-mesh | National Library of Medicine. (2026). *Medical subject headings* [Base de datos]. | Sin DOI · [MeSH](https://www.nlm.nih.gov/mesh/meshhome.html) · [consulta](https://id.nlm.nih.gov/mesh/) | — (consulta en línea; sin PDF) | Dominio público (NLM) |
 
 ## Pasajes citables
 

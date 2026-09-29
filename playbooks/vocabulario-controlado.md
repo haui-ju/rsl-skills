@@ -39,6 +39,12 @@ Si `global/thesaurus/ieee-thesaurus.json` o el grafo no existen → pedir `Usa r
 
 **Población clínica:** si IEEE no tiene el perfil (TDAH, dislexia, síndrome de Down…), verificarlo en MeSH (`https://id.nlm.nih.gov/mesh/lookup/descriptor?label=<término>&match=exact`) y citar en la justificación el descriptor y su identificador (p. ej. «MeSH *Dyslexia* (D004410)»); el tipo sigue siendo `Libre`.
 
+### VOC — Vocabularios citados
+
+- La línea `**Vocabulario:**` de la cabecera cita, con autor y año del catálogo `global/bibliography/bibliography.md`, **cada** vocabulario que el picoc usa, y solo esos: IEEE Thesaurus (IEEE, 2019) siempre; la ACM Computing Classification System (ACM, 2012) si alguna justificación cita «ACM CCS»; los Medical Subject Headings (NLM, 2026) si alguna cita «MeSH».
+- Todo término libre de informática con concepto ACM CCS (exacto o de nombre casi idéntico, p. ej. *User studies* para `"user study"`, comprobado con `pnpm -s thesaurus:acm`) lo cita en su justificación.
+- El paper hereda esta lista: la nota bajo la tabla de palabras clave cita los mismos vocabularios (`paper:status --picoc-sync` lo verifica).
+
 ## Reglas obligatorias
 
 ### Pregunta general
@@ -110,7 +116,7 @@ Si `global/thesaurus/ieee-thesaurus.json` o el grafo no existen → pedir `Usa r
 ````markdown
 # Marco de búsqueda — [título corto]
 
-**Marco:** PICOCT · **Vocabulario:** IEEE Thesaurus 2019 + términos libres · **Tema:** [título completo]
+**Marco:** PICOCT · **Vocabulario:** IEEE Thesaurus (IEEE, 2019) y términos libres; los de informática se contrastan con la ACM Computing Classification System (ACM, 2012) y los perfiles clínicos con los Medical Subject Headings (NLM, 2026) — solo los que se usen (regla VOC) · **Tema:** [título completo]
 
 ## Pregunta general (problemática)
 
@@ -216,6 +222,7 @@ Filtros de la interfaz: 2021–2026 · Journals · Open Access; el filtro que la
 ## Prohibido
 
 - Presentar como “descriptor IEEE” un término que `thesaurus:check` marcó LIBRE.
+- Usar la ACM CCS o MeSH en las justificaciones sin citarlos en la cabecera, o citar en la cabecera un vocabulario que no se usa (VOC).
 - Usar un término **no preferido** como descriptor principal cuando existe su USE.
 - Justificación sin cita del tema, o sustituir un libre por un *cercano* no equivalente.
 - Tabla y query con términos distintos (R2), en cualquiera de las 3 bases; componentes del marco sin fila.
