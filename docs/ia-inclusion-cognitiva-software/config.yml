@@ -26,8 +26,8 @@ Introducción:
 
 Metodología:
   marco-pico: frozen
-  palabras-clave: frozen
-  ecuacion-busqueda: frozen
+  palabras-clave: on
+  ecuacion-busqueda: on
   criterios-seleccion: on
   seleccion-prisma: frozen
   calidad: off

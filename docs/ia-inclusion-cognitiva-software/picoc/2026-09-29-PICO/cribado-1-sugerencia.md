@@ -4,7 +4,7 @@
 
 Basada en 120 registros únicos de Scopus y Web of Science (SI 34, NO 86). No reemplaza la búsqueda: la amplía.
 
-**Efecto esperado:** 26 términos agregados, 3 quitados (y `"large language model*"` fusionado en `"language model*"`, que lo incluye); los términos quitados dejan fuera 16 de los 120 registros actuales (0 SI).
+**Efecto esperado:** 26 términos agregados, 4 quitados (y `"large language model*"` fusionado en `"language model*"`, que lo incluye); la query queda en 100 keywords, el máximo; los términos quitados dejan fuera 16 de los 120 registros actuales (0 SI).
 
 ## Keywords
 
@@ -30,7 +30,7 @@ Basada en 120 registros únicos de Scopus y Web of Science (SI 34, NO 86). No re
 | I | `artificial intelligence` | vale | 48 reg., 13 SI (2 excl.), 6 NO excl. | IEEE | mantener |
 | I | `ai` | vale | 50 reg., 17 SI (3 excl.), 2 NO excl. | libre | mantener |
 | I | `machine learning` | vale | 30 reg., 4 SI (0 excl.), 0 NO excl. | IEEE | mantener |
-| I | `machine-learning` | vale | 30 reg., 4 SI (0 excl.), 0 NO excl. | libre | mantener |
+| I | `machine-learning` | revisar | 30 reg., 4 SI (0 excl.), 0 NO excl. | libre | quitar (redundante con `"machine learning"`; límite de 100 keywords) |
 | I | `deep learning` | no aporta | 11 reg., 0 SI (0 excl.), 4 NO excl. | IEEE | quitar (0 SI, 4 NO exclusivos; lo cubre machine learning) |
 | I | `natural language processing` | vale | 14 reg., 7 SI (2 excl.), 0 NO excl. | IEEE | mantener |
 | I | `nlp` | vale | 6 reg., 1 SI (0 excl.), 0 NO excl. | libre | mantener |
@@ -134,7 +134,7 @@ TITLE-ABS-KEY (
     OR "learning difficult*" OR dyscalculia OR dysgraphia
     OR "reading disabilit*" )
   AND
-  ( "artificial intelligence" OR AI OR "machine learning" OR "machine-learning"
+  ( "artificial intelligence" OR AI OR "machine learning"
     OR "natural language processing" OR NLP OR "language model*" OR LLM
     OR LLMs OR "generative AI" OR "generative artificial intelligence"
     OR ChatGPT OR GPT OR "prompt engineering" OR "computer vision" OR chatbot
@@ -174,7 +174,7 @@ ALL=(autism OR autistic OR "autism spectrum" OR neurodivers* OR neurodivergen*
   OR dyslexi* OR "cognitive accessibility" OR Asperger OR "intellectual developmental disorder"
   OR "learning disorder*" OR "learning difficult*" OR dyscalculia 
   OR dysgraphia OR "reading disabilit*")
-AND ALL=("artificial intelligence" OR AI OR "machine learning" OR "machine-learning"
+AND ALL=("artificial intelligence" OR AI OR "machine learning"
   OR "natural language processing" OR NLP OR "language model*" OR LLM OR LLMs
   OR "generative AI" OR "generative artificial intelligence" OR ChatGPT
   OR GPT OR "prompt engineering" OR "computer vision" OR chatbot OR "conversational agents"
@@ -210,6 +210,7 @@ Filtro de la interfaz: Open Access (Web of Science no tiene etiqueta de campo pa
 - `"special needs"`: no se agrega; abre a educación especial y discapacidad física sin perfil cognitivo.
 - `"digital inclusion"`: se agrega, declarado sin evidencia en este cribado (viene del tesauro).
 - `"Down syndrome"`, `"deep learning"` y `measurement`: cumplen la regla de retiro (0 SI y al menos 3 NO exclusivos); se quitan. `rsl-picoc` debe actualizar el concepto P, la justificación de *Neural networks* y la nota de *Measurement*.
+- `"machine-learning"`: se quita para respetar el máximo de 100 keywords; es redundante con `"machine learning"` (las bases tratan el guion como espacio y recuperaba los mismos 30 registros).
 - `"large language model*"`: se fusiona en `"language model*"`, que ya lo recupera.
 - `"universal design"`, `"hearing impairment"`, `metric` y `metrics`: se conservan; con el cribado por pertinencia aportan SI (2, 1, 1 y 3).
 - Query de IEEE Xplore: la ajusta `rsl-picoc`, pasando los comodines nuevos a frases cerradas para no superar el límite de 10.

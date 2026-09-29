@@ -68,6 +68,7 @@ Si `global/thesaurus/ieee-thesaurus.json` o el grafo no existen → pedir `Usa r
   - Web of Science: `AND PY=(2021-2026) AND DT=(Article) AND LA=(English OR Spanish)`; el acceso abierto no tiene etiqueta de campo y va como filtro de la interfaz anotado bajo la query.
   - IEEE Xplore: todos los filtros de la interfaz, anotados bajo la query.
   Estos filtros son límites de la búsqueda: se reportan completos en el paper y, en PRISMA, los registros que quitan van en *registros eliminados antes del cribado* (`playbooks/estandares-rsl.md`).
+- **Máximo 100 keywords** en total, sumando todos los bloques de la tabla (lo comprueba `picoc:lint`). Si una ampliación lo supera, primero se quitan las redundantes (variantes que la base ya recupera, como `"machine-learning"` frente a `"machine learning"`) y después las de menor evidencia en el cribado.
 - IEEE Xplore admite **10 comodines** por búsqueda: reservar `*` para las variantes morfológicas del bloque P y usar frases sin comodín en el resto (Scopus y Web of Science ya recuperan los plurales de las frases).
 
 ### R3 — Una pregunta por componente

@@ -7,7 +7,7 @@ Reglas:
   R1     cada fila de la tabla de componentes justifica su origen citando el tema (“…”)
   R2     una fila por componente del marco; keywords de cada fila (salvo T) == su bloque en Scopus, WoS e IEEE Xplore;
          filtros de CR en las queries: periodo (== T si lo hay) en las 3 bases; tipo de documento e idioma en Scopus y WoS;
-         acceso abierto en Scopus (OA) y anotado bajo WoS e IEEE Xplore; IEEE Xplore ≤ 10 comodines
+         acceso abierto en Scopus (OA) y anotado bajo WoS e IEEE Xplore; IEEE Xplore ≤ 10 comodines; ≤ 100 keywords en total
   R3     exactamente 1 RQ (¿…?) por componente del marco, enlazada desde la tabla
   KY     '## Keywords' tras 'Palabras clave': 5 o 6 filas (EN · ES · Comp.) que van al paper; cada término sale de
          Palabras clave con su mismo componente y cada componente del marco (salvo T) aporta al menos una
@@ -37,6 +37,7 @@ ROOT = Path(__file__).resolve().parent.parent
 THES_JSON = ROOT / "global" / "thesaurus" / "ieee-thesaurus.json"
 DATABASES = ("Scopus", "Web of Science", "IEEE Xplore")
 IEEE_MAX_WILDCARDS = 10
+MAX_QUERY_TERMS = 100
 SUGERENCIA = "cribado-1-sugerencia.md"
 FORBIDDEN = ("Cribado", "T — Filtros", "T - Filtros", "Filtros", "Términos libres")
 FILTER_PREFIX = re.compile(r"(DT|PY|LA|PUBYEAR|LIMIT-TO|DOCTYPE|LANGUAGE)\s*=?\s*$", re.I)
@@ -262,6 +263,10 @@ def main(path: Path) -> int:
         if len(set(terms)) != len(terms):
             errs.append(f"R2: {c} tiene keywords repetidas")
         rows_terms.append((c, terms))
+
+    n_terms = sum(len(t) for _, t in rows_terms)
+    if n_terms > MAX_QUERY_TERMS:
+        errs.append(f"R2: la query tiene {n_terms} keywords; el máximo es {MAX_QUERY_TERMS} (quitar las redundantes o las de menor evidencia)")
 
     crit_inc = " ".join(
         norm_text(re.sub(r"^\s*[-*]\s+", "", l))
