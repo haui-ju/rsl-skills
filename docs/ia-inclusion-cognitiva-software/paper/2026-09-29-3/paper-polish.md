@@ -258,11 +258,11 @@ Los registros recuperados todavía mezclan estudios pertinentes con otros que so
 
 Aplicar esos criterios a un conjunto amplio de registros exige decisiones sucesivas que deben quedar registradas (Kitchenham & Charters, 2007, pp. 19–20). Esto pesa especialmente en una revisión que busca señalar qué combinaciones carecen de evidencia, porque una ausencia solo es creíble si se sabe qué se buscó y qué se descartó en cada paso. Por esa razón, la selección se documenta según PRISMA 2020 (Page et al., 2021, p. 1), una guía de reporte que combina una lista de 27 ítems con un diagrama de flujo. Ese diagrama muestra cuántos registros entran y salen en cada una de las etapas, que en esta revisión fueron las siguientes:
 
-1. Registros identificados en Scopus (n = X) y en Web of Science (n = X).
-2. Duplicados eliminados (n = X).
-3. Excluidos por fecha de publicación (n = X).
-4. Registros cribados por título y resumen (n = X); excluidos (n = X).
-5. Informes buscados para su recuperación (n = X); no recuperados (n = X).
+1. Registros identificados en Scopus (n = 94) y en Web of Science (n = 50).
+2. Duplicados eliminados (n = 29).
+3. Excluidos por fecha de publicación (n = 0).
+4. Registros cribados por título y resumen (n = 115); excluidos (n = 74).
+5. Informes buscados para su recuperación (n = 41); no recuperados (n = X).
 6. Informes evaluados a texto completo (n = X); excluidos por no cumplir un criterio de inclusión o por cumplir uno de exclusión (n = X).
 7. Estudios incluidos en la revisión (n = X).
 
