@@ -140,7 +140,7 @@ En `theme`, el `<slug>` se omite si solo hay un tema; `refresh`/`status` aceptan
 | `cribado:merge docs/<slug>` | Consolida las tablas de los agentes (`.cribado-1/propuestas/lote-NN.md`): toma los acuerdos, imprime solo los desacuerdos y, con `resoluciones.md`, escribe `decisiones.jsonl` y `debate.md`. |
 | `cribado:report docs/<slug>` | Valida `.cribado-1/decisiones.jsonl` y `sintesis.json` y escribe `cribado-1.md` y `cribado-1.shadow.jsonl`. |
 | `cribado:keywords docs/<slug>` | Cuenta cuántos registros (SI y NO) recupera cada término de la query y lista palabras clave de los aceptados que ninguna query cubre (`.cribado-1/keywords.md`). |
-| `cribado:set docs/<slug> <id> SI\|NO "motivo" [criterios]` | Corrige la decisión de un registro y regenera el reporte y el shadow. |
+| `cribado:set docs/<slug> <id> SI\|DUDA\|NO "motivo" [criterios]` | Corrige la decisión de un registro (`DUDA` = SI con duda) y regenera el reporte y el shadow. |
 | `cribado:apply docs/<slug>` | Escribe `resultados-<MARCO>-cribado-1.csv` con las dos columnas; ERROR si el reporte no está al día o las exportaciones cambiaron. |
 | `qa:destroy [--only grupo] [--keep] [--no-report]` | Arnés de `rsl-qa-destroy`: rompe el flujo en un sandbox y escribe `qa/<fecha>/qa-report.md`; nunca toca `docs/`. |
 

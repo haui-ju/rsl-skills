@@ -10,7 +10,7 @@ Uso:
   cribado.py merge    docs/<slug>     # propuestas/lote-NN.md + resoluciones.md → decisiones.jsonl y debate.md
   cribado.py report   docs/<slug>     # valida decisiones + síntesis → cribado-1.md y cribado-1.shadow.jsonl
   cribado.py keywords docs/<slug>     # rendimiento de los términos de la query → .cribado-1/keywords.md
-  cribado.py set      docs/<slug> R012 SI|NO "motivo" [CI3,CE5]   # corrección del usuario
+  cribado.py set      docs/<slug> R012 SI|DUDA|NO "motivo" [CI3,CE5]   # corrección del usuario (DUDA = SI con duda)
   cribado.py apply    docs/<slug>     # resultados-<MARCO>-cribado-1.csv con «¿Se acepta?» y «Justificación cribado 1»
 
 Trabajo interno (.cribado-1/): estado.json, registros.jsonl (registros únicos, uno por línea),
@@ -64,7 +64,7 @@ MAP = {  # columna unificada -> (Scopus CSV, WoS Excel, WoS tabulado)
 }
 REQUIRED = ("Título", "Resumen")
 USAGE = ("uso: cribado:prepare|merge|report|keywords|apply <docs/slug> · "
-         "cribado:set <docs/slug> <id> SI|NO \"motivo\" [criterios]")
+         "cribado:set <docs/slug> <id> SI|DUDA|NO \"motivo\" [criterios]")
 
 
 def rel(p: Path) -> str:
@@ -463,8 +463,9 @@ def dashboard(state: dict, decs: list[dict], sint: dict, h: str) -> str:
          f"| Registros identificados | {total} | |",
          f"| Duplicados eliminados | {len(dups)} | {pct(len(dups), total)} de los identificados |",
          f"| Registros cribados | {screened} | |",
-         f"| Se aceptan | {len(si)} | {pct(len(si), screened)} de los cribados |",
-         f"| Dudas (van como SI) | {len(dudas)} | {pct(len(dudas), screened)} |",
+         f"| **Pasan al cribado 2 (SI)** | **{len(si) + len(dudas)}** | **{pct(len(si) + len(dudas), screened)} de los cribados** |",
+         f"| · aceptados sin duda | {len(si)} | {pct(len(si), screened)} |",
+         f"| · con duda (se deciden a texto completo) | {len(dudas)} | {pct(len(dudas), screened)} |",
          f"| Se rechazan | {len(no)} | {pct(len(no), screened)} |",
          f"| Desacuerdos entre agentes | {sum(1 for d in decs if d.get('acuerdo') is False)} | |",
          f"| Corregidos por el usuario | {sum(1 for d in decs if d.get('usuario'))} | |", "",
@@ -596,8 +597,8 @@ def cmd_keywords(theme: Path) -> int:
                 continue
             c = cand.setdefault(k.lower(), [0, 0])
             c[0 if d == "SI" else 1] += 1
-    top = sorted(((k, v) for k, v in cand.items() if v[0] >= 2 and v[0] >= v[1] / 2), key=lambda x: (-x[1][0], x[1][1]))[:15]
-    L += ["", "## Palabras clave de las fuentes que ninguna query cubre (≥ 2 registros aceptados)", "",
+    top = sorted(((k, v) for k, v in cand.items() if v[0] >= 1 and v[0] >= v[1]), key=lambda x: (-x[1][0], x[1][1]))[:60]
+    L += ["", "## Palabras clave de las fuentes que ninguna query cubre (≥ 1 registro aceptado y al menos tantos SI como NO)", "",
           "| Palabra clave | SI | NO |", "|---|---|---|"] + [f"| {k} | {a} | {b} |" for k, (a, b) in top] + (["| — | 0 | 0 |"] if not top else [])
     (work / "keywords.md").write_text("\n".join(L) + "\n", encoding="utf-8")
     return ok(f"{len(pats)} términos analizados ({len(zero)} sin registros), {len(top)} palabras clave candidatas en {rel(work / 'keywords.md')}",
@@ -712,7 +713,8 @@ def cmd_set(theme: Path, rid: str, decision: str, motivo: str, codes: str | None
     d = next((d for d in decs if d.get("id") == rid), None)
     if d is None:
         raise Fail(f"{rid} no tiene decisión en decisiones.jsonl", "usa un id del reporte (R001…)")
-    new = {**d, "decision": decision.upper(), "motivo": motivo.strip(), "usuario": True, "duda": False}
+    duda = decision.upper() == "DUDA"
+    new = {**d, "decision": "SI" if duda else decision.upper(), "motivo": motivo.strip(), "usuario": True, "duda": duda}
     if codes is not None:
         new["criterios"] = [c.strip().upper() for c in codes.split(",") if c.strip()]
     elif new["decision"] == "SI":
@@ -721,7 +723,7 @@ def cmd_set(theme: Path, rid: str, decision: str, motivo: str, codes: str | None
     if probs:
         for p in probs:
             print(f"  - {p}")
-        return error(f"la corrección de {rid} no es válida; no se cambió nada", "revisa decisión (SI|NO), motivo (≤ 25 palabras) y criterios del picoc")
+        return error(f"la corrección de {rid} no es válida; no se cambió nada", "revisa decisión (SI|DUDA|NO), motivo (≤ 25 palabras) y criterios del picoc")
     decs = [new if x is d else x for x in decs]
     (work / "decisiones.jsonl").write_text("".join(json.dumps(x, ensure_ascii=False) + "\n" for x in decs), encoding="utf-8")
     print(f"{rid}: {d.get('decision')} → {new['decision']} ({', '.join(new.get('criterios') or []) or 'sin criterios'})")
