@@ -36,6 +36,9 @@ const missing = [];
 if (!has('graphify') || !existsSync(graphifyPy)) {
   missing.push('graphify (pipx):  pipx install graphifyy && pipx ensurepath && graphify install --platform cursor');
 }
+} else if (spawnSync(graphifyPy, ['-c', 'import xlrd'], { env }).status !== 0) {
+  missing.push('xlrd (WoS .xls en cribado:prepare):  pipx inject graphifyy xlrd');
+}
 for (const bin of ['pdftotext', 'pdftohtml', 'pdfinfo']) {
   if (!has(bin)) missing.push(`${bin} (poppler):  sudo pacman -S poppler  |  sudo apt install poppler-utils  |  brew install poppler`);
 }

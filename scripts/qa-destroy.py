@@ -36,6 +36,7 @@ SCRIPT_OF = {
     "thes": "scripts/thesaurus-ieee.py",
     "src": "scripts/rsl-source.py",
     "bib": "scripts/graphify-bibliography.py",
+    "crib": "scripts/cribado.py",
 }
 
 
@@ -888,7 +889,7 @@ def _(sb):
         txt = f.read_text(encoding="utf-8")
         for a in sorted(set(re.findall(r"`([a-z]+(?:-[a-z]+)*-rsl)`", txt)) - section_ids):
             static(sb, a in agents, f"{f.relative_to(ROOT)}: el agente {a} no existe en .cursor/agents/")
-        for s in sorted(set(re.findall(r"\b(rsl-[a-z]+(?:-[a-z]+)*)\b(?!-?\*)", txt)) - {"rsl-skills"}):
+        for s in sorted(set(re.findall(r"\b(rsl-[a-z]+(?:-[a-z0-9]+)*)\b(?!-?\*)", txt)) - {"rsl-skills"}):
             static(sb, s in skills, f"{f.relative_to(ROOT)}: la skill {s} no existe en .cursor/skills/")
     for f in rsl_skills():
         m = re.search(r"^name:\s*(\S+)", f.read_text(encoding="utf-8"), re.M)
@@ -1102,6 +1103,192 @@ def _(sb):
     sb.run(["paper", t], "OK", lacks="fue editado")
     f2.write_text(f2.read_text(encoding="utf-8").replace("# Inteligencia artificial para", "# IA para"), encoding="utf-8")
     sb.run(["paper", t], "ERROR", has="frozen")
+
+
+SCOPUS_HEAD = ["Authors", "Title", "Year", "Source title", "DOI", "Abstract", "Author Keywords", "Index Keywords", "Document Type", "EID"]
+SCOPUS_ROWS = [
+    ["A", "LLM assistant for autistic users", "2025", "J1", "10.1/a", "We evaluate an LLM assistant with 20 autistic users. © 2025 Elsevier", "autism; LLM; user trust", "Autism", "Article", "2-s2.0-1"],
+    ["B", "EEG deep learning to classify ADHD", "2024", "J2", "10.1/b", "A CNN classifies ADHD from EEG.", "ADHD", "", "Article", "2-s2.0-2"],
+    ["C", "LLM Assistant for Autistic Users.", "2025", "J1", "", "Same study, other export.", "", "", "Article", "2-s2.0-3"],
+    ["D", "Screen reader testing with AI", "2023", "J3", "10.1/d", "Blind users, sensory only.", "blindness", "", "Article", "2-s2.0-4"],
+    ["E", "Dyslexia-friendly text simplification", "2026", "J4", "10.1/e", "GPT simplifies texts; readability measured with users with dyslexia.", "dyslexia; LLM", "", "Article", "2-s2.0-5"],
+]
+WOS_HEAD = ["PT", "AU", "TI", "SO", "LA", "DT", "DE", "ID", "AB", "PY", "DI", "UT", "DL"]
+WOS_ROWS = [
+    ["J", "B", "EEG deep learning to classify ADHD", "J2", "English", "Article", "ADHD", "", "A CNN classifies ADHD.", "2024", "https://doi.org/10.1/B", "WOS:1", ""],
+    ["J", "E", "Dyslexia friendly text simplification", "J4", "English", "Article", "", "", "Same study in WoS.", "2026", "", "WOS:2", ""],
+    ["J", "W", "Voice agent requirements for ADHD developers", "J5", "English", "Article", "ADHD; LLM; user trust", "", "An LLM elicits requirements with 12 developers with ADHD.", "2025", "10.1/w", "WOS:3", ""],
+]
+
+
+def scopus_csv(path: Path) -> None:
+    import csv as _csv
+    with path.open("w", encoding="utf-8-sig", newline="") as fh:
+        w = _csv.writer(fh, quoting=_csv.QUOTE_ALL)
+        w.writerow(SCOPUS_HEAD)
+        w.writerows(SCOPUS_ROWS)
+
+
+def wos_txt(path: Path) -> None:
+    path.write_text("\n".join("\t".join(r) for r in [WOS_HEAD, *WOS_ROWS]) + "\n", encoding="utf-8-sig")
+
+
+def crib_decisions(d: Path, ids: dict[str, tuple], sintesis: bool = True) -> None:
+    (d / "decisiones.jsonl").write_text("".join(json.dumps({"id": i, "decision": v[0], "criterios": v[1], "motivo": v[2], "duda": v[3], "acuerdo": not v[3]}, ensure_ascii=False) + "\n"
+                                                for i, v in ids.items()), encoding="utf-8")
+    if sintesis:
+        (d / "sintesis.json").write_text(json.dumps({"aceptados": "Evalúan asistentes con usuarios.", "rechazados": "Solo diagnóstico o solo sensorial.",
+                                                     "dudas": "Falta confirmar la fase del ciclo de vida."}, ensure_ascii=False), encoding="utf-8")
+
+
+CRIB_OK = {"R001": ("SI", ["CI3"], "Evalúa un asistente LLM con usuarios autistas", False),
+           "R002": ("NO", ["CE2"], "Solo clasifica TDAH con EEG", False),
+           "R004": ("NO", ["CI3"], "Accesibilidad solo sensorial, sin población neurodivergente", False),
+           "R005": ("SI", ["CI3"], "Simplificación con GPT evaluada con usuarios con dislexia", True),
+           "R008": ("SI", ["CI3"], "LLM para requisitos con desarrolladores con TDAH", False)}
+
+
+def crib_theme(sb) -> tuple[Path, Path]:
+    t = sb.theme(paper=False)
+    pdir = next((t / "picoc").iterdir())
+    scopus_csv(pdir / "scopus-result.csv")
+    wos_txt(pdir / "wos-resultados.txt")
+    return t, pdir
+
+
+@case("C01", "orden", "cribado 1: prepare pasa WoS a CSV, une Scopus y WoS en resultados-<MARCO>.csv y deduplica (DOI y título, dentro y entre bases) antes de los lotes; report escribe cribado-1.md y el shadow; apply escribe el unificado con las dos columnas sin tocar las exportaciones")
+def _(sb):
+    t = sb.theme(paper=False)
+    pdir = next((t / "picoc").iterdir())
+    sb.run(["crib", "prepare", t], "ERROR", has="no hay exportaciones")
+    scopus_csv(pdir / "scopus-result.csv")
+    wos_txt(pdir / "wos-resultados.txt")
+    before = {p.name: p.read_bytes() for p in pdir.iterdir() if p.is_file()}
+    st = sb.run(["crib", "prepare", t], "OK", has="3 duplicado(s)")
+    sb.check(all(r in st.output for r in ("R003→R001", "R006→R002", "R007→R005")), f"prepare no lista los duplicados R003 (título, Scopus), R006 (DOI, WoS) y R007 (título, WoS): {st.output[:400]}")
+    sb.check("líneas 1–5" in st.output, "prepare no da el rango de líneas del lote")
+    uni = pdir / "resultados-PICOCT.csv"
+    wcsv = pdir / "wos-resultados.csv"
+    sb.check(uni.exists() and wcsv.exists(), "prepare no escribió el unificado o el CSV de WoS")
+    import csv as _csv
+    rows = list(_csv.reader(uni.open(encoding="utf-8-sig", newline="")))
+    sb.check(rows[0][:3] == ["Id", "Fuente", "Título"] and len(rows) == 9, f"unificado con cabecera o filas inesperadas: {rows[0][:3]}, {len(rows)}")
+    sb.check(rows[2][1] == "Scopus; WoS" and rows[6][1] == "WoS", f"Fuente mal: el conservado debe decir Scopus; WoS ({rows[2][1]}) y el duplicado WoS ({rows[6][1]})")
+    w = pdir / ".cribado-1"
+    regs = (w / "registros.jsonl").read_text(encoding="utf-8")
+    sb.check(len(regs.splitlines()) == 5 and "Elsevier" not in regs and '"R003"' not in regs, "registros.jsonl con duplicados, copyright o conteo equivocado")
+    sb.check("| CE1 | Registros duplicados" in (w / "criterios.md").read_text(encoding="utf-8"), "criterios.md sin los códigos del picoc")
+    sb.run(["crib", "prepare", t], "OK", has="3 duplicado(s)")
+    sb.run(["crib", "report", t], "ERROR", has="decisiones.jsonl")
+    crib_decisions(w, {k: v for k, v in CRIB_OK.items() if k != "R005"})
+    sb.run(["crib", "report", t], "ERROR", has="faltan 1")
+    crib_decisions(w, {**CRIB_OK, "R005": ("TAL VEZ", [], "x", False)})
+    sb.run(["crib", "report", t], "ERROR", has="no es SI ni NO")
+    crib_decisions(w, {**CRIB_OK, "R006": ("SI", [], "x", False)})
+    sb.run(["crib", "report", t], "ERROR", has="es un duplicado")
+    crib_decisions(w, {**CRIB_OK, "R002": ("NO", ["CE99"], "x", False)})
+    sb.run(["crib", "report", t], "ERROR", has="CE99")
+    crib_decisions(w, CRIB_OK, sintesis=False)
+    (w / "sintesis.json").unlink(missing_ok=True)
+    sb.run(["crib", "report", t], "ERROR", has="sintesis.json")
+    crib_decisions(w, CRIB_OK)
+    sb.run(["crib", "apply", t], "ERROR", has="no están al día")
+    sb.run(["crib", "report", t], "OK", has="3 duplicado(s), SI 3 (dudas 1), NO 2")
+    rep = (pdir / "cribado-1.md").read_text(encoding="utf-8")
+    for bit in ("## Duplicados: 3", "mismo DOI", "mismo título", "## Se aceptaron: 2", "## Se rechazaron: 2", "### Por criterio de inclusión no cumplido",
+                "### Por criterio de exclusión", "## Dudas: 1", "## PRISMA", "Web of Science (n = 3)", "**Por qué:** Solo diagnóstico"):
+        sb.check(bit in rep, f"cribado-1.md sin «{bit}»")
+    sh = (pdir / "cribado-1.shadow.jsonl").read_text(encoding="utf-8").splitlines()
+    sb.check(len(sh) == 9 and '"_meta"' in sh[0] and "Duplicado de R002 (Scopus; mismo DOI)" in sh[6], f"shadow inesperado: {len(sh)} líneas; {sh[6][:160] if len(sh) > 6 else ''}")
+    sb.run(["crib", "apply", t], "OK", has="SI 3, NO 5")
+    out = list(_csv.reader((pdir / "resultados-PICOCT-cribado-1.csv").open(encoding="utf-8-sig", newline="")))
+    sb.check(out[0][-2:] == ["¿Se acepta?", "Justificación cribado 1"] and len(out) == 9, f"columnas o filas inesperadas: {out[0][-2:]}, {len(out)}")
+    sb.check(out[3][-2] == "NO" and "Duplicado de R001" in out[3][-1], f"el duplicado por título no quedó como NO con su registro: {out[3][-2:]}")
+    sb.check(out[5][-1].startswith("Duda:"), "la duda no se marca en la justificación")
+    sb.check(all((pdir / n).read_bytes() == b for n, b in before.items()), "apply modificó una exportación")
+
+
+@case("C02", "destruir", "cribado 1: set corrige y regenera reporte y shadow; set inválido no cambia nada; exportación cambiada, dos por base, cabeceras ajenas o sin criterios dan ERROR")
+def _(sb):
+    t, pdir = crib_theme(sb)
+    sb.run(["crib", "prepare", t], "OK", quiet=True)
+    w = pdir / ".cribado-1"
+    crib_decisions(w, CRIB_OK)
+    sb.run(["crib", "report", t], "OK", quiet=True)
+    sb.run(["crib", "set", t, "R004", "SI", "Revisar a texto completo"], "OK", has="SI 4")
+    sb.check('"id": "R004", "fuente": "Scopus", "uid": "10.1/d", "titulo": "Screen reader testing with AI", "decision": "SI"' in (pdir / "cribado-1.shadow.jsonl").read_text(encoding="utf-8"), "set no regeneró el shadow")
+    sb.run(["crib", "set", t, "R002", "NO", "sin criterios", ""], "ERROR", has="al menos un criterio")
+    sb.run(["crib", "set", t, "R006", "SI", "x"], "ERROR", has="duplicado")
+    sb.run(["crib", "set", t, "R999", "SI", "x"], "ERROR", has="no tiene decisión")
+    sb.run(["crib", "apply", t], "OK", has="SI 4")
+    sb.run(["crib", "prepare", t], "OK", has="se conserva")
+    sb.run(["crib", "apply", t], "OK", has="SI 4")
+    wos = pdir / "wos-resultados.txt"
+    wos.write_text(wos.read_text(encoding="utf-8-sig") + "J\tX\tNuevo estudio\tJ6\tEnglish\tArticle\t\t\tabc\t2026\t\tWOS:4\t\n", encoding="utf-8-sig")
+    sb.run(["crib", "report", t], "ERROR", has="cambió")
+    sb.run(["crib", "prepare", t], "OK", has="las exportaciones cambiaron")
+    sb.check(not (w / "decisiones.jsonl").exists(), "con otras exportaciones las decisiones viejas siguieron vigentes")
+    sb.run(["crib", "report", t], "ERROR", has="decisiones.jsonl")
+    scopus_csv(pdir / "otro.csv")
+    sb.run(["crib", "prepare", t], "ERROR", has="hay 2 exportaciones de Scopus")
+    (pdir / "otro.csv").write_text("Titulo,Resumen\nx,y\n", encoding="utf-8")
+    sb.run(["crib", "prepare", t], "OK", quiet=True)
+    (pdir / "otro.csv").unlink()
+    wos.write_text("PT\tTI\tUT\nJ\tSin resumen\tWOS:9\n", encoding="utf-8")
+    sb.run(["crib", "prepare", t], "ERROR", has="AB (Resumen)")
+    wos_txt(wos)
+    p = pdir / "picoc.md"
+    p.write_text(p.read_text(encoding="utf-8").split("## Criterios de inclusión y exclusión")[0], encoding="utf-8")
+    sb.run(["crib", "prepare", t], "ERROR", has="Criterios de inclusión y exclusión")
+
+
+@case("C03", "orden", "cribado 1: keywords mide los términos de la query y propone palabras clave de los aceptados; picoc:latest avisa la sugerencia pendiente y deja de avisar con la versión nueva")
+def _(sb):
+    t, pdir = crib_theme(sb)
+    sb.run(["crib", "prepare", t], "OK", quiet=True)
+    crib_decisions(pdir / ".cribado-1", CRIB_OK)
+    sb.run(["crib", "keywords", t], "OK", has="términos analizados")
+    kw = (pdir / ".cribado-1" / "keywords.md").read_text(encoding="utf-8")
+    sb.check("| I | `llm` | 3 | 3 | 0 |" in kw and "Solo este término (SI / NO)" in kw and "| user trust | 2 | 0 |" in kw, f"keywords.md sin el conteo del término LLM o sin la candidata «user trust»: {kw[-300:]}")
+    sb.run(["latest", t], "OK", lacks="sugerencia")
+    (pdir / "cribado-1-sugerencia.md").write_text("# Sugerencia de búsqueda — cribado 1\n", encoding="utf-8")
+    sb.run(["latest", t], "OK", has="modo sugerencia")
+    nxt = t / "picoc" / f"{pdir.name.split('-PICOCT')[0]}-2-PICOCT"
+    nxt.mkdir()
+    (nxt / "picoc.md").write_text((pdir / "picoc.md").read_text(encoding="utf-8"), encoding="utf-8")
+    sb.run(["latest", t], "OK", lacks="sugerencia")
+
+
+@case("C04", "orden", "cribado 1: merge toma los acuerdos de los agentes, frena con los desacuerdos sin resolver, aplica resoluciones.md, escribe debate.md y conserva las correcciones del usuario")
+def _(sb):
+    t, pdir = crib_theme(sb)
+    sb.run(["crib", "prepare", t], "OK", quiet=True)
+    w = pdir / ".cribado-1"
+    sb.run(["crib", "merge", t], "ERROR", has="lote-01.md")
+    head = "## Defensor\n\n| Id | Decisión | Criterios | Duda | Motivo |\n|---|---|---|---|---|\n"
+    rows = {"R001": "| R001 | SI | CI3 | no | Asistente LLM evaluado con usuarios autistas |",
+            "R002": "| R002 | NO | CE2 | no | Solo clasifica TDAH con EEG |",
+            "R004": "| R004 | NO | CE2 | no | Accesibilidad solo sensorial |",
+            "R005": "| R005 | SI | CI3 | sí | Simplificación con GPT para dislexia |",
+            "R008": "| R008 | SI | CI3 | no | LLM para requisitos con desarrolladores con TDAH |"}
+    lote = w / "propuestas" / "lote-01.md"
+    lote.write_text(head + "\n".join(v for k, v in rows.items() if k != "R008") + "\n\n## Crítico\n\n", encoding="utf-8")
+    sb.run(["crib", "merge", t], "ERROR", has="no decidió R008")
+    lote.write_text(head + "\n".join(rows.values()) + "\n\n## Crítico\n\n| Id | Propuesta | Tu decisión | Criterios | Motivo |\n|---|---|---|---|---|\n"
+                    "| R008 | SI | NO | CE2 | Trabajo de congreso |\n| R002 | NO | NO | CI3 | Mismo NO, otro criterio |\n", encoding="utf-8")
+    st = sb.run(["crib", "merge", t], "ERROR", has="1 desacuerdo(s) sin resolver")
+    sb.check("R008 · defensor SI" in st.output and "Voice agent requirements" in st.output and "R002 ·" not in st.output, f"merge no muestra solo el desacuerdo real con su resumen: {st.output[:300]}")
+    sb.check(not (w / "decisiones.jsonl").exists(), "merge escribió decisiones con desacuerdos pendientes")
+    (w / "resoluciones.md").write_text("## Resoluciones\n\n| Id | Decisión | Criterios | Duda | Motivo |\n|---|---|---|---|---|\n| R008 | SI | CI3 | sí | Confirmar tipo de publicación a texto completo |\n", encoding="utf-8")
+    sb.run(["crib", "merge", t], "OK", has="SI 3 (dudas 2), NO 2, 1 desacuerdo(s) resuelto(s)")
+    decs = {json.loads(l)["id"]: json.loads(l) for l in (w / "decisiones.jsonl").read_text(encoding="utf-8").splitlines()}
+    sb.check(decs["R008"]["acuerdo"] is False and decs["R008"]["duda"] and decs["R001"]["acuerdo"] and decs["R001"]["criterios"] == ["CI3"], f"decisiones mal consolidadas: {decs['R008']}, {decs['R001']}")
+    sb.check("R008: defensor SI, crítico NO → SI con duda" in (w / "debate.md").read_text(encoding="utf-8"), "debate.md sin la resolución")
+    crib_decisions(w, {}, sintesis=True)
+    sb.run(["crib", "merge", t], "OK", quiet=True)
+    sb.run(["crib", "report", t], "OK", quiet=True)
+    sb.run(["crib", "set", t, "R004", "SI", "Revisar a texto completo"], "OK", quiet=True)
+    sb.run(["crib", "merge", t], "OK", has="1 corrección(es) del usuario conservada(s)")
 
 
 @case("K07", "marco", "redaccion:lint acepta n = X y [[ AGREGAR DIAGRAMA ]] como marcadores del usuario, pero sigue fallando con TODO y con apelaciones a «el lector» (no con «lector de pantalla»)")

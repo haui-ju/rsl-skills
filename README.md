@@ -19,6 +19,8 @@ El agente verifica/instala prerrequisitos (node + pnpm, pipx graphifyy, poppler)
 | `rsl-make-report` | Genera el informe UTP (7 puntos) y llama a `rsl-picoc` para el marco de búsqueda | `docs/[titulo-breve]/informe.md` + `picoc/<fecha>-<MARCO>/` |
 | `rsl-polish-report` | Pule el informe (4 agentes); si el marco quedó desfasado llama a `rsl-picoc` (modo ligero si solo cambió la pregunta § 1.2) | `docs/[titulo-breve]/informe-polish.md` |
 | `rsl-picoc` | Crea una versión nueva del marco de búsqueda con el marco de `config.yml` (libre: PICO, PIO, PICOC, PICOCT, PICOS…; por defecto PICOCT): tabla por componente 1:1 con las queries, palabras clave IEEE (libres al final), 5–6 keywords del paper, criterios de inclusión y exclusión; modo completo (debate `critico-rsl` + `defensor-rsl` + `redaccion-rsl`), parcial (solo keywords o criterios) o ligero (solo la pregunta general, sin agentes); `picoc:lint` OK. **Solo lee** el informe, `config.yml` y el paper: nunca los modifica | `docs/[titulo-breve]/picoc/<fecha>-<MARCO>/picoc.md` + `picoc-debate.md` |
+| `rsl-cribado-1` | Cribado 1 de PRISMA (título, resumen y palabras clave) de Scopus y Web of Science juntos: `cribado:prepare` pasa WoS a CSV, une ambas bases en `resultados-<MARCO>.csv` y elimina duplicados primero (el agente nunca lee las exportaciones); `defensor-rsl` propone SI/NO por registro con los criterios del picoc y `critico-rsl` lo critica; las dudas van como SI. Siempre deja una sugerencia de keywords (qué términos valen, cuáles no aportan y cuáles agregar) con las queries de Scopus y WoS. Correcciones con `cribado:set` | `picoc/<fecha>-<MARCO>/cribado-1.md` + `cribado-1.shadow.jsonl` + `cribado-1-sugerencia.md` |
+| `rsl-cribado-1-aplicar` | Tras aprobar el reporte, copia el CSV unificado con dos columnas más al final: «¿Se acepta?» (SI o NO) y «Justificación cribado 1». No decide nada ni edita las exportaciones | `picoc/<fecha>-<MARCO>/resultados-<MARCO>-cribado-1.csv` |
 | `rsl-make-paper` | Nueva versión del paper borrador, solo secciones `on` (mejorar) y `rewrite` (reescribir) de `config.yml` (+ agente `citas-rsl` y `redaccion:lint`) | `docs/[titulo-breve]/paper/<fecha>/paper-borrador.md` |
 | `rsl-polish-paper` | Pule esas secciones (`critico-rsl` + `defensor-rsl`; `impacto-social-rsl` si están Justificación u Objetivo; luego `redaccion-rsl` + `citas-rsl`) → texto limpio + traza de debate | `paper/<fecha>/paper-polish.md` + `paper-debate.md` |
 | `rsl-qa-destroy` | Intenta romper el flujo a propósito (flujo positivo, orden mezclado, entradas destructivas, marco libre, revisión de skills y agentes) en un sandbox de `/tmp`; solo reporta | `qa/<fecha>/qa-report.md` + `qa-report.json` |
@@ -47,6 +49,15 @@ docs/[titulo-breve]/
     2026-09-28-PICOCT/   ← <fecha>-<MARCO> según formato.marco de config.yml
       picoc.md           ← pregunta general, RQ por componente, tabla de componentes 1:1, palabras clave ES/EN, 5–6 keywords del paper, queries Scopus/WoS/IEEE Xplore, criterios de inclusión y exclusión
       picoc-debate.md    ← posturas de los agentes y decisiones
+      scopus-result.csv  ← TÚ: la exportación de Scopus (CSV) con la query del picoc
+      wos-resultados.xls ← TÚ: la exportación de Web of Science (Excel o Tab delimited .txt)
+      wos-resultados.csv ← cribado:prepare: WoS pasado a CSV
+      resultados-PICOCT.csv  ← cribado:prepare: Scopus + WoS unificados (columnas en playbooks/columnas-scopus-wos.md)
+      cribado-1.md       ← rsl-cribado-1: duplicados, aceptados, rechazados (% por criterio), dudas y línea PRISMA
+      cribado-1.shadow.jsonl  ← rsl-cribado-1: una línea por registro (id, fuente, decisión, motivo)
+      cribado-1-sugerencia.md ← rsl-cribado-1: keywords que valen, no aportan o conviene agregar + queries Scopus y WoS
+      .cribado-1/        ← trabajo interno (registros.jsonl, propuestas, decisiones, síntesis, keywords)
+      resultados-PICOCT-cribado-1.csv  ← rsl-cribado-1-aplicar: el unificado con «¿Se acepta?» y «Justificación cribado 1»
   paper/
     paper.shadow.yml     ← detalle técnico: títulos, capítulos, depends_on (rara vez se edita)
     paper.state.jsonc    ← hashes y versiones (lo gestiona pnpm paper:status; no editar)
@@ -125,6 +136,12 @@ En `theme`, el `<slug>` se omite si solo hay un tema; `refresh`/`status` aceptan
 | `paper:status docs/<slug> --new-version` | Crea `paper/<fecha>/` copiando la versión anterior. |
 | `paper:status docs/<slug> --update borrador\|polish` | Registra hashes tras escribir el borrador o el polish. |
 | `paper:status docs/<slug> --cites [archivo]` | Citas en texto vs Referencias (APA 7 o IEEE según `formato.citas`); con `informe-polish.md` compara contra la tabla de la sección 3. |
+| `cribado:prepare docs/<slug>` | Detecta las exportaciones de Scopus y WoS de la última carpeta del picoc, pasa WoS a CSV, las une en `resultados-<MARCO>.csv`, elimina duplicados (DOI, id de la base o título), numera los criterios CI y CE y escribe `.cribado-1/registros.jsonl` con el rango de líneas de cada lote de 40. |
+| `cribado:merge docs/<slug>` | Consolida las tablas de los agentes (`.cribado-1/propuestas/lote-NN.md`): toma los acuerdos, imprime solo los desacuerdos y, con `resoluciones.md`, escribe `decisiones.jsonl` y `debate.md`. |
+| `cribado:report docs/<slug>` | Valida `.cribado-1/decisiones.jsonl` y `sintesis.json` y escribe `cribado-1.md` y `cribado-1.shadow.jsonl`. |
+| `cribado:keywords docs/<slug>` | Cuenta cuántos registros (SI y NO) recupera cada término de la query y lista palabras clave de los aceptados que ninguna query cubre (`.cribado-1/keywords.md`). |
+| `cribado:set docs/<slug> <id> SI\|NO "motivo" [criterios]` | Corrige la decisión de un registro y regenera el reporte y el shadow. |
+| `cribado:apply docs/<slug>` | Escribe `resultados-<MARCO>-cribado-1.csv` con las dos columnas; ERROR si el reporte no está al día o las exportaciones cambiaron. |
 | `qa:destroy [--only grupo] [--keep] [--no-report]` | Arnés de `rsl-qa-destroy`: rompe el flujo en un sandbox y escribe `qa/<fecha>/qa-report.md`; nunca toca `docs/`. |
 
 ## Cómo ejecutar
@@ -157,7 +174,23 @@ Usa rsl-polish-report sobre docs/[titulo-breve]/informe.md
 Usa rsl-picoc sobre docs/[titulo-breve]/
 ```
 
-El marco sale de `formato.marco` en `config.yml` (por defecto PICOCT) y es libre: `P` población, `I` intervención, `C` comparación, `O` resultado, `T` tiempo, `S` diseño de estudio; la segunda `C` es contexto. Una letra fuera de esa lista es ERROR y nada continúa. Si lo cambias (p. ej. `marco: PIO`), `picoc:latest` marca DESFASADO, las secciones del paper que dependen del marco quedan BLOCKED y `rsl-picoc` crea `picoc/<fecha>-PIO/`. El cribado (inclusión/exclusión, tipo de documento) no va en el picoc: lo defines tú.
+El marco sale de `formato.marco` en `config.yml` (por defecto PICOCT) y es libre: `P` población, `I` intervención, `C` comparación, `O` resultado, `T` tiempo, `S` diseño de estudio; la segunda `C` es contexto. Una letra fuera de esa lista es ERROR y nada continúa. Si lo cambias (p. ej. `marco: PIO`), `picoc:latest` marca DESFASADO, las secciones del paper que dependen del marco quedan BLOCKED y `rsl-picoc` crea `picoc/<fecha>-PIO/`. Los criterios de inclusión y exclusión del picoc son los que usa `rsl-cribado-1`.
+
+### Cribado 1 (título, resumen y palabras clave)
+
+Corre las queries de Scopus y Web of Science del último picoc y deja en esa carpeta las exportaciones con resumen y palabras clave: Scopus en CSV y WoS en Excel (o Tab delimited `.txt`). Luego:
+
+```text
+Usa rsl-cribado-1 sobre docs/[titulo-breve]/
+```
+
+Revisa `picoc/<fecha>-<MARCO>/cribado-1.md` (duplicados, aceptados, rechazados con el porcentaje por criterio, dudas y la línea PRISMA). Pide las correcciones que quieras y, cuando lo apruebes:
+
+```text
+Usa rsl-cribado-1-aplicar sobre docs/[titulo-breve]/
+```
+
+`cribado-1-sugerencia.md` propone cómo mejorar la búsqueda (sin tirar lo que funciona). Para llevarla a una versión nueva del picoc, `Usa rsl-picoc sobre docs/[titulo-breve]/`: `picoc:latest` avisa la sugerencia y la skill entra en modo sugerencia (solo valida, sin debate).
 
 ### Crear el paper (borrador rico)
 
@@ -305,6 +338,7 @@ rsl-bootstrap             ← paso 0 (una vez por clon / máquina)
   → PDFs en RSL/PDF/
   → graphify-theme (PASS)
   → rsl-polish-report
+  → (tú: queries de Scopus y WoS, exportaciones en picoc/<fecha>-<MARCO>/) → rsl-cribado-1 → (tú: revisar) → rsl-cribado-1-aplicar
   → rsl-make-paper          ← paper/<fecha>/paper-borrador.md (secciones on de config.yml)
   → rsl-polish-paper        ← paper-polish.md limpio + paper-debate.md
   → marcar frozen en config.yml lo validado · activar Metodología · (tú: selección PRISMA) · activar Resultados…

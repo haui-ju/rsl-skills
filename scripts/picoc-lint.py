@@ -37,6 +37,7 @@ ROOT = Path(__file__).resolve().parent.parent
 THES_JSON = ROOT / "global" / "thesaurus" / "ieee-thesaurus.json"
 DATABASES = ("Scopus", "Web of Science", "IEEE Xplore")
 IEEE_MAX_WILDCARDS = 10
+SUGERENCIA = "cribado-1-sugerencia.md"
 FORBIDDEN = ("Cribado", "T — Filtros", "T - Filtros", "Filtros", "Términos libres")
 FILTER_PREFIX = re.compile(r"(DT|PY|LA|PUBYEAR|LIMIT-TO|DOCTYPE|LANGUAGE)\s*=?\s*$", re.I)
 QUESTION = re.compile(r"¿[^?]+\?", re.S)
@@ -482,9 +483,14 @@ def latest(arg: str) -> int:
     print(f"último: {rel(f) if f else '—'}")
     print(f"estado: {state}")
     print(f"siguiente versión: {nxt}")
+    sug = f.parent / SUGERENCIA if f else None
+    if sug and sug.exists():
+        print(f"sugerencia: {rel(sug)} (pendiente: rsl-picoc modo sugerencia)")
     if state != "OK":
         what = "no hay picoc" if state == "FALTA" else f"el último picoc no es {marco} (cambió formato.marco)"
         return error(f"picoc {state}: {what}", f"corre rsl-picoc; la versión nueva va en {nxt}")
+    if sug and sug.exists():
+        return ok(f"marco {marco} al día ({rel(f)}), con sugerencia del cribado 1 pendiente", f"Usa rsl-picoc sobre {rel(theme)}/ (modo sugerencia; va en {nxt})")
     return ok(f"marco {marco} al día ({rel(f)})")
 
 

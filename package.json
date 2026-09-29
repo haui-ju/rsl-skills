@@ -35,6 +35,12 @@
     "picoc:latest": "python3 scripts/picoc-lint.py --latest",
     "redaccion:lint": "python3 scripts/redaccion-lint.py",
     "paper:status": "python3 scripts/paper-manifest.py",
+    "cribado:prepare": "~/.local/share/pipx/venvs/graphifyy/bin/python scripts/cribado.py prepare",
+    "cribado:merge": "~/.local/share/pipx/venvs/graphifyy/bin/python scripts/cribado.py merge",
+    "cribado:report": "~/.local/share/pipx/venvs/graphifyy/bin/python scripts/cribado.py report",
+    "cribado:set": "~/.local/share/pipx/venvs/graphifyy/bin/python scripts/cribado.py set",
+    "cribado:keywords": "~/.local/share/pipx/venvs/graphifyy/bin/python scripts/cribado.py keywords",
+    "cribado:apply": "~/.local/share/pipx/venvs/graphifyy/bin/python scripts/cribado.py apply",
     "qa:destroy": "python3 scripts/qa-destroy.py",
     "rsl:source": "python3 scripts/rsl-source.py"
   },

@@ -24,6 +24,7 @@ Invocar esta skill **es** la autorización explícita para regenerar los grafos 
 | pnpm | `pnpm -v` | `corepack enable` (o `npm i -g pnpm`) |
 | pipx | `pipx --version` | Arch `sudo pacman -S python-pipx` · Debian `sudo apt install pipx` · macOS `brew install pipx` |
 | graphify | `graphify --help` y `~/.local/share/pipx/venvs/graphifyy/bin/python` | `pipx install graphifyy && pipx ensurepath` · luego `graphify install --platform cursor` |
+| xlrd (WoS `.xls` en `cribado:prepare`) | `~/.local/share/pipx/venvs/graphifyy/bin/python -c "import xlrd"` | `pipx inject graphifyy xlrd` |
 | poppler | `pdftotext -v`, `pdftohtml -v`, `pdfinfo -v` | Arch `sudo pacman -S poppler` · Debian `sudo apt install poppler-utils` · macOS `brew install poppler` |
 | PyYAML (`paper:status`) | `python3 -c "import yaml"` | Arch `sudo pacman -S python-yaml` · Debian `sudo apt install python3-yaml` · macOS `pip3 install --user pyyaml` |
 

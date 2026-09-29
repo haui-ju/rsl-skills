@@ -1,0 +1,1561 @@
+{
+  "picoc": "docs/ia-inclusion-cognitiva-software/picoc/2026-09-29-PICO/picoc.md",
+  "fecha": "2026-09-29",
+  "fuentes": [
+    {
+      "base": "Scopus",
+      "archivo": "scopus-result.csv",
+      "hash": "68c920ca04ff",
+      "n": 92,
+      "csv": "scopus-result.csv"
+    },
+    {
+      "base": "WoS",
+      "archivo": "wos-resultados.xls",
+      "hash": "ea1cc89cd963",
+      "n": 61,
+      "csv": "wos-resultados.csv"
+    }
+  ],
+  "unificado": "resultados-PICO.csv",
+  "unificado_hash": "aa56b8758d9f",
+  "criterios": {
+    "CI1": "Artículos publicados entre 2021 y 2026, los cinco últimos años completos y el año en curso.",
+    "CI2": "Artículos de revista revisados por pares, de acceso abierto, en inglés o español.",
+    "CI3": "Estudios dirigidos a personas con autismo, trastorno por déficit de atención e hiperactividad, discapacidad intelectual, dislexia o dificultades de aprendizaje.",
+    "CI4": "Estudios en los que la inteligencia artificial interviene en una fase del ciclo de vida del software: requisitos, diseño, desarrollo, personalización, pruebas, verificación o auditoría.",
+    "CI5": "Estudios con una evaluación empírica, con usuarios o automática, que reporta al menos una métrica o instrumento de evaluación.",
+    "CE1": "Registros duplicados entre bases de datos.",
+    "CE2": "Estudios sin texto completo accesible.",
+    "CE3": "Revisiones sistemáticas y otros estudios secundarios; se usan solo para delimitar el vacío.",
+    "CE4": "Preprints, tesis, editoriales y trabajos de congreso.",
+    "CE5": "Estudios en los que la inteligencia artificial solo diagnostica o detecta la condición, sin un artefacto de software evaluado.",
+    "CE6": "Estudios de accesibilidad solo sensorial, sin población con discapacidad cognitiva o neurodivergencia.",
+    "CE7": "Intervenciones pedagógicas o de aprendizaje electrónico, como el diseño universal para el aprendizaje o los recomendadores educativos, sin un artefacto de software evaluado.",
+    "CE8": "Robots sociales, tutores inteligentes o tecnología de rehabilitación como producto principal, que no intervienen en ninguna fase del ciclo de vida del software."
+  },
+  "duplicados": [
+    {
+      "id": "R093",
+      "fuente": "WoS",
+      "de": "R029",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "CE1"
+    },
+    {
+      "id": "R095",
+      "fuente": "WoS",
+      "de": "R024",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "CE1"
+    },
+    {
+      "id": "R096",
+      "fuente": "WoS",
+      "de": "R087",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "CE1"
+    },
+    {
+      "id": "R097",
+      "fuente": "WoS",
+      "de": "R073",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "CE1"
+    },
+    {
+      "id": "R098",
+      "fuente": "WoS",
+      "de": "R032",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "CE1"
+    },
+    {
+      "id": "R099",
+      "fuente": "WoS",
+      "de": "R057",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "CE1"
+    },
+    {
+      "id": "R101",
+      "fuente": "WoS",
+      "de": "R030",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "CE1"
+    },
+    {
+      "id": "R102",
+      "fuente": "WoS",
+      "de": "R053",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "CE1"
+    },
+    {
+      "id": "R104",
+      "fuente": "WoS",
+      "de": "R048",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "CE1"
+    },
+    {
+      "id": "R105",
+      "fuente": "WoS",
+      "de": "R027",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "CE1"
+    },
+    {
+      "id": "R107",
+      "fuente": "WoS",
+      "de": "R077",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "CE1"
+    },
+    {
+      "id": "R109",
+      "fuente": "WoS",
+      "de": "R042",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "CE1"
+    },
+    {
+      "id": "R110",
+      "fuente": "WoS",
+      "de": "R043",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "CE1"
+    },
+    {
+      "id": "R111",
+      "fuente": "WoS",
+      "de": "R021",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "CE1"
+    },
+    {
+      "id": "R112",
+      "fuente": "WoS",
+      "de": "R092",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "CE1"
+    },
+    {
+      "id": "R113",
+      "fuente": "WoS",
+      "de": "R031",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "CE1"
+    },
+    {
+      "id": "R114",
+      "fuente": "WoS",
+      "de": "R018",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "CE1"
+    },
+    {
+      "id": "R115",
+      "fuente": "WoS",
+      "de": "R082",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "CE1"
+    },
+    {
+      "id": "R116",
+      "fuente": "WoS",
+      "de": "R059",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "CE1"
+    },
+    {
+      "id": "R117",
+      "fuente": "WoS",
+      "de": "R071",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "CE1"
+    },
+    {
+      "id": "R118",
+      "fuente": "WoS",
+      "de": "R065",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "CE1"
+    },
+    {
+      "id": "R121",
+      "fuente": "WoS",
+      "de": "R038",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "CE1"
+    },
+    {
+      "id": "R122",
+      "fuente": "WoS",
+      "de": "R033",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "CE1"
+    },
+    {
+      "id": "R123",
+      "fuente": "WoS",
+      "de": "R005",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "CE1"
+    },
+    {
+      "id": "R126",
+      "fuente": "WoS",
+      "de": "R012",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "CE1"
+    },
+    {
+      "id": "R127",
+      "fuente": "WoS",
+      "de": "R078",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "CE1"
+    },
+    {
+      "id": "R132",
+      "fuente": "WoS",
+      "de": "R003",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "CE1"
+    },
+    {
+      "id": "R133",
+      "fuente": "WoS",
+      "de": "R063",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "CE1"
+    },
+    {
+      "id": "R136",
+      "fuente": "WoS",
+      "de": "R086",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "CE1"
+    },
+    {
+      "id": "R138",
+      "fuente": "WoS",
+      "de": "R052",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "CE1"
+    },
+    {
+      "id": "R141",
+      "fuente": "WoS",
+      "de": "R008",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "CE1"
+    },
+    {
+      "id": "R145",
+      "fuente": "WoS",
+      "de": "R010",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "CE1"
+    },
+    {
+      "id": "R151",
+      "fuente": "WoS",
+      "de": "R013",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "CE1"
+    }
+  ],
+  "lotes": [
+    [
+      1,
+      25,
+      "R001",
+      "R025"
+    ],
+    [
+      26,
+      50,
+      "R026",
+      "R050"
+    ],
+    [
+      51,
+      75,
+      "R051",
+      "R075"
+    ],
+    [
+      76,
+      100,
+      "R076",
+      "R124"
+    ],
+    [
+      101,
+      120,
+      "R125",
+      "R153"
+    ]
+  ],
+  "registros": [
+    {
+      "id": "R001",
+      "fuente": "Scopus",
+      "titulo": "Classification of neurodevelopmental disorders and typical development using deep learning and a portable patch-type electroencephalography device",
+      "anio": "2026",
+      "doi": "10.1016/j.ynirp.2026.100384",
+      "id_base": "2-s2.0-105044478985"
+    },
+    {
+      "id": "R002",
+      "fuente": "Scopus",
+      "titulo": "A Novel Fuzzy Logic System for Real-Time Text Difficulty Assessment in Mobile Reading Apps for Dyslexia",
+      "anio": "2025",
+      "doi": "10.14569/ijacsa.2025.0161224",
+      "id_base": "2-s2.0-105028570474"
+    },
+    {
+      "id": "R003",
+      "fuente": "Scopus; WoS",
+      "titulo": "Classification of Adolescent Drinking via Behavioral, Biological and Environmental Variables: A Machine Learning Approach With Bias Control",
+      "anio": "2026",
+      "doi": "10.1111/adb.70188",
+      "id_base": "2-s2.0-105049784348"
+    },
+    {
+      "id": "R004",
+      "fuente": "Scopus",
+      "titulo": "Comparative Study of Prenatal and Postnatal Images for Detecting Down Syndrome in Children",
+      "anio": "2025",
+      "doi": "10.14569/ijacsa.2025.0160688",
+      "id_base": "2-s2.0-105009413009"
+    },
+    {
+      "id": "R005",
+      "fuente": "Scopus; WoS",
+      "titulo": "Improving Reading in Adolescents and Adults With High-Functioning Autism Through an Assistive Technology Tool: A Cross-Over Multinational Study",
+      "anio": "2019",
+      "doi": "10.3389/fpsyt.2019.00546",
+      "id_base": "2-s2.0-85099693195"
+    },
+    {
+      "id": "R006",
+      "fuente": "Scopus",
+      "titulo": "Interpretive Caption: Real-Time Vocal Emotion Cues for DHH Users",
+      "anio": "2025",
+      "doi": "10.1145/3663547.3759697",
+      "id_base": "2-s2.0-105022594094"
+    },
+    {
+      "id": "R007",
+      "fuente": "Scopus",
+      "titulo": "A Smart Kitchen for Ambient Assisted Living",
+      "anio": "2014",
+      "doi": "10.3390/s140101629",
+      "id_base": "2-s2.0-84892569786"
+    },
+    {
+      "id": "R008",
+      "fuente": "Scopus; WoS",
+      "titulo": "Cross-modal privacy-preserving synthesis and mixture-of-experts ensemble for robust ASD prediction",
+      "anio": "2025",
+      "doi": "10.3389/fninf.2025.1679196",
+      "id_base": "2-s2.0-105023845597"
+    },
+    {
+      "id": "R009",
+      "fuente": "Scopus",
+      "titulo": "How does ChatGPT respond to stuttering-related frequently asked questions? A mixed-methods, cross-version comparison",
+      "anio": "2026",
+      "doi": "10.1016/j.jfludis.2026.106223",
+      "id_base": "2-s2.0-105040673611"
+    },
+    {
+      "id": "R010",
+      "fuente": "Scopus; WoS",
+      "titulo": "Towards Clinical Diagnoses: Classifying Alzheimer's Disease Using Single fMRI, Small Datasets, and Transfer Learning",
+      "anio": "2025",
+      "doi": "10.1002/brb3.70427",
+      "id_base": "2-s2.0-105001110212"
+    },
+    {
+      "id": "R011",
+      "fuente": "Scopus",
+      "titulo": "When Worlds Collide: AI-Created, Human-Mediated Video Description Services and the User Experience",
+      "anio": "2021",
+      "doi": "10.1007/978-3-030-90328-2_10",
+      "id_base": "2-s2.0-85119849815"
+    },
+    {
+      "id": "R012",
+      "fuente": "Scopus; WoS",
+      "titulo": "Deep learning-based automation framework for detecting multiple human disabilities in secure medical imaging systems",
+      "anio": "2025",
+      "doi": "10.7717/peerj-cs.3381",
+      "id_base": "2-s2.0-105023829624"
+    },
+    {
+      "id": "R013",
+      "fuente": "Scopus; WoS",
+      "titulo": "Co-Designing and Evaluating a Digital Competencies Toolkit for Nursing Students",
+      "anio": "2026",
+      "doi": "10.1111/jan.70329",
+      "id_base": "2-s2.0-105020412800"
+    },
+    {
+      "id": "R014",
+      "fuente": "Scopus",
+      "titulo": "EMOCASH: An Intelligent Virtual-Agent Based Multiplayer Online Serious Game for Promoting Money and Emotion Recognition Skills in Egyptian Children with Autism",
+      "anio": "2023",
+      "doi": "10.14569/ijacsa.2023.0140414",
+      "id_base": "2-s2.0-85159858463"
+    },
+    {
+      "id": "R015",
+      "fuente": "Scopus",
+      "titulo": "Development and Validation of an MRI-Based Brain Volumetry Model Predicting Poor Psychomotor Outcomes in Preterm Neonates",
+      "anio": "2025",
+      "doi": "10.3390/jcm14061996",
+      "id_base": "2-s2.0-105001329682"
+    },
+    {
+      "id": "R016",
+      "fuente": "Scopus",
+      "titulo": "Got It! Prompting Readability Using ChatGPT to Enhance Academic Texts for Diverse Learning Needs",
+      "anio": "2025",
+      "doi": "10.1145/3706468.3706483",
+      "id_base": "2-s2.0-105000372142"
+    },
+    {
+      "id": "R017",
+      "fuente": "Scopus",
+      "titulo": "Recent Advances in Artificial Intelligence for Dyslexia Detection: A Systematic Review",
+      "anio": "2025",
+      "doi": "10.31763/ijrcs.v5i3.2057",
+      "id_base": "2-s2.0-105018727293"
+    },
+    {
+      "id": "R018",
+      "fuente": "Scopus; WoS",
+      "titulo": "Application of artificial intelligence techniques for supporting people with ASD: a systematic literature review",
+      "anio": "2026",
+      "doi": "10.1007/s10209-026-01332-9",
+      "id_base": "2-s2.0-105036162686"
+    },
+    {
+      "id": "R019",
+      "fuente": "Scopus",
+      "titulo": "Co-designing a Museum Application with People with Intellectual Disabilities: Findings and Accessible Redesign",
+      "anio": "2023",
+      "doi": "10.1145/3605655.3605687",
+      "id_base": "2-s2.0-85173839112"
+    },
+    {
+      "id": "R020",
+      "fuente": "Scopus",
+      "titulo": "Design and Implementation of a Voice-Based Electronic Results System for Physically Challenged Students",
+      "anio": "2025",
+      "doi": "10.37933/nipes/7.4.2025.1324",
+      "id_base": "2-s2.0-105023989090"
+    },
+    {
+      "id": "R021",
+      "fuente": "Scopus; WoS",
+      "titulo": "Lexical Simplification System to Improve Web Accessibility",
+      "anio": "2021",
+      "doi": "10.1109/access.2021.3072697",
+      "id_base": "2-s2.0-85104260720"
+    },
+    {
+      "id": "R022",
+      "fuente": "Scopus",
+      "titulo": "A Cross-Lingual Mobile Medical Communication System Prototype for Foreigners and Subjects with Speech, Hearing, and Mental Disabilities Based on Pictograms",
+      "anio": "2017",
+      "doi": "10.1155/2017/4306416",
+      "id_base": "2-s2.0-85042176760"
+    },
+    {
+      "id": "R023",
+      "fuente": "Scopus",
+      "titulo": "Design and Evaluation of a Generative Artificial Intelligence-Based Tool for Students with Learning Disabilities in Kenya",
+      "anio": "2025",
+      "doi": "10.1609/aaai.v39i28.35229",
+      "id_base": "2-s2.0-105003905275"
+    },
+    {
+      "id": "R024",
+      "fuente": "Scopus; WoS",
+      "titulo": "Prompt Engineering Versus Model Selection for Cognitive Accessibility in Large Language Models: An Empirical Study",
+      "anio": "2026",
+      "doi": "10.1109/access.2026.3667133",
+      "id_base": "2-s2.0-105031504254"
+    },
+    {
+      "id": "R025",
+      "fuente": "Scopus",
+      "titulo": "Generative Artificial Intelligence and Large Language Models in Rehabilitation and Disability Services: A Scoping Review",
+      "anio": "2026",
+      "doi": "10.57197/jdr-2026-0937",
+      "id_base": "2-s2.0-105048252994"
+    },
+    {
+      "id": "R026",
+      "fuente": "Scopus",
+      "titulo": "A Review of 25 Years of Human-Computer Interaction Research on Reading Support Technologies for People with Disabilities Published in the ACM Digital Library",
+      "anio": "2025",
+      "doi": "10.1145/3663547.3746355",
+      "id_base": "2-s2.0-105022631153"
+    },
+    {
+      "id": "R027",
+      "fuente": "Scopus; WoS",
+      "titulo": "First steps in the development of a support application for easy-to-read adaptation",
+      "anio": "2024",
+      "doi": "10.1007/s10209-022-00946-z",
+      "id_base": "2-s2.0-85142153361"
+    },
+    {
+      "id": "R028",
+      "fuente": "Scopus",
+      "titulo": "Leveraging Artificial Intelligence for Digital Symptom Management in Oncology: The Development of CRCWeb",
+      "anio": "2025",
+      "doi": "10.2196/68516",
+      "id_base": "2-s2.0-105009751192"
+    },
+    {
+      "id": "R029",
+      "fuente": "Scopus; WoS",
+      "titulo": "Exploring Large Language Models to generate Easy to Read content",
+      "anio": "2024",
+      "doi": "10.3389/fcomp.2024.1394705",
+      "id_base": "2-s2.0-85200112259"
+    },
+    {
+      "id": "R030",
+      "fuente": "Scopus; WoS",
+      "titulo": "Towards Designing a Set of Usability and Accessibility Heuristics Focused on Cognitive Diversity: An Exploratory Case Study with Generative Artificial Intelligence",
+      "anio": "2024",
+      "doi": "10.3390/info15120769",
+      "id_base": "2-s2.0-85213319619"
+    },
+    {
+      "id": "R031",
+      "fuente": "Scopus; WoS",
+      "titulo": "Mobile app-based chatbot to deliver cognitive behavioral therapy and psychoeducation for adults with attention deficit: A development and feasibility/usability study",
+      "anio": "2021",
+      "doi": "10.1016/j.ijmedinf.2021.104440",
+      "id_base": "2-s2.0-85103373094"
+    },
+    {
+      "id": "R032",
+      "fuente": "Scopus; WoS",
+      "titulo": "MTCAI: Leveraging AI to Simplify Medical Reports for Adults With Intellectual and Developmental Disabilities",
+      "anio": "2026",
+      "doi": "10.1111/jppi.70061",
+      "id_base": "2-s2.0-105037863787"
+    },
+    {
+      "id": "R033",
+      "fuente": "Scopus; WoS",
+      "titulo": "AI, autism, and the architecture of voice: from engineered exclusion to designed dignity",
+      "anio": "2026",
+      "doi": "10.1007/s00146-026-03044-3",
+      "id_base": "2-s2.0-105036094093"
+    },
+    {
+      "id": "R034",
+      "fuente": "Scopus",
+      "titulo": "Enhancing User Experience in Virtual Reality for Children with Autism: A Significant Review",
+      "anio": "2026",
+      "doi": "10.14569/ijacsa.2026.0170533",
+      "id_base": "2-s2.0-105043419520"
+    },
+    {
+      "id": "R035",
+      "fuente": "Scopus",
+      "titulo": "Evaluation of users' level of satisfaction for an artificial intelligence-based diagnostic program in pediatric rare genetic diseases",
+      "anio": "2022",
+      "doi": "10.1097/md.0000000000029424",
+      "id_base": "2-s2.0-85134609082"
+    },
+    {
+      "id": "R036",
+      "fuente": "Scopus",
+      "titulo": "ADAPT: An Agentic AI Framework for People with Disabilities and Neurodivergence",
+      "anio": "2026",
+      "doi": "10.57197/jdr-2026-0830",
+      "id_base": "2-s2.0-105043733818"
+    },
+    {
+      "id": "R037",
+      "fuente": "Scopus",
+      "titulo": "Cognitive Simplification Operations Improve Text Simplification",
+      "anio": "2022",
+      "doi": "10.18653/v1/2022.conll-1.17",
+      "id_base": "2-s2.0-85153180250"
+    },
+    {
+      "id": "R038",
+      "fuente": "Scopus; WoS",
+      "titulo": "A scoping review of inclusive and adaptive human–AI interaction design for neurodivergent users",
+      "anio": "2026",
+      "doi": "10.1080/17483107.2025.2579822",
+      "id_base": "2-s2.0-105022266020"
+    },
+    {
+      "id": "R039",
+      "fuente": "Scopus",
+      "titulo": "FROM EXCLUSION TO EMPOWERMENT: REDESIGNING E-LEARNING TO MITIGATE RISKS FOR DISABLED STUDENTS",
+      "anio": "2025",
+      "doi": "10.37385/jaets.v7i1.7608",
+      "id_base": "2-s2.0-105027570281"
+    },
+    {
+      "id": "R040",
+      "fuente": "Scopus",
+      "titulo": "LLM-Driven Accessible Interface: A Model-Based Approach",
+      "anio": "2026",
+      "doi": "10.1007/978-3-032-22937-3_4",
+      "id_base": "2-s2.0-105048740334"
+    },
+    {
+      "id": "R041",
+      "fuente": "Scopus",
+      "titulo": "Synthetic Emotions and the Illusion of Measurement: A Conceptual Review and Critique of Measurement Paradigms in Affective Science",
+      "anio": "2025",
+      "doi": "10.3390/brainsci15090909",
+      "id_base": "2-s2.0-105017479207"
+    },
+    {
+      "id": "R042",
+      "fuente": "Scopus; WoS",
+      "titulo": "Predicting health material accessibility: Development of machine learning algorithms",
+      "anio": "2021",
+      "doi": "10.2196/29175",
+      "id_base": "2-s2.0-85114353809"
+    },
+    {
+      "id": "R043",
+      "fuente": "Scopus; WoS",
+      "titulo": "A Literature Review of Conversational Agents for People with Intellectual and Developmental Disabilities",
+      "anio": "2026",
+      "doi": "10.1080/10447318.2026.2634975",
+      "id_base": "2-s2.0-105032397452"
+    },
+    {
+      "id": "R044",
+      "fuente": "Scopus",
+      "titulo": "Neural correlates of statistical learning in developmental dyslexia: An electroencephalography study",
+      "anio": "2023",
+      "doi": "10.1016/j.biopsycho.2023.108592",
+      "id_base": "2-s2.0-85161654769"
+    },
+    {
+      "id": "R045",
+      "fuente": "Scopus",
+      "titulo": "Interpretable fine-tuned large language models facilitate making genetic test decisions for rare diseases",
+      "anio": "2026",
+      "doi": "10.1038/s41746-026-02733-z",
+      "id_base": "2-s2.0-105047238969"
+    },
+    {
+      "id": "R046",
+      "fuente": "Scopus",
+      "titulo": "Towards an Automatic Easy-to-Read Adaptation of Morphological Features in Spanish Texts",
+      "anio": "2023",
+      "doi": "10.1007/978-3-031-42280-5_12",
+      "id_base": "2-s2.0-85171432725"
+    },
+    {
+      "id": "R047",
+      "fuente": "Scopus",
+      "titulo": "Beyond Readability Metrics: Plain Language Priorities in Disability Advocacy Organizations",
+      "anio": "2026",
+      "doi": "10.1145/3805689.3806722",
+      "id_base": "2-s2.0-105044425513"
+    },
+    {
+      "id": "R048",
+      "fuente": "Scopus; WoS",
+      "titulo": "Development of Artificial Intelligence-Assisted Interactive Platform for Music Education",
+      "anio": "2025",
+      "doi": "10.4018/ijicte.392503",
+      "id_base": "2-s2.0-105021321540"
+    },
+    {
+      "id": "R049",
+      "fuente": "Scopus",
+      "titulo": "Exploring the design of LLM-powered question generation for deaf and hard of hearing learners",
+      "anio": "2026",
+      "doi": "10.1016/j.caeai.2026.100615",
+      "id_base": "2-s2.0-105041208570"
+    },
+    {
+      "id": "R050",
+      "fuente": "Scopus",
+      "titulo": "Enhancing Access to eLearning for People with Intellectual Disability: Integrating Usability with Learning",
+      "anio": "2017",
+      "doi": "10.1007/978-3-319-67684-5_2",
+      "id_base": "2-s2.0-85030829991"
+    },
+    {
+      "id": "R051",
+      "fuente": "Scopus",
+      "titulo": "COGASet: A Persona-Driven Dataset and Evaluation Framework for Cognitively Accessible LLM-Generated Content",
+      "anio": "2026",
+      "doi": "10.1145/3800424.3800432",
+      "id_base": "2-s2.0-105041994528"
+    },
+    {
+      "id": "R052",
+      "fuente": "Scopus; WoS",
+      "titulo": "Larger models yield better results? Streamlined severity classification of ADHD-related concerns using BERT-based knowledge distillation",
+      "anio": "2025",
+      "doi": "10.1371/journal.pone.0315829",
+      "id_base": "2-s2.0-85218291261"
+    },
+    {
+      "id": "R053",
+      "fuente": "Scopus; WoS",
+      "titulo": "Cognitive Accessibility in Generative AI Interfaces: A Systematic Review",
+      "anio": "2026",
+      "doi": "10.1080/10447318.2026.2618562",
+      "id_base": "2-s2.0-105029386289"
+    },
+    {
+      "id": "R054",
+      "fuente": "Scopus",
+      "titulo": "Towards Inclusive Education: Multimodal Classification of Textbook Images for Accessibility",
+      "anio": "2025",
+      "doi": "10.1007/978-981-96-2071-5_16",
+      "id_base": "2-s2.0-85215994741"
+    },
+    {
+      "id": "R055",
+      "fuente": "Scopus",
+      "titulo": "Real-Time Classification of Anxiety in Virtual Reality Therapy Using Biosensors and a Convolutional Neural Network",
+      "anio": "2024",
+      "doi": "10.3390/bios14030131",
+      "id_base": "2-s2.0-85188793071"
+    },
+    {
+      "id": "R056",
+      "fuente": "Scopus",
+      "titulo": "Iris: A Content Management System Supporting Typography and Accessibility",
+      "anio": "2026",
+      "doi": "10.1145/3770761.3777217",
+      "id_base": "2-s2.0-105033984305"
+    },
+    {
+      "id": "R057",
+      "fuente": "Scopus; WoS",
+      "titulo": "An Augmented Reality and AI-Based System for Contextual Appliance Guidance: Implications for Cognitive Accessibility and Assistive Interaction",
+      "anio": "2026",
+      "doi": "10.3390/brainsci16080783",
+      "id_base": "2-s2.0-105048561068"
+    },
+    {
+      "id": "R058",
+      "fuente": "Scopus",
+      "titulo": "Development and Validation of an iPad-based Serious Game for Emotion Recognition and Attention Tracking towards Early Identification of Autism",
+      "anio": "2023",
+      "doi": "10.1109/aciiw59127.2023.10388145",
+      "id_base": "2-s2.0-85184820650"
+    },
+    {
+      "id": "R059",
+      "fuente": "Scopus; WoS",
+      "titulo": "Early autism detection: a review of emerging technologies, biomarkers, and explainable AI approaches",
+      "anio": "2026",
+      "doi": "10.1186/s13041-025-01269-9",
+      "id_base": "2-s2.0-105028671395"
+    },
+    {
+      "id": "R060",
+      "fuente": "Scopus",
+      "titulo": "Social Adventure: Designing Interactive Smart Speaker Social Skills Games for People With Intellectual Disabilities",
+      "anio": "2022",
+      "doi": "10.4018/ijgcms.303107",
+      "id_base": "2-s2.0-85186490064"
+    },
+    {
+      "id": "R061",
+      "fuente": "Scopus",
+      "titulo": "Use of machine learning in geriatric clinical care for chronic diseases: A systematic literature review",
+      "anio": "2020",
+      "doi": "10.1093/jamiaopen/ooaa034",
+      "id_base": "2-s2.0-85102079677"
+    },
+    {
+      "id": "R062",
+      "fuente": "Scopus",
+      "titulo": "Understanding susceptibility to inattentional deafness in safety–critical environments",
+      "anio": "2026",
+      "doi": "10.1016/j.jsr.2026.08.011",
+      "id_base": "2-s2.0-105047854535"
+    },
+    {
+      "id": "R063",
+      "fuente": "Scopus; WoS",
+      "titulo": "Artificial Intelligence in Applied Cognitive Psychology: A Commentary",
+      "anio": "2026",
+      "doi": "10.23947/2334-8496-2026-14-1-115-124",
+      "id_base": "2-s2.0-105039021302"
+    },
+    {
+      "id": "R064",
+      "fuente": "Scopus",
+      "titulo": "Motivating Students With Different Needs to Learn Chinese in a Mixed-Background Classroom by Robot-Assisted Learning",
+      "anio": "2025",
+      "doi": "10.1109/tlt.2025.3551256",
+      "id_base": "2-s2.0-105003820834"
+    },
+    {
+      "id": "R065",
+      "fuente": "Scopus; WoS",
+      "titulo": "Toward FIAP®-Digital: an interpretable multimodal AI architecture for translational stratification and precision care in Autism",
+      "anio": "2026",
+      "doi": "10.3389/fninf.2026.1868068",
+      "id_base": "2-s2.0-105051297956"
+    },
+    {
+      "id": "R066",
+      "fuente": "Scopus",
+      "titulo": "Predicting academic success of autistic students in higher education",
+      "anio": "2023",
+      "doi": "10.1177/13623613221146439",
+      "id_base": "2-s2.0-85145907958"
+    },
+    {
+      "id": "R067",
+      "fuente": "Scopus",
+      "titulo": "Detecting Cochlear Synaptopathy Through Curvature Quantification of the Auditory Brainstem Response",
+      "anio": "2022",
+      "doi": "10.3389/fncel.2022.851500",
+      "id_base": "2-s2.0-85127391194"
+    },
+    {
+      "id": "R068",
+      "fuente": "Scopus",
+      "titulo": "LLM Use in Early Prototyping",
+      "anio": "2026",
+      "doi": "10.1016/j.procs.2026.03.116",
+      "id_base": "2-s2.0-105040915603"
+    },
+    {
+      "id": "R069",
+      "fuente": "Scopus",
+      "titulo": "Hearing and cognitive decline in aging differentially impact neural tracking of context-supported versus random speech across linguistic timescales",
+      "anio": "2024",
+      "doi": "10.1371/journal.pone.0313854",
+      "id_base": "2-s2.0-85211728555"
+    },
+    {
+      "id": "R070",
+      "fuente": "Scopus",
+      "titulo": "Long-term speech perception and morphosyntactic outcomes in adolescents and young adults implanted in childhood",
+      "anio": "2023",
+      "doi": "10.1016/j.ijporl.2023.111514",
+      "id_base": "2-s2.0-85150345694"
+    },
+    {
+      "id": "R071",
+      "fuente": "Scopus; WoS",
+      "titulo": "Affective User Experience (AUX) in Immersive Environments: A Systematic Review of Affective Computing in Immersive Environments for Individuals with Autism Spectrum Disorder (ASD)",
+      "anio": "2026",
+      "doi": "10.3390/app16031528",
+      "id_base": "2-s2.0-105030059841"
+    },
+    {
+      "id": "R072",
+      "fuente": "Scopus",
+      "titulo": "SummaryLens - A Smartphone App for Exploring Interactive Use of Automated Text Summarization in Everyday Life",
+      "anio": "2022",
+      "doi": "10.1145/3490100.3516471",
+      "id_base": "2-s2.0-85127769595"
+    },
+    {
+      "id": "R073",
+      "fuente": "Scopus; WoS",
+      "titulo": "PlanTEA-WM: A Multi-User Web Platform for Routine Planning and Anticipating Everyday Situations in Individuals With Autism Spectrum Disorder",
+      "anio": "2025",
+      "doi": "10.1109/access.2025.3617152",
+      "id_base": "2-s2.0-105018103610"
+    },
+    {
+      "id": "R074",
+      "fuente": "Scopus",
+      "titulo": "PhenoApt leverages clinical expertise to prioritize candidate genes via machine learning",
+      "anio": "2022",
+      "doi": "10.1016/j.ajhg.2021.12.008",
+      "id_base": "2-s2.0-85123821072"
+    },
+    {
+      "id": "R075",
+      "fuente": "Scopus",
+      "titulo": "Cognitive Neural Differentiation and Integration of Multimodal Metaphors: Influencing Factors and Processing Mechanisms",
+      "anio": "2025",
+      "doi": "10.31083/jin44326",
+      "id_base": "2-s2.0-105026764077"
+    },
+    {
+      "id": "R076",
+      "fuente": "Scopus",
+      "titulo": "Let AI Read First: Enhancing Reading Abilities for Individuals with Dyslexia through Artificial Intelligence",
+      "anio": "2025",
+      "doi": "10.1145/3706599.3720113",
+      "id_base": "2-s2.0-105005729832"
+    },
+    {
+      "id": "R077",
+      "fuente": "Scopus; WoS",
+      "titulo": "A systematic literature review on the application of machine-learning models in behavioral assessment of autism spectrum disorder",
+      "anio": "2021",
+      "doi": "10.3390/jpm11040299",
+      "id_base": "2-s2.0-85104884371"
+    },
+    {
+      "id": "R078",
+      "fuente": "Scopus; WoS",
+      "titulo": "Eye-Tracking as a Screening Tool in the Early Diagnosis of Autism Spectrum Disorder: A Systematic Review and Meta-Analysis",
+      "anio": "2025",
+      "doi": "10.3390/jcm14248801",
+      "id_base": "2-s2.0-105025904465"
+    },
+    {
+      "id": "R079",
+      "fuente": "Scopus",
+      "titulo": "A gamified solution to promote positive habits in children and adolescents with Intellectual Disabilities",
+      "anio": "2025",
+      "doi": "10.5753/jis.2025.5644",
+      "id_base": "2-s2.0-105017714508"
+    },
+    {
+      "id": "R080",
+      "fuente": "Scopus",
+      "titulo": "Towards a Technology that Improves Focus, Comprehension, and Retention in E-learning for Higher Education students with ADHD",
+      "anio": "2025",
+      "doi": "10.1145/3663547.3759705",
+      "id_base": "2-s2.0-105022618179"
+    },
+    {
+      "id": "R081",
+      "fuente": "Scopus",
+      "titulo": "Your robot therapist is not your therapist: understanding the role of AI-powered mental health chatbots",
+      "anio": "2023",
+      "doi": "10.3389/fdgth.2023.1278186",
+      "id_base": "2-s2.0-85177568801"
+    },
+    {
+      "id": "R082",
+      "fuente": "Scopus; WoS",
+      "titulo": "The impact of technology on people with autism spectrum disorder: A systematic literature review",
+      "anio": "2019",
+      "doi": "10.3390/s19204485",
+      "id_base": "2-s2.0-85073554041"
+    },
+    {
+      "id": "R083",
+      "fuente": "Scopus",
+      "titulo": "Cognitive Dimensions of Feedback Uptake: Comparing AI-Generated and Teacher Input in EAP Writing",
+      "anio": "2026",
+      "doi": "10.1007/978-3-032-31418-5_21",
+      "id_base": "2-s2.0-105045566765"
+    },
+    {
+      "id": "R084",
+      "fuente": "Scopus",
+      "titulo": "Towards Inclusive Reading: A Neural Text Generation Framework for Dyslexia Accessibility",
+      "anio": "2025",
+      "doi": "10.1145/3696593.3696625",
+      "id_base": "2-s2.0-105013764694"
+    },
+    {
+      "id": "R085",
+      "fuente": "Scopus",
+      "titulo": "Mismatch negativity in children: Reference values",
+      "anio": "2018",
+      "doi": "10.1055/s-0038-1667313",
+      "id_base": "2-s2.0-85064207148"
+    },
+    {
+      "id": "R086",
+      "fuente": "Scopus; WoS",
+      "titulo": "Designing and implementing SMILE: An AI-driven platform for enhancing clinical decision-making in mental health and neurodivergence management",
+      "anio": "2025",
+      "doi": "10.1016/j.csbj.2025.02.022",
+      "id_base": "2-s2.0-85218880649"
+    },
+    {
+      "id": "R087",
+      "fuente": "Scopus; WoS",
+      "titulo": "Evaluating large language models for ADHD education: A comparative study of ChatGPT 5, DeepSeek V3, and Grok 4",
+      "anio": "2026",
+      "doi": "10.1371/journal.pone.0335335",
+      "id_base": "2-s2.0-105040562984"
+    },
+    {
+      "id": "R088",
+      "fuente": "Scopus",
+      "titulo": "A survey of the perceived text adaptation needs of adults with autism",
+      "anio": "2019",
+      "doi": "10.26615/978-954-452-056-4_155",
+      "id_base": "2-s2.0-85076456574"
+    },
+    {
+      "id": "R089",
+      "fuente": "Scopus",
+      "titulo": "Using GPT-4 to annotate the severity of all phenotypic abnormalities within the human phenotype ontology",
+      "anio": "2026",
+      "doi": "10.3389/fdgth.2026.1794934",
+      "id_base": "2-s2.0-105048855241"
+    },
+    {
+      "id": "R090",
+      "fuente": "Scopus",
+      "titulo": "AI applications in education: Technological innovations for overcoming dyslexia and dysgraphia challenges in students",
+      "anio": "2026",
+      "doi": "10.31893/multirev.2026340",
+      "id_base": "2-s2.0-105029860533"
+    },
+    {
+      "id": "R091",
+      "fuente": "Scopus",
+      "titulo": "AI-Driven Interpretation of Nonverbal Communication in AR-Enhanced Real-Time Captions: Effects on Cognitive Load, Comprehension, and User Engagement",
+      "anio": "2025",
+      "doi": "10.1145/3698061.3734421",
+      "id_base": "2-s2.0-105010304225"
+    },
+    {
+      "id": "R092",
+      "fuente": "Scopus; WoS",
+      "titulo": "NEW TAXONOMY OF EASY-TO-UNDERSTAND ACCESS SERVICES1",
+      "anio": "2020",
+      "doi": "10.6035/monti.2020.12.12",
+      "id_base": "2-s2.0-85100209272"
+    },
+    {
+      "id": "R093",
+      "fuente": "WoS",
+      "titulo": "Exploring Large Language Models to generate Easy to Read content",
+      "anio": "2024",
+      "doi": "10.3389/fcomp.2024.1394705",
+      "id_base": "WOS:001337077600001"
+    },
+    {
+      "id": "R094",
+      "fuente": "WoS",
+      "titulo": "Easy-read and large language models: on the ethical dimensions of LLM-based text simplification",
+      "anio": "2024",
+      "doi": "10.1007/s10676-024-09792-4",
+      "id_base": "WOS:001293359800001"
+    },
+    {
+      "id": "R095",
+      "fuente": "WoS",
+      "titulo": "Prompt Engineering Versus Model Selection for Cognitive Accessibility in Large Language Models: An Empirical Study",
+      "anio": "2026",
+      "doi": "10.1109/access.2026.3667133",
+      "id_base": "WOS:001727215500042"
+    },
+    {
+      "id": "R096",
+      "fuente": "WoS",
+      "titulo": "Evaluating large language models for ADHD education: A comparative study of ChatGPT 5, DeepSeek V3, and Grok 4",
+      "anio": "2026",
+      "doi": "10.1371/journal.pone.0335335",
+      "id_base": "WOS:001787838200041"
+    },
+    {
+      "id": "R097",
+      "fuente": "WoS",
+      "titulo": "PlanTEA-WM: A Multi-User Web Platform for Routine Planning and Anticipating Everyday Situations in Individuals With Autism Spectrum Disorder",
+      "anio": "2025",
+      "doi": "10.1109/access.2025.3617152",
+      "id_base": "WOS:001600745900008"
+    },
+    {
+      "id": "R098",
+      "fuente": "WoS",
+      "titulo": "MTCAI: Leveraging AI to Simplify Medical Reports for Adults With Intellectual and Developmental Disabilities",
+      "anio": "2026",
+      "doi": "10.1111/jppi.70061",
+      "id_base": "WOS:001757354700001"
+    },
+    {
+      "id": "R099",
+      "fuente": "WoS",
+      "titulo": "An Augmented Reality and AI-Based System for Contextual Appliance Guidance: Implications for Cognitive Accessibility and Assistive Interaction",
+      "anio": "2026",
+      "doi": "10.3390/brainsci16080783",
+      "id_base": "WOS:001859213500001"
+    },
+    {
+      "id": "R100",
+      "fuente": "WoS",
+      "titulo": "The DX plus conceptual framework for AI-supported inclusive block programming in higher education",
+      "anio": "2026",
+      "doi": "10.3389/feduc.2026.1902352",
+      "id_base": "WOS:001882243500001"
+    },
+    {
+      "id": "R101",
+      "fuente": "WoS",
+      "titulo": "Towards Designing a Set of Usability and Accessibility Heuristics Focused on Cognitive Diversity: An Exploratory Case Study with Generative Artificial Intelligence",
+      "anio": "2024",
+      "doi": "10.3390/info15120769",
+      "id_base": "WOS:001384578300001"
+    },
+    {
+      "id": "R102",
+      "fuente": "WoS",
+      "titulo": "Cognitive Accessibility in Generative AI Interfaces: A Systematic Review",
+      "anio": "2026",
+      "doi": "10.1080/10447318.2026.2618562",
+      "id_base": "WOS:001675149800001"
+    },
+    {
+      "id": "R103",
+      "fuente": "WoS",
+      "titulo": "Assessing The Performance of Artificial Intelligence Models In Autism Spectrum Disorder: Accuracy and Readability of ChatGPT, Gemini, and Microsoft Copilot",
+      "anio": "2026",
+      "doi": "10.5455/pbs.20250722043208",
+      "id_base": "WOS:001710527600006"
+    },
+    {
+      "id": "R104",
+      "fuente": "WoS",
+      "titulo": "Development of Artificial Intelligence-Assisted Interactive Platform for Music Education",
+      "anio": "2025",
+      "doi": "10.4018/ijicte.392503",
+      "id_base": "WOS:001683340800001"
+    },
+    {
+      "id": "R105",
+      "fuente": "WoS",
+      "titulo": "First steps in the development of a support application for easy-to-read adaptation",
+      "anio": "2024",
+      "doi": "10.1007/s10209-022-00946-z",
+      "id_base": "WOS:000885728900001"
+    },
+    {
+      "id": "R106",
+      "fuente": "WoS",
+      "titulo": "Exploring Web Accessibility and Usability for Users With Attention Deficit Hyperactivity Disorder: Evaluation of Guidelines and",
+      "anio": "2026",
+      "doi": "10.9781/ijimai.2026.3563",
+      "id_base": "WOS:001868590500006"
+    },
+    {
+      "id": "R107",
+      "fuente": "WoS",
+      "titulo": "A Systematic Literature Review on the Application of Machine-Learning Models in Behavioral Assessment of Autism Spectrum Disorder",
+      "anio": "2021",
+      "doi": "10.3390/jpm11040299",
+      "id_base": "WOS:000643127300001"
+    },
+    {
+      "id": "R108",
+      "fuente": "WoS",
+      "titulo": "The Role of Artificial Intelligence for Early Diagnostic Tools of Autism Spectrum Disorder: A Systematic Review",
+      "anio": "2025",
+      "doi": "10.5152/turkarchpediatr.2025.24183",
+      "id_base": "WOS:001451396100003"
+    },
+    {
+      "id": "R109",
+      "fuente": "WoS",
+      "titulo": "Predicting Health Material Accessibility: Development of Machine Learning Algorithms",
+      "anio": "2021",
+      "doi": "10.2196/29175",
+      "id_base": "WOS:000703023000001"
+    },
+    {
+      "id": "R110",
+      "fuente": "WoS",
+      "titulo": "A Literature Review of Conversational Agents for People with Intellectual and Developmental Disabilities",
+      "anio": "2026",
+      "doi": "10.1080/10447318.2026.2634975",
+      "id_base": "WOS:001709888200001"
+    },
+    {
+      "id": "R111",
+      "fuente": "WoS",
+      "titulo": "Lexical Simplification System to Improve Web Accessibility",
+      "anio": "2021",
+      "doi": "10.1109/access.2021.3072697",
+      "id_base": "WOS:000641952900001"
+    },
+    {
+      "id": "R112",
+      "fuente": "WoS",
+      "titulo": "NEW TAXONOMY OF EASY-TO-UNDERSTAND ACCESS SERVICES",
+      "anio": "2020",
+      "doi": "10.6035/monti.2020.12.12",
+      "id_base": "WOS:000800216500012"
+    },
+    {
+      "id": "R113",
+      "fuente": "WoS",
+      "titulo": "Mobile app-based chatbot to deliver cognitive behavioral therapy and psychoeducation for adults with attention deficit: A development and feasibility/usability study",
+      "anio": "2021",
+      "doi": "10.1016/j.ijmedinf.2021.104440",
+      "id_base": "WOS:000651380300005"
+    },
+    {
+      "id": "R114",
+      "fuente": "WoS",
+      "titulo": "Application of artificial intelligence techniques for supporting people with ASD: a systematic literature review",
+      "anio": "2026",
+      "doi": "10.1007/s10209-026-01332-9",
+      "id_base": "WOS:001741546100004"
+    },
+    {
+      "id": "R115",
+      "fuente": "WoS",
+      "titulo": "The Impact of Technology on People with Autism Spectrum Disorder: A Systematic Literature Review",
+      "anio": "2019",
+      "doi": "10.3390/s19204485",
+      "id_base": "WOS:000497864700133"
+    },
+    {
+      "id": "R116",
+      "fuente": "WoS",
+      "titulo": "Early autism detection: a review of emerging technologies, biomarkers, and explainable AI approaches",
+      "anio": "2025",
+      "doi": "10.1186/s13041-025-01269-9",
+      "id_base": "WOS:001672142100002"
+    },
+    {
+      "id": "R117",
+      "fuente": "WoS",
+      "titulo": "Affective User Experience (AUX) in Immersive Environments: A Systematic Review of Affective Computing in Immersive Environments for Individuals with Autism Spectrum Disorder (ASD)",
+      "anio": "2026",
+      "doi": "10.3390/app16031528",
+      "id_base": "WOS:001687599400001"
+    },
+    {
+      "id": "R118",
+      "fuente": "WoS",
+      "titulo": "Toward FIAP®-Digital: an interpretable multimodal AI architecture for translational stratification and precision care in Autism",
+      "anio": "2026",
+      "doi": "10.3389/fninf.2026.1868068",
+      "id_base": "WOS:001875148800001"
+    },
+    {
+      "id": "R119",
+      "fuente": "WoS",
+      "titulo": "AI testing, evaluation, verification and validation for accessibility: a comprehensive framework",
+      "anio": "2026",
+      "doi": "10.3389/fdgth.2025.1679603",
+      "id_base": "WOS:001712254700001"
+    },
+    {
+      "id": "R120",
+      "fuente": "WoS",
+      "titulo": "The ways of communication for children with autism spectrum disorder",
+      "anio": "2024",
+      "doi": "10.30935/ojcmt/15611",
+      "id_base": "WOS:001361890000002"
+    },
+    {
+      "id": "R121",
+      "fuente": "WoS",
+      "titulo": "A scoping review of inclusive and adaptive human-AI interaction design for neurodivergent users",
+      "anio": "2026",
+      "doi": "10.1080/17483107.2025.2579822",
+      "id_base": "WOS:001613283300001"
+    },
+    {
+      "id": "R122",
+      "fuente": "WoS",
+      "titulo": "AI, autism, and the architecture of voice: from engineered exclusion to designed dignity",
+      "anio": "2026",
+      "doi": "10.1007/s00146-026-03044-3",
+      "id_base": "WOS:001743002500001"
+    },
+    {
+      "id": "R123",
+      "fuente": "WoS",
+      "titulo": "Improving Reading in Adolescents and Adults With High-Functioning Autism Through an Assistive Technology Tool: A Cross-Over Multinational Study",
+      "anio": "2019",
+      "doi": "10.3389/fpsyt.2019.00546",
+      "id_base": "WOS:000479142100001"
+    },
+    {
+      "id": "R124",
+      "fuente": "WoS",
+      "titulo": "Collective intelligence in adaptive IoT-based assistive technologies for visually impaired users in indoor environments",
+      "anio": "2026",
+      "doi": "10.1016/j.iot.2026.102070",
+      "id_base": "WOS:001861214500001"
+    },
+    {
+      "id": "R125",
+      "fuente": "WoS",
+      "titulo": "Quantifying Voice Characteristics for Detecting Autism",
+      "anio": "2021",
+      "doi": "10.3389/fpsyg.2021.665096",
+      "id_base": "WOS:000697286400001"
+    },
+    {
+      "id": "R126",
+      "fuente": "WoS",
+      "titulo": "Deep learning-based automation framework for detecting multiple human disabilities in secure medical imaging systems",
+      "anio": "2025",
+      "doi": "10.7717/peerj-cs.3381",
+      "id_base": "WOS:001631839700001"
+    },
+    {
+      "id": "R127",
+      "fuente": "WoS",
+      "titulo": "Eye-Tracking as a Screening Tool in the Early Diagnosis of Autism Spectrum Disorder: A Systematic Review and Meta-Analysis",
+      "anio": "2025",
+      "doi": "10.3390/jcm14248801",
+      "id_base": "WOS:001646807100001"
+    },
+    {
+      "id": "R128",
+      "fuente": "WoS",
+      "titulo": "Cross-linguistic patterns of speech prosodic differences in autism: A machine learning study",
+      "anio": "2022",
+      "doi": "10.1371/journal.pone.0269637",
+      "id_base": "WOS:000843575700049"
+    },
+    {
+      "id": "R129",
+      "fuente": "WoS",
+      "titulo": "Combining voice and language features improves automated autism detection",
+      "anio": "2022",
+      "doi": "10.1002/aur.2733",
+      "id_base": "WOS:000785923500001"
+    },
+    {
+      "id": "R130",
+      "fuente": "WoS",
+      "titulo": "Navigating Accessibility and Inclusivity: Perceptions and Usability of Artificial Intelligence-Enabled Job Application Systems for Persons With Disabilities",
+      "anio": "2026",
+      "doi": "10.1111/ntwe.70017",
+      "id_base": "WOS:001654322900001"
+    },
+    {
+      "id": "R131",
+      "fuente": "WoS",
+      "titulo": "A Pseudo-Value Approach to Analyze the Semantic Similarity of the Speech of Children With and Without Autism Spectrum Disorder",
+      "anio": "2021",
+      "doi": "10.3389/fpsyg.2021.668344",
+      "id_base": "WOS:000681105400001"
+    },
+    {
+      "id": "R132",
+      "fuente": "WoS",
+      "titulo": "Classification of Adolescent Drinking via Behavioral, Biological and Environmental Variables: A Machine Learning Approach With Bias Control",
+      "anio": "2026",
+      "doi": "10.1111/adb.70188",
+      "id_base": "WOS:001872743300001"
+    },
+    {
+      "id": "R133",
+      "fuente": "WoS",
+      "titulo": "Artificial Intelligence in Applied Cognitive Psychology: A Commentary",
+      "anio": "2026",
+      "doi": "10.23947/2334-8496-2026-14-1-115-124",
+      "id_base": "WOS:001769347600001"
+    },
+    {
+      "id": "R134",
+      "fuente": "WoS",
+      "titulo": "Design of a mobile application based on artificial intelligence to identify pain in non-communicating individuals with cerebral palsy",
+      "anio": "2025",
+      "doi": "10.1016/j.ridd.2025.105058",
+      "id_base": "WOS:001516196100001"
+    },
+    {
+      "id": "R135",
+      "fuente": "WoS",
+      "titulo": "Machine Learning Approaches to Analyze Speech-Evoked Neurophysiological Responses",
+      "anio": "2019",
+      "doi": "10.1044/2018_jslhr-s-astm-18-0244",
+      "id_base": "WOS:000462743400009"
+    },
+    {
+      "id": "R136",
+      "fuente": "WoS",
+      "titulo": "Designing and implementing SMILE: An AI-driven platform for enhancing clinical decision-making in mental health and neurodivergence management",
+      "anio": "2025",
+      "doi": "10.1016/j.csbj.2025.02.022",
+      "id_base": "WOS:001436467900001"
+    },
+    {
+      "id": "R137",
+      "fuente": "WoS",
+      "titulo": "What Matters in Accessible Written Communication for Neurodivergent People? A Scoping Review",
+      "anio": "2026",
+      "doi": "10.16993/sjdr.1297",
+      "id_base": "WOS:001700326700006"
+    },
+    {
+      "id": "R138",
+      "fuente": "WoS",
+      "titulo": "Larger models yield better results? Streamlined severity classification of ADHD-related concerns using BERT-based knowledge distillation",
+      "anio": "2025",
+      "doi": "10.1371/journal.pone.0315829",
+      "id_base": "WOS:001435274300044"
+    },
+    {
+      "id": "R139",
+      "fuente": "WoS",
+      "titulo": "Exploring perceived usefulness and perceived ease of use of patient-led recording for adults with Down syndrome and their support people: A qualitative study",
+      "anio": "2026",
+      "doi": "10.3109/13668250.2025.2525664",
+      "id_base": "WOS:001530401100001"
+    },
+    {
+      "id": "R140",
+      "fuente": "WoS",
+      "titulo": "UDL and AI-based educational personalization: effects on performance and self-regulation",
+      "anio": "2026",
+      "doi": "10.21803/penamer.19.40.1068",
+      "id_base": "WOS:001842246500001"
+    },
+    {
+      "id": "R141",
+      "fuente": "WoS",
+      "titulo": "Cross-modal privacy-preserving synthesis and mixture-of-experts ensemble for robust ASD prediction",
+      "anio": "2025",
+      "doi": "10.3389/fninf.2025.1679196",
+      "id_base": "WOS:001629537400001"
+    },
+    {
+      "id": "R142",
+      "fuente": "WoS",
+      "titulo": "Accessible Augmented Reality in Sheltered Workshops: A Mixed-Methods Evaluation for Users with Mental Disabilities",
+      "anio": "2026",
+      "doi": "10.3390/virtualworlds5010001",
+      "id_base": "WOS:001770465700001"
+    },
+    {
+      "id": "R143",
+      "fuente": "WoS",
+      "titulo": "A Survey of Advancements in Real-Time Sign Language Translators: Integration with IoT Technology",
+      "anio": "2023",
+      "doi": "10.3390/technologies11040083",
+      "id_base": "WOS:001056745800001"
+    },
+    {
+      "id": "R144",
+      "fuente": "WoS",
+      "titulo": "Deep learning super-resolution of paediatric ultra-low-field MRI without paired high-field scans",
+      "anio": "2026",
+      "doi": "10.1038/s41598-026-63077-y",
+      "id_base": "WOS:001882642100001"
+    },
+    {
+      "id": "R145",
+      "fuente": "WoS",
+      "titulo": "Towards Clinical Diagnoses: Classifying Alzheimer's Disease Using Single fMRI, Small Datasets, and Transfer Learning",
+      "anio": "2025",
+      "doi": "10.1002/brb3.70427",
+      "id_base": "WOS:001447787500001"
+    },
+    {
+      "id": "R146",
+      "fuente": "WoS",
+      "titulo": "Neurotechnology in Gaming: A Systematic Review of Visual Evoked Potential-Based Brain-Computer Interfaces",
+      "anio": "2025",
+      "doi": "10.1109/access.2025.3564328",
+      "id_base": "WOS:001481864700014"
+    },
+    {
+      "id": "R147",
+      "fuente": "WoS",
+      "titulo": "From data to discovery: Technology propels speech-language research and theory-building in developmental science",
+      "anio": "2025",
+      "doi": "10.1016/j.neubiorev.2025.106199",
+      "id_base": "WOS:001511272000001"
+    },
+    {
+      "id": "R148",
+      "fuente": "WoS",
+      "titulo": "Reimagining AAC designs for children during dynamic social situations by leveraging smart device design",
+      "anio": "2024",
+      "doi": "10.1080/07434618.2024.2434673",
+      "id_base": "WOS:001382850400001"
+    },
+    {
+      "id": "R149",
+      "fuente": "WoS",
+      "titulo": "Current status and future development of digital therapeutics",
+      "anio": "2024",
+      "doi": "10.5124/jkma.2024.67.2.76",
+      "id_base": "WOS:001166318100001"
+    },
+    {
+      "id": "R150",
+      "fuente": "WoS",
+      "titulo": "Subtle signals: Video-based detection of infant non-nutritive sucking as a neurodevelopmental cue",
+      "anio": "2024",
+      "doi": "10.1016/j.cviu.2024.104081",
+      "id_base": "WOS:001279087700001"
+    },
+    {
+      "id": "R151",
+      "fuente": "WoS",
+      "titulo": "Co-Designing and Evaluating a Digital Competencies Toolkit for Nursing Students",
+      "anio": "2026",
+      "doi": "10.1111/jan.70329",
+      "id_base": "WOS:001602693800001"
+    },
+    {
+      "id": "R152",
+      "fuente": "WoS",
+      "titulo": "RETRACTED: Aluminum in Neurological and Neurodegenerative Disease (Retracted Article)",
+      "anio": "2019",
+      "doi": "10.1007/s12035-018-1441-x",
+      "id_base": "WOS:000460470300054"
+    },
+    {
+      "id": "R153",
+      "fuente": "WoS",
+      "titulo": "The evolution of gene regulation in mammalian cerebellum development",
+      "anio": "2026",
+      "doi": "10.1126/science.adw9154",
+      "id_base": "WOS:001684303900007"
+    }
+  ]
+}
