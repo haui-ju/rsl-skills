@@ -15,7 +15,7 @@ Polishes the latest `paper-borrador.md` into **`paper-polish.md`** (clean, ready
 
 | State in `config.yml` | What this skill does |
 |---|---|
-| `frozen` | Validated by the user: copy byte for byte, never edit. It is also the **quality reference**: its register, precision and prose are the bar for every `on`/`rewrite` section of the run, so read it before writing and match it. |
+| `frozen` | Validated by the user: copy byte for byte, never edit. It is also the **quality reference**: its register, precision and prose are the bar for every `on`/`rewrite` section of the run, so read it before writing and match it. **Exception, the picoc mirror:** in `marco-pico`, `palabras-clave`, `ecuacion-busqueda` and `criterios-seleccion` the tables, the general question, the Scopus and Web of Science blocks and the CI/CE lists are always re-copied from the latest picoc (`paper:status` lists them under RESYNC); their prose stays untouched. |
 | `on` | **Base = this section as it stands in the previous version** (the new version starts as its copy); improve it, never throw it away. Keep what works; fix what is wrong (errors, contradictions, missing citations); refine the prose, the sense and the coherence of the words (R9). **Minimal diff**: keep every sentence that has no problem; a fix replaces a word or a clause; a citation goes inside the sentence it supports. Keep thesis, structure and wording. No polished text yet → polish from the borrador. **Re-polishing an already polished section = `on`.** |
 | `rewrite` | Discard the polished text and write the section again from the borrador and the sources; may reframe. First know **why it failed**: look for the reason in the latest `paper-debate.md` (decisions, Pendientes) or in the user's message; if it is not written, ask the user with AskQuestion (e.g. no tiene sentido · mal escrito o torpe · contenido incorrecto o incompleto · enfoque equivocado · otro) before writing. Record the reason in the debate; the new text must fix exactly that. |
 | `off` | Absent. |
@@ -51,9 +51,14 @@ Language per `formato.idioma` (Abstract/Resumen per `formato.resumen`); headings
 Contexto 3–5 short paragraphs · El problema 3–4 (arises from the previous → question → gap → contrast) · Justificación 2–4 · Objetivo de la RSL 2–3 · Organización 1 (coherent with the `on` groups).
 
 - Metodología: same content rules as the [Metodología template of rsl-make-paper](../rsl-make-paper/SKILL.md#metodología-template-draft); the polish only tightens the prose. What each section must report: `playbooks/estandares-rsl.md` (PRISMA 2020 item and Kitchenham y Charters page); a missing item in an `on` section is a finding for the critic.
-  - Tables, keywords, Scopus and Web of Science queries (with their filters) and CI/CE criteria stay as in the latest picoc.
+  - **Picoc mirror** (whatever the state, even `frozen`): the paper copies the latest picoc, never paraphrases it, and `pnpm -s paper:status docs/<slug> --picoc-sync` checks it.
+    - `marco-pico`: framework table = column `Concepto` of the picoc component table; general question verbatim as `> ¿…?`; RQ table = picoc RQs.
+    - `palabras-clave` (Tabla N `Componente | Palabras clave (ES) | Keywords (EN)`): the EN column lists **exactly the terms of that component's block in the query** (= column `Keywords` of the picoc component table), same order, wildcards and phrases as written (`neurodivers*`, `"large language model*"`), comma-separated, not one more, not one less. IEEE descriptors in `_italics_` (underscore: `*` is the wildcard). The ES column has one translation per EN term, same order and count, taken from the picoc `## Palabras clave` table when it has one (a wildcard is optional in Spanish; no commas inside a translation).
+    - `ecuacion-busqueda`: the Scopus and Web of Science blocks copied verbatim, filters included.
+    - `criterios-seleccion`: the picoc inclusion and exclusion bullets, same text and order, coded `**CI1:**…` / `**CE1:**…`.
+    - Frozen prose that no longer fits the new picoc (e.g. a sentence naming terms or counts) is reported in chat, not edited.
   - The framework justification cites Kitchenham y Charters (2007), the PRISMA paragraph cites Page et al. (2021) and the keywords cite the IEEE Thesaurus (IEEE, 2019) with the note under the table, all from `global/bibliography/bibliography.md` with the printed page of the catalog.
-  - User markers (`X`, `n = X`, `[[ … ]]`) are kept exactly; PRISMA counts only from `RSL/seleccion/`.
+  - User markers (`X`, `n = X`, `[[ … ]]` such as `[[ AGREGAR DIAGRAMA ]]`) are kept exactly; PRISMA counts only from `RSL/seleccion/`.
   - Length: framework justification 1–2 paragraphs; the PRISMA paragraphs (guideline, then process with the reviewer markers) plus the numbered steps.
 - Resultados / Discusión / Conclusión: only from `RSL/extraccion/`, per `format.results_by`.
 - Presentation (tables, figures, order) may imitate the recurring structure of `global/examples/` (one graph query); never their text.
@@ -61,31 +66,33 @@ Contexto 3–5 short paragraphs · El problema 3–4 (arises from the previous �
 
 ## Procedure
 
-1. `pnpm -s paper:status docs/<slug>`. `ERROR` → stop and report. Nothing in **A mejorar** / **A reescribir** → only run `--cites` on the latest polish, report STALE / BLOCKED, stop (no version, no debate block). If the header says `etapas cerradas: …polish` (the latest version already has a finished polish) → `pnpm -s paper:status docs/<slug> --new-version`. Work only on A mejorar / A reescribir; STALE and BLOCKED are reported untouched (`WARN picoc …` → suggest `Usa rsl-picoc sobre docs/<slug>/`).
+1. `pnpm -s paper:status docs/<slug>`. `ERROR` → stop and report. Nothing in **A mejorar** / **A reescribir** / **RESYNC** → only run `--cites` on the latest polish, report STALE / BLOCKED, stop (no version, no debate block). If the header says `etapas cerradas: …polish` (the latest version already has a finished polish) → `pnpm -s paper:status docs/<slug> --new-version`. Work only on A mejorar / A reescribir; STALE and BLOCKED are reported untouched (`WARN picoc …` → suggest `Usa rsl-picoc sobre docs/<slug>/`).
 2. For every `rewrite` section, get the reason it failed (see the state table) before anything else. Read once: the frozen sections first, as the quality reference, then the worked sections of the borrador (and of the current polish for `on`), the frozen neighbors, the picoc general question and RQs; with Metodología in the run, also `global/bibliography/bibliography.md`. Evidence only via `graphify query … --graph docs/<slug>/graphify-out/graph.json` or `pnpm graphify:bibliography:query "…"` (no refresh, no full PDFs).
 3. Agents in parallel (mode **sección**; prompt = the worked sections with their state, frozen neighbors as short context, the rules above; "no releer archivos completos"; at most 8 items each; web only to verify a claim):
    - Every prompt includes the state of each section, the reason for each `rewrite` and the frozen sections as the quality reference.
    - `critico-rsl` and `defensor-rsl` always. `critico-rsl` must return the **Sustento** table (R8); each row is resolved with a verified source (theme corpus, `global/bibliography/bibliography.md`, existing references) or by rephrasing the claim as the review's own decision. Never invent a source.
    - `impacto-social-rsl` only if `justificacion` or `objetivo-rsl` is being worked.
 4. Brief synthesis in chat; write the polished sections (frozen copied unchanged; Referencias rebuilt).
+   - **Picoc mirror:** re-copy the mirrored blocks of every Metodología section present (frozen included) from the latest picoc (see Polish rules), then `pnpm -s paper:status docs/<slug> --picoc-sync` until PASS. Never fix a difference by editing the picoc.
 5. `redaccion-rsl` on the worked sections (its **Calidad de prosa** table, R9: sense, precision, economy, elegance, judged on the text itself), with `pnpm -s redaccion:lint docs/<slug>/paper/<fecha>/paper-polish.md`; apply its fixes (form only) until its verdict is PASS: every paragraph OK in the **Hilo** table (R7: one intention, transition from the previous paragraph, need before tool) and in **Calidad de prosa** (R9), 0 FAIL and every WARN fixed or justified. Its answer must include the Hilo table and the rewritten paragraphs; if they are missing, relaunch it (never apply its summary by hand). After applying, run it again on the changed paragraphs. FAILs inside frozen sections are reported (suggest `on`); they do not block.
 6. `citas-rsl` with `pnpm -s paper:status docs/<slug> --cites` until PASS or justified `PENDIENTE`.
 7. Append a block to `paper-debate.md` (keep earlier blocks): date, worked sections, agents used, key decisions table, Redacción and Citas pass/fail.
-8. `pnpm -s paper:status docs/<slug> --update polish` (no FAIL).
+8. `pnpm -s paper:status docs/<slug> --update polish` (no FAIL; it refuses to register while `--picoc-sync` fails).
 9. Chat: changes, stale / blocked and gaps, then the Cierre line.
 
 ## Cierre
 
 The last message of the skill is exactly one line:
 
-- Stop at the first failure (any `paper:status` step returns `ERROR:`, or `redaccion:lint` / `--cites` keep failing in the worked sections): `ERROR: <mensaje del script o sección que no pasó>. <cómo arreglarlo>`. Do not continue with later steps.
+- Stop at the first failure (any `paper:status` step returns `ERROR:`, or `redaccion:lint` / `--cites` / `--picoc-sync` keep failing in the worked sections): `ERROR: <mensaje del script o sección que no pasó>. <cómo arreglarlo>`. Do not continue with later steps.
 - Everything went well: `OK: polish paper/<versión>/paper-polish.md (secciones: …; agentes: …). Próximo paso: congela en config.yml las secciones validadas, o Usa rsl-make-paper sobre docs/<slug>/ para los grupos pendientes`.
 
 ## Forbidden
 
 - Rewrite from scratch; editing previous versions, `paper-borrador.md`, informe, picoc or topic.
-- Editing frozen sections (except re-rendering citations if `formato.citas` changed), states in `config.yml`, `paper.shadow.yml` or `paper.state.jsonc`.
+- Editing frozen sections (except re-rendering citations if `formato.citas` changed and re-copying the picoc mirror), states in `config.yml`, `paper.shadow.yml` or `paper.state.jsonc`.
 - Generating off or BLOCKED sections; inventing PRISMA counts, search dates, results or DOI; replacing a user marker (`X`, `[[ … ]]`).
 - Deleting markers; `####` in the polish; raw debate inside `paper-polish.md`.
-- Delivering with `redaccion:lint` FAIL in worked sections or `--cites` FAIL.
+- Delivering with `redaccion:lint` FAIL in worked sections, `--cites` FAIL or `--picoc-sync` FAIL.
+- A keyword table or query that paraphrases, abridges or extends the picoc.
 - Refreshing Graphify; copying from `global/examples/`.

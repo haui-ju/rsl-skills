@@ -10,6 +10,7 @@ Uso:
   python3 scripts/paper-manifest.py docs/<slug> --update polish    # registra hashes tras escribir paper-polish.md
   python3 scripts/paper-manifest.py docs/<slug> --cites [archivo]  # citas en texto vs referencias (format.citation)
   python3 scripts/paper-manifest.py docs/<slug> --picoc            # marco configurado + último picoc/<fecha>-<MARCO>/picoc.md
+  python3 scripts/paper-manifest.py docs/<slug> --picoc-sync [archivo]  # tablas, keywords, queries y criterios == último picoc
 
 config.yml lo edita el usuario (frozen / on / rewrite / off + formato).
 paper.shadow.yml: títulos, grupos, depends_on y formato avanzado.
@@ -26,6 +27,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import paper_picoc_sync as sync  # noqa: E402
 import picoc_versions  # noqa: E402
 from rsl_out import Fail, error, ok, run  # noqa: E402
 
@@ -110,7 +112,8 @@ sections:
 
 HUMAN_HEADER = """\
 # Qué hacer con cada sección en la próxima corrida de rsl-make-paper / rsl-polish-paper:
-#   frozen   -> está bien: no se toca, se copia tal cual (si cambia su fuente, se avisa como 'stale')
+#   frozen   -> está bien: no se toca, se copia tal cual (si cambia su fuente, se avisa como 'stale'),
+#               salvo tablas, keywords, queries y criterios de Metodología, que siempre se copian del último picoc
 #   on       -> revisar y mejorar: se conserva la base y se corrige / pule
 #   rewrite  -> reescribir: se replantea desde cero a partir de las fuentes
 #   off      -> inactivo: no se genera ni aparece
@@ -162,6 +165,10 @@ def sha(data: bytes) -> str:
 
 def text_hash(s: str) -> str:
     return sha(s.strip().encode("utf-8"))
+
+
+def prose_hash(sid: str, s: str) -> str:
+    return text_hash(sync.prose_only(sid, s))
 
 
 class Paper:
@@ -460,7 +467,7 @@ def cmd_new_version(p: Paper) -> int:
     if c["errors"]:
         report(p)
         return frozen_error(c)
-    if not c["improve"] and not c["rewrite"]:
+    if not c["improve"] and not c["rewrite"] and not c["resync"]:
         report(p)
         return error("nada que generar: ninguna sección está en on o rewrite (no se creó versión)", "pon en on o rewrite las secciones a trabajar en config.yml")
     prev = p.latest()
@@ -477,7 +484,7 @@ def cmd_new_version(p: Paper) -> int:
     p.state["versions"][name] = {"from": prev, "borrador": False, "polish": False}
     p.save_state()
     c = report(p)
-    return ok(f"versión paper/{name}/ creada (copia de {prev or 'nada'}); a mejorar: {', '.join(c['improve']) or '—'}; a reescribir: {', '.join(c['rewrite']) or '—'}",
+    return ok(f"versión paper/{name}/ creada (copia de {prev or 'nada'}); a mejorar: {', '.join(c['improve']) or '—'}; a reescribir: {', '.join(c['rewrite']) or '—'}; re-sincronizar con picoc: {', '.join(c['resync']) or '—'}",
               "escribir esas secciones en paper-borrador.md (rsl-make-paper) o pulirlas (rsl-polish-paper)")
 
 
@@ -495,6 +502,16 @@ def cmd_update(p: Paper, stage: str) -> int:
     if pre["errors"]:
         report(p)
         return frozen_error(pre)
+    synced: set[str] = set()
+    _, pf, pstate = picoc_versions.status(p.theme)
+    if pstate == "OK":
+        issues, present = sync.check(found, pf)
+        if issues:
+            for i in issues:
+                print(f"  - {i}")
+            return error(f"paper/{v}/{FILES[stage]} no copia el último picoc ({p.rel(pf)}): {len(issues)} diferencia(s); no se registró nada",
+                         "copia del picoc las tablas, keywords, queries y criterios (aunque la sección esté frozen) y vuelve a correr --picoc-sync")
+        synced = set(present)
     by_id = {s["id"]: s for s in p.sections}
     unknown = []
     for sid, content in found.items():
@@ -504,13 +521,16 @@ def cmd_update(p: Paper, stage: str) -> int:
             continue
         st = p.state["sections"].setdefault(sid, {})
         st.setdefault("content_hash", {})[stage] = text_hash(content)
+        if sid in sync.MIRRORED:
+            st.setdefault("prose_hash", {})[stage] = prose_hash(sid, content)
         st["version"] = v
         if not sec.get("frozen"):
             st["sources_hash"] = p.sources(sec)
             st["status"] = "polished" if stage == "polish" else "borrador"
         else:
             old = st.get("sources_hash", {})
-            st["sources_hash"] = {d: old.get(d, h) for d, h in p.sources(sec).items()}
+            new = p.sources(sec)
+            st["sources_hash"] = {d: (h if d == "picoc" and sid in synced else old.get(d, h)) for d, h in new.items()}
     if unknown:
         raise Fail(f"paper/{v}/{FILES[stage]} tiene secciones que no existen en paper.shadow.yml: {', '.join(unknown)}", "usa los ids de paper.shadow.yml (no se registró nada)")
     p.state["versions"].setdefault(v, {})[stage] = True
@@ -528,7 +548,7 @@ def frozen_error(c: dict) -> int:
 def classify(p: Paper) -> dict:
     v = p.latest()
     current = {st: (p.read_sections(v, st) if v else {}) for st in FILES}
-    rows, improve, rewrite, blocked, stale, errors = [], [], [], [], [], []
+    rows, improve, rewrite, blocked, stale, resync, errors = [], [], [], [], [], [], []
     for sec in p.sections:
         sid = sec["id"]
         st = p.state["sections"].get(sid, {})
@@ -543,13 +563,22 @@ def classify(p: Paper) -> dict:
             status = "blocked"
             blocked.append(f"{sid} (falta {', '.join(missing)})")
         elif sec.get("frozen"):
-            status = "stale" if changed else st.get("status", "pending")
-            if changed:
-                stale.append(f"{sid} ({', '.join(changed)})")
+            mirrored = sid in sync.MIRRORED
+            other = [d for d in changed if not (mirrored and d == "picoc")]
+            status = "stale" if other else "resync (picoc)" if changed else st.get("status", "pending")
+            if other:
+                stale.append(f"{sid} ({', '.join(other)})")
+            if mirrored and "picoc" in changed:
+                resync.append(sid)
             for stage, secs in current.items():
                 h = st.get("content_hash", {}).get(stage)
-                if h and sid in secs and text_hash(secs[sid]) != h:
-                    errors.append(f"frozen '{sid}' fue editado en paper/{v}/{FILES[stage]}")
+                if not h or sid not in secs or text_hash(secs[sid]) == h:
+                    continue
+                if mirrored:
+                    ref = st.get("prose_hash", {}).get(stage) or legacy_prose_hash(p, sid, stage, h, v)
+                    if ref is None or prose_hash(sid, secs[sid]) == ref:
+                        continue
+                errors.append(f"frozen '{sid}' fue editado en paper/{v}/{FILES[stage]}" + (" (fuera de sus tablas, queries y criterios)" if mirrored else ""))
         elif sec["estado"] == "rewrite" or not any(sid in secs for secs in current.values()):
             status = "reescribir" if sec["estado"] == "rewrite" else "reescribir (nueva)"
             rewrite.append(sid)
@@ -558,7 +587,21 @@ def classify(p: Paper) -> dict:
             improve.append(sid)
         rows.append((sid, sec.get("estado", "auto"), status, ", ".join(changed) or "—", st.get("version", "—")))
     return {"version": v, "current": current, "rows": rows, "improve": improve, "rewrite": rewrite,
-            "blocked": blocked, "stale": stale, "errors": errors}
+            "blocked": blocked, "stale": stale, "resync": resync, "errors": errors}
+
+
+def legacy_prose_hash(p: Paper, sid: str, stage: str, h: str, v: str | None) -> str | None:
+    """Estado anterior al hash de prosa: lo deriva del texto registrado (versión de la sección o la de origen)."""
+    for cand in (p.state["sections"].get(sid, {}).get("version"), p.state["versions"].get(v, {}).get("from") if v else None):
+        if not cand or cand == v or not (p.dir / cand).is_dir():
+            continue
+        try:
+            txt = p.read_sections(cand, stage).get(sid)
+        except Fail:
+            continue
+        if txt is not None and text_hash(txt) == h:
+            return prose_hash(sid, txt)
+    return None
 
 
 def report(p: Paper) -> dict:
@@ -574,6 +617,8 @@ def report(p: Paper) -> dict:
         print("| " + " | ".join(r) + " |")
     print(f"\nA mejorar (on): {', '.join(improve) or '—'}")
     print(f"A reescribir (rewrite): {', '.join(rewrite) or '—'}")
+    if c["resync"]:
+        print(f"RESYNC (frozen: la prosa no se toca; tablas, keywords, queries y criterios se copian del último picoc): {', '.join(c['resync'])}")
     if c["stale"]:
         print(f"STALE (frozen, no se tocan; decide si descongelar): {'; '.join(c['stale'])}")
     if c["blocked"]:
@@ -581,6 +626,11 @@ def report(p: Paper) -> dict:
     marco, pf, pstate = picoc_versions.status(p.theme)
     if pstate != "OK":
         print(f"WARN picoc {pstate}: marco configurado {marco} · último {p.rel(pf) if pf else '—'} → correr rsl-picoc (las secciones que dependen de picoc quedan BLOCKED)")
+    else:
+        latest_secs = current["polish"] or current["borrador"]
+        issues, _ = sync.check(latest_secs, pf)
+        if issues:
+            print(f"WARN picoc-sync: {len(issues)} diferencia(s) con {p.rel(pf)} → pnpm -s paper:status {p.rel(p.theme)} --picoc-sync")
     marco_sec = next((secs["marco-pico"] for secs in (current["polish"], current["borrador"]) if "marco-pico" in secs), None)
     if marco_sec is not None and not re.search(rf"\b{marco}\b", marco_sec):
         print(f"WARN marco-pico no nombra el marco configurado ({marco})")
@@ -593,6 +643,8 @@ def cmd_status(p: Paper) -> int:
     if c["errors"]:
         return frozen_error(c)
     parts = [f"{len(c['improve'])} a mejorar", f"{len(c['rewrite'])} a reescribir"]
+    if c["resync"]:
+        parts.append(f"{len(c['resync'])} a re-sincronizar con picoc")
     if c["stale"]:
         parts.append(f"{len(c['stale'])} stale")
     if c["blocked"]:
@@ -618,9 +670,7 @@ def split_refs(text: str) -> tuple[str, list[str], bool]:
     return body, refs, False
 
 
-def cmd_cites(p: Paper, target: str | None) -> int:
-    p.load()
-    style = p.cfg.get("format", {}).get("citation", "apa7").lower()
+def target_file(p: Paper, target: str | None) -> tuple[Path, str]:
     if target:
         f = Path(target)
         if not f.exists() and (p.theme / target).exists():
@@ -633,9 +683,15 @@ def cmd_cites(p: Paper, target: str | None) -> int:
     if f.is_dir():
         raise Fail(f"{target} es una carpeta, no un archivo", "indica el .md a revisar")
     try:
-        text = f.read_text(encoding="utf-8")
+        return f, f.read_text(encoding="utf-8")
     except UnicodeDecodeError:
         raise Fail(f"{f} no está en UTF-8", "guárdalo como UTF-8")
+
+
+def cmd_cites(p: Paper, target: str | None) -> int:
+    p.load()
+    style = p.cfg.get("format", {}).get("citation", "apa7").lower()
+    f, text = target_file(p, target)
     body, refs, from_table = split_refs(text)
     issues: list[str] = []
     if style == "ieee":
@@ -688,7 +744,27 @@ def cmd_picoc(p: Paper) -> int:
     return ok(f"marco {marco} al día ({p.rel(f)})")
 
 
-USAGE = "uso: paper:status docs/<slug> [--init | --migrate | --new-version | --update borrador|polish | --cites [archivo] | --picoc]"
+def cmd_picoc_sync(p: Paper, target: str | None) -> int:
+    p.load()
+    marco, pf, state = picoc_versions.status(p.theme)
+    if state != "OK":
+        return error(f"picoc {state}: no hay un picoc {marco} con el que comparar", f"corre rsl-picoc (siguiente versión: {p.rel(picoc_versions.next_dir(p.theme, marco))}/)")
+    f, text = target_file(p, target)
+    secs = {m.group(1): m.group(2) for m in SECTION_RE.finditer(text)}
+    if not secs:
+        raise Fail(f"{p.rel(f)} no tiene marcadores <!-- paper:section id=… -->", "envuelve cada sección con sus marcadores")
+    issues, present = sync.check(secs, pf)
+    if not present:
+        return ok(f"{p.rel(f)} no tiene secciones que copien el picoc ({', '.join(sync.MIRRORED)})")
+    if issues:
+        for i in issues:
+            print(f"  - {i}")
+        return error(f"{p.rel(f)} no copia {p.rel(pf)}: {len(issues)} diferencia(s) (ver detalle arriba)",
+                     "copia del picoc las tablas, keywords (EN = términos de la query; ES = una traducción por término), queries y criterios, aunque la sección esté frozen")
+    return ok(f"{p.rel(f)} copia {p.rel(pf)} ({', '.join(present)})")
+
+
+USAGE = "uso: paper:status docs/<slug> [--init | --migrate | --new-version | --update borrador|polish | --cites [archivo] | --picoc-sync [archivo] | --picoc]"
 
 
 def main(argv: list[str]) -> int:
@@ -723,6 +799,10 @@ def main(argv: list[str]) -> int:
             if len(extra) > 1:
                 raise Fail("--cites acepta un solo archivo", USAGE, 2)
             return cmd_cites(p, extra[0] if extra else None)
+        if flag == "--picoc-sync":
+            if len(extra) > 1:
+                raise Fail("--picoc-sync acepta un solo archivo", USAGE, 2)
+            return cmd_picoc_sync(p, extra[0] if extra else None)
         if flag == "--picoc":
             return cmd_picoc(p)
     except picoc_versions.MarcoError as e:

@@ -15,7 +15,7 @@ Writes the **rich draft** as a new version `paper/<fecha>/paper-borrador.md`. Si
 
 | State in `config.yml` | What this skill does |
 |---|---|
-| `frozen` | Validated by the user: copy byte for byte, never edit. It is also the **quality reference**: its register, precision and prose are the bar for every `on`/`rewrite` section of the run, so read it before writing and match it. |
+| `frozen` | Validated by the user: copy byte for byte, never edit. It is also the **quality reference**: its register, precision and prose are the bar for every `on`/`rewrite` section of the run, so read it before writing and match it. **Exception, the picoc mirror:** the tables, general question, queries and CI/CE lists of the Metodología are always re-copied from the latest picoc (RESYNC in `paper:status`); the prose stays untouched. |
 | `on` | **Base = this section in the previous version**; improve it (fix, fill gaps, add evidence, continuity, prose and sense per R9), keeping what works; never rewrite from scratch. No previous text → generated (`reescribir (nueva)`). |
 | `rewrite` | Ignore the previous text; regenerate from the sources. First know **why it failed**: look for the reason in the latest `paper-debate.md` (decisions, Pendientes) or in the user's message; if it is not written, ask the user with AskQuestion (e.g. no tiene sentido · mal escrito o torpe · contenido incorrecto o incompleto · enfoque equivocado · otro) before writing. Record the reason in the debate; the new text must fix exactly that. |
 | `off` | Absent. |
@@ -34,7 +34,7 @@ Invoke: `Usa rsl-make-paper sobre docs/<slug>/`.
 ## Procedure
 
 1. No `config.yml` → `pnpm -s paper:status docs/<slug> --init`; old `paper/paper.yml` or old format → `--migrate`. Any `ERROR` (e.g. unknown letter in `formato.marco`) → stop and report it.
-2. `pnpm -s paper:status docs/<slug> --new-version`. It creates `paper/<fecha>/` (copy of the previous version) only if something is `on`/`rewrite`; otherwise it says so → report STALE / BLOCKED and stop. Work **only** on **A mejorar** and **A reescribir**. **STALE** frozen sections: do not touch (the user decides). **BLOCKED**: do not generate; say what is missing (`WARN picoc …` → suggest `Usa rsl-picoc sobre docs/<slug>/`; `RSL/extraccion` → user data).
+2. `pnpm -s paper:status docs/<slug> --new-version`. It creates `paper/<fecha>/` (copy of the previous version) only if something is `on`/`rewrite`; otherwise it says so → report STALE / BLOCKED and stop. Work **only** on **A mejorar** and **A reescribir**, plus the picoc mirror of the **RESYNC** sections. **STALE** frozen sections: do not touch (the user decides). **BLOCKED**: do not generate; say what is missing (`WARN picoc …` → suggest `Usa rsl-picoc sobre docs/<slug>/`; `RSL/extraccion` → user data).
 3. For every `rewrite` section, get the reason it failed (see the state table). Inputs, read once: ficha, the latest picoc (path printed by `paper:status`), `topic.md`, and the frozen sections of the new version (coherence and quality reference: match their register and prose).
 4. Evidence, graph first (no full PDFs, no refresh):
    - `graphify query "<tema de la sección>" --graph docs/<slug>/graphify-out/graph.json` + `RSL/MD/` locators `[PDF p.N]`.
@@ -44,12 +44,12 @@ Invoke: `Usa rsl-make-paper sobre docs/<slug>/`.
 6. Content per group:
    - **Introducción:** template below. For each anchor SLR: what it covers, n/DOI, what it does not cover (= gap). Every extra paragraph adds citation, delimitation, metric, ethics or SE-process detail; no stubs.
    - **Preguntas:** the picoc general question = problemática = § 1.2 (verbatim in the encabezado and in El problema 2.4, as an interrogative); its RQs give one specific objective each in Objetivo de la RSL and structure Organización. No new RQ.
-   - **Metodología:** tables, RQs, keywords, queries and criteria of the latest picoc **as they are**; section by section in [Metodología template](#metodología-template-draft).
+   - **Metodología:** tables, RQs, keywords, queries and criteria of the latest picoc **as they are** (the picoc mirror, whatever the section state); section by section in [Metodología template](#metodología-template-draft). Then `pnpm -s paper:status docs/<slug> --picoc-sync paper/<fecha>/paper-borrador.md` until PASS.
    - **Resultados / Discusión / Conclusión:** only from `RSL/extraccion/`, by RQ or theme (`format.results_by`).
    - **Abstract / Resumen:** only when content sections exist; keywords = the `## Keywords` table of the latest picoc as it is (EN column in the Abstract, ES column in the Resumen; never add or drop one).
 7. `citas-rsl` on the worked sections only: `pnpm -s paper:status docs/<slug> --cites paper/<fecha>/paper-borrador.md` + its fixes until PASS or justified `PENDIENTE`.
 8. `pnpm -s redaccion:lint docs/<slug>/paper/<fecha>/paper-borrador.md` and a self-check of R7 (one intention per paragraph, transitions) and R8 (important claims cited with verified sources; never "el lector") and R9 (prose with sense, precision, economy and elegance) → 0 FAIL in the worked sections (WARN allowed in the draft). FAILs inside frozen sections are reported (suggest `on`); they do not block.
-9. `pnpm -s paper:status docs/<slug> --update borrador`.
+9. `pnpm -s paper:status docs/<slug> --update borrador` (it refuses to register while `--picoc-sync` fails).
 10. Chat: copied sections and the citas result, then the Cierre line.
 
 ## Writing
@@ -109,13 +109,15 @@ Thread (R7 of `playbooks/redaccion-academica.md`): each section opens by picking
 - **`marco-pico`**
   - One paragraph that names the framework of the latest picoc with its components in words (e.g. "Se adoptó el marco PICOC (población, intervención, comparación, resultado y contexto)…").
   - Justify it in two or three sentences with the catalog source: Kitchenham y Charters (2007, p. 11) adopt PICOC for software engineering from Petticrew y Roberts (never attribute the framework itself to Kitchenham). Say why each added component applies to this theme. With a framework other than PICOC, say what it drops or adds (e.g. PICO drops the context, PICOCT adds the time window) and why; without T, the time window is an inclusion criterion.
-  - Then: the component table (`Tabla N — Marco <MARCO>`: one column per letter, the concept of each component), the general question (verbatim, as an interrogative) and the RQ table (`Componente | Código | Pregunta`).
+  - Then: the component table (`Tabla N — Marco <MARCO>`: one column per letter, the concept of each component = column `Concepto` of the picoc component table, verbatim), the general question (verbatim, as an interrogative in a `> ` quote) and the RQ table (`Componente | Código | Pregunta`, picoc RQs verbatim).
 - **`palabras-clave`**
-  - The `## Palabras clave` table of the latest picoc as it is: `Componente | Palabras clave (ES) | Keywords (EN)`, grouped by component; IEEE descriptors in italics in the EN column.
+  - Table `Componente | Palabras clave (ES) | Keywords (EN)`, one row per component (no T).
+  - **Keywords (EN) = exactly the terms of that component's block in the query**, i.e. the column `Keywords` of the picoc component table (`Tabla de componentes (1:1 con las queries)`): same order, wildcards and phrases as written (`neurodivers*`, `"large language model*"`), comma-separated, not one more, not one less. IEEE descriptors (those with a page in the picoc) in `_italics_` with underscores, because `*` is the wildcard.
+  - **Palabras clave (ES)** = one translation per EN term, same order and count (a wildcard is optional in Spanish; no commas inside a translation). Take the wording from the picoc `## Palabras clave` table; it is only the translation source, never the list of terms.
   - One sentence says that the terms combine descriptors of the IEEE Thesaurus, cited as (Institute of Electrical and Electronics Engineers [IEEE], 2019), and free terms (Kitchenham y Charters, 2007, p. 14: indexing terms of the databases).
   - Under the table, one note: `*Nota.* En cursiva, descriptores del IEEE Thesaurus (IEEE, 2019); el resto son términos libres.` No per-term pages (they stay in the picoc). Reference entry from the catalog (`ieee-2019-thesaurus`).
 - **`ecuacion-busqueda`**
-  - Only Scopus and Web of Science, one code block each, copied from the picoc with their filters. Other bases of the picoc (IEEE Xplore, the auxiliary search) do not go into the paper.
+  - Only Scopus and Web of Science, one code block each, copied verbatim from the picoc with their filters (never abridged or extended). Other bases of the picoc (IEEE Xplore, the auxiliary search) do not go into the paper.
   - One sentence on the Boolean logic (OR inside a component, AND between components). If the two bases search different fields (e.g. `TITLE-ABS-KEY` vs `ALL=`), justify it. One sentence says that the equations carry the limits of the inclusion criteria (period, document type, language, open access) so the search is documented and repeatable (Kitchenham y Charters, 2007, p. 16); a filter the base only offers in its interface (Web of Science open access) is named as such.
   - Close with `Tabla N — Búsqueda por base de datos`: `Base | Fecha de búsqueda | Años | Campos | Filtros | Registros`, one row per base (Scopus, Web of Science). Years, fields and filters from the equations; date and records are user markers (`X`, `n = X`), never filled in.
 - **`criterios-seleccion`**
@@ -161,7 +163,7 @@ The last message of the skill is exactly one line:
 ## Forbidden
 
 - Polish agents (only `citas-rsl`).
-- Editing previous versions, frozen/off sections, states in `config.yml`, `paper.shadow.yml` or `paper.state.jsonc`.
+- Editing previous versions, frozen/off sections (except re-copying the picoc mirror), states in `config.yml`, `paper.shadow.yml` or `paper.state.jsonc`.
 - Generating BLOCKED sections; inventing PRISMA counts (without `RSL/seleccion/` they are `X`), search dates, results, citations or DOI; replacing a user marker (`X`, `[[ … ]]`).
 - Bases other than Scopus and Web of Science in `ecuacion-busqueda`.
 - Deleting or renaming section markers; editing `informe*.md`, `picoc/` or `topic.md`.

@@ -7,7 +7,7 @@
         "borrador": "becd63baf4e1",
         "polish": "d4380bab31f5"
       },
-      "version": "2026-09-28-5",
+      "version": "2026-09-29",
       "sources_hash": {
         "topic.md": "b2bcfb779775",
         "informe-polish.md": "cc1997a5b60d",
@@ -20,7 +20,7 @@
         "borrador": "9275c27e1b79",
         "polish": "0a009831199c"
       },
-      "version": "2026-09-28-5",
+      "version": "2026-09-29",
       "sources_hash": {
         "RSL/MD": "ec05ded1dbef"
       },
@@ -31,7 +31,7 @@
         "borrador": "6755b22be5c0",
         "polish": "4ebbd870f641"
       },
-      "version": "2026-09-28-5",
+      "version": "2026-09-29",
       "sources_hash": {
         "picoc": "e106c9124351"
       },
@@ -42,7 +42,7 @@
         "borrador": "ef9a2b99a52e",
         "polish": "a99768828db1"
       },
-      "version": "2026-09-28-5",
+      "version": "2026-09-29",
       "sources_hash": {
         "informe-polish.md": "cc1997a5b60d"
       },
@@ -51,11 +51,11 @@
     "objetivo-rsl": {
       "content_hash": {
         "borrador": "16879d667612",
-        "polish": "4f756a75cbe6"
+        "polish": "7efbde70065f"
       },
-      "version": "2026-09-28-5",
+      "version": "2026-09-29",
       "sources_hash": {
-        "picoc": "b702266d9aac"
+        "picoc": "64d97772e52d"
       },
       "status": "polished"
     },
@@ -64,7 +64,7 @@
         "borrador": "feb56ec9af3d",
         "polish": "d0cc5c433df7"
       },
-      "version": "2026-09-28-5",
+      "version": "2026-09-29",
       "sources_hash": {
         "grupos": "ae7b799633fe"
       },
@@ -75,61 +75,73 @@
         "borrador": "8376ef33b383",
         "polish": "9058a0b0d336"
       },
-      "version": "2026-09-28-5",
+      "version": "2026-09-29",
       "sources_hash": {},
       "status": "polished"
     },
     "marco-pico": {
       "content_hash": {
         "borrador": "dc870a2cb788",
-        "polish": "fc64ae5f3812"
+        "polish": "6f49cee24af8"
       },
-      "version": "2026-09-28-5",
+      "version": "2026-09-29",
       "sources_hash": {
-        "picoc": "b702266d9aac"
+        "picoc": "64d97772e52d"
       },
-      "status": "polished"
+      "status": "polished",
+      "prose_hash": {
+        "polish": "8ecd36d3ee72"
+      }
     },
     "palabras-clave": {
       "content_hash": {
         "borrador": "5cffcd8a0250",
-        "polish": "706d3e18544c"
+        "polish": "0a53d63bf3cd"
       },
-      "version": "2026-09-28-5",
+      "version": "2026-09-29",
       "sources_hash": {
-        "picoc": "b702266d9aac"
+        "picoc": "64d97772e52d"
       },
-      "status": "polished"
+      "status": "polished",
+      "prose_hash": {
+        "polish": "b5b380733447"
+      }
     },
     "ecuacion-busqueda": {
       "content_hash": {
         "borrador": "57aa794bbbf7",
-        "polish": "feae2189f0c8"
+        "polish": "616350894ddf"
       },
-      "version": "2026-09-28-5",
+      "version": "2026-09-29",
       "sources_hash": {
-        "picoc": "b702266d9aac"
+        "picoc": "64d97772e52d"
       },
-      "status": "polished"
+      "status": "polished",
+      "prose_hash": {
+        "polish": "f2fa9c6d9129"
+      }
     },
     "criterios-seleccion": {
       "content_hash": {
         "borrador": "e68857e11eb5",
-        "polish": "c867aa5dc6af"
+        "polish": "3f585002e3e4"
       },
-      "version": "2026-09-28-5",
+      "version": "2026-09-29",
       "sources_hash": {
         "topic.md": "b2bcfb779775",
-        "picoc": "b702266d9aac"
+        "picoc": "64d97772e52d"
       },
-      "status": "polished"
+      "status": "polished",
+      "prose_hash": {
+        "polish": "f1d15dec5f1c"
+      }
     },
     "seleccion-prisma": {
       "content_hash": {
         "borrador": "cb044dfdb952",
         "polish": "4846bae4cd7d"
       },
-      "version": "2026-09-28-5",
+      "version": "2026-09-29",
       "sources_hash": {
         "picoc": "5db27122c711"
       },
@@ -168,6 +180,11 @@
     },
     "2026-09-28-5": {
       "from": "2026-09-28-4",
+      "borrador": false,
+      "polish": true
+    },
+    "2026-09-29": {
+      "from": "2026-09-28-5",
       "borrador": false,
       "polish": true
     }

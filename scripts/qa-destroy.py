@@ -1000,6 +1000,57 @@ def _(sb):
     sb.run(["paper", t], "OK", lacks="seleccion-prisma (falta")
 
 
+def metodologia(picoc: Path, extra_term: str | None = None) -> str:
+    """palabras-clave + ecuacion-busqueda copiadas del picoc (espejo), con prosa fija."""
+    sys.path.insert(0, str(ROOT / "scripts"))
+    import paper_picoc_sync as s
+    m = s.mirror(picoc)
+    rows = []
+    for c, ts in m["keywords"].items():
+        en = ts + ([extra_term] if extra_term and c == "P" else [])
+        rows.append(f"| {c} | {', '.join(f'término {i + 1}' for i in range(len(en)))} | {', '.join(en)} |")
+    return ("<!-- paper:section id=palabras-clave -->\n### B. Palabras clave pertinentes\n\nProsa fija de las palabras clave.\n\n"
+            "| Componente | Palabras clave (ES) | Keywords (EN) |\n|---|---|---|\n" + "\n".join(rows) + "\n<!-- /paper:section -->\n\n"
+            "<!-- paper:section id=ecuacion-busqueda -->\n### C. Ecuación de búsqueda\n\nProsa fija de la ecuación.\n\n"
+            f"**Scopus**\n\n```text\n{m['queries']['Scopus']}```\n\n**Web of Science**\n\n```text\n{m['queries']['Web of Science']}```\n"
+            "<!-- /paper:section -->\n\n")
+
+
+@case("M21", "orden", "picoc nuevo con keywords frozen en el paper: RESYNC, --picoc-sync y --update fallan hasta copiar el picoc; la prosa frozen sigue protegida")
+def _(sb):
+    t = sb.theme(borrador=True)
+    v = sb.versions(t)[-1]
+    f = t / "paper" / v / "paper-borrador.md"
+    first = next((t / "picoc").iterdir()) / "picoc.md"
+    ref = "<!-- paper:section id=referencias -->"
+    base = f.read_text(encoding="utf-8")
+    f.write_text(base.replace(ref, metodologia(first) + ref), encoding="utf-8")
+    sb.set_yml(t, r"^(  palabras-clave:\s*)off", r"\g<1>on")
+    sb.set_yml(t, r"^(  ecuacion-busqueda:\s*)off", r"\g<1>on")
+    sb.run(["paper", t, "--picoc-sync", f"paper/{v}/paper-borrador.md"], "OK", has="palabras-clave, ecuacion-busqueda")
+    sb.run(["paper", t, "--update", "borrador"], "OK", quiet=True)
+    sb.set_yml(t, r"^(  palabras-clave:\s*)on", r"\g<1>frozen")
+    sb.set_yml(t, r"^(  ecuacion-busqueda:\s*)on", r"\g<1>frozen")
+    new = sb.add_picoc(t, "PICOCT", f"{TODAY}-2-PICOCT")
+    txt = new.read_text(encoding="utf-8")
+    txt = txt.replace('`"cognitive accessibility"` |', '`"cognitive accessibility"` · `Asperger` |')
+    txt = txt.replace('dyslexi* OR "cognitive accessibility" )', 'dyslexi* OR "cognitive accessibility" OR Asperger )')
+    txt = txt.replace('dyslexi* OR "cognitive accessibility")', 'dyslexi* OR "cognitive accessibility" OR Asperger)')
+    new.write_text(txt, encoding="utf-8")
+    f.write_text(base.replace(ref, metodologia(first, '"autism disorder"') + ref), encoding="utf-8")
+    sb.run(["paper", t], "OK", has="RESYNC")
+    sb.run(["paper", t], "OK", has="WARN picoc-sync", lacks="fue editado")
+    st = sb.run(["paper", t, "--picoc-sync", f"paper/{v}/paper-borrador.md"], "ERROR", has="-asperger")
+    sb.check("+autism disorder" in st.output and "[Scopus]" in st.output, "--picoc-sync no reporta el término sobrante ni la query de Scopus desfasada")
+    sb.run(["paper", t, "--update", "borrador"], "ERROR", has="no copia")
+    f.write_text(base.replace(ref, metodologia(new) + ref), encoding="utf-8")
+    sb.run(["paper", t, "--picoc-sync", f"paper/{v}/paper-borrador.md"], "OK")
+    sb.run(["paper", t, "--update", "borrador"], "OK", quiet=True)
+    sb.run(["paper", t], "OK", lacks="RESYNC")
+    f.write_text(f.read_text(encoding="utf-8").replace("Prosa fija de las palabras clave.", "Prosa cambiada."), encoding="utf-8")
+    sb.run(["paper", t], "ERROR", has="fuera de sus tablas")
+
+
 @case("K07", "marco", "redaccion:lint acepta n = X y [[ AGREGAR DIAGRAMA ]] como marcadores del usuario, pero sigue fallando con TODO y con apelaciones a «el lector» (no con «lector de pantalla»)")
 def _(sb):
     f = sb.base / "metodo.md"
