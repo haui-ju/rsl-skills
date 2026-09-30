@@ -18,7 +18,7 @@ export function FlowArrow({ direction, className }: FlowArrowProps) {
       )}
     >
       <span
-        className={cn('bg-current', isDown ? 'w-0.5 flex-1' : 'h-0.5 flex-1')}
+        className={cn('bg-current', isDown ? 'w-px flex-1' : 'h-px flex-1')}
       />
       <svg
         viewBox={isDown ? '0 0 12 10' : '0 0 10 12'}

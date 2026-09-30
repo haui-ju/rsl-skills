@@ -5,93 +5,93 @@
     "encabezado": {
       "content_hash": {
         "borrador": "becd63baf4e1",
-        "polish": "4d275903c8ee"
+        "polish": "8f4a4603da57"
       },
-      "version": "2026-09-29-4",
+      "version": "2026-09-29-5",
       "sources_hash": {
         "topic.md": "b2bcfb779775",
-        "informe-polish.md": "cc1997a5b60d",
+        "informe-polish.md": "9d2b511d546e",
         "picoc": "0b7356e54b6d"
       },
       "status": "polished",
       "form_hash": {
-        "polish": "3a38c742c807"
+        "polish": "5c3c041a57a7"
       },
       "mirror_form": {
-        "polish": "6da6546ac8b3"
+        "polish": "e06ab4b47a79"
       }
     },
     "contexto": {
       "content_hash": {
         "borrador": "9275c27e1b79",
-        "polish": "a0654dac0232"
+        "polish": "323ec7685a69"
       },
-      "version": "2026-09-29-4",
+      "version": "2026-09-29-5",
       "sources_hash": {
         "RSL/MD": "ec05ded1dbef"
       },
       "status": "polished",
       "form_hash": {
-        "polish": "0c602a3728e0"
+        "polish": "f38cc66d6262"
       }
     },
     "problema": {
       "content_hash": {
         "borrador": "6755b22be5c0",
-        "polish": "b82019d47f81"
+        "polish": "d0dc0fec7c25"
       },
-      "version": "2026-09-29-4",
+      "version": "2026-09-29-5",
       "sources_hash": {
         "picoc": "0b7356e54b6d"
       },
       "status": "polished",
       "form_hash": {
-        "polish": "a98761b7e5af"
+        "polish": "2a3000a02b04"
       },
       "mirror_form": {
-        "polish": "1508d2229863"
+        "polish": "7d045b10e96b"
       }
     },
     "justificacion": {
       "content_hash": {
         "borrador": "ef9a2b99a52e",
-        "polish": "8a10543c4485"
+        "polish": "62e8a630b72f"
       },
-      "version": "2026-09-29-4",
+      "version": "2026-09-29-5",
       "sources_hash": {
         "informe-polish.md": "9d2b511d546e"
       },
       "status": "polished",
       "form_hash": {
-        "polish": "e6d11a99f4e9"
+        "polish": "d69c87d8599e"
       }
     },
     "objetivo-rsl": {
       "content_hash": {
         "borrador": "16879d667612",
-        "polish": "48f6c598879f"
+        "polish": "cf99feb94d3f"
       },
-      "version": "2026-09-29-4",
+      "version": "2026-09-29-5",
       "sources_hash": {
         "picoc": "0b7356e54b6d"
       },
       "status": "polished",
       "form_hash": {
-        "polish": "0fb0cb351bd5"
+        "polish": "135c171c27bf"
       }
     },
     "organizacion": {
       "content_hash": {
         "borrador": "feb56ec9af3d",
-        "polish": "4c16472552d3"
+        "polish": "fb90e0575398"
       },
-      "version": "2026-09-29-4",
+      "version": "2026-09-29-5",
       "sources_hash": {
         "grupos": "1b64046cf035"
       },
       "status": "polished",
       "form_hash": {
-        "polish": "1b378555ad40"
+        "polish": "8fe2a2033071"
       }
     },
     "referencias": {
@@ -99,7 +99,7 @@
         "borrador": "8376ef33b383",
         "polish": "6f01453e9fcc"
       },
-      "version": "2026-09-29-4",
+      "version": "2026-09-29-5",
       "sources_hash": {},
       "status": "polished",
       "form_hash": {
@@ -109,9 +109,9 @@
     "marco-pico": {
       "content_hash": {
         "borrador": "dc870a2cb788",
-        "polish": "19c40663f875"
+        "polish": "1a9ac811ebb5"
       },
-      "version": "2026-09-29-4",
+      "version": "2026-09-29-5",
       "sources_hash": {
         "picoc": "0b7356e54b6d"
       },
@@ -120,18 +120,18 @@
         "polish": "8ecd36d3ee72"
       },
       "form_hash": {
-        "polish": "ffdf2bc22802"
+        "polish": "b6ef4483d0f2"
       },
       "mirror_form": {
-        "polish": "4371360261f7"
+        "polish": "6ff5bd0afc9e"
       }
     },
     "palabras-clave": {
       "content_hash": {
         "borrador": "5cffcd8a0250",
-        "polish": "038e9fedbc21"
+        "polish": "cd7dfda96b02"
       },
-      "version": "2026-09-29-4",
+      "version": "2026-09-29-5",
       "sources_hash": {
         "picoc": "0b7356e54b6d"
       },
@@ -140,18 +140,18 @@
         "polish": "b5b380733447"
       },
       "form_hash": {
-        "polish": "c475b769173d"
+        "polish": "9de6de40528c"
       },
       "mirror_form": {
-        "polish": "48878c6bdee1"
+        "polish": "c8cdf8f23df3"
       }
     },
     "ecuacion-busqueda": {
       "content_hash": {
         "borrador": "57aa794bbbf7",
-        "polish": "6c389aa09f42"
+        "polish": "2a46a4e3c381"
       },
-      "version": "2026-09-29-4",
+      "version": "2026-09-29-5",
       "sources_hash": {
         "picoc": "0b7356e54b6d"
       },
@@ -160,18 +160,18 @@
         "polish": "f2fa9c6d9129"
       },
       "form_hash": {
-        "polish": "477930a61e62"
+        "polish": "df492800581f"
       },
       "mirror_form": {
-        "polish": "8fcaa63d5362"
+        "polish": "bc598fac14ac"
       }
     },
     "criterios-seleccion": {
       "content_hash": {
         "borrador": "e68857e11eb5",
-        "polish": "b184f377223a"
+        "polish": "a2ea48381074"
       },
-      "version": "2026-09-29-4",
+      "version": "2026-09-29-5",
       "sources_hash": {
         "topic.md": "b2bcfb779775",
         "picoc": "0b7356e54b6d"
@@ -181,24 +181,24 @@
         "polish": "f1d15dec5f1c"
       },
       "form_hash": {
-        "polish": "5da508c82973"
+        "polish": "a4ec6078843e"
       },
       "mirror_form": {
-        "polish": "85450192cde0"
+        "polish": "67fdfb9f0645"
       }
     },
     "seleccion-prisma": {
       "content_hash": {
         "borrador": "cb044dfdb952",
-        "polish": "e31f7f059346"
+        "polish": "05e3f84d47ca"
       },
-      "version": "2026-09-29-4",
+      "version": "2026-09-29-5",
       "sources_hash": {
-        "picoc": "5db27122c711"
+        "picoc": "0b7356e54b6d"
       },
       "status": "polished",
       "form_hash": {
-        "polish": "d046418f6397"
+        "polish": "59ddfbffd1e1"
       }
     }
   },
@@ -254,6 +254,11 @@
     },
     "2026-09-29-4": {
       "from": "2026-09-29-3",
+      "borrador": false,
+      "polish": true
+    },
+    "2026-09-29-5": {
+      "from": "2026-09-29-4",
       "borrador": false,
       "polish": true
     }

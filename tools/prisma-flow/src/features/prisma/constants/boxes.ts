@@ -2,42 +2,42 @@ import type { BoxDefinition, BoxId } from '../types'
 
 export const BOXES: Record<BoxId, BoxDefinition> = {
   identified: {
-    label: 'Registros identificados',
+    label: 'Records identified',
     defaultText:
-      'Registros identificados desde*:\nBases de Datos (n=2)\nRegistros/Archivos (n=53)',
+      'Records identified from*:\nDatabases (n = )\nRegisters (n = )',
   },
   removed: {
-    label: 'Registros eliminados antes del cribado',
-    defaultText: 'Registros eliminados antes del cribado:\nDuplicados (n=2)',
+    label: 'Records removed before screening',
+    defaultText: 'Records removed before\nscreening:\nDuplicate records removed (n = )\nRecords marked as ineligible by automation tools (n = )\nRecords removed for other reasons (n = )',
   },
   screened: {
-    label: 'Registros cribados',
-    defaultText: 'Registros cribados\n(n=51)',
+    label: 'Records screened',
+    defaultText: 'Records screened\n(n = )',
   },
   excluded: {
-    label: 'Registros excluidos',
-    defaultText: 'Registros excluidos**\n(n=25)',
+    label: 'Records excluded',
+    defaultText: 'Records excluded**\n(n = )',
   },
   retrieved: {
-    label: 'Publicaciones recuperadas',
-    defaultText: 'Publicaciones recuperadas para evaluación\n(n=26)',
+    label: 'Reports sought for retrieval',
+    defaultText: 'Reports sought for retrieval\n(n = )',
   },
   notRetrieved: {
-    label: 'Publicaciones no recuperadas',
-    defaultText: 'Publicaciones no recuperadas\n(n=4)',
+    label: 'Reports not retrieved',
+    defaultText: 'Reports not retrieved\n(n = )',
   },
   assessed: {
-    label: 'Publicaciones evaluadas para elegibilidad',
-    defaultText: 'Publicaciones evaluadas para elegibilidad\n(n=22)',
+    label: 'Reports assessed for eligibility',
+    defaultText: 'Reports assessed for eligibility\n(n = )',
   },
   excludedReasons: {
-    label: 'Publicaciones excluidas',
+    label: 'Reports excluded',
     defaultText:
-      'Publicaciones excluidas:\nRazón 1 (n=2)\nRazón 2 (n=1)\nRazón 3 (n=1)\netc.',
+      'Reports excluded:\nReason 1 (n = )\nReason 2 (n = )\nReason 3 (n = )\netc.',
   },
   included: {
-    label: 'Estudios incluidos',
-    defaultText: 'Nuevos estudios incluidos en la revisión\n(n=18)',
+    label: 'Studies included',
+    defaultText: 'Studies included in review\n(n = )\nReports of included studies\n(n = )',
   },
 }
 

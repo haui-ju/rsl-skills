@@ -14,10 +14,18 @@ interface PrismaDiagramProps {
 export function PrismaDiagram({ ref }: PrismaDiagramProps) {
   return (
     <div ref={ref} className="group/diagram flex flex-col bg-white p-12">
+      <div className="mb-4 flex gap-4">
+        <div className="w-10 shrink-0" />
+        <div className="flex w-[688px] items-center justify-center rounded-md border-[1.5px] border-black bg-[#ffc000] py-2">
+          <span className="text-[15px] font-semibold text-black">
+            Identification of studies via databases and registers
+          </span>
+        </div>
+      </div>
       {PHASES.map((phase, index) => (
         <Fragment key={phase.id}>
           {index > 0 && (
-            <FlowArrow direction="down" className="ml-14 text-slate-300" />
+            <FlowArrow direction="down" className="ml-14 text-black" />
           )}
           <PhaseSection phase={phase} />
         </Fragment>

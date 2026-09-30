@@ -1305,6 +1305,23 @@ def _(sb):
     sb.run(["red", f], "ERROR", has="el lector")
 
 
+@case("K09", "marco", "redaccion:lint avisa (sin fallar) el ritmo monótono y el contraste troceado «No es X. Es Y.»; la prosa variada y el «no… sino» pasan limpios")
+def _(sb):
+    f = sb.base / "intro.md"
+    f.write_text("# Contexto\n\nEl objeto de la revisión no es la tecnología asistiva clínica. Es el modo en que se construye el software.\n\n"
+                 "La revisión reúne estudios de varias bases y los ordena por fase del ciclo de vida. "
+                 "La selección aplica criterios de inclusión y de exclusión fijados antes de la búsqueda. "
+                 "La extracción registra la técnica, la fase y la métrica de cada estudio incluido. "
+                 "La síntesis cruza esas dimensiones para localizar las combinaciones sin evidencia.\n", encoding="utf-8")
+    sb.run(["red", f], "OK", has="contraste troceado")
+    sb.run(["red", f], "OK", has="ritmo monótono")
+    f.write_text("# Contexto\n\nEl objeto de la revisión no es la tecnología asistiva clínica, sino el modo en que se construye el software. "
+                 "Por eso importa la fase. Cada estudio incluido se ubica en ella, junto con la técnica y la métrica que reporta, "
+                 "para que la síntesis pueda cruzar esas dimensiones.\n", encoding="utf-8")
+    sb.run(["red", f], "OK", lacks="troceado")
+    sb.run(["red", f], "OK", lacks="monótono")
+
+
 @case("S08", "skills", "Metodología: make y polish del paper usan la bibliografía compartida, solo Scopus y WoS y los marcadores del usuario")
 def _(sb):
     make = (SKILLS / "rsl-make-paper" / "SKILL.md").read_text(encoding="utf-8")

@@ -13,6 +13,8 @@ WARN (revisar; corregir o justificar):
   - oraciones de más de N palabras
   - notación de trabajo en la prosa (×, →, A+B, sufijos -duro/-dura)
   - párrafos con más de 3 siglas distintas
+  - ritmo monótono: 4 o más oraciones seguidas de longitud casi igual (diferencia ≤ 5 palabras)
+  - contraste troceado: «No es X. Es Y.» (va en una sola oración: «no es X, sino Y»)
 Marcadores del usuario (no fallan; se cuentan en la línea OK): [[ … ]] (p. ej. [[ AGREGAR DIAGRAMA ]]) y X como dato pendiente (n = X).
 
 Solo se analiza prosa: se omiten bloques de código, tablas, comentarios HTML, encabezados, enlaces y la sección Referencias.
@@ -50,6 +52,9 @@ ROMAN = re.compile(r"^[IVXLC]+$")
 CODE_ID = re.compile(r"^(?:RQ|CI|CE)\d+$")
 USER_BLOCK = re.compile(r"\[\[[^\[\]\n]+\]\]")
 USER_X = re.compile(r"(?<![\w-])X(?![\w-])")
+MONOTONY_RUN, MONOTONY_SPREAD, MONOTONY_MIN = 4, 5, 8
+NEG_IS = re.compile(r"\bno (?:es|son)\b", re.I)
+IS_START = re.compile(r"^(?:Es|Son)\b")
 
 
 def prose_blocks(text: str) -> list[tuple[int, str]]:
@@ -147,10 +152,19 @@ def main(argv: list[str]) -> int:
         for rx, msg in NOTATION:
             for mm in rx.finditer(p):
                 warns.append(f"L{n}: {msg} → «{mm.group(0).strip()}»")
-        for sent in re.split(r"(?<=[.!?])\s+(?=[A-ZÁÉÍÓÚÑ¿¡])", p):
-            words = len(re.findall(r"\w+", sent))
+        sents = re.split(r"(?<=[.!?])\s+(?=[A-ZÁÉÍÓÚÑ¿¡])", p)
+        lengths = [len(re.findall(r"\w+", s)) for s in sents]
+        for sent, words in zip(sents, lengths):
             if words > max_words:
                 warns.append(f"L{n}: oración de {words} palabras (máx. {max_words}): «{sent[:70]}…»")
+        for i in range(len(lengths) - MONOTONY_RUN + 1):
+            run_ = lengths[i : i + MONOTONY_RUN]
+            if min(run_) >= MONOTONY_MIN and max(run_) - min(run_) <= MONOTONY_SPREAD:
+                warns.append(f"L{n}: ritmo monótono, {MONOTONY_RUN} oraciones seguidas de {min(run_)}–{max(run_)} palabras desde «{sents[i][:50]}…»; varía la longitud (R9)")
+                break
+        for a, b in zip(sents, sents[1:]):
+            if NEG_IS.search(a) and IS_START.match(b):
+                warns.append(f"L{n}: contraste troceado «{a[-40:]} {b[:30]}…»; únelo en una oración con «no… sino» (R3)")
 
     body = re.sub(r"<!--.*?-->", "", text, flags=re.S)
     body = re.sub(r"^```.*?^```", "", body, flags=re.S | re.M)

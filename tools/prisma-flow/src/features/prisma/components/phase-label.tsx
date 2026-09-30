@@ -11,7 +11,7 @@ export function PhaseLabel({ label, theme }: PhaseLabelProps) {
   return (
     <div
       className={cn(
-        'flex w-10 shrink-0 items-center justify-center rounded-[3px] ring-1 ring-inset',
+        'flex w-10 shrink-0 items-center justify-center rounded-md border-[1.5px]',
         theme.label,
       )}
     >

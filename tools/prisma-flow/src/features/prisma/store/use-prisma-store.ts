@@ -27,7 +27,7 @@ export const usePrismaStore = create<PrismaState>()(
     }),
     {
       name: 'prisma-flow',
-      version: 1,
+      version: 2,
       storage: createJSONStorage(() => localStorage),
       skipHydration: true,
       partialize: ({ texts, quality }): PersistedPrismaState => ({

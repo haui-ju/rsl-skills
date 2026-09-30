@@ -24,7 +24,7 @@ export function PrismaBox({ id, variant, theme }: PrismaBoxProps) {
   return (
     <div
       className={cn(
-        'flex h-full shrink-0 rounded-[3px] border-[1.5px] p-1 transition-[border-color,box-shadow] focus-within:ring-3',
+        'flex h-full shrink-0 rounded-none border-[1.5px] p-1 transition-[border-color,box-shadow] focus-within:ring-3',
         variant === 'main' ? 'w-80' : 'w-72',
         variant === 'main' ? theme.main : theme.side,
         theme.focus,
@@ -38,9 +38,9 @@ export function PrismaBox({ id, variant, theme }: PrismaBoxProps) {
         spellCheck={false}
         rows={2}
         className={cn(
-          'max-h-72 min-h-24 resize-none overflow-y-auto rounded-none border-0 bg-transparent px-4 py-3 text-base leading-relaxed text-slate-800 shadow-none focus-visible:ring-0 md:text-base dark:bg-transparent',
+          'max-h-72 min-h-24 resize-none overflow-y-auto rounded-none border-0 bg-transparent px-4 py-3 text-base leading-relaxed text-black shadow-none focus-visible:ring-0 md:text-base dark:bg-transparent',
           'group-data-[exporting=true]/diagram:max-h-none group-data-[exporting=true]/diagram:overflow-hidden',
-          variant === 'main' ? 'font-medium' : 'text-slate-700',
+          'font-normal',
         )}
       />
     </div>

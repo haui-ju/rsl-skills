@@ -54,7 +54,7 @@ Invoke: `Usa rsl-make-paper sobre docs/<slug>/`.
 
 ## Writing
 
-Language of `formato.idioma` (default Spanish académico-profesional, headings included); citations per `formato.citas` and `global/citation-style/<STYLE>.md`; form per `playbooks/redaccion-academica.md` (in the draft R1, R2 and R5 already apply; R3/R4 warnings are solved in the polish). New EN technical term → `pnpm -s thesaurus:check "…"`. Never invent DOI or findings.
+Language of `formato.idioma` (default Spanish académico-profesional, headings included); citations per `formato.citas` and `global/citation-style/<STYLE>.md`; form per `playbooks/redaccion-academica.md` (in the draft R1, R2 and R5 already apply; R3/R4 warnings are solved in the polish). The borrador is the rich draft: it may be verbose and carry nuances and caveats; the voice of R7/R9 (each idea explained once, bridges, varied rhythm) is only a self-check here and is demanded in the polish. New EN technical term → `pnpm -s thesaurus:check "…"`. Never invent DOI or findings.
 
 ## Introducción template (draft)
 

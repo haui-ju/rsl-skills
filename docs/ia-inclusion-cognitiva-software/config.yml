@@ -14,7 +14,7 @@ formato:
   marco: PICO # marco de búsqueda libre: PICO, PIO, PICOC, PICOCT, PICOS… (por defecto PICOCT); al cambiarlo, correr rsl-picoc
 
 Portada:
-  encabezado: frozen
+  encabezado: on
   resumen: off
 
 Introducción:
