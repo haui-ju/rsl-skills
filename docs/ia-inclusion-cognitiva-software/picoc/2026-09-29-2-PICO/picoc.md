@@ -6,7 +6,7 @@ Protocolo: [`playbooks/vocabulario-controlado.md`](../../../../playbooks/vocabul
 
 ## Pregunta general (problemática)
 
-¿Cómo se han integrado técnicas de inteligencia artificial en las fases del ciclo de vida del software —con énfasis en diseño, personalización en runtime y, sobre todo, verificación, evaluación y auditoría— orientadas a usuarios con discapacidad cognitiva o neurodivergencia; qué métricas se reportan (incluidas orientaciones COGA frente al núcleo WCAG); y qué celdas de la matriz *condición × técnica × fase SE × métrica* permanecen vacías frente al sesgo documentado hacia la accesibilidad sensorial/visual y frente a revisiones HCI/AT o GenAI+web que no estructuran el proceso de Ingeniería de Software?
+¿Cómo se ha integrado la inteligencia artificial en el ciclo de vida del software, del diseño y la personalización a la verificación, la evaluación y la auditoría, para usuarios con discapacidad cognitiva o neurodivergencia; qué métricas se reportan, incluidas las orientaciones COGA frente a las WCAG; y qué combinaciones de condición, técnica, fase y métrica carecen de evidencia frente al predominio de la accesibilidad sensorial?
 
 ## Preguntas por componente
 

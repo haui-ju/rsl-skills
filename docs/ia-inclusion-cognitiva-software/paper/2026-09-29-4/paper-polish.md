@@ -4,7 +4,7 @@
 
 **Tema.** IA (incluidos GenAI/LLM) en el ciclo de vida del software para accesibilidad cognitiva y neurodivergencia, con énfasis en V&V/auditoría y taxonomía condición × técnica × fase SE × métrica (COGA frente a WCAG).
 
-**Problemática.** ¿Cómo se han integrado técnicas de IA en las fases del ciclo de vida del software —sobre todo en verificación, evaluación y auditoría— para usuarios con discapacidad cognitiva o neurodivergencia; qué métricas se reportan (COGA frente a WCAG); y qué celdas de la matriz _condición × técnica × fase SE × métrica_ quedan vacías o no transferibles a Definition of Done / CI frente al sesgo sensorial/visual y a síntesis clínicas, HCI o GenAI+web que no estructuran el proceso de Ingeniería de Software?
+**Problemática.** ¿Cómo se ha integrado la inteligencia artificial en el ciclo de vida del software, del diseño y la personalización a la verificación, la evaluación y la auditoría, para usuarios con discapacidad cognitiva o neurodivergencia; qué métricas se reportan, incluidas las orientaciones COGA frente a las WCAG; y qué combinaciones de condición, técnica, fase y métrica carecen de evidencia frente al predominio de la accesibilidad sensorial?
 
 **Objetivo.** Sintetizar evidencia primaria de IA en artefactos y procesos SE para perfiles cognitivos o neurodivergentes, y producir esa taxonomía con columna de transferibilidad (automatizable en CI / juicio experto / validación con usuarios), delimitada frente a fronteras clínicas, HCI y GenAI+web WCAG-duro.
 
@@ -16,15 +16,13 @@
 
 ### Contexto
 
-La accesibilidad digital busca que las personas puedan percibir, operar y comprender el software. En ese marco, las Pautas de Accesibilidad para el Contenido Web (WCAG) 2.2 concentran la conformidad verificable (World Wide Web Consortium [W3C], 2023). Las orientaciones del grupo de trabajo del W3C sobre accesibilidad cognitiva y del aprendizaje (COGA), en cambio, atienden otra cara del problema: la comprensión, la memoria y la carga cognitiva (W3C, 2021). Estos aspectos son, por lo general, más difíciles de verificar de forma automática.
+La accesibilidad digital busca que las personas puedan percibir, operar y comprender el software. Las Pautas de Accesibilidad para el Contenido Web (WCAG) 2.2 concentran la conformidad verificable (World Wide Web Consortium [W3C], 2023). Las orientaciones del W3C sobre accesibilidad cognitiva y del aprendizaje (COGA), en cambio, atienden la comprensión, la memoria y la carga cognitiva (W3C, 2021), que suelen ser más difíciles de verificar de forma automática.
 
-A partir de ese matiz, por _accesibilidad cognitiva_ se entiende aquí la reducción de las barreras de comprensión, memoria y carga cognitiva. Por _neurodivergencia_ se entiende una categoría amplia que, cuando la evidencia lo permite, se desglosa en condiciones concretas, como el trastorno del espectro autista, el trastorno por déficit de atención e hiperactividad o la dislexia. Este uso no pretende medicalizar a las personas. En consecuencia, el objeto de esta revisión no es la tecnología asistiva clínica. Es el modo en que la inteligencia artificial (IA), incluida la IA generativa (GenAI), se inserta en el ciclo de vida del software, desde los requisitos y el diseño hasta la verificación y validación (V&V).
+Por _accesibilidad cognitiva_ se entiende aquí la reducción de las barreras en esos tres planos. La _neurodivergencia_ se trata como una categoría amplia que, cuando la evidencia lo permite, se desglosa en condiciones como el trastorno del espectro autista, el trastorno por déficit de atención e hiperactividad o la dislexia, sin medicalizar a las personas. El objeto de la revisión no es la tecnología asistiva clínica. Es el modo en que la inteligencia artificial (IA), incluida la IA generativa (GenAI), se inserta en el ciclo de vida del software, desde los requisitos hasta la verificación y validación (V&V).
 
-Este alcance obliga a revisar primero lo que ya han sintetizado las revisiones previas. Chemnad y Othman (2024), tras revisar 43 estudios de IA y accesibilidad digital, documentaron un claro predominio de la discapacidad visual y un vacío en el trastorno del espectro autista y en los trastornos neurológicos. Perry et al. (2024), por su parte, sintetizaron 15 trabajos de IA para el funcionamiento adaptativo en condiciones del neurodesarrollo, con resultados de apoyo cotidiano y no de ingeniería. En el terreno de los modelos de lenguaje, Aljedaani y Mollik (2026) analizaron 33 estudios primarios sobre su uso en la accesibilidad web. En ellos, las WCAG dominan como marco y las orientaciones COGA reciben poca atención, aunque la revisión no organiza la evidencia por fase del ciclo de vida.
+Las revisiones previas rodean ese objeto sin cubrirlo. Chemnad y Othman (2024) documentaron, en 43 estudios de IA y accesibilidad digital, el predominio de la discapacidad visual y un vacío en el autismo. Perry et al. (2024) sintetizaron 15 trabajos de IA para el funcionamiento adaptativo en condiciones del neurodesarrollo, con resultados de apoyo cotidiano y no de ingeniería. En 33 estudios con modelos de lenguaje para la accesibilidad web, Aljedaani y Mollik (2026) hallaron que dominan las WCAG y que las orientaciones COGA reciben poca atención, sin ordenar la evidencia por fase del ciclo de vida. En los bordes, Xu et al. (2026) cartografiaron el diseño de la interacción entre personas neurodivergentes y sistemas de IA. Paiva et al. (2021) revisaron la accesibilidad en los procesos de la Ingeniería de Software, sin centrarse en la IA ni en la dimensión cognitiva.
 
-En los bordes del tema se sitúan otras dos revisiones. Xu et al. (2026) cartografiaron 117 estudios sobre el diseño de la interacción entre personas neurodivergentes y sistemas de IA. Paiva et al. (2021), a su vez, revisaron 94 estudios sobre accesibilidad en los procesos de Ingeniería de Software, sin el eje de la IA ni el de la accesibilidad cognitiva.
-
-Así, el estado del arte deja abiertas tres tensiones que se refuerzan entre sí. La primera enfrenta lo sensorial con lo cognitivo; la segunda, el enfoque clínico o de diseño de interacción con el proceso de ingeniería; la tercera, la automatización con la validación con usuarios. Esta última tiene consecuencias prácticas. Los equipos controlan la calidad mediante la integración continua (CI), que ejecuta pruebas automáticas con cada cambio, y mediante la _Definition of Done_, el conjunto de criterios que un incremento debe cumplir para darse por terminado. Si esos controles se limitan a criterios WCAG verificables automáticamente, que un analizador no detecte fallos no basta para afirmar que el software es inclusivo en el plano cognitivo.
+El estado del arte deja así tres tensiones abiertas: lo sensorial frente a lo cognitivo, el enfoque clínico o de interacción frente al proceso de ingeniería, y la automatización frente a la validación con usuarios. La última tiene consecuencias prácticas. Si la integración continua y la _Definition of Done_ (los criterios para dar por terminado un incremento) se limitan a comprobaciones WCAG automáticas, un análisis sin fallos no demuestra que el software sea inclusivo en el plano cognitivo.
 
 <!-- /paper:section -->
 
@@ -32,11 +30,11 @@ Así, el estado del arte deja abiertas tres tensiones que se refuerzan entre sí
 
 ### El problema
 
-De esas tensiones nace la pregunta de investigación: ¿cómo se ha integrado la IA en las fases del ciclo de vida del software, sobre todo en la verificación, la evaluación y la auditoría, para personas con discapacidad cognitiva o neurodivergentes? La pregunta abarca también el diseño y la personalización. Se complementa, además, con otras dos: qué métricas se reportan y qué combinaciones de condición, técnica, fase y métrica carecen de evidencia, dado el predominio de los estudios centrados en la discapacidad sensorial.
+De esas tensiones nace la pregunta general de esta revisión:
 
-A ello se suma una tendencia reciente. En los estudios con modelos de lenguaje, la definición, la detección y la evaluación de los problemas de accesibilidad se apoyan sobre todo en criterios WCAG, mientras que las orientaciones cognitivas reciben una atención limitada (Aljedaani & Mollik, 2026). El panorama de síntesis es, así, desigual. Abundan las revisiones con sesgo visual (Chemnad & Othman, 2024), las de apoyo al funcionamiento adaptativo (Perry et al., 2024) y las de diseño de interacción (Xu et al., 2026). Escasean, en cambio, las que relacionan a la vez el tipo de condición, la técnica de IA, la fase del ciclo de vida y la métrica; en adelante, ese cruce de cuatro dimensiones se denomina _la taxonomía_.
+> ¿Cómo se ha integrado la inteligencia artificial en el ciclo de vida del software, del diseño y la personalización a la verificación, la evaluación y la auditoría, para usuarios con discapacidad cognitiva o neurodivergencia; qué métricas se reportan, incluidas las orientaciones COGA frente a las WCAG; y qué combinaciones de condición, técnica, fase y métrica carecen de evidencia frente al predominio de la accesibilidad sensorial?
 
-El vacío, entonces, no es la falta de trabajos cercanos, sino la de una síntesis que los integre. Incluso el mapa de Paiva et al. (2021), ordenado por fase, deja fuera la IA y la dimensión cognitiva. Esta fragmentación eleva el riesgo de una accesibilidad solo aparente. Falta saber, para cada combinación, qué técnica se usó, en qué fase, con qué métrica y con qué límite de automatización. Eso es lo que se propone estudiar.
+El vacío no es la falta de trabajos cercanos, sino la de una síntesis que los integre. Ninguna de las revisiones citadas relaciona a la vez el tipo de condición, la técnica de IA, la fase del ciclo de vida y la métrica; en adelante, ese cruce se denomina _la taxonomía_. Sin ella, se ignora qué límite de automatización tiene cada combinación y persiste el riesgo de una accesibilidad solo aparente.
 
 <!-- /paper:section -->
 
@@ -44,13 +42,9 @@ El vacío, entonces, no es la falta de trabajos cercanos, sino la de una síntes
 
 ### Justificación
 
-Por ello, esta revisión articula tres elementos: las orientaciones COGA, la IA a lo largo del ciclo de vida, con énfasis en la V&V, y las métricas propias de la Ingeniería de Software. De este modo evita replicar las síntesis existentes sobre diseño de interacción. Las revisiones previas aportan el contraste necesario, pero no un mapa por fase y métrica.
+Por ello, esta revisión sistemática de la literatura (RSL) articula tres elementos: las orientaciones COGA, la IA en el ciclo de vida del software y las métricas de Ingeniería de Software. El tema tiene además respaldo normativo: la Ley N.º 29973, Ley General de la Persona con Discapacidad (Congreso de la República del Perú, 2012), reconoce derechos de accesibilidad que alcanzan a las personas con discapacidad cognitiva e intelectual. No se pretende certificar ese cumplimiento.
 
-Además, la Ley N.º 29973, Ley General de la Persona con Discapacidad (Congreso de la República del Perú, 2012), reconoce derechos de accesibilidad que alcanzan a las personas con discapacidad cognitiva e intelectual. Las metas 10.2 y 4.5 de los Objetivos de Desarrollo Sostenible dan contexto, por su parte, al valor público de la revisión, sin atribuirle un impacto causal.
-
-En la práctica, el mapa será útil si asigna a cada hallazgo uno de tres niveles. El primero reúne lo que puede comprobarse automáticamente como control de la CI. El segundo, lo que requiere el juicio de un especialista en accesibilidad, por ejemplo si un texto simplificado por un modelo de lenguaje conserva el sentido. El tercero, lo que solo puede validarse con la participación de personas con discapacidad cognitiva o neurodivergentes. La revisión no pretende certificar el cumplimiento normativo.
-
-De ahí la necesidad de una revisión sistemática de la literatura (RSL): abundan las revisiones sobre temas vecinos y el riesgo de replicarlas es alto. Si la combinación menos estudiada, la V&V asistida por GenAI con criterios cognitivos, reuniera pocos estudios primarios, el aporte legítimo sería documentar ese vacío, no forzar conclusiones.
+Para orientar la práctica, la revisión asigna a cada hallazgo uno de tres niveles: comprobable de forma automática en la integración continua, sujeto al juicio de un especialista en accesibilidad o validable solo con personas con discapacidad cognitiva o neurodivergentes. Si la combinación que se prevé menos estudiada, la V&V asistida por GenAI con criterios cognitivos, reuniera pocos estudios primarios, el aporte legítimo sería documentar ese vacío, no forzar conclusiones.
 
 <!-- /paper:section -->
 
@@ -58,14 +52,14 @@ De ahí la necesidad de una revisión sistemática de la literatura (RSL): abund
 
 ### Objetivo de la RSL
 
-El objetivo general de esta revisión es sintetizar la evidencia primaria sobre técnicas de IA aplicadas a los procesos de Ingeniería de Software cuyo producto se dirige a personas con discapacidad cognitiva o neurodivergentes. Esa síntesis se ordenará en la taxonomía, lo que permitirá identificar también las combinaciones de condición, técnica, fase y métrica que carecen de evidencia. Para alcanzarlo, la pregunta general (sección II.A) se desglosa en cuatro preguntas de investigación (RQ), una por componente del marco, y cada una se traduce en un objetivo específico:
+El objetivo general es sintetizar la evidencia primaria sobre técnicas de IA aplicadas a los procesos de Ingeniería de Software cuyo producto se dirige a personas con discapacidad cognitiva o neurodivergentes. La síntesis se ordena en la taxonomía para identificar las combinaciones sin evidencia. La pregunta general (sección II.A) se desglosa en cuatro preguntas de investigación (RQ), una por componente del marco, y cada una fija un objetivo específico:
 
-1. Caracterizar los perfiles cognitivos y neurodivergentes que abordan los estudios, su grado de estratificación y el nivel de participación de esas personas, desde sujetos de evaluación hasta codiseño.
-2. Identificar las técnicas de IA aplicadas, incluidas la GenAI y los modelos de lenguaje grandes (LLM), el papel que cumplen y la fase del ciclo de vida en que intervienen, en especial la verificación, la evaluación y la auditoría.
-3. Determinar en qué medida la evidencia sobre accesibilidad cognitiva se contrasta con la centrada en la accesibilidad sensorial o visual y en la conformidad con las WCAG, o queda subordinada a ella.
-4. Inventariar las métricas de evaluación y su grado de automatización: qué puede verificarse en la integración continua, qué requiere juicio experto y qué exige pruebas con usuarios.
+1. Caracterizar los perfiles cognitivos y neurodivergentes estudiados, su grado de estratificación y la participación de esas personas, desde sujetos de evaluación hasta codiseño.
+2. Identificar las técnicas de IA, incluidas la GenAI y los modelos de lenguaje grandes (LLM), su papel y la fase del ciclo de vida en que intervienen.
+3. Determinar en qué medida la evidencia sobre accesibilidad cognitiva se contrasta con la accesibilidad sensorial o visual y la conformidad con las WCAG, o queda subordinada a ellas.
+4. Inventariar las métricas de evaluación y clasificarlas según los tres niveles de automatización.
 
-Cumplir estos objetivos exige analizar estudios sobre esta población, por lo que el protocolo fija salvaguardas éticas. En la selección (sección II.D), el criterio de exclusión CE5 deja fuera los estudios en que la IA solo diagnostica o detecta la condición sin un artefacto de software evaluado. El CE8 excluye los robots sociales, los tutores y los productos de rehabilitación ajenos al ciclo de vida del software. En la extracción se registra cómo trata cada estudio la condición (como un déficit que corregir o como una diferencia que acomodar), si el sistema la deduce o almacena, si hubo consentimiento o asentimiento informado y el país del estudio. Esos datos se presentan junto a los de la RQ1, para que los vacíos éticos y un posible sesgo geográfico queden a la vista. Los rótulos diagnósticos se reproducen tal como los declara cada estudio, sin reclasificar a nadie, y las métricas de ingeniería no se interpretan como resultados clínicos.
+Por tratarse de esta población, el protocolo fija salvaguardas éticas. La selección excluye los estudios de solo diagnóstico y los productos ajenos al ciclo de vida del software (criterios CE5 y CE8, sección II.D). La extracción registra si cada estudio trata la condición como un déficit o como una diferencia, si el sistema la deduce o almacena, si hubo consentimiento o asentimiento informado y en qué país se realizó. Estos datos se reportan con la RQ1 para exponer vacíos éticos y un posible sesgo geográfico. Los rótulos diagnósticos se reproducen tal como los declara cada estudio, y las métricas de ingeniería no se interpretan como resultados clínicos.
 
 <!-- /paper:section -->
 
@@ -73,7 +67,7 @@ Cumplir estos objetivos exige analizar estudios sobre esta población, por lo qu
 
 ### Organización del contenido de la revisión
 
-Sobre esa base, el resto del artículo presenta el marco conceptual y el método, que sigue la guía _Preferred Reporting Items for Systematic Reviews and Meta-Analyses_ (PRISMA) 2020 (Page et al., 2021). Después expone los resultados organizados según la taxonomía, con énfasis en la V&V asistida por GenAI, y señala las combinaciones sin evidencia. La discusión examina qué hallazgos pueden trasladarse a la práctica de desarrollo, y las conclusiones cierran el trabajo. En un anexo se detalla la comparación de alcance con las revisiones previas.
+El resto del artículo presenta el método, cuyo reporte sigue la guía _Preferred Reporting Items for Systematic Reviews and Meta-Analyses_ (PRISMA) 2020 (Page et al., 2021), y después los resultados ordenados según la taxonomía. La discusión examina qué hallazgos pueden trasladarse a la práctica de desarrollo antes de las conclusiones.
 
 <!-- /paper:section -->
 
@@ -99,7 +93,7 @@ Con esas decisiones, el marco queda resumido en la Tabla I. De sus cuatro compon
 
 **Pregunta general de investigación:**
 
-> ¿Cómo se han integrado técnicas de inteligencia artificial en las fases del ciclo de vida del software —con énfasis en diseño, personalización en runtime y, sobre todo, verificación, evaluación y auditoría— orientadas a usuarios con discapacidad cognitiva o neurodivergencia; qué métricas se reportan (incluidas orientaciones COGA frente al núcleo WCAG); y qué celdas de la matriz _condición × técnica × fase SE × métrica_ permanecen vacías frente al sesgo documentado hacia la accesibilidad sensorial/visual y frente a revisiones HCI/AT o GenAI+web que no estructuran el proceso de Ingeniería de Software?
+> ¿Cómo se ha integrado la inteligencia artificial en el ciclo de vida del software, del diseño y la personalización a la verificación, la evaluación y la auditoría, para usuarios con discapacidad cognitiva o neurodivergencia; qué métricas se reportan, incluidas las orientaciones COGA frente a las WCAG; y qué combinaciones de condición, técnica, fase y métrica carecen de evidencia frente al predominio de la accesibilidad sensorial?
 
 **Tabla II — Preguntas de investigación por componente**
 

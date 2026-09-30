@@ -43,7 +43,7 @@ Invoke: `Usa rsl-make-paper sobre docs/<slug>/`.
 5. Write each section **between its markers** (create them if new; order of `paper.shadow.yml`). Headings follow the merged format printed by `paper:status`: groups as numbered H2 (`## I. Introducción`), sections as H3, H4 subsections allowed in the draft; `## Referencias` is derived.
 6. Content per group:
    - **Introducción:** template below. For each anchor SLR: what it covers, n/DOI, what it does not cover (= gap). Every extra paragraph adds citation, delimitation, metric, ethics or SE-process detail; no stubs.
-   - **Preguntas:** the picoc general question = problemática = § 1.2 (verbatim in the encabezado and in El problema 2.4, as an interrogative); its RQs give one specific objective each in Objetivo de la RSL and structure Organización. No new RQ.
+   - **Preguntas:** the picoc general question = problemática = § 1.2 (golden rule: verbatim in the encabezado, in El problema as a `> ¿…?` quote and in Tabla I; never paraphrased or shortened, `--picoc-sync` checks it); its RQs give one specific objective each in Objetivo de la RSL and structure Organización. No new RQ.
    - **Metodología:** tables, RQs, keywords, queries and criteria of the latest picoc **as they are** (the picoc mirror, whatever the section state); section by section in [Metodología template](#metodología-template-draft). Then `pnpm -s paper:status docs/<slug> --picoc-sync paper/<fecha>/paper-borrador.md` until PASS.
    - **Resultados / Discusión / Conclusión:** only from `RSL/extraccion/`, by RQ or theme (`format.results_by`).
    - **Abstract / Resumen:** only when content sections exist; keywords = the `## Keywords` table of the latest picoc as it is (EN column in the Abstract, ES column in the Resumen; never add or drop one).
@@ -77,7 +77,7 @@ Language of `formato.idioma` (default Spanish académico-profesional, headings i
 #### 2.1 Tendencias o nuevas perspectivas
 #### 2.2 Discrepancias existentes
 #### 2.3 Vacíos de conocimiento
-#### 2.4 Contraste: situación actual vs situación deseada (pregunta reformulada)
+#### 2.4 Contraste: situación actual vs situación deseada (pregunta general del picoc, literal)
 <!-- /paper:section -->
 
 <!-- paper:section id=justificacion -->

@@ -7,6 +7,8 @@ Bloques espejo (se copian del picoc aunque la sección esté frozen; la prosa al
                        nota (_Nota._) que cita los mismos vocabularios que la cabecera del picoc (regla VOC)
   ecuacion-busqueda    bloques de Scopus y Web of Science idénticos a los del picoc (espacios aparte)
   criterios-seleccion  viñetas **CIn:** / **CEn:** con el mismo texto y orden que las listas del picoc
+  encabezado, problema la pregunta general del picoc, literal (regla de oro: la Problemática del encabezado y la
+                       pregunta de El problema no se parafrasean ni se abrevian)
 """
 from __future__ import annotations
 
@@ -18,7 +20,8 @@ _spec = importlib.util.spec_from_file_location("picoc_lint", Path(__file__).with
 pl = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(pl)
 
-MIRRORED = ("marco-pico", "palabras-clave", "ecuacion-busqueda", "criterios-seleccion")
+MIRRORED = ("encabezado", "problema", "marco-pico", "palabras-clave", "ecuacion-busqueda", "criterios-seleccion")
+QUESTION_ONLY = ("encabezado", "problema")
 DATABASES = ("Scopus", "Web of Science")
 FENCE_RE = re.compile(r"```[^\n]*\n.*?```", re.S)
 CRIT_RE = re.compile(r"^\s*[-*]\s+\*\*(C[IE])\d+:?\*\*:?\s*(.+)$", re.M)
@@ -197,7 +200,17 @@ def check_marco(body: str, m: dict) -> list[str]:
     return issues
 
 
-CHECKS = {"marco-pico": check_marco, "palabras-clave": check_keywords, "ecuacion-busqueda": check_queries, "criterios-seleccion": check_criteria}
+def check_question(sid: str):
+    def run(body: str, m: dict) -> list[str]:
+        found = [pl.norm_text(q) for q in pl.QUESTION.findall(body)]
+        if m["question"] and m["question"] not in found:
+            where = "la Problemática del encabezado" if sid == "encabezado" else "la pregunta de El problema"
+            return [f"{sid}: {where} no es la pregunta general del picoc (cópiala literal, sin parafrasear ni abreviar)"]
+        return []
+    return run
+
+
+CHECKS = {"encabezado": check_question("encabezado"), "problema": check_question("problema"), "marco-pico": check_marco, "palabras-clave": check_keywords, "ecuacion-busqueda": check_queries, "criterios-seleccion": check_criteria}
 
 
 def check(sections: dict[str, str], picoc: Path) -> tuple[list[str], list[str]]:
@@ -212,6 +225,8 @@ def prose_only(sid: str, content: str) -> str:
     """Texto de la sección sin sus bloques espejo (para el hash de frozen)."""
     if sid not in MIRRORED:
         return content
+    if sid in QUESTION_ONLY:
+        return pl.QUESTION.sub("", content)
     text = FENCE_RE.sub("", content)
     keep = [l for l in text.splitlines()
             if not l.strip().startswith("|") and not l.lstrip().startswith(">") and not CRIT_RE.match(l) and not NOTE_RE.match(l)]

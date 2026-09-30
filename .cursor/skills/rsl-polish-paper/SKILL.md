@@ -33,7 +33,7 @@ Form: `playbooks/redaccion-academica.md` (siglas, one idea per sentence, 2–5 s
 - Contexto: about 4 linked paragraphs (norm/framework → delimit the object → anchors woven into one thread → tensions that lead to El problema); it does not dump the whole state of the art.
 - Anchors: one strong mention in Contexto; later only if they add progress.
 - No "AI flavor": disguised enumerations, forced triads, series of long dashes, generic verbs, meta-comments.
-- Problemática = the picoc general question (= § 1.2 of the ficha), as ¿…?.
+- **Golden rule — the general question is never touched.** The Problemática of the encabezado, the question of El problema (as a `> ¿…?` quote) and the Tabla I quote are the picoc general question (= § 1.2 of the ficha), **verbatim**: no paraphrase, no shortening, no splitting into sub-questions, even to meet R9 or on a frozen section. `--picoc-sync` fails otherwise. To change the question, edit it in § 1.2 of the ficha and in the picoc (rsl-picoc), then copy it here; the RQs do not change with it.
 - Coherence with frozen sections: read them as context; contradictions are reported in chat, not fixed in the frozen text.
 
 ## Output (`paper-polish.md`)
