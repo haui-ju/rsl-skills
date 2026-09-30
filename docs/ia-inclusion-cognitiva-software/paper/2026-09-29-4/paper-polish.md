@@ -34,7 +34,7 @@ De esas tensiones nace la pregunta general de esta revisión:
 
 > ¿Cómo se ha integrado la inteligencia artificial en el ciclo de vida del software, del diseño y la personalización a la verificación, la evaluación y la auditoría, para usuarios con discapacidad cognitiva o neurodivergencia; qué métricas se reportan, incluidas las orientaciones COGA frente a las WCAG; y qué combinaciones de condición, técnica, fase y métrica carecen de evidencia frente al predominio de la accesibilidad sensorial?
 
-El vacío no es la falta de trabajos cercanos, sino la de una síntesis que los integre. Ninguna de las revisiones citadas relaciona a la vez el tipo de condición, la técnica de IA, la fase del ciclo de vida y la métrica; en adelante, ese cruce se denomina _la taxonomía_. Sin ella, se ignora qué límite de automatización tiene cada combinación y persiste el riesgo de una accesibilidad solo aparente.
+Lo que falta no son estudios sobre el tema, sino una revisión que los reúna y los ordene. Cada revisión citada cubre solo alguna de cuatro dimensiones: la condición de los usuarios, la técnica de IA, la fase del ciclo de vida o la métrica de evaluación. Ninguna las cruza para responder, por ejemplo, qué técnica se ha usado en la fase de pruebas para evaluar la comprensión de lectura de usuarios con dislexia y con qué métrica. En este artículo, esa clasificación en cuatro dimensiones se denomina _la taxonomía_. Sin ella, un equipo de desarrollo no sabe qué parte de la accesibilidad cognitiva puede comprobar con herramientas automáticas y qué parte exige probar el software con personas. El riesgo es dar por accesible un producto que solo supera las comprobaciones automáticas.
 
 <!-- /paper:section -->
 

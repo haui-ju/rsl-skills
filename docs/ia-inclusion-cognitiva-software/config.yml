@@ -25,12 +25,12 @@ Introducción:
   organizacion: on
 
 Metodología:
-  marco-pico: frozen
-  palabras-clave: frozen
-  ecuacion-busqueda: frozen
-  criterios-seleccion: frozen
-  seleccion-prisma: frozen
-  calidad: frozen
+  marco-pico: on
+  palabras-clave: on
+  ecuacion-busqueda: on
+  criterios-seleccion: on
+  seleccion-prisma: on
+  calidad: off
   extraccion-datos: off
   sintesis: off
 
