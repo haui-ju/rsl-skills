@@ -3,7 +3,7 @@ import type { PhaseDefinition } from '../types'
 export const PHASES: PhaseDefinition[] = [
   {
     id: 'identification',
-    label: 'Identification',
+    label: 'Identificación',
     theme: {
       label: 'bg-[#9cc2e5] text-black border-black',
       main: 'border-black bg-white',
@@ -15,7 +15,7 @@ export const PHASES: PhaseDefinition[] = [
   },
   {
     id: 'screening',
-    label: 'Screening',
+    label: 'Cribado',
     theme: {
       label: 'bg-[#9cc2e5] text-black border-black',
       main: 'border-black bg-white',
@@ -31,7 +31,7 @@ export const PHASES: PhaseDefinition[] = [
   },
   {
     id: 'included',
-    label: 'Included',
+    label: 'Incluidos',
     theme: {
       label: 'bg-[#9cc2e5] text-black border-black',
       main: 'border-black bg-white',

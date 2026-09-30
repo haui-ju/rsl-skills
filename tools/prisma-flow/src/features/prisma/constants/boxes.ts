@@ -2,42 +2,42 @@ import type { BoxDefinition, BoxId } from '../types'
 
 export const BOXES: Record<BoxId, BoxDefinition> = {
   identified: {
-    label: 'Records identified',
+    label: 'Registros identificados',
     defaultText:
-      'Records identified from*:\nDatabases (n = )\nRegisters (n = )',
+      'Registros identificados de*:\nBases de datos (n = )\nRegistros (n = )',
   },
   removed: {
-    label: 'Records removed before screening',
-    defaultText: 'Records removed before\nscreening:\nDuplicate records removed (n = )\nRecords marked as ineligible by automation tools (n = )\nRecords removed for other reasons (n = )',
+    label: 'Registros eliminados antes del cribado',
+    defaultText: 'Registros eliminados antes del\ncribado:\nRegistros duplicados eliminados (n = )\nRegistros marcados como inelegibles por herramientas automatizadas (n = )\nRegistros eliminados por otras razones (n = )',
   },
   screened: {
-    label: 'Records screened',
-    defaultText: 'Records screened\n(n = )',
+    label: 'Registros cribados',
+    defaultText: 'Registros cribados\n(n = )',
   },
   excluded: {
-    label: 'Records excluded',
-    defaultText: 'Records excluded**\n(n = )',
+    label: 'Registros excluidos',
+    defaultText: 'Registros excluidos**\n(n = )',
   },
   retrieved: {
-    label: 'Reports sought for retrieval',
-    defaultText: 'Reports sought for retrieval\n(n = )',
+    label: 'Informes solicitados para recuperación',
+    defaultText: 'Informes solicitados para recuperación\n(n = )',
   },
   notRetrieved: {
-    label: 'Reports not retrieved',
-    defaultText: 'Reports not retrieved\n(n = )',
+    label: 'Informes no recuperados',
+    defaultText: 'Informes no recuperados\n(n = )',
   },
   assessed: {
-    label: 'Reports assessed for eligibility',
-    defaultText: 'Reports assessed for eligibility\n(n = )',
+    label: 'Informes evaluados para elegibilidad',
+    defaultText: 'Informes evaluados para elegibilidad\n(n = )',
   },
   excludedReasons: {
-    label: 'Reports excluded',
+    label: 'Informes excluidos',
     defaultText:
-      'Reports excluded:\nReason 1 (n = )\nReason 2 (n = )\nReason 3 (n = )\netc.',
+      'Informes excluidos:\nRazón 1 (n = )\nRazón 2 (n = )\nRazón 3 (n = )\netc.',
   },
   included: {
-    label: 'Studies included',
-    defaultText: 'Studies included in review\n(n = )\nReports of included studies\n(n = )',
+    label: 'Estudios incluidos',
+    defaultText: 'Estudios incluidos en la revisión\n(n = )\nInformes de estudios incluidos\n(n = )',
   },
 }
 

@@ -18,7 +18,7 @@ export function PrismaDiagram({ ref }: PrismaDiagramProps) {
         <div className="w-10 shrink-0" />
         <div className="flex w-[688px] items-center justify-center rounded-md border-[1.5px] border-black bg-[#ffc000] py-2">
           <span className="text-[15px] font-semibold text-black">
-            Identification of studies via databases and registers
+            Identificación de estudios a través de bases de datos y registros
           </span>
         </div>
       </div>
