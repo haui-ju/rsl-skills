@@ -1,0 +1,5 @@
+{
+  "aceptados": "Se aceptan estudios que combinan, en título o resumen, técnicas de IA con detección de amenazas o anomalías en entornos de nube o en logs de acceso a datos, aunque no detallen aún object storage o métricas concretas (dudas a texto completo).",
+  "rechazados": "Se rechazan registros claramente ajenos (dominios clínicos, agrícolas u otros), IDS o benchmarks de red sin vínculo con almacenamiento en nube, o propuestas sin IA cuando el resumen solo describe reglas o firmas.",
+  "dudas": "Muchas dudas piden confirmar en el PDF si el caso de uso es object storage o buckets, si el método es realmente ML/DL y no solo reglas, y si reportan precisión, recall, F1 u otra métrica de detección."
+}

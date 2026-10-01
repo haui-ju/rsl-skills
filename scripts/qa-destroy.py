@@ -1294,6 +1294,23 @@ def _(sb):
     sb.run(["crib", "merge", t], "OK", has="1 corrección(es) del usuario conservada(s)")
 
 
+@case("C06", "orden", "cribado 1: prepare rellena Enlace doi.org en WoS cuando DOI Link exporta 0 y conserva el DOI")
+def _(sb):
+    t = sb.theme(paper=False, picoc="PIO")
+    pdir = next((t / "picoc").iterdir())
+    import csv as _csv
+    wos = pdir / "wos-zero-link.txt"
+    wos.write_text(
+        "PT\tAU\tTI\tSO\tLA\tDT\tDE\tID\tAB\tPY\tDI\tUT\tDL\n"
+        "J\tX\tCloud IDS with ML\tJ1\tEnglish\tArticle\t\t\tAbstract here.\t2025\t10.1234/wos.doi.test\tWOS:9\t0\n",
+        encoding="utf-8-sig",
+    )
+    sb.run(["crib", "prepare", t], "OK", quiet=True)
+    rows = list(_csv.DictReader((pdir / "resultados-PIO.csv").open(encoding="utf-8-sig", newline="")))
+    sb.check(len(rows) == 1 and rows[0]["DOI"] == "10.1234/wos.doi.test", f"DOI WoS mal: {rows[0] if rows else ''}")
+    sb.check(rows[0]["Enlace"] == "https://doi.org/10.1234/wos.doi.test", f"Enlace WoS mal: {rows[0].get('Enlace')}")
+
+
 @case("C05", "orden", "cribado 2: init en RSL/picoc/<fecha>-cribado-2-<MARCO> y align mueve pdf-draft por título a docs/pdf")
 def _(sb):
     t = sb.theme(paper=False, picoc="PICOCT")

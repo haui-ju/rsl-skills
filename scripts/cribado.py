@@ -158,7 +158,13 @@ def read_xls(path: Path) -> tuple[list[str], list[list[str]]]:
         raise Fail(f"{rel(path)} no es un Excel válido ({type(e).__name__})", "expórtalo de nuevo desde Web of Science (Excel)")
 
     def val(v) -> str:
-        return str(int(v)) if isinstance(v, float) and v.is_integer() else str(v).strip()
+        if isinstance(v, float):
+            if v == 0.0:
+                return ""
+            if v.is_integer():
+                return str(int(v))
+        s = str(v).strip()
+        return "" if s in ("0", "0.0") else s
 
     rows = [[val(v) for v in sh.row_values(i)] for i in range(sh.nrows)]
     if not rows:
@@ -234,6 +240,7 @@ def load_source(path: Path, base: str) -> tuple[list[dict], Path | None]:
         for col, names in MAP.items():
             i = idx.get(names[k])
             rec[col] = row[i].strip() if i is not None and i < len(row) else ""
+        fix_doi_enlace(rec)
         out.append(rec)
     return out, converted
 
@@ -245,6 +252,24 @@ def norm_title(s: str) -> str:
 
 def norm_doi(s: str) -> str:
     return DOI_PREFIX.sub("", s.strip()).lower()
+
+
+def strip_zero_field(s: str) -> str:
+    s = (s or "").strip()
+    return "" if s in ("0", "0.0") else s
+
+
+def fix_doi_enlace(rec: dict) -> None:
+    """WoS Excel suele dejar DOI Link en 0; unifica DOI y enlace doi.org cuando toca."""
+    doi = strip_zero_field(rec.get("DOI", ""))
+    link = strip_zero_field(rec.get("Enlace", ""))
+    if not doi and link:
+        doi = norm_doi(link)
+    rec["DOI"] = norm_doi(doi) if doi else ""
+    if not link and rec["DOI"]:
+        rec["Enlace"] = f"https://doi.org/{rec['DOI']}"
+    else:
+        rec["Enlace"] = link
 
 
 def keywords(rec: dict) -> str:
@@ -310,7 +335,8 @@ def cmd_prepare(theme: Path) -> int:
         for r in unique:
             fh.write(json.dumps({"id": r["Id"], "titulo": r["Título"] or "(sin título)",
                                  "resumen": COPYRIGHT_RE.sub("", r["Resumen"]) or "(sin resumen)",
-                                 "palabras_clave": keywords(r) or "—"}, ensure_ascii=False) + "\n")
+                                 "palabras_clave": keywords(r) or "—",
+                                 "doi": norm_doi(r["DOI"]) or None}, ensure_ascii=False) + "\n")
     lotes = [[i + 1, min(i + BATCH, len(unique)), unique[i]["Id"], unique[min(i + BATCH, len(unique)) - 1]["Id"]]
              for i in range(0, len(unique), BATCH)]
     (work / "criterios.md").write_text(

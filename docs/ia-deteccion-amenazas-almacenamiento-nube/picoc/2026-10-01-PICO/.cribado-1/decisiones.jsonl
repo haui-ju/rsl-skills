@@ -1,0 +1,292 @@
+{"id": "R001", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R002", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R003", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R004", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R005", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R006", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R007", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R008", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R009", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R010", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R011", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R012", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R013", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R014", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R015", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R016", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R017", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R018", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R019", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R020", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R021", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R022", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R023", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R024", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R025", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R026", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R027", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R028", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R029", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R030", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R031", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R032", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R033", "decision": "NO", "criterios": ["CE1"], "motivo": "El resumen no vincula detección con almacenamiento en nube.", "duda": false, "acuerdo": true}
+{"id": "R034", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R035", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R036", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R037", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R038", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R039", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R040", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R041", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R042", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R043", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R044", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R045", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R046", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R047", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R048", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R049", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R050", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R051", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R052", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R053", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R054", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R055", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R056", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R057", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R058", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R059", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R060", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R061", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R062", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R063", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R064", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R065", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R066", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R067", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R068", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R069", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R070", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R071", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R072", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R073", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R074", "decision": "NO", "criterios": ["CE1"], "motivo": "El resumen no vincula detección con almacenamiento en nube.", "duda": false, "acuerdo": true}
+{"id": "R075", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R076", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R077", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R078", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R079", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R080", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R081", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R082", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R083", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R084", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R085", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R086", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R087", "decision": "SI", "criterios": ["CI5"], "motivo": "IA y almacenamiento plausibles; métricas no claras en el resumen.", "duda": true, "acuerdo": true}
+{"id": "R088", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R089", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R090", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R091", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R092", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R093", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R094", "decision": "SI", "criterios": ["CI5"], "motivo": "IA y almacenamiento plausibles; métricas no claras en el resumen.", "duda": true, "acuerdo": true}
+{"id": "R095", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R096", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R097", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R098", "decision": "SI", "criterios": ["CI4"], "motivo": "Contexto de almacenamiento o logs; falta confirmar técnica de IA.", "duda": true, "acuerdo": true}
+{"id": "R099", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R100", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R101", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R102", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R103", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R104", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R105", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R106", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R107", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R108", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R109", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R110", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R111", "decision": "NO", "criterios": ["CI3"], "motivo": "No menciona object storage ni IA para amenazas en la nube.", "duda": false, "acuerdo": true}
+{"id": "R112", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R115", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R116", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R117", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R118", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R122", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R123", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R125", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R126", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R127", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R128", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R130", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R131", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R132", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R133", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R135", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R136", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R137", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R139", "decision": "SI", "criterios": ["CI5"], "motivo": "IA y almacenamiento plausibles; métricas no claras en el resumen.", "duda": true, "acuerdo": true}
+{"id": "R140", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R141", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R142", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R143", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R145", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R146", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R147", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R149", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R150", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R151", "decision": "SI", "criterios": ["CI4"], "motivo": "Contexto de almacenamiento o logs; falta confirmar técnica de IA.", "duda": true, "acuerdo": true}
+{"id": "R153", "decision": "NO", "criterios": ["CE1"], "motivo": "El resumen no vincula detección con almacenamiento en nube.", "duda": false, "acuerdo": true}
+{"id": "R154", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R155", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R158", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R162", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R163", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R164", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R166", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R167", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R168", "decision": "NO", "criterios": ["CE1"], "motivo": "El resumen no vincula detección con almacenamiento en nube.", "duda": false, "acuerdo": true}
+{"id": "R170", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R174", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R175", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R178", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R179", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R182", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R185", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R186", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R189", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R191", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R192", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R193", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R194", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R195", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R197", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R198", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R199", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R200", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R201", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R204", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R205", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R206", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R207", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R208", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R210", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R211", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R212", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R214", "decision": "NO", "criterios": ["CE1"], "motivo": "El resumen no vincula detección con almacenamiento en nube.", "duda": false, "acuerdo": true}
+{"id": "R215", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R217", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R218", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R220", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R221", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R222", "decision": "NO", "criterios": ["CI3"], "motivo": "No menciona object storage ni IA para amenazas en la nube.", "duda": false, "acuerdo": true}
+{"id": "R223", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R224", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R226", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R229", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R230", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R232", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R233", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R234", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R237", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R238", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R239", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R240", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R241", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R242", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R243", "decision": "NO", "criterios": ["CI3"], "motivo": "No menciona object storage ni IA para amenazas en la nube.", "duda": false, "acuerdo": true}
+{"id": "R244", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R245", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R246", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R249", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R251", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R253", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R254", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R255", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R256", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R258", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R259", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R260", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R261", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R263", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R264", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R265", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R267", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R268", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R269", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R270", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R272", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R273", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R274", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R278", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R280", "decision": "NO", "criterios": ["CE1"], "motivo": "El resumen no vincula detección con almacenamiento en nube.", "duda": false, "acuerdo": true}
+{"id": "R281", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R285", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R287", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R289", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R290", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R292", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R293", "decision": "SI", "criterios": ["CI4"], "motivo": "Contexto de almacenamiento o logs; falta confirmar técnica de IA.", "duda": true, "acuerdo": true}
+{"id": "R294", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R295", "decision": "NO", "criterios": ["CI3"], "motivo": "No menciona object storage ni IA para amenazas en la nube.", "duda": false, "acuerdo": true}
+{"id": "R296", "decision": "SI", "criterios": ["CI4"], "motivo": "Contexto de almacenamiento o logs; falta confirmar técnica de IA.", "duda": true, "acuerdo": true}
+{"id": "R297", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R299", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R300", "decision": "SI", "criterios": ["CI5"], "motivo": "IA y almacenamiento plausibles; métricas no claras en el resumen.", "duda": true, "acuerdo": true}
+{"id": "R301", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R302", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R303", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R304", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R305", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}
+{"id": "R307", "decision": "NO", "criterios": ["CI3"], "motivo": "No menciona object storage ni IA para amenazas en la nube.", "duda": false, "acuerdo": true}
+{"id": "R308", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R309", "decision": "NO", "criterios": ["CE1"], "motivo": "El resumen no vincula detección con almacenamiento en nube.", "duda": false, "acuerdo": true}
+{"id": "R310", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R311", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R312", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R313", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R314", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R315", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R316", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R317", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R318", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R319", "decision": "NO", "criterios": ["CE1"], "motivo": "El resumen no vincula detección con almacenamiento en nube.", "duda": false, "acuerdo": true}
+{"id": "R320", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R321", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R322", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R323", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R324", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R326", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R328", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R329", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R330", "decision": "NO", "criterios": ["CI3"], "motivo": "No menciona object storage ni IA para amenazas en la nube.", "duda": false, "acuerdo": true}
+{"id": "R331", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R332", "decision": "SI", "criterios": ["CI4"], "motivo": "Contexto de almacenamiento o logs; falta confirmar técnica de IA.", "duda": true, "acuerdo": true}
+{"id": "R334", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R335", "decision": "SI", "criterios": ["CI4"], "motivo": "Contexto de almacenamiento o logs; falta confirmar técnica de IA.", "duda": true, "acuerdo": true}
+{"id": "R336", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R337", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R338", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R339", "decision": "NO", "criterios": ["CI3"], "motivo": "No menciona object storage ni IA para amenazas en la nube.", "duda": false, "acuerdo": true}
+{"id": "R341", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R342", "decision": "NO", "criterios": ["CE1"], "motivo": "Enfoque en tráfico de red o IDS sin capa de almacenamiento.", "duda": false, "acuerdo": true}
+{"id": "R343", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R344", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R345", "decision": "SI", "criterios": ["CI4"], "motivo": "Contexto de almacenamiento o logs; falta confirmar técnica de IA.", "duda": true, "acuerdo": true}
+{"id": "R346", "decision": "NO", "criterios": ["CI3"], "motivo": "No menciona object storage ni IA para amenazas en la nube.", "duda": false, "acuerdo": true}
+{"id": "R347", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R348", "decision": "NO", "criterios": ["CI3"], "motivo": "No menciona object storage ni IA para amenazas en la nube.", "duda": false, "acuerdo": true}
+{"id": "R349", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R350", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R351", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R352", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R353", "decision": "SI", "criterios": ["CI4"], "motivo": "Contexto de almacenamiento o logs; falta confirmar técnica de IA.", "duda": true, "acuerdo": true}
+{"id": "R354", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R355", "decision": "SI", "criterios": ["CI5"], "motivo": "IA y almacenamiento plausibles; métricas no claras en el resumen.", "duda": true, "acuerdo": true}
+{"id": "R356", "decision": "NO", "criterios": ["CE1"], "motivo": "El resumen no vincula detección con almacenamiento en nube.", "duda": false, "acuerdo": true}
+{"id": "R357", "decision": "NO", "criterios": ["CE1"], "motivo": "El resumen no vincula detección con almacenamiento en nube.", "duda": false, "acuerdo": true}
+{"id": "R358", "decision": "SI", "criterios": ["CI3"], "motivo": "Seguridad o anomalías en nube; falta confirmar object storage o logs de buckets.", "duda": true, "acuerdo": true}
+{"id": "R359", "decision": "SI", "criterios": ["CI4"], "motivo": "Contexto de almacenamiento o logs; falta confirmar técnica de IA.", "duda": true, "acuerdo": true}
+{"id": "R360", "decision": "SI", "criterios": ["CI3"], "motivo": "Cubre IA y contexto de almacenamiento o logs de acceso en nube.", "duda": false, "acuerdo": true}

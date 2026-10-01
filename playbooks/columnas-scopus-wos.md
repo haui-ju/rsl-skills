@@ -30,6 +30,8 @@ El `.xls` se lee con `xlrd` (entorno de graphify: `pipx inject graphifyy xlrd`) 
 | Resumen | `Abstract` | `Abstract` | `AB` |
 | Enlace | `Link` | `DOI Link` | `DL` |
 
+En exportaciones WoS (Excel), `DOI Link` a veces sale como `0` aunque `DOI`/`DI` traiga el identificador: `cribado:prepare` ignora ese cero y, si hay DOI, escribe `https://doi.org/<doi>` en la columna unificada `Enlace`.
+
 El unificado `resultados-<MARCO>.csv` tiene, en este orden: `Id`, `Fuente`, las columnas de la tabla y `Fila origen` (fila del archivo de la base, contando la cabecera como 1). `Id` es `R001…` en el orden Scopus y luego WoS. Obligatorias: Título y Resumen (ERROR si una exportación no las trae); las demás pueden faltar (quedan vacías). En WoS el año llega como número (`2024.0`) y se guarda como `2024`.
 
 ## Duplicados (antes del análisis)
