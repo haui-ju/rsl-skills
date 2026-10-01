@@ -42,9 +42,17 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import picoc_versions as pv  # noqa: E402
 from cribado2_config import (  # noqa: E402
     empty_retrieval_message,
+    ensure_cribado2_config,
     filter_si_for_retrieval,
     normalize_use,
     read_cribado2_use,
+)
+from cribado2_polish import (  # noqa: E402
+    cmd_apply as polish_apply,
+    cmd_cuota as polish_cuota,
+    cmd_polish_merge as polish_merge,
+    cmd_polish_prepare as polish_prepare,
+    cmd_polish_report as polish_report,
 )
 from rsl_out import Fail, error, ok, run  # noqa: E402
 
@@ -69,7 +77,8 @@ META_PDF = re.compile(
     re.I,
 )
 USAGE = (
-    "uso: cribado2.py init|download|align|prepare|build|status docs/<slug> "
+    "uso: cribado2.py init|download|align|documentos|prepare|build|status docs/<slug> "
+    "· polish-prepare|polish-merge|cuota|polish-report|apply docs/<slug> "
     "· stamp docs/<slug> <pdf> · query docs/<slug> \"<pregunta>\""
 )
 
@@ -655,8 +664,10 @@ def cmd_download(theme: Path) -> int:
             f"pnpm -s cribado2:align {rel(theme)}, o revisa {rel(report)}; "
         )
     nxt += f"Usa rsl-cribado-2-memoria sobre {rel(theme)}/"
+    cfg = ensure_cribado2_config(theme)
     return ok(
-        f"{got} de {sought} PDF en {rel(corpus)}/docs/pdf/ ({man} manuales/alineados, {miss} no recuperados); tabla en {rel(report)}",
+        f"{got} de {sought} PDF en {rel(corpus)}/docs/pdf/ ({man} manuales/alineados, {miss} no recuperados); "
+        f"tabla en {rel(report)}; config cribado_2.use={cfg['use']} min_rsl={cfg['min_rsl']}",
         nxt,
     )
 
@@ -863,6 +874,12 @@ def cmd_query(theme: Path, question: str) -> int:
     return r.returncode
 
 
+def _polish_cmd(theme: Path, fn) -> int:
+    folder = picoc_folder(theme)
+    corpus = cribado2_dir(theme)
+    return fn(theme, corpus, folder, ROOT)
+
+
 def main(args: list[str]) -> int:
     if len(args) < 2:
         print(__doc__)
@@ -876,6 +893,11 @@ def main(args: list[str]) -> int:
         "prepare": cmd_prepare,
         "build": cmd_build,
         "status": cmd_status,
+        "polish-prepare": lambda t: _polish_cmd(t, polish_prepare),
+        "polish-merge": lambda t: _polish_cmd(t, polish_merge),
+        "cuota": lambda t: _polish_cmd(t, polish_cuota),
+        "polish-report": lambda t: _polish_cmd(t, polish_report),
+        "apply": lambda t: _polish_cmd(t, polish_apply),
     }
     if cmd in simple and not rest:
         return simple[cmd](theme)

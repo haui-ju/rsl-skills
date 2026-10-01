@@ -24,7 +24,8 @@ El agente verifica/instala prerrequisitos (node + pnpm, pipx graphifyy, poppler)
 | `rsl-cribado-2` | Cribado 2, paso 1: `init` + descarga OA según `cribado_2.use` (todos los SI, solo sin duda o solo dudas); catálogo en `RSL/picoc/<fecha>-cribado-2-<MARCO>/`; PDF en `docs/pdf/`; `prisma.json` retrieval | `RSL/picoc/<fecha>-cribado-2-<MARCO>/` |
 | `rsl-cribado-2-alineamiento-pdfs` | Cribado 2: mueve PDF que dejas en `docs/pdf-draft/` (nombre ≈ título) al nombre canónico y actualiza el catálogo | mismo + `docs/pdf/` |
 | `rsl-cribado-2-memoria` | Cribado 2, paso 2: `docs/pdf/` → `docs/md/` + grafo Graphify del corpus (`memoria-traza.json`) | `RSL/picoc/<fecha>-cribado-2-<MARCO>/graphify-out/graph.json` |
-| `rsl-cribado-2-polish` | Cribado 2, paso 3: evaluación a texto completo (CI/CE del picoc, lotes con defensor/crítico vía grafo cribado-2) | `cribado-2-evaluacion.md` + `.cribado-2/evaluaciones/` |
+| `rsl-cribado-2-polish` | Cribado 2, paso 3: mérito SI/PODRIA/NO vía grafo; `cribado2:cuota` con `min_rsl` (relleno leve/alto) | `cribado-2-evaluacion.md` + `.cribado-2/decisiones.jsonl` |
+| `rsl-cribado-2-aplicar` | Tras aprobar la evaluación: `resultados-<MARCO>-cribado-2.csv` (mismas filas que cribado-1; columnas finales ¿Se acepta? + Justificación cribado 2) | `resultados-*-cribado-2.csv` + `prisma.json` eligibility |
 | `rsl-make-paper` | Nueva versión del paper borrador, solo secciones `on` (mejorar) y `rewrite` (reescribir) de `config.yml` (+ agente `citas-rsl` y `redaccion:lint`) | `docs/[titulo-breve]/paper/<fecha>/paper-borrador.md` |
 | `rsl-polish-paper` | Pule esas secciones (`critico-rsl` + `defensor-rsl`; `impacto-social-rsl` si están Justificación u Objetivo; luego `redaccion-rsl` + `citas-rsl`) → texto limpio + traza de debate | `paper/<fecha>/paper-polish.md` + `paper-debate.md` |
 | `rsl-qa-destroy` | Intenta romper el flujo a propósito (flujo positivo, orden mezclado, entradas destructivas, marco libre, revisión de skills y agentes) en un sandbox de `/tmp`; solo reporta | `qa/<fecha>/qa-report.md` + `qa-report.json` |
@@ -362,7 +363,7 @@ rsl-bootstrap             ← paso 0 (una vez por clon / máquina)
   → graphify-theme (PASS)
   → rsl-polish-report
   → (tú: queries de Scopus y WoS, exportaciones en picoc/<fecha>-<MARCO>/) → rsl-cribado-1 → (tú: revisar) → rsl-cribado-1-aplicar
-  → rsl-cribado-2 → (tú: pdf-draft + alineamiento) → rsl-cribado-2-memoria → rsl-cribado-2-polish
+  → rsl-cribado-2 → (tú: pdf-draft + alineamiento) → rsl-cribado-2-memoria → rsl-cribado-2-polish → rsl-cribado-2-aplicar
   → rsl-make-paper          ← paper/<fecha>/paper-borrador.md (secciones on de config.yml)
   → rsl-polish-paper        ← paper-polish.md limpio + paper-debate.md
   → marcar frozen en config.yml lo validado · activar Metodología · (tú: selección PRISMA) · activar Resultados…

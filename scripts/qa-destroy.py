@@ -1376,6 +1376,17 @@ def _(sb):
     )
 
 
+@case("C08", "orden", "cribado2_config asegura min_rsl=40 y cuota avisa sin ERROR si no alcanza el mínimo")
+def _(sb):
+    from cribado2_config import MIN_RSL_DEFAULT, ensure_cribado2_config
+
+    t = sb.theme(paper=False, picoc="PICOCT")
+    cfg = ensure_cribado2_config(t)
+    sb.check(cfg.get("min_rsl") == MIN_RSL_DEFAULT, f"min_rsl esperado {MIN_RSL_DEFAULT}: {cfg}")
+    txt = (t / "config.yml").read_text(encoding="utf-8")
+    sb.check("min_rsl:" in txt, f"config sin min_rsl: {txt[:200]}")
+
+
 @case("K07", "marco", "redaccion:lint acepta n = X y [[ AGREGAR DIAGRAMA ]] como marcadores del usuario, pero sigue fallando con TODO y con apelaciones a «el lector» (no con «lector de pantalla»)")
 def _(sb):
     f = sb.base / "metodo.md"

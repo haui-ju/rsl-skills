@@ -17,11 +17,16 @@
     "not_retrieved": 1
   },
   "eligibility": {
-    "assessed": null,
-    "excluded_reasons": {}
+    "assessed": 52,
+    "excluded_reasons": {
+      "CI4": 15,
+      "CE3": 3,
+      "CI3": 1,
+      "CI1": 1
+    }
   },
   "included": {
-    "studies": null,
-    "reports": null
+    "studies": 35,
+    "reports": 35
   }
 }

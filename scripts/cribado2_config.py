@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""cribado_2.use en docs/<slug>/config.yml — qué SI entran al retrieval de cribado 2."""
+"""cribado_2 en docs/<slug>/config.yml — retrieval (use) y meta min_rsl para cribado 2 polish."""
 from __future__ import annotations
 
 import re
@@ -20,6 +20,7 @@ USE_ALL = "all"
 USE_SOLO_SI = "solo_si"
 USE_SOLO_DUDAS = "solo_dudas"
 USE_VALUES = (USE_ALL, USE_SOLO_SI, USE_SOLO_DUDAS)
+MIN_RSL_DEFAULT = 40
 
 _ALIAS = {
     "all": USE_ALL,
@@ -36,10 +37,11 @@ _ALIAS = {
     "solo duda": USE_SOLO_DUDAS,
 }
 
-_MIN_CONFIG = """# Retrieval cribado 2 (rsl-cribado-2). Valores: all | solo_si | solo_dudas
-# Paper completo: pnpm -s paper:status docs/<slug> --init
+_MIN_BLOCK = """# Retrieval cribado 2 (rsl-cribado-2). use: all | solo_si | solo_dudas
+# min_rsl: meta mínima de estudios aceptados tras cribado 2 (SI+PODRIA+relleno en CSV)
 cribado_2:
   use: all
+  min_rsl: 40
 """
 
 
@@ -62,58 +64,96 @@ def normalize_use(raw: str | None, *, strict: bool = True) -> str:
     return USE_ALL
 
 
-def _load_yaml(path: Path) -> dict:
-    if yaml is None:
-        raise Fail("falta PyYAML", "instálalo: pip install --user pyyaml | sudo pacman -S python-yaml")
+def normalize_min_rsl(raw: object | None, *, strict: bool = True) -> int:
+    if raw is None or (isinstance(raw, str) and not raw.strip()):
+        return MIN_RSL_DEFAULT
     try:
-        data = yaml.safe_load(path.read_text(encoding="utf-8-sig"))
-    except yaml.YAMLError as e:
-        mark = getattr(e, "problem_mark", None)
-        where = f" (línea {mark.line + 1})" if mark else ""
-        raise Fail(f"{path.name} no es YAML válido{where}", "corrige la sintaxis de config.yml")
-    except UnicodeDecodeError:
-        raise Fail(f"{path.name} no está en UTF-8", "guarda config.yml en UTF-8")
-    if data is None:
-        return {}
-    if not isinstance(data, dict):
-        raise Fail(f"{path.name} debe ser un mapa clave: valor", "corrige config.yml")
-    return data
+        n = int(raw)
+    except (TypeError, ValueError):
+        if strict:
+            raise Fail(f"cribado_2.min_rsl «{raw}» no es un entero ≥ 0", "usa p. ej. min_rsl: 40 en config.yml")
+        return MIN_RSL_DEFAULT
+    if n < 0:
+        if strict:
+            raise Fail(f"cribado_2.min_rsl no puede ser negativo ({n})", "usa min_rsl: 40 o el valor que necesites")
+        return MIN_RSL_DEFAULT
+    return n
 
 
-def _dump_yaml(data: dict) -> str:
-    if yaml is None:
-        raise Fail("falta PyYAML", "instálalo: pip install --user pyyaml | sudo pacman -S python-yaml")
-    return yaml.safe_dump(data, allow_unicode=True, sort_keys=False, default_flow_style=False)
+def _parse_cribado2_block(text: str) -> dict[str, object]:
+    """Lee use y min_rsl del bloque cribado_2 sin reescribir el YAML entero."""
+    use = USE_ALL
+    min_rsl = MIN_RSL_DEFAULT
+    m = re.search(r"^cribado_2:\s*$([\s\S]*?)(?=^\S|\Z)", text, re.M)
+    block = m.group(1) if m else ""
+    um = re.search(r"^\s*use:\s*(\S+)\s*$", block, re.M)
+    if um:
+        use = normalize_use(um.group(1))
+    mm = re.search(r"^\s*min[_-]rsl:\s*(\d+)\s*$", block, re.M)
+    if mm:
+        min_rsl = normalize_min_rsl(int(mm.group(1)))
+    return {"use": use, "min_rsl": min_rsl}
+
+
+def _patch_cribado2_in_text(text: str, use: str, min_rsl: int, *, force_use: bool, force_min: bool) -> str:
+    if "cribado_2:" not in text:
+        return text.rstrip() + "\n\n" + _MIN_BLOCK + "\n"
+    if not re.search(r"^\s*min[_-]rsl:", text, re.M):
+        text = re.sub(
+            r"(^cribado_2:\s*\n)(\s*use:\s*\S+\s*\n)",
+            rf"\1\2  min_rsl: {min_rsl}\n",
+            text,
+            count=1,
+            flags=re.M,
+        )
+    if force_use:
+        text = re.sub(r"(^cribado_2:\s*\n\s*)use:\s*\S+", rf"\1use: {use}", text, count=1, flags=re.M)
+    if force_min and re.search(r"^\s*min[_-]rsl:", text, re.M):
+        text = re.sub(r"^\s*min[_-]rsl:\s*\d+", f"  min_rsl: {min_rsl}", text, count=1, flags=re.M)
+    return text
 
 
 def read_cribado2_use(theme: Path) -> str:
     path = theme / CONFIG
     if not path.is_file():
         return USE_ALL
-    data = _load_yaml(path)
-    block = data.get("cribado_2")
-    if not isinstance(block, dict):
-        return USE_ALL
-    return normalize_use(block.get("use"))
+    return str(_parse_cribado2_block(path.read_text(encoding="utf-8-sig"))["use"])
+
+
+def read_cribado2_min_rsl(theme: Path) -> int:
+    path = theme / CONFIG
+    if not path.is_file():
+        return MIN_RSL_DEFAULT
+    return int(_parse_cribado2_block(path.read_text(encoding="utf-8-sig"))["min_rsl"])
+
+
+def ensure_cribado2_config(theme: Path) -> dict[str, object]:
+    """Añade cribado_2 o min_rsl sin re-serializar todo config.yml."""
+    path = theme / CONFIG
+    if not path.is_file():
+        path.write_text(_MIN_BLOCK + "\n", encoding="utf-8")
+        return {"use": USE_ALL, "min_rsl": MIN_RSL_DEFAULT}
+    text = path.read_text(encoding="utf-8-sig")
+    parsed = _parse_cribado2_block(text)
+    had_block = "cribado_2:" in text
+    had_min = bool(re.search(r"^\s*min[_-]rsl:", text, re.M))
+    had_use = bool(re.search(r"^cribado_2:[\s\S]*?^\s*use:", text, re.M))
+    use = parsed["use"] if had_use else USE_ALL
+    min_rsl = parsed["min_rsl"] if had_min else MIN_RSL_DEFAULT
+    new_text = _patch_cribado2_in_text(
+        text,
+        str(use),
+        int(min_rsl),
+        force_use=False,
+        force_min=False,
+    )
+    if new_text != text or not had_block:
+        path.write_text(new_text, encoding="utf-8")
+    return {"use": use, "min_rsl": min_rsl}
 
 
 def write_cribado2_config_on_apply(theme: Path) -> str:
-    """Asegura cribado_2.use en config.yml; no pisa use si ya existe. Devuelve el valor actual."""
-    path = theme / CONFIG
-    if not path.is_file():
-        path.write_text(_MIN_CONFIG, encoding="utf-8")
-        return USE_ALL
-    data = _load_yaml(path)
-    block = data.get("cribado_2")
-    if not isinstance(block, dict):
-        block = {}
-        data["cribado_2"] = block
-    if "use" not in block or block.get("use") is None or str(block.get("use")).strip() == "":
-        block["use"] = USE_ALL
-    else:
-        block["use"] = normalize_use(block.get("use"))
-    path.write_text(_dump_yaml(data), encoding="utf-8")
-    return str(block["use"])
+    return str(ensure_cribado2_config(theme)["use"])
 
 
 def filter_si_for_retrieval(si: list[dict], dmap: dict[str, bool], use: str) -> list[dict]:

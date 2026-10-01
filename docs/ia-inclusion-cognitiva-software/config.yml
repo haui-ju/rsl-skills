@@ -53,5 +53,7 @@ Declaraciones:
 # Referencias: automáticas (siempre se derivan de las citas del texto)
 
 # Retrieval cribado 2 (rsl-cribado-2). Valores: all | solo_si | solo_dudas
+# min_rsl: meta mínima de estudios aceptados tras cribado 2 (SI+PODRIA+relleno en CSV)
 cribado_2:
   use: all
+  min_rsl: 40

@@ -1,8 +1,12 @@
 # Cribado 2 — evaluación a texto completo
 
+<!-- cribado2:hash=e22c2c48fe33 -->
+
 Picoc: `docs/ia-inclusion-cognitiva-software/picoc/2026-10-01-PICO/picoc.md` · Corpus: `docs/ia-inclusion-cognitiva-software/RSL/picoc/2026-10-01-cribado-2-PICO/`
 
-Criterios: CI1–CI4 y CE1–CE3 del picoc. Decisiones trazadas en `.cribado-2/evaluaciones/lote-NN.jsonl`.
+Decisiones: SI 19 · PODRIA 16 · RELLENO-LEVE 0 · RELLENO-ALTO 0 · NO 17
+
+Cuota: min_rsl **40** · núcleo **34** · objetivo **40** · aceptados traza **35** · min_alcanzado **no**
 
 | # | id | titulo | decision | motivo |
 |---:|---|---|---|---|
@@ -58,5 +62,3 @@ Criterios: CI1–CI4 y CE1–CE3 del picoc. Decisiones trazadas en `.cribado-2/e
 | 50 | R132 | Large language models for autism: evaluating theory of… | NO | Juego gamificado con LLM para entrenar theory of mind en autismo; producto principal es t… |
 | 51 | R135 | UDL and AI-based educational personalization: effects … | NO | Cuasi-experimento escolar con personalización UDL y analítica adaptativa IA; intervención… |
 | 52 | R139 | Functionality, safety and usability of a digital platf… | PODRIA | Texto completo no recuperado (sin PDF; DOI/repositorio sin acceso); cribado 1 sugiere pla… |
-
-**Resumen:** SI 19 · NO 17 · PODRIA 16 (total 52)
