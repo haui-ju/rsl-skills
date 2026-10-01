@@ -1,0 +1,439 @@
+===== PDF PAGE 1 / 7 =====
+                 Towards More Accessible Open Source AI Platforms
+                 Michael Murray                                          Tamanna Motahar                                              Maya Cakmak
+           University of Washington                                  University of Washington                                 University of Washington
+            Seattle, Washington, USA                                 Seattle, Washington, USA                                 Seattle, Washington, USA
+           mmurr@cs.washington.edu                                 tmotahar@cs.washington.edu                                mcakmak@cs.washington.edu
+
+Abstract                                                                                      diverse backgrounds can access and participate in its development
+AI education is rapidly becoming essential as artificial intelligence                         is essential for both innovation and social equity.
+transforms industries, yet students with disabilities often encounter                            AI education plays a pivotal role in equipping the next genera-
+significant barriers to learning and engagement. This paper ex-                               tion with the skills needed to navigate and contribute to this rapidly
+amines accessibility challenges encountered by learners with vi-                              evolving landscape. Yet, despite the democratization of tools and
+sual, cognitive, and physical disabilities when using foundational                            resources, significant disparities persist in access to high-quality
+tools for AI development. Using HuggingFace—an influential open-                              AI learning opportunities. In recent years, there has been increased
+source platform—as a case study, we analyze barriers such as insuf-                           attention to disability in Computer Science (CS) education [3, 4].
+ficient screen reader support, complex interfaces, and information                            However, while efforts to expand AI education for underrepresented
+overload. We propose design recommendations to promote equity                                 groups are increasing, students with disabilities remain largely ex-
+and inclusivity in AI tools, aiming to empower diverse learners                               cluded from these initiatives. Structural barriers—including inac-
+to thrive in AI education. Our work highlights the importance of                              cessible tools, documentation, and workflows—undermine learners
+inclusive design for CS educators, researchers, and policymakers.                             with disabilities full participation in AI development, perpetuating
+                                                                                              inequities in education and career opportunities. Achieving equity
+CCS Concepts                                                                                  in AI education requires targeted efforts to address these barriers
+                                                                                              and create inclusive learning environments for all.
+• Social and professional topics → Computing education.
+                                                                                                 A handful of tools and resources have emerged as critical en-
+                                                                                              try points for AI education, bridging the gap between theoretical
+Keywords                                                                                      knowledge and practical application. Platforms like HuggingFace,
+AI education, CS education, inclusive design, accessibility, disability                       PyTorch, and TensorFlow have become indispensable for building,
+ACM Reference Format:                                                                         training, and deploying AI models 1 . HuggingFace, in particular,
+Michael Murray, Tamanna Motahar, and Maya Cakmak. 2025. Towards More                          has gained prominence as a leading open-source platform for nat-
+Accessible Open Source AI Platforms. In Proceedings of the 2025 Conference                    ural language processing (NLP) and machine learning, offering
+for Research on Equitable and Sustained Participation in Engineering, Com-                    pretrained models, datasets, and APIs that simplify AI development.
+puting, and Technology (RESPECT 2025), July 14–16, 2025, Newark, NJ, USA.                     The platform has had exponential growth and has become the de
+ACM, New York, NY, USA, 7 pages. https://doi.org/10.1145/3704637.3734738                      facto home for open source models [5, 10, 11]. These tools are not
+                                                                                              just technical frameworks; they represent ecosystems that define
+1 Introduction                                                                                how learners and professionals alike interact with AI. For students
+Artificial Intelligence (AI) has emerged as one of the most transfor-                         entering the field, mastery of these tools is essential for academic
+mative forces of the 21st century, reshaping industries and redefin-                          success, research, and industry readiness. However, the accessibil-
+ing the global workforce. According to the World Economic Forum,                              ity of these platforms is often overlooked, leaving learners with
+AI is expected to result in significant labor-market disruptions and                          disabilities at a disadvantage.
+AI Specialist tops the list of fastest growing jobs [7]. AI-exposed                              Accessibility challenges in these critical tools can take many
+sectors are experiencing unprecedented productivity gains, with AI-                           forms. For instance, visually impaired learners may struggle with
+intensive roles commanding a wage premium of up to 25% [15]. By                               interfaces and diagrams that are not compatible with screen read-
+2032, the generative AI market is projected to surpass $1.3 trillion,                         ers [2, 14]. Likewise, neurodivergent learners may find complex
+underscoring the rapid adoption of AI technologies across domains                             documentation overwhelming or poorly structured [13]. Similarly,
+ranging from healthcare to finance to education [17]. This growth                             individuals with physical disabilities may encounter difficulties
+creates high demand for skilled professionals and positions AI as                             navigating platforms that rely heavily on precise mouse interac-
+a critical domain for fostering innovation and driving equitable                              tions [9]. These challenges are not just inconveniences; they are
+economic growth. As AI rapidly transforms industries, AI educa-                               systemic barriers that limit the participation of learners with dis-
+tion becomes a critical pathway to equitable participation in this                            abilities in the AI field. Addressing these gaps requires a detailed
+emerging job market. Therefore, ensuring that individuals from                                analysis of where and how accessibility barriers arise, coupled with
+                                                                                              a commitment to designing inclusive tools by default. Without such
+
+
+This work is licensed under a Creative Commons Attribution 4.0 International License.
+RESPECT 2025, July 14–16, 2025, Newark, NJ, USA                                               1 The term "open-source AI" is itself contested. While some tools and models are
+© 2025 Copyright held by the owner/author(s).                                                 released under open licenses, others restrict usage or model weights [19]. In this
+ACM ISBN 979-8-4007-1355-2/2025/07                                                            paper, we use "open-source AI" to refer to publicly accessible platforms, codebases,
+https://doi.org/10.1145/3704637.3734738                                                       and educational resources—recognizing that openness exists on a spectrum.
+
+
+
+
+                                                                                        272
+
+===== PDF PAGE 2 / 7 =====
+RESPECT 2025, July 14–16, 2025, Newark, NJ, USA                                                      Michael Murray, Tamanna Motahar, and Maya Cakmak
+
+
+efforts, the AI community risks perpetuating inequities that exclude           and collaboration, accessibility considerations can be inconsistent,
+talented individuals from contributing to this transformative field.           varying based on the priorities of individual contributors or orga-
+   In this paper, we propose a collaborative approach to address               nizations. As AI continues to expand in education, ensuring that
+these accessibility challenges. Using HuggingFace as a case study,             AI learning environments are accessible to all students—including
+we analyze specific barriers faced by students with disabilities and           those with disabilities—will be crucial for fostering equitable par-
+offer actionable recommendations for creating more inclusive AI                ticipation in the field.
+tools. By drawing on principles of inclusive design, we aim to fos-
+ter a culture of accessibility that empowers learners of all abilities
+                                                                               3     Case Study
+to thrive in AI education. This work is a call to action for educa-
+tors, developers, and policymakers to prioritize accessibility as a            Hugging Face has emerged as a central hub for AI development
+cornerstone of equitable AI education.                                         and education, hosting models and datasets used by millions of
+                                                                               developers worldwide [20]. The platform’s extensive repository of
+                                                                               pre-trained models, datasets, and educational resources has made
+2    Background                                                                it an invaluable tool for both researchers and practitioners in AI.
+The principles of inclusive design emphasize creating environments             Given its importance in AI education, ensuring the platform’s ac-
+and tools that accommodate diverse user needs from the outset,                 cessibility is critical for ensuring equitable access to AI learning
+rather than as an afterthought. This approach recognizes disability            opportunities. As AI continues to shape various sectors of society,
+as a mismatch between user needs and environmental design rather               it is essential that educational resources remain accessible to all
+than an individual deficit [6]. Inclusive design aims to ensure equi-          learners, including those with disabilities. Our analysis examines
+table access by integrating flexibility into learning environments,            Hugging Face’s accessibility in alignment with the Web Content
+enabling learners with different abilities to engage with content              Accessibility Guidelines (WCAG) 2.1 Level AA standards [21], fo-
+in ways that align with their strengths. In educational contexts,              cusing on key areas that impact learners with disabilities.
+inclusive design principles have been shown to benefit all learners
+while being essential for those with disabilities [8]. For example,            3.1    Methodology
+the Universal Design for Learning (UDL) framework encourages                   We evaluate the accessibility of the Hugging Face platform using
+multiple means of representation, engagement, and expression to                the Website Accessibility Conformance Evaluation Methodology
+support diverse learning styles and abilities.                                 (WCAG-EM) [18]. This structured approach allows a comprehen-
+   The shift toward digital learning environments has brought                  sive assessment of web content accessibility across multiple di-
+greater focus to accessibility in education. Research shows that               mensions, including perceivability, operability, understandability,
+inaccessible educational materials and tools create significant bar-           and robustness. Our assessment includes a representative sam-
+riers to learning, particularly in STEM fields, where visual and               ple of six web pages from key sections of the Hugging Face web-
+interactive content is prevalent [16]. These barriers include the lack         site—documentation, model cards, and datasets—as well as two
+of alternative text for images, poor contrast in visualizations, and           randomly selected pages.
+reliance on mouse-based interaction without keyboard-accessible                   Page selection for evaluation followed a stratified sampling ap-
+alternatives. For students with disabilities, such obstacles can sig-          proach to ensure diverse content representation and user interac-
+nificantly hinder engagement with study material, highlighting the             tion patterns. Documentation pages were chosen based on their
+need for proactive accessibility considerations in digital education.          popularity and importance to new users, while model cards and
+   In computer science education, accessibility research has primar-           dataset pages were selected to represent both frequently accessed
+ily focused on programming environments and fundamental com-                   and less commonly visited content. This sampling strategy allows
+putational tools [2, 14]. Many studies highlight the importance of             for a thorough accessibility evaluation across varying levels of
+designing programming environments that support screen readers,                content complexity and user engagement.
+enable robust keyboard navigation, and offer clear, structured doc-               To complement our manual evaluation, we employ automated
+umentation to assist students with disabilities. However, emerging             tools such as Google Chrome Lighthouse [1] to detect common
+computing areas such as AI and machine learning (ML) introduce                 compliance issues, including improper markup for screen readers,
+additional accessibility challenges. Unlike traditional programming            insufficient text contrast, and keyboard navigation barriers. By
+tasks, AI education often involves interacting with complex datasets,          combining structured manual analysis with automated testing, we
+interpreting large-scale model outputs, and working with intricate             provide a comprehensive overview of the platform’s accessibility
+visualizations, all of which may present accessibility barriers.               strengths and shortcomings.
+   The accessibility landscape in AI education presents unique chal-
+lenges due to the field’s rapid evolution and the complexity of its
+tools. Traditional accessibility guidelines, which have primarily              3.2    Results
+focused on static web content and software applications, may not               Our WCAG-EM analysis reveals that the Hugging Face platform
+fully accommodate AI learning environments—involving dynamic                   does not fully comply with WCAG Level AA guidelines, highlight-
+visualizations, multi-modal interactions, and extensive computa-               ing a range of accessibility challenges and opportunities for im-
+tional resources. Furthermore, the prevalence of open-source AI                provement. We identified several accessibility barriers across dif-
+tools creates both opportunities and challenges for accessibility. For         ferent interfaces, including inconsistent support for screen readers,
+insatnce, while open-source AI development tools foster innovation             insufficient color contrast in text elements, and uncaptioned visual
+
+
+
+
+                                                                         273
+
+===== PDF PAGE 3 / 7 =====
+ Towards More Accessible Open Source AI Platforms                                                                                      RESPECT 2025, July 14–16, 2025, Newark, NJ, USA
+
+
+
+                                 100
+                                           Accessibility Scores for Hugging Face Pages                         AI-Specific Interfaces: The platform introduces novel UI elements,
+                                                                                     90% Threshold         such as interactive model cards and dataset explorers, which are
+                                                                                                           not always designed with accessibility in mind. As shown in Figure
+                                 80         75                                                             2, the interfaces are very rich and interactive, offering sophisticated
+
+
+
+
+Lighthouse Accessibility Score
+                                                                                       66                  functionality for model exploration and dataset analysis. However,
+                                                           61             58                               these interactive UI components can exhibit inconsistent screen
+                                 60
+                                                                                                           reader support and keyboard navigation limitations. The complexity
+                                                                                                           of these interfaces, while beneficial for advanced users, can create
+                                 40                                                                        significant barriers for users relying on assistive technologies. Ad-
+                                                                                                           ditionally, many of these interfaces implement custom controls and
+                                 20                                                                        widgets that may not properly expose their functionality to assis-
+                                                                                                           tive technologies, such as screen readers, through ARIA (Accessible
+                                                                                                           Rich Internet Applications) [22] roles and properties, which define
+                                  0    Documentation Dataset Viewer Code Explorer   Model Card             how elements should be interpreted by assistive tools.
+
+ Figure 1: Lighthouse accessibility scores for four of the sam-                                               Complex Technical Topics: The platform’s documentation covers
+ pled Hugging Face pages. Lighthouse scores range from 0 to                                                advanced technical concepts, which can be challenging for students
+ 100, with 90+ considered "good," indicating a high level of                                               to comprehend, particularly when accessibility barriers further
+ accessibility. The Lighthouse score is a weighted aggregate                                               compound the inherent complexity of the material. To aid compre-
+ of multiple accessibility audits, with issues ranked based on                                             hension, content creators often rely on intricate diagrams and video
+ their impact on users.                                                                                    explanations, which require thoughtful design to ensure accessibil-
+                                                                                                           ity for all users. Uncaptioned videos, complex diagrams without
+                                                                                                           alternative text, and code examples with syntax highlighting that
+                                                                                                           reduces text contrast (as shown in Figure 3) can all create accessi-
+ content. These issues vary in severity, and impact, with some pre-
+ senting significant obstacles for users with disabilities, while others                                   bility barriers. Furthermore, the inherently visual or mathematical
+                                                                                                           nature of the ML and AI concepts presents unique challenges in
+ represent minor inconveniences that could be readily addressed.
+                                                                                                           providing equivalent alternatives for non-visual learners.
+    The automated Lighthouse accessibility analysis, summarized
+ in Figure 1, yielded an average score of 65 across the sampled                                               Our findings suggest that while Hugging Face has made efforts
+ pages, suggesting significant room for improvement. Lighthouse                                            to support accessibility, significant work remains to ensure the plat-
+                                                                                                           form is fully accessible to all users. The combination of community-
+ scores range from 0 to 100, with scores above 90 considered “good,”
+                                                                                                           generated content, specialized AI interfaces, and complex technical
+ reflecting a high level of accessibility. The Lighthouse score is a
+ weighted aggregate of multiple accessibility audits, ranking issues                                       material creates unique challenges that require targeted solutions
+ based on their impact on users. Common issues identified include                                          and ongoing attention to accessibility improvements.
+ the lack of accessible labels for interactive elements such as buttons,
+ touch targets with insufficient sizes or spacing, and insufficient                                        3.3    Recommendations
+ contrast between text and background elements.                                                            The findings from our case study highlight the unique accessibility
+    Notably, our analysis revealed that accessibility scores varied                                        challenges posed by AI platforms and open-source ecosystems,
+ significantly across different content types, with documentation                                          emphasizing the need for targeted improvements in both design
+ pages generally performing better than user-generated content such                                        practices and community guidelines. Addressing these challenges
+ as model cards and dataset descriptions. This disparity highlights                                        will require a combination of policy updates, improved technical
+ the challenges of maintaining consistent accessibility standards                                          implementations, and direct engagement with affected users to
+ within a community-driven platform.                                                                       create a more inclusive experience.
+    While many of the identified compliance issues are common
+ across web platforms, we highlight several factors that uniquely                                             1. Implement WCAG 2.1 Level AA Compliance. The analysis above
+ contribute to accessibility challenges on the Hugging Face platform.                                      indicates that Hugging Face documentation does not yet fully com-
+ We discuss the factors below:                                                                             pliant with WCAG 2.1 Level AA standards. Achieving compliance
+                                                                                                           should be a priority to ensure that all users, including those with
+    Community-Generated Content: As a largely open-source and
+                                                                                                           disabilities, can effectively access the platform’s resources. We rec-
+ community-driven platform, Hugging Face hosts a vast repository
+                                                                                                           ommend systematic review and update of all existing content to
+ of user-generated content, which varies significantly in both qual-
+                                                                                                           align with WCAG 2.1 Level AA guidelines, including:
+ ity and accessibility. Many model cards and dataset descriptions
+ lack structured formatting, alternative text for images, and proper                                          (1) Providing alternative text for all images and multimedia
+ semantic markup. This variability poses particular challenges in                                                 content to support screen reader users.
+ maintaining consistent accessibility standards across the platform.                                          (2) Ensuring that all interactive elements, such as buttons and
+ While the community-driven nature of content creation fosters                                                    dropdowns, are fully accessible via keyboard navigation.
+ valuable knowledge sharing and collaboration, it also leads to in-                                           (3) Implementing proper semantic HTML markup to enhance
+ consistent implementation of accessibility best practices.                                                       screen reader compatibility.
+
+
+
+
+                                                                                                     274
+
+===== PDF PAGE 4 / 7 =====
+RESPECT 2025, July 14–16, 2025, Newark, NJ, USA                                                         Michael Murray, Tamanna Motahar, and Maya Cakmak
+
+
+
+            (a)                                                                 (b)
+
+
+
+
+             (c)                                                                (d)
+
+
+
+
+Figure 2: Screenshots of the Hugging Face website illustrating how emerging paradigms for interfacing with state-of-the-art AI
+tools pose new challenges for accessibility. (a) Documentation containing uncaptioned videos, complex diagrams, and code
+blocks. (b) A data exploration interface containing many interactive elements. (c) A code exploration interface. (d) A model
+card interface containing many interactive elements and a wide variety of information.
+
+
+   (4) Improving contrast ratios in text and UI elements to support             that all users, regardless of ability, can engage with AI tools and
+       users with visual impairments.                                           educational resources effectively.
+   (5) Enhancing captioning and transcription for video-based ed-
+       ucational content to assist users who are deaf or hard of                   3. Implement Automated Accessibility Testing Tools. To ensure
+       hearing (DHH).                                                           ongoing compliance and accessibility, we recommend integrating
+                                                                                automated accessibility testing tools into the development work-
+   2. Enhance Content Guidelines and Develop Accessibility Docu-                flow. These tools can help identify and resolve accessibility barriers
+mentation. Hugging Face has established content guidelines that                 early in the content creation and UI development cycle. Specifically,
+primarily focus on various aspects of content moderation (https:                we suggest the following steps:
+//huggingface.co/content-guidelines). However, these guidelines
+lack explicit accessibility considerations. To create a more inclusive                (1) Incorporating automated WCAG compliance checks into
+experience, we recommend the following measures:                                          the continuous integration (CI) pipeline using tools such
+   (1) Expanding content guidelines to include explicit accessibility                     as IBM’s Equal Access guidelines https://github.com/IBMa/
+       requirements, such as proper use of alternative text (alt text),                   equal-access.
+       structured headings, and accessible markdown formatting.                       (2) Utilizing browser extensions and developer tools, such as
+   (2) Providing repository owners with clear, detailed documen-                          Google Lighthouse and Axe DevTools, to conduct accessibil-
+       tation on creating accessible content, including step-by-step                      ity audits on web pages before deployment.
+       guides and checklists.                                                         (3) Performing periodic accessibility audits that combine both
+   (3) Developing standardized templates for README files, model                          automated tools and manual testing to identify issues that
+       cards, and dataset descriptions that encourage best practices                      only automated tools may overlook.
+       for accessibility.                                                             (4) Providing contributors with a built-in validation tool that
+   (4) Encouraging community contributors to self-audit their con-                        flags accessibility concerns when submitting new content.
+       tent using accessibility testing tools before publishing.
+                                                                                   Thus, proactive accessibility testing will help detect and mitigate
+   By embedding accessibility principles into content creation work-            issues before they impact users, reducing the need for extensive
+flows, Hugging Face can cultivate a culture of inclusivity, ensuring            post-release corrections.
+
+
+
+
+                                                                          275
+
+===== PDF PAGE 5 / 7 =====
+Towards More Accessible Open Source AI Platforms                                                           RESPECT 2025, July 14–16, 2025, Newark, NJ, USA
+
+
+                                                                                    (5) Hosting accessibility-focused hackathons, research collabo-
+                                                                                        rations, and funding opportunities to encourage innovation
+                                                                                        from contributors with disabilities.
+                                                                                   By fostering an inclusive development environment, Hugging
+                                                                                Face can ensure that accessibility is not just an afterthought but a
+                                                                                core principle shaped by those who need it most. This shift from
+                                                                                passive feedback collection to active participation will lead to a
+                                                                                more equitable, innovative, and user-driven AI ecosystem.
+                                                                                   While many of these recommendations focus on upstream design
+                                                                                and policy changes within open-source AI platforms and industry
+                                                                                ecosystems, they must be complemented by downstream inter-
+                                                                                ventions in educational settings. CS educators, program designers,
+                                                                                and instructional support staff can adopt these same accessibility
+                                                                                principles when incorporating AI tools into curricula. Equitable
+                                                                                AI education requires shared responsibility across the technical
+                                                                                and educational stack, from inclusive interface design to inclusive
+                                                                                pedagogy.
+
+                                                                                4    Discussion
+                                                                                The accessibility challenges identified in our case study of Hugging
+                                                                                Face reflect broader issues in AI education, highlighting the need
+                                                                                for systematic changes across multiple stakeholders in the AI edu-
+                                                                                cation ecosystem. As AI becomes increasingly central to various
+                                                                                academic and professional disciplines, ensuring equitable access
+                                                                                to AI educational resources becomes crucial for fostering inclusive
+                                                                                educational environments.
+Figure 3: Code blocks in documentation often use syntax
+highlighting with insufficient contrast between text and back-
+                                                                                   Institutional and Industry Responsibilities. The rapid prolifera-
+ground elements.
+                                                                                tion of AI tools and platforms in educational settings has often
+                                                                                outpaced careful consideration of accessibility requirements. Edu-
+                                                                                cational institutions, in their eagerness to incorporate cutting-edge
+                                                                                AI technologies into their curricula, may inadvertently create barri-
+   4. Empower People with Disabilities as Contributors. A key strat-            ers for students with disabilities. Implementing formal policies that
+egy for improving accessibility is to go beyond soliciting feedback             require AI-related course materials to adhere to accessibility guide-
+and actively include people with disabilities in the creation pro-              lines would promote a standardized approach across departments
+cess. This means not only gathering input from users who rely on                and programs. These policies should address traditional course
+accessibility features but also working to empower students with                materials as well as interactive notebooks, model demonstrations,
+disabilities, researchers, and developers to contribute to AI tools,            and technical visualizations. Institutions must also invest in faculty
+documentation, and platforms. This approach aligns with Ladner’s                training, support staff, and necessary accommodations to support
+"design for user empowerment" framework [12], which emphasizes                  the development of accessible AI educational content.
+enabling users to shape the technologies they depend on.                           Industry partners also play a crucial role in shaping accessi-
+   Hugging Face can take several steps to ensure meaningful par-                ble AI education. Companies developing AI tools and platforms
+ticipation and contribution from people with disabilities:                      should prioritize accessibility in their design processes, recognizing
+                                                                                that accessible tools benefit all users through improved usability
+   (1) Establishing an accessibility advisory board composed of                 and clearer documentation. Industry-academic partnerships could
+       users with disabilities, accessibility experts, and AI practi-           provide valuable resources for improving the accessibility of AI
+       tioners.                                                                 educational materials, combining industry expertise in tool devel-
+   (2) Creating dedicated mentorship and training initiatives to                opment with academic understanding of educational needs.
+       support CS/AI/ML students and researchers with disabilities
+       in becoming active contributors to open-source projects.                    Community and Professional Standards. While community-driven
+   (3) Ensuring that accessibility considerations are integrated into           development can lead to inconsistent accessibility standards, it also
+       developer documentation, so contributors with disabilities               offers the potential for collaborative improvement of accessibility
+       can engage with the platform effectively.                                features. Open-source platforms should leverage their community
+   (4) Conducting periodic user testing sessions with diverse partic-           structures to systematically address accessibility concerns. This
+       ipants, ensuring that individuals with disabilities are directly         may include implementing accessibility-focused code review pro-
+       involved in the evaluation and improvement of tools.                     cesses, appointing dedicated accessibility maintainers, and creating
+
+
+
+
+                                                                          276
+
+===== PDF PAGE 6 / 7 =====
+RESPECT 2025, July 14–16, 2025, Newark, NJ, USA                                                             Michael Murray, Tamanna Motahar, and Maya Cakmak
+
+
+working groups focused on accessibility improvements. The suc-                 but also through structural and pedagogical change. We view this
+cess of similar initiatives in other open-source communities, such             paper as a contribution toward inclusive AI education, grounded in
+as Mozilla’s accessibility team, provides valuable models for the AI           both professional expertise and a broader understanding of systemic
+education ecosystem.                                                           barriers faced by marginalized learners.
+   Professional organizations and standards bodies can also play a
+crucial role in promoting accessible AI education. Organizations               6     Conclusion
+such as the Association for Computing Machinery (ACM) and IEEE                 Our analysis of the Hugging Face platform reveals significant ac-
+could develop specific guidelines for accessible AI education, incor-
+                                                                               cessibility challenges in AI education content and tools while also
+porating accessibility requirements into curriculum recommenda-                highlighting opportunities for improvement through technical so-
+tions and accreditation standards. Such guidelines would provide a             lutions and community engagement. The recommendations we
+unified framework for educational institutions and content creators,           outlined, ranging from WCAG compliance to community-driven ac-
+ensuring consistency across the field.                                         cessibility initiatives, provide a structured framework for enhancing
+   Technical and Global Considerations. The global expansion of AI             accessibility in AI education platforms. This proposed framework
+education adds another layer of complexity to accessibility con-               has broader implications for educational institutions, open-source
+siderations. As AI tools and educational resources spread globally,            communities, and industry partners as they underscore the need
+accessibility guidelines must account for different cultural contexts,         for systematic changes in how accessibility is approached in AI
+languages, and assistive technology ecosystems. This necessitates              education. Overall, to maintain inclusive educational environments
+the development of flexible accessibility guidelines that can be               and fostering diverse participation in AI development, our pro-
+adapted into various cultural and technological contexts while                 posed guidelines can be a stepping stone with the scope of further
+maintaining high standards of accessibility.                                   exploration.
+   Looking forward, the emergence of AI-powered accessibility
+tools presents promising opportunities for improving access to AI              References
+education. Machine learning models could generate alternative text              [1] The Lighthouse Authors. 2025. Lighthouse: Automated Auditing, Performance
+                                                                                    Metrics, and Best Practices for the Web. https://github.com/GoogleChrome/
+for technical diagrams, create accessible versions of mathemati-                    lighthouse. Accessed: 2025-02-17.
+cal notation, or provide real-time accessibility improvements to                [2] Catherine M Baker, Cynthia L Bennett, and Richard E Ladner. 2019. Educational
+                                                                                    experiences of blind programmers. In Proceedings of the 50th ACM Technical
+educational content. However, it is crucial that such tools comple-                 Symposium on Computer Science Education. 759–765.
+ment, rather than replace, human judgment in accessibility decision-            [3] Brianna Blaser and Richard E Ladner. 2023. Can There be DEI Without Accessi-
+making.                                                                             bility?. In 2023 Conference on Research in Equitable and Sustained Participation in
+                                                                                    Engineering, Computing, and Technology (RESPECT). IEEE, 4–5.
+                                                                                [4] Brianna Blaser, Richard E Ladner, Bryan Twarek, Andreas Stefik, and Hannah
+   Economic and Long-Term Implications. The economic implica-                       Stabler. 2024. Accessibility and Disability in PreK-12 CS: Results from a Landscape
+tions of implementing comprehensive accessibility measures cannot                   Survey of Teachers. In Proceedings of the 2024 on RESPECT Annual Conference.
+be ignored. While initial investments in accessibility improvements                 13–20.
+                                                                                [5] Joel Castaño, Silverio Martínez-Fernández, Xavier Franch, and Justus Bogner.
+may be substantial, the long-term benefits of inclusive education                   2024. Analyzing the evolution and maintenance of ml models on hugging face.
+and broader participation in AI development likely outweigh these                   In 2024 IEEE/ACM 21st International Conference on Mining Software Repositories
+                                                                                    (MSR). IEEE, 607–618.
+costs. Furthermore, proactive implementation of accessibility fea-              [6] John Clarkson, Roger Coleman, Simeon Keates, and Cherie Lebbon. 2013. Inclusive
+tures often proves more cost-effective than retrofitting existing                   Design: Design for the Whole Population. Springer.
+systems to meet accessibility requirements.                                     [7] Attilio Di Battista, Sam Grayling, Elselot Hasselaar, T Leopold, Ricky Li, Mark
+                                                                                    Rayner, and Saadia Zahidi. 2023. Future of jobs report 2023. In World Economic
+   Taken together, these various stakeholders and considerations                    Forum, Geneva, Switzerland. https://www.weforum.org/reports/the-future-of-
+form an interconnected ecosystem that must work in concert to                       jobs-report-2023
+achieve truly accessible AI education. Success depends not only                 [8] David Gordon, Anne Meyer, and David Rose. 2016. Universal design for learning.
+                                                                                    CAST professional Publishing Peabody.
+on technical solutions but also on a cultural shift in how the AI               [9] Diyar Gür, Niklas Schäfer, Mario Kupnik, and Philipp Beckerle. 2020. A human–
+community views and prioritizes accessibility in educational and                    computer interface replacing mouse and keyboard for individuals with limited
+                                                                                    upper limb mobility. Multimodal Technologies and Interaction 4, 4 (2020), 84.
+professional practices.                                                        [10] Wenxin Jiang, Nicholas Synovic, Matt Hyatt, Taylor R Schorlemmer, Rohan Sethi,
+                                                                                    Yung-Hsiang Lu, George K Thiruvathukal, and James C Davis. 2023. An empirical
+                                                                                    study of pre-trained model reuse in the hugging face deep learning model registry.
+5    Positionality Statement                                                        In 2023 IEEE/ACM 45th International Conference on Software Engineering (ICSE).
+As AI researchers, we acknowledge our position in advocating for                    IEEE, 2463–2475.
+                                                                               [11] Jason Jones, Wenxin Jiang, Nicholas Synovic, George Thiruvathukal, and James
+accessibility in AI education. We bring diverse experiences as re-                  Davis. 2024. What do we know about Hugging Face? A systematic literature
+searchers, educators, and members of the computing community.                       review and quantitative validation of qualitative claims. In Proceedings of the
+Our perspectives are shaped by lived experiences with disability,                   18th ACM/IEEE International Symposium on Empirical Software Engineering and
+                                                                                    Measurement. 13–24.
+international and cross-cultural academic trajectories, and engage-            [12] Richard E Ladner. 2015. Design for user empowerment. interactions 22, 2 (2015),
+ment in human-centered and accessible computing. We recognize                       24–29.
+                                                                               [13] Meredith Ringel Morris, Andrew Begel, and Ben Wiedermann. 2015. Under-
+that our positions, within academia and as users and designers of                   standing the challenges faced by neurodiverse software engineering employees:
+AI technologies, influence how we frame accessibility challenges                    Towards a more inclusive and productive technical workforce. In Proceedings of
+and the types of solutions we prioritize. This work reflects our                    the 17th International ACM SIGACCESS Conference on computers & accessibility.
+                                                                                    173–184.
+commitment to equitable computing education and our belief that                [14] Steve Murphy. 2005. Accessibility of graphics in technical documentation for the
+accessibility must be addressed not only through technical design                   cognitive and visually impaired. In Proceedings of the 23rd annual international
+
+
+
+
+                                                                         277
+
+===== PDF PAGE 7 / 7 =====
+Towards More Accessible Open Source AI Platforms                                                                               RESPECT 2025, July 14–16, 2025, Newark, NJ, USA
+
+
+     conference on Design of communication: documenting & designing for pervasive             [19] David Gray Widder, Meredith Whittaker, and Sarah Myers West. 2024. Why
+     information. 12–17.                                                                           ‘open’AI systems are actually closed, and why this matters. Nature 635, 8040
+[15] PwC. 2024. PwC’s 2024 AI Jobs Barometer. Retrieved December 16, 2024 from https:              (2024), 827–833.
+     //www.pwc.com/gx/en/issues/artificial-intelligence/ai-jobs-barometer.html                [20] Thomas Wolf, Lysandre Debut, Victor Sanh, Julien Chaumond, Clement Delangue,
+[16] Daniel L Reinholz and Samantha W Ridgway. 2021. Access needs: Centering                       Anthony Moi, Pierric Cistac, Tim Rault, Rémi Louf, Morgan Funtowicz, Joe
+     students and disrupting ableist norms in STEM. CBE—Life Sciences Education 20,                Davison, Sam Shleifer, Patrick von Platen, Clara Ma, Yacine Jernite, Julien Plu,
+     3 (2021), es8.                                                                                Canwen Xu, Teven Le Scao, Sylvain Gugger, Mariama Drame, Quentin Lhoest, and
+[17] Mandeep Singh. 2023. Generative AI Growth Report. In Bloomberg Intelli-                       Alexander M. Rush. 2020. HuggingFace’s Transformers: State-of-the-art Natural
+     gence. https://www.bloomberg.com/company/press/generative-ai-to-become-a-                     Language Processing. arXiv:1910.03771 [cs.CL] https://arxiv.org/abs/1910.03771
+     1-3-trillion-market-by-2032-research-finds/                                              [21] World Wide Web Consortium (W3C). 2018. Web Content Accessibility Guidelines
+[18] Eric Velleman and Shadi Abou-Zahra. 2014. Website Accessibility Conformance                   (WCAG) 2.1. https://www.w3.org/TR/WCAG21/ Accessed: 2025-02-17.
+     Evaluation Methodology (WCAG-EM) 1.0. https://www.w3.org/TR/WCAG-EM/.                    [22] World Wide Web Consortium (W3C). 2024. Accessible Rich Internet Applications
+     W3C Working Group Note, 10 July 2014.                                                         (WAI-ARIA) 1.2. https://www.w3.org/TR/wai-aria/ Accessed: February 18, 2025.
+
+
+
+
+                                                                                        278

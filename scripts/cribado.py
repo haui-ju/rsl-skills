@@ -32,6 +32,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import paper_picoc_sync as sync  # noqa: E402
 import picoc_versions as pv  # noqa: E402
+from cribado2_config import write_cribado2_config_on_apply  # noqa: E402
 from rsl_out import Fail, error, ok, run  # noqa: E402
 
 STAGE = "cribado-1"
@@ -800,8 +801,12 @@ def cmd_apply(theme: Path) -> int:
         w.writerow(header + [COL_OK, COL_WHY])
         w.writerows(out)
     si = sum(1 for o in out if o[-2] == "SI")
-    return ok(f"{rel(dest)} con {len(out)} registros: SI {si}, NO {len(out) - si} (columnas «{COL_OK}» y «{COL_WHY}»)",
-              "cribado a texto completo de los SI")
+    use = write_cribado2_config_on_apply(theme)
+    return ok(
+        f"{rel(dest)} con {len(out)} registros: SI {si}, NO {len(out) - si} (columnas «{COL_OK}» y «{COL_WHY}»); "
+        f"{rel(theme / 'config.yml')} cribado_2.use={use}",
+        "ajusta cribado_2.use en config.yml si quieres filtrar el retrieval; luego Usa rsl-cribado-2",
+    )
 
 
 def main(args: list[str]) -> int:

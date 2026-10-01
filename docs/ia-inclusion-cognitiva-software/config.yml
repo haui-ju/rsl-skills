@@ -51,3 +51,7 @@ Declaraciones:
   declaraciones: off
 
 # Referencias: automáticas (siempre se derivan de las citas del texto)
+
+# Retrieval cribado 2 (rsl-cribado-2). Valores: all | solo_si | solo_dudas
+cribado_2:
+  use: all

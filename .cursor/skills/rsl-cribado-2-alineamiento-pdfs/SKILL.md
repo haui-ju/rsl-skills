@@ -12,7 +12,7 @@ Invoke: `Usa rsl-cribado-2-alineamiento-pdfs sobre docs/<slug>/`.
 ## Procedure
 
 1. `pnpm -s cribado2:align docs/<slug>`. ERROR if `documentos.json` missing → run `rsl-cribado-2` first.
-2. For each `docs/pdf-draft/*.pdf`: match a single pending row by normalized title (filename stem vs title slug; optional DOI in filename). On unique match, **move** to `docs/pdf/{Id}-{titulo-slug}.pdf`, set `descargado: si`, `fuente: alineamiento`.
+2. For each `docs/pdf-draft/*.pdf`: match a single pending row by **Id** (`R042.pdf` ↔ `R042`), normalized title (stem vs title slug), or DOI in the filename. On unique match, **move** to `docs/pdf/{Id}-{titulo-slug}.pdf`, set `descargado: si`, `fuente: alineamiento`. If the user declares no full-text access for a record, set `sin_acceso: true` and a short `porque` in `documentos.json` (leave `descargado: no`; still counts as not retrieved in PRISMA).
 3. Chat: how many aligned, how many still without PDF, list WARN for ambiguous or unmatched drafts (user renames or fixes title). Then Cierre.
 
 ## Cierre

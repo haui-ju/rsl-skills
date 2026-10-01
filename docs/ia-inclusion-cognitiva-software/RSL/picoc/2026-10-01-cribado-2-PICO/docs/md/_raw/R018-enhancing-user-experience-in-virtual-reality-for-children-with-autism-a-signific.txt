@@ -1,0 +1,1005 @@
+===== PDF PAGE 1 / 13 =====
+                                                             (IJACSA) International Journal of Advanced Computer Science and Applications,
+                                                                                                                      Vol. 17, No. 5, 2026
+
+
+      Enhancing User Experience in Virtual Reality for
+        Children with Autism: A Significant Review
+                           Nur Aleesya Mohd Asri1, Normala Rahim 2*, Norsuhaily Abu Bakar3,
+                     Wan Rizhan 4, Ismahafezi Ismail5, Nur Saadah Mohd Shapri6, Sarah Farhana Juhari7
+         Faculty of Informatics and Computing, Universiti Sultan Zainal Abidin, Besut , Terengganu, Malaysia 1 ,2, 4, 5, 6
+           Faculty of Applied Social Science, Universiti Sultan Zainal Abidin, Gong Badak, Terengganu, Malaysia 3
+                           Malaysia Digital Economy Corporation (MDEC), Cyberjaya, Selangor 7
+
+
+    Abstract—Virtual reality (VR) has become a promising                   disorder (ASD) and offers immersive and interactive
+technology to assist children with autism spectrum disorder (ASD           environments that can be tailored to particular needs. The role
+especially in the areas of improving user experience with                  of user experience (UX) in this context is immeasurable, and the
+immersive, adaptive, and interactive environments. Nevertheless,           success of VR-based interventions depends on how well they
+current research is still disjointed in areas with very little synthesis   can address the specific sensory, cognitive, and social aspects of
+on the effectiveness of VR in enhancing user experience and                autistic children. The increasing prevalence of ASD, together
+supporting the various cognitive, behavioural, and sensory                 with limitations in traditional therapeutic approaches, has led to
+requirements of autistic children. This study seeks to thoroughly
+                                                                           the rise of interest in applying VR to support social
+review and synthesize current developments in VR-based
+                                                                           communication, emotional regulation, and adaptive behavior.
+solutions to determine the main methods, assessment plans, and
+design implications that can enhance user experience in this               However, the possibility of VR is limited by the difficulty of
+population. The systematic literature review was based on the              developing a digital space that is appealing and favorable to
+PRISMA framework, where an advanced search strategy was                    children with different sensory backgrounds and interaction.
+implemented in Scopus and IEEE databases with keywords                     The review presents the current body of research on the
+related to autism, user experience, and virtual reality. The               usefulness of UX enhancement in VR among autistic children,
+identification phase yielded 939 records, followed by a rigorous           focusing on the connections between theoretical assumptions
+screening and eligibility process resulting in a final dataset of 29       and technological innovation and the practical implementation
+primary studies published between 2020 and 2025. The results               of this methodology in a clinical setting and in the educational
+were divided into three broad themes, namely: 1) VR-Based                  process. [3], [4], [5].
+Intervention and Skill Development for Autism which shows how
+social, cognitive and daily living skills can be improved with the             Autistic children are known to have abnormal sensory
+help of an immersive training; 2) Assessment, Evaluation and               processing behavior where they experience hyper or
+Multimodal Analytics in VR for Autism which reveals how                    hyposensitivity to visual, auditory, and tactile stimuli [6]. Such
+objective evaluation and personalisation can be achieved with the          sensory differences can greatly influence their tolerance and
+assistance of behavioural and physiological and AI driven data             acclimatization to VR environments, where uncontrolled or
+which can improve the evaluation and personalization; and 3)               excessive stimulation can result in distress, anxiety or
+Design Framework which includes VR system for Autism that                  disengagement [7]. Repeated studies have demonstrated that
+focuses on users, ethical consideration and an inclusive system            personalised sensory modulation, such as manipulation of the
+development. Altogether, the review indicates that VR                      intensity, type and timing of sensory input may be used to
+demonstrates substantial potential to improve the user experience          alleviate sensory overload and facilitate a positive interaction.
+of children with autism, especially when it is facilitated through         [8] Indicatively, VR systems as screens, delivering controlled
+adaptive, data-driven, and inclusive design strategies. However,           multimodal stimuli have been shown to be tolerable to autistic
+issues of scalability, long-term efficacy, and standardisation             adolescents and have been shown to have behavioral responses,
+persist, meaning that future studies are required to create strong         which are correlated to individual sensory profiles [9], [10],
+and user-friendly VR frameworks in this population.                        [11]. Moreover, the emotional factors play a decisive role in the
+    Keywords—Virtual Reality (VR); Autism Spectrum Disorder
+                                                                           sensory responsiveness, and tactile hyper- or hypo-responsivity
+(ASD); User Experience (UX); multimodal analytics; inclusive               is typically coupled with anxiety or disparities in emotional
+design                                                                     processing in comparison with the mere perceptual
+                                                                           incompetence [12], [13]. The VR design that is effective in this
+                      I.    INTRODUCTION                                   population is therefore not only technically precise in terms of
+                                                                           sensory delivery but also ought to be sensitive to the emotional
+    Virtual Reality (VR) is a technology that simulates lifelike
+                                                                           and behavioral context in which senses are utilized. [1]
+and immersive experiences within a digitally created
+environment. Objects within VR tend to behave much as they do                  The presence of engagement barriers and preferences for
+in the physical world, allowing users to engage with them in a             interaction further complicates the design of VR for autistic
+manner that follows natural laws of physics [1], [2]. Hence, it            children. ASD children prefer natural, effective modalities of
+has emerged as a groundbreaking technology in therapeutic and              interaction, such as virtual hand controls or gesture interfaces, to
+educational interventions in children with autism spectrum                 formal game controllers, which can lessen cognitive load and
+   *Corresponding author.
+
+
+                                                                                                                                364 | P a g e
+                                                             www.ijacsa.thesai.org
+
+===== PDF PAGE 2 / 13 =====
+                                                          (IJACSA) International Journal of Advanced Computer Science and Applications,
+                                                                                                                   Vol. 17, No. 5, 2026
+
+improve task performance [14], [15]. Engagement may,                   surmounted through collaborative, user-friendly innovation and
+however, be destroyed by unpredictability, multifaceted social         policy facilitation [32], [33].
+signals and the danger of sensory bombardment necessitating
+predictable and adaptable contexts. VR worlds can be modified              This systematic review aims to address these gaps and is
+                                                                       structured into several sections to provide a systematic
+on-the-fly, depending upon physiological and behavioral
+feedback such as eye tracking and heart rate to make                   understanding of virtual reality applications for children with
+interventions more personalized and enable long-term                   autism. The next section of this study presents the research
+engagement [16], [17]. Autistic children, educators and                methodology based on the PRISMA framework, including the
+therapists have also been mentioned as critical in the co-design       search strategy, screening criteria, eligibility process, and
+                                                                       quality assessment procedures. Mixed Methods Appraisal Tool
+strategies, where they are involved in the development process
+and can create inclusive, comfortable and motivating VR                (MMAT) was conducted to evaluate the methodological quality
+experiences [18], [19]. Such participatory practices not only          of included studies and distinguish between high-quality and
+increase usability but also tackle ethical issues by making sure       low-quality evidence. This is followed by the results and
+that interventions are respectful, relevant, and in line with the      findings section, which discusses publication trends and
+                                                                       thematic analysis derived from the selected studies. The
+lived experiences of autistic users [20], [21].
+                                                                       thematic findings are categorized into three major themes: VR-
+    VR technology in ASD is varied and includes a variety of           based intervention and skill development, multimodal
+hardware platforms such as head-mounted displays (HMDs) and            assessment and analytics, and inclusive design frameworks for
+desktop and projector-based systems, each with its own                 autism-related VR systems. Finally, the discussion and
+strengths and weaknesses. The interaction provided by an               conclusion section summarizes the key findings, highlight the
+immersive VR using HMDs tends to be more engaging and                  practical and theoretical implications of the review, identifies
+spatial and can fit the visuospatial advantages of most autistic       current limitations, and proposes future research directions for
+children [22], [23]. They may, however, also increase sensory          enhancing user experience in VR environments for children with
+sensitivities and cause cybersickness, especially in individuals       autism.
+with a high perceptual sensitivity, requiring specific
+desensitization measures and session control [24]. Less                   Overall, enhancing user experience in virtual reality for
+immersive or screen-based VR can provide a more accessible             children with autism requires an integrative approach that
+option to younger or more sensitive users but could potentially        bridges technical innovation with a comprehensive
+come at the cost of decreased immersion and engagement [24],           understanding of autistic users’ sensory, cognitive, and
+                                                                       emotional needs. In the literature, having personalized, adaptive
+[25]. On all platforms, customizable sensory parameters,
+spatialized audio, haptics and real-time adaptation frameworks         VR spaces to embrace individual sensory profiles, leverage
+are critical to lessening sensory overburden and maximizing            natural interaction patterns and co-created with people and
+therapeutic value [11], [17]. The evidence base of the VR              stakeholders is emphasized to be relevant, both ethically and
+interventions in ASD is strong and demonstrates the short-term         practically. Despite the gigantic potential of immersive VR
+                                                                       technologies to improve social, cognitive and emotional
+outcomes of the interventions in improving social
+communication, cognitive and adaptive behaviors, yet there are         outcomes, the utility of the latter should be justified by a serious
+still methodological limitations such as small sample sizes, lack      methodological analysis, their confirmation by a certain time
+of diversity and follow-ups [26], [27], [28].                          and developing the means of their implementation, which should
+                                                                       be scalable and accessible. Further research is required to be
+    Nevertheless, despite the potential of VR, significant             more specific to the application of a wide range of population
+research and technological gaps remain. The rigor of the               groups of participants, employing powerful longitudinal designs
+methodology is often subpar, and the majority of the studies rely      and integrating machine learning and real-time feedback
+on small and homogeneous samples and short-term outcome                systems that can help to further customize and optimize VR
+measurements, limiting the possibility of generalizing and             experiences. Finally, the fulfilment of the promise of VR to help
+scaling up the findings [27], [28]. VR used together with              autistic children will require long-term interdisciplinary
+established types of therapy, such as cognitive behavioral             cooperation, ethical responsibility and a focus on participatory
+therapy, has been shown to have a synergistic effect on                and user-centered design [34], [35].
+enhancing social, cognitive and emotional outcomes, although
+more systematic studies are still required to identify best practice                    II.   MATERIALS AND METHODS
+and long-term effectiveness [29], [30]. The issue of the sensory       A. Identification
+overload, cybersickness, privacy, consent and the risk of
+interventions trying to normalize autistic characteristics rather          According to the PRISMA framework, the identification
+than letting people be themselves are of paramount importance          phase is a fundamental step to the comprehensiveness and
+[20], [31]. The participatory design model and responsible             transparency of a systematic literature review (SLR). Table I
+research and innovation models are also increasingly mentioned         demonstrates that a systematic and thorough search approach
+as a requirement to ensure that VR technologies are created and        was carried out in two major and complementary academic
+implemented in a way that is both safe, inclusive and responsive       sources, including Scopus and IEEE Xplore, on a mixture of
+to the needs of autistic children [21], [31]. Price, infrastructure,   keywords regarding autism, user experience, and virtual reality.
+teacher education and individualized content barriers to greater       The initial search led to a total of 939 records, including 757 in
+implementation in education and clinical practice should also be       Scopus and 182 in IEEE.
+
+
+
+
+                                                                                                                            365 | P a g e
+                                                          www.ijacsa.thesai.org
+
+===== PDF PAGE 3 / 13 =====
+                                                               (IJACSA) International Journal of Advanced Computer Science and Applications,
+                                                                                                                        Vol. 17, No. 5, 2026
+
+   Such a distribution is suggestive of Scopus as a more                    integration and data cleaning to avoid overrepresentation of the
+comprehensive source of disciplinary coverage because it                    same studies. Collectively, these screening procedures lead to
+indexes a wide range of journals not only in the health sciences            enhanced internal validity, transparency and reproducibility of
+but also in psychology and the social sciences, and also in                 the review, not to mention that they are an indicator of
+studies in technology. On the other hand, the IEEE Xplore is                purposeful strike of inclusiveness and methodological rigor,
+more technical and engineering-based and therefore offers a                 which are all necessary in producing high-quality results of an
+smaller scope of literature. The fact that there were a                     SLR.
+comparatively higher number of records found in Scopus
+indicates that the research on virtual reality applications in                       TABLE II.     THE SELECTION CRITERION IS SEARCHING
+children with autism is not restricted to technical research but is
+                                                                                  Criterion           Inclusion                  Exclusion
+extensively studied within the context of interdisciplinary
+research, including human-computer interaction, rehabilitation                Language            English             Non-English
+and educational technology.                                                   Timeline            2020-2025           <2020
+
+                   TABLE I.       SEARCH STRING                               Literature Type     Journal (Article)   Conference, Book, Review
+                                                                              Publication Stage   Final               In Press
+                 TITLE-ABS-KEY ( ( "autism" OR "autistic disorder"
+                 OR "autistic spectrum disorder" OR "ASD" ) AND (
+                 "virtual reality" OR "VR" OR "immersive technology"        C. Eligibility
+                 OR "simulated environment" ) AND ( "user experience"           The eligibility stage further narrows down the filtered
+                 OR "UX" OR "user-centered design" OR "interaction"
+                                                                            records by evaluating their substantive conformity to the study
+                 OR "engagement" ) ) AND ( LIMIT-TO ( DOCTYPE ,
+                 "ar" ) ) AND ( LIMIT-TO ( PUBYEAR , "2020" ) OR            aims and obtaining full data to analyze. Among the 264 articles
+                 LIMIT-TO ( PUBYEAR , "2022" ) OR LIMIT-TO (                that were evaluated in terms of full-text analysis, only a
+ Scopus
+                 PUBYEAR , "2023" ) OR LIMIT-TO ( PUBYEAR ,                 significant portion of them (n=235) were eliminated according
+                 "2024" ) OR LIMIT-TO ( PUBYEAR , "2025" ) ) AND            to the clearly defined criteria, such as articles that were not
+                 ( LIMIT-TO ( LANGUAGE , "English" ) ) AND (                relevant to the research area in general, abstracts that were not
+                 LIMIT-TO ( SRCTYPE , "j" ) ) AND ( LIMIT-TO (
+                 PUBSTAGE , "final" ) ) AND ( LIMIT-TO (                    related to the main objectives of the study, and those articles that
+                 SUBJAREA , "COMP" ) ) AND ( LIMIT-TO ( OA , "all"          were not accessible in terms of full-text assessment. This step
+                 ))                                                         acts as a rather important quality control gateway whereby only
+                 Date of Access: April 2026                                 the studies that are directly conceptually and empirically related
+                 ( "autism" OR "autistic disorder" OR "autistic spectrum    to the user experience in virtual reality in the context of autism
+                 disorder" OR "ASD" ) AND ( "virtual reality" OR "VR "
+                 OR      "immersive     technology" OR        "simulated
+                                                                            are left. As a result, the resulting corpus was reduced to 29
+ IEEE            environment" ) AND ( "user experience" OR "UX" OR          studies that could be included in qualitative synthesis, which is
+                 "user-centered     design"   OR    "interaction" OR        a very selective but focused corpus.
+                 "engagement" )
+                 Date of Access: April 2024                                 D. Quality Assessment
+                                                                                To evaluate the methodological rigor of included studies and
+B. Screening                                                                distinguish between high-quality and low-quality evidence, a
+    The screening is a critical filtering step of the SLR process,          quality assessment was conducted using the Mixed Methods
+which aims at narrowing down the records that had been                      Appraisal Tool (MMAT) version 2018. The MMAT is a
+identified during the initial stage by using preset inclusion and           validated instrument designed to appraise the methodological
+exclusion criteria. In this study, the rigorous screening process           quality of five categories of studies: qualitative research,
+was implemented to determine the relevance, quality, and                    randomized controlled trials, non-randomized studies,
+disciplinary suitability of the literature selected. Table II shows         quantitative descriptive studies, and mixed methods studies.
+the selection criterion of the articles reviewed.
+                                                                               Each study was independently assessed by two reviewers
+    Besides procedural filtering, the screening judgments have              using the appropriate MMAT criteria for its study design. The
+substantial methodological implications and reasons. English-               MMAT uses a set of screening questions followed by category-
+language publication restriction enhances interpretability and              specific quality criteria. Studies are not assigned an overall
+consistency in data extraction but may result in some degree of             numerical score; instead, the detailed responses to each criterion
+language bias by excluding potentially valuable local studies.              provide a comprehensive quality profile.
+Similarly, ensuring that the time frame remains the publications
+after 2020 is a way to ensure that the review incorporates the                  1) Quality assessment results of the 29 included studies:
+latest technological changes and current UX practices in virtual                • 8 studies (27.6%) met all applicable MMAT quality
+reality, which is one of the rapidly evolving spheres. Such                       criteria, indicating high methodological rigor.
+exclusion of conference papers and reviews, possibly having
+omitted early-stage innovations and synthesized knowledge,                      • 15 studies (51.7%) met most criteria with minor
+supports the bias of the review toward fully developed and high-                  limitations.
+impact journal contributions. In addition, the subject areas being
+narrow ensure conceptual consistency and no watering down of                    • 6 studies (20.7%) had moderate methodological
+findings by irrelevant fields. The second step of removing 12                     limitations.
+duplicate records indicates the importance of cross-database
+
+
+
+                                                                                                                                     366 | P a g e
+                                                              www.ijacsa.thesai.org
+
+===== PDF PAGE 4 / 13 =====
+                                                              (IJACSA) International Journal of Advanced Computer Science and Applications,
+                                                                                                                       Vol. 17, No. 5, 2026
+
+    No studies were excluded based on quality assessment;                      This study is guided by the following research questions.
+however, the quality ratings informed the interpretation and
+synthesis of findings. Studies with higher methodological rigor                 1) How does virtual reality-based intervention influence
+were given greater weight in the critical analysis, and limitations         user experience and skill development among children with
+of lower-quality studies were explicitly noted in the thematic              autism in immersive learning environments?
+synthesis. The quality assessment results are summarized in                     2) How do multimodal data and evaluation techniques in
+Table III.                                                                  virtual reality environments support the assessment of user
+                                                                            experience and behavioral responses in children with autism?
+     TABLE III.    QUALITY ASSESSMENT SUMMARY USING MMAT                        3) What design principles and framework characteristics
+   Quality      Number
+                            Percentage       Key Characteristics
+                                                                            contribute to enhancing user experience in inclusive virtual
+  Category     of Studies                                                   reality systems for children with autism?
+                                         Met all applicable MMAT
+ High                                    criteria; rigorous design, clear
+              8             27.6%                                                                         Identification of new studies via databases and registers
+ Quality                                 methodology,        appropriate
+                                         analysis
+ Moderate-                               Met most criteria with minor
+ High         15            51.7%        limitations; generally sound                                 Records identified from*:
+ Quality                                 methodology with small gaps                                      Scopus (n = 757)
+
+
+
+
+                                                                                Identification
+                                                                                                          IEEE (n = 182)
+                                         Notable         methodological
+ Moderate
+              6             20.7%        limitations;            findings                                  Total (n = 939)
+ Quality
+                                         interpreted with caution
+
+    Common methodological strengths across high-quality
+studies included clear research questions, appropriate study
+designs, detailed descriptions of VR systems and interventions,
+validated outcome measures, and transparent reporting of
+                                                                                                                                                   Records excluded
+limitations. Common weaknesses in moderate-quality studies                                            Records after screened:
+included small sample sizes without justification, lack of control                                        Scopus (n = 154)                         Follow the criterion.
+                                                                                                                                                  removed non-English
+or comparison groups, limited generalizability, and insufficient                                          IEEE (n = 110)
+                                                                                                                                                          < 2025
+detail on data analysis.
+                                                                               Screening
+                                                                                                          Total (n= 264)                           Conference, Book,
+                                                                                                                                                          Review
+                                                                                                                                                         In Press
+E. Data Abstraction and Analysis                                                                                                                 Besides Social science
+                                                                                                      Duplicate record removed                      and engineering
+    The approach used in this research is an integrative analysis                                               (n = 12)                                (n = 663)
+as it is one of the assessment methods that a researcher employs
+to conduct a systematic examination and synthesis of the results
+of varied qualitative research designs. The main aim of this
+strategy was to determine the overall themes and sub-themes
+that apply to Enhancing User Experience in Virtual Reality
+among Autistic children. The process started with the collection
+                                                                                                                                                   Full text excluded.
+of data that formed the basis for the development of themes. The
+
+                                                                                Eligibility
+                                                                                                      Reports assessed for
+authors performed a thorough and repeated analysis of 29                                              eligibility
+                                                                                                                                                 Due to the out of field
+
+chosen publications, deriving meaningful statements and                                                          (n = 264)                        Title not significantly
+evidence that were directly relevant to the study focus, as shown                                                                                Abstract not related on
+in Fig. 1. The studies were critically reviewed regarding their                                                                                   the objective of the
+                                                                                                                                                         study
+methodology and main findings to get a full picture of the
+existing research in the field.                                                                                                                   No Full text access.
+
+                                                                                                                                                        (n= 235)
+    The authors then held joint discussions to elaborate and
+develop themes based on the evidence retrieved. During the
+                                                                                Included
+                                                                                                        Studies included in
+analysis, a systematic log was kept to record interpretations,                                          qualitative analysis
+                                                                                                                  (n =29)
+emerging ideas, uncertainties, and analytical thoughts which
+would promote transparency and traceability. The authors
+constantly cross-tabulated the results of the studies in order to
+detect and eliminate inconsistencies in developing themes.                                       Fig. 1. PRISMA flow diagram of the proposed search study.
+Whenever there was a disagreement, consultations were held
+among the authors until they reached an agreement. The last                                   III. RESULTS AND FINDINGS
+themes were further developed to make them coherent and                         The following section presents the results of the systematic
+consistent. In order to enhance the validity and domain relevance           literature review according to the 29 selected studies that met the
+of the thematic analysis, the identified themes were reviewed by            inclusion and quality assessment criteria. The results are divided
+two experts by evaluating the clarity, conceptual relevance, and            into two broad sections: 1) an overview of the publication trends
+consistency of the thematic categorization. Their feedback                  and the extracted properties of the reviewed articles, and 2)
+contributed to refining the analytical structure and improving the          thematic analysis of the theme Enhancing user experience in
+rigor and reliability of the thematic synthesis.                            Virtual Reality for Children with Autism.
+
+
+
+                                                                                                                                                            367 | P a g e
+                                                              www.ijacsa.thesai.org
+
+===== PDF PAGE 5 / 13 =====
+                                                         (IJACSA) International Journal of Advanced Computer Science and Applications,
+                                                                                                                  Vol. 17, No. 5, 2026
+
+A. Publication Trend and Synthesized Overview                         being interdisciplinary collaboration between areas such as
+    1) Publication trend by year: Fig. 2, illustrating the            virtual reality, human-computer interactions, and autism
+temporal distribution of the reviewed articles, depicts that there    research. The reason why these partnerships are so important is
+is an overall increasing tendency of research output between          that they merge technical innovation and clinical and consumer-
+2020 and 2025 with several fluctuations. Publications began to        based perspectives. Overall, the trend is that the research area
+decrease in 2020 (n=5), 2021 (n=3), and increased in 2022 (n=6)       is still forming and that the number of contributors is growing
+and 2023 (n=5), with a slight decrease in each year. It has a         but has not yet solidified, which implies that it is an emerging
+stronger upward trend with a greater increase in 2024 (n=9) and       field where various contributions are being made to enhance
+a high level of increase in 2025 (n=12). This trend is indicative     research development, but it may be required to have more solid
+of an increase in academic interest in integrating virtual reality    networks of collaboration to enhance research maturity and
+(VR), user experience and interventions based on autism. The          sustainability.
+initial variability of 2020-2023 could be explained by the
+exploratory character of initial research and external factors like
+the COVID-19 pandemic that disrupted research and access to
+experimental conditions. This sudden increase as of 2024 will
+probably be fuelled by the fast development in VR technology
+such as more affordable and accessible hardware, and the
+growing recognition of the significance of personalized and
+immersive interventions in children with autism. In addition, the
+increased funding of research and interdisciplinary work in
+fields like digital health and assistive technologies could have
+led to this increase. On the whole, the upward trend indicates
+that the sphere transforms into less of an emerging field and
+more of a more mature and established one, where the focus is
+more on evidence-based design, user-centered solutions, and
+multimodal interaction in VR systems to support children with                            Fig. 3. Documents by author.
+autism.
+                                                                          3) Documents by country: Fig. 4 demonstrates that the
+                                                                      geographical pattern of the identified studies indicates a high
+                                                                      level of concentration of the research production in several
+                                                                      most productive countries, the United States (n=17) is the most
+                                                                      productive country, and China (n=4) comes next. Other nations
+                                                                      have a moderate contribution (n=3 each on average) with
+                                                                      Argentina, Greece, Italy, and Norway being underrepresented
+                                                                      (n=2 each). The supremacy of the United States is explained by
+                                                                      the abundance of technological infrastructure, the high level of
+                                                                      research investments, and the developed healthcare and
+                                                                      educational systems in which the emphasis is put on the
+                                                                      innovative interventions towards the developmental disorders.
+                                                                      Likewise, the rise in contribution of China is indicative of its
+                                                                      rise in investment in new technology like VR and digital health.
+                                                                      By comparison, the smaller and more disjointed input of the
+                     Fig. 2. Documents by year.
+                                                                      Malaysian and other Asian nations indicates that, although
+    2) Documents by author: As Fig. 3 shows, the articles             interest in the region is increasing, research activities are less
+finally selected were distributed relatively widely and diffusely     organized and could be limited by a lack of funds,
+in terms of authorship, and the contribution of several authors       infrastructural differences, and differences in healthcare
+was repeated quite a few times. It is interesting to note that        priorities. On the whole, the field proves to be geographically
+Jung, S., Mei, C., and Moon, J. were the most frequent authors        uneven although it is geographically participatory with a
+with two publications each, and the other authors had a single        prevalence in developed areas. This disparity explains why
+publication. This means that no single or small group of              increasing international cooperation and capacity building is
+scholars dominates the field, but it is characterized by a large      essential to make more inclusive and context-dependent
+range of contributors. This may be because of the presence of         improvements, especially in those areas that are
+recurrent authors, as this may be interpreted as a sign of nascent    underrepresented, and VR-based interventions may be of great
+collaborative organizations or research partnerships, potentially     assistance to children with autism.
+
+
+
+
+                                                                                                                         368 | P a g e
+                                                         www.ijacsa.thesai.org
+
+===== PDF PAGE 6 / 13 =====
+                                                           (IJACSA) International Journal of Advanced Computer Science and Applications,
+                                                                                                                    Vol. 17, No. 5, 2026
+
+                                                                        interventions, and social sciences advise us on usability and
+                                                                        accessibility issues. Overall, the overlap of the different areas
+                                                                        contributed to the improvement of the research as it enables the
+                                                                        creation of holistic design solutions, makes VR interventions
+                                                                        more relevant and applicable, and allows taking a closer look at
+                                                                        the ways of immersive technologies usage in addressing the
+                                                                        needs of children with autism.
+                                                                        B. Thematic Findings
+                                                                           This section reviews the findings of the systematic literature
+                                                                        review on the research questions and places them in the wider
+                                                                        context of Enhancing User Experience in Virtual Reality with
+                                                                        Autistic Children. These results highlight the main
+                                                                        contributions, limitations, and future research and practice
+                                                                        implications. Table IV presents the selected studies categorized
+              Fig. 4. Documents by country or territory.
+                                                                        according to the identified themes.
+
+                                                                            TABLE IV.   THEMATIC CATEGORIZATION OF SELECTED STUDIES
+
+                                                                               Themes         #               Article Title                 Ref
+                                                                                                   An Exploratory Analysis of
+                                                                                                   Increasing Self-Efficacy of Adults
+                                                                                              1    with Autism Spectrum Disorder            [35]
+                                                                                                   through the Use of Multimedia
+                                                                                                   Training Stimuli
+                                                                                                   Impact of virtual reality learning
+                                                                                              2    environments         on         skills   [36]
+                                                                                                   development in students with ASD
+                                                                                                   Combining Virtual Reality Visual
+                                                                                                   Novels and Social Stories to
+                                                                                              3    Support Social and Emotional             [37]
+                                                                                                   Development in Children with
+                                                                                                   Autism Spectrum Disorder
+                                                                                                   Charisma ™ virtual social training:
+                 Fig. 5. Documents by subject area.                                           4    A digital health platform and            [38]
+                                                                                                   protocol
+    4) Documents by subject area: As Fig. 5 demonstrates, the                                      Development       of     a     Social
+                                                                                                   Communication Skills Intervention
+choice of the articles by subject area reveals that computer                                       Using    Video Modeling and
+science (42.6 percent) is highly prevalent, indicating that the                               5    Spherical Video-Based Virtual            [39]
+creation of virtual reality (VR) technologies and the design of                                    Reality for High Functioning
+                                                                                                   Autism Spectrum Disorder Youth:
+interactions are the most fundamental basis of this research              Theme 1: VR-Based
+                                                                                                   A Preliminary Study
+area. This is followed by social sciences (13.8%), engineering            Intervention  and
+                                                                                                   “Can I be More Social with a
+                                                                          Skill Development
+(12.8%), which specializes in user-centered design, usability,            for Autism
+                                                                                                   Chatbot?”: Social Connectedness
+and system development. Other smaller groups are                                              6    Through Interactions of Autistic         [40]
+                                                                                                   Adults with a Conversational
+neuroscience (5.3%), physics and astronomy (5.3%), and shares                                      Virtual Human
+of psychology, biochemistry, chemistry, materials science and                                      Enhancing attention in autism
+chemical engineering (all about 23). The value of cognitive,                                       spectrum disorder: comparative
+                                                                                              7    analysis of virtual reality-based        [41]
+behavioral and sensory processing attributes in children with                                      training       programs         using
+autism is indicative of psychology, neuroscience, engineering                                      physiological data
+and physical sciences, which contribute to the hardware                                            Using virtual reality to enhance
+engineering, simulation and optimization of the systems. This                                 8    attention for autistic spectrum          [42]
+                                                                                                   disorder with eye tracking
+interdisciplinary spread shows that the enhancement of user                                        Designing Gamified Virtual Reality
+experience in VR in children with autism cannot be attributed                                      Intervention Based on Experiential
+to a single domain but instead, it requires the use of                                        9    Learning to Enhance Social               [43]
+                                                                                                   Reciprocity in Children with
+technological innovation in combination with clinical,                                             Autism Spectrum Disorder
+behavioral and social strategies. Such collaboration enables the                                   Learning experience design of
+development of more detailed and effective solutions, as                                      10   verbal prompts in virtual reality-       [44]
+                                                                                                   based training for autistic children
+computer scientists are involved in the development of
+                                                                                                   Serious Game for VR Road
+immersive systems, psychologists and the sphere related to                                    11   Crossing     in    Special Needs         [45]
+healthcare ensure the relevance and usefulness of the                                              Education
+
+
+
+
+                                                                                                                                 369 | P a g e
+                                                           www.ijacsa.thesai.org
+
+===== PDF PAGE 7 / 13 =====
+                                                                (IJACSA) International Journal of Advanced Computer Science and Applications,
+                                                                                                                         Vol. 17, No. 5, 2026
+
+                           Virtual Reality Air Travel Training                                           Virtual Reality as a Tool for
+                      12   with Children on the Autism              [46]                           29    Children with Autism Spectrum    [63]
+                           Spectrum: A Preliminary Report                                                Disorder
+                           FECTS:      A      Facial Emotion
+                           Cognition and Training System for                     1) Theme 1: VR-based intervention and skill development
+                      13                                            [47]
+                           Chinese Children with Autism                      for autism.
+                           Spectrum Disorder
+                           SoundFields: A virtual reality game                   The results all point to a positive impact of VR-based
+                           designed to address auditory                      interventions on cognitive, behavioural, and self-efficacy
+                      14                                            [48]
+                           hypersensitivity in individuals with
+                                                                             measures in people with autism, especially in cases of
+                           autism spectrum disorder
+                           Semi-Supervised             Behavior
+                                                                             immersive and multimedia applications. The results in [35]
+                           Labeling Using Multimodal Data                    indicate that there is an objectively observed change in self-
+                      15                                            [49]     efficacy and an increase in engagement during vocational
+                           during Virtual Teamwork-Based
+                           Collaborative Activities                          training, indicating that the interactive settings can be used to
+                           Virtual Reality-Based Approach to                 boost confidence in performing tasks. Equally, [36], [43] note
+                           Evaluate Emotional Everyday
+                      16                                            [50]     enhancement in cognitive, social communication and
+                           Scenarios for a Digital Health
+                           Application                                       behavioural adaptation in structured VR learning situations, yet
+                           Applying multimodal data fusion to                statistical significance is sensitive to sample size and design
+                           track      autistic      adolescents’             limitations. Additional findings [45], [46] indicate that VR
+                      17   representational           flexibility   [51]     simulation allows effective transfer of acquired skills to real-life
+                           development during virtual reality-               situations, especially in everyday living activities like travel and
+                           based training
+                                                                             road safety, which adds to the ecological validity of VR
+                           On the Evaluation of Engagement
+Theme            2:   18   in Immersive Applications When           [52]     interventions.
+Assessment,                Users Are on the Autism Spectrum
+Evaluation,    and         A Virtual Reality-Based System for
+                                                                                There is also a high level of convergence in the outcomes of
+Multimodal            19   the Screening and Classification of      [53]     analyzing social communication and emotional development,
+Analytics in VR for        Autism                                            whereby VR-based tools offer controlled but realistic practice
+Autism                     ILAT (Software as a Service):                     environments. [38] note that structured virtual social training
+                           Interactive Learning Application                  results in significant emotion recognition, social inferencing,
+                      20   Tool for Autism Screening and            [54]     and self-perception improvements, whereas [39] highlight that
+                           Assessment in children with Autism
+                           Spectrum Disorder
+                                                                             video modelling and spherical VR are particularly effective at
+                           A Multimodal Framework for                        understanding due to multi-perspective learning. Multiple
+                           Integrating      Motion      Capture              studies reported that immersive and interactive VR systems
+                      21                                            [55]
+                           Monitoring into ASD Screening                     improved emotional recognition and expression among autistic
+                           Utilizing XR Applications                         users [37], [47]. Moreover, [40] show that conversational virtual
+                           Individual Variability in Cognitive               agents can facilitate perceived social connectedness, but
+                           Engagement and Performance
+                           Adaptation During Virtual Reality
+                                                                             anticipations of stronger interaction are not yet achieved,
+                      22
+                           Interaction: A Comparative EEG
+                                                                    [56]     meaning that emotional realism and responsiveness continue to
+                           Study of Autistic and Neurotypical                be developing issues in VR-based social systems.
+                           Individuals
+                           AutiSim: A Virtual Reality                            Another prevalent finding of the studies reviewed is
+                      23   Simulation Game Based on the             [57]     attention enhancement, especially when VR is used in
+                           Autism Spectrum Disorder                          combination with physiological monitoring and adaptive
+                           Law enforcement training using                    feedback processes. Several studies reported that reinforcement
+                      24   simulation for locally customized        [58]     strategies and physiological monitoring enhanced attentional
+                           encounters
+                           “Someone who has ADHD or
+                                                                             engagement within VR environments [41, 64]. [65] also
+                           someone who has autism should                     indicates that thoughtfully created verbal cues in VR have the
+                           make the Rules”: A participatory                  potential to affect the patterns of interaction and maintain the
+                      25                                            [59]
+                           study of neurodivergent Child                     attention of users when performing training activities. These
+                           perspectives on the ethics of                     results are consistent with [48] in which exposure-based VR
+Theme 3: Design ,
+                           Extended reality technologies
+Framework,      and                                                          gaming minimized anxiety connected to auditory
+                           Understanding experiences and
+Inclusive       VR
+                           interactions of children with
+                                                                             hypersensitivity, which indirectly underpins attentional stability.
+Systems for Autism    26                                            [60]     Taken together, these findings indicate that individual and
+                           Asperger’s syndrome in Virtual
+                           Reality-based learning systems                    modular VR processes are imperative in the treatment of
+                           Inclusive     Learning        through             attentional variability in autism.
+                           Immersive Virtual Reality and
+                      27   Semantic Embodied Conversational         [61]        Although the results are encouraging, some limitations and
+                           Agent: A case study in children                   design aspects are consistently pointed out in research, which
+                           with autism                                       means that VR interventions should be refined further. Most
+                           Daily Life Adaptation in Autism: A
+                           Co-Design Framework for the
+                                                                             research papers, such as [66], [67] have limitations of small
+                      28
+                           Validation of Virtual Reality
+                                                                    [62]     sample size, limited intervention period, and limitations of
+                           Experiential Training Systems                     generalization of results. Improved interactivity, user
+                                                                             adaptability, and the integration of external support systems,
+
+
+
+                                                                                                                                  370 | P a g e
+                                                               www.ijacsa.thesai.org
+
+===== PDF PAGE 8 / 13 =====
+                                                       (IJACSA) International Journal of Advanced Computer Science and Applications,
+                                                                                                                Vol. 17, No. 5, 2026
+
+including parental involvement, are also highlighted in [39] and    the quality of behavioral information gathered during the
+[65]. Moreover, [40] emphasizes the discrepancy between the         assessment, it is crucial to have very accurate motion capture
+expectations of the user and the technological possibilities of     and full-body tracking in XR settings. Such systems are
+conversational systems. The overall findings of these               indications of a transition to more objective, data-driven
+observations demonstrate that, although VR-based interventions      approaches to lessening dependence on subjective clinical
+have great potential in improving the user experience and skill     judgment.
+development of children with autism, future studies should focus
+on addressing scalability, long-term assessment, and user-              The evaluation of the degree of involvement and mental
+related design aspects.                                             responses in VR settings also emerges as a major point of
+                                                                    interest in the findings. [71] demonstrate that immersive VR
+    While the majority of studies demonstrated positive             applications can potentially generate high engagement levels
+outcomes from VR-based interventions, the magnitude of              among autistic users, and the conventional evaluation measures
+effectiveness varied depending on immersion level, interaction      may have to be redefined due to the unique behavioural aspects.
+modality, and participant characteristics. Studies utilizing        Moreover, [56] reveal that cognitive engagement measured by
+adaptive and gamified VR systems generally demonstrated             EEG signals differs significantly based on certain individual
+stronger improvements in social reciprocity and attentional         factors such as IQ, familiarity with technologies, and pre-
+engagement compared to static or less interactive environments.     exposure to VR. [50] also, demonstrate the objectivity of
+However, contradictions also emerged across the literature. For     emotional and physiological reactions in order to test the
+example, while immersive HMD-based systems increased                engagement of the user with varying levels of complexity in
+engagement and realism, several studies simultaneously              scenarios. These experiments lead to the fact that not all VR
+reported concerns regarding sensory overload and cybersickness      engagement is identical and that there ought to be adaptive
+among highly sensitive autistic users. Similarly, conversational    evaluation models, which consider individual differences.
+virtual agents improved perceived social connectedness, yet
+emotional realism and natural responsiveness remained limited          Regardless of these developments, various difficulties and
+                                                                    constraints are always reported, especially with regard to
+in more complex interactions. These findings suggest that VR
+effectiveness is not solely dependent on technological              standardisation, scalability, and personalisation of assessment
+sophistication but rather on the extent to which the environment    models. According to [72] and [68], machine learning models
+aligns with individual sensory and cognitive profiles.              demonstrate high performance, but their effectiveness is limited
+                                                                    by the data quality and diversity, which are still limited on a
+   2) Theme 2: Evaluation and multimodal analytics in VR for        small scale. [56] also emphasise that the variability between
+autism.                                                             individuals makes it harder to generalise the results to other
+                                                                    populations, and it requires more customised system design.
+   Multimodal data integration is an important technique to         Moreover, [71] emphasize the absence of agreement on
+improve the accuracy and efficiency of behaviour recognition        assessment models that should be used with autistic users
+and evaluation in VR-based autism systems. Assessment,              whereas [55] note the technical issues surrounding the necessary
+Evaluation, and Multimodal Analytics in VR on Autism report         motion tracking.
+that semi-supervised learning can be a useful method to reduce
+the amount of manual annotation work but still achieve high             The reviewed studies collectively demonstrate a transition
+prediction accuracy, which suggests that an efficient method to     from subjective observational assessment toward data-driven
+monitor behaviour in real-time is practical. Likewise, [68]         and multimodal evaluation frameworks. Nevertheless,
+demonstrate that using a combination of behavioural,                important methodological differences remain evident across
+physiological, and interaction data enhances predictive accuracy    studies. While machine learning models achieved promising
+in monitoring cognitive skill development, especially               classification accuracy, performance was heavily dependent on
+representational flexibility. [69] also support the idea that the   data quality, sample diversity, and sensor reliability. Studies
+combination of subjective assessment with psychophysiological       employing EEG, eye-tracking, and physiological monitoring
+measures like ECG and EDA will enable the distinction between       reported stronger predictive capabilities, yet these approaches
+the complexity of a scenario in VR environments. All these          also introduced challenges related to equipment accessibility,
+results indicate that multimodal analytics is a more reliable and   calibration complexity, and scalability in real-world settings.
+holistic representation of user states than single-source data      Consequently, although multimodal analytics improve
+solutions.                                                          behavioral interpretation and personalization, the lack of
+                                                                    standardized evaluation frameworks continues to limit
+    The other significant result pertains to the creation of        comparability across VR autism studies.
+objective and automated measures of autism screening and
+classification via VR technologies. [70] show that behavior             3) Theme 3: Design, framework, and inclusive VR systems
+monitoring in simulated social interactions is amenable to          for autism.
+machine learning methods to differentiate between autistic and
+normal individuals with a high degree of accuracy, which proves        The results indicate that the design of VR systems is
+the practicability of VR-based diagnostic devices. Also [54]        becoming more oriented towards simulation-based practices to
+                                                                    enhance awareness and insights into the experiences of autism.
+emphasize the importance of integrated digital platforms, which
+are a combination of VR, artificial intelligence, and cloud-based   [56] show that immersive simulation games are also capable of
+systems that can aid early screening, behavioural monitoring,       capturing sensory sensitivities and social challenges, and
+and intervention planning. Moreover, [55] note that to enhance      usability tests show that the level of user comfort relating to
+                                                                    simulator sickness is generally acceptable. On the same note,
+
+
+                                                                                                                      371 | P a g e
+                                                       www.ijacsa.thesai.org
+
+===== PDF PAGE 9 / 13 =====
+                                                           (IJACSA) International Journal of Advanced Computer Science and Applications,
+                                                                                                                    Vol. 17, No. 5, 2026
+
+[58] demonstrate that VR-based training environments offer              caregivers, therapists, educators, and autistic users during
+realistic, but controlled practice environments, especially in the      development generally reported higher acceptance and
+case of professional training such as law enforcement, where            improved interaction quality compared to systems developed
+exposure to complex situations must be repeated. [73] also              without stakeholder collaboration. However, tensions remain
+disclose that children with AS have been reported to develop an         between immersive realism and sensory comfort. While realistic
+ability to adapt to virtual characters with time as they engage         VR simulations improved contextual learning and emotional
+with VR learning systems, implying that well-thought-out                engagement, excessive sensory stimulation occasionally
+virtual environments can elicit behavioral engagement in the            reduced usability for participants with hypersensitivity. These
+long run. All these results suggest that the important design           findings indicate that future VR systems should prioritize
+factors in VR systems that should be considered in autism-              adaptive sensory regulation and personalized interaction settings
+related uses include realism, immersion, and contextual                 rather than relying solely on increased immersion.
+relevance.
+                                                                                      IV. DISCUSSION AND CONCLUSION
+    The other significant point that the findings raise is the focus       The proposed systematic literature review is designed to
+on inclusive and assistive design to improve user experience and        explore the effectiveness of virtual reality (VR) technologies in
+accessibility. According to [74], the combination of                    enhancing the user experience among children with autism
+conversational agents and immersive VR systems leads to                 spectrum disorder through a synthesis of recent research
+educational involvement as well as social integration, especially       published in 2020-2025.
+via natural language interaction. It is also pointed out in [75] that
+VR with virtual assistants has the potential to increase attention          The results indicate that there are a number of patterns that
+span and offer personalised assistance in everyday learning             are common to the chosen studies. First, VR-based interventions
+scenarios. Moreover, [76] reveal that co-design models with             have a high potential in enhancing social communication,
+caregivers lead to system usability and user satisfaction and it is     cognitive skills, emotional recognition, and daily living skills in
+crucial to note that collaborative development processes are            children with autism. These enhancements are more noticeable
+highly valued. All these studies suggest that inclusive VR              when immersive and interactive elements are integrated into
+systems must have adaptive communication and stakeholder                structured learning environments. Second, the multimodal data
+engagement to ensure that children with autism engage in a              system, including that based on behavioural, physiological, and
+significant manner.                                                     interaction aspects, proves to be a valuable contribution to the
+                                                                        field of user experience measurement. These approaches enable
+    Ethical considerations and participatory design is another          objective, real-time, and personalised assessment compared to
+valuable insight in the development of VR systems that can be           conventional approaches. Third, the principles of user-centred
+used by neurodivergent users. [59] emphasize that children with         and inclusive design are defined as the most important ones due
+autism insist that they are consulted into the design process and       to the enhanced engagement and usability. The adaptive sensory
+are concerned about the privacy of their data, overexposure, and        control, intuitive interaction techniques, co-design participation
+potential misuse of immersive technologies. [58] indirectly             and ethical issues are some of the factors that are important in
+support this line of thought and conclude that it is necessary to       the development of positive user experiences. Artificial
+modify VR situations to its own user conditions to ensure               intelligence, along with real-time feedback systems, are also
+relevance and acceptability. [57] also note the challenge of            gaining popularity in the literature to enable personalisation and
+covering the experiences of autism in a manner that is not              dynamic adaptation of VR systems.
+perpetuating stereotypes, which means that one has to be
+ethically mindful when developing content. Such findings reveal             The present review contributes to the area because it
+that technological innovation and the interests of users must be        provides a methodical synthesis of a disjointed literature and
+reconciled by adopting user-centred and ethically sound design          brings all the various views together in three coherent themes:
+practices.                                                              VR-based intervention and skill development, multimodal
+                                                                        assessment and analytics, and inclusive design frameworks. This
+    In spite of such improvements, some limitations and design          classification gives the review a more conceptual understanding
+problems are always documented in research. According to [73]           of how the technological, behavioural and design aspects
+and [76], early pain and the necessity of a mentor are still            intersect to enhance user experience among children with
+obstacles to certain users, especially in their early exposure to       autism. Furthermore, the review highlights a gradual shift from
+VR systems. It is also noted by [75] that the variability in            technology-centered approaches toward more human-centered,
+attention and engagement demands adaptive systems that can              adaptive, and ethically conscious VR systems. The review also
+respond to the needs of individuals. In addition, [74] emphasize        contributes to existing knowledge by emphasizing the
+that even though promising results are demonstrated by                  importance of addressing sensory, emotional, and cognitive
+immersive systems, the scalability and the effectiveness in the         aspects of VR design rather than focusing solely on functional
+long run are under-researched. These results indicate that the          outcomes.
+design of VR systems in the future must focus more on
+flexibility, long-term usability analysis, and feedback                     These findings have significant practical implications for
+mechanisms.                                                             different stakeholders. VR systems may serve as supportive
+                                                                        tools in educational and clinical settings for skill training,
+   Across the reviewed literature, inclusive and participatory          behavioural therapy, and experiential learning, particularly for
+design consistently emerged as a critical factor influencing            individuals with diverse sensory profiles. It is possible to add
+usability and long-term engagement. Studies involving                   multimodal analytics that may assist practitioners in monitoring
+
+
+
+                                                                                                                            372 | P a g e
+                                                           www.ijacsa.thesai.org
+
+===== PDF PAGE 10 / 13 =====
+                                                       (IJACSA) International Journal of Advanced Computer Science and Applications,
+                                                                                                                Vol. 17, No. 5, 2026
+
+progress in a more objective manner and developing                  emergency response situations. Despite these opportunities,
+personalised interventions. The findings are a reminder to the      future implementation must also address ethical concerns related
+developers and designers that inclusive and user-centred design     to privacy, data security, informed consent, and overdependence
+should be adopted, and VR applications must be made                 on immersive technologies. Participatory and user-centered
+accessible, adaptable, and responsive to the diverse needs of       design approaches should therefore remain central to future VR
+autistic users.                                                     development to ensure that autistic individuals, caregivers,
+                                                                    therapists, and educators actively contribute to system design
+    Though these contributions are significant, several             and decision-making processes.
+limitations remain evident across the reviewed studies. Most
+studies relied on relatively small participant groups, short            To conclude, this systematic review demonstrates the
+intervention durations, and limited demographic diversity,          increased significance of virtual reality as a means of improving
+reducing the generalizability of findings across broader autism     user experience in children with autism, but also reveals the
+populations. Future longitudinal research should therefore          important gaps that need to be addressed through future
+investigate the long-term effectiveness of VR interventions over    research. The integration of existing knowledge shows that the
+periods ranging from six months to several years to better          best VR systems should be based on technological innovations
+understand behavioral retention, emotional adaptation, and          and user-centred design, multimodal assessment, and ethical
+sustained engagement. For example, longitudinal studies             considerations. Systematic reviews in this field play a critical
+conducted within schools or therapy centers could evaluate          role in systematising the rapidly growing body of knowledge,
+whether repeated VR-based social communication training             reducing fragmentation, and guiding future research directions.
+contributes to measurable improvements in classroom                 This type of evidence-based synthesis can not only advance
+interaction, emotional regulation, or independent living skills     theoretical knowledge but also support the development of more
+over time.                                                          effective, inclusive, and sustainable VR solutions for individuals
+                                                                    with autism.
+   Future studies should also include more diverse participant
+groups across age ranges, cultural backgrounds, socioeconomic                             ACKNOWLEDGMENT
+conditions, and autism support levels. Cross-cultural
+investigations are particularly important because sensory               This research was supported by the Ministry of Higher
+preferences, communication styles, educational practices, and       Education (MoHE) Malaysia under the Research Consortium
+caregiver expectations may differ significantly between             Grant 2023 (Reference No: RK059). The authors gratefully
+countries and regions. For instance, VR learning environments       acknowledge Universiti Sultan Zainal Abidin (UniSZA) for
+developed for Western educational settings may require              institutional support and project coordination. Appreciation is
+adaptation before implementation in Asian, Middle Eastern, or       also extended to all consortium members and research
+rural educational contexts where learning structures and            collaborators for their valuable contributions to this study.
+technology accessibility differ substantially.                                                     REFERENCES
+    Another important direction involves the development of         [1]   N. S. Mohd Shapri and N. L. Rashid, “Exploring Prehistoric Era in Virtual
+standardized evaluation frameworks for VR-based autism                    Reality Walkthrough,” International Journal of Engineering Trends and
+interventions. Current studies frequently employ different                Technology, vol. 72, no. 6, pp. 1–7, Jun. 2024, doi:
+                                                                          10.14445/22315381/IJETT-V72I6P101.
+usability metrics, engagement scales, and physiological
+                                                                    [2]   M. Danish et al., “Validate the Users’ Comfortable Level in the Virtual
+indicators, making direct comparison difficult. Future                    Reality Walkthrough Environment for Minimizing Motion Sickness.”
+frameworks should integrate behavioral observation, eye-                  [Online]. Available: www.ijacsa.thesai.org
+tracking, physiological monitoring, cognitive performance           [3]   A. Koirala, Z. Yu, H. Schiltz, A. Van Hecke, B. Armstrong, and Z. Zheng,
+measures, and user satisfaction into unified assessment models.           “A Preliminary Exploration of Virtual Reality-Based Visual and Touch
+Such standardization would improve reproducibility and allow              Sensory Processing Assessment for Adolescents with Autism Spectrum
+researchers to compare intervention outcomes across institutions          Disorder,” IEEE Transactions on Neural Systems and Rehabilitation
+                                                                          Engineering,      vol.      29,     pp.    619–628,       2021,      doi:
+and populations more effectively.                                         10.1109/TNSRE.2021.3064148.
+    The integration of advanced technologies such as artificial     [4]   M. N. M. Nushkan, W. D. Sumadhya, A. R. Shaveesha, K. Manathunga,
+intelligence, adaptive systems, and machine learning also                 D. Chamara, and I. Gamage, “Effectiveness of Virtual Realityin
+                                                                          Improving Learning Outcomes for Children with Autism,” in 2024 IEEE
+presents promising opportunities for real-world implementation.           9th International Conference for Convergence in Technology, I2CT 2024,
+AI-driven VR systems could dynamically adjust environmental               Institute of Electrical and Electronics Engineers Inc., 2024. doi:
+complexity, sound intensity, visual stimulation, and task                 10.1109/I2CT61223.2024.10543652.
+difficulty based on real-time behavioral and physiological          [5]   J. Zhao et al., “Virtual reality technology enhances the cognitive and
+responses from autistic users. In healthcare settings, clinicians         social communication of children with autism spectrum disorder,” Front.
+may utilize adaptive VR systems for exposure therapy,                     Public Health, vol. 10, 2022, doi: 10.3389/fpubh.2022.1029392.
+emotional recognition training, or anxiety management. In           [6]   N. A. Bakar, M. S. Ramli, S. Sulaiman, and Y. Hussain, “Perceived
+                                                                          usefulness of augmented reality application as educational intervention
+educational environments, teachers could employ personalized              for children with autism spectrum disorder,” Multidisciplinary Science
+VR simulations to support social interaction, classroom                   Journal, vol. 8, no. 2, 2026, doi: 10.31893/multiscience.2026085.
+transition preparation, and vocational skill development.           [7]   N. A. Bakar, M. S. Ramli, S. Sulaiman, N. Zamri, W. P. I. Wan, and R.
+Similarly, organizations involved in workforce readiness or               Muhamad, “Impact assessment of perceived efficacy and training on
+public services may adopt VR simulations to prepare autistic              perceived usefulness of augmented reality application as educational
+individuals for transportation use, workplace communication, or           intervention among ASD children,” Multidisciplinary Science Journal,
+                                                                          vol. 8, no. 2, 2026, doi: 10.31893/multiscience.2026083.
+
+
+
+
+                                                                                                                                  373 | P a g e
+                                                       www.ijacsa.thesai.org
+
+===== PDF PAGE 11 / 13 =====
+                                                                      (IJACSA) International Journal of Advanced Computer Science and Applications,
+                                                                                                                               Vol. 17, No. 5, 2026
+
+[8]  V. Bhagat, M. Haque, N. Bin Simbak, and R. Husain, “Emotional                        ethical practices,” J. Enabling Technol., vol. 16, no. 2, pp. 124–140, 2022,
+     Regulation in Autism Spectrum Disorders: A New Proposed Model for                    doi: 10.1108/JET-01-2022-0010.
+     Regulating Emotions through Parent Education,” 2009. [Online].                  [22] N. Newbutt, C. Sung, H.-J. Kuo, M. J. Leahy, C.-C. Lin, and B. Tong,
+     Available: www.jgpt.co.in                                                            “Brief Report: A Pilot Study of the Use of a Virtual Reality Headset in
+[9] A. E. Keys, O. Oyekoya, and D. Chan, “Exploring Effects of Interactive                Autism Populations,” J. Autism Dev. Disord., vol. 46, no. 9, pp. 3166–
+     Virtual Reality Sensory Environment on Anxiety Reduction in                          3176, 2016, doi: 10.1007/s10803-016-2830-5.
+     Adolescents with Autism,” in ISS Companion 2024 - Companion                     [23] A. Grabowski, “Acceptance and Usability of Different Virtual Reality -
+     Proceedings of the Conference on Interactive Surfaces and Spaces, B. Ens             Based Technologies Supporting Physical Rehabilitation of the Upper
+     and S. Carpendale, Eds., Association for Computing Machinery, Inc,                   Limb: Results of Experiments with Patients After Upper Limb Injury at
+     2024, pp. 48–53. doi: 10.1145/3696762.3698051.                                       Work,” Games Health J., vol. 14, no. 5, pp. 389–397, 2025, doi:
+[10] Z. Yu, S. Iadarola, S. Daley, and Z. Zheng, “A Screen-Based Multimodal               10.1089/g4h.2024.0071.
+     Virtual Classroom Interface for Understanding Behavioral Sensory                [24] K. Zhang, J. Chen, and Z. Yang, “Assessment and intervention with
+     Responses in Autistic Adolescents: A Pilot Study,” IEEE Transactions on              virtual reality technology for children aged 3–12 years with autism
+     Neural Systems and Rehabilitation Engineering, vol. 33, pp. 4067–4077,               spectrum disorders: A scoping review,” Educ. Inf. Technol. (Dordr)., vol.
+     2025, doi: 10.1109/TNSRE.2025.3619484.                                               30, no. 14, pp. 19703–19740, 2025, doi: 10.1007/s10639-025-13561-1.
+[11] M. L. Max and J. C. Burke, “Virtual reality for autism communication            [25] M. I. Rosli, Z. Che Embi, and J. Abdullah, “A Non-immersive Virtual
+     and education, with lessons for medical training simulators,” in Studies in          Reality Application for Children with Autism Spectrum Disorder,” in
+     Health Technology and Informatics, IOS Press, 1997, pp. 46 –53. doi:                 Lecture Notes in Computer Science (including subseries Lecture Notes in
+     10.3233/978-1-60750-883-0-46.                                                        Artificial Intelligence and Lecture Notes in Bioinformatics), A. I. Cristea
+[12] B. Güçlü, C. Tanidir, N. M. Mukaddes, and F. Ünal, “Tactile sensitivity              and C. Troussas, Eds., Springer Science and Business Media Deutschland
+     of normal and autistic children,” Somatosens. Mot. Res., vol. 24, no. 1 –2,          GmbH, 2021, pp. 519–525. doi: 10.1007/978-3-030-80421-3_57.
+     pp. 21–33, 2007, doi: 10.1080/08990220601179418.                                [26] P. Mittal et al., “Effect of immersive virtual reality-based training on
+[13] M. Diepman and N. Brady, “Sensory responsivity and its relation to                   cognitive, social, and emotional skills in children and adolescents with
+     alexithymia, social processing and restricted interests and repetitive               autism spectrum disorder: A meta -analysis of randomized controlled
+     behaviour in autistic children,” Res. Autism Spectr. Disord., vol. 118,              trials,”     Res.     Dev.     Disabil.,   vol.    151,     2024,     doi:
+     2024, doi: 10.1016/j.rasd.2024.102470.                                               10.1016/j.ridd.2024.104771.
+[14] L. Maddalon, M. E. Minissi, S. Cervera -Torres, A. Hervás, S. Gómez-            [27] M. A. Md Ali, M. N. Ahmad, W. S. Wan Ismail, and N. S. Mohamad Aun,
+     García, and M. Alcañiz, “Multimodal Interaction in ASD Children: A                   “VIRTUAL REALITY APPLICATIONS IN AUTISM SPECTRUM
+     Usability Study of a Portable Hybrid VR System,” in Lecture Notes in                 DISORDER: A SYSTEMATIC REVIEW,” 15th International
+     Computer Science (including subseries Lecture Notes in Artificia l                   Conference on ICT, Society and Human Beings, ICT 2022, 19th
+     Intelligence and Lecture Notes in Bioinformatics), M. Antona and C.                  International Conference on Web Based Communities and Social Media,
+     Stephanidis, Eds., Springer Science and Business Media Deutschland                   WBC 2022 and 14th International Conference on e-Health, EH 2022 -
+     GmbH, 2023, pp. 614–624. doi: 10.1007/978-3-031-35681-0_40.                          Held at the 16th Multi Conference on Comp…, 2022, Accessed: Apr. 04,
+[15] J. F. Herrero and G. Lorenzo, “An immersive virtual reality educational              2026.                           [Online].                       Available:
+     intervention on people with autism spectrum disorders (ASD) for the                  https://www.scopus.com/pages/publications/85142223586?origin=scopu
+     development of communication skills and problem solving,” Educ. Inf.                 sAI
+     Technol. (Dordr)., vol. 25, no. 3, pp. 1689–1722, 2020, doi:                    [28] W. Fu, T. Tao, J. Wang, Z. Peng, and Y. Wang, “Application of Virtual
+     10.1007/s10639-019-10050-0.                                                          Reality Technology in Intervention for Children With Autism Spectrum
+[16] E. Bekele et al., “Multimodal adaptive social interaction in virtual                 Disorder: A Systematic Review,” Journal of Special Education
+     environment (MASI-VR) for children with Autism spectrum disorders                    Technology, vol. 40, no. 4, pp. 519–529, 2025, doi:
+     (ASD),” in Proceedings - IEEE Virtual Reality, V. Interrante, T. Hollerer,           10.1177/01626434251317984.
+     E. Suma, and A. Lecuyer, Eds., IEEE Computer Society, 2016, pp. 121–            [29] D. Cunningham and M. Krishack, “Virtual reality promotes visual and
+     130. doi: 10.1109/VR.2016.7504695.                                                   cognitive function in rehabilitation,” Cyberpsychology and Behavior, vol.
+[17] Y. Zhao et al., “P-MARS: Design of a VR-Based Ergotherapy System for                 2, no. 1, pp. 19–23, 1999, doi: 10.1089/cpb.1999.2.19.
+     Children with Autism and its Longitudinal Tracking Evaluation,” in              [30] S.-N. Ahn, “Virtual, augmented, and mixed reality training for improving
+     Proceedings - 2025 IEEE International Symposium on Mixed and                         social skills in individuals with Autism Spectrum Disorder: A systematic
+     Augmented Reality, ISMAR 2025, U. Eck, G. Lee, A. Plopski, M. Smith,                 review,” Hong Kong Journal of Occupational Therapy, vol. 38, no. 2, pp.
+     Q. Sun, and M. Tatzgern, Eds., Institute of Electrical and Electronics               167–178, 2025, doi: 10.1177/15691861251369043.
+     Engineers         Inc.,      2025,         pp.       1534–1542.          doi:   [31] Y. Politis, C. Sung, L. Goodman, and M. Leahy, “Conversation skills
+     10.1109/ISMAR67309.2025.00157.                                                       training for people with autism through virtual reality: using responsible
+[18] M. Schmidt et al., “Toward a strengths-based model for designing virtual             research and innovation approach,” Advances in Autism, vol. 6, no. 1, pp.
+     reality learning experiences for autistic users,” Autism, vol. 28, no. 7, pp.        3–16, 2020, doi: 10.1108/AIA-05-2018-0017.
+     1809–1827, 2024, doi: 10.1177/13623613231208579.                                [32] K. Wagner et al., “From Innovation to Integration: Classroom Strategies
+[19] L. Boyd, B. Wasserman, G. Hayes, K. Day, K. Abdo, and E. Linstead,                   for Using VR With Students on the Autism Spectrum,” Journal of Special
+     “Paper prototyping comfortable VR play for diverse sensory needs,” in                Education Technology, 2025, doi: 10.1177/01626434251387307.
+     Conference on Human Factors in Computing Systems - Proceedings,                 [33] A. Carreon, A. Rowland, S. Smith, A. Lowery, and M. Mosher,
+     Association     for     Computing        Machinery,       2019.     doi:             “Designing for Successful Educational Experiences in Virtual Reality
+     10.1145/3290607.3313080.                                                             Environments,” Journal of Special Education Technology, vol. 40, no. 3,
+[20] V. Bauer, T. Bouchara, O. Duris, C. Labossière, M.-N. Clément, and P.                pp. 298–313, 2025, doi: 10.1177/01626434241277191.
+     Bourdot, “Evaluating the Acceptability and Usability of a Head -Mounted         [34] R. M. Silva, D. Carvalho, P. Martins, and T. Rocha, “Systematic
+     Augmented Reality Approach for Autistic Children with High Support                   Literature Review of the Use of Virtual Reality in the Inclusion of
+     Needs,” in Lecture Notes in Computer Science (including subseries                    Children with Autism Spectrum Disorders (ASD),” in Lecture Notes in
+     Lecture Notes in Artificial Intelligence and Lecture Notes in                        Computer Science, H. Y.-M. and T. Rocha, Eds., Springer Science and
+     Bioinformatics), G. Zachmann, A. R. M, P. Bourdot, M. Marchal, J.                    Business Media Deutschland GmbH, 2023, pp. 501 –509. doi:
+     Stefanucci, and X. Yang, Eds., Springer Science and Business Media                   10.1007/978-3-031-40113-8_49.
+     Deutschland GmbH, 2022, pp. 53–72. doi: 10.1007/978-3-031-16234-
+                                                                                     [35] G. E. Kuper, K. Ksobiech, J. Wickert, F. Leighton, and E. Frederick, “An
+     3_4.
+                                                                                          Exploratory Analysis of Increasing Self-Efficacy of Adults with Autism
+[21] N. Newbutt and R. Bradley, “Using immersive virtual reality with autistic            Spectrum Disorder through the Use of Multimedia Training Stimuli,”
+     pupils: moving towards greater inclusion and co-participation through                Cyberpsychol. Behav. Soc. Netw., vol. 23, no. 1, pp. 34–40, 2020, doi:
+                                                                                          10.1089/cyber.2019.0111.
+
+
+
+
+                                                                                                                                                    374 | P a g e
+                                                                      www.ijacsa.thesai.org
+
+===== PDF PAGE 12 / 13 =====
+                                                                     (IJACSA) International Journal of Advanced Computer Science and Applications,
+                                                                                                                              Vol. 17, No. 5, 2026
+
+[36] R. M. Silva, P. Martins, and T. Rocha, “Impact of virtual reality learning    [54] K. Arivuselvan, R. K. Nadesh, and R. S. Perumal, “ILAT (Software as a
+     environments on skills development in students with ASD,” Computers                Service): Interactive Learning Application Tool for Autism Screening and
+     and Education Open, vol. 9, 2025, doi: 10.1016/j.caeo.2025.100298.                 Assessment in children with Autism Spectrum Disorder,” International
+[37] K. Atsalaki and I. Kazanidis, “Combining Virtual Reality Visual Novels             Journal on Recent and Innovation Trends in Computing and
+     and Social Stories to Support Social and Emotional Development in                  Communication, vol. 10, no. 11, pp. 77–82, 2022, doi:
+     Children with Autism Spectrum Disorder,” Applied Sciences                          10.17762/ijritcc.v10i11.5783.
+     (Switzerland), vol. 15, no. 12, 2025, doi: 10.3390/app1512658 4.              [55] C. Y. Khor, S. A. Mubin, C. I. Tan, V. Thiruchelvam, T. K. Neo, and G.
+[38] M. Johnson, A. M. Tate, K. Tate, S. A. Laane, Z. Chang, and S. B.                  K. Teoh, “A Multimodal Framework for Integrating Motion Capture
+     Chapman, “CharismaTM virtual social training: A digital health platform            Monitoring into ASD Screening Utilizing XR Applications,” Proc. ACM
+     and protocol,” Front. Virtual Real., vol. 3, 2022, doi:                            Hum. Comput. Interact., vol. 9, no. 4, 2025, doi: 10.1145/3734435.
+     10.3389/frvir.2022.1004162.                                                   [56] A. H. Darmasti, R. Zender, A. Sianipar, and N. Pinkwart, “Individual
+[39] M. A. F. A. Basri et al., “Development of a Social Communication Skills            Variability in Cognitive Engagement and Performance Adaptation During
+     Intervention Using Video Modeling and Spherical Video-Based Virtual                Virtual Reality Interaction: A Comparative EEG Study of Autistic and
+     Reality for High Functioning Autism Spectrum Disorder Youth: A                     Neurotypical Individuals,” Multimodal Technologies and Interaction, vol.
+     Preliminary Study,” IEEE Access, vol. 12, pp. 77976–77987, 2024, doi:              9, no. 7, 2025, doi: 10.3390/mti9070067.
+     10.1109/ACCESS.2024.3407114.                                                  [57] M. A. M. F. Arfian et al., “AutiSim: A Virtual Reality Simulation Game
+[40] A. Xygkou, P. Siriaraya, W.-J. She, A. Covaci, and C. S. Ang, “‘Can I be           Based on the Autism Spectrum Disorder,” International Journal of
+     More Social with a Chatbot?’: Social Connectedness Through                         Advanced Computer Science and Applications, vol. 16, no. 6, pp. 583 –
+     Interactions of Autistic Adults with a Conversational Virtual Human,” Int.         593, 2025, doi: 10.14569/IJACSA.2025.0160657.
+     J. Hum. Comput. Interact., vol. 40, no. 24, pp. 8937–8954, 2024, doi:         [58] J. A. Kent and C. E. Hughes, “Law enforcement training using simulation
+     10.1080/10447318.2023.2292880.                                                     for locally customized encounters,” Front. Virtual Real., vol. 3, 2022, doi:
+[41] B. S. Sanku, Y. Li, S. Jung, C. Mei, and J. He, “Enhancing attention in            10.3389/frvir.2022.960146.
+     autism spectrum disorder: comparative analysis of virtual reality -based      [59] M. Alper, E. Pak, E. McGivney, and V. Rubinsztain, “‘Someone who has
+     training programs using physiological data,” Front. Comput. Sci., vol. 5,          ADHD or someone who has autism should make the Rules’: A
+     2023, doi: 10.3389/fcomp.2023.1250652.                                             participatory study of neurodivergent Child perspectives on the ethics of
+[42] R. Razzak, Y. (Joy) Li, J. (Selena) He, S. Jung, C. Mei, and Y. Huang,             Extended reality technologies,” Int. J. Child. Comput. I nteract., vol. 46,
+     “Using virtual reality to enhance attention for autistic spectrum disorder         2025, doi: 10.1016/j.ijcci.2025.100782.
+     with eye tracking,” High-Confidence Computing, vol. 5, no. 1, 2025, doi:      [60] A. Soltiyeva et al., “Understanding experiences and interactions of
+     10.1016/j.hcc.2024.100234.                                                         children with Asperger’s syndrome in Virtual Reality-based learning
+[43] P. Julrode, P. Worragin, P. Ariya, K. Puritat, and K. Intawong, “Designin g        systems,” Interactive Learning Environments, vol. 33, no. 2, pp. 1118–
+     Gamified Virtual Reality Intervention Based on Experiential Learning to            1140, 2025, doi: 10.1080/10494820.2024.2364250.
+     Enhance Social Reciprocity in Children with Autism Spectrum Disorder,”        [61] Y. Alvarado, R. Guerrero, and F. Serón, “Inclusive Learning through
+     Educ. Sci. (Basel)., vol. 15, no. 9, 2025, doi: 10.3390/educsci15091104.           Immersive Virtual Reality and Semantic Embodied Conversational
+[44] J. Moon, “Learning experience design of verbal prompts in virtual reality -        Agent: A case study in children with autism[Aprendizaje Inclusivo
+     based training for autistic children,” Research in Learning Technology,            mediante Realidad Virtual Inmersiva y Agente Conversacional Semántico
+     vol. 32, 2024, doi: 10.25304/rlt.v32.3129.                                         Encarnado: Un caso de estudi…,” Journal of Computer Science and
+                                                                                        Technology(Argentina), vol. 23, no. 2, pp. 107–116, Oct. 2023, doi:
+[45] Q. P. Tan, L. Huang, D. Xu, Y. Cen, and Q. Cao, “Serious Game for VR
+                                                                                        10.24215/16666038.23.e09.
+     Road Crossing in Special Needs Education,” Electronics (Switzerland),
+     vol. 11, no. 16, 2022, doi: 10.3390/electronics11162568.                      [62] A. M. Soccini and A. Clocchiatti, “Daily Life Adaptation in Autism: A
+                                                                                        Co-Design Framework for the Validation of Virtual Reality Experiential
+[46] I. T. Miller, B. K. Wiederhold, C. S. Miller, and M. D. Wiederhold,
+                                                                                        Training Systems,” Electronics (Switzerland), vol. 14, no. 21, 2025, doi:
+     “Virtual Reality Air Travel Training with Children on the Autism
+                                                                                        10.3390/electronics14214268.
+     Spectrum: A Preliminary Report,” Cyberpsychol. Behav. Soc. Netw., vol.
+     23, no. 1, pp. 10–15, 2020, doi: 10.1089/cyber.2019.0093.                     [63] S. Mahini, “Virtual Reality as a Tool for Children with Autism Spectrum
+                                                                                        Disorder,” Digital Technologies Research and Applications, vol. 3, no. 1,
+[47] G. Wan et al., “FECTS: A Facial Emotion Cognition and Training System              pp. 16–23, 2024, doi: 10.54963/dtra.v3i1.211.
+     for Chinese Children with Autism Spectrum Disorder,” Comput. Intell.
+     Neurosci., vol. 2022, 2022, doi: 10.1155/2022/9213526.                        [64] R. Razzak, Y. (Joy) Li, J. (Selena) He, S. Jung, C. Mei, and Y. Huang,
+                                                                                        “Using virtual reality to enhance attention for autistic spectrum disorder
+[48] D. Johnston, H. Egermann, and G. Kearney, “SoundFields: A virtual                  with eye tracking,” High-Confidence Computing, vol. 5, no. 1, Mar. 2025,
+     reality game designed to address auditory hypersensitivity in individuals          doi: 10.1016/j.hcc.2024.100234.
+     with autism spectrum disorder,” Applied Sciences (Switzerland), vol. 10,
+     no. 9, 2020, doi: 10.3390/app10092996.                                        [65] J. Moon, “Learning experience design of verbal prompts in virtual reality -
+                                                                                        based training for autistic children,” Research in Learning Technology,
+[49] A. Plunk, A. Z. Amat, M. Tauseef, R. A. Peters, and N. Sarkar, “Semi-
+                                                                                        vol. 32, 2024, doi: 10.25304/rlt.v32.3129.
+     Supervised Behavior Labeling Using Multimodal Data during Virtual
+     Teamwork-Based Collaborative Activities,” Sensors, vol. 23, no. 7, 2023,      [66] R. M. Silva, P. Martins, and T. Rocha, “Impact of virtual reality learning
+     doi: 10.3390/s23073524.                                                            environments on skills development in students with ASD,” Computers
+                                                                                        and Education Open, vol. 9, Dec. 2025, doi: 10.1016/j.caeo.2025.100298.
+[50] V. Wunsch et al., “Virtual Reality-Based Approach to Evaluate Emotional
+     Everyday Scenarios for a Digital Health Application,” Multimodal              [67] K. Atsalaki and I. Kazanidis, “Combining Virtual Reality Visual Novels
+     Technologies and Interaction, vol. 8, no. 12, 2024, doi:                           and Social Stories to Support Social and Emotional Development in
+     10.3390/mti8120113.                                                                Children with Autism Spectrum Disorder,” Applied Sciences
+                                                                                        (Switzerland), vol. 15, no. 12, Jun. 2025, doi: 10.3390/app15 126584.
+[51] J. Moon, F. Ke, Z. Sokolikj, and S. Chakraborty, “Applying multimodal
+     data fusion to track autistic adolescents’ representational flexibility       [68] J. Moon, F. Ke, Z. Sokolikj, and S. Chakraborty, “Applying multimodal
+     development during virtual reality-based training,” Computers and                  data fusion to track autistic adolescents’ representational flexibility
+     Education: X Reality, vol. 4, 2024, doi: 10.1016/j.cexr.2024.100063.               development during virtual reality-based training,” Computers and
+                                                                                        Education: X Reality, vol. 4, Jan. 2024, doi: 10.1016/j.cexr.2024.100063.
+[52] L. Tarantino, M. Attanasio, T. Di Mascio, G. De Gasperis, M. Valenti,
+     and M. Mazza, “On the Evaluation of Engagement in Immersive                   [69] V. Wunsch et al., “Virtual Reality-Based Approach to Evaluate Emotional
+     Applications When Users Are on the Autism Spectrum,” Sensors, vol. 23,             Everyday Scenarios for a Digital Health Application,” Multimodal
+     no. 4, 2023, doi: 10.3390/s23042192.                                               Technologies and Interaction, vol. 8, no. 12, 2024, doi:
+                                                                                        10.3390/mti8120113.
+[53] M. Robles et al., “A Virtual Reality Based System for the Screening and
+     Classification of Autism,” IEEE Trans. Vis. Comput. Graph., vol. 28, no.
+     5, pp. 2168–2178, 2022, doi: 10.1109/TVCG.2022.3150489.
+
+
+
+
+                                                                                                                                                  375 | P a g e
+                                                                    www.ijacsa.thesai.org
+
+===== PDF PAGE 13 / 13 =====
+                                                                  (IJACSA) International Journal of Advanced Computer Science and Applications,
+                                                                                                                           Vol. 17, No. 5, 2026
+
+[70] M. Robles et al., “A Virtual Reality Based System for the Screening and         systems,” Interactive Learning Environments, vol. 33, no. 2, pp. 1118–
+     Classification        of      Autism.”        [Online].       Available:        1140, 2025, doi: 10.1080/10494820.2024.2364250.
+     https://charactergenerator.autodesk.com/                                   [74] Y. Alvarado, R. Guerrero, and F. Serón, “Inclusive Learning through
+[71] L. Tarantino, M. Attanasio, T. Di Mascio, G. De Gasperis, M. Valenti,           Immersive Virtual Reality and Semantic Embodied Conversational
+     and M. Mazza, “On the Evaluation of Engagement in Immersive                     Agent: A case study in children with autism Aprendizaje Inclusivo
+     Applications When Users Are on the Autism Spectrum,” Sensors, vol. 23,          mediante Realidad Virtual Inmersiva y Agente Conversacional Semántico
+     no. 4, 2023, doi: 10.3390/s23042192.                                            Encarnado: Un caso de estudio en niños con autismo.”
+[72] A. Plunk, A. Z. Amat, M. Tauseef, R. A. Peters, and N. Sarkar, “Semi-      [75] S. Mahini, “Virtual Reality as a Tool for Children with Autism Spectrum
+     Supervised Behavior Labeling Using Multimodal Data during Virtual               Disorder,” Digital Technologies Research and Applications, vol. 3, no. 1,
+     Teamwork-Based Collaborative Activities,” Sensors, vol. 23, no. 7, Apr.         pp. 16–23, Mar. 2024, doi: 10.54963/dtra.v3i1.211.
+     2023, doi: 10.3390/s23073524.                                              [76] A. M. Soccini and A. Clocchiatti, “Daily Life Adaptation in Autism: A
+[73] A. Soltiyeva et al., “Understanding experiences and interactions of             Co-Design Framework for the Validation of Virtual Reality Experiential
+     children with Asperger’s syndrome in Virtual Reality-based learning             Training Systems,” Electronics (Switzerland), vol. 14, no. 21, Nov. 2025,
+                                                                                     doi: 10.3390/electronics14214268.
+
+
+
+
+                                                                                                                                             376 | P a g e
+                                                                  www.ijacsa.thesai.org

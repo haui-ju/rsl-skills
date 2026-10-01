@@ -44,6 +44,7 @@
     "cribado2:init": "~/.local/share/pipx/venvs/graphifyy/bin/python scripts/cribado2.py init",
     "cribado2:download": "~/.local/share/pipx/venvs/graphifyy/bin/python scripts/cribado2.py download",
     "cribado2:align": "~/.local/share/pipx/venvs/graphifyy/bin/python scripts/cribado2.py align",
+    "cribado2:documentos": "~/.local/share/pipx/venvs/graphifyy/bin/python scripts/cribado2.py documentos",
     "cribado2:prepare": "~/.local/share/pipx/venvs/graphifyy/bin/python scripts/cribado2.py prepare",
     "cribado2:stamp": "~/.local/share/pipx/venvs/graphifyy/bin/python scripts/cribado2.py stamp",
     "cribado2:build": "~/.local/share/pipx/venvs/graphifyy/bin/python scripts/cribado2.py build",

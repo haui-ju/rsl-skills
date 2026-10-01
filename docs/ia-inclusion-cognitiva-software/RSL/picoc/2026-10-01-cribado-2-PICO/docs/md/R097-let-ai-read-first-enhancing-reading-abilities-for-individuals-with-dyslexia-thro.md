@@ -1,0 +1,974 @@
+# Let AI Read First: Enhancing Reading Abilities for Individuals
+
+> Fuente PDF: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · técnica **locator index** (página + ancla) + chunks Graphify
+
+## Metadata
+- Stem: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro`
+- PDF: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf`
+- DOI: `10.1145/3706599.3720113`
+- Pages: `16`
+- Structured_at: `2026-10-01T07:27:31+00:00`
+- Technique: `pdf-page-locators + heading-chunks`
+
+## Locator index (qué hay y en qué página del PDF)
+
+| Kind | Label | PDF page | MD anchor |
+|------|-------|----------|-----------|
+| abstract | Abstract / blurb | 1 | `#abstract` |
+| section | 2 Related Work and Background | 2 | `#p2-2-related-work-and-background` |
+| section | 3 Method and Data | 3 | `#p3-3-method-and-data` |
+| section | 3.1 Workflow of LARF                                                      5 Experiment | 3 | `#p3-3-1-workflow-of-larf-5-experiment` |
+| concept | show that LARF significantly improves reading performance and Dyslexia | 1 | `#concept-show-that-larf-significantly-improves-reading-performance-and-dyslexia` |
+| concept | Shoucong Carol Xiong | 1 | `#concept-shoucong-carol-xiong` |
+| concept | Bo Pang | ? | `#concept-bo-pang` |
+| concept | Xiaoying Tang | 1 | `#concept-xiaoying-tang` |
+| concept | April 26-May 1 | 1 | `#concept-april-26-may-1` |
+| concept | 2025 | ? | `#concept-2025` |
+| concept | Yokohama | ? | `#concept-yokohama` |
+| concept | April ACM ISBN 979-8-4007-1395-8/2025/04 26-May 1 | 1 | `#concept-april-acm-isbn-979-8-4007-1395-8-2025-04-26-may-1` |
+| concept | Japan. ACM | ? | `#concept-japan-acm` |
+| concept | New York | ? | `#concept-new-york` |
+| concept | USA | ? | `#concept-usa` |
+| concept | Japan Zhao et al | 2 | `#concept-japan-zhao-et-al` |
+| concept | R097 | ? | `#concept-r097` |
+| concept | read | ? | `#concept-read` |
+| concept | first | ? | `#concept-first` |
+| concept | enhancing | ? | `#concept-enhancing` |
+| concept | reading | ? | `#concept-reading` |
+| concept | abilities | ? | `#concept-abilities` |
+| concept | individuals | ? | `#concept-individuals` |
+| concept | with | ? | `#concept-with` |
+| concept | dyslexia | ? | `#concept-dyslexia` |
+| concept | thro | ? | `#concept-thro` |
+| finding | experience for individuals with dyslexia. | 1 | `#finding-experience-for-individuals-with-dyslexia` |
+| finding | Furthermore, this work discusses potential research ability and quality of life. | 1 | `#finding-furthermore-this-work-discusses-potenti` |
+| finding | Existing assistive technologies are lim- directions opened up by LARF for the HCI communit… | 1 | `#finding-existing-assistive-technologies-are-lim` |
+| finding | ited by factors such as unsuitability for quiet environments, high costs, and the risk of … | 1 | `#finding-ited-by-factors-such-as-unsuitability-fo` |
+| finding | We evaluated LARF in a large-scale between-subjects experiment, involving 150 participants… | 1 | `#finding-we-evaluated-larf-in-a-large-scale-betwe` |
+| finding | Copyrights for third-party components of this work must be honored. | 1 | `#finding-copyrights-for-third-party-components-of` |
+| page | p.1: Let AI Read First: Enhancing Reading Abilities for Individuals | 1 | `#pdf-p1` |
+| page | p.2: CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan Zhao et al. | 2 | `#pdf-p2` |
+| page | p.3: LARF CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan | 3 | `#pdf-p3` |
+| page | p.4: CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan Zhao et al. | 4 | `#pdf-p4` |
+| page | p.5: LARF CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan | 5 | `#pdf-p5` |
+| page | p.6: CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan Zhao et al. | 6 | `#pdf-p6` |
+| page | p.7: LARF CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan | 7 | `#pdf-p7` |
+| page | p.8: CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan Zhao et al. | 8 | `#pdf-p8` |
+| page | p.9: LARF CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan | 9 | `#pdf-p9` |
+| page | p.10: CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan Zhao et al. | 10 | `#pdf-p10` |
+| page | p.11: LARF CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan | 11 | `#pdf-p11` |
+| page | p.12: CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan Zhao et al. | 12 | `#pdf-p12` |
+| page | p.13: LARF CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan | 13 | `#pdf-p13` |
+| page | p.14: CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan Zhao et al. | 14 | `#pdf-p14` |
+| page | p.15: LARF CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan | 15 | `#pdf-p15` |
+| page | p.16: CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan Zhao et al. | 16 | `#pdf-p16` |
+
+## Abstract
+<a id="abstract"></a>
+
+experience for individuals with dyslexia. Results also prove that Dyslexia, a neurological condition affecting approximately 12% of LARF is particularly helpful for participants with more severe read- the global population, presents significant challenges to reading ing difficulties. Furthermore, this work discusses potential research ability and quality of life. Existing assistive technologies are lim- directions opened up by LARF for the HCI community. ited by factors such as unsuitability for quiet environments, high costs, and the risk of distorting meaning or failing to provide real- CCS Concepts time support. To address these issues, we introduce LARF (Let AI • Human-centered computing → Human computer interac- Read First), the first strategy that employs large language models tion (HCI); Accessibility; Accessibility design and evaluation to annotate text and enhance readability while preserving the orig- methods. inal content. We evaluated LARF in a large-scale between-subjects experiment, involving 150 participants with dyslexia. The results Keywords show that LARF significantly improves reading performance and Dyslexia, accessibility Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed ACM Reference Format: for profit or commercial advantage and that copies bear this notice and the full citation Sihang Zhao, Shoucong Carol Xiong, Bo Pang, Xiaoying Tang, and Pinjia on the first page. Copyrights for third-party components of this work must be honored. He. 2025. Let AI Read First: Enhancing Reading Abilities for Individuals For all other uses, contact the owner/author(s). with Dyslexia through Artificial Intelligence. In Extended Abstracts of the CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan © 2025 Copyright held by the owner/author(s). CHI Conference on Human Factors in Computing Systems (CHI EA ’25), April ACM ISBN 979-8-4007-1395-8/2025/04 26-May 1, 2025, Yokohama, Japan. ACM, New York, NY, USA, 16 pages. https://doi.org/10.1145/3706599.3720113 https://doi.org/10.1145/3706599.3720113 CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan Zhao et al.
+
+## Keywords
+
+- show that LARF significantly improves reading performance and Dyslexia
+- Shoucong Carol Xiong
+- Bo Pang
+- Xiaoying Tang
+- April 26-May 1
+- 2025
+- Yokohama
+- April ACM ISBN 979-8-4007-1395-8/2025/04 26-May 1
+- 2025
+- Yokohama
+- Japan. ACM
+- New York
+- USA
+- April 26-May 1
+- 2025
+- Yokohama
+- Japan Zhao et al
+
+## Concept index (graph hooks + página)
+
+<a id="concept-show-that-larf-significantly-improves-reading-performance-and-dyslexia"></a>
+### [PDF p.1] Concept: show that LARF significantly improves reading performance and Dyslexia
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **1**
+
+<a id="concept-shoucong-carol-xiong"></a>
+### [PDF p.1] Concept: Shoucong Carol Xiong
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **1**
+
+<a id="concept-bo-pang"></a>
+### [PDF p.?] Concept: Bo Pang
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **?**
+
+<a id="concept-xiaoying-tang"></a>
+### [PDF p.1] Concept: Xiaoying Tang
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **1**
+
+<a id="concept-april-26-may-1"></a>
+### [PDF p.1] Concept: April 26-May 1
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **1**
+
+<a id="concept-2025"></a>
+### [PDF p.?] Concept: 2025
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **?**
+
+<a id="concept-yokohama"></a>
+### [PDF p.?] Concept: Yokohama
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **?**
+
+<a id="concept-april-acm-isbn-979-8-4007-1395-8-2025-04-26-may-1"></a>
+### [PDF p.1] Concept: April ACM ISBN 979-8-4007-1395-8/2025/04 26-May 1
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **1**
+
+<a id="concept-japan-acm"></a>
+### [PDF p.?] Concept: Japan. ACM
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **?**
+
+<a id="concept-new-york"></a>
+### [PDF p.?] Concept: New York
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **?**
+
+<a id="concept-usa"></a>
+### [PDF p.?] Concept: USA
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **?**
+
+<a id="concept-japan-zhao-et-al"></a>
+### [PDF p.2] Concept: Japan Zhao et al
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **2**
+
+<a id="concept-r097"></a>
+### [PDF p.?] Concept: R097
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **?**
+
+<a id="concept-read"></a>
+### [PDF p.?] Concept: read
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **?**
+
+<a id="concept-first"></a>
+### [PDF p.?] Concept: first
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **?**
+
+<a id="concept-enhancing"></a>
+### [PDF p.?] Concept: enhancing
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **?**
+
+<a id="concept-reading"></a>
+### [PDF p.?] Concept: reading
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **?**
+
+<a id="concept-abilities"></a>
+### [PDF p.?] Concept: abilities
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **?**
+
+<a id="concept-individuals"></a>
+### [PDF p.?] Concept: individuals
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **?**
+
+<a id="concept-with"></a>
+### [PDF p.?] Concept: with
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **?**
+
+<a id="concept-dyslexia"></a>
+### [PDF p.?] Concept: dyslexia
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **?**
+
+<a id="concept-thro"></a>
+### [PDF p.?] Concept: thro
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **?**
+
+
+## Findings index (graph hooks + página)
+
+<a id="finding-experience-for-individuals-with-dyslexia"></a>
+### [PDF p.1] Finding: experience for individuals with dyslexia.
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **1**
+
+<a id="finding-furthermore-this-work-discusses-potenti"></a>
+### [PDF p.1] Finding: Furthermore, this work discusses potential research ability and quality of life.
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **1**
+
+<a id="finding-existing-assistive-technologies-are-lim"></a>
+### [PDF p.1] Finding: Existing assistive technologies are lim- directions opened up by LARF for the HCI community.
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **1**
+
+<a id="finding-ited-by-factors-such-as-unsuitability-fo"></a>
+### [PDF p.1] Finding: ited by factors such as unsuitability for quiet environments, high costs, and the risk of distorting meaning or failing to provide real- CCS Concepts time support.
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **1**
+
+<a id="finding-we-evaluated-larf-in-a-large-scale-betwe"></a>
+### [PDF p.1] Finding: We evaluated LARF in a large-scale between-subjects experiment, involving 150 participants with dyslexia.
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **1**
+
+<a id="finding-copyrights-for-third-party-components-of"></a>
+### [PDF p.1] Finding: Copyrights for third-party components of this work must be honored.
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **1**
+
+
+## Relevance hooks
+### Theme relevance: software engineering and accessibility
+### Theme relevance: cognitive accessibility and neurodiversity
+### Theme relevance: evaluation metrics and WCAG
+
+## Sections (detected in PDF)
+
+<a id="p2-2-related-work-and-background"></a>
+### [PDF p.2] Section: 2 Related Work and Background
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **2** · ancla `#p2-2-related-work-and-background`
+
+<a id="p3-3-method-and-data"></a>
+### [PDF p.3] Section: 3 Method and Data
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **3** · ancla `#p3-3-method-and-data`
+
+<a id="p3-3-1-workflow-of-larf-5-experiment"></a>
+### [PDF p.3] Section: 3.1 Workflow of LARF                                                      5 Experiment
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **3** · ancla `#p3-3-1-workflow-of-larf-5-experiment`
+
+
+## Page chunks (texto por página del PDF)
+
+_Cada heading es un nodo Graphify. El label incluye la página para volver al PDF sin releer todo._
+
+<a id="pdf-p1"></a>
+### [PDF p.1] Let AI Read First: Enhancing Reading Abilities for Individuals
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **1** / 16
+
+Let AI Read First: Enhancing Reading Abilities for Individuals
+                                                     with Dyslexia through Artificial Intelligence
+                                                             Sihang Zhao                                        Shoucong Carol Xiong                                         Bo Pang
+                                                The Chinese University of Hong                                       Zhejiang University                         Chinese Academy of Science
+                                                       Kong, Shenzhen                                                 Hangzhou, China                                  Beijing, China
+                                                       Shenzhen, China                                             carolhsiung@zju.edu.cn                             bopang@cnic.cn
+                                                 sihangzhao@link.cuhk.edu.cn
+
+                                                                                         Xiaoying Tang                                            Pinjia He∗
+                                                                              The Chinese University of Hong                         The Chinese University of Hong
+
+
+
+
+arXiv:2504.00941v1 [cs.HC] 1 Apr 2025
+                                                                                     Kong, Shenzhen                                         Kong, Shenzhen
+                                                                                     Shenzhen, China                                        Shenzhen, China
+                                                                                tangxiaoying@cuhk.edu.cn                                 hepinjia@cuhk.edu.cn
+
+
+
+
+                                        Figure 1: People with dyslexia always have difficulties while reading. We propose a method Let AI Read First (LARF) that uses
+                                        language models to annotate the original text and display them in HTML format. Our experiment validates that LARF can
+                                        improve reading performance and improve the reading experience for individuals with dyslexia.
+                                        Abstract                                                                                    experience for individuals with dyslexia. Results also prove that
+                                        Dyslexia, a neurological condition affecting approximately 12% of                           LARF is particularly helpful for participants with more severe read-
+                                        the global population, presents significant challenges to reading                           ing difficulties. Furthermore, this work discusses potential research
+                                        ability and quality of life. Existing assistive technologies are lim-                       directions opened up by LARF for the HCI community.
+                                        ited by factors such as unsuitability for quiet environments, high
+                                        costs, and the risk of distorting meaning or failing to provide real-                       CCS Concepts
+                                        time support. To address these issues, we introduce LARF (Let AI                            • Human-centered computing → Human computer interac-
+                                        Read First), the first strategy that employs large language models                          tion (HCI); Accessibility; Accessibility design and evaluation
+                                        to annotate text and enhance readability while preserving the orig-                         methods.
+                                        inal content. We evaluated LARF in a large-scale between-subjects
+                                        experiment, involving 150 participants with dyslexia. The results                           Keywords
+                                        show that LARF significantly improves reading performance and
+                                                                                                                                    Dyslexia, accessibility
+                                        Permission to make digital or hard copies of all or part of this work for personal or
+                                        classroom use is granted without fee provided that copies are not made or distributed       ACM Reference Format:
+                                        for profit or commercial advantage and that copies bear this notice and the full citation   Sihang Zhao, Shoucong Carol Xiong, Bo Pang, Xiaoying Tang, and Pinjia
+                                        on the first page. Copyrights for third-party components of this work must be honored.      He. 2025. Let AI Read First: Enhancing Reading Abilities for Individuals
+                                        For all other uses, contact the owner/author(s).
+                                                                                                                                    with Dyslexia through Artificial Intelligence. In Extended Abstracts of the
+                                        CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan
+                                        © 2025 Copyright held by the owner/author(s).
+                                                                                                                                    CHI Conference on Human Factors in Computing Systems (CHI EA ’25), April
+                                        ACM ISBN 979-8-4007-1395-8/2025/04                                                          26-May 1, 2025, Yokohama, Japan. ACM, New York, NY, USA, 16 pages.
+                                        https://doi.org/10.1145/3706599.3720113                                                     https://doi.org/10.1145/3706599.3720113
+
+<a id="pdf-p2"></a>
+### [PDF p.2] CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan Zhao et al.
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **2** / 16
+
+CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan                                                                                      Zhao et al.
+
+
+1    Introduction                                                        believed that this method should be applied as a text presentation
+Dyslexia is a neurodevelopmental impairment that affects read-           method for dyslexic populations in more scenarios (e.g., exams,
+ing abilities, typically manifested as challenges to reading fluency,    accessible website design).
+speed, and comprehension. Approximately 12% of the global pop-
+ulation has dyslexia [3]. Individuals with dyslexia often struggle
+with word decoding and recognition, which also affects their com-
+                                                                         2    Related Work and Background
+prehension, fluency, and vocabulary. Current interventions, mainly
+in the form of accessible designs, tend to focus on only a few areas:    In the realm of accessible design interventions to alleviate reading
+converting text to speech [16], videos or games [17, 23], adjusting      difficulties, myriad solutions have been proposed. A popular trend
+text font through electronic readers [26, 29] (e.g., character size,     has been to incorporate text-to-speech conversion [16], enabling
+colour, spacing between words), and replacing complex words with         individuals with reading difficulties to access written content orally.
+simpler synonyms [27]. Nevertheless, these efforts often exhibit         Parallelly, innovative efforts have been made to employ multimedia
+one or more of the following limitations: (1) In scenarios demand-       elements such as videos and games to facilitate reading compre-
+ing quiet, such as conferences and exams, the use of multimedia-         hension [17]. However, these software solutions are often limited
+assisted tools presents practical difficulties. (2) Converting text      by contextual restrictions, as text-to-speech conversion becomes
+descriptions into videos or games manually can be both expensive         impractical in settings that require silence, such as conferences or
+and non-real-time. (3) Simple synonym substitution and rewrit-           exams. Moreover, despite proven effectiveness [11, 31], the high
+ing may alter the original meaning, rhymes or emotions of the            cost of software like Kurzweil3000 limits its widespread adoption
+original texts. Compared to the available knowledge about reading        [11]. Furthermore, traditional methods of transforming textual in-
+difficulties and the demonstrated capabilities of AI models, there       formation into images, audio, or even games require substantial
+are relatively few accessible designs that effectively address these     involvement from experienced annotators, developers, and design-
+challenges [19]. With the rapid development of AI [7], numerous          ers. This significantly escalates costs and eliminates the possibility
+spelling assistance tools for dyslexia have demonstrated consider-       of real-time use, thus further restricting its application scenarios.
+able capabilities [14, 15, 28]. However, we have not yet discovered      The other trend is using adjustable text presentation, allowing for
+any existing reading assistance tools or research that has utilised or   modifications in character size, colour, and word spacing [26, 29].
+discussed how to integrate state-of-the-art AI techniques to address     Santana et al. created Firefixia, which is a browser extension that
+these issues in assistive reading tools for people with dyslexia.        enables dyslexic readers to tailor websites for enhanced readability
+   Therefore, to fill these gaps, we propose an AI-based presenta-       [12]. Text4All [33], an online service for web pages, and the Android
+tion strategy to assist people with dyslexia in reading. We introduce    IDEAL eBook reader4 for e-books are customisation tools informed
+LARF (Let AI Read First), the first AI-based method that annotates       by previous research in dyslexic individuals [29]. Text4All extends
+“important” information in texts with highlights, bolding, under-        its offerings to include medical language adaptation, terminology
+lining, and other marks. This approach aims to help readers focus        annotation, and language analysis. Currently, a popular method
+more easily on the key content of the original text, thereby en-         called Bionic Reading [25] revises texts so that the most concise
+hancing their reading performance and experience. Unlike direct          parts of words are highlighted. This guides the eye over the text,
+AI-generated summaries, LARF’s design of annotating the original         and the brain remembers previously learnt words more quickly. Al-
+text preserves the maximum amount of original textual information.       though these methods can be applied in a broader range of contexts,
+   Our main hypothesis is that LARF can improve the overall read-        they treat all text as a uniform entity, lacking a targeted emphasis
+ing performance and experience of people with reading difficulties.      on key segments such as definitions or summary sentences. This
+Consequently, we conducted a large-scale experiment (N = 150) to         results in substantial room for improvement to improve reading
+evaluate this hypothesis. Participants self-reported having or likely    performance and experience. In another approach, complex words
+dyslexia and having English as their mother tongue. They were            are replaced with simpler synonyms to aid comprehension [27].
+randomly assigned into three groups: a control group that read the       However, such an approach not only fails to guarantee accuracy
+original reading materials directly, a conventional group in which       in the context of substitution (i.e., it may completely distort the
+participants read the same materials processed by Bionic Reading         original intent of the text) but may also affect the literary attributes
+[25], and a LARF group that the reading materials annotated by Ope-      of the text, such as emotional intensity and rhythm.
+nAI’s GPT-4 [22]. Using multiple-choice questions, we tested the             Niklaus et al. evaluated the digital reading rulers and found that
+accuracy in recalling, retrieving details, and comprehension levels.     digital rulers can help people with dyslexia better focus on the text
+The experimental results show that participants who read GPT-4           and improve their reading speed [21]. Li et al. suggested Reader
+annotated texts demonstrate better reading performance compared          View websites with low visual complexity can benefit the read-
+to those using traditional methods or in the control groups. Partici-    ing performance and user experience of people with and without
+pants were also asked to complete a series of subjective evaluations     dyslexia [18]. Despite the wealth of knowledge surrounding read-
+to assess their user experience with LARF or the conventional tool.      ing difficulties, traditional accessible designs addressing these chal-
+The results indicate that GPT-4 annotated texts significantly im-        lenges remain limited [19]. Considering the rapid advancements
+prove perceived user-friendliness, overall satisfaction, perceived       in AI, the incorporation of AI models with superior reading com-
+helpfulness, future use, and recommendation tendencies. Users also       prehension and creativity into accessible design offers a promising
+                                                                         area for further exploration. As these models become increasingly
+*Pinjia He is the corresponding author.                                  versatile and powerful, their intersection with accessible design
+
+<a id="pdf-p3"></a>
+### [PDF p.3] LARF CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **3** / 16
+
+LARF                                                                                                 CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan
+
+
+presents a promising opportunity to overcome the limitations of           Appendix A. The LARF demo is publicly available for free trials at
+current solutions.                                                        https://github.com/LARF2025/LARF-CHI-EA-25.
+
+3 Method and Data
+3.1 Workflow of LARF                                                      5 Experiment
+The workflow of LARF is illustrated in Fig. 1, in which LARF takes        5.1 Experiment Setup
+the original text as input in string format. Guided by preset prompts,
+GPT-4 processes the original text, incorporating the Hyper Text           Our experiment focused on English language reading. We chose
+Markup Language (HTML) tags [4, 5], which can be used to ma-              Reading Test 115, Passage 2, “The Step Pyramid of Djoser,” a de-
+nipulate the display of text, such as “bold," “highlighting,” “ital-      scriptive and factual reading text from the IELTS [10] Academic
+ics,” changing font colour, and adjusting font size. Subsequently, a      as the corpus in this study. This decision was motivated by the
+Python script compiles this HTML-tagged string into an HTML file,         comprehensive nature of the IELTS Academic reading test, which
+serving as the final output. Consequently, users receive a presenta-      employs a long-form format featuring texts sourced from books,
+tion where specific information has been modified with bold for-          journals, magazines, and newspapers [1]. The IELTS Academic test
+matting or highlighting, while the textual content remains entirely       is equipped with expertly formulated questions and standardized
+unchanged. The simple example (Fig. 1) shows a segment taken              answers, which further enhance the reliability and validity of our
+from Wikipedia about BlackPink [6]. GPT-4 was asked to highlight          study. Given these qualities, the IELTS Academic test serves as an
+sentences that serve a summarizing role using <mark><\mark>tags           ideal tool for assessing adult reading performance.
+and to bold important names and items using <b><\b>tags. After
+processing the output of GPT-4 with the transfer scripts, the user
+gets the GPT-4-annotated content shown on the right-hand side.            5.2    Method and Experiment Procedure
+   In the subsequent experiment, we adjusted the prompts by using         We recruited 150 participants (𝑀𝑎𝑔𝑒 = 36.8; 33.3% female) from Pro-
+different labels, thereby modifying the presentation of the text. The     lific [24], an online research platform. All participants either had a
+detailed default prompts can be found in Appendix A.8.                    medical diagnosis of dyslexia, were undergoing a diagnostic process,
+                                                                          or strongly suspected they had undiagnosed dyslexia. Additional
+3.2     Data                                                              demographic details are provided in Appendix A.11. Participants
+In the experiment, we processed the reading materials using GPT-          were randomly assigned to one of three experimental conditions:
+4 API. We also used GPT-4 together with human evaluation to               control (unmodified text), conventional tool (Bionic Reading), or
+score the participants’ short-answer responses in the subsequent          LARF (GPT-4 annotations). In the LARF condition, participants
+experiment. The version of GPT-4 is the ChatGPT July 20 version,          were not informed that GPT-4 had produced the annotations, in
+with the temperature set to 0 to ensure reproducibility of results.       order to minimize any psychological priming effects.
+All the specific prompts and generation logs can be found in the              The study began with participants completing a Dyslexia Check-
+supplement material and Appendix A.8. We employed the Bionic              list (refer to Appendix A.4), designed to assess the severity of vari-
+Reading [25] as a representative of conventional tools to process         ous reading-related challenges they face based on personal expe-
+the corpora in subsequent experiments, as it is one of the most           riences. Afterwards, they read an article and answered a series of
+widely used reading performance improvement solutions. Existing           recall questions to evaluate their retention of key details, such as
+research suggests that Bionic Reading can improve students reading        the main character’s name and aspects of a described pyramid. Our
+proficiency [2]. This tool includes two key parameters: “Fixation,”       design included six recall questions, alongside an attention check
+which determines the expression of letter combinations, set to            question (refer to Appendix A.6). Following the recall task, partic-
+the default value of 3 (ranging from 1 to 5), and “Saccade,” which        ipants were asked to retrieve as many details from the article as
+controls the visual jumps between fixations, set to the default value     possible. Then, the same article was presented again, immediately
+of 10 (ranging from 10 to 50). In this paper, we also apply the default   followed by a reading comprehension assessment on the same page.
+value of 10. The example of Bionic reading can be found in Appendix       After reading and finishing the reading comprehension assessment,
+A.2.                                                                      participants in the control condition provided demographic infor-
+                                                                          mation (age, gender, educational background) and completed the
+4      Ethic & Transparency                                               experiment. Participants in the conventional tool and LARF con-
+This experiment was approved by the Institutional Review Board            ditions also evaluated the modifications and annotations made by
+(IRB) of our affiliation. All participants were recruited through         these tools. We used an adapted version of the System Usability
+Prolific, an online research platform [24]. To ensure data protec-        Scale [8] to assess tool usability. Participants then rated the tool’s
+tion and confidentiality, participants were informed that their re-       perceived helpfulness, satisfaction, intention to continue using it,
+sponses would be anonymized, with all identifiable information            and likelihood of recommending it to others. Participants in the
+removed before analysis. Additionally, the survey (including confi-       conventional tool condition completed the experiment after pro-
+dentiality information), raw experimental data, GPT-4 processing          viding demographic information. In contrast, participants in the
+history (including evaluations and annotations), and data analysis        LARF condition were asked about their preference for a person-
+code are available in the supplementary materials. Examples of            alized LARF tool before providing demographic information. The
+our prompts and questions in the questionnaires are provided in           experimental procedure and session details are shown in Fig. 2.
+
+<a id="pdf-p4"></a>
+### [PDF p.4] CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan Zhao et al.
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **4** / 16
+
+CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan                                                                                 Zhao et al.
+
+
+
+
+Figure 2: Experiment Procedure. Participants are randomly assigned to three conditions, and then they are asked to finish the
+reading session. They are required to read the same article but with different presentations. Participants in the conventional
+condition group and LARF condition group are required to finish a subjective evaluation session after they finish the reading
+session.
+
+
+6 Result and Analysis                                                   6.2   Reading Time
+6.1 Attention Check and Dyslexia Checklist                              Eight participants are identified as outliers based on their ini-
+                                                                        tial reading times, defined as reading times > Q3 + 1.5 × IQR
+Of the initial 150 participants, 2 failed to pass the attention check
+                                                                        or < Q1 - 1.5 × IQR, and were thus excluded from this part of
+and were consequently excluded from further analysis. The remain-
+                                                                        the analysis. Consequently, the final analysis on reading time
+ing 148 participants were included in subsequent analyses. There
+                                                                        was conducted with 138 participants. Covariates, including ed-
+are 51 participants in the control condition, 49 in the conventional
+                                                                        ucation, age, gender, and dyslexia level, were accounted for in
+tool condition, and 48 in the LARF tool condition. The detail of the
+                                                                        the analysis. We introduced the education level, age, gender, and
+attention check is given in the Appendix A.3. Before reading the
+                                                                        dyslexia level as covariates in our one-way ANOVA analysis. It
+article, participants assessed their own dyslexia levels using the
+                                                                        shows no significant differences in reading times across condi-
+Dyslexia Checklist (see Appendix A.4 for Dyslexia Checklist). This
+                                                                        tions (𝑀𝑐𝑜𝑛𝑡𝑟𝑜𝑙 = 117.56, 𝑆𝐷 = 46.47; 𝑀𝑐𝑜𝑛𝑣𝑒𝑛𝑡𝑖𝑜𝑛𝑎𝑙 = 122.57, 𝑆𝐷 =
+checklist comprises six items that evaluate comprehension issues,
+                                                                        62.70; 𝑀𝐿𝐴𝑅𝐹 = 118.26, 𝑆𝐷 = 50.69; 𝐹 (2, 129) = .160, 𝑝 = .853).
+word recognition difficulties, decoding difficulties, memory prob-
+                                                                        However, considering the length of the corpus (338 words), and
+lems, attentional difficulties, and visual disturbance. We calculated
+                                                                        average reading speed of 238 words per minute for English readers
+the average scores from these items to determine each participant’s
+                                                                        [9], those who spent less than 30.2 seconds (0.05 quantile) were
+overall dyslexia level (Cronbach’s alpha = 0.91). Statistical analy-
+                                                                        considered relatively impatient. Fig. 3(a) shows that participants
+sis reveals no significant differences in dyslexia levels across the
+                                                                        using LARF did not fall below 30 seconds and were concentrated
+three conditions (𝑀𝑐𝑜𝑛𝑡𝑟𝑜𝑙 = 3.80, 𝑆𝐷 = 1.65; 𝑀𝑐𝑜𝑛𝑣𝑒𝑛𝑡𝑖𝑜𝑛𝑎𝑙 = 3.48,
+                                                                        within a shorter, reasonable range. This suggests that LARF may
+𝑆𝐷 = 1.41; 𝑀𝐿𝐴𝑅𝐹 = 3.49, 𝑆𝐷 = 1.29; 𝐹 (2, 145) = .755, 𝑝 = .472),
+                                                                        aid in attracting user attention and enhancing reading patience and
+which indicates that participants are balanced among three condi-
+                                                                        confidence.
+tions
+
+<a id="pdf-p5"></a>
+### [PDF p.5] LARF CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **5** / 16
+
+LARF                                                                                              CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan
+
+
+
+
+Figure 3: (a) shows the differences in reading time under three different conditions. Though the pattern is not significant, we
+can observe that users in the LARF group do less “glance over and skip the article.” Furthermore, their overall reading time is
+more concentrated in areas with shorter durations. Subfigure (b) and (c) respectively represent the scores of users in the retrieve
+and recall phases. It can be observed that compared to other groups, participants reading the LARF-marked texts exhibit better
+recall ability (marginally significant) and a superior capability to remember the details of the articles (significant).
+
+
+6.3    Recall and Retrieve Performance                                  article. To ensure accuracy in scoring, participants selecting more
+In the recall section, participants answered six questions, with        than two statements were automatically assigned a score of zero,
+one point awarded for each correct response (example questions          as per our predefined criteria that only two statements were cor-
+can be found in Appendix A.6). The analysis included education,         rect. Our analysis revealed that 72.92% of participants in the LARF
+age, gender, dyslexia level, and reading times as covariates in a       condition correctly chose the exact two statements. In contrast,
+one-way ANOVA. As shown in Fig. 3b, participants in the LARF            this accuracy was observed in 64.71% of participants in the control
+condition tended to score higher (7.8% higher than the control          condition and 67.35% in the conventional condition. Additionally,
+group and 5.1% higher than conventional group) than the                 we evaluated whether participants were able to identify at least one
+other two conditions, though the difference was not statistically       correct statement. In this regard, 100% of participants in the LARF
+significant (𝑀𝑐𝑜𝑛𝑡𝑟𝑜𝑙 = 3.44, 𝑆𝐷 = 1.74; 𝑀𝑐𝑜𝑛𝑣𝑒𝑛𝑡𝑖𝑜𝑛𝑎𝑙 = 3.53, 𝑆𝐷 =     condition succeeded in choosing at least one correct statement,
+1.64; 𝑀𝐿𝐴𝑅𝐹 = 3.71, 𝑆𝐷 = 1.20; 𝐹 (2, 128) = .303, 𝑝 = .739).            whereas the corresponding figures were 92.16% for the control con-
+    In the retrieve section, participants were instructed to retrieve   dition and 87.76% for the conventional condition. We conservatively
+as many details from the article as possible (example question          believe that this indicates LARF can to some extent enhance
+can be found in Appendix A.7.) We employ GPT-4 to evaluate the          the participants’ reading comprehension skills.
+quality of participants’ retrieval performance, utilizing a scoring
+range of 0 to 10. The assessment scores of GPT-4 underwent ver-
+ification by two human reviewers, each of whom independently
+cross-checked the scores. The reviewers made only one significant
+correction to the scores, which was clearly erroneous. The scor-
+ing criteria can be found in Appendix A.9 and the GPT-4 score
+logs are available for reference in the supplementary materials. A      6.5    Subjective Evaluation
+similar one-way ANOVA analysis was conducted. The results in            We conducted a separate analysis to compare the subjective evalua-
+Fig. 3c clearly show a significant difference across three conditions   tions of the annotation tools between the conventional and LARF
+(𝐹 (2, 128) = 3.465, 𝑝 = .034). Participants in the LARF condition      conditions. The questionnaire items and corresponding results are
+(𝑀𝐿𝐴𝑅𝐹 = 5.87, 𝑆𝐷 = 2.30) scored higher (6.5% higher than the           presented in Appendix C.1 Fig. 6. Overall, participants in the
+control group and 18.3% higher than the conventional group)             LARF condition rendered more favourable evaluations than
+than the other two conditions (𝑀𝑐𝑜𝑛𝑡𝑟𝑜𝑙 = 5.51, 𝑆𝐷 = 2.38,              those in the conventional condition. Notably, participants ex-
+𝑀𝑐𝑜𝑛𝑣𝑒𝑛𝑡𝑖𝑜𝑛𝑎𝑙 = 4.96, 𝑆𝐷 = 2.89).                                       posed to LARF-generated annotations reported more positive per-
+                                                                        ceptions and future behaviour tendencies across multiple dimen-
+                                                                        sions. The detailed questions and results are shown in Table 2 and
+6.4    Comprehension Performance                                        Table 3 in Appendix A.10. The result suggests that participants
+Comprehension performance was assessed using a similar method           in the LARF group show more overall satisfaction, they also
+in the IELTS examination. Participants were required to identify        reported that LARF is more helpful and easier to use com-
+the correct two statements out of six that were presented in the        pared to Bionic Reading.
+
+<a id="pdf-p6"></a>
+### [PDF p.6] CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan Zhao et al.
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **6** / 16
+
+CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan                                                                                                       Zhao et al.
+
+
+6.6     Post Hoc Evaluation                                               reading accuracy, so in our demo users can specify which infor-
+People with dyslexia often experience different subsets of chal-          mation they want GPT-4 to annotate and how it should appear.
+lenges [20]. Given the varying severity of dyslexia among partici-        Nevertheless, in our experiment, participants only used the default
+pants, resulting in distinct reading challenges, we conducted a post      prompt. For BionicReading, we set the default parameter, and in
+hoc evaluation to assess LARF’s efficacy across different degrees         real-world usage, users can also customise the settings.
+and categories of reading difficulties, focusing on its effects on var-
+ious symptoms of reading disabilities. Based on previous research,        9     Conclusion
+we calculated the mean ± 1 standard deviation (SD) for each dyslexia      We introduce LARF, an AI-annotated text approach designed to en-
+item. Participants whose self-reported dyslexia scores were higher        hance the reading abilities of individuals with dyslexia. Our Experi-
+than M + 1 SD were classified as having severe dyslexia, while            ment (N=150) validated LARF’s effectiveness in improving dyslexic
+those with scores lower than M – 1 SD were classified as having           readers’ performance and experience, including recall of details,
+mild dyslexia. Results indicate that LARF is especially helpful           reading comprehension efficiency, and engagement, outperforming
+for participants with severe dyslexia. As Fig. 7 in Appendix              the conventional technique.
+C shows, the improvement in participants’ reading performance
+is more pronounced in those with severe dyslexia. Similar results
+can also be observed in their recall (Fig. 9) and retrieval (Fig. 8)      Acknowledgments
+performance.                                                              We used LLMs to enhance the linguistic precision and coherence of
+                                                                          the content. This work is funded by Guangdong Basic and Applied
+7     Discussions                                                         Basic Research Foundation (No. 2024A1515010145) and Shenzhen
+                                                                          Science and Technology Program (No. ZDSYS20230626091302006)
+Based on our theoretical foundation and software demonstration
+(refer to Appendix B), as shown in Fig. 10. LARF can be applied
+to various smart scenarios (e.g., PCs, tablets, and VR), yet high         References
+GPU requirements for LLM inference remain a challenge. Explor-             [1] H Porter Abbott. 2020. The Cambridge introduction to narrative. Cambridge
+                                                                               University Press.
+ing smaller models that maintain annotation quality is thus crucial.       [2] Etika Ariyani. 2023. IMPROVING STUDENTS READING PROFICIENCY USING
+From an HCI perspective, future work could investigate how best                BIONIC METHOD (A CLASSROOM ACTION RESEARCH AT 10th GRADE
+to present AI-generated annotations (e.g., highlight length, colour,           STUDENTS). JOEL: Journal of Educational and Language Research 3, 5 (2023),
+                                                                               215–226.
+or font) for users with reading difficulties, as well as the potential     [3] International Dyslexia Association. [n. d.]. Frequently Asked Questions About
+long-term effects on memory and learning. LARF may also be ex-                 Dyslexia. http://www.interdys.org/.
+tended to subtitles in videos or live streams, although the impact         [4] Tim Berners-Lee, Robert Cailliau, Ari Luotonen, Henrik Frystyk Nielsen, and
+                                                                               Arthur Secret. 1994. The world-wide web. Commun. ACM 37, 8 (1994), 76–82.
+on neurodiverse populations (such as individuals with ADHD) calls          [5] Timothy J Berners-Lee and Robert Cailliau. 1990. WorldWideWeb: Proposal for a
+for further exploration. Design solutions should offer customizable            HyperText project. World Wide Web Proposal (1990).
+                                                                           [6] Blackpink. 2024. Blackpink. https://en.wikipedia.org/wiki/Blackpink. https:
+annotation settings and integrate seamlessly with existing accessi-            //en.wikipedia.org/wiki/Blackpink Accessed: 2024-09-07.
+bility features; voice or gesture controls may be essential for VR         [7] Rishi Bommasani, Drew A Hudson, Ehsan Adeli, Russ Altman, Simran Arora,
+or compact devices. To ensure privacy, local or end-to-end model               Sydney von Arx, Michael S Bernstein, Jeannette Bohg, Antoine Bosselut, Emma
+                                                                               Brunskill, et al. 2021. On the opportunities and risks of foundation models. arXiv
+inference is preferred, supported by model fine-tuning and well-               preprint arXiv:2108.07258 (2021).
+crafted prompts to enhance annotation quality. Additionally, we            [8] John Brooke. 1996. Sus: a “quick and dirty’usability. Usability evaluation in
+have an interesting finding: compared to the control group, Bionic             industry 189, 3 (1996), 189–194.
+                                                                           [9] Marc Brysbaert. 2019. How many words do we read per minute? A review
+Reading does not appear to improve users’ reading performance. In              and meta-analysis of reading rate. Journal of memory and language 109 (2019),
+related studies published later than our experiment, they had the              104047.
+                                                                          [10] British Council. [n. d.]. IELTS. https://www.ielts.org/.
+similar conclusion [30].                                                  [11] Jennifer Cullen, Sue Keesey, and Sheila R Alber-Morgan. 2013. The effects of
+                                                                               computer-assisted instruction using Kurzweil 3000 on sight word acquisition
+8     Limitation                                                               for students with mild disabilities. Education and Treatment of Children (2013),
+                                                                               87–103.
+During our experiments and software development, we faced sev-            [12] Vagner Figueredo de Santana, Rosimeire de Oliveira, Leonelo Dell Anhol Almeida,
+                                                                               and Marcia Ito. 2013. Firefixia: An accessibility web browser customization toolbar
+eral limitations. Considering the experiment cost and participants’            for people with dyslexia. In Proceedings of the 10th International Cross-Disciplinary
+patience, We kept comprehension and recall tasks relatively simple             Conference on Web Accessibility. 1–4.
+and limited the number of questions. However, some questions may          [13] Anna Dickinson, Peter Gregor, and Alan F Newell. 2002. Ongoing investigation
+                                                                               of the ways in which some of the problems encountered by some dyslexics can
+have been “too easy,” resulting in some observed patterns with-                be alleviated using computer techniques. In Proceedings of the fifth international
+out clear statistical significance. We also decided not to include a           ACM conference on Assistive technologies. 97–103.
+“random labelling group” to account for placebo effects, though we        [14] Katharina Galuschka, Ruth Görgen, Julia Kalmar, Stefan Haberstroh, Xenia
+                                                                               Schmalz, and Gerd Schulte-Körne. 2020. Effectiveness of spelling interventions
+believe such effects would be minimal. As mentioned in Section                 for learners with dyslexia: A meta-analysis and systematic review. Educational
+7, this study does not investigate the interaction between differ-             Psychologist 55, 1 (2020), 1–20.
+                                                                          [15] Steven M Goodman, Erin Buehler, Patrick Clary, Andy Coenen, Aaron Donsbach,
+ent annotation types nor determine which is most beneficial. We                Tiffanie N Horne, Michal Lahav, Robert MacDonald, Rain Breaw Michaels, Ajit
+likewise did not explore how to select optimal default prompts for             Narayanan, et al. 2022. Lampost: Design and evaluation of an ai-assisted email
+user engagement. While changing font size and colour in HTML                   writing prototype for adults with dyslexia. In Proceedings of the 24th International
+                                                                               ACM SIGACCESS Conference on Computers and Accessibility. 1–18.
+is possible, we have not addressed it here. Previous work [13] in-        [16] Kristen Laga, Daniel Steere, and Domenico Cavaiuolo. 2006. Kurzweil 3000.
+dicates that letting users set their own preferences can improve               Journal of Special Education Technology 21, 2 (2006), 79.
+
+<a id="pdf-p7"></a>
+### [PDF p.7] LARF CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **7** / 16
+
+LARF                                                                                                                   CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan
+
+
+[17] Andres Larco, Jorge Carrillo, Nelson Chicaiza, Cesar Yanez, and Sergio Luján-           A.3    Attention Check
+     Mora. 2021. Moving beyond limitations: Designing the helpdys app for children
+     with dyslexia in rural areas. Sustainability 13, 13 (2021), 7081.                       In our attention check, participants are asked to answer the question
+[18] Qisheng Li, Meredith Ringel Morris, Adam Fourney, Kevin Larson, and Katharina           where including the instruction that the correct answer is "Water".
+     Reinecke. 2019. The impact of web browser reader views on reading speed and
+     user experience. In Proceedings of the 2019 CHI conference on human factors in
+                                                                                             Participants who fail in this question will be marked as not focused.
+     computing systems. 1–12.                                                                    In the modern era, explorers and archaeologists uncovered
+[19] Jacob E McCarthy and Sarah J Swierenga. 2010. What we know about dyslexia                   the secrets of the pyramid’s chambers. The stories of Djoser,
+     and web accessibility: a research review. Universal Access in the Information
+     Society 9 (2010), 147–152.                                                                  Imhotep, and the countless hands that had shaped the mon-
+[20] Meredith Ringel Morris, Adam Fourney, Abdullah Ali, and Laura Vonessen. 2018.               ument were revealed, shedding light on the ancient world’s
+     Understanding the needs of searchers with dyslexia. In Proceedings of the 2018              mysteries. To show that you have read the instructions
+     CHI Conference on Human Factors in Computing Systems. 1–12.
+[21] Aleena Gertrudes Niklaus, Tianyuan Cai, Zoya Bylinskii, and Shaun Wallace.                  carefully, please ignore the items below about the ex-
+     2023. Digital Reading Rulers: Evaluating Inclusively Designed Rulers for Readers            plorers’ findings and instead choose "Water". Based on the
+     With Dyslexia and Without. In Proceedings of the 2023 CHI Conference on Human
+     Factors in Computing Systems. 1–17.
+                                                                                                 information in the preceding paragraph, which of these objects
+[22] OpenAI. [n. d.]. ChatGPT. https://openai.com/.                                              did explorers find?
+[23] Mikel Ostiz-Blanco, Javier Bernacer, Irati Garcia-Arbizu, Patricia Diaz-Sanchez,
+     Luz Rello, Marie Lallier, and Gonzalo Arrondo. 2021. Improving reading through
+                                                                                                 o Gold
+     videogames and digital apps: A systematic review. Frontiers in psychology 12                o Diamond
+     (2021), 652948.                                                                             o Rosewood
+[24] Prolific. 2023. Prolific - Online Participant Recruitment for Surveys and Market
+     Research. https://www.prolific.com/                                                         o Water
+[25] Bionic Reading. [n. d.]. Bionic Reading. https://bionic-reading.com/.                       o Stele
+[26] Luz Rello and Ricardo Baeza-Yates. 2013. Good fonts for dyslexia. In Proceedings of
+     the 15th international ACM SIGACCESS conference on computers and accessibility.
+     1–8.
+[27] Luz Rello and Ricardo Baeza-Yates. 2014. Evaluation of DysWebxia: a reading
+     app designed for people with dyslexia. In Proceedings of the 11th Web for All
+     Conference. 1–10.                                                                       A.4    Dyslexia Checklist
+[28] Luz Rello, Clara Bayarri, Yolanda Otal, and Martin Pielot. 2014. A computer-
+     based method to improve the spelling of children with dyslexia. In Proceedings of
+                                                                                             We use the Dyslexia checklist 1 to ask participants to evaluate their
+     the 16th international ACM SIGACCESS conference on Computers & accessibility.           extent of different difficulties in reading.
+     153–160.
+[29] Luz Rello, Gaurang Kanvinde, and Ricardo Baeza-Yates. 2012. Layout guidelines
+     for web text and a web service to improve accessibility for dyslexics. In Proceedings   A.5    Reasons Using Prolific
+     of the international cross-disciplinary conference on web accessibility. 1–9.
+[30] Joshua Snell. 2024. No, Bionic Reading does not work. Acta Psychologica 247             Prolific encourages participants to disclose any health-related con-
+     (2024), 104304.                                                                         ditions, including dyslexia, allowing researchers to recruit specific
+[31] Robert A Stodden, Kelly D Roberts, Kiriko Takahashi, Hye Jin Park, and                  individuals with relevant health conditions. Second, to control for
+     Norma Jean Stodden. 2012. Use of text-to-speech software to improve read-
+     ing skills of high school struggling readers. Procedia Computer Science 14 (2012),      factors such as time of day and time zone, which could potentially
+     359–362.                                                                                impact participants’ cognitive function, Prolific allows us to limit
+[32] Tate. n.d.. Carnation, Lily, Lily, Rose by John Singer Sargent. https://www.tate.org.
+     uk/art/artworks/sargent-carnation-lily-lily-rose-n01615. https://www.tate.org.
+                                                                                             recruitment to participants within the same time zone.
+     uk/art/artworks/sargent-carnation-lily-lily-rose-n01615 Accessed: 2024-09-11.
+[33] V Topac. 2012. The development of a text customization tool for existing web
+     sites. In Text Customization for Readability Symposium.                                 A.6    Recall Question
+                                                                                             Two examples of our recall questions are given below:
+                                                                                                Where is the Step Pyramid of Djoser at?
+                                                                                                o Saqquira
+                                                                                                o Saqqara
+A Experiment Details                                                                            o Saqqura
+                                                                                                o Saqqarua
+A.1 Bionic Reading                                                                              Which king in ancient Egypt does this article discuss?
+Bionic Reading is an application that present the first one or few                              Please input your answer:
+character with bold effect. The Example of Bionic Reading is shown
+in Figure 5.                                                                                 A.7    Retrieve Question
+                                                                                             An example of our retrieve question is given below:
+                                                                                                 Please retrieve the article and provide as many details as
+A.2       Bionic Reading Data                                                                    possible (such as what specific data the article presents,
+                                                                                                 what names appear, and the relationships between the
+  An Example of Bionic Reading
+                                                                                                 characters and events, etc.)
+  BlackPink is a popular South Korean girl group consisting
+                                                                                                 Please input your answer:
+  of members Jisoo, Jennie, Rosé, and Lisa. They are known
+  for their energetic performances, diverse music styles,
+  and fashionable image. With hits like "DDU-DU DDU-DU,“                                     A.8    Default Prompt for GPT-4
+  and "How You Like That," BlackPink has gained global                                       This prompt is used for our experiment, as well as the default
+  recognition and a strong fan following.                                                    prompt in our software demo (default model). It is designed to
+
+<a id="pdf-p8"></a>
+### [PDF p.8] CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan Zhao et al.
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **8** / 16
+
+CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan                                                                                    Zhao et al.
+
+
+be used in general situations but not for particular articles. The     A.9    GPT-4 Evaluation Criteria
+detailed prompt is displayed below:                                    Here is the prompt for GPT-4 to give the score, we use a one-shot
+    You are an intelligent reader helper and you will be given         learning method to give GPT an example of a 6-point answer:
+    a string of text in string format, please annotate it by             Please play the role of a rater and help me rate some answers.
+    adding tags following these instructions:                            you will be given an article. Please read it, and you will be given
+    1. Please annotate every date, number, location, and name of         some information about this article. I need you to score each
+    people or events in the paragraph by adding <strong> tags            item by their completeness and accuracy from 0 to 10.
+    around them.                                                         A 0-point represents the entrance is very poor and basically
+    2. Please highlight sentences and phrases in the paragraph that      contains no correct or important information and a 10 means
+    can summarize the core content of the paragraph or serve as          the entrance is almost perfect.
+    a conclusion to the description by adding <mark> tags around         A 5-point answer should have some details correct but misses or
+    them.                                                                get some key information wrong, and the overall understanding
+    3. Please underline sentences and phrases in the paragraph that      of the article is partially correct.
+    are unusual or need to be particularly noted by adding <u> tags      A 7-point entrance should contain some correct details, such as
+    around them.                                                         the correct name, time, data, etc., or provide a not-bad summary
+    4. You can add as many <mark>, <strong>, or <u> tags in one          of the overall article. However, it may be a lack of coherent
+    paragraph as necessary to highlight or bold important text.          logic or could miss some important information.
+    5. Please make sure to use and only use the 3 types of annota-       A 9-point entrance should contain most of the correct details,
+    tions above to annotate each paragraph of the text.                  such as the correct name, time, data, etc., and it should also
+    6. Don’t make the highlights or underlines too long or too often     contain a logically coherent and accurate summary of the full
+    if it is not necessary.                                              text.
+    7. You are allowed to add only the above previously mentioned
+    HTML tags, and that’s the only change you can make to the           Here is the original article
+    text. YOUR OUTPUT MUST KEEP THE CONTENT OF THE                      *****
+    ARTICLE THE SAME AS THE ORIGINAL ONE.                               ORIGINAL ARTICLE
+    8. Your output should only contain the marked text with added       *****
+    tags, which can be directly presented in HTML. Don’t add any-       Now you should directly give a score and the reason you give
+    thing else like "Here is your output" and so on.                    that score, and here is an example of 6-point entrance: The
+    9. Keep the original language; i.e., if the context was given in    entrance is: 10.5 m high, with 13 false doors, there were tombs
+    Chinese, your output should be Chinese as well.                     made of mud and clay before stone pyramids, the third Egyptian
+                                                                        dynasty was the first to build of stone.
+                                                                        And the answer is:
+                                                                        Score: 6
+                                                                        The entrance provides important details such as the height of
+                                                                        the wall (10.5 meters) and the number of false doors (13). It
+                                                                        also correctly mentions that tombs were made of mud and clay
+                                                                        before the construction of stone pyramids and that the Third
+                                                                        Dynasty of Egypt was the first to build with stone. However, it
+                                                                        could have provided more information about the Step Pyramid
+                                                                        itself, such as its final dimensions or its significance in Egyptian
+                                                                        history. And its logic is not very coherent.
+
+                                                                       A.10     Subjective Evaluation
+                                                                       The subjective evaluation consists of a system usability scale (see
+                                                                       Table 2) and a general subjective evaluation scale (see Table 3).
+
+                                                                       A.11     Participants
+                                                                       Participants’ demographics in the experiment can be found in Table
+                                                                       4.
+
+                                                                       B     Software Demo
+                                                                       The LARF software demo shown in Figure 4 is an interactive in-
+                                                                       terface that users can open in a browser via a link. Users can copy
+                                                                       and paste the text into the text box on the left, and by clicking the
+                                                                       "Transfer" button, they can obtain the annotated text in the text
+                                                                       box on the right. By checking the "Custom mode" option on the left,
+
+<a id="pdf-p9"></a>
+### [PDF p.9] LARF CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **9** / 16
+
+LARF                                                                                            CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan
+
+
+users can activate the custom prompt feature. When Custom mode       1.96; 𝐹 (1, 95) = 9.388, 𝑝 = .003). Participants in the LARF condition
+is off, LARF will process the text using the same prompt as in the   expressed a favourable inclination towards customizing the LARF
+previous experiments. When Custom mode is on, users can enter        tool. This preference was quantitatively reflected, with the mean
+the information they want to be annotated (such as the names of      score for the desire to customize LARF being 5.04 (SD = 1.41).
+songs, members, and albums shown in the figure) and specify how
+they want this information to be annotated in the Key Information    C.2     Post Hoc Evaluation
+section below.                                                       The Post hoc evaluation for the experiment: Given that individuals
+                                                                     with dyslexia may encounter varying types and degrees of reading
+C Supplemental Figures                                               challenges, we categorized each symptom in the dyslexia checklist
+C.1 Subjective Evaluation Result in Experiment                       into "severe" and "mild". The red line depicted in the figure repre-
+                                                                     sents the performance of users facing more significant challenges in
+The subjective evaluation includes system usability
+                                                                     that specific item. The plot shows that LARF significantly improved
+(𝑀𝑐𝑜𝑛𝑣𝑒𝑛𝑡𝑖𝑜𝑛𝑎𝑙 = 4.09, 𝑆𝐷 = 1.42; 𝑀𝐿𝐴𝑅𝐹 = 4.43, 𝑆𝐷 =
+                                                                     recall, retrieval, and comprehension performance in individuals
+1.36; 𝐹 (1, 95) = 1.469, 𝑝 = .229), satisfaction of the tool
+                                                                     with more severe symptoms.
+(𝑀𝑐𝑜𝑛𝑣𝑒𝑛𝑡𝑖𝑜𝑛𝑎𝑙 = 3.76, 𝑆𝐷 = 1.92; 𝑀𝐿𝐴𝑅𝐹 = 4.42, 𝑆𝐷 =
+1.84; 𝐹 (1, 95) = 2.994, 𝑝 = .087), perceived helpfulness
+(𝑀𝑐𝑜𝑛𝑣𝑒𝑛𝑡𝑖𝑜𝑛𝑎𝑙 = 3.14, 𝑆𝐷 = 1.76; 𝑀𝐿𝐴𝑅𝐹 = 4.29, 𝑆𝐷 =
+                                                                     C.3     More Scenarios
+1.99; 𝐹 (1, 95) = 9.104, 𝑝 = .003), intention for future             Besides LARF, there are lots of potential applications in different
+usage (𝑀𝑐𝑜𝑛𝑣𝑒𝑛𝑡𝑖𝑜𝑛𝑎𝑙     =  2.94, 𝑆𝐷   =    1.89; 𝑀𝐿𝐴𝑅𝐹   =          modalities and scenarios under the same idea: let AI decide and tell
+3.92, 𝑆𝐷 = 2.01; 𝐹 (1, 95) = 6.111, 𝑝 = .015), recommend             people what is worth attention. Some example is given in Figure
+(𝑀𝑐𝑜𝑛𝑣𝑒𝑛𝑡𝑖𝑜𝑛𝑎𝑙 = 3.18, 𝑆𝐷 = 1.87; 𝑀𝐿𝐴𝑅𝐹 = 4.42, 𝑆𝐷 =                 10.
+1.97; 𝐹 (1, 95) = 10.034, 𝑝 = .002), and widespread usage            Received 20 February 2007; revised 12 March 2009; accepted 5 June 2009
+(𝑀𝑐 𝑜𝑛𝑣𝑒𝑛𝑡𝑖𝑜𝑛𝑎𝑙 = 3.69, 𝑆𝐷 = 2.10; 𝑀𝐿𝐴𝑅𝐹 = 4.96, 𝑆𝐷 =
+
+<a id="pdf-p10"></a>
+### [PDF p.10] CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan Zhao et al.
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **10** / 16
+
+CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan                                                                                         Zhao et al.
+
+
+
+
+                                Figure 4: The demo of the custom mode of LARF software application on PC.
+
+                                                    Table 1: Dyslexia Checklist for the Experiment
+
+Term                                     Scale               Description
+                                                             To what extent do you have difficulty understanding the meaning of sentences or
+Understanding                            1–7
+                                                             paragraphs, even if individual words can be recognized?
+
+                                                             To what extent do you struggle to correctly and fluently recognize letters and words,
+Recognition                              1–7
+                                                             which can lead to slow reading speed and misinterpretation of words?
+
+                                                             To what extent do you struggle to remember what has been read, especially under-
+Memory                                   1–7
+                                                             standing longer texts or story plots?
+
+                                                             To what extent do you have difficulty blending letters into words and understanding
+Decoding                                 1–7
+                                                             word pronunciation rules, affecting reading fluency and comprehension?
+
+                                                             To what extent do you have difficulty maintaining focus while reading for an extended
+Attention                                1–7
+                                                             period, leading to easy distractions?
+
+                                                             How frequently do you encounter visual disturbances during reading, such as letters
+Visual Disturbance                       1–7
+                                                             or words appearing distorted, jumbled, or overlapping?
+
+<a id="pdf-p11"></a>
+### [PDF p.11] LARF CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **11** / 16
+
+LARF                                                                                     CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan
+
+
+                                   Table 2: Subjective Evaluation - System Usability Scales
+
+                       System Usability Scales                                   Mean (SD)               Statistics
+                                                                                                                           p-value
+          Conventional                              LARF                  Conventional LARF              (F(1, 95))
+ I believe that I would frequently I believe that I would frequently      3.35           3.77            1.073             p = .303
+ like to read articles with these like to read articles with these        (2.07)         (1.96)
+ types of bold labels on certain types of highlights, underlines,
+ occasions.                            or bold labels on certain occa-
+                                       sions.
+ I think understanding these I think understanding these                  3.96            4.31           .927              p = .338
+ bold labels was not difficult for highlights, underlines, or bold        (1.78)          (1.84)
+ me.                                   labels was not difficult for me.
+ I believe I would need the sup- I believe I would need the               5.55            5.29           .538              p = .465
+ port of a technical person to support of a technical person              (1.62)          (1.86)
+ read an article with these bold to read an article with these
+ labels.[reversed-scale]               highlights, underlines, or bold
+                                       labels.[reversed-scale]
+ I found that the bold labels were I found that the highlights, un-       3.63            4.23           2.500             p = .117
+ well-integrated.                      derlines, or bold labels were      (2.02)          (1.68)
+                                       well-integrated.
+ I would imagine that most peo- I would imagine that most peo-            3.96            4.65           2.543             p = .114
+ ple would learn to read with ple would learn to read with                (1.84)          (1.89)
+ these bold labels very quickly. these highlights, underlines, or
+                                       bold labels very quickly.
+ I felt very confident reading I felt very confident reading              4.06            4.40           .859              p = .356
+ with the bold labels.                 with the highlights, underlines,   (1.73)          (1.83)
+                                       or bold labels.
+ Notes:
+ (1) Standard errors are in parentheses;
+ (2) *p < 0.1, **p < 0.05, ***p < 0.01
+ (3) SUS-3 is a reversed-scale question
+
+<a id="pdf-p12"></a>
+### [PDF p.12] CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan Zhao et al.
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **12** / 16
+
+CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan                                                                                        Zhao et al.
+
+
+                                                        Table 3: Subjective Evaluation - All
+
+                                                                                             Mean (SD)                 Statistics
+Metrics                    Question                                                                                                   p-value
+                                                                                 Conventional      LARF                (F(1, 95))
+Satisfaction               What is your overall satisfaction with this           3.76 (1.92)       4.42 (1.84)         2.994          .087*
+                           kind of presentation (highlights, underlines, or
+                           bold labels annotations/bold labels annotations)
+                           when you read articles?
+Helpfulness                To what extent do you think you will continue         3.14 (1.76)        4.29 (1.99)        9.104          .003**
+                           to use this kind of presentation (highlights, un-
+                           derlines, or bold labels annotations/bold labels
+                           annotations) in future reading?
+Intention for              To what extent do you believe the marks in            2.94 (1.89)        3.92 (2.01)        6.111          .015*
+Future Use                 the articles helped you concentrate on the key
+                           information?
+Recommendation             To what extent will you recommend this kind           3.18 (1.87)        4.42 (1.97)        10.034         .002**
+                           of presentation (highlights, underlines, or bold
+                           labels annotations/bold labels annotations) to
+                           others?
+Intention for              Do you think this kind of presentation (high-         3.69 (2.10)        4.96 (1.96)        9.388          .003**
+Widespread Usage           lights, underlines, or bold labels annota-
+                           tions/bold labels annotations) is suitable for
+                           widespread use in other contexts? For example,
+                           in special exam papers for people with reading
+                           disabilities, integrated into e-readers, or for on-
+                           line academic paper reading?
+ Notes:
+ (1) Standard errors are in parentheses;
+ (2) *p <0.1, **p <0.05, ***p <0.01
+
+                                               Table 4: Participants Demographic in the Experiment
+
+             Gender                                           Age                                              Education
+Male                                     95           18-24             11             Less than high school                                    2
+Female                                   50           25-34             56             High School graduate                                    58
+Non-binary/Unknown                       5            35-44             44             Bachelor degree (or currently in processing)            56
+                                                      45-54             26             Master degree (or currently in processing)              26
+                                                      55-64             12             Doctor degree (or currently in processing)               6
+                                                      65-74              0
+                                                      75+                0
+
+<a id="pdf-p13"></a>
+### [PDF p.13] LARF CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **13** / 16
+
+LARF                                                             CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan
+
+
+
+
+       Figure 5: An example of the result and parameters of Bionic Reading
+
+<a id="pdf-p14"></a>
+### [PDF p.14] CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan Zhao et al.
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **14** / 16
+
+CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan                                                                     Zhao et al.
+
+
+
+
+Figure 6: The subjective evaluation result. Participants with dyslexia exhibited a clear preference for LARF, considering text
+annotated with LARF to be effective, user-friendly, and worthy of broader adoption in various contexts.
+
+
+
+
+Figure 7: Post hoc evaluation for comprehension performance. The y-axis represents the accuracy of reading comprehension.
+In the group with severe symptoms, LARF exhibited significant improvement compare to the conventional group and control
+group.
+
+<a id="pdf-p15"></a>
+### [PDF p.15] LARF CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **15** / 16
+
+LARF                                                                                     CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan
+
+
+
+
+Figure 8: Post hoc evaluation for retrieving performance. The y-axis represents the scores for retrieve, with a maximum score
+of 10. While in the group with mild symptoms, LARF did not exhibit improvement, it significantly enhanced users’ retrieval
+abilities in the group facing more severe reading challenges, whereas conventional tools had almost entirely negative impacts.
+
+
+
+
+Figure 9: Post hoc evaluation for recall performance. The y-axis represents the scores for recall, with a maximum score of 6.
+LARF similarly provided substantial assistance to the group with more severe symptoms, even surpassing the group with mild
+symptoms who also used LARF.
+
+<a id="pdf-p16"></a>
+### [PDF p.16] CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan Zhao et al.
+- Locator: `R097-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf` · página **16** / 16
+
+CHI EA ’25, April 26-May 1, 2025, Yokohama, Japan                                                                         Zhao et al.
+
+
+
+
+Figure 10: Real-world application scenarios that can apply LARF. In the first subplot, the user is using an e-reader which is
+integrated with LARF, this device can be a tablet, a smartphone or a laptop. In the second subplot, the user is wearing VR glasses,
+looking at the “Carnation, Lily, Lily, Rose” by John Singer Sargent [32]. The VR headset with built-in LARF functionality helped
+annotate the description next to the painting, making it easier to read. In the Third subplot, LARF is integrated into a browser
+extension and helps the user reading the online content (the web page in the figure is the BlackPink item in Wikipedia[6].)

@@ -1,0 +1,704 @@
+# Published Online: January 15, 2026
+
+> Fuente PDF: `R104-ai-applications-in-education-technological-innovations-for-overcoming-dyslexia-a.pdf` · técnica **locator index** (página + ancla) + chunks Graphify
+
+## Metadata
+- Stem: `R104-ai-applications-in-education-technological-innovations-for-overcoming-dyslexia-a`
+- PDF: `R104-ai-applications-in-education-technological-innovations-for-overcoming-dyslexia-a.pdf`
+- DOI: `10.31893/multirev.2026340`
+- Pages: `10`
+- Structured_at: `2026-10-01T07:27:32+00:00`
+- Technique: `pdf-page-locators + heading-chunks`
+
+## Locator index (qué hay y en qué página del PDF)
+
+| Kind | Label | PDF page | MD anchor |
+|------|-------|----------|-----------|
+| abstract | Abstract / blurb | 1 | `#abstract` |
+| concept | adaptive learning | 1 | `#concept-adaptive-learning` |
+| concept | artifical intelligence | 1 | `#concept-artifical-intelligence` |
+| concept | educational technology | 1 | `#concept-educational-technology` |
+| concept | inclusive education | 1 | `#concept-inclusive-education` |
+| concept | senior high school | 1 | `#concept-senior-high-school` |
+| concept | R104 | ? | `#concept-r104` |
+| concept | applications | 1 | `#concept-applications` |
+| concept | education | ? | `#concept-education` |
+| concept | technological | 1 | `#concept-technological` |
+| concept | innovations | ? | `#concept-innovations` |
+| concept | overcoming | ? | `#concept-overcoming` |
+| concept | dyslexia | ? | `#concept-dyslexia` |
+| finding | Dyslexia and dysgraphia are two learning disorders that significantly impact students' rea… | 1 | `#finding-dyslexia-and-dysgraphia-are-two-learning` |
+| finding | High school students with these conditions face increasing difficulties in understanding c… | 1 | `#finding-high-school-students-with-these-conditio` |
+| finding | This study explores the potential of artificial intelligence (AI)-based applications as a … | 1 | `#finding-this-study-explores-the-potential-of-art` |
+| finding | Using a qualitative approach with a case study method, data were collected through observa… | 1 | `#finding-using-a-qualitative-approach-with-a-case` |
+| finding | The study employed thematic analysis to categorize findings related to AI-based learning m… | 1 | `#finding-the-study-employed-thematic-analysis-to` |
+| finding | The findings indicate that AI applications improve reading comprehension, writing accuracy… | 1 | `#finding-the-findings-indicate-that-ai-applicatio` |
+| page | p.1: QUESTIONNAIRES APPLICATION | 1 | `#pdf-p1` |
+| page | p.2: Kusumaningsih et al. (2026) 2 | 2 | `#pdf-p2` |
+| page | p.3: Kusumaningsih et al. (2026) 3 | 3 | `#pdf-p3` |
+| page | p.4: Kusumaningsih et al. (2026) 4 | 4 | `#pdf-p4` |
+| page | p.5: Kusumaningsih et al. (2026) 5 | 5 | `#pdf-p5` |
+| page | p.6: Kusumaningsih et al. (2026) 6 | 6 | `#pdf-p6` |
+| page | p.7: Kusumaningsih et al. (2026) 7 | 7 | `#pdf-p7` |
+| page | p.8: Kusumaningsih et al. (2026) 8 | 8 | `#pdf-p8` |
+| page | p.9: Kusumaningsih et al. (2026) 9 | 9 | `#pdf-p9` |
+| page | p.10: Kusumaningsih et al. (2026) 10 | 10 | `#pdf-p10` |
+
+## Abstract
+<a id="abstract"></a>
+
+Dyslexia and dysgraphia are two learning disorders that significantly impact students' reading and writing skills, often leading to academic challenges. High school students with these conditions face increasing difficulties in understanding complex texts and developing advanced writing abilities crucial for their academic success. This study explores the potential of artificial intelligence (AI)-based applications as a technological innovation to support these students. Using a qualitative approach with a case study method, data were collected through observations, in-depth interviews, and focus group discussions with Indonesian language teachers in a high school in Sukoharjo Regency. The study employed thematic analysis to categorize findings related to AI-based learning methods, visual-auditory-kinesthetic strategies, and the effectiveness of multimedia in the learning process. The findings indicate that AI applications improve reading comprehension, writing accuracy, and motivation among students with dyslexia and dysgraphia. These technologies provide a personalized, interactive, and adaptive learning experience, enabling students to overcome learning obstacles more independently and confidently. Furthermore, AI-driven tools assist educators and developers in designing more inclusive and effective educational solutions. AI-powered adaptive learning platforms, grammar and spelling correction software, and gamified learning applications have been found to create an engaging and supportive environment for students with special needs. Despite these advancements, challenges such as accessibility, teacher training, and technological infrastructure must be addressed to ensure optimal implementation. This study contributes to the growing body of research on AI applications in education and provides valuable insights for educators, policymakers, and educational technology developers. By leveraging AI innovations, educators can offer more inclusive learning environments that cater to students with dyslexia and dysgraphia, ultimately enhancing their academic achievements and self-confidence.
+
+## Keywords
+
+- adaptive learning
+- artifical intelligence
+- educational technology
+- inclusive education
+- senior high school
+
+## Concept index (graph hooks + página)
+
+<a id="concept-adaptive-learning"></a>
+### [PDF p.1] Concept: adaptive learning
+- Locator: `R104-ai-applications-in-education-technological-innovations-for-overcoming-dyslexia-a.pdf` · página **1**
+
+<a id="concept-artifical-intelligence"></a>
+### [PDF p.1] Concept: artifical intelligence
+- Locator: `R104-ai-applications-in-education-technological-innovations-for-overcoming-dyslexia-a.pdf` · página **1**
+
+<a id="concept-educational-technology"></a>
+### [PDF p.1] Concept: educational technology
+- Locator: `R104-ai-applications-in-education-technological-innovations-for-overcoming-dyslexia-a.pdf` · página **1**
+
+<a id="concept-inclusive-education"></a>
+### [PDF p.1] Concept: inclusive education
+- Locator: `R104-ai-applications-in-education-technological-innovations-for-overcoming-dyslexia-a.pdf` · página **1**
+
+<a id="concept-senior-high-school"></a>
+### [PDF p.1] Concept: senior high school
+- Locator: `R104-ai-applications-in-education-technological-innovations-for-overcoming-dyslexia-a.pdf` · página **1**
+
+<a id="concept-r104"></a>
+### [PDF p.?] Concept: R104
+- Locator: `R104-ai-applications-in-education-technological-innovations-for-overcoming-dyslexia-a.pdf` · página **?**
+
+<a id="concept-applications"></a>
+### [PDF p.1] Concept: applications
+- Locator: `R104-ai-applications-in-education-technological-innovations-for-overcoming-dyslexia-a.pdf` · página **1**
+
+<a id="concept-education"></a>
+### [PDF p.?] Concept: education
+- Locator: `R104-ai-applications-in-education-technological-innovations-for-overcoming-dyslexia-a.pdf` · página **?**
+
+<a id="concept-technological"></a>
+### [PDF p.1] Concept: technological
+- Locator: `R104-ai-applications-in-education-technological-innovations-for-overcoming-dyslexia-a.pdf` · página **1**
+
+<a id="concept-innovations"></a>
+### [PDF p.?] Concept: innovations
+- Locator: `R104-ai-applications-in-education-technological-innovations-for-overcoming-dyslexia-a.pdf` · página **?**
+
+<a id="concept-overcoming"></a>
+### [PDF p.?] Concept: overcoming
+- Locator: `R104-ai-applications-in-education-technological-innovations-for-overcoming-dyslexia-a.pdf` · página **?**
+
+<a id="concept-dyslexia"></a>
+### [PDF p.?] Concept: dyslexia
+- Locator: `R104-ai-applications-in-education-technological-innovations-for-overcoming-dyslexia-a.pdf` · página **?**
+
+
+## Findings index (graph hooks + página)
+
+<a id="finding-dyslexia-and-dysgraphia-are-two-learning"></a>
+### [PDF p.1] Finding: Dyslexia and dysgraphia are two learning disorders that significantly impact students' reading and writing skills, often leading to academic challenges.
+- Locator: `R104-ai-applications-in-education-technological-innovations-for-overcoming-dyslexia-a.pdf` · página **1**
+
+<a id="finding-high-school-students-with-these-conditio"></a>
+### [PDF p.1] Finding: High school students with these conditions face increasing difficulties in understanding complex texts and developing advanced writing abilities crucial for their academic success.
+- Locator: `R104-ai-applications-in-education-technological-innovations-for-overcoming-dyslexia-a.pdf` · página **1**
+
+<a id="finding-this-study-explores-the-potential-of-art"></a>
+### [PDF p.1] Finding: This study explores the potential of artificial intelligence (AI)-based applications as a technological innovation to support these students.
+- Locator: `R104-ai-applications-in-education-technological-innovations-for-overcoming-dyslexia-a.pdf` · página **1**
+
+<a id="finding-using-a-qualitative-approach-with-a-case"></a>
+### [PDF p.1] Finding: Using a qualitative approach with a case study method, data were collected through observations, in-depth interviews, and focus group discussions with Indonesian language teachers in a high school in Sukoharjo Regency.
+- Locator: `R104-ai-applications-in-education-technological-innovations-for-overcoming-dyslexia-a.pdf` · página **1**
+
+<a id="finding-the-study-employed-thematic-analysis-to"></a>
+### [PDF p.1] Finding: The study employed thematic analysis to categorize findings related to AI-based learning methods, visual-auditory-kinesthetic strategies, and the effectiveness of multimedia in the learning process.
+- Locator: `R104-ai-applications-in-education-technological-innovations-for-overcoming-dyslexia-a.pdf` · página **1**
+
+<a id="finding-the-findings-indicate-that-ai-applicatio"></a>
+### [PDF p.1] Finding: The findings indicate that AI applications improve reading comprehension, writing accuracy, and motivation among students with dyslexia and dysgraphia.
+- Locator: `R104-ai-applications-in-education-technological-innovations-for-overcoming-dyslexia-a.pdf` · página **1**
+
+
+## Relevance hooks
+### Theme relevance: software engineering and accessibility
+### Theme relevance: cognitive accessibility and neurodiversity
+### Theme relevance: evaluation metrics and WCAG
+
+## Sections (detected in PDF)
+
+_(no numbered sections auto-detected)_
+
+
+## Page chunks (texto por página del PDF)
+
+_Cada heading es un nodo Graphify. El label incluye la página para volver al PDF sin releer todo._
+
+<a id="pdf-p1"></a>
+### [PDF p.1] QUESTIONNAIRES APPLICATION
+- Locator: `R104-ai-applications-in-education-technological-innovations-for-overcoming-dyslexia-a.pdf` · página **1** / 10
+
+QUESTIONNAIRES APPLICATION
+                                                                                                                         Published Online: January 15, 2026
+                                                                                                                https://doi.org/10.31893/multirev.2026340
+
+
+
+
+AI applications in education: Technological
+innovations for overcoming dyslexia and dysgraphia
+challenges in students
+Dewi Kusumaningsiha    | Muhlis Fajar Wicaksanaa | Eli Rustinara | Aldi Dwi Saputrab                                              |
+Maulana Danar Maalikihb | Meilisa Nurhanaa | Myatun Naimaha
+aUniversitas Veteran Bangun Nusantara, Sukoharjo, Indonesia.
+bUniversitas Sebelas Maret, Surakarta, Indonesia.
+
+
+
+  Abstract Dyslexia and dysgraphia are two learning disorders that significantly impact students' reading and writing skills,
+  often leading to academic challenges. High school students with these conditions face increasing difficulties in
+  understanding complex texts and developing advanced writing abilities crucial for their academic success. This study
+  explores the potential of artificial intelligence (AI)-based applications as a technological innovation to support these
+  students. Using a qualitative approach with a case study method, data were collected through observations, in-depth
+  interviews, and focus group discussions with Indonesian language teachers in a high school in Sukoharjo Regency. The study
+  employed thematic analysis to categorize findings related to AI-based learning methods, visual-auditory-kinesthetic
+  strategies, and the effectiveness of multimedia in the learning process. The findings indicate that AI applications improve
+  reading comprehension, writing accuracy, and motivation among students with dyslexia and dysgraphia. These
+  technologies provide a personalized, interactive, and adaptive learning experience, enabling students to overcome learning
+  obstacles more independently and confidently. Furthermore, AI-driven tools assist educators and developers in designing
+  more inclusive and effective educational solutions. AI-powered adaptive learning platforms, grammar and spelling
+  correction software, and gamified learning applications have been found to create an engaging and supportive
+  environment for students with special needs. Despite these advancements, challenges such as accessibility, teacher
+  training, and technological infrastructure must be addressed to ensure optimal implementation. This study contributes to
+  the growing body of research on AI applications in education and provides valuable insights for educators, policymakers,
+  and educational technology developers. By leveraging AI innovations, educators can offer more inclusive learning
+  environments that cater to students with dyslexia and dysgraphia, ultimately enhancing their academic achievements and
+  self-confidence.
+  Keywords: adaptive learning, artifical intelligence, educational technology, inclusive education, senior high school
+
+
+1. Introduction
+        Due to neurological development, dyslexia is a neurodevelopmental issue that manifests as difficulty with spelling and
+reading (Snowling et al., 2019). The term dyslexia, which comes from the Greek words "dys" (difficulty) and "lexia" (language),
+is frequently identified in elementary school and affects people with normal intelligence, many of whom have above-average
+intellectual capacity (Hasibuan, 2019). According to research, dyslexia is significantly influenced by genetics; heritability
+estimates range from 50% to 60% (Brimo et al., 2021; Erbeli et al., 2022).
+        Up to 80% of children are diagnosed with dyslexia, making it one of the most common learning disorders (Alqahtani et
+al., 2023). Dyslexic students frequently have trouble verbally repeating words or non-words (Adlof et al., 2021). Figurative
+creativity is often prioritized over verbal creativity in dyslexia. According to Taylor and Vestergaard (2022), children with
+dyslexia are frequently more eager to explore figurative creativity in media, installations, photography, or film. Learning
+strategies that assist dyslexic children in overcoming challenges with spelling, writing, or reading should be the main focus of
+their education. But in practice, a lot of dyslexic students don't get enough help to improve their reading skills (Ong et al., 2023).
+One learning strategy that can help dyslexic students remember and identify word forms is the multisensory method. Research
+has demonstrated that by optimizing students' tactile, kinesthetic, visual, and auditory inputs, the multisensory approach
+successfully explores a variety of modalities in learning activities (Wijaya & Supena, 2023; Saputra et al., 2023). Furthermore,
+assessments of dyslexia symptoms reveal delays or difficulties in spoken language that go beyond phonological problems, like
+difficulties expressing oneself fluently, a limited vocabulary, or even poor syntactic competence (Habib, 2021; Komesidou et
+al., 2022).
+
+ Multidiscip. Rev. (2026) 9:e2026340                Received: December 28, 2024 | Accepted: February 18, 2025
+
+<a id="pdf-p2"></a>
+### [PDF p.2] Kusumaningsih et al. (2026) 2
+- Locator: `R104-ai-applications-in-education-technological-innovations-for-overcoming-dyslexia-a.pdf` · página **2** / 10
+
+Kusumaningsih et al. (2026)                                                                                                         2
+
+
+         On the other hand, dysgraphia is a disorder that mainly affects writing, including words, sentences, and letters.
+Furthermore, dysgraphia affects grammar, spelling, and word and sentence structure. For students with dysgraphia, improving
+communication skills calls for extra care. Additionally, dysgraphia impacts communication in school settings, academic
+achievement, and normal development. The following are important characteristics such as, slower than average handwriting
+speed, messy handwriting, irregular capitalization and letter spacing, pain or discomfort when writing, fine motor skill issues,
+spelling problems, and trouble structuring written work (Danna et al., 2023; Drotár & Dobeš, 2020; Gargot et al., 2020; Jolly et
+al., 2023; Kunhoth et al., 2024). These problems frequently result in difficulties with self-correction and rereading (Danna et al.,
+2023; Drotár & Dobeš, 2020; Gargot et al., 2020; Jolly et al., 2023; Kunhoth et al., 2024). From primary to secondary disorders,
+dysgraphia can have a wide range of causes that can change depending on an individual's age, gender, and other characteristics.
+The main focus of dysgraphia is on a child's writing proficiency.
+         Dimauro et al. (2020) believed that children with dysgraphia frequently have trouble writing because of issues like
+uneven handwriting, difficulty moving their hands smoothly on paper, discomfort when holding writing instruments, and
+improper posture when writing, such as leaning too forward or failing to place their elbows on the table. Diagnosing dysgraphia
+requires specific attention because (1) writing difficulties demand intervention, and (2) handwriting-related interventions affect
+observable motor movements and the legibility of written output (Biotteau et al., 2019; Jolly et al., 2023). Students with
+dysgraphia may also communicate verbally more effectively. In many cases, occupational therapists or qualified psychologists
+are needed to treat dysgraphia. But it's important to remember that synthesis and evaluation also require the involvement of
+experts like pediatric neurologists who specialize in neurodevelopmental disorders or child and adolescent psychiatrists, in
+addition to the knowledge of speech and psychomotor therapists. Cognitive abilities, motor skills, and language and
+phonological skills are the three primary domains into which evaluation categories can be clearly divided, in accordance with
+standard methods in the literature on dysgraphia assessment.
+         A learning system that uses media like pictures, handwritten text, or dynamic writing elements is necessary to diagnose
+dysgraphia. A successful dysgraphia diagnostic system can be established with the support of media-based learning. Supportive
+tools for dyslexia and dysgraphia, such as digital handwriting identification instruments, are crucial for better development in
+the digital age (Asselborn et al., 2020). The study on computer technology's role in dyslexia emphasizes its effectiveness in
+learning but emphasizes the need for specific needs and supervision to ensure optimal use (Lorusso et al., 2022; Stein, 2023).
+         In today's digital age, technology has become an essential foundation in many aspects of life, including education
+(Saputra & Saddhono, 2021). Artificial intelligence (AI) technology, also known as machine learning or deep learning, influences
+every aspect of our lives, including education (Dogan et al., 2023). AI technology has the potential to aid in a variety of learning
+processes (Yim & Su, 2024). In addition, Carissa Putri et al. (2023) found that AI technology in language learning has created
+more interactive and personalized instruction opportunities. The rapid advancement of time has influenced technological
+advancements to make human tasks in daily life easier, such as communication, education, work, or ideas to improve self-
+quality (Dawson et al., 2019; Zingoni et al., 2021). However, nowadays, technology is utilized as a therapeutic tool, particularly
+for children suffering from dyslexia and dysgraphia. AI technology provides therapy supported by key components such as
+progress in writing activities such as email writing, improving written results as measured by written image descriptions and
+limited functional writing tasks, developing reading comprehension, and influencing social participation, mood, or quality of
+life. Using AI assistance, fine motor skills and handwriting instruction have shown trained results and improved handwriting
+performance (Al-Dokhny et al., 2022; Moss et al., 2024).
+         AI technology assistance also help people to express their ideas more smoothly. For individuals with dyslexia,
+technological assistance is crucial for diagnosing and accurately identifying the condition beforehand (Smith & Hattingh, 2020).
+Touchscreen devices, such as tablets, offer various writing and drawing applications that provide a more interactive platform.
+Villegas-Ch et al. (2023) emphasized The WriteWell app measures children's writing speed and legibility using motion tracking.
+Furthermore, people can overcome spelling and grammar errors with the aid of auto-correction and predictive text features
+(Denton et al., 2021; Nneka Nwikpo, 2024). The findings may improve decoding abilities and close the gap with readers who
+are not impacted, among other reading-related outcomes (Almgren Bäck et al., 2024; Robaa et al., 2024; Svensson et al., 2021).
+         Various AI applications designed specifically to support the learning process, such as text translation, text generation,
+and hand writing analysis, are becoming more advanced and offering flexible and individualized learning methods. AI
+technology has the ability to adapt teaching methods to each student's unique needs, provide real-time feedback, and assist
+students in experiencing keterampilan in a constructive manner. With more interactive and responsive design, AI applications
+can provide more inclusive learning experiences, enabling students with disabilities to learn more independently without being
+hindered by their own struggles.) AI-based learning can also integrate local wisdom materials to support students with dyslexia
+and dysgraphia through a more contextual and culturally relevant approach (Saputra et al., 2022).
+         Several studies presents that artificial intelligence (AI) technology possitively immpact students’ reading and writing
+skills, particularly who have both dysgraphia . However, research on the application of AI for high school students (SMA) in
+Indonesia is still relatively limited. This study aims to explore the potential and benefits of using AI applications to assist senior
+high school students with dyslexia and dysgraphia. By analyzing current AI applications, this study is expected to offer new
+insights into the potential of AI technology to create inclusive and effective learning programs. It will also provide
+
+https://www.malque.pub/ojs/index.php/mr
+
+<a id="pdf-p3"></a>
+### [PDF p.3] Kusumaningsih et al. (2026) 3
+- Locator: `R104-ai-applications-in-education-technological-innovations-for-overcoming-dyslexia-a.pdf` · página **3** / 10
+
+Kusumaningsih et al. (2026)                                                                                                      3
+
+
+recommendations for educators and application developers on how to address the dyslexia and dysgraphia challenges faced
+by high school students.).
+2. Materials and Methods
+        This study applied a qualitative method with a case study approach. The current study took place in one of the senior
+high school (SMA) in Sukoharjo Regency using Focus Group Discussions (FGD) with Indonesian language teachers. Data were
+gathered through observations, in-depth interviews, and focus group discussions with Indonesian language teachers who have
+previously taught students with special needs such as dyslexia and dysgraphia. The study draws on Richard E. Mayer's
+multimedia learning theory, which emphasizes the importance of using text, images, sound, and multimedia elements to
+enhance the learning effectiveness of students with dyslexia and dysgraphia (Mayer, 2002).
+        During the first phase, the researcher observed and interviewed students with dyslexia and dysgraphia to better
+understand their characteristics. The observations aimed to assess: (1) word and sentence reading ability; (2) text reading
+ability; (3) question formation skills; and (4) sentence construction through observation. The purpose of these observations
+and interviews was to identify alternative learning strategies for students with dyslexia and dysgraphia, such as visual, auditory,
+kinesthetic, and AI technology. Thematic analysis waa used to categorize the results of observations, interviews, and focus
+group discussions into specific themes related to AI-based learning methods, visual-auditory-kinesthetic strategies, and the
+effectiveness of multimedia in the student learning process. By employing an iterative inductive approach, the researcher was
+able to extract meanings and patterns from the experiences of both teachers and students.
+        This study used both source and method triangulation techniques to guarantee the validity of the data. By contrasting
+the findings of teacher and student interviews with firsthand classroom observations, source triangulation is carried out. To
+guarantee consistency in the results, method triangulation compares information from observations, interviews, and focus
+group discussions. To guarantee the accuracy of the data interpretation, member checking was also used by asking the
+respondents for input on the interview outcomes and preliminary conclusions. This method should greatly aid in the
+development of AI-based learning strategies for students with dyslexia and dysgraphia by enhancing the validity and precision
+of the research findings.
+3. Results and Discussion
+3.1. Identifying students’ needs
+3.1.1. Word reading accuracy
+       The analysis of students’ word reading accuracy reveals varying levels of fluency and familiarity with words. Most
+students were able to read commonly used words easily and fluently, indicating good phonological awareness. However, they
+experienced minor difficulties when encountering unfamiliar or rarely used vocabulary, which affected their reading pace and
+confidence. Figure 1 shows the percentage distribution of students’ word reading accuracy. It can be observed that 53% of the
+students demonstrated high reading fluency for familiar words, while 36% showed normal spelling ability. The remaining
+students struggled primarily with decoding and pronunciation of less familiar terms. This finding indicates that limited exposure
+to certain words may hinder reading performance.
+
+
+
+
+                                            Figure 1 Pie chart of word reading accuracy.
+
+
+https://www.malque.pub/ojs/index.php/mr
+
+<a id="pdf-p4"></a>
+### [PDF p.4] Kusumaningsih et al. (2026) 4
+- Locator: `R104-ai-applications-in-education-technological-innovations-for-overcoming-dyslexia-a.pdf` · página **4** / 10
+
+Kusumaningsih et al. (2026)                                                                                                        4
+
+
+       This study shows that the students good reading skills, though they had a little trouble with unfamiliar words they had
+hardly ever heard of or read before. Nonetheless, they read words that are widely used in everyday life with ease and fluency.
+Although 36% of students demonstrated normal spelling ability, the reading fluency rate for words was comparatively high at
+53%. The finding shows that students may find it difficult to read some words because they are not exposed to them frequently,
+which makes them appear foreign when read.
+3.1.2. Text comprehension
+        The results of the analysis indicate that students with dyslexia display different levels of text comprehension ability.
+While most students were able to understand the general meaning of the text, some still struggled with interpreting complex
+sentences and maintaining focus during reading activities. Frequent rereading was required for them to fully grasp the message,
+and their comprehension was often influenced by the sequence in which they read sentences. Figure 2 presents the percentage
+distribution of students’ text comprehension levels. The data show that 58% of students demonstrated good comprehension,
+25% were rated as fair, while 14% and 3% experienced difficulty constructing and understanding sentences, respectively. These
+results reveal that dyslexic students often skip sentences or read non-sequentially, which disrupts their overall understanding
+of the text and affects meaning construction.
+
+
+
+
+                                              Figure 2 Pie chart of text comprehension.
+
+       Students with dyslexia made up 25% of the study's "fair" reading comprehension group, whereas 58% of students
+demonstrated a good comprehension of the text. Both sentence construction and delivery were found to be problematic for
+the 3% and 14% of struggling students, respectively. As a result, reading the sentences several times was necessary to fully
+comprehend their intended meaning. Dyslexic students also frequently skipped around while reading. They would begin
+reading the first sentence, for example, and then jump to the third, making it difficult for them to understand the meaning of
+the sentences in the text (Rahmawati et al., 2022).
+3.1.3. Reading speed
+       The analysis of students’ reading speed highlights that most students were able to read texts in an organized manner
+with appropriate pauses and punctuation. Although their reading rhythm was generally good, some students read at a slower
+pace, indicating a need for more frequent exposure to simple and familiar texts. Consistent practice and reinforcement are
+essential to enhance their reading fluency and automatic word recognition. Figure 3 illustrates the percentage distribution of
+students’ reading speed. The chart shows that 58% of students performed well, 25% were rated as fair, and the remaining
+students showed slower segmentation and pacing while reading. Despite these challenges, their ability to maintain correct
+word segmentation and punctuation use demonstrates potential for improvement through continuous reading exercises.
+       In terms of reading speed, students were able to read in an organized manner with proper punctuation. 58% of students
+performed well, with 25% scoring "fair." Their word segmentation was also done correctly, if slowly. Although their reading
+speed is adequate, they require additional practice and frequent exposure to simple texts to improve their literacy skills.
+Dyslexia has been a research topic around the world, with experts such as Pollock and Waller noting that children with dyslexia
+have difficulties reading, spelling, writing, and, most importantly, understanding words (Chariz et al., 2019; Safitri et al., 2022).
+
+
+
+https://www.malque.pub/ojs/index.php/mr
+
+<a id="pdf-p5"></a>
+### [PDF p.5] Kusumaningsih et al. (2026) 5
+- Locator: `R104-ai-applications-in-education-technological-innovations-for-overcoming-dyslexia-a.pdf` · página **5** / 10
+
+Kusumaningsih et al. (2026)                                                                                                          5
+
+
+
+
+                                                  Figure 3 Pie chart of reading speed.
+
+3.1.4. Reading aloud skill
+         The ability to read aloud with proper intonation and fluency remains a challenge for most students with dyslexia. Many
+tend to read with a flat tone, making it difficult to convey the intended meaning and emotion of the text. This lack of prosody
+often leads to reduced comprehension and engagement with the material. Mispronunciations of similar-sounding letters such
+as b, d, p, and q are also common, which disrupts fluency and confidence during oral reading. Figure 4 depicts the percentage
+distribution of students’ reading aloud skills. The results indicate that most students demonstrated a fair level of fluency, but
+still struggled to apply appropriate stress and intonation while reading. Their difficulties in distinguishing visually and
+phonetically similar letters such as b-d, u-n, and m-n, often caused hesitation or repetition of words. This finding suggests the
+importance of multisensory reading exercises and auditory training to improve pronunciation accuracy and rhythm in oral
+reading.
+
+
+
+
+                                                Figure 4 Pie chart of reading aloud skill.
+
+        Students' ability to read aloud with appropriate intonation and fluency is still rated as fair. Students' intonation remains
+flat, preventing them from fully expressing the meaning of the text as they read. This impairs their comprehension of the text,
+making it difficult for them to grasp the intended meaning.
+        Dyslexia also makes it difficult to distinguish similar-sounding letters like b, d, p, and q, which leads to mispronunciations.
+Furthermore, students with dyslexia struggle to recognize words, causing them to stumble when reading. Aside from similar
+sounds, they have difficulty distinguishing syllables that look similar, such as b-d, u-n, and m-n (Haifa et al., 2020; Muawwanah
+& Supena, 2021; Wijaya & Supena, 2023).
+
+https://www.malque.pub/ojs/index.php/mr
+
+<a id="pdf-p6"></a>
+### [PDF p.6] Kusumaningsih et al. (2026) 6
+- Locator: `R104-ai-applications-in-education-technological-innovations-for-overcoming-dyslexia-a.pdf` · página **6** / 10
+
+Kusumaningsih et al. (2026)                                                                                                     6
+
+
+3.2. Writing skill (dysgraphia)
+3.2.1. Handwriting legibility
+        The analysis of students’ handwriting legibility reveals that most of them can form recognizable letters and words;
+however, they still encounter difficulties when composing complete sentences or longer written passages. Students with
+dysgraphia tend to perform better in hands-on or multimedia-based activities—such as editing images, creating posters, or
+producing videos—compared to traditional writing tasks. Their preference for visual and practical activities suggests that they
+benefit more from learning environments that incorporate visual and auditory supports. Figure 5 presents the percentage
+distribution of students’ handwriting legibility. The chart indicates that while handwriting is generally readable, some students
+exhibit inconsistencies in letter formation, spacing, and alignment. These irregularities often stem from fine motor control
+limitations and reduced grip stability when holding writing instruments. The findings underscore the importance of providing
+targeted interventions, such as structured handwriting exercises and assistive technology tools, to enhance legibility and overall
+writing fluency.
+
+
+
+
+                                           Figure 5 Pie chart of the handwriting legibility.
+
+        Students' handwriting is generally legible, though they have difficulty writing sentences. Students with dysgraphia prefer
+practical activities. They enjoy editing, working with images, and listening to audio. These students are more engaged when
+making video edits or posters with visuals. They succeed in hands-on experiences. Their limitations are evident when they have
+difficulty holding a pencil, make spelling mistakes, or struggle with composition (Izzati Virliana et al., 2024).
+3.2.2. Neatness and organization of handwriting
+        The analysis of students’ handwriting neatness and organization indicates that many of them still struggle to maintain
+consistent spacing, alignment, and structure in their written work. Sentences are often disconnected, with limited coherence
+between one idea and another. These issues reflect difficulties in maintaining concentration, sequencing thoughts, and applying
+correct capitalization or punctuation in writing tasks. Figure 6 illustrates the percentage distribution of students’ handwriting
+neatness and organization. The chart shows that around 50% of students achieved a fair level of neatness, while others
+displayed irregular handwriting with inconsistent use of capital letters and uneven letter sizes. Some students also exhibited
+slow writing speed due to overattention to letter shape or spacing. These findings highlight the need for guided practice, fine
+motor exercises, and the integration of digital writing tools to help students improve both the organization and presentation
+of their handwriting.
+        Students' handwriting neatness is rated as fair, with a score of 50%. One challenge they face is that the sentences they
+write are frequently disconnected, with little coherence between preceding and following sentences. In terms of neatness and
+organization, their writing is sloppy, and when confronted with similar-looking letters, students write slowly. Furthermore, the
+appearance of their handwriting is irregular. The use of capital letters is also not consistent or totally mastered.
+
+
+
+
+https://www.malque.pub/ojs/index.php/mr
+
+<a id="pdf-p7"></a>
+### [PDF p.7] Kusumaningsih et al. (2026) 7
+- Locator: `R104-ai-applications-in-education-technological-innovations-for-overcoming-dyslexia-a.pdf` · página **7** / 10
+
+Kusumaningsih et al. (2026)                                                                                                     7
+
+
+
+
+                                   Figure 6 Pie chart of the neatness and organization of handwriting.
+
+3.2.3. Spelling and grammar
+        The assessment of students’ spelling and grammar abilities shows that many still experience challenges in constructing
+grammatically correct sentences and spelling words accurately. Limited exposure to language practice and reduced verbal
+interaction contribute to these difficulties. Some students tend to use minimal responses in conversations, affecting their
+vocabulary development and sentence formation skills. This condition impacts their motivation to write and hinders their ability
+to express ideas coherently. Figure 7 displays the percentage distribution of students’ spelling and grammar performance. The
+chart indicates that 42% of students demonstrated fair proficiency, while others showed noticeable spelling errors and
+inconsistent grammatical structures. For instance, students sometimes misorder words in questions or statements, showing a
+lack of mastery of sentence patterns. These findings suggest that students with dysgraphia require structured writing guidance,
+including the use of mnemonic-based methods such as the ADIK SIMBA approach, to strengthen their understanding of
+sentence structure and grammatical accuracy.
+
+
+
+
+                                              Figure 7 Pie chart of spelling and grammar.
+
+        The students' spelling and grammar skills are rated as fair, with a score of 42%. When asked, one student admitted that
+they rarely have conversations or tell stories with those closest to them. This lack of interaction may impact their motivation
+to learn (Yulianasari et al., 2023). The student isolates themselves and uses music to relieve boredom. During interactions, they
+frequently respond with only one or two words, which has an impact on their spelling and grammar. As an illustration, when
+asked to sing a song, one student said, "Eeee... I don't know the lyrics." The phrase "eeee..." is commonly used at the beginning
+of their responses.
+        When one student asked, "Hobinya Bu Dewi apa?" it was clear that they struggled with spelling and grammar (What is
+Bu Dewi's hobby?). The student mentioned the object first, rather than asking a proper question. Students with dysgraphia are
+not yet accustomed to using the ADIK SIMBA method for spelling and grammar. Despite this, children with dysgraphia continue
+to want to express themselves through writing, but they face significant challenges (Ginting et al., 2023). Children with dyslexia
+also have motor difficulties, such as writing outside the lines or in a disjointed manner (Yati Fitria Dewi and Herayuni, 2021).
+
+https://www.malque.pub/ojs/index.php/mr
+
+<a id="pdf-p8"></a>
+### [PDF p.8] Kusumaningsih et al. (2026) 8
+- Locator: `R104-ai-applications-in-education-technological-innovations-for-overcoming-dyslexia-a.pdf` · página **8** / 10
+
+Kusumaningsih et al. (2026)                                                                                                      8
+
+
+3.2.4. The organization of ideas text
+        The ability of students to organize their ideas into coherent written texts remains underdeveloped. Many students with
+dysgraphia find it difficult to translate their thoughts or observations into structured sentences and paragraphs. When asked
+to describe what they see or to express ideas about their surroundings, they often struggle to connect one idea to another
+logically. This indicates a gap in both cognitive organization and linguistic sequencing skills. Figure 8 presents the percentage
+distribution of students’ ability to organize ideas in writing. The data show that only a small proportion of students could form
+well-structured sentences, while most displayed fragmented or unrelated statements. Their written work often lacks transitions
+and topic coherence, making it difficult for readers to follow the intended message. These findings highlight the importance of
+scaffolding techniques, such as mind mapping, guided sentence construction, and the use of visual prompts to help students
+develop stronger text organization and idea coherence in their writing.
+
+
+
+
+                                          Figure 8 Pie chart of the organization of ideas in text.
+
+       The ability to organize ideas in text is not fully developed. When students are asked to describe what they see around
+them and then translate those observations into sentence ideas, they still struggle. Furthermore, when asked to form questions
+or statements about their surroundings, students are not yet responsive or engaged in the activity.
+4. Final Considerations
+       This study highlights that Artificial Intelligence (AI) based applications provide significant support for high school
+students with dyslexia and dysgraphia, particularly in improving reading comprehension, writing accuracy, and learning
+motivation. AI literacy tool such as text-to-speech, speech-to-text, adaptive learning platforms, writing assistants, gamification,
+and visual-based applications enable more independent, adaptive, and multisensory learning experiences. These technologies
+not only strengthen literacy performance but also increase student inclusion and engagement in the Indonesian language
+learning classroom.
+       Practical implications indicate that schools and teachers should be prepared to integrate AI through the provision of
+appropriate infrastructure, training programs for educators, and the use of assistive technologies that align with students’
+special needs. Teachers must also employ varied instructional strategies and ensure monitoring support to help students
+progress continuously.
+       However, several limitations remain, including unequal access to technological devices, lack of teacher readiness, and
+the need for supportive policies to ensure consistent implementation. Future research may expand this study by involving more
+diverse school settings, examining long-term impacts of AI-based interventions, and developing culturally contextualized AI
+learning tools for special-needs students in Indonesia.
+Acknowledgment
+      Thank you to the Ministry of Education, Culture, Research, and Technology (MOECRT) of the Republic of Indonesia for
+funding this research under the "Research Collaboration Program Interest" scheme with the title "Identification of Needs and
+Development of Indonesian Language Learning Strategies in High Schools for Students with Dyslexia and Dysgraphia in
+Sukoharjo Regency" contract number 2002.1/UN27.22/PT.01.03/2024. We would also like to express our gratitude to the
+Indonesian Language Subject Teacher Forum (MGMP) of Sukoharjo Regency for their assistance in this research.
+Ethical Considerations
+
+
+https://www.malque.pub/ojs/index.php/mr
+
+<a id="pdf-p9"></a>
+### [PDF p.9] Kusumaningsih et al. (2026) 9
+- Locator: `R104-ai-applications-in-education-technological-innovations-for-overcoming-dyslexia-a.pdf` · página **9** / 10
+
+Kusumaningsih et al. (2026)                                                                                                                                             9
+
+
+The authors affirm that all participants involved in this research provided informed consent prior to participation. The study
+ensured confidentiality, anonymity, and voluntary participation throughout the process of data collection, including interviews,
+observations, and focus group discussions. The research was conducted ethically and in accordance with the principles of the
+Declaration of Helsinki.
+Conflict of Interest
+The authors declare no conflicts of interest.
+Funding
+Ministry of Education, Culture, Research, and Technology (MOECRT) of the Republic of Indonesia.
+References
+Ade, A., Nawa, L. F., Rajak, R., Ilham, P. A., & Tonra, W. S. (2023). Strategi pembelajaran anak disleksia di SDN 44 Kota Ternate [Learning strategies for dyslexic
+children at SDN 44 Ternate City]. Jurnal Ilmiah Cahaya PAUD, 5(1), 62–69. https://doi.org/10.33387/cahayapd.v5i1.5725
+Adlof, S. M., Baron, L. S., Bell, B. A., & Scoggins, J. (2021). Spoken word learning in children with developmental language disorder or dyslexia. Journal of Speech,
+Language, and Hearing Research, 64(1), 2734–2749. https://doi.org/10.23641/asha
+Al-Dokhny, A. A., Bukhamseen, A. M., & Drwish, A. M. (2022). Influence of assistive technology applications on dyslexic students: The case of Saudi Arabia
+during the COVID-19 pandemic. Education and Information Technologies, 27(9), 12213–12249. https://doi.org/10.1007/s10639-022-11090-9
+Almgren Bäck, G., Lindeblad, E., Elmqvist, C., & Svensson, I. (2024). Dyslexic students’ experiences in using assistive technology to support written language
+skills: A five-year follow-up. Disability and Rehabilitation: Assistive Technology, 19(4), 1217–1227. https://doi.org/10.1080/17483107.2022.2161647
+Alqahtani, N. D., Alzahrani, B., & Ramzan, M. S. (2023). Deep learning applications for dyslexia prediction. Applied Sciences, 13(5), 2804.
+https://doi.org/10.3390/app13052804
+Asselborn, T., Chapatte, M., & Dillenbourg, P. (2020). Extending the spectrum of dysgraphia: A data driven strategy to estimate handwriting quality. Scientific
+Reports, 10(1), 3140. https://doi.org/10.1038/s41598-020-60011-8
+Biotteau, M., Danna, J., Baudou, É., Puyjarinet, F., Velay, J. L., Albaret, J. M., & Chaix, Y. (2019). Developmental coordination disorder and dysgraphia: Signs
+and symptoms, diagnosis, and rehabilitation. Neuropsychiatric Disease and Treatment, 15(1), 1873–1885. https://doi.org/10.2147/NDT.S120514
+Brimo, K., Dinkler, L., Gillberg, C., Lichtenstein, P., Lundström, S., & Åsberg Johnels, J. (2021). The co-occurrence of neurodevelopmental problems in dyslexia.
+Dyslexia, 27(3), 277–293. https://doi.org/10.1002/dys.1681
+Carissa Putri, A., Putra Priandita, R., Jasmine Jauhariy, A., Aulia, D., Orta Sananta, A., Nida, R., Nuryaningtyas, I., & Chelsea Putrandha, E. (2023). Strategi
+bimbingan konseling dalam pengaruh AI terhadap kinerja pembelajaran mahasiswa FBS jurusan bahasa Jepang Universitas Negeri Semarang [The guidance
+and counseling strategy on the influence of AI toward the learning performance of students in the Japanese Language Department, Faculty of Languages and
+Arts, Semarang State University]. Journal of Education and Technology, 3(2), 143–151.
+Chariz, F., Fahreza, D., Syarif, U., & Jakarta, H. (2019). Analisis bahasa tulisan pada anak dengan gangguan disleksia (pendekatan psikolinguistik) [An analysis
+of written language in children with dyslexia (a psycholinguistic approach)]. Metamorfosis: Jurnal Bahasa, Sastra Indonesia, dan Pengajarannya, 12(2), 45–50.
+Danna, J., Puyjarinet, F., & Jolly, C. (2023). Tools and methods for diagnosing developmental dysgraphia in the digital age: A state of the art. Children, 10(12).
+MDPI. https://doi.org/10.3390/children10121925
+Dawson, K., Antonenko, P., Lane, H., & Zhu, J. (2019). Assistive technologies to support students with dyslexia. Teaching Exceptional Children, 51(3), 226–239.
+https://doi.org/10.1177/0040059918794027
+Denton, C. A., Montroy, J. J., Zucker, T. A., & Cannon, G. (2021). Designing an intervention in reading and self-regulation for students with significant reading
+difficulties, including dyslexia. Learning Disability Quarterly, 44(3), 170–182. https://doi.org/10.1177/0731948719899479
+Dimauro, G., Bevilacqua, V., Colizzi, L., & Di Pierro, D. (2020). TestGraphia, a software system for the early diagnosis of dysgraphia. IEEE Access, 8, 19564–
+19575. https://doi.org/10.1109/ACCESS.2020.2968367
+Dogan, M. E., Goru Dogan, T., & Bozkurt, A. (2023). The use of artificial intelligence (AI) in online learning and distance education processes: A systematic
+review of empirical studies. Applied Sciences (Switzerland), 13(5), 3056. https://doi.org/10.3390/app13053056
+Drotár, P., & Dobeš, M. (2020). Dysgraphia detection through machine learning. Scientific Reports, 10(1), 21541. https://doi.org/10.1038/s41598-020-78611-
+9
+Erbeli, F., Rice, M., & Paracchini, S. (2022). Insights into dyslexia genetics research from the last two decades. Brain Sciences, 12(1), 27. MDPI.
+https://doi.org/10.3390/brainsci12010027
+Gargot, T., Asselborn, T., Pellerin, H., Zammouri, I., Anzalone, S. M., Casteran, L., Johal, W., Dillenbourg, P., Cohen, D., & Jolly, C. (2020). Acquisition of
+handwriting in children with and without dysgraphia: A computational approach. PLOS ONE, 15(9), e0237575. https://doi.org/10.1371/journal.pone.0237575
+Ginting, R. L., Siburian, A. Y. K., Sianturi, T. E., Sianturi, S. M., Ginting, N. B., & Pratiwi, S. A. (2023). Bimbingan konseling bagi anak cerdas istimewa dan kesulitan
+belajar (disleksia, disgrafia, diskalkulia) [Guidance and counseling for gifted children and learning disabilities (dyslexia, dysgraphia, dyscalculia)]. Jurnal
+Pendidikan Berkarakter, 1(1), 134–145. https://doi.org/10.51903/pendekar.v1i6.491
+Habib, M. (2021). The neurological basis of developmental dyslexia and related disorders: A reappraisal of the temporal hypothesis, twenty years on. Brain
+Sciences, 11(6), 708. https://doi.org/10.3390/brainsci11060708
+Haifa, N., Mulyadiprana, A., & Respati, R. (2020). Pengenalan anak pengidap disleksia [Introduction to children with dyslexia]. Pedadidaktika: Jurnal Ilmiah
+Pendidikan Guru Sekolah Dasar, 7(2), 21–32.
+Hasibuan, M. H. F. (2019). Permasalahan pada otak (disleksia) berpengaruh pada kemampuan berbahasa [Brain disorders (dyslexia) affecting language
+abilities]. Bahastra: Jurnal Pendidikan Bahasa dan Sastra Indonesia, 3(2), 78–84.
+
+
+
+
+ https://www.malque.pub/ojs/index.php/mr
+
+<a id="pdf-p10"></a>
+### [PDF p.10] Kusumaningsih et al. (2026) 10
+- Locator: `R104-ai-applications-in-education-technological-innovations-for-overcoming-dyslexia-a.pdf` · página **10** / 10
+
+Kusumaningsih et al. (2026)                                                                                                                                        10
+
+Izzati Virliana, A., Citra Maharani, A., & Muis Romadhoni, A. (2024). Efektivitas terapi menulis-siswa disgrafia untuk menulis secara konsisten [The effectiveness
+of writing therapy for dysgraphic students to write consistently]. Jurnal Pendidikan Dasar dan Manajemen Pendidikan, 5(1), 18–24.
+https://doi.org/10.53565/bahusacca.v5i1.1283
+Jolly, C., Jover, M., Danna, J., & Danna, J. (2023). Dysgraphia differs between children with developmental coordination disorder and/or reading disorder.
+Journal of Learning Disabilities, 6(1), 1–33. https://doi.org/10.1177/00222194231223528
+Komesidou, R., Feller, M. J., Wolter, J. A., Ricketts, J., Rasner, M. G., Putman, C. A., & Hogan, T. P. (2022). Educators’ perceptions of barriers and facilitators to
+the implementation of screeners for developmental language disorder and dyslexia. Journal of Research in Reading, 45(3), 277–298.
+https://doi.org/10.1111/1467-9817.12381
+Kunhoth, J., Al-Maadeed, S., Kunhoth, S., Akbari, Y., & Saleh, M. (2024). Automated systems for diagnosis of dysgraphia in children: A survey and novel
+framework. International Journal on Document Analysis and Recognition (IJDAR), 27(4), 707–735. https://doi.org/10.1007/s10032-024-00464-z
+Lorusso, M. L., Borasio, F., & Molteni, M. (2022). Remote neuropsychological intervention for developmental dyslexia with the tachidino platform: No reduction
+in effectiveness for older nor for more severely impaired children. Children, 9(1), 71. https://doi.org/10.3390/children9010071
+Mayer, R. E. (2002). Multimedia learning. In Psychology of learning and motivation (Vol. 41, pp. 85–139). Academic Press.
+Moss, B., Marshall, J., Woolf, C., & Hilari, K. (2024). Can a writing intervention using mainstream assistive technology software compensate for dysgraphia and
+support reading comprehension for people with aphasia? International Journal of Language and Communication Disorders, 59(3), 1090–1109.
+https://doi.org/10.1111/1460-6984.12975
+Muawwanah, U., & Supena, A. (2021). Penggunaan kartu huruf sebagai media pembelajaran membaca anak disleksia [The use of letter cards as a learning
+medium for teaching reading to dyslexic children]. Aulad: Journal on Early Childhood, 4(2), 98–104. https://doi.org/10.31004/aulad.v4i2.120
+Nneka Nwikpo, M. (2024). A theoretical framework for leveraging assistive technologies in dysgraphia remediation learning. Journal of Theoretical and
+Empirical Studies in Education, 8(2), 96–115.
+Ong, S., Murthy, N., & Mubarak, S. B. (2023). Examining the applications of educational technologies in teaching and learning practices in a specialist
+intervention setting. Asia Pacific Journal of Developmental Differences, 10(1). https://doi.org/10.3850/S2345734123000491
+Rahmawati, L. E., Purnomo, E., Hadi, D. A., Wulandari, M. D., & Purnanto, A. W. (2022). Studi eksplorasi bentuk-bentuk gejala disleksia pada anak [An
+exploratory study on the forms of dyslexia symptoms in children]. Jurnal Obsesi: Jurnal Pendidikan Anak Usia Dini, 6(5), 4003–4013.
+https://doi.org/10.31004/obsesi.v6i5.2495
+Robaa, M., Balat, M., Awaad, R., Omar, E., & Aly, S. A. (2024). Explainable AI in handwriting detection for dyslexia using transfer learning. arXiv preprint,
+arXiv:2410.19821.
+Safitri, F., Ali, N., & Latipah, E. (2022). Ketidakmampuan membaca (disleksia) dan dampaknya terhadap perkembangan anak [Reading disability (dyslexia) and
+its impact on child development]. Jurnal Ilmiah Pendidikan, 3(1), 37–44.
+Saputra, A. D., & Saddhono, K. (2021). Pembelajaran bahasa Indonesia menggunakan Microsoft Office Team 365 untuk SMA di masa pandemi [Indonesian
+language learning using Microsoft Office Team 365 for high school during the pandemic]. LINGUA: Jurnal Bahasa, Sastra, dan Pengajarannya, 18(1), 16–26.
+https://doi.org/10.30957/lingua.v18i1.669
+Saputra, A. D., Fauziah, F. N., & Suwandi, S. (2022). Pemanfaatan materi ajar bahasa Indonesia bermuatan kearifan lokal di SMA Negeri 1 Karanganyar
+[Utilization of Indonesian language teaching materials containing local wisdom at SMA Negeri 1 Karanganyar]. KEMBARA: Jurnal Keilmuan Bahasa, Sastra, dan
+Pengajarannya, 8(2), 335–348. https://doi.org/10.22219/kembara.v8i2.21726
+Saputra, A. D., Ginting, D. O. B., Pramadhanti, D. F., Muftihah, N., & Saddhono, K. (2023). Indonesian language learning based on ecological intelligence: A case
+of Bengawan Solo Nature School. Research Journal in Advanced Humanities, 4(3), 124–138. https://doi.org/10.58256/rjah.v4i3.1276
+Smith, C., & Hattingh, M. J. (2020). Assistive technologies for students with dyslexia: A systematic literature review. In International Conference on Innovative
+Technologies and Learning (Vol. 12555, pp. 504–513). Springer.
+Snowling, M. J., Hulme, C., & Nation, K. (2020). Defining and understanding dyslexia: Past, present and future. Oxford Review of Education, 46(4), 501–513.
+https://doi.org/10.1080/03054985.2020.1765756
+Snowling, M. J., Nash, H. M., Gooch, D. C., Hayiou-Thomas, M. E., & Hulme, C. (2019). Developmental outcomes for children at high risk of dyslexia and children
+with developmental language disorder. Child Development, 90(5), e548–e564. https://doi.org/10.1111/cdev.13216
+Stein, J. (2023). Theories about developmental dyslexia. Brain Sciences, 13(2), 208. https://doi.org/10.3390/brainsci13020208
+Svensson, I., Nordström, T., Lindeblad, E., Gustafson, S., Björn, M., Sand, C., Almgren Bäck, G., & Nilsson, S. (2021). Effects of assistive technology for students
+with reading and writing disabilities. Disability and Rehabilitation: Assistive Technology, 16(2), 196–208. https://doi.org/10.1080/17483107.2019.1646821
+Taylor, H., & Vestergaard, M. D. (2022). Developmental dyslexia: Disorder or specialization in exploration? Frontiers in Psychology, 13.
+https://doi.org/10.3389/fpsyg.2022.889245
+Villegas-Ch, W., Urbina-Camacho, I., & García-Ortiz, J. (2023). Detection of abnormal patterns in children’s handwriting by using an artificial-intelligence-based
+method. Informatics, 10(2), 52. https://doi.org/10.3390/informatics10020052
+West, G., & Hulme, C. (2021). Is a procedural learning deficit a causal risk factor for developmental language disorder or dyslexia? American Psychological
+Association, 5(1), 1–80.
+Wijaya, S., & Supena, A. (2023). Efektifitas metode multisensori dalam meningkatkan keterampilan membaca siswa disleksia di sekolah dasar [The effectiveness
+of the multisensory method in improving reading skills of dyslexic students in elementary school]. Jurnal Keilmuan dan Kependidikan Dasar, 15(1), 2623–2685.
+Yati Fitria Dewi, K., & Tu Desy Herayuni, L. (2021). Mengelola siswa dengan kesulitan belajar menulis (disgrafia) [Managing students with writing learning
+difficulties (dysgraphia)]. DAIWI WIDYA Jurnal Pendidikan, 8(4), 30–41.
+Yim, I. H. Y., & Su, J. (2024). Artificial intelligence (AI) learning tools in K-12 education: A scoping review. Journal of Computers in Education.
+https://doi.org/10.1007/s40692-023-00304-9
+Yulianasari, A., Humaira, M. A., & Effendi, I. (2023). Strategi guru dalam meningkatkan motivasi belajar bagi anak disgrafia [Teacher strategies in increasing
+learning motivation for children with dysgraphia]. Karimah Tauhid, 2(5), 1661–1674.
+Zingoni, A., Taborri, J., Panetti, V., Bonechi, S., Aparicio-Martínez, P., Pinzi, S., & Calabrò, G. (2021). Investigating issues and needs of dyslexic students at
+university: Proof of concept of an artificial intelligence and virtual reality-based supporting platform and preliminary results. Applied Sciences (Switzerland),
+11(10), 4624. https://doi.org/10.3390/app11104624
+
+
+ https://www.malque.pub/ojs/index.php/mr

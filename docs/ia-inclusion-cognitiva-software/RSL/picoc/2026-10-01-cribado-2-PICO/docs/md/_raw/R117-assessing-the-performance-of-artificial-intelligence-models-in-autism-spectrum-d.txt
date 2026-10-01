@@ -1,0 +1,710 @@
+===== PDF PAGE 1 / 11 =====
+                                                                                         Psychiatry and Behavioral Sciences 2026;16(1):46-56
+
+                                                                                         DOI:10.5455/PBS.20250722043208
+
+
+  ORIGINAL RESEARCH
+
+
+Assessing The Performance of Artificial Intelligence Models In
+Autism Spectrum Disorder: Accuracy and Readability of ChatGPT,
+Gemini, and Microsoft Copilot
+Yasin Çalışkan , Abas Haşimoğlu
+Istanbul Basaksehir Cam and Sakura City Hospital, Department of Child and Adolescent Psychiatry, İstanbul, Türkiye
+
+
+
+
+   Abstract
+   Objective: Autism Spectrum Disorder (ASD) is a neurodevelopmental disorder affecting social communication and involving restricted,
+   repetitive behaviors. With AI tools like ChatGPT-4, Gemini, and Microsoft Copilot becoming increasingly popular information sources for
+   healthcare professionals and families, this study aimed to evaluate and compare their accuracy and readability when responding to ASD-
+   related questions.
+   Methods: In this cross-sectional study, we presented 88 questions (45 Frequently Asked Questions [FAQs] and 43 guideline-based) to the
+   three AI models. We sourced questions from social media, parent forums, and clinical guidelines. Two blinded child psychiatrists evaluated
+   response accuracy using a four-grade scale, while readability was assessed using four established indices: Flesch-Kincaid Grade Level,
+   Gunning Fog Index, Coleman-Liau Index, and Flesch Reading Ease.
+   Results: For FAQs, accuracy rates showed significant differences (p=0.001): Gemini (100%), ChatGPT-4 (95.6%), and Microsoft Copilot
+   (71.1%). For guideline-based questions, accuracy also varied significantly (p=0.010): Gemini (86.0%), ChatGPT-4 (83.7%), and Microsoft
+   Copilot (55.8%). Interestingly, Microsoft Copilot provided the most readable FAQ responses, while Gemini offered the most balanced
+   readability for guideline-based questions.
+   Conclusion: Our findings show that Gemini and ChatGPT-4 are highly accurate for ASD information, particularly for complex scientific
+   content, while Microsoft Copilot produced more accessible text despite lower accuracy. These results suggest different models may better
+   serve different audiences—healthcare professionals might benefit from Gemini or ChatGPT-4's precision, while general users might prefer
+   Copilot's readability, highlighting opportunities for improving both reliability and accessibility in healthcare communication.
+
+   Keywords: Artificial Intelligence, Autism spectrum disorder, ChatGPT-4, Gemini, Microsoft Copilot, Readability
+
+
+
+
+INTRODUCTION                                                               A combination of genetic predispositions, such as
+                                                                           family history of neurodevelopmental disorders, and
+ASD is a neurodevelopmental disorder that causes                           environmental influences, including prenatal and
+ongoing challenges with social communication and                           perinatal factors, has been hypothesized to increase
+interaction. People with ASD also show restricted                          the risk for ASD (3). The Centers for Disease Control
+interests and engage in repetitive behaviors. Individuals                  and Prevention's Autism and Developmental Disabilities
+with autism spectrum disorder generally face challenges                    Monitoring (ADDM) Network has estimated that
+in social interaction, using and understanding nonverbal                   approximately 1 in 31 children is identified with ASD
+cues, and developing or maintaining relationships (1,2).                   (4). ASD is about four times more common in males
+ASD typically manifests in early childhood and continues                   than in females (5). Following diagnosis, the individual's
+to be a lifelong condition for the individual. While the                   specific needs are assessed, and they are enrolled in
+exact causes of ASD have not been identified, research                     educational support programs aimed at improving social
+has identified a combination of genetic-environmental                      communication and interaction. Parents raising children
+factors as causative in the development of the disorder.                   with ASD often experience considerable stress. They
+
+Corresponding Author: Yasin Çalışkan, E-mail: yasin.caliskan1@sbu.edu.tr
+Citation: Çalışkan Y, Haşimoğlu A. Assessing the performance of artificial intelligence models in autism spectrum disorder: accuracy and readability
+of ChatGPT, Gemini, and Microsoft Copilot. Psychiatry and Behavioral Sciences. 2026;16(1):46-56. doi:10.5455/PBS.20250722043208.
+Received: Jul 24, 2025									                                                                                           Accepted: Dec 25, 2025
+
+
+                       The content of this journal is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
+
+===== PDF PAGE 2 / 11 =====
+                                                                                       Psychiatry and Behavioral Sciences
+
+typically go through several phases: first, facing a lack      sources during clinical consultations, potentially
+of information, then actively searching for answers,           reducing information gathering time while maintaining
+eventually gathering knowledge, and finally sharing            the quality of care. For parents and caregivers, who
+what they've learned with others (6). During this process,     often face overwhelming amounts of conflicting
+they look for information from many sources, including         information during critical decision-making periods,
+healthcare professionals, publications from healthcare         validated AI sources could provide accessible, evidence-
+institutions, scientific articles, books, conferences,         based guidance when professional consultation is not
+media, and the internet (7). Research has shown that           immediately available. For educators and therapists,
+parents of children with ASD tend to rely heavily on           standardized AI-generated information could support
+informal sources such as social media and the internet,        the development of consistent educational materials
+though the quality of this information can vary (8,9).         and intervention strategies. Moreover, as AI platforms
+More recently, new sources of information based                become increasingly embedded in daily information-
+on artificial intelligence models have emerged as              seeking behaviors, establishing benchmarks for content
+increasingly accessible tools for health information           quality becomes essential for protecting vulnerable
+seeking. Among these, large language models such as            populations from potentially misleading or harmful
+ChatGPT-4 (OpenAI), Gemini (Google), and Microsoft             information. Despite the clear need for such validation,
+Copilot have gained substantial traction globally (10–         empirical evaluation of the accuracy, readability, and
+12). According to the Stanford AI Index Report 2025,           appropriateness of AI-generated health information
+artificial intelligence is now deeply integrated into nearly   in sensitive contexts like ASD remains critically limited.
+every aspect of daily life, reshaping sectors including        Recent studies have examined the performance of large
+education, finance, and healthcare, where algorithm-           language models in various medical domains, including
+driven insights guide critical decisions (13). The scale of    hypertension education (15), breast imaging (16), and
+adoption is remarkable. As of early 2025, ChatGPT alone        neurosurgical board preparation (17), highlighting
+surpassed 400 million weekly active users, representing        both strengths and weaknesses in factual accuracy and
+a substantial increase from 300 million users in               comprehensibility. However, few studies to date have
+                                                               directly evaluated how well AI-generated ASD content
+December 2024, while platforms such as Google Gemini
+                                                               aligns with clinical guidelines or meets the needs of
+and Microsoft Copilot have similarly experienced rapid
+                                                               diverse user groups.
+adoption (14). In healthcare specifically, the integration
+of AI has accelerated dramatically. A systematic review        Despite the widespread adoption of AI chatbots in
+of over 500 studies on natural language processing             healthcare information seeking, comparative analyses
+systems in healthcare revealed that the most researched        evaluating multiple platforms simultaneously using
+applications focus on enhancing medical knowledge              standardized medical content remain scarce. While
+(419 studies) and making diagnoses (178 studies),              previous studies have assessed individual AI tools in
+demonstrating substantial interest from both medical           isolation, the relative performance of leading platforms—
+professionals seeking clinical decision support and            ChatGPT-4, Google Gemini, and Microsoft Copilot—has
+individuals seeking health information (13). These             not been systematically examined in the context of ASD.
+platforms are now accessible to diverse user groups,           Given their distinct underlying architectures and training
+including healthcare professionals seeking quick               methodologies, systematic comparison is essential to
+reference information, parents and caregivers looking          provide evidence-based guidance for both clinical practice
+for guidance on diagnosis and intervention, educators          and patient education. This study addresses this gap by
+developing support strategies, and individuals with            conducting the first comprehensive comparative analysis
+ASD themselves. However, despite their widespread              of these three widely used AI platforms in responding to
+adoption, empirical evaluation of the accuracy,                autism-related questions. Specifically, we evaluate the
+readability, and appropriateness of AI-generated health        accuracy of responses to frequently asked questions and
+information, particularly in sensitive and complex             scientific queries about ASD, assess the readability of AI-
+contexts like ASD, remains critically limited.                 generated content using standardized linguistic indices,
+                                                               and compare performance differences across platforms
+Understanding the accuracy and readability of AI-              to inform evidence-based recommendations for
+generated ASD information carries important implications       healthcare providers, patients, and caregivers seeking
+for multiple stakeholders. For healthcare professionals,       reliable autism-related information.
+reliable AI tools could serve as efficient reference
+
+
+                                                                                                                             47
+
+===== PDF PAGE 3 / 11 =====
+     Çalışkan Y. & Haşimoğlu A.
+
+
+
+     METHODS                                                       free versions of each AI model available during the
+                                                                   data collection period. Specifically, ChatGPT-4 (version
+     We used a cross-sectional diagnostic accuracy design.         GPT-4, accessed via chat.openai.com) was accessed via
+     We focused on non-human subjects and, therefore,              OpenAI's web interface, Gemini (version 1.5, accessed
+     were exempt from ethical review. A total of 88 questions      via gemini.google.com) via Google's platform, and
+     related to Autism Spectrum Disorder (ASD) were posed          Microsoft Copilot (version integrated with Bing search,
+     to three large language models (LLMs): ChatGPT-4              accessed via copilot.microsoft.com) through its web
+     (OpenAI), Gemini (Google), and Microsoft Copilot              interface. All models were queried between November
+     (Microsoft). Questions were developed through a dual          10 and November 20, 2024. Each question was entered
+     approach. Forty-five frequently asked questions (FAQs)        individually and identically into each model without any
+     were compiled from social media platforms, patient            additional prompting language (e.g., “summarize” or “in
+     forums, and autism-related online communities.                simple terms”). The first full response generated by each
+     The FAQs were categorized into general information,           model was recorded without follow-up clarification or
+     screening and diagnosis (n=25), etiology and research         regeneration.
+     (n=6), educational approach and treatment (n=8),              A total of 264 AI-generated responses from ChatGPT-4,
+     and prognosis and outcome (n=6). A comprehensive              Gemini, and Microsoft Copilot were analyzed and
+     list of all FAQs is provided in Supplementary Table 1.        scored by two independent child and adolescent
+     Representative examples include questions such as             psychiatrists specializing in ASD, each with 7 years of
+     'What is autism?', 'What are the early signs of autism?'      specialist experience. To ensure unbiased evaluation,
+     'Is there a relationship between autism and vaccines?'        all AI-generated responses were anonymized, and the
+     'What is ABA therapy?', and 'Can people with autism           psychiatrists were blinded to the AI source of each
+     spectrum disorder live independently?'.                       response. Evaluations were conducted independently
+     An additional 43 questions were generated from                using a four-tier grading system: Grade 1 for entirely
+     evidence-based clinical guidelines, including the             correct answers, Grade 2 for correct answers with
+     DSM-5 and major child and adolescent mental health            insufficient detail, Grade 3 for responses containing
+     recommendations (1,18–29). The scientific questions           both correct and incorrect information, and Grade 4
+     were further categorized into general information,            for entirely incorrect answers. Inter-rater reliability was
+     screening and diagnosis (n=13), etiology and research         assessed using Cohen's kappa coefficient, which yielded
+     (n=9), educational approach and treatment (n=15),             a value of 0.816 (95% CI: 0.746–0.886), indicating
+     and prognosis and outcome (n=6). All guideline-based          substantial to almost perfect agreement between raters.
+     questions are detailed in Supplementary Table 2.              Discrepancies occurred in approximately 7.6% of the
+     Representative examples include questions such as             responses, with all disagreements occurring between
+     'In what dimensions does DSM-5 address the clinical           adjacent rating categories, reflecting nuanced differences
+     features of Autism Spectrum Disorder?' 'What are the          in expert interpretation rather than fundamental scoring
+     tests used in ASD screening?' 'Is there a pharmacological     inconsistencies. In such cases, both raters reviewed the
+     agent with sufficient evidence to justify its use for the     full content of the AI-generated response together,
+     core symptoms of autism?', and 'What are the most             referring to current ASD guidelines and evidence-based
+     critical factors that determine the prognosis of children     clinical references when necessary. Each evaluator
+     diagnosed with ASD?'.                                         explained their rationale based on the predefined
+     We organized all questions under four thematic                rubric, and consensus was achieved through structured
+     categories: (1) General Information, Screening,               discussion. The final rating was assigned based on
+     and Diagnosis; (2) Etiology and Investigations; (3)           agreement following joint review and alignment with
+     Interventions and Pharmacological Treatments; and (4)         the scoring framework. This rigorous and systematic
+     Prognosis and Long-term Outcomes.                             approach ensured that the evaluation process accounted
+     To ensure content validity and clinical relevance,            for expert judgment while minimizing subjective biases
+     all questions were reviewed and refined by a panel            and maintaining methodological reliability.
+     of experienced child and adolescent psychiatrists.            The readability of each response was evaluated using
+     Expert colleagues provided feedback on phrasing,              four established metrics: Flesch Reading Ease (FRE),
+     completeness, and clarity, which was incorporated into        Flesch-Kincaid Grade Level (FKGL), Gunning Fog (GF)
+     the final set of items. The study used publicly accessible,   Index, and Coleman-Liau (CL) Index, which were assessed
+
+
+48
+
+===== PDF PAGE 4 / 11 =====
+                                                                                    Psychiatry and Behavioral Sciences
+
+using the Readable online platform (30). These metrics      100%, z = -3.898, p = 0.002). No statistically significant
+quantify different aspects of text complexity through       difference was found between ChatGPT-4 and Gemini
+mathematical formulas that consider variables such          (95.6% vs. 100%, z = -1.430, p = 0.200).
+as sentence structure, word complexity, and syllable        When analyzing responses by question category,
+distribution. The FRE provides a numerical score between    we observed the following patterns: In the General
+0 and 100, where elevated values signify enhanced           information, Screening and Diagnosis category (n = 25),
+readability. In contrast, the FKGL, GF, and CL indices      Gemini achieved 100% accuracy, followed by ChatGPT-4
+express readability in terms of educational grade levels    (96.0%) and Microsoft Copilot (64.0%). The differences
+within the United States school system, where reduced       between ChatGPT-4 and Microsoft Copilot (p = 0.010)
+numerical values correspond to improved accessibility.      and between Microsoft Copilot and Gemini (p = 0.002)
+The FKGL calculates grade level requirements through        were statistically significant, while the difference
+analysis of sentence length and syllabic complexity         between ChatGPT-4 and Gemini was not (p = 0.200).
+per word. The GF Index determines reading difficulty        In the Etiology and Investigation category (n = 6), both
+by examining the proportion of multisyllabic terms          ChatGPT-4 and Gemini achieved 100% accuracy, while
+relative to overall sentence construction. The CL Index     Microsoft Copilot reached 83.3%. Despite the 16.7%
+distinguishes itself by utilizing character counts rather   difference, this was not statistically significant (p=0.500
+than syllables, evaluating the mean number of letters       for ChatGPT-4 vs Copilot, p=1.000 for ChatGPT-4
+per hundred words alongside mean sentence length,           vs Gemini, p=0.500 for Copilot vs Gemini). For the
+which proves particularly valuable when analyzing           Intervention and Pharmacological Treatment category
+medical terminology (30).                                   (n = 8), Gemini achieved 100% accuracy, ChatGPT-4
+                                                            87.5%, and Microsoft Copilot 62.5%. The comparison
+Statistical Analysis
+                                                            between Copilot and Gemini showed a difference of
+Statistical analyses were performed using the Statistical   37.5% (p=0.050), while ChatGPT-4 vs Copilot (p=0.100)
+Package for the Social Sciences version 27 (SPSS IBM        and ChatGPT-4 vs Gemini (p=0.500) did not reach
+Corp., Armonk, NY). FAQs and scientific questions           significance. In the Follow-up and Prognosis category
+prepared based on current guideline recommendations         (n = 6), all three models showed identical performance
+were evaluated as separate groups. The scores assigned      with perfect accuracy (100%) with p=1.000 for all
+to the answers are presented as percentages. Hypothesis     comparisons (Table 1).
+tests were applied to assess significant differences        The statistical analysis of responses to guideline-based
+in the accuracy scores for the scientific questions. For    questions revealed significant differences among the AI
+readability analysis, the metrics were reported as means    models (p = 0.010). Gemini showed the highest accuracy
+and standard deviations. A p-value of less than 0.05 was    rate, providing completely accurate and sufficient
+considered statistically significant.                       answers (Grade 1) for 86.0% (n = 37) of the questions,
+                                                            with the remaining 14.0% (n = 6) classified as Grade 2.
+RESULTS                                                     ChatGPT-4 achieved 83.7% (n = 36) Grade 1 responses
+The statistical analysis of responses to FAQs revealed      and 16.3% (n = 7) Grade 2 responses. Microsoft Copilot
+significant differences among the AI models (p = 0.001).    showed more variable performance with 55.8% (n = 24)
+Gemini showed perfect accuracy, providing completely        Grade 1 responses, 34.9% (n = 15) Grade 2 responses,
+accurate and sufficient answers for 100% (n = 45) of        and 9.3% (n = 4) Grade 3 responses.
+all FAQs. ChatGPT-4 achieved 95.6% (n = 43) Grade 1         Pairwise comparisons revealed statistically significant
+responses, with the remaining 4.4% (n = 2) classified       differences between ChatGPT-4 and Microsoft Copilot
+as Grade 2. Microsoft Copilot showed more variable          (83.7% vs. 55.8%, z = 2.818, p = 0.010), as well as between
+performance with 71.1% (n = 32) Grade 1 responses,          Microsoft Copilot and Gemini (55.8% vs. 86.0%, z =
+22.2% (n = 10) Grade 2 responses, and 6.7% (n = 3)          -3.087, p = 0.010). No statistically significant difference
+Grade 3 responses.                                          was found between ChatGPT-4 and Gemini (83.7% vs.
+Pairwise comparisons revealed statistically significant     86.0%, z = -0.301, p = 0.200).
+differences between ChatGPT-4 and Microsoft Copilot
+(95.6% vs. 71.1%, z = 3.111, p = 0.002), as well as
+between Microsoft Copilot and Gemini (71.1% vs.
+
+
+
+                                                                                                                          49
+
+===== PDF PAGE 5 / 11 =====
+     Çalışkan Y. & Haşimoğlu A.
+
+
+
+     Table 1. Evaluation of AI model responses to Frequently Asked Questions (FAQs) about autism spectrum disorder
+                                                                                                                                                   Statistical
+     Category                              ChatGPT-4                                Gemini                            Microsoft Copilot
+                                                                                                                                                  Significance
+                                Grade 1       Grade 2     Grade 3       Grade 1       Grade 2 Grade 3         Grade 1       Grade 2    Grade 3
+                                                                                                                                                    p-value
+                                 n(%)          n(%)        n (%)         n (%)         n (%)   n (%)           n(%)          n (%)      n (%)
+                                                                                                                              10
+     All Questions (n=45) 43 (95.6%)          2 (4.4%)    0 (0.0%) 45 (100.0%) 0 (0.0%) 0 (0.0%) 32 (71.1%)                            3 (6.7%)     0.001*
+                                                                                                                            (22.2%)
+     General
+     information,
+                          24 (96.0%) 1 (4.0%)             0 (0.0%) 25 (100.0%) 0 (0.0%) 0 (0.0%) 16 (64.0%) 7 (28.0%)                  2 (8.0%)     0.001*
+     screening, and
+     diagnosis (n=25)
+     Etiology and
+                          6 (100.0%) 0 (0.0%)             0 (0.0%)     6 (100.0%)     0 (0.0%) 0 (0.0%) 5 (83.3%)          1 (16.7%)   0 (0.0%)      0.500
+     investigations (n=6)
+     Interventions and
+     pharmacological      7 (87.5%) 1 (12.5%)             0 (0.0%)     8 (100.0%)     0 (0.0%) 0 (0.0%) 5 (62.5%)          2 (25.0%) 1 (12.5%)       0.500
+     treatments (n=8)
+     Prognosis and long-
+     term outcomes        6 (100.0%) 0 (0.0%)             0 (0.0%)     6 (100.0%)     0 (0.0%) 0 (0.0%) 6 (100.0%)          0 (0.0%)   0 (0.0%)      1.000
+     (n=6)
+     Pairwise comparisons:
+           •      ChatGPT-4 vs. Microsoft Copilot: z=3.111, p=0.002*
+           •      ChatGPT-4 vs. Gemini: z=-1.430, p=0.200
+           •      Microsoft Copilot vs. Gemini: z=-3.898, p=0.002*
+     *: Statistically significant (p<0.05)
+     Grade 1: Completely correct, Grade 2: Mostly correct but insufficient, Grade 3: Partially correct with misleading content
+
+     When analyzing responses by question category for                                (p < 0.05). ChatGPT-4 generated the most complex
+     the guideline-based questions, the following patterns                            responses, while Gemini offered a moderate balance
+     emerged: In the General Information, Screening, and                              between technical detail and clarity. The results of the
+     Diagnosis category (n = 13), both ChatGPT-4 and Gemini                           Readability Indices for ChatGPT-4, Gemini, and Microsoft
+     achieved identical performance (84.6% Grade 1), while                            Copilot across 45 FAQs about ASD are shown in Table 3.
+     Microsoft Copilot reached 53.8%. Despite the difference,
+                                                                                      The statistical analysis of responses to guideline-based
+     it did not reach statistical significance (p = 0.100). In the
+                                                                                      questions revealed no significant differences among the
+     Etiology and Investigations category (n = 9), Microsoft
+                                                                                      AI models for most readability metrics (p > 0.05). Gemini
+     Copilot surprisingly outperformed both ChatGPT-4 and
+                                                                                      showed slightly better readability scores, with a Flesch
+     Gemini, achieving 100% accuracy compared to 88.9%
+                                                                                      Reading Ease (FRE) score of 70.03 ± 1.73, followed by
+     for both other models, though this difference was not
+                                                                                      Microsoft Copilot (69.74 ± 2.21) and ChatGPT-4 (69.58 ±
+     statistically significant (p = 0.500). For the Interventions
+                                                                                      2.84). For Flesch-Kincaid Grade Level (FKGL), ChatGPT-4
+     and Pharmacological Treatments category (n = 15), both
+                                                                                      showed marginally better performance with 11.93 ±
+     ChatGPT-4 and Gemini achieved 80.0% accuracy, while
+                                                                                      1.53, compared to Gemini (12.17 ± 0.70) and Microsoft
+     Microsoft Copilot reached 53.3%, but the differences
+                                                                                      Copilot (12.23 ± 0.76).
+     were not statistically significant (p = 0.200). The most
+     striking difference was observed in the Prognosis and                            Significant differences were observed in the Gunning
+     Long-term Outcomes category (n = 6), where Gemini                                Fog Index (GF) (p < 0.001), where Gemini and Microsoft
+     achieved 100% accuracy, ChatGPT-4 83.3%, while                                   Copilot (both 13.46) performed better than ChatGPT-4
+     Microsoft Copilot failed to provide any completely                               (14.30 ± 1.34). Similarly, for the Coleman-Liau Index (CLI)
+     correct answers (0.0% Grade 1, 83.3% Grade 2, 16.7%                              (p < 0.01), Gemini achieved the best score (9.89 ± 0.75),
+     Grade 3). Despite the small sample size, these differences                       followed by ChatGPT-4 (10.44 ± 1.51) and Microsoft
+     were statistically significant (p = 0.002) (Table 2).                            Copilot (10.51 ± 1.11).
+     The results of the readability indices for ChatGPT-4,
+     Gemini, and Microsoft Copilot across 45 FAQs about ASD:
+     Microsoft Copilot consistently produced the simplest
+     and most accessible texts, achieving significantly lower
+     scores on FKGL, GF, and CLI, and higher scores on FRE
+
+
+50
+
+===== PDF PAGE 6 / 11 =====
+                                                                                                                     Psychiatry and Behavioral Sciences
+
+Table 2. Grading of responses by ChatGPT-4, Gemini, and Microsoft Copilot to questions about autism spectrum disorder based
+on guideline recommendations
+                                                                                                                                                     Statistical
+Category                                ChatGPT-4                                Gemini                             Microsoft Copilot
+                                                                                                                                                    Significance
+                            Grade 1 n    Grade 2 n Grade 3          Grade 1      Grade 2 n Grade 3          Grade 1      Grade 2 n      Grade 3
+                                                                                                                                                         p-value
+                               (%)          (%)     n (%)            n (%)          (%)     n (%)            n (%)          (%)          n (%)
+All questions
+                           36 (83.7%) 7 (16.3%) 0 (0.0%) 37 (86.0%) 6 (14.0%) 0 (0.0%) 24 (55.8%) 15 (34.9%) 4 (9.3%)                                    0.010*
+(n=43)
+General
+information,
+                           11 (84.6%) 2 (15.4%) 0 (0.0%) 11 (84.6%) 2 (15.4%) 0 (0.0%) 7 (53.8%)                          5 (38.5%)     1 (7.7%)          0.100
+screening, and
+diagnosis (n=13)
+Etiology and
+                            8 (88.9%)    1 (11.1%) 0 (0.0%) 8 (88.9%)            1 (11.1%) 0 (0.0%) 9 (100.0%)            0 (0.0%)      0 (0.0%)          0.500
+investigations (n=9)
+Interventions and
+                                                                                                                                           2
+pharmacological            12 (80.0%) 3 (20.0%) 0 (0.0%) 12 (80.0%) 3 (20.0%) 0 (0.0%) 8 (53.3%)                          5 (33.3%)                       0.200
+                                                                                                                                        (13.3%)
+treatments (n=15)
+Prognosis and long-
+                                                                                                                                           1
+term outcomes               5 (83.3%)    1 (16.7%) 0 (0.0%) 6 (100.0%)            0 (0.0%)     0 (0.0%)     0 (0.0%)      5 (83.3%)                      0.002*
+                                                                                                                                        (16.7%)
+(n=6)
+Pairwise Comparisons:
+      •      ChatGPT-4 vs. Microsoft Copilot: z=2.818, p=0.010*
+      •      ChatGPT-4 vs. Gemini: z=-0.301, p=0.200
+      •      Microsoft Copilot vs. Gemini: z=-3.087, p=0.010*
+*: Statistically significant (p<0.05)
+Grade 1: Completely correct, Grade 2: Mostly correct but insufficient, Grade 3: Partially correct with misleading content
+
+
+Table 3. Readability indices for ChatGPT-4, Gemini, and Microsoft Copilot across 45 frequently asked questions about autism
+Readability Index                              ChatGPT-4 Mean ± SD             Gemini Mean ± SD            Microsoft Copilot Mean ± SD                  p-value
+Flesch Reading Ease (FRE)                            18.36 ± 9.94                 22.27 ± 12.82                     38.12 ± 11.40                   <0.001*
+Flesch-Kincaid Grade Level (FKGL)                    15.25 ± 1.95                  15.09 ± 2.58                      11.51 ± 2.26                   <0.001*
+Gunning Fog Index (GF)                               20.08 ± 2.05                  20.00 ± 2.90                      16.16 ± 2.49                   <0.001*
+Coleman-Liau Index (CLI)                             17.88 ± 1.68                  16.98 ± 2.20                      14.79 ± 1.90                   <0.001*
+  Pairwise comparisons:
+Comparison                                        FRE            FKGL             GF               CLI
+
+                                                p=0.107        p=0.752         p=0.879         p=0.032*
+ChatGPT-4 vs. Gemini
+                                                d=0.34         d=0.07          d=0.03           d=0.46
+
+                                               p<0.001*       p<0.001*        p<0.001*         p<0.001*
+ChatGPT-4 vs. Microsoft Copilot
+                                                d=1.85         d=1.77          d=1.72           d=1.72
+
+                                               p<0.001*       p<0.001*        p<0.001*         p<0.001*
+Gemini vs. Microsoft Copilot
+                                                d=1.31         d=1.47          d=1.42           d=1.06
+*: Statistically significant (p<0.05)
+d: Effect sizes were interpreted according to Cohen's guidelines: small effect (d = 0.2–0.5), medium effect (d = 0.5–0.8), and large effect (d ≥ 0.8)
+
+
+
+
+                                                                                                                                                                   51
+
+===== PDF PAGE 7 / 11 =====
+     Çalışkan Y. & Haşimoğlu A.
+
+
+
+     Pairwise comparisons revealed significant differences                              profile across all metrics, while ChatGPT-4 and Microsoft
+     between ChatGPT-4 and both other models for the                                    Copilot showed more variable performance. The results
+     Gunning Fog Index (p < 0.05), and between Gemini and                               of the readability indices for ChatGPT-4, Gemini, and
+     Microsoft Copilot for the Coleman-Liau Index (p < 0.05).                           Microsoft Copilot across 43 scientific questions about
+     Overall, Gemini showed the most balanced readability                               autism are shown in Table 4.
+     Table 4. Readability indices for ChatGPT-4, Gemini, and Microsoft Copilot across 43 guideline-based questions about autism
+                                                                 ChatGPT-4                       Gemini                    Microsoft Copilot
+     Readability Index                                                                                                                                       p-value
+                                                                 Mean ± SD                      Mean ± SD                     Mean ± SD
+
+     Flesch Reading Ease (FRE)                                  69.58 ± 2.84                   70.03 ± 1.73                   69.74 ± 2.21                    >0.05
+
+     Flesch-Kincaid Grade Level (FKGL)                          11.93 ± 1.53                   12.17 ± 0.70                   12.23 ± 0.76                    >0.05
+
+     Gunning Fog Index (GF)                                     14.30 ± 1.34                   13.46 ± 0.60                   13.46 ± 1.08                   <0.001*
+
+     Coleman-Liau Index (CLI)                                   10.44 ± 1.51                    9.89 ± 0.75                   10.51 ± 1.11                   <0.01*
+
+       Pairwise comparisons:
+
+     Comparison                                                 FRE            FKGL              GF                CLI
+
+                                                              p>0.05          p>0.05          p<0.05*           p>0.05
+     ChatGPT-4 vs. Gemini
+                                                              d=0.19          d=0.20          d=0.79            d=0.45
+
+                                                              p>0.05          p>0.05          p<0.05*           p>0.05
+     ChatGPT-4 vs. Microsoft Copilot
+                                                              d=0.06          d=0.24          d=0.69            d=0.05
+
+                                                              p>0.05          p>0.05          p>0.05            p<0.05*
+     Gemini vs. Microsoft Copilot
+                                                              d=0.14          d=0.08          d=0.00            d=0.67
+     *: Statistically significant (p<0.05)
+     d: Effect sizes were interpreted according to Cohen's guidelines: small effect (d = 0.2–0.5), medium effect (d = 0.5–0.8), and large effect (d ≥ 0.8)
+
+
+     DISCUSSION                                                                         disorder, offering insights that may inform platform
+                                                                                        selection for both clinical and educational purposes.
+     In this study, we evaluated the responses of ChatGPT-4,                            In the existing literature, studies on the use of artificial
+     Gemini, and Microsoft Copilot to questions about                                   intelligence models in healthcare have increased since
+     ASD in terms of accuracy and readability. Our results                              2023, but they remain limited in number. For instance,
+     show that these AI models have different strengths:                                in a study on endometriosis, ChatGPT-4 demonstrated
+     Gemini and ChatGPT-4 performed better in terms                                     an accuracy rate of 91.4% in responding to FAQs, while
+     of accuracy, while Microsoft Copilot excelled in                                   its accuracy dropped to 67.5% for scientifically oriented
+     readability. Particularly in guideline-based scientific                            questions based on the guidelines of the European
+     questions, Gemini and ChatGPT-4's production of more                               Society of Human Reproduction and Embryology,
+     accurate responses compared to Microsoft Copilot                                   indicating challenges in addressing complex, guideline-
+     highlights the differences in these models' capacity to                            based inquiries (31). Similarly, Caglar et al. (2023)
+     process complex health information. In the readability                             reported that ChatGPT-4 reached an accuracy rate of
+     assessment, Microsoft Copilot's production of more                                 93.6% when answering questions based on the 2022
+     accessible content emphasizes the importance of AI                                 Pediatric Urology Guidelines of the European Urology
+     selection for the needs of different user groups. These                            Association (32). The pattern of higher accuracy for
+     findings have practical significance, as individuals with                          FAQs compared to guideline-based questions observed
+     autism and their families often encounter challenges in                            in our study aligns with existing literature on AI
+     accessing timely specialist consultation, leading many                             performance in healthcare domains. Several factors
+     to seek information through digital platforms. This                                contribute to this performance gap with complex
+     study contributes to the growing body of literature                                scientific content. Despite extensive training datasets,
+     by providing a systematic comparison of three widely                               these models lack access to all available information,
+     used AI platforms in the context of autism spectrum                                particularly paid publications and the most recent
+
+
+52
+
+===== PDF PAGE 8 / 11 =====
+                                                                                     Psychiatry and Behavioral Sciences
+
+research updates, which may hinder their ability to         for general ASD-related inquiries. This capability is
+provide accurate responses. Moreover, the inherent          particularly valuable given that parents and caregivers
+complexity of academic language and the nuanced             often turn to various sources—including healthcare
+nature of scientific inquiries further challenge these      professionals, scientific articles, and increasingly, the
+models' capabilities in delivering precise answers.         internet—to address information needs about ASD
+However, the strong performance of Gemini and               (6–9). While internet sources can vary significantly in
+ChatGPT-4 in our study demonstrates that AI models          accuracy and reliability, AI models offer the advantage
+can achieve remarkable accuracy when applied to well-       of synthesizing information from numerous scientific
+defined, structured domains. This finding is supported      articles, guidelines, and authoritative websites, with
+by recent research showing AI's effectiveness in            the added capability of providing source citations
+specific healthcare applications. Minnis et al. (2024)      upon request.
+demonstrated how advanced AI systems could                  Readability plays a pivotal role in the effective
+accurately process behavioral information in children,      dissemination of healthcare information, ensuring that
+achieving high accuracy in identifying attachment style     materials are accessible to a broad audience. Despite
+(33). Similarly, Mukherjee et al. (2023) used BERT          its importance, readability studies specifically focusing
+and ChatGPT models to analyze parent dialogues for          on AI-generated healthcare responses are still limited.
+autism symptom detection, achieving 83% accuracy            In line with this, the National Institutes of Health (NIH)
+(34). Beyond individual applications, Stade et al. (2024)   recommends that patient education materials be written
+provided a comprehensive framework for integrating          at a sixth- to eighth-grade reading level to ensure clarity
+large language models into behavioral healthcare,           for individuals with varying literacy skills (37). Microsoft
+emphasizing that clinical psychology represents an          Copilot, in our study, emerged as the most readable
+uncommonly high-stakes application domain for AI            model, producing responses with lower FKGL scores
+systems where responsible development requires              and higher FRE scores, making it accessible to a wider
+nuanced clinical expertise (35). Their staged integration   audience. In contrast, ChatGPT-4 generated the most
+model, progressing from assistive to collaborative and      complex responses, requiring higher literacy levels,
+potentially autonomous AI applications, underscores         while Gemini’s readability was moderate, balancing
+the importance of rigorous evaluation at each level         complexity and accessibility. These findings align with
+before advancing to greater autonomy. This framework        previous research comparing AI models in healthcare
+contextualizes our findings, suggesting that while          contexts. For example, a study on breast imaging FAQs
+Gemini and ChatGPT-4 demonstrate strong accuracy            showed that although ChatGPT-4 performed better in
+for ASD-related information, their integration into         terms of accuracy, Gemini and Copilot generated more
+clinical practice should follow carefully structured        readable responses, making them more suitable for a
+developmental stages with appropriate safeguards            general audience in our study (16). Similarly, in a study
+and oversight. Recent empirical evidence from Heinz         on the readability of AI responses for Retinopathy
+et al. (2025) further substantiates Gen-AI's therapeutic    of Prematurity, Gemini and Microsoft Copilot were
+potential in behavioral healthcare. Their randomized        found to be more readable than ChatGPT-4 (38). This
+controlled trial of a Gen-AI-powered therapeutic            suggests that different AI models offer complementary
+chatbot demonstrated significant treatment effects for      strengths, with some prioritizing readability over
+depression, anxiety, and eating disorder symptoms,          accuracy and others focusing on precise, evidence-
+with large effect sizes (Cohen's d = 0.627–0.903) and       based information. While Microsoft Copilot meets
+therapeutic alliance scores comparable to human-            NIH’s recommended readability standards, it needs to
+delivered psychotherapy (36). While Heinz et al.            improve its reliability, particularly in scientific contexts.
+evaluated active treatment delivery, our assessment         ChatGPT-4 and Gemini excel in producing accurate,
+of information accuracy and readability for autism-         evidence-based content, though their use of complex
+related content represents a complementary and              language structures may limit accessibility for some
+foundational step toward responsible AI integration         users. Balancing accuracy and readability is therefore
+in neurodevelopmental healthcare contexts. These            crucial in healthcare communication (39), and further
+studies, combined with our findings, suggest that while     developments in AI tools could enable them to better
+AI faces challenges with highly specialized scientific      address the diverse needs of healthcare audiences.
+content, it may serve as a reliable information source      The findings of this study have practical implications
+
+
+                                                                                                                            53
+
+===== PDF PAGE 9 / 11 =====
+     Çalışkan Y. & Haşimoğlu A.
+
+
+
+     for diverse stakeholders in healthcare. Healthcare           more reliable data on the reliability of AI models in
+     providers can use these insights to recommend                delivering ASD-related knowledge.
+     reliable AI platforms when patients seek autism-             Despite these limitations, this study provides a
+     related information. Patients and caregivers benefit         comprehensive evaluation of ChatGPT-4, Gemini,
+     from understanding which platforms offer superior            and Microsoft Copilot in the context of ASD, filling a
+     accuracy for their specific information needs, enabling      significant gap in the literature. ChatGPT-4, Gemini,
+     informed decisions when consulting AI tools. The             and Microsoft Copilot have delivered highly accurate
+     comparative performance metrics can guide AI                 responses to frequently asked questions about ASD.
+     developers in improving medical content generation,          Particularly, ChatGPT-4 and Gemini have shown
+     particularly in specialized psychiatric domains where        high accuracy in addressing scientific questions,
+     accuracy is critical. Medical educators may integrate        demonstrating promising potential for usability in the
+     these findings into digital health literacy curricula to     healthcare field. By focusing on both accuracy and
+     train future professionals in evaluating AI-generated        readability, this study offers valuable insights into the
+     medical information. Finally, as AI becomes increasingly     performance of these AI models in disseminating ASD-
+     integrated into health information ecosystems,               related information. The study evaluates responses to
+     policymakers can draw upon this evidence to develop          both frequently asked questions and scientific content,
+     appropriate standards for AI-generated medical               providing data on the models’ ability to address
+     content in sensitive areas such as mental health.            general and specialized inquiries. The involvement
+     Although this study is the first to analyze the              of experienced child and adolescent psychiatrists
+     knowledge and readability levels of ChatGPT-4, Gemini,       specializing in ASD, along with anonymized responses
+     and Microsoft Copilot regarding ASD, it has certain          and independent evaluations, further strengthens
+     limitations. First, this study evaluated specific versions   the findings. This research represents one of the first
+     of AI models available in November 2024 (ChatGPT-4           detailed comparisons of multiple AI models in the
+     version GPT-4, Gemini version 1.5, and Microsoft             context of ASD, making a unique contribution to the
+     Copilot with Bing integration). Since the completion         field. To the best of our knowledge, no prior studies
+     of data collection, newer versions have been released,       in the literature have evaluated AI tools specifically
+     including GPT-4.5 Turbo and Gemini 2.0, which may            for ASD. By examining the accuracy and reliability of
+     demonstrate different performance characteristics.           responses, this study highlights the potential of AI
+     The rapid evolution of large language models means           to improve access to healthcare and deliver reliable
+     that findings from this study represent a snapshot in        medical information.
+     time rather than a definitive assessment of these            This study highlights the evolving potential of AI models
+     platforms' capabilities. Future research should include      such as ChatGPT-4, Gemini, and Microsoft Copilot
+     longitudinal evaluations to track how model updates          in providing accurate and accessible information
+     affect accuracy and readability over time. Second, the       about ASD. The findings demonstrate that ChatGPT-4
+     exclusive use of English as the evaluation language          and Gemini excel in delivering highly accurate and
+     limits the applicability of the findings to non-English-     evidence-based responses, while Microsoft Copilot
+     speaking populations. Additionally, the study examines       stands out in terms of readability, making it more
+     only three AI models, excluding other emerging tools,        suitable for general audiences. The balance between
+     which restricts the scope for a more comprehensive           accuracy and user accessibility is identified as a critical
+     comparison. While the questions used in the study            area for development to meet the diverse demands of
+     evaluate many aspects of ASD, they may not fully             healthcare communication. This study fills a significant
+     reflect the diverse inquiries users might have about         gap in the literature while highlighting the potential
+     the disorder. Furthermore, the study was conducted           of artificial intelligence tools to facilitate access to
+     at a single center, with evaluations performed by only       information in the healthcare field. Advancements in AI
+     two experts. Although both evaluators are qualified,         solutions focusing on adaptability and inclusivity offer
+     this approach may introduce bias and impact the              valuable opportunities to improve the dissemination of
+     robustness of the findings. Future research should           health information and provide more effective support
+     consider multi-center studies involving broader              to individuals living with ASD and their families.
+     populations and a wider range of questions to enhance
+     generalizability. This would reduce bias and provide
+
+
+
+54
+
+===== PDF PAGE 10 / 11 =====
+                                                                                                    Psychiatry and Behavioral Sciences
+
+Funding: The authors received no financial support for the                   Developmental Disabilities Monitoring Network, 11 sites,
+research.                                                                    United States, 2020. MMWR Surveill Summ. 2023;72(2):1-14.
+                                                                             doi:10.15585/mmwr.ss7202a1.
+Conflicts of interest: The authors declare that they have no
+conflicts of interest.                                                 [6]   Ruthven I. The language of information need: differentiating
+                                                                             conscious and formalized information needs. Information
+Ethics Committee Approval: This study did not involve the                    Processing & Management. 2019;56(1):77-90. doi:10.1016/j.
+direct collection of primary data from human participants                    ipm.2018.09.005.
+or animals. No patient-identifiable information was used in
+                                                                       [7]   Mackintosh VH, Myers BJ, Goin-Kochel RP. Sources of
+this study. Therefore, ethical approval from an Institutional                information and support used by parents of children with
+Review Board (IRB) or Research Ethics Committee (REC)                        autism spectrum disorders. Journal on Developmental
+was not required. However, all analyses and interpretations                  Disabilities. 2005;12(1):41-52.
+adhered to the ethical standards set by the 1964 Helsinki
+                                                                       [8]   Gibson AN, Hanson-Baldauf D. Beyond sensory story time:
+Declaration and its subsequent amendments. No informed                       an intersectional analysis of information seeking among
+consent was required as no human participants were directly                  parents of autistic individuals. Libr Trends. 2019;67(3):550-75.
+involved.                                                                    doi:10.1353/lib.2019.0002.
+Declaration of AI and AI-assisted Technologies in the                  [9]   Mansour E. The information-seeking behaviour of Egyptian
+Writing Process: During the preparation of this manuscript,                  parents of children with autism spectrum disorder (ASD): a
+the authors used Claude (Anthropic) to refine the language.                  descriptive study. Online Information Review. 2021;45(7):1189-
+Following the use of these tools, the authors carefully                      207. doi:10.1108/OIR-11-2020-0494.
+reviewed and edited the content as necessary and take full             [10] Microsoft. Microsoft Copilot [Internet]. Microsoft; 2022 [cited
+responsibility for the accuracy and integrity of the final                  2024 Nov 10]. Available from: https://copilot.microsoft.com/.
+manuscript.                                                            [11] OpenAI. ChatGPT [Internet]. OpenAI; 2022 [cited 2024 Nov
+Peer-review: Externally peer-reviewed.                                      10]. Available from: https://openai.com/blog/chatgpt.
+Author Contributions:                                                  [12] Google AI. Gemini [Internet]. Google; 2023 [cited 2024 Nov
+                                                                            10]. Available from: https://gemini.google.com/app.
+Research idea: YC
+                                                                       [13] Maslej N, Fattorini L, Perrault R, Gil Y, Parli V, Kariuki N, et
+Design of the study: YC, AH
+                                                                            al. Artificial Intelligence Index Report. 2025. doi:10.48550/
+Acquisition of data for the study: YC, AH                                   arXiv.2504.07139.
+Analysis of data for the study: YC, AH                                 [14] Reuters. OpenAI’s weekly active users surpass 400 million
+Interpretation of data for the study: YC, AH                                [Internet]. 2025 Feb 20 [cited 2025 Oct 22]. Available from:
+                                                                            https://www.reuters.com/technology/artificial-intelligence/
+Drafting the manuscript: YC, AH
+                                                                            openais-weekly-active-users-surpass-400-million-2025-02-20/.
+Revising it critically for important intellectual content: YC, AH
+                                                                       [15] Lee TJ, Campbell DJ, Patel S, Hossain A, Radfar N, Siddiqui
+                                                                            E, et al. Unlocking Health Literacy: The Ultimate Guide to
+REFERENCES                                                                  Hypertension Education From ChatGPT Versus Google Gemini.
+                                                                            Cureus 2024;16(5):e59898. doi:10.7759/cureus.59898.
+[1]   American Psychiatric Association. Diagnostic and statistical     [16] Tepe M, Emekli E. Assessing the Responses of Large Language
+      manual of mental disorders: DSM-5. 5th ed. Washington (DC):           Models (ChatGPT-4, Gemini, and Microsoft Copilot) to
+      American Psychiatric Association; 2013. doi:10.1176/appi.             Frequently Asked Questions in Breast Imaging: A Study
+      books.9780890425596.                                                  on Readability and Accuracy. Cureus. 2024;16(5):e59960.
+[2]   Lord C, Elsabbagh M, Baird G, Veenstra-Vanderweele J.                 doi:10.7759/cureus.59960.
+      Autism spectrum disorder. Lancet. 2018;392(10146):508-20.        [17] Ali R, Tang OY, Connolly ID, Fridley JS, Shin JH, Zadnik Sullivan
+      doi:10.1016/S0140-6736(18)31129-2.                                    PL, et al. Performance of ChatGPT, GPT-4, and Google
+[3]   LaSalle JM. Epigenomic signatures reveal mechanistic clues            Bard on a Neurosurgery Oral Boards Preparation Question
+      and predictive markers for autism spectrum disorder. Mol              Bank. Neurosurgery. 2023;93 (5):1090–8. doi:10.1227/
+      Psychiatry. 2023;28(5):1890-901. doi:10.1038/s41380-022-              neu.0000000000002551.
+      01917-9.                                                         [18] Volkmar F, Siegel M, Woodbury-Smith M, King B, McCracken
+[4]   Shaw KA, Williams S, Patrick ME, Valencia-Prado M, Durkin             J, State M, et al. Practice parameter for the assessment and
+      MS, Howerton EM, et al. Prevalence and early identification           treatment of children and adolescents with autism spectrum
+      of autism spectrum disorder among children aged 4 and 8               disorder. J Am Acad Child Adolesc Psychiatry. 2014;53 (2):237–
+      years—Autism and Developmental Disabilities Monitoring                57. doi:10.1016/j.jaac.2013.10.013.
+      Network, 16 sites, United States, 2022. MMWR Surveill Summ.      [19] Academy of Medicine, Singapore. Clinical practice guidelines
+      2025;74(2):1-22. doi:10.15585/mmwr.ss7402a1.                          on autism spectrum disorder in children and adolescents
+[5]   Maenner MJ, Warren Z, Williams AR, Amoakohene E, Bakian               [Internet]. 2023 Jun [cited 2024 Nov 10]. Available from:
+      AV, Bilder DA, et al. Prevalence and characteristics of autism        https://www.ams.edu.sg/.
+      spectrum disorder among children aged 8 years—Autism and
+
+
+
+                                                                                                                                                55
+
+===== PDF PAGE 11 / 11 =====
+     Çalışkan Y. & Haşimoğlu A.
+
+
+
+     [20] Autism CRC. A national guideline for the assessment and               [33] Minnis H, Vinciarelli A, Alsofyani H. The use and potential of
+          diagnosis of autism spectrum disorders in Australia [Internet].            artificial intelligence for supporting clinical observation of
+          Brisbane (AU): Autism CRC; 2018 [cited 2024 Nov 10]. Available             child behaviour. Child Adoles Ment Health. 2024;29(4):340–4.
+          from: https://www.autismcrc.com.au/access-guideline.                       doi:10.1111/camh.12714.
+     [21] Brian JA, Zwaigenbaum L, Ip A. Standards of diagnostic                [34] Mukherjee P, Gokul RS, Sadhukhan S, Godse M, Chakraborty
+          assessment for autism spectrum disorder. Paediatr Child                    B. Detection of autism spectrum disorder (ASD) from natural
+          Health. 2019;24(7):444-51. doi:10.1093/pch/pxz117.                         language text using BERT and ChatGPT models. International
+     [22] Cahill T, Dowling C, Banks R. A national framework to deliver              Journal of Advanced Computer Science and Applications.
+          improved outcomes in all-age autism assessment pathways:                   2023;14(10):382-96. doi:10.14569/IJACSA.2023.0141041.
+          guidance for integrated care boards 2023. [Internet]. 2023 Apr        [35] Stade EC, Stirman SW, Ungar LH, Boland CL, Schwartz HA, Yaden
+          5 [cited 2024 Nov 10]. Available from: https://www.england.                DB, et al. Large language models could change the future of
+          nhs.uk/long-read/a-national-framework-to-deliver-improved-                 behavioral healthcare: a proposal for responsible development
+          outcomes-in-all-age-autism-assessment-pathways/.                           and evaluation. Npj Mental Health Res 2024;3:12. doi:10.1038/
+     [23] Hyman SL, Levy SE, Myers SM, Kuo DZ, Apkon S, Davidson LF, et              s44184-024-00056-z.
+          al. Identification, evaluation, and management of children with       [36] Heinz MV, Mackin DM, Trudeau BM, Bhattacharya S, Wang Y,
+          autism spectrum disorder. Pediatrics. 2020;145(1):e20193447.               Banta HA, et al. Randomized Trial of a Generative AI Chatbot
+          doi:10.1542/peds.2019-3447.                                                for Mental Health Treatment. NEJM AI. 2025;2(4). doi:10.1056/
+     [24] National Institute for Health and Care Excellence (NICE). Autism           AIoa2400802.
+          spectrum disorder in under 19s: support and management                [37] National Institutes of Health (NIH). Clear communication
+          [Internet]. 2013 Aug 28 [updated 2021 Jun 14; cited 2024 Nov               [Internet]. n.d. [cited 2025 Jan 13]. Available from: https://
+          10]. Available from: https://www.nice.org.uk/guidance/cg170]               www.nih.gov/institutes-nih/nih-office-director/office-
+          (https://www.nice.org.uk/guidance/cg170.                                   communications-public-liaison/clear-communication.
+     [25] Scottish Intercollegiate Guidelines Network (SIGN). Assessment,       [38] Ermis S, Özal E, Karapapak M, Kumantaş E, Özal SA. Assessing
+          diagnosis and interventions for autism spectrum disorders                  the Responses of Large Language Models (ChatGPT-4, Claude 3,
+          [Internet]. Edinburgh: SIGN; 2016 [cited 2024 Nov 10]. (SIGN               Gemini, and Microsoft Copilot) to Frequently Asked Questions
+          publication no. 145). Available from: https://www.sign.ac.uk/              in Retinopathy of Prematurity: A Study on Readability
+          guidelines/assessment-diagnosis-and-interventions-for-                     and Appropriateness. J Pediatr Ophthalmol Strabismus.
+          autism-spectrum-disorders/.                                                2025;62(2):84-95. doi:10.3928/01913913-20240911-05.
+     [26] World Health Organization. Autism [Internet]. 2024 Nov 15             [39] Malak A, Şahin MF. How useful are current chatbots
+          [cited 2024 Nov 20]. Available from: https://www.who.int/                  regarding urology patient information? Comparison of the
+          news-room/fact-sheets/detail/autism-spectrum-disorders.                    ten most popular chatbots' responses about female urinary
+     [27] Centers for Disease Control and Prevention (CDC). Autism                   incontinence. J Med Syst. 2024;48(1):102. doi:10.1007/
+          Spectrum Disorder (ASD) [Internet]. 2024 [cited 2024 Nov 10].              s10916-024-02125-4.
+          Available from: https://www.cdc.gov/autism/index.html.
+     [28] Rodrigues R, Lai M-C, Beswick A, Gorman DA, Anagnostou
+          E, Szatmari P, et al. Practitioner Review: Pharmacological
+          treatment of attention-deficit/hyperactivity disorder symptoms
+          in children and youth with autism spectrum disorder: a
+          systematic review and meta-analysis. J Child Psychol Psychiatry
+          2021;62(6):680–700. doi:10.1111/jcpp.13305.
+     [29] DeVane CL, Charles JM, Abramson RK, Williams JE, Carpenter
+          LA, Raven S, et al. Pharmacotherapy of Autism Spectrum
+          Disorder: Results from the Randomized BAART Clinical
+          Trial. Pharmacotherapy. 2019;39(6):626–35. doi:10.1002/
+          phar.2271.
+     [30] Readable. Readability is an essential content marketing
+          tool [Internet]. [cited 2024 Dec 22]. Available from: https://
+          readable.com/pro/.
+     [31] Ozgor BY, Simavi MA. Accuracy and reproducibility of ChatGPT’s
+          free version answers about endometriosis. Int J Gynaecol
+          Obstet. 2023;165(2):691-95. doi:10.1002/ijgo.15309.
+     [32] Caglar U, Yildiz O, Meric A, Ayranci A, Gelmis M, Sarilar O, et al.
+          Evaluating the performance of ChatGPT in answering questions
+          related to pediatric urology. J Pediatr Urol. 2024;20(1):26.e1-
+          26.e5.doi:10.1016/j.jpurol.2023.08.003.
+
+
+
+
+56

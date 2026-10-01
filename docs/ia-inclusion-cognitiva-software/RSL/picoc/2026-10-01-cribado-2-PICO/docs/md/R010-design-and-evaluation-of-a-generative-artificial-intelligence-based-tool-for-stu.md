@@ -1,0 +1,258 @@
+# The Thirty-Ninth AAAI Conference on Artificial Intelligence (AAAI-25)
+
+> Fuente PDF: `R010-design-and-evaluation-of-a-generative-artificial-intelligence-based-tool-for-stu.pdf` · técnica **locator index** (página + ancla) + chunks Graphify
+
+## Metadata
+- Stem: `R010-design-and-evaluation-of-a-generative-artificial-intelligence-based-tool-for-stu`
+- PDF: `R010-design-and-evaluation-of-a-generative-artificial-intelligence-based-tool-for-stu.pdf`
+- DOI: `unknown`
+- Pages: `2`
+- Structured_at: `2026-10-01T07:27:28+00:00`
+- Technique: `pdf-page-locators + heading-chunks`
+
+## Locator index (qué hay y en qué página del PDF)
+
+| Kind | Label | PDF page | MD anchor |
+|------|-------|----------|-----------|
+| abstract | Abstract / blurb | 1 | `#abstract` |
+| concept | R010 | ? | `#concept-r010` |
+| concept | design | ? | `#concept-design` |
+| concept | evaluation | ? | `#concept-evaluation` |
+| concept | generative | ? | `#concept-generative` |
+| concept | artificial | ? | `#concept-artificial` |
+| concept | intelligence | 1 | `#concept-intelligence` |
+| concept | based | ? | `#concept-based` |
+| concept | tool | ? | `#concept-tool` |
+| finding | This lack of support can be at- comprehension, cognitive organization, self-expression, ma… | 1 | `#finding-this-lack-of-support-can-be-at-comprehe` |
+| finding | Although existing studies have primarily ing of the unique learning needs of these student… | 1 | `#finding-although-existing-studies-have-primarily` |
+| finding | Moreover, GenAI is workload (Dwivedi et al. | 1 | `#finding-moreover-genai-is-workload-dwivedi-et` |
+| finding | Furthermore, GenAI tools increasingly gaining prominence in educational settings. | 1 | `#finding-furthermore-genai-tools-increasingly-ga` |
+| finding | A prototype based on Iyengar, and Botchu 2023). | 1 | `#finding-a-prototype-based-on-iyengar-and-botchu` |
+| finding | The prototype will provide mobile phone integration to (Grant 2017). | 1 | `#finding-the-prototype-will-provide-mobile-phone` |
+| page | p.1: The Thirty-Ninth AAAI Conference on Artificial Intelligence (AAAI-25) | 1 | `#pdf-p1` |
+| page | p.2: 3. Design and validate a GenAI prototype to support stu- evaluation will assess the impact | 2 | `#pdf-p2` |
+
+## Abstract
+<a id="abstract"></a>
+
+2021). Unfortunately, Kenyan educational institutions pro- vide limited accessibility and support for students with LDs, Students with learning disabilities (LDs) face significant resulting in significant barriers to their academic achieve- challenges in key academic areas such as reading ment and overall well-being. This lack of support can be at- comprehension, cognitive organization, self-expression, mathematics, and handwriting. These difficulties increase tributed to the scarcity of specialized tools, technologies and their susceptibility to discrimination and mental health customized curricula, together with a limited understand- related issues. Although existing studies have primarily ing of the unique learning needs of these students (Nel and focused on AI’s diagnostic capabilities, there is limited Grosser 2016). research examining how Generative AI can be utilized to Emerging research suggests that Generative AI (GenAI) produce measurable learning outcomes and enhance learning could support personalized learning and reduce teacher experiences for students with LDs. Moreover, GenAI is workload (Dwivedi et al. 2021). Furthermore, GenAI tools increasingly gaining prominence in educational settings. can help individuals with LDs such as dyslexia review their Therefore, the relationship between GenAI tools, LDs, and coursework for spelling and grammatical errors, providing instructional methods needs to be further examined. This research aims to develop a comprehensive framework for prompt feedback — an especially challenging task for stu- helping design and implement tools specifically tailored to dents with dyslexia due to their reading difficulties (Botchu, the unique needs of students with LDs. A prototype based on Iyengar, and Botchu 2023). Similarly, GenAI tools, such this framework will be implemented in selected educational as Journey and DALL-E, may be helpful for students with settings to assess its effectiveness in improving learning ADHD and dyspraxia who might find it difficult to di- outcomes and providing targeted support to students with gest detail-oriented materials without accompanying images LDs. The prototype will provide mobile phone integration to (Grant 2017). However, empirical studies on the design, ensure scalability and enhance educational accessibility. The application, and impact of GenAI tools for students with expected findings will contribute to the promotion of more LDs remain limited. In addition, GenAI is outpacing 
+
+## Keywords
+
+- _(none auto-detected)_
+
+## Concept index (graph hooks + página)
+
+<a id="concept-r010"></a>
+### [PDF p.?] Concept: R010
+- Locator: `R010-design-and-evaluation-of-a-generative-artificial-intelligence-based-tool-for-stu.pdf` · página **?**
+
+<a id="concept-design"></a>
+### [PDF p.?] Concept: design
+- Locator: `R010-design-and-evaluation-of-a-generative-artificial-intelligence-based-tool-for-stu.pdf` · página **?**
+
+<a id="concept-evaluation"></a>
+### [PDF p.?] Concept: evaluation
+- Locator: `R010-design-and-evaluation-of-a-generative-artificial-intelligence-based-tool-for-stu.pdf` · página **?**
+
+<a id="concept-generative"></a>
+### [PDF p.?] Concept: generative
+- Locator: `R010-design-and-evaluation-of-a-generative-artificial-intelligence-based-tool-for-stu.pdf` · página **?**
+
+<a id="concept-artificial"></a>
+### [PDF p.?] Concept: artificial
+- Locator: `R010-design-and-evaluation-of-a-generative-artificial-intelligence-based-tool-for-stu.pdf` · página **?**
+
+<a id="concept-intelligence"></a>
+### [PDF p.1] Concept: intelligence
+- Locator: `R010-design-and-evaluation-of-a-generative-artificial-intelligence-based-tool-for-stu.pdf` · página **1**
+
+<a id="concept-based"></a>
+### [PDF p.?] Concept: based
+- Locator: `R010-design-and-evaluation-of-a-generative-artificial-intelligence-based-tool-for-stu.pdf` · página **?**
+
+<a id="concept-tool"></a>
+### [PDF p.?] Concept: tool
+- Locator: `R010-design-and-evaluation-of-a-generative-artificial-intelligence-based-tool-for-stu.pdf` · página **?**
+
+
+## Findings index (graph hooks + página)
+
+<a id="finding-this-lack-of-support-can-be-at-comprehe"></a>
+### [PDF p.1] Finding: This lack of support can be at- comprehension, cognitive organization, self-expression, mathematics, and handwriting.
+- Locator: `R010-design-and-evaluation-of-a-generative-artificial-intelligence-based-tool-for-stu.pdf` · página **1**
+
+<a id="finding-although-existing-studies-have-primarily"></a>
+### [PDF p.1] Finding: Although existing studies have primarily ing of the unique learning needs of these students (Nel and focused on AI’s diagnostic capabilities, there is limited Grosser 2016).
+- Locator: `R010-design-and-evaluation-of-a-generative-artificial-intelligence-based-tool-for-stu.pdf` · página **1**
+
+<a id="finding-moreover-genai-is-workload-dwivedi-et"></a>
+### [PDF p.1] Finding: Moreover, GenAI is workload (Dwivedi et al.
+- Locator: `R010-design-and-evaluation-of-a-generative-artificial-intelligence-based-tool-for-stu.pdf` · página **1**
+
+<a id="finding-furthermore-genai-tools-increasingly-ga"></a>
+### [PDF p.1] Finding: Furthermore, GenAI tools increasingly gaining prominence in educational settings.
+- Locator: `R010-design-and-evaluation-of-a-generative-artificial-intelligence-based-tool-for-stu.pdf` · página **1**
+
+<a id="finding-a-prototype-based-on-iyengar-and-botchu"></a>
+### [PDF p.1] Finding: A prototype based on Iyengar, and Botchu 2023).
+- Locator: `R010-design-and-evaluation-of-a-generative-artificial-intelligence-based-tool-for-stu.pdf` · página **1**
+
+<a id="finding-the-prototype-will-provide-mobile-phone"></a>
+### [PDF p.1] Finding: The prototype will provide mobile phone integration to (Grant 2017).
+- Locator: `R010-design-and-evaluation-of-a-generative-artificial-intelligence-based-tool-for-stu.pdf` · página **1**
+
+
+## Relevance hooks
+### Theme relevance: software engineering and accessibility
+### Theme relevance: cognitive accessibility and neurodiversity
+### Theme relevance: evaluation metrics and WCAG
+
+## Sections (detected in PDF)
+
+_(no numbered sections auto-detected)_
+
+
+## Page chunks (texto por página del PDF)
+
+_Cada heading es un nodo Graphify. El label incluye la página para volver al PDF sin releer todo._
+
+<a id="pdf-p1"></a>
+### [PDF p.1] The Thirty-Ninth AAAI Conference on Artificial Intelligence (AAAI-25)
+- Locator: `R010-design-and-evaluation-of-a-generative-artificial-intelligence-based-tool-for-stu.pdf` · página **1** / 2
+
+The Thirty-Ninth AAAI Conference on Artificial Intelligence (AAAI-25)
+
+
+
+
+     Design and Evaluation of a Generative Artificial Intelligence-Based Tool for
+                   Students with Learning Disabilities in Kenya
+                                                        G. Mercy Wairimu
+                                                     University of Eastern Finland
+                                                          mgachoka@uef.fi
+
+
+
+                           Abstract                                       2021). Unfortunately, Kenyan educational institutions pro-
+                                                                          vide limited accessibility and support for students with LDs,
+  Students with learning disabilities (LDs) face significant              resulting in significant barriers to their academic achieve-
+  challenges in key academic areas such as reading
+                                                                          ment and overall well-being. This lack of support can be at-
+  comprehension, cognitive organization, self-expression,
+  mathematics, and handwriting. These difficulties increase               tributed to the scarcity of specialized tools, technologies and
+  their susceptibility to discrimination and mental health                customized curricula, together with a limited understand-
+  related issues. Although existing studies have primarily                ing of the unique learning needs of these students (Nel and
+  focused on AI’s diagnostic capabilities, there is limited               Grosser 2016).
+  research examining how Generative AI can be utilized to                    Emerging research suggests that Generative AI (GenAI)
+  produce measurable learning outcomes and enhance learning               could support personalized learning and reduce teacher
+  experiences for students with LDs. Moreover, GenAI is                   workload (Dwivedi et al. 2021). Furthermore, GenAI tools
+  increasingly gaining prominence in educational settings.                can help individuals with LDs such as dyslexia review their
+  Therefore, the relationship between GenAI tools, LDs, and               coursework for spelling and grammatical errors, providing
+  instructional methods needs to be further examined. This
+  research aims to develop a comprehensive framework for
+                                                                          prompt feedback — an especially challenging task for stu-
+  helping design and implement tools specifically tailored to             dents with dyslexia due to their reading difficulties (Botchu,
+  the unique needs of students with LDs. A prototype based on             Iyengar, and Botchu 2023). Similarly, GenAI tools, such
+  this framework will be implemented in selected educational              as Journey and DALL-E, may be helpful for students with
+  settings to assess its effectiveness in improving learning              ADHD and dyspraxia who might find it difficult to di-
+  outcomes and providing targeted support to students with                gest detail-oriented materials without accompanying images
+  LDs. The prototype will provide mobile phone integration to             (Grant 2017). However, empirical studies on the design,
+  ensure scalability and enhance educational accessibility. The           application, and impact of GenAI tools for students with
+  expected findings will contribute to the promotion of more              LDs remain limited. In addition, GenAI is outpacing exist-
+  inclusive learning environments for students with LDs.                  ing frameworks and institutional policies. UNESCO’s latest
+                                                                          guidelines for incorporating GenAI in education emphasize
+                       Introduction                                       the urgent need for empirical studies to guide its efficient ap-
+                                                                          plication in various learning environments, including those
+Although there are no specific statistical reports on LDs,                accommodating disabilities (UNESCO 2023). If alignment
+USAID estimates that approximately 8.9M of the Kenyan                     between learning needs, tools, and pedagogical practices is
+population has disability (USAID 2023). LD is a neurode-                  lacking, it becomes difficult to develop targeted and effective
+velopmental disorder that impairs cognitive processes re-                 solutions (UK Department of Education 2024).
+lated to focus, communication, information retention, and
+processing speed (American Psychiatric Association 2013).                                   Research Objectives
+Common conditions under the umbrella of LDs include
+dyslexia, dyscalculia, and dysgraphia, all of which hinder                My research aims to address these outstanding challenges
+learning. Students with LDs often struggle with reading                   through the design and evaluation of a framework for devel-
+comprehension, writing, spelling, and mathematical reason-                oping a GenAI-based prototype, which will be implemented
+ing and are often expected to meet the same academic stan-                in selected educational settings to support LDs. To achieve
+dards as their peers without accommodations. LD students                  this aim, I have outlined three objectives:
+are among the most marginalized in educational settings and               1. Identify and analyze gaps in support and accessibility for
+often face mental health challenges such as anxiety, low self-               students with LDs in Kenyan universities by reviewing
+esteem, and negative self-image, which are compounded by                     current practices, policies, and available resources.
+poor academic performance (Valencia, Valencia, and Relita
+                                                                          2. Develop a theoretical framework for the design and im-
+Copyright © 2025, Association for the Advancement of Artificial              plementation of GenAI-based tools aimed at fostering in-
+Intelligence (www.aaai.org). All rights reserved.                            clusive education for students with LDs.
+
+
+                                                                  29303
+
+<a id="pdf-p2"></a>
+### [PDF p.2] 3. Design and validate a GenAI prototype to support stu- evaluation will assess the impact of the tool on learning out-
+- Locator: `R010-design-and-evaluation-of-a-generative-artificial-intelligence-based-tool-for-stu.pdf` · página **2** / 2
+
+3. Design and validate a GenAI prototype to support stu-                  evaluation will assess the impact of the tool on learning out-
+   dents with learning disabilities (LDs) based on the theo-              comes and the overall educational experience for students
+   retical framework, assessing its impact on learning out-               with LDs, providing valuable data for further enhancements.
+   comes and its effectiveness in providing support.                      Through these steps, the project aims to create a robust
+                                                                          and adaptable tool that facilitates inclusive learning environ-
+    Current Progress: Identifying Gaps and                                ments.
+     Developing a Theoretical Framework
+                                                                                             Acknowledgments
+In the first phase of this research work, I conducted a sys-
+                                                                          I acknowledge the University of Eastern Finland for provid-
+tematic review to identify research gaps and the current state
+                                                                          ing a scholarship to support this doctoral research.
+of research on GenAI for supporting LDs in educational
+settings. From the insights gained, I have proposed theo-
+ritical framework that could be used to guide the develop-
+                                                                                                  References
+ment of inclusive GenAI based tools for students with LDs.                American Psychiatric Association. 2013. What Is Specific
+The proposed framework includes several key components.                   Learning Disorder? https://www.psychiatry.org/. Retrieved
+First, it emphasizes the importance of early identification of            on October 1, 2024.
+LDs, highlighting the potential of AI-powered tools to an-                Botchu, B.; Iyengar, K. P.; and Botchu, R. 2023. Can Chat-
+alyze learning patterns and behaviors for timely interven-                GPT empower people with dyslexia? Disability and Reha-
+tions (Zingoni, Taborri, and Calabrò 2024). Second, it in-               bilitation: Assistive Technology, 1–2.
+tegrates established educational theories, such as construc-              Chuang, S. 2021. The applications of constructivist learning
+tivism and experiential learning, to guide the development                theory and social learning theory on adult continuous devel-
+of AI-enabled educational systems that promote differenti-                opment. Performance Improvement, 60(3): 6–14.
+ated instruction, engagement, and collaboration. Third, the               Dwivedi, Y. K.; Hughes, L.; Ismagilova, E.; Aarts, G.;
+framework recognizes the vital role of teacher support and                Coombs, C.; Crick, T.; Duan, Y.; Dwivedi, R.; Edwards, J.;
+professional development, equipping educators to design ef-               Eirug, A.; et al. 2021. Artificial Intelligence (AI): Multi-
+fective AI-supported learning experiences while maintain-                 disciplinary perspectives on emerging challenges, opportu-
+ing human connection in the classroom (Felix 2020). A                     nities, and agenda for research, practice and policy. Interna-
+learner-centered approach is advocated, shifting the focus                tional journal of information management, 57: 101994.
+from traditional teaching methods to empower students as                  Felix, C. V. 2020. The role of the teacher and AI in educa-
+active participants in their learning journey (Chuang 2021).              tion. In International perspectives on the role of technology
+In addition, the framework addresses the need for innovative              in humanizing higher education, 33–48. Emerald Publishing
+adaptive assessment and evaluation methods, in addition to                Limited.
+promoting student awareness of AI technologies (Dwivedi                   Grant, D. 2017. That’s the Way I Think: Dyslexia, dyspraxia,
+et al. 2021). Lastly, it underscores the importance of insti-             ADHD and dyscalculia explained. Taylor & Francis.
+tutional and governmental policies to ensure the ethical and
+equitable integration of AI in education, aligned with global             Johannesson, P.; Perjons, E.; Johannesson, P.; and Perjons,
+educational goals, and addressing concerns such as data pri-              E. 2021. Research strategies and methods. An introduction
+vacy and algorithmic bias (UNESCO 2023). Through this                     to design science, 41–75.
+comprehensive framework, the research aims to create a                    Nel, M.; and Grosser, M. M. 2016. An appreciation of
+structured pathway to develop and implement GenAI-based                   learning disabilities in the South African context. Learning
+tools that improve educational accessibility and foster inclu-            Disabilities-A Contemporary Journal, 14(1).
+sive learning environments for students with LDs.                         UK Department of Education. 2024. Generative AI in
+                                                                          Education: Educator and Expert Views. https://assets.
+ Future Work: Developing a GenAI Prototype                                publishing.service.gov.uk/. Retrieved on October 1, 2024.
+The second phase of this study includes key steps to develop              UNESCO. 2023. Guidance for Generative AI in Education
+a prototype of a Generative AI tool for students with LDs.                and Research. Retrieved on October 1, 2024.
+The initial design of the tool will be guided by insights gath-           USAID. 2023.                Disability Inclusive Develop-
+ered from the framework supporting inclusive learning. This               ment.         https://www.usaid.gov/sites/default/files/2023-
+approach ensures that the tool meets the unique needs of                  12/Disability-Fact-Sheet-20231030.pdf.           Retrieved on
+students with LDs. To develop the prototype, we will adopt                October 1, 2024.
+the Design Science Research (DSR) methodology, which fo-                  Valencia, J.; Valencia, T.; and Relita, Z. 2021. Relational and
+cuses on creating and evaluating innovative artifacts to ad-              Psychological Factor in Student with Learning Disability: A
+dress specific problems within their context (Johannesson                 Systematic Literature Review. In Proceedings of the 5th In-
+et al. 2021). In such a way, user feedback will be actively               ternational Conference on Learning Innovation and Quality
+sought during the development process to refine the tool’s                Education, 1–5.
+features and functionalities, promoting an iterative approach             Zingoni, A.; Taborri, J.; and Calabrò, G. 2024. A ma-
+that enhances usability and effectiveness. Following devel-               chine learning-based classification model to support uni-
+opment, the prototype will undergo evaluation in selected                 versity students with dyslexia with personalized tools and
+educational institutions that support students with LDs. This             strategies. Scientific Reports, 14(1): 273.
+
+
+                                                                  29304

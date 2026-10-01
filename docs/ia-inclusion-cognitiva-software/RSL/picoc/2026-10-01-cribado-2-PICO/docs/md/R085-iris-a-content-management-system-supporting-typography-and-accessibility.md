@@ -1,0 +1,264 @@
+# Iris: A Content Management System Supporting Typography and
+
+> Fuente PDF: `R085-iris-a-content-management-system-supporting-typography-and-accessibility.pdf` · técnica **locator index** (página + ancla) + chunks Graphify
+
+## Metadata
+- Stem: `R085-iris-a-content-management-system-supporting-typography-and-accessibility`
+- PDF: `R085-iris-a-content-management-system-supporting-typography-and-accessibility.pdf`
+- DOI: `10.1145/3770761.3777217`
+- Pages: `2`
+- Structured_at: `2026-10-01T07:27:31+00:00`
+- Technique: `pdf-page-locators + heading-chunks`
+
+## Locator index (qué hay y en qué página del PDF)
+
+| Kind | Label | PDF page | MD anchor |
+|------|-------|----------|-----------|
+| abstract | Abstract / blurb | 1 | `#abstract` |
+| section | 3 Implementation                                                               4     Evaluation | 2 | `#p2-3-implementation-4-evaluation` |
+| concept | R085 | ? | `#concept-r085` |
+| concept | iris | ? | `#concept-iris` |
+| concept | content | ? | `#concept-content` |
+| concept | management | ? | `#concept-management` |
+| concept | system | ? | `#concept-system` |
+| concept | supporting | ? | `#concept-supporting` |
+| concept | typography | ? | `#concept-typography` |
+| concept | accessibility | 1 | `#concept-accessibility` |
+| finding | ACM Reference Format: Higher education continues to face challenges in meeting students’ W… | 1 | `#finding-acm-reference-format-higher-education-c` |
+| finding | Iris: A Content Management System Supporting Typography and Accessibility. | 1 | `#finding-iris-a-content-management-system-suppor` |
+| finding | In Proceedings of the 57th ACM accessibility needs for course content, including assignmen… | 1 | `#finding-in-proceedings-of-the-57th-acm-accessibi` |
+| finding | Furthermore, the complexity of ac- February 18–21, 2026, St. | 1 | `#finding-furthermore-the-complexity-of-ac-febru` |
+| finding | cessibility concepts raises significant barriers to making necessary https://doi.org/10.11… | 1 | `#finding-cessibility-concepts-raises-significant` |
+| finding | This work introduces Iris, a course content manage- ment system that focuses on presentati… | 1 | `#finding-this-work-introduces-iris-a-course-cont` |
+| page | p.1: Iris: A Content Management System Supporting Typography and | 1 | `#pdf-p1` |
+| page | p.2: SIGCSE TS 2026, February 18–21, 2026, St. Louis, MO, USA Wong Zhao and Maryam Majedi | 2 | `#pdf-p2` |
+
+## Abstract
+<a id="abstract"></a>
+
+ACM Reference Format: Higher education continues to face challenges in meeting students’ Wong Zhao and Maryam Majedi. 2026. Iris: A Content Management System Supporting Typography and Accessibility. In Proceedings of the 57th ACM accessibility needs for course content, including assignment instruc- Technical Symposium on Computer Science Education V.2 (SIGCSE TS 2026), tions and reference materials. Furthermore, the complexity of ac- February 18–21, 2026, St. Louis, MO, USA. ACM, New York, NY, USA, 2 pages. cessibility concepts raises significant barriers to making necessary https://doi.org/10.1145/3770761.3777217 improvements. This work introduces Iris, a course content manage- ment system that focuses on presentation, interactivity, and acces- sibility improvements, with minimal effort required from authors. 1 Introduction Iris provides accessibility, usability, and customization features, As educators and institutions push toward including students of including font and spacing settings, reading rulers, and heading- diverse backgrounds in computer science courses, one important based navigation, to readers throughout the platform. Additionally, consideration is the accessibility of course materials. Students with using a large language model (LLM), Iris provides language-based disabilities in higher education continue to report difficulties access- accommodation through three strategies: hinting, simplifying, and ing course content. Furthermore, instructors may not be equipped explaining. This feature uses a simple one-click interface to uphold to address these issues due to various factors, including a lack of interactions with course staff. In line with universal design (UD) institutional training and support [1]. principles, Iris’s features are designed for all students, but especially One major source of accessibility recommendations is the Web target students with disabilities and, for the LLM-based features, Content Accessibility Guidelines (WCAG) published by the World nonnative English speakers and students unfamiliar with the topic. Wide Web Consortium (W3C). The WCAG provides recommenda- Iris uses a custom document format and editor to enable its various tions on topics including color contrast, text alternatives to images features, prevent semantic HTML errors, and leave flexibility for and videos, and keyboard-friendly navigation. Crucially, the au- future enhancements. thors note that WCAG conformance can impact users’ experience Iris can d
+
+## Keywords
+
+- _(none auto-detected)_
+
+## Concept index (graph hooks + página)
+
+<a id="concept-r085"></a>
+### [PDF p.?] Concept: R085
+- Locator: `R085-iris-a-content-management-system-supporting-typography-and-accessibility.pdf` · página **?**
+
+<a id="concept-iris"></a>
+### [PDF p.?] Concept: iris
+- Locator: `R085-iris-a-content-management-system-supporting-typography-and-accessibility.pdf` · página **?**
+
+<a id="concept-content"></a>
+### [PDF p.?] Concept: content
+- Locator: `R085-iris-a-content-management-system-supporting-typography-and-accessibility.pdf` · página **?**
+
+<a id="concept-management"></a>
+### [PDF p.?] Concept: management
+- Locator: `R085-iris-a-content-management-system-supporting-typography-and-accessibility.pdf` · página **?**
+
+<a id="concept-system"></a>
+### [PDF p.?] Concept: system
+- Locator: `R085-iris-a-content-management-system-supporting-typography-and-accessibility.pdf` · página **?**
+
+<a id="concept-supporting"></a>
+### [PDF p.?] Concept: supporting
+- Locator: `R085-iris-a-content-management-system-supporting-typography-and-accessibility.pdf` · página **?**
+
+<a id="concept-typography"></a>
+### [PDF p.?] Concept: typography
+- Locator: `R085-iris-a-content-management-system-supporting-typography-and-accessibility.pdf` · página **?**
+
+<a id="concept-accessibility"></a>
+### [PDF p.1] Concept: accessibility
+- Locator: `R085-iris-a-content-management-system-supporting-typography-and-accessibility.pdf` · página **1**
+
+
+## Findings index (graph hooks + página)
+
+<a id="finding-acm-reference-format-higher-education-c"></a>
+### [PDF p.1] Finding: ACM Reference Format: Higher education continues to face challenges in meeting students’ Wong Zhao and Maryam Majedi.
+- Locator: `R085-iris-a-content-management-system-supporting-typography-and-accessibility.pdf` · página **1**
+
+<a id="finding-iris-a-content-management-system-suppor"></a>
+### [PDF p.1] Finding: Iris: A Content Management System Supporting Typography and Accessibility.
+- Locator: `R085-iris-a-content-management-system-supporting-typography-and-accessibility.pdf` · página **1**
+
+<a id="finding-in-proceedings-of-the-57th-acm-accessibi"></a>
+### [PDF p.1] Finding: In Proceedings of the 57th ACM accessibility needs for course content, including assignment instruc- Technical Symposium on Computer Science Education V.2 (SIGCSE TS 2026), tions and reference materials.
+- Locator: `R085-iris-a-content-management-system-supporting-typography-and-accessibility.pdf` · página **1**
+
+<a id="finding-furthermore-the-complexity-of-ac-febru"></a>
+### [PDF p.1] Finding: Furthermore, the complexity of ac- February 18–21, 2026, St.
+- Locator: `R085-iris-a-content-management-system-supporting-typography-and-accessibility.pdf` · página **1**
+
+<a id="finding-cessibility-concepts-raises-significant"></a>
+### [PDF p.1] Finding: cessibility concepts raises significant barriers to making necessary https://doi.org/10.1145/3770761.3777217 improvements.
+- Locator: `R085-iris-a-content-management-system-supporting-typography-and-accessibility.pdf` · página **1**
+
+<a id="finding-this-work-introduces-iris-a-course-cont"></a>
+### [PDF p.1] Finding: This work introduces Iris, a course content manage- ment system that focuses on presentation, interactivity, and acces- sibility improvements, with minimal effort required from authors.
+- Locator: `R085-iris-a-content-management-system-supporting-typography-and-accessibility.pdf` · página **1**
+
+
+## Relevance hooks
+### Theme relevance: software engineering and accessibility
+### Theme relevance: cognitive accessibility and neurodiversity
+### Theme relevance: evaluation metrics and WCAG
+
+## Sections (detected in PDF)
+
+<a id="p2-3-implementation-4-evaluation"></a>
+### [PDF p.2] Section: 3 Implementation                                                               4     Evaluation
+- Locator: `R085-iris-a-content-management-system-supporting-typography-and-accessibility.pdf` · página **2** · ancla `#p2-3-implementation-4-evaluation`
+
+
+## Page chunks (texto por página del PDF)
+
+_Cada heading es un nodo Graphify. El label incluye la página para volver al PDF sin releer todo._
+
+<a id="pdf-p1"></a>
+### [PDF p.1] Iris: A Content Management System Supporting Typography and
+- Locator: `R085-iris-a-content-management-system-supporting-typography-and-accessibility.pdf` · página **1** / 2
+
+Iris: A Content Management System Supporting Typography and
+                        Accessibility
+                                   Wong Zhao                                                                         Maryam Majedi
+                         wongzhao@ucsb.edu                                                                         majedi@ucsb.edu
+                 University of California, Santa Barbara                                                 University of California, Santa Barbara
+                    Santa Barbara, California, USA                                                          Santa Barbara, California, USA
+Abstract                                                                                       ACM Reference Format:
+Higher education continues to face challenges in meeting students’                             Wong Zhao and Maryam Majedi. 2026. Iris: A Content Management System
+                                                                                               Supporting Typography and Accessibility. In Proceedings of the 57th ACM
+accessibility needs for course content, including assignment instruc-
+                                                                                               Technical Symposium on Computer Science Education V.2 (SIGCSE TS 2026),
+tions and reference materials. Furthermore, the complexity of ac-                              February 18–21, 2026, St. Louis, MO, USA. ACM, New York, NY, USA, 2 pages.
+cessibility concepts raises significant barriers to making necessary                           https://doi.org/10.1145/3770761.3777217
+improvements. This work introduces Iris, a course content manage-
+ment system that focuses on presentation, interactivity, and acces-
+sibility improvements, with minimal effort required from authors.                              1    Introduction
+Iris provides accessibility, usability, and customization features,                            As educators and institutions push toward including students of
+including font and spacing settings, reading rulers, and heading-                              diverse backgrounds in computer science courses, one important
+based navigation, to readers throughout the platform. Additionally,                            consideration is the accessibility of course materials. Students with
+using a large language model (LLM), Iris provides language-based                               disabilities in higher education continue to report difficulties access-
+accommodation through three strategies: hinting, simplifying, and                              ing course content. Furthermore, instructors may not be equipped
+explaining. This feature uses a simple one-click interface to uphold                           to address these issues due to various factors, including a lack of
+interactions with course staff. In line with universal design (UD)                             institutional training and support [1].
+principles, Iris’s features are designed for all students, but especially                         One major source of accessibility recommendations is the Web
+target students with disabilities and, for the LLM-based features,                             Content Accessibility Guidelines (WCAG) published by the World
+nonnative English speakers and students unfamiliar with the topic.                             Wide Web Consortium (W3C). The WCAG provides recommenda-
+Iris uses a custom document format and editor to enable its various                            tions on topics including color contrast, text alternatives to images
+features, prevent semantic HTML errors, and leave flexibility for                              and videos, and keyboard-friendly navigation. Crucially, the au-
+future enhancements.                                                                           thors note that WCAG conformance can impact users’ experience
+   Iris can distribute text-based content for any course, but was                              regardless of disability [9]. A related consideration is typography,
+initially evaluated in introductory computer science courses. We                               the appearance of written text. Typographical factors such as font
+deployed the platform to display assignment instructions and con-                              style and size, line length and spacing, and choice of emphasis can
+ducted surveys in three quarters to evaluate students’ experience.                             impact readers’ attention and the document’s effectiveness [2].
+The most recent survey, conducted in Fall 2025, compares Iris with                                At UC Santa Barbara, assignment instructions and other course
+the previous system used in the course. The results reveal a signifi-                          materials are distributed using a variety of methods, including a
+cant preference for Iris. However, students with disabilities were                             learning management system (LMS) such as Canvas, a website cre-
+underrepresented in the sample. In the future, we plan to conduct                              ated by the instructor, PDF files, etc. All of these media present their
+targeted research to address this issue.                                                       own accessibility and typographical challenges. With instructor-
+                                                                                               managed websites and PDF documents in particular, the burden of
+CCS Concepts                                                                                   accessibility and typography falls primarily on the instructor.
+• Human-centered computing → Accessibility systems and
+tools; • Applied computing → Education; • Social and profes-                                   2    Contributions
+sional topics → People with disabilities.                                                      With Iris, we propose a content management system that pro-
+                                                                                               vides accessibility, usability, and customization features to readers
+Keywords                                                                                       throughout the platform without any effort from the author except
+Disability, Accessibility, Universal Design, Typography, Dyslexia,                             for creating the document. Iris then allows authors to easily address
+Computer Science Education, Large Language Models                                              remaining accessibility and typography issues, such as alternative
+                                                                                               text for images and improper punctuation. By lowering the barrier
+                                                                                               to entry for many accessibility and usability features, we hope to
+                                                                                               increase the reader satisfaction and inclusivity of the course con-
+                                                                                               tent. Additionally, to follow universal design (UD) principles on
+This work is licensed under a Creative Commons Attribution 4.0 International License.          equitable use [4], Iris’s features are designed to be useful to all users
+SIGCSE TS 2026, St. Louis, MO, USA                                                             regardless of ability level. Iris has been used previously in introduc-
+© 2026 Copyright held by the owner/author(s).
+ACM ISBN 979-8-4007-2255-4/2026/02                                                             tory computer science courses, but it can display text-based content
+https://doi.org/10.1145/3770761.3777217                                                        for any course.
+
+
+
+
+                                                                                        1607
+
+<a id="pdf-p2"></a>
+### [PDF p.2] SIGCSE TS 2026, February 18–21, 2026, St. Louis, MO, USA Wong Zhao and Maryam Majedi
+- Locator: `R085-iris-a-content-management-system-supporting-typography-and-accessibility.pdf` · página **2** / 2
+
+SIGCSE TS 2026, February 18–21, 2026, St. Louis, MO, USA                                                                               Wong Zhao and Maryam Majedi
+
+
+3    Implementation                                                               4     Evaluation
+Iris’s web frontend includes various accessibility, usability, and                Iris was deployed in two introductory computer science courses in
+customization features available across the platform. Its stylesheets             several quarters to display programming assignment instructions.
+and default settings follow typographic conventions, including                    During this time, we conducted three surveys to measure Iris’s
+appropriate font, spacing, and line length [2].                                   efficacy.
+   Readers can then customize Iris’s style to their preferences and                  In the first study, students were asked to choose between Iris
+accessibility needs. Iris provides font options, including font size              and the previous system used for that course for one assignment.
+adjustment and typefaces that may benefit readers with dyslexia                   At the end of the assignment, we administered a short preliminary
+or low vision, including Comic Sans, OpenDyslexic, and Atkin-                     survey to gather students’ opinions on the platform.
+son Hyperlegible. While research on the benefit of typefaces like                    In the second study, Iris was used for the entire term. At the
+OpenDyslexic is mixed [7], we provide several options so readers                  end of the term, we administered a preliminary survey to measure
+can select a font according to their preference. Character, word,                 Iris’s user experience. The survey first included the short version
+line, and paragraph spacing options are also provided to increase                 of the User Experience Questionnaire (UEQ-S) [8] to evaluate Iris
+comfort while reading, particularly for students with dyslexia [3].               on a standard scale. It then included demographic questions asking
+Finally, light/dark theme options and color settings allow readers                respondents whether English was their first language, whether
+to further personalize their experience.                                          they identified with any disability, and whether they typically use
+   Iris also includes accessibility features extending beyond style               any assistive technologies. Finally, the survey assessed students’
+changes. Reading rulers, screen overlays that follow the cursor to                impressions of Iris in detail using several Likert-scale questions.
+help readers keep their place in the text, are provided to improve                   The third study compares Iris to the previous system used in
+comfort for some users with dyslexia [6]. Students can also per-                  the course. The class was given four assignments on Iris and three
+form large language model (LLM) queries on the selected text or                   on the previous system before the survey was administered. The
+surrounding context in order to find the meaning of a phrase, sim-                survey contained two sets of UEQ-S and Likert-scale questions, one
+plify a complex passage, or provide an appropriate hint to guide                  for each platform, and also included the demographic questions
+them in the right direction on an assignment. This feature tar-                   from the previous survey.
+gets students who are new to the topic or whose first language
+is not English. The LLM features use a simple one-click interface                 5     Results and Discussion
+with predefined prompts, focusing on responding to basic queries                  The results of the two initial surveys indicated generally positive
+while leaving more complex questions to course staff. This upholds                reception of Iris, but also highlighted room for improvement. These
+student–instructor interaction, one of the core values of our system.             insights were used to improve Iris and the study procedure for the
+Additionally, for security, students cannot send arbitrary prompts                third, main study. The results of the main survey show a signifi-
+to the LLM as the prompt text is generated by Iris’s server.                      cant preference for Iris. However, disabled students are underrep-
+   Finally, Iris implements various convenience features and rich                 resented in the sample compared to the general population. We
+content types to allow authors to focus on content rather than its                plan to conduct targeted research (e.g., by coordinating with our
+presentation or internal implementation:                                          Disabled Students Program) to address this issue.
+     • Anchor links to quickly jump to a heading in the document
+     • Click-to-expand image previews                                             References
+     • Support for rich content including interactive questions,                   [1] Sheryl Burgstahler. 2021. What Higher Education Learned About the Accessibility
+                                                                                       of Online Opportunities During a Pandemic. Journal of Higher Education Theory
+       math expressions, TikZ drawings, sidenotes, block quotes,                       and Practice 21, 7 (Aug. 2021). doi:10.33423/jhetp.v21i7.4493
+       and stylized information boxes                                              [2] Matthew Butterick. 2010. Practical Typography. https://practicaltypography.com/
+                                                                                   [3] Tianyuan Cai, Aleena Gertrudes Niklaus, Bernard Kerr, Michael Kraley, and
+   To facilitate these features, Iris uses ProseMirror [5] as its docu-                Zoya Bylinskii. 2024. COR Themes for Readability from Iterative Feedback. In
+ment editor and adopts its model of storing documents. This model                      Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems
+                                                                                       (CHI ’24). Association for Computing Machinery, New York, NY, USA, 1–23.
+utilizes a tree of nodes (e.g., paragraph, block quote, figure, caption)               doi:10.1145/3613904.3642108
+represented by JSON objects that, where applicable, can have marks                 [4] Centre for Excellence in Universal Design. 2025. The 7 Principles. https://
+                                                                                       universaldesign.ie/about-universal-design/the-7-principles
+(e.g., bold, italic) applied to them. The JSON representation ensures              [5] Marijn Haverbeke and Adrian Heine. 2025. Prosemirror. https://prosemirror.net/
+documents can be processed (e.g., compiling LaTeX fragments to                     [6] Aleena Gertrudes Niklaus, Tianyuan Cai, Zoya Bylinskii, and Shaun Wallace.
+HTML code) and checked (e.g., for typographical errors) with rela-                     2023. Digital Reading Rulers: Evaluating Inclusively Designed Rulers for Readers
+                                                                                       With Dyslexia and Without. In Proceedings of the 2023 CHI Conference on Human
+tive ease. The rigid definition of the document model also allows                      Factors in Computing Systems (CHI ’23). Association for Computing Machinery,
+the frontend to guarantee semantically correct HTML. While rigid,                      New York, NY, USA, 1–17. doi:10.1145/3544548.3581367
+the document model can be extended to add additional content                       [7] Luz Rello and Ricardo Baeza-Yates. 2016. The Effect of Font Type on Screen
+                                                                                       Readability by People with Dyslexia. ACM Trans. Access. Comput. 8, 4 (May 2016),
+types, and its rendering on the frontend can be improved without                       15:1–15:33. doi:10.1145/2897736
+any action by the author.                                                          [8] Martin Schrepp, Andreas Hinderks, and Jörg Thomaschewski. 2017. Design and
+                                                                                       Evaluation of a Short Version of the User Experience Questionnaire (UEQ-S).
+   As WCAG conformance is a major indicator of a site’s accessi-                       International Journal of Interactive Multimedia and Artificial Intelligence 4 (Jan.
+bility, we regularly use WebAIM’s WAVE utility [10] and manual                         2017), 103. doi:10.9781/ijimai.2017.09.001
+inspection to evaluate Iris’s adherence to the WCAG. In combina-                   [9] W3C. 2024. Web Content Accessibility Guidelines 2.2. https://www.w3.org/TR/
+                                                                                       WCAG22/
+tion with Iris’s frontend features, we believe this ensures a better              [10] WebAIM. 2025. WAVE Web Accessibility Evaluation Tools. https://wave.webaim.
+reading experience for students of all levels of ability.                              org/
+
+
+
+
+                                                                           1608

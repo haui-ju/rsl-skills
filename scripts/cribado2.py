@@ -8,6 +8,7 @@ Uso:
   cribado2.py init     docs/<slug>             # carpetas + documentos.json/md (orden del CSV de SI)
   cribado2.py download docs/<slug>             # descarga OA → docs/pdf/<Id>-<titulo-slug>.pdf
   cribado2.py align    docs/<slug>             # mueve docs/pdf-draft/ → docs/pdf/ por título
+  cribado2.py documentos docs/<slug>           # regenera documentos.md desde documentos.json
   cribado2.py prepare  docs/<slug>             # PDF → MD con localizadores de página (exit 2 si queda needs_agent)
   cribado2.py stamp    docs/<slug> <pdf>       # marca como listo el MD que escribió el agente para ese PDF
   cribado2.py build    docs/<slug>             # grafo Graphify del corpus + controles de calidad
@@ -39,6 +40,12 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import picoc_versions as pv  # noqa: E402
+from cribado2_config import (  # noqa: E402
+    empty_retrieval_message,
+    filter_si_for_retrieval,
+    normalize_use,
+    read_cribado2_use,
+)
 from rsl_out import Fail, error, ok, run  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -162,6 +169,27 @@ def load_si(csv_path: Path) -> list[dict]:
     return [r for r in rows if (r.get(COL_OK) or "").strip().upper() == "SI"]
 
 
+def load_si_for_retrieval(theme: Path, folder: Path, csv_path: Path) -> tuple[list[dict], list[dict], str]:
+    si_all = load_si(csv_path)
+    if not si_all:
+        raise Fail(f"{csv_path.name} no tiene registros SI", "aplica el cribado 1 antes del cribado 2")
+    use = read_cribado2_use(theme)
+    dmap = duda_from_shadow(folder)
+    si = filter_si_for_retrieval(si_all, dmap, use)
+    if not si:
+        raise Fail(
+            f"cribado_2.use={use} no deja registros para retrieval",
+            f"{empty_retrieval_message(use, len(si_all))}; cambia cribado_2.use en config.yml",
+        )
+    return si, si_all, use
+
+
+def set_retrieval_meta(cat: dict, use: str, si_total: int, si_retrieval: int) -> None:
+    cat["cribado_2_use"] = use
+    cat["si_total"] = si_total
+    cat["si_retrieval"] = si_retrieval
+
+
 def sha256(path: Path) -> str:
     h = hashlib.sha256()
     with path.open("rb") as f:
@@ -269,8 +297,10 @@ def why_missing(doi: str, tries: list[dict], meta: dict) -> tuple[str, str]:
     blocked = [t for t in oa if t["resultado"] in {"HTTP 401", "HTTP 403", "HTTP 429"}]
     slow = [t for t in oa if "Timeout" in t["resultado"] or "URLError" in t["resultado"]]
     html_only = [t for t in oa if t["resultado"].startswith("no es PDF")]
-    pdfs = [t for t in oa if t["fuente"] in PDF_SOURCES]
-    link = (pdfs or oa or [{"url": f"https://doi.org/{doi}"}])[0]["url"]
+    non_doi = [t for t in oa if "doi.org" not in t["url"]]
+    pool = non_doi or oa
+    pdfs = [t for t in pool if t["fuente"] in PDF_SOURCES]
+    link = (pdfs or pool or [{"url": f"https://doi.org/{doi}"}])[0]["url"]
     if not oa:
         if meta.get("is_oa"):
             return ("Figura como acceso abierto, pero ninguna base (Unpaywall, OpenAlex, Semantic Scholar) da un enlace "
@@ -357,6 +387,7 @@ def registro_base(orden: int, row: dict, dmap: dict[str, bool]) -> dict:
         "pdf": None,
         "fuente": None,
         "url": None,
+        "enlace_manual": None,
         "sha256": None,
         "bytes": None,
         "intentos": [],
@@ -402,12 +433,47 @@ def download_one(reg: dict, pdf_dir: Path, email: str) -> None:
             reg["intentos"] = tries
             return
         tries.append({"fuente": src, "url": url, "resultado": info})
-    motivo, _link = why_missing(doi, tries, meta)
+    motivo, link = why_missing(doi, tries, meta)
     reg["descargado"] = "no"
     reg["porque"] = md_cell(motivo, PORQUE_MAX)
     reg["pdf"] = None
     reg["fuente"] = None
+    reg["url"] = None
+    reg["enlace_manual"] = link
     reg["intentos"] = tries
+
+
+def best_download_url(reg: dict) -> str | None:
+    """Mejor URL para abrir o descargar el PDF a mano (o la del PDF ya bajado)."""
+    url = reg.get("url")
+    if url:
+        return url
+    link = reg.get("enlace_manual")
+    if link:
+        return link
+    doi = reg.get("doi") or ""
+    tries = reg.get("intentos") or []
+    oa = [t for t in tries if t.get("fuente") != "doi-landing"]
+    if not oa and not doi:
+        return None
+    non_doi = [t for t in oa if "doi.org" not in (t.get("url") or "")]
+    pool = non_doi or oa
+    pdfs = [t for t in pool if t.get("fuente") in PDF_SOURCES]
+    return (pdfs or pool or [{"url": f"https://doi.org/{doi}"}])[0]["url"]
+
+
+def enlaces_markdown(reg: dict) -> str:
+    parts: list[str] = []
+    doi = reg.get("doi")
+    if doi:
+        parts.append(f"[DOI](https://doi.org/{doi})")
+    dl = best_download_url(reg)
+    if dl:
+        doi_url = f"https://doi.org/{doi}" if doi else ""
+        label = "PDF" if reg.get("descargado") == "si" else "descargar"
+        if dl != doi_url or reg.get("descargado") == "si":
+            parts.append(f"[{label}]({dl})")
+    return " · ".join(parts) if parts else "—"
 
 
 def md_cell(s: str, n: int = 90) -> str:
@@ -435,13 +501,12 @@ def write_documentos_md(corpus: Path, cat: dict) -> Path:
         "",
         f"Picoc: `{cat['picoc']}` · CSV: `{cat['csv_cribado_1']}` · Marco: **{cat.get('marco', '—')}**",
         "",
-        "| # | id | titulo | doi | descargado | porque |",
+        "| # | id | titulo | enlaces | descargado | porque |",
         "|---:|---|---|---|---|---|",
     ]
     for r in sorted(cat["registros"], key=lambda x: x["orden"]):
-        doi = r["doi"] or "—"
         lines.append(
-            f"| {r['orden']} | {r['id']} | {md_cell(r['titulo'], 70)} | {doi} | {r['descargado']} | {md_cell(r.get('porque') or '', PORQUE_MAX)} |"
+            f"| {r['orden']} | {r['id']} | {md_cell(r['titulo'], 60)} | {enlaces_markdown(r)} | {r['descargado']} | {md_cell(r.get('porque') or '', PORQUE_MAX)} |"
         )
     lines.append("")
     dest = corpus / DOCUMENTOS_MD
@@ -449,9 +514,16 @@ def write_documentos_md(corpus: Path, cat: dict) -> Path:
     return dest
 
 
-def build_catalog(theme: Path, folder: Path, csv_path: Path, si: list[dict]) -> dict:
+def build_catalog(
+    theme: Path,
+    folder: Path,
+    csv_path: Path,
+    si: list[dict],
+    use: str,
+    si_total: int,
+) -> dict:
     dmap = duda_from_shadow(folder)
-    return {
+    cat = {
         "picoc": rel(folder / "picoc.md"),
         "csv_cribado_1": rel(csv_path),
         "marco": pv.dir_marco(folder) or "MARCO",
@@ -459,6 +531,8 @@ def build_catalog(theme: Path, folder: Path, csv_path: Path, si: list[dict]) -> 
         "generado": dt.datetime.now().isoformat(timespec="seconds"),
         "registros": [registro_base(i, r, dmap) for i, r in enumerate(si, 1)],
     }
+    set_retrieval_meta(cat, use, si_total, len(si))
+    return cat
 
 
 def prisma_counts(cat: dict) -> tuple[int, int]:
@@ -478,10 +552,18 @@ def update_prisma(folder: Path, sought: int, missing: int) -> bool:
     return True
 
 
-def merge_catalog_si(theme: Path, folder: Path, csv_path: Path, si: list[dict], cat: dict | None) -> dict:
+def merge_catalog_si(
+    theme: Path,
+    folder: Path,
+    csv_path: Path,
+    si: list[dict],
+    cat: dict | None,
+    use: str,
+    si_total: int,
+) -> dict:
     dmap = duda_from_shadow(folder)
     if cat is None:
-        return build_catalog(theme, folder, csv_path, si)
+        return build_catalog(theme, folder, csv_path, si, use, si_total)
     by_id = {r["id"]: r for r in cat.get("registros", [])}
     regs: list[dict] = []
     for i, row in enumerate(si, 1):
@@ -500,25 +582,24 @@ def merge_catalog_si(theme: Path, folder: Path, csv_path: Path, si: list[dict], 
     cat["picoc"] = rel(folder / "picoc.md")
     cat["marco"] = pv.dir_marco(folder) or "MARCO"
     cat["carpeta"] = rel(cribado2_dir(theme))
+    set_retrieval_meta(cat, use, si_total, len(si))
     return cat
 
 
 def cmd_init(theme: Path) -> int:
     folder = picoc_folder(theme)
     csv_path = screening_csv(folder)
-    si = load_si(csv_path)
-    if not si:
-        raise Fail(f"{csv_path.name} no tiene registros SI", "aplica el cribado 1 antes del cribado 2")
+    si, si_all, use = load_si_for_retrieval(theme, folder, csv_path)
     corpus = cribado2_dir(theme)
     ensure_cribado_dirs(corpus)
     jpath = corpus / DOCUMENTOS_JSON
     prev = json.loads(jpath.read_text(encoding="utf-8")) if jpath.is_file() else None
-    cat = merge_catalog_si(theme, folder, csv_path, si, prev)
+    cat = merge_catalog_si(theme, folder, csv_path, si, prev, use, len(si_all))
     cat["generado"] = dt.datetime.now().isoformat(timespec="seconds")
     save_catalog(corpus, cat)
     report = write_documentos_md(corpus, cat)
     return ok(
-        f"carpeta {rel(corpus)}/ con {len(si)} SI en {rel(report)}",
+        f"carpeta {rel(corpus)}/ con {len(si)} SI para retrieval (cribado_2.use={use}; {len(si_all)} SI en CSV) en {rel(report)}",
         f"pnpm -s cribado2:download {rel(theme)}",
     )
 
@@ -539,6 +620,13 @@ def cmd_download(theme: Path) -> int:
     if not (corpus / DOCUMENTOS_JSON).is_file():
         cmd_init(theme)
     cat = load_catalog(corpus)
+    use = read_cribado2_use(theme)
+    prev_use = cat.get("cribado_2_use")
+    if prev_use and normalize_use(str(prev_use)) != use:
+        print(
+            f"WARN cribado_2.use cambió ({prev_use} → {use}); "
+            f"corre pnpm -s cribado2:init {rel(theme)}/ antes de confiar en el catálogo"
+        )
     pdf_dir, _, _ = ensure_cribado_dirs(corpus)
     email = mail()
     with ThreadPoolExecutor(WORKERS) as ex:
@@ -574,6 +662,10 @@ def cmd_download(theme: Path) -> int:
 
 
 def draft_matches_reg(draft_stem: str, reg: dict) -> bool:
+    stem = draft_stem.strip()
+    rid = (reg.get("id") or "").strip()
+    if rid and stem.upper() == rid.upper():
+        return True
     key = slug(draft_stem)
     tkey = title_slug(reg["titulo"])
     if key == tkey:
@@ -584,6 +676,13 @@ def draft_matches_reg(draft_stem: str, reg: dict) -> bool:
     if len(key) >= 12 and (key in tkey or tkey in key):
         return True
     return False
+
+
+def cmd_documentos(theme: Path) -> int:
+    corpus = cribado2_dir(theme)
+    cat = load_catalog(corpus)
+    report = write_documentos_md(corpus, cat)
+    return ok(f"tabla actualizada en {rel(report)}")
 
 
 def cmd_align(theme: Path) -> int:
@@ -772,6 +871,7 @@ def main(args: list[str]) -> int:
     simple = {
         "init": cmd_init,
         "download": cmd_download,
+        "documentos": cmd_documentos,
         "align": cmd_align,
         "prepare": cmd_prepare,
         "build": cmd_build,

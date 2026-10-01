@@ -1,0 +1,746 @@
+# Journal of Policy and Practice in Intellectual Disabilities
+
+> Fuente PDF: `R068-mtcai-leveraging-ai-to-simplify-medical-reports-for-adults-with-intellectual-and.pdf` · técnica **locator index** (página + ancla) + chunks Graphify
+
+## Metadata
+- Stem: `R068-mtcai-leveraging-ai-to-simplify-medical-reports-for-adults-with-intellectual-and`
+- PDF: `R068-mtcai-leveraging-ai-to-simplify-medical-reports-for-adults-with-intellectual-and.pdf`
+- DOI: `10.1111/jppi.70061`
+- Pages: `9`
+- Structured_at: `2026-10-01T07:27:30+00:00`
+- Technique: `pdf-page-locators + heading-chunks`
+
+## Locator index (qué hay y en qué página del PDF)
+
+| Kind | Label | PDF page | MD anchor |
+|------|-------|----------|-----------|
+| abstract | Abstract / blurb | 1 | `#abstract` |
+| concept | R068 | ? | `#concept-r068` |
+| concept | mtcai | ? | `#concept-mtcai` |
+| concept | leveraging | ? | `#concept-leveraging` |
+| concept | simplify | ? | `#concept-simplify` |
+| concept | medical | ? | `#concept-medical` |
+| concept | reports | ? | `#concept-reports` |
+| concept | adults | ? | `#concept-adults` |
+| concept | with | ? | `#concept-with` |
+| concept | intellectual | 1 | `#concept-intellectual` |
+| finding | Individuals with intellectual and developmental disabilities face significant challenges i… | 1 | `#finding-individuals-with-intellectual-and-develo` |
+| finding | To address this issue an AI-­driven tool (MTCAI) was developed and designed to simplify me… | 1 | `#finding-to-address-this-issue-an-ai-driven-tool` |
+| finding | Unlike traditional Plain Language approaches, Minimized Text Complexity guidelines are tai… | 1 | `#finding-unlike-traditional-plain-language-approa` |
+| finding | This study evaluated MTCAI's effectiveness in simplifying after-­v isit medical summaries … | 1 | `#finding-this-study-evaluated-mtcai-s-effectivene` |
+| finding | Participants reviewed medical reports in both their original format and in MTCAI-­simplifi… | 1 | `#finding-participants-reviewed-medical-reports-in` |
+| finding | Quantitative analyses revealed that MTCAI-­generated texts significantly reduced reading c… | 1 | `#finding-quantitative-analyses-revealed-that-mtca` |
+| page | p.1: Journal of Policy and Practice in Intellectual Disabilities | 1 | `#pdf-p1` |
+| page | p.2: their unmet health communication needs (Gleason et al. 2021). Sterling et al. 2024; Tailor | 2 | `#pdf-p2` |
+| page | p.3: et al., Squiers et al. 2023), just like Plain Language guidelines, and to what extent. The | 3 | `#pdf-p3` |
+| page | p.4: TABLE 1 / Example of report simplified with the MTCAI. | 4 | `#pdf-p4` |
+| page | p.5: they encountered. See Table S1 for the participatory needs as- indicating texts are easier | 5 | `#pdf-p5` |
+| page | p.6: and said they were not sure they wanted to read their reports. Some of my other doctors ha | 6 | `#pdf-p6` |
+| page | p.7: et al. 2025), we found that LLMs can be used to create simpli- with the MTCAI on reading c | 7 | `#pdf-p7` |
+| page | p.8: potential of the MTCAI tool to provide this increased acces- Ebby, C. G., G. Tse, J. Bethe | 8 | `#pdf-p8` |
+| page | p.9: Traci, M. A., T. Seekins, A. Szalda-­Petree, and C. Ravesloot. 2002. | 9 | `#pdf-p9` |
+
+## Abstract
+<a id="abstract"></a>
+
+Individuals with intellectual and developmental disabilities face significant challenges in accessing and comprehending com- plex medical documents, contributing to health disparities and unmet healthcare needs. To address this issue an AI-­driven tool (MTCAI) was developed and designed to simplify medical texts in accordance with the evidence-­based Minimized Text Complexity guidelines. Unlike traditional Plain Language approaches, Minimized Text Complexity guidelines are tailored to readers with limited literacy, including those reading below a third-­grade level. This study evaluated MTCAI's effectiveness in simplifying after-­v isit medical summaries for adults with IDD. The project involved two phases: (1) development and refine- ment of MTCAI using large language models to systematically automate and apply the Minimized Text Complexity guidelines, and (2) conducting a participatory needs assessment and message testing with five adults with intellectual and developmental disabilities. Participants reviewed medical reports in both their original format and in MTCAI-­simplified formats. Quantitative analyses revealed that MTCAI-­generated texts significantly reduced reading complexity, achieving levels comparable to those of second-­grade texts. Qualitative findings showed that all participants preferred the simplified reports, demonstrated improved comprehension, and expressed a willingness to engage with the simplified documents independently. These results suggest that MTCAI is a promising tool for enhancing health communication accessibility for individuals with intellectual and developmen- tal disabilities. Future research should investigate broader implementation and assess the long-­term effects on health outcomes.
+
+## Keywords
+
+- _(none auto-detected)_
+
+## Concept index (graph hooks + página)
+
+<a id="concept-r068"></a>
+### [PDF p.?] Concept: R068
+- Locator: `R068-mtcai-leveraging-ai-to-simplify-medical-reports-for-adults-with-intellectual-and.pdf` · página **?**
+
+<a id="concept-mtcai"></a>
+### [PDF p.?] Concept: mtcai
+- Locator: `R068-mtcai-leveraging-ai-to-simplify-medical-reports-for-adults-with-intellectual-and.pdf` · página **?**
+
+<a id="concept-leveraging"></a>
+### [PDF p.?] Concept: leveraging
+- Locator: `R068-mtcai-leveraging-ai-to-simplify-medical-reports-for-adults-with-intellectual-and.pdf` · página **?**
+
+<a id="concept-simplify"></a>
+### [PDF p.?] Concept: simplify
+- Locator: `R068-mtcai-leveraging-ai-to-simplify-medical-reports-for-adults-with-intellectual-and.pdf` · página **?**
+
+<a id="concept-medical"></a>
+### [PDF p.?] Concept: medical
+- Locator: `R068-mtcai-leveraging-ai-to-simplify-medical-reports-for-adults-with-intellectual-and.pdf` · página **?**
+
+<a id="concept-reports"></a>
+### [PDF p.?] Concept: reports
+- Locator: `R068-mtcai-leveraging-ai-to-simplify-medical-reports-for-adults-with-intellectual-and.pdf` · página **?**
+
+<a id="concept-adults"></a>
+### [PDF p.?] Concept: adults
+- Locator: `R068-mtcai-leveraging-ai-to-simplify-medical-reports-for-adults-with-intellectual-and.pdf` · página **?**
+
+<a id="concept-with"></a>
+### [PDF p.?] Concept: with
+- Locator: `R068-mtcai-leveraging-ai-to-simplify-medical-reports-for-adults-with-intellectual-and.pdf` · página **?**
+
+<a id="concept-intellectual"></a>
+### [PDF p.1] Concept: intellectual
+- Locator: `R068-mtcai-leveraging-ai-to-simplify-medical-reports-for-adults-with-intellectual-and.pdf` · página **1**
+
+
+## Findings index (graph hooks + página)
+
+<a id="finding-individuals-with-intellectual-and-develo"></a>
+### [PDF p.1] Finding: Individuals with intellectual and developmental disabilities face significant challenges in accessing and comprehending com- plex medical documents, contributing to health disparities and unmet healthcare needs.
+- Locator: `R068-mtcai-leveraging-ai-to-simplify-medical-reports-for-adults-with-intellectual-and.pdf` · página **1**
+
+<a id="finding-to-address-this-issue-an-ai-driven-tool"></a>
+### [PDF p.1] Finding: To address this issue an AI-­driven tool (MTCAI) was developed and designed to simplify medical texts in accordance with the evidence-­based Minimized Text Complexity guidelines.
+- Locator: `R068-mtcai-leveraging-ai-to-simplify-medical-reports-for-adults-with-intellectual-and.pdf` · página **1**
+
+<a id="finding-unlike-traditional-plain-language-approa"></a>
+### [PDF p.1] Finding: Unlike traditional Plain Language approaches, Minimized Text Complexity guidelines are tailored to readers with limited literacy, including those reading below a third-­grade level.
+- Locator: `R068-mtcai-leveraging-ai-to-simplify-medical-reports-for-adults-with-intellectual-and.pdf` · página **1**
+
+<a id="finding-this-study-evaluated-mtcai-s-effectivene"></a>
+### [PDF p.1] Finding: This study evaluated MTCAI's effectiveness in simplifying after-­v isit medical summaries for adults with IDD.
+- Locator: `R068-mtcai-leveraging-ai-to-simplify-medical-reports-for-adults-with-intellectual-and.pdf` · página **1**
+
+<a id="finding-participants-reviewed-medical-reports-in"></a>
+### [PDF p.1] Finding: Participants reviewed medical reports in both their original format and in MTCAI-­simplified formats.
+- Locator: `R068-mtcai-leveraging-ai-to-simplify-medical-reports-for-adults-with-intellectual-and.pdf` · página **1**
+
+<a id="finding-quantitative-analyses-revealed-that-mtca"></a>
+### [PDF p.1] Finding: Quantitative analyses revealed that MTCAI-­generated texts significantly reduced reading complexity, achieving levels comparable to those of second-­grade texts.
+- Locator: `R068-mtcai-leveraging-ai-to-simplify-medical-reports-for-adults-with-intellectual-and.pdf` · página **1**
+
+
+## Relevance hooks
+### Theme relevance: software engineering and accessibility
+### Theme relevance: cognitive accessibility and neurodiversity
+### Theme relevance: evaluation metrics and WCAG
+
+## Sections (detected in PDF)
+
+_(no numbered sections auto-detected)_
+
+
+## Page chunks (texto por página del PDF)
+
+_Cada heading es un nodo Graphify. El label incluye la página para volver al PDF sin releer todo._
+
+<a id="pdf-p1"></a>
+### [PDF p.1] Journal of Policy and Practice in Intellectual Disabilities
+- Locator: `R068-mtcai-leveraging-ai-to-simplify-medical-reports-for-adults-with-intellectual-and.pdf` · página **1** / 9
+
+Journal of Policy and Practice in Intellectual Disabilities
+
+
+
+
+   ORIGINAL ARTICLE                     OPEN ACCESS
+
+
+
+
+MTCAI: Leveraging AI to Simplify Medical Reports for
+Adults With Intellectual and Developmental Disabilities
+Sofia Benson-Goldberg1               | Ben Satterfield2 | Michelle Ramsay2
+1Department of Special Education and Clinical Sciences, University of Oregon, Eugene, Oregon, USA               | 2Center for Inclusive Design and Innovation,
+Georgia Institute of Technology, Atlanta, Georgia, USA
+
+
+Correspondence: Sofia Benson-­Goldberg (sofiabg@uoregon.edu)
+
+Received: 18 August 2025 | Revised: 6 April 2026 | Accepted: 28 April 2026
+
+Keywords: artificial intelligence | health communication | intellectual disability | reading comprehension | text simplification
+
+
+  ABSTRACT
+  Individuals with intellectual and developmental disabilities face significant challenges in accessing and comprehending com-
+  plex medical documents, contributing to health disparities and unmet healthcare needs. To address this issue an AI-­driven
+  tool (MTCAI) was developed and designed to simplify medical texts in accordance with the evidence-­based Minimized Text
+  Complexity guidelines. Unlike traditional Plain Language approaches, Minimized Text Complexity guidelines are tailored to
+  readers with limited literacy, including those reading below a third-­grade level. This study evaluated MTCAI's effectiveness in
+  simplifying after-­v isit medical summaries for adults with IDD. The project involved two phases: (1) development and refine-
+  ment of MTCAI using large language models to systematically automate and apply the Minimized Text Complexity guidelines,
+  and (2) conducting a participatory needs assessment and message testing with five adults with intellectual and developmental
+  disabilities. Participants reviewed medical reports in both their original format and in MTCAI-­simplified formats. Quantitative
+  analyses revealed that MTCAI-­generated texts significantly reduced reading complexity, achieving levels comparable to those
+  of second-­grade texts. Qualitative findings showed that all participants preferred the simplified reports, demonstrated improved
+  comprehension, and expressed a willingness to engage with the simplified documents independently. These results suggest that
+  MTCAI is a promising tool for enhancing health communication accessibility for individuals with intellectual and developmen-
+  tal disabilities. Future research should investigate broader implementation and assess the long-­term effects on health outcomes.
+
+
+1   |   Introduction                                                                     et al. 2018). These health disparities may be partially explained
+                                                                                         by the complexity of healthcare communication, including phy-
+It is well documented that individuals with intellectual and                             sicians' after-­v isit reports.
+developmental disabilities (IDD) experience significant chal-
+lenges in reading comprehension (Wagner et al. 2006; McIntyre                            The convergence of these two issues (i.e., individual reading
+et al. 2022). Instead, they tend to be able to read single words                         comprehension skills and external challenges presented by com-
+and phrases without understanding the content of what they                               plex medical documents) presents real complex challenges to the
+have read (Ratz and Lenhard 2013). Additionally, adults with                             establishment and maintenance of positive health and safety for
+IDD are known to experience greater instances of co-­occurring                           this population. Individuals with IDD need to establish better
+mental and physical health conditions such as diabetes and                               understandings of the medical conditions they face. They re-
+obesity than people in the general population (Traci et al. 2002;                        quire more effective means of communication with their per-
+Tyler et al. 2010). As a result, this group experiences greater                          sonal care physicians. This became clear during the COVID-­19
+unmet healthcare needs and poorer health outcomes (Hanlon                                pandemic, as this population was especially vulnerable due to
+
+
+This is an open access article under the terms of the Creative Commons Attribution-­NonCommercial-­NoDerivs License, which permits use and distribution in any
+medium, provided the original work is properly cited, the use is non-­commercial and no modifications or adaptations are made.
+© 2026 The Author(s). Journal of Policy and Practice in Intellectual Disabilities published by International Association for the Scientific Study of Intellectual and
+Developmental Disabilities and Wiley Periodicals LLC.
+
+Journal of Policy and Practice in Intellectual Disabilities, 2026; 23:e70061                                                                                            1 of 9
+https://doi.org/10.1111/jppi.70061
+
+<a id="pdf-p2"></a>
+### [PDF p.2] their unmet health communication needs (Gleason et al. 2021). Sterling et al. 2024; Tailor et al. 2025). LLMs are computational
+- Locator: `R068-mtcai-leveraging-ai-to-simplify-medical-reports-for-adults-with-intellectual-and.pdf` · página **2** / 9
+
+17411130, 2026, 2, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/jppi.70061 by Cochrane Peru, Wiley Online Library on [01/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+their unmet health communication needs (Gleason et al. 2021).          Sterling et al. 2024; Tailor et al. 2025). LLMs are computational
+The volume and difficulty of the information being produced            models trained on extensive text datasets that enable them to
+about COVID-­19 caused individuals with IDD stress and con-            interpret, analyze, and generate natural language. The nature
+fusion (Embregts et al. 2022). Unsurprisingly, adults with IDD         and quality of the output are largely dependent on the quality of
+reported difficulty accessing information about COVID-­19 that         prompts written by the user. When prompted, LLMs can convert
+they could read and understand independently (Chadwick et al.          complex information into more accessible formats, potentially
+2023). This may, at least partially, explain why they were up to       making them useful tools for simplifying health care docu-
+eight (Gleason et al. 2021) times more likely to die from contract-    ments. Collectively, this body of research has found that LLMs
+ing COVID-­19 than their peers without disabilities.                   were able to produce well-­crafted summaries that retained per-
+                                                                       tinent information. However, across studies, limited informa-
+One way to make texts more accessible to individuals, regardless       tion has been provided about the prompt(s) used to generate the
+of their disability status, is to adjust the complexity of the text.   summaries or the extent to which the summaries matched the
+Text complexity refers to intrinsic properties of text, including      Plain Language guidelines.
+vocabulary, word density, sentence length, and text length. The
+complexity of a text has correlates with comprehension, with           Although Plain Language guidelines are promising and may
+lower complexities resulting in greater reading comprehension          result in texts that are readable for many, there are some lim-
+scores (Treptow et al. 2007). Given the demands of health doc-         itations to applying these guidelines to texts that are intended
+uments in terms of vocabulary and syntax, minimizing text              to be read by individuals with IDD. For example, at best, the
+complexity is an obvious place to start making these texts more        guidelines result in texts with readability scores between the
+accessible to individuals with IDD.                                    sixth and eighth grades. Unfortunately, this results in texts that
+                                                                       are still too complex for individuals with IDD (Benson-­Goldberg
+                                                                       et al. 2024). Furthermore, discrepancies and differences in in-
+1.1   |   Plain Language Guidelines: An Initial                        terpretation and limited agreement among health communica-
+Approach to Text Simplification                                        tion professionals lead to variation in application across writers
+                                                                       (Harper and Zimmerman 2009). Given these limitations, there
+Since the passing of the Plain Writing Act of 2010, the United         is a clear need to go beyond Plain Language guidelines when
+States now requires that all federal agencies use “clear               simplifying text for individuals with IDD.
+Government communication that the public can understand and
+use” (1). There are official Plain Language guidelines that ac-
+company the Plain Writing Act (2010) (https://​w ww.​plain​langu​      1.2   |   Minimized Text Complexity Guidelines:
+age.​gov/​guide​lines​). The legislation and guidelines evolved as a   A Text Simplification Approach for Individuals
+response to national reports indicating a decline in reading abil-     With IDD
+ity among people in the United States (see Berkman et al. 2004;
+Kindig et al. 2004). Going beyond the Plain Writing Act, fed-          During the COVID-­     19 pandemic, in response to the chal-
+eral agencies in the United States like the Centers for Disease        lenge of finding an appropriate set of guidelines to simplify
+Control and Prevention (CDC) and the National Institutes of            health texts for individuals with IDD, the Minimized Text
+Health have advocated for the use of plain language in health-         Complexity (MTC, Erickson et al. 2020) guidelines were devel-
+care generally.                                                        oped. Specifically, the development occurred in response to the
+                                                                       CDC's desire to produce health documents that could be read
+The Plain Language guidelines were developed by a community            and understood by individuals who read at a third-­grade level
+of federal employees in the United States who were committed           or below, including those with IDD. Unlike the Plain Language
+to clear communications from the government (PLAIN 2011).              guidelines, which are produced via expert consensus (Harper
+The guidelines are broadly organized, offering general guidance        and Zimmerman 2009), the MTC guidelines were developed
+on considerations at the word, sentence, and paragraph levels.         based on a rapid review of the literature, resulting in a set of
+For example, writers are encouraged to use bulleted lists, tables,     evidence-­based guidelines. The guidelines are organized into
+illustrations, short words, contractions, and headings to make         four sections: (a) whole-­text-­level guidelines; (b) sentence-­level
+written text easier to understand.                                     guidelines; (c) word-­level guidelines; (d) document-­formatting
+                                                                       guidelines. Within each section, the MTC guidelines are more
+Research has shown that writing in compliance with the                 specific than Plain Language guidelines. For example, the Plain
+Plain Language guidelines is labor-­intensive (Hadden 2015).           Language guidelines recommend using short words that most
+Writers require explicit training to apply the guidelines. Even        people would understand and avoiding difficult words, whereas
+with such training, experts may still struggle to apply Plain          the MTC guidelines recommend ensuring that 92% of the words
+Language guidelines effectively. This may be because the guide-        in a passage are among the 3000 most common in the English
+lines are vague and often difficult to interpret (Harper and           language. The latter can be calculated using the Text Analyzer
+Zimmerman 2009). As a result, writers must pass materials back         tool made available by the Corpus of Contemporary American
+and forth with another expert to achieve sufficiently easy texts.      English (n.d.).
+
+In an attempt to improve the writing process and increase adop-        When applied rigorously, the MTC guidelines result in texts
+tion of plain language in health care, several studies have in-        that individuals with IDD can read and understand (Benson-­
+vestigated the use of large language models (LLMs) to develop          Goldberg et al. 2024). Although the MTC guidelines have been
+summaries of physicians' after-­v isit notes (see Ebby et al. 2025;    folded into the CDC's Clear Communication Index (Squires,
+
+2 of 9                                                                               Journal of Policy and Practice in Intellectual Disabilities, 2026
+
+<a id="pdf-p3"></a>
+### [PDF p.3] et al., Squiers et al. 2023), just like Plain Language guidelines, and to what extent. The purpose of the message testing was to
+- Locator: `R068-mtcai-leveraging-ai-to-simplify-medical-reports-for-adults-with-intellectual-and.pdf` · página **3** / 9
+
+17411130, 2026, 2, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/jppi.70061 by Cochrane Peru, Wiley Online Library on [01/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+et al., Squiers et al. 2023), just like Plain Language guidelines,   and to what extent. The purpose of the message testing was to
+the process remains manually intensive and, as a result, in-         extend the needs assessment into an action phase, where we
+frequently used. Unlike Plain Language guidelines, there is          could begin to understand, with the individuals, whether the
+no published literature investigating using LLMs to produce          individuals in the needs assessment could read and understand
+simplified text using the MTC guidelines. This gap in the            their own after-­v isit summaries when they were simplified with
+literature represents a critical limitation in current text sim-     the MTCAI.
+plification research, as MTC guidelines have demonstrated
+superior outcomes for individuals with IDD compared to Plain
+Language approaches, yet lack automation tools for practical         2   |   Method
+implementation.
+                                                                     The protocol for this project was reviewed and approved by the
+                                                                     Georgia Institute of Technology Institutional Review Board.
+1.3   |   MTCAI                                                      Patients provided permission for the research team to obtain a
+                                                                     redacted version of their latest medical report from their physi-
+An AI tool called MTCAI was developed to address this gap            cian to be summarized using the MTCAI. The research team
+in implementation. Specifically, the tool uses generative AI         partnered with a local medical home organization (a medical
+to automate the simplification of texts using the MTC guide-         practice that incorporates accessible, comprehensive, family-­
+lines. The goal in designing MTCAI was to create an instru-          centered support coordination) that focuses on serving adults
+ment that produces an accessible and readable summary of a           with IDD. Written consent was obtained from all participants.
+physician's medical report that complies with the MTC guide-
+lines and that an adult with IDD can independently read and
+understand.                                                          2.1   |   Participants
+
+To create MTCAI, a secure internal studio was developed              Five individuals with IDD were identified from a conve-
+that incorporated LLMs from the Bedrock suite from Amazon            nience sample of individuals served by a medical center in the
+Web Services. Guardrails were put in place to prevent shar-          Southeastern US that provides medical services to adults with
+ing of information introduced into the studio environment.           IDD. The medical home helped with initial contact with poten-
+This produced a framework which allowed us to examine the            tial participants. They issued the invitation to participate to their
+interaction of prompts, data (i.e., after visit summaries), and      patients and screened the respondents based on the selection
+LLM output. The MTC guidelines (Erickson et al. 2020) were           criteria. All participants met the following criteria: (a) at least
+used as the basis for all AI prompts within the internal stu-        18 years of age; (b) currently residing in the United States; (c)
+dio described above. Initial testing of the tool was done with       have a diagnosis of intellectual or developmental disability; (d)
+healthcare information sheets from prominent open sources            ability to read connected text; and (e) ability to communicate
+(i.e., Medline, NIH, etc.) that addressed health issues com-         their preferences (including with augmentative and alternative
+mon to individuals with IDD were collected and submitted             communication). Of the five participants, two had primary di-
+to the MTCAI tool for summarization. LLMs were engaged               agnoses of Autism and three had primary diagnoses of Down
+to produce summaries of these documents using the initial            Syndrome. Two were female and three were male. They ranged
+MTC prompt and iterations were made to improve the output.           in age from 24 to 30 (M = 25.6). The participants had mixed in-
+Mock-­up medical reports with synthetic data were used to            terest in reading. One (20%) participant indicated that they read
+prepare for the summarization of actual after-­v isit medical re-    books, one (20%) indicated they only read if they are interested,
+ports. Throughout this process, the research team made mul-          two (40%) reported they enjoy listening to audiobooks, and one
+tiple modifications and adjustments to the original prompt.          (20%) said that they have not been reading lately.
+Each iteration was preserved to track improvements in the
+output across various LLMs. Outputs from these iterations
+were monitored to maintain conformity to the MTC guide-              2.1.1   |   Application of the MTCAI to After-­Visit
+lines. The outputs of each of the LLMs that were used in the         Summary Reports
+development of the MTCAI tool were tracked and matched
+to the prompt iterations to determine which combinations             The team at the medical home redacted the after-­v isit sum-
+of prompts and LLMs consistently produced the most high-­            maries. The redacted summaries were then reviewed for in-
+quality, MTC-­compliant responses.                                   formation that was relevant to the participants. It was decided
+                                                                     to focus on the narrative summaries, which had the headers
+                                                                     of History and Instructions in the original reports. Once they
+1.4   |   Purpose                                                    were extracted from the summary, these sections were then
+                                                                     processed through the MTCAI to develop simplified doc-
+The purpose of the work was twofold. First, to establish whether     uments to be used during message testing. The first author
+the MTCAI could simplify texts that aligned with the MTC             led the simplification process. All simplified reports were re-
+guidelines and expected text metrics. Second, it was to conduct      viewed by a physician at the medical home to ensure accuracy.
+a needs assessment and message testing with individuals with         This resulted in five personal, simplified texts. The simplified
+IDD. The purpose of the needs assessment was to understand           reports were then compared to the original reports on several
+how individuals with IDD interact with their standard after-­        key metrics related to readability: (a) total words; (b) words per
+visit summaries and to understand what barriers might exist          sentence; (c) Flesch Reading Ease scores; (d) Flesch–Kincaid
+
+Journal of Policy and Practice in Intellectual Disabilities, 2026                                                                   3 of 9
+
+<a id="pdf-p4"></a>
+### [PDF p.4] TABLE 1 | Example of report simplified with the MTCAI.
+- Locator: `R068-mtcai-leveraging-ai-to-simplify-medical-reports-for-adults-with-intellectual-and.pdf` · página **4** / 9
+
+17411130, 2026, 2, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/jppi.70061 by Cochrane Peru, Wiley Online Library on [01/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+TABLE 1    |    Example of report simplified with the MTCAI.
+
+ Initial report                                                                   MTCAI summary
+ Medical Update                                                                   Health Update
+ Client presents for his annual health maintenance exam and evaluation at         You have Down Syndrome.
+ The Practice clinic. He is living at home with his parents. He is an active
+                                                                                  You live with your parents.
+ member of the household. He is volunteering at the Local public library (one
+ session per week) and works at the coffee shop at his church twice a week.       You help at home.
+                                                                                  You work at a library.
+                                                                                  You work at a coffee shop.
+ He has had difficulty sustaining his healthy lifestyle and weight loss           Weight Gain
+ program. He has gained 12 pounds since his last visit. He is exercising
+                                                                                  You gained 12 pounds.
+ but not as much as recommended. Recommend continuing with the
+ Local Fitness program. He has a trainer once a week at Local Gym and is          You need to exercise more.
+ considering increasing to twice weekly. We discussed weight loss options—
+                                                                                  You go to the gym once a week.
+ including use of GLP-­1 s; He meets BMI criteria for Wegovy therapy and has
+ no contra-­indications. Plan is to continue strict, calorie reducing diet for    You may go twice a week.
+ 3 months, and then consider adding medications if no improvement. He is          You need to eat less food.
+ due for the following health maintenance studies: urinalysis, lipid profile,
+ BP and BMI.                                                                      You may take a medicine to help you lose weight.
+
+ His immunizations are not up to date. We recommend COVID booster.                Immunizations
+ Mom prefers to wait for new booster in the Fall. Recommend Prevnar 20—
+                                                                                  You need some shots.
+ will update today. Recommend seasonal flu shot in the Fall.
+                                                                                  You need a COVID shot.
+                                                                                  You need a Prevnar 20 shot.
+                                                                                  You need a flu shot in the fall.
+ Patient has a history of severe obstructive sleep apnea; He has not been able    Sleep Apnea
+ to tolerate CPAP. His sleep apnea symptoms were much improved when
+                                                                                  You have sleep apnea.
+ he managed to get his weight down into the 180 range. He manages well
+ with sleeping on his side. We recommend restarting slumber bump pillow.          You had trouble using a CPAP machine.
+ Occasional daytime napping. He needs follow up with ENT regarding sleep
+                                                                                  You sleep better on your side.
+ apnea management options.
+                                                                                  You use a special pillow.
+                                                                                  You need to see an ENT doctor.
+
+
+
+grade-­level score; and (e) the percentage of words that appear      Servós 2010). All coding and analysis were done by the second
+within the 3000 most frequently occurring words. See Table 1         and third authors.
+for an example of an initial and simplified report; to protect
+the anonymity of the participants, the original report is a syn-
+thesis of several initial reports.                                   2.2.1   |   Participatory Needs Assessment
+
+                                                                     While MTCAI was being developed and applied to the after-­
+2.2   |   Procedures                                                 visit summaries, we completed a participatory needs as-
+                                                                     sessment with the participants. We used a semi-­        structured
+Consenting participants scheduled two virtual appointments           protocol to guide the participatory needs assessment to allow
+with the second and third authors. Both authors were present         us to gather information about participants' previous experi-
+for both sessions with all participants. During the first session,   ences with their medical reports as well as their needs around
+the participants engaged in a participatory needs assessment         understanding their medical reports. Participants were asked
+to understand their previous experiences and current needs re-       to review their original after-­v isit summary. We asked partici-
+lated to reading and understanding their after-­v isit summaries.    pants to identify sections of their reports (i.e., diagnosis, physi-
+The second session was intended to message test the simplified       cian instructions, medications, etc.) and to discuss that aspect
+summaries. Descriptions of both sessions are outlined in more        of their lives. We asked each to read the narrative section that
+detail below. All sessions were recorded and automatically           described their history (i.e., a section that was later simplified)
+transcribed via Zoom. Participant statements were manually           then asked questions to ascertain comprehension. As a part of
+transferred to Microsoft Excel for analysis (Amozurrutia and         this we asked the participants to identify any difficult words
+
+
+4 of 9                                                                             Journal of Policy and Practice in Intellectual Disabilities, 2026
+
+<a id="pdf-p5"></a>
+### [PDF p.5] they encountered. See Table S1 for the participatory needs as- indicating texts are easier to read). The original reports used
+- Locator: `R068-mtcai-leveraging-ai-to-simplify-medical-reports-for-adults-with-intellectual-and.pdf` · página **5** / 9
+
+17411130, 2026, 2, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/jppi.70061 by Cochrane Peru, Wiley Online Library on [01/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+they encountered. See Table S1 for the participatory needs as-                              indicating texts are easier to read). The original reports used
+sessment interview guide.                                                                   long sentences with complex syntax and unfamiliar words
+                                                                                            that are infrequently used in written English. In contrast,
+                                                                                            the metrics for the MTCAI summaries of these reports indi-
+2.2.2   |   Message Testing                                                                 cated they complied with the recommended MTC guidelines,
+                                                                                            providing shorter sentences and less complex words that are
+After the participatory needs assessment was completed, partic-                             more frequently occurring in written English. The simplified
+ipants scheduled a follow-­up appointment to complete the mes-                              reports were written at a 2nd grade reading level on average
+sage testing. During this session, the simplified version of their                          (SD = 0.44) and had a higher Flesch Reading Ease score (88.4),
+medical report was presented to them. Again, the participants                               suggesting they were easy to read.
+were asked to review the report and answer a variety of ques-
+tions aimed to understand their comprehension of the report as                              A series of t-­tests were run to evaluate differences in (a) total
+well as impressions of the report. The questions used were mod-                             words; (b) words per sentence; (c) Flesch Reading Ease scores,
+eled after those used in the first interview. Again, we asked the                           (d) Flesch–Kincaid grade-­level score; and (e) the percentage of
+participant to read a narrative section and to identify difficult                           words that appear within the 3000 most frequently occurring
+words. Lastly, we asked the patient to tell us which version of                             words. The first four metrics were taken directly from Microsoft
+their report they preferred and why. See Table S2 for the message                           word, while the last metric was measured using the Corpus of
+testing interview guide.                                                                    Contemporary American English (n.d.). After visual inspection
+                                                                                            of boxplots, no extreme outliers were found. Shapiro Wilk's test
+                                                                                            revealed the data were normally distributed, so analyses were
+3   |   Results                                                                             conducted on all variables. A one-­tailed paired t-­test revealed
+                                                                                            significant differences (i.e., p < 0.05) for all variables with large
+The results of the study provide preliminary evidence that the                              effects sizes (i.e., Hedges g > 0.8). This suggests that the MTCAI
+MTCAI can be used to simplify medical reports and produce                                   were indicative of texts that are significantly easier to read than
+summaries that comply with the MTC guidelines and that key                                  the original documents. See Table 2 for the average metrics
+metrics suggest the simplified reports are easier to read than the                          across each document type (i.e., original and simplified), the
+original reports. Furthermore, results of the needs assessment                              tools used to obtain each metric, the mean difference between
+suggested that this type of simplification is necessary and re-                             the metrics across texts, and the p values and Hedges g values
+sults from the message testing indicated that the simplified re-                            from the paired sample t-­tests.
+sulting reports were preferred by the participants.
+
+                                                                                            3.2   |   Participatory Needs Assessment Results
+3.1   |   Comparing the Original and Simplified
+Reports                                                                                     Participants were asked to review their original physician's re-
+                                                                                            ports and locate specific information on their reports. Only two
+When analyzed as a group, the original physician's reports                                  participants (40%) reported having previously read one of their
+for these participants were written at an 8th grade reading                                 reports. These patients received their report directly from their
+level on average (SD = 1.11), with a low Flesch Reading Ease                                doctor by mail following the visit. These two expressed inter-
+score (53.2) indicating they were quite difficult to read (Flesch                           est in reading their reports. The other participants (60%) said
+Reading Ease scores range from 0 to 100 with higher scores                                  they did not personally receive a copy of their previous reports
+
+
+
+TABLE 2    |    Average metrics for original and simplified documents.
+
+                                                                                                                                     Paired sample t-­test
+                                                                                               Simplified           Mean
+  Metric                                                          Original mean (SD)           mean (SD)          difference            p         Hedges's g
+  Total Wordsa                                                             522.2 (208.19)      347.4 (87.28)         174.8           0.041c         212.19d
+  Average number of words per                                               10.3 (1.98)          5.72 (0.7)           4.58           0.006c          2.90d
+  sentencea
+  Flesh Kincaid reading ease scorea                                          53.2 (5.3)          88.4 (2.0)           35.2          < 0.001c         7.20d
+  Grade level equivalent on readability                                     8.12 (1.11)          2.3 (0.44)           5.82          < 0.001c         1.67d
+  indexa
+  Percent of words among 3000 most                                         79.6% (2.3%)         90% (1.7%)           10.4%          < 0.001c         3.39d
+  frequently occurring in Englishb
+a Metric generated using Microsoft Word.
+bMetric generated at https://​w ww.​engli​sh- ­​c orpo​ra.​org/​c oca/​.
+cIndicates a statistically significant difference.
+d Indicates a large effect size.
+
+
+
+
+Journal of Policy and Practice in Intellectual Disabilities, 2026                                                                                          5 of 9
+
+<a id="pdf-p6"></a>
+### [PDF p.6] and said they were not sure they wanted to read their reports. Some of my other doctors had things that were left on
+- Locator: `R068-mtcai-leveraging-ai-to-simplify-medical-reports-for-adults-with-intellectual-and.pdf` · página **6** / 9
+
+17411130, 2026, 2, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/jppi.70061 by Cochrane Peru, Wiley Online Library on [01/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+and said they were not sure they wanted to read their reports.             Some of my other doctors had things that were left on
+All participants said they looked to their parents for medical             from, I don't know, since I was a child.
+information.
+
+Upon reviewing their report, two of the participants (40%) said      3.3   |   Message Testing Results
+that they thought it was important for them to read their report.
+Four (80%) said they understood some of what they read in their      Following the needs assessment, a second interview provided
+report, but all five described the report as “hard” and “confus-     the participants with a chance to review the MTCAI simpli-
+ing” and one participant noted, “there were some big terms in        fied versions of their physician's reports. When first shown
+there.” Another participant made a comment about the physi-          the new summaries, the participants were asked what they
+cal layout of the document, saying, the “font is too small […] too   noticed about the summary. All five participants reported that
+many words too close together.” All five participants identified     they could read the summary without help. One participant
+at least five words that they did not recognize and identified un-   noted, “I can read this one better. Yes, can read the new one
+familiar acronyms.                                                   better.” All five indicated that they would try to read the sim-
+                                                                     plified report if their doctor gave it to them. All five partic-
+When asked to review their report, three participants (60%)          ipants indicated a reduction in the number of unfamiliar or
+found the section with their doctor's instructions without as-       difficult words. One participant noted, “the language seems
+sistance. Only one (20%) was able to locate information about        different […] I kind of like that [reads a line from the report]
+their diagnosis without assistance. All five reported being          like that is pretty basic.”
+unsure that they understood the doctor's instructions. When
+asked what the report said about their diagnosis, three (60%)        Regarding comprehension, all five patients made correct
+could make accurate statements. However, none of their com-          statements regarding the doctor's specific instructions to them
+ments were reflective of the specific statements and informa-        (e.g., “The doctor says he wants me to put on sunscreen”). All
+tion contained in the report, but rather general information         five were able to make statements that suggested correct in-
+about the diagnosis.                                                 ferences regarding the doctor's general instructions to them
+                                                                     (e.g., when they read that they need to keep exercising, they
+When asked what could make the report better participants sug-       inferred “I need to keep riding my bike”). One patient went be-
+gested reducing the amount of information (i.e., fewer words)        yond this and after reading made two independent decisions
+and better organizing the document, including using format-          about recommendations from their doctor to help alleviate
+ting features (e.g., bold headers), grouping similar information     foot pain. The report indicated they could use (a) either a reg-
+together, and ensuring all information is current. For example,      ular or medicated pad and (b) different shoes. They shared, “I
+one participant said,                                                want use a medicated pad, yes, I may change shoes.” Similarly,
+                                                                     another participant was able to express a preference for hav-
+         Yes, there's a lot of words on each page. […] It would      ing necessary shots on different days, as opposed to all on the
+         help if there was less information. It would help if the    same day.
+         words were a little more easy to understand, or maybe
+         smaller or shorter.                                         Three individuals (60%) volunteered comments that the
+                                                                     MTCAI version of their report was organized in a way that
+Three participants commented on the format, one indicating           was easy for them to follow. Two (40%) mentioned the length
+that the font needed to be bigger, and the other two commenting      of the document compared to the original, stating they pre-
+on organization. For example, one participant pointed to several     ferred it because there were “a lot less papers to go through”
+important topics in their report that were all in the same para-     and “I think this is much better of having to read this than
+graph and recommend they be:                                         it is for the 20 page report that they give you each time.”
+                                                                     Another reported, “this is so much easier for me in particular.
+                                                                     Everything on here is short and sweet and not too, not like a
+         boldened or have those boxed. Because those are
+                                                                     big analyze […] which I really appreciate.” That same partici-
+         good for people to know. And so, it's not all running       pant suggested that they have a couple of friends who reading
+         all together. It can just be separate for them. Or have     “is not easy for them” and that “this might be a tool that might
+         it bolded or something to make it just more stand           help them.”
+         out.
+                                                                     When asked their preference, all five indicated that they would
+Similarly, one participant suggested grouping like information,      rather read the MTC summary than the original physician's re-
+saying, “it should be more separate […] they're not necessarily      port and that they would read the simplified version if it were
+grouped together in a way that makes a lot of sense.” An unex-       given to them by their doctor.
+pected finding was when one patient suggested that the reports
+should be reviewed for relevancy and recency. They com-
+mented that:                                                         4   |   Discussion
+
+         a lot of what is in the report is old. Like I don't take    Just as LLMs have been found helpful to produce Plain Language
+         some of the stuff anymore, but it is still in the report.   summaries (see Ebby et al. 2025; Sterling et al. 2024; Tailor
+
+
+6 of 9                                                                            Journal of Policy and Practice in Intellectual Disabilities, 2026
+
+<a id="pdf-p7"></a>
+### [PDF p.7] et al. 2025), we found that LLMs can be used to create simpli- with the MTCAI on reading comprehension for a more repre-
+- Locator: `R068-mtcai-leveraging-ai-to-simplify-medical-reports-for-adults-with-intellectual-and.pdf` · página **7** / 9
+
+17411130, 2026, 2, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/jppi.70061 by Cochrane Peru, Wiley Online Library on [01/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+et al. 2025), we found that LLMs can be used to create simpli-       with the MTCAI on reading comprehension for a more repre-
+fied reports that comply with the MTC guidelines. Additionally,      sentative sample of adults with IDD. Further research should
+the metrics suggest that the resulting simplified reports are sig-   go beyond reading comprehension to investigate whether in-
+nificantly easier to read than the original medical reports. The     creased comprehension leads to increased adoption of medical
+metrics of the original reports suggested the documents were         recommendations. Similarly, future research should investigate
+too challenging for adults with IDD. Additionally, the results       whether access to simplified reports supports increased partici-
+of the needs assessment demonstrated a need for simplified re-       pation in supported decision-­making.
+ports. Results from the message testing demonstrated that the
+participants preferred the summaries produced by the MTCAI,          Another limitation is that we did not measure individuals' read-
+believing they were easier to read and better organized. Their       ing comprehension scores. This also limits our ability to make
+interactions while reading the simplified summaries suggest          inferences about how the findings relate to the population of
+better comprehension that in some cases facilitated decision         individuals with IDD. Though there was little evidence that the
+making.                                                              group as a whole enjoys reading or spends much time reading, the
+                                                                     results could indeed be impacted by their baseline reading com-
+The needs assessment demonstrated a critical need for simpli-        prehension skills. Future work should consider measuring partic-
+fied after-­v isit summaries. As is consistent with the literature   ipants' reading comprehension using standardized assessments
+(Roch and Levorato 2009), the adults in the study were able to       to understand the impact of reading comprehension on outcomes.
+read and identify most words in the original reports. However,
+they had difficulty comprehending what they read. Even when          Lastly, the study is limited by the exploratory nature of the de-
+they were able to make accurate statements about their diagno-       sign. Future work should consider employing more rigorous
+ses, their statements did not align with those made in the reports   methodologies to understand the impact of simplified texts on
+by their doctors. This suggests that they were relying on prior      individuals' ability to read and comprehend their after-­    v isit
+knowledge to answer the questions rather than comprehending          summaries. Additionally, our approach does introduce poten-
+the specifics in their reports.                                      tial bias, as the researchers who conducted the needs assess-
+                                                                     ment and message testing were not blinded to the purpose of the
+Although unsurprising, it seems problematic that most par-           study and were involved in the development of MTCAI. Future
+ticipants reported never having received a copy of their after-­     work should consider employing research assistants who are
+visit summary before. Without access to information about            blinded to the purpose of the study to code and analyze the par-
+their conditions, it is difficult to imagine how individuals         ticipant data.
+with IDD might partake in supported decision making about
+their own health. Future research is warranted to investigate
+why individuals are not receiving their reports and to deter-        5.1   |   A Note on Potential Dangers of GenAI in
+mine the extent to which access to simplification tools, such        Medical Settings
+as the MTCAI, may increase the likelihood that individuals
+with IDD are given access to this critical information. Future       MTCAI was developed for the purpose of simplifying medical
+research should investigate how this access might be used to         health documents. With that in mind, precautions were taken to
+engage in supported decision making.                                 ensure the security of participants' private health information.
+                                                                     First, a secure internal studio was developed with guardrails in
+The results of the message testing are encouraging, suggesting       place to prevent the sharing of information beyond the studio en-
+that the simplified reports could be read and understood by the      vironment. This means that none of the data entered into MTCAI
+participants. The unanimity of the responses was unexpected,         were shared back out to the LLMs that were used. Second, all the
+with all participants indicating that they could read the report     original reports viewed by the researchers were redacted by the
+without help, preferred the simplified texts, and would read the     medical health home. This further ensured that no identifying
+report if it were given to them by their provider. This is import-   information was shared with MTCAI. Future research and de-
+ant because perceptions of texts impact whether they are read        velopment endeavors need to continue to consider the implica-
+and how they are understood. Future research is warranted            tions and ethics of using LLMs and generative AI in the context of
+to expand the scope of the current study. If these results hold      the medical field. Of particular concern is the privacy of private
+true, they suggest that the MTCAI creates texts that are both        health information. Additionally, there are concerns around the
+attractive and useful for individuals with IDD. Perhaps most         accuracy of the output. LLMs are known to hallucinate. Given
+importantly, all participants made comments that were correct        the importance of these documents, it is important for all efforts
+statements directly related to their reports.                        to include human-­in-­the-­loop review, meaning no AI output goes
+                                                                     directly to patients or anybody else without first being checked
+                                                                     by a human. In the case of research, this may be a member of the
+5   |   Limitations and Future Considerations                        research team or a content area expert. In clinical practice, this
+                                                                     would mean the care provider who is creating the simplified text.
+The foremost limitation of this preliminary study is the small
+sample size, which consisted only of individuals with Down syn-
+drome and Autism. This makes it difficult to extend the findings     6   |   Conclusions
+to the larger population of individuals with IDD. Future work is
+needed to understand the extent of the need for simplified after-­   This preliminary study demonstrates the need for simpli-
+visit summaries as well as the impact of summaries simplified        fied medical health documents for adults with IDD and the
+
+Journal of Policy and Practice in Intellectual Disabilities, 2026                                                                 7 of 9
+
+<a id="pdf-p8"></a>
+### [PDF p.8] potential of the MTCAI tool to provide this increased acces- Ebby, C. G., G. Tse, J. Bethel, Q. Zhao, D. M. Gerber, and M. M. Kelly.
+- Locator: `R068-mtcai-leveraging-ai-to-simplify-medical-reports-for-adults-with-intellectual-and.pdf` · página **8** / 9
+
+17411130, 2026, 2, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/jppi.70061 by Cochrane Peru, Wiley Online Library on [01/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+potential of the MTCAI tool to provide this increased acces-                       Ebby, C. G., G. Tse, J. Bethel, Q. Zhao, D. M. Gerber, and M. M. Kelly.
+sibility. By automating the application of the MTC guidelines                      2025. “Large Language Models to Summarize Pediatric Admission
+through LLMs, MTCAI successfully transformed complex                               Notes Into Plain Language.” Pediatrics 155, no. 6: e2024069515. https://​
+                                                                                   doi.​org/​10.​1542/​peds.​2 024-­​0 69515.
+after-­v isit summaries into simplified texts that participants
+could read and understand. Additionally, the findings from                         Embregts, P. J. C. M., K. J. H. M. van den Bogaard, N. Frielink, M. A. C.
+both quantitative readability metrics and qualitative mes-                         Voermans, M. Thalen, and A. Jahoda. 2022. “A Thematic Analysis Into
+                                                                                   the Experiences of People With a Mild Intellectual Disability During the
+sage testing underscore the tool's effectiveness in reducing
+                                                                                   COVID-­19 Lockdown Period.” International Journal of Developmental
+barriers to health communication. All participants preferred                       Disabilities 68, no. 4: 578–582. https://​doi.​org/​10.​1080/​2 0473​869.​2 020.​
+the simplified reports and showed improved comprehension.                          1827214.
+Although the study is limited by its small sample size and
+                                                                                   Erickson, K. A., S. Benson-­Goldberg, and L. Geist. 2020. “Minimized
+exploratory design, the results are encouraging and warrant
+                                                                                   Text Complexity Guidelines.” CLDS, UNC at Chapel Hill. https://​w ww.​
+further research. Future work should explore broader imple-                        med.​unc.​edu/​ahs/​clds/​resou​rces/​.
+mentation, assess long-­term impacts on health outcomes and
+                                                                                   Gleason, J., W. Ross, A. Fossi, H. Blonsky, J. Tobias, and M. Stephens.
+health literacy, and investigate how tools like MTCAI can sup-
+                                                                                   2021. “The Devastating Impact of Covid-­       19 on Individuals With
+port informed decision-­making and equitable access to health-                     Intellectual Disabilities in the United States.” NEJM Catalyst
+care information.                                                                  Innovations in Care Delivery 2, no. 2: 1–12. https://​doi.​org/​10.​29327/​​
+                                                                                   216984.​16.​1-­​2 8.
+                                                                                   Hadden, K. B. 2015. “Health Literacy Training for Health Professions
+Funding                                                                            Students.” Patient Education and Counseling 98, no. 7: 918–920. https://​
+                                                                                   doi.​org/​10.​1016/j.​pec.​2 015.​03.​016.
+This project was funded by a seed grant from the Center for Inclusive
+Design and Innovation.                                                             Hanlon, P., S. MacDonald, K. Wood, L. Allan, and S. A. Cooper. 2018.
+                                                                                   “Long-­Term Condition Management in Adults With Intellectual
+                                                                                   Disability in Primary Care: A Systematic Review.” BJGP Open, 2 1: 1–11.
+Ethics Statement
+                                                                                   https://​doi.​org/​10.​3399/​bjgpo​pen18​X101445.
+All study procedures were approved by the Institutional Review Board
+                                                                                   Harper, R., and D. Zimmerman. 2009. “Exploring Plain Language
+at Georgia Institute of Technology.
+                                                                                   Guidelines.” In 2009 IEEE International Professional Communication
+                                                                                   Conference, 1–6. IEEE.
+Conflicts of Interest
+                                                                                   Kindig, D. A., A. M. Panzer, and L. Nielsen-­Bohlman, eds. 2004. Health
+Sofia Benson-­Goldberg was a consultant on the development and appli-              Literacy: A Prescription to End Confusion. National Academies Press.
+cation of the MTCAI tool and led manuscript preparation efforts includ-            https://​w ww.​nap.​edu/​catal​og/​10883/​​healt​h-­​liter​acy-­​a-­​presc​r ipti​on-­​to-­​
+ing initial drafting and data analysis. Ben Satterfield was the principal          end-­​confu​sion.
+investigator on the project and a contributing writer, including review-
+ing drafts and data analysis. Michelle Ramsay was a project team mem-              McIntyre, N. S., C. Loughran, and J. Towson. 2022. “Reimagining
+ber and manuscript reviewer. The other authors declare no conflicts of             Assessment of Literacy Skills for Adolescents With Intellectual
+interest.                                                                          Disabilities: A Tutorial for an Individualized Approach.” Perspectives of
+                                                                                   the ASHA Special Interest Groups 7: 1606–1618. https://​doi.​org/​10.​1044/​
+                                                                                   2022_​PERSP​-­​22- ­​0 0014​.
+Data Availability Statement
+                                                                                   Plain Language Action and Information Network. 2011. “Federal Plain
+Research data are not shared.                                                      Language Guidelines.” https://​w ww.​plain​langu​age.​gov/​media/​​Feder​
+                                                                                   alPLG​uidel​ines.​pdf.
+
+References                                                                         Plain Writing Act. 2010. “Plain Writing Act of 2010.” Pub. L. No. 111-
+                                                                                   274, 124 Stat 2861.
+Amozurrutia, J. A., and C. M. Servós. 2010. “Excel Spreadsheet as a Tool
+for Social Narrative Analysis.” Quality & Quantity 45, no. 4: 953–967.             Ratz, C., and W. Lenhard. 2013. “Reading Skills Among Students With
+https://​doi.​org/​10.​1007/​s11135-​010-​9406-​9.                                 Intellectual Disabilities.” Research in Developmental Disabilities 34, no.
+                                                                                   5: 1740–1748. https://​doi.​org/​10.​1016/j.​ridd.​2 013.​01.​021.
+Benson-­ Goldberg, S., L. Geist, and K. Erickson. 2024. “Simplified
+COVID-­19 Guidance for Adults With Intellectual and Developmental                  Roch, M., and M. C. Levorato. 2009. “Simple View of Reading in Down's
+Disabilities.” Journal of Applied Research in Intellectual Disabilities 37,        Syndrome: The Role of Listening Comprehension and Reading Skills.”
+no. 3: 1–11. https://​doi.​org/​10.​1111/​jar.​13222​.                             International Journal of Language and Communication Disorders 44,
+                                                                                   no. 2: 206–223. https://​doi.​org/​10.​1080/​13682​82080​2 012061.
+Berkman, N. D., D. W. DA, M. P. Pignone, et al. 2004. “Literacy
+and Health Outcomes.” Summary, Evidence Report/Technology                          Squiers, L., M. Lynch, S. Holt, et al. 2023. “Building Evidence for
+Assessment: Number 87. AHRQ Publication Number 04-­       E 007-­
+                                                                1.                 Principles to Guide the Development of Products for Adults With
+Agency for Healthcare Research and Quality, Rockville, MD. http://​                Intellectual and Developmental Disabilities and Extreme Low
+www.​ahrq.​gov/​clinic/​epcsu​ms/​litsum.​htm.                                     Literacy—A Product Development Tool.” Health 11, no. 12: 1742. https://​
+                                                                                   doi.​org/​10.​3390/​healt​hcare​11121742.
+Chadwick, D. D., S. Buell, E. Burgess, and V. Peters. 2023. ““I Would
+Be Lost Without It but It's Not the Same” Experiences of Adults With               Sterling, N. W., F. Brann, S. O. Frisch, and J. D. Schrager. 2024. “Patient-­
+Intellectual Disabilities of Using Information & Communication                     Readable Radiology Report Summaries Generated via Large Language
+Technology During the COVID-­19 Global Pandemic.” British Journal of               Model: Safety and Quality.” Journal of Patient Experience 11: 1–4.
+Learning Disabilities 51, no. 2: 148–162. Portico. https://​doi.​org/​10.​1111/​   https://​doi.​org/​10.​1177/​23743​73524​1259477.
+bld.​12522​.
+                                                                                   Tailor, P. D., H. S. D'Souza, C. M. Castillejo Becerra, et al. 2025.
+Corpus of Contemporary American English. n.d. “Corpus of                           “Evaluation of AI Summaries on Interdisciplinary Understanding of
+Contemporary American English.” https://​w ww.​engli​sh-­​corpo​ra.​org/​          Ophthalmology Notes.” JAMA Ophthalmology 143, no. 5: 410–419.
+coca/​.                                                                            https://​doi.​org/​10.​1001/​jamao​phtha​lmol.​2 025.​0351.
+
+
+8 of 9                                                                                                Journal of Policy and Practice in Intellectual Disabilities, 2026
+
+<a id="pdf-p9"></a>
+### [PDF p.9] Traci, M. A., T. Seekins, A. Szalda-­Petree, and C. Ravesloot. 2002.
+- Locator: `R068-mtcai-leveraging-ai-to-simplify-medical-reports-for-adults-with-intellectual-and.pdf` · página **9** / 9
+
+17411130, 2026, 2, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/jppi.70061 by Cochrane Peru, Wiley Online Library on [01/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+Traci, M. A., T. Seekins, A. Szalda-­Petree, and C. Ravesloot. 2002.
+“Assessing Secondary Conditions Among Adults With Developmental
+Disabilities: A Preliminary Study.” Intellectual and Developmental
+Disabilities 40, no. 2: 119–131. https://​doi.​org/​10.​1352/​0 047-­​6765(2002)​
+040<​0119:​A SCAA​W>​2 .0.​CO;​2 .
+Treptow, M. A., M. K. Burns, and J. J. McComas. 2007. “Reading at
+the Frustration, Instructional, and Independent Levels: The Effects
+on Students' Reading Comprehension and Time on Task.” School
+Psychology Review 36, no. 1: 159–166. https://​doi.​org/​10.​1080/​02796​015.​
+2007.​12087958.
+Tyler, C. V., S. Schramm, M. Karafa, A. S. Tang, and A. Jain. 2010.
+“Electronic Health Record Analysis of the Primary Care of Adults With
+Intellectual and Other Developmental Disabilities.” Journal of Policy
+and Practice in Intellectual Disabilities 7, no. 3: 204–210. https://​doi.​org/​
+10.​1111/j.​1741-­​1130.​2 010.​0 0266.​x.
+Wagner, M., L. Newman, R. Cameto, and P. Levine. 2006. The Academic
+Achievement and Functional Performance of Youth With Disabilities.
+A Report From the National Longitudinal Transition Study-­2 (NLTS2)
+(NCSER 2006-­3000). SRI International.
+
+
+Supporting Information
+Additional supporting information can be found online in the
+Supporting Information section. Table S1: Participatory needs assess-
+ment protocol. Table S2: Message testing interview protocol.
+
+
+
+
+Journal of Policy and Practice in Intellectual Disabilities, 2026                   9 of 9

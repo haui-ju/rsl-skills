@@ -1,0 +1,1265 @@
+# Recibido: 10/2/2026 | Aceptado: 09/7/2026 | Publicado: 28/07/2026
+
+> Fuente PDF: `R135-udl-and-ai-based-educational-personalization-effects-on-performance-and-self-reg.pdf` · técnica **locator index** (página + ancla) + chunks Graphify
+
+## Metadata
+- Stem: `R135-udl-and-ai-based-educational-personalization-effects-on-performance-and-self-reg`
+- PDF: `R135-udl-and-ai-based-educational-personalization-effects-on-performance-and-self-reg.pdf`
+- DOI: `10.21803/penamer.19.40.1068`
+- Pages: `16`
+- Structured_at: `2026-10-01T07:27:32+00:00`
+- Technique: `pdf-page-locators + heading-chunks`
+
+## Locator index (qué hay y en qué página del PDF)
+
+| Kind | Label | PDF page | MD anchor |
+|------|-------|----------|-----------|
+| abstract | Abstract / blurb | 1 | `#abstract` |
+| section | 8 Study procedure | 8 | `#p8-8-study-procedure` |
+| concept | Educational personalization | 1 | `#concept-educational-personalization` |
+| concept | Inclusive education | 1 | `#concept-inclusive-education` |
+| concept | Learning analytics | 1 | `#concept-learning-analytics` |
+| concept | Neu- rodevelopmental disorders | 1 | `#concept-neu-rodevelopmental-disorders` |
+| concept | Universal Design for Learning | 1 | `#concept-universal-design-for-learning` |
+| concept | R135 | ? | `#concept-r135` |
+| concept | based | ? | `#concept-based` |
+| concept | educational | ? | `#concept-educational` |
+| concept | personalization | 1 | `#concept-personalization` |
+| concept | effects | ? | `#concept-effects` |
+| concept | performance | ? | `#concept-performance` |
+| concept | self | ? | `#concept-self` |
+| finding | Students with neurodevelopmental disorders (NDD) face persistent https://orcid.org/0009-00… | 1 | `#finding-students-with-neurodevelopmental-disorde` |
+| finding | Data were analyzed using ANCOVA controlling for baseline performance, age, diagnosis, and … | 1 | `#finding-data-were-analyzed-using-ancova-controll` |
+| finding | Results: Significant improvements were obser- ved in reading comprehension and mathematica… | 1 | `#finding-results-significant-improvements-were-o` |
+| finding | Stronger effects were found among initially low-performing students and in classrooms with… | 1 | `#finding-stronger-effects-were-found-among-initia` |
+| page | p.1: Recibido: 10/2/2026 / Aceptado: 09/7/2026 / Publicado: 28/07/2026 | 1 | `#pdf-p1` |
+| page | p.2: UDL and AI-based educational personalization: effects on performance and self-regulation | 2 | `#pdf-p2` |
+| page | p.3: Renata Paola Cervantes-Avilés, Jefferson Eduardo Cabrera-Amaiquema, Richard San Lucas-Vane | 3 | `#pdf-p3` |
+| page | p.4: UDL and AI-based educational personalization: effects on performance and self-regulation | 4 | `#pdf-p4` |
+| page | p.5: Renata Paola Cervantes-Avilés, Jefferson Eduardo Cabrera-Amaiquema, Richard San Lucas-Vane | 5 | `#pdf-p5` |
+| page | p.6: UDL and AI-based educational personalization: effects on performance and self-regulation | 6 | `#pdf-p6` |
+| page | p.7: Renata Paola Cervantes-Avilés, Jefferson Eduardo Cabrera-Amaiquema, Richard San Lucas-Vane | 7 | `#pdf-p7` |
+| page | p.8: UDL and AI-based educational personalization: effects on performance and self-regulation | 8 | `#pdf-p8` |
+| page | p.9: Renata Paola Cervantes-Avilés, Jefferson Eduardo Cabrera-Amaiquema, Richard San Lucas-Vane | 9 | `#pdf-p9` |
+| page | p.10: UDL and AI-based educational personalization: effects on performance and self-regulation | 10 | `#pdf-p10` |
+| page | p.11: Renata Paola Cervantes-Avilés, Jefferson Eduardo Cabrera-Amaiquema, Richard San Lucas-Vane | 11 | `#pdf-p11` |
+| page | p.12: UDL and AI-based educational personalization: effects on performance and self-regulation | 12 | `#pdf-p12` |
+| page | p.13: Renata Paola Cervantes-Avilés, Jefferson Eduardo Cabrera-Amaiquema, Richard San Lucas-Vane | 13 | `#pdf-p13` |
+| page | p.14: UDL and AI-based educational personalization: effects on performance and self-regulation | 14 | `#pdf-p14` |
+| page | p.15: Renata Paola Cervantes-Avilés, Jefferson Eduardo Cabrera-Amaiquema, Richard San Lucas-Vane | 15 | `#pdf-p15` |
+| page | p.16: UDL and AI-based educational personalization: effects on performance and self-regulation | 16 | `#pdf-p16` |
+
+## Abstract
+<a id="abstract"></a>
+
+Students with neurodevelopmental disorders (NDD) face persistent https://orcid.org/0009-0001-9898-7477 learning barriers in standardized educational systems that insufficiently address cogni- tive variability. Objective: To evaluate the effectiveness of an educational personaliza- Jefferson Eduardo Cabrera-Amaiquema tion intervention based on Universal Design for Learning (UDL), active methodologies, https://orcid.org/0000-0003-4623-4462 and AI-driven adaptive learning analytics on academic performance, motivation, and self-regulation. Methodology: A concurrent mixed-methods quasi-experimental pre- Richard San Lucas-Vanegas test–posttest design with non-equivalent intact classroom groups was implemented over https://orcid.org/0000-0003-0271-1116 12 weeks with 150 students aged 9–14 from six schools. The intervention group received adaptive learning pathways, multimodal options for representation and expression, and Monserratt Mogrovejo-Rosero structured collaborative tasks, while the comparison group followed regular instructio- https://orcid.org/0009-0006-0373-7907 nal practices. Data were analyzed using ANCOVA controlling for baseline performance, age, diagnosis, and classroom variables. Results: Significant improvements were obser- ved in reading comprehension and mathematical reasoning in the intervention group (d = 0.55–0.63; p < .001), along with moderate gains in motivation and self-regulation. Stronger effects were found among initially low-performing students and in classrooms with higher UDL implementation fidelity. Conclusions: Structured educational perso- nalization supported by ethical learning analytics contributes to reducing learning gaps and strengthening inclusive learning environments, showing potential for scalability through teacher training and shared instructional design resources.
+
+## Keywords
+
+- Educational personalization
+- Inclusive education
+- Learning analytics
+- Neu- rodevelopmental disorders
+- Universal Design for Learning
+
+## Concept index (graph hooks + página)
+
+<a id="concept-educational-personalization"></a>
+### [PDF p.1] Concept: Educational personalization
+- Locator: `R135-udl-and-ai-based-educational-personalization-effects-on-performance-and-self-reg.pdf` · página **1**
+
+<a id="concept-inclusive-education"></a>
+### [PDF p.1] Concept: Inclusive education
+- Locator: `R135-udl-and-ai-based-educational-personalization-effects-on-performance-and-self-reg.pdf` · página **1**
+
+<a id="concept-learning-analytics"></a>
+### [PDF p.1] Concept: Learning analytics
+- Locator: `R135-udl-and-ai-based-educational-personalization-effects-on-performance-and-self-reg.pdf` · página **1**
+
+<a id="concept-neu-rodevelopmental-disorders"></a>
+### [PDF p.1] Concept: Neu- rodevelopmental disorders
+- Locator: `R135-udl-and-ai-based-educational-personalization-effects-on-performance-and-self-reg.pdf` · página **1**
+
+<a id="concept-universal-design-for-learning"></a>
+### [PDF p.1] Concept: Universal Design for Learning
+- Locator: `R135-udl-and-ai-based-educational-personalization-effects-on-performance-and-self-reg.pdf` · página **1**
+
+<a id="concept-r135"></a>
+### [PDF p.?] Concept: R135
+- Locator: `R135-udl-and-ai-based-educational-personalization-effects-on-performance-and-self-reg.pdf` · página **?**
+
+<a id="concept-based"></a>
+### [PDF p.?] Concept: based
+- Locator: `R135-udl-and-ai-based-educational-personalization-effects-on-performance-and-self-reg.pdf` · página **?**
+
+<a id="concept-educational"></a>
+### [PDF p.?] Concept: educational
+- Locator: `R135-udl-and-ai-based-educational-personalization-effects-on-performance-and-self-reg.pdf` · página **?**
+
+<a id="concept-personalization"></a>
+### [PDF p.1] Concept: personalization
+- Locator: `R135-udl-and-ai-based-educational-personalization-effects-on-performance-and-self-reg.pdf` · página **1**
+
+<a id="concept-effects"></a>
+### [PDF p.?] Concept: effects
+- Locator: `R135-udl-and-ai-based-educational-personalization-effects-on-performance-and-self-reg.pdf` · página **?**
+
+<a id="concept-performance"></a>
+### [PDF p.?] Concept: performance
+- Locator: `R135-udl-and-ai-based-educational-personalization-effects-on-performance-and-self-reg.pdf` · página **?**
+
+<a id="concept-self"></a>
+### [PDF p.?] Concept: self
+- Locator: `R135-udl-and-ai-based-educational-personalization-effects-on-performance-and-self-reg.pdf` · página **?**
+
+
+## Findings index (graph hooks + página)
+
+<a id="finding-students-with-neurodevelopmental-disorde"></a>
+### [PDF p.1] Finding: Students with neurodevelopmental disorders (NDD) face persistent https://orcid.org/0009-0001-9898-7477 learning barriers in standardized educational systems that insufficiently address cogni- tive variability.
+- Locator: `R135-udl-and-ai-based-educational-personalization-effects-on-performance-and-self-reg.pdf` · página **1**
+
+<a id="finding-data-were-analyzed-using-ancova-controll"></a>
+### [PDF p.1] Finding: Data were analyzed using ANCOVA controlling for baseline performance, age, diagnosis, and classroom variables.
+- Locator: `R135-udl-and-ai-based-educational-personalization-effects-on-performance-and-self-reg.pdf` · página **1**
+
+<a id="finding-results-significant-improvements-were-o"></a>
+### [PDF p.1] Finding: Results: Significant improvements were obser- ved in reading comprehension and mathematical reasoning in the intervention group (d = 0.55–0.63; p < .001), along with moderate gains in motivation and self-regulation.
+- Locator: `R135-udl-and-ai-based-educational-personalization-effects-on-performance-and-self-reg.pdf` · página **1**
+
+<a id="finding-stronger-effects-were-found-among-initia"></a>
+### [PDF p.1] Finding: Stronger effects were found among initially low-performing students and in classrooms with higher UDL implementation fidelity.
+- Locator: `R135-udl-and-ai-based-educational-personalization-effects-on-performance-and-self-reg.pdf` · página **1**
+
+
+## Relevance hooks
+### Theme relevance: software engineering and accessibility
+### Theme relevance: cognitive accessibility and neurodiversity
+### Theme relevance: evaluation metrics and WCAG
+
+## Sections (detected in PDF)
+
+<a id="p8-8-study-procedure"></a>
+### [PDF p.8] Section: 8 Study procedure
+- Locator: `R135-udl-and-ai-based-educational-personalization-effects-on-performance-and-self-reg.pdf` · página **8** · ancla `#p8-8-study-procedure`
+
+
+## Page chunks (texto por página del PDF)
+
+_Cada heading es un nodo Graphify. El label incluye la página para volver al PDF sin releer todo._
+
+<a id="pdf-p1"></a>
+### [PDF p.1] Recibido: 10/2/2026 | Aceptado: 09/7/2026 | Publicado: 28/07/2026
+- Locator: `R135-udl-and-ai-based-educational-personalization-effects-on-performance-and-self-reg.pdf` · página **1** / 16
+
+Recibido: 10/2/2026 | Aceptado: 09/7/2026 | Publicado: 28/07/2026
+
+
+
+
+UDL and AI-based educational personalization: effects on
+performance and self-regulation
+
+
+
+                                                                                                                                                                                                               ARTÍCULO
+                                                                                                                                                                                                                 RESEARCH
+                                                                                                                                                                                                                        DE ARTICLE
+                                                                                                                                                                                                                           REFLEXIÓN
+Personalización educativa con DUA e IA en TND: efectos en desempeño y autorregulación
+UDL e personalização educacional baseada em IA: efeitos no desempenho e na autorregulação
+
+
+DOI: https://doi.org/10.21803/penamer.19.40.1068
+
+
+                                                               Abstract
+                 Renata Paola Cervantes-Avilés                 Introduction: Students with neurodevelopmental disorders (NDD) face persistent
+         https://orcid.org/0009-0001-9898-7477                 learning barriers in standardized educational systems that insufficiently address cogni-
+                                                               tive variability. Objective: To evaluate the effectiveness of an educational personaliza-
+      Jefferson Eduardo Cabrera-Amaiquema                      tion intervention based on Universal Design for Learning (UDL), active methodologies,
+       https://orcid.org/0000-0003-4623-4462                   and AI-driven adaptive learning analytics on academic performance, motivation, and
+                                                               self-regulation. Methodology: A concurrent mixed-methods quasi-experimental pre-
+                    Richard San Lucas-Vanegas
+                                                               test–posttest design with non-equivalent intact classroom groups was implemented over
+        https://orcid.org/0000-0003-0271-1116
+                                                               12 weeks with 150 students aged 9–14 from six schools. The intervention group received
+                                                               adaptive learning pathways, multimodal options for representation and expression, and
+                Monserratt Mogrovejo-Rosero
+                                                               structured collaborative tasks, while the comparison group followed regular instructio-
+       https://orcid.org/0009-0006-0373-7907
+                                                               nal practices. Data were analyzed using ANCOVA controlling for baseline performance,
+                                                               age, diagnosis, and classroom variables. Results: Significant improvements were obser-
+                                                               ved in reading comprehension and mathematical reasoning in the intervention group
+                                                               (d = 0.55–0.63; p < .001), along with moderate gains in motivation and self-regulation.
+                                                               Stronger effects were found among initially low-performing students and in classrooms
+                                                               with higher UDL implementation fidelity. Conclusions: Structured educational perso-
+                                                               nalization supported by ethical learning analytics contributes to reducing learning gaps
+                                                               and strengthening inclusive learning environments, showing potential for scalability
+                                                               through teacher training and shared instructional design resources.
+
+                                                               Keywords: Educational personalization; Inclusive education; Learning analytics; Neu-
+                                                               rodevelopmental disorders; Universal Design for Learning.
+
+
+
+
+                                                                                                                                                           Esta obra está bajo una Licencia Creative Commons
+                                                               Resumen
+                                                               Introducción: Los estudiantes con trastornos del neurodesarrollo (TND) enfrentan
+                                                               barreras persistentes de aprendizaje en sistemas educativos estandarizados que no res-
+                                                               ponden adecuadamente a la variabilidad cognitiva. Objetivo: Evaluar la efectividad de
+
+
+
+
+                                                                                                                                                           "Reconocimiento No Comercial Sin Obra Derivada".
+                                                               una intervención de personalización educativa basada en el Diseño Universal para el
+                                                               Aprendizaje (DUA), metodologías activas y analítica de aprendizaje adaptativa mediada
+                        ¿Cómo citar este artículo?
+                                                               por inteligencia artificial. Metodología: Se aplicó un diseño mixto concurrente, cuasiex-
+ Cervantes-Avilés, R., Cabrera-Amaiquema,                      perimental, con grupos de aula intactos no equivalentes y mediciones pretest–postest
+ J., San Lucas-Vanegas, R., Mogrovejo-Rosero,                  durante 12 semanas, en una muestra de 150 estudiantes de 9 a 14 años pertenecientes a
+ M. (2026). UDL and AI-based educational                       seis instituciones educativas. El grupo de intervención recibió itinerarios adaptativos,
+ personalization: effects on performance and                   opciones multimodales de representación y expresión, y tareas colaborativas estructu-
+ self-regulation. Pensamiento Americano,                       radas; el grupo de comparación mantuvo la práctica habitual. Los datos se analizaron
+ e#:1068 19(40), DOI:              https://doi.                mediante ANCOVA, controlando desempeño inicial, edad, diagnóstico y variables de
+ org/10.21803/penamer.19.40.1068                               aula. Resultados: Se observaron mejoras significativas en comprensión lectora y razo-
+                                                               namiento matemático (d = 0,55–0,63; p < 0,001), así como incrementos moderados en
+                                                               motivación y autorregulación. Los efectos fueron mayores en estudiantes con bajo des-                   1
+                                                               empeño inicial y en aulas con alta fidelidad de implementación del DUA. Conclusiones:
+                                                               La personalización educativa estructurada, apoyada en analítica de aprendizaje ética,
+                                                               contribuye a reducir brechas de aprendizaje y fortalecer entornos educativos inclusivos.
+
+                                                               Palabras clave: Trastornos del neurodesarrollo; personalización educativa; Diseño
+                                                               Universal para el Aprendizaje; analítica del aprendizaje; educación inclusiva.
+
+
+
+  Pensamiento Americano Vol. 19 - No. 40 e#1068 • 2026 • Mayo-Agosto• Corporación Universitaria Americana
+  Barranquilla, Colombia ISSN-e: 2745-1402 • http://publicaciones.americana.edu.co/index.php/pensamientoamericano/index
+
+<a id="pdf-p2"></a>
+### [PDF p.2] UDL and AI-based educational personalization: effects on performance and self-regulation
+- Locator: `R135-udl-and-ai-based-educational-personalization-effects-on-performance-and-self-reg.pdf` · página **2** / 16
+
+UDL and AI-based educational personalization: effects on performance and self-regulation
+
+
+
+                                                                                                                                       Resumo
+
+                                                                                                                                       Introdução: Estudantes com transtornos do neurodesenvolvimento (TND) enfrentam
+                                                                                                                                       barreiras persistentes de aprendizagem em sistemas educacionais padronizados que não
+                                                                                                                                       consideram adequadamente a variabilidade cognitiva. Objetivo: Avaliar a efetividade de
+
+
+
+
+RESEARCH ARTICLE
+                                                                                                                                       uma intervenção de personalização educacional baseada no Desenho Universal para
+                                                                                                                                       a Aprendizagem (DUA), metodologias ativas e analítica de aprendizagem adaptativa
+                                                                                                                                       mediada por inteligência artificial. Metodologia: Foi adotado um delineamento mis-
+                                                                                                                                       to concorrente, quase-experimental, com grupos de turmas intactas não equivalentes
+                                                                                                                                       e medições pré e pós-intervenção ao longo de 12 semanas, envolvendo 150 estudantes
+                                                                                                                                       de 9 a 14 anos de seis escolas. O grupo de intervenção recebeu percursos adaptativos de
+                                                                                                                                       aprendizagem, opções multimodais de representação e expressão, e tarefas colaborati-
+                                                                                                                                       vas estruturadas, enquanto o grupo de comparação manteve a prática pedagógica usual.
+                                                                                                                                       Os dados foram analisados por meio de ANCOVA, controlando variáveis iniciais e con-
+                                                                                                                                       textuais. Resultados: Foram identificadas melhorias significativas em compreensão
+                                                                                                                                       leitora e raciocínio matemático (d = 0,55–0,63; p < 0,001), além de ganhos moderados
+                                                                                                                                       em motivação e autorregulação, especialmente entre estudantes com baixo desempenho
+                                                                                                                                       inicial. Conclusões: A personalização educacional estruturada contribui para reduzir
+                                                                                                                                       desigualdades de aprendizagem e fortalecer ambientes educacionais inclusivos, com po-
+                                                                                                                                       tencial de escalabilidade mediante formação docente.
+
+                                                                                                                                       Palavras-chave: Personalização educacional; Educação inclusiva; Análise de aprendi-
+                                                                                                                                       zagem; Transtornos do desenvolvimento neurológico; Design Universal para a Apren-
+                                                                                                                                       dizagem.
+
+
+
+
+                   Esta obra está bajo una Licencia Creative Commons
+
+
+
+
+                   "Reconocimiento No Comercial Sin Obra Derivada".
+
+
+
+
+                               2
+
+
+
+
+                                                                       Pensamiento Americano Vol. 19 - No. 40 e#1068 • 2026 • Mayo-Agosto• Corporación Universitaria Americana
+                                                                       Barranquilla, Colombia ISSN-e: 2745-1402 • http://publicaciones.americana.edu.co/index.php/pensamientoamericano/index
+
+<a id="pdf-p3"></a>
+### [PDF p.3] Renata Paola Cervantes-Avilés, Jefferson Eduardo Cabrera-Amaiquema, Richard San Lucas-Vanegas y Monserratt Mogrovejo-Rosero
+- Locator: `R135-udl-and-ai-based-educational-personalization-effects-on-performance-and-self-reg.pdf` · página **3** / 16
+
+Renata Paola Cervantes-Avilés, Jefferson Eduardo Cabrera-Amaiquema, Richard San Lucas-Vanegas y Monserratt Mogrovejo-Rosero
+
+
+
+
+      1. INTRODUCTION
+
+    In the real school – not the one idealized in the regulations – diversity is no exception; it is the ba-
+seline. There, students with neurodevelopmental disorders (NDD) such as ADHD, dyslexia, dyscalculia
+
+
+
+                                                                                                                                                                                  RESEARCH ARTICLE
+and ASD live with standardized curricula that, by design, tend to make singularities invisible. The central
+challenge is how to implement personalization with methodological rigor, empirical evidence, and sus-
+tainability (Acosta et al., 2022; Peláez et al., 2022; Serrano-Macías, 2022). In the previous phase of this
+study, it was shown that educational personalization, supported by Universal Design for Learning (UDL),
+active methodologies and adaptive technologies, improves both cognitive (comprehension, problem-sol-
+ving) and non-cognitive (motivation, self-regulation, participation) competencies.
+
+    Recent meta-analyses have shown that students with neurodevelopmental disorders (NDD) consis-
+tently underperform in literacy and numeracy outcomes when exposed to uniform instructional models
+(Forbes et al., 2024; UNESCO, 2020). Despite progress in inclusive policy frameworks, classroom practi-
+ces often remain standardized, limiting cognitive accessibility. This update broadens the empirical scope,
+refines the methodological design, and deepens the statistical and qualitative analysis, to offer a clearer
+map of results, implementation conditions, and opportunity costs.
+
+    However, current evidence on educational personalization frequently isolates either assistive tech-
+nologies or UDL strategies, while few empirical studies examine their combined effect with AI-driven
+adaptive learning within natural classroom ecologies. Moreover, there is limited quasi-experimental evi-
+dence documenting the magnitude of learning gains and the moderating role of implementation fidelity
+in inclusive educational interventions.
+
+    We support three working hypotheses: (H1) personalized itineraries with adaptive feedback produce
+statistically significant improvements in academic performance compared to traditional teaching; (H2)
+the combination of personalization + collaboration (hybrid model) has a greater impact on socio-emotio-
+
+
+
+                                                                                                                              Esta obra está bajo una Licencia Creative Commons
+nal indicators than isolated personalization; (H3) the quality of implementation—teacher training, UDL
+scaffold density, and fidelity to the intervention—explains a substantial portion of the variance in the re-
+sults.
+
+    Therefore, this study aims to estimate the net effect of an integrated UDL+AI personalization model
+
+
+                                                                                                                              "Reconocimiento No Comercial Sin Obra Derivada".
+on academic performance, motivation, and self-regulation among students with NDD, while examining
+how implementation fidelity explains classroom-level variance. The conceptual framework is based on
+four pillars: (i) Universal Design for Learning (UDL), which guarantees multiple forms of representa-
+tion, action/expression and participation; (ii) adaptive learning with AI, which calibrates difficulty and
+content in real time; (iii) active methodologies (PBL, project-based learning and arts-based expressive
+learning activities) capable of linking meaning, challenge and agency; and (iv) multimodal assessment
+(brief standardized tests, analytical rubrics, and learning analytics) to observe changes at the classroom
+and student levels.
+                                                                                                                                          3
+    This update dialogues with recent advances in neuroeducation, developmental psychopathology and
+technologies for NDD, and assumes a designed equity approach: it is not enough to allow access; design
+must account for learner variability. In terms of public policy, the argument is pragmatic: personalization
+is not a pedagogical ornament, but a cost-effective strategy to reduce lags, improve permanence, and in-
+crease the social return on educational spending, especially in contexts with cultural and technological
+
+
+Pensamiento Americano Vol. 19 - No. 40 e#1068 • 2026 • Mayo-Agosto• Corporación Universitaria Americana
+Barranquilla, Colombia ISSN-e: 2745-1402 • http://publicaciones.americana.edu.co/index.php/pensamientoamericano/index
+
+<a id="pdf-p4"></a>
+### [PDF p.4] UDL and AI-based educational personalization: effects on performance and self-regulation
+- Locator: `R135-udl-and-ai-based-educational-personalization-effects-on-performance-and-self-reg.pdf` · página **4** / 16
+
+UDL and AI-based educational personalization: effects on performance and self-regulation
+
+
+
+
+                                                                       capital gaps. Hence, we insist on integrating personalization into the core of teaching practice and acade-
+                                                                       mic management instruments (planning, monitoring, evaluation, professional development).
+
+                                                                           Operationally, this update incorporates: (a) an expanded and stratified sampling; (b) a fidelity proto-
+
+
+
+RESEARCH ARTICLE
+                                                                       col to the intervention with classroom observation and UDL checklist; (c) learning traces (logs) to esti-
+                                                                       mate response to the intervention by subgroups; and (d) a mixed analysis that triangulates magnitudes
+                                                                       (Cohen’s d, OR, 95% CI) with student and teacher narratives. The result is a more robust empirical pictu-
+                                                                       re that allows us to move from “it works” to “it works, how much and under what conditions”.
+
+                                                                           This study contributes to the literature in three ways: (1) it provides quasi-experimental evidence of
+                                                                       the combined effect of UDL and AI-driven adaptive learning; (2) it quantifies the role of implementation
+                                                                       fidelity as a moderator of learning gains; and (3) it offers a scalable instructional model tested in natural
+                                                                       classroom conditions.
+
+
+
+
+                                                                             2. THEORETICAL FRAMEWORK
+
+                                                                           The variability of learning is a structural condition of contemporary classrooms and not a pedagogi-
+                                                                       cal exception. In contexts where students with neurodevelopmental disorders (NDD) participate—such
+                                                                       as ADHD, autism spectrum disorders, dyslexia, and dyscalculia—homogeneous instructional models of-
+                                                                       ten generate barriers associated with differences in attentional regulation, sensory processing, executive
+                                                                       functions, and cognitive styles (Crasta et al., 2021; Pazmiño et al., 2024; Tombolini et al., 2025). The li-
+                                                                       terature on inclusive education agrees that performance and participation difficulties are not explained
+                                                                       only by individual characteristics, but by learning environments that do not consider neurocognitive di-
+                                                                       versity as a starting point for pedagogical design (Amaiquema, 2022; UNESCO, 2020).
+
+
+
+
+                   Esta obra está bajo una Licencia Creative Commons
+                                                                           From this perspective, educational inclusion requires shifting the focus from subsequent adaptation
+                                                                       to proactive instructional design. Universal Design for Learning (UDL) is consolidated as an architecture
+                                                                       of equity that integrates multiple forms of representation, action and expression, and participation from
+                                                                       didactic planning. This framework makes it possible to anticipate barriers and offer alternative routes of
+                                                                       access to knowledge, favouring autonomy, commitment and self-regulation (Amaiquema, 2022; Guerre-
+
+
+                   "Reconocimiento No Comercial Sin Obra Derivada".
+                                                                       ro-Altamirano, 2023; Priyadharsini & Sahaya Mary, 2024; Vega Rivera, 2024). Evidence suggests that the
+                                                                       systematic application of UDL principles is associated with greater participation and persistence, parti-
+                                                                       cularly in students with diverse learning profiles (Peng & Li, 2025; Tombolini et al., 2025).
+
+                                                                           In parallel, artificial intelligence (AI) applied to education has promoted adaptive learning systems
+                                                                       capable of adjusting pace, difficulty and content sequences based on student response patterns. These
+                                                                       systems use predictive models, real-time feedback, and performance analytics to generate differentiated
+                                                                       learning trajectories (Peng & Li, 2025; Rivadeneira, 2024; Serrano-Macías et al., 2024; Singh, 2024). In
+                               4                                       populations with NDD, this form of adaptation may reduce cognitive overload, improve attentional re-
+                                                                       gulation, and facilitate learning consolidation by aligning task demands with individual learner profiles
+                                                                       (Riaz, 2024).
+
+                                                                          However, the literature warns that a large part of educational AI developments prioritizes algorith-
+                                                                       mic optimization without an explicit pedagogical anchor, which limits its coherence with inclusive trai-
+
+
+                                                                       Pensamiento Americano Vol. 19 - No. 40 e#1068 • 2026 • Mayo-Agosto• Corporación Universitaria Americana
+                                                                       Barranquilla, Colombia ISSN-e: 2745-1402 • http://publicaciones.americana.edu.co/index.php/pensamientoamericano/index
+
+<a id="pdf-p5"></a>
+### [PDF p.5] Renata Paola Cervantes-Avilés, Jefferson Eduardo Cabrera-Amaiquema, Richard San Lucas-Vanegas y Monserratt Mogrovejo-Rosero
+- Locator: `R135-udl-and-ai-based-educational-personalization-effects-on-performance-and-self-reg.pdf` · página **5** / 16
+
+Renata Paola Cervantes-Avilés, Jefferson Eduardo Cabrera-Amaiquema, Richard San Lucas-Vanegas y Monserratt Mogrovejo-Rosero
+
+
+
+
+ning objectives (Peng & Li, 2025). The integration of AI with frameworks such as UDL makes it possible
+to align technological adaptation with higher-order educational goals, such as motivation, agency, and
+self-regulation, overcoming approaches focused exclusively on performance (Amaiquema, 2022; Singh,
+2024). In this scenario, learning analytics fulfills a formative function by transforming interaction data
+
+
+
+                                                                                                                                                                                  RESEARCH ARTICLE
+into inputs for adjusted feedback and informed didactic decision-making (Riaz, 2024). When used as a
+scaffolding, and not as a surveillance mechanism, analytics favors metacognitive processes and student
+self-regulation.
+
+    The effectiveness of these innovations depends, however, on the quality of their implementation. Re-
+search on inclusive education shows that variability in outcomes is associated with teacher training, ins-
+tructional design coherence, and adherence to established pedagogical frameworks (Campelo et al., 2024;
+Ianniello & Corona, 2023; Lara-Cruz et al., 2020; Perrin et al., 2021). Implementation of fidelity, measured
+through structured classroom observation and alignment with UDL criteria, is recognized as a moderating
+factor that may explain differences between classrooms and contribute to the replicability of intervention
+effects (Delgado-Mendoza et al., 2024; Peng & Li, 2025). Likewise, the sustainability of personalization mo-
+dels requires installed professional capacity, collaborative work, and instructional improvement cycles that
+allow technology to be integrated into consolidated pedagogical practices (Amaiquema, 2022).
+
+    Ethical considerations are added to these dimensions. Recent literature warns that AI-based perso-
+nalization can reproduce inequalities if it is not articulated with frameworks of equity, data protection,
+and technological accessibility (Arzaga & Mendoza, 2023; Riaz, 2024; Singh, 2024). Therefore, educatio-
+nal personalization only contributes to educational justice when it is integrated with principles of inclu-
+sion, formative assessment, and contextualized professional supervision.
+
+    The evidence available in the referenced research and others that were identified during the docu-
+mentary research shows advances in UDL, adaptive personalization and learning analytics, but also re-
+veals an empirical gap: there are few quasi-experimental studies that examine in an integrated way the
+
+
+
+                                                                                                                              Esta obra está bajo una Licencia Creative Commons
+combined effect of UDL, adaptive AI and implementation fidelity in real classroom contexts. This gap is
+the basis for the relevance of this study.
+
+
+
+
+                                                                                                                              "Reconocimiento No Comercial Sin Obra Derivada".
+      3. METHODOLOGY
+
+     The study adopted a concurrent mixed-methods approach, integrating quantitative and qualitative
+data collected and analyzed in parallel to provide a comprehensive understanding of the intervention and
+its effects. A quasi-experimental pretest–posttest design with non-equivalent groups was implemented
+over 12 weeks. Random assignment at the individual level was not conducted because the intervention
+was applied within existing classroom structures. Therefore, intact classrooms were allocated to either
+the intervention or comparison condition according to institutional feasibility, while baseline statistical
+controls were used to reduce potential selection bias.                                                                                    5
+
+
+   The methodological objective was to estimate the net effect of an educational personalization inter-
+vention based on Universal Design for Learning (UDL) and adaptive artificial intelligence, compared to
+usual pedagogical practice, as well as to explain the variability of the results between classrooms through
+implementation fidelity.
+
+
+Pensamiento Americano Vol. 19 - No. 40 e#1068 • 2026 • Mayo-Agosto• Corporación Universitaria Americana
+Barranquilla, Colombia ISSN-e: 2745-1402 • http://publicaciones.americana.edu.co/index.php/pensamientoamericano/index
+
+<a id="pdf-p6"></a>
+### [PDF p.6] UDL and AI-based educational personalization: effects on performance and self-regulation
+- Locator: `R135-udl-and-ai-based-educational-personalization-effects-on-performance-and-self-reg.pdf` · página **6** / 16
+
+UDL and AI-based educational personalization: effects on performance and self-regulation
+
+
+
+
+                                                                             Institutional context and allocation of participants
+
+                                                                           The study was implemented in six urban and peri-urban educational units belonging to the Fe y Ale-
+                                                                       gría Ecuador network, allied to the JEP PHASE II project: “Games of Expression from the Visual Arts:
+
+
+
+RESEARCH ARTICLE
+                                                                       Spaces, Methodologies and Links from, for and through the Arts”.
+
+                                                                           Participants were allocated to the intervention or comparison condition at the classroom level rather
+                                                                       than individually. Existing classroom groups were maintained to avoid disruption of regular instruction,
+                                                                       academic segregation, or stigmatization. The allocation of intact classrooms was determined by insti-
+                                                                       tutional feasibility, including scheduling, teacher availability, and access to the technological resources
+                                                                       required for the intervention. Consequently, the study followed a non-randomized quasi-experimental
+                                                                       design with non-equivalent groups.
+
+                                                                       Table 1
+                                                                       Diagnoses reported by institutional psychopedagogical teams
+                                                                                        Diagnosis                                 %
+                                                                        ADHD                                                    39%
+                                                                        ASD Level 1–2                                           27%
+                                                                        Dyslexia                                                19%
+                                                                        Discalculia                                              9%
+                                                                        Comorbidities or others                                  6%
+                                                                        Note. N = 150 students between 9 and 14 years of age participated.
+
+                                                                           24 teachers (M = 8 years of experience) also participated. Across the six participating institutions,
+                                                                       intact classrooms were organized into two pedagogical conditions:
+
+
+
+
+                   Esta obra está bajo una Licencia Creative Commons
+                                                                             •     Intervention: UDL - and AI-based educational personalization combined with structured colla-
+                                                                                   borative activities.
+
+                                                                             •     Comparison: regular instructional practice with non-systematic educational supports.
+
+
+
+                   "Reconocimiento No Comercial Sin Obra Derivada".
+                                                                             Pedagogical intervention
+
+                                                                          The intervention lasted 12 weeks, with 4 weekly sessions (50–60 minutes), and integrated six com-
+                                                                       ponents:
+
+                                                                             1. Personalized learning pathways delivered through AI-based adaptive platforms.
+                                                                             2. UDL-based instructional planning incorporating multiple means of representation, action and
+                                                                                expression, and engagement.
+                               6                                             3. Active methodologies, including project-based learning and visual arts-based expressive activi-
+                                                                                ties.
+                                                                             4. A collaborative hybrid model combining learning stations and short-term projects.
+                                                                             5. Biweekly teacher coaching supported by continuous improvement cycles.
+                                                                             6. Learning analytics supported by student progress dashboards.
+
+
+
+                                                                       Pensamiento Americano Vol. 19 - No. 40 e#1068 • 2026 • Mayo-Agosto• Corporación Universitaria Americana
+                                                                       Barranquilla, Colombia ISSN-e: 2745-1402 • http://publicaciones.americana.edu.co/index.php/pensamientoamericano/index
+
+<a id="pdf-p7"></a>
+### [PDF p.7] Renata Paola Cervantes-Avilés, Jefferson Eduardo Cabrera-Amaiquema, Richard San Lucas-Vanegas y Monserratt Mogrovejo-Rosero
+- Locator: `R135-udl-and-ai-based-educational-personalization-effects-on-performance-and-self-reg.pdf` · página **7** / 16
+
+Renata Paola Cervantes-Avilés, Jefferson Eduardo Cabrera-Amaiquema, Richard San Lucas-Vanegas y Monserratt Mogrovejo-Rosero
+
+
+
+
+      Instruments
+
+Table 2
+General structure of variables considered in the research
+
+
+
+                                                                                                                                                                                                 RESEARCH ARTICLE
+                 Variable                                                                  Instrument
+ Academic performance                          Brief tests constructed by the team based on adaptations of the
+                                               questionnaire of disciplinary knowledge of the National Institute of
+                                               Evaluation
+ Motivation and self-regu-                     MSLQ – Motivated Strategies for Learning Questionnaire
+ lation
+ Participation                                 Analytical rubric 1–4
+ Implementation fidelity                       UDL Checklist (15 items) + structured observation
+ Digital Analytics                             Adaptive Platform Logs
+ Note.All instruments showed adequate internal consistency (α ≥.82).
+
+
+    In this table the independent variable associated with the educational intervention, the dependent va-
+riables related to the academic and socio-emotional performance of the students, as well as the moderating
+variable corresponding to the fidelity of implementation are identified. It also includes the control variables
+used to reduce potential confounding effects derived from individual and contextual characteristics.
+
+Table 3
+Operationalization of variables
+   Variable Type                            Variable                                                   Operational definition
+ Independent                  Educational intervention                    Educational personalization model based on Universal Design
+                                                                          for Learning (UDL), adaptive artificial intelligence and active
+
+
+
+                                                                                                                                             Esta obra está bajo una Licencia Creative Commons
+                                                                          methodologies, applied over 12 weeks.
+ Dependent                    Academic performance                        Performance in reading comprehension and mathematical
+                                                                          reasoning tests measured in pre-test and post-test.
+ Dependent                    Academic motivation                         Level of interest, value of the task and orientation to goals of
+                                                                          the student.
+
+
+                                                                                                                                             "Reconocimiento No Comercial Sin Obra Derivada".
+ Dependent                    Self-regulation                             The student’s ability to plan, monitor, and evaluate their own
+                                                                          learning.
+ Dependent                    Participation                               Degree of active involvement, collaboration and quality of
+                                                                          contribution in classroom activities.
+ Moderator                    Implementation fidelity                     Level of compliance with the UDL + AI model by the teacher
+                                                                          during the intervention.
+ Control                      Contextual variables                        Age, main diagnosis, initial reading level, teaching experience,
+                                                                          class size and available resources.
+                                                                                                                                                         7
+
+
+    This table details the operationalization of the study variables, specifying the observable indicators,
+the instruments used to measure them, and the type of scale used. This operationalization ensures cohe-
+rence between the theoretical constructs and their empirical measurement, facilitating the replicability
+of the study and the internal validity of the analyses performed.
+
+
+Pensamiento Americano Vol. 19 - No. 40 e#1068 • 2026 • Mayo-Agosto• Corporación Universitaria Americana
+Barranquilla, Colombia ISSN-e: 2745-1402 • http://publicaciones.americana.edu.co/index.php/pensamientoamericano/index
+
+<a id="pdf-p8"></a>
+### [PDF p.8] UDL and AI-based educational personalization: effects on performance and self-regulation
+- Locator: `R135-udl-and-ai-based-educational-personalization-effects-on-performance-and-self-reg.pdf` · página **8** / 16
+
+UDL and AI-based educational personalization: effects on performance and self-regulation
+
+
+
+
+                                                                       Table 4
+                                                                       Data collection instruments
+                                                                             Variable                                Indicators                                                Instrument                          Scale
+
+
+
+
+RESEARCH ARTICLE
+                                                                        Academic per-              Literal, inferential and critical                        Short tests adapted from the ques-     Score 0–100
+                                                                        formance                   comprehension; Numerical rea-                            tionnaire of disciplinary knowledge of
+                                                                                                   soning                                                   the National Institute of Evaluation
+                                                                        Academic mo-               Task value, intrinsic goals, learning MSLQ (adapted)                                                       Likert 1–5
+                                                                        tivation                   control
+                                                                        Self-regulation            Planning, monitoring, self-reflec-                       MSLQ (subscales)                                  Likert 1–5
+                                                                                                   tion
+                                                                        Participation              Frequency, quality of input, colla-                      Analytical rubric                                 Scale 1–4
+                                                                                                   boration
+                                                                        Implementa-                Use of UDL principles, adaptation, UDL Checklist (15 ítems)                                                Complies /
+                                                                        tion fidelity              feedback                                                                                                   Not Complies
+
+
+                                                                           This table describes the instruments used for the collection of quantitative and qualitative data, indi-
+                                                                       cating their purpose, type of information generated, and levels of reliability where applicable. The com-
+                                                                       bination of standardized instruments, analytical rubrics, and digital records made it possible to capture
+                                                                       both the learning outcomes and the implementation processes and experience of the participants.
+
+                                                                       Table 5
+                                                                       Analytical design of the study
+                                                                                     Instrument                                                     Purpose                                      Data type      Reliability
+                                                                        Short academic tests                           Measuring academic performance                                          Quantitative    a ≥ .82
+                                                                        Adapted MSLQ                                   Assess motivation and self-regulation                                   Quantitative    a ≥ .88
+                                                                        Participation rubric                           Observe interaction and collaboration                                   Quantitative    k ≥ .81
+
+
+
+
+                   Esta obra está bajo una Licencia Creative Commons
+                                                                        UDL Checklist                                  Assess implementation fidelity                                          Quantitative    and ≥ .84
+                                                                        Platform logs                                  Analyze Learning Behavior                                               Quantitative    —
+                                                                        Semi-structured interviews                     Exploring teacher and student perceptions                               Qualitative     —
+                                                                        Focus groups                                   Gather Family Perspective                                               Qualitative     —
+
+
+
+                   "Reconocimiento No Comercial Sin Obra Derivada".
+                                                                        Teacher reflective journals                    Analyze pedagogical processes                                           Qualitative     —
+
+
+                                                                           The table five summarizes the analysis techniques applied according to the methodological objectives
+                                                                       of the study. A distinction is made between the statistical procedures used to estimate the effect of the in-
+                                                                       tervention and the magnitude of the results, as well as the qualitative analysis and triangulation strategies
+                                                                       used to integrate the different sources of information.
+
+                                                                       Table 6
+                               8                                       Study procedure
+                                                                                         Objective                                               Analysis technique                                    Software
+                                                                        Estimate Intervention Effect                          ANCOVA (post-test adjusted for pretest)                             SPSS v21
+                                                                        Compare Subgroups                                     ANCOVA by strata                                                    SPSS v21
+                                                                        Calculate effect magnitude                            Cohen’s d, partial η², 95% CI                                       SPSS v21
+
+
+                                                                       Pensamiento Americano Vol. 19 - No. 40 e#1068 • 2026 • Mayo-Agosto• Corporación Universitaria Americana
+                                                                       Barranquilla, Colombia ISSN-e: 2745-1402 • http://publicaciones.americana.edu.co/index.php/pensamientoamericano/index
+
+<a id="pdf-p9"></a>
+### [PDF p.9] Renata Paola Cervantes-Avilés, Jefferson Eduardo Cabrera-Amaiquema, Richard San Lucas-Vanegas y Monserratt Mogrovejo-Rosero
+- Locator: `R135-udl-and-ai-based-educational-personalization-effects-on-performance-and-self-reg.pdf` · página **9** / 16
+
+Renata Paola Cervantes-Avilés, Jefferson Eduardo Cabrera-Amaiquema, Richard San Lucas-Vanegas y Monserratt Mogrovejo-Rosero
+
+
+
+
+                   Objective                                              Analysis technique                                Software
+ Analyze experiences                                   Mixed thematic coding                                            NVivo / ATLAS.O
+ Integrate results                                     Methodological triangulation                                     Manual analysis
+
+
+
+
+                                                                                                                                                                                              RESEARCH ARTICLE
+    The table six summarizes the phases of the study sequentially, from baseline to data analysis. This
+temporal structure allows the development of the research process to be clearly visualized, ensuring me-
+thodological transparency and facilitating the understanding of the flow of activities carried out during
+the intervention.
+
+   Ethical considerations
+   Informed consent, anonymization, data protection, teacher training in responsible use of analytics.
+Review of biases and external methodological audit.
+
+
+
+
+      4 . RESULTS
+
+    The results are presented in coherence with the quasi-experimental mixed design described in the
+Methodology section and based on the objective of estimating the net effect of the educational persona-
+lization intervention based on UDL and artificial intelligence, as well as explaining the variability of the
+results between classrooms through implementation fidelity.
+
+    Table 1 summarizes the sociodemographic and diagnostic characteristics of the total sample (n = 150).
+The distribution by sex shows a male predominance (59%), consistent with the reported prevalence of
+neurodevelopmental disorders. The age range is mainly concentrated between 9 and 11 years old (55%), a
+key stage for the development of reading skills and mathematical reasoning.
+
+
+
+
+                                                                                                                                          Esta obra está bajo una Licencia Creative Commons
+   The most frequent diagnosis was ADHD (39%), followed by ASD levels 1–2 (27%), dyslexia (19%), and
+dyscalculia (9%). The distribution by condition was balanced, with 51% of students in the Intervention
+condition and 49% in the Comparison condition, which favors the stability of the comparative analyses.
+
+Table 7
+
+
+                                                                                                                                          "Reconocimiento No Comercial Sin Obra Derivada".
+Characterization of the sample (n = 150)
+              Variable                                  Category                                n (%)
+ Sex                                       Female                                             62 (41%)
+                                           Male                                               88 (59%)
+ Age Range                                 9–11                                               83 (55%)
+                                           12–14                                              67 (45%)
+ Primary diagnosis                         ADHD                                               59 (39%)
+                                           ASD (Levels 1–2)                                   41 (27%)                                                9
+
+                                           Dyslexia                                           29 (19%)
+                                           Discalculia                                         14 (9%)
+                                           Other/comorbidities                                  7 (6%)
+
+
+
+
+Pensamiento Americano Vol. 19 - No. 40 e#1068 • 2026 • Mayo-Agosto• Corporación Universitaria Americana
+Barranquilla, Colombia ISSN-e: 2745-1402 • http://publicaciones.americana.edu.co/index.php/pensamientoamericano/index
+
+<a id="pdf-p10"></a>
+### [PDF p.10] UDL and AI-based educational personalization: effects on performance and self-regulation
+- Locator: `R135-udl-and-ai-based-educational-personalization-effects-on-performance-and-self-reg.pdf` · página **10** / 16
+
+UDL and AI-based educational personalization: effects on performance and self-regulation
+
+
+
+
+                                                                                    Variable                                  Category                                 n (%)
+                                                                        Condition                                Intervention                                        76 (51%)
+                                                                                                                 Comparison                                         74 (49%)
+
+
+
+
+RESEARCH ARTICLE
+                                                                       Note. According to the ANCOVA model specified in the methodology, controlling for initial performance, age, diag-
+                                                                       nosis, teaching experience, and class size, statistically significant improvements were observed in favor of the Inter-
+                                                                       vention in reading comprehension and mathematical reasoning condition.
+
+                                                                           As shown in table seven, the Intervention condition presented a notable standardized gain in rea-
+                                                                       ding comprehension (Δ = +0.59), higher than that observed in the Comparison condition (Δ = +0.21). The
+                                                                       effect of the condition was significant (F(1.141) = 19.6, p < 0.001), with a medium-high effect size (d = 0.63;
+                                                                       95% CI [0.34, 0.92]).
+
+                                                                           Similar results were observed in mathematical reasoning, where the Intervention condition achieved a
+                                                                       standardized gain of +0.50 versus +0.17 in the Comparison condition. The ANCOVA analysis indicated a signi-
+                                                                       ficant effect of the intervention (F(1.141) = 15.2, p < 0.001), with a mean effect size (d = 0.55; 95% CI [0.27, 0.84]).
+
+                                                                            In addition, a significant interaction was identified between the experimental condition and the ini-
+                                                                       tial performance level (p = 0.012), indicating that students with low initial performance obtained greater
+                                                                       relative gains, suggesting an equity effect of the intervention.
+
+                                                                       Table 8
+                                                                       Pre-post academic results by condition (standardized means and SD)
+                                                                                    Measurement                             Condition                Pre (M, DE)                 Post (M, DE)        D             d
+                                                                        Reading comprehension                            Intervention              0,02 (0,98)                 0,61 (0,89)       +0,59        0,63
+                                                                                                                         Comparison                0,01 (1,01)                 0,22 (0,97)       +0,21        —
+                                                                        Mathematical reasoning                           Intervention              −0,04 (1,02)                0,46 (0,91)       +0,50        0,55
+                                                                                                                         Comparison                0,00 (0,99)                 0,17 (0,95)       +0,17        —
+
+
+                   Esta obra está bajo una Licencia Creative Commons
+                                                                        Note. ANCOVA results controlling pre-test and contextual covariates. IC95% available in technical annex.
+
+                                                                       Figure 1
+                                                                       Pre-post changes in academic performance by condition
+
+
+                   "Reconocimiento No Comercial Sin Obra Derivada".
+
+
+
+
+                        10
+
+
+
+
+                                                                       Note. Bar graph with adjusted means (ANCOVA) for reading comprehension and mathematical reasoning.
+
+
+                                                                       Pensamiento Americano Vol. 19 - No. 40 e#1068 • 2026 • Mayo-Agosto• Corporación Universitaria Americana
+                                                                       Barranquilla, Colombia ISSN-e: 2745-1402 • http://publicaciones.americana.edu.co/index.php/pensamientoamericano/index
+
+<a id="pdf-p11"></a>
+### [PDF p.11] Renata Paola Cervantes-Avilés, Jefferson Eduardo Cabrera-Amaiquema, Richard San Lucas-Vanegas y Monserratt Mogrovejo-Rosero
+- Locator: `R135-udl-and-ai-based-educational-personalization-effects-on-performance-and-self-reg.pdf` · página **11** / 16
+
+Renata Paola Cervantes-Avilés, Jefferson Eduardo Cabrera-Amaiquema, Richard San Lucas-Vanegas y Monserratt Mogrovejo-Rosero
+
+
+
+
+    The socio-emotional indicators showed a trend consistent with academic results. As can be seen in
+Table 3, the Intervention condition outperformed the Comparison in academic motivation and self-re-
+gulation, with average increases of +0.8 points in both indicators and mean effect sizes (d = 0.48 and d =
+0.51; p < 0.01).
+
+
+
+                                                                                                                                                                                    RESEARCH ARTICLE
+    Active participation in the classroom, assessed by analytical rubric (scale 1–4), increased on average by 0.7
+points in the Intervention condition, while the Comparison condition showed marginal increases (+0.2).
+
+Table 9
+Socio-emotional and participation indicators (pre-post)
+                     Indicator                                 Condition                 Pre         Post           D     d
+                                                             Intervention                 3,1         3,9         +0,8   0,48
+        Academic motivation (1–5)
+                                                             Comparison                   3,1         3,4         +0,3    —
+                                                             Intervention                2,9          3,7         +0,8   0,51
+            Self-regulation (1–5)
+                                                             Comparison                  2,9          3,2         +0,3    —
+                                                             Intervention                2,2          2,9         +0,7    —
+              Participation (1–4)
+                                                             Comparison                  2,2          2,4         +0,2    —
+
+
+Figure 2
+Evolution of motivation, self-regulation and participation
+
+
+
+
+                                                                                                                                Esta obra está bajo una Licencia Creative Commons
+
+
+
+
+                                                                                                                                "Reconocimiento No Comercial Sin Obra Derivada".
+
+
+
+
+Note. Pre-post line graph by condition for each social-emotional indicator.
+
+   The analysis of the digital traces indicated that the adaptive system adjusted the difficulty by an ave-
+rage of 2.3 levels during the 12 weeks of intervention. An 18% reduction in mean time per item and a 22%
+reduction in lead request was observed, suggesting a progressive improvement in cognitive efficiency.                                 11
+
+
+   In students with ADHD, there was a 14% increase in the time spent on sustained task and an 11% re-
+duction in window changes, interpreted as situational attentional improvement.
+
+
+
+
+Pensamiento Americano Vol. 19 - No. 40 e#1068 • 2026 • Mayo-Agosto• Corporación Universitaria Americana
+Barranquilla, Colombia ISSN-e: 2745-1402 • http://publicaciones.americana.edu.co/index.php/pensamientoamericano/index
+
+<a id="pdf-p12"></a>
+### [PDF p.12] UDL and AI-based educational personalization: effects on performance and self-regulation
+- Locator: `R135-udl-and-ai-based-educational-personalization-effects-on-performance-and-self-reg.pdf` · página **12** / 16
+
+UDL and AI-based educational personalization: effects on performance and self-regulation
+
+
+
+
+                                                                       Figure 3
+                                                                       Learning analytics indicators during the intervention
+
+
+
+
+RESEARCH ARTICLE
+
+
+
+
+                                                                       Note. Longitudinal line chart by week.
+
+                                                                           Classrooms with high UDL implementation fidelity (≥12/15) obtained approximately 30% greater
+                                                                       effects than those with medium fidelity. Although teaching experience and resources showed moderate
+                                                                       correlations (r = 0.31–0.36), the quality of the pedagogical scaffolding explained the higher proportion
+                                                                       of the variance between classrooms. Overall, the quantitative and qualitative findings address the study
+                                                                       objective by showing that the UDL- and AI-based intervention was associated with significant academic
+                                                                       and socio-emotional improvements, particularly among students with lower baseline performance. The
+                                                                       findings also indicate that implementation fidelity contributed to explaining variability in intervention
+                                                                       effects across classrooms.
+
+
+
+
+                   Esta obra está bajo una Licencia Creative Commons
+                                                                             5. DISCUSSION
+
+                                                                           The purpose of this study was to estimate the net effect of an educational personalization model based
+
+
+                   "Reconocimiento No Comercial Sin Obra Derivada".
+                                                                       on Universal Design for Learning (UDL) and artificial intelligence, and to explain the variability of results
+                                                                       through implementation fidelity under natural classroom conditions. The findings provide consistent
+                                                                       empirical evidence that the proposed model yields statistically significant and educationally meaningful
+                                                                       improvements in academic, socio-emotional, and engagement-related outcomes.
+
+                                                                           Regarding academic performance, the ANCOVA results indicate that students exposed to the inter-
+                                                                       vention outperformed those in the comparison condition in both reading comprehension and mathema-
+                                                                       tical reasoning, with medium to medium–high effect sizes. These findings converge with prior research
+                        12                                             reporting positive effects of adaptive learning systems and UDL-oriented instructional designs on lear-
+                                                                       ning outcomes, particularly when personalization aligns instructional demands with learners’ cognitive
+                                                                       profiles. However, unlike studies that isolate either adaptive technology or inclusive pedagogy, the pre-
+                                                                       sent results suggest that their integrated application amplifies learning gains.
+
+                                                                             A particularly relevant contribution is the interaction observed between instructional condition and
+
+
+                                                                       Pensamiento Americano Vol. 19 - No. 40 e#1068 • 2026 • Mayo-Agosto• Corporación Universitaria Americana
+                                                                       Barranquilla, Colombia ISSN-e: 2745-1402 • http://publicaciones.americana.edu.co/index.php/pensamientoamericano/index
+
+<a id="pdf-p13"></a>
+### [PDF p.13] Renata Paola Cervantes-Avilés, Jefferson Eduardo Cabrera-Amaiquema, Richard San Lucas-Vanegas y Monserratt Mogrovejo-Rosero
+- Locator: `R135-udl-and-ai-based-educational-personalization-effects-on-performance-and-self-reg.pdf` · página **13** / 16
+
+Renata Paola Cervantes-Avilés, Jefferson Eduardo Cabrera-Amaiquema, Richard San Lucas-Vanegas y Monserratt Mogrovejo-Rosero
+
+
+
+
+initial performance level. Students with lower baseline achievement benefited disproportionately from
+the intervention, supporting the notion of an equity effect. This result aligns with inclusive education lite-
+rature emphasizing that well-designed personalization can reduce learning gaps rather than exacerbate
+them. In contrast to concerns that adaptive technologies may privilege already high-performing students,
+
+
+
+                                                                                                                                                                                  RESEARCH ARTICLE
+the present findings indicate that when AI is embedded within UDL principles, it can function as a com-
+pensatory mechanism for learners with greater initial difficulties.
+
+     Socio-emotional outcomes further reinforce this interpretation. Improvements in motivation,
+self-regulation, and classroom participation were consistently higher in the intervention condition. Qua-
+litative evidence suggests that providing multiple options for representation and expression, combined
+with short projects and immediate feedback, fostered a sense of attainability and agency. These results
+are consistent with self-determination and self-regulated learning frameworks, which highlight auto-
+nomy-supportive environments as key drivers of engagement. Notably, the magnitude of socio-emotional
+effects was comparable to academic gains, underscoring the multidimensional impact of the intervention.
+
+    Learning analytics data offer additional insight into the mechanisms underlying these effects. The
+progressive adjustment of task difficulty, reduction in time per item, and decreased reliance on hints su-
+ggest increasing efficiency and strategic behavior over time. For students with ADHD, gains in sustained
+time on task and reduced window switching point to situational improvements in attentional regulation.
+These findings extend previous research by illustrating how adaptive systems can support executive func-
+tioning when combined with structured pedagogical scaffolding.
+
+    Implementation fidelity emerged as a decisive explanatory factor. Classrooms with higher adheren-
+ce to UDL principles achieved substantially greater effects, while teacher experience and resource avai-
+lability played a secondary role. This finding differentiates the present study from technology-centered
+approaches by demonstrating that instructional design quality, rather than technological access alone,
+accounts for a significant share of outcome variability. It also reinforces the importance of professional
+
+
+
+                                                                                                                              Esta obra está bajo una Licencia Creative Commons
+development and instructional coherence for scalable inclusive innovation.
+
+   Taken together, the results position the proposed model as an effective and context-sensitive
+approach to inclusive education. The study contributes novel empirical evidence by integrating UDL,
+AI-driven personalization, learning analytics, and fidelity monitoring within a single quasi-experimental
+
+
+                                                                                                                              "Reconocimiento No Comercial Sin Obra Derivada".
+framework, addressing a gap in the existing literature.
+
+
+
+
+      6. CONCLUSIONS
+
+    This study provides empirical support for the effectiveness of an integrated educational personaliza-
+tion model grounded in Universal Design for Learning and artificial intelligence. The findings demons-
+trate that the intervention produces significant improvements in academic performance, motivation,                                 13
+self-regulation, and participation, particularly among students with lower initial achievement.
+
+    The results respond directly to the study objectives by confirming that personalization, when pedago-
+gically grounded and systematically implemented, functions as a mechanism of educational equity rather
+than differentiation for its own sake. The observed equity effect suggests that targeted personalization
+
+
+Pensamiento Americano Vol. 19 - No. 40 e#1068 • 2026 • Mayo-Agosto• Corporación Universitaria Americana
+Barranquilla, Colombia ISSN-e: 2745-1402 • http://publicaciones.americana.edu.co/index.php/pensamientoamericano/index
+
+<a id="pdf-p14"></a>
+### [PDF p.14] UDL and AI-based educational personalization: effects on performance and self-regulation
+- Locator: `R135-udl-and-ai-based-educational-personalization-effects-on-performance-and-self-reg.pdf` · página **14** / 16
+
+UDL and AI-based educational personalization: effects on performance and self-regulation
+
+
+
+
+                                                                       can reduce learning gaps in neurodiverse populations.
+
+                                                                           From a methodological perspective, the study shows that fidelity of implementation is a critical con-
+                                                                       dition for success. High-quality instructional scaffolding and consistent application of UDL principles
+
+
+
+RESEARCH ARTICLE
+                                                                       explain more variance in outcomes than contextual factors alone, highlighting the need to prioritize ins-
+                                                                       tructional design and teacher support in inclusive innovations.
+
+                                                                           In practical terms, the intervention demonstrates favorable cost–benefit characteristics, particularly
+                                                                       when supported by reusable design templates and collaborative planning structures. This enhances its
+                                                                       feasibility for broader implementation in resource-constrained educational contexts.
+
+                                                                           Future research should extend this work through longitudinal designs to assess the sustainability of
+                                                                       effects and explore adaptive personalization across additional curricular domains. Overall, the findings
+                                                                       contribute to the advancement of scalable, evidence-based models for inclusive education supported by
+                                                                       adaptive technologies.
+
+                                                                             Acknowledgments
+
+                                                                           The authors express their gratitude to the educational institutions of the Fe y Alegría Ecuador ne-
+                                                                       twork, participating teachers, students, and families for their collaboration. Special acknowledgment is
+                                                                       given to the project JEP FASE II: Juegos de Expresión desde la Plástica of Universidad de las Artes, and
+                                                                       the participation of Facultad de Transporte y Vialidad – Instituto Superior Tecnológico Bolivariano de
+                                                                       Tecnología, JLA S.A.S., whose institutional support made this research possible.
+
+                                                                             Conflicts of interest
+
+                                                                             The authors declare no conflicts of interest related to the publication of this article.
+
+
+
+                   Esta obra está bajo una Licencia Creative Commons
+
+
+
+
+                   "Reconocimiento No Comercial Sin Obra Derivada".
+
+
+
+
+                        14
+
+
+
+
+                                                                       Pensamiento Americano Vol. 19 - No. 40 e#1068 • 2026 • Mayo-Agosto• Corporación Universitaria Americana
+                                                                       Barranquilla, Colombia ISSN-e: 2745-1402 • http://publicaciones.americana.edu.co/index.php/pensamientoamericano/index
+
+<a id="pdf-p15"></a>
+### [PDF p.15] Renata Paola Cervantes-Avilés, Jefferson Eduardo Cabrera-Amaiquema, Richard San Lucas-Vanegas y Monserratt Mogrovejo-Rosero
+- Locator: `R135-udl-and-ai-based-educational-personalization-effects-on-performance-and-self-reg.pdf` · página **15** / 16
+
+Renata Paola Cervantes-Avilés, Jefferson Eduardo Cabrera-Amaiquema, Richard San Lucas-Vanegas y Monserratt Mogrovejo-Rosero
+
+
+
+
+      7. REFERENCES                                                                             Faure, K., Michelsen, B., … Dras, M. (2024).
+                                                                                                Elemental psychopathology: distilling consti-
+Acosta, A., Mejía, W., & González, A. (2022). Coefi-                                            tuent symptoms and patterns of repetition in
+   ciente intelectual y rendimiento académico en                                                the diagnostic criteria of the DSM-5. Psycho-
+
+
+
+                                                                                                                                                                                                      RESEARCH ARTICLE
+   un grupo de estudiantes de primer semestre de                                                logical Medicine, 54(5), 886–894. https://doi.
+   Psicología. Pensamiento Americano, e#:456.                                                   org/10.1017/S0033291723002544
+   15(29), 153-167. https://doi.org/10.21803/pe-
+   namer.15.29.456                                                                       Guerrero-Altamirano, N. L. (2023). Metodologías
+                                                                                            activas y gamificación para el desarrollo del
+Amaiquema, J. E. C. (2022). Un encuentro con lo                                             pensamiento lógico matemático en estudian-
+  digital: nuevas formas de “aprender a apren-                                              tes de sexto grado. YUYAY, 2(1), 203–215. ht-
+  der”. YUYAY: Estrategias, Metodologías & Di-                                              tps://doi.org/10.59343/yuyay.v2i1.40
+  dácticas Educativas, 1(1), 16–22. https://doi.
+  org/10.59343/yuyay.v1i1.3                                                              Ianniello, A., & Corona, F. (2023). Values in action:
+                                                                                            A qualitative–quantitative research on in-ser-
+Arzaga Barreñada, G. I., & Mendoza Garza, A.                                                vice support teachers to promote inclusive
+   (2023). Estrategias de intervención en el aula                                           education. Italian Journal of Health Educa-
+   para alumnos con trastornos del neurodesarro-                                            tion, Sports and Inclusive Didactics, 7(4), 1–15.
+   llo. Secretaria de educación Pública. https://                                           https://doi.org/10.32043/gsd.v7i4.1054
+   dgesum.sep.gob.mx/storage/recursos/pla-
+   nes2022/GT5XR7xFeN-4646.pdf                                                           Lara-Cruz, A., Ángeles-Llerenas, A., Katz-Guss,
+                                                                                            G., Astudillo-García, C. I., Rangel-Eudave, N.
+Campelo, C. M. M., Figueroa, R. M. M., Benites, K.                                          G., Rivero-Rangel, G. M., Salvador-Carulla,
+  B. P., Bajaña, P. J. R., Freire, L. N. V., & Litardo,                                     L., Madrigal-de León, E., & Lazcano-Ponce,
+  C. I. M. (2024). Estrategias psicopedagógicas                                             E. (2020). Conocimiento sobre trastornos
+  para la inclusión de estudiantes con Trastorno                                            del neurodesarrollo asociado con la acepta-
+  del Espectro Autista en el aula regular. South                                            ción del modelo de educación inclusiva en
+
+
+
+                                                                                                                                                  Esta obra está bajo una Licencia Creative Commons
+  Florida Journal of Development, 5(12), e4743.                                             docentes de educación básica. Salud Públi-
+  https://doi.org/10.46932/sfjdv5n12-017                                                    ca De México, 62(5), 569-581. https://doi.
+                                                                                            org/10.21149/11204
+Crasta, J. E., Gavin, W. J., & Davies, P. L. (2021). Ex-
+   panding our understanding of sensory gating                                           Pazmiño Vaca, J. A., Vinueza Yánez, E. G., Toapan-
+
+
+                                                                                                                                                  "Reconocimiento No Comercial Sin Obra Derivada".
+   in children with autism spectrum disorders.                                              ta Otavalo, M. de J., Valladares Tipán, K. Y., &
+   Clinical Neurophysiology, 132(1), 180–190. ht-                                           Calderón Otavalo, M. M. (2024). Impacto de
+   tps://doi.org/10.1016/j.clinph.2020.09.020                                               las intervenciones psicopedagógicas en el ren-
+                                                                                            dimiento académico de niños con TDAH: un
+Delgado-Mendoza, E. I., Mendoza-Figueroa, D.                                                análisis crítico. Arandu UTIC, 11(1), 1–22. ht-
+   V., Bernal-Cerza, R. E., & Ortiz-Aguilar, W.                                             tps://doi.org/10.69639/arandu.v11i2.242
+   (2024). Estrategia neurodidáctica para mejo-
+   rar el aprendizaje de la matemática en los es-                                        Peláez, O. A., Echeverri, L. F., & Castrillón, E. F.
+   tudiantes del séptimo grado. Journal Scientific                                          (2022). The instrumentalized perception of                 15
+   MQRInvestigar, 8(2), 1906–1929. https://doi.                                             English for competitiveness: a case study. Pen-
+   org/10.56048/MQR20225.8.2.2024.1906-                                                     samiento Americano, 15(29), 45–57. https://
+   1929                                                                                     doi.org/10.21803/penamer.15.29.416
+
+Forbes, M. K., Neo, B., Nezami, O. M., Fried, E. I.,                                     Peng, J., & Li, Y. (2025). Frontiers of artificial in-
+
+
+Pensamiento Americano Vol. 19 - No. 40 e#1068 • 2026 • Mayo-Agosto• Corporación Universitaria Americana
+Barranquilla, Colombia ISSN-e: 2745-1402 • http://publicaciones.americana.edu.co/index.php/pensamientoamericano/index
+
+<a id="pdf-p16"></a>
+### [PDF p.16] UDL and AI-based educational personalization: effects on performance and self-regulation
+- Locator: `R135-udl-and-ai-based-educational-personalization-effects-on-performance-and-self-reg.pdf` · página **16** / 16
+
+UDL and AI-based educational personalization: effects on performance and self-regulation
+
+
+
+
+                                                                             telligence for personalized learning in higher                                           org/10.2139/ssrn.5076438
+                                                                             education: A systematic review of leading ar-
+                                                                             ticles. Applied Sciences, 15(18), 10096. https://                                  Tombolini, E., Lembo, L., & Peluso Cassese, F.
+                                                                             doi.org/10.3390/app151810096                                                          (2025). Augmented reality and flipped class-
+
+
+
+RESEARCH ARTICLE
+                                                                                                                                                                   room: the role of the merge cube as a didac-
+                                                                       Perrin, A. L., Jury, M., & Desombre, C. (2021). Are                                         tic mediator in autonomous learning. Italian
+                                                                          teachers’ personal values related to their atti-                                         Journal of Health Education, Sports and Inclu-
+                                                                          tudes toward inclusive education? A correla-                                             sive Didactics, 9(1). https://doi.org/10.32043/
+                                                                          tional study. Social Psychology of Education,                                            gsd.v9i1.1297
+                                                                          24(1), 1085–1104. https://doi.org/10.1007/
+                                                                          s11218-021-09646-7                                                                    UNESCO. (2020). Global Education Monitoring
+                                                                                                                                                                  Report 2020: Inclusion and education. UNES-
+                                                                       Priyadharsini, V., & Sahaya Mary, R. (2024). Uni-                                          CO Publishing.
+                                                                           versal Design for Learning (UDL) in Inclusive
+                                                                           Education: Accelerating Learning for All. Sha-                                       Vega Rivera, G. A. (2024). Impacto del TDAH en
+                                                                           nlax International Journal of Arts, Science and                                         el aprendizaje de estudiantes en edad escolar:
+                                                                           Humanities, 11(4). https://doi.org/10.34293/                                            una revisión sistemática. Revista San Grego-
+                                                                           sijash.v11i4.7489                                                                       rio, 1(57), 199-219. https://doi.org/10.36097/
+                                                                                                                                                                   rsan.v1i57.2329
+                                                                       Riaz, M. (2024). A personalized learning system:
+                                                                          Education by AI [Tesis de maestría, Centria
+                                                                          University of Applied Sciences]. Theseus. ht-
+                                                                          tps://www.theseus.fi/handle/10024/859086
+
+                                                                       Rivadeneira Coello, J. N. (2024). Hiperactividad
+                                                                          y su impacto en el proceso de aprendizaje de
+                                                                          los niños de Inicial 1 [Tesis de pregrado, Uni-
+
+
+
+                   Esta obra está bajo una Licencia Creative Commons
+                                                                          versidad Técnica de Babahoyo]. Repositorio
+                                                                          Institucional de la Universidad Técnica de Ba-
+                                                                          bahoyo. https://dspace.utb.edu.ec/server/api/
+                                                                          core/bitstreams/88e14e4f-4697-4f8e-a3bc-
+                                                                          0308c754b62e/content
+
+
+                   "Reconocimiento No Comercial Sin Obra Derivada".
+                                                                       Serrano-Macías, J. H. (2022). De lo experimen-
+                                                                          tal a lo creativo: Metodología para aprender
+                                                                          jugando. YUYAY, 1(1), 51–70. https://doi.
+                                                                          org/10.59343/yuyay.v1i1.5
+
+                                                                       Serrano-Macías, J. H., Cabrera-Amaiquema, J. E.,
+                                                                          & Aragundy-Cornejo, A. A. (2024). Juegos de
+                        16                                                expresión desde la plástica. Egregius Edicio-
+                                                                          nes. https://www.researchgate.net/publica-
+                                                                          tion/381994060
+
+                                                                       Singh, A. (2024). The future of learning: AI-driven
+                                                                          personalized education. SSRN. http://dx.doi.
+
+
+                                                                       Pensamiento Americano Vol. 19 - No. 40 e#1068 • 2026 • Mayo-Agosto• Corporación Universitaria Americana
+                                                                       Barranquilla, Colombia ISSN-e: 2745-1402 • http://publicaciones.americana.edu.co/index.php/pensamientoamericano/index

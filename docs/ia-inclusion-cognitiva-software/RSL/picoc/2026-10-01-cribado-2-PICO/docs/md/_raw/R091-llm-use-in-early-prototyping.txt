@@ -1,0 +1,400 @@
+===== PDF PAGE 1 / 8 =====
+                                      Available online at www.sciencedirect.com
+
+
+                                                 ScienceDirect
+                                         Procedia Computer Science 278 (2026) 1324–1331
+
+
+
+   CENTERIS – International Conference on ENTERprise Information Systems / ProjMAN –
+International Conference on Project MANagement / HCist – International Conference on Health
+                 and Social Care Information Systems and Technologies 2025
+
+                                         LLM Use in Early Prototyping
+                             Alma Smajića, Mirjana Radetić-Paić*,b, Darko Etingera*
+                         a
+                          Juraj Dobrila University of Pula (Faculty of Informatics), Zagrebačka 30, Pula 52 100, Croatia
+                  b
+                      Juraj Dobrila University of Pula (Faculty of Educational Sciences), Zagrebačka 30, Pula 52 100, Croatia
+
+
+
+
+Abstract
+
+Early-stage prototyping is crucial in software design and recent advances in LLMs are reshaping this phase. LLM-based tools
+bridge gaps between requirements and design, allowing faster iterations and more integrated workflows. Prompt engineering lets
+multidisciplinary teams to rapidly explore design ideas and assess AI capabilities before full-scale development. This paper shifts
+authors’ previous pedagogical thesis toward a technical focus; examining the role of LLMs in the early prototyping of an accessible
+application. The case study, NeuRoam, is a tablet-based educational app prototype for neurodivergent children, aligned with
+WCAG 2.2 and COGA guidelines. Analysis covers how LLM tools accelerate the prototyping of such inclusive apps while ensuring
+adherence to accessibility and user requirements. Results from a structured evaluation using 17 LLMs showed that models with
+stronger reasoning capabilities significantly predicted higher usability ratings (β ≈ 0.823, p = 0.002), with the regression model
+explaining approximately 55% of score variance (R² ≈ 0.555). LLM feedback identified both critical accessibility issues (e.g., low
+contrast) and praised features such as gamification, highlighting their potential as early-stage evaluators in inclusive design.
+
+© 2025 The Authors. Published by Elsevier B.V.
+This is an open access article under the CC BY-NC-ND license (https://creativecommons.org/licenses/by-nc-nd/4.0)
+Peer-review under responsibility of the scientific committee of the CENTERIS/ProjMAN/HCist conferences
+Keywords: LLM; early prototyping; digital inclusion; WCAG; prompt engineering
+
+
+
+
+ * Corresponding author.
+   E-mail address: mirjana.radetic-paic@unipu.hr, darko.etinger@unipu.hr
+
+
+
+
+1877-0509 © 2025 The Authors. Published by Elsevier B.V.
+This is an open access article under the CC BY-NC-ND license (https://creativecommons.org/licenses/by-nc-nd/4.0)
+Peer-review under responsibility of the scientific committee of the CENTERIS/ProjMAN/HCist conferences
+
+===== PDF PAGE 2 / 8 =====
+                                    Alma Smajić et al. / Procedia Computer Science 278 (2026) 1324–1331            1325
+
+
+1. Introduction
+
+   In educational technology design, early-stage prototyping ensures diverse learner needs are addressed from the
+outset. For neurodivergent children (e.g., with autism, ADHD, or dyslexia), designing for accessibility early on can
+improve engagement and outcomes.
+   However, implementing standards such as WCAG 2.2 in practice remains challenging, often requiring specialized
+expertise. Therefore, they are rarely fully implemented and leaving many apps not adequately designed for learners
+with cognitive and learning differences. As a result, these children often encounter obstacles such as sensory overload
+from cluttered interfaces, ambiguous instructions, or unpredictable interface behavior that disrupts engagement.
+Designing prototypes that address such challenges and fully comply with accessibility specifications is a complex,
+resource intensive-endeavor requiring specialized expertise.
+   Recent advances in artificial intelligence offer a promising remedy for this bottleneck. Large language models have
+shown potential as tools to accelerate early prototyping while keeping inclusion in focus. By adopting LLMs during
+the initial design phase, developers can generate accessible interface content, simplify language and even simulate
+user feedback. This approach reduces the time and expertise needed to iterate on designs, ensuring that key inclusive
+design principles are embedded from the outset. In essence, LLM can serve both as creative assistants and evaluators,
+helping translate abstract accessibility guidelines into practical design improvements during prototyping.
+   This paper builds upon earlier pedagogical research [1] in inclusive education and shifts toward more technical
+exploration. Previous studies underscored the significance of universal design principles in engaging neurodivergent
+learners. Building on those insights, this study investigates how different LLMs influence the evaluation of the
+NeuRoam prototype. The primary interest lies in determining how effectively LLMs perform in supporting decision-
+making processes during the early stages of prototyping accessible educational tools.
+   As a case study, NeuRoam, a tablet based educational application was designed for neurodivergent children.
+NeuRoam was developed to conform to WCAG 2.2 and COGA guidelines, providing interactive learning activities
+through an accessible interface. This case study illustrates the potential benefits of integrating LLM support into early
+prototyping to achieve inclusive design goals more efficiently. Next, the background and related work that frames this
+approach within the broader landscape of educational technology and AI-assisted design is reviewed.
+
+2. Related work
+
+    In line with authors’ prior work developing an accessible educational app for neurodivergent children, guided by
+the standards, recent research emphasizes aligning AI innovations with inclusive design principles. For example,
+Korada et al. [2] present a conceptual framework that synthesizes AI with established accessibility guidelines,
+stressing that AI-driven systems must be adaptable to diverse user needs and uphold ethical standards like privacy and
+informed consent. Complementing this view, Ferreira and Castro [3] report that fewer than 2% of studies (2013-2023)
+provide a systematic review of participatory and inclusive design models for children with autism. Screening over two
+genuinely embedded autistic children under Universal Design (UD) principles. Their conclusions reinforce the aim of
+using LLM support during early prototyping so that accessibility heuristics shape interfaces from the first wireframe.
+    Building on this foundation, several studies have started probing how LLM-based tools could directly support
+learners in a special education context. Ronksley-Pavia et al. [4] conducted a scoping review of generative AI
+applications for neurodivergent students. They identified promising use cases such as AI-driven personalized learning
+aids and automated drafting of individualized education plans that could help students with ADHD, autism, dyslexia,
+and other conditions. Notably, the review found generative AI could provide real-time, personalized support for
+learners while reducing administrative burdens on educators. However, it also raised cautions: the evidence base is
+still very limited (only 9 empirical studies) and experts worry about accuracy over-reliance on AI, privacy and
+ultimately, the necessity of human oversight. These concerns are highlighted in domain-specific investigations as well.
+For instance, a recent study explored ChatGPT’s potential to enhance therapy for children with ADHD. Using a Delphi
+method with child therapy experts, Berrezueta-Guzman et al. [5] simulated an ADHD counseling session with a
+custom ChatGPT and found the model demonstrated strengths like empathy, adaptability and effective
+communication. The experts agreed such an LLM could help personalize and scale ADHD interventions, pointing to
+a “new era” of AI-assisted therapy. Although GPT-4 is emerging as a generally accurate, empathic support tool for
+
+===== PDF PAGE 3 / 8 =====
+1326                                  Alma Smajić et al. / Procedia Computer Science 278 (2026) 1324–1331
+
+
+ADHD and autism care, its clinical value is still limited by privacy concerns, cultural sensitivity gaps, weak handling
+of non-verbal cues, and a shortage of actionable, fully reliable guidance [6].
+   Parallel efforts are bringing LLM assistance into the software prototyping and development workflow to
+proactively embed accessibility. Calì et al. [7] introduce a prototype Visual Studio Code extension that uses LLM
+calls to help developers identify and fix web accessibility issues during coding. This tool, integrated into the IDE,
+checks code against accessibility guidelines and suggests fixes in real time, aiming to catch issues before they reach
+production. Beyond software tooling, generative AI is also explored as a content creation partner in education. Leiker
+et al. [8] report on a prototype pipeline that uses an LLM to generate adult learning course materials at scale. Their
+system accelerated the production of training modules by having the LLM draft lessons and assessments, which were
+then reviewed and refined by experts. Initial results on both studies showed that strategic and pedagogical decisions
+should remain under human oversight as the detection accuracy is uneven and can lead to some missed or false-
+positive issue identifications.
+   Concurrently, a wave of recent work has investigated how LLMs can serve as design partners in early-stage UI/UX
+prototyping. This spans from helping generate and evaluate interface designs to enabling new collaborative workflows
+between designers and AI. Specifically, Duan et al. [9] developed a Figma plugin that lets GPT-4 perform heuristic
+reviews of UI mock-ups, catching spacing inconsistencies, unclear labeling, and other subtle issues that human
+designers often overlook. Its feedback accelerates early refinement , but adds little value in later iterations, so designers
+should treat the model as an initial “junior reviewer” rather than a substitute for expert judgment. Similarly, Petridis
+et al. [10] introduced PromptInfuser – a Figma plugin that allows designers to embed LLM prompts directly into UI
+mockups. PromptInfuser allows designers to bind toGPT-4 prompts directly to Figma mock-up elements so that UI
+and AI logic evolve together in semi-functional prototypes. In tests with several UX designers, this sped up iterations
+and produced more realistic prototypes while surfacing technical constraints like API limits and latency. Another “live
+prototyping” with generative AI idea is proposed by Santiago et al. [11], letting designers alter AI outputs and UI
+elements in real time during user tests via a control panel, so the feedback is integrated immediately. This speeds
+insight generation and iteration but requires greater AI expertise and contingency planning from the design team.
+   There is also progress in using LLMs and multimodal models to automatically generate UI layouts and visuals
+from high-level specification, which can accelerate the early prototyping of interfaces. Lin et al.’s LayoutPrompter
+[12] shows that with only structured in-context prompts and a ranking step, a vanilla LLM can generate GUI layouts
+that meet or beat state-of-the-art specialist models, even in low-data settings. The work demonstrates that LLMs can
+serve as versatile “design engines” while handling text-to-layout and constraint-based tasks through prompt
+engineering alone.
+   All papers considered and discussed above have collectively advanced and sharpened interest in a related yet
+distinct line of inquiry – evaluating a prototype once it has already been produced by a human designer. This is
+precisely where authors work begins, leading into the more detailed research presented in the next section.
+
+3. Methods
+
+3.1. Problem Definition and Objectives
+
+    This study is focused on the use of LLMs as evaluation tools during early prototyping of the accessible educational
+application NeuRoam. The primary objective is to explore how feedback generated by LLMs can accelerate design
+iterations while ensuring adherence to WCAG 2.2 and COGA accessibility guidelines.
+    Residual diagnostics confirmed acceptable model assumptions: residuals appeared roughly normal, as visualized
+in the QQ plot seen in Figure 1, while variance inflation factors (VIF ≈ 1.36) indicated low multicollinearity. In
+addition, to assess presence of heteroscedasticity, the Breusch-Pagan test was conducted and showed no significant
+evidence (𝑝𝑝 = 0.129).
+
+===== PDF PAGE 4 / 8 =====
+                                          Alma Smajić et al. / Procedia Computer Science 278 (2026) 1324–1331      1327
+
+
+
+
+Figure 1. QQ-residual Plot
+
+
+
+3.2. Synthetic Evaluation Approach
+
+   A synthetic user evaluation approach is adopted; meaning that LLMs are used as artificial evaluators that provide
+usability and accessibility on high-fidelity prototype. This method is grounded in evidence that LLMs (e.g., GPT-4.1)
+effectively apply design heuristics and accessibility guidelines to produce useful early-stage feedback when integrated
+into the design process. Here, each LLM acts as a “synthetic evaluator”, highlighting the potential design flaws or
+accessibility issues, and with awareness of inherent limitations such as occasional inaccuracies or hallucinations. The
+selected models were categorized geographically into three regions: America, Europe and Asia, reflecting diverse
+origins of development. An overview of all 17 evaluated models, along with their year attributes and regional
+categorization, is provided in Table 1. The overall model fit was moderate (𝑅𝑅2 ≈ 0.555). Among predictors, reasoning
+ability showed a strong standardized effect (𝛽𝛽 = 0.823, 𝑝𝑝 = 0.002).
+
+Table 1. LLM detailed overview
+
+               LLM                                                    Year              Ownership
+               ChatGPT (3, o3, 04-mini, o4-mini-high, 4o, 4.1, 4.5)   2022-2025         OpenAI, America
+               Gemini (1.5 Flash 8B, 2.5 Flash)                       2024-2025         Google DeepMind, America
+               Gemma 3 (4G, 12B, 27B)                                 2025              Google DeepMind, America
+
+               Claude Sonnet 4                                        2025              Anthropic, America
+               Perplexity PRO                                         2024              Perplexity AI, America
+               Grok3                                                  2024              xAI, America
+               Mistral 7B                                             2023              Mistral AI, Europe
+               DeepSeek R1                                            2025              DeepSeek, Asia
+
+   Although three hypotheses were tested (H1-H3), no formal correction for multiple comparisons was applied due to
+the exploratory nature of the analysis.
+
+3.3. Prompt-based Evaluation Procedure
+
+   The evaluation was conducted by developing a standardized series of prompts simulating seven key interactions
+(user login, navigation, task completion, etc.) with the NeuRoam prototype seen on Figure 2.
+
+===== PDF PAGE 5 / 8 =====
+1328                                 Alma Smajić et al. / Procedia Computer Science 278 (2026) 1324–1331
+
+
+
+
+Figure 2. NeuRoam - AiO prototype (Figma)
+
+
+All 17 selected LLMs received identical prompts to ensure consistency, instructing them to rate usability on a 1-5
+scale and provide explanatory feedback for each interaction. This structured approach simulated traditional user
+evaluations and allowed precise identification of strengths and weaknesses in accessibility compliance (e.g., clarity of
+instruction, contrast requirements).
+   The evaluation specifically tested three hypotheses:
+   • H1: More advanced (e.g., multimodal input, reasoning option) LLMs will provide better ratings
+   • H2: Newer generation LLMs will pinpoint possible mistakes more accurately
+   • H3: LLMs developed in the United States will judge prototypes more leniently
+
+   Whereas the system role is defined as: “Imagine you are a neurodivergent child – more precisely, a fifth grader
+with ADHD. In front of you is a prototype app interface NeuRoam that should make learning easier. Today you’ve
+chosen to study computer science, focusing on the lesson “Python: Working Environment”. Keep in mind that you
+know the WCAG and COGA guidelines so judge the prototype accordingly. Try to keep your comments brief; meaning
+you should avoid sharing too much detail but write them in standard literary Croatian. At the end of each step, give
+a rating from 1 to 4. You’ll receive the prototype once you confirm you’re ready!”
+
+3.4. Data Collection and Analysis
+
+   Data collection involved quantitative usability ratings and qualitative explanations provided by all 17 distinct
+LLMs, covering different model generations, capabilities, and origins. Quantitative analysis was performed using
+multiple linear regression to statistically test hypotheses H1-H3 and explore model differences with independent
+variables: multi_reasoning, year, ownership – three predictors that correspond to the stated hypotheses. An average
+prototype mark was then computed (labelled mark-avg), which served as the dependent variable in the conducted
+statistical tests. Furthermore, qualitative data underwent thematic analysis to identify recurring accessibility and
+usability issues mentioned by the models, providing deeper insight into the evaluation consistency. This will be
+examined in more details through Qualitative analysis within Results section of this paper.
+
+4. Results and Discussion
+
+   Given the limited availability of high-performing models with known capabilities, a total of 17 distinct LLMs were
+selected. While this sample provides adequate variation across the studied predictors, it represents a statistical
+constraint. Therefore, results from regression analysis are interpreted cautiously.
+
+4.1. Quantitative Analysis
+
+   Multiple regression analysis of the LLM-simulated evaluations indicated a moderate model fit (R2 ≈ 0.555),
+suggesting that the three selected LLM features explained roughly 55% of the variance in the prototype’s average
+usability scores. Specifically, the full model explained 55.5% of the variance in usability ratings. The semantic
+reasoning capability of an LLM was a strong positive predictor of the rating (β ≈ 0.823, p = 0.002), implying that
+more advanced models consistently gave higher usability scores to the NeuRoam prototype. In contrast, neither the
+
+===== PDF PAGE 6 / 8 =====
+                                       Alma Smajić et al. / Procedia Computer Science 278 (2026) 1324–1331              1329
+
+
+model’s origin nor its release year had a significant effect on the scores (p = 0.266 and 0.949, respectively), so
+statistically only the first hypothesis was confirmed, while H2 and H3 remained unsupported by the quantitative data.
+   Regression diagnostics, seen in Table 2, indicated no major assumption violations: all variance inflation factors
+were low (≈ 1.36), suggesting negligible multicollinearity among predictors. The residuals were approximately
+normally distributed aside from minor tail deviations (as expected given the small sample, n = 17), and a Breusch-
+Pagan test showed no evidence of heteroscedasticity.
+
+Table 2. Key statistical metrics
+
+        Parameter                  Expected value              Result                              Validation
+
+        R2                         > 0.1                       0.555                               ✓
+
+
+
+                                                               H1: 1.357                           H1: ✓
+        VIF (variance inflation    < 3.3
+        factor)                                                H2: 1.357                           H2: ✓
+                                                               H3: 1.362                           H3: ✓
+
+
+                                                               H1: 0.002                           H1: ✓
+        p                          < 0.05                      H2: 0.206                           H2: ✗
+                                                               H3: 0.949                           H3: ✗
+
+    Extending the model with moderator variables revealed that the positive effect of reasoning ability on usability
+ratings was significantly amplified for proprietary (closed-source) LLMs compared to open-source ones (interaction
+p = 0.039) as seen in Figure 3. By contrast, model release did not significantly moderate this relationship, indicating
+that generational differences in LLMs did not alter the influence of reasoning capabilities on evaluation outcomes.
+
+
+
+
+Figure 3. Moderation effect of ownership
+
+                                                                                    4.2. Qualitative Feedback Summary
+
+  Qualitative analysis of the LLM’s feedback complemented these results and provided actionable design insights.
+Across the six core usability tasks, average LLM-given scores ranged from ~3.4 to ~4.2 out of 5, reflecting generally
+moderate to high satisfaction with the prototype’s accessibility and usability. LLMs flagged various accessibility and
+UX issues aligned with WCAG 2.2 and COGA recommendations; for instance, they noted the (purposely left out)
+
+===== PDF PAGE 7 / 8 =====
+1330                                 Alma Smajić et al. / Procedia Computer Science 278 (2026) 1324–1331
+
+
+absence of a “Show Password” option and poor text contrast on the login screen (violations of WCAG Form Input
+and Contrast criteria). They also critiqued the use of long, unsegmented text blocks in the learning content, pointing
+out that this lack of content chunking could impede cognitive processing for neurodivergent users.
+   Later in the user flow, LLMs’ feedback was more positive – e.g., they praised the profile page’s clear progress
+visualization (progress bars and percentages) as an effective motivational element and highlighted the achievements
+screen’s trophy icon as a simple but powerful gamification feature that encourage continued learning. Interestingly,
+U.S.-based models tended to deliver their critiques in a more polite and encouraging tone despite similar numeric
+ratings, suggesting a cultural difference in feedback style that aligns qualitatively with the hypothesized leniency of
+American LLMs (H3).
+
+4.3. Interpretation and Broader Implications
+
+   These results suggest that while LLMs are promising evaluators during prototyping, their feedback is shaped by
+the model’s underlying reasoning ability more than its origin or recency. This raises open questions for the design of
+AI-assisted workflows: how to balance model strengths with human oversight, and how to ensure culturally neutral,
+context-sensitive design advice. As this study focused on accessibility in education, future research should examine
+how well these synthetic insights transfer to other domains with similar inclusion challenges.
+
+4.4. Ethical Considerations
+
+   This study involved no human subjects, so formal ethics was not required. All LLM queries were conducted via
+publicly available APIs, using only model-generated content and researcher-designed prototype. No personal or user
+data were collected at any point. While privacy risks are minimal, energy costs and licensing constraints are valid
+concerns in deploying propriety LLMs in classroom contexts. These issues warrant further discussion as part of future
+implementation studies.
+
+5. Limitations
+
+    Using LLM-based synthetic evaluation is innovative and scalable, but it has clear limits. Most importantly, the
+study does not include feedback from actual end users; namely, the neurodivergent learners the prototype targets.
+Without their input, the results, though semantically rich, may miss subtle, real-world usability issues that surface
+only in live use. Additionally, while the hypotheses (H1–H3) rest on plausible assumptions (e.g., the importance of
+reasoning ability and model maturity), their theoretical grounding would benefit from a deeper review of the
+literature on LLM behavior and evaluation patterns. Another limitation concerns the relatively small sample size
+(𝑛𝑛 = 17), which restricts the statistical power of the regression analysis. While the findings are indicative and
+supported by diagnostics, they should be interpreted with caution. Furthermore, this study focuses on a single
+prototype at an early development stage and does not include baseline comparison with expert human evaluations.
+
+   As such, its contribution is necessarily scoped and demonstrates how LLMs can support accessibility-focused
+prototyping, particularly for WCAG 2.2 and COGA compliance in neurodivergent contexts. Future research should
+aim to validate these results with a broader set of models and complement synthetic evaluations with real-user data
+to strengthen generalization.
+
+6. Conclusion
+
+   Overall, key findings confirm that LLMs are rapidly becoming enablers in the UI/UX design process: from
+automating routine evaluation and generation tasks to facilitating new prototyping workflows that integrate AI’s
+generative power with human creativity. Their ability to instantly evaluate UI variants, suggest compliant copy and
+even generate production-ready snippets, enables teams to explore exponentially more ideas. However, as indicated
+by quantitative results from multiple regression, technical speed alone is insufficient: prototypes incorporating
+accessibility criteria from the earliest stage were found significantly more usable and widely accepted by stakeholders.
+
+===== PDF PAGE 8 / 8 =====
+                                    Alma Smajić et al. / Procedia Computer Science 278 (2026) 1324–1331            1331
+
+
+Upholding compliance of AI-generated outputs with WCAG and COGA standards is therefore recognized as both an
+ethical imperative and a practical accelerator of user satisfaction, particularly for learners experiencing cognitive or
+sensory difficulties. Realizing this potential will require curricular changes and systematic professional training,
+ensuring accessibility is viewed as a foundational principle rather than an afterthought. Thus, the formation of
+interdisciplinary teams is advocated, allowing AI-augmented tools to be continuously audited and refined based on
+authentic classroom feedback. In short, while prototyping processes can be accelerated by LLM technology,
+meaningful progress can only be achieved through an inclusive approach.
+
+References
+
+ 1. Smajić A, Radetić-Paić M, Etinger D. Razvoj prototipa digitalnog alata u skladu s WCAG standardima za
+    djecu s poremećajima neurodivergentnog spektra. 2025. Master's thesis.
+ 2. Panigrahi Ranjana G, Nayak SK, Routray SK, Swain RP, Mishra D, Paikaray BK. AI and Accessibility: a
+    Conceptual Framework for Inclusive Technology. In International Conference on Artificial Intelligence and
+    Quantum Computing (AIQC); 2024; Bhubaneswar. p. 118-122.
+ 3. Ferrerira RdS, Chaves de Castro TH. Participatory and Inclusive Design Models from the Perspective of
+    Universal Design for Children with Autism: A Systematic Review. Educ. Sci. 2024 June; 14(6): 613.
+ 4. Ronksley-Pavia M, Nguyen L, Wheeley E, Rose J, M. Neumann M, Bigum C, et al. A scoping literature review
+    of generative artificial intelligence for supporting neurodivergent school students. Computers and Education:
+    Artifical Intelligence. 2025; 9: 100437.
+ 5. Berrezueta-Guzman S, Kandil M, Martín-Ruiz ML, Pau de la Cruz I, Krusche S. Future of ADHD Care:
+    Evaluating the Efficacy of ChatGPT in Therapy Enhancement. Healthcare (Basel). 2024 March; 12(6): 683.
+ 6. McFayden C T, Bristol S, Putnam O, Harrop C. ChatGPT: Artificial Intelligence as a Potential Tool for Parents
+    Seeking Information About Autism. Cyberpsychology, Behavior, and Social Networking. 2024 February;
+    27(2): 135-148.
+ 7. Calì E, Fulcini T, Coppola R, Laudadio L, Torchiano M. A Prototype VS Code Extension to Improve Web
+    Accessible Development. In 2025 IEEE/ACM Second IDE Workshop (IDE); 2025; Ottawa. p. 52-57.
+ 8. Leiker D, Finnigan S, Ricker Gyllen A, Cukurova M. Prototyping the use of Large Language Models (LLMs)
+    for Adult Learning Content Creation at Scale. In LLM@AIED 2023; 2023; Tokyo. p. 3-7.
+ 9. Duan P, Warner J, Li Y, Hartmann B. Generating Automatic Feedback on UI Mockups with Large Language
+    Models. In CHI '24: Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems; 2024;
+    Honolulu. p. 1-20.
+10. Petridis S, Terry M, J Cai C. PromptInfuser: How Tightly Coupling AI and UI Design Impacts Designers’
+    Workflows. In DIS '24; 2024; Copenhagen. p. 743-756.
+11. Santiago III JM, Sendner M, Ralser D, Meschtscherjakov A. The AI of Oz: A Conceptual Framework for
+    Democratizing Generative AI in Live-Prototyping User Studies. Applied Sciences (MDPI). 2025 May; 15(10):
+    5506.
+12. Lin J, Guo J, Sun S, Yang ZJ, Lou JG, Zhang D. LayoutPrompter: Awaken the Design Ability of Large
+    Language Models. In NIPS '23: Proceedings of the 37th International Conference on Neural Information
+    Processing Systems; 2023; New Orleans. p. 43852-43879.

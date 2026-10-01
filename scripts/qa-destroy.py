@@ -1210,6 +1210,8 @@ def _(sb):
     sh_by_id = {json.loads(l)["id"]: json.loads(l) for l in sh[1:]}
     r005 = next(r for r in out[1:] if r[0] == "R005")
     sb.check(not r005[-1].startswith("Duda:") and sh_by_id["R005"]["duda"], "la justificación no lleva Duda: y la duda queda en el shadow")
+    cfg_txt = (t / "config.yml").read_text(encoding="utf-8")
+    sb.check("cribado_2:" in cfg_txt and "use: all" in cfg_txt, f"apply no dejó cribado_2.use=all en config.yml: {cfg_txt[:200]}")
     sb.check(all((pdir / n).read_bytes() == b for n, b in before.items()), "apply modificó una exportación")
 
 
@@ -1332,6 +1334,46 @@ def _(sb):
     sb.run(["crib2", "align", t], "OK", has="1 PDF alineados")
     sb.check((c2 / "docs" / "pdf" / "R001-screen-reader-testing-with-ai.pdf").is_file(), "align no movió el PDF canónico")
     sb.check(not draft.exists(), "el borrador debería haberse movido de pdf-draft")
+
+
+@case("C07", "orden", "cribado 2: cribado_2.use (solo_dudas / solo_si) filtra SI según duda en cribado-1.shadow.jsonl")
+def _(sb):
+    t = sb.theme(paper=False, picoc="PICOCT")
+    pdir = next((t / "picoc").iterdir())
+    import csv as _csv
+
+    csv_path = pdir / "resultados-PICOCT-cribado-1.csv"
+    with csv_path.open("w", encoding="utf-8-sig", newline="") as fh:
+        w = _csv.writer(fh)
+        w.writerow(["Id", "Fuente", "Título", "DOI", "¿Se acepta?", "Justificación cribado 1"])
+        w.writerow(["R001", "Scopus", "Accepted without doubt", "10.1/a", "SI", "CI1."])
+        w.writerow(["R002", "Scopus", "Accepted with doubt", "10.1/b", "SI", "CI1."])
+    (pdir / "cribado-1.shadow.jsonl").write_text(
+        "\n".join(
+            [
+                '{"_meta": {"hash": "qa"}}',
+                '{"id": "R001", "duda": false}',
+                '{"id": "R002", "duda": true}',
+            ]
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+    c2 = t / "RSL" / "picoc" / f"{pdir.name.split('-PICOCT')[0]}-cribado-2-PICOCT"
+    (t / "config.yml").write_text("cribado_2:\n  use: solo_dudas\n", encoding="utf-8")
+    sb.run(["crib2", "init", t], "OK", has="cribado_2.use=solo_dudas")
+    cat = json.loads((c2 / "documentos.json").read_text(encoding="utf-8"))
+    sb.check(
+        len(cat["registros"]) == 1 and cat["registros"][0]["id"] == "R002" and cat["si_total"] == 2,
+        f"solo_dudas debería dejar solo R002: {cat}",
+    )
+    (t / "config.yml").write_text("cribado_2:\n  use: solo_si\n", encoding="utf-8")
+    sb.run(["crib2", "init", t], "OK", has="solo_si")
+    cat = json.loads((c2 / "documentos.json").read_text(encoding="utf-8"))
+    sb.check(
+        len(cat["registros"]) == 1 and cat["registros"][0]["id"] == "R001",
+        f"solo_si debería dejar solo R001: {cat}",
+    )
 
 
 @case("K07", "marco", "redaccion:lint acepta n = X y [[ AGREGAR DIAGRAMA ]] como marcadores del usuario, pero sigue fallando con TODO y con apelaciones a «el lector» (no con «lector de pantalla»)")
