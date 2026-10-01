@@ -2,7 +2,7 @@
 """Cribado 2 de PRISMA 2020 (texto completo): descarga de los SI y memoria Graphify del corpus.
 
 Entrada: resultados-<MARCO>-cribado-1.csv de la última versión del picoc (lo escribe rsl-cribado-1-aplicar).
-Corpus: docs/<slug>/picoc/<fecha>-cribado-2-<MARCO>/  (documentos.json/md, docs/pdf, docs/pdf-draft, docs/md, memoria-traza.json, graphify-out/).
+Corpus: docs/<slug>/RSL/picoc/<fecha>-cribado-2-<MARCO>/  (documentos.json/md, docs/pdf, docs/pdf-draft, docs/md, memoria-traza.json, graphify-out/).
 
 Uso:
   cribado2.py init     docs/<slug>             # carpetas + documentos.json/md (orden del CSV de SI)
@@ -99,7 +99,7 @@ def cribado2_dir_name(picoc_folder_name: str) -> str:
 
 def cribado2_dir(theme: Path) -> Path:
     folder = picoc_folder(theme)
-    return theme / "picoc" / cribado2_dir_name(folder.name)
+    return theme / "RSL" / "picoc" / cribado2_dir_name(folder.name)
 
 
 def cribado_paths(corpus: Path) -> tuple[Path, Path, Path]:
@@ -394,7 +394,7 @@ def md_cell(s: str, n: int = 90) -> str:
 def load_catalog(corpus: Path) -> dict:
     p = corpus / DOCUMENTOS_JSON
     if not p.is_file():
-        theme = corpus.parent.parent
+        theme = corpus.parent.parent.parent
         raise Fail(f"falta {rel(p)}", f"corre pnpm -s cribado2:init {rel(theme)}/")
     return json.loads(p.read_text(encoding="utf-8"))
 

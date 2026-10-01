@@ -1294,7 +1294,7 @@ def _(sb):
     sb.run(["crib", "merge", t], "OK", has="1 corrección(es) del usuario conservada(s)")
 
 
-@case("C05", "orden", "cribado 2: init en picoc/<fecha>-cribado-2-<MARCO> y align mueve pdf-draft por título a docs/pdf")
+@case("C05", "orden", "cribado 2: init en RSL/picoc/<fecha>-cribado-2-<MARCO> y align mueve pdf-draft por título a docs/pdf")
 def _(sb):
     t = sb.theme(paper=False, picoc="PICOCT")
     pdir = next((t / "picoc").iterdir())
@@ -1305,7 +1305,7 @@ def _(sb):
         w.writerow(["Id", "Fuente", "Título", "DOI", "¿Se acepta?", "Justificación cribado 1"])
         w.writerow(["R001", "Scopus", "Screen reader testing with AI", "", "SI", "CI3"])
     sb.run(["crib2", "init", t], "OK", has="cribado-2")
-    c2 = t / "picoc" / f"{pdir.name.split('-PICOCT')[0]}-cribado-2-PICOCT"
+    c2 = t / "RSL" / "picoc" / f"{pdir.name.split('-PICOCT')[0]}-cribado-2-PICOCT"
     sb.check((c2 / "documentos.json").is_file() and (c2 / "docs" / "pdf-draft").is_dir(), "init no creó documentos ni pdf-draft")
     draft = c2 / "docs" / "pdf-draft" / "screen-reader-testing-with-ai.pdf"
     draft.parent.mkdir(parents=True, exist_ok=True)

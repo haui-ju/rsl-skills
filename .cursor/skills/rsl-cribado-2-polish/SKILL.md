@@ -7,7 +7,7 @@ description: PRISMA screening 2 full-text evaluation. Reads CI/CE from picoc.md 
 
 Full-text screening against the picoc inclusion/exclusion criteria (`CI*` / `CE*`). No new downloads or graph build.
 
-**Input:** `picoc/<fecha-base>-cribado-2-<MARCO>/documentos.json` → `picoc` path → criteria (same rules as cribado 1: explicit CI/CE in picoc).
+**Input:** `RSL/picoc/<fecha-base>-cribado-2-<MARCO>/documentos.json` → `picoc` path → criteria (same rules as cribado 1: explicit CI/CE in picoc).
 
 **Output:** `cribado-2-evaluacion.md` — columns `# | id | titulo | decision | motivo` in the same `#` order as `documentos.md`. `decision` ∈ `SI` | `NO` | `PODRIA`.
 

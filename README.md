@@ -21,9 +21,9 @@ El agente verifica/instala prerrequisitos (node + pnpm, pipx graphifyy, poppler)
 | `rsl-picoc` | Crea una versión nueva del marco de búsqueda con el marco de `config.yml` (libre: PICO, PIO, PICOC, PICOCT, PICOS…; por defecto PICOCT): tabla por componente 1:1 con las queries, palabras clave IEEE (libres al final), 5–6 keywords del paper, criterios de inclusión y exclusión; modo completo (debate `critico-rsl` + `defensor-rsl` + `redaccion-rsl`), parcial (solo keywords o criterios) o ligero (solo la pregunta general, sin agentes); `picoc:lint` OK. **Solo lee** el informe, `config.yml` y el paper: nunca los modifica | `docs/[titulo-breve]/picoc/<fecha>-<MARCO>/picoc.md` + `picoc-debate.md` |
 | `rsl-cribado-1` | Cribado 1 de PRISMA (título, resumen y palabras clave) de Scopus y Web of Science juntos: `cribado:prepare` pasa WoS a CSV, une ambas bases en `resultados-<MARCO>.csv` y elimina duplicados primero (el agente nunca lee las exportaciones); `defensor-rsl` propone SI/NO por registro con los criterios del picoc y `critico-rsl` lo critica; las dudas van como SI. Siempre deja una sugerencia de keywords (qué términos valen, cuáles no aportan y cuáles agregar) con las queries de Scopus y WoS. Correcciones con `cribado:set` | `picoc/<fecha>-<MARCO>/cribado-1.md` + `cribado-1.shadow.jsonl` + `cribado-1-sugerencia.md` |
 | `rsl-cribado-1-aplicar` | Tras aprobar el reporte, copia el CSV unificado con dos columnas más al final: «¿Se acepta?» (SI o NO) y «Justificación cribado 1». No decide nada ni edita las exportaciones | `picoc/<fecha>-<MARCO>/resultados-<MARCO>-cribado-1.csv` |
-| `rsl-cribado-2` | Cribado 2, paso 1: `init` + descarga OA por DOI de cada SI; catálogo `documentos.json` / `documentos.md` en `picoc/<fecha>-cribado-2-<MARCO>/`; PDF canónicos en `docs/pdf/<Id>-<titulo-slug>.pdf`; actualiza `prisma.json` | `picoc/<fecha>-cribado-2-<MARCO>/` |
+| `rsl-cribado-2` | Cribado 2, paso 1: `init` + descarga OA por DOI de cada SI; catálogo `documentos.json` / `documentos.md` en `RSL/picoc/<fecha>-cribado-2-<MARCO>/`; PDF canónicos en `docs/pdf/<Id>-<titulo-slug>.pdf`; actualiza `prisma.json` | `RSL/picoc/<fecha>-cribado-2-<MARCO>/` |
 | `rsl-cribado-2-alineamiento-pdfs` | Cribado 2: mueve PDF que dejas en `docs/pdf-draft/` (nombre ≈ título) al nombre canónico y actualiza el catálogo | mismo + `docs/pdf/` |
-| `rsl-cribado-2-memoria` | Cribado 2, paso 2: `docs/pdf/` → `docs/md/` + grafo Graphify del corpus (`memoria-traza.json`) | `picoc/<fecha>-cribado-2-<MARCO>/graphify-out/graph.json` |
+| `rsl-cribado-2-memoria` | Cribado 2, paso 2: `docs/pdf/` → `docs/md/` + grafo Graphify del corpus (`memoria-traza.json`) | `RSL/picoc/<fecha>-cribado-2-<MARCO>/graphify-out/graph.json` |
 | `rsl-cribado-2-polish` | Cribado 2, paso 3: evaluación a texto completo (CI/CE del picoc, lotes con defensor/crítico vía grafo cribado-2) | `cribado-2-evaluacion.md` + `.cribado-2/evaluaciones/` |
 | `rsl-make-paper` | Nueva versión del paper borrador, solo secciones `on` (mejorar) y `rewrite` (reescribir) de `config.yml` (+ agente `citas-rsl` y `redaccion:lint`) | `docs/[titulo-breve]/paper/<fecha>/paper-borrador.md` |
 | `rsl-polish-paper` | Pule esas secciones (`critico-rsl` + `defensor-rsl`; `impacto-social-rsl` si están Justificación u Objetivo; luego `redaccion-rsl` + `citas-rsl`) → texto limpio + traza de debate | `paper/<fecha>/paper-polish.md` + `paper-debate.md` |
@@ -62,12 +62,6 @@ docs/[titulo-breve]/
       cribado-1-sugerencia.md ← rsl-cribado-1: keywords que valen, no aportan o conviene agregar + queries Scopus y WoS
       .cribado-1/        ← trabajo interno (registros.jsonl, propuestas, decisiones, síntesis, keywords)
       resultados-PICOCT-cribado-1.csv  ← rsl-cribado-1-aplicar: el unificado con «¿Se acepta?» y «Justificación cribado 1»
-    2026-09-28-cribado-2-PICOCT/   ← rsl-cribado-2 (misma fecha-base que el picoc del CSV)
-      documentos.json / documentos.md
-      docs/pdf/                    ← PDF canónicos (<Id>-<titulo-slug>.pdf)
-      docs/pdf-draft/              ← tú: PDF con nombre parecido al título → rsl-cribado-2-alineamiento-pdfs
-      docs/md/ + index-manifest.json + memoria-traza.json + graphify-out/  ← rsl-cribado-2-memoria
-      cribado-2-evaluacion.md      ← rsl-cribado-2-polish
   paper/
     paper.shadow.yml     ← detalle técnico: títulos, capítulos, depends_on (rara vez se edita)
     paper.state.jsonc    ← hashes y versiones (lo gestiona pnpm paper:status; no editar)
@@ -77,11 +71,18 @@ docs/[titulo-breve]/
       paper-debate.md    ← debate por corrida (no va al documento)
   ficha.md               ← opcional (si la adjuntas; si no, se usa informe-polish/informe)
   RSL/
-    PDF/                 ← originales
-    MD/                  ← corpus indexable (RAG + headings + locators)
-    index-manifest.json  ← traza (no re-lee lo indexado)
+    PDF/                 ← originales del informe
+    MD/                  ← corpus indexable del informe (RAG + headings + locators)
+    index-manifest.json  ← traza del informe (no re-lee lo indexado)
+    picoc/
+      2026-09-28-cribado-2-PICOCT/   ← rsl-cribado-2 (misma fecha-base que el picoc del CSV)
+        documentos.json / documentos.md
+        docs/pdf/                    ← PDF canónicos (<Id>-<titulo-slug>.pdf)
+        docs/pdf-draft/              ← tú: PDF con nombre parecido al título → rsl-cribado-2-alineamiento-pdfs
+        docs/md/ + index-manifest.json + memoria-traza.json + graphify-out/  ← rsl-cribado-2-memoria
+        cribado-2-evaluacion.md      ← rsl-cribado-2-polish
+      2026-09-28-PICOCT/             ← legado cribado-2 antiguo (descargas en raíz de carpeta), si aún existe
   graphify-out/          ← grafo del tema (gitignored)
-  RSL/picoc/…            ← legado (corridas antiguas); las nuevas usan picoc/<fecha>-cribado-2-<MARCO>/
 ```
 
 Root (proyecto):
@@ -210,7 +211,7 @@ Usa rsl-cribado-2-memoria sobre docs/[titulo-breve]/
 Usa rsl-cribado-2-polish sobre docs/[titulo-breve]/
 ```
 
-Lo que no baja automáticamente queda en `picoc/<fecha>-cribado-2-<MARCO>/documentos.md` (columna `porque`); guárdalo en `docs/pdf-draft/` con un nombre parecido al título y corre alineamiento.
+Lo que no baja automáticamente queda en `RSL/picoc/<fecha>-cribado-2-<MARCO>/documentos.md` (columna `porque`); guárdalo en `docs/pdf-draft/` con un nombre parecido al título y corre alineamiento.
 
 `cribado-1-sugerencia.md` propone cómo mejorar la búsqueda (sin tirar lo que funciona). Para llevarla a una versión nueva del picoc, `Usa rsl-picoc sobre docs/[titulo-breve]/`: `picoc:latest` avisa la sugerencia y la skill entra en modo sugerencia (solo valida, sin debate).
 

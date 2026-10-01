@@ -1,6 +1,6 @@
 ---
 name: rsl-cribado-2
-description: PRISMA screening 2 step 1 — retrieval only. Reads resultados-<MARCO>-cribado-1.csv of the latest picoc, creates picoc/<fecha>-cribado-2-<MARCO>/ with documentos.json and documentos.md, downloads open-access PDFs by DOI into docs/pdf/<Id>-<titulo-slug>.pdf, updates prisma.json retrieval. Manual PDFs go in docs/pdf-draft/ (title-like filename) then rsl-cribado-2-alineamiento-pdfs. No MD or graph. Use when the user says rsl-cribado-2.
+description: PRISMA screening 2 step 1 — retrieval only. Reads resultados-<MARCO>-cribado-1.csv of the latest picoc, creates RSL/picoc/<fecha>-cribado-2-<MARCO>/ with documentos.json and documentos.md, downloads open-access PDFs by DOI into docs/pdf/<Id>-<titulo-slug>.pdf, updates prisma.json retrieval. Manual PDFs go in docs/pdf-draft/ (title-like filename) then rsl-cribado-2-alineamiento-pdfs. No MD or graph. Use when the user says rsl-cribado-2.
 ---
 
 # rsl-cribado-2
@@ -12,7 +12,7 @@ docs/[titulo-breve]/
   picoc/<fecha>-<MARCO>/
     resultados-<MARCO>-cribado-1.csv   (read)
     prisma.json                        (retrieval.sought / not_retrieved)
-  picoc/<fecha-base>-cribado-2-<MARCO>/
+  RSL/picoc/<fecha-base>-cribado-2-<MARCO>/
     documentos.json / documentos.md    (# = CSV order; descargado si|no; porque)
     docs/pdf/                          canonical PDFs
     docs/pdf-draft/                    user drops PDFs named ≈ article title
@@ -32,7 +32,7 @@ Invoke: `Usa rsl-cribado-2 sobre docs/<slug>/`.
 ## Cierre
 
 - Failure: `ERROR: <mensaje del script>. <cómo arreglarlo>`.
-- Success: `OK: <d> de <n> PDF en picoc/<carpeta-cribado-2>/docs/pdf/ (<m> manuales/alineados, <x> no recuperados). Próximo paso: Usa rsl-cribado-2-memoria sobre docs/<slug>/` (or alineamiento if they only added drafts).
+- Success: `OK: <d> de <n> PDF en RSL/picoc/<carpeta-cribado-2>/docs/pdf/ (<m> manuales/alineados, <x> no recuperados). Próximo paso: Usa rsl-cribado-2-memoria sobre docs/<slug>/` (or alineamiento if they only added drafts).
 
 ## Forbidden
 

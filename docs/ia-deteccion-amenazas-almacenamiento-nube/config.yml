@@ -1,0 +1,54 @@
+# Qué hacer con cada sección en la próxima corrida de rsl-make-paper / rsl-polish-paper:
+#   frozen   -> está bien: no se toca, se copia tal cual (si cambia su fuente, se avisa como 'stale'),
+#               salvo tablas, keywords, queries y criterios de Metodología, que siempre se copian del último picoc
+#   on       -> revisar y mejorar: se conserva la base y se corrige / pule
+#   rewrite  -> reescribir: se replantea desde cero a partir de las fuentes
+#   off      -> inactivo: no se genera ni aparece
+# Detalle técnico (títulos, dependencias): paper/paper.shadow.yml · Estado interno: paper/paper.state.jsonc (no editar)
+
+formato:
+  idioma: es              # idioma del paper: es | en | pt | fr | de (cualquier código ISO 639-1)
+  numeracion: romana      # romana | arabiga | ninguna
+  citas: apa7             # apa7 | ieee
+  resumen: [en, es]       # idiomas del Abstract/Resumen
+  resultados_por: rq      # rq | tema
+  marco: PICOCT           # marco de búsqueda libre: PICO, PIO, PICOC, PICOCT, PICOS… (por defecto PICOCT); al cambiarlo, correr rsl-picoc
+
+Portada:
+  encabezado: on
+  resumen:    off
+
+Introducción:
+  contexto:      on
+  problema:      on
+  justificacion: on
+  objetivo-rsl:  on
+  organizacion:  on
+
+Metodología:
+  marco-pico:          off
+  palabras-clave:      off
+  ecuacion-busqueda:   off
+  criterios-seleccion: off
+  seleccion-prisma:    off
+  calidad:             off
+  extraccion-datos:    off
+  sintesis:            off
+
+Resultados:
+  distribucion:        off
+  hallazgos-generales: off
+  resultados-rq:       off
+
+Discusión:
+  discusion-temas: off
+  discusion-rq:    off
+  amenazas:        off
+
+Conclusión:
+  conclusion: off
+
+Declaraciones:
+  declaraciones: off
+
+# Referencias: automáticas (siempre se derivan de las citas del texto)

@@ -1,6 +1,6 @@
 ---
 name: rsl-cribado-2-memoria
-description: PRISMA screening 2 step 2 — index full texts. PDFs in picoc/<fecha>-cribado-2-<MARCO>/docs/pdf/ → docs/md/ with page locators, Graphify graph at graphify-out/graph.json, memoria-traza.json. Same prepare/stamp/build/verify as graphify-theme corpus mode. Use when the user says rsl-cribado-2-memoria or after PDFs are in docs/pdf/.
+description: PRISMA screening 2 step 2 — index full texts. PDFs in RSL/picoc/<fecha>-cribado-2-<MARCO>/docs/pdf/ → docs/md/ with page locators, Graphify graph at graphify-out/graph.json, memoria-traza.json. Same prepare/stamp/build/verify as graphify-theme corpus mode. Use when the user says rsl-cribado-2-memoria or after PDFs are in docs/pdf/.
 ---
 
 # rsl-cribado-2-memoria
@@ -8,7 +8,7 @@ description: PRISMA screening 2 step 2 — index full texts. PDFs in picoc/<fech
 Memory of screening-2 corpus so agents query papers without reopening PDFs. Separate graph from the theme; never touches `RSL/PDF/` or theme `graphify-out/`.
 
 ```text
-docs/[titulo-breve]/picoc/<fecha-base>-cribado-2-<MARCO>/
+docs/[titulo-breve]/RSL/picoc/<fecha-base>-cribado-2-<MARCO>/
   docs/pdf/<Id>-<titulo-slug>.pdf
   docs/md/<stem>.md
   docs/md/_raw/<stem>.txt
@@ -30,7 +30,7 @@ Invoke: `Usa rsl-cribado-2-memoria sobre docs/<slug>/`.
 ## Cierre
 
 - Failure: `ERROR: <mensaje>. <arreglo>`.
-- Success: `OK: memoria de <n> PDF en picoc/<carpeta-cribado-2>/graphify-out/graph.json (<nodos> nodos). Próximo paso: Usa rsl-cribado-2-polish sobre docs/<slug>/`.
+- Success: `OK: memoria de <n> PDF en RSL/picoc/<carpeta-cribado-2>/graphify-out/graph.json (<nodos> nodos). Próximo paso: Usa rsl-cribado-2-polish sobre docs/<slug>/`.
 
 ## Forbidden
 
