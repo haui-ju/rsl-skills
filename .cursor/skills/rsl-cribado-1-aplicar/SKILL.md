@@ -18,7 +18,7 @@ Invoke: `Usa rsl-cribado-1-aplicar sobre docs/<slug>/`.
 
 ## Procedure
 
-1. `pnpm -s cribado:apply docs/<slug>`. It checks that the exports and the unified CSV did not change since `cribado:prepare` and that `cribado-1.md` and the shadow are up to date with the decisions; then it writes `resultados-<MARCO>-cribado-1.csv`: the unified columns and rows in the same order, plus `¿Se acepta?` (SI or NO) and `Justificación cribado 1` (motive and criteria; `Duda:` prefix for doubts; duplicates say which record and base they repeat).
+1. `pnpm -s cribado:apply docs/<slug>`. It checks that the exports and the unified CSV did not change since `cribado:prepare` and that `cribado-1.md` and the shadow are up to date with the decisions; then it writes `resultados-<MARCO>-cribado-1.csv`: the unified columns and rows in the same order, plus `¿Se acepta?` (SI or NO) and `Justificación cribado 1` (motive and criteria only — never a `Duda:` prefix; SI with duda stays `SI` and the doubt is in `cribado-1.md` / `cribado-1.shadow.jsonl`; duplicates say which record and base they repeat).
 2. ERROR «no están al día» → `pnpm -s cribado:report docs/<slug>`, tell the user the report changed and ask them to review it again; do not apply until they approve.
 3. Chat: SI and NO counts, the path of the new CSV and the PRISMA line of the report (for the paper's selection section). Then the Cierre line.
 

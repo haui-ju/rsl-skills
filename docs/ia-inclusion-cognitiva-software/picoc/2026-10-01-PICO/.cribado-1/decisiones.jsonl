@@ -1,0 +1,125 @@
+{"id": "R001", "decision": "SI", "criterios": [], "motivo": "App móvil con lógica difusa e IA para evaluar dificultad textual en lectura con dislexia", "duda": false, "acuerdo": true}
+{"id": "R002", "decision": "SI", "criterios": [], "motivo": "Revisión de interfaces de voz conversacionales para síndrome de Down y diseño accesible", "duda": false, "acuerdo": true}
+{"id": "R003", "decision": "NO", "criterios": ["CE3"], "motivo": "Co-diseño de robots sociales con discapacidad intelectual; robot como producto, no ciclo de vida SW", "duda": false, "acuerdo": true}
+{"id": "R004", "decision": "NO", "criterios": ["CI3"], "motivo": "Tutoría matemática para estudiantes sordos o hipoacúsicos; población auditiva fuera del marco", "duda": false, "acuerdo": true}
+{"id": "R005", "decision": "NO", "criterios": ["CI3"], "motivo": "Tartamudez y calidad de respuestas ChatGPT; sin artefacto de software ni población del marco", "duda": false, "acuerdo": true}
+{"id": "R006", "decision": "NO", "criterios": ["CE3"], "motivo": "Serious game educativo con agentes virtuales; producto de intervención, no ciclo de vida del software", "duda": false, "acuerdo": false}
+{"id": "R007", "decision": "NO", "criterios": ["CI4"], "motivo": "Revisión sistemática sobre detección de dislexia con ML; no intervención en ciclo de vida del software", "duda": false, "acuerdo": true}
+{"id": "R008", "decision": "SI", "criterios": [], "motivo": "Sistema de resultados por voz con ANN/HMM; diseño e implementación, dislexia entre usuarios citados", "duda": true, "acuerdo": true}
+{"id": "R009", "decision": "SI", "criterios": [], "motivo": "Sistema de simplificación lexical con ML integrado en web para discapacidad intelectual y aprendizaje", "duda": false, "acuerdo": true}
+{"id": "R010", "decision": "SI", "criterios": [], "motivo": "Marco y prototipo GenAI para estudiantes con discapacidades de aprendizaje; diseño e implementación previstos", "duda": true, "acuerdo": true}
+{"id": "R011", "decision": "SI", "criterios": [], "motivo": "Estudio empírico de prompts y modelos LLM para accesibilidad cognitiva en discapacidad de aprendizaje", "duda": false, "acuerdo": true}
+{"id": "R012", "decision": "SI", "criterios": [], "motivo": "Revisión de tecnologías asistivas digitales para adultos con síndrome de Down y co-diseño", "duda": false, "acuerdo": true}
+{"id": "R013", "decision": "SI", "criterios": [], "motivo": "Revisión de alcance GenAI y LLM en rehabilitación, discapacidad y educación especial", "duda": false, "acuerdo": true}
+{"id": "R014", "decision": "SI", "criterios": [], "motivo": "Revisión HCI de tecnologías de apoyo a la lectura en dislexia y discapacidades cognitivas", "duda": false, "acuerdo": true}
+{"id": "R015", "decision": "NO", "criterios": ["CI4"], "motivo": "Experimento eye-tracking con sinónimos manuales; no emplea técnicas de inteligencia artificial", "duda": false, "acuerdo": true}
+{"id": "R016", "decision": "NO", "criterios": ["CE3"], "motivo": "Chatbot móvil de TCC para déficit de atención; intervención terapéutica, no ciclo de vida del software", "duda": false, "acuerdo": true}
+{"id": "R017", "decision": "NO", "criterios": ["CE3"], "motivo": "PyPal, tutor inteligente de Python para TDAH en K-12; tutor adaptativo como producto principal", "duda": false, "acuerdo": true}
+{"id": "R018", "decision": "SI", "criterios": [], "motivo": "Revisión sobre RV y autismo; pertinencia temática, fase SDLC no en el resumen", "duda": true, "acuerdo": false}
+{"id": "R019", "decision": "NO", "criterios": ["CI4"], "motivo": "Módulo curricular de ciberseguridad y auditoría de contratación con IA; sin artefacto de accesibilidad SW", "duda": false, "acuerdo": true}
+{"id": "R020", "decision": "NO", "criterios": ["CE1"], "motivo": "Encuesta de satisfacción de programa IA de diagnóstico genético; solo detección clínica", "duda": false, "acuerdo": true}
+{"id": "R021", "decision": "SI", "criterios": [], "motivo": "Revisión de diseño inclusivo y adaptativo de interacción humano-IA para usuarios neurodivergentes", "duda": false, "acuerdo": true}
+{"id": "R022", "decision": "SI", "criterios": [], "motivo": "Marco e-learning inclusivo con IA para estudiantes con discapacidad, incluida cognitiva", "duda": false, "acuerdo": true}
+{"id": "R023", "decision": "SI", "criterios": [], "motivo": "Arquitectura model-driven y LLM para generar interfaces accesibles según perfil cognitivo", "duda": false, "acuerdo": true}
+{"id": "R024", "decision": "SI", "criterios": [], "motivo": "Metodología con IA para diseñar interfaces inclusivas en sistemas TI para neurodivergencia", "duda": false, "acuerdo": true}
+{"id": "R025", "decision": "NO", "criterios": ["CI3"], "motivo": "ML predice accesibilidad de textos de salud para universitarios no nativos; sin población del marco", "duda": false, "acuerdo": true}
+{"id": "R026", "decision": "SI", "criterios": [], "motivo": "Revisión sistemática de LLM en accesibilidad web, incluidas brechas de accesibilidad cognitiva", "duda": false, "acuerdo": true}
+{"id": "R027", "decision": "NO", "criterios": ["CI3"], "motivo": "Plataforma interactiva IA para educación musical; sin población neurodivergente del marco", "duda": false, "acuerdo": true}
+{"id": "R028", "decision": "NO", "criterios": ["CE2"], "motivo": "Prototipo LLM de preguntas para aprendices sordos; foco auditivo sin neurodivergencia del marco", "duda": false, "acuerdo": true}
+{"id": "R029", "decision": "SI", "criterios": [], "motivo": "Dataset COGA y marco de evaluación de contenido LLM para personas TDAH, dislexia y autismo", "duda": false, "acuerdo": true}
+{"id": "R030", "decision": "NO", "criterios": ["CE1"], "motivo": "BERT clasifica severidad de TDAH en texto de redes sociales; detección, sin software de accesibilidad", "duda": false, "acuerdo": true}
+{"id": "R031", "decision": "SI", "criterios": [], "motivo": "Framework y asistente de productividad con ML en dispositivo para profesionales con TDAH", "duda": false, "acuerdo": true}
+{"id": "R032", "decision": "SI", "criterios": [], "motivo": "Prueba de concepto AR+IA para guía de electrodomésticos; apoyo cognitivo leve, desarrollo de sistema", "duda": true, "acuerdo": true}
+{"id": "R033", "decision": "NO", "criterios": ["CE1"], "motivo": "Juego serio en iPad para reconocimiento emocional y riesgo autismo/TDAH; identificación temprana", "duda": false, "acuerdo": true}
+{"id": "R034", "decision": "NO", "criterios": ["CI4"], "motivo": "Comentario sin artefacto ni estudio empírico de IA en ciclo de vida del software", "duda": false, "acuerdo": false}
+{"id": "R035", "decision": "NO", "criterios": ["CE3"], "motivo": "Sistema de aprendizaje de chino asistido por robot para dislexia; robot educativo principal", "duda": false, "acuerdo": true}
+{"id": "R036", "decision": "NO", "criterios": ["CI4"], "motivo": "Arquitectura hipotética FIAP-Digital para estratificación en autismo; sin fase de ciclo de vida SW", "duda": false, "acuerdo": true}
+{"id": "R037", "decision": "NO", "criterios": ["CE2"], "motivo": "Seguimiento clínico de implante coclear y lenguaje; población sorda, sin foco cognitivo del marco", "duda": false, "acuerdo": true}
+{"id": "R038", "decision": "SI", "criterios": [], "motivo": "Prototipo móvil open source de resumen automático de textos para usuarios con dislexia", "duda": false, "acuerdo": true}
+{"id": "R039", "decision": "NO", "criterios": ["CI4"], "motivo": "Revisión neurocientífica de metáforas multimodales; sin IA en desarrollo o diseño de software", "duda": false, "acuerdo": true}
+{"id": "R040", "decision": "NO", "criterios": ["CI4"], "motivo": "Revisión sistemática de ML en evaluación conductual del autismo orientada a diagnóstico, no a ciclo de vida SW", "duda": false, "acuerdo": true}
+{"id": "R041", "decision": "NO", "criterios": ["CE1"], "motivo": "Revisión sobre cribado diagnóstico TEA con eye-tracking y ML; sin artefacto de software evaluado", "duda": false, "acuerdo": true}
+{"id": "R042", "decision": "NO", "criterios": ["CI3"], "motivo": "Ensayo ético sobre chatbots de salud mental; no estudia software accesible para población del marco P", "duda": false, "acuerdo": true}
+{"id": "R043", "decision": "NO", "criterios": ["CI3"], "motivo": "Plataforma SMILE para profesionales sanitarios; neurodivergencia gestionada en clínica, no población P", "duda": false, "acuerdo": true}
+{"id": "R044", "decision": "SI", "criterios": [], "motivo": "LLM para contenido educativo TDAH; no consta fase del ciclo de vida en el resumen", "duda": true, "acuerdo": false}
+{"id": "R045", "decision": "NO", "criterios": ["CI3"], "motivo": "GPT-4 anota severidad fenotípica en ontología HPO; curación clínica general, no población objetivo", "duda": false, "acuerdo": true}
+{"id": "R046", "decision": "NO", "criterios": ["CE2"], "motivo": "Componente TTS multilingüe para discapacidad visual; accesibilidad sensorial sin foco neurodivergente", "duda": false, "acuerdo": true}
+{"id": "R047", "decision": "NO", "criterios": ["CI4"], "motivo": "Propone taxonomía de servicios E2U audiovisuales; no describe técnicas de IA ni ingeniería de software", "duda": false, "acuerdo": true}
+{"id": "R048", "decision": "NO", "criterios": ["CE3"], "motivo": "Encuesta sobre IA en logopedia y trastornos del habla; rehabilitación como producto principal", "duda": false, "acuerdo": true}
+{"id": "R049", "decision": "NO", "criterios": ["CI1"], "motivo": "Open Book con PLN para autismo evaluado en 2019; fuera del periodo 2021–2026", "duda": false, "acuerdo": true}
+{"id": "R050", "decision": "NO", "criterios": ["CE2"], "motivo": "Subtítulos interpretativos para personas sordas; población y barrera sensoriales, no cognitiva del marco", "duda": false, "acuerdo": true}
+{"id": "R051", "decision": "SI", "criterios": [], "motivo": "Recomendaciones de accesibilidad en HuggingFace; fase SDLC no explícita en el resumen", "duda": true, "acuerdo": false}
+{"id": "R052", "decision": "NO", "criterios": ["CI3"], "motivo": "Cocina inteligente AAL para ancianos y discapacidad genérica; no acota autismo, TDAH ni perfiles del P", "duda": false, "acuerdo": true}
+{"id": "R053", "decision": "NO", "criterios": ["CE1"], "motivo": "AutismSynthGen predice autismo con datos sintéticos multimodales; solo diagnóstico, sin software evaluado", "duda": false, "acuerdo": true}
+{"id": "R054", "decision": "NO", "criterios": ["CI3"], "motivo": "Plataforma Flow para describers de vídeo; usuarios son profesionales, no población neurodivergente del estudio", "duda": false, "acuerdo": true}
+{"id": "R055", "decision": "NO", "criterios": ["CI4"], "motivo": "Toolkit de competencias digitales para enfermería; menciona IA en implicaciones, sin intervención de IA evaluada", "duda": false, "acuerdo": true}
+{"id": "R056", "decision": "NO", "criterios": ["CI3"], "motivo": "Modelo de volumetría RM predice desenlaces en prematuros; población neonatal ajena al marco P", "duda": false, "acuerdo": true}
+{"id": "R057", "decision": "SI", "criterios": ["CI3", "CI4"], "motivo": "ChatGPT reescribe textos académicos para dislexia; mide legibilidad con cuatro estrategias de prompting", "duda": false, "acuerdo": true}
+{"id": "R058", "decision": "NO", "criterios": ["CI4"], "motivo": "Usabilidad de Google y SAPO en navegación web por discapacidad intelectual; sin técnicas de IA", "duda": false, "acuerdo": true}
+{"id": "R059", "decision": "NO", "criterios": ["CI4"], "motivo": "Revisión sistemática sobre IA de apoyo a personas con autismo; estudio secundario sin artefacto propio", "duda": false, "acuerdo": true}
+{"id": "R060", "decision": "NO", "criterios": ["CI4"], "motivo": "Codiseño de app de museo ACCESS+ con discapacidad intelectual; TTS y AAC sin IA declarada en el resumen", "duda": false, "acuerdo": true}
+{"id": "R061", "decision": "NO", "criterios": ["CI4"], "motivo": "Relato de experiencia TDAH y barreras sanitarias; reflexión conceptual sin evaluación de software con IA", "duda": false, "acuerdo": true}
+{"id": "R062", "decision": "NO", "criterios": ["CI1"], "motivo": "Herramienta AWH con traducción neuronal para dislexia en Facebook; publicación 2019 fuera de periodo", "duda": false, "acuerdo": true}
+{"id": "R063", "decision": "SI", "criterios": ["CI3", "CI4"], "motivo": "Desarrollo inicial de FACILE con IA para adaptación lectura fácil y accesibilidad cognitiva", "duda": false, "acuerdo": true}
+{"id": "R064", "decision": "NO", "criterios": ["CI4"], "motivo": "Piloto sobre lectura fácil en educación especial sordos; metodología manual sin IA en el resumen", "duda": false, "acuerdo": true}
+{"id": "R065", "decision": "NO", "criterios": ["CI3"], "motivo": "CRCWeb oncológico con genAI para pacientes colorrectales; dislexia como barrera secundaria, no población P", "duda": false, "acuerdo": true}
+{"id": "R066", "decision": "SI", "criterios": ["CI3", "CI4"], "motivo": "LLM y NLP simplifican textos españoles a lectura fácil; corpus paralelo y evaluación experta", "duda": false, "acuerdo": true}
+{"id": "R067", "decision": "SI", "criterios": ["CI3", "CI4"], "motivo": "Heurísticas U+A generadas con IA generativa para evaluar sistemas en diversidad cognitiva", "duda": false, "acuerdo": true}
+{"id": "R068", "decision": "SI", "criterios": ["CI3", "CI4"], "motivo": "MTCAI simplifica informes médicos con LLM para adultos con discapacidad intelectual y del desarrollo", "duda": false, "acuerdo": true}
+{"id": "R069", "decision": "NO", "criterios": ["CI4"], "motivo": "Marco conceptual de exclusión y dignidad en IA para autismo; sin estudio empírico de artefacto software", "duda": false, "acuerdo": true}
+{"id": "R070", "decision": "NO", "criterios": ["CE3"], "motivo": "Marco ADAPT agéntico para hábitos alimentarios y recordatorios; asistencia sanitaria, no ciclo de vida del software", "duda": false, "acuerdo": true}
+{"id": "R071", "decision": "NO", "criterios": ["CI4"], "motivo": "Panorama sobre IA en museos de ciencia para accesibilidad; discusión general sin evaluación de ingeniería", "duda": false, "acuerdo": true}
+{"id": "R072", "decision": "NO", "criterios": ["CI3"], "motivo": "Simplificación de textos; población P no estudiada en el resumen", "duda": false, "acuerdo": false}
+{"id": "R073", "decision": "SI", "criterios": [], "motivo": "NCAPS para discapacidad cognitiva; IA no descartada en título ni resumen", "duda": true, "acuerdo": false}
+{"id": "R074", "decision": "SI", "criterios": [], "motivo": "Co-diseño GenAI con estudiantes TDAH; artefacto y fase SDLC no en el resumen", "duda": true, "acuerdo": false}
+{"id": "R075", "decision": "NO", "criterios": ["CI4"], "motivo": "Revisión sobre agentes conversacionales para discapacidad intelectual y del desarrollo; estudio secundario", "duda": false, "acuerdo": true}
+{"id": "R076", "decision": "NO", "criterios": ["CE1"], "motivo": "RareDAI fine-tune LLM para elegir pruebas genéticas en enfermedades raras; decisión clínica, no software accesible", "duda": false, "acuerdo": true}
+{"id": "R077", "decision": "SI", "criterios": [], "motivo": "SearchPath para dislexia; técnicas de IA no constan en el resumen", "duda": true, "acuerdo": false}
+{"id": "R078", "decision": "SI", "criterios": ["CI3", "CI4"], "motivo": "Métodos de IA adaptan morfología española a lectura fácil con diseño inclusivo para discapacidad cognitiva", "duda": false, "acuerdo": true}
+{"id": "R079", "decision": "NO", "criterios": ["CI4"], "motivo": "Grupos focales con organizaciones de defensa sobre lenguaje llano; IA solo como borrador humano verificado", "duda": false, "acuerdo": true}
+{"id": "R080", "decision": "SI", "criterios": ["CI4"], "motivo": "Prototipo móvil de lectura para dislexia con sugerencias inteligentes; IA y fase del ciclo no constan en resumen", "duda": true, "acuerdo": true}
+{"id": "R081", "decision": "NO", "criterios": ["CI4"], "motivo": "Diseña módulos e-learning para DI con teorías de aprendizaje; el resumen no menciona IA", "duda": false, "acuerdo": true}
+{"id": "R082", "decision": "SI", "criterios": [], "motivo": "Revisión sobre interfaces GAI y accesibilidad cognitiva; fase SDLC no en el resumen", "duda": true, "acuerdo": false}
+{"id": "R083", "decision": "SI", "criterios": [], "motivo": "Diario de uso de ChatGPT en TDAH; no evalúa artefacto software en el resumen", "duda": true, "acuerdo": false}
+{"id": "R084", "decision": "SI", "criterios": ["CI4"], "motivo": "Marco ML multimodal clasifica imágenes de libros para alumnos con trastornos del neurodesarrollo", "duda": false, "acuerdo": true}
+{"id": "R085", "decision": "SI", "criterios": ["CI4"], "motivo": "CMS Iris con LLM simplifica contenidos; evaluado con dislexia y discapacidad; fase SDLC no explícita", "duda": true, "acuerdo": true}
+{"id": "R086", "decision": "NO", "criterios": ["CE3"], "motivo": "Juego narrativo en altavoz inteligente entrena habilidades sociales en DI; producto rehabilitador", "duda": false, "acuerdo": true}
+{"id": "R087", "decision": "NO", "criterios": ["CI3"], "motivo": "Revisión de ML en atención geriátrica; población anciana con crónicas, fuera del picoc", "duda": false, "acuerdo": true}
+{"id": "R088", "decision": "NO", "criterios": ["CI3"], "motivo": "Sordera inatencional en obra; sin población neurodivergente ni software de accesibilidad cognitiva", "duda": false, "acuerdo": true}
+{"id": "R089", "decision": "NO", "criterios": ["CI4"], "motivo": "Caso autismo con lenguaje gestalt; recomienda diseño tecnológico sin IA en el resumen", "duda": false, "acuerdo": true}
+{"id": "R090", "decision": "NO", "criterios": ["CI4"], "motivo": "Co-producción sobre monitor EEG subcutáneo; ChatGPT solo codifica entrevistas, no artefacto evaluado", "duda": false, "acuerdo": true}
+{"id": "R091", "decision": "SI", "criterios": ["CI4"], "motivo": "Prototipado temprano con LLM de app NeuRoam para niños neurodivergentes alineada WCAG y COGA", "duda": false, "acuerdo": true}
+{"id": "R092", "decision": "NO", "criterios": ["CI4"], "motivo": "Guías de vídeo MOOC móvil; encuesta y análisis de frames sin técnicas de IA en el resumen", "duda": false, "acuerdo": true}
+{"id": "R093", "decision": "SI", "criterios": [], "motivo": "Revisión PRISMA inmersiva en TEA; pertinencia temática, SDLC no en el resumen", "duda": true, "acuerdo": false}
+{"id": "R094", "decision": "SI", "criterios": [], "motivo": "Entrevistas sobre GenAI en academia; sin artefacto evaluado en el resumen", "duda": true, "acuerdo": false}
+{"id": "R095", "decision": "SI", "criterios": ["CI4"], "motivo": "Plataforma PlanTEA-WM con LLM genera rutinas visuales para TEA; fase del ciclo no en resumen", "duda": true, "acuerdo": true}
+{"id": "R096", "decision": "NO", "criterios": ["CI3"], "motivo": "PhenoApt prioriza genes mendelianos con ML; genética clínica, no accesibilidad cognitiva en software", "duda": false, "acuerdo": true}
+{"id": "R097", "decision": "SI", "criterios": ["CI4"], "motivo": "LARF anota textos con LLM para dislexia; ensayo con 150 participantes; fase SDLC no explícita", "duda": true, "acuerdo": true}
+{"id": "R098", "decision": "SI", "criterios": ["CI4"], "motivo": "Desarrolla Task Complete gamificado para DI; heurística asistida por LLM durante diseño", "duda": false, "acuerdo": true}
+{"id": "R099", "decision": "SI", "criterios": ["CI4"], "motivo": "Prototipo e-learning integra resúmenes IA, chatbot y andamiaje visual para estudiantes con TDAH", "duda": true, "acuerdo": true}
+{"id": "R100", "decision": "SI", "criterios": [], "motivo": "Revisión sistemática de tecnología para enseñar TEA; SDLC no en el resumen", "duda": true, "acuerdo": false}
+{"id": "R101", "decision": "NO", "criterios": ["CI3"], "motivo": "Estudio EAP con estudiantes multilingües C1; no declara población neurodivergente del picoc", "duda": false, "acuerdo": true}
+{"id": "R102", "decision": "SI", "criterios": ["CI4"], "motivo": "Generación neuronal GPT/T5 para texto disléxico; evaluado con universitarios; fase SDLC no explícita", "duda": true, "acuerdo": true}
+{"id": "R103", "decision": "NO", "criterios": ["CI4"], "motivo": "Encuesta sobre necesidades de adaptación textual en autistas adultos; no implementa ni evalúa IA", "duda": false, "acuerdo": true}
+{"id": "R104", "decision": "SI", "criterios": [], "motivo": "Estudio cualitativo sobre apps IA; no implementa software en el resumen", "duda": true, "acuerdo": false}
+{"id": "R105", "decision": "SI", "criterios": ["CI4"], "motivo": "Subtítulos AR con IA interpretan señales no verbales; estudio con DHH y aprendices neurodiversos", "duda": true, "acuerdo": true}
+{"id": "R111", "decision": "SI", "criterios": ["CI4"], "motivo": "Co-diseño app VR con agentes generativos prepara visitas médicas en DI; confirmar fase SDLC", "duda": true, "acuerdo": true}
+{"id": "R112", "decision": "NO", "criterios": ["CI4"], "motivo": "Artículo ético sobre simplificación easy-read con LLM; sin artefacto de software evaluado", "duda": false, "acuerdo": true}
+{"id": "R113", "decision": "NO", "criterios": ["CI4"], "motivo": "Principios de diseño de infografías de salud para discapacidad intelectual; co-diseño sin IA", "duda": false, "acuerdo": true}
+{"id": "R116", "decision": "NO", "criterios": ["CI4"], "motivo": "Pruebas de accesibilidad web con adolescentes TDAH sobre WCAG; sin IA en el resumen", "duda": false, "acuerdo": true}
+{"id": "R117", "decision": "SI", "criterios": [], "motivo": "Compara chatbots informativos sobre TEA; no es solo diagnóstico", "duda": true, "acuerdo": false}
+{"id": "R123", "decision": "SI", "criterios": ["CI4"], "motivo": "Marco TEVV de pruebas y verificación de IA centrado en accesibilidad con estudios de caso", "duda": false, "acuerdo": true}
+{"id": "R124", "decision": "NO", "criterios": ["CE2"], "motivo": "MoSIoT con IA para navegación de personas con discapacidad visual; población solo sensorial", "duda": false, "acuerdo": true}
+{"id": "R130", "decision": "NO", "criterios": ["CI4"], "motivo": "Encuesta UTAUT sobre sistemas de empleo con IA; no desarrollo ni evaluación de software", "duda": false, "acuerdo": true}
+{"id": "R131", "decision": "NO", "criterios": ["CI3"], "motivo": "App móvil detecta dolor facial en parálisis cerebral no comunicativa; población fuera del picoc", "duda": false, "acuerdo": true}
+{"id": "R132", "decision": "SI", "criterios": ["CI4"], "motivo": "Juego con LLM evalúa tareas theory of mind; comparado con expertos humanos en participantes", "duda": false, "acuerdo": true}
+{"id": "R135", "decision": "SI", "criterios": [], "motivo": "Personalización UDL con analítica e IA; desarrollo de software no en el resumen", "duda": true, "acuerdo": false}
+{"id": "R136", "decision": "NO", "criterios": ["CI4"], "motivo": "Evalúa sistema AR comercial en talleres protegidos; discapacidad mental sin IA en resumen", "duda": false, "acuerdo": true}
+{"id": "R137", "decision": "NO", "criterios": ["CI4"], "motivo": "Evalúa comunicación social en niños autistas con pruebas clínicas; sin IA ni software", "duda": false, "acuerdo": true}
+{"id": "R138", "decision": "NO", "criterios": ["CE1"], "motivo": "ML clasifica diagnóstico TEA por prosodia del habla; solo detección, sin artefacto accesible", "duda": false, "acuerdo": true}
+{"id": "R139", "decision": "SI", "criterios": ["CI4"], "motivo": "Plataforma digital con IA, gamificación y eye-tracking para funciones ejecutivas en alumnos SESN", "duda": true, "acuerdo": true}
+{"id": "R140", "decision": "NO", "criterios": ["CI4"], "motivo": "fMRI en adultos con TDL; neuroimagen conductual sin IA ni artefacto de software evaluado", "duda": false, "acuerdo": true}
+{"id": "R142", "decision": "NO", "criterios": ["CI4"], "motivo": "Revisión PRISMA de BCI en gaming; no aporta estudio primario con IA en ciclo de vida del software", "duda": false, "acuerdo": true}
+{"id": "R143", "decision": "NO", "criterios": ["CE3"], "motivo": "Marco y canvas de codesign para robots sociales; robot como producto, no ciclo de vida del software", "duda": false, "acuerdo": true}
+{"id": "R144", "decision": "NO", "criterios": ["CE3"], "motivo": "Panorama de terapéutica digital; rehabilitación como foco, sin artefacto ni población cognitiva evaluada", "duda": false, "acuerdo": true}
+{"id": "R146", "decision": "NO", "criterios": ["CI4"], "motivo": "Entrevistas sobre grabación clínica con móvil en síndrome de Down; sin técnicas de IA en el resumen", "duda": false, "acuerdo": true}

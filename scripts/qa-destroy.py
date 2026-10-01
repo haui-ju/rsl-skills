@@ -1207,7 +1207,9 @@ def _(sb):
     out = list(_csv.reader((pdir / "resultados-PICOCT-cribado-1.csv").open(encoding="utf-8-sig", newline="")))
     sb.check(out[0][-2:] == ["¿Se acepta?", "Justificación cribado 1"] and len(out) == 9, f"columnas o filas inesperadas: {out[0][-2:]}, {len(out)}")
     sb.check(out[3][-2] == "NO" and "Duplicado de R001" in out[3][-1], f"el duplicado por título no quedó como NO con su registro: {out[3][-2:]}")
-    sb.check(out[5][-1].startswith("Duda:"), "la duda no se marca en la justificación")
+    sh_by_id = {json.loads(l)["id"]: json.loads(l) for l in sh[1:]}
+    r005 = next(r for r in out[1:] if r[0] == "R005")
+    sb.check(not r005[-1].startswith("Duda:") and sh_by_id["R005"]["duda"], "la justificación no lleva Duda: y la duda queda en el shadow")
     sb.check(all((pdir / n).read_bytes() == b for n, b in before.items()), "apply modificó una exportación")
 
 

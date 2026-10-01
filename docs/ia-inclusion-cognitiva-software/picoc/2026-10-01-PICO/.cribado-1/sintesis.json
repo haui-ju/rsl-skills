@@ -1,0 +1,5 @@
+{
+  "aceptados": "Software, plataformas o estudios con IA (LLM, NLP, accesibilidad) para perfiles cognitivos o neurodivergentes, incluidas revisiones y propuestas educativas si el resumen es pertinente; la fase del ciclo de vida del software se confirma en cribado 2.",
+  "rechazados": "Diagnóstico sin software evaluado (CE1), accesibilidad solo sensorial sin población P (CE2), robots o rehabilitación como producto principal (CE3), fuera de periodo o sin población/IA cuando el resumen lo contradice.",
+  "dudas": "Revisiones, e-learning, co-diseño o uso genérico de chatbots: pertinencia temática en cribado 1; fase SDLC, artefacto y población P se resuelven a texto completo."
+}

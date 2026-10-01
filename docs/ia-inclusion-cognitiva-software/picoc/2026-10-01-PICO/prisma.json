@@ -1,0 +1,27 @@
+{
+  "identification": {
+    "databases": 146,
+    "registers": 0
+  },
+  "removed_before_screening": {
+    "duplicates": 21,
+    "ineligible_automation": 0,
+    "other_reasons": 0
+  },
+  "screening": {
+    "screened": 125,
+    "excluded": 73
+  },
+  "retrieval": {
+    "sought": 52,
+    "not_retrieved": null
+  },
+  "eligibility": {
+    "assessed": null,
+    "excluded_reasons": {}
+  },
+  "included": {
+    "studies": null,
+    "reports": null
+  }
+}

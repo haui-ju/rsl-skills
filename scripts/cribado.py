@@ -793,7 +793,7 @@ def cmd_apply(theme: Path) -> int:
         why = r["motivo"].rstrip(".")
         if not r.get("duplicado_de") and r["criterios"]:
             why += f" ({', '.join(r['criterios'])})"
-        out.append(b + [r["decision"], ("Duda: " if r.get("duda") else "") + why + "."])
+        out.append(b + [r["decision"], why + "."])
     dest = uni.with_name(uni.stem + f"-{STAGE}.csv")
     with dest.open("w", encoding="utf-8-sig", newline="") as fh:
         w = csv.writer(fh, quoting=csv.QUOTE_ALL)

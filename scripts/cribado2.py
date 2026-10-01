@@ -44,6 +44,7 @@ from rsl_out import Fail, error, ok, run  # noqa: E402
 ROOT = Path(__file__).resolve().parent.parent
 COL_OK = "¿Se acepta?"
 COL_WHY = "Justificación cribado 1"
+CRIBADO1_SHADOW = "cribado-1.shadow.jsonl"
 DOCUMENTOS_JSON = "documentos.json"
 DOCUMENTOS_MD = "documentos.md"
 MEMORIA_TRAZA = "memoria-traza.json"
@@ -322,7 +323,30 @@ def existing_pdf(pdf_dir: Path, rid: str) -> Path | None:
     return None
 
 
-def registro_base(orden: int, row: dict) -> dict:
+def duda_from_shadow(picoc_dir: Path) -> dict[str, bool]:
+    sh = picoc_dir / CRIBADO1_SHADOW
+    if not sh.is_file():
+        return {}
+    out: dict[str, bool] = {}
+    for line in sh.read_text(encoding="utf-8").splitlines()[1:]:
+        if not line.strip():
+            continue
+        try:
+            r = json.loads(line)
+            out[r["id"]] = bool(r.get("duda"))
+        except (json.JSONDecodeError, KeyError):
+            continue
+    return out
+
+
+def row_duda(row: dict, dmap: dict[str, bool]) -> bool:
+    rid = row.get("Id") or ""
+    if rid in dmap:
+        return dmap[rid]
+    return (row.get(COL_WHY) or "").startswith("Duda:")
+
+
+def registro_base(orden: int, row: dict, dmap: dict[str, bool]) -> dict:
     return {
         "orden": orden,
         "id": row["Id"],
@@ -336,7 +360,7 @@ def registro_base(orden: int, row: dict) -> dict:
         "sha256": None,
         "bytes": None,
         "intentos": [],
-        "duda": (row.get(COL_WHY) or "").startswith("Duda:"),
+        "duda": row_duda(row, dmap),
     }
 
 
@@ -426,13 +450,14 @@ def write_documentos_md(corpus: Path, cat: dict) -> Path:
 
 
 def build_catalog(theme: Path, folder: Path, csv_path: Path, si: list[dict]) -> dict:
+    dmap = duda_from_shadow(folder)
     return {
         "picoc": rel(folder / "picoc.md"),
         "csv_cribado_1": rel(csv_path),
         "marco": pv.dir_marco(folder) or "MARCO",
         "carpeta": rel(cribado2_dir(theme)),
         "generado": dt.datetime.now().isoformat(timespec="seconds"),
-        "registros": [registro_base(i, r) for i, r in enumerate(si, 1)],
+        "registros": [registro_base(i, r, dmap) for i, r in enumerate(si, 1)],
     }
 
 
@@ -454,6 +479,7 @@ def update_prisma(folder: Path, sought: int, missing: int) -> bool:
 
 
 def merge_catalog_si(theme: Path, folder: Path, csv_path: Path, si: list[dict], cat: dict | None) -> dict:
+    dmap = duda_from_shadow(folder)
     if cat is None:
         return build_catalog(theme, folder, csv_path, si)
     by_id = {r["id"]: r for r in cat.get("registros", [])}
@@ -465,9 +491,9 @@ def merge_catalog_si(theme: Path, folder: Path, csv_path: Path, si: list[dict], 
             r["orden"] = i
             r["titulo"] = (row.get("Título") or "").strip()
             r["doi"] = norm_doi(row.get("DOI", ""))
-            r["duda"] = (row.get(COL_WHY) or "").startswith("Duda:")
+            r["duda"] = row_duda(row, dmap)
         else:
-            r = registro_base(i, row)
+            r = registro_base(i, row, dmap)
         regs.append(r)
     cat["registros"] = regs
     cat["csv_cribado_1"] = rel(csv_path)
