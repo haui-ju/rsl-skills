@@ -1,0 +1,3527 @@
+{
+  "picoc": "docs/ia-deteccion-amenazas-almacenamiento-nube/picoc/2026-10-01-PICO/picoc.md",
+  "fecha": "2026-10-01",
+  "fuentes": [
+    {
+      "base": "Scopus",
+      "archivo": "scopus-result.csv",
+      "hash": "149f00e69439",
+      "n": 111,
+      "csv": "scopus-result.csv"
+    },
+    {
+      "base": "WoS",
+      "archivo": "wos-resultados.xls",
+      "hash": "c2f967cec1a7",
+      "n": 250,
+      "csv": "wos-resultados.csv"
+    }
+  ],
+  "unificado": "resultados-PICO.csv",
+  "unificado_hash": "baed5700093c",
+  "criterios": {
+    "CI1": "Estudios publicados entre 2021 y 2026.",
+    "CI2": "Artículos de revista revisados por pares en inglés o español, con acceso abierto al texto completo.",
+    "CI3": "Estudios que evalúen detección de accesos anómalos o amenazas en *object storage* (incluidos logs de buckets).",
+    "CI4": "Estudios que empleen técnicas de inteligencia artificial (aprendizaje automático, aprendizaje profundo, detección de anomalías o analítica conductual sobre logs de acceso).",
+    "CI5": "Estudios que reporten al menos una métrica de desempeño o detección (precisión, recall, F1, AUC, falsos positivos, latencia o tiempo hasta detección).",
+    "CE1": "Estudios cuyo único foco sea detección en red o *endpoint* sin capa de almacenamiento identificable.",
+    "CE2": "Trabajos centrados solo en cifrado en reposo o prevención de pérdida de datos sin detección basada en IA.",
+    "CE3": "Literatura gris, documentación comercial de proveedores cloud o blogs como evidencia primaria.",
+    "CE4": "Evaluaciones limitadas a benchmarks de tráfico de red (p. ej. KDD, CICIDS) sin relación con almacenamiento en nube."
+  },
+  "duplicados": [
+    {
+      "id": "R113",
+      "fuente": "WoS",
+      "de": "R100",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R114",
+      "fuente": "WoS",
+      "de": "R040",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R119",
+      "fuente": "WoS",
+      "de": "R108",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R120",
+      "fuente": "WoS",
+      "de": "R037",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R121",
+      "fuente": "WoS",
+      "de": "R090",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R124",
+      "fuente": "WoS",
+      "de": "R066",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R129",
+      "fuente": "WoS",
+      "de": "R064",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R134",
+      "fuente": "WoS",
+      "de": "R058",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R138",
+      "fuente": "WoS",
+      "de": "R029",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R144",
+      "fuente": "WoS",
+      "de": "R088",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R148",
+      "fuente": "WoS",
+      "de": "R014",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R152",
+      "fuente": "WoS",
+      "de": "R083",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R156",
+      "fuente": "WoS",
+      "de": "R024",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R157",
+      "fuente": "WoS",
+      "de": "R075",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R159",
+      "fuente": "WoS",
+      "de": "R101",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R160",
+      "fuente": "WoS",
+      "de": "R056",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R161",
+      "fuente": "WoS",
+      "de": "R104",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R165",
+      "fuente": "WoS",
+      "de": "R052",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R169",
+      "fuente": "WoS",
+      "de": "R002",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R171",
+      "fuente": "WoS",
+      "de": "R086",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R172",
+      "fuente": "WoS",
+      "de": "R022",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R173",
+      "fuente": "WoS",
+      "de": "R020",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R176",
+      "fuente": "WoS",
+      "de": "R110",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R177",
+      "fuente": "WoS",
+      "de": "R070",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R180",
+      "fuente": "WoS",
+      "de": "R034",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R181",
+      "fuente": "WoS",
+      "de": "R093",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R183",
+      "fuente": "WoS",
+      "de": "R026",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R184",
+      "fuente": "WoS",
+      "de": "R005",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R187",
+      "fuente": "WoS",
+      "de": "R007",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R188",
+      "fuente": "WoS",
+      "de": "R010",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R190",
+      "fuente": "WoS",
+      "de": "R092",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R196",
+      "fuente": "WoS",
+      "de": "R077",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R202",
+      "fuente": "WoS",
+      "de": "R011",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R203",
+      "fuente": "WoS",
+      "de": "R043",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R209",
+      "fuente": "WoS",
+      "de": "R016",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R213",
+      "fuente": "WoS",
+      "de": "R059",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R216",
+      "fuente": "WoS",
+      "de": "R054",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R219",
+      "fuente": "WoS",
+      "de": "R047",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R225",
+      "fuente": "WoS",
+      "de": "R004",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R227",
+      "fuente": "WoS",
+      "de": "R017",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R228",
+      "fuente": "WoS",
+      "de": "R038",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R231",
+      "fuente": "WoS",
+      "de": "R094",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R235",
+      "fuente": "WoS",
+      "de": "R045",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R236",
+      "fuente": "WoS",
+      "de": "R025",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R247",
+      "fuente": "WoS",
+      "de": "R081",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R248",
+      "fuente": "WoS",
+      "de": "R031",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R250",
+      "fuente": "WoS",
+      "de": "R103",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R252",
+      "fuente": "WoS",
+      "de": "R008",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R257",
+      "fuente": "WoS",
+      "de": "R027",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R262",
+      "fuente": "WoS",
+      "de": "R063",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R266",
+      "fuente": "WoS",
+      "de": "R060",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R271",
+      "fuente": "WoS",
+      "de": "R091",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R275",
+      "fuente": "WoS",
+      "de": "R057",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R276",
+      "fuente": "WoS",
+      "de": "R053",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R277",
+      "fuente": "WoS",
+      "de": "R041",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R279",
+      "fuente": "WoS",
+      "de": "R050",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R282",
+      "fuente": "WoS",
+      "de": "R012",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R283",
+      "fuente": "WoS",
+      "de": "R019",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R284",
+      "fuente": "WoS",
+      "de": "R035",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R286",
+      "fuente": "WoS",
+      "de": "R009",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R288",
+      "fuente": "WoS",
+      "de": "R096",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R291",
+      "fuente": "WoS",
+      "de": "R055",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R298",
+      "fuente": "WoS",
+      "de": "R028",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R306",
+      "fuente": "WoS",
+      "de": "R089",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R325",
+      "fuente": "WoS",
+      "de": "R033",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R327",
+      "fuente": "WoS",
+      "de": "R073",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R333",
+      "fuente": "WoS",
+      "de": "R079",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R340",
+      "fuente": "WoS",
+      "de": "R095",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    },
+    {
+      "id": "R361",
+      "fuente": "WoS",
+      "de": "R067",
+      "fuente_de": "Scopus",
+      "por": "DOI",
+      "criterio": "DUPLICADO_TECNICO"
+    }
+  ],
+  "lotes": [
+    [
+      1,
+      40,
+      "R001",
+      "R040"
+    ],
+    [
+      41,
+      80,
+      "R041",
+      "R080"
+    ],
+    [
+      81,
+      120,
+      "R081",
+      "R126"
+    ],
+    [
+      121,
+      160,
+      "R127",
+      "R191"
+    ],
+    [
+      161,
+      200,
+      "R192",
+      "R244"
+    ],
+    [
+      201,
+      240,
+      "R245",
+      "R303"
+    ],
+    [
+      241,
+      280,
+      "R304",
+      "R348"
+    ],
+    [
+      281,
+      292,
+      "R349",
+      "R360"
+    ]
+  ],
+  "registros": [
+    {
+      "id": "R001",
+      "fuente": "Scopus",
+      "titulo": "A Microservices-Based Large-Scale Intelligence Framework for Adaptive Anomaly Detection in Distributed Data Streams",
+      "anio": "2026",
+      "doi": "10.51483/ijaiml.6.2s.2026.46-54",
+      "id_base": "2-s2.0-105042653358"
+    },
+    {
+      "id": "R002",
+      "fuente": "Scopus; WoS",
+      "titulo": "Cloud-Driven Data Analytics for Growing Plants Indoor",
+      "anio": "2025",
+      "doi": "10.3390/agriengineering7040101",
+      "id_base": "2-s2.0-105003466743"
+    },
+    {
+      "id": "R003",
+      "fuente": "Scopus",
+      "titulo": "EdgeTwin-DRL: Real-Time Counter-UAS Detection and Response Optimization Using Edge-Assisted Digital Twins and Multi-Agent Deep Reinforcement Learning",
+      "anio": "2026",
+      "doi": "10.3390/s26175632",
+      "id_base": "2-s2.0-105050300619"
+    },
+    {
+      "id": "R004",
+      "fuente": "Scopus; WoS",
+      "titulo": "Secure Fog Computing for Remote Health Monitoring with Data Prioritisation and AI-Based Anomaly Detection",
+      "anio": "2025",
+      "doi": "10.3390/s25237329",
+      "id_base": "2-s2.0-105024630931"
+    },
+    {
+      "id": "R005",
+      "fuente": "Scopus; WoS",
+      "titulo": "Memory-efficient deep learning for botnet attack detection in iot networks",
+      "anio": "2021",
+      "doi": "10.3390/electronics10091104",
+      "id_base": "2-s2.0-85105391955"
+    },
+    {
+      "id": "R006",
+      "fuente": "Scopus",
+      "titulo": "Enhancing Advanced Persistent Threat Detection with Federated Learning and Neural Networks for Secure Cloud Computer Environment",
+      "anio": "2025",
+      "doi": "10.58496/mjcs/2025/068",
+      "id_base": "2-s2.0-105026413411"
+    },
+    {
+      "id": "R007",
+      "fuente": "Scopus; WoS",
+      "titulo": "Optimizing Alzheimer's Data Analysis Through Multi-Cloud Integration: A Performance and Reliability Approach",
+      "anio": "2026",
+      "doi": "10.1016/j.rico.2026.100687",
+      "id_base": "2-s2.0-105035076026"
+    },
+    {
+      "id": "R008",
+      "fuente": "Scopus; WoS",
+      "titulo": "Dual level dengue diagnosis using lightweight multilayer perceptron with XAI in fog computing environment and rule based inference",
+      "anio": "2025",
+      "doi": "10.1038/s41598-025-98365-6",
+      "id_base": "2-s2.0-105004917858"
+    },
+    {
+      "id": "R009",
+      "fuente": "Scopus; WoS",
+      "titulo": "Learning-based orchestration for low-latency AI deployment in hybrid cloud–edge platforms",
+      "anio": "2026",
+      "doi": "10.1038/s41598-026-58531-w",
+      "id_base": "2-s2.0-105049667607"
+    },
+    {
+      "id": "R010",
+      "fuente": "Scopus; WoS",
+      "titulo": "Cognitive ZTNA: A Neuro-Symbolic AI Approach for Adaptive and Explainable Zero Trust Access Control",
+      "anio": "2026",
+      "doi": "10.3390/math14071211",
+      "id_base": "2-s2.0-105035552813"
+    },
+    {
+      "id": "R011",
+      "fuente": "Scopus; WoS",
+      "titulo": "Overhead Reduction Technique for Software-Defined Network Based Intrusion Detection Systems",
+      "anio": "2022",
+      "doi": "10.1109/access.2022.3184722",
+      "id_base": "2-s2.0-85133708803"
+    },
+    {
+      "id": "R012",
+      "fuente": "Scopus; WoS",
+      "titulo": "Enhancing organizational security through proactive cybersecurity risk management and continuous threat monitoring systems",
+      "anio": "2026",
+      "doi": "10.1016/j.teler.2026.100369",
+      "id_base": "2-s2.0-105050799617"
+    },
+    {
+      "id": "R013",
+      "fuente": "Scopus",
+      "titulo": "Intrusion Detection System: An Ensemble Deep Learning Approach for Cloud Computing Using EBWO",
+      "anio": "2025",
+      "doi": "10.55003/cast.2025.262276",
+      "id_base": "2-s2.0-86000775868"
+    },
+    {
+      "id": "R014",
+      "fuente": "Scopus; WoS",
+      "titulo": "Adaptive Data Prefetching for File Storage Systems Using Online Machine Learning",
+      "anio": "2026",
+      "doi": "10.3390/bdcc10010028",
+      "id_base": "2-s2.0-105028522443"
+    },
+    {
+      "id": "R015",
+      "fuente": "Scopus",
+      "titulo": "Interpretable Deep Learning Defences via User Anomaly Detection in Cloud Platforms",
+      "anio": "2026",
+      "doi": "10.59543/jidmis.v3.659",
+      "id_base": "2-s2.0-105045390649"
+    },
+    {
+      "id": "R016",
+      "fuente": "Scopus; WoS",
+      "titulo": "Unmanned Aerial Vehicles-based blockchain-inspired Intelligent framework for collaborative intrusion detection",
+      "anio": "2026",
+      "doi": "10.1016/j.icte.2025.12.008",
+      "id_base": "2-s2.0-105025543086"
+    },
+    {
+      "id": "R017",
+      "fuente": "Scopus; WoS",
+      "titulo": "Sustainable Smart Facility: A Real-Time Internet of Things-Based Environmental Monitoring and Predictive Control System Using Amazon Web Services Cloud Services",
+      "anio": "2026",
+      "doi": "10.1049/wss2.70035",
+      "id_base": "2-s2.0-105046601169"
+    },
+    {
+      "id": "R018",
+      "fuente": "Scopus",
+      "titulo": "SmartTrust: a hybrid deep learning framework for real-time threat detection in cloud environments using Zero-Trust Architecture",
+      "anio": "2025",
+      "doi": "10.1186/s13677-025-00764-7",
+      "id_base": "2-s2.0-105009543756"
+    },
+    {
+      "id": "R019",
+      "fuente": "Scopus; WoS",
+      "titulo": "Explaining Performance Issues of Cloud Applications From Logs Using Rule Induction and Dempster-Shafer Theory",
+      "anio": "2026",
+      "doi": "10.1109/access.2026.3686885",
+      "id_base": "2-s2.0-105037038463"
+    },
+    {
+      "id": "R020",
+      "fuente": "Scopus; WoS",
+      "titulo": "An intrusion detection system using modified-firefly algorithm in cloud environment",
+      "anio": "2021",
+      "doi": "10.4018/ijdcf.2021030105",
+      "id_base": "2-s2.0-85101369421"
+    },
+    {
+      "id": "R021",
+      "fuente": "Scopus",
+      "titulo": "Building Flexible, Scalable, and Machine Learning-Ready Multimodal Oncology Datasets",
+      "anio": "2024",
+      "doi": "10.3390/s24051634",
+      "id_base": "2-s2.0-85187469800"
+    },
+    {
+      "id": "R022",
+      "fuente": "Scopus; WoS",
+      "titulo": "AutoScaleAI: An AI-Powered Framework for Cloud Resource Optimization Using Telemetry Analytics",
+      "anio": "2026",
+      "doi": "10.1109/access.2026.3677437",
+      "id_base": "2-s2.0-105034431169"
+    },
+    {
+      "id": "R023",
+      "fuente": "Scopus",
+      "titulo": "Ai Powered Wearable Fall Prevention Device",
+      "anio": "2026",
+      "doi": "10.59543/jidmis.v3.453",
+      "id_base": "2-s2.0-105044814805"
+    },
+    {
+      "id": "R024",
+      "fuente": "Scopus; WoS",
+      "titulo": "Securing cloud-enabled smart cities by detecting intrusion using spark-based stacking ensemble of machine learning algorithms",
+      "anio": "2024",
+      "doi": "10.3934/era.2024060",
+      "id_base": "2-s2.0-85192984939"
+    },
+    {
+      "id": "R025",
+      "fuente": "Scopus; WoS",
+      "titulo": "Explainable time series features for hard disk drive failure prediction",
+      "anio": "2025",
+      "doi": "10.1016/j.engappai.2025.110674",
+      "id_base": "2-s2.0-105002147938"
+    },
+    {
+      "id": "R026",
+      "fuente": "Scopus; WoS",
+      "titulo": "Differential and Access Policy Based Privacy-Preserving Model in Cloud Environment",
+      "anio": "2022",
+      "doi": "10.13052/jwe1540-9589.2132",
+      "id_base": "2-s2.0-85126439974"
+    },
+    {
+      "id": "R027",
+      "fuente": "Scopus; WoS",
+      "titulo": "An IoT-Based Predictive Maintenance Framework Using a Hybrid Deep Learning Model for Smart Industrial Systems",
+      "anio": "2026",
+      "doi": "10.32604/cmc.2025.070741",
+      "id_base": "2-s2.0-105027936237"
+    },
+    {
+      "id": "R028",
+      "fuente": "Scopus; WoS",
+      "titulo": "Eco-FinOps: a causal-agentic framework for energy-efficient and explainable cloud cost optimization",
+      "anio": "2026",
+      "doi": "10.3389/frai.2026.1861514",
+      "id_base": "2-s2.0-105044295849"
+    },
+    {
+      "id": "R029",
+      "fuente": "Scopus; WoS",
+      "titulo": "Toward Efficient Intrusion Detection System Using Hybrid Deep Learning Approach",
+      "anio": "2022",
+      "doi": "10.3390/sym14091916",
+      "id_base": "2-s2.0-85138528792"
+    },
+    {
+      "id": "R030",
+      "fuente": "Scopus",
+      "titulo": "Intelligent Threat Detection: Adaptive Weighted Security Index and Enhanced Bi-LSTM Residual Network for Cloud Protection",
+      "anio": "2026",
+      "doi": "10.22247/ijcna/2026/18",
+      "id_base": "2-s2.0-105038009285"
+    },
+    {
+      "id": "R031",
+      "fuente": "Scopus; WoS",
+      "titulo": "Adaptive and scalable protection framework for virtual machines leveraging deep learning and dynamic defense",
+      "anio": "2025",
+      "doi": "10.1038/s41598-025-26221-8",
+      "id_base": "2-s2.0-105022904703"
+    },
+    {
+      "id": "R032",
+      "fuente": "Scopus",
+      "titulo": "Detection of Intruder in Cloud Computing Environment using Swarm Inspired based Neural Network",
+      "anio": "2021",
+      "doi": "10.14569/ijacsa.2021.0120952",
+      "id_base": "2-s2.0-85119213087"
+    },
+    {
+      "id": "R033",
+      "fuente": "Scopus; WoS",
+      "titulo": "Intelligent Soil Analytics for Forensic Applications: Emerging Technologies, Trends, and Transformative Paradigms",
+      "anio": "2026",
+      "doi": "10.1002/eng2.70538",
+      "id_base": "2-s2.0-105030498088"
+    },
+    {
+      "id": "R034",
+      "fuente": "Scopus; WoS",
+      "titulo": "A Cloud Intrusion Detection Systems Based on DNN Using Backpropagation and PSO on the CSE-CIC-IDS2018 Dataset",
+      "anio": "2023",
+      "doi": "10.3390/app13042276",
+      "id_base": "2-s2.0-85149337107"
+    },
+    {
+      "id": "R035",
+      "fuente": "Scopus; WoS",
+      "titulo": "Blockchain-based security mechanism for the medical data at fog computing architecture of internet of things",
+      "anio": "2021",
+      "doi": "10.3390/electronics10172110",
+      "id_base": "2-s2.0-85113955580"
+    },
+    {
+      "id": "R036",
+      "fuente": "Scopus",
+      "titulo": "Design and Experimental Evaluation of a Secure Cloud File-Sharing System with Expiring Tokens and Distributed Key Custody",
+      "anio": "2026",
+      "doi": "10.59543/jidmis.v3.1307",
+      "id_base": "2-s2.0-105046652494"
+    },
+    {
+      "id": "R037",
+      "fuente": "Scopus; WoS",
+      "titulo": "Cloud-Based Intrusion Detection Approach Using Machine Learning Techniques",
+      "anio": "2023",
+      "doi": "10.26599/bdma.2022.9020038",
+      "id_base": "2-s2.0-85153493342"
+    },
+    {
+      "id": "R038",
+      "fuente": "Scopus; WoS",
+      "titulo": "Federated and Quantized-Based Intrusion Detection for Embedded On-Board Automotive Networks",
+      "anio": "2026",
+      "doi": "10.1109/tits.2025.3645854",
+      "id_base": "2-s2.0-105027994157"
+    },
+    {
+      "id": "R039",
+      "fuente": "Scopus",
+      "titulo": "Multi-dimensional resource management with deep deterministic policy gradient for digital twin-enabled Industrial Internet of Things in 6 generation",
+      "anio": "2024",
+      "doi": "10.1002/ett.4962",
+      "id_base": "2-s2.0-85188548718"
+    },
+    {
+      "id": "R040",
+      "fuente": "Scopus; WoS",
+      "titulo": "Edge-Optimized Automatic Number Plate Recognition for IoT-Based Smart Parking Using YOLOv8",
+      "anio": "2026",
+      "doi": "10.32604/cmc.2026.084246",
+      "id_base": "2-s2.0-105046102553"
+    },
+    {
+      "id": "R041",
+      "fuente": "Scopus; WoS",
+      "titulo": "S-Edge: A Multi-Region Edge Computing Framework With Adaptive Data Compression and Dynamic Load Balancing",
+      "anio": "2026",
+      "doi": "10.1109/access.2026.3696637",
+      "id_base": "2-s2.0-105040196001"
+    },
+    {
+      "id": "R042",
+      "fuente": "Scopus",
+      "titulo": "Precision Care in Cardiac Arrest: ICECAP (PRECICECAP) Study Protocol and Informatics Approach",
+      "anio": "2022",
+      "doi": "10.1007/s12028-022-01464-9",
+      "id_base": "2-s2.0-85127654315"
+    },
+    {
+      "id": "R043",
+      "fuente": "Scopus; WoS",
+      "titulo": "Secured framework for IoT based healthcare application",
+      "anio": "2026",
+      "doi": "10.1038/s41598-026-51036-6",
+      "id_base": "2-s2.0-105043728349"
+    },
+    {
+      "id": "R044",
+      "fuente": "Scopus",
+      "titulo": "Decentralized Tele-Rehabilitation via Edge AI-Oracle Architecture for Spatiotemporal Pain Assessment",
+      "anio": "2026",
+      "doi": "10.3390/s26134136",
+      "id_base": "2-s2.0-105045255726"
+    },
+    {
+      "id": "R045",
+      "fuente": "Scopus; WoS",
+      "titulo": "A hybrid intrusion detection approach based on message queuing telemetry transport (MQTT) protocol in industrial internet of things",
+      "anio": "2024",
+      "doi": "10.1002/ett.5030",
+      "id_base": "2-s2.0-85201570424"
+    },
+    {
+      "id": "R046",
+      "fuente": "Scopus",
+      "titulo": "An intelligent cloud firewall framework for multi-cloud security using lstm anomaly detection and federated learning",
+      "anio": "2026",
+      "doi": "10.1038/s41598-026-53470-y",
+      "id_base": "2-s2.0-105046653172"
+    },
+    {
+      "id": "R047",
+      "fuente": "Scopus; WoS",
+      "titulo": "A Secure Access Framework for IoT–Cloud Integration With Blockchain and Bi-GCN",
+      "anio": "2025",
+      "doi": "10.1049/ise2/6512865",
+      "id_base": "2-s2.0-105023952129"
+    },
+    {
+      "id": "R048",
+      "fuente": "Scopus",
+      "titulo": "Adaptive Ensemble Models for Robust Intrusion Detection in Cloud Environment on Imbalanced Dataset",
+      "anio": "2025",
+      "doi": "10.14569/ijacsa.2025.0160829",
+      "id_base": "2-s2.0-105015371342"
+    },
+    {
+      "id": "R049",
+      "fuente": "Scopus",
+      "titulo": "Bluefin Trevally Optimization Driven CNN-Transformer Hybrid Framework for Privacy-preserving Secure Cloud Storage Systems",
+      "anio": "2026",
+      "doi": "10.22266/ijies2026.1031.26",
+      "id_base": "2-s2.0-105051579055"
+    },
+    {
+      "id": "R050",
+      "fuente": "Scopus; WoS",
+      "titulo": "IoT-Based Architecture with AI-Ready Analytics for Medical Waste Management: System Design and Pilot Validation",
+      "anio": "2026",
+      "doi": "10.3390/app16063081",
+      "id_base": "2-s2.0-105034061630"
+    },
+    {
+      "id": "R051",
+      "fuente": "Scopus",
+      "titulo": "Cloud-Continuum-Based Deep Learning Optimization Framework for Next-Generation Healthcare Data Performance on IoT Platform",
+      "anio": "2026",
+      "doi": "10.14569/ijacsa.2026.0170262",
+      "id_base": "2-s2.0-105038860408"
+    },
+    {
+      "id": "R052",
+      "fuente": "Scopus; WoS",
+      "titulo": "Deep Learning Based Anomaly Detection for Fog-Assisted IoVs Network",
+      "anio": "2023",
+      "doi": "10.1109/access.2023.3246660",
+      "id_base": "2-s2.0-85149368339"
+    },
+    {
+      "id": "R053",
+      "fuente": "Scopus; WoS",
+      "titulo": "Remote Sensing Tool for Reservoir Volume Estimation",
+      "anio": "2025",
+      "doi": "10.3390/rs17040619",
+      "id_base": "2-s2.0-85219193440"
+    },
+    {
+      "id": "R054",
+      "fuente": "Scopus; WoS",
+      "titulo": "Secure IoT Healthcare Architecture with Deep Learning-Based Access Control System",
+      "anio": "2022",
+      "doi": "10.1155/2022/2638613",
+      "id_base": "2-s2.0-85131381136"
+    },
+    {
+      "id": "R055",
+      "fuente": "Scopus; WoS",
+      "titulo": "An IoT-Based Real-Time Monitoring and Alert System for Sea Turtle Nest Protection",
+      "anio": "2026",
+      "doi": "10.3390/app16104839",
+      "id_base": "2-s2.0-105040200250"
+    },
+    {
+      "id": "R056",
+      "fuente": "Scopus; WoS",
+      "titulo": "An Ameliorated Multiattack Network Anomaly Detection in Distributed Big Data System-Based Enhanced Stacking Multiple Binary Classifiers",
+      "anio": "2022",
+      "doi": "10.1109/access.2022.3174482",
+      "id_base": "2-s2.0-85131289625"
+    },
+    {
+      "id": "R057",
+      "fuente": "Scopus; WoS",
+      "titulo": "An early-life NAND flash endurance prediction system",
+      "anio": "2021",
+      "doi": "10.1109/access.2021.3124604",
+      "id_base": "2-s2.0-85118621786"
+    },
+    {
+      "id": "R058",
+      "fuente": "Scopus; WoS",
+      "titulo": "AI-Driven Hybrid Architecture for Secure, Reconstruction-Resistant Multi-Cloud Storage",
+      "anio": "2026",
+      "doi": "10.3390/fi18020070",
+      "id_base": "2-s2.0-105031064437"
+    },
+    {
+      "id": "R059",
+      "fuente": "Scopus; WoS",
+      "titulo": "AudioUnlock: Device-to-Device Authentication via Acoustic Signatures and One-Class Classifiers",
+      "anio": "2025",
+      "doi": "10.3390/s25216510",
+      "id_base": "2-s2.0-105021652254"
+    },
+    {
+      "id": "R060",
+      "fuente": "Scopus; WoS",
+      "titulo": "Cloud-Based Architecture for Hydrophone Data Acquisition and Processing of Surface and Underwater Vehicle Detection",
+      "anio": "2025",
+      "doi": "10.3390/jmse13081455",
+      "id_base": "2-s2.0-105014326693"
+    },
+    {
+      "id": "R061",
+      "fuente": "Scopus",
+      "titulo": "RAGMail: a cloud-based retrieval-augmented framework for reducing hallucinations in LLM text generation",
+      "anio": "2026",
+      "doi": "10.1038/s41598-026-38913-w",
+      "id_base": "2-s2.0-105031598362"
+    },
+    {
+      "id": "R062",
+      "fuente": "Scopus",
+      "titulo": "Enhanced secure storage and data privacy management system for big data based on multilayer model",
+      "anio": "2025",
+      "doi": "10.1038/s41598-025-16624-y",
+      "id_base": "2-s2.0-105014937548"
+    },
+    {
+      "id": "R063",
+      "fuente": "Scopus; WoS",
+      "titulo": "Deep Learning-Based Privacy-Preserving Data Transmission Scheme for Clustered IIoT Environment",
+      "anio": "2022",
+      "doi": "10.1155/2022/8927830",
+      "id_base": "2-s2.0-85132273527"
+    },
+    {
+      "id": "R064",
+      "fuente": "Scopus; WoS",
+      "titulo": "Development of a cloud-assisted classification technique for the preservation of secure data storage in smart cities",
+      "anio": "2023",
+      "doi": "10.1186/s13677-023-00469-9",
+      "id_base": "2-s2.0-85162733153"
+    },
+    {
+      "id": "R065",
+      "fuente": "Scopus",
+      "titulo": "DLBIoT: Deep Learning and Blockchain for IoT Secure Architecture",
+      "anio": "2023",
+      "doi": "10.22266/ijies2023.1231.20",
+      "id_base": "2-s2.0-85177636820"
+    },
+    {
+      "id": "R066",
+      "fuente": "Scopus; WoS",
+      "titulo": "Cyber-shield machine learning: an intrusion detection system with blockchain-powered secure log storage across network nodes",
+      "anio": "2025",
+      "doi": "10.14744/sigma.2025.00066",
+      "id_base": "2-s2.0-105007467201"
+    },
+    {
+      "id": "R067",
+      "fuente": "Scopus; WoS",
+      "titulo": "Deep Instance Segmentation With Automotive Radar Detection Points",
+      "anio": "2023",
+      "doi": "10.1109/tiv.2022.3168899",
+      "id_base": "2-s2.0-85127239086"
+    },
+    {
+      "id": "R068",
+      "fuente": "Scopus",
+      "titulo": "Artificial Intelligence Enabled Zero-Trust Cyber Security Framework for Smart Healthcare Infrastructure",
+      "anio": "2026",
+      "doi": "10.51483/ijaiml.6.2s.2026.204-217",
+      "id_base": "2-s2.0-105042624162"
+    },
+    {
+      "id": "R069",
+      "fuente": "Scopus",
+      "titulo": "Review of the progress in 3D defect detection methods; [三维缺陷检测技术研究进展]",
+      "anio": "2026",
+      "doi": "10.11834/jig.250111",
+      "id_base": "2-s2.0-105029969691"
+    },
+    {
+      "id": "R070",
+      "fuente": "Scopus; WoS",
+      "titulo": "Cloud-Based Smart Contract Analysis in FinTech Using IoT-Integrated Federated Learning in Intrusion Detection",
+      "anio": "2023",
+      "doi": "10.3390/data8050083",
+      "id_base": "2-s2.0-85160214243"
+    },
+    {
+      "id": "R071",
+      "fuente": "Scopus",
+      "titulo": "Behavior-Aware Access Control for IoT Networks Using Lightweight Machine Learning at the Gateway Level",
+      "anio": "2026",
+      "doi": "10.14569/ijacsa.2026.0170688",
+      "id_base": "2-s2.0-105044582065"
+    },
+    {
+      "id": "R072",
+      "fuente": "Scopus",
+      "titulo": "A two-level security-aware reactive caching for IoT-edge data centers using deep learning and hyperledger fabric blockchain-driven access control",
+      "anio": "2026",
+      "doi": "10.1007/s43926-026-00422-7",
+      "id_base": "2-s2.0-105044550690"
+    },
+    {
+      "id": "R073",
+      "fuente": "Scopus; WoS",
+      "titulo": "DeepGrass: A transformer-based approach for enhanced grassland management through Sentinel-2 time series spectral signature and vegetation indices forecasting",
+      "anio": "2026",
+      "doi": "10.1016/j.rse.2026.115545",
+      "id_base": "2-s2.0-105042586401"
+    },
+    {
+      "id": "R074",
+      "fuente": "Scopus",
+      "titulo": "Design and Validation of an IoT-Enabled Safety Monitoring System for Agricultural UAV Operations",
+      "anio": "2026",
+      "doi": "10.36548/jtcsst.2026.3.006",
+      "id_base": "2-s2.0-105044724854"
+    },
+    {
+      "id": "R075",
+      "fuente": "Scopus; WoS",
+      "titulo": "DaaS: Dew Computing as a Service for Intelligent Intrusion Detection in Edge-of-Things Ecosystem",
+      "anio": "2021",
+      "doi": "10.1109/jiot.2020.3029248",
+      "id_base": "2-s2.0-85101248125"
+    },
+    {
+      "id": "R076",
+      "fuente": "Scopus",
+      "titulo": "Adaptive Anomaly Detection Algorithm for Real-Time Identification of Phishing and Credential Stuffing Attacks in E-Learning Systems Using Deep Reinforcement Learning",
+      "anio": "2026",
+      "doi": "10.58346/jisis.2026.i2.013",
+      "id_base": "2-s2.0-105042637220"
+    },
+    {
+      "id": "R077",
+      "fuente": "Scopus; WoS",
+      "titulo": "A Cloud Based Optimization Method for Zero-Day Threats Detection Using Genetic Algorithm and Ensemble Learning",
+      "anio": "2022",
+      "doi": "10.3390/electronics11111749",
+      "id_base": "2-s2.0-85131036621"
+    },
+    {
+      "id": "R078",
+      "fuente": "Scopus",
+      "titulo": "Energy-Efficient Service Placement for Latency-Sensitive Applications in Edge Computing",
+      "anio": "2022",
+      "doi": "10.1109/jiot.2022.3162581",
+      "id_base": "2-s2.0-85127530305"
+    },
+    {
+      "id": "R079",
+      "fuente": "Scopus; WoS",
+      "titulo": "Prioritized and predictive intelligence of things enabled waste management model in smart and sustainable environment",
+      "anio": "2022",
+      "doi": "10.1371/journal.pone.0272383",
+      "id_base": "2-s2.0-85136339318"
+    },
+    {
+      "id": "R080",
+      "fuente": "Scopus",
+      "titulo": "BLOCKCHAIN-DRIVEN TRANSFORMER-BASED INTRUSION DETECTION AND ACCESS CONTROL SYSTEM (BDL-IDACS)",
+      "anio": "2026",
+      "doi": "10.5935/jetia.v12i60.3620",
+      "id_base": "2-s2.0-105049693787"
+    },
+    {
+      "id": "R081",
+      "fuente": "Scopus; WoS",
+      "titulo": "An Edge–Cloud Integrated Smart Monitoring System for Sustainable Freshwater Fishpond Management",
+      "anio": "2026",
+      "doi": "10.17576/jkukm-2026-38(5)-24",
+      "id_base": "2-s2.0-105051067274"
+    },
+    {
+      "id": "R082",
+      "fuente": "Scopus",
+      "titulo": "Cloud Access Security Brokers: An easy-implement Method for Accessing Cloud Services Securely",
+      "anio": "2025",
+      "doi": "10.37394/23209.2025.22.17",
+      "id_base": "2-s2.0-85217130720"
+    },
+    {
+      "id": "R083",
+      "fuente": "Scopus; WoS",
+      "titulo": "Intrusion Detection Based on Bidirectional Long Short-Term Memory with Attention Mechanism",
+      "anio": "2023",
+      "doi": "10.32604/cmc.2023.031907",
+      "id_base": "2-s2.0-85139068626"
+    },
+    {
+      "id": "R084",
+      "fuente": "Scopus",
+      "titulo": "Intrusion detection system in distributed cloud computing: Hybrid clustering and classification methods",
+      "anio": "2023",
+      "doi": "10.1016/j.measen.2022.100612",
+      "id_base": "2-s2.0-85143895199"
+    },
+    {
+      "id": "R085",
+      "fuente": "Scopus",
+      "titulo": "Edge-to-Cloud Continual Learning for Privacy-Preserving Chronic Disease Management",
+      "anio": "2026",
+      "doi": "10.56979/1002/2026/1194",
+      "id_base": "2-s2.0-105037388711"
+    },
+    {
+      "id": "R086",
+      "fuente": "Scopus; WoS",
+      "titulo": "An Intelligent Intrusion Detection System in Smart Grid Using PRNN Classifier",
+      "anio": "2023",
+      "doi": "10.32604/iasc.2023.029264",
+      "id_base": "2-s2.0-85141064092"
+    },
+    {
+      "id": "R087",
+      "fuente": "Scopus",
+      "titulo": "Securing cloud data with machine learning: trends, gaps, and performance metrics",
+      "anio": "2026",
+      "doi": "10.11591/ijai.v15.i1.pp44-55",
+      "id_base": "2-s2.0-105031486799"
+    },
+    {
+      "id": "R088",
+      "fuente": "Scopus; WoS",
+      "titulo": "Dew-Cloud-Based Hierarchical Federated Learning for Intrusion Detection in IoMT",
+      "anio": "2023",
+      "doi": "10.1109/jbhi.2022.3186250",
+      "id_base": "2-s2.0-85134354506"
+    },
+    {
+      "id": "R089",
+      "fuente": "Scopus; WoS",
+      "titulo": "Intelligent optimization mechanism based on an objective function for efficient home appliances control in an embedded edge platform",
+      "anio": "2021",
+      "doi": "10.3390/electronics10121460",
+      "id_base": "2-s2.0-85108122823"
+    },
+    {
+      "id": "R090",
+      "fuente": "Scopus; WoS",
+      "titulo": "Deep Learning Based Intrusion Detection in Cloud Services for Resilience Management",
+      "anio": "2022",
+      "doi": "10.32604/cmc.2022.022351",
+      "id_base": "2-s2.0-85122759446"
+    },
+    {
+      "id": "R091",
+      "fuente": "Scopus; WoS",
+      "titulo": "Artificial-Intelligence-Integrated Autonomous IoT Alert System for Real-Time Remote Fire and Smoke Detection in Live Video Streams",
+      "anio": "2025",
+      "doi": "10.1109/jiot.2025.3598979",
+      "id_base": "2-s2.0-105013777929"
+    },
+    {
+      "id": "R092",
+      "fuente": "Scopus; WoS",
+      "titulo": "Cloud-based healthcare framework for real-time anomaly detection and classification of 1-D ECG signals",
+      "anio": "2022",
+      "doi": "10.1371/journal.pone.0279305",
+      "id_base": "2-s2.0-85144637994"
+    },
+    {
+      "id": "R093",
+      "fuente": "Scopus; WoS",
+      "titulo": "A hybrid deep learning intrusion detection model for fog computing environment",
+      "anio": "2021",
+      "doi": "10.32604/iasc.2021.017515",
+      "id_base": "2-s2.0-85111643620"
+    },
+    {
+      "id": "R094",
+      "fuente": "Scopus; WoS",
+      "titulo": "Energy-efficient SDN routing with deep learning for data center networks",
+      "anio": "2026",
+      "doi": "10.1016/j.suscom.2026.101368",
+      "id_base": "2-s2.0-105037953219"
+    },
+    {
+      "id": "R095",
+      "fuente": "Scopus; WoS",
+      "titulo": "Bridging accuracy and interpretability in solar forecasting: A regional ensemble learning approach",
+      "anio": "2026",
+      "doi": "10.1016/j.egyr.2026.109136",
+      "id_base": "2-s2.0-105030343961"
+    },
+    {
+      "id": "R096",
+      "fuente": "Scopus; WoS",
+      "titulo": "Design of a multi-layered privacy-preserving architecture for secure medical data exchange in cloud environments",
+      "anio": "2026",
+      "doi": "10.1038/s41598-026-40122-4",
+      "id_base": "2-s2.0-105035030938"
+    },
+    {
+      "id": "R097",
+      "fuente": "Scopus",
+      "titulo": "Advances in Malware Analysis and Detection in Cloud Computing Environments: A Review",
+      "anio": "2024",
+      "doi": "10.18280/ijsse.140122",
+      "id_base": "2-s2.0-85187660690"
+    },
+    {
+      "id": "R098",
+      "fuente": "Scopus",
+      "titulo": "Intelligent Cybersecurity Analytics and Predictive Network Process Monitoring Using Relational, Graph-Based, and Streaming Data Systems",
+      "anio": "2026",
+      "doi": "10.3390/eng7080363",
+      "id_base": "2-s2.0-105048223244"
+    },
+    {
+      "id": "R099",
+      "fuente": "Scopus",
+      "titulo": "GMD-AD: A Graph Metric Dimension-Based Hybrid Framework for Privacy-Preserving Anomaly Detection in Distributed Databases",
+      "anio": "2026",
+      "doi": "10.3390/mca31010028",
+      "id_base": "2-s2.0-105031146503"
+    },
+    {
+      "id": "R100",
+      "fuente": "Scopus; WoS",
+      "titulo": "Enhancing Ransomware Resilience in Cloud-Based HR Systems through Moving Target Defense",
+      "anio": "2026",
+      "doi": "10.32604/cmc.2025.071705",
+      "id_base": "2-s2.0-105024848809"
+    },
+    {
+      "id": "R101",
+      "fuente": "Scopus; WoS",
+      "titulo": "A machine learning based authentication and intrusion detection scheme for IoT users anonymity preservation in fog environment",
+      "anio": "2025",
+      "doi": "10.1371/journal.pone.0323954",
+      "id_base": "2-s2.0-105008505546"
+    },
+    {
+      "id": "R102",
+      "fuente": "Scopus",
+      "titulo": "Lightweight Threshold-Based Real-Time Distributed Denial of Service Attack Detection with WebSocket Alerts",
+      "anio": "2025",
+      "doi": "10.18280/ijsse.151220",
+      "id_base": "2-s2.0-105031640719"
+    },
+    {
+      "id": "R103",
+      "fuente": "Scopus; WoS",
+      "titulo": "A proposed secure framework for protecting cloud-based educational systems from hacking",
+      "anio": "2024",
+      "doi": "10.1016/j.eij.2024.100505",
+      "id_base": "2-s2.0-85198334613"
+    },
+    {
+      "id": "R104",
+      "fuente": "Scopus; WoS",
+      "titulo": "AI-Driven Intelligent Intrusion Detection for Real-Time Network Threat Analysis in Enterprise and Cloud Networks",
+      "anio": "2026",
+      "doi": "10.3390/info17070669",
+      "id_base": "2-s2.0-105045979097"
+    },
+    {
+      "id": "R105",
+      "fuente": "Scopus",
+      "titulo": "DYNAMIC ATTRIBUTE FILTERING FOR HIGH-ACCURACY MALICIOUS ACTIVITY RECOGNITION IN CLOUD PLATFORMS",
+      "anio": "2026",
+      "doi": "10.70102/afts.2026.1835.471",
+      "id_base": "2-s2.0-105041549168"
+    },
+    {
+      "id": "R106",
+      "fuente": "Scopus",
+      "titulo": "Integrating Machine Learning–Driven Threat Detection with Advanced Cryptographic Solutions for Secure Cloud and Web Applications",
+      "anio": "2026",
+      "doi": "10.5815/ijwmt.2026.04.19",
+      "id_base": "2-s2.0-105049963099"
+    },
+    {
+      "id": "R107",
+      "fuente": "Scopus",
+      "titulo": "A Hybrid Data Protection Mechanisms Using Attribute Based Encryption and Role Based Access Control Mechanism for Digital Music Classrooms",
+      "anio": "2025",
+      "doi": "10.13052/jcsm2245-1439.1451",
+      "id_base": "2-s2.0-105024941145"
+    },
+    {
+      "id": "R108",
+      "fuente": "Scopus; WoS",
+      "titulo": "Intrusion detection in cloud computing based on time series anomalies utilizing machine learning",
+      "anio": "2023",
+      "doi": "10.1186/s13677-023-00491-x",
+      "id_base": "2-s2.0-85169162683"
+    },
+    {
+      "id": "R109",
+      "fuente": "Scopus",
+      "titulo": "LM-GA: A Novel IDS with AES and Machine Learning Architecture for Enhanced Cloud Storage Security",
+      "anio": "2023",
+      "doi": "10.53759/7669/jmc202303008",
+      "id_base": "2-s2.0-85160249776"
+    },
+    {
+      "id": "R110",
+      "fuente": "Scopus; WoS",
+      "titulo": "Artificial intelligence-powered cloud security strategies for protecting critical clinical operations in healthcare environments",
+      "anio": "2026",
+      "doi": "10.1038/s41598-026-55522-9",
+      "id_base": "2-s2.0-105048301831"
+    },
+    {
+      "id": "R111",
+      "fuente": "Scopus",
+      "titulo": "Real-Time Analysis and Intervention of Classroom Behavior Using Multi-Modal Fusion and Spatiotemporal Context",
+      "anio": "2026",
+      "doi": "10.3390/app16094069",
+      "id_base": "2-s2.0-105038637148"
+    },
+    {
+      "id": "R112",
+      "fuente": "WoS",
+      "titulo": "Energy-efficient meta-classifier model for log access anomaly detection in healthcare systems",
+      "anio": "2026",
+      "doi": "10.1108/ijicc-08-2025-0548",
+      "id_base": "WOS:001634540000001"
+    },
+    {
+      "id": "R113",
+      "fuente": "WoS",
+      "titulo": "Enhancing Ransomware Resilience in Cloud-Based HR Systems through Moving Target Defense",
+      "anio": "2026",
+      "doi": "10.32604/cmc.2025.071705",
+      "id_base": "WOS:001643050700001"
+    },
+    {
+      "id": "R114",
+      "fuente": "WoS",
+      "titulo": "Edge-Optimized Automatic Number Plate Recognition for IoT-Based Smart Parking Using YOLOv8",
+      "anio": "2026",
+      "doi": "10.32604/cmc.2026.084246",
+      "id_base": "WOS:001839162900001"
+    },
+    {
+      "id": "R115",
+      "fuente": "WoS",
+      "titulo": "False Data Injection Attack Detection Method Based on Deep Learning With Multi-Scale Feature Fusion",
+      "anio": "2024",
+      "doi": "10.1109/access.2024.3418883",
+      "id_base": "WOS:001262675200001"
+    },
+    {
+      "id": "R116",
+      "fuente": "WoS",
+      "titulo": "A T-CNN time series classification method based on Gram matrix",
+      "anio": "2022",
+      "doi": "10.1038/s41598-022-19758-5",
+      "id_base": "WOS:000858344700037"
+    },
+    {
+      "id": "R117",
+      "fuente": "WoS",
+      "titulo": "Explainable anomaly detection in spacecraft telemetry",
+      "anio": "2024",
+      "doi": "10.1016/j.engappai.2024.108083",
+      "id_base": "WOS:001187183000001"
+    },
+    {
+      "id": "R118",
+      "fuente": "WoS",
+      "titulo": "AREP: an adaptive, machine learning-based algorithm for real-time anomaly detection on network telemetry data",
+      "anio": "2023",
+      "doi": "10.1007/s00521-022-08000-y",
+      "id_base": "WOS:000882759300006"
+    },
+    {
+      "id": "R119",
+      "fuente": "WoS",
+      "titulo": "Intrusion detection in cloud computing based on time series anomalies utilizing machine learning",
+      "anio": "2023",
+      "doi": "10.1186/s13677-023-00491-x",
+      "id_base": "WOS:001057883500001"
+    },
+    {
+      "id": "R120",
+      "fuente": "WoS",
+      "titulo": "Cloud-Based Intrusion Detection Approach Using Machine Learning Techniques",
+      "anio": "2023",
+      "doi": "10.26599/bdma.2022.9020038",
+      "id_base": "WOS:001079611500006"
+    },
+    {
+      "id": "R121",
+      "fuente": "WoS",
+      "titulo": "Deep Learning Based Intrusion Detection in Cloud Services for Resilience Management",
+      "anio": "2022",
+      "doi": "10.32604/cmc.2022.022351",
+      "id_base": "WOS:000770817300046"
+    },
+    {
+      "id": "R122",
+      "fuente": "WoS",
+      "titulo": "A SIEM-Integrated Cybersecurity Prototype for Insider Threat Anomaly Detection Using Enterprise Logs and Behavioural Biometrics",
+      "anio": "2026",
+      "doi": "10.3390/electronics15010248",
+      "id_base": "WOS:001657315300001"
+    },
+    {
+      "id": "R123",
+      "fuente": "WoS",
+      "titulo": "Applying One-Class Algorithms for Data Stream-Based Insider Threat Detection",
+      "anio": "2023",
+      "doi": "10.1109/access.2023.3293825",
+      "id_base": "WOS:001038310200001"
+    },
+    {
+      "id": "R124",
+      "fuente": "WoS",
+      "titulo": "Cyber-shield machine learning: an intrusion detection system with blockchain-powered secure log storage across network nodes",
+      "anio": "2025",
+      "doi": "10.14744/sigma.2025.00066",
+      "id_base": "WOS:001519032700002"
+    },
+    {
+      "id": "R125",
+      "fuente": "WoS",
+      "titulo": "Enhancing MQTT Intrusion Detection in IoT Using Machine Learning and Feature Engineering",
+      "anio": "2025",
+      "doi": "10.1109/ojcoms.2025.3610132",
+      "id_base": "WOS:001586175900011"
+    },
+    {
+      "id": "R126",
+      "fuente": "WoS",
+      "titulo": "Intrusion detection model of UAV system based on machine learning and neural network",
+      "anio": "2026",
+      "doi": "10.3389/fphy.2025.1660104",
+      "id_base": "WOS:001661773200001"
+    },
+    {
+      "id": "R127",
+      "fuente": "WoS",
+      "titulo": "Machine Learning-Enhanced Attribute-Based Authentication for Secure IoT Access Control",
+      "anio": "2025",
+      "doi": "10.3390/s25092779",
+      "id_base": "WOS:001486846500001"
+    },
+    {
+      "id": "R128",
+      "fuente": "WoS",
+      "titulo": "Artificial Intelligence-Based Insider-Threat Detection: A Hybrid Explainable Framework with Automated Response and Privilege Containment",
+      "anio": "2026",
+      "doi": "10.3390/computers15070426",
+      "id_base": "WOS:001831546000001"
+    },
+    {
+      "id": "R129",
+      "fuente": "WoS",
+      "titulo": "Development of a cloud-assisted classification technique for the preservation of secure data storage in smart cities",
+      "anio": "2023",
+      "doi": "10.1186/s13677-023-00469-9",
+      "id_base": "WOS:001009766600001"
+    },
+    {
+      "id": "R130",
+      "fuente": "WoS",
+      "titulo": "MQTTEEB-D: A high-fidelity benchmark for real-time MQTT anomaly detection using machine learning techniques",
+      "anio": "2026",
+      "doi": "10.1016/j.adhoc.2025.104062",
+      "id_base": "WOS:001612518600003"
+    },
+    {
+      "id": "R131",
+      "fuente": "WoS",
+      "titulo": "T-HFAM IDS: A low-latency machine learning framework for adaptive threat detection in IoT networks",
+      "anio": "2026",
+      "doi": "10.1016/j.array.2026.101100",
+      "id_base": "WOS:001837281100001"
+    },
+    {
+      "id": "R132",
+      "fuente": "WoS",
+      "titulo": "Federated MapReduce fractional deep learning for scalable and privacy-aware intrusion detection in cloud computing",
+      "anio": "2026",
+      "doi": "10.1007/s10791-026-10585-0",
+      "id_base": "WOS:001878601400001"
+    },
+    {
+      "id": "R133",
+      "fuente": "WoS",
+      "titulo": "Practical Intrusion Detection of Emerging Threats",
+      "anio": "2022",
+      "doi": "10.1109/tnsm.2021.3091517",
+      "id_base": "WOS:000767855700041"
+    },
+    {
+      "id": "R134",
+      "fuente": "WoS",
+      "titulo": "AI-Driven Hybrid Architecture for Secure, Reconstruction-Resistant Multi-Cloud Storage",
+      "anio": "2026",
+      "doi": "10.3390/fi18020070",
+      "id_base": "WOS:001701193300001"
+    },
+    {
+      "id": "R135",
+      "fuente": "WoS",
+      "titulo": "Unsupervised-explainable anomaly detection in large-scale estuarine acoustic telemetry data",
+      "anio": "2026",
+      "doi": "10.1016/j.ecoinf.2026.103672",
+      "id_base": "WOS:001707396300001"
+    },
+    {
+      "id": "R136",
+      "fuente": "WoS",
+      "titulo": "A Comparative Deep Learning Framework for Multivariate Time Series Anomaly Detection in Satellite Telemetry",
+      "anio": "2026",
+      "doi": "10.3390/app16115694",
+      "id_base": "WOS:001789732300001"
+    },
+    {
+      "id": "R137",
+      "fuente": "WoS",
+      "titulo": "Artificial Intelligence Algorithms for Detecting and Classifying MQTT Protocol Internet of Things Attacks",
+      "anio": "2022",
+      "doi": "10.3390/electronics11223837",
+      "id_base": "WOS:000887130200001"
+    },
+    {
+      "id": "R138",
+      "fuente": "WoS",
+      "titulo": "Toward Efficient Intrusion Detection System Using Hybrid Deep Learning Approach",
+      "anio": "2022",
+      "doi": "10.3390/sym14091916",
+      "id_base": "WOS:000856666100001"
+    },
+    {
+      "id": "R139",
+      "fuente": "WoS",
+      "titulo": "CubeSat cybersecurity dataset for intrusion detection (CuCD-ID): Labelled NOS3/cFS telemetry (raw",
+      "anio": "2026",
+      "doi": "10.1016/j.dib.2026.112598",
+      "id_base": "WOS:001705095000001"
+    },
+    {
+      "id": "R140",
+      "fuente": "WoS",
+      "titulo": "A Real-Time Multi-Tier Machine Learning Intrusion Detection Framework for Securing Ground Control Station-UAV Communications",
+      "anio": "2026",
+      "doi": "10.1109/ojcoms.2026.3683883",
+      "id_base": "WOS:001746929700001"
+    },
+    {
+      "id": "R141",
+      "fuente": "WoS",
+      "titulo": "Improved Ant Colony Optimization and Machine Learning Based Ensemble Intrusion Detection Model",
+      "anio": "2023",
+      "doi": "10.32604/iasc.2023.032324",
+      "id_base": "WOS:000875839900015"
+    },
+    {
+      "id": "R142",
+      "fuente": "WoS",
+      "titulo": "Unsupervised Diffusion-Guided LSTM for Anomaly Detection in Water Distribution Networks",
+      "anio": "2026",
+      "doi": "10.1109/access.2026.3683296",
+      "id_base": "WOS:001746859000024"
+    },
+    {
+      "id": "R143",
+      "fuente": "WoS",
+      "titulo": "A novel machine learning pipeline to detect malicious anomalies for the Internet of Things",
+      "anio": "2022",
+      "doi": "10.1016/j.iot.2022.100603",
+      "id_base": "WOS:000862155700005"
+    },
+    {
+      "id": "R144",
+      "fuente": "WoS",
+      "titulo": "Dew-Cloud-Based Hierarchical Federated Learning for Intrusion Detection in IoMT",
+      "anio": "2023",
+      "doi": "10.1109/jbhi.2022.3186250",
+      "id_base": "WOS:000965128600001"
+    },
+    {
+      "id": "R145",
+      "fuente": "WoS",
+      "titulo": "Feature Selection for Malicious Detection on Industrial IoT Using Machine Learning",
+      "anio": "2024",
+      "doi": "10.18494/sam4666",
+      "id_base": "WOS:001223039700003"
+    },
+    {
+      "id": "R146",
+      "fuente": "WoS",
+      "titulo": "Satellite On-Orbit Anomaly Detection Method Based on a Dynamic Threshold and Causality Pruning",
+      "anio": "2021",
+      "doi": "10.1109/access.2021.3088439",
+      "id_base": "WOS:000673398600001"
+    },
+    {
+      "id": "R147",
+      "fuente": "WoS",
+      "titulo": "Spacecraft Telemetry Anomaly Detection Based on Parametric Causality and Double-Criteria Drift Streaming Peaks over Threshold",
+      "anio": "2022",
+      "doi": "10.3390/app12041803",
+      "id_base": "WOS:000767663300001"
+    },
+    {
+      "id": "R148",
+      "fuente": "WoS",
+      "titulo": "Adaptive Data Prefetching for File Storage Systems Using Online Machine Learning",
+      "anio": "2026",
+      "doi": "10.3390/bdcc10010028",
+      "id_base": "WOS:001670704600001"
+    },
+    {
+      "id": "R149",
+      "fuente": "WoS",
+      "titulo": "Machine Learning-Based Prediction of Long-Term Intraocular Pressure Fluctuations in Open-Angle Glaucoma",
+      "anio": "2026",
+      "doi": "10.1016/j.xops.2026.101240",
+      "id_base": "WOS:001803234400001"
+    },
+    {
+      "id": "R150",
+      "fuente": "WoS",
+      "titulo": "Machine Learning Classification of Pacemaker Low-Longevity Status Using Device Interrogation Reports",
+      "anio": "2026",
+      "doi": "10.3390/app16105134",
+      "id_base": "WOS:001774278600001"
+    },
+    {
+      "id": "R151",
+      "fuente": "WoS",
+      "titulo": "SDAP-K: A Kerberos-Assisted Secure Data Auditing Protocol for Cloud Storage",
+      "anio": "2026",
+      "doi": "10.3390/fi18080411",
+      "id_base": "WOS:001859796000001"
+    },
+    {
+      "id": "R152",
+      "fuente": "WoS",
+      "titulo": "Intrusion Detection Based on Bidirectional Long Short-Term Memory with Attention Mechanism",
+      "anio": "2023",
+      "doi": "10.32604/cmc.2023.031907",
+      "id_base": "WOS:000886509600016"
+    },
+    {
+      "id": "R153",
+      "fuente": "WoS",
+      "titulo": "Anomaly Detection in Autonomous Fixed-Wing UAV Agricultural Mapping Missions Using Deep Learning",
+      "anio": "2026",
+      "doi": "10.30880/ijie.2026.18.04.004",
+      "id_base": "WOS:001804894700004"
+    },
+    {
+      "id": "R154",
+      "fuente": "WoS",
+      "titulo": "Blockchain based electronic educational document management with role-based access control using machine learning model",
+      "anio": "2025",
+      "doi": "10.1038/s41598-025-99683-5",
+      "id_base": "WOS:001499335000004"
+    },
+    {
+      "id": "R155",
+      "fuente": "WoS",
+      "titulo": "ALADA: Packet-Level Analysis for Line Rate Anomaly Detection Using a Programmable Dataplane Switch",
+      "anio": "2026",
+      "doi": "10.1109/ojcoms.2026.3686225",
+      "id_base": "WOS:001756770100003"
+    },
+    {
+      "id": "R156",
+      "fuente": "WoS",
+      "titulo": "Securing cloud-enabled smart cities by detecting intrusion using sparkbased stacking ensemble of machine learning algorithms",
+      "anio": "2024",
+      "doi": "10.3934/era.2024060",
+      "id_base": "WOS:001168206200001"
+    },
+    {
+      "id": "R157",
+      "fuente": "WoS",
+      "titulo": "DaaS: Dew Computing as a Service for Intelligent Intrusion Detection in Edge-of-Things Ecosystem",
+      "anio": "2021",
+      "doi": "10.1109/jiot.2020.3029248",
+      "id_base": "WOS:000682147600015"
+    },
+    {
+      "id": "R158",
+      "fuente": "WoS",
+      "titulo": "An Ensemble Tree-Based Model for Intrusion Detection in Industrial Internet of Things Networks",
+      "anio": "2023",
+      "doi": "10.3390/app13042479",
+      "id_base": "WOS:000938801700001"
+    },
+    {
+      "id": "R159",
+      "fuente": "WoS",
+      "titulo": "A machine learning based authentication and intrusion detection scheme for IoT users anonymity preservation in fog environment",
+      "anio": "2025",
+      "doi": "10.1371/journal.pone.0323954",
+      "id_base": "WOS:001510005900030"
+    },
+    {
+      "id": "R160",
+      "fuente": "WoS",
+      "titulo": "An Ameliorated Multiattack Network Anomaly Detection in Distributed Big Data System-Based Enhanced Stacking Multiple Binary Classifiers",
+      "anio": "2022",
+      "doi": "10.1109/access.2022.3174482",
+      "id_base": "WOS:000800161800001"
+    },
+    {
+      "id": "R161",
+      "fuente": "WoS",
+      "titulo": "AI-Driven Intelligent Intrusion Detection for Real-Time Network Threat Analysis in Enterprise and Cloud Networks",
+      "anio": "2026",
+      "doi": "10.3390/info17070669",
+      "id_base": "WOS:001832062100001"
+    },
+    {
+      "id": "R162",
+      "fuente": "WoS",
+      "titulo": "A novel artificial intelligence based wireless local area network channel access control scheme for low latency e-health applications",
+      "anio": "2023",
+      "doi": "10.1049/cmu2.12668",
+      "id_base": "WOS:001048696700001"
+    },
+    {
+      "id": "R163",
+      "fuente": "WoS",
+      "titulo": "Scalable and Generalizable Cross-Domain Invariant Network Analysis and Intrusion Detection System Using Deep Learning",
+      "anio": "2026",
+      "doi": "10.1109/ojcoms.2026.3677692",
+      "id_base": "WOS:001748485200010"
+    },
+    {
+      "id": "R164",
+      "fuente": "WoS",
+      "titulo": "Performance Analysis of an AI-Based IDS xApp for Cyberattack Anomaly Detection in O-RAN Near-RT RIC",
+      "anio": "2026",
+      "doi": "10.32604/cmes.2026.082095",
+      "id_base": "WOS:001785631000001"
+    },
+    {
+      "id": "R165",
+      "fuente": "WoS",
+      "titulo": "Deep Learning Based Anomaly Detection for Fog-Assisted IoVs Network",
+      "anio": "2023",
+      "doi": "10.1109/access.2023.3246660",
+      "id_base": "WOS:000942268900001"
+    },
+    {
+      "id": "R166",
+      "fuente": "WoS",
+      "titulo": "An Operational Hybrid SIEM Framework for OT Anomaly Detection",
+      "anio": "2026",
+      "doi": "10.3390/s26103155",
+      "id_base": "WOS:001777261500001"
+    },
+    {
+      "id": "R167",
+      "fuente": "WoS",
+      "titulo": "A group-key-based sensitive attribute protection in cloud storage using modified random Fibonacci cryptography",
+      "anio": "2021",
+      "doi": "10.1007/s40747-020-00162-3",
+      "id_base": "WOS:000540659700001"
+    },
+    {
+      "id": "R168",
+      "fuente": "WoS",
+      "titulo": "FPGA-Accelerated Machine Learning for Computational Environmental Information Processing in IoT-Integrated High-Density Nanosensor Networks",
+      "anio": "2026",
+      "doi": "10.3390/info17040354",
+      "id_base": "WOS:001749726900001"
+    },
+    {
+      "id": "R169",
+      "fuente": "WoS",
+      "titulo": "Cloud-Driven Data Analytics for Growing Plants Indoor",
+      "anio": "2025",
+      "doi": "10.3390/agriengineering7040101",
+      "id_base": "WOS:001474756800001"
+    },
+    {
+      "id": "R170",
+      "fuente": "WoS",
+      "titulo": "Machine learning-based early incident detection system in a bakery plant's industrial network: a cognitive model for counteracting hybrid threats",
+      "anio": "2026",
+      "doi": "10.3389/fcomp.2026.1751284",
+      "id_base": "WOS:001715369500001"
+    },
+    {
+      "id": "R171",
+      "fuente": "WoS",
+      "titulo": "An Intelligent Intrusion Detection System in Smart Grid Using PRNN Classifier",
+      "anio": "2023",
+      "doi": "10.32604/iasc.2023.029264",
+      "id_base": "WOS:000861046500007"
+    },
+    {
+      "id": "R172",
+      "fuente": "WoS",
+      "titulo": "AutoScaleAI: An AI-Powered Framework for Cloud Resource Optimization Using Telemetry Analytics",
+      "anio": "2026",
+      "doi": "10.1109/access.2026.3677437",
+      "id_base": "WOS:001732696000014"
+    },
+    {
+      "id": "R173",
+      "fuente": "WoS",
+      "titulo": "An Intrusion Detection System Using Modified-Firefly Algorithm in Cloud Environment",
+      "anio": "2021",
+      "doi": "10.4018/ijdcf.2021030105",
+      "id_base": "WOS:000619811300005"
+    },
+    {
+      "id": "R174",
+      "fuente": "WoS",
+      "titulo": "An explainable multimodal temporal deep learning framework for intrusion detection (EMT-IDNet) in IoT environments",
+      "anio": "2026",
+      "doi": "10.1038/s41598-026-53557-6",
+      "id_base": "WOS:001826699800006"
+    },
+    {
+      "id": "R175",
+      "fuente": "WoS",
+      "titulo": "RoboLSTM-IDS: multi-dataset evaluation of deep learning framework for UAV network",
+      "anio": "2026",
+      "doi": "10.7717/peerj-cs.3500",
+      "id_base": "WOS:001707856600001"
+    },
+    {
+      "id": "R176",
+      "fuente": "WoS",
+      "titulo": "Artificial intelligence-powered cloud security strategies for protecting critical clinical operations in healthcare environments",
+      "anio": "2026",
+      "doi": "10.1038/s41598-026-55522-9",
+      "id_base": "WOS:001859333200012"
+    },
+    {
+      "id": "R177",
+      "fuente": "WoS",
+      "titulo": "Cloud-Based Smart Contract Analysis in FinTech Using IoT-Integrated Federated Learning in Intrusion Detection",
+      "anio": "2023",
+      "doi": "10.3390/data8050083",
+      "id_base": "WOS:000996611000001"
+    },
+    {
+      "id": "R178",
+      "fuente": "WoS",
+      "titulo": "SecureMD5: A new stream cipher for secure file systems and encryption key generation with artificial intelligence",
+      "anio": "2026",
+      "doi": "10.1016/j.csi.2025.104047",
+      "id_base": "WOS:001548353600001"
+    },
+    {
+      "id": "R179",
+      "fuente": "WoS",
+      "titulo": "Real-Time Anomaly Detection Using Federated Learning in Edge Devices",
+      "anio": "2026",
+      "doi": "10.1002/spe.70101",
+      "id_base": "WOS:001869573500001"
+    },
+    {
+      "id": "R180",
+      "fuente": "WoS",
+      "titulo": "A Cloud Intrusion Detection Systems Based on DNN Using Backpropagation and PSO on the CSE-CIC-IDS2018 Dataset",
+      "anio": "2023",
+      "doi": "10.3390/app13042276",
+      "id_base": "WOS:000938766200001"
+    },
+    {
+      "id": "R181",
+      "fuente": "WoS",
+      "titulo": "A Hybrid Deep Learning Intrusion Detection Model for Fog Computing Environment",
+      "anio": "2021",
+      "doi": "10.32604/iasc.2021.017515",
+      "id_base": "WOS:000679278600001"
+    },
+    {
+      "id": "R182",
+      "fuente": "WoS",
+      "titulo": "Near Real-Time Anomaly Detection and Localization in Tier-2 ISP Networks",
+      "anio": "2026",
+      "doi": "10.1109/access.2026.3666491",
+      "id_base": "WOS:001706374500044"
+    },
+    {
+      "id": "R183",
+      "fuente": "WoS",
+      "titulo": "Differential and Access Policy Based Privacy-Preserving Model in Cloud Environment",
+      "anio": "2022",
+      "doi": "10.13052/jwe1540-9589.2132",
+      "id_base": "WOS:000754943700002"
+    },
+    {
+      "id": "R184",
+      "fuente": "WoS",
+      "titulo": "Memory-Efficient Deep Learning for Botnet Attack Detection in IoT Networks",
+      "anio": "2021",
+      "doi": "10.3390/electronics10091104",
+      "id_base": "WOS:000649996500001"
+    },
+    {
+      "id": "R185",
+      "fuente": "WoS",
+      "titulo": "An Edge Computing-Based and Threat Behavior-Aware Smart Prioritization Framework for Cybersecurity Intrusion Detection and Prevention of IEDs in Smart Grids With Integration of Modified LGBM and One Class-SVM Models",
+      "anio": "2024",
+      "doi": "10.1109/access.2024.3435564",
+      "id_base": "WOS:001286646700001"
+    },
+    {
+      "id": "R186",
+      "fuente": "WoS",
+      "titulo": "Intrusion detection in internet of things using supervised machine learning based on application and transport layer features using UNSW-NB15 data-set",
+      "anio": "2021",
+      "doi": "10.1186/s13638-021-01893-8",
+      "id_base": "WOS:000613013300002"
+    },
+    {
+      "id": "R187",
+      "fuente": "WoS",
+      "titulo": "Optimizing Alzheimer's Data Analysis Through Multi-Cloud Integration: A Performance and Reliability Approach",
+      "anio": "2026",
+      "doi": "10.1016/j.rico.2026.100687",
+      "id_base": "WOS:001741013300001"
+    },
+    {
+      "id": "R188",
+      "fuente": "WoS",
+      "titulo": "Cognitive ZTNA: A Neuro-Symbolic AI Approach for Adaptive and Explainable Zero Trust Access Control",
+      "anio": "2026",
+      "doi": "10.3390/math14071211",
+      "id_base": "WOS:001738871400001"
+    },
+    {
+      "id": "R189",
+      "fuente": "WoS",
+      "titulo": "RETRACTED: Intrusion Detection Method Based on Deep Learning (Retracted Article)",
+      "anio": "2022",
+      "doi": "10.1155/2022/1338392",
+      "id_base": "WOS:000879743000001"
+    },
+    {
+      "id": "R190",
+      "fuente": "WoS",
+      "titulo": "Cloud-based healthcare framework for real-time anomaly detection and classification of 1-D ECG signals",
+      "anio": "2022",
+      "doi": "10.1371/journal.pone.0279305",
+      "id_base": "WOS:000924525200022"
+    },
+    {
+      "id": "R191",
+      "fuente": "WoS",
+      "titulo": "Scalable Machine Learning on IoT Edge Devices Through Adaptive Coreset Selection with Differentiable Greedy Sampling",
+      "anio": "2026",
+      "doi": "10.3390/technologies14080476",
+      "id_base": "WOS:001860613900001"
+    },
+    {
+      "id": "R192",
+      "fuente": "WoS",
+      "titulo": "Intrusion Detection and Real-Time Adaptive Security in Medical IoT Using a Cyber-Physical System Design",
+      "anio": "2025",
+      "doi": "10.3390/s25154720",
+      "id_base": "WOS:001549679100001"
+    },
+    {
+      "id": "R193",
+      "fuente": "WoS",
+      "titulo": "UAV Cybersecurity with Mamba-KAN-Liquid Hybrid Model: Deep Learning-Based Real-Time Anomaly Detection",
+      "anio": "2025",
+      "doi": "10.3390/drones9110806",
+      "id_base": "WOS:001624663900001"
+    },
+    {
+      "id": "R194",
+      "fuente": "WoS",
+      "titulo": "UAV-Based Railway Anomaly Detection Algorithm Based on a Twin Network Cascading UNet plus",
+      "anio": "2026",
+      "doi": "10.1109/access.2026.3703944",
+      "id_base": "WOS:001819879600018"
+    },
+    {
+      "id": "R195",
+      "fuente": "WoS",
+      "titulo": "Consistency-Regularized Hybrid Deep Learning with Entropy-Weighted Attention and Branch Dropout for Intrusion Detection in IoT Networks",
+      "anio": "2026",
+      "doi": "10.3390/fi18050262",
+      "id_base": "WOS:001775171400001"
+    },
+    {
+      "id": "R196",
+      "fuente": "WoS",
+      "titulo": "A Cloud Based Optimization Method for Zero-Day Threats Detection Using Genetic Algorithm and Ensemble Learning",
+      "anio": "2022",
+      "doi": "10.3390/electronics11111749",
+      "id_base": "WOS:000808821500001"
+    },
+    {
+      "id": "R197",
+      "fuente": "WoS",
+      "titulo": "A Hybrid Multi-Model Framework for Personalized User-Level Anomaly Detection with Data-Driven Threshold Optimization",
+      "anio": "2026",
+      "doi": "10.3390/computation14050102",
+      "id_base": "WOS:001774268700001"
+    },
+    {
+      "id": "R198",
+      "fuente": "WoS",
+      "titulo": "Fed-CGIDS-UAV: Federated Causal Graph Learning for Cross-Domain Intrusion Detection in Cyber-Physical Drone Networks",
+      "anio": "2026",
+      "doi": "10.3390/sym18081292",
+      "id_base": "WOS:001860074700001"
+    },
+    {
+      "id": "R199",
+      "fuente": "WoS",
+      "titulo": "Exploring quantum learning in the smart grid through the evolution of noisy finite fourier series",
+      "anio": "2023",
+      "doi": "10.3389/fenrg.2023.1061602",
+      "id_base": "WOS:001099291800001"
+    },
+    {
+      "id": "R200",
+      "fuente": "WoS",
+      "titulo": "SENMQTT-SET: An Intelligent Intrusion Detection in IoT-MQTT Networks Using Ensemble Multi Cascade Features",
+      "anio": "2022",
+      "doi": "10.1109/access.2022.3161566",
+      "id_base": "WOS:000776031500001"
+    },
+    {
+      "id": "R201",
+      "fuente": "WoS",
+      "titulo": "Attention-Enhanced Hybrid Architecture for Efficient Intrusion Detection in Industrial IoT",
+      "anio": "2026",
+      "doi": "10.1109/ojcoms.2026.3661768",
+      "id_base": "WOS:001691024800003"
+    },
+    {
+      "id": "R202",
+      "fuente": "WoS",
+      "titulo": "Overhead Reduction Technique for Software-Defined Network Based Intrusion Detection Systems",
+      "anio": "2022",
+      "doi": "10.1109/access.2022.3184722",
+      "id_base": "WOS:000818806500001"
+    },
+    {
+      "id": "R203",
+      "fuente": "WoS",
+      "titulo": "Secured framework for IoT based healthcare application",
+      "anio": "2026",
+      "doi": "10.1038/s41598-026-51036-6",
+      "id_base": "WOS:001811563200012"
+    },
+    {
+      "id": "R204",
+      "fuente": "WoS",
+      "titulo": "A Hybrid Time Series Forecasting Model Combining ARIMA and Decision Trees to Detect Attacks in MITRE ATT&CK Labeled Zeek Log Data",
+      "anio": "2026",
+      "doi": "10.3390/electronics15040871",
+      "id_base": "WOS:001700998200001"
+    },
+    {
+      "id": "R205",
+      "fuente": "WoS",
+      "titulo": "Protecting Smart-Home IoT Devices From MQTT Attacks: An Empirical Study of ML-Based IDS",
+      "anio": "2024",
+      "doi": "10.1109/access.2024.3367113",
+      "id_base": "WOS:001169927700001"
+    },
+    {
+      "id": "R206",
+      "fuente": "WoS",
+      "titulo": "Unsupervised Deep Learning-Based Network Traffic Anomaly Detection for DDoS Mitigation in Smart Microgrid Communication Infrastructure",
+      "anio": "2026",
+      "doi": "10.3390/telecom7030058",
+      "id_base": "WOS:001802033700001"
+    },
+    {
+      "id": "R207",
+      "fuente": "WoS",
+      "titulo": "Secure and Explainable Federated Learning for IoT Intrusion Detection: A Comprehensive Survey",
+      "anio": "2026",
+      "doi": "10.1109/ojcoms.2026.3681580",
+      "id_base": "WOS:001740762800005"
+    },
+    {
+      "id": "R208",
+      "fuente": "WoS",
+      "titulo": "FraudFusion: A Multi-Modal Ensemble Framework for Anomaly-Based Fraud Detection in Retail POS Systems",
+      "anio": "2026",
+      "doi": "10.1109/access.2026.3655398",
+      "id_base": "WOS:001669231000038"
+    },
+    {
+      "id": "R209",
+      "fuente": "WoS",
+      "titulo": "Unmanned Aerial Vehicles-based blockchain-inspired Intelligent framework for collaborative intrusion detection",
+      "anio": "2026",
+      "doi": "10.1016/j.icte.2025.12.008",
+      "id_base": "WOS:001717292700001"
+    },
+    {
+      "id": "R210",
+      "fuente": "WoS",
+      "titulo": "Quantum-Assisted Cross-Layer Intrusion Detection and Distributed-AI-Driven (QSec-DAI) Active Attribution of Insider and Man-in-the-Middle Attacks in Cooperative Sensing",
+      "anio": "2026",
+      "doi": "10.3390/electronics15163620",
+      "id_base": "WOS:001858828700001"
+    },
+    {
+      "id": "R211",
+      "fuente": "WoS",
+      "titulo": "Multi-Source Multi-Domain Data Fusion for Cyberattack Detection in Power Systems",
+      "anio": "2021",
+      "doi": "10.1109/access.2021.3106873",
+      "id_base": "WOS:000692175600001"
+    },
+    {
+      "id": "R212",
+      "fuente": "WoS",
+      "titulo": "Developing Transparent IDS for VANETs Using LIME and SHAP: An Empirical Study br",
+      "anio": "2023",
+      "doi": "10.32604/cmc.2023.044650",
+      "id_base": "WOS:001156830100025"
+    },
+    {
+      "id": "R213",
+      "fuente": "WoS",
+      "titulo": "AudioUnlock: Device-to-Device Authentication via Acoustic Signatures and One-Class Classifiers",
+      "anio": "2025",
+      "doi": "10.3390/s25216510",
+      "id_base": "WOS:001612961100001"
+    },
+    {
+      "id": "R214",
+      "fuente": "WoS",
+      "titulo": "Prediction of the Functional Status of the Cochlear Nerve in Individual Cochlear Implant Users Using Machine Learning and Electrophysiological Measures",
+      "anio": "2021",
+      "doi": "10.1097/aud.0000000000000916",
+      "id_base": "WOS:000663808800016"
+    },
+    {
+      "id": "R215",
+      "fuente": "WoS",
+      "titulo": "A new data-driven framework for progressive anomaly event alerts in spacecraft based on reconstruction discrepancy",
+      "anio": "2024",
+      "doi": "10.1016/j.asr.2024.08.054",
+      "id_base": "WOS:001359164700001"
+    },
+    {
+      "id": "R216",
+      "fuente": "WoS",
+      "titulo": "Secure IoT Healthcare Architecture with Deep Learning-Based Access Control System",
+      "anio": "2022",
+      "doi": "10.1155/2022/2638613",
+      "id_base": "WOS:000806018800003"
+    },
+    {
+      "id": "R217",
+      "fuente": "WoS",
+      "titulo": "An AI-Enabled Federated Edge-Cloud Communication Framework for Dynamic Task Offloading and Network Anomaly Detection in IoT System",
+      "anio": "2026",
+      "doi": "10.1109/ojcoms.2026.3686051",
+      "id_base": "WOS:001757975300007"
+    },
+    {
+      "id": "R218",
+      "fuente": "WoS",
+      "titulo": "TrustEdge: SAINT-Driven Intrusion Detection for Resource-Constrained IoT Devices",
+      "anio": "2026",
+      "doi": "10.1109/access.2026.3686083",
+      "id_base": "WOS:001788857600035"
+    },
+    {
+      "id": "R219",
+      "fuente": "WoS",
+      "titulo": "A Secure Access Framework for IoT-Cloud Integration With Blockchain and Bi-GCN",
+      "anio": "2025",
+      "doi": "10.1049/ise2/6512865",
+      "id_base": "WOS:001630077800001"
+    },
+    {
+      "id": "R220",
+      "fuente": "WoS",
+      "titulo": "Lightweight autoencoder-based anomaly detection for CAN bus in competition motorcycles designed for ARM Cortex-M7",
+      "anio": "2026",
+      "doi": "10.1016/j.jisa.2026.104628",
+      "id_base": "WOS:001874886900001"
+    },
+    {
+      "id": "R221",
+      "fuente": "WoS",
+      "titulo": "Physical Layer Immutability as an Adversarial Anchor: A Realizability Constrained Robustness Analysis of Satellite Terrestrial Network Intrusion Detection",
+      "anio": "2026",
+      "doi": "10.1109/access.2026.3722676",
+      "id_base": "WOS:001853233700009"
+    },
+    {
+      "id": "R222",
+      "fuente": "WoS",
+      "titulo": "Linear Elliptical Curve Digital Signature (LECDS) With Blockchain Approach for Enhanced Security on Cloud Server",
+      "anio": "2021",
+      "doi": "10.1109/access.2021.3115238",
+      "id_base": "WOS:000706822400001"
+    },
+    {
+      "id": "R223",
+      "fuente": "WoS",
+      "titulo": "Effective Feature Engineering Framework for Securing MQTT Protocol in IoT Environments",
+      "anio": "2024",
+      "doi": "10.3390/s24061782",
+      "id_base": "WOS:001192588300001"
+    },
+    {
+      "id": "R224",
+      "fuente": "WoS",
+      "titulo": "A Blockchain-Enabled Decentralized Zero-Trust Architecture for Anomaly Detection in Satellite Networks via Post-Quantum Cryptography and Federated Learning",
+      "anio": "2025",
+      "doi": "10.3390/fi17110516",
+      "id_base": "WOS:001624452300001"
+    },
+    {
+      "id": "R225",
+      "fuente": "WoS",
+      "titulo": "Secure Fog Computing for Remote Health Monitoring with Data Prioritisation and AI-Based Anomaly Detection",
+      "anio": "2025",
+      "doi": "10.3390/s25237329",
+      "id_base": "WOS:001635324000001"
+    },
+    {
+      "id": "R226",
+      "fuente": "WoS",
+      "titulo": "Using low-fix rate GPS telemetry to expand estimates of ungulate reproductive success",
+      "anio": "2022",
+      "doi": "10.1186/s40317-022-00276-0",
+      "id_base": "WOS:000752307400001"
+    },
+    {
+      "id": "R227",
+      "fuente": "WoS",
+      "titulo": "Sustainable Smart Facility: A Real-Time Internet of Things-Based Environmental Monitoring and Predictive Control System Using Amazon Web Services Cloud Services",
+      "anio": "2026",
+      "doi": "10.1049/wss2.70035",
+      "id_base": "WOS:001839331000001"
+    },
+    {
+      "id": "R228",
+      "fuente": "WoS",
+      "titulo": "Federated and Quantized-Based Intrusion Detection for Embedded On-Board Automotive Networks",
+      "anio": "2026",
+      "doi": "10.1109/tits.2025.3645854",
+      "id_base": "WOS:001658726400001"
+    },
+    {
+      "id": "R229",
+      "fuente": "WoS",
+      "titulo": "Adaptive signatures of emerging Salmonella serotypes in response to stressful conditions in the poultry industry",
+      "anio": "2025",
+      "doi": "10.1016/j.lwt.2024.117188",
+      "id_base": "WOS:001389662300001"
+    },
+    {
+      "id": "R230",
+      "fuente": "WoS",
+      "titulo": "A Drift-Aware Human-in-the-Loop Edge AI Agent for Wireless IoMT Sensor-Network Intrusion Detection Under Cross-Corpus Shift",
+      "anio": "2026",
+      "doi": "10.3390/electronics15143015",
+      "id_base": "WOS:001831840700001"
+    },
+    {
+      "id": "R231",
+      "fuente": "WoS",
+      "titulo": "Energy-efficient SDN routing with deep learning for data center networks",
+      "anio": "2026",
+      "doi": "10.1016/j.suscom.2026.101368",
+      "id_base": "WOS:001766414100001"
+    },
+    {
+      "id": "R232",
+      "fuente": "WoS",
+      "titulo": "GIIDS-AR: End-to-end generalized intelligent intrusion detection system with adversarial robustness for heterogeneous UAVs in UAM",
+      "anio": "2026",
+      "doi": "10.1016/j.comnet.2025.111821",
+      "id_base": "WOS:001628190000003"
+    },
+    {
+      "id": "R233",
+      "fuente": "WoS",
+      "titulo": "A Cloud Edge Based Heart Disease Detection Using DenseNet Convoluted Radial Basis Neural Network for Diabetic Patients",
+      "anio": "2025",
+      "doi": "10.18280/ts.420321",
+      "id_base": "WOS:001530463200021"
+    },
+    {
+      "id": "R234",
+      "fuente": "WoS",
+      "titulo": "A testable framework linking diagnostic AI contribution to outcome measurement in clinical decision support",
+      "anio": "2026",
+      "doi": "10.3389/fdgth.2026.1871438",
+      "id_base": "WOS:001825461000001"
+    },
+    {
+      "id": "R235",
+      "fuente": "WoS",
+      "titulo": "A hybrid intrusion detection approach based on message queuing telemetry transport (MQTT) protocol in industrial internet of things",
+      "anio": "2024",
+      "doi": "10.1002/ett.5030",
+      "id_base": "WOS:001294031700001"
+    },
+    {
+      "id": "R236",
+      "fuente": "WoS",
+      "titulo": "Explainable time series features for hard disk drive failure prediction",
+      "anio": "2025",
+      "doi": "10.1016/j.engappai.2025.110674",
+      "id_base": "WOS:001470600400001"
+    },
+    {
+      "id": "R237",
+      "fuente": "WoS",
+      "titulo": "Communication-Efficient Federated Class-Incremental Intrusion Detection for Edge IoT Networks",
+      "anio": "2026",
+      "doi": "10.3390/s26144630",
+      "id_base": "WOS:001833342300001"
+    },
+    {
+      "id": "R238",
+      "fuente": "WoS",
+      "titulo": "A deep-learning enhanced computational optical decoding strategy (DECODS) for optical data storage",
+      "anio": "2026",
+      "doi": "10.1186/s43074-026-00251-5",
+      "id_base": "WOS:001776694400001"
+    },
+    {
+      "id": "R239",
+      "fuente": "WoS",
+      "titulo": "A Novel Synthetic Dataset for Effective Detection of Replay Attacks in SDN-Enabled IoT Networks",
+      "anio": "2026",
+      "doi": "10.32604/cmc.2026.077454",
+      "id_base": "WOS:001771051000001"
+    },
+    {
+      "id": "R240",
+      "fuente": "WoS",
+      "titulo": "An Autonomous AI-Driven Framework for Adaptive Cyber Deception with Real-Time Threat Detection and Behaviour-Based Attribution",
+      "anio": "2026",
+      "doi": "10.3390/computers15070462",
+      "id_base": "WOS:001831552700001"
+    },
+    {
+      "id": "R241",
+      "fuente": "WoS",
+      "titulo": "Deep learning approaches for predicting cheating from student exam results: a comparative study under imbalanced data conditions",
+      "anio": "2026",
+      "doi": "10.1108/aci-07-2025-0308",
+      "id_base": "WOS:001657031000001"
+    },
+    {
+      "id": "R242",
+      "fuente": "WoS",
+      "titulo": "Low-Overhead Passive Resilience Monitoring for AIoT Gateways: End-to-End Anomaly Detection via eBPF Timing Traces and Autoencoders",
+      "anio": "2026",
+      "doi": "10.1109/access.2026.3685156",
+      "id_base": "WOS:001756839500034"
+    },
+    {
+      "id": "R243",
+      "fuente": "WoS",
+      "titulo": "From observation to replication: Machine-learning-driven quantification and replication of fine-scale fish kinematics and behavior",
+      "anio": "2026",
+      "doi": "10.1016/j.ecoinf.2026.103760",
+      "id_base": "WOS:001750332600001"
+    },
+    {
+      "id": "R244",
+      "fuente": "WoS",
+      "titulo": "Vehicle-as-a-Sensor Approach for Urban Track Anomaly Detection",
+      "anio": "2025",
+      "doi": "10.3390/s25216679",
+      "id_base": "WOS:001613068700001"
+    },
+    {
+      "id": "R245",
+      "fuente": "WoS",
+      "titulo": "Evaluating Reconstruction-Based and Proximity-Based Methods: A Four-Way Comparison (AE, LSTM-AE, OCSVM, IF) in SCADA Anomaly Detection Under Inverted Imbalance",
+      "anio": "2026",
+      "doi": "10.3390/fi18020096",
+      "id_base": "WOS:001701169200001"
+    },
+    {
+      "id": "R246",
+      "fuente": "WoS",
+      "titulo": "A Novel Hybrid Architecture for Superior IoT Threat Detection through Real IoT Environments",
+      "anio": "2024",
+      "doi": "10.32604/cmc.2024.054836",
+      "id_base": "WOS:001362445300001"
+    },
+    {
+      "id": "R247",
+      "fuente": "WoS",
+      "titulo": "An Edge-Cloud Integrated Smart Monitoring System for Sustainable Freshwater Fishpond Management",
+      "anio": "2026",
+      "doi": "10.17576/jkukm-2026-38(5)-24",
+      "id_base": "WOS:001868649200024"
+    },
+    {
+      "id": "R248",
+      "fuente": "WoS",
+      "titulo": "Adaptive and scalable protection framework for virtual machines leveraging deep learning and dynamic defense",
+      "anio": "2025",
+      "doi": "10.1038/s41598-025-26221-8",
+      "id_base": "WOS:001626820800006"
+    },
+    {
+      "id": "R249",
+      "fuente": "WoS",
+      "titulo": "SAFER: Self-Attentive Feature Extraction and Reduction",
+      "anio": "2026",
+      "doi": "10.1109/access.2026.3700810",
+      "id_base": "WOS:001792350000001"
+    },
+    {
+      "id": "R250",
+      "fuente": "WoS",
+      "titulo": "A proposed secure framework for protecting cloud-based educational systems from hacking",
+      "anio": "2024",
+      "doi": "10.1016/j.eij.2024.100505",
+      "id_base": "WOS:001270317800001"
+    },
+    {
+      "id": "R251",
+      "fuente": "WoS",
+      "titulo": "FLED-Block: Federated Learning Ensembled Deep Learning Blockchain Model for COVID-19 Prediction",
+      "anio": "2022",
+      "doi": "10.3389/fpubh.2022.892499",
+      "id_base": "WOS:000820027000001"
+    },
+    {
+      "id": "R252",
+      "fuente": "WoS",
+      "titulo": "Dual level dengue diagnosis using lightweight multilayer perceptron with XAI in fog computing environment and rule based inference",
+      "anio": "2025",
+      "doi": "10.1038/s41598-025-98365-6",
+      "id_base": "WOS:001487816800010"
+    },
+    {
+      "id": "R253",
+      "fuente": "WoS",
+      "titulo": "Trust Aware and Explainable Access Control for Internet of Medical Things: A Lightweight Hybrid Blockchain Approach",
+      "anio": "2026",
+      "doi": "10.1109/jiot.2026.3680091",
+      "id_base": "WOS:001788888700013"
+    },
+    {
+      "id": "R254",
+      "fuente": "WoS",
+      "titulo": "NetBurst-X: A Burst-Informed Learning Framework for Detecting Microbursts and Data Exfiltration in NetFlow",
+      "anio": "2026",
+      "doi": "10.1109/ojcoms.2026.3683927",
+      "id_base": "WOS:001748485200008"
+    },
+    {
+      "id": "R255",
+      "fuente": "WoS",
+      "titulo": "Deep learning in distributed denial-of-service attacks detection method for Internet of Things networks",
+      "anio": "2023",
+      "doi": "10.1515/jisys-2022-0155",
+      "id_base": "WOS:000914275300001"
+    },
+    {
+      "id": "R256",
+      "fuente": "WoS",
+      "titulo": "Longitudinal Behavioural Analysis of Industrial IoT Network Traffic Using Passive Monitoring",
+      "anio": "2026",
+      "doi": "10.3390/jsan15040062",
+      "id_base": "WOS:001859062500001"
+    },
+    {
+      "id": "R257",
+      "fuente": "WoS",
+      "titulo": "An IoT-Based Predictive Maintenance Framework Using a Hybrid Deep Learning Model for Smart Industrial Systems",
+      "anio": "2026",
+      "doi": "10.32604/cmc.2025.070741",
+      "id_base": "WOS:001671545300001"
+    },
+    {
+      "id": "R258",
+      "fuente": "WoS",
+      "titulo": "Non-Intrusive Low-Cost IoT-Based Hardware System for Sustainable Predictive Maintenance of Industrial Pump Systems",
+      "anio": "2025",
+      "doi": "10.3390/electronics14142913",
+      "id_base": "WOS:001539790300001"
+    },
+    {
+      "id": "R259",
+      "fuente": "WoS",
+      "titulo": "Quantum safe drone security: Authenticated key exchange and privacy preserving intrusion detection for low altitude intelligent transportation systems*,**",
+      "anio": "2026",
+      "doi": "10.1016/j.compeleceng.2026.111429",
+      "id_base": "WOS:001852181100001"
+    },
+    {
+      "id": "R260",
+      "fuente": "WoS",
+      "titulo": "Information-Theoretic Channel Selection and Spatiotemporal Deep Learning for Early Fault Detection in Microsatellite Thermal Control Systems",
+      "anio": "2026",
+      "doi": "10.3390/e28070725",
+      "id_base": "WOS:001831779000001"
+    },
+    {
+      "id": "R261",
+      "fuente": "WoS",
+      "titulo": "A Privacy-Conscious and Explainable IDS-Oriented Triage and Response Pipeline for Mobile Network Infrastructure Using Aggregated Cellular Traffic Signatures",
+      "anio": "2026",
+      "doi": "10.3390/computers15080531",
+      "id_base": "WOS:001858674100001"
+    },
+    {
+      "id": "R262",
+      "fuente": "WoS",
+      "titulo": "Deep Learning-Based Privacy-Preserving Data Transmission Scheme for Clustered IIoT Environment",
+      "anio": "2022",
+      "doi": "10.1155/2022/8927830",
+      "id_base": "WOS:000815095300030"
+    },
+    {
+      "id": "R263",
+      "fuente": "WoS",
+      "titulo": "Patient Stratification for Improving Acute Chest Pain Management and Mitigating Emergency Department Crowding: Machine Learning Model Development and Validation",
+      "anio": "2026",
+      "doi": "10.2196/83099",
+      "id_base": "WOS:001857248700001"
+    },
+    {
+      "id": "R264",
+      "fuente": "WoS",
+      "titulo": "Artificial Intelligence-Powered Crypto Ransomware Detection",
+      "anio": "2026",
+      "doi": "10.1109/access.2026.3710149",
+      "id_base": "WOS:001837828200025"
+    },
+    {
+      "id": "R265",
+      "fuente": "WoS",
+      "titulo": "Web-Based Application Based on Human-in-the-Loop Deep Learning for Deidentifying Free-Text Data in Electronic Medical Records: Development and Usability Study",
+      "anio": "2023",
+      "doi": "10.2196/46322",
+      "id_base": "WOS:001064939200001"
+    },
+    {
+      "id": "R266",
+      "fuente": "WoS",
+      "titulo": "Cloud-Based Architecture for Hydrophone Data Acquisition and Processing of Surface and Underwater Vehicle Detection",
+      "anio": "2025",
+      "doi": "10.3390/jmse13081455",
+      "id_base": "WOS:001557820600001"
+    },
+    {
+      "id": "R267",
+      "fuente": "WoS",
+      "titulo": "A novel gallop operator for horse herd optimization algorithm: application to feature selection of safety defect prediction in UAV",
+      "anio": "2025",
+      "doi": "10.1007/s10586-025-05460-4",
+      "id_base": "WOS:001576153100034"
+    },
+    {
+      "id": "R268",
+      "fuente": "WoS",
+      "titulo": "Unsupervised Fault Event Detection in Historical Industrial Telemetry With Temporal Event Structuring",
+      "anio": "2026",
+      "doi": "10.1109/access.2026.3688423",
+      "id_base": "WOS:001758032200041"
+    },
+    {
+      "id": "R269",
+      "fuente": "WoS",
+      "titulo": "An intelligent decision support system for groundwater supply management and electromechanical infrastructure controls",
+      "anio": "2024",
+      "doi": "10.1016/j.heliyon.2024.e25036",
+      "id_base": "WOS:001175784500001"
+    },
+    {
+      "id": "R270",
+      "fuente": "WoS",
+      "titulo": "A deep learning approach to photo-identification demonstrates high performance on two dozen cetacean species",
+      "anio": "2023",
+      "doi": "10.1111/2041-210x.14167",
+      "id_base": "WOS:001027333900001"
+    },
+    {
+      "id": "R271",
+      "fuente": "WoS",
+      "titulo": "Artificial-Intelligence-Integrated Autonomous IoT Alert System for Real-Time Remote Fire and Smoke Detection in Live Video Streams",
+      "anio": "2025",
+      "doi": "10.1109/jiot.2025.3598979",
+      "id_base": "WOS:001600768600039"
+    },
+    {
+      "id": "R272",
+      "fuente": "WoS",
+      "titulo": "LogHyper-IB: Spatio-Temporal Hypergraph Representation Learning via Information Bottleneck for Anomaly Detection in Distributed Systems",
+      "anio": "2026",
+      "doi": "10.1109/access.2026.3682603",
+      "id_base": "WOS:001748521500016"
+    },
+    {
+      "id": "R273",
+      "fuente": "WoS",
+      "titulo": "Dual-domain collaborative pump noise suppression network for measurement while drilling communications",
+      "anio": "2026",
+      "doi": "10.1016/j.dsp.2026.106223",
+      "id_base": "WOS:001768378900001"
+    },
+    {
+      "id": "R274",
+      "fuente": "WoS",
+      "titulo": "Using non-continuous accelerometry to identify cryptic nesting events of Galapagos giant tortoises",
+      "anio": "2024",
+      "doi": "10.1186/s40317-024-00387-w",
+      "id_base": "WOS:001352373600001"
+    },
+    {
+      "id": "R275",
+      "fuente": "WoS",
+      "titulo": "An Early-Life NAND Flash Endurance Prediction System",
+      "anio": "2021",
+      "doi": "10.1109/access.2021.3124604",
+      "id_base": "WOS:000716671800001"
+    },
+    {
+      "id": "R276",
+      "fuente": "WoS",
+      "titulo": "Remote Sensing Tool for Reservoir Volume Estimation",
+      "anio": "2025",
+      "doi": "10.3390/rs17040619",
+      "id_base": "WOS:001430795800001"
+    },
+    {
+      "id": "R277",
+      "fuente": "WoS",
+      "titulo": "S-Edge: A Multi-Region Edge Computing Framework With Adaptive Data Compression and Dynamic Load Balancing",
+      "anio": "2026",
+      "doi": "10.1109/access.2026.3696637",
+      "id_base": "WOS:001783786700019"
+    },
+    {
+      "id": "R278",
+      "fuente": "WoS",
+      "titulo": "A hybrid blockchain and smart contract framework for resilient IoT security in smart homes",
+      "anio": "2025",
+      "doi": "10.3389/fbloc.2025.1707911",
+      "id_base": "WOS:001651808000001"
+    },
+    {
+      "id": "R279",
+      "fuente": "WoS",
+      "titulo": "IoT-Based Architecture with AI-Ready Analytics for Medical Waste Management: System Design and Pilot Validation",
+      "anio": "2026",
+      "doi": "10.3390/app16063081",
+      "id_base": "WOS:001725120700001"
+    },
+    {
+      "id": "R280",
+      "fuente": "WoS",
+      "titulo": "The Application of Robotics and Automation in Smart Agricultural Manufacturing: Achieving Precision Operations and Maximizing Yield",
+      "anio": "2026",
+      "doi": "10.1109/access.2026.3697014",
+      "id_base": "WOS:001795867000050"
+    },
+    {
+      "id": "R281",
+      "fuente": "WoS",
+      "titulo": "Deep Learning Architectures for Skateboarder-Pedestrian Surrogate Safety Measures",
+      "anio": "2021",
+      "doi": "10.3390/futuretransp1020022",
+      "id_base": "WOS:001274281400001"
+    },
+    {
+      "id": "R282",
+      "fuente": "WoS",
+      "titulo": "Enhancing organizational security through proactive cybersecurity risk management and continuous threat monitoring systems",
+      "anio": "2026",
+      "doi": "10.1016/j.teler.2026.100369",
+      "id_base": "WOS:001882821900001"
+    },
+    {
+      "id": "R283",
+      "fuente": "WoS",
+      "titulo": "Explaining Performance Issues of Cloud Applications From Logs Using Rule Induction and Dempster-Shafer Theory",
+      "anio": "2026",
+      "doi": "10.1109/access.2026.3686885",
+      "id_base": "WOS:001754886700033"
+    },
+    {
+      "id": "R284",
+      "fuente": "WoS",
+      "titulo": "Blockchain-Based Security Mechanism for the Medical Data at Fog Computing Architecture of Internet of Things",
+      "anio": "2021",
+      "doi": "10.3390/electronics10172110",
+      "id_base": "WOS:000695557300001"
+    },
+    {
+      "id": "R285",
+      "fuente": "WoS",
+      "titulo": "Comparison of deep learning schemes in grading non-alcoholic fatty liver disease using B-mode ultrasound hepatorenal window images with liver biopsy as the gold standard",
+      "anio": "2025",
+      "doi": "10.1016/j.ejmp.2024.104862",
+      "id_base": "WOS:001372539600001"
+    },
+    {
+      "id": "R286",
+      "fuente": "WoS",
+      "titulo": "Learning-based orchestration for low-latency AI deployment in hybrid cloud-edge platforms",
+      "anio": "2026",
+      "doi": "10.1038/s41598-026-58531-w",
+      "id_base": "WOS:001871942300006"
+    },
+    {
+      "id": "R287",
+      "fuente": "WoS",
+      "titulo": "SFARP: a multi-layered real-time security framework for hybrid ARP and DDoS attack defense in SD-IoT networks",
+      "anio": "2025",
+      "doi": "10.1038/s41598-025-28830-9",
+      "id_base": "WOS:001635693700006"
+    },
+    {
+      "id": "R288",
+      "fuente": "WoS",
+      "titulo": "Design of a multi-layered privacy-preserving architecture for secure medical data exchange in cloud environments",
+      "anio": "2026",
+      "doi": "10.1038/s41598-026-40122-4",
+      "id_base": "WOS:001732933000030"
+    },
+    {
+      "id": "R289",
+      "fuente": "WoS",
+      "titulo": "TCN-Based DDoS Detection and Mitigation in 5G Healthcare-IoT: A Frequency Monitoring and Dynamic Threshold Approach",
+      "anio": "2025",
+      "doi": "10.1109/access.2025.3531659",
+      "id_base": "WOS:001405883900025"
+    },
+    {
+      "id": "R290",
+      "fuente": "WoS",
+      "titulo": "Extracting reproductive parameters from GPS tracking data for a nesting raptor in Europe",
+      "anio": "2025",
+      "doi": "10.1111/jav.03246",
+      "id_base": "WOS:001335288900001"
+    },
+    {
+      "id": "R291",
+      "fuente": "WoS",
+      "titulo": "An IoT-Based Real-Time Monitoring and Alert System for Sea Turtle Nest Protection",
+      "anio": "2026",
+      "doi": "10.3390/app16104839",
+      "id_base": "WOS:001774213600001"
+    },
+    {
+      "id": "R292",
+      "fuente": "WoS",
+      "titulo": "Optimal Generative Adversarial Network-Bidirectional Long Short-Term Memory-Based Byzantine Failure Prediction and Failure Tolerance in Cloud Computing",
+      "anio": "2026",
+      "doi": "10.1142/s0218194025500998",
+      "id_base": "WOS:001667031600001"
+    },
+    {
+      "id": "R293",
+      "fuente": "WoS",
+      "titulo": "PRMS: Design and Development of Patients' E-Healthcare Records Management System for Privacy Preservation in Third Party Cloud Platforms",
+      "anio": "2022",
+      "doi": "10.1109/access.2022.3198094",
+      "id_base": "WOS:000842048400001"
+    },
+    {
+      "id": "R294",
+      "fuente": "WoS",
+      "titulo": "Prediction of Imminent Battery Depletion in Implantable Cardioverter-Defibrillator",
+      "anio": "2026",
+      "doi": "10.3390/sci8040072",
+      "id_base": "WOS:001750234600001"
+    },
+    {
+      "id": "R295",
+      "fuente": "WoS",
+      "titulo": "A Novel System for Confidential Medical Data Storage Using Chaskey Encryption and Blockchain Technology",
+      "anio": "2023",
+      "doi": "10.21123/bsj.2023.9203",
+      "id_base": "WOS:001121717000024"
+    },
+    {
+      "id": "R296",
+      "fuente": "WoS",
+      "titulo": "RETRACTED: On the Design of Secured and Reliable Dynamic Access Control Scheme of Patient E-Healthcare Records in Cloud Environment (Retracted Article)",
+      "anio": "2022",
+      "doi": "10.1155/2022/3804553",
+      "id_base": "WOS:000848360600003"
+    },
+    {
+      "id": "R297",
+      "fuente": "WoS",
+      "titulo": "Reliability of Edge AI in XR-Based Health Data Capture: An Experimental Study on GPU Offloading and Semantic Stability",
+      "anio": "2026",
+      "doi": "10.1109/access.2026.3689595",
+      "id_base": "WOS:001765013400034"
+    },
+    {
+      "id": "R298",
+      "fuente": "WoS",
+      "titulo": "Eco-FinOps: a causal-agentic framework for energy-efficient and explainable cloud cost optimization",
+      "anio": "2026",
+      "doi": "10.3389/frai.2026.1861514",
+      "id_base": "WOS:001810828900001"
+    },
+    {
+      "id": "R299",
+      "fuente": "WoS",
+      "titulo": "GeoGuard-PTI: a geo-temporal predictive threat intelligence framework with spatiotemporal attack forecasting and closed-loop adaptive defense",
+      "anio": "2026",
+      "doi": "10.3389/frai.2026.1850560",
+      "id_base": "WOS:001816451800001"
+    },
+    {
+      "id": "R300",
+      "fuente": "WoS",
+      "titulo": "EHR-derived cognitive load is associated with guideline-concordant statin initiation in primary care",
+      "anio": "2026",
+      "doi": "10.1186/s12911-026-03392-6",
+      "id_base": "WOS:001765251600001"
+    },
+    {
+      "id": "R301",
+      "fuente": "WoS",
+      "titulo": "Evaluating Manifold Learning Techniques for Dimensionality Reduction on Industrial IoT Cybersecurity Data",
+      "anio": "2026",
+      "doi": "10.1109/access.2026.3662155",
+      "id_base": "WOS:001699557300035"
+    },
+    {
+      "id": "R302",
+      "fuente": "WoS",
+      "titulo": "Expanding Applications of TinyML in Versatile Assistive Devices: From Navigation Assistance to Health Monitoring System Using Optimized NASNet-XGBoost Transfer Learning",
+      "anio": "2024",
+      "doi": "10.1109/access.2024.3496791",
+      "id_base": "WOS:001366323900005"
+    },
+    {
+      "id": "R303",
+      "fuente": "WoS",
+      "titulo": "A Graph-Based Infrastructure for Characterizing Structural Risk and Lateral Movement Patterns in APT Campaigns",
+      "anio": "2026",
+      "doi": "10.1109/access.2026.3691599",
+      "id_base": "WOS:001771131900032"
+    },
+    {
+      "id": "R304",
+      "fuente": "WoS",
+      "titulo": "Hybrid Deep Learning and Kalman Filtering for Reactive Power Fault Diagnosis in Smart Microgrids",
+      "anio": "2026",
+      "doi": "10.1109/access.2026.3681913",
+      "id_base": "WOS:001747679400013"
+    },
+    {
+      "id": "R305",
+      "fuente": "WoS",
+      "titulo": "Towards asynchronous federated learning based threat detection: A DC-Adam approach",
+      "anio": "2021",
+      "doi": "10.1016/j.cose.2021.102344",
+      "id_base": "WOS:000681264400005"
+    },
+    {
+      "id": "R306",
+      "fuente": "WoS",
+      "titulo": "Intelligent Optimization Mechanism Based on an Objective Function for Efficient Home Appliances Control in an Embedded Edge Platform",
+      "anio": "2021",
+      "doi": "10.3390/electronics10121460",
+      "id_base": "WOS:000666019900001"
+    },
+    {
+      "id": "R307",
+      "fuente": "WoS",
+      "titulo": "Attribute-Based Access Control With Credible Outsourcing and Collusion-Resistant Revocation Based on Blockchain for Iomt",
+      "anio": "2025",
+      "doi": "10.1002/cpe.70105",
+      "id_base": "WOS:001497532600023"
+    },
+    {
+      "id": "R308",
+      "fuente": "WoS",
+      "titulo": "Bi-Scale Mahalanobis Detection for Reactive Jamming in UAV OFDM Links",
+      "anio": "2025",
+      "doi": "10.3390/fi17100474",
+      "id_base": "WOS:001602093900001"
+    },
+    {
+      "id": "R309",
+      "fuente": "WoS",
+      "titulo": "CAFM-Enhanced YOLOv8: A Two-Stage Optimization for Precise Strawberry Disease Detection in Complex Field Conditions",
+      "anio": "2025",
+      "doi": "10.3390/app151810025",
+      "id_base": "WOS:001579531300001"
+    },
+    {
+      "id": "R310",
+      "fuente": "WoS",
+      "titulo": "GENOME: Genetic Encoding for Novel Optimization of Malware Detection and Classification in Edge Computing",
+      "anio": "2025",
+      "doi": "10.32604/cmc.2025.061267",
+      "id_base": "WOS:001444268000001"
+    },
+    {
+      "id": "R311",
+      "fuente": "WoS",
+      "titulo": "SecureEdge-MedChain: A Post-Quantum Blockchain and Federated Learning Framework for Real-Time Predictive Diagnostics in IoMT",
+      "anio": "2025",
+      "doi": "10.3390/s25195988",
+      "id_base": "WOS:001595066900001"
+    },
+    {
+      "id": "R312",
+      "fuente": "WoS",
+      "titulo": "Acquisition and processing of vehicle dynamics data for predictive modeling",
+      "anio": "2026",
+      "doi": "10.1080/21642583.2026.2634457",
+      "id_base": "WOS:001729371000001"
+    },
+    {
+      "id": "R313",
+      "fuente": "WoS",
+      "titulo": "Neural Network Method for Detecting Low-Intensity DDoS Attacks with Stochastic Fragmentation and Its Adaptation to Law Enforcement Activities in the Cyber Protection of Critical Infrastructure Facilities",
+      "anio": "2026",
+      "doi": "10.3390/computers15020084",
+      "id_base": "WOS:001699932900001"
+    },
+    {
+      "id": "R314",
+      "fuente": "WoS",
+      "titulo": "Design and Analysis of Ethereum Blockchain Enabled IoT Based Model for Secure Data Transmission",
+      "anio": "2025",
+      "doi": "10.1002/ett.70126",
+      "id_base": "WOS:001463423900001"
+    },
+    {
+      "id": "R315",
+      "fuente": "WoS",
+      "titulo": "High Frequency Ultrasonic Condition Monitoring Framework Based on Edge-Computing and Telemetry Stack Approach",
+      "anio": "2026",
+      "doi": "10.3390/machines14030270",
+      "id_base": "WOS:001727098900001"
+    },
+    {
+      "id": "R316",
+      "fuente": "WoS",
+      "titulo": "Patient-Specific Spatio-Temporal False Data Injection Attack Detection for IoMT Using a Graph-GRU Digital Twin and Kalman Innovation Features",
+      "anio": "2026",
+      "doi": "10.3390/bioengineering13080920",
+      "id_base": "WOS:001859286400001"
+    },
+    {
+      "id": "R317",
+      "fuente": "WoS",
+      "titulo": "Cybersecurity Driven Quantum Digital Twin for Proactive Threat Reversal in Open RAN",
+      "anio": "2026",
+      "doi": "10.1049/qtc2.70027",
+      "id_base": "WOS:001870776500001"
+    },
+    {
+      "id": "R318",
+      "fuente": "WoS",
+      "titulo": "Improving Power Grid Disaster Resilience Through Predictive Analytics Based on Data-Driven Photovoltaic Power Plant and Distribution Network Power Forecasting",
+      "anio": "2025",
+      "doi": "10.1109/access.2025.3611104",
+      "id_base": "WOS:001596864800045"
+    },
+    {
+      "id": "R319",
+      "fuente": "WoS",
+      "titulo": "Automated-detection of risky alcohol use prior to surgery using natural language processing",
+      "anio": "2024",
+      "doi": "10.1111/acer.15222",
+      "id_base": "WOS:001142102000001"
+    },
+    {
+      "id": "R320",
+      "fuente": "WoS",
+      "titulo": "Fault-Aware Decision Support for Renewable-Powered EV Charging Stations Using Multi-Source Explainable Learning",
+      "anio": "2026",
+      "doi": "10.3390/eng7080391",
+      "id_base": "WOS:001858756200001"
+    },
+    {
+      "id": "R321",
+      "fuente": "WoS",
+      "titulo": "Urban AI OS: An LLM-Driven Semantic Orchestration Layer for Distributed Edge Intelligence",
+      "anio": "2026",
+      "doi": "10.3390/electronics15173820",
+      "id_base": "WOS:001872805100001"
+    },
+    {
+      "id": "R322",
+      "fuente": "WoS",
+      "titulo": "Cyber Risk Management of API-Enabled Financial Crime in Open Banking Services",
+      "anio": "2026",
+      "doi": "10.3390/e28020163",
+      "id_base": "WOS:001700046600001"
+    },
+    {
+      "id": "R323",
+      "fuente": "WoS",
+      "titulo": "Smart wastewater management in hydro-technical systems using digital twin technology",
+      "anio": "2026",
+      "doi": "10.1038/s41598-026-42626-5",
+      "id_base": "WOS:001743115700011"
+    },
+    {
+      "id": "R324",
+      "fuente": "WoS",
+      "titulo": "Eskom-Induced Metabolic Arrest in JSE Financial Hypergraphs: A Physics-Informed Entropy Protocol for Systemic Risk Governance",
+      "anio": "2026",
+      "doi": "10.3390/risks14070159",
+      "id_base": "WOS:001833292800001"
+    },
+    {
+      "id": "R325",
+      "fuente": "WoS",
+      "titulo": "Intelligent Soil Analytics for Forensic Applications: Emerging Technologies, Trends, and Transformative Paradigms",
+      "anio": "2026",
+      "doi": "10.1002/eng2.70538",
+      "id_base": "WOS:001701714500035"
+    },
+    {
+      "id": "R326",
+      "fuente": "WoS",
+      "titulo": "Quantum-Assisted Optimization and Security for Trustworthy AI-Driven Healthcare",
+      "anio": "2026",
+      "doi": "10.1109/tqe.2026.3677420",
+      "id_base": "WOS:001754878600001"
+    },
+    {
+      "id": "R327",
+      "fuente": "WoS",
+      "titulo": "DeepGrass: A transformer-based approach for enhanced grassland management through Sentinel-2 time series spectral signature and vegetation indices forecasting",
+      "anio": "2026",
+      "doi": "10.1016/j.rse.2026.115545",
+      "id_base": "WOS:001808386700001"
+    },
+    {
+      "id": "R328",
+      "fuente": "WoS",
+      "titulo": "Graph-Based Digital Twin Blueprint for Securing 6G Local Area Networks",
+      "anio": "2025",
+      "doi": "10.1109/mwc.2025.3602932",
+      "id_base": "WOS:001596949200001"
+    },
+    {
+      "id": "R329",
+      "fuente": "WoS",
+      "titulo": "SCOPE-5G: A Standards-Aligned Synthetic AMF Observability Dataset for Reproducible 5G Core Benchmarking",
+      "anio": "2026",
+      "doi": "10.1109/access.2026.3727225",
+      "id_base": "WOS:001871098600019"
+    },
+    {
+      "id": "R330",
+      "fuente": "WoS",
+      "titulo": "Electrically evoked compound action potentials in adult and pediatric cochlear implant users: I. Cochlear nerve responsiveness and electrode-neuron interface index",
+      "anio": "2026",
+      "doi": "10.1016/j.heares.2026.109769",
+      "id_base": "WOS:001848762100001"
+    },
+    {
+      "id": "R331",
+      "fuente": "WoS",
+      "titulo": "Provably Adaptive Trust Dynamics in Context-Aware Zero-Trust Systems: A Formal Framework for Continuous Verification",
+      "anio": "2026",
+      "doi": "10.1109/access.2026.3695458",
+      "id_base": "WOS:001779888500008"
+    },
+    {
+      "id": "R332",
+      "fuente": "WoS",
+      "titulo": "Can Telemonitoring Predict Patient-Reported Leak Perception in Long-Term Home Noninvasive Ventilation for Patients with Chronic Respiratory Failure?",
+      "anio": "2026",
+      "doi": "10.1016/j.chest.2025.11.050",
+      "id_base": "WOS:001874723400001"
+    },
+    {
+      "id": "R333",
+      "fuente": "WoS",
+      "titulo": "Prioritized and predictive intelligence of things enabled waste management model in smart and sustainable environment",
+      "anio": "2022",
+      "doi": "10.1371/journal.pone.0272383",
+      "id_base": "WOS:000947311000086"
+    },
+    {
+      "id": "R334",
+      "fuente": "WoS",
+      "titulo": "A Two-Stage Framework for Microsatellite Thermal Mode Identification and Fault Detection via Clustering and Sequence Prediction",
+      "anio": "2026",
+      "doi": "10.3390/aerospace13060544",
+      "id_base": "WOS:001801736500001"
+    },
+    {
+      "id": "R335",
+      "fuente": "WoS",
+      "titulo": "Development of an IoT System for Acquisition of Data and Control Based on External Battery State of Charge",
+      "anio": "2026",
+      "doi": "10.3390/electronics15030502",
+      "id_base": "WOS:001687693500001"
+    },
+    {
+      "id": "R336",
+      "fuente": "WoS",
+      "titulo": "Agentic SABRE: An uncertainty-aware neuro-symbolic multi-agent framework for adaptive ransomware detection",
+      "anio": "2027",
+      "doi": "10.1016/j.eswa.2026.133558",
+      "id_base": "WOS:001824732300001"
+    },
+    {
+      "id": "R337",
+      "fuente": "WoS",
+      "titulo": "Track reconstruction as a service for collider physics",
+      "anio": "2025",
+      "doi": "10.1088/1748-0221/20/06/p06002",
+      "id_base": "WOS:001506962600002"
+    },
+    {
+      "id": "R338",
+      "fuente": "WoS",
+      "titulo": "Design of an Electronic Nose System with Automatic End-Tidal Breath Gas Collection for Enhanced Breath Detection Performance",
+      "anio": "2025",
+      "doi": "10.3390/mi16040463",
+      "id_base": "WOS:001475538900001"
+    },
+    {
+      "id": "R339",
+      "fuente": "WoS",
+      "titulo": "Lightweight Blockchain-Edge Security Framework for IoT Smart Spaces: Architecture, Threat Mitigation, and Real-World Validation",
+      "anio": "2026",
+      "doi": "10.32604/cmes.2026.087402",
+      "id_base": "WOS:001869576800001"
+    },
+    {
+      "id": "R340",
+      "fuente": "WoS",
+      "titulo": "Bridging accuracy and interpretability in solar forecasting: A regional ensemble learning approach",
+      "anio": "2026",
+      "doi": "10.1016/j.egyr.2026.109136",
+      "id_base": "WOS:001697473900001"
+    },
+    {
+      "id": "R341",
+      "fuente": "WoS",
+      "titulo": "PhysGTT: A Physics-Guided Self-Supervised Graph Temporal Transformer for Forecasting Electricity Inconsistencies in Mini-Grids",
+      "anio": "2026",
+      "doi": "10.3390/en19102262",
+      "id_base": "WOS:001774411000001"
+    },
+    {
+      "id": "R342",
+      "fuente": "WoS",
+      "titulo": "GeoForensic-AI: A Lightweight and Explainable Forensic AI Framework for Modern Digital Ecosystems",
+      "anio": "2026",
+      "doi": "10.1109/access.2026.3686828",
+      "id_base": "WOS:001819879600031"
+    },
+    {
+      "id": "R343",
+      "fuente": "WoS",
+      "titulo": "Automatic segmentation of extensor carpi ulnaris tendon and detection of tendinosis with convolutional neural networks",
+      "anio": "2024",
+      "doi": "10.1177/20584601241297530",
+      "id_base": "WOS:001367887200001"
+    },
+    {
+      "id": "R344",
+      "fuente": "WoS",
+      "titulo": "Continuous Smartphone Authentication via Multimodal Biometrics and Optimized Ensemble Learning",
+      "anio": "2026",
+      "doi": "10.3390/math14020311",
+      "id_base": "WOS:001670974900001"
+    },
+    {
+      "id": "R345",
+      "fuente": "WoS",
+      "titulo": "Decomposing the genetic risk of autism spectrum disorder into discrete molecular subtypes underlie clinical heterogeneity based on transcriptome profile",
+      "anio": "2026",
+      "doi": "10.1186/s12967-026-08364-y",
+      "id_base": "WOS:001842864300001"
+    },
+    {
+      "id": "R346",
+      "fuente": "WoS",
+      "titulo": "Encrypted Search Method for Cloud Computing Data Under Attack Based on TF-IDF and Apriori Algorithm",
+      "anio": "2025",
+      "doi": "10.1080/08839514.2024.2449303",
+      "id_base": "WOS:001406120800001"
+    },
+    {
+      "id": "R347",
+      "fuente": "WoS",
+      "titulo": "ANAID: Autonomous Naturalistic Obstacle-Avoidance Interaction Dataset",
+      "anio": "2026",
+      "doi": "10.3390/data11040077",
+      "id_base": "WOS:001751742800001"
+    },
+    {
+      "id": "R348",
+      "fuente": "WoS",
+      "titulo": "EdenDID: an edge computing and blockchain-based decentralized identity system for Web3 applications and DePIN",
+      "anio": "2025",
+      "doi": "10.1007/s10586-025-05746-7",
+      "id_base": "WOS:001597096900043"
+    },
+    {
+      "id": "R349",
+      "fuente": "WoS",
+      "titulo": "Agentic AI-enhanced digital twins for Smart City civil infrastructure: A secure, autonomous and auditable management framework",
+      "anio": "2026",
+      "doi": "10.1371/journal.pone.0353610",
+      "id_base": "WOS:001824849100026"
+    },
+    {
+      "id": "R350",
+      "fuente": "WoS",
+      "titulo": "Incorporation of adaptive compression into a GPU parallel computing framework for analyzing large-scale vessel trajectories",
+      "anio": "2024",
+      "doi": "10.1016/j.trc.2024.104648",
+      "id_base": "WOS:001240424900001"
+    },
+    {
+      "id": "R351",
+      "fuente": "WoS",
+      "titulo": "Advanced behavioral malware detection: a comprehensive MLOps framework with federated learning and real-time drift detection",
+      "anio": "2026",
+      "doi": "10.3389/frai.2026.1811692",
+      "id_base": "WOS:001775196100001"
+    },
+    {
+      "id": "R352",
+      "fuente": "WoS",
+      "titulo": "Beyond approach distance: A drone-hydrophone integrated framework for quantifying vessel noise masking risk to free ranging wild dolphins",
+      "anio": "2026",
+      "doi": "10.1016/j.ecoinf.2026.103958",
+      "id_base": "WOS:001845100000001"
+    },
+    {
+      "id": "R353",
+      "fuente": "WoS",
+      "titulo": "Fog-Sec: Secure end-to-end communication in fog-enabled IoT network using permissioned blockchain system",
+      "anio": "2023",
+      "doi": "10.1002/nem.2248",
+      "id_base": "WOS:001060318900001"
+    },
+    {
+      "id": "R354",
+      "fuente": "WoS",
+      "titulo": "Neighbor-Relationship-Based Adaptive Density Peak Clustering",
+      "anio": "2024",
+      "doi": "10.1109/access.2024.3518497",
+      "id_base": "WOS:001381332300027"
+    },
+    {
+      "id": "R355",
+      "fuente": "WoS",
+      "titulo": "Evaluation of Ultrasound-Based Parameters for the Assessment of Hepatic Steatosis and Fibrosis in Hungarian Wilson's Disease Patients",
+      "anio": "2026",
+      "doi": "10.3390/diagnostics16101433",
+      "id_base": "WOS:001777286300001"
+    },
+    {
+      "id": "R356",
+      "fuente": "WoS",
+      "titulo": "The evolution of blockchain in smart buildings with IoT integration and future prospects",
+      "anio": "2026",
+      "doi": "10.1016/j.teler.2025.100283",
+      "id_base": "WOS:001662491800001"
+    },
+    {
+      "id": "R357",
+      "fuente": "WoS",
+      "titulo": "Prediction of tumor-reactive T cell receptors from scRNA-seq data for personalized T cell therapy",
+      "anio": "2025",
+      "doi": "10.1038/s41587-024-02161-y",
+      "id_base": "WOS:001180475800001"
+    },
+    {
+      "id": "R358",
+      "fuente": "WoS",
+      "titulo": "Generative AI for Efficient and Secure Authentication in UAV-Enabled Smart City Transportation Systems",
+      "anio": "2026",
+      "doi": "10.32604/cmc.2026.081292",
+      "id_base": "WOS:001807680300001"
+    },
+    {
+      "id": "R359",
+      "fuente": "WoS",
+      "titulo": "How to solve small sample size problems in time-series soil organic carbon mapping: New insights from the Third Law of Geography",
+      "anio": "2025",
+      "doi": "10.1016/j.geoderma.2025.117402",
+      "id_base": "WOS:001519912200001"
+    },
+    {
+      "id": "R360",
+      "fuente": "WoS",
+      "titulo": "SecuAudit: Integrity-Preserving Metadata Compliance Auditing for Secure Data Circulation in MCP-Enabled AI",
+      "anio": "2026",
+      "doi": "10.32604/cmc.2026.085633",
+      "id_base": "WOS:001855770900001"
+    },
+    {
+      "id": "R361",
+      "fuente": "WoS",
+      "titulo": "Deep Instance Segmentation With Automotive Radar Detection Points",
+      "anio": "2023",
+      "doi": "10.1109/tiv.2022.3168899",
+      "id_base": "WOS:000965482300001"
+    }
+  ]
+}

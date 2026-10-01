@@ -778,6 +778,41 @@ def build_graph(theme: Path, lay: Layout | None = None) -> dict:
     return meta
 
 
+def _latest_picoc_md(theme: Path) -> Path | None:
+    picoc_root = theme / "picoc"
+    if not picoc_root.is_dir():
+        return None
+    candidates = sorted(
+        (d for d in picoc_root.iterdir() if d.is_dir() and (d / "picoc.md").is_file()),
+        key=lambda p: p.name,
+        reverse=True,
+    )
+    return (candidates[0] / "picoc.md") if candidates else None
+
+
+def _theme_query_checks_from_picoc(theme: Path) -> list[tuple[str, str]]:
+    """Smoke-test queries from the latest picoc ## Keywords (theme-specific)."""
+    picoc_md = _latest_picoc_md(theme)
+    if not picoc_md:
+        return []
+    text = picoc_md.read_text(encoding="utf-8")
+    block = re.search(
+        r"## Keywords\s*\n+\|[^\n]+\n\|[-| :]+\n((?:\|[^\n]+\n)+)",
+        text,
+    )
+    if not block:
+        return []
+    checks: list[tuple[str, str]] = []
+    for line in block.group(1).strip().splitlines()[:3]:
+        cells = [c.strip() for c in line.split("|") if c.strip()]
+        if not cells:
+            continue
+        keyword = cells[0]
+        hint = keyword.split()[0][:5].lower() if keyword.split() else keyword[:5].lower()
+        checks.append((keyword, hint))
+    return checks
+
+
 def verify(theme: Path, lay: Layout | None = None) -> dict:
     """Quality gates — must pass before trusting theme memory."""
     lay = lay or layout(theme)
@@ -859,13 +894,7 @@ def verify(theme: Path, lay: Layout | None = None) -> dict:
             token = max(words, key=len) if words else parts[0]
         query_checks.append((token, stem))
     if lay.theme_md:
-        query_checks.extend(
-            [
-                ("cognitive accessibility", "cognitive"),
-                ("digital accessibility", "accessibility"),
-                ("neurodiverg", "neuro"),
-            ]
-        )
+        query_checks.extend(_theme_query_checks_from_picoc(theme))
 
     for q, expect_substr in query_checks:
         r = subprocess.run(

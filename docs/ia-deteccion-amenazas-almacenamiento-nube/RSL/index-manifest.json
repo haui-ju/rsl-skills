@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "updated_at": "2026-10-01T04:46:41+00:00",
+  "entries": {
+    "informe.md": {
+      "source": "informe.md",
+      "source_sha256": "74c0ffacb01671b6b613489e3b0c39df63a39bcd5a9f3c0808e3177b634a7211",
+      "source_bytes": 7498,
+      "md": "informe.md",
+      "md_sha256": "74c0ffacb01671b6b613489e3b0c39df63a39bcd5a9f3c0808e3177b634a7211",
+      "method": "theme-md",
+      "status": "graphify_indexed",
+      "md_created_at": "2026-10-01T04:46:06+00:00",
+      "graphify_indexed_at": "2026-10-01T04:46:41+00:00",
+      "notes": "theme markdown",
+      "heading_count": 11
+    },
+    "topic.md": {
+      "source": "topic.md",
+      "source_sha256": "6f671506cd7e62cb1d3f530b4ed8e9826c4622b32942c751fbfe17e8cb27480f",
+      "source_bytes": 14847,
+      "md": "topic.md",
+      "md_sha256": "6f671506cd7e62cb1d3f530b4ed8e9826c4622b32942c751fbfe17e8cb27480f",
+      "method": "theme-md",
+      "status": "graphify_indexed",
+      "md_created_at": "2026-10-01T04:46:06+00:00",
+      "graphify_indexed_at": "2026-10-01T04:46:41+00:00",
+      "notes": "theme markdown",
+      "heading_count": 29
+    },
+    "RSL/PDF/alzoubi-2020-ml-cloud-security-review.pdf": {
+      "source": "RSL/PDF/alzoubi-2020-ml-cloud-security-review.pdf",
+      "source_sha256": "ac7b6a0a440d13f91b7cc10606d29443f7950efb70cd914bece69074ea1ab5f1",
+      "source_bytes": 1468186,
+      "md": "RSL/MD/alzoubi-2020-ml-cloud-security-review.md",
+      "md_sha256": "67f950d20b435d27c840ab31b0b7ee0dea9f15b21d52d16f0bec5684e73f479f",
+      "method": "pdftotext+structure",
+      "status": "graphify_indexed",
+      "md_created_at": "2026-10-01T04:46:06+00:00",
+      "graphify_indexed_at": "2026-10-01T04:46:41+00:00",
+      "notes": "words:13748,alpha:0.95;headings:61",
+      "heading_count": 61
+    },
+    "RSL/PDF/nasim-2025-idps-cloud-slr.pdf": {
+      "source": "RSL/PDF/nasim-2025-idps-cloud-slr.pdf",
+      "source_sha256": "366e4bdbbeb5b9bc36999ed7a29244881cd1ec6a808a0ca904628cfd9743aad4",
+      "source_bytes": 2702991,
+      "md": "RSL/MD/nasim-2025-idps-cloud-slr.md",
+      "md_sha256": "6271d469b985fd1d476832c79204b5a88e49229b204cfedb78107a2cd3a590a0",
+      "method": "pdftotext+structure",
+      "status": "graphify_indexed",
+      "md_created_at": "2026-10-01T04:46:07+00:00",
+      "graphify_indexed_at": "2026-10-01T04:46:41+00:00",
+      "notes": "words:15935,alpha:0.93;headings:99",
+      "heading_count": 99
+    },
+    "RSL/PDF/omogbehin-2026-securing-cloud-data-ml.pdf": {
+      "source": "RSL/PDF/omogbehin-2026-securing-cloud-data-ml.pdf",
+      "source_sha256": "3f3d074871c603e55e5a3b07a4a7dd4bb72864db079a3e69b31bf9ccd8621656",
+      "source_bytes": 904582,
+      "md": "RSL/MD/omogbehin-2026-securing-cloud-data-ml.md",
+      "md_sha256": "79c0490c4cb61452e232ec542527c38a33f336de7a533ea33a51931d092438cf",
+      "method": "pdftotext+structure",
+      "status": "graphify_indexed",
+      "md_created_at": "2026-10-01T04:46:07+00:00",
+      "graphify_indexed_at": "2026-10-01T04:46:41+00:00",
+      "notes": "words:7326,alpha:0.89;headings:36",
+      "heading_count": 36
+    }
+  }
+}

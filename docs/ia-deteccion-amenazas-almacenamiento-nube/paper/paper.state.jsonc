@@ -1,0 +1,126 @@
+// NO EDITAR A MANO. Lo gestiona scripts/paper-manifest.py (--update / --new-version).
+// Para activar, congelar o apagar secciones, edita config.yml (en la carpeta del tema).
+{
+  "sections": {
+    "encabezado": {
+      "content_hash": {
+        "borrador": "8f3ec7c9eb25",
+        "polish": "11a1fe24918d"
+      },
+      "form_hash": {
+        "borrador": "291a75329297",
+        "polish": "bcbad9ee7c5e"
+      },
+      "mirror_form": {
+        "borrador": "48cadf1f9efb",
+        "polish": "6ca71a259617"
+      },
+      "version": "2026-09-30",
+      "sources_hash": {
+        "topic.md": "6f671506cd7e",
+        "informe-polish.md": "e30676e5991b",
+        "picoc": "fa341b225e2a"
+      },
+      "status": "polished"
+    },
+    "contexto": {
+      "content_hash": {
+        "borrador": "22aa960ecb64",
+        "polish": "0d60c07999c6"
+      },
+      "form_hash": {
+        "borrador": "4604f0fcb7bd",
+        "polish": "35d13cec277a"
+      },
+      "version": "2026-09-30",
+      "sources_hash": {
+        "RSL/MD": "48cd8340c357"
+      },
+      "status": "polished"
+    },
+    "problema": {
+      "content_hash": {
+        "borrador": "e3f2d52be525",
+        "polish": "282f8aa19b8a"
+      },
+      "form_hash": {
+        "borrador": "510dddf2eb6b",
+        "polish": "61c83c8b464e"
+      },
+      "mirror_form": {
+        "borrador": "52ea329e09ef",
+        "polish": "abb47284ce04"
+      },
+      "version": "2026-09-30",
+      "sources_hash": {
+        "picoc": "fa341b225e2a"
+      },
+      "status": "polished"
+    },
+    "justificacion": {
+      "content_hash": {
+        "borrador": "7e3900c9bed8",
+        "polish": "54e71934a347"
+      },
+      "form_hash": {
+        "borrador": "77ecc0d9e4ec",
+        "polish": "680b76dffc4a"
+      },
+      "version": "2026-09-30",
+      "sources_hash": {
+        "informe-polish.md": "e30676e5991b"
+      },
+      "status": "polished"
+    },
+    "objetivo-rsl": {
+      "content_hash": {
+        "borrador": "33fd70776cc8",
+        "polish": "e3d25f4f1654"
+      },
+      "form_hash": {
+        "borrador": "341950891123",
+        "polish": "f90c32a90734"
+      },
+      "version": "2026-09-30",
+      "sources_hash": {
+        "picoc": "fa341b225e2a"
+      },
+      "status": "polished"
+    },
+    "organizacion": {
+      "content_hash": {
+        "borrador": "e64d386ef83a",
+        "polish": "eeb633a3cdba"
+      },
+      "form_hash": {
+        "borrador": "566bc952954a",
+        "polish": "50218192b804"
+      },
+      "version": "2026-09-30",
+      "sources_hash": {
+        "grupos": "ae7b799633fe"
+      },
+      "status": "polished"
+    },
+    "referencias": {
+      "content_hash": {
+        "borrador": "757b1f1fb9ef",
+        "polish": "45109e26e202"
+      },
+      "form_hash": {
+        "borrador": "f3ecc78b4fe3",
+        "polish": "28daf6f4769b"
+      },
+      "version": "2026-09-30",
+      "sources_hash": {},
+      "status": "polished"
+    }
+  },
+  "versions": {
+    "2026-09-30": {
+      "from": null,
+      "borrador": true,
+      "polish": true
+    }
+  }
+}
