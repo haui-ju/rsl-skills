@@ -27,7 +27,7 @@ Invoke: `Usa rsl-cribado-1-aplicar sobre docs/<slug>/`.
 The last message of the skill is exactly one line:
 
 - Failure: `ERROR: <mensaje del script>. <cómo arreglarlo>`.
-- Everything went well: `OK: picoc/<carpeta>/resultados-<MARCO>-cribado-1.csv con <n> registros (SI <a>, NO <b>). Próximo paso: cribado a texto completo de los SI (descarga sus PDF en RSL/PDF/)`.
+- Everything went well: `OK: picoc/<carpeta>/resultados-<MARCO>-cribado-1.csv con <n> registros (SI <a>, NO <b>). Próximo paso: Usa rsl-cribado-2 sobre docs/<slug>/ (descarga los PDF de los SI)`.
 
 ## Forbidden
 

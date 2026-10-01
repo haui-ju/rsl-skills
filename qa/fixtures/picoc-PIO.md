@@ -156,10 +156,10 @@ TITLE-ABS-KEY (
 
 ### Inclusión
 
-- Artículos de revista o de congreso revisados por pares, de acceso abierto, en inglés o español, publicados entre 2021 y 2026.
-- Estudios dirigidos a personas con discapacidad cognitiva o neurodivergencia.
+- **CI1.** Artículos de revista o de congreso revisados por pares, de acceso abierto, en inglés o español, publicados entre 2021 y 2026.
+- **CI2.** Estudios dirigidos a personas con discapacidad cognitiva o neurodivergencia.
 
 ### Exclusión
 
-- Registros duplicados entre bases de datos o sin texto completo accesible.
-- Revisiones sistemáticas y otros estudios secundarios.
+- **CE1.** Registros sin texto completo accesible.
+- **CE2.** Revisiones sistemáticas y otros estudios secundarios.

@@ -45,6 +45,7 @@ QUESTION = re.compile(r"¿[^?]+\?", re.S)
 CRITERIA = "Criterios de inclusión y exclusión"
 KEYWORDS_MIN, KEYWORDS_MAX = 5, 6
 CRITERION_MAX_WORDS = 25
+CRITERION_ID_RE = re.compile(r"^\**\s*(CI|CE)(\d+)\.?\s*\**\s+\S", re.I)
 LANGUAGE_RE = re.compile(r"idioma|inglés|español|portugués|francés|alemán|english|spanish", re.I)
 DOCTYPE_RE = re.compile(r"revista|congreso|conferencia|actas|arbitra|revisi[oó]n por pares|journal|proceedings", re.I)
 OA_RE = re.compile(r"acceso abierto|open access", re.I)
@@ -268,9 +269,31 @@ def main(path: Path) -> int:
     if n_terms > MAX_QUERY_TERMS:
         errs.append(f"R2: la query tiene {n_terms} keywords; el máximo es {MAX_QUERY_TERMS} (quitar las redundantes o las de menor evidencia)")
 
+    criteria_body = find(secs, CRITERIA) or ""
+    criteria_sections = sections(criteria_body, "###")
+    criteria_is_new = True
+    criteria_codes: dict[str, list[int]] = {"CI": [], "CE": []}
+    for prefix, title in (("CI", "Inclusión"), ("CE", "Exclusión")):
+        body = find(criteria_sections, title) or ""
+        bullets = [l for l in body.splitlines() if re.match(r"^\s*[-*]\s+\S", l)]
+        for line in bullets:
+            item = re.sub(r"^\s*[-*]\s+", "", line).strip()
+            match = CRITERION_ID_RE.match(item)
+            if not match:
+                criteria_is_new = False
+                continue
+            if match.group(1).upper() != prefix:
+                errs.append(f"CR: criterio de {title} debe usar {prefix}n ({item[:40]})")
+                criteria_is_new = False
+                continue
+            criteria_codes[prefix].append(int(match.group(2)))
+        if criteria_is_new and criteria_codes[prefix] != list(range(1, len(criteria_codes[prefix]) + 1)):
+            errs.append(f"CR: los criterios {prefix} deben numerarse consecutivamente desde {prefix}1")
+    if criteria_is_new and any(re.search(r"duplicad", l, re.I) for l in (criteria_body.splitlines())):
+        errs.append("CR: «documentos duplicados» es una operación técnica de deduplicación, no un criterio CE")
     crit_inc = " ".join(
         norm_text(re.sub(r"^\s*[-*]\s+", "", l))
-        for l in (find(sections(find(secs, CRITERIA) or "", "###"), "Inclusión") or "").splitlines()
+        for l in (find(criteria_sections, "Inclusión") or "").splitlines()
         if re.match(r"^\s*[-*]\s+\S", l)
     )
     cr_years = PERIOD_RE.search(crit_inc)

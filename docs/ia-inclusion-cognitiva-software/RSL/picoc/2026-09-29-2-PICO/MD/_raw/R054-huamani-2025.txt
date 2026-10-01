@@ -1,0 +1,565 @@
+===== PDF PAGE 1 / 9 =====
+                                                         (IJACSA) International Journal of Advanced Computer Science and Applications,
+                                                                                                                 Vol. 16, No. 12, 2025
+
+
+       Accessible Application Prototype for Improving
+          Digital Reading in People with Dyslexia:
+       User-Centered Design and Usability Validation
+Enrique Lee Huamaní1, Brian Andreé Meneses-Claudio2, Carlos Fidel Ponce Sánchez3, Jehovanni F. Velarde-Molina4
+                Image Processing Research Laboratory, Universidad de Ciencias y Humanidades, Lima - Perú 1
+                              Facultad de Ingenieria, Universidad Cientifica del Sur, Lima - Perú 2
+               Facultad de Ingeniería Industrial y de Sistemas, Universidad Nacional de Ingeniería, Lima - Perú 3
+                           Dirección de investigación, Escuela de Posgrado Newman, Tacna – Perú 4
+
+
+    Abstract—Digital reading remains a challenge for individuals      most common learning difficulties [2]. Furthermore, dyslexia
+with dyslexia due to the limited availability of accessible tools     accounts for up to 80% of diagnosed cases of reading-related
+tailored to their cognitive and perceptual needs. Although many       learning disorders [1]. Scientific evidence shows that these
+digital reading applications offer basic personalization options,     difficulties persist into adulthood, being especially noticeable
+they often lack integrated mechanisms to support reading              in reading and writing speed, while reading comprehension is
+comprehension and user autonomy. This study presents the design       usually less affected; the severity of symptoms may vary
+and usability validation of an accessible mobile application          depending on the orthographic transparency of the language,
+prototype aimed at improving the digital reading experience for
+                                                                      but in all cases, there is a significant impact on the academic
+people with dyslexia using a user-centered design approach. The
+research followed a design thinking methodology that included a
+                                                                      and social life of those affected [3]. These findings highlight the
+systematic literature review, analysis of documented user needs
+                                                                      importance of developing inclusive and technologically
+from peer-reviewed studies and dyslexia support communities,          advanced solutions that enable equal opportunities in access to
+personas development based on published user profiles, and a          information and education for people with dyslexia.
+competitive analysis of existing accessible reading applications.         Despite technological advances and growing awareness of
+The design process focused on identifying key pain points and         inclusion, many digital platforms still do not offer features
+developing interactive prototypes that integrate advanced text        adapted to the needs of people with dyslexia. Text
+personalization, visual and auditory supports, text difficulty
+                                                                      personalization options, such as changing font, color, size, or
+analysis, and intelligent accessibility suggestions. The proposed
+                                                                      spacing, are often limited or nonexistent. In addition, the
+prototype enables users to customize font type and size, color, and
+spacing; activate text-to-speech functionality; highlight words or    integration of assistive technologies such as text-to-speech
+lines; upload and edit texts in multiple formats; and receive         (TTS), word or line highlighting, and accessible navigation is
+automated recommendations to enhance accessibility. Usability         absent in most digital reading applications. This lack of
+and accessibility were evaluated through expert heuristic             adequate tools can lead to frustration, low motivation, and
+assessment using established usability principles and WCAG 2.1        difficulties in reading comprehension, affecting users’
+guidelines. Results indicate strong adherence to usability            academic performance and autonomy [3].
+standards, with experts highlighting effective feature integration
+                                                                          User-centered design and user experience (UX) are
+and identifying the need for additional instructional support for
+advanced functions. Overall, the proposed application addresses
+                                                                      fundamental approaches for the development of inclusive
+key gaps in digital reading accessibility and provides a foundation   technological solutions. Understanding the documented needs
+for future empirical validation with end users.                       and experiences of people with dyslexia in the design process
+                                                                      makes it possible to identify their real requirements,
+   Keywords—Dyslexia; digital accessibility; digital reading;         preferences, and pain points, resulting in more effective and
+usability; user-centered design                                       satisfactory products. In this context, the present research
+                                                                      proposes the development and validation of a digital reading
+                       I. INTRODUCTION                                application prototype aimed at people with dyslexia. The
+    In the digital age, reading texts on electronic devices has       application integrates functionalities such as advanced text
+become a fundamental activity in both education and                   personalization, guided mode, text-to-speech, difficulty
+professional life. However, for individuals with dyslexia,            analysis, and the generation of intelligent suggestions to
+digital reading continues to pose a significant challenge due to      improve accessibility and reading comprehension.
+the lack of truly accessible tools tailored to their specific needs       The main objective of this study is to analyze the challenges
+[1]. Dyslexia is a neurobiological learning difficulty that affects   faced by people with dyslexia in digital reading and to evaluate
+the accuracy and fluency of word recognition as well as reading       the effectiveness and usability of the proposed application. The
+comprehension. It is estimated that around 10% of the world’s         research questions guiding this work are:
+population has some degree of dyslexia, making it one of the
+
+
+
+
+                                                                                                                          306 | P a g e
+                                                         www.ijacsa.thesai.org
+
+===== PDF PAGE 2 / 9 =====
+                                                        (IJACSA) International Journal of Advanced Computer Science and Applications,
+                                                                                                                Vol. 16, No. 12, 2025
+
+   What are the main challenges and needs of people with             effort required for reading [5]. Additionally, the use of visual
+dyslexia when interacting with digital texts according to            supports, such as word or line highlighting and segmenting text
+existing literature?                                                 into more manageable fragments, contributes to a more positive
+                                                                     and effective reading experience [6]. However, the lack of
+   What features should be integrated into a digital reading
+                                                                     comprehensive and accessible tools remains one of the main
+application to improve accessibility and user experience based       barriers for this group.
+on evidence-based design principles?
+                                                                     B. The Role of Technology in Reading Accessibility
+   How can heuristic evaluation validate the usability and
+accessibility of the proposed application design for people with         Technological advances have enabled the development of
+dyslexia?                                                            digital tools that improve accessibility for people with dyslexia,
+                                                                     transforming the way they access and process written
+                     II. LITERATURE REVIEW                           information. Digital applications and platforms currently offer
+    To achieve the objectives of this study, an exhaustive           features such as text-to-speech, font and color changes, and
+review of previous literature was conducted, focusing on             spacing adjustments, which facilitate the adaptation of text to
+existing problems and solutions related to digital reading           each user’s needs [7]. The integration of these technologies in
+accessibility for people with dyslexia. Keywords such as             educational and professional settings has proven to be key in
+dyslexia, digital accessibility, digital reading, assistive          promoting inclusion and equal opportunities, allowing students
+technology, and user experience were used to search for              and workers with dyslexia to actively participate in activities
+relevant studies in academic databases such as ResearchGate,         that were previously inaccessible [8]. However, the literature
+ScienceDirect, and Springer. Eighteen pertinent research             also warns that the effectiveness of these tools largely depends
+articles were identified, addressing topics ranging from the         on their ease of use, the quality of personalization, and the
+characterization of reading difficulties in people with dyslexia     training of users and educators in their implementation [9].
+to the analysis of technological tools and pedagogical strategies    Therefore, user-centered design and continuous evaluation of
+aimed at improving reading comprehension.                            the user experience are fundamental aspects for the success of
+                                                                     technological solutions in this field.
+    The literature review highlights the importance of text
+personalization, including font type, size, color, and spacing, as   C. Challenges in the Adoption of Accessible Digital Solutions
+well as the integration of assistive technologies such as text-to-       Despite technological advances, there are significant
+speech and word highlighting. These features are fundamental         challenges in the adoption and effective use of accessible digital
+to facilitating digital reading for individuals with dyslexia.       solutions for people with dyslexia. Among the main obstacles
+Additionally, studies were identified that analyze how age,          are the lack of standardization in accessibility features, limited
+educational level, and familiarity with technology influence the     training for users and educators, and the scarce availability of
+adoption and effectiveness of digital solutions. The reviewed        materials adapted to different levels of reading difficulty [10].
+articles also emphasize the need for intuitive interfaces, active    In addition, information overload, the complexity of some
+user participation in the design process, and usability evaluation   interfaces, and the absence of intelligent recommendations can
+as key factors for the success of applications aimed at this         hinder the reading experience and cause frustration among
+group.                                                               users [11]. The literature suggests that collaboration between
+                                                                     developers, educators, and people with dyslexia is essential to
+    The results of the literature review reveal gaps in current      identify real needs and design tools that effectively address
+digital solutions, especially regarding the absence of               them [12]. Likewise, the importance of continuous feedback
+comprehensive tools that combine personalization,                    and the adaptation of solutions to changes in users’ preferences
+accessibility, and intelligent support. These findings underscore    and abilities over time is emphasized.
+the need to develop and validate a user-centered digital reading
+application capable of addressing the real needs of people with      D. Diversity of Age and Technological Experience in Usability
+dyslexia and promoting equal opportunities in access to                  Age and technological experience significantly influence
+information and education.                                           the usability and acceptance of accessible digital reading
+A. Reading Difficulties and Needs of People with Dyslexia            applications. Younger users, who have grown up in digital
+                                                                     environments, tend to adapt more easily to new technologies
+    Digital reading represents a considerable challenge for          and confidently explore personalization and support options
+individuals with dyslexia, who must overcome barriers such as        [13]. In contrast, adults and older individuals may require more
+word decoding, comprehension of lengthy texts, and visual            intuitive interfaces, clear instructions, and additional support to
+fatigue. These difficulties not only affect motivation and           make the most of the available features [14]. The literature
+academic performance but also limit autonomy and full                highlights the need to design flexible solutions that adapt to
+participation in educational and social environments. The            different levels of digital literacy and allow personalization
+specialized literature indicates that dyslexia involves              according to each user’s preferences and needs [15].
+significant variability in the manifestations and needs of each      Furthermore, the active participation of people with dyslexia of
+individual, making the development of flexible and                   different ages in the design and validation process of the tools
+customizable solutions essential [4]. Various studies have           helps improve acceptance, satisfaction, and the effectiveness of
+shown that the ability to modify font type, size, color, and         technological solutions [16].
+spacing can facilitate comprehension and reduce the cognitive
+
+
+
+
+                                                                                                                         307 | P a g e
+                                                        www.ijacsa.thesai.org
+
+===== PDF PAGE 3 / 9 =====
+                                                          (IJACSA) International Journal of Advanced Computer Science and Applications,
+                                                                                                                  Vol. 16, No. 12, 2025
+
+E. Artificial Intelligence and Personalization in Digital                  online support forums. The synthesis process involved
+    Reading                                                                analyzing fifteen key aspects identified in the literature about
+    Artificial intelligence is transforming reading accessibility          digital reading experiences, the main challenges faced, and the
+through automatic content personalization, the generation of               improvements or supports considered necessary to facilitate
+recommendations, and predictive analysis of difficulties.                  reading. The documented profiles represented a wide variety of
+Platforms that integrate AI can suggest formatting adjustments,            cases, from individuals diagnosed with dyslexia in childhood to
+identify complex words, and offer summaries tailored to the                adults who have developed their own strategies to cope with
+user’s level, thereby facilitating comprehension and reducing              reading. This qualitative information made it possible to
+cognitive load [17]. In addition, AI enables real-time feedback,           accurately identify common user problems and needs, thus
+progress tracking, and dynamic adaptation of features                      guiding the design and development of the proposed application
+according to user performance and preferences [18]. These                  prototype in this study.
+capabilities contribute to a more autonomous, motivating, and              B. Contextual Research
+personalized reading experience, allowing people with dyslexia
+                                                                               A comprehensive literature analysis and synthesis of
+to overcome traditional barriers and access information more
+                                                                           published research were conducted to understand the reading
+equitably [19]. The literature agrees that the integration of AI
+                                                                           habits, behaviors, and mental models of people with dyslexia
+into digital reading applications represents a key opportunity to
+                                                                           when interacting with digital texts. Different documented user
+advance toward a more inclusive education and society.
+                                                                           experiences and accessibility studies were analyzed from
+                      III. METHODS                                         various perspectives to build a comprehensive understanding.
+   This study followed the design thinking process, which                  For this study, a cultural model was developed based on
+encompasses five phases:                                                   established research findings to identify the values, needs, and
+                                                                           factors that influence the reading experience of people with
+   1) empathize, 2) define, 3) ideate, 4) prototype, and 5) test.          dyslexia. The cultural model (see Fig. 1) highlights the
+                                                                           complexity and challenges faced by these users, helping to
+A. Requirements Analysis                                                   identify the critical points where the greatest difficulties arise.
+    A systematic analysis of user needs was conducted through              This analysis made it possible to visualize the main problems
+examination of published research, case studies, and user                  and provided the foundation for proposing a digital support
+testimonials from dyslexia support communities. The analysis               system, based on an application with intelligent tools, aimed at
+covered documented experiences from individuals aged                       facilitating and improving the reading experience for people
+between 10 and 55 years, with varying levels of experience with            with dyslexia. No direct interviews or surveys with individuals
+reading technologies, including students from different                    with dyslexia were conducted in this study; all user insights
+educational levels, professionals, and young adults. Sources               were derived from secondary sources including peer-reviewed
+included peer-reviewed articles, accessibility reports, and                publications, accessibility reports, and documented
+documented user experiences from dyslexia organizations and                testimonials from established dyslexia organizations.
+
+
+
+
+                                              Fig. 1.   Cultural model of a person with dyslexia .
+
+
+
+
+                                                                                                                               308 | P a g e
+                                                          www.ijacsa.thesai.org
+
+===== PDF PAGE 4 / 9 =====
+                                                         (IJACSA) International Journal of Advanced Computer Science and Applications,
+                                                                                                                 Vol. 16, No. 12, 2025
+
+C. Problem Definition                                                     reading tools: for example, younger users tend to explore more
+    Analyzing the results of the literature review and                    personalization options, while adults may feel less familiar with
+documented user experiences revealed that digital reading                 assistive technologies. Documented user feedback also
+represents a significant challenge for people with dyslexia in            expressed frustration due to the lack of accessible materials,
+various aspects. Research indicates that users often face                 limited text personalization, and the absence of
+difficulties in understanding texts, maintaining concentration,           recommendations tailored to their difficulties. To better
+and adapting materials to their specific needs. Additionally,             understand the problem space, a fishbone diagram (see Fig. 2)
+differences were observed in published studies regarding how              was used, allowing for an exhaustive analysis of the causes and
+people of different ages and educational levels use digital               effects of the problems faced by people with dyslexia when
+                                                                          interacting with digital texts.
+
+
+
+
+                                                         Fig. 2.   Fishbone diagram.
+
+D. Competitor Analysis                                                    shows that, although most applications offer personalization
+    As shown in Table I, a competitor study was conducted in              options and TTS, few include text difficulty analysis or
+the field of accessible digital reading for people with dyslexia.         intelligent suggestions to improve accessibility. Furthermore,
+The main competitors identified include Microsoft Immersive               not all platforms allow users to upload and edit texts in different
+Reader, ClaroRead, and Voice Dream Reader. Microsoft                      formats or have an interface truly centered on accessibility.
+Immersive Reader offers an inclusive reading experience                   E. Final Concept
+integrated into various platforms, allowing text personalization,
+text-to-speech, and translation. ClaroRead is a popular tool that             Finally, the conceptual framework of the proposed
+provides text-to-speech, font and color changes, and support for          application was consolidated as a comprehensive solution to
+different text formats. Voice Dream Reader is a mobile                    enhance the digital reading experience for individuals with
+                                                                          dyslexia. The app addresses the most common challenges faced
+application that stands out for its customization capabilities,
+support for multiple voices and formats, and ease of use.                 by these users, such as difficulties in text customization, lack of
+                                                                          support tools, and limited accessibility of materials. It offers
+   The comparison focuses on essential features to improve                advanced personalization options, read-aloud functionality,
+accessibility and the reading experience, such as font and color          word or line highlighting, and text difficulty analysis.
+personalization, text-to-speech, difficulty analysis, accessibility       Additionally, it includes intelligent suggestions to improve
+suggestions, and ease of use. Each platform has its strengths and         accessibility and allows users to upload, edit, or write texts in
+limitations, which are summarized in Table I. The analysis                various formats. The application also incorporates social
+
+
+
+                                                                                                                              309 | P a g e
+                                                         www.ijacsa.thesai.org
+
+===== PDF PAGE 5 / 9 =====
+                                                                       (IJACSA) International Journal of Advanced Computer Science and Applications,
+                                                                                                                               Vol. 16, No. 12, 2025
+
+features, such as the ability to share adapted texts and                                enjoyment of digital reading. Table II presents the SCAMPER
+recommendations within a user community. The final concept                              model used to enhance the accessibility services of the
+provides people with dyslexia an all-in-one, user-friendly tool                         proposed solution. Table III summarizes the main features of
+focused on their needs, facilitating comprehension and                                  the final idea.
+
+                                        TABLE I.        COMPARATIVE TABLE OF KEY FEATURES OF THE M AIN COMPETITORS
+
+                                                                                                                   Competitors
+                             Features
+                                                                         Microsoft Immersive Reader                    ClaroRead                 Voice Dream Reader
+ Release year                                                                        2015                                 2004                         2011
+ Main platform                                                       Web, Windows, Office                      Windows, Mac, iOS             iOS, Android
+ Font and color customization                                        ✓                                         ✓                             ✓
+ Dyslexia -friendly font                                             ✓                                         ✓                             ✓
+ Text-to-speech (TTS)                                                ✓                                         ✓                             ✓
+ Spacing and size adjustment                                         ✓                                         ✓                             ✓
+ Text highlighting/line guide                                        ✓                                         ✓                             ✓
+ Text difficulty analysis                                            ✗                                         ✗                             ✗
+ Accessibility suggestions                                           ✗                                         ✗                             ✗
+ File upload (PDF, DOCX, TXT)                                        ✓                                         ✓                             ✓
+ Text editing                                                        ✗                                         ✓                             ✓
+ Clean, focused interface                                            ✓                                         ✓                             ✓
+ Keyboard navigation                                                 ✓                                         ✓                             ✓
+ Adequate contrast                                                   ✓                                         ✓                             ✓
+ ARIA labels and roles                                               ✓                                         ✗                             ✗
+ Total key features                                                  11                                        10                            10
+
+                                                 TABLE II.       SCAMPER M ODEL FOR ACCESSIBILITY ENHANCEMENT
+
+             SCAMPER                                                                             Description
+                                    •              Traditional reading replaced by read-aloud and text highlighting.
+ Substitute
+                                    •              Standard fonts substituted with dyslexia -friendly fonts.
+                                    •              Combine font, color, and spacing customization in a single interface.
+ Combine                            •              Integrate difficulty analysis and intelligent suggestions into the text editor.
+                                    •              Combine file upload and manual editing functions for greater flexibility.
+                                    •              Adapt gamification techniques to motivate reading (achievements, rewards).
+ Adapt
+                                    •              Adapt accessibility strategies from other educational apps.
+                                    •              Modify the interface to be cleaner, more focused, and distraction -free.
+ Modify
+                                    •              Improve keyboard navigation and accessibility for screen readers.
+                                    •              Use the app as a support tool in classrooms or therapy.
+ Put to another use
+                                    •              Allow non-dyslexic users to customize reading to improve comprehension or language learning.
+                                    •              Eliminate unnecessary features and complex menus.
+ Eliminate
+                                    •              Reduce notifications and visual elements that may distract the user.
+                                    •              Reverse the traditional approach of passive reading, promoting active interaction.
+ Reverse
+                                    •              Reverse the help flow: the app automatically suggests improvements based on the uploaded text.
+
+                                                     TABLE III.      M AIN FEATURES OF THE PROPOSED SOLUTION
+
+           Main Feature                                                                          Description
+ Advanced text customization            Allows modification of font type and size, text and background color, and line and letter spacing to suit user needs.
+ Read-aloud (TTS)                       Offers the option to read text aloud, with controls to pause, resume, and stop reading, facilitating auditory comprehension.
+ Guided mode and highlighting           Enables highlighting of the current line or word, helping maintain attention and improve visual tracking during reading.
+                                        Allows uploading files (PDF, DOCX, TXT), as well as pasting or manually writing text, providing flexibility in content
+ Text upload and editing
+                                        access.
+ Difficulty analysis and                Analyzes the text’s difficulty level and offers intelligent suggestions to improve accessibility, such as simplifying phrases or
+ suggestions                            words.
+ Accessible and focused                 Presents a clean interface focused on the text, with accessible controls, keyboard navigation, adequate contrast, and support
+ interface                              for screen readers.
+
+
+
+
+                                                                                                                                                        310 | P a g e
+                                                                      www.ijacsa.thesai.org
+
+===== PDF PAGE 6 / 9 =====
+                                                                (IJACSA) International Journal of Advanced Computer Science and Applications,
+                                                                                                                        Vol. 16, No. 12, 2025
+
+                                                                                 tools and the limited integration of features such as read-aloud
+F. Prototype Evaluation                                                          or word highlighting. According to accessibility research, 65%
+    A heuristic evaluation method was employed to assess the                     of reported cases across all ages indicate that visual fatigue and
+usability of the proposed application prototype. Three                           difficulty maintaining attention are frequent obstacles during
+accessibility experts with experience in assistive technology                    digital reading. Additionally, 70% of documented user
+and dyslexia support tools conducted independent evaluations                     feedback emphasizes the importance of having customization
+based on Nielsen's usability heuristics and WCAG 2.1                             options (font type, color, spacing) and a simple, distraction-free
+accessibility guidelines. The evaluation focused on specific                     interface. Literature on adult users also highlights the need for
+interaction scenarios such as customizing text, using the read-                  suggestions to improve reading comprehension and for
+aloud function, uploading and editing files, and analyzing text                  materials adapted to different levels of difficulty. Overall, the
+difficulty. Each expert independently assessed the interface                     analysis demonstrated a strong demand for a single platform
+against established usability principles, including learnability,                that facilitates digital reading, offers accessible support tools,
+efficiency, memorability, error prevention, and user                             and adapts to the needs of people with dyslexia of all ages.
+satisfaction. The experts analyzed the prototype by simulating                   Documented user preferences show particular interest in a
+typical user tasks and identifying potential usability barriers for              solution that would allow autonomous and personalized reading
+individuals with varying levels of technological experience.                     experiences.
+The evaluation results were consolidated through a structured
+review session, where findings were discussed and prioritized                    B. User Interface Design Conceptualization
+according to severity and potential impact on the target user                        The idea for the application's user interface (UI) emerged
+experience.                                                                      from a systematic design thinking process, always focused on
+                                                                                 the needs and challenges of people with dyslexia. Initially,
+                               IV. RESULTS                                       paper wireframes were created to represent the main user
+A. Literature-Based User Needs Analysis                                          experiences, which allowed for the optimal placement of key
+                                                                                 elements such as customization controls, the reading area, and
+   Analysis of published literature and documented user                          access to support functions. Subsequently, the Figma tool was
+experiences revealed key aspects regarding the problems and                      used to develop high-fidelity interactive prototypes. The main
+preferences faced by people with dyslexia when reading digital                   interface and customization options are illustrated in the
+texts across different age groups (10 to 55 years). Research                     prototype (see Fig. 3). The reading view and text analysis
+findings indicate that approximately 60% of documented cases,                    features are also shown in a separate prototype (see Fig. 4). The
+especially among adults, report difficulties in finding accessible               design prioritized a clean layout, intuitive interactions, and a
+materials and customizing text formatting to their needs.                        high-contrast color scheme, thus ensuring a visually pleasing,
+Studies focusing on younger individuals (ages 10–25)                             accessible, and user-centered experience.
+consistently show frustration with the lack of intuitive digital
+
+
+
+
+                     Fig. 3.   High-fidelity interactive prototype of the proposed solution: main interface and customization options .
+
+
+
+
+                                                                                                                                          311 | P a g e
+                                                                www.ijacsa.thesai.org
+
+===== PDF PAGE 7 / 9 =====
+                                                                     (IJACSA) International Journal of Advanced Computer Science and Applications,
+                                                                                                                             Vol. 16, No. 12, 2025
+
+
+
+
+                          Fig. 4.    High-fidelity interactive prototype of the proposed solution: reading view and text analysis features.
+
+C. Usability Testing Information                                                      limited technological experience. One usability concern
+    The expert heuristic evaluation revealed that the application                     identified was the lack of consistency in some navigation flows,
+prototype demonstrates strong adherence to established                                especially when switching between different customization
+usability principles and accessibility guidelines. The design was                     modes. Experts recommended the incorporation of visual cues
+assessed as intuitive and accessible according to Nielsen's                           or interactive tutorials to help clarify the use of certain features.
+heuristics and WCAG 2.1 standards. Experts indicated that the                         Despite these considerations, the evaluation indicated that the
+interface design would likely encourage frequent use for                              platform design follows user-centered principles and offers
+reading activities among the target population. The organized                         advantages over existing digital reading tools. Overall, the
+interface style and the integration of the main features were                         expert assessment reflects strong usability potential, although
+particularly noted as strengths, especially the ease of                               opportunities for improvement were identified to make some
+customizing text and using the read-aloud function. However,                          features even clearer and more accessible, especially for users
+evaluators identified that some advanced features, such as                            with less technological experience. These findings will serve as
+difficulty analysis or file editing, may require additional                           a basis for future refinements aimed at providing a smoother
+instructional support, particularly for older adult users with                        and more enjoyable experience for all user profiles (Table IV).
+
+                                                         TABLE IV.      H EURISTIC EVALUATION SUMMARY
+
+                       Usability Heuristic                                                         Expert Assessment                             Priority
+ Visibility of system status                                           Strong – Clear feedback on all actions                                  Low
+ Match between system and real world                                   Strong – Intuitive terminology and metaphors                            Low
+ User control and freedom                                              Good – Undo/redo available, exit options clear                          Medium
+ Consistency and standards                                             Moderate – Some inconsistencies in navigation flows                     High
+ Error prevention                                                      Strong – Confirmations for critical actions                             Low
+ Recognition rather than recall                                        Strong – Visual cues and tooltips present                               Low
+ Flexibility and efficiency of use                                     Good – Customization supports varied user needs                         Medium
+ Aesthetic and minimalist design                                       Strong – Clean, focused interface                                       Low
+ Help users recognize and recover from errors                          Good – Clear error messages provided                                    Medium
+ Help and documentation                                                Moderate – Advanced features need more guidance                         High
+
+
+
+
+                                                                                                                                              312 | P a g e
+                                                                     www.ijacsa.thesai.org
+
+===== PDF PAGE 8 / 9 =====
+                                                        (IJACSA) International Journal of Advanced Computer Science and Applications,
+                                                                                                                Vol. 16, No. 12, 2025
+
+                                                                     assistive technology. The design process, informed by
+                        III. DISCUSSION                              extensive literature review and analysis of documented user
+    The use of digital technology has profoundly transformed         needs, made it possible to identify critical usability
+the way people access information and develop reading skills,        considerations and align the application design with the
+especially in educational and professional contexts. For             established preferences and expectations of the target
+individuals with dyslexia, the emergence of digital tools            population. The heuristic evaluation method demonstrated its
+represents both an opportunity and a challenge. On one hand,         effectiveness in identifying usability strengths and priority
+technology offers the possibility to personalize the reading         areas for improvement before implementation [23].
+experience, facilitating comprehension and autonomy. On the               In summary, the proposed application helps bridge the gap
+other hand, research indicates that the lack of truly inclusive      between the needs of people with dyslexia and the limitations
+solutions tailored to the needs of this group can perpetuate         of current digital solutions. The integration of advanced
+barriers and inequalities in access to information.                  personalization features, visual and auditory support, and
+   The objective of this study was to design and develop a           intelligent text analysis, together with an accessible and user-
+prototype of an accessible digital reading application aimed at      centered interface, represents a significant step forward toward
+people with dyslexia, enabling text customization, the use of        inclusion and equal opportunities in digital reading. However,
+visual and auditory supports, and the provision of intelligent       it is recognized that there is a need to continue researching and
+suggestions to improve reading comprehension. The                    refining these tools, incorporating new technologies and
+methodological process was based on design thinking,                 expanding validation to different contexts and user groups .
+encompassing the phases of empathizing, defining, ideating,          D. Limitations and Scope for Future Research
+prototyping, and evaluating. Empathy was addressed through
+comprehensive literature analysis and synthesis of documented            Although this study employed a systematic method based
+user experiences, which made it possible to identify the main        on design thinking, there are some limitations that should be
+pain points and unmet needs in digital reading. Contextual           considered, which open opportunities for future research. While
+research based on published studies and competitor analysis          the design of the proposed application prioritizes ease of use,
+helped define the problem space and identify the limitations of      expert evaluation indicated that some advanced options, such
+existing solutions. The use of fishbone diagrams facilitated the     as text difficulty analysis or detailed customization, may
+visualization of the causes and effects of reading difficulties in   present a learning curve for users with less technological
+people with dyslexia, while the SCAMPER method enabled the           experience or for older adults. In addition, the evaluation was
+ideation of innovative improvements for the proposal.                conducted through heuristic analysis with a limited number of
+                                                                     experts; therefore, future research should include empirical
+    The application prototype was developed using the Figma          validation with actual users from diverse age groups,
+tool, prioritizing a clean, accessible, and user-centered design.    educational levels, and sociocultural backgrounds to confirm
+Features such as advanced text customization, read-aloud             the design effectiveness.
+functionality, guided mode, and difficulty analysis were
+incorporated, as well as the ability to upload and edit texts in         Another relevant aspect is data privacy and security,
+different formats. The prototype was evaluated through expert        especially regarding the storage and handling of personal or
+heuristic assessment conducted by three accessibility                sensitive texts. Future implementation should incorporate
+specialists with extensive experience in assistive technology        robust data protection mechanisms and consider user
+design. The heuristic evaluation results demonstrated strong         perceptions of confidentiality in digital reading applications
+adherence to established usability and accessibility principles,     based on established privacy frameworks. Likewise, it would
+highlighting the ease of use, the effectiveness of the               be valuable to investigate the integration of the application with
+customization features, and the potential for improving reading      other educational platforms and support tools, as well as the
+comprehension among the target population.                           adaptation of the interface and features to different devices and
+                                                                     operating systems to ensure an accessible and consistent
+    Comparing the proposed design with previous literature, it       experience in any environment.
+is observed that most existing applications for people with
+dyslexia offer basic customization and read-aloud options, but           Finally, future empirical studies are recommended to
+lack difficulty analysis, intelligent suggestions, and seamless      investigate the actual impact of the implemented application on
+integration of all features in a single platform. Recent studies     the long-term development of reading skills, as well as on the
+have proposed predictive models and recommendation systems           motivation and autonomy of people with dyslexia. The
+based on artificial intelligence to adapt the reading experience     incorporation of new technologies, such as artificial
+to individual needs, but many of these approaches have not yet       intelligence for automatic personalization and progress
+been implemented in accessible and user-friendly applications        tracking, represents a promising line for future development
+for the general public [20]. Other works have explored               aimed at the continuous improvement of accessibility and
+gamification, augmented reality, and chatbots as strategies to       inclusion in digital reading.
+motivate reading and facilitate interaction, although the                                    III. CONCLUSION
+evidence regarding their effectiveness in the context of dyslexia
+                                                                        In conclusion, the proposed prototype aims to simplify and
+is still limited [21], [22].
+                                                                     enhance the digital reading experience for people with dyslexia,
+    The user-centered design approach adopted in this study          addressing the most common challenges such as lack of
+aligns with international best practices for the development of      personalization, limited accessibility, and the absence of
+
+
+
+                                                                                                                        313 | P a g e
+                                                        www.ijacsa.thesai.org
+
+===== PDF PAGE 9 / 9 =====
+                                                                   (IJACSA) International Journal of Advanced Computer Science and Applications,
+                                                                                                                           Vol. 16, No. 12, 2025
+
+intelligent support. The designed application integrates                               “Mobile Assistive Technology for Dyslexic Children: A Significant
+advanced text customization features, read-aloud functionality,                        Review,” Journal of Advanced Research in Applied Sciences and
+                                                                                       Engineering        Technology,       2024.       [Online].       Available:
+guided mode, and difficulty analysis, with the potential to allow                      http://doi.org/10.37934/araset.51.2.5770.
+users to adapt reading to their individual needs and preferences.                 [9] M. Schaur y R. Koutny, “Dyslexia, Reading/Writing Disorders: Assistiv e
+By combining these tools with an intuitive, user-centered                              Technology and Accessibility - Introduction to the Special Thematic
+interface design, the prototype proposes a smoother, more                              Session,”      pp.     269–274,       2024.       [Online].      Available:
+autonomous, and motivating reading experience.                                         http://doi.org/10.1007/978-3-031-62849-8_33.
+                                                                                  [10] L. Enco-Jáuregui, B. Meneses-Claudio, y M. Auccacusi-Kañahuire, “Web
+    This study did not involve direct participation of individuals                     accessibility for people with dyslexia: A systematic literature review,”
+with dyslexia in data collection or evaluation activities. User                        EAI Endorsed Transactions on Pervasive Health Technology, vol. 9,
+insights were obtained exclusively from published research and                         2023. [Online]. Available: http://doi.org/10.4108/eetpht.9.4274.
+documented experiences. Expert heuristic evaluation was                           [11] D. Iliska y D. Gudoniene, “Sustainable Technology-Enhanced Learning
+conducted by professional accessibility specialists, not by end                        for Learners with Dyslexia,” Sustainability, 2025. [Online]. Available:
+                                                                                       http://doi.org/10.3390/su17104513.
+users. Therefore, this research did not require ethics committee
+                                                                                  [12] J. Hu y J. Hu, “The influence of age at first regular digital device access
+approval at this stage. Future empirical validation with actual                        on digital reading performance: the mediating effect of cognitive
+users will require appropriate ethical clearance.                                      flexibility,” Humanities and Social Sciences Communications, vol. 11,
+                                                                                       pp. 1–18, 2024. [Online]. Available: http://doi.org/10.1057/s41599-024-
+                      ACKNOWLEDGMENT                                                   03292-y.
+   We would like to express our special gratitude to                              [13] H. Barrie, T. La Rose, B. Detlor, H. Julien, y A. Serenko, “Because I’m
+                                                                                       Old: The Role of Ageism in Older Adults’ Experiences of Digital Literacy
+Universidad Científica del Sur (UCSUR) for the academic                                Training in Public Libraries,” Journal of Technology in Human Services,
+support and institutional collaboration provided throughout this                       vol.      39,    pp.     379–404,      2021.      [Online].   Available:
+research. We also acknowledge the valuable insights gained                             http://doi.org/10.1080/15228835.2021.1962477 .
+from published research and published research findings and                       [14] K. Spjeldnæs y F. Karlsen, “How digital devices transform literary
+documented user experiences available in academic literature                           reading: The impact of e-books, audiobooks and online life on reading
+and dyslexia support community resources, which informed the                           habits,” New Media & Society, vol. 26, pp. 4808–4824, 2022. [Online].
+                                                                                       Available: http://doi.org/10.1177/146144482211261 68.
+conceptual design process without direct participant
+                                                                                  [15] A. Shutaleva, E. Kuzminykh, y A. Novgorodtseva, “Youth Practices of
+involvement. Finally, we extend our appreciation to our                                Reading as a Form of Life and the Digital World,” Societies, 2023.
+families for their constant encouragement and support                                  [Online]. Available: http://doi.org/10.3390/soc13070165 .
+throughout this project.                                                          [16] C. Wagner, “Differentiating Children's Reading Materials with Artificia l
+                                                                                       Intelligence: Exploring Possibilities for Personalized Learning,” The
+                               REFERENCES                                              Reading          Teacher,        2024.         [Online].      Available:
+[1]   N. Değirmenci, B. Bağlama, y Y. Yucesoy, “The Use of Technology in               http://doi.org/10.1002/trtr.2361.
+      Dyslexia: An Analysis of Recent Trends,” International Journal of           [17] H. Rad, “Reinforcing L2 reading comprehension through artificial
+      Emerging Technologies in Learning (iJET), vol. 15, pp. 30–39, 2020.              intelligence intervention: refining engagement to foster self -regulated
+      [Online]. Available: http://doi.org/10.3991/ijet.v15i05.11921.                   learning,” Smart Learning Environments, vol. 12, p. 23, 2025. [Online].
+[2]   R. Lerga, S. Čandrlić, y A. Jakupović, “A Review on Assistiv e                   Available: http://doi.org/10.1186/s40561-025-00377-2.
+      Technologies for Students with Dyslexia,” in Proceedings of the 13th        [18] N. Eziamaka, T. Odonkor, y A. Akinsulire, “AI -Driven accessibility:
+      International Conference on Computer Supported Education (CSEDU                  Transformative software solutions for empowering individuals with
+      2021),        pp.      64–72,       2021.      [Online].       Available:        disabilities,” International Journal of Applied Research in Social
+      http://doi.org/10.5220/0010434500640072.                                         Sciences,              2024.              [Online].           Available:
+[3]   A. Reis, S. Araújo, I. Morais, y L. Faísca, “Reading and reading-related         http://doi.org/10.51594/ijarss.v6i8.1373.
+      skills in adults with dyslexia from different orthographic systems: a       [19] S. Zhao, S. Xiong, B. Pang, X. Tang, y P. He, “Let AI Read First:
+      review and meta -analysis,” Annals of Dyslexia, vol. 70, pp. 339–368,            Enhancing Reading Abilities for Individuals with Dyslexia through
+      2020. [Online]. Available: http://doi.org/10.1007/s11881-020-00205-x.            Artificial Intelligence,” in Proceedings of the Extended Abstracts of the
+[4]   H. Yaacob, N. Zakariya, y S. Rashid, “Technology-based Interventions             CHI Conference on Human Factors in Computing Systems, 2025.
+      for Dyslexic Children: A Systematic Literature Review (SLR),”                    [Online]. Available: http://doi.org/10.1145/3706599.3720113 .
+      International Journal of Academic Research in Business and Social           [20] Y. Kuerban, S. Oyelere, y I. Sanusi, “ReadSmart: Generative AI and
+      Sciences, 2024. [Online]. Available: http://doi.org/10.6007/ijarbss/v14-         Augmented Reality Solution for Supporting Students with Dyslexia
+      i2/20826.                                                                        Learning Disabilities,” International Journal of Technology in Education
+[5]   A. Watson y S. Wallace, "Improving Reading Outcomes Using Digita l               and Science, 2025. [Online]. Available: http://doi.org/10.46328/ijtes.599.
+      Reading Rulers for Readers With & Without Dyslexia," Journal of Vision,     [21] A. Zingoni, J. Taborri, y G. Calabrò, “A machine learning-based
+      vol. 21, no. 9, p. 2650, 2021. [Online].                       Available:        classification model to support university students with dyslexia with
+      http://doi.org/10.1167/jov.21.9.2650.                                            personalized tools and strategies,” Scientific Reports, vol. 14, 2024.
+[6]   A. Niklaus, T. Cai, Z. Bylinskii, y S. Wallace, "Digital Reading Rulers:         [Online]. Available: http://doi.org/10.1038/s41598-023-50879-7.
+      Evaluating Inclusively Designed Rulers for Readers With Dyslexia and        [22] S. Phatangare, S. Jain, S. Chakrabarty, S. Chougule, y S. Bisen, “LexiEase
+      Without," in Proceedings of the 2023 CHI Conference on Human Factors             AI: An AI Powered Dyslexic Support System,” 2025 5th International
+      in      Computing       Systems,      2023.     [Online].      Available:        Conference on Trends in Material Science and Inventive Materials
+      http://doi.org/10.1145/3544548.3581367.                                          (ICTMIM),         pp.    1412–1417,     2025.     [Online].      Available:
+[7]   R. Niranchana, P. Karthikeyan, M. Sangeetha, y I. Xavier, “Rehabilitating        http://doi.org/10.1109/ICTMIM65579.2025.10987997 .
+      Reading: Addressing Dyslexia with Innovative Approaches,”                   [23] M. M. Meenakshi, “Leveraging AI Technologies for Personalized
+      International Research Journal on Advanced Engineering Hub (IRJAEH),             Learning Support in Dyslexic Students,” International Journal for
+      2025. [Online]. Available: http://doi.org/10.47392/irja eh.2025.0057.            Research in Applied Science and Engineering Technology, 2024.
+[8]   M. Mohamad, N. Abdullah, N. Rahim, M. Sanmugam, y H. Takajo,                     [Online]. Available: http://doi.org/10.22214/ijraset.2024.65734 .
+
+
+
+
+                                                                                                                                                314 | P a g e
+                                                                   www.ijacsa.thesai.org

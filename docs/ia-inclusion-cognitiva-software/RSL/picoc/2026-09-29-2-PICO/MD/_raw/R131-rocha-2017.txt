@@ -1,0 +1,739 @@
+===== PDF PAGE 1 / 12 =====
+Univ Access Inf Soc (2017) 16:581–592
+DOI 10.1007/s10209-016-0489-5
+
+    LONG PAPER
+
+
+
+Usability evaluation of navigation tasks by people with intellectual
+disabilities: a Google and SAPO comparative study regarding
+different interaction modalities
+Tânia Rocha1,2 • Diana Carvalho1,2 • Maximino Bessa1,2 • Sofia Reis3 •
+Luı́s Magalhães4
+
+
+
+
+Published online: 5 August 2016
+ Springer-Verlag Berlin Heidelberg 2016
+
+
+Abstract This paper presents a case study regarding the          phased study, we think we may be able to infer some rec-
+usability evaluation of navigation tasks by people with          ommendations to be used by developers in order to create
+intellectual disabilities. The aim was to investigate the        more intuitive layouts for easy navigation regarding this
+factors affecting usability, by comparing their user-Web         group of people, and thereby facilitate digital inclusion.
+interactions and underline the difficulties observed. For that
+purpose, two distinct study phases were performed: the first     Keywords Web search  Web navigation tasks  Google 
+consisted in comparing interaction using two different           SAPO  Intellectual disability
+search engines’ layouts (Google and SAPO) and the second
+phase consisted in a preliminary evaluation to analyze how
+users performed the tasks with the usual input devices           1 Introduction
+(keyboard and mouse) and provide an alternative interface
+to help overcome possible interaction problems and               Today, the evolution of the information society justifies
+enhance autonomy. For the latter, we compared two dif-           concerns about universal access to services provided online
+ferent interfaces: a WIMP-based one and speech-based one.        in order to improve people’s quality of life. The existing
+The main results obtained showed that users had a better         gap between those who could keep up with and embrace
+performance with Google (with a simpler layout) than with        the technological advances, and those that could not, rep-
+SAPO (with a complex layout), and despite displaying a           resents an obstacle for all communities. This gap is con-
+good keyboard handling ability, they did not show auton-         sidered a digital divide that reflects the deprivation of the
+omy using this input device (due to the need for reading/        access to ICTs to some part of the community [9].
+writing when handling this device). In this perspective,             The aim of Web accessibility is to guarantee that Web
+Google’s speech recognition application could indeed be          contents can be accessed and used by all potential users,
+considered an alternative for interaction. However, we           regardless of their cognitive or motor limitations or the
+found that the speech recognition interface is not as robust     various contexts of use [5, 11]. This concept is frequently
+as it should be: it could be more precise and less prone to      discussed and analyzed nowadays, but there is a long way
+errors due to poor word pronunciation. After this two-           to go in order to make web content accessible for all,
+                                                                 namely for people with intellectual disability.
+                                                                     Intellectual disability characterizes itself by the fact that
+& Tânia Rocha                                                   an individual has an intellectual quotient significantly
+  trocha@utad.pt                                                 below average and by limitations in the performance of
+1
+                                                                 functioning capacities in daily life areas, such as commu-
+     University of Trás-os-MOntes e Alto Douro, Vila Real,
+     Portugal
+                                                                 nication, self-care, social coexistence and in school activ-
+2
+                                                                 ities. Individuals with intellectual disability can and should
+     INESC TEC/UTAD, Vila Real, Portugal
+                                                                 learn new skills and abilities. However, their development
+3
+     University of Aveiro, Aveiro, Portugal                      will always be slower when compared to a child with
+4
+     University of Minho, Braga, Portugal                        medium intelligence and adaptive competencies [3].
+
+
+                                                                                                                       123
+
+===== PDF PAGE 2 / 12 =====
+582                                                                                          Univ Access Inf Soc (2017) 16:581–592
+
+
+   Our motivation rises from the desire to provide effective         conclusions of this work and shed some light on possible
+solutions for Web interaction for people with intellectual           directions for future research.
+disabilities. Thus, in this paper, we present a case study on
+usability evaluation of navigation tasks with this specific          1.1 Related work
+group. This case study is divided in two phases: First, we
+made a Google and SAPO layout comparative study, where               The accessibility of the internet services regarding vul-
+the group performed web search tasks using two different             nerable populations, such as individuals with intellectual
+search engines; and second, we analyzed two different                disabilities, has been studied and widely documented
+interaction modalities for inputting textual keywords                [8, 32, 33]. According to the authors, the use of online
+(through a physical keyboard and a speech recognition                services and the internet in general is seen as an opportu-
+application).                                                        nity to equally participate in today’s information society,
+   In the first phase, we aimed at comparing usability               largely contributing to the independence and self-deter-
+issues of Google and SAPO Web search engines. Knowing                mination of these individuals. Although this technology
+that these tools are essential for the retrieval of information      offers great potential, we recognize the fact that the access
+in a Web environment [24] and are the first option for               to these services is still strongly limited concerning the
+people who want to find information [15], it is important to         group of people with intellectual disabilities.
+study how people with specific conditions perform basic                 One of the characteristics of intellectual disability is
+Web search tasks and, in the end, understand whether they            cognitive impairment, leading to low levels of literacy.
+can also use all the advantages that this access can provide.        Consequently, users have difficulties in reading and writ-
+   In the second phase of study, we intended to perform a            ing. Given that the key basis of a Web search is textual
+preliminary evaluation to grasp whether the interaction              inputs (using keyboards), Web interaction could therefore
+modalities could interfere with Web interaction in this              be compromised.
+group of users, and ultimately observe whether they play                In fact, due to this situation, several studies have high-
+any role in them having a more autonomous interaction.               lighted problems in interaction: Text entry is problematic
+   For this purpose, we registered and analyzed the gath-            [25, 26], multi-options are referred to as difficult to use
+ered data resulting from direct observation, filming, user           [13], as are hyperlinks’ recognition [27, 29], typing and
+test evaluation (users’ performance, difficulties found,             reading instructions are difficult to perform [30], knowing
+errors, comments/notes) and eye gaze analysis.                       whether a word is spelled correctly is complicated [19].
+   At the end of the discussion of the results, we reflect on           Other studies have even questioned the possibility of
+some perceptions and throw some light on guidelines that             finding a guiding principle when planning Web contents
+we think could help improve usability of search engines,             (as Web sites) for people with intellectual disability [14]
+thus allowing an easier and more efficient access for people         due to difficulties resulting from the wide range of dis-
+with intellectual disability.                                        abilities among this group of people.
+   We consider essential to emphasize the importance of                 An additional problem, sustained by three studies, was
+creating new or adapting existing tools for accessing Web            that this topic of interest was not considered as important
+content, as it is a basic need, so that discrimination and the       because the researchers’ focus shifted and was no longer in
+digital divide become outdated concepts. Therefore, we think         the development of Web accessible content, but on the
+our study proves to be valuable on providing insights on how         creation of assistive technologies, Web services, browsers
+to bridge the gap in interaction concerning regular users and        or even other technologies such as mobile phones, PDA’s,
+those with disabilities and to understand what approaches            DVD players and cameras [6], despite the interest showed
+may be taken into account when performing search tasks for           by this group of people in surfing the Web [5, 26].
+this specific group. Also, it can be considered a basis for future      However, a trend of the studies in this field is the pre-
+research in this area, as it can be extended in various ways:        sentation of guidelines and/or recommendations for creat-
+understanding how different search engines may provide               ing an accessible Web design and/or lists of difficulties in
+better interaction performance; or evaluating more search            testing [6, 13, 14, 19, 29].
+tasks using other input modalities and devices.                         In Friedman and Bryan’s [10] study, they conducted a
+   This paper is structured as follows. First, we describe           survey of guidelines in the Web design area proposed by
+related work. Then, we present the case study conducted:             different experts and listed these same guidelines. The 22
+the group of participants involved in the study, the exper-          major recommendations reflect aspects such as size and
+imental design, the apparatus and the procedure followed.            shape of text, navigation consistency and page design, use
+Also, the results and discussion are presented. Then, we             of icons, images, written text, style, margins, links, line
+present participants’ behaviors and difficulties. Also, lim-         spacing, and screen layout. They also presented two
+itations of this study are noted. Finally, we state the main         tables with guidance lists, based on citation frequency. The
+
+
+123
+
+===== PDF PAGE 3 / 12 =====
+Univ Access Inf Soc (2017) 16:581–592                                                                                        583
+
+
+first table refers to the most important recommendations,         Ask, Medline Plus, Sapo Saúde and Web MD [17, 23]. Of
+and the second presents additional recommendations also           all of these examples, we chose Google and SAPO as the
+found by the authors, but that appear less often in the lit-      search engines to be studied, mostly because: (1) Google is
+erature (\15 %).                                                  the most-visited website in the world [1] and one of the
+    Widely known and used are the guidelines developed by         most used web search engines [18]; (2) SAPO is a Por-
+the World Wide Web Consortium (W3C). There are two                tuguese Internet service provider that started as a search
+versions of these guidelines (WCAG 1.0 and WCAG 2.0).             engine in 1995, and it is the main Portuguese search engine
+The last version of the guidelines is divided into four global    [17] and the sixth-oldest search engine in the world that is
+principals thought of to make content visible, operable,          still active. This is the fundamental cause for our choice of
+understandable and robust. Such principles are based on 12        the search engines in this study.
+guidelines that provide the basic goals that web designers            Aside from understanding the guidelines that can actu-
+and developers should work on to make web content more            ally influence the user’s performance, especially consid-
+accessible to users with disabilities. Furthermore,               ering people with intellectual disabilities, it has become
+testable criteria success is provided for each guideline to       important to also realize whether the interaction modality
+allow WCAG 2.0 to be used to test, for instance, design           itself can improve the interface usability. The goal we
+specification, purchasing, regulation and contractual             strive for today is to be able to give the user the opportunity
+agreements. There are three levels of conformance: A              to focus only on the task at hand, instead of the technology
+(lowest), AA, and AAA (highest). These levels were                used to interact with the computer/digital platform [7].
+defined to meet the needs of the different groups and sit-        Contrarily to the WIMP-based interfaces (Windows, Icons,
+uations. A wide variety of techniques for each guidelines         Menus, Pointing device), natural interfaces permit the user
+and success criteria [31] are also documented. Despite the        to interact with the interfaces that require a lower cognitive
+relevance of these guidelines, they were also object of           load [4] and thus provide a user-oriented and task-oriented
+discussion raising questions whether they are actually            approach [21].
+sufficient for this specific audience or not [5, 22, 25, 30].         Speech-based user interfaces are considered a solid
+    Regarding search engine interaction, Modesto and Fer-         foundation when handling natural interfaces regarding
+reira [19] provided guidelines for search features devel-         people with some sort of disability: It permits the input of
+opment, by making a comparison between general users              information without the resort to a keyboard or even in the
+and users with low reading skills. As the authors affirm,         event of the inexistence of a monitor; it facilitates tasks
+some of the recommendations presented ‘‘were already              where hands and/or eyes of the users are busy; and it
+implemented by Google search engine,’’ but some were              relieves the need for writing for people with motor or
+new, ‘‘for example, presenting less valuable information on       intellectual disabilities [34]. Some systems have been
+demand (as URL), clearly identifying filtered results, pro-       developed that take advantage of speech interfaces in order
+viding relevance indications (not only through page rank-         to replace quick commands given by the mouse or keyboard
+ing), differentiating advertisements from organic results,        in graphical interfaces, with very positive results [12, 20].
+presenting non-textual media in separate areas and pro-
+viding tips about how to operate search engine are rec-
+ommendations that could be explored on this tool’’ [19].          2 Case study
+    Another study, carried out by Wong et al. [33], stated that
+interaction problems are directly related to difficulties         The case study is divided in two different phases: In the
+regarding basic computer skills, namely interaction with and      first, we intend to compare the usability of the Google
+control of both the mouse and the keyboard, which are linked      versus the SAPO layout; in the second, we expose issues
+to the cognitive and sensory-motor functions of individuals       regarding the interaction modalities, using the keyboard
+[33].                                                             and speech-based recognition.
+    Consequently, it is important more studies focus on
+users’ interaction (in our case, a specific group of users        2.1 Participants
+with intellectual disability) specifically related to Web
+Search engines and to evaluate their experiences [16].            From thirty-five participants, twenty were invited to partook
+    Web search engines are software programs that search          in the pilot study (eight women and twelve men), whose ages
+documents and files by introducing keywords (user inter-          ranged from 19- to 44-year old. These participants were
+action based on understanding/inserting text) and then            selected by a special education teacher and a psychologist.
+return a list of documents, by consequence of the entered         According to the average rate of literacy and primary edu-
+keywords [18]. A sample list of Web search engines                cation, the participants are comprised between kindergarten
+includes: Google, Yahoo!, SAPO, Bing, AltaVista, AOL,             to first grade. Seven participants could read and write, while
+
+
+                                                                                                                      123
+
+===== PDF PAGE 4 / 12 =====
+584                                                                                        Univ Access Inf Soc (2017) 16:581–592
+
+
+the others had great difficulty in these tasks. After 7 years of   device is used only for the first phase. After the tests, we
+being part of a previous project of digital integration, we can    performed interviews to better understand users’ different
+say that the group presented equal levels of experience in         attitudes and behaviors throughout interaction; also, we
+interacting with digital environments, i.e., using the com-        wrote all video and audio annotations in the logbooks to
+puter with the traditional input devices (mouse and key-           register daily data and evolution on the performance.
+board) and the Internet [28]. Regarding their intellectual            Two study phases were prepared for the experiment.
+disabilities, the individuals were not associated to only one         In the first phase, we compared Google and SAPO Web
+pathology, but a group of pathologies (for example, fetal          search engines. These two were chosen because they are the
+alcohol syndrome with dysgraphia).                                 two most used tools in the World and in Portugal, respec-
+   According to DSM–V, these pathologies can be classi-            tively, and also because they present two very different
+fied according to severity levels, between mild to moderate,       layouts.
+but only one of the participants presented a high level of            Google presents a cleaner layout, where there are not
+disability [14]. Also, within the group, twelve participants       many types of contents displayed, only the tools to perform
+had normal vision; eight had corrected to normal vision.           search; as opposed to SAPO, where the tool to perform web
+None had motor impairments.                                        search is presented alongside several kinds of other con-
+   All of the participants were volunteers and had per-            tents: advertising, videos, images and text. With this in
+mission of their parents or tutors to perform the tests.           mind, we intended to compare the easiness of the naviga-
+                                                                   tion tools of the two layouts before the search and also the
+2.2 Apparatus                                                      layout presented in the listing page with the search results.
+                                                                      In the second phase, we proposed search tasks using the
+The activities were performed individually, in a controlled        keyboard and Google’s speech recognition application.
+environment, with a participant observer (which oriented           Here, we aimed at evaluating two distinct modalities of
+the user in the task’s fulfillment). All tasks were displayed      inputting text. These input modalities were selected
+on the computer screen.                                            because the keyboard is the usual input device for per-
+   The following material resources were used: pen and             forming Web search tasks, and the Google’s speech
+paper, HP keyboard and optical computer mouse, head-               recognition application could potentially be an alternate
+phone device with microphone incorporated for audio                option for interaction, as explained in the section about
+input, Google’s speech input search and an HP computer             related work. We intended to evaluate the users’ perfor-
+(AMD Athlon). Note that the user was sitting down at a             mance with these two interaction modalities.
+distance not greater than 1 m from the computer. Web
+search engines were displayed on a 15-inch flat-panel
+                                                                   2.4 Procedures
+monitor, NEC 170 with a resolution of 1024 9 768 pixels.
+It used the Chrome Web browser, and the Google and
+                                                                   Each task was explained before the participant initiated it.
+SAPO Web search engines. Also, an eye tracking device
+                                                                      In the first phase of the study, the users were asked to:
+was used: Tobii Eye-Tracker X50 (Tobii Technology AB,
+                                                                   (1) identify the two search boxes (a key element for
+Danderyd, Sweden and Clear View 2.5.1. software), which
+                                                                   accessing information on the Web) on the two Web search
+uses a CCD camera positioned under the computer screen.
+                                                                   engines—locating the text box in order to insert the key-
+                                                                   word (search field) and locating the clickable button to
+2.3 Experimental design
+                                                                   proceed with the search (search button) and (2) recognize
+                                                                   the results returned by the search in the listing page, also
+The experiment made use of a within-participant repeated-
+                                                                   with the two search engines’ layouts. In the latter, we
+measures design. The case study is allied with usability
+                                                                   observed the easiness of the visual feedback of the listing
+evaluation (user tests). The methods of data collection used
+                                                                   page and the interpretation of the results obtained. In other
+are directly related to the research methods adopted.
+                                                                   words, we examined how the users perceived the search
+   Before starting the tests, we performed document analy-
+                                                                   results obtained when they were presented by image or, on
+sis to study procedures and the experimental design. During
+                                                                   the other hand, by text. Therefore, two tasks were defined:
+the tasks, the direct observation, video recordings and text
+annotations were very important to register all observation        1.   They had to perform two Web Searches using the
+data and oral comments made by the users. Alongside, we                 keywords CÃO (portuguese word for dog) and GATO
+performed user tests to register efficiency, effectiveness and          (portuguese word for cat).
+satisfaction; in order to overcome some communication              2.   They had to search for two recipes using the keywords
+difficulties found in the group, we recorded data related to            PÃO (portuguese word for bread) and BOLO (por-
+eye gaze with an eye tracking device. Note that this last               tuguese word for cake).
+
+
+123
+
+===== PDF PAGE 5 / 12 =====
+Univ Access Inf Soc (2017) 16:581–592                                                                                            585
+
+
+   These tasks were made on both web search engines. In            3.1 Phase 1: usability results regarding Google
+order to ensure randomness, we changed the order of the                and SAPO layouts
+tasks for each user.
+   As such, in the first activity, users performed the two         In this first phase, we assessed the interface by observing
+tasks previously mentioned twice for each search engine:           the interaction between a group of people with intellectual
+two searches on SAPO for each of the two tasks and the             disabilities and the layout. For this, we conducted two tasks
+same on Google. They searched for images of dogs and               with Google and two with SAPO. In general, all users liked
+cats, and recipes for bread and cake. The searches were            and appeared excited in performing these tasks.
+made in the Portuguese language.
+   For these tasks, the following steps were followed: First,      3.1.1 Effectiveness results
+we chose a participant and explained the intended purpose
+(step 1); then, with the two search engines open, they were        Regarding effectiveness, we noted that only one participant
+prompted to enter a specific keyword in the search field           did not conclude the tasks. He/she drop out when per-
+(step 2). Due to participants’ difficulties in reading and         forming the search on SAPO and, because of that, the
+writing (specific to their individual disability), keywords        participant refused to perform the task on Google. This fact
+were written on a paper and the user had to recognize the          led to the decrease in the success rate in concluding the
+characters and replicate them with the keyboard (step 3).          task on both layouts to 95 %.
+Next, the user began the search by clicking in the search             Also, we registered two specific variables to success-
+icon/text field (step 4). During the task, all observations        fully concluding the task: (1) identification of the search
+were recorded. The task ended when the participant clicked         field and (2) identification of the search button.
+on one hyperlink related to the keyword given. Note that: if          On the first one, Google registered a success rate of
+the keyword was dog or cat, they had to click on an image          75 %. On the other hand, only 50 % identified the search
+hyperlink; if it was bread or cake, they had to click on a         field using SAPO. Regarding the second variable, identi-
+text hyperlink.                                                    fication of the search button, Google presented a success
+   In the second phase, the participants had to perform two        rate of 85 % and SAPO 65 %.
+search tasks about fruit. Two tasks were also defined:                Regarding errors, we recorded 125, being the most
+                                                                   observed: wrong character recognition of the keyword and
+1.   Search for fruit using the keyboard.
+                                                                   mistakenly entering the keyword with the keyboard.
+2.   Search for fruit using speech inputs.
+   Since in this phase we are dealing with speech-based            3.1.2 Efficiency results
+interfaces, we felt the concern to limit the number of syl-
+lables of the spoken words, in order to confer more                First, we present the users’ average performance time, in
+coherence and consistency in the search for a specific             seconds, per Web search engine (Fig. 1). Note that in this
+keyword. As such, the words that were chosen had always            phase, the input device used was the keyboard and mouse.
+less than or exactly three syllables.                              Also, it is important to notice that the time measured was
+   The steps to successfully complete the tasks were as            the time taken to find the search field and button, whereas
+follows: First, the user chose a fruit to search (step 1); then,   the time to enter the keyword was not counted.
+with the two search engines opened, we asked the participant
+to enter the fruit’s name in the search field with the keyboard
+and also with the speech application, spelling the word to the
+microphone (step 2). All observations were recorded.
+   The tasks ended when the user clicked on an image
+hyperlink related to the keyword searched.
+   Each participant carried out all tasks as previously
+described.
+
+
+3 Results and discussion
+
+In this section, the results regarding the users’ tests (ef-
+fectiveness, efficiency and satisfaction), the data recorded
+by eye tracking device, direct observation, video and text         Fig. 1 Users’ performance average time (in seconds) per Web search
+annotations are presented and discussed accordingly.               engine
+
+
+                                                                                                                          123
+
+===== PDF PAGE 6 / 12 =====
+586                                                                                       Univ Access Inf Soc (2017) 16:581–592
+
+
+   In Fig. 1, we can see that the users’ performance (re-        faster. This appears to indicate that apprenticeship helps
+sponse time) is better when using the Google Web search          them with the task comprehension and consequently the
+engine.                                                          interaction with this search engine.
+   In fact, we can highlight this improvement when ana-              On the other hand, with SAPO, despite the apprentice-
+lyzing the average time: With Google, users took around          ship experience with the first search, users did not improve
+137 s to finish the task; in contrast, with SAPO, they took      their performance and the task completion time increased,
+213 s. To verify whether this is a significant difference, we    as previously seen. Users seemed to be lost and even
+applied a t student test, obtaining a level of significance      commented that they were unable to find the tools to repeat
+(p = 0.00) \0.05, which means that the users’ respective         the search (search field and button) because they did not
+performances for the two web search engines are signifi-         know where they were located and kept asking: ‘‘Where is
+cantly different. These data, along with observations and        it?’’ They seemed confused with the large flow of infor-
+comments registered in the case study’s logbook, reveal          mation (so many contents) presented by this Web search
+that layout complexity is an important variable to analyze.      engine.
+Users actually performed better with a Web search engine             Also, we highlight some important user behaviors:
+that presents a simpler layout. With Google, they rapidly            One user did not perform one of the tasks on Google
+identified the search field and button. With SAPO, users         (search for a cat image). He started one task on SAPO
+said they did not see where the search boxes were.               (search for a dog image) and because he found the task
+   Even when we analyzed the average time for each               very difficult to complete; he refused to finish the activity
+search, we saw similar results (Fig. 2).                         or carry out the other tasks on Google. It was very hard to
+   Here, we intended to observe whether the user’s average       find the button and search field, so he became frustrated
+performance time would decrease due to the training effect       with the complexity of the task. The user tried the search
+and not the type of keyword.                                     engine once and then formed an (emotional) opinion about
+   In Fig. 2, we note that users took less time to finish the    not only the task, but the overall activity. As a result, the
+tasks on Google, regardless of the order of the performed        user was not satisfied with the interaction and eventually
+searches. Also, on this Web search engine, when users            quit.
+performed a second search, the task completion time                  Secondly, we noticed that users who performed well on
+decreased by 10 %. In relation to SAPO, users took more          SAPO were those who had an improved ability to read and
+time to finish the tasks. Moreover, when analyzing the           write, rather than those who had more experience with
+order in which the searches were performed, we noted that        technology (Internet, computer and input devices), despite
+users took more time to complete the task in the second          also having these abilities. We think this happened
+search: Task completion time increased by 12 %.                  because, despite all the information presented, they did not
+   Likewise, in the observations and comments registered,        feel lost and rapidly managed to find the search field using
+we noticed that users had less difficulty interacting with       the scroll.
+Google in the second search. After they understood and had           Finally, the observations recorded helped us determine
+experienced the requested task, their performance was            that the layout design can influence interaction: Users felt
+                                                                 lost when presented with a lot of information. This also
+                                                                 made them frustrated because they could not identify the
+                                                                 search button or search field, making them quit tasks and
+                                                                 raising fears of trying again in another session.
+                                                                     Next, Fig. 3 shows major difficulties observed.
+                                                                     The difficulties experienced by most users were related
+                                                                 to the identification of the research field, identification of
+                                                                 the search button, clicking on the search field to start
+                                                                 writing the keyword and whether the user identified the
+                                                                 image or text hyperlink requested at the beginning of the
+                                                                 task.
+                                                                     In the first search of task 1 (search for a dog image on
+                                                                 both Web search engines), all users identified the image of
+                                                                 a dog on both Web engines. For the other variables, they
+                                                                 showed more difficulties when using SAPO. Specifically,
+                                                                 five users had difficulties identifying the search field; four
+                                                                 had difficulties identifying the search button; and six had
+Fig. 2 Users’ performance average time (in seconds) per search   difficulties clicking on the search field to start writing.
+
+
+123
+
+===== PDF PAGE 7 / 12 =====
+Univ Access Inf Soc (2017) 16:581–592                                                                                            587
+
+
+                                                                  start writing, and ten users did not find the text hyperlink
+                                                                  without help.
+                                                                     We noticed that when the results were presented in text,
+                                                                  users had much more difficulties in successfully complet-
+                                                                  ing the task. Users presented low literacy levels and many
+                                                                  difficulties in interpreting/decoding text so they were able
+                                                                  to identify images much more quickly and preferred
+                                                                  clicking on them. They paid less attention to text contents.
+                                                                     Another important observation was that after users fin-
+                                                                  ished the task (find and click the image or text hyperlink
+                                                                  requested), they continued searching (even when the task
+                                                                  was terminated). They did this by clicking surrounding
+Fig. 3 Comparison of types of difficulties observed per task
+                                                                  links, which were near to the requested one, i.e., they did
+                                                                  not return to the search field to conduct a new search (this
+   On Google, the major difficulty was in perceiving the          only happened when requested).
+need to click on the search field to start writing the key-
+word (five users). Only three users had problems with the         3.1.3 Eye tracking results
+other two variables.
+   In the second search (search a cat image on both Web           In addition, the results of the images obtained using an eye
+search engines), again more difficulties were recorded on         tracking device are presented. More precisely, images of
+SAPO: Seven users did not identify the search field; three        hotspots (areas where the user focuses attention) and also
+had trouble finding the search button; five did not click on      gazeplots (the visual path taken by users) are presented to
+the search field to start writing; and one person had diffi-      identify whether the users recognized the search field and
+culties clicking on the cat image as requested. On the other      search button. In Fig. 4, the individual hotspots of the
+hand, on Google, all the users were able to find and click on     group with intellectual disability are shown for Google
+the cat image. The major difficulty was clicking on the           (Fig. 4).
+search field to start writing (five users), while only two           The highest degree of this groups’ attention was on the
+users had difficulties in finding the search button, and one      search field and search button on Google’s search engine.
+had trouble finding the search field.                             When such focus did not occur, the degree of attention was
+   In the first search of task 2 (search a bread recipe on        focused very close to the field and button. The focus on the
+both Web search engines), on SAPO, three users did not            surrounding area may have occurred because some indi-
+find the search field and two did not find the search button.     viduals had difficulties looking straight forward (charac-
+Again, two did not click on the search field to start writing,    teristic of the disability), so their focus of attention as
+and ten had difficulties in finding the text hyperlink            marked by the eye tracking devices differed. This is more
+requested at the beginning. On Google, only one user had          precisely shown in the gazeplots presented in Fig. 5.
+trouble finding the search field, but everybody was able to
+identify the search button. Five users still had difficulties
+clicking on the search field to start writing, and six could
+not find the text hyperlink without help. Here, the search
+button was represented by an image (magnifying glass); on
+the other hand, on SAPO, this button was represented by
+text (with the word Search in Portuguese). This could be
+the differentiation factor. They could rapidly identify the
+Google icon search button but took more time to identify
+the SAPO text search button.
+   In the second search of this task (search for a cake recipe
+on both Web search engines) on SAPO, four users did not
+find the search field, one did not find the search button, five
+had difficulties clicking on the search field to start writing,
+and six had difficulties finding the text hyperlink requested
+at the beginning. On Google, all users found the search
+field, and only one user had troubles identifying the search
+button; two had difficulties on clicking the search field to      Fig. 4 Eye tracking images (individual hotspots on Google platform)
+
+
+                                                                                                                         123
+
+===== PDF PAGE 8 / 12 =====
+588                                                                                           Univ Access Inf Soc (2017) 16:581–592
+
+
+
+
+                                                                    Fig. 7 Eye tracking images (individual gazeplots on SAPO platform)
+Fig. 5 Eye tracking images (individual gazeplots on Google
+platform)
+                                                                        On SAPO’s gazeplots, the dispersion focuses on all the
+                                                                    content presented in the background area. Here, we had
+                                                                    five cases where there is no registry above the search field
+                                                                    or button for the vision path; in fact, two gazeplots have no
+                                                                    path at all.
+                                                                        When comparing the results of the two layouts and the
+                                                                    observations/comments registered in the case study’s log-
+                                                                    book, it appears that users memorize the search field’s
+                                                                    design and then look for it on the layout. All the content
+                                                                    displayed on SAPO (news, advertising, search field, but-
+                                                                    tons, hyperlinks) confuses the user—especially videos that
+                                                                    start automatically—consequently frustrating him or her. In
+                                                                    those cases, the users felt lost and asked for help to com-
+                                                                    plete the task at hand.
+                                                                        This seems to indicate that complexity of layout is an
+                                                                    important variable for a good user-Web interaction because
+                                                                    if the layout does not present large amounts of information
+Fig. 6 Eye tracking images (individual hotspots on SAPO platform)   (cleaner design), users with intellectual disability can more
+                                                                    easily find the search button and field (important steps to
+    Here, the visual focus concentration on the search field        perform a Web search).
+and button became more obvious. In most individual                      Another observation mentioned above is that users seem
+gazeplots shown this concentration, almost all users iden-          to clearly identify image contents (as the Google’ icon
+tified the search field and button (gazeplots are registered        search button) and have more trouble identifying SAPO’s
+above the field). As previously mentioned, it is once again         text search button.
+visible, in at least two gazeplots, that the vision path is
+above the Google’ logo, and there is no registry on the             3.2 Phase 2: usability results regarding interaction
+search field or button. This happens because some users                 modalities
+had difficulty looking forward due to their disability. Note
+that all tasks presented were performed successfully,               An additional issue that was one of the major difficulties
+regardless of having a proper vision registry (above search         detected was entering the keyword. Searching by entering
+field and button). Figure 6 presents the SAPO eye tracking          characters is the most usual method of web search. There
+device results.                                                     are hundreds of search engines which use text and key-
+    On SAPO (Fig. 7), a major level of vision focus dis-            words as a search method. However, users encounter dif-
+persion is recorded on the background. This is easy to              ficulties when inserting keywords without help and
+observe in SAPO’s gazeplot results (Fig. 7)                         interacting with the keyboard. Thus, we see the great need
+
+
+
+123
+
+===== PDF PAGE 9 / 12 =====
+Univ Access Inf Soc (2017) 16:581–592                                                                                         589
+
+
+to register these data as well, because if users cannot          based application), we observed that users performed better
+handle the keyboard and insert keywords, the execution of        using the Google speech-based application. The major
+search tasks on the Web can be compromised. So it is             problem observed during the test was the speech recogni-
+important to analyze how users perform their interaction         tion itself. It had nothing to do with users’ disability; rather,
+with the usual input devices (keyboard and mouse) and            it focused on word pronunciation. It is likely that even
+provide an alternate interaction mode to help overcome           users without disabilities could perform this task unsuc-
+possible problems that arise from these difficulties. Even-      cessfully due to poor word pronunciation. We think that if
+tually, in order to help users understand and perform search     this problem could be corrected, users would be able to
+tasks online, they could perhaps be given an optional tool       perform Web search tasks using speech recognition inter-
+for interaction that could provide autonomy.                     faces without help, i.e., autonomously.
+   With this in mind, we decided to make this preliminary           In particular, the difficulties observed in completing
+study to understand whether this interaction mode could          these tasks were: for the keyboard, character recognition
+have potential for this group of users and improve their         and reproducing; for the speech-based application, correct
+performance.                                                     keyword pronunciation.
+   The alternative interaction mode used in this study was a
+speech-based interface. This is a field that is not widely
+explored for this group of users [2]. Google has added a         4 Participants’ behaviors and difficulties in web
+tool in the Chrome browser that consists on the introduc-          interaction: proposed recommendations
+tion of keywords through speech. This feature can combine
+words into various search terms, and the use of bigger           During this study, we observed some users’ behaviors and
+keywords could enlarge the search. The difference between        difficulties caused by the layout design, directly influencing
+this and other speech applications is that it does not require   their interaction. Thus, we felt important to report these
+a training phase for subsequent speech recognition and can       difficulties by presenting them as recommendations to
+be used on any Web site that has a search field. Even            follow as good practice. Also, we compared them with
+though this application does not require a specific cali-        other guidelines from previous studies.
+bration, we chose to use because it is free and publicly             First, we observed that when the search engine layout
+accessible.                                                      presented different contents (as image, video, audio and
+   Regarding the interaction with the keyboard and speech-       text), in various formats (such as news, advertising, search
+based application, we present users’ global performance          fields or merely buttons or hyperlinks), users felt lost and
+time per interaction mode (Fig. 8).                              asked for help to finish the task as the layout presented was
+   In Fig. 8, we note that only five users (25 %) managed        complex and overwhelmed with information. Often they
+to complete the task successfully with the speech-based          comment: ‘‘where is this…?’’ or ‘‘where am I?’’ So, our
+application, while all were able to finish the task using the    first recommendation is that search engines layouts should
+keyboard.                                                        be simple.
+   However, we note that the interaction with the keyboard           The first principle of the WCAG 2.0 (Perceivable) states
+was never made autonomously, as all the users needed help        that ‘‘information and user interface components must be
+in writing the keyword on a paper in order to replicate it       presentable to users in ways they can perceive’’ and makes
+with the keyboard.                                               explicit, in the guideline 1.3, that developers must ‘‘create
+   When we compared user’s successful task results with          content that can be presented in different ways (for
+the two interaction modes (using keyboard and speech-            example, simpler layout) without losing information or
+                                                                 structure.’’ Here, a cleaner layout is also presented as an
+                                                                 option to help users in such a way that they could under-
+                                                                 stand and interact with the digital content.
+                                                                     Similarly, Modesto and Ferreira [19] regarding the
+                                                                 creation and improving of search tools recommend that
+                                                                 developers and designers minimize distractions: The focus
+                                                                 must be in the task to be performed and one activity at a
+                                                                 time [19].
+                                                                     Second, we noticed users memorized the search field
+                                                                 and button’s design and location on the page, and then,
+                                                                 they looked for it on the layout. Again showing that
+Fig. 8 Users’ performance average time per interaction mode      complexity of the layout is an important variable: If the
+(keyborad and voice)                                             layout does not present a lot of information (i.e., has a
+
+
+                                                                                                                       123
+
+===== PDF PAGE 10 / 12 =====
+590                                                                                          Univ Access Inf Soc (2017) 16:581–592
+
+
+simpler design), the search button and field are easier to         good interaction modality for future work, maybe using
+find. This is also visible in the users’ successful results with   other more effective recognition softwares. Thus, the rec-
+Google’s layout. Thus, we support the recommendation:              ommendation proposed here is: Speech recognition for
+Search button and field should appear in a prominent place         search could be an alternative for interaction.
+for easy identification.                                              Indeed, it enables the input of information without the
+   In the work of Friedman and Bryen [10], a list of design        resort to a keyboard or even when a monitor is unavailable,
+recommendations is presented, based on citation fre-               relieving the need for written commands for people with
+quency, for users with cognitive disabilities. Here, we can        disabilities or motor impairments [34]. In their work,
+find the recommendation ‘‘Navigation buttons clear, large          Davies et al. [8] also indicated an addition of a text-to-
+and consistent’’ is frequently cited, i.e., 20 % of the studies    speech technology to the specific browser they presented,
+acknowledge the importance of these buttons and their              aiming to enhance independent use by individuals with
+clear, large and consistent presentation for an easy recog-        mental retardation [8].
+nition [10].
+   Third, users seemed to be confused with contents that
+start automatically, such as advertisements/pop-ups. These
+                                                                   5 Limitations of the study
+kinds of contents should not be presented in the layout (in
+order to make sure that layout is as simple as possible), but
+                                                                   One limitation of the study is that we do not use a control
+if they are included, they should not start automatically.
+                                                                   group (with or without disabilities) to compare usability
+The recommendation presented here is: Multimedia con-
+                                                                   results. Also, we feel that a usability analysis is not enough
+tents/pop-ups should not start automatically.
+                                                                   on its own, and thus, we will proceed with a Fitts’ law
+   Modesto and Ferreira [19] reiterated the importance of
+                                                                   analysis for a comprehensive study of the performance/
+the media only being presented upon user request and also
+                                                                   accuracy regarding different tasks’ levels of difficulty.
+added that these results must be presented in a separate area
+                                                                      Furthermore, we intend to increase the number of par-
+of the page. Friedman and Bryen [10] encountered 10 % of
+                                                                   ticipants and perform more activities relating to elemental
+citation frequency that recommended no time-based events.
+                                                                   tasks, such as selection, insertion and manipulation.
+   Forth, regarding search results, we noted users don’t pay
+                                                                      Concerning the speech-based application, although we
+attention to text, due to low literacy levels and the many
+                                                                   consider an appropriate choice since it was a free and open-
+difficulties in the interpretation/decoding of text. In this
+                                                                   source software, there were some limitations inherent of
+regard, it seems that other kinds of content needs to be
+                                                                   the application: No need for speech calibration stood as an
+presented to increase attention and interest in the task/ac-
+                                                                   obstacle to the reliability of the interaction. In addition, the
+tivity. This occurred when the results were presented with
+                                                                   incorrect pronunciation of the keyword was another limi-
+images. The recommendation here is: Search results should
+                                                                   tation to the successful completion of tasks.
+be presented in images.
+   The importance of images, for users with intellectual
+disabilities is supported in many studies. Friedman and
+Bryen [10] counted 75 % of frequency citing the guideline          6 Conclusions
+that recommends images along with text. Rocha [28]
+embraced the possibility of designing accessible icons,            In this study, we reveal how a group of people with
+fully recognized by users with intellectual disability, and        intellectual disability performs a Web search task using
+developed different studies to support the design model to         two different input modalities. This interaction was asses-
+create icons accessible for this group of people [28].             sed by using two different Web engine search browsers
+   Fifth, along with the recommendation previously                 (Google and SAPO).
+defined and reaffirming the importance of images, we                  After the results obtained, we observed that the Google
+registered that users remembered and preferred the Google          search engine is more easy to use, effective and efficient
+search button (that uses a magnifying glass icon) instead of       for users with intellectual disability than SAPO. Globally,
+the SAPO search button (that uses text). So the recom-             users were faster, made less errors, experienced less diffi-
+mendation proposed is: Use buttons with images instead of          culties and were more satisfied with Google than SAPO.
+text.                                                              For this group of users, regardless of the size of the key-
+   Finally, concerning the speech-based interface, Goo-            word or the order of the search, Google was the search
+gle’s speech application appears to be ineffective because         engine where they presented a better performance.
+of the speech recognition issues (incorrect pronunciation of          Likewise, we concluded with the direct observations and
+keywords). However, other applications may perform bet-            comments registered in the logbooks that layout com-
+ter and avoid these detected flaws. We think this could be a       plexity (assessed by the amount of information displayed
+
+
+123
+
+===== PDF PAGE 11 / 12 =====
+Univ Access Inf Soc (2017) 16:581–592                                                                                                        591
+
+
+on the home page) is an important variable in user inter-                 5. Bohman, P.R.: Functional cognitive disabilities. http://paulboh
+action with Web search engines.                                              man.com/accessibility/cognitive/functional (2007)
+                                                                          6. Carey, C.C., Friedman, M.G., Bryen, D.N.: Use of electronic
+   Concerning the interaction with the input devices, we                     technologies by people with intellectual disabilities. Ment.
+noticed that when using a keyboard, participants were                        Retard. 43(5), 322–333 (2005)
+capable of inputting text. However, this type of input does               7. Dam, A.V.: Post-WIMP user interfaces. Commun. ACM 40(2),
+not give them autonomy, because they needed help in                          63–67 (1997)
+                                                                          8. Davies, D.K., Stock, S.E., Wehmeyer, M.L.: Enhancing inde-
+understanding which keyword to search for: First, the                        pendent internet access for individuals with mental retardation
+keyword was written on a paper so that users could repli-                    through use of a specialized web browser: a pilot study. Educ.
+cate it on the keyboard. Without this step, users could not                  Train. Ment. Retard. Dev. Disabil. 1(36), 107–113 (2001)
+proceed with the task. The Google speech-based applica-                   9. Dewan, S., Ganley, D., Kraemer, K.L.: Across the digital divide:
+                                                                             a cross-country multi-technology analysis of the determinants of
+tion removed this need for interpreting the text but had                     IT penetration. J. Assoc. Inf. Syst. 6(12), 409–432 (2005)
+problems with the actual keyword pronunciation.                          10. Friedman, M., Bryen, D.: Web accessibility design recommen-
+   Once again, we also highlight these users’ satisfaction                   dations for people with cognitive disabilities. Technol. Disabil. 9,
+when interacting with the digital world.                                     205–212 (2007). ISSN 1055-4181/07/$17.00
+                                                                         11. Godinho, F.: Uma nova abordagem para a formação em Engen-
+   It was important to study how a group of people with                      haria de Reabilitação em Portugal, Ph.D. Thesis, University of
+intellectual disabilities perform basic Web search tasks to                  Trás-os-Montes e Alto Douro (2010). http://repositorio.utad.pt/
+endorse recommendations for enhancing accessibility of                       bitstream/10348/572/1/Phd_fafbgodinho.pdf
+digital environments and ultimately provide them with a                  12. Gorniak, P., Roy, D.: Augmenting user interfaces with adaptive
+                                                                             speech commands. In: Proceedings of the 5th international con-
+more autonomous interaction.                                                 ference on Multimodal interfaces—ICMI’03, New York, New
+                                                                             York, USA, p. 176 (2003)
+                                                                         13. Harrysson, B.: Internet Enabling Design for People with Cogni-
+7 Future work                                                                tive Limitations. Lund University, Sweden (2003)
+                                                                         14. Harrysson, B., Svensk, A., Johansson, G.: How people with
+                                                                             developmental disabilities navigate the internet. Br. J. Spec.
+In the near future, we will test other Web search engines in                 Educ. 30(3), 138–142 (2004)
+order to replicate these results and look at other input                 15. Kim, J.: Describing and predicting information-seeking behavior
+devices for user-Web interaction, such as touch in mobile                    on the Web. J. Am. Soc. Inf. Sci. Technol. 60(4), 679–693 (2009)
+                                                                         16. Leroy, G., Xu, J., Chung, W., Eggers, S., Chen, H.: An end user
+devices (tablets and smartphones) and touch screens,                         evaluation of query formulation and results review tools in three
+aiming to assess the usability of these tools. We intend to                  medical meta-search engines. Int. J. Med. Inform. 76, 780–789
+determine whether these can be accessible alternatives. We                   (2007). http://dx.doi.org/10.1016/j.ijmedinf.2006.08.001
+will also study how we can create accessible images/hy-                  17. Lopes, C. T., Ribeiro, C.: Comparative evaluation of web search
+                                                                             engines in health information retrieval. Online Inf. Rev. 35(60),
+perlinks to substitute text hyperlinks. In the end, everything               869–892 (2011). http://dx.doi.org/10.1108/14684521111193175
+possible must be done to give people with intellectual                   18. Malik, S.: A comparative study of two major search engines:
+disabilities autonomy in performing Web search tasks. We                     Google and Yahoo. Orient. J. Comp. Sci. Technol, 1(7) (2014).
+also intend to conduct a more thorough study on the input                    http://computerscijournal.org/?p=706
+                                                                         19. Modesto, D.M., Ferreira, S.B.L.: Guidelines for search features
+modalities (keyboard and speech-based application), and                      development—a comparison between general users and users
+we will also consider other natural interfaces.                              with low reading skills. In: 5th International Conference on
+                                                                             Software Development and Technologies for Enhancing Acces-
+                                                                             sibility and Fighting Info-exclusion, DSAI 2013, vol. 27,
+                                                                             pp. 334–342. Elsevier. Procedia Computer Science (2013)
+                                                                         20. Nakano, T.: Flexible shortcuts. In: Proceeding of the Twenty-
+References                                                                   Sixth Annual CHI Conference Extended Abstracts on Human
+                                                                             Factors in Computing Systems—CHI’08, New York, New York,
+ 1. Alexa: Top 500 global sites http://www.alexa.com/topsites/               USA, p. 2621 (2008)
+    (2010)                                                               21. Nielsen, J.: Noncommand user interfaces. Commun. ACM 36(4),
+ 2. Aylett, M.P., Kristensson, P.O., Whittaker, S., Vazquez-Alvarez,         83–99 (1993)
+    Y.: None of a CHInd: relationship counselling for HCI and            22. Opitz, C.: The effects of implementing web accessibility stan-
+    speech technology. In: Proceeding CHI’14 Extended Abstracts on           dards on the success of secondary adolescents with learning
+    Human Factors in Computing Systems, ACM New York, NY,                    disabilities. Ph.D. Thesis, Arizona State University (2003). http://
+    USA, pp. 749–760, 2014. ISBN: 978-1-4503-2474-8. doi:10.                 worldcat.org/oclc/55135520
+    1145/2559206.2578868. http://dl.acm.org/citation.cfm?id=25592        23. Palanisamy, R.: Evaluation of search engines: a conceptual model
+    06.2578868                                                               and research issues. Int. J. Bus. Manag. Can. Cent. Sci. Educ. 8(6)
+ 3. American Psychological Association (APA): DSM-V-The Diag-                (2013) ISSN 1833-3850 E-ISSN 1833-8119. http://www.ccsenet.
+    nostic and Statistical Manual of Mental Disorders, vol. 5. http://       org/journal/index.php/ijbm/article/view/20708
+    www.dsm5.org/Pages/Default.aspx (2013)                               24. Rangaswamy, A., Giles, C. L., Seres, S.: A strategic perspective
+ 4. Blake, J.: The natural user interface revolution. In: Natural User       on search engines: thought candies for practitioners and
+    Interfaces in .NET, 15th edn., pp. 1–43. Manning Publications            researchers. J. Interact. Mark. (23), 49–60 (2009). http://dx.doi.
+    (2012)                                                                   org/10.1016/j.intmar.2008.10.006
+
+
+                                                                                                                                     123
+
+===== PDF PAGE 12 / 12 =====
+592                                                                                                    Univ Access Inf Soc (2017) 16:581–592
+
+25. Rocha, T.: Acessibilidade e Usabilidade na Internet para Pessoas          Doctoral dissertation, Indiana University (2004). http://mutex.
+    com Deficiência Intelectual. M.Sc. Thesis, University of Trás-os-       gmu.edu:2068/pqdweb?did=828407271&sid=3&Fmt=2&clientId=
+    Montes e Alto Douro (2008)                                                31810&RQT=09&VName=PQD
+26. Rocha, T., Gonçalves, M., Godinho, F., Magalhães, L., Bessa,        30. Small, J., Schallau, P., Brown, K., Ettinger, D., Blanchard, S.,
+    M.: Accessibility and usability in the internet for people with           Krahn, G.: Web accessibility for people with cognitive disabili-
+    intellectual disabilities. In: Proceedings of 2nd International           ties. http://www.resna.org/ProfResources/Publications/Proceed
+    Conference on Software Development for Enhancing Accessi-                 ings/2005/Research/CAC/Small.php (2005)
+    bility and Fighting Info-exclusion. DSAI’2009, Lisboa, pp. 25–29      31. W3C, World Wide Web Consortium—WAI, Web Accessibility
+    (2009)                                                                    Initiative: Web Content Accessibility Guidelines (WCAG) 2.0.
+27. Rocha, T., Bessa, M., Gonçalves, M., Cabral, L., Godinho, F.,            http://www.w3.org/TR/WCAG20/ (2008)
+    Peres, E., Reis, M., Magalhães, L., Chalmers, A.: The recognition    32. Williamson, K., Schauder, D., Stockfield, L., Wright, S., Bow,
+    of web pages’ hyperlinks by people with intellectual disabilities:        A.: The role of the internet for people with disabilities: issues of
+    an evaluation study. J. Appl. Res. Intell. Disabil. 25(6), 542–552        access and equity for public libraries. Aust. Libr. J. 50(2),
+    (2012). doi:10.1111/j.1468-3148.2012.00700.x                              157–174 (2001). doi:10.1080/00049670.2001.1075595
+28. Rocha, T.: Metáfora de Interação para o Acesso à Informação     33. Wong, A.W.K., Chan, C.C.H., Li-Tsang, C.W.P., Lam, C.S.:
+    Digital de uma Forma Autónoma por Pessoas com Deficiência               Competence of people with intellectual disabilities on using
+    Intelectual. Ph.D. Thesis, University of Trás-os-Montes e Alto           human–computer interface. Res. Dev. Disabil. 30, 107–123.
+    Douro (2014)                                                              Elsevier (2009). http://www.sciencedirect.com
+29. Roh, S.Z.: Designing accessible Web-based instruction for all         34. Yankelovich, N., Lai, J.: Designing speech user interfaces. In:
+    learners: perspectives of students with disabilities and Web-based        CHI’99 Extended Abstracts on Human Factors in Computing
+    instructional personnel in higher education. Unpublished                  Systems—CHI’99, New York, New York, USA, p. 124 (1999)
+
+
+
+
+123

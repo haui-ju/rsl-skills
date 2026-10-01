@@ -1,0 +1,1032 @@
+# Received March 29, 2021, accepted April 7, 2021, date of publication April 12, 2021, date of current version April 22, 2021.
+
+> Fuente PDF: `R020-alarcon-2021.pdf` · técnica **locator index** (página + ancla) + chunks Graphify
+
+## Metadata
+- Stem: `R020-alarcon-2021`
+- PDF: `R020-alarcon-2021.pdf`
+- DOI: `10.1109/ACCESS.2021.3072697`
+- Pages: `13`
+- Structured_at: `2026-09-30T16:59:10+00:00`
+- Technique: `pdf-page-locators + heading-chunks`
+
+## Locator index (qué hay y en qué página del PDF)
+
+| Kind | Label | PDF page | MD anchor |
+|------|-------|----------|-----------|
+| abstract | Abstract / blurb | 1 | `#abstract` |
+| section | 58756 VOLUME 9, 2021 | 2 | `#p2-58756-volume-9-2021` |
+| section | 58758 VOLUME 9, 2021 | 4 | `#p4-58758-volume-9-2021` |
+| section | 58760 VOLUME 9, 2021 | 6 | `#p6-58760-volume-9-2021` |
+| section | 58762 VOLUME 9, 2021 | 8 | `#p8-58762-volume-9-2021` |
+| section | 58764 VOLUME 9, 2021 | 10 | `#p10-58764-volume-9-2021` |
+| section | 58766 VOLUME 9, 2021 | 12 | `#p12-58766-volume-9-2021` |
+| concept | R020 | ? | `#concept-r020` |
+| concept | alarcon | ? | `#concept-alarcon` |
+| concept | 2021 | ? | `#concept-2021` |
+| finding | People with intellectual, language and learning disabilities face accessibility barriers w… | 1 | `#finding-people-with-intellectual-language-and-l` |
+| finding | Following accessibility guidelines, complex words can be identified, and easy synonyms and… | 1 | `#finding-following-accessibility-guidelines-comp` |
+| finding | To offer support to these reading aids, a lexical simplification system for Spanish has be… | 1 | `#finding-to-offer-support-to-these-reading-aids` |
+| finding | The system covers the complex word identification (CWI) task and offers replacement candid… | 1 | `#finding-the-system-covers-the-complex-word-ident` |
+| finding | These tasks have followed machine learning techniques and contextual embeddings using Easy… | 1 | `#finding-these-tasks-have-followed-machine-learni` |
+| finding | Additionally, due to the polysemy present in the language, the system provides definitions… | 1 | `#finding-additionally-due-to-the-polysemy-presen` |
+| page | p.1: Received March 29, 2021, accepted April 7, 2021, date of publication April 12, 2021, date  | 1 | `#pdf-p1` |
+| page | p.2: R. Alarcon et al.: Lexical Simplification System to Improve Web Accessibility | 2 | `#pdf-p2` |
+| page | p.3: R. Alarcon et al.: Lexical Simplification System to Improve Web Accessibility | 3 | `#pdf-p3` |
+| page | p.4: R. Alarcon et al.: Lexical Simplification System to Improve Web Accessibility | 4 | `#pdf-p4` |
+| page | p.5: R. Alarcon et al.: Lexical Simplification System to Improve Web Accessibility | 5 | `#pdf-p5` |
+| page | p.6: R. Alarcon et al.: Lexical Simplification System to Improve Web Accessibility | 6 | `#pdf-p6` |
+| page | p.7: R. Alarcon et al.: Lexical Simplification System to Improve Web Accessibility | 7 | `#pdf-p7` |
+| page | p.8: R. Alarcon et al.: Lexical Simplification System to Improve Web Accessibility | 8 | `#pdf-p8` |
+| page | p.9: R. Alarcon et al.: Lexical Simplification System to Improve Web Accessibility | 9 | `#pdf-p9` |
+| page | p.10: R. Alarcon et al.: Lexical Simplification System to Improve Web Accessibility | 10 | `#pdf-p10` |
+| page | p.11: R. Alarcon et al.: Lexical Simplification System to Improve Web Accessibility | 11 | `#pdf-p11` |
+| page | p.12: R. Alarcon et al.: Lexical Simplification System to Improve Web Accessibility | 12 | `#pdf-p12` |
+| page | p.13: R. Alarcon et al.: Lexical Simplification System to Improve Web Accessibility | 13 | `#pdf-p13` |
+
+## Abstract
+<a id="abstract"></a>
+
+People with intellectual, language and learning disabilities face accessibility barriers when reading texts with complex words. Following accessibility guidelines, complex words can be identified, and easy synonyms and definitions can be provided for them as reading aids. To offer support to these reading aids, a lexical simplification system for Spanish has been developed and is presented in this article. The system covers the complex word identification (CWI) task and offers replacement candidates with the substitute generation and selection (SG/SS) task. These tasks have followed machine learning techniques and contextual embeddings using Easy Reading and Plain Language resources, such as dictionaries and corpora. Additionally, due to the polysemy present in the language, the system provides definitions for complex words, which are disambiguated by a rule-based method supported by a state-of-the-art embedding resource. This system is integrated into a web system that provides an easy way to improve the readability and comprehension of Spanish texts. The results obtained are satisfactory; in the CWI task, better results were obtained than with other systems that used the same dataset. The SG/SS task results are comparable to similar works in the English language and provide a solid starting point to improve this task for the Spanish language. Finally, the results of the disambiguation process evaluation were good when evaluated by a linguistic expert. These findings represent an additional advancement in the lexical simplification of texts in Spanish and in a generic domain using easy-to-read resources, among others, to provide systematic support to compliance with accessibility guidelines.
+
+## Keywords
+
+- _(none auto-detected)_
+
+## Concept index (graph hooks + página)
+
+<a id="concept-r020"></a>
+### [PDF p.?] Concept: R020
+- Locator: `R020-alarcon-2021.pdf` · página **?**
+
+<a id="concept-alarcon"></a>
+### [PDF p.?] Concept: alarcon
+- Locator: `R020-alarcon-2021.pdf` · página **?**
+
+<a id="concept-2021"></a>
+### [PDF p.?] Concept: 2021
+- Locator: `R020-alarcon-2021.pdf` · página **?**
+
+
+## Findings index (graph hooks + página)
+
+<a id="finding-people-with-intellectual-language-and-l"></a>
+### [PDF p.1] Finding: People with intellectual, language and learning disabilities face accessibility barriers when reading texts with complex words.
+- Locator: `R020-alarcon-2021.pdf` · página **1**
+
+<a id="finding-following-accessibility-guidelines-comp"></a>
+### [PDF p.1] Finding: Following accessibility guidelines, complex words can be identified, and easy synonyms and definitions can be provided for them as reading aids.
+- Locator: `R020-alarcon-2021.pdf` · página **1**
+
+<a id="finding-to-offer-support-to-these-reading-aids"></a>
+### [PDF p.1] Finding: To offer support to these reading aids, a lexical simplification system for Spanish has been developed and is presented in this article.
+- Locator: `R020-alarcon-2021.pdf` · página **1**
+
+<a id="finding-the-system-covers-the-complex-word-ident"></a>
+### [PDF p.1] Finding: The system covers the complex word identification (CWI) task and offers replacement candidates with the substitute generation and selection (SG/SS) task.
+- Locator: `R020-alarcon-2021.pdf` · página **1**
+
+<a id="finding-these-tasks-have-followed-machine-learni"></a>
+### [PDF p.1] Finding: These tasks have followed machine learning techniques and contextual embeddings using Easy Reading and Plain Language resources, such as dictionaries and corpora.
+- Locator: `R020-alarcon-2021.pdf` · página **1**
+
+<a id="finding-additionally-due-to-the-polysemy-presen"></a>
+### [PDF p.1] Finding: Additionally, due to the polysemy present in the language, the system provides definitions for complex words, which are disambiguated by a rule-based method supported by a state-of-the-art embedding resource.
+- Locator: `R020-alarcon-2021.pdf` · página **1**
+
+
+## Relevance hooks
+### Theme relevance: software engineering and accessibility
+### Theme relevance: cognitive accessibility and neurodiversity
+### Theme relevance: evaluation metrics and WCAG
+
+## Sections (detected in PDF)
+
+<a id="p2-58756-volume-9-2021"></a>
+### [PDF p.2] Section: 58756 VOLUME 9, 2021
+- Locator: `R020-alarcon-2021.pdf` · página **2** · ancla `#p2-58756-volume-9-2021`
+
+<a id="p4-58758-volume-9-2021"></a>
+### [PDF p.4] Section: 58758 VOLUME 9, 2021
+- Locator: `R020-alarcon-2021.pdf` · página **4** · ancla `#p4-58758-volume-9-2021`
+
+<a id="p6-58760-volume-9-2021"></a>
+### [PDF p.6] Section: 58760 VOLUME 9, 2021
+- Locator: `R020-alarcon-2021.pdf` · página **6** · ancla `#p6-58760-volume-9-2021`
+
+<a id="p8-58762-volume-9-2021"></a>
+### [PDF p.8] Section: 58762 VOLUME 9, 2021
+- Locator: `R020-alarcon-2021.pdf` · página **8** · ancla `#p8-58762-volume-9-2021`
+
+<a id="p10-58764-volume-9-2021"></a>
+### [PDF p.10] Section: 58764 VOLUME 9, 2021
+- Locator: `R020-alarcon-2021.pdf` · página **10** · ancla `#p10-58764-volume-9-2021`
+
+<a id="p12-58766-volume-9-2021"></a>
+### [PDF p.12] Section: 58766 VOLUME 9, 2021
+- Locator: `R020-alarcon-2021.pdf` · página **12** · ancla `#p12-58766-volume-9-2021`
+
+
+## Page chunks (texto por página del PDF)
+
+_Cada heading es un nodo Graphify. El label incluye la página para volver al PDF sin releer todo._
+
+<a id="pdf-p1"></a>
+### [PDF p.1] Received March 29, 2021, accepted April 7, 2021, date of publication April 12, 2021, date of current version April 22, 2021.
+- Locator: `R020-alarcon-2021.pdf` · página **1** / 13
+
+Received March 29, 2021, accepted April 7, 2021, date of publication April 12, 2021, date of current version April 22, 2021.
+Digital Object Identifier 10.1109/ACCESS.2021.3072697
+
+
+
+
+Lexical Simplification System
+to Improve Web Accessibility
+RODRIGO ALARCON , LOURDES MORENO , AND PALOMA MARTÍNEZ
+Computer Science and Engineering Department, Universidad Carlos III de Madrid, 28911 Madrid, Spain
+Corresponding authors: Rodrigo Alarcon (ralarcon@inf.uc3m.es), Lourdes Moreno (lmoreno@inf.uc3m.es), and Paloma Martínez
+(pmf@inf.uc3m.es)
+This work was supported in part by the Madrid Government (Comunidad de Madrid-Spain) under the Multiannual Agreement with UC3M
+in the line of Excellence of University Professors under Grant EPUC3M17, in part by the context of the V PRICIT (Regional Programme
+of Research and Technological Innovation), and in part by the Accessible Technologies Award-INDRA Technologies and the Fundación
+Universia (www.tecnologiasaccesibles.com).
+
+
+
+
+  ABSTRACT People with intellectual, language and learning disabilities face accessibility barriers when
+  reading texts with complex words. Following accessibility guidelines, complex words can be identified,
+  and easy synonyms and definitions can be provided for them as reading aids. To offer support to these
+  reading aids, a lexical simplification system for Spanish has been developed and is presented in this article.
+  The system covers the complex word identification (CWI) task and offers replacement candidates with the
+  substitute generation and selection (SG/SS) task. These tasks have followed machine learning techniques
+  and contextual embeddings using Easy Reading and Plain Language resources, such as dictionaries and
+  corpora. Additionally, due to the polysemy present in the language, the system provides definitions for
+  complex words, which are disambiguated by a rule-based method supported by a state-of-the-art embedding
+  resource. This system is integrated into a web system that provides an easy way to improve the readability
+  and comprehension of Spanish texts. The results obtained are satisfactory; in the CWI task, better results
+  were obtained than with other systems that used the same dataset. The SG/SS task results are comparable
+  to similar works in the English language and provide a solid starting point to improve this task for the
+  Spanish language. Finally, the results of the disambiguation process evaluation were good when evaluated
+  by a linguistic expert. These findings represent an additional advancement in the lexical simplification of
+  texts in Spanish and in a generic domain using easy-to-read resources, among others, to provide systematic
+  support to compliance with accessibility guidelines.
+
+
+  INDEX TERMS Accessibility, contextualized word embeddings, lexical simplification, natural language
+  processing, Spanish language, readability.
+
+
+I. INTRODUCTION                                                                                containing large amounts of information; thus, it needs to be
+The readability and understandability of texts containing long                                 simplified [2]. According to the Programme for International
+sentences, unusual words and complex linguistic structures                                     Student Assessment (PISA) report, most adults in Spain
+can result in cognitive accessibility barriers for individuals                                 have difficulties understanding dense texts [3]. In addition,
+with intellectual disabilities. However, the benefits of offering                              1.7% of the population is functionally illiterate, and there are
+simplified text content will be enjoyed by individuals with                                    277,472 people with some type of intellectual disability in
+intellectual and learning disabilities and deaf and deaf-blind                                 Spain.
+individuals, the elderly, the illiterate, and immigrants whose                                    The existing directives provide accessibility guidelines
+native language is different, among others.                                                    regarding how to make content more accessible for individ-
+   According to the OECD survey of adult skills [1], nearly                                    uals with intellectual and learning disabilities [5], [7]–[10].
+19 percent of adults in Europe have poor reading skills. Thus,                                 These include criteria that involve offering resources that pro-
+a significant portion of the population cannot read documents                                  vide text simplification, which is difficult to fulfil. Few tools
+                                                                                               exist that provide systematic support for simplification pro-
+   The associate editor coordinating the review of this manuscript and                         cesses. Usually, the websites that offer simplified versions of
+approving it for publication was Arianna Dulizia           .                                   their main sites are manually created. Manual simplification
+
+                     This work is licensed under a Creative Commons Attribution 4.0 License. For more information, see https://creativecommons.org/licenses/by/4.0/
+VOLUME 9, 2021                                                                                                                                                        58755
+
+<a id="pdf-p2"></a>
+### [PDF p.2] R. Alarcon et al.: Lexical Simplification System to Improve Web Accessibility
+- Locator: `R020-alarcon-2021.pdf` · página **2** / 13
+
+R. Alarcon et al.: Lexical Simplification System to Improve Web Accessibility
+
+
+
+
+of written documents is quite expensive, mostly because           The WCAG includes specific guidelines that help make web
+the information is continually being produced. As part of         content accessible for individuals with intellectual and learn-
+the solution, text simplification methods, which are found        ing disabilities. Another important initiative to be considered
+in the natural language processing (NLP) field, provide sys-      is the ‘‘Cognitive and Learning Disabilities Accessibility
+tematic support to promote compliance with these cogni-           Task Force (W3C-COGA TF)’’ [12]. Another important ini-
+tive accessibility guidelines. This is the motivation behind      tiative is the easy-to-read guidelines. These guidelines have
+this work.                                                        been disseminated thanks to the work of the International
+   After an analysis of language accessibility guidelines, this   Federation of Library Associations and Institutions (IFLA),
+work presents a system to support the lexical simplification      which published the document titled ‘‘Directives for Easy-
+processes applied to text content in the Spanish language to      to-Read Materials’’ [7]. Additionally, Inclusion Europe (For-
+improve its readability and understandability.                    merly the International League of Societies for Persons with
+   This system follows a pipeline; the first step identifies      Mental Handicap (ILSMH)) published the document titled
+complex words following a machine learning approach using         ‘‘Make it Simple: European Guidelines for the Production of
+Easy-to-Read features. As a next step, simpler terms for each     Easy-to-Read information’’ [8]. The standard regarding easy-
+complex word are offered through generation and selection         to-read content in Spanish was considered in this work [11].
+of substitute processes. The generation process uses var-         In addition to the Easy-to-Read initiative, the Plain Language
+ious Spanish language linguistic databases. For substitute        initiative is geared towards the general public [9], [10]. It was
+selection, from a list of synonyms extracted in the previous      created to promote simple language in all electronic govern-
+step, the most suitable synonym is selected according to          mental content and information and provide improved cus-
+its simplicity and the context using word embedding meth-         tomer service to all citizens. Currently, providing accessible
+ods. In addition, to complement the lexical simplification        information in e-administration, e-health and other services
+processes, the system provides definitions for the detected       is a priority in many governments. For this reason, they are
+complex words, and due to the number of polysemous words          developing guides and adapting many of their public commu-
+present in the language, a disambiguation procedure to deter-     nications (plainlanguageeurope.com/en).
+mine the meaning of the words is proposed using a con-               An analysis of these guidelines was performed and is
+textual method supported by a BERT model. The results             shown in Table 1. Although some differences are found
+are satisfactory compared to relative work. The findings are      among these initiatives, certain overlap can be observed.
+promising because (1) we propose a new combination of                Note that using a simple lexicon is an element that is
+features to discern between a complex word and simple word;       repeated in all the guidelines, as shown in Table 1. Individuals
+(2) we offer contextualized, less complex replacements to the     with language impairments often have a reduced vocabulary,
+complex word by using embedding and linguistic resources;         and learning new terms is a slow and challenging process.
+and (3) we provide a new procedure to generate a context-         WCAG 2.1 and COGA documentation have been considered
+aware simpler definition for a target word.                       to provide solutions and comply with this guideline. The
+   This contribution is integrated into the EASIER web sys-       WCAG Success Criterion 3.1.3 (Unusual Words) indicates
+tem, which offers additional aid complements to improve           that a mechanism must be made available to identify specific
+comprehension and readability for the final user.                 definitions of words or phrases used in unusual or restricted
+   The remainder of this paper is organized as follows.           ways, including idioms and jargon. This Success Criterion
+In Section II, we explore the accessibility directives that led   3.1.3 (Unusual Words) is included in Guideline 3.1 (Read-
+us to the objectives of this work. In Section III, we review      able), which recommends making text content readable and
+the work related to the text simplification process. Section IV   understandable. Likewise, this guideline belongs to Principle
+describes the simplification approach. Sections V, VI, VII        3 (Understandable), which states that the user interface’s
+and VIII provide the procedures and evaluate the complex          information and operation must be understandable. As shown
+word identification, substitute generation/selection and word-    in Table 2, Success Criterion 3.1.3 requires that the def-
+sense-disambiguation modules. Section IX includes a discus-       inition of a word be provided when the word is used in
+sion of this work. Section X presents the EASIER system as        an unusual or restricted way on a webpage. To follow the
+a proof of concept. Finally, Section XI offers conclusions and    techniques and provide definitions for unusual words, it is
+suggestions for future work.                                      necessary to differentiate between the following two situa-
+                                                                  tions: if a word has just one meaning within the webpage or if
+II. ACCESSIBILITY REQUIREMENTS                                    different meanings for the same word appear within the same
+Some directives provide guidelines for making text content        webpage.
+more accessible for individuals with intellectual, language,         Furthermore, design pattern 4.4.1 of the COGA documen-
+and learning disabilities, which are introduced below:            tation indicates that common and clear words must be used in
+   The Web Content Accessibility Guidelines (WCAG) [5],           all content. Some techniques add a simple language term and
+which is part of the W3C’s WAI (Web Accessibility                 provide a definition if complex words are used.
+Initiative) and is the benchmark standard followed by                To apply these techniques, one must (1) detect which words
+most regulatory frameworks [6], is one such an initiative.        are unusual or complex; (2) offer simpler synonyms; (3) offer
+
+58756                                                                                                                            VOLUME 9, 2021
+
+<a id="pdf-p3"></a>
+### [PDF p.3] R. Alarcon et al.: Lexical Simplification System to Improve Web Accessibility
+- Locator: `R020-alarcon-2021.pdf` · página **3** / 13
+
+R. Alarcon et al.: Lexical Simplification System to Improve Web Accessibility
+
+
+
+
+TABLE 1. Readability and Understandability Guidelines.                          TABLE 2. Success criterion 3.1.3 techniques (WCAG 2.1) [5].
+
+
+
+
+                                                                                found, such as [13], which provided text simplification for
+                                                                                deaf users by providing syntactic and lexical paraphrasing of
+                                                                                a text to assist in the comprehension of the text’s meaning.
+                                                                                Additionally, there are works focusing on lexical simplifi-
+definitions; and (4) contextualize the meaning of the unusual                   cation for people with autism [14]–[16], aphasia [17], [18],
+word in the text to offer the correct synonym or definition.                    low vision [19] or dyslexia [20], [21], who could have com-
+   The design of our proposal is based on these requirements.                   prehension problems. Finally, Simplext [22] and the works
+To implement (1) and (2), a lexical simplification approach                     introduced in [23], [24] offer automatic text simplification in
+is proposed to identify complex words, and once they are                        Spanish for individuals with intellectual disabilities.
+identified, all synonyms are generated and the simplest syn-
+onym given the context is selected (thus implementing (3)).                     B. NLP APPROACHES TO LEXICAL SIMPLIFICATION
+Moreover, this system not only obtains definitions but also                     In 1996, the first automatic simplification approaches [25]
+includes a disambiguation system to take into account the                       provided a superficial analysis of texts to identify verbs
+context (thus implementing (4)). These steps are described                      and nouns in complex phrases. Among the many ways of
+in Section IV.                                                                  approaching this task, syntactic simplification consists of
+                                                                                identifying grammatical complexities and converting them
+III. RELATED WORK                                                               into much simpler versions [26]. Lexical simplification
+A. NLP AND ACCESSIBILITY                                                        involves substituting words in a given phrase to make it
+NLP is a discipline dedicated to developing technology capa-                    simpler, without modifying its syntactic structure in any way.
+ble of understanding natural language in a way similar to                       Different methods are used to accomplish this task, from
+human beings. One area in which this could be applied is                        supervised machine learning (ML) algorithms to unsuper-
+the development of technology that improves accessibility                       vised ML algorithms or even the recently proposed hybrid
+for individuals with disabilities. An example of this is the                    approaches [27]. Supervised approaches require annotating
+implementation of simplification processes that transform a                     datasets to achieve their objective [28], which leads to a
+text into an equivalent but simpler version for people with                     significant disadvantage when dealing with languages with
+intellectual disabilities.                                                      few annotated corpora for text simplification [22], [29], as is
+   Regarding accessibility, works that focus on simplification                  the case of Spanish. While unsupervised approaches outper-
+geared towards groups of individuals with disabilities were                     form supervised approaches in terms of coverage, they have
+
+VOLUME 9, 2021                                                                                                                                58757
+
+<a id="pdf-p4"></a>
+### [PDF p.4] R. Alarcon et al.: Lexical Simplification System to Improve Web Accessibility
+- Locator: `R020-alarcon-2021.pdf` · página **4** / 13
+
+R. Alarcon et al.: Lexical Simplification System to Improve Web Accessibility
+
+
+
+
+the disadvantage of only performing one-to-one substitutions      the used most often. Some examples of this strategy are Word-
+and cannot deal with phrases. They also tend to change the        Net [42], [43] and the OpenThesaurus database, which helped
+meaning of the sentence and have problems dealing with            the work of [23] by providing synonyms for 21,381 target
+ambiguous words [30]–[32]. However, recently, unsuper-            words in Spanish. While this strategy has the advantage of
+vised approaches have been improved in this regard by allow-      presenting a very sensitive and precise approach, it also has
+ing more detailed context information to be obtained [33].        the disadvantage of not having broad coverage, especially in
+On the other hand, hybrid strategies employ methods from          Spanish.
+both the previous two approaches, such as [34], which uses a         Furthermore, constructing these databases is a time-
+corpus-based approach and a combination of a free lexicon,        consuming task. Automatic generation focuses on overcom-
+decision trees, and context-based rules.                          ing this disadvantage and seeks to gather extracted candidates
+   Among the methodological approaches, the most recently         from less expensive resources by using, for example, regular
+researched ones are data-driven approaches. They can simul-       word definition dictionaries, as in the case of [44], which
+taneously perform multiple simplification transformations         combines this with a part-of-speech (POS) tagger to search
+and learn very specific rewrite patterns and complex rewrit-      for candidates with a similar POS tag pattern to the target
+ing patterns using rule-based approaches, such as rules for       word. Other approaches rely on parallel corpora in which
+splitting and reordering sentences from large datasets [35].      simplified sentences are created by evaluating original sim-
+Specifically, lexical simplification [36], [37] proposes four     plification pairs [45]. A more straightforward approach was
+steps to achieve this goal, as follows: complex word identi-      presented by [46], where they initially annotated a paraphrase
+fication (CWI), generation of substitutes, selection of substi-   dataset to train a model to classify simplified paraphrases,
+tutes and substitute ranking. This approach is followed in this   resulting in the simple multilingual Paraphrase Database
+work to detect complex words and offer simpler synonyms,          (PPDB). This database contains over a billion paraphrases.
+but with the additional contribution of using Easy Reading        Despite the scarcity of resources available that provide syn-
+and some state-of-the-art resources for text classification and   onyms for Spanish, we followed a strategy that combines
+definition search tasks, as described in Section IV.              both approaches, i.e., querying the linguistic database and
+   CWI aims to select the candidates to be simplified,            automatic generation. Subsequently, we used text cleaning
+that is, to detect which words are complex in a given             techniques to obtain a more efficient approach, as shown in
+text. ML approaches have been shown to surpass other              Section VI.
+strategies. Shardlow [38] compared binary support vector             In the third step, in which a substitute is selected from the
+machine (SVM), threshold-based, and ‘‘Simplify Every-             set of synonyms extracted from the previous step, the most
+thing’’ approaches, where in the latter, it is assumed that all   suitable synonym is chosen according to its simplicity and the
+words in a sentence can be simplified. The results demon-         context. In this stage, the selected synonym should preserve
+strated that the SVM approach outperforms the others in           the original meaning of the sentence, as well as provide a
+terms of precision. Recently, ML approaches have been used        correct syntactic structure. Several strategies have been pro-
+quite frequently in this task. In the BEA workshop [39],          posed in recent years, starting with the explicit sense labelling
+on the CWI task for uni/multiword phrase classification, most     strategy, where the selection of a substitute is posed as a word
+participant teams preferred ML approaches for their systems.      sense disambiguation (WSD) problem [47]. However, this
+For example, [40] presented three approaches for CWI, one         strategy has the disadvantage of requiring manually created
+using the traditional classification algorithms of ML based       sense/synonym databases that are expensive to produce. In an
+on lexical features (word length, number of syllables, and        attempt to overcome this issue, the implicit sense labelling
+others) and N-gram features (probabilities of n-gram). Other      strategy was created by automating the learning of complex
+works outside workshops have also been carried out, such          word meaning classes instead of using databases [48].
+as [41], which used the task dataset to train a convolutional        Moreover, in languages where WSD resources are sparse
+neural network (CNN) with word embeddings and engineered          or unavailable, POS strategies were proposed, as in [49],
+features. Achieving an F1-score of 0.79, this approach out-       where the words are filtered adhering to a specific set of
+performed the workshop participants’ results. In this research    rules, including among others, the POS tag of the candi-
+work, we focused on finding a new combination of features         date. This is done to ensure that the meaning of the original
+of various types to outperform other systems in representing      word is maintained. Unfortunately, this approach showed
+a word in the dataset of the described task, as supported by a    poor results when dealing with highly ambiguous words.
+linear SVM (see the results in Section V).                        Therefore, to address these problems, recent works incorpo-
+   In relation to substitute generation, this second step         rate similarity metrics in the selectors. In [50], the authors
+involves producing substitute candidates for the com-             selected the final synonym using the cosine distance in a
+plex words detected. The previous works followed two              word embedding model. Given a word to be simplified,
+strategies, i.e., linguistic database querying and automatic      the word with the closest vector based on cosine similarity
+generation [36]. The former, relying on linguistic databases      was chosen. In this work, the latter approach has been selected
+manually constructed by professionals in which a target word      and optimized to evaluate the similarity between the target
+has a number of synonyms or related words attached to it, was     word and the context in which it is found in the sentence
+
+58758                                                                                                                            VOLUME 9, 2021
+
+<a id="pdf-p5"></a>
+### [PDF p.5] R. Alarcon et al.: Lexical Simplification System to Improve Web Accessibility
+- Locator: `R020-alarcon-2021.pdf` · página **5** / 13
+
+R. Alarcon et al.: Lexical Simplification System to Improve Web Accessibility
+
+
+
+
+with Word2vec and BERT models. Subsequently, to refine
+these results, combinations of different generators and the
+best selector are evaluated. These experiments are detailed
+in Section VII.
+    As observed in the substitute selection step, WSD
+is extremely useful when dealing with word ambiguity.
+As new words continue to be added to our language,
+this task becomes increasingly complex. Furthermore, as it
+is influenced by the domain in which the knowledge is
+created, producing resources to support knowledge-based
+WSD [51] is extremely costly. Considering this disadvan-
+tage, ML approaches have proven to be good solutions
+through the use of predictive strategies. Supervised [52],
+unsupervised [53], and semisupervised [54] approaches have
+been used in the research. However, others have approached
+this problem from another point of view, such is the case
+of Google, which uses its BERT language representation
+model (bidirectional encoder representations from trans-                        FIGURE 1. EASIER system description.
+formers) [55] to solve different NLP tasks by fine-tuning
+their pretrained models. A research project based on this
+                                                                                   Each module, along with its evaluation, is described in the
+approach [56] consisted of fine-tuning a BERT model for
+                                                                                following sections.
+WSD using WordPiece (multilingual text tokenizer) embed-
+dings as part of the entries. Good results were obtained,
+                                                                                V. COMPLEX WORD IDENTIFICATION MODULE
+outperforming the results of current approaches with regard
+to their F1-scores. In this work, to meet the accessibility                     The CWI module follows an ML approach that requires
+guidelines, a module that can provide definitions for com-                      datasets with words labelled as either complex or simple to
+plex words was needed. However, the problem regarding                           train and validate our algorithm. These datasets are described
+the polysemy present in the Spanish language quickly arose.                     as follows:
+While BERT has been shown to disambiguate textual content
+by having more context information than other approaches,                       A. TRAINING DATASET
+it alone cannot determine which dictionary definition pertains                  As in our previous work [57], to train/test our classifier,
+to a specific word. Thus, we take a multilingual BERT model                     we use the datasets from the shared task of multilingual
+as a starting point and then create a process for solving word                  CWI from the BEA Workshop 2018, which can be found at
+disambiguation when searching for a definition (detailed in                     sites.google.com/view/cwisharedtask2018. This dataset pro-
+Section VIII).                                                                  vides a list of words and their corresponding classification
+                                                                                (1 for complex or 0 for simple) and additional useful infor-
+IV. LEXICAL SIMPLIFICATION SYSTEM                                               mation that can assist in the classification tasks.
+This section presents the EASIER system, which provides                            The training dataset contains a total of 13,747 instances,
+systematic support for compliance with the accessibility                        of which 40% represent complex words, and the test dataset
+guidelines described in Section II. This support is offered by                  contains a total of 2,233 instances, of which 41% represent
+implementing a lexical simplification system that identifies                    complex words. A more in-depth description of this task and
+complex words and proposes synonyms and definitions that                        dataset can be found in the workshop report [58].
+provide the best fit while taking into account the context using                   Each instance contains a target uniword/multiword that
+NLP approaches.                                                                 is selected by annotators. Moreover, each instance is repre-
+   Figure 1 shows the modular system architecture, indi-                        sented by 11 columns, which provide a range of information.
+cating the NLP resources used in each module. The sys-                          The dataset contains binary information (labelling the target
+tem follows a process based on a Lexical Simplification                         words in context as complex or simple) and probabilistic
+Pipeline according to the approach [36] previously intro-                       (assign the probability of target words in context being com-
+duced. The process starts by identifying unusual words (com-                    plex) subtasks. For the development of this system, we focus
+plex word identification module). The next step is to offer                     on the binary classification subtask and use the following
+simpler terms (generation/selection of substitutes). Finally,                   information:
+to make the content more understandable, as the accessibility                      • The first column shows the ID of the sentence.
+guidelines suggest that the definition of an unusual word                          • The second column shows the actual sentence in which
+should be provided and since many words in Spanish are                                a complex phrase annotation exists.
+polysemic, a word sense disambiguation module has been                             • The third column shows the initial char offset of the
+created.                                                                              target word in the sentence.
+
+VOLUME 9, 2021                                                                                                                          58759
+
+<a id="pdf-p6"></a>
+### [PDF p.6] R. Alarcon et al.: Lexical Simplification System to Improve Web Accessibility
+- Locator: `R020-alarcon-2021.pdf` · página **6** / 13
+
+R. Alarcon et al.: Lexical Simplification System to Improve Web Accessibility
+
+
+
+
+  •  The fourth column shows the end Char offset of the                  an E2R dictionary. For each word, if a target word
+     target word in the sentence.                                        exists in the E2R dictionary, it is classified as 0; other-
+   • The fifth column shows the target word.                             wise, it is designated as 1. The dictionary is fed from
+   • The sixth and seventh columns show the number of                    a range of sources that provide E2R literature devel-
+     native annotators and the number of nonnative annota-               oped by experts. Subsequently, this text is cleaned to
+     tors who examined the sentence.                                     preserve only the content words (noun, verbs, adjectives,
+   • The eighth and ninth columns show the number of native              adverbs). Presently, this dictionary contains 13,400 sim-
+     annotators and the number of nonnative annotators who               ple words.
+     marked the target word as difficult.
+   • The Tenth Column shows the gold-standard label for the        C. EVALUATION
+     binary task (0: simple and 1: complex).                       To validate our algorithm, we use the test dataset described
+   • The Eleventh Column shows the gold-standard label for         in Section A. A different choice was made with regard to the
+     the probabilistic task.                                       SVM kernel in the CWI stage. In our previous work [57],
+We do not consider the information in some columns (the            we used the radial basis function (RBF) kernel. However, for
+sixth, seventh, eighth, ninth and eleventh columns) because        this work, a linear kernel was used instead, which is much
+the information in these columns is intended for use in the        faster [60] and has the additional advantage that SVM has
+probabilistic task.                                                shown good performance in classifying sparse instances [61].
+                                                                   Concerning the typical metrics for this task, we use precision,
+B. PROPOSED FEATURES                                               recall, accuracy and the F1-score.
+With this dataset and for the purposes of training the algo-          • Precision: the proportion of correct positive predictions.
+rithm, each word (instance) must be represented as a set of           • Recall: the proportion of actual positives correctly
+features that help to distinguish between complex and simple            identified.
+words. As a first step in the evaluation and to find the best         • Accuracy: the proportion of correct predictions to the
+possible combination of features for this task, an analysis was         total number of input samples.
+performed with several features available for the Spanish lan-        • F1-Score: the harmonic average between precision and
+guage, which are described in the following section. Below,             recall.
+we describe the best proposed combination of features in           These metrics will help us determine if the classifier can
+this work:                                                         avoid making unnecessary replacements of simple words and,
+   • Length feature: word length.                                  therefore, make the sentence as simple as possible.
+   • Boolean feature: if a word is composed of capital                Table 3 shows the results obtained regarding the Train
+     letters.                                                      and Train/Developer datasets, which were validated with
+   • Word embedding (Word2vec) feature: for each word,             the test dataset. The results in both cases outperformed the
+     we extract vectors from a Word2vec model trained on           results obtained by other systems from the abovementioned
+     The Spanish Billion Words Corpus [59].                        workshop [57].
+   • Word embedding (BERT) feature - BERT model vec-
+                                                                   TABLE 3. CWI results in test dataset.
+     tors: to obtain these vectors, we use a multilingual, pre-
+     trained BERT model released by Google (www.github.
+     com/shehzaadzd/pytorch-pretrained-BERT). To import
+     this model, we use the PyTorch interface for BERT
+     by Hugging Face (https://github.com/huggingface/
+     transformers). The next step involves fine tuning the            Additionally, to complement the previous information,
+     model specifically for our classification task, which         Table 4 shows the scores of some combinations of features,
+     results in a four-dimensional object for each sentence.       determining which features are more discriminatory. These
+     This includes the layer number (12 layers), the batch         features can be grouped into length features (word length,
+     number (1 sentence), the number of tokens and the fea-        sentence length and number of syllables), probability fea-
+     ture number (768). To create our word vectors, we com-        tures (with window lengths of 1, 2 and 3), Boolean features
+     bine certain layer vectors by performing a concatenation      (word morphology), embedding features (Sense2vec, Fast-
+     of the model’s last four layers. For this classification,     text, Word2vec, BERT) and the E2R feature. One of the
+     we select a certain number of dimensions of the model         best scores is reached with the help of the embedding model
+     (480). These dimensions are selected because they have        vectors. Using Word2Vec and the BERT models, an F1-score
+     shown better results in our tests, and it is worth mention-   of 0.752 is obtained. Furthermore, when evaluating the
+     ing that, depending on the task, this strategy could have     F1-scores independently for each feature, the Word2Vec fea-
+     different results.                                            ture yields a score of 0.70, which proves to be a valuable
+   • E2R feature: as an added value to other related work,         resource for this task. The BERT feature shows an F1-score of
+     we use resources from the domain of easy-to-read              0.727, which is the best score achieved among all independent
+     (E2R). We propose a new feature with the creation of          features.
+
+58760                                                                                                                             VOLUME 9, 2021
+
+<a id="pdf-p7"></a>
+### [PDF p.7] R. Alarcon et al.: Lexical Simplification System to Improve Web Accessibility
+- Locator: `R020-alarcon-2021.pdf` · página **7** / 13
+
+R. Alarcon et al.: Lexical Simplification System to Improve Web Accessibility
+
+
+
+
+TABLE 4. CWI results of feature combinations, where WL: Word Length, SN: Syllable number SL: Sentence Length, P: Probability, E: E2R, F: Fasttext, W2V:
+Word2vec, S2V: Sense2Vec, and BT: BERT.
+
+
+
+
+   The discarded features resulted in a lower score. Some                       TABLE 5. F-1 scores for the CWI task from the BEA Workshop 2018.
+of these were dropped due to several reasons, one of the
+most common being related to the available vocabulary of
+the feature, for example, in the probability feature, which
+independently scored 0.69. In many cases, the target word
+was not found in the resource vocabulary, which resulted
+in a vector full of null values. Another case was among
+the embedding features. First, it was believed that the com-
+bination of different embeddings would result in a higher
+score; however, this was not the case. We believe that these
+negative results occur because the models were created
+                                                                                subsequently trained on a random forest classifier, as well as a
+with different resources in the case of Sense2vec,1 Fast-
+                                                                                deep learning architecture with word/char embeddings, word
+text2 or BERT,3 and consequently, each model presented
+                                                                                length and frequency counts named NLP-CIC [63].
+different vocabularies and vectors, confusing the classifier.
+Further information regarding our evaluation can be found at
+                                                                                VI. SUBSTITUTE GENERATION MODULE
+github.com/ralarcong/EASIER_EVALUATIONS.
+                                                                                The substitute generation module generates substitution can-
+   In addition, to evaluate our results compared to those
+                                                                                didates for complex words, considering all the contexts in
+obtained by other systems, Table 5 shows a comparison
+                                                                                which they may appear.
+between our system and the seven best results from the
+BEA Workshop for the Spanish CWI task. With the training
+dataset, our system outperforms the other systems, obtain-                      A. PROCEDURE
+ing a score of 0.792. Our system is ranked directly above                       We test the performances of different substitute generation
+TMU [62]. This system is based on the frequency of the                          strategies by using the resources mentioned above and apply-
+target word in a Wikipedia Corpus and a learner corpus                          ing rules to search for a better result. In this step, we extract
+                                                                                substitutes for a target word from a variety of linguistic
+  1 https://github.com/explosion/sense2vec                                      resources. Table 6 shows the resources used by the generator
+  2 https://github.com/facebookresearch/fastText                                and the selector components.
+  3 https://github.com/shehzaadzd/pytorch-pretrained-BERT                          The generators tested are as follows:
+
+VOLUME 9, 2021                                                                                                                                     58761
+
+<a id="pdf-p8"></a>
+### [PDF p.8] R. Alarcon et al.: Lexical Simplification System to Improve Web Accessibility
+- Locator: `R020-alarcon-2021.pdf` · página **8** / 13
+
+R. Alarcon et al.: Lexical Simplification System to Improve Web Accessibility
+
+
+
+
+TABLE 6. Resources for substitute generation/substitute selection.      •  Recall: the proportion of gold-standard substitutions
+                                                                           that are among the generated substitutions.
+                                                                        • F-Score: the harmonic average between precision and
+                                                                           recall.
+                                                                        Table 7 includes the results obtained (see github.com/
+                                                                     ralarcong/EASIER_EVALUATIONS). This step aims to
+                                                                     achieve the highest coverage possible in the gold standard.
+                                                                     Combining Thesaurus, Babelnet, and the PPDB resources
+                                                                     seems to have the best performance when attempting to
+                                                                     achieve this goal by reaching the highest potential and recall,
+                                                                     which are 0.898 and 0.597, respectively. However, this strat-
+   • Thesaurus database (named 1): synonym search for the            egy results in a low precision rate because of the higher
+     target word.                                                    number of false positives.
+  • Thesaurus database (2): search for synonyms for the                 To offset this, it is worth mentioning that the cleaning tech-
+     target word and its lemma.                                      niques used in (9) and (10) had minimal impacts on the poten-
+  • Babelnet database (3): search for synonyms for the target        tial and recall but increased the precision score. By analysing
+     word.                                                           this increase, it seems that, in some cases, the resources are
+  • Babelnet database (4): search for synonyms for target            outputting the target word in a different grammatical form
+     word and its lemma.                                             and, consequently, providing false positives when evaluated
+  • PPDB (5): search for replacements for the target word.           with the gold standard.
+  • PPDB (6): search for replacements for target word and
+     its lemma.                                                      TABLE 7. Substitute generation results.
+  • Babelnet + Thesaurus (7): concatenate the extracted
+     values from (2) and (4).
+  • Babelnet + Thesaurus + PPDB (8): concatenate the
+     extracted values from (2), (4) and (6).
+  Additionally, we evaluate the performances of the highest-
+ranked combinations by performing the cleaning techniques
+described below:
+   • Babelnet + Thesaurus (9): in addition to the procedure
+     described in (7), we extract the target word’s lemma and
+     stem. Subsequently, we delete the candidate words that
+     contain the stem or match the extracted lemma.                     The module demonstrated acceptable results by obtaining
+   • Babelnet + Thesaurus + PPDB (10): in addition to                a potentially high rate and satisfactory recall rate, thus achiev-
+     the procedure described in (8), we extract the target           ing this stage’s main objective, which was to obtain possible
+     word’s lemma and stem. Subsequently, we delete candi-           replacements for a target word in all possible contexts.
+     date words that contain the stem or match the extracted
+     lemma.                                                          VII. SUBSTITUTE SELECTION MODULE
+                                                                     The substitute selection stage takes the list of synonyms
+B. EVALUATION                                                        extracted from the previous step and selects the most suitable
+A portion of the EASIER dataset, created within this research        synonym according to its simplicity and the context.
+framework, is used as the gold standard (further informa-
+tion can be found at github.com/LURMORENO/EASIER_                    A. PROCEDURE
+CORPUS). This portion4 comprises 500 instances, each                 As the core resource in this step, we use a word embed-
+containing a sentence, a target complex word and three               ding model, where words are represented as numerical vec-
+context-aware substitutions suggested by an expert linguist.         tors in low dimensional space, supported by a word2vec
+The evaluation metrics used are those found in the work of           similarity function, which allows us to calculate the cosine
+Paetzold [35], which are as follows:                                 distance between word vectors. To obtain these similari-
+   • Potential: the proportion of instances for which at least       ties, we employ a pretrained Spanish Billion Words Corpus
+     one of the candidates generated is contained within the         Word2vec embedding model. The selectors are as follows:
+     gold standard.                                                     • No selections (named 1): selects all candidates.
+   • Precision: the proportion of generated substitutions that          • Any Window (2): obtains three similarity values (candi-
+     are contained within the gold standard.                               date and target word, candidate and target word’s context
+                                                                           words in the sentence (previous and subsequent words)).
+  4 http://dx.doi.org/10.17632/ywhmbnzvmx.2                                Next, these values are added and stored. Finally, this
+
+58762                                                                                                                               VOLUME 9, 2021
+
+<a id="pdf-p9"></a>
+### [PDF p.9] R. Alarcon et al.: Lexical Simplification System to Improve Web Accessibility
+- Locator: `R020-alarcon-2021.pdf` · página **9** / 13
+
+R. Alarcon et al.: Lexical Simplification System to Improve Web Accessibility
+
+
+
+
+     process is repeated for every candidate, and the selector                  TABLE 9. Substitute selection results – different generators.
+     picks the three candidates with the highest values.
+   • Lexical Window (3): Similar to (2), but instead of
+     selecting the first context word, we select the first word
+     with lexical content (previous and subsequent words).
+   • CWI Model (4): Before performing the selection,
+     we filter the candidate list, excluding the complex words
+     predicted by the CWI model observed in Section V.
+     Then, the same process described in (3) is performed.
+
+B. EVALUATION
+We use the same dataset and metrics as in Section VI (see
+github.com/ralarcong/EASIER_EVALUATIONS). Since the                             TABLE 10. Examples of substitute selection output.
+selector needs candidates, we use the generators with the
+best potential ranking from the previous step (8). Thus,
+we can easily determine the selector’s effectiveness based on
+which selector results in the largest number of potential right
+answers.
+   Table 8 illustrates the results. As expected, not performing
+any selection (1) yields the highest potential and recall scores.
+On the other hand, by extracting the first words in the context
+                                                                                TABLE 11. English substitute generation/selection system results.
+of the candidate, (2) shows an even lower score in every
+metric. However, by extracting the first words in the context
+with lexical content (3), we obtained better precision and
+F1 scores.
+
+TABLE 8. Substitute selection results – GENERATOR (8).
+
+
+
+
+                                                                                the selector, achieving greater precision than the generator.
+                                                                                This is an important metric when selecting a correct replace-
+                                                                                ment for a target word. Additionally, when analysing one of
+   Additionally, to improve the selector, we evaluate a com-                    the best studies that reviewed the related work in the English
+bination of the highest precision ranked selector (Lexical                      language [36] and despite the difference in the number of
+Window (3)) and the previous generators described in Table 7                    resources for the language, it can be observed that the results
+(shown in Table 9). Whereas our last generator and selector                     are comparable to those of this work. Table 11 shows the
+combination presented a better result, we found that helping                    best results for English reported in [36]. For the generators,
+the selector by filtering certain words presented even greater                  the best results were obtained with the strategy of combining
+results (9).                                                                    the different resources available for the language, and poten-
+   Furthermore, to test one of the functionalities that the                     tial and recall values of 0.996 and 0.358, respectively, were
+BERT model has to offer (11), we evaluate the prediction                        obtained. On the other hand, for the selectors, a replicated ver-
+function to retrieve possible substitutions for a target word.                  sion of De Belder’s approach [48] obtained the best accuracy,
+The results showed very low performance since the BERT                          which was 0.257; however, Paetzold’s approach, which used
+model suggested generic words, following the main objective                     the semantic similarity of the word embeddings, provided an
+of substitute generation but working against the main objec-                    overall higher F-1 score of 0.245.
+tive of substitute selection.
+   Table 10 shows an example for the word ‘‘Prevenir’’ (‘‘to                    VIII. WORD-SENSE DESAMBIGUATION (WSD) MODULE
+prevent’’). These are the results when no filter is used; the                   This section introduces the WSD module to select the correct
+candidate list suggests the target word in different grammati-                  definition for a specific word [64]. The core module uses
+cal forms as candidates. Since our word2vec model evaluates                     a multilingual, pretrained BERT model released by Google,
+similarity, the model is inclined to choose words with similar                  as described in the CWI module in Section V.
+semantics. Thus, we can assist the model in processing dif-
+ferent candidates for the target word by filtering these words.                 A. PROCEDURE
+   The module obtained acceptable results by perform-                           Figure 2 shows how the WSD procedure works where the
+ing a combination of strategies with the generator and                          target word considered is ‘‘exemplify’’. The following two
+
+VOLUME 9, 2021                                                                                                                                      58763
+
+<a id="pdf-p10"></a>
+### [PDF p.10] R. Alarcon et al.: Lexical Simplification System to Improve Web Accessibility
+- Locator: `R020-alarcon-2021.pdf` · página **10** / 13
+
+R. Alarcon et al.: Lexical Simplification System to Improve Web Accessibility
+
+
+
+
+dictionaries are used: the ‘‘Real Academia de la Lengua             TABLE 12. WSD module results.
+Española’’ Dictionary (RAE) (www.rae.es) and the
+‘‘Diccionario Facil’’, with the latter being a dictionary of Easy
+Reading definitions created by the ‘‘Plena Inclusión Madrid’’
+(www.diccionariofacil.org) association’s experts and users
+with cognitive disabilities.
+                                                                    were processed, of which 72.06% were rated as correct. These
+                                                                    results demonstrate that our approach performs well when
+                                                                    dealing with polysemic words but faces some issues on recall.
+
+                                                                    IX. DISCUSSION
+                                                                    We present and discuss the results obtained by each of
+                                                                    the evaluation procedures separately in the following three
+                                                                    subsections.
+
+                                                                    A. CWI
+                                                                    The CWI module results reveal that the use of embedding
+                                                                    models benefits the classifier in its decisions, obtaining sat-
+                                                                    isfactory F-1 scores when evaluated independently (e.g.,
+                                                                    Fasttext: 0.569, Word2vec: 0.70, Sense2vec: 0.783, BERT:
+                                                                    0.727). The latter embedding is useful for semantic searches
+                                                                    and information retrieval. The main difference between this
+FIGURE 2. WSD procedure.                                            type of embedding and others, such as Word2Vec or Fast-
+                                                                    Text, is that BERT produces word representations that are
+   The system creates a list of definitions for the target word     dynamically informed by the words around them (contextual-
+extracted from the RAE and Easy Dictionary. With the help           ized embeddings). In contrast, with word2vec, the words are
+of the model in the system, the word is masked in the sentence      represented as unique indexed values. In the common word
+to which it belongs, and then the model predicts which words        embedding models, each word is represented with one single
+can be substituted for the masked word. This results in a list of   vector, and polysemic words are ignored. In a sense, each
+words that share a common meaning, thus disambiguating the          word could have several vectors, one for each of its possible
+target word. With the help of Spacy (www.spacy.io/), these          meanings. Therefore, these models allow us to deal with
+words are lemmatized to enrich the list. The words in the           the task of word disambiguation when identifying complex
+sentence with lexical content are then extracted and added to       words.
+the list.                                                              Regarding the other features, we found that determining
+   Since the first list created by our system contains words        the word length was sufficient to represent the word in
+with similar semantics, these two lists are compared, and           terms of length by independently obtaining a score of 0.70.
+the coincidences are counted. The hypothesis followed is            In features such as probability or E2R, the size of the dic-
+that the definition provided by the second list, which has          tionary was significant and represented its first disadvantage
+more coincidences of words than the first list, is the correct      by giving null values when a word was not found. However,
+definition associated with the target word and, consequently,       the E2R feature was beneficial because despite its limited
+is chosen by the WSD system (called the BERT approach).             size, when combined with features such as length and embed-
+If no coincidences are found, the system selects the first          ding, the results showed a significant improvement, with
+definition on the list (called the first-in approach).              a final F1 score of 0.794. This result surpasses the other
+                                                                    systems’ scores by giving more detailed word information at
+B. EVALUATION                                                       the contextual, semantic and morphological levels.
+The WSD module evaluation was performed by an expert
+linguist specializing in Easy Reading and Plain Language            B. SG/SS
+(see github.com/ralarcong/EASIER_EVALUATIONS). The                  By definition, in the generation of substitutes stage, one
+expert received 525 sentences associated with the target word       has to look for substitutes for a word in any context that
+and the definition selected by the system. The expert verified      may appear. However, we faced a disadvantage regarding
+whether the definition selected by the system was correct, tak-     the scarcity of resources in the Spanish language. Therefore,
+ing the context of the word in the sentence into consideration.     we opted for the fusion of different resources available for
+   As shown in Table 12, the BERT model approach was                this language and obtained a recall of 0.597 and a high poten-
+able to process 117 instances, with 64.95% rated as cor-            tial of 0.898. When evaluating the resources independently,
+rect. By applying the ‘‘First In’’ strategy, 408 instances          Thesaurus obtained a recall of 0.248, Babelnet achieved a
+
+58764                                                                                                                              VOLUME 9, 2021
+
+<a id="pdf-p11"></a>
+### [PDF p.11] R. Alarcon et al.: Lexical Simplification System to Improve Web Accessibility
+- Locator: `R020-alarcon-2021.pdf` · página **11** / 13
+
+R. Alarcon et al.: Lexical Simplification System to Improve Web Accessibility
+
+
+
+
+score of 0.426 and PPDB obtained a score of 0.485. These
+results make sense because Thesaurus is a smaller resource,
+and Babelnet, despite having more coverage, offers fewer
+substitutes per word than PPDB.
+   On the other hand, for the substitute selection stage, pre-
+cision is more important than recall when offering the most
+suitable replacements for a given context. While making no
+selection preserved the recall of the generator, it showed a
+very low precision (0.054). Then, when using Word2vec to
+evaluate the word similarity, a better score of 0.172 was
+obtained. However, there were still points to improve because
+the generator in some cases offered replacements that were
+the same target word in a different grammatical form. Con-
+sequently, the Word2vec model chose these words because                         FIGURE 3. Screenshot of the EASIER system user interface.
+of their greater similarity to the original word. To mitigate
+this disadvantage, text cleaning techniques were used to
+remove these from the generator, resulting in a final precision
+of 0.226.
+   In addition, when we compare our generators and selectors
+to the previous work performed for the English language,
+we achieve comparable results, which in general, suggests
+that there is still much room for improvement for these tasks,
+as this work is an important contribution for the Spanish
+language.
+
+C. WSD
+Searching for a definition of a complex word is not an easy
+task due to the great ambiguity present in the language. BERT
+was used to deal with the disambiguation of a word based
+on its context by providing other words that fit the same                       FIGURE 4. Screenshot of the results for the EASIER system user interface.
+context. The module uses these words to find matches in the
+definitions extracted from the RAE and ‘‘Diccionario Facil’’.                   ‘‘Use pictorial representation and other media: as an illus-
+The results showed good accuracy of 0.704 when evaluating                       tration, as support while reading’’, the EASIER plat-
+525 sentences associated with a target word and definition;                     form provides a pictogram of the complex word. This is
+however, the coverage was low. It was observed that matches                     obtained through the ARASAAC resource website API
+were missing, as some word definitions had a different gram-                    (www.arasaac.org/developers/api), which offers graphic ele-
+matical form than the words provided by the WSD system.                         ments for people with communication disabilities.
+Additionally, the module presents problems when generic                            Additionally, the EASIER platform has been designed to
+sentences are evaluated. In this case, it outputs generic words,                comply with WCAG 2.1 (Level AA). COGA guidelines have
+therefore selecting incorrect definitions. Another issue found                  also been followed, such as using clear and understandable
+was that when the system encounters the same number of                          content and making each step of the simplification process as
+coincidences among definitions, it assigns the last processed                   clear as possible, including instructions. Moreover, a consis-
+definition.                                                                     tent visual design using symbols that assist the user has been
+                                                                                used.
+X. EASIER WEB SYSTEM                                                               The webpage’s user interface has been designed respon-
+The Lexical Simplification System has been integrated                           sively, and a user interface for mobile devices is also pro-
+into a web platform that shows the suitability of the pro-                      vided. Moreover, browser extensions have been developed for
+posal (github.com/LURMORENO/easier). A Spanish text is                          both Chrome and Mozilla browsers that offer the function of
+entered by a user (see Figure 3), and complex words are iden-                   identifying complex words and providing synonyms for text
+tified. Synonyms, a definition, and a pictogram are offered for                 users to select on any webpage using the EASIER system.
+each complex word detected. Moreover, language and acces-
+sibility resources are used, such as an easy-to-read dictionary                 XI. CONCLUSION
+(see Figure 4).                                                                 People with intellectual disabilities and other groups face
+   Furthermore, following the Easy-to-Read guideline ‘‘To                       cognitive accessibility barriers when they read texts that con-
+illustrate your text, you can use: photographs, draw-                           tain complex words that are not common or familiar to them.
+ings, or symbols’’ or the Plain Language guideline                              In this regard, there are accessibility directives and guide-
+
+VOLUME 9, 2021                                                                                                                                     58765
+
+<a id="pdf-p12"></a>
+### [PDF p.12] R. Alarcon et al.: Lexical Simplification System to Improve Web Accessibility
+- Locator: `R020-alarcon-2021.pdf` · página **12** / 13
+
+R. Alarcon et al.: Lexical Simplification System to Improve Web Accessibility
+
+
+
+
+lines that aim to improve the readability and understanding                          [10] Plainlanguage. (2017). Plain English-Free Guides (co.uk). [Online]. Avail-
+of texts. This research work, which consists of the design                                able: http://www.plainenglish.co.uk/free-guides.html
+                                                                                     [11] Guidelines and Recommendations for the Elaboration of Documents, Stan-
+and development of a Lexical Simplification System, aims                                  dard UNE 153101:2018, Spanish Association for Standardization, 2018.
+to systematically comply with these guidelines. The system                                [Online]. Available: https://www.une.org/encuentra-tu-norma/busca-tu-
+identifies complex words and replaces them with simpler syn-                              norma/norma?c=N0060036
+                                                                                     [12] W3C Working Draft 11. (2020). Making Content Usable for Peo-
+onyms. Additionally, a definition that is easy to understand is                           ple With Cognitive and Learning Disabilities. [Online]. Available:
+provided.                                                                                 https://www.w3.org/TR/coga-usable/
+                                                                                     [13] K. Inui, A. Fujita, T. Takahashi, R. Iida, and T. Iwakura, ‘‘Text simplifi-
+   For this purpose, a pipeline with different steps has been                             cation for reading assistance,’’ in Proc. 2nd Int. workshop Paraphrasing,
+followed, including a CWI module in which complex words                                   vol. 16, 2003, pp. 9–16.
+are identified with the help of state-of-the-art and accessibil-                     [14] E. Barbu, M. T. Mart, and L. A. Ure, ‘‘Open book: A tool for helping
+                                                                                          asd users’ semantic comprehension,’’ in Proc. 2th Worshop Natural Lang.
+ity resources. The results show that our approach achieves                                Process. Improving Textual Accessibility, 2013, pp. 11–19.
+better F1-scores than other systems in the same task, achiev-                        [15] R. Evans, C. Orasan, and I. Dornescu, ‘‘An evaluation of syntactic sim-
+ing a score of 0.794.                                                                     plification rules for people with autism,’’ in Proc. 3rd Workshop Predict-
+                                                                                          ing Improving Text Readability Target Reader Populations (PITR), 2014,
+   Regarding the substitute generation/selection steps, when                              pp. 131–140.
+combining linguistic resources and embedding were accept-                            [16] E. Barbu, M. T. Martín-Valdivia, E. Martínez-Cámara, and
+                                                                                          L. A. Ureña-López, ‘‘Language technologies applied to document
+able, higher potential indexes were obtained for the genera-                              simplification for helping autistic people,’’ Expert Syst. Appl., vol. 42,
+tor and are compared with the results presented in English.                               no. 12, pp. 5076–5086, Jul. 2015.
+However, there are elements to be improved to obtain better                          [17] J. Carroll, G. Minnen, Y. Canning, S. Devlin, and J. Tait, ‘‘Practical
+                                                                                          simplification of English newspaper text to assist aphasic readers,’’ in Proc.
+precision results.                                                                        AAAI Workshop Integr. Artif. Intell. Assist. Technol., 1998, pp. 7–10.
+   Finally, to provide a correct definition for unusual poly-                        [18] S. Devlin and G. Unthank, ‘‘Helping aphasic people process online infor-
+semic words, a WSD system has been created that uses a                                    mation,’’ in Proc. 8th Int. ACM SIGACCESS Conf. Comput. Accessibility
+                                                                                          (Assets), 2006, pp. 225–226.
+context-aware approach supported by a multilingual BERT                              [19] L. Sauvan, N. Stolowy, C. Aguilar, T. François, N. Gala, F. Matonti,
+model. The system was evaluated by an expert linguist,                                    E. Castet, and A. Calabrese, ‘‘Text simplification to help individuals with
+obtaining a satisfactory precision score.                                                 low vision read more fluently,’’ in Proc. Lang. Resour. Eval. Conf. (LREC),
+                                                                                          2020, pp. 11–16.
+   Future research lines to improve the performance of our                           [20] R. Wilkens, B. Oberle, and A. Todirascu, ‘‘Coreference-based text simpli-
+system are to explore other types of classification approaches,                           fication,’’ in Proc. 1st Workshop Tools Resour. Empower People Reading
+                                                                                          Difficulties, 2020, pp. 93–100.
+such as recent deep learning approaches (e.g., graph-based                           [21] L. Rello, R. Baeza-Yates, S. Bott, and H. Saggion, ‘‘Simplify or help? Text
+neural networks). In addition, for unusual word detection and                             simplification strategies for people with dyslexia,’’ in Proc. 10th Int. Cross-
+substitute selection, the rule-based strategies can be evaluated                          Disciplinary Conf. Web Accessibility (W4A), 2013, p. 15.
+                                                                                     [22] H. Saggion, E. Gómez-Martínez, E. Etayo, A. Anula, and L. Bourg, ‘‘Text
+by using the frequency resources available for the language.                              simplification in simplext: Making texts more accessible,’’ Proces. Leng.
+On the other hand, the different functionalities of BERT                                  Nat., vol. 47, pp. 341–342, Sep. 2011.
+should be explored.                                                                  [23] S. Bott, L. Rello, B. Drndarevic, and H. Saggion, ‘‘Can spanish be simpler?
+                                                                                          Lexsis: Lexical simplification for Spanish,’’ in Proc. COLING, 2012,
+                                                                                          pp. 357–374.
+REFERENCES                                                                           [24] H. Saggion, ‘‘Automatic text simplification,’’ Synth. Lectures Hum. Lang.
+                                                                                          Technol., vol. 10, no. 1, pp. 1–137, 2017.
+ [1] The Survey of Adult Skills, OECD, Paris, France, 2016.                          [25] M. Shardlow, ‘‘A survey of automated text simplification,’’ Int. J. Adv.
+ [2] R. Zelezny-Green, S. Vosloo, and G. Conole, ‘‘Digital inclusion for low-             Comput. Sci. Appl., vol. 48, no. 1, pp. 58–70, 2014.
+     skilled and low-literate people: A landscape review,’’ United Nations Educ.     [26] I. G. Dios, ‘‘Análisis de la complejidad y simplificación automática de
+     Sci. Cultural Organ., Geneva, Switzerland, Tech. Rep., 2018.                         textos. El análisis de las estructuras complejas en euskera,’’ Sociedad
+ [3] OCDE. (2013). Resultados del Informe PIAAC de la OCDE.                               Española para el Procesamiento del Lenguaje Natural, pp. 155–158,
+     [Online]. Available: http://www.educacionyfp.gob.es/prensa/actualidad/               Mar. 2017.
+     2013/10/20131008-piaac.html                                                     [27] S. Štajner, H. Saggion, and S. P. Ponzetto, ‘‘Improving lexical coverage
+ [4] Eurostat. (2020). People in the UE—Population projection. Statistics                 of text simplification systems for Spanish,’’ Expert Syst. Appl., vol. 118,
+     Explained. Accessed: Sep. 2020. [Online]. Available: https://ec.europa.eu/           pp. 80–91, Mar. 2019.
+     eurostat/statisticsexplained/                                                   [28] S. Stajner, I. Calixto, and H. Saggion, ‘‘Automatic text simplification
+ [5] W3C. (2019). Web Content Accesibility Guidelines (WCAG). [Online].                   for Spanish: Comparative evaluation of various simplification strate-
+     Available: https://www.w3.org/WAI/standards-guidelines/wcag/                         gies,’’ in Proc. Int. Conf. Recent Adv. Natural Lang. Process., 2015,
+                                                                                          pp. 618–626.
+ [6] L. Moreno and P. Martinez, ‘‘The harmonization of accessibility standards
+                                                                                     [29] R. Mitkov and S. Stajner, ‘‘The fewer, the better? A contrastive study
+     for public policies,’’ Computer, vol. 52, no. 7, pp. 57–66, Jul. 2019.
+                                                                                          about ways to simplify,’’ in Proc. Workshop Automatic Text Simplification-
+ [7] K. Smith, G. Hallam, and S. B. Ghosh. (2012). Guidelines for Professional            Methods Appl. Multilingual Soc. Assoc. Comput. Linguistics. Dublin,
+     Library/Information Educational Programs-2012. IFLA Educ. Train.                     Ireland: Dublin City Univ., 2014, pp. 30–40.
+     Sect. IFLA, Hague. Accessed: Aug. 25, 2014. [Online]. Available:                [30] G. Glavas and S. Štajner, ‘‘Simplifying lexical simplification: Do we
+     https://www.ifla.org/publications/guidelinesfor-professionallibra                    need simplified corpora?’’ in Proc. 53rd Annu. Meeting Assoc. Comput.
+     ryinformationeducational-programs-2012                                               Linguistics 7th Int. Joint Conf. Natural Lang. Process., 2015, pp. 63–68.
+ [8] G. Freyhoff, G. Hess, L. Kerr, E. Menzel, B. Tronbacke, and                     [31] G. Paetzold and L. Specia, ‘‘Unsupervised lexical simplification for
+     K. Van Der Veken, ‘‘Make it simple, European guidelines for the pro-                 non-native speakers,’’ in Proc. 13th AAAI Conf. Artif. Intell., 2016,
+     duction of easy-to-read information for people with learning disability              pp. 3761–3767.
+     for authors, editors, information providers, translators and other interested   [32] S. Surya, A. Mishra, A. Laha, P. Jain, and K. Sankaranarayanan, ‘‘Unsu-
+     persons,’’ Int. League Societies Persons Mental Handicap Eur. Assoc.,                pervised neural text simplification,’’ in Proc. 57th Annu. Meeting Assoc.
+     Brussels, Belgium, Tech. Rep., 1998.                                                 Comput. Linguistics, 2019, pp. 2058–2068.
+ [9] Plainlanguage.gov. Plain Language Action and Information                        [33] J. Qiang, Y. Li, Y. Zhu, Y. Yuan, and X. Wu, ‘‘Lexical simplification
+     Network (PLAIN). Accessed: Nov. 2, 2020. [Online]. Available:                        with pretrained encoders,’’ in Proc. AAAI, vol. 34, no. 5, Apr. 2020,
+     https://www.plainlanguage.gov/about/                                                 pp. 8649–8656.
+
+58766                                                                                                                                                    VOLUME 9, 2021
+
+<a id="pdf-p13"></a>
+### [PDF p.13] R. Alarcon et al.: Lexical Simplification System to Improve Web Accessibility
+- Locator: `R020-alarcon-2021.pdf` · página **13** / 13
+
+R. Alarcon et al.: Lexical Simplification System to Improve Web Accessibility
+
+
+
+
+[34] D. Ferrés, H. Saggion, and X. Gómez Guinovart, ‘‘An adaptable lexi-               [60] I. Segura-Bedmar, C. Colón-Ruíz, M. Á. Tejedor-Alonso, and
+     cal simplification architecture for major Ibero-Romance languages,’’ in                M. Moro-Moro, ‘‘Predicting of anaphylaxis in big data EMR by
+     Proc. 1st Workshop Building Linguistically Generalizable NLP Syst., 2017,              exploring machine learning approaches,’’ J. Biomed. Informat., vol. 87,
+     pp. 40–47.                                                                             pp. 50–59, Nov. 2018.
+[35] S. S. Al-Thanyyan and A. M. Azmi, ‘‘Automated text simplification:                [61] J. Kivinen, M. K. Warmuth, and P. Auerc, ‘‘The Perceptron algorithm
+     A survey,’’ ACM Comput. Surv., vol. 54, no. 2, pp. 1–36, 2021.                         versus Winnow: Linear versus logarithmic mistake bounds when few
+[36] G. H. Paetzold and L. Specia, ‘‘A survey on lexical simplification,’’ J. Artif.        input variables are relevant,’’ Artif. Intell., vol. 97, no. 97, pp. 325–343,
+     Intell. Res., vol. 60, pp. 549–593, Nov. 2017.                                         1997.
+[37] J. Bingel, G. H. Paetzold, and A. Søgaard, ‘‘Lexi: A tool for adaptive, per-      [62] T. Kajiwara and M. Komachi, ‘‘Complex word identification based on fre-
+     sonalized text simplification,’’ in Proc. 27th Int. Conf. Comput. Linguistics,         quency in a learner corpus,’’ in Proc. 13th Workshop Innov. NLP Building
+     2018, pp. 245–258.                                                                     Educ. Appl. 2018, pp. 195–199.
+[38] M. Shardlow, ‘‘A comparison of techniques to automatically identify com-          [63] D. De Hertog and K. U. Leuven, ‘‘Deep learning architecture for complex
+     plex words,’’ in Proc. 51st Annu. Meeting Assoc. Comput. Linguistics Proc.             word identification,’’ in Proc. 13th Workshop Innov. NLP Building Educ.
+     Student Res. Workshop, 2013, pp. 103–109.                                              Appl. 2018, pp. 328–334.
+[39] S. M. Yimam, S. Stajner, M. Riedl, and C. Biemann, ‘‘Multilingual and             [64] R. Alarcon, L. Moreno, and P. Martínez, ‘‘Word-Sense disambiguation
+     cross-lingual complex word identification,’’ in Proc. Recent Adv. Natural              system for text readability,’’ in Proc. DSAI 9th Int. Conf. Softw. Develop.
+     Lang. Process., 2017, pp. 813–822.                                                     Technol. Enhancing Accessibility Fighting Info-Exclusion), 2020, pp. 1–6.
+[40] N. Hartmann and L. B. Santos, ‘‘NILC at CWI 2018: Exploring feature
+     engineering and feature learning,’’ in Proc. 13th Workshop Innov. NLP                                         RODRIGO ALARCON received the master’s
+     Building Educ. Appl., 2018, pp. 335–340.                                                                      degree in computer science and technology from
+[41] K. Cheng, ‘‘Multilingual complex word identification: Convolutional neu-
+                                                                                                                   the Universidad Carlos III of Madrid (UC3M).
+     ral networks with morphological and linguistic features,’’ in Proc. 12th Int.
+                                                                                                                   He is currently pursuing the Ph.D. degree with
+     Conf. Recent Adv. Natural Lang. Process., 2019, pp. 83–89.
+[42] P. Lal and S. Ruger, ‘‘Extract-based summarization with simplification,’’                                     the HULAT Research Group, Computer Science
+     in Proc. ACL, vol. 10, 2002, pp. 3–10.                                                                        Department, Universidad Carlos III de Madrid.
+[43] J. Burstein, J. Shore, J. Sabatini, Y. Lee, and M. Ventura, ‘‘The automated                                      He is currently a Computer Engineer with the
+     text adaptation tool,’’ in Proc. Hum. Lang. Technol., Annu. Conf. North                                       Universidad Católica de Santa María (Arequipa-
+     Amer. Chapter Assoc. Comput. Linguistics, 2007, pp. 3–4.                                                      Perú). He investigates how to combine accessibil-
+[44] T. Kajiwara, H. Matsumoto, and K. Yamamoto, ‘‘Selecting proper lexical                                        ity techniques with machine learning techniques
+     paraphrase for children,’’ in Proc. 25th Conf. Comput. Linguistics Speech         to perform text simplification tasks using plain language and easy reading
+     Process. (ROCLING), 2013, pp. 59–73.                                              resources. His research works are aimed to improving the understanding of
+[45] O. Biran, S. Brody, and N. Elhadad, ‘‘Putting it simply: A context-aware
+                                                                                       texts for people with intellectual disabilities by following standards of cogni-
+     approach to lexical simplification,’’ in Proc. 49th Annu. Meet. Assoc.
+                                                                                       tive accessibility. His research interests include natural language processing
+     Comput. Linguistics, 2011, pp. 496–501.
+[46] E. Pavlick and C. Callison-Burch, ‘‘Simple PPDB: A paraphrase database            and accessibility.
+     for simplification,’’ in Proc. 54th Annu. Meeting Assoc. Comput. Linguis-
+                                                                                                                LOURDES MORENO received the B.Sc. degree
+     tics, vol. 2, 2016, pp. 143–148.
+[47] S. Thomas and S. Anderson, ‘‘WordNet-based lexical simplification of a                                     in mathematics from the Complutense University
+     document,’’ in Proc. KONVENS, 2012, pp. 80–88.                                                             of Madrid, Spain, and the Ph.D. degree in com-
+[48] J. De Belder and M.-F. Moens, ‘‘Text simplification for children,’’ in Proc.                               puter science from the Universidad Carlos III de
+     SIGIR Workshop Accessible Search Syst., 2010, pp. 19–26.                                                   Madrid (UC3M), Spain.
+[49] G. H. Paetzold and L. Specia, ‘‘Text simplification as tree transduction,’’                                   She is currently an Associate Professor and a
+     in Proc. 9th Brazilian Symp. Inf. Hum. Lang. Technol., 2013, pp. 116–125.                                  Researcher with the Human Language and Acces-
+[50] G. Paetzold and L. Specia, ‘‘LEXenstein: A framework for lexical simpli-                                   sibility Technologies Group (HULAT), Computer
+     fication,’’ in Proc. ACL-IJCNLP Syst. Demonstrations, 2015, pp. 85–90.                                     Science Department, UC3M. Her research com-
+[51] M. Lesk, ‘‘Automatic sense disambiguation using machine readable dic-
+                                                                                                                bines human–computer interaction with natural
+     tionaries: How to tell a pine code from an ice cream cone,’’ in Proc. 5th
+     Annu. Int. Conf. Syst. Documentation (SIGDOC), 1986, pp. 24–26.
+                                                                                       language processing using interdisciplinary approaches. Her research inter-
+[52] Y. K. Lee, H. T. Ng, and T. K. Chia, ‘‘Supervised word sense                      ests include ICT accessibility aimed at users with disabilities across a
+     disambiguation with support vector machines and multiple knowl-                   range of fields (education, public administrations, and health). She is the
+     edge sources,’’ in Proc. 3rd Int. Workshop Eval. Syst. Semantic                   Chair of the Human–Computer Interaction Association (AIPO), Spain,
+     Anal. Text (SENSEVAL), 2004, pp. 137–140. [Online]. Available:                    a member of the General Council of the Spanish Computer Sciences Soci-
+     https://www.aclweb.org/anthology/W04-0834                                         ety (SCIE), and the Vice-Chair of CHISPA, the Spanish Chapter of the
+[53] H. Kaji and Y. Morimoto, ‘‘Unsupervised word sense disambiguation                 ACM-SIGCHI.
+     using bilingual comparable corpora,’’ in Proc. 19th COLIN, 2002, pp. 1–7.
+     [Online]. Available: https://www.aclweb.org/anthology/C02-1058                                                PALOMA MARTÍNEZ received the degree and
+[54] R. Cao, J. Bai, and H. Shinnou, ‘‘Semi-supervised learning for all-words
+                                                                                                                   Ph.D. degree in computer science from the Uni-
+     WSD using self-learning and fine-tuning,’’ in Proc. 33rd Pacific Asia Conf.
+     Lang., Inf. Comput. (PACLIC), vol. 33, 2019, pp. 356–361.                                                     versidad Politécnica de Madrid, Spain, in 1992 and
+[55] J. Devlin, M.-W. Chang, K. Lee, and K. Toutanova, ‘‘BERT: Pre-training                                        1998, respectively. She is currently the Head of the
+     of deep bidirectional transformers for language understanding,’’ 2018,                                        Human Language and Accessibility Technologies
+     arXiv:1810.04805. [Online]. Available: http://arxiv.org/abs/1810.04805                                        Group (HULAT), Computer Science and Engi-
+[56] J. Du, F. Qi, and M. Sun, ‘‘Using BERT for word sense                                                         neering Department, Universidad Carlos III de
+     disambiguation,’’ 2019, arXiv:1909.08358. [Online]. Available:                                                Madrid. She has been a principal investigator and
+     https://arxiv.org/abs/1909.08358                                                                              participated more than 40 national and interna-
+[57] R. Alarcon, L. Moreno, I. Segura-bedmar, and P. Martínez, ‘‘Lexical                                           tional research projects. She has coauthored more
+     simplification approach using easy-to-read resources,’’ Procesamiento Del         than 40 articles in indexed journals and more than a 100 international
+     Lenguaje Natural, vol. 63, pp. 95–102, Sep. 2019.
+                                                                                       conference contributions. Her research interests include human language
+[58] M. Yimam, C. Biemann, S. Malmasi, G. Paetzold, L. Specia, S. Štajner,
+     A. Tack, and M. Zampieri, ‘‘A report on the complex word identification           technologies, with a focus on information extraction in the biomedical
+     sharedtask 2018,’’ in Proc. 13th Workshop Innov. NLP Building Educ.               domain and web accessibility. She is a currently a member of the Spanish
+     Appl. New Orleans, LA, USA: Association for Computational Linguistics,            Society for Natural Language Processing (SEPLN) and the Dynamization
+     2018, pp. 66–78, doi: 10.18653/v1/W18-0507.                                       Network for Activities on Natural Language Processing Technologies. She
+[59] C. Cardellino, ‘‘Spanish billion words corpus and embeddings,’’ Tech.             is also a Collaborator of the Spanish Centre of Captioning and Audiodescrip-
+     Rep., Mar. 2016. [Online]. Available: https://crscardellino.github.               tion (CESyA).
+     io/SBWCE/
+
+
+VOLUME 9, 2021                                                                                                                                                    58767

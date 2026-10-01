@@ -5,12 +5,13 @@ alwaysApply: true
 
 # Graphify (FIS)
 
-Five graph scopes, same commands `pnpm graphify:<scope>:<refresh|status|query|open>`:
+Graph scopes (all but cribado 2 use `pnpm graphify:<scope>:<refresh|status|query|open>`):
 
 | Scope | Graph path | Refresh |
 |-------|------------|---------|
 | root (repo) | `graphify-out/graph.json` | `pnpm graphify:root:refresh` / skill **graphify-root** |
 | theme | `docs/[titulo-breve]/graphify-out/graph.json` | `pnpm graphify:theme:refresh <slug>` / skill **graphify-theme** |
+| cribado 2 (texto completo) | `docs/[titulo-breve]/picoc/<fecha>-cribado-2-<MARCO>/graphify-out/graph.json` | skill **rsl-cribado-2-memoria** (`pnpm -s cribado2:build <docs/slug>`; consulta `cribado2:query`) |
 | thesaurus (IEEE) | `global/thesaurus/graphify-out/graph.json` | `pnpm graphify:thesaurus:refresh` |
 | examples (papers) | `global/examples/graphify-out/graph.json` | `pnpm graphify:examples:refresh` |
 | bibliography (fuentes metodológicas) | `global/bibliography/graphify-out/graph.json` | `pnpm graphify:bibliography:refresh` |

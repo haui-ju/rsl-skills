@@ -1,0 +1,339 @@
+# SummaryLens – A Smartphone App for Exploring Interactive
+
+> Fuente PDF: `R077-benharrak-2022.pdf` · técnica **locator index** (página + ancla) + chunks Graphify
+
+## Metadata
+- Stem: `R077-benharrak-2022`
+- PDF: `R077-benharrak-2022.pdf`
+- DOI: `10.1145/3490100.3516471`
+- Pages: `4`
+- Structured_at: `2026-09-30T16:59:11+00:00`
+- Technique: `pdf-page-locators + heading-chunks`
+
+## Locator index (qué hay y en qué página del PDF)
+
+| Kind | Label | PDF page | MD anchor |
+|------|-------|----------|-----------|
+| abstract | Abstract / blurb | 1 | `#abstract` |
+| section | 3516471 Concretely, our concept has three parts, which map to steps of the | 2 | `#p2-3516471-concretely-our-concept-has-three-parts-which-map-to-steps-of-the` |
+| section | 3.2 Prototype Implementation as an Android | 2 | `#p2-3-2-prototype-implementation-as-an-android` |
+| section | 2 RELATED WORK                                                                          App | 2 | `#p2-2-related-work-app` |
+| section | 5 RESULTS AND DISCUSSION                                                          ACKNOWLEDGMENTS | 3 | `#p3-5-results-and-discussion-acknowledgments` |
+| concept | R077 | ? | `#concept-r077` |
+| concept | benharrak | ? | `#concept-benharrak` |
+| concept | 2022 | ? | `#concept-2022` |
+| finding | combine this with a text-to-speech system to read out the summary We present SummaryLens, … | 1 | `#finding-combine-this-with-a-text-to-speech-syste` |
+| finding | We further Language Processing to a broad audience with interactive use cases in everyday … | 1 | `#finding-we-further-language-processing-to-a-broa` |
+| finding | A first usability study for profit or commercial advantage and that copies bear this notic… | 1 | `#finding-a-first-usability-study-for-profit-or-co` |
+| finding | Copyrights for third-party components of this work must be honored. | 1 | `#finding-copyrights-for-third-party-components-of` |
+| finding | For all other uses, contact the owner/author(s). | 1 | `#finding-for-all-other-uses-contact-the-owner-au` |
+| finding | in everyday life has noteworthy potential. | 1 | `#finding-in-everyday-life-has-noteworthy-potentia` |
+| page | p.1: SummaryLens – A Smartphone App for Exploring Interactive | 1 | `#pdf-p1` |
+| page | p.2: IUI ’22 Companion, March 22–25, 2022, Helsinki, Finland Benharrak et al. | 2 | `#pdf-p2` |
+| page | p.3: SummaryLens – An App for Exploring Interactive Text Summarization in Everyday Life IUI ’22 | 3 | `#pdf-p3` |
+| page | p.4: IUI ’22 Companion, March 22–25, 2022, Helsinki, Finland Benharrak et al. | 4 | `#pdf-p4` |
+
+## Abstract
+<a id="abstract"></a>
+
+combine this with a text-to-speech system to read out the summary We present SummaryLens, a concept and prototype for a mobile on demand. With this concept, we propose and explore a concrete tool that leverages automated text summarization to enable users application case of bringing ongoing progress in AI and Natural to quickly scan and summarize physical text documents. We further Language Processing to a broad audience with interactive use cases in everyday life. Based on our implemented features, we describe a set of potential usage scenarios and benefits, including support for Permission to make digital or hard copies of part or all of this work for personal or classroom use is granted without fee provided that copies are not made or distributed low-vision, low-literate and dyslexic users. A first usability study for profit or commercial advantage and that copies bear this notice and the full citation shows that the interactive use of automated text summarization on the first page. Copyrights for third-party components of this work must be honored. For all other uses, contact the owner/author(s). in everyday life has noteworthy potential. We make the prototype IUI ’22 Companion, March 22–25, 2022, Helsinki, Finland available as an open-source project to facilitate further research on © 2022 Copyright held by the owner/author(s). such tools. ACM ISBN 978-1-4503-9145-0/22/03. https://doi.org/10.1145/3490100.3516471 IUI ’22 Companion, March 22–25, 2022, Helsinki, Finland Benharrak et al.
+
+## Keywords
+
+- _(none auto-detected)_
+
+## Concept index (graph hooks + página)
+
+<a id="concept-r077"></a>
+### [PDF p.?] Concept: R077
+- Locator: `R077-benharrak-2022.pdf` · página **?**
+
+<a id="concept-benharrak"></a>
+### [PDF p.?] Concept: benharrak
+- Locator: `R077-benharrak-2022.pdf` · página **?**
+
+<a id="concept-2022"></a>
+### [PDF p.?] Concept: 2022
+- Locator: `R077-benharrak-2022.pdf` · página **?**
+
+
+## Findings index (graph hooks + página)
+
+<a id="finding-combine-this-with-a-text-to-speech-syste"></a>
+### [PDF p.1] Finding: combine this with a text-to-speech system to read out the summary We present SummaryLens, a concept and prototype for a mobile on demand.
+- Locator: `R077-benharrak-2022.pdf` · página **1**
+
+<a id="finding-we-further-language-processing-to-a-broa"></a>
+### [PDF p.1] Finding: We further Language Processing to a broad audience with interactive use cases in everyday life.
+- Locator: `R077-benharrak-2022.pdf` · página **1**
+
+<a id="finding-a-first-usability-study-for-profit-or-co"></a>
+### [PDF p.1] Finding: A first usability study for profit or commercial advantage and that copies bear this notice and the full citation shows that the interactive use of automated text summarization on the first page.
+- Locator: `R077-benharrak-2022.pdf` · página **1**
+
+<a id="finding-copyrights-for-third-party-components-of"></a>
+### [PDF p.1] Finding: Copyrights for third-party components of this work must be honored.
+- Locator: `R077-benharrak-2022.pdf` · página **1**
+
+<a id="finding-for-all-other-uses-contact-the-owner-au"></a>
+### [PDF p.1] Finding: For all other uses, contact the owner/author(s).
+- Locator: `R077-benharrak-2022.pdf` · página **1**
+
+<a id="finding-in-everyday-life-has-noteworthy-potentia"></a>
+### [PDF p.1] Finding: in everyday life has noteworthy potential.
+- Locator: `R077-benharrak-2022.pdf` · página **1**
+
+
+## Relevance hooks
+### Theme relevance: software engineering and accessibility
+### Theme relevance: cognitive accessibility and neurodiversity
+### Theme relevance: evaluation metrics and WCAG
+
+## Sections (detected in PDF)
+
+<a id="p2-3516471-concretely-our-concept-has-three-parts-which-map-to-steps-of-the"></a>
+### [PDF p.2] Section: 3516471 Concretely, our concept has three parts, which map to steps of the
+- Locator: `R077-benharrak-2022.pdf` · página **2** · ancla `#p2-3516471-concretely-our-concept-has-three-parts-which-map-to-steps-of-the`
+
+<a id="p2-3-2-prototype-implementation-as-an-android"></a>
+### [PDF p.2] Section: 3.2 Prototype Implementation as an Android
+- Locator: `R077-benharrak-2022.pdf` · página **2** · ancla `#p2-3-2-prototype-implementation-as-an-android`
+
+<a id="p2-2-related-work-app"></a>
+### [PDF p.2] Section: 2 RELATED WORK                                                                          App
+- Locator: `R077-benharrak-2022.pdf` · página **2** · ancla `#p2-2-related-work-app`
+
+<a id="p3-5-results-and-discussion-acknowledgments"></a>
+### [PDF p.3] Section: 5 RESULTS AND DISCUSSION                                                          ACKNOWLEDGMENTS
+- Locator: `R077-benharrak-2022.pdf` · página **3** · ancla `#p3-5-results-and-discussion-acknowledgments`
+
+
+## Page chunks (texto por página del PDF)
+
+_Cada heading es un nodo Graphify. El label incluye la página para volver al PDF sin releer todo._
+
+<a id="pdf-p1"></a>
+### [PDF p.1] SummaryLens – A Smartphone App for Exploring Interactive
+- Locator: `R077-benharrak-2022.pdf` · página **1** / 4
+
+SummaryLens – A Smartphone App for Exploring Interactive
+                                               Use of Automated Text Summarization in Everyday Life
+                                                                        Karim Benharrak                                                                  Florian Lehmann
+                                                     karim.benharrak@uni-bayreuth.de                                                          florian.lehmann@uni-bayreuth.de
+                                            Department of Computer Science, University of Bayreuth                                  Department of Computer Science, University of Bayreuth
+                                                            Bayreuth, Germany                                                                         Bayreuth, Germany
+
+                                                                               Hai Dang                                                                   Daniel Buschek
+                                                          hai.dang@uni-bayreuth.de                                                            daniel.buschek@uni-bayreuth.de
+                                            Department of Computer Science, University of Bayreuth                                  Department of Computer Science, University of Bayreuth
+
+
+
+
+arXiv:2202.02053v1 [cs.HC] 4 Feb 2022
+                                                              Bayreuth, Germany                                                                      Bayreuth, Germany
+
+
+
+
+                                        Figure 1: Our SummaryLens prototype, implemented as an Android app that allows users to 1) take a photo of a physical
+                                        document, 2) view an automatically created summary, and 3) use text-to-speech to read it out loud.
+                                        ABSTRACT                                                                                     combine this with a text-to-speech system to read out the summary
+                                        We present SummaryLens, a concept and prototype for a mobile                                 on demand. With this concept, we propose and explore a concrete
+                                        tool that leverages automated text summarization to enable users                             application case of bringing ongoing progress in AI and Natural
+                                        to quickly scan and summarize physical text documents. We further                            Language Processing to a broad audience with interactive use cases
+                                                                                                                                     in everyday life. Based on our implemented features, we describe a
+                                                                                                                                     set of potential usage scenarios and benefits, including support for
+                                        Permission to make digital or hard copies of part or all of this work for personal or
+                                        classroom use is granted without fee provided that copies are not made or distributed        low-vision, low-literate and dyslexic users. A first usability study
+                                        for profit or commercial advantage and that copies bear this notice and the full citation    shows that the interactive use of automated text summarization
+                                        on the first page. Copyrights for third-party components of this work must be honored.
+                                        For all other uses, contact the owner/author(s).
+                                                                                                                                     in everyday life has noteworthy potential. We make the prototype
+                                        IUI ’22 Companion, March 22–25, 2022, Helsinki, Finland                                      available as an open-source project to facilitate further research on
+                                        © 2022 Copyright held by the owner/author(s).                                                such tools.
+                                        ACM ISBN 978-1-4503-9145-0/22/03.
+                                        https://doi.org/10.1145/3490100.3516471
+
+<a id="pdf-p2"></a>
+### [PDF p.2] IUI ’22 Companion, March 22–25, 2022, Helsinki, Finland Benharrak et al.
+- Locator: `R077-benharrak-2022.pdf` · página **2** / 4
+
+IUI ’22 Companion, March 22–25, 2022, Helsinki, Finland                                                                                             Benharrak et al.
+
+
+CCS CONCEPTS                                                                       of parts of the full text) and abstractive (short rewrite of the full
+• Human-centered computing → Graphical user interfaces;                            text) [1]. Our prototype supports both approaches in general.
+Smartphones; • Computing methodologies → Natural lan-
+guage processing.                                                                  3  THE SUMMARYLENS CONCEPT AND
+                                                                                      PROTOTYPE APP
+KEYWORDS                                                                           3.1 Concept: Combining Smartphone Camera,
+natural language processing, mobile devices, text summarization,                       Summarization Model and Text-to-Speech
+user studies
+                                                                                       System
+ACM Reference Format:                                                              We propose the SummaryLens concept as a concrete example appli-
+Karim Benharrak, Florian Lehmann, Hai Dang, and Daniel Buschek. 2022.
+                                                                                   cation for bringing natural language processing capabilities to new
+SummaryLens – A Smartphone App for Exploring Interactive Use of Auto-
+mated Text Summarization in Everyday Life. In 27th International Conference
+                                                                                   everyday use cases. Overall, with the described features, we aim to
+on Intelligent User Interfaces (IUI ’22 Companion), March 22–25, 2022, Helsinki,   support diverse users in everyday life tasks by improving their ex-
+Finland. ACM, New York, NY, USA, 4 pages. https://doi.org/10.1145/3490100.         perience and efficiency in understanding physical text documents.
+3516471                                                                            Concretely, our concept has three parts, which map to steps of the
+                                                                                   corresponding user flow and interface.
+1    INTRODUCTION                                                                  3.1.1 Scanning a physical text document. In the first part of our
+In today’s corporate as well as private contexts it is essential to effi-          concept, users “scan” a physical document with their mobile device
+ciently process text. Often, one would like to extract and understand              camera (Fig. 1 left).
+the key aspects of a document, both to save time and to filter out
+(currently) irrelevant information. This is especially challenging for             3.1.2 Summarizing the text. After that, the text is presented in two
+users who find prolonged focused reading difficult or impossible.                  modes in a graphical user interface: The “SUMMARY” mode dis-
+Despite the many digital formats, we still also read and work with                 plays a summarized version of the scanned text (Fig. 1 center). While
+printed reports, articles, letters, newspapers, or other text docu-                our concept supports various summarization methods, the concrete
+ments. Extracting information is particularly challenging for such                 design discussed here targets extractive summarization on sentence
+physical documents because people cannot rely, for example, on                     level. That is, the summary shows the k most important sentences
+digital search or accessibility tools. To address these challenges,                from the original text. In contrast, in the “ORIGINAL” mode, the
+we investigate the following guiding research question: How might                  user can read the whole scanned text (Fig. 1 right). In addition,
+we design a mobile tool to assist people in quickly comprehending                  sentences that are also included in the summary are highlighted
+physical documents in everyday tasks and environments? Concretely,                 in color. This makes it transparent to the user which sentences are
+here we present our exploration of a solution strategy focused on                  considered essential by the system in the context of the entire text.
+enabling people to apply automatic text summarization to physical                  The user can switch back and forth between both modes.
+text documents. The result is SummaryLens, a concept for a mobile                  3.1.3 Reading out the text. Finally, our concept includes a “READ
+application capable of scanning and summarizing text in real world                 OUT LOUD” functionality, which utilises a Text2Speech service to
+environments (Fig. 1). We implemented this concept as an Android                   enable the user to listen to the currently displayed text (original or
+app and report on a first user study. Our prototype is available as                summary).
+an open source project.
+                                                                                   3.2     Prototype Implementation as an Android
+2    RELATED WORK                                                                          App
+Following Radev et al. [7], the “main goal of a summary is to present
+                                                                                   We developed a SummaryLens prototype as an Android application
+the main ideas in a document in less space”. We explore the case
+                                                                                   and a Python backend and server. The app uses Optical Character
+where this reduction further involves a transfer from the physical
+                                                                                   Recognition (OCR)1 to recognize and extract text from a photo cap-
+into the digital space.
+                                                                                   tured with the smartphone camera. This extracted text is saved and
+   Related work on interactive systems with text summarization
+                                                                                   sent to our Python API (developed using Flask) for summarization.
+mainly used it for digital text content: For example, Leiva [4] sum-
+                                                                                   Concretely, the sentences within the text are ranked by relevance
+marized text as part of content-responsive websites. Related, ter
+                                                                                   using a text ranking algorithm and typical preprocessing steps. In
+Hoeve et al. [9] explored a conversational concept (i.e. chatbot,
+                                                                                   particular, our default uses GloVe embeddings and TextRank [5, 6]
+voice assistant) to help users extract information from a digital
+                                                                                   to identify the top k sentences.
+document. Moreover, Wang et al. [10] proposed a system to create
+                                                                                      Our backend returns the top five sentences to the Android app
+textual summaries of graphical user interfaces. Other work involved
+                                                                                   in order of their appearance in the original text. This summary is
+users to interactively improve AI text summaries [2]. In contrast
+                                                                                   saved and shown to the user. The user may switch between viewing
+to the related work, we explore how people might be enabled to
+                                                                                   the summary and the full text using a toggle button (see bottom of
+benefit from automatic summarization of physical documents.
+                                                                                   the UI in Fig. 1). For extractive summaries, our app implements the
+   Technically, automated text summarization is an important task
+in ongoing work in Natural Language Processing [3, 8]. The two                     1 see https://developers.google.com/ml-kit/vision/text-recognition, last accessed
+main approaches and types of summaries are extractive (a selection                 03.02.2022
+
+<a id="pdf-p3"></a>
+### [PDF p.3] SummaryLens – An App for Exploring Interactive Text Summarization in Everyday Life IUI ’22 Companion, March 22–25, 2022, Helsinki, Finland
+- Locator: `R077-benharrak-2022.pdf` · página **3** / 4
+
+SummaryLens – An App for Exploring Interactive Text Summarization in Everyday Life                              IUI ’22 Companion, March 22–25, 2022, Helsinki, Finland
+
+
+described highlighting concept: When viewing the full text in this                   reading in the full text. People further commented on the straight-
+way, the top sentences are colored in green.                                         forward layout and easily recognizable steps of the user flow from
+   In addition, the app integrates Android’s text-to-speech API and                  picture to summary in particular.
+exposes this functionality via a button (see top right of the UI in                      We also identified areas for improvement and extension: People
+Fig. 1). This is currently limited to reading in English, but could be               wished to be able to alter the font size, to adjust the voice’s reading
+flexibly extended. Users can cancel reading the text by pressing the                 speed, to include support for PDF formats and handwritten text,
+button again.                                                                        and summarisation settings (e.g. “I would like to have a longer sum-
+   We consider this prototype a proof of concept with the intention                  mary”). We also received input on explainability: Some wondered
+of serving as a practical code base and starting template for fur-                   if the offered summary did not omit vital information, and were
+ther research. Our implementation is flexible and can be extended,                   curious about the used summarization method (“I thought it was
+for example, with other summarization methods in Python. For                         interesting how they summarized the points, however I don’t know
+instance, we have also implemented frequency-based summaries                         how accurate the summary is.” ). From this, we learn that the concept
+and (abstractive) summarization with Deep Learning models, using                     and prototype should convey to the user how parts or aspects of
+HuggingFace [11].                                                                    the full text are being chosen for the summary. This would facilitate
+                                                                                     understanding of the process and potentially increase trust. For our
+4    USER STUDY                                                                      extractive method here, the highlighting in the full text can serve
+                                                                                     as a first step but should be explored further.
+To gain first insights into users’ experience and views with our
+                                                                                         Finally, the study also revealed application ideas, such as reading
+concept and prototype, we conducted an exploratory user study
+                                                                                     a physical newspaper article in a hurry and storing it to make
+with five students (mean age 22 years, range 20-28).
+                                                                                     it available on the go. Another idea mentioned was catching up
+   We installed our application on a study smartphone and prepared
+                                                                                     with longer documents at work, potentially including multitasking
+a table with a printed text document. Since it was not our focus to
+                                                                                     situations (e.g. gaining and maintaining an overview when working
+evaluate the quality of the OCR API we used, we simulated “perfect”
+                                                                                     across multiple documents).
+OCR in the study by storing the text of this document in the app
+directly. The app can then create the summary based on the stored
+text, using the described summarization backend.                                     6    CONCLUSION
+   Participants were informed about the content and purpose of                       We have presented SummaryLens, a concept and prototype for a
+the study and signed a consent form. We then instructed them                         mobile tool that leverages automated text summarization to en-
+to try out the app, involving the text document, while thinking                      able users to quickly summarize physical text documents. In the
+aloud. No further explanation of the UI was provided. We observed                    larger context of our research, this explores a concrete example
+the process of people exploring the prototype and took notes of                      of an interactive tool aimed at rendering ongoing progress in AI
+these observations and participants’ comments and shared experi-                     and Natural Language Processing useful to people in everyday life
+ences. After they had completed the task (i.e. scanned the document                  situations. We plan to refine and extend this concept and prototype
+and explored all app functionalities), we conducted a short semi-                    based on the insights from our first user study. To facilitate further
+structured interview around three central questions: What did you                    work in this direction more broadly, we also release our prototype
+like the most and why?, What do you wish would be different and                      app and backend as an open-source project to the community here:
+what needs to be improved?, In which everyday situations would you                   https://github.com/DerKarim06/SummaryLens
+like to have an application like that and why?
+
+5    RESULTS AND DISCUSSION                                                          ACKNOWLEDGMENTS
+                                                                                     This project is funded by the Bavarian State Ministry of Science
+People’s comments indicated two potential key benefits: First, cre-
+                                                                                     and the Arts and coordinated by the Bavarian Research Institute
+ating summaries on the go allows for faster document reading,
+                                                                                     for Digital Transformation (bidt).
+which is useful in time-sensitive scenarios. Second, it might also
+facilitate comprehension (e.g. gaining an overview, extracting key
+points). Saving time was mentioned by everyone (e.g.: “On the one                    REFERENCES
+hand you have your full text and then just with one click you can                     [1] Mehdi Allahyari, Seyedamin Pouriyeh, Mehdi Assefi, Saeid Safaei, Elizabeth D.
+access a summary which is very convenient because it saves a lot                          Trippe, Juan B. Gutierrez, and Krys Kochut. 2017. Text Summarization Techniques:
+                                                                                          A Brief Survey. arXiv:1707.02268 [cs] (July 2017). http://arxiv.org/abs/1707.02268
+of time.” ). To realise this, the ability to photograph a document or                     arXiv: 1707.02268.
+select an image from the phone’s gallery was emphasised as highly                     [2] Sebastian Gehrmann, Hendrik Strobelt, Robert Krüger, Hanspeter Pfister, and
+important. These comments and observations provide promising                              Alexander M. Rush. 2020. Visual Interaction with Deep Learning Models through
+                                                                                          Collaborative Semantic Inference. IEEE Transactions on Visualization and Com-
+feedback on our fundamental concept.                                                      puter Graphics 26, 1 (Jan. 2020), 884–894. https://doi.org/10.1109/TVCG.2019.
+   Regarding our prototype’s UI, people found the ability to switch                       2934595 Conference Name: IEEE Transactions on Visualization and Computer
+                                                                                          Graphics.
+between the original text and the related summary easy and fast                       [3] Wojciech Kryściński, Nitish Shirish Keskar, Bryan McCann, Caiming Xiong,
+to use. This feature was also seen as making it easier to go deeper                       and Richard Socher. 2019. Neural Text Summarization: A Critical Evalua-
+into the full text as needed. From our observations and people’s                          tion. arXiv:1908.08960 [cs] (Aug. 2019). http://arxiv.org/abs/1908.08960 arXiv:
+                                                                                          1908.08960.
+comments, the sentences highlighted in green in the original text                     [4] Luis A. Leiva. 2018. Responsive text summarization. Inform. Process. Lett. 130
+here served as landmarks for orientation, facilitating more selective                     (2018), 52–57. https://doi.org/10.1016/j.ipl.2017.10.007
+
+<a id="pdf-p4"></a>
+### [PDF p.4] IUI ’22 Companion, March 22–25, 2022, Helsinki, Finland Benharrak et al.
+- Locator: `R077-benharrak-2022.pdf` · página **4** / 4
+
+IUI ’22 Companion, March 22–25, 2022, Helsinki, Finland                                                                                                         Benharrak et al.
+
+
+ [5] Rada Mihalcea and Paul Tarau. 2004. Textrank: Bringing order into text. In Pro-         [9] Maartje ter Hoeve, Robert Sim, Elnaz Nouri, Adam Fourney, Maarten de Ri-
+     ceedings of the 2004 conference on empirical methods in natural language processing.        jke, and Ryen W. White. 2020. Conversations with Documents: An Explo-
+     404–411.                                                                                    ration of Document-Centered Assistance. In Proceedings of the 2020 Confer-
+ [6] Jeffrey Pennington, Richard Socher, and Christopher D. Manning. 2014. GloVe:                ence on Human Information Interaction and Retrieval (Vancouver BC, Canada)
+     Global Vectors for Word Representation. In Empirical Methods in Natural Lan-                (CHIIR ’20). Association for Computing Machinery, New York, NY, USA, 43–52.
+     guage Processing (EMNLP). 1532–1543. http://www.aclweb.org/anthology/D14-                   https://doi.org/10.1145/3343413.3377971
+     1162                                                                                   [10] Bryan Wang, Gang Li, Xin Zhou, Zhourong Chen, Tovi Grossman, and Yang
+ [7] Dragomir R. Radev, Eduard Hovy, and Kathleen McKeown. 2002. Introduction to                 Li. 2021. Screen2Words: Automatic Mobile UI Summarization with Multimodal
+     the Special Issue on Summarization. Computational Linguistics 28, 4 (Dec. 2002),            Learning. In The 34th Annual ACM Symposium on User Interface Software and
+     399–408. https://doi.org/10.1162/089120102762671927                                         Technology (Virtual Event, USA) (UIST ’21). Association for Computing Machinery,
+ [8] Alec Radford, Jeffrey Wu, Rewon Child, David Luan, Dario Amodei, Ilya Sutskever,            New York, NY, USA, 498–510. https://doi.org/10.1145/3472749.3474765
+     et al. 2019. Language models are unsupervised multitask learners. OpenAI blog          [11] Thomas Wolf, Lysandre Debut, Victor Sanh, Julien Chaumond, Clement Delangue,
+     1, 8 (2019), 9.                                                                             Anthony Moi, Pierric Cistac, Tim Rault, Rémi Louf, Morgan Funtowicz, and Jamie
+                                                                                                 Brew. 2020. HuggingFace’s Transformers: State-of-the-art Natural Language
+                                                                                                 Processing. arXiv:1910.03771 [cs] (Feb. 2020). http://arxiv.org/abs/1910.03771
+                                                                                                 arXiv: 1910.03771.

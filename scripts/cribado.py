@@ -114,13 +114,19 @@ def criteria(picoc: Path) -> dict[str, str]:
         items = re.findall(r"^\s*[-*]\s+(.+)$", sm.group(1), re.M) if sm else []
         if not items:
             raise Fail(f"{rel(picoc)} no tiene viñetas en '### {head}'", "regenera el picoc con rsl-picoc (modo parcial)")
-        for i, it in enumerate(items, 1):
-            out[f"{code}{i}"] = it.strip()
+        explicit = [re.match(r"^\**\s*(" + code + r"\d+)\.?\s*\**\s*(.*)$", it.strip(), re.I) for it in items]
+        if all(explicit):
+            for match in explicit:
+                out[match.group(1).upper()] = match.group(2).strip()
+        else:
+            # Legacy picoc: preserve historical numbering until rsl-picoc creates a new version.
+            for i, it in enumerate(items, 1):
+                out[f"{code}{i}"] = it.strip()
     return out
 
 
 def dup_code(crit: dict[str, str]) -> str:
-    return next((c for c, t in crit.items() if c.startswith("CE") and re.search(r"duplicad", t, re.I)), "duplicado")
+    return "DUPLICADO_TECNICO"
 
 
 # --- lectura de exportaciones ---------------------------------------------------

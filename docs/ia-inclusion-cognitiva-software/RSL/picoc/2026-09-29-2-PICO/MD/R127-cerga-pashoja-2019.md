@@ -1,0 +1,875 @@
+# published: 07 August 2019
+
+> Fuente PDF: `R127-cerga-pashoja-2019.pdf` · técnica **locator index** (página + ancla) + chunks Graphify
+
+## Metadata
+- Stem: `R127-cerga-pashoja-2019`
+- PDF: `R127-cerga-pashoja-2019.pdf`
+- DOI: `10.3389/fpsyt.2019.00546`
+- Pages: `10`
+- Structured_at: `2026-09-30T16:59:12+00:00`
+- Technique: `pdf-page-locators + heading-chunks`
+
+## Locator index (qué hay y en qué página del PDF)
+
+| Kind | Label | PDF page | MD anchor |
+|------|-------|----------|-----------|
+| abstract | Abstract / blurb | 1 | `#abstract` |
+| concept | autism spectrum disorder | 1 | `#concept-autism-spectrum-disorder` |
+| concept | adults | ? | `#concept-adults` |
+| concept | adolescents | ? | `#concept-adolescents` |
+| concept | Natural Language Processing | 1 | `#concept-natural-language-processing` |
+| concept | reading Cerga-Pashoja A | 1 | `#concept-reading-cerga-pashoja-a` |
+| concept | Gaete J | ? | `#concept-gaete-j` |
+| concept | especially misinterpreting | 1 | `#concept-especially-misinterpreting` |
+| concept | R127 | ? | `#concept-r127` |
+| concept | cerga | ? | `#concept-cerga` |
+| concept | pashoja | ? | `#concept-pashoja` |
+| concept | 2019 | ? | `#concept-2019` |
+| finding | ORIGINAL RESEARCH published: 07 August 2019 doi: 10.3389/fpsyt.2019.00546 | 1 | `#finding-original-research-published-07-august-2` |
+| page | p.1: ORIGINAL RESEARCH | 1 | `#pdf-p1` |
+| page | p.2: Cerga-Pashoja et al. Reading in Adolescents and Adults With High-Functioning Autism | 2 | `#pdf-p2` |
+| page | p.3: Cerga-Pashoja et al. Reading in Adolescents and Adults With High-Functioning Autism | 3 | `#pdf-p3` |
+| page | p.4: Cerga-Pashoja et al. Reading in Adolescents and Adults With High-Functioning Autism | 4 | `#pdf-p4` |
+| page | p.5: Cerga-Pashoja et al. Reading in Adolescents and Adults With High-Functioning Autism | 5 | `#pdf-p5` |
+| page | p.6: Cerga-Pashoja et al. Reading in Adolescents and Adults With High-Functioning Autism | 6 | `#pdf-p6` |
+| page | p.7: Cerga-Pashoja et al. Reading in Adolescents and Adults With High-Functioning Autism | 7 | `#pdf-p7` |
+| page | p.8: Cerga-Pashoja et al. Reading in Adolescents and Adults With High-Functioning Autism | 8 | `#pdf-p8` |
+| page | p.9: Cerga-Pashoja et al. Reading in Adolescents and Adults With High-Functioning Autism | 9 | `#pdf-p9` |
+| page | p.10: Cerga-Pashoja et al. Reading in Adolescents and Adults With High-Functioning Autism | 10 | `#pdf-p10` |
+
+## Abstract
+<a id="abstract"></a>
+
+ORIGINAL RESEARCH published: 07 August 2019 doi: 10.3389/fpsyt.2019.00546
+
+## Keywords
+
+- autism spectrum disorder
+- adults
+- adolescents
+- Natural Language Processing
+- reading Cerga-Pashoja A
+- Gaete J
+- especially misinterpreting
+
+## Concept index (graph hooks + página)
+
+<a id="concept-autism-spectrum-disorder"></a>
+### [PDF p.1] Concept: autism spectrum disorder
+- Locator: `R127-cerga-pashoja-2019.pdf` · página **1**
+
+<a id="concept-adults"></a>
+### [PDF p.?] Concept: adults
+- Locator: `R127-cerga-pashoja-2019.pdf` · página **?**
+
+<a id="concept-adolescents"></a>
+### [PDF p.?] Concept: adolescents
+- Locator: `R127-cerga-pashoja-2019.pdf` · página **?**
+
+<a id="concept-natural-language-processing"></a>
+### [PDF p.1] Concept: Natural Language Processing
+- Locator: `R127-cerga-pashoja-2019.pdf` · página **1**
+
+<a id="concept-reading-cerga-pashoja-a"></a>
+### [PDF p.1] Concept: reading Cerga-Pashoja A
+- Locator: `R127-cerga-pashoja-2019.pdf` · página **1**
+
+<a id="concept-gaete-j"></a>
+### [PDF p.?] Concept: Gaete J
+- Locator: `R127-cerga-pashoja-2019.pdf` · página **?**
+
+<a id="concept-especially-misinterpreting"></a>
+### [PDF p.1] Concept: especially misinterpreting
+- Locator: `R127-cerga-pashoja-2019.pdf` · página **1**
+
+<a id="concept-r127"></a>
+### [PDF p.?] Concept: R127
+- Locator: `R127-cerga-pashoja-2019.pdf` · página **?**
+
+<a id="concept-cerga"></a>
+### [PDF p.?] Concept: cerga
+- Locator: `R127-cerga-pashoja-2019.pdf` · página **?**
+
+<a id="concept-pashoja"></a>
+### [PDF p.?] Concept: pashoja
+- Locator: `R127-cerga-pashoja-2019.pdf` · página **?**
+
+<a id="concept-2019"></a>
+### [PDF p.?] Concept: 2019
+- Locator: `R127-cerga-pashoja-2019.pdf` · página **?**
+
+
+## Findings index (graph hooks + página)
+
+<a id="finding-original-research-published-07-august-2"></a>
+### [PDF p.1] Finding: ORIGINAL RESEARCH published: 07 August 2019 doi: 10.3389/fpsyt.2019.00546
+- Locator: `R127-cerga-pashoja-2019.pdf` · página **1**
+
+
+## Relevance hooks
+### Theme relevance: software engineering and accessibility
+### Theme relevance: cognitive accessibility and neurodiversity
+### Theme relevance: evaluation metrics and WCAG
+
+## Sections (detected in PDF)
+
+_(no numbered sections auto-detected)_
+
+
+## Page chunks (texto por página del PDF)
+
+_Cada heading es un nodo Graphify. El label incluye la página para volver al PDF sin releer todo._
+
+<a id="pdf-p1"></a>
+### [PDF p.1] ORIGINAL RESEARCH
+- Locator: `R127-cerga-pashoja-2019.pdf` · página **1** / 10
+
+ORIGINAL RESEARCH
+                                                                                                                                                     published: 07 August 2019
+                                                                                                                                                doi: 10.3389/fpsyt.2019.00546
+
+
+
+
+                                                Improving Reading in Adolescents
+                                                and Adults With High-Functioning
+                                                Autism Through an Assistive
+                                                Technology Tool: A Cross-Over
+                                                Multinational Study
+                                                Arlinda Cerga-Pashoja 1,2, Jorge Gaete 3,4, Antoneta Shishkova 5 and Vesna Jordanova 6,7
+                                                1Faculty of Population Health, London School of Hygiene and Tropical Medicine, London, United Kingdom, 2 Central and
+                                                North West London NHS Foundation Trust, London, United Kingdom, 3 Department of Public Health and Epidemiology,
+                                                Faculty of Medicine, Universidad de los Andes, Santiago, Chile, 4 Millennium Nucleus to Improve the Mental Health of
+                                                Adolescents and Youths (Imhay), Santiago, Chile, 5 Parallel World Association, Plovdiv, Bulgaria, 6 Institute of Psychiatry,
+                                                Neurology and Neurosciences, King’s College London, London, United Kingdom, 7 Neurodevelopmental Services, South
+                                                London and Maudsley NHS Foundation Trust, London, United Kingdom
+
+
+
+                                                People with autism spectrum disorder (ASD) experience reading comprehension difficulties,
+                           Edited by:
+                    Elias Aboujaoude,           often misinterpreting complex texts, metaphors, and idioms. We have developed and tested
+                   Stanford University,         a new assistive technology tool for adaptive, personalized text simplification, called Open
+                         United States
+                                                Book. This tool is an open-sourced, online platform that uses Natural Language Processing
+                     Reviewed by:
+                  Christi Carnahan,
+                                                with the specific aim of assisting reading and aiding understanding of written text for people
+            University of Cincinnati,           with ASD. The accessibility and effectiveness of Open Book was tested by examining the
+                      United States             differences in text comprehension scores between the original texts and texts that were
+                     John W. Yuen,
+   Hong Kong Polytechnic University,            simplified by Open Book tool, randomly allocated to study participants. Two hundred forty-
+                        Hong Kong               three participants (153 adults and 90 adolescents) with high-functioning ASD were recruited
+                   Correspondence:              in the UK, Spain, and Bulgaria. Regarding the primary outcome, results showed that both
+                     Vesna Jordanova
+           vesna.jordanova@kcl.ac.uk
+                                                adults and adolescents with ASD gave more correct answers for the simplified (M = 11.2,
+                                                SD = 4.1) than original texts (M = 10, SD = 4.1; p < 0.001). This finding was consistent
+                   Specialty section:           across age groups and countries. Regarding the secondary outcome, when participants
+         This article was submitted to
+                                                were asked to blindly rate how easy was to understand each text, simplified texts were
+                 Public Mental Health,
+               a section of the journal         rated as easier (M = 7.6, SD = 2.4) to understand than the original texts (M = 8.7, SD =
+                Frontiers in Psychiatry         2.6; p < 0.001). The Open Book software seems to have the potential to be a useful tool in
+         Received: 02 January 2019              assisting reading among people with ASD. Our findings support our primary hypothesis that
+            Accepted: 15 July 2019
+         Published: 07 August 2019              texts simplified through Open Book were easier to comprehend compared to original texts.
+                            Citation:           Keywords: autism spectrum disorder, adults, adolescents, Natural Language Processing, reading
+           Cerga-Pashoja A, Gaete J,
+Shishkova A and Jordanova V (2019)
+   Improving Reading in Adolescents
+    and Adults With High-Functioning
+                                                INTRODUCTION
+         Autism Through an Assistive
+      Technology Tool: A Cross-Over
+                                                The autism spectrum disorder (ASD) has been recognized as the fastest growing developmental
+                  Multinational Study.          disability with 1 in 88 children diagnosed having ASD (1). People with ASD experience a range
+            Front. Psychiatry 10:546.           of language deficits, which have a life-long impact on their psychosocial functioning (2). These
+      doi: 10.3389/fpsyt.2019.00546             deficits include difficulties in comprehension of speech and writing, especially misinterpreting
+
+
+Frontiers in Psychiatry | www.frontiersin.org                                            1                                              August 2019 | Volume 10 | Article 546
+
+<a id="pdf-p2"></a>
+### [PDF p.2] Cerga-Pashoja et al. Reading in Adolescents and Adults With High-Functioning Autism
+- Locator: `R127-cerga-pashoja-2019.pdf` · página **2** / 10
+
+Cerga-Pashoja et al.                                                                  Reading in Adolescents and Adults With High-Functioning Autism
+
+
+
+and understanding complex instructions (3). Although                      phenomena such as homographs, multiple meaning words,
+individuals at the higher end of the autistic spectrum appear             phrases, and metaphors (10).
+to have good reading abilities, several studies have shown that               To the knowledge of the authors, there are no reading
+these individuals have difficulties in different components of            comprehension interventions tested among adults with autism,
+written language comprehension. For instance, they fail to                and there are very few studies involving adolescents. In a
+make inferences about social scripts and understand metaphors,            recent review about reading comprehension interventions for
+which interfere with successful social communication (4). Many            school-aged children and adolescents with ASD (23), 12 studies
+individuals with ASD are unable to derive the gist or meaning             were identified, 3 using treatment comparison designs and 8
+of written documents (5–7). Studies show that people with                 using single-case designs. These interventions included strategy
+high-functioning ASD have excellent phonetic decoding (ability            instruction (24–27), explicit instruction (28–30), and anaphoric
+to capture the meaning of unfamiliar words by translating                 cueing (6, 31). None of these interventions have been tested using
+groups of letters back into the sounds that they represent, link          an experimental design or including a large sample. However,
+them to one’s verbal vocabulary, and access their meaning) but            these interventions were time consuming and required a
+poor comprehension (6, 8, 9). Similar results were reported by            facilitator, which increased the cost of the intervention (23). The
+Huemer and Mann (10) who compared reading accuracy with                   field of reading interventions for people with ASD had followed
+reading comprehension in a population with ASD. This study                the research involving students with reading difficulties in
+found that error patterns observed in the participants suggested          general (32, 33), and most of the interventions tested for students
+that children with ASD are more focused on accurately decoding            with ASD have included reading expert recommendations (34).
+text than on preserving the meaning of the passage. This was              However, it seems that there is high need for research-based
+supported in another study where readers with ASD were good               knowledge to enhance reading comprehension performance
+at decoding sounds but had poor comprehension (11). These                 in people with ASD, especially among older adolescents and
+findings also support the evidence that the skill in both decoding        adults (23).
+and linguistic comprehension is necessary if skill in reading is              Assistive technology has been used to enhance communication
+to advance (12). In addition, people with ASD are not able to             and academic skills for children with disabilities (35, 36). The
+use their background knowledge to construct an understanding              use of technology to teach several academic and social skills
+of text (13).                                                             to students with ASD has a long history, since the first study
+    Traditionally, the difficulty with reading comprehension has          reporting the use of a computer to increase understanding of
+been related to the cognitive profile of these readers especially         how letters and sounds form words, and how texts can form
+with their problems to comprehend the perspectives of others              expressions (37, 38). However, very few studies have explored
+(14). Saldana and Frith (15) have found that people with ASD              or tested the use of assistive technology to facilitate reading
+have difficulty with inferences, which appear to be greater in            comprehension among ASD subjects (39).
+text with social content and suggest that these difficulties may              The assistive tool tested in this study was developed in the
+be related to mentalizing deficits and could also influence other         project FIRST (Flexible Interactive Reading Support Tool) by
+reading processes such as referential inferences or attributions of       a multinational group of interdisciplinary researchers that
+authors’ aims. Furthermore, comprehension difficulties have been          involved collaboration between clinical, machine-learning, and
+associated with differences in linguistic information processing          Natural Language Processing (NLP) experts in the UK, Spain,
+causing a negative impact in the metaphor comprehension (16).             and Bulgaria. We adapted Language Technologies resources to
+    Several problems with the pragmatic aspects of language have          design a system called Open Book in three languages—English,
+been found among people with ASD (16, 17). For instance, Dennis           Spanish, and Bulgarian. Further details of this project can be
+et al. (4) studied the different ability to understand pragmatic          found in previous publications (40–42).
+inferences about given or presupposed knowledge in mental                     Open Book is a noncommercial electronic platform that can
+state words. This study confirmed that children with high-                be personalized to meet and support the specific reading needs of
+functioning ASD struggle to understand metaphors and make                 people with autism. It uses Natural Language Processing (NLP)
+inferences about social scripts. These results are also consistent        to make documents for people with autism more accessible.
+with those of Beversdorf et al. (18) who showed that people with          Some of the processes utilized by Open Book include the
+high-functioning ASD recall less of emotional sentences than              following: detection of language obstacles in the text; adding
+nonemotional ones. On the other hand, recent evidence suggest             definition to terms or infrequent (rare) words; adding images to
+that the risk for reading comprehension difficulties is a specific        words in order to aid word visualization; providing synonyms
+characteristic of the social-communication phenotype of many              for infrequent words; providing options to change text format
+high functioning ASD children and adolescents (19–22).                    (e.g., background color, text color); and “magnify” feature which
+    Although there is an abundance of research on reading                 highlights particular sentence to ease focusing users’ attention
+difficulties for children with autism, there seems to be                  and support when following specific text sections. This approach
+a considerable gap in investigation of this issue beyond                  is supported by several studies saying that text comprehension
+adolescence. Nevertheless, a few studies that address language            depends on understanding words and integrating their meaning
+disorders in adults with autism indicate that, although reading           into a mental model of the text (43–45).
+accuracy improves with age in high functioning children                       Open Book can convert a standard document into a
+with autism, they continue to struggle with many linguistic               personalized and simplified version, which was hypothesized
+
+
+Frontiers in Psychiatry | www.frontiersin.org                         2                                        August 2019 | Volume 10 | Article 546
+
+<a id="pdf-p3"></a>
+### [PDF p.3] Cerga-Pashoja et al. Reading in Adolescents and Adults With High-Functioning Autism
+- Locator: `R127-cerga-pashoja-2019.pdf` · página **3** / 10
+
+Cerga-Pashoja et al.                                                                     Reading in Adolescents and Adults With High-Functioning Autism
+
+
+
+that it would be easier to understand. Another feature of the               c) a score of ≥70 in a measure of an intelligence test confirmed by
+platform is that it encompasses two different interfaces—for                clinical records. The study exclusion criteria were as follows: a) not
+independent users with autism and for caregivers such as parents            native speakers of the respective languages, i.e., English, Spanish,
+or teachers. The Open Book independent user can benefit                     and Bulgarian; b) documented history of learning disabilities;
+from assistive elements using features such as “Explain word,”              c) additional diagnosis of dementia or other organic brain
+“Explain with image,” “Provide summary,” or “Ask caregiver” to              disorder that could affect memory; and d) presence of a sensory
+make the text clearer. The program also simplifies complex text             impairment that could prevent reading, writing, or hearing.
+structures by shortening long sentences and clarifies ambiguities.
+Not relying purely on textual changes, the conversion software
+also provides illustrative pictures to selective words and offers
+                                                                            Ethical Approval
+                                                                            All study procedures were in accordance with the ethical
+concise document summaries.
+                                                                            standards of the respective institutional and/or national research
+   The interface designed for caregivers provides them with a
+                                                                            committees and with the 1964 Helsinki declaration and its later
+semiautomatic program where they cannot only convert text using
+                                                                            amendments or comparable ethical standards.
+the NLP technologies implemented in the software but can also
+                                                                                Full ethical approval for the project was sought and received
+make their own editions to the text. They can upload images, review
+                                                                            from each center separately.
+texts from their user’s library, suggest other support if needed,
+                                                                                In the UK, full ethical approval was sought and received
+and/or create new documents. All the documents are collected in
+                                                                            by East of Scotland Research Ethics Service (ref: 13/ES/0059).
+the user’s personal library, which can be arranged with different
+                                                                            Separate ethical approvals were also received by local Research
+folders and labels. A privacy function allows the user to keep select
+                                                                            and Development teams from each NHS site that participated
+documents private and not share them with their caregiver.
+                                                                            in recruitment.
+   The initial software prototype was produced in English,
+                                                                                In Bulgaria, Parallel World received approval from the Ethical
+Spanish, and Bulgarian.
+                                                                            Commission of Plovdiv University St. Paisii Hilendarski. In
+   The aim of this study was to assess the accessibility, utility,
+                                                                            addition, for the control group, permissions were received from
+and the effectiveness of Open Book in simplifying complex texts
+                                                                            the school management where the tests were conducted. Parallel
+by making them easier to understand for adolescents and adults
+                                                                            World is a Registered Administrator of Personal Data according
+with high-functioning ASD in UK, Bulgaria, and Spain.
+                                                                            to the Bulgarian Law for Protection of the Personal Data.
+   The hypothesis was that texts simplified through Open Book
+                                                                                In Spain, consultations were conducted following
+would be easier to comprehend compared to original texts for
+                                                                            internationally accepted ethical regulations, the legal normative
+participants with ASD. It was expected that, when participants
+                                                                            applicable, and the Good Clinical Practice standards (CPMP/
+were tested about written texts’ comprehension, they would give
+                                                                            ICH/135/95). The guidelines of investigation compatible with
+more correct responses on the simplified texts compared to
+                                                                            those suggested by the American Psychological Association for
+original (not-simplified) documents. It was also hypothesized
+                                                                            investigations involving human participants were also followed.
+that participants would blindly rate simplified texts as easier to
+                                                                                The process for obtaining participant informed consent was
+comprehend compared to original texts.
+                                                                            in accordance with the REC guidance and GCP. All participants
+   By improving access of people with autism to written
+                                                                            provided written informed consent. The decision regarding
+information, we ultimately aim to facilitate their empowerment
+                                                                            participation in the project was entirely voluntary. The research
+and social inclusion. Open Book is expected to help individuals
+                                                                            worker emphasized to participants that consent regarding
+with autism to increase their independence by improving access
+                                                                            project participation could be withdrawn at any time without
+to the wealth of textual information that is available in the
+                                                                            penalty or affecting the quality or quantity of their future medical
+information society.
+                                                                            care, or loss of benefits to which the participant was otherwise
+                                                                            entitled. No project-specific testing was done before informed
+                                                                            consent had been obtained.
+MATERIAL AND METHODS                                                            The informed consent forms were signed and dated by all
+                                                                            potential participants/parents before they entered the project.
+Study Design                                                                The research worker explained the details of the project
+Crossover design was used to test (46–48) the effectiveness
+                                                                            and provided a participant information sheet, then allowed
+of Open Book to improve reading comprehension among
+                                                                            participants to consider whether they liked to be involved in
+adolescents and adults with autism spectrum disorder.
+                                                                            the project. The research worker encouraged the participant to
+                                                                            ask any questions that could help them make a decision on their
+Participants                                                                potential involvement in the project.
+All participants who met the following criteria were included                   Informed consent was collected from each participant before
+in the study: a) a formal ICD-10 diagnosis of ASD based on                  they underwent the reading comprehension test, including history
+diagnostic clinical interview conducted by psychiatrists or clinical        taking related to the project. One copy of the informed consent
+psychologists; b) 12–17 years old in the adolescents branch of the          form was kept by the participant, while the other was kept by the
+study undertake in Spain and Bulgaria, and ≥18 years old in the             research worker and was retained in the project Master File.
+adult branch of the study carried out in the UK and Spain; and                  The study was granted by the FP7 EU Grant for Social Inclusion.
+
+
+
+Frontiers in Psychiatry | www.frontiersin.org                           3                                         August 2019 | Volume 10 | Article 546
+
+<a id="pdf-p4"></a>
+### [PDF p.4] Cerga-Pashoja et al. Reading in Adolescents and Adults With High-Functioning Autism
+- Locator: `R127-cerga-pashoja-2019.pdf` · página **4** / 10
+
+Cerga-Pashoja et al.                                                                         Reading in Adolescents and Adults With High-Functioning Autism
+
+
+
+
+Sample Size                                                                      Text selection. Each clinical center in UK and Bulgaria identified
+The sample size calculation was based on the precision with                  12 texts that were appropriate to reading abilities and interests of
+which we will be able to estimate the proportion of participants             respective age groups (adolescents and adults). The research team
+who prefer the simplified text. Based on a clinical assumption               in Spain identified 24 texts in total: 12 for adolescents and 12 for
+that 80% of people with ASD would prefer the simplified text,                adults. Texts for adults were selected from comprehension test
+and using a confidence level of 95%, a sample of 100 participants            batteries used to examine reading comprehension in language
+would allow us to have 80% power to estimate the true proportion             proficiency, e.g., International English Language Testing System
+that prefer the simplified text of between 72 and 88%.                       (IELTS) and Cambridge English Proficiency. All texts identified by
+                                                                             clinical teams were inspected and analyzed by Natural Language
+                                                                             Processing (NLP) specialists, partners in the FIRST project. NLP
+Recruitment                                                                  specialists selected 6 out of 12 texts in each language, which were
+Recruitment involved active collaboration between the clinicians             matched between languages for word length, complexity, and
+in the specialist clinical centers and service user and carers.              number of obstacles. Thus, each adult text used in Spain was
+    The recruitment in the UK was expanded at a national scale               matched for word length and complexity with the texts used in the
+including several important urban areas such as Greater London,              UK. The same was done for adolescent texts in Spain and Bulgaria.
+Leicester, Sheffield, and Plymouth. Majority of the participants                 Text simplifications. The original texts were forwarded to
+were recruited from the National Health Service (NHS). Voluntary             the technical teams who uploaded them into Open Book and
+and charity organizations also played a very important role in               simplified them automatically. The outcome was postedited by the
+reaching recruitment targets. Thus, the National Autistic Society            clinical teams through Open Book caregiver platform. Reading
+played a major role in recruitment activity in the UK.                       obstacles and their resolutions are described in Table 1.
+    In Spain, the recruitment was focused in the whole province
+of Madrid, and it involved specialized diagnostic and treatment
+centers, public and private schools, centers for work mediation              Measures
+for people with ASD, and leisure facilities for people with ASD.             Primary Outcome: Comprehension Score
+    Although the autism diagnostic assessment provision in                   The study participants undertook a reading comprehension
+Bulgaria is sporadic, we have developed a successful collaborative           test under exam conditions. Multiple choice questions (MCQs)
+work with clinical centers who have autism expertise in Sofia and
+Stara Zagora and Parallel World Association (charity organization)
+in Plovdiv.                                                                  TABLE 1 | Reading obstacles and resolutions.
+    All participant services across the three countries used identical
+                                                                             Obstacle                                 Resolution
+recruitment strategy.
+    A researcher arranged to see the adults and the parents of               Multiple copulative coordinated          Substitute with sentences divided by
+children with ASD who expressed an interest in participating                 clauses                                  periods.
+                                                                             Long sentences                           Sentences < 15 words
+in the project. Consent was given by adult participants, and for
+                                                                             Semicolon and suspension points          Avoid the use of semicolon and
+children, it was obtained by their parents.                                                                           suspension points
+    A total of 243 people who met the inclusion criteria completed           Brackets and uncommon punctuation        Avoid uncommon punctuation marks
+the study. A detailed description of the participants is provided            marks (&,%,/…)
+in Table 2.                                                                  Improper grammar                         Correct grammar
+                                                                             Polysemy                                 Avoid using easier synonym. Detect
+                                                                                                                      and highlight when domain is not clear
+Randomization                                                                Phraseological units (idioms,
+                                                                             Lexicalized metaphors)
+                                                                                                                      Substitute by a simple word. Highlight
+                                                                                                                      when substitution is not possible
+Reading comprehension testing that was conducted in a controlled                                                      Provide simple definitions to explain
+environment under exam conditions.                                                                                    phraseological units
+    One hundred fifty-three participants set reading tests                   Slang                                    Substitute infrequent slang with
+in groups of 20 participants. Each participant received three                                                         simpler synonym
+                                                                                                                      Provide simple definitions to explain
+simplified and three original documents. Participants were blind
+                                                                                                                      slang
+to text conditions. Both participants and researchers were blinded           Infrequent acronyms and                  Expand infrequent acronyms and
+to text allocation sequence, which was block randomized by an                abbreviations                            abbreviations
+independent researcher in the UK using a 1:1 ratio.                          Temporal adjectives                      Disambiguate temporal adjectives
+                                                                             Anaphors                                 Resolve all types of anaphors when
+                                                                                                                      possible. Leave anaphors with low
+Materials                                                                                                             resolution confidence level.
+                                                                             Non-lexicalized metaphors                Provide idea of inferred meaning when
+The reading comprehension tests for adults used documents that                                                        possible and highlight
+covered a range of topics: education about general and mental                Long paragraphs                          Divide long paragraphs
+health, sexual health issues, newspapers articles, chapters from             Complex/infrequent words                 Substitute infrequent words with
+electronic novels, and general knowledge articles. The texts for                                                      simpler synonym
+                                                                                                                      Provide simple definitions to explain
+adolescents were selected through children and young books,
+                                                                                                                      infrequent words
+school material, and the Internet.
+
+
+Frontiers in Psychiatry | www.frontiersin.org                            4                                            August 2019 | Volume 10 | Article 546
+
+<a id="pdf-p5"></a>
+### [PDF p.5] Cerga-Pashoja et al. Reading in Adolescents and Adults With High-Functioning Autism
+- Locator: `R127-cerga-pashoja-2019.pdf` · página **5** / 10
+
+Cerga-Pashoja et al.                                                                            Reading in Adolescents and Adults With High-Functioning Autism
+
+
+
+were generated by each clinical team for their respective texts,                    Secondary Outcome: Self-Reported Text Complexity
+with the help of technical partners’ input. MCQs were selected                      The secondary outcome was self-reported text complexity
+based on the original texts so that they could tap into the general                 that was measured on a Likert-type scale, where participants
+comprehension of the text’s content, especially parts of the text                   were asked to blindly rate how easy it was to understand
+with identified obstacles. The MCQs were the same for both                          each text. The scores ranged from 1 (very easy) to 5 (very
+original and simplified texts, and an example of two text versions                  difficult). Therefore, the range of scores for each text was 1–5,
+followed by the MCQ is provided in Figure 1.                                        and overall (for three texts) 3–15. Higher subjective scores
+    Each adult text was followed by six MCQs, and each                              indicated self-reported higher level of comprehension
+adolescents’ texts had four MCQs. This selection was done                           difficulty, while lower scores indicated that the texts were
+to accommodate adolescents’ performance within the same                             easier to understand.
+timeframe as the adults.
+    Each center created a library of 12 texts, 6 original and 6
+modified (simplified) version of original texts, while the MCQs                     Data Analysis
+were the same for each corresponding text. The test battery was                     General features. Descriptive statistics are presented as numbers
+comprised of three original and three simplified texts randomly                     and percentages for categorical variables and means with
+selected for each participant. Both adolescents and adult                           standard deviations for continuous data.
+participants were given 10 min to read each text and answer all                         Primary analyses for primary and secondary outcomes.
+MCQs per text.                                                                      The primary analyses tested the effectiveness of the tool using
+    The primary outcome was the comprehension score                                 repeated measures t-tests for primary and secondary outcomes.
+calculated by adding the text scores for each question. Scores                      The effect size using the Cohen’s d was also calculated (49).
+from the simplified texts were compared with scores from the                            Secondary analyses. Correlation analyses were performed
+original texts. Adult texts were followed by six questions each.                    to assess the association between original and simplified text
+Every right answer was scored as 1, and each wrong answer was                       scores and subjective rating to test if participants were able to
+scored as 0. Therefore, each text score could range from 0 (no                      identify which text was original and which one was simplified.
+correct answer) to 6 (all correct answers) for adults, and 0–4 for                  The scores of the MCQ tests were compared between the
+adolescents. The overall score for original and simplified texts                    original and simplified versions of each text and between the
+was calculated separately by adding the score for each of the                       individuals. Paired t-tests for analyses of comparisons between
+three corresponding texts. The overall range of scoring values are                  the original and simplified texts and independent sample
+0–18 for adults (6 questions × 3 texts) and 0–12 for adolescents                    t-tests for comparisons between individuals were used. Finally,
+(4 questions × 3 texts).                                                            univariable and adjusted regression analyses were performed to
+
+
+
+
+  FIGURE 1 | Example of two text versions followed by a multiple-choice question (MCQ).
+
+
+
+
+Frontiers in Psychiatry | www.frontiersin.org                                   5                                        August 2019 | Volume 10 | Article 546
+
+<a id="pdf-p6"></a>
+### [PDF p.6] Cerga-Pashoja et al. Reading in Adolescents and Adults With High-Functioning Autism
+- Locator: `R127-cerga-pashoja-2019.pdf` · página **6** / 10
+
+Cerga-Pashoja et al.                                                                       Reading in Adolescents and Adults With High-Functioning Autism
+
+
+
+assess the association between participants´ characteristics and            Adult participants had higher IQ scores [109.25 ± 21.4 (75–168)]
+simplified text scores.                                                     than adolescent participants [85.97 ± 13.2 (70–127)] p < 0.001.
+   All data were stored electronically and analyzed with SPSS.                  A prominent characteristic of our adult participants sample
+                                                                            is that they were well educated with just one person educated
+                                                                            to elementary level (see Table 2). More than half of the sample
+RESULTS                                                                     were educated to secondary school level (55.7%) followed
+                                                                            by graduates (35.57%), and MSc and PhD holders (4.03%,
+General Features                                                            respectively). Nevertheless, although adult participants are very
+We invited 445 people to participate in the evaluation task, 140            well educated, high percentages are unemployed, single, and do
+of whom were excluded because they did not meet inclusion                   not live independently (see Table 2).
+criteria, declined to participate, or did not respond to our                    Psychiatric comorbidities were prevalent in our adult
+invitation. Three hundred five people consented to participate; 11          sample, especially depression (25.5%) and anxiety (23.5%), but
+of them dropped out and did not carry out the reading test. The             no psychiatric comorbidities were identified among adolescents.
+main reason for the drop out was poor health on the day of the
+test. Two hundred ninety-four people completed the test, and all
+their data were analyzed. For detailed information, see Figure 2.
+                                                                            Primary Analyses Results
+    A total of 243 subjects (29%, female) participated in this study.       Primary Outcome: Comprehension Score
+Overall age ranged from 12 to 70 years old [adolescents, mean =             The scores in Table 3 indicate the summary of the results of
+14.0 years old (SD = 2.1); adults, mean = 35.3 years old (SD =              correct answers to the MCQs for the original and simplified
+13.1)]. The sample was predominantly male. Considering the                  texts. The scores ranged from 0 to 18 for adults’ texts and 0–12
+moderately homogenic ethnic composition of Bulgaria and Spain,
+the sample was principally (93%) of white ethnic background.
+                                                                            TABLE 2 | Participants’ characteristics.
+
+                                                                            Participant group                      Adults                 Adolescents
+                                                                                                                  (n = 153)                 (n = 90)
+
+                                                                                                                Mean (SD) or              Mean (SD) or
+                                                                                                               frequency (%)             frequency (%)
+
+                                                                            Age                                  35.3 (13.1)                14.0 (2.1)
+                                                                            Gender                                                          11.2 (4.1)
+                                                                               Male                              114 (74.5)
+                                                                               Female                             39 (25.5)
+                                                                            Ethnicity
+                                                                               White                            140 (91.5)                  85 (93.4)
+                                                                               Black                              4 (2.7)                       –
+                                                                               Asian                               3 (2)                     2 (2.2)
+                                                                               Mix                                 3 (3)                        –
+                                                                               Other                              2 (1.7)                       –
+                                                                            IQ score                      109.25 ± 21.4 (75–168)      85.97 ± 13.2 (70–127)
+                                                                            ADHD Diagnosis                     17 (11.1%)                  13 (14.3%)
+                                                                            Special Education Needs              8 (5.2%)                  34 (37.4%)
+                                                                            Education
+                                                                               Mainstream-School                 22 (14.4%)                45 (49.5%)
+                                                                               Mainstream-School                 41 (26.8%)                23 (25.3%)
+                                                                               with Support
+                                                                               Home tuition                            –                     6 (6.6%)
+                                                                               Highest education level
+                                                                               achieved (only adults)
+                                                                               Elementary                          1 (0.7)
+                                                                               Secondary                          83 (55.7)
+                                                                               University                         53 (35.6)
+                                                                               PhD                                 6 (4.0)
+                                                                               MSc                                 6 (4.0)
+                                                                            Occupation (only adults)
+                                                                               Student                            41 (27.0)
+                                                                               Professional                       12 (7.9)
+                                                                               Manager                             2 (1, 3)
+                                                                               Clerical and                       10 (6.6)
+                                                                               Intermediate
+                                                                               Technical and craft                 9 (5.9)
+                                                                               Manual labor                       16 (10.5)
+                                                                               Unemployed                         58 (38.2)
+  FIGURE 2 | Participant flow diagram.
+                                                                               Retired                             4 (2.6)
+
+
+
+Frontiers in Psychiatry | www.frontiersin.org                           6                                              August 2019 | Volume 10 | Article 546
+
+<a id="pdf-p7"></a>
+### [PDF p.7] Cerga-Pashoja et al. Reading in Adolescents and Adults With High-Functioning Autism
+- Locator: `R127-cerga-pashoja-2019.pdf` · página **7** / 10
+
+Cerga-Pashoja et al.                                                                        Reading in Adolescents and Adults With High-Functioning Autism
+
+
+
+TABLE 3 | Text score analysis.
+
+Participant group                  N             Original            Simplified                 Difference in            p value          Effect size d
+                                                Mean (SD)            Mean (SD)                 means (95% CI)
+
+Adults and                       243            10.0 (4.1)               11.2 (4.1)              1.2 (0.9, 1.6)           <0.001               0.3
+adolescents Overall
+Adults                           153            12.0 (3.5)               13.3 (3.3)              1.3 (0.8, 1.8)           <0.001               0.4
+Adolescents                       90             6.6 (2.6)               7.8 (2.8)               1.1 (0.7, 1.6)           <0.001               0.4
+UK adults                         99            12.3 (3.9)               13.8 (3.7)              1.5 (0.8, 2.2)           <0.001               0.4
+Spain adults and                  95             9.3 (3.5)               10.6 (3.2)              1.3 (0.8, 1.7)           <0.001               0.4
+adolescents
+Spain adults                      54            11.5 (2.6)               12.4 (2.1)              1.0 (0.3, 1.7)           0.009                0.4
+Spain adolescents                 41             6.5 (2.1)               8.1 (2.8)               1.7 (1.2, 2.2)           <0.001               0.7
+Bulgaria adolescents              49             6.8 (2.9)               7.4 (2.9)              0.7 (−0.1, 1.4)            0.08
+
+
+
+
+for adolescents’ texts, with each score meaning a correct answer               Secondary Analyses Results
+to a question related to text comprehension. The two sets of text              Association Between Text and Self-Reported Text
+scores were compared through related t-tests. All participants                 Complexity Scores
+had a higher score on the simplified texts than on the original                The correlation coefficients and p values between the original
+texts, meaning that overall both adults and adolescents gave more              text and subjective scores was 0.03 (p = 0.56) and between the
+correct responses for simplified texts compared to original texts.             simplified text and subjective scores was 0.03 (p = 0.67).
+This difference was statistically significant in all groups, with the
+exception among adolescents in Bulgaria. When all participants                 Association Between Participants’ Characteristics
+were included in the analysis, difference in the scores for simplified         and Simplified Text Scores
+texts (M = 11.2, SD = 4.1) and original texts (M = 10, SD = 4.1)               The univariable and adjusted regression analyses between
+conditions was statistically significant (p < 0.001, effect size =             participants’ characteristics and simplified text scores are presented
+0.3). Among different groups, the effect sizes were of medium                  in Table 5. The majority of variables examined were associated with
+magnitude (d = 0.3–0.7). These findings were also consistent across            the simplified text scores in the univariable analyses. The exception
+age groups. Examining age groups separately, adults performed                  was occupation and ADHD, which were not found to be significant.
+better on questions about simplified texts (M = 13.3, SD = 3.3)                Female participants scored higher than male participants, with
+compared to original texts (M = 12, SD = 3.5; p < 0.001, N = 153).             scores 1.6 units higher. Participants with higher IQ values achieved
+Adolescents also gave more correct responses on questions about                higher text scores on simplified texts. A 10-unit increase in IQ was
+simplified content (M = 7.8, SD = 2.8) compared to questions                   associated with a 0.9-unit increase in text score. A higher level of
+about original texts (M = 6.6, SD = 2.6; p < 0.001, N = 90).                   education was also associated with higher outcome values. Those
+                                                                               with university education had scores that were 6.6 units higher, on
+Secondary Outcome: Self-Reported Text Complexity                               average, than those with no or only elementary education. There was
+A similar set of analyses were performed for the participants’ blind           little difference in scores between married and divorced/widowed
+rating about text complexity. Overall, all participants blindly rated          participants. However, single participants had the highest scores.
+simplified texts as easier to understand than the original texts.                   In the multivariable analyses, the results suggested that higher
+This difference was statistically significant in all groups, with the          education was significantly associated with the text scores.
+exception among adolescents in Spain. When all participants were
+included in the analysis, the original text was considered more                DISCUSSION
+difficult to understand (M = 7.6, SD = 2.4) than the simplified text
+(M = 8.7, SD = 2.6; p < 0.001, N = 243). The findings were consistent          The study provides the first clinical evaluation of novel assistive
+for our subgroups of adults and adolescents. See Table 4.                      technology, Open Book, that aims to assist reading comprehension
+
+TABLE 4 | Analysis of subjective scoring.
+
+Participant group                      N           Original         Simplified                  Difference (*)                 p-value           Cohen’s
+                                                  Mean (SD)         Mean (SD)                   Mean (95% CI)                                      d
+
+Adults and adolescents                 243         8.7 (2.6)             7.6 (2.4)             −1.0 (−1.3, −0.7)                <0.001               0.4
+Adults                                 153         9.1 (2.3)             8.0 (2.2)             −1.2 (−1.6, −0.8)                <0.001               0.5
+Adolescents                             90         7.8 (2.9)             7.0 (2.7)             −0.8 (−1.3, −0.3)                0.001                0.3
+UK adults                               99         9.3 (2.3)             8.0 (2.1)             −1.3 (−1.8, −0.8)                <0.001               0.6
+Spain adults and                        95         8.1 (2.4)             7.3 (2.4)             −0.8 (−1.2, −0.3)                0.001                0.3
+adolescents
+Spain adults                           54          8.7 (2.4)             7.8 (2.3)             −0.9 (−1.5, −0.3)                0.006                0.4
+Spain adolescents                      41          7.3 (2.3)             6.7 (2.4)              −0.7 (−1.4, 0.1)                 0.07                0.3
+Bulgaria adolescents                   49          8.3 (3.2)             7.3 (3.0)             −0.9 (−1.6, −0.3)                0.008                0.3
+
+
+
+Frontiers in Psychiatry | www.frontiersin.org                              7                                         August 2019 | Volume 10 | Article 546
+
+<a id="pdf-p8"></a>
+### [PDF p.8] Cerga-Pashoja et al. Reading in Adolescents and Adults With High-Functioning Autism
+- Locator: `R127-cerga-pashoja-2019.pdf` · página **8** / 10
+
+Cerga-Pashoja et al.                                                                                              Reading in Adolescents and Adults With High-Functioning Autism
+
+
+
+TABLE 5 | Univariable and multivariable regression models.
+
+Variable                         Category                     N              Mean (SD)                       Univariable models                       Adjusted model
+
+                                                                                                       Coefficient              p value             Coefficient         p value
+                                                                                                        (95% CI)                                     95% CI)
+
+Gender                           Male                        193              10.9 (4.1)                     0                    0.02
+                                Female                        50              12.5 (4.2)               1.6 (0.3, 2.8)
+ADHD                              No                         204              11.4 (4.1)                     0                    0.26
+                                  Yes                         29              10.5 (3.7)              −0.9 (−2.5, 0.7)
+Psychiatric                       No                         180              10.5 (3.8)                     0                   <0.001
+diagnosis                         Yes                         49              14.1 (3.6)               3.6 (2.4, 4.8)
+IQ (*)                             –                           –                   –                   0.9 (0.7, 1.2)            <0.001
+Education                   None/elementary                   25              7.4 (10.6)                     0                   <0.001                   0              0.04
+                               Secondary                     144              10.6 (3.7)               3.2 (1.7, 4.7)                              0.8 (−0.8, 2.3)
+                               University                     65              14.0 (3.2)               6.6 (5.0, 8.2)                               2.1 (0.2, 4.1)
+Marital                         Married                       59              11.1 (4.1)                     0                   0.007
+status (†)                  Divorced/widow                    16              11.4 (4.5)              0.3 (−1.8, 2.4)
+                                 Single                      115              12.9 (3.4)               1.8 (0.6, 3.0)
+Occupation (†)             Unemployed/retired                 68              12.6 (3.7)                     0                    0.51
+                                Student                       41              12.5 (2.9)              −0.1 (−1.6, 1.4)
+                               Employed                       76              11.9 (4.4)              −0.7 (−2.0, 0.6)
+
+(*) Regression coefficient given for a 10-unit increase in IQ; (†) Data not applicable for Spanish adolescents.
+
+
+
+of written texts in adults and adolescents with ASD. While this is                                  There are some limitations in this study. Even though Open
+not a reading comprehension intervention per se, we have found                                   Books seems to have a positive impact in immediate reading
+that Open Book can help convert written texts into simpler forms,                                comprehension of written texts, we are not able to determine if
+which are easier to understand by people with ASD. Open Book                                     there is a longer-term effect in the reading abilities of our target
+can be used either autonomously or with the online aid of a carer                                group. Furthermore, we could not evaluate the effect of the use of
+or teacher, which makes the tool adaptable to different ages and                                 this assistive technology in the functionality of our participants
+levels of comprehension. Open Book is available in English,                                      and their quality of life. Although we have demonstrated the
+Spanish, and Bulgarian. It automatically simplifies written text by                              potential benefits for high-functioning individuals, the results
+splitting long sentences; replacing metaphors, slangs, and idioms                                may not be generalizable to other people on the autistic spectrum.
+with commonly used synonyms; resolving anaphors, etc. It also
+has the option of replacing some complex words with pictures,
+which was especially used by adolescents and their teachers.                                     CONCLUSIONS
+   Open Book was evaluated by adults and adolescents in UK,
+                                                                                                 The study indicates that assistive technologies could be useful in
+Spain, and Bulgaria. Significant work went towards developing
+                                                                                                 supporting understanding of written text for people with ASD. The
+reading comprehension testing methodology and materials that
+                                                                                                 written texts simplified by the Open Book platform were significantly
+were age specific and matched for the level of complexity across
+                                                                                                 easier to understand by both adults and adolescents with high
+three languages.
+                                                                                                 functioning ASD. This demonstrates a novel direction in translational
+   The evaluation of Open Book indicates that adult and young
+                                                                                                 autism research that opens the doors of interdisciplinary collaboration
+people with ASD benefit from automatic text simplification.
+                                                                                                 and innovation to benefit people with this disabling condition.
+Participants in our study achieved significantly better tests’
+                                                                                                     The next step would be to assess the feasibility of Open Book,
+results when they processed simplified than original texts,
+                                                                                                 its uptake and utility by both people with ASD and their carers in
+which indicates that their understanding of the text content was
+                                                                                                 real-life conditions.
+enhanced when the written information was modified by the
+assistive technology.
+   The effect sizes were of medium magnitude overall, and                                        ETHICS STATEMENT
+for the adolescent sample in Spain, the effect size was large.
+The subjective, blind ratings of self-reported text complexity                                   All study procedures were in accordance with the ethical
+indicated in all instances that simplified versions were deemed as                               standards of the respective institutional and/or national research
+easier to comprehend compared to original texts.                                                 committees and with the 1964 Helsinki declaration and its
+   Advanced education (university studies vs. lower education)                                   later amendments or comparable ethical standards. Full ethical
+was associated with higher text scores. We may hypothesize that                                  approval for the project was sought and received from each
+reading skills improve with education, but it may be explained by                                centre separately. In the UK full ethical approval was sought
+having better cognitive abilities. However, other findings support                               and received by East of Scotland Research Ethics Service (ref:
+the idea that individuals with ASD continue to struggle with                                     13/ES/0059). Separate ethical approvals were also received by
+complex linguistic phenomena (10).                                                               local Research and Development teams from each NHS site that
+
+
+
+Frontiers in Psychiatry | www.frontiersin.org                                                8                                             August 2019 | Volume 10 | Article 546
+
+<a id="pdf-p9"></a>
+### [PDF p.9] Cerga-Pashoja et al. Reading in Adolescents and Adults With High-Functioning Autism
+- Locator: `R127-cerga-pashoja-2019.pdf` · página **9** / 10
+
+Cerga-Pashoja et al.                                                                                   Reading in Adolescents and Adults With High-Functioning Autism
+
+
+
+participated in recruitment. In Bulgaria Parallel World received                         FUNDING
+approval from the Ethical Commission of Plovdiv University
+St. Paisii Hilendarski. Also, for the control group, permissions                         The study was granted by the FP7 EU Grant for Social Inclusion. This
+were received from the School management where the tests                                 study was supported by the Central and North West London NHS
+were conducted. Parallel World is a Registered Administrator of                          Foundation Trust, with assistance from M. Keats and A. Bela. The
+Personal Data according to the Bulgarian Law for Protection of the                       writing contribution of the author JG was supported by Millennium
+Personal Data. In Spain consultations were conducted following                           Science Initiative of the Ministry of Economy, Development and
+internationally accepted ethical regulations, the legal normative                        Tourism, grant “Millennium Nucleus to Improve the Mental Health
+applicable and the Good Clinical Practice standards (CPMP/                               of Adolescents and Youths, Imhay.”
+ICH/ 135/95). The guidelines of investigation compatible with
+those suggested by the American Psychological Association for
+investigations involving human participants were also followed.                          ACKNOWLEDGMENTS
+                                                                                         We gratefully acknowledge the contribution of all the partners of
+AUTHOR CONTRIBUTIONS                                                                     the FIRST study from Wolverhampton University (Prof. R. Mitkov,
+                                                                                         Dr. C. Orasan, and R. Evans); Deletrea Spain (Sandra Freire
+AC-P, AS and VJ designed and executed the study, assisted with                           Prudencio, Juan Martos, A. Gonzalez, and D. Gill); University of
+the data analyses and wrote de paper. JG assisted with the data                          Jaen (M. T. Valdivia, E. M. Cámara, E. Barbu, and A. Ureña López);
+analyses and collaborated with the writing of the results and the                        University of Alicante (P. Moreda and E. Lloret); iWeb Technologies
+whole paper.                                                                             Ltd; Kodar OOD, Bulgaria; Autism Europe (A. Baranger).
+
+
+
+REFERENCES                                                                               14. Baron-Cohen S, Wheelwright S, Hill J, Raste Y, Plumb I. The “Reading the
+                                                                                             Mind in the Eyes” Test revised version: a study with normal adults, and
+  1. Elsabbagh M, Divan G, Koh YJ, Kim YS, Kauchali S, Marcín C, et al. Global               adults with Asperger syndrome or high-functioning autism. J Child Psychol
+     prevalence of autism and other pervasive developmental disorders. Autism                Psychiatry (2001) 42(2):241–51. doi: 10.1017/S0021963001006643
+     Res (2012) 5(3):160–79. doi: 10.1002/aur.239                                        15. Saldana D, Frith U. Do readers with autism make bridging inferences from
+  2. Howlin P, Savage S, Moss P, Tempier A, Rutter M. Cognitive and language                 world knowledge? J Exp Child Psychol (2007) 96(4):310–9. doi: 10.1016/j.
+     skills in adults with autism: a 40-year follow-up. J Child Psychol Psychiatry           jecp.2006.11.002
+     (2014) 55(1):49–58. doi: 10.1111/jcpp.12115                                         16. Gold R, Faust M, Goldstein A. Semantic integration during metaphor
+  3. Minshew NJ, Goldstein G, Siegel DJ. Neuropsychologic functioning                        comprehension in Asperger syndrome. Brain Lang (2010) 113(3):124–34.
+     in autism: profile of a complex information processing disorder. J Int                  doi: 10.1016/j.bandl.2010.03.002
+     Neuropsychol Soc (1997) 3(4):303–16.                                                17. Jolliffe T, Baron-Cohen S. Linguistic processing in high-functioning adults
+  4. Dennis M, Lazenby AL, Lockyer L. Inferential language in high-function                  with autism or Asperger’s syndrome. Is global coherence impaired? Psychol
+     children with autism. J Autism Dev Disord (2001) 31(1):47–54. doi:                      Med (2000) 30(5):1169–87. doi: 10.1017/S003329179900241X
+     10.1023/A:1005661613288                                                             18. Beversdorf DQ, Anderson JM, Manning SE, Anderson SL, Nordgren RE,
+  5. Nation K, Clarke P, Wright B, Williams C. Patterns of reading ability in                Felopulos GJ, et al. The effect of semantic and emotional context on written
+     children with autism spectrum disorder. J Autism Dev Disord (2006) 36(7):​              recall for verbal language in high functioning adults with autism spectrum
+     911–9. doi: 10.1007/s10803-006-0130-1                                                   disorder. J Neurol Neurosurg Psychiatry (1998) 65(5):685–92. doi: 10.1136/
+  6. O’Connor IM, Klein PD. Exploration of strategies for facilitating the                   jnnp.65.5.685
+     reading comprehension of high-functioning students with autism spectrum             19. Randi J, Newman T, Grigorenko EL. Teaching children with autism to
+     disorders. J Autism Dev Disord (2004) 34(2):115–27. doi: 10.1023/B:JADD.0               read for meaning: challenges and possibilities. J Autism Dev Disord (2010)
+     000022603.44077.6b                                                                      40(7):890–902. doi: 10.1007/s10803-010-0938-6
+  7. Frith U, Snowling M. Reading for meaning and reading for sound in                   20. Ricketts J, Jones CRG, Happé F, Charman T. Reading comprehension in
+     autistic and dyslexic children. Br J Dev Psychol (1983) 1(4):329–42. doi:               autism spectrum disorders: the role of oral language and social functioning.
+     10.1111/j.2044-835X.1983.tb00906.x                                                      J Autism Dev Disord (2013) 43(4):807–16. doi: 10.1007/s10803-012-1619-4
+  8. Smith Myles B, Hilgenfeld TD, Barnhill GP, Griswold DE, Hagiwara T,                 21. McIntyre NS, Solari EJ, Gonzales JE, Solomon M, Lerro LE, Novotny S, et al.
+     Simpson RL. Analysis of Reading Skills in Individuals with Asperger                     The scope and nature of reading comprehension impairments in school-aged
+     Syndrome. Focus Autism Other Dev Disabl (2002) 17(1):44–7. doi: 10.1177/​               children with higher-functioning autism spectrum disorder. J Autism Dev
+     108835760201700104                                                                      Disord (2017) 47(9):2838–60. doi: 10.1007/s10803-017-3209-y
+  9. Miniscalco C, Dahlgren Sandberg A. Basic reading skills in Swedish children         22. McIntyre NS, Solari EJ, Grimm RP, E. Lerro L, E. Gonzales J, Mundy PC. A
+     with late developing language and with or without autism spectrum disorder or           comprehensive examination of reading heterogeneity in students with high
+     ADHD. Res Dev Disabil (2010) 31(5):1054–61. doi: 10.1016/j.ridd.2010.04.004             functioning autism: distinct reading profiles and their relation to autism
+ 10. Huemer SV, Mann V. A comprehensive profile of decoding and                              symptom severity. J Autism Dev Disord (2017) 47(4):1086–101. doi: 10.1007/
+     comprehension in autism spectrum disorders. J Autism Dev Disord (2010)                  s10803-017-3029-0
+     40(4):485–93. doi: 10.1007/s10803-009-0892-3                                        23. El Zein F, Solis M, Vaughn S, McCulley L. Reading comprehension
+ 11. Walters KA. Improving reading comprehension and social skills in children               interventions for students with autism spectrum disorders: a synthesis
+     with high functioning autism: an elementary school intervention. Sacramento:            of research. J Autism Dev Disord (2014) 44(6):1303–22. doi: 10.1007/
+     California State University (2011).                                                     s10803-013-1989-2
+ 12. Hoover WA, Gough PB. The simple view of reading. Read Writ (1990)                   24. Åsberg J, Kopp S, Berg-Kelly K, Gillberg C. Reading comprehension, word
+     2(2):127–60. doi: 10.1007/BF00401799                                                    decoding and spelling in girls with autism spectrum disorders (ASD)
+ 13. Cox D. Oral reading performance and the synergy of fluency, comprehension,              or attention-deficit/hyperactivity disorder (AD/HD): performance and
+     and motivation: a case study of a sixth grade class. Texas: Texas Tech                  predictors. Int J Lang Commun Disord (2010) 45(1):61–71. doi: 10.3109/​
+     University (2007).                                                                      13682820902745438
+
+
+
+Frontiers in Psychiatry | www.frontiersin.org                                        9                                            August 2019 | Volume 10 | Article 546
+
+<a id="pdf-p10"></a>
+### [PDF p.10] Cerga-Pashoja et al. Reading in Adolescents and Adults With High-Functioning Autism
+- Locator: `R127-cerga-pashoja-2019.pdf` · página **10** / 10
+
+Cerga-Pashoja et al.                                                                                         Reading in Adolescents and Adults With High-Functioning Autism
+
+
+
+ 25. Wahlberg T, Magliano JP. The ability of high function individuals with autism               J Autism Dev Disord (2015) 45(5):1213–29. doi: 10.1007/s10803-014-
+     to comprehend written discourse. Discourse Process (2004) 38(1):119–44.                     2280-x
+     doi: 10.1207/s15326950dp3801_5                                                          40. Gonzalez-Navarro A, Freire-Prudencio S, Gil D, Martos-Perez J, Jordanova V,
+ 26. Whalon K, Hanline MF. Effects of a reciprocal questioning intervention on                   Cerga-Pashoja A, et al. FIRST: a tool for facilitating reading comprehension
+     the question generation and responding of children with autism spectrum                     in high-functioning autism spectrum disorder. Rev Neurol (2014) 58 Suppl
+     disorder. Educ Train Dev Disabil (2008) 43(3):367–87.                                       1:S129–35. doi: 10.33588/rn.58S01.2014003
+ 27. Van Riper, I. The Effects of the Directed Reading-thinking Activity on Reading          41. Martín Valdivia MT, Martínez Cámara E, Barbu E, Ureña López LA,
+     Comprehension Skills of Middle School Students with Autism. Widener D,                      Moreda P, Lloret E. Proyecto FIRST (Flexible Interactive Reading Support
+     editor. Chester, PA: Widener University (2010).                                             Tool): desarrollo de una herramienta para ayudar a personas con autismo
+ 28. Ganz JB, Flores MM. The effectiveness of direct instruction for teaching                    mediante la simplificación de textos. Procesamiento del Lenguaje Natural
+     language to children with autism spectrum disorders: identifying materials.                 (2014) 53:143–6.
+     J Autism Dev Disord (2009) 39(1):75–83. doi: 10.1007/s10803-008-0602-6                  42. Cerga-Pashoja A, Jordanova V. Protocol of improving reading comprehension
+ 29. Flores MM, Ganz JB. Effectiveness of direct instruction for teaching statement              for adults and children with autistic spectrum disorders through a computer
+     inference, use of facts, and analogies to students with developmental                       supported intervention in a crossover study. BAOJ Psychol (2016) 1:003. doi:
+     disabilities and reading delays. Focus Autism Other Dev Disabl (2007)                       10.24947/baojp/1/2/00103
+     22(4):244–51. doi: 10.1177/10883576070220040601                                         43. Perfetti C, Yang C-L, Schmalhofer F. Comprehension skill and word-to-text
+ 30. Knight VF. Effects of supported electronic text and explicit instruction on                 integration processes. Appl Cognit Psychol (2008) 22(3):303–18. doi: 10.1002/
+     science comprehension by students with autism spectrum disorder. Charlotte,                 acp.1419
+     NC: The University of North Carolina at Charlotte (2010).                               44. Yang CL, Perfetti CA, Schmalhofer F. Event-related potential indicators of
+ 31. Campbell MA. Effects of pronoun identification instruction on text comprehension            text integration across sentence boundaries. J Exp Psychol Learn Mem Cogn
+     for children with autism. Teaneck, NJ: Fairleigh Dickinson University (2010).               (2007) 33(1):55–89. doi: 10.1037/0278-7393.33.1.55
+ 32. Solis M, Ciullo S, Vaughn S, Pyle N, Hassaram B, Leroux A. Reading                      45. Perfetti C, Stafura J. Word knowledge in a theory of reading comprehension.
+     comprehension interventions for middle school students with learning                        Sci Stud Read (2014) 18(1):22–37. doi: 10.1080/10888438.2013.827687
+     disabilities. J Learn Disabil (2012) 45(4):327–40. doi: 10.1177/0022219411402691        46. Mills EJ, Chan AW, Wu P, Vail A, Guyatt GH, Altman DG. Design, analysis,
+ 33. Edmonds MS, Vaughn S, Wexler J, Reutebuch C, Cable A, Tackett KK, et al.                    and presentation of crossover trials. Trials (2009) 10:27. doi: 10.1186/1745-
+     A synthesis of reading interventions and effects on reading comprehension                   6215-10-27
+     outcomes for older struggling readers. Rev Educ Res (2009) 79(1):262–300.               47. Elbourne DR, Altman DG, Higgins JP, Curtin F, Worthington HV, Vail
+     doi: 10.3102/0034654308325998                                                               A. Meta-analyses involving cross-over trials: methodological issues. Int J
+ 34. National Reading Panel (US). International Reading Association. Evidence-                   Epidemiol (2002) 31(1):140–9. doi: 10.1093/ije/31.1.140
+     based reading instruction: putting the National Reading Panel report into               48. Maclure M. The case-crossover design: a method for studying transient
+     practice. Newwark, NJ: International Reading Association (2002).                            effects on the risk of acute events. Am J Epidemiol (1991) 133(2):144–53. doi:
+ 35. Edyburn DL. 2003 in review: a synthesis of the special education                            10.1093/oxfordjournals.aje.a115853
+     technology literature. J Spec Educ Technol (2004) 19(4):57–80. doi:                     49. Cohen J. Statistical power analysis for the behavioral sciencies. London, United
+     10.1177/016264340401900407                                                                  Kingdom: Routledge (1977).
+ 36. Edyburn DL. Technology-enhanced reading performance: defining a
+     research agenda. Read Res Q (2007) 42(1):146–52. doi: 10.1598/RRQ.42.1.7                Conflict of Interest Statement: The authors declare that the research was
+ 37. Knight V, McKissick BR, Saunders A. A review of technology-based                        conducted in the absence of any commercial or financial relationships that could
+     interventions to teach academic skills to students with autism spectrum                 be construed as a potential conflict of interest.
+     disorder. J Autism Dev Disord (2013) 43(11):2628–48. doi: 10.1007/s10803-013-
+     1814-y                                                                                  Copyright © 2019 Cerga-Pashoja, Gaete, Shishkova and Jordanova. This is an open-
+ 38. Colby KM. The rationale for computer-based treatment of language                        access article distributed under the terms of the Creative Commons Attribution License
+     difficulties in nonspeaking autistic children. J Autism Child Schizophr (1973)          (CC BY). The use, distribution or reproduction in other forums is permitted, provided
+     3(3):254–60. doi: 10.1007/BF01538283                                                    the original author(s) and the copyright owner(s) are credited and that the original
+ 39. Knight VF, Sartini E. A comprehensive literature review of comprehension                publication in this journal is cited, in accordance with accepted academic practice. No
+     strategies in core content areas for students with autism spectrum disorder.            use, distribution or reproduction is permitted which does not comply with these terms.
+
+
+
+
+Frontiers in Psychiatry | www.frontiersin.org                                           10                                                August 2019 | Volume 10 | Article 546

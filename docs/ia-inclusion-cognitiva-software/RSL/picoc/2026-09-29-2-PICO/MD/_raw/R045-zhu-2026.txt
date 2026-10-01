@@ -1,0 +1,1578 @@
+===== PDF PAGE 1 / 24 =====
+                                                 Scaffolding Metacognition with GenAI: Exploring Design
+                                                 Opportunities to Support Task Management for University
+                                                                   Students with ADHD
+                                                               Zihao Zhu                                                 Junnan Yu                                   Yuhan Luo∗
+                                                Department of Computer Science                                    School of Design                       Department of Computer Science
+                                                 City University of Hong Kong                                The Hong Kong Polytechnic                    City University of Hong Kong
+                                                    Hong Kong SAR, China                                             University                              Hong Kong SAR, China
+                                                 zihaozhu9-c@my.cityu.edu.hk                                   Hong Kong SAR, China                          yuhanluo@cityu.edu.hk
+                                                                                                              junnan.yu@polyu.edu.hk
+
+
+
+
+arXiv:2602.09381v1 [cs.HC] 10 Feb 2026
+                                         Abstract                                                                                1   Introduction
+                                         For university students transitioning to an independent and flexi-                      Attention-Deficit/Hyperactivity Disorder (ADHD) is a neurodevel-
+                                         ble lifestyle, having ADHD poses multiple challenges to their aca-                      opmental disorder characterized by inattention, hyperactivity, and
+                                         demic task management, which are closely tied to their metacog-                         impulsivity [5, 86]. Recent studies estimate that at least 3–7% of
+                                         nitive struggles—difficulties in awareness and regulation of one’s                      adults worldwide are affected by ADHD [129], and this number
+                                         own thinking processes. The recently surged Generative AI shows                         could be largely underestimated due to variations in symptom pre-
+                                         promise to mitigate these gaps with its advanced information un-                        sentation, underdiagnosis, and stigma [2, 44, 104]. In particular,
+                                         derstanding and generation capabilities. As an exploratory step, we                     for university students who are transitioning to adulthood and
+                                         conducted co-design sessions with 20 university students diagnosed                      independent living, having ADHD can impose unique challenges
+                                         with ADHD, followed by interviews with five experts specialized in                      in managing multiple academic responsibilities [149, 150]. They
+                                         ADHD intervention. Adopting a metacognitive lens, we examined                           often struggle to organize tasks, stay focused, and form consis-
+                                         participants’ ideas on GenAI-based task management support and                          tent daily routines, which can lead to incomplete or rushed assign-
+                                         experts’ assessments, which led to three design directions: provid-                     ments [62, 80, 109], and in worse cases, result in suspension or
+                                         ing cognitive scaffolding to enhance task and self-awareness, pro-                      dropout [12, 35, 149, 156].
+                                         moting reflective task execution for building metacognitive abilities,                      Research has suggested that the struggles faced by individuals
+                                         and facilitating emotional regulation to sustain task engagement.                       with ADHD, such as frequent distraction, forgetfulness, and pro-
+                                         Drawing on these findings, we discuss opportunities for GenAI to                        crastination, stem in part from challenges of metacognition, which
+                                         support the metacognitive needs of neurodivergent populations,                          involve reduced awareness and poor control of one’s own cognitive
+                                         offering future directions for both research and practice.                              processes [18, 25, 38]. This line of research has shown that enhanc-
+                                                                                                                                 ing metacognition—the knowledge of one’s cognitive and learning
+                                         CCS Concepts                                                                            process—has therapeutic effects on ADHD populations, as it targets
+                                         • Human-centered computing → Accessibility design and                                   cultivating awareness of one’s own attentions and thought pat-
+                                         evaluation methods; • Social and professional topics → People                           terns [57, 68]. As such, researchers have developed metacognitive
+                                         with disabilities.                                                                      interventions or therapy designed to improve self-awareness and
+                                                                                                                                 self-monitoring abilities of individuals with ADHD [57, 81, 107, 127].
+                                                                                                                                 These interventions are not merely simple reminders or prompts,
+                                         Keywords
+                                                                                                                                 but carefully-designed strategies that promote deep reflection and
+                                         ADHD, LLMs, accessibility, neurodivergence, co-design                                   self-assessment, such as mind maps and sketch-noting, which have
+                                         ACM Reference Format:                                                                   proven to be effective in helping individuals with ADHD synthesize
+                                         Zihao Zhu, Junnan Yu, and Yuhan Luo. 2026. Scaffolding Metacognition with               information and make plans [57, 127].
+                                         GenAI: Exploring Design Opportunities to Support Task Management for                        At the same time, advances in technology open up new possibil-
+                                         University Students with ADHD. In Proceedings of the 2026 CHI Conference on             ities for scaffolding the metacognitive process. In particular, the re-
+                                         Human Factors in Computing Systems (CHI ’26), April 13–17, 2026, Barcelona,             cent surge of Generative Artificial Intelligence (GenAI) technologies
+                                         Spain. ACM, New York, NY, USA, 24 pages. https://doi.org/10.1145/3772318.               (e.g., GPT-5 and Gemini 2.5 Pro) has been rapidly integrated into
+                                         3790697                                                                                 everyday productivity tools [27, 92]. With the advanced capabilities
+                                                                                                                                 in information understanding and generation, these technologies
+                                         ∗ Corresponding author.
+                                                                                                                                 have been applied from work scheduling [48] to focus compan-
+                                                                                                                                 ion [26, 72], and from creative writing assistance [103] to program-
+                                                                                                                                 ming toolkits [53]. Despite the prevalence, most of these tools were
+                                                                                                                                 designed for neurotypical populations, and little is known about
+                                         This work is licensed under a Creative Commons Attribution 4.0 International License.   how individuals with ADHD can benefit from them and what as-
+                                         CHI ’26, Barcelona, Spain
+                                         © 2026 Copyright held by the owner/author(s).
+                                                                                                                                 pects of their needs are yet to be addressed from a metacognitive
+                                         ACM ISBN 979-8-4007-2278-3/2026/04                                                      perspective. In this light, our research question is: how GenAI
+                                         https://doi.org/10.1145/3772318.3790697
+
+===== PDF PAGE 2 / 24 =====
+CHI ’26, April 13–17, 2026, Barcelona, Spain                                                                  Zihao Zhu, Junnan Yu, and Yuhan Luo
+
+
+can be utilized to support the metacognitive process of indi-           challenging for those with ADHD [64, 77]. In particular, this group
+viduals with ADHD in task management. University students,              usually faces pressure to meet competing deadlines and manage
+who face both academic and developmental transitions, represent a       multiple schedules without the structured support systems they
+particularly important group for such inquiry.                          had in their earlier life [64, 77]. Research indicates that these stu-
+   To answer the research question, we conducted a series of in-        dents face a heightened risk of academic underperformance, poor
+dividual co-design workshops with 20 university students diag-          time management, and emotional distress [119, 149]. Furthermore,
+nosed with ADHD and interviewed five ADHD experts (coaches              ADHD often coexists with other neurodivergences that also affect
+or intervention specialists) to evaluate and provide feedback on        learning (e.g., dyslexia and dysgraphia), as well as mental health
+participants’ design ideas. Drawing from both the co-design ses-        conditions (e.g., anxiety and depression), compounding its impact
+sions and expert interviews, we identified the key challenges that      on students’ productivity and well-being [59, 60, 132].
+participants encountered in task management in relation to their           To accommodate the unique learning challenges of students with
+metacognitive process that spans metacognitive knowledge (judg-         ADHD, many institutions have implemented accommodations (e.g.,
+ing task demands and one’s capacity), abilities (monitoring and         extra exam time), learning assistance (e.g., note-taking services) [77,
+control), and emotion (awareness and regulation). To address these      119, 156], and assistive technologies (e.g., colour-coding for watched
+challenges, participants created designs that leverage GenAI to in-     and unwatched videos and checklists for progress tracking) [138].
+tegrate fragmented task information, calibrate time allocation, col-    These actions were designed to alleviate students’ anxiety and
+laboratively decompose tasks, and serve as study companions, etc.       perceived academic pressure while reducing cognitive load. At
+While acknowledging the values of these designs, experts pointed        the same time, the institutions may provide counseling support
+their potential risks regarding cognition outsourcing and unhealthy     or behavioral interventions (e.g., Cognitive Behavioral Therapy,
+dependence. Synthesizing both perspectives, we distilled three de-      ADHD coaching) to those with special learning needs [7, 14, 125,
+sign directions: providing cognitive scaffolding to enhance self and    133]. For students with more severe conditions, they often need to
+task awareness, promoting reflective task execution for building        rely on medications [14].
+metacognitive abilities, and facilitating emotional regulation for
+sustaining task engagement.
+   Building on the findings, we discuss how GenAI can be best uti-
+                                                                        2.2    Metacognition and Metacognitive
+lized to enhance metacognition in task management for individuals              Developments in ADHD Populations
+with ADHD. Specifically, we call for promoting reflection rather        Metacognition was coined by John Flavell in the late 70s while un-
+than fully automating tasks, balancing intrinsic interests with ex-     derstanding children’s cognitive processes [39], referring to “one’s
+ternal constraints, and encouraging emotional growth rather than        knowledge concerning their own cognitive processes and products or
+fostering reliance. Thus, the contributions of this work include: (1)   anything related” [39, 148]. In later research, metacognition also
+an empirical understanding of the task management challenges            appears to play an important role in several problem-solving and
+faced by university students with ADHD from a metacognitive             learning contexts among adults [37, 117, 134]. For instance, Swan-
+perspective; (2) design implications for GenAI to scaffold metacog-     son characterized metacognition as individuals’ awareness of their
+nition in supporting task management, grounded in students’ lived       capacity to monitor, regulate, and control their own activities [134].
+experience and expert insights; and (3) a practical research agenda     While the operation of metacognition may vary by context, re-
+for leveraging GenAI to support metacognition in the task manage-       searchers are in consensus that it typically has four components:
+ment for neurodivergent populations.                                    metacognitive knowledge, metacognitive experience, goals (or tasks),
+                                                                        and actions (or strategies) [37, 40, 117]. Specifically, metacognitive
+2     Related Work                                                      knowledge is about one’s awareness of their abilities and surround-
+                                                                        ings; metacognitive experience refers to one’s subjective feelings
+In this section, we first cover related work on ADHD among uni-         and implicit cues that inform their cognitive process; goals are
+versity students, the unique productivity challenges they face, and     the objectives that one aims to complete; and actions involve their
+existing approaches to support their productivity. We then intro-       plans and behaviours to achieve the goal [40]. Nelson and Narens
+duce the concept of metacognition and research on metacognitive         subsequently elaborated and classified the metacognitive model
+developments in ADHD populations, along with related interven-          into meta-level and object-level, explaining the interaction between
+tions. Next, we discuss emerging opportunities for GenAI to support     these two levels through the introduction of monitoring and con-
+productivity by enhancing metacognitive knowledge and skills.           trol [88]. Monitoring involves the passive reception and evaluation
+                                                                        of the object-level by the meta-level, allowing individuals to update
+2.1     ADHD Among University Students                                  their understanding of the current context. Control involves active
+ Attention-deficit/hyperactivity disorder (ADHD) is a neurodevel-       regulation and modification of the object-level by the meta-level,
+opmental disorder marked by persistent difficulties with attention,     guiding subsequent cognitive actions [88]. Prior work often col-
+excessive activity, and impulsive behavior [5, 10, 41, 89]. These       lectively refers to metacognitive monitoring and metacognitive
+symptoms pose barriers for individuals to effectively manage their      control as metacognitive abilities [136, 137, 142].
+attention and emotions, often making them struggle when han-               A related term, executive functioning (EF), is often mixed with
+dling complex, multi-step tasks [62, 90, 97]. For university students   metacognition [31]. Although similar to metacognition in its moni-
+transitioning from adolescence to adulthood, the need to balance        toring of cognitive activity, EF differs by involving direct control
+independent living with academic workloads can be particularly          and inhibition; its theoretical frameworks emphasize the ability to
+
+===== PDF PAGE 3 / 24 =====
+Scaffolding Metacognition with GenAI                                                                      CHI ’26, April 13–17, 2026, Barcelona, Spain
+
+
+manage impulses and attention to override internal predispositions      prolonged pauses to prompt users to refocus [28]. Similarly, Wills
+or external distractions [31, 110]. For instance, in the context of     and Mason designed a self-monitoring application and sent regular
+monitoring excessive smartphone use, metacognition might involve        prompts (e.g., “Are you on task?”) to encourage reflection and im-
+understanding one’s own smartphone use habits (awareness) [20],         prove task engagement in children with ADHD [154]. Some studies
+while EF may focus on the skill to suppress the urge to use smart-      use biofeedback technologies to manage ADHD symptoms, such as
+phones (control/inhibition) [111]. HCI researchers have extensively     DEEP, which employs a stretch sensor belt to help children relax
+researched individuals with ADHD through the lens of EF, such as        during class, while Jiang and Johnstone used electroencephalogram
+supporting attention control and self-regulated learning [22, 130].     (EEG) devices to enhance individuals’ behavioral control through
+While this line of research has contributed to the underlying con-      interactive computer games [55, 145].
+trol mechanisms that individuals with ADHD struggle with, we                In recent years, the emergence of Generative AI (GenAI) has
+adopted the metacognitive lens because it allows us to understand       enabled new forms of productivity support. One of the most promi-
+this group from an underexplored perspective, such as the aware-        nent strengths of GenAI is its ability to handle repetitive tasks, such
+ness, monitoring, and evaluative processes that drive their thoughts    as composing emails, developing and debugging code, and manag-
+and behaviors.                                                          ing routine customer inquiries [65, 141, 143]. In addition, GenAI has
+   On the one hand, research has shown individuals with ADHD            proven effective in processing large datasets and summarizing com-
+experience challenges in metacognition, characterized by limited        plex information. In patent applications, it can reduce human error
+awareness and poor control of their own cognitive process [18],         and enhance efficiency by analyzing patent claims and abstracts
+including both bodily (interoception) and emotional (alexithymia)       [49, 56]. Furthermore, GenAI has been shown to foster creativity—
+awareness [63, 112], which manifest as productivity challenges          studies have shown that ChatGPT can help UX designers discover
+such as procrastination, difficulties in task organization, time man-   and define stages by simulating stakeholders and building user pro-
+agement, and attention monitoring [4, 126, 127]. As a result, this      files, thereby inspiring and shaping innovative design ideas [161].
+group often finds it challenging to stay focused and struggles to       Researchers also explored the use of GenAI to help people resist
+develop effective plans to achieve their goals [18]. In response, re-   distractions during work hours. For instance, Li and Liang et al.
+searchers have integrated metacognitive interventions into ADHD         built StayFocused powered by GPT-3, which prompts university
+treatment. For example, Re et al. conducted a group training pro-       students to reflect on their compulsive smartphone use in natural
+gram, where children with ADHD were taught about strategies             conversations, and was shown to be promising in reducing screen
+to maintain attention and self-control, and to understand the time      time over a long period of time [72].
+required to complete an activity, which effectively improved their          At the same time, researchers have been studying how to en-
+attention control and working memory, and reduced impulsive be-         hance individuals’ metacognitive skills in GenAI environments [157,
+haviors [107]. Darehshoori Mohammadi et al. demonstrated that           157, 159]. For example, Xu et al. developed a metacognitive support
+metacognitive therapy, including mindfulness, attention training        framework based on the self-regulated learning (SRL) model, which
+techniques, and regulatory skills training, successfully alleviated     prompted college students to make plans for using GenAI, clarify
+behavioral problems arising from emotional dysregulation in chil-       their prior knowledge, and summarize the concept learned from
+dren with ADHD and improved their ability to regulate and manage        GenAI, which effectively improved their task strategies and self-
+emotions through cognitive processes [81]. There is also metacogni-     evaluation abilities [157]. Lin et al. identified several AI-assisted
+tive therapy specifically designed for adults with ADHD to improve      metacognitive strategies in academic reading, including goal setting,
+their time management ability, which involves contingent self-          planning, and critical thinking [73]. In addition, Zhang and Wang
+rewards for completing aversive tasks, decomposing complex tasks        found that GenAI can help learners develop stronger analytical
+into manageable steps, and sustaining motivation by visualizing         thinking in high-level knowledge building, such as proposing re-
+long-term rewards [127]. On the other hand, despite the effective-      search designs based on what they have learned [159]. Meanwhile,
+ness of these metacognitive interventions, there has been limited       researchers recognized the risks of leveraging GenAI for work and
+research examining how these strategies can be operationalized in       study, which may inhibit the metacognitive process as individuals
+technology design, particularly with the recent surge of GenAI as       outsource their problems [69, 71, 159]. Over time, individuals may
+part of our everyday productivity life.                                 develop reliance on GenAI, which could erode their ability to assess
+                                                                        progress, detect errors, or adapt strategies [69].
+                                                                            These tensions highlight the double-edged nature of GenAI:
+2.3    Productivity Support Technologies for                            while it can scaffold metacognition, it can also undermine the metacog-
+       ADHD and Opportunities for GenAI                                 nitive process if not carefully designed. In light of both opportunities
+Researchers have developed assistive technologies to enhance pro-       and challenges, our study aims to investigate how GenAI can be
+ductivity for individuals with ADHD, ranging from supporting rou-       best leveraged to help university students with ADHD overcome
+tine formation, behavior monitoring, and emotion regulation. For        metacognitive challenges in academic task management. As the
+example, Barriga used mobile phones to help individuals establish       first step, we set out to understand the perspectives of both the stu-
+structured routines and manage physical activities [9], and Moroy-      dents with ADHD and experts who are experienced in supporting
+oqui et al. leverage gesture and voice input on smartwatches to         this group.
+simplify task creation and daily activities tracking [84]. In another
+case, DePrenger et al. designed smart pens with accelerometers to
+track individuals’ attention during reading, sending alerts when
+
+===== PDF PAGE 4 / 24 =====
+CHI ’26, April 13–17, 2026, Barcelona, Spain                                                                                    Zihao Zhu, Junnan Yu, and Yuhan Luo
+
+
+3     Method                                                                              evaluation sessions (as shown in Table 2), including three ADHD
+We conducted individual co-design sessions with 20 university                             Intervention Specialists (practitioners who deliver structured, skills-
+students diagnosed with ADHD to examine their unique needs                                oriented interventions for people with ADHD) and two ADHD
+for academic task management support. To further understand the                           Coaches (professionals who provide practical, day-to-day support
+feasibility and potential usage of their design ideas, we conducted                       for people with ADHD and are certified in ADHD coaching), aged
+in-depth interviews with five experts (intervention specialists and                       between 24 and 47 (M = 35.6, SD = 7.66). All ADHD experts were
+coaches) who have extensive experience treating individuals with                          located in Mainland China, and each was compensated with 250
+ADHD. Their feedback helped us understand participants’ design                            RMB as a token of appreciation for their participation.
+ideas from feasibility and clinical relevance perspectives, as well
+as identify potential gaps or misconceptions in participants’ task                        3.2    Co-Design Sessions
+management approaches. All the co-design and interview sessions
+                                                                                          Each co-design session started with a warm-up activity for mutual
+were led by the first author. The study was approved by the author’s
+institutional ethics review committee.                                                    learning where participants shared their task management chal-
+                                                                                          lenges in academic life, and the researcher facilitator provided an
+                                                                                          overview of existing GenAI technologies. Next, each participant fo-
+3.1      Participants
+                                                                                          cused on a specific task management challenge mentioned earlier to
+3.1.1 University Students with ADHD. We recruited participants                            create GenAI-powered technology solutions, while thinking aloud
+through social media platforms, including RedNote, Douban, and                            their design rationale. Lastly, participants were asked to reflect on
+QQ groups, which are popular social media platforms in China.                             their designs and elaborate on additional thoughts regarding how
+Among the 52 responses we received, 46 people met the following                           they envision using the support in daily life. The entire session was
+inclusion criteria: individuals who (1) were at least 18 years old and                    conducted remotely via the Tencent Meeting software and lasted be-
+currently enrolled as undergraduate students at a university; (2) had                     tween 70 and 100 minutes. All communications were in Mandarin
+been diagnosed with ADHD and could provide medical evidence                               Chinese and later translated into English for the paper writing,
+(e.g., doctor’s note and/or prescription) before participating in the                     and we acknowledge the possibility of minor differences in expres-
+study; (3) self-reported experiencing task management challenges                          sion [123, 146]. The upper panel of Figure 1 depicts representative
+in academia and were interested in improving their academic task                          stages of the co-design procedure.
+management with the help of technology; and (4) had access to                                It is noteworthy that we adopted an open-ended co-design stance
+computer or tablet for participating in a remote co-design study.                         to minimize framing effects. Rather than instructing participants
+From the pool of eligible participants, we ensured a balanced gender                      to design for “metacognition” (which could bias ideas toward re-
+representation when selecting individuals for the co-design ses-                          searcher language and canonical constructs), we invited them to
+sions. We continued recruiting participants alongside data analysis                       envision any ways GenAI could support their academic task man-
+until data saturation was reached, meaning no new information or                          agement. This choice preserved ecological validity and allowed
+insights emerged regarding the challenges participants mentioned                          needs and strategies to emerge in participants’ own terms, while
+or their proposed new design ideas [43], at which point the final                         still enabling us to derive features related to metacognitive strate-
+number of participants was determined. Eventually, as shown in                            gies afterwards.
+Table 1, 20 university students participated in and completed the co-
+design sessions, including 11 females and 9 males, with ages ranging
+                                                                                          3.2.1 Warm-up Activity. To contextualize participants within their
+from 19 to 24 (M = 21.4, SD = 1.31). All participants were Chinese
+                                                                                          academic activities, we first invited them to introduce themselves,
+but residing in different countries and regions: 17 participants were
+                                                                                          including their study major and daily routines. We then asked
+located in Mainland China, and the other three participants resided
+                                                                                          participants to describe how they manage multiple academic tasks,
+in South Korea (P4), Australia (P16), and Canada (P8), respectively.
+                                                                                          the challenges they faced, and strategies they had employed to
+Most participants used ChatGPT, while some also used ERNIE Bot
+                                                                                          navigate these challenges, such as tools or resources they rely on.
+(P5, P6, P14), Claude (P16), or other tools like Replika (P5), Mid-
+                                                                                             Next, we provided participants with an overview of GenAI’s
+journey (P5), and Pi (P5) 1 . Each participant received 100 RMB as a
+                                                                                          key capabilities. While most participants were already familiar
+token of appreciation for their participation.
+                                                                                          with GenAI (e.g., ChatGPT [92], and ERNIE Bot [8]) and had been
+3.1.2 ADHD Experts. Following the completion of all co-design                             actively using it for productivity support, we prepared a shared
+sessions and the analysis of participants’ design ideas, we invited                       slide highlighting its ability to understand and generate multimedia
+experts in ADHD to evaluate the proposed designs. We recruited                            content, along with several application areas, ranging from pro-
+experts through RedNote based on the following inclusion criteria:                        gramming assistant (e.g., Copilot [45]), writing and data analysis
+(1) currently working as coaches or intervention specialists for indi-                    support (e.g., ChatGPT [94]), image generation (e.g., DALL·E 3 [93]
+viduals with ADHD, (2) at least three months of experience in pro-                        and Midjourney [79]), meeting documentation (e.g., Notion AI [91]
+viding support to individuals with ADHD, and (3) having access to                         and Tencent Meeting AI [139]), and social companion (e.g., Rep-
+a computer or tablet to participate in a remote interview. Ultimately,                    lika [108] and character.ai [3]). This brief introduction served two
+five ADHD experts participated in our individual, interview-based                         purposes. First, it established a common understanding of GenAI’s
+                                                                                          functional possibilities, ensuring that all participants had access to
+1 Table 3 in the Appendix provides detailed information on the GenAI tools participants   the same foundational knowledge regardless of their prior experi-
+used and the purposes they used these tools.                                              ence. Second, by presenting the tools in a neutral, descriptive way
+
+===== PDF PAGE 5 / 24 =====
+Scaffolding Metacognition with GenAI                                                                                                CHI ’26, April 13–17, 2026, Barcelona, Spain
+
+
+                                                     Table 1: Participants’ demographic information.
+
+              Year of Gender/ Time Since GenAI                                                                            Co-occurring Conditions
+         ID                                                                      Major
+              Study Age       Diagnosis Experience†                                                                       & Medication Status
+         P1   2nd          M/19    1-2 yrs        Daily use                      Public Administration                    Depression, autism spectrum disorder
+         P2   2nd          F/20    1-2 yrs        Occasional use                 French                                   —
+         P3   4th          F/22    1-2 yrs        Regular use                    Industrial Engineering                   Medicating
+         P4   3rd          F/21    < 1 yr         No experience                  Food and Nutrition                       Medicating, with depression
+         P5   2nd          F/20    1-2 yrs        Regular use                    Chinese Language and Literature          Bipolar disorder
+         P6   4th          F/22    1-2 yrs        Regular use                    Medical Information Engineering          Bipolar disorder
+         P7   4th          F/22    < 1 yr         Regular use                    History                                  —
+         P8   4th          M/22    < 1 yr         Regular use                    Molecular Biology                        Medicating
+                                                  Daily use with
+         P9 4th            M/24    6-10 yrs                                      Business English                         Medicating
+                                                  development experience
+         P10 3rd           F/21    1-2 yrs        Daily use                      International Chinese Education —
+         P11 4th           M/22    < 1 yr         Daily use                      Electronic Information Engineering —
+         P12 4th           M/22    6-10 yrs       Regular use                    Digital Media Technology           Medicating
+         P13 4th           M/23    < 1 yr         Regular use                    Industrial Design                  Medicating
+                                                                                                                    Medicating, with anxiety and
+         P14 4th           M/23    3-5 yrs        Regular use                    Physics
+                                                                                                                    depression
+                                                                                                                    Medicating, with obsessive-
+         P15 3rd           F/21    3-5 yrs        Regular use                    Digital Media Technology
+                                                                                                                    compulsive disorder
+                                                                                                                    Medicating, with anxiety and
+         P16 3rd           F/23    3-5 yrs        Daily use                      Computer Science
+                                                                                                                    bipolar disorder
+         P17 2nd           M/20    > 10 yrs       Regular use                    International Business             —
+         P18 2nd           M/19    1-2 yrs        Daily use                      Internet of Things Engineering     Medicating
+         P19 3rd           F/21    < 1 yr         Regular use                    Pharmaceutical Engineering         Autism spectrum disorder
+         P20 4th           F/22    1-2 yrs        Occasional use                 Philosophy                         —
+        Note. † The GenAI Experience (shared by Tables 1 and 2) describe participants’ frequency and manner of using GenAI tools. No experience indicates that the
+        participant has never used GenAI tools. Occasional use refers to infrequent, task-specific engagement without a consistent usage pattern. Regular use describes
+        interaction approximately one to three times per week. Daily use denotes near-daily engagement, whereas Daily use with development experience additionally
+        indicates experience in developing, fine-tuning, or integrating GenAI applications.
+
+
+                                                Table 2: Expert participants’ demographic information.
+
+              Gender/        ADHD Intervention                                               GenAI
+        ID                                              Professional Role                                       Target treatment group
+              Age            Experience                                                      Experience†
+        E1    F/24           Three months               ADHD Intervention Specialist         Regular use        Adolescents and young adults in early careers
+        E2    F/47           Over a year                ADHD Coach                           Regular use        University students and working adults
+        E3    F/33           Over three years           ADHD Intervention Specialist         Regular use        Children, adolescents, and university students
+        E4    F/34           Over four years            ADHD Intervention Specialist         Regular use        Children and adolescents
+        E5    F/40           Over a year                ADHD Coach                           Daily use          Children and parents
+
+
+rather than prescribing specific uses or solutions, we provided inspi-                     frames, text typing, stylus, and image uploading). With the multi-
+ration for participants without biasing their ideas toward particular                      user collaboration feature, Excalidraw allows the researcher to
+applications. This is a common approach in co-design studies, where                        assist participants in creating frames, adding notes, etc.
+researchers present application examples or provide participants                              During the co-design session, we encouraged participants to
+with ready-made tools [102, 158], allowing them to quickly become                          think aloud throughout the process, and sometimes prompted them
+familiar with the target design platform and generate diverse and                          to answer questions such as “How do you envision this feature to
+creative concepts.                                                                         function? What is your motivation to create this design?” and “Com-
+                                                                                           pared to existing solutions, what do you think makes this design stand
+3.2.2 Design Activity. Focusing on one or two task management                              out?” Although some participants initially hesitated to start due
+challenges they mentioned in the warm-up activity, we encouraged                           to unfamiliarity with the process and concerns about the quality
+each participant to envision how GenAI could help address these                            of their designs, they quickly became engaged once the researcher
+challenges by illustrating their ideas on Excalidraw 2 , a collaborative                   clarified that our goal was to explore their expectations of how
+whiteboard that supports commonly used digital tools (e.g., shape                          GenAI could assist with task management challenges in their aca-
+                                                                                           demic life, rather than evaluating the creativity of their designs or
+2 https://excalidraw.com                                                                   the aesthetics of their digital sketches.
+
+===== PDF PAGE 6 / 24 =====
+CHI ’26, April 13–17, 2026, Barcelona, Spain                                                                                              Zihao Zhu, Junnan Yu, and Yuhan Luo
+
+
+
+             Co-​design Workshop with University Students with ADHD
+
+
+
+       a                                                        b                                                        c
+
+
+
+
+                                                                      Sharing challenges in task management,
+             Introduction of the workshop procedure                                                                       Co-​designing solutions on a shared whiteboard
+                                                                     introduction of GenAI and its applications
+
+
+                                      Interviews with ADHD Experts
+
+
+
+                               d                                                              e
+
+
+
+
+                                                                                             Sharing experience in working with ADHD populations,
+                                       Introduction of the interview process
+                                                                                                    and thoughts on collected design ideas
+
+
+
+
+Figure 1: Overview of the individual co-design workshop with university students with ADHD (top) and interviews with
+ADHD experts (bottom). The individual co-design workshop process included (a) the introduction of the workshop process,
+(b) an interview about the daily academic task management challenges faced by participants, and (c) the co-design of GenAI
+solutions with the participants on an online collaborative whiteboard. The interview process with ADHD experts included (d)
+the introduction of the interview process, (e) discussions on the daily task management challenges faced by ADHD university
+students based on the experts’ intervention experience, and the presentation of design ideas from student participants to seek
+advice and identify potential risks. For ease of reading, the original text in the screenshots has been translated into English and
+visually enhanced (e.g., larger font size and boldface). The original images are available in the Appendix.
+
+
+3.3     Interviews with ADHD Experts                                                         3.4       Data and Analysis
+After organizing the design ideas generated from the above co-                               Our dataset includes participants’ design ideas captured on the
+design sessions, we interviewed five ADHD experts to understand                              shared whiteboards, video recordings of co-design sessions (includ-
+their perspectives on these design ideas. First, we introduced the re-                       ing participants’ sharing of everyday task management challenges
+search background and goals, and invited the experts to talk about                           and ideation processes), and video recordings of interviews with
+their background and experience in supporting individuals with                               ADHD experts. All video recordings were transcribed into text for
+ADHD, particularly university students. Next, we presented the                               analysis. We conducted a bottom-up Thematic Analysis following
+collected design ideas on a shared screen (with notes explaining                             Braun and Clarke’s guidelines to analyze (1) the specific academic
+the corresponding challenges and contexts provided by the par-                               task management challenges and (2) design ideas that integrate
+ticipants who created the design) and asked the experts to share                             expert perspectives [15]. This process consisted of five steps:
+their thoughts on these ideas regarding the underlying needs of                                    (1) Familiarization with the data: The first author repeat-
+the creators, feasibility, use cases, and clinical relevance. We also                               edly read all transcripts while reviewing the corresponding
+took these opportunities to discuss with the experts on potential                                   design artifacts created by participants to gain a comprehen-
+pitfalls that might be overlooked by the participants in their design                               sive understanding of participants’ academic task manage-
+ideas and alternative solutions. On average, each interview lasted                                  ment challenges, design ideas, and how they are related.
+86 minutes. The lower part of Figure 1 illustrates selected moments                                (2) Initial coding of co-design: The first and the last au-
+from the expert interview sessions.                                                                 thor independently coded transcripts from three randomly
+                                                                                                    selected co-design sessions following a bottom-up, open-
+                                                                                                    ended approach. We then met to discuss these initial codes,
+                                                                                                    refining the code naming and resolving those with ambiguity
+
+===== PDF PAGE 7 / 24 =====
+Scaffolding Metacognition with GenAI                                                                           CHI ’26, April 13–17, 2026, Barcelona, Spain
+
+
+       or discrepancies. After establishing a consistent interpreta-        engagement. Next, we present participants’ design ideas of leverag-
+       tion of the data, the first author continued coding more             ing GenAI to address these challenges, and experts’ perspectives.
+       co-design sessions. Through this process, the whole team
+       met regularly to discuss the coded data, merge similar codes,        4.1    Metacognitive Challenges in Task
+       and note how they are related to metacognition (i.e., knowl-                Management
+       edge, monitoring, and control of one’s cognitive activities).
+                                                                            Following Flavell’s definition of metacognition [39], we organized
+       In total, we generated 764 initial codes. Examples of these
+                                                                            the challenges that participants reported through three aspects of
+       codes covering participants’ metacognitive challenges (e.g.,
+                                                                            metacognitive functioning: metacognitive knowledge, metacogni-
+       “difficulty distinguishing priorities across different tasks” and
+                                                                            tive abilities, and emotional barriers. Their limited metacognitive
+       “struggle with sensing the passage of time during tasks”)), and
+                                                                            knowledge manifested in three key areas: a lack of awareness of
+       design ideas (e.g., “identifying tasks from fragmented chat
+                                                                            the task’s nature (task awareness), strategies to navigate the tasks
+       logs” and “assisting students in plan adjustment when task
+                                                                            (strategy awareness), and their own abilities and mental states (self-
+       progress does not meet expectations”).
+                                                                            awareness). Additionally, we observed challenges in metacognitive
+       (3) Initial coding of expert interviews: Based on the ini-
+                                                                            abilities manifested as difficulties with task initiation, attention
+       tial codes generated from the co-design sessions, the first
+                                                                            control, and adapting to unexpected changes. Participants also
+       author coded the expert interviews focusing on three aspects:
+                                                                            described emotional barriers such as disengagement and task avoid-
+       (1) the applicability and practical feasibility of participants’
+                                                                            ance that interacted with and compounded these metacognitive
+       proposed ideas, (2) the key metacognitive knowledge or abil-
+                                                                            challenges. We elaborate on these findings below.
+       ity involved, and (3) the edge cases and potential risks that
+                                                                            4.1.1 Lack of Awareness: Source, Time, and Prioritization.
+       those ADHD participants may overlook. This analysis led to
+                                                                            First, when confronted with large volumes of fragmented infor-
+       245 initial codes, which we later integrated with the codes
+                                                                            mation across multiple sources, such as course syllabi, emails, and
+       from the co-design sessions.
+                                                                            messages from instant messaging apps, participants struggled to
+       (4) Integrating codes & searching themes: Building upon
+                                                                            organize a comprehensive list of tasks they needed to complete
+       the initial codes, the whole team collaborated to organize
+                                                                            or even identify the information related to their tasks (P2, P3, P5,
+       them into a hierarchical structure while searching for pre-
+                                                                            P9). This lack of task clarity often made them unsure about what
+       dominant themes. Through iterative discussions, it became
+                                                                            needed to be done or where to start. In particular, participants faced
+       evident that participants’ metacognitive challenges and de-
+                                                                            difficulties in estimating how long a task would take (P3, P7, P8, P9,
+       sign ideas are associated with their awareness of daily tasks,
+                                                                            P12, P18). Similar observations have been reported in prior research,
+       strategies to complete these tasks, and assessment of their
+                                                                            where individuals with ADHD struggle to accurately encode, store,
+       own capabilities, as well as their ability to monitor the task
+                                                                            and recall temporal information [87, 105]. In our study, we found
+       progress and adaptively adjust strategies. In addition, codes
+                                                                            this challenge escalated when participants were juggling multiple
+       related to emotional barriers (e.g., “anxiety caused by continu-
+                                                                            tasks, affecting their understanding of the importance, urgency, and
+       ous procrastination of tasks”) frequently appeared, which we
+                                                                            prerequisites of the tasks. Consequently, the most direct influence
+       found also to be a crucial component of metacognition [131].
+                                                                            is their ability to set clear priorities (P7, P15, P16). As P15 described:
+       As we searched and reviewed the themes, we moved back and
+       forth between raw data and codes to ensure a focused nar-                   “I do not have a clear sense of task priority [...] For
+       rative on metacognition, and thus discarded those deemed                    example, with an assignment I was not interested in, I
+       irrelevant (e.g., using GenAI to generate reading summaries).               would end up doing designs that I like on my computer,
+       (5) Naming themes & developing narratives: In the end,                      but never start relevant tasks, like programming.”
+       our analysis resulted in four themes characterizing partici-            Moreover, due to a lack of awareness of their own abilities, par-
+       pants’ metacognitive challenges, including (1) Lack of Aware-        ticipants often set overly ambitious goals and misjudge the time
+       ness, (2) Barriers to Task initiation, (3) Difficulty in Attention   needed to complete tasks, resulting in poorly structured plans (P14).
+       Control, and (4) Struggles to Regulate Emotions. Centered on         This mismatch between expectation and reality created a cycle of
+       these challenges, we gathered relevant design ideas and de-          inefficiency and frustration.
+       veloped three themes of GenAI support: (1) Metacognitive                This finding aligned with experts’ perspectives: E1, E2, and E3
+       Scaffolding to Enhance Task and Self-Awareness, (2) Reflective       all pointed out that many students with ADHD tend to be overly
+       Task Execution for Developing Metacognitive Abilities, and (3)       optimistic about the number of tasks they can finish. As noted by E2,
+       Emotional Regulation for Sustaining Engagement.                      the students they had worked with often create lengthy to-do lists,
+                                                                            trying to “complete everything at once.” Such unrealistic expectations
+                                                                            reflected participants’ limited awareness of their actual capacity to
+                                                                            complete a task effectively. Furthermore, E2 added, when students
+4    Findings                                                               attempt to take on too many tasks at once, it not only delays their
+In this section, we first present the themes generated from our anal-       task completion but also creates unnecessary mental stress.
+ysis of participants’ metacognitive challenges—specifically lacking         4.1.2 Barriers to Initiation: Task Overload, Lack of Motiva-
+metacognitive information (knowledge and experience about the               tion, and Perfectionism. A recurring challenge across partici-
+task and oneself) and metacognitive ability (monitoring and control-        pants was difficulty initiating tasks, which reflects a breakdown in
+ling oneself), and emotional experiences that disrupt metacognitive         metacognitive control at the very first stage of task management.
+
+===== PDF PAGE 8 / 24 =====
+CHI ’26, April 13–17, 2026, Barcelona, Spain                                                                                                     Zihao Zhu, Junnan Yu, and Yuhan Luo
+
+
+                                                                                     Monitor & Evaluate
+
+
+
+                                                                                         Execution                                             Reflect
+                             Organization                       Initiation                                  Continuation                                          Adjustment
+
+
+
+
+                       Lack task awareness: source,         Struggle to initiate tasks              Difficulty recognizing distractions
+                       time, and prioritization                                                                                                               Struggle to adapt to
+  Metacognitive                                                                                                                                               external changes
+   Challenges          Lack self-​awareness:                Difficulty tracking task progress       Limitations in recognizing and
+                       cognitive ability                                                            regulating emotions
+
+
+
+
+                     Cognitive Scaffolding to Enhance
+                                                          Promoting Reflective Task Execution       Facilitating Emotional Regulation
+                        Task and Self-​Awareness
+                                                                                                                                                              Contextual Adaptivity
+      GenAI
+                       Integrate fragmented task info      Collaborative task decomposition           Simulate a study companion
+     Support                                               Creative and motivational prompts          Facilitate Productivity-​oriented
+                                                                                                                                                             Adaptive suggestions for
+                       Estimate task duration &                                                                                                              task adjustment
+                       calibrate expectation               Evaluate and visualize task progress       emotional regulation
+                       Personalized task prioritization
+
+
+
+                                    Self-​awareness       Task Awareness                   Metacognitive Monitoring                       Metacognitive Control
+
+
+
+
+Figure 2: Overview of the metacognitive challenges faced by university students with ADHD across different stages of task
+management (Organization, Execution, Adjustment), and the opportunities for GenAI to provide support. The metacognitive
+challenges include a lack of task awareness (source, time, and prioritization) and self-awareness (cognitive ability) during task
+organization, limited metacognitive monitoring and control (task initiation, attention control, progress tracking, and task
+adjustment), and difficulties with emotion regulation during task execution. Participant design ideas suggest GenAI could
+support students in navigating these challenges by scaffolding task awareness and self-awareness, prompting reflection to
+strengthen monitoring and control, and facilitating productivity-oriented emotional regulation.
+
+
+Many participants described themselves feeling overwhelmed in                               the balcony”. This lack of specificity raises the threshold for task
+front of a stack of tasks (P1, P2, P3, P7, P13, P16). Others reported                       initiation and makes it more difficult to initiate the task (E3).
+a lack of motivation that prevented them from transitioning from                            4.1.3 Attention Control Difficulty: Distraction, Hyperfocus,
+intention to action (P1, P13, P15, P16). For some participants, such                        and Unexpected Changes. Even when they were able to initiate
+as P16, this challenge was exacerbated obsessive-compulsive per-                            the task, participants frequently encountered difficulties in monitor-
+fectionism, where unrealistic standards of performance created                              ing and regulating their attention. For some, this meant drifting off
+an inflated sense of the gap between their work and the “ideal”,                            and losing focus during activities such as lectures, as P3 described
+These accounts highlight how initiation difficulties in ADHD are                            their experience of losing focus during lectures, “I can barely focus
+not only about a lack of motivation but also about maladaptive                              during lectures, and sometimes I don’t even know which chapter the
+self-monitoring and evaluation:                                                             professor is talking about. I just end up pretending to listen.” Others
+                                                                                            reported experiencing the opposite extreme—hyperfocus, in which
+        “I feel like I need to do something perfectly, and aiming
+                                                                                            they became so deeply absorbed that they struggled to disengage,
+        for perfection makes it much harder to get started—not
+                                                                                            leading them to neglect other important tasks or deadlines (P1,
+        just harder to begin, but harder to carry through. It feels
+                                                                                            P2, P3, P5, P7, P11, P15, P16, P18, P19, P20). Compounding this
+        like there are many obstacles I have to overcome before
+                                                                                            challenge, participants emphasized that university life is filled with
+        I can even begin.”
+                                                                                            unexpected disruptions, such as urgent tasks or the extended du-
+   To overcome these barriers, participants frequently turned to                            ration of planned activities. These disruptions often broke their
+external scaffolds that could help them initiate work. A common                             sense of order and created reluctance to adjust their behaviors to
+approach was the use of alarm apps (e.g., Pomodoro timer) to create                         adapt to changes, sometimes leading them to give up their plans
+a structured sense of urgency and break large tasks into smaller                            altogether (P1, P2, P4, P5, P7, P11, P13, P16). Experts echoed this
+intervals (P5, P8, P9, P11, P12, P13, P16, P20). While these reminders                      difficulty, noting that while adjusting plans in response to environ-
+provided a temporary motivation boost, their effectiveness dimin-                           mental change may seem straightforward for most people, it can
+ished over time as participants either habituated to the alerts or                          be particularly taxing for individuals with ADHD, as the process
+began to ignore them.                                                                       requires metacognition of re-prioritizing or shifting strategies (E5).
+   Additionally, E3 noted that students with ADHD often set tasks                              To cope with attention lapses and disruptions due to unexpected
+that are broad and abstract, such as “lose 20 pounds” while failing                         changes, participants experimented with external supports. Some
+to include concrete, actionable tasks like “do 10 jumping jacks on                          sought out study companions like friends or classmates to create
+
+===== PDF PAGE 9 / 24 =====
+Scaffolding Metacognition with GenAI                                                                       CHI ’26, April 13–17, 2026, Barcelona, Spain
+
+
+mutual accountability and maintain focus (P1, P2, P5, P11, P13,           was buried in instant messaging apps, which included reminders
+P18, P19). While this strategy was seen as helpful, it was often          from classmates and discussions about the group projects. Rather
+constrained by scheduling conflicts or difficulties in finding suitable   than switching between scheduling and message apps to manually
+partners. Others turned to environmental adjustments, such as             record the tasks, they hoped GenAI could streamline the creation
+relocating to libraries or classrooms to minimize distractions and        of the task list:
+foster a stronger study atmosphere (P1, P2, P4, P5, P7, P11, P13,                “I just need to long-press the message, and it can read
+P16). While these strategies provided short-term relief, participants            the information and automatically generate a to-do list
+emphasized that they did not address the underlying difficulties in              displayed in the notification ordered by timeline or on
+flexibly monitoring attention and adapting to unexpected changes.                my desktop widget (...)”
+4.1.4 Emotional Barriers: Disengagement and Task Avoid-
+ance. Beyond awareness, participants also described difficulties             Experts’ Perspectives. E4 recognized the value of the task-
+in regulating emotions, which further impeded them from contin-           identification design concept and noted that ADHD is often accom-
+uously engaging with the tasks (P3, P6, P7, P10, P13, P16). Neg-          panied by reading and writing difficulties, which make it hard for
+ative affect not only delayed initiation but also sustained cycles        many students to fully record assignments given by their teachers
+of avoidance and procrastination. For example, P7 described their         [82, 152]. Additionally, E4 expressed concern that students might
+experience of repeatedly delaying submission of the thesis draft          forget to use this feature and suggested adding active reminders.
+due to fear of disappointing their advisor:                               For example, when a user opens the learning platform or when
+                                                                          GenAI detects relevant content on the clipboard, the tools could
+       “Back in late November, the professor told me it was
+                                                                          proactively prompt the students to add the task, thereby supporting
+       time to start revising the paper. I said okay, but I kept
+                                                                          timely engagement with the feature.
+       procrastinating [...] He really values proactive students,
+       and I could tell he appreciated it. That made me feel                 Rationalizing & Calibrating Time Allocation for Tasks. Es-
+       anxious. I was afraid of letting him down.”                        timating the time required for each task is a crucial step in creating
+   Such accounts demonstrate how emotions interact with metacog-          effective plans. However, several participants reported difficulty in
+nitive processes, shaping not only motivation but also the capacity       accurately assessing how long it would take for different tasks, due
+to monitor and adjust behaviors. Unfortunately, participants did not      to a lack of task awareness and self-knowledge about their own
+identify any reliable strategies or external supports that effectively    capabilities (P3, P7, P8, P9, P12, P18). Experts echoed this challenge:
+helped them recognize and regulate these emotions.                        E1 and E2 observed that some students they had worked with often
+                                                                          created unrealistically long to-do lists, which not only hindered
+4.2     Co-design Ideas for GenAI to Support                              task completion but also added unnecessary stress. To address this
+                                                                          challenge, participants brought up that GenAI could help them
+        Metacognitive Process
+                                                                          estimate the time needed for each task by incorporating contex-
+Focusing on the above challenges, participants proposed design            tual information, which could be user input (e.g., have prepared
+ideas for how GenAI could support them in navigating task manage-         an outline in advance for the task of making the slides), conven-
+ment in university life. In the following, we organized these ideas       tional benchmarks (e.g., the typical time spent on reading a paper’s
+together with experts’ perspectives around the three themes de-           introduction), and historical data of the users’ past performance
+rived from our thematic analysis. Each of the themes corresponds          (e.g., quiz duration) (P7, P8, P9, P18). P9 envisioned that GenAI
+to metacognitive knowledge (Section 4.1.1), metacognitive abili-          could proactively offer suggestions that help them calibrate the
+ties (Section 4.1.2 and Section 4.1.3), and emotional barriers (Sec-      estimated duration in their task plans, particularly when they tend
+tion 4.1.4), respectively.                                                to procrastinate or lack confidence:
+4.2.1 Providing Cognitive Scaffolding to Enhance Task and                         “For example, if you say you’re writing a paper abstract
+Self-Awareness. To enhance their understanding of different tasks                 and set aside two days for it, the AI would remind you,
+and better align their expectations of personal abilities with reality            like ‘This is a two-hour task, not two days.’ It helps you
+(metacognitive knowledge—task awareness and self-awareness),                      analyze whether your plan makes sense.”
+participants envisioned multiple ideas for utilizing GenAI as a cog-         Experts’ Perspectives. E2 indicated that many individuals with
+nitive scaffold. These ideas focused on helping them navigate frag-       ADHD spend excessive time on the first step of a task, leaving
+mented task information and better assess their task expectations,        insufficient time for the subsequent steps. Estimating task duration
+enabling them to gain a clearer sense of the tasks at hand and the        can help students reflect on their progress and task strategies while
+steps needed to complete the tasks, as illustrated below.                 making timely adjustments to their behavior, which can mitigate
+   Integrating Fragmented Task Information. To address their              perfectionism. Furthermore, E1 suggested that when estimating
+lack of task awareness mentioned in Section 4.1.1, participants           the task time, GenAI should not only reference the student’s past
+proposed ideas that leverage GenAI’s information understanding            completion times but also include a buffer. Allowing extra time can
+and generation ability to identify and extract task information           help the student perceive the task as less demanding and be more
+from multiple fragmented data sources (e.g., course management            willing to initiate the task.
+systems, emails, screenshots, messaging apps) and organize them                  “For example, it may take a student 30 minutes to fin-
+into structured lists (P2, P3, P5, P7). For example, as shown in                  ish the task. In the plan, though, we can allocating a
+Figure 3 (a), P2 found that lots of their task-related information                full hour for this task. Beyond accounting for possible
+
+===== PDF PAGE 10 / 24 =====
+CHI ’26, April 13–17, 2026, Barcelona, Spain                                                                                     Zihao Zhu, Junnan Yu, and Yuhan Luo
+
+
+
+
+                                                    (a)                                                                 (b)
+
+Figure 3: Examples of participants’ design ideas for leveraging GenAI to enhance task and self-awareness: (a) identifying tasks
+from chat logs and the clipboard (P2); (b) conducting priority analysis and generating task lists that can be manually adjusted
+later (P7). For ease of reading, the original design ideas presented in Chinese have been translated into English. The original
+images are available in the Appendix.
+
+
+        distraction or procrastination, the extra buffer was in-                           initial order of the tasks based on prioritization results, which they
+        tended to ‘cheat’ the student’s brain into perceiving the                          could then adjust as needed:
+        task as easier, thereby making them more willing to                                      “I would just pour out everything I needed to do, and the
+        start.” (E1)                                                                             system could intelligently sense the importance of the
+   In addition, E3 emphasized that, as some students with ADHD                                   task. It might say, ‘I recommend giving this five stars,’
+tend to experience learned helplessness3 when encountering dif-                                  and then I’d respond, ‘How about four stars?’—which
+ficulties, GenAI should gradually build an understanding of their                                would make me reflect a bit. If the deadline was re-
+ability levels through long-term interaction. When organizing tasks,                             ally tight, like on the 25th, I’d probably agree with five
+GenAI should evaluate whether a task might exceed the student’s                                  stars. So I would slightly adjust the priority based on its
+capabilities and proactively prompt them to seek external support                                suggestion.”
+(e.g., join peer discussions, seek academic tutoring resources).
+                                                                                              Experts’ Perspectives. Notably, experts highlighted that while
+   Similarly, P14 proposed that GenAI could help them adjust ex-
+                                                                                           general populations commonly prioritize tasks based on task impor-
+pectations during planning stages by highlighting potential delays:
+                                                                                           tance and urgency (e.g., the Eisenhower Matrix [36]), this approach
+        “For the plan set for the next day, I hope AI can help me                          may not be as effective for those with ADHD (E1, E2, E4) as they
+        accept the possibility that tasks may not be completed                             often struggle to distinguish which tasks are important (E1, E4). In
+        on time, especially during the planning phase, where                               part, their lower baseline dopamine levels may hinder task initia-
+        AI could remind me that the task might not be finished.                            tion, even though they could recognize the importance of a task (E2).
+        This is important because when I truly can’t complete                              Thus, experts recommended interest-driven task prioritization to
+        a task, anxiety overwhelms me, and by then, I have no                              make task initiation easier. As E1 explained, starting with tasks that
+        energy left to accept any interventions.”                                          align with an individual’s interests may help engage reward path-
+                                                                                           ways implicated in ADHD, including dopamine-related processes,
+   Personalizing Task Prioritization. In managing multiple aca-                            thereby creating a more favorable mental state for transitioning to
+demic tasks and deadlines (e.g., assignments and reviewing for                             important tasks [74, 153]:
+different courses during the final week), participants often felt over-
+                                                                                                 “They usually have lower dopamine levels. Dopamine
+whelmed and were uncertain about which tasks to prioritize (P7,
+                                                                                                 is also part of the energy and nutrients. When they
+P15, P16). To support decision-making, participants hoped GenAI
+                                                                                                 already don’t have much of it, being asked to do a task
+could assist them in analyzing factors such as importance, urgency,
+                                                                                                 drains them even more. So, I would suggest they start
+and workload of tasks, as well as their own interests and preferred
+                                                                                                 with something enjoyable to build up some dopamine,
+completion strategies. As such, they could work with GenAI to
+                                                                                                 and then use that bit of joy to tackle the more difficult
+develop a logical and practical order for executing the tasks. As
+                                                                                                 and important task.”
+shown in Figure 3 (b), P7 designed a system that could provide an
+                                                                                           4.2.2 Promoting Reflective Task Execution for Building
+3 Learned helplessness refers to a psychological condition in which individuals stop
+                                                                                           Metacognitive Abilities. Participants’ limited metacognitive
+trying to improve their situation after repeated exposure to uncontrollable events [121,   ability in monitoring and regulating behaviors often manifested
+122].                                                                                      as low motivation, progress management difficulty, and frequent
+
+===== PDF PAGE 11 / 24 =====
+Scaffolding Metacognition with GenAI                                                                              CHI ’26, April 13–17, 2026, Barcelona, Spain
+
+
+distraction during task execution (see Section 4.1.3). Recognizing        they envisioned using GenAI to deliver such reminders with its
+these challenges, they expressed a desire to become more mindful          ability to generate various forms of text, image, and even animations
+and reflective about their behaviors and performance while work-          (P5, P6, P8, P10, P12, P13, P15, P16, P18). Ideating and designing
+ing on tasks. As such, participants proposed ideas for GenAI to           personalized reminders enhances self-awareness, as it encourages
+support them in actively observing and evaluating their actions           individuals to reflect on their specific needs and preferences for
+and strategies in real time, specifically through collaborative task      task initiation. As shown in Figure 4 (b), P16 drew inspiration from
+decomposition, creative and motivational reminders, visualized            Duolingo’s design 4 of different cartoon characters that engage
+progress, and adaptive plan adjustment.                                   users in learning. They believed that varying visual forms of the
+                                                                          reminder, complemented by vibrations and sound cues, could boost
+   Collaborative Task Decomposition. Participants reported feel-          their motivation to initiate and continue a task:
+ing overwhelmed in front of overarching tasks without concrete
+                                                                                 “The little (Duolingo) logo changes, and sometimes I find
+execution steps, such as writing a thesis or preparing for exams,
+                                                                                  it fun. For someone like me who really dislikes boring
+which led to repeated procrastination (P1, P2, P3, P7, P13, P16).
+                                                                                  things, this kind of visual element makes the experience
+In particular, students with ADHD typically have lower working
+                                                                                  more engaging.”
+memory, making them prone to cognitive overload when handling
+complicated tasks [58, 61, 62]. This could lead to misjudgment of            Some participants proposed using GenAI to generate avatars and
+the efforts needed to achieve a goal (e.g., perceiving the task as        voices of their familiar characters to make reminders more engaging.
+time-consuming and repeatedly procrastinating, although it actu-          For example, P20 imagined receiving the task reminder in the voice
+ally takes little time). In this case, participants hoped to decompose    and appearance of their favorite anime character, Hatsune Miku5 :
+a task into smaller, actionable subtasks so that they could have a               “ I’m into anime, so I was thinking, what if users could
+clearer and more realistic understanding of what needs to be done,                set a character they like when sending reminders, the
+which can reduce the mental stress of task initiation. Several par-               system could show an image of that character or some-
+ticipants highlighted that the multimodal information processing                  thing similar. For example, I like Hatsune Miku. It
+capabilities of GenAI be utilized to support task decomposition by                wouldn’t be too hard to mimic her tone, either.”
+analyzing materials such as lecture slides, rubrics, and previous sub-       Experts’ Perspectives. Our expert participant E2 acknowledged
+missions (P1, P2, P3, P7, P8, P13, P16, P17). As shown in Figure 4 (a),   the value of this idea, adding that individuals with ADHD have
+P15 hoped GenAI could break down the special effect assignment            different ways to process information. For example, some are more
+into manageable steps to facilitate task initiation. Additionally, P17    audio sensitive while others prefer visual feedback. Thus, E2 sug-
+noted that displaying too many subtasks at once may overwhelm             gested that reminders should be tailored to individual preferences:
+them, and they suggest limiting the number of subtasks shown at
+                                                                                 “Individuals have different processing modes. For ex-
+once and progressively presenting subsequent tasks based on their
+                                                                                 ample, some are verbal processors, needing to speak in
+task progress.
+                                                                                 order to think. Others are kinesthetic, requiring phys-
+   In the meantime, participants highlighted that they did not want
+                                                                                 ical movement to facilitate thinking. Some rely more
+GenAI to fully take over task decomposition, not only because it
+                                                                                 on visual stimuli, while others do not adhere to a single
+lacks contextual knowledge but also because they hoped to exert
+                                                                                 mode. We need to support them in recognizing their
+control by themselves. Thus, the role of GenAI should be encourag-
+                                                                                 different processing styles and help them apply their
+ing participants to reflect on their goals and guiding them to think
+                                                                                 past successful experiences to their current tasks.”
+about additional context for decision-making (P13). For example,
+P13 hoped that GenAI could prompt them to input information                  To further motivate individuals following the reminders, E2 sug-
+such as the prerequisite steps, people, and resources required to         gested that GenAI can prompt students with some reflective ques-
+complete the task:                                                        tions to kickstart, such as “what ideas do you have for starting your
+                                                                          task in a fun and engaging way?” This design idea shifts the stu-
+       “Guiding users through a conversational approach? The              dent’s focus from the task’s content (“what to do”) to their learning
+       required actions should be defined by the users them-              process (“how to do it”), fostering self-reflection and encouraging
+       selves, (GenAI can) encourage them to clearly think                them to plan personalized strategies proactively. This brief moment
+       through why each step matters. For example, a long-                of thinking is the essence of metacognitive regulation—planning
+       term project could be divided into several shorter tasks,          and self-awareness.
+       and those shorter tasks could then be further decom-
+       posed into smaller steps, guiding users gradually and                 Evaluation and Visualization of Task Progress. One main
+       systematically.”                                                   difficulty that participants faced during task execution was the un-
+                                                                          clear sense of task progress, as they often struggled to perceive how
+   Creative & Motivational Reminders. To address the barriers             much progress they had made and how much work still remained
+to initiating tasks, participants expressed a need for motivational       (P3, P9, P11, P16). To enhance their awareness of task progress, par-
+reminders that are interesting, constantly changing, and tailored         ticipants highlighted the importance of situated reflection, which
+to their preferences. While participants had attempted to create          would help them stay on track. This requires GenAI to process
+such reminders in practice, such as by changing the sounds of             4 Duolingo is a language-learning app that features a green owl mascot and other
+alarms or the voice of the reminders, they found this process time-       cartoon characters to engage users in learning [34].
+consuming, which still failed to engage them over time. In response,      5 Hatsune Miku is a Japanese virtual idol [23].
+
+===== PDF PAGE 12 / 24 =====
+CHI ’26, April 13–17, 2026, Barcelona, Spain                                                                    Zihao Zhu, Junnan Yu, and Yuhan Luo
+
+
+
+
+                (a)                                                  (b)                                                (c)
+
+Figure 4: Examples of participants’ design ideas for leveraging GenAI to foster metacognitive abilities: (a) breaking down tasks
+into actionable subtasks and estimating workload based on conventional benchmarks and individuals’ historical behavior
+(P15); (b) delivering multiple forms of motivational prompts (e.g., visual, audio, or vibration) to facilitate task initiation (P16);
+and (c) tracking the gap between actual vs. planned reading progress and suggesting how much work is required to achieve the
+goal (P11). For ease of reading, the original design ideas presented in Chinese have been translated into English. The original
+images are available in the Appendix.
+
+
+information from multiple sources, such as an individual’s text            tailored to their situations, such as skipping or simplifying lower-
+inputs in a document, interaction records across various apps, and         priority tasks to help them stay on track (P2, P4, P5, P7, P11, P13,
+the time elapsed. Additionally, GenAI should have the capability           P16). Regular scheduling tools rely on predefined rules and static
+to generate dynamic visualizations that enable individuals to bet-         configurations, which are insufficient for handling these rapidly
+ter understand their progress in real-time, making the reflection          changing and context-specific scenarios. GenAI, with its informa-
+process more effective and engaging. As shown in Figure 4 (c), P11         tion understanding and generation capabilities, holds potential for
+envisioned during reading tasks, GenAI could compare the number            addressing these situations. For example, P2 explained that when
+of pages read with the daily reading goal and visualize the progress:      time slots are already allocated but something urgent comes up,
+                                                                           the disruption may lead to incomplete tasks. In such situations,
+        “For example, if I need to finish a book in a week, and it
+                                                                           they envisioned GenAI assisting in rescheduling the original task
+        is divided into several chapters, (GenAI) will compare
+                                                                           to reduce the effort required to revise the plan manually. Similarly,
+        the actual number of pages I’ve read each day with
+                                                                           P4 imagined GenAI offering alternative suggestions to help users
+        the planned daily reading goal, displaying the progress
+                                                                           stay on track when facing minor disruptions:
+        in a bar chart, and provide suggestions on how much
+        additional effort I need to put to reach daily goals.”                   “If you plan to go to school but wake up late, it can
+                                                                                 provide adjustment suggestions for less important tasks,
+   Experts’ Perspectives. Echoing this idea, E3 suggested that                   like skipping breakfast or not applying makeup, to help
+adding some peer pressure (e.g., by visualizing the average progress             you stay on track and meet your goal on time.”
+of others) could help motivate individuals to stay committed to
+their goals. However, this approach may also risk fostering social            Experts’ Perspectives. Experts emphasized that AI-assisted task
+comparison, which could lead to feelings of frustration or inade-          suggestions are crucial for maintaining a sense of order in individ-
+quacy. Therefore, it should be implemented with care, ensuring that        uals with ADHD, as they often experience confusion and struggle
+the focus remains on personal growth and progress rather than              to focus on finding solutions when confronted with sudden and ur-
+creating undue competition among users:                                    gent situations (E2, E3, E5). E2 mentioned that when plans change,
+                                                                           students with ADHD often fall into rigid thinking patterns, which
+        “Individuals with ADHD often consult others about the
+                                                                           limit their flexibility. Alternative suggestions from GenAI could
+        status of their tasks. If GenAI could provide a reference
+                                                                           provide them with more options and flexibility, helping them better
+        for the typical progress metrics of most people, driven by
+                                                                           cope with changes:
+        a competitive mindset, they might adjust their behavior
+        to align more closely with this benchmark...” (E3)                       “When faced with sudden changes, they often fall into
+                                                                                 black-and-white thinking, limiting their flexibility.
+    Adaptive Plan Adjustment. To enhance their ability to adapt                  However, when they allow for some flexibility, they can
+to changes, participants envisioned GenAI providing suggestions                  find better solutions. For example, they might feel they
+
+===== PDF PAGE 13 / 24 =====
+Scaffolding Metacognition with GenAI                                                                                    CHI ’26, April 13–17, 2026, Barcelona, Spain
+
+
+         must wear a certain pair of earrings or dress a certain                              with some intimate words. If I don’t stick to the plan,
+         way in the morning, but these are not requirements and                               then he shouldn’t talk to me at all night.”
+         they don’t necessarily have to. Often, the issue isn’t the
+                                                                                          Experts’ Perspectives. Experts acknowledged the importance
+         task itself, but how they perceive it. AI suggestions can
+                                                                                       of emotional support in the lives of those with ADHD because it
+         provide flexibility and help them realize their available
+                                                                                       helps to improve their task engagement and overall well-being.
+         options.” (E2)
+                                                                                       Specifically, they believe that individuals can benefit from P10’s
+4.2.3 Facilitating Emotional Regulation to Sustain Task En-                            design by providing continuous positive feedback and rewards
+gagement. During the co-design session, participants highlighted                       throughout the task process, and noted that these should be specific
+the importance of tackling their emotional barriers. They envi-                        to help students identify which actions are effective. However, they
+sioned that GenAI could provide various support to enhance their                       pointed out the risks of incorporating penalty-based feedback, as
+emotional awareness and regulation, which could in turn help them                      they may trigger negative emotions, such as frustration, and lead
+sustain engagement during task execution (P1–P3, P5, P7, P10, P11,                     to resistance in students, making students with ADHD even less
+P13, P16, P18, P19). These supports mainly centered on virtual                         likely to engage with the task:
+agents that served as a study companion, either silent or inter-                             “Punishment leads to negative emotions, such as frus-
+active via text or speech (P1, P2, P5, P11, P13, P18, P19).                                  tration, because it feels like saying, ’See, you didn’t do
+    This finding aligned with what participants mentioned in the                             it again.’ However, we could view each failure as an
+warm-up session in describing their challenges (see Section 4.1.3),                          experiment. I may not have succeeded this time, but
+where they found that one of the most effective strategies to prevent                        that doesn’t mean I can’t succeed in the future.” (E5)
+external distractions was to have a study partner who could prompt
+                                                                                          In addition to managing negative emotions, experts suggested
+them to stay focused. For example, as shown in Figure 5 (a), P7
+                                                                                       that GenAI should help to identify and strengthen students’ positive
+envisions a GenAI-driven virtual avatar that can serve as a study
+                                                                                       emotions. As E2 noted, GenAI should recognize users’ positive
+companion, promoting self-reflection on her current state through
+                                                                                       emotions during interactions and engage them in exploring the
+its presence while also assisting with reminders of her schedule:
+                                                                                       underlying reasons to further strengthen their positive emotions:
+       “There is a virtual avatar that pretends to study and su-
+                                                                                             “For example, when noticing that their tone rises or they
+        pervise me. I can occasionally vent to it, and it responds
+                                                                                             are laughing, this often reflects a positive emotion. At
+        with understanding and empathy (...) It can also remind
+                                                                                             such moments, GenAI should explore with them what
+        me of urgent tasks, as sometimes I tend to forget the
+                                                                                             thoughts lie behind this positive emotion. Often, these
+        tasks when I get caught up in a conversation.”
+                                                                                             are linked to their past successes and to positive expe-
+    Additionally, P18 suggested that the appearance of the study                             riences associated with self-recognition. By discussing
+partner could also be the animal they like (e.g., Garfield6 , British                        these with the students, GenAI can help reinforce these
+Shorthair), and they also suggested that the partner’s background                            positive aspects in their mind.” (E2)
+could be adjusted by capturing or scanning their own surround-
+                                                                                          In parallel, experts also suggested that GenAI could help students
+ings to align with the study environment (e.g., library, home) and
+                                                                                       regulate their emotions by guiding them to view their difficulties
+enhance the sense of companionship.
+                                                                                       from different perspectives (E1, E2). For instance, E2 observed that
+    Furthermore, to address their declining efficiency in task execu-
+                                                                                       many students with ADHD feel discouraged because they perceive
+tion caused by intrusive thoughts and negative emotions, partici-
+                                                                                       themselves as fundamentally flawed. GenAI should assist them in
+pants envisioned GenAI to be an empathetic, emotionally respon-
+                                                                                       separating personal traits from the impacts of ADHD, underscoring
+sive companion that could offer personalized emotional support
+                                                                                       that these challenges arise from the cognitive characteristics of
+(P7, P10, P13, P16). Unlike general emotional support, which pri-
+                                                                                       ADHD rather than from personal shortcomings, thereby encourag-
+marily focuses on comfort and connection, participants sought
+                                                                                       ing students to confront difficulties and explore coping and action
+productivity-oriented emotional support that not only regulates
+                                                                                       strategies tailored to their own needs. Similarly, E1 emphasized that
+negative emotions but also facilitates task initiation and sustains
+                                                                                       GenAI should guide students to see the situations from different
+productive momentum. As shown in Figure 5 (b), P10 imagined
+                                                                                       perspectives, which may help them realize that what is before them
+GenAI taking the role of their favorite male protagonist from the
+                                                                                       is not necessarily a genuine “difficulty”:
+otome game Light and Night to help them organize tasks, with
+different emojis matching the conversation dynamics and offering                             “For example, some students may feel frustrated when
+small, personalized rewards (e.g., romantic dialogue) for their con-                         they cannot recall what they have read. GenAI can
+tinued task engagement, while delivering punishment they were                                remind them that what matters is not how much they
+unable to adhere to the plan:                                                                remember, but the extent of change they bring about,
+       “I hope it can be the male character I like, Xia Mingxing7 .                          and making such changes is an achievement in itself.”
+        I could ask him to help me break down and prioritize                              Furthermore, experts highlighted that GenAI’s tendency to agree
+        my plan. If I can follow through it, it can reward me                          with users’ statements can unintentionally reinforce recurring inac-
+                                                                                       curate or unhelpful ways of interpreting their tasks or performance
+6 Garfield is a fictional orange cat character from a popular comic and media fran-
+                                                                                       (e.g., inaccurate self-evaluations and overgeneralization), and em-
+chise [24].
+7 Xia Mingxing is one of the male protagonists in the female-oriented romance mobile   phasized that GenAI should demonstrate critical thinking to better
+game Light and Night [140].                                                            support students’ self-reflection:
+
+===== PDF PAGE 14 / 24 =====
+CHI ’26, April 13–17, 2026, Barcelona, Spain                                                                   Zihao Zhu, Junnan Yu, and Yuhan Luo
+
+
+
+
+                                        (a)                                                         (b)
+
+Figure 5: Examples of participants’ design ideas for leveraging GenAI to facilitate emotional regulation for sustained task
+engagement: (a) serving as a study companion to help individuals stay focused (P7); and (b) providing emotional support
+through interactive, multimodal conversations with one’s favorite fictional character as part of a reward mechanism (P10).
+For ease of reading, the original design ideas presented in Chinese have been translated into English. The original images are
+available in the Appendix.
+
+
+        “I feel like current (GenAI) models always tend to agree         abilities (e.g., difficulties in controlling and monitoring one’s behav-
+        with what the user says and constantly offer praise. It          iors) [18, 127].
+        makes me feel like it’s just trying to make me feel better,          Our findings extend this perspective by showing how com-
+        rather than providing real feedback. This makes me feel          mon struggles reported by university students with ADHD can
+        a bit skeptical, and I’d prefer if AI’s responses showed         be explained by their metacognitive challenges. As reported in Sec-
+        more critical thinking.” (E3)                                    tion 4.1, mismatched self-exception and task performance was not
+                                                                         merely a reflection of poor time management skills, but also limited
+                                                                         awareness of both tasks and themselves. Similarly, perfectionism
+5     Discussion                                                         represented not simple avoidance but maladaptive self-monitoring
+Adopting a metacognitive lens, our findings revealed several task        and evaluation. By delving into participants’ metacognitive knowl-
+management challenges faced by university students with ADHD             edge and abilities, our findings also revealed several underexplored
+and highlighted how they envisioned GenAI could enhance both             task management barriers in university settings. While previous
+their metacognitive knowledge and abilities. In this section, we re-     literature primarily focused on difficulties in task prioritization and
+flect on how the metacognitive perspective helped deepen and             biased time estimation [5, 42, 62, 87], we found that the struggles
+expand current understandings of ADHD in task management                 started even earlier when students were identifying and extracting
+contexts. We also discuss how GenAI emerges as a double-edged            task-related information in front of the fragmented information
+sword: while it can scaffold awareness and reflection to strengthen      sources, such as syllabi, emails, and chat messages. This task infor-
+metacognitive knowledge, it also risks fostering dependency and          mation is not only distributed across multiple platforms but also pre-
+undermining metacognitive monitoring if not carefully designed.          sented in different formats (e.g., text, image, and sometimes videos).
+                                                                         Drawing on the Cognitive Load Theory [135], we interpret this as a
+                                                                         case where frequent context switching across platforms and modal-
+5.1     Deepening the Understanding of Task
+                                                                         ities adds extraneous cognitive load. For students with ADHD, this
+        Management Practice of ADHD Individuals                          burden is further magnified by limited working memory capacity
+        Through Metacognition                                            and difficulties in inhibitory control, which make it harder to filter
+Research on ADHD has a long history, documenting a wide range of         out irrelevant details and retain task-relevant information [47, 113].
+behavioral challenges related to task management [4, 16, 28, 96, 100],   In other words, what might appear to neurotypical students as a
+but understandings of this population through the lens of metacog-       relatively simple organizational step (e.g., checking the syllabus
+nition have only gained attention in the past decade [18, 127]. From     or compiling assignments from multiple channels) may become
+this perspective, difficulties like inaccurate estimation of task du-    cognitively taxing for those with ADHD. This finding highlights
+ration or procrastination are not isolated performance, but rather       the need for supports that can reduce extraneous cognitive load at
+manifestations of challenges in metacognitive knowledge (e.g., mis-      the very beginning of the task cycle, as reflected in the co-design
+calibrating task demands and one’s own ability) and metacognitive
+
+===== PDF PAGE 15 / 24 =====
+Scaffolding Metacognition with GenAI                                                                       CHI ’26, April 13–17, 2026, Barcelona, Spain
+
+
+ideas of our participants, which involved integrating information         5.2.1 Promote Reflection, Not Automation. To enhance metacogni-
+across channels and organizing relevant task attributes.                  tive knowledge, an important step is to promote self-reflection—an
+   Furthermore, emotional disruptions formed a critical barrier to        ability to critically examine one’s own thoughts, intentions, and
+self-regulation among our participants. While research on metacog-        strategies to complete the goals [29]. Participants’ design ideas sug-
+nition has traditionally focused on cognitive processes such as           gested that GenAI’s advanced context understanding capabilities
+planning, monitoring, and evaluation, it has rarely considered emo-       have the potential to facilitate reflection in two aspects.
+tional awareness and regulation as integral parts of metacogni-              First, as our participants envisioned, GenAI can enhance their
+tion [54, 117, 118]. Yet, emotions are inseparable from cognition:        task awareness and help them reflect on possible sources containing
+awareness of one’s affective states is itself a form of metacognitive     task information and collaborate with them to decompose tasks
+awareness, and regulating those emotions directly influences the          into manageable steps. By extracting and organizing such infor-
+ability to sustain attention and monitor progress [78, 83, 155]. Our      mation into a structured task list, GenAI could not only reduce
+findings showed that the emotional dimension of metacognition is          students’ cognitive load for processing task information, but also
+crucial for sustaining task engagement, as participants frequently        prompt students to reflect on what constitutes a complete task
+described how anxiety, frustration, or fear of failure not only slowed    representation [162]. Previous systems have demonstrated that au-
+their task progress but also led to task avoidance. Unlike difficul-      tomatic synthesis of information across sources could reduce time
+ties with time estimation or prioritization, which can be addressed       spent on planning [48, 106]. Yet, these systems primarily functioned
+through external structure, emotional vulnerability often leaves          as an automated planner for a narrow context (e.g., web design
+students without effective coping strategies. In response, many par-      projects) and imposed additional burden on project managers to
+ticipants envisioned supports that went beyond purely cognitive           resolve conflicts among the sources. With GenAI, such applications
+scaffolding: they imagined companionship-based GenAI designs,             could be extended through its flexible information-understanding
+including virtual study partners or even fictional characters, that       and reasoning abilities across heterogeneous sources. Importantly,
+could provide encouragement, empathy, and positive reinforcement.         consistent with the mixed-initiative approach emphasized in prior
+These co-design ideas highlighted a gap in current productivity           work [106], we advocate GenAI should go beyond simply producing
+tools, which typically prioritize scheduling, reminders, or informa-      a finished plan. This concern is also underscored by prior studies
+tion organization [30, 75, 151], but overlook the affective regulation    showing that when users fully rely on GenAI outputs to complete
+that underpins task engagement.                                           their work and develop a dependency on the system, it could under-
+   Taken together, our findings reframe “poor task management”            mine their ability of critical thinking [67]. Instead, GenAI should act
+in ADHD as a metacognitive problem space that spans knowledge             as a reflective partner—engaging students in dialogue, encouraging
+(judging task demands and one’s capacity), abilities (monitoring          them to validate and refine the structured information, and helping
+and control), and emotion (awareness and regulation). University          them cultivate a stronger awareness of what their tasks involve.
+contexts that fragment task information across platforms and for-            Second, GenAI can act as an interactive calibration tool, prompt-
+mats amplify extraneous cognitive load, while emotional vulnera-          ing students to reflect on the relationship between task demands
+bility further erodes self-regulation, jointly producing avoidance        and their own abilities. Incorporating contextual cues (e.g., histori-
+and inconsistent follow-through. Recognizing these intertwined            cal performance data, conventional benchmarks, or user-provided
+mechanisms points to support that front-loads cognitive offloading,       inputs) can help students reconsider unrealistic expectations about
+integrates dispersed task cues, and scaffolds emotion regulation          task completion time, difficulty, or priority. As shown in our study,
+alongside planning and monitoring. By centering metacognition             participants hoped that AI could proactively remind them when
+in both its cognitive and affective facets, we offer a coherent ac-       they overestimated or underestimated the time required for spe-
+count of why everyday academic tasks become disproportionately            cific tasks and help them reflect on task priority. Beyond reduc-
+effortful for students with ADHD and a roadmap for interventions          ing misjudgments, calibration can also strengthen self-awareness
+that target the right levers of change. In the next section, we reflect   and protect self-efficacy: by setting more realistic expectations,
+on how these findings and participants’ design ideas can inform           students are more likely to experience success and sustain mo-
+the use of a powerful everyday technology, GenAI, in university           tivation. Prior work on metacognitive monitoring highlights the
+students’ lives to support their productivity.                            importance of accurate self-calibration for effective learning and
+                                                                          self-regulation [17, 33]. Similarly, research on the planning fallacy
+                                                                          shows that optimism bias often drives underestimation of time
+                                                                          requirements [17]. By surfacing historical patterns and prompting
+5.2     Optimizing the Benefits of GenAI to Support                       reflection, GenAI could help students with ADHD overcome these
+        Metacognition in Task Management                                  biases, adapt strategies when plans fail, and ultimately develop
+In our co-design study, participants shared ideas on how GenAI            more flexible and resilient task management habits.
+could enhance their metacognitive knowledge and abilities. How-
+ever, experts pointed out several pitfalls of relying on GenAI, includ-
+ing the risk of reinforcing biased beliefs, fostering over-reliance,      5.2.2 Balance Interests with Reality, Not Reinforce Bias. Although
+and introducing new distractions rather than alleviating them. In         participants suggested that GenAI can provide personalized feed-
+the following, we discuss how GenAI can act as a double-edged             back and progress visualization, experts pointed out that the ef-
+sword in assisting academic task management for individuals with          fectiveness of the intervention depended on whether the support
+ADHD, and how to best leverage it by mitigating potential risks.          balanced students’ intrinsic interests with realistic task demands.
+
+===== PDF PAGE 16 / 24 =====
+CHI ’26, April 13–17, 2026, Barcelona, Spain                                                                    Zihao Zhu, Junnan Yu, and Yuhan Luo
+
+
+They noted that for individuals with ADHD, interest-driven strate-        affective companions. This emphasizes that emotional regulation
+gies can be powerful motivators to overcome initiation barriers,          is not an end in itself but a means to sustain engagement with
+which aligned with findings in previous studies [11, 85, 116]. How-       academic tasks and foster metacognitive growth. Building on recent
+ever, if task prioritization is guided only by personal preference,       work on AI-powered productivity support [51, 72], it is feasible for
+important deadlines or high-stakes assignments may be neglected.          GenAI to facilitate emotional regulation while avoiding the risks of
+Another critical concern is that current GenAI systems are often          over-comforting or reinforcing avoidance behaviors. For instance,
+designed to be agreeable, mirroring majority perspectives or simply       Hu et al. framed AI-powered venting tools as a journaling assistant,
+validating users’ inputs [32], for example, OpenAI publicly rolled        which more effectively reduced negative emotions with high and
+back a GPT-4o update after acknowledging sycophantic tendencies           medium arousal (e.g., anger, frustration, and fear), compared to
+in the model [95]. This communication style may inadvertently re-         traditional journaling methods [51]. Likewise, Li et al. demonstrated
+inforce the biases and avoidance patterns that students with ADHD         that by highlighting the AI’s role as a focus companion, it could help
+struggle with. Our expert participants echoed this worry: by de-          college students stay focused on their goals and reduce compulsive
+faulting to validation rather than challenge, GenAI risks amplifying      smartphone use [72]. Overall, the evidence points to framing GenAI
+procrastination. For instance, if a student wishes to spend hours         as a focus- and reflection-oriented partner that helps students notice,
+perfecting a creative project instead of preparing for an imminent        label, and regulate emotions in service of task progress, rather
+exam, an overly agreeable GenAI might endorse this choice rather          than as an endlessly soothing companion. Concretely, this entails
+than prompting reflection on its long-term consequences.                  brief, structured check-ins, goal-linked reframing, and graduated
+    Such reinforcement is not a neutral misstep; it undermines            prompts that return attention to the task after emotional validation.
+metacognitive growth. Students may recognize a discrepancy be-            By aligning emotional support with action, GenAI can cultivate
+tween effort and outcomes but remain unable to identify its root          metacognitive resilience while minimizing dependency.
+causes, further entrenching distorted self-knowledge (e.g., “I’m just
+bad at time management”) rather than helping them refine strate-
+gies [19, 50, 98]. Over time, this risks fostering dependence on AI       6   Limitation and Future Work
+feedback without building transferable self-regulatory skills [101].      In this research, we focused on exploring the potential of GenAI
+To avoid this pitfall, GenAI systems must adopt a balanced stance:        in scaffolding metacognition, which may overlook potential de-
+supporting interest-driven engagement while also surfacing realis-        sign solutions that could be more easily implemented using tradi-
+tic considerations such as deadlines, workload, and task importance.      tional techniques. However, this exploration was motivated by the
+Such a balance could involve presenting the benefits of following         growing prevalence of GenAI in daily productivity contexts and
+one’s interest and the risks of neglecting important tasks, thereby       the likelihood that such systems will become increasingly difficult
+scaffolding students’ metacognitive reflection without imposing           to separate from students’ academic lives in the near future. No-
+rigid prescriptions. By guiding students to weigh their interests         tably, we focused on extracting design ideas and rationales from a
+alongside external demands, GenAI can help foster more adaptive           metacognitive perspective, which has been underexplored in both
+decision-making rather than simply echoing users’ biases.                 HCI and ADHD task management research. This perspective not
+                                                                          only deepened our understanding of students’ task management
+5.2.3 Encourage Emotional Growth, Not Dependency. Our study               challenges but also opened up new design opportunities for GenAI
+corroborated that emotional struggles were common among individ-          to scaffold awareness, monitoring, and regulation in ways tradi-
+uals with ADHD, which further complicated their task management           tional tools have overlooked.
+routines [13, 144]. Prior research has also shown that individuals           Second, participants in our study were all recruited through Chi-
+with ADHD often experience emotion dysregulation, such as irri-           nese social media platforms and shared similar Mandarin-speaking
+tability and low frustration tolerance, which is closely associated       cultural backgrounds, which may limit the generalizability of their
+with poorer academic and occupational performance as well as dif-         design ideas to other cultural settings. However, as a starting point,
+ficulties in self-esteem and daily functioning [124, 128]. In response,   this focused sampling aligns with common practices in prior ADHD
+participants hoped GenAI could simulate a virtual study companion         research (e.g., [70, 147]) and offers a solid foundation for examining
+that created a psychologically safe environment, providing an out-        our research questions. Future studies should broaden the scope
+let to cope with negative emotions without introducing the social         to include culturally diverse populations, as cultural norms may
+pressure of a human partner. Beyond stress-free companionship,            influence both metacognitive processes and the perceived role of
+some participants hoped the AI could take on the persona of their         GenAI in task management.
+favorite game or anime characters, offering personalized rewards             Going forward, we plan to develop a GenAI-based task manage-
+or even intimate interactions. However, when GenAI primarily of-          ment tool to support metacognition among individuals with ADHD.
+fers external rewards or validation, it risks encouraging reliance        This requires careful consideration of potential risks, including hal-
+on affective support rather than cultivating sustainable emotional        lucinations [52] and over-reliance [160]. One way to mitigate these
+regulation skills [114]. Our expert participants also shared this per-    risks is to prioritize user agency with more open-ended, reflective
+spective, noting that overly intimate or flattering responses could       prompts rather than providing direct suggestions or solutions. Ex-
+be counterproductive.                                                     amples of such prompts can be evaluating the feasibility of their
+   To ensure that GenAI support remains aligned with the goal of          proposed task timelines, identifying potential distractions in their
+enhancing emotional awareness and regulation, it is important to          planned workflow, and reflecting on how past task outcomes can
+position these systems as productivity-oriented tools rather than         inform current goal-setting.
+
+===== PDF PAGE 17 / 24 =====
+Scaffolding Metacognition with GenAI                                                                                               CHI ’26, April 13–17, 2026, Barcelona, Spain
+
+
+   Additionally, future work can explore the integration of personal                            adults: a meta-analytic review. Neuropsychology 27, 3 (2013), 287–302. doi:10.
+and contextual data to improve the tools’ adaptive support. Building                            1037/a0032371
+                                                                                            [5] American Psychiatric Association. 2013. Diagnostic and statistical manual of
+upon prior research, physiological data such as eye movements and                               mental disorders: DSM-5 (5 ed.). American Psychiatric Association, Washington,
+heart rate, can signal users’ attention levels and emotional states,                            DC. https://www.psychiatry.org/psychiatrists/practice/dsm
+                                                                                            [6] Saleema Amershi, Dan Weld, Mihaela Vorvoreanu, Adam Fourney, Besmira
+thereby informing the timing and form of support (e.g., whether to                              Nushi, Penny Collisson, Jina Suh, Shamsi Iqbal, Paul N. Bennett, and Kori Inkpen.
+interrupt ongoing work, when to initiate reflection, or how to adjust                           2019. Guidelines for Human-AI Interaction. In Proceedings of the 2019 CHI
+the tone of feedback to align with one’s affective needs) [46, 76, 99].                         Conference on Human Factors in Computing Systems. Association for Computing
+                                                                                                Machinery, Glasgow, Scotland, UK, 1–13. doi:10.1145/3290605.3300233
+Individuals’ previous task records or system interaction logs can                           [7] Kevin M. Antshel and Amy K. Olszewski. 2014. Cognitive behavioral therapy
+also enhance this adaptive framework by capturing behavioral                                    for adolescents with ADHD. Child and Adolescent Psychiatric Clinics of North
+patterns (e.g., task abandonment, repetitive queries) that indicate                             America 23, 4 (2014), 825–842. doi:10.1016/j.chc.2014.05.001
+                                                                                            [8] baidu. 2024. yiyan. https://yiyan.baidu.com/ Accessed: 2024-10-19.
+unmet metacognitive needs [1, 120]. However, such personal and                              [9] Nadia Jimenez Barriga. 2024. Design of a Mobile Application Prototype Focused
+physiological signals are highly sensitive and may raise privacy                                on Physical Activity Management in University Students to Compensate for the
+                                                                                                Effects of ADHD. In Proceedings of the XI Latin American Conference on Human
+concerns. Future tool designs should follow privacy-by-design prin-                             Computer Interaction. Association for Computing Machinery, New York, NY,
+ciples by minimizing data collection, prioritizing on-device pro-                               USA, Article 31, 3 pages. doi:10.1145/3630970.3631071
+cessing when possible, and clearly communicating how data are                              [10] Hanna Bertilsdotter Rosqvist, Nick Chown, and Anna Stenning (Eds.). 2020.
+                                                                                                Neurodiversity Studies: A New Critical Paradigm. Routledge, Abingdon, UK.
+collected and used [21, 115]. Furthermore, physiological sensing                                doi:10.4324/9780429322297
+and behavioral traces can be noisy, missing, and context-dependent.                        [11] Hanna Bertilsdotter Rosqvist, Lill Hultman, Sofia Österborg Wiklund, Anna
+To mitigate the risk of inappropriate system responses, tools should                            Nygren, Palle Storm, and Greta Sandberg. 2023. Intensity and Variable Attention:
+                                                                                                Counter Narrating ADHD, from ADHD Deficits to ADHD Difference. The British
+provide users with granular controls, such as independent on/off                                Journal of Social Work 53, 8 (2023), 3647–3664. doi:10.1093/bjsw/bcad138
+options and clear manual override mechanisms [6, 66].                                      [12] Stacey L. Blase, Adrianne N. Gilbert, Arthur D. Anastopoulos, E. Jane Costello,
+                                                                                                Rick H. Hoyle, H. Scott Swartzwelder, and David L. Rabiner. 2009. Self-
+                                                                                                reported ADHD and adjustment in college: Cross-sectional and longitudinal
+7      Conclusion                                                                               findings. Journal of Attention Disorders 13, 3 (2009), 297–309. doi:10.1177/
+                                                                                                1087054709334446
+In this study, we adopted a metacognitive lens to explore how                              [13] Elizabeth A. Bodalski, Kate Flory, Will H. Canu, Erik G. Willcutt, and Cynthia M.
+GenAI can help university students with ADHD in addressing daily                                Hartung. 2023. ADHD symptoms and procrastination in college students: The
+productivity challenges. We conducted individual co-design ses-                                 roles of emotion dysregulation and self-esteem. Journal of Psychopathology and
+                                                                                                Behavioral Assessment 45, 1 (2023), 48–57. doi:10.1007/s10862-022-09996-2
+sions with 20 university students with ADHD, followed by expert                            [14] Heidi Boland, Maura DiSalvo, Ronna Fried, K. Yvonne Woodworth, Timothy
+interviews to assess and validate students’ design ideas. Drawing on                            Wilens, Stephen V. Faraone, and Joseph Biederman. 2020. A literature review
+participants’ design ideas and expert insights, we identified three                             and meta-analysis on the effects of ADHD medications on functional outcomes.
+                                                                                                Journal of Psychiatric Research 123 (2020), 21–30. doi:10.1016/j.jpsychires.2020.
+directions for GenAI to scaffold metacognition: (1) providing cogni-                            01.006
+tive scaffolding to enhance task and self-awareness, (2) promoting                         [15] Virginia Braun and Victoria Clarke. 2006. Using thematic analysis in psy-
+                                                                                                chology. Qualitative Research in Psychology 3, 2 (2006), 77–101. doi:10.1191/
+reflective task execution to strengthen monitoring and control, and                             1478088706qp063oa
+(3) facilitating emotional regulation to sustain task engagement.                          [16] Thomas E. Brown. 2005. Attention deficit disorder: The unfocused mind in children
+At the same time, experts cautioned against potential pitfalls such                             and adults. Yale University Press, New Haven, CT. https://www.amazon.com/
+                                                                                                Attention-Deficit-Disorder-Unfocused-University/dp/0300119895
+as reinforcing users’ biases and fostering dependency. Taken to-                           [17] Roger Buehler, Dale Griffin, and Michael Ross. 1994. Exploring the “planning
+gether, our study underscores both the opportunities and risks of                               fallacy”: Why people underestimate their task completion times. Journal of
+applying GenAI to enhance metacognition in task management.                                     Personality and Social Psychology 67, 3 (1994), 366–381. doi:10.1037/0022-3514.
+                                                                                                67.3.366
+By positioning GenAI as a reflective partner, future designs can                           [18] Marah Butzbach, Anselm B. M. Fuermaier, Steffen Aschenbrenner, Matthias
+better cultivate sustainable metacognitive growth and inclusive                                 Weisbrod, Lara Tucha, and Oliver Tucha. 2021. Metacognition in adult ADHD:
+                                                                                                subjective and objective perspectives on self-awareness of cognitive functioning.
+productivity support.                                                                           Journal of Neural Transmission 128, 7 (2021), 939–955. doi:10.1007/s00702-020-
+                                                                                                02293-w
+Acknowledgments                                                                            [19] Buse Carik, Kaike Ping, Xiaohan Ding, and Eugenia H. Rho. 2025. Explor-
+                                                                                                ing Large Language Models Through a Neurodivergent Lens: Use, Challenges,
+We thank our participants for their time and valuable contributions                             Community-Driven Workarounds, and Concerns. Proceedings of the ACM on
+to this study. We also thank the reviewers for their thoughtful                                 Human-Computer Interaction 9, GROUP (2025), 1–28. doi:10.1145/3701194
+                                                                                           [20] Silvia Casale, Alessia Musicò, and Marcantonio M Spada. 2021. A systematic
+and constructive feedback. This research was supported by City                                  review of metacognitions in Internet Gaming Disorder and problematic Internet,
+University of Hong Kong (# 7020106). We used GPT-5 and Gemini                                   smartphone and social networking sites use. Clinical Psychology & Psychotherapy
+2.5 Pro to correct grammatical issues and enhance the clarity of                                28, 6 (2021), 1494–1508. https://doi.org/10.1002/cpp.2588
+                                                                                           [21] Ann Cavoukian. 2009.         Privacy by Design: The 7 Foundational Princi-
+expressions.                                                                                    ples. Technical Report. Information and Privacy Commissioner of On-
+                                                                                                tario, Ontario, Canada.         https://student.cs.uwaterloo.ca/~cs492/papers/
+References                                                                                      7foundationalprinciples_longer.pdf
+                                                                                           [22] Franceli L. Cibrian, Kimberley D. Lakes, Arya Tavakoulnia, Kayla Guzman,
+    [1] Fabian Abel, Eelco Herder, Geert-Jan Houben, Nicola Henze, and Daniel Krause.           Sabrina Schuck, and Gillian R. Hayes. 2020. Supporting Self-Regulation of
+        2013. Cross-system user modeling and personalization on the social web. User            Children with ADHD Using Wearables: Tensions and Design Challenges. In
+        Modeling and User-Adapted Interaction 23, 2 (2013), 169–209. doi:10.1007/s11257-        Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems.
+        012-9131-2                                                                              Association for Computing Machinery, New York, NY, USA, 1–13. doi:10.1145/
+    [2] Dimitrios Adamis, Caroline Flynn, Margo Wrigley, Blanaid Gavin, and Fiona               3313831.3376837
+        McNicholas. 2022. ADHD in adults: A systematic review and meta-analysis            [23] Crypton Future Media, Inc. 2007. Hatsune Miku. https://piapro.net/intl/en.html.
+        of prevalence studies in outpatient psychiatric clinics. Journal of Attention           Accessed 2025-11-08.
+        Disorders 26, 12 (2022), 1523–1534. doi:10.1177/10870547221085503                  [24] Jim Davis. 1978. Garfield. Syndicated comic strip created by Jim Davis, first
+    [3] Character AI. 2024. Character AI. https://character.ai/. Accessed: 2024-08-30.          published by United Feature Syndicate. See also: Garfield Wikipedia entry,
+    [4] R. Matt Alderson, Lisa J. Kasper, Kristen L. Hudec, and Connor H. G. Patros.
+        2013. Attention-deficit/hyperactivity disorder (ADHD) and working memory in
+
+===== PDF PAGE 18 / 24 =====
+CHI ’26, April 13–17, 2026, Barcelona, Spain                                                                                              Zihao Zhu, Junnan Yu, and Yuhan Luo
+
+
+      https://en.wikipedia.org/wiki/Garfield, accessed 2025-11-08..                              Attention Disorders 12, 6 (2009), 574–581. doi:10.1177/1087054708320390
+ [25] Valeria de Palo, Lucia Monacis, Silvana Miceli, Maria Sinatra, and Santo              [48] Ted Grover, Kael Rowan, Jina Suh, Daniel McDuff, and Mary Czerwinski. 2020.
+      Di Nuovo. 2017. Decisional procrastination in academic settings: The role                  Design and Evaluation of Intelligent Agent Prototypes for Assistance with Focus
+      of metacognitions and learning strategies. Frontiers in Psychology 8 (2017), 973.          and Productivity at Work. In Proceedings of the 25th International Conference on
+      doi:10.3389/fpsyg.2017.00973                                                               Intelligent User Interfaces (Cagliari, Italy) (IUI ’20). Association for Computing
+ [26] Luigi De Russis, Alberto Monge Roffarello, and Luca Scibetta. 2024. Dialogues              Machinery, New York, NY, USA, 390–400. doi:10.1145/3377325.3377507
+      with Digital Wisdom: Can LLMs Help Us Put Down the Phone?. In Proceedings             [49] Janne Harjamäki, Petri Rantanen, Daniel Lahtinen, Pekka Sillberg, Mika Saari,
+      of the 2024 International Conference on Information Technology for Social Good.            Jere Grönman, Zeeshan Rasheed, Abdul Malik Sami, and Pekka Abrahamsson.
+      Association for Computing Machinery, New York, NY, USA, 56–61. doi:10.1145/                2024. The Report of 85 AI Tools: GenAI Content Production: Enhancing Repeatability
+      3677525.3678640                                                                            and Automation with ChatGPT. Technical Report. Tampere University. https:
+ [27] Google DeepMind. 2025. Gemini 2.5 Pro. https://deepmind.google/models/                     //urn.fi/URN:ISBN:978-952-03-3502-1
+      gemini/pro/ Accessed: 2025-08-24.                                                     [50] Val Harpin, Luigi Mazzone, Jean-Philippe Raynaud, Jennifer Kahle, and Paul
+ [28] M. DePrenger, Y. Shao, F. Lu, N. Fleming, and S. Sikdar. 2010. Feasibility study of        Hodgkins. 2016. Long-term outcomes of ADHD: a systematic review of self-
+      a smart pen for autonomous detection of concentration lapses during reading.               esteem and social function. Journal of Attention Disorders 20, 4 (2016), 295–305.
+      In 2010 Annual International Conference of the IEEE Engineering in Medicine and            doi:10.1177/1087054713486516
+      Biology Society. IEEE, Piscataway, NJ, USA, 1864–1867. doi:10.1109/IEMBS.2010.        [51] Meilan Hu, Xavier Cheng Wee Chua, Shu Fen Diong, K. T. A. Sandeeshwara
+      5626256                                                                                    Kasturiratna, Nadyanna M. Majeed, and Andree Hartanto. 2025. AI as your
+ [29] Daric Desautel. 2009. Becoming a thinking thinker: Metacognition, self-                    ally: The effects of AI-assisted venting on negative affect and perceived social
+      reflection, and classroom practice. Teachers College Record 111, 8 (2009), 1997–           support. Applied Psychology: Health and Well-Being 17, 1 (2025), e12621. doi:10.
+      2020. doi:10.1177/016146810911100803                                                       1111/aphw.12621
+ [30] Breanna Desrochers, Ella Tuson, and John Magee. 2019. Evaluation of why               [52] Lei Huang, Weijiang Yu, Weitao Ma, Weihong Zhong, Zhangyin Feng, Haotian
+      individuals with ADHD struggle to find effective digital time management tools.            Wang, Qianglong Chen, Weihua Peng, Xiaocheng Feng, Bing Qin, and Ting Liu.
+      In Proceedings of the 21st International ACM SIGACCESS Conference on Computers             2025. A survey on hallucination in large language models: Principles, taxonomy,
+      and Accessibility. Association for Computing Machinery, New York, NY, USA,                 challenges, and open questions. ACM Transactions on Information Systems 43, 2
+      603–605. doi:10.1145/3308561.3354622                                                       (2025), 1–55. doi:10.1145/3703155
+ [31] Adele Diamond. 2013. Executive functions. Annual review of psychology 64, 1           [53] Saki Imai. 2022. Is GitHub Copilot a substitute for human pair-programming?
+      (2013), 135–168. https://doi.org/10.1146/annurev-psych-113011-143750                       An empirical study. In Proceedings of the ACM/IEEE 44th International Conference
+ [32] Sebastian Dohnány, Zeb Kurth-Nelson, Eleanor Spens, Lennart Luettgau, Alas-                on Software Engineering: Companion Proceedings. Association for Computing
+      tair Reid, Christopher Summerfield, Murray Shanahan, and Matthew M Nour.                   Machinery, New York, NY, USA, 319–321. doi:10.1145/3510454.3522684
+      2025. Technological folieà deux: Feedback Loops Between AI Chatbots and               [54] Janis E. Jacobs and Scott G. Paris. 1987. Children’s metacognition about reading:
+      Mental Illness. arXiv preprint arXiv:2507.19218 (2025), arXiv:2507.19218.                  Issues in definition, measurement, and instruction. Educational Psychologist 22,
+      doi:10.48550/arXiv.2507.19218                                                              3–4 (1987), 255–278. doi:10.1080/00461520.1987.9653052
+ [33] John Dunlosky and Janet Metcalfe. 2008. Metacognition. SAGE Publications,             [55] Han Jiang and Stuart J. Johnstone. 2015. A preliminary multiple case report of
+      Thousand Oaks, CA, USA. https://uk.sagepub.com/en-gb/eur/metacognition/                    neurocognitive training for children with AD/HD in China. SAGE Open 5, 2
+      book229322                                                                                 (2015), 2158244015586811. doi:10.1177/2158244015586811
+ [34] Duolingo, Inc. 2011. Duolingo. https://www.duolingo.com/. Accessed 2025-11-           [56] Lekang Jiang and Stephan Goetz. 2024. Artificial Intelligence Exploring the
+      08.                                                                                        Patent Field. arXiv preprint arXiv:2403.04105 (2024), arXiv:2403.04105. doi:10.
+ [35] George J. DuPaul, Lisa L. Weyandt, Sean M. O’Dell, and Michael Varejao. 2009.              48550/arXiv.2403.04105
+      College students with ADHD: Current status and future directions. Journal of          [57] Natalia Kajka and Agnieszka Kulik. 2023. The assessment of the impact of
+      Attention Disorders 13, 3 (2009), 234–250. doi:10.1177/1087054709340650                    training with various metacognitive interventions on the enhancement of verbal
+ [36] Dwight D Eisenhower, Gerhard Peters, and John T Woolley. 1954. Address at                  fluency in school-age children with ADHD. Journal of Attention Disorders 27, 1
+      the second assembly of the world council of churches. Evanston, Illinois 19                (2023), 89–97. doi:10.1177/10870547221121289
+      (1954), 1954.                                                                         [58] Lisa J. Kasper, R. Matt Alderson, and Kristen L. Hudec. 2012. Moderators
+ [37] Peggy A. Ertmer and Timothy J. Newby. 1996. The expert learner: Strategic,                 of working memory deficits in children with attention-deficit/hyperactivity
+      self-regulated, and reflective. Instructional Science 24, 1 (1996), 1–24. doi:10.          disorder (ADHD): A meta-analytic review. Clinical Psychology Review 32, 7
+      1007/BF00156001                                                                            (2012), 605–617. doi:10.1016/j.cpr.2012.07.001
+ [38] Bruce A. Fernie, Ann-Marie McKenzie, Ana V. Nikčević, Gabriele Caselli, and           [59] Ronald C Kessler, Lenard Adler, Russell Barkley, Joseph Biederman, C Keith
+      Marcantonio M. Spada. 2016. The contribution of metacognitions and attentional             Conners, Olga Demler, Stephen V Faraone, Laurence L Greenhill, Mary J Howes,
+      control to decisional procrastination. Journal of Rational-Emotive & Cognitive-            Kristina Secnik, et al. 2006. The prevalence and correlates of adult ADHD in
+      Behavior Therapy 34, 1 (2016), 1–13. doi:10.1007/s10942-015-0222-y                         the United States: results from the National Comorbidity Survey Replication.
+ [39] John H. Flavell. 1976. Metacognitive aspects of problem solving. In The Nature             American Journal of Psychiatry 163, 4 (2006), 716–723. doi:10.1176/appi.ajp.163.
+      of Intelligence, Lauren B. Resnick (Ed.). Lawrence Erlbaum Associates, Hillsdale,          4.716
+      NJ, USA, 231–236. doi:10.4324/9781032646527-16                                        [60] Eiji Kirino, Hideyuki Imagawa, Taro Goto, and William Montgomery. 2015.
+ [40] J. H. Flavell. 1979. Metacognition and cognitive monitoring: A new area of                 Sociodemographics, comorbidities, healthcare utilization and work productivity
+      cognitive–developmental inquiry. American Psychologist 34, 10 (1979), 906–911.             in Japanese patients with adult ADHD. PLOS ONE 10, 7 (2015), e0132233.
+      doi:10.1037/0003-066X.34.10.906                                                            doi:10.1371/journal.pone.0132233
+ [41] Centers for Disease Control and Prevention. 2024. Signs and Symptoms of               [61] Michael J Kofler, Mark D Rapport, Jennifer Bolden, Dustin E Sarver, Joseph S
+      ADHD. https://www.cdc.gov/adhd/signs-symptoms/?CDC_AAref_Val=https:                        Raiker, and R Matt Alderson. 2011. Working memory deficits and social problems
+      //www.cdc.gov/ncbddd/adhd/diagnosis.html. Accessed: 2024-09-25.                            in children with ADHD. Journal of Abnormal Child Psychology 39, 6 (2011),
+ [42] Maite Frutos-Pascual, Begoña García Zapirain, and Amaia Méndez Zorrilla. 2014.             805–817. doi:10.1007/s10802-011-9492-8
+      Adaptive tele-therapies based on serious games for health for people with time-       [62] Michael J Kofler, Dustin E Sarver, Sherelle L Harmon, Allison Moltisanti, Paula A
+      management and organisational problems: preliminary results. International                 Aduen, Elia F Soto, and Nicole Ferretti. 2018. Working memory and organiza-
+      Journal of Environmental Research and Public Health 11, 1 (2014), 749–772. doi:10.         tional skills problems in ADHD. Journal of Child Psychology and Psychiatry 59,
+      3390/ijerph110100749                                                                       1 (2018), 57–67. doi:10.1111/jcpp.12773
+ [43] Patricia I Fusch and Lawrence R Ness. 2015. Are we there yet? Data saturation         [63] Katrin Kutscheidt, Thomas Dresler, Justin Hudak, Beatrix Barth, Friederike
+      in qualitative research. The Qualitative Report 20, 9 (2015), 1408–1416. doi:10.           Blume, Thomas Ethofer, Andreas J Fallgatter, and Ann-Christine Ehlis. 2019.
+      46743/2160-3715/2015.2281                                                                  Interoceptive awareness in patients with attention-deficit/hyperactivity disorder
+ [44] Ylva Ginsberg, Javier Quintero, Ernie Anand, Marta Casillas, and Himanshu P.               (ADHD). ADHD Attention Deficit and Hyperactivity Disorders 11, 4 (2019), 395–
+      Upadhyaya. 2014. Underdiagnosis of Attention-Deficit/Hyperactivity Disorder                401. doi:10.1007/s12402-019-00299-3
+      in Adult Patients: A Review of the Literature. Primary Care Companion to CNS          [64] Soo Jin Kwon, Yoonjung Kim, and Yeunhee Kwak. 2018. Difficulties faced by
+      Disorders 16, 3 (2014), PCC.13r01600. doi:10.4088/PCC.13r01600                             university students with self-reported symptoms of attention-deficit hyperac-
+ [45] GitHub. 2024. GitHub Copilot. https://github.com/features/copilot. Accessed:               tivity disorder: a qualitative study. Child and Adolescent Psychiatry and Mental
+      2024-08-30.                                                                                Health 12, 1 (2018), 12. doi:10.1186/s13034-018-0218-3
+ [46] Kristi R. Griffiths, Daniel S. Quintana, Daniel F. Hermens, Chris Spooner,            [65] Anna Grøndahl Larsen, Marita Skjuve, Knut Kvale, and Asbjørn Følstad. 2025.
+      Tracey W. Tsang, Simon Clarke, and Michael R. Kohn. 2017. Sustained attention              LLM-powered conversational AI in customer service: Users’ expectations and
+      and heart rate variability in children and adolescents with ADHD. Biological               anticipated use. In International Symposium on Chatbots and Human-Centered
+      Psychology 124 (2017), 11–20. doi:10.1016/j.biopsycho.2017.01.004                          AI. Springer, Cham, Switzerland, 217–233. doi:10.1007/978-3-031-88045-2_14
+ [47] Rachel J. Gropper and Rosemary Tannock. 2009. A pilot study of working
+      memory and academic achievement in college students with ADHD. Journal of
+
+===== PDF PAGE 19 / 24 =====
+Scaffolding Metacognition with GenAI                                                                                                CHI ’26, April 13–17, 2026, Barcelona, Spain
+
+
+ [66] Hyunsoo Lee, Yugyeong Jung, Hei Yiu Law, Seolyeong Bae, and Uichin Lee.                [85] Sarah Morsink, Edmund Sonuga-Barke, Gabry Mies, Nathalie Glorie, Jurgen
+      2024. PriviAware: Exploring Data Visualization and Dynamic Privacy Control                  Lemiere, Saskia Van der Oord, and Marina Danckaerts. 2017. What Motivates
+      Support for Data Collection in Mobile Sensing Research. In Proceedings of the               Individuals with ADHD? A Qualitative Analysis from the Adolescent’s Point
+      2024 CHI Conference on Human Factors in Computing Systems. Association for                  of View. European Child & Adolescent Psychiatry 26, 8 (2017), 923–932. doi:10.
+      Computing Machinery, Honolulu, HI, USA, 1–17. doi:10.1145/3613904.3642815                   1007/s00787-017-0961-7
+ [67] Hao-Ping Lee, Advait Sarkar, Lev Tankelevitch, Ian Drosos, Sean Rintel, Richard        [86] National Institute of Mental Health. 2023. Attention-Deficit/Hyperactivity
+      Banks, and Nicholas Wilson. 2025. The Impact of Generative AI on Critical                   Disorder (ADHD). https://www.nimh.nih.gov/health/topics/attention-deficit-
+      Thinking: Self-Reported Reductions in Cognitive Effort and Confidence Effects               hyperactivity-disorder-adhd Accessed: 2025-01-15.
+      from a Survey of Knowledge Workers. In Proceedings of the 2025 CHI Conference          [87] Vahid Nejati and Samira Yazdani. 2020. Time Perception in Children with
+      on Human Factors in Computing Systems. Association for Computing Machinery,                 Attention Deficit–Hyperactivity Disorder (ADHD): Does Task Matter? A Meta-
+      New York, NY, USA, Article 1121, 22 pages. doi:10.1145/3706598.3713778                      Analysis Study. Child Neuropsychology 26, 7 (2020), 900–916. doi:10.1080/
+ [68] Agatha Lenartowicz, Brett DeSchepper, and Gregory V. Simpson. 2024. Training                09297049.2020.1712347
+      of Awareness in ADHD: Leveraging Metacognition. Journal of Psychiatry and              [88] Thomas O. Nelson. 1990. Metamemory: A Theoretical Framework and New
+      Brain Science 9, 5 (2024), e240006. doi:10.20900/jpbs.20240006                              Findings. In Psychology of Learning and Motivation, Gordon H. Bower (Ed.).
+ [69] Siran Li, Jiangyue Liu, and Qianyan Dong. 2025. Generative artificial intelligence-         Vol. 26. Academic Press, San Diego, CA, 125–173. doi:10.1016/S0079-7421(08)
+      supported programming education: Effects on learning performance, self-                     60053-5
+      efficacy and processes. Australasian Journal of Educational Technology 41, 3           [89] NHS. 2021. Symptoms of Attention Deficit Hyperactivity Disorder (ADHD).
+      (2025), 1–25. doi:10.14742/ajet.9932                                                        National Health Service. https://www.nhs.uk/conditions/attention-deficit-
+ [70] Wendi Li, Wei Zhang, Lin Xiao, and Jia Nie. 2016. The association of Internet               hyperactivity-disorder-adhd/symptoms/
+      addiction symptoms with impulsiveness, loneliness, novelty seeking and behav-          [90] Hannah C. M. Niermann and Anouk Scheres. 2014. The Relation between Pro-
+      ioral inhibition system among adults with attention-deficit/hyperactivity disor-            crastination and Symptoms of Attention-Deficit Hyperactivity Disorder (ADHD)
+      der (ADHD). Psychiatry Research 243 (2016), 357–364. doi:10.1016/j.psychres.                in Undergraduate Students. International Journal of Methods in Psychiatric Re-
+      2016.06.020                                                                                 search 23, 4 (2014), 411–421. doi:10.1002/mpr.1440
+ [71] Zijian Li and Yizhou Fan. 2025. How GenAI Affects Metacognition in Self-               [91] Notion. 2024. Notion AI. https://www.notion.so/product/ai. Accessed: 2024-08-
+      Regulated Learning: Between Enhancement and Inhibition. In Learning with                    30.
+      Generative Artificial Intelligence. Routledge, London, UK, 148–177. doi:10.4324/       [92] OpenAI. 2024. ChatGPT. https://chatgpt.com/ Accessed: 2024-10-19.
+      9781003632146-6                                                                        [93] OpenAI. 2024. DALLE-3. https://openai.com/index/dall-e-3/. Accessed: 2024-
+ [72] Zhuoyang Li, Minhui Liang, Ray Lc, and Yuhan Luo. 2024. StayFocused: Examin-                09-25.
+      ing the Effects of Reflective Prompts and Chatbot Support on Compulsive Smart-         [94] OpenAI. 2024. Improvements to Data Analysis in ChatGPT. https://openai.com/
+      phone Use. In Proceedings of the 2024 CHI Conference on Human Factors in Com-               index/improvements-to-data-analysis-in-chatgpt/. Accessed: 2024-08-30.
+      puting Systems (Honolulu, HI, USA) (CHI ’24). Association for Computing Ma-            [95] OpenAI. 2025. Sycophancy in GPT-4o: What happened and what we’re doing
+      chinery, New York, NY, USA, Article 247, 19 pages. doi:10.1145/3613904.3642479              about it. https://openai.com/index/sycophancy-in-gpt-4o. Accessed: 2025-11-
+ [73] Haoming Lin, Ziqi Chen, Wei Wei, and Handan Lu. 2024. GenAI Tools in Aca-                   29.
+      demic Reading: A Study on AI-Assisted Metacognitive Strategies and Emotional           [96] Julie Sarno Owens, Matthew E. Goldfine, Nicole M. Evangelista, Betsy Hoza,
+      Reactions. In Proceedings of the Asia Education Technology Symposium (AETS                  and Nina M. Kaiser. 2007. A Critical Review of Self-Perceptions and the Positive
+      2024). Springer, Singapore, 98–112. doi:10.1007/978-981-96-4952-5_7                         Illusory Bias in Children with ADHD. Clinical Child and Family Psychology
+ [74] Toby Austin Locke. 2023. In the Cracks of Attention: ADHD, Vernacular An-                   Review 10, 4 (2007), 335–351. doi:10.1007/s10567-007-0027-3
+      thropologies and Communities of Care on TikTok. Teaching Anthropology 12, 1            [97] Andre Palmini. 2008. Professionally Successful Adults with Attention-
+      (2023), 23–35. doi:10.22582/ta.v12i1.683                                                    Deficit/Hyperactivity Disorder (ADHD): Compensation Strategies and Sub-
+ [75] John R. Lund and Jason Wiese. 2021. Less is More: Exploring Support for Time                jective Effects of Pharmacological Treatment. Dementia & Neuropsychologia 2,
+      Management Planning. In Proceedings of the 2021 ACM Designing Interactive                   1 (2008), 63–70. doi:10.1590/S1980-57642009DN20100013
+      Systems Conference (DIS ’21). Association for Computing Machinery, New York,           [98] Kamdin Parsakia. 2023. The Effect of Chatbots and AI on the Self-Efficacy,
+      NY, USA, 392–405. doi:10.1145/3461778.3462133                                               Self-Esteem, Problem-Solving and Critical Thinking of Students. Health Nexus
+ [76] Maurizio Mauri, Valentina Magagnin, Pietro Cipresso, Luca Mainardi, Emery N.                1, 1 (2023), 71–76. doi:10.61838/kman.hn.1.1.11
+      Brown, Sergio Cerutti, Marco Villamira, and Riccardo Barbieri. 2010. Psy-              [99] Stephen W. Porges. 1992. Autonomic Regulation and Attention. In Attention
+      chophysiological Signals Associated with Affective States. In Proceedings of                and Information Processing in Infants and Adults, B. A. Campbell, H. Hayne,
+      the 32nd Annual International Conference of the IEEE Engineering in Medicine                and R. Richardson (Eds.). Lawrence Erlbaum Associates, Hillsdale, NJ, 201–223.
+      and Biology Society (EMBS ’10). IEEE, Buenos Aires, Argentina, 3563–3566.                   doi:10.4324/9781315807355-11
+      doi:10.1109/IEMBS.2010.5627465                                                        [100] Frances Prevatt, Briley Proctor, Leigh Baker, Lori Garrett, and Sherry Yelland.
+ [77] Julie B. Meaux, Angela Green, and Lisa Broussard. 2009. ADHD in the College                 2011. Time Estimation Abilities of College Students with ADHD. Journal of
+      Student: A Block in the Road. Journal of Psychiatric and Mental Health Nursing              Attention Disorders 15, 7 (2011), 531–538. doi:10.1177/1087054710370673
+      16, 3 (2009), 248–256. doi:10.1111/j.1365-2850.2008.01349.x                           [101] Junaid Qadir. 2023. Engineering Education in the Era of ChatGPT: Promise
+ [78] Jerusalem Merkebu, Anastasia Kitsantas, Steven J. Durning, and Tinglan Ma.                  and Pitfalls of Generative AI for Education. In 2023 IEEE Global Engineering
+      2023. What Is Metacognitive Reflection? The Moderating Role of Metacognition                Education Conference (EDUCON). IEEE, Kuwait City, Kuwait, 1–9. doi:10.1109/
+      on Emotional Regulation and Reflection. Frontiers in Education 8 (2023), 1166195.           EDUCON54358.2023.10125121
+      doi:10.3389/feduc.2023.1166195                                                        [102] Xiang Qi and Junnan Yu. 2025. Participatory Design in Human-Computer
+ [79] MidJourney. 2024. MidJourney: AI Art Generator. https://www.midjourney.                     Interaction: Cases, Characteristics, and Lessons. In Proceedings of the 2025 CHI
+      com/home. Accessed: 2024-08-30.                                                             Conference on Human Factors in Computing Systems (CHI ’25). Association for
+ [80] Allan F. Mirsky, Daisy M. Pascualvaca, Connie C. Duncan, and Louis M. French.               Computing Machinery, New York, NY, USA, Article 804, 26 pages. doi:10.1145/
+      1999. A Model of Attention and Its Relation to ADHD. Mental Retardation and                 3706598.3713436
+      Developmental Disabilities Research Reviews 5, 3 (1999), 169–176. doi:10.1002/        [103] Hua Xuan Qin, Shan Jin, Ze Gao, Mingming Fan, and Pan Hui. 2024. Char-
+      (SICI)1098-2779(1999)5:3<169::AID-MRDD2>3.0.CO;2-K                                          acterMeet: Supporting Creative Writers’ Entire Story Character Construction
+ [81] Zeinab Darehshoori Mohammadi, Sassan Bavi, and Farzaneh Human. 2022. Effec-                 Processes Through Conversation with LLM-Powered Chatbot Avatars. In Pro-
+      tiveness of Metacognitive Therapy in Behavioral-Emotional Problem, Cognitive-               ceedings of the 2024 CHI Conference on Human Factors in Computing Systems
+      Emotional Regulation Strategies, and Mind Wandering of 9 to 13-Year-Old                     (CHI ’24). Association for Computing Machinery, New York, NY, USA, Article
+      Children with ADHD: A Quasi-Experimental Study. Jundishapur Journal of                      1051, 19 pages. doi:10.1145/3613904.3642105
+      Chronic Disease Care 11, 4 (2022), e123921. doi:10.5812/jjcdc.123921                  [104] Patricia Quinn and Sharon Wigal. 2004. Perceptions of Girls and ADHD: Results
+ [82] Stephen J. Molitor, Joshua M. Langberg, and Steven W. Evans. 2016. The Writ-                from a National Survey. Medscape General Medicine 6, 2 (2004), 2. https:
+      ten Expression Abilities of Adolescents with Attention-Deficit/Hyperactivity                //www.ncbi.nlm.nih.gov/pmc/articles/PMC1395774/
+      Disorder. Research in Developmental Disabilities 51–52 (2016), 49–59. doi:10.         [105] Krestin J. Radonovich and Stewart H. Mostofsky. 2004. Duration Judgments in
+      1016/j.ridd.2016.01.005                                                                     Children with ADHD Suggest Deficient Utilization of Temporal Information
+ [83] Tim P. Moran. 2016. Anxiety and Working Memory Capacity: A Meta-Analysis                    Rather Than General Impairment in Timing. Child Neuropsychology 10, 3 (2004),
+      and Narrative Review. Psychological Bulletin 142, 8 (2016), 831–864. doi:10.1037/           162–172. doi:10.1080/09297040409609807
+      bul0000051                                                                            [106] Sajjadur Rahman, Pao Siangliulue, and Adam Marcus. 2020. MixTAPE: Mixed-
+ [84] Marcos Moroyoqui, David Espina, Hector Osuna, and Lizbeth Escobedo. 2022.                   Initiative Team Action Plan Creation Through Semi-Structured Notes, Auto-
+      SmarTasko: Supporting Short and Spontaneous Activities of Daily Living of                   matic Task Generation, and Task Classification. Proceedings of the ACM on
+      ADHD Individuals. In Proceedings of the 9th Mexican International Conference                Human-Computer Interaction 4, CSCW2, Article 169 (2020), 26 pages. doi:10.
+      on Human-Computer Interaction (MexIHC ’22). Association for Computing Ma-
+      chinery, New York, NY, USA, 1–6. doi:10.1145/3565494.3565500
+
+===== PDF PAGE 20 / 24 =====
+CHI ’26, April 13–17, 2026, Barcelona, Spain                                                                                              Zihao Zhu, Junnan Yu, and Yuhan Luo
+
+
+      1145/3415240                                                                                Systematic Review. PLOS ONE 18, 1 (2023), e0280131. doi:10.1371/journal.pone.
+[107] A. M. Re, A. Capodieci, and C. Cornoldi. 2015. Effect of training focused on                0280131
+      executive functions (attention, inhibition, and working memory) in preschoolers       [129] Peige Song, Mingming Zha, Qingwen Yang, Yan Zhang, Xue Li, and Igor Rudan.
+      exhibiting ADHD symptoms. Frontiers in Psychology 6 (2015), 1161. doi:10.3389/              2021. The Prevalence of Adult Attention-Deficit Hyperactivity Disorder: A
+      fpsyg.2015.01161                                                                            Global Systematic Review and Meta-Analysis. Journal of Global Health 11 (2021),
+[108] Replika. 2024. Replika: The AI Companion Who Cares. https://replika.com/.                   04009. doi:10.7189/jogh.11.04009
+      Accessed: 2024-08-30.                                                                 [130] Tobias Sonne, Jörg Müller, Paul Marshall, Carsten Obel, and Kaj Grønbæk. 2016.
+[109] Walter Roberts, Richard Milich, and Mark T. Fillmore. 2012. Constraints on                  Changing Family Practices with Assistive Technology: MOBERO Improves
+      Information Processing Capacity in Adults with ADHD. Neuropsychology 26, 6                  Morning and Bedtime Routines for Children with ADHD. In Proceedings of
+      (2012), 695–703. doi:10.1037/a0030296                                                       the 2016 CHI Conference on Human Factors in Computing Systems. Association
+[110] Claudia M Roebers. 2017. Executive function and metacognition: Towards a                    for Computing Machinery, New York, NY, USA, 152–164. doi:10.1145/2858036.
+      unifying framework of cognitive self-regulation. Developmental review 45 (2017),            2858157
+      31–51. https://doi.org/10.1016/j.dr.2017.04.001                                       [131] Marcantonio M Spada, Ana V Nikčević, Giovanni B Moneta, and Adrian Wells.
+[111] Larry D Rosen, L Mark Carrier, Jonathan A Pedroza, Stephanie Elias, Kaitlin M               2008. Metacognition, perceived stress, and negative emotion. Personality and
+      O’Brien, Joshua Lozano, Karina Kim, Nancy A Cheever, Jonathan Bentley, and                  individual differences 44, 5 (2008), 1172–1181. https://doi.org/10.1016/j.paid.
+      Abraham Ruiz. 2017. The role of executive functioning and technological                     2007.11.010
+      anxiety (FOMO) in college course performance as mediated by technology                [132] Thomas J. Spencer. 2006. ADHD and Comorbidity in Childhood. Journal of
+      usage and multitasking habits. Psicologia Educativa 24, 1 (2017), 14. https:                Clinical Psychiatry 67, Suppl. 8 (2006), 27–31. https://www.psychiatrist.com/
+      //doi.org/10.5093/psed2018a3                                                                jcp/adhd-comorbidity-childhood-2/
+[112] F. Roshani, M. Najafi, S. Naqshbandi, and P. Malekzadeh. 2017. Comparison of          [133] Katta Spiel, Eva Hornecker, Rua Mae Williams, and Judith Good. 2022. ADHD
+      Alexithymia in Individuals with and without Attention Deficit/Hyperactivity                 and Technology Research–Investigated by Neurodivergent Readers. In Pro-
+      Disorder. Journal of Clinical Psychology 9, 2 (2017), 73–82. doi:10.22075/jcp.2017.         ceedings of the 2022 CHI Conference on Human Factors in Computing Systems.
+      11204.1109                                                                                  Association for Computing Machinery, New York, NY, USA, Article 547, 21 pages.
+[113] Katya Rubia, Ana Cubillo, James Woolley, Michael J. Brammer, and Anna                       doi:10.1145/3491102.3517592
+      Smith. 2011. Disorder-specific dysfunctions in patients with attention-               [134] H. Lee Swanson. 1990. Influence of Metacognitive Knowledge and Aptitude
+      deficit/hyperactivity disorder compared to patients with obsessive-compulsive               on Problem Solving. Journal of Educational Psychology 82, 2 (1990), 306–314.
+      disorder during interference inhibition and attention allocation. Human Brain               doi:10.1037/0022-0663.82.2.306
+      Mapping 32, 4 (2011), 601–611. doi:10.1002/hbm.21048                                  [135] John Sweller. 1988. Cognitive Load during Problem Solving: Effects on Learning.
+[114] Richard M. Ryan and Edward L. Deci. 2000. Self-determination theory and                     Cognitive Science 12, 2 (1988), 257–285. doi:10.1207/s15516709cog1202_4
+      the facilitation of intrinsic motivation, social development, and well-being.         [136] Lev Tankelevitch, Viktor Kewenig, Auste Simkute, Ava Elizabeth Scott, Advait
+      American Psychologist 55, 1 (2000), 68–78. doi:10.1037/0003-066X.55.1.68                    Sarkar, Abigail Sellen, and Sean Rintel. 2024. The Metacognitive Demands and
+[115] Florian Schaub, Rebecca Balebako, Adam L. Durity, and Lorrie Faith Cranor.                  Opportunities of Generative AI. In Proceedings of the 2024 CHI Conference on
+      2015. A Design Space for Effective Privacy Notices. In Proceedings of the 11th              Human Factors in Computing Systems. Association for Computing Machinery,
+      Symposium on Usable Privacy and Security (SOUPS 2015). USENIX Association,                  New York, NY, USA, 1–24. doi:10.1145/3613904.3642902
+      Ottawa, ON, Canada, 1–17. https://www.usenix.org/system/files/conference/             [137] Pina Tarricone. 2011. The Taxonomy of Metacognition. Psychology Press, Lon-
+      soups2015/soups15-paper-schaub.pdf                                                          don.
+[116] Anouk Scheres, Amy Lee, and Motofumi Sumiya. 2008. Temporal reward                    [138] Nathalie Alexandra Tcherdakoff, Paul Marshall, Anna Dowthwaite, Jon Bird,
+      discounting and ADHD: Task and symptom specific effects. Journal of Neural                  and Anna L. Cox. 2025. Burnout by Design: How Digital Systems Over-
+      Transmission 115, 2 (2008), 221–226. doi:10.1007/s00702-007-0813-6                          burden Neurodivergent Students in Higher Education. In Proceedings of the
+[117] Gregory Schraw. 1998. Promoting General Metacognitive Awareness. Instruc-                   4th Annual Symposium on Human-Computer Interaction for Work (CHIWORK
+      tional Science 26, 1 (1998), 113–125. doi:10.1023/A:1003044231033                           2025). Association for Computing Machinery, New York, NY, USA, 17:1–17:18.
+[118] Gregory Schraw and David Moshman. 1995. Metacognitive Theories. Educa-                      https://dblp.org/rec/conf/chiwork/TcherdakoffMDBC25
+      tional Psychology Review 7, 4 (1995), 351–371. doi:10.1007/BF02212307                 [139] Tencent. 2024. Tencent Meeting AI. https://meeting.tencent.com/ai/index.html.
+[119] J. A. Sedgwick. 2018. University Students with Attention Deficit Hyperactivity              Accessed: 2024-08-30.
+      Disorder (ADHD): A Literature Review. Irish Journal of Psychological Medicine         [140] Tencent Games. 2021. Light & Night. https://love.qq.com/. Official website,
+      35, 3 (2018), 221–235. doi:10.1017/ipm.2017.20                                              accessed 2025-11-08..
+[120] L. H. Segura Anaya, Abeer Alsadoon, N. Costadopoulos, and P. W. C. Prasad.            [141] Jonas Thiergart, Stefan Huber, and Thomas Übellacker. 2021.              Under-
+      2018. Ethical Implications of User Perceptions of Wearable Devices. Science and             standing Emails and Drafting Responses: An Approach Using GPT-3.
+      Engineering Ethics 24, 1 (2018), 1–28. doi:10.1007/s11948-017-9872-8                        arXiv:2102.03062 [cs.CL] https://arxiv.org/abs/2102.03062
+[121] Martin E. P. Seligman. 1975. Helplessness: On Depression, Development, and            [142] Sigmund Tobias and Howard T. Everson. 1996. Assessing Metacognitive Knowl-
+      Health. W. H. Freeman, San Francisco, CA. https://books.google.com/books/                   edge Monitoring. Technical Report Report No. 96-01. College Entrance Exami-
+      about/Helplessness.html?id=t_c1wAEACAAJ                                                     nation Board. https://files.eric.ed.gov/fulltext/ED562584.pdf ERIC Document
+[122] Martin E. P. Seligman and Steven F. Maier. 1967. Failure to Escape Traumatic                ED562584.
+      Shock. Journal of Experimental Psychology 74, 1 (1967), 1–9. doi:10.1037/             [143] Rasmus Ulfsnes, Nils Brede Moe, Viktoria Stray, and Marianne Skarpen. 2024.
+      h0024514                                                                                    Transforming Software Development with Generative AI: Empirical Insights on
+[123] Sumita Sharma, Behnaz Norouzi, Edward Peter Greenwood White, Eva Du-                        Collaboration and Workflow. In Generative AI for Effective Software Development.
+      rall Gazulla, Mohsin Y. K. Yousufi, Netta Iivari, Noura Howell, Pauli Klemettilä,           Springer, Cham, 219–234. doi:10.1007/978-3-031-55642-5_10
+      Suleman Shahid, Sayan Sarcar, Xingyu Li, and Wricha Mishra. 2025. Lost in             [144] Hatice Ünver, Ayşe Rodopman Arman, and Şerife Nur Akpunar. 2022. Metacog-
+      Translation: Researchers’ Reflections on Writing in English for CHI. In Proceed-            nitive awareness and emotional resilience in children with attention deficit
+      ings of the Extended Abstracts of the 2025 CHI Conference on Human Factors in               hyperactivity disorder. Scandinavian Journal of Child and Adolescent Psychiatry
+      Computing Systems. Association for Computing Machinery, New York, NY, USA,                  and Psychology 10, 1 (2022), 33–39. doi:10.2478/sjcapp-2022-0003
+      1–9. doi:10.1145/3706599.3716231                                                      [145] Marieke Van Rooij, Adam Lobel, Owen Harris, Niki Smit, and Isabela Granic.
+[124] Philip Shaw, Argyris Stringaris, Joel Nigg, and Ellen Leibenluft. 2014. Emotion             2016. DEEP: A Biofeedback Virtual Reality Game for Children At-risk for
+      Dysregulation in Attention-Deficit/Hyperactivity Disorder. American Journal                 Anxiety. In Proceedings of the 2016 CHI Conference Extended Abstracts on Human
+      of Psychiatry 171, 3 (2014), 276–293. doi:10.1176/appi.ajp.2013.13070966                    Factors in Computing Systems. ACM, New York, NY, USA, 1989–1997. doi:10.
+[125] Mahesh Shrestha, Julianna Lautenschleger, and Neelkamal Soares. 2020. Non-                  1145/2851581.2892452
+      Pharmacologic Management of Attention-Deficit/Hyperactivity Disorder in               [146] Eszter Vigh, Ellen Weir, Nathalie Alexandra Penglin Tcherdakoff, Grace Jane
+      Children and Adolescents: A Review. Translational Pediatrics 9, Suppl 1 (2020),             Stangroome, Yelu Gu, Oussama Metatla, Mamoru Watanabe, René Schäfer, So-
+      S114–S124. doi:10.21037/tp.2019.10.01                                                       phie Hahn, Konrad Mikolaj Krawczyk, Marcela Godoy, Rodolfo Cossovich,
+[126] Maruschka N. Sluiter, Yvonne Groen, Peter de Jonge, and Oliver Tucha. 2020.                 Randy Morin, Kristine Dreaver-Charles, Marguerite Koole, and Frank B. W.
+      Exploring Neuropsychological Effects of a Self-Monitoring Intervention for                  Lewis. 2025. Lost in Translation: A Cross-Cultural Examination of Linguis-
+      ADHD-Symptoms in School. Applied Neuropsychology: Child 9, 3 (2020), 246–                   tic Inaccessibility in HCI. In Proceedings of the Extended Abstracts of the CHI
+      258. doi:10.1080/21622965.2019.1575218                                                      Conference on Human Factors in Computing Systems (CHI EA ’25). Associa-
+[127] Mary V. Solanto, David J. Marks, Jeanette Wasserstein, Katherine Mitchell,                  tion for Computing Machinery, New York, NY, USA, Article 635, 16 pages.
+      Howard Abikoff, Jose Ma. J. Alvir, and Michele D. Kofman. 2010. Efficacy of                 doi:10.1145/3706599.3716229
+      Meta-Cognitive Therapy for Adult ADHD. American Journal of Psychiatry 167,            [147] Xueke Wang, Li Chen, and Tingyong Feng. 2026. The Effects of Mindfulness and
+      8 (2010), 958–968. doi:10.1176/appi.ajp.2009.09081123                                       Cognitive Strategy Interventions on Core Symptoms in Children with ADHD: A
+[128] Ana-María Soler-Gutiérrez, Juan-Carlos Pérez-González, and Julia Mayas. 2023.
+      Evidence of Emotion Dysregulation as a Core Symptom of Adult ADHD: A
+
+===== PDF PAGE 21 / 24 =====
+Scaffolding Metacognition with GenAI                                                                                               CHI ’26, April 13–17, 2026, Barcelona, Spain
+
+
+      Randomized Controlled Trial. Journal of Affective Disorders 394 (2026), 120513.           Error Detection. Social Cognitive and Affective Neuroscience 4, 3 (2009), 227–237.
+      doi:10.1016/j.jad.2025.120513                                                             doi:10.1093/scan/nsp015
+[148] Henry M. Wellman. 1990. The Child’s Theory of Mind. MIT Press, Cambridge,           [156] Lorraine E. Wolf. 2001. College Students with ADHD and Other Hidden Disabil-
+      MA. https://mitpress.mit.edu/9780262730990/the-childs-theory-of-mind/                     ities: Outcomes and Interventions. Annals of the New York Academy of Sciences
+[149] Lisa L. Weyandt and George DuPaul. 2006. ADHD in College Students. Journal                931, 1 (2001), 385–395. doi:10.1111/j.1749-6632.2001.tb05792.x
+      of Attention Disorders 10, 1 (2006), 9–19. doi:10.1177/1087054705286061             [157] Xiaoqing Xu, Lifang Qiao, Nuo Cheng, Hongxia Liu, and Wei Zhao. 2025. En-
+[150] Lisa L. Weyandt and George J. DuPaul. 2008. ADHD in College Students:                     hancing Self-Regulated Learning and Learning Experience in Generative AI
+      Developmental Findings. Developmental Disabilities Research Reviews 14, 4                 Environments: The Critical Role of Metacognitive Support. British Journal of
+      (2008), 311–319. doi:10.1002/ddrr.38                                                      Educational Technology 56, 5 (Sept. 2025), 1842–1863. doi:10.1111/bjet.13599
+[151] Jason Wiese, John R. Lund, and Kazi Sinthia Kabir. 2023. Adding Domain-Specific     [158] Katie Xue, Yaxuan Mao, Junnan Yu, and Yuhan Luo. 2025. Toward Interactive
+      Features to a Text-Editor to Support Diverse, Real-World Approaches to Time               Reading: Co-designing With Adolescents to Explore Opportunities for Over-
+      Management Planning. In Proceedings of the 2023 CHI Conference on Human                   coming Reading Challenges. In Proceedings of the 24th Annual ACM Conference
+      Factors in Computing Systems. ACM, New York, NY, USA, 1–13. doi:10.1145/                  on Interaction Design and Children (IDC ’25). ACM, New York, NY, USA, 904–909.
+      3544548.3581536                                                                           doi:10.1145/3713043.3731503
+[152] Erik G. Willcutt, Rebecca S. Betjemann, Lauren M. McGrath, Nomita A. Chhabil-       [159] Hui Zhang and Qi Wang. 2025. The Impact of GenAI Assistance on Knowledge
+      das, Richard K. Olson, John C. DeFries, and Bruce F. Pennington. 2010. Etiology           Building in Tasks of Different Difficulty Levels. In Proceedings of the 2025 14th
+      and Neuropsychology of Comorbidity between RD and ADHD: The Case for                      International Conference on Educational and Information Technology (ICEIT).
+      Multiple-Deficit Models. Cortex 46, 10 (2010), 1345–1361. doi:10.1016/j.cortex.           IEEE, Tokyo, Japan, 556–561. doi:10.1109/ICEIT64364.2025.10976085
+      2010.06.009                                                                         [160] Wenjun Zhong, Jianghua Luo, and Ya Lyu. 2024. How Do Personal Attributes
+[153] Jonathan Williams and Peter Dayan. 2005. Dopamine, Learning, and Impulsivity:             Shape AI Dependency in Chinese Higher Education Context? Insights from
+      A Biological Account of Attention-Deficit/Hyperactivity Disorder. Journal of              Needs Frustration Perspective. PLOS ONE 19, 11 (2024), e0313314. doi:10.1371/
+      Child & Adolescent Psychopharmacology 15, 2 (2005), 160–179. doi:10.1089/cap.             journal.pone.0313314
+      2005.15.160                                                                         [161] Zhibin Zhou, Yaoqi Li, and Junnan Yu. 2024. Exploring the application of LLM-
+[154] Howard P. Wills and Benjamin A. Mason. 2014. Implementation of a Self-                    based AI in UX design: an empirical case study of ChatGPT. Human–Computer
+      Monitoring Application to Improve On-Task Behavior: A High-School Pilot                   Interaction 0, 0 (2024), 1–33. doi:10.1080/07370024.2024.2420991
+      Study. Journal of Behavioral Education 23, 4 (2014), 421–434. doi:10.1007/s10864-   [162] Barry J. Zimmerman. 1986. Becoming a Self-Regulated Learner: Which Are the
+      014-9204-x                                                                                Key Subprocesses? Contemporary Educational Psychology 11, 4 (1986), 307–313.
+[155] Daniel Wiswede, Thomas F. Münte, and Jascha Rüsseler. 2009. Negative Affect               doi:10.1016/0361-476X(86)90027-5
+      Induced by Derogatory Verbal Feedback Modulates the Neural Signature of
+
+===== PDF PAGE 22 / 24 =====
+CHI ’26, April 13–17, 2026, Barcelona, Spain                                                                                                                                   Zihao Zhu, Junnan Yu, and Yuhan Luo
+
+
+Appendix
+A: Participants’ GenAI Tool Use and Purposes
+
+                                Table 3: Information About Participants’ GenAI Tool Use and Their Primary Uses.
+
+                                       ID GenAI Tools                             Primary Uses
+                                       P1 ChatGPT                                 Writing and polishing, role-play for entertainment
+                                       P2 ChatGPT                                 Reading literature, writing and polishing
+                                       P3 ChatGPT                                 Writing and polishing, interpersonal reflection
+                                       P4 None                                    —
+                                          ChatGPT, ERNIE Bot,
+                                       P5                                         Simulated companionship, writing and polishing
+                                          Replica, Midjourney, Pi
+                                       P6 ChatGPT, ERNIE Bot                      Interpersonal reflection, companionship, quick Q&A
+                                       P7 ChatGPT                                 English speaking practice, emotional venting (e.g., swearing),
+                                                                                  information search
+                                       P8 ChatGPT                                 Data processing, organizing lecture notes, information search
+                                       P9 ChatGPT                                 Coursework ideation, prototyping, data processing, health-related
+                                                                                  inquiries
+                                       P10 ChatGPT                                Japanese speaking practice, writing and polishing
+                                       P11 ChatGPT                                Writing and polishing
+                                       P12 ChatGPT                                Programming learning, writing and polishing
+                                       P13 ChatGPT                                Translation, writing and polishing
+                                       P14 ERNIE Bot                              Writing and polishing, information search
+                                       P15 ChatGPT                                Writing and polishing, role-play for psychological counseling
+                                       P16 ChatGPT, Claude                        Writing and polishing
+                                       P17 ChatGPT                                Information search, image generation
+                                       P18 ChatGPT                                Writing and polishing, information search, programming
+                                       P19 ChatGPT                                English speaking practice, information search, writing and
+                                                                                  polishing
+                                       P20 ChatGPT                                Writing and polishing, quick Q&A
+
+
+   B: Original User Study Process
+
+
+                                 Co-​design Workshop with University Students with ADHD
+
+
+                            a                                                      b                                                         c
+
+
+
+
+                                Introduction of the workshop procedure                   Sharing challenges in task management,               Co-​designing solutions on a shared whiteboard
+                                                                                        introduction of GenAI and its applications
+
+
+
+                                                         Interviews with ADHD Experts
+
+
+                                                   d                                                              e
+
+
+
+
+                                                                                                                 Sharing experience in working with ADHD populations,
+                                                            Introduction of the interview process
+                                                                                                                        and thoughts on collected design ideas
+
+
+
+
+                  Figure 6: The overview of the study procedure with instructions in the original language (Chinese).
+
+===== PDF PAGE 23 / 24 =====
+Scaffolding Metacognition with GenAI                                                                CHI ’26, April 13–17, 2026, Barcelona, Spain
+
+
+   C: Co-Design Artifacts in Their Original Language
+
+
+
+
+                           Figure 7: Leveraging GenAI to identify tasks from chat logs and the clipboard (P2).
+
+
+
+
+                    Figure 8: Priority analysis and task list generation, which can be manually adjusted later (P7).
+
+
+
+
+ Figure 9: Breaking tasks into actionable subtasks and estimating workload based on individuals’ historical behavior (P15).
+
+===== PDF PAGE 24 / 24 =====
+CHI ’26, April 13–17, 2026, Barcelona, Spain                                                              Zihao Zhu, Junnan Yu, and Yuhan Luo
+
+
+
+
+Figure 10: Delivering multiple forms of motivational prompts (e.g., visual, audio, or vibration) to facilitate task initiation (P16).
+
+
+
+
+ Figure 11: Tracking the gap between actual vs. planned task progress, with suggestions on the preparations required (P11).
+
+
+
+
+                               Figure 12: Serving as a study companion to help an individual stay focused (P7).
+
+
+
+
+    Figure 13: Emotional support from interactive, multimodal conversations with one’s favorite fictional character (P10).

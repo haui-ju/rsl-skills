@@ -9,6 +9,9 @@ Stages:
   D verify   — quality gates (nodes per paper, queries, manifest)
 
 Manifest: docs/<tema>/RSL/index-manifest.json
+
+Corpus mode (--corpus <dir>): PDFs in <dir>/*.pdf, MD in <dir>/MD, manifest in
+<dir>/index-manifest.json, graph in <dir>/graphify-out (used by cribado 2).
 """
 from __future__ import annotations
 
@@ -20,12 +23,56 @@ import subprocess
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
+from typing import NamedTuple
 
 MANIFEST_NAME = "index-manifest.json"
 MIN_WORDS_OK = 400
 MIN_ALPHA_RATIO = 0.55
 MIN_HEADINGS_FOR_PAPER = 8
 MIN_NODES_PER_PAPER_SOURCE = 8
+
+
+class Layout(NamedTuple):
+    root: Path
+    pdf_dir: Path
+    pdf_prefix: str
+    md_dir: Path
+    md_prefix: str
+    manifest_dir: Path
+    out: Path
+    theme_md: bool
+
+
+def layout(
+    theme: Path,
+    corpus: Path | None = None,
+    *,
+    pdf_subdir: str | None = None,
+    md_subdir: str | None = None,
+) -> Layout:
+    if corpus is None:
+        return Layout(
+            root=theme,
+            pdf_dir=theme / "RSL" / "PDF",
+            pdf_prefix="RSL/PDF/",
+            md_dir=theme / "RSL" / "MD",
+            md_prefix="RSL/MD/",
+            manifest_dir=theme / "RSL",
+            out=theme / "graphify-out",
+            theme_md=True,
+        )
+    pdf_rel = pdf_subdir or "docs/pdf"
+    md_rel = md_subdir or "docs/md"
+    return Layout(
+        root=corpus,
+        pdf_dir=corpus / pdf_rel,
+        pdf_prefix=f"{pdf_rel}/",
+        md_dir=corpus / md_rel,
+        md_prefix=f"{md_rel}/",
+        manifest_dir=corpus,
+        out=corpus / "graphify-out",
+        theme_md=False,
+    )
 
 
 def utc_now() -> str:
@@ -427,11 +474,13 @@ def pdftotext_raw(pdf: Path) -> tuple[bool, str, str]:
     return True, r.stdout or "", ""
 
 
-def prepare(theme: Path, force: bool = False) -> dict:
-    rsl = theme / "RSL"
-    pdf_dir = rsl / "PDF"
-    md_dir = rsl / "MD"
-    raw_dir = rsl / "MD" / "_raw"
+def prepare(theme: Path, force: bool = False, lay: Layout | None = None) -> dict:
+    lay = lay or layout(theme)
+    root = lay.root
+    rsl = lay.manifest_dir
+    pdf_dir = lay.pdf_dir
+    md_dir = lay.md_dir
+    raw_dir = md_dir / "_raw"
     pdf_dir.mkdir(parents=True, exist_ok=True)
     md_dir.mkdir(parents=True, exist_ok=True)
     raw_dir.mkdir(parents=True, exist_ok=True)
@@ -442,7 +491,7 @@ def prepare(theme: Path, force: bool = False) -> dict:
     skipped: list[str] = []
     converted: list[str] = []
 
-    current_md = theme_md_files(theme)
+    current_md = theme_md_files(theme) if lay.theme_md else []
     current_keys = {entry_key(str(md.relative_to(theme))) for md in current_md}
     for k in [k for k, v in entries.items() if v.get("method") == "theme-md" and k not in current_keys]:
         del entries[k]
@@ -475,17 +524,17 @@ def prepare(theme: Path, force: bool = False) -> dict:
         converted.append(rel)
 
     for pdf in sorted(pdf_dir.glob("*.pdf")):
-        rel = entry_key(f"RSL/PDF/{pdf.name}")
+        rel = entry_key(f"{lay.pdf_prefix}{pdf.name}")
         digest = sha256_file(pdf)
         out_md = md_dir / f"{pdf.stem}.md"
-        md_rel = entry_key(f"RSL/MD/{out_md.name}")
+        md_rel = entry_key(f"{lay.md_prefix}{out_md.name}")
         prev = entries.get(rel)
 
         unchanged = (
             prev
             and prev.get("source_sha256") == digest
             and prev.get("status") in {"md_ready", "graphify_indexed", "needs_agent"}
-            and (theme / prev.get("md", md_rel)).exists()
+            and (root / prev.get("md", md_rel)).exists()
             and not force
         )
         if unchanged and prev.get("status") == "needs_agent":
@@ -494,7 +543,7 @@ def prepare(theme: Path, force: bool = False) -> dict:
             continue
         if unchanged and prev.get("status") in {"md_ready", "graphify_indexed"}:
             # Re-check heading density; poor structure must be rebuilt
-            existing = (theme / prev["md"]).read_text(encoding="utf-8", errors="replace")
+            existing = (root / prev["md"]).read_text(encoding="utf-8", errors="replace")
             if count_md_headings(existing) >= MIN_HEADINGS_FOR_PAPER:
                 skipped.append(rel)
                 continue
@@ -554,7 +603,7 @@ def prepare(theme: Path, force: bool = False) -> dict:
     save_manifest(rsl, manifest)
     report = {
         "stage": "A_prepare",
-        "theme": str(theme),
+        "theme": str(root),
         "converted": converted,
         "skipped": skipped,
         "needs_agent": needs_agent,
@@ -564,15 +613,18 @@ def prepare(theme: Path, force: bool = False) -> dict:
     return report
 
 
-def stamp_agent_md(theme: Path, pdf_rel: str, method: str = "agent-rag", notes: str = "") -> None:
-    rsl = theme / "RSL"
+def stamp_agent_md(
+    theme: Path, pdf_rel: str, method: str = "agent-rag", notes: str = "", lay: Layout | None = None
+) -> None:
+    lay = lay or layout(theme)
+    rsl = lay.manifest_dir
     manifest = load_manifest(rsl)
     key = entry_key(pdf_rel)
     ent = manifest.setdefault("entries", {}).get(key)
     if not ent:
         print(f"error: no manifest entry for {key}", file=sys.stderr)
         sys.exit(1)
-    md_path = theme / ent["md"]
+    md_path = lay.root / ent["md"]
     if not md_path.exists():
         print(f"error: MD missing: {md_path}", file=sys.stderr)
         sys.exit(1)
@@ -596,8 +648,8 @@ def stamp_agent_md(theme: Path, pdf_rel: str, method: str = "agent-rag", notes: 
     print(f"stamped md_ready: {key} → {ent['md']} (headings={headings})")
 
 
-def stamp_graphify(theme: Path, indexed_rels: list[str]) -> None:
-    rsl = theme / "RSL"
+def stamp_graphify(theme: Path, indexed_rels: list[str], lay: Layout | None = None) -> None:
+    rsl = (lay or layout(theme)).manifest_dir
     manifest = load_manifest(rsl)
     entries = manifest.setdefault("entries", {})
     now = utc_now()
@@ -612,7 +664,7 @@ def stamp_graphify(theme: Path, indexed_rels: list[str]) -> None:
     save_manifest(rsl, manifest)
 
 
-def build_graph(theme: Path) -> dict:
+def build_graph(theme: Path, lay: Layout | None = None) -> dict:
     from graphify.analyze import god_nodes as find_gods, surprising_connections
     from graphify.build import build
     from graphify.cluster import cluster, score_all
@@ -620,17 +672,19 @@ def build_graph(theme: Path) -> dict:
     from graphify.extractors.markdown import extract_markdown
     from graphify.report import generate
 
-    out = theme / "graphify-out"
+    lay = lay or layout(theme)
+    root = lay.root
+    out = lay.out
     out.mkdir(parents=True, exist_ok=True)
-    md_dir = theme / "RSL" / "MD"
-    rsl = theme / "RSL"
+    md_dir = lay.md_dir
+    rsl = lay.manifest_dir
     manifest = load_manifest(rsl)
     entries = manifest.get("entries", {})
 
     md_files: list[Path] = []
     indexed_keys: list[str] = []
 
-    for md in theme_md_files(theme):
+    for md in theme_md_files(theme) if lay.theme_md else []:
         rel = entry_key(str(md.relative_to(theme)))
         ent = entries.get(rel)
         if ent and ent.get("status") == "needs_agent":
@@ -641,7 +695,7 @@ def build_graph(theme: Path) -> dict:
     for md in sorted(md_dir.glob("*.md")):
         if md.name.startswith("_"):
             continue
-        md_rel = entry_key(f"RSL/MD/{md.name}")
+        md_rel = entry_key(f"{lay.md_prefix}{md.name}")
         pdf_key = None
         pdf_ent = None
         for k, v in entries.items():
@@ -661,15 +715,15 @@ def build_graph(theme: Path) -> dict:
         if not result:
             continue
         n = len(result.get("nodes") or [])
-        per_file_nodes[str(f.relative_to(theme))] = n
+        per_file_nodes[str(f.relative_to(root))] = n
         extractions.append(result)
-        print(f"extracted: {f.relative_to(theme)} → {n} nodes")
+        print(f"extracted: {f.relative_to(root)} → {n} nodes")
 
     if not extractions or not any(e.get("nodes") for e in extractions):
         print("error: no markdown nodes extracted", file=sys.stderr)
         sys.exit(1)
 
-    G = build(extractions, directed=False, root=str(theme))
+    G = build(extractions, directed=False, root=str(root))
     communities = cluster(G)
     cohesion = score_all(G, communities)
     labels = {i: f"Community {i}" for i in communities}
@@ -690,7 +744,7 @@ def build_graph(theme: Path) -> dict:
     token_cost = {"input": 0, "output": 0, "total": 0, "model": "offline-ast"}
     try:
         report = generate(
-            G, communities, cohesion, labels, gods, surprises, detection, token_cost, str(theme)
+            G, communities, cohesion, labels, gods, surprises, detection, token_cost, str(root)
         )
     except Exception as e:
         report = (
@@ -706,12 +760,12 @@ def build_graph(theme: Path) -> dict:
     except Exception as e:
         print(f"warn: graph.html skipped: {e}", file=sys.stderr)
 
-    stamp_graphify(theme, indexed_keys)
+    stamp_graphify(theme, indexed_keys, lay)
     meta = {
         "stage": "C_build",
         "mode": "offline-markdown",
-        "theme": str(theme),
-        "files": [str(p.relative_to(theme)) for p in md_files],
+        "theme": str(root),
+        "files": [str(p.relative_to(root)) for p in md_files],
         "nodes_per_file": per_file_nodes,
         "nodes": G.number_of_nodes(),
         "edges": G.number_of_edges(),
@@ -724,10 +778,11 @@ def build_graph(theme: Path) -> dict:
     return meta
 
 
-def verify(theme: Path) -> dict:
+def verify(theme: Path, lay: Layout | None = None) -> dict:
     """Quality gates — must pass before trusting theme memory."""
-    rsl = theme / "RSL"
-    graph_path = theme / "graphify-out" / "graph.json"
+    lay = lay or layout(theme)
+    rsl = lay.manifest_dir
+    graph_path = lay.out / "graph.json"
     manifest = load_manifest(rsl)
     errors: list[str] = []
     warnings: list[str] = []
@@ -753,9 +808,13 @@ def verify(theme: Path) -> dict:
         by_source.setdefault(sf, []).append(n)
 
     entries = manifest.get("entries") or {}
-    pdf_entries = {k: v for k, v in entries.items() if k.startswith("RSL/PDF/")}
+    pdf_entries = {
+        k: v for k, v in entries.items() if k.startswith(lay.pdf_prefix) and k.lower().endswith(".pdf")
+    }
 
-    if "informe.md" not in by_source and not any(Path(theme, "informe.md").exists() for _ in [0]):
+    if not lay.theme_md:
+        pass
+    elif "informe.md" not in by_source and not any(Path(theme, "informe.md").exists() for _ in [0]):
         warnings.append("informe.md not in theme folder")
     elif Path(theme, "informe.md").exists():
         # find any node from informe
@@ -764,7 +823,7 @@ def verify(theme: Path) -> dict:
             errors.append(f"informe.md under-indexed ({len(informe_nodes)} nodes, want >= 3)")
 
     topic_nodes = [n for n in nodes if str(n.get("source_file", "")).endswith("topic.md")]
-    if Path(theme, "topic.md").exists() and len(topic_nodes) < 3:
+    if lay.theme_md and Path(theme, "topic.md").exists() and len(topic_nodes) < 3:
         errors.append(f"topic.md under-indexed ({len(topic_nodes)} nodes, want >= 3)")
 
     for key, ent in pdf_entries.items():
@@ -781,7 +840,7 @@ def verify(theme: Path) -> dict:
             for n in nodes
             if md_rel.endswith(Path(str(n.get("source_file", ""))).name)
             or str(n.get("source_file", "")).replace("\\", "/").endswith(md_rel)
-            or f"RSL/MD/{Path(md_rel).name}" in str(n.get("source_file", "")).replace("\\", "/")
+            or f"{lay.md_prefix}{Path(md_rel).name}" in str(n.get("source_file", "")).replace("\\", "/")
         ]
         if len(paper_nodes) < MIN_NODES_PER_PAPER_SOURCE:
             errors.append(
@@ -793,14 +852,20 @@ def verify(theme: Path) -> dict:
     query_checks = []
     stems = [Path(k).stem for k in pdf_entries if pdf_entries[k].get("status") == "graphify_indexed"]
     for stem in stems[:3]:
-        query_checks.append((stem.split("-")[0], stem))
-    query_checks.extend(
-        [
-            ("cognitive accessibility", "cognitive"),
-            ("digital accessibility", "accessibility"),
-            ("neurodiverg", "neuro"),
-        ]
-    )
+        parts = stem.split("-")
+        token = parts[0]
+        if len(parts) > 1 and re.fullmatch(r"R\d+", parts[0]):
+            words = [p for p in parts[1:] if not p.isdigit()]
+            token = max(words, key=len) if words else parts[0]
+        query_checks.append((token, stem))
+    if lay.theme_md:
+        query_checks.extend(
+            [
+                ("cognitive accessibility", "cognitive"),
+                ("digital accessibility", "accessibility"),
+                ("neurodiverg", "neuro"),
+            ]
+        )
 
     for q, expect_substr in query_checks:
         r = subprocess.run(
@@ -873,26 +938,32 @@ def main() -> None:
     ap.add_argument("--force", action="store_true")
     ap.add_argument("--stamp-agent", metavar="PDF_REL")
     ap.add_argument("--stamp-notes", default="")
+    ap.add_argument("--corpus", metavar="DIR", help="PDF corpus folder (MD, manifest and graph live inside)")
     args = ap.parse_args()
     theme = Path(args.theme).resolve()
     if not theme.is_dir():
         print(f"error: not a directory: {theme}", file=sys.stderr)
         sys.exit(1)
+    corpus = Path(args.corpus).resolve() if args.corpus else None
+    if corpus is not None and not corpus.is_dir():
+        print(f"error: not a directory: {corpus}", file=sys.stderr)
+        sys.exit(1)
+    lay = layout(theme, corpus)
 
     if args.stamp_agent:
-        stamp_agent_md(theme, args.stamp_agent, notes=args.stamp_notes)
+        stamp_agent_md(theme, args.stamp_agent, notes=args.stamp_notes, lay=lay)
         return
 
     if args.verify_only:
-        ok = verify(theme)["ok"]
+        ok = verify(theme, lay)["ok"]
         sys.exit(0 if ok else 1)
 
     if args.build_only:
-        build_graph(theme)
-        ok = verify(theme)["ok"]
+        build_graph(theme, lay)
+        ok = verify(theme, lay)["ok"]
         sys.exit(0 if ok else 1)
 
-    prep = prepare(theme, force=args.force)
+    prep = prepare(theme, force=args.force, lay=lay)
     if args.prepare_only:
         sys.exit(2 if prep.get("needs_agent") else 0)
 
@@ -904,8 +975,8 @@ def main() -> None:
         )
         sys.exit(2)
 
-    build_graph(theme)
-    ok = verify(theme)["ok"]
+    build_graph(theme, lay)
+    ok = verify(theme, lay)["ok"]
     sys.exit(0 if ok else 1)
 
 

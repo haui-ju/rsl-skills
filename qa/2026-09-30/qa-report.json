@@ -1,0 +1,741 @@
+{
+  "date": "2026-09-30",
+  "total": 80,
+  "failed": 2,
+  "proposed": [],
+  "cases": [
+    {
+      "id": "P01",
+      "group": "positivo",
+      "desc": "flujo completo desde cero: init, picoc, versión, borrador, polish y segunda versión",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "P02",
+      "group": "positivo",
+      "desc": "cambio de marco a PIO con un picoc PIO válido",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "P03",
+      "group": "positivo",
+      "desc": "modo ligero: la § 1.2 cambia y una versión nueva con la pregunta nueva vuelve a pasar",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "P04",
+      "group": "positivo",
+      "desc": "thesaurus:check por pnpm (cableado de package.json)",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "P05",
+      "group": "positivo",
+      "desc": "lints de la ficha limpia y citas APA e IEEE correctas",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "P06",
+      "group": "positivo",
+      "desc": "pnpm con los scripts del paquete: paper:status, picoc:latest, picoc:lint",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M01",
+      "group": "orden",
+      "desc": "--update borrador sin versiones",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M02",
+      "group": "orden",
+      "desc": "--update polish cuando la versión no tiene paper-polish.md",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M03",
+      "group": "orden",
+      "desc": "--cites sin versiones del paper",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M04",
+      "group": "orden",
+      "desc": "picoc:lint antes de rsl-picoc",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M05",
+      "group": "orden",
+      "desc": "picoc:latest en un tema vacío (sin informe ni paper)",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M06",
+      "group": "orden",
+      "desc": "paper:status sin picoc: OK con BLOCKED y próximo paso rsl-picoc",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M07",
+      "group": "orden",
+      "desc": "paper:status sin informe: próximo paso rsl-make-report",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M08",
+      "group": "orden",
+      "desc": "dos --new-version el mismo día",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M09",
+      "group": "orden",
+      "desc": "--new-version con todo frozen/off no crea carpeta",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M10",
+      "group": "orden",
+      "desc": "editar una sección frozen: status, --update y --new-version fallan",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M11",
+      "group": "orden",
+      "desc": "--migrate sobre el formato nuevo no cambia nada",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M12",
+      "group": "orden",
+      "desc": "cambio de marco a mitad del flujo: secciones del marco BLOCKED",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M13",
+      "group": "orden",
+      "desc": "--update borrador cuando solo existe paper-polish.md",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M14",
+      "group": "orden",
+      "desc": "un picoc nuevo el mismo día con otro marco pasa a ser el último",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M15",
+      "group": "orden",
+      "desc": "--init con un config.yml existente no lo pisa",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M17",
+      "group": "orden",
+      "desc": "tema viejo con paper/paper.yml: ERROR hasta correr --migrate, que lo mueve a config.yml",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M18",
+      "group": "orden",
+      "desc": "--migrate de paper/paper.yml con el formato antiguo (enabled/frozen): lo mueve y lo convierte",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D01",
+      "group": "destruir",
+      "desc": "config.yml con YAML roto",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D02",
+      "group": "destruir",
+      "desc": "config.yml vacío: todo off, sin romperse",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D03",
+      "group": "destruir",
+      "desc": "config.yml que es una lista",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D04",
+      "group": "destruir",
+      "desc": "estado de sección desconocido (maybe)",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D05",
+      "group": "destruir",
+      "desc": "estado de sección como lista [on]",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D06",
+      "group": "destruir",
+      "desc": "sección inexistente en config.yml",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D07",
+      "group": "destruir",
+      "desc": "formato inválido: idioma, citas, numeracion, resumen, clave desconocida",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D08",
+      "group": "destruir",
+      "desc": "formato como texto en vez de bloque",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D09",
+      "group": "destruir",
+      "desc": "paper.state.jsonc corrupto, vacío y con tipos erróneos",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D10",
+      "group": "destruir",
+      "desc": "paper.shadow.yml ausente, roto y con ids repetidos",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D11",
+      "group": "destruir",
+      "desc": "marcadores rotos: sin cerrar, repetidos, anidados, cierre huérfano",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D12",
+      "group": "destruir",
+      "desc": "borrador sin marcadores, vacío, no UTF-8 y con id desconocido",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D13",
+      "group": "destruir",
+      "desc": "ficha sin pregunta en la § 1.2 y con dos preguntas",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D14",
+      "group": "destruir",
+      "desc": "picoc vacío, sin **Marco:**, sin queries, con tipo de documento distinto de CR y con T invertido",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D15",
+      "group": "destruir",
+      "desc": "carpetas basura en picoc/ y paper/ se ignoran",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D16",
+      "group": "destruir",
+      "desc": "rutas: / final, absoluta, archivo en vez de tema, tema inexistente",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D17",
+      "group": "destruir",
+      "desc": "argumentos inválidos en todos los scripts",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D18",
+      "group": "destruir",
+      "desc": "citas rotas: APA huérfana, IEEE fuera de orden y sin referencia; APA con página sí cuenta como citada",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D19",
+      "group": "destruir",
+      "desc": "finales de línea CRLF y BOM UTF-8",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D20",
+      "group": "destruir",
+      "desc": "no se pierde nada si una versión del paper desaparece",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D21",
+      "group": "destruir",
+      "desc": "sin permisos de escritura: paper.state.jsonc de solo lectura y paper/ sin escritura (ataques A3, A9)",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D22",
+      "group": "destruir",
+      "desc": "versiones con fecha futura en picoc/ y paper/ (ataque A4)",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D23",
+      "group": "destruir",
+      "desc": "estados con mayúsculas o espacios se aceptan (ataque A5)",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D24",
+      "group": "destruir",
+      "desc": "carpetas de versión -0, -1 y -01 se ignoran y la versión nueva es la última (ataque A8)",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D25",
+      "group": "destruir",
+      "desc": "dos picoc con la misma fecha y número (ataque A11)",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D26",
+      "group": "destruir",
+      "desc": "rutas con espacios y acentos, y tema enlazado con symlink (ataques A1, A6)",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D27",
+      "group": "destruir",
+      "desc": "celda con \\| escapado y ? interna en una RQ (ataque A10)",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "D28",
+      "group": "destruir",
+      "desc": "picoc.md convertido en carpeta (ataque A2)",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M16",
+      "group": "orden",
+      "desc": "borrar picoc/ con el paper ya generado: BLOCKED y próximo paso rsl-picoc (ataque A7)",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "K01",
+      "group": "marco",
+      "desc": "variantes válidas del marco: pio, ' PICOCT ', [p, i, o], PICOCTS, PICOS",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "K02",
+      "group": "marco",
+      "desc": "variantes inválidas: PIX, PICCC, 123, vacío, P-I-O, PICoO, solo T",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "K03",
+      "group": "marco",
+      "desc": "picoc con **Marco:** inválido o distinto de su carpeta",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "K04",
+      "group": "marco",
+      "desc": "picoc PIO con filtro de año distinto del periodo de CR o con una fila de más",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "K05",
+      "group": "marco",
+      "desc": "criterios de inclusión y exclusión: ausentes, fuera de lugar, largos, incompletos o con otros años que T",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "K08",
+      "group": "marco",
+      "desc": "filtros de inclusión en las queries: sin acceso abierto en CR o en Scopus, WoS sin tipo, idioma o nota de acceso abierto",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "K06",
+      "group": "marco",
+      "desc": "keywords del paper: ausentes, fuera de lugar, más de 6, menos de 5, inventadas, de otro componente o sin cubrir un componente",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "S01",
+      "group": "skills",
+      "desc": "cada `pnpm -s X` citado en skills, agentes, playbooks y README existe en package.json",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "S02",
+      "group": "skills",
+      "desc": "rutas global/, playbooks/ y scripts/ citadas existen",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "S03",
+      "group": "skills",
+      "desc": "agentes *-rsl y skills rsl-* citados existen; nombre del frontmatter = carpeta",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "S04",
+      "group": "skills",
+      "desc": "cada skill rsl-* tiene la sección Cierre con el contrato OK/ERROR",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "S05",
+      "group": "skills",
+      "desc": "sin restos de reglas viejas (PICO | PICOC | PICOCT, picoc-polish, mínimos en agentes)",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "S06",
+      "group": "skills",
+      "desc": "README lista todas las skills rsl-*",
+      "failed": true,
+      "crash": null,
+      "steps": [
+        {
+          "cmd": "(verificación)",
+          "expect": "OK",
+          "code": 0,
+          "last": "README.md no menciona `rsl-cribado-2`",
+          "problems": [
+            "README.md no menciona `rsl-cribado-2`"
+          ],
+          "suspect": ".cursor/skills · .cursor/agents · README",
+          "output": ""
+        },
+        {
+          "cmd": "(verificación)",
+          "expect": "OK",
+          "code": 0,
+          "last": "README.md no menciona `rsl-cribado-2-memoria`",
+          "problems": [
+            "README.md no menciona `rsl-cribado-2-memoria`"
+          ],
+          "suspect": ".cursor/skills · .cursor/agents · README",
+          "output": ""
+        }
+      ]
+    },
+    {
+      "id": "S07",
+      "group": "skills",
+      "desc": "rsl-picoc solo escribe picoc/: no edita informe, paper ni config.yml",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "P07",
+      "group": "positivo",
+      "desc": "rsl:source convierte un PDF real en MD junto al PDF y no lo rehace si está al día",
+      "failed": true,
+      "crash": null,
+      "steps": [
+        {
+          "cmd": "python3 scripts/rsl-source.py global/bibliography/prisma/page-2021-prisma-2020.pdf",
+          "expect": "OK",
+          "code": 1,
+          "last": "ERROR: fallo interno (AttributeError): 'NoneType' object has no attribute '__dict__'. reporta el caso con rsl-qa-destroy.",
+          "problems": [
+            "se esperaba OK y salió ERROR",
+            "falta en la salida: «generado»"
+          ],
+          "suspect": "scripts/rsl-source.py",
+          "output": "ERROR: fallo interno (AttributeError): 'NoneType' object has no attribute '__dict__'. reporta el caso con rsl-qa-destroy.\n"
+        },
+        {
+          "cmd": "(verificación)",
+          "expect": "OK",
+          "code": 0,
+          "last": "rsl:source no escribió el MD junto al PDF",
+          "problems": [
+            "rsl:source no escribió el MD junto al PDF"
+          ],
+          "suspect": ".cursor/skills · .cursor/agents · README",
+          "output": ""
+        },
+        {
+          "cmd": "(verificación)",
+          "expect": "OK",
+          "code": 0,
+          "last": "el MD global arrastra los ganchos de relevancia de un tema",
+          "problems": [
+            "el MD global arrastra los ganchos de relevancia de un tema"
+          ],
+          "suspect": ".cursor/skills · .cursor/agents · README",
+          "output": ""
+        },
+        {
+          "cmd": "(verificación)",
+          "expect": "OK",
+          "code": 0,
+          "last": "rsl:source no dejó el texto por página en _raw/",
+          "problems": [
+            "rsl:source no dejó el texto por página en _raw/"
+          ],
+          "suspect": ".cursor/skills · .cursor/agents · README",
+          "output": ""
+        },
+        {
+          "cmd": "python3 scripts/rsl-source.py global/bibliography/prisma/page-2021-prisma-2020.pdf",
+          "expect": "OK",
+          "code": 1,
+          "last": "ERROR: fallo interno (AttributeError): 'NoneType' object has no attribute '__dict__'. reporta el caso con rsl-qa-destroy.",
+          "problems": [
+            "se esperaba OK y salió ERROR",
+            "falta en la salida: «ya estaba al día»"
+          ],
+          "suspect": "scripts/rsl-source.py",
+          "output": "ERROR: fallo interno (AttributeError): 'NoneType' object has no attribute '__dict__'. reporta el caso con rsl-qa-destroy.\n"
+        },
+        {
+          "cmd": "pnpm -s rsl:source global/bibliography/prisma/page-2021-prisma-2020.pdf --force",
+          "expect": "OK",
+          "code": 1,
+          "last": "ERROR: fallo interno (AttributeError): 'NoneType' object has no attribute '__dict__'. reporta el caso con rsl-qa-destroy.",
+          "problems": [
+            "se esperaba OK y salió ERROR",
+            "falta en la salida: «generado»"
+          ],
+          "suspect": "package.json / scripts",
+          "output": "ERROR: fallo interno (AttributeError): 'NoneType' object has no attribute '__dict__'. reporta el caso con rsl-qa-destroy.\n"
+        }
+      ]
+    },
+    {
+      "id": "D29",
+      "group": "destruir",
+      "desc": "rsl:source sin PDF, con ruta inexistente, con un .md o con un HTML disfrazado de .pdf",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M19",
+      "group": "orden",
+      "desc": "graphify:bibliography:status sin grafo: ERROR con el refresh como arreglo",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M20",
+      "group": "orden",
+      "desc": "seleccion-prisma sin RSL/seleccion no queda BLOCKED (los conteos van como X)",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M21",
+      "group": "orden",
+      "desc": "picoc nuevo con keywords frozen en el paper: RESYNC, --picoc-sync y --update fallan hasta copiar el picoc; la prosa frozen sigue protegida",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M22",
+      "group": "orden",
+      "desc": "vocabularios citados (VOC): picoc que usa ACM CCS sin citarla falla; el paper debe citar en la nota los mismos vocabularios que el picoc",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "M23",
+      "group": "orden",
+      "desc": "un formateador de Markdown (líneas vacías, *cursiva* → _cursiva_, relleno de tablas, [[ … ]]) no cuenta como editar una sección frozen, ni en la versión siguiente; un cambio de texto sí",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "C01",
+      "group": "orden",
+      "desc": "cribado 1: prepare pasa WoS a CSV, une Scopus y WoS en resultados-<MARCO>.csv y deduplica (DOI y título, dentro y entre bases) antes de los lotes; report escribe cribado-1.md y el shadow; apply escribe el unificado con las dos columnas sin tocar las exportaciones",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "C02",
+      "group": "destruir",
+      "desc": "cribado 1: set corrige y regenera reporte y shadow; set inválido no cambia nada; exportación cambiada, dos por base, cabeceras ajenas o sin criterios dan ERROR",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "C03",
+      "group": "orden",
+      "desc": "cribado 1: keywords mide los términos de la query y propone palabras clave de los aceptados; picoc:latest avisa la sugerencia pendiente y deja de avisar con la versión nueva",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "C04",
+      "group": "orden",
+      "desc": "cribado 1: merge toma los acuerdos de los agentes, frena con los desacuerdos sin resolver, aplica resoluciones.md, escribe debate.md y conserva las correcciones del usuario",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "K07",
+      "group": "marco",
+      "desc": "redaccion:lint acepta n = X y [[ AGREGAR DIAGRAMA ]] como marcadores del usuario, pero sigue fallando con TODO y con apelaciones a «el lector» (no con «lector de pantalla»)",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "K09",
+      "group": "marco",
+      "desc": "redaccion:lint avisa (sin fallar) el ritmo monótono y el contraste troceado «No es X. Es Y.»; la prosa variada y el «no… sino» pasan limpios",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    },
+    {
+      "id": "S08",
+      "group": "skills",
+      "desc": "Metodología: make y polish del paper usan la bibliografía compartida, solo Scopus y WoS y los marcadores del usuario",
+      "failed": false,
+      "crash": null,
+      "steps": []
+    }
+  ]
+}

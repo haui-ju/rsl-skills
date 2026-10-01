@@ -1,0 +1,1622 @@
+# Cognitive Simplification Operations Improve Text Simplification
+
+> Fuente PDF: `R040-chamovitz-2022.pdf` · técnica **locator index** (página + ancla) + chunks Graphify
+
+## Metadata
+- Stem: `R040-chamovitz-2022`
+- PDF: `R040-chamovitz-2022.pdf`
+- DOI: `unknown`
+- Pages: `25`
+- Structured_at: `2026-09-30T16:59:10+00:00`
+- Technique: `pdf-page-locators + heading-chunks`
+
+## Locator index (qué hay y en qué página del PDF)
+
+| Kind | Label | PDF page | MD anchor |
+|------|-------|----------|-----------|
+| abstract | Abstract / blurb | 1 | `#abstract` |
+| section | 2 Cognitive Simplification | 2 | `#p2-2-cognitive-simplification` |
+| section | 6 Simplification Experiments                         All models are fine-tuned on a single 24GB | 6 | `#p6-6-simplification-experiments-all-models-are-fine-tuned-on-a-single-24gb` |
+| section | 6.1 Training Setting | 6 | `#p6-6-1-training-setting` |
+| section | 6.2 Evaluation Datasets | 6 | `#p6-6-2-evaluation-datasets` |
+| section | 7 Results | 7 | `#p7-7-results` |
+| concept | R040 | ? | `#concept-r040` |
+| concept | chamovitz | ? | `#concept-chamovitz` |
+| concept | 2022 | ? | `#concept-2022` |
+| finding | ties without rendering it childish or simplistic. | 1 | `#finding-ties-without-rendering-it-childish-or-si` |
+| finding | The following example illustrates the differences This sub-task has yet to be explored wit… | 1 | `#finding-the-following-example-illustrates-the-di` |
+| finding | The sentence ral methods in NLP, and resources for it are “Some indigenous groups living i… | 1 | `#finding-the-sentence-ral-methods-in-nlp-and-res` |
+| finding | We show that annotators as “Groups who live in palm-rich areas by adding this inductive bi… | 1 | `#finding-we-show-that-annotators-as-groups-who-l` |
+| finding | People can eat the dates that grow on palm dition, we provide a novel test dataset for CS,… | 1 | `#finding-people-can-eat-the-dates-that-grow-on-pa` |
+| finding | People can make many things from palm pora and existing TS corpora, in terms of how trees,… | 1 | `#finding-people-can-make-many-things-from-palm-po` |
+| page | p.1: Cognitive Simplification Operations Improve Text Simplification | 1 | `#pdf-p1` |
+| page | p.2: Original Source: Now, normally during Disability Pride Month, we’re showcasing our disabil | 2 | `#pdf-p2` |
+| page | p.3: therein to run evaluations on. In addition, we were NewselaAuto, created by Jiang et al. ( | 3 | `#pdf-p3` |
+| page | p.4: Simplification as simplification by adding informa- independent sources (the CS manuals) a | 4 | `#pdf-p4` |
+| page | p.5: Task Train Model SARI ADD KEEP DELETE BLEU % Ident. | 5 | `#pdf-p5` |
+| page | p.6: which is assigned by an admittedly over-simplistic source text, and the target output is t | 6 | `#pdf-p6` |
+| page | p.7: mance in adapting from a TS setting to a CS one. Focusing on CS performance, we find that  | 7 | `#pdf-p7` |
+| page | p.8: (a) JSD distances between distributions (b) ℓ2 distances between correlation matrices | 8 | `#pdf-p8` |
+| page | p.9: setting, the FestAbility dataset is the most distant than their baseline counterparts on T | 9 | `#pdf-p9` |
+| page | p.10: stories. None of the text is offensive or discrimina- Using additional datasets. Although  | 10 | `#pdf-p10` |
+| page | p.11: Fernando Alva-Manchego, Carolina Scarton, and Lucia In Proceedings of the 56th Annual Meet | 11 | `#pdf-p11` |
+| page | p.12: Portuguese. In Proceedings of the 27th International limits of transfer learning with a un | 12 | `#pdf-p12` |
+| page | p.13: Kim Cheng Sheang and Horacio Saggion. 2021. Con- Shira Yalon-Chamovitz and Ornit Avidan-Zi | 13 | `#pdf-p13` |
+| page | p.14: structure or the modification of its lexical content and vise-versa. Since Rephrasing chan | 14 | `#pdf-p14` |
+| page | p.15: logic and reasoning behind a particular pas- Splitting long sentences into shorter ones | 15 | `#pdf-p15` |
+| page | p.16: (a) Source (b) Target | 16 | `#pdf-p16` |
+| page | p.17: there exist any passive verbs in the source research. For our analysis’ purpose, whenever | 17 | `#pdf-p17` |
+| page | p.18: Task Train Model SARI ADD KEEP DELETE BLEU % Ident. | 18 | `#pdf-p18` |
+| page | p.19: ment to the target sub-document sen- datasets as other comparison points between TS | 19 | `#pdf-p19` |
+| page | p.20: Discussion. The results shown here further Operation P. R. F1 # | 20 | `#pdf-p20` |
+| page | p.21: (a) JSD distances between distributions (b) ℓ2 distances between correlation matrices | 21 | `#pdf-p21` |
+| page | p.22: Figure 5: Probabilities each simplification operation is used in every dataset sub-set | 22 | `#pdf-p22` |
+| page | p.23: Figure 6: Histograms of the number of simplification operations used in each SI for each d | 23 | `#pdf-p23` |
+| page | p.24: Figure 7: The simplification operations correlations matrices for each dataset subset pres | 24 | `#pdf-p24` |
+| page | p.25: Source: Jeddah is the principal gateway to Mecca, Islam’s holiest city, which | 25 | `#pdf-p25` |
+
+## Abstract
+<a id="abstract"></a>
+
+(Yalon-Chamovitz, 2009; Yalon-Chamovitz et al., 2016; Yalon-Chamovitz and Avidan-Ziv, 2016).1 Text Simplification (TS) is the task of convert- The procedure includes structural and lexical mod- ing a text into a form that is easier to read while maintaining the meaning of the original text. ifications that reduce the text’s complexity, while A sub-task of TS is Cognitive Simplification preserving as much of the meaning and informa- (CS), converting text to a form that is readily tion content as possible, and without rendering it understood by people with cognitive disabili- childish or simplistic. See Figure 1. ties without rendering it childish or simplistic. The following example illustrates the differences This sub-task has yet to be explored with neu- and similarities between CS and TS. The sentence ral methods in NLP, and resources for it are “Some indigenous groups living in palm-rich areas scarcely available. In this paper, we present a use palms to make many of their necessary items method for incorporating knowledge from the cognitive accessibility domain into a TS model, and food.” from the ASSET (Alva-Manchego et al., by introducing an inductive bias regarding what 2020a) validation set was simplified by one of the simplification operations to use. We show that annotators as “Groups who live in palm-rich areas by adding this inductive bias to a TS-trained use palms to make basic items and food.”. A CS, model, it is able to adapt better to CS without in this case, could be “People who live in areas ever seeing CS data, and outperform a baseline with a lot of palm trees use the trees for many model on a traditional TS benchmark. In ad- things. People can eat the dates that grow on palm dition, we provide a novel test dataset for CS, and analyze the differences between CS cor- trees. People can make many things from palm pora and existing TS corpora, in terms of how trees, for example, baskets and plates.”.2 This is simplification operations are applied. an example of the common need in CS to explicitly state assumed prior knowledge, and the need to 1 Introduction make the text “closer” to the reader (“people” vs. “groups”). See §5.1. Text Simplification (TS) is the task of converting CS and TS appear to be similar tasks, as similar text into a form that is easier to understand by modifications can be applied in both. CS could modifying its syntax and/or the words used in even be considered a sub-task of TS, with a tar- it, while maintaining the or
+
+## Keywords
+
+- _(none auto-detected)_
+
+## Concept index (graph hooks + página)
+
+<a id="concept-r040"></a>
+### [PDF p.?] Concept: R040
+- Locator: `R040-chamovitz-2022.pdf` · página **?**
+
+<a id="concept-chamovitz"></a>
+### [PDF p.?] Concept: chamovitz
+- Locator: `R040-chamovitz-2022.pdf` · página **?**
+
+<a id="concept-2022"></a>
+### [PDF p.?] Concept: 2022
+- Locator: `R040-chamovitz-2022.pdf` · página **?**
+
+
+## Findings index (graph hooks + página)
+
+<a id="finding-ties-without-rendering-it-childish-or-si"></a>
+### [PDF p.1] Finding: ties without rendering it childish or simplistic.
+- Locator: `R040-chamovitz-2022.pdf` · página **1**
+
+<a id="finding-the-following-example-illustrates-the-di"></a>
+### [PDF p.1] Finding: The following example illustrates the differences This sub-task has yet to be explored with neu- and similarities between CS and TS.
+- Locator: `R040-chamovitz-2022.pdf` · página **1**
+
+<a id="finding-the-sentence-ral-methods-in-nlp-and-res"></a>
+### [PDF p.1] Finding: The sentence ral methods in NLP, and resources for it are “Some indigenous groups living in palm-rich areas scarcely available.
+- Locator: `R040-chamovitz-2022.pdf` · página **1**
+
+<a id="finding-we-show-that-annotators-as-groups-who-l"></a>
+### [PDF p.1] Finding: We show that annotators as “Groups who live in palm-rich areas by adding this inductive bias to a TS-trained use palms to make basic items and food.”.
+- Locator: `R040-chamovitz-2022.pdf` · página **1**
+
+<a id="finding-people-can-eat-the-dates-that-grow-on-pa"></a>
+### [PDF p.1] Finding: People can eat the dates that grow on palm dition, we provide a novel test dataset for CS, and analyze the differences between CS cor- trees.
+- Locator: `R040-chamovitz-2022.pdf` · página **1**
+
+<a id="finding-people-can-make-many-things-from-palm-po"></a>
+### [PDF p.1] Finding: People can make many things from palm pora and existing TS corpora, in terms of how trees, for example, baskets and plates.”.2 This is simplification operations are applied.
+- Locator: `R040-chamovitz-2022.pdf` · página **1**
+
+
+## Relevance hooks
+### Theme relevance: software engineering and accessibility
+### Theme relevance: cognitive accessibility and neurodiversity
+### Theme relevance: evaluation metrics and WCAG
+
+## Sections (detected in PDF)
+
+<a id="p2-2-cognitive-simplification"></a>
+### [PDF p.2] Section: 2 Cognitive Simplification
+- Locator: `R040-chamovitz-2022.pdf` · página **2** · ancla `#p2-2-cognitive-simplification`
+
+<a id="p6-6-simplification-experiments-all-models-are-fine-tuned-on-a-single-24gb"></a>
+### [PDF p.6] Section: 6 Simplification Experiments                         All models are fine-tuned on a single 24GB
+- Locator: `R040-chamovitz-2022.pdf` · página **6** · ancla `#p6-6-simplification-experiments-all-models-are-fine-tuned-on-a-single-24gb`
+
+<a id="p6-6-1-training-setting"></a>
+### [PDF p.6] Section: 6.1 Training Setting
+- Locator: `R040-chamovitz-2022.pdf` · página **6** · ancla `#p6-6-1-training-setting`
+
+<a id="p6-6-2-evaluation-datasets"></a>
+### [PDF p.6] Section: 6.2 Evaluation Datasets
+- Locator: `R040-chamovitz-2022.pdf` · página **6** · ancla `#p6-6-2-evaluation-datasets`
+
+<a id="p7-7-results"></a>
+### [PDF p.7] Section: 7 Results
+- Locator: `R040-chamovitz-2022.pdf` · página **7** · ancla `#p7-7-results`
+
+
+## Page chunks (texto por página del PDF)
+
+_Cada heading es un nodo Graphify. El label incluye la página para volver al PDF sin releer todo._
+
+<a id="pdf-p1"></a>
+### [PDF p.1] Cognitive Simplification Operations Improve Text Simplification
+- Locator: `R040-chamovitz-2022.pdf` · página **1** / 25
+
+Cognitive Simplification Operations Improve Text Simplification
+
+                   Eytan Chamovitz                                      Omri Abend
+            Department of Computer Science                      Department of Computer Science
+                  Tel Aviv University                           Hebrew University of Jerusalem
+                  eytanc@gmail.com                              omri.abend@mail.huji.ac.il
+
+
+
+                       Abstract                             (Yalon-Chamovitz, 2009; Yalon-Chamovitz et al.,
+                                                            2016; Yalon-Chamovitz and Avidan-Ziv, 2016).1
+    Text Simplification (TS) is the task of convert-
+                                                            The procedure includes structural and lexical mod-
+    ing a text into a form that is easier to read while
+    maintaining the meaning of the original text.           ifications that reduce the text’s complexity, while
+    A sub-task of TS is Cognitive Simplification            preserving as much of the meaning and informa-
+    (CS), converting text to a form that is readily         tion content as possible, and without rendering it
+    understood by people with cognitive disabili-           childish or simplistic. See Figure 1.
+    ties without rendering it childish or simplistic.          The following example illustrates the differences
+    This sub-task has yet to be explored with neu-          and similarities between CS and TS. The sentence
+    ral methods in NLP, and resources for it are            “Some indigenous groups living in palm-rich areas
+    scarcely available. In this paper, we present a
+                                                            use palms to make many of their necessary items
+    method for incorporating knowledge from the
+    cognitive accessibility domain into a TS model,         and food.” from the ASSET (Alva-Manchego et al.,
+    by introducing an inductive bias regarding what         2020a) validation set was simplified by one of the
+    simplification operations to use. We show that          annotators as “Groups who live in palm-rich areas
+    by adding this inductive bias to a TS-trained           use palms to make basic items and food.”. A CS,
+    model, it is able to adapt better to CS without         in this case, could be “People who live in areas
+    ever seeing CS data, and outperform a baseline          with a lot of palm trees use the trees for many
+    model on a traditional TS benchmark. In ad-
+                                                            things. People can eat the dates that grow on palm
+    dition, we provide a novel test dataset for CS,
+    and analyze the differences between CS cor-             trees. People can make many things from palm
+    pora and existing TS corpora, in terms of how           trees, for example, baskets and plates.”.2 This is
+    simplification operations are applied.                  an example of the common need in CS to explicitly
+                                                            state assumed prior knowledge, and the need to
+1   Introduction                                            make the text “closer” to the reader (“people” vs.
+                                                            “groups”). See §5.1.
+Text Simplification (TS) is the task of converting
+                                                               CS and TS appear to be similar tasks, as similar
+text into a form that is easier to understand by
+                                                            modifications can be applied in both. CS could
+modifying its syntax and/or the words used in
+                                                            even be considered a sub-task of TS, with a tar-
+it, while maintaining the original text’s meaning
+                                                            get audience of people with cognitive disabilities.
+(Alva-Manchego et al., 2020b).
+                                                            However, there are two main differences between
+    TS is a very diverse task that can include sim-
+                                                            the two, that we believe motivate further investiga-
+plifications aimed at different target audiences. TS
+                                                            tion into CS as an independent task. First, CS is a
+is often operationalized in NLP using a number
+                                                            well-defined procedure with manuals in multiple
+of particular corpora to train and evaluate neural
+                                                            languages (PLAIN, 2011a; Uziel-Karl et al., 2011),
+models (see §3), whose target audiences are mostly
+                                                            while TS has general guidelines and, to the best
+second language learners, primary school students
+                                                            of our knowledge, no common standards. Second,
+or adults with learning disabilities. For brevity, this
+                                                            the goal of CS is to simplify texts to provide cog-
+paper will refer by TS to this concrete formulation
+                                                            nitive accessibility (Yalon-Chamovitz et al., 2016).
+of the simplification task, rather than the abstract,
+general notion of the task of simplifying text.                 1
+                                                                  People with developmental disabilities, head trauma pa-
+    Cognitive Simplification (CS) is the task of con-       tients, people with dementia or Alzheimer’s Disease, etc. Not
+                                                            including people with learning disabilities such as dyslexia.
+verting text to a form that is clear, simple, and read-         2
+                                                                  Simplified by the authors with guidance from a profes-
+ily understood by people with cognitive disabilities        sional cognitive simplifier.
+
+                                                          241
+       Proceedings of the 26th Conference on Computational Natural Language Learning (CoNLL), pages 241 - 265
+                          December 7-8, 2022 ©2022 Association for Computational Linguistics
+
+<a id="pdf-p2"></a>
+### [PDF p.2] Original Source: Now, normally during Disability Pride Month, we’re showcasing our disability pride through
+- Locator: `R040-chamovitz-2022.pdf` · página **2** / 25
+
+Original Source:           Now, normally during Disability Pride Month, we’re showcasing our disability pride through
+                               various parades and events throughout the country.
+    Original Target:           Most years, during Disability Pride Month we have parades and events all over the
+                               United States to show how proud we are.
+
+    Operations:                <REPHRASE> <DEL> <REORDER>
+    Modified Source T5:        <mask_1> Now, normally during Disability Pride Month, we’re showcasing our disability pride
+                               through various parades and events throughout the country.
+    Modified Target T5:        <mask_1> <REPHRASE> <DEL> <REORDER> <mask_2> Most years, during Disability Pride
+                               Month we have parades and events all over the United States to show how proud we are.
+    Modified Source BART:      <mask> Now, normally during Disability Pride Month, we’re showcasing our disability pride
+                               through various parades and events throughout the country.
+    Modified Target BART:      <REPHRASE> <DEL> <REORDER> Most years, during Disability Pride Month we have
+                               parades and events all over the United States to show how proud we are.
+Figure 1: Illustration of our approach on an example sentence from the CS dataset FestAbility Transcripts. The modified
+sources and targets for each model architecture include special operation tokens (see §5.2) added in the method appropriate for
+the model. For demonstration purposes in the original source and target, we boldface and color match areas that <REPHRASE>
+was applied to, we italicize areas that <DEL> was applied to, and underline areas that <REORDER> was applied to.
+
+
+This goal of CS can also be at odds with TS’s more                 bility to include the ability to use services, receive
+general goal of improving comprehension, such as                   information, and participate in activities, in addi-
+when simplifying an article for school students vs.                tion to the more commonly accepted physical abil-
+for adults with cognitive disabilities at a similar                ity to reach, navigate, and move in a place. This
+language proficiency.                                              definition codified the accessibility measure of sim-
+   As a first step, we explore CS and TS in English,               plifying textual information to address the need
+and leave exploration of other languages and intra-                of people with cognitive disabilities to understand
+language comparisons for future work.                              textual information, i.e., Cognitive Simplification.
+   There are very few NLP works that tackle CS.                    Subsequent operationalizations of this notion were
+As such, scarce data is available for training po-                 carried out by Uziel-Karl et al. (2011) and Yalon-
+tential CS models. We propose a methodology to                     Chamovitz et al. (2016). In particular, they empha-
+address this gap, by introducing an inductive bias                 size the need to preserve as much of the meaning
+to a model trained on TS, in the form of simplifica-               of the original text as possible, without rendering it
+tion operations. We propose a set of simplification                childish or simplistic, while using the same written
+operations based on CS manuals, and show that                      language as the original text. Although cognitively
+adding inductive bias regarding their use improves                 simplified texts can be easier to read for people
+performance on the ASSET test set, compared to a                   with learning disabilities (such as dyslexia), people
+strong baseline model.                                             with learning disabilities are not the main target
+   In addition, we present an English parallel cor-                audience for them.
+pus aimed at CS, which we use as a test set.3 We                      NLP research into TS for people with cognitive
+show that when fine-tuning models on TS data, our                  disabilities is relatively scarce. Most works focus
+method improves the models’ SARI score on the                      on measuring the effect of cognitively simplified
+CS dataset, allowing better task adaptation from TS                text on the comprehension of people with cognitive
+to CS. Finally, we compare how the operations are                  disabilities (Chen et al., 2017; Rochford, 2021) and
+used in the new CS dataset and existing TS corpora,                without them (Djamasbi et al., 2016b,a). A differ-
+and show that CS differs from TS not only in goal,                 ent line of work explored how people with different
+but also in data statistics.                                       cognition react to texts at different simplification
+                                                                   levels (Yaneva et al., 2016).
+2        Cognitive Simplification
+                                                                      Several works (Feng, 2009; Yaneva et al., 2016)
+The field of cognitive accessibility (Yalon-                       detail parallel corpora of regular and EasyRead
+Chamovitz, 2009) is derived from defining accessi-                 documents, documents that are created via the pro-
+     3
+                                                                   cess of CS. Although these works provide details
+    This dataset, together with all our code, is publicly avail-
+able under CC BY-NC-SA 4.0 on GitHub and huggingface               regarding linguistic phenomena in their corpora,
+datasets.                                                          we were not able to find any of the corpora detailed
+                                                               242
+
+<a id="pdf-p3"></a>
+### [PDF p.3] therein to run evaluations on. In addition, we were NewselaAuto, created by Jiang et al. (2020) by us-
+- Locator: `R040-chamovitz-2022.pdf` · página **3** / 25
+
+therein to run evaluations on. In addition, we were           NewselaAuto, created by Jiang et al. (2020) by us-
+not able to find any recent works that report results         ing a neural CRF sentence alignment model. Both
+on these corpora, using neural techniques for TS.             are split into training and validation sets. To train
+   Although some preliminary works reference the              their neural CRF aligner, Jiang et al. (2020) also
+use of contemporary NLP methods for CS to gener-              compiled two manually aligned datasets, WikiMan-
+ate simplification examples (e.g., Rochford, 2021),           ual and NewselaManual, split into development,
+to the best of our knowledge none provide details             train, and test sets.
+regarding the model used, model hyperparameter                   The two main datasets used for validation and
+choices, and evaluation methodology. As such, we              evaluation of TS models are Turkcorpus (Xu et al.,
+consider our work to be one of the first to tackle            2016) and ASSET (Alva-Manchego et al., 2020a).
+CS as a rigorous, distinct NLP task.4                         Both contain multiple references for each source
+   Two other tasks that are related to CS, and use            sentence (8 and 10 respectively). They are crowd-
+contemporary NLP methods, are text2picto (Sev-                sourced and validated professionally.
+ens et al., 2017; Vandeghinste et al., 2017) and                 The main metric used for evaluating TS models
+picto2text (Sevens et al., 2015). These are the tasks         is SARI (Xu et al., 2016), which is computed based
+of converting text to the Sclera5 and Beta6 pic-              on three token-level operations: ADD, KEEP, and
+togram languages, designed for people with IDD                DELETE. For the full calculation, see Appendix D.
+(intellectual or developmental disabilities), and vise           Many previous works in TS also report BLEU
+versa. While the output of both tasks can improve             (Papineni et al., 2002). However, several works
+access to information for people with cognitive dis-          (Sulem et al., 2018; Xu et al., 2016), have shown
+abilities, we believe this task to be distinct from CS        that BLEU scores are not suitable for the evaluation
+and especially TS, that focus on written and spoken           of TS models. Nevertheless, BLEU is still reported,
+language.                                                     and so we also report it for completeness.
+3       Other Related Work                                       A contemporaneous work (Alva-Manchego
+                                                              et al., 2021) argued for the value of manual evalua-
+We would like to highlight key points from Alva-              tion in TS rather than automatic metrics. We defer
+Manchego et al. (2020b) relevant to our work that             this exploration for CS for future work.
+relate to training and evaluation datasets and evalu-            Recent works have proposed methods to con-
+ation metrics.                                                trol TS outputs by prepending special tokens to
+   The main datasets used to train and evaluate TS            the input of a TS model, in a similar manner to
+models are WikiLarge (Zhang and Lapata, 2017)                 the one explored in this work. Such control allows
+and Newsela (Xu et al., 2015). Both corpora                   adjusting the model’s outputs to different target
+contain matching complex-simple document pairs,               audiences, and to control what aspects of the sim-
+whose sentences are automatically or manually                 plification process are applied. ACCESS (Martin
+aligned to create the datasets. In WikiLarge, the             et al., 2020a), and MUSS (Martin et al., 2020b)
+matching document pairs are taken from English                both use four structural features of the input-output
+Wikipedia7 and Simple English Wikipedia,8 that                pairs to define what tokens to prepend during train-
+aims to be more accessible to people with lower En-           ing, and at inference they predefine which tokens
+glish skills, mainly language learners. In Newsela,9          to use for all inputs. Sheang and Saggion (2021)
+the matching document pairs are articles written              add a fifth token to this methodology. Scarton and
+professionally at four different reading levels, and          Specia (2018) use a combination of tokens to spec-
+are originally intended to be used to teach language          ify the type of simplification to perform and the
+skills at different school grade levels.                      grade level to which to simplify to. Similarly to
+   The latest training datasets, and the current de           these works, we also define special tokens to add
+facto standard for TS training, are WikiAuto and              to the input at training, while at inference we take
+    4                                                         a different approach (see §6).
+     Contemporaneous work by Rennes (2022) also addresses
+TS for people with cognitive disabilities in Swedish.            Other recent work on TS focuses on particu-
+   5
+   6
+     http://www.sclera.be/                                    lar simplification operations (Zhong et al., 2020;
+     https://www.betasymbols.com/
+   7
+     https://en.wikipedia.org/
+                                                              Srikanth and Li, 2021), or on combining different
+   8
+     https://simple.wikipedia.org/                            operation modules in a joint model (Maddela et al.,
+   9
+     https://newsela.com/data/                                2021). Srikanth and Li (2021) define Elaborative
+                                                            243
+
+<a id="pdf-p4"></a>
+### [PDF p.4] Simplification as simplification by adding informa- independent sources (the CS manuals) and focus on
+- Locator: `R040-chamovitz-2022.pdf` · página **4** / 25
+
+Simplification as simplification by adding informa-           independent sources (the CS manuals) and focus on
+tion to the source text, rather than just removing            intra- and inter-sentence operations applied mainly
+redundant information. This aligns with some of               to a SI. §5.1 provides theoretical definitions for
+our proposed simplification operations (Adding In-            each operation. §5.2 describes how we integrate
+formation and Explicitation, see §5.1). Similarly,            operations into a TS model.
+Zhong et al. (2020) focus on whole sentence dele-
+tion, which aligns with some operations from our              5.1      Definitions
+proposed list (Deleting information, and Opera-               Below is the list of definitions for the main types
+tions on Sentences). Maddela et al. (2021) combine            of simplification operations.
+a module for sentence deletion and splitting with               1. Proximation: Reduces ambiguity in the
+a paraphrasing module to generate final simplifica-                 source by making references in the text
+tions. We discuss all three operations in §5.1.                     “closer” to the reader, such as converting a
+                                                                    3rd person point of view to 1st person’s.
+4        Our Approach                                           2. Rephrasing: Modifying the words used in the
+To learn how to simplify a text, a model needs to                   source such that simpler words and phrases
+learn what types of modifications to apply to the                   are used in the target instead of complex, am-
+input and how to apply each one. These modifi-                      biguous, and hard to understand ones.
+cations can be categorized into operations. More-               3. Deleting Information: Removing words and
+over, since TS has multiple large-scale datasets                    information from the source via summariza-
+commonly used for training, while there are hardly                  tion or deletion, to reduce the overall informa-
+any such datasets for CS, incorporation of some                     tion load on the reader.
+form of CS-focused inductive bias into a TS-trained             4. Adding Information: Adding information to
+model would be useful to allow it to adapt to the                   the target of a SI, that did not appear implicitly
+CS task. The inductive bias could also be useful                    or explicitly in the source, mainly through
+for improving TS on its own, given the similarities                 generating relevant examples.
+between the two tasks (see §7 and §8).                          5. Explicitation: Explicitly stating or explaining
+   As such, our hypothesis is that a TS-trained                     implied knowledge and information from the
+model that was trained to be aware of the use of                    source11 , and explicitly resolving pronouns
+CS simplification operations, will perform better at                and co-references in the target.
+TS and adapt better to CS than a model that was                 6. Intra-Sentence Rearrangement: Reorder
+trained end-to-end. We will now turn to testing this                the information content and words of a sen-
+hypothesis empirically.                                             tence into a logical and easily followed order.
+                                                                7. Operations on Sentences: Operations that
+5        Simplification Operations                                  apply to a whole sentence, including Sentence
+                                                                    Splitting and Sentence Reordering.
+We adapt existing CS manuals (PLAIN, 2011a,b;
+                                                                8. Document-Level Operations: Operations
+U.S. OPM, 2011a,b; U.S. Dep. HHS, 2020; Uziel-
+                                                                    that are applied to a document level, including
+Karl et al., 2011) into a list of eight main types
+                                                                    paragraph reordering, and whole paragraph
+of simplification operations. Seven of these apply
+                                                                    addition/deletion.
+to the simplification instance (SI) level, and the
+                                                              In this paper we focus on the first seven operations.
+final main type applies to a whole document. An
+                                                                 All the operations described above make texts
+SI is a set of one or more sentences in regular lan-
+                                                              easier to understand for any reader (PLAIN, 2011a;
+guage (source) aligned to one or more sentences
+                                                              Uziel-Karl et al., 2011). They are especially impor-
+in simplified language (target).10 Each main type
+                                                              tant for people with cognitive disabilities, as each in
+of operation has multiple sub-operations. For full
+                                                              their own way reduces the “mental load” required
+details, see Appendix A.
+                                                              from a reader to understand a given text. For exam-
+   Previous work define different lists of simpli-
+                                                              ple, “Adding Information” by providing examples
+fication operations (Caseli et al., 2009; Bott and
+                                                              makes general or abstract concepts more concrete
+Saggion, 2011) or focus on word-level opera-
+                                                              to a reader; “Explicitation” by clearly stating im-
+tions (KEEP, ADD, DELETE and sometimes also
+                                                                  11
+MOVE (Dong et al., 2019)). Our list is based on                    Explicitation is different from Adding Information since
+                                                              the information that appears “new” in the target is actually
+    10
+         See Alva-Manchego et al. (2020b), section 2.1.1.     implied to be understood by all readers in the source.
+
+                                                            244
+
+<a id="pdf-p5"></a>
+### [PDF p.5] Task Train Model SARI ADD KEEP DELETE BLEU % Ident.
+- Locator: `R040-chamovitz-2022.pdf` · página **5** / 25
+
+Task    Train     Model                        SARI       ADD    KEEP     DELETE     BLEU     % Ident.
+                         GEM T5Base                   30.35      3.11   62.24      25.7      0.898    40.66%
+                         GEM BART-Base                32.16      3.11   62.17      31.21     0.888    38.16%
+                         T5Large                      32.92      2.92   61.70      34.12     0.901    39.28%
+                         T5Large+Classifier♠,♠        36.90      4.73   61.10      44.87     0.855    23.68%
+        TS               T5Base∗                      32.01      3.04   61.96      31.05     0.903    35.93%
+                         T5Base+Classifier♠,♠         38.13      4.55   61.20      48.65     0.860    23.68%
+                 Auto
+                         BART-Large♠                  36.05      4.61   61.82      41.71     0.857    19.22%
+                         BART-Large+Classifier†,♠     38.76      4.73   60.78      50.78     0.845    11.70%
+                         BART-Base                    32.43      3.24   61.91      32.13     0.885    33.70%
+                         BART-Base+Classifier♠,♠      37.22      3.87   61.93      45.86     0.874    25.91%
+                         GEM T5Base                   19.09      1.45   41.64      14.18     0.234    70.71%
+                         GEM BART-Base                21.77      2.43   42.63      20.24     0.238    64.17%
+                         T5Large                      20.02      1.67   41.38      17.01     0.231    68.54%
+                         T5Large+Classifier∗,∗        21.71      2.74   41.81      20.58     0.229    57.94%
+        CS               T5Base                       20.66      2.04   41.86      18.07     0.237    68.22%
+                         T5Base+Classifier♠,♠         26.40      3.02   42.19      34.01     0.222    46.11%
+                 Auto
+                         BART-Large♠                  25.12      2.97   42.91      29.46     0.231    48.91%
+                         BART-Large+Classifier ,♠     27.13      2.45   42.88      36.05     0.221    44.55%
+                         BART-Base∗                   23.19      2.69   42.81      24.06     0.237    58.26%
+                         BART-Base+Classifier ,†      24.54      2.13   42.92      28.58     0.226    55.14%
+
+Table 1: Results for all models trained on WikiAuto (Jiang et al., 2020) and the GEM baseline models (Gehrmann
+et al., 2021). Metrics include SARI and the percentage of identical generations (% Ident.). We also report BLEU for
+completeness (see text). The highest SARI scores for each fine-tuning setting are boldfaced. We tested significance
+for the overall SARI scores using Wilcoxon Signed-Rank tests (Wilcoxon, 1945) in two settings. First, for each
+model type and size, we compared the vanilla model and the matching +Classifier model. Second, compared each
+GEM baseline model with other models of matching types (T5 and BART). We did so for both TS and CS. Scores
+with ρ < 0.00001, ρ < 0.001, and ρ < 0.01 are marked with ♠ , † , and ∗ respectively. We mark each +Classifier
+model with two symbols, respectively for each significance test setting. E.g., in CS, BART-Base+Classifier is not
+significantly better than BART-Base, but has ρ < 0.001 when testing against GEM BART-Base.
+
+plied prior knowledge eliminates the need to query               to <PROX>; Rephrasing to <REPHRASE>; Delet-
+that knowledge from memory; and “Proximation”                    ing Information to <DEL>; Adding Information to
+by changing passive voice to active voice makes a                <ADD> and <EXAMPLE>; Explicitation to <ADD>,
+sentence easier to follow, since “Active voice makes             <EXPLAIN>, and <EXPLICIT>; Intra-sentence Re-
+it clear who is supposed to do what.”.12                         arrangement to <REORDER>; and Operations on
+                                                                 Sentences to <REORDER> and <SPLIT>. For a full
+5.2 Special Tokens for Operations                                description on the rules used to identify each token,
+This section describes a method for introducing                  see Appendix B.
+inductive bias regarding the use of operations to a                 While the use of simple rules to assign opera-
+TS model. For each operation, we create a special                tion tokens to SIs is noisy, we see its quality as
+token that is added to an SI such that the model                 sufficient for testing our main hypothesis, namely
+would learn to predict the token at inference. See               about the value of the inductive bias implied by the
+Figure 1 for an example. For each operation, we                  operations. We do not stipulate that our operation
+formulate simple rules that can be applied automat-              classification is optimal, and leave the exploration
+ically to determine whether it took place in a given             of more sophisticated methods for future work.
+SI. These rules depend on the source and target                     To validate our automatic operation token assign-
+together, and cannot be discerned deterministically              ment, we asked an in-house human annotator to
+based on the source. To prevent overlap between                  manually assign operation tokens to 50 random SIs
+operations that share similar indicators, such as                from the WikiAuto training set according to their
+Adding Information and Explicitation (when stat-                 definition in §5.1. Using these labels as ground
+ing implied prior knowledge), we map the first                   truth, our automatic identification rules achieve a
+seven operations into 9 unique tokens: Proximation               micro precision, recall, and F1 scores of 60.3%,
+  12
+     Federal Plain Language Guide, Section III.a.1., (PLAIN,     90.1%, and 72.2% respectively. The main fall in
+2011b)                                                           F-score is the accuracy of the <ADD> operation,
+                                                               245
+
+<a id="pdf-p6"></a>
+### [PDF p.6] which is assigned by an admittedly over-simplistic source text, and the target output is the correct sim-
+- Locator: `R040-chamovitz-2022.pdf` · página **6** / 25
+
+which is assigned by an admittedly over-simplistic       source text, and the target output is the correct sim-
+rule. The two other most frequent operations have        plified sentence. This is the standard methodology
+F-scores of around 90%. For further details, see         used to train TS models. In the +Classifier setting,
+Appendix F.                                              our goal is to force the model to predict simplifica-
+   We further validated the reliability of the anno-     tion operations while simplifying the source sen-
+tation by assigning a co-author of this paper to         tence. For each model architecture this is achieved
+independently complete the same manual anno-             differently. For T5, since you can bind particular
+tation task. This resulted in a remarkably high          masking tokens to particular spans of the input, we
+inter-annotator agreement. Indeed, measured by           format the input and target for the model such that a
+Cohen’s κ, we get an agreement of κ = 0.84 for           mask is bound to the operation tokens and the target
+the <REPHRASE> operation, and perfect agreement          remains the simplification. For BART, since masks
+for other operations. Taken together, these scores       cannot be bound to particular spans, we prepend a
+indicate the reliability of the automatic token as-      masking token to the source and prepend the sim-
+signment we employ, at least at the aggregate level.     plification operations to the target. We illustrate
+                                                         both methods in Figure 1.
+6        Simplification Experiments                         All models are fine-tuned on a single 24GB
+                                                         RAM GPU for 3 epochs, using a constant learning
+We use the huggingface13 API to fine-tune pre-
+                                                         rate of 10−4 and the Adafactor optimizer (Shazeer
+trained language models. We select T5 (Raffel
+                                                         and Stern, 2018). At inference, we use beam search
+et al., 2020) and BART (Lewis et al., 2020) model
+                                                         with 4 beams and early stopping. We do not per-
+architectures of two sizes each, Base and Large,
+                                                         form hyperparameter tuning. Due to computational
+to align with the recently published GEM bench-
+                                                         limitations, we train one model of each (architec-
+mark’s (Gehrmann et al., 2021) official baseline
+                                                         ture, size, type, training data) combination.
+for TS that uses these two model architectures. In
+                                                            We also compare each model architecture
+addition, we wanted to test if results are consistent
+                                                         against the respective GEM baseline using a note-
+across model architectures.
+                                                         book provided by the original authors.
+6.1 Training Setting
+                                                         6.2       Evaluation Datasets
+The main dataset we use for fine-tuning is Wiki-
+Auto (Jiang et al., 2020), the automatic align-          All models are evaluated on the ASSET (Alva-
+ment of WikiLarge (Zhang and Lapata, 2017).              Manchego et al., 2020a) test set, which contains
+This dataset contains 483802/20000 SIs for train-        359 SIs. This is the standard dataset for evaluating
+ing/validation respectively, and is the standard         TS models, since it provides multiple reference sim-
+dataset used in recent works for TS training. This       plifications for each source sentence. The way we
+is also the training set used in the GEM benchmark.      decided whether a particular operation is applied to
+   We also experiment with a non-standard train-         a source sentence in ASSET is by majority of the
+ing setting, using the manually aligned datasets         ten references, meaning, we consider an operation
+WikiManual and NewselaManual from Jiang et al.           taking place only if more than 50% of annotators
+(2020), who used these datasets to train their re-       in ASSET used it in their simplifications of that
+spective automatic alignment models for the Wiki-        source. In Appendix H we provide more details on
+Large and Newsela corpora. We experiment with            the counts of actions in each dataset.
+this setting since both datasets as well as our new         In addition, we evaluate each model on a new
+CS dataset are manually aligned, and manual align-       Cognitive Simplification test set, called FestAbil-
+ments can potentially capture more complex simpli-       ity Transcripts. This dataset contains aligned tran-
+fication phenomena. This dataset has 11728/1418          scripts of the virtual accessibility conference Fes-
+SIs in training/validation sets.                         tAbility14 held in 2020 during the COVID-19 pan-
+                                                         demic. The conference was simplified live accord-
+Models. For each model architecture and size,            ing to the Yalon Method15 , and the transcripts were
+and each dataset, we fine-tune the model on two          manually aligned by the authors to create 321 SIs.
+different settings: baseline and +Classifier. In the     We use this dataset to test each model’s perfor-
+baseline setting, the model receives as input the
+                                                             14
+                                                                  https://www.festability.org/
+    13                                                       15
+         https://huggingface.co/                                  https://www.yalonmethod.com/
+
+                                                       246
+
+<a id="pdf-p7"></a>
+### [PDF p.7] mance in adapting from a TS setting to a CS one. Focusing on CS performance, we find that the
+- Locator: `R040-chamovitz-2022.pdf` · página **7** / 25
+
+mance in adapting from a TS setting to a CS one.               Focusing on CS performance, we find that the
+Table 2 provides some details into the content of           +Classifier variants achieved superior results for all
+this dataset.                                               model architectures and sizes. The improvement
+                                                            differs by architecture and size, with the largest
+                Metric                  Value               difference being of 5.74 SARI point for the T5Base
+         Unique Tokens – source         1452                models trained on WikiAuto. The best performance
+         Unique Tokens – target          996                is again obtained by the BART-Large+Classifier
+             Shared Tokens               798                model, and is at least 2.01 SARI points higher than
+                  TER                    0.92               the score obtained by any baseline variant.
+          Token Length Ratio             0.95                  With respect to the Manual dataset training set-
+             Nbchars Ratio               1.14               ting, we see similar trends. In particular, the
+          Levinstein Similarity         46.29               +Classifier models outperform baseline models,
+            Wordrank Ratio               0.83               and the best performing model is still BART-
+          Deptree Depth Ratio            1.11               Large+Classifier. Due to space limitations, we
+Table 2: Details for the new FestAbility Dataset. Us-       discuss the results on this dataset in Appendix C.
+ing a SentencePiece tokenizer, we report the number of         Taken together, our results demonstrate the ef-
+unique tokens in the source sentences and the target sim-   fectiveness of incorporating inductive bias using
+plifications, and the number of shared tokens between       simplification operations for both TS and CS.
+them. We also report the four metrics from Martin et al.
+(2020a,b) for future comparisons between FestAbility
+                                                               In order to ensure that the experimental setup we
+and other datasets.                                         use is comparable in performance with the standard
+                                                            practice in the field of TS, we experiment with the
+                                                            original GEM baseline code-base, and our hyperpa-
+   We report SARI16 (Xu et al., 2016) for each
+                                                            rameter settings were chosen according to it. The
+model on each test set, and we also report sep-
+                                                            results of models trained according to this code-
+arately the scores for each token-level operation
+                                                            base are indeed comparable to models of matching
+(ADD, KEEP, DELETE) that are averaged together
+                                                            sizes of the baseline variants.
+to compute SARI. For completeness, we report
+                                                               We further validated our results with significance
+BLEU scores for each model as well. However, we
+                                                            tests, following the guidelines of Dror et al. (2018).
+should note that according to Sulem et al. (2018)
+                                                            We used the Wilcoxon Signed-Ranked (Wilcoxon,
+and Alva-Manchego et al. (2021), BLEU is not a
+                                                            1945) test as our main significance test. We com-
+suitable metric for evaluating text simplification
+                                                            pared each vanilla and +Classifier model pair, and
+models. We also report what percentage of test
+                                                            also each model of a particular type (T5 and BART)
+outputs are identical to the source for each model.
+                                                            to their respective GEM baselines. The results are
+                                                            shown in Table 1. Almost all tests, with only six
+7   Results
+                                                            exceptions, are significant with at least ρ < 0.01
+Our main results are presented in Table 1. Re-              and most with ρ < 0.00001. These results further
+sults on TS show that when trained on the stan-             support the validity of our analysis.
+dard WikiAuto dataset, the +Classifier variant of              We attribute the improved performance of all
+a model outperforms the baseline’s SARI score in            +Classifier models to improvements in the token-
+all cases, with 3.98 points for T5Large, 6.12 points        level operations scores for ADD and DELETE.
+for T5Base, 2.71 points for BART-Large, and 4.79            In the standard training setting on WikiAuto, all
+points for BART-Base. These are substantial im-             +Classifier models achieve substantially higher
+provements, considerably larger than differences            ADD and DELETE scores than their same-sized
+in SARI scores between model sizes of the same              baseline counterparts, while all models achieve sim-
+variant, except for the BART baseline models. The           ilar KEEP scores. Interestingly, for the BART mod-
+difference between the T5 baseline models is 0.91           els, the difference in ADD scores is less substantial
+points, T5+Classifier models is 1.23, the BART              than for the T5 models.
+baseline is 3.62 points, and the BART+Classifier
+models is 1.54 points.                                      8    Simplification Dataset Comparison
+  16
+     Using the EASSE (Alva-Manchego et al., 2019) imple-    We compare simplification datasets with respect to
+mentation of the metric.                                    how the simplification operations are used in each.
+                                                        247
+
+<a id="pdf-p8"></a>
+### [PDF p.8] (a) JSD distances between distributions (b) ℓ2 distances between correlation matrices
+- Locator: `R040-chamovitz-2022.pdf` · página **8** / 25
+
+(a) JSD distances between distributions                         (b) ℓ2 distances between correlation matrices
+Figure 2: Heatmaps of the distances between dataset sub-sets. We shorten dataset names as follows: FA=FestAbility,
+NewM=NewselaManual, WikiM/A=WikiManual/Auto. The final two letters signify ts=test, vl=valid, dv=dev, and
+tr=train sets. For each sub-set pair, we report the numerical distance in the matching cell.
+
+We show that simplification operations can also be                 JSD < 0.1 from one another, which is not a large
+used to better characterize such datasets.                         distance. However, we are still able to see dis-
+   We analyze all available sub-sets (development,                 tinct clusters for each dataset, with subsets having
+train, validation, and test) of all datasets, to provide           JSD < 0.04 within clusters and JSD > 0.04
+a fine-grained analysis. We consider test sub-sets                 to other sub-sets.18 Interestingly, WikiAuto-test
+of datasets, to better understand the results of §7.               is closer to the WikiManual cluster than it is to
+This analysis was done after-the-fact, and did not                 WikiAuto-valid, which could be explained by the
+influence the development of the models.17                         fact that WikiAuto was created based on the match-
+   The results presented in this section show that                 ing of complex-simple sentences presented in Wiki-
+CS is different from TS in how the operations are                  Manual. In addition, WikiAuto-valid and ASSET-
+applied. They also surface the known relationships                 valid appear to be identical, which could be ex-
+between the datasets, validating our analysis. We                  plained by the fact that the source for ASSET-valid
+believe that this type of aggregate analysis can be                was taken from WikiAuto-valid. Regarding the
+confidently performed given the validation at the                  CS dataset FestAbility, it is JSD > 0.07 from
+end of §5.2, but acknowledge that the token assign-                all other sub-sets, and is the farthest sub-set from
+ment is noisy.                                                     WikiAuto, ASSET, and WikiManual clusters, and
+   To understand how each simplification operation                 the second or third farthest from sub-sets in the
+is applied individually, we compute the frequency                  NewselaManual cluster.
+with which each operation is applied in a given                       To understand how simplification operation are
+sub-set. These frequencies can be viewed as defin-                 applied together, we computed the Pearson corre-
+ing random variables XoS , stating the probability                 lations of the co-occurrence of each operation pair
+that each simplification operation o is used in a                  in a given subset S, to create a correlation matrix
+particular SI in sub-set S. As such, to understand                 M S . We then computed the pair-wise ℓ2 -distance
+the distance between sub-sets with respect to the                  between matrices. Results are in Figure 2b.
+individual application of each operation, we can                      As can be seen in Figure 2b, the clusters of clos-
+compute the mean Jensen-Shannon distance (Lin,                     est sub-sets are maintained for NewselaManual,
+1991; Fuglede and Topsoe, 2004) (which we mark                     and for ASSET and WikiAuto-val , while the sub-
+JSD) between matching random variables in dif-                     sets of WikiManual are no longer closest to one
+ferent sub-sets. For further details on the action                 another. Also, WikiAuto-train is similarly distant
+distributions for each dataset, see Appendix H.                    from both WikiAuto-val and the WikiManual sub-
+   As can be seen in Figure 2a, all sub-sets have                  sets, unlike when comparing with JSD. In this
+
+  17                                                                  18
+     We analyze the test sets also because the CS dataset only           For reference, if p = (0.557, 0.443) and q = (0.5, 0.5),
+contains a test set at this point, due to their small size.        then JSD(p, q) = 0.0403.
+
+                                                                 248
+
+<a id="pdf-p9"></a>
+### [PDF p.9] setting, the FestAbility dataset is the most distant than their baseline counterparts on TS.
+- Locator: `R040-chamovitz-2022.pdf` · página **9** / 25
+
+setting, the FestAbility dataset is the most distant    than their baseline counterparts on TS.
+sub-set from all other sub-sets, with dℓ2 > 0.88           We believe that comparing how simplification
+from all of them. All other sub-sets are dℓ2 < 0.75     operations are applied in different languages can
+from one another, except NewselaManual-test from        provide valuable insights into understanding the
+WikiAuto-train and WikiManual-test with dℓ2 =           task of Text Simplification better. Future work will
+0.85 and dℓ2 = 0.88 respectively.                       further explore the relation between the distribution
+   Taken together, these results show that while        of operations and the ability of the model to gen-
+each individual operation is applied with similar       eralize to different domains and task formulations.
+probability in every dataset, the operations are ap-    Such an inquiry may reveal that simplification op-
+plied together differently. In CS in particular, they   erations provide not only inductive bias, but also an
+are applied in a more distinct fashion than in TS.      analytical tool for comparing datasets and variants
+   The difference in operation application could be     of TS. There are TS datasets in many languages,
+attributed to the different domains from which each     including Swedish (Rennes and Jönsson, 2015),
+dataset pulls its sentences. In our CS dataset, all     Spanish (Saggion et al., 2015), German (Säuberli
+sentences are transcripts of human speech, taken        et al., 2020; Battisti et al., 2020), Danish (Klerke
+from a formal conference. Thus, they may contain        and Søgaard, 2012), Portuguese (Leal et al., 2018),
+more informal language than a Wikipedia article.        and Russian (Dmitrieva and Tiedemann, 2021). We
+Given our datasets, we therefore cannot differen-       plan to compare these datasets in terms of their
+tiate between domain difference and task differ-        distribution of operations, so as to empirically char-
+ence. However, we are currently compiling a larger      acterize whether the notion of text simplification
+dataset for CS that contains more formal language,      implicit in these datasets is similar or not.
+that will enable such analysis.                            We hope that our findings will spark interest
+   The analysis here can provide additional insight     in CS, as there is much more to solve in creating
+as to the performance patterns of the different mod-    automatic simplification systems for people with
+els (§7). Since each operation is applied individu-     cognitive disabilities. As stated above, we are cur-
+ally under a similar distribution in TS and CS, the     rently working on compiling a larger and more
++Classifier models could have potentially learned       robust CS dataset, that will enable improvements
+indicators of when to apply each action individu-       in CS technology, and allow to tease apart domain
+ally when training on TS. This could have been          effects in the differences between TS and CS from
+useful when adapting to CS, especially given that       more fundamental differences between the tasks.
+the operations co-occur differently in TS and CS.
+                                                        Ethical Considerations
+9   Conclusion and Future Work                          Use of existing datasets. The WikiAuto, Wiki-
+                                                        Manual (Jiang et al., 2020), and ASSET (Alva-
+We formulated the task of Cognitive Simplification
+                                                        Manchego et al., 2020a) datasets are publicly avail-
+as an NLP task, and discussed its similarities and
+                                                        able. We took the WikiAuto and ASSET from
+dissimilarities from the well-researched task of TS.
+                                                        the huggingface dataset hub,19 and WikiManual
+The two tasks are similar in the types of simplifica-
+                                                        from the authors’ GitHub.20 We used and received
+tion operations that are applied in each, and differ-
+                                                        access to Newsela with accordance to Newsela’s
+ent in the distribution in which the operations are
+                                                        terms of service.
+applied. They also differ in their target audience,
+at least when using standard datasets. We further       The released FestAbility dataset. The FestAbil-
+release with this paper a readily available dataset     ity conference is available for viewing online, and
+directed at CS, providing a test set to evaluate CS     we received approval to redistribute the simplifi-
+models on.                                              cations and transcripts from the organization that
+   Attempting to overcome the absence of training       simplified the conference.21 The text in these tran-
+data for CS, we showed that by introducing to a         scripts deals with the following subjects: rights of
+TS-trained model inductive bias as to the simplifi-     people with cognitive disabilities, arts and perform-
+cation operations that need to be performed on the      ing arts in particular, accessibility, and personal
+input, the model is able to better adapt to CS. We        19
+                                                             https://huggingface.co/docs/datasets/
+also showed that TS-trained models that are trained       20
+                                                             https://github.com/chaojiang06/wiki-auto
+to predict simplification operations perform better       21
+                                                             https://www.yalonmethod.com/
+
+                                                    249
+
+<a id="pdf-p10"></a>
+### [PDF p.10] stories. None of the text is offensive or discrimina- Using additional datasets. Although we did
+- Locator: `R040-chamovitz-2022.pdf` · página **10** / 25
+
+stories. None of the text is offensive or discrimina-    Using additional datasets. Although we did
+tory in any way. Free public access to this dataset is   get permission to use NewselaAuto as a training
+available for future research under CC BY-NC-SA          dataset, we did not train models with that dataset
+4.0 on GitHub at https:/github.com/eytan-c/              to report results on. The reasoning behind this de-
+CognitiveSimplification and as a huggingface             cision that we wanted the main results of this paper
+dataset at https://huggingface.co/datasets/              to be easily reproducible, and while WikiAuto is
+eytanc/FestAbilityTranscripts.                           readily available for use by all, access to Newsela
+                                                         is provided under a restrictive license.
+Ethical risks. We do not see any immediate ad-
+verse effects that our methodology and dataset can       Adding simplification operations. The method-
+lead to. On the contrary, further research into CS       ology proposed in the paper to add simplification
+from an NLP context can only provide benefits to         operations to SI uses simplistic rules to do so.
+people with cognitive disabilities.                      Some of the operations can be quite difficult to
+                                                         identify, even for humans. We believe that there
+Other Considerations Gooding (2022) recently             probably is a better methodology for identifying
+presented multiple different ethical considerations      the simplification operations, and leave identifying
+for text simplification research. These include stat-    such a methodology for future research.
+ing explicitly the target audience for TS, using ap-
+                                                         Acknowledgements
+propriate datasets, and evaluating using appropriate
+measures, among others. While contemporane-              This work was partially supported by the Israel Sci-
+ous, our paper aligns with the claims that Gooding       ence Foundation (grant No. 929/17). We would
+(2022) present with how we define the task of CS.        like to thank Prof. Shira Yalon-Chamovitz for help-
+Furthermore, the methodology presented in §8 can         ful discussions and for providing us with the cogni-
+be used to empirically measure some of the risks         tive simplification guidelines and data. We would
+presented in Section 3 of Gooding (2022).                like to thank the authors of the GEM baseline for
+                                                         simplification, for providing the source code used
+Limitations                                              to train their baseline models. We would also like
+                                                         to acknowledge the Adi Lautman Interdisciplinary
+Computational limitations. Each model trained            Program, for providing the fertile ground in which
+in §6 requires a long time to train on the largest       the initial idea for this project grew.
+GPU available to the authors, with the largest mod-
+els taking several days to complete the training. See
+Appendix E for details. These resources therefore        References
+prohibit experimentation with larger models.             Fernando Alva-Manchego, Louis Martin, Antoine Bor-
+                                                           des, Carolina Scarton, Benoît Sagot, and Lucia Spe-
+Comparison to other TS systems. The TS liter-              cia. 2020a. ASSET: A dataset for tuning and evalua-
+ature contains many TS systems, using many dif-            tion of sentence simplification models with multiple
+                                                           rewriting transformations. In Proceedings of the 58th
+ferent techniques (such as Martin et al. (2020a,b);        Annual Meeting of the Association for Computational
+Sheang and Saggion (2021); Scarton and Specia              Linguistics, pages 4668–4679, Online. Association
+(2018); Zhong et al. (2020); Maddela et al. (2021);        for Computational Linguistics.
+Zhao et al. (2018); Zhang and Lapata (2017)). Any
+                                                         Fernando Alva-Manchego, Louis Martin, Carolina Scar-
+one of these systems could be used as well for CS,         ton, and Lucia Specia. 2019. EASSE: Easier auto-
+and such a comparison is warranted. The goal of            matic sentence simplification evaluation. In Proceed-
+this paper however is to highlight the need and            ings of the 2019 Conference on Empirical Methods
+possibilities of further research into CS, and pro-        in Natural Language Processing and the 9th Inter-
+                                                           national Joint Conference on Natural Language Pro-
+vide initial benchmarks and tools to do so. We do          cessing (EMNLP-IJCNLP): System Demonstrations,
+not presume that our methodology of adding sim-            pages 49–54, Hong Kong, China. Association for
+plification operations is the best methodology for         Computational Linguistics.
+CS. We leave investigating the answer to this ques-
+                                                         Fernando Alva-Manchego, Carolina Scarton, and Lucia
+tion for future research. The authors are currently        Specia. 2020b. Data-driven sentence simplification:
+working on answering this question, in particular          Survey and benchmark. Computational Linguistics,
+in conjunction with releasing additional CS data.          46(1):135–187.
+
+                                                     250
+
+<a id="pdf-p11"></a>
+### [PDF p.11] Fernando Alva-Manchego, Carolina Scarton, and Lucia In Proceedings of the 56th Annual Meeting of the
+- Locator: `R040-chamovitz-2022.pdf` · página **11** / 25
+
+Fernando Alva-Manchego, Carolina Scarton, and Lucia          In Proceedings of the 56th Annual Meeting of the
+  Specia. 2021. The (un)suitability of automatic evalu-      Association for Computational Linguistics (Volume
+  ation metrics for text simplification. Computational       1: Long Papers), pages 1383–1392, Melbourne, Aus-
+  Linguistics, 47(4):861–889.                                tralia. Association for Computational Linguistics.
+Alessia Battisti, Dominik Pfütze, Andreas Säuberli,        Lijun Feng. 2009. Automatic readability assessment
+  Marek Kostrzewa, and Sarah Ebling. 2020. A corpus           for people with intellectual disabilities. SIGACCESS
+  for automatic readability assessment and text simpli-      Access. Comput., (93):84–91.
+  fication of German. In Proceedings of the 12th Lan-
+  guage Resources and Evaluation Conference, pages         Bent Fuglede and Flemming Topsoe. 2004. Jensen-
+  3302–3311, Marseille, France. European Language            shannon divergence and hilbert space embedding.
+  Resources Association.                                     In International Symposium on Information Theory,
+                                                             2004. ISIT 2004. Proceedings., pages 31–36. Institute
+Stefan Bott and Horacio Saggion. 2011. An unsuper-           of Electrical and Electronics Engineers.
+  vised alignment algorithm for text simplification cor-
+   pus construction. In Proceedings of the Workshop        Sebastian Gehrmann, Tosin Adewumi, Karmanya
+   on Monolingual Text-To-Text Generation, pages 20–         Aggarwal, Pawan Sasanka Ammanamanchi,
+   26, Portland, Oregon. Association for Computational       Anuoluwapo Aremu, Antoine Bosselut, Khy-
+   Linguistics.                                              athi Raghavi Chandu, Miruna-Adriana Clinciu,
+                                                             Dipanjan Das, Kaustubh Dhole, Wanyu Du, Esin
+Helena M Caseli, Tiago F Pereira, Lucia Specia, Thi-         Durmus, Ondřej Dušek, Chris Chinenye Emezue,
+  ago A S Pardo, Caroline Gasperin, and Sandra M             Varun Gangal, Cristina Garbacea, Tatsunori
+  Aluisio. 2009. Building a Brazilian Portuguese Par-        Hashimoto, Yufang Hou, Yacine Jernite, Harsh Jham-
+  allel Corpus of Original and Simplified Texts. In          tani, Yangfeng Ji, Shailza Jolly, Mihir Kale, Dhruv
+  10th Conference on Intelligent Text Processing and         Kumar, Faisal Ladhak, Aman Madaan, Mounica
+  Computational Linguistics (CICLing-2009), pages            Maddela, Khyati Mahajan, Saad Mahamood, Bod-
+  59–70.                                                     hisattwa Prasad Majumder, Pedro Henrique Martins,
+                                                             Angelina McMillan-Major, Simon Mille, Emiel van
+Ping Chen, John Rochford, David Kennedy, Soussan             Miltenburg, Moin Nadeem, Shashi Narayan, Vitaly
+  Djamasbi, Peter Fay, and Will Scott. 2017. Auto-           Nikolaev, Andre Niyongabo Rubungo, Salomey
+  matic Text Simplification for People with Intellectual     Osei, Ankur Parikh, Laura Perez-Beltrachini,
+  Disabilities. In 2016 International Conference on          Niranjan Ramesh Rao, Vikas Raunak, Juan Diego
+  Artificial Intelligence Science and Technology, pages      Rodriguez, Sashank Santhanam, João Sedoc,
+  725–731. World Scientific Publishing Co Pte Ltd.           Thibault Sellam, Samira Shaikh, Anastasia Shimo-
+                                                             rina, Marco Antonio Sobrevilla Cabezudo, Hendrik
+Soussan Djamasbi, John Rochford, Abigail DaBoll-             Strobelt, Nishant Subramani, Wei Xu, Diyi Yang,
+  Lavoie, Tyler Greff, Jennifer Lally, and Kayla             Akhila Yerukola, and Jiawei Zhou. 2021. The
+  McAvoy. 2016a. Text Simplification and User Expe-          GEM benchmark: Natural language generation,
+  rience. In International Conference on Augmented           its evaluation and metrics. In Proceedings of the
+  Cognition, pages 285–295. Springer International           1st Workshop on Natural Language Generation,
+  Publishing.                                                Evaluation, and Metrics (GEM 2021), pages 96–120,
+                                                             Online. Association for Computational Linguistics.
+Soussan Djamasbi, Mina Shojaeizadeh, Ping Chen, and
+  John Rochford. 2016b. Text Simplification and Gen-       Sian Gooding. 2022. On the ethical considerations of
+  eration Y: An Eye Tracking Study. In SIGHCI 2016            text simplification. In Ninth Workshop on Speech
+  Proceedings, 12. Association for Information Sys-           and Language Processing for Assistive Technologies
+  tems.                                                      (SLPAT-2022), pages 50–57, Dublin, Ireland. Associ-
+                                                              ation for Computational Linguistics.
+Anna Dmitrieva and Jörg Tiedemann. 2021. Creating
+  an aligned Russian text simplification dataset from      Chao Jiang, Mounica Maddela, Wuwei Lan, Yang
+  language learner data. In Proceedings of the 8th           Zhong, and Wei Xu. 2020. Neural CRF model for
+  Workshop on Balto-Slavic Natural Language Pro-             sentence alignment in text simplification. In Proceed-
+  cessing, pages 73–79, Kiyv, Ukraine. Association for       ings of the 58th Annual Meeting of the Association
+  Computational Linguistics.                                 for Computational Linguistics, pages 7943–7960, On-
+                                                             line. Association for Computational Linguistics.
+Yue Dong, Zichao Li, Mehdi Rezagholizadeh, and
+  Jackie Chi Kit Cheung. 2019. EditNTS: An neural          Sigrid Klerke and Anders Søgaard. 2012. DSim, a
+  programmer-interpreter model for sentence simplifi-        Danish parallel corpus for text simplification. In
+  cation through explicit editing. In Proceedings of the     Proceedings of the Eighth International Conference
+  57th Annual Meeting of the Association for Computa-        on Language Resources and Evaluation (LREC’12),
+  tional Linguistics, pages 3393–3402, Florence, Italy.      pages 4015–4018, Istanbul, Turkey. European Lan-
+  Association for Computational Linguistics.                 guage Resources Association (ELRA).
+Rotem Dror, Gili Baumer, Segev Shlomov, and Roi            Sidney Evaldo Leal, Magali Sanches Duran, and San-
+  Reichart. 2018. The hitchhiker’s guide to testing sta-     dra Maria Aluísio. 2018. A nontrivial sentence cor-
+  tistical significance in natural language processing.      pus for the task of sentence readability assessment in
+
+                                                       251
+
+<a id="pdf-p12"></a>
+### [PDF p.12] Portuguese. In Proceedings of the 27th International limits of transfer learning with a unified text-to-text
+- Locator: `R040-chamovitz-2022.pdf` · página **12** / 25
+
+Portuguese. In Proceedings of the 27th International       limits of transfer learning with a unified text-to-text
+  Conference on Computational Linguistics, pages 401–        transformer. Journal of Machine Learning Research,
+  413, Santa Fe, New Mexico, USA. Association for            21(140):1–67.
+  Computational Linguistics.
+                                                           Evelina Rennes. 2022. Automatic Adaptation of
+Mike Lewis, Yinhan Liu, Naman Goyal, Marjan                  Swedish Text for Increased Inclusion. Ph.D. thesis,
+  Ghazvininejad, Abdelrahman Mohamed, Omer Levy,             Linköping UniversityLinköping University, Human-
+  Veselin Stoyanov, and Luke Zettlemoyer. 2020.              Centered systems, Faculty of Science & Engineering.
+  BART: Denoising sequence-to-sequence pre-training
+  for natural language generation, translation, and com-   Evelina Rennes and Arne Jönsson. 2015. A tool for
+  prehension. In Proceedings of the 58th Annual Meet-        automatic simplification of Swedish texts. In Pro-
+  ing of the Association for Computational Linguistics,      ceedings of the 20th Nordic Conference of Compu-
+  pages 7871–7880, Online. Association for Computa-          tational Linguistics (NODALIDA 2015), pages 317–
+  tional Linguistics.                                        320, Vilnius, Lithuania. Linköping University Elec-
+                                                             tronic Press, Sweden.
+Jianhua Lin. 1991. Divergence measures based on the
+   shannon entropy. IEEE Transactions on Information       John Rochford. 2021. Developing Simple Web Text
+   Theory, 37(1):145–151.                                    for People with Intellectual Disabilities and to
+                                                             Train Artificial Intelligence. In Actes des Ateliers
+Mounica Maddela, Fernando Alva-Manchego, and Wei             d’INFORSID - Dessinons ensemble le futur des sys-
+ Xu. 2021. Controllable text simplification with ex-         tèmes d’information, pages 88–95. Conference and
+ plicit paraphrasing. In Proceedings of the 2021 Con-        Labs of the Evaluation Forum.
+ ference of the North American Chapter of the Asso-
+ ciation for Computational Linguistics: Human Lan-         Horacio Saggion, Sanja Štajner, Stefan Bott, Simon
+ guage Technologies, pages 3536–3553, Online. As-            Mille, Luz Rello, and Biljana Drndarevic. 2015.
+ sociation for Computational Linguistics.                    Making it Simplext: Implementation and evaluation
+                                                             of a text simplification system for spanish. ACM
+Louis Martin, Éric de la Clergerie, Benoît Sagot, and        Trans. Access. Comput., 6(4).
+  Antoine Bordes. 2020a. Controllable sentence sim-
+  plification. In Proceedings of the 12th Language         Andreas Säuberli, Sarah Ebling, and Martin Volk. 2020.
+  Resources and Evaluation Conference, pages 4689–           Benchmarking data-driven automatic text simplifica-
+  4698, Marseille, France. European Language Re-             tion for German. In Proceedings of the 1st Workshop
+  sources Association.                                       on Tools and Resources to Empower People with
+                                                             REAding DIfficulties (READI), pages 41–48, Mar-
+Louis Martin, Angela Fan, Éric De La Clergerie, An-          seille, France. European Language Resources Asso-
+  toine Bordes, and Benoît Sagot. 2020b. Multilingual        ciation.
+  unsupervised sentence simplification. Computing
+  Research Repository, arXiv:2005.00352. Version 2.        Carolina Scarton and Lucia Specia. 2018. Learning sim-
+Kishore Papineni, Salim Roukos, Todd Ward, and Wei-          plifications for specific target audiences. In Proceed-
+  Jing Zhu. 2002. BLEU: a Method for Automatic               ings of the 56th Annual Meeting of the Association for
+  Evaluation of Machine Translation. In Proceedings          Computational Linguistics (Volume 2: Short Papers),
+  of the 40th Annual Meeting of the Association for          pages 712–718, Melbourne, Australia. Association
+  Computational Linguistics (ACL), July, pages 311–          for Computational Linguistics.
+  318, Philadelphia.
+                                                           Leen Sevens, Vincent Vandeghinste, Ineke Schuurman,
+Ellie Pavlick and Chris Callison-Burch. 2016. Sim-           and Frank Van Eynde. 2015. Natural language gener-
+   ple PPDB: A paraphrase database for simplification.       ation from pictographs. In Proceedings of the 15th
+   In Proceedings of the 54th Annual Meeting of the          European Workshop on Natural Language Genera-
+  Association for Computational Linguistics (Volume          tion (ENLG), pages 71–75, Brighton, UK. Associa-
+   2: Short Papers), pages 143–148, Berlin, Germany.         tion for Computational Linguistics.
+   Association for Computational Linguistics.
+                                                           Leen Sevens, Vincent Vandeghinste, Ineke Schuurman,
+PLAIN. 2011a. Federal Plain Language Guidelines.             and Frank Van Eynde. 2017. Simplified text-to-
+  https://www.plainlanguage.gov/guidelines/.                 pictograph translation for people with intellectual
+  Accessed: 2021-06-07. Plain Language Action and            disabilities. In Natural Language Processing and In-
+  Information Network.                                       formation Systems, pages 185–196, Cham. Springer
+                                                             International Publishing.
+PLAIN. 2011b. Federal Plain Language Guidelines,
+  1 edition. Plain Language Action and Information         Noam Shazeer and Mitchell Stern. 2018. Adafactor:
+  Network.                                                   Adaptive learning rates with sublinear memory cost.
+                                                             In Proceedings of the 35th International Conference
+Colin Raffel, Noam Shazeer, Adam Roberts, Kather-            on Machine Learning, volume 80 of Proceedings
+  ine Lee, Sharan Narang, Michael Matena, Yanqi              of Machine Learning Research, pages 4596–4604.
+  Zhou, Wei Li, and Peter J. Liu. 2020. Exploring the        PMLR.
+
+                                                       252
+
+<a id="pdf-p13"></a>
+### [PDF p.13] Kim Cheng Sheang and Horacio Saggion. 2021. Con- Shira Yalon-Chamovitz and Ornit Avidan-Ziv. 2016.
+- Locator: `R040-chamovitz-2022.pdf` · página **13** / 25
+
+Kim Cheng Sheang and Horacio Saggion. 2021. Con-             Shira Yalon-Chamovitz and Ornit Avidan-Ziv. 2016.
+  trollable sentence simplification with a unified text-       Simultaneous Simplification: Stretching the Bound-
+  to-text transfer transformer. In Proceedings of the          aries of UDL. In 2016 Universal Design for Learn-
+  14th International Conference on Natural Language            ing Implementation and Research Network Summit,
+  Generation, pages 341–352, Aberdeen, Scotland, UK.           Towson University, Maryland. UDL-IRN.
+  Association for Computational Linguistics.
+                                                             Shira Yalon-Chamovitz, Ruth Shach, Ornit Avidan-Ziv,
+Neha Srikanth and Junyi Jessy Li. 2021. Elaborative            and Michal Tenne Rinde. 2016. The call for cognitive
+  simplification: Content addition and explanation gen-        ramps. Work, 53(2):455–456.
+  eration in text simplification. In Findings of the         Victoria Yaneva, Irina Temnikova, and Ruslan Mitkov.
+  Association for Computational Linguistics: ACL-              2016. A corpus of text data and gaze fixations from
+  IJCNLP 2021, pages 5123–5137, Online. Association            autistic and non-autistic adults. In Proceedings of
+  for Computational Linguistics.                               the Tenth International Conference on Language Re-
+                                                               sources and Evaluation (LREC’16), pages 480–487,
+Elior Sulem, Omri Abend, and Ari Rappoport. 2018.              Portorož, Slovenia. European Language Resources
+   BLEU is not suitable for the evaluation of text simpli-     Association (ELRA).
+   fication. In Proceedings of the 2018 Conference on
+   Empirical Methods in Natural Language Processing,         Xingxing Zhang and Mirella Lapata. 2017. Sentence
+   pages 738–744, Brussels, Belgium. Association for           simplification with deep reinforcement learning. In
+   Computational Linguistics.                                  Proceedings of the 2017 Conference on Empirical
+                                                               Methods in Natural Language Processing, pages 584–
+U.S. Dep. HHS. 2020. Plain writing and clear                   594, Copenhagen, Denmark. Association for Compu-
+  communications. https://www.hhs.gov/open/                    tational Linguistics.
+  plain-writing/index.html. Accessed: 2021-06-
+  07. U.S. Department of Health and Human Services.          Sanqiang Zhao, Rui Meng, Daqing He, Andi Saptono,
+                                                               and Bambang Parmanto. 2018. Integrating trans-
+U.S. OPM. 2011a.        Information Management                 former and paraphrase rules for sentence simplifi-
+  Plain Language.          https://www.opm.gov/                cation. In Proceedings of the 2018 Conference on
+  information-management/plain-language/                       Empirical Methods in Natural Language Processing,
+  #tips. Accessed: 2021-06-07. U.S. Office of                  pages 3164–3173, Brussels, Belgium. Association
+  Personnel Management.                                        for Computational Linguistics.
+                                                             Yang Zhong, Chao Jiang, Wei Xu, and Junyi Jessy Li.
+U.S. OPM. 2011b. OPM Plain Writing Plan. U.S.
+                                                               2020. Discourse Level Factors for Sentence Deletion
+  Office of Personnel Management.
+                                                               in Text Simplification. Proceedings of the AAAI Con-
+                                                               ference on Artificial Intelligence, 34(05):9709–9716.
+Sigal Uziel-Karl, Michal Tenne Rinde, and Shira Yalon-
+   Chamovitz. 2011. Language Accessibility for peo-          A    Simplification Operation Definitions
+   ple with Cognitive Disabilities: Instructions Booklet.
+   Ono Academic College and Israel Ministry of Labor,        In this section we describe in more detail the differ-
+   Social Affairs and Social Services.
+                                                             ent simplification operations, providing full details
+Vincent Vandeghinste, Ineke Schuurman, Leen Sev-             for each, including sub-operations.
+  ens, and Frank Van Eynde. 2017. Translating text              This list is based on cognitive simplification man-
+  into pictographs. Natural Language Engineering,            uals, and includes 2 levels of operations, as many
+  23(2):217–244.                                             particular operations share similar goals. We de-
+Frank Wilcoxon. 1945. Individual comparisons by rank-        scribe the similar goals as “Main Operations”, and
+   ing methods. Biometrics Bulletin, 1(6):80–83.             this is the list provided in the main paper. In here,
+                                                             we describe in detail all sub-operations as well.
+Wei Xu, Chris Callison-Burch, and Courtney Napoles.             As explained in the main paper, we focus mainly
+ 2015. Problems in current text simplification re-
+ search: New data can help. Transactions of the Asso-        on the operations that are performed on simplifica-
+ ciation for Computational Linguistics, 3:283–297.           tion instances (SIs). We do so both to align with
+                                                             existing research of TS, and to conform with how
+Wei Xu, Courtney Napoles, Ellie Pavlick, Quanze Chen,        the simplification manuals describe the process of
+  and Chris Callison-Burch. 2016. Optimizing sta-
+  tistical machine translation for text simplification.      CS. In addition, we also describe “Document Level”
+ Transactions of the Association for Computational           operations. These “Document Level” operations
+  Linguistics, 4:401–415.                                    are not distinct to CS, but have an important role
+                                                             in that task.
+Shira Yalon-Chamovitz. 2009. Invisible access needs
+  of people with intellectual Disabilities: A conceptual
+                                                                For each operation, we also describe what type
+  model of practice. Intellectual and Developmental          of modification to the source of a SI is this op-
+  Disabilities, 47(5):395–400.                               eration aimed at: a modification of its syntactic
+                                                           253
+
+<a id="pdf-p14"></a>
+### [PDF p.14] structure or the modification of its lexical content and vise-versa. Since Rephrasing changes the
+- Locator: `R040-chamovitz-2022.pdf` · página **14** / 25
+
+structure or the modification of its lexical content                          and vise-versa. Since Rephrasing changes the
+(i.e., the words used in the SI). We deem the former                          words used in a sentence, it is a lexical modi-
+a structural modification, and the latter a lexical                           fication.
+modification. Some operations perform both, but
+in such cases we chose to assign the type of modi-                      3. Deleting Information: A main part of sim-
+fication that subsumes the other. For example, Sen-                        plifying a text is deciding which information
+tence Splitting is a structural modification, since                        is irrelevant or surplus to a reader’s compre-
+it aims to modify the structure of the original text                       hension, and removing it from the text. By
+by splitting a sentence into two or more sentences                         lowering the information load on the reader,
+in the simplification. This structural change might                        his or her ability to comprehend the text in-
+require changing words used in the target (i.e., a                         creases. Deleting Information comes in two
+lexical modification) but those changes are part of                        main types, Removal and Summarization. We
+the structural modification.                                               chose to assign both into Deleting Informa-
+                                                                           tion, since in both some of the information
+   1. Proximation: Proximation is the process of                           content24 of the source is lost in the target,
+      making references in the text closer to the                          either directly (Removal) or indirectly (Sum-
+      reader, meaning explicit and more relatable.                         marization).
+      This can be by changing the point of view of
+                                                                              Deleting Information is a lexical modification.
+      the sentence from 3rd to 2nd and/or 1st per-
+      son, by changing the tenses of verbs to easier                    4. Adding Information: This operation in-
+      to understand tenses22 , or by converting Pas-                       cludes adding information to the simplifica-
+      sive voiced sentences to Active voiced ones23 .                      tion that never appeared in the source. It in-
+      This reduces the potential ambiguity in the                          cludes only one sub-operation, Example Gen-
+      source and makes the target more personal,                           eration, since this is the only type of novel
+      and thus more easily understood to people                            information that can appear in the target of
+      with cognitive disabilities.                                         an SI. Any other apparent “new information”
+        Proximation, and all of its sub operations, are                    is usually implicit information that is part of
+        structural modifications, since their goal is to                   the source, and requires Explicitation in the
+        transform the syntax of the sentence (tense,                       target.
+        voice, etc.).
+                                                                              However, finding precise distinctions between
+   2. Rephrasing: Modifying the words used in the                             new information in the target that is 100%
+      source such that simpler words and phrases                              new and new information in the target that
+      are used in the target instead of complex, am-                          is implicit information from the source is a
+      biguous, and hard to understand ones. Sim-                              difficult task. As such, we chose to have a
+      pler words and simpler phrases makes the text                           general “Adding Information” operation for
+      easier to understand for people with lower                              exactly the type of new information in the tar-
+      language comprehension skills, such as those                            get that cannot be precisely associated either
+      with cognitive disabilities. A rephrasing can                           as an Explicitation or Example Generation.
+      be finding a simple synonym to a complex                                Adding information is a lexical modification.
+      word, but also converting words to phrases
+   22                                                                   5. Explicitation: Many of the texts we read con-
+       For example, Present Tenses are generally easier to com-
+ prehend than Future Tenses. Another example: in English,                  tain implicit information that the writer as-
+ Perfect Tenses harder to understand and should usually be                 sumes the reader has prior knowledge of. Dur-
+ converted to other tenses.
+    23                                                                     ing simplification, this implicit information
+       Multiple CS manuals state that sentences with an active
+ voice are easier to understand than sentences in passive voice            will need an explanation or elaboration upon,
+ (PLAIN, 2011b; Uziel-Karl et al., 2011). From the Federal                 so that the reader can understand the text.
+ Plain Language Guide, Section III.a.1.i, page 20: “Active
+ voice makes it clear who is supposed to do what. It eliminates               This could be achieved by Explanation Gen-
+ ambiguity about responsibilities. Not “It must be done.”, but
+“You must do it.”. Passive voice obscures who is responsible
+                                                                              eration: explaining the meaning of particular
+ for what ...”. Uziel-Karl et al. (2011) even explicitly state that           terms and phrases, or explicitly stating the
+ every passive voiced sentence needs to be converted to active
+                                                                        24
+ voice.                                                                      See subsection A.1 for a discussion on this topic
+
+                                                                  254
+
+<a id="pdf-p15"></a>
+### [PDF p.15] logic and reasoning behind a particular pas- Splitting long sentences into shorter ones
+- Locator: `R040-chamovitz-2022.pdf` · página **15** / 25
+
+logic and reasoning behind a particular pas-                        Splitting long sentences into shorter ones
+       sage in the text. These explanations are crucial                    makes texts easier to comprehend by reducing
+       for people with cognitive disabilities to under-                    the information load of each sentence. Rear-
+       stand texts, since they sometimes lack prior                        ranging the sentences of a paragraph into a
+       common knowledge in many domains.                                   correct logical/temporal order also makes a
+                                                                           text easier to comprehend, for the same rea-
+       We consider both Explanation Generation and
+                                                                           sons explained above in Intra-Sentence Rear-
+       Example Generation (from the previous main
+                                                                           rangement.
+       operation) to be forms of Elaborative Simpli-
+       fication (Srikanth and Li, 2021). We create                         Sentence Operations are structural modifica-
+       a distinction between the two to differentiate                      tions.
+       between “new information” in the simplifica-
+                                                                      8. Document Level Operations26 : In some
+       tion that is from the implicit information of
+                                                                         cases, when simplifying long texts organized
+       the source and “new information” from the
+                                                                         as documents and/or documents with subsec-
+       potentially relevant information of the source.
+                                                                         tions, more overarching operations need to be
+       See subsection A.1.
+                                                                         applied. These are almost always modifica-
+       In addition, the source might contain pronouns                    tion of structure, since information needs to
+       that the writer assumes their co-references can                   be ordered correctly, as explained in the previ-
+       be resolved easily from the text. However, in                     ous two Main Action types. This can include
+       most cases, people with cognitive disabilities                    full chapter/sub-document reordering and full
+       would not necessarily be able to resolve pro-                     paragraph reordering, but can also cross para-
+       noun co-references. As such, most pronouns                        graph reordering of sentences and paragraph
+       should be converted in the target to their ex-                    splitting.
+       plicit references. This is Pronoun Explicita-
+                                                                           In addition, there are lexical modifications that
+       tion.
+                                                                           we consider a Document Level Operations.
+       Both types of Explicitation are lexical modifi-                     These are Adding Paragraphs and Adding
+       cations.                                                            Chapters that didn’t exist in the original docu-
+                                                                           ment, and Deleting Paragraphs and Deleting
+  6. Intra-Sentence Rearrangement: At times,                               Chapters from the original document. The
+     the clauses of a sentence can be ordered in                           additions of paragraphs or chapters usually
+     such a way that make it harder to comprehend                          explain particular concepts or ideas crucial to
+     due to its clauses being out of the “correct”                         comprehending the document, while deleting
+     logical order. In addition, for many reasons,                         paragraphs or chapters in their entirety is usu-
+     the ordering of the subject, verb, and object                         ally because the information they provide is
+     can be out of the “correct” order. When in-                           not crucial for comprehending the main idea
+     formation is presented out of order, it makes                         of the document.
+     the text harder to comprehend, especially for
+     people with cognitive disabilities. Semantic
+     Rearrangement is presenting the information                  A.1       Modifying the Information Content of
+     content of a sentence in the source of an SI in                        Simplification Instances
+     a logical and easily followed order, and is a                We would like to propose a clear definition of how
+     structural modification. 25                                  the information content of a text is modified during
+                                                                  the process of simplification. For this, we define
+  7. Operations on Sentences: There are often                     the explicit information content of a text as being
+     simplification operations that are applied on a              the information that is encoded by the exact words
+     whole sentence that is part of a SI, rather than             of the text. Each text, in addition to the information
+     applying to an internal part of a sentence. This             explicitly stated by words used in the text, also en-
+     includes Sentence Splitting, and also Sentence               codes implicit information about those words and
+     Reordering.                                                  the subjects they describe. This includes assumed
+  25                                                                  26
+    This passage is written on purpose in a convoluted order,          As stated in the main paper, we focus mainly on the SI
+to demonstrate to the reader the importance of order to text      operations, and less on the document level operations. We still
+comprehension.                                                    state them here to present a complete picture.
+
+                                                                255
+
+<a id="pdf-p16"></a>
+### [PDF p.16] (a) Source (b) Target
+- Locator: `R040-chamovitz-2022.pdf` · página **16** / 25
+
+(a) Source                                             (b) Target
+Figure 3: Diagrams showing the transformation of Information Content between the Source and Target in a
+simplification instance.
+
+
+prior knowledge related to the subject of the text        B     Special Token Identification
+or the use of phrases in it, references to other parts
+                                                          Each of the operations described in Appendix A
+of the text, understanding the logic and reasoning
+                                                          can be potentially identified using multiple differ-
+behind the information described in the text, and
+                                                          ent methods. In this appendix we describe how
+more. The potentially relevant information can be
+                                                          we identified each operation and sub-operation in
+defined as all the potential utterances that describe
+                                                          order to prepend the relevant special token as seen
+information and knowledge that can be relevant to
+                                                          in Figure 1.
+a particular text. This information is not explicitly
+                                                             For the scope of this work, we chose to use de-
+stated in the source or needs to be implied to under-
+                                                          terministic heuristics that can be applied automat-
+stand it, and if the information appears in the target,
+                                                          ically. Although they create noisy classifications,
+the decision to include the particular utterance can’t
+                                                          we chose the heuristics such that hey have an em-
+be uniquely predicted given the source. In essence,
+                                                          phasis on Precision rather than Recall, and so we
+potentially relevant is net new information that can
+                                                          find them sufficient for our work.
+appear in the target. For CS, this happens mainly
+in the form of Example Generations, and the par-             Most of the operations below are analyzed in the
+ticular example chosen for a given simplification         context of simplification instances, and we describe
+could easily be switched with other examples.             in input as the “source” and simplification as the
+                                                          “target”. These will be mathematically noted as S
+                                                          and T respectively when relevant.
+   Using these three types of information content,
+                                                             The full code that we used to identify these op-
+we can better define the process of CS, and the dis-
+                                                          erations is available on GitHub.
+tinctions between the simplification operations of
+Adding Information, Explicitation, and Deleting               1. Proximation: All of these operations are
+Information.                                                     tested on a word by word basis using the Uni-
+                                                                 versal Dependency parse trees of the source
+   We can formulate the process of CS as minimiz-                and the target.
+ing the distance between the explicit and implicit
+information content of a text as much as possible,               (a) Change of person point of view: We
+while removing redundant or surplus information                      check if there was a change in person
+and adding relevant novel examples, all in the goal                  POV from 3rd to 2nd, 3rd to 1st, or 2nd
+of making the text more comprehensible to people                     to 1st.
+with cognitive disabilities. This is juxtaposed with             (b) Modify verb tense: We check if the verbs
+TS, in which the distance between explicit and im-                   in the target are in a different tense than
+plicit information content is minimized, but not to                  the matching verbs in the source.
+the maximal degree.                                              (c) Passive-Active Substitution: We check if
+                                                      256
+
+<a id="pdf-p17"></a>
+### [PDF p.17] there exist any passive verbs in the source research. For our analysis’ purpose, whenever
+- Locator: `R040-chamovitz-2022.pdf` · página **17** / 25
+
+there exist any passive verbs in the source            research. For our analysis’ purpose, whenever
+        that share meaning with active verbs in                the token length ratio (Martin et al., 2020a) be-
+        the target.                                            tween source and target was greater 1.2 than
+                                                               (|S|/|T | >= 1.2), or that the percentage of
+  Any SI that has a Proximation operations was
+                                                               deleted words from the source (i.e., that were
+  prepended with the token <PROX>.
+                                                               removed in the target and were not part of
+2. Rephrasing: A rephrasing operation will fol-                another operation such as Rephrasing) was
+   low the format of replacing one or more words               higher than 30% and the token length ratio
+   from the source with one or more words with                 was > 1, we classified it as a Deleting Infor-
+   similar meaning in the target. Thus, to iden-               mation operation.
+   tify a rephrasing, we tested every word in                   (a) Removal: If the sentence alignment type
+   the source sentence that did not appear in                       of the SI is M -to-0, we count the opera-
+   the target against known paraphrase databases                    tion as Removal.
+   for the relevant language (such as SPPDB
+                                                                (b) Summarization: If the sentence align-
+   (Pavlick and Callison-Burch, 2016) for En-
+                                                                    ment type is M -to-1, we count the op-
+   glish) to see if one of their relevant para-
+                                                                    eration as Summarization.
+   phrases appears in the target.
+   Phrasing this mathematically, for every word                Any SI that has a Deleting Information opera-
+   w ∈ S \ T , we check if pp(w) ⊂ T , where                   tion was prepended with the token <DEL>.
+   pp(w) is the result of applying a rule from a
+                                                            4. Adding Information: To discover if an action
+   paraphrase database on w.
+                                                               was of Adding Information, we check if there
+    (a) Simple synonym: These operations are                   are new words in the target, that aren’t part of
+        defined when one word is paraphrased to                another modification (such as Rephrasing or
+        another single word.                                   Passive-Active Substitution) or are function
+    (b) Paraphrasing                                           words. Once such words exists, we assume
+                                                               that there is additional explicit information in
+          i. Word-to-Phrase: Similar to simple
+                                                               the target that did not appear in the source.
+             synonym, only a single word is para-
+                                                               We then test if it is Example Generation or
+             phrased into a series of words.
+                                                               Explanation Generation (see below), and if it
+         ii. Phrase-to-Word: A phrase is con-
+                                                               is neither, similar to the general classification
+             verted to a single word. This is
+                                                               in Deleting information, if the token length ra-
+             discovered by checking all possible
+                                                               tions between source and target is < 1 (target
+             combinations of consecutive words
+                                                               is longer), we classify as Adding Information.
+             in the source that did not appear in
+             the target for possible paraphrases.               (a) Example Generation: If the new words
+        iii. Phrase-to-Phrase: Similar to Phrase-                   are part of a clause that starts with in-
+             to-Word, when the paraphrase rule is                   dicative phrases for providing examples
+             to another phrase instead of a single                  (such as “e.g.”, “for example”, “such as”,
+             word.                                                  and more) we classify this operation as
+                                                                    Example Generation. This is the only
+  Any SI that has a Rephrasing operation was                        case where we would prepend the SI with
+  prepended with the token <REPHRASE>.                              the token <EXAMPLE>.
+3. Deleting Information: Any words in the                      Any SI that satisfied the token length ratio <
+   source that doesn’t appear in the target des-               1 was prepended with the token <ADD>.
+   ignate a Deleting Information operation. We
+   discern between Removal and Summarization                5. Explicitation: From a modeling perspective,
+   mainly according to the alignment type. Pre-                we grouped Pronoun Explicitation and Expla-
+   cisely discerning between the two operations                nation Generation together, since their pur-
+   for other alignments types is a more compli-                pose is similar – reducing ambiguity in the
+   cated task that cannot be resolved by a simple              source that is related to the implicit informa-
+   heuristic, and as such we leave it for future               tion and assumptions. However, from a classi-
+                                                      257
+
+<a id="pdf-p18"></a>
+### [PDF p.18] Task Train Model SARI ADD KEEP DELETE BLEU % Ident.
+- Locator: `R040-chamovitz-2022.pdf` · página **18** / 25
+
+Task   Train     Model                   SARI     ADD     KEEP     DELETE       BLEU     % Ident.
+                            T5Large                 33.03    2.41    61.78      34.91      0.916     48.75%
+                            T5Large+Classifier      31.78    2.34    61.27      31.71      0.909     57.66%
+                            T5Base                  30.41    1.77    62.03      27.42      0.920     56.55%
+
+                   Manual
+                            T5Base+Classifier       30.48    1.87    62.35      27.21      0.920     62.12%
+           TS
+                            BART-Large              32.27    2.85    61.27      32.69      0.888     55.43%
+                            BART-Large+Classifier   37.66    3.87    59.93      49.19      0.842     31.75%
+                            BART-Base               31.97    1.76    61.83      32.31      0.914     55.15%
+                            BART-Base+Classifier    32.65    2.45    61.63      33.87      0.876     54.31%
+                            T5Large                 21.10    1.43    41.98      19.91      0.234     69.16%
+                            T5Large+Classifier      22.43    1.21    42.78      23.30      0.235     72.27%
+                            T5Base                  20.14    1.69    42.35      16.38      0.243     72.90%
+
+                   Manual
+                            T5Base+Classifier       20.21    0.89    42.26      17.47      0.239     78.82%
+           CS
+                            BART-Large              21.42    1.61    42.28      20.39      0.238     75.08%
+                            BART-Large+Classifier   26.47    2.34    42.13      34.94      0.219     60.12%
+                            BART-Base               23.48    2.27    42.88      25.29       0.24     72.27%
+                            BART-Base+Classifier    24.22    2.26    43.52      26.87      0.242     73.52%
+
+Table 3: Results for all models fine-tuned on the Manual dataset (see Appendix C). Metrics include SARI, the
+percentage of identical generations (% Identical). We also report BLEU for completeness (see text). Highest SARI
+scores for each fine-tuning setting are boldfaced.
+
+        fication perspective, each is discovered differ-            in a text is changed. We use the Universal De-
+        ently.                                                      pendency parse trees of the source and target
+                                                                    to discover rearrangements.
+         (a) Pronoun Explicitation: We use a
+             co-reference resolution (CRR) model                     (a) Clause Reordering: If the clauses in the
+             (Coreferee from Spacy27 ), applied to the                   target appear in a different order than in
+             concatenated source and target. If the                      the source, then this is a Clause Reorder-
+             CRR model finds explicit references in                      ing operation.
+             the target to pronouns in the source, we                (b) SVO Reordering: For each sentence in
+             classify as Pronoun Explicitation. This                     the source, we check if the order of sub-
+             is the only case where we would prepend                     ject, verb, and object are maintained in
+             the SI with the token <EXPLICIT>.                           the target. If not, then this is an SVO
+         (b) Explanation Generation: We identify                         Reordering.
+             this operation together with Adding In-                Any SI that has an Intra-Sentence Rearrange-
+             formation, since heuristically they can                ment operation was prepended with the token
+             appear very similar. If new words in the               <REORDER>.
+             target aren’t tied to an example, or are
+             tied to a noun phrase in the source that             7. Operations on Sentences: These operations
+             is part of one or more sentences in the                 are checked on a sub-document level, as com-
+             target, we assume that this is a form of                pared to a simplification instance level.
+             Explanation. Discerning between the dif-                (a) Sentence Splitting: This operation is
+             ferent types of explanation generations                     assumed to appear by default in SIs
+             is a task for future research, but we list                  with sentence alignment type of 1-to-
+             them here for indexing purposes.                            N . Any such SI was prepended with
+               i. For term/phrase                                        the <SPLIT> token.
+              ii. For logic/reasoning                                (b) Sentence Rearrangement: Part of the
+             iii. For background information                             manual alignment process, the origi-
+                                                                         nal ordering of sentences in the source
+             Any SI that was identified containing Ex-
+                                                                         sub-document and be compared to
+             planation Generation <EXPLAIN>.
+                                                                         the order of the original sentences
+                                                                         according to their alignment to the
+  6. Intra-Sentence Rearrangement: This opera-
+                                                                         target sub-document.               So, if the
+     tion is identified when the information order
+                                                                         source sub-document consists of sen-
+  27
+       https://spacy.io/universe/project/coreferee                       tence [s1 , s2 , s3 , ..., sn ] and their align-
+                                                            258
+
+<a id="pdf-p19"></a>
+### [PDF p.19] ment to the target sub-document sen- datasets as other comparison points between TS
+- Locator: `R040-chamovitz-2022.pdf` · página **19** / 25
+
+ment to the target sub-document sen-               datasets as other comparison points between TS
+            tences is some permutation of their                and CS data presented in §8.
+            indexes I, such that the source sen-                  With respect to SI counts, for the Manual
+            tences ordered by the target’s order is            dataset we use 1522/280 SIs from WikiMan-
+            [si1 , si2 , ..., sin ], we look for the longest   ual and 11728/1418 SIs from NewselaManual to
+            increase sub-sequence in this permuta-             create combined training and validation sets of
+            tion L ⊂ I. Any sentence indexed by                11728/1418 SIs respectively. Although both Wiki-
+            ij ∈ / L is a Sentence Rearrangement.              Manual and NewselaManual contain tests sets that
+            From an SI perspective, a similar analy-           Jiang et al. (2020) used to test their CRF models,
+            sis was done for Clause Reordering, in             we use other datasets as the tests sets for our exper-
+            order to discover to which SIs to prepend          iments (see §6.2).
+            the <REORDER> token.                                  We should note, that there are more SIs in the
+    8. Document Level Operations: We list here                 original datasets than the number of SIs we used for
+       the Document Level Operations, but for                  fine-tuning. This difference is because the missing
+       our analysis we only focused on identify-               SIs are either complete deletions (sentences from
+       ing Adding/Deleting Paragraphs and Sub-                 the source that are removed in the simplification)
+       documents, which were respectively classi-              or complete additions (sentences in the simplifica-
+       fied as Adding/Deleting Information. In ad-             tion with no source). See Table 6 in Appendix I
+       dition, as part of our reordering analysis, we          for additional details regarding SI counts in each
+       were able to discover Cross-Paragraph Sen-              corpus.
+       tence Reordering if they occurred in the same
+       Sub-Document.                                           Results. When trained in this setting, which uses
+                                                               a considerably smaller albeit cleaner dataset, we no-
+        (a) Paragraph Splitting                                tice two phenomena when compared to the results
+        (b) Cross-Paragraph Sentence Reordering                in §7 when tested on TS. First, for all models except
+        (c) Paragraph Rearrangement                            T5Large, the +Classifier variant still outperforms
+        (d) Sub-Document Rearrangement                         the baseline model, though by a smaller margin
+        (e) Adding Paragraphs                                  than in the classic training setting. Second, model
+                                                               size now has a consistent trend, with larger models
+         (f) Adding Sub-Documents
+                                                               outperforming their matching smaller counterparts.
+        (g) Deleting Paragraphs                                Further work is required to ascertain this different
+        (h) Deleting Sub-Documents                             pattern of performance on this setting. In general,
+                                                               the best TS performance on SARI is achieved by
+C     Experiment and Results on the                            the BART-Large+Classifier variant in this training
+      Manually-aligned Dataset                                 setting, repeating the performance in §7.
+In this section, we describe the experimental setting             Examining the performance on CS, we find that
+and results for training TS models on a manually               the +Classifier variants achieved superior results
+aligned dataset. We do so for completeness, since              for all model architectures and sizes in this train-
+manually aligned datasets can potentially capture              ing setting as well. Unlike the results presented
+more complex relationships between source and                  in §7, here the difference in SARI scores is more
+target sentences than automatic alignments can,                pronounced for larger models, with differences of
+and the test dataset in CS is manually aligned. We             more than 1.3 SARI points for both large model ar-
+report results for this series of experiments in an            chitectures, while the differences in the base-sized
+appendix, since no prior work used these datasets              models is under 0.8 SARI points. The model with
+to train TS models.                                            the highest performance difference in this training
+   The Manual dataset is created by combining                  setting is BART-Large+Classifier, with a difference
+WikiManual and Newsela Manual from Jiang et al.                of 5.05 SARI points on CS data, while in §7 this
+(2020). Jiang et al. (2020) used WikiManual and                was the T5Base+Classifier model.
+NewselaManual to train their NeuralCRF sentence                   In both evaluation settings, the best performing
+alignment models for the WikiLarge and Newsela                 model is still BART-Large+Classifier, similar to
+corpora, respectively. In addition, we use these               the results in §7.
+                                                           259
+
+<a id="pdf-p20"></a>
+### [PDF p.20] Discussion. The results shown here further Operation P. R. F1 #
+- Locator: `R040-chamovitz-2022.pdf` · página **20** / 25
+
+Discussion. The results shown here further                          Operation           P.     R.        F1        #
+                                                                    <PROX>              0       0         0        0
+demonstrates the potential benefit of adding induc-             <REPHRASE>            80.43   97.37     88.1      38
+tive bias towards simplification operations to a TS               <DEL>                80     84.21     82.05     19
+trained model. Potential future research could also               <ADD>               12.5     50        20        2
+                                                                <EXAMPLE>               0       0         0        0
+look into performances of different models when                 <EXPLAIN>               0       0         0        0
+trained on datasets of different sizes and quality,             <EXPLICIT>            42.86   42.86     42.86      7
+                                                                <REORDER>             32.43     1       48.98     12
+since many language lack resources for automatic                 <SPLIT>                1       1         1       13
+text simplification, let alone cognitive simplifica-
+                                                         Table 5: Precision, Recall, and F1 scores for each opera-
+tion.                                                    tion token, when comparing our automatic identification
+                                                         rules to a human annotator. We also describe the num-
+D     SARI Calculation                                   ber of SI with each operation in the random sample
+The main metric used for evaluating TS models is         analyzed, and the expected number SI.
+SARI (Xu et al., 2016), which is computed based
+on three token-level operations: ADD, KEEP, and
+                                                         in §6, and the full dataset, including deletions of
+DELETE. Precision and Recall are computed for
+                                                         complete sentences from the source and additions
+each with respect to n-grams for n = 1 . . . 4, and
+                                                         complete sentences to the target.
+averaged together to yield overall Precision and
+Recall scores per operation. SARI is defined as:             Dataset       Fine-Tuning                Full Corpus
+                                                               FA               - / - / 321             - / - / 380
+            F1ADD + F1KEEP + PDELET E                        NewM       11.7K / 1.4K / 3.6K      17.8K / 2.6K / 5.1K
+ SARI =                               (1)
+                        3                                    WikiM       1.5K / 280 / 531        29.9K / 4.4K / 7.9K
+E     Model Training times                                   ASSET          - / 2K / 359               - / 2K / 359
+                                                             WikiA         483K / 20K / -             483K / 20K / -
+
+    Train Dataset   Model Size      Train Time           Table 6: Number of SIs used for fine-tuning our models
+                                                         in §7 and Appendix C as compared to the number of
+                      T5-Large         7 days            SIs in the respective full corpus. The differences are
+                      T5-Base          4 days            because in the fine-tuning setting we ignored complete
+      WikiAuto
+                    BART-Large         5 days            deletions of sentences from the source and complete
+                    BART-Base          2 days            additions of sentences to the target. For each dataset
+                                                         and each setting, the number of SIs are for the train /
+                      T5-Large         1 day             valid / test sets respectively. We shorten dataset names
+                      T5-Base         12 hours           as follows: FA=FestAbility, NewM=NewselaManual,
+       Manual                                            WikiM/A=WikiManual/Auto.
+                    BART-Large        20 hours
+                    BART-Base         11 hours
+Table 4: Approximate training times on a single GPU      H      Simplification Operations per Dataset
+for our models trained in §6 and Appendix C.
+                                                         In this appendix, we present the results of 3 key
+                                                         point of information regarding the use of simplifi-
+F    Comparing automatic identification of               cation operations in the TS and CS datasets. First,
+     simplification operation to human                   we show the distribution of each simplification op-
+     annotations                                         erations per dataset (Figure 5). Then, we show the
+We asked a human annotator to manually assign            histograms of the number of simplification opera-
+simplification operations to 50 random SI from the       tions used in each SI (Figure 6). Finally, we present
+WikiAuto training set. Below are the particular          the correlation matrices for each dataset used in our
+Precision, Recall, and F1 scores for each opera-         analysis in §8 (Figure 7).
+tion on that subset, using the human annotations as
+ground-truth.
+                                                         I    Full Corpora Analysis
+                                                         In the main paper §8, we analyzed simplification
+G     Simplification Instance Counts
+                                                         operations in the datasets as they were used to train
+Table 6 contains the details regarding the counts of     our models. However, each dataset also has SIs
+SIs in each dataset, as used to fine-tune our models     that are complete deletions (whole sentences in
+                                                       260
+
+<a id="pdf-p21"></a>
+### [PDF p.21] (a) JSD distances between distributions (b) ℓ2 distances between correlation matrices
+- Locator: `R040-chamovitz-2022.pdf` · página **21** / 25
+
+(a) JSD distances between distributions                  (b) ℓ2 distances between correlation matrices
+Figure 4: Heatmaps of the distances between dataset sub-sets. We abbreviate sub-set names such that FA=FestAbility,
+NewM=NewselaManual, WikiM/A=WikiManual/Auto. The final two letters signify ts=test, vl=valid, dv=dev, and
+tr=train sets. For each sub-set pair, we report the numerical distance in the matching cell.
+
+
+the source that don’t have matching sentence(s) in         ple English Wikipedia contains many more cases
+the target) or complete additions (sentences in the        of Information Deletion than other corpora.
+target with no matching source sentence(s)). In               In addition, the distances between the operation
+figure Figure 4 we present the results of the same         correlation matrices show that the difference in
+analysis but for the full dataset.                         joint application of simplification operations be-
+   When analyzing the full datasets, similar pat-          tween CS and TS is similar when considering the
+terns to §8 emerge. Sub-sets of the same dataset are       full datasets, as the distances between FestAbility
+still clustered together, although now the in-cluster      and the other sub-sets are maintained (changing by
+distance is JSD < 0.06 and between clusters dis-           at most ±0.26, while the other distances outside of
+tance is JSD > 0.09. Moreover, if considering              clusters increase more).
+clusters to have JSD < 0.04 like in the main pa-
+                                                           J    Example Simplifications
+per, then the similar relationships between sub-sets
+described in the main paper emerge – FestAbil-             Shown in Table 7 and Table 8 below.
+ity is clustered with itself, ASSET and WikiAuto
+validation are clustered, and WikiManual is also
+clustered, and WikiAuto train is separated from
+the ASSET and WikiAuto validation cluster and
+the WikiManual cluster. However, there are some
+differences – NewselaManual development is not
+clustered with the other NewselaManual sub-sets
+if considering clusters to have JSD < 0.04, and
+WikiAuto train is not closer to the WikiManual
+cluster than to the ASSET and WikiAuto validation
+cluster.
+   These results strengthen our findings from the
+main paper that the simplification operations are
+used similarly in CS and TS. They also empha-
+size the differences between the Newsela corpus
+and the WikiLarge corpus, as highlighted by Xu
+et al. (2015). The difference between WikiManual
+and all the other datasets is the prevalence for “full
+deletions” in WikiManual, which shows that the
+relationship between English Wikipedia and Sim-
+                                                       261
+
+<a id="pdf-p22"></a>
+### [PDF p.22] Figure 5: Probabilities each simplification operation is used in every dataset sub-set
+- Locator: `R040-chamovitz-2022.pdf` · página **22** / 25
+
+Figure 5: Probabilities each simplification operation is used in every dataset sub-set
+
+
+
+
+                                         262
+
+<a id="pdf-p23"></a>
+### [PDF p.23] Figure 6: Histograms of the number of simplification operations used in each SI for each dataset sub-set.
+- Locator: `R040-chamovitz-2022.pdf` · página **23** / 25
+
+Figure 6: Histograms of the number of simplification operations used in each SI for each dataset sub-set.
+
+
+
+
+                                                  263
+
+<a id="pdf-p24"></a>
+### [PDF p.24] Figure 7: The simplification operations correlations matrices for each dataset subset presented as heatmaps.
+- Locator: `R040-chamovitz-2022.pdf` · página **24** / 25
+
+Figure 7: The simplification operations correlations matrices for each dataset subset presented as heatmaps.
+
+
+
+
+                                                    264
+
+<a id="pdf-p25"></a>
+### [PDF p.25] Source: Jeddah is the principal gateway to Mecca, Islam’s holiest city, which
+- Locator: `R040-chamovitz-2022.pdf` · página **25** / 25
+
+Source:             Jeddah is the principal gateway to Mecca, Islam’s holiest city, which
+                           able-bodied Muslims are required to visit at least once in their lifetime.
+       Simplification:     Jeddah is the main gateway to Mecca, Islam’s holiest city.
+       Source:             However, the BZ differs a bit in comparison to the Freedom Party, as
+                           is in favor of a referendum about the Lisbon Treaty but against an EU-
+                           Withdrawal.
+       Simplification:     However, the BZ differs a bit from the Freedom Party. The BZ is in favor
+                           of a referendum about the Lisbon Treaty but against an EU-Withdrawal.
+       Source:             Many species had vanished by the end of the nineteenth century, with
+                           European settlement.
+       Simplification:     Many species had disappeared by the end of the nineteenth century.
+       Source:             Fearing that Drek will destroy the galaxy, Clank asks Ratchet to help
+                           him find the famous superhero Captain Qwark, in an effort to stop Drek.
+       Simplification:     Clank fears that Drek will destroy the galaxy. He asks Ratchet to help
+                           him find the famous superhero Captain Qwark.
+Table 7: Example Simplifications from ASSET of the T5-Base Classifier model fine-tuned on the WikiAuto dataset.
+Differences between the source and Simplification are bolded and italicized per example.
+
+
+       Source:             Know that there are absentee ballot options available, and there may be
+                           other options available depending on what situation we find ourselves in.
+       Simplification:     There are many options for absentee ballots.
+       Reference:          You should know if you could vote from home. You should check if there
+                           are other ways of voting this year because of covid-19.
+       Source:             Zazel O’Garra, founder and artistic director of ZCO Dance Project, is a
+                           force to be reckoned with.
+       Simplification:     Zazel O’Garra is the founder and artistic director of ZCO Dance Project.
+       Reference:          Zazel O’Garra is the founder and artistic director of ZCO Dance Project.
+                           She is a very strong and important woman.
+       Source:             I was diagnosed at the age of five and completely stopped walking when I
+                           was 12 years old.
+       Simplification:     I stopped walking when I was 12 years old.
+       Reference:          It started when I was five years old. I stopped walking when I was 12
+                           years old.
+       Source:             And in trying to get towards where I really wanted to be in life, I really
+                           thought about giving back and being of service to someone else.
+       Simplification:     I really thought about giving back and being of service to someone else.
+       Reference:          I thought about what I really wanted to do. I wanted to help other people.
+Table 8: Example simplifications from FestAbility Transcripts of the T5-Base Classifier model fine-tuned on the
+WikiAuto dataset. Differences between the source and simplification are bold-faced and italicized, per example. We
+add the CS reference for each example as well to highlight where the model succeeds and fails in the task.
+
+
+                                                       265

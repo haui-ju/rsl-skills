@@ -37,6 +37,7 @@ SCRIPT_OF = {
     "src": "scripts/rsl-source.py",
     "bib": "scripts/graphify-bibliography.py",
     "crib": "scripts/cribado.py",
+    "crib2": "scripts/cribado2.py",
 }
 
 
@@ -788,8 +789,8 @@ def _(sb):
     lint(head, "falta la sección final")
     lint(head.replace("\n## Descriptores revisados", crit + "\n\n## Descriptores revisados"), "debe ser la última sección")
     lint(good.replace("### Exclusión", "### Descarte"), "falta '### Exclusión'")
-    lint(good.replace("- Revisiones sistemáticas y otros estudios secundarios.\n", ""), "al menos 2 criterios")
-    lint(good.replace("- Revisiones sistemáticas y otros estudios secundarios.", "- " + " ".join(["palabra"] * 30) + "."), "demasiado largo")
+    lint(good.replace("- **CE2.** Revisiones sistemáticas y otros estudios secundarios.\n", ""), "al menos 2 criterios")
+    lint(good.replace("- **CE2.** Revisiones sistemáticas y otros estudios secundarios.", "- **CE2.** " + " ".join(["palabra"] * 30) + "."), "demasiado largo")
     lint(good.replace(", en inglés o español", ""), "fijar el idioma")
     lint(good.replace("Artículos de revista o de congreso revisados por pares", "Trabajos"), "tipo de documento")
     lint(good.replace("entre 2020 y 2026", "entre 2018 y 2026"), "mismo periodo que T")
@@ -1177,7 +1178,9 @@ def _(sb):
     w = pdir / ".cribado-1"
     regs = (w / "registros.jsonl").read_text(encoding="utf-8")
     sb.check(len(regs.splitlines()) == 5 and "Elsevier" not in regs and '"R003"' not in regs, "registros.jsonl con duplicados, copyright o conteo equivocado")
-    sb.check("| CE1 | Registros duplicados" in (w / "criterios.md").read_text(encoding="utf-8"), "criterios.md sin los códigos del picoc")
+    criterios = (w / "criterios.md").read_text(encoding="utf-8")
+    sb.check("DUPLICADO_TECNICO" not in criterios and "| CE1 | Registros duplicados" not in criterios,
+             "criterios.md convirtió la deduplicación técnica en un criterio científico")
     sb.run(["crib", "prepare", t], "OK", has="3 duplicado(s)")
     sb.run(["crib", "report", t], "ERROR", has="decisiones.jsonl")
     crib_decisions(w, {k: v for k, v in CRIB_OK.items() if k != "R005"})
@@ -1289,6 +1292,27 @@ def _(sb):
     sb.run(["crib", "report", t], "OK", quiet=True)
     sb.run(["crib", "set", t, "R004", "SI", "Revisar a texto completo"], "OK", quiet=True)
     sb.run(["crib", "merge", t], "OK", has="1 corrección(es) del usuario conservada(s)")
+
+
+@case("C05", "orden", "cribado 2: init en picoc/<fecha>-cribado-2-<MARCO> y align mueve pdf-draft por título a docs/pdf")
+def _(sb):
+    t = sb.theme(paper=False, picoc="PICOCT")
+    pdir = next((t / "picoc").iterdir())
+    import csv as _csv
+    csv_path = pdir / "resultados-PICOCT-cribado-1.csv"
+    with csv_path.open("w", encoding="utf-8-sig", newline="") as fh:
+        w = _csv.writer(fh)
+        w.writerow(["Id", "Fuente", "Título", "DOI", "¿Se acepta?", "Justificación cribado 1"])
+        w.writerow(["R001", "Scopus", "Screen reader testing with AI", "", "SI", "CI3"])
+    sb.run(["crib2", "init", t], "OK", has="cribado-2")
+    c2 = t / "picoc" / f"{pdir.name.split('-PICOCT')[0]}-cribado-2-PICOCT"
+    sb.check((c2 / "documentos.json").is_file() and (c2 / "docs" / "pdf-draft").is_dir(), "init no creó documentos ni pdf-draft")
+    draft = c2 / "docs" / "pdf-draft" / "screen-reader-testing-with-ai.pdf"
+    draft.parent.mkdir(parents=True, exist_ok=True)
+    draft.write_bytes(b"%PDF-1.4\n" + b"x" * 10000)
+    sb.run(["crib2", "align", t], "OK", has="1 PDF alineados")
+    sb.check((c2 / "docs" / "pdf" / "R001-screen-reader-testing-with-ai.pdf").is_file(), "align no movió el PDF canónico")
+    sb.check(not draft.exists(), "el borrador debería haberse movido de pdf-draft")
 
 
 @case("K07", "marco", "redaccion:lint acepta n = X y [[ AGREGAR DIAGRAMA ]] como marcadores del usuario, pero sigue fallando con TODO y con apelaciones a «el lector» (no con «lector de pantalla»)")

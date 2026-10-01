@@ -41,7 +41,37 @@ Invoke: `Usa rsl-cribado-1 sobre docs/<slug>/`.
 3. `pnpm -s cribado:merge docs/<slug>`. Agreements are taken as they are; it prints only the disagreements (both positions and a trimmed abstract). Resolve each from that text with the rule of screening 1: `NO` only if the abstract shows a CE or contradicts a CI; a `NO` that rests on what the abstract does not say becomes `SI` with duda `sí` (the full text decides). A `NO` cites at least one code, main one first; motive of at most 25 words in Spanish, never data the abstract does not say. Write them in `.cribado-1/resoluciones.md` (`## Resoluciones` + `| Id | Decisión | Criterios | Duda | Motivo |`) and run `cribado:merge` again → OK. It writes `decisiones.jsonl` (keeping corrections of the user) and `debate.md`.
 4. Write `.cribado-1/sintesis.json`: `{"aceptados": "…", "rechazados": "…", "dudas": "…"}`, each the general reason in Spanish (at most 120 words, no per-batch detail), from the merge output and the report counts.
 5. `pnpm -s cribado:report docs/<slug>` → OK (fix and repeat on ERROR). `cribado-1.md` has, in this order: summary, duplicates (removed, kept, title, reason), accepted (why, then title and source), rejected (why, percentage by inclusion criterion not met and by exclusion criterion, then the list), doubts (why, list), the PRISMA line and the criteria. `cribado-1.shadow.jsonl` is written at the same time.
-6. **Suggestion (always).** The goal is to **widen** the universe of candidates: add what the accepted records and the thesaurus show is missing, keep what works, and remove only what is proven to add nothing. The keyword analysis only sees the records the query already retrieved, so removals always shrink the search and additions from outside (thesaurus) are the only way to find what was missed.
+6. **PRISMA Diagram Data.** Write `prisma.json` in the `picoc/<fecha>-<MARCO>/` folder with the numerical data available after screening 1. Use this exact structure:
+   ```json
+   {
+     "identification": {
+       "databases": <total_scopus_and_wos>,
+       "registers": 0
+     },
+     "removed_before_screening": {
+       "duplicates": <duplicates_removed>,
+       "ineligible_automation": 0,
+       "other_reasons": 0
+     },
+     "screening": {
+       "screened": <total_unique_records>,
+       "excluded": <total_rejected>
+     },
+     "retrieval": {
+       "sought": <total_accepted_and_doubts>,
+       "not_retrieved": null
+     },
+     "eligibility": {
+       "assessed": null,
+       "excluded_reasons": {}
+     },
+     "included": {
+       "studies": null,
+       "reports": null
+     }
+   }
+   ```
+7. **Suggestion (always).** The goal is to **widen** the universe of candidates: add what the accepted records and the thesaurus show is missing, keep what works, and remove only what is proven to add nothing. The keyword analysis only sees the records the query already retrieved, so removals always shrink the search and additions from outside (thesaurus) are the only way to find what was missed.
    - `pnpm -s cribado:keywords docs/<slug>` → `.cribado-1/keywords.md`: hits of each query term in the unique records (SI and NO) and every author or index keyword of the accepted records that no query term covers.
    - Build the candidate list from three sources: (a) the keywords of the accepted records in `keywords.md`; (b) the UF and NT of every IEEE descriptor already in the picoc, plus related descriptors (`graphify query "<término>" --graph global/thesaurus/graphify-out/graph.json`); (c) the terms listed as retired in the picoc (`## Descriptores revisados y excluidos`) when the evidence came from an earlier screening, which may have used a stricter rule. Run `pnpm -s thesaurus:check "t1" "t2" …` on the current IEEE descriptors and all candidates in one call (`playbooks/vocabulario-controlado.md`).
    - **Removal rule:** a term is removed only if it has 0 SI (doubts count as SI) in total **and** at least 3 exclusive NO in this screening. Anything else stays, even with 0 records. Never remove on the evidence of an earlier screening.
@@ -79,8 +109,8 @@ Invoke: `Usa rsl-cribado-1 sobre docs/<slug>/`.
      ```
 
      The IEEE Xplore query is not written here: `rsl-picoc` adjusts it when it applies the suggestion.
-7. Chat: counts (records per base, duplicates, SI, NO, doubts, disagreements), links to `cribado-1.md` and `cribado-1-sugerencia.md`, and that the user should review the report. Then the Cierre line.
-8. **Corrections** (in this or a later turn): one `pnpm -s cribado:set docs/<slug> <id> SI|DUDA|NO "<motivo>" [CI3,CE5]` per record (`DUDA` = `SI` with duda) (it regenerates the report and the shadow); no new debate. If the general reasons no longer fit, update `sintesis.json` and run `cribado:report`. Then the Cierre line again.
+8. Chat: counts (records per base, duplicates, SI, NO, doubts, disagreements), links to `cribado-1.md`, `cribado-1-sugerencia.md` and `prisma.json`, and that the user should review the report. Then the Cierre line.
+9. **Corrections** (in this or a later turn): one `pnpm -s cribado:set docs/<slug> <id> SI|DUDA|NO "<motivo>" [CI3,CE5]` per record (`DUDA` = `SI` with duda) (it regenerates the report and the shadow); no new debate. If the general reasons no longer fit, update `sintesis.json` and run `cribado:report`. Update `prisma.json` with the new counts. Then the Cierre line again.
 
 ## Cierre
 

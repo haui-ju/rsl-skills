@@ -13,6 +13,7 @@ Objetivo: términos **fieles al tema** (descriptor oficial + sinónimos oficiale
 - `rsl-picoc` solo escribe la versión nueva de `picoc/`; lee el informe, `topic.md`, `config.yml` y el paper, pero nunca los modifica.
 - El informe **no** contiene tablas ni queries: su sección 2 solo enlaza a la última versión; ese enlace lo escriben `rsl-make-report` y `rsl-polish-report`. El paper siempre lee la última versión (`pnpm -s picoc:latest docs/<slug>`).
 - El picoc fija las **keywords del paper** (regla KY: 5 o 6, las más relevantes) y termina con los **criterios de inclusión y exclusión** (regla CR): qué debe cumplir un artículo para revisarse y qué lo descarta. La extracción de datos **no** va en el picoc.
+- En las versiones nuevas, cada criterio se identifica de forma explícita y consecutiva: inclusión `CI1`, `CI2`, …, `CIn`; exclusión `CE1`, `CE2`, …, `CEn`. «Documentos duplicados», DOI/título repetido y cualquier otra deduplicación no son criterios `CE`: `cribado:prepare` los elimina como operación técnica y los informa por separado en PRISMA.
 
 ## Herramientas
 

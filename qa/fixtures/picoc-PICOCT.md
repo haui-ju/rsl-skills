@@ -212,11 +212,11 @@ AND PUBYEAR > 2019 AND PUBYEAR < 2027
 
 ### Inclusión
 
-- Estudios publicados entre 2020 y 2026.
-- Artículos de revista o de congreso revisados por pares, de acceso abierto, en inglés o español.
-- Estudios dirigidos a personas con discapacidad cognitiva o neurodivergencia.
+- **CI1.** Estudios publicados entre 2020 y 2026.
+- **CI2.** Artículos de revista o de congreso revisados por pares, de acceso abierto, en inglés o español.
+- **CI3.** Estudios dirigidos a personas con discapacidad cognitiva o neurodivergencia.
 
 ### Exclusión
 
-- Registros duplicados entre bases de datos o sin texto completo accesible.
-- Revisiones sistemáticas y otros estudios secundarios.
+- **CE1.** Registros sin texto completo accesible.
+- **CE2.** Revisiones sistemáticas y otros estudios secundarios.

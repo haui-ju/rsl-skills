@@ -21,6 +21,10 @@ El agente verifica/instala prerrequisitos (node + pnpm, pipx graphifyy, poppler)
 | `rsl-picoc` | Crea una versión nueva del marco de búsqueda con el marco de `config.yml` (libre: PICO, PIO, PICOC, PICOCT, PICOS…; por defecto PICOCT): tabla por componente 1:1 con las queries, palabras clave IEEE (libres al final), 5–6 keywords del paper, criterios de inclusión y exclusión; modo completo (debate `critico-rsl` + `defensor-rsl` + `redaccion-rsl`), parcial (solo keywords o criterios) o ligero (solo la pregunta general, sin agentes); `picoc:lint` OK. **Solo lee** el informe, `config.yml` y el paper: nunca los modifica | `docs/[titulo-breve]/picoc/<fecha>-<MARCO>/picoc.md` + `picoc-debate.md` |
 | `rsl-cribado-1` | Cribado 1 de PRISMA (título, resumen y palabras clave) de Scopus y Web of Science juntos: `cribado:prepare` pasa WoS a CSV, une ambas bases en `resultados-<MARCO>.csv` y elimina duplicados primero (el agente nunca lee las exportaciones); `defensor-rsl` propone SI/NO por registro con los criterios del picoc y `critico-rsl` lo critica; las dudas van como SI. Siempre deja una sugerencia de keywords (qué términos valen, cuáles no aportan y cuáles agregar) con las queries de Scopus y WoS. Correcciones con `cribado:set` | `picoc/<fecha>-<MARCO>/cribado-1.md` + `cribado-1.shadow.jsonl` + `cribado-1-sugerencia.md` |
 | `rsl-cribado-1-aplicar` | Tras aprobar el reporte, copia el CSV unificado con dos columnas más al final: «¿Se acepta?» (SI o NO) y «Justificación cribado 1». No decide nada ni edita las exportaciones | `picoc/<fecha>-<MARCO>/resultados-<MARCO>-cribado-1.csv` |
+| `rsl-cribado-2` | Cribado 2, paso 1: `init` + descarga OA por DOI de cada SI; catálogo `documentos.json` / `documentos.md` en `picoc/<fecha>-cribado-2-<MARCO>/`; PDF canónicos en `docs/pdf/<Id>-<titulo-slug>.pdf`; actualiza `prisma.json` | `picoc/<fecha>-cribado-2-<MARCO>/` |
+| `rsl-cribado-2-alineamiento-pdfs` | Cribado 2: mueve PDF que dejas en `docs/pdf-draft/` (nombre ≈ título) al nombre canónico y actualiza el catálogo | mismo + `docs/pdf/` |
+| `rsl-cribado-2-memoria` | Cribado 2, paso 2: `docs/pdf/` → `docs/md/` + grafo Graphify del corpus (`memoria-traza.json`) | `picoc/<fecha>-cribado-2-<MARCO>/graphify-out/graph.json` |
+| `rsl-cribado-2-polish` | Cribado 2, paso 3: evaluación a texto completo (CI/CE del picoc, lotes con defensor/crítico vía grafo cribado-2) | `cribado-2-evaluacion.md` + `.cribado-2/evaluaciones/` |
 | `rsl-make-paper` | Nueva versión del paper borrador, solo secciones `on` (mejorar) y `rewrite` (reescribir) de `config.yml` (+ agente `citas-rsl` y `redaccion:lint`) | `docs/[titulo-breve]/paper/<fecha>/paper-borrador.md` |
 | `rsl-polish-paper` | Pule esas secciones (`critico-rsl` + `defensor-rsl`; `impacto-social-rsl` si están Justificación u Objetivo; luego `redaccion-rsl` + `citas-rsl`) → texto limpio + traza de debate | `paper/<fecha>/paper-polish.md` + `paper-debate.md` |
 | `rsl-qa-destroy` | Intenta romper el flujo a propósito (flujo positivo, orden mezclado, entradas destructivas, marco libre, revisión de skills y agentes) en un sandbox de `/tmp`; solo reporta | `qa/<fecha>/qa-report.md` + `qa-report.json` |
@@ -58,6 +62,12 @@ docs/[titulo-breve]/
       cribado-1-sugerencia.md ← rsl-cribado-1: keywords que valen, no aportan o conviene agregar + queries Scopus y WoS
       .cribado-1/        ← trabajo interno (registros.jsonl, propuestas, decisiones, síntesis, keywords)
       resultados-PICOCT-cribado-1.csv  ← rsl-cribado-1-aplicar: el unificado con «¿Se acepta?» y «Justificación cribado 1»
+    2026-09-28-cribado-2-PICOCT/   ← rsl-cribado-2 (misma fecha-base que el picoc del CSV)
+      documentos.json / documentos.md
+      docs/pdf/                    ← PDF canónicos (<Id>-<titulo-slug>.pdf)
+      docs/pdf-draft/              ← tú: PDF con nombre parecido al título → rsl-cribado-2-alineamiento-pdfs
+      docs/md/ + index-manifest.json + memoria-traza.json + graphify-out/  ← rsl-cribado-2-memoria
+      cribado-2-evaluacion.md      ← rsl-cribado-2-polish
   paper/
     paper.shadow.yml     ← detalle técnico: títulos, capítulos, depends_on (rara vez se edita)
     paper.state.jsonc    ← hashes y versiones (lo gestiona pnpm paper:status; no editar)
@@ -71,6 +81,7 @@ docs/[titulo-breve]/
     MD/                  ← corpus indexable (RAG + headings + locators)
     index-manifest.json  ← traza (no re-lee lo indexado)
   graphify-out/          ← grafo del tema (gitignored)
+  RSL/picoc/…            ← legado (corridas antiguas); las nuevas usan picoc/<fecha>-cribado-2-<MARCO>/
 ```
 
 Root (proyecto):
@@ -189,6 +200,17 @@ Revisa `picoc/<fecha>-<MARCO>/cribado-1.md` (duplicados, aceptados, rechazados c
 ```text
 Usa rsl-cribado-1-aplicar sobre docs/[titulo-breve]/
 ```
+
+Para el cribado 2 (texto completo): descarga OA, alinea PDF manuales, indexa y evalúa:
+
+```text
+Usa rsl-cribado-2 sobre docs/[titulo-breve]/
+Usa rsl-cribado-2-alineamiento-pdfs sobre docs/[titulo-breve]/   (tras dejar PDF en docs/pdf-draft/)
+Usa rsl-cribado-2-memoria sobre docs/[titulo-breve]/
+Usa rsl-cribado-2-polish sobre docs/[titulo-breve]/
+```
+
+Lo que no baja automáticamente queda en `picoc/<fecha>-cribado-2-<MARCO>/documentos.md` (columna `porque`); guárdalo en `docs/pdf-draft/` con un nombre parecido al título y corre alineamiento.
 
 `cribado-1-sugerencia.md` propone cómo mejorar la búsqueda (sin tirar lo que funciona). Para llevarla a una versión nueva del picoc, `Usa rsl-picoc sobre docs/[titulo-breve]/`: `picoc:latest` avisa la sugerencia y la skill entra en modo sugerencia (solo valida, sin debate).
 
@@ -339,6 +361,7 @@ rsl-bootstrap             ← paso 0 (una vez por clon / máquina)
   → graphify-theme (PASS)
   → rsl-polish-report
   → (tú: queries de Scopus y WoS, exportaciones en picoc/<fecha>-<MARCO>/) → rsl-cribado-1 → (tú: revisar) → rsl-cribado-1-aplicar
+  → rsl-cribado-2 → (tú: pdf-draft + alineamiento) → rsl-cribado-2-memoria → rsl-cribado-2-polish
   → rsl-make-paper          ← paper/<fecha>/paper-borrador.md (secciones on de config.yml)
   → rsl-polish-paper        ← paper-polish.md limpio + paper-debate.md
   → marcar frozen en config.yml lo validado · activar Metodología · (tú: selección PRISMA) · activar Resultados…

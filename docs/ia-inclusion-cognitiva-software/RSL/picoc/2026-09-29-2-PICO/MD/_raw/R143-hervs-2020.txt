@@ -1,0 +1,1022 @@
+===== PDF PAGE 1 / 17 =====
+Journal of Ambient Intelligence and Humanized Computing manuscript No.
+(will be inserted by the editor)
+
+
+
+
+Predictive Composition of Pictogram Messages for Users with
+Autism
+Raquel Hervás · Susana Bautista · Gonzalo Méndez · Paloma Galván ·
+Pablo Gervás
+
+
+
+
+Received: date / Accepted: date
+
+
+Abstract Communication is a basic need for every                diction based on sequencing of pseudo-syntactic types
+person. However, there are many people who present              of pictogram is not as clear.
+disabilities that prevent communication through natu-
+ral language. Augmentative and Alternative Commu-               Keywords Augmentative and Alternative Commu-
+nication (AAC) systems, including those based on pic-           nication (AAC) · Autism · Ergonomics · Interaction
+tograms, attempt to facilitate the communication for            Design · Personalization · Pictograms · Prediction
+people with this kind of difficulties. In this paper we
+present PictoEditor, an Augmentative and Alternative
+Communication application for the composition of pic-           1 Introduction
+togram messages for users with autism that incorpo-
+rates prediction functionalities. Although such function-       We currently live in a society that could well be de-
+alities have been widely studied in text-based Augmen-          fined as a society of information and communication. It
+tative and Alternative Communication tools, they have           is becoming more and more indispensable to have fast
+not been applied to pictogram based ones. The results           communications, as proven by the proliferation of appli-
+show that prediction based on frequency of use of spe-          cations for instant messaging in mobile telephones, elec-
+cific pictograms improves the immediate availability of         tronic mail systems, and telecommunication networks.
+the desired pictograms, but the improvement with pre-           Fast and easy communication is becoming a daily need
+                                                                in enterprise settings, but also in the daily life of or-
+The work presented in this paper has been funded by the         dinary people. Communication becomes a paramount
+projects IDiLyCo: Digital Inclusion, Language and Commu-        need for everyone - contact with family, communica-
+nication, Grant. No. TIN2015-66655-R (MINECO/FEDER)             tion with friends, event planning. . . -, but there are sev-
+and InVITAR-IA: Infraestructuras para la Visibilización, In-   eral populations, people with autism spectrum disor-
+tegración y Transferencia de Aplicaciones y Resultados de
+Inteligencia Artificial, UCM Grant. No. FEI-EU-17-23.           ders among others, whose circumstances make it diffi-
+                                                                cult for them to enjoy this kind of communication with
+R. Hervás, P. Galván
+                                                                the world at large. For these people, and for all those
+Facultad de Informtica, Universidad Complutense de Madrid,
+Spain                                                           who need to interact with them - such as family, doctors
+Tel.: +34 91 394 7568                                           or teachers -, communication is a challenge.
+E-mail: {rhervasb,palomagalvan}@ucm.es                              Augmentative and Alternative Communication sys-
+S. Bautista                                                     tems (AAC) arose to meet this need. In particular,
+Escuela Politcnica Superior, Universidad Francisco de Vito-     the use of pictograms, schematic symbols that repre-
+ria, Spain
+E-mail: susana.bautista@ufv.es
+                                                                sent ideas or concepts, is quite extended in this kind of
+                                                                systems. These pictograms are images representing con-
+G. Méndez, P. Gervás
+Instituto de Tecnologa del Conocimiento, Universidad Com-
+                                                                cepts of all kinds regardless of language, and pictogram
+plutense de Madrid, Spain                                       users adopt them as a substitute of natural language
+Tel.: +34 91 394 7560/7639                                      so they can communicate in an easy and efficient way.
+E-mail: {gmendez,pgervas}@ucm.es                                There are several sets of pictograms ranging from colour
+
+===== PDF PAGE 2 / 17 =====
+2                                                                                                  Raquel Hervás et al.
+
+
+or black-and-white illustrations to photographs of spe-       language in any of its forms due to temporary or per-
+cific objects, and a vast number of AAC applications          manent impairments, or for whom the use of natural
+that use them. The high number of pictograms avail-           language implies a significant effort. In all cases, this
+able in these sets constitutes an advantage from the          kind of communication tries to provide an alternative
+point of view of their expressive power, but is in some       to natural language for communication and therefore al-
+ways a disadvantage in terms of their ease of use. To         lows these users to communicate satisfactorily in their
+harness the expressive power of extended pictograms           daily life.
+sets in a useful way, AAC systems have to find practi-            Many AAC systems rely on visual communication
+cal ways of organizing the pictograms so the users can        for different target users in different fields. For exam-
+easily find them when needed.                                 ple, sign language for deaf people is probably one of
+     In this paper we present the design and evaluation of    the best known examples of Augmentative and Alter-
+prediction mechanisms in an AAC system aimed to the           native Communication. In the last years, there have
+composition of messages using pictograms. Text predic-        been some works aiming to translate text to sign lan-
+tion is a widely implemented aid in AAC systems, but          guage for users whose natural communication channel
+pictogram prediction has barely been studied. However,        is vision (San-Segundo et al. 2012; Verdú et al. 2017)
+we consider prediction to be more than a convenience in       and to automatically recognize these signs (Ameen and
+AAC systems, because in many cases the user may not           Vadera 2017; Tao et al. 2018; Khari et al. 2019; Sevilla
+have the intellectual ability to handle the application       and Lahoz-Bengoechea 2019).
+fluently and find the pictogram sought as would a per-            When considering cognitive impairments, pictograms
+son who does not present any disability. In addition,         are one of the most used resources. A pictogram is a
+whereas most of the applications are fixed to general         schematic symbol that represents an idea or concept in
+profiles that try to cover all possibilities for a specific   a manner that allows communication across language
+group of people or a particular impairment, our system        barriers. Therefore, for people who have this kind of
+adapts to each user because it learns the expected usage      language difficulties, a pictogram is not only a way to
+of pictograms while it is being operated.                     express ideas and feelings, but also a tool to interpret,
+     The paper is structured as follows. First, in section    understand and ultimately transform their ideas into
+2, we introduce the field of Augmentative and Alterna-        pictures in a schematic and efficient way. Thus, pic-
+tive Communication and how prediction has been stud-          tograms may represent many types of concept: objects,
+ied in some of AAC systems. Then, a prediction-based          animals, persons, feelings, actions, or even grammatical
+tool for the composition of messages using pictograms         elements.
+is presented in the section 3. The specific functionalities       Although there is a wide variety of pictogram sets,
+implemented in the tool for facilitating message com-         such as such as Blissymbolics1 , PCS2 , Pictogram3 , Wid-
+position are explanied in section 4, and their evaluation     git4 , Beta5 , and Sclera6 , the most widely used in Spain
+is then thoroughly presented and discussed in section         is the one created by ARASAAC7 , the Aragonese Portal
+5. Finally, conclusions drawn and intended future work        of Augmentative and Alternative Communication. This
+are described in section 6.                                   is the biggest association working on Augmentative and
+                                                              Alternative Communication in Spain, with the aim of
+                                                              offering resources and materials to facilitate the com-
+2 Related Work
+                                                              munication of those with any difficulties in this area.
+                                                              Through their web portal it is possible to find several
+This section presents some related work on Augmen-
+                                                              support products for communication, including techno-
+tative and Alternative Communication (AAC), with a
+                                                              logical tools such as programs for computers and tablets
+special focus on applications using the same set of pic-
+                                                              which allow alternative ways of access for users with
+tograms as our system. In addition, we discuss the im-
+                                                              difficulties using language.
+portance of prediction in AAC systems, and how this
+                                                                  Many of these resources are based on pictograms,
+kind of mechanism has barely been implemented in
+                                                              including a quite complete pictogram database in Span-
+pictogram-based applications.
+                                                               1
+                                                                 http://blissymbolics.org/
+                                                               2
+                                                                 https://goboardmaker.com/
+2.1 Augmentative and Alternative Communication                 3
+                                                                 http://www.pictogram.se/
+based on Pictograms                                            4
+                                                                 https://widgit.com/
+                                                               5
+                                                                 https://www.betasymbols.com/
+Augmentative and Alternative Communication (AAC)               6
+                                                                 http://www.sclera.be/
+                                                               7
+systems are oriented to users who cannot use natural             http://www.arasaac.org/
+
+===== PDF PAGE 3 / 17 =====
+Predictive Composition of Pictogram Messages for Users with Autism                                                      3
+
+
+                                                                photographs. One of these tools is AraWord (Baldas-
+                                                                sarri et al. 2014a), an application to edit communica-
+                                                                tion boards based on pictograms. AraWord works as a
+                                                                word processor allowing to write at the same time pic-
+                                                                tograms and text, with the goals of easing the creation
+                                                                of new documents and adapting texts for people with
+                                                                communication difficulties.
+Fig. 1 Example of a sentence using ARASAAC pictograms:
+                                                                    AraTraductor (Bautista et al. 2017) is a text-to-
+yo como el desayuno en el colegio (I eat breakfast at school)   pictogram translator that relies on Natural Language
+                                                                Processing techniques in order to improve the obtained
+                                                                translations. The plain text input is parsed using a syn-
+ish that is freely available under the Creative Commons         tactic analyzer, and the information obtained from this
+license. In Fig. 1 we can see an example of a sentence          analysis is then used to create a translation as close
+expressed using ARASAAC pictograms.                             as possible to pictogram texts manually created by ex-
+    There are several AAC applications based on the             perts. This tool is implemented in Android so it can be
+pictograms created by ARASAAC for Spanish with the              easily accessed through tablets and smartphones, and
+purpose of improving and personalizing the communi-             it also relies on ARASAAC pictograms.
+cation and interaction of users who present communi-                PICTAR (Martı́n et al. 2018) is another tool on
+cation problems.                                                AAC for people with autism, which is also based on
+    E-Mintza8 means “electronic speech” in Basque, and          ARASAAC pictograms. PICTAR is a web application
+it consists of a communication board that uses sounds           based on a service of translation from text to pictograms
+and ARASAAC pictograms. The application classifies              in order to help teachers and tutors in the creation of
+the pictograms into semantic classes. When the user             new pictogram materials from texts like daily routines,
+selects a pictogram, the corresponding sound is repro-          stories or news.
+duced and the pictogram is added to the message in                  A common problem in all these tools is the huge
+the blackboard defined in the interface in order to form        number of pictograms available. Although having a con-
+a sentence. The system is specially designed for users          siderable pictogram database allows the communication
+with autism or problems in oral or written communica-           of a wider variety of ideas, users face a substantial nav-
+tion.                                                           igation effort in traditional pictogram-based AAC sys-
+    Azahar9 is a set of free and adaptive applications to       tems due to the number of pictograms to be managed.
+help people with autism or any other cognitive difficulty       Most of these systems are organized using some kind
+to improve their communication. The applications al-            of classification of pictograms depending on their topic
+low them to plan their tasks and enjoy their activities.        or meaning, or even the individual preferences of the
+These applications can be used in tablets, computers            user or an appropriate configuration for performing a
+or smartphones, helping to improve the quality of life          specific task (visiting the doctor or attending school,
+and independence of people with autism or intellectual          for example). In addition to this kind of classification,
+disabilities.                                                   in this paper we will also explore the possibilities of
+    TICO10 is an application for the design and exe-            adding prediction mechanisms when using such a sys-
+cution of interactive communication boards. This tool           tem to create pictogram messages.
+has two elements: the editor and the interpreter. Us-
+ing the editor a board can be created using pictograms,
+                                                                2.2 Prediction Techniques in Augmentative and
+sounds or links to others boards created before. The in-
+                                                                Alternative Communication Systems
+terpreter allows to execute boards created by the editor
+in previous sessions.
+                                                                Text prediction methods are the most extended tech-
+    AraBoard (Baldassarri et al. 2014b) is a set of tools
+                                                                niques to improve the rate of communication for people
+focused on creating pictogram boards using a computer,
+                                                                who use Augmentative and Alternative Communication
+smartphone or tablet. The aim of this tool is to support
+                                                                systems due to any kind of motor or speech impair-
+the planning of different routines, creating and explain-
+                                                                ments (Garay-Vitoria and Abascal 2006). These meth-
+ing tasks in an easy way. In addition, personalized pic-
+                                                                ods range from word prediction (Koester and Levine
+tograms can be used in the boards using images and
+                                                                1996; Venkatagiri 1993; Magnuson and Hunnicutt 2002;
+ 8
+   http://www.policlinicagipuzkoa.com/e-mintza/                 Pouplin et al. 2014) to sentence prediction (Arnott et al.
+ 9
+   http://www.proyectoazahar.org/                               1992; Garay-Vitoria et al. 1995; Mitchell and Sproat
+10
+   http://arasuite.proyectotico.es/index.php                    2012; Garcia et al. 2014), through the use of n-grams
+
+===== PDF PAGE 4 / 17 =====
+4                                                                                                   Raquel Hervás et al.
+
+
+(Wiegand and Patel 2012), topic modeling (Trnka et al.       with pictogram prediction was implemented. This pre-
+2006) or context-awareness (Higginbotham et al. 2009;        diction is based on n-grams, syntactic-semantic features
+Garcia et al. 2015) as base of the prediction algorithms.    and context information.
+    Although several works have demonstrated that dif-           In summary, while there is extensive work in text
+ferent word prediction techniques improve communica-         prediction for AAC systems, to the best of our knowl-
+tion rates significantly in AAC (Venkatagiri 1993; An-       edge there are only a few pictogram prediction ini-
+son et al. 2006; Trnka et al. 2007), only a few instances    tiatives. However, they mostly tackle prediction from
+can be found in the literature where some kind of pre-       the perspective of anticipating specific contexts, rather
+diction method has been applied to pictograms.               than using a pure text-prediction approach as the one
+    Gea et al. (2006) describe a location-aware Augmen-      proposed in this work.
+tative and Alternative Communication tool for children
+with autism. Symbols are presented in the interface ac-
+cording to a set of rules that take into account user lo-    3 PictoEditor: an AAC Application for the
+cation and semantic networks created by teachers and         Composition of Pictogram Messages
+rehabilitation professionals. Although the authors do
+not report any evaluation of the system, they mention        PictoEditor is an AAC system, implemented as a tablet
+that they are working in scenarios such as the child’s       app, intended to help users who need to compose a sen-
+house, school and other specific locations (e.g. restau-     tence or message to communicate through pictograms
+rants).                                                      with persons with Autism Spectrum Disorder. It has
+    Kim et al. (2009) propose a location-aware system        been designed for Spanish users, so it relies on the
+based on pictograms that consider the context in which       ARASAAC set of pictograms and all pictograms in
+the communication is taking place. This context is de-       the application are accompanied by their correspond-
+fined by the user location (e.g., a restaurant) and a com-   ing words and sounds in Spanish.
+munication goal (e.g., ordering), and the system relies          All ARASAAC pictograms are accessible through
+on a server that contains a knowledge model describing       different means, so the user can find them as easily as
+relations between pictograms and locations, and pic-         possible. In addition, the finished messages or sentences
+tograms and goals. The frequency of use of each pic-         can be shared with other applications (chat, mail, . . . )
+togram is also stored in the server.                         through the sharing capabilities of the Android operat-
+    Garcı́a et al. (2015) present the design of a pic-       ing system. The tablet app does not contain the whole
+togram communicator for people with speech impair-           ARASAAC database, but only the pictograms loaded
+ments that is able to spontaneously adapt to each user       by the user, and it relies on a server where the complete
+profile and be aware of the situation: location, time of     database is stored.
+the day and interlocutor. Therefore, the vocabulary to           As in the case of other cognitive disabilities, such as
+be used relates to a particular situation with the possi-    Down syndrome, for whom there are no specific guide-
+bility to be broadened by the user if needed. However,       lines that can be used to design applications (Alonso-
+although their design is very promising and the future       Virgos et al. 2018), it is difficult to find such guidelines
+capabilities of the communicator quite interesting, the      for users with autism. Therefore, PictoEditor has been
+authors recognize that it is only a design and they have     designed following a User Centered Design (UCD) in-
+not developed the intended system yet.                       volving experts, which is a method recommended by
+    In (Garcia et al. 2016) the authors evaluated the        several authors, not only because they can enhance the
+performance of Eugénio, an AAC system for Portuguese,       communication with end users, but because they pro-
+by measuring the effects of adding location knowledge        vide a wider context of the needs and problems faced
+to its pictogram prediction system. The location-aware       by a collective of people with impairments that can
+pictogram prediction method was trained using a cor-         be important in the development process (Allen et al.
+pus composed by able-bodied persons in three differ-         2008; Keay-Bright 2007; Kientz et al. 2007; van Rijn
+ent locations: classroom, cafeteria and home. Although       and Stappers 2008).
+their results were promising, they recognize that their          UCD has been favoured over Participatory Design
+solution is based on a corpus that was created by people     (PD) as, even though some authors suggest it may be
+with no disabilities, which could bias the results.          beneficial (Pantsar-Syväniemi et al. 2015), other au-
+    Pahisa Sol (2017) presents a system that transforms      thors have reported difficulties when using PD, such
+the telegraphic language that comes from the use of          as end users being unable or even unwilling to collabo-
+pictogram-based AAC into natural language in Catalan         rate (Holone and Herstad 2013; Allsop 2010), specially
+and Spanish. In order to test this idea, a user interface    when end users are children, for whom the involvement
+
+===== PDF PAGE 5 / 17 =====
+Predictive Composition of Pictogram Messages for Users with Autism                                                  5
+
+
+                                                             the framed pictograms corresponding to the snow pic-
+                                                             togram depending on the meaning it is representing.
+                                                                 The process followed to transform these data into
+                                                             the material required by our project was somewhat la-
+                                                             borious. As extensive and structured as the ARASAAC
+                                                             database is, it does not organize the pictograms into
+                                                             any kind of topics or semantic classes. However, this
+                                                             was essential for our system, as this kind of communi-
+                                                             cators usually arrange pictograms in this way so it is
+                                                             easier to find the desired pictograms at any moment.
+Fig. 2 Same pictogram with different meanings depending      Therefore, we manually assigned to each pictogram a
+the POS role in which they are employed, distinguished by
+the coloured frame                                           thematic class, in such a way that the set of pictograms
+                                                             became distributed into balanced groups. The thematic
+                                                             classes range from people or nature to sports or tech-
+required by PD may be too big (Frauenberger et al.           nology.
+2011).
+
+
+3.1 ARASAAC Pictogram Database                               3.2 System Description
+
+In order to prepare a tool that helps users to create        The application works on any Android device, but it is
+messages in pictograms as a mean of communication            specially intended for tablets and to be used in land-
+with persons with Autism Spectrum Disorders, we need         scape mode. The first time the application is started,
+to use a set of pictograms that is widely known for          a selection of the most common pictograms is down-
+them. We have decided to use the pictograms from             loaded into the device. As we will see later, the user can
+ARASAAC that are widely used in Spain and con-               afterwards download any ARASAAC pictogram that he
+tain approximately a total of 8500 pictograms corre-         might need. The main working screen of the application
+sponding to a vocabulary of more than 15000 words.           can be seen in Fig. 3.
+Each pictogram is associated to a number of words                The top part of the screen corresponds to the black-
+in different languages: Spanish, English, German, Ital-      board where the user will compose the sentence. It has
+ian, French, Basque and Catalan. These words corre-          the restriction of a maximum of 12 images, which we
+spond to the things or ideas that are represented by         have considered sufficient for a normal phrase, and has
+the pictogram. For example, the same pictogram is used       a slider bar for cases in which they cannot be visualized
+for nieve (snow), nevar (to snow), nevada (snowfall),        at the same time. As the user presses any pictogram, it
+nevado (snowy) and tormenta de nieve (snow storm).           is added to the blackboard along with its corresponding
+In our application we work only with Spanish words,          word below it, and the system reads aloud this word in
+but the database would let us work on different lan-         Spanish. The user can also delete the last pictogram
+guages by introducing small adjustments in the tool.         by pressing the button to the right of the blackboard,
+    In addition to pictograms and words, the database        which is the pictogram for “erase”.
+stores a colour for each word corresponding to a pic-            The central and largest area corresponds to the pic-
+togram. This colour represents a pseudo-syntactic cat-       togram selection box. This area is a table with nine
+egory for the pictogram following this equivalence:          tabs, one for each thematic class. The area under the
+                                                             tabs shows the pictograms contained in the device or
+ – Orange - Common nouns
+                                                             the server corresponding to the class/tab selected (with
+ – Yellow - Proper nouns
+                                                             a maximum capacity of 30 pictograms). Its behaviour
+ – Green - Actions/Verbs
+                                                             varies depending on whether the application is in write
+ – Blue - Adjectives
+                                                             mode or load mode.
+ – Pink - Social
+                                                                 When the application is in write mode, the pictogram
+ – White - Miscellany
+                                                             selection box contains the pictograms the user has loaded
+    These categories described in terms of colours have      and used in the past, along with the pictograms stored
+a rough correspondence with Part-of-speech (POS) tags        from the initial load. Once a pictogram is pressed, it
+as considered in Natural Language Processing applica-        will be added to the message being created. The user
+tions. This POS colour of a pictogram is represented by      can also erase a pictogram by pressing on it for a time.
+a coloured frame surrounding the image. Fig. 2 shows         A confirmation dialog will be displayed and - if the user
+
+===== PDF PAGE 6 / 17 =====
+6                                                                                                   Raquel Hervás et al.
+
+
+
+
+Fig. 3 Working screen of the PictoEditor application
+
+
+accepts - the corresponding pictogram will be removed            In the final screen a single image is constructed by
+from the storage of the device. If the user wants to re-     collating the pictograms that had been inserted in the
+cover the pictogram at a later stage, he would have to       blackboard of the edition screen. As we can see in Fig.
+use the pictogram load mode.                                 4, each pictogram appears with its corresponding Span-
+    The purpose of load mode is to allow the user to         ish word, so the phrase is easily readable. This screen
+load pictograms from the server, which are displayed         also offers two actions on the displayed image: Save and
+in the pictogram selection box. When one of these pic-       Share. If the sentence is saved, it is stored in the exter-
+tograms is pressed, the file for it is transferred to the    nal memory of the device, so it can be opened by any ap-
+local storage in the device. This makes the correspond-      plication working with images. If the message is shared,
+ing pictogram available to the user during write mode.       the application displays a window which shows all the
+When entering load mode, thirty pictograms are loaded        applications available on the device through which an
+for each class whenever there is internet connection,        image could be shared. This way the user could es-
+which is necessary for this mode to work.                    tablish a communication through an instant messenger
+                                                             client available on his device, or attach the image to an
+    In addition, to the left of the pictogram selection
+                                                             e-mail, for example.
+box we find a section with the POS colours of ARASAAC
+(explained in the previous subsection). These corre-
+spond to the colour shortcuts we will describe later.
+Each colour button shortcut interacts with the pictogram     4 Specific Functionalities for Facilitating
+selection box, ensuring that the pictograms matching         Message Composition
+the chosen colour are shifted to the first positions of
+the box.                                                     Three specific functionalities have been added to the
+    Finally, at the bottom of the main screen there are a    system to facilitate the composition of pictogram mes-
+series of buttons and icons. The first is an icon that in-   sages. Of these, two rely on the ability to predict, based
+forms the user if the application has internet connection    on the record of prior interactions with the system by
+or not. Besides we can find four navigation buttons: two     the current user, which pictograms are more likely to be
+black arrows - that change the contents of the pictogram     required as continuation of an ongoing message. These,
+selection box following a page system -, the button to       when activated, operate automatically, rearranging the
+switch to write mode and the button to switch to load        way in which the available pictograms are displayed for
+mode. The button corresponding to the selected mode          the user to employ. The other functionality can be in-
+is not shaded, and its text is highlighted in bold and       voked explicitly by the user and it allows specific recall
+italic. The Finish button redirects the user to the final    of pictograms of a given POS colour category. This al-
+screen, where the composed message is displayed and          lows the user to bring to the fore pictograms other than
+different actions are offered.                               those predicted as possible continuations by the system.
+
+===== PDF PAGE 7 / 17 =====
+Predictive Composition of Pictogram Messages for Users with Autism                                                    7
+
+
+
+
+Fig. 4 Final message composed using the tool
+
+
+4.1 Pictogram prediction based on usage statistics           4.1.2 Prediction based on Part-of-speech Colour
+                                                             Sequencing
+We have included in the application a predictive al-
+gorithm to facilitate the composition of sentences by        The PictoEditor application also builds a bigram model
+the user. This algorithm is based on the recorded his-       of sequences of POS colours of pictograms (explained in
+tory of pictogram sequences constructed by the user          Section ARASAAC Pictogram Database) as composed
+in the past. The theory underlying this approach is          by the user. This is done by registering the frequency in
+that of n-gram models, where an n-gram is a sequence         which subsequences of two colours appear consecutively
+of n consecutive words or tokens that appear together        in a message, which corresponds to an n-gram model
+in a text or a sequence of elements. N-gram models           of order 2 built at the level of pictogram POS colours
+are used in our application to register statistics of use    (which represent syntactic categories). In this way, the
+at two different levels: the number of instances of use      system learns from the user, establishing relationships
+recorded for each pictogram, and the POS colours of          between the POS colour categories to facilitate sentence
+ARASAAC which correspond to syntactic categories             composition. The algorithm comes into action each time
+associated with the corresponding pictogram.                 the user clicks on a pictogram in write mode. Each time
+                                                             this happens, the pictograms of the pictogram selection
+4.1.1 Prediction based on Pictogram Frequency of Use         box are sorted according to their colour and the colour
+                                                             sequence data collected. In addition, within the order
+Each time the user selects a pictogram in write mode,
+                                                             by colour they are ordered by number of instances of use
+the number of instances of use recorded for that pic-
+                                                             so that the composition of routine phrases is facilitated.
+togram is internally increased. This value is stored in
+an internal data structure of the application. As the            Fig. 5 can also be used to explain the mechanism
+tool is handled by a given user, the frequency of use of     for POS colour based prediction. The last pictogram
+each pictogram is registered in this way. This provides      added to the message has been a noun (orange) so the
+data for a unigram model of pictogram sequence, or           algorithm reorders the pictogram selection box to dis-
+n-gram model of the sequences of pictograms of order         play first the adjectives (blue), then nouns (orange) and
+1.                                                           finally the verbs (green). This is based on the relative n-
+    Fig. 5 shows a sentence under construction. Pic-         gram probabilities for orange-blue, orange-orange, and
+tograms with a greater number of instances of use ap-        orange-green subsequences. This example also illustrates
+pear earlier in the arrangement within their POS colour,     how the two different mechanisms for pictogram predic-
+so that the blue pictogram that has just been included       tion interact when the tools is used.
+earlier in the messages appears as the first of the blue        One must keep in mind that these data depend on
+pictograms, and the most frequently used of orange pic-      the user and his habits, and that writing with pic-
+tograms appear as the firsts of their set.                   tograms often does not follow the logic to which we
+
+===== PDF PAGE 8 / 17 =====
+8                                                                                                   Raquel Hervás et al.
+
+
+
+
+Fig. 5 Example of frequency and POS colour based prediction
+
+
+are accustomed. For example, in Spanish we would say          5 Evaluation
+“The garden is beautiful” while the corresponding sen-
+tence with pictograms transcribed into Spanish could          We have conducted an evaluation of the described tool
+be “The garden is pretty”, “Garden is pretty” or “Pretty      in order to assess the effectiveness of the predictive al-
+garden” simply. As seen, in the first two cases, a noun is    gorithms previously described, based on the frequency
+followed by a verb, but in the latter the noun “garden”       of use of the pictograms and based on their POS colour
+is followed by an adjective, omitting the verb.               category, so that we can decide whether to include them
+                                                              or not in the final version of the editor. More specifi-
+                                                              cally, the aim of the evaluation was twofold: first, our
+                                                              purpose was to test the usefulness of different combina-
+                                                              tions of the predictive algorithms regarding how easy it
+                                                              is, from the user’s point of view, to find the next pic-
+4.2 POS colour shortcuts
+                                                              togram to be used when composing a message; second,
+                                                              we intended to evaluate how the predictive algorithms
+Every user of mobile phones knows that predictive in-
+                                                              help the users to improve their effectiveness and effi-
+put systems and orthographic correctors can sometimes
+                                                              ciency to complete a task in terms of the time required
+be persistent in providing incorrect or unwanted op-
+                                                              to carry it out. Additionally, at this stage of the devel-
+tions. This is a risk that may also affect the predictive
+                                                              opment, we were also interested in assessing the inter-
+solutions we are considering. To help the user override
+                                                              action and usability of the editor in order to improve
+the predictive functionalities in certain cases, the appli-
+                                                              them in the final version of the editor. In the following
+cation includes the functionality for POS colour short-
+                                                              subsections we describe the conditions under which we
+cuts. Colour shortcuts are invoked from the vertical bar
+                                                              have conducted this evaluation, including the descrip-
+with the POS colours of ARASAAC that appears to the
+                                                              tion of the participants, the materials and the method,
+left of the pictogram selection box (explained in Section
+                                                              along with the results we have obtained.
+System Description). When a given colour is pressed
+on this bar, the pictograms matching the chosen colour
+are shifted to the first positions of the pictogram selec-    5.1 Participants
+tion box. This allows the user to override the prediction
+based on pictogram colour categories when it does not         Our objective was for the editor to be used to improve
+match his intentions.                                         the communication between children with autism and
+    This has proven to be very useful, possibly due to        their family and teachers. As stated by Hervás et al.
+the fact that pictogram communication does not fol-           (2019), it is usually difficult to work with users with
+low rules of syntactic sequencing of pictogram types as       cognitive disabilities. The problem is not only that these
+rigidly as natural language.                                  users may face extra difficulties to express their needs
+
+===== PDF PAGE 9 / 17 =====
+Predictive Composition of Pictogram Messages for Users with Autism                                                      9
+
+
+or desires, but also that they may not be available          completely untrained, so that we can test how well the
+to be involved during such complex and usually long          algorithms work from scratch.
+processes. Therefore, it is important to employ user-
+centered methodologies that rely less on the availability
+of these users and can take advantage of other stake-        5.3 Methods and Tasks
+holders, such as experts, caregivers or tutors, who can
+                                                             In order to test the editor, the task to be carried out
+act as their proxies. One of the stakeholders who has
+                                                             has been to reproduce the assembly that takes place in
+helped us define the requirements under which the edi-
+                                                             the class each day for over five weeks. We have used
+tor should work is a teacher in a school for children with
+                                                             different configurations for each week, so that we were
+autism spectrum disorders. The children this teacher
+                                                             able to test which combination of features worked best.
+works with have different ages, but they all have a low
+                                                             Although the evaluation has been done with only one
+cognitive level and severe communication difficulties.
+                                                             expert, it has been performed in a real-life scenario,
+For this reason the evaluation was not carried out di-
+                                                             and the number of pictograms employed is quite high
+rectly with the children, but with the teacher since, in
+                                                             (around 300) and therefore significant from the point
+her own words “they find the tablets amusing, but they
+                                                             of view of pictogram prediction.
+are still not able to work with them”. Therefore, the
+target subject of this evaluation has been a teacher of
+                                                             5.3.1 Evaluation setup
+children with autism spectrum disorder, female, around
+30 years old, familiar with the use of tablet devices and
+                                                             The features that could be turned on and off were the
+skilled in the use of other applications based on pic-
+                                                             ones explained in Section Specific Functionalities: the
+tograms.
+                                                             use of the prediction based on the frequency of use of
+                                                             the pictograms, the use of the prediction based on the
+                                                             POS colour category of the next pictogram to be used
+5.2 Materials                                                and the colour buttons that can be used as shortcuts
+                                                             to show the pictograms with that colour. Our initial
+Every day, when the children arrive to school, they          hypothesis, in order not to make the evaluation unnec-
+gather in an assembly in class where the teacher ex-         essarily long, was that the frequency based prediction
+plains to them what they are going to do that day. The       improves the results obtained if no prediction is used at
+structure of what they do in the assembly is always the      all. As commented in the Related Work section, several
+same, so that they can feel the situation is under con-      works have demonstrated that word prediction tech-
+trol and they do not get nervous. First, they write the      niques enhance communication rates in Augmentative
+current date and what the weather is like that morning.      and Alternative Communication (Venkatagiri 1993; An-
+After that, they write in strict order the tasks they are    son et al. 2006; Trnka et al. 2007). However, there are
+going to carry out that day (e.g. say hello, wash their      no such studies for AAC systems based on pictograms.
+hands, have lunch, and so on) and, finally, they remem-      Therefore, our hypothesis is also based on our previous
+ber the rules they have to follow in class and at school     experience working with people with cognitive impair-
+(e.g. no shouting and no fighting).                          ments, who have problems for finding and choosing the
+    The aim of the evaluation was to assess if the imple-    adequate pictogram when they have such an extensive
+mented pictogram prediction mechanisms work prop-            choice (the ARASAAC database contains more than
+erly and could be useful in real tasks involving pic-        8,500 pictograms). The special education teacher who
+togram messages, in this case, to facilitate the task of     evaluated the tool also confirmed this problem. As a
+the teacher who has to prepare lots of pictogram mate-       result, the frequency based prediction is always on, and
+rials for the class. With this objective in mind, we have    the purpose is to test what combination of the other two
+adapted the editor for the assembly with the kids: the       features provides better results once the algorithms are
+nine initial thematic classes have been substituted by       trained. This gives rise to five sets of tasks, the first one
+only four corresponding to the assembly, and the pic-        to train the algorithms and the other four to test each
+tograms in the pictogram selection box are bigger so         combination of activated or deactivated features.
+they can be more easily distinguished by the children.            The tasks to be carried out by the teacher, using
+This version of the editor has been initially loaded with    the different combinations of features, was to write all
+a set of pictograms that can be useful for the assembly,     the messages she would need for the assemblies of five
+together with a set of random pictograms that add noise      consecutive weeks, i.e. write in order the messages she
+so that the effectiveness of the learning and predictive     would need to present the date, weather, day plan and
+mechanisms can be tested. In addition, the editor is         class rules during 25 class days. We have chosen the
+
+===== PDF PAGE 10 / 17 =====
+10                                                                                                  Raquel Hervás et al.
+
+
+Table 1 Configuration of the tested functionalities for each of the five weeks used in the experiment
+
+                                                                   W1     W2     W3      W4      W5
+                 Prediction based on Pictogram Frequency of Use    ON     ON      ON     ON      ON
+                 Prediction based on POS Colour Sequencing         ON     ON      ON     OFF    OFF
+                 POS colour shortcuts                              OFF    ON     OFF     OFF     ON
+
+
+
+following configurations of the editor for each of the           Week 1. As it has been previously described, the
+five weeks (see also Table 1):                               task to be carried out this week involved the use of the
+                                                             editor with both the frequency based and POS colour
+– Week 1: since at the beginning the editor is un-           based predictions enabled. Therefore, the pictograms
+  trained, no reliable prediction can be made until the      were arranged in no particular order, and there were
+  editor has been able to gather enough data. For this       random useless pictograms in the local database to test
+  reason, we have enabled both the frequency based           the utility of the training.
+  prediction and the POS colour based prediction, so             When writing the date for the first day, the pic-
+  that both models can be trained. The POS colour            tograms the teacher needs are scattered through the
+  shortcuts have been disabled here so that we can           first four screens, so she has to scroll up and down sev-
+  establish a baseline about the number of clicks the        eral times in order to find the ones she is looking for
+  user needed to write the messages. In addition, the        (four pictograms for the week day, month day, month
+  results for this week can also be used as a baseline       and year). The same happens with the weather. When
+  for the effectiveness of the prediction algorithms,        composing the message for the day plan, where she uses
+  since we can compare the results of using a trained        12 different pictograms, the system shows them accord-
+  model against the results of using the initial un-         ing to their colour: orange (nouns), pink (social ), yellow
+  trained model.                                             (proper nouns) and green (verbs), but as she starts us-
+– Week 2: once the models are partially trained, the         ing them the system already arranges them according
+  messages to be written in this week had all the fea-       to their use. As is turns out, most of the pictograms she
+  tures on (both predictive algorithms and the POS           needs are orange (nouns), so all the orange pictograms
+  colour shortcuts), which is supposed to be the most        remain in the first screen. Finally, she composes the
+  effective configuration to help the user.                  message to write the rules, and she explains that the
+– Week 3: in this week we used the same configura-           rules are always the same, so she will not need to write
+  tion as in the first week, so that we can compare how      this message for the rest of the evaluation.
+  this configuration works with and without a trained            After finishing the first day, she proceeds with the
+  system.                                                    messages for the second day, and then for the third.
+– Week 4: for this week, both the POS colour based           When writing the date for the third day, the month
+  prediction and the POS colour shortcuts are dis-           and year are already situated in the first row of the
+  abled, so that we can test how well the frequency          first screen, so she does not have to scroll down to
+  based prediction works alone with a trained model.         look for them to compose the message. She then com-
+– Week 5: finally, we tested the system with only            pletes the messages for the third and fourth days, and
+  the POS colour based prediction disabled, so that          when composing the messages for the fifth day it is
+  we could check whether this feature effectively helps      already obvious that the system is arranging the pic-
+  the user to edit the messages or not.                      tograms according to their use, so most of the pic-
+                                                             tograms she needs, which are orange (nouns), are al-
+                                                             ready situated in the first screen and she does not need
+5.4 Evaluation execution                                     to scroll down to find them. The exception for this are
+                                                             the pictograms to say “hello” and “goodbye”, which
+The evaluation took place in the school where the teacher    belong to a different category (pink - social ) and the
+works, when the children were not in the class. She was      pictogram for “work”, which also belongs to a different
+provided with a tablet with the editor and the evalua-       category (green - verbs).
+tion was recorded so that all the process could be subse-        After finishing the messages for this week, which has
+quently analysed. After the evaluation, the teacher was      taken her 19 minutes, we have been able to see that the
+asked to fill in a questionnaire rating different aspects    system behaviour has been evolving with use, so that
+of the editor and providing feedback about its features.     after a while the most frequently used pictograms have
+
+===== PDF PAGE 11 / 17 =====
+Predictive Composition of Pictogram Messages for Users with Autism                                                  11
+
+
+started to appear in the first screen, which has allowed        This week the task is completed in slightly less than
+the teacher not to scroll so much as the she had to          8 minutes, in contrast with the 19 minutes that were
+do during the first two days. However, we have also          required the first week using the same configuration.
+been able to see that the POS colour based prediction            Week 4. This time, only the frequency based pre-
+tends to move to the first screen some pictograms of         diction is active, so no help is provided regarding the
+the appropriate colour which, in turn, are never used to     POS colour of the pictograms. Therefore, pictograms of
+compose messages (e.g. “comic book” or “birthday”).          all the colours are initially present in the first screen.
+   Week 2. For the task to be carried out this week, all     The date and the weather, again, are created smoothly,
+the mechanisms designed to assist the user have been         with the necessary pictograms appearing in the first
+enabled, so the teacher can count on the frequency and       screen of the editor. Most of the pictograms needed for
+POS colour based prediction, in addition to the short-       the first day are in the first screen, except for the one
+cut buttons to select the pictograms by colour (in case      for “eTwinning”. Even “hello” and “goodbye” are in
+they are not in the first screen).                           the first screen, since they are promoted by the fre-
+   The date and weather are created smoothly, with           quency of use and are not penalized for not having the
+no remarkable differences with the ones of the previous      appropriate colour. The same effect can be appreciated
+week. When having to create the day plan, she selects        during the second, third and fourth days, when only one
+the pink colour (social ) in order to find the pictogram     pictogram each day have to be found in other screens
+corresponding to “hello”, which is not visible, and then     (namely “library”, “handicraft” and “dog therapy”, re-
+returns to the first screen.                                 spectively). Regarding the fifth day, all the pictograms
+                                                             are placed in the first screen.
+    The pictograms for the first day of this week can all
+be found in the first screen, except for a yellow (proper        The time taken to complete the task this time is 6
+nouns) one (corresponding to the “eTwinning” activity,       minutes, which suggests that the frequency based pre-
+an initiative of the European Commission that aims to        diction may work better when not complemented by
+encourage European schools to collaborate using Infor-       the colour based prediction.
+mation and Communication Technologies (ICT)) which                Week 5. The configuration used this week adds the
+is in the third screen. After doing this, the POS colour     POS colour shortcut buttons to the frequency based
+based prediction suggests the use of a pink (social )        prediction. Once more, the date and weather messages
+pictogram, situating them in the first row of the first      are created smoothly. As for the day plans, during the
+screen, which was learnt during the previous week. Dur-      first day, all the pictograms are located in the first
+ing the rest of the days the editor behaves accordingly,     screen, except for the “eTwinning” one, which is eas-
+so most of the needed pictograms are already in the first    ily found touching the yellow button. In the second day,
+screen, except for one on the second day (“library”) and     only the “goodbye” pictogram is not present in the first
+another one the fourth day (“work”).                         screen, and is also easily located using the pink short-
+    The time needed to compose all the messages for          cut. In the third day it is the “handicraft” pictogram
+this second week has been 9 minutes, which is remark-        which has to be looked for using the POS colour short-
+ably shorter than the time used for the previous week.       cut. Even so, the pictogram is not placed in the first
+                                                             screen because other pictograms have a higher priority,
+    Week 3. The configuration used this week is the
+                                                             so the teacher has to scroll down to the second screen
+same one used in the first week, although this time the
+                                                             in order to locate it. During the fourth day, she needs
+editor is already trained. For all the days of this week,
+                                                             to use the orange shortcut to locate “dog therapy” and
+the date and the weather are composed easily. Regard-
+                                                             the green one to locate “work”. As for the fifth day,
+ing the day plans, everything works just like the pre-
+                                                             all the pictograms she needs can be found in the first
+vious week, but the pictograms for “hello”, “goodbye”
+                                                             screen.
+and “eTwinning” are never placed in the first screen,
+so the teacher always needs to look for them. In addi-          The time needed for the task this week is again 6
+tion, in the fourth day she also needs to look for the       minutes, which seems to confirm that the colour based
+pictogram for “work”, which is green (verbs) and is not      prediction, which has not been used this week, may
+placed in the first screen because, in general, an orange    make the task a little less efficient.
+(nouns) pictogram is followed by another orange pic-            Figs. 6 and 7 show a comparison of the distribution
+togram instead of a green one, so the POS colour based       of pictograms in the screen before and after training
+prediction does not help here, and the frequency based       (weeks 1 and 5, respectively). In both cases the sen-
+prediction prioritizes other pictograms rather than this     tence to be composed for Monday is the same (shown
+one.                                                         in Fig. 8), so it is easy to compare how the prediction
+
+===== PDF PAGE 12 / 17 =====
+12                                                                 Raquel Hervás et al.
+
+
+
+
+Fig. 6 Distribution of pictograms at the beginning of week 1
+
+
+
+
+Fig. 7 Distribution of pictograms at the beginning of week 5
+
+
+
+
+Fig. 8 Example of assembly message for Mondays of weeks 1 and 5.
+
+===== PDF PAGE 13 / 17 =====
+Predictive Composition of Pictogram Messages for Users with Autism                                                       13
+
+
+is positioning almost all the required pictograms in the         5.5.1 Quantitative Results
+first screen in week 5.
+                                                                 In Table 2 we can see some numeric data obtained from
+                                                                 the evaluation tasks performed during each week.
+5.4.1 Questionnaire                                                   The first three rows show the configuration of the
+                                                                 editor for each one of the weeks as in Table 1, where
+After running the evaluation, the teacher was asked to           the different combinations of options we have used are
+fill in a questionnaire in order to rate different aspects       set as ON/OFF.
+of the editor.
+                                                                      The row “Number of pictograms used” refers to the
+     The first set of questions was intended to evaluate         number of pictograms that have been used to compose
+the user interface of the editor. All in all, the user is        the class plan during the whole week, taking into ac-
+highly satisfied with the user interface of the applica-         count that many of these pictograms are used every
+tion, although she suggests increasing the size of the           day. The number of pictograms used each day ranges
+pictograms can make it easier to find them in the screen.        from 11 to 13, giving a total that ranges between 61
+     The second set of questions is aimed at rating the          and 63 pictograms per week.
+functionality of the editor, where her opinion is that, in
+                                                                      Out of these pictograms, the next row of the table
+general, the predictive algorithms make it really easy to
+                                                                 shows the number and percentage of them that could
+compose the messages, in comparison with other pic-
+                                                                 be found in the first screen of the editor. It is inter-
+togram editors she has used that do not provide this
+                                                                 esting to see that this number increases significantly
+functionality. The teacher also considered that the tool
+                                                                 when the POS colour based prediction is turned off in
+could be useful for users with autism that require pic-
+                                                                 weeks 4 and 5. In contrast, the number of pictograms
+tograms to communicate, although not directly for her
+                                                                 that can be found in the first row stabilizes around the
+class as her children have a very low cognitive level.
+                                                                 third week, when the POS colour based prediction is
+However, for users with medium and high cognitive lev-
+                                                                 still turned on. The difference in the percentages of
+els it would be a great help when working with big
+                                                                 pictograms in the first screen corresponds to an aver-
+amounts of pictograms as is usually the case.
+                                                                 age of two pictograms per day, usually the ones needed
+     The next set of questions evaluates her satisfaction        to say “hello” or “eTwinning”. When the POS colour
+with the effectiveness and efficiency to complete the            based prediction is used, these two pictograms, which
+tasks of the evaluation using the editor. Again, her im-         are green (verbs) and yellow (proper nouns), usually
+pression is that it has been easy to complete the tasks          come after an orange (nouns) pictogram, but the POS
+although it is difficult to compare the use of the editor        colour based prediction gives a higher priority to an
+against doing it manually, since the process, in her opin-       orange pictogram being used after another orange pic-
+ion, is completely different. However, she appreciates           togram, since this is what usually happens when com-
+the possibility to save and share the created messages,          posing the messages for the class plan. Therefore, all
+since that way she can prepare the assembly beforehand           the orange pictograms are placed before the green and
+and it may allow her to carry out other activities with          yellow ones, thus causing green and yellow pictograms
+the children during the assembly.                                to be out of the first screen. When only the frequency
+     As for the usability of the application, she is satisfied   based prediction is used, the orange pictograms that are
+with the way in which the predictive algorithms help             scarcely used are given less priority, thus disappearing
+her write the messages, and she is willing to use the            from the first screen and leaving enough free space for
+editor for other tasks than just preparing the assembly,         the others to be situated there.
+such as general communication with the kids, learning                 In contrast, the pictograms with different colour than
+new vocabulary or practicing reading.                            orange (nouns) are used less frequently than the or-
+     Finally, when asked about her satisfaction with the         ange ones and so the number of “Pictograms in the
+general use of the editor, she scores the maximum punc-          first row” remains stable even though the POS colour
+tuation in all questions about the interface, functional-        based prediction is turned off, since the first row is oc-
+ities and ease of use.                                           cupied by the pictograms that are used every day and,
+                                                                 among them, the ones that have been used more re-
+                                                                 cently. In turn, this is what causes that the number of
+5.5 Results and discussion                                       “Pictograms in the first position” is so low until it goes
+                                                                 down to 0.
+We have divided the results obtained into two different               When the POS colour based prediction is turned on,
+parts: quantitative and qualitative results.                     the row “Pictogram colour first” shows the number of
+
+===== PDF PAGE 14 / 17 =====
+14                                                                                                       Raquel Hervás et al.
+
+
+Table 2 Complete results obtained from the evaluation
+
+                                                               W1         W2         W3          W4           W5
+       Prediction based on Pictogram Frequency of Use          ON         ON          ON         ON            ON
+       Prediction based on POS Colour Sequencing               ON         ON          ON         OFF          OFF
+       POS colour shortcuts                                    OFF        ON         OFF         OFF           ON
+       Number of pictograms used                                61         62         63          63           63
+       Pictograms in first screen                         34 (56%)      47 (76%)   48 (76%)    57 (90%)     57 (90%)
+       Pictograms in first row                            24 (39%)      36 (58%)   40 (63%)    40 (63%)     40 (63%)
+       Pictograms in first position                           3 (5%)     2 (3%)     0 (0%)         -            -
+       Pictogram colour first                             43 (70%)      49 (79%)   48 (76%)     0 (0%)       0 (0%)
+       Pictogram among first 5 of its colour              19 (31%)      38 (61%)   38 (60%)    38 (60%)     38 (60%)
+       First pictogram of its colour                          6 (10%)   12 (19%)   13 (21%)    13 (21%)     13 (21%)
+       Time needed                                            19 min.    9 min.     8 min.      6 min.       6 min.
+
+
+
+pictograms that have been used when the pictograms of            during the evaluation itself and while analysing the re-
+their colour were placed on top of the rest of the colours,      sults.
+meaning that the colour based prediction guesses cor-                The first interesting result is that, in contrast to
+rectly the colour of the pictogram that comes next.              what we expected, the POS colour of the pictograms
+     Since not all the pictograms of the same POS colour         was not especially relevant for the evaluator. The design
+fit into one screen, the rows “Pict among first 5 of its         of the ARASAAC pictograms made us expect that con-
+colour” and “First pictogram of its colour” show how             sidering the POS colour categories they represent would
+many selected pictograms are placed among the first              be of use in the editor, but as the evaluator showed us,
+ones with the same colour, which makes it easier to              the fact that her students have a low cognitive level and
+find them. The proportion for both rows doubles af-              their lack of ability to communicate with other people
+ter the first week and then remains stable, showing the          makes this feature a secondary one. In addition, the
+same influence of the frequency based prediction over            way of constructing the messages, using concepts more
+the colour based prediction that we could observe with           than sentences, made the categories other than nouns
+the pictograms in the first screen and in the first row.         be of scarce relevance, which, in turn, caused the POS
+     The last row shows the time needed by the evaluator         colour based prediction to be of little use in this con-
+to perform the tasks assigned for each week, reinforcing         text. This does not discard this feature as one to be
+the intuition that we got with the previous results show-        taken into account, but its use must be further tested
+ing that the required time decreases when the system             in other contexts where messages using pictograms are
+is already trained and the POS colour based prediction           effectively built using sentences instead of a succession
+is turned off.                                                   of concepts or events.
+     This suggests that a different kind of prediction is            In terms of the interaction with the editor, there are
+to be used in conjunction with the POS colour based              two more facts that have drawn our attention with re-
+prediction if we intend to take advantage of the colour          spect the way in which the prediction works. The first
+of a pictogram to predict the next one to be used, since,        of them is the fact that the evaluator expected to find
+as we can see in the table, the percentage of pictograms         the pictograms in the same place she found them when
+found in the first position of the screen is really low, as      she used them for the first time. Therefore, she was
+well as in the first position of its colour.                     initially puzzled when the pictograms were in a differ-
+                                                                 ent screen and so she had to look for them in a different
+                                                                 place, taking longer to finish the searched pictograms in
+5.5.2 Qualitative Results                                        certain cases. This effect dimmed when the prediction
+                                                                 algorithms placed the pictograms in the first screen, so
+In addition to the results obtained from the analysis of         they could be found at first glance, but otherwise the
+the interaction of the evaluator with the application,           users are a bit lost until the behaviour of the editor
+a handful of valuable insights have also been acquired           stabilizes. The other one has to do with the implicit or-
+
+===== PDF PAGE 15 / 17 =====
+Predictive Composition of Pictogram Messages for Users with Autism                                                        15
+
+
+der that some pictograms may have among them. This             with the evaluator requiring a significantly lower time
+could be seen when the evaluator had to write the date         (up to three times less) to write the pictogram messages
+at the beginning of each day. In this case, the days of        when the system had learned during the process. This
+the week, of the month, the months and the years al-           result is in line with other works on word prediction.
+ready have a numerical order, so changing this order
+to prioritize the frequency of use made the pictograms
+                                                                   Due to the low cognitive level and communication
+be unsorted, thus making it a little more difficult to
+                                                               problems of her students, it has not been possible to
+find them, even if they were in the first screen. Conse-
+                                                               test the tool directly with the children. However, we
+quently, in these cases it may be more suitable to try
+                                                               have contacted some associations, like Confederación
+to keep the implicit order of the pictograms, at least
+                                                               Autismo España, which work with a great number of
+within each screen of the editor.
+                                                               users on the autism spectrum, in order to validate the
+    Additionally, when using the frequency based pre-
+                                                               application with end users. This kind of evaluation is
+diction, the most commonly used pictograms tend to be
+                                                               quite complex, so we plan to rely on validated user ex-
+moved to the first places of the list of pictograms. How-
+                                                               perience questionnaires. However, when working with
+ever, when a pictogram is used, the probability of using
+                                                               users with disabilities, it is important to be able to ad-
+it again in the same message is almost 0, so moving it
+                                                               just these questionnaires to the difficulties of the user,
+to the first positions may not be the most suitable de-
+                                                               so we will explore flexible solutions like the UEQ+ frame-
+cision. Since the most frequently used pictograms usu-
+                                                               work (Schrepp and Thomaschewski 2019) and short
+ally fitted in the first screen, the effect of this decision
+                                                               questionnaires like UEQ-S (Schrepp et al. 2017).
+was not noticeable, but a combination with an n-grams
+based prediction may provide a more effective sugges-
+tion for the next pictogram to use.                                Some lines of future work are open to improve the
+                                                               tool. From the point of view of the frequency and POS
+                                                               colour based prediction mechanisms, we could explore
+6 Conclusions and Future Work                                  the use of more complex n-grams like bigrams and tri-
+                                                               grams. Especially in the case of POS colour prediction,
+In this paper we have presented PictoEditor, an Aug-
+                                                               where the results obtained in the evaluation have shown
+mentative and Alternative Communication application
+                                                               that sometimes it is not very useful, we would test if the
+for composing messages in pictograms, aimed at facil-
+                                                               storage of more complex colour patterns (i.e. orange-
+itating social communication directed at users on the
+                                                               green-orange) could improve the prediction results. The
+autism spectrum. The main novelty of this tool is the
+                                                               application could also be improved by introducing con-
+use of prediction techniques in order to lessen the bur-
+                                                               text awareness, so depending on the place where the
+den of finding the desired pictograms among a high
+                                                               user is using the tool, or the task he is performing,
+number of choices. In order to assess the support of-
+                                                               the system could adapt to offer the most suitable pic-
+fered by the tool, we have evaluated three different
+                                                               tograms (Alegre-Ibarra et al. 2018). Finally, an interest-
+functionalities for facilitating composition of pictogram
+                                                               ing addition could be the search of pictograms by name.
+messages. The results show that prediction based on
+                                                               This would obviously be the quickest way of finding a
+sequencing of syntactic categories of pictogram is not
+                                                               pictogram, but we must take into account that most
+as important as expected, but the combination of pre-
+                                                               users of this kind of tools are not able to use conven-
+diction based on pictogram frequency and POS colour
+                                                               tional language, so such a functionality would be more
+shortcuts are enough to present the most likely pic-
+                                                               oriented to teachers or family who rely on the tool when
+tograms to the user after some usage.
+                                                               working with final users.
+    From the point of view of its final users, PictoEditor
+is able to adapt to each person as the prediction statis-
+tics are learnt while the tool is used. This is very prac-
+tical from the point of view of the final users. Whereas       Acknowledgements The work presented in this paper has
+most applications are configured with general profiles of      been partially funded by the projects IDiLyCo: Digital Inclu-
+                                                               sion, Language and Communication, Grant. No. TIN2015-
+users that try to cover all possibilities for a specific im-   66655-R (MINECO/FEDER) and InVITAR-IA: Infraestruc-
+pairment, in fact capabilities and individual preferences      turas para la Visibilización, Integración y Transferencia de
+will surely not be the same for two different people even      Aplicaciones y Resultados de Inteligencia Artificial, UCM
+if the share the same disability.                              Grant. No. FEI-EU-17-23. The pictograms used in this work
+                                                               are a property of Gobierno de Aragón and have been cre-
+    The evaluation has been performed with a teacher of        ated by Sergio Palao for ARASAAC (http://arasaac.org).
+children with autism spectrum disorder. From the point         The pictograms are distributed under the Creative Commons
+of view of the prediction, the results were very good,         license (BY-NC-SA).
+
+===== PDF PAGE 16 / 17 =====
+16                                                                                              Raquel Hervás et al.
+
+
+References                                                   nications (HFT’95), pp 131–138
+                                                           Garcia L, de Oliveira L, de Matos D (2014) Word and
+Alegre-Ibarra U, Augusto JC, Evans C (2018) Perspec-         sentence prediction: Using the best of the two worlds
+  tives on engineering more usable context-aware sys-        to assist aac users. Technology and Disability 26(2,
+  tems. Journal of Ambient Intelligence and Human-           3):79–91
+  ized Computing 9(5):1593–1609                            Garcia LF, Oliveira LCD, Matos DMD (2015) Measur-
+Allen M, Leung R, McGrenere J, Purves B (2008) In-           ing the performance of a location-aware text predic-
+  volving domain experts in assistive technology re-         tion system. ACM Trans Access Comput 7(1):2:1–
+  search. Universal Access in the Information Society        2:29, DOI 10.1145/2739998
+  7(3):145–154                                             Garcia LF, de Oliveira LC, de Matos DM (2016) Eval-
+Allsop M (2010) Involving children in the design of          uating pictogram prediction in a location-aware aug-
+  healthcare technology. PhD thesis, U. of Leeds             mentative and alternative communication system.
+Alonso-Virgos L, Pascual Espada J, Rodrı́guez Baena          Assistive Technology 28(2):83–92
+  L, Crespo RG (2018) Design specific user interfaces      Garcı́a P, Lleida E, Castán D, Marcos JM, Romero D
+  for people with down syndrome using suitable wcag          (2015) Context-aware communicator for all. In: Inter-
+  2.0 guidelines. Journal of Ambient Intelligence and        national Conference on Universal Access in Human-
+  Humanized Computing 9(5):1359–1374                         Computer Interaction, pp 426–437
+Ameen S, Vadera S (2017) A convolutional neural net-       Gea M, Rodrı́guez M, Rodrı́guez M, Medina N, López-
+  work to classify American Sign Language finger-            Cózar R, Paderewski P, Gutiérrez F (2006) Adaptive
+  spelling from depth and colour images. Expert Sys-         and context-aware hypermedia model for users with
+  tems 34, DOI 10.1111/exsy.12197                            communication disabilities. In: Navarro-Prieto R, Vi-
+Anson D, Moist P, Przywara M, Wells H, Saylor H,             dal JL (eds) HCI related papers of Interacción 2004,
+  Maxime H (2006) The effects of word completion and         Springer Netherlands, Dordrecht, pp 19–28
+  word prediction on typing rates using on-screen key-     Hervás R, Francisco V, Méndez G, Bautista S (2019)
+  boards. Assistive Technology 18(2):146–154                 A user-centred methodology for the development of
+Arnott JL, Newell AF, Alm N (1992) Prediction and            computer-based assistive technologies for individuals
+  conversational momentum in an augmentative com-            with autism. In: Lamas D, Loizides F, Nacke L, Petrie
+  munication system. Communications of the ACM               H, Winckler M, Zaphiris P (eds) Human-Computer
+  35(5):46–57                                                Interaction – INTERACT 2019, Springer Interna-
+Baldassarri S, Peña P, Cerezo E, Marco J (2014a) Es-        tional Publishing, Cham, pp 85–106
+  tado del arte en sistemas de comunicación alternativa   Higginbotham DJ, Bisantz AM, Sunm M, Adams K,
+  y aumentativa. AUTI: Aplicaciones y Usabilidad de          Yik F (2009) The effect of context priming and
+  Televisión Digital Interactiva.                           task type on augmentative communication perfor-
+Baldassarri S, Rubio JM, Azpiroz MG, Cerezo E                mance. Augmentative and Alternative Communica-
+  (2014b) Araboard: A multiplatform alternative and          tion 25(1):19–31
+  augmentative communication tool. Procedia Com-           Holone H, Herstad J (2013) Three tensions in partic-
+  puter Science 27:197–206                                   ipatory design for inclusion. In: Proceedings of the
+Bautista S, Hervás R, Hernández-Gil A, Martı́nez-Dı́az     SIGCHI Conference on Human Factors in Comput-
+  C, Pascua S, Gervás P (2017) Aratraductor: Text           ing Systems, ACM, CHI ’13, pp 2903–2906
+  to pictogram translation using natural language pro-     Keay-Bright W (2007) The reactive colours project:
+  cessing techniques. In: Proc. of the 18th Intl. Conf.      demonstrating participatory and collaborative design
+  of the Spanish HCI Association (Interacción 2017)         methods for the creation of software for autistic chil-
+Frauenberger C, Good J, Keay-Bright W (2011) De-             dren. Design – Principles & Practices 1(2):7–15
+  signing technology for children with special needs:      Khari M, Garg AK, Crespo RG, Verdú E (2019) Ges-
+  bridging perspectives through participatory design.        ture Recognition of RGB and RGB-D Static Images
+  CoDesign 7(1):1–28                                         Using Convolutional Neural Networks. International
+Garay-Vitoria N, Abascal J (2006) Text prediction sys-       Journal of Interactive Multimedia and Artificial In-
+  tems: a survey. Universal Access in the Information        telligence 5(7):22–27
+  Society 4(3):188–203                                     Kientz JA, Hayes GR, Westeyn TL, Starner T, Abowd
+Garay-Vitoria N, Abascal J, Urigoitia-Bengoa S (1995)        GD (2007) Pervasive computing and autism: Assist-
+  Application of the human conversation modelling in         ing caregivers of children with special needs. IEEE
+  a telephonic aid. In: Proceedings of the 15th Interna-     Pervasive Computing 6(1):28–35
+  tional Symposium on Human Factors in Telecommu-
+
+===== PDF PAGE 17 / 17 =====
+Predictive Composition of Pictogram Messages for Users with Autism                                                17
+
+
+Kim G, Park J, Han M, Park S, Ha S (2009) Context-           Schrepp M, Hinderks A, Thomaschewski J (2017)
+  aware communication support system with picto-               Design and Evaluation of a Short Version of the
+  graphic cards. In: Proceedings of the 11th Interna-          User Experience Questionnaire (UEQ-S). Interna-
+  tional Conference on Human-Computer Interaction              tional Journal of Interactive Multimedia and Arti-
+  with Mobile Devices and Services, ACM, New York,             ficial Intelligence 4(6):103–108
+  NY, USA, MobileHCI ’09, pp 86:1–86:2                       Sevilla AF, Lahoz-Bengoechea JM (2019) A different
+Koester HH, Levine S (1996) Effect of a word predic-           description of orientation in sign languages. Proce-
+  tion feature on user performance. Augmentative and           samiento del Lenguaje Natural 62:53–60
+  Alternative Communication 12(3):155–168                    Tao W, Leu MC, Yin Z (2018) American Sign Lan-
+Magnuson T, Hunnicutt S (2002) Measuring the ef-               guage alphabet recognition using Convolutional Neu-
+  fectiveness of word prediction: The advantage of             ral Networks with multiview augmentation and in-
+  long-term use. Speech, Music and Hearing Quarterly           ference fusion. Engineering Applications of Artificial
+  Progress and Status Report 3(1):57–67                        Intelligence 76:202 – 213
+Martı́n A, Hervás R, Méndez G, Bautista S (2018) Pic-      Trnka K, Yarrington D, McCoy K, Pennington C (2006)
+  tar: Una herramienta de elaboracin de contenido para         Topic modeling in fringe word prediction for aac.
+  personas con tea basada en la traducción de texto           In: Proceedings of the 11th International Conference
+  a pictogramas. In: Proceedings of the 19th Interna-          on Intelligent User Interfaces, ACM, New York, NY,
+  tional Conference on Human-Computer Interaction              USA, IUI ’06, pp 276–278
+  (Interacción 2018)                                        Trnka K, Yarrington D, McCaw J, McCoy KF, Pen-
+Mitchell M, Sproat R (2012) Discourse-based modeling           nington C (2007) The effects of word prediction on
+  for aac. In: Proc. of the Third Workshop on Speech           communication rate for aac. In: Human Language
+  and Language Processing for Assistive Technologies,          Technologies 2007: The Conference of the North
+  Association for Computational Linguistics, pp 9–18           American Chapter of the Association for Computa-
+Pahisa Sol J (2017) From telegraphic to natural lan-           tional Linguistics; Companion Volume, Short Papers,
+  guage: an expansion system in a pictogram based aac          Association for Computational Linguistics, Strouds-
+  application. PhD thesis, Departament d’Enginyeria            burg, PA, USA, NAACL-Short ’07, pp 173–176
+  de la Informaci i de les Comunicacions                     Venkatagiri H (1993) Efficiency of lexical prediction as
+Pantsar-Syväniemi S, Ervasti M, Karppinen K,                  a communication acceleration technique. Augmenta-
+  Väätänen A, Oksman V, Kuure E (2015) A situation-         tive and Alternative Communication 9(3):161–167
+  aware safety service for children via participatory de-    Verdú E, Bustelo CPG, Martı́nez MA, Crespo RG
+  sign. Journal of Ambient Intelligence and Humanized          (2017) A System to Generate SignWriting for Video
+  Computing 6(2):279–293                                       Tracks Enhancing Accessibility of Deaf People. Inter-
+Pouplin S, Robertson J, Antoine JY, Blanchet A,                national Journal of Interactive Multimedia and Arti-
+  Kahloun JL, Volle P, Bensmail D (2014) Effect of             ficial Intelligence 4(6):109–115
+  a dynamic keyboard and word prediction systems on          Wiegand K, Patel R (2012) Non-syntactic word pre-
+  text input speed in patients with functional tetraple-       diction for aac. In: Proceedings of the Third Work-
+  gia. Journal of rehabilitation research and develop-         shop on Speech and Language Processing for As-
+  ment 51(3):467–480                                           sistive Technologies, Association for Computational
+van Rijn H, Stappers PJ (2008) Expressions of own-             Linguistics, pp 28–36
+  ership: motivating users in a co-design process. In:
+  Proc. of the Tenth Anniversary Conf. on Participa-
+  tory Design 2008, Indiana University, pp 178–181
+San-Segundo R, Montero JM, Córdoba R, Sama V,
+  Fernández F, D’Haro LF, López-Ludeña V, Sánchez
+  D, Garcı́a A (2012) Design, development and field
+  evaluation of a Spanish into sign language trans-
+  lation system. Pattern Analysis and Applications
+  15(2):203–224
+Schrepp M, Thomaschewski J (2019) Design and Vali-
+  dation of a Framework for the Creation of User Expe-
+  rience Questionnaires. International Journal of Inter-
+  active Multimedia and Artificial Intelligence 5(7):88–
+  95
