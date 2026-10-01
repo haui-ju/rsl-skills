@@ -1,0 +1,10 @@
+{"orden":11,"id":"R021","decision":"PODRIA","criterios":["CI4"],"motivo":"Scoping AI e interacción neurodiversidad; sin foco explícito fases SDLC software.","fuente":"grafo"}
+{"orden":12,"id":"R022","decision":"NO","criterios":["CI4"],"motivo":"Marco cualitativo e-learning inclusivo; sin artefacto evaluado ni fase SDLC.","fuente":"grafo"}
+{"orden":13,"id":"R023","decision":"SI","criterios":["CI3","CI4"],"motivo":"MDE más LLM genera interfaces accesibles; diseño, modelado e implementación evaluados.","fuente":"grafo"}
+{"orden":14,"id":"R024","decision":"SI","criterios":["CI3","CI4"],"motivo":"IA apoya diseño UI neurodivergent-friendly en desarrollo de sistemas TI.","fuente":"grafo"}
+{"orden":15,"id":"R026","decision":"PODRIA","criterios":["CI4"],"motivo":"SLR LLM en accesibilidad web y workflows desarrollo; población neurodivergente no acotada.","fuente":"grafo"}
+{"orden":16,"id":"R029","decision":"SI","criterios":["CI4"],"motivo":"COGASet: dataset y marco evaluación/testing accesibilidad cognitiva contenido LLM.","fuente":"grafo"}
+{"orden":17,"id":"R031","decision":"SI","criterios":["CI3","CI4"],"motivo":"Framework TDAH con system design, requisitos y ML human-in-the-loop productividad.","fuente":"grafo"}
+{"orden":18,"id":"R032","decision":"NO","criterios":["CI3","CI4"],"motivo":"AR+IA guía electrodomésticos; cognición leve genérica, no SDLC ni población PICOC.","fuente":"grafo"}
+{"orden":19,"id":"R038","decision":"PODRIA","criterios":["CI4"],"motivo":"Prototipo SummaryLens NLP; menciona dislexia pero no IA en ciclo SDLC.","fuente":"grafo"}
+{"orden":20,"id":"R044","decision":"NO","criterios":["CE3","CI4"],"motivo":"Compara LLM para contenido educación TEA; tutoría, no artefacto software SDLC.","fuente":"grafo"}
