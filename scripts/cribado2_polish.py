@@ -23,7 +23,7 @@ HASH_RE = re.compile(r"<!-- cribado2:hash=([0-9a-f]+) -->")
 COL_OK = "¿Se acepta?"
 COL_WHY1 = "Justificación cribado 1"
 COL_WHY2 = "Justificación cribado 2"
-NOT_EVAL = "No evaluado en cribado 2."
+SHADOW_JSONL = "cribado-2.shadow.jsonl"
 
 MERIT = frozenset({"SI", "PODRIA", "NO"})
 RELLENO_LEVE = "RELLENO-LEVE"
@@ -313,14 +313,70 @@ def cmd_polish_report(theme: Path, corpus: Path, folder: Path, root: Path) -> in
     lines.append("")
     dest = corpus / EVAL_MD
     dest.write_text("\n".join(lines), encoding="utf-8")
+    shadow_path = folder / SHADOW_JSONL
+    shadow_path.write_text(shadow_lines(decisions, h, rel(corpus, root)), encoding="utf-8")
     return ok(
-        f"{rel(dest, root)} ({len(decisions)} decisiones, hash {h})",
+        f"{rel(dest, root)} + {rel(shadow_path, root)} ({len(decisions)} decisiones, hash {h})",
         f"revisa el informe; luego Usa rsl-cribado-2-aplicar sobre {rel(theme, root)}/",
     )
 
 
 def csv_accept(decision: str) -> str:
     return "SI" if decision in ACCEPT_TIERS else "NO"
+
+
+def shadow_lines(decisions: list[dict], h: str, corpus_rel: str) -> str:
+    lines = [
+        json.dumps(
+            {"_meta": {"hash": h, "corpus": corpus_rel, "stage": "cribado-2"}},
+            ensure_ascii=False,
+        )
+    ]
+    for d in sorted(decisions, key=lambda x: x.get("orden", 0)):
+        lines.append(
+            json.dumps(
+                {
+                    "id": d["id"],
+                    "orden": d.get("orden"),
+                    "decision": d.get("decision"),
+                    "acepta": csv_accept(d.get("decision", "NO")),
+                    "criterios": d.get("criterios") or [],
+                    "motivo": (d.get("motivo") or "").strip(),
+                },
+                ensure_ascii=False,
+            )
+        )
+    return "\n".join(lines) + "\n"
+
+
+def load_shadow(folder: Path) -> tuple[dict[str, dict], str | None]:
+    p = folder / SHADOW_JSONL
+    if not p.is_file():
+        return {}, None
+    raw = [ln for ln in p.read_text(encoding="utf-8").splitlines() if ln.strip()]
+    if not raw:
+        return {}, None
+    meta = json.loads(raw[0]).get("_meta") or {}
+    by_id: dict[str, dict] = {}
+    for ln in raw[1:]:
+        row = json.loads(ln)
+        if row.get("id"):
+            by_id[row["id"]] = row
+    return by_id, meta.get("hash")
+
+
+def cribado1_justification(row: list[str], header: list[str]) -> tuple[str, str]:
+    """Devuelve (¿Se acepta? cribado 1, justificación cribado 1) de la fila del CSV unificado."""
+    if len(header) >= 2 and header[-2] == COL_OK and header[-1] == COL_WHY1 and len(row) >= len(header):
+        return (row[-2] or "NO").strip(), (row[-1] or "").strip()
+    return "NO", ""
+
+
+def motivo_csv(text: str, fallback: str) -> str:
+    why = (text or fallback).strip()
+    if not why:
+        why = fallback
+    return why if why.endswith(".") else why + "."
 
 
 def update_prisma_eligibility(folder: Path, assessed: int, included: int, excluded: dict[str, int]) -> None:
@@ -345,6 +401,12 @@ def cmd_apply(theme: Path, corpus: Path, folder: Path, root: Path) -> int:
         return error(f"falta {rel(dec_path, root)}", f"pnpm -s cribado2:polish-report {rel(theme, root)}")
     decisions = [json.loads(l) for l in dec_path.read_text(encoding="utf-8").splitlines() if l.strip()]
     h = decisions_hash(decisions)
+    shadow_by, sh_hash = load_shadow(folder)
+    if shadow_by and sh_hash and sh_hash != h:
+        return error(
+            f"{SHADOW_JSONL} desactualizado (hash {sh_hash} ≠ {h})",
+            f"pnpm -s cribado2:polish-report {rel(theme, root)}",
+        )
     if eval_md.is_file():
         m = HASH_RE.search(eval_md.read_text(encoding="utf-8"))
         if not m or m.group(1) != h:
@@ -352,7 +414,7 @@ def cmd_apply(theme: Path, corpus: Path, folder: Path, root: Path) -> int:
                 f"{EVAL_MD} no coincide con decisiones.jsonl (hash {h})",
                 f"pnpm -s cribado2:polish-report {rel(theme, root)}",
             )
-    by_id = {d["id"]: d for d in decisions}
+    by_id = shadow_by if shadow_by else {d["id"]: d for d in decisions}
     marco = pv.dir_marco(folder / "picoc.md") or "MARCO"
     src = folder / f"resultados-{marco}-cribado-1.csv"
     if not src.is_file():
@@ -373,17 +435,17 @@ def cmd_apply(theme: Path, corpus: Path, folder: Path, root: Path) -> int:
     for row in body:
         rid = row[0] if row else ""
         d = by_id.get(rid)
+        c1_ok, c1_why = cribado1_justification(row, header)
         if d:
-            acc = csv_accept(d["decision"])
-            why = (d.get("motivo") or "").strip()
-            if not why.endswith("."):
-                why += "."
-            if acc == "NO" and d.get("criterios"):
-                for c in d["criterios"]:
+            acc = d.get("acepta") or csv_accept(d.get("decision", "NO"))
+            why = motivo_csv(d.get("motivo") or "", "Sin justificación en cribado 2.")
+            crits = d.get("criterios") or []
+            if acc == "NO" and crits:
+                for c in crits:
                     excluded_criteria[str(c)] += 1
         else:
             acc = "NO"
-            why = NOT_EVAL
+            why = motivo_csv(c1_why, "Excluido en cribado 1.")
         if acc == "SI":
             included += 1
         out_rows.append(row[: len(base_header)] + [acc, why])

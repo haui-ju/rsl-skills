@@ -41,7 +41,7 @@ For merit `NO` that could still help the project if quota needs filling: `"relle
 
 4. `pnpm -s cribado2:polish-merge docs/<slug>` → `.cribado-2/decisiones.jsonl` (merit = SI|PODRIA|NO).
 5. `pnpm -s cribado2:cuota docs/<slug>` — applies `min_rsl` on **indexed** PDFs only; promotes `NO` with `relleno.elegible`; **WARN** (not ERROR) if corpus cannot reach `min_rsl`.
-6. `pnpm -s cribado2:polish-report docs/<slug>` → `cribado-2-evaluacion.md` + hash.
+6. `pnpm -s cribado2:polish-report docs/<slug>` → `cribado-2-evaluacion.md` + hash; en `picoc/<fecha>-<MARCO>/` escribe `cribado-2.shadow.jsonl` (una línea `_meta` + una por id del corpus: `id`, `decision`, `acepta`, `motivo`, `criterios`) para `cribado2:apply` sin parsear el MD.
 7. Chat: counts by decision, cuota summary, path to evaluacion. Cierre.
 
 ## Cierre

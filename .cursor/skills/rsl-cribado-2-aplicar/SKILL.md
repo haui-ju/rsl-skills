@@ -10,10 +10,11 @@ Closes full-text screening. Only after the user has read `cribado-2-evaluacion.m
 ```text
 docs/[titulo-breve]/picoc/<fecha>-<MARCO>/
   resultados-<MARCO>-cribado-1.csv   (read)
+  cribado-2.shadow.jsonl             (read; generado por polish-report)
   prisma.json                        (eligibility + included, updated)
 docs/[titulo-breve]/RSL/picoc/<fecha>-cribado-2-<MARCO>/
-  cribado-2-evaluacion.md            (read; hash must match decisiones)
-  .cribado-2/decisiones.jsonl        (read)
+  cribado-2-evaluacion.md            (hash must match decisiones)
+  .cribado-2/decisiones.jsonl        (fallback si falta shadow)
   → picoc/resultados-<MARCO>-cribado-2.csv
 ```
 
@@ -25,8 +26,8 @@ Invoke: `Usa rsl-cribado-2-aplicar sobre docs/<slug>/`.
 - Remove the last two columns of cribado 1 (`¿Se acepta?`, `Justificación cribado 1`).
 - Append **`¿Se acepta?`** and **`Justificación cribado 2`**.
 - `¿Se acepta?` = `SI` if final decision ∈ {SI, PODRIA, RELLENO-LEVE, RELLENO-ALTO}; else `NO`.
-- Justificación = plain `motivo` from `decisiones.jsonl` (no PODRIA/relleno labels).
-- Rows without a cribado-2 decision: `NO` + «No evaluado en cribado 2.»
+- Justificación = plain `motivo` from `cribado-2.shadow.jsonl` (o `decisiones.jsonl` si no hay shadow); sin etiquetas PODRIA/relleno.
+- Filas **sin** decisión de texto completo (no están en el corpus cribado-2): `¿Se acepta?` = `NO` y **Justificación cribado 2** = la misma **Justificación cribado 1** del CSV de entrada (no usar mensaje genérico).
 
 ## Procedure
 
