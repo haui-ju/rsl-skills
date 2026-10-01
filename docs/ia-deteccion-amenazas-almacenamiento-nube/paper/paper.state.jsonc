@@ -5,21 +5,21 @@
     "encabezado": {
       "content_hash": {
         "borrador": "8f3ec7c9eb25",
-        "polish": "11a1fe24918d"
+        "polish": "e013e5503137"
       },
       "form_hash": {
         "borrador": "291a75329297",
-        "polish": "bcbad9ee7c5e"
+        "polish": "610a45736235"
       },
       "mirror_form": {
         "borrador": "48cadf1f9efb",
-        "polish": "6ca71a259617"
+        "polish": "36dc936c0a86"
       },
-      "version": "2026-09-30",
+      "version": "2026-10-01",
       "sources_hash": {
         "topic.md": "6f671506cd7e",
         "informe-polish.md": "e30676e5991b",
-        "picoc": "fa341b225e2a"
+        "picoc": "daf218dff5e4"
       },
       "status": "polished"
     },
@@ -32,7 +32,7 @@
         "borrador": "4604f0fcb7bd",
         "polish": "35d13cec277a"
       },
-      "version": "2026-09-30",
+      "version": "2026-10-01",
       "sources_hash": {
         "RSL/MD": "48cd8340c357"
       },
@@ -51,22 +51,22 @@
         "borrador": "52ea329e09ef",
         "polish": "abb47284ce04"
       },
-      "version": "2026-09-30",
+      "version": "2026-10-01",
       "sources_hash": {
-        "picoc": "fa341b225e2a"
+        "picoc": "daf218dff5e4"
       },
       "status": "polished"
     },
     "justificacion": {
       "content_hash": {
         "borrador": "7e3900c9bed8",
-        "polish": "54e71934a347"
+        "polish": "c88ec1d97065"
       },
       "form_hash": {
         "borrador": "77ecc0d9e4ec",
-        "polish": "680b76dffc4a"
+        "polish": "419763ec6aa3"
       },
-      "version": "2026-09-30",
+      "version": "2026-10-01",
       "sources_hash": {
         "informe-polish.md": "e30676e5991b"
       },
@@ -75,44 +75,122 @@
     "objetivo-rsl": {
       "content_hash": {
         "borrador": "33fd70776cc8",
-        "polish": "e3d25f4f1654"
+        "polish": "3d7a1f2c0a79"
       },
       "form_hash": {
         "borrador": "341950891123",
-        "polish": "f90c32a90734"
+        "polish": "e2b114414234"
       },
-      "version": "2026-09-30",
+      "version": "2026-10-01",
       "sources_hash": {
-        "picoc": "fa341b225e2a"
+        "picoc": "daf218dff5e4"
       },
       "status": "polished"
     },
     "organizacion": {
       "content_hash": {
         "borrador": "e64d386ef83a",
-        "polish": "eeb633a3cdba"
+        "polish": "9a80295c16d6"
       },
       "form_hash": {
         "borrador": "566bc952954a",
-        "polish": "50218192b804"
+        "polish": "9401f181cc1b"
       },
-      "version": "2026-09-30",
+      "version": "2026-10-01",
       "sources_hash": {
-        "grupos": "ae7b799633fe"
+        "grupos": "1b64046cf035"
       },
       "status": "polished"
     },
     "referencias": {
       "content_hash": {
         "borrador": "757b1f1fb9ef",
-        "polish": "45109e26e202"
+        "polish": "ac225f2a1a55"
       },
       "form_hash": {
         "borrador": "f3ecc78b4fe3",
-        "polish": "28daf6f4769b"
+        "polish": "9dfe1c6cdf69"
       },
-      "version": "2026-09-30",
+      "version": "2026-10-01",
       "sources_hash": {},
+      "status": "polished"
+    },
+    "marco-pico": {
+      "content_hash": {
+        "polish": "640475a04de1"
+      },
+      "form_hash": {
+        "polish": "a3564bc476ab"
+      },
+      "mirror_form": {
+        "polish": "7cae2803728e"
+      },
+      "version": "2026-10-01",
+      "sources_hash": {
+        "picoc": "daf218dff5e4"
+      },
+      "status": "polished"
+    },
+    "palabras-clave": {
+      "content_hash": {
+        "polish": "8381af537a2e"
+      },
+      "form_hash": {
+        "polish": "dc72b1d3134d"
+      },
+      "mirror_form": {
+        "polish": "0a32ff46e802"
+      },
+      "version": "2026-10-01",
+      "sources_hash": {
+        "picoc": "daf218dff5e4"
+      },
+      "status": "polished"
+    },
+    "ecuacion-busqueda": {
+      "content_hash": {
+        "polish": "633577c7548f"
+      },
+      "form_hash": {
+        "polish": "f29ca59b3c8c"
+      },
+      "mirror_form": {
+        "polish": "8a83daeade67"
+      },
+      "version": "2026-10-01",
+      "sources_hash": {
+        "picoc": "daf218dff5e4"
+      },
+      "status": "polished"
+    },
+    "criterios-seleccion": {
+      "content_hash": {
+        "polish": "63adc78d1515"
+      },
+      "form_hash": {
+        "polish": "ef771ca1643b"
+      },
+      "mirror_form": {
+        "polish": "3e1609306e9d"
+      },
+      "version": "2026-10-01",
+      "sources_hash": {
+        "topic.md": "6f671506cd7e",
+        "picoc": "daf218dff5e4"
+      },
+      "status": "polished"
+    },
+    "seleccion-prisma": {
+      "content_hash": {
+        "polish": "07e4d9ddb739"
+      },
+      "form_hash": {
+        "polish": "68334db4b620"
+      },
+      "version": "2026-10-01",
+      "sources_hash": {
+        "picoc": "daf218dff5e4"
+      },
       "status": "polished"
     }
   },
@@ -120,6 +198,11 @@
     "2026-09-30": {
       "from": null,
       "borrador": true,
+      "polish": true
+    },
+    "2026-10-01": {
+      "from": "2026-09-30",
+      "borrador": false,
       "polish": true
     }
   }

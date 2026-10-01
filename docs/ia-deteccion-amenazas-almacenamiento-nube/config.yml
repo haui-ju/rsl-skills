@@ -19,18 +19,18 @@ Portada:
   resumen:    off
 
 Introducción:
-  contexto:      on
-  problema:      on
-  justificacion: on
-  objetivo-rsl:  on
-  organizacion:  on
+  contexto:      frozen
+  problema:      frozen
+  justificacion: frozen
+  objetivo-rsl:  frozen
+  organizacion:  frozen
 
 Metodología:
-  marco-pico:          off
-  palabras-clave:      off
-  ecuacion-busqueda:   off
-  criterios-seleccion: off
-  seleccion-prisma:    off
+  marco-pico:          frozen
+  palabras-clave:      frozen
+  ecuacion-busqueda:   frozen
+  criterios-seleccion: frozen
+  seleccion-prisma:    frozen
   calidad:             off
   extraccion-datos:    off
   sintesis:            off
