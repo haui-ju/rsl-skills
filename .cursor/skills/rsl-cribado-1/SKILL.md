@@ -46,7 +46,10 @@ Invoke: `Usa rsl-cribado-1 sobre docs/<slug>/`.
    {
      "identification": {
        "databases": <total_scopus_and_wos>,
-       "registers": 0
+       "sources": [
+         { "name": "Scopus", "n": <n_scopus> },
+         { "name": "Web of Science", "n": <n_wos> }
+       ]
      },
      "removed_before_screening": {
        "duplicates": <duplicates_removed>,

@@ -3,10 +3,44 @@
   "disponibles_indexados": 49,
   "nucleo_si_podria": 32,
   "objetivo": 40,
-  "relleno_leve": 0,
+  "relleno_leve": 8,
   "relleno_alto": 0,
-  "aceptados_traza": 32,
+  "aceptados_traza": 40,
   "evaluables": 49,
-  "no_recuperados": 1,
-  "min_alcanzado": false
+  "no_recuperados": 2,
+  "min_alcanzado": true,
+  "promovidos_relleno": [
+    {
+      "id": "R011",
+      "decision": "RELLENO-LEVE"
+    },
+    {
+      "id": "R012",
+      "decision": "RELLENO-LEVE"
+    },
+    {
+      "id": "R018",
+      "decision": "RELLENO-LEVE"
+    },
+    {
+      "id": "R022",
+      "decision": "RELLENO-LEVE"
+    },
+    {
+      "id": "R032",
+      "decision": "RELLENO-LEVE"
+    },
+    {
+      "id": "R057",
+      "decision": "RELLENO-LEVE"
+    },
+    {
+      "id": "R082",
+      "decision": "RELLENO-LEVE"
+    },
+    {
+      "id": "R083",
+      "decision": "RELLENO-LEVE"
+    }
+  ]
 }

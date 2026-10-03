@@ -19,7 +19,7 @@ Full-text screening against `CI*` / `CE*` in the linked `picoc.md`. **`config.ym
 | `RELLENO-ALTO` | Merit `NO`, promoted after leve pool exhausted |
 | `NO` | Does not serve |
 
-CSV `¿Se acepta?` (in `rsl-cribado-2-aplicar`) = `SI` for SI, PODRIA, both rellenos; `NO` otherwise. Justificación = plain `motivo` only.
+CSV `¿Se acepta?` (in `rsl-cribado-2-aplicar`) = `SI` for SI, PODRIA, both rellenos; `NO` otherwise. Justificación = `motivo` **entero** (razón de inclusión/exclusión; sin «…» ni jerga técnica de descarga).
 
 Invoke: `Usa rsl-cribado-2-polish sobre docs/<slug>/`.
 
@@ -40,7 +40,7 @@ Invoke: `Usa rsl-cribado-2-polish sobre docs/<slug>/`.
 For merit `NO` that could still help the project if quota needs filling: `"relleno":{"elegible":true,"nivel":"leve"|"alto","orden":1}` (lower `orden` = preferred).
 
 4. `pnpm -s cribado2:polish-merge docs/<slug>` → `.cribado-2/decisiones.jsonl` (merit = SI|PODRIA|NO).
-5. `pnpm -s cribado2:cuota docs/<slug>` — applies `min_rsl` on **indexed** PDFs only; promotes `NO` with `relleno.elegible`; **WARN** (not ERROR) if corpus cannot reach `min_rsl`.
+5. `pnpm -s cribado2:cuota docs/<slug>` — aplica `min_rsl` sobre registros evaluables (texto completo + integridad OK). Promueve mérito `NO` a **RELLENO-LEVE** (primero; por defecto exclusiones CI4) o **RELLENO-ALTO** (CE u `relleno.nivel: alto` en el lote) hasta llegar a `min_rsl`. Si el lote no trae `relleno`, la cuota marca candidatos automáticos (salvo `relleno.elegible: false`). **RELLENO-*** cuenta como **SI** en CSV/PRISMA; el motivo sigue siendo el del mérito NO.
 6. `pnpm -s cribado2:polish-report docs/<slug>` → `cribado-2-evaluacion.md` + hash; en `picoc/<fecha>-<MARCO>/` escribe `cribado-2.shadow.jsonl` (una línea `_meta` + una por id del corpus: `id`, `decision`, `acepta`, `motivo`, `criterios`) para `cribado2:apply` sin parsear el MD.
 7. Chat: counts by decision, cuota summary, path to evaluacion. Cierre.
 

@@ -16,6 +16,44 @@ interface PrismaState {
 
 type PersistedPrismaState = Pick<PrismaState, 'texts' | 'quality'>
 
+type IdentificationJson = {
+  databases?: number | null
+  registers?: number | null
+  sources?: { name: string; n: number }[]
+  scopus?: number | null
+  wos?: number | null
+}
+
+function formatIdentificationText(
+  id: IdentificationJson,
+  formatN: (val: number | null | undefined) => string | number,
+): string {
+  const lines = [
+    'Registros identificados de*:',
+    `Bases de datos (n = ${formatN(id.databases)})`,
+  ]
+
+  const sources: { name: string; n: number }[] = [...(id.sources ?? [])]
+  if (sources.length === 0) {
+    if (id.scopus != null && id.scopus !== undefined) {
+      sources.push({ name: 'Scopus', n: id.scopus })
+    }
+    if (id.wos != null && id.wos !== undefined) {
+      sources.push({ name: 'Web of Science', n: id.wos })
+    }
+  }
+  for (const s of sources) {
+    lines.push(`${s.name} (n = ${formatN(s.n)})`)
+  }
+
+  const reg = id.registers
+  if (reg != null && reg !== undefined && reg !== 0) {
+    lines.push(`Registros (n = ${formatN(reg)})`)
+  }
+
+  return lines.join('\n')
+}
+
 export const usePrismaStore = create<PrismaState>()(
   persist(
     (set) => ({
@@ -33,7 +71,10 @@ export const usePrismaStore = create<PrismaState>()(
             val !== null && val !== undefined ? val : 'X'
 
           if (data.identification) {
-            newTexts.identified = `Registros identificados de*:\nBases de datos (n = ${formatN(data.identification.databases)})\nRegistros (n = ${formatN(data.identification.registers)})`
+            newTexts.identified = formatIdentificationText(
+              data.identification,
+              formatN,
+            )
           }
           if (data.removed_before_screening) {
             newTexts.removed = `Registros eliminados antes del\ncribado:\nRegistros duplicados eliminados (n = ${formatN(data.removed_before_screening.duplicates)})\nRegistros marcados como inelegibles por herramientas automatizadas (n = ${formatN(data.removed_before_screening.ineligible_automation)})\nRegistros eliminados por otras razones (n = ${formatN(data.removed_before_screening.other_reasons)})`
@@ -58,7 +99,12 @@ export const usePrismaStore = create<PrismaState>()(
             }
           }
           if (data.included) {
-            newTexts.included = `Estudios incluidos en la revisión\n(n = ${formatN(data.included.studies)})\nInformes de estudios incluidos\n(n = ${formatN(data.included.reports)})`
+            const ns = formatN(data.included.studies)
+            const nr = formatN(data.included.reports)
+            newTexts.included =
+              ns === nr
+                ? `Estudios incluidos en la revisión\n(n = ${ns})`
+                : `Estudios incluidos en la revisión\n(n = ${ns})\nInformes de estudios incluidos\n(n = ${nr})`
           }
 
           return { texts: newTexts }
@@ -67,7 +113,7 @@ export const usePrismaStore = create<PrismaState>()(
     }),
     {
       name: 'prisma-flow',
-      version: 3,
+      version: 7,
       storage: createJSONStorage(() => localStorage),
       skipHydration: true,
       partialize: ({ texts, quality }): PersistedPrismaState => ({
@@ -75,9 +121,7 @@ export const usePrismaStore = create<PrismaState>()(
         quality,
       }),
       migrate: (persistedState: any, version: number) => {
-        if (version < 3) {
-          // Si venimos de una versión anterior, descartamos los textos viejos
-          // para forzar que se usen los nuevos por defecto en español.
+        if (version < 7) {
           return {
             ...persistedState,
             texts: DEFAULT_TEXTS,

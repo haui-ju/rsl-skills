@@ -26,8 +26,8 @@ Invoke: `Usa rsl-cribado-2-aplicar sobre docs/<slug>/`.
 - Columnas bibliográficas = fila del `resultados-<MARCO>-cribado-1.csv` con el mismo `id` (sin columnas de cribado 1 al final).
 - Append **`¿Se acepta?`** y **`Justificación cribado 2`**.
 - `¿Se acepta?` = **`SI`** o **`NO`** únicamente (`SI` si decisión ∈ {SI, PODRIA, RELLENO-LEVE, RELLENO-ALTO}).
-- Justificación = prosa del `motivo` (shadow/decisiones); **sin** prefijos PODRIA/relleno.
-- No recuperado (`descargado≠si` / `sin_acceso`): **`NO`** y motivo breve de **sin acceso** (`porque` en `documentos.json` o «Sin acceso al texto completo.»).
+- Justificación = **motivo completo** del shadow/decisiones (por qué SI o NO según CI/CE o retrieval); **sin** prefijos PODRIA/relleno ni recorte con «…»; breve pero con la razón decisiva explícita.
+- No recuperado (`descargado≠si` / `sin_acceso`): **`NO`** y motivo breve en prosa académica (p. ej. acceso abierto declarado pero sin PDF disponible, o de pago / sin acceso). **Prohibido** HTTP, bots, scripts o «descarga automática» en CSV e informes.
 
 ## Procedure
 

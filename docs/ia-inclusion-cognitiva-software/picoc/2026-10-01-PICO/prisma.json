@@ -1,7 +1,16 @@
 {
   "identification": {
     "databases": 146,
-    "registers": 0
+    "sources": [
+      {
+        "name": "Scopus",
+        "n": 105
+      },
+      {
+        "name": "Web of Science",
+        "n": 41
+      }
+    ]
   },
   "removed_before_screening": {
     "duplicates": 21,
@@ -17,17 +26,22 @@
     "not_retrieved": 2
   },
   "eligibility": {
-    "assessed": 51,
+    "assessed": 50,
     "excluded_reasons": {
-      "retrieval": 2,
-      "CI4": 15,
       "CE3": 3,
-      "CI3": 1,
+      "CI4": 7,
+      "retrieval": 1,
       "CI1": 1
     }
   },
   "included": {
-    "studies": 32,
-    "reports": 32
+    "studies": 40,
+    "reports": 40
+  },
+  "rsl_quota": {
+    "min_rsl": 40,
+    "incluidos_traza": 40,
+    "min_alcanzado": true,
+    "nucleo_si_podria": 32
   }
 }

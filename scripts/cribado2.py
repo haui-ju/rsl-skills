@@ -47,7 +47,13 @@ from cribado2_config import (  # noqa: E402
     normalize_use,
     read_cribado2_use,
 )
-from cribado2_integrity import check_corpus, patch_memoria_traza  # noqa: E402
+from cribado2_integrity import (  # noqa: E402
+    aplicar_porque_publico,
+    check_corpus,
+    patch_memoria_traza,
+    sanitize_catalog_porque,
+    table_cell,
+)
 from cribado2_polish import (  # noqa: E402
     cmd_apply as polish_apply,
     cmd_cuota as polish_cuota,
@@ -65,7 +71,6 @@ CRIBADO1_SHADOW = "cribado-1.shadow.jsonl"
 DOCUMENTOS_JSON = "documentos.json"
 DOCUMENTOS_MD = "documentos.md"
 MEMORIA_TRAZA = "memoria-traza.json"
-PORQUE_MAX = 120
 TITLE_SLUG_MAX = 80
 MIN_PDF_BYTES = 10_000
 MAX_PDF_BYTES = 80_000_000
@@ -303,37 +308,17 @@ def sites(ts: list[dict], editor: str) -> str:
 
 
 def why_missing(doi: str, tries: list[dict], meta: dict) -> tuple[str, str]:
-    """(motivo en español para el usuario, enlace donde bajarlo a mano)."""
-    editor = editor_of(doi, meta)
+    """(motivo en español para el informe, enlace para localizar el PDF a mano)."""
+    from cribado2_integrity import MOTIVO_NO_OA, MOTIVO_OA_SIN_PDF
+
     oa = [t for t in tries if t["fuente"] != "doi-landing"]
-    blocked = [t for t in oa if t["resultado"] in {"HTTP 401", "HTTP 403", "HTTP 429"}]
-    slow = [t for t in oa if "Timeout" in t["resultado"] or "URLError" in t["resultado"]]
-    html_only = [t for t in oa if t["resultado"].startswith("no es PDF")]
     non_doi = [t for t in oa if "doi.org" not in t["url"]]
     pool = non_doi or oa
     pdfs = [t for t in pool if t["fuente"] in PDF_SOURCES]
     link = (pdfs or pool or [{"url": f"https://doi.org/{doi}"}])[0]["url"]
-    if not oa:
-        if meta.get("is_oa"):
-            return ("Figura como acceso abierto, pero ninguna base (Unpaywall, OpenAlex, Semantic Scholar) da un enlace "
-                    "al PDF: bájalo desde la página del editor.", link)
-        return ("No tiene versión de acceso abierto registrada en Unpaywall, OpenAlex ni Semantic Scholar: es de pago; "
-                "necesitas acceso institucional o pedírselo al autor.", link)
-    def verb(ts: list[dict], one: str, many: str) -> str:
-        return many if len({site(t["url"], editor) for t in ts}) > 1 else one
-
-    parts = []
-    if blocked:
-        parts.append(f"{sites(blocked, editor)} {verb(blocked, 'bloquea', 'bloquean')} las descargas automáticas "
-                     "(HTTP 403, protección contra bots)")
-    if html_only:
-        parts.append(f"{sites(html_only, editor)} {verb(html_only, 'muestra', 'muestran')} una página web sin enlace "
-                     "directo al PDF que el script pueda leer")
-    if slow:
-        parts.append(f"{sites(slow, editor)} no {verb(slow, 'respondió', 'respondieron')} a tiempo")
-    if not parts:
-        parts.append("los enlaces abiertos no devolvieron un PDF válido (" + "; ".join(sorted({t["resultado"] for t in oa})) + ")")
-    return "Hay versión abierta, pero " + "; y ".join(parts) + ": ábrela en el navegador y guarda el PDF.", link
+    if meta.get("is_oa") or oa:
+        return MOTIVO_OA_SIN_PDF, link
+    return MOTIVO_NO_OA, link
 
 
 def try_download(url: str, dest: Path, follow_meta: bool = True) -> tuple[bool, str]:
@@ -428,7 +413,7 @@ def download_one(reg: dict, pdf_dir: Path, email: str) -> None:
     dest = pdf_dir / pdf_basename(row)
     doi = reg["doi"]
     if not doi:
-        reg["porque"] = "Sin DOI: búscalo por título."
+        aplicar_porque_publico(reg)
         return
     tries: list[dict] = []
     urls, meta = candidates(doi, email)
@@ -447,7 +432,8 @@ def download_one(reg: dict, pdf_dir: Path, email: str) -> None:
         tries.append({"fuente": src, "url": url, "resultado": info})
     motivo, link = why_missing(doi, tries, meta)
     reg["descargado"] = "no"
-    reg["porque"] = md_cell(motivo, PORQUE_MAX)
+    reg["oa_registrada"] = meta.get("is_oa")
+    reg["porque"] = table_cell(motivo)
     reg["pdf"] = None
     reg["fuente"] = None
     reg["url"] = None
@@ -518,7 +504,7 @@ def write_documentos_md(corpus: Path, cat: dict) -> Path:
     ]
     for r in sorted(cat["registros"], key=lambda x: x["orden"]):
         lines.append(
-            f"| {r['orden']} | {r['id']} | {md_cell(r['titulo'], 60)} | {enlaces_markdown(r)} | {r['descargado']} | {md_cell(r.get('porque') or '', PORQUE_MAX)} |"
+            f"| {r['orden']} | {r['id']} | {md_cell(r['titulo'], 60)} | {enlaces_markdown(r)} | {r['descargado']} | {table_cell(r.get('porque') or '')} |"
         )
     lines.append("")
     dest = corpus / DOCUMENTOS_MD
@@ -695,8 +681,13 @@ def draft_matches_reg(draft_stem: str, reg: dict) -> bool:
 def cmd_documentos(theme: Path) -> int:
     corpus = cribado2_dir(theme)
     cat = load_catalog(corpus)
+    n = sanitize_catalog_porque(cat)
+    save_catalog(corpus, cat)
     report = write_documentos_md(corpus, cat)
-    return ok(f"tabla actualizada en {rel(report)}")
+    msg = f"tabla actualizada en {rel(report)}"
+    if n:
+        msg += f"; {n} motivo(s) de sin acceso normalizados"
+    return ok(msg)
 
 
 def cmd_align(theme: Path) -> int:

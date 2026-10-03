@@ -11,7 +11,32 @@ PAGE1_IN_CHUNKS_RE = re.compile(
     r"## Page chunks.*?(### \[PDF p\.1\].*?\n\n(.{40,2500}))",
     re.S | re.I,
 )
-MOTIVO_SIN_ACCESO = "Sin acceso al texto completo."
+MOTIVO_SIN_ACCESO = (
+    "No se pudo obtener el texto completo; el documento es de pago o no se dispone de acceso al mismo."
+)
+MOTIVO_OA_SIN_PDF = (
+    "No se pudo obtener el texto completo. Figura como acceso abierto, "
+    "pero el documento es de pago o no se dispone de acceso al mismo."
+)
+MOTIVO_NO_OA = (
+    "No se pudo obtener el texto completo. No consta acceso abierto; "
+    "el documento es de pago o no se dispone de acceso al mismo."
+)
+MOTIVO_SIN_DOI = "No hay DOI en el registro; localizar el documento por título."
+
+_PORQUE_TECNICO = (
+    "http",
+    "bot",
+    "script",
+    "descarga automática",
+    "descargas automáticas",
+    "bloquea",
+    "bloquean",
+    "protección contra",
+    "ábrela en el navegador",
+    "el script",
+)
+
 STOP = frozenset(
     "with and the for from that this using based into their through about among other".split()
 )
@@ -31,11 +56,68 @@ def no_texto_completo(reg: dict) -> bool:
     return bool(reg.get("sin_acceso")) or reg.get("descargado") != "si"
 
 
+def _porque_es_tecnico(why: str) -> bool:
+    w = why.lower()
+    return any(t in w for t in _PORQUE_TECNICO)
+
+
+def _infer_oa_registrada(reg: dict) -> bool | None:
+    oa = reg.get("oa_registrada")
+    if oa is not None:
+        return bool(oa)
+    why = (reg.get("porque") or "").lower()
+    if "no tiene versión de acceso abierto" in why or "no consta versión de acceso abierto" in why:
+        return False
+    if "versión abierta" in why or "acceso abierto" in why or "figura como acceso abierto" in why:
+        return True
+    return None
+
+
+def table_cell(s: str) -> str:
+    """Celda de tabla markdown: sin truncar (solo escapa pipes y espacios)."""
+    return " ".join((s or "").split()).replace("|", "/")
+
+
+def _fin_oracion(text: str) -> str:
+    t = text.strip()
+    if not t:
+        return MOTIVO_SIN_ACCESO
+    return t if t.endswith(".") else t + "."
+
+
 def motivo_sin_acceso(reg: dict) -> str:
+    if not (reg.get("doi") or "").strip():
+        return _fin_oracion(MOTIVO_SIN_DOI)
+    oa = _infer_oa_registrada(reg)
+    if oa is True:
+        return MOTIVO_OA_SIN_PDF
+    if oa is False:
+        return MOTIVO_NO_OA
     why = (reg.get("porque") or "").strip()
-    if why:
-        return why if why.endswith(".") else why + "."
+    if why and not _porque_es_tecnico(why):
+        if why.startswith("Sin DOI"):
+            return _fin_oracion(MOTIVO_SIN_DOI)
+        return _fin_oracion(why)
     return MOTIVO_SIN_ACCESO
+
+
+def aplicar_porque_publico(reg: dict) -> None:
+    if reg.get("descargado") == "si":
+        reg["porque"] = ""
+        return
+    reg["porque"] = motivo_sin_acceso(reg)
+
+
+def sanitize_catalog_porque(cat: dict) -> int:
+    changed = 0
+    for reg in cat.get("registros") or []:
+        if reg.get("descargado") == "si":
+            continue
+        before = reg.get("porque")
+        aplicar_porque_publico(reg)
+        if reg.get("porque") != before:
+            changed += 1
+    return changed
 
 
 def decision_no_recuperado(reg: dict) -> dict:
@@ -46,7 +128,7 @@ def decision_no_recuperado(reg: dict) -> dict:
         "merito": "NO",
         "decision": "NO",
         "criterios": ["retrieval"],
-        "motivo": motivo_sin_acceso(reg)[:500],
+        "motivo": motivo_sin_acceso(reg),
         "fuente": "documentos.json",
     }
 

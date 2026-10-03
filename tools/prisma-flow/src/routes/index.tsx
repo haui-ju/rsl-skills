@@ -5,12 +5,16 @@ import { ExportToolbar } from '@/features/prisma/components/export-toolbar'
 import { PrismaDiagram } from '@/features/prisma/components/prisma-diagram'
 import { useHydrateStore } from '@/features/prisma/hooks/use-hydrate-store'
 
+/** PRISMA del tema activo (sincronizar tras cribado2:apply). */
+const THEME_PRISMA_JSON =
+  'docs/ia-inclusion-cognitiva-software/picoc/2026-10-01-PICO/prisma.json'
+
 export const Route = createFileRoute('/')({ component: Home })
 
 function Home() {
   const diagramRef = useRef<HTMLDivElement>(null)
 
-  useHydrateStore()
+  useHydrateStore(THEME_PRISMA_JSON)
 
   return (
     <div className="flex h-screen flex-col">
@@ -20,7 +24,7 @@ function Home() {
             Diagrama PRISMA
           </h1>
           <p className="hidden text-xs text-muted-foreground lg:block">
-            Haz clic en cualquier cuadro para editar su texto
+            Fuente: <span className="font-mono">{THEME_PRISMA_JSON}</span>
           </p>
         </div>
         <ExportToolbar targetRef={diagramRef} />

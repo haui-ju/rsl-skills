@@ -17,6 +17,7 @@ from cribado2_integrity import (
     integrity_ok_ids,
     motivo_sin_acceso,
     no_texto_completo,
+    table_cell,
 )
 from rsl_out import Fail, error, ok
 
@@ -192,7 +193,7 @@ def decisions_from_shadow(cat: dict, shadow_by: dict[str, dict], corpus: Path) -
                     "merito": "NO",
                     "decision": "NO",
                     "criterios": ["retrieval"],
-                    "motivo": msg[:500],
+                    "motivo": table_cell(msg),
                     "fuente": "integridad",
                 }
             )
@@ -271,7 +272,7 @@ def cmd_polish_merge(theme: Path, corpus: Path, folder: Path, root: Path) -> int
                     "merito": "NO",
                     "decision": "NO",
                     "criterios": ["retrieval"],
-                    "motivo": msg[:500],
+                    "motivo": table_cell(msg),
                     "fuente": "integridad",
                 }
             )
@@ -301,15 +302,39 @@ def cmd_polish_merge(theme: Path, corpus: Path, folder: Path, root: Path) -> int
     return ok(f"{len(out)} decisiones de mérito en {rel(path, root)}", f"pnpm -s cribado2:cuota {rel(theme, root)}")
 
 
+def default_relleno_meta(rec: dict) -> dict:
+    """Candidato a relleno si el lote no marcó relleno.elegible=false."""
+    rel = rec.get("relleno") or {}
+    if rel.get("elegible") is False:
+        return {"elegible": False}
+    crits = [str(c) for c in (rec.get("criterios") or [])]
+    nivel = "alto" if any(c.startswith("CE") for c in crits) else "leve"
+    return {
+        "elegible": True,
+        "nivel": rel.get("nivel") or nivel,
+        "orden": int(rel.get("orden") if rel.get("orden") is not None else rec.get("orden") or 99),
+    }
+
+
 def relleno_rank(rec: dict) -> tuple[int, int]:
     """Menor = mejor candidato (leve antes que alto)."""
-    rel = rec.get("relleno") or {}
+    rel = rec.get("relleno") if rec.get("relleno") is not None else default_relleno_meta(rec)
     if not rel.get("elegible"):
         return (9, 999)
     nivel = (rel.get("nivel") or "alto").lower()
     tier = 0 if nivel == "leve" else 1
     orden = int(rel.get("orden") or 99)
     return (tier, orden)
+
+
+def ensure_relleno_meta(rec: dict) -> None:
+    if rec.get("merito") != "NO":
+        return
+    rel = rec.get("relleno") or {}
+    if rel.get("elegible") is False:
+        return
+    if not rel.get("elegible"):
+        rec["relleno"] = default_relleno_meta(rec)
 
 
 def cmd_cuota(theme: Path, corpus: Path, folder: Path, root: Path) -> int:
@@ -328,16 +353,19 @@ def cmd_cuota(theme: Path, corpus: Path, folder: Path, root: Path) -> int:
     disponibles = len(evaluables)
     objetivo = min(min_rsl, disponibles)
     relleno_leve = relleno_alto = 0
+    promovidos: list[dict] = []
     min_alcanzado = nucleo >= objetivo
     warn = ""
 
     if nucleo < objetivo:
         hueco = objetivo - nucleo
-        pool = sorted(
-            [d for d in evaluables if d.get("merito") == "NO"],
+        pool = [d for d in evaluables if d.get("merito") == "NO"]
+        for d in pool:
+            ensure_relleno_meta(d)
+        elegibles = sorted(
+            [d for d in pool if relleno_rank(d)[0] < 9],
             key=relleno_rank,
         )
-        elegibles = [d for d in pool if relleno_rank(d)[0] < 9]
         for d in elegibles:
             if hueco <= 0:
                 break
@@ -348,6 +376,7 @@ def cmd_cuota(theme: Path, corpus: Path, folder: Path, root: Path) -> int:
             else:
                 d["decision"] = RELLENO_ALTO
                 relleno_alto += 1
+            promovidos.append({"id": d["id"], "decision": d["decision"]})
             hueco -= 1
         aceptados = sum(1 for d in evaluables if d.get("decision") in ACCEPT_TIERS)
         min_alcanzado = aceptados >= objetivo
@@ -373,6 +402,7 @@ def cmd_cuota(theme: Path, corpus: Path, folder: Path, root: Path) -> int:
         "evaluables": len(evaluables),
         "no_recuperados": no_recuperados,
         "min_alcanzado": min_alcanzado,
+        "promovidos_relleno": promovidos,
     }
     (w / CUOTA_JSON).write_text(json.dumps(cuota, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     if warn:
@@ -407,11 +437,12 @@ def cmd_polish_report(theme: Path, corpus: Path, folder: Path, root: Path) -> in
         for d in decisions
         if not no_texto_completo(next((r for r in cat["registros"] if r["id"] == d["id"]), {}))
     ]
-    counts = Counter(d.get("decision", "?") for d in eval_decisions)
+    eval_ids = {r["id"] for r in cat["registros"] if not no_texto_completo(r)}
+    counts = Counter(d.get("decision", "?") for d in decisions if d["id"] in eval_ids)
     n_no_rec = sum(1 for r in cat["registros"] if no_texto_completo(r))
 
-    def cell(s: str, n: int = 55) -> str:
-        s = " ".join((s or "").split()).replace("|", "/")
+    def cell_title(s: str, n: int = 55) -> str:
+        s = table_cell(s)
         return s if len(s) <= n else s[: n - 1] + "…"
 
     lines = [
@@ -431,11 +462,23 @@ def cmd_polish_report(theme: Path, corpus: Path, folder: Path, root: Path) -> in
     if cuota_p.is_file():
         cq = json.loads(cuota_p.read_text(encoding="utf-8"))
         lines.append(
-            f"Cuota: min_rsl **{cq['min_rsl']}** · núcleo **{cq['nucleo_si_podria']}** · "
-            f"objetivo **{cq['objetivo']}** · aceptados traza **{cq['aceptados_traza']}** · "
-            f"min_alcanzado **{'sí' if cq['min_alcanzado'] else 'no'}**"
+            f"Incluidos en la revisión (núcleo SI+PODRIA **{cq['nucleo_si_podria']}** + "
+            f"relleno leve **{cq.get('relleno_leve', 0)}** + relleno alto **{cq.get('relleno_alto', 0)}** "
+            f"= **{cq['aceptados_traza']}**; cuota min_rsl **{cq['min_rsl']}**)"
         )
         lines.append("")
+        prom = cq.get("promovidos_relleno") or []
+        if prom:
+            lines += [
+                "### Relleno (cuota min_rsl)",
+                "",
+                "- **RELLENO-LEVE**: mérito NO; promovido por cuota con ajuste leve al marco (p. ej. solo CI4 débil).",
+                "- **RELLENO-ALTO**: mérito NO; promovido después del pool leve (p. ej. criterios CE o ajuste más forzado).",
+                "- En el CSV y PRISMA cuentan como **SI**; la justificación sigue siendo el motivo del mérito NO.",
+                "",
+                "Promovidos: " + ", ".join(f"{p['id']} ({p['decision']})" for p in prom),
+                "",
+            ]
     lines += [
         "| # | id | titulo | decision | motivo |",
         "|---:|---|---|---|---|",
@@ -445,10 +488,10 @@ def cmd_polish_report(theme: Path, corpus: Path, folder: Path, root: Path) -> in
             continue
         d = by_id.get(r["id"])
         if not d:
-            lines.append(f"| {r['orden']} | {r['id']} | {cell(r['titulo'])} | — | sin decisión |")
+            lines.append(f"| {r['orden']} | {r['id']} | {cell_title(r['titulo'])} | — | sin decisión |")
             continue
         lines.append(
-            f"| {r['orden']} | {r['id']} | {cell(r['titulo'])} | {d['decision']} | {cell(d.get('motivo', ''), 90)} |"
+            f"| {r['orden']} | {r['id']} | {cell_title(r['titulo'])} | {d['decision']} | {table_cell(d.get('motivo', ''))} |"
         )
     lines.append("")
     if n_no_rec:
@@ -463,7 +506,7 @@ def cmd_polish_report(theme: Path, corpus: Path, folder: Path, root: Path) -> in
                 continue
             d = by_id.get(r["id"]) or decision_no_recuperado(r)
             lines.append(
-                f"| {r['orden']} | {r['id']} | {cell(r['titulo'])} | {cell(d.get('motivo', ''), 90)} |"
+                f"| {r['orden']} | {r['id']} | {cell_title(r['titulo'])} | {table_cell(d.get('motivo', ''))} |"
             )
         lines.append("")
     dest = corpus / EVAL_MD
@@ -521,13 +564,24 @@ def load_shadow(folder: Path) -> tuple[dict[str, dict], str | None]:
 
 
 def motivo_csv(text: str, fallback: str) -> str:
-    why = (text or fallback).strip()
+    why = table_cell(text or fallback)
     if not why:
-        why = fallback
+        why = table_cell(fallback)
+    if why.endswith("…"):
+        why = why[:-1].rstrip()
+    while why.endswith("..."):
+        why = why[:-3].rstrip()
     return why if why.endswith(".") else why + "."
 
 
-def update_prisma_eligibility(folder: Path, assessed: int, included: int, excluded: dict[str, int]) -> None:
+def update_prisma_eligibility(
+    folder: Path,
+    theme: Path,
+    corpus: Path,
+    assessed: int,
+    included: int,
+    excluded: dict[str, int],
+) -> None:
     p = folder / "prisma.json"
     if not p.is_file():
         return
@@ -538,6 +592,16 @@ def update_prisma_eligibility(folder: Path, assessed: int, included: int, exclud
     inc = data.setdefault("included", {})
     inc["studies"] = included
     inc["reports"] = included
+    min_rsl = read_cribado2_min_rsl(theme)
+    cuota_p = work_dir(corpus) / CUOTA_JSON
+    cq = json.loads(cuota_p.read_text(encoding="utf-8")) if cuota_p.is_file() else {}
+    aceptados = int(cq.get("aceptados_traza") or included)
+    data["rsl_quota"] = {
+        "min_rsl": min_rsl,
+        "incluidos_traza": aceptados,
+        "min_alcanzado": bool(cq.get("min_alcanzado", aceptados >= min_rsl)),
+        "nucleo_si_podria": cq.get("nucleo_si_podria"),
+    }
     p.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
@@ -612,7 +676,9 @@ def cmd_apply(theme: Path, corpus: Path, folder: Path, root: Path) -> int:
         wcsv = csv.writer(fh, quoting=csv.QUOTE_ALL)
         wcsv.writerow(base_header + [COL_OK, COL_WHY2])
         wcsv.writerows(out_rows)
-    update_prisma_eligibility(folder, assessed, included, dict(excluded_criteria))
+    update_prisma_eligibility(
+        folder, theme, corpus, assessed, included, dict(excluded_criteria)
+    )
     si = sum(1 for r in out_rows if r[-2] == "SI")
     return ok(
         f"{rel(dest, root)} con {len(out_rows)} registros (¿Se acepta? SI {si}, NO {len(out_rows) - si}); prisma eligibility actualizado",

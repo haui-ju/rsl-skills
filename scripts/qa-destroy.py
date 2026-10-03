@@ -1449,6 +1449,82 @@ def _(sb):
         sb.check(no_texto_completo(cat["registros"][1]), "sin_acceso")
 
 
+@case("C11", "orden", "informe cribado-2 no trunca motivo con elipsis")
+def _(sb):
+    from cribado2_integrity import table_cell
+    from cribado2_polish import cmd_polish_report
+    import json
+    import tempfile
+    from pathlib import Path
+
+    long_m = (
+        "Scoping GenAI en rehabilitación y discapacidad; no ingeniería software SDLC "
+        "ni población PICOC acotada en el cuerpo del artículo."
+    )
+    with tempfile.TemporaryDirectory() as td:
+        root = Path(td)
+        theme = root / "docs" / "t"
+        folder = theme / "picoc" / "2026-01-01-PICO"
+        corpus = theme / "RSL" / "picoc" / "2026-01-01-cribado-2-PICO"
+        folder.mkdir(parents=True)
+        corpus.mkdir(parents=True)
+        (folder / "picoc.md").write_text(
+            "## Criterios de inclusión y exclusión\n### Inclusión\n- CI1. x\n### Exclusión\n- CE1. y\n",
+            encoding="utf-8",
+        )
+        cat = {
+            "picoc": "docs/t/picoc/2026-01-01-PICO/picoc.md",
+            "registros": [
+                {
+                    "orden": 1,
+                    "id": "R001",
+                    "titulo": "A",
+                    "doi": "10.1/a",
+                    "descargado": "si",
+                },
+            ],
+        }
+        (corpus / "documentos.json").write_text(json.dumps(cat), encoding="utf-8")
+        w = corpus / ".cribado-2"
+        w.mkdir(parents=True)
+        (w / "decisiones.jsonl").write_text(
+            json.dumps(
+                {
+                    "orden": 1,
+                    "id": "R001",
+                    "decision": "NO",
+                    "criterios": ["CE1"],
+                    "motivo": long_m,
+                },
+                ensure_ascii=False,
+            )
+            + "\n",
+            encoding="utf-8",
+        )
+        sb.check(cmd_polish_report(theme, corpus, folder, root) == 0, "report falló")
+        md = (corpus / "cribado-2-evaluacion.md").read_text(encoding="utf-8")
+        sb.check(long_m in md, "motivo truncado en evaluacion.md")
+        sb.check("SDLC …" not in md and long_m.split()[-1] in md, md[-200:])
+
+
+@case("C10", "orden", "motivo sin acceso sin jerga técnica (HTTP, bot, script)")
+def _(sb):
+    from cribado2_integrity import aplicar_porque_publico, motivo_sin_acceso
+
+    reg = {
+        "id": "R099",
+        "doi": "10.1/x",
+        "descargado": "no",
+        "porque": "Hay versión abierta, pero ACM bloquea las descargas automáticas (HTTP 403, protección contra bots)",
+    }
+    aplicar_porque_publico(reg)
+    m = reg["porque"].lower()
+    sb.check("http" not in m and "bot" not in m and "script" not in m, f"motivo técnico: {reg['porque']}")
+    sb.check("acceso abierto" in m, reg["porque"])
+    reg2 = {"id": "R100", "doi": "10.1/y", "descargado": "no", "oa_registrada": False, "porque": ""}
+    sb.check("no consta acceso abierto" in motivo_sin_acceso(reg2).lower(), motivo_sin_acceso(reg2))
+
+
 @case("C08", "orden", "cribado2_config asegura min_rsl=40 y cuota avisa sin ERROR si no alcanza el mínimo")
 def _(sb):
     from cribado2_config import MIN_RSL_DEFAULT, ensure_cribado2_config
