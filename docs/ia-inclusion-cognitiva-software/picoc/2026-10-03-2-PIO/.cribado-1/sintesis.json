@@ -1,0 +1,5 @@
+{
+  "aceptados": "Registros que cruzan población cognitiva o neurodivergente, técnica de IA y evaluación o artefacto de software relacionado, sin que el resumen muestre revisión secundaria, acta de congreso, diagnóstico puro, accesibilidad solo sensorial ni tutor/robot como producto principal.",
+  "rechazados": "Mayoría por CE4 (revisiones y síntesis), CE1 (IA solo para detectar o diagnosticar), CE3 (tutores, chatbots terapéuticos o rehabilitación sin SDLC), CI4 ausente en el resumen cuando el estudio es pedagógico o de análisis sin ingeniería de software, y CE5 cuando el documento es acta o comunicación.",
+  "dudas": "Casi todos los SI llevan duda porque el resumen no nombra la fase del ciclo de vida del software; el cribado 2 debe confirmar CI4, artefacto evaluado y que no sea CE5 disfrazado de artículo de revista."
+}

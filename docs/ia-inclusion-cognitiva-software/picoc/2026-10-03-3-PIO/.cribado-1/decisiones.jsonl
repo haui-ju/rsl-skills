@@ -1,0 +1,966 @@
+{"id": "R001", "decision": "NO", "criterios": ["CI4"], "motivo": "Marco de serious games con casos en autismo; no menciona IA ni fases del ciclo de vida del software", "duda": false, "acuerdo": true}
+{"id": "R002", "decision": "NO", "criterios": ["CE3"], "motivo": "Codiseño de robots sociales para discapacidad intelectual; producto robot, no intervención en SDLC", "duda": false, "acuerdo": true}
+{"id": "R003", "decision": "SI", "criterios": [], "motivo": "Anotación NLP antiautista; el resumen no excluye fase SDLC", "duda": true, "acuerdo": false}
+{"id": "R004", "decision": "NO", "criterios": ["CI3"], "motivo": "Predicción de abandono en cursos CAD con ML; sin población neurodivergente ni discapacidad cognitiva", "duda": false, "acuerdo": true}
+{"id": "R005", "decision": "NO", "criterios": ["CE4"], "motivo": "Bibliometría de productos naturales en discapacidad cognitiva; síntesis secundaria sin software ni IA aplicada", "duda": false, "acuerdo": true}
+{"id": "R006", "decision": "NO", "criterios": ["CI4"], "motivo": "VR mejora habilidades de juego en autismo; la IA solo se propone a futuro, intervención actual sin IA", "duda": false, "acuerdo": true}
+{"id": "R007", "decision": "NO", "criterios": ["CE1"], "motivo": "Detección de enfermedad mental en redes con deep learning; diagnóstico, sin artefacto de software evaluado", "duda": false, "acuerdo": true}
+{"id": "R008", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión narrativa neurodiversidad e integridad académica; sin estudio empírico primario de SDLC", "duda": false, "acuerdo": true}
+{"id": "R009", "decision": "NO", "criterios": ["CI4"], "motivo": "Compara respuestas ChatGPT sobre tartamudez; evaluación de chatbot sanitario, no ciclo de vida del software", "duda": false, "acuerdo": true}
+{"id": "R010", "decision": "NO", "criterios": ["CI3"], "motivo": "Marco IA para comprensión OOP en novatos; población general sin neurodivergencia ni discapacidad cognitiva", "duda": false, "acuerdo": true}
+{"id": "R011", "decision": "NO", "criterios": ["CI4"], "motivo": "Encuesta sobre emotion AI con neurodiversos; percepciones de usuarios, sin artefacto ni fase SDLC", "duda": false, "acuerdo": true}
+{"id": "R012", "decision": "NO", "criterios": ["CE1"], "motivo": "NLP y errores léxicos en preescolares autistas; caracterización clínica, sin software de accesibilidad evaluado", "duda": false, "acuerdo": true}
+{"id": "R013", "decision": "NO", "criterios": ["CI3"], "motivo": "Reactividad cerebrovascular tras conmoción pediátrica; sin autismo, TDAH ni discapacidad cognitiva del PICOC", "duda": false, "acuerdo": true}
+{"id": "R014", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión sistemática de IA para diagnóstico de TEA; artículo secundario centrado en diagnóstico", "duda": false, "acuerdo": true}
+{"id": "R015", "decision": "NO", "criterios": ["CI3"], "motivo": "Segmentación de imagen médica con detección OOD; sin población con discapacidad cognitiva o neurodivergencia", "duda": false, "acuerdo": true}
+{"id": "R016", "decision": "SI", "criterios": [], "motivo": "Prompt engineering y accesibilidad cognitiva LLM; SDLC no en resumen", "duda": true, "acuerdo": false}
+{"id": "R017", "decision": "NO", "criterios": ["CE5"], "motivo": "Modelado de atención con eye-tracking web en neurodivergentes; publicación ACM de congreso", "duda": false, "acuerdo": true}
+{"id": "R018", "decision": "NO", "criterios": ["CE4"], "motivo": "Scoping review de GenAI en rehabilitación y discapacidad; síntesis secundaria sin primario SDLC", "duda": false, "acuerdo": true}
+{"id": "R019", "decision": "NO", "criterios": ["CE5"], "motivo": "Entrevistas cualitativas sobre chatbots e IA en neurodivergentes; acta de congreso ACM", "duda": false, "acuerdo": true}
+{"id": "R020", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión del GPT para educación superior inclusiva en discapacidades de aprendizaje; artículo de revisión", "duda": false, "acuerdo": true}
+{"id": "R021", "decision": "NO", "criterios": ["CE1"], "motivo": "Predicción de diagnóstico autismo y TDAH en historiales clínicos; modelos diagnósticos sin software accesible", "duda": false, "acuerdo": true}
+{"id": "R022", "decision": "NO", "criterios": ["CE5"], "motivo": "Programas adaptativos de lectura en autismo asistidos por IA docente; acta de congreso, enfoque pedagógico", "duda": false, "acuerdo": true}
+{"id": "R023", "decision": "NO", "criterios": ["CE5"], "motivo": "Póster sobre afinidades y riesgos de ChatGPT en usuarios autistas; comunicación corta de congreso", "duda": false, "acuerdo": true}
+{"id": "R024", "decision": "NO", "criterios": ["CI4"], "motivo": "Plataforma VR multimodal para colaboración autismo-neurotípico; retroalimentación basada en reglas, sin IA ni SDLC", "duda": false, "acuerdo": true}
+{"id": "R025", "decision": "NO", "criterios": ["CE1"], "motivo": "Detección de dislexia multimodal con XGBoost incremental; cribado diagnóstico, sin artefacto de accesibilidad evaluado", "duda": false, "acuerdo": true}
+{"id": "R026", "decision": "NO", "criterios": ["CI4"], "motivo": "Diseño de asientos adaptativos para TEA con GenAI en imágenes; mobiliario físico, no ciclo de vida del software", "duda": false, "acuerdo": true}
+{"id": "R027", "decision": "NO", "criterios": ["CE1"], "motivo": "ML asocia patrones de sueño y TEA infantil; predicción y subgrupos de riesgo, sin software evaluado", "duda": false, "acuerdo": true}
+{"id": "R028", "decision": "NO", "criterios": ["CE5"], "motivo": "Tesis sobre diagnóstico ADHD con fMRI y ML; formato tesis/conferencia PHM, enfoque diagnóstico", "duda": false, "acuerdo": true}
+{"id": "R029", "decision": "NO", "criterios": ["CE4"], "motivo": "Metaanálisis de chatbots de TCC para ansiedad y depresión; revisión sistemática sin neurodivergencia ni SDLC", "duda": false, "acuerdo": true}
+{"id": "R030", "decision": "SI", "criterios": [], "motivo": "Modelo cualitativo de e-learning inclusivo con IA para discapacidad cognitiva; fase SDLC no explicitada en resumen", "duda": true, "acuerdo": true}
+{"id": "R031", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión de literatura sobre IA y aprendizaje en niños con TDAH; síntesis secundaria", "duda": false, "acuerdo": true}
+{"id": "R032", "decision": "NO", "criterios": ["CI4"], "motivo": "Diseño de fuente griega para dislexia; tipografía y legibilidad sin intervención de IA en el estudio", "duda": false, "acuerdo": true}
+{"id": "R033", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión sistemática de LLM para accesibilidad web; artículo secundario sin estudio primario SDLC", "duda": false, "acuerdo": true}
+{"id": "R034", "decision": "NO", "criterios": ["CE1"], "motivo": "Marcadores digitales de interacción táctil móvil para cribado de TEA; clasificación diagnóstica ASD", "duda": false, "acuerdo": true}
+{"id": "R035", "decision": "NO", "criterios": ["CE5"], "motivo": "Capítulo: simplificación de texto con LLM para discapacidad intelectual leve; acta o capítulo de libro", "duda": false, "acuerdo": true}
+{"id": "R036", "decision": "NO", "criterios": ["CE1"], "motivo": "NEUROCOG-DysNet para cribado de dislexia con ML; screening clínico, sin artefacto de accesibilidad evaluado", "duda": false, "acuerdo": true}
+{"id": "R037", "decision": "NO", "criterios": ["CE5"], "motivo": "Capítulo marco ED-PLAT de personalización para neurodiversidad; publicación en libro, guías de diseño", "duda": false, "acuerdo": true}
+{"id": "R038", "decision": "NO", "criterios": ["CE5"], "motivo": "Marco de asistente de productividad para TDAH con ML en dispositivo; acta de congreso ACM", "duda": false, "acuerdo": true}
+{"id": "R039", "decision": "NO", "criterios": ["CE1"], "motivo": "Segmentación automática de voz en sesiones clínicas con niños autistas; apoyo a modelado clínico, no software accesible", "duda": false, "acuerdo": true}
+{"id": "R040", "decision": "SI", "criterios": [], "motivo": "Sistema asistivo educativo para TEA con eye-tracking y ML; teclado virtual diseñado e evaluado empíricamente", "duda": false, "acuerdo": true}
+{"id": "R041", "decision": "NO", "criterios": ["CE1"], "motivo": "Arquitectura multimodal FIAP-Digital para estratificación translacional en autismo; hipótesis clínica sin artefacto de software en ciclo de vida", "duda": false, "acuerdo": true}
+{"id": "R042", "decision": "NO", "criterios": ["CI4"], "motivo": "Modelos de conectividad cerebral predicen lectura y lenguaje en dislexia; neuroimagen, sin IA en desarrollo de software", "duda": false, "acuerdo": true}
+{"id": "R043", "decision": "NO", "criterios": ["CE3"], "motivo": "ML clasifica estrés y participación con señales fisiológicas en terapia con juegos serios; rehabilitación, no ciclo de vida del software", "duda": false, "acuerdo": true}
+{"id": "R044", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión de extracción de rasgos e IA para detección de TEA en múltiples modalidades; síntesis secundaria", "duda": false, "acuerdo": true}
+{"id": "R045", "decision": "NO", "criterios": ["CI4"], "motivo": "Modelo de implementación de terapia TDAH; sin artefacto ni fase SDLC", "duda": false, "acuerdo": false}
+{"id": "R046", "decision": "NO", "criterios": ["CE1"], "motivo": "Canvas Dx evalúa rendimiento diagnóstico de IA para autismo en uso real; solo diagnóstico, sin desarrollo de software", "duda": false, "acuerdo": true}
+{"id": "R047", "decision": "SI", "criterios": ["CI3", "CI4"], "motivo": "Plataforma en línea para codificación BOSCC y apoyo al desarrollo de codificación automática con ML en TEA", "duda": true, "acuerdo": true}
+{"id": "R048", "decision": "NO", "criterios": ["CI3"], "motivo": "GPT-4 anota severidad fenotípica en ontología HPO para enfermedades raras; población no centrada en neurodivergencia del picoc", "duda": false, "acuerdo": true}
+{"id": "R049", "decision": "NO", "criterios": ["CE5"], "motivo": "NeuroBridge con LLM para perspectiva neurotípica; acta ACM, sin ciclo de vida del software", "duda": false, "acuerdo": true}
+{"id": "R050", "decision": "NO", "criterios": ["CE5", "CE3"], "motivo": "Agente AR y LLM para entrenamiento social ABA en autismo; acta de congreso y tutor inteligente terapéutico", "duda": false, "acuerdo": true}
+{"id": "R051", "decision": "NO", "criterios": ["CE5"], "motivo": "Prototipo con IA generativa para hotspots en CAA en niños autistas; publicación ACM de congreso", "duda": false, "acuerdo": true}
+{"id": "R052", "decision": "NO", "criterios": ["CE1"], "motivo": "Transfer learning y XAI para detección de TEA en conjuntos de cribado; clasificación diagnóstica sin artefacto de software evaluado", "duda": false, "acuerdo": true}
+{"id": "R053", "decision": "NO", "criterios": ["CE1"], "motivo": "CNN y SVM clasifican gravedad de TEA a partir de dibujos infantiles; cribado diagnóstico por visión computacional", "duda": false, "acuerdo": true}
+{"id": "R054", "decision": "NO", "criterios": ["CE5"], "motivo": "Auditoría de sesgos en consejos de LLM para usuarios autistas; estudio HCI en acta ACM", "duda": false, "acuerdo": true}
+{"id": "R055", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión sistemática PRISMA de e-learning gamificado personalizado para aprendices neurodivergentes", "duda": false, "acuerdo": true}
+{"id": "R056", "decision": "NO", "criterios": ["CI4"], "motivo": "Deep learning segmenta audio y modela sincronía prosódica padre-hijo en autismo; investigación conductual, no software evaluado", "duda": false, "acuerdo": true}
+{"id": "R057", "decision": "NO", "criterios": ["CE1"], "motivo": "ASIST, chatbot de IA para cribado y derivación de autismo en adultos; triaje diagnóstico sin ciclo de vida del software", "duda": false, "acuerdo": true}
+{"id": "R058", "decision": "SI", "criterios": ["CI3", "CI4"], "motivo": "Sistema experto basado en reglas con Flask y PostgreSQL para cribado temprano de dislexia y otras dificultades de aprendizaje", "duda": false, "acuerdo": true}
+{"id": "R059", "decision": "NO", "criterios": ["CE3"], "motivo": "PaiCoach es coaching parental terapéutico; producto tutor, no SDLC", "duda": false, "acuerdo": false}
+{"id": "R060", "decision": "NO", "criterios": ["CI3"], "motivo": "Modelo de volumetría cerebral predice resultados psicomotores en neonatos pretérmino; población no del picoc", "duda": false, "acuerdo": true}
+{"id": "R061", "decision": "NO", "criterios": ["CE5", "CI4"], "motivo": "ChatGPT simplifica textos académicos para dislexia; acta ACM y uso de herramienta existente, sin desarrollo de software", "duda": false, "acuerdo": true}
+{"id": "R062", "decision": "NO", "criterios": ["CE1"], "motivo": "ML y metagenómica para diagnóstico de TEA y biomarcadores; predicción clínica sin artefacto de software en ciclo de vida", "duda": false, "acuerdo": true}
+{"id": "R063", "decision": "NO", "criterios": ["CE1"], "motivo": "fNIRS y ML clasifican adultos con TDAH frente a controles; biomarcador diagnóstico, no desarrollo de software", "duda": false, "acuerdo": true}
+{"id": "R064", "decision": "NO", "criterios": ["CI3"], "motivo": "Cohorte de síndrome de distrés respiratorio neonatal con ML pronóstico; población neonatal sin neurodivergencia del marco", "duda": false, "acuerdo": true}
+{"id": "R065", "decision": "NO", "criterios": ["CE1"], "motivo": "ML predice índice de velocidad WISC-V desde datos de juego serio en TDAH; monitorización cognitiva, no ciclo de vida del software", "duda": false, "acuerdo": true}
+{"id": "R066", "decision": "NO", "criterios": ["CI4"], "motivo": "Encuesta a docentes sobre percepciones de ChatGPT para estudiantes con dificultades de aprendizaje; sin artefacto de software", "duda": false, "acuerdo": true}
+{"id": "R067", "decision": "NO", "criterios": ["CE1", "CE5"], "motivo": "LLM y eye-tracking detectan dislexia; clasificación diagnóstica en acta ACM", "duda": false, "acuerdo": true}
+{"id": "R068", "decision": "NO", "criterios": ["CE1", "CE5"], "motivo": "Aplicación web con ML para cribado de TDAH escolar; detección temprana en acta de congreso", "duda": false, "acuerdo": true}
+{"id": "R069", "decision": "NO", "criterios": ["CE3"], "motivo": "PPO y RL en juego policía-ladrón como intervención cognitiva en autismo; terapia gamificada, no ciclo de vida del software", "duda": false, "acuerdo": true}
+{"id": "R070", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión sistemática de plomo y conducta antisocial; síntesis secundaria, ML solo en cribado bibliográfico", "duda": false, "acuerdo": true}
+{"id": "R071", "decision": "NO", "criterios": ["CI4"], "motivo": "Marco teórico del efecto leapfrogging con IA generativa en educación superior; contribución no empírica sobre software", "duda": false, "acuerdo": true}
+{"id": "R072", "decision": "NO", "criterios": ["CI4"], "motivo": "Encuesta a estudiantes autistas STEM sobre aceptabilidad de IA en mentoría; sin intervención en ciclo de vida del software", "duda": false, "acuerdo": true}
+{"id": "R073", "decision": "NO", "criterios": ["CE3"], "motivo": "Tutor virtual TEAMIGO con IA para autorregulación emocional en TEA y TDAH; producto terapéutico principal", "duda": false, "acuerdo": true}
+{"id": "R074", "decision": "NO", "criterios": ["CE1"], "motivo": "Minería de opinión y ML para identificación temprana de TEA con entrevistas parentales; detección, sin software en SDLC", "duda": false, "acuerdo": true}
+{"id": "R075", "decision": "NO", "criterios": ["CE1"], "motivo": "SNGP estima edad cerebral con incertidumbre en RM; neuroimagen diagnóstica, TDAH solo como validación", "duda": false, "acuerdo": true}
+{"id": "R076", "decision": "NO", "criterios": ["CI4"], "motivo": "Entrevistas a estudiantes con discapacidad sobre uso de ChatGPT en educación superior; percepciones, no desarrollo de software", "duda": false, "acuerdo": true}
+{"id": "R077", "decision": "NO", "criterios": ["CI3"], "motivo": "Red convolucional estima movimiento en RM para morfometría; herramienta de neuroimagen, TDAH citado como contexto de sesgo", "duda": false, "acuerdo": true}
+{"id": "R078", "decision": "NO", "criterios": ["CI3"], "motivo": "Dieta de leche humana y maturación cerebral en pretérmino; nutrición neonatal sin población del picoc", "duda": false, "acuerdo": true}
+{"id": "R079", "decision": "NO", "criterios": ["CI3"], "motivo": "ML perfila conducta en ratones Shank3 modelo de autismo; modelo animal, no población humana del marco", "duda": false, "acuerdo": true}
+{"id": "R080", "decision": "NO", "criterios": ["CE5", "CE3"], "motivo": "Plataforma AI-Edu-App con tutoría y cribado de autismo en K-12; acta ACM y sistema de tutoría inteligente", "duda": false, "acuerdo": true}
+{"id": "R081", "decision": "NO", "criterios": ["CE1"], "motivo": "Modelos ML predicen diagnóstico de autismo con historias clínicas; solo detección, sin artefacto de software accesible", "duda": false, "acuerdo": true}
+{"id": "R082", "decision": "NO", "criterios": ["CE1"], "motivo": "Marco de validación de ML para triaje de TEA; enfoque en predicción clínica y robustez, no ciclo de vida de software", "duda": false, "acuerdo": true}
+{"id": "R083", "decision": "NO", "criterios": ["CE1"], "motivo": "ML clasifica y predice diagnóstico de autismo con tareas cognitivas online; cribado diagnóstico sin software evaluado", "duda": false, "acuerdo": true}
+{"id": "R084", "decision": "NO", "criterios": ["CE1"], "motivo": "Ensamble deep/traditional learning para clasificar TEA en dataset de cribado; solo diagnóstico computacional", "duda": false, "acuerdo": true}
+{"id": "R085", "decision": "NO", "criterios": ["CE1"], "motivo": "MVUT_GAT sobre fMRI para reconocer TEA; neuroimagen diagnóstica, sin artefacto de software de accesibilidad", "duda": false, "acuerdo": true}
+{"id": "R086", "decision": "NO", "criterios": ["CI3"], "motivo": "LLM RareDAI elige pruebas genéticas en enfermedades raras; autismo en metadatos, población no neurodivergente del estudio", "duda": false, "acuerdo": true}
+{"id": "R087", "decision": "NO", "criterios": ["CI4"], "motivo": "SearchPath apoya búsqueda exploratoria con dislexia; interfaz y visualización sin IA en el sistema descrito", "duda": false, "acuerdo": true}
+{"id": "R088", "decision": "NO", "criterios": ["CI4"], "motivo": "Cualitativo con advocacy; evalúa textos simplificados, no ingeniería software", "duda": false, "acuerdo": false}
+{"id": "R089", "decision": "NO", "criterios": ["CE1"], "motivo": "Actigrafía y ML clasifican grupos BD/TDAH en hospital; diagnóstico psiquiátrico, no software inclusivo", "duda": false, "acuerdo": true}
+{"id": "R090", "decision": "NO", "criterios": ["CE3"], "motivo": "AR y sensores fisiológicos en educación especial adaptativa; intervención pedagógica, no ciclo de vida de software", "duda": false, "acuerdo": true}
+{"id": "R091", "decision": "NO", "criterios": ["CE3"], "motivo": "App móvil EmoBridge para reconocimiento emocional en TEA; tecnología asistiva gamificada, fuera del SDLC", "duda": false, "acuerdo": true}
+{"id": "R092", "decision": "NO", "criterios": ["CE4"], "motivo": "Análisis bibliométrico de investigación en discapacidad en Arabia Saudí; síntesis secundaria sin estudio primario", "duda": false, "acuerdo": true}
+{"id": "R093", "decision": "SI", "criterios": [], "motivo": "CMS Iris con LLM para acomodaciones tipográficas y lenguaje en dislexia; desarrollo y evaluación de plataforma", "duda": true, "acuerdo": true}
+{"id": "R094", "decision": "NO", "criterios": ["CI3"], "motivo": "Sordera inatencional en obra con ruido ocupacional; población general sin discapacidad cognitiva ni neurodivergencia", "duda": false, "acuerdo": true}
+{"id": "R095", "decision": "NO", "criterios": ["CE1"], "motivo": "Sistema humano-IA valora informes escolares para evaluación de TDAH; apoyo diagnóstico, no software accesible", "duda": false, "acuerdo": true}
+{"id": "R096", "decision": "NO", "criterios": ["CI4"], "motivo": "Compara calidad de información sobre autismo de ChatGPT, Gemini y Copilot; sin artefacto ni fase SDLC", "duda": false, "acuerdo": true}
+{"id": "R097", "decision": "NO", "criterios": ["CE3"], "motivo": "Sistema MR Understood apoya comunicación en adultos con TDAH; intervención asistiva diaria, no SDLC", "duda": false, "acuerdo": true}
+{"id": "R098", "decision": "NO", "criterios": ["CI4"], "motivo": "LLM analizan cobertura semántica de FAQs de TDAH frente a foros; estudio de necesidades informativas", "duda": false, "acuerdo": true}
+{"id": "R099", "decision": "NO", "criterios": ["CI4"], "motivo": "Entrevistas cualitativas sobre GenAI y productividad en estudiantes neurodivergentes; sin desarrollo de software", "duda": false, "acuerdo": true}
+{"id": "R100", "decision": "NO", "criterios": ["CE1"], "motivo": "ML sobre fMRI predice capacidades cognitivas en TDAH; neurociencia predictiva, sin artefacto de software", "duda": false, "acuerdo": true}
+{"id": "R101", "decision": "NO", "criterios": ["CE5"], "motivo": "Procedia CIR; actas de congreso, fuera de artículo de revista", "duda": false, "acuerdo": false}
+{"id": "R102", "decision": "NO", "criterios": ["CE4"], "motivo": "Scoping review de IA para diagnóstico de disgrafía; revisión secundaria sin estudio empírico primario", "duda": false, "acuerdo": true}
+{"id": "R103", "decision": "NO", "criterios": ["CE1"], "motivo": "CNN-BiLSTM en escritura infantil para cribado de dislexia; solo detección temprana, sin software evaluado", "duda": false, "acuerdo": true}
+{"id": "R104", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión sistemática de GAI en aulas inclusivas; síntesis de literatura sin estudio primario propio", "duda": false, "acuerdo": true}
+{"id": "R105", "decision": "NO", "criterios": ["CE3"], "motivo": "Metodología para evaluar robots de peluche con IA en educación y rehabilitación TEA; producto robótico principal", "duda": false, "acuerdo": true}
+{"id": "R106", "decision": "SI", "criterios": [], "motivo": "Web ATECA con IA para análisis y adaptación semiautomática a lectura fácil en discapacidad cognitiva", "duda": true, "acuerdo": true}
+{"id": "R107", "decision": "NO", "criterios": ["CE1"], "motivo": "Random forest detecta TEA en dataset de cribado adulto; clasificación diagnóstica sin artefacto de accesibilidad", "duda": false, "acuerdo": true}
+{"id": "R108", "decision": "NO", "criterios": ["CE5"], "motivo": "Demo interactiva InteractiSense, juego tangible para engagement social en TEA; comunicación de congreso tipo demo", "duda": false, "acuerdo": true}
+{"id": "R109", "decision": "NO", "criterios": ["CE4"], "motivo": "Scoping review de ML en factores maternos y desarrollo infantil; revisión secundaria", "duda": false, "acuerdo": true}
+{"id": "R110", "decision": "NO", "criterios": ["CI3"], "motivo": "Modelos de riesgo de suicidio en población general de Maryland; TDAH solo en comorbilidades, no foco poblacional", "duda": false, "acuerdo": true}
+{"id": "R111", "decision": "NO", "criterios": ["CI4"], "motivo": "NLP en posts de r/ADHD sobre validación y estigma; análisis de redes sociales sin IA en SDLC de software", "duda": false, "acuerdo": true}
+{"id": "R112", "decision": "NO", "criterios": ["CE1"], "motivo": "ML semi-supervisado predice respuesta a intervención fonológica en NEE; pronóstico educativo, no software", "duda": false, "acuerdo": true}
+{"id": "R113", "decision": "NO", "criterios": ["CI4"], "motivo": "Protocolo de EEG subcutáneo prolongado en encefalopatías epilépticas; monitorización clínica, no SDLC", "duda": false, "acuerdo": true}
+{"id": "R114", "decision": "NO", "criterios": ["CE1"], "motivo": "Entrevistas clínicas con GenAI simulan DSM-5 incluyendo TDAH/TEA; evaluación diagnóstica, no software inclusivo", "duda": false, "acuerdo": true}
+{"id": "R115", "decision": "NO", "criterios": ["CI3"], "motivo": "SimCLRv2 clasifica imágenes geológicas de núcleos marinos; geociencias sin población neurodivergente", "duda": false, "acuerdo": true}
+{"id": "R116", "decision": "NO", "criterios": ["CI3"], "motivo": "Pipeline de preprocesamiento EEG para conectividad funcional; métodos generales, autismo no es población del estudio", "duda": false, "acuerdo": true}
+{"id": "R117", "decision": "NO", "criterios": ["CE1"], "motivo": "Comparativa SMOTE para clasificadores en datasets clínicos TEA-infantil y ictus; técnica ML, no software accesible", "duda": false, "acuerdo": true}
+{"id": "R118", "decision": "NO", "criterios": ["CI4"], "motivo": "SpliceAI predice variantes de splicing en cohorte genética TEA; bioinformática in silico, sin SDLC de software", "duda": false, "acuerdo": true}
+{"id": "R119", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión sistemática de avances de IA en detección de dislexia; artículo de síntesis secundaria", "duda": false, "acuerdo": true}
+{"id": "R120", "decision": "NO", "criterios": ["CE3"], "motivo": "Sistema narrativo de arte digital con ML para arteterapia en depresión y TEA; rehabilitación terapéutica principal", "duda": false, "acuerdo": true}
+{"id": "R121", "decision": "NO", "criterios": ["CE1"], "motivo": "ML predice trayectorias adaptativas clínicas en autismo; sin artefacto de software accesible evaluado", "duda": false, "acuerdo": true}
+{"id": "R122", "decision": "NO", "criterios": ["CE1"], "motivo": "ML clasifica ASD por variabilidad de la marcha como ayuda diagnóstica; solo detección", "duda": false, "acuerdo": true}
+{"id": "R123", "decision": "SI", "criterios": [], "motivo": "CNReader para dislexia; herramienta evaluada, fase SDLC no en resumen", "duda": true, "acuerdo": false}
+{"id": "R124", "decision": "NO", "criterios": ["CE4"], "motivo": "Scoping review PRISMA sobre tecnología accesible en síndrome de Down; síntesis secundaria", "duda": false, "acuerdo": true}
+{"id": "R125", "decision": "NO", "criterios": ["CE1"], "motivo": "WEL-XGB identifica y diagnostica TEA específicos; aplicación de cribado, no inclusión en SDLC", "duda": false, "acuerdo": true}
+{"id": "R126", "decision": "NO", "criterios": ["CI3"], "motivo": "Niños chinos en Japón y adaptación escolar; text mining sin población neurodivergente del marco", "duda": false, "acuerdo": true}
+{"id": "R127", "decision": "NO", "criterios": ["CE1"], "motivo": "LLM evalúa cribado temprano de autismo desde relatos parentales; solo detección de riesgo", "duda": false, "acuerdo": true}
+{"id": "R128", "decision": "NO", "criterios": ["CE5"], "motivo": "Hallazgos EMNLP 2025; acta de congreso sobre LLM de intervención clínica", "duda": false, "acuerdo": true}
+{"id": "R129", "decision": "NO", "criterios": ["CE5"], "motivo": "Autoetnografía en congreso ACM; uso de GAI sin estudio de ciclo de vida del software", "duda": false, "acuerdo": true}
+{"id": "R130", "decision": "NO", "criterios": ["CE5"], "motivo": "AutismCarebot presentado en acta ACM; agente conversacional sin fase SDLC en el resumen", "duda": false, "acuerdo": true}
+{"id": "R131", "decision": "NO", "criterios": ["CE5"], "motivo": "Estudio de antropomorfismo en acta ACM; evalúa chatbot existente, no desarrollo SDLC", "duda": false, "acuerdo": true}
+{"id": "R132", "decision": "NO", "criterios": ["CI4"], "motivo": "Pipeline de IA analiza sincronía en terapia autismo; monitorización clínica sin artefacto SDLC", "duda": false, "acuerdo": true}
+{"id": "R133", "decision": "NO", "criterios": ["CI3"], "motivo": "Calidad de chatbots sobre hidradenitis supurativa; población dermatológica, no neurodivergencia", "duda": false, "acuerdo": true}
+{"id": "R134", "decision": "NO", "criterios": ["CE5"], "motivo": "Procedia CIRP; comunicación de congreso sobre instrucciones con GenAI en manufactura", "duda": false, "acuerdo": true}
+{"id": "R135", "decision": "NO", "criterios": ["CE5"], "motivo": "Autiverse en acta ACM; app de diario con LLM sin fase del ciclo de vida explicitada", "duda": false, "acuerdo": true}
+{"id": "R136", "decision": "NO", "criterios": ["CI3"], "motivo": "Modelo murino Shank3 y ML genotípico; experimentación animal sin software para usuarios", "duda": false, "acuerdo": true}
+{"id": "R137", "decision": "NO", "criterios": ["CE5"], "motivo": "Intervención con chatbot en acta ACM; reduce soledad, no IA en ciclo de vida del software", "duda": false, "acuerdo": true}
+{"id": "R138", "decision": "NO", "criterios": ["CE5"], "motivo": "COGASet en acta ACM; dataset y evaluación de accesibilidad cognitiva en congreso", "duda": false, "acuerdo": true}
+{"id": "R139", "decision": "NO", "criterios": ["CE1"], "motivo": "Escala SCS y random forest para cribado telemédico de autismo; solo detección temprana", "duda": false, "acuerdo": true}
+{"id": "R140", "decision": "NO", "criterios": ["CE5"], "motivo": "Evaluación de segmentación XR en acta ACM; inclusión de usuarios con DI sin foco SDLC", "duda": false, "acuerdo": true}
+{"id": "R141", "decision": "NO", "criterios": ["CE4"], "motivo": "Capítulo de revisión bibliográfica sobre GenAI y neurodiversidad; sin estudio empírico primario", "duda": false, "acuerdo": true}
+{"id": "R142", "decision": "NO", "criterios": ["CE3"], "motivo": "Robot social NAO en consulta médica; producto principal robot, no ciclo de vida del software", "duda": false, "acuerdo": true}
+{"id": "R143", "decision": "NO", "criterios": ["CE1"], "motivo": "Comparativa de clasificadores ML para detección temprana de ASD en lactantes", "duda": false, "acuerdo": true}
+{"id": "R144", "decision": "NO", "criterios": ["CE5"], "motivo": "Capítulo Springer de congreso; marco UXexcelerateAI para HRI sin SDLC declarado", "duda": false, "acuerdo": true}
+{"id": "R145", "decision": "SI", "criterios": [], "motivo": "Piloto AR y GenAI TDAH; engagement educativo, SDLC no en resumen", "duda": true, "acuerdo": false}
+{"id": "R146", "decision": "NO", "criterios": ["CE5"], "motivo": "Plataforma VR+LLM para coaches en acta ACM; formación vocacional, no ciclo de vida software", "duda": false, "acuerdo": true}
+{"id": "R147", "decision": "SI", "criterios": [], "motivo": "App móvil adaptativa con IA y analítica de voz para dislexia fonológica; confirmar SDLC a texto completo", "duda": true, "acuerdo": true}
+{"id": "R148", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión sistemática de NLP en salud mental juvenil; síntesis sin estudio primario de software", "duda": false, "acuerdo": true}
+{"id": "R149", "decision": "NO", "criterios": ["CE1"], "motivo": "ML predice genes de trastornos del neurodesarrollo en genómica; sin artefacto de software", "duda": false, "acuerdo": true}
+{"id": "R150", "decision": "NO", "criterios": ["CE1"], "motivo": "NLP compara ensayos de adolescentes autistas; análisis epidemiológico sin software evaluado", "duda": false, "acuerdo": true}
+{"id": "R151", "decision": "SI", "criterios": [], "motivo": "Inquiry contextual y preferencias de diseño CDS autismo; no es solo diagnóstico", "duda": true, "acuerdo": false}
+{"id": "R152", "decision": "NO", "criterios": ["CI4"], "motivo": "Rendimiento en entrevistas virtuales con TDAH; eye-tracking sin IA en desarrollo de software", "duda": false, "acuerdo": true}
+{"id": "R153", "decision": "NO", "criterios": ["CE1"], "motivo": "AV-FOS genera medidas FOS-R-III desde vídeo; automatiza escala clínica de autismo", "duda": false, "acuerdo": true}
+{"id": "R154", "decision": "NO", "criterios": ["CE1"], "motivo": "Biometría multimodal en tablet para cribado de síntomas TDAH; solo detección", "duda": false, "acuerdo": true}
+{"id": "R155", "decision": "NO", "criterios": ["CE1"], "motivo": "eNSMBL-PASD predice genes conductores de ASD; diagnóstico genómico computacional", "duda": false, "acuerdo": true}
+{"id": "R156", "decision": "NO", "criterios": ["CE1"], "motivo": "NLP clasifica DI y TDAH desde informes psicológicos; modelo diagnóstico explicable", "duda": false, "acuerdo": true}
+{"id": "R157", "decision": "NO", "criterios": ["CI3"], "motivo": "Recursos digitales para adultos con cáncer y cuidado de hijos; no población del marco", "duda": false, "acuerdo": true}
+{"id": "R158", "decision": "NO", "criterios": ["CE5"], "motivo": "Serie de conferencias Journal of Physics; Ezaf móvil y web para autismo", "duda": false, "acuerdo": true}
+{"id": "R159", "decision": "NO", "criterios": ["CE5"], "motivo": "AIRoad en acta ACM; entorno inmersivo LLM para rehabilitación funcional en tráfico", "duda": false, "acuerdo": true}
+{"id": "R160", "decision": "NO", "criterios": ["CI3"], "motivo": "Educación previa al ictus y tests de lenguaje en afasia; población adquirida, no del marco", "duda": false, "acuerdo": true}
+{"id": "R161", "decision": "NO", "criterios": ["CE1"], "motivo": "GCN multimodal detecta dificultades de aprendizaje; solo diagnóstico temprano, sin artefacto de software evaluado", "duda": false, "acuerdo": true}
+{"id": "R162", "decision": "SI", "criterios": [], "motivo": "Plataforma SMILE con IA, federated learning y módulos CBT piloteada; neurodivergencia y software de apoyo clínico", "duda": true, "acuerdo": true}
+{"id": "R163", "decision": "NO", "criterios": ["CE5"], "motivo": "Reclutamiento inclusivo con evaluaciones IA adaptativas; copyright IEEE 2025, acta de congreso", "duda": false, "acuerdo": true}
+{"id": "R164", "decision": "NO", "criterios": ["CI4"], "motivo": "Sesgo TDAH en modelo que predice notas; estudio de equidad algorítmica sin ciclo de vida del software", "duda": false, "acuerdo": true}
+{"id": "R165", "decision": "NO", "criterios": ["CI4"], "motivo": "Compara legibilidad de LLM para educación TDAH; sin artefacto SDLC", "duda": false, "acuerdo": false}
+{"id": "R166", "decision": "NO", "criterios": ["CI3"], "motivo": "Benchmark clasificación ordinal de series temporales; sin población cognitiva ni neurodivergencia", "duda": false, "acuerdo": true}
+{"id": "R167", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión de terapéutica digital psiquiátrica aprobada FDA; síntesis secundaria sin estudio primario SDLC", "duda": false, "acuerdo": true}
+{"id": "R168", "decision": "NO", "criterios": ["CE1"], "motivo": "XGBoost y microestados EEG para diagnóstico TEA; biomarcadores neurofisiológicos, sin software", "duda": false, "acuerdo": true}
+{"id": "R169", "decision": "NO", "criterios": ["CE3"], "motivo": "NeuroWise coaching multiagente; intervención comunicacional, no SDLC", "duda": false, "acuerdo": false}
+{"id": "R170", "decision": "SI", "criterios": [], "motivo": "SeekPCMdb, base web con extracción LLM de mutaciones y enfermedades incluyendo autismo", "duda": true, "acuerdo": true}
+{"id": "R171", "decision": "SI", "criterios": [], "motivo": "Prototipo subtítulos en tiempo real con énfasis visual por palabra para TEA y accesibilidad", "duda": true, "acuerdo": true}
+{"id": "R172", "decision": "NO", "criterios": ["CI4"], "motivo": "Puntuaciones IA de severidad en craneosinostosis metópica; outcome neurocognitivo clínico sin software", "duda": false, "acuerdo": true}
+{"id": "R173", "decision": "SI", "criterios": [], "motivo": "Marco blockchain y aprendizaje federado para apps gamificadas TDAH infantiles; diseño de aplicación", "duda": true, "acuerdo": true}
+{"id": "R174", "decision": "NO", "criterios": ["CI3"], "motivo": "Encuestas sobre dificultades de programación con ChatGPT; estudiantes generales, sin población picoc", "duda": false, "acuerdo": true}
+{"id": "R175", "decision": "NO", "criterios": ["CI4"], "motivo": "PM3 y ML en transcriptómica cerebral autismo; biología computacional sin artefacto software SDLC", "duda": false, "acuerdo": true}
+{"id": "R176", "decision": "NO", "criterios": ["CE1"], "motivo": "SVM sobre sincronía en vídeo ADOS-2 clasifica autismo; marcador diagnóstico escalable", "duda": false, "acuerdo": true}
+{"id": "R177", "decision": "SI", "criterios": [], "motivo": "BEACH-Gaze, plataforma open source de analítica de mirada con casos TEA; ingeniería de software", "duda": true, "acuerdo": true}
+{"id": "R178", "decision": "NO", "criterios": ["CI3"], "motivo": "CCVAEGAN detecta anomalías en MRI fetal; población prenatal, no discapacidad cognitiva picoc", "duda": false, "acuerdo": true}
+{"id": "R179", "decision": "NO", "criterios": ["CE1"], "motivo": "CNN clasifica movimientos generales infantiles; predicción neurológica GMA automatizada", "duda": false, "acuerdo": true}
+{"id": "R180", "decision": "NO", "criterios": ["CE1"], "motivo": "Modelo solo con movimiento ocular detecta TEA; diagnóstico temprano sin producto software", "duda": false, "acuerdo": true}
+{"id": "R181", "decision": "NO", "criterios": ["CI3"], "motivo": "Visión por computador en cinemática de tronco en lactantes; sin autismo ni neurodivergencia picoc", "duda": false, "acuerdo": true}
+{"id": "R182", "decision": "NO", "criterios": ["CI4"], "motivo": "ML pronostica automutilación con wearables en autismo; monitorización clínica, no fase SDLC", "duda": false, "acuerdo": true}
+{"id": "R183", "decision": "SI", "criterios": [], "motivo": "Sistemas RAG y LLM mejoran gestión de recursos autismo para trabajadores sociales; herramientas evaluadas", "duda": true, "acuerdo": true}
+{"id": "R184", "decision": "NO", "criterios": ["CE2"], "motivo": "Interpretive Caption añade emoción vocal a subtítulos para sordos; accesibilidad auditiva sin población cognitiva", "duda": false, "acuerdo": true}
+{"id": "R185", "decision": "NO", "criterios": ["CI4"], "motivo": "Caso HuggingFace y barreras; recomendaciones sin IA empírica en SDLC", "duda": false, "acuerdo": false}
+{"id": "R186", "decision": "NO", "criterios": ["CI4"], "motivo": "Smartwatch y variabilidad cardíaca en terapia conducta disruptiva con TDAH comórbido; ensayo clínico", "duda": false, "acuerdo": true}
+{"id": "R187", "decision": "SI", "criterios": [], "motivo": "Chatbot GPT-4 para empleo y desalineación con usuarios neurodivergentes; logs y entrevistas de sistema", "duda": true, "acuerdo": true}
+{"id": "R188", "decision": "NO", "criterios": ["CI4"], "motivo": "Entrenamiento humano para distinguir textos IA; sin desarrollo ni evaluación de software accesible", "duda": false, "acuerdo": true}
+{"id": "R189", "decision": "NO", "criterios": ["CI3"], "motivo": "Kinetic Age predice edad por kinesia 3D en lactantes; métrica neurodesarrollo, población general", "duda": false, "acuerdo": true}
+{"id": "R190", "decision": "NO", "criterios": ["CE1"], "motivo": "Akshar Mitra criba dislexia con biomarcadores; screening, no accesibilidad software", "duda": false, "acuerdo": false}
+{"id": "R191", "decision": "NO", "criterios": ["CI4"], "motivo": "ML predice alfabetización árabe desde conciencia fonológica; investigación educativa sin ciclo software", "duda": false, "acuerdo": true}
+{"id": "R192", "decision": "NO", "criterios": ["CE5"], "motivo": "MIL patrones conductuales autismo; Student Abstract en acta AAAI", "duda": false, "acuerdo": true}
+{"id": "R193", "decision": "SI", "criterios": [], "motivo": "Análisis conversacional de altavoz LLM con mujer con discapacidad intelectual; diseño asistencia domiciliaria", "duda": true, "acuerdo": true}
+{"id": "R194", "decision": "NO", "criterios": ["CI4"], "motivo": "Marco UDL en Moodle para dificultades de aprendizaje; IA solo como trabajo futuro, sin implementación", "duda": false, "acuerdo": true}
+{"id": "R195", "decision": "NO", "criterios": ["CE1"], "motivo": "BioNeuroFusionNet fusiona voz y conducta para detectar discapacidades del desarrollo; cribado diagnóstico", "duda": false, "acuerdo": true}
+{"id": "R196", "decision": "NO", "criterios": ["CI4"], "motivo": "Procesos de Hawkes modelan inicio de agresión en autismo hospitalizado; analítica clínica sin software", "duda": false, "acuerdo": true}
+{"id": "R197", "decision": "SI", "criterios": [], "motivo": "Walkthrough participativo de agente conversacional triaje sanitario desde accesibilidad cognitiva", "duda": true, "acuerdo": true}
+{"id": "R198", "decision": "NO", "criterios": ["CI4"], "motivo": "Grupos focales barreras VRelax en psiquiatría; implementación VR sin IA en ciclo de vida software", "duda": false, "acuerdo": true}
+{"id": "R199", "decision": "SI", "criterios": [], "motivo": "Codesarrollo comunitario de app mHealth para transición adultez autismo latino; especificaciones artefacto", "duda": true, "acuerdo": true}
+{"id": "R200", "decision": "NO", "criterios": ["CE3"], "motivo": "Juguete táctil Pufff con ML para Rett; intervención lúdica rehabilitadora, no SDLC", "duda": false, "acuerdo": true}
+{"id": "R201", "decision": "NO", "criterios": ["CE1"], "motivo": "Ensambles MLP clasifican atención en EEG de niños TEA; monitoreo diagnóstico, sin artefacto software", "duda": false, "acuerdo": true}
+{"id": "R202", "decision": "NO", "criterios": ["CE1"], "motivo": "DNN predice outcomes en agenesia de cuerpo calloso; apoyo diagnóstico clínico, no SDLC", "duda": false, "acuerdo": true}
+{"id": "R203", "decision": "SI", "criterios": [], "motivo": "LingoLift, prototipo IA generativa de materiales orales personalizados para niños autistas", "duda": true, "acuerdo": true}
+{"id": "R204", "decision": "NO", "criterios": ["CE3"], "motivo": "SMUP combina VR, AR y asistente LLM para TND; juego terapéutico, no ciclo de vida software", "duda": false, "acuerdo": true}
+{"id": "R205", "decision": "NO", "criterios": ["CI4"], "motivo": "Marco teórico NCF de chatbots como andamiaje autismo; artículo de perspectiva sin estudio empírico SDLC", "duda": false, "acuerdo": true}
+{"id": "R206", "decision": "NO", "criterios": ["CI4"], "motivo": "Entrevistas cualitativas sobre herramientas lúdico-emocionales y actitudes a IA; sin desarrollo software", "duda": false, "acuerdo": true}
+{"id": "R207", "decision": "NO", "criterios": ["CI4"], "motivo": "CCMH analiza texto salud mental con diccionarios semánticos; ADHD entre condiciones, sin población ni SDLC", "duda": false, "acuerdo": true}
+{"id": "R208", "decision": "SI", "criterios": [], "motivo": "MTCAI simplifica textos médicos con LLM para adultos con discapacidad intelectual y del desarrollo", "duda": true, "acuerdo": true}
+{"id": "R209", "decision": "NO", "criterios": ["CI3"], "motivo": "Flow matching genera conectomas en prematuros; neuroimagen sintética sin población picoc", "duda": false, "acuerdo": true}
+{"id": "R210", "decision": "NO", "criterios": ["CE3"], "motivo": "Juego serio EEG-BCI SkiSport entrena atención TDAH; rehabilitación cognitiva, no fase SDLC", "duda": false, "acuerdo": true}
+{"id": "R211", "decision": "NO", "criterios": ["CE1"], "motivo": "XGBoost y SHAP en cribado TEA con cuestionarios UCI; diagnóstico temprano automatizado", "duda": false, "acuerdo": true}
+{"id": "R212", "decision": "NO", "criterios": ["CE3"], "motivo": "Chatbot CNN asistente docente autista; tutor inteligente principal", "duda": false, "acuerdo": false}
+{"id": "R213", "decision": "NO", "criterios": ["CI4"], "motivo": "Estudio cualitativo trastornos del habla en TDAH con mención herramientas IA; sin software evaluado", "duda": false, "acuerdo": true}
+{"id": "R214", "decision": "NO", "criterios": ["CE1"], "motivo": "SmartSage, agente VR LLM para evaluación cognitiva TDAH; evaluación clínica, no desarrollo software", "duda": false, "acuerdo": true}
+{"id": "R215", "decision": "NO", "criterios": ["CE1"], "motivo": "Comparativa ML en datos de cribado TEA; clasificación diagnóstica sin artefacto", "duda": false, "acuerdo": true}
+{"id": "R216", "decision": "NO", "criterios": ["CI4"], "motivo": "Marco factores humanos en intervención autismo mediada por tecnología; encuestas sin IA en SDLC", "duda": false, "acuerdo": true}
+{"id": "R217", "decision": "NO", "criterios": ["CE3"], "motivo": "Plataforma juguete inteligente para turnos en gemelos neurodivergentes; intervención temprana lúdica", "duda": false, "acuerdo": true}
+{"id": "R218", "decision": "NO", "criterios": ["CI4"], "motivo": "Entrevistas sobre percepción computacional en salud mental; autismo en muestra, sin producto software", "duda": false, "acuerdo": true}
+{"id": "R219", "decision": "SI", "criterios": [], "motivo": "Prototipo móvil lectura digital con personalización y sugerencias inteligentes para dislexia", "duda": true, "acuerdo": true}
+{"id": "R220", "decision": "NO", "criterios": ["CE3"], "motivo": "Foxy tutor conversacional dislexia; intervención terapéutica, no SDLC", "duda": false, "acuerdo": false}
+{"id": "R221", "decision": "NO", "criterios": ["CE1"], "motivo": "fMRI y tractografía en preescolares TEA; biomarcadores estructurales, sin software accesible", "duda": false, "acuerdo": true}
+{"id": "R222", "decision": "NO", "criterios": ["CI3"], "motivo": "GAN-CNN diagnostica patrones aprendizaje STEM en aula; estudiantes generales, sin población picoc", "duda": false, "acuerdo": true}
+{"id": "R223", "decision": "NO", "criterios": ["CE3"], "motivo": "Tutor inteligente e-learning neurodiversidad; tutoría adaptativa, no SDLC", "duda": false, "acuerdo": false}
+{"id": "R224", "decision": "NO", "criterios": ["CI4"], "motivo": "Estudio de caso diseño HCI para procesamiento gestalt del lenguaje autista; sin IA en resumen", "duda": false, "acuerdo": true}
+{"id": "R225", "decision": "NO", "criterios": ["CI4"], "motivo": "Lectura autodirigida con y sin TDAH; psicología experimental sin técnicas IA ni software", "duda": false, "acuerdo": true}
+{"id": "R226", "decision": "NO", "criterios": ["CE1"], "motivo": "ML explicable con mirada en comprensión audiovisual para detección TEA infantil", "duda": false, "acuerdo": true}
+{"id": "R227", "decision": "SI", "criterios": [], "motivo": "Cinco componentes de diseño inclusivo TUI para dislexia y neurodiversidad en lectura", "duda": true, "acuerdo": true}
+{"id": "R228", "decision": "SI", "criterios": [], "motivo": "NeuRoam, prototipo app tablet prototipada con LLM siguiendo WCAG y COGA para neurodivergentes", "duda": true, "acuerdo": true}
+{"id": "R229", "decision": "NO", "criterios": ["CI3"], "motivo": "Random forest en MRI cuantitativa modelo animal esquizofrenia-depresión; sin población humana picoc", "duda": false, "acuerdo": true}
+{"id": "R230", "decision": "NO", "criterios": ["CE4"], "motivo": "Survey deep learning en simplificación léxica; revisión bibliográfica sin estudio primario", "duda": false, "acuerdo": true}
+{"id": "R231", "decision": "NO", "criterios": ["CE1"], "motivo": "Wearables y XGBoost diagnostican TDAH adolescente; clasificación clínica objetiva", "duda": false, "acuerdo": true}
+{"id": "R232", "decision": "NO", "criterios": ["CE1"], "motivo": "GCN clasifica trastornos hiperactivos en EEG; diagnóstico interpretable sin artefacto software", "duda": false, "acuerdo": true}
+{"id": "R233", "decision": "SI", "criterios": [], "motivo": "PlanTEA-WM, plataforma web multiusuario con LLM genera rutinas visuales para autismo", "duda": true, "acuerdo": true}
+{"id": "R234", "decision": "SI", "criterios": [], "motivo": "Marco KG-GNN y fine-tuning LLM con grafo conocimiento TEA; sistema dominio clínico", "duda": true, "acuerdo": true}
+{"id": "R235", "decision": "NO", "criterios": ["CI4"], "motivo": "IA en aulas ESL dislexia; marco colaborativo sin software desarrollado", "duda": false, "acuerdo": false}
+{"id": "R236", "decision": "NO", "criterios": ["CE4"], "motivo": "Survey predicción TEA con ML 2016-2023; artículo de revisión sin estudio empírico primario", "duda": false, "acuerdo": true}
+{"id": "R237", "decision": "NO", "criterios": ["CE1"], "motivo": "ML identifica factores de riesgo sociodemográficos TEA en Bangladesh; predicción epidemiológica", "duda": false, "acuerdo": true}
+{"id": "R238", "decision": "NO", "criterios": ["CE3"], "motivo": "Requisitos usuario para robot autónomo emocional en cuidados larga duración; robot como producto", "duda": false, "acuerdo": true}
+{"id": "R239", "decision": "SI", "criterios": [], "motivo": "Marco generación neural texto amigable dislexia con GPT y T5 evaluado con lectores", "duda": true, "acuerdo": true}
+{"id": "R240", "decision": "NO", "criterios": ["CE1"], "motivo": "CNN adaptativo combina rasgos personales y eye-tracking para diagnóstico temprano TEA", "duda": false, "acuerdo": true}
+{"id": "R241", "decision": "NO", "criterios": ["CE1"], "motivo": "Brain-Shapelet en fMRI clasifica TEA; biomarcadores instantáneos, sin artefacto software", "duda": false, "acuerdo": true}
+{"id": "R242", "decision": "NO", "criterios": ["CE1"], "motivo": "HiFi-EEG-GAN aumenta datos para clasificación TEA; generación EEG para diagnóstico", "duda": false, "acuerdo": true}
+{"id": "R243", "decision": "NO", "criterios": ["CE1"], "motivo": "XSparseFormerNet en EEG detecta TDAH; precisión diagnóstica, sin producto software", "duda": false, "acuerdo": true}
+{"id": "R244", "decision": "NO", "criterios": ["CE3"], "motivo": "Juego con LLM evalúa theory of mind en autismo; entrenamiento social gamificado", "duda": false, "acuerdo": true}
+{"id": "R245", "decision": "NO", "criterios": ["CE1"], "motivo": "Transformers reconocen emociones faciales en niños TEA; clasificación afectiva, no SDLC", "duda": false, "acuerdo": true}
+{"id": "R246", "decision": "SI", "criterios": [], "motivo": "Sistema fuzzy FastAPI/React evalúa dificultad textual en apps lectura móvil para dislexia", "duda": true, "acuerdo": true}
+{"id": "R247", "decision": "NO", "criterios": ["CI4"], "motivo": "Análisis entropía en generación narrativa orientada neurodiversidad; investigación NLP sin artefacto", "duda": false, "acuerdo": true}
+{"id": "R248", "decision": "NO", "criterios": ["CE2"], "motivo": "Material tutoría matemática para estudiantes sordos; población auditiva, no cognitiva picoc", "duda": false, "acuerdo": true}
+{"id": "R249", "decision": "NO", "criterios": ["CE1"], "motivo": "ML en diálogos ADOS caracteriza patrones de habla en TEA verbalmente fluido", "duda": false, "acuerdo": true}
+{"id": "R250", "decision": "NO", "criterios": ["CI3"], "motivo": "ML en MEG portadores genéticos ELA; sin discapacidad cognitiva ni neurodivergencia picoc", "duda": false, "acuerdo": true}
+{"id": "R251", "decision": "NO", "criterios": ["CE1"], "motivo": "AENIN, GNN en fMRI diagnostica TEA con módulo clínico interpretable", "duda": false, "acuerdo": true}
+{"id": "R252", "decision": "NO", "criterios": ["CI4"], "motivo": "Equidad de herramientas IA de reclutamiento existentes; sin desarrollo SDLC", "duda": false, "acuerdo": false}
+{"id": "R253", "decision": "NO", "criterios": ["CI4"], "motivo": "Etnografía duelo por cambios en Replika con mujer autista; sin desarrollo ni evaluación software", "duda": false, "acuerdo": true}
+{"id": "R254", "decision": "NO", "criterios": ["CI4"], "motivo": "Análisis consentimiento informado en ensayos IA; mención dislexia incidental, sin población ni SDLC", "duda": false, "acuerdo": true}
+{"id": "R255", "decision": "NO", "criterios": ["CE1"], "motivo": "Microbioma y REFS descubren biomarcadores TEA; diagnóstico biológico, sin software", "duda": false, "acuerdo": true}
+{"id": "R256", "decision": "NO", "criterios": ["CE1"], "motivo": "ConvRF con eye-tracking clasifica TEA y TD; detección temprana automatizada", "duda": false, "acuerdo": true}
+{"id": "R257", "decision": "NO", "criterios": ["CE1"], "motivo": "Random forest predice riesgo TEA prenatal con datos nacionales Corea", "duda": false, "acuerdo": true}
+{"id": "R258", "decision": "NO", "criterios": ["CI3"], "motivo": "Codesign MCC ansiedad o depresión; población no centrada en marco picoc", "duda": false, "acuerdo": false}
+{"id": "R259", "decision": "NO", "criterios": ["CI4"], "motivo": "Gobernanza IA y modelo social discapacidad en educación dislexia; artículo normativo sin software", "duda": false, "acuerdo": true}
+{"id": "R260", "decision": "NO", "criterios": ["CI4"], "motivo": "Propuesta cualitativa de app; IA no interviene en requisitos ni diseño", "duda": false, "acuerdo": false}
+{"id": "R261", "decision": "NO", "criterios": ["CE1"], "motivo": "GCN con EEG multiodominio clasifica TDAH; asistencia diagnóstico clínico", "duda": false, "acuerdo": true}
+{"id": "R262", "decision": "NO", "criterios": ["CE3"], "motivo": "Entrenamiento cognitivo VR con RL para deterioro cognitivo; rehabilitación inmersiva", "duda": false, "acuerdo": true}
+{"id": "R263", "decision": "SI", "criterios": [], "motivo": "Sistema voz ANN/HMM consulta resultados académicos para estudiantes con dislexia", "duda": true, "acuerdo": true}
+{"id": "R264", "decision": "SI", "criterios": [], "motivo": "Marco y prototipo GenAI para estudiantes con dificultades aprendizaje en Kenia", "duda": true, "acuerdo": true}
+{"id": "R265", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión 25 años HCI tecnologías lectura para discapacidad; síntesis secundaria ACM", "duda": false, "acuerdo": true}
+{"id": "R266", "decision": "NO", "criterios": ["CE1"], "motivo": "Métricas audiofaciales en producción afecto comparan niños TEA y controles", "duda": false, "acuerdo": true}
+{"id": "R267", "decision": "NO", "criterios": ["CI4"], "motivo": "Uso compensatorio IA en estudiantes TDAH universitarios; estudio transversal sin artefacto", "duda": false, "acuerdo": true}
+{"id": "R268", "decision": "NO", "criterios": ["CI3"], "motivo": "Proteómica plasma diferencia ictus isquémico y hemorrágico; sin población picoc", "duda": false, "acuerdo": true}
+{"id": "R269", "decision": "NO", "criterios": ["CI4"], "motivo": "Entrevistas médicos sobre adopción IA en práctica autismo; percepciones sin desarrollo software", "duda": false, "acuerdo": true}
+{"id": "R270", "decision": "NO", "criterios": ["CE3"], "motivo": "PyPal tutor Python TDAH; tutor inteligente de aprendizaje principal", "duda": false, "acuerdo": false}
+{"id": "R271", "decision": "NO", "criterios": ["CI4"], "motivo": "ChatGPT frente a docente en dislexia; evaluación pedagógica sin SDLC", "duda": false, "acuerdo": false}
+{"id": "R272", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión sistemática corpus trastornos habla y lenguaje incluyendo TEA; sin estudio primario", "duda": false, "acuerdo": true}
+{"id": "R273", "decision": "NO", "criterios": ["CI3"], "motivo": "ML predice transición a trastorno por sustancias; TDAH solo covariable, sin foco picoc", "duda": false, "acuerdo": true}
+{"id": "R274", "decision": "NO", "criterios": ["CI4"], "motivo": "Caso crítico chatbot salud SARAH OMS; sin población cognitiva ni ciclo software", "duda": false, "acuerdo": true}
+{"id": "R275", "decision": "NO", "criterios": ["CE3"], "motivo": "NeuroSense monitoriza conducta y estrés en niños TEA con wearables IoT; intervención remota", "duda": false, "acuerdo": true}
+{"id": "R276", "decision": "NO", "criterios": ["CE3"], "motivo": "Agentes LLM mapas mentales TDAH; producto de aprendizaje, no SDLC", "duda": false, "acuerdo": false}
+{"id": "R277", "decision": "NO", "criterios": ["CI4"], "motivo": "YOLOv8 detecta emociones en transporte para discapacidad cognitiva; ITS emocional, no SDLC", "duda": false, "acuerdo": true}
+{"id": "R278", "decision": "NO", "criterios": ["CI3"], "motivo": "RL adapta iluminación rayos X en sincrotrón; mención tangencial trastorno aprendizaje", "duda": false, "acuerdo": true}
+{"id": "R279", "decision": "NO", "criterios": ["CE3"], "motivo": "MOODMATE AR e IA emocional autismo; intervención terapéutica inmersiva", "duda": false, "acuerdo": false}
+{"id": "R280", "decision": "NO", "criterios": ["CE1"], "motivo": "Validación eye-tracking webcam; biomarcadores clínicos, sin artefacto accesible", "duda": false, "acuerdo": false}
+{"id": "R281", "decision": "NO", "criterios": ["CI3"], "motivo": "Plataforma IA interactiva para educación musical; sin población cognitiva ni neurodivergencia", "duda": false, "acuerdo": true}
+{"id": "R282", "decision": "NO", "criterios": ["CE4"], "motivo": "Position paper agentes en ingeniería de requisitos; sin estudio primario", "duda": false, "acuerdo": false}
+{"id": "R283", "decision": "NO", "criterios": ["CE1"], "motivo": "ML perfila comorbilidad trastorno conducta en adolescentes TDAH; clasificación clínica", "duda": false, "acuerdo": true}
+{"id": "R284", "decision": "NO", "criterios": ["CI4"], "motivo": "Simulación plegado cortical con ML en MRI infantil; autismo citado, sin artefacto software", "duda": false, "acuerdo": true}
+{"id": "R285", "decision": "SI", "criterios": [], "motivo": "LLM simplifican contenido redes sociales para accesibilidad cognitiva en discapacidad intelectual", "duda": true, "acuerdo": true}
+{"id": "R286", "decision": "SI", "criterios": [], "motivo": "Sistema AR e IA guía uso electrodomésticos con apoyo cognitivo y accesibilidad visual", "duda": true, "acuerdo": true}
+{"id": "R287", "decision": "NO", "criterios": ["CI4"], "motivo": "Historias sociales IA frente a humanas; intervención conductual sin SDLC", "duda": false, "acuerdo": false}
+{"id": "R288", "decision": "NO", "criterios": ["CE4"], "motivo": "Metaanálisis prevalencia trastornos neurodesarrollo en niños indígenas; revisión sistemática", "duda": false, "acuerdo": true}
+{"id": "R289", "decision": "NO", "criterios": ["CI4"], "motivo": "Reconstrucción 3D Gaussian Splatting para VR terapia autismo; entorno inmersivo, foco no SDLC", "duda": false, "acuerdo": true}
+{"id": "R290", "decision": "NO", "criterios": ["CE3"], "motivo": "RACLS robot asiste aprendizaje chino con dislexia; robot educativo como producto principal", "duda": false, "acuerdo": true}
+{"id": "R291", "decision": "NO", "criterios": ["CE1"], "motivo": "TOY8 cribado desarrollo infantil; instrumento de screening, no SDLC accesible", "duda": false, "acuerdo": false}
+{"id": "R292", "decision": "NO", "criterios": ["CI3"], "motivo": "ML detecta hipsarritmia en síndrome de West; trastorno neurodesarrollo distinto del foco picoc", "duda": false, "acuerdo": true}
+{"id": "R293", "decision": "SI", "criterios": [], "motivo": "Asistente lectura IA con grafos conocimiento y adaptación conductual para dislexia vocacional", "duda": true, "acuerdo": true}
+{"id": "R294", "decision": "NO", "criterios": ["CE1"], "motivo": "Métricas QEEG no lineales y ML distinguen TEA para neurofeedback; biomarcadores", "duda": false, "acuerdo": true}
+{"id": "R295", "decision": "NO", "criterios": ["CI4"], "motivo": "ML mide duración estereotipia vocal en autismo; medición conductual, no ciclo software", "duda": false, "acuerdo": true}
+{"id": "R296", "decision": "SI", "criterios": [], "motivo": "TextAD adapta textos expositivos automáticamente para estudiantes con discapacidad intelectual", "duda": true, "acuerdo": true}
+{"id": "R297", "decision": "NO", "criterios": ["CI4"], "motivo": "Integra herramientas IA comerciales en aula; sin desarrollo ni verificación SDLC", "duda": false, "acuerdo": false}
+{"id": "R298", "decision": "NO", "criterios": ["CE1"], "motivo": "DNN clasifica TEA con reflejo pupilar a la luz; cribado temprano automatizado", "duda": false, "acuerdo": true}
+{"id": "R299", "decision": "SI", "criterios": [], "motivo": "Interfaz fabricación IA multimodal reduce carga cognitiva trabajadores con diversidad cognitiva", "duda": true, "acuerdo": true}
+{"id": "R300", "decision": "SI", "criterios": [], "motivo": "IVORY, plataforma móvil IA gestiona PHR en trastornos del desarrollo con OCR médico", "duda": true, "acuerdo": true}
+{"id": "R301", "decision": "NO", "criterios": ["CI4"], "motivo": "Analítica de adopción chatbot ADVi; sin ingeniería ni pruebas del sistema", "duda": false, "acuerdo": false}
+{"id": "R302", "decision": "NO", "criterios": ["CI3"], "motivo": "Deep learning distingue bipolar y esquizofrenia en MRI; sin población picoc", "duda": false, "acuerdo": true}
+{"id": "R303", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión neurociencia metáforas multimodales con compensación en autismo; síntesis", "duda": false, "acuerdo": true}
+{"id": "R304", "decision": "NO", "criterios": ["CE1"], "motivo": "Marco fuzzy evalúa robustez ML en triaje TEA; clasificación clínica urgente", "duda": false, "acuerdo": true}
+{"id": "R305", "decision": "NO", "criterios": ["CI4"], "motivo": "LLM como ajuste razonable accesibilidad neurodivergente en educación superior; ensayo jurídico", "duda": false, "acuerdo": true}
+{"id": "R306", "decision": "SI", "criterios": [], "motivo": "App iPad TYLES enseña reconocimiento emociones faciales a niños autistas", "duda": true, "acuerdo": true}
+{"id": "R307", "decision": "NO", "criterios": ["CE1"], "motivo": "CNN en imágenes faciales detectan TEA con XAI; diagnóstico automatizado", "duda": false, "acuerdo": true}
+{"id": "R308", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión sistemática y metaanálisis RCT intervenciones IA en TND pediátricos", "duda": false, "acuerdo": true}
+{"id": "R309", "decision": "NO", "criterios": ["CE3"], "motivo": "BCI auditivo adaptativo modula EEG en síndrome X frágil; neurorehabilitación", "duda": false, "acuerdo": true}
+{"id": "R310", "decision": "NO", "criterios": ["CI4"], "motivo": "Aula codesign tecnología para estudiantes IDD; actividades sin IA en ciclo software", "duda": false, "acuerdo": true}
+{"id": "R311", "decision": "SI", "criterios": [], "motivo": "GenRole, sistema IA generativa personaliza role-play social para educadores de autistas", "duda": true, "acuerdo": true}
+{"id": "R312", "decision": "NO", "criterios": ["CE1"], "motivo": "Conectividad EEG y SVM clasifican retraso global desarrollo; biomarcadores diagnósticos", "duda": false, "acuerdo": true}
+{"id": "R313", "decision": "NO", "criterios": ["CI4"], "motivo": "Random forest predice estancia hospitalaria en discapacidad intelectual; analítica EHR", "duda": false, "acuerdo": true}
+{"id": "R314", "decision": "NO", "criterios": ["CE4"], "motivo": "Survey IA en terapia del habla incluyendo TEA; revisión de literatura", "duda": false, "acuerdo": true}
+{"id": "R315", "decision": "NO", "criterios": ["CE1"], "motivo": "ANFIS explicable detecta discapacidades del desarrollo en cohorte pediátrica", "duda": false, "acuerdo": true}
+{"id": "R316", "decision": "NO", "criterios": ["CI4"], "motivo": "Protocolo EARLY-COGN telerehabilitación cognitiva; ensayo digital sin foco IA SDLC", "duda": false, "acuerdo": true}
+{"id": "R317", "decision": "SI", "criterios": [], "motivo": "Prototipo comunicación asistida con IA generativa recomienda imágenes por intención en ID", "duda": true, "acuerdo": true}
+{"id": "R318", "decision": "NO", "criterios": ["CI4"], "motivo": "Minería temas enfermedades crónicas en redes sociales incluye autismo; análisis texto", "duda": false, "acuerdo": true}
+{"id": "R319", "decision": "NO", "criterios": ["CI4"], "motivo": "Pipeline afectivo predice resultados intervención autismo por sincronía prosódica; sin software", "duda": false, "acuerdo": true}
+{"id": "R320", "decision": "NO", "criterios": ["CE1"], "motivo": "AutismSynthGen sintetiza datos multimodales y predice TEA; diagnóstico con GAN", "duda": false, "acuerdo": true}
+{"id": "R321", "decision": "NO", "criterios": ["CI3"], "motivo": "Wearable motor performance en lactantes; sin población picoc", "duda": false, "acuerdo": true}
+{"id": "R322", "decision": "NO", "criterios": ["CI4"], "motivo": "Sentimiento atletas DI en redes; análisis computacional sin SDLC", "duda": false, "acuerdo": false}
+{"id": "R323", "decision": "NO", "criterios": ["CI4"], "motivo": "CognitiveBotics como terapia clínica TEA; no fase SDLC del software", "duda": false, "acuerdo": true}
+{"id": "R324", "decision": "NO", "criterios": ["CI4"], "motivo": "Toolkit competencias digitales enfermería; IA no implementada en SDLC", "duda": false, "acuerdo": true}
+{"id": "R325", "decision": "NO", "criterios": ["CI3"], "motivo": "Gemelos digitales motor pretérmino; población neonatal fuera de picoc", "duda": false, "acuerdo": true}
+{"id": "R326", "decision": "NO", "criterios": ["CI4"], "motivo": "Instalación artística GenAI sobrecarga sensorial; no artefacto software SDLC", "duda": false, "acuerdo": true}
+{"id": "R327", "decision": "SI", "criterios": [], "motivo": "Cocreación prototipo chatbot SmartADHD con LLM para jóvenes TDAH", "duda": true, "acuerdo": true}
+{"id": "R328", "decision": "NO", "criterios": ["CI4"], "motivo": "m_AutNet emociones en TEA; modelo investigación sin producto software SDLC", "duda": false, "acuerdo": true}
+{"id": "R329", "decision": "NO", "criterios": ["CI4"], "motivo": "Recomendador POI autismo en curso; sin artefacto evaluado en resumen", "duda": false, "acuerdo": false}
+{"id": "R330", "decision": "NO", "criterios": ["CI3"], "motivo": "Parabenos y WISC en escolares generales", "duda": false, "acuerdo": true}
+{"id": "R331", "decision": "NO", "criterios": ["CI3"], "motivo": "Clasificación desbalanceada genérica GDHS+GBDT", "duda": false, "acuerdo": true}
+{"id": "R332", "decision": "NO", "criterios": ["CI4"], "motivo": "fMRI dislexia; neurociencia sin software", "duda": false, "acuerdo": true}
+{"id": "R333", "decision": "NO", "criterios": ["CI4"], "motivo": "g-ratio y subtipos TEA; neuroimagen sin artefacto software", "duda": false, "acuerdo": true}
+{"id": "R334", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión sistemática neurodivergencia en HE digital", "duda": false, "acuerdo": true}
+{"id": "R335", "decision": "NO", "criterios": ["CI3"], "motivo": "CRCWeb LLM cáncer colorrectal; población oncológica", "duda": false, "acuerdo": true}
+{"id": "R336", "decision": "NO", "criterios": ["CE3"], "motivo": "SocialWise terapia conversacional LLM-RAG TEA; producto terapéutico principal", "duda": false, "acuerdo": false}
+{"id": "R337", "decision": "SI", "criterios": [], "motivo": "Heurísticas U+A con GenAI para accesibilidad cognitiva de sistemas interactivos", "duda": true, "acuerdo": true}
+{"id": "R338", "decision": "SI", "criterios": [], "motivo": "Evaluación plataforma LONDI trastornos aprendizaje y analítica web", "duda": true, "acuerdo": true}
+{"id": "R339", "decision": "NO", "criterios": ["CI4"], "motivo": "Grupos focales cribado IA TEA Egipto; sin software evaluado", "duda": false, "acuerdo": true}
+{"id": "R340", "decision": "NO", "criterios": ["CI4"], "motivo": "Encuesta GenAI escritura académica discapacidad; sin desarrollo software", "duda": false, "acuerdo": false}
+{"id": "R341", "decision": "NO", "criterios": ["CE1"], "motivo": "GMM predice TEA en lactantes; solo diagnóstico ML", "duda": false, "acuerdo": true}
+{"id": "R342", "decision": "NO", "criterios": ["CE1"], "motivo": "GO-ELMN clasifica TEA infantil; diagnóstico sin software", "duda": false, "acuerdo": true}
+{"id": "R343", "decision": "NO", "criterios": ["CI4"], "motivo": "CBPR cualitativo VRChat autistas; sin IA en ciclo software", "duda": false, "acuerdo": true}
+{"id": "R344", "decision": "NO", "criterios": ["CI4"], "motivo": "Piloto UDL-ICF patrimonio; sin IA interviniendo en SDLC en resumen", "duda": false, "acuerdo": false}
+{"id": "R345", "decision": "SI", "criterios": [], "motivo": "CARES planificador viajes IA para adultos autistas", "duda": true, "acuerdo": true}
+{"id": "R346", "decision": "NO", "criterios": ["CE1"], "motivo": "Protocolo EEG diagnóstico TDAH SINCRONIA; biomarcadores clínicos", "duda": false, "acuerdo": true}
+{"id": "R347", "decision": "SI", "criterios": [], "motivo": "Cocreación GenAI gestión tareas metacognición universitarios TDAH", "duda": true, "acuerdo": true}
+{"id": "R348", "decision": "NO", "criterios": ["CI4"], "motivo": "LLM Delphi para cribado abstracts revisiones sistemáticas", "duda": false, "acuerdo": true}
+{"id": "R349", "decision": "NO", "criterios": ["CI3"], "motivo": "ML cribado hipotiroidismo congénito neonatal", "duda": false, "acuerdo": true}
+{"id": "R350", "decision": "NO", "criterios": ["CE3"], "motivo": "Plataforma GenAI terapia lenguaje domiciliaria TEA; intervención clínica", "duda": false, "acuerdo": false}
+{"id": "R351", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión sistemática intervenciones IA en TEA", "duda": false, "acuerdo": true}
+{"id": "R352", "decision": "NO", "criterios": ["CE1"], "motivo": "ML/DL métricas MRI clasifican TEA", "duda": false, "acuerdo": true}
+{"id": "R353", "decision": "NO", "criterios": ["CE1"], "motivo": "ML clasifica TEA por edades en datasets conductuales", "duda": false, "acuerdo": true}
+{"id": "R354", "decision": "NO", "criterios": ["CE3"], "motivo": "ERAnet aprendizaje emocional autismo; producto educativo-rehabilitador", "duda": false, "acuerdo": false}
+{"id": "R355", "decision": "NO", "criterios": ["CI4"], "motivo": "Usos de chatbots LLM en neurodivergentes; adopción sin artefacto SDLC", "duda": false, "acuerdo": false}
+{"id": "R356", "decision": "SI", "criterios": [], "motivo": "LLM recomienda imágenes comunicación discapacidad intelectual", "duda": true, "acuerdo": true}
+{"id": "R357", "decision": "NO", "criterios": ["CE1"], "motivo": "Abstención en clasificadores vídeo autismo pediátrico", "duda": false, "acuerdo": true}
+{"id": "R358", "decision": "NO", "criterios": ["CE1"], "motivo": "XGBoost RNA-seq biomarcadores TEA", "duda": false, "acuerdo": true}
+{"id": "R359", "decision": "NO", "criterios": ["CI3"], "motivo": "IA facial neurodesarrollo fetal prenatal", "duda": false, "acuerdo": true}
+{"id": "R360", "decision": "SI", "criterios": [], "motivo": "E-learning con IA y chatbot para estudiantes HE con TDAH", "duda": true, "acuerdo": true}
+{"id": "R361", "decision": "NO", "criterios": ["CE3"], "motivo": "ABA-RAG IoT y LLM para ABA TEA; terapia conductual como producto", "duda": false, "acuerdo": false}
+{"id": "R362", "decision": "NO", "criterios": ["CI3"], "motivo": "Juego envejecimiento cognitivo; cohorte general", "duda": false, "acuerdo": true}
+{"id": "R363", "decision": "NO", "criterios": ["CI4"], "motivo": "Persuasión chatbot GenAI en autismo; sin diseño software accesible", "duda": false, "acuerdo": false}
+{"id": "R364", "decision": "NO", "criterios": ["CI3"], "motivo": "Brain-age epilepsia pediátrica", "duda": false, "acuerdo": true}
+{"id": "R365", "decision": "NO", "criterios": ["CE1"], "motivo": "CNN-Swin MRI diagnóstico TEA", "duda": false, "acuerdo": true}
+{"id": "R366", "decision": "NO", "criterios": ["CI4"], "motivo": "Artículo conceptual LLM educación inclusiva", "duda": false, "acuerdo": true}
+{"id": "R367", "decision": "NO", "criterios": ["CI3"], "motivo": "CV tarea beber en neurotípicos", "duda": false, "acuerdo": true}
+{"id": "R368", "decision": "NO", "criterios": ["CI4"], "motivo": "Agency con ChatGPT en secundaria; aprendizaje escolar sin fase SDLC", "duda": false, "acuerdo": false}
+{"id": "R369", "decision": "SI", "criterios": [], "motivo": "IA-AR subtítulos señales no verbales DHH y neurodiversos", "duda": true, "acuerdo": true}
+{"id": "R370", "decision": "NO", "criterios": ["CE1"], "motivo": "ML diferencia TDAH y autismo en rs-fMRI", "duda": false, "acuerdo": true}
+{"id": "R371", "decision": "NO", "criterios": ["CE1"], "motivo": "ML explicable biomarcadores conductuales cribado TEA", "duda": false, "acuerdo": true}
+{"id": "R372", "decision": "NO", "criterios": ["CI3"], "motivo": "Clasificación consumo alcohol adolescente", "duda": false, "acuerdo": true}
+{"id": "R373", "decision": "NO", "criterios": ["CE1"], "motivo": "Deep learning voxeles TDAH", "duda": false, "acuerdo": true}
+{"id": "R374", "decision": "NO", "criterios": ["CE3"], "motivo": "Juego VR AutiSim educativo TEA", "duda": false, "acuerdo": true}
+{"id": "R375", "decision": "NO", "criterios": ["CI4"], "motivo": "Encuesta actitudes IA; sin artefacto software", "duda": false, "acuerdo": true}
+{"id": "R376", "decision": "SI", "criterios": [], "motivo": "SPIRE corrector LLM para trastornos del lenguaje", "duda": true, "acuerdo": true}
+{"id": "R377", "decision": "SI", "criterios": [], "motivo": "Q-learning personalización estudiantes con discapacidades", "duda": true, "acuerdo": true}
+{"id": "R378", "decision": "SI", "criterios": [], "motivo": "EF, LMS e IA en educación ingeniería software neurodivergente", "duda": true, "acuerdo": true}
+{"id": "R379", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión ML/DL EEG diagnóstico TEA", "duda": false, "acuerdo": true}
+{"id": "R380", "decision": "NO", "criterios": ["CI4"], "motivo": "Clustering neuropsicológico dislexia", "duda": false, "acuerdo": true}
+{"id": "R381", "decision": "NO", "criterios": ["CE3"], "motivo": "LLM controla robot NAO en visitas TEA", "duda": false, "acuerdo": true}
+{"id": "R382", "decision": "NO", "criterios": ["CI4"], "motivo": "Aceptación chatbot eco-conducción TDAH", "duda": false, "acuerdo": true}
+{"id": "R383", "decision": "NO", "criterios": ["CI4"], "motivo": "Estudio formativo VR e IA productividad TDAH obra; sin artefacto desarrollado", "duda": false, "acuerdo": false}
+{"id": "R384", "decision": "NO", "criterios": ["CI3"], "motivo": "IA diálogo educación superior general", "duda": false, "acuerdo": true}
+{"id": "R385", "decision": "NO", "criterios": ["CI4"], "motivo": "Ensayo ético LLM; sin software empírico", "duda": false, "acuerdo": true}
+{"id": "R386", "decision": "NO", "criterios": ["CE1"], "motivo": "ML cuestionarios cribado TEA comunitario", "duda": false, "acuerdo": true}
+{"id": "R387", "decision": "NO", "criterios": ["CE1"], "motivo": "ML predice TEA en esclerosis tuberosa", "duda": false, "acuerdo": true}
+{"id": "R388", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión UX VR niños autismo", "duda": false, "acuerdo": true}
+{"id": "R389", "decision": "NO", "criterios": ["CE1"], "motivo": "NLP detecta TDAH en narrativas adolescentes", "duda": false, "acuerdo": true}
+{"id": "R390", "decision": "NO", "criterios": ["CI4"], "motivo": "Módulo curricular auditar contratación IA; formación, no SDLC empírico", "duda": false, "acuerdo": false}
+{"id": "R391", "decision": "SI", "criterios": [], "motivo": "Simple.Text ATS español discapacidad cognitiva", "duda": true, "acuerdo": true}
+{"id": "R392", "decision": "NO", "criterios": ["CI3"], "motivo": "Epimopilot vídeo asíncrono población general", "duda": false, "acuerdo": true}
+{"id": "R393", "decision": "SI", "criterios": [], "motivo": "Asistentes voz con adultos discapacidad intelectual", "duda": true, "acuerdo": true}
+{"id": "R394", "decision": "SI", "criterios": [], "motivo": "IA-VR preparación visitas sanitarias discapacidad intelectual", "duda": true, "acuerdo": true}
+{"id": "R395", "decision": "NO", "criterios": ["CE1"], "motivo": "Variabilidad EEG clasifica TEA", "duda": false, "acuerdo": true}
+{"id": "R396", "decision": "SI", "criterios": [], "motivo": "GenAI y robótica inclusiva operarios discalculia", "duda": true, "acuerdo": true}
+{"id": "R397", "decision": "NO", "criterios": ["CI4"], "motivo": "IA-VR educación política discapacidad aprendizaje", "duda": false, "acuerdo": true}
+{"id": "R398", "decision": "SI", "criterios": [], "motivo": "Plataforma e-learning DeepSeek arte inclusivo TEA", "duda": true, "acuerdo": true}
+{"id": "R399", "decision": "SI", "criterios": [], "motivo": "LLM genera UI accesibles model-driven discapacidad cognitiva", "duda": true, "acuerdo": true}
+{"id": "R400", "decision": "NO", "criterios": ["CE3"], "motivo": "uSucceed VR ciberseguridad neurodivergentes; tutor formativo inmersivo", "duda": false, "acuerdo": false}
+{"id": "R401", "decision": "SI", "criterios": [], "motivo": "Marco UDL AI Scaffold y espectro engagement para dislexia", "duda": true, "acuerdo": true}
+{"id": "R402", "decision": "NO", "criterios": ["CE5"], "motivo": "Resumen doctoral estudiante HCI educación especial; comunicación congreso", "duda": false, "acuerdo": true}
+{"id": "R403", "decision": "SI", "criterios": [], "motivo": "Diseño comunidad salud autismo con NLP y análisis red social", "duda": true, "acuerdo": true}
+{"id": "R404", "decision": "NO", "criterios": ["CI3"], "motivo": "AHP y logs compilador programación novatos", "duda": false, "acuerdo": true}
+{"id": "R405", "decision": "NO", "criterios": ["CI4"], "motivo": "Redes génicas TEA bioinformática ANDSystem", "duda": false, "acuerdo": true}
+{"id": "R406", "decision": "NO", "criterios": ["CE2"], "motivo": "LLM cuestiones vídeo para sordos; accesibilidad auditiva", "duda": false, "acuerdo": true}
+{"id": "R407", "decision": "NO", "criterios": ["CI3"], "motivo": "Triaje IA psiquiatría general ambulatoria", "duda": false, "acuerdo": true}
+{"id": "R408", "decision": "NO", "criterios": ["CI3"], "motivo": "ML riesgo síndrome Down prenatal", "duda": false, "acuerdo": true}
+{"id": "R409", "decision": "NO", "criterios": ["CE1"], "motivo": "LastBERT severidad TDAH en redes sociales", "duda": false, "acuerdo": true}
+{"id": "R410", "decision": "NO", "criterios": ["CI4"], "motivo": "Caso TEL dislexia; barreras pedagógicas sin evaluación software con IA", "duda": false, "acuerdo": false}
+{"id": "R411", "decision": "NO", "criterios": ["CI3"], "motivo": "ML fallo crecimiento neonatos prematuros", "duda": false, "acuerdo": true}
+{"id": "R412", "decision": "NO", "criterios": ["CI3"], "motivo": "AutoTI razonamiento en ratones", "duda": false, "acuerdo": true}
+{"id": "R413", "decision": "NO", "criterios": ["CE1"], "motivo": "DT-APS RF MRI diagnóstico TEA", "duda": false, "acuerdo": true}
+{"id": "R414", "decision": "NO", "criterios": ["CI3"], "motivo": "Comentario psicología cognitiva aplicada e IA", "duda": false, "acuerdo": true}
+{"id": "R415", "decision": "NO", "criterios": ["CE4"], "motivo": "Survey DNN voz diagnóstico TEA", "duda": false, "acuerdo": true}
+{"id": "R416", "decision": "NO", "criterios": ["CE1"], "motivo": "Clustering mirada TEA sin etiquetas; biomarcador", "duda": false, "acuerdo": true}
+{"id": "R417", "decision": "NO", "criterios": ["CI3"], "motivo": "Modelo teórico CAIE reforma educativa", "duda": false, "acuerdo": true}
+{"id": "R418", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión IA asistiva educación inclusiva; síntesis sin estudio primario SDLC", "duda": false, "acuerdo": false}
+{"id": "R419", "decision": "NO", "criterios": ["CI3"], "motivo": "ML detección fraude tarjetas", "duda": false, "acuerdo": true}
+{"id": "R420", "decision": "NO", "criterios": ["CI3"], "motivo": "LLMind Chat apoyo diagnóstico ICD-11 salud mental general", "duda": false, "acuerdo": true}
+{"id": "R421", "decision": "NO", "criterios": ["CE1"], "motivo": "EMHD predice trastornos mentales en autistas", "duda": false, "acuerdo": true}
+{"id": "R422", "decision": "NO", "criterios": ["CE1"], "motivo": "LLM clasifica trastornos psiquiátricos en Reddit", "duda": false, "acuerdo": true}
+{"id": "R423", "decision": "NO", "criterios": ["CE1"], "motivo": "Ensamble ML diagnóstico TEA", "duda": false, "acuerdo": true}
+{"id": "R424", "decision": "NO", "criterios": ["CE1"], "motivo": "Augmentación datos clasificador TEA BERT", "duda": false, "acuerdo": true}
+{"id": "R425", "decision": "SI", "criterios": [], "motivo": "Requisitos AR gestión estrés adultos autistas", "duda": true, "acuerdo": true}
+{"id": "R426", "decision": "NO", "criterios": ["CI3"], "motivo": "Clustering trayectorias tratamiento trastorno bipolar", "duda": false, "acuerdo": true}
+{"id": "R427", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión sistemática STEM STEAM discapacidad", "duda": false, "acuerdo": true}
+{"id": "R428", "decision": "NO", "criterios": ["CE4"], "motivo": "Scoping review robot Pepper en salud", "duda": false, "acuerdo": true}
+{"id": "R429", "decision": "NO", "criterios": ["CI4"], "motivo": "Protocolo futuro VR biomarcador hiperactividad TDAH", "duda": false, "acuerdo": true}
+{"id": "R430", "decision": "NO", "criterios": ["CI4"], "motivo": "Compara calidad respuestas LLM autismo cuidadores; sin artefacto SDLC", "duda": false, "acuerdo": false}
+{"id": "R431", "decision": "NO", "criterios": ["CE3"], "motivo": "Marco LLM terapia adaptativa TEA Bangla; intervención terapéutica", "duda": false, "acuerdo": true}
+{"id": "R432", "decision": "NO", "criterios": ["CE1"], "motivo": "Juego serio ML cribado dislexia catalán; función principal screening", "duda": false, "acuerdo": false}
+{"id": "R433", "decision": "SI", "criterios": [], "motivo": "Marco anotación LLM comunidades salud autismo China", "duda": true, "acuerdo": true}
+{"id": "R434", "decision": "NO", "criterios": ["CE1"], "motivo": "App móvil identificación dislexia chino; detección, no accesibilidad SDLC", "duda": false, "acuerdo": false}
+{"id": "R435", "decision": "NO", "criterios": ["CI4"], "motivo": "Evaluación comparativa LLM consultas autismo; sin ingeniería software", "duda": false, "acuerdo": false}
+{"id": "R436", "decision": "NO", "criterios": ["CI3"], "motivo": "RMNet detección metilación RNA genómica", "duda": false, "acuerdo": true}
+{"id": "R437", "decision": "NO", "criterios": ["CE1"], "motivo": "ML rs-fMRI clasifica etapa desarrollo TEA", "duda": false, "acuerdo": true}
+{"id": "R438", "decision": "NO", "criterios": ["CI3"], "motivo": "AlphaFold3 EA2 y discapacidad intelectual canalopatía", "duda": false, "acuerdo": true}
+{"id": "R439", "decision": "NO", "criterios": ["CI4"], "motivo": "Diario CAI LLM maestros autismo; adopción docente sin fase SDLC", "duda": false, "acuerdo": false}
+{"id": "R440", "decision": "SI", "criterios": [], "motivo": "Herramienta IA evaluación gramatical niños dificultades aprendizaje", "duda": true, "acuerdo": true}
+{"id": "R441", "decision": "NO", "criterios": ["CE3"], "motivo": "Robots HI-SAR abrazables en cuidados larga estancia", "duda": false, "acuerdo": true}
+{"id": "R442", "decision": "NO", "criterios": ["CI4"], "motivo": "Topic modeling Reddit discapacidad; minería texto sin ciclo software", "duda": false, "acuerdo": false}
+{"id": "R443", "decision": "NO", "criterios": ["CI3"], "motivo": "CNN emociones faciales general; autismo solo contexto aplicación", "duda": false, "acuerdo": true}
+{"id": "R444", "decision": "NO", "criterios": ["CI3"], "motivo": "Kernel machine conectividad cerebral; método general", "duda": false, "acuerdo": true}
+{"id": "R445", "decision": "SI", "criterios": [], "motivo": "Lógica difusa carga cognitiva dislexia manufactura inclusiva", "duda": true, "acuerdo": true}
+{"id": "R446", "decision": "NO", "criterios": ["CE3"], "motivo": "Chatbots emocionalmente adaptativos; producto conversacional principal", "duda": false, "acuerdo": false}
+{"id": "R447", "decision": "NO", "criterios": ["CI4"], "motivo": "Encuesta GenAI escritura discapacidad ampliación; sin desarrollo software", "duda": false, "acuerdo": false}
+{"id": "R448", "decision": "NO", "criterios": ["CE5"], "motivo": "Foro congreso mundial síndrome Down; comunicación congreso", "duda": false, "acuerdo": false}
+{"id": "R449", "decision": "NO", "criterios": ["CI4"], "motivo": "Relato autobiográfico GenAI y farmacia TDAH; sin estudio empírico software", "duda": false, "acuerdo": false}
+{"id": "R450", "decision": "SI", "criterios": [], "motivo": "Plataforma digital EF gamificación IA niños NEE", "duda": true, "acuerdo": true}
+{"id": "R451", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión DL dislexia disgrafía escritura manuscrita", "duda": false, "acuerdo": true}
+{"id": "R452", "decision": "NO", "criterios": ["CI4"], "motivo": "Percepción plataforma ML detección TEA; adopción sin desarrollo SDLC", "duda": false, "acuerdo": false}
+{"id": "R453", "decision": "SI", "criterios": [], "motivo": "Exclusión diseñada IA voz y AAC en autismo no verbal", "duda": true, "acuerdo": true}
+{"id": "R454", "decision": "NO", "criterios": ["CE1"], "motivo": "WADAQ predice probabilidad TDAH con ML; componente clasificatorio diagnóstico", "duda": false, "acuerdo": false}
+{"id": "R455", "decision": "NO", "criterios": ["CI3"], "motivo": "GenAI multimodal apoyo ICT estudiantes generales", "duda": false, "acuerdo": true}
+{"id": "R456", "decision": "NO", "criterios": ["CI4"], "motivo": "Potencial IA educación artística inclusiva; propuesta conceptual sin artefacto", "duda": false, "acuerdo": false}
+{"id": "R457", "decision": "SI", "criterios": [], "motivo": "ADAPT agentes IA alimentación y rutinas neurodivergencia", "duda": true, "acuerdo": true}
+{"id": "R458", "decision": "NO", "criterios": ["CI4"], "motivo": "Ensayo psicoanálisis e IA terapeuta digital", "duda": false, "acuerdo": true}
+{"id": "R459", "decision": "NO", "criterios": ["CE1"], "motivo": "LeNet ensemble clasifica escritura disléxica", "duda": false, "acuerdo": true}
+{"id": "R460", "decision": "NO", "criterios": ["CE4"], "motivo": "IA accesibilidad museos ciencia; síntesis beneficios y riesgos sin primario", "duda": false, "acuerdo": false}
+{"id": "R461", "decision": "SI", "criterios": [], "motivo": "GenAI interfaces LMS personalizadas estudiantes TDAH", "duda": true, "acuerdo": true}
+{"id": "R462", "decision": "NO", "criterios": ["CI3"], "motivo": "fMRI memoria trabajo variabilidad individual general", "duda": false, "acuerdo": true}
+{"id": "R463", "decision": "SI", "criterios": [], "motivo": "ML recomienda herramientas estrategias universitarios dislexia", "duda": true, "acuerdo": true}
+{"id": "R464", "decision": "NO", "criterios": ["CE1"], "motivo": "SyMRI y ML clasifican TDAH", "duda": false, "acuerdo": true}
+{"id": "R465", "decision": "NO", "criterios": ["CI4"], "motivo": "Marco justicia cognitiva IA neurodiversidad; filosofía sin estudio SDLC", "duda": false, "acuerdo": false}
+{"id": "R466", "decision": "NO", "criterios": ["CE1"], "motivo": "VR evalúa conducta adaptativa DI; instrumento clínico, no software accesible", "duda": false, "acuerdo": false}
+{"id": "R467", "decision": "NO", "criterios": ["CI4"], "motivo": "Comentario modelo colaborativo salud mental infantil Qatar", "duda": false, "acuerdo": true}
+{"id": "R468", "decision": "NO", "criterios": ["CI4"], "motivo": "Instrucción visual GenAI comprensión lectora dislexia; pedagógico sin SDLC", "duda": false, "acuerdo": false}
+{"id": "R469", "decision": "NO", "criterios": ["CE1"], "motivo": "ML perfiles cognitivos TEA versus TDAH", "duda": false, "acuerdo": true}
+{"id": "R470", "decision": "NO", "criterios": ["CI4"], "motivo": "Encuesta educadores herramientas IA identificar dificultades; percepciones", "duda": false, "acuerdo": false}
+{"id": "R471", "decision": "NO", "criterios": ["CI4"], "motivo": "Calidad información autismo generada por IA; sin intervención en SDLC", "duda": false, "acuerdo": false}
+{"id": "R472", "decision": "NO", "criterios": ["CE1"], "motivo": "ML redes audiovisuales diagnóstico TDAH", "duda": false, "acuerdo": true}
+{"id": "R473", "decision": "SI", "criterios": [], "motivo": "Pipeline NLP asistivo dislexia adultos sinhala", "duda": true, "acuerdo": true}
+{"id": "R474", "decision": "NO", "criterios": ["CE1"], "motivo": "AutoML TPOT cribado TEA", "duda": false, "acuerdo": true}
+{"id": "R475", "decision": "NO", "criterios": ["CE1"], "motivo": "IA explicable cribado TEA Q-CHAT", "duda": false, "acuerdo": true}
+{"id": "R476", "decision": "NO", "criterios": ["CE1"], "motivo": "GCN transformers fMRI diagnóstico TEA", "duda": false, "acuerdo": true}
+{"id": "R477", "decision": "NO", "criterios": ["CE3"], "motivo": "FantasIA historias sociales GenAI espacios inteligentes TEA", "duda": false, "acuerdo": true}
+{"id": "R478", "decision": "NO", "criterios": ["CE3"], "motivo": "Juego tablet lógica difusa AVD autismo", "duda": false, "acuerdo": true}
+{"id": "R479", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión sistemática modelado interpersonal psicopatología", "duda": false, "acuerdo": true}
+{"id": "R480", "decision": "NO", "criterios": ["CE1"], "motivo": "XAI predice diagnóstico TDAH con WISC", "duda": false, "acuerdo": true}
+{"id": "R481", "decision": "NO", "criterios": ["CI4"], "motivo": "Diario ChatGPT adultos TDAH; uso cotidiano sin ciclo vida software", "duda": false, "acuerdo": false}
+{"id": "R482", "decision": "SI", "criterios": [], "motivo": "Clasificación multimodal imágenes libros texto inclusivo neurodesarrollo", "duda": true, "acuerdo": true}
+{"id": "R483", "decision": "NO", "criterios": ["CE1"], "motivo": "Transfer learning reconocimiento síndrome Down en imágenes", "duda": false, "acuerdo": true}
+{"id": "R484", "decision": "NO", "criterios": ["CE3"], "motivo": "Compañero IA emocional rutinas autismo; intervención terapéutica", "duda": false, "acuerdo": false}
+{"id": "R485", "decision": "NO", "criterios": ["CI4"], "motivo": "NLP híbrido discurso neurodivergente Reddit; investigación sin artefacto", "duda": false, "acuerdo": false}
+{"id": "R486", "decision": "NO", "criterios": ["CI4"], "motivo": "Instalación artística style transfer; experiencia cultural sin SDLC", "duda": false, "acuerdo": false}
+{"id": "R487", "decision": "NO", "criterios": ["CI4"], "motivo": "Talleres co-producción EEG epilepsia DI; IA solo codificación", "duda": false, "acuerdo": true}
+{"id": "R488", "decision": "NO", "criterios": ["CE3"], "motivo": "IA conversacional inglés DI leve; tutor educativo sin SDLC accesible", "duda": false, "acuerdo": false}
+{"id": "R489", "decision": "NO", "criterios": ["CI3"], "motivo": "NLP salud mental cohorte nacimiento población escolar general", "duda": false, "acuerdo": true}
+{"id": "R490", "decision": "SI", "criterios": [], "motivo": "Teclado háptico juicy mecanografía niños dificultades aprendizaje", "duda": true, "acuerdo": true}
+{"id": "R491", "decision": "NO", "criterios": ["CI4"], "motivo": "Entrevistas creadores IA humanoide; estudio ético sin desarrollo software", "duda": false, "acuerdo": false}
+{"id": "R492", "decision": "NO", "criterios": ["CE4"], "motivo": "Marco enciclopédico matemáticas IA inclusivas; texto conceptual sin primario", "duda": false, "acuerdo": false}
+{"id": "R493", "decision": "SI", "criterios": [], "motivo": "LARF LLM mejora lectura personas dislexia", "duda": true, "acuerdo": true}
+{"id": "R494", "decision": "NO", "criterios": ["CE1"], "motivo": "Comparativa AutoML detección TEA lactantes", "duda": false, "acuerdo": true}
+{"id": "R495", "decision": "SI", "criterios": [], "motivo": "Task Complete app gamificada DI con evaluación heurística LLM", "duda": true, "acuerdo": true}
+{"id": "R496", "decision": "NO", "criterios": ["CI4"], "motivo": "Criterios arquitectónicos TDAH misofonia; IA solo concepto", "duda": false, "acuerdo": true}
+{"id": "R497", "decision": "SI", "criterios": [], "motivo": "Retroalimentación Copilot EAP y accesibilidad cognitiva", "duda": true, "acuerdo": true}
+{"id": "R498", "decision": "NO", "criterios": ["CI4"], "motivo": "Apropiación IA Reddit TDAH; no evalúa IA en requisitos ni pruebas", "duda": false, "acuerdo": false}
+{"id": "R499", "decision": "NO", "criterios": ["CE1"], "motivo": "ML reconocimiento emociones EEG en TEA", "duda": false, "acuerdo": true}
+{"id": "R500", "decision": "NO", "criterios": ["CI4"], "motivo": "Caso cualitativo apps IA dislexia escuela; uso sin ciclo vida software", "duda": false, "acuerdo": false}
+{"id": "R501", "decision": "NO", "criterios": ["CI3"], "motivo": "SP-EyeGAN datos sintéticos mirada; TDAH secundario inconcluso", "duda": false, "acuerdo": true}
+{"id": "R502", "decision": "NO", "criterios": ["CI3"], "motivo": "App movilidad Viana+Acessível; autismo marginal al objetivo principal", "duda": false, "acuerdo": false}
+{"id": "R503", "decision": "NO", "criterios": ["CE1"], "motivo": "Federated learning predicción autismo lactantes", "duda": false, "acuerdo": true}
+{"id": "R504", "decision": "SI", "criterios": [], "motivo": "PICTALKY sistema AAC con NLP discapacidad lenguaje", "duda": true, "acuerdo": true}
+{"id": "R505", "decision": "NO", "criterios": ["CI4"], "motivo": "Infraestructura datos BETTER enfermedades raras", "duda": false, "acuerdo": true}
+{"id": "R506", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión accesibilidad cognitiva pagos digitales", "duda": false, "acuerdo": true}
+{"id": "R507", "decision": "NO", "criterios": ["CI3"], "motivo": "Software Learn with M.E. matemáticas escolares general", "duda": false, "acuerdo": true}
+{"id": "R508", "decision": "NO", "criterios": ["CI3"], "motivo": "Clasificación salud mental Reddit multiclase", "duda": false, "acuerdo": true}
+{"id": "R509", "decision": "NO", "criterios": ["CI4"], "motivo": "ML intensidad plan ABA clínico TEA", "duda": false, "acuerdo": true}
+{"id": "R510", "decision": "NO", "criterios": ["CE3"], "motivo": "Serious game EMOCASH autismo Egipto", "duda": false, "acuerdo": true}
+{"id": "R511", "decision": "NO", "criterios": ["CI4"], "motivo": "QC ML registros MRI usa ABIDE; no tema TEA", "duda": false, "acuerdo": true}
+{"id": "R512", "decision": "NO", "criterios": ["CE1"], "motivo": "DarkASDNet clasifica TEA en fMRI", "duda": false, "acuerdo": true}
+{"id": "R513", "decision": "NO", "criterios": ["CI4"], "motivo": "ML recomienda metas ABA; decisión clínica", "duda": false, "acuerdo": true}
+{"id": "R514", "decision": "NO", "criterios": ["CE1"], "motivo": "Algoritmo murciélago screening TEA Q-CHAT", "duda": false, "acuerdo": true}
+{"id": "R515", "decision": "NO", "criterios": ["CI3"], "motivo": "ML predice trastornos psiquiátricos adolescentes general", "duda": false, "acuerdo": true}
+{"id": "R516", "decision": "NO", "criterios": ["CI3"], "motivo": "LatSim conectividad fMRI cohorte neurodesarrollo general", "duda": false, "acuerdo": true}
+{"id": "R517", "decision": "NO", "criterios": ["CE1"], "motivo": "ML neuroimagen población TDAH infantil ABCD", "duda": false, "acuerdo": true}
+{"id": "R518", "decision": "NO", "criterios": ["CE1"], "motivo": "XGBoost DTI clasifica TEA pediátrico", "duda": false, "acuerdo": true}
+{"id": "R519", "decision": "NO", "criterios": ["CE4"], "motivo": "Visión plataforma MDP y chatbot TEA; proyecto integrador sin primario", "duda": false, "acuerdo": false}
+{"id": "R520", "decision": "SI", "criterios": [], "motivo": "Buddy recomendador web AT discapacidad cognitiva", "duda": true, "acuerdo": true}
+{"id": "R521", "decision": "NO", "criterios": ["CE1"], "motivo": "ML estados cerebrales incluye TDAH entre trastornos", "duda": false, "acuerdo": true}
+{"id": "R522", "decision": "SI", "criterios": [], "motivo": "IALPF aprendizaje adaptativo predice dislexia y matrimonio consanguíneo", "duda": true, "acuerdo": true}
+{"id": "R523", "decision": "NO", "criterios": ["CE3"], "motivo": "Seq2seq diálogo robot NAO niños autismo", "duda": false, "acuerdo": true}
+{"id": "R524", "decision": "NO", "criterios": ["CE3"], "motivo": "Chatbot Amy historias sociales TEA; tutor conversacional sin SDLC", "duda": false, "acuerdo": false}
+{"id": "R525", "decision": "NO", "criterios": ["CE1"], "motivo": "ML trastorno procesamiento sensorial visual con smartwatch", "duda": false, "acuerdo": true}
+{"id": "R526", "decision": "NO", "criterios": ["CE1"], "motivo": "CNN eye-tracking TEA con optimización bayesiana", "duda": false, "acuerdo": true}
+{"id": "R527", "decision": "SI", "criterios": [], "motivo": "Blockchain y ML educación online segura discapacidad", "duda": true, "acuerdo": true}
+{"id": "R528", "decision": "NO", "criterios": ["CI3"], "motivo": "Métrica ISS parsing semántico neural", "duda": false, "acuerdo": true}
+{"id": "R529", "decision": "SI", "criterios": [], "motivo": "MelGAN síntesis voz hindi recuperación dislexia", "duda": true, "acuerdo": true}
+{"id": "R530", "decision": "NO", "criterios": ["CE3"], "motivo": "Modelo PHDT transformer habilidades sociales TEA", "duda": false, "acuerdo": true}
+{"id": "R531", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión dashboards analítica aprendizaje predictiva", "duda": false, "acuerdo": true}
+{"id": "R532", "decision": "NO", "criterios": ["CE1"], "motivo": "GTO transfer learning detección TEA imágenes y cuestionarios", "duda": false, "acuerdo": true}
+{"id": "R533", "decision": "NO", "criterios": ["CI3"], "motivo": "Prosodia pidgin nigeriano NLP lingüística", "duda": false, "acuerdo": true}
+{"id": "R534", "decision": "NO", "criterios": ["CE1"], "motivo": "EEG reposo TEA clasificación ML no replicada", "duda": false, "acuerdo": true}
+{"id": "R535", "decision": "NO", "criterios": ["CE3"], "motivo": "Robot social detecta interacciones indeseadas autismo", "duda": false, "acuerdo": true}
+{"id": "R536", "decision": "NO", "criterios": ["CI3"], "motivo": "CoMDA ML parkinsonismos; autismo incidental en metadatos", "duda": false, "acuerdo": true}
+{"id": "R537", "decision": "NO", "criterios": ["CE1"], "motivo": "ML imitación muñeca muñeca TEA", "duda": false, "acuerdo": true}
+{"id": "R538", "decision": "SI", "criterios": [], "motivo": "PandaSays app móvil interpreta dibujos niños autismo", "duda": true, "acuerdo": true}
+{"id": "R539", "decision": "SI", "criterios": [], "motivo": "Enfoque IA diseño UI neurodivergent-friendly", "duda": true, "acuerdo": true}
+{"id": "R540", "decision": "NO", "criterios": ["CE1"], "motivo": "CNN similitud estructural MRI clasifica TEA", "duda": false, "acuerdo": true}
+{"id": "R541", "decision": "NO", "criterios": ["CE1"], "motivo": "ML clasifica estados cerebrales incluye TDAH entre trastornos", "duda": false, "acuerdo": true}
+{"id": "R542", "decision": "NO", "criterios": ["CI3"], "motivo": "Módulo IA salud reproductiva adolescente; sin población marco picoc", "duda": false, "acuerdo": false}
+{"id": "R543", "decision": "NO", "criterios": ["CE3"], "motivo": "Diálogo seq2seq en robot NAO para niños autistas", "duda": false, "acuerdo": true}
+{"id": "R544", "decision": "NO", "criterios": ["CE1"], "motivo": "ML conectividad MEG clasifica autismo; biomarcador diagnóstico", "duda": false, "acuerdo": false}
+{"id": "R545", "decision": "NO", "criterios": ["CE1"], "motivo": "CAMI imitación motora computarizada clasifica TEA", "duda": false, "acuerdo": true}
+{"id": "R546", "decision": "NO", "criterios": ["CE1"], "motivo": "CNN eye-tracking TEA con optimización bayesiana", "duda": false, "acuerdo": true}
+{"id": "R547", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión cualitativa IA aula dislexia; sin estudio primario desarrollo", "duda": false, "acuerdo": false}
+{"id": "R548", "decision": "NO", "criterios": ["CI3"], "motivo": "Métrica ISS en parsing semántico neural", "duda": false, "acuerdo": true}
+{"id": "R549", "decision": "SI", "criterios": [], "motivo": "MelGAN síntesis voz hindi apoyo dislexia", "duda": true, "acuerdo": true}
+{"id": "R550", "decision": "NO", "criterios": ["CE3"], "motivo": "PHDT transformer habilidades sociales TEA", "duda": false, "acuerdo": true}
+{"id": "R551", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión dashboards analítica aprendizaje predictiva", "duda": false, "acuerdo": true}
+{"id": "R552", "decision": "NO", "criterios": ["CE1"], "motivo": "GTO y transfer learning detección TEA", "duda": false, "acuerdo": true}
+{"id": "R553", "decision": "NO", "criterios": ["CI3"], "motivo": "Prosodia pidgin nigeriano; lingüística", "duda": false, "acuerdo": true}
+{"id": "R554", "decision": "NO", "criterios": ["CE1"], "motivo": "EEG reposo TEA con ML no replicado", "duda": false, "acuerdo": true}
+{"id": "R555", "decision": "NO", "criterios": ["CE3"], "motivo": "Robot social detecta conductas indeseadas autismo", "duda": false, "acuerdo": true}
+{"id": "R556", "decision": "NO", "criterios": ["CI4"], "motivo": "Compara médicos y LLM consultas pacientes autistas; sin ingeniería software", "duda": false, "acuerdo": false}
+{"id": "R557", "decision": "NO", "criterios": ["CE1"], "motivo": "ML imitación rotación muñeca TEA", "duda": false, "acuerdo": true}
+{"id": "R558", "decision": "NO", "criterios": ["CI3"], "motivo": "Panorama ético chatbots salud mental; población general del marco", "duda": false, "acuerdo": false}
+{"id": "R559", "decision": "SI", "criterios": [], "motivo": "Diseño UI neurodivergent-friendly con IA", "duda": true, "acuerdo": true}
+{"id": "R560", "decision": "NO", "criterios": ["CE1"], "motivo": "CNN similitud estructural MRI clasifica TEA", "duda": false, "acuerdo": true}
+{"id": "R561", "decision": "NO", "criterios": ["CE1"], "motivo": "ML redes funcionales diagnóstico TEA en fMRI", "duda": false, "acuerdo": true}
+{"id": "R562", "decision": "NO", "criterios": ["CE3"], "motivo": "RL juguete sensorial regulación emocional TDAH; producto terapéutico", "duda": false, "acuerdo": false}
+{"id": "R563", "decision": "NO", "criterios": ["CI3"], "motivo": "PeakCNV asociación variaciones copia genómica", "duda": false, "acuerdo": true}
+{"id": "R564", "decision": "NO", "criterios": ["CE1"], "motivo": "ML predice inhibición en síndrome Down", "duda": false, "acuerdo": true}
+{"id": "R565", "decision": "SI", "criterios": [], "motivo": "Analítica escritura e IA en educación especial TEA", "duda": true, "acuerdo": true}
+{"id": "R566", "decision": "SI", "criterios": [], "motivo": "Experiencia servicios IA comunidad discapacidad desarrollo Corea", "duda": true, "acuerdo": true}
+{"id": "R567", "decision": "SI", "criterios": [], "motivo": "Pipeline NLP y grafo conocimiento recursos web TND", "duda": true, "acuerdo": true}
+{"id": "R568", "decision": "SI", "criterios": [], "motivo": "Cocreación IVR rechazo alcohol en discapacidad intelectual leve", "duda": true, "acuerdo": true}
+{"id": "R569", "decision": "NO", "criterios": ["CE1"], "motivo": "EEG y PLSC razonamiento silogismos TEA y TDAH", "duda": false, "acuerdo": true}
+{"id": "R570", "decision": "NO", "criterios": ["CE5"], "motivo": "Propuesta taller agentes conversacionales TND; no estudio empírico", "duda": false, "acuerdo": true}
+{"id": "R571", "decision": "SI", "criterios": [], "motivo": "Plataforma Dyslexia Data Consortium con ML neuroimagen", "duda": true, "acuerdo": true}
+{"id": "R572", "decision": "NO", "criterios": ["CE1"], "motivo": "DTI sustancia blanca TEA por edad y ML", "duda": false, "acuerdo": true}
+{"id": "R573", "decision": "NO", "criterios": ["CI3"], "motivo": "Índice edad cerebral sueño en epilepsia", "duda": false, "acuerdo": true}
+{"id": "R574", "decision": "NO", "criterios": ["CI3"], "motivo": "Herramienta HDG-select genes; autismo en benchmark", "duda": false, "acuerdo": true}
+{"id": "R575", "decision": "NO", "criterios": ["CE1"], "motivo": "IA identifica dislexia con movimiento ocular; cribado diagnóstico escolar", "duda": false, "acuerdo": false}
+{"id": "R576", "decision": "NO", "criterios": ["CI3"], "motivo": "Benchmark variantes no codificantes; autismo secundario", "duda": false, "acuerdo": true}
+{"id": "R577", "decision": "SI", "criterios": [], "motivo": "Plataforma Flow post-edición descripciones vídeo accesibilidad cognitiva", "duda": true, "acuerdo": true}
+{"id": "R578", "decision": "NO", "criterios": ["CE4"], "motivo": "Marco participativo serious games autismo; propuesta metodológica sin primario", "duda": false, "acuerdo": false}
+{"id": "R579", "decision": "NO", "criterios": ["CE3"], "motivo": "Tutoría reconocimiento voz TEA; tutor inteligente sin SDLC", "duda": false, "acuerdo": false}
+{"id": "R580", "decision": "NO", "criterios": ["CI3"], "motivo": "Juguete inteligente interacción lactantes; cribado retraso motor", "duda": false, "acuerdo": true}
+{"id": "R581", "decision": "SI", "criterios": [], "motivo": "LaMPost editor email LLM adultos dislexia", "duda": true, "acuerdo": true}
+{"id": "R582", "decision": "SI", "criterios": [], "motivo": "Corpus CWITR identificación palabras complejas accesibilidad cognitiva", "duda": true, "acuerdo": true}
+{"id": "R583", "decision": "SI", "criterios": [], "motivo": "Agentes multimodal GenAI trastornos procesamiento visual y auditivo", "duda": true, "acuerdo": true}
+{"id": "R584", "decision": "NO", "criterios": ["CE1"], "motivo": "EFAM-XGB cuestionario cribado dislexia", "duda": false, "acuerdo": true}
+{"id": "R585", "decision": "NO", "criterios": ["CI3"], "motivo": "ML aEEG pronóstico neurodesarrollo prematuros extremos", "duda": false, "acuerdo": true}
+{"id": "R586", "decision": "NO", "criterios": ["CE1"], "motivo": "Reto connectomics clasifica TDAH y TEA en fMRI", "duda": false, "acuerdo": true}
+{"id": "R587", "decision": "SI", "criterios": [], "motivo": "FACILE aplicación IA apoyo adaptación texto fácil lectura", "duda": true, "acuerdo": true}
+{"id": "R588", "decision": "SI", "criterios": [], "motivo": "ADHD-KG grafo conocimiento TDAH adulto", "duda": true, "acuerdo": true}
+{"id": "R589", "decision": "NO", "criterios": ["CE1"], "motivo": "FFNN detecta voz patológica TEA y Down", "duda": false, "acuerdo": true}
+{"id": "R590", "decision": "NO", "criterios": ["CE1"], "motivo": "GIN clasifica TEA en conectoma funcional", "duda": false, "acuerdo": true}
+{"id": "R591", "decision": "NO", "criterios": ["CE1"], "motivo": "Pipeline vídeo estima atención visual cribado TEA", "duda": false, "acuerdo": true}
+{"id": "R592", "decision": "NO", "criterios": ["CE4"], "motivo": "Metarevisión agentes conversacionales y robots asistivos", "duda": false, "acuerdo": true}
+{"id": "R593", "decision": "NO", "criterios": ["CI4"], "motivo": "XGBoost sincronía interpersonal; autismo como aplicación futura", "duda": false, "acuerdo": true}
+{"id": "R594", "decision": "NO", "criterios": ["CI3"], "motivo": "Cuestionario síndrome visión computador estudiantes medicina", "duda": false, "acuerdo": true}
+{"id": "R595", "decision": "SI", "criterios": [], "motivo": "Simplificación cognitiva NLP para accesibilidad", "duda": true, "acuerdo": true}
+{"id": "R596", "decision": "NO", "criterios": ["CE1"], "motivo": "Deep learning predice inicio TDAH ODD CD adolescente", "duda": false, "acuerdo": true}
+{"id": "R597", "decision": "NO", "criterios": ["CI3"], "motivo": "GaitRec-Net clasifica trastornos marcha", "duda": false, "acuerdo": true}
+{"id": "R598", "decision": "NO", "criterios": ["CE3"], "motivo": "Rehabilitación VR conducción autismo; intervención clínica gamificada", "duda": false, "acuerdo": false}
+{"id": "R599", "decision": "NO", "criterios": ["CE1"], "motivo": "GAN outlier detección TEA en sMRI", "duda": false, "acuerdo": true}
+{"id": "R600", "decision": "SI", "criterios": [], "motivo": "NCAPS prompting context-aware almacén discapacidad cognitiva", "duda": true, "acuerdo": true}
+{"id": "R601", "decision": "NO", "criterios": ["CI3"], "motivo": "Curriculum learning traducción automática neural", "duda": false, "acuerdo": true}
+{"id": "R602", "decision": "NO", "criterios": ["CE1"], "motivo": "CNN fMRI detección TEA pediátrico", "duda": false, "acuerdo": true}
+{"id": "R603", "decision": "NO", "criterios": ["CE1"], "motivo": "Pupilometría ML detección TDAH", "duda": false, "acuerdo": true}
+{"id": "R604", "decision": "SI", "criterios": [], "motivo": "Comparativa sistemas reconocimiento emociones; uso comunicación autismo", "duda": true, "acuerdo": true}
+{"id": "R605", "decision": "SI", "criterios": [], "motivo": "BeadMuse IA plantillas pixel art empleo inclusivo DI", "duda": true, "acuerdo": true}
+{"id": "R606", "decision": "SI", "criterios": [], "motivo": "Adaptación morfológica E2R español con IA accesibilidad cognitiva", "duda": true, "acuerdo": true}
+{"id": "R607", "decision": "NO", "criterios": ["CE1"], "motivo": "PFT y CNN fMRI diagnóstico TEA", "duda": false, "acuerdo": true}
+{"id": "R608", "decision": "NO", "criterios": ["CE1"], "motivo": "SVM EEG identifica niños TDAH", "duda": false, "acuerdo": true}
+{"id": "R609", "decision": "NO", "criterios": ["CE1"], "motivo": "CAMI evalúa imitación motora TEA; biomarcador diagnóstico", "duda": false, "acuerdo": true}
+{"id": "R610", "decision": "NO", "criterios": ["CE1"], "motivo": "Morfometría cerebral ML TDAH y comorbilidades", "duda": false, "acuerdo": true}
+{"id": "R611", "decision": "NO", "criterios": ["CE1"], "motivo": "Metaanálisis respuesta placebo TDAH con MetaForest", "duda": false, "acuerdo": true}
+{"id": "R612", "decision": "NO", "criterios": ["CE3"], "motivo": "Juegos habilidades sociales altavoz DI; intervención educativa sin SDLC", "duda": false, "acuerdo": false}
+{"id": "R613", "decision": "NO", "criterios": ["CI3"], "motivo": "ML conectividad prematuridad neonatos", "duda": false, "acuerdo": true}
+{"id": "R614", "decision": "NO", "criterios": ["CE1"], "motivo": "MLP atención cruzada screening TEA adultos", "duda": false, "acuerdo": true}
+{"id": "R615", "decision": "NO", "criterios": ["CI3"], "motivo": "Survey ELM detección outliers general", "duda": false, "acuerdo": true}
+{"id": "R616", "decision": "NO", "criterios": ["CI3"], "motivo": "COOK apoyo cocina TCE; lesión cerebral adquirida fuera población picoc", "duda": false, "acuerdo": true}
+{"id": "R617", "decision": "SI", "criterios": [], "motivo": "Evaluación digital simplificación textos discapacidad intelectual", "duda": true, "acuerdo": true}
+{"id": "R618", "decision": "NO", "criterios": ["CE1"], "motivo": "Random forest FC rs-fMRI TEA y heterogeneidad", "duda": false, "acuerdo": true}
+{"id": "R619", "decision": "NO", "criterios": ["CE1"], "motivo": "Detección headbanging autista en vídeo; biomarcador conductual", "duda": false, "acuerdo": false}
+{"id": "R620", "decision": "SI", "criterios": [], "motivo": "Mapas concepto IA niños necesidades educativas especiales", "duda": true, "acuerdo": true}
+{"id": "R621", "decision": "NO", "criterios": ["CE1"], "motivo": "Ensamble ML diagnóstico TEA 100% accuracy", "duda": false, "acuerdo": true}
+{"id": "R622", "decision": "NO", "criterios": ["CE1"], "motivo": "ABC optimiza RNN-BiLSTM diagnóstico TEA", "duda": false, "acuerdo": true}
+{"id": "R623", "decision": "SI", "criterios": [], "motivo": "Interfaz NLP comprensión lectora trastornos aprendizaje", "duda": true, "acuerdo": true}
+{"id": "R624", "decision": "NO", "criterios": ["CI3"], "motivo": "PhenoApt prioriza genes exoma; DI como fenotipo entre otros", "duda": false, "acuerdo": true}
+{"id": "R625", "decision": "NO", "criterios": ["CI4"], "motivo": "Intervención VR rendimiento académico TDAH sin IA SDLC central", "duda": false, "acuerdo": true}
+{"id": "R626", "decision": "SI", "criterios": [], "motivo": "OLOS tecnología audiovisual IA museos dislexia", "duda": true, "acuerdo": true}
+{"id": "R627", "decision": "SI", "criterios": [], "motivo": "ML gestos mano enseñanza conversión numérica CwSN", "duda": true, "acuerdo": true}
+{"id": "R628", "decision": "SI", "criterios": [], "motivo": "Póster IA accesibilidad TFG discapacidad cognitiva", "duda": true, "acuerdo": true}
+{"id": "R629", "decision": "NO", "criterios": ["CE1"], "motivo": "ASD-GResTM deep learning fMRI clasifica TEA", "duda": false, "acuerdo": true}
+{"id": "R630", "decision": "SI", "criterios": [], "motivo": "Adaptación interacción gaze movimientos involuntarios CP y DI", "duda": true, "acuerdo": true}
+{"id": "R631", "decision": "NO", "criterios": ["CI4"], "motivo": "Análisis mensajes Wysa sobre autismo; sin IA en ciclo vida software", "duda": false, "acuerdo": false}
+{"id": "R632", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión ML biomarcadores dislexia", "duda": false, "acuerdo": true}
+{"id": "R633", "decision": "NO", "criterios": ["CE1"], "motivo": "16 modelos ML optimizados diagnóstico TEA genómico", "duda": false, "acuerdo": true}
+{"id": "R634", "decision": "NO", "criterios": ["CI4"], "motivo": "RCT estructura texto comprensión lectora sin IA", "duda": false, "acuerdo": true}
+{"id": "R635", "decision": "NO", "criterios": ["CE1"], "motivo": "ML y teclado mirada detectan dislexia; foco cribado, no accesibilidad", "duda": false, "acuerdo": false}
+{"id": "R636", "decision": "NO", "criterios": ["CI3"], "motivo": "ML severidad síndrome Rett con wearable", "duda": false, "acuerdo": true}
+{"id": "R637", "decision": "NO", "criterios": ["CE1"], "motivo": "ML predice TEA desde historiales electrónicos infantiles", "duda": false, "acuerdo": true}
+{"id": "R638", "decision": "NO", "criterios": ["CI3"], "motivo": "LLM anotación narrativas conspiración Voat", "duda": false, "acuerdo": true}
+{"id": "R639", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión ML dislexia", "duda": false, "acuerdo": true}
+{"id": "R640", "decision": "NO", "criterios": ["CE1"], "motivo": "ML biomarcadores sueño EEG clasifica TEA", "duda": false, "acuerdo": true}
+{"id": "R641", "decision": "NO", "criterios": ["CI4"], "motivo": "Radiomics y ML valoran neurodesarrollo en cardiopatía congénita; sin población picoc ni artefacto software", "duda": false, "acuerdo": true}
+{"id": "R642", "decision": "NO", "criterios": ["CE1"], "motivo": "Modelo ML predice autismo con datos clínicos mínimos; diagnóstico sin software evaluado en SDLC", "duda": false, "acuerdo": true}
+{"id": "R643", "decision": "SI", "criterios": [], "motivo": "Sistema NLP de simplificación léxica en español para discapacidad intelectual y lectura accesible web", "duda": true, "acuerdo": true}
+{"id": "R644", "decision": "NO", "criterios": ["CE1"], "motivo": "Marco enGauge detecta desenfoque y posible inicio de TDAH con wearables; cribado fisiológico sin producto software", "duda": false, "acuerdo": true}
+{"id": "R645", "decision": "NO", "criterios": ["CI4"], "motivo": "Estudio fMRI de autismo en ruido; neurociencia de percepción del habla sin IA ni ciclo de vida software", "duda": false, "acuerdo": true}
+{"id": "R646", "decision": "NO", "criterios": ["CI3"], "motivo": "Validez MoCA en epilepsia en adultos mayores; sin neurodivergencia ni discapacidad cognitiva del marco", "duda": false, "acuerdo": true}
+{"id": "R647", "decision": "SI", "criterios": [], "motivo": "Codiseño con discapacidad, IA y comunicación aumentativa; innovación inclusiva con tecnología digital", "duda": true, "acuerdo": true}
+{"id": "R648", "decision": "NO", "criterios": ["CE1"], "motivo": "Minería de patrones en respuestas de taquistoscopio para diagnosticar trastornos de lectura; sin artefacto software", "duda": false, "acuerdo": true}
+{"id": "R649", "decision": "NO", "criterios": ["CE1"], "motivo": "Marco deep learning con rs-fMRI para diagnóstico de TEA; biomarcador de imagen sin producto software evaluado", "duda": false, "acuerdo": true}
+{"id": "R650", "decision": "NO", "criterios": ["CE3"], "motivo": "Chatbot móvil TCC y psicoeducación TDAH adulto; terapia digital", "duda": false, "acuerdo": false}
+{"id": "R651", "decision": "NO", "criterios": ["CI4"], "motivo": "Comprensión de emojis y rasgos autistas; psicología experimental sin intervención de IA en software", "duda": false, "acuerdo": true}
+{"id": "R652", "decision": "NO", "criterios": ["CI3"], "motivo": "Clasificadores EEG de estado ocular para BCI; menciona TDAH pero sin población ni producto del picoc", "duda": false, "acuerdo": true}
+{"id": "R653", "decision": "NO", "criterios": ["CE3"], "motivo": "App Thea y chatbot alianza terapéutica TEA; intervención clínica multimedia", "duda": false, "acuerdo": false}
+{"id": "R654", "decision": "NO", "criterios": ["CE3"], "motivo": "Agente virtual para entrenamiento de habilidades sociales; tutor inteligente terapéutico fuera del SDLC", "duda": false, "acuerdo": true}
+{"id": "R655", "decision": "NO", "criterios": ["CE1"], "motivo": "Satisfacción con programa diagnóstico genético pediátrico basado en IA; diagnóstico clínico sin SDLC", "duda": false, "acuerdo": true}
+{"id": "R656", "decision": "NO", "criterios": ["CE1"], "motivo": "ML y eye-tracking distinguen autismo en niños saudíes; cribado biomarcador sin artefacto de software", "duda": false, "acuerdo": true}
+{"id": "R657", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión del estado de APIs de reconocimiento emocional para TEA y TDAH; síntesis sin estudio primario SDLC", "duda": false, "acuerdo": true}
+{"id": "R658", "decision": "NO", "criterios": ["CI4"], "motivo": "Rasgos autistas en adultos neurotípicos y cinemática; sin IA aplicada a desarrollo o evaluación de software", "duda": false, "acuerdo": true}
+{"id": "R659", "decision": "NO", "criterios": ["CI3"], "motivo": "App EMA para niños de 4 a 10 años en población general; sin neurodivergencia del marco", "duda": false, "acuerdo": true}
+{"id": "R660", "decision": "NO", "criterios": ["CI4"], "motivo": "Adaptación auditiva en disléxicos y lectores típicos; sin inteligencia artificial ni software del tema", "duda": false, "acuerdo": true}
+{"id": "R661", "decision": "NO", "criterios": ["CI4"], "motivo": "Atlas single-cell de corteza cerebral y autismo; biología molecular sin artefacto de software", "duda": false, "acuerdo": true}
+{"id": "R662", "decision": "SI", "criterios": [], "motivo": "Sistemas de recomendación con IA para apoyar herramientas educativas personalizadas en disléxicos", "duda": true, "acuerdo": true}
+{"id": "R663", "decision": "SI", "criterios": [], "motivo": "Plataforma DIAUTIS con computación difusa y ayudas de aprendizaje para autismo; diseño de sistema digital", "duda": true, "acuerdo": true}
+{"id": "R664", "decision": "NO", "criterios": ["CE1"], "motivo": "Comparativa de ML para diagnóstico temprano de TEA; clasificación clínica sin producto software en SDLC", "duda": false, "acuerdo": true}
+{"id": "R665", "decision": "NO", "criterios": ["CI3"], "motivo": "Legibilidad de material educativo de cirrosis con chatbots; autismo solo en metadatos, sin población picoc", "duda": false, "acuerdo": true}
+{"id": "R666", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión de fMRI en esquizofrenia; síntesis secundaria sin estudio empírico de IA en software accesible", "duda": false, "acuerdo": true}
+{"id": "R667", "decision": "NO", "criterios": ["CE4"], "motivo": "Panorama de IA en dislexia y comprensión lectora; revisión narrativa sin implementación primaria de software", "duda": false, "acuerdo": true}
+{"id": "R668", "decision": "NO", "criterios": ["CE1"], "motivo": "CNN y clasificadores sobre EEG crudo para diagnosticar TDAH infantil; solo detección clínica", "duda": false, "acuerdo": true}
+{"id": "R669", "decision": "NO", "criterios": ["CI4"], "motivo": "Manufactura inclusiva y carga cognitiva con lógica difusa en ensamblaje; sin ciclo de vida de software accesible", "duda": false, "acuerdo": true}
+{"id": "R670", "decision": "NO", "criterios": ["CE1"], "motivo": "ML para diagnóstico temprano de alcoholismo fetal; cribado médico sin artefacto de software evaluado", "duda": false, "acuerdo": true}
+{"id": "R671", "decision": "NO", "criterios": ["CI3"], "motivo": "Dinámica emocional desde texto como marcador de salud mental; población general sin foco neurodivergente", "duda": false, "acuerdo": true}
+{"id": "R672", "decision": "NO", "criterios": ["CE1"], "motivo": "Modelos IA predicen discapacidad en trastornos mentales; detección clínica sin desarrollo de software", "duda": false, "acuerdo": true}
+{"id": "R673", "decision": "NO", "criterios": ["CE1"], "motivo": "Deep learning para identificar TEA en lactantes; diagnóstico automatizado sin producto software en SDLC", "duda": false, "acuerdo": true}
+{"id": "R674", "decision": "NO", "criterios": ["CE1"], "motivo": "CNN en ecografía fetal para síndrome de Down; cribado prenatal sin artefacto de software del tema", "duda": false, "acuerdo": true}
+{"id": "R675", "decision": "NO", "criterios": ["CE1"], "motivo": "XAI para detección de salud mental por lenguaje; biomarcadores digitales diagnósticos sin SDLC", "duda": false, "acuerdo": true}
+{"id": "R676", "decision": "NO", "criterios": ["CE1"], "motivo": "Patrones de mirada en cinco segundos para clasificar autismo; diagnóstico con eye-tracking sin software", "duda": false, "acuerdo": true}
+{"id": "R677", "decision": "NO", "criterios": ["CE1"], "motivo": "Modelos híbridos ML y MCDM para diagnóstico de autismo; enfoque clínico sin artefacto software evaluado", "duda": false, "acuerdo": true}
+{"id": "R678", "decision": "NO", "criterios": ["CE1"], "motivo": "Serious game iPad identifica TEA y TDAH; herramienta cribado diagnóstico", "duda": false, "acuerdo": false}
+{"id": "R679", "decision": "SI", "criterios": [], "motivo": "Factores de uso de tecnología asistiva y hogar inteligente en discapacidad cognitiva; diseño inclusivo", "duda": true, "acuerdo": true}
+{"id": "R680", "decision": "NO", "criterios": ["CI4"], "motivo": "Modelos animales de neurogénesis, microcefalia y autismo; investigación biológica sin IA en software", "duda": false, "acuerdo": true}
+{"id": "R681", "decision": "NO", "criterios": ["CE3"], "motivo": "CapacitaBOT chatbot habilidades sociales DI; herramienta educativa terapéutica", "duda": false, "acuerdo": false}
+{"id": "R682", "decision": "NO", "criterios": ["CI3"], "motivo": "Modelos predictivos de conmoción deportiva en atletas; sin población cognitiva ni neurodivergencia picoc", "duda": false, "acuerdo": true}
+{"id": "R683", "decision": "NO", "criterios": ["CI3"], "motivo": "SummaryLens resume documentos; población general sin discapacidad cognitiva", "duda": false, "acuerdo": false}
+{"id": "R684", "decision": "NO", "criterios": ["CE1"], "motivo": "VR, seguimiento ocular y ML diagnostican dislexia; cribado clínico sin artefacto software en SDLC", "duda": false, "acuerdo": true}
+{"id": "R685", "decision": "NO", "criterios": ["CE1"], "motivo": "Redes neuronales sobre EEG para detección de autismo; biomarcador sin producto software evaluado", "duda": false, "acuerdo": true}
+{"id": "R686", "decision": "NO", "criterios": ["CI3"], "motivo": "Controllabilidad de red y espectro psicótico; psiquiatría general sin software ni población picoc", "duda": false, "acuerdo": true}
+{"id": "R687", "decision": "NO", "criterios": ["CE1"], "motivo": "Clasificación multietiqueta de trastornos psicóticos en EHR; diagnóstico clínico sin SDLC de accesibilidad", "duda": false, "acuerdo": true}
+{"id": "R688", "decision": "NO", "criterios": ["CE3"], "motivo": "Agente conversacional Emoty para alexitimia en TND; terapia asistida por conversación, no fase SDLC", "duda": false, "acuerdo": true}
+{"id": "R689", "decision": "NO", "criterios": ["CE1"], "motivo": "CNN clasifica dislexia con volúmenes cerebrales; neuroimagen diagnóstica sin desarrollo de software", "duda": false, "acuerdo": true}
+{"id": "R690", "decision": "NO", "criterios": ["CI3"], "motivo": "Consistencia de keypoints faciales ante vídeos emocionales; población general sin neurodivergencia picoc", "duda": false, "acuerdo": true}
+{"id": "R691", "decision": "SI", "criterios": [], "motivo": "Estudio de experiencia de trabajadores neurodivergentes en anotación de datos para IA", "duda": true, "acuerdo": true}
+{"id": "R692", "decision": "NO", "criterios": ["CI4"], "motivo": "Oscilaciones neurales y percepción del habla en autismo infantil; sin IA ni ciclo de vida del software", "duda": false, "acuerdo": true}
+{"id": "R693", "decision": "SI", "criterios": [], "motivo": "Herramienta asistida de escritura Leichte Sprache con NLG para discapacidad cognitiva", "duda": true, "acuerdo": true}
+{"id": "R694", "decision": "NO", "criterios": ["CI3"], "motivo": "CNN detecta tartamudez en espectrogramas; trastorno del habla no incluido en población del picoc", "duda": false, "acuerdo": true}
+{"id": "R695", "decision": "NO", "criterios": ["CE1"], "motivo": "Métricas eye-tracking y ML para diagnóstico de dislexia; evaluación clínica sin producto software SDLC", "duda": false, "acuerdo": true}
+{"id": "R696", "decision": "NO", "criterios": ["CI3"], "motivo": "Segmentación de cerebelo infantil con aprendizaje autosupervisado; neuroimagen pediátrica general", "duda": false, "acuerdo": true}
+{"id": "R697", "decision": "NO", "criterios": ["CE3"], "motivo": "Serious games y eye-tracking anticipan disgrafía; intervención clínica gamificada sin SDLC", "duda": false, "acuerdo": true}
+{"id": "R698", "decision": "NO", "criterios": ["CE1"], "motivo": "Estimación de pose 2D y fenotipado digital para cribado de TEA; diagnóstico conductual automatizado", "duda": false, "acuerdo": true}
+{"id": "R699", "decision": "NO", "criterios": ["CE1"], "motivo": "AutYOLO-ATT diagnostica autismo por expresión facial; clasificación clínica sin artefacto software", "duda": false, "acuerdo": true}
+{"id": "R700", "decision": "NO", "criterios": ["CI4"], "motivo": "Campamento virtual de programación para estudiantes con discapacidad; pedagogía sin IA en SDLC accesible", "duda": false, "acuerdo": true}
+{"id": "R701", "decision": "NO", "criterios": ["CI4"], "motivo": "Benchmark LLM metáfora y sarcasmo Asperger; sin desarrollo software", "duda": false, "acuerdo": false}
+{"id": "R702", "decision": "NO", "criterios": ["CI4"], "motivo": "Caso clínico de polimicrogiria y neuroimagen; sin inteligencia artificial ni software accesible", "duda": false, "acuerdo": true}
+{"id": "R703", "decision": "NO", "criterios": ["CE1"], "motivo": "ML clasifica patrones de marcha en niños con autismo; biomarcador motor sin producto software", "duda": false, "acuerdo": true}
+{"id": "R704", "decision": "NO", "criterios": ["CE1"], "motivo": "LemurDx smartwatch mide hiperactividad TDAH; biomarcador clínico", "duda": false, "acuerdo": false}
+{"id": "R705", "decision": "SI", "criterios": [], "motivo": "QuickPic AAC genera displays con IA just-in-time para usuarios con mínima expresión oral", "duda": true, "acuerdo": true}
+{"id": "R706", "decision": "NO", "criterios": ["CI3"], "motivo": "Edad cerebral con ML en desarrollo típico; sin población neurodivergente ni software accesible", "duda": false, "acuerdo": true}
+{"id": "R707", "decision": "NO", "criterios": ["CE1"], "motivo": "Visión por computador evalúa habilidades y emociones en TEA desde vídeos; cribado clínico", "duda": false, "acuerdo": true}
+{"id": "R708", "decision": "SI", "criterios": [], "motivo": "Modelo ML de fluidez lectora con aplicación de legibilidad en alumnos con y sin dislexia", "duda": true, "acuerdo": true}
+{"id": "R709", "decision": "NO", "criterios": ["CE4"], "motivo": "Introducción narrativa a IA en pediatría del desarrollo; revisión divulgativa sin estudio primario SDLC", "duda": false, "acuerdo": true}
+{"id": "R710", "decision": "SI", "criterios": [], "motivo": "Desarrollo y validación de evaluación online de eficiencia lectora con foco en dislexia", "duda": true, "acuerdo": true}
+{"id": "R711", "decision": "NO", "criterios": ["CI4"], "motivo": "Sesgo en modelos ML en neuroimagen incluyendo TEA; metodología sin artefacto de software accesible", "duda": false, "acuerdo": true}
+{"id": "R712", "decision": "NO", "criterios": ["CI3"], "motivo": "ML predice trastorno de conducta con modelo biopsicosocial; población no alineada con picoc", "duda": false, "acuerdo": true}
+{"id": "R713", "decision": "SI", "criterios": [], "motivo": "Codiseño y rediseño accesible de app museística ACCESS+ para discapacidad intelectual", "duda": true, "acuerdo": true}
+{"id": "R714", "decision": "NO", "criterios": ["CI4"], "motivo": "ML predice resultados neurodesarrollo neonatal; biomarcadores de imagen sin software del tema", "duda": false, "acuerdo": true}
+{"id": "R715", "decision": "NO", "criterios": ["CI3"], "motivo": "Análisis de sentimiento sobre educación online en Asia del Sur; sin población cognitiva ni IA SDLC", "duda": false, "acuerdo": true}
+{"id": "R716", "decision": "NO", "criterios": ["CI4"], "motivo": "Eye-tracking de adaptación textual en disléxicos; estudio experimental sin desarrollo de software con IA", "duda": false, "acuerdo": true}
+{"id": "R717", "decision": "SI", "criterios": [], "motivo": "Dashboard interactivo con ML y minería de datos para análisis de datos de TEA", "duda": true, "acuerdo": true}
+{"id": "R718", "decision": "NO", "criterios": ["CE1"], "motivo": "Modelos ML para detección temprana de TEA; predicción clínica sin artefacto software en SDLC", "duda": false, "acuerdo": true}
+{"id": "R719", "decision": "NO", "criterios": ["CI3"], "motivo": "Conectividad en dispepsia funcional; gastroenterología sin discapacidad cognitiva ni software", "duda": false, "acuerdo": true}
+{"id": "R720", "decision": "NO", "criterios": ["CI4"], "motivo": "Estudio piloto de textos fáciles lectura en sordos; sin IA ni ciclo de vida del software", "duda": false, "acuerdo": true}
+{"id": "R721", "decision": "SI", "criterios": [], "motivo": "Explora LLM para generar contenido Easy to Read para discapacidad cognitiva e intelectual", "duda": true, "acuerdo": true}
+{"id": "R722", "decision": "NO", "criterios": ["CE3"], "motivo": "RCT chatbot psicoeducación TDAH adulto; intervención terapéutica", "duda": false, "acuerdo": false}
+{"id": "R723", "decision": "NO", "criterios": ["CE1"], "motivo": "Características EEG de atención con apoyo auditivo; biomarcador sin artefacto de software en SDLC", "duda": false, "acuerdo": true}
+{"id": "R724", "decision": "NO", "criterios": ["CI3"], "motivo": "Coach conversacional online para adultos mayores; soledad en vejez sin población picoc", "duda": false, "acuerdo": true}
+{"id": "R725", "decision": "NO", "criterios": ["CI3"], "motivo": "Conjunto de desafíos para evaluación de traducción automática; NLP general sin neurodivergencia", "duda": false, "acuerdo": true}
+{"id": "R726", "decision": "NO", "criterios": ["CE1"], "motivo": "Modelos dual-stream en vídeo para detectar síntomas de TDAH; cribado conductual sin producto software", "duda": false, "acuerdo": true}
+{"id": "R727", "decision": "NO", "criterios": ["CI3"], "motivo": "Encuesta y ML sobre apps antiadicción al móvil; salud digital general sin foco cognitivo picoc", "duda": false, "acuerdo": true}
+{"id": "R728", "decision": "NO", "criterios": ["CI3"], "motivo": "ML para disfluencias en tartamudez; trastorno del habla fuera de la población del marco", "duda": false, "acuerdo": true}
+{"id": "R729", "decision": "NO", "criterios": ["CE1"], "motivo": "Cribado de autismo con deep learning y fair AI; diagnóstico automatizado sin artefacto software SDLC", "duda": false, "acuerdo": true}
+{"id": "R730", "decision": "NO", "criterios": ["CI3"], "motivo": "Respuesta cardíaca a carga cognitiva y depresión; fisiología general sin software accesible", "duda": false, "acuerdo": true}
+{"id": "R731", "decision": "NO", "criterios": ["CE1"], "motivo": "Redes neuronales construidas para cribado de TEA; clasificación clínica sin desarrollo de software", "duda": false, "acuerdo": true}
+{"id": "R732", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión de herramientas automáticas de simplificación textual; síntesis secundaria sin estudio primario SDLC", "duda": false, "acuerdo": true}
+{"id": "R733", "decision": "NO", "criterios": ["CI3"], "motivo": "Métricas lingüísticas en riesgo de psicosis; población psicótica sin discapacidad cognitiva picoc", "duda": false, "acuerdo": true}
+{"id": "R734", "decision": "NO", "criterios": ["CE1"], "motivo": "Diagnóstico TEA con redes de materia gris y flujo sanguíneo; neuroimagen sin producto software", "duda": false, "acuerdo": true}
+{"id": "R735", "decision": "NO", "criterios": ["CI4"], "motivo": "Agresión en preescolares autistas y típicos; estudio conductual sin IA en ciclo de vida software", "duda": false, "acuerdo": true}
+{"id": "R736", "decision": "SI", "criterios": [], "motivo": "App Okra evalúa comprensibilidad de textos con participantes con discapacidad intelectual", "duda": true, "acuerdo": true}
+{"id": "R737", "decision": "NO", "criterios": ["CI3"], "motivo": "Subgrupos EEG en portadoras FMR1; genética rara sin foco en SDLC ni población principal picoc", "duda": false, "acuerdo": true}
+{"id": "R738", "decision": "NO", "criterios": ["CE1"], "motivo": "ML en potenciales relacionados con eventos para trastornos de lectura; biomarcador neural diagnóstico", "duda": false, "acuerdo": true}
+{"id": "R739", "decision": "NO", "criterios": ["CE1"], "motivo": "Sistema recomendador multiclasificador para detección temprana de TEA; diagnóstico sin artefacto software", "duda": false, "acuerdo": true}
+{"id": "R740", "decision": "NO", "criterios": ["CE1"], "motivo": "Dispositivo médico IA para detectar autismo pediátrico bajo PCCP; diagnóstico clínico regulado", "duda": false, "acuerdo": true}
+{"id": "R741", "decision": "NO", "criterios": ["CE1"], "motivo": "Cribador web dislexia con juego ML; screening diagnóstico universal", "duda": false, "acuerdo": false}
+{"id": "R742", "decision": "NO", "criterios": ["CE1"], "motivo": "Guía de deep learning con fMRI para clasificar trastornos neurológicos incluido TEA; diagnóstico", "duda": false, "acuerdo": true}
+{"id": "R743", "decision": "NO", "criterios": ["CI4"], "motivo": "Entrevistas recomendadores personalizados TDAH; experiencia sin SDLC", "duda": false, "acuerdo": false}
+{"id": "R744", "decision": "NO", "criterios": ["CI4"], "motivo": "Reconstrucción visual desde fMRI con CGAN; neurociencia computacional sin población ni SDLC accesible", "duda": false, "acuerdo": true}
+{"id": "R745", "decision": "SI", "criterios": [], "motivo": "Adaptación con IA y UDL del programa InPACT en casa para niños neurodivergentes", "duda": true, "acuerdo": true}
+{"id": "R746", "decision": "NO", "criterios": ["CI4"], "motivo": "Rol de validadores de contenido Easy-to-Read; estudio profesional sin IA en desarrollo de software", "duda": false, "acuerdo": true}
+{"id": "R747", "decision": "NO", "criterios": ["CI3"], "motivo": "Diseño de vídeos MOOC móviles y dificultades de aprendizaje; sin neurodivergencia explícita ni IA SDLC", "duda": false, "acuerdo": true}
+{"id": "R748", "decision": "NO", "criterios": ["CI3"], "motivo": "Woebot adaptado a trastornos por sustancias; adicciones sin población cognitiva del picoc", "duda": false, "acuerdo": true}
+{"id": "R749", "decision": "NO", "criterios": ["CE3"], "motivo": "VR inmersiva y agente conversacional para aprendizaje inclusivo en autismo; tutor terapéutico inmersivo", "duda": false, "acuerdo": true}
+{"id": "R750", "decision": "NO", "criterios": ["CE1"], "motivo": "CNN sobre conectividad EEG para clasificar TDAH; diagnóstico neurofisiológico sin producto software", "duda": false, "acuerdo": true}
+{"id": "R751", "decision": "NO", "criterios": ["CE3"], "motivo": "Robot coach para habilidades motoras y sociales en TEA; rehabilitación robótica fuera del SDLC", "duda": false, "acuerdo": true}
+{"id": "R752", "decision": "NO", "criterios": ["CI3"], "motivo": "SVR de progresión de Parkinson desde voz; enfermedad neurodegenerativa adulta sin software accesible", "duda": false, "acuerdo": true}
+{"id": "R753", "decision": "NO", "criterios": ["CI4"], "motivo": "Dataset público HYPERAKTIV de actividad en TDAH; recurso de datos sin intervención SDLC", "duda": false, "acuerdo": true}
+{"id": "R754", "decision": "NO", "criterios": ["CE3"], "motivo": "Validación técnica de robot LOLA2 con app IA para AVAD en TND; asistencia robótica, no SDLC", "duda": false, "acuerdo": true}
+{"id": "R755", "decision": "NO", "criterios": ["CE1"], "motivo": "Minería de datos y ensemble para identificar TEA y educación personalizada; foco diagnóstico clínico", "duda": false, "acuerdo": true}
+{"id": "R756", "decision": "NO", "criterios": ["CI4"], "motivo": "Software SpineTool para espinas dendríticas en neurociencia; herramienta de laboratorio sin población picoc", "duda": false, "acuerdo": true}
+{"id": "R757", "decision": "NO", "criterios": ["CI3"], "motivo": "Potenciales relacionados y theta en memoria de trabajo en envejecimiento sano; sin neurodivergencia", "duda": false, "acuerdo": true}
+{"id": "R758", "decision": "NO", "criterios": ["CI3"], "motivo": "Proteómica plasmática en depresión mayor; psiquiatría general sin IA en software accesible", "duda": false, "acuerdo": true}
+{"id": "R759", "decision": "NO", "criterios": ["CE1"], "motivo": "DCNN con XAI para trastorno específico del lenguaje infantil; diagnóstico clínico automatizado", "duda": false, "acuerdo": true}
+{"id": "R760", "decision": "NO", "criterios": ["CE4"], "motivo": "Position paper plataforma XR inclusiva autismo; sin estudio primario", "duda": false, "acuerdo": false}
+{"id": "R761", "decision": "NO", "criterios": ["CE1"], "motivo": "ML con circunferencia craneal y volúmenes fenotipa autismo adulto; biomarcador estructural sin software", "duda": false, "acuerdo": true}
+{"id": "R766", "decision": "NO", "criterios": ["CI4"], "motivo": "Evaluación sitio LONDI trastornos aprendizaje; portal sin IA en SDLC", "duda": false, "acuerdo": false}
+{"id": "R769", "decision": "SI", "criterios": [], "motivo": "Dimensiones éticas de simplificación easy-read con LLM para discapacidad intelectual", "duda": true, "acuerdo": true}
+{"id": "R772", "decision": "NO", "criterios": ["CI4"], "motivo": "Compara precisión y legibilidad de chatbots comerciales en preguntas de TEA; sin desarrollo SDLC propio", "duda": false, "acuerdo": true}
+{"id": "R773", "decision": "NO", "criterios": ["CE1"], "motivo": "Deep learning fusiona rasgos robóticos y escritura para clasificar disgrafía; diagnóstico sin artefacto accesible", "duda": false, "acuerdo": true}
+{"id": "R775", "decision": "NO", "criterios": ["CI4"], "motivo": "Intervenciones móviles geometría dislexia; pedagógico sin IA explícita SDLC", "duda": false, "acuerdo": false}
+{"id": "R778", "decision": "NO", "criterios": ["CE4"], "motivo": "Análisis de 30 artículos sobre IA en matemáticas para necesidades educativas especiales; revisión secundaria", "duda": false, "acuerdo": true}
+{"id": "R779", "decision": "NO", "criterios": ["CI4"], "motivo": "Pruebas WCAG adolescentes TDAH; accesibilidad web sin inteligencia artificial", "duda": false, "acuerdo": false}
+{"id": "R780", "decision": "NO", "criterios": ["CI4"], "motivo": "Principios de codiseño de infografías de salud para discapacidad intelectual; sin IA en SDLC", "duda": false, "acuerdo": true}
+{"id": "R787", "decision": "NO", "criterios": ["CE1"], "motivo": "XAI y quantum ML para diagnóstico temprano de TEA pediátrico; clasificación clínica sin software evaluado", "duda": false, "acuerdo": true}
+{"id": "R791", "decision": "NO", "criterios": ["CI4"], "motivo": "Comprensión de video-blogs simplificados en discapacidad intelectual; estudio pedagógico sin IA", "duda": false, "acuerdo": true}
+{"id": "R802", "decision": "NO", "criterios": ["CI3"], "motivo": "Entorno GenAI para problemas verbales de matemáticas en primaria general; sin población picoc explícita", "duda": false, "acuerdo": true}
+{"id": "R807", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión sistemática de analítica de aprendizaje e IA en educación superior; síntesis sin estudio primario SDLC", "duda": false, "acuerdo": true}
+{"id": "R826", "decision": "NO", "criterios": ["CE1"], "motivo": "Predice severidad sintomática de TEA con métricas EEG; biomarcador sin producto software en SDLC", "duda": false, "acuerdo": true}
+{"id": "R830", "decision": "NO", "criterios": ["CE1"], "motivo": "Eye-tracking Lexplore e IA para identificar dificultades lectoras; cribado clínico sin desarrollo de software", "duda": false, "acuerdo": true}
+{"id": "R831", "decision": "SI", "criterios": [], "motivo": "Implicaciones de diseño de asistentes domóticos con LLM para discapacidad intelectual y EUD", "duda": true, "acuerdo": true}
+{"id": "R842", "decision": "SI", "criterios": [], "motivo": "Evalúa herramientas GenAI generando textos para práctica lectora en dificultades de lectura", "duda": true, "acuerdo": true}
+{"id": "R845", "decision": "NO", "criterios": ["CE1"], "motivo": "Askisi-MD cribador dificultades matemáticas; diagnóstico neuropsicológico web", "duda": false, "acuerdo": false}
+{"id": "R852", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión sistemática y bibliometría de IA en accesibilidad digital; síntesis secundaria sin estudio primario", "duda": false, "acuerdo": true}
+{"id": "R855", "decision": "NO", "criterios": ["CI3"], "motivo": "FldtMatch mejora clasificación con aprendizaje semi-supervisado; método ML general sin población picoc", "duda": false, "acuerdo": true}
+{"id": "R856", "decision": "NO", "criterios": ["CE1"], "motivo": "Artículo retractado TabPFNMix para diagnóstico de autismo y apoyo parental; solo cribado clínico", "duda": false, "acuerdo": true}
+{"id": "R860", "decision": "NO", "criterios": ["CI4"], "motivo": "Comprensión lectora en TEA con y sin baja cognición; psicología educativa sin IA en software", "duda": false, "acuerdo": true}
+{"id": "R862", "decision": "NO", "criterios": ["CI4"], "motivo": "Habilidades comunicativas en niños con TEA; evaluación conductual sin inteligencia artificial ni SDLC", "duda": false, "acuerdo": true}
+{"id": "R864", "decision": "SI", "criterios": [], "motivo": "Marco TEVV para prueba y validación de IA con foco en accesibilidad y usuarios con discapacidad", "duda": true, "acuerdo": true}
+{"id": "R875", "decision": "NO", "criterios": ["CI4"], "motivo": "Eye-tracking de textos easy-to-read en adultos con baja escolaridad; sin IA en ciclo de vida software", "duda": false, "acuerdo": true}
+{"id": "R880", "decision": "SI", "criterios": [], "motivo": "Ecosistema de APIs para tecnologías asistivas orientadas a discapacidad cognitiva", "duda": true, "acuerdo": true}
+{"id": "R891", "decision": "NO", "criterios": ["CI4"], "motivo": "Aceptabilidad de VR multisensorial para TND según cuidadores; estudio de aceptación sin IA en SDLC", "duda": false, "acuerdo": true}
+{"id": "R895", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión de avances en XAI en teoría y aplicaciones; síntesis amplia sin estudio empírico SDLC accesible", "duda": false, "acuerdo": true}
+{"id": "R899", "decision": "NO", "criterios": ["CE1"], "motivo": "ML en modelo constelación para riesgo de dificultad lectora; predicción clínica sin artefacto software", "duda": false, "acuerdo": true}
+{"id": "R908", "decision": "NO", "criterios": ["CE3"], "motivo": "Plataforma RehabiliTEA con BCI y XR para entrenamiento cognitivo en TEA; rehabilitación gamificada", "duda": false, "acuerdo": true}
+{"id": "R910", "decision": "NO", "criterios": ["CI3"], "motivo": "Modelo VQA sobre adquisición de palabras función en niños típicos; sin población neurodivergente picoc", "duda": false, "acuerdo": true}
+{"id": "R912", "decision": "NO", "criterios": ["CI3"], "motivo": "LLM como crowdworkers para generación de contexto NLP; tarea lingüística general sin población picoc", "duda": false, "acuerdo": true}
+{"id": "R913", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión de CDSS e IA en evaluación y rehabilitación de TDAH; síntesis secundaria sin estudio primario", "duda": false, "acuerdo": true}
+{"id": "R930", "decision": "SI", "criterios": [], "motivo": "Percepciones UTAUT de sistemas de solicitud de empleo con IA entre personas con discapacidad", "duda": true, "acuerdo": true}
+{"id": "R934", "decision": "NO", "criterios": ["CE4"], "motivo": "Análisis sistemático de herramientas educativas con IA en India para discapacidad; revisión secundaria", "duda": false, "acuerdo": true}
+{"id": "R936", "decision": "NO", "criterios": ["CE1"], "motivo": "Detección de estrés fisiológico en entrevistas laborales simuladas con autismo; sin artefacto software SDLC", "duda": false, "acuerdo": true}
+{"id": "R939", "decision": "NO", "criterios": ["CE4"], "motivo": "Panorama prospectivo de apps móviles para cribado de TEA; artículo de opinión sin estudio empírico primario", "duda": false, "acuerdo": true}
+{"id": "R946", "decision": "NO", "criterios": ["CI4"], "motivo": "Conectividad de sustancia blanca en TEA y esquizofrenia; neuroimagen estructural sin software accesible", "duda": false, "acuerdo": true}
+{"id": "R950", "decision": "NO", "criterios": ["CI4"], "motivo": "Estudio cualitativo de apoyo matemático en discapacidad intelectual en China; sin IA en SDLC", "duda": false, "acuerdo": true}
+{"id": "R956", "decision": "NO", "criterios": ["CE1"], "motivo": "Fusión multidimensional EEG y SVM para clasificar TEA infantil; diagnóstico neurofisiológico", "duda": false, "acuerdo": true}
+{"id": "R957", "decision": "NO", "criterios": ["CE1"], "motivo": "Acoplamiento fase-amplitud EEG en niños con TEA; biomarcador de conectividad sin producto software", "duda": false, "acuerdo": true}
+{"id": "R963", "decision": "NO", "criterios": ["CE1"], "motivo": "PAC delta-beta en autismo por edades; métrica neurofisiológica asociada a síntomas sin software", "duda": false, "acuerdo": true}
+{"id": "R967", "decision": "NO", "criterios": ["CE1"], "motivo": "Selección de características deep learning en rs-fMRI para detectar TEA; diagnóstico por imagen", "duda": false, "acuerdo": true}
+{"id": "R975", "decision": "NO", "criterios": ["CI4"], "motivo": "ML ajusta pesos Charlson para mortalidad en autistas mayores; epidemiología clínica sin software SDLC", "duda": false, "acuerdo": true}
+{"id": "R977", "decision": "SI", "criterios": [], "motivo": "Valida metodología PlanTEA de evaluación UX de software con adultos con TEA", "duda": true, "acuerdo": true}
+{"id": "R978", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión sistemática PRISMA de terapia asistida por robots en autismo; síntesis secundaria", "duda": false, "acuerdo": true}
+{"id": "R982", "decision": "NO", "criterios": ["CE1"], "motivo": "Eye-tracking y deep learning estiman perfil cognitivo en discapacidad intelectual; biomarcador diagnóstico", "duda": false, "acuerdo": true}
+{"id": "R984", "decision": "NO", "criterios": ["CE1"], "motivo": "ADHD-AttentionNet con NeuroDCT-ICA detecta TDAH; clasificación fisiológica sin artefacto software", "duda": false, "acuerdo": true}
+{"id": "R985", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión práctica de clasificación de TEA con conectividad ABIDE; síntesis sin estudio primario SDLC", "duda": false, "acuerdo": true}
+{"id": "R987", "decision": "NO", "criterios": ["CI4"], "motivo": "NLP discurso discapacidad redes sociales; análisis social sin software accesible", "duda": false, "acuerdo": false}
+{"id": "R988", "decision": "NO", "criterios": ["CI3"], "motivo": "Comparación automatizada de legibilidad de Wikipedia en enfermedades; sin población neurodivergente picoc", "duda": false, "acuerdo": true}
+{"id": "R989", "decision": "NO", "criterios": ["CI4"], "motivo": "Guía de reporte para estudios de neurotecnología e IA en epilepsia; metodología editorial sin SDLC", "duda": false, "acuerdo": true}
+{"id": "R991", "decision": "NO", "criterios": ["CI4"], "motivo": "Estrategias mecanísticas de encefalopatía tuberosa y autismo; biología sin software accesible", "duda": false, "acuerdo": true}
+{"id": "R996", "decision": "NO", "criterios": ["CE3"], "motivo": "Mentor virtual LLM neurodivergentes STEM; apoyo educativo sin SDLC", "duda": false, "acuerdo": false}
+{"id": "R1001", "decision": "NO", "criterios": ["CE3"], "motivo": "LMS SpectrumSphere TEA con VR y robótica; intervención educativa principal", "duda": false, "acuerdo": false}
+{"id": "R1004", "decision": "NO", "criterios": ["CI4"], "motivo": "Eye-tracking y teoría de la mente en comprensión narrativa autista; sin IA en ciclo de vida software", "duda": false, "acuerdo": true}
+{"id": "R1007", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión técnicas IA rasgos cognitivos Down; síntesis sin estudio software", "duda": false, "acuerdo": false}
+{"id": "R1012", "decision": "NO", "criterios": ["CE3"], "motivo": "Robot asistivo social con LLM entrega ejercicios TCC; terapia robótica fuera del SDLC de accesibilidad", "duda": false, "acuerdo": true}
+{"id": "R1013", "decision": "NO", "criterios": ["CI3"], "motivo": "App móvil reconoce dolor facial en parálisis cerebral; población fuera del marco picoc", "duda": false, "acuerdo": true}
+{"id": "R1019", "decision": "NO", "criterios": ["CE3"], "motivo": "DTx gamificado para TDAH y regulación de dificultad; terapia digital sin fase SDLC de accesibilidad", "duda": false, "acuerdo": true}
+{"id": "R1022", "decision": "NO", "criterios": ["CE4"], "motivo": "Scoping review de IA en investigación y educación de dislexia; síntesis secundaria", "duda": false, "acuerdo": true}
+{"id": "R1023", "decision": "NO", "criterios": ["CI4"], "motivo": "Disparidades regionales en salud digital para TEA en China; epidemiología de servicios sin SDLC", "duda": false, "acuerdo": true}
+{"id": "R1030", "decision": "NO", "criterios": ["CI4"], "motivo": "Barreras percibidas en servicios de salud para discapacidad intelectual; estudio cualitativo sin IA", "duda": false, "acuerdo": true}
+{"id": "R1031", "decision": "NO", "criterios": ["CE1"], "motivo": "rs-fMRI en autismo por etapas de desarrollo; neuroimagen diagnóstica sin artefacto software", "duda": false, "acuerdo": true}
+{"id": "R1034", "decision": "NO", "criterios": ["CI3"], "motivo": "Mutación homocigota PTRHD1 en discapacidad intelectual y parkinsonismo; genética clínica sin software", "duda": false, "acuerdo": true}
+{"id": "R1036", "decision": "NO", "criterios": ["CI4"], "motivo": "Intervención de ejercicio inteligente para funciones ejecutivas calientes en TDAH; sin IA en SDLC", "duda": false, "acuerdo": true}
+{"id": "R1040", "decision": "NO", "criterios": ["CE3"], "motivo": "App entrenamiento parental conducta TEA; intervención clínica móvil", "duda": false, "acuerdo": false}
+{"id": "R1044", "decision": "NO", "criterios": ["CI3"], "motivo": "Caso de afasia progresiva con dislexia y disgrafía en kanji; neurología del lenguaje adulta", "duda": false, "acuerdo": true}
+{"id": "R1046", "decision": "NO", "criterios": ["CE1"], "motivo": "Pipeline de fenotipado computacional de autismo en EHR; clasificación clínica sin producto software", "duda": false, "acuerdo": true}
+{"id": "R1053", "decision": "NO", "criterios": ["CE1"], "motivo": "Jerarquía de conectoma funcional atípica en autismo; biomarcador de desarrollo sin software", "duda": false, "acuerdo": true}
+{"id": "R1055", "decision": "NO", "criterios": ["CI4"], "motivo": "Microscopía electrónica y conectividad en cuerpo calloso en TEA; neuroanatomía sin IA SDLC", "duda": false, "acuerdo": true}
+{"id": "R1057", "decision": "NO", "criterios": ["CE2"], "motivo": "IoT adaptativo para personas con discapacidad visual; accesibilidad sensorial sin población cognitiva picoc", "duda": false, "acuerdo": true}
+{"id": "R1059", "decision": "NO", "criterios": ["CI3"], "motivo": "Dificultades de estudiantes en cinemática con campos de fuerza; física educativa general", "duda": false, "acuerdo": true}
+{"id": "R1060", "decision": "NO", "criterios": ["CI3"], "motivo": "Segmentación tumoral con aprendizaje adversarial; oncología de imágenes sin población picoc", "duda": false, "acuerdo": true}
+{"id": "R1061", "decision": "SI", "criterios": [], "motivo": "CoGenASD integra codiseño y MDD para generar apps multiplataforma para TEA", "duda": true, "acuerdo": true}
+{"id": "R1063", "decision": "NO", "criterios": ["CE1"], "motivo": "Modelos clasifican TEA por variables lexicogramaticales; diagnóstico lingüístico sin artefacto software", "duda": false, "acuerdo": true}
+{"id": "R1066", "decision": "NO", "criterios": ["CI3"], "motivo": "Modelo de lenguaje sobre cálculo de calendario en autismo; cognición excepcional sin SDLC accesible", "duda": false, "acuerdo": true}
+{"id": "R1067", "decision": "NO", "criterios": ["CI3"], "motivo": "Genética CCDC22 y diagnóstico de trastornos del neurodesarrollo; biología molecular sin software", "duda": false, "acuerdo": true}
+{"id": "R1068", "decision": "NO", "criterios": ["CE1"], "motivo": "ML predice síndrome FXTAS en portadores de X frágil; riesgo clínico sin producto software", "duda": false, "acuerdo": true}
+{"id": "R1069", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión sistemática de IA, VR y LLM en educación especial; síntesis secundaria sin estudio primario", "duda": false, "acuerdo": true}
+{"id": "R1073", "decision": "NO", "criterios": ["CE1"], "motivo": "ML en prosodia del habla para clasificar autismo multilingüe; biomarcador acústico sin software", "duda": false, "acuerdo": true}
+{"id": "R1077", "decision": "NO", "criterios": ["CI4"], "motivo": "Impacto de control de calidad en morfometría cortical en autismo; metodología de imagen sin SDLC", "duda": false, "acuerdo": true}
+{"id": "R1078", "decision": "NO", "criterios": ["CE3"], "motivo": "Contenido digital gamificado token economy para TDAH; intervención terapéutica comercial sin SDLC", "duda": false, "acuerdo": true}
+{"id": "R1081", "decision": "SI", "criterios": [], "motivo": "Personalización educativa con UDL, metodologías activas y analítica IA en trastornos del neurodesarrollo", "duda": true, "acuerdo": true}
+{"id": "R1083", "decision": "NO", "criterios": ["CI4"], "motivo": "Experiencias autistas en resonancia magnética; accesibilidad de procedimiento clínico sin IA software", "duda": false, "acuerdo": true}
+{"id": "R1084", "decision": "NO", "criterios": ["CI3"], "motivo": "Arte contemporáneo y bienestar de visitantes en museo; accesibilidad cultural general sin IA SDLC", "duda": false, "acuerdo": true}
+{"id": "R1086", "decision": "NO", "criterios": ["CE1"], "motivo": "Serious game evalúa atención en TDAH infantil; herramienta de evaluación clínica sin desarrollo SDLC accesible", "duda": false, "acuerdo": true}
+{"id": "R1088", "decision": "NO", "criterios": ["CI3"], "motivo": "Tinta digital y carga cognitiva en estudiantes de primaria media; medición educativa general", "duda": false, "acuerdo": true}
+{"id": "R1089", "decision": "NO", "criterios": ["CI4"], "motivo": "Perspective paper de fenotipado digital de representación corporal en autismo; propuesta sin IA SDLC", "duda": false, "acuerdo": true}
+{"id": "R1090", "decision": "NO", "criterios": ["CI4"], "motivo": "Inclusión PWRIA en pruebas sensoriales consumo; metodología sin IA", "duda": false, "acuerdo": false}
+{"id": "R1092", "decision": "NO", "criterios": ["CE1"], "motivo": "LSTM y eye-tracking diagnostican dislexia temprana; cribado automatizado sin artefacto software evaluado", "duda": false, "acuerdo": true}
+{"id": "R1095", "decision": "NO", "criterios": ["CE1"], "motivo": "TBSS y ML diagnostican autismo pediátrico con DKI; neuroimagen clasificatoria sin producto software", "duda": false, "acuerdo": true}
+{"id": "R1098", "decision": "NO", "criterios": ["CE1"], "motivo": "Regiones cerebrales explicables en fMRI para diagnóstico de TEA; clasificación clínica sin SDLC", "duda": false, "acuerdo": true}
+{"id": "R1099", "decision": "NO", "criterios": ["CI4"], "motivo": "Propiedades psicométricas ADOS-G en China; validación de instrumento clínico sin IA en software", "duda": false, "acuerdo": true}
+{"id": "R1104", "decision": "SI", "criterios": [], "motivo": "Evaluación mixta de RA accesible en talleres protegidos para discapacidad mental", "duda": true, "acuerdo": true}
+{"id": "R1110", "decision": "NO", "criterios": ["CE3"], "motivo": "Compara juegos narrativos y quiz en intervención digital TDAH; terapia gamificada sin SDLC accesible", "duda": false, "acuerdo": true}
+{"id": "R1111", "decision": "NO", "criterios": ["CE1"], "motivo": "Panorama de diagnósticos ML basados en rostro para trastornos genéticos y psiquiátricos; cribado clínico", "duda": false, "acuerdo": true}
+{"id": "R1112", "decision": "NO", "criterios": ["CI4"], "motivo": "Transición universidad-posgrado en estudiantes autistas; estudio cualitativo sin IA en software", "duda": false, "acuerdo": true}
+{"id": "R1114", "decision": "NO", "criterios": ["CI4"], "motivo": "Guía GRSR para reportar ML en EEG; norma metodológica sin población picoc ni artefacto accesible", "duda": false, "acuerdo": true}
+{"id": "R1115", "decision": "NO", "criterios": ["CE1"], "motivo": "Ciencia de datos optimiza evaluación TDAH con cuestionario BRIEF-2; predicción clínica sin software", "duda": false, "acuerdo": true}
+{"id": "R1116", "decision": "NO", "criterios": ["CI4"], "motivo": "Protocolo EYEdentify de mirada en autismo adulto; diseño de estudio longitudinal sin IA SDLC", "duda": false, "acuerdo": true}
+{"id": "R1119", "decision": "NO", "criterios": ["CI3"], "motivo": "IA predice tendencias de consumo musical digital; industria musical sin población cognitiva", "duda": false, "acuerdo": true}
+{"id": "R1120", "decision": "NO", "criterios": ["CI4"], "motivo": "Preferencias formato información adultos neurodivergentes; sin IA ni SDLC", "duda": false, "acuerdo": false}
+{"id": "R1124", "decision": "NO", "criterios": ["CI3"], "motivo": "Neuroeducación STEM con análisis cognitivo en tiempo real; población universitaria general", "duda": false, "acuerdo": true}
+{"id": "R1127", "decision": "NO", "criterios": ["CI3"], "motivo": "Hoja de ruta tecnológica para epilepsia en Reino Unido; política sanitaria sin software accesible", "duda": false, "acuerdo": true}
+{"id": "R1129", "decision": "NO", "criterios": ["CI3"], "motivo": "Detección de agresión en vídeos clínicos con ML; monitorización clínica sin población picoc", "duda": false, "acuerdo": true}
+{"id": "R1132", "decision": "NO", "criterios": ["CI4"], "motivo": "Multi-ómica epigenética en trastornos del neurodesarrollo; biología sin IA en ciclo de vida software", "duda": false, "acuerdo": true}
+{"id": "R1135", "decision": "NO", "criterios": ["CI3"], "motivo": "Experiencias universitarias con apps e IA para salud mental; bienestar estudiantil general", "duda": false, "acuerdo": true}
+{"id": "R1137", "decision": "NO", "criterios": ["CI3"], "motivo": "Fusión multimodal con LLM para análisis de sentimiento; NLP general sin población neurodivergente", "duda": false, "acuerdo": true}
+{"id": "R1140", "decision": "NO", "criterios": ["CI4"], "motivo": "Dataset DTI derivado de ABIDE II para autismo; recurso de datos sin intervención SDLC accesible", "duda": false, "acuerdo": true}
+{"id": "R1141", "decision": "NO", "criterios": ["CE3"], "motivo": "Sistema robótico asistivo con gestos para discapacidad en empleo; robot manipulador fuera del SDLC", "duda": false, "acuerdo": true}
+{"id": "R1142", "decision": "NO", "criterios": ["CE1"], "motivo": "Predice resultados de entrenamiento en dislexia desde EEG; biomarcador de intervención sin software", "duda": false, "acuerdo": true}
+{"id": "R1143", "decision": "NO", "criterios": ["CI3"], "motivo": "ASR y sensores cuantifican wh-words en aulas preescolares; investigación educativa general", "duda": false, "acuerdo": true}
+{"id": "R1147", "decision": "NO", "criterios": ["CE3"], "motivo": "Terapia digital adaptativa con eye-tracking para TDAH; intervención clínica sin fase SDLC de accesibilidad", "duda": false, "acuerdo": true}
+{"id": "R1149", "decision": "NO", "criterios": ["CE2"], "motivo": "Barreras de farmacéuticos con discapacidades físicas, visuales y auditivas; sin foco cognitivo picoc", "duda": false, "acuerdo": true}
+{"id": "R1150", "decision": "NO", "criterios": ["CI4"], "motivo": "Desarrollo cerebral en ratas MECP2 duplicado; modelo animal de autismo sin software", "duda": false, "acuerdo": true}
+{"id": "R1152", "decision": "NO", "criterios": ["CI4"], "motivo": "Preferencias de diseño de robots sociales en niños autistas; estudio perceptivo sin IA en SDLC", "duda": false, "acuerdo": true}
+{"id": "R1155", "decision": "NO", "criterios": ["CI3"], "motivo": "ML predice vocabulario infantil desde conectividad EEG; desarrollo típico sin neurodivergencia picoc", "duda": false, "acuerdo": true}
+{"id": "R1159", "decision": "NO", "criterios": ["CI3"], "motivo": "Estratificación de riesgo ML para seguimiento de neonatos a término; pediatría general sin software accesible", "duda": false, "acuerdo": true}
+{"id": "R1160", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión sistemática de tecnologías asistivas SEND en escuelas; síntesis secundaria", "duda": false, "acuerdo": true}
+{"id": "R1161", "decision": "NO", "criterios": ["CE4"], "motivo": "Panorama de terapéutica digital infantil con IA y juegos; revisión narrativa sin estudio primario SDLC", "duda": false, "acuerdo": true}
+{"id": "R1163", "decision": "NO", "criterios": ["CI3"], "motivo": "ML explicable en salud mental universitaria en Bangladesh; población general sin foco neurodivergente", "duda": false, "acuerdo": true}
+{"id": "R1165", "decision": "NO", "criterios": ["CI4"], "motivo": "Modulación del ritmo del habla hacia personas autistas; fonética experimental sin IA en software", "duda": false, "acuerdo": true}
+{"id": "R1167", "decision": "NO", "criterios": ["CI3"], "motivo": "Detección de Parkinson desde EEG con patrones espaciales; enfermedad neurodegenerativa sin población picoc", "duda": false, "acuerdo": true}
+{"id": "R1168", "decision": "NO", "criterios": ["CI3"], "motivo": "Actividad cerebelosa Slow-4 y MMSE en Alzheimer; demencia sin discapacidad cognitiva picoc ni software", "duda": false, "acuerdo": true}
+{"id": "R1170", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión GBD de prevalencia global de trastornos mentales; síntesis epidemiológica secundaria", "duda": false, "acuerdo": true}
+{"id": "R1174", "decision": "NO", "criterios": ["CI3"], "motivo": "BehaVERT decodifica comportamiento animal con transformer; neurociencia básica sin población humana picoc", "duda": false, "acuerdo": true}
+{"id": "R1175", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión sistemática de BCI con potenciales evocados visuales en gaming; síntesis secundaria", "duda": false, "acuerdo": true}
+{"id": "R1176", "decision": "NO", "criterios": ["CI3"], "motivo": "Caso longitudinal de síndrome PACS1; genética rara sin IA en software accesible", "duda": false, "acuerdo": true}
+{"id": "R1177", "decision": "NO", "criterios": ["CI3"], "motivo": "fMRI de cadetes de vuelo con ML; población de pilotos sin neurodivergencia picoc", "duda": false, "acuerdo": true}
+{"id": "R1181", "decision": "NO", "criterios": ["CI3"], "motivo": "Arquitectura poligénica cerebral en niños; genómica poblacional general sin software SDLC accesible", "duda": false, "acuerdo": true}
+{"id": "R1182", "decision": "NO", "criterios": ["CE3"], "motivo": "Validación de entrenamiento social automatizado en población general; tutor virtual terapéutico", "duda": false, "acuerdo": true}
+{"id": "R1185", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión de herramientas automáticas para desarrollo del habla infantil; síntesis secundaria", "duda": false, "acuerdo": true}
+{"id": "R1186", "decision": "NO", "criterios": ["CE1"], "motivo": "ML en congruencia neural del RAN para dificultades de lectura; biomarcador cognitivo sin software", "duda": false, "acuerdo": true}
+{"id": "R1187", "decision": "NO", "criterios": ["CI3"], "motivo": "Preferencias suecas para app de salud mental en jóvenes adultos; población general sin neurodivergencia picoc", "duda": false, "acuerdo": true}
+{"id": "R1189", "decision": "NO", "criterios": ["CI3"], "motivo": "Asistentes voz demencia; población fuera del marco picoc", "duda": false, "acuerdo": false}
+{"id": "R1190", "decision": "NO", "criterios": ["CE1"], "motivo": "Ensembles deep learning criban autismo con fotografía retiniana; diagnóstico ocular sin artefacto software", "duda": false, "acuerdo": true}
+{"id": "R1191", "decision": "NO", "criterios": ["CE4"], "motivo": "Survey sobre detección y clasificación de enfermedades neurológicas; revisión amplia secundaria", "duda": false, "acuerdo": true}
+{"id": "R1195", "decision": "NO", "criterios": ["CI3"], "motivo": "Chatbots de equidad vacunal COVID-19; salud pública sin población cognitiva ni SDLC accesible", "duda": false, "acuerdo": true}
+{"id": "R1197", "decision": "NO", "criterios": ["CI3"], "motivo": "Disrafia espinal abierta prenatal; obstetricia sin discapacidad cognitiva ni software del tema", "duda": false, "acuerdo": true}
+{"id": "R1200", "decision": "NO", "criterios": ["CE3"], "motivo": "Personalización aprendizaje de comportamiento robótico en terapia asistida; robot terapéutico fuera SDLC", "duda": false, "acuerdo": true}
+{"id": "R1204", "decision": "NO", "criterios": ["CI4"], "motivo": "CYFIP1 y desarrollo de axones corticales en autismo; biología de desarrollo sin IA en software", "duda": false, "acuerdo": true}
+{"id": "R1206", "decision": "NO", "criterios": ["CE4"], "motivo": "Estado y futuro de terapéutica digital; revisión conceptual de software médico sin estudio primario SDLC", "duda": false, "acuerdo": true}
+{"id": "R1207", "decision": "NO", "criterios": ["CI3"], "motivo": "circRNA-miRNA en esquizofrenia; epigenética psiquiátrica sin población picoc ni software", "duda": false, "acuerdo": true}
+{"id": "R1209", "decision": "NO", "criterios": ["CI3"], "motivo": "Microestados EEG en cerebro prematuro; neonatología sin neurodivergencia picoc ni SDLC", "duda": false, "acuerdo": true}
+{"id": "R1214", "decision": "NO", "criterios": ["CI3"], "motivo": "Puntuación de riesgo psiquiátrico cerebral en adolescentes; psiquiatría general sin software accesible", "duda": false, "acuerdo": true}
+{"id": "R1215", "decision": "NO", "criterios": ["CI3"], "motivo": "Fenotipos neuroimagen tipo Alzheimer en Biobank sano; envejecimiento sin población picoc", "duda": false, "acuerdo": true}
+{"id": "R1218", "decision": "NO", "criterios": ["CE1"], "motivo": "Seguimiento cortical del habla en trastorno del desarrollo del lenguaje; biomarcador sin producto software", "duda": false, "acuerdo": true}
+{"id": "R1220", "decision": "NO", "criterios": ["CI4"], "motivo": "Interfaz humano-dron natural para usuarios con necesidades especiales; interacción hardware sin IA SDLC claro", "duda": false, "acuerdo": true}
+{"id": "R1221", "decision": "NO", "criterios": ["CE3"], "motivo": "Robot humanoide bailarín para engagement social en autismo domiciliario; robot terapéutico fuera del SDLC", "duda": false, "acuerdo": true}
+{"id": "R1225", "decision": "NO", "criterios": ["CI3"], "motivo": "ML infiere puntuaciones neurocognitivas en cardiopatía congénita adolescente; sin población picoc principal", "duda": false, "acuerdo": true}
+{"id": "R1226", "decision": "NO", "criterios": ["CI3"], "motivo": "Encuentros pediátricos de salud mental post-COVID; epidemiología hospitalaria general", "duda": false, "acuerdo": true}
+{"id": "R1227", "decision": "NO", "criterios": ["CI3"], "motivo": "Protocolo neuroimagen cohorte TAY en psicosis juvenil; psiquiatría sin discapacidad cognitiva picoc", "duda": false, "acuerdo": true}
+{"id": "R1228", "decision": "NO", "criterios": ["CI3"], "motivo": "Wearable inteligente para habilidades motoras en lactantes; desarrollo típico sin neurodivergencia", "duda": false, "acuerdo": true}
+{"id": "R1231", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión de desmielinización en trastornos psiquiátricos y neurológicos; síntesis secundaria amplia", "duda": false, "acuerdo": true}
+{"id": "R1233", "decision": "NO", "criterios": ["CI3"], "motivo": "Mecanismos de afrontamiento y lectura en dislexia y disgrafía; estudio educativo sin IA en software", "duda": false, "acuerdo": true}
+{"id": "R1234", "decision": "NO", "criterios": ["CI3"], "motivo": "Relaciones genéticas entre estructura cerebral y esquizofrenia; genómica sin software accesible", "duda": false, "acuerdo": true}
+{"id": "R1236", "decision": "NO", "criterios": ["CE1"], "motivo": "Detección vídeo de succión no nutritiva infantil como marcador neurodesarrollo; cribado sin artefacto software", "duda": false, "acuerdo": true}
+{"id": "R1237", "decision": "NO", "criterios": ["CI3"], "motivo": "Programa VR de ejercicio en escuela para discapacidad motriz; accesibilidad física sin foco cognitivo picoc", "duda": false, "acuerdo": true}
+{"id": "R1238", "decision": "NO", "criterios": ["CI4"], "motivo": "Modelado normativo de microestructura de sustancia blanca cerebral; neuroimagen poblacional sin SDLC", "duda": false, "acuerdo": true}
+{"id": "R1241", "decision": "NO", "criterios": ["CI4"], "motivo": "Grabaciones clínicas síndrome Down; entrevistas sin IA en SDLC", "duda": false, "acuerdo": false}
+{"id": "R1242", "decision": "NO", "criterios": ["CI3"], "motivo": "Simulación de velocidad en procesamiento de lenguaje embodied; psicolingüística experimental general", "duda": false, "acuerdo": true}
+{"id": "R1243", "decision": "NO", "criterios": ["CI3"], "motivo": "Pliegue cortical tras prematuridad en infancia; neuroimagen desarrollo sin neurodivergencia picoc", "duda": false, "acuerdo": true}
+{"id": "R1245", "decision": "NO", "criterios": ["CI3"], "motivo": "Trayectorias neuroestructurales en epilepsia pediátrica MRI-negativa; sin población cognitiva picoc", "duda": false, "acuerdo": true}
+{"id": "R1246", "decision": "NO", "criterios": ["CI3"], "motivo": "Predicción de riesgo de trastorno bipolar con herramientas tempranas; psiquiatría sin software SDLC", "duda": false, "acuerdo": true}
+{"id": "R1247", "decision": "NO", "criterios": ["CI3"], "motivo": "Modelo inteligente de calibración para hipotiroidismo; endocrinología general sin población picoc", "duda": false, "acuerdo": true}
+{"id": "R1248", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión sistemática de enseñanza de ciencias inclusiva; síntesis secundaria sin IA SDLC primaria", "duda": false, "acuerdo": true}
+{"id": "R1249", "decision": "NO", "criterios": ["CI4"], "motivo": "Estrategias de promoción lectora para neurodivergentes en Chile; análisis documental sin IA en software", "duda": false, "acuerdo": true}
+{"id": "R1250", "decision": "NO", "criterios": ["CI3"], "motivo": "Modelo predictivo de enterocolitis necrotizante neonatal; gastroenterología perinatal sin software accesible", "duda": false, "acuerdo": true}
+{"id": "R1251", "decision": "NO", "criterios": ["CI4"], "motivo": "ARID1B y proyección axonal en organoides corticales; biología de desarrollo sin IA SDLC accesible", "duda": false, "acuerdo": true}
+{"id": "R1252", "decision": "NO", "criterios": ["CI3"], "motivo": "qEEG predice resultado cognitivo en encefalopatía hipóxico-isquémica neonatal; sin población picoc", "duda": false, "acuerdo": true}
+{"id": "R1254", "decision": "NO", "criterios": ["CI3"], "motivo": "Similitud cerebral adolescente en redes paralímbicas; desarrollo típico sin neurodivergencia", "duda": false, "acuerdo": true}
+{"id": "R1255", "decision": "NO", "criterios": ["CI3"], "motivo": "Super-resolución MRI pediátrica de bajo campo; ingeniería de imagen sin población cognitiva picoc", "duda": false, "acuerdo": true}
+{"id": "R1257", "decision": "NO", "criterios": ["CI3"], "motivo": "Beneficios sostenidos de VR en trastornos mentales y sustancias; salud mental general sin IA SDLC", "duda": false, "acuerdo": true}
+{"id": "R1260", "decision": "NO", "criterios": ["CI3"], "motivo": "Métodos de envolvente del habla en seguimiento cortical; neurociencia del lenguaje sin software accesible", "duda": false, "acuerdo": true}
+{"id": "R1261", "decision": "NO", "criterios": ["CI3"], "motivo": "Avances metodológicos TRF en modelos de codificación cerebral; método neurocientífico general", "duda": false, "acuerdo": true}
+{"id": "R1262", "decision": "NO", "criterios": ["CI3"], "motivo": "Arquitectura genética de redes de similitud cortical; neuroimagen poblacional sin SDLC", "duda": false, "acuerdo": true}
+{"id": "R1263", "decision": "NO", "criterios": ["CI3"], "motivo": "Deep learning mejora BCI P300; interfaz cerebro-máquina general sin población picoc", "duda": false, "acuerdo": true}
+{"id": "R1264", "decision": "NO", "criterios": ["CE4"], "motivo": "Revisión breve de pronóstico de crisis epilépticas; síntesis secundaria sin estudio primario SDLC", "duda": false, "acuerdo": true}
+{"id": "R1265", "decision": "NO", "criterios": ["CI3"], "motivo": "Procesamiento auditivo y cognición en preescolares chinos; desarrollo típico sin neurodivergencia picoc", "duda": false, "acuerdo": true}
+{"id": "R1266", "decision": "NO", "criterios": ["CI3"], "motivo": "Bienestar en adultos con cardiopatía congénita d-TGA; cohorte cardiológica sin software accesible", "duda": false, "acuerdo": true}
+{"id": "R1267", "decision": "NO", "criterios": ["CI3"], "motivo": "Declive de marcha con edad en parálisis cerebral; neurología motora sin IA en SDLC accesible", "duda": false, "acuerdo": true}
+{"id": "R1268", "decision": "NO", "criterios": ["CE1"], "motivo": "Diagnóstico de epilepsia desde EEG con CNN y CWT; clasificación clínica sin producto software", "duda": false, "acuerdo": true}
+{"id": "R1271", "decision": "NO", "criterios": ["CI4"], "motivo": "Terapia ocupacional en trastorno de coordinación del desarrollo; intervención clínica sin IA software", "duda": false, "acuerdo": true}
+{"id": "R1272", "decision": "NO", "criterios": ["CI3"], "motivo": "Cuestionario breve para trastorno dual de juego; adicciones sin población cognitiva picoc", "duda": false, "acuerdo": true}
+{"id": "R1273", "decision": "NO", "criterios": ["CI3"], "motivo": "Imitación multisilábica en trastorno del desarrollo del lenguaje; fonética clínica sin IA SDLC", "duda": false, "acuerdo": true}
+{"id": "R1274", "decision": "NO", "criterios": ["CI4"], "motivo": "Estimación robusta de redes MIND desde MRI; método de conectoma sin población ni software picoc", "duda": false, "acuerdo": true}
+{"id": "R1275", "decision": "NO", "criterios": ["CE1"], "motivo": "Procedimiento estandarizado de cribado de dislexia universitaria; evaluación psicométrica sin artefacto IA SDLC", "duda": false, "acuerdo": true}
+{"id": "R1276", "decision": "NO", "criterios": ["CI3"], "motivo": "Curvas de referencia de atrofia cerebral y robustez de segmentadores; neuroimagen Alzheimer sin picoc", "duda": false, "acuerdo": true}
+{"id": "R1277", "decision": "NO", "criterios": ["CI4"], "motivo": "Evolución regulación génica en desarrollo cerebeloso mamífero; genómica comparada sin software accesible", "duda": false, "acuerdo": true}
+{"id": "R1278", "decision": "NO", "criterios": ["CI3"], "motivo": "Asincronía gesto-habla y acoplamiento neural en interpretación; lingüística sin población picoc", "duda": false, "acuerdo": true}
+{"id": "R1279", "decision": "NO", "criterios": ["CI4"], "motivo": "Procesamiento semántico top-down en dislexia con MEG; neurociencia cognitiva sin IA en SDLC", "duda": false, "acuerdo": true}
+{"id": "R1280", "decision": "NO", "criterios": ["CI4"], "motivo": "Pipeline MICAFlow de preprocesamiento MRI clínico; herramienta de imagen sin población cognitiva picoc", "duda": false, "acuerdo": true}
+{"id": "R1281", "decision": "NO", "criterios": ["CI4"], "motivo": "Marco canvas de codiseño participativo de robots sociales; diseño HRI sin IA SDLC de accesibilidad", "duda": false, "acuerdo": true}
+{"id": "R1282", "decision": "NO", "criterios": ["CI3"], "motivo": "Procesamiento acústico y fonémico en afasia; trastorno del lenguaje adquirido adulto", "duda": false, "acuerdo": true}
+{"id": "R1283", "decision": "NO", "criterios": ["CI3"], "motivo": "Escolaridad, reserva cerebral y Alzheimer con Mendelian randomization; epidemiología sin software", "duda": false, "acuerdo": true}
+{"id": "R1284", "decision": "NO", "criterios": ["CI4"], "motivo": "Tecnologías para aprendizaje inclusivo con necesidades educativas especiales; panorama sin IA SDLC clara", "duda": false, "acuerdo": true}
+{"id": "R1285", "decision": "NO", "criterios": ["CI3"], "motivo": "Autofenotipado HPO enfermedades raras; sin neurodivergencia marco picoc", "duda": false, "acuerdo": false}
+{"id": "R1286", "decision": "NO", "criterios": ["CI3"], "motivo": "Exposición prenatal a Zika y desarrollo social en macacos; modelo animal sin software accesible", "duda": false, "acuerdo": true}
+{"id": "R1287", "decision": "NO", "criterios": ["CI3"], "motivo": "Representación neural de valencia hedónica al escuchar narrativas; neurociencia afectiva general", "duda": false, "acuerdo": true}
+{"id": "R1288", "decision": "NO", "criterios": ["CI3"], "motivo": "Microestructura núcleo accumbens neonatal y estrés materno; neuroimagen perinatal sin software picoc", "duda": false, "acuerdo": true}
+{"id": "R1289", "decision": "NO", "criterios": ["CI3"], "motivo": "Humo de incendios y parto pretérmino en cohorte ECHO; epidemiología ambiental sin IA SDLC", "duda": false, "acuerdo": true}
+{"id": "R1290", "decision": "NO", "criterios": ["CI3"], "motivo": "Movimientos oculares predicen lectura en lectores jóvenes típicos; desarrollo lector general sin neurodivergencia", "duda": false, "acuerdo": true}
+{"id": "R1291", "decision": "NO", "criterios": ["CI3"], "motivo": "Desarrollo de presuposición en preescolares mandarín; lingüística del desarrollo típico", "duda": false, "acuerdo": true}
+{"id": "R1292", "decision": "NO", "criterios": ["CI3"], "motivo": "Del2Phen deleciones cromosómicas raras; población genética fuera marco", "duda": false, "acuerdo": false}
+{"id": "R1293", "decision": "NO", "criterios": ["CI3"], "motivo": "Prevalencia de afantasia en población general; rasgo perceptivo sin discapacidad cognitiva picoc", "duda": false, "acuerdo": true}

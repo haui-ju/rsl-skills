@@ -1,0 +1,30 @@
+{
+  "identification": {
+    "databases": 1293,
+    "sources": [
+      { "name": "Scopus", "n": 761 },
+      { "name": "Web of Science", "n": 532 }
+    ]
+  },
+  "removed_before_screening": {
+    "duplicates": 327,
+    "ineligible_automation": 0,
+    "other_reasons": 0
+  },
+  "screening": {
+    "screened": 966,
+    "excluded": 833
+  },
+  "retrieval": {
+    "sought": 133,
+    "not_retrieved": null
+  },
+  "eligibility": {
+    "assessed": null,
+    "excluded_reasons": {}
+  },
+  "included": {
+    "studies": null,
+    "reports": null
+  }
+}
