@@ -5,26 +5,26 @@
     "encabezado": {
       "content_hash": {
         "borrador": "becd63baf4e1",
-        "polish": "8f4a4603da57"
+        "polish": "44e61f867a8f"
       },
       "version": "2026-09-29-5",
       "sources_hash": {
         "topic.md": "b2bcfb779775",
         "informe-polish.md": "9d2b511d546e",
-        "picoc": "0b7356e54b6d"
+        "picoc": "6c9a53ccbca6"
       },
       "status": "polished",
       "form_hash": {
-        "polish": "5c3c041a57a7"
+        "polish": "d60fc6a1b910"
       },
       "mirror_form": {
-        "polish": "e06ab4b47a79"
+        "polish": "53eaf41315f4"
       }
     },
     "contexto": {
       "content_hash": {
         "borrador": "9275c27e1b79",
-        "polish": "323ec7685a69"
+        "polish": "4c0f2a4408ce"
       },
       "version": "2026-09-29-5",
       "sources_hash": {
@@ -38,11 +38,11 @@
     "problema": {
       "content_hash": {
         "borrador": "6755b22be5c0",
-        "polish": "d0dc0fec7c25"
+        "polish": "a1894ba2360a"
       },
       "version": "2026-09-29-5",
       "sources_hash": {
-        "picoc": "0b7356e54b6d"
+        "picoc": "6c9a53ccbca6"
       },
       "status": "polished",
       "form_hash": {
@@ -69,21 +69,21 @@
     "objetivo-rsl": {
       "content_hash": {
         "borrador": "16879d667612",
-        "polish": "cf99feb94d3f"
+        "polish": "ff7315ac8c0b"
       },
       "version": "2026-09-29-5",
       "sources_hash": {
-        "picoc": "0b7356e54b6d"
+        "picoc": "6c9a53ccbca6"
       },
       "status": "polished",
       "form_hash": {
-        "polish": "135c171c27bf"
+        "polish": "da6a2752a8d7"
       }
     },
     "organizacion": {
       "content_hash": {
         "borrador": "feb56ec9af3d",
-        "polish": "fb90e0575398"
+        "polish": "725bc01912d7"
       },
       "version": "2026-09-29-5",
       "sources_hash": {
@@ -97,108 +97,108 @@
     "referencias": {
       "content_hash": {
         "borrador": "8376ef33b383",
-        "polish": "6f01453e9fcc"
+        "polish": "ae927d908ef9"
       },
       "version": "2026-09-29-5",
       "sources_hash": {},
       "status": "polished",
       "form_hash": {
-        "polish": "60f3da4253fb"
+        "polish": "49a326197162"
       }
     },
     "marco-pico": {
       "content_hash": {
         "borrador": "dc870a2cb788",
-        "polish": "1a9ac811ebb5"
+        "polish": "5a79799a8137"
       },
       "version": "2026-09-29-5",
       "sources_hash": {
-        "picoc": "0b7356e54b6d"
+        "picoc": "6c9a53ccbca6"
       },
       "status": "polished",
       "prose_hash": {
         "polish": "8ecd36d3ee72"
       },
       "form_hash": {
-        "polish": "b6ef4483d0f2"
+        "polish": "957deb19955b"
       },
       "mirror_form": {
-        "polish": "6ff5bd0afc9e"
+        "polish": "20340c4b4073"
       }
     },
     "palabras-clave": {
       "content_hash": {
         "borrador": "5cffcd8a0250",
-        "polish": "cd7dfda96b02"
+        "polish": "faa3367bdff4"
       },
       "version": "2026-09-29-5",
       "sources_hash": {
-        "picoc": "0b7356e54b6d"
+        "picoc": "6c9a53ccbca6"
       },
       "status": "polished",
       "prose_hash": {
         "polish": "b5b380733447"
       },
       "form_hash": {
-        "polish": "9de6de40528c"
+        "polish": "adadde9c971b"
       },
       "mirror_form": {
-        "polish": "c8cdf8f23df3"
+        "polish": "dde557d48667"
       }
     },
     "ecuacion-busqueda": {
       "content_hash": {
         "borrador": "57aa794bbbf7",
-        "polish": "2a46a4e3c381"
+        "polish": "89602acdeea3"
       },
       "version": "2026-09-29-5",
       "sources_hash": {
-        "picoc": "0b7356e54b6d"
+        "picoc": "6c9a53ccbca6"
       },
       "status": "polished",
       "prose_hash": {
         "polish": "f2fa9c6d9129"
       },
       "form_hash": {
-        "polish": "df492800581f"
+        "polish": "b84cc114eaea"
       },
       "mirror_form": {
-        "polish": "bc598fac14ac"
+        "polish": "0387a6f9a670"
       }
     },
     "criterios-seleccion": {
       "content_hash": {
         "borrador": "e68857e11eb5",
-        "polish": "a2ea48381074"
+        "polish": "8a30a19dde7e"
       },
       "version": "2026-09-29-5",
       "sources_hash": {
         "topic.md": "b2bcfb779775",
-        "picoc": "0b7356e54b6d"
+        "picoc": "6c9a53ccbca6"
       },
       "status": "polished",
       "prose_hash": {
         "polish": "f1d15dec5f1c"
       },
       "form_hash": {
-        "polish": "a4ec6078843e"
+        "polish": "2c6b19dea040"
       },
       "mirror_form": {
-        "polish": "67fdfb9f0645"
+        "polish": "f110e1ebad76"
       }
     },
     "seleccion-prisma": {
       "content_hash": {
         "borrador": "cb044dfdb952",
-        "polish": "05e3f84d47ca"
+        "polish": "25b11fa94554"
       },
       "version": "2026-09-29-5",
       "sources_hash": {
-        "picoc": "0b7356e54b6d"
+        "picoc": "6c9a53ccbca6"
       },
       "status": "polished",
       "form_hash": {
-        "polish": "59ddfbffd1e1"
+        "polish": "3e21e8543718"
       }
     }
   },

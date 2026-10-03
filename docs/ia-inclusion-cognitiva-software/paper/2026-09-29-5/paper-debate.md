@@ -42,3 +42,17 @@
 ### Verificación
 
 Redacción: PASS (0 FAIL; WARN solo en el Tema no editable y en la pregunta literal). Citas: PASS (13 referencias). Picoc-sync: PASS. Picoc-lint: OK.
+
+---
+
+## Polish 2026-10-03 (PIO + cribado 2 cerrado)
+
+**Motivo:** aplicar `picoc/2026-10-03-3-PIO` y los conteos PRISMA tras cribado 1–2 (`resultados-PIO-cribado-2.csv`, 73 incluidos).
+
+**Secciones (on):** mismas 11 de metodología e introducción; espejo actualizado a PIO (Tablas I–III, queries de 3 bloques, CI/CE con CE6, RQ1–RQ3).
+
+**Cambios clave:** marco PICO → PIO; ecuación sin bloque C independiente (contraste en RQ3 / bloque O); `seleccion-prisma` con n reales (761/532, 327 dup, 966 cribados, 133 recuperación, 120 texto completo, 73 incluidos); `objetivo-rsl` con tres RQ y CE1; `RSL/seleccion/prisma.json` creado.
+
+**Agentes:** polish automatizado desde picoc + ajustes de forma (siglas TDAH/SLR).
+
+**Verificación:** `--picoc-sync` PASS; `--cites` PASS; `redaccion:lint` 0 FAIL (WARN en pregunta literal y oración marco PIO).
