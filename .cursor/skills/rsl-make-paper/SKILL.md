@@ -109,7 +109,7 @@ Thread (R7 of `playbooks/redaccion-academica.md`): each section opens by picking
 - **`marco-pico`**
   - One paragraph that names the framework of the latest picoc with its components in words (e.g. "Se adoptó el marco PICOC (población, intervención, comparación, resultado y contexto)…").
   - Justify it in two or three sentences with the catalog source: Kitchenham y Charters (2007, p. 11) adopt PICOC for software engineering from Petticrew y Roberts (never attribute the framework itself to Kitchenham). Say why each added component applies to this theme. With a framework other than PICOC, say what it drops or adds (e.g. PICO drops the context, PICOCT adds the time window) and why; without T, the time window is an inclusion criterion.
-  - Then: the component table (`Tabla N — Marco <MARCO>`: one column per letter, the concept of each component = column `Concepto` of the picoc component table, verbatim), the general question (verbatim, as an interrogative in a `> ` quote) and the RQ table (`Componente | Código | Pregunta`, picoc RQs verbatim).
+  - Then: the component table (`Tabla N — Marco <MARCO>`: one column per letter, the concept of each component = column `Concepto` of the picoc component table, verbatim), `_Nota._` below (elaboración propia, abreviaturas P/I/C/O y siglas del contenido; `global/citation-style/APA7.md`), the general question (verbatim, as an interrogative in a `> ` quote) and the RQ table (`Componente | Código | Pregunta`, picoc RQs verbatim) with its own `_Nota._` (enlace con la tabla del marco, siglas RQ/TEA/etc.).
 - **`palabras-clave`**
   - Table `Componente | Palabras clave (ES) | Keywords (EN)`, one row per component (no T).
   - **Keywords (EN) = exactly the terms of that component's block in the query**, i.e. the column `Keywords` of the picoc component table (`Tabla de componentes (1:1 con las queries)`): same order, wildcards and phrases as written (`neurodivers*`, `"large language model*"`), comma-separated, not one more, not one less. IEEE descriptors (those with a page in the picoc) in `_italics_` with underscores, because `*` is the wildcard.
@@ -120,7 +120,7 @@ Thread (R7 of `playbooks/redaccion-academica.md`): each section opens by picking
 - **`ecuacion-busqueda`**
   - Only Scopus and Web of Science, one code block each, copied verbatim from the picoc with their filters (never abridged or extended). Other bases of the picoc (IEEE Xplore, the auxiliary search) do not go into the paper.
   - One sentence on the Boolean logic (OR inside a component, AND between components). If the two bases search different fields (e.g. `TITLE-ABS-KEY` vs `ALL=`), justify it. One sentence says that the equations carry the limits of the inclusion criteria (period, document type, language, open access) so the search is documented and repeatable (Kitchenham y Charters, 2007, p. 16); a filter the base only offers in its interface (Web of Science open access) is named as such.
-  - Close with `Tabla N — Búsqueda por base de datos`: `Base | Fecha de búsqueda | Años | Campos | Filtros | Registros`, one row per base (Scopus, Web of Science). Years, fields and filters from the equations; date and records are user markers (`X`, `n = X`), never filled in.
+  - Close with `Tabla N — Búsqueda por base de datos`: `Base | Fecha de búsqueda | Años | Campos | Filtros | Registros`, one row per base (Scopus, Web of Science). Years, fields and filters from the equations; date and records are user markers (`X`, `n = X`), never filled in. Under the table, `_Nota._` per `global/citation-style/APA7.md` (elaboración propia, significado de `X` en fecha y registros).
 - **`criterios-seleccion`**
   - The criteria of the latest picoc, same text, coded `CI1…` (inclusion) and `CE1…` (exclusion) in two bullet lists.
   - Never add, merge or reword a criterion.
@@ -135,7 +135,7 @@ Thread (R7 of `playbooks/redaccion-academica.md`): each section opens by picking
     5. Informes buscados para recuperación (n = X); no recuperados (n = X).
     6. Informes evaluados a texto completo (n = X); excluidos por no cumplir un criterio de inclusión o por cumplir uno de exclusión (n = X).
     7. Estudios incluidos en la revisión (n = X).
-  - Then the line `[[ AGREGAR DIAGRAMA ]]` alone and the caption `*Fig. 1. Diagrama de flujo PRISMA 2020 del proceso de selección.*` The user draws the diagram; never generate it.
+  - Then one sentence that remite a la figura (*la Fig. 1*). Bloque APA: `**Fig. 1**`, línea en blanco, `_Diagrama de flujo PRISMA 2020 del proceso de selección._`, línea en blanco, `[[ AGREGAR DIAGRAMA ]]`, línea en blanco, `_Nota._` (elaboración propia, *Adaptado de* PRISMA 2020 si aplica, marcadores `n = X`; ver `global/citation-style/APA7.md`). The user draws the diagram; never generate it.
 - **`calidad`**
   - Only when it is `on` and `RSL/seleccion/` exists. The instrument as a short list of questions (e.g. objective stated, context described, method reproducible, results answer the question), the scale, who applied it (`[[ … ]]`) and how the score is used (it describes the corpus; it does not exclude unless the protocol says so) (Kitchenham y Charters, 2007, § 6.3).
 - **`extraccion-datos`**
