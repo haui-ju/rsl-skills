@@ -1,0 +1,736 @@
+# Ethics and Information Technology (2024) 26:50
+
+> Fuente PDF: `R769-easy-read-and-large-language-models-on-the-ethical-dimensions-of-llm-based-text-.pdf` · técnica **locator index** (página + ancla) + chunks Graphify
+
+## Metadata
+- Stem: `R769-easy-read-and-large-language-models-on-the-ethical-dimensions-of-llm-based-text-`
+- PDF: `R769-easy-read-and-large-language-models-on-the-ethical-dimensions-of-llm-based-text-.pdf`
+- DOI: `10.1007/s10676-024-09792-4`
+- Pages: `10`
+- Structured_at: `2026-10-03T23:23:22+00:00`
+- Technique: `pdf-page-locators + heading-chunks`
+
+## Locator index (qué hay y en qué página del PDF)
+
+| Kind | Label | PDF page | MD anchor |
+|------|-------|----------|-----------|
+| abstract | Abstract / blurb | 1 | `#abstract` |
+| concept | R769 | ? | `#concept-r769` |
+| concept | easy | ? | `#concept-easy` |
+| concept | read | ? | `#concept-read` |
+| concept | large | ? | `#concept-large` |
+| concept | language | ? | `#concept-language` |
+| concept | models | ? | `#concept-models` |
+| concept | ethical | ? | `#concept-ethical` |
+| concept | dimensions | ? | `#concept-dimensions` |
+| concept | based | ? | `#concept-based` |
+| concept | text | ? | `#concept-text` |
+| finding | The production of easy-read and plain language is a challenging task, requiring well-educa… | 1 | `#finding-the-production-of-easy-read-and-plain-la` |
+| finding | Therefore, the domain of easy-read and plain language is currently restricted to the bare … | 1 | `#finding-therefore-the-domain-of-easy-read-and-p` |
+| finding | Large language models can solve a vast variety of natural language tasks, including the si… | 1 | `#finding-large-language-models-can-solve-a-vast-v` |
+| page | p.1: Ethics and Information Technology (2024) 26:50 | 1 | `#pdf-p1` |
+| page | p.2: 50 Page 2 of 10 N. Freyer et al. | 2 | `#pdf-p2` |
+| page | p.3: Table 1 Examples of translations to plain language and easy-read | 3 | `#pdf-p3` |
+| page | p.4: 50 Page 4 of 10 N. Freyer et al. | 4 | `#pdf-p4` |
+| page | p.5: Easy‑read and large language models: on the ethical dimensions of LLM‑based text simplific | 5 | `#pdf-p5` |
+| page | p.6: 50 Page 6 of 10 N. Freyer et al. | 6 | `#pdf-p6` |
+| page | p.7: Easy‑read and large language models: on the ethical dimensions of LLM‑based text simplific | 7 | `#pdf-p7` |
+| page | p.8: 50 Page 8 of 10 N. Freyer et al. | 8 | `#pdf-p8` |
+| page | p.9: Easy‑read and large language models: on the ethical dimensions of LLM‑based text simplific | 9 | `#pdf-p9` |
+| page | p.10: 50 Page 10 of 10 N. Freyer et al. | 10 | `#pdf-p10` |
+
+## Abstract
+<a id="abstract"></a>
+
+The production of easy-read and plain language is a challenging task, requiring well-educated experts to write context- dependent simplifications of texts. Therefore, the domain of easy-read and plain language is currently restricted to the bare minimum of necessary information. Thus, even though there is a tendency to broaden the domain of easy-read and plain language, the inaccessibility of a significant amount of textual information excludes the target audience from partaking or entertainment and restricts their ability to live life autonomously. Large language models can solve a vast variety of natural language tasks, including the simplification of standard language texts to easy-read or plain language. Moreover, with the rise of generative models like GPT, easy-read and plain language may be applicable to all kinds of natural language texts, making formerly inaccessible information accessible to marginalized groups like, a.o., non-native speakers, and people with mental disabilities. In this paper, we argue for the feasibility of text simplification and generation in that context, outline the ethical dimensions, and discuss the implications for researchers in the field of ethics and computer science.
+
+## Keywords
+
+- _(none auto-detected)_
+
+## Concept index (graph hooks + página)
+
+<a id="concept-r769"></a>
+### [PDF p.?] Concept: R769
+- Locator: `R769-easy-read-and-large-language-models-on-the-ethical-dimensions-of-llm-based-text-.pdf` · página **?**
+
+<a id="concept-easy"></a>
+### [PDF p.?] Concept: easy
+- Locator: `R769-easy-read-and-large-language-models-on-the-ethical-dimensions-of-llm-based-text-.pdf` · página **?**
+
+<a id="concept-read"></a>
+### [PDF p.?] Concept: read
+- Locator: `R769-easy-read-and-large-language-models-on-the-ethical-dimensions-of-llm-based-text-.pdf` · página **?**
+
+<a id="concept-large"></a>
+### [PDF p.?] Concept: large
+- Locator: `R769-easy-read-and-large-language-models-on-the-ethical-dimensions-of-llm-based-text-.pdf` · página **?**
+
+<a id="concept-language"></a>
+### [PDF p.?] Concept: language
+- Locator: `R769-easy-read-and-large-language-models-on-the-ethical-dimensions-of-llm-based-text-.pdf` · página **?**
+
+<a id="concept-models"></a>
+### [PDF p.?] Concept: models
+- Locator: `R769-easy-read-and-large-language-models-on-the-ethical-dimensions-of-llm-based-text-.pdf` · página **?**
+
+<a id="concept-ethical"></a>
+### [PDF p.?] Concept: ethical
+- Locator: `R769-easy-read-and-large-language-models-on-the-ethical-dimensions-of-llm-based-text-.pdf` · página **?**
+
+<a id="concept-dimensions"></a>
+### [PDF p.?] Concept: dimensions
+- Locator: `R769-easy-read-and-large-language-models-on-the-ethical-dimensions-of-llm-based-text-.pdf` · página **?**
+
+<a id="concept-based"></a>
+### [PDF p.?] Concept: based
+- Locator: `R769-easy-read-and-large-language-models-on-the-ethical-dimensions-of-llm-based-text-.pdf` · página **?**
+
+<a id="concept-text"></a>
+### [PDF p.?] Concept: text
+- Locator: `R769-easy-read-and-large-language-models-on-the-ethical-dimensions-of-llm-based-text-.pdf` · página **?**
+
+
+## Findings index (graph hooks + página)
+
+<a id="finding-the-production-of-easy-read-and-plain-la"></a>
+### [PDF p.1] Finding: The production of easy-read and plain language is a challenging task, requiring well-educated experts to write context- dependent simplifications of texts.
+- Locator: `R769-easy-read-and-large-language-models-on-the-ethical-dimensions-of-llm-based-text-.pdf` · página **1**
+
+<a id="finding-therefore-the-domain-of-easy-read-and-p"></a>
+### [PDF p.1] Finding: Therefore, the domain of easy-read and plain language is currently restricted to the bare minimum of necessary information.
+- Locator: `R769-easy-read-and-large-language-models-on-the-ethical-dimensions-of-llm-based-text-.pdf` · página **1**
+
+<a id="finding-large-language-models-can-solve-a-vast-v"></a>
+### [PDF p.1] Finding: Large language models can solve a vast variety of natural language tasks, including the simplification of standard language texts to easy-read or plain language.
+- Locator: `R769-easy-read-and-large-language-models-on-the-ethical-dimensions-of-llm-based-text-.pdf` · página **1**
+
+
+## Relevance hooks
+### Theme relevance: software engineering and accessibility
+### Theme relevance: cognitive accessibility and neurodiversity
+### Theme relevance: evaluation metrics and WCAG
+
+## Sections (detected in PDF)
+
+_(no numbered sections auto-detected)_
+
+
+## Page chunks (texto por página del PDF)
+
+_Cada heading es un nodo Graphify. El label incluye la página para volver al PDF sin releer todo._
+
+<a id="pdf-p1"></a>
+### [PDF p.1] Ethics and Information Technology (2024) 26:50
+- Locator: `R769-easy-read-and-large-language-models-on-the-ethical-dimensions-of-llm-based-text-.pdf` · página **1** / 10
+
+Ethics and Information Technology (2024) 26:50
+https://doi.org/10.1007/s10676-024-09792-4
+
+    ORIGINAL PAPER
+
+
+
+Easy‑read and large language models: on the ethical dimensions
+of LLM‑based text simplification
+Nils Freyer1,2     · Hendrik Kempt3          · Lars Klöser2
+
+Accepted: 27 July 2024 / Published online: 4 August 2024
+© The Author(s) 2024
+
+
+Abstract
+The production of easy-read and plain language is a challenging task, requiring well-educated experts to write context-
+dependent simplifications of texts. Therefore, the domain of easy-read and plain language is currently restricted to the bare
+minimum of necessary information. Thus, even though there is a tendency to broaden the domain of easy-read and plain
+language, the inaccessibility of a significant amount of textual information excludes the target audience from partaking or
+entertainment and restricts their ability to live life autonomously. Large language models can solve a vast variety of natural
+language tasks, including the simplification of standard language texts to easy-read or plain language. Moreover, with the
+rise of generative models like GPT, easy-read and plain language may be applicable to all kinds of natural language texts,
+making formerly inaccessible information accessible to marginalized groups like, a.o., non-native speakers, and people with
+mental disabilities. In this paper, we argue for the feasibility of text simplification and generation in that context, outline the
+ethical dimensions, and discuss the implications for researchers in the field of ethics and computer science.
+
+Keywords Large language models · Easy read · AI ethics · Natural language processing · Accessibility
+
+
+Introduction                                                       Jones & Williams, 2017). For instance, from a perspective of
+                                                                   distributive justice, inaccessible language threatens the prin-
+Text sources play a crucial role in distributing a wide range      ciple of equality of opportunity (Rawls, 1971), as language is
+of information and therefore, accessing language is an             an important means to education and procedural knowledge.
+important support to individual autonomy and justice. Not          Similarly, from a perspective of democratic egalitarianism
+only does the ability to access language in itself increase        and relational justice, language that is not accessible to all
+one's autonomy but the extent of procedural knowledge              affects the virtue of mutual moral equality (Anderson, 1999).
+accessible via spoken or written language, especially online.      Text simplification methods such as easy-read and plain
+   Especially marginalized persons such as non-native              language aim to make written or spoken language easier to
+speakers and people with learning- or mental disabilities          understand for these groups. However, creating simplified
+are affected by the exclusion by language (Cheung, 2017;           texts requires well-educated and sensibly trained experts
+                                                                   who can understand and empathize with different marginal-
+* Nils Freyer                                                      ized groups and levels of language comprehension (Rink,
+  nfreyer@ukaachen.de                                              2023). As a result, while many public institutions want to
+     Hendrik Kempt                                                 generate and translate texts in this format, the amount of
+     hendrik.kempt@humtec.rwth-aachen.de                           accessible information is mostly limited to administrative
+     Lars Klöser                                                   details, making it difficult for these groups to access other
+     kloeser@fh-aachen.de                                          textual information autonomously.
+                                                                      The emergence of services such as ChatGPT has brought
+1
+     Department of Medical Informatics, University Hospital,       generative AI (GenAI) and more specifically large language
+     RWTH Aachen University, Aachen, Germany
+                                                                   models (LLMs) into the spotlight of ethical debates. These
+2
+     FH Aachen - University of Applied Sciences, Aachen,
+     Germany
+3
+     Applied Ethics, RWTH Aachen University, Aachen,
+     Germany
+
+
+                                                                                                                   Vol.:(0123456789)
+
+<a id="pdf-p2"></a>
+### [PDF p.2] 50 Page 2 of 10 N. Freyer et al.
+- Locator: `R769-easy-read-and-large-language-models-on-the-ethical-dimensions-of-llm-based-text-.pdf` · página **2** / 10
+
+50 Page 2 of 10                                                                                                              N. Freyer et al.
+
+
+powerful models have the potential to automate a wide range            A short introduction to easy‑read and plain
+of natural language tasks with relative ease.1                         language
+    By leveraging LLMs, generating or translating simplified
+language texts could become much less challenging, or even             Natural language is inherently sophisticated and complex. Its
+fully automated, thereby significantly enhancing language              intricacies enable us to express complex thoughts succinctly,
+accessibility for various groups. Recent progress in fine-             but they can also act as barriers, excluding individuals with
+tuning smaller language models like GPT-2 demonstrates                 language comprehension difficulties from full participation
+the potential of text simplification services (Anschütz et al.,        in society. Plain Language and easy-read are strategies to
+2023; Klöser et al., 2024). Furthermore, even greater qual-            simplify texts for different target groups (Cheung, 2017;
+ity improvements can be anticipated through the fine-tuning            Jones & Williams, 2017). Plain Language is a strategy to
+of LLMs, as demonstrated by the superior performance of                make written and spoken information easier to understand.
+ChatGPT in few-shot prompting compared to dedicated text               The target audience for Plain Language includes non-native
+simplification models (Feng et al., 2023).                             speakers, domain non-professionals, or children. Techniques
+    However, despite their impressive capabilities, LLMs               used in Plain Language involve simplifying vocabulary and
+have significant flaws. Contemporary language models                   syntax, reducing jargon, and using familiar words in their
+generate language by predicting the most likely next word,             usual context (Cutts, 2020). In contrast, easy-read takes
+based on the parameters learned during training. LLMs were             simplification a step further, focusing on individuals with
+therefore trained on a vast space of textual data. As a result,        cognitive disabilities. The approach necessitates using sim-
+the models learn social biases, hallucinate, or oversimplify           ple words, direct speech, short sentences following the sub-
+complex matters with little possibility for control mecha-             ject-predicate-object arrangement, and avoiding negations
+nisms (Ferrara, 2023). Moreover, they may be used inten-               or complex tenses. By reducing language to its most basic
+tionally to provide false information to a vulnerable group            and direct form, easy-read aims to make the information
+of addressees.                                                         as accessible and straightforward as possible. For example,
+    In this paper, we argue for the feasibility of easy-read and       consider the plain language and easy-read translations in
+plain language translation or generation by LLMs and out-              Table 1. In the easy-read version, the sentence structure is
+line the potential benefits and harms induced. Thereupon, we           changed to a more straightforward subject-predicate-object
+elaborate recommendations to practitioners and developers              arrangement, a reduced vocabulary complexity, and the
+in the context of easy-read text. More specifically, we recom-         use of direct speech. It also contains less precision than the
+mend, next to ethically motivated recommendations to LLM               original Standard English version, an often unavoidable con-
+development in general, that developers, practitioners, and            sequence of simplification. We further used the fine-tuned
+the domain-specific target group should collaborate closely            text simplification models introduced by (Klöser et al., 2024)
+to minimize safety concerns and optimize the intended use              and GPT-3.5 Turbo to create the automated text simplifica-
+of the system.                                                         tion columns.
+    Finally, this paper raises further ethical questions for ethi-        Despite its apparent simplicity, implementing easy-read
+cists to address in future research. Who should develop text           can pose significant challenges. One obstacle is the need for
+simplification systems for a vulnerable audience? Should the           more nuance. Expressing uncertain or complex situations in
+access to easy-read LLMs be public or restricted to a more             clear and direct statements can lead to a loss of meaning or
+controlled care-worker setup?                                          the introduction of inaccuracies, which is particularly chal-
+                                                                       lenging in contexts such as legal texts where precision is
+                                                                       crucial. Balancing the audience's needs with the integrity
+Ethical, linguistic, and computational                                 of the original text's meaning is delicate, requiring deep
+foundations                                                            understanding and empathy for the target audience's needs
+                                                                       (Rink, 2023).2
+To comprehend the impact of Natural Language Process-                     Today, there is a strong need for well-trained and edu-
+ing (NLP) and LLMs on easy-read and plain language, we                 cated practitioners to create easy-read and plain language
+will briefly introduce the ethical motivation, linguistic rules,       texts. The task demands linguistic understanding and deep
+and computational opportunities for easy-read and plain
+language.
+                                                                       2
+                                                                         For a more comprehensive understanding of the principles of
+                                                                       easy-read, resources such as "Making Written Information Easier to
+                                                                       Understand for People with Learning Disabilities" by the UK Depart-
+                                                                       ment of Health and "Guidelines for Easy-to-Read Materials" by the
+1
+  In terms of development, yet extensive computational resources are   International Federation of Library Associations provide in-depth
+required to deploy and run LLMs.                                       guidance (DHSC 2010; IFLA 2010).
+
+<a id="pdf-p3"></a>
+### [PDF p.3] Table 1 Examples of translations to plain language and easy-read
+- Locator: `R769-easy-read-and-large-language-models-on-the-ethical-dimensions-of-llm-based-text-.pdf` · página **3** / 10
+
+Table 1  Examples of translations to plain language and easy-read
+Standard Language The President possesses the constitutional authority to veto legislation passed by Congress, thus negating the bill's effects unless it can garner a two-thirds majority support
+                  in both Houses to override the veto
+                        Human-Translation                                        Automated Translation (GPT3.5-Turbo)a                   Automated Translation (Fine-Tuned Model)
+
+Plain Language          "The President can reject laws that Congress wants to    “The President can reject a law made by Congress.       “The President can use a veto. This means that he says
+                         pass. But if more than two-thirds of Congress agree,     However, if enough lawmakers agree, they can still       no to a law that Congress has passed. The law then
+                         they can still make the law happen even if the Presi-    make the law happen even if the President says no.”      does not take effect. However, the veto can be over-
+                         dent doesn't want it."                                                                                            ridden if a two-thirds majority of representatives and
+                                                                                                                                           senators vote in favor of the law
+                                                                                                                                         The President can vote against a law.”
+Easy-Read               "The President can say 'no' to new laws. But if many     “The President can say no to a law made by Congress.    “The President can vote against a law
+                         people in Congress say 'yes,' the law can still hap-     But if most of the lawmakers agree, they can still     Then the law does not apply
+                         pen."                                                    make the law happen.”                                  This is called veto power
+                                                                                                                                         The President can only vote against laws
+                                                                                                                                         Not against parts of laws
+                                                                                                                                         The President can only vote against a law once
+                                                                                                                                         Then the law does not apply
+                                                                                                                                                                                                     Easy‑read and large language models: on the ethical dimensions of LLM‑based text simplification﻿	
+
+
+
+
+                                                                                                                                         Congress can then vote on the law again
+                                                                                                                                         If 2 thirds of the people in Congress vote in favor, the
+                                                                                                                                           law still applies
+                                                                                                                                         Then the veto right has not worked.”
+a
+    Prompt: “Translate the following sentence to a) easy-read and b) plain language:”
+
+
+
+
+                                                                                                                                                                                                     Page 3 of 10 50
+
+<a id="pdf-p4"></a>
+### [PDF p.4] 50 Page 4 of 10 N. Freyer et al.
+- Locator: `R769-easy-read-and-large-language-models-on-the-ethical-dimensions-of-llm-based-text-.pdf` · página **4** / 10
+
+50 Page 4 of 10                                                                                                          N. Freyer et al.
+
+empathy for different reader groups' abilities and needs.         language into easy-read or plain language (cf. Table 1).3
+Achieving the inclusivity goals of plain language and easy-       Further, by fine-tuning text completion tasks, one can train
+read without compromising the text's integrity remains a          an LLM to generate easy-read texts based on user prompts.
+significant challenge (Chinn, 2019; Rink, 2023), Thus, the
+development of technical solutions, such as sophisticated         In‑context‑learning
+language processing tools, is an active field of research.
+                                                                  In contrast to the traditional fine-tuning techniques intro-
+On the feasibility of easy‑read by large language                 duced in Section “Traditional fine-tuning”, with the rise
+models                                                            of GPT-3, prompting techniques offer context to an LLM
+                                                                  to solve adapted tasks without parameter-tuning, emerged
+NLP is a field of computer science and linguistics that inves-    (Brown et al., 2020; Wei et al., 2022). In-context-learning
+tigates the intersection between human language and compu-        refers to context prompts that give task descriptions and/
+tation. Applications from NLP are automated classifications,      or a few examples in natural language (Dong et al., 2023;
+translations, text summarizations, or text simplifications.       Logan IV et al., 2022) or provide the model with a chain-of-
+While early systems were orchestrations of manual rule            thought, to solve the task (Dong et al., 2023).
+sets, machine learning became more and more influential.
+Recently, large deep learning models got in the focus of pub-     Technical challenges
+lic discourse for their significant advances in the context of
+GenAI. GenAI is a branch of artificial intelligence that can      Next to the resulting technical opportunities, the modifi-
+generate content, such as text, images, or music, by analyz-      cation of an LLM to a specific task bears several techni-
+ing and learning from extensive datasets, and subsequently        cal risks. For instance, LLMs may internalize biases from
+producing outputs based on the patterns and structures it         data. Natural language texts commonly reflect social biases,
+has learned during the training process. LLMs are one of          and presumptions, and contain explicit or implicit stereo-
+the latest achievements. In their basic form, these models        types (Ferrara, 2023). For instance, Wikipedia texts portray
+train to solve "fill in the blanks" exercises on vast amounts     men and women differently (Wagner et al., 2015). While
+of text data extracted from the web (Devlin et al., 2019).        for example, investigating an LLM's text completion can
+Moreover, the pre-trained LLMs can be adapted to special-         reveal an internalized gender bias (Bhardwaj et al., 2021),
+ized or related tasks using traditional fine-tuning or few-shot   finding and mitigating latent biases in a pre-trained model
+learning. In comparison to the pre-training of an LLM or          is not trivial (Ferrara, 2023). Moreover, domain specificity
+the complete training of a dedicated deep learning model,         requires the simplification of text to be sensitive to different
+few samples suffice to adopt LLMs to reach good results           levels of background knowledge in the target group, making
+on various tasks (Brown et al., 2020; Devlin et al., 2019).       it particularly hard to automatically evaluate and validate the
+The example in Table 1 demonstrates that even by simple           quality of the text simplification. Sufficient resources, like
+prompting (zero-shot), LLM-based chatbots can produce             datasets and potentially human feedback, are essential to
+easy-read and plain language-like texts already.                  overcome these challenges. Especially for languages other
+                                                                  than English, the required resources may be scarce.
+Traditional fine‑tuning
+
+Fine-tuning denotes the specialization of, e.g., generative       The potential benefits and harms of LLM
+language models, to specialized tasks on a different dataset,     assisted easy‑read
+e.g., text simplification (Anschütz et al., 2023). To fine-tune
+a model for text simplification (for instance to generate plain   There are rarely any openly available simplification sys-
+language), we modify the LLM to predict easier formula-           tems for most languages. Nevertheless, the research field is
+tions instead of text completions. Research results indicate      active, and the available resources will grow in the following
+that a few thousand samples are enough to finetune models         years. Related areas, like text summarization, translation,
+on various language problems including text simplification        or chatbots like ChatGPT, show how successful fine-tuned
+(Anschütz et al., 2023; Devlin et al., 2019).                     LLMs are. Thus, text simplification systems will most likely
+   Therefore, using fine-tuning may facilitate the usage of       become widely available. We should consider the ethical
+more complex NLP tasks for easy-read and plain language.
+By fine-tuning a translation task such as text simplification,
+for example, one can train an LLM to translate standard           3
+                                                                    (Anschütz et al., 2023) show that automatically simplified texts
+                                                                  have characteristics of easy-read, even if incorrect and inconsistent
+                                                                  texts still pose a problem.
+
+<a id="pdf-p5"></a>
+### [PDF p.5] Easy‑read and large language models: on the ethical dimensions of LLM‑based text simplification﻿ Page 5 of 10 50
+- Locator: `R769-easy-read-and-large-language-models-on-the-ethical-dimensions-of-llm-based-text-.pdf` · página **5** / 10
+
+Easy‑read and large language models: on the ethical dimensions of LLM‑based text simplification﻿	                            Page 5 of 10 50
+
+aspects discussed in this section early in development, to                       Instead, non-native language learners especially, as fully
+ensure the technology's valuable effects, the potential ben-                  autonomous and independent agents who are merely missing
+efits, and minimize its potential harms.                                      some learnable skill, demonstrate that textual understand-
+   Most automation of text-generation is associated both                      ing is not only determined by cognitive ability but also by
+with risks and potential benefits. The success of LLMs,                       practical circumstances. Depending on those practical cir-
+in general, has led to a variety of ethical investigations of                 cumstances, other ethical requirements may be relevant for
+their creation, the adequacy of use-cases, the validation                     the responsible use of easy-read or plain-language LLM.
+and robustness of their output (Kasneci et al., 2023; Kempt                      In the following, based on the distinctions made in Sec-
+et al., 2023; Lund et al., 2023; Mökander et al., 2023), as                   tion "On the feasibility of easy-read by large language
+well as dual-uses, misuses, and long-term consequences of                     models", we examine the ethical risks and benefits that
+automated text-generation (like fake news and misinforma-                     an increased use of LLMs for easy-read text might entail.
+tion (Pan et al., 2023)). All these issues are present in the                 These are usually understood as trade-offs that ought to be
+production of easy-read texts as well. However, consider-                     weighed against each other and require careful consideration
+ing the different ways that easy language is produced (as a                   in developing and implementing LLMs that are capable of
+translation from a non-easy-read text to an easy-read one or                  translating or generating easy-read and plain language texts.
+as a genuinely new easy-read text, e.g.), a careful examina-
+tion of the risks and benefits associated with easy language
+specifically is required.                                                     Translation
+   The domain of easy language and plain language gen-
+eration and translation by LLMs forms a specialized area                      Turning to the use of LLMs as translators or text-simplifiers
+in the ethics of LLMs, as the end users are mostly people                     for easy-read and plain language texts, the potential benefits
+from "vulnerable groups". Vulnerability is a concept that is                  are rather obvious. Those who have trouble understanding
+most commonly used in research and professional ethics.                       long words and complex sentences are often subtly excluded
+The term "vulnerable group" refers to groups that are "more                   from participating in public discourse and thus might be
+likely to be misled, mistreated, or otherwise taken advan-                    unduly disadvantaged in exercising some of their civil liber-
+tage of" (Levine, 2004, p. 396). The concept was criticized                   ties and duties.
+in terms of its scope, a.o., for stereotyping entire groups of                   Automated translators for text-simplification would ena-
+individuals as vulnerable (Levine et al., 2004). In the context               ble these users to live more autonomously as they rely less
+of this article, however, we will focus on the aspect of an                   on other people's help in translating text that would other-
+increased likelihood of being misled. While acknowledging                     wise remain incomprehensible to them. Users could also
+that within the group of the supposed easy-read audience,                     navigate life with less uncertainty, as we would expect them
+the likelihood of being misled and the required language                      to understand more of the text surrounding them than they
+support may vary across individuals. Belonging to the part                    would without such a translator at hand, which also sup-
+of that group, not only benefiting from but dependent on                      ports their autonomy as it increases decision-making capa-
+care work, presupposes a lack of language understanding                       bilities. Enhancing the ability of those requiring easy-read
+capabilities and therefore qualifies for that aspect of vulner-               texts for language understanding, to participate in society
+ability. To avoid stereotyping, one needs to be more care-                    also constitutes a matter of justice: contributing to a more
+ful with the prescription of vulnerability to the domain of                   just society by reducing intellectual hurdles should not only
+plain language. The supposed audience of plain language                       be considered a desirable benefit but an obligation to real-
+does not necessarily have inherent deficits in understanding                  ize. The more access more people have to participation in
+standard language: we might consider non-domain experts                       public discourse, the better (Anderson, 1999; Habermas,
+and laypeople more challenged by a complicated scientific                     1991, 1996).
+text than experts; we may also consider non-native language                      Moreover, sources of entertainment that were previously
+speakers to be more challenged by a given text than native                    unavailable may become accessible to the target group, not
+language speakers, and children to be more challenged by                      only increasing the quality of life but potentially the ability
+any text than adults. And while children may also lack the                    to partake in public discourse.
+capabilities to responsibly process the information provided                     Lastly, given the extended availability of easy-read and
+by LLMs and thus, may be included in the group of vulner-                     plain language, care-workers may be relieved of the time-
+able users (Frenda et al., 2011), laypeople and language-                     consuming task of translating texts into easy-read or plain
+learners do not. This means that easy-read and simplified                     language. Especially those who are in close or caring rela-
+texts must not only be viewed through the lens of vulnerable                  tionships with people who require easy-read text could
+populations, even though they might benefit the most from                     direct their attention and care-work to other areas of the
+LLMs learning to translate and generate this kind of text.
+
+<a id="pdf-p6"></a>
+### [PDF p.6] 50 Page 6 of 10 N. Freyer et al.
+- Locator: `R769-easy-read-and-large-language-models-on-the-ethical-dimensions-of-llm-based-text-.pdf` · página **6** / 10
+
+50 Page 6 of 10                                                                                                                N. Freyer et al.
+
+relationship, and thus improve the life of those depending                  potential harm caused by either imprecise, infidelitous, or
+on easy-read text from a relational perspective.4                           unfaithful translations of easy-read text. The brittleness of
+   On the other hand, the risks associated with using easy-                 LLMs in the face of adversarial attacks or prompt injections
+read translators ought to be considered carefully and thor-                 of these machines renders the robustness of appropriate out-
+oughly. First, those who require easy-read text due to inher-               put problematic (see Kempt et al., 2023).
+ent difficulties with reading and understanding complex                        Finally, a possible loss of information in translating to
+sentences and longer words should count as a vulnerable                     easy-read or plain language may occur, which can constitute
+group, as easy-read targets an audience with cognitive or                   different ethical concerns that should be addressed. First,
+learning disabilities (Chinn & Homeyard, 2017; Sutherland                   considering the limits of translation to simpler language,
+& Isherwood, 2016) or other issues with processing infor-                   some of the information loss can be classified as informa-
+mation when presented in a complex form. Moreover, the                      tion reduction: it is not so much lost as it is intentionally
+intended audience of plain language may at least partially be               reduced in complexity. For such an information reduction
+categorized as vulnerable, as, e.g. children are more prone                 to be adequate, however, there must be specific guidelines
+to being misled by certain information. However, also the                   about which information needs to be retained to avoid the
+non-vulnerable audience of plain language, e.g. non-native                  loss of key points of the text in question. This task is made
+speakers, may be susceptible to unnoticed misunderstanding                  particularly daring and difficult by the fact that the adequate
+and overreliance. The audience's vulnerability and the prone-               level of information reduction is context-dependent, e.g., on
+ness to misunderstanding, suggest the risk of exploitation,                 the group of addresses or the recency of the concepts used.
+abuse, and confusion. Thus, some of the ethical concerns                    Second, this loss may be an avoidable but unforeseeable side
+present in LLMs and especially machine-translation services                 effect of translational LLM, as the predictability of LLM is
+are heightened due to the focus on a vulnerable audience,                   limited by their construction. In these cases, the damage of
+while other issues only emerge because of the partially vul-                information loss can cause harm or maintain some epistemic
+nerable audience. While the fact that the plain-language                    injustice, as the contents of the simplified text may contain
+audience might use these translators to understand cru-                     harmful misrepresentations (e.g., an incorrectly translated
+cial information about their own lives might increase their                 official administrative letter, causing the receiver to lose out
+autonomy, it also increases their susceptibility to confusion               on benefits) or lack information that the reader should have
+and possibly avoidable harm. Similarly, human assistance                    access to (e.g., the information about the benefits someone
+in making a standard text accessible to those with compre-                  has a claim to). Third, some limits are inherent to the algo-
+hension issues usually has a double function: it translates                 rithm and may always occur, and are thus unpreventable.
+texts from standard to easy-read language, but also scans for               The fallibility of technology ought to be kept in mind as a
+potentially harmful or exploitative text. While this process                general point, but should not, as with other uses of fallible
+is of paternalistic nature and its absence, as we discussed                 technology, prevent the use altogether.
+earlier, would increase the autonomy of the easy-read and
+plain language audience, its legitimacy must be discussed in                Generation
+the context of a group, vulnerable to harm by manipulation
+and exploitation. Similar to a taster who tests food before                 So far, we have discussed the potential benefits and harms of
+someone else consumes it, easy-read translation made by                     LLM-based translations from standard language to easy-read
+humans can also receive a content assessment by a member                    or plain language. However, language models can not only
+of the supposed audience. The ability to spot and thus avoid                translate a given input asked for by a user but can also pro-
+scammers, for example, will be reduced if any text is auto-                 duce output that functions as a response to an input, rather
+matically reproduced in easy-read text.                                     than a translation of such. LLMs, thus, can generate genu-
+   Relatedly, a potentially imprecise translation can cause                 inely new easy-read texts.
+harm and confusion, if the source text contains important                      The ability for easy-read text generation is promising
+information (e.g., a letter from the tax office). The lack                  to be one of the great benefits of such LLM, and can even
+of human control can lead to a responsibility gap for the                   amplify the previously outlined benefits of translational
+                                                                            LLM. As we have seen with translator-LLM for easy-read
+                                                                            or plain language, the ability to retrieve information that is
+4
+   The point made here refers to people in a caring relationship. It        catered to the needs of a specific group of readers enhances
+should be mentioned that there are organizations that specialize in the     their capacity to navigate the world more autonomously.
+translation of easy-read or plain language texts. While it is generally     Requests and internet searches to answer a question of
+not foreseeable that those organizations will be replaced (but possi-       someone who prefers or requires easy-read text might be
+bly rather augmented), we refrain from the debate on the effects on
+their work, as it is not directly connected to the potential benefits and   within reach now. Thus, in the context of justice, easy-read
+harms of the supposed audience.                                             and plain language LLM may lead to the empowerment
+
+<a id="pdf-p7"></a>
+### [PDF p.7] Easy‑read and large language models: on the ethical dimensions of LLM‑based text simplification﻿ Page 7 of 10 50
+- Locator: `R769-easy-read-and-large-language-models-on-the-ethical-dimensions-of-llm-based-text-.pdf` · página **7** / 10
+
+Easy‑read and large language models: on the ethical dimensions of LLM‑based text simplification﻿	                              Page 7 of 10 50
+
+Table 2  Summarization of the          Types of tasks           Potential benefits                           Potential harms
+risks and benefits of LLM based
+translation and generation of          Translation              • Increased autonomy                         • Responsibility gaps
+easy-read and plain language                                    • Relational benefits in care work           • Information loss
+texts                                                           • More just access to information            • Exploitation & manipulation
+                                                                • More just access to public discourse and
+                                                                  partaking
+                                       Generation               • Amplified pot. translation benefits        • Amplified pot. translation harms
+                                                                                                             • Biases
+                                                                                                             • Inappropriateness
+
+
+
+
+of different groups that are otherwise disadvantaged from                     information loss but the loss of complexity with which a
+reading complex texts, e.g., people with lower cognitive                      subject is represented.
+abilities, or language learners.                                                  This concern is equally present in the generation of text
+   The real-time generation of easy-read and plain lan-                       containing information about current events. As other LLMs
+guage text can have a variety of secondary positive effects,                  have shown, continuously incorporating new training data
+such as the previously mentioned ability to appreciate                        can lead to a decrease in the accuracy of the information
+and take part in contemporary public discourse, and                           delivered (Chen et al., 2023). The susceptibility to misin-
+a more informed and independent public. In contrast to                        formation online will also translate to readers of easy-read-
+a translator, however, the generation would no longer                         LLM generated content, as they might use the generation
+require the user to first search for appropriate texts to be                  of easy-read language as their main source of information.
+translated and hence, further increase the capabilities of                        However, as previously stated, users of easy-read or plain
+autonomous participation.                                                     language models may be more vulnerable to the potential
+   The quality of text-based entertainment for readers of                     misinformation presented than other users are. This impedes
+easy-read and plain language texts may also significantly                     critical fact-checking even more, as the source of informa-
+improve, as these LLM may produce new fictional sto-                          tion is catered to their needs, while fact-checking sources
+ries. Especially for those who are learning a new language,                   might be in non-easy-read language yet again.
+plain text generation can help make practicing this new                           This lack of humans-in-the-loop in information genera-
+language more entertaining and worthwhile.                                    tion harbors the risk of responsibility gaps again, as con-
+   Despite these strong reasons in favor of making easy-                      stant supervision of appropriate output is required to attrib-
+read and plain language LLMs widely available, we ought                       ute responsibility. Both previously mentioned risks also
+to caution that there are some ethical risks that should be                   suggest the risk of biased output to be taken into account
+addressed first. In the following, we will discuss how pre-                   (Table 2). As with other LLMs, the training data used to
+viously mentioned risks of easy-read translators are being                    train an LLM often contains problematic speech or mirrors
+increased, and which ones are specifically emerging with                      social biases, which may lead to biased outputs. Depending
+the generation of new text.                                                   on the biases exhibited, this might affect vulnerable users of
+   As with any LLM, the accuracy and veracity of the                          easy-read LLMs in their understanding of the world. It might
+information provided in a given output is of chief interest                   even cause harm with a heightened risk of reinforcing social
+and has been discussed controversially before. Hallucina-                     biases within the targeted audience. As other LLMs have
+tions, inaccurate representations of information, and even                    shown the capacity for offensive statements (Neff, 2016),
+misrepresentations are not uncommon in contemporary                           it stands to assume that easy-language LLMs might also
+language models and thus we ought to expect that easy-                        produce inappropriate, offensive, or otherwise harmful
+read LLMs will be no exception (see Guerreiro et al., 2023                    output.
+for an elaboration on the issue of hallucinations of LLM
+in machine translation). Therefore, we should consider the
+risk of false information being generated by the LLM,                         Consequences and recommendations
+potentially leading to harmful outcomes. Next to this
+overall risk of LLMs, easy-read may introduce additional                      The deployment of LLMs for translating and generating
+problems on this level: as we have pointed out with the                       plain language and easy-read texts ethically permissible use-
+information loss risk of a translation, the generation of a                   cases and conditions are yet to be determined.
+new text may also limit the accuracy with which a given                          However, there are certain normatively motivated recom-
+subject matter can be portrayed while fulfilling easy-read                    mendations for the development and research in that area as
+requirements. The worry here, then lies not only in the                       a consequence of our analysis.
+
+<a id="pdf-p8"></a>
+### [PDF p.8] 50 Page 8 of 10 N. Freyer et al.
+- Locator: `R769-easy-read-and-large-language-models-on-the-ethical-dimensions-of-llm-based-text-.pdf` · página **8** / 10
+
+50 Page 8 of 10                                                                                                      N. Freyer et al.
+
+   The potential benefits and harms outlined in Sect. "The         even quality measures from the easy-read and plain lan-
+potential benefits and harms of LLM assisted easy-read"            guage domain does not guarantee understandability to the
+and the fact that there are first actual implementations of        supposed audience. We therefore recommend the close
+text simplification models, generating and translating easy-       collaboration of the supposed audience, domain experts,
+read and plain language emphasize the need for critically          and developers to develop highly adaptive solutions.
+reflected development.                                                Moreover, given the shift of knowledge within the audi-
+   First, on the one hand, there are consequences related to       ence and the potential threats of information loss or loss
+the use of LLMs for text simplification that are not unique        of complexity, text simplification models should be highly
+to it but apply to the use of LLMs in general. Namely, the         auditable, allowing for a continuous evaluation of their
+mitigation of biases and the ensuring of appropriate and           quality.
+considerably safe text outputs (Bender et al., 2021; Floridi,
+2023; Kempt et al., 2023). However, given the increased
+likelihood of being misled for the vulnerable parts of the
+target group, the efforts in that direction should be further      Future research & concluding remarks
+intensified in the validation of the system, to make its use
+justifiable. On the other hand, the problem of prompt injec-       LLMs and their variety of use-cases promise to enhance
+tions is challenging the safety of contemporary LLMs and           the lives of many by automating time-consuming, tedious,
+constitutes an active field of research (Greshake et al., 2023).   and low-level writing tasks. Thus, as Floridi (2023) puts
+   Second, in the light of information loss, loss of com-          it, they can function as writing-assistants to elevate and
+plexity, and more generally, the understandability of text         alleviate challenges. This technology, in all its prowess
+simplification, developers encounter multiple problems.            and promise, comes with risks on different levels and for
+While there may be individual cases that do not satisfy            different reasons that were elaborated upon elsewhere. In
+the criteria sufficiently, one should strive to optimize the       this paper, we reassessed the challenges, risks, and oppor-
+model concerning correctness and completeness. On the              tunities for creating and improving LLMs for easy-read
+one hand, measures must be taken to avoid the unintended           text from technical and ethical requirements. We find that
+loss of information between standard language and sim-             easy-read and plain language LLMs can if the technical
+plified text. To do so, metrics from classical machine             hurdles are overcome to guarantee reliability and aptness
+translation tasks may be adopted to validate the quality of        of their text translations and generations, provide valuable
+the model. In the context of generation, the task of sound         autonomy support on the one hand and an improvement
+and complete texts is analog to standard language model            of quality of life on the other hand. This potential to assist
+optimization. On the other hand, there is a problem in             those who require or benefit from easy-read to navigate
+LLM development that seems specific to text simplifica-            and understand the world ought also to be considered in
+tion models: the problem of verifying understandability.           the light of misuse, higher susceptibility to misinforma-
+In classical LLM settings, it seems safe to assume a text to       tion, and other ethical concerns that might arise. We see
+be understandable to the average user if it is similar to an       three specific requirements for their implementation that
+average text, language-wise. Fine tunings can be made to           can fulfill the potential benefits while keeping the risks at
+vary across domains and levels of expertise. Especially in         a minimum, rendering easy-read LLMs tools that support
+the context of easy-read, however, even manually written           their users' autonomy and contribute to their quality of life.
+texts are typically evaluated for understandability by both            First, for those who currently live within a system that
+easy-read experts and the potential audience. While there          provides human caretakers, easy-read LLMs may be used
+are rules for authors of easy-read and plain language to           as an auxiliary or complementary tool for this care work,
+verify the syntactical quality of the text that may be trans-      rather than as a replacement for the care work altogether.
+lated to automated metrics, they have little value for the         As pointed out earlier, the limits and issues of LLMs to
+semantics of the text and do not constitute a sufficient cri-      create inappropriate or inaccurate content are not resolved
+terion for understandability. The concepts that need to be         and need to be the objective of technical research in this
+explained in addition to the content may vary first, across        context. The increased susceptibility to misinformation
+groups, and second, across time. For instance, while it is         might expose users to a previously unknown level of
+safe to assume that the term "pandemic" required further           exploitation attempts. It can, though, help caretakers to
+explanations to some of the easy-read target groups, the           provide better and more personal care, and guide the user
+concept became popular and most likely no longer needs             to a more self-secured life with a better understanding of
+further explanations to these groups nowadays. Thus, good
+performance with respect to standard quality metrics and
+
+<a id="pdf-p9"></a>
+### [PDF p.9] Easy‑read and large language models: on the ethical dimensions of LLM‑based text simplification﻿ Page 9 of 10 50
+- Locator: `R769-easy-read-and-large-language-models-on-the-ethical-dimensions-of-llm-based-text-.pdf` · página **9** / 10
+
+Easy‑read and large language models: on the ethical dimensions of LLM‑based text simplification﻿	                                     Page 9 of 10 50
+
+their surroundings by an assistive tool that translates text                  Declarations
+into or generates easy-read language.
+   Second, we suggest that easy-read LLMs are specified                       Competing interests The authors have no relevant financial or non-
+                                                                              financial interests to disclose.
+for their intended uses, especially if there are no caretaker
+relationships present.5 Open-domain chatbots are notori-                      Ethical approval Does not apply.
+ously unsafe and thus ought to be restricted in their pur-
+pose. One can think of specialized government- or legal                       Consent to participate Does not apply.
+easy-read LLMs that translate highly complex text from                        Consent to publish Does not apply.
+administrative offices: this relieves both the text creator
+to also produce an easy-read option and the reader who                        Open Access This article is licensed under a Creative Commons Attri-
+otherwise would not understand the text. As with any tech-                    bution 4.0 International License, which permits use, sharing, adapta-
+nology that affects caring relationships, the just imple-                     tion, distribution and reproduction in any medium or format, as long
+mentation of easy-read and plain language LLMs requires                       as you give appropriate credit to the original author(s) and the source,
+                                                                              provide a link to the Creative Commons licence, and indicate if changes
+a careful deliberation of the effects on only on the care-                    were made. The images or other third party material in this article are
+taking but also on the care-giving entities. Thus, further                    included in the article’s Creative Commons licence, unless indicated
+research should be conducted on the implementation in                         otherwise in a credit line to the material. If material is not included in
+                                                                              the article’s Creative Commons licence and your intended use is not
+existing social and administrative ecosystems.
+                                                                              permitted by statutory regulation or exceeds the permitted use, you will
+   Third, we contend that the question of whether these                       need to obtain permission directly from the copyright holder. To view a
+ought to be understood as goods with public access or as                      copy of this licence, visit http://creativecommons.org/licenses/by/4.0/.
+specialized and limited as a tool for those who need them
+ought to be answered. While there are some reasons in favor
+of keeping these easy-read LLMs limited in their access,                      References
+ultimately, for proper participation in public discourse, they
+ought to be publicly accessible. Not only to avoid the per-                   Anderson, E. S. (1999). What is the point of equality? Ethics, 109(2),
+ception of those LLMs as a crutch but also to increase the                         287–337. https://​doi.​org/​10.​1086/​233897
+                                                                              Anschütz, M., Oehms, J., Wimmer, T., Jezierski, B., & Groh, G.
+accessibility to those who may feel shame for needing this                         (2023). Language models for german text simplification: Over-
+tool, or for those who cannot otherwise afford it. The goal of                     coming parallel data scarcity through style-specific pre-training.
+increasing the ability to participation in public discourse by                     https://​doi.​org/​10.​48550/​ARXIV.​2305.​12908.
+lowering thresholds outranks other concerns. The condition                    Bender, E. M., Gebru, T., McMillan-Major, A., & Shmitchell, S. (2021,
+                                                                                   March). On the dangers of stochastic parrots: Can language mod-
+for such public access to be not only permissible but morally                      els be too big?. In Proceedings of the 2021 ACM conference on
+required is that the technological concerns discussed in the                       fairness, accountability, and transparency (pp. 610–623).
+previous sections ought to be resolved reliably.                              Bhardwaj, R., Majumder, N., & Poria, S. (2021). Investigating gender
+                                                                                   bias in BERT. Cognitive Computation, 13(4), 1008–1018. https://​
+   If both the ethical concerns and the technical challenges
+                                                                                   doi.​org/​10.​1007/​s12559-​021-​09881-2
+can be resolved in a reliable manner, by understanding easy-                  Brown, T. B., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal,
+read LLMs as a chance for caretakers and those taken care of                       P., Neelakantan, A., Shyam, P., Sastry, G., Askell, A., Agarwal, S.,
+to improve their quality of life as well as their lived auton-                     Herbert-Voss, A., Krueger, G., Henighan, T., Child, R., Ramesh,
+                                                                                   A., Ziegler, D. M., Jeffrey, Wu., Winter, C., Amodei, D. (2020).
+omy, easy-read LLMs promise to contribute to the public
+                                                                                   Language Models Are Few-Shot Learners.
+good in a considerable way.                                                   Chen, L., Zaharia, M., & Zou, J. (2023). How is ChatGPT’s behavior
+                                                                                   changing over time? arXiv preprint arXiv:​2307.​09009.
+                                                                              Cheung, I. W. (2017). Plain language to minimize cognitive load: A
+Author contributions All the authors contributed to the main idea,                 social justice perspective. IEEE Transactions on Professional
+writing and editing of the manuscript.                                             Communication, 60(4), 448–457. https://​doi.​org/​10.​1109/​TPC.​
+                                                                                   2017.​27596​39
+Funding Open Access funding enabled and organized by Projekt                  Chinn, D. (2019). Talking to producers of easy read health informa-
+DEAL. This work was supported by the German Federal Minis-                         tion for people with intellectual disability: Production practices,
+try for Family, Senior Citizens, Women and Youth (Grant number                     textual features, and imagined audiences. Journal of Intellectual
+3923406K05).                                                                       & Developmental Disability, 44(4), 410–420. https://​doi.​org/​10.​
+                                                                                   3109/​13668​250.​2019.​15776​40
+                                                                              Chinn, D., & Homeyard, C. (2017). Easy read and accessible infor-
+                                                                                   mation for people with intellectual disabilities: Is it worth it?
+                                                                                   A meta-narrative literature review. Health Expectations, 20(6),
+                                                                                   1189–1200. https://​doi.​org/​10.​1111/​hex.​12520
+                                                                              Cutts, M. (2020). Oxford guide to plain English. Oxford University
+                                                                                   Press.
+5                                                                             Devlin, J., Chang, M.-W., Lee, K., & Toutanova, K. (2019). BERT:
+  Depending on the use-case, the classification as a medical software
+                                                                                   Pre-Training of Deep Bidirectional Transformers for Language
+may make this requirement legally relevant.
+
+<a id="pdf-p10"></a>
+### [PDF p.10] 50 Page 10 of 10 N. Freyer et al.
+- Locator: `R769-easy-read-and-large-language-models-on-the-ethical-dimensions-of-llm-based-text-.pdf` · página **10** / 10
+
+50 Page 10 of 10                                                                                                                              N. Freyer et al.
+
+     Understanding. In Proceedings of the 2019 Conference of the                  Klöser, L., Beele, M., Schagen, J. N., & Kraft, B. (2024). German Text
+     North American Chapter of the Association for Computational                       Simplification: Finetuning Large Language Models with Semi-
+     Linguistics: Human Language Technologies, Volume 1 (Long and                      Synthetic Data. arXiv preprint arXiv:​2402.​10675
+     Short Papers). Minneapolis, Minnesota: Association for Compu-                Levine, C. (2004). The concept of vulnerability in disaster research.
+     tational Linguistics (pp. 4171–4186).                                             Journal of Traumatic Stress, 17(5), 395–402. https://​doi.​org/​10.​
+DHSC. (2010). Making Written Information Easier to Understand for                      1023/B:​JOTS.​00000​48952.​81894.​f3
+     People with Learning Disabilities. GOV.UK. Retrieved July 28,                Levine, C., Faden, R., Grady, C., Hammerschmidt, D., Eckenwiler,
+     2023, from https://​www.​gov.​uk/​gover​nment/​publi​catio​ns/​making-​           L., & Sugarman, J. (2004). The limitations of ‘Vulnerability’
+     writt​en-​infor​mation-​easier-​to-​under​stand-​for-​people-​with-​learn​        as a protection for human research participants. The American
+     ing-​disab​iliti​es-​guida​nce-​for-​people-​who-​commi​ssion-​or-​produ​         Journal of Bioethics, 4(3), 44–49. https://​doi.​org/​10.​1080/​15265​
+     ce-​easy-​read-​infor​mation-​revis​ed-​editi​on-​2010.                           16049​04970​83
+Dong, Q., Li, L., Dai, D., Zheng, C., Wu, Z., Chang, B., Sun, X., Xu,             Logan IV, R. L., Balažević, I., Wallace, E., Petroni, F., Singh, S., &
+     J., Li, L., & Sui, Z. (2023). A survey on in-context learning. arXiv              Riedel, S. (2022). Cutting Down on Prompts and Parameters:
+     preprint arXiv:​2301.​00234                                                       Simple Few-Shot Learning with Language Models. In Findings
+Feng, Y., Qiang, J., Li, Y., Yuan, Y., & Zhu, Y. (2023). Sentence sim-                 of the Association for Computational Linguistics: ACL 2022.
+     plification via large language models. arXiv preprint arXiv:​2302.​               Dublin, Ireland: Association for Computational Linguistics (pp.
+     11957                                                                             2824–235).
+Ferrara, E. (2023). Should ChatGPT be biased? Challenges and risks of             Lund, B. D., Wang, T., Mannuru, N. R., Nie, B., Shimray, S., & Wang,
+     bias in large language models. arXiv preprint arXiv:​2304.​03738.                 Z. (2023). ChatGPT and a new academic reality: Artificial intelli-
+Floridi, L. (2023). AI as agency without intelligence: On Chat-                        gence-written research papers and the ethics of the large language
+     GPT, large language models, and other generative models.                          models in scholarly publishing. Journal of the Association for
+     Philosophy & Technology, 36(1), 15. https://​doi.​org/​10.​1007/​                 Information Science and Technology, 74(5), 570–581. https://​doi.​
+     s13347-​023-​00621-y                                                              org/​10.​1002/​asi.​24750
+Frenda, S. J., Nichols, R. M., & Loftus, E. F. (2011). Current issues             Mökander, J., Schuett, J., Kirk, H. R., & Floridi, L. (2023). Auditing
+     and advances in misinformation research. Current Directions in                    large language models: A three-layered approach. AI and Ethics.
+     Psychological Science, 20(1), 20–23. https://​doi.​org/​10.​1177/​                https://​doi.​org/​10.​1007/​s43681-​023-​00289-2
+     09637​21410​396620                                                           Neff, G. (2016). Talking to bots: Symbiotic agency and the case of tay.
+Greshake, K., Abdelnabi, S., Mishra, S., Endres, C., Holz, T., & Fritz,                International Journal of Communication, 10, 4915–4931.
+     M. (2023, November). Not what you've signed up for: Compro-                  Pan, Y., Pan, L., Chen, W., Nakov, P., Kan, M. Y., & Wang, W. Y.
+     mising real-world llm-integrated applications with indirect prompt                (2023). On the risk of misinformation pollution with large lan-
+     injection. In Proceedings of the 16th ACM Workshop on Artificial                  guage models. arXiv preprint arXiv:​2305.​13661
+     Intelligence and Security (pp. 79–90)                                        Rawls, J. (1971). A theory of justice. In Ethics: Contemporary read-
+Guerreiro, N. M., Alves, D., Waldendorf, J., Haddow, B., Birch, A.,                    ings. Belknap Press/Harvard University Press.
+     Colombo, P., & Martins, A. F. T. (2023). Hallucinations in large             Raz, J. (1986). The morality of freedom. Clarendon Press.
+     multilingual translation models. Transactions of the Association             Rink, I. (2023). Competences for easy language translation. In S.
+     for Computational Linguistics, 11, 1500–1517.                                     Deilen, S. Hansen-Schirra, S. H. Garrido, C. Maaß, & A. Tardel
+Habermas, J. (1991). The structural transformation of the public                       (Eds.), Emerging fields in easy language and accessible commu-
+     sphere: An inquiry into a category of bourgeois society. MIT                      nication research, easy—Plain—Accessible (pp. 231–251). Frank
+     Press.                                                                            & Timme GmbH.
+Habermas, J. (1996). Between facts and norms: Contributions to a                  Sutherland, R. J., & Isherwood, T. (2016). The evidence for easy-read
+     discourse theory of law and democracy. Wiley.                                     for people with intellectual disabilities: A systematic literature
+IFLA. (2010). Guidelines for easy-to-read materials. Retrieved July                    review. Journal of Policy and Practice in Intellectual Disabilities,
+     28, 2023, from https://​ocm.​iccrom.​org/​docum​ents/​ifla-​guide​lines-​         13(4), 297–310. https://​doi.​org/​10.​1111/​jppi.​12201
+     easy-​read-​mater​ials.                                                      Wagner, C., Garcia, D., Jadidi, M., & Strohmaier, M. (2015). It’s a
+Jones, N. N., & Williams, M. F. (2017). The social justice impact of                   Man’s Wikipedia? Assessing gender inequality in an online Ency-
+     plain language: A critical approach to plain-language analysis.                   clopedia. Proceedings of the International AAAI Conference on
+     IEEE Transactions on Professional Communication, 60(4), 412–                      Web and Social Media, 9(1), 454–463. https://​doi.​org/​10.​1609/​
+     429. https://​doi.​org/​10.​1109/​TPC.​2017.​27629​64                             icwsm.​v9i1.​14628
+Kasneci, E., Sessler, K., Küchemann, S., Bannert, M., Dementieva, D.,             Wei, J., Tay, Y., Bommasani, R., Raffel, C., Zoph, B., Borgeaud, S.,
+     Fischer, F., Gasser, U., Groh, G., Günnemann, S., Hüllermeier,                    Yogatama, D., Bosma, M., Zhou, D., Metzler, D., Chi, H., Hashi-
+     E., Krusche, S., Kutyniok, G., Michaeli, T., Nerdel, C., Pfeffer,                 moto, T., Vinyals, O., Liang, P., Dean, J., & Fedus, W. (2022).
+     J., Poquet, O., Sailer, M., Schmidt, A., Seidel, T., … Kasneci, G.                Emergent abilities of large language models.
+     (2023). ChatGPT for Good? On opportunities and challenges of
+     large language models for education. Learning and Individual                 Publisher's Note Springer Nature remains neutral with regard to
+     Differences, 103, 102274. https://​doi.​org/​10.​1016/j.​lindif.​2023.​      jurisdictional claims in published maps and institutional affiliations.
+     102274
+Kempt, H., Lavie, A., & Nagel, S. K. (2023). Appropriateness is all you
+     need!. arXiv preprint arXiv:​2304.​14553.

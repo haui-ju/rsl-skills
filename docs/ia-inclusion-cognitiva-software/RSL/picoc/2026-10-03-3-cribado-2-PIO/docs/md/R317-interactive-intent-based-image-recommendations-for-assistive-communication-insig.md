@@ -1,0 +1,1597 @@
+# Interactive Intent-Based Image Recommendations for Assistive
+
+> Fuente PDF: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · técnica **locator index** (página + ancla) + chunks Graphify
+
+## Metadata
+- Stem: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig`
+- PDF: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf`
+- DOI: `10.1145/3800645.3813056`
+- Pages: `18`
+- Structured_at: `2026-10-03T23:23:15+00:00`
+- Technique: `pdf-page-locators + heading-chunks`
+
+## Locator index (qué hay y en qué página del PDF)
+
+| Kind | Label | PDF page | MD anchor |
+|------|-------|----------|-----------|
+| abstract | Abstract / blurb | 1 | `#abstract` |
+| section | 2.1 Image-Based Communication Beyond | 2 | `#p2-2-1-image-based-communication-beyond` |
+| section | 2.3 Intent in Image-Based Interaction | 3 | `#p3-2-3-intent-in-image-based-interaction` |
+| concept | Intent-Based Suggestions with reflecting frequent interests or routines | 16 | `#concept-intent-based-suggestions-with-reflecting-frequent-interests-or-routines` |
+| concept | questions remain regarding Communicative Goals who provides this information | 16 | `#concept-questions-remain-regarding-communicative-goals-who-provides-this-informa` |
+| concept | how it is curated | 16 | `#concept-how-it-is-curated` |
+| concept | power relations | 16 | `#concept-power-relations` |
+| concept | but also on broader contextual | 16 | `#concept-but-also-on-broader-contextual` |
+| concept | cultural | ? | `#concept-cultural` |
+| concept | and personal approaches can enable lightweight | 16 | `#concept-and-personal-approaches-can-enable-lightweight` |
+| concept | user-controllable preferences | 16 | `#concept-user-controllable-preferences` |
+| concept | and iterative refinement based sources lacked sufficient pop-cultural images | 16 | `#concept-and-iterative-refinement-based-sources-lacked-sufficient-pop-cultural-im` |
+| concept | situational | ? | `#concept-situational` |
+| concept | famil- In contrast | 16 | `#concept-famil-in-contrast` |
+| concept | highlighting the importance of semantic and ized | 16 | `#concept-highlighting-the-importance-of-semantic-and-ized` |
+| concept | interactions were uncontrolled | 16 | `#concept-interactions-were-uncontrolled` |
+| concept | combined with the immatu- or locations. At the image retrieval level | 16 | `#concept-combined-with-the-immatu-or-locations-at-the-image-retrieval-level` |
+| concept | if a user selects an disabilities. In addition | 16 | `#concept-if-a-user-selects-an-disabilities-in-addition` |
+| concept | mechanisms for keeping diversity should prioritize Nevertheless | 16 | `#concept-mechanisms-for-keeping-diversity-should-prioritize-nevertheless` |
+| concept | identify than regenerating entirely new conceptual directions. For example | 16 | `#concept-identify-than-regenerating-entirely-new-conceptual-directions-for-exampl` |
+| concept | technical and interface improvements | 16 | `#concept-technical-and-interface-improvements` |
+| concept | and highlight effective inter- when a participant selects an image of an orange | 16 | `#concept-and-highlight-effective-inter-when-a-participant-selects-an-image-of-an-` |
+| concept | supporting personalization through user interest pro- structured coding and | 16 | `#concept-supporting-personalization-through-user-interest-pro-structured-coding-a` |
+| concept | R317 | ? | `#concept-r317` |
+| concept | interactive | ? | `#concept-interactive` |
+| concept | intent | ? | `#concept-intent` |
+| concept | based | ? | `#concept-based` |
+| concept | image | ? | `#concept-image` |
+| concept | recommendations | 1 | `#concept-recommendations` |
+| concept | assistive | ? | `#concept-assistive` |
+| concept | communication | 1 | `#concept-communication` |
+| concept | insig | ? | `#concept-insig` |
+| finding | ACM Reference Format: Individuals with intellectual disability often face challenges in ex… | 1 | `#finding-acm-reference-format-individuals-with-i` |
+| finding | Interactive Intent-Based Image Recommendations for pressing intentions and initiating conv… | 1 | `#finding-interactive-intent-based-image-recommend` |
+| finding | While assistive Assistive Communication: Insights from an Iterative User Study. | 1 | `#finding-while-assistive-assistive-communication` |
+| finding | https://doi.org/10.1145/ without structured symbols or language. | 1 | `#finding-https-doi-org-10-1145-without-structu` |
+| finding | The study was conducted share experiences, and participate in conversation. | 1 | `#finding-the-study-was-conducted-share-experience` |
+| finding | While many assistive commu- conversation. | 1 | `#finding-while-many-assistive-commu-conversation` |
+| page | p.1: Interactive Intent-Based Image Recommendations for Assistive | 1 | `#pdf-p1` |
+| page | p.2: DIS ’26, June 13–17, 2026, Singapore, Singapore Alieh Hajizadeh Saffar, Laurianne Sitbon,  | 2 | `#pdf-p2` |
+| page | p.3: intellectual disability. Their studies also revealed key challenges in approaches demonstr | 3 | `#pdf-p3` |
+| page | p.4: DIS ’26, June 13–17, 2026, Singapore, Singapore Alieh Hajizadeh Saffar, Laurianne Sitbon,  | 4 | `#pdf-p4` |
+| page | p.5: Access Drag the image for full Textual search | 5 | `#pdf-p5` |
+| page | p.6: DIS ’26, June 13–17, 2026, Singapore, Singapore Alieh Hajizadeh Saffar, Laurianne Sitbon,  | 6 | `#pdf-p6` |
+| page | p.7: Figure 4: Examples of participant interaction with the image-based communication prototype | 7 | `#pdf-p7` |
+| page | p.8: DIS ’26, June 13–17, 2026, Singapore, Singapore Alieh Hajizadeh Saffar, Laurianne Sitbon,  | 8 | `#pdf-p8` |
+| page | p.9: Table 2: Types of support provided to participants during interaction with the prototype. | 9 | `#pdf-p9` |
+| page | p.10: DIS ’26, June 13–17, 2026, Singapore, Singapore Alieh Hajizadeh Saffar, Laurianne Sitbon,  | 10 | `#pdf-p10` |
+| page | p.11: In some other interactions, while the prototype’s textual/image relevant to the selected i | 11 | `#pdf-p11` |
+| page | p.12: DIS ’26, June 13–17, 2026, Singapore, Singapore Alieh Hajizadeh Saffar, Laurianne Sitbon,  | 12 | `#pdf-p12` |
+| page | p.13: to sustaining ongoing conversations. When suggestions remained single topic. In session 3, | 13 | `#pdf-p13` |
+| page | p.14: DIS ’26, June 13–17, 2026, Singapore, Singapore Alieh Hajizadeh Saffar, Laurianne Sitbon,  | 14 | `#pdf-p14` |
+| page | p.15: • Beyond intent clarification, narrative-oriented interactions doing so, intent-based sugg | 15 | `#pdf-p15` |
+| page | p.16: DIS ’26, June 13–17, 2026, Singapore, Singapore Alieh Hajizadeh Saffar, Laurianne Sitbon,  | 16 | `#pdf-p16` |
+| page | p.17: Designing for Agency and Interaction in Personalised Disability Systems. In | 17 | `#pdf-p17` |
+| page | p.18: DIS ’26, June 13–17, 2026, Singapore, Singapore Alieh Hajizadeh Saffar, Laurianne Sitbon,  | 18 | `#pdf-p18` |
+
+## Abstract
+<a id="abstract"></a>
+
+ACM Reference Format: Individuals with intellectual disability often face challenges in ex- Alieh Hajizadeh Saffar, Laurianne Sitbon, Sirinthip Roomkham, and Mane- sha Andradi. 2026. Interactive Intent-Based Image Recommendations for pressing intentions and initiating conversations. While assistive Assistive Communication: Insights from an Iterative User Study. In Design- communication technologies typically emphasize language acqui- ing Interactive Systems Conference (DIS ’26), June 13–17, 2026, Singapore, sition, generic image browsers enable open-ended self-expression Singapore. ACM, New York, NY, USA, 18 pages. https://doi.org/10.1145/ without structured symbols or language. Building on prior work 3800645.3813056 showing that intent-based image recommendations represent po- tential meanings of a selected image, we examine how such sug- 1 Introduction gestions are taken up in real communicative practice. We studied Adults with intellectual and cognitive disabilities who have limited an assistive communication prototype that uses generative AI to verbal abilities often rely on visual resources to express themselves, provide intent-based image suggestions. The study was conducted share experiences, and participate in conversation. Augmentative across multiple sessions with 15 adults with intellectual disabil- and Alternative Communication (AAC) syste have long been used ity, varying facilitation and interaction framing to examine how not only with individuals who are non-verbal, but also to augment these suggestions shaped conversational flow. Our findings indicate verbal communication by providing visual access to vocabulary and that intent-based image suggestions played multiple interactional reducing cognitive and linguistic load, particularly in complex or roles, including prompting expression, clarification, and sustaining demanding interaction contexts [10]. While many assistive commu- conversation. We also identify moments of misalignment, where nication systems, such as AAC tools, use structured symbol sets or suggestions failed to align with users’ communicative goals due predefined vocabularies, these approaches can restrict expression to missing cultural context or interactional support. We discuss and place high cognitive demands on users who must learn and interaction mechanisms and design implications for intent-based remember abstract representations [29]. In contrast, systems that assistive communication systems to support inclusive and ef
+
+## Keywords
+
+- Intent-Based Suggestions with reflecting frequent interests or routines
+- questions remain regarding Communicative Goals who provides this information
+- how it is curated
+- power relations
+- but also on broader contextual
+- cultural
+- and personal approaches can enable lightweight
+- user-controllable preferences
+- and iterative refinement based sources lacked sufficient pop-cultural images
+- situational
+- famil- In contrast
+- highlighting the importance of semantic and ized
+- interactions were uncontrolled
+- combined with the immatu- or locations. At the image retrieval level
+- if a user selects an disabilities. In addition
+- mechanisms for keeping diversity should prioritize Nevertheless
+- identify than regenerating entirely new conceptual directions. For example
+- technical and interface improvements
+- and highlight effective inter- when a participant selects an image of an orange
+- supporting personalization through user interest pro- structured coding and
+
+## Concept index (graph hooks + página)
+
+<a id="concept-intent-based-suggestions-with-reflecting-frequent-interests-or-routines"></a>
+### [PDF p.16] Concept: Intent-Based Suggestions with reflecting frequent interests or routines
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **16**
+
+<a id="concept-questions-remain-regarding-communicative-goals-who-provides-this-informa"></a>
+### [PDF p.16] Concept: questions remain regarding Communicative Goals who provides this information
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **16**
+
+<a id="concept-how-it-is-curated"></a>
+### [PDF p.16] Concept: how it is curated
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **16**
+
+<a id="concept-power-relations"></a>
+### [PDF p.16] Concept: power relations
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **16**
+
+<a id="concept-but-also-on-broader-contextual"></a>
+### [PDF p.16] Concept: but also on broader contextual
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **16**
+
+<a id="concept-cultural"></a>
+### [PDF p.?] Concept: cultural
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **?**
+
+<a id="concept-and-personal-approaches-can-enable-lightweight"></a>
+### [PDF p.16] Concept: and personal approaches can enable lightweight
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **16**
+
+<a id="concept-user-controllable-preferences"></a>
+### [PDF p.16] Concept: user-controllable preferences
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **16**
+
+<a id="concept-and-iterative-refinement-based-sources-lacked-sufficient-pop-cultural-im"></a>
+### [PDF p.16] Concept: and iterative refinement based sources lacked sufficient pop-cultural images
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **16**
+
+<a id="concept-situational"></a>
+### [PDF p.?] Concept: situational
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **?**
+
+<a id="concept-famil-in-contrast"></a>
+### [PDF p.16] Concept: famil- In contrast
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **16**
+
+<a id="concept-highlighting-the-importance-of-semantic-and-ized"></a>
+### [PDF p.16] Concept: highlighting the importance of semantic and ized
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **16**
+
+<a id="concept-interactions-were-uncontrolled"></a>
+### [PDF p.16] Concept: interactions were uncontrolled
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **16**
+
+<a id="concept-combined-with-the-immatu-or-locations-at-the-image-retrieval-level"></a>
+### [PDF p.16] Concept: combined with the immatu- or locations. At the image retrieval level
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **16**
+
+<a id="concept-if-a-user-selects-an-disabilities-in-addition"></a>
+### [PDF p.16] Concept: if a user selects an disabilities. In addition
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **16**
+
+<a id="concept-mechanisms-for-keeping-diversity-should-prioritize-nevertheless"></a>
+### [PDF p.16] Concept: mechanisms for keeping diversity should prioritize Nevertheless
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **16**
+
+<a id="concept-identify-than-regenerating-entirely-new-conceptual-directions-for-exampl"></a>
+### [PDF p.16] Concept: identify than regenerating entirely new conceptual directions. For example
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **16**
+
+<a id="concept-technical-and-interface-improvements"></a>
+### [PDF p.16] Concept: technical and interface improvements
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **16**
+
+<a id="concept-and-highlight-effective-inter-when-a-participant-selects-an-image-of-an-"></a>
+### [PDF p.16] Concept: and highlight effective inter- when a participant selects an image of an orange
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **16**
+
+<a id="concept-supporting-personalization-through-user-interest-pro-structured-coding-a"></a>
+### [PDF p.16] Concept: supporting personalization through user interest pro- structured coding and
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **16**
+
+<a id="concept-r317"></a>
+### [PDF p.?] Concept: R317
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **?**
+
+<a id="concept-interactive"></a>
+### [PDF p.?] Concept: interactive
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **?**
+
+<a id="concept-intent"></a>
+### [PDF p.?] Concept: intent
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **?**
+
+<a id="concept-based"></a>
+### [PDF p.?] Concept: based
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **?**
+
+<a id="concept-image"></a>
+### [PDF p.?] Concept: image
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **?**
+
+<a id="concept-recommendations"></a>
+### [PDF p.1] Concept: recommendations
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **1**
+
+<a id="concept-assistive"></a>
+### [PDF p.?] Concept: assistive
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **?**
+
+<a id="concept-communication"></a>
+### [PDF p.1] Concept: communication
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **1**
+
+<a id="concept-insig"></a>
+### [PDF p.?] Concept: insig
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **?**
+
+
+## Findings index (graph hooks + página)
+
+<a id="finding-acm-reference-format-individuals-with-i"></a>
+### [PDF p.1] Finding: ACM Reference Format: Individuals with intellectual disability often face challenges in ex- Alieh Hajizadeh Saffar, Laurianne Sitbon, Sirinthip Roomkham, and Mane- sha Andradi.
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **1**
+
+<a id="finding-interactive-intent-based-image-recommend"></a>
+### [PDF p.1] Finding: Interactive Intent-Based Image Recommendations for pressing intentions and initiating conversations.
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **1**
+
+<a id="finding-while-assistive-assistive-communication"></a>
+### [PDF p.1] Finding: While assistive Assistive Communication: Insights from an Iterative User Study.
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **1**
+
+<a id="finding-https-doi-org-10-1145-without-structu"></a>
+### [PDF p.1] Finding: https://doi.org/10.1145/ without structured symbols or language.
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **1**
+
+<a id="finding-the-study-was-conducted-share-experience"></a>
+### [PDF p.1] Finding: The study was conducted share experiences, and participate in conversation.
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **1**
+
+<a id="finding-while-many-assistive-commu-conversation"></a>
+### [PDF p.1] Finding: While many assistive commu- conversation.
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **1**
+
+
+## Relevance hooks
+### Theme relevance: software engineering and accessibility
+### Theme relevance: cognitive accessibility and neurodiversity
+### Theme relevance: evaluation metrics and WCAG
+
+## Sections (detected in PDF)
+
+<a id="p2-2-1-image-based-communication-beyond"></a>
+### [PDF p.2] Section: 2.1 Image-Based Communication Beyond
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **2** · ancla `#p2-2-1-image-based-communication-beyond`
+
+<a id="p3-2-3-intent-in-image-based-interaction"></a>
+### [PDF p.3] Section: 2.3 Intent in Image-Based Interaction
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **3** · ancla `#p3-2-3-intent-in-image-based-interaction`
+
+
+## Page chunks (texto por página del PDF)
+
+_Cada heading es un nodo Graphify. El label incluye la página para volver al PDF sin releer todo._
+
+<a id="pdf-p1"></a>
+### [PDF p.1] Interactive Intent-Based Image Recommendations for Assistive
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **1** / 18
+
+Interactive Intent-Based Image Recommendations for Assistive
+       Communication: Insights from an Iterative User Study
+                          Alieh Hajizadeh Saffar                                                               Laurianne Sitbon
+                    School of Computer Science                                                         School of Computer Science
+             Queensland University of Technology (QUT)                                          Queensland University of Technology (QUT)
+                  Brisbane, Queensland, Australia                                                       Brisbane, QLD, Australia
+                    a.hajizadeh@hdr.qut.edu.au                                                             l.sitbon@qut.edu.au
+
+                           Sirinthip Roomkham                                                                 Manesha Andradi
+             Queensland University of Technology (QUT)                                          Queensland University of Technology (QUT)
+                  Brisbane, Queensland, Australia                                                          Brisbane, Australia
+                     s.roomkham@qut.edu.au                                                            manesha.andradi@qut.edu.au
+
+Abstract                                                                                  ACM Reference Format:
+Individuals with intellectual disability often face challenges in ex-                     Alieh Hajizadeh Saffar, Laurianne Sitbon, Sirinthip Roomkham, and Mane-
+                                                                                          sha Andradi. 2026. Interactive Intent-Based Image Recommendations for
+pressing intentions and initiating conversations. While assistive
+                                                                                          Assistive Communication: Insights from an Iterative User Study. In Design-
+communication technologies typically emphasize language acqui-                            ing Interactive Systems Conference (DIS ’26), June 13–17, 2026, Singapore,
+sition, generic image browsers enable open-ended self-expression                          Singapore. ACM, New York, NY, USA, 18 pages. https://doi.org/10.1145/
+without structured symbols or language. Building on prior work                            3800645.3813056
+showing that intent-based image recommendations represent po-
+tential meanings of a selected image, we examine how such sug-                            1    Introduction
+gestions are taken up in real communicative practice. We studied                          Adults with intellectual and cognitive disabilities who have limited
+an assistive communication prototype that uses generative AI to                           verbal abilities often rely on visual resources to express themselves,
+provide intent-based image suggestions. The study was conducted                           share experiences, and participate in conversation. Augmentative
+across multiple sessions with 15 adults with intellectual disabil-                        and Alternative Communication (AAC) syste have long been used
+ity, varying facilitation and interaction framing to examine how                          not only with individuals who are non-verbal, but also to augment
+these suggestions shaped conversational flow. Our findings indicate                       verbal communication by providing visual access to vocabulary and
+that intent-based image suggestions played multiple interactional                         reducing cognitive and linguistic load, particularly in complex or
+roles, including prompting expression, clarification, and sustaining                      demanding interaction contexts [10]. While many assistive commu-
+conversation. We also identify moments of misalignment, where                             nication systems, such as AAC tools, use structured symbol sets or
+suggestions failed to align with users’ communicative goals due                           predefined vocabularies, these approaches can restrict expression
+to missing cultural context or interactional support. We discuss                          and place high cognitive demands on users who must learn and
+interaction mechanisms and design implications for intent-based                           remember abstract representations [29]. In contrast, systems that
+assistive communication systems to support inclusive and effective                        leverage flexible, naturalistic images such as visual scene displays
+communication.                                                                            (VSDs), offer opportunities for more open-ended and personally
+                                                                                          meaningful communication [23]. However, VSDs often require sub-
+CCS Concepts                                                                              stantial configuration effort, including selecting, annotating, and
+• Social and professional topics → People with disabilities; •                            personalizing images.
+Human-centered computing → Accessibility technologies;                                        Prior work has shown that generic image browsing can support
+Empirical studies in interaction design; Empirical studies in                             self-expression and social participation by enabling users to explore
+HCI; • Information systems → Users and interactive retrieval.                             and select images without relying on verbal language or symbolic
+                                                                                          structures [5, 15]. These benefits are strongest when image selection
+Keywords                                                                                  is interactive and when systems help users navigate large image
+Intent-based Image Recommendation, Assistive Communication,                               collections in ways that align with their communicative intentions
+Intellectual Disability, Visual Query Expansion, Image-based Com-                         [16, 29]. However, generic images are inherently ambiguous in
+munication                                                                                communicative contexts. A single ima,ge such as a cake, may be
+                                                                                          used to talk about baking, sweet snacks, or an upcoming birthday.
+                                                                                          Without interactional support, this ambiguity can make it difficult
+This work is licensed under a Creative Commons Attribution 4.0 International License.     for users to clarify their intent or for communication partners to
+DIS ’26, Singapore, Singapore
+© 2026 Copyright held by the owner/author(s).
+                                                                                          interpret their meaning.
+ACM ISBN 979-8-4007-2563-0/26/06                                                              Most existing image retrieval and recommendation systems are
+https://doi.org/10.1145/3800645.3813056                                                   not designed for this form of communication. They typically prior-
+                                                                                          itize visual similarity, object recognition, or predefined label sets,
+
+
+
+
+                                                                                   4450
+
+<a id="pdf-p2"></a>
+### [PDF p.2] DIS ’26, June 13–17, 2026, Singapore, Singapore Alieh Hajizadeh Saffar, Laurianne Sitbon, Sirinthip Roomkham, and Manesha Andradi
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **2** / 18
+
+DIS ’26, June 13–17, 2026, Singapore, Singapore                             Alieh Hajizadeh Saffar, Laurianne Sitbon, Sirinthip Roomkham, and Manesha Andradi
+
+
+which work well for search or classification, but fall short in conver-          (3) What interaction mechanisms are needed to support intent
+sational settings. In communication, users are often not looking for                  clarification and conversation building in assistive commu-
+images that look similar, but for images that are relevantly related                  nication systems?
+to their intended meaning [15]. For example, users may select an                 This paper contributes (1) an empirical account of how intent-
+image of a donut to navigate toward a croissant, or a pizza image to          based image suggestions are used in real communication practices
+express interest in an ingredient such as mushrooms; relationships            with adults with intellectual disabilities; (2) an interactional anal-
+that are meaningful in communication but not visually similar. As             ysis of the roles such suggestions play in supporting expression,
+a result, current systems provide limited support for intent clari-           clarification, and conversation; and (3) design implications for inte-
+fication and conversational progression when generic images are               grating intent-aware AI into inclusive, image-based communication
+used as expressive resources.                                                 systems. These insights are particularly relevant for designers and
+   Recent work in assistive communication has begun to explore                researchers concerned with interactional breakdowns, ambiguity,
+contextual suggestions and visual prompting, but these systems                and agency in assistive systems.
+largely remain oriented toward language acquisition and word-
+based communication [13, 26]. Such approaches can be particularly             2 Related Work and Background
+challenging for adults with intellectual disabilities who experience
+difficulties in learning and using symbolic representations. What
+                                                                              2.1 Image-Based Communication Beyond
+remains underexplored is how image-based systems can support                      Symbolic AAC
+self-expression, connection, and meaning-making in interaction,              Many adults with moderate to severe intellectual disabilities rely
+rather than focusing primarily on vocabulary learning or message             primarily on non-verbal strategies to communicate, rather than
+construction.                                                                conventional linguistic methods [3]. Functional communication,
+   In this paper present an intent-based image recommendation                enabling individuals to express desires, needs, thoughts, and emo-
+prototype that uses large language models (LLMs) to expand im-               tions, is often mediated by familiar partners who interpret these
+age concepts and generate related visual suggestions. Building on            signals [11]. Augmentative and Alternative Communication (AAC)
+the work of [16] that identifies different sources of ambiguity in           devices offer crucial support for this group by providing visuals
+communicative image use, such as locations, entities, activities, and        and symbols for linguistic concepts; however, their effectiveness is
+occasions, this system generates conceptual associations that go             often limited and nearly a third of devices are abandoned within the
+beyond surface-level visual similarity. By offering both textual and         first year of provision [4]. Challenges include difficulty translating
+image suggestions in response to a user’s selection, our approach            abstract thoughts into symbolic language, limited contextualized
+aims to enable users to iteratively refine their intent through ex-          vocabulary for discussing specific past or future events, reliance
+ploration. For example, selecting an image of a cup may lead to              on communication proxies beyond pre-programmed options [29],
+suggestions such as coffee or tea, supporting the expression of a            and a lack of personally relevant vocabulary, which can reduce
+desire or preference without requiring verbal input.                         motivation and engagement [8]. In this context, generic images
+   This work is part of a project exploring intent-aware image-based         can serve as powerful communication tools, sometimes conveying
+communication systems through participatory design and iterative             meaning more effectively than verbal language alone [30].
+development[18]. We extend the approach proposed by [17], which                 Visual Scene Displays (VSDs) integrate generic images or videos
+examined the potential of LLM-guided image recommendation to                 from real-life events with interactive elements, allowing users to
+represent a range of possible user intents using a small interaction         select regions that produce speech output [2, 8, 29]. Leveraging
+dataset. The focus shifts from intent coverage in isolation to in-           naturalistic scenes enhances comprehension, reduces cognitive
+tent as it emerges through interaction. The study examines how               load compared to symbolic grids, and supports engagement and
+adults with intellectual disabilities engage with intent-based image         language development [23, 40]. Video-based VSDs further capture
+suggestions in real communicative situations, using a prototype              spatial and temporal context, preserve dynamic relationships, and
+that allows them to iteratively select images from a large image             facilitate interaction cues [8]. Applications such as Inner Voice [20],
+collection and receive intent-informed suggestions at each step.             “Put Yourself in the Picture” [41], and Emoji Assistant [31] have
+   Through participatory evaluations and co-design workshops,                demonstrated the potential of visual tools to support non-verbal
+this study examines how intent-based suggestions are taken up                communication, self-expression, and social participation across a
+by both users with intellectual disability and their communication           range of everyday contexts.
+partners, how these suggestions support or hinder intent clarifi-               Browsing-based systems, such as the Canvis web application,
+cation, and how they shape conversational flow over time. Rather             enable people with intellectual disability to select generic images
+than evaluating task completion or retrieval accuracy, the focus             through a non-verbal browsing interface [5, 29]. Bircanin et al. [5]
+is on interactional use, examining how suggestions contribute to             explored the deployment of Canvis as a technology probe during
+sensemaking, storytelling, and sustained conversation.                       National Disability Insurance Scheme (NDIS)1 planning meetings
+   This paper addresses the following research questions:                    to allow participants express personal preferences, engage in social
+    (1) How do participants interact with intent-based image sug-            interactions, and collaborate non-verbally. Hajizadeh et al. [15, 16]
+        gestions to clarify their intentions?                                further demonstrated the potential of generic image browsers to
+    (2) When and why do intent-based suggestions align with, or              support personal connection and group participation for adults with
+        diverge from, participants’ communicative goals?                      1 Australian National Disability Insurance Scheme
+
+
+
+
+                                                                     4451
+
+<a id="pdf-p3"></a>
+### [PDF p.3] intellectual disability. Their studies also revealed key challenges in approaches demonstrate that LLMs can produce more situation-
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **3** / 18
+
+Interactive Intent-Based Image Recommendations for Assistive Communication: Insights from an Iterative User Study      DIS ’26, June 13–17, 2026, Singapore, Singapore
+
+
+intellectual disability. Their studies also revealed key challenges in                  approaches demonstrate that LLMs can produce more situation-
+such prototypes, including limited image collections, recommenda-                       appropriate and flexible communication content than earlier rule-
+tion algorithms that relied solely on visual similarity, and resulting                  based or machine-learning-driven systems. Additional systems,
+issues of image accessibility, ambiguity, and intent interpretation.                    such as gaze-based or keyword-driven interfaces, further illustrate
+While Canvis facilitate engagement and agency, generic images                           how LLMs can dynamically adapt word and phrase suggestions
+remain inherently ambiguous: a single image can evoke multiple                          based on user input and interaction history[6, 35].
+interpretations depending on the user, context, and interactional                          While context-aware systems have made progress in predicting
+goals. Little work has explored how systems can support users in                        relevant vocabulary and supporting structured interactions, effi-
+navigating such ambiguity during interaction, enabling real-time                        ciently navigating large vocabularies during ongoing conversations
+intent clarification rather than attempting to stabilize meaning                        remains difficult. Moreover, many existing systems still require
+through fixed categories or pre-defined annotations.                                    users to continue interactions linguistically by selecting symbolic
+                                                                                        vocabulary items, placing cognitive demands on individuals with
+2.2     Context-Aware Visual Recommendation in                                          minimal verbal ability. Although users may initiate communica-
+        Assistive Communication                                                         tion using images or contextual photographs, the role of visual
+Context-aware assistive communication systems have increasingly                         recommendations as a primary medium for sustaining open-ended,
+shifted from static symbol boards toward dynamic, AI-driven ap-                         interpersonal communication remains underexplored. In particu-
+proaches that adapt to users’ situational, conversational, and per-                     lar, the use of context-aware visual recommendation systems that
+sonal contexts. Prior work demonstrates that incorporating contex-                      support intent-driven image-based interaction rather than sym-
+tual signals such as conversation history, location, user preferences,                  bolic or word-centric communication represents an open research
+and communication partner input can reduce communication bar-                           opportunity in assistive communication.
+riers and improve user engagement, particularly in Augmentative
+and Alternative Communication (AAC) systems and Visual Scene
+                                                                                        2.3     Intent in Image-Based Interaction
+Displays (VSDs) [2, 24]. These systems aim to provide just-in-time                      Early work on intent detection in image search engines, social
+visual or linguistic support that aligns with the user’s immediate                      media platforms, and conversational agents primarily focused on
+communicative needs. Holyfield et al. explored a context-aware                          inferring user goals from explicit actions and early-stage interaction
+AAC prototype that used linguistic input from communication part-                       signals, such as queries, clicks, or gaze patterns, to improve retrieval
+ners to automatically generate cloze-style response options[19].                        relevance [34, 42]. These approaches typically treated intent as a
+AACessTalk, developed by Choi et al., further advanced this ap-                         pre-defined, task-oriented construct that could be inferred from
+proach by recommending contextual vocabulary cards to minimally                         observable behavioral cues within structured interaction scenarios.
+verbal autistic children while simultaneously providing real-time                          More recent research has extended intent modeling by incor-
+guidance to parents [9]. In AACessTalk, conversational context is                       porating multimodal representations that jointly consider visual
+derived from parental speech input and the child’s card selections,                     content, textual features, and user behavior. A new Multimodal
+enabling adaptive vocabulary recommendations.                                           Query Suggestion (MMQS) framework [39] generates textual query
+   Beyond conversational context, location- and situation-aware                         suggestions based on user query images to enhance the intentional-
+AAC systems have demonstrated the value of adapting communi-                            ity and diversity of search results. This framework leverages LLMs
+cation support to physical environments and activity contexts [26].                     and Multi-Agent Reinforcement Learning from Human Feedback
+Seo et al. proposed a location- and situation-based AAC mobile                          to optimize textual query generation. In [21], jia et. al. conducted
+application that organizes communication resources into of situa-                       rigorous studies to explore the connections between content and
+tional boards [1]. Similarly, Chan et al. developed a Bluetooth Low                     intent in using images in social media platforms. They believed
+Energy (BLE)-based context-aware AAC system for school children                         Visual information is not sufficient for recognizing intent categories
+with intellectual disabilities, enabling environmental cues to trig-                    and improved intent recognition by utilizing language information
+ger relevant communication options within a system-of-systems                           (e.g. hashtags) as a complementary clue. Their results showed how
+architecture [7]. Vargas also introduced a context-adaptive AAC ap-                     visual and textual information can produce observable effects when
+plication for individuals with aphasia, suggesting vocabulary based                     predicting intent. Compared to earlier behavior-only approaches,
+on user location and prior usage patterns to reduce navigation effort                   such models emphasize intent as an implicit construct that emerges
+[37].                                                                                   through sequences of interactions involving both content and user
+   Technologically, early context-aware AAC systems predomi-                            responses rather than as a single, explicitly specified query. How-
+nantly relied on machine learning techniques to model usage pat-                        ever, these applications primarily target content discovery and
+terns and predict relevant vocabulary or symbols [22, 27]. More                         retrieval efficiency and often overlook direct interpersonal commu-
+recently, large language models (LLMs) have emerged as a trans-                         nication, particularly among users with complex communication
+formative technology for context-aware assistive communication.                         needs. For marginalized users, intent may be expressed through par-
+Systems such as QuickPic AAC generate topic-specific displays                           tial, ambiguous, or surface-level visual features rather than explicit
+from photographs in a just-in-time manner using neural language                         queries or consistent behavioral traces. In such cases, interactive
+generation models [13]. Other work has explored generating con-                         query suggestion and iterative refinement have been proposed to
+textual vocabularies and communication boards from input images                         help clarify user intent [32].
+by leveraging visual storytelling datasets and LLMs [12, 14]. These
+
+
+
+
+                                                                              4452
+
+<a id="pdf-p4"></a>
+### [PDF p.4] DIS ’26, June 13–17, 2026, Singapore, Singapore Alieh Hajizadeh Saffar, Laurianne Sitbon, Sirinthip Roomkham, and Manesha Andradi
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **4** / 18
+
+DIS ’26, June 13–17, 2026, Singapore, Singapore                                  Alieh Hajizadeh Saffar, Laurianne Sitbon, Sirinthip Roomkham, and Manesha Andradi
+
+
+
+
+                             Communication         Receive Conversation
+                                Partner
+
+
+                                                         Prompts
+
+
+
+                                                                                                                  Intent Analysis
+
+
+                          User with intellectual
+                                disability
+
+
+
+Figure 1: User story illustrating intent-based image suggestion. A user and communication partner interact through image
+selection, while the system infers possible intent and provides related image and concepts.
+
+
+   Recent advances in multimodal representation learning have                      3.1     Prototype Design
+significantly reduced the semantic gap in Content-Based Image                      The prototype used in this study builds on a previous image-based
+Retrieval (CBIR) [36, 38]. Models such as CLIP (Contrastive Lan-                   communication system, Canvis [29]. The original prototype was
+guage–Image Pretraining) [28] learn joint embeddings from large-                   designed to support self-expression and social connection by pro-
+scale image–text data, enabling retrieval systems to align images                  viding users with easy access to a large collection of generic images,
+with abstract and diverse language concepts and to support more                    allowing them to search without relying on words, select multiple
+flexible search interactions. Building on this, Ye et al. proposed a               images, and arrange them on a blank board. One key feature was an
+user intent expansion framework that jointly parses textual and                    interactive image grid that continuously updated to show visually
+visual inputs using LLMs and interactive segmentation, composing                   similar images.
+logic-based search expressions and enabling iterative refinement                       Building on this foundation, the present study focused on a spe-
+[43]. Hajizadeh et al. further investigated how large language mod-                cific challenge identified in prior co-design studies [15]: ambiguity
+els interpret image intent in comparison with human judgments,                     in image-based communication. Users may have diverse intentions
+identifying shared dimensions such as entities, visual attributes,                 behind selecting an image, and often cannot find an image that
+activities, context, and inferred relationships [16]. They prompted                perfectly matches what they want to communicate. The study hy-
+GPT-4o to infer potential communicative intents from images in a                   pothesizes that if the system could infer the intent behind an image
+small user interaction dataset and to generate contextually relevant               selection, it could offer intent-based suggestions to help users re-
+image suggestions. Early-stage quantitative analyses and human                     fine their choices, express their meaning more clearly, and support
+evaluations demonstrated the system’s potential to provide diverse                 communication partners in asking relevant follow-up questions.
+image options aligned with users’ communicative goals [17].                        Figure 1 shows the user story working with such a system.
+   Despite these technical advances, prior research on user behav-                     To explore this hypothesis, the prototype’s image database, in-
+ior in image-based intent detection systems has largely overlooked                 terface, and backend recommendation algorithms were updated to
+individuals with intellectual or cognitive disabilities. The appli-                implement intent-based image suggestions. Figure 2 illustrates the
+cation of such systems as assistive communication tools, and the                   main interface components tested in this study.
+role of inferred intent in supporting interpersonal interaction, also                  The prototype interface was designed to support flexible and
+remains unexplored. This study aims to further examine how users                   incremental image-based communication. It begins with a minimal
+engage with algorithmically generated suggestions in a practical                   home screen consisting of an empty canvas and several control
+communication prototype and real-world scenarios.                                  buttons. These include options to navigate to the image search inter-
+                                                                                   face, access locally stored images on the user’s device, and perform
+3 Iterative, exploratory study design                                              basic operations such as deleting or resizing selected images.
+We adopted a research-through-design approach, using four iter-                        The main search interface presents a grid of 180 randomly dis-
+ative sessions with adults with intellectual disabilities to explore               played images. This random set is intended to act as a source of
+how intent-based suggestions might be used in a communication                      inspiration, helping users recall and express various aspects of their
+prototype to shape interaction and conversational flow. While the                  experiences and daily life. Users may initiate their interaction by
+prototype itself remained almost unchanged, the study was iterative                selecting images directly from this grid, by exploring predefined
+in its facilitation and interaction framing, allowing us to examine                categories such as Animals, Food, People, Nature, Tools, Movies,
+how different forms of prompting and goal-setting shaped partici-                  Travel, and Sports, or by entering a textual query if they are com-
+pants’ engagement with the same intent-based suggestions.                          fortable with typing. Selecting a category or submitting a query
+
+
+
+
+                                                                          4453
+
+<a id="pdf-p5"></a>
+### [PDF p.5] Access Drag the image for full Textual search
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **5** / 18
+
+Interactive Intent-Based Image Recommendations for Assistive Communication: Insights from an Iterative User Study                             DIS ’26, June 13–17, 2026, Singapore, Singapore
+
+
+
+
+  Access                                                         Drag the image for full                                                                                       Textual search
+  to                                                             screen
+  image                                                                                                                                                                        Predefined
+  grid                                                           The blank canvas                                                                                              categories
+                                                                 (communication board)
+  Local                                                                                                                                                                        Image grid
+  device
+  images                                                         Remove the image from
+  Undo                                                           canvas
+                                     Access to image grid (b)
+
+
+
+
+                            a) Entry Point                                                                                             b) Exploration (Random / Category / Text)
+
+              Intent-based image suggestions
+
+
+
+
+                                                                                                Intent and concept panel (clickable)
+                                                                                                                                                                       Clickable
+                                                                                                                                                                       image history
+
+
+
+
+                            c) Image Selection                                                                                         d) Iterative Image Refinement
+
+Figure 2: Interaction flow of the prototype interface. : (a) Entrypoint: The user starts from a minimal home screen (communica-
+tion board) with access to image search. (b) Exploration: The user explores via random images, predefined categories, or a text
+query. (c) Image Selection: Selecting an image highlights it and triggers system responses (new images, intents, and concepts).
+(d) Iterative Refinement: Users confirm selections to add them to the board and continue by selecting new images, interacting
+with concepts, or revisiting prior selections.
+
+
+dynamically updates the grid with more contextually relevant im-                           provides access to previously selected images and their associated
+ages, enabling a more focused and intentional starting point.                              suggestions, enabling users to revisit, revise, and build upon earlier
+   Once a user selects an image, it is highlighted and enlarged at the                     choices throughout the interaction.
+center of the grid. Simultaneously, the image grid is updated with                            The image database consists of 5,000 images from the MS COCO
+new image suggestions generated based on inferred user intents.                            2017 validation set [25], which provide rich, contextual, multi-object
+These suggestions are driven by the backend recommendation strat-                          scenes (e.g., events, people, locations), and 5,000 images from Im-
+egy, which predicts possible communicative intentions behind the                           ageNet, sampled as five images per category from 1,000 labels to
+selected image.                                                                            provide focused object representations. These datasets were cho-
+   To support the communication partner, the system displays the                           sen for their coverage of everyday topics relevant to image-based
+top five predicted communicative intents alongside a set of related                        communication. For each query, the system recommends 33 new
+textual concepts on the right-hand side of the interface. These                            images, consistent with the original Canvis prototype [29], though
+concepts represent key elements extracted from the selected image,                         this number can be adjusted according to user preference.
+such as locations, entities, and activities. These textual elements are                       The backend algorithm was enhanced to leverage large language
+interactive and can be selected to further refine the search process,                      models (LLMs) for concept expansion, enabling semantically rel-
+either by the user or their communication partner.                                         evant and flexible image recommendations beyond simple visual
+   At each step, users can confirm their selection by clicking a green                     similarity. The recommendation algorithm follows a previously
+checkmark, which transfers the chosen image to a communication                             proposed LLM-based image recommendation framework [17] and
+board. The system preserves the interaction state, allowing users                          consists of three modules: concept expansion, concept selection,
+to resume their search process from where they left off if they                            and image search (Figure 3).
+return to the search interface. Additionally, the search interface
+
+
+
+
+                                                                                4454
+
+<a id="pdf-p6"></a>
+### [PDF p.6] DIS ’26, June 13–17, 2026, Singapore, Singapore Alieh Hajizadeh Saffar, Laurianne Sitbon, Sirinthip Roomkham, and Manesha Andradi
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **6** / 18
+
+DIS ’26, June 13–17, 2026, Singapore, Singapore                                                     Alieh Hajizadeh Saffar, Laurianne Sitbon, Sirinthip Roomkham, and Manesha Andradi
+
+
+
+
+                          (1) GPT-Based Concept Expansion                                 (2) Concept Selection (MMR)                       (3) Image Search
+
+                                                                                    1. kitchen
+                  'locations': ['kitchen', 'garden', 'farmers market', …],          2. a person is arranging fruits on a cutting        Text
+                  'occasions': ['breakfast', 'snack time', 'summer picnic', …],        board.
+                                                                                                                                     Embeddings    Cosine
+                  'activities': ['slicing', 'blending', 'juicing',],                3. sliced carrots                                             Similarity
+                  'sentences': ['a person is slicing apples and carrots.’,          4. pears
+                                                                                                                                                      Image
+                          'a person is blending fruits for a smoothie.',…],         5. a person is drinking a freshly made                          Embeddings
+                  'intents': ['I want to make fresh juice.’,                           smoothie.
+                            'I enjoy preparing healthy drinks.',…],                 6. a person is peeling oranges.
+                  'entities': ['apples', 'carrots', 'citrus fruits', …],            7. cubed apples
+                                                                                                                                             CLIP Image Encoder
+                  'sameEnt': ['grapes', 'pears', 'mangoes', …],                     N. …….
+                  'lowEnt': ['sliced apples', 'orange juice',…],
+                  'highEnt': ['fruits and vegetables', 'kitchen utensils',…],                         Text Embeddings
+                                                                                                                                         Generic Image Dataset
+                  'roles': ['juice maker', 'fruit lover', 'health enthusiast', …]              CLIP Text Encoder                          (COCO + ImageNet)
+
+
+
+
+Figure 3: Overview of the recommendation pipeline, adapted from [17]. An input image is expanded into semantic concepts
+using a GPT-based module, followed by concept selection via MMR and image retrieval using CLIP-based similarity, resulting
+in contextually relevant image suggestions.
+
+
+   In the concept expansion module, GPT-4.O interprets an image                                           Most participants were already familiar with the research team
+in terms of potential communicative intents and generates a diverse                                    through previous visits to the hubs and earlier workshop sessions.
+set of textual concepts. The prompt were designed based on prior                                       This familiarity contributed to a relaxed and informal atmosphere
+co-design studies and user data [15] to reflect real-world image                                       during the sessions, which incorporated playful and game-like
+selection. The prompt incorporates contextual information (e.g.,                                       activities to support engagement and reduce anxiety.
+users’ intellectual disabilities, iterative selection process, limited                                    Participants demonstrated diverse communication profiles. Five
+options, and quick choices), common ambiguities in image-based                                         participants were fluent speakers, while four could speak but tended
+communication [16], and associations users are likely to make when                                     to do so only when necessary, showing a preference for minimal ver-
+selecting images (e.g., categorical, part-to-whole, and contextual                                     bal interaction. The remaining participants were minimally verbal
+relationships) [15], guiding GPT-4.O to generate concepts across                                       or non-speaking, using few spoken words or short, often unclear
+eight semantic categories, including locations, entities, activities,                                  verbal expressions. in addition, four of the participants demon-
+occasions, relational roles, intent guesses, and action sentences (see                                 strated that they were able to read, while others either chose not to
+Appendix A for full prompts).                                                                          or were not able to read These categories are drawn descriptively
+   In the concept selection module, a simplified Maximal Marginal                                      based on the observations rather than clinically, to support analysis
+Relevance (MMR) approach promotes diversity and reduces redun-                                         of interaction patterns.
+dancy among 33 generated concepts. In the image search mod-                                               In line with prior work [33], this study adopts a support-based
+ule, for each selected concept, one image is retrieved using cosine                                    rather than diagnosis-driven perspective. Instead of focusing on
+similarity of CLIP-generated embeddings, enabling cross-modal                                          medical labels, participants are characterized based on their inter-
+retrieval that aligns images with predicted intents.                                                   actional abilities and the level of support required during communi-
+                                                                                                       cation. This approach provides a more meaningful understanding
+3.2 Participants                                                                                       of how participants engage with technology and reflects the real-
+The study involved 15 adults with intellectual disability (11 men                                      ity that not all individuals with intellectual disability have formal
+and 4 women), aged between 25 and 55 years. Participants were re-                                      diagnoses.
+cruited from two community hubs operated by a Disability Support                                          All participants received accessible information about the study
+Organization (DSO) in Queensland, Australia, with 8 participants                                       and provided informed consent. Easy-to-read consent forms were
+from Hub A and seven from Hub B. These hubs support adults with                                        prepared for participants with limited communication abilities and
+intellectual disability in social participation, accessing community                                   were explained by their support workers prior to signing. The
+resources, and developing daily living skills. Table 1 summarizes                                      study received ethical approval from Queensland University of
+participant distribution across the four sessions.                                                     Technology Human Research Ethics Committee (approval number
+   Data collection took place at Queensland University of Technol-                                     2000000213).
+ogy as part of a series of technology-focused workshops. These
+workshops provided a familiar and supportive context in which                                                     Table 1: Participant distribution across sessions
+participants could engage with new technologies, allowing the
+research team to observe interaction behaviours, responses, and                                                                Session        Hub A        Hub B   Total
+support needs. The broader aim of these workshops was to explore                                                               Session 1        7            0       7
+opportunities for co-designing inclusive technologies grounded in                                                              Session 2        6            6      12
+participants’ lived experiences. Participants were recruited through                                                           Sessions 3       4            3       7
+the community hubs based on their interest in participating in                                                                 Sessions 4       3            5       8
+technology-related research.
+
+
+
+
+                                                                                           4455
+
+<a id="pdf-p7"></a>
+### [PDF p.7] Figure 4: Examples of participant interaction with the image-based communication prototype during workshop sessions 1 and
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **7** / 18
+
+Interactive Intent-Based Image Recommendations for Assistive Communication: Insights from an Iterative User Study       DIS ’26, June 13–17, 2026, Singapore, Singapore
+
+
+
+
+Figure 4: Examples of participant interaction with the image-based communication prototype during workshop sessions 1 and
+2, showing group engagement and image selection on a shared display.
+
+
+3.3     Sessions and Procedures                                                           Following the introduction, participants took turns engaging
+The structure of the sessions evolved iteratively. The procedures                      in open-ended image-based expression to communicate their own
+of each session are described below, while the rationale for their                     interests and feelings. Two members of the research team facilitated
+design and subsequent modifications is grounded in ongoing re-                         the session: one acted as a communication partner, engaging with
+flections, which are detailed in the findings section. The number of                   participants and interpreting their selections, while the other pro-
+participants varied across each session as not everyone was able                       vided support with system navigation when needed. Both facilita-
+to attend every time. The different number of participants across                      tors were researchers with experience in co-designing technologies
+sessions did not affect this research as the focus is on individual                    with people with intellectual disabilities and had previously con-
+interactions instead of participants behavioral changes over time.                     ducted multiple workshops with the participants. Their familiarity
+Using the system for communication goals in the long term is out-                      with the group and ongoing commitment to relationship-building
+side the scope of this paper as it would require practice and getting                  were intended to support trust, comfort, and meaningful interaction
+used to image categories, navigation, and familiarity with the sys-                    rather than to evaluate participant performance.
+tem. All participants in this study did not have this opportunity, so                     To encourage visual communication, participants were initially
+the focus was primarily on their individual interaction with the sug-                  asked not to verbally state their intended topic, allowing the com-
+gestions and the system to inform further co-design improvements.                      munication partner to infer meaning by observing the sequence of
+In this study, all participants were provided with an introduction                     selected images. Although not all participants adhered strictly to
+to using the prototype, and different levels of required support for                   this instruction, the activity provided opportunities to explore how
+communication were observed and reflected upon.                                        intent could be inferred and negotiated through image selection
+   Figure 4 show the examples of participant interaction with the                      alone.
+image-based communication prototype in session 1 and 2.                                   At the end of each participant’s turn, the research team sum-
+                                                                                       marised the interpreted meaning of their selections, reflecting back
+3.3.1 Session 1: Open-Ended Expression. The first session focused                      what had been understood. This summarisation served both as a
+supporting open-ended visual expression with the prototype. Seven                      validation of participants’ expressions and as a way to build rapport
+participants from Hub A took part in this workshop. The session                        and familiarity with the interaction style supported by the system.
+was framed as a playful and low-pressure activity, encouraging
+participants and facilitators to get to know one another by sharing                     3.3.2 Session 2: Goal Identification with Support Worker Mediation.
+personal experiences and interests through images rather than                           The second session focused on goal-oriented expression, asking par-
+speech.                                                                                 ticipants to communicate a specific goal drawn from their everyday
+   At the start of the session, the prototype was displayed on a                        lives. This design was informed by reflections from Session 1, where
+large screen and its main features were introduced. Participants                        limited visibility into participants’ initial intentions made it difficult
+were shown that they could select multiple images across different                      to examine how intent-based suggestions supported progression
+categories to express a wide range of topics, such as things they                       across multiple selections.
+enjoy, activities that make them happy, positive memories, or plans                        Participants from both Hub A and Hub B took part in this ses-
+for upcoming events (e.g., birthdays or holidays). To model this                        sion, with six participants from each hub. As participants from
+interaction, a member of the research team demonstrated how a                           Hub B were newly introduced, the system was reintroduced at the
+personal story such as having fun at a birthday party in a park and                     the workshop. This new introduction emphasized how meaning
+eating chocolate cake with her children, could be expressed through                     could be constructed through sequential image selections rather
+a sequence of image selections drawn from different categories.                         than retrieved in a single step. Using an interactive example (e.g.,
+This demonstration aimed to illustrate how meaning could be built                       finding a banana by navigating through food categories and related
+gradually through multiple selections rather than conveyed through                      fruit images), facilitators demonstrated multi-step exploration and
+a single image.                                                                         associative navigation in preparation for the goal-oriented activity.
+
+
+
+
+                                                                              4456
+
+<a id="pdf-p8"></a>
+### [PDF p.8] DIS ’26, June 13–17, 2026, Singapore, Singapore Alieh Hajizadeh Saffar, Laurianne Sitbon, Sirinthip Roomkham, and Manesha Andradi
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **8** / 18
+
+DIS ’26, June 13–17, 2026, Singapore, Singapore                            Alieh Hajizadeh Saffar, Laurianne Sitbon, Sirinthip Roomkham, and Manesha Andradi
+
+
+
+
+               (a) Color-coded question cards                               (b) New communication board in the prototype interface.
+
+Figure 5: Integration of communication supports in Sessions 3 and 4 to scaffold participants’ interaction, combining (a) color-
+coded question cards used by facilitators with (b) an updated communication board featuring structured prompts such as
+“When?”, “Where?”, “Who/what with?”, and “What to do?”.
+
+
+   Support workers, who were familiar with participants’ interests             In addition, Communication partners were encouraged to ask
+and routines, identified a suitable communicative goal for each par-        structured follow-up questions framed around “when,” “where,”
+ticipant. Goals were intentionally selected to require multiple image       “with whom/what,” and “what to do,” based on the context of the
+selections and were not directly accessible from the initial screen,        selected image. For example, if a participant selected a picture of
+encouraging sustained engagement with the system’s suggestion               a dog, the partner might ask, “What do you do with your dog?”,
+mechanisms. In some cases, goals were determined based on prior             “Where do you play with your dog?”, or “What other animals do
+knowledge; in others, they emerged through brief conversations              you like?” These prompts were informed by the conceptual expan-
+with participants and support workers before the session. Goals             sion structure used in GPT prompt, helping participants construct
+were recorded on cards labelled with participants’ names, allowing          coherent narratives around each selection.
+facilitators to be aware of the intended topic while encouraging               To support this process, the interface was subtly updated with a
+participants to work toward it independently.                               four-section visual board, allowing participants to organize their
+   During the session, facilitators and, when appropriate, support          responses visually for each question category (see Figure 5b). This
+workers accompanied participants as they interacted with the sys-           design aimed to make conversations more engaging around each
+tem. The level of support varied according to participants’ abilities,      image and to examine how intent-based suggestions facilitate the
+ranging from minimal reminders to maintain focus, to more direct            creation of personal, contextually coherent stories.
+guidance such as suggesting relevant image categories or prompt-
+ing selections. This graduated mediation supported engagement                3.4     Data Collection
+while preserving participant autonomy.                                       Data were collected through a combination of screen recordings,
+   By making participants’ communicative goals known to the re-              video recordings of participants, and session-level reflections and
+search team, this session enabled systematic examination of how              debriefs conducted by the research team.
+intent-based image and text suggestions supported—or failed to sup-             Screen recordings captured participants’ interactions with the
+port—progression toward a known intent across multiple selections,           prototype, including the sequence of image selections, suggested
+as discussed in the Findings section.                                        concepts and images, and navigation actions. These recordings
+3.3.3 Session 3 and 4: Structured Visual Storytelling. Sessions 3 and        enabled detailed analysis of how participants moved through the
+4 involved 15 participants from both centers and were designed to            image space over time and how intent-based suggestions were taken
+examine how intent-based suggestions support visual storytelling.            up. Video recordings of participants focused on their responses dur-
+Both sessions followed a similar structure: a set of open-ended              ing the sessions, including gestures, pauses, facial expressions and
+questions was prepared across four categories: 1-Dreams and Fu-              reactions to prompts or questions from communication partners.
+ture, 2-Relationships and Memories, 3-Feeling and Emotions, and              These data were used to understand and characterize participants’
+4-Activities and Daily Life. Each category included 4–5 questions,           abilities to independently initiate and develop topics, as well as the
+presented on color-coded cards (see Figure 5a). Before the session           level and type of support they required during interaction, dimen-
+began, participants were introduced to the general categories and            sions that were not always evident from interaction logs alone.
+could randomly select one card from any category for each turn.                 Following each session, the full research team including facili-
+While they were not aware of the specific questions on the cards,            tators, communication partners, and session recorders, conducted
+this approach allowed participants to exert some influence over the          reflection and debrief discussions. These debriefs documented im-
+topics they discussed. These questions encouraged participants to            mediate observations, emerging patterns, breakdowns, and success-
+recall specific personal experiences, such as “What do you like to           ful interactional strategies. Insights from these discussions informed
+do with your friends or family?” or “What makes you feel calm or             the iterative refinement of the session framing in subsequent work-
+relaxed?” (full list in Appendix B).                                         shops, supporting an exploratory and adaptive research process.
+
+
+
+
+                                                                    4457
+
+<a id="pdf-p9"></a>
+### [PDF p.9] Table 2: Types of support provided to participants during interaction with the prototype.
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **9** / 18
+
+Interactive Intent-Based Image Recommendations for Assistive Communication: Insights from an Iterative User Study     DIS ’26, June 13–17, 2026, Singapore, Singapore
+
+
+                        Table 2: Types of support provided to participants during interaction with the prototype.
+
+                  Support Level         Description
+                          R             Reminding the goal, suggesting image categories to orient or broaden exploration
+                          N             Navigational support (e.g., returning to previous options, using text labels or search)
+                          P             Prompting or encouraging image selection during interaction
+                          I             Independent use without external support
+
+               Table 3: Analytic categories describing the roles played by image and text suggestions during interaction.
+
+          Suggestion        Role of Image/Text Suggestions
+          Role
+          IC                Intent Clarification: Supporting users in making ambiguous messages more specific and understand-
+                            able to their communication partner.
+          TP                Topic Prompting: Introducing new topics that were unrelated to the user’s initial intent.
+          CS                Conversation Sustaining: Maintaining continuity and relevance in the interaction by offering con-
+                            textually aligned images or text.
+          IM                Intent Misalignment: Introducing content that did not support or reflect the user’s intended message.
+          NA                Not Actionable: Suggestions that were not taken up or integrated into the interaction.
+
+
+4     Findings and Reflections                                                         suggestions associated with an image of an "elephant" prompted
+Findings from three iterative workshop sessions are presented,                         the participant to verbally and visually express disinterest in "lions".
+each reported separately to reflect changes in focus, interactional                    However, these suggestions did not facilitate further exploration of
+dynamics, and design decisions over time. For each session, a table                    the participant’s apparent interest in "sheep".
+summarizes the main conversational topics, the sequence of images                         A more extended interaction emerged with P5, who began by
+selected by participants, the level of support provided, and the roles                 selecting an image of "a dog in a car". Through successive selections
+played by intent-based image and text suggestions. These tables                        of suggested images (e.g., car, street, city), the participant navigated
+serve as analytic scaffolds, providing a basis for discussion grounded                 toward images of different cities. When prompted, P5 confirmed
+in detailed interactional examples and supporting reflection within                    interest in a city they had visited outside Australia. Subsequent
+and across sessions. The level of support and the roles of image                       follow-up questions (e.g., “What did you see there?”) were answered
+and text suggestions in each interaction are characterized using the                   visually through the selection of images depicting cats. This interac-
+analytic codes defined in Tables 2 and 3. These roles were derived                     tion illustrates how intent-based suggestions supported both intent
+from researchers’ analysis of the full set of screen recordings and                    clarification and conversation sustaining by maintaining contextual
+recorded interaction videos of the session.                                            continuity across multiple turns. Notably, the images that enabled
+                                                                                       this progression would not have been retrieved through simple
+4.1     Session 1: Open-Ended Image Exploration                                        similarity-based recommendation of images or pictogram symbols.
+        Limits the Evaluation of Intent-Based                                          Instead, the system offered contextually aligned image suggestions
+                                                                                       that supported associative exploration while remaining anchored
+        Suggestions                                                                    to the participant’s evolving communicative focus.
+In the first session, people were mostly prompted by images in a non-                     Taken together, these observations suggest that the role of intent-
+directed manner to talk about their interests, such as loving animals,                 based suggestions becomes observable, primarily when participants
+food, or traveling. All participants except P5 did not articulate a                    are able and supported to engage in iterative image selections.
+specific communicative goal and typically stopped after two or                         Evaluating such systems, therefore, requires interactional contexts
+three image selections from random or categorized images.                              that allow participants to move beyond initial selections and express
+   Across interactions, textual suggestions were generally not adopted,                personally meaningful goals through image associations, rather
+and there were limited opportunities to evaluate the role of image-                    than completing predefined tasks with known endpoints.
+based suggestions for participants who did not pursue a specific                          Based on these reflections, both the way the system was intro-
+communicative direction (see Table 4 P2, P6, P7). The impact of                        duced and the structure of the subsequent workshop session were
+image suggestions was most apparent in clarifying meaning and                          adjusted (explained in Section 4). Rather than allowing participants
+sustaining conversation when participants engaged in multi-step                        to engage in entirely open-ended image exploration, the activity
+selections that extended beyond an initial image choice. For exam-                     was reframed around identifying and communicating a personally
+ple, a suggestion of a zebra emerged in the context of kangaroo                        meaningful goal related to the participant’s interests. Support work-
+selections (P1), and images of “walking with a dog” or a “specific                     ers played an active facilitative role by articulating a tentative and
+kind of dog” were retrieved from a "dog" picture (P3). Similarly,                      visually expressable goal for the interaction.
+
+
+
+
+                                                                              4458
+
+<a id="pdf-p10"></a>
+### [PDF p.10] DIS ’26, June 13–17, 2026, Singapore, Singapore Alieh Hajizadeh Saffar, Laurianne Sitbon, Sirinthip Roomkham, and Manesha Andradi
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **10** / 18
+
+DIS ’26, June 13–17, 2026, Singapore, Singapore                               Alieh Hajizadeh Saffar, Laurianne Sitbon, Sirinthip Roomkham, and Manesha Andradi
+
+
+Table 4: Image selection trajectories, level of support, and the roles of suggestions in participants’ communicative processes in
+Session 1. Text entries (e.g., “People”) indicate selecting from category names or suggested textual concepts in the prototype.
+
+                 Participant                      Topic              Selection Process
+                                                                     Random ↓       Animals ↓
+
+
+
+                 P1 Level of support: R           Animals                                       →               →
+                 Image suggestions’ role: CS
+                 Text suggestions’ role: NA
+                                                                     Random ↓        Food ↓         Animals ↓
+
+
+
+                 P2 Level of support: R           Food and animals
+                                                                     Random ↓
+
+
+
+                 P3 Level of support: P           Animals                       →               →
+                                                                     Random ↓                        Random ↓
+
+
+                                                    Animals
+                 P4 Level of support: R           (Love sheep)                  →
+                                                                     Random ↓                                       [Return] ↓
+
+
+
+                 P5 Level of support: I           A specific city               →               →                                →         →
+
+
+
+                                                                                →               →               →
+                                                                     Random ↓
+
+
+
+                 P6 Level of support: I           No topic                      →               →
+                                                                     Random ↓       Random ↓
+
+
+
+                 P7 Level of support: R           Mum and Dad are                               →
+                                                  coming to see me
+
+
+   This shift aimed to enable more image selections, making the                    For participants P2, P3, P5, P8, and P11, helpful associations
+role of intent-based suggestions easier to observe and analyse.                 generated by the system guided participants toward their intended
+                                                                                goals. These interactions showed that suggestions supported clarifi-
+4.2     Session 2: Goal-Driven Interaction Reveals                              cation for P3 to talk about dressing up, for P2 helping to find books,
+        Algorithmic and Content Needs                                           for P5 and P11 finding coffee from pictures of "restaurant food"
+In Session 2, the system was framed around expressing participants’             and "bowls", and finding a picture of a "gym" starting from soccer
+personally meaningful goals, supported by their support workers.                for P8. These semantic-based searches would not be accessible by
+This allowed us to observe how image and text suggestions facili-               similarity-based image recommendations. However, users’ engage-
+tated goal identification, where misalignments occurred, and what               ment with the system depended on their interest in expressing
+adjustments were needed for future sessions.                                    the selected goal and their understanding of image associations.
+   In Table ??, each interaction is accompanied by a brief analytic             Participants P2, P4, and P6 sometimes deviated from expected paths
+summary highlighting patterns in goal identification and intent                 because the chosen goal was not something they want to share
+clarification.                                                                  with the system.
+
+
+
+
+                                                                       4459
+
+<a id="pdf-p11"></a>
+### [PDF p.11] In some other interactions, while the prototype’s textual/image relevant to the selected image and to the participant’s intent, the
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **11** / 18
+
+Interactive Intent-Based Image Recommendations for Assistive Communication: Insights from an Iterative User Study       DIS ’26, June 13–17, 2026, Singapore, Singapore
+
+
+   In some other interactions, while the prototype’s textual/image                      relevant to the selected image and to the participant’s intent, the
+suggestions were helping to sustain in the same context, they could                     corresponding images did not share the same visual or situational
+not fully support participants’ goals. P7, P9, P10, P12, and P13                        context as the initially selected image. For example, concepts such
+could not find images for cricket, Slimmer, Broncos rugby team,                         as "shadow" or "staring" were generated, but the retrieved images
+pokemons and Michael Jackson. These suggest that covering the                           did not meaningfully relate to the context established by the prior
+contents around personal interests and pop-cultural images around                       selections. When such irrelevant or weakly aligned suggestions
+music, travel, and films in the image collection is crucial for enabling                accumulated, they introduced noise into the interaction, diverting
+meaningful exploration as well as prioritizing those concepts for                       participants’ attention and hindering progress toward goal clarifi-
+each image selection. It was also observed that image categories                        cation.
+(e.g., animals, travel, people) lacked sufficient variety of topics and                    Based on these observations, the next session was restructured
+images as a starting point.                                                             to support goal-driven multiple image selections and open-ended
+   During some interactions with participants, some misalignment                        personal storytelling by introducing open-ended questions as con-
+between textual suggestions and retrieved images was noted. While                       versation starters and structured follow-up questions beginning
+in some cases, the extracted textual concepts were semantically                         with "when," "where," "with who/what," and "what to do" for the
+
+
+Table 5: Image selection trajectories, level of support, and the roles of image and text suggestions in participants’ communicative
+processes in session 2. Text entries indicate selecting from category names or suggested textual concepts in the prototype.
+
+  Participant                          Topics and Selection Process                                                                   Remarks
+  P2                                   Topic: Books
+  Level of support: R                                                                                                                 P2 was not interested in
+                                         Food ↓       Notebook ↓
+  Image suggestions’ role: IC                                                                                                         books; she preferred to
+  Text suggestions’ role: IC                                                                                                          search for coffee and travel,
+                                                                                                                                      and was reminded to find
+                                                                   →                                                                  books.
+
+
+                                       Topic: Shopping and dressing up
+  P3                                    People ↓                                  [Return] ↓                                          Distraction occurred, but
+  Level of support: R, N                                                                                                              the goal was eventually
+  Image suggestions’ role: IC                                                                                                         found.
+  Text suggestions’ role: NA
+                                                  →             →                              →          →         →
+
+                                       Topic: Snake
+  P4                                   Random ↓                     [Return] ↓
+                                                                                                                                      P4 was not interested in
+  Level of support: R, N, O                                                                                                           the topic. The goal could
+  Image suggestions’ role: IM                                                                                                         have been found, but he
+  Text suggestions’ role: NA                                                                                                          gave up.
+                                                   →                             →             →
+
+                                       Topic: Coffee
+  P5
+                                         Food ↓
+  Level of support: R
+  Image suggestions’ role: IC
+  Text suggestions’ role: NA
+                                                 →               →               →             →
+                                       Topic:Tea bag
+  P6                                   Random ↓                                                                                       P6 was not interested in
+  Level of support: R                                                                                                                 topic. The goal could be
+  Image suggestions’ role: CS                                                                                                         found, but he gave up and
+  Text suggestions’ role: NA                                                                                                          pointed to the cup of cof-
+                                                  →                →                                                                  fee.
+                                       Topic: Cricket
+  P7                                    Sports ↓                                                                                      Partners went two step
+  Level of support: R                                                                                                                 further. No better images
+  Image suggestions’ role: IM                                                                                                         found.
+  Text suggestions’ role: NA
+                                                   →
+
+
+
+
+                                                                                 4460
+
+<a id="pdf-p12"></a>
+### [PDF p.12] DIS ’26, June 13–17, 2026, Singapore, Singapore Alieh Hajizadeh Saffar, Laurianne Sitbon, Sirinthip Roomkham, and Manesha Andradi
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **12** / 18
+
+DIS ’26, June 13–17, 2026, Singapore, Singapore                               Alieh Hajizadeh Saffar, Laurianne Sitbon, Sirinthip Roomkham, and Manesha Andradi
+
+
+  Participant                           Topics and Selection Process                                                            Remarks
+                                        Topic: Gym
+  P8                                     Sports ↓
+  Level of support: R
+  Image suggestions’ role: IC, CS
+  Text suggestions’ role: NA
+                                                   →             →        →
+                                        Topic: Slimmer
+  P9                                     Movies ↓                                       Pop-culture figurines ↓                 P9 selected multiple im-
+  Level of support: N, P                                                                                                        ages and tried to get close.
+  Image suggestions’ role: CS, IM                                                                                               No images of specific an-
+  Text suggestions’ role: CS, IM                                                                                                imation or movie were
+                                                  →            →       →                                          →             found
+                                        Topic: Broncos sport team
+  P10                                   Animals ↓                                                                               No images of specific
+  Level of support: R                                                                                                           rugby team, he tried to
+  Image suggestions’ role: IM                                                                                                   get close. The horse was
+  Text suggestions’ role: IM                                                                                                    selected because of the
+                                                  →              →                                                              team logo.
+                                        Topic: Coffee
+  P11 Level of support: R               Random ↓
+  Image suggestions’ role: IC
+  Text suggestions’ role: NA
+
+                                                  →           →           →
+                                        Topic: Pokemon or Pikachu
+  P12                                   Animals ↓                          Movies ↓                                             No images of specific an-
+  Level of support: R, N, P                                                                                                     imation character. P12 se-
+  Image suggestions’ role: IM                                                                                                   lected different animals as
+  Text suggestions’ role: IM                                                                                                    he had a book including
+                                                     →           →                                                              various Pokemons inspired
+                                                                                                                                by different animals.
+                                        Topic: Michael Jackson
+  P13                                     People ↓                         Music↓
+                                                                                                                                No images of specific
+  Level of support: R, N, P                                                                                                     singer or dancer, tried to
+  Image suggestions’ role: CS, IM                                                                                               get close.
+  Text suggestions’ role: CS, IM
+                                                     →       →                      →             →               →
+
+
+communication partner to support the construction of coherent per-              construct short personal narratives. In contrast, other participants
+sonal narratives. This design also allowed examination of the role              (e.g., P11, P6, and P13) engaged in more random image selection,
+of intent-based suggestions in supporting the creation of personal              either ignoring the guiding question or being prompted by visually
+stories around a specific topic presented by a selected image.                  salient images to express unrelated or momentary interests.
+                                                                                   As conversations continued, follow-up questions from commu-
+4.3     Session 3 and 4: Story Prompts Supports                                 nication partners about locations, occasions, or activities were of-
+        Conversational Continuity and Reveals                                   ten less effective in supporting story construction. Most partici-
+        Priority Associations                                                   pants showed limited interest in representing locations or activities
+                                                                                through images. Instead, participants who produced more coherent
+In Sessions 3 and 4, the interaction was re-framed around open-
+                                                                                narratives primarily relied on concrete entities or objects, such as
+ended questioning to support personal story-making and to exam-
+                                                                                food items, animals, or familiar personal objects, as anchors for
+ine how intent-based image suggestions function in more extended,
+                                                                                storytelling. For example, P12 was not interested in talking about
+narrative-oriented interactions. Asking open questions prompted
+                                                                                the locations where different animals live. He was just interested
+some participants (e.g., P5, P7, P2, P3, and P9) to engage with per-
+                                                                                in showing different kinds of animals. This pattern suggests that
+sonally meaningful topics through multiple image selections to
+                                                                                objects functioned as more accessible and cognitively manageable
+discuss about missing a food, a garden’s animals, traveling, or a
+                                                                                resources for narrative expression than abstract contextual elements
+coming birthday. Table ?? presents sample interactions in these
+                                                                                like place or activity.
+sessions, while the full list of interactions is presented in Appendix
+                                                                                   Across these sessions, a shift was observed in the role of intent-
+C. Participants with stronger verbal abilities (P14, P4, P7, P15) often
+                                                                                based image suggestions. In addition to supporting intent clarifi-
+combined speech and image selection to respond to questions and
+                                                                                cation, as seen in earlier sessions, they increasingly contributed
+
+
+
+
+                                                                       4461
+
+<a id="pdf-p13"></a>
+### [PDF p.13] to sustaining ongoing conversations. When suggestions remained single topic. In session 3, this interaction pattern constrained con-
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **13** / 18
+
+Interactive Intent-Based Image Recommendations for Assistive Communication: Insights from an Iterative User Study       DIS ’26, June 13–17, 2026, Singapore, Singapore
+
+
+to sustaining ongoing conversations. When suggestions remained                         single topic. In session 3, this interaction pattern constrained con-
+conceptually aligned with the initially selected image, they helped                    versational flow by implicitly encouraging participants to answer
+preserve topical continuity and allowed interactions to unfold co-                     each question with a new image placed on the board, rather than
+herently across multiple turns. This pattern was particularly evident                  supporting open-ended elaboration. Participants were thus guided
+for participants P5, P2, P3, and P11, where suggested images closely                   toward topic completion instead of being supported in maintaining
+followed the participant’s evolving communicative focus. For exam-                     narrative continuity. Therefore, communication partners noted that
+ple, selecting a roasted chicken led to related suggestions such as                    while structured questions and their corresponding image sugges-
+juice, cake, and coffee, while choosing a butterfly prompted images                    tions were helpful prompts when they had no clear idea of how to
+of flowers and garden insects, supporting a consistent communica-                      continue the interaction, overly rigid questioning risked steering
+tive trajectory around a shared topic.                                                 conversations toward predefined paths and limiting natural conver-
+   At the same time, cases were observed in which suggestions                          sational flow. Questions were most effective when used as optional
+failed to support participants’ intended messages. Misalignment                        scaffolds, rather than as visual requirements that constrained par-
+often stemmed from textual concept extraction based on peripheral                      ticipants’ expressive freedom.
+or non-salient image details or inferred contexts that were not                           This pattern was particularly evident for participants P5, P2, P3,
+communicatively meaningful. For instance, in interactions with                         and P11, where suggested images closely followed the participant’s
+P6, dog-related suggestions were scattered and sometimes derived                       evolving communicative focus. For example, selecting a roasted
+from irrelevant details (e.g., paving stones) or unrelated contexts                    chicken led to related suggestions such as juice, cake, and coffee,
+(e.g., beach, living room). As a result, both the textual concepts                     while choosing a butterfly prompted images of flowers and garden
+and retrieved images introduced distraction rather than supporting                     insects, supporting a consistent communicative trajectory around
+coherent narrative development.                                                        a shared topic.
+   Interface background also shaped the limits of this storytelling                       Based on these reflections, Session 4 adjusted the interaction flow
+interaction. The iterative replacement of suggested images after                       to allow conversations to continue from each selection point rather
+each selection often shifted the system toward a different storyline,                  than repeatedly returning to the initial image, and the conversation
+requiring repeated backtracking to sustain discussion around a                         partners did not necessarily insist on a structured conversation over
+                                                                                       one image. Instead, they tried to guide the conversation around
+
+
+Table 6: Representative interactions from Sessions 3 and 4, showing prompting questions, image selection processes, and verbal
+exchanges, alongside the level of support provided and the roles of image suggestions in conversational development. Text
+entries (e.g., “People”) indicate selecting from category names or suggested textual concepts in the prototype.
+
+     Participant                    Question, selections, and verbal interactions                                                       Remarks
+                                    Question: What are you looking forward to?
+     P7                             Selection:                                                                                          P7 said verbally that
+     Level of support: R              Food ↓                       Food ↓                                                               he is looking for a
+     Image suggestions’ role:                                                                                                           special bread that his
+     CS                                                                                                                                 mum bakes at home for
+                                                                                                                                        breakfast.
+                                                →                            →
+                                    Interactions:
+                                    Can you find any bread that is kind of similar? Where do you usually eat that food? Can you
+                                    show me your mum’s place? Who do you usually eat with? Do you like to make things with
+                                    her? Do you help him? What else do you want to have for breakfast?
+                                    Question: What is something that you miss?
+     P5                             Selection:                                                                                          P5 had missed roasted
+     Level of support = I                                                                                                               chicken with juice and
+     Image suggestions’ role:       Random↓                                                                                             coffee.
+     IC, CS
+
+                                                →             →             →             →             →           →            →
+
+
+
+                                                →
+                                    Interactions:
+                                    Have a roast with family? What kind of roast? Have juice with roast? At a restaurant or at
+                                    home? Have a dessert with juice? Where? Eat at the café? Do you like baking your own
+                                    cake? What type of coffee? With cream on the top?
+
+
+
+
+                                                                              4462
+
+<a id="pdf-p14"></a>
+### [PDF p.14] DIS ’26, June 13–17, 2026, Singapore, Singapore Alieh Hajizadeh Saffar, Laurianne Sitbon, Sirinthip Roomkham, and Manesha Andradi
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **14** / 18
+
+DIS ’26, June 13–17, 2026, Singapore, Singapore                                       Alieh Hajizadeh Saffar, Laurianne Sitbon, Sirinthip Roomkham, and Manesha Andradi
+
+
+     Participant                      Question, selections, and verbal interactions                                                      Remarks
+                                      Question: What are you looking forward to?
+     P3                               Selection:                                                                                         P3 told her stroy about
+     Level of support: I              Random ↓                                                                                           the garden that makes
+     Image suggestions’ role:                                                                                                            her happy.
+     CS
+
+                                                  →          →            →               →                →          →            →
+
+
+
+                                                  →
+                                      Interactions:
+                                      This butterfly or other ones? Do you see pictures that look like your garden? What else do
+                                      you like to have in your garden? That one or a different type of bug in your garden? Who
+                                      else is in your garden? Have you got stung by a bee? Do you see any fruits or veggies you
+                                      are growing in your garden? Do you grow any mandarins there? You have fresh veggies?
+                                      My goodness, you are so healthy. Have you ever had a picnic in the garden? Do you want to
+                                      sit in bench or grass? What about bees?
+                                      Question: What are you looking forward to?
+     P9                               Selection:                                                                                         P9 was looking for-
+     Level of support: I                                                                                                                 ward to celebrating his
+                                      Random ↓                Fondant cake↓                                    People ↓     Movie ↓
+     Image suggestions’ role:                                                                                                            birthday at a restau-
+     IC, CS                                                                                                                              rant and decorating his
+                                                                                                                                         home.
+                                                →                              →               →
+                                      Restaurant ↓               Fast food ↓       Holiday ↓
+
+
+
+                                                   →
+                                      Interactions:
+                                      A party maybe? Or seeing some friends? Do you like chocolate cake or vanilla cake? Do you
+                                      want to have chocolate chips in it? That looks delicious. Is it your birthday coming? What
+                                      do you plan for that? Do you want to go to a restaurant? Who is coming along? Family or
+                                      friends? What do you want to eat? Do you want to decorate your house?
+                                      Question: What is something that you want to share with us about your dreams?
+     P2                               Selection:                                                                                         P2 loved coffee.
+     Level of support: I                Food ↓                                                  People ↓
+     Image suggestions’ role:
+     IC, CS
+
+                                                  →          →            →
+                                      Interactions:
+                                      What kind of food do you like? Where? In a cafe? In birthday party? at home? Who do you
+                                      have coffee with? Who makes coffee for you?
+
+
+
+the same topic. This change led to support for longer and more                                   process in which intent emerged through engagement, as-
+meaningful interactions by preserving narrative continuity and                                   sociative exploration, and conversational scaffolding. Their
+reducing unnecessary cognitive and interactional load.                                           effectiveness was strongly shaped by the structure of inter-
+                                                                                                 action.
+5    Discussion                                                                                • Goal-directed interactions highlighted the importance of
+This section provides a concise overview of the key insights derived                             semantic, contextual, cultural, and personal relevance in sup-
+from the findings and situates them in relation to the research                                  porting intent clarification through iterative image selection,
+questions:                                                                                       while also revealing how misalignment between textual sug-
+    • Across the study, intent-based image suggestions did not                                   gestions and retrieved images can hinder this process.
+       function as a fixed mechanism for identifying communica-
+       tive intent, but rather as part of an evolving interactional
+
+
+
+
+                                                                               4463
+
+<a id="pdf-p15"></a>
+### [PDF p.15] • Beyond intent clarification, narrative-oriented interactions doing so, intent-based suggestions supported participants in extend-
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **15** / 18
+
+Interactive Intent-Based Image Recommendations for Assistive Communication: Insights from an Iterative User Study     DIS ’26, June 13–17, 2026, Singapore, Singapore
+
+
+     • Beyond intent clarification, narrative-oriented interactions                     doing so, intent-based suggestions supported participants in extend-
+       demonstrated the role of intent-based suggestions in sustain-                    ing meaning, rather than remaining within predefined semantic
+       ing conversation and supporting story development, where                         boundaries.
+       participants relyed more on concrete entities (e.g., objects,                       These findings align with prior work [32] showing that diverse
+       food, animals) grounded in the main context of the selected                      image suggestions, often random or loosely related, can help sus-
+       image, rather than abstract concepts such as place or activity.                  tain interaction by keeping conversations active. However, closer
+     • Flexible, structured conversational prompts acted as sup-                        analysis refines this claim, indicating that suggestions were most
+       portive scaffolds, enabling longer and more meaningful in-                       effective when they were conceptually and contextually close to the
+       teractions by preserving narrative continuity and reducing                       selected image and aligned with participants’ emerging thoughts.
+       cognitive and interactional load.                                                In these cases, suggestions did more than introduce variety; they
+   These insights collectively address the research questions by                        supported coherent storytelling by maintaining continuity while
+explaining how intent emerges through interaction, when sugges-                         enabling progression. This interactional dynamic resembles casual
+tions align with or diverge from communicative goals, and what                          conversation, where speakers do not always know what they in-
+interactional mechanisms support conversations.                                         tend to say in advance, but discover their meaning through ongoing
+                                                                                        engagement.
+5.1     From Intent Clarification to Intent                                                Consequently, assistive communication systems should be de-
+        Emergence in Interaction                                                        signed to support the emergence of intent through interaction by
+                                                                                        enabling associative exploration and conversational progression,
+Our initial goal in designing intent-based image suggestions was
+                                                                                        rather than assuming intent as a predefined target to be identified
+to support intent clarification: to help participants move from an
+                                                                                        or completed.
+initial, potentially ambiguous image selection toward a clearer ex-
+pression of what they wanted to communicate. Implicit in this                           5.2     Cognitive and Interactional Factors
+framing was the assumption that communicative intent exists, at
+least in a partial form, prior to interaction and can be progressively
+                                                                                                Supporting Intent-Based Communication
+uncovered or refined through appropriate system support.                                Our findings indicate that Effective engagement with the prototype
+    However, analysis of participants’ interactions with the system                     relies on participants’ cognitive capacity to form semantic associa-
+(RQ1) challenged this assumption. Across sessions, intent clarifi-                      tions between images and concepts, which emerges only through
+cation rarely followed a linear or goal-driven trajectory. Rather                       interaction. For some participants, interaction revealed an ability
+than beginning with a clearly articulated intent and then select-                       to form relevant associations (e.g., cake–coffee, hamster–turtles),
+ing images to express it, participants often engaged in exploratory                     enabling intent clarification, sustained conversation, and narrative
+and associative interactions in which meaning unfolded through                          building, while for others such associations were more difficult to
+engagement with images, system suggestions, and ongoing con-                            establish. Given this prerequisite, we reflect on which interaction
+versation with a communication partner. Interaction more often                          mechanisms support intent clarification and conversation building
+followed a pattern of “This image interests me and reminds me                           in image-based communication.
+of something else.” than “I want to say X, so I select Y.” For ex-                         Structured prompts and conversation starters for communica-
+ample, selecting a hamster led to associations with turtles; a cake                     tion partners also supported participants when interactions stalled
+prompted coffee; roasted chicken brought up juice. These associa-                       or when they struggled to articulate a goal. Acting as soft scaffolds,
+tive chains played a central role in shaping conversational flow and                    these prompts should suggest possible directions without imposing
+meaning-making over time.                                                               a fixed path or rigid structure. For example, questions like “Do you
+    This shift foregrounds an important distinction between context                     take your dog to the park or play at home?” or “Do you like oranges
+and intent in image-based communication. Context refers to seman-                       cut up like this or blended?” paired with images could open new
+tic groupings that systems can reasonably anticipate in advance. For                    conversational directions. Observations indicate that embedding
+example, associating cake or roasted chicken with food or desserts,                     categorical concepts, such as locations, activities, entities, or occa-
+or linking bees and butterflies to animals or insects. Context-based                    sions, within suggestions may further allow participants to choose
+suggestions can support interaction by helping users remain within                      discussion paths and subtly guide the conversation themselves.
+a broadly relevant semantic space and expand conversation around                           Finally, consistent with Smith et al. (2020) [9], who used sup-
+familiar themes.                                                                        portive roles in AAC interactions, similar facilitative behaviors
+    Intent, however, goes beyond anticipating static contexts. Anal-                    were observed to be enacted naturally by communication part-
+ysis shows that intent operated as a forward-looking, interactional                     ners. These included helping users navigate the interface, revisit
+force, shaping how associations emerged and where conversations                         selections, suggest categories, prompt elaboration, and open new
+moved next. Intent-based suggestions did not merely reflect pre-                        conversational directions. Such mediation was most effective when
+dicted categories; they introduced plausible next steps within the                      system suggestions were not only relevant to the participant but
+interaction. For instance, suggesting coffee alongside cake, flowers                    also interpretable by the partner, allowing them to draw on the
+alongside butterflies in a garden, or honey in relation to bees moved                   suggestions to advance the conversation. In these moments, part-
+the interaction one step beyond the immediately inferred context. In                    ners could scaffold interactions without directing them, supporting
+                                                                                        richer, more coherent communication.
+
+
+
+
+                                                                              4464
+
+<a id="pdf-p16"></a>
+### [PDF p.16] DIS ’26, June 13–17, 2026, Singapore, Singapore Alieh Hajizadeh Saffar, Laurianne Sitbon, Sirinthip Roomkham, and Manesha Andradi
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **16** / 18
+
+DIS ’26, June 13–17, 2026, Singapore, Singapore                           Alieh Hajizadeh Saffar, Laurianne Sitbon, Sirinthip Roomkham, and Manesha Andradi
+
+
+   Overall, successful use of the prototype depends on three inter-         that personalization often relies on substantial configuration ef-
+dependent non-technical factors including participants’ cognitive           fort, including selecting, annotating, and maintaining personalized
+ability, flexible conversational prompts and partner skilled media-         content [8]. This work is typically carried out by families, support
+tion to interpret and scaffold suggestions.                                 workers, or therapists and can become a barrier to sustained use.
+                                                                            While generative models offer opportunities to accelerate this pro-
+5.3     Design Implications for Aligning                                    cess, for example, by incorporating a small number of keywords
+        Intent-Based Suggestions with                                       reflecting frequent interests or routines, questions remain regarding
+        Communicative Goals                                                 who provides this information, how it is curated, and how potential
+                                                                            biases in prompt design and concept prioritization can be mitigated.
+This subsection addresses RQ2: When and why do intent-based
+                                                                               Effective personalization therefore requires participatory and
+suggestions align with or diverge from participants’ communica-
+                                                                            co-design approaches involving the people responsible for con-
+tive goals, and how can concept and image suggestions be im-
+                                                                            figuring and maintaining these systems, as well as sensitivity to
+proved? Findings indicate that the effectiveness of intent-based
+                                                                            how cultural norms, power relations, and prior knowledge shape
+image suggestions depends not only on interface design or retrieval
+                                                                            configuration choices. Future work should explore how generative
+algorithms, but also on broader contextual, cultural, and personal
+                                                                            approaches can enable lightweight, low-burden personalization
+factors influencing how images and concepts are interpreted.
+                                                                            while actively mitigating bias through transparent prompt struc-
+    A key limitation of the prototype was the available image re-
+                                                                            tures, user-controllable preferences, and iterative refinement based
+sources lacked sufficient pop-cultural images, user-aligned inter-
+                                                                            on real-world use. Integrating such mechanisms into existing as-
+ests, and diversity within conceptual categories. These gaps con-
+                                                                            sistive communication workflows without discouraging long-term
+strained the relevance of suggested images and sometimes limited
+                                                                            engagement remains an open design challenge.
+participants’ ability to express nuanced intentions. However, sim-
+ply enriching the database is insufficient: usefulness of suggestions       5.4     Limitations and Future Work
+depends on how well they align with the cultural, situational, and
+visual context of the selected image. Misalignment often occurred           This study was exploratory in nature and was not intended to eval-
+when concepts reflected abstract attributes (e.g., implied actions or       uate changes in participants’ interactions with the prototype. The
+secondary cues) or presupposed entities not present in the image.           number of participants was small and varied across sessions; famil-
+In contrast, concepts grounded in the salient elements and situa-           iarity with the system also varied, as some participants took part
+tional context of the selected image produced more meaningful and           in more sessions than others. Facilitation was not fully standard-
+usable suggestions, highlighting the importance of semantic and             ized, interactions were uncontrolled, and screen sizes varied across
+contextual alignment in concept generation.                                 sessions. However, familiarity developed quickly and did not result
+    Design implications at the concept generation level by LLMs             in noticeable differences in interaction patterns, and variation in
+include prioritizing culturally situated and interest-driven associa-       screen size showed no observable impact on participants’ ability to
+tions that resonate with users’ everyday experiences, with emphasis         engage with images or text.
+on image salient entities and objects rather than abstract actions             The limited number of interactions, combined with the immatu-
+or locations. At the image retrieval level, suggested images should         rity of the system and a culturally constrained image dataset, meant
+remain both visually and contextually aligned with the originally se-       that the study could not assess the real-world impact of the sys-
+lected image, supporting a coherent progression of meaning rather           tem on supporting communication for individuals with intellectual
+than abrupt conceptual shifts. For example, if a user selects an            disabilities. In addition, interpretations of participants’ cognitive
+image of a person sleeping on a beach, a related suggestion for             processes and intent were necessarily observational and could not
+“sleeping” should preserve the same situational context, rather than        replace long-term observation or use. Evaluating the system’s true
+introducing an unrelated image such as a sleeping dog.                      impact would require sustained use, allowing participants to learn
+    To enable exploration without increasing cognitive or interac-          and adapt to the interface over time.
+tional burden, mechanisms for keeping diversity should prioritize              Nevertheless, conducting this exploratory work was necessary
+refreshing or varying images within the same core concepts rather           to develop a prototype suitable for real-life applications, identify
+than regenerating entirely new conceptual directions. For example,          technical and interface improvements, and highlight effective inter-
+when a participant selects an image of an orange, their communica-          action mechanisms based on initial observations of user behavior
+tive goal may involve other fruits such as a banana. If reaching this       and needs.
+concept requires multiple intermediate selections, the interaction             Future work can build on these findings by refining the system
+can become effortful and prone to breakdown. In contrast, present-          through iterative design and incorporating feedback from special-
+ing visually diverse depictions within a shared conceptual space            ists in communication for individuals with cognitive disabilities.
+through a refresh mechanism can reduce the need for repeated                Longer-term studies are needed to examine how sustained use of
+backtracking and allow users to refine meaning through visual               the application shapes communication practices over time, partic-
+comparison—an approach that may be particularly beneficial for              ularly in scenarios involving unfamiliar communication partners.
+users who rely more on visual variation than on textual cues.               Such studies would also enable more systematic analysis through
+    Finally, supporting personalization through user interest pro-          structured coding and, where appropriate, quantitative methods,
+files represents a promising but non-trivial direction for future           providing deeper insight into interaction patterns and the impact
+work. Prior research in AAC and VSD-based systems has shown                 of intent-based suggestions.
+
+
+
+
+                                                                   4465
+
+<a id="pdf-p17"></a>
+### [PDF p.17] Designing for Agency and Interaction in Personalised Disability Systems. In
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **17** / 18
+
+Interactive Intent-Based Image Recommendations for Assistive Communication: Insights from an Iterative User Study                   DIS ’26, June 13–17, 2026, Singapore, Singapore
+
+
+   In addition, future research can explore how intent-based image                             [5] Filip Bircanin, Laurianne Sitbon, Maria Hoogstrate, Ahmed K Abbas, Alieh Ha-
+suggestions can be integrated with more traditional AAC workflows.                                 jizadeh Saffar, and Margot Brereton. 2025. Beyond the Buckets of Support:
+                                                                                                   Designing for Agency and Interaction in Personalised Disability Systems. In
+While the current prototype primarily supports self-expression and                                 Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems.
+meaning-making through associative image exploration, it may                                       1–19.
+                                                                                               [6] Shanqing Cai, Subhashini Venugopalan, Katie Seaver, Xiang Xiao, Katrin
+also serve as an entry point for identifying users’ communicative                                  Tomanek, Sri Jalasutram, Meredith Ringel Morris, Shaun Kane, Ajit Narayanan,
+intent and topics of interest in therapeutic or educational settings.                              Robert L MacDonald, et al. 2023. Using large language models to acceler-
+This could be extended toward supporting sentence construction by                                  ate communication for users with severe motor impairments. arXiv preprint
+                                                                                                   arXiv:2312.01532 (2023).
+linking selected images and inferred context to relevant pictograms                            [7] Rosanna Yuen-Yan Chan, Eri Sato-Shimokawara, Xue Bai, Motohashi Yukiharu,
+or linguistic structures, enabling users to build more explicit mes-                               Sze-Wing Kuo, and Anson Chung. 2019. A context-aware augmentative and al-
+sages. Such integration may also support cognitive and language                                    ternative communication system for school children with intellectual disabilities.
+                                                                                                   IEEE Systems Journal 14, 1 (2019), 208–219.
+development by grounding communication in personally meaning-                                  [8] Shelley E. Chapin, David McNaughton, Janice Light, Ashley McCoy, Jessica
+ful content where practitioners can scaffold expression based on                                   Caron, and David L. Lee. 2022. The effects of AAC video visual scene display
+                                                                                                   technology on the communicative turns of preschoolers with autism spectrum
+users’ emerging intents.                                                                           disorder. Assistive Technology 34, 5 (Sept. 2022), 577–587. doi:10.1080/10400435.
+                                                                                                   2021.1893235 Publisher: Taylor & Francis.
+6    Conclusion                                                                                [9] Dasom Choi, SoHyun Park, Kyungah Lee, Hwajung Hong, and Young-Ho Kim.
+                                                                                                   2025. AACessTalk: Fostering Communication between Minimally Verbal Autistic
+This paper examines how intent-based image suggestions can sup-                                    Children and Parents with Contextual Guidance and Card Recommendation. In
+port communication for adults with intellectual disabilities when                                  Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems.
+                                                                                                   1–25.
+generic images are used as expressive resources. A series of ex-                              [10] Humphrey Curtis, Timothy Neate, and Carlota Vazquez Gonzalez. 2022. State of
+ploratory framing workshops with adults with intellectual disabili-                                the art in AAC: A systematic review and taxonomy. In Proceedings of the 24th
+ties was conducted, in which the analytic framing was iteratively                                  International ACM SIGACCESS Conference on Computers and Accessibility. 1–22.
+                                                                                              [11] J. Danker, S. Dreyfus, I. Strnadová, and M. Pilkinton. 2023. Scoping review
+updated in response to emerging insights from participants’ inter-                                 on communication systems used by adults with severe/profound intellectual
+actions with a prototype that used large language models to predict                                disability for functional communication. Journal of Applied Research in Intellectual
+                                                                                                   Disabilities 36, 5 (2023), 951–965. doi:10.1111/jar.13133
+the communicative intent behind each image selection.                                         [12] Mauricio Fontana de Vargas and Karyn Moffatt. 2021. Automated Generation
+   Our findings show that intent-based image suggestions can sup-                                  of Storytelling Vocabulary from Photographs for use in AAC. In Proceedings of
+port not only intent clarification, but also sustained conversation,                               the 59th Annual Meeting of the Association for Computational Linguistics and the
+                                                                                                   11th International Joint Conference on Natural Language Processing (Volume 1:
+visual storytelling, and collaborative sensemaking with communi-                                   Long Papers), Chengqing Zong, Fei Xia, Wenjie Li, and Roberto Navigli (Eds.).
+cation partners. Rather than prescribing meaning, such systems can                                 Association for Computational Linguistics, Online, 1353–1364. doi:10.18653/v1/
+create space for exploration, allowing participants to progressively                               2021.acl-long.108
+                                                                                              [13] Mauricio Fontana De Vargas, Christina Yu, Howard C Shane, and Karyn Moffatt.
+refine their ideas and construct visual narratives in interaction.                                 2024. Co-designing QuickPic: Automated topic-specific communication boards
+   We further identify key interactional mechanisms and design                                     from photographs for AAC-based language instruction. In Proceedings of the 2024
+                                                                                                   CHI Conference on Human Factors in Computing Systems. 1–16.
+considerations that shape effective engagement, highlighting the                              [14] Mauricio Fontana De Vargas, Christina Yu, Howard C. Shane, and Karyn Moffatt.
+importance of relevance, interpretability, and flexibility in intent-                              2024. Co-Designing QuickPic: Automated Topic-Specific Communication Boards
+based suggestions. This work underscores the need to move beyond                                   from Photographs for AAC-Based Language Instruction. In Proceedings of the
+                                                                                                   CHI Conference on Human Factors in Computing Systems. ACM, Honolulu HI USA,
+context-driven retrieval toward intent-aware visual communica-                                     1–16. doi:10.1145/3613904.3642080
+tion systems that foreground shared understanding, interactional                              [15] Alieh Hajizadeh Saffar, Laurianne Sitbon, and Chris P Beaumont. 2025. Com-
+support, and participant-driven meaning-making.                                                    munication with Individuals with Intellectual Disability Using Generic Images:
+                                                                                                   Exploring Contexts, Requirements, Opportunities, and Challenges. In Proceedings
+                                                                                                   of the Extended Abstracts of the CHI Conference on Human Factors in Computing
+Acknowledgments                                                                                    Systems. 1–7.
+                                                                                              [16] Alieh Hajizadeh Saffar, Laurianne Sitbon, Maria Hoogstrate, Ahmed Abbas,
+We gratefully acknowledge the clients and support workers from                                     Sirinthip Roomkham, and Dimity Miller. 2024. Human and Large Language
+Endeavour Foundation who participated in this study and gener-                                     Model Intent Detection in Image-Based Self-Expression of People with Intel-
+                                                                                                   lectual Disability. In Proceedings of the 2024 Conference on Human Information
+ously contributed their time and perspectives.                                                     Interaction and Retrieval. 199–208.
+                                                                                              [17] Alieh Hajizadeh Saffar, Laurianne Sitbon, Sirinthip Roomkham, Maja Hjuler,
+References                                                                                         and Yik Yu Cheng. 2025. LLM-Guided Image Recommendation for Supporting
+                                                                                                   Intent Understanding in Non-Verbal Communication. In Proceedings of the 37th
+ [1] Seo-Yeong Ahn, Ki-Hyung Hong, Kyungyang Kim, and Heeyeon Lee. 2022. De-
+                                                                                                   Australian Conference on Human-Computer Interaction. 912–919.
+     velopment of a location and situation based augmentative and alternative com-
+                                                                                              [18] Alieh Hajizadehsaffar. 2026. Facilitating Non-Verbal Communication for Peo-
+     munication service. In International Conference on Computers Helping People with
+                                                                                                   ple with Intellectual Disability through Intent Interpretation in Image-Based
+     Special Needs. Springer, 489–495.
+                                                                                                   Interaction. ACM SIGACCESS Accessibility and Computing 140 (2026), 1–1.
+ [2] Salena Babb, Sojung Jung, Ciara Ousley, David McNaughton, and Janice Light.
+                                                                                              [19] Christine Holyfield, Tara O’Neill Zimmerman, Stephen MacNeil, Nicolette Sam-
+     2021. Personalized AAC Intervention to Increase Participation and Communica-
+                                                                                                   marco Caldwell, Parth Patel, Brenna Griffen, Elizabeth Lorah, Eduard Dragut, and
+     tion for a Young Adult with down Syndrome. Topics in Language Disorders 41, 3
+                                                                                                   Slobodan Vucetic. 2024. Preliminary investigation of context-aware AAC with
+     (July 2021), 232–248. doi:10.1097/TLD.00000000
+
+…[truncado en MD; ver RSL/MD/_raw]…
+
+<a id="pdf-p18"></a>
+### [PDF p.18] DIS ’26, June 13–17, 2026, Singapore, Singapore Alieh Hajizadeh Saffar, Laurianne Sitbon, Sirinthip Roomkham, and Manesha Andradi
+- Locator: `R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf` · página **18** / 18
+
+DIS ’26, June 13–17, 2026, Singapore, Singapore                                              Alieh Hajizadeh Saffar, Laurianne Sitbon, Sirinthip Roomkham, and Manesha Andradi
+
+
+     (CVPR). IEEE, Nashville, TN, USA, 12981–12991. doi:10.1109/CVPR46437.2021.                [40] Krista M. Wilkinson, Janice Light, and Kathryn Drager. 2012. Considerations for
+     01279                                                                                          the composition of visual scene displays: Potential contributions of information
+[22] Kaveet Laxmidas, Cory Avra, Christopher Wilcoxen, Michael Wallace, Reed                        from visual and cognitive sciences. doi:10.3109/07434618.2012.704522 ISSN:
+     Spivey, Samantha Ray, Seth Polsley, Puneet Kohli, Julie Thompson, and Tracy                    07434618 Issue: 3 Pages: 137-147 Publication Title: AAC: Augmentative and
+     Hammond. 2021. Commbo: Modernizing augmentative and alternative commu-                         Alternative Communication Volume: 28.
+     nication. International Journal of Human-Computer Studies 145 (2021), 102519.             [41] Cara Wilson, Laurianne Sitbon, Margot Brereton, Daniel Johnson, and Stewart
+[23] Janice Light, Krista M. Wilkinson, Amber Thiessen, David R. Beukelman, and                     Koplick. 2016. ’Put yourself in the picture’: designing for futures with young
+     Susan Koch Fager. 2019. Designing effective AAC displays for individuals with                  adults with intellectual disability. In Proceedings of the 28th Australian Conference
+     developmental or acquired disabilities: State of the science and future research               on Computer-Human Interaction - OzCHI ’16. ACM Press, Launceston, Tasmania,
+     directions. AAC: Augmentative and Alternative Communication 35, 1 (Jan. 2019),                 Australia, 271–281. doi:10.1145/3010915.3010924
+     42–55. doi:10.1080/07434618.2018.1558283 Publisher: Taylor and Francis Ltd.               [42] Xiaohui Xie, Yiqun Liu, Maarten De Rijke, Jiyin He, Min Zhang, and Shaoping Ma.
+[24] Janice Light, Krista M. Wilkinson, Amber Thiessen, David R. Beukelman, and                     2018. Why People Search for Images using Web Search Engines. In Proceedings
+     Susan Koch Fager. 2019. Designing effective AAC displays for individuals with                  of the Eleventh ACM International Conference on Web Search and Data Mining.
+     developmental or acquired disabilities: State of the science and future research               ACM, Marina Del Rey CA USA, 655–663. doi:10.1145/3159652.3159686
+     directions. AAC: Augmentative and Alternative Communication 35, 1 (1 2019),               [43] Yilin Ye, Qian Zhu, Shishi Xiao, Kang Zhang, and Wei Zeng. 2024. The contem-
+     42–55. doi:10.1080/07434618.2018.1558283                                                       porary art of image search: Iterative user intent expansion via vision-language
+[25] Tsung-Yi Lin, Michael Maire, Serge Belongie, James Hays, Pietro Perona, Deva                   model. Proceedings of the ACM on Human-Computer Interaction 8, CSCW1 (2024),
+     Ramanan, Piotr Dollár, and C Lawrence Zitnick. 2014. Microsoft coco: Common                    1–31.
+     objects in context. In Computer vision–ECCV 2014: 13th European conference,
+     zurich, Switzerland, September 6-12, 2014, proceedings, part v 13. Springer, 740–
+     755.
+[26] Mmachi God Sglory Obiorah, Anne Marie Piper, and Michael Horn. 2021. De-
+     signing aacs for people with aphasia dining in restaurants. In Conference on
+     Human Factors in Computing Systems - Proceedings. Association for Computing
+     Machinery. doi:10.1145/3411764.3445280
+[27] Jayr Pereira, Francisco Rodrigues, Jaylton Pereira, Cleber Zanchettin, and Robson
+     Fidalgo. 2024. Enhancing Augmentative and Alternative Communication with
+     Card Prediction and Colourful Semantics. arXiv preprint arXiv:2405.15896 (2024).
+[28] Alec Radford, Jong Wook Kim, Chris Hallacy, Aditya Ramesh, Gabriel Goh,
+     Sandhini Agarwal, Girish Sastry, Amanda Askell, Pamela Mishkin, Jack Clark,
+     et al. 2021. Learning transferable visual models from natural language supervision.
+     In International conference on machine learning. PmLR, 8748–8763.
+[29] Nicholas L. Robertson, Filip Bircanin, and Laurianne Sitbon. 2021. Designing a
+     Pictorial Communication Web Application with People with Intellectual Disabil-
+     ity. ASSETS 2021 - 23rd International ACM SIGACCESS Conference on Computers
+     and Accessibility (Oct. 2021). doi:10.1145/3441852.3476527 ISBN: 9781450383066
+     Publisher: Association for Computing Machinery, Inc.
+[30] Sirinthip Roomkham, Shannon Terris, and Laurianne Sitbon. 2022. Multi-modal
+     Conversational Search for People with Intellectual Disability: An Exploratory
+     Study. In CHI Conference on Human Factors in Computing Systems Extended
+     Abstracts. ACM, New Orleans LA USA, 1–6. doi:10.1145/3491101.3519821
+[31] Laurianne Sitbon, Saminda Sundeepa Balasuriya, and Liam S Percy. 2023. Guiding
+     non-verbal conversation about meal choices with intelligent technologies. In
+     Proceedings of the 35th Australian Computer-Human Interaction Conference. 350–
+     359.
+[32] Laurianne Sitbon, Margot Brereton, and Filip Bircanin. 2024. Reframing search
+     and recommendation as opportunities for communication for people with in-
+     tellectual disability. Human–Computer Interaction 39, 3-4 (July 2024), 206–224.
+     doi:10.1080/07370024.2023.2247394
+[33] Laurianne Sitbon, Maria Hoogstrate, Julie Yule, Stewart Koplick, Filip Bircanin,
+     and Margot Brereton. 2018. A non-clinical approach to describing participants
+     with intellectual disability. In Proceedings of the 30th Australian Conference on
+     Computer-Human Interaction. ACM, Melbourne Australia, 128–132. doi:10.1145/
+     3292147.3292206
+[34] Mohammad Soleymani, Michael Riegler, and Pål Halvorsen. 2017. Multimodal
+     Analysis of Image Search Intent: Intent Recognition in Image Search from User
+     Behavior and Visual Content. In Proceedings of the 2017 ACM on International
+     Conference on Multimedia Retrieval. ACM, Bucharest Romania, 251–259. doi:10.
+     1145/3078971.3078995
+[35] Wei-En Tsai and Yi-Chun Liu. 2023. Aisen-Web-Based Gaze-Tracking Assistive
+     Communication Interface with Word Cards Generated by LLMs. In Adjunct
+     Proceedings of the 36th Annual ACM Symposium on User Interface Software and
+     Technology. 1–3.
+[36] Salahuddin Unar, Xingyuan Wang, Chunpeng Wang, and Yu Wang. 2019. A
+     decisive content based image retrieval approach for feature fusion in visual and
+     textual images. Knowledge-Based Systems 179 (Sept. 2019), 8–20. doi:10.1016/j.
+     knosys.2019.05.001
+[37] Maurício Vargas. 2020. Design and evaluation of a context-adaptive AAC appli-
+     cation for people with aphasia. ACM SIGACCESS Accessibility and Computing
+     123 (2020), 1–1.
+[38] Smrithi Vasudevan, Nishtha Chauhan, Vergin Sarobin, and S. Geetha. 2021. Image-
+     Based Recommendation Engine Using VGG Model. In Advances in Communication
+     and Computational Technology, Gurdeep Singh Hura, Ashutosh Kumar Singh,
+     and Lau Siong Hoe (Eds.). Springer Nature, Singapore, 257–265. doi:10.1007/978-
+     981-15-5341-7_21
+[39] Zheng Wang, Bingzheng Gan, and Wei Shi. 2024. Multimodal Query Suggestion
+     with Multi-Agent Reinforcement Learning from Human Feedback. http://arxiv.
+     org/abs/2402.04867 arXiv:2402.04867 [cs].
+
+
+
+
+                                                                                      4467

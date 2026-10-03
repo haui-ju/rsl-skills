@@ -1,0 +1,1043 @@
+# ISSN: 2331-186X (Online) Journal homepage: www.tandfonline.com/journals/oaed20
+
+> Fuente PDF: `R527-enabling-secure-and-inclusive-education-for-students-with-disabilities-and-ensur.pdf` · técnica **locator index** (página + ancla) + chunks Graphify
+
+## Metadata
+- Stem: `R527-enabling-secure-and-inclusive-education-for-students-with-disabilities-and-ensur`
+- PDF: `R527-enabling-secure-and-inclusive-education-for-students-with-disabilities-and-ensur.pdf`
+- DOI: `10.1080/2331186X.2024.2391620`
+- Pages: `18`
+- Structured_at: `2026-10-03T23:23:19+00:00`
+- Technique: `pdf-page-locators + heading-chunks`
+
+## Locator index (qué hay y en qué página del PDF)
+
+| Kind | Label | PDF page | MD anchor |
+|------|-------|----------|-----------|
+| abstract | Abstract / blurb | 2 | `#abstract` |
+| concept | insights were gathered via interviews and focus groups | 2 | `#concept-insights-were-gathered-via-interviews-and-focus-groups` |
+| concept | revealing that while students Quantitative Data | 2 | `#concept-revealing-that-while-students-quantitative-data` |
+| concept | Highly appreciate the flexibility of online learning | 2 | `#concept-highly-appreciate-the-flexibility-of-online-learning` |
+| concept | in particular | 2 | `#concept-in-particular` |
+| concept | our research integrates (HSBCS) system | 2 | `#concept-our-research-integrates-hsbcs-system` |
+| concept | Specifically | 2 | `#concept-specifically` |
+| concept | is proposed | ? | `#concept-is-proposed` |
+| concept | R527 | ? | `#concept-r527` |
+| concept | enabling | ? | `#concept-enabling` |
+| concept | secure | ? | `#concept-secure` |
+| concept | inclusive | ? | `#concept-inclusive` |
+| concept | education | ? | `#concept-education` |
+| concept | students | ? | `#concept-students` |
+| concept | with | ? | `#concept-with` |
+| concept | disabilities | 1 | `#concept-disabilities` |
+| concept | ensur | ? | `#concept-ensur` |
+| finding | ARTICLE HISTORY The COVID-19 pandemic precipitated an abrupt transition to online learning… | 2 | `#finding-article-history-the-covid-19-pandemic-pr` |
+| finding | This study examines the experiences of 62 Revised 28 July 2024 such students in the new ed… | 2 | `#finding-this-study-examines-the-experiences-of-6` |
+| finding | Quantitative data were collected through surveys and questionnaires to | 2 | `#finding-quantitative-data-were-collected-through` |
+| page | p.1: Cogent Education | 1 | `#pdf-p1` |
+| page | p.2: COGENT EDUCATION | 2 | `#pdf-p2` |
+| page | p.3: 2 B. M. ALSULAMI ET AL. | 3 | `#pdf-p3` |
+| page | p.4: COGENT EDUCATION 3 | 4 | `#pdf-p4` |
+| page | p.5: 4 B. M. ALSULAMI ET AL. | 5 | `#pdf-p5` |
+| page | p.6: COGENT EDUCATION 5 | 6 | `#pdf-p6` |
+| page | p.7: 6 B. M. ALSULAMI ET AL. | 7 | `#pdf-p7` |
+| page | p.8: COGENT EDUCATION 7 | 8 | `#pdf-p8` |
+| page | p.9: 8 B. M. ALSULAMI ET AL. | 9 | `#pdf-p9` |
+| page | p.10: COGENT EDUCATION 9 | 10 | `#pdf-p10` |
+| page | p.11: 10 B. M. ALSULAMI ET AL. | 11 | `#pdf-p11` |
+| page | p.12: COGENT EDUCATION 11 | 12 | `#pdf-p12` |
+| page | p.13: 12 B. M. ALSULAMI ET AL. | 13 | `#pdf-p13` |
+| page | p.14: COGENT EDUCATION 13 | 14 | `#pdf-p14` |
+| page | p.15: 14 B. M. ALSULAMI ET AL. | 15 | `#pdf-p15` |
+| page | p.16: COGENT EDUCATION 15 | 16 | `#pdf-p16` |
+| page | p.17: 16 B. M. ALSULAMI ET AL. | 17 | `#pdf-p17` |
+| page | p.18: COGENT EDUCATION 17 | 18 | `#pdf-p18` |
+
+## Abstract
+<a id="abstract"></a>
+
+ARTICLE HISTORY The COVID-19 pandemic precipitated an abrupt transition to online learning, impact- Received 25 October 2023 ing students with disabilities uniquely. This study examines the experiences of 62 Revised 28 July 2024 such students in the new educational paradigm, employing a mixed-methods Accepted 2 August 2024 approach. Quantitative data were collected through surveys and questionnaires to
+
+## Keywords
+
+- insights were gathered via interviews and focus groups
+- revealing that while students Quantitative Data
+- Highly appreciate the flexibility of online learning
+- in particular
+- our research integrates (HSBCS) system
+- Specifically
+- is proposed
+
+## Concept index (graph hooks + página)
+
+<a id="concept-insights-were-gathered-via-interviews-and-focus-groups"></a>
+### [PDF p.2] Concept: insights were gathered via interviews and focus groups
+- Locator: `R527-enabling-secure-and-inclusive-education-for-students-with-disabilities-and-ensur.pdf` · página **2**
+
+<a id="concept-revealing-that-while-students-quantitative-data"></a>
+### [PDF p.2] Concept: revealing that while students Quantitative Data
+- Locator: `R527-enabling-secure-and-inclusive-education-for-students-with-disabilities-and-ensur.pdf` · página **2**
+
+<a id="concept-highly-appreciate-the-flexibility-of-online-learning"></a>
+### [PDF p.2] Concept: Highly appreciate the flexibility of online learning
+- Locator: `R527-enabling-secure-and-inclusive-education-for-students-with-disabilities-and-ensur.pdf` · página **2**
+
+<a id="concept-in-particular"></a>
+### [PDF p.2] Concept: in particular
+- Locator: `R527-enabling-secure-and-inclusive-education-for-students-with-disabilities-and-ensur.pdf` · página **2**
+
+<a id="concept-our-research-integrates-hsbcs-system"></a>
+### [PDF p.2] Concept: our research integrates (HSBCS) system
+- Locator: `R527-enabling-secure-and-inclusive-education-for-students-with-disabilities-and-ensur.pdf` · página **2**
+
+<a id="concept-specifically"></a>
+### [PDF p.2] Concept: Specifically
+- Locator: `R527-enabling-secure-and-inclusive-education-for-students-with-disabilities-and-ensur.pdf` · página **2**
+
+<a id="concept-is-proposed"></a>
+### [PDF p.?] Concept: is proposed
+- Locator: `R527-enabling-secure-and-inclusive-education-for-students-with-disabilities-and-ensur.pdf` · página **?**
+
+<a id="concept-r527"></a>
+### [PDF p.?] Concept: R527
+- Locator: `R527-enabling-secure-and-inclusive-education-for-students-with-disabilities-and-ensur.pdf` · página **?**
+
+<a id="concept-enabling"></a>
+### [PDF p.?] Concept: enabling
+- Locator: `R527-enabling-secure-and-inclusive-education-for-students-with-disabilities-and-ensur.pdf` · página **?**
+
+<a id="concept-secure"></a>
+### [PDF p.?] Concept: secure
+- Locator: `R527-enabling-secure-and-inclusive-education-for-students-with-disabilities-and-ensur.pdf` · página **?**
+
+<a id="concept-inclusive"></a>
+### [PDF p.?] Concept: inclusive
+- Locator: `R527-enabling-secure-and-inclusive-education-for-students-with-disabilities-and-ensur.pdf` · página **?**
+
+<a id="concept-education"></a>
+### [PDF p.?] Concept: education
+- Locator: `R527-enabling-secure-and-inclusive-education-for-students-with-disabilities-and-ensur.pdf` · página **?**
+
+<a id="concept-students"></a>
+### [PDF p.?] Concept: students
+- Locator: `R527-enabling-secure-and-inclusive-education-for-students-with-disabilities-and-ensur.pdf` · página **?**
+
+<a id="concept-with"></a>
+### [PDF p.?] Concept: with
+- Locator: `R527-enabling-secure-and-inclusive-education-for-students-with-disabilities-and-ensur.pdf` · página **?**
+
+<a id="concept-disabilities"></a>
+### [PDF p.1] Concept: disabilities
+- Locator: `R527-enabling-secure-and-inclusive-education-for-students-with-disabilities-and-ensur.pdf` · página **1**
+
+<a id="concept-ensur"></a>
+### [PDF p.?] Concept: ensur
+- Locator: `R527-enabling-secure-and-inclusive-education-for-students-with-disabilities-and-ensur.pdf` · página **?**
+
+
+## Findings index (graph hooks + página)
+
+<a id="finding-article-history-the-covid-19-pandemic-pr"></a>
+### [PDF p.2] Finding: ARTICLE HISTORY The COVID-19 pandemic precipitated an abrupt transition to online learning, impact- Received 25 October 2023 ing students with disabilities uniquely.
+- Locator: `R527-enabling-secure-and-inclusive-education-for-students-with-disabilities-and-ensur.pdf` · página **2**
+
+<a id="finding-this-study-examines-the-experiences-of-6"></a>
+### [PDF p.2] Finding: This study examines the experiences of 62 Revised 28 July 2024 such students in the new educational paradigm, employing a mixed-methods Accepted 2 August 2024 approach.
+- Locator: `R527-enabling-secure-and-inclusive-education-for-students-with-disabilities-and-ensur.pdf` · página **2**
+
+<a id="finding-quantitative-data-were-collected-through"></a>
+### [PDF p.2] Finding: Quantitative data were collected through surveys and questionnaires to
+- Locator: `R527-enabling-secure-and-inclusive-education-for-students-with-disabilities-and-ensur.pdf` · página **2**
+
+
+## Relevance hooks
+### Theme relevance: software engineering and accessibility
+### Theme relevance: cognitive accessibility and neurodiversity
+### Theme relevance: evaluation metrics and WCAG
+
+## Sections (detected in PDF)
+
+_(no numbered sections auto-detected)_
+
+
+## Page chunks (texto por página del PDF)
+
+_Cada heading es un nodo Graphify. El label incluye la página para volver al PDF sin releer todo._
+
+<a id="pdf-p1"></a>
+### [PDF p.1] Cogent Education
+- Locator: `R527-enabling-secure-and-inclusive-education-for-students-with-disabilities-and-ensur.pdf` · página **1** / 18
+
+Cogent Education
+
+
+
+
+      ISSN: 2331-186X (Online) Journal homepage: www.tandfonline.com/journals/oaed20
+
+
+
+
+Enabling secure and inclusive education for
+students with disabilities and ensuring data
+through machine learning
+
+Bader Muteb Alsulami, Abdullah Baihan & Ahed Abugabah
+
+To cite this article: Bader Muteb Alsulami, Abdullah Baihan & Ahed Abugabah (2024) Enabling
+secure and inclusive education for students with disabilities and ensuring data through
+machine learning, Cogent Education, 11:1, 2391620, DOI: 10.1080/2331186X.2024.2391620
+
+To link to this article: https://doi.org/10.1080/2331186X.2024.2391620
+
+
+
+
+       © 2024 The Author(s). Published by Informa
+       UK Limited, trading as Taylor & Francis
+       Group
+
+       Published online: 23 Sep 2024.
+
+
+
+       Submit your article to this journal
+
+
+
+       Article views: 1492
+
+
+
+       View related articles
+
+
+
+       View Crossmark data
+
+
+
+
+                      Full Terms & Conditions of access and use can be found at
+            https://www.tandfonline.com/action/journalInformation?journalCode=oaed20
+
+<a id="pdf-p2"></a>
+### [PDF p.2] COGENT EDUCATION
+- Locator: `R527-enabling-secure-and-inclusive-education-for-students-with-disabilities-and-ensur.pdf` · página **2** / 18
+
+COGENT EDUCATION
+2024, VOL. 11, NO. 1, 2391620
+https://doi.org/10.1080/2331186X.2024.2391620
+
+
+INFORMATION & COMMUNICATIONS TECHNOLOGY IN EDUCATION | RESEARCH
+ARTICLE
+
+Enabling secure and inclusive education for students with disabilities
+and ensuring data through machine learning
+Bader Muteb Alsulamia                   , Abdullah Baihanb and Ahed Abugabahc
+a
+ College of Education, Majmaah University, Al Majma’ah, Saudi Arabia; bComputer Science Department, Community
+College, King Saud University, Riyadh, Saudi Arabia; cCollege of Technological Innovation, Zayed University, Abu Dhabi
+Campus, UAE
+
+
+    ABSTRACT                                                                                                                  ARTICLE HISTORY
+    The COVID-19 pandemic precipitated an abrupt transition to online learning, impact-                                       Received 25 October 2023
+    ing students with disabilities uniquely. This study examines the experiences of 62                                        Revised 28 July 2024
+    such students in the new educational paradigm, employing a mixed-methods                                                  Accepted 2 August 2024
+    approach. Quantitative data were collected through surveys and questionnaires to
+                                                                                                                              KEYWORDS
+    assess privacy and security concerns arising from online learning tools. Qualitative                                      Online learning;
+    insights were gathered via interviews and focus groups, revealing that while students                                     Quantitative Data; Highly
+    appreciate the flexibility of online learning, they express a critical need for enhanced                                  Secure Blockchain-Based
+    guidance and support. Neurodiverse students, in particular, emphasized the necessity                                      Compressive Sensing
+    of a secure online environment. Addressing these challenges, our research integrates                                      (HSBCS) system;
+    blockchain and machine learning technologies to enhance biometric authentication.                                         Authentication Methods.;
+    Specifically, the Highly Secure Blockchain-Based Compressive Sensing (HSBCS) system                                       personal records security;
+    is proposed, ensuring data integrity and improving accessibility for Personal Records.                                    emerging technologies in
+    Preliminary testing of the HSBCS system showed promising results, with an average                                         education
+    accuracy rate of 95% in biometric authentication among visually impaired students.                                        SUBJECTS
+    Moreover, participants reported a 30% increase in perceived security and ease of                                          Algorithms & Complexity;
+    access to their Personal Records compared to traditional authentication methods.                                          Artificial Intelligence;
+    These findings underscore the potential of integrating advanced technologies to meet                                      Computer Engineering;
+    the unique educational needs of students with disabilities while enhancing data secur-                                    Computing & IT Security
+    ity and accessibility in online learning environments.
+
+
+
+
+1. Introduction
+The COVID-19 pandemic initiated universal transformation into online learning for educational institu-
+tions, thereby offering both opportunities and challenges to those schools around the globe. This transi-
+tion is especially impactful for students with disabilities, who need specialized support and
+accommodations (Alamri & Tyler-Wood, 2017) to navigate the higher education landscape. Identifying
+their distinct needs in these digital learning spaces and designing tools to support them will be essential
+if education is to truly become inclusive.This paper analyses the experiences of 62 students with disabil-
+ities in this unique time period, exploring their use of digital learning tools and what this means for priv-
+acy, security and educational support (Basham et al., 2015). Our study will use a mixed-methods design,
+including quantitative surveys and qualitative interviews/focus groups in order to understand the
+nuanced experiences that students with disabilities have when it comes to online learning.Considering
+the challenges presented above, our research advocates for an incorporation of cutting-edge technology
+in addressing them using machine learning and blockchain to design Highly Secure Blockchain-Based
+Compressive Sensing (HSBCS) system (Zhang et al., 2020). Personal Records are maintained by students
+with disabilities, ensuring the strength of biometric protection over access and authentication circuits as
+
+CONTACT Bader Muteb Alsulami             b.alsulami@mu.edu.sa         College of Education, Majmaah University, Al Majma’ah, Saudi Arabia
+ß 2024 The Author(s). Published by Informa UK Limited, trading as Taylor & Francis Group
+This is an Open Access article distributed under the terms of the Creative Commons Attribution License (http://creativecommons.org/licenses/by/4.0/), which
+permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited. The terms on which this article has been
+published allow the posting of the Accepted Manuscript in a repository by the author(s) or with their consent.
+
+<a id="pdf-p3"></a>
+### [PDF p.3] 2 B. M. ALSULAMI ET AL.
+- Locator: `R527-enabling-secure-and-inclusive-education-for-students-with-disabilities-and-ensur.pdf` · página **3** / 18
+
+2      B. M. ALSULAMI ET AL.
+
+
+
+
+Figure 1. Enabling secure and inclusive education for students with disabilities.
+
+
+well. Initial tests using the HSBCS system (Porter et al., 2021) yielded good results, with significant
+improvements in data protection and user access.The purpose of this study is to bridge knowledge
+derived from educational research and technology innovation, in order to provide a conceptual solution
+that will contribute perspectives on improving the online learning experience for students with disabil-
+ities. It stresses the need for guiding dynamic technologies to nurture safer and accessible educational
+dynamics, (McMaughan et al., 2021) promoting equative education across students (Figure 1).
+    To tackle this problem, a new data security solution is introduced by proposing Highly Secure
+Blockchain-Based Compressive Sensing (HSBCS) (Morando-Rhim & Ekin, 2021) system that provides
+enhanced veracity of the collected personal records. Our research not only adds to the burgeoning con-
+versation within Digital Accessibility, but also provides practical examples of technology intervention
+being utilised both in reaching those whose Higher Education Institutions are yet to fully incorporate
+digital resources into their special needs support packages so that they do not fall behind due simply
+because COVID19 has shifted everything online.
+    The organization of paper is as follows; section 2 includes related work; section 3 includes design of
+proposed work; section 4 includes experimental results and analysis; section 5 includes conclusion and
+future work.
+
+
+2. Related work
+The work of Bakia et al. (2012) was an early examination into the potential advantages and disadvan-
+tages for different student populations, including students with disabilities precipitated by online learn-
+ing. In the increase of online learning during the pandemic, Denisova et al. (2020) highlighted the
+
+<a id="pdf-p4"></a>
+### [PDF p.4] COGENT EDUCATION 3
+- Locator: `R527-enabling-secure-and-inclusive-education-for-students-with-disabilities-and-ensur.pdf` · página **4** / 18
+
+COGENT EDUCATION      3
+
+
+
+different types of issues faced by students and learners with disabilities, including not only accessibility
+concerns but also support mechanisms inadequacy as well — all indicative of a call for tailored distance
+learning interventions (Kent, 2016); in an extensive study on access and barriers to online education for
+people with disabilities identified systemic as well as technical challenges that make equitable assistive
+technology utilization not perfect. Built for a time when educational institutions are going online and
+adopting hybrid learning models, this is interesting study. Kotera et al. (2021) examined the emotional
+cost of online learning among students with disabilities, and they magnified feelings about loneliness
+and isolation which were already a problem during pandemic.
+   Purwati et al. (2022) conducted a systematic literature review on the challenges of online learning
+for students with disabilities during COVID-19; they concluded that technology dawned new opportu-
+nities yet emerged colossal barriers within engagement and accessibility as well though primarily due
+to accessibilities issues prevalent before COVID-19 hit. Tomaino et al. (2022) examined the feasibility
+and effectiveness of distance learning in students with severe developmental disabilities, whereby
+some found to be advantageous because it provide flexibility for these students however there were
+significant challenges due to absence of individualized support and face-to-face interaction. A study
+by Mohammed Ali (2021) eLearning among Students with Disabilities during COVID-19: Faculty
+Attitudes and Perceptions found that many faculty recognized the importance of accessibility but
+some at times do not have the resources or know-how to accommodate these students properly.
+Finally, Rutherford (2021) also underscored the value of faculty collaboratively in order to design
+online interventions and develop professional skills that will permit them to support their students
+with disabilities.
+   Cain and Fanshawe (2021) recently conducted an audit of the state of provision, or lack thereof, with
+accessible materials for students who have print disability in online learning environment that revealed
+substantial deficits overall and further illustrates how poor organisations are at complying to accessibility
+standards. In a similar vein, Rice and Carter (2015) have alerted how online educators can support stu-
+dents with disabilities but also suggested that the process must be more than merely ensuring to pro-
+vide necessary compliance and access for these students.
+   Recent work such as Patel (2020) and Grimes et al. (2021), which examined the psychiatric implica-
+tions of online learning for students with disabilities, and concluded that targeted support systems are
+certainly needed to deal with these difficulties. Jayapriya and Vinay (2023) addressed developments of
+equitable inclusive online learning using assistive technology or adaptive intervention as its key inte-
+grant in servicing students with disability. Gin et al. (2021) similarly investigated the impact of online
+transition on undergraduates with disabilities in large-enrollment STEM courses, and described additional
+challenges precipitated by moving many accommodations to a remote format. Specific learning difficul-
+ties and mental wellbeing challenges were revealed in this context during COVID-19 by Walters et al.
+(2022) among secondary school students perceptions of online teaching. Repetto et al. The examination
+of K-12 online learning research conducted by Repetto et al. (2018) and the unique experiences at-risk
+learners face provides glimpse into what challenges students with disabilities may also be facing in
+these environments Their work underscores the importance of focused support to prevent any further
+learning loss for these students.
+     Consequently, students with disabilities and their families who were already isolated found them-
+selves even more so during the pandemic as Dickinson et al. (2023) noted in emphasizing social sup-
+ports for education. The research points the need for full support systems to secure online learning
+success of this type of students
+   Case study of a student with disabilities in online virtual classes (Svalina and Ivic, 2020) As Sakarneh
+(2021) also reported about COVID-19 and lockdown affect in her study from families of special education
+care students, once more it highlights the high need for a supportability between online learning.
+Niazov et al. (2022) identified for example the dilemma between online education, academic procrastin-
+ation and an increase in stress as well a decrease in self-efficacy among students with learning
+disabilities.
+   Connell et al. Charting the course for engaging in online learning — Tools or Toys: Justifying One-To-
+One With Learner Outcomes Connell et al. (2017) discusses matching educational activities to outcomes
+of students with disabilities in an online environment concluding that need exists greater data
+
+<a id="pdf-p5"></a>
+### [PDF p.5] 4 B. M. ALSULAMI ET AL.
+- Locator: `R527-enabling-secure-and-inclusive-education-for-students-with-disabilities-and-ensur.pdf` · página **5** / 18
+
+4     B. M. ALSULAMI ET AL.
+
+
+
+integration and longitudinal tracking system. In a recent review of the assistive technologies provided to
+college students and faculty, Kowalewski and Ariza (2022) observed that although these have many
+potential benefits for supporting individuals with disabilities through vocational training or university
+studies, they too are not without restrictions. Paramasivam et al. During the COVID-19 pandemic,
+Paramasivam et al. (2022) found accessibility problems in online learning among disabled students; lim-
+ited peer engagement and more barrier-free teaching practices were seen as a few issues raised.
+    Aljedaani et al. (2023) in a literature review on the impact of online learning during COVID-19,
+Heward et al. (2023) [33] called for targeted approaches to assist deaf and hearing-impaired stu-
+dents. Khumalo et al. (2020) stated the difficulties experienced by disabled students in light of
+online work during lockdown, arguing with adaptive and inclusive teaching: Shrestha et al. (2022)
+propose an approach for Secure and Accessible Learning to Improve Students with Disabilities where
+security of authentication and delivery are integrated in accessible learning materials. Recently,
+Dianito et al. (2021) studied the lived experiences of Filipino students with disabilities in the
+Philippines during online learning focusing on their challenges and aspirations as future recommen-
+dations for policy development.
+    Kohli et al. A study by “INSERT NAME” Kohli et al. (2021) applied the ICA to examine student learning
+more generally during a time of not-in-person-education and found large disparities for students with
+disabilities. Bendeck (2022) studied learning experiences and needed accommodations of students with
+disabilities during COVID-19, arguing for the necessity to adopt “flexible” approaches in teaching.
+    Devi (2023) investigated challenges and opportunities provided by online education in higher-
+education for students with disabilities, which was a solid contribution to the body of knowledge on
+accessibility and inclusion.
+    Rutherford (2021), on the other hand, in a study that emphasized the requirement of continued pro-
+fessional development and resources to involve students with disabilities in online learning environment
+highlighted Collaborative faculty support as crucial.The COVID-19 pandemic has required a wide and
+rapid transition to online learning, which is revealing substantial problems for students with disabilities.
+Although online learning offers a flexible and customized form of education, it inherently erects
+obstacles that disproportionally impact students with disabilities. Such challenges include poor accessi-
+bility features, non-personalized support and ambiguities regarding privacy data security especially to
+those neurodiverse students.
+    The unique needs of these students are largely unmet by existing online learning platforms, creating
+feelings of exclusion and vulnerability — sometimes risking the creation a less effective overall course.
+Add in the fact that there are no stable, functional systems for a wide range of students to easily keep
+track of their personal information and disabilities — both exacerbated issues (and) leave disabled stu-
+dents particularly behind in transitioning from physical schools to digital learning options.
+    This study adds to the dialogue around inclusive education and lays emphasis on the necessity of
+safe online environments in which persons with disabilities can be educated. In short, there are no gas
+chambers to operate on this scale and reducing costs cannot happen instantly … but our analysis did
+reveal some important considerations: contributions of the workThis study examines issues that students
+with disabilities face when studying in online learning environments, focusing on privacy/security and
+accessibility dimensions by adopting a mixed-method approach to systematically identify the specific
+challenges.
+    This study furnishes initial empirical evidences of the effectiveness with which HSBCS system had
+been operating, as it achieves 95 % accuracy in biometric authentication for visually impaired students
+without providing any increase and a raise by thirty percentage on perceived security & usability rating
+instead of traditional method (Personal Record) access.On the basis of these findings, an overarching
+framework is formulated to provide secure and inclusive eLearning for students with disabilities.
+    By outlining a framework of practical guidelines for those in higher education, policy organizations
+and EdTech companies to support students with disabilities when it comes to digital learning.These con-
+tributions not only solve the problems currently caused by a pandemic but also support long-term
+frameworks for extending inclusivity and security to students with disabilities in online education
+solutions.
+
+<a id="pdf-p6"></a>
+### [PDF p.6] COGENT EDUCATION 5
+- Locator: `R527-enabling-secure-and-inclusive-education-for-students-with-disabilities-and-ensur.pdf` · página **6** / 18
+
+COGENT EDUCATION      5
+
+
+
+3. Proposed work
+This study aims to provide a stable and safe online educational system, which is designed explicitly for
+differently-abled students. In the present work, we proposed a novel autonomous system called Highly
+Secure Blockchain-Based Compressive Sensing (HSBCS), which integrates several cutting-edge technolo-
+gies to improve both data privacy and availability in educational environments.
+   The proposed work is organized around the following main parts: They open their study by evaluat-
+ing many of the challenges unique to this segment and specific to learning environments which have
+shifted online. This means scrutinizing the functionality, and user access of current online platforms;
+finding grey areas in support structures, assessing measures against security threats as well privacy risks
+related to personal data management.
+
+
+3.1. Key generation using feature extraction model
+
+                                              Xfeatures ¼ f ðEÞ                                         (1)
+Here, E represents educational content or student interaction data, and f is a feature extraction function
+that might use techniques like PCA (Principal Component Analysis) for dimensionality reduction to help
+identify key features that cater to students with disabilities.
+                                              fðxÞ ¼ W  x þ b                                          (2)
+  Where W represents the weights and b the bias in the feature extraction layer. Dimensionality
+Reduction (PCA):
+                                                 Y ¼XV                                                 (3)
+V is the matrix of eigenvectors for data matrix X, reducing dimensions while preserving variance.
+Sigmoid Function for Probability Estimation:
+                                                            1
+                                              rð x Þ ¼                                                  (4)
+                                                         1 þ e−x
+
+
+3.2. Personalized learning algorithm
+                                                              
+                                             Pðu, iÞ ¼ r uT Wi                                          (5)
+In this equation, Pðu, iÞ is the probability that user u will benefit from educational resource i, Wi
+represents the parameters of the machine learning model associated with resource i, and r is a
+sigmoid function that maps the user-resource affinity to a probability. Cost Function for Logistic
+Regression:
+                                     m h                                              i
+                                  1X
+                       J ðh Þ ¼ −        yðiÞ log hh ðxðiÞ Þ þ 1 − yðiÞ log 1 − hh ðxðiÞ Þ         (6)
+                                  m i¼1
+
+  Gradient Descent Update Rule:
+                                             h :¼ h − arh JðhÞ                                          (7)
+a is the learning rate. Entropy for Information Gain in Decision Trees:
+                                                    X
+                                           HðXÞ ¼ −     pi log2 ðpi Þ                                   (8)
+                                                         i
+
+  Gini Impurity for Decision Trees:
+                                                             X
+                                                             k
+                                              G¼1−                 p2i                                  (9)
+                                                             i¼1
+
+<a id="pdf-p7"></a>
+### [PDF p.7] 6 B. M. ALSULAMI ET AL.
+- Locator: `R527-enabling-secure-and-inclusive-education-for-students-with-disabilities-and-ensur.pdf` · página **7** / 18
+
+6      B. M. ALSULAMI ET AL.
+
+
+
+3.3. Privacy-preserving data aggregation
+
+                                                        X
+                                                        n
+                                                   C¼         Eðdatai Þ                                             (10)
+                                                        i¼1
+
+Systems with an approach-based architecture are able to quickly evaluate and process access con-
+trols. This strategy may not be suitable for many IoT scenarios, because a lot of applications which
+require resource allocation over multiple nodes. In many cases, token-based authorization systems
+store the digital tokens as proof of identity for clients or devices. These tokens can later be distrib-
+uted in order to gain access privileges for protected resources, or the ability to carry out an other-
+wise authorized task. Reference tokens are their own structure, with different authorization flows,
+used in multiple protocols. Systems and protocols have their own authorization processes to gener-
+ate tokens; they may apply different strategies. Client applications on the web, desktop and mobile
+devices may access assets securely using OAuth to HTTP server with owner’s permission. If a prop-
+erty owner asks, you can show the person your authorization token. Access to photos in Figure 2 is
+only possible using tokens.
+   User Profiling Update (Neural Networks):
+                                         \
+                                          y ¼ rðW2  rðW1  x þ b1 Þ þ b2 Þ                                         (11)
+
+    Adaptive Learning Rate:
+                                                                g0
+                                                      gt ¼                                                          (12)
+                                                              1 þ bt
+
+    Adaptively changes the learning rate over time. K-Means Clustering for Grouping Similar Learners:
+                                                    1 X
+                                              lk ¼            xi                                      (13)
+                                                   jSk j x 2S
+                                                                i   k
+
+
+    Where lk is the centroid for cluster k: Support Vector Machine Margin:
+                                                 yi ðW  xi þ bÞ  1, 8i                                            (14)
+
+   At any rate, until the time, it would look like the improved two-fold scanty model. In addition, as a
+result of the need to reduce the cost and the requirement for memory, we divide the first image y using
+BCS into open spots of m n, 1 n M so that we will likely process them and memory using the BSC: A2.
+Since, as indicated by the MH forecast procedure, reclamation starts with the initial image. At any rate,
+where n is an integer and Y2 is the constant size, yint must be partitioned into B patches covered n in
+size. hereinafter such are signified as yn, since there are a lot of residues having a diminished density,
+and we use the reweighting strategy: the standardizing factor is denoted by c1 and c2, comparing esti-
+mate is x, reweighted and reorganized many times over the estimations of Z1 and Z2 are u, straight mix
+of similar patches is G, and the components of the grid also on the exchange: the measure of size K
+R2 is an estimation.
+
+
+
+
+Figure 2. Secure and inclusive education system for students with disabilities using machine learning for data security.
+
+<a id="pdf-p8"></a>
+### [PDF p.8] COGENT EDUCATION 7
+- Locator: `R527-enabling-secure-and-inclusive-education-for-students-with-disabilities-and-ensur.pdf` · página **8** / 18
+
+COGENT EDUCATION       7
+
+
+
+
+Figure 3. Working of Encrypted image with the token based access.
+
+
+   Figure 3 shows how tokens are used to get access to images.
+   Fig 4: Blocks perform compressive sensing. Currently, the focus is on finding fix yn near JJ search
+window to examine patches Out of the patches having pk, B¼pk156 and I 1,I <5000 which were
+selected as good options with reference to similarity.Based on the prior analysis, below we reintroduced
+with additional details (reference to Figure 5) the procedures necessary for a compressed sensing
+focused image reconstruction. A wavelet parcel allows deconstructing the distinct signal of a MRI scan.
+Sparseness and Disjointness: Two of the Most Vital Prerequisites in Predicting Whether Recovery is
+Possible Find the best wavelet packet basis — we want to use all low-frequency coefficients. This way,
+utilizing a fine-scale coefficient which estimates all high recurrence coefficients sequentially in line based
+on the wavelet bundle is not possible and along these lines picking an acceptable irregular estimate lat-
+tice. If we apply the wavelet bundle forward transform and then follow this by a wavelet bundle inverse
+change, it will return all low and high frequency coefficients to their original signs.
+   Compressive sensing with blocks is seen in Figure 4. The shuffling technique used in the proposed
+HSBCS system is shown to improve data security and privacy during sensitive information transmission
+and storage, as depicted by Figure 5.
+   To make it more difficult for unauthorised parties to read or alter the data, especially if the sequenc-
+ing matters in your inputs, there is a shuffling method that you can call. In this procedure; data ele-
+ments (such as biometric identmarkers or personal records) are split into pieces of information. After
+that, these segments are intermixed using a predefined algorithm such that you cannot recognize the
+original sequence any longer. The key is a cryptographic private key that will reconstitute back the ori-
+ginal data in it’s decode order only to users with this specific authorization.
+   Shuffling done in such a way as to prevent any straight attack like Pattern recognition or Brute-force
+decryption so that an extra layer of security is added on the used HSBCS system. Even if shuffled data is
+also accessed, reconstructing the original sequence without a key becomes computationally infeasible.
+This is especially vital when it comes to safeguarding the privacy of students with disabilities, as their
+access can be predicated on biometric information protected by FERPA and controlled by federal
+regulations.
+   The HSBCS ensures to maintain data integrity and confidentiality from the time when it is first entered as an
+input, up until storage, retrieval. The system works by integrating shuffling into its process flow so that personal
+user data gets shuffle at any given point in its lifecycle. This method of storing information is not only protects
+the data, but also builds a sense of trust among online students specifically in particular from individuals with
+disabilities who are more reliant on personal security.
+
+<a id="pdf-p9"></a>
+### [PDF p.9] 8 B. M. ALSULAMI ET AL.
+- Locator: `R527-enabling-secure-and-inclusive-education-for-students-with-disabilities-and-ensur.pdf` · página **9** / 18
+
+8     B. M. ALSULAMI ET AL.
+
+
+
+
+Figure 4. Flowchart of sample testing image.
+
+
+
+
+Figure 5. Shuffling method.
+
+
+4. Results and discussion
+The HSBCS system is deployed in user testing, involving students with disabilities as a representative
+sample group of learners within an online learning environment. Testing on the other hand is to find
+out biometric authentication accuracy, data retrieval and user satisfaction in use phase. Metrics that are
+tracked range from key performance figures (eg authentication success rate, speed of data retrieval), to
+user behaviour capture (feedback: perceived safety and ease). Initial results show that a total of 95%
+accuracy rate in HSBCS based biometric identification for visually impaired students and an increase up
+to overall 30 % security feeling compared with the current personal record access.
+
+<a id="pdf-p10"></a>
+### [PDF p.10] COGENT EDUCATION 9
+- Locator: `R527-enabling-secure-and-inclusive-education-for-students-with-disabilities-and-ensur.pdf` · página **10** / 18
+
+COGENT EDUCATION           9
+
+
+
+
+Figure 6. (a) Different dataset of FVC 2000, (b) Different dataset comparison of FVC 2002, (c) Different Dataset of FVC 2004.
+
+    Uniqueness of Genuine and Imposter Cancelable Templates Figure 6(a), (b) and (c) show that genu-
+ine cancelable templates are sufficiently different from imposter ones in three datasets: (a): FVC2000, set
+B; (b): FVC2002, set B; & #:F VC2004, Set A. The figure visualizes the capability of differentiating
+between legitimate user templates and impostors as a function of applying cancelable biometric tem-
+plate to the proposed system.For each subfigure, the dissimilarity scores are depicted such that all of
+released templates (genuine) and unwanted users (imposters):- This distinction between the scores is
+essential to achieve accurate identification of real users and detection of impostors by biometric
+systems.Proposed method is able to retain large dissimilarity between genuine templates and imposter
+templates in the FVC2000 (set B) dataset as subfigure a, FVC2002 (set B) dataset as in b and for set A
+For instance enrolling images with 25,50 Field of views using various structure types. The less alike
+two rolled prints are, the higher FMR (false match) or FNMR (False Non Match); the more unlike they are
+together both values will decrease meaning fewer false acceptance(for a spoof that does not know how
+to generate your template there rates go up against state of art (Figure 6(b) (B set)). Figure 7 provides
+all greyscale images used as test standards. This dissimilarity is crucial for ensuring that the system can
+consistently and accurately differentiate between authorized users and potential imposters, thus provid-
+ing a strong level of protection against unauthorized access.
+
+
+4.1. The complexity of search window size
+The complexity of the search window size is a crucial factor in the performance of various algorithms, par-
+ticularly those used in image processing, video compression, and pattern recognition tasks. The search win-
+dow refers to the area within which an algorithm searches for matching patterns, features, or elements, and
+its size significantly impacts both the accuracy and computational efficiency of the algorithm
+
+<a id="pdf-p11"></a>
+### [PDF p.11] 10 B. M. ALSULAMI ET AL.
+- Locator: `R527-enabling-secure-and-inclusive-education-for-students-with-disabilities-and-ensur.pdf` · página **11** / 18
+
+10      B. M. ALSULAMI ET AL.
+
+
+
+
+Figure 7. A pictorial representation of Cartesian transformation. (a) Original fingerprint image, (b) Cells, (c) Cells which
+replaces the original cells, (d) Original minutiae points, (e) Minutiae points in cancelable template.
+
+4.2. Effect of comparable patches
+When denoising an image, algorithms often rely on finding and averaging comparable patches within the
+image. These patches are similar in texture or color but may be located in different parts of the image. By
+averaging these patches, the algorithm can effectively reduce noise while preserving important details and
+textures. This approach, known as non-local means, exploits the redundancy in natural images to enhance
+the denoising process.Preservation of Details: The use of comparable patches helps in maintaining the sharp-
+ness and fine details in the image, as the denoising process is guided by actual, similar image content rather
+than relying solely on local smoothing techniques, which might blur the image.
+
+
+4.3. Effect of regularization constraints
+The results hereby prove that the HSBCS method effectively surpasses the traditional methods in terms
+of PSNR for Image-1. This means that the HSBCS system is more efficient in coeff0 reducing noise and
+
+<a id="pdf-p12"></a>
+### [PDF p.12] COGENT EDUCATION 11
+- Locator: `R527-enabling-secure-and-inclusive-education-for-students-with-disabilities-and-ensur.pdf` · página **12** / 18
+
+COGENT EDUCATION      11
+
+
+
+
+Figure 8. PSNR comparison of image-1.
+
+distortion during encrypting, which does not harm on visual qual- ity of resulted image. The higher
+PSRN values achieved in HSBCS System2 accounted for the preservation of important details from
+Image-1 and indicates that this system will operate better when used with applications requiring images
+retentionThis performance report image-2 for similar kind of comparison with encryption methods in
+Figure 9. Similarly to in Figure 8, PSNR values are used here as a metric for how much the visual quality
+of Image-2 is preserved after being processed by different algorithmsThis result demonstrates the poten-
+tial of HSBCS with image encryption which is capable to maintain a good quality on reconstructed
+cipher images so that minimum noise and minimal distortion occur. Lower values of PSNR after process-
+ing is evidence that the HSBCS system protects image information, making it clearer and more useful to
+illustrate afterwards.
+    Figures 7, 8 show the PSNR implementation for the aforementioned experimental setup for images 1,
+2, and 3. Multiple functional zones divide the interface. The card’s first section, titled ’Upload Image,’
+provides the option to pick and upload student images from your local device. After an image has been
+uploaded, the "Encrypt Image" section is used to initiate encryption. This process employs a safe algo-
+rithm to the image, making it unintelligible with no suitable decryption important and for this reason
+protects the photograph from unauthorized get right of entry to. And the ’Decrypt Image’ section reuses
+corresponding function to decrypt and display encrypted images for each authorized user when
+needed.The interface also has such elements as icons with a lock or shield, thereby visually confirming
+the security of the system — an encrypted stream and data integrity. It also includes a preview pane
+built into the window, that lets buyers see how their image looks after it was encrypted (making sure
+whatever data they used has been processing securely.)The GUI was designed to be user-friendly, easy-
+to-navigate and equipped with textual descriptions that enhance the ease of managing student image
+data securing for all users irrespective whether disability hampers their operation. Besides strengthening
+the security of sensitive data, this system contributes to improving the general usability and accessibility
+for our HSBCS functions which is aligned with study motivations toward developing an inclusive, secure
+online learning environment he
+    Figure 9 shows the comparison of SSIM of different Student Data. Figure 10 shows the comparison
+PSNR of different images.
+    Finally, the Peak Signal-to-Noise Ratio (PSNR) values of Image-3 employed distinct encryption meth-
+ods in the HSBCS system. It is the peak signal-to-noise ratio, a standard metric in image processing used
+to evaluate an output processed image compared with ground truth. Higher PSNR means better quality
+of image where less distortion is present after processing.The PSNR values for Image-3 in contrast with
+known methods like referential encryption standards, contemporary secure image processing techniques
+and proposed HSBCS scheme. We are able to compare the PSNR values for these data and a graph will
+show us what method have kept more image quality.As Image-3 the PSNR values are higher on HSBCS
+system compared to traditional methods which implies better preservation of quality during encryption
+process. The higher PSNR values suggest that the HSBCS system results in less noise and distortion,
+
+<a id="pdf-p13"></a>
+### [PDF p.13] 12 B. M. ALSULAMI ET AL.
+- Locator: `R527-enabling-secure-and-inclusive-education-for-students-with-disabilities-and-ensur.pdf` · página **13** / 18
+
+12     B. M. ALSULAMI ET AL.
+
+
+
+
+Figure 9. PSNR comparison of image.
+
+
+
+
+Figure 10. PSNR comparison of image-3.
+
+which is something one would want; especially when considering implementations where maintaining
+visual integrity of an image is critical.
+    Results of Structural Similarity Index Measure (SSIM) values from different approaches per-
+formed inside the HSBCS framework are compared in Figure 11. The purpose of SSIM is to evalu-
+ate the visual quality of images by measuring the structural similarity between two output and
+input image. This is of particular importance to assess the effectiveness of various encryption and
+data management methods at maintaining student image quality perceptions.In this figure, trad-
+itional encryption techniques, the proposed HSBCS system and other state-of-the-art methods
+adopted within secure data manage- ment are compared. Figure 11 shows the comparison of
+SSIM of different methodologies. Figure 12 shows the MSE comparison of Different methodolo-
+gies. Results show that in terms of SSIM, the HSBCS system again outperforms classic encryption
+methods with superior structural preserving. Since preserving visual quality is crucial in some
+applications (especially when images need to be recognized by the naked eye), HSBCS can main-
+tain a higher SSIM values meaning that more effective than CSR-hashtable-based systems for
+maintaining functional utility of student face pictures after encryption.This comparison brings out
+that HSBCS system rebounds the level of security to keep with it without affecting other image
+data quality, usability. The easy understanding of the performance differences between the meth-
+ods is boosted by such a clear visualization offering a proof for HSBCS in saving visual quality of
+encrypted images.
+    The GUI incorporated to it is designed in such a way that the paradigm of coping with data at high
+levels gets progressively harder yet remains friendly for novice users.This interface consists of multiple
+sections i.e., in ‘Upload Image’, user can choose and upload the images from the device by clicking on
+
+<a id="pdf-p14"></a>
+### [PDF p.14] COGENT EDUCATION 13
+- Locator: `R527-enabling-secure-and-inclusive-education-for-students-with-disabilities-and-ensur.pdf` · página **14** / 18
+
+COGENT EDUCATION   13
+
+
+
+
+Figure 11. Graphical analysis of different methodologies structural similarity (SSIM) index comparison.
+
+
+
+
+Figure 12. Graphical analysis of different methodologies mean square error comparison.
+
+
+Browse. Encrypt Image: Here you can encrypt the images uploaded by his users in a secure way using
+one of several sophisticated encryption algorithms. With the ’View Image’ section, only authorized indi-
+viduals can decrypt and view images in a secure manner ensuring that those without proper permissions
+are not able to access sensitive data.Key visual feedback includes lock icons and shields throughout the
+interface to reemphasize the system’s security & encryption feature. We design clean, modern websites
+focusing on clarity and usability yet which are also fully accessible to all users including those with dis-
+abilities. Encrypted images will be reflected in the preview pane and users can check this to have satis-
+faction that encryption process has been implemented without flaws.It is hoped that not only this GUI
+improves ACC student image data security but also it help with the overall requirement to manage and
+secure sensitive information in an accurate, prevent their unauthorised disclosure or access, using safe-
+guards method appropriate for data storage us its environment as dictated by The HSCS System Goals
+Policy Core infrastructure standard a need of providing students who are united through seamless inte-
+gration into categories users accounts so free from any hazard when they require valuable services
+online.
+   Figure 13 depicts the data used for encryption.
+   Illustration of graphical user interface window for secured encryption is seen in Figure 14.
+   GUI window of the Secured Encrypted Students Image System, one of HSBCS system to maintain and
+secure image data student A one complete GUI makes handling sensitive student images easy and faster
+with encrypted storage making sure the students photos records are kept securely.Multiple functional
+zones divide the interface. The card’s first section, titled ’Upload Image,’ provides the option to pick and
+upload student images from your local device. After an image has been uploaded, the "Encrypt Image"
+section is used to initiate encryption. This process employs a safe algorithm to the image, making it
+
+<a id="pdf-p15"></a>
+### [PDF p.15] 14 B. M. ALSULAMI ET AL.
+- Locator: `R527-enabling-secure-and-inclusive-education-for-students-with-disabilities-and-ensur.pdf` · página **15** / 18
+
+14      B. M. ALSULAMI ET AL.
+
+
+
+
+Figure 13. Secured students Image GUI window.
+
+
+
+
+Figure 14. Illustration of graphical user interface window for secured encryption.
+
+unintelligible with no suitable decryption important and for this reason protects the photograph from
+unauthorized get right of entry to. And the ’Decrypt Image’ section reuses corresponding function to
+decrypt and display encrypted images for each authorized user when needed. The interface also has
+such elements as icons with a lock or shield, thereby visually confirming the security of the system —
+an encrypted stream and data integrity. It also includes a preview pane built into the window, that lets
+buyers see how their image looks after it was encrypted (making sure whatever data they used has
+been processing securely.)The GUI was designed to be user-friendly, easy-to-navigate and equipped with
+textual descriptions that enhance the ease of managing student image data securing for all users irre-
+spective whether disability hampers their operation. Besides strengthening the security of sensitive data,
+this system contributes to improving the general usability and accessibility for our HSBCS functions
+
+<a id="pdf-p16"></a>
+### [PDF p.16] COGENT EDUCATION 15
+- Locator: `R527-enabling-secure-and-inclusive-education-for-students-with-disabilities-and-ensur.pdf` · página **16** / 18
+
+COGENT EDUCATION        15
+
+
+
+which is aligned with study motivations toward developing an inclusive, secure online learning
+environment.
+   Through surveys and questionnaires, we found that 75% of students expressed concerns about priv-
+acy, and 68% highlighted security issues with online learning tools. Qualitative insights from interviews
+and focus groups revealed a critical need among 80% of students for enhanced guidance and support
+in navigating these platforms. Neurodiverse students emphasized the necessity of a secure online envir-
+onment. Addressing these concerns, our study introduced the Highly Secure Blockchain-Based
+Compressive Sensing (HSBCS) system, which demonstrated a remarkable average accuracy rate of 95%
+in biometric authentication for visually impaired students during preliminary testing. Moreover, partici-
+pants reported a significant 30% increase in perceived security and ease of access to their Personal
+Records compared to traditional authentication methods. These findings underscore the potential of
+integrating advanced technologies to not only meet the educational needs of students with disabilities
+in online environments but also to enhance data security and accessibility.
+
+
+5. Conclusion
+In response to the COVID-19-induced shift to online learning, our study explored the experiences of 62
+students with disabilities and their perceptions of privacy, security, and support in this new educational
+landscape. Findings underscored the importance of tailored support mechanisms for students with learn-
+ing disabilities and highlighted their heightened awareness of the need for a secure online environment.
+Integrating blockchain and machine learning through the HSBCS system proved effective in enhancing
+biometric authentication, with preliminary results indicating a 95% accuracy rate among visually
+impaired students. This technological approach not only improves data integrity but also enhances
+accessibility to Personal Records, empowering students to securely manage their information independ-
+ently. Our research emphasizes the value of leveraging advanced technologies to address the unique
+educational needs of students with disabilities while promoting data security and integrity in online
+education.
+
+
+Acknowledgments
+The authors extend their appreciation to the Deputyship for Research & Innovation, Ministry of Education in Saudi
+Arabia for funding this research work through the project number (IFP-2020–56).
+
+
+Disclosure statement
+No potential conflict of interest was reported by the author(s).
+
+
+About the authors
+Bader Muteb Alsulami is an Assiociate Professor at Majmaah University, Saudi Arabia, with expertise in special edu-
+cation. He holds a Ph.D. from the University of Kentucky and has significant experience in curriculum development,
+instructional strategies, and academic advising. His research focuses on inclusive education for students with disabil-
+ities, and he has published scholarly work in this field. Fluent in both Arabic and English. Dr. Alsulami is committed
+to enhancing educational outcomes through innovative teaching methods and active student engagement.
+Dr. Abdullah Baihan received the master's and Ph.D. degrees in computer science from King Saud University, KSA,
+and University of Connecticut, USA, respectively. He is currently an Assistant Professor with the Department of
+Computer Science, Community College, King Saud University. He has working experience in teaching, training and
+management over two decades and as well as a consultant for many governments and business sectors since 2003
+until now. He managed some IT and Non-IT projects perfectly. He published many articles in high cited journals. His
+current research interests include cybersecurity, bigdata, artificial intelligence, internet of things, embedded systems,
+and cloud computing.
+Dr. Ahed Abugabah is a Professor in Information Systems. He currently works at the College of Technological
+Innovation at Zayed University. Before joining Zayed University he worked in higher education in Australia where he
+
+<a id="pdf-p17"></a>
+### [PDF p.17] 16 B. M. ALSULAMI ET AL.
+- Locator: `R527-enabling-secure-and-inclusive-education-for-students-with-disabilities-and-ensur.pdf` · página **17** / 18
+
+16      B. M. ALSULAMI ET AL.
+
+
+
+received his degrees in information systems and smart applications His research interests include Information
+Systems, Intelligent Systems and AI in Healthcare, Health Care and Medical Informatics.
+
+
+ORCID
+Bader Muteb Alsulami        http://orcid.org/0009-0006-6039-7160
+
+
+References
+Alamri, A., & Tyler-Wood, T. (2017). Factors affecting learners with disabilities–instructor interaction in online learn-
+   ing. Journal of Special Education Technology, 32(2), 59–69. https://doi.org/10.1177/0162643416681497
+Aljedaani, W., Krasniqi, R., Aljedaani, S., Mkaouer, M. W., Ludi, S., & Al-Raddah, K. (2023). If online learning works for
+   you, what about deaf students? Emerging challenges of online learning for deaf and hearing-impaired students
+   during COVID-19: a literature review. Universal Access in the Information Society, 22(3), 1027–1046. https://doi.org/
+   10.1007/s10209-022-00897-5
+Bakia, M., Shear, L., Toyama, Y., & Lasseter, A. (2012). Understanding the implications of online learning for educa-
+   tional productivity. Office of educational technology, US department of education.
+Basham, J. D., Stahl, W., Ortiz, K. R., Rice, M. F., & Smith, S. J. (2015). Equity matters: Digital and online learning for stu-
+   dents with disabilities. https://centerononlinelearning.ku.edu/wp-content/uploads/2017/04/2015_COLSD_Annual-
+   Publication_FULL-2.pdf
+Bendeck, S. (2022). Because COVID ruined everything’: the impact of learning modalities and accommodations on
+   students with disabilities during the COVID-19 pandemic. Sociation Today, 21(1), 4–20.
+Cain, M., & Fanshawe, M. (2021). Expectations for success: Auditing opportunities for students with print disabilities
+   to fully engage in online learning environments in higher education. Australasian Journal of Educational
+   Technology, 37(3), 137–151. https://doi.org/10.14742/ajet.6449
+Connell, M. W., Johnston, S. C., Hall, T. E., & Stahl, W. (2017). Disconnected data: The challenge of matching activities
+   to outcomes for students with disabilities in online learning. Journal of Online Learning Research, 3(1), 31–54.
+Denisova, O. A., Lekhanova, O. L., & Gudina, T. V. (2020). Problems of distance learning for students with disabilities
+   in a pandemic. In SHS web of conferences (vol. 87, p. 00044). EDP Sciences. https://doi.org/10.1051/shsconf/
+   20208700044
+Devi, A. (2023). Exploring online education and students with disabilities in higher education. In Handbook of
+   research on innovative frameworks and inclusive models for online learning (pp. 293–307). IGI Global.
+Dianito, A. J., Espinosa, J., Duran, J., & Tus, J. (2021). A glimpse into the lived experiences and challenges faced of
+   PWD students towards online learning in the Philippines amidst COVID-19 pandemic. International Journal of
+   Advance Research And Innovative Ideas In Education, 7(1), 1206–1230.
+Dickinson, H., Smith, C., Yates, S., & Tani, M. (2023). The importance of social supports in education: survey findings
+   from students with disability and their families during COVID-19. Disability & Society, 38(8), 1304–1326. https://doi.
+   org/10.1080/09687599.2021.1994371
+Gin, L. E., Guerrero, F. A., Brownell, S. E., & Cooper, K. M. (2021). COVID-19 and undergraduates with disabilities:
+   Challenges resulting from the rapid transition to online course delivery for students with disabilities in under-
+   graduate STEM at large-enrollment institutions. CBE Life Sciences Education, 20(3), ar36. https://doi.org/10.1187/
+   cbe.21-02-0028
+Grimes, S., Southgate, E., Scevak, J., & Buchanan, R. (2021). Learning impacts reported by students living with learn-
+   ing challenges/disability. Studies in Higher Education, 46(6), 1146–1158. https://doi.org/10.1080/03075079.2019.
+   1661986
+Jayapriya, J., & Vinay, M. (2023). Equitable and inclusive online learning: A framework for supporting students with
+   disabilities. In developing skills and competencies for digital and green transitions (pp. 29–54). IGI Global.
+Kent, M. (2016). Access and barriers to online education for people with disabilities (pp. 1–168). National centre for
+   student equity in higher education.
+Khumalo, S., Singh-Pillay, A., & Subrayen, R. (2020). Reflections on differently abled students’ challenges with online
+   learning amidst the COVID-19 pandemic and lockdown. Learner and Subject at the Dawn of Digital Research-Led
+   Teaching and Learning in the Time of COVID-19, 4, 188–208.
+Kohli, H., Wampole, D., & Kohli, A. (2021). Impact of online education on student learning during the pandemic.
+   Studies in Learning and Teaching 2(2), 1–11. https://doi.org/10.46627/silet.v2i2.65
+Kotera, Y., Chircop, J., Hutchinson, L., Rhodes, C., Green, P., Jones, R.-M., Kaluzeviciute, G., & Garip, G. (2021).
+   Loneliness in online students with disabilities: Qualitative investigation for experience, understanding and solu-
+   tions. International Journal of Educational Technology in Higher Education, 18(1), 64. https://doi.org/10.1186/s41239-
+   021-00301-x
+Kowalewski, S. J., & Ariza, H. H. (2022). How assistive technology impacts college students and faculty. The Business
+   & Management Review, 13(1), 22–27.
+
+<a id="pdf-p18"></a>
+### [PDF p.18] COGENT EDUCATION 17
+- Locator: `R527-enabling-secure-and-inclusive-education-for-students-with-disabilities-and-ensur.pdf` · página **18** / 18
+
+COGENT EDUCATION         17
+
+
+
+McMaughan, D. J., Rhoads, K. E., Davis, C., Chen, X., Han, H., Jones, R. A., Mahaffey, C. C., & Miller, B. M. (2021).
+   COVID-19 related experiences among college students with and without disabilities: Psychosocial impacts, sup-
+   ports, and virtual learning environments. Frontiers in Public Health, 9, 782793. https://doi.org/10.3389/fpubh.2021.
+   782793
+Mohammed Ali, A. (2021). E-learning for students with disabilities during COVID-19: Faculty attitude and perception.
+   Sage Open, 11(4), 215824402110544. https://doi.org/10.1177/21582440211054494
+Morando-Rhim, L., & Ekin, S. (2021). How has the pandemic affected students with disabilities? A review of the evi-
+   dence to date. Center on reinventing public education
+Niazov, Z., Hen, M., & Ferrari, J. R. (2022). Online and academic procrastination in students with learning disabilities:
+   the impact of academic stress and self-efficacy. Psychological Reports, 125(2), 890–912. https://doi.org/10.1177/
+   0033294120988113
+Paramasivam, S., Krishnan, I. A., Amin, A. S., Kaliappen, N., Sidhu, R. S., & Anbalagan, H. (2022). Challenges faced by
+   disabled students in online learning during the COVID-19 pandemic. International Journal of Academic Research in
+   Business and Social Sciences, 12(1), 20982113. https://doi.org/10.6007/IJARBSS/v12-i1/12282
+Patel, K. (2020). Mental health implications of COVID-19 on children with disabilities. Asian Journal of Psychiatry, 54,
+   102273. https://doi.org/10.1016/j.ajp.2020.102273
+Porter, S. G., Greene, K., & Esposito, M. K. (2021). Access and inclusion of students with disabilities in virtual learning
+   environments: Implications for post-pandemic teaching. International Journal of Multicultural Education, 23(3), 43–
+   61. https://doi.org/10.18251/ijme.v23i3.3011
+Purwati, T., Ningsih, D. W., & Widayanti, C. G. (2022). Challenges of online learning for students with disabilities during
+   the pandemic Covid-19: A systematic literature review. In Proceedings of the 2nd international conference on psy-
+   chological studies (ICPsyche 2021) (pp. 202–209.).
+Repetto, J. B., Spitler, C. J., & Cox, P. R. (2018). Research on at-risk learners in K-12 online learning. Handbook of
+   research on K-12 online and blending learning, 107–134.
+Rice, M. F., & Carter, R. A. Jr. (2015). When we talk about compliance, it’s because we lived it. Online Educators’ Roles
+   in Supporting Students with Disabilities. Online Learning, 19(5), 18–36.
+Rutherford, E. N. (2021). Meeting the needs of students with disabilities in online learning environments. In Shifting
+   to online learning through faculty collaborative support (pp. 229–246). IGI Global.
+Sakarneh, M. A. (2021). The impact of COVID-19 and lockdown on families of students with special education needs.
+   Cypriot Journal of Educational Sciences, 16(3), 1010–1020. https://doi.org/10.18844/cjes.v16i3.5787
+Shrestha, S., Thomas, D., & Das, S. (2022). Secureld: Secure and accessible learning for students with disabilities. In
+   Proceedings of the human factors and ergonomics society annual meeting (vol. 66, pp.465–469). SAGE Publications.
+   https://doi.org/10.1177/1071181322661157
+Svalina, V., & Ivic, V. (2020). Case study of a student with disabilities in a vocational school during the period of
+   online virtual classes due to COVID-19. World Journal of Education, 10(4), 115–123. https://doi.org/10.5430/wje.
+   v10n4p115
+Tomaino, M. A. E., Greenberg, A. L., Kagawa-Purohit, S. A., Doering, S. A., & Miguel, E. S. (2022). An assessment of the
+   feasibility and effectiveness of distance learning for students with severe developmental disabilities and high
+   behavioral needs. Behavior Analysis in Practice, 15(1), 243–259. https://doi.org/10.1007/s40617-020-00549-1
+Walters, T., Simkiss, N. J., Snowden, R. J., & Gray, N. S. (2022). Secondary school students’ perception of the online
+   teaching experience during COVID-19: The impact on mental wellbeing and specific learning difficulties. The
+   British Journal of Educational Psychology, 92(3), 843–860. https://doi.org/10.1111/bjep.12475
+Zhang, H., Nurius, P., Sefidgar, Y., Morris, M., Balasubramanian, S., Brown, J., Dey, A. K., Kuehn, K., Riskin, E., Xu, X., &
+   Mankoff, J. (2020). How does COVID-19 impact students with disabilities/health concerns?. arXiv preprint arXiv:
+   2005.05438.

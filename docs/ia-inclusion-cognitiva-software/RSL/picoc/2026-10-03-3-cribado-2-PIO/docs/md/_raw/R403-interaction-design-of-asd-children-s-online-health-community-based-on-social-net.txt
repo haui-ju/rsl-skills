@@ -1,0 +1,541 @@
+===== PDF PAGE 1 / 9 =====
+Interaction Design of ASD Children’s Online Health Community
+ Based on Social Network Structure and User Behavior Analysis
+                    Xiaowen Liu                                                Yu Zhang∗                                 Chunqiang Zhang
+           College of Art and Design                                 College of Art and Design                        College of Art and Design
+        Xi’an University of Technology                            Xi’an University of Technology                   Xi’an University of Technology
+             Xi’an, Shaanxi, China                                     Xi’an, Shaanxi, China                            Xi’an, Shaanxi, China
+              631039377@qq.com                                        18092185246@163.com                                12130137@qq.com
+
+Abstract                                                                                  coverage[4] . Additionally, the uneven distribution of medical re-
+Objective: To summarize the characteristics of existing online                            sources hinders access to long-term treatment, especially in rural
+health community interactions for children with autism and use                            areas.The “Internet + Healthcare” initiative has rapidly expanded
+them to optimize the community interaction service model. Method:                         mobile healthcare services[5] . This integration has improved reha-
+Based on the social network analysis theory and natural language                          bilitation options for children with ASD, overcoming the time and
+processing theory, software such as Gephi and Python were used to                         geographic barriers of traditional healthcare models[6] .
+analyze the user interaction system from four dimensions: overall                            In related studies, Zhang Lie and colleagues applied service sys-
+network structure, individual network structure, word frequency                           tem design principles to propose online rehabilitation services[4] .
+topic tendency, and sentiment tendency. Results: Get the social                           Wang Peiyao analyzed the interactions of parents in the “Autism
+network structure and text features. Conclusion: Proposing an                             Bar” forum, focusing on their emotional expression, social mo-
+interactive system design for an online health community platform                         tivations, and needs[7] . Ni Zhenni and her team mapped the
+for children with autism centered on opinion leaders.                                     knowledge-sharing and misinformation networks in the forum,
+                                                                                          proposing strategies to limit false information spread[8] . Deng Jun
+CCS Concepts                                                                              and colleagues developed a model of opinion leaders within online
+• Human-centered computing → Collaborative and social com-                                health communities, using social network analysis to study network
+puting; Collaborative and social computing design and evaluation                          structures and user interactions[9] . Current research on autism plat-
+methods; Social network analysis.                                                         forms overemphasizes opinion leaders, neglecting broader user in-
+                                                                                          teractions, interdisciplinary approaches, and practical applications.
+Keywords                                                                                  This creates a theory-practice gap in developing user-centered on-
+Online Health Community, Baidu “Autism” Bar, Interactive Systems,                         line health systems.
+Social Network Analysis Theory, Natural Language Processing                                  This paper investigates the interaction system of online health
+Theory                                                                                    communities for children with autism, using Baidu’s “Autism Bar”
+                                                                                          as a case study. It analyzes user interactions and behavioral patterns
+ACM Reference Format:                                                                     using social network and text mining methods. This study evaluates
+Xiaowen Liu, Yu Zhang, and Chunqiang Zhang. 2025. Interaction Design
+                                                                                          current platforms, proposes improvements, and applies theoretical
+of ASD Children’s Online Health Community Based on Social Network
+                                                                                          insights to guide system design practice. The paper structure is
+Structure and User Behavior Analysis. In 2025 International Conference on
+Digital Society and Intelligent Computing (ICDSIC 2025), November 07–09,                  shown in Figure 1.
+2025, Guangzhou, China. ACM, New York, NY, USA, 9 pages. https://doi.
+org/10.1145/3788910.3788993
+                                                                                          2 Theoretical Foundation
+1    INTRODUCTION                                                                         2.1 Social Network Analysis Theory
+Autism Spectrum Disorder (ASD) is a common neurodevelopmental                             Originating in 1950s sociology research [10], Social Network Anal-
+disorder, characterized by social communication impairments and                           ysis (SNA) models social systems as node-link networks, where
+repetitive behaviors[1] . In China, the prevalence of ASD is 1.0%                         nodes represent actors (e.g., individuals or organizations) and edges
+to 1.2% among newborns[2] . Over 10 million people have autism,                           denote their relationships. It mathematically abstracts these con-
+including more than 2 million children aged 0-14[3] . However, the                        nections [11] to reveal structural patterns, node-level dynamics,
+development of services is limited by a shortage of specialists, poor                     and interaction processes, thereby offering insights into network
+educational resources, lack of standards, and inadequate service                          behavior, information diffusion, and influence propagation.
+∗ Corresponding author.
+
+                                                                                          2.2    Natural Language Processing Theory
+                                                                                          Natural Language Processing (NLP) is an interdisciplinary frontier
+This work is licensed under a Creative Commons Attribution 4.0 International License.     field that combines computer science, artificial intelligence, and
+ICDSIC 2025, Guangzhou, China                                                             linguistics[12] . This method uses computational techniques to mine
+© 2025 Copyright held by the owner/author(s).
+ACM ISBN 979-8-4007-1964-6/2025/11                                                        information and analyze data from natural language content in text,
+https://doi.org/10.1145/3788910.3788993                                                   obtaining results such as semantic features, sentiment tendencies,
+
+
+
+
+                                                                                    552
+
+===== PDF PAGE 2 / 9 =====
+ICDSIC 2025, November 07–09, 2025, Guangzhou, China                                                                              Xiaowen Liu et al.
+
+
+
+
+                                                      Figure 1: Thesis Framework Diagram
+
+
+and category classifications. It then infers the emotions and areas         3,000 topic posts on the homepage of “Autism Bar,” with the earliest
+of interest embedded within the text.                                       post dating back to January 1, 2011. The collected data specifically
+                                                                            included the poster’s username, post content, posting time, replying
+3    Research Subject                                                       user’s username, reply content, and reply time. The users in “Autism
+                                                                            Bar” are treated as nodes, and the reply relationships between users
+As a complex information ecosystem, online health communities
+                                                                            are regarded as edges connecting the nodes. The number of replies
+place users at the core of the ecosystem[6] , with a series of intri-       is used as the value to assign to each edge, and these elements
+cate and complex interaction behaviors between users forming a              are integrated into a directed multivalue interaction network. To
+complete social network. Based on the aforementioned theoretical            study the overall network and the interaction behavior relation-
+foundation, for the social network formed by the user group in the          ships between users, 1,588 posts with no replies were removed, and
+online health community for children with autism, social network            redundant, meaningless reply data were deleted. The processed
+analysis is applied. Data processing is carried out using software          data involved 13,151 users and a total of 82,660 reply entries. The
+such as Ucinet and Gephi to analyze its network structure. For the          preliminary processed data were subjected to social network anal-
+textual information involved in the online interactions of the user         ysis and natural language processing analysis. A matrix list was
+group, Python is used to extract and conduct text analysis.                 used to represent the “reply” relationships between users. Software
+   In the existing online health community for children with autism,        such as Ucinet and Gephi was used for data computation and visu-
+Baidu Tieba’s “Autism Bar” was selected. Baidu Tieba is the largest         alization, analyzing the interaction network graph data between
+Chinese-language communication community in the world, with a               user groups to summarize the network structure features. Addition-
+clear thematic focus. It gathers users interested in the same topic         ally, Python was used for text data cleaning, frequency processing,
+for online interactions. This platform is a grassroots, low-threshold       and generating word cloud diagrams, as well as summarizing topic
+channel that provides universal access to information without re-           classification and sentiment tendencies.
+quiring registration or payment. It has become the preferred source
+of support for economically disadvantaged families. It has been
+created for the longest period of time, with extensive and rich user
+data, and can be studied as representative of a broad ASD online
+                                                                            4   Social Network Structure Analysis of Autism
+health community. In this study, a Python crawler program was                   Online Health Community
+used to collect data from the topic posts in “Autism Bar.” The topic        In applying social network theory to the “Autism Bar” platform,
+posts in the forum are ranked based on the descending order of the          each user is modeled as a node, and comment-reply interactions
+latest replies, meaning that the posts ranked higher have greater           are transformed into directed edges linking users. Visualization
+attention, more discussion, and stronger timeliness. The data, col-         and computational analysis are conducted using software tools,
+lected as of October 6, 2024, included user interaction data from           examining both overall and individual network levels.
+
+
+
+
+                                                                      553
+
+===== PDF PAGE 3 / 9 =====
+Interaction Design of ASD Children’s Online Health Community Based on Social Network Structure and User
+Behavior Analysis                                                                                            ICDSIC 2025, November 07–09, 2025, Guangzhou, China
+
+
+
+
+                                                                                          Figure 3: Modular Community Distribution Diagram
+
+ Figure 2: Baidu “Autism Bar” Network Structure Diagram
+                                                                                      replying to themselves. These isolated users—typically on the net-
+                                                                                      work periphery—align with the low-engagement “tourist” profile,
+                                                                                      weakening network integrity. When these users are excluded and
+4.1     Overall Network Structure Analysis of
+                                                                                      the density is recalculated, the value rises to 0.025, supporting this
+        Baidu “Autism Bar”                                                            conclusion.
+The overall network comprises all relational ties among nodes                            2) Modular Community Division of Baidu “Autism Bar”.
+within a defined boundary. Using Gephi, user interactions in                          Modular community division segments a social network into
+“Autism Bar” are visualized to generate the overall network struc-                    smaller subgroups based on node similarity, each with distinct
+ture (Figure 2), applying a force-directed algorithm to represent                     structural and functional features. Modularity values range from
+relational proximity. Node size reflects interaction frequency, in-                   0 to 1, with higher values indicating more clearly defined commu-
+creasing with the number of connections. A modularity algorithm                       nity structures. Let m represent the number of edges in the social
+partitions the network into smaller communities based on relational                   network, 𝐴𝑖 𝑗 represent the node pairs in the adjacency matrix A,
+closeness; the top twelve, ranked by node count, are color-coded.                     and 𝑘𝑖 and 𝑘 𝑗 represent the degrees of nodes i and j, respectively.
+   The diagram shows that node size and color are generally cor-                      The formula is as follows:
+related: users with more social ties tend to appear at the centers                                                   h           i
+                                                                                                               1 Í 𝐴 − 𝑘𝑖 𝑘 𝑗 𝛿 (𝑖, 𝑗)
+                                                                                                         𝑄 = 2𝑚                                          (2)
+of smaller community clusters, while larger communities are posi-                                                 𝑖𝑗
+                                                                                                                        𝑖𝑗   2𝑚
+tioned nearer the center of the overall network. This layout effec-
+                                                                                         As shown in Figure 3, incorporating edge weight ratios into the
+tively illustrates the interaction patterns within “Autism Bar.” The
+                                                                                      calculation yields a modularity value (Q) of 0.721, identifying 199
+following sections analyze the network from three perspectives:
+                                                                                      communities. After excluding groups with fewer than 10 members,
+density, community structure, and the small-world effect.
+                                                                                      26 substantial subgroups remain. A modularity of 0.721 indicates
+   1) Network Density of Baidu “Autism Bar” Social Network.
+                                                                                      a well-defined community structure, with dense intra-community
+Network density measures the closeness of node connections and
+                                                                                      connections and sparse inter-community links. The high quality
+is commonly used to assess network integrity. It is defined as the
+                                                                                      of division reflects strong similarity and cohesion among nodes
+ratio of actual to possible edges, ranging from 0 to 1. A complete
+                                                                                      within each community.
+graph, in which every pair of nodes is connected, has a density of 1.
+                                                                                         3) Small-World Effect Analysis of Baidu “Autism Bar”. The
+Let L represent the number of actual edges, N represent the number
+                                                                                      small-world effect describes networks with a short average path
+of nodes, and the density d(G) is calculated using the following
+                                                                                      length and a high clustering coefficient. Using Gephi, a random
+formula:
+                                                                                      network of similar size yielded a clustering coefficient of 0.02 and an
+                           𝑑 (𝐺) = 𝑁 (𝑁𝐿 −1)                      (1)                 average path length of 5.939. In contrast, the “Autism Bar” network
+    The calculated overall network density of Baidu’s “Autism Bar”                    showed a clustering coefficient of 0.302, indicating significantly
+is 0.001, indicating extremely sparse user relationships and weak in-                 stronger local clustering. This suggests the formation of tightly
+teraction frequency. Direct connections between nodes are limited,                    knit user groups and a pronounced community structure.
+with a short and fragmented relationship chain, constraining infor-                      The formula for calculating the average path length is as follows:
+mation dissemination and leading to a decentralized distribution of                                           𝐿= 1 1
+                                                                                                                               Í
+                                                                                                                     𝑁 (𝑁 −1)
+                                                                                                                                  𝑑𝑖 𝑗                     (3)
+community resources. This environment facilitates the formation                                                    2          𝑖≠𝑗
+of small groups and the emergence of opinion leaders due to un-                       where 𝑑𝑖 𝑗 represents the number of paths between two nodes, i and
+even influence distribution. Although low density implies limited                     j. The average path length of the “Autism Bar” network is 3.67, indi-
+cohesion, it also allows for greater flexibility and the integration of               cating that any two users can connect via four intermediaries. This
+diverse viewpoints.Notably, 29,302 users (35.45% of all participants)                 short path length reflects efficient information dissemination and
+posted only once and exhibited no interaction with others, often                      strong network influence. Combined with the compact structure,
+
+
+
+
+                                                                              554
+
+===== PDF PAGE 4 / 9 =====
+ICDSIC 2025, November 07–09, 2025, Guangzhou, China                                                                                    Xiaowen Liu et al.
+
+
+                                                             Table 1: Centrality Ranking
+
+        User           Out-Degree                In-           Standardized                  Standardized                    Standardized
+                                                 Degree        Out-Degree                    In-Degree                       Centrality
+  Zhuzi Rudaoshi                  65                  1263              0.012                          0.238                          0.25
+ Ice Cream Cat                   884                   201              0.166                          0.038                         0.204
+ Catch the Panda                  5                    882              0.001                          0.166                         0.167
+ Cige                             8                    845              0.002                          0.159                         0.161
+ Use_5XW25ZU                     815                    7               0.153                          0.001                         0.154
+ Waiting for the                 801                   12               0.151                          0.002                         0.153
+ Sunflower
+ Easy Daoist                     618                  163               0.116                          0.031                         0.147
+ me_No Place 8                    14                  683               0.003                          0.129                         0.132
+ Cubs
+ Ardell                          354                  300               0.067                          0.056                         0.123
+ Use_QeSb5SQ                      22                  615               0.004                          0.116                          0.12
+
+
+it suggests that nodes are relatively proximate, forming a tightly                 2) Betweenness Centrality Analysis. Betweenness centrality
+connected network.                                                              reflects a node’s ability to act as a “bridge” connecting other nodes
+    The high clustering coefficient and short average path length               in the network. It is measured by the frequency of the node’s
+indicate that the network exhibits both local clustering and global             appearance on all shortest paths. The calculation involves the
+connectivity, characteristic of a small-world effect. This structure            number of shortest paths between two nodes, s and t, that are not
+facilitates user interaction, information dissemination, and commu-             directly connected, and the number of shortest paths that pass
+nity formation.                                                                 through node v. The formula is as follows:
+
+4.2    Individual Network Structure Analysis of                                                                           𝜎𝑠𝑡 (𝑣)
+                                                                                                                   Í
+                                                                                                        𝑔 (𝑣) =            𝜎𝑠𝑡                       (5)
+       Baidu “Autism Bar”                                                                                         𝑠≠𝑣≠𝑡
+
+An individual network is a localized network centered on a specific                The users were ranked based on their calculations, and the top ten
+node, including only nodes that interact with it. Irrelevant nodes              are shown in Table 2. The average value calculated is 6703.941, with
+are removed, and the node’s individual attributes are analyzed.                 approximately 17.1% of users exceeding the average. This indicates
+This study examines individual network properties through degree                that only a small portion of users in the entire social network act
+centrality and betweenness centrality.                                          as information intermediaries and have a certain informational
+   1) Degree Centrality Analysis. Degree centrality reflects the                advantage. Most users only serve the role of information inflow or
+number of nodes directly connected to a given node. In a directed               outflow. This suggests that power or control within the network is
+network, it is divided into out-degree and in-degree. Out-degree                relatively centralized, which helps maintain the stability and order
+represents the number of outgoing edges, i.e., the number of replies            of the network because key users are more effective at managing the
+or comments a user has made. In-degree represents the number of                 network, responding to crises, or solving problems. On the other
+incoming edges, i.e., the number of replies or comments received by             hand, this centralized power structure also makes the network more
+the user. The standardization formula for out-degree and in-degree              fragile, as once these key nodes or individuals are attacked, fail, or
+is as follows:                                                                  lose control, the entire network may be severely impacted or even
+                            0          𝑑 (𝑣𝑖 )
+                           𝐶𝑑 (𝑣𝑖 ) = 𝐶𝑛−1                       (4)            collapse.
+                                                                                   The social network analysis of Baidu’s “Autism Bar” revealed
+   Out-degree and in-degree calculations were performed for all
+                                                                                a network structure characterized by central density and periph-
+nodes. Table 1 presents the data for the top ten users ranked by
+                                                                                eral sparsity, reflecting the small-world effect. Information flow is
+centrality. Higher values indicate greater user activity. These users
+                                                                                strong, and user interactions are frequent. However, power distribu-
+influence the formation and development of network public opinion.
+                                                                                tion is uneven, with discourse power concentrated among a few key
+No direct proportional relationship exists between out-degree and
+                                                                                users. These users hold influential positions in the network, aiding
+in-degree. Users with a high out-degree actively disseminate infor-
+                                                                                community management and information flow. However, individ-
+mation, engaging in one-on-one exchanges that facilitate precise
+                                                                                ual instability and users’ subjective biases can distort information,
+communication. They drive community interaction, often serving
+                                                                                undermining the network’s stability.
+as maintainers, contributing to rule creation, dispute mediation,
+and overall community stability. In contrast, users with a high in-
+degree, supported by a large following, can quickly reach a broad               5   User Behavior Analysis of Baidu “Autism Bar”
+audience, accelerating information transmission. Their influence                Text data analysis was conducted on the posts and comments of
+extends to guiding community discussions, shaping its culture, and              users in the topic threads. The analysis focused on three dimensions:
+impacting long-term development and user retention.                             word frequency and sentiment values, to examine users’ social
+
+
+
+
+                                                                       555
+
+===== PDF PAGE 5 / 9 =====
+Interaction Design of ASD Children’s Online Health Community Based on Social Network Structure and User
+Behavior Analysis                                                                                            ICDSIC 2025, November 07–09, 2025, Guangzhou, China
+
+
+            Table 2: Betweenness Centrality Ranking                                   Baidu Tieba can be identified. The most discussed topics are related
+                                                                                      to institutions, such as exchanges and comparisons of various insti-
+ Rank                User              Betweenness         Standardized               tutions. This is due to the fact that families of children with autism
+                                        Centrality            Value                   often face limited access to support channels, and the autism social
+                                                                                      support system is still underdeveloped. As a result, these families
+      1       Zhuzi Rudaoshi             439703.156             49.29
+                                                                                      have difficulty finding suitable medical institutions for professional
+      2     Dream’s Third Layer          230418.078             25.829
+                                                                                      diagnosis and systematic intervention. Therefore, in the process of
+      3              Pig                 230352.078             25.822
+                                                                                      seeking online assistance, the area of greatest concern for users is
+      4         Liu Wencai’s             218061.078             24.444
+                                                                                      the introduction and evaluation of institutions.
+                Grandfather
+                                                                                          2) Topic Post Text LDA Topic Analysis. The LDA (Latent
+      5            Ardell                189443.906             21.236
+                                                                                      Dirichlet Allocation) model is an analysis tool specifically designed
+      6       Use_7GCaQXA                146084.609             16.376
+                                                                                      to generate topic vocabulary by identifying the latent themes in
+      7        Ice Cream Cat             117816.156             13.207
+                                                                                      the text and their interrelationships. This helps reveal the intrinsic
+      8      Cloud Deep Wind             117147.273             13.132
+                                                                                      thematic structure of the text data. The LDA topic model was used
+                   Shelter
+                                                                                      to analyze the comment texts in “Autism Bar,” and the “Autism Bar”
+     9         Ren Qi Xiawa              117081.273             13.125
+                                                                                      was ultimately divided into four topic modules. The characteristic
+    10       Zhao Ge Wan Jiu             112681.063             12.631
+                                                                                      words for each topic are shown in Table 3.
+                                                                                          The four topics focus on the following: (1) The “Self-Recording”
+                                                                                      module, characterized by the detailed recording of personal in-
+                                                                                      tervention treatment experiences and emotional journeys, which
+                                                                                      includes vocabulary describing the process, progress, and feelings
+                                                                                      of personal intervention and treatment. (2) The “Emotional Sup-
+                                                                                      port” module, aimed at expressing emotions, seeking emotional
+                                                                                      resonance, and psychological support, which involves vocabulary
+                                                                                      related to expressing emotions and seeking comfort or resonance.
+                                                                                      (3) The “Theoretical Knowledge” module, focused on sharing pro-
+                                                                                      fessional medical pathological knowledge, research findings, and
+                                                                                      insights, which includes medical terms, pathological knowledge,
+                                                                                      research results, etc. (4) The “Medical Pathways” module, which
+                                                                                      focuses on discussing intervention methods, evaluating and rec-
+                                                                                      ommending medical institutions, and other practical information,
+                                                                                      involving medical institutions, treatment methods, expert advice,
+                  Figure 4: Word Cloud Diagram
+                                                                                      etc. This result reveals the key areas of focus and the main objectives
+                                                                                      of social interaction for users in the autism health community.
+                                                                                          3) Sentiment Tendency Analysis of Baidu “Autism Bar”. A
+behaviors, identify their areas of interest, and assess their social
+                                                                                      sentiment analysis model was trained using Python programming,
+emotions.
+                                                                                      and a sentiment dictionary containing both positive and negative
+                                                                                      words was created. Each word was matched with a sentiment value,
+5.1       Word Frequency Topic Analysis of Baidu                                      with positive sentiment words assigned positive values, negative
+          “Autism Bar”                                                                sentiment words assigned negative values, and neutral words as-
+1) Text Word Frequency Analysis of Topic Posts. The comment                           signed a value of zero. The values range from -5 to 5. Based on the
+content was tokenized using the Jieba program for text analysis.                      sentiment values of the words and their weight in the text (such as
+Python was used to preprocess the text dataset by removing unnec-                     word frequency, position, etc.), the scores in the sentiment dictio-
+essary characters such as emojis, advertisement markers, invalid                      nary were calculated for the tokenized word list, determining the
+links, and addresses. Redundant text was removed through dedupli-                     overall sentiment tendency of the text. The sentiment scatter plot
+cation and compression, and short texts with no meaningful content                    is shown in Figure 5.
+were discarded. Finally, the Jieba word segmentation library was                          In the comment texts of “Autism Bar,” negative emotions make
+used to tokenize the Baidu Tieba text dataset. The Harbin Institute                   up the largest portion at 42.73%, followed by positive emotions at
+of Technology stopword dictionary and Baidu stopword dictionary                       29.35%, and neutral emotions at 27.92%. This indicates a significant
+were used to remove stopwords, creating a base corpus. The corre-                     level of anxiety and concern among the parents and followers of
+sponding TF-IDF values were calculated to observe the contribution                    children with autism. The prevalence of negative emotions has
+of each term to the document’s theme. High-frequency and low-                         contributed to a negative atmosphere within the community, which
+distinctiveness terms were filtered out to obtain the document’s                      may hinder the stable development of the online health platform.
+feature vector. The top 100 high-frequency words were selected to                     The sentiment scatter plot demonstrates the distribution of emo-
+generate a word cloud, as shown in Figure 4.                                          tional data in the text. The horizontal axis represents the sentiment
+   Through the calculation and analysis of the TF-IDF word fre-                       value, while the vertical axis shows the number of comments at
+quency values, the main areas of focus for the user group within
+
+
+
+
+                                                                              556
+
+===== PDF PAGE 6 / 9 =====
+ICDSIC 2025, November 07–09, 2025, Guangzhou, China                                                                                  Xiaowen Liu et al.
+
+
+                                                      Table 3: Characteristic Words of Each Topic
+
+ Topic                           Characteristic Words
+ Self-Recording                  record, diagnosis, treatment, effect, change, age, test, result, …
+ Emotional Support               WeChat, difficult, hope, understanding, help, gratitude, pain, …
+ Theoretical Knowledge           developmental disorder, basic research, genetic factors, intestinal microbiota, psychological mechanisms, …
+ Medical Pathways                doctor, hospital, physician, prescription methods, institutions, recommendations, criticism, good intentions,
+                                 cost, …
+
+
+                                                                              7   Practical Interaction Design of the Online
+                                                                                  Health Community for Children with Autism
+                                                                              In summary, the interaction system of the online health platform
+                                                                              for children with autism can be comprehensively designed from
+                                                                              multiple perspectives, such as the opinion leader model, emotional
+                                                                              support, and topic segmentation, to ensure that the platform can
+                                                                              efficiently and attentively serve children with autism and their
+                                                                              families. The design and functional architecture diagram of the
+    Figure 5: Emotion Value Scatter Distribution Diagram                      online health community for children with autism is shown in
+                                                                              Figure 6.
+                                                                                  The specific functional and interaction design of the online health
+                                                                              community for autism is as follows:
+                                                                                  (1) Design based on the overall network structure characteris-
+                                                                              tics of the autism online health community,the platform can adopt
+each sentiment value. The position and density of the points visu-            a group model design to leverage the clustering effect of social
+ally depict the emotional trend, from negative to positive. The plot          networks, bringing together users with similar interests. Social
+approximately follows a normal distribution, reflecting the general           modules based on user preferences enhance the user experience and
+emotional pattern.                                                            boost engagement.[13] . Users can create or join groups indepen-
+   The textual content of “Autism Bar” clearly demonstrates emo-              dently, with the platform also recommending relevant groups based
+tional characteristics. Negative emotions spread rapidly and have             on behavioral data. Group administrators help improve information
+a broad impact, which requires attention and careful consideration.           quality and interaction efficiency.
+Negativity on the platform arises from several factors. First, the                (2) Design based on individual network characteristics, A mul-
+chronic stress faced by caregivers of children with autism—such               tidimensional algorithm combining social position, content, and
+as financial strain, social stigma, and physical exhaustion—often             emotion identifies high-activity, high-influence users as opinion
+leads to anxiety, helplessness, and depression. Second, the lack of           leaders. This study proposes a dual-track mechanism for opin-
+systematic support exacerbates these emotions, with many families             ion leader selection in online health communities, employing a
+relying on online communities as their primary outlet. Additionally,          human–machine collaborative approach. On one track, candi-
+the promotion of highly discussed controversial content triggers an           dates are sourced through institutional recommendations and self-
+“emotional contagion” effect. This may ultimately shift discussions           nomination, followed by manual review and professional assess-
+toward passivity and negativity, undermining the community’s                  ment to verify practical experience and domain expertise. On the
+supportive role.                                                              other track, the mechanism integrates Latent Dirichlet Allocation
+                                                                              (LDA) topic modeling and sentiment analysis to enhance a mod-
+                                                                              ified PageRank algorithm for evaluating user influence. This ad-
+6    Analysis and Summary                                                     dresses common issues such as topic ambiguity, emotional bias, and
+The social network structure of “Autism Bar” emphasizes the cru-              distorted influence metrics. The multidimensional algorithm dy-
+cial role of opinion leaders and their significant influence on the           namically adjusts influence scores based on users’ topic relevance
+community. Therefore, an online health community model cen-                   and interaction depth, incorporating an emotion regulation factor
+tered on opinion leaders can be established, with a management                (𝛼) to respond in real time to shifts in community sentiment. By
+system to regulate them, ensuring effective social guidance and               combining algorithmic ranking with human validation, the system
+macro control.                                                                effectively identifies the top 5% of high-quality opinion leaders,
+   Text analysis categorizes the community based on users’ focus              thereby facilitating knowledge dissemination and emotional sup-
+areas and interaction purposes, enhancing user retention. “Autism             port within autism-related health communities. The text is divided
+Bar” exhibits strong emotional characteristics, with emotional risks          into K topics, with 𝜇 denoting the importance of subtopic k to the
+that may create tension and resistance. An interest group model can           overall community, taking values in the range [0, 1]. Let 𝜃 u,k repre-
+be developed, allowing users to self-organize, identify emotional             sent the probability that node u belongs to topic k. Then, the global
+trends, and facilitate emotional regulation..
+
+
+
+
+                                                                        557
+
+===== PDF PAGE 7 / 9 =====
+Interaction Design of ASD Children’s Online Health Community Based on Social Network Structure and User
+Behavior Analysis                                                                                             ICDSIC 2025, November 07–09, 2025, Guangzhou, China
+
+
+
+
+                              Figure 6: Functional Architecture Diagram of the Autism Online Health Platform
+
+
+influence score of a connected node v is defined as:                                   resources to user posts and organize need-based groups (e.g., single-
+                                             K                                         parent, school-age), aided by AI-generated discussion prompts and
+                                                                           (6)
+                                             Í
+        S (v) = 𝜇 · PRglobal (v) + (1 − 𝜇) ·   𝜃 u,k · PRk (v)                         expert Q&A sessions to turn fragmented emotions into shared,
+                                                k=1
+                                                                                       structured knowledge. Setting an emotional feedback function,
+   To incorporate emotional regulation into the results, the sen-                      including likes, comments, and emojis, is implemented to encour-
+timent value E is defined within the range of −1 to 1. The final                       age emotional expression. A dedicated emotional support section
+formula is expressed as follows:                                                       fosters mutual assistance and encourages positive emotional inter-
+                          0
+                       S (v) = S (v) · (1 + 𝛼 · E)                         (7)         action, enhancing the community atmosphere.
+                                                                                           (4) Design based on other directions:
+   Regular feedback dynamically adjusts leader selection. Positions                        Further refinement of the platform’s interface design, user experi-
+like moderators and “health ambassadors” are assigned to enhance                       ence and community atmosphere can be enhanced through targeted
+engagement, with a reward system in place. Opinion leaders receive                     features. For instance, an emotional labeling system guides content
+resources, including training and content tools, to boost influence                    flow by requiring users to classify posts as help-seeking, neutral, or
+and credibility. They are encouraged to share personal experiences,                    positive—visually coded in red, yellow, and green with reinforcing
+professional knowledge, and treatment advice, and participate in                       icons. The daily quick record function uses a smart “+” button to
+Q&A and online seminars to expand their positive impact.                               offer emoji check-in, voice shorthand, and template input. Parents
+   (3) Design based on the text topic model:                                           can log key data (e.g., mood or training progress) in seconds, with
+   The community is organized into topic modules, covering areas                       entries timestamped into summary cards. These are processed into
+like theoretical knowledge, institution introductions, and emotional                   visual timelines showing mood trends, intervention overlap, and
+support. A clear labeling system allows users to easily find rele-                     linked media. A pinch gesture activates comparison mode, dis-
+vant information. An incentive system encourages participation,                        playing monthly interaction data side-by-side, while AI highlights
+and high-quality posts are highlighted to increase visibility and                      developmental milestones. Selecting the red “Help” tab triggers a
+engagement.                                                                            popup with local counseling resources. Topic-specific tabs and label
+   To mitigate negative sentiment, platforms can reshape commu-                        filters, along with dynamic badges (e.g., an animated sunflower for
+nity dynamics through multidimensional design. At the content                          every 100 clicks), incentivize constructive participation and reduce
+level, balancing algorithms and emotional triage mechanisms—such                       negative content overload through gamified interaction.
+as mandatory labeling, categorization, and adjusted recommenda-                            Given the community’s sensitivity, privacy is ensured via a
+tion weights—can limit negative content while promoting construc-                      “double-mask” anonymous posting system, which hides user iden-
+tive posts like expert Q&As and rehabilitation cases. Incentives                       tity, location, and device data. Anonymous posts appear as abstract
+like visual badges may further encourage positive sharing. Using                       icons, revealing only current content while concealing history and
+emotion management tools, such as AI-assisted diaries, can detect                      social links. A “burn after reading” option allows uploaded images
+persistent negativity and suggest coping strategies like breathing                     to auto-delete within 24 hours, with backend encryption prevent-
+exercises or counseling resources, guiding users from emotional re-                    ing full data recovery even in case of leaks. These features offer
+lease to problem-solving. A tiered support system can link relevant
+
+
+
+
+                                                                                 558
+
+===== PDF PAGE 8 / 9 =====
+ICDSIC 2025, November 07–09, 2025, Guangzhou, China                                                                                         Xiaowen Liu et al.
+
+
+
+
+                                      Figure 7: High-Fidelity Prototype Diagram of the APP Interface
+
+
+emotional support while safeguarding privacy, enabling vulnerable          small-world effect. There are numerous subgroups, but their con-
+users to engage safely and empathetically.                                 nections are not tight, the topic classification is relatively clear, and
+   Color psychology is applied in the interface design, using warm         the sentiment is predominantly negative. Based on the obtained
+and cool colors to highlight key areas. A minimalist approach en-          characteristics, a functional interaction system design for the on-
+sures harmony in layout, text formatting, and background colors            line health platform for children with autism has been developed.
+for a pleasant user experience. Calm blue and warm yellow are              However, the overall platform design still has some shortcomings.
+chosen for their therapeutic effects, promoting relaxation and alle-       The study only collected user interaction data from a single plat-
+viating negative emotions. The consistent color scheme enhances            form, and data from other small platforms can be introduced in the
+familiarity, comfort, and user satisfaction.                               future to verify the theoretical accuracy. The reliability of the user
+   Additionally, the navigation menu should be intuitive, enabling         influence algorithm remains to be validated. In the future, computa-
+users to quickly find needed functions and pages. Clear visual             tional screening of large datasets can be conducted to compare the
+or auditory feedback for actions improves user control, reduces            accuracy improvement of this algorithm with that of other meth-
+errors, and enhances efficiency[14] . To enhance user experience, the      ods. Further optimization of the platform could enhance program
+platform should simplify task completion by reducing unnecessary           development by incorporating dynamic effects through computer
+steps. Personalized settings, such as adjustable layout and font size,     programming and conducting effectiveness evaluations.
+will allow users to tailor the interface to their needs, improving
+convenience and satisfaction while accommodating diverse user
+                                                                           References
+preferences for ease of use.
+                                                                           [1] Peng Tingting, Sun Yumei. A review of emotional regulation disorders and
+   Based on the design mentioned above, the design practice is                 intervention methods in children with autism spectrum disorder. Modern Special
+carried out, and the high-fidelity prototype of the app interface is           Education, 2024, (16): 55-64.
+                                                                           [2] Hu Ronggui, Wei Xiangqi, Zhang Wenyang. Progress in research on autism
+shown in Figure 7.                                                             spectrum disorder. World Science, 2023, (11): 33-36.
+                                                                           [3] Five-colored Deer Children’s Behavior Correction Center. Report on the devel-
+8    Conclusion                                                                opment status of China’s autism education and rehabilitation industry. Beijing:
+                                                                               Beijing Normal University Press, 2015.
+This paper conducts an in-depth analysis of the overall interac-           [4] Zhang Lie, Wang Wei, Jia Meng. Design of rehabilitation service systems for
+tion system of Baidu Tieba’s “Autism Bar” from two perspectives:               children with autism on new-generation internet platforms. Decoration, 2015,
+                                                                               (06): 43-45.
+social network and user behavior. The social network of Baidu              [5] Xu Xiaoting, Yang Mengqing, Song Xiaokang. Research on the impact of doctor
+“Autism Bar” shows a dense center with sparse edges, exhibiting a              reputation on patient choice in online health communities: A case study of Haodf
+
+
+
+
+                                                                     559
+
+===== PDF PAGE 9 / 9 =====
+Interaction Design of ASD Children’s Online Health Community Based on Social Network Structure and User
+Behavior Analysis                                                                                                       ICDSIC 2025, November 07–09, 2025, Guangzhou, China
+
+
+     Online. Modern Information, 2019, 39(08): 20-28+36.                                     [10] Duan Yajing. A review of research on social network theory. Jiangsu Business
+ [6] Van Oerle S, Mahr D, Lievens A. Coordinating online health communities for                   Review, 2024, (06): 139-141.
+     cognitive and affective value creation. Journal of Service Management, 2016, 27(4):     [11] Lian Xin, Zhu Wenhao, Wang Zhe. Research on the trade network between China
+     481-506.                                                                                     and Latin American countries from the perspective of social network theory.
+ [7] Wang Peiyao. Emotional interaction analysis of parents of children with autism               China Price, 2024, (10): 91-96.
+     in online health communities. Southwest University, 2024.                               [12] Zhao Tiejun, Xu Mufan, Chen Andong. A review of natural language processing
+ [8] Ni Zhenni, Wang Chunyang, Si Xiangyun. Analysis of the differences in knowl-                 research. Journal of Xinjiang Normal University (Philosophy and Social Sciences
+     edge sharing and the spread of false information in online health communities                Edition), 2025, (02): 1-23. [2024-11-17].
+     from the perspective of social networks. Information Theory and Practice, 2023,         [13] Ding Jie, Jiang Xiao, Li Yang. Research on the design of social network service
+     46(07): 67-75.                                                                               platforms based on user interests. Design, 2017, (08): 114-115.
+ [9] Deng Jun, Zhong Chuyi, Chang Yanyu, et al. Research on the interaction behavior         [14] Shi Mingxi, Guo Qihan, Li Jingyong. Research on the design of regional public
+     of opinion leaders in online health communities based on two-level diffusion                 brand APPs from the perspective of user emotional experience. Design, 2024,
+     theory: A case study of Baidu “Autism Bar.” Information Theory and Practice, 2022,           37(15): 142-146.
+     45(01): 127-133+111.
+
+
+
+
+                                                                                       560

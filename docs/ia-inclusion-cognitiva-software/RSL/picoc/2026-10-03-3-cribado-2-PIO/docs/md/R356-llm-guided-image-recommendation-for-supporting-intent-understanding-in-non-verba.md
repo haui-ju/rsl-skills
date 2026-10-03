@@ -1,0 +1,821 @@
+# LLM-Guided Image Recommendation for Supporting Intent
+
+> Fuente PDF: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf` · técnica **locator index** (página + ancla) + chunks Graphify
+
+## Metadata
+- Stem: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba`
+- PDF: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf`
+- DOI: `10.1145/3764687.3769943`
+- Pages: `8`
+- Structured_at: `2026-10-03T23:23:16+00:00`
+- Technique: `pdf-page-locators + heading-chunks`
+
+## Locator index (qué hay y en qué página del PDF)
+
+| Kind | Label | PDF page | MD anchor |
+|------|-------|----------|-----------|
+| abstract | Abstract / blurb | 1 | `#abstract` |
+| section | 2.1 Contextual Image Recommendation for | 2 | `#p2-2-1-contextual-image-recommendation-for` |
+| section | 1 Australian National Disability Insurance Scheme | 2 | `#p2-1-australian-national-disability-insurance-scheme` |
+| section | 3.2 Prompt Design and Concept Expansion | 3 | `#p3-3-2-prompt-design-and-concept-expansion` |
+| section | 3 Methodology | 3 | `#p3-3-methodology` |
+| section | 2 This is my favourite food | 4 | `#p4-2-this-is-my-favourite-food` |
+| section | 3 I love eating food                                                                        5 | 4 | `#p4-3-i-love-eating-food-5` |
+| section | 5 I want to eat healthy food to lose weight                        6 | 4 | `#p4-5-i-want-to-eat-healthy-food-to-lose-weight-6` |
+| section | 6 I am hungry | 4 | `#p4-6-i-am-hungry` |
+| section | 8 I want to eat fruit and vegetables | 4 | `#p4-8-i-want-to-eat-fruit-and-vegetables` |
+| section | 9 I want you to come and learn how to cut fruits                                       10 | 4 | `#p4-9-i-want-you-to-come-and-learn-how-to-cut-fruits-10` |
+| section | 10 I like orange | 4 | `#p4-10-i-like-orange` |
+| section | 11 I want you to decorate the food like this and | 4 | `#p4-11-i-want-you-to-decorate-the-food-like-this-and` |
+| section | 12 I want to go for grocery shopping | 4 | `#p4-12-i-want-to-go-for-grocery-shopping` |
+| section | 13 I want to make a juice | 4 | `#p4-13-i-want-to-make-a-juice` |
+| section | 3.4 Evaluation | 4 | `#p4-3-4-evaluation` |
+| section | 4 Results | 5 | `#p5-4-results` |
+| section | 5.2 Mismatches between visual queries and | 6 | `#p6-5-2-mismatches-between-visual-queries-and` |
+| section | 6 Conclusion | 7 | `#p7-6-conclusion` |
+| section | 2016 Conference of the North American Chapter of the Association for Computational | 8 | `#p8-2016-conference-of-the-north-american-chapter-of-the-association-for-computat` |
+| concept | R356 | ? | `#concept-r356` |
+| concept | guided | ? | `#concept-guided` |
+| concept | image | ? | `#concept-image` |
+| concept | recommendation | 1 | `#concept-recommendation` |
+| concept | supporting | ? | `#concept-supporting` |
+| concept | intent | ? | `#concept-intent` |
+| concept | understanding | 1 | `#concept-understanding` |
+| concept | verba | ? | `#concept-verba` |
+| finding | ACM Reference Format: Individuals with intellectual disability and limited verbal abilitie… | 1 | `#finding-acm-reference-format-individuals-with-i` |
+| finding | LLM-Guided Image Recommendation for Support- often struggle to express complex ideas or in… | 1 | `#finding-llm-guided-image-recommendation-for-supp` |
+| finding | ing Intent Understanding in Non-Verbal Communication. | 1 | `#finding-ing-intent-understanding-in-non-verbal-c` |
+| finding | In 37th Australian Generic image-based communication boards offer opportunities Conference… | 1 | `#finding-in-37th-australian-generic-image-based-c` |
+| finding | To sup- 29–December 03, 2025, Sydney, Australia. | 1 | `#finding-to-sup-29-december-03-2025-sydney-au` |
+| finding | The system is evaluated through early- ties. | 1 | `#finding-the-system-is-evaluated-through-early-t` |
+| page | p.1: LLM-Guided Image Recommendation for Supporting Intent | 1 | `#pdf-p1` |
+| page | p.2: entities, activities, and occasions—identified in our prior work [11], 2 Related Work and  | 2 | `#pdf-p2` |
+| page | p.3: (1) GPT-Based Concept Expansion (2) Concept Selection (MMR) (3) Image Search | 3 | `#pdf-p3` |
+| page | p.4: Sample human annotations | 4 | `#pdf-p4` |
+| page | p.5: intellectual disability and are familiar with interpreting communica- deemed valid by at l | 5 | `#pdf-p5` |
+| page | p.6: not providing sufficient recommendations that can help the variety at least two annotators | 6 | `#pdf-p6` |
+| page | p.7: Figure 4: Intent coverage and entropy distributions based on human annotations over all an | 7 | `#pdf-p7` |
+| page | p.8: References developmental or acquired disabilities: State of the science and future researc | 8 | `#pdf-p8` |
+
+## Abstract
+<a id="abstract"></a>
+
+ACM Reference Format: Individuals with intellectual disability and limited verbal abilities Alieh Hajizadeh Saffar, Laurianne Sitbon, Sirinthip Roomkham, Maja Hjuler, and Yik Yu Cheng. 2025. LLM-Guided Image Recommendation for Support- often struggle to express complex ideas or initiate conversations. ing Intent Understanding in Non-Verbal Communication. In 37th Australian Generic image-based communication boards offer opportunities Conference on Human-Computer Interaction (HCI) (OZCHI ’25), November for open-ended self-expression beyond structured symbols. To sup- 29–December 03, 2025, Sydney, Australia. ACM, New York, NY, USA, 8 pages. port users in constructing and refining visual messages on these https://doi.org/10.1145/3764687.3769943 boards, this paper presents an image recommendation prototype that provides contextually relevant suggestions to help clarify the intent behind an initial image selection. Powered by large language 1 Introduction models (LLMs), the system infers potential communicative intents Generic images, such as photographs, are rich in valuable context of the initial image and expands its concepts to support ongoing that can enrich assistive communication technologies designed for image-based interaction, rather than relying on linguistic input individuals with intellectual disability and minimal verbal abili- or symbolic suggestions. The system is evaluated through early- ties. Such images can support self-expression and social interaction stage quantitative and human assessments of recommendations [10, 23] without relying on verbal language or symbolic systems like on a dataset of authentic user-selected images and associated in- those used in traditional Augmentative and Alternative Communi- tents. We present early evidence of the system’s potential to help cation (AAC) approaches[2]. Prior work has incorporated generic users build rich narratives by suggesting diverse images across images into interfaces like Visual Scene Displays (VSDs) [1], which communicative targets, while noting challenges and opportunities offer a more intuitive and flexible means of practicing communi- to improve its communicative flexibility. cation. However, VSDs typically require hotspots pre-defined by speech therapists or family members, limiting users’ independence in initiating or navigating conversations around topics of their CCS Concepts choosing. The potential of using generic image browsers as open- • Social and professional topics → People 
+
+## Keywords
+
+- _(none auto-detected)_
+
+## Concept index (graph hooks + página)
+
+<a id="concept-r356"></a>
+### [PDF p.?] Concept: R356
+- Locator: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf` · página **?**
+
+<a id="concept-guided"></a>
+### [PDF p.?] Concept: guided
+- Locator: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf` · página **?**
+
+<a id="concept-image"></a>
+### [PDF p.?] Concept: image
+- Locator: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf` · página **?**
+
+<a id="concept-recommendation"></a>
+### [PDF p.1] Concept: recommendation
+- Locator: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf` · página **1**
+
+<a id="concept-supporting"></a>
+### [PDF p.?] Concept: supporting
+- Locator: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf` · página **?**
+
+<a id="concept-intent"></a>
+### [PDF p.?] Concept: intent
+- Locator: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf` · página **?**
+
+<a id="concept-understanding"></a>
+### [PDF p.1] Concept: understanding
+- Locator: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf` · página **1**
+
+<a id="concept-verba"></a>
+### [PDF p.?] Concept: verba
+- Locator: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf` · página **?**
+
+
+## Findings index (graph hooks + página)
+
+<a id="finding-acm-reference-format-individuals-with-i"></a>
+### [PDF p.1] Finding: ACM Reference Format: Individuals with intellectual disability and limited verbal abilities Alieh Hajizadeh Saffar, Laurianne Sitbon, Sirinthip Roomkham, Maja Hjuler, and Yik Yu Cheng.
+- Locator: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf` · página **1**
+
+<a id="finding-llm-guided-image-recommendation-for-supp"></a>
+### [PDF p.1] Finding: LLM-Guided Image Recommendation for Support- often struggle to express complex ideas or initiate conversations.
+- Locator: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf` · página **1**
+
+<a id="finding-ing-intent-understanding-in-non-verbal-c"></a>
+### [PDF p.1] Finding: ing Intent Understanding in Non-Verbal Communication.
+- Locator: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf` · página **1**
+
+<a id="finding-in-37th-australian-generic-image-based-c"></a>
+### [PDF p.1] Finding: In 37th Australian Generic image-based communication boards offer opportunities Conference on Human-Computer Interaction (HCI) (OZCHI ’25), November for open-ended self-expression beyond structured symbols.
+- Locator: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf` · página **1**
+
+<a id="finding-to-sup-29-december-03-2025-sydney-au"></a>
+### [PDF p.1] Finding: To sup- 29–December 03, 2025, Sydney, Australia.
+- Locator: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf` · página **1**
+
+<a id="finding-the-system-is-evaluated-through-early-t"></a>
+### [PDF p.1] Finding: The system is evaluated through early- ties.
+- Locator: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf` · página **1**
+
+
+## Relevance hooks
+### Theme relevance: software engineering and accessibility
+### Theme relevance: cognitive accessibility and neurodiversity
+### Theme relevance: evaluation metrics and WCAG
+
+## Sections (detected in PDF)
+
+<a id="p2-2-1-contextual-image-recommendation-for"></a>
+### [PDF p.2] Section: 2.1 Contextual Image Recommendation for
+- Locator: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf` · página **2** · ancla `#p2-2-1-contextual-image-recommendation-for`
+
+<a id="p2-1-australian-national-disability-insurance-scheme"></a>
+### [PDF p.2] Section: 1 Australian National Disability Insurance Scheme
+- Locator: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf` · página **2** · ancla `#p2-1-australian-national-disability-insurance-scheme`
+
+<a id="p3-3-2-prompt-design-and-concept-expansion"></a>
+### [PDF p.3] Section: 3.2 Prompt Design and Concept Expansion
+- Locator: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf` · página **3** · ancla `#p3-3-2-prompt-design-and-concept-expansion`
+
+<a id="p3-3-methodology"></a>
+### [PDF p.3] Section: 3 Methodology
+- Locator: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf` · página **3** · ancla `#p3-3-methodology`
+
+<a id="p4-2-this-is-my-favourite-food"></a>
+### [PDF p.4] Section: 2 This is my favourite food
+- Locator: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf` · página **4** · ancla `#p4-2-this-is-my-favourite-food`
+
+<a id="p4-3-i-love-eating-food-5"></a>
+### [PDF p.4] Section: 3 I love eating food                                                                        5
+- Locator: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf` · página **4** · ancla `#p4-3-i-love-eating-food-5`
+
+<a id="p4-5-i-want-to-eat-healthy-food-to-lose-weight-6"></a>
+### [PDF p.4] Section: 5 I want to eat healthy food to lose weight                        6
+- Locator: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf` · página **4** · ancla `#p4-5-i-want-to-eat-healthy-food-to-lose-weight-6`
+
+<a id="p4-6-i-am-hungry"></a>
+### [PDF p.4] Section: 6 I am hungry
+- Locator: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf` · página **4** · ancla `#p4-6-i-am-hungry`
+
+<a id="p4-8-i-want-to-eat-fruit-and-vegetables"></a>
+### [PDF p.4] Section: 8 I want to eat fruit and vegetables
+- Locator: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf` · página **4** · ancla `#p4-8-i-want-to-eat-fruit-and-vegetables`
+
+<a id="p4-9-i-want-you-to-come-and-learn-how-to-cut-fruits-10"></a>
+### [PDF p.4] Section: 9 I want you to come and learn how to cut fruits                                       10
+- Locator: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf` · página **4** · ancla `#p4-9-i-want-you-to-come-and-learn-how-to-cut-fruits-10`
+
+<a id="p4-10-i-like-orange"></a>
+### [PDF p.4] Section: 10 I like orange
+- Locator: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf` · página **4** · ancla `#p4-10-i-like-orange`
+
+<a id="p4-11-i-want-you-to-decorate-the-food-like-this-and"></a>
+### [PDF p.4] Section: 11 I want you to decorate the food like this and
+- Locator: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf` · página **4** · ancla `#p4-11-i-want-you-to-decorate-the-food-like-this-and`
+
+<a id="p4-12-i-want-to-go-for-grocery-shopping"></a>
+### [PDF p.4] Section: 12 I want to go for grocery shopping
+- Locator: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf` · página **4** · ancla `#p4-12-i-want-to-go-for-grocery-shopping`
+
+<a id="p4-13-i-want-to-make-a-juice"></a>
+### [PDF p.4] Section: 13 I want to make a juice
+- Locator: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf` · página **4** · ancla `#p4-13-i-want-to-make-a-juice`
+
+<a id="p4-3-4-evaluation"></a>
+### [PDF p.4] Section: 3.4 Evaluation
+- Locator: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf` · página **4** · ancla `#p4-3-4-evaluation`
+
+<a id="p5-4-results"></a>
+### [PDF p.5] Section: 4 Results
+- Locator: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf` · página **5** · ancla `#p5-4-results`
+
+<a id="p6-5-2-mismatches-between-visual-queries-and"></a>
+### [PDF p.6] Section: 5.2 Mismatches between visual queries and
+- Locator: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf` · página **6** · ancla `#p6-5-2-mismatches-between-visual-queries-and`
+
+<a id="p7-6-conclusion"></a>
+### [PDF p.7] Section: 6 Conclusion
+- Locator: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf` · página **7** · ancla `#p7-6-conclusion`
+
+<a id="p8-2016-conference-of-the-north-american-chapter-of-the-association-for-computat"></a>
+### [PDF p.8] Section: 2016 Conference of the North American Chapter of the Association for Computational
+- Locator: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf` · página **8** · ancla `#p8-2016-conference-of-the-north-american-chapter-of-the-association-for-computat`
+
+
+## Page chunks (texto por página del PDF)
+
+_Cada heading es un nodo Graphify. El label incluye la página para volver al PDF sin releer todo._
+
+<a id="pdf-p1"></a>
+### [PDF p.1] LLM-Guided Image Recommendation for Supporting Intent
+- Locator: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf` · página **1** / 8
+
+LLM-Guided Image Recommendation for Supporting Intent
+           Understanding in Non-Verbal Communication
+           Alieh Hajizadeh Saffar                                         Laurianne Sitbon                                Sirinthip Roomkham
+        School of Computer Science                                School of Computer Science                          School of Computer Science
+    Queensland University of Technology                       Queensland University of Technology                 Queensland University of Technology
+            Brisbane, Australia                                        Brisbane, Australia                                 Brisbane, Australia
+        a.hajizadeh@hdr.qut.edu.au                                    l.sitbon@qut.edu.au                              s.roomkham@qut.edu.au
+
+                                                 Maja Hjuler                                          Yik Yu Cheng
+                                     School of Computer Science                               School of Computer Science
+                                 Queensland University of Technology                      Queensland University of Technology
+                                         Brisbane, Australia                                      Brisbane, Australia
+                                  majajoenck.hjuler@hdr.qut.edu.au                         yikyu.cheng@connect.qut.edu.au
+
+Abstract                                                                                   ACM Reference Format:
+Individuals with intellectual disability and limited verbal abilities                      Alieh Hajizadeh Saffar, Laurianne Sitbon, Sirinthip Roomkham, Maja Hjuler,
+                                                                                           and Yik Yu Cheng. 2025. LLM-Guided Image Recommendation for Support-
+often struggle to express complex ideas or initiate conversations.
+                                                                                           ing Intent Understanding in Non-Verbal Communication. In 37th Australian
+Generic image-based communication boards offer opportunities                               Conference on Human-Computer Interaction (HCI) (OZCHI ’25), November
+for open-ended self-expression beyond structured symbols. To sup-                          29–December 03, 2025, Sydney, Australia. ACM, New York, NY, USA, 8 pages.
+port users in constructing and refining visual messages on these                           https://doi.org/10.1145/3764687.3769943
+boards, this paper presents an image recommendation prototype
+that provides contextually relevant suggestions to help clarify the
+intent behind an initial image selection. Powered by large language                        1    Introduction
+models (LLMs), the system infers potential communicative intents                           Generic images, such as photographs, are rich in valuable context
+of the initial image and expands its concepts to support ongoing                           that can enrich assistive communication technologies designed for
+image-based interaction, rather than relying on linguistic input                           individuals with intellectual disability and minimal verbal abili-
+or symbolic suggestions. The system is evaluated through early-                            ties. Such images can support self-expression and social interaction
+stage quantitative and human assessments of recommendations                                [10, 23] without relying on verbal language or symbolic systems like
+on a dataset of authentic user-selected images and associated in-                          those used in traditional Augmentative and Alternative Communi-
+tents. We present early evidence of the system’s potential to help                         cation (AAC) approaches[2]. Prior work has incorporated generic
+users build rich narratives by suggesting diverse images across                            images into interfaces like Visual Scene Displays (VSDs) [1], which
+communicative targets, while noting challenges and opportunities                           offer a more intuitive and flexible means of practicing communi-
+to improve its communicative flexibility.                                                  cation. However, VSDs typically require hotspots pre-defined by
+                                                                                           speech therapists or family members, limiting users’ independence
+                                                                                           in initiating or navigating conversations around topics of their
+CCS Concepts
+                                                                                           choosing. The potential of using generic image browsers as open-
+• Social and professional topics → People with disabilities;                               ended communication aids [10, 11, 23] has also been explored. These
+• Information systems → Query reformulation; • Human-                                      systems support communication by enabling users to interactively
+centered computing → Accessibility design and evaluation                                   search for images without using text. The system recommends ad-
+methods.                                                                                   ditional images based on the user’s image query, allowing users
+                                                                                           to arrange them on a board, initiate conversations, and construct
+Keywords                                                                                   messages visually. This provides visual cues that help the audience
+Intent-based Image Recommendation, Assistive Communication,                                understand, respond, and ask follow-up questions [10, 11, 23].
+Intellectual Disability, Visual Query Expansion, Image-based Com-                             Still, a key challenge remains in using image browsers for in-
+munication                                                                                 teractive image search: current image retrieval algorithms focus
+                                                                                           on retrieving based on visual similarity, not communicative intent,
+                                                                                           limiting meaningful interaction. Recommending contextually rele-
+                                                                                           vant images for a User-selected visual query might support intent
+                                                                                           clarification and facilitate the audience comprehension [10].
+                                                                                              We present an intent-based image recommendation system that
+This work is licensed under a Creative Commons Attribution 4.0 International License.      leverages LLMs to expand image concepts through the generation
+OZCHI ’25, Sydney, Australia                                                               of related terms, enabling more relevant image recommendations.
+© 2025 Copyright held by the owner/author(s).
+ACM ISBN 979-8-4007-2016-1/25/11                                                           This system builds on different aspects of ambiguity in the com-
+https://doi.org/10.1145/3764687.3769943                                                    municative intent of images—such as ambiguity around locations,
+
+
+
+
+                                                                                    912
+
+<a id="pdf-p2"></a>
+### [PDF p.2] entities, activities, and occasions—identified in our prior work [11], 2 Related Work and Background
+- Locator: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf` · página **2** / 8
+
+OZCHI ’25, November 29–December 03, 2025, Sydney, Australia       Alieh Hajizadeh Saffar, Laurianne Sitbon, Sirinthip Roomkham, Maja Hjuler, and Yik Yu Cheng
+
+
+entities, activities, and occasions—identified in our prior work [11],      2 Related Work and Background
+while also leveraging recent advances in LLMs (e.g., GPT) that
+                                                                            2.1 Contextual Image Recommendation for
+have shown potential in interpreting communicative intent and
+generating conceptual associations [8, 11]. Building on our prior               Assistive Communication
+qualitative analysis of how individuals with intellectual disability        Personalized Augmentative and Alternative Communication (AAC)
+use generic images for self-expression [10, 11], the recommendation         systems and Visual Scene Displays (VSDs) have shown promise
+system is meant to be operationalized into a working prototype              in improving user engagement by incorporating familiar environ-
+for non-verbal communication. In the prototype, users first select          ments and customized visual content [1, 17]. Recent work explores
+an image from a screen presenting 20 to 50 images, depending                contextual visual symbol recommendations for structured activities
+on the configuration. The images are either selected randomly or            like dining [21] or board games, and parent-child conversations [4].
+selected to represent defined categories, from a very large image           Context-aware AAC systems leverage cues to predict and suggest
+collection of photographs. The multiple meanings carried by the             relevant vocabulary [14], though navigating large vocabularies in
+generic images enable users to always find a visual that relates to         real-time remains a challenge.
+what they wish to express, however it can sometimes be related                  Some studies have proposed generating “just-in-time” commu-
+through concept association, or through a small detail of an image          nication aids for input photographs, for example, by using visual
+rather than its full description. For instance, to find tomatoes, they      storytelling dataset as contextual information [7, 13]. Vargas et al.
+might select images of pizza, or to find bread, they might refer to         [7] used large language models (LLMs) to provide situation-specific
+images of donuts [10]                                                       vocabulary and AAC symbols based on visual inputs. However,
+   The goal of the recommendation system is to allow users to               in these approaches, while users can initiate a conversation with
+iteratively refine their initial selection until they find an image         generic images, they must continue it linguistically by selecting
+that best expresses their idea. This open-ended intent expansion            appropriate vocabulary and AAC symbols, a process that requires
+represents a significant step beyond topic-specific vocabulary or           matching abstract symbols to concepts and recalling specific words,
+static intent classification, providing a flexible, user-driven way to      which can be challenging for some individuals with minimal verbal
+express complex ideas visually. Imagine an adult with intellectual          ability. Similarly, AccessTalk facilitated parent–child interaction by
+disability wanting to express a desire to swim at the beach but             guiding conversations and suggesting relevant vocabulary cards
+unable to verbalize it. With caregiver support, she selects a beach         aligned with the conversational context. It used LLMs to generate
+image from a limited image grid, and the system suggests related            parental guidance and curate cards based on the parent’s voice
+images like waves, sunshine, or swimmers. By choosing a swimming            input (transcribed into text) and the child’s input through selected
+image, she clarifies her intent, making communication faster and            cards [4]. In this app, the conversation still begins with parents
+more intuitive than using predefined categories or text.                    selecting topic cards and relies on the child’s ability to understand
+   In this paper, we assess the potential of recommended images             the symbolic categories (topic, action, and emotion) and match the
+through the lens of relevance based on real user data, and with             cards to intended meanings to continue the conversation.
+assessors who would be potential communication partners. The                    The Canvis web application enabled people with intellectual
+more closely the system’s logic aligns with users’ own strategies for       disability to select generic images through a browsing-based inter-
+accessing and selecting images, the better it can reflect their commu-      face as a non-verbal communication method [3, 23]. Canvis was
+nicative intents and effectively support meaningful communication.          deployed as a technology probe to facilitate communication during
+Therefore, the prototype design is informed by data from our earlier        National Disability Insurance Scheme (NDIS)1 planning meetings,
+co-design workshops with individuals with intellectual disabilities,        helping researchers explore communication control, agency, and
+where 20 user-selected images and their associated communicative            engagement in these bureaucratic support processes. Hajizadeh et
+intents were collected [11]. It also draws on observations from a           al. [10, 11] demonstrated the potential of generic image browsers
+case study at a disability organization that examined how generic           to support personal connection and group participation for people
+images are used in communication, highlighting contexts, require-           with intellectual disability. Their studies also revealed key chal-
+ments, opportunities, and challenges [10]. This dataset is expanded         lenges in such a prototype, including limited image collections,
+through a crowdsourcing project that gathers additional intent              recommendation algorithms that relied solely on visual similarity,
+guesses beyond the initial user selections. We use this combined            and resulting issues of image accessibility, ambiguity, and intent in-
+data to evaluate how effectively our system can recommend images            terpretation. They emphasized the need for image recommendation
+that help clarify both the actual user intent and alternative intent        systems capable of inferring potential user intents from behaviour
+guesses. Human annotators assess the helpfulness of the recom-              and feedback, and of providing diverse, meaningful, personalized,
+mended images in clarifying intent. Quantitative metrics for intent         and context-aware visual suggestions to enhance communicative
+coverage and diversity are computed to show the system’s potential          effectiveness.
+and identify areas for improvement prior to broader user studies.
+This early-stage evaluation lays the groundwork for developing              2.2      Intent-based image recommendation
+more functional assistive technologies that support non-verbal com-         Intent detection has been proposed in image search engines, social
+munication.                                                                 media platforms, and conversational agents to support more natu-
+                                                                            ral and personalized image recommendations [9, 26, 29]. However,
+                                                                            1 Australian National Disability Insurance Scheme
+
+
+
+
+                                                                     913
+
+<a id="pdf-p3"></a>
+### [PDF p.3] (1) GPT-Based Concept Expansion (2) Concept Selection (MMR) (3) Image Search
+- Locator: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf` · página **3** / 8
+
+LLM-Guided Image Recommendation for Supporting Intent Understanding in Non-Verbal Communication                                  OZCHI ’25, November 29–December 03, 2025, Sydney, Australia
+
+
+
+
+                        (1) GPT-Based Concept Expansion                                 (2) Concept Selection (MMR)                           (3) Image Search
+
+                                                                                  1. kitchen
+                'locations': ['kitchen', 'garden', 'farmers market', …],          2. a person is arranging fruits on a cutting            Text
+                'occasions': ['breakfast', 'snack time', 'summer picnic', …],        board.
+                                                                                                                                       Embeddings    Cosine
+                'activities': ['slicing', 'blending', 'juicing',],                3. sliced carrots                                                 Similarity
+                'sentences': ['a person is slicing apples and carrots.’,          4. pears
+                                                                                                                                                        Image
+                        'a person is blending fruits for a smoothie.',…],         5. a person is drinking a freshly made                              Embeddings
+                'intents': ['I want to make fresh juice.’,                           smoothie.
+                          'I enjoy preparing healthy drinks.',…],                 6. a person is peeling oranges.
+                'entities': ['apples', 'carrots', 'citrus fruits', …],            7. cubed apples
+                                                                                                                                               CLIP Image Encoder
+                'sameEnt': ['grapes', 'pears', 'mangoes', …],                     N. …….
+                'lowEnt': ['sliced apples', 'orange juice',…],
+                'highEnt': ['fruits and vegetables', 'kitchen utensils',…],                          Text Embeddings
+                                                                                                                                           Generic Image Dataset
+                'roles': ['juice maker', 'fruit lover', 'health enthusiast', …]              CLIP Text Encoder                              (COCO + ImageNet)
+
+
+
+
+Figure 1: The overall structure of the proposed LLM-Guided image recommendation system for non-verbal communication.
+
+
+these applications often overlook direct interpersonal communica-                                    a diverse set of textual close concepts. The prompt was carefully
+tion, especially among users with complex communication needs.                                       engineered based on observations from prior co-design studies
+Existing studies have used behavioral cues (e.g., clicks, gaze, query                                [10, 11], allowing us to incorporate user perspectives in design and
+logs) for early-stage intent detection during structured tasks [25, 29],                             initial assessments.; details are provided in Section 3.2.
+but users with complex needs have been ignored in these studies.                                         In the concept selection module, a simplified version of the Max-
+For marginalized users, intent may vary with context and may be                                      imal Marginal Relevance (MMR) approach is used to promote di-
+expressed through surface-level visual features rather than abstract                                 versity and reduce redundancy among generated concepts. Each
+queries. In such cases, interactive query suggestion can help clarify                                concept is embedded using CLIP’s text encoder, so that its similarity
+actual user intent and support richer conversations [24].                                            to the initial image, and to other concepts, can be computed. After
+   Multimodal approaches that combine visual and textual features                                    the concept closest to the initial image is selected, each new concept
+significantly reduce the semantic gap in traditional Content-Based                                   in the remaining list of proposed expansions is selected so that it
+Image Retrieval (CBIR) [27, 28]. Models like CLIP (Contrastive                                       is the most dissimilar to those already selected, until a total of 33
+Language-Image Pretraining) [22] learn joint embeddings from                                         concepts are extracted.
+large-scale image-text data, enabling retrieval systems to align im-                                     In the image search module, the embedding of each selected
+ages with diverse, abstract language queries and support more                                        concept is compared against pre-computed image embeddings from
+flexible search interactions [6, 16]. Building on this, Ye et al. pro-                               an image database, using cosine similarity for cross-modal retrieval.
+posed a user intent expansion framework that jointly parses tex-                                     The image database consists of 5,000 MSCOCO-2017 validation
+tual and visual inputs using LLMs and interactive segmentation,                                      images [19], which feature rich, contextual, multi-object scenes (e.g.,
+composing logic-based search expressions and enabling iterative                                      events, people, locations), and 50,000 ImageNet validation images,
+refinement [30]. Hajizadeh et al. investigated the ability of large                                  which offer focused object representations. For each concept, the
+language models (LLMs) to interpret image intents and compared                                       most similar image is retrieved and presented as a visual suggestion.
+these with human perspectives [11]. They found that LLMs, such                                       These datasets were chosen because they broadly cover everyday
+as GPT-4, closely matched human performance in understanding                                         topics relevant for image-based communication.
+image intent. Their analysis categorized interpretive guesses by                                         For each image query, the system recommends 33 new images.
+both humans and LLMs into key dimensions, including entity types                                     This number matches the Canvis prototype [23] used in prior co-
+(e.g., people, objects), visual attributes, activities, temporal context,                            design studies. However, it can be adjusted by users according to
+relationships, locations, and inferred emotions. These approaches                                    their preference for viewing fewer or more images at a time.
+mark a shift from similarity-based retrieval to intent-aware systems
+that better align with users’ communicative goals.
+
+                                                                                                      3.2        Prompt Design and Concept Expansion
+3 Methodology
+                                                                                                     The GPT-4 prompt was designed based on prior co-design findings
+3.1 Recommendation System                                                                            and user data (explained in section 3.3) to reflect the real-world
+We developed an LLM-based image Recommendation algorithm                                             image selection behavior of individuals with intellectual disability
+that suggests a new set of images in response to a user-selected                                     (See Appendix B). The prompt integrates three strategies:
+image. This image acts as a visual query to recommend related                                           (1) Context Awareness: We framed GPT-4 as a support worker
+images, helping users clarify or expand their intended message                                       assisting a person with intellectual disability who communicates
+through visually meaningful alternatives. The algorithm comprises                                    using generic images. To mirror the real user scenario, the prompt
+three modules: concept expansion, concept selection, and image                                       described the image selection process as relying on a limited set of
+search (See Figure 1).                                                                               options and quick choices, rather than assuming a perfect match
+   In the GPT-based concept expansion module, GPT-4.O interprets                                     between image and intended message. It also clarified that the goal
+the image in terms of communicative intent and expands it into                                       of generating concepts was to recommend additional images to
+
+
+
+
+                                                                                           914
+
+<a id="pdf-p4"></a>
+### [PDF p.4] Sample human annotations
+- Locator: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf` · página **4** / 8
+
+OZCHI ’25, November 29–December 03, 2025, Sydney, Australia        Alieh Hajizadeh Saffar, Laurianne Sitbon, Sirinthip Roomkham, Maja Hjuler, and Yik Yu Cheng
+
+
+                                                                    Sample human annotations
+       #     Intent guesses in user data
+       1     I like cooking at home                                                                        11        3                   9
+                                                                                              1
+                                                              User-selected
+       2     This is my favourite food
+                                                              visual query
+       3     I love eating food                                                                        5
+       4     I like mix of food (drinks, meat, vegetables)                                                 8     7                2
+       5     I want to eat healthy food to lose weight                        6
+       6     I am hungry
+       7     I want you to buy all these food                                                                                                5          12
+                                                                              4
+       8     I want to eat fruit and vegetables
+       9     I want you to come and learn how to cut fruits                                       10
+             and make milkshakes.
+       10    I like orange
+       11    I want you to decorate the food like this and
+             give it to me
+       12    I want to go for grocery shopping
+       13    I want to make a juice
+
+
+
+Figure 2: Sample set of images recommended for a user-selected visual query, its intent guesses, and sample human annotations
+
+
+help clarify the user’s communicative intent. This context helped             provided by a web-based prototype, named Canvis [23]. The activ-
+GPT interpret image intent more naturally and realistically.                  ity was designed as a game: after a participant selected an image,
+   (2) Ambiguity and Conceptual Expansion: We designed the                    others in the workshop, including friends, support workers, and
+prompt to capture a range of communicative cues, drawing inspira-             facilitators, guessed what the image might mean to the partici-
+tion from common ambiguities in image-based communication [11]                pant. The participant could then reveal their actual intent either
+and the associations users are likely to make such as categorical sim-        verbally or by confirming one of the guesses. These interactions
+ilarity, part-to-whole relationships, and contextual similarities[10].        formed a dataset of 20 user-selected images, each annotated with
+GPT was asked to generate concepts in eight categories, including             a “real” communicative intent and a set of corresponding guesses
+relevant locations, entities (and hierarchical variations), activities,       from the immediate audience. This process defines what we refer
+occasions, relational roles, intent guesses, and action sentences.            to as a user-selected visual query: an image intentionally chosen
+   The name of categories and provided examples in the prompt                 by a participant to convey a specific, personally meaningful idea or
+were iteratively refined through testing with user data to ensure             feeling.
+alignment with potential communicative intents for user-selected
+images. For example, "Relational Roles" or "Relevant Occasions"               3.3.2 Intent guesses. To broaden the dataset and complement the
+were selected because, for some images, people wanted to talk about           intent guessed during the workshop with guesses from people who
+their relationships with family, pets, or friends, as well as different       did not know the users selecting a queries, additional intents guesses
+occasions such as celebrations or birthdays. The generated intent             were collected. Twelve postgraduate students were each asked to
+guesses represent the predicted reasons for selecting an image,               interpret five of the same set of 20 images, imagining that they had
+while the action sentences represent actions a person might want              been sent the image by someone with limited verbal ability. Each
+to take with entities from the image context. For example, if the             participant provided at least three possible intent guesses per image,
+image includes fruits, the guess can be "I am hungry", and the action         with three responses were collected for each subset. All unique
+sentence is ’a person is slicing fruits and vegetables.’. This can help       intent guesses from this follow-up were merged with those from
+users to clarify their intent because the main goal for this prompt           the workshop, resulting in a diverse intent set per image—ranging
+was to provide the concepts that can be simply visualized by images.          from 7 to 15 intents depending on the number and variation of
+   (3) Diversity and Generalizability: To avoid bias toward spe-              guesses.
+cific themes, the prompt remained general, with instructions to                  The final dataset thus reflects a mixture of self-expressed, socially
+generate diverse, concise (5–10 words per category) concepts. We              interpreted, and crowd-inferred communicative intents. Figure 2
+emphasized concept variety over synonyms to enrich the search                 presents one sample image along with its associated intents, while
+space for image recommendation.                                               additional examples from the dataset are provided in Appendix A.
+
+                                                                              3.4     Evaluation
+3.3    User Data                                                              To assess the system’s initial feasibility, we conducted a structured
+3.3.1 User-selected visual queries. In prior co-design workshops              annotation task involving three of the paper’s co-authors who
+[11], participants with intellectual disability were invited to se-           were not involved in the system development. These annotators
+lect images for self-expression from a simple random image grid               are experienced in co-designing technologies for individuals with
+
+
+
+
+                                                                      915
+
+<a id="pdf-p5"></a>
+### [PDF p.5] intellectual disability and are familiar with interpreting communica- deemed valid by at least two annotators. Figure 3 presents the valid
+- Locator: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf` · página **5** / 8
+
+LLM-Guided Image Recommendation for Supporting Intent Understanding in Non-Verbal Communication     OZCHI ’25, November 29–December 03, 2025, Sydney, Australia
+
+
+intellectual disability and are familiar with interpreting communica-             deemed valid by at least two annotators. Figure 3 presents the valid
+tive intent in visual contexts. In this task, annotators were asked               intents across all user-selected images.
+to assess the degree to which each recommended image matched
+each actual intent as well as each intent guess associated with each
+user-selected visual query. The evaluation involved two sequential
+steps:
+   (1) Annotators first reviewed the main image, the one originally
+       selected by the user, and rated how well they believed each
+       listed intent genuinely corresponded to that image.
+   (2) Then, for each recommended image, they assessed how much
+       it could help clarify the given intent when considered in
+       conjunction with the main image.
+In this context, the relevance of the recommended images is de-
+fined by their ability to clarify the intended meaning of the main
+image. That is, an image is considered relevant only insofar as it
+contributes to disambiguating or reinforcing a particular intent                                  Figure 3: Valid intents per image(b)
+when viewed alongside the original image. Each image–intent pair
+was rated using a 4-point ordinal scale: 3 – Clearly Clarifies, 2 –
+Mostly Clarifies, 1 – Somewhat Clarifies, 0 – Unrelated.                            A closer examination of invalid intents, especially for images
+   The Annotators could evaluate multiple recommended images                     with fewer valid intents (images 0, 1, 9, 17, and 18) revealed key
+for each intent, and each image could be associated with more                    reasons why the annotators marked them as invalid:
+than one intent. This allowed for a more nuanced evaluation of                       (1) Abstract or Emotion-Based Intents: Some intents relied
+how individual images contribute to different interpretations, ac-                       on abstract or emotional interpretations with limited visual
+knowledging the potential ambiguity and multiplicity of intent                           cues in the image. For example, the intent "I am in a dangerous
+representations.                                                                         situation and lost in the city" was linked to an image showing
+   To examine whether the system was able to suggest images that                         rain in the city, or "I am tired and I want to rest" was assigned
+reflect the diversity of communicative intents users may express, we                     to an image of a tired-looking cat.
+assess how well the recommended images (1) cover the full range                      (2) Highly Ambiguous Images: Some images were open to
+of intents in our dataset and (2) diversify visual interpretations                       very different interpretations. For example, an image of a
+of those intents. These criteria serve as proxies for the system’s                       toast-like piece with cracked, egg-like shapes was interpreted
+potential to support varied user expressions and interpretations,                        by the model with geological associations, while human set
+before real-time deployment to identify strengths and limitations                        of intents mostly focused on its edible appearance.
+in concept expansion and guide further system refinement before                      (3) The Role of Personal and Cultural Context in Intent
+larger user-centered studies. We adopted two evaluation metrics                          Guesses : Some intent guesses depended on personal or
+adapted from recommender system research [12, 31]:                                       cultural context shared between the image selector and the
+                                                                                         person guessing the intent — context that could not reason-
+    • Intent Coverage – measured as the percentage of intent                             ably be inferred by the system. For example, an image of a
+      guesses represented by the recommended images. An intent                           pizza selected to imply “Ninja Turtles love pizza” relied on
+      was considered covered if it had at least one image that                           background knowledge that the system is not expected to
+      received a rating of 2 or 3 by at least two raters.                                possess.
+    • Diversity – assessed using Shannon Entropy [18], capturing
+      both coverage and distribution across intent guesses.                         Therefore, we analyze the results in two scenarios. In the first
+                                                                                 scenario, metrics are calculated using all intents in the user dataset;
+                                     𝑛
+                                    ∑︁                                           in the second, metrics are computed on a refined dataset containing
+                     Entropy = −          𝑝𝑖 log2 (𝑝𝑖 )                          only valid intents. In the main dataset, there is an average of 10.1
+                                    𝑖=1                                          intents per image, while in the refined dataset, this value is around
+       Where 𝑝𝑖 is the proportion of assignments to intent 𝑖 over                6.25. It is noteworthy that five of the actual user intents provided
+       all assignments across all intents.                                       by users with intellectual disability were also evaluated as "invalid",
+                                                                                 highlighting a gap between “communicator intent” and “audience
+                                                                                 interpretation”.
+4 Results
+4.1 Intent-Level Analysis                                                         4.2    Intent Coverage
+Before examining the results, it is useful to first consider how valid           Figure 4a shows the distribution of intent coverage percentages for
+the different intents in the user dataset were judged to be by our               all user-selected visual queries, based on human annotations.
+annotators. As described in the evaluation section, one of the their                 The box plots indicate that intent coverage values for all visual
+tasks was to assess how appropriate the intent guesses were for                  queries ranged from 25% to 100%, with the median of around 65%.
+each image. Based on their feedback, about 62% of the intents were               This wide range indicates that for some visual queries, the system is
+
+
+
+
+                                                                          916
+
+<a id="pdf-p6"></a>
+### [PDF p.6] not providing sufficient recommendations that can help the variety at least two annotators rated images with 3 (Clearly Clarifies) or 2
+- Locator: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf` · página **6** / 8
+
+OZCHI ’25, November 29–December 03, 2025, Sydney, Australia       Alieh Hajizadeh Saffar, Laurianne Sitbon, Sirinthip Roomkham, Maja Hjuler, and Yik Yu Cheng
+
+
+not providing sufficient recommendations that can help the variety          at least two annotators rated images with 3 (Clearly Clarifies) or 2
+of guessed intents. This could be because the system does not un-           (Mostly Clarifies). This approach mitigates the effect of individual
+derstand the possible nuances of the visual query itself, or because        variability and emphasizes shared understanding.
+it is not able to expand on the concepts gathered from the initial
+query. Nevertheless, most values exceeded 60%, showing that the             5 Discussion
+system frequently recommended images perceived as meaningful
+and aligned with intent guesses. For valid intents, most coverage           5.1 System’s Interpretation of Communicative
+values were above 65%, with a median of around 80%. These re-                   Intents for Image Recommendation
+sults highlight the system’s potential to recommend expressive              We aimed to investigate how effectively our image recommendation
+and relevant visual intents for user-selected queries, particularly         system, which leverages LLMs to expand the communicative mean-
+when those intents are supported by clear visual cues. When the             ing of image queries, can reflects users’ communicative intents.
+recommended image set covers most of the plausible intents be-              This investigation seeks to validate the potential for the approach
+hind an initial selection, users can refine and clarify their message       and identify opportunities to improve the quality of the recom-
+for a communication partner simply by making additional image               mendations before conducting user studies. Although the concepts
+choices—reducing reliance on verbal or symbolic explanations.               generated by the LLM did not always match the user’s exact intent,
+    A closer examination of cases with lower coverage revealed that,        they often supported it at the image level, enabling the recommen-
+in some instances, the system generated a concept aligned with              dation of relevant visuals that could help clarify meaning.
+the intent guesses, yet the recommended image did not achieve                  Preliminary findings from a small user dataset and annotators
+sufficient agreement among annotators to clearly convey that in-            indicate that the system shows promising potential to support non-
+tent. For instance, the concept “A person is using a laptop for work”,      verbal communication by recommending a diverse and intent-rich
+generated by the system, aligns closely with the intent “Looking            set of images across various communicative targets. The relatively
+at laptop too much. His eyes strained, watching YouTube.” but the           high intent coverage and entropy, especially for valid intents, sug-
+recommended image depicted only a laptop without the contextual             gest that it can help users refine their selections and construct richer
+cues. Similarly, concepts such as “blanket” or “jacket” were gener-         narratives. Overall, the results provide early evidence of the sys-
+ated for the intent “I feel cold” but were not considered sufficiently      tem’s feasibility while highlighting its challenges and opportunities
+clear in the context of the main image                                      to enhance its flexibility and alignment with human interpretation
+    The next question is whether intent coverage is spread across           strategies.
+diverse images or concentrated in a few. If the latter, the system
+may hinder clarity by recommending generic, ambiguous images.
+We explore this using entropy as a proxy for diversity and balance
+                                                                            5.2      Mismatches between visual queries and
+in concept distribution.                                                             actual or guessed intents
+                                                                            This study is an early stage investigation aimed to ensure a good
+4.3    Entropy                                                              experience for users participating in the user studies that will fol-
+                                                                            low. As a stand alone study however, it presents several limitations
+Figure 4b presents the distribution of image entropy derived from
+                                                                            regarding the intent list used in the dataset, emphasizing the need
+human annotations for all user-selected visual queries in both sce-
+                                                                            for refinement. Only 62% of the annotated intents were approved
+narios: including all intents and including only valid intents.
+                                                                            by our annotators, highlighting inconsistencies in how intents were
+   The image entropy, which reflects the diversity of matching in-
+                                                                            interpreted. Some intents were overly abstract (e.g., “getting lost”,
+tents across recommended images, ranged from 0.41 to 0.94, with
+                                                                            “dangerous situation”) or dependent on personal or cultural con-
+a median around 0.7. Removing invalid intents increased entropy
+                                                                            text shared between the image selector and the viewer, context
+values, and some image sets approached the maximum, indicating
+                                                                            that could not reasonably be inferred by the system. Capturing
+an even distribution across nearly all available intents. Such balance
+                                                                            such personal or culturally grounded meanings may require future
+means that different intents can be expressed and clarified through
+                                                                            work into personal context modeling and user profile integration.
+visually and semantically distinct images, rather than relying on
+                                                                            Additionally, we found that some Intent guesses resembled image
+variations of the same concept. By offering meaningfully differen-
+                                                                            descriptions more than communicative goals. This overlap between
+tiated suggestions, the system creates opportunities for multiple
+                                                                            descriptive and intentional content complicates the evaluation of
+possible intents to be represented through diverse visuals, support-
+                                                                            whether a second image successfully clarifies the intended meaning
+ing clearer message formulation and enhancing the communication
+                                                                            of the first.
+partner’s understanding.
+                                                                               Furthermore, removing invalid intents left only two or three
+                                                                            remaining intents for three of the images—too few for a meaningful
+4.4    Agreement Analysis                                                   calculation of coverage and entropy. In some cases, the user’s actual
+Inter-rater agreement among annotators was assessed using Krip-             intent was also excluded for the reasons noted above. This high-
+pendorff’s alpha, which supports ordinal scales, missing data, and          lights the challenge of how systems might mediate between these
+more than two raters. The resulting alpha of 0.53 indicates mod-            two perspectives rather than privileging one over the other. While
+erate agreement, falling below the commonly cited threshold of              our aim is to capture real communicative intents and support audi-
+0.67 for drawing strong conclusions [15]. However, the system’s             ence comprehension, within the scope of this study to construct a
+performance was assessed using a consensus-based criterion where            clear visual message we can only address intents that are precise,
+
+
+
+
+                                                                     917
+
+<a id="pdf-p7"></a>
+### [PDF p.7] Figure 4: Intent coverage and entropy distributions based on human annotations over all and valid intents.
+- Locator: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf` · página **7** / 8
+
+LLM-Guided Image Recommendation for Supporting Intent Understanding in Non-Verbal Communication   OZCHI ’25, November 29–December 03, 2025, Sydney, Australia
+
+
+
+
+                                    (a)                                                                             (b)
+
+           Figure 4: Intent coverage and entropy distributions based on human annotations over all and valid intents.
+
+
+visually representable, and, for now, not dependent on personal                  serve as scaffolding, particularly for users who can read, by provid-
+context until such information becomes available to the system. To               ing emotional or abstract context that may not be easily inferred
+express more complex intents, users should have the opportunity                  from images alone. For instance, if a user selects an image of “a cat
+to clarify their meaning by searching additional images and putting              wearing a hat” to convey the message “I feel cold”, recommending
+them on the communication boards. For example, if selecting an                   images of a jacket or hat may not sufficiently clarify the intended
+image of a pizza is intended to start a conversation about "the Ninja            meaning. In contrast, displaying a textual hint such as “feeling cold”
+Turtles’ love of pizza", this meaning cannot be conveyed clearly                 could assist both the image selector and the audience in forming
+through image suggestions alone; instead, the user would need to                 more accurate associations or searching and identifying more rele-
+place two different images, one of the Ninja Turtles and one of a                vant images. To support this, we propose separating emotional and
+pizza, side by side. Similarly, if a single image cannot convey the              intentional concepts from the visual concept selection module and
+concept of "holiday", users should have the opportunity to search                presenting them as text-only suggestions. This enables us to apply
+for and select additional images to communicate the idea more                    MMR to a smaller, more visually grounded concept set, while still
+effectively.                                                                     enhancing communicative richness through supplemental text.
+   Another core challenge lay in the differing mental models and                    This proposal also aligns with broader explainability practices
+subjective interpretations that humans and the system brought to                 in intelligent user interfaces. By explicitly showing the concepts or
+the same visual content. As discussed in Section 4.1, some images                inferred intents that guided image recommendation, these textual
+were so visually ambiguous that even human annotators struggled                  cues can serve as a form of progressive disclosure, helping users
+to agree on a clear interpretation. The relatively low inter-rater               and their communication partners understand the rationale behind
+agreement (Krippendorff’s alpha = 0.53) and the perceived invalidity             the system’s suggestions. Such transparency is especially critical
+of some actual user intents from the annotators’ perspective reflect             in assistive contexts, where users and support workers must un-
+this variability. While higher agreement would improve reliability,              derstand and trust the system’s suggestions. Recent work on user
+the current approach still provides meaningful insights, particularly            reliance calibration and explainable AI interfaces [5, 20] supports
+given the inherently interpretive nature of the task. Intent-based               this direction, emphasizing the value of making AI-driven decisions
+image recommendation systems must account for the diverse, sub-                  more interpretable and context-aware.
+jective ways people interpret visuals. Future work should explore                   Future work will focus on refining the prototype through iter-
+deeper personalization and co-design strategies to incorporate user              ative model development, providing image–text suggestions, and
+preferences and contextual cues more effectively. This aligns with               participatory evaluation with individuals with intellectual disabili-
+prior research emphasizing the role of context in augmentative and               ties.
+alternative communication [8, 21].
+                                                                                  6    Conclusion
+                                                                                 This work introduced a novel intent-based image recommendation
+5.3    Designing for Limitations with                                            prototype to support communication for individuals with intellec-
+       Transparency                                                              tual disability. Leveraging large language models to expand image
+Some of the aforementioned limitations and challenges cannot be                  concepts, the system suggests contextually relevant images for a
+addressed computationally, and should be addressed by improv-                    user-selected visual query, aiming to reflect different intents, help
+ing the design of the interaction, and built into a new version of               clarify it, and support the construction of richer visual narratives
+the prototype before broader user studies. Given the challenges of               on image-based communication boards. Early-stage quantitative
+conveying abstract intents and emotions visually, integrating some               evaluation on real user data showed promising results in cover-
+textual suggestions generated by GPT alongside images support                    ing diverse intents, aligning with initial human assessments, and
+more effective communication. In turn, these suggestions could                   demonstrating potential for future user-centered studies.
+
+
+
+
+                                                                          918
+
+<a id="pdf-p8"></a>
+### [PDF p.8] References developmental or acquired disabilities: State of the science and future research
+- Locator: `R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf` · página **8** / 8
+
+OZCHI ’25, November 29–December 03, 2025, Sydney, Australia                        Alieh Hajizadeh Saffar, Laurianne Sitbon, Sirinthip Roomkham, Maja Hjuler, and Yik Yu Cheng
+
+
+References                                                                                        developmental or acquired disabilities: State of the science and future research
+ [1] Salena Babb, Sojung Jung, Ciara Ousley, David McNaughton, and Janice Light.                  directions. AAC: Augmentative and Alternative Communication 35, 1 (1 2019),
+     2021. Personalized AAC Intervention to Increase Participation and Communica-                 42–55. doi:10.1080/07434618.2018.1558283
+     tion for a Young Adult with down Syndrome. Topics in Language Disorders 41, 3           [18] Jianhua Lin. 1991. Divergence measures based on the Shannon entropy. IEEE
+     (July 2021), 232–248. doi:10.1097/TLD.0000000000000240 Publisher: Lippincott                 Transactions on Information theory 37, 1 (1991), 145–151.
+     Williams and Wilkins.                                                                   [19] Tsung-Yi Lin, Michael Maire, Serge Belongie, James Hays, Pietro Perona, Deva
+ [2] David Beukelman and Janice Light. 2020. Augmentative and alternative commu-                  Ramanan, Piotr Dollár, and C Lawrence Zitnick. 2014. Microsoft coco: Common
+     nication: Supporting children and adults with complex communication needs.                   objects in context. In Computer vision–ECCV 2014: 13th European conference,
+     (2020).                                                                                      zurich, Switzerland, September 6-12, 2014, proceedings, part v 13. Springer, 740–
+ [3] Filip Bircanin, Laurianne Sitbon, Maria Hoogstrate, Ahmed K Abbas, Alieh Ha-                 755.
+     jizadeh Saffar, and Margot Brereton. 2025. Beyond the Buckets of Support:               [20] Deepa Muralidhar, Rafik Belloum, Kathia Marçal De Oliveira, and Ashwin Ashok.
+     Designing for Agency and Interaction in Personalised Disability Systems. In                  2023. Elements that influence transparency in artificial intelligent systems-a
+     Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems.                survey. In IFIP Conference on Human-Computer Interaction. Springer, 349–358.
+     1–19.                                                                                   [21] Mmachi God’sglory Obiorah. 2020. Designing Assistive Technologies for Context-
+ [4] Dasom Choi, SoHyun Park, Kyungah Lee, Hwajung Hong, and Young-Ho Kim.                        Specific Communication for People with Aphasia in Novel and Real-World Settings.
+     2025. AACessTalk: Fostering Communication between Minimally Verbal Autistic                  Ph. D. Dissertation. Northwestern University.
+     Children and Parents with Contextual Guidance and Card Recommendation. In               [22] Alec Radford, Jong Wook Kim, Chris Hallacy, Aditya Ramesh, Gabriel Goh,
+     Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems.                Sandhini Agarwal, Girish Sastry, Amanda Askell, Pamela Mishkin, Jack Clark,
+     1–25.                                                                                        et al. 2021. Learning transferable visual models from natural language supervision.
+ [5] José Cezar de Souza Filho, Rafik Belloum, and Káthia Marçal de Oliveira. 2024.               In International conference on machine learning. PmLR, 8748–8763.
+     Where Are We and Where Can We Go on the Road to Reliance-Aware Explainable              [23] Nicholas L. Robertson, Filip Bircanin, and Laurianne Sitbon. 2021. Designing a
+     User Interfaces?. In 2024 IEEE Symposium on Visual Languages and Human-Centric               Pictorial Communication Web Application with People with Intellectual Disabil-
+     Computing (VL/HCC). IEEE, 282–288.                                                           ity. ASSETS 2021 - 23rd International ACM SIGACCESS Conference on Computers
+ [6] Shiv Ram Dubey. 2022. A Decade Survey of Content Based Image Retrieval Using                 and Accessibility (Oct. 2021). doi:10.1145/3441852.3476527 ISBN: 9781450383066
+     Deep Learning. IEEE Transactions on Circuits and Systems for Video Technology 32,            Publisher: Association for Computing Machinery, Inc.
+     5 (May 2022), 2687–2704. doi:10.1109/TCSVT.2021.3080920 Conference Name:                [24] Laurianne Sitbon, Margot Brereton, and Filip Bircanin. 2024. Reframing search
+     IEEE Transactions on Circuits and Systems for Video Technology.                              and recommendation as opportunities for communication for people with in-
+ [7] Mauricio Fontana de Vargas and Karyn Moffatt. 2021. Automated Generation                     tellectual disability. Human–Computer Interaction 39, 3-4 (July 2024), 206–224.
+     of Storytelling Vocabulary from Photographs for use in AAC. In Proceedings of                doi:10.1080/07370024.2023.2247394
+     the 59th Annual Meeting of the Association for Computational Linguistics and the        [25] Mohammad Soleymani, Michael Riegler, and Pål Halvorsen. 2017. Multimodal
+     11th International Joint Conference on Natural Language Processing (Volume 1:                Analysis of Image Search Intent: Intent Recognition in Image Search from User
+     Long Papers), Chengqing Zong, Fei Xia, Wenjie Li, and Roberto Navigli (Eds.).                Behavior and Visual Content. In Proceedings of the 2017 ACM on International
+     Association for Computational Linguistics, Online, 1353–1364. doi:10.18653/v1/               Conference on Multimedia Retrieval. ACM, Bucharest Romania, 251–259. doi:10.
+     2021.acl-long.108                                                                            1145/3078971.3078995
+ [8] Mauricio Fontana De Vargas, Christina Yu, Howard C. Shane, and Karyn Moffatt.           [26] Ming-Fong Tsai and Yi-Hong Wu. 2023. User intent prediction search engine
+     2024. Co-Designing QuickPic: Automated Topic-Specific Communication Boards                   system based on query analysis and image recognition technologies. The Journal
+     from Photographs for AAC-Based Language Instruction. In Proceedings of the                   of Supercomputing 79, 5 (March 2023), 5327–5359. doi:10.1007/s11227-022-04874-
+     CHI Conference on Human Factors in Computing Systems. ACM, Honolulu HI USA,                  w
+     1–16. doi:10.1145/3613904.3642080                                                       [27] Salahuddin Unar, Xingyuan Wang, Chunpeng Wang, and Yu Wang. 2019. A
+ [9] Victor Machado Gonzaga, Nils Murrugarra-Llerena, and Ricardo Marcacini. 2021.                decisive content based image retrieval approach for feature fusion in visual and
+     Multimodal intent classification with incomplete modalities using text embedding             textual images. Knowledge-Based Systems 179 (Sept. 2019), 8–20. doi:10.1016/j.
+     propagation. In Proceedings of the Brazilian Symposium on Multimedia and the Web.            knosys.2019.05.001
+     ACM, Belo Horizonte Minas Gerais Brazil, 217–220. doi:10.1145/3470482.3479636           [28] Smrithi Vasudevan, Nishtha Chauhan, Vergin Sarobin, and S. Geetha. 2021. Image-
+[10] Alieh Hajizadeh Saffar, Laurianne Sitbon, and Chris P Beaumont. 2025. Com-                   Based Recommendation Engine Using VGG Model. In Advances in Communication
+     munication with Individuals with Intellectual Disability Using Generic Images:               and Computational Technology, Gurdeep Singh Hura, Ashutosh Kumar Singh,
+     Exploring Contexts, Requirements, Opportunities, and Challenges. In Proceedings              and Lau Siong Hoe (Eds.). Springer Nature, Singapore, 257–265. doi:10.1007/978-
+     of the Extended Abstracts of the CHI Conference on Human Factors in Computing                981-15-5341-7_21
+     Systems. 1–7.                                                                           [29] Xiaohui Xie, Yiqun Liu, Maarten De Rijke, Jiyin He, Min Zhang, and Shaoping Ma.
+[11] Alieh Hajizadeh Saffar, Laurianne Sitbon, Maria Hoogstrate, Ahmed Abbas,                     2018. Why People Search for Images using Web Search Engines. In Proceedings
+     Sirinthip Roomkham, and Dimity Miller. 2024. Human and Large Language                        of the Eleventh ACM International Conference on Web Search and Data Mining.
+     Model Intent Detection in Image-Based Self-Expression of People with Intel-                  ACM, Marina Del Rey CA USA, 655–663. doi:10.1145/3159652.3159686
+     lectual Disability. In Proceedings of the 2024 Conference on Human Information          [30] Yilin Ye, Qian Zhu, Shishi Xiao, Kang Zhang, and Wei Zeng. 2024. The contem-
+     Interaction and Retrieval. 199–208.                                                          porary art of image search: Iterative user intent expansion via vision-language
+[12] Naieme Hazrati and Francesco Ricci. 2022. Learning choice models for simulat-                model. Proceedings of the ACM on Human-Computer Interaction 8, CSCW1 (2024),
+     ing users’ interactions with recommender systems. In 2022 Perspectives on the                1–31.
+     Evaluation of Recommender Systems Workshop, PERSPECTIVES 2022, Vol. 3228.               [31] Yuying Zhao, Yu Wang, Yunchao Liu, Xueqi Cheng, Charu C Aggarwal, and
+     CEUR-WS.                                                                                     Tyler Derr. 2025. Fairness and diversity in recommender systems: a survey. ACM
+[13] Ting-Hao Kenneth Huang, Francis Ferraro, Nasrin Mostafazadeh, Ishan Misra,                   Transactions on Intelligent Systems and Technology 16, 1 (2025), 1–28.
+     Aishwarya Agrawal, Jacob Devlin, Ross Girshick, Xiaodong He, Pushmeet Kohli,
+     Dhruv Batra, C. Lawrence Zitnick, Devi Parikh, Lucy Vanderwende, Michel
+     Galley, and Margaret Mitchell. 2016. Visual Storytelling. In Proceedings of the
+     2016 Conference of the North American Chapter of the Association for Computational
+     Linguistics: Human Language Technologies, Kevin Knight, Ani Nenkova, and Owen
+     Rambow (Eds.). Association for Computational Linguistics, San Diego, California,
+     1233–1239. doi:10.18653/v1/N16-1147
+[14] Shaun K. Kane, Barbara Linam-Church, Kyle Althoff, and Denise McCall. 2012.
+     What we talk about: designing a context-aware communication tool for people
+     with aphasia. In Proceedings of the 14th international ACM SIGACCESS conference
+     on Computers and accessibility. ACM, Boulder Colorado USA, 49–56. doi:10.1145/
+     2384916.2384926
+[15] Klaus Krippendorff et al. 1989. Content analysis. International encyclopedia of
+     communication 1, 1 (1989), 403–407.
+[16] Xiaoqing Li, Jiansheng Yang, and Jinwen Ma. 2021. Recent developments of
+     content-based image retrieval (CBIR). Neurocomputing 452 (Sept. 2021), 675–689.
+     doi:10.1016/j.neucom.2020.07.139
+[17] Janice Light, Krista M. Wilkinson, Amber Thiessen, David R. Beukelman, and
+     Susan Koch Fager. 2019. Designing effective AAC displays for individuals with
+
+
+
+
+                                                                                      919

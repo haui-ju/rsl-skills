@@ -1,0 +1,515 @@
+# Anders-Petter ANDERSSON1, Cecilie EIDE1,2, Eleftherios PAPACHRISTOU1, Anne-Britt
+
+> Fuente PDF: `R647-co-design-with-persons-with-disabilities-as-an-innovative-resource-set-free-by-a.pdf` · técnica **locator index** (página + ancla) + chunks Graphify
+
+## Metadata
+- Stem: `R647-co-design-with-persons-with-disabilities-as-an-innovative-resource-set-free-by-a`
+- PDF: `R647-co-design-with-persons-with-disabilities-as-an-innovative-resource-set-free-by-a.pdf`
+- DOI: `10.1145/3538882.3542790`
+- Pages: `6`
+- Structured_at: `2026-10-03T23:23:21+00:00`
+- Technique: `pdf-page-locators + heading-chunks`
+
+## Locator index (qué hay y en qué página del PDF)
+
+| Kind | Label | PDF page | MD anchor |
+|------|-------|----------|-----------|
+| abstract | Abstract / blurb | 1 | `#abstract` |
+| section | 1 INTRODUCTION | 1 | `#p1-1-introduction` |
+| section | 1.2 Co-Design and Innovation through Diversity | 1 | `#p1-1-2-co-design-and-innovation-through-diversity` |
+| section | 1.3 Case: Co-Design Use-stories with Family and Young Adult with Disabilities | 2 | `#p2-1-3-case-co-design-use-stories-with-family-and-young-adult-with-disabilities` |
+| section | 1.4 Augmented and Alternative Communication and Artificial Intelligence | 3 | `#p3-1-4-augmented-and-alternative-communication-and-artificial-intelligence` |
+| section | 2 METHODS | 3 | `#p3-2-methods` |
+| section | 2.1 Literature Describing AI with Persons with Disabilities | 3 | `#p3-2-1-literature-describing-ai-with-persons-with-disabilities` |
+| section | 3 RESULTS | 4 | `#p4-3-results` |
+| section | 3.1 AI-fying Language Models and Multimodal Interaction for Diversity | 4 | `#p4-3-1-ai-fying-language-models-and-multimodal-interaction-for-diversity` |
+| section | 4 DISCUSSION | 5 | `#p5-4-discussion` |
+| concept | Inclusive design | 1 | `#concept-inclusive-design` |
+| concept | co-design | ? | `#concept-co-design` |
+| concept | alternative and augmented communication | 1 | `#concept-alternative-and-augmented-communication` |
+| concept | innovation | ? | `#concept-innovation` |
+| concept | R647 | ? | `#concept-r647` |
+| concept | design | ? | `#concept-design` |
+| concept | with | ? | `#concept-with` |
+| concept | persons | ? | `#concept-persons` |
+| concept | disabilities | 1 | `#concept-disabilities` |
+| concept | innovative | ? | `#concept-innovative` |
+| concept | resource | ? | `#concept-resource` |
+| concept | free | ? | `#concept-free` |
+| finding | It means the right not to consume what others have created but to share one’s own ideas, a… | 1 | `#finding-it-means-the-right-not-to-consume-what-o` |
+| finding | Our thesis is that there is an unused potential in persons with disabilities. | 1 | `#finding-our-thesis-is-that-there-is-an-unused-po` |
+| finding | What if designers saw the world of a person with disabilities as a resource of diversity r… | 1 | `#finding-what-if-designers-saw-the-world-of-a-per` |
+| finding | What if designers would tap into this resource of perspectives on everyday life to the inn… | 1 | `#finding-what-if-designers-would-tap-into-this-re` |
+| finding | We would like to understand if AI could unleash the potential of persons with disabilities… | 1 | `#finding-we-would-like-to-understand-if-ai-could` |
+| finding | We discuss conversational and multimodal AI used for persons with learning and language di… | 1 | `#finding-we-discuss-conversational-and-multimodal` |
+| page | p.1: 26TH INTERNATIONAL CONFERENCE ON ENGINEERING AND PRODUCT DESIGN EDUCATION | 1 | `#pdf-p1` |
+| page | p.2: life settings [6]. There is, however, a gap between vision and reality. Many persons with  | 2 | `#pdf-p2` |
+| page | p.3: Figure 1. Talking cards are used in hiking situations to express meaning and communicate | 3 | `#pdf-p3` |
+| page | p.4: the main concepts in each lifted up and compared with the concepts of the physical card an | 4 | `#pdf-p4` |
+| page | p.5: Speech Prompts to extend short conversation prompts, written by a person with disabilities | 5 | `#pdf-p5` |
+| page | p.6: [9] Wattne O. RurAllure. Final Report. 2023. Accessed: Mar. 11, 2024., https://rurallure.e | 6 | `#pdf-p6` |
+
+## Abstract
+<a id="abstract"></a>
+
+UN’s Convention on the Rights of Persons with Disabilities (CRPD) states that persons with disabilities should be allowed to develop their creative and intellectual potential, not only for their own benefit but for the enrichment of society. It means the right not to consume what others have created but to share one’s own ideas, aesthetic expression, and intellectual work. Our thesis is that there is an unused potential in persons with disabilities. What if designers saw the world of a person with disabilities as a resource of diversity rather than a lack of normality? What if designers would tap into this resource of perspectives on everyday life to the innovation of technology? We would like to understand if AI could unleash the potential of persons with disabilities, by visualising and translating between people and technology. We discuss conversational and multimodal AI used for persons with learning and language disabilities, including AI visualization techniques. We aim to prepare for software re-design, translating between text-based services and symbolic language, the so-called Augmentative and Alternative Communication (AAC). Our case is a family with a young adult with learning and intellectual disabilities using AAC for social activities such as hiking. We find both barriers and potential. Barriers to harnessing the unused resources are due to traditional Co-Design methods, excluding persons with other languages than verbal and text. It is weighed up by the potential of AI to democratize through a certain lack of prejudice and norms, which make it easier to interpret, create, visualise, and share.
+
+## Keywords
+
+- Inclusive design
+- co-design
+- alternative and augmented communication
+- innovation
+
+## Concept index (graph hooks + página)
+
+<a id="concept-inclusive-design"></a>
+### [PDF p.1] Concept: Inclusive design
+- Locator: `R647-co-design-with-persons-with-disabilities-as-an-innovative-resource-set-free-by-a.pdf` · página **1**
+
+<a id="concept-co-design"></a>
+### [PDF p.?] Concept: co-design
+- Locator: `R647-co-design-with-persons-with-disabilities-as-an-innovative-resource-set-free-by-a.pdf` · página **?**
+
+<a id="concept-alternative-and-augmented-communication"></a>
+### [PDF p.1] Concept: alternative and augmented communication
+- Locator: `R647-co-design-with-persons-with-disabilities-as-an-innovative-resource-set-free-by-a.pdf` · página **1**
+
+<a id="concept-innovation"></a>
+### [PDF p.?] Concept: innovation
+- Locator: `R647-co-design-with-persons-with-disabilities-as-an-innovative-resource-set-free-by-a.pdf` · página **?**
+
+<a id="concept-r647"></a>
+### [PDF p.?] Concept: R647
+- Locator: `R647-co-design-with-persons-with-disabilities-as-an-innovative-resource-set-free-by-a.pdf` · página **?**
+
+<a id="concept-design"></a>
+### [PDF p.?] Concept: design
+- Locator: `R647-co-design-with-persons-with-disabilities-as-an-innovative-resource-set-free-by-a.pdf` · página **?**
+
+<a id="concept-with"></a>
+### [PDF p.?] Concept: with
+- Locator: `R647-co-design-with-persons-with-disabilities-as-an-innovative-resource-set-free-by-a.pdf` · página **?**
+
+<a id="concept-persons"></a>
+### [PDF p.?] Concept: persons
+- Locator: `R647-co-design-with-persons-with-disabilities-as-an-innovative-resource-set-free-by-a.pdf` · página **?**
+
+<a id="concept-disabilities"></a>
+### [PDF p.1] Concept: disabilities
+- Locator: `R647-co-design-with-persons-with-disabilities-as-an-innovative-resource-set-free-by-a.pdf` · página **1**
+
+<a id="concept-innovative"></a>
+### [PDF p.?] Concept: innovative
+- Locator: `R647-co-design-with-persons-with-disabilities-as-an-innovative-resource-set-free-by-a.pdf` · página **?**
+
+<a id="concept-resource"></a>
+### [PDF p.?] Concept: resource
+- Locator: `R647-co-design-with-persons-with-disabilities-as-an-innovative-resource-set-free-by-a.pdf` · página **?**
+
+<a id="concept-free"></a>
+### [PDF p.?] Concept: free
+- Locator: `R647-co-design-with-persons-with-disabilities-as-an-innovative-resource-set-free-by-a.pdf` · página **?**
+
+
+## Findings index (graph hooks + página)
+
+<a id="finding-it-means-the-right-not-to-consume-what-o"></a>
+### [PDF p.1] Finding: It means the right not to consume what others have created but to share one’s own ideas, aesthetic expression, and intellectual work.
+- Locator: `R647-co-design-with-persons-with-disabilities-as-an-innovative-resource-set-free-by-a.pdf` · página **1**
+
+<a id="finding-our-thesis-is-that-there-is-an-unused-po"></a>
+### [PDF p.1] Finding: Our thesis is that there is an unused potential in persons with disabilities.
+- Locator: `R647-co-design-with-persons-with-disabilities-as-an-innovative-resource-set-free-by-a.pdf` · página **1**
+
+<a id="finding-what-if-designers-saw-the-world-of-a-per"></a>
+### [PDF p.1] Finding: What if designers saw the world of a person with disabilities as a resource of diversity rather than a lack of normality?
+- Locator: `R647-co-design-with-persons-with-disabilities-as-an-innovative-resource-set-free-by-a.pdf` · página **1**
+
+<a id="finding-what-if-designers-would-tap-into-this-re"></a>
+### [PDF p.1] Finding: What if designers would tap into this resource of perspectives on everyday life to the innovation of technology?
+- Locator: `R647-co-design-with-persons-with-disabilities-as-an-innovative-resource-set-free-by-a.pdf` · página **1**
+
+<a id="finding-we-would-like-to-understand-if-ai-could"></a>
+### [PDF p.1] Finding: We would like to understand if AI could unleash the potential of persons with disabilities, by visualising and translating between people and technology.
+- Locator: `R647-co-design-with-persons-with-disabilities-as-an-innovative-resource-set-free-by-a.pdf` · página **1**
+
+<a id="finding-we-discuss-conversational-and-multimodal"></a>
+### [PDF p.1] Finding: We discuss conversational and multimodal AI used for persons with learning and language disabilities, including AI visualization techniques.
+- Locator: `R647-co-design-with-persons-with-disabilities-as-an-innovative-resource-set-free-by-a.pdf` · página **1**
+
+
+## Relevance hooks
+### Theme relevance: software engineering and accessibility
+### Theme relevance: cognitive accessibility and neurodiversity
+### Theme relevance: evaluation metrics and WCAG
+
+## Sections (detected in PDF)
+
+<a id="p1-1-introduction"></a>
+### [PDF p.1] Section: 1 INTRODUCTION
+- Locator: `R647-co-design-with-persons-with-disabilities-as-an-innovative-resource-set-free-by-a.pdf` · página **1** · ancla `#p1-1-introduction`
+
+<a id="p1-1-2-co-design-and-innovation-through-diversity"></a>
+### [PDF p.1] Section: 1.2 Co-Design and Innovation through Diversity
+- Locator: `R647-co-design-with-persons-with-disabilities-as-an-innovative-resource-set-free-by-a.pdf` · página **1** · ancla `#p1-1-2-co-design-and-innovation-through-diversity`
+
+<a id="p2-1-3-case-co-design-use-stories-with-family-and-young-adult-with-disabilities"></a>
+### [PDF p.2] Section: 1.3 Case: Co-Design Use-stories with Family and Young Adult with Disabilities
+- Locator: `R647-co-design-with-persons-with-disabilities-as-an-innovative-resource-set-free-by-a.pdf` · página **2** · ancla `#p2-1-3-case-co-design-use-stories-with-family-and-young-adult-with-disabilities`
+
+<a id="p3-1-4-augmented-and-alternative-communication-and-artificial-intelligence"></a>
+### [PDF p.3] Section: 1.4 Augmented and Alternative Communication and Artificial Intelligence
+- Locator: `R647-co-design-with-persons-with-disabilities-as-an-innovative-resource-set-free-by-a.pdf` · página **3** · ancla `#p3-1-4-augmented-and-alternative-communication-and-artificial-intelligence`
+
+<a id="p3-2-methods"></a>
+### [PDF p.3] Section: 2 METHODS
+- Locator: `R647-co-design-with-persons-with-disabilities-as-an-innovative-resource-set-free-by-a.pdf` · página **3** · ancla `#p3-2-methods`
+
+<a id="p3-2-1-literature-describing-ai-with-persons-with-disabilities"></a>
+### [PDF p.3] Section: 2.1 Literature Describing AI with Persons with Disabilities
+- Locator: `R647-co-design-with-persons-with-disabilities-as-an-innovative-resource-set-free-by-a.pdf` · página **3** · ancla `#p3-2-1-literature-describing-ai-with-persons-with-disabilities`
+
+<a id="p4-3-results"></a>
+### [PDF p.4] Section: 3 RESULTS
+- Locator: `R647-co-design-with-persons-with-disabilities-as-an-innovative-resource-set-free-by-a.pdf` · página **4** · ancla `#p4-3-results`
+
+<a id="p4-3-1-ai-fying-language-models-and-multimodal-interaction-for-diversity"></a>
+### [PDF p.4] Section: 3.1 AI-fying Language Models and Multimodal Interaction for Diversity
+- Locator: `R647-co-design-with-persons-with-disabilities-as-an-innovative-resource-set-free-by-a.pdf` · página **4** · ancla `#p4-3-1-ai-fying-language-models-and-multimodal-interaction-for-diversity`
+
+<a id="p5-4-discussion"></a>
+### [PDF p.5] Section: 4 DISCUSSION
+- Locator: `R647-co-design-with-persons-with-disabilities-as-an-innovative-resource-set-free-by-a.pdf` · página **5** · ancla `#p5-4-discussion`
+
+
+## Page chunks (texto por página del PDF)
+
+_Cada heading es un nodo Graphify. El label incluye la página para volver al PDF sin releer todo._
+
+<a id="pdf-p1"></a>
+### [PDF p.1] 26TH INTERNATIONAL CONFERENCE ON ENGINEERING AND PRODUCT DESIGN EDUCATION
+- Locator: `R647-co-design-with-persons-with-disabilities-as-an-innovative-resource-set-free-by-a.pdf` · página **1** / 6
+
+26TH INTERNATIONAL CONFERENCE ON ENGINEERING AND PRODUCT DESIGN EDUCATION
+5-6 SEPTEMBER 2024, ASTON UNIVERSITY, BIRMINGHAM, UNITED KINGDOM
+
+
+
+CO-DESIGN WITH PERSONS WITH DISABILITIES AS
+AN INNOVATIVE RESOURCE SET FREE BY AI
+Anders-Petter ANDERSSON1, Cecilie EIDE1,2, Eleftherios PAPACHRISTOU1, Anne-Britt
+TORKILDSBY1 and Yavuz INAL1
+1Norwegian University of Science and Technology, Norway
+2Drammen Municipality, Norway
+
+
+
+
+ABSTRACT
+UN’s Convention on the Rights of Persons with Disabilities (CRPD) states that persons with disabilities
+should be allowed to develop their creative and intellectual potential, not only for their own benefit but
+for the enrichment of society. It means the right not to consume what others have created but to share
+one’s own ideas, aesthetic expression, and intellectual work. Our thesis is that there is an unused
+potential in persons with disabilities. What if designers saw the world of a person with disabilities as a
+resource of diversity rather than a lack of normality? What if designers would tap into this resource of
+perspectives on everyday life to the innovation of technology? We would like to understand if AI could
+unleash the potential of persons with disabilities, by visualising and translating between people and
+technology. We discuss conversational and multimodal AI used for persons with learning and language
+disabilities, including AI visualization techniques. We aim to prepare for software re-design, translating
+between text-based services and symbolic language, the so-called Augmentative and Alternative
+Communication (AAC). Our case is a family with a young adult with learning and intellectual
+disabilities using AAC for social activities such as hiking. We find both barriers and potential. Barriers
+to harnessing the unused resources are due to traditional Co-Design methods, excluding persons with
+other languages than verbal and text. It is weighed up by the potential of AI to democratize through a
+certain lack of prejudice and norms, which make it easier to interpret, create, visualise, and share.
+
+Keywords: Inclusive design, AI, co-design, alternative and augmented communication, innovation
+
+1 INTRODUCTION
+1.1 “For the enrichment of society”
+The right to share with others what you have created, is written into the UN Convention on the Rights
+of Persons with Disabilities [1]. The rigths to share have two benefits:
+1) For the individual, the benefit of sharing is increased Health Promotion [2] and wellbeing through
+     increased self-efficacy expressing yourself creatively and in a social group [3].
+2) It benefits the community to recognise everybodies’ work, ideas and expressions as valuable
+     resources, “for the enrichment of society” [1]. When designed thoughtfully, design for one
+     particular user in mind, can be turned into commercially successful Universal Design, reaching a
+     diversity of persons in different groups [4]. An example is the magnifying glass, made for a visually
+     impaired person, that is used by elderly persons and at night with poor lighting by everybody. That
+     is an innovation process of expanding design for an individual’s needs to a universal design for the
+     many.
+
+1.2 Co-Design and Innovation through Diversity
+Participatory Design and today’s development into Co-Design has since the 1970s been part of a
+Scandinavian design tradition [5] to develop a democratic and socially sustainable technology. The
+traditional design process of products and services is often linear and divideded into phases of insight,
+defining and development. It is led by professional designers and engineers and tested with users. A Co-
+Design process, with focus on democratic values and social sustainability, is much more fuzzy. In Co-
+Design tools and methods are avilable to everybody, including expert , designers and users. Co-Design
+uses: 1. probes to involve users early on in pre-design phase, 2. toolkits involving all in generative
+processes of making and relating, 3. prototypes in an evaluative phase to create and test concepts in real
+
+
+
+EPDE2024/1286
+
+<a id="pdf-p2"></a>
+### [PDF p.2] life settings [6]. There is, however, a gap between vision and reality. Many persons with limited abilities
+- Locator: `R647-co-design-with-persons-with-disabilities-as-an-innovative-resource-set-free-by-a.pdf` · página **2** / 6
+
+life settings [6]. There is, however, a gap between vision and reality. Many persons with limited abilities
+to communicate verbally and to read and write are not included in traditional Co-Design and
+brainstorming sessions. It is because most Co-Design work is based on text on post-it notes and verbal
+discussions in groups or online [7]. However, based on research findings in the prototyping of
+multisensory Co-Design projects, we know that it is possible for persons with learning and language
+disabilities to share their creative and intellectual work with others in a design session [8]. The
+consequence of exclusion from sharing ideas, intellectual work, and expression is the individual’s loss
+of power over the own life situation. It is also the loss of a diverse resource and to learn from people
+that experience the workd differently and that could benefit many others. The “Co” of the Co-Design is
+reduced to empty words.
+
+1.3 Case: Co-Design Use-stories with Family and Young Adult with Disabilities
+“Linda” is a young adult with learning and intellectual disabilities, with limited verbal language and
+reading and writing skills. We have been following Linda and her family, her mother and father, for a
+year, and helped facilitate two Co-Design workshops and participated in outdoor hiking activities with
+the family and their community in Norway. We have also developed new Co-Design methods with
+Linda and her family. Throughout these activities, we have investigated how we can learn from Linda
+and her family’s experiences. The work has resulted in Co-Design method development, presented
+earlier in a master thesis in Interaction Design by one of the authors of this paper [8], also as part of the
+EU-project RurAllure report [9].
+Up to the age of 18, all Norwegians have access to learning technologies, tools, and leisure activities,
+sports and cultural events, through their local schools. When leaving school, many persons with
+disabilities loose connection with friends and social life and are not anymore included in processes
+where they are asked to participate, also outside of school. Only a select few are offered jobs and gain
+entry into new networks in society. This is the case for “Linda”, who still lives with her parents and is
+dependent on their goodwill to meet with people and get involved in activities. Linda uses Augmentative
+and Alternative Communication (AAC), symbol language, both physical talking cards (fig. 1) and an
+interactive tablet, TD Snap [10]. With the tablet and the way the symbols are built up as a natural
+language with the possibility to choose verbs, nouns, adjectives, etc., Linda speaks in full sentences,
+expresses herself and her opinions, creates new concepts and ideas, and shares those with her family.
+To be able to connect with the world around her and to be able to choose what activities to do, she needs
+to know about the activities and be able to express what she wants. Linda’s parents have founded a
+software company called SmartCognition [11], with the purpose of translating text to other multimodal
+outputs such as sound and symbols. So far, the texts about activities Linda and her peers can access have
+been manually typed into the application by personnel working at the local municipality and by Linda’s
+mother, resulting in delays due to lack of time. The parents expressed that they wanted more involvement
+from Linda and that she needed to be able to make decisions concerning her own life and how she spent
+her leisure time. We explored various options and recommended that Linda plan a hike along lake Mjøsa,
+heading to a location she wanted to visit, engaging in activities she enjoyed, such as having picnics, and
+more. Based on the principles of participation and Co-Design, we suggested arranging Co-Design
+workshops accessible to Linda and the whole family.
+In a physical workshop with the parents, we tried out Co-Design and how to replace and complement
+some methods. We brainstormed and prototyped how a narrative would look based on the talking cards
+(fig. 1) made in a series of two workshops with Linda, her parents, and design researchers [7].
+
+
+
+
+EPDE2024/1286
+
+<a id="pdf-p3"></a>
+### [PDF p.3] Figure 1. Talking cards are used in hiking situations to express meaning and communicate
+- Locator: `R647-co-design-with-persons-with-disabilities-as-an-innovative-resource-set-free-by-a.pdf` · página **3** / 6
+
+Figure 1. Talking cards are used in hiking situations to express meaning and communicate
+        what you want in full sentences. From workshop with experts, parents, and designers,
+                     created by Cecilie Eide [7] based on the TD snap software[10]
+Linda used the talking cards, combined them with hand-drawn pictures, and played out scenarios as a
+role play with all of us as her actors. Linda even put on music and staged a dance with all of us. Linda
+ended with a picnic and a snack together at one of the tables full of drawings, symbols, and talking cards.
+
+1.4 Augmented and Alternative Communication and Artificial Intelligence
+Artificial Intelligence AI has long been integral to AAC systems, enhancing communication for
+individuals with disabilities. Evangeline et al. [12] underscores the impact of AI-driven AAC tools
+through their systematic literature review. They point out a notable gap, highlighting the lack of AAC
+solutions that seamlessly combine speech recognition and reconstruction within a single device, catering
+to partially and fully speech-disabled users. This gap, however, is not a barrier but an opportunity for
+inclusivity. Complementing this, Valencia et al. [13] suggest that AI technologies, specifically large
+language models (LLMs), can significantly enrich AAC by improving the quality and diversity of textual
+suggestions provided to users. These concepts aligns with the potential of generative AI to empower
+people with disabilities, enabling their active participation in co-creative activities.
+
+2 METHODS
+We searched for relevant literature and built further on the case based on workshops with a family with
+a young adult with learning and intellectual disabilities. Finally, in Table 1, we compared the different
+technologies' innovative potential qualities to be health-promoting for individuals, enriching for others
+and society and their individual degree of diversity, and based on culture and social values.
+
+2.1 Literature Describing AI with Persons with Disabilities
+The last time AI was popular in 1986, Dreyfus and Dreyfus wrote about how computers «…radically
+have increased the abilities of seriously disabled children to function in normal school environments, by
+allowing, for example, students to work on microcomputers equipped with special input devices.
+Reading machines for the blind are already available, as are machines that help the deaf learn to speak,
+and artificial vision systems which translate TV signal into tactile images on the user’s back, are in
+development.» [14] We believe that AI, 38 years later, could be used to empower persons with
+disabilities to communicate and taking part in planning, expressing ideas, and all the Co-Design
+processes of pre-design in probes with users, toolkits for generative processes and prototypes in real life
+testing [6].
+We made a search in the databases ACM and PubMed for the combination of the terms Artificial
+Intelligence AND Disability (OR Accessible) AND learning (OR intellectual) for the years 2019-2023.
+We did another search, also including AAC. We found eight relevant papers and articles describing the
+innovative uses of AI together with the target group. Three of the papers are described in Table 1 and
+
+
+
+
+EPDE2024/1286
+
+<a id="pdf-p4"></a>
+### [PDF p.4] the main concepts in each lifted up and compared with the concepts of the physical card and the
+- Locator: `R647-co-design-with-persons-with-disabilities-as-an-innovative-resource-set-free-by-a.pdf` · página **4** / 6
+
+the main concepts in each lifted up and compared with the concepts of the physical card and the
+SmartCognition software.
+
+3 RESULTS
+3.1 AI-fying Language Models and Multimodal Interaction for Diversity
+The innovative concepts for AI-based large language models (LLMs) and conversational agents in the
+papers were mapped and compared to the existing software and the physical Talking cards used in the
+two workshops with the family and the young adult Linda (see Table 1).
+In describing the different innovations in Table 1, we include both technologies and theoretical concepts.
+We have rated Diversity, Health Promotion, and Enriching Society from 1 to 5, where 5 is the highest
+rating. Cecilie Eide’s [8] physical Talking card (fig. 1), used in workshop one and developed further in
+workshop two, is in its simple form, easy to understand and view as long as it is relevant to the situation
+and task you will perform. The fact that the card is printed on paper and not possible to change makes
+it static and eventually obsolete as the situation changes. On the card in Figure 1, the symbols are all to
+be used in a hiking situation out in nature. Some may be relevant in a walking situation in the city, but
+much will be irrelevant in, let’s say, a choir practice situation. It is easy to master the talking card and
+therefore Health Promoting for an individual as it promotes self-efficacy and the feeling of
+accomplishment and mastery [2, 3]. In its physical form, it is slow to use and distribute and is not
+enriching for many more than the person using it.
+                           Table 1. AI-fying Co-Design technology for sharing
+ Technology     Diversity          Health            Enrich         Innovation           Reference
+ (AI, Physical, (1-5)              Promotion         society     by (technology,
+ SW)                               Individual (1-    sharing (1-5) theory)
+                                   5)
+ Physical           2 (static)     3 (easy to        3 (slow)     Talking card,          Eide 2023 [8]
+                                   master)                        mobile
+ AI                 4              4             3 (individual HCAI             –        Shneidermann
+                                                 focus)           human                  2022 [15]
+                                                                  computer AI
+ AI                 5    (social, 3 (master for 5 (potential for Tinkerable              Yang 2023 [16]
+                    prototyping) limited group) social            AAC
+                                                 interaction)
+ AI                 2             5 (master for 3 (individual Speech                     Evangeline
+                                  limited group) focus)           recognition &          2024 [12]
+                                                                  reconstruction
+ AI                 4             3 (master for 5 (potential for LLMs Speech             Valencia 2023
+                                  dialogue)      social           Promts AAC             [13]
+                                                 interaction)
+ Software           3             2 (delay)      3        (local, Database text,         SmartCognition
+                                                 manual)          symbol, sound          [11]
+
+Ben Shneiderman's [15] theoretical concept of Human-Computer AI (HCAI) wants to ground AI in
+Human values (rights, justice, dignity) and individual goals (self-efficacy, creativity) and threats for the
+individual. However, it is less focused on society and sharing with others. It would need to be tested
+further in the development of software for sharing to see if it works outside a single-user situation.
+Boyin Yang’s [16] Tinkerable AAC is a concept that scores highest on Diversity and Enrich society
+because of the potential in Co-Designing and sharing during participatory workshops with users with
+diverse backgrounds [8]. The idea that prototyping is made social and that we open machine learning
+training for users to participate in is fundamentally democratic and based on the principles of
+Participation and Co-Design [5, 8]. To be truly participatory, the user should be offered to participate in
+rule-making and policy-making activities, as well as in the execution and playing out of the rules.
+For individuals with speech deficiencys Evangeline [12] want to see more AI-based AAC solutions in
+speech recognition to speech reconstruction software. In their review 2017-2022 they lack AI-
+development of seemless integration of speech recognition and reconstruction with contextually relevant
+outputs in speech and pictograms. Valencia [13] successfully used AI to design and test Interactive
+
+
+
+EPDE2024/1286
+
+<a id="pdf-p5"></a>
+### [PDF p.5] Speech Prompts to extend short conversation prompts, written by a person with disabilities, into full
+- Locator: `R647-co-design-with-persons-with-disabilities-as-an-innovative-resource-set-free-by-a.pdf` · página **5** / 6
+
+Speech Prompts to extend short conversation prompts, written by a person with disabilities, into full
+sentences, to add biographical data and to quest for more feedback. They also included Pictograms in
+combination with written text to speed up and motivate to a seamless and smooth conversation between
+persons with and without disabilities. Compared to the other options, Smart Cognition’s traditional
+software without AI capabilities is a straightforward database with a rule-based system for selecting
+symbols, sounds, and texts [11]. Because it is manual labour, it is also vulnerable to delays based on the
+person who types the text and makes the connection. It is the least rewarding option.
+
+4 DISCUSSION
+We think that the future development of an AI-fyed SmartCognition software for translating between
+text and symbolic language and multimodal communication (AAC) should be Tinkerable [16].
+Tinkerable in the pre-design and generative phases of Co-Design [6] in the sense that you are motivated
+to participate in Co-Designing the rules for how the AI should learn and operate. AI should also involve
+the individual mastery of physical and multimodal interaction, such as with the talking cards, expanded
+with sensory input, and also be flexible for social play, with possibilities to detect and include activities
+such as Linda’s staged and improvised dance and role play from the workshops.
+As our case was a family with a young adult with learning and intellectual disabilities using AAC for
+social activities such as hiking, we will still find both barriers and potentials. This will also be the case
+in future automated AI applications. We think the potential of AI is to democratize through a certain
+lack of prejudice and norms that make it easier to interpret, create, visualise, and share. What innovative
+resources could designers and engineers tap into if we invited persons with disabilities to Co-Design
+future machine learning algorithms for AI?
+In all the Co-Design phases (pre-design, generative creative, prototyping and evaluating real life
+testing), we believe AI could healp spead up dialogue, e.g. with Valencias [13] use of speech prompts
+and the possibility to speed up the response time for the person with disabilities.
+The main take away is that AI-based Augmentative and Alternative Communication (AAC) is in an
+early stage of development, in need of more explorations, but with many promising possibilities.
+Possibiliteis for school, learning and other context sensitive use-situations. The main finding from the
+literature study is that the AI-technologies miss case studies in all areas, for all tasks, users and contexts.
+We suggests thet these explorations and case studies involve users with disabilities in Co-Design
+processes, to get as much relevant knowledge as possible.
+
+ACKNOWLEDGEMENTS
+The research build on the master thesis in Interaction Design by Cecilie Eide [8]. The software is
+developed by SmartCognition, Eirik Dahl and Katrine Oreld [14]. The research is funded by the
+European Union’s Horizon 2020 Research and Innovation programme under grant agreement no.
+101004887 in the RurAllure project [9].
+
+REFERENCES
+[1] UN. Convention on the Rights of Persons with Disabilities (CRPD). United Nations, 2007.
+    Accessed: Jan. 30, 2018., https://www.un.org/development/desa/disabilities/convention-on-the-
+    rights-of-persons-with-disabilities.html.
+[2] WHO. The Ottawa Charter for Health Promotion. World Health Organization, 1986. Accessed:
+    Jan. 30, 2018., http://www.who.int/healthpromotion/conferences/previous/ottawa/en/
+[3] Langer E. J. On becoming an artist : reinventing yourself through mindful creativity. Ballentine
+    books, Random House. New York, 2005.
+[4] Eikhaug O. and Gheerawo R. Innovating with people: the business of inclusive design. Oslo:
+    Norwegian Design Council, 2010.
+[5] Ehn P. Work-oriented design of computer artifacts. Stockholm: Arbetslivscentrum, 1988.
+[6] Sanders E. B.-N. and Stappers P. J. Probes, toolkits and prototypes: three approaches to making
+    in codesigning. CoDesign, vol. 10, no. 1, pp. 5–14, Jan. 2014.
+[7] Eide C. M. Guidelines for including people with cognitive disabilities in the design process - A
+    co-creative design approach. Master thesis, NTNU, 2023. Accessed: Feb. 27, 2024.,
+    https://ntnuopen.ntnu.no/ntnu-xmlui/handle/11250/3079488
+[8] Cappelen B. and Andersson A.-P. Trans-Create - Co-Design with Persons with Severe
+    Disabilities. Universal Design 2021, IOS Press. 2021.
+
+
+
+EPDE2024/1286
+
+<a id="pdf-p6"></a>
+### [PDF p.6] [9] Wattne O. RurAllure. Final Report. 2023. Accessed: Mar. 11, 2024., https://rurallure.eu/
+- Locator: `R647-co-design-with-persons-with-disabilities-as-an-innovative-resource-set-free-by-a.pdf` · página **6** / 6
+
+[9] Wattne O. RurAllure. Final Report. 2023. Accessed: Mar. 11, 2024., https://rurallure.eu/
+[10] Tobii Dynavox. TD Snap communication platform - AAC apps/software. Tobii Dynavox Global.
+     Accessed: Mar. 11, 2024., https://www.tobiidynavox.com/pages/td-snap
+[11] Dahl E. and Oreld K. Smart Cognition AS – – inkluderende kommunikasjon. Accessed: Mar. 11,
+     2024., https://www.smartcognitionas.com/
+[12] Evangeline S.B. and Moorthy A.D. Investigating AI Applications in Communication Tools for
+     Individuals with Speech Impairments. IATMSI (Vol. 2, pp. 1-6). 2024
+[13] Valencia S., Cave R., Kallarackal R., K., Seaver K., Terry M. and Kane S.K. (2023, April). “The
+     less I type, the better”: How AI Language Models can Enhance or Impede Communication for
+     AAC Users. 2023 CHI (pp. 1-14).
+[14] Dreyfus H. L., Dreyfus S. E. and Athanasiou T. Mind over machine : the power of human
+     intuition and expertise in the era of the computer. Oxford: Basil Blackwell, 1986.
+[15] Shneiderman B. Human-centered AI: ensuring human control while increasing automation. In
+     Proceedings of the 5th Workshop on Human Factors in Hypertext, Barcelona Spain: ACM, Jun.
+     2022., doi: 10.1145/3538882.3542790.
+[16] Yang B. and Kristensson P. O. Designing, Developing, and Evaluating AI-driven Text Entry
+     Systems for Augmentative and Alternative Communication Users and Researchers. In
+     Proceedings of the 25th International Conference on Mobile Human-Computer Interaction, in
+     MobileHCI’23 Companion. NY, USA: ACM, Sep. 2023. doi: 10.1145/3565066.3609738.
+
+
+
+
+EPDE2024/1286

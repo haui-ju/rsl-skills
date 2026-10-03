@@ -34,6 +34,7 @@
     "picoc:lint": "python3 scripts/picoc-lint.py",
     "picoc:latest": "python3 scripts/picoc-lint.py --latest",
     "redaccion:lint": "python3 scripts/redaccion-lint.py",
+    "turnitin:qualified": "python3 scripts/turnitin-qualified-text.py",
     "paper:status": "python3 scripts/paper-manifest.py",
     "cribado:prepare": "~/.local/share/pipx/venvs/graphifyy/bin/python scripts/cribado.py prepare",
     "cribado:merge": "~/.local/share/pipx/venvs/graphifyy/bin/python scripts/cribado.py merge",

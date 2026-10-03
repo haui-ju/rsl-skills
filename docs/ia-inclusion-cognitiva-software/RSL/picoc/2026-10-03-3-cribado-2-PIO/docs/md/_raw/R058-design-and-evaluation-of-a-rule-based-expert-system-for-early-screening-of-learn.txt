@@ -1,0 +1,771 @@
+===== PDF PAGE 1 / 12 =====
+                                                               Ingénierie des Systèmes d’Information
+                                                                           Vol. 31, No. 7, July, 2026, pp. 2189-2200
+                                                                       Journal homepage: http://iieta.org/journals/isi
+
+
+
+ Design and Evaluation of a Rule-Based Expert System for Early Screening of Learning
+ Disabilities in Educational Settings
+ Laberiano Andrade-Arenas* , Gustavo Villar-Mayuntupa , Ada Alvarado-Paucar , Sebastián Ramos-Cosi ,
+ Enrique Huamani-Uriarte , Alicia Alva-Mantari
+
+ Facultad de Ciencias e Ingeniería, Universidad de Ciencias y Humanidades, Lima 15304, Peru
+
+ Corresponding Author Email: landrade@uch.edu.pe
+
+ Copyright: ©2026 The authors. This article is published by IIETA and is licensed under the CC BY 4.0 license
+ (http://creativecommons.org/licenses/by/4.0/).
+
+ https://doi.org/10.18280/isi.310706             ABSTRACT
+
+ Received: 19 March 2026                         Learning disabilities, including dyslexia, dyscalculia, and dysgraphia, can negatively affect
+ Revised: 9 June 2026                            students’ academic development when they are not identified at an early stage. This study
+ Accepted: 21 June 2026                          proposes a rule-based expert system to assist the early screening of learning disabilities in
+ Available online: 31 July 2026                  educational environments. The system was developed through expert knowledge
+                                                 representation based on the Buchanan methodology and implemented using the Experta
+                                                 inference engine, Flask framework, and PostgreSQL database. The proposed system
+ Keywords:                                       integrates pedagogical rules to evaluate learning-related indicators and generate
+ dyscalculia, dysgraphia, dyslexia, early        classification outcomes for potential learning difficulties. Its performance was assessed
+ screening,   knowledge     representation,      using 90 test cases, consisting of 60 positive and 30 negative cases, through a confusion
+ learning disabilities, rule-based expert        matrix and corresponding evaluation metrics. The system achieved an accuracy of 91%,
+ system                                          precision of 100%, sensitivity of 87%, specificity of 100%, and an F1-score of 93%. The
+                                                 results demonstrate that the proposed approach can effectively identify potential learning
+                                                 difficulties while avoiding false-positive classifications. By combining artificial
+                                                 intelligence techniques with educational expertise, the developed system provides a
+                                                 practical decision-support approach for teachers and educational practitioners involved in
+                                                 early learning disability screening.
+
+
+
+1. INTRODUCTION                                                            and guiding appropriate teaching strategies, thereby
+                                                                           optimizing learning processes and improving educational
+   In schools, teachers report that a significant number of                inclusion [4].
+students experience learning difficulties in various areas, such              This research is important because the proposed expert
+as writing, composition, and basic mathematics, particularly in            system model can be implemented at various Bertolt Brecht
+the use of basic operations like addition, subtraction,                    School locations and other Peruvian schools. It will benefit
+multiplication, and division. These difficulties may be due to             teachers, educational psychologists, and students by
+specific learning disorders, such as dyslexia, dyscalculia, and            facilitating the early detection of learning difficulties. The
+dysgraphia, which affect students' academic performance and                model's contribution to the education sector is significant
+social integration [1].                                                    because it will improve teaching processes, strengthen
+   One of the main problems in regular basic education is that             educational inclusion, and ensure that each student receives
+many schools lack inclusive education areas and specialized                appropriate attention. Currently, many institutions lack the
+professionals, such as psychologists, educators, and teachers              technological tools necessary for identifying and addressing
+trained in identifying and addressing learning difficulties. This          learning disorders, which limits the ability to intervene in a
+leads to problems going unnoticed or being diagnosed late,                 timely manner and negatively impacts students' academic
+limiting opportunities for early intervention [2].                         performance. This expert system will provide support based
+   Without proper detection and support, students may                      on artificial intelligence and inference rules, enabling more
+experience emotional and social problems that affect their self-           accurate diagnoses and effective responses from teachers and
+esteem, making them more likely to be victims of bullying or               specialists.
+exclusion in the classroom. These difficulties can also                       This project's impact extends beyond the classroom. It will
+contribute to dropping out of school, as students who do not               benefit parents by providing clear information about their
+receive support often develop a negative attitude toward                   children's learning progress and guidance on supporting them
+learning. From a pedagogical perspective, teachers often lack              at home. Additionally, involving authorities in the project's
+access to technological tools that facilitate the early                    implementation will strengthen institutional policies
+identification of learning difficulties. This hinders effective            promoting inclusive education. Technologically, this project
+diagnosis and personalized educational intervention [3]. In this           promotes the use of artificial intelligence in education,
+context, expert systems can play a key role in early detection             fostering innovation in teaching methods and psycho-
+
+
+                                                                    2189
+
+===== PDF PAGE 2 / 12 =====
+pedagogical assessment. In the long term, continuous                        underscores the importance of having effective tools to assist
+improvement of the model will be possible through data                      parents, teachers, and healthcare professionals in this timely
+collection, which will optimize its accuracy and effectiveness              identification process. In a sample of 21 simulated cases, the
+in different educational settings [5]. This study is a significant          system demonstrated outstanding performance, achieving a
+advance in detecting and supporting learning difficulties,                  95% accuracy rate, 100% precision, 93% sensitivity, and
+contributing to educational equity and developing more                      100% specificity. Furthermore, the acceptability assessment,
+personalized, effective teaching methods in Peru.                           conducted with 15 parents selected through convenience
+   The main objective is to design and implement an expert                  sampling, reflected a high level of satisfaction: an overall
+system based on inference rules that can identify learning                  average of 4.78 out of 5 was obtained, with a standard
+difficulties in students, such as dyslexia, dyscalculia, and                deviation of 0.45, suggesting remarkable consistency in
+dysgraphia. The system will be designed to support students,                responses. The results support the effectiveness of the expert
+parents, and administrators at Bertolt Brecht School by                     system as a useful tool for the early diagnosis of learning
+providing accurate information that facilitates early detection             difficulties. However, although the findings are promising, the
+and timely educational decision-making.                                     importance of further research is recognized to overcome
+                                                                            current limitations and strengthen the external validity of the
+                                                                            system to ensure its effective application in real clinical
+2. LITERATURE REVIEW                                                        contexts.
+                                                                               Anggrawan et al. [8] proposed an expert system for the early
+   This section will review the literature of various studies to            diagnosis of learning disorders in children, considering
+address the design of an expert system to support teachers and              conditions such as dyslexia, dysgraphia, dyscalculia, and
+educational psychologists in identifying learning difficulties in           dyspraxia. The study emphasizes the importance of timely
+the classroom. It will examine several studies that highlight the           identification, as lack of awareness may prevent children from
+importance of technology in education, particularly in the                  receiving appropriate support and can negatively affect their
+early detection of learning difficulties, and how these tools can           cognitive and emotional development. Methodologically, the
+facilitate teacher intervention, ensuring that each student                 system integrates both the certainty factors (CFs) and
+receives the necessary support to overcome their educational                Dempster-Shafer theory approaches to handle uncertainty in
+challenges.                                                                 symptom-based diagnosis. The results indicate that the CF
+   Nugraheni et al. [6] developed a web-based expert system                 method achieves higher accuracy (90%) compared to the
+aimed at supporting the diagnosis of learning disorders in                  Dempster-Shafer method (87%), demonstrating its relative
+children through the application of the Dempster-Shafer                     effectiveness in this context. The study contributes by
+theory. The proposed method models uncertainty by assigning                 comparatively implementing both methods within a single
+degrees of belief to symptoms and combining multiple pieces                 diagnostic system, enabling the identification of different
+of evidence to infer the most probable diagnosis. The system                types of learning disorders in children.
+enables users to input observed symptoms and generate                          On the other hand, Alzahrani and Algahtani [9] proposed an
+outputs that include the identified disorder, its definition, and           artificial intelligence-driven approach for the identification
+suggested treatment options. The evaluation results                         and diagnosis of specific learning disabilities, particularly
+demonstrate an accuracy of 92%, highlighting the                            dyslexia and dysgraphia, which significantly affect children’s
+effectiveness of the approach in assisting the diagnostic                   academic performance. The methodology is based on a
+process for learning disorders.                                             weighted ensemble learning model built upon the XGBoost
+   On one hand, Ana [7] explained that the pandemic has                     framework, designed to analyze data collected from
+impacted all sectors of society, including the economy, social              personalized assessments, including performance scores and
+relations, and education. It has particularly altered                       task completion times. This approach enables the system to
+interpersonal connectivity, as social and physical distancing               handle imbalanced datasets and improve diagnostic reliability.
+became the primary means of preventing contagion. These                     The model was implemented within an application that
+measures necessitated that all primary and secondary school                 evaluates reading and writing difficulties while also providing
+activities be conducted from home, forcing a shift from                     tailored instructional recommendations for parents and
+conventional classroom instruction to online learning.                      educators. Experimental results show that the proposed model
+However, theoretical learning without practical application                 outperforms other machine learning and deep learning
+can hinder the development of complex cognitive skills;                     approaches, achieving accuracy rates of 98.7% for dyslexia
+therefore, it is essential for educators to ensure that these               and 99.08% for dysgraphia, highlighting its effectiveness as a
+practices are meaningful and contextually appropriate.                      diagnostic and support tool.
+Consequently, there is an urgent need for online expert                        Kurniawan and Tiaharyadini [10] applied machine learning
+systems that serve as pedagogical tools. It is, thus, necessary             techniques for early dyslexia detection in primary school
+to develop programs that contribute to professional                         children, combining a literature review with the development
+development within virtual and distance education                           and evaluation of multiple models. The study employs
+frameworks. The methodology for this study involved a                       algorithms such as decision tree, K-nearest neighbors, logistic
+bibliographic review of articles and journals focusing on the               regression, Naive Bayes, and random forest to compare their
+development of expert systems designed to promote effective                 diagnostic performances. The results show that decision tree
+online learning during the pandemic.                                        achieves high precision (92.31% for dyslexia-prone and
+   Similarly, given the growing need for early detection of                 90.62% for diagnosed dyslexia) with strong recall values,
+learning disorders such as dysgraphia, dyslexia, and                        while K-nearest neighbors attains the highest overall accuracy
+dyscalculia in children, Andrade-Arenas and Yactayo-Arias                   of 94% and perfect precision (100%) for non-dyslexia cases.
+[2] set out to evaluate an expert system developed in Python                Logistic regression demonstrates notable predictive capability
+designed to facilitate early diagnosis. Background research                 with precision up to 95.38% and recall above 90%, whereas
+
+
+                                                                     2190
+
+===== PDF PAGE 3 / 12 =====
+Naive Bayes reaches perfect precision (100%) in certain                  eye movement patterns during reading, aiming to provide an
+categories but has slightly lower performance in diagnosed               alternative to traditional expert-based assessments. The
+dyslexia. Random forest provides balanced results, with                  methodology combines random forest for feature selection
+precision ranging from 91.18% to 94.23% and recall between               with a support vector machine for classification, using eye-
+92.31% and 93.94%, achieving an overall accuracy of 93%.                 tracking data to detect individuals with low reading fluency,
+These findings confirm the effectiveness of machine learning             including those with borderline performance. This hybrid
+models in enabling accurate and early identification of                  model focuses on extracting the most relevant features from
+dyslexia.                                                                reading behavior to improve diagnostic reliability in more
+   Furthermore, Mulakaluri and Gowdra Shivappa [11] aimed                realistic scenarios. The results show that the proposed
+to develop an expert system for diagnosing learning disorders            approach achieves an accuracy of 89.7% and a recall of 84.8%,
+in children using Dempster-Shafer theory to make diagnoses               demonstrating its effectiveness in identifying dysfluent
+more accurate and timelier. They employed a technological                readers and supporting the feasibility of automated dyslexia
+development approach encompassing several phases:                        detection in natural reading environments.
+identifying the problem, constructing the knowledge base with               Finally, Bhavsar et al. [14] noted that dysgraphia, a learning
+the help of experts, developing the inference engine based on            disorder that affects written expression, can negatively impact
+this theory, implementing the web system, and testing the                children's academic performance and self-esteem. Its
+system's accuracy. The system focused on three disorders-                diagnosis is limited by subjective and inaccessible methods.
+dyslexia, dysgraphia, and dyscalculia-calculating density                The objective of this study was to develop an automated
+values for 30 identified symptoms. As a result, an interactive           machine learning model to more accurately detect dysgraphia.
+web application was created that allows users to enter                   Handwriting data was collected from 120 schoolchildren using
+symptoms and receive diagnoses and treatment                             a digital tablet, and over a thousand kinematic, spatial, and
+recommendations. Validation tests with 50 cases showed 92%               dynamic features were extracted. The algorithms AdaBoost,
+accuracy, reflecting the system's reliability. The authors               random forest, and support vector machine were applied;
+conclude that Dempster-Shafer theory is effective for                    AdaBoost achieved an accuracy rate of 79.5%. This
+diagnosing learning disorders. However, they suggest                     demonstrates that machine learning models can objectively
+incorporating fuzzy logic into future developments to improve            identify dysgraphia, even in heterogeneous samples. The study
+the system's flexibility and validity.                                   concludes that this technology is an efficient tool for early
+   Raatikainen et al. [12] proposed an artificial intelligence–          dysgraphia screening in schools, optimizing pedagogical and
+based approach for diagnosing dyslexia in children through a             therapeutic interventions.
+testing tool that evaluates cognitive and academic                          In conclusion, a literature review of various studies was
+performance. The methodology involves administering                      conducted to inform the design of an expert system. However,
+quizzes and task-based assessments tailored to potential                 the review revealed that the integration of technological tools
+learning impairments, where the resulting data-such as                   into the educational process remains inadequate, particularly
+performance scores and task completion time-are processed                in the early detection of learning difficulties. Thus,
+using an ensemble feature-aware model (EFAM) built on                    implementing an expert system to facilitate the work of
+XGBoost. This EFAM-XGB model is designed to handle                       teachers and educational psychologists was proposed. This
+imbalanced datasets while improving diagnostic accuracy.                 system would provide more precise and timely support in
+The system was implemented as an integrated and user-                    identifying problems and enable more effective interventions.
+friendly application that not only identifies reading disorders
+but also provides instructional recommendations for parents
+and teachers. The results demonstrate a high accuracy of                 3. METHOD
+98.7% in dyslexia detection, outperforming existing machine
+learning approaches and highlighting its effectiveness as a              3.1 Methodological design
+diagnostic tool.
+   Similarly, Drotár and Dobeš [13] explored an automated                  A Scrum and Buchanan-based approach was used to
+approach for dyslexia identification based on the analysis of            develop the web application, enabling iterative development,
+                                                                         expert validation, and structured system design.
+
+
+
+
+                                           Figure 1. Phases of the Scrum methodology
+
+
+                                                                  2191
+
+===== PDF PAGE 4 / 12 =====
+3.1.1 Agile Scrum methodology                                              step remains consistent with the stated objectives, resulting in
+   Scrum is a widely used agile project management                         a robust, validated solution (see Figure 2).
+framework designed to help teams work together and adapt
+quickly, especially in software development. It emphasizes
+iterative progress through short cycles called "sprints," regular
+team meetings, and defined roles, such as product owner,
+scrum master, and development team (see Figure 1). These
+roles work together to efficiently deliver high-quality
+products. Scrum's core principles of transparency, inspection,
+and adaptation foster collaboration, accountability, and
+continuous improvement within teams [14, 15].
+   In this study, Scrum was applied through iterative sprints
+covering the entire system development process. Each sprint
+focused on specific tasks such as designing the system
+architecture, implementing and refining the inference engine,
+and constructing and adjusting the rule base. At the end of each
+sprint, testing and evaluation were conducted to identify
+                                                                                  Figure 2. Phases of the Buchanan methodology
+inconsistencies and improve system behavior. This iterative
+sprint-based approach enabled continuous refinement of the                 3.2 Knowledge acquisition
+expert system, particularly in improving rule accuracy,
+reducing logical conflicts, and enhancing overall diagnostic                  Semi-structured interviews were conducted with specialists
+performance.                                                               in the field of education to gather information related to
+                                                                           learning difficulties. These interviews provided detailed,
+3.1.2 Buchanan methodology                                                 contextualized knowledge about the main difficulties
+   Buchanan's methodology provides a clear, orderly approach               identified in students and the criteria professionals use to
+to creating expert systems. It starts with identifying the                 diagnose conditions such as dyslexia, dyscalculia, and
+problem and continues with defining and organizing essential               dysgraphia. The information obtained through the interviews
+components. Then, it translates that knowledge into well-                  was essential for formalizing knowledge within the expert
+structured rules and inferences. Finally, it culminates in the             system because it enabled the definition of key symptoms, the
+operational implementation and rigorous evaluation of the                  establishment of inference rules, and the validation of real-
+system. Following these sequential stages ensures that each                world scenarios within the domain.
+
+                                              Table 1. Symptoms of learning problems
+
+  Learning
+                      Id                                                   Symptoms                                           Score (1–5)
+  Problems
+                  dyslexia_1                                 Slow, syllabic, or word-by-word reading.                             5
+                  dyslexia_2              Substitution of words with others that are visually or phonetically similar.            4
+                  dyslexia_3                              Additions or omissions of letters and syllables.                        4
+                  dyslexia_4                           Difficulty recognizing familiar words at first sight.                      4
+                  dyslexia_5                         Confusion of visually similar letters (b/d, p/q, m/n, u/n)                   4
+                  dyslexia_6                                     Letter, syllable, or word reversals.                             4
+                  dyslexia_7                       Line breaks, omissions, or repetitions when reading aloud.                     4
+                  dyslexia_8         Persistent difficulty in the automatic recognition of frequent words (reading fluency)       5
+  Dyslexia        dyslexia_9               Problems associating grapheme-phoneme (letter-sound correspondence)                    5
+                 dyslexia_10              Difficulty segmenting sounds (phonological awareness), not just syllables.              4
+                 dyslexia_11                                   Inconsistent reading comprehension.                                3
+                 dyslexia_12                                    Deficit in verbal working memory.                                 3
+                 dyslexia_13                               Confusion regarding directionality (left/right)                        1
+                 dyslexia_14                                  Slow reading speed compared to peers.                               4
+                 dyslexia_15                                   Avoids activities that require reading.                            1
+                 dyslexia_16                                        Common spelling mistakes.                                     3
+                 dyslexia_17                                    Fatigue or frustration when reading.                              2
+                dysgraphia_1                           Illegible, disorganized, or inconsistent handwriting.                      5
+                dysgraphia_2                 Poorly formed letters, irregular sizes, and poor alignment on the page.              4
+                dysgraphia_3                     Mixture of uppercase and lowercase letters in the same word.                     3
+                dysgraphia_4                              Excessively slow or rushed writing with errors.                         4
+                dysgraphia_5                                             Very poor spelling.                                      5
+                dysgraphia_6                               Frequent grammatical and punctuation errors.                           3
+                dysgraphia_7                          Difficulty planning and sequencing ideas in writing.                        5
+ Dysgraphia
+                dysgraphia_8                            Problems maintaining margins or following lines.                          2
+                dysgraphia_9                      Difficulty copying correctly from the blackboard or a book.                     4
+                dysgraphia_10                                             Pain in the hand.                                       2
+                dysgraphia_11               Confusion when writing letters with similar shapes (e.g., m/n, p/q, d/b)              3
+                dysgraphia_12                                  Omit, add, or repeat letters in words.                             4
+                dysgraphia_13                     Problems remembering how to spell previously seen words.                        4
+                dysgraphia_14                                     Avoid tasks that require writing.                               2
+
+
+
+                                                                    2192
+
+===== PDF PAGE 5 / 12 =====
+  Learning
+                      Id                                                  Symptoms                                            Score (1–5)
+  Problems
+                dyscalculia_1                    Problems recognizing numbers and mathematical symbols.                            5
+                dyscalculia_2             Difficulty understanding the relationship between numbers and symbols.                   5
+                dyscalculia_3                              Difficulty learning multiplication tables.                              4
+                dyscalculia_4                         Confusion between mathematical signs (+, −, ×, ÷)                            4
+                dyscalculia_5                                 Common errors in basic operations.                                   5
+                dyscalculia_6                            Difficulty remembering numerical sequences.                               4
+                dyscalculia_7                            Difficulty reading the time on analog clocks.                             3
+                dyscalculia_8                           Problems handling money (calculating change)                               3
+                dyscalculia_9                          Difficulty in measuring or estimating quantities.                           4
+ Dyscalculia    dyscalculia_10              Difficulty understanding concepts such as greater/lesser, before/after                 4
+                dyscalculia_11          Shows insecurity or persistent difficulty in solving mathematical problems.                4
+                dyscalculia_12                               Constant need to use fingers to count.                                3
+                dyscalculia_13                            Excessive slowness in mental calculations.                               4
+                dyscalculia_14                       Difficulty recognizing patterns or logical sequences.                         4
+                dyscalculia_15                Problems with spatial orientation (maps, directions, coordinates).                   2
+                dyscalculia_16                              Avoid tasks or games that require math.                                1
+                dyscalculia_17       Significant difficulty in understanding which operation to apply in word problems.            5
+                dyscalculia_18                              Difficulty in understanding place value.                               5
+                dyscalculia_19                              Errors in aligning figures in operations.                              2
+
+3.3 Knowledge base representation                                            Each rule is defined by a set of symptom-type indicators and
+                                                                          is activated only when all required conditions are present.
+3.3.1 Facts (symptoms)                                                    Once triggered, the system provides the diagnosis along with
+   Table 1 presents the list of symptoms that the expert system           matching symptoms, a score, and a percentage that determines
+considers when diagnosing the three learning difficulties                 severity, allowing traceability of the decision process. Finally,
+addressed. A total of 50 symptoms are included and are                    validation was conducted using representative test cases,
+distributed as follows: 17 are associated with dyslexia, 14 with          which allowed comparison between system outputs and
+dysgraphia, and 19 with dyscalculia. These symptoms were                  expected diagnoses, supporting the reliability of the inference
+selected from specialized educational sources and constitute              process in practical educational contexts.
+the knowledge base used by the expert engine during the
+diagnostic inference process. Each symptom is weighted with               3.4 Conversion of severity scores to certainty factors
+a value between 1 and 5 according to its potential impact on
+the student's learning. A value of 1 indicates a very slight                 The conversion is performed using a predefined scale (see
+effect, while a value of 5 represents a very severe impact.               Table 2). The inference engine uses these factors to calculate
+                                                                          the level of impairment-mild, moderate, severe, or very
+3.3.2 Rules                                                               severe-by combining and comparing the obtained values (see
+   The expert system was implemented using the Experta                    Table 3). Thus, the expert system can more accurately
+library, which provides a forward-chaining inference engine               determine the probability that a student will experience a
+based on IF-THEN production rules. In this approach, the                  particular difficulty based on the quantity and severity of the
+conditions represent the symptoms observed in the student,                detected symptoms.
+while the actions declare new facts or derived diagnoses. To
+ensure the relevance and reliability of the knowledge base, the              Table 2. Conversion of severity scores to determine the
+inference rules were constructed based on established                                            severity level
+literature on learning disorders and organized according to
+domain-specific symptom criteria associated with dyslexia,                      Scale                 Level               Certainty Factor
+dyscalculia, and dysgraphia.                                                      1                  Very mild                  0.10
+                                                                                  2                    Mild                     0.30
+   The process began with the symptoms entered by the user,
+                                                                                  3                  Moderate                   0.60
+which were evaluated against a set of 2000 rules defined in the                   4                   Severe                    0.85
+knowledge base. When the conditions of one or more rules                          5                 Very severe                 1.00
+were met, the system automatically inferred possible
+diagnoses. Furthermore, an iterative refinement process was                             Table 3. Diagnostic interpretation
+carried out to improve consistency, reduce redundancy, and
+minimize conflicts between rules. Figure 3 shows an example                       Percentage Range (%)                 Severity Level
+of a rule corresponding to dysgraphia; however, the same                                  0–24                             Mild
+inference logic applies to other disorders such as dyslexia and                           25–49                          Moderate
+dyscalculia.                                                                              50–79                           Severe
+                                                                                         80–100                         Very severe
+
+                                                                          3.5 Evaluation of the performance of the expert system
+
+                                                                            To evaluate the expert system's performance, a confusion
+                                                                          matrix was developed. From this matrix, precision, accuracy,
+                                                                          and recall metrics were calculated, allowing the system's
+                                                                          ability to correctly identify each class, minimize false positives
+   Figure 3. Rule representation using the Experta library                (FP), and reflect its overall reliability to be quantified.
+
+
+                                                                   2193
+
+===== PDF PAGE 6 / 12 =====
+3.5.1 Confusion matrix                                                                                   2 𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝 ⋅ 𝑟𝑟𝑟𝑟𝑟𝑟𝑟𝑟𝑟𝑟𝑟𝑟
+   The confusion matrix is a table that summarizes the                              𝐹𝐹1 − 𝑆𝑆𝑆𝑆𝑆𝑆𝑆𝑆𝑆𝑆 =                                         (5)
+                                                                                                         𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝 + 𝑟𝑟𝑟𝑟𝑟𝑟𝑟𝑟𝑟𝑟𝑟𝑟
+performance of a classification model by comparing its
+predictions with the actual values of the test set. The matrix             3.6 Architecture of the proposed expert system
+allows us to count the number of cases correctly classified as
+true positives (TP) or true negatives (TN), as well as the                    The proposed expert system is designed to assist professionals
+number of false positives (FP and false negatives (FN)                     in identifying learning difficulties in students. Its architecture
+predicted. Essential metrics can then be calculated from this              comprises several interconnected modules that enable user
+information to determine the model's overall performance                   interaction, data management, information storage, and rule-
+[16].                                                                      based reasoning.
+
+3.5.2 Precision                                                            3.6.1 User interface
+   Precision is a fundamental metric for evaluating the                       The user interface (UI) is the main way users interact with
+performance of a classification model. First, accuracy                     the system. Professionals must authenticate with a secure login
+indicates the proportion of correct positive predictions.                  to access the system. Once authenticated, they can select a
+Second, it allows us to estimate the reliability of the system's           student from the PostgreSQL database and choose which
+positive results. Finally, it helps reduce FP, which can be                symptoms to analyze. The UI then retrieves the list of
+critical in certain contexts. Accuracy is calculated using Eq.             symptoms from a JSON file, which serves as the source of
+(1).                                                                       facts for the inference engine. The interface also displays
+                                                                           diagnostic results as soon as they are generated, providing
+                                           𝑇𝑇𝑇𝑇                            users with immediate feedback.
+                𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃𝑃 =                         (1)
+                                       𝑇𝑇𝑇𝑇 + 𝐹𝐹𝐹𝐹
+                                                                           3.6.2 Symptoms JSON file
+3.5.3 Accuracy                                                                The JSON file contains a list of possible symptoms for the
+   Accuracy is an overall measure of a classification model's              professional to select. This file serves two main functions:
+performance. It is obtained by dividing the sum of correct                 first, it provides the list of symptoms to the UI for selection;
+predictions (TP and TN) by the total number of samples                     and second, it serves as a source of information for the
+evaluated. This metric, represented by Eq. (2), reflects the               inference engine, enabling the expert system to analyze the
+proportion of correctly classified cases, regardless of class. It          data entered by the professional.
+is often used to summarize the overall results of a confusion
+matrix.                                                                    3.6.3 Inference engine
+                                                                              The inference engine is at the core of the expert system. It
+                                    𝑇𝑇𝑇𝑇 + 𝑇𝑇𝑇𝑇                            receives selected symptoms as facts and applies a set of
+        𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴𝐴 =                                   (2)           predefined rules to generate a diagnosis. If any rule is met, the
+                             𝑇𝑇𝑇𝑇 + 𝑇𝑇𝑇𝑇 + 𝐹𝐹𝐹𝐹 + 𝐹𝐹𝐹𝐹
+                                                                           engine returns a result indicating the identified learning
+3.5.4 Recall                                                               problem. This module is responsible for logical reasoning and
+   Recall measures the system's ability to correctly identify              ensuring that diagnoses are consistent with the system's
+cases that belong to a specific positive class. It represents the          knowledge base.
+proportion of positive items that were correctly identified. A                When new symptoms are entered, they are asserted as facts
+high sensitivity value indicates that the model effectively                into the working memory of the inference engine. The engine
+recognizes most positive cases. It is calculated using Eq. (3).            continuously evaluates all rules whose conditions match the
+                                                                           current set of facts. If all conditions of a rule are satisfied, the
+                                        𝑇𝑇𝑇𝑇                               rule is triggered, and its corresponding action is executed,
+                   𝑅𝑅𝑅𝑅𝑅𝑅𝑅𝑅𝑅𝑅𝑅𝑅 =                            (3)
+                                    𝑇𝑇𝑇𝑇 + 𝐹𝐹𝐹𝐹                            generating new facts or a final diagnosis.
+                                                                              If any rule is met, the engine returns a result indicating the
+3.5.5 Specificity                                                          identified learning problem. This module is responsible for
+    It evaluates the system's ability to correctly identify cases          logical reasoning and ensuring that diagnoses are consistent
+that belong to the negative class. It represents the proportion            with the system's knowledge base. Through this chaining
+of negative cases that were correctly classified. A high                   process, multiple rules may be activated sequentially, allowing
+specificity value means the model effectively distinguishes                the system to refine or confirm diagnostic outcomes based on
+negative cases and avoids misclassifying them as positive [17].            the available symptom set.
+It is calculated using Eq. (4).
+                                                                           3.6.4 PostgreSQL database
+                                            𝑇𝑇𝑇𝑇                              The PostgreSQL database stores critical system
+               𝑆𝑆𝑆𝑆𝑆𝑆𝑆𝑆𝑆𝑆𝑆𝑆𝑆𝑆𝑆𝑆𝑆𝑆𝑆𝑆𝑆𝑆 =                      (4)
+                                        𝐹𝐹𝐹𝐹 + 𝑇𝑇𝑇𝑇                        information.
+                                                                              •Users: Data from professionals and students.
+3.5.6 F1-score                                                                •Diagnostic history: Results obtained, which allow for
+   It evaluates the balance between a system's ability to                  monitoring and longitudinal analysis of each student's
+correctly identify positive cases and the accuracy with which              performance.
+it does so. It represents the harmonic mean of precision and                  To ensure data privacy and security, appropriate protection
+recall, combining these two metrics into a single value. A high            measures were implemented. These include controlled access
+F1-score indicates that the model performs well in detecting               to the database, user authentication mechanisms, and restricted
+positive cases and avoiding misclassifications. It is calculated           data visibility based on user roles. Additionally, sensitive
+using Eq. (5).                                                             information is handled following data protection principles,
+
+
+
+                                                                    2194
+
+===== PDF PAGE 7 / 12 =====
+minimizing unnecessary data storage and ensuring                        4. RESULTS
+confidentiality. These measures aim to align the system with
+educational data privacy standards.                                     4.1 User interface of the application
+
+3.6.5 Flow of information                                                  Figure 5 shows the login interface of the web-based expert
+   The flow of information follows these steps:                         system. The screen has two main fields for user access: email
+   1. The professional logs into the system and selects a               address and password. There is also a profile or role selector
+student.                                                                that allows users to identify themselves as an administrator,
+   2. The UI retrieves the list of symptoms from the JSON file          educational psychologist, teacher, or parent.
+and allows the professional to select the applicable ones.                 After entering the information and validating access, the
+   3. The inference engine analyzes the symptoms as facts and           system redirects the user to the main dashboard corresponding
+compares them with the system rules.                                    to their role. Each dashboard offers specific functions and
+   4. If any rule is met, a diagnostic result is generated and          restrictions according to profile type, ensuring the available
+displayed in the UI.                                                    options align with assigned responsibilities and permissions
+   5. The diagnostic result is stored in the PostgreSQL                 within the system.
+database as the student's record.
+   Figure 4 shows the system's overall information flow,
+detailing the interactions among users, the interface, the
+inference engine, the JSON file, and the database.
+
+
+
+
+                                                                                              Figure 5. Login
+
+
+
+
+     Figure 4. Information flow of the proposed system                         Figure 6. Main view of the diagnostic module
+
+
+                                                                 2195
+
+===== PDF PAGE 8 / 12 =====
+   Figure 6 shows the student diagnostic management                       Figure 7(a) shows the diagnostic process interface where
+interface within the web-based expert system. This screen              essential student information and the list of available
+displays a list of students who have been diagnosed and those          assessment symptoms are presented. Each symptom is
+who are awaiting diagnosis. The list is organized so that the          displayed as a checkbox, enabling the educational
+educational psychologist or teacher can quickly identify the           psychologist or teacher to select the symptoms they have
+status of each case.                                                   identified. The system requires a minimum of three selected
+   The system only displays students who have been assigned            symptoms to ensure the inference is based on sufficient
+by the administrator to the corresponding educational                  evidence.
+psychologist or teacher. This ensures that each professional              After confirming the selection, the system validates
+only has access to their assigned students, maintaining a              compliance with this requirement and compares the
+controlled workflow in accordance with their defined                   information with the rules of the inference engine. If there is a
+permissions. Furthermore, the interface includes status                match with any rule of the expert system, a preliminary
+indicators for diagnosed and pending diagnoses. Thus, the              diagnostic result is generated and displayed to the user in a
+platform facilitates orderly management of the diagnostic              clear, structured manner. This provides the educational
+process, ensuring that each student is seen by the assigned            psychologist or teacher with initial guidance on the type of
+specialist.                                                            difficulty the student may be experiencing based on the
+                                                                       system's logic and the selected evidence.
+                                                                          Figure 7(b) shows the diagnostic results interface. It
+                                                                       displays the identified problem, estimated severity level, score
+                                                                       obtained, and corresponding percentage used to determine the
+                                                                       severity level. The screen also includes a detailed diagnostic
+                                                                       section that explains how the expert system reached its
+                                                                       conclusion by considering the selected symptoms and the rules
+                                                                       activated during the inference process.
+                                                                          Before recording the results in the student's diagnostic
+                                                                       record, the professional reviews and validates the generated
+                                                                       information. This verification is essential because the expert
+                                                                       system provides preliminary or supporting results that must be
+                                                                       compared with the educational psychologist's clinical
+                                                                       judgment before confirmation and final storage.
+
+                                                                       4.2 System performance evaluation
+
+                                                                          Previously, the expert system's performance was evaluated
+                                                                       using 90 test cases, which were distributed as 20 positive and
+                                                                       10 negative cases for each of the three types of learning
+                                                                       difficulties: dyslexia, dyscalculia, and dysgraphia. This
+                                                                       distribution enabled analysis of the system's behavior with
+                                                                       both cases that met the diagnostic criteria and cases that did
+       (a) Student information and symptom selection                   not present the corresponding problem.
+                                                                          Performance was analyzed using confusion matrices
+                                                                       developed for each type of difficulty. The following derived
+                                                                       metrics were then calculated: accuracy, precision, sensitivity,
+                                                                       specificity, and F1-score. Subsequently, the individual results
+                                                                       were integrated to obtain an overall evaluation of the system’s
+                                                                       performance, providing an overview of its capacity to support
+                                                                       the diagnostic process. The results for each evaluated problem
+                                                                       are presented below.
+
+                                                                       4.2.1 System performance in identifying dyslexia
+                                                                          The results for identifying dyslexia are presented in Figures
+                                                                       8(a) and 8(b). The confusion matrix shows that the system had
+                                                                       17 TP and 10 TN, with zero FP and three FN. These values
+                                                                       demonstrate that the system did not generate erroneous
+                                                                       diagnoses in the absence of the condition. However, in some
+                                                                       cases, it failed to detect the condition when it was present.
+                                                                          Based on these data, the derived metrics reflect robust
+                                                                       performance. Precision was 1.0 (100%), meaning all cases
+                                                                       classified as positive corresponded to dyslexia. Accuracy
+                                                                       reached 0.90, demonstrating adequate overall performance.
+                                                                       Sensitivity (recall) was 0.85, showing that the system correctly
+                                                                       identified most positive cases, though some were missed.
+                    (b) Diagnostic result                              Specificity, with a value of 1.0 (100%), confirms the system's
+                                                                       perfect ability to correctly recognize cases without the
+                Figure 7. Diagnostic process                           condition. Finally, the F1-score of 0.92 reflects a solid balance
+
+
+                                                                2196
+
+===== PDF PAGE 9 / 12 =====
+between accuracy and sensitivity, supporting the system's           4.2.2 System performance in identifying dysgraphia
+effectiveness in diagnosing dyslexia.                                  Figures 9(a) and 9(b) show the results for dysgraphia
+                                                                    detection and demonstrate the solid performance of the expert
+                                                                    system. The confusion matrix shows 18 TP and 10 TN, with
+                                                                    zero FP and only two FN. These results indicate that the
+                                                                    system did not misclassify any students without the condition
+                                                                    and that only a few cases of dysgraphia were not identified.
+                                                                       The derived metrics confirm this favorable performance.
+                                                                    Precision reached a value of 1.0, meaning all positive
+                                                                    predictions were correct. Accuracy, at 0.93, shows high
+                                                                    overall performance. Sensitivity (recall) was 0.90, indicating
+                                                                    that the system accurately identified most students with
+                                                                    dysgraphia. Specificity was also 1.0, revealing a perfect ability
+                                                                    to discriminate between students without dysgraphia. Finally,
+                                                                    an F1-score of 0.95 demonstrates an outstanding balance
+                                                                    between accuracy and sensitivity, supporting the system's
+   (a) Confusion matrix of the expert system for dyslexia           effectiveness in diagnosing dysgraphia.
+
+                                                                    4.2.3 System performance in identifying dyscalculia
+                                                                       The results for dyscalculia detection, presented in Figures
+                                                                    10(a) and 10(b), show favorable performance across the board.
+                                                                    The confusion matrix reports 17 TP and 10 TN, with zero FP
+                                                                    and three FN. These values demonstrate that the system did
+                                                                    not misclassify cases without the condition, though it failed to
+                                                                    identify some actual cases of dyscalculia.
+
+
+
+
+     (b) Expert system assessment metrics for dyslexia
+
+ Figure 8. Performance of the expert system in identifying
+                        dyslexia
+
+
+
+
+                                                                      (a) Confusion matrix of the expert system for dyscalculia
+
+
+
+
+  (a) Confusion matrix of the expert system for dysgraphia
+
+
+
+
+                                                                     (b) Metrics for evaluating the expert system for dyscalculia
+
+                                                                     Figure 10. Performance of the expert system in identifying
+                                                                                           dyscalculia
+
+                                                                      The derived metrics reinforce this trend. Precision reached
+                                                                    a value of 1.0, indicating that all positive predictions were
+                                                                    correct. Accuracy, at 0.90, indicates adequate overall
+    (b) Expert system evaluation metrics for dysgraphia             performance. Sensitivity (recall), at 0.85, shows that the
+                                                                    system detects most positive cases; however, there is room for
+     Figure 9. Performance of the expert system in the              improvement in completely identifying the difficulty.
+                identification of dysgraphia                        Specificity, at 1.0, confirms the system's ability to perfectly
+
+
+                                                             2197
+
+===== PDF PAGE 10 / 12 =====
+classify negative cases. Finally, the F1-score of 0.92 shows a
+solid balance between accuracy and sensitivity, validating the
+system's usefulness as a support tool for dyscalculia detection.
+
+4.2.4 Overall system performance
+   Figures 11(a) and 11(b) show the overall results, which
+integrate the cases corresponding to dyslexia, dysgraphia, and
+dyscalculia. This allows for an evaluation of the expert
+system's overall performance. The confusion matrix shows 52
+TP and 30 TN, with zero FP and eight FN. While this behavior
+confirms the system's ability to avoid misdiagnosing students
+without difficulties, it also reveals some real cases that went
+undetected.
+   The derived metrics reflect robust overall performance.
+Precision yielded a value of 1.0, indicating that all positive                    (a) General confusion matrix of the expert system
+classifications issued by the system were correct. Accuracy, at
+0.91, demonstrates high performance considering the three
+types of learning difficulties. Sensitivity (recall) reached 0.87,
+showing that the system effectively identifies most positive
+cases, though some omissions persist. Specificity reached a
+value of 1.0, demonstrating perfect recognition of negative
+cases. Finally, the F1-score of 0.93 reveals a solid balance
+between accuracy and sensitivity. This confirms that the expert
+system reliably and consistently supports the comprehensive
+identification of learning difficulties.
+
+4.2.5 Comparative performance analysis
+   Table 4 presents a comparative summary of the
+performance metrics (accuracy, precision, recall, specificity,                (b) Metrics for the overall evaluation of the expert system
+and F1-score) of the proposed system and those reported in
+related studies for learning disability diagnosis, along with the            Figure 11. Performance of the expert system in identifying
+corresponding methods and evaluated conditions.                                                 learning disorders
+
+    Table 4. Comparative performance of the proposed expert system and related approaches in learning disability diagnosis
+
+    Study          Learning Disability               Method                 Accuracy     Precision    Recall     Specificity   F1-Score
+                  Dyslexia, Dysgraphia,
+      [2]                                    Rule-based expert system          95%         100%        93%         100%            -
+                       Dyscalculia
+                  Dyslexia, Dysgraphia,
+      [8]                                     Certainty factors (CFs)          90%           -           -            -            -
+                  Dyscalculia, Dyspraxia
+                                                                             98.7%,
+      [9]         Dyslexia, Dysgraphia            WEL-XGBoost                                -           -            -            -
+                                                                             99.08%
+                  Dyslexia, Dysgraphia,
+     [11]                                        Dempster-Shafer               92%           -           -            -            -
+                      Dyscalculia
+     [12]               Dyslexia                  EFAM-XGB                    98.7%       98.66%      98.65%      98.67%        98.67%
+     [13]               Dyslexia                  Hybrid model                84.8%          -        84.8%          -             -
+                  Dyslexia, Dysgraphia,
+  This study                                 Expert System (Experta)           93%         100%        90%         100%           95%
+                      Dyscalculia
+
+
+5. DISCUSSION                                                               classifications, which is particularly relevant in educational
+                                                                            settings where minimizing incorrect labeling is essential.
+   The developed expert system identifies dyslexia,                            When compared with related studies, expert system
+dysgraphia, and dyscalculia through an inference engine                     approaches such as those in references [8, 11] report accuracy
+constructed from 50 symptoms and implemented as 2,000                       values of 90% and 92%, respectively, using uncertainty-
+rules using the Experta library, forming a knowledge structure              handling techniques such as CF and Dempster-Shafer theory.
+derived from expert analysis that captures relevant                         These approaches similarly rely on structured knowledge
+relationships between symptoms and learning difficulties.                   representation and demonstrate that rule-based or logic-driven
+This rule-based design supports a controlled and reliable                   systems can achieve consistent diagnostic performance,
+diagnostic process, along with the requirement of professional              although their effectiveness depends on the design of the
+validation before storing any diagnosis in the PostgreSQL                   knowledge base and the quality of symptom modeling.
+database. The system’s performance metrics, including                          In contrast, machine learning–based approaches show
+precision (1.00), recall (0.90), specificity (1.00), accuracy               different performance characteristics. Studies [9, 12] report
+(0.93), and F1-score (0.95), reflect a strong ability to identify           accuracy values of 98.7% and 99.08% using ensemble
+cases while maintaining a conservative approach to positive                 learning models based on XGBoost, while traditional models
+
+
+
+                                                                     2198
+
+===== PDF PAGE 11 / 12 =====
+evaluated in reference [10] achieve accuracy values around                  system provides a robust and reliable framework for
+93–94%, depending on the algorithm used. These methods                      identifying dyslexia, dysgraphia, and dyscalculia. By
+benefit from data-driven learning and feature optimization,                 integrating 50 specific symptoms and a comprehensive
+allowing them to capture complex patterns in diagnostic data.               knowledge base of 2,000 rules via the Experta library, the
+However, their performance is strongly influenced by dataset                system effectively models complex diagnostic patterns. The
+size, balance, and representativeness.                                      results offer a consistent alternative to other methodologies
+   Additionally, behavior-based approaches such as the one                  found in current literature, providing valuable decision support
+presented in reference [13], which uses eye-tracking data and               for professionals who maintain final oversight by validating
+classification models, report an accuracy of 89.7% and recall               each diagnosis before it is committed to the database. While
+of 84.8%. While this approach provides an alternative                       the current evaluation was based on a specific set of cases, the
+perspective based on real reading behavior, it also reflects the            findings underscore the significant potential of rule-based
+variability and complexity of interpreting behavioral signals in            architectures in the early detection of learning disabilities.
+natural environments.                                                       Moving forward, research should focus on expanding the scale
+   Overall, the reviewed studies report accuracy values                     and diversity of the study samples. Furthermore, exploring the
+ranging approximately from 87% to 99%, depending on the                     integration of machine learning and deep learning techniques
+methodology and dataset characteristics. Within this context,               could complement expert inference, thereby enhancing the
+the proposed system (accuracy 93%, F1-score 95%) falls                      system’s generalizability and effectiveness across a broader
+within the performance range reported in the literature for                 range of educational and clinical environments.
+diagnostic systems in this domain. The evaluation also
+indicates a small number of FN (FN = 8), which impacts
+sensitivity and highlights an area for further improvement. In              ACKNOWLEDGMENT
+contrast, the absence of FP is an important advantage, as it
+reduces the risk of false-positive classifications. This aspect is             The authors gratefully acknowledge the Universidad de
+particularly relevant in educational and psychological settings,            Ciencias y Humanidades for the institutional support provided
+where overdiagnosis may lead to unnecessary interventions                   for the development of this article. Appreciation is also
+with potential academic and emotional consequences.                         extended to colleagues and experts whose suggestions and
+Consequently, the system’s high specificity supports a                      recommendations significantly contributed to improving the
+conservative diagnostic approach that prioritizes reliable                  quality of the work.
+identifications and helps maintain the integrity of the decision-
+making process.
+   In terms of practical application, the system is intended to             REFERENCES
+be used as a decision-support tool in school environments,
+assisting teachers and psychologists in the early identification            [1] American Psychiatric Association. (2022). Diagnostic
+of learning disabilities. Its simple interface allows non-                      and Statistical Manual of Mental Disorders. Fifth
+technical users to input observed student symptoms and obtain                   Edition, Text Revision (DSM-5-TR). American
+interpretable diagnostic suggestions. To ensure effective                       Psychiatric            Association            Publishing.
+adoption, basic training would be required for educational staff                https://doi.org/10.1176/appi.books.9780890425787
+on symptom recognition, system usage, and interpretation of                 [2] Andrade-Arenas, L., Yactayo-Arias, C. (2024). Expert
+results.                                                                        system for diagnosing learning disorders in children.
+   Finally, the results suggest that the system operates as a                   International Journal of Electrical and Computer
+robust diagnostic support tool with performance comparable                      Engineering,               14(3):             2965-2975.
+to existing approaches. Nevertheless, the presence of FN                        https://doi.org/10.11591/ijece.v14i3.pp2965-2975
+indicates that certain cases may not be detected, which could               [3] Adjiovski, B., Bogatinoska, D.C., Ismajloska, M.,
+limit early identification and underscores the need for further                 Malekian, R. (2024). Enhancing educational technology
+refinement. Future work should focus on optimizing the rule                     in lectures for school students with learning disabilities:
+base and expanding the symptom set to improve sensitivity                       A comprehensive analysis. SN Computer Science, 5(6):
+and reduce missed cases. In addition, the evaluation was                        716. https://doi.org/10.1007/s42979-024-03049-z
+conducted on a limited sample, which may restrict the                       [4] Santhiya, S., KanimozhiSelvi, C.S. (2023). A study on
+generalizability of the findings across different educational                   dyslexia detection using machine learning techniques for
+contexts. Variations in language, curriculum, and diagnostic                    checklist, questionnaire and online game based datasets.
+criteria may influence system performance; however, the rule-                   Applied and Computational Engineering, 5(1): 837-842.
+based structure allows for adaptability through updates to the                  https://doi.org/10.54254/2755-2721/5/20230722
+knowledge base for different populations or regions. As a                   [5] Phudinawala, H., Batatawala, I., Samnani, R. (2024).
+direction for future work, it is recommended to validate the                    Early identification of learning and developmental
+system in educational environments. Likewise, larger and                        disorders in school-age children. International Journal of
+more diverse samples should be considered, including students                   Scientific Research in Computer Science, Engineering
+from different geographic regions, age groups, and                              and Information Technology, 10(5): 247-253.
+demographic contexts, to improve the robustness,                                https://doi.org/10.32628/CSEIT241051022
+generalizability, and external validity of the proposed                     [6] Nugraheni, M., Nuraini, R., Tonggiroh, M., Nurhayati, S.
+approach.                                                                       (2023). Expert system for diagnosing learning disorders
+                                                                                in children using the Dempster-Shafer theory approach.
+                                                                                Sinkron,                  7(4):               2513-2525.
+6. CONCLUSIONS                                                                  https://doi.org/10.33395/sinkron.v8i4.12960
+                                                                            [7] Ana, A. (2020). Trends in expert system development: A
+  This research demonstrates that the developed expert
+
+
+                                                                     2199
+
+===== PDF PAGE 12 / 12 =====
+     practicum content analysis in vocational education for                  developmental dyslexia with machine learning using eye
+     over grow pandemic learning problems. Indonesian                        movement         data.      Array,      12:       100087.
+     Journal of Science and Technology, 5(2): 246-260.                       https://doi.org/10.1016/j.array.2021.100087
+     https://doi.org/10.17509/ijost.v5i2.24616                          [13] Drotár, P., Dobeš, M. (2020). Dysgraphia detection
+[8] Anggrawan, A., Hairani, H., Satria, C., Dayani, A.D.                     through machine learning. Scientific Reports, 10(1):
+     (2023). Diagnosing learning disorders in children: A                    21541. https://doi.org/10.1038/s41598-020-78611-9
+     comparison of certainty factor and Dempster-Shafer                 [14] Bhavsar, K., Shah, V., Gopalan, S. (2020). Scrum: An
+     methods. International Journal of Information and                       agile process reengineering in software engineering.
+     Education        Technology,       13(9):     1422-1429.                International Journal of Innovative Technology and
+     https://doi.org/10.18178/ijiet.2023.13.9.1945                           Exploring        Engineering,        9(3):       840-848.
+[9] Alzahrani, S., Algahtani, F. (2025). Implications and                    https://doi.org/10.35940/ijitee.C8545.019320
+     identification of specific learning disability using               [15] Ekechi, C.C., Okeke, C.D., Adama, H.E. (2024).
+     weighted ensemble learning model. Child Care Health                     Enhancing agile product development with scrum
+     and                  Development,                  51(1).               methodologies:       A     detailed    exploration      of
+     https://doi.org/10.1111/cch.70026                                       implementation practices and benefits. Engineering
+[10] Kurniawan, Z., Tiaharyadini, R. (2024). Machine                         Science & Technology Journal, 5(5): 1542-1570.
+     learning approach for early diagnosis of dyslexia among                 https://doi.org/10.51594/estj.v5i5.1108
+     primary school children: A scoping review and model                [16] Markoulidakis, I., Rallis, I., Georgoulas, I., Kopsiaftis,
+     development. Indonesian Journal of Artificial                           G., Doulamis, A., Doulamis, N. (2021). Multiclass
+     Intelligence     and   Data      Mining,    7(2):   425.                confusion matrix reduction method and its application on
+     https://doi.org/10.24014/ijaidm.v7i2.30614                              net promoter score classification problem. Technologies
+[11] Mulakaluri, S., Gowdra Shivappa, G. (2024). An                          (Basel),                     9(4):                     81.
+     ensemble features aware machine learning model for                      https://doi.org/10.3390/technologies9040081
+     detection and staging of dyslexia. IAES International              [17] Akula, U.S., Marimuthu, K., Devendra, N. (2024).
+     Journal of Artificial Intelligence, 13(3): 3147-3156.                   Understanding the sensitivity, specificity, and predictive
+     https://doi.org/10.11591/ijai.v13.i3.pp3147-3156                        values used in diagnostic tests. Asian Journal of
+[12] Raatikainen, P., Hautala, J., Loberg, O., Kärkkäinen, T.,               Pharmaceutical and Clinical Research, 17(8): 5-8.
+     Leppänen, P., Nieminen, P. (2021). Detection of                         https://doi.org/10.22159/ajpcr.2024v17i8.51243
+
+
+
+
+                                                                 2200

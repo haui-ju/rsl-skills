@@ -1,0 +1,233 @@
+# Maximizing Equitable Reach and Accessibility of ETDs
+
+> Fuente PDF: `R628-maximizing-equitable-reach-and-accessibility-of-etds.pdf` · técnica **locator index** (página + ancla) + chunks Graphify
+
+## Metadata
+- Stem: `R628-maximizing-equitable-reach-and-accessibility-of-etds`
+- PDF: `R628-maximizing-equitable-reach-and-accessibility-of-etds.pdf`
+- DOI: `10.48550/arXiv.2212.07286`
+- Pages: `2`
+- Structured_at: `2026-10-03T23:23:20+00:00`
+- Technique: `pdf-page-locators + heading-chunks`
+
+## Locator index (qué hay y en qué página del PDF)
+
+| Kind | Label | PDF page | MD anchor |
+|------|-------|----------|-----------|
+| abstract | Abstract / blurb | 1 | `#abstract` |
+| concept | R628 | ? | `#concept-r628` |
+| concept | maximizing | ? | `#concept-maximizing` |
+| concept | equitable | ? | `#concept-equitable` |
+| concept | reach | ? | `#concept-reach` |
+| concept | accessibility | 1 | `#concept-accessibility` |
+| concept | etds | ? | `#concept-etds` |
+| finding | navigation elements, making it diﬃcult to interact with the con- This poster addresses acc… | 1 | `#finding-navigation-elements-making-it-di-cult-t` |
+| finding | As book-length documents, ETDs present unique barriers | 1 | `#finding-as-book-length-documents-etds-present-u` |
+| page | p.1: Maximizing Equitable Reach and Accessibility of ETDs | 1 | `#pdf-p1` |
+| page | p.2: William A. Ingram, Jian Wu, and Edward A. Fox | 2 | `#pdf-p2` |
+
+## Abstract
+<a id="abstract"></a>
+
+navigation elements, making it diﬃcult to interact with the con- This poster addresses accessibility issues of electronic theses and tent, particularly for users with visual impairments or other dis- abilities. As book-length documents, ETDs present unique barriers
+
+## Keywords
+
+- _(none auto-detected)_
+
+## Concept index (graph hooks + página)
+
+<a id="concept-r628"></a>
+### [PDF p.?] Concept: R628
+- Locator: `R628-maximizing-equitable-reach-and-accessibility-of-etds.pdf` · página **?**
+
+<a id="concept-maximizing"></a>
+### [PDF p.?] Concept: maximizing
+- Locator: `R628-maximizing-equitable-reach-and-accessibility-of-etds.pdf` · página **?**
+
+<a id="concept-equitable"></a>
+### [PDF p.?] Concept: equitable
+- Locator: `R628-maximizing-equitable-reach-and-accessibility-of-etds.pdf` · página **?**
+
+<a id="concept-reach"></a>
+### [PDF p.?] Concept: reach
+- Locator: `R628-maximizing-equitable-reach-and-accessibility-of-etds.pdf` · página **?**
+
+<a id="concept-accessibility"></a>
+### [PDF p.1] Concept: accessibility
+- Locator: `R628-maximizing-equitable-reach-and-accessibility-of-etds.pdf` · página **1**
+
+<a id="concept-etds"></a>
+### [PDF p.?] Concept: etds
+- Locator: `R628-maximizing-equitable-reach-and-accessibility-of-etds.pdf` · página **?**
+
+
+## Findings index (graph hooks + página)
+
+<a id="finding-navigation-elements-making-it-di-cult-t"></a>
+### [PDF p.1] Finding: navigation elements, making it diﬃcult to interact with the con- This poster addresses accessibility issues of electronic theses and tent, particularly for users with visual impairments or other dis- abilities.
+- Locator: `R628-maximizing-equitable-reach-and-accessibility-of-etds.pdf` · página **1**
+
+<a id="finding-as-book-length-documents-etds-present-u"></a>
+### [PDF p.1] Finding: As book-length documents, ETDs present unique barriers
+- Locator: `R628-maximizing-equitable-reach-and-accessibility-of-etds.pdf` · página **1**
+
+
+## Relevance hooks
+### Theme relevance: software engineering and accessibility
+### Theme relevance: cognitive accessibility and neurodiversity
+### Theme relevance: evaluation metrics and WCAG
+
+## Sections (detected in PDF)
+
+_(no numbered sections auto-detected)_
+
+
+## Page chunks (texto por página del PDF)
+
+_Cada heading es un nodo Graphify. El label incluye la página para volver al PDF sin releer todo._
+
+<a id="pdf-p1"></a>
+### [PDF p.1] Maximizing Equitable Reach and Accessibility of ETDs
+- Locator: `R628-maximizing-equitable-reach-and-accessibility-of-etds.pdf` · página **1** / 2
+
+Maximizing Equitable Reach and Accessibility of ETDs
+                                                     William A. Ingram                                       Jian Wu                               Edward A. Fox
+                                                      waingram@vt.edu                                    j1wu@odu.edu                                fox@vt.edu
+                                                         Virginia Tech                              Old Dominion University                         Virginia Tech
+                                                   Blacksburg, Virginia, USA                         Norfolk, Virginia, USA                   Blacksburg, Virginia, USA
+
+                                         ABSTRACT                                                                 navigation elements, making it diﬃcult to interact with the con-
+                                         This poster addresses accessibility issues of electronic theses and      tent, particularly for users with visual impairments or other dis-
+                                                                                                                  abilities. As book-length documents, ETDs present unique barriers
+
+
+
+
+arXiv:2310.18427v1 [cs.DL] 27 Oct 2023
+                                         dissertations (ETDs) in digital libraries (DLs). ETDs are available
+                                         primarily as PDF ﬁles, which present barriers to equitable access,       to access due to their length and complexity.
+                                         especially for users with visual impairments, cognitive or learn-           There is a growing trend toward making scholarly works more
+                                         ing disabilities, or for anyone needing more eﬃcient and eﬀective        machine readable and accessible through the use of tools such as
+                                         ways of ﬁnding relevant information within these long documents.         PDF-to-HTML conversion, summarization, and keyword extrac-
+                                         We propose using AI techniques, including natural language pro-          tion. Advances in machine learning, deep learning, and NLP can
+                                         cessing (NLP), computer vision, and text analysis, to convert PDFs       improve the accessibility of ETDs, and increase and broaden their
+                                         into machine-readable HTML documents with semantic tags and              usefulness.
+                                         structure, extracting ﬁgures and tables, and generating summaries
+                                         and keywords. Our goal is to increase the accessibility of ETDs and
+                                         to make this important scholarship available to a wider audience.        2 RELATED WORK
+                                                                                                                  Iris Xie and her collaborators have written extensively on the us-
+                                         CCS CONCEPTS                                                             ability of DLs (e.g., [14, 15]). Her recent focus on the needs of
+                                         • Applied computing → Digital libraries and archives; Doc-               blind and visually impaired users [17] led to the development of
+                                         ument management and text processing; • Information sys-                 the Digital Library Accessibility and Usability Guidelines (DLAUG)
+                                         tems → Document representation; • Human-centered com-                    in 2021 [16]. Some of the guidelines address problems with access-
+                                         puting → Accessibility.                                                  ing PDFs, particularly scanned PDFs, and recommend several tech-
+                                                                                                                  niques to make PDF ﬁles more accessible to blind and visually im-
+                                                                                                                  paired users. These include inserting PDF tags and using OCR soft-
+                                         KEYWORDS                                                                 ware for scanned documents. The guidelines also recommend pro-
+                                         digital libraries, electronic theses and dissertations, accessibility    viding users with document summaries, keywords, and relevant
+                                                                                                                  document snippets. However, adherence to these guidelines is time
+                                                                                                                  consuming and typically involves manual work by the authors.
+                                                                                                                     Usability advocate Jakob Nielsen has written for more than 25
+                                         1   INTRODUCTION                                                         years about problems PDF ﬁles cause online readers [10, 11]. For
+                                         University-based institutional repositories are DL systems used to       long documents, Nielsen recommends generating two versions: one
+                                         manage, preserve, and distribute intellectual output from faculty,       optimized for online viewing (HTML) and one optimized for print-
+                                         staﬀ, and students. They often contain a signiﬁcant number of            ing (PDF)—but urges that PDF ﬁles should never be read online [10].
+                                         ETDs, the ﬁnal product of graduate students’ research, which are         Nielsen advises designers to avoid PDFs unless a printable PDF is
+                                         typically long, book-length documents. The most common format            necessary. In these cases, he suggests creating a gateway page that
+                                         for ETDs is the Portable Document Format (PDF), which is widely          summarizes key components and critical information from the doc-
+                                         used as it preserves the visual formatting and layout of the docu-       ument with the option to download the full PDF [11].
+                                         ment and is compatible with most computer systems. PDFs have                A framework for improving the accessibility of articles submit-
+                                         many advantages for scholarly work, but their lack of machine            ted to the arXiv.org preprint repository was recently published in
+                                         readability and broad accessibility through assistive devices is a       2022 [3]. The paper proposes that arXiv should oﬀer an HTML ver-
+                                         signiﬁcant limitation.                                                   sion alongside the PDF and TeX formats currently oﬀered. Accord-
+                                            The ﬁrst ETDs were created around 1988 as Standard General-           ing to the article, 90% of the submissions to arXiv are provided as
+                                         ized Markup Language (SGML) documents. However, widespread               TeX, but the conversion from TeX to HTML cannot be fully au-
+                                         adoption of ETDs did not occur until the introduction of PDF and         tomated. Authors will need to adjust their workﬂows in order to
+                                         the release of Adobe’s Acrobat tool in the early 1990s. Before the       create properly formatted HTML versions of their papers. Many ef-
+                                         release of the ﬁrst version of PDF and Adobe Acrobat in 1993, the        forts are being made to overcome the limitations of scholarly PDFs
+                                         ETD team at Virginia Tech, through a partnership with Adobe, was         through the use of AI. AllenAI’s SciA11y project aims to increase
+                                         able to evaluate a pre-release version of the software to explore its    the accessibility of scientiﬁc documents by using AI and NLP tech-
+                                         potential for ETDs [6]. Their eﬀorts helped lay the foundation for       niques to extract and convert the semantic content of scientiﬁc
+                                         ETDs and aided the widespread adoption of PDF for the dissemi-           PDFs into accessible HTML [13]. Our work is closely related. How-
+                                         nation of scholarly work. ETDs are often only available as PDFs,         ever, while it is possible that their system could be applied to ETDs,
+                                         which typically lack machine readability, semantic structure, and        the focus of their work is on improving access to scientiﬁc papers
+
+<a id="pdf-p2"></a>
+### [PDF p.2] William A. Ingram, Jian Wu, and Edward A. Fox
+- Locator: `R628-maximizing-equitable-reach-and-accessibility-of-etds.pdf` · página **2** / 2
+
+William A. Ingram, Jian Wu, and Edward A. Fox
+
+
+(e.g., for conferences and journals), which are shorter and struc-      REFERENCES
+tured diﬀerently than theses and dissertations.                          [1] Aman Ahuja, Alan Devera, and Edward Alan Fox. 2022. Parsing Elec-
+                                                                             tronic Theses and Dissertations Using Object Detection. In Proceedings
+                                                                             of the ﬁrst Workshop on Information Extraction from Scientiﬁc Publi-
+3   PRELIMINARY WORK                                                         cations. Association for Computational Linguistics, Online, 121–130.
+Our team compiled a research corpus of more than 500,000 full                https://aclanthology.org/2022.wiesp-1.14
+                                                                         [2] Aman Ahuja, William A. Ingram, Chenyu Mao, Chongyu He, Jianchi Wei, and
+text ETDs and metadata collected from 40+ institutional reposi-              Edward A. Fox. 2022. Analyzing and Navigating ETDs Using Topic Models. In
+tories of universities throughout the United States [12]. The cor-           25th International Symposium on Electronic Theses and Dissertations (ETD 2022),
+                                                                             September 7-9, 2022, Novi Sad, Serbia.
+pus is widely diverse in terms of the departments and academic           [3] Shamsi Brinn, Christopher Cameron, David Fielding, Charles Frankston, Ali-
+disciplines it represents. By training models on a diverse corpus,           son Fromme, Peter Huang, Mark Nazzaro, Stephanie Orphan, Steinn Sigurdsson,
+we expose them to a wider range of writing styles, subject matter,           Ryan Tay, Miranda Yang, and Qianyu Zhou. 2022. A framework for improving
+                                                                             the accessibility of research papers on arXiv.org. CoRR abs/2212.07286 (2022).
+and discourse conventions. Our aim is to increase the generaliz-             https://doi.org/10.48550/arXiv.2212.07286 arXiv:2212.07286
+ability and adaptability of our models, making them better suited        [4] Muntabir Hasan Choudhury, Himarsha R. Jayanetti, Jian Wu, William A. In-
+for working with a variety of ETDs from diﬀerent ﬁelds and dis-              gram, and Edward A. Fox. 2021. Automatic Metadata Extraction Incorporating
+                                                                             Visual Features from Scanned Electronic Theses and Dissertations. In ACM/IEEE
+ciplines. Additionally, the inclusion of ETDs from multiple disci-           Joint Conference on Digital Libraries, JCDL 2021, Champaign, IL, USA, September
+plines can help identify commonalities in the structure and content          27-30, 2021. IEEE, 230–233. https://doi.org/10.1109/JCDL52503.2021.00066
+                                                                         [5] Muntabir Hasan Choudhury, Jian Wu, William A. Ingram, and Edward A. Fox.
+of ETDs in general, which could further improve the performance              2020. A Heuristic Baseline Method for Metadata Extraction from Scanned Elec-
+of our models. In multiple studies, we trained models for various            tronic Theses and Dissertations. In JCDL ’20: Proceedings of the ACM/IEEE Joint
+tasks with the goal of improving accessibility. These tasks include          Conference on Digital Libraries in 2020, Virtual Event, China, August 1-5, 2020.
+                                                                             ACM, 515–516. https://doi.org/10.1145/3383583.3398590
+metadata extraction [4, 5], ﬁgure and table extraction [9], sum-         [6] Edward A. Fox, Gail Mcmillan, and Venkat Srinivasan. 2012.                   Elec-
+marization [7], keyword generation [8], topic modeling [2], and              tronic Theses and Dissertations: Progress, Issues, and Prospects.            Brill.
+PDF-to-XML conversion [1]. By converting the PDF to XML, we                  https://brill.com/display/book/9789460917288/BP000009.xml Pages: 95-110 Sec-
+                                                                             tion: Putting Knowledge to Work & Letting Information Play.
+capture the semantic structure of the document. The XML is con-          [7] William A. Ingram, Bipasha Banerjee, and Edward A. Fox. 2020. Summarizing
+verted to HTML or ePub for humans to read online, and it can be              ETDs with deep learning. Cadernos de Biblioteconomia, Arquivística e Documen-
+                                                                             tação 1 (Mar. 2020), 46–52. https://doi.org/10.48798/cadernosbad.2014
+easily converted to other XML formats, such as the JATS format           [8] Palakh Mignonne Jude. 2020. Increasing Accessibility of Electronic Theses and
+used by PubMed and others, to increase the interoperability and              Dissertations (ETDs) Through Chapter-level Classiﬁcation. Thesis. Virginia Tech.
+discoverability of the ETD, and allow for more eﬃcient indexing,             http://hdl.handle.net/10919/99294
+                                                                         [9] Sampanna Yashwant Kahu, William A. Ingram, Edward A. Fox, and Jian Wu.
+searching, and retrieval of content by other systems. By combin-             2021. ScanBank: A Benchmark Dataset for Figure Extraction from Scanned
+ing these techniques, we aim to create a more accessible, navigable,         Electronic Theses and Dissertations. In ACM/IEEE Joint Conference on Digital
+and machine-readable DL for ETDs.                                            Libraries, JCDL 2021, Champaign, IL, USA, September 27-30, 2021. IEEE, 180–191.
+                                                                             https://doi.org/10.1109/JCDL52503.2021.00030
+                                                                        [10] Jakob       Nielsen.     1996.                    In      Defense     of    Print.
+4   DISCUSSION AND FUTURE WORK                                               https://www.nngroup.com/articles/in-defense-of-print/
+                                                                        [11] Jakob       Nielsen     and       Anna       Kaley.      2020.               PDF:
+We investigate using AI to convert PDF ETDs to machine-readable              Still     Unﬁt      for     Human        Consumption,        20    Years    Later.
+HTML documents with semantic tags, extracted ﬁgures and tables,              https://www.nngroup.com/articles/pdf-unﬁt-for-human-consumption/
+                                                                        [12] Sami Uddin, Bipasha Banerjee, Jian Wu, William A. Ingram, and Ed-
+and generated summaries and keywords, with the aim of making                 ward A. Fox. 2021. Building A Large Collection of Multi-domain Elec-
+them machine-readable and more accessible to a wider audience.               tronic Theses and Dissertations. In 2021 IEEE International Conference on Big
+More research is underway to assess the impact of the proposed               Data (Big Data), Orlando, FL, USA, December 15-18, 2021. IEEE, 6043–6045.
+                                                                             https://doi.org/10.1109/BigData52589.2021.9672058
+techniques on the accessibility and usability of ETDs through user      [13] Lucy Lu Wang, Isabel Cachola, Jonathan Bragg, Evie Yu-Yen Cheng, Chelsea
+studies involving a diverse group of participants, including those           Haupt, Matt Latzke, Bailey Kuehl, Madeleine van Zuylen, Linda Wagner, and
+with visual impairments and cognitive or learning disabilities.              Daniel S. Weld. 2021. Improving the Accessibility of Scientiﬁc Documents:
+                                                                             Current State, User Needs, and a System Solution to Enhance Scientiﬁc PDF
+   As ETDs are complex book-length documents, creating one long              Accessibility for Blind and Low Vision Users. CoRR abs/2105.00076 (2021).
+HTML representation might not be the best way to present them.               arXiv:2105.00076 https://arxiv.org/abs/2105.00076
+                                                                        [14] Iris Xie. 2006. Evaluation of digital libraries: Criteria and problems from users’
+More research is needed to determine how users can navigate and              perspectives. Library & Information Science Research 28, 3 (Sept. 2006), 433–452.
+consume information in an ETD in the most eﬀective and eﬃcient               https://doi.org/10.1016/j.lisr.2006.06.002
+way. ETDs diﬀer from other academic writing in their length and         [15] Iris Xie. 2008. Users’ evaluation of digital libraries (DLs): Their uses, their
+                                                                             criteria, and their assessment. Inf. Process. Manag. 44, 3 (2008), 1346–1373.
+format and contain a diverse range of content, including text, im-           https://doi.org/10.1016/j.ipm.2007.10.003
+ages, tables, equations, and references. A combination of approaches,   [16] Iris Xie et al. 2021. Digital Library Accessibility and Usability Guidelines
+including structured navigation, adaptive interfaces, and summa-             (DLAUG). https://sites.uwm.edu/guidelines/
+                                                                        [17] Iris Xie, Rakesh Babu, Tae Hee Lee, Melissa Davey Castillo, Sukjin You, and
+rization, may be needed to support users in ﬁnding and under-                Ann M. Hanlon. 2020. Enhancing usability of digital libraries: Designing help
+standing the content buried in these rich scholarly documents.               features to support blind and visually impaired users. Inf. Process. Manag. 57, 3
+                                                                             (2020), 102110. https://doi.org/10.1016/j.ipm.2019.102110
+ACKNOWLEDGMENTS
+This project was made possible in part by the Institute of Museum
+and Library Services LG-37-19-0078-19.

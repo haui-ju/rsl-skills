@@ -1,0 +1,1282 @@
+===== PDF PAGE 1 / 16 =====
+                                                                  Int. J. Human–Computer Studies 208 (2026) 103696
+
+
+                                                                      Contents lists available at ScienceDirect
+
+
+                                      International Journal of Human - Computer Studies
+                                                           journal homepage: www.elsevier.com/locate/ijhcs
+
+
+
+
+Human-centered AI for inclusive tourism: enhancing travel planning for
+adults with autism spectrum disorder
+Noemi Mauro∗ iD, Fabio Ferrero, Liliana Ardissono, Federica Cena
+University of Torino, Corso Svizzera, 185, Torino, 10149, Italy
+
+
+
+
+HI GHLIGH TS
+
+• We found that, despite difficulties, autistic adults wish to plan trips autonomously.
+• We propose a Human-Centered AI trip planner for mid/high-functioning ASD users.
+• Step-by-step guidance helps autistic users plan trips with limited effort.
+• The app empowers users to make choices while AI guides the process, ensuring balanced control.
+• The app balances user guidance and decision-making control.
+
+
+
+
+ARTICLE INFO                                                 ABSTRACT
+
+Keywords:                                                    Travel experiences can challenge individuals with Autism Spectrum Disorder (ASD) before embarking on a trip,
+Autism                                                       because of the complexity of planning, but also during the trip, due to sensory overstimulation while visiting
+Human-centered AI                                            places. Artificial Intelligence (AI) could help overcome some obstacles. However, it might represent a barrier
+Recommender Systems                                          for people with mid-functioning autism if their needs for assistance are not considered when designing tourism
+Planning                                                     applications. Moreover, most trip planners fully control the generation of solutions, undermining users’ decision
+Tourism
+                                                             autonomy.
+                                                                 To address these challenges, we explored the development of itinerary planning technologies through a
+                                                             human-centered approach. We aimed to balance guiding users in their decision-making with empowering them
+                                                             to plan tours independently. The result is CARES, an Artificial Intelligence-driven trip planner designed for autis­
+                                                             tic adults, which we present in this article. CARES applies a collaborative approach to developing itineraries,
+                                                             based on the exploitation of (i) AI technologies for information filtering and interactive itinerary planning that
+                                                             are robust to the data scarcity characterizing the autism domain; (ii) a user interface that reduces information
+                                                             overload and decision fatigue in information exploration.
+                                                                 We tested CARES with 14 autistic adults, gathering insights to guide future design and improve the usability
+                                                             of Artificial Intelligence for neurodivergent users. The results indicate that our approach provides an accessible
+                                                             solution for enhancing the travel experiences of mid- to high-functioning autistic adults. In doing so, it contributes
+                                                             to more inclusive tourism.
+
+
+
+
+1. Introduction                                                                                MF) or advanced intellectual abilities (high-functioning, HF).1 The
+                                                                                               common ground is social behavior issues (Hobson, 1993) and atypical
+   At least 78 million people have been diagnosed with Autism
+                                                                                               sensory sensibility (Tavassoli et al., 2014). These features impact the
+Spectrum Disorder (ASD) worldwide (Lord et al., 2022). ASD is a neu­
+                                                                                               tourist experience, which implies unpredictable environmental stimuli
+rodiversity that affects how people perceive the world and interact with
+                                                                                               and many social interactions. Planning an itinerary involves complex
+others. Being a spectrum condition, it impacts people in different ways,
+                                                                                               decisions, such as selecting the places to visit, transfer methods, and
+causing cognitive problems (low-functioning, LF, or mid-functioning,
+
+
+ ∗
+     Corresponding authors.
+     Email address: noemi.mauro@unito.it (N. Mauro).
+ 1   High, medium, low functioning correspond to levels 1,2,3 in the ASD scale according to DSM5 criteria (American Psychiatric Association, 2013).
+
+https://doi.org/10.1016/j.ijhcs.2025.103696
+Received 27 November 2024; Received in revised form 3 October 2025; Accepted 18 November 2025
+Available online 25 November 2025
+1071-5819/© 2025 The Author(s). Published by Elsevier Ltd. This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).
+
+===== PDF PAGE 2 / 16 =====
+N. Mauro, F. Ferrero, L. Ardissono et al.                                                              International Journal of Human - Computer Studies 208 (2026) 103696
+
+
+related activities (Cena et al, 2023a). Decision-making can cause anx­                 • RQ2: Does CARES provide accessible trip planning for autistic indi­
+iety, fatigue, and exhaustion. This can induce avoidance of decisions                    viduals with mid-to-high functioning abilities?
+(Luke et al., 2012; Zellner and Olds, 2016). Thus, some autistic people                • RQ3: What impact does CARES have on trip planning compared to a
+avoid traveling (Smith, 2015; Shaw and Coles, 2004), even though liv­                    conventional planning system?
+ing a tourist experience might improve their quality of life. Artificial
+Intelligence (AI) could contribute to overcoming some obstacles to the                We tested CARES in a user study with 14 people with autism (7 HF, 7
+tourist experience (Guner and Acarturk, 2020). However, people with                   MF). As a use case, we selected the Langhe, a rural area with small cities
+mid-functioning autism might perceive this technology as a barrier                    located in Piedmont, Italy. It is suitable for organizing daily trips from
+because their needs are not considered when designing tourism applica­                Torino and can be visited by car or on a walking itinerary. The results of
+tions (Ali et al., 2023). Thus, they cannot effectively and independently             this test revealed that the system enables users to actively participate in
+use them.                                                                             decision-making while mitigating cognitive overload through step-by-
+    In the CARES project,2 we set the goal of developing a tourist                    step guided interactions.
+guide supporting autistic users in autonomously planning customized                       This work shows that, by leveraging human-centered approaches,
+itineraries. As low-functioning ASD people rely on caregivers for their               intelligent systems such as tour planners can address functional require­
+activities, we targeted people with high or medium levels of autism.                  ments and enhance the user experience, making technology accessible
+    We adopted a Human-Centered AI (HCAI) approach (Shneiderman,                      and supportive for individuals with diverse levels of autism. Our contri­
+2022) to design and develop the application. The existing literature                  butions are:
+reports that people with autism have difficulties with planning and
+organization, need guidance in decision-making, and desire to control                  • An intelligent planning system that empowers users to design
+their experiences; moreover, it suggests personalizing solutions to avoid                itineraries through guided interaction, leaving them in control of
+perceptual overload and respect individual aversions (negative prefer­                   decision-making.
+ences). To gather further user requirements, we conducted a pre-study                  • An accessible tourist support system that can be used by people with
+by administering a qualitative interview to 17 HF or MF people with                      high and medium levels of autism to plan trips autonomously.
+ASD recruited by the staff of the Adult Autism Center of the city of                   • An empirical study involving high- and mid-functioning ASD indi­
+Torino.3 The main topics we extracted from their responses revealed                      viduals in a real-use scenario to assess the solution’s accessibility
+that, despite using online tour planners, most of them were challenged                   and usefulness.
+by a trade-off between controlling itinerary creation to obtain detailed
+and personalized itineraries and receiving guidance to face the difficul­
+                                                                                      CARES employs content-based filtering, constraint satisfaction, and
+ties of information exploration and organization. We thus focused on (i)
+                                                                                      route optimization to manage the interaction with the user and the
+enhancing user control over the selection of places to visit through a
+                                                                                      itinerary construction because these techniques can be used in severe
+simple interaction style and (ii) reducing information overload during
+                                                                                      data scarcity domains. Indeed, the low representation of autistic users
+data exploration and itinerary planning. The result is the CARES app.
+                                                                                      (e.g., about 2.21 % in the U.S. (Dietz et al., 2020)) and their tendency
+    Different from tour planners that leave users alone in Point of
+                                                                                      to limit traveling, or repeat the same tour experiences, strongly chal­
+Interest selection (e.g., Google My Maps4 ) or propose built-in itineraries
+                                                                                      lenge the acquisition of datasets enabling the adoption of more recent
+(Sánchez and Bellogín, 2022), CARES targets autistic users’ needs as
+                                                                                      technologies, such as neural networks, which require model training.
+follows:
+                                                                                      Another important point is that adopting constraint satisfaction and
+ • To take preferences and aversions into account and support informed                content-based filtering based on positive/negative preferences supports
+   decision making, it suggests candidate Points of Interest by simulta­              transparency in the presentation of suggestions to the user and the vi­
+   neously considering (i) the user’s positive and negative preferences               sualization of the user model, qualities that are particularly challenging
+   for categories of Points of Interest, and (ii) the available data about            to guarantee with black-box machine learning approaches.
+   places that can be presented in their preview during exploration.                      In the following, Section 2 outlines the related work. Section 3 de­
+ • To prevent information overload, CARES also supports a step-by-                    scribes our user-centered AI approach. Sections 4 and 5 present the
+   step design of the trip plan, executing real-time consistency checks               preliminary study and the UCD process we followed. Section 6 describes
+   and itinerary optimization to propose Points of Interest that fit the              the CARES app. Section 7 describes the user study. Sections 8 and 9
+   spatial and temporal constraints of the itinerary under construction.              present the results and discuss them. Sections 10 and 11 report our
+   This is designed to help users plan trips in manageable steps, em­                 work’s implications and limitations. Section 12 concludes the paper.
+   powering them to make decisions at their own pace without feeling
+   overwhelmed.                                                                       2. Background and related work
+ • To simplify the interaction style, the application only presents closed
+   questions (Luke et al., 2012). Specifically, it enables the user to                2.1. Background on decision-making in autism
+   inspect one candidate Point of Interest at a time, progressively ex­
+                                                                                          Decision-making is a complex mental process, through which “one of
+   ploring other options to decide whether to add them to the itinerary
+                                                                                      two or more possible options or actions is actively selected to reach a de­
+   or ask for further suggestions.
+                                                                                      sired goal” (Edwards, 1954). Planning an itinerary involves the selection
+The work described in this paper focuses on the human-AI interaction                  of the places to visit, coupled with information on timing, transfer meth­
+aspects regarding tour planning. Specifically, we conducted a user study              ods, and related activities. Thus, to design CARES, we considered the
+to answer the following research questions:                                           results of the works examining decision-making in people with autism.
+                                                                                          A robust body of empirical work demonstrates that the decision-
+ • RQ1: To what extent do step-by-step guidance and personalization                   making processes of adults on the autism spectrum differ systematically
+   features implemented in CARES support trip planning?                               from those of neurotypical individuals, and thus people with autism ex­
+                                                                                      hibit unique needs. Dual process theory (Thompson et al., 2009; Brosnan
+                                                                                      et al., 2016) distinguishes between an intuitive, fast, and automatic
+ 2
+    CARES - inClusive personAlized touRist systEms autiSm.                            system (System 1) and a slower, more analytical and deliberate sys­
+ 3
+    Adult Autism Center, Department of Mental Health, ASL City of Torino, Italy       tem (System 2). Research (Luke et al., 2012; Vella et al., 2018; Farmer
+- (Piedmont Region Pilot Center).                                                     et al., 2017) indicates that autistic individuals tend to favor more ef­
+  4 https://www.google.com/intl/en/maps/about/mymaps/.                                fortful, analytic processing (System 2), requiring extended deliberation
+
+                                                                                  2
+
+===== PDF PAGE 3 / 16 =====
+N. Mauro, F. Ferrero, L. Ardissono et al.                                                           International Journal of Human - Computer Studies 208 (2026) 103696
+
+
+time and step-by-step incremental decision-making, as rapid or holis­             tourist attractions, describing what visitors can expect there. Other at­
+tic decision-making (System 1) often leads to fatigue, anxiety, and               tempts are tourist websites accessible to people with ASD, e.g., (Dattolo
+avoidance.                                                                        et al., 2016).
+    Luke et al. (2012) examined “real-life” choices made by adults with               Very few works present solutions supporting people with ASD in
+and without ASD and reported that autistic participants experienced               managing the tourist experience. Varriale et al. (2022) focuses on how
+greater difficulty when decisions had to be made quickly, required a              digital technologies can improve the inclusiveness of museums. This is
+departure from routine, or involved social negotiation. The authors ob­           an exploratory and qualitative study on the design of an app for chil­
+served that such situations provoked fatigue, heightened stress, and              dren with autism. The app provides a digital visual agenda to support
+anxiety, leading many participants to avoid the decision altogether.              children and their families when visiting an archaeological museum.
+Thus, people with autism need to reduce information overload and                      Cena et al (2023b) presents Piuma, a map-based mobile app useful
+require some cues to focus attention on important aspects.                        for finding relevant places in a city. Piuma exploits places’ sensory fea­
+    Vella et al. (2018) used a standardized decision-making question­             tures to suggest locations suitable for users’ idiosyncratic needs. It has
+naire (rather than self-report) and found that, although autistic adults          been tested with people with high-functioning autism, and it is not suit­
+often reached more logically consistent outcomes, they required consid­           able for people with lower cognitive capabilities due to the complexity
+erably longer deliberation times and gathered more information before             of the interaction.
+committing to a choice. This implies that people with autism need ex­                 Rezae et al. (2021) propose a mobile application to support the use of
+tended processing time. This pattern was interpreted as evidence of more          public transportation. The app aims to present travel information intu­
+effortful, analytic processing. Farmer et al. (2017) arrived at a similar         itively to reduce the cognitive load involved in reading and processing
+conclusion, showing that autistic decision-makers tend toward consis­             service schedules. However, the planning is not personalized to users’
+tent, rational selections-a style that can be advantageous for tasks with         preferences and needs. These works reveal two main gaps in the state of
+well-defined rules (e.g., mathematics) but may be detrimental when                the art:
+rapid integration of social and contextual cues is essential, such as plan­
+                                                                                   • Lack of a personalized, guided planning tool that supports pre-trip
+ning a trip. This implies that people with autism need a predictable
+                                                                                     planning for autistic adults across the full functional spectrum.
+interaction flow. Farmer et al. (2017) observed that autistic adults of­
+                                                                                   • Lack of mixed-initiative interaction (Horvitz et al., 2005) that bal­
+ten prefer to make a series of small, verifiable decisions rather than a
+                                                                                     ances system-generated recommendations with user-controlled ad­
+large, all-or-nothing choice. Thus, they need support for incremental
+                                                                                     justments, a design principle shown to improve engagement and
+commitment.
+                                                                                     perceived control (Convertino et al., 2017; Deterding et al., 2017).
+    These findings suggest three design guidelines for any decision-
+support system intended for autistic adults:                                      Filling these gaps is essential for translating the decision-making insights
+                                                                                  of Section 2.1 into a usable, real-world solution.
+ • Minimization of irrelevant information - to reduce cognitive overload
+   (Vella et al., 2018).                                                          2.3. Tourism recommender systems
+ • Clear visual or textual presentation of the decision-relevant at­
+   tributes - to focus attention on analytical aspects while shielding                Most trip planners generate optimal itineraries by applying Content-
+   users from extraneous details (Vella et al., 2018).                            based or Collaborative Filtering techniques to select the places to visit,
+ • Provision of extended processing time and explicit, closed-question            combined with traditional routing algorithms, like Dijkstra’s algorithm,
+   formats - to accommodate slower deliberation (Luke et al., 2012).              to schedule visits (Gavalas et al., 2011; Kurata and Hara, 2013; Borrás
+ • Offering a step-by-step interaction (Farmer et al., 2017).                     et al., 2014). GPS traces have been used to mine travel itineraries
+                                                                                  for recommendations (Zheng and Xie, 2011). Moreover, location-based
+The CARES system can be framed within the dual process theory of                  networks have been exploited to retrieve user-generated content (like
+decision-making (Thompson et al., 2009; Brosnan et al., 2016) in autism           geo-tagged photos) and check-in data for building richer user profiles
+by recognizing how it addresses the distinct cognitive styles seen in             and inferring widely used travel plans (Brilhante et al., 2015; Lim
+autistic adults. CARES supports the decision process of System 1 by pro­          et al., 2018; Sánchez and Bellogín, 2022). Furthermore, Deep Neural
+viding personalized, stepwise guidance that allows users to break down            Networks have been used to recommend places (Yu et al., 2020) and
+the complex trip-planning task into manageable, verifiable decisions,             build personalized itineraries. See (Sarkar et al., 2022) for a survey.
+preventing information overload.                                                      These systems fully control the itinerary generation process, failing
+                                                                                  to involve the user in its construction, a primary goal of our work.
+2.2. ICT solutions for autism and tourism                                         Some tour planners let users criticize the itineraries and ask to gen­
+                                                                                  erate different ones or remove specific items from the plans, as in
+    Studies about tourism, industry practice, and government policy               (Vansteenwegen et al., 2011). However, they fail to support equal
+have traditionally assumed that tourists are neurotypical rather than             user-system collaboration.
+neurodivergent (Jepson et al., 2024). Few studies focus on the tourist                Most commercial trip planners, e.g., Roadtrippers,7 adopt a similar
+experience of people with ASD, but most deal with families with autis­            approach and fully control the itinerary generation. Other ones, such
+tic children (Conde et al., 2023; Sedgley et al., 2017). Adults are               as Wanderlog,8 enable users to select the places to include in a tour.
+understudied except for a few exceptions (Zhao et al., 2023).                     However, they lack the itinerary scheduling function.
+    Technology is considered valuable in helping people with ASD (Simm                Similar to the use cases explored in customer support manage­
+et al., 2016). It is mainly used to support social activities such as             ment (Convertino et al., 2017) and mixed-initiative creative interfaces
+talking to others, understanding emotions, collaborating, coping with             (Deterding et al., 2017), a tour planner can play a key role in supporting
+stress, improving people’s autonomy at home, and shopping activities.             user awareness of the constructed itineraries, considering their consis­
+However, few technologies support people with autism in tourism. Most             tency and feasibility. In this perspective, Mauro et al. (2024)’s work
+services are simple informative websites, like Autistic Globetrotting5 and        supports the construction of school field trips involving teachers in se­
+Toerisme voor Autisme.6 They show how to pack luggage and review                  lecting the places and activities, but different from CARES, it does not
+                                                                                  personalize the recommendations.
+
+
+ 5                                                                                 7
+     https://autisticglobetrotting.com/.                                               https://roadtrippers.com/.
+ 6   https://www.toerismevoorautisme.be/.                                          8   https://wanderlog.com/.
+
+                                                                              3
+
+===== PDF PAGE 4 / 16 =====
+N. Mauro, F. Ferrero, L. Ardissono et al.                                                             International Journal of Human - Computer Studies 208 (2026) 103696
+
+
+    To summarize, no existing tourism recommender system simultane­                reliance on technological tools and applications before departure and
+ously (i) offers a mixed-initiative, user-system collaborative planning            while traveling, and their vision of an ideal travel experience.
+loop, (ii) tailors recommendations to the distinctive decision-making
+characteristics of autistic adults, and (iii) supports users with ASD across       Procedure. Participants were invited to the Adult Autism Center for
+a large functional range (high- and mid-functioning).                              in-person interviews; however, online interviews via video conferencing
+    By integrating the decision-making constraints identified in                   were offered as an alternative for those who preferred remote partici­
+Section 2.1 with the collaborative planning principles, we aim to cre­             pation. All interviews were conducted by a clinical psychologist with
+ate an itinerary assistant that (a) reduces unnecessary information, (b)           specialized training and experience in autism spectrum disorders. Each
+affords flexible deliberation time, (c) presents recommendations in a              interview session lasted approximately 1 h and was audio-recorded
+clear, visual format, and (d) sustains an interactive dialogue with the            with participant consent. All recordings were subsequently transcribed
+user throughout the planning process. This directly addresses the gaps             verbatim to ensure accurate data capture.
+in both the autism-focused ICT literature and the broader tourism-
+recommender research, providing a novel contribution that is both                  Data analysis. The transcribed interviews were analyzed using quali­
+theoretically grounded and practically needed.                                     tative content analysis (Hsieh and Shannon, 2005). Two researchers and
+                                                                                   the psychologist independently reviewed the transcripts to identify and
+3. User-centered AI approach in CARES                                              categorize participants’ responses according to predefined categories
+                                                                                   aligned with the research objectives: travel willingness, planning modal­
+    The literature discussed in Section 2.1 highlights autistic people’s
+                                                                                   ities, technology use, and ideal trip characteristics. The researchers and
+need to be supported in decision-making without being overwhelmed by
+                                                                                   the psychologist met to compare findings, resolve discrepancies through
+information. However, we aimed to enhance their autonomy in trip plan­
+                                                                                   discussion, and achieve consensus on categorization. Representative
+ning. To find a trade-off between these contrasting requirements, during
+                                                                                   quotes were extracted to illustrate key findings and user needs that
+the design of the CARES app, we drew inspiration from the principles
+                                                                                   would inform the app design.
+promoted by Shneiderman (2022) in his definition of Human-Centered
+Artificial Intelligence (HCAI). Shneiderman proposes to fine-tune the of­
+                                                                                   Results. In the following, we report and describe the main findings
+fer of full automation versus full control according to people’s needs
+                                                                                   from the interviews grouped by the questions we asked. We translated
+to avoid the dangers of excessive human or computer control. We took
+                                                                                   participants’ answers from Italian.
+this principle as a building block of our work, combined with a user-
+                                                                                       Do you like traveling? Participants like traveling (MF1 and MF3 said
+centered design approach (Abras et al., 2004; Mao et al., 2005) to elicit
+                                                                                   explicitly: “I really like traveling”). However, most HF subjects suggested
+users’ interaction requirements.
+                                                                                   that the journey should last a few days to be pleasant. For example, HF5
+    In the User-Centered Design (UCD) (Gould and Lewis, 1985), end-
+                                                                                   answered: “Yes, I like traveling. So much. But only for short periods.
+users influence how a design takes shape. We involved autistic people
+                                                                                   Not more because then it becomes hard.” In other cases, the question
+from the beginning of the CARES project to gain user requirements and
+                                                                                   generated confusion and doubt. For instance, MF1 declared: “Mmh… I
+assess the solution’s acceptability and support for the user:
+                                                                                   don’t understand, you know? Because I’m afraid.” Moreover, some par­
+                                                                                   ticipants said that they would like to travel much more than they have.
+    i) In the first phase of the project, we used qualitative interviews to
+                                                                                   In this regard, HF4 stated: “Yes, but I can’t do it as often as I would like.
+       collect users’ needs and understand their traveling issues, patterns
+                                                                                   Why? Because I make a tremendous effort to organize”.
+       of traveling, fears, and how they used technology. See Section 4.
+                                                                                       How do you plan your trip? MF participants cannot plan a trip by
+   ii) Later, we applied the UCD process based on iterative cycles
+                                                                                   themselves; they need the help of their family for the organization. Thus,
+       of design-evaluation-redesign (Section 5). This methodology in­
+                                                                                   they often participate in already organized trips or are accompanied by
+       volves end users in technology-based services design and is in­
+                                                                                   autism-specialized staff. MF2 said: “I don’t know how to organize myself,
+       creasingly employed in the technology for autism (Maun et al.,
+                                                                                   maybe in Italy I could manage it, but abroad I’d need the help of my
+       2021; Good et al., 2016).
+                                                                                   family members”.
+  iii) In the last phase of the project, we employed HCI techniques and
+                                                                                       HF participants wish to plan a trip autonomously but seem aware
+       methods to evaluate CARES’s usability and trip planning support
+                                                                                   of the difficulties they might face. HF2 remarked: “It bothers me even
+       (Section 7). We asked autistic people to use CARES with a task to
+                                                                                   though I can solve any quantum physics differential equation… I don’t
+       test the application in the context of real activities. Moreover, we
+                                                                                   know how to organize the trip.” Usually, HF participants use the web
+       applied observation and inquiry techniques to collect data about
+                                                                                   to choose places and how to reach them (i.e., means of transportation),
+       people’s interactions with the app and their evaluations of the
+                                                                                   monuments, or what to visit once there. In the planning phase, they
+       system.
+                                                                                   frequently make a list as HF8 explained: “I always make a list of things
+                                                                                   to see in the cities.”
+4. Preliminary study                                                                   Do you use any technological tools before or during the trip? All the par­
+   To gather requirements for the CARES app, we interviewed 17 people              ticipants answered this question positively. Both MF and HF people use
+through qualitative interviews.                                                    mobile phones during the trip. Specifically, HF participants use them to
+                                                                                   reach the places they want to go to. They use the web to find informa­
+Subjects. The participants were autistic adults recruited by the staff of          tion, websites like Booking9 to book services, websites like Tripadvisor10
+the Adult Autism Center. There were 6 females, 11 males, 0 non-binary,             to choose where to eat. Moreover, they use parking apps to find a spot
+0 not declared, with an average age of 31 (Standard Deviation = 8.36).             if they have a car. HF5 reported: “I always use my mobile phone. I don’t
+According to DSM5 criteria (American Psychiatric Association, 2013),               like to use a printed map or ask people around… in fact, to always avoid
+which we used to classify the level of autism, 13 people were HF and 4             this, I always bring my power bank so I can charge it”. MF people rely
+MF.                                                                                on family members and friends to help them use booking and naviga­
+                                                                                   tion tools, as they cannot use these systems independently. For example,
+Interview protocol. For the interviews, we employed a semi-structured              MF2 said, “I need the help of my dad to plan a trip using Booking”.
+approach to explore participants’ travel experiences and needs.
+Questions were organized around four thematic areas identified by the
+psychologists of the Adult Autism Center: participants’ interest in trav­           9
+                                                                                        https://www.booking.com.
+eling, the approaches and strategies they use for trip planning, their             10   https://www.tripadvisor.it.
+
+                                                                               4
+
+===== PDF PAGE 5 / 16 =====
+N. Mauro, F. Ferrero, L. Ardissono et al.                                                              International Journal of Human - Computer Studies 208 (2026) 103696
+
+
+    Describe how your ideal trip should be. The key for all participants is       Table 1
+that the tour is well-organized in advance. Most of them consider plan­           Requirements from the interviews and the literature, and corresponding func­
+ning as a way to control as many variables as possible. See the following         tionality provided by CARES.
+answers. HF8: “I make a program to be respected so that everything                  User requirements       Source                          CARES’ functionality
+works well”. MF4: “When I travel I need to know everything before­
+                                                                                    Need for                Our interviews, literature      A support to create detailed
+hand”. HF5: “Before leaving I must have everything booked, what to                  organization            (e.g., Simm et al., 2016;       plans
+see, and also where to eat lunch and dinner for the duration of the trip”.                                  Cromjongh et al., 2024)
+HF12: “I just have one word for you: it must be organized!”. MF3: “The              Need for guidance       Our interviews, literature      A step-by-step interaction
+ideal would be to have a guide who organizes the trip or just what to do            in the decision         (e.g., Luke et al., 2012)       with suggestions of what to
+                                                                                                                                            do
+in the city but especially to do all the possible experiences that the city
+                                                                                    Need for control        Our interviews, literature      The user explicitly controls
+offers”.                                                                                                    (e.g., Simm et al., 2016;       the itinerary generation;
+                                                                                                            Gomot and Wicker, 2012;         (s)he can see all options if
+User requirements. We first summarize the requirements gathered from                                        Rapp et al., 2018)              desired
+the interviews conducted during the preliminary study.                              Need for short          Our interviews                  The CARES app allows to
+                                                                                    trips                                                   plan half- or full-day trips
+ • Need for organization. HF and MF participants like traveling.                    Need for per­           Literature (e.g., Farr, 2010;   The support is personalized
+                                                                                    sonalized               Cañete and Peralta, 2023;       according to a model of the
+   However, organization and planning are crucial to enjoying the
+                                                                                    support                 Bondioli et al., 2017; Petty    user
+   travel experience, and one of the main difficulties is the travel plan­                                  et al., 2021; Cromjongh
+   ning phase. Participants feel stressed when planning the trip (where                                     et al., 2024)
+   to go, how to get there, what to visit, etc.). Thus, they tend to del­           Respect users’          Literature (e.g., Samson        The recommendation al­
+   egate to someone else or give up the trip. Sometimes, the family                 aversions               et al., 2015; Quek et al.,      gorithm considers also
+                                                                                                            2012; Ho et al., 2012)          aversions
+   organizes the trip for them (especially MF people). This require­                Avoid perceptual        Literature (e.g., Remington     The CARES app is acces­
+   ment confirms the literature findings that people with autism face               overload                et al., 2009; Hill and Frith,   sible to different levels of
+   challenges with planning and organization, especially for tasks like                                     2003)                           autism
+   traveling (Simm et al., 2016; Cromjongh et al., 2024).
+ • Need for guidance in the decision. Especially, MF participants declared
+   that they need help in making decisions. This is in line with the
+   literature on decision-making and autism (Luke et al., 2012).                  textual content, employing more accessible terminology (e.g., replacing
+ • Need for control. People with ASD would like to know in advance                “Points of Interest” with “Places”), and increasing navigational sup­
+   what to do and what to expect from the experience. This confirms               port by adding additional back buttons, enhancements shown to reduce
+   the findings in the literature (Simm et al., 2016; Gomot and Wicker,           cognitive load and improve task completion rates.
+   2012; Rapp et al., 2018). A detailed plan could address this need.                 Given this feedback, we revised the prototype app and tested it with
+ • Need for short trips. People with ASD in our interviews expressed              users. In this second iteration, MF participants requested an increased
+   interest in traveling, but they had a preference for limited time peri­        use of visual aids (i.e., more images of suggested places) and a sequential
+   ods. Planning trips as half-day or full-day excursions could meet this         presentation of candidate destinations during itinerary planning, reflect­
+   specific requirement.                                                          ing a need for reduced information density and improved information
+                                                                                  chunking. HF participants emphasized the importance of system person­
+Moreover, the following requirements are retrieved from the literature:           alization, advocating for dynamic modification of user preferences and
+                                                                                  aversions within their profiles. Section 6 describes the final system used
+ • Need for personalized support. Since autistic people are heterogeneous
+                                                                                  for the user study.
+   in needs and features, they need customized solutions (Farr, 2010;
+   Cañete and Peralta, 2023; Bondioli et al., 2017; Petty et al., 2021).
+                                                                                  6. The CARES app
+   This is particularly true for tasks such as traveling, where people
+   might benefit from personalized support (Cromjongh et al., 2024).                 According to the requirements gathered in the preliminary study
+ • Respect people’ aversions. Individuals with autism spectrum disor­             (summarized in Table 1) and during the UDC process, we designed the
+   ders often experience difficulties with anger and emotion regulation.          CARES app11 with the following features in our minds:
+   According to the literature (Samson et al., 2015; Quek et al., 2012;
+   Ho et al., 2012), when they come across things they dislike, they               • Supporting the decisions about planning short trips.
+   can become annoyed, but also angry. Thus, their preferences and                 • Providing personalized suggestions that consider both user prefer­
+   aversions must be considered in the recommendations.                              ences and aversions.
+ • Avoid perceptual overload. Individuals with ASD require higher per­             • Supporting users step-by-step in the incremental design of tour plans.
+   ceptual loads to ignore distractors (Remington et al., 2009; Hill and           • Putting users in control of the planning process.
+   Frith, 2003). Thus, the interaction with the app must be carefully              • Proposing closed questions to simplify the interaction with the
+   designed, avoiding unnecessary details and too much information.                  system.
+
+5. UCD process
+                                                                                  6.1. Interaction with the user
+    We followed the UCD process based on iterative cycles of design-
+evaluation-redesign (Gould and Lewis, 1985).                                         CARES handles the interaction with the user in a pipeline. First,
+    We conducted two cycles of design, evaluation, and redesign of the            the application elicits the user’s preferences (Section 6.1.1). Then,
+prototype with autistic users. Specifically, we conducted a two-stage             it acquires the main temporal and spatial constraints of the tour
+usability testing with a proof-of-concept prototype, involving two high-          (Section 6.1.2). Then, it collaborates with the user on the trip design,
+functioning (HF) and two medium-functioning (MF) participants from                suggesting Points of Interest that match the user’s preferences and the
+the pre-study cohort. Usability testing, as a core user-centered eval­            tour constraints (Section 6.1.3).
+uation technique, allowed for direct observation of user interactions
+and identification of usability bottlenecks, such as interface complex­
+ity and interaction inefficiencies. Feedback from the first sessions led to       11 The CARES app is available at the following link: https://cares.planner.
+
+evidence-based refinements: simplifying the user interface, shortening            ontomap.eu/.
+
+                                                                              5
+
+===== PDF PAGE 6 / 16 =====
+N. Mauro, F. Ferrero, L. Ardissono et al.                                                            International Journal of Human - Computer Studies 208 (2026) 103696
+
+
+
+
+                                                     Fig. 1. Itinerary creation with the CARES application.
+
+
+
+6.1.1. Acquisition of the user’s preferences                                        This last information is needed to estimate transfer times between places
+    To avoid suggesting places that might cause anxiety and stress in               during itinerary scheduling.
+people with ASD (Samson et al., 2015; Quek et al., 2012; Ho et al.,                     After that, CARES guides the user in selecting the city to start the
+2012), CARES collects the user’s preferences and aversions during the               tour. This selection can be done through a classical search form, or by
+registration phase.                                                                 inspecting a closed list of recommended cities in the Langhe area which
+    First, it proposes a list of Point of Interest categories (e.g., castles,       have the highest number of Points of Interest (PoIs) that belong to the
+museums, etc.) and asks the user to select the preferred ones (posi­                user’s preferred categories (Fig. 1(a)). In the recommendation list, the
+tive preferences). Next, the system asks the user to identify, among the            system supports decision-making by showing a set of icons beneath each
+remaining categories, those representing aversions, i.e., negative pref­            city to summarize the number of PoIs that belong to its most prevalent
+erences (“What would you not like to visit?”). The categories that have             categories and match the user’s positive preferences.
+not been selected in the previous steps are classified as neutral valence
+preferences.                                                                        6.1.3. Itinerary Design
+                                                                                        The system supports trip creation by providing information about the
+                                                                                    options that match the tour constraints and that the user might like, and
+6.1.2. Acquisition of the spatial and temporal constraints of the tour              giving the user control over the selection of places to include. This phase
+    To acquire the tour constraints, we designed a simple interaction,              of interaction is cyclic. As shown in Fig. 1(b), the app recommends a sin­
+avoiding the administration of detailed forms. First, CARES asks the user           gle Point of Interest at a time to prevent information overload. However,
+to choose between a half-day (about 5 hours) and a full-day trip (about             to comply with different interaction preferences, it enables the user to
+9 hours) and to specify whether it will be a walking or driving trip.               modify the visualization style, expanding the suggestion list by clicking
+
+                                                                                6
+
+===== PDF PAGE 7 / 16 =====
+N. Mauro, F. Ferrero, L. Ardissono et al.                                                            International Journal of Human - Computer Studies 208 (2026) 103696
+
+
+
+
+                                                 Fig. 2. The user interface for the visualization of the trip.
+
+
+the button “See other places”. Notice that the system shows the itinerary           • They maximize the utility of the resulting itinerary in terms of (i) user
+duration (“The travel time is about:”) and PoIs’ expected visiting time               preferences, (ii) available information about the PoIs, (iii) distance
+(“Required time:”) to keep the user aware of the progress in the trip                 from the other places in the itinerary, and (iv) variety of the resulting
+design and support informed decision making.                                          itinerary. The first two criteria are relevant to suggest places that
+    The user can add or skip each recommended Point of Interest (“Do                  the user can appreciate and that can be reasonably previewed before
+you want to add it to your itinerary?”). Meanwhile, the app optimizes the             selecting them (geographical information sources sometimes provide
+partial itinerary and updates its duration. When the available time for               poor data about places). The third and fourth criteria support the
+the trip is exhausted or the user presses the button “Conclude the trip”,             creation of harmonic itineraries.
+the app displays the optimized itinerary in detail (Fig. 2(a) and on a map
+                                                                                  Overall, we designed the user interface to conform to the Web Content
+Fig. 2(b)). Both views show the categories of PoIs as icons. Moreover,
+                                                                                  Accessibility Guidelines (WCAG) 2.1, ensuring robust support for users
+by clicking “Show details” in the detailed view, the user can visualize
+                                                                                  with diverse perceptual and cognitive abilities. For instance, as shown
+the data and available crowdsourced reviews of the selected Points of
+                                                                                  in Figs. 1 and 2, we used high-contrast color schemes to enhance visual
+Interest. Furthermore, by clicking “Highlight this route on the map”,
+                                                                                  discriminability, minimalist layouts to reduce cognitive load, and clear
+the user can view the corresponding piece of the itinerary, highlighted
+                                                                                  navigation structures.
+in red.
+    During the cycle, the app suggests places that best meet the following
+                                                                                  6.1.4. Data about cities and points of interest
+criteria that might influence the user experience (see Section 6.2 for
+                                                                                     The system retrieves data about cities and their Points of Interest us­
+algorithmic details):
+                                                                                  ing the OpenStreetmap API.12 The app retrieves from OpenStreetMap
+
+ • They can be added to the itinerary without violating its geographical
+   and temporal constraints.                                                       12   https://www.openstreetmap.org.
+
+                                                                              7
+
+===== PDF PAGE 8 / 16 =====
+N. Mauro, F. Ferrero, L. Ardissono et al.                                                                      International Journal of Human - Computer Studies 208 (2026) 103696
+
+
+and Wikidata the names of the PoIs, their contacts, images, and so forth.                      Let us consider the user’s profile (𝑢⃗), the last PoI of the itinerary
+In contrast, expected visiting times are not available in public infor­                   (𝑝𝑐 𝑢𝑟𝑟𝑒𝑛𝑡 ), and 𝑝𝑖 ’s category (𝑐𝑎𝑡). The score of 𝐼𝑛+1𝑖 , denoted as 𝑠𝑐𝑜𝑟𝑒𝑖 , is
+mation sources. Thus, we defined them at the system set-up time for                       defined as:
+each category of PoIs through the agreement of three researchers. For
+example, the estimated visiting time for the category “Museum” is 2                       𝑠𝑐𝑜𝑟𝑒𝑖 = 𝑚𝑒𝑎𝑛(⃗𝑢[𝑐𝑎𝑡], 1 − 𝑑, 𝑀, 𝑖𝑙𝑑(𝐼𝑛+1𝑖 ))
+hours.
+                                                                                           • 𝑚𝑒𝑎𝑛 is the arithmetic mean and 𝑢⃗[𝑐𝑎𝑡] is 𝑢’s preference for 𝑐𝑎𝑡.
+6.2. Points of interest recommendation algorithm
+                                                                                           • 𝑑 is the Euclidean distance between 𝑝𝑐𝑢𝑟𝑟𝑒𝑛𝑡 and 𝑝𝑖 , normalized to the
+    Given the city 𝐶 and the selected transportation means, the app man­                     search radius 𝑟 to ensure the result is in [0,1].
+ages the itinerary construction incrementally. As previously described,                    • 𝑀 is an indicator of the amount of metadata available in
+the user advances from iteration 𝐼𝑛 to 𝐼𝑛+1 by adding one of the Points                      OpenStreetMap: 𝑀 = 0.5 if any information about the place, such
+of Interest suggested by the system. At each iteration, 𝐼𝑛 is an opti­                       as a description, link to the website, or contact details, is available.
+mized partial itinerary starting from the center of 𝐶. In a driving trip, 𝐼𝑛                 If the Point of Interest also has a Wikidata tag, 𝑀 = 1.
+ends at the last selected PoI. Differently, we assume that walking trips                   • 𝑖𝑙𝑑(𝐼𝑛+1𝑖 ) is the intra-list diversity of the extended itinerary. We
+are circular, i.e., the start and end points of the itinerary coincide. At                   compute diversity as the complement of its intra-list similarity:
+each iteration 𝐼𝑛 , the system first identifies a set of feasible PoIs that
+can be included in 𝐼𝑛 without violating the temporal constraints of the                        𝑖𝑙𝑑(𝐼𝑛+1𝑖 ) = 1 − 𝑖𝑙𝑠(𝐼𝑛+1𝑖 )
+trip (Section 6.2.1). Then, it begins to recommend these items, one at a
+                                                                                                               ∑            ∑
+time, trying to maximize the utility of the resulting itinerary for the user                                    𝑝𝑖 ∈𝐼𝑛+1𝑖       𝑝𝑗 ∈𝐼𝑛+1𝑖 ,𝑖≠𝑗 𝑠𝑖𝑚(𝑝𝑖 , 𝑝𝑗 )
+(Section 6.2.2).                                                                               𝑖𝑙𝑠(𝐼𝑛+1𝑖 ) =
+                                                                                                                      |𝐼𝑛+1𝑖 |(|𝐼𝑛+1𝑖 | − 1)
+6.2.1. Identification of feasible points of interest                                           𝑠𝑖𝑚(𝑝𝑖 , 𝑝𝑗 ) = 1 if 𝑝𝑖 and 𝑝𝑗 belong to the same category, 0 otherwise.
+    Let’s denote the last Point of Interest in a partial itinerary 𝐼𝑛 as 𝑝𝑐𝑢𝑟𝑟𝑒𝑛𝑡 .
+The system first identifies a set 𝑃 = {𝑝1 , … , 𝑝𝑚 } of PoIs in proximity to              6.3. Itinerary optimization
+𝑝𝑐𝑢𝑟𝑟𝑒𝑛𝑡 by spatial search on the OpenStreetMap platform. The search is
+                                                                                              To optimize an itinerary 𝐼 and compute its duration, CARES employs
+bounded by a circle of radius 𝑟 having 𝑝𝑐𝑢𝑟𝑟𝑒𝑛𝑡 ’s geographic coordinates as
+                                                                                          a routing service that returns the fastest path including the selected
+its center. The radius varies depending on whether the user has chosen
+                                                                                          Points of Interest. For this computation, the service uses 𝐼’s start and
+a walking trip (500 m) or a driving one (5 km).
+                                                                                          end points, the geographical coordinates of its PoIs, their estimated visit
+    Then, the system removes from 𝑃 the items whose inclusion in
+                                                                                          times, and the selected transportation means.
+the itinerary would exceed the predetermined time constraint 𝑇𝑐 (5
+                                                                                              The architecture of the routing service combines two technologies:
+or 9 hours). The filtering criterion is based on the following heuristic
+                                                                                          it uses VROOM13 (Vehicle Routing Open-source Optimization Machine)
+function:
+                                                                                          as an optimizer. Moreover, it employs OSRM14 (Open Source Routing
+     𝑎𝑖𝑟𝐷𝑖𝑠𝑡𝑎𝑛𝑐𝑒(𝑝𝑐𝑢𝑟𝑟𝑒𝑛𝑡 , 𝑝𝑖 )                                                          Machine) as a routing machine. For brevity, we omit the details of the
+𝑑+                               + 𝑣𝑖𝑠𝑖𝑡(𝑝𝑖 ) ≤ 𝑇𝑐 + 𝜖
+             𝑠𝑝𝑒𝑒𝑑                                                                        routing service.
+
+                                                                                          7. User study
+ • 𝑑 is the total duration of 𝐼𝑛 ;
+ • The fraction estimates the time to move from 𝑝𝑐 𝑢𝑟𝑟𝑒𝑛𝑡 to 𝑝𝑖 .                            To address our research questions (see Section 1), we conducted a
+   Specifically, 𝑎𝑖𝑟𝐷𝑖𝑠𝑡𝑎𝑛𝑐𝑒(𝑝𝑐 𝑢𝑟𝑟𝑒𝑛𝑡 , 𝑝𝑖 ) is the geodetic distance between            user study focused on the scenario of people with ASD planning a trip in
+   𝑝𝑐 𝑢𝑟𝑟𝑒𝑛𝑡 and 𝑝𝑖 , expressed in kilometers. Moreover, 𝑠𝑝𝑒𝑒𝑑 denotes the                the Langhe region. The participants were patients of the Adult Autism
+   user’s estimated travel speed, which is set to 3 km/h for pedestrian                   Center. Our experiment has been approved by our University’s Ethics
+   travel and 50 km/h for vehicular travel;                                               Committee (Protocol Number: 0562309).
+ • 𝑣𝑖𝑠𝑖𝑡(𝑝𝑖 ) is the estimated time to visit 𝑝𝑖 .
+ • 𝜖 is a tolerance margin, conventionally set at 15 min, to support a                    7.1. Method
+   flexible interpretation of half-day and full-day trips.
+                                                                                              We compared the CARES app with Google My Maps. We selected this
+                                                                                          service as a baseline because it shares several features with our applica­
+6.2.2. Recommendation of the next point of interest for the itinerary
+                                                                                          tion, and the participants were familiar with it. Even though this choice
+    As described in Section 6.1.3, we evaluate the utility of adding a
+                                                                                          might introduce a familiarity bias, we point out that My Maps only sup­
+feasible Point of Interest 𝑝𝑖 ∈ 𝑃 to an itinerary 𝐼𝑛 , by considering 𝑝𝑖 ’s dis­
+                                                                                          ports searching for PoIs. As it does not incrementally suggest them, there
+tance from the last place of 𝐼𝑛 , whether 𝑝𝑖 meets the user’s preferences,
+                                                                                          is a clear distinction in the type of functionality the two systems offer.
+how much information about 𝑝𝑖 is available to support decision-making,
+                                                                                              For the user test, we adopted a within-subjects approach. Each par­
+and the variety of the resulting itinerary.
+                                                                                          ticipant interacted with both applications in a task experiment, which
+    In CARES, the user profile stores the user’s preferences for the cate­
+                                                                                          consisted of designing a trip using the applications.
+gories of PoIs. A user 𝑢’s profile is a vector 𝑢⃗ = [𝑐𝑎𝑡1 , … , 𝑐𝑎𝑡𝑛 ] where 𝑐𝑎𝑡𝑖
+is a category of Points of Interest and:
+                                                                                          7.1.1. Measures and Materials
+            ⎧1                                                                                To answer our research questions, we conducted objective and sub­
+                       if the user has expressed a positive preference for 𝑐𝑎𝑡;
+            ⎪                                                                             jective evaluations of the two systems selected for the experiment. Fig. 3
+𝑢⃗[𝑐𝑎𝑡𝑖 ] = ⎨0         if (s)he has expressed a negative preference for 𝑐𝑎𝑡;              shows our research framework graphically, considering our research
+            ⎪
+            ⎩0.5       otherwise (neutral preference).                                    questions. In our experiments, CARES and Google My Maps condi­
+                                                                                          tions are the independent variables. The figure also shows how the
+     The recommendation process starts from the set 𝑃 = {𝑝1 , … , 𝑝𝑚 } of                 Participants’ engagement in itinerary design and the Itinerary design
+feasible Points of Interest computed in the previous phase. For each 𝑝𝑖 ∈                 support are specified into simpler evaluation dimensions.
+𝑃 , the system computes the score (𝑠𝑐𝑜𝑟𝑒𝑖 ) of the extended itinerary 𝐼𝑛+1𝑖
+obtained by adding 𝑝𝑖 to 𝐼𝑛 . Then, it ranks {𝐼𝑛+11 , … , 𝐼𝑛+1𝑚 } in decreasing
+order of score and proposes Points of Interest from the highest-ranked                    13
+                                                                                               http://vroom-project.org/.
+itinerary downwards.                                                                      14   https://project-osrm.org/.
+
+                                                                                      8
+
+===== PDF PAGE 9 / 16 =====
+N. Mauro, F. Ferrero, L. Ardissono et al.                                                             International Journal of Human - Computer Studies 208 (2026) 103696
+
+
+
+                                                                               RQ1
+                                                                                    Participants’ engagement in itinerary design:
+                                                                                     ● Number of Points of Interest included in the
+                                                                                        created itineraries
+                                                                                     ● Number of suggested places that users
+                                                                                        visualized
+                                                                                     ● Percentage of participants who clicked on
+                                               CARES                                    the “See other places” button
+
+
+                                            Google My Maps                          Itinerary design support
+                                                                                     ● Time devoted to creating the itineraries
+                                                                                     ● Itinerary duration
+
+
+                                                                                       Recommendation performance of CARES
+
+
+
+
+                                                                               RQ2
+                                               CARES                                                System Usability
+
+
+
+
+                                                             Level of autism
+
+
+
+
+                                                                           RQ3
+
+                                                CARES                               ● Field trip organization support
+                                                                                    ● Fatigue in trip organization
+                                                                                    ● User autonomy in trip organization
+                                            Google My Maps
+
+
+
+Fig. 3. Research framework representing the relationships between independent, moderating, and dependent variables, according to our research questions. We use
+the following color code: blue for independent variables, orange for moderating ones, and green for dependent variables. The dashed arrow links the moderating
+variable to the affected dependency.
+
+
+
+    Objective measures.                                                               • Recommendation performance of CARES. As Google My Maps
+    The objective evaluation concerns our research questions RQ1 and                    only filters places based on the search query, this measure is irrele­
+RQ2. The analysis is based on participants’ logged actions when inter­                  vant to that system. To estimate participants’ acceptance of CARES’
+acting with CARES, and a summary of their behavior with Google My                       suggestions, and thus the level of personalization it offers, we com­
+Maps, annotated by the psychologist while she conducted the tests. For                  puted the percentage of accepted suggestions (i.e., PoIs included
+this evaluation, we considered the following dimensions:                                in the itineraries) whose categories belong to users’ positive, neg­
+                                                                                        ative, and neutral preferences. Where relevant to support data
+ • Participants’ engagement in itinerary design, intended as the                        comparison (e.g., for itinerary durations), we distinguished the val­
+   amount of work and interaction with the systems during task exe­                     ues concerning half-day and full-day tours. We remind the reader
+   cution. We based this evaluation on the following data:                              that participants were instructed to choose the same type of tour on
+   – On both systems, we analyzed the number of Points of Interest                      CARES and Google My Maps.
+      included in the created itineraries. This indicates how articulated
+      itineraries are.                                                               Subjective measures.
+   – On CARES, we also analyzed the following data to assess partici­                   The subjective evaluation concerns RQ2 and RQ3.
+      pants’ level of information exploration during itinerary design:                • We evaluated the usability of the CARES app by utilizing an Italian-
+      * The number of suggested places that users visualized while                      translated version of the System Usability Scale (SUS) (Brooke,
+         creating the itineraries.                                                      1996). The SUS comprises 10 statements to be rated on a scale of
+      * Percentage of participants who clicked on the “See other                        [1, 5] corresponding to {Strongly disagree, Disagree, Neither agree
+         places” button to visualize more places at each itinerary design               nor disagree, Agree, Strongly agree}. See Table 5. We decided to
+         step.                                                                          waive the assessment of Google My Maps’ usability to minimize cog­
+ • Itinerary design support, evaluated as follows:                                      nitive and attentional demands on participants with ASD, who often
+   – The time devoted to creating the itineraries on the two systems.                   experience stress and cognitive fatigue when faced with multiple
+   – On CARES, we also analyzed the itinerary duration, considering                     evaluation instruments.
+      that participants were instructed to try to fill the available time of          • At the end of the experiment, participants answered a structured in­
+      the tours. Computing this measure on Google My Maps does not                      terview conducted by the psychologist of the Adult Autism Center
+      make sense because that system does not support scheduling or                     to measure the impact of trip planning compared to traditional sup­
+      itinerary optimization.                                                           ports. The interview contains four open questions to compare CARES
+
+                                                                                9
+
+===== PDF PAGE 10 / 16 =====
+N. Mauro, F. Ferrero, L. Ardissono et al.                                                                International Journal of Human - Computer Studies 208 (2026) 103696
+
+
+    with My Maps in planning a trip, focusing on field trip organiza­                      the previous task. Moreover, to avoid a bias concerning the knowl­
+    tion support, fatigue in trip organization, and user autonomy in trip                  edge of the visited area, she asked the participant to start the trip
+    organization:                                                                          from a different place.
+                                                                                        4. They used the CARES app and Google My Maps in counterbalanced
+    1. Which system would you use to organize a field trip between                         order.
+       CARES and Google My Maps? Why?                                                   5. After using CARES, the participants completed the SUS question­
+    2. With the help of CARES, would organizing a field trip be less                       naire to give feedback on its usability. As previously specified, we
+       strenuous for you than My Maps? Why?                                                did not evaluate My Maps’ usability to avoid overloading them.
+    3. Would CARES make you more autonomous in organizing a trip                        6. At last, the psychologist administered the open questions to com­
+       than My Maps? Why?                                                                  pare CARES with My Maps in planning a trip.
+    4. If you could always use a system like CARES, would you travel
+       more? Why?
+                                                                                     7.1.3. Participants
+        We did not find any standardized questionnaire to evaluate the
+                                                                                         The psychologist of the Adult Autism Center could recruit 14 par­
+    aspects we were interested in. Thus, we asked the Center’s team
+                                                                                     ticipants who were not involved in the pre-study because the others
+    to validate the questions. The psychologist reviewed the questions
+                                                                                     declined the new invitation. The participants were 2 female, 9 male, 0
+    for relevance, clarity, and coverage. We conducted data analysis us­
+                                                                                     non-binary, and 3 not declared. They were 20–33 years old with an aver­
+    ing the qualitative content analysis approach consistent with the
+                                                                                     age age of 24.5. According to American Psychiatric Association (2013),
+    pre-study. Two researchers and a psychologist independently coded
+                                                                                     there were 7 HF and 7 MF individuals.
+    the answers to the questionnaire, focusing on field trip organization
+                                                                                         Most subjects (9) stated they often take trips; 3 said they do not travel
+    support, fatigue in trip organization, and user autonomy in trip or­
+                                                                                     frequently, and 2 of them rarely.
+    ganization. They then resolved discrepancies through discussion and
+    extracted representative quotes.
+                                                                                     8. Results
+7.1.2. Procedure                                                                     8.1. Log analysis
+    The user study was conducted in person, with the support of the
+same psychologist mentioned above, who recruited the participants. The                   To answer RQ1 and RQ2 we analyzed the logged participants’ behav­
+inclusion criteria were adults with high- and mid-functioning Autism                 iors. Six people (5 MF and 1 HF) created half-day itineraries, and 8 (2
+(HF and MF). The exclusion criteria were minors, nonverbal, and low-                 MF and 6 HF) created full-day ones. We remind the reader that people
+functioning individuals. We did not offer financial or other incentives to           could choose the type of itinerary to create, but they had to be consistent
+participate in the study.                                                            across systems. Thus, these values are the same for CARES and Google
+    We implemented a within-subjects approach, handling each treat­                  My Maps. All users completed the assigned tasks by finalizing itineraries
+ment condition as an independent variable. Every participant experi­                 that included at least two Points of Interest on both systems.
+enced both treatments. To minimize the impact of practice, fatigue,
+and result biases, we varied the order of the tasks. We refrained from               8.1.1. Participants’ engagement in itinerary design
+imposing time limits on task execution to let participants explore the                   We first compare the two systems on the number of Points of
+information presented and select the PoIs for the trips without feel­                Interest included in the created itineraries. Table 2 shows that the mean
+ing rushed. Specifically, we organized the user study according to the               number of PoIs included in half-day itineraries was 2.5 (SD: 0.55) with
+following steps:                                                                     CARES and 2.67 (SD: 0.52) with Google My Maps. On average, full-day
+                                                                                     itineraries included 5 (SD: 2) PoIs in the CARES condition and 4.25 (SD:
+   1. The psychologist explained the study’s objectives and reassured                1.58) in My Maps.
+      the participants that any data collected would be used solely                      While these values are similar, the participants who created full-day
+      for scientific purposes and processed anonymously in line with                 itineraries included a larger overall number of places when using CARES
+      European legislation. Then, she asked them to review the informed              (Total number of included PoIs: 40) than with My Maps (34). This sug­
+      consent15 and provide explicit consent to participate by sign­                 gests that, when planning longer trips, the itinerary support provided by
+      ing it. The psychologist did not gather their names or personally              CARES enhances user engagement in the planning activities. Concerning
+      identifiable information to preserve participants’ privacy.                    CARES:
+   2. The participants filled in a questionnaire concerning demographic
+      information (gender, age), their jobs, and how often they take trips            • Number of suggested places that users visualized. While de­
+      (often, little, rarely, never).                                                   signing an itinerary, participants viewed on average 3.83 PoIs for
+   3. Participants were instructed to perform the same tasks using the                  half-day tours and 10.13 for full-day ones. Compared with the mean
+      two platforms. In particular, the instruction was: “Plan a half-day               number of places included in the itineraries, this shows that users
+      (5 hours) or full-day (9 hours) itinerary that satisfies the following            performed a reasonable amount of information exploration activity.
+      constraints:                                                                    • Percentage of participants who clicked the “See other places”
+      – The itinerary has to take place in the territory of Langhe, in Italy.           buttons. Table 4 (graphically shown in Fig. 4) shows that 35.71 % of
+      – The itinerary has to approximately fill the entire period (half/full            participants clicked this button to view more Points of Interest in a
+        day).                                                                           single user interface page. Specifically, 57.14 % of the HF users used
+      – You should plan a trip for yourself (alone).                                    this function to receive more information from the system. In com­
+      – Transportation mode is restricted to car or foot, limiting route                parison, the percentage of HF people asking for more information
+        variability.”                                                                   was much lower (14.29 %). This finding aligns with the features of
+      To support the comparison between systems, when a participant                     autism profiles, which explain HF people’s preference for less guided
+      started the second task, the psychologist asked her/him to choose                 interaction and greater autonomy in exploring options. HF individu­
+      the same transportation means and type of trip (full/half-day) as in              als often show more independence than MF in decision-making and
+                                                                                        information processing (Levin et al., 2019). Our findings also sug­
+                                                                                        gest that, with individuals with higher cognitive abilities, the system
+ 15 The consent and the text describing the experiment are available at the             tends to promote a preference for information-seeking behavior.
+following link: http://bit.ly/3TTksV6.
+
+                                                                                10
+
+===== PDF PAGE 11 / 16 =====
+N. Mauro, F. Ferrero, L. Ardissono et al.                                                                             International Journal of Human - Computer Studies 208 (2026) 103696
+
+
+            Table 2
+            Descriptive statistics of half/full-day itineraries created by the participant sample using CARES and Google My Maps. Half-day itineraries are
+            approximately 5 hours, while full-day ones are approximately 9 hours. We report the Mean values with Standard Deviation.
+
+                                                                         CARES half day        CARES full day        Google my maps half day         Google my maps full day
+
+               Mean itinerary duration (in seconds)                      12,704 (3874)         24,906 (7748)         –                               –
+               Total number of included PoIs                             15                    40                    16                              34
+               Mean number of included PoIs                              2.5 (0.55)            5 (2)                 2.67 (0.52)                     4.25 (1.58)
+               Total number of suggested PoIs that users visualized      23                    81                    –                               –
+               Mean number of suggested PoIs that users visualized       3.83 (0.98)           10.13 (6.20)          –                               –
+
+
+
+            Table 3
+            Time to complete the design of half/full-day itineraries using CARES and Google My Maps (whole participants’ sample, MF, and HF users).
+            Where relevant, we report the Mean values with Standard Deviation.
+
+                                                                            CARES                                                  Google my maps
+                                                                            Full sample        MF               HF                 Full sample      MF             HF
+
+               Mean completion time of half-day itineraries in seconds      343 (123)          340 (137)        359 (−)            641 (249)        607 (262)      812 (−)
+               Mean completion time of full-day itineraries in seconds      564 (509)          628 (499)        543 (558)          764 (523)        789 (191)      756 (613)
+
+
+
+
+Table 4                                                                                             created cover most of the available travel time. The exceptions are 2
+Recommendation performance of CARES computed from logged user actions.                              half-day itineraries of about 2.5 hours and 2 full-day ones of about
+Results concern the full participants’ sample and its split into HF and MF users.                   3.5 hours, which affect the Standard Deviation.
+                                                 Full sample     MF           HF
+
+  Percentage of accepted suggestions that        78.18 %         77.27 %      78.79 %
+  belong to users positive preferences                                                          8.1.3. Recommendation performance of CARES
+  Percentage of accepted suggestions that        20.00 %         22.73 %      18.19 %               Percentage of accepted suggestions whose categories belong
+  belong to users neutral preferences                                                           to users’ positive, negative, and neutral preferences. As shown in
+  Percentage of accepted suggestions that        1.82 %          0%           3.03 %
+                                                                                                Table 4 (and graphically in Fig. 4), 78.8 % of the items included in the
+  belong to users negative preferences
+  Percentage of users who clicked the “See       35.71 %         14.29 %      57.14 %
+                                                                                                itineraries matched the participants’ positive preferences for PoI cate­
+  other places” buttons                                                                         gories. Moreover, 20 % matched their neutral preferences. Only 1.82 %
+                                                                                                of PoIs belonged to their negative preferences. The split into MF and HF
+                                                                                                participants reveals that HF users were the only ones to select places
+                                                                                                corresponding to negative preferences. We interpret this finding as a
+8.1.2. Itinerary Design Support
+                                                                                                sign of higher flexibility in selecting what to visit, regardless of their
+ • Time devoted to creating itineraries. Table 3 shows that partici­                            mainstream preferences.
+    pants created itineraries more quickly with CARES than with Google                              Overall, these findings suggest that CARES could satisfy the prefer­
+    My Maps, with relevant duration differences in both systems. The                            ences stored in the user profiles in most cases.
+    mean completion time of the half-day itineraries was 343 s (5 min
+    and 43 s) in CARES and 641 s (10 min and 41 s) in My Maps. For full-
+                                                                                                8.2. Usability evaluation
+    day schedules, it was 564 s (9 min and 24 s) in CARES and 764 s (12
+    min and 44 s) in My Maps. We notice a particularly high Standard                                To answer RQ2, we used the SUS questionnaire. Table 5 and Fig. 5
+    Deviation concerning full-day itineraries in CARES (about 8 min).                           present the results (statements Q1-Q10). CARES achieved a SUS score
+    Given the small size of our dataset, this is due to the presence of                         of 74.82/100. According to the Sauro-Lewis grading scale (Lewis and
+    an outlier HF participant who created an itinerary of about 7 hours                         Sauro, 2018), this score translates to a B grade. While SUS primarily
+    (including 5 places to visit), in less than 4 min. According to the an­                     measures perceived ease of use, it also provides insights into overall
+    swers to the questionnaires, this user felt particularly at ease with                       user satisfaction, particularly learnability (items Q4 and Q10) and us­
+    the system, and this is probably the reason for being so quick. By                          ability (the remaining statements). CARES recorded a learnability score
+    splitting the participants’ sample into MF and HF people, we notice                         of 71.43/100, indicating that users found it relatively easy to learn
+    that:                                                                                       how to use the application on their first attempt. Its usability score was
+    – When interacting with CARES, HF participants took much more                               83.26/100, indicating good overall usability.
+       time than MF ones in itinerary design (see Table 4): 359 s against                           Participants reported high levels of function integration (Q5: M =
+       340 for half-day tours, and 543 against 628 for full-day ones.                           4.21, SD = 0.89). They expressed strong confidence in using the system
+       This finding suggests that HF participants devoted more time to                          (Q9: M = 4.14, SD = 0.95) and found it easy to use (Q3: M = 4.07, SD
+       information reading and exploration than the other group.                                = 1.21). Moreover, the results indicate user autonomy. Users disagreed
+    – On Google My Maps, the situation is more homogeneous: on av­                              with statements suggesting they would need technical support (Q4: M =
+       erage, HF participants spent 756 s to plan full-day tours, against                       2.36, SD = 1.95) or extensive preliminary learning (Q10: M = 1.93, SD
+       789 for MF ones. Only one HF participant decided to plan a half-                         = 1.44). This suggests CARES is intuitive and self-explanatory. The app
+       day tour; thus, we cannot discuss the data concerning this type of                       also received positive feedback regarding its complexity levels. Users
+       itinerary.                                                                               disagreed with the statements, suggesting the system was cumbersome
+ • Itinerary duration. Table 2 reports the Mean and Standard                                    (Q8: M = 1.86, SD = 1.29, lowest mean score) or inconsistent (Q6: M =
+    Deviation of the duration of itineraries created using CARES. The                           2.00, SD = 1.41). The fairly low scores for negative statements indicate
+    mean value of half-day tours is 12,704 seconds (3 hours and 31 min)                         good usability. Users expressed positive sentiments about CARES’ learn­
+    with a Standard Deviation of 3874 s (1 h and 4 min). For full-day                           ability. They strongly agreed that most people would learn the system
+    itineraries, the mean value is 24,906 seconds (6 hours and 55 min),                         quickly (Q7: M = 4.00, SD = 0.96) and showed interest in frequently
+    with SD = 7748 s (2 hours and 9 min). Note that all the itineraries                         using it (Q1: M = 4.00, SD = 0.96).
+
+                                                                                          11
+
+===== PDF PAGE 12 / 16 =====
+N. Mauro, F. Ferrero, L. Ardissono et al.                                                                                     International Journal of Human - Computer Studies 208 (2026) 103696
+
+
+
+
+                                   Percentage of accepted suggestions that
+                                       belong to users positive preferences
+
+
+
+                                   Percentage of accepted suggestions that
+                                       belong to users neutral preferences
+
+
+
+                                   Percentage of accepted suggestions that
+                                      belong to users negative preferences
+
+
+
+                                  Percentage of users who clicked the “See
+                                                      other places” buttons
+
+
+
+                                                                              0                    25                   50                75                  100
+
+                                                                                  Full Sample   MF           HF
+
+
+      Fig. 4. Recommendation performance of CARES computed from logged user actions (whole participants’ sample, MF, and HF users) in graphical format.
+
+
+
+Table 5                                                                                                      slightly better learnability for most people (M = 4.00 vs M = 3.86). Both
+Post-task SUS questionnaire results concerning the full participants’ sample and                             groups showed identical interest in frequent system use (M = 4.00).
+its splits into HF and MF users. We report the mean value of users’ responses
+with Standard Deviation. The best value is the minimum for Q2, Q4, Q6, Q8,                                   8.3. Qualitative comparison between CARES and google my maps
+and Q10, and the maximum for the other statements.
+                                                                                                                 To answer RQ3, we analyzed the users’ answers to the open ques­
+                                         Full sample         HF                    MF
+                                         mean(St.Dev.)       mean(St.Dev.)         mean(St.Dev.)             tions to compare CARES with My Maps in planning a trip (step 6 of
+                                                                                                             Section 7.1.2).
+  Q1. I think that I would like          4.00(0.96)          4.00(0.82)            4.00(1.26)
+  to use this system frequently.
+                                                                                                                 12 out of 15 participants stated they preferred CARES to Google
+  Q2. I found the system                 2.36(1.34)          2.43(1.51)            2.33(1.37)                My Maps, citing several differentiating features that influenced their
+  unnecessarily complex.                                                                                     choice. Users particularly valued CARES’ automated functionality and
+  Q3. I thought the system was           4.07(1.21)          4.14(1.07)            3.83(1.47)                structured approach to trip planning. The system’s ability to suggest
+  easy to use.
+                                                                                                             PoIs based on user preferences was frequently mentioned as a signifi­
+  Q4. I think that I would need          2.36(1.95)          1.57(1.51)            3.50(1.22)
+  the support of a technical                                                                                 cant advantage. Additionally, the integrated time management features
+  person to be able to use this                                                                              for both visits and travel were highlighted as crucial elements that en­
+  system.                                                                                                    hanced the planning experience. As one participant noted, “CARES is
+  Q5. I found the various func­          4.21(0.89)          4.14(0.69)            4.33(1.21)                more complete and provides better information, particularly regarding visit
+  tions in this system were well
+  integrated.
+                                                                                                             duration and distance between locations.” Several participants emphasized
+  Q6. I thought there was too            2.00(1.41)          2.29(1.38)            1.83(1.60)                how this structured approach simplified the planning process, with one
+  much inconsistency in this                                                                                 user stating, “It would make planning clearer and simpler because I wouldn’t
+  system.                                                                                                    need to constantly seek help to plan anything.” Moreover, users highlighted
+  Q7. I would imagine that               4.00(0.96)          3.86(0.90)            4.00(1.10)
+                                                                                                             the system’s ease of use and its ability to generate comprehensive route
+  most people would learn to
+  use this system very quickly.                                                                              suggestions tailored to individual preferences: “It is easier and provides
+  Q8. I found the system very            1.86(1.29)          1.57(0.79)            2.33(1.75)                solutions with complete routes based on my preferences”. Conversely, 3 par­
+  cumbersome to use.                                                                                         ticipants preferred My Maps, primarily because of its familiarity. These
+  Q9. I felt very confident              4.14(0.95)          4.00(0.82)            4.33(1.21)                users valued My Maps’ universal applicability and previous experience
+  using the system.
+  Q10. I needed to learn a lot           1.93(1.44)          1.71(1.51)            2.33(1.51)
+                                                                                                             with the platform, with one participant noting, “Everyone knows it and
+  of things before I could get                                                                               knows how to use it.”
+  going with this system.                                                                                        Regarding people’s autonomy, most respondents indicated that
+                                                                                                             CARES would enhance their independence in trip planning, thanks to
+                                                                                                             its automated suggestions, integrated features, and reduced need to
+                                                                                                             consult multiple information sources. However, while they preferred
+                                                                                                             CARES for trip planning, they indicated that such a system alone would
+8.2.1. Usability analyzed according to participants’ levels of autism                                        not necessarily increase travel frequency. The reason is that there are
+    Our analysis of the SUS questionnaire revealed distinct patterns and                                     other limiting factors, such as financial constraints, personal travel
+marked differences between participants with HF and MF autism con­                                           preferences, and existing travel habits.
+cerning CARES. HF people rated the app with a SUS score of 76.43/100,                                            Regardless of the observed familiarity bias (involving 3 participants),
+indicating good overall usability. In comparison, MF users provided a                                        these results suggest that CARES represents a promising approach to en­
+slightly lower rating with an SUS score of 70.42/100.                                                        hancing autistic people’s trip-planning capabilities. The system’s struc­
+    HF users found several advantages in CARES. They reported much                                           tured guidance and automated features align well with their needs, as
+lower need for technical support (M = 1.57) than MF users (M = 3.50).                                        evidenced by the positive feedback regarding its step-by-step approach
+They also found the system less cumbersome (M = 1.57 vs M = 2.33)                                            to travel planning.
+and declared that it required less initial learning (M = 1.71 vs M =
+2.33). They rated the system’s ease of use slightly higher (M = 4.14)
+                                                                                                             9. Discussion
+than MF users (M = 3.83). MF users showed stronger appreciation in
+other aspects. They reported better system integration (M = 4.33 vs M                                          Our analysis highlighted different preferences between the HF and
+= 4.14), higher user confidence (M = 4.33 vs M = 4.00), and perceived                                        MF participants in the user study regarding the functionality of the
+less system inconsistency (M = 1.83 vs M = 2.29). They also indicated                                        CARES app. HF participants found the system easier to use with
+
+                                                                                                        12
+
+===== PDF PAGE 13 / 16 =====
+N. Mauro, F. Ferrero, L. Ardissono et al.                                                                                         International Journal of Human - Computer Studies 208 (2026) 103696
+
+
+
+
+                                     Q1. I think that I would like to use this system
+                                                                            frequently.
+
+
+
+                                   Q2. I found the system unnecessarily complex.
+
+
+
+                                        Q3. I thought the system was easy to use.
+
+
+
+                                       Q4. I think that I would need the support of a
+                                    technical person to be able to use this system.
+
+
+                                    Q5. I found the various functions in this system
+                                                               were well integrated.
+
+
+                                   Q6. I thought there was too much inconsistency
+                                                                   in this system.
+
+
+                                       Q7. I would imagine that most people would
+                                             learn to use this system very quickly.
+
+
+
+                                  Q8. I found the system very cumbersome to use.
+
+
+
+                                         Q9. I felt very confident using the system.
+
+
+
+                                      Q10. I needed to learn a lot of things before I
+                                                 could get going with this system.
+
+
+                                                                                     1.00               2.00               3.00                4.00               5.00
+
+                                                                                          Full Sample              HF                MF
+
+
+                                Fig. 5. Post-task SUS questionnaire results (whole participants’ sample, MF, and HF users) in graphical format.
+
+
+
+autonomy. In contrast, MF users appreciated its integrated features                                            with Google My Maps. We also tracked a good exploration activity on
+and showed higher confidence despite requiring technical support.                                              CARES. These findings support the hypothesis that people could use the
+Concerning our research questions:                                                                             system successfully. The subjective evaluation confirmed that CARES
+                                                                                                               was understandable and easy to use. Moreover, HF and MF participants
+RQ1. According to our objective and subjective findings, a guided                                              did not consider it cumbersome. Specifically, MF users appreciated its
+planning system with personalized step-by-step recommendations is                                              consistency and did not find it tiring to use the app. This may stem
+beneficial for autistic individuals when creating an itinerary from dif­                                       from the fact that we have been careful to limit the data in the user
+ferent points of view (need for organization requirement):                                                     interface pages. Our goal was to avoid information overload and simplify
+ • It supports decision-making in itinerary design. Our objective evalu­                                       comprehension, according to the avoid perceptual overload requirement
+   ation shows that participants carried out this task more quickly with                                       (Remington et al., 2009; Hill and Frith, 2003). Thus, we can conclude
+   CARES than with Google My Maps. Moreover, while interacting with                                            that the system is accessible across different levels of autism.
+   CARES, they created itineraries filling a good portion of the time
+   available for the tours (half/full day). This type of support helps solve                                   RQ3. Compared to a baseline tour planner lacking recommendations
+   the problem of taking too long to make decisions, which often leads                                         and step-by-step guidance (Google My Maps), CARES was preferred by
+   to inaction (Luke et al., 2012; Vella et al., 2018).                                                        HF and MF participants, who found it less tiring (need for guidance in
+ • Participants with mid-functioning autism particularly appreciated                                           the decision, and avoiding perceptual overload). The fact that guided
+   being guided by recommendations, as shown by the fact that most                                             decision-making makes the interaction less exhausting aligns with find­
+   of them accepted all the system’s suggestions. This is in line with the                                     ings in the literature, which indicate that decision-making challenges
+   findings of our preliminary interviews: none of the MF participants                                         autistic individuals (Luke et al., 2012). However, even though partici­
+   could plan a trip autonomously, and they needed the family’s help for                                       pants appreciated our system, they declared that the actual possibility
+   the organization (need for guidance requirement). Moreover, it means                                        of traveling depends on additional factors beyond technology. The liter­
+   that being personalized to users’ preferences (according to (Farr,                                          ature confirms this (Dempsey et al., 2021; Hamed, 2013; Freund et al.,
+   2010)) and aversions (according to (Samson et al., 2015)), the rec­                                         2022).
+   ommendations were good enough to represent the participants (need
+   for personalized support and respect users’ aversion requirements).                                         10. Implications
+ • People with high-level autism appreciated having control over the                                           10.1. Research implications
+   recommendations and wanted to see more suggestions than the first
+   option proposed by the system. Indeed, they spent much more time                                               Previous research on inclusive tourism has focused on individuals
+   than HF participants interacting with the system, showing a longer                                          with physical disabilities and those with mobility or visual impairments.
+   information exploration activity. This is coherent with the need for                                        Although researchers are increasingly addressing other factors, such
+   control requirement (Gomot and Wicker, 2012).                                                               as dementia (Innes et al., 2016) and intellectual disabilities (Gillovic,
+                                                                                                               2019), autism remains largely overlooked. Our work extends the re­
+RQ2. Our objective analysis shows that all participants could create                                           search on inclusive tourism by highlighting that autistic individuals
+nontrivial itineraries using both systems. However, the overall number                                         can benefit from an AI trip planner designed to meet their needs and
+of places included in full-day itineraries was higher with CARES than                                          requirements. Previous research stressed that people with ASD are less
+
+                                                                                                        13
+
+===== PDF PAGE 14 / 16 =====
+N. Mauro, F. Ferrero, L. Ardissono et al.                                                                          International Journal of Human - Computer Studies 208 (2026) 103696
+
+
+Table 6                                                                                               The practical implications of CARES extend beyond general UX prin­
+Design guidelines for AI-supported trip planners.                                                 ciples by contextualizing and tailoring well-established guidelines to
+  Design guideline                          Rationale                                             the distinct needs of autistic adults planning tourist trips. While user
+                                                                                                  control is a widely recognized design principle, CARES refines this con­
+  Provide guided support for plan­          People with autism, especially MF, need to
+  ning while allowing the option to         be supported in the decision. However, it is          cept by emphasizing a dynamic balance between guided support and
+  take control at any time.                 fundamental, especially for HF, to leave them         user autonomy specifically shaped by empirical insights into autistic
+                                            the control.                                          decision-making. This includes catering to the dual cognitive styles of
+  Provide personalized support.             Each person’s specific characteristics (Ricci         autistic users who require extended processing time, step-by-step incre­
+                                            et al., 2022) should be considered.                   mental decisions, and minimization of information overload to prevent
+  Use people’s aversions when               Samson et al. (2015); Quek et al. (2012); Ho          fatigue and anxiety. The system does not merely apply generic user con­
+  recommending places.                      et al. (2012), notice that people with ASD            trol, but adapts it to respect the variability of mid- and high-functioning
+                                            can become annoyed, or angry when they                autism, supporting both the need for structured guidance (preferred by
+                                            come across things they do not like. Thus,
+                                                                                                  mid-functioning users) and autonomy in exploration (valued by high-
+                                            the recommendation algorithm must con­
+                                            sider users’ preferences and dislikes to avoid        functioning users), thus offering a mixed-initiative interaction model
+                                            suggesting unpleasant items. Suggesting               uniquely responsive to the neurodivergent context.
+                                            places that users don’t like might ruin their
+                                            experience.
+                                                                                                  11. Limitations and future work
+  Mimimize information.                     People with ASD might be overwhelmed
+                                            by information abundance. Reducing the                    Despite our efforts, this research could be affected by the following
+                                            amount and complexity of the data that the            limitations that we will address in our future work.
+                                            system provides can reduce this effect.                   First, the modest size of the participants’ sample might affect our
+                                                                                                  findings. The user study involved 14 people, but this number aligns with
+                                                                                                  the small number of autistic users worldwide. Moreover, reaching them
+likely to travel because of anxiety problems related to unknown situa­                            for research purposes often proves challenging given social difficulties.
+tions (Simm et al., 2016). Despite the many issues that might demotivate                          Future work should focus on extending the set of users across different
+them from traveling, a system like CARES could encourage autistic                                 geographical regions and cultural contexts, possibly through partner­
+people to engage in tours by enabling them to organize trips in ad­                               ships with other autism organizations and support groups. Furthermore,
+vance, thus reducing the anxiety arising from novel situations (Neo and                           implementing a longitudinal study design could provide deeper insights
+Flaherty, 2019; Hamed, 2013). This can impact quality of life because                             into how users’ needs evolve.
+being able to travel is a beneficial factor (Zhao et al., 2023). Notice                               Another limitation of our research stems from the lack of continuity
+also that neurotypical people (friends, family members, or caregivers)                            between the pre-study and user-study participants. Despite our efforts
+could benefit from the recommendation capabilities of the system to                               to maintain consistent participant involvement throughout the research
+plan suitable itineraries for their autistic companions, even those with                          phases, the users involved in the pre-study declined to participate in
+low-functioning autism who are cognitively unable to use technological                            the subsequent user study. Therefore, we had to recruit a new group of
+tools.                                                                                            participants.
+    The findings from our study may also contribute to the HCI literature                             Regarding the interaction model, the interactive approach to trip
+on the design of interactions for people with autism, whose idiosyncratic                         planning developed in CARES may present challenges for users with dif­
+needs require technological tools that focus on how they make decisions.                          ferent levels of technological literacy. The step-by-step guidance model,
+This implies providing personalized support in a step-by-step interaction                         suitable for autistic users, might not be optimal for all users, particu­
+modality (useful to MF people) and giving control to HF people over                               larly those preferring more autonomous planning experiences. Future
+the recommendations. This type of interaction enables the system to                               development should explore adaptive interface designs that automati­
+avoid information overload (Koltay, 2017), presenting closed questions,                           cally adjust the balance between user and system control according to
+as suggested in the autism literature (Luke et al., 2012).                                        users’ technological proficiency and autonomy preferences.
+    Furthermore, tourist recommender systems traditionally rely on user                               Data source restrictions are challenging. We exploited
+preferences or context (Gavalas et al., 2014; Ricci, 2022), to elabo­                             OpenStreetMap (OSM) because it is an open-source system providing
+rate content recommendations. We contribute to this research trend                                free APIs for retrieving geographical data. However, it introduces
+by showing that a recommender system that considers both users’                                   limitations due to inconsistent and sparse metadata coverage. OSM pro­
+preferences and aversions may be a good solution for people with                                  vides basic geographical information. However, it lacks crucial sensory
+autism. Specifically, CARES was appreciated by people with high- and                              and accessibility details relevant to autistic users, such as noise levels,
+mid-functioning autism.                                                                           crowding patterns, or sensory characteristics of locations. This limited
+    Finally, we adopted a “design for all” approach, targeting users with                         metadata affects CARES’s ability to make informed recommendations
+different levels of autism and thus different levels of cognitive ability.                        based on specific sensory and accessibility needs.
+Most solutions for autism target high-functioning users (Mauro et al.,                                Another limitation of this study is that while CARES was evaluated
+2020). Instead, we involved high- and mid-functioning users in all the                            using the System Usability Scale (SUS), a comparable assessment was not
+CARES trip planner design stages. Although effective engagement of                                conducted for Google My Maps. As previously mentioned, we made this
+autistic users can be challenging (especially the MF ones), research                              decision to minimize cognitive load. However, we aim to conduct further
+indicates that involving them in the design process of digital technolo­                          experiments in the future to extend our evaluations to both systems.
+gies can lead to increased self-efficacy and empowerment (Maun et al.,
+2021).                                                                                            12. Conclusions
+
+                                                                                                     Our research addresses the critical need for inclusive and intelli­
+10.2. Practical implications
+                                                                                                  gent travel planning solutions focusing on the unique requirements of
+    Our work also provides some practical implications for the design of                          people with Autism Spectrum Disorder. By adopting a human-centered
+user-centered AI systems that support people with autism in planning a                            Artificial Intelligence approach, we aimed to support decision-making
+tourist trip. Specifically, our user study helped us define a set of guide­                       by maintaining users’ autonomy throughout the trip-planning process.
+lines that can be followed to make such systems more accessible and                               Our primary goal was to reduce the cognitive load and anxiety that
+useful to people with ASD. Table 6 presents them in a compact format.                             autistic individuals often experience in this type of activity. We achieved
+
+                                                                                             14
+
+===== PDF PAGE 15 / 16 =====
+N. Mauro, F. Ferrero, L. Ardissono et al.                                                                                  International Journal of Human - Computer Studies 208 (2026) 103696
+
+
+this with a personalized trip planner including a recommender system                                      International Conference on Serious Games and Applications for Health (SeGAH).
+that responds to the user’s preferences and needs. Our approach empha­                                    IEEE, pp. 1–6.
+                                                                                                      Cena, F., Console, L., Likavec, S., Micheli, M., Vernero, F., 2023a. How personality traits
+sizes user control and customization, allowing individuals to maintain                                    can be used to shape itinerary factors in recommender systems for young travellers.
+agency in their decision-making while receiving appropriate guidance                                      IEEE Access 11, 61968–61985.
+and support.                                                                                          Cena, F., Mauro, N., Rapp, A., 2023b. How do sensory features of places impact on
+                                                                                                          spatial exploration of people with autism? a user study. Inf. Technol. Tour. 25,
+    This research represents a step toward creating inclusive travel                                      105–132.
+planning tools that acknowledge and accommodate neurodiversity. By                                    Conde, A.R., Caldeira, S., Rego, I., Botelho, T., Silva, O., de Sousa, Á.T., Mota, P.,
+prioritizing user control and personalization, our solution aims to bridge                                2023. Inclusive tourism and children with a diagnosis of Autism spectrum disorders:
+                                                                                                          systematic review of the literature. Eur. J. Tour. Res. 35, 3502.
+the gap between traditional travel planning applications and autistic
+                                                                                                      Convertino, G., Zancanaro, M., Piccardi, T., Ortega, F., 2017. Toward a mixed-initiative QA
+travelers’ needs, ultimately contributing to more accessible and less                                     system: from studying predictors in stack exchange to building a mixed-initiative tool.
+stressful travel experiences.                                                                             Int. J. Hum. Comput. Stud. 99, 1–20. https://doi.org/10.1016/j.ijhcs.2016.10.008
+                                                                                                      Cromjongh, R., Młocka, M., Akdag, A., Masthoff, J., Hauptmann, H., 2024. Challenges
+                                                                                                          and strategies in personalised planning support for university students with autism.
+CRediT authorship contribution statement                                                                  In: Adjunct Proceedings of the 32nd ACM Conference on User Modeling, Adaptation
+                                                                                                          and Personalization, pp. 365–373.
+    Noemi Mauro: Writing – original draft, Validation, Supervision,                                   Dattolo, A., Luccio, F.L., Pirone, E., 2016. Web accessibility recommendations for the de­
+Methodology, Investigation, Formal analysis, Data curation,                                               sign of tourism websites for people with Autism spectrum disorders. Int. J. Adv. Life
+                                                                                                          Sci. 8, 297–308.
+Conceptualization, Writing – review & editing, Visualization.
+                                                                                                      Dempsey, R., Healy, O., Lundy, E., Banks, J., Lawler, M., 2021. AIR travel experiences
+Fabio Ferrero: Validation, Software, Investigation. Liliana                                               of autistic children/young people. Ann. Tour. Res. Empir. Insights 2, 100026. https:
+Ardissono: Writing – original draft, Investigation, Formal analy­                                         //doi.org/10.1016/j.annale.2021.100026
+sis, Conceptualization, Writing – review & editing. Federica Cena:                                    Deterding, S., Hook, J., Fiebrink, R., Gillies, M., Gow, J., Akten, M., Smith, G., Liapis,
+                                                                                                          A., Compton, K., 2017. Mixed-initiative creative interfaces. In: Proceedings of the
+Writing – original draft, Validation, Supervision, Project administration,                                2017 CHI Conference Extended Abstracts on Human Factors in Computing Systems,
+Methodology, Investigation, Funding acquisition, Formal analysis, Data                                    Association for Computing Machinery, New York, NY, USA, pp. 628–635, https://doi.
+curation, Conceptualization, Writing–review & editing.                                                    org/10.1145/3027063.3027072
+                                                                                                      Dietz, P.M., Rose, C.E., McArthur, D., Maenner, M., 2020. National and state estimates of
+                                                                                                          adults with Autism spectrum disorder. J. Autism Dev. Disord. 50, 4258–4266.
+                                                                                                      Edwards, W., 1954. The theory of decision making. Psychol. Bull. 51, 380.
+Code availability                                                                                     Farmer, G.D., Baron-Cohen, S., Skylark, W.J., 2017. People with Autism spectrum condi­
+                                                                                                          tions make more consistent decisions. Psychol. Sci. 28, 1067–1076.
+   The code for the web app can be found here: https://github.com/                                    Farr, W., 2010. Personalised technology for Autism spectrum conditions is the future. J.
+noemi-mauro/CARES-app.                                                                                    Assist. Technol. 4, 58–60.
+                                                                                                      Freund, D., Iñesta, A., Castelló, M., 2022. Tourism for all. Educating to foster accessible ac­
+                                                                                                          commodation. J. Hosp. Leis. Sport Tour. Educ. 30, 100370. https://doi.org/10.1016/
+Declaration of competing interest                                                                         j.jhlste.2022.100370
+                                                                                                      Gavalas, D., Kenteris, M., Konstantopoulos, C., Pantziou, G., 2011. Web application for
+    The authors declare that they have no known competing financial                                       recommending personalised mobile tourist routes. IET Softw. 6, 313–322. https://doi.
+interests or personal relationships that could have appeared to influence                                 org/10.1049/iet-sen.2011.0156
+                                                                                                      Gavalas, D., Konstantopoulos, C., Mastakas, K., Pantziou, G., 2014. Mobile recommender
+the work reported in this paper.
+                                                                                                          systems in tourism. J. Netw. Comput. Appl. 39, 319–333. https://doi.org/10.1016/j.
+                                                                                                          jnca.2013.04.006
+Acknowledgments                                                                                       Gillovic, B., 2019. Experiences of Care at the Nexus of Intellectual Disability and Leisure
+                                                                                                          Travel. The University of Waikato., https://hdl.handle.net/10289/12833.
+   We thank the Adult Autism Center, Department of Mental Health,                                     Gomot, M., Wicker, B., 2012. A challenging, unpredictable world for people with Autism
+                                                                                                          spectrum disorder. Int. J. Psychophysiol. 83, 240–247.
+ASL City of Torino, Italy (Piedmont Region Pilot Center), especially
+                                                                                                      Good, J., Yuill, N., Parsons, S., Brosnan, M., Austin, L., 2016. Putting technology design
+Roberto Keller and Serena Ferrigno, for their contributions to the re­                                    into the hands of the users with the ascmei. T. In: App, In: CHI 2016 Workshop on
+cruitment of participants for the study. The CARES project has been                                       Autism and Technology: Beyond Assistance and Intervention, San Jose, CA.
+                                                                                                      Gould, J.D., Lewis, C., 1985. Designing for usability: key principles and what designers
+funded by Fondazione CRT - Richieste ordinarie Fondazione CRT 2021
+                                                                                                          think. Commun. ACM 28, 300–311. https://doi.org/10.1145/3166.3170
+(2021.1825).                                                                                          Guner, H., Acarturk, C., 2020. The use and acceptance of ICT by senior citizens: a compar­
+                                                                                                          ison of technology acceptance model (TAM) for elderly and young adults. Univ. Access
+Data availability                                                                                         Inf. Soc. 19, 311–330.
+                                                                                                      Hamed, H.M., 2013. Tourism and autism: an initiative study for how travel companies can
+                                                                                                          plan tourism trips for autistic people. Am. J. Tour. Manag. 2, 1–14. https://doi.org/
+    Data is available on request.
+                                                                                                          10.5923/j.tourism.20130201.01
+                                                                                                      Hill, E.L., Frith, U., 2003. Understanding autism: insights from mind and brain. Philos.
+References                                                                                                Trans. R. Soc. L. B Biol. Sci. 358, 281–289.
+                                                                                                      Ho, B.P., Stephenson, J., Carter, M., 2012. Anger in children with Autism spectrum
+Abras, C., Maloney-Krichmar, D., Preece, J., et al., 2004. User-centered design.                          disorder: parent’s perspective. Int. J. Spec. Educ. 27, 14–32.
+    In: Bainbridge, W. Encyclopedia of Human-Computer Interaction, vol. 37. Sage                      Hobson, R.P., 1993. Autism and the Development of Mind. Routledge, https://doi.org/10.
+    Publications, Thousand Oaks, pp. 445–456.                                                             4324/9780203765272
+Ali, F., Cain, L., Legendre, T.S., Wu, L., 2023. The intersection of technology, accessi­             Horvitz, E., Apacible, J., Subramani, M., 2005. Balancing awareness and interruption:
+    ble tourism and tourists with intellectual disabilities: proposing a novel conceptual                 investigation of notification deferral policies. In: Lecture Notes in Artificial Intelligence
+    framework. J. Hosp. Tour. Res. 47, NP76–NP90.                                                         N. 3538:Proceedings of 10th International Conference on User Modeling. Springer-
+American Psychiatric Association, 2013. Diagnostic and Statistical Manual of Mental                       Verlag, Edinburgh, UK, pp. 433–437.
+    Disorders (DSM-5® ). American Psychiatric Publishing.                                             Hsieh, H.F., Shannon, S.E., 2005. Three approaches to qualitative content analysis. Qual.
+Bondioli, M., Pelagatti, S., Buzzi, M.C., Buzzi, M., Senette, C., 2017. ICT to aid dental care            Health Res. 15, 1277–1288. https://doi.org/10.1177/1049732305276687
+    of children with autism. In: Proceedings of the 19th International ACM SIGACCESS                  Innes, A., Page, S.J., Cutler, C., 2016. Barriers to leisure participation for people with
+    Conference on Computers and Accessibility, pp. 321–322.                                               dementia and their carers: an exploratory analysis of carer and people with dementia’s
+Borrás, J., Moreno, A., Valls, A., 2014. Intelligent tourism recommender systems: a survey.               experiences. Dementia 15, 1643–1665. https://doi.org/10.1177/1471301215570346
+    Expert Syst. Appl. 41, 7370–7389. https://doi.org/10.1016/j.eswa.2014.06.007                      Jepson, A., Stadler, R., Garrod, B., 2024. Tourism and neurodiversity: a problematisation
+Brilhante, I.R., Macedo, J.A., Nardini, F.M., Perego, R., Renso, C., 2015. On planning sight­             and research agenda. Curr. Issues Tour. 546–566.
+    seeing tours with tripbuilder. Inf. Process. Manag. 51, 1–15. https://doi.org/10.1016/            Koltay, T., 2017. The bright side of information: ways of mitigating information overload.
+    j.ipm.2014.10.003                                                                                     J. Doc. 73, 767–775.
+Brooke, J., 1996. SUS: a quick and dirty usability scale. Usability Eval. Ind. 189, https:            Kurata, Y., Hara, T., 2013. CT-planner4: toward a more user-friendly interactive day-
+    //doi.org/10.1201/9781498710411-35.                                                                   tour planner. In: Xiang, Z., Tussyadiah, I. (Eds.), Information and Communication
+Brosnan, M., Lewton, M., Ashwin, C., 2016. Reasoning on the Autism spectrum: a dual                       Technologies in Tourism 2014. Springer International Publishing, Cham, pp. 73–86.
+    process theory account. J. Autism Dev. Disord. 46, 2115–2125. https://doi.org/10.                     https://doi.org/10.1007/978-3-319-03973-2_6
+    1007/s10803-016-2742-4                                                                            Levin, I.P., Gaeth, G.J., Levin, A.M., Burke, E.V., 2019. Decision-Making Processes of High-
+Cañete, R., Peralta, M.E., 2023. Applying technology to adapt assistive products to                       Functioning Adults on the Autism Spectrum, In: Thinking, Reasoning, and Decision
+    the sensorial characteristics of children with autism: a review. In: 2023 IEEE 11th                   Making in Autism. Routledge, pp. 39–58.
+
+
+                                                                                                 15
+
+===== PDF PAGE 16 / 16 =====
+N. Mauro, F. Ferrero, L. Ardissono et al.                                                                                  International Journal of Human - Computer Studies 208 (2026) 103696
+
+
+Lewis, J.R., Sauro, J., 2018. Item benchmarks for the system usability scale. J. Usab. Stud.          Sánchez, P., Bellogín, A., 2022. Point-of-interest recommender systems based on location-
+    13, https://doi.org/10.5555/3294033.3294037                                                           based social networks: a survey from an experimental perspective. ACM Comput. Surv.
+Lim, K.H., Chan, J., Leckie, C., Karunasekera, S., 2018. Personalized trip recommenda­                    54 (223), 223:1–223:37. https://doi.org/10.1145/3510409
+    tion for tourists based on user interests, points of interest visit durations and visit           Sarkar, J.L., Majumder, A., Panigrahi, C.R., Roy, S., Pati, B., 2022. Tourism recommen­
+    recency. Knowl. Inf. Syst. 54, 375–406. https://doi.org/10.1007/s10115-017-1056-y                     dation system: a survey and future research directions. Multimed. Tools Appl. 82,
+Lord, C., Charman, T., Havdahl, A., Carbone, P., Anagnostou, E., Boyd, B., Carr, T., De                   8983–9027. https://doi.org/10.1007/s11042-022-12167-w
+    Vries, P.J., Dissanayake, C., Divan, G., et al., 2022. The Lancet Commission on the               Sedgley, D., Pritchard, A., Morgan, N., Hanna, P., 2017. Tourism and autism: journeys of
+    Future of care and clinical research in Autism. Lancet 399, 271–334.                                  mixed emotions. Ann. Tour. Res. 66, 14–25.
+Luke, L., Clare, I.C., Ring, H., Redley, M., Watson, P., 2012. Decision-making                        Shaw, G., Coles, T., 2004. Disability, holiday making and the tourism industry in the
+    difficulties experienced by adults with Autism spectrum conditions. Autism 16,                        UK: a preliminary survey. Tour. Manag. 25, 397–403. https://doi.org/10.1016/S0261-
+    612–621.                                                                                              5177(03)00139-0
+Mao, J.Y., Vredenburg, K., Smith, P.W., Carey, T., 2005. The state of user-centered                   Shneiderman, B., 2022. Human-Centered AI. Oxford University Press, https://books.
+    design practice. Commun. ACM 48, 105–109. https://doi.org/10.1145/1047671.                            google.it/books?id=pXGEzgEACAAJ.
+    1047677                                                                                           Simm, W., Ferrario, M.A., Gradinar, A., Tavares Smith, M., Forshaw, S., Smith, I., Whittle,
+Maun, R., Fabri, M., Trevorrow, P., 2021. Adapting participatory design activities for autis­             J., 2016. Anxiety and autism: towards personalized digital health. In: Proceedings of
+    tic adults: a review. In: International Conference on Human-Computer Interaction.                     the 2016 CHI Conference on Human Factors in Computing Systems, Association for
+    Springer, pp. 300–314.                                                                                Computing Machinery, New York, NY, USA, pp. 1270–1281, https://doi.org/10.1145/
+Mauro, N., Ardissono, L., Cena, F., 2020. Personalized recommendation of pois to peo­                     2858036.2858259
+    ple with autism. In: Proceedings of the 28th ACM Conference on User Modeling,                     Smith, A.D., 2015. Spatial navigation in Autism Spectrum Disorders: a critical review.
+    Adaptation and Personalization, ACM, New York, NY, USA, pp. 163–172, https://doi.                     Front. Psychol. 6, 31. https://doi.org/10.3389/fpsyg.2015.00031
+    org/10.1145/3340631.3394845                                                                       Tavassoli, T., Miller, L.J., Schoen, S.A., Nielsen, D.M., Baron-Cohen, S., 2014. Sensory over-
+Mauro, N., Ardissono, L., Cena, F., Scarpinati, L., Torta, G., 2024. An intelligent support               responsivity in adults with autism spectrum conditions. Autism 18, 428–432. https:
+    system to help teachers plan field trips. Int. J. Artif. Intell. Educ. 34, 793–824. https:            //doi.org/10.1177/1362361313477246
+    //doi.org/10.1007/s40593-023-00366-x                                                              Thompson, V.A., Evans, J., Frankish, K., 2009. Dual process theories: a metacognitive
+Neo, W.X., Flaherty, G.T., 2019. Autism Spectrum Disorder and international travel. Int.                  perspective. Ariel 137, 43. https://doi.org/10.1093/acprof:oso/9780199230167.003.
+    J. Travel Med. Glob. Health 7, 1–3. https://doi.org/10.15171/IJTMGH.2019.01                           0008
+Petty, S., Bergenheim, M.L., Mahoney, G., Chamberlain, L., 2021. Adapting services                    Vansteenwegen, P., Souffriau, W., Berghe, G.V., Oudheusden, D.V., 2011. The city trip
+    for autism: recommendations from a specialist multidisciplinary perspective using                     planner: an expert system for tourists. Expert Syst. Appl. 38, 6540–6546. https://doi.
+    freelisting. Curr. Psychol. 1–12.                                                                     org/10.1016/j.eswa.2010.11.085
+Quek, L.H., Sofronoff, K., Sheffield, J., White, A., Kelly, A., 2012. Co-occurring anger in           Varriale, L., Cuel, R., Ravarini, A., Briganti, P., Minucci, G., 2022. Smart and Inclusive
+    young people with asperger’s syndrome. J. Clin. Psychol. 68, 1142–1148.                               Museums for Visitors with Autism: the App Case “A Dip in the Blue”, In: Sustainable
+Rapp, A., Cena, F., Castaldo, R., Keller, R., Tirassa, M., 2018. Designing technology                     Digital Transformation: Paving the Way Towards Smart Organizations and Societies.
+    for spatial needs: routines, control and social competences of people with                            Springer, pp. 133–152.
+    autism. Int. J. Hum. Comput. Stud. 120, 49–65. https://doi.org/10.1016/j.ijhcs.2018.              Vella, L., Ring, H.A., Aitken, M.R., Watson, P.C., Presland, A., Clare, I.C., 2018.
+    07.005                                                                                                Understanding self-reported difficulties in decision-making by people with Autism
+Remington, A., Swettenham, J., Campbell, R., Coleman, M., 2009. Selective attention and                   spectrum disorders. Autism 22, 549–559.
+    perceptual load in Autism spectrum disorder. Psychol. Sci. 20, 1388–1393.                         Yu, F., Cui, L., Guo, W., Lu, X., Li, Q., Lu, H., 2020. A category-aware deep model for
+Rezae, M., McMeekin, D., Tan, T., Krishna, A., Lee, H., Falkmer, T., 2021. Public transport               successive POI recommendation on sparse check-in data. In: Proceedings of the Web
+    planning tool for users on the Autism spectrum: from concept to prototype. Disabil.                   Conference 2020, Association for Computing Machinery, New York, NY, USA, pp.
+    Rehabil. Assist. Technol. 16, 177–187.                                                                1264–1274, https://doi.org/10.1145/3366423.3380202
+Ricci, F., 2022. Recommender Systems in Tourism. Springer International Publishing,                   Zellner, M., Olds, D., 2016. Building bridges between psychoanalysis and the neuro­
+    Cham, pp. 457–474. https://doi.org/10.1007/978-3-030-48652-5_26                                       sciences: insights into decision-making, working memory, repression, Autism spec­
+Ricci, F., Rokach, L., Shapira, B., 2022. Recommender Systems: Techniques, Applications,                  trum disorder, and more. Neuropsychoanalysis 18, 1–2. https://doi.org/10.1080/
+    and Challenges. Springer US, New York, NY, pp. 1–35. https://doi.org/10.1007/978-                     15294145.2016.1166880
+    1-0716-2197-4_1                                                                                   Zhao, Z., Shi, D., Qi, X., Shan, Y., Liu, X., 2023. Family travel among people with autism:
+Samson, A.C., Wells, W.M., Phillips, J.M., Hardan, A.Y., Gross, J.J., 2015. Emotion regu­                 challenges and support needs. Int. J. Contemp. Hosp. Manag. 35, 3743–3763.
+    lation in Autism Spectrum Disorder: evidence from parent interviews and children’s                Zheng, Y., Xie, X., 2011. Learning travel recommendations from user-generated GPS traces.
+    daily diaries. J. Child Psychol. Psychiatry 56, 903–913.                                              ACM Trans. Intell. Syst. Technol. 2 (2), 2:1–2:29.
+
+
+
+
+                                                                                                 16

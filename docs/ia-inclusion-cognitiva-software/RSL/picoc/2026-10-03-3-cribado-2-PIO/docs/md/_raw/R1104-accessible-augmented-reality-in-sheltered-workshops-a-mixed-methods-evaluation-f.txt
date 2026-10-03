@@ -1,0 +1,1138 @@
+===== PDF PAGE 1 / 19 =====
+Article
+
+Accessible Augmented Reality in Sheltered Workshops:
+A Mixed-Methods Evaluation for Users with Mental Disabilities
+Valentin Knoben 1,2, * , Malte Stellmacher 1 , Jonas Blattgerste 3 , Björn Hein 1                            and Christian Wurll 1
+
+                                         1   Institute of Robotics and Autonomous Systems (IRAS), Karlsruhe University of Applied Sciences,
+                                             Moltkestraße 30, 76133 Karlsruhe, Germany
+                                         2   Institute for Anthropomatics and Robotics (IAR), Karlsruhe Institute of Technology, Kaiserstraße 12,
+                                             76131 Karlsruhe, Germany
+                                         3   Faculty of Technology, University of Applied Sciences Emden/Leer, Constantiaplatz 4,
+                                             26723 Emden, Germany
+                                         *   Correspondence: valentin.knoben@kit.edu
+
+
+                                         Abstract
+                                         A prominent application of Augmented Reality (AR) is to provide step-by-step guidance
+                                         for procedural tasks as it allows information to be displayed in situ by overlaying it di-
+                                         rectly onto the user’s physical environment. While the potential of AR is well known,
+                                         the perspectives and requirements of individuals with mental disabilities, who face both
+                                         cognitive and psychological barriers at work, have yet to be addressed, particularly on
+                                         Head-Mounted Displays (HMDs). To understand practical limitations of such a system,
+                                         we conducted a mixed-methods user study with 29 participants, including individuals
+                                         with mental disabilities, their colleagues, and support professionals. Participants used
+                                         a commercially available system on an AR HMD to perform a machine setup task. Quanti-
+                                         tative results revealed that participants with mental disabilities perceived the system as
+                                         less usable than those without. Qualitative findings point towards actionable leverage
+                                         points of improvement such as privacy-aware human support, motivating but lightweight
+                                         gamification, user-controlled pacing with clear feedback, confidence-building interaction
+                                         patterns, and clearer task intent of multimodal instructions.
+
+                                         Keywords: augmented reality; mixed reality; mental disability; cognitive disability;
+                                         accessibility; usability; sheltered workshops; cognitive accessibility; inclusive design;
+                                         instructional systems
+
+
+
+
+                                         1. Introduction
+                                              According to Milgram et al. [1], the reality-virtuality continuum encompasses tech-
+                                         nologies that blend the real and virtual worlds and are referred to as Mixed Reality (MR)
+Academic Editor: Zhonghua Sun            technologies. Augmented Reality (AR) is a form of MR that augments the user’s physical
+Received: 17 October 2025                environment with spatially anchored digital content, so-called holograms, while not fully
+Revised: 28 November 2025                immersing them. In work-related scenarios, AR can be used to present instructions and
+Accepted: 2 December 2025                guide the user through procedural tasks by providing spatially associated text, videos,
+Published: 4 January 2026
+                                         and 3D objects. Due to the technology’s contextualized way of conveying information,
+Copyright: © 2026 by the authors.
+                                         research has investigated various potential benefits, which mainly include improved task
+Licensee MDPI, Basel, Switzerland.
+                                         completion times, task completion rates, and reduced cognitive workload [2,3]. Apart
+This article is an open access article
+distributed under the terms and
+                                         from mobile and spatial (projection-based) AR, since the launch of the Microsoft HoloLens
+conditions of the Creative Commons       in 2015, the first realistic use cases on Head-Mounted Displays (HMDs) became increas-
+Attribution (CC BY) license.             ingly possible. In that regard, research has investigated the use of AR HMDs across several
+
+
+Virtual Worlds 2026, 5, 1                                                                                https://doi.org/10.3390/virtualworlds5010001
+
+===== PDF PAGE 2 / 19 =====
+Virtual Worlds 2026, 5, 1                                                                                              2 of 19
+
+
+
+                            domains, including healthcare [4], education [5], and manufacturing [6]. Commercial
+                            solutions offering AR-based assistance for procedural tasks are also available and primarily
+                            target frontline work [7,8].
+                                  Still, research on inclusive instructional systems for AR HMDs, in particular consid-
+                            ering demands by users with mental disabilities, is underrepresented. Mental disabilities
+                            result from lasting psychological disorders or mental health conditions such as depression,
+                            schizophrenia, or anxiety disorder [9]. In 2021, mental health conditions were estimated
+                            to account for more than 17% of years lived with disability worldwide [10]. The terms
+                            cognitive, intellectual, and mental disability are often used interchangeably and without clear
+                            distinction [11]. We utilize the International Classification of Functioning, Disability and
+                            Health (ICF) to better understand the different nuances associated with each term [12]. It
+                            provides a framework for describing disability by shifting focus from medical diagnoses to
+                            how body functions, including mental functions, but also activities, participation, and envi-
+                            ronmental factors interact to shape a person’s functioning in daily life. Among other things,
+                            the ICF defines a set of core mental functions [12] (p. 50). Consequently, cognitive disability
+                            refers to any impairment of mental functions such as attention, memory, thought, or higher-
+                            level cognitive functions [13]. This can be due to a neurodevelopmental disorder such as
+                            an intellectual disability or a mental disability, which also impacts cognitive functioning.
+                            Crucially, mental disability is also reflected in the impairment of psychological functions
+                            such as the experience and expression of emotions (affect), handling of stress, or generation
+                            of energy and drive [14].
+                                  Having discussed the terminology, existing accessibility efforts in research and indus-
+                            try rarely take on this specific mental perspective. For example, Microsoft [15], Apple [16],
+                            and Meta [17] address visual, hearing, and physical barriers. Similarly, research using AR
+                            HMDs has a strong focus on visual [18] and hearing disabilities [19]. Work considering
+                            cognitive disabilities typically examines scenarios of daily living [20] with emphasis on
+                            elderly people with dementia [21,22]. In workplace settings, research primarily focuses on
+                            related technologies such as spatial AR [23,24], mobile AR [25,26], or Virtual Reality [27,28].
+                            Yet, the specific cognitive and psychological barriers associated with mental disability may
+                            give rise to unique design requirements not fully addressed by existing accessibility efforts.
+                                  Recognizing this gap, our broader research aims to develop an AR authoring tool that
+                            enables support staff in sheltered workshops to create more effective instructions for this
+                            user group. As a crucial first step, this study seeks to gather specific requirements and
+                            perspectives by evaluating the shortcomings of a state-of-the-art system. Therefore, this
+                            work is guided by the following two research questions:
+                            RQ1 How does the perceived usability of a state-of-the-art AR instruction system differ
+                                between users with and without mental disabilities in a workplace setting?
+                            RQ2 What specific design requirements for AR instructional systems emerge from the
+                                feedback of key stakeholders, including both users with mental disabilities and their
+                                colleagues and support staff, to address this usability gap and better support cognitive
+                                and psychological needs?
+                                 To answer these questions, we conducted a user study with 29 individuals, both with
+                            and without mental disabilities. Participants used procedural instructions presented on
+                            an AR HMD as assistance for setting up a machine. We applied a mixed methods approach,
+                            gathering data through two usability questionnaires and a subsequent semi-structured
+                            interview. Quantitative data was used to evaluate perceived usability. Qualitative data
+                            provided the grounds for a thematic analysis to organize data and gain a more profound
+                            understanding of possible user requirements considering mental disability.
+
+
+
+
+                                                                                  https://doi.org/10.3390/virtualworlds5010001
+
+===== PDF PAGE 3 / 19 =====
+Virtual Worlds 2026, 5, 1                                                                                               3 of 19
+
+
+
+                            2. Related Work
+                            2.1. The Use of Digital Platforms by People with Mental Disabilities
+                                  People with mental disabilities have not seen great involvement in research on the
+                            exploration of AR as a medium and its use in different contexts. To the contrary, research on
+                            AR for this user group mainly focused on diagnosing and treating mental disorders [29,30].
+                            This is likely due to the combination of the relative immaturity of AR technology and the
+                            inherent difficulty of designing for “mental disability”—a term that is difficult to precisely
+                            define and is composed of numerous conditions. Still, in the broader digital context, re-
+                            search has involved this user group. McCue et al. [31] conducted a user-centered qualitative
+                            study with individuals living with major depressive disorder to inform their design of
+                            a mobile app for depression management and care. General ease of use of the app and
+                            keeping the user engaged were highlighted as particularly important by participants. Reg-
+                            ular reminders, positive encouragements, and the ability to set own goals were perceived
+                            as helpful means of emotional support. Ludlow et al. [32] ran co-design workshops with
+                            young people with experienced mental health issues to inform the design of a digital
+                            mental health intervention platform. Authors make seven concrete recommendations for
+                            the design of such interventions, touching on the topics of customizability, relatability,
+                            and intuitiveness. Jin et al. [33] systematically reviewed barriers to user engagement of
+                            mobile apps promoting mental health. Among those, prominent barriers were unclear
+                            perceived value, fluctuating user motivation, and one-size-fits-all designs. To address these,
+                            they propose the three design dimensions of adaptivity, continuity, and multimodality
+                            to make systems personalizable to changing needs, preserve context over time, and offer
+                            alternative ways to engage. Through participatory formats, Johansson et al. [34] inves-
+                            tigated how people with mental disabilities access and use digital services. They report
+                            a digital divide and highlight that digital services often fall short in effectively supporting
+                            individuals with mental disabilities because particular needs of this group are frequently
+                            overlooked in large-scale surveys on the use of service technologies. The authors translate
+                            their findings into the broader context of HCI and outline key design challenges, which
+                            include “making the complicated and complex more intuitive” and designing “for trust,
+                            self-esteem, and self-confidence” [34]. This precisely reflects that for mental accessibility,
+                            both cognitive and psychological barriers need to be addressed.
+
+                            2.2. The Use of AR by People with Cognitive Disabilities
+                                  While research on the direct application of AR for people with mental disabilities
+                            in non-clinical settings is scarce, the adjacent field concerning cognitive disabilities has
+                            received considerably more attention. This breadth of research is evidenced by systematic
+                            literature reviews on the topic [35,36] and findings might at least be partially applica-
+                            ble in the context of people with mental disabilities. Involving people with cognitive
+                            impairments, Funk et al. [37] studied AR as assistance for production-related tasks and
+                            derived eight recommendations for AR-based assistance systems with a focus on spatial
+                            AR. Authors especially highlight the importance of feedback, which should be simple,
+                            direct, and personalized. Guedes et al. [25] explored the use of mobile AR by people with
+                            intellectual disabilities in the context of museum visits through focus groups, trial sessions,
+                            and field trips. The authors outline leverage points for better addressing the needs of the
+                            target group, both during a potential co-design process and the actual use of the resulting
+                            application. Exemplary named aspects are to provide adaptable hardware and interfaces,
+                            include communication supports such as text-to-speech or easy-to-read text, and foster par-
+                            ticipation by respecting individual pace and forms of expression. Koushik and Kane [38]
+                            interviewed people with cognitive disabilities and their caregivers in a participatory design
+                            format regarding their vision on how AR could support them in their everyday lives.
+
+
+
+                                                                                   https://doi.org/10.3390/virtualworlds5010001
+
+===== PDF PAGE 4 / 19 =====
+Virtual Worlds 2026, 5, 1                                                                                                 4 of 19
+
+
+
+                            A form factor suitable for daily life, multimodal forms of interaction, and compatibility
+                            with other assistive technology were highlighted by participants. Yin et al. [39] organized
+                            focus groups on the topic of inclusion requirements for immersive environments such as
+                            VR and AR, among others, involving ten participants with cognitive disabilities. In the case
+                            of AR, allowing for customizability, implementing multimodal interaction, and strength-
+                            ening the user’s awareness of their physical surroundings were factors important to the
+                            stakeholders. The World Wide Web Consortium (W3C) [40] has also published a working
+                            note on requirements for accessible Extended Reality (XR) across different disabilities,
+                            including cognitive. Among other things, XR platforms should be highly configurable and
+                            multimodal, placing users firmly in control of interaction, timing, and safety so experiences
+                            can be tailored to diverse user requirements.
+
+                            3. Methods
+                                 To investigate the perceived usability of a state-of-the-art AR instruction system (RQ1)
+                            and to derive specific design requirements for users with mental disabilities (RQ2), we
+                            applied a mixed methods approach. We compiled both quantitative and qualitative data.
+                            In the following, we outline our methodological approach by providing information about
+                            the applied use case, engaged participant group, utilized software and hardware, followed
+                            procedure, and methods of analysis.
+
+                            3.1. Use Case
+                                  In cooperation with a local organization that runs shop floors employing people
+                            with disabilities, we visited multiple sites and considered different use cases. It was
+                            agreed upon that the setup of pad printing machines was the appropriate use case for
+                            this study. This workflow constitutes a realistic application scenario, as the pad printing
+                            machines are in permanent use and the organization saw actual demand and potential
+                            for AR-based guidance to enable more employees to perform the printing task. Figure 1
+                            shows the workplace used in our study. Pad printing describes the process of applying
+                            a two-dimensional print pattern, engraved in a print plate, onto a three-dimensional target
+                            object using a squeezable silicon pad. It consists of two phases, namely (1) the assembly of
+                            the ink cup and print plate and (2) the integration of both into the machine, with eleven
+                            steps in the first and nine in the second (see Table 1).
+
+                            Table 1. Two-phased workflow to set up the pad printing machine. During phase 1, the ink cup and
+                            print plate are assembled in eleven steps. During phase 2, the assembled ink cup and print plate are
+                            integrated into the machine in nine steps.
+
+                             Step        Description
+                             1           Clean print and base plate
+                             2           Place print onto base plate
+                             3           Place ceramic ring onto plastic plate
+                             4           Insert sealing ring into ceramic ring
+                             5           Place ink cup onto ceramic ring
+                             6           Check cup and ring for even gap
+                             7           Insert magnet into ink cup
+                             8           Configure magnet to weakest level
+                             9           Align print plate
+                             10          Place ink cup onto print plate
+                             11          Sway ink cup across print plate
+                             12          Enable setup mode
+                             13          Start up machine
+                             14          Switch machine to manual mode
+                             15          Bring forward print sled
+
+
+
+                                                                                     https://doi.org/10.3390/virtualworlds5010001
+
+===== PDF PAGE 5 / 19 =====
+Virtual Worlds 2026, 5, 1                                                                                                 5 of 19
+
+
+
+                            Table 1. Cont.
+
+                             Step           Description
+                             16             Fold up cup holder
+                             17             Insert print plate into machine
+                             18             Fasten print plate
+                             19             Fold down cup holder
+                             20             Confirm operability by moving print sled
+
+
+
+
+                                      (a)                                                          (b)
+
+                            Figure 1. (a) The pad printing workplace used in our study. (b) Some items used in the workflow
+                            include the (1) base, (2) print, (3) plastic plate, (4) paper towel, (5) cleaning agent, (6) sealing,
+                            (7) ceramic ring, (8) magnet, and (9) ink cup.
+
+                            3.2. Participants
+                                  A total of 30 participants were recruited through convenience sampling. We introduced
+                            our research intent on-site and handed out leaflets containing an overview of the planned
+                            study. One participant provided quantitative feedback only, and another one dropped out
+                            early because wearing the AR HMD caused physical discomfort. As a result, data from
+                            29 participants was considered in this study, of which 7 were female. They had a mean
+                            age of 48 (SD = 11.82). Among the participants, 12 experience mental disability resulting
+                            from a psychological disorder or lasting mental health condition. Diagnoses among shop
+                            floor employees included depression, post-traumatic stress disorder, schizophrenia, bipolar
+                            disorder, or personality disorder. Importantly, participants report similar functional barriers
+                            at work, including but not limited to stress management, learning, decision-making, task
+                            persistence, consistency, or adapting to new circumstances. They were either undergoing
+                            vocational training or working in assembly and printing jobs. Our partner organization
+                            differentiates between work facilities for people with intellectual or mental disabilities.
+                            This study was conducted in a unit where only people with mental disabilities work.
+                            To respect privacy, no specific connection was made between individuals and their expe-
+                            rienced disabilities. The remaining 17 participants had no diagnosed disability, were all
+                            associated with our partner organization, and included colleagues, social workers, team
+                            leaders, and site managers. All of them were either qualified occupational therapists,
+                            work education instructors, or completed additional training in special education. Of
+                            all 29 participants, five participants with and three without mental disabilities had prior
+
+
+
+                                                                                     https://doi.org/10.3390/virtualworlds5010001
+
+===== PDF PAGE 6 / 19 =====
+Virtual Worlds 2026, 5, 1                                                                                                        6 of 19
+
+
+
+                                  experience with setting up a pad printing machine. One participant was familiar with
+                                  VR on HMDs.
+
+                                  3.3. Apparatus
+                                       To present AR instructions to the user, the HoloLens 2 (HL2), an optical see-through
+                                  AR HMD, was used as the device of choice. Instructions were created and provided to the
+                                  participants using Microsoft Dynamics 365 Guides (MS Guides) [7]. MS Guides does not
+                                  require the instruction author to perform any software development. The author needs
+                                  to provide instructional material for each step, namely some text, a video, or an image,
+                                  and select 3D objects to be used as holographic instructions. Apart from the instructional
+                                  content and the spatial placement of the selected 3D objects, the system is not configurable
+                                  by the instruction author. The semantic design of instructions was reviewed and discussed
+                                  with two staff members who have prior experience in designing instructions with and for
+                                  workers with mental disabilities. This was done to minimize the influence of instruction
+                                  semantics on participants’ assessment of the system, as we wanted to evaluate participants’
+                                  views on the system’s design and functioning. MS Guides was therefore chosen because,
+                                  as the primary software delivered with the HoloLens 2, it represents the current state-of-
+                                  the-art and a de facto industry standard for creating this type of AR guidance.
+
+                                  3.4. Procedure
+                                       In the beginning, participants were briefed about the study as well as the utilized
+                                  software and hardware. Explicit space for any emerging questions was given. To familiarize
+                                  participants with AR on the HL2, a custom demo application (Source code available on
+                                  GitHub-FamiliAR https://github.com/anjelomerte/FamiliAR (accessed on 1 December
+                                  2025)) showcasingbasic functionalities was implemented and provided for exploration.
+                                  After the participants had familiarized themselves with the AR environment and the HL2,
+                                  they were introduced to MS Guides through a short tutorial within MS Guides itself. In this
+                                  tutorial, a few example instructions explained the general usage of the software, including
+                                  how to navigate steps, use the text-to-speech feature, play videos, or reposition windows.
+                                  Subsequently, participants performed the AR-guided machine setup task in the actual
+                                  work environment (see Section 3.1). Study sessions took place during regular shop floor
+                                  operations, which reflected a realistic usage scenario. We communicated to the participants
+                                  that it was insignificant whether they completed the process successfully or not since we
+                                  were in no way evaluating task performance. Whenever participants were wearing the
+                                  HMD, we streamed the user’s view onto an external display to follow participants’ actions
+                                  in the augmented space and assist in case of technical problems. Exemplary views of the
+                                  demo application, the tutorial, and the instructions presented to the participants are shown
+                                  in Figure 2.
+
+
+
+
+                            (a)                                 (b)                                       (c)
+
+                                  Figure 2. (a) Activity from our demo application showing users how to interact with virtual objects by
+                                  hand. (b) Tutorial level in MS Guides explaining holograms. (c) Instruction in MS Guides consisting
+                                  of (1) a video, (2) text, (3) holograms, and (4) buttons to navigate.
+
+
+
+                                                                                            https://doi.org/10.3390/virtualworlds5010001
+
+===== PDF PAGE 7 / 19 =====
+Virtual Worlds 2026, 5, 1                                                                                                7 of 19
+
+
+
+                                  After the practical part of each session, participants were asked to fill out three
+                            questionnaires, followed by a semi-structured interview. The questionnaires consisted
+                            of (1) a demographic survey, (2) the System Usability Scale (SUS) [41], and (3) the Post
+                            Study System Usability Questionnaire (PSSUQ) [42]. The latter two measure perceived
+                            usability and were chosen because they are straightforward, well established, freely avail-
+                            able, applicable to AR HMDs, and can be applied to smaller sample sizes. The SUS consists
+                            of 10 statements that the user rates on a 5-point Likert scale. It yields an overall usability
+                            score between 0 (worst) and 100 (best). The PSSUQ provides more detailed insights by
+                            dividing statements into three subdimensions: System Usefulness (SU), Information Qual-
+                            ity (IMQ), and Interface Quality (IFQ). The user grades 16 statements on a 7-point Likert
+                            scale. The questionnaires were translated into the participants’ native language. We placed
+                            particular value on preserving the original meaning of statements and considered existing
+                            translated versions during the process of translation [43–45]. Furthermore, the Likert scale
+                            of the PSSUQ was reversed to match the orientation of the SUS (strongly agree on the right).
+                            Based on suggestions from social workers, we supplemented the PSSUQ with an additional
+                            smiley-based scale. This practice is supported by similar research that has successfully
+                            used visual scales to adapt standard usability questionnaires for specific user groups like
+                            children [46]. The same could not be done for the SUS, as it uses both positively and
+                            negatively phrased items.
+                                  Qualitative data was obtained based on expressed feedback and the observations
+                            made during the experiment. Applying the think-aloud methodology, it was pointed
+                            out to participants that they should express their thoughts and feelings at any point
+                            during a session. Afterward, semi-structured interviews were conducted in line with
+                            Karatsareas [47]. They started by giving participants room to voice their first impressions
+                            and feedback freely. Then, they were asked open-ended questions to explore participants
+                            assessments of the system, both positive and negative, and to understand the underlying
+                            factors of system design contributing to that experience. The first level of questions of the
+                            semi-structured interview is listed in Table 2. Follow-up questions were asked as needed to
+                            explore emergent themes. In total, each trial took roughly 60 min.
+
+                            Table 2. Open-ended questions of the semi-structured interview serve as a starting point for explo-
+                            ration of participants’ thoughts.
+
+                             No.    Question
+                               1    What is your general impression of the system?
+                               2    In terms of interacting with the system, what did you like, what didn’t you like?
+                               3    In terms of presentation of content, what did you like, what didn’t you like?
+                               4    Did you experience any problems during the machine setup task?
+                               5    Did anything contribute particularly positively to your experience?
+                               6    Did anything contribute particularly negatively to your experience?
+                               7    Do you have suggestions for improving the system?
+
+
+                            3.5. Analysis
+                                  To see whether participants with and without disability perceived usability differently,
+                            the reported SUS and PSSUQ scores are tested using a two-sided Mann-Whitney U test
+                            at a 5% significance level. The Mann-Whitney U test is chosen because it accommodates
+                            differently sized reference groups, does not make any assumptions about the underlying
+                            distribution of sample means, and ratings represent ordinal data requiring non-parametric
+                            testing. Apart from that, effect sizes are calculated to give implications about practical
+                            significance independent of sample size. Hedges’ g is chosen due to the differently sized
+                            and rather small sample groups.
+
+
+
+                                                                                    https://doi.org/10.3390/virtualworlds5010001
+
+===== PDF PAGE 8 / 19 =====
+Virtual Worlds 2026, 5, 1                                                                                                8 of 19
+
+
+
+                                 To understand and organize the qualitative data, a thematic analysis in the style
+                            of a codebook thematic analysis was performed [48]. We chose this approach because it
+                            provides a framework for organizing data descriptively but allows for the induction of new
+                            ideas while acknowledging the interpretative nature of the process. The first and second
+                            authors, who jointly facilitated the study sessions and thus were highly familiar with the
+                            data, were involved in the analysis process. The first author generated deductive codes
+                            based on notions within our interview protocol as well as inductive codes purely based on
+                            study data. Then, the second author was involved to refine, remove, or introduce codes
+                            through joint agreement. Based on this updated codebook, the first author recoded the
+                            study data, and both authors engaged in further discussion rounds, clustering codes into
+                            common themes through affinity diagramming [49]. We performed the complete analysis in
+                            the participants’ and our native language to preserve any possible nuances and translated
+                            the results afterward.
+
+                            4. Results
+                            4.1. Quantitative Results
+                                  29 participants provided quantitative feedback. Resulting distributions of reported
+                            SUS and PSSUQ scores are visualized in Figure 3. Mean ratings among disabled and
+                            non-disabled participants are listed in Table 3. Disabled and non-disabled participants
+                            assessed usability differently. While for non-disabled users the overall SUS score was
+                            82.21 (SD = 13.28), disabled users reported SUS scores of 68.96 (SD = 20.38). Established
+                            benchmarks for the SUS and PSSUQ are considered for contextualization. A score of
+                            68 constitutes an average SUS score, while anything above 80 is considered well above
+                            average [50]. Applying the Mann-Whitney U test, this discrepancy is considered statistically
+                            significant (p = 0.025) and exhibits a large effect size of g = 0.997. Values larger than 0.2,
+                            0.5, and 0.8 are considered small, moderate, or large, respectively [51]. For the PSSUQ,
+                            an overall score of 2.82 is considered average, while 2.80, 3.02, and 2.49 are average for the
+                            subdimensions System Usability (SU), Information Quality (IMQ), and Interface Quality
+                            (IFQ), respectively [42]. A discrepancy in overall PSSUQ ratings between disabled (2.43)
+                            and non-disabled users (1.82) can be observed, too. The Mann-Whitney U test returns
+                            a statistically significant difference at p = 0.043. The same is true for SU (p = 0.014) but
+                            not IMQ (p = 0.325) and IFQ (p = 0.180). Small to large effect sizes are observed for overall
+                            PSSUQ ratings (g = 0.779), SU (g = 0.993), IMQ (g = 0.393), and IFQ (g = 0.595). Note
+                            that for the PSSUQ, smaller values mean better ratings.
+
+
+
+
+                                                (a)                                                (b)
+
+                            Figure 3. Raincloud plots [52] visualizing (a) SUS and (b) PSSUQ ratings.
+
+
+
+
+                                                                                    https://doi.org/10.3390/virtualworlds5010001
+
+===== PDF PAGE 9 / 19 =====
+Virtual Worlds 2026, 5, 1                                                                                                  9 of 19
+
+
+
+                            Table 3. Key descriptive statistics, including mean ratings and standard deviations of the SUS, PSSUQ,
+                            and its subscales for Disabled (D) and Non-Disabled (ND) participant groups, along with p-values
+                            and effect sizes g. Asterisks (*) indicate statistical significance at p < 0.05.
+
+                             Measure      Dimension                               D               ND             p         g
+                             SUS          Overall                           68.96 (20.38)    82.21 (13.28)    0.025 *    0.997
+                                          Overall                              2.43 (0.97)      1.82 (0.16)   0.043 *    0.779
+                                          System Usability (SU)                2.50 (1.26)      1.62 (0.49)   0.014 *    0.993
+                             PSSUQ
+                                          Information Quality (IMQ)            2.62 (0.91)      2.25 (0.98)     0.325    0.393
+                                          Interface Quality (IFQ)              1.99 (0.97)      1.54 (0.55)     0.180    0.595
+
+                            4.2. Qualitative Results
+                                  28 participants provided qualitative feedback through their responses to our open
+                            questions during our semi-structured interview. We clustered results into five descrip-
+                            tive themes, namely Interaction and Navigation, Visual Presentation, System Personalization,
+                            User Engagement, and User Assistance. For contextualization and transparency, it is made
+                            clear whether feedback was provided by participants with (Pd ) or without a mental
+                            disability (Pnd ).
+
+                            4.2.1. Interaction and Navigation
+                                   This theme encompasses all aspects of participants’ interaction with the system, which
+                            mainly involved navigation of steps and interaction with instructional content. Feedback
+                            revealed a strong preference for head-gaze navigation, where users trigger actions by
+                            dwelling on an element for a few seconds using their current viewing direction. It was
+                            highlighted that “the percentage bar helped to understand the dwell mechanism” (P28,nd ).
+                            Some participants found the dwell time to be too long and raised whether the trigger
+                            process could be sped up (P2,nd , P17,nd , P29,d ). Speech-based control, on the other hand,
+                            was extensively used by one participant only (P21,nd ). P8,nd expressed potential discomfort
+                            when using speech-based interaction in group constellations, and P20,d was concerned with
+                            involuntary activation of voice commands by others. For some users, “it just wasn’t [their]
+                            thing” (P1,d ). Hand-based and head-gaze navigation suffered from inadvertent activation,
+                            resulting in unnoticed skipping of steps. When pointed out, participants would often state,
+                            “I didn’t even notice that” (P16,nd ).
+                                   Although interaction with the system was mostly perceived as straightforward, some
+                            users expressed that, in order to properly interact with the system, “some more practice
+                            would be needed” (P24,d ). Independent of the underlying interaction modality, the fact
+                            that users could work at their own pace was perceived very positively. It gave participants
+                            a sense of “learning by doing” (P20,d ). Specific requests were also made, e.g., by P12,d , P15,nd ,
+                            and P16,nd who missed an option to easily advance or go back multiple steps at a time.
+                            P1,d , P3,d , and P20,d desired easier hand-based navigation and asked for a physical button
+                            alongside the virtual one. P6,d , P8,nd , P15,nd , and P16,nd demanded the limitation of overall
+                            control functionalities. This was reflected by comments such as “Do I have to remember all
+                            that?” (P26,d ) considering available system controls. Besides that, P26,nd and P17,nd thought
+                            that short descriptive explanations for each control element would be beneficial.
+
+                            4.2.2. Visual Presentation
+                                 Within this theme, we consolidated participants’ feedback regarding the visual pre-
+                            sentation of instructions on the AR HMD. The overall presentation of instructions was
+                            received well across the board. They were fascinated by the holograms, describing them
+                            as “beautiful” (P21,nd ), “cool” (P28,nd ), and “useful” (P1,d ). “The consistent arrangement of
+                            instructions” (P19,nd ) was also considered helpful (P24,d , P17,nd ). Videos were deemed most
+
+
+
+                                                                                      https://doi.org/10.3390/virtualworlds5010001
+
+===== PDF PAGE 10 / 19 =====
+Virtual Worlds 2026, 5, 1                                                                                               10 of 19
+
+
+
+                            valuable among the available instructions. Observations confirm that many participants
+                            gradually shifted their attention towards the videos, often skipping textual instructions
+                            completely. The importance of videos was further reinforced by comments such as “Videos
+                            should take center stage” (P19,nd ) and “Text is good as an addition to the video but not
+                            the other way around” (P30,d ). The only step without an image or video was immediately
+                            criticized and caused uncertainty among participants, prompting questions such as “Why
+                            is there no video, or am I just not seeing it?” (P13,nd ).
+                                   In terms of information clarity, a recurring problem was that participants mistook
+                            videos for images because the play button on the video was not clearly visible, resulting
+                            in reactions such as “Oh, that’s a video?!” (P6,d ). Some also had problems recognizing
+                            holograms (P25,d , P16,nd ). P15,nd stated that “the white hologram on the white machine was
+                            difficult to recognize” and suggested a stronger contrast. Beyond that, P5,nd stressed that
+                            “a video should show exactly what to do”. P3,d substantiated this by pointing out that,
+                            as a left-hander, the right-handed video demonstrations were slightly disorienting. P4,nd
+                            added that videos recorded from an exocentric perspective also cause confusion. Another
+                            issue was the limited field of view, causing virtual elements to go unnoticed or be perceived
+                            with delay. P27,d noted that “some kind of attention grabber would have been helpful.
+                            Otherwise I might not have noticed it at all”, echoing requests for attention cues by other
+                            participants. Additional requests included the ability to control video playback (P9,nd , P20,d ,
+                            P27,d ), zoom in on videos (P12,d , P13,nd , P29,d ), and toggle visibility of individual holograms
+                            (P1,d , P3,d , P21,nd ). To improve understanding of textual instructions, it was also suggested
+                            by multiple participants to give an overview of object names at the start of the workflow,
+                            for example, in the form of “virtual lettering next to the objects” (P4,nd ). Although all
+                            participants could read, some utilized the built-in text-to-speech functionality (P1,d , P24,d ,
+                            P25,d , P30,d ).
+
+                            4.2.3. System Personalization
+                                  Personalization emerged as another overarching theme, which addresses the adjust-
+                            ment of the system to the user’s experience level as well as the customization of basic
+                            visual and functional features. Regarding the former, while most were satisfied with the
+                            instructional detail or demanded even more information, P7,d and P8,nd felt it was excessive
+                            already. For participants familiar with setting up a pad printing machine, it was observed
+                            that steps were partially anticipated and performed without explicit instruction. When
+                            advancing to a step that had already been performed, this contributed to uncertainty,
+                            as reflected in statements such as “I have already done that. Should I just keep going?”
+                            (P7,d ). On that front, multiple participants asked for adaptation of the instructions to their
+                            experience level. Some, having developed individual ways to set up the machine, com-
+                            mented, “I would have done it differently” (P3,d ) and asked if it was possible to change
+                            the instruction sequence. Regarding system personalization, common options such as
+                            customization of color (P1,d , P5,nd ), contrast (P7,d , P27,d ), and layout (P14,nd , P22,d ) were
+                            mentioned. P12,d asked for the possibility to position the video independently from the
+                            text, which MS Guides does not allow. P6,d brought another aspect into play, wondering,
+                            “Could the system automatically adjust the window to my height?” as repositioning of the
+                            window was necessary at the beginning of the workflow.
+
+                            4.2.4. User Engagement
+                                 Ideas and features contributing to the engagement and joy of the user are described
+                            by this theme. Many participants enjoyed using the AR HMD when performing the AR-
+                            guided task. Statements such as “It’s just fun” (P29,d ) or “This is fun by itself” (P22,d ) were
+                            quite common. Moreover, participants showed appreciation for the anonymity during
+
+
+
+                                                                                    https://doi.org/10.3390/virtualworlds5010001
+
+===== PDF PAGE 11 / 19 =====
+Virtual Worlds 2026, 5, 1                                                                                               11 of 19
+
+
+
+                            task performance due to the individual nature of wearing an HMD. For example, P20,d felt
+                            more comfortable and less observed because “no one notices you navigating back and forth
+                            between steps” (P20,d ). Positive reinforcement also played a critical role. “More emotional”
+                            (P4,nd ) feedback was demanded by the participants. Concrete suggestions included phrases
+                            such as “Well done! You have earned a break!” (P6,d ). Users also suggested implementing
+                            such positive reinforcement frequently (P13,nd , P25,d ). Similar to explicit motivations and
+                            as a possible way to engage the user, gamification is another tool brought into play by
+                            some of our participants (P6,d , P19,nd , P22,d , P30,d ). Importantly, it was emphasized in large
+                            parts to keep elements of gamification in a scope appropriate to the workplace. True to the
+                            motto “work is work, pleasure is pleasure” (P30,d ), elements should not be too “silly” or
+                            “childish” (P19,nd ).
+
+                            4.2.5. User Assistance
+                                 The last theme addresses participants’ expressed desire and suggestions for better
+                            assistance during the AR-assisted workflow. Although some participants described the
+                            software as “helpful” (P1,d , P28,nd ), the lack of assistance was clearly reflected in feedback,
+                            as MS Guides does not provide any support in case of questions or errors. For instance,
+                            P2,nd encountered an unexpected error message on the machine and was unable to resolve it.
+                            Other mistakes, e.g., placing the ink cup incorrectly on the print plate, led to consequential
+                            errors. Considering this, participants suggested having the system automatically detect
+                            errors as well as confirm task completion (P4,nd , P20,d ). P6,d underlined that this would
+                            take away some uncertainty, which coincides with the fact that participants often reassured
+                            themselves by asking, “Is that right?” (P12,d ) or “Is that how it should be?” (P25,d ). Another
+                            request was for object-anchored holograms instead of spatially fixed ones, which led to
+                            confusion, frustration, and non-ergonomic postures. Participants generally assumed that
+                            tasks needed to be performed within a hologram’s designated area, which became apparent
+                            when P12,d wondered whether it was permitted to complete a task in a different location.
+                            Apart from automatic assistance, participants suggested providing the user with a list of
+                            likely errors and solutions, “something like ‘This may have happened. . . ’” (P5,nd ).
+                                 A recurring issue for users without prior printing experience was the strong magnetic
+                            snap of the ink cup onto the plate, scaring some and potentially causing damage. An ex-
+                            isting hint in the instruction was insufficient, prompting participants to ask for dedicated
+                            warnings. P9,nd and P19,nd suggested requiring explicit confirmation before continuation.
+                            Other recommendations included intermediate verification through prompts saying “Take
+                            another look at the video” (P30,d ) or “The display should look like this. . . ” (P29,d ). Incorpo-
+                            ration of workplace organization methods such as 5S [53], already in use at the shop floor,
+                            was also imagined (P9,nd ). Lastly, despite various suggestions for virtual assistance, many
+                            users underlined their persisting appreciation for human support. P23,d emphasized the
+                            convenience of human assistance when initially getting to know the system. P12,d added
+                            that “I would generally prefer a human to assist me”. Going even further, P27,d believed
+                            that “such a system will never replace a human”.
+
+                            5. Discussion
+                                  In this study, we explore perspectives of users with mental disabilities on the usability
+                            of an AR-based instruction system. As a last step, we revisit our research questions and re-
+                            flect on the findings of our study. First, we carefully examine quantitative results regarding
+                            the perceived usability of the system (RQ1). We then discuss qualitative feedback consid-
+                            ering mental disability (RQ2). For that purpose, we review aspects raised by participants
+                            with a mental disability that are not yet reflected by established accessibility principles.
+
+
+
+
+                                                                                    https://doi.org/10.3390/virtualworlds5010001
+
+===== PDF PAGE 12 / 19 =====
+Virtual Worlds 2026, 5, 1                                                                                                12 of 19
+
+
+
+                            Additionally, we address findings that coincide with known considerations from research
+                            on the design of AR-based interfaces but contain subtle nuances revealed by this study.
+
+                            5.1. Users with a Mental Disability Perceive Usability Less Favorably
+                                  In terms of system usability, participants with mental disabilities perceived the AR-
+                            based instruction system as significantly less usable compared to participants without
+                            disabilities. While both SUS and PSSUQ ratings for both disabled and non-disabled user
+                            groups can be considered average or above, absolute evaluation of scores and the compari-
+                            son to benchmarks can be misleading since social desirability bias may have influenced
+                            participants to rate items more positively to appeal to the researchers [54]. Besides, due to
+                            the limited pervasiveness of AR HMDs, this technology is still considered novel, which can
+                            impact usability ratings. Effects can be both negative, users associate increased complexity
+                            and are reluctant at first [55], or positive, users exhibit initial excitement that wears off [56].
+                                  Bridging quantitative and qualitative data, the discrepancy in perceived usability high-
+                            lights a remaining accessibility shortcoming of MS Guides, a state-of-the-art instructional
+                            system for AR on HMDs. For example, participants requested features that MS Guides sim-
+                            ply does not offer, such as the controllability of video playback, object-anchored holograms,
+                            or the proposition of solutions in case of errors. This calls for further efforts exploring such
+                            aspects that can explicitly involve users with mental disabilities. Microsoft in particular has
+                            contributed significantly to matters of accessibility in the academic space of XR, addressing
+                            disabilities outside the mental realm, namely visual [57,58], hearing [59,60], and mobility
+                            impairments [61,62]. Such dedicated efforts are valuable and necessary and need to be
+                            extended to consider the needs of people with mental disabilities as well.
+
+                            5.2. Specific User Needs Considering Mental Disability
+                                 Our qualitative analysis revealed several key themes that illuminate the specific needs
+                            of users with mental disabilities. In the following, we discuss these themes in detail, starting
+                            with the need for a nuanced approach to human support.
+                                 Co-located but privacy-aware human support. While virtual assistance through tips,
+                            warnings, or a virtual assistant can help resolve first problems, participants with mental
+                            disabilities expressed a remaining desire for human support. Since HMDs can only be
+                            worn by one person, they compromise our fundamental psychological need of feeling
+                            connected to other people around us [63]. MS Guides offers remote support via Teams but
+                            no solution for on-site collaboration. In our study, we streamed the user’s augmented view
+                            to an external display as a workaround. However, interpreting 3D space via a 2D display
+                            has its limits. A more authentic approach would involve enabling human assistants to join
+                            the AR environment via a second HMD. On the other hand, the fact that on AR HMDs
+                            users can explore and go through and repeat instructions privately without being socially
+                            evaluated was very much valued by participants with a mental disability. “Making the
+                            consequences of errors and mistakes less ominous” for users with mental disabilities is
+                            an important factor [34]. Providing a safe space for users to perform AR-based workflows
+                            and also make mistakes would address exactly that. Interestingly, common motives for the
+                            use of HMDs over other AR technologies include their in situ character [64], hands-free
+                            use [65], and high flexibility and scalability [66]. Considering mental disability, the aspect
+                            of privacy makes another case for HMDs as the enabling AR technology. Providing the
+                            possibility for on-demand human intervention while disallowing unwanted supervision
+                            during AR-assisted work would strike a balance between the value of privacy and the
+                            concurrent need for human support.
+                                 Lightweight, motivating gamification. Gamification at work is often advocated for
+                            by research, as it can increase user engagement [67,68]. A survey among workers and
+
+
+
+                                                                                     https://doi.org/10.3390/virtualworlds5010001
+
+===== PDF PAGE 13 / 19 =====
+Virtual Worlds 2026, 5, 1                                                                                            13 of 19
+
+
+
+                            supervisors at picking workplaces revealed that 66% of respondents favored a gamified
+                            over a non-gamified AR support system [69]. “Straightforward” visualizations were
+                            shown to promote higher user acceptance [68]. Among apps promoting mental health and
+                            psychological well-being, simple progress feedback is the leading form of gamification [70].
+                            In line with that, our study participants with a mental disability did not express a strong
+                            demand for complex gamification but instead suggested that elements should mind the
+                            context of work, succinctly captured by the statement of one of our participants saying,
+                            “Work is work, pleasure is pleasure” (P30,d ). Therefore, already a simple progress bar or
+                            small animations on successful step completion are examples of lightweight gamification
+                            without distracting the user. Crucially, participants with a mental disability emphasized
+                            the importance of explicit motivation through, e.g., textual prompts. This aspect goes hand
+                            in hand with keeping gamification lightweight.
+
+                            5.3. Importance of Existing Design Principles
+                                  Handling Stress. Participants with a mental disability reported stress management
+                            to be a crucial factor at work for them. This coincides with common difficulties outlined
+                            by the ICF for mental health issues [14]. With the increased application of computer
+                            vision in AR-assisted work scenarios, research has explored automatic task transitioning
+                            through contextual understanding [71,72]. However, coinciding with research involving
+                            people with cognitive disabilities [37,73], we find that user-controlled workflow pacing is
+                            strongly appreciated by study participants with mental disabilities considering potential
+                            stress caused. Importantly, the user needs to be clearly informed about any changes, even
+                            if these result from self-determined actions [74]. During our study, participants would
+                            often not notice that they, e.g., navigated to the next step, although MS Guides indicates
+                            progression through sounds and visual transition of control elements. In a busy production
+                            environment, such cues are easily missed. Therefore, even clearer feedback is necessary,
+                            for example, by announcing performed actions, showing pop-up messages, or providing
+                            confirmations that actively involve the user acknowledging workflow transitions.
+                                  Building Confidence. One important consideration in addressing the needs of users
+                            with mental disabilities is to foster the user’s confidence in interacting with a system [34].
+                            For AR on HMDs, interaction can be facilitated by means of hand-, (head-)gaze-, or speech-
+                            based input. Interestingly, three study participants also brought the use of a physical button
+                            into play due to their familiarity with using such. While users of our study exhibited pref-
+                            erences for head-gaze and aversion to speech-based interaction, other studies have found
+                            divergent preferences [38,75], underlining the importance of offering different options.
+                            However, a recurring issue in our study was the unintended triggering of actions, which
+                            led to confusion, frustration, and increased tentativeness, especially among users with
+                            mental disabilities. Separating control elements and instructional content spatially more
+                            clearly and deactivating unnecessary inputs could aid in that regard. Based on repeated
+                            feedback by participants with mental disabilities, providing reassurance is considered
+                            an important factor and would also foster the user’s confidence during AR-assisted use.
+                            Proactive examples could be to display warnings, confirmations, and a list of likely errors
+                            during and prior to critical steps. Recent research is exploring ways to automatically detect
+                            mistakes [76,77] and, importantly, also propose suitable solutions [78] that would resolve
+                            potential irritations down the line due to preceding errors.
+                                  Understanding the Task. While mental disability encompasses psychological barriers,
+                            conveying the instructions understandably without cognitively burdening the user is just
+                            as important [79]. One aspect contributing to occasional confusion was the ambiguous
+                            intent conveyed by some holographic instructions. More specifically, users usually inferred
+                            a prescriptive rather than suggestive meaning from holograms. For instance, a holographic
+
+
+
+                                                                                 https://doi.org/10.3390/virtualworlds5010001
+
+===== PDF PAGE 14 / 19 =====
+Virtual Worlds 2026, 5, 1                                                                                              14 of 19
+
+
+
+                            outline indicating the object of interest was interpreted as a spatial constraint for performing
+                            the corresponding action, although the action itself could be performed wherever deemed
+                            appropriate. This led to confusion, tentativeness, and non-ergonomic poses. More clearly
+                            communicating instructional intent, e.g., through explicit labeling, different color coding,
+                            or, in this case specifically, holograms anchored to the actual object instead of static ones,
+                            could improve understanding of the task at hand. Visually guiding the user towards
+                            relevant elements supports that, too. Sometimes instructional content was not immediately
+                            perceived by participants due to the restricted field of view, which is an inherent technical
+                            limitation of optical see-through HMDs [80]. To that end, research has explored both
+                            visual [81] and non-visual [82] attention guidance for limited field of view scenarios.
+                            Lastly, we found that videos and 3D holograms were valued and utilized more, sometimes
+                            exclusively. MS Guides puts the textual part of an instruction at the heart of each step.
+                            By contrast, on HMDs with a limited field of view, it is important to utilize the available
+                            space effectively, which would mean spotlighting non-textual instructions. Importantly,
+                            though, this does not make text obsolete. If anything, the use of multimodal instructions is
+                            encouraged [40,73].
+
+                            6. Conclusions
+                                 In this work, we aimed to explore perspectives of individuals with mental disabilities
+                            on the use of instructional AR on HMDs. To this end, we conducted a mixed-methods
+                            user study (N = 29) involving both disabled and non-disabled individuals in a sheltered
+                            workshop. Quantitatively, participants with mental disabilities reported significantly lower
+                            usability. Qualitatively, findings reveal first leverage points for accessibility improvements
+                            considering mental disability. Potential aspects specific to the needs of users with mental
+                            disabilities include co-located, privacy-aware human support and lightweight, mainly
+                            motivating gamification. Further considerations highlighted as particularly important
+                            by participants with mental disabilities, which are rooted in general design principles,
+                            were user-controlled workflow pacing with clearer feedback to reduce stress, interaction
+                            patterns that build confidence and avoid accidental triggers, and clearer task intent of
+                            multimodal instructions to improve task understanding. Together, these results point to
+                            actionable considerations for future AR instruction systems that aim to address facets of
+                            mental disability.
+
+                            Limitations and Future Work
+                                  This work should be considered an exploratory investigation of user-relevant consider-
+                            ations for AR instruction systems on HMDs considering mental disability. The sample and
+                            use of a single software configuration limit the generalizability of findings, which should
+                            therefore be considered hypothesis-generating rather than definitive. We chose MS Guides
+                            as it represents the industry standard for AR-based instructions, providing a baseline for
+                            the current state-of-the-art. This evaluation serves as a preliminary study for our ongoing
+                            work to develop a novel AR authoring tool that specifically incorporates design principles
+                            to support users with mental disabilities. While using a single, established system pro-
+                            vides a clear focus, it naturally narrows participants’ feedback to the spectrum of features
+                            provided by it. A larger pool of participants with mental disabilities would also expand
+                            qualitative insights on what is important for AR systems for that user group specifically.
+                            Beyond mere size and reflecting the gender imbalance in the selected shop floor, our study
+                            exhibits more male than female participants, which future work should aim to equate.
+                            Additionally, utilization of more distinct quantitative measures would provide a more com-
+                            prehensive understanding of the users’ experience. While widely used, both the SUS and
+                            PSSUQ focus on perceived usability and lack the ability to capture cognitive or emotional
+
+
+
+                                                                                   https://doi.org/10.3390/virtualworlds5010001
+
+===== PDF PAGE 15 / 19 =====
+Virtual Worlds 2026, 5, 1                                                                                                     15 of 19
+
+
+
+                            aspects. With AR HMDs attracting increasing attention, developing metrics specific to this
+                            technology, as seen for mobile AR [83], would be meaningful. We also acknowledge that
+                            non-disabled participants may have had a generally more positive attitude toward assistive
+                            technologies. Although we focused on qualitative feedback by participants with mental
+                            disabilities, we considered their inclusion valuable as their perspectives contribute relevant
+                            experiential knowledge of mental disability at work. Further limitations arise from our
+                            methodological choices in the qualitative analysis. We intentionally grouped the qualita-
+                            tive feedback from both disabled and non-disabled participants to form a holistic view.
+                            Similarly, we did not differentiate between the specific mental disabilities of participants,
+                            a decision made to gain a broad initial overview and to reflect the practical environment of
+                            the workshop where such distinctions are not made. Future work could benefit from a more
+                            targeted analysis of these distinct groups. In that regard, we believe that an accessibility
+                            approach based on a person’s mental functions rather than their diagnosis is more effective
+                            because sufficiently powered empirical groups for every diagnosis are rarely attainable,
+                            functional impairments commonly overlap across diagnoses, and it helps reduce stigma
+                            associated with diagnostic labels. Lastly, when we prompted non-disabled participants for
+                            their perspective on how the system would benefit their colleagues, their feedback was
+                            often not a clear-cut third-person assessment but rather a blend of their perceptions and
+                            usability experiences. This suggests that future research should employ more structured
+                            methods to distinctly capture these different viewpoints.
+                                 Building on the findings of this exploratory study, our current work focuses on the
+                            development and evaluation of a novel AR authoring tool. This tool will incorporate
+                            guiding mechanisms specifically designed to help AR authors in sheltered workshops to
+                            create cognitively accessible instructions, directly addressing the usability gaps and user
+                            requirements identified herein.
+
+                            Supplementary Materials: The following supporting information can be downloaded at: https:
+                            //www.mdpi.com/article/10.3390/virtualworlds5010001/s1, File S1: PSSUQ_Anonymized; File S2:
+                            SUS_Anonymized.
+
+                            Author Contributions: Conceptualization and methods, V.K., M.S., J.B., B.H. and C.W.; formal
+                            analysis, data curation V.K. and M.S.; resources, B.H. and C.W.; writing—original draft preparation,
+                            V.K.; writing—review and editing, M.S., J.B., B.H. and C.W.; supervision, project administration, J.B.,
+                            B.H. and C.W. All authors have read and agreed to the published version of the manuscript.
+
+                            Funding: This research was conducted within The Cooperative Graduate School Accessibility through
+                            AI-based Assistive Technology (KATE) which is funded by the Ministry of Science, Research and the
+                            Arts of Baden-Württemberg (MWK) under Grant BW6_03.
+
+                            Institutional Review Board Statement: The study was conducted in accordance with the Declara-
+                            tion of Helsinki, and approved by the Ethics Committee of the Karlsruhe Institute of Technology
+                            (A2024-021) on 17 May 2024, (approval number: A2024-021; approval date: 17.05.2024).
+
+                            Informed Consent Statement: Informed consent was obtained from all subjects involved in the study
+
+                            Data Availability Statement: Due to privacy concern, participants did not consent to their data
+                            being shared publicly. The original contributions presented in this study are included in the
+                            article/Supplementary Materials. Further inquiries can be directed to the corresponding author.
+
+                            Acknowledgments: The authors would like to thank the Hagsfelder Werkstätten Karlsruhe (HWK)
+                            and specifically the HWK Südstadt unit for welcoming our research into their facility with open arms.
+
+                            Conflicts of Interest: The authors declare no conflicts of interest. The funders had no role in the design
+                            of the study; in the collection, analyses, or interpretation of data; in the writing of the manuscript; or
+                            in the decision to publish the results.
+
+
+
+
+                                                                                        https://doi.org/10.3390/virtualworlds5010001
+
+===== PDF PAGE 16 / 19 =====
+Virtual Worlds 2026, 5, 1                                                                                                       16 of 19
+
+
+
+References
+1.    Milgram, P.; Takemura, H.; Utsumi, A.; Kishino, F. Augmented reality: A class of displays on the reality-virtuality continuum.
+      In Proceedings of the Telemanipulator and Telepresence Technologies, Boston, MA, USA, 31 October–4 November 1994; SPIE:
+      Bellingham, WA, USA, 1995; Volume 2351, pp. 282–292.
+2.    Daling, L.M.; Schlittmeier, S.J. Effects of augmented reality-, virtual reality-, and mixed reality–based training on objective
+      performance measures and subjective evaluations in manual assembly tasks: A scoping review. Hum. Factors 2024, 66, 589–626.
+      [CrossRef] [PubMed]
+3.    Jeffri, N.F.S.; Rambli, D.R.A. A review of augmented reality systems and their effects on mental workload and task performance.
+      Heliyon 2021, 7, e06277. [CrossRef]
+4.    Oun, A.; Hagerdorn, N.; Scheideger, C.; Cheng, X. Mobile Devices or Head-Mounted Displays. IEEE Access 2024, 12, 21825–21839.
+      [CrossRef]
+5.    Barteit, S.; Lanfermann, L.; Bärnighausen, T.; Neuhann, F.; Beiersmann, C. Augmented, mixed, and virtual reality-based
+      head-mounted devices for medical education: Systematic review. JMIR Serious Games 2021, 9, e29080. [CrossRef]
+6.    Fang, W.; Chen, L.; Zhang, T.; Chen, C.; Teng, Z.; Wang, L. Head-mounted display augmented reality in manufacturing. Robot.
+      Comput.-Integr. Manuf. 2023, 83, 102567. [CrossRef]
+7.    Microsoft. Dynamics 365 Guides. Available online: https://www.panasonic.com/jp/business/its/microsoft365/dynamics.
+      html?ipao9700=g&ipao9701=p&ipao9702=microsoft%20dynamics%20365&ipao9703=c&ipao9704=751151782975&ipao9705=
+      &ipao9721=kwd-300349431334&ipao9722=22202204593&ipao9723=172897835725&ipao9724=&ipao9725=9197398&ipao9726=
+      &ipao9727=&ipao9728=&ipao9729=&ipao9730=&ipao9731=&ipao9732=8745681625135215578&ipao9733=&ipao9734=&ipao9
+      735=&ipao9736=&ipao9737=&ipao9738=&ipao9739=&ipao9740=&ipao9741=&utm_source=google&utm_medium=cpc&utm_
+      campaign=google_d365_M&gad_source=1&gad_campaignid=22202204593&gclid=EAIaIQobChMIievrq4ywkQMVSgZ7Bx2
+      XPQjrEAAYASAAEgL-EfD_BwE (accessed on 1 December 2025).
+8.    PTC. Vuforia. Available online: https://frontline.io/ptc-vuforia-alternative/?gad_source=1&gad_campaignid=23275936050&
+      gclid=EAIaIQobChMIh6aXyoywkQMV3NIWBR3WtQeXEAAYASAAEgL0-PD_BwE (accessed on 1 December 2025).
+9.    WHO. Mental Disorders. Available online: https://www.who.int/news-room/fact-sheets/detail/mental-disorders (accessed on
+      1 December 2025).
+10.   WHO. World Mental Health Report: Transforming Mental Health for All; WHO: Geneva, Switzerland, 2019.
+11.   Cavender, A.; Trewin, S.; Hanson, V. General writing guidelines for technology and people with disabilities. SIGACCESS Access.
+      Comput. 2008, 92, 17–22. [CrossRef]
+12.   World Health Organization International Classification of Functioning, Disability and Health (ICF); World Health Organization:
+      Geneva, Switzerland, 2001.
+13.   Cobigo, V.; Lévesque, D.; Lachapelle, Y.; Mignerat, M. Towards a Functional Definition of Cognitive Disability. 2022, Manuscript
+      submitted for publication.
+14.   Guilera, G.; Pino, O.; Barrios, M.; Rojo, E.; Vieta, E.; Gómez-Benito, J. Towards an ICF Core Set for functioning assessment in
+      severe mental disorders: Commonalities in bipolar disorder, depression and schizophrenia. Psicothema 2020, 32, 7–14. [CrossRef]
+      [PubMed]
+15.   Microsoft. Accessibility—MRTK3. 2022. Available online: https://learn.microsoft.com/en-us/windows/mixed-reality/mrtk-
+      unity/mrtk3-accessibility/packages/accessibility/overview (accessed on 1 December 2025).
+16.   Apple. Accessibility. 2024. Available online: https://www.apple.com/accessibility/ (accessed on 1 December 2025).
+17.   Meta. Learn About Accessibility Features for Meta Quest. 2025. Available online: https://www.meta.com/help/quest/67499993
+      1400954/?srsltid=AfmBOorigJwgsjpoxGegNGCNJVpZsEq_6Pj_zV3ymretLvXfVQaAPZJX (accessed on 1 December 2025).
+18.   Li, Y.; Kim, K.; Erickson, A.; Norouzi, N.; Jules, J.; Bruder, G.; Welch, G.F. A Scoping Review of Assistance and Therapy with
+      Head-Mounted Displays for People Who Are Visually Impaired. ACM Trans. Access. Comput. 2022, 15, 1–28. [CrossRef]
+19.   Fernandes, N.; Leite Junior, A.J.M.; Marçal, E.; Viana, W. AR in education for people who are deaf or hard of hearing. Univers.
+      Access Inf. Soc. 2023, 23, 1483–1502. [CrossRef]
+20.   Garzotto, F.; Matarazzo, V.; Messina, N.; Gelsomini, M.; Riva, C. Improving Museum Accessibility through Storytelling in
+      Wearable Immersive VR. In Proceedings of the 2018 3rd DigitalHERITAGE, San Francisco, CA, USA, 26–30 October 2018.
+      [CrossRef]
+21.   Wolf, D.; Besserer, D.; Sejunaite, K.; Schuler, A.; Riepe, M.; Rukzio, E. cARe: An AR support system for geriatric inpatients with
+      mild cognitive impairment. In Proceedings of the 18th International Conference on Mobile and Ubiquitous Multimedia, Pisa,
+      Italy, 26–29 November 2019; MUM ’19; pp. 1–11. [CrossRef]
+22.   Rohrbach, N.; Gulde, P.; Armstrong, A.R.; Hartig, L.; Abdelrazeq, A.; Schröder, S.; Neuse, J.; Grimmer, T.; Diehl-Schmid, J.;
+      Hermsdörfer, J. An augmented reality approach for ADL support in Alzheimer’s disease. J. NeuroEng. Rehabil. 2019, 16, 66.
+      [CrossRef] [PubMed]
+
+
+
+
+                                                                                            https://doi.org/10.3390/virtualworlds5010001
+
+===== PDF PAGE 17 / 19 =====
+Virtual Worlds 2026, 5, 1                                                                                                           17 of 19
+
+
+
+23.   Peltokorpi, J.; Hoedt, S.; Colman, T.; Rutten, K.; Aghezzaf, E.H.; Cottyn, J. Manual assembly learning, disability, and instructions.
+      Int. J. Prod. Res. 2023, 61, 7903–7921. [CrossRef]
+24.   Jost, M.; Luxenburger, A.; Knoch, S.; Alexandersson, J. PARTAS. In Proceedings of the 15th PETRA, Corfu, Greece,
+      29 June–1 July 2022. [CrossRef]
+25.   Guedes, L.S.; Zanardi, I.; Mastrogiuseppe, M.; Span, S.; Landoni, M. “Is This Real?”. In Proceedings of the Universal Access in
+      HCI, Copenhagen, Denmark, 23–28 July 2023; pp. 91–110. [CrossRef]
+26.   Kešelj, A.; Topolovac, I.; Kačić-Barišić, M.; Burum, M.; Car, Z. Design and Evaluation of an Accessible Mobile AR Application for
+      Learning About Geometry. In Proceedings of the 2021 16th ConTel, Zagreb, Croatia, 30 June–2 July 2021. [CrossRef]
+27.   Abeele, V.V.; Schraepen, B.; Huygelier, H.; Gillebert, C.; Gerling, K.; Van Ee, R. Immersive Virtual Reality for Older Adults:
+      Empirically Grounded Design Guidelines. ACM Trans. Access. Comput. 2021, 14, 14. [CrossRef]
+28.   Eisapour, M.; Cao, S.; Domenicucci, L.; Boger, J. Participatory Design of a Virtual Reality Exercise for People with Mild Cognitive
+      Impairment. In Proceedings of the Extended Abstracts of the 2018 CHI, Montreal, QC, Canada, 21–26 April 2018; pp. 1–9.
+      [CrossRef]
+29.   Sweileh, W. Analysis and mapping of scientific literature on virtual and augmented reality technologies used in the context of
+      mental health disorders (1980–2021). J. Ment. Health Train. Educ. Pract. 2023, 18, 288–305. [CrossRef]
+30.   Bakir, C.N.; Abbas, S.O.; Sever, E.; Özcan Morey, A.; Aslan Genc, H.; Mutluer, T. Use of augmented reality in mental health-related
+      conditions: A systematic review. Digit. Health 2023, 9, 20552076231203649. [CrossRef]
+31.   McCue, M.; Khatib, R.; Kabir, C.; Blair, C.; Fehnert, B.; King, J.; Spalding, A.; Zaki, L.; Chrones, L.; Roy, A.; et al. User-Centered
+      Design of a Digitally Enabled Care Pathway in a Large Health System: Qualitative Interview Study. JMIR Hum. Factors 2023,
+      10, e42768. [CrossRef]
+32.   Ludlow, K.; Russell, J.K.; Ryan, B.; Brown, R.L.; Joynt, T.; Uhlmann, L.R.; Smith, G.E.; Donovan, C.; Hides, L.; Spence, S.H.; et al.
+      Co-designing a digital mental health platform, “Momentum”, with young people aged 7–17: A qualitative study. Digit. Health
+      2023, 9, 20552076231216410. [CrossRef]
+33.   Jin, S.; Kim, B.; Han, K. “I Don’t Know Why I Should Use This App”: Holistic Analysis on User Engagement Challenges in
+      Mobile Mental Health. In Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems, Yokohama, Japan,
+      26 April–1 May 2025; CHI ’25. [CrossRef]
+34.   Johansson, S.; Gulliksen, J.; Lantz, A. Cognitive Accessibility for Mentally Disabled Persons. In Proceedings of the Human-
+      Computer Interaction—INTERACT, Bamberg, Germany, 14–18 September 2015; Abascal, J., Barbosa, S., Fetter, M., Gross, T.,
+      Palanque, P., Winckler, M., Eds.; Springer: Cham, Switzerland, 2015; pp. 418–435. [CrossRef]
+35.   Makhataeva, Z.; Akhmetov, T.; Varol, H.A., Augmented Reality for Cognitive Impairments. In Springer Handbook of Augmented
+      Reality; Nee, A.Y.C., Ong, S.K., Eds.; Springer International Publishing: Cham, Switzerland, 2023; pp. 765–793. [CrossRef]
+36.   Blattgerste, J.; Renner, P.; Pfeiffer, T. Augmented reality action assistance and learning for cognitively impaired people:
+      A systematic literature review. In Proceedings of the 12th ACM International Conference on PErvasive Technologies Related to
+      Assistive Environments, New York, NY, USA,12–15 July 2019; PETRA ’19; pp. 270–279. [CrossRef]
+37.   Funk, M.; Kosch, T.; Kettner, R.; Korn, O.; Schmidt, A. motionEAP: An Overview of 4 Years of Combining Industrial Assembly
+      with Augmented Reality for Industry 4.0. In Proceedings of the 16th International Conference on Knowledge Technologies and
+      Data-Driven Business, Graz, Austria, 18–19 October 2016; p. 4.
+38.   Koushik, V.; Kane, S.K. Towards augmented reality coaching for daily routines. Int. J.-Hum.-Comput. Stud. 2022, 165, 102862.
+      [CrossRef]
+39.   Yin, L.; Dudley, J.J.; Garaj, V.; Kristensson, P.O. Inclusivity Requirements for Immersive Content Consumption. In Design for
+      Sustainable Inclusion; Springer: Berlin/Heidelberg, Germany, 2023; pp. 13–21. [CrossRef]
+40.   World Wide Web Consortium (W3C). XR Accessibility User Requirements. 2021. Available online: https://www.w3.org/TR/
+      xaur/ (accessed on 1 December 2025).
+41.   Brooke, j. SUS: A ‘Quick and Dirty’ Usability Scale. In Usability Evaluation in Industry; CRC Press: Boca Raton, FL, USA, 1996.
+42.   Lewis, J.R. Psychometric Evaluation of the Post-Study System Usability Questionnaire: The PSSUQ. Proc. Hum. Factors Soc. Annu.
+      Meet. 1992, 36, 1259–1260. [CrossRef]
+43.   Lohman, K.; Schäffer, J. SUS—An Improved German Translation. 2016. Available online: https://web.archive.org/web/201603
+      30062546/http://minds.coremedia.com/2013/09/18/sus-scale-an-improved-german-translation-questionnaire/#6 (accessed on
+      1 December 2025).
+44.   Rummel, B. System Usability Scale (Translated into German). 2013. Available online: https://www.researchgate.net/publication/
+      272830038_System_Usability_Scale_Translated_into_German (accessed on 1 December 2025).
+45.   Rauer, M. Quantitative Usablility-Analysen mit der SUS. 2011. Available online: https://seibert.group/blog/2011/04/11
+      /usablility-analysen-system-usability-scale-sus/ (accessed on 1 December 2025).
+
+
+
+
+                                                                                               https://doi.org/10.3390/virtualworlds5010001
+
+===== PDF PAGE 18 / 19 =====
+Virtual Worlds 2026, 5, 1                                                                                                              18 of 19
+
+
+
+46.   Putnam, C.; Puthenmadom, M.; Cuerdo, M.A.; Wang, W.; Paul, N. Adaptation of the System Usability Scale for User Testing
+      with Children. In Proceedings of the Extended Abstracts of the 2020 CHI Conference on Human Factors in Computing Systems,
+      New York, NY, USA, 25–30 April 2020; CHI EA ’20; pp. 1–7. [CrossRef]
+47.   Karatsareas, P. Semi-structured interviews. In Research Methods in Language Attitudes; Cambridge University Press: Cambridge,
+      UK, 2022; pp. 99–113.
+48.   Braun, V.; Clarke, V.; Hayfield, N.; Terry, G. Thematic Analysis. In Handbook of Research Methods in Health Social Sciences;
+      Liamputtong, P., Ed.; Springer: Singapore, 2019; pp. 843–860. [CrossRef]
+49.   Holtzblatt, K.; Wendell, J.B.; Wood, S. Rapid Contextual Design: A How-To Guide to Key Techniques for User-Centered Design.
+      Ubiquity 2005, 2005, 3. [CrossRef]
+50.   Sauro, J.; Lewis, J.R. Quantifying the User Experience: Practical Statistics for User Research, 1st ed.; Morgan Kaufmann Publishers Inc.:
+      San Francisco, CA, USA, 2012.
+51.   Cohen, J. Statistical Power Analysis for the Behavioral Sciences; Routledge: London, UK, 2013. [CrossRef]
+52.   Allen, M.; Poggiali, D.; Whitaker, K.; Marshall, T.R.; van Langen, J.; Kievit, R.A. A multi-platform tool for robust data visualization.
+      Wellcome Open Res. 2021, 4, 63. [CrossRef]
+53.   Osada, T. The 5S’s: Five Keys to a Total Quality Environment. 1991. Available online: https://www.amazon.com.au/5Ss-Five-
+      Total-Quality-Environment/dp/9283311159 (accessed on 1 December 2025)
+54.   Edwards, A.L. The relationship between the judged desirability of a trait and the probability that the trait will be endorsed.
+      J. Appl. Psychol. 1953, 37, 90–93. [CrossRef]
+55.   Mugge, R.; Schoormans, J.P. Product design and apparent usability. The influence of novelty in product appearance. Appl. Ergon.
+      2012, 43, 1081–1088. [CrossRef] [PubMed]
+56.   Shin, G.; Feng, Y.; Jarrahi, M.H.; Gafinowitz, N. Beyond novelty effect: A mixed-methods exploration into the motivation for
+      long-term activity tracker use. JAMIA Open 2019, 2, 62–72. [CrossRef]
+57.   Grayson, M.; Thieme, A.; Marques, R.; Massiceti, D.; Cutrell, E.; Morrison, C. A Dynamic AI System for Extending the Capabilities
+      of Blind People. In Proceedings of the CHI EA ’20: Extended Abstracts of the 2020 CHI Conference on Human Factors in
+      Computing Systems, Honolulu, HI, USA, 25–30 April 2020; Association for Computing Machinery: New York, NY, USA, 2020;
+      CHI EA ’20; pp. 1–4. [CrossRef]
+58.   Kameswaran, V.; J. Fiannaca, A.; Kneisel, M.; Karlson, A.; Cutrell, E.; Ringel Morris, M. Understanding In-Situ Use of Commonly
+      Available Navigation Technologies by People with Visual Impairments. In Proceedings of the 22nd International ACM
+      SIGACCESS Conference on Computers and Accessibility, Athens, Greece, 26–28 October 2020; ASSETS ’20. [CrossRef]
+59.   Jain, D.; Junuzovic, S.; Ofek, E.; Sinclair, M.; Porter, J.R.; Yoon, C.; Machanavajhala, S.; Ringel Morris, M. Towards Sound
+      Accessibility in Virtual Reality. In Proceedings of the 2021 International Conference on Multimodal Interaction, Montréal, QC,
+      Canada, 18–22 October 2021; ICMI ’21; pp. 80–91. [CrossRef]
+60.   Jain, D.; Junuzovic, S.; Ofek, E.; Sinclair, M.; Porter, J.; Yoon, C.; Machanavajhala, S.; Ringel Morris, M. A Taxonomy of Sounds in
+      Virtual Reality. In Proceedings of the 2021 ACM Designing Interactive Systems Conference, Virtual, 28 June–2 July 2021; DIS ’21;
+      pp. 160–170. [CrossRef]
+61.   Franz, R.L.; Junuzovic, S.; Mott, M. Nearmi: A Framework for Designing Point of Interest Techniques for VR Users with Limited
+      Mobility. In Proceedings of the 23rd International ACM SIGACCESS Conference on Computers and Accessibility, Virtual,
+      22–25 October 2021; ASSETS ’21. [CrossRef]
+62.   Wentzel, J.; Junuzovic, S.; Devine, J.; Porter, J.; Mott, M. Understanding How People with Limited Mobility Use Multi-
+      Modal Input. In Proceedings of the 2022 CHI Conference on Human Factors in Computing Systems, New Orleans, LA, USA,
+      29 April–5 May 2022; CHI ’22. [CrossRef]
+63.   Ryan, R.M.; Deci, E.L. Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being.
+      Am. Psychol. 2000, 55, 68. [CrossRef]
+64.   Maio, R.; Santos, A.; Marques, B.; Ferreira, C.; Almeida, D.; Ramalho, P.; Batista, J.; Dias, P.; Santos, B.S. Pervasive Augmented
+      Reality to support logistics operators in industrial scenarios: A shop floor user study on kit assembly. Int. J. Adv. Manuf. Technol.
+      2023, 127, 1631–1649. [CrossRef]
+65.   Drouot, M.; Le Bigot, N.; Bricard, E.; Bougrenet, J.L.d.; Nourrit, V. Augmented reality on industrial assembly line: Impact on
+      effectiveness and mental workload. Appl. Ergon. 2022, 103, 103793. [CrossRef]
+66.   Dhiman, H.; Martinez, S.; Paelke, V.; Röcker, C. Head-Mounted Displays in Industrial AR-Applications: Ready for Prime Time?
+      In HCI in Business, Government, and Organizations; Nah, F.F.H., Xiao, B.S., Eds.; Springer: Cham, Switzerland, 2018; pp. 67–78.
+      [CrossRef]
+67.   Nguyen, D.; Meixner, G. Gamified AR Training for an Assembly Task.In Proceedings of the 2019 Federated Conference on
+      Computer Science and Information Systems (FedCSIS), Leipzig, Germany, 1–4 September 2019; pp. 901–904. [CrossRef]
+
+
+
+
+                                                                                                 https://doi.org/10.3390/virtualworlds5010001
+
+===== PDF PAGE 19 / 19 =====
+Virtual Worlds 2026, 5, 1                                                                                                          19 of 19
+
+
+
+68.   Korn, O.; Funk, M.; Schmidt, A. Towards a gamification of industrial production: A comparative study in sheltered work
+      environments. In Proceedings of the 7th ACM SIGCHI Symposium on Engineering Interactive Computing Systems, Duisburg,
+      Germany, 23–26 June 2015; EICS ’15; pp. 84–93. [CrossRef]
+69.   Ponis, S.T.; Plakas, G.; Agalianos, K.; Aretoulaki, E.; Gayialis, S.P.; Andrianopoulos, A. Augmented Reality and Gamification to
+      Increase Productivity and Job Satisfaction in the Warehouse of the Future. Procedia Manuf. 2020, 51, 1621–1628. [CrossRef]
+70.   Cheng, V.W.S.; Davenport, T.; Johnson, D.; Vella, K.; Hickie, I.B. Gamification in Apps and Technologies for Improving Mental
+      Health and Well-Being: Systematic Review. JMIR Ment. Health 2019, 6, e13717. [CrossRef]
+71.   Wang, T.; Qian, X.; He, F.; Hu, X.; Huo, K.; Cao, Y.; Ramani, K. CAPturAR: An Augmented Reality Tool for Authoring
+      Human-Involved Context-Aware Applications. In Proceedings of the 33rd Annual ACM Symposium on User Interface Misc and
+      Technology, Virtual, 20–23 October 2020; UIST ’20; pp. 328–341. [CrossRef]
+72.   Fu, M.; Fang, W.; Gao, S.; Hong, J.; Chen, Y. Edge computing-driven scene-aware intelligent augmented reality assembly. Int. J.
+      Adv. Manuf. Technol. 2022, 119, 7369–7381. [CrossRef]
+73.   Blattgerste, J.; Renner, P.; Pfeiffer, T. Authorable augmented reality instructions for assistance and training in work environments.
+      In Proceedings of the 18th International Conference on Mobile and Ubiquitous Multimedia, Pisa, Italy, 27–29 November 2019.
+      [CrossRef]
+74.   Dünser, A.; Grasset, R.; Seichter, H.; Billinghurst, M. Applying HCI Principles to AR Systems Design. In Proceedings of the
+      2nd International Workshop at the IEEE Virtual Reality 2007 Conference, Charlotte, NC, USA, 11 March 2007.
+75.   Wuttke, L.; Bühler, C.; Klug, A.K.; Söffgen, Y. Testing an AR Learning App for People with Learning Difficulties in Vocational
+      Training in Home Economics. In Computers Helping People with Special Needs; Springer Int. Publishing: Berlin/Heidelberg,
+      Germany, 2022; pp. 176–182. [CrossRef]
+76.   Manuri, F.; Pizzigalli, A.; Sanna, A. A State Validation System for Augmented Reality Based Maintenance Procedures. Appl. Sci.
+      2019, 9, 2115. [CrossRef]
+77.   Sreekanta, M.H.; Sarode, A.; George, K. Error detection using augmented reality in the subtractive manufacturing process. In
+      Proceedings of the 2020 10th Annual Computing and Communication Workshop and Conference (CCWC), Vegas, NV, USA,
+      6–8 January 2020; pp. 0592–0597. [CrossRef]
+78.   Stanescu, A.; Mohr, P.; Thaler, F.; Kozinski, M.; Skreinig, L.R.; Schmalstieg, D.; Kalkofen, D. Error Management for Augmented
+      Reality Assembly Instructions. In Proceedings of the 2024 IEEE International Symposium on Mixed and Augmented Reality
+      (ISMAR), Los Alamitos, CA, USA, 21–25 October 2024; pp. 690–699. [CrossRef]
+79.   Johansson, S. Towards a Framework to Understand Mental and Cognitive Accessibility in a Digital Context. Ph.D. Thesis, KTH
+      Royal Institute of Technology, Stockholm, Sweden, 2016.
+80.   Shen, Z.; Zhang, Y.; Weng, Y.; Li, X. Characterization and Optimization of Field of View in a Holographic Waveguide Display.
+      IEEE Photonics J. 2017. 9, 1–11. [CrossRef]
+81.   Markov-Vetter, D.; Luboschik, M.; Islam, A.T.; Gauger, P.; Staadt, O. The Effect of Spatial Reference on Visual Attention and
+      Workload during Viewpoint Guidance in Augmented Reality. In Proceedings of the 2020 ACM Symposium on Spatial User
+      Interaction,Virtual, 30 October–1 November 2020; SUI ’20; pp. 1–10. [CrossRef]
+82.   Marquardt, A.; Trepkowski, C.; Eibich, T.D.; Maiero, J.; Kruijff, E.; Schöning, J. Comparing Non-Visual and Visual Guidance
+      Methods for Narrow Field of View Augmented Reality Displays. IEEE Trans. Vis. Comput. Graph. 2020, 26, 3389–3401. [CrossRef]
+      [PubMed]
+83.   Santos, M.E.C.; Polvi, J.; Taketomi, T.; Yamamoto, G.; Sandor, C.; Kato, H. Toward Standard Usability Questionnaires for
+      Handheld Augmented Reality. IEEE Comput. Graph. Appl. 2015. 35, 66–75. [CrossRef]
+
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual
+author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to
+people or property resulting from any ideas, methods, instructions or products referred to in the content.
+
+
+
+
+                                                                                              https://doi.org/10.3390/virtualworlds5010001

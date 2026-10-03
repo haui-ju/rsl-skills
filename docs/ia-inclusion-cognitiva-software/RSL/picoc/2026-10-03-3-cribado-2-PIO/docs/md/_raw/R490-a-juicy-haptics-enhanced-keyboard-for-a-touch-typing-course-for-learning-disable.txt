@@ -1,0 +1,425 @@
+===== PDF PAGE 1 / 7 =====
+  A Juicy Haptics Enhanced Keyboard for a Touch-Typing Course
+                  for Learning Disabled Children
+                                   Zita Willems∗                                                                  Louise Cuypers∗
+                            e-Media Research Lab                                                               e-Media Research Lab
+                                  KU Leuven                                                                         KU Leuven
+                      Leuven, Vlaams Brabant, Belgium                                                    Leuven, Vlaams Brabant, Belgium
+                      zita.willems@student.kuleuven.be                                                 louise.cuypers@student.kuleuven.be
+
+                            Ingmar Ivo P. Malfait                                                                     Luc Geurts
+                           e-Media Research Lab                                                               e-Media Research Lab
+                                 KU Leuven                                                                          KU Leuven
+                      Leuven, Vlaams Brabant, Belgium                                                    Leuven, Vlaams Brabant, Belgium
+                        ingmar.malfait@kuleuven.be                                                           luc.geurts@kuleuven.be
+
+
+
+
+Figure 1: The evolution of the juicy haptics-enhanced keyboard, from paper prototype to final prototype, to its application in a
+typical use case scenario.
+Abstract                                                                                    feedback mechanisms: vibration and movement. A preliminary eval-
+Juiciness, defined as “a phenomenon emerging from coherent game                             uation involving non-disabled adults suggests that juicy haptics can
+mechanics and visuals, providing confirmatory, explicit, and ambi-                          provide a playful and pleasant learning experience for touch-typing.
+ent feedback,” has been widely discussed in game development, and
+recent research. However, most research focuses on the audiovisual                          CCS Concepts
+aspects, neglecting the haptic domain. This paper explores "juicy
+                                                                                            • Human-centered computing → Haptic devices; Keyboards;
+haptics" by combining principles of tangible interaction and juici-
+                                                                                            Human computer interaction (HCI); Text input; User studies;
+ness. We present a case study on designing an enhanced keyboard
+                                                                                            Usability testing; Accessibility systems and tools.
+for a touch-typing course for children with learning disabilities and
+motor disorders. Two touch-typing experts collaborated with us
+during an iterative design process. A paper prototype, informed                             Keywords
+by juicy haptic literature and preliminary interviews, was created,                         Children , Development / Implementation , DIY / Maker / Prototyp-
+eventually leading to a final keyboard prototype with two haptic                            ing / Toolkits , Education , Play / Games , Tactile / Haptic Interaction
+                                                                                            , Tangible Interaction , Technology , Usability / User Experience ,
+∗ Both authors contributed equally to this research.
+                                                                                            User Studies
+
+Permission to make digital or hard copies of all or part of this work for personal or
+classroom use is granted without fee provided that copies are not made or distributed       ACM Reference Format:
+for profit or commercial advantage and that copies bear this notice and the full citation   Zita Willems, Louise Cuypers, Ingmar Ivo P. Malfait, and Luc Geurts. 2025.
+on the first page. Copyrights for third-party components of this work must be honored.      A Juicy Haptics Enhanced Keyboard for a Touch-Typing Course for Learn-
+For all other uses, contact the owner/author(s).
+                                                                                            ing Disabled Children. In Nineteenth International Conference on Tangible,
+TEI ’25, March 04–07, 2025, Bordeaux / Talence, France
+© 2025 Copyright held by the owner/author(s).
+                                                                                            Embedded, and Embodied Interaction (TEI ’25), March 04–07, 2025, Bordeaux /
+ACM ISBN 979-8-4007-1197-8/25/03                                                            Talence, France. ACM, New York, NY, USA, 7 pages. https://doi.org/10.1145/
+https://doi.org/10.1145/3689050.3705980                                                     3689050.3705980
+
+===== PDF PAGE 2 / 7 =====
+TEI ’25, March 04–07, 2025, Bordeaux / Talence, France                                 Zita Willems, Louise Cuypers, Ingmar Ivo P. Malfait, and Luc Geurts
+
+
+1    Introduction                                                            In keyboards, feedback can be categorized into three types: local,
+Gamification refers to “the application of game dynamics, mechan-         partial, and global [29]. Local feedback means providing feedback
+ics, and frameworks into non-game settings” [30]. In education,           only on the key that is pressed, whereas global feedback involves
+it is used to increase student engagement and optimize learning           feedback on all keys. Partial feedback falls in between, offering feed-
+[42]. However, loss of performance and undesired behavior of the          back on a subset of keys, such as those on the left or right side of the
+gamification interfaces seem to be frequent occurrences [4]. Bogost,      keyboard. According to Kim and Tan, local feedback leads to better
+argues that these problems arise because the gamification elements        typing performance than global feedback, as it helps users identify
+are tacked on instead of fully incorporated into the interface [6].       which key was pressed [22]. However, the performance gain of
+They reward the student after the boring, educational part, rather        local feedback must be weighed against the increased complexity
+than enhance the learning itself.                                         and cost associated with its implementation.
+    Juiciness might offer a solution as it is meant to enhance the
+experience of interacting with the interface itself, rather than offer-
+                                                                          2.2    Juiciness
+ing a reward after completing the interaction. In gaming, juiciness
+describes a particular type of game feel, achieved by abundant            Juiciness can be defined as abundant, continuous, and positive feed-
+effects [13]. Previous research has confirmed juiciness’ positive         back [41]. In games, it refers to when a player’s action triggers
+impact on user engagement and learner motivation [13, 14, 18, 41].        multiple non-functional reactions [13]. The framework by Hicks
+However, current juiciness research predominantly focuses on au-          et al. states that juiciness in games comprises three main compo-
+diovisual modalities, neglecting the haptic and tangible experience       nents: game characteristics, game status, and immediate feedback
+[41]. Nevertheless, Singhal and Schneider indicates that incorporat-      [12]. Juicy design, according to Hicks et al., suggests that a large
+ing juicy haptics in games can significantly improve engagement           amount of audiovisual feedback enhances the player experience
+and immersion [41].                                                       [12]. The positive effect of juiciness emerges from the combination
+    This research aims to deepen the understanding of “juicy haptics"     of multiple elements that contribute to a more engaging and satis-
+through a specific case study, exploring its application in education     fying player experience [13]. Finally, Parker describes juiciness as
+to enhance learning. The study involves the creation of an artifact,      a visceral feeling that provides the user with a sense of satisfaction
+a juicy haptics enhanced keyboard designed to support the learning        [33].
+of touch-typing for learning disabled children. It was developed             While existing research focuses mainly on juiciness in games,
+alongside teaching experts from a touch-typing course for children        we argue that this concept can be applied to other interactive me-
+with learning disabilities and motor disorders, who often learn           dia. As juicy design involves providing continuous and abundant
+touch-typing to address their writing difficulties [39, 48].              feedback through multiple channels [13]. However, it is important
+    We argue that this target group is particularly well-suited for the   that users can turn off juicy elements if they are undesirable or too
+study, as an adapted learning approach incorporating juicy haptics        overwhelming [12, 13, 41].
+can address the unique challenges that they face. And that, touch-
+typing itself lends well to the different modal avenues of tangible
+                                                                          2.3    Haptics
+interaction. The sensation of typing includes feeling the key, putting
+pressure and key travel, and feedback upon a successful press, which      Haptics relates to touch and movement, involving the mechanical
+can be enriched by various tangible interaction modalities.               interactions associated with these sensations. Haptic technology is
+    Modalities used in previous different tangible interaction in-        bi-directional, encompassing both action (interaction) and reaction
+terfaces including but not limited to: vibrational feedback [23],         (haptic feedback) [16]. Examples include mobile phones simulating
+mechanical pushback and vertical movements [8], shape changing            a click sensation when typing and game controllers vibrating when
+keys [37], and soft, squeezable textures [45]. Similarly, completing      the player is hit.
+words, sentences and exercises also allow for tangible interaction           The use of haptics promotes playfulness and lightweight inter-
+enrichment by using e.g. ambient lighting feedback [9, 32] or ambi-       action [15]. Haptic feedback can result in reduced cognitive load
+ent haptic feedback [21]. The research question is as follows: How        compared to auditory or visual feedback, leading to quicker per-
+can juicy haptics be implemented in a keyboard to facilitate the          ception [10, 31, 40]. The intensity should be carefully selected, as
+learning of touch-typing for children with learning disabilities and      higher intensity can improve typing speed and accuracy, while au-
+motor disorders?                                                          ditory feedback intensity does not affect typing performance [29].
+                                                                          However, haptics, as described by Singhal and Schneider, is a multi-
+                                                                          modal experience, linking visual, auditory, and haptic feedback
+2 Literature review                                                       [41].
+                                                                             Juicy haptics emerge when juiciness and haptics intersect, de-
+2.1 Feedback                                                              fined by Singhal and Schneider as "abundant, positive haptic feed-
+Feedback refers to “the return of information about the result of         back aimed at enhancing user experience in games and other in-
+a process or activity” [35]. It represents a product’s reaction to a      teractive media [41]." This study on haptic embellishments as juicy
+user’s action and can be auditory, visual, haptic, or a combination       haptics identified ten design principles and conducted two empir-
+thereof. For an interaction to be intuitive, there must be a natural      ical studies where users interacted with visuo-haptic content on
+coupling between action and reaction, encompassing six aspects:           their phones. In the first study, participants compared and ranked
+time, location, direction, dynamics, modality and expression [49].        animations with different haptic feedback conditions to evaluate
+
+===== PDF PAGE 3 / 7 =====
+A Juicy Haptics Enhanced Keyboard for a Touch-Typing Course for Learning Disabled Children                     TEI ’25, March 04–07, 2025, Bordeaux / Talence, France
+
+
+the effectiveness of each principle. In the second study, partici-                     feedback should be avoided, highlighting when something goes
+pants played six variants of a Breakout-style game with varying                        well, e.g. typing a correct letter [44]. The experts also emphasize
+levels of visual and haptic juice to assess the impact of juicy haptics                this: "negative feedback is demotivating and typing speed is not
+in games. Findings indicated that juicy haptics can significantly                      important [25, 46]." Finally, the keyboard should not hinder the
+enhance player experience, particularly in enjoyment, aesthetic                        learning process or introduce excessive dependencies onto the chil-
+appeal, immersion, and meaning.                                                        dren. Using technologies like gloves with sensors and actuators,
+    In this work a prototype of an interactive keyboard is designed                    glasses, and wristbands could obstruct the classroom usage of the
+and implemented that includes principles of juicy haptics, thereby                     enhanced keyboard. All mentioned requirements were imposed
+illustrating how these principles can be translated into concrete                      in consultation with Windekind to ensure the design meets the
+designs. The specific use case is a keyboard that can be used in a                     specific needs of the target group.
+touch-typing course for learning disabled children.
+                                                                                       4     Methodology
+3 Case study
+                                                                                       With approval from the Social and Societal Ethics Committee of KU
+3.1 Envisioned end users                                                               Leuven, an iterative design approach was used, involving experts
+Children with learning disabilities and motor disorders often use a                    of TypWind in every phase. The first phase explored how to inte-
+computer to overcome difficulties with writing and spelling [17, 39,                   grate juiciness and haptics into a keyboard. A low-fidelity paper
+48]. Touch-typing, where each finger is linked to specific letters, is                 prototype was evaluated by two experts of TypWind. In the second
+a valuable skill that can help them overcome slow handwriting [48].                    phase, a high-fidelity technical prototype was evaluated by the same
+Research indicates that students with learning disabilities who learn                  experts. The final phase involved a preliminary evaluation of the
+touch-typing can achieve typing speeds comparable to their peers                       prototype with non-disabled adults, as ethical concerns prevented
+[47]. However, their learning process is often more challenging,                       testing with the intended end users. Each evaluation consisted of
+leading to loss of concentration and frustration. This case study                      one or more typing exercises, followed by a semi-structured inter-
+aims to make this process more enjoyable, to increase motivation                       view.
+and improve learning outcomes.                                                            The low-fidelity prototype was evaluated on March 28, 2024 at
+   This research was conducted in collaboration with a special                         Windekind by two experts of TypWind. The observation involved
+needs primary school in Leuven called Windekind [50], which has                        one exercise, with key movement simulated using the paper proto-
+developed its own learning method called TypWind. This multi-                          type shown in Figure 1. We simulated vibration by explaining that
+sensory approach makes associations between letters, colors and                        the keyboard vibrates.
+figures [46]. Each finger is linked to a specific color and letter group                  The high-fidelity prototype was evaluated on April 23, 2024 at
+(e.g., the left pinky finger types A, Q, and W) and each letter is linked              Windekind by the same two experts of TypWind. The observation
+to a Dutch word and corresponding figure. After learning these                         consisted of four exercises: no vibration or movement (1), vibration
+associations, the children do typing exercises, where it is important                  and movement as feedback (2), vibration as feedforward and move-
+to return to the starting position on the home row (index fingers                      ment as feedback (3) and movement as feedforward and vibration
+on J and F) before typing the next letter. Despite the effectiveness                   as feedback (4).
+of TypWind, the repetitive nature of the typing exercises causes                          The evaluation with non-disabled adults took place over several
+loss of concentration and motivation.                                                  days, at various locations. The test group included 13 participants
+                                                                                       aged 20 to 77, with six women and seven men. The observation
+3.2     Requirements                                                                   included six exercises: no vibration or movement (1), vibration as
+                                                                                       feedback (2), movement as feedback (3), vibration and movement as
+3.2.1 Technical requirements. The keyboard should follow the Bel-
+                                                                                       feedback (4), vibration as feedforward and movement as feedback
+gian AZERTY layout, as used by the children, and conform to
+                                                                                       (5) and lastly movement as feedforward and vibration as feedback
+standard dimensions with a key distance between 17mm and 19mm
+                                                                                       (6).
+for optimal typing performance and usability [34]. It should also
+incorporate elements of juicy haptics, providing abundant feedback
+through multiple channels. During an initial interview, experts                        5 Design and Development
+of TypWind emphasized the importance of customization. The
+                                                                                       5.1 Conceptual design
+functionalities of the enhanced keyboard should be toggleable to
+accommodate each child’s preferences [25]. Lastly, the keyboard                        The implementation of juiciness in hardware is still at an early stage.
+should be ergonomically designed to avoid wrist discomfort.                            Existing techniques for implementing juiciness in games cannot be
+                                                                                       directly applied to a keyboard but are used as inspiration [13]. As
+3.2.2 User requirements. Children with learning disabilities and                       mentioned in the literature review, one study has investigated juicy
+motor disorders require a different learning method than their                         haptics, but it only explored vibration. Since there are currently no
+peers, imposing specific design considerations [7]. A first require-                   keyboards available that implement abundant haptic feedback, it
+ment is that no time limit is imposed while learning to touch-type.                    was decided to design a keyboard from scratch. We only implement
+Most typing programs emphasize speed, creating pressure for chil-                      the three letter rows and the space bar, as this simplifies the further
+dren with learning disabilities and motor disorders. The focus is                      design process of the keyboard. Moreover, TypWind focuses on
+on correctness without time pressure [44]. Furthermore, negative                       these keys [25, 46].
+
+===== PDF PAGE 4 / 7 =====
+TEI ’25, March 04–07, 2025, Bordeaux / Talence, France                               Zita Willems, Louise Cuypers, Ingmar Ivo P. Malfait, and Luc Geurts
+
+
+   When implementing juiciness, it is important to provide contin-       the end of a typing exercise, the keyboard makes a wave motion
+uous and immediate feedback [41]. Hence the choice to provide            to emphasize completion. Through the multi-modal coherence of
+feedback after each typed letter. Since the user requirements dictate    vibration and movement as feedback, alongside the tactile feel on
+that negative feedback is not allowed, feedback is only given after      the home row, the result is a juicy haptics enhanced keyboard,
+typing a correct letter. This feedback is immediate, respecting the      according to the definitions in section 2.
+aspect ‘time’ of natural coupling [49].
+   In juicy design, abundant feedback, which can be visual, audi-        5.2.1 Hardware. The technical prototype features keys to enable
+tory, haptic, or a combination [12], is crucial. This research focuses   the basic operation of the keyboard, as well as additional com-
+on haptic feedback due to its benefits, including improved typing        ponents to provide interaction with the user. Clicky mechanical
+performance [22], playfulness, and lightweight interaction [15].         switches are used for their tactile feedback, audible click and low
+Haptic feedback also reduces cognitive load and is perceived faster      profile [5, 11, 19, 20, 24], ensuring the keyboard maintains an ap-
+than auditory or visual feedback [10, 40]. The keyboard implements       propriate height.
+several forms of haptic feedback, while audiovisuals are minimized.         As detailed in subsection 5.1, the enhanced keyboard can provide
+Firstly, the keyboard provides vibration. This is inspired by screen     feedback through both movement and vibration. The upward move-
+shakes in games and existing implementations of haptic feedback,         ment of the letter groups is achieved by servo motors. Additionally,
+such as vibrating game controllers. In addition, the keys can move       vibration motors offer a subtle vibration for each letter group, with
+upwards. The idea is to exaggerate the upward movement that              the space bar featuring two motors to ensure noticeable vibration
+the finger makes after pressing a key. This exaggerated response         in both thumbs. Lastly, texture is applied on the starting keys of
+follows from the component ‘game state’ of the framework of juicy        the home row using felt. This creates a different feel compared to
+design of games [12]. Since the feedback follows the movement of         the other keys, making it easier for the user to find the starting
+the finger, the aspect ‘direction’ of natural coupling is respected      position. The sketch of the design is shown in Figure 2.
+[49].
+                                                                         5.2.2 Software. A Raspberry Pi (RPI) model 4B is used to control
+   According to Interhaptics, vibration belongs to tactile technology
+                                                                         the servo and vibration motors and to read the pressed keys [38].
+and movement to kinesthetic technology. By making this choice,
+                                                                         The application is developed in Python, because of the multiple
+two different feedback mechanisms can be tested [16]. These two
+                                                                         libraries available for the hardware components [1–3, 43]. A graph-
+feedback mechanisms can occur simultaneously, separately or not
+                                                                         ical user interface (GUI) is implemented to display the letters to
+at all. Thus, the keyboard is adaptable to the various needs of the
+                                                                         be typed, which is shown on an external screen [36]. The block
+children, a requirement imposed by the experts of TypWind [25].
+                                                                         diagram illustrating the various components is provided in Figure 3.
+   As mentioned in the literature review, local feedback, where
+each key gives feedback individually, results in a higher typing         5.2.3 Mechanical design. To ensure user-friendliness, the keyboard
+speed and a lower error rate [21, 22]. However, the size of hardware     includes a casing to conceal wires and enhance usability. The cas-
+components and the requirement to maintain standard keyboard             ing is composed of multiple 3D printed parts. The front part of
+dimensions must be considered. It was therefore decided to provide       the keyboard is rounded for comfortable wrist support, improving
+feedback per letter group. The keyboard is divided into the same         ergonomics as required in by Typwind. The technical prototype is
+colored letter groups the children learn in TypWind.                     shown in Figure 1.
+   Upon completing a typing exercise, the keyboard makes a wave
+motion, with each letter group providing feedback sequentially.
+The exuberant feedback emphasizes and rewards the achievement,
+following the component ‘game characteristics’ of the framework
+of juicy design of games [12]. The wave is delivered through ei-
+ther vibration or movement depending on which modality is active,
+with movement preferred when both are active. Finally, texture
+is added to the eight keys of the starting position. This tactile en-
+hancement aids children in easily locating and keeping their fingers
+on these keys while typing, facilitating better finger placement and
+consistency.
+
+
+5.2     Technical design
+A possible way to implement juicy haptics in a keyboard is by            Figure 2: Top view of the keyboard design sketch. Servo mo-
+incorporating multiple haptic feedback mechanisms to provide             tors are arranged along the top to maneuver various letter
+continuous and immediate feedback. This feedback is given after          groups shown in the center, enabling vertical movement of
+each correctly typed letter, thereby emphasizing progress. The first     the upper end while a hinge at the bottom maintains their
+mechanism is vibration, inspired by screen shakes in games and           level. Vibration motors are installed beneath the letter groups
+existing implementations of haptic feedback like vibrating game          and the space bar at the bottom.
+controllers. The second mechanism is movement, where the upward
+movement of a finger after pressing a key is exaggerated. And at
+
+===== PDF PAGE 5 / 7 =====
+A Juicy Haptics Enhanced Keyboard for a Touch-Typing Course for Learning Disabled Children                     TEI ’25, March 04–07, 2025, Bordeaux / Talence, France
+
+
+                                                                                       creates an enjoyable sensation, but that simultaneous vibration
+                                                                                       and movement could be overwhelming for some children. Never-
+                                                                                       theless, the experts believe that children might find these haptic
+                                                                                       sensations enjoyable and motivating, as they spark curiosity. Both
+                                                                                       experts appreciated the addition of positive feedback and the ab-
+                                                                                       sence of negative feedback. Moreover, they found the continuous
+                                                                                       feedback after each letter motivating, as it encourages further typ-
+                                                                                       ing. However, their opinions on feedforward differed. One expert
+                                                                                       struggled with correctly interpreting feedforward through vibra-
+                                                                                       tion, but found it helpful when implemented through movement.
+                                                                                       The other expert perceived feedforward as unclear and rather dis-
+                                                                                       tracting, as they were more focused on the associations taught
+                                                                                       during TypWind. Lastly, both experts praised the keyboard’s simple
+                                                                                       layout and compactness, along with its ability to customize the two
+                                                                                       feedback modalities according to user preferences. They empha-
+                                                                                       sized the importance of adaptability, given that each child is unique.
+Figure 3: Block diagram of the enhanced keyboard. The Rasp-                            One expert suggested that feedforward might be more effective
+berry Pi processes keyboard and mouse inputs (USB) and                                 with a longer interval between the feedback for the previous key
+controls the servo and vibration motors via a separate PWM                             and the feedforward for the next key. Consequently, this time was
+controller (I2C). The GUI is displayed on the screen (HDMI).                           increased for the evaluation with non-disabled adults.
+
+
+6 Results evaluations                                                                  6.3    Results evaluation with non-disabled adults
+                                                                                       The evaluation with non-disabled adults offers initial insights into
+6.1 Results evaluation paper prototype                                                 the user experience of the juicy haptics enhanced keyboard. The
+As previously discussed in section 4 on methodology, the design                        felt on the starting position was perceived as pleasant and helpful.
+underwent multiple testing phases. The evaluation of the paper                         While most participants appreciated the addition of vibration and
+prototype, depicted in Figure 1, by two experts of TypWind yielded                     movement, some had difficulty adjusting or found it distracting.
+the following findings [26]. One expert noted that when they re-                       Overall, participants reported that the combination of vibration and
+moved their fingers from the keyboard, they could no longer feel                       movement creates an enjoyable and enhanced experience, although
+the feedback. They suggested that this serves as an effective way to                   some felt it could be overwhelming.
+encourage children to keep their fingers on the keyboard in order to                      The majority preferred the integration of feedforward and feed-
+feel the feedback. The keyboard was also described as low-stimulus,                    back, as it reduces cognitive load during typing. Lastly, most partic-
+directing more attention to the letters. Both experts highlighted                      ipants enjoyed the wave motion at the end, describing it as playful
+the compact design of the keyboard as beneficial, as it minimizes                      and rewarding, which adds to the sense of accomplishment.
+distractions for children. Furthermore, they considered continuous
+feedback a significant improvement over receiving feedback only
+at the end of a typing exercise. The absence of negative feedback                      7     Discussion and future work
+was seen as motivating, and the use of colors was appreciated, as                      The evaluation with non-disabled adults suggests that the addition
+it creates a connection with the learned associations, enhancing                       of vibration and movement, along with the wave motion at the
+the overall effectiveness of the keyboard. Additionally, one expert                    end, creates an enjoyable and playful typing experience. These
+suggested incorporating feedforward, where users receive infor-                        findings are consistent with existing literature suggesting that juicy
+mation before performing an action. Although not strictly related                      haptics contribute to a positive player experience [41]. However, the
+to juiciness, the design allows for this addition through software                     combination of both vibration and movement can be overwhelming
+adjustments. Further testing will determine whether this feature                       or distracting, underscoring the need for both modalities to be
+enhances motivation. Lastly, one expert suggested using lowercase                      individually toggleable. This confirms that juiciness should be used
+letters instead of uppercase letters, since the children typically use                 in moderation [12, 13, 41]. Additionally, it emphasizes the need for
+lowercase letters during class activities.                                             customization, highlighting the importance of adaptability based
+                                                                                       on user preferences.
+6.2     Results evaluation final prototype                                                While the keyboard is specifically designed for children with
+As detailed in section 4, the high-fidelity prototype was tested by                    learning disabilities and motor disorders, it is suitable for all users.
+the same two experts of TypWind who evaluated the paper proto-                         Nevertheless, its benefits are particularly significant for these chil-
+type [27, 28]. Both experts reported that the texture on the home                      dren, as their touch-typing learning process is more challenging,
+row effectively indicates the starting position. They also found the                   leading to loss of concentration and motivation. Lastly, it is im-
+tactile click sensation of the mechanical switches enjoyable and                       portant to note that testing with the intended end users was not
+stimulating. While typing, both experts were pleasantly surprised                      possible due to ethical concerns. As a result, no definitive conclu-
+by the vibration and movement of the keys. They noted that it                          sions can be drawn regarding children with learning disabilities
+
+===== PDF PAGE 6 / 7 =====
+TEI ’25, March 04–07, 2025, Bordeaux / Talence, France                                                   Zita Willems, Louise Cuypers, Ingmar Ivo P. Malfait, and Luc Geurts
+
+
+and motor disorders. In the future, we hope to conduct a user eval-                       [12] Kieran Hicks, Patrick Dickinson, Jussi Holopainen, and Kathrin Maria Gerling.
+uation with children with learning disabilities and motor disorders                            2018. Good Game Feel: An Empirically Grounded Framework for Juicy Design.
+                                                                                               In DiGRA Conference. https://api.semanticscholar.org/CorpusID:55153055
+to assess the effect of the juicy haptics enhanced keyboard on their                      [13] Kieran Hicks, Kathrin Gerling, Patrick Dickinson, and Vero Vanden Abeele.
+motivation and learning process.                                                               2019. Juicy Game Design: Understanding the Impact of Visual Embellishments
+                                                                                               on Player Experience. In Proceedings of the Annual Symposium on Computer-
+                                                                                               Human Interaction in Play (, Barcelona, Spain,) (CHI PLAY ’19). Association for
+8    Conclusion                                                                                Computing Machinery, New York, NY, USA, 185–197. https://doi.org/10.1145/
+                                                                                               3311350.3347171
+This study explores how juicy haptics can be integrated into a key-                       [14] Kieran Hicks, Kathrin Gerling, Graham Richardson, Tom Pike, Oliver Burman,
+                                                                                               and Patrick Dickinson. 2019. Understanding the Effects of Gamification and
+board to facilitate the learning of touch-typing for children with                             Juiciness on Players. In IEEE CoG 2019 Proceedings. 1–8. https://doi.org/10.1109/
+learning disabilities and motor disorders. An iterative design ap-                             CIG.2019.8848105
+proach was adopted in collaboration with experts of TypWind. Juicy                        [15] Eva Hornecker and Jacob Buur. 2006. Getting a grip on tangible interaction: a
+                                                                                               framework on physical space and social interaction. In Proceedings of the SIGCHI
+haptics are implemented through two haptic feedback mechanisms,                                Conference on Human Factors in Computing Systems (Montréal, Québec, Canada)
+vibration and movement, which provide continuous and immediate                                 (CHI ’06). Association for Computing Machinery, New York, NY, USA, 437–446.
+feedback after each correctly typed letter. Additionally, the key-                             https://doi.org/10.1145/1124772.1124838
+                                                                                          [16] Interhaptics. 2022. Interhaptics - What Is Haptics?
+board makes a wave motion upon completing a typing exercise to                            [17] Aloys Iyamuremye, Mr. Ezechiel Nsabayezu, Agnes Mbonyiryivuze, and Jean
+highlight this achievement.                                                                    Mbonyubwabo. 2023. Technology as a tool for assisting students with special
+                                                                                               educational needs to learn and like mathematics and science: a literature review.
+   In conclusion, juicy haptics show promise in creating a pleasant                            Journal of Classroom Practices 2 (01 2023), 1–16. https://doi.org/10.58197/prbl/
+and stimulating experience for children with learning disabilities                             KPOD5954
+and motor disorders as they learn to touch-type. Although the                             [18] Dominic Kao. 2020. The effects of juiciness in an action RPG. Entertainment
+                                                                                               Computing 34 (2020). https://doi.org/10.1016/j.entcom.2020.100359
+prototype was not tested with the intended end users, a preliminary                       [19] Kensington. 2023.          Keyboards unplugged: Exploring the differences
+evaluation with non-disabled adults suggests that juicy haptics,                               between mechanical, membrane, and scissor frame 2023.                       https:
+implemented as vibration and movement, can enhance the overall                                 //www.kensington.com/news/ergonomic-workspace-blog/differences-
+                                                                                               between-mechanical-membrane-and-scissor-frame-keyboards/
+typing experience.                                                                        [20] Keychron. [n. d.]. Keychron Mechanical Switch – Keychron | Mechanical Key-
+                                                                                               boards for Mac, Windows and Android. https://www.keychron.com/products/
+                                                                                               keychron-mechanical-switch-set
+Acknowledgments                                                                           [21] Jin Ryong Kim and Hong Z. Tan. 2014. Haptic Feedback Intensity Affects Touch
+                                                                                               Typing Performance on a Flat Keyboard. In Haptics: Neuroscience, Devices, Model-
+We would like to thank Windekind, particularly the experts of Typ-                             ing, and Applications, Malika Auvray and Christian Duriez (Eds.). Springer Berlin
+Wind, for making this research possible. Thanks to their interviews,                           Heidelberg, Berlin, Heidelberg, 369–375.
+                                                                                          [22] Jin Ryong Kim and Hong Z. Tan. 2014. A Study of Touch Typing Performance
+we received valuable feedback on both our paper and technical pro-                             with Keyclick Feedback. In 2014 IEEE Haptics Symposium (HAPTICS). 227–233.
+totypes. We also extend our gratitude to the children who provided                             https://doi.org/10.1109/HAPTICS.2014.6775459
+us with insight into their learning process.                                              [23] David Kirsh. 2013. Embodied Cognition and the Magical Future of Interaction
+                                                                                               Design. ACM Transactions on Computer-Human Interaction 20 (03 2013). https:
+                                                                                               //doi.org/10.1145/2442106.2442109
+                                                                                          [24] Lenovo. [n. d.]. Mechanical vs Membrane Keyboard Can I Use a Membrane
+References                                                                                     Keyboard for Gaming ? | Lenovo US. https://www.lenovo.com/us/en/glossary/
+ [1] Adafruit. 2018. Adafruit_matrixkeypad — Adafruit MatrixKeypad Library 1.0                 mechanical-vs-membrane-keyboard/
+     documentation. Adafruit. https://docs.circuitpython.org/projects/matrixkeypad/       [25] Cuypers Louise and Willems Zita. 2024. First meeting with experts of TypWind.
+     en/latest/api.html                                                                        Interview by Louise Cuypers and Zita Willems..
+ [2] Adafruit. 2023. Adafruit_motor.Motor — Adafruit Motor Library 1.0 Documen-           [26] Cuypers Louise and Willems Zita. 2024. Formative evaluation with experts of
+     tation. Adafruit. https://docs.circuitpython.org/projects/motor/en/latest/\api.           TypWind. Interview by Louise Cuypers and Zita Willems..
+     html#adafruit_motor.servo.Servo                                                      [27] Cuypers Louise and Willems Zita. 2024. Summative evaluation with experts of
+ [3] Adafruit 2024. Introduction — Adafruit PCA9685 Library 1.0 Documentation.                 TypWind. Interview by Louise Cuypers and Zita Willems..
+     Adafruit. https://docs.circuitpython.org/projects/pca9685/en/\latest/index.html      [28] Cuypers Louise and Willems Zita. 2024. Summative evaluation with subjects.
+ [4] Fernando Andrade, Riichiro Mizoguchi, and Seiji Isotani. 2016. The Bright and             Interview by Louise Cuypers and Zita Willems..
+     Dark Sides of Gamification, In Proceedings of the International Conference on        [29] Zhaoyuan Ma, Darren Edge, Leah Findlater, and Hong Z. Tan. 2015. Haptic
+     Intelligent Tutoring Systems. Lecture Notes in Computer Science 9684, 1–11.               keyclick feedback improves typing speed and reduces typing errors on a flat
+     https://doi.org/10.1007/978-3-319-39583-8_17                                              keyboard. In 2015 IEEE World Haptics Conference (WHC). 220–227. https://doi.
+ [5] Jeffery Bausch. 2011. Mechanical-Switch Keyboards vs. Membrane-Keyboards.                 org/10.1109/WHC.2015.7177717
+ [6] Ian Bogost. 2015. Why Gamification is Bullshit. The Gameful World, 65–80.            [30] Jenni Majuri, Jonna Koivisto, and Juho Hamari. 2018. Gamification of Educa-
+     https://doi.org/10.7551/mitpress/9788.003.0005                                            tion and Learning: A Review of Empirical Literature.. In Proceedings of the 2nd
+ [7] Dyspraxis. 2016. Hulpmiddelen. https://dyspraxis.be/hulpmiddelen/                         International GamiFIN Conference.
+ [8] Shariff Faleel, Ys Liu, Roya Cody, Bradley Rey, Linghao Du, Jiangyue Yu, Da-Yuan     [31] Jonatan Martin Escorcia Hernández and Hipólito Aguilar Sierra. 2023. Haptics -
+     Huang, Pourang Irani, and Wei Li. 2023. T-Force: Exploring the Use of Typing              an overview. ScienceDirect Topics (2023), 1–50. https://www.sciencedirect.com/
+     Force for Three State Virtual Keyboards. In Proceedings of the 2023 CHI Conference        science/article/pii/B978032396101100008X
+     on Human Factors in Computing Systems. 1–15. https://doi.org/10.1145/3544548.        [32] Heiko Müller, Anastasia Kazakova, Martin Pielot, Wilko Heuten, and Susanne
+     3580915                                                                                   Boll. 2013. Ambient Timer–Unobtrusively Reminding Users of Upcoming Tasks
+ [9] Kin Fung, Katja Rogers, Stuart Hallifax, Gabrielle Woodside, Daniel Vogel, and            with Ambient Light. In Proceedings of the 14th IFIP TC 13 International Conference
+     Lennart Nacke. 2022. LightPlay: Using an External Ambient Lighting Strip for              Human-Computer Interaction. https://doi.org/10.1007/978-3-642-40483-2_15
+     Video Game Indicators. Proceedings of the ACM on Human-Computer Interaction          [33] Elias Parker. 2013. How to Design for the Gut.
+     6 (10 2022), 1–22. https://doi.org/10.1145/3549504                                   [34] Anna Pereira, David Lee, Harini Sadeeshkumar, Charles Laroche, Dan Odell,
+[10] Markus Funk, Juana Heusler, Elif Akcay, Klaus Weiland, and Albrecht Schmidt.              and David Rempel. 2013. The Effect of Keyboard Key Spacing on Typing Speed,
+     2016. Haptic, Auditory, or Visual? Towards Optimal Error Feedback at Manual               Error, Usability, and Biomechanics: Part 1. Human factors 55 (June 2013), 557–66.
+     Assembly Workplaces. In Proceedings of the 9th ACM International Conference on            https://doi.org/10.1177/0018720812465005
+     PErvasive Technologies Related to Assistive Environments (Corfu, Island, Greece)     [35] HarperCollins Publishers. [n. d.]. The American Heritage Dictionary entry:
+     (PETRA ’16). Association for Computing Machinery, New York, NY, USA, Article              feedback. https://www.ahdictionary.com/word/search.html?q=feedback
+     43, 6 pages. https://doi.org/10.1145/2910674.2910683                                 [36] Python 2024. Tkinter — Python Interface to Tcl/Tk. Python. https://docs.python.
+[11] Yoël Groenhof. 2021. Mechanisch vs Membraan. https://clickeys.nl/nl-be/blogs/             org/3/library/tkinter.html
+     blog/mechanisch-vs-membraan
+
+===== PDF PAGE 7 / 7 =====
+A Juicy Haptics Enhanced Keyboard for a Touch-Typing Course for Learning Disabled Children                             TEI ’25, March 04–07, 2025, Bordeaux / Talence, France
+
+
+[37] Majken Rasmussen, Esben Pedersen, Marianne Petersen, and Kasper Hornbæk.            [45] Karen Vanderloock, Vero Vanden Abeele, Johan Suykens, and Luc Geurts.
+     2012. Shape-changing interfaces: A review of the design space and open research          2013. The Skweezee System: Enabling the design and the programming of
+     questions. Conference on Human Factors in Computing Systems - Proceedings (05            squeeze interactions, In Proceedings of the 26th annual ACM symposium on
+     2012). https://doi.org/10.1145/2207676.2207781                                           User interface software and technology. UIST 2013 - Proceedings of the 26th
+[38] Raspverry Pi 2024. Datasheet Raspberry Pi 4 Model B. Raspverry Pi. https:                Annual ACM Symposium on User Interface Software and Technology, 521–530.
+     //datasheets.raspberrypi.com/rpi4/raspberry-pi-4-datasheet.pdf Release 1.1.              https://doi.org/10.1145/2501988.2502033
+[39] Gloria Rebello. 2021. Use of Assistive Technology, the keyboard as an alternative   [46] Windekind vzw. [n. d.]. TYPWIND TWEEHANDIG TYPEN Les 1: Linkerhand:
+     pencil in the special education class room: An Investigative Study.        https:        basisrij + bovenste rij.
+     //bspace.buid.ac.ae/items/447871b1-fff1-42e3-8bfd-9b11eab7db08/full                 [47] H. Weigelt Marom and N. Weintraub. 2015. The effect of a touch-typing program
+[40] Prof.dr.ir Carlos Rodriguez-Guerrero. 2024. Haptics in XR.                               on keyboarding skills of higher education students with and without learning
+[41] Tanay Singhal and Oliver Schneider. 2021. Juicy Haptic Design: Vibrotactile              disabilities. Research in Developmental Disabilities 47 (2015), 208–217. https:
+     Embellishments Can Improve Player Experience in Games. In Proceedings of                 //doi.org/10.1016/j.ridd.2015.09.014
+     the 2021 CHI Conference on Human Factors in Computing Systems (CHI ’21).            [48] Hayley Weigelt-Marom and Naomi Weintraub. 2018. Keyboarding versus hand-
+     Association for Computing Machinery, New York, NY, USA, 1–11. https:                     writing speed of higher education students with and without learning disabilities:
+     //doi.org/10.1145/3411764.3445463                                                        Does touch-typing assist in narrowing the gap? Computers & Education 117
+[42] Rodrigo Smiderle, Sandro Rigo, Leonardo Marques, Jorge Coelho, and Patricia              (2018), 132–140. https://doi.org/10.1016/j.compedu.2017.10.008
+     Jaques. 2020. The impact of gamification on students’ learning, engagement and      [49] S. A. G. Wensveen, J. P. Djajadiningrat, and C. J. Overbeeke. 2004. Interaction
+     behavior based on their personality traits. Smart Learning Environments 7 (01            Frogger: A Design Framework to Couple Action and Function through Feedback
+     2020). https://doi.org/10.1186/s40561-019-0098-x                                         and Feedforward. In Proceedings of the 5th Conference on Designing Interactive
+[43] Kevin Townsend. 2024. Adafruit 16 Channel Servo Driver with Raspberry Pi.                Systems: Processes, Practices, Methods, and Techniques. ACM, Cambridge MA USA,
+     Adafruit. https://learn.adafruit.com/adafruit-16-channel-servo-driver-with-              177–184. https://doi.org/10.1145/1013115.1013140
+     raspberry-pi/using-the-adafruit-library                                             [50] Windekind. [n. d.]. Windekind Vzw | Centrum Voor Bijzondere Zorg. https:
+[44] Typ10. [n. d.]. 10 tips om élk kind blind te leren typen! https://typ10.com/nl/          //www.windekindleuven.be/
+     10tipsbe

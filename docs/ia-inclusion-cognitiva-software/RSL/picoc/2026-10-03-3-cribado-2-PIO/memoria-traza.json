@@ -1,0 +1,1072 @@
+{
+  "carpeta": "docs/ia-inclusion-cognitiva-software/RSL/picoc/2026-10-03-3-cribado-2-PIO",
+  "graph": "docs/ia-inclusion-cognitiva-software/RSL/picoc/2026-10-03-3-cribado-2-PIO/graphify-out/graph.json",
+  "nodes": 6326,
+  "updated_at": "2026-10-03T18:26:10",
+  "ids": {
+    "R003": {
+      "pdf": "docs/pdf/R003-from-granular-grief-to-binary-belief-a-collaborative-optimization-of-annotation-.pdf",
+      "md": "docs/md/R003-from-granular-grief-to-binary-belief-a-collaborative-optimization-of-annotation-.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R016": {
+      "pdf": "docs/pdf/R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l.pdf",
+      "md": "docs/md/R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R030": {
+      "pdf": "docs/pdf/R030-from-exclusion-to-empowerment-redesigning-e-learning-to-mitigate-risks-for-disab.pdf",
+      "md": "docs/md/R030-from-exclusion-to-empowerment-redesigning-e-learning-to-mitigate-risks-for-disab.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R040": {
+      "pdf": "docs/pdf/R040-an-intelligent-assistive-system-for-autistic-learners.pdf",
+      "md": "docs/md/R040-an-intelligent-assistive-system-for-autistic-learners.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R047": {
+      "pdf": "docs/pdf/R047-online-coding-of-the-brief-observation-of-social-communication-change-boscc-to-c.pdf",
+      "md": "docs/md/R047-online-coding-of-the-brief-observation-of-social-communication-change-boscc-to-c.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R058": {
+      "pdf": "docs/pdf/R058-design-and-evaluation-of-a-rule-based-expert-system-for-early-screening-of-learn.pdf",
+      "md": "docs/md/R058-design-and-evaluation-of-a-rule-based-expert-system-for-early-screening-of-learn.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R093": {
+      "pdf": "docs/pdf/R093-iris-a-content-management-system-supporting-typography-and-accessibility.pdf",
+      "md": "docs/md/R093-iris-a-content-management-system-supporting-typography-and-accessibility.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R106": {
+      "pdf": "docs/pdf/R106-ateca-a-web-application-to-facilitate-easy-to-read-adaptations-ateca-una-aplicac.pdf",
+      "md": "docs/md/R106-ateca-a-web-application-to-facilitate-easy-to-read-adaptations-ateca-una-aplicac.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R123": {
+      "pdf": "docs/pdf/R123-cnreader-a-reading-practice-tool-designed-for-chinese-children-with-developmenta.pdf",
+      "md": "docs/md/R123-cnreader-a-reading-practice-tool-designed-for-chinese-children-with-developmenta.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R145": {
+      "pdf": "docs/pdf/R145-a-user-centred-approach-to-enhancing-engagement-and-task-management-for-adhd-stu.pdf",
+      "md": "docs/md/R145-a-user-centred-approach-to-enhancing-engagement-and-task-management-for-adhd-stu.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R147": {
+      "pdf": "docs/pdf/R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf",
+      "md": "docs/md/R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R151": {
+      "pdf": "docs/pdf/R151-understanding-end-user-contexts-and-identifying-design-preferences-of-an-artific.pdf",
+      "md": "docs/md/R151-understanding-end-user-contexts-and-identifying-design-preferences-of-an-artific.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R162": {
+      "pdf": "docs/pdf/R162-designing-and-implementing-smile-an-ai-driven-platform-for-enhancing-clinical-de.pdf",
+      "md": "docs/md/R162-designing-and-implementing-smile-an-ai-driven-platform-for-enhancing-clinical-de.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R170": {
+      "pdf": "docs/pdf/R170-seekpcmdb-knowledge-on-disease-associated-protein-coding-mutations.pdf",
+      "md": "docs/md/R170-seekpcmdb-knowledge-on-disease-associated-protein-coding-mutations.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R171": {
+      "pdf": "docs/pdf/R171-real-time-word-level-temporal-segmentation-in-streaming-speech-recognition.pdf",
+      "md": "docs/md/R171-real-time-word-level-temporal-segmentation-in-streaming-speech-recognition.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R173": {
+      "pdf": "docs/pdf/R173-triple-shield-privacy-in-healthcare-federated-learning-p-abcs-and-distributed-le.pdf",
+      "md": "docs/md/R173-triple-shield-privacy-in-healthcare-federated-learning-p-abcs-and-distributed-le.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R177": {
+      "pdf": "docs/pdf/R177-beach-gaze-supporting-descriptive-and-predictive-gaze-analytics-in-the-era-of-ar.pdf",
+      "md": "docs/md/R177-beach-gaze-supporting-descriptive-and-predictive-gaze-analytics-in-the-era-of-ar.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R183": {
+      "pdf": "docs/pdf/R183-using-ai-to-enhance-healthcare-resource-management-and-allocation-a-focus-on-the.pdf",
+      "md": "docs/md/R183-using-ai-to-enhance-healthcare-resource-management-and-allocation-a-focus-on-the.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R187": {
+      "pdf": "docs/pdf/R187-understanding-human-ai-misalignment-in-llm-based-job-seeking-support-for-neurodi.pdf",
+      "md": "docs/md/R187-understanding-human-ai-misalignment-in-llm-based-job-seeking-support-for-neurodi.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R193": {
+      "pdf": "docs/pdf/R193-you-re-not-listening-llm-smart-speakers-need-to-learn-when-to-shut-up.pdf",
+      "md": "docs/md/R193-you-re-not-listening-llm-smart-speakers-need-to-learn-when-to-shut-up.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R197": {
+      "pdf": "docs/pdf/R197-a-collaborative-approach-to-the-evaluation-of-cognitive-accessibility-of-a-conve.pdf",
+      "md": "docs/md/R197-a-collaborative-approach-to-the-evaluation-of-cognitive-accessibility-of-a-conve.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R199": {
+      "pdf": "docs/pdf/R199-an-app-that-truly-works-for-us-co-designing-a-mobile-health-intervention-to-supp.pdf",
+      "md": "docs/md/R199-an-app-that-truly-works-for-us-co-designing-a-mobile-health-intervention-to-supp.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R203": {
+      "pdf": "docs/pdf/R203-lingolift-supporting-educators-in-personalized-oral-language-teaching-for-autist.pdf",
+      "md": "docs/md/R203-lingolift-supporting-educators-in-personalized-oral-language-teaching-for-autist.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R208": {
+      "pdf": "docs/pdf/R208-mtcai-leveraging-ai-to-simplify-medical-reports-for-adults-with-intellectual-and.pdf",
+      "md": "docs/md/R208-mtcai-leveraging-ai-to-simplify-medical-reports-for-adults-with-intellectual-and.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R219": {
+      "pdf": "docs/pdf/R219-accessible-application-prototype-for-improving-digital-reading-in-people-with-dy.pdf",
+      "md": "docs/md/R219-accessible-application-prototype-for-improving-digital-reading-in-people-with-dy.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R227": {
+      "pdf": "docs/pdf/R227-designing-tangible-user-interfaces-for-neurodiversity-a-focus-on-dyslexia-friend.pdf",
+      "md": "docs/md/R227-designing-tangible-user-interfaces-for-neurodiversity-a-focus-on-dyslexia-friend.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R228": {
+      "pdf": null,
+      "md": null,
+      "status": "pendiente",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": false,
+      "integrity_errors": []
+    },
+    "R233": {
+      "pdf": "docs/pdf/R233-plantea-wm-a-multi-user-web-platform-for-routine-planning-and-anticipating-every.pdf",
+      "md": "docs/md/R233-plantea-wm-a-multi-user-web-platform-for-routine-planning-and-anticipating-every.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R234": {
+      "pdf": null,
+      "md": null,
+      "status": "pendiente",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": false,
+      "integrity_errors": []
+    },
+    "R239": {
+      "pdf": "docs/pdf/R239-towards-inclusive-reading-a-neural-text-generation-framework-for-dyslexia-access.pdf",
+      "md": "docs/md/R239-towards-inclusive-reading-a-neural-text-generation-framework-for-dyslexia-access.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R246": {
+      "pdf": "docs/pdf/R246-a-novel-fuzzy-logic-system-for-real-time-text-difficulty-assessment-in-mobile-re.pdf",
+      "md": "docs/md/R246-a-novel-fuzzy-logic-system-for-real-time-text-difficulty-assessment-in-mobile-re.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R263": {
+      "pdf": "docs/pdf/R263-design-and-implementation-of-a-voice-based-electronic-results-system-for-physica.pdf",
+      "md": "docs/md/R263-design-and-implementation-of-a-voice-based-electronic-results-system-for-physica.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R264": {
+      "pdf": "docs/pdf/R264-design-and-evaluation-of-a-generative-artificial-intelligence-based-tool-for-stu.pdf",
+      "md": "docs/md/R264-design-and-evaluation-of-a-generative-artificial-intelligence-based-tool-for-stu.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R285": {
+      "pdf": "docs/pdf/R285-emotion-aware-text-simplification-of-user-generated-content-using-llms.pdf",
+      "md": "docs/md/R285-emotion-aware-text-simplification-of-user-generated-content-using-llms.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R286": {
+      "pdf": "docs/pdf/R286-an-augmented-reality-and-ai-based-system-for-contextual-appliance-guidance-impli.pdf",
+      "md": "docs/md/R286-an-augmented-reality-and-ai-based-system-for-contextual-appliance-guidance-impli.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R293": {
+      "pdf": "docs/pdf/R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap.pdf",
+      "md": "docs/md/R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R296": {
+      "pdf": "docs/pdf/R296-including-people-in-the-automatic-text-adaptation-process-empirical-findings-fro.pdf",
+      "md": "docs/md/R296-including-people-in-the-automatic-text-adaptation-process-empirical-findings-fro.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R299": {
+      "pdf": "docs/pdf/R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.pdf",
+      "md": "docs/md/R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R300": {
+      "pdf": "docs/pdf/R300-development-and-usability-of-a-mobile-artificial-intelligence-platform-for-the-m.pdf",
+      "md": "docs/md/R300-development-and-usability-of-a-mobile-artificial-intelligence-platform-for-the-m.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R306": {
+      "pdf": null,
+      "md": null,
+      "status": "pendiente",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": false,
+      "integrity_errors": []
+    },
+    "R311": {
+      "pdf": null,
+      "md": null,
+      "status": "pendiente",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": false,
+      "integrity_errors": []
+    },
+    "R317": {
+      "pdf": "docs/pdf/R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.pdf",
+      "md": "docs/md/R317-interactive-intent-based-image-recommendations-for-assistive-communication-insig.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R327": {
+      "pdf": "docs/pdf/R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf",
+      "md": "docs/md/R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R337": {
+      "pdf": "docs/pdf/R337-towards-designing-a-set-of-usability-and-accessibility-heuristics-focused-on-cog.pdf",
+      "md": "docs/md/R337-towards-designing-a-set-of-usability-and-accessibility-heuristics-focused-on-cog.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R338": {
+      "pdf": "docs/pdf/R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.pdf",
+      "md": "docs/md/R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R345": {
+      "pdf": "docs/pdf/R345-human-centered-ai-for-inclusive-tourism-enhancing-travel-planning-for-adults-wit.pdf",
+      "md": "docs/md/R345-human-centered-ai-for-inclusive-tourism-enhancing-travel-planning-for-adults-wit.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R347": {
+      "pdf": "docs/pdf/R347-scaffolding-metacognition-with-genai-exploring-design-opportunities-to-support-t.pdf",
+      "md": "docs/md/R347-scaffolding-metacognition-with-genai-exploring-design-opportunities-to-support-t.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R356": {
+      "pdf": "docs/pdf/R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.pdf",
+      "md": "docs/md/R356-llm-guided-image-recommendation-for-supporting-intent-understanding-in-non-verba.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R360": {
+      "pdf": "docs/pdf/R360-towards-a-technology-that-improves-focus-comprehension-and-retention-in-e-learni.pdf",
+      "md": "docs/md/R360-towards-a-technology-that-improves-focus-comprehension-and-retention-in-e-learni.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R369": {
+      "pdf": "docs/pdf/R369-ai-driven-interpretation-of-nonverbal-communication-in-ar-enhanced-real-time-cap.pdf",
+      "md": "docs/md/R369-ai-driven-interpretation-of-nonverbal-communication-in-ar-enhanced-real-time-cap.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R376": {
+      "pdf": "docs/pdf/R376-teaching-spell-checkers-to-teach-pedagogical-program-synthesis-for-interactive-l.pdf",
+      "md": "docs/md/R376-teaching-spell-checkers-to-teach-pedagogical-program-synthesis-for-interactive-l.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R377": {
+      "pdf": "docs/pdf/R377-ai-based-q-learning-model-for-personalized-learning-strategies-for-students-with.pdf",
+      "md": "docs/md/R377-ai-based-q-learning-model-for-personalized-learning-strategies-for-students-with.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R378": {
+      "pdf": "docs/pdf/R378-why-students-leave-the-lms-executive-function-demands-and-self-regulated-learnin.pdf",
+      "md": "docs/md/R378-why-students-leave-the-lms-executive-function-demands-and-self-regulated-learnin.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R391": {
+      "pdf": "docs/pdf/R391-simple-text-a-tool-for-the-automatic-transformation-of-spanish-texts-into-easy-t.pdf",
+      "md": "docs/md/R391-simple-text-a-tool-for-the-automatic-transformation-of-spanish-texts-into-easy-t.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R393": {
+      "pdf": "docs/pdf/R393-i-can-do-it-exploring-voice-assistants-for-adults-with-intellectual-disabilities.pdf",
+      "md": "docs/md/R393-i-can-do-it-exploring-voice-assistants-for-adults-with-intellectual-disabilities.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R394": {
+      "pdf": "docs/pdf/R394-co-design-and-feasibility-testing-of-an-ai-based-virtual-reality-application-to-.pdf",
+      "md": "docs/md/R394-co-design-and-feasibility-testing-of-an-ai-based-virtual-reality-application-to-.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R396": {
+      "pdf": "docs/pdf/R396-ai-enhanced-human-machine-collaboration-for-supporting-workers-with-mathematical.pdf",
+      "md": "docs/md/R396-ai-enhanced-human-machine-collaboration-for-supporting-workers-with-mathematical.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R398": {
+      "pdf": "docs/pdf/R398-a-deepseek-cross-modal-platform-for-personalized-art-education-in-autism-spectru.pdf",
+      "md": "docs/md/R398-a-deepseek-cross-modal-platform-for-personalized-art-education-in-autism-spectru.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R399": {
+      "pdf": "docs/pdf/R399-llm-driven-accessible-interface-a-model-based-approach.pdf",
+      "md": "docs/md/R399-llm-driven-accessible-interface-a-model-based-approach.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R401": {
+      "pdf": "docs/pdf/R401-the-ai-scaffold-and-engagement-spectrum-as-a-novel-udl-aligned-system-for-suppor.pdf",
+      "md": "docs/md/R401-the-ai-scaffold-and-engagement-spectrum-as-a-novel-udl-aligned-system-for-suppor.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R403": {
+      "pdf": "docs/pdf/R403-interaction-design-of-asd-children-s-online-health-community-based-on-social-net.pdf",
+      "md": "docs/md/R403-interaction-design-of-asd-children-s-online-health-community-based-on-social-net.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R425": {
+      "pdf": "docs/pdf/R425-gathering-requirements-for-stress-management-in-autistic-adults-for-the-developm.pdf",
+      "md": "docs/md/R425-gathering-requirements-for-stress-management-in-autistic-adults-for-the-developm.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R433": {
+      "pdf": "docs/pdf/R433-large-language-modelassisted-annotation-framework-for-cross-platform-analysis-of.pdf",
+      "md": "docs/md/R433-large-language-modelassisted-annotation-framework-for-cross-platform-analysis-of.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R440": {
+      "pdf": "docs/pdf/R440-exploring-ai-technology-in-grammar-performance-testing-for-children-with-learnin.pdf",
+      "md": "docs/md/R440-exploring-ai-technology-in-grammar-performance-testing-for-children-with-learnin.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R445": {
+      "pdf": "docs/pdf/R445-fuzzy-based-sensor-fusion-for-cognitive-load-assessment-in-inclusive-manufacturi.pdf",
+      "md": "docs/md/R445-fuzzy-based-sensor-fusion-for-cognitive-load-assessment-in-inclusive-manufacturi.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R450": {
+      "pdf": null,
+      "md": null,
+      "status": "pendiente",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": false,
+      "integrity_errors": []
+    },
+    "R453": {
+      "pdf": "docs/pdf/R453-ai-autism-and-the-architecture-of-voice-from-engineered-exclusion-to-designed-di.pdf",
+      "md": "docs/md/R453-ai-autism-and-the-architecture-of-voice-from-engineered-exclusion-to-designed-di.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R457": {
+      "pdf": "docs/pdf/R457-adapt-an-agentic-ai-framework-for-people-with-disabilities-and-neurodivergence.pdf",
+      "md": "docs/md/R457-adapt-an-agentic-ai-framework-for-people-with-disabilities-and-neurodivergence.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R461": {
+      "pdf": "docs/pdf/R461-enhancing-adaptive-personalized-learning-interfaces-with-generative-ai-for-indiv.pdf",
+      "md": "docs/md/R461-enhancing-adaptive-personalized-learning-interfaces-with-generative-ai-for-indiv.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R463": {
+      "pdf": "docs/pdf/R463-a-machine-learning-based-classification-model-to-support-university-students-wit.pdf",
+      "md": "docs/md/R463-a-machine-learning-based-classification-model-to-support-university-students-wit.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R473": {
+      "pdf": "docs/pdf/R473-a-low-resource-speech-driven-nlp-pipeline-for-sinhala-dyslexia-assistance.pdf",
+      "md": "docs/md/R473-a-low-resource-speech-driven-nlp-pipeline-for-sinhala-dyslexia-assistance.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R482": {
+      "pdf": null,
+      "md": null,
+      "status": "pendiente",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": false,
+      "integrity_errors": []
+    },
+    "R490": {
+      "pdf": "docs/pdf/R490-a-juicy-haptics-enhanced-keyboard-for-a-touch-typing-course-for-learning-disable.pdf",
+      "md": "docs/md/R490-a-juicy-haptics-enhanced-keyboard-for-a-touch-typing-course-for-learning-disable.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R493": {
+      "pdf": "docs/pdf/R493-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf",
+      "md": "docs/md/R493-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R495": {
+      "pdf": "docs/pdf/R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf",
+      "md": "docs/md/R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R497": {
+      "pdf": null,
+      "md": null,
+      "status": "pendiente",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": false,
+      "integrity_errors": []
+    },
+    "R504": {
+      "pdf": "docs/pdf/R504-pictalky-augmentative-and-alternative-communication-for-language-developmental-d.pdf",
+      "md": "docs/md/R504-pictalky-augmentative-and-alternative-communication-for-language-developmental-d.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R520": {
+      "pdf": "docs/pdf/R520-buddy-a-personal-companion-to-match-people-with-cognitive-disabilities-and-at.pdf",
+      "md": "docs/md/R520-buddy-a-personal-companion-to-match-people-with-cognitive-disabilities-and-at.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R522": {
+      "pdf": "docs/pdf/R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf",
+      "md": "docs/md/R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R527": {
+      "pdf": "docs/pdf/R527-enabling-secure-and-inclusive-education-for-students-with-disabilities-and-ensur.pdf",
+      "md": "docs/md/R527-enabling-secure-and-inclusive-education-for-students-with-disabilities-and-ensur.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R529": {
+      "pdf": null,
+      "md": null,
+      "status": "pendiente",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": false,
+      "integrity_errors": []
+    },
+    "R538": {
+      "pdf": "docs/pdf/R538-drawing-interpretation-using-neural-networks-and-accessibility-implementation-in.pdf",
+      "md": "docs/md/R538-drawing-interpretation-using-neural-networks-and-accessibility-implementation-in.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R539": {
+      "pdf": "docs/pdf/R539-ai-supported-ui-design-for-enhanced-development-of-neurodiverse-friendly-it-syst.pdf",
+      "md": "docs/md/R539-ai-supported-ui-design-for-enhanced-development-of-neurodiverse-friendly-it-syst.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R549": {
+      "pdf": "docs/pdf/R549-easier-corpus-a-lexical-simplification-resource-for-people-with-cognitive-impair.pdf",
+      "md": "docs/md/R549-easier-corpus-a-lexical-simplification-resource-for-people-with-cognitive-impair.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R559": {
+      "pdf": "docs/pdf/R559-effects-of-walking-speed-on-the-classification-of-gait-patterns-in-children-with.pdf",
+      "md": "docs/md/R559-effects-of-walking-speed-on-the-classification-of-gait-patterns-in-children-with.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R565": {
+      "pdf": "docs/pdf/R565-writing-analytics-and-ai-for-special-education-preliminary-results-on-students-w.pdf",
+      "md": "docs/md/R565-writing-analytics-and-ai-for-special-education-preliminary-results-on-students-w.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R566": {
+      "pdf": "docs/pdf/R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf",
+      "md": "docs/md/R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R567": {
+      "pdf": null,
+      "md": null,
+      "status": "pendiente",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": false,
+      "integrity_errors": []
+    },
+    "R568": {
+      "pdf": "docs/pdf/R568-development-of-an-alcohol-refusal-training-in-immersive-virtual-reality-for-pati.pdf",
+      "md": "docs/md/R568-development-of-an-alcohol-refusal-training-in-immersive-virtual-reality-for-pati.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R571": {
+      "pdf": null,
+      "md": null,
+      "status": "pendiente",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": false,
+      "integrity_errors": []
+    },
+    "R577": {
+      "pdf": null,
+      "md": null,
+      "status": "pendiente",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": false,
+      "integrity_errors": []
+    },
+    "R581": {
+      "pdf": "docs/pdf/R581-lampost-ai-writing-assistance-for-adults-with-dyslexia-using-large-language-mode.pdf",
+      "md": "docs/md/R581-lampost-ai-writing-assistance-for-adults-with-dyslexia-using-large-language-mode.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R582": {
+      "pdf": "docs/pdf/R582-cwitr-a-corpus-for-automatic-complex-word-identification-in-turkish-texts.pdf",
+      "md": "docs/md/R582-cwitr-a-corpus-for-automatic-complex-word-identification-in-turkish-texts.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R583": {
+      "pdf": "docs/pdf/R583-design-of-generative-multimodal-ai-agents-to-enable-persons-with-learning-disabi.pdf",
+      "md": "docs/md/R583-design-of-generative-multimodal-ai-agents-to-enable-persons-with-learning-disabi.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R587": {
+      "pdf": "docs/pdf/R587-first-steps-in-the-development-of-a-support-application-for-easy-to-read-adaptat.pdf",
+      "md": "docs/md/R587-first-steps-in-the-development-of-a-support-application-for-easy-to-read-adaptat.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R588": {
+      "pdf": "docs/pdf/R588-adhd-kg-a-knowledge-graph-of-attention-deficit-hyperactivity-disorder.pdf",
+      "md": "docs/md/R588-adhd-kg-a-knowledge-graph-of-attention-deficit-hyperactivity-disorder.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R595": {
+      "pdf": "docs/pdf/R595-cognitive-simplification-operations-improve-text-simplification.pdf",
+      "md": "docs/md/R595-cognitive-simplification-operations-improve-text-simplification.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R600": {
+      "pdf": "docs/pdf/R600-helping-or-hindering-inclusive-design-of-automated-task-prompting-for-workers-wi.pdf",
+      "md": "docs/md/R600-helping-or-hindering-inclusive-design-of-automated-task-prompting-for-workers-wi.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R604": {
+      "pdf": "docs/pdf/R604-agreement-and-disagreement-between-major-emotion-recognition-systems.pdf",
+      "md": "docs/md/R604-agreement-and-disagreement-between-major-emotion-recognition-systems.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R605": {
+      "pdf": "docs/pdf/R605-beadmuse-ai-enhancing-inclusive-and-independent-crafting-through-adaptive-pixel-.pdf",
+      "md": "docs/md/R605-beadmuse-ai-enhancing-inclusive-and-independent-crafting-through-adaptive-pixel-.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R606": {
+      "pdf": null,
+      "md": null,
+      "status": "pendiente",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": false,
+      "integrity_errors": []
+    },
+    "R617": {
+      "pdf": "docs/pdf/R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf",
+      "md": "docs/md/R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R620": {
+      "pdf": "docs/pdf/R620-interactive-concept-map-based-summaries-for-send-children.pdf",
+      "md": "docs/md/R620-interactive-concept-map-based-summaries-for-send-children.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R623": {
+      "pdf": "docs/pdf/R623-a-reading-comprehension-interface-for-students-with-learning-disorders.pdf",
+      "md": "docs/md/R623-a-reading-comprehension-interface-for-students-with-learning-disorders.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R626": {
+      "pdf": "docs/pdf/R626-which-are-the-needs-of-people-with-learning-disorders-for-inclusive-museums-desi.pdf",
+      "md": "docs/md/R626-which-are-the-needs-of-people-with-learning-disorders-for-inclusive-museums-desi.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R627": {
+      "pdf": "docs/pdf/R627-empowering-children-with-special-needs-cwsn-in-computer-science-an-interactive-h.pdf",
+      "md": "docs/md/R627-empowering-children-with-special-needs-cwsn-in-computer-science-an-interactive-h.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R628": {
+      "pdf": "docs/pdf/R628-maximizing-equitable-reach-and-accessibility-of-etds.pdf",
+      "md": "docs/md/R628-maximizing-equitable-reach-and-accessibility-of-etds.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R630": {
+      "pdf": "docs/pdf/R630-gaze-based-interaction-adaptation-for-people-with-involuntary-head-movements.pdf",
+      "md": "docs/md/R630-gaze-based-interaction-adaptation-for-people-with-involuntary-head-movements.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R643": {
+      "pdf": "docs/pdf/R643-lexical-simplification-system-to-improve-web-accessibility.pdf",
+      "md": "docs/md/R643-lexical-simplification-system-to-improve-web-accessibility.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R647": {
+      "pdf": "docs/pdf/R647-co-design-with-persons-with-disabilities-as-an-innovative-resource-set-free-by-a.pdf",
+      "md": "docs/md/R647-co-design-with-persons-with-disabilities-as-an-innovative-resource-set-free-by-a.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R662": {
+      "pdf": "docs/pdf/R662-use-of-recommendation-models-to-provide-support-to-dyslexic-students.pdf",
+      "md": "docs/md/R662-use-of-recommendation-models-to-provide-support-to-dyslexic-students.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R663": {
+      "pdf": "docs/pdf/R663-diautis-iii-a-fuzzy-and-affective-platform-for-obtaining-autism-mental-models-an.pdf",
+      "md": "docs/md/R663-diautis-iii-a-fuzzy-and-affective-platform-for-obtaining-autism-mental-models-an.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R679": {
+      "pdf": "docs/pdf/R679-ability-motivation-understanding-factors-that-influence-people-with-cognitive-di.pdf",
+      "md": "docs/md/R679-ability-motivation-understanding-factors-that-influence-people-with-cognitive-di.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R691": {
+      "pdf": "docs/pdf/R691-understanding-the-experience-of-neurodivergent-workers-in-image-and-text-data-an.pdf",
+      "md": "docs/md/R691-understanding-the-experience-of-neurodivergent-workers-in-image-and-text-data-an.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R693": {
+      "pdf": "docs/pdf/R693-a-computer-assisted-writing-tool-for-an-extended-variety-of-leichte-sprache-easy.pdf",
+      "md": "docs/md/R693-a-computer-assisted-writing-tool-for-an-extended-variety-of-leichte-sprache-easy.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R705": {
+      "pdf": "docs/pdf/R705-quickpic-aac-an-ai-based-application-to-enable-just-in-time-generation-of-topic-.pdf",
+      "md": "docs/md/R705-quickpic-aac-an-ai-based-application-to-enable-just-in-time-generation-of-topic-.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R708": {
+      "pdf": "docs/pdf/R708-identifying-reading-fluency-in-pupils-with-and-without-dyslexia-using-a-machine-.pdf",
+      "md": "docs/md/R708-identifying-reading-fluency-in-pupils-with-and-without-dyslexia-using-a-machine-.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R710": {
+      "pdf": "docs/pdf/R710-development-and-validation-of-a-rapid-and-precise-online-sentence-reading-effici.pdf",
+      "md": "docs/md/R710-development-and-validation-of-a-rapid-and-precise-online-sentence-reading-effici.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R713": {
+      "pdf": "docs/pdf/R713-co-designing-a-museum-application-with-people-with-intellectual-disabilities-fin.pdf",
+      "md": "docs/md/R713-co-designing-a-museum-application-with-people-with-intellectual-disabilities-fin.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R717": {
+      "pdf": "docs/pdf/R717-development-of-an-interactive-dashboard-for-analyzing-autism-spectrum-disorder-a.pdf",
+      "md": "docs/md/R717-development-of-an-interactive-dashboard-for-analyzing-autism-spectrum-disorder-a.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R721": {
+      "pdf": "docs/pdf/R721-exploring-large-language-models-to-generate-easy-to-read-content.pdf",
+      "md": "docs/md/R721-exploring-large-language-models-to-generate-easy-to-read-content.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R736": {
+      "pdf": "docs/pdf/R736-enabling-text-comprehensibility-assessment-for-people-with-intellectual-disabili.pdf",
+      "md": "docs/md/R736-enabling-text-comprehensibility-assessment-for-people-with-intellectual-disabili.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R745": {
+      "pdf": "docs/pdf/R745-enhancing-home-based-physical-activity-for-neurodivergent-children-adapting-the-.pdf",
+      "md": "docs/md/R745-enhancing-home-based-physical-activity-for-neurodivergent-children-adapting-the-.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R769": {
+      "pdf": "docs/pdf/R769-easy-read-and-large-language-models-on-the-ethical-dimensions-of-llm-based-text-.pdf",
+      "md": "docs/md/R769-easy-read-and-large-language-models-on-the-ethical-dimensions-of-llm-based-text-.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R831": {
+      "pdf": "docs/pdf/R831-triggering-autonomy-not-just-automation-design-implications-for-llm-based-home-a.pdf",
+      "md": "docs/md/R831-triggering-autonomy-not-just-automation-design-implications-for-llm-based-home-a.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R842": {
+      "pdf": "docs/pdf/R842-can-artificial-intelligence-tools-generate-text-that-is-useful-for-reading-pract.pdf",
+      "md": "docs/md/R842-can-artificial-intelligence-tools-generate-text-that-is-useful-for-reading-pract.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R864": {
+      "pdf": "docs/pdf/R864-ai-testing-evaluation-verification-and-validation-for-accessibility-a-comprehens.pdf",
+      "md": "docs/md/R864-ai-testing-evaluation-verification-and-validation-for-accessibility-a-comprehens.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R880": {
+      "pdf": "docs/pdf/R880-creating-an-api-ecosystem-for-assistive-technologies-oriented-to-cognitive-disab.pdf",
+      "md": "docs/md/R880-creating-an-api-ecosystem-for-assistive-technologies-oriented-to-cognitive-disab.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R930": {
+      "pdf": null,
+      "md": null,
+      "status": "pendiente",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": false,
+      "integrity_errors": []
+    },
+    "R977": {
+      "pdf": "docs/pdf/R977-evaluating-plantea-the-practice-of-a-ux-evaluation-methodology-for-people-with-a.pdf",
+      "md": "docs/md/R977-evaluating-plantea-the-practice-of-a-ux-evaluation-methodology-for-people-with-a.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R1061": {
+      "pdf": "docs/pdf/R1061-cogenasd-a-tool-for-the-co-design-and-generation-of-cross-platform-applications-.pdf",
+      "md": "docs/md/R1061-cogenasd-a-tool-for-the-co-design-and-generation-of-cross-platform-applications-.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R1081": {
+      "pdf": "docs/pdf/R1081-udl-and-ai-based-educational-personalization-effects-on-performance-and-self-reg.pdf",
+      "md": "docs/md/R1081-udl-and-ai-based-educational-personalization-effects-on-performance-and-self-reg.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    },
+    "R1104": {
+      "pdf": "docs/pdf/R1104-accessible-augmented-reality-in-sheltered-workshops-a-mixed-methods-evaluation-f.pdf",
+      "md": "docs/md/R1104-accessible-augmented-reality-in-sheltered-workshops-a-mixed-methods-evaluation-f.md",
+      "status": "graphify_indexed",
+      "updated_at": "2026-10-03T18:26:10",
+      "integrity_ok": true,
+      "integrity_errors": []
+    }
+  }
+}

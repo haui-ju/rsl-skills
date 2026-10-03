@@ -1,0 +1,540 @@
+===== PDF PAGE 1 / 8 =====
+                            Proceedings of the Thirty-First International Joint Conference on Artificial Intelligence (IJCAI-22)
+                                                         Special Track on AI for Good (Projects)
+
+
+
+
+                  Interactive Concept-map Based Summaries for SEND Children
+    Martina Galletti1∗ , Michael Anslow1 , Francesca Bianchi2 , Manuela Calanca2,3 , Donatella
+            Tomaiuoli2,3,4 , Remi Van Trijp1 , Diletta Vedovelli2 , Eleonora Pasqua2,3
+                          1
+                            Sony Computer Science Laboratories, Paris, France
+                               2
+                                 CRC - Centro Ricerca e Cura, Rome, Italy
+                                    3
+                                      Sapienza University of Rome, Italy
+                                  4
+                                    Tor Vergata University of Rome, Italy
+                                         martina.galletti@sony.com
+
+                            Abstract                                             the foundation for many facets of daily life in the informa-
+                                                                                 tion age. As the years go by, children diagnosed with read-
+        Equitable and inclusive quality education is a hu-                       ing comprehension falls can improve at the decoding of sin-
+        man right. It is crucial to provide for the learning                     gle words at a functional level, but, in most cases, the over-
+        needs of every child, especially those with learn-                       all process of reading remains often slow, painful and tiring.
+        ing disabilities. Traditional approaches to learn-                       This has repercussions on attention capability and execution
+        ing propose education paths performed with speech                        times and can lead them to drop out of school earlier than
+        therapists. One of the most efficient strategies to                      their peers [Mather et al., 2020].
+        help children with reading comprehension difficul-                          Speech and language pathologists often make use of the
+        ties is the creation of a “concept map”, a structured                    construction of a conceptual map, a structured summary in
+        summary of the written text in a graph structure.                        the form of a graph [Novak and Cañas, 2007], as a way to help
+        Online tools that offer students the possibility to                      these students process information. The active processing of
+        manually create or automatically extract concept                         information, stimulated by the use of their visual representa-
+        maps from text have been created over the years.                         tion, results in non-mnemonic learning of concepts, making
+        However, there is still a shortage of software that                      information stored in long-term memory. This has proven to
+        are specifically designed for children at risk and                       be one of the most efficacious strategies to help these children
+        which produce a concept map that is tailored to                          make sense of written text at any stage of learning [Dexter and
+        the clinical profiles of individuals. In this Project                    Hughes, 2011].
+        Collaboration, we want to tackle this gap by im-                            During Covid-19, the suspension of non-urgent care, in-
+        plementing a multi-modal, online and open-access                         cluding speech and language therapy, had a substantial im-
+        Artificial-Intelligence powered tool that could help                     pact on speech-language pathologist interventions, forcing
+        these children to make sense of written text by en-                      the transition into online therapy practice. This has exposed
+        abling them to interactively create concept maps.                        significant gaps in the speech therapy system, such as the lack
+        The expected output is threefold. We will imple-                         of IT resources or insufficient training, making it difficult to
+        ment a new model for concept-map-based docu-                             keep up with the same therapy standards at a distance. With
+        ment summarization and a clinically appropriate                          schools closed and with a few speech-language centres of-
+        web interface. We will evaluate them in real-world                       fering an online alternative to traditional sessions, SEND stu-
+        settings through user studies performed by speech                        dents were thus left even more isolated [Tohidast et al., 2020].
+        therapists.                                                                 Some AI models offering the possibility of automatically
+                                                                                 extracting concept maps from text have been implemented
+                                                                                 over the years [Falke, 2019; Hwang, 2003; Olney et al., 2011;
+1       Introduction                                                             de Aguiar et al., 2016; Qasim et al., 2013]. However, a tool
+The right to qualitative, equitable and inclusive education is                   specifically designed for clinical profiles by taking into ac-
+a human right. Every student, irrespective of their origin or                    count specific colour schemes and web accessibility guide-
+abilities, should be able to achieve their educational goals.                    lines is still lacking. Furthermore, the interactive process,
+Yet, significant differences and challenges persist, especially                  fundamental to engaging in effective active learning, is com-
+when it comes to children with special education needs and                       pletely missing in the existing tools. Finally, most exist-
+disabilities (SEND). SEND students with difficulties in Cog-                     ing methods automatically produce a canonical representa-
+nition and Learning often need support to automate processes                     tion given an input text. However, different children with
+such as writing, arithmetic and reading. Reading compre-                         divergent levels of disability approach a collection of docu-
+hension not only enables learners to attain primary and sec-                     ments with dissimilar needs.
+ondary education, but it is also a crucial life skill, serving as                   The current project collaboration proposal aims to bridge
+                                                                                 these gaps by implementing an online Artificial Intelligence-
+    ∗
+        Contact Author                                                           powered tool that could improve the reading comprehension
+
+
+
+                                                                          5236
+
+===== PDF PAGE 2 / 8 =====
+                          Proceedings of the Thirty-First International Joint Conference on Artificial Intelligence (IJCAI-22)
+                                                       Special Track on AI for Good (Projects)
+
+
+skills of children with difficulties in written text comprehen-                the nodes of concepts and relational edges (respectively, C
+sion. A new computational model for concept-map based                          and R) with labels (l(c), l(r)), and an optional seed concept
+document summarization (CM-DS) [Falke, 2019] will be im-                       S (representing the most important concept in the text), we
+plemented and embedded into an interactive and online web                      want to create a personalised concept map G = (S, C, R)
+interface. The target language will be Italian in the first phase,             that: (I) represents the most important concepts C and rela-
+given the particular use case, but we will keep multilingual-                  tional edges R in D, (II) has no more concepts C and re-
+ism in mind during the design process. The tool will be tested                 lational edges R than the limit λ set λ(c), λ(r), (III) is a
+and evaluated in a set of user studies by specialised speech                   connected graph, (IV) is suitable to the educational needs of
+therapists in Rome (Italy) over a treatment group and a con-                   each user. The output obtained will be different from an on-
+trol group to effectively verify its utility and effectiveness.                tology in the sense that concept maps do not aim to provide
+   In this paper, we will outline the details of this collabo-                 a fixed vocabulary to represent the relations. The relational
+ration, starting with the clear societal benefits it could bring               edges are formed using free text, which we believe is fun-
+and the UN’s Sustainable Development Goals that we will                        damental to enhancing the lexical richness of children with
+tackle. The goals, the expected results, the methodology and                   learning disabilities.
+the evaluation will be highlighted. Particular attention will be
+dedicated to the challenges, risks and ethical considerations.                 3     Target SDG(s) and clear societal benefits
+2   Description of the Task and Problem                                        The United Nation’s 2030 Agenda for Sustainable Develop-
+                                                                               ment sets out 17 interlinked sustainable development goals
+    Statement                                                                  (SDGs) that define a plan for the pursuit of prosperity and
+The task of Concept Map-based Multi-Document Summa-                            equality. The SDGs focus on the principles of capturing uni-
+rization (CM-MDS) defined by [Falke, 2019] is the process of                   versal contexts across the globe, being inclusive of all sectors
+automatically extracting concept-map based document sum-                       of society and leaving no one behind, especially the most vul-
+maries from a set of documents. Following the CM-MDS                           nerable and marginalised.
+task [Falke, 2019], we define Concept-map-based Document                          Our collaboration proposal largely focuses on SDG target
+Summarization (CM-DS) as the process of automatically ex-                      4: “Quality Education”. In particular, our work is dedicated
+tracting concept-map based document summaries from a sin-                      to ensuring a qualitative, equitable and inclusive education
+gle document. The amount of existing work in the area is lim-                  for children diagnosed with falls in written text comprehen-
+ited both for single documents [Hwang, 2003; Leake, 2006;                      sion skills. With this goal in mind, Sony CSL Paris wants to
+Olney et al., 2011; Kowata et al., ; de Aguiar et al., 2016;                   collaborate with speech therapists from CRC, a language dis-
+Villalon and Calvo, 2009], and for multiple documents [Ra-                     orders rehabilitation centre in Rome treating more than 700
+jaraman and Tan, 2002; Zubrinic et al., 2012; Qasim et al.,                    hundred children a year. In line with target 4.1., the rele-
+2013; Falke, 2019]. Moreover, most of the existing systems                     vance of conceptual maps for a clinical group has already
+only produce a single representation for a given input text. In                been ascertained by the literature and by CRC speech ther-
+practice, however, different students with non-identical dis-                  apists which are therefore perfectly placed to measure the ef-
+abilities, approach a document with unlike information needs,                  fectiveness of the technology that is developed.
+incompatible levels of complexity and dissimilar background                       Following a Human in the Loop approach, we want to build
+knowledge. Taking into account the differences in educa-                       and test an AI system that would help children with read-
+tional needs and accounting for those is fundamental when                      ing comprehension deficits interactively create a personalised
+designing effective tools for inclusive, qualitative and non-                  conceptual map. This guarantees that the learning effort re-
+discriminatory education. Recent work in document sum-                         quired by the student hasn’t been replaced by technology, but
+marization tasks proposed a model that creates personalized                    that it’s been enhanced and supported by it.
+summaries based on users’ feedback [Avinesh and Meyer,                            Though our empirical evaluation is focused on a specific
+2017; Ghodratnama et al., 2020]. To our knowledge, no re-                      clinical group and a respective control group, the technology
+search in the literature has focused on the interactive con-                   behind the construction of conceptual maps together online is
+struction of conceptual maps based on students’ specific clin-                 useful beyond that scope. In line with target 4.a., our person-
+ical profiles. Moreover, a tool specifically designed and tested               alised and inclusive system can be used whenever expert tu-
+on a clinical group that enables the interactive creation of the               ition is not available to non-clinical users. This is particularly
+concept map together online is still lacking.                                  relevant in home-schooling contexts compelled by causes of
+   In this research collaboration, the Sony Computer Science                   force majeure or by a lack of proper educational staff.
+Laboratories Paris (France) aims to tackle this gap by imple-                     Moreover, we are committed to providing our technology
+menting a new model for CM-DS and embedding it in an on-                       online and free of charge and to developing it under an open-
+line and open-access web interface. Highly skilled speech                      source license so that others can collaborate in improving our
+therapists from Centro Ricerca e Cura (CRC), a language dis-                   technology in line with the indicator 4.3.1.
+orders rehabilitation centre in Rome (Italy), will test the tool                  A lifetime of being under-resourced in learning leads to
+and the underlying algorithm through a set of user studies                     various hardships in adult life and society, which reduces
+performed over a treatment group and a control group.                          the “personal resources” (aka psychological capital) for cop-
+   More formally, expanding the formal definition of Con-                      ing with various challenges such as self-efficacy, hope, opti-
+cept Map specified by [Falke, 2019], given a document D,                       mism and general resilience [Costantini et al., 2020]. Adults
+
+
+
+                                                                        5237
+
+===== PDF PAGE 3 / 8 =====
+                          Proceedings of the Thirty-First International Joint Conference on Artificial Intelligence (IJCAI-22)
+                                                       Special Track on AI for Good (Projects)
+
+
+
+
+                         Figure 1: A concept map explaining what a concept map is [Novak and Cañas, 2007])
+
+
+with language disorders attain lower employment rates, earn-                   lations extraction, (2) Mention grouping, (3) Importance Es-
+ings, and are employed in lower-skill positions compared                       timation, (4) Visualisation, (5) Evaluation of the final result.
+to their counterparts without disabilities [Vogel et al., 2007;                From a clinical point of view, the clinicians will help define
+Stein et al., 2011]. Providing technology to empower young                     and utilise the tool in a set of user studies to test for its effi-
+people with learning disorders allows them to climb towards                    cacy. This could help towards understanding whether an AI-
+closer parity in terms of income to their peers. This is in                    powered tool could help to reduce the time of taking charge,
+line with multiple SDG targets such as targets 10.1 and 10.2,                  increase the use of online therapies and generally the over-
+concerning the inequality of income, but also targets 8.5 and                  all rehabilitation process for patients diagnosed with reading
+8.6, related to lifting people with disabilities out of low wage               comprehension falls. Finally, from a software development
+jobs and unemployment and, certainly, target 4.4., concern-                    point of view, we will need to develop and deploy a robust
+ing learning appropriate skills to find decent jobs.                           system that meets the needs of the clinicians, that is appropri-
+   Moreover, children with language disorders risk growing                     ately deployed online and that is developed according to spe-
+up into adults who are held back from taking part in the                       cific web guidelines granting easier accessibility of the tool
+global dialogue, when this involves reading comprehension                      to every student, irrespective of their disabilities.
+and writing skills. Enabling participation on the global stage
+would help children affected by learning disorders to repre-                   5     Expected Results and Long Term Impact on
+sent their personal context and challenges directly and, thus,
+help reach targets 10.3 and 10.2.
+                                                                                     the SDGs
+                                                                               In long term, we imagine a future where tools like ours
+                                                                               will enhance the completion rate and attainment of children
+4   Goals                                                                      and young people with learning disabilities (indicator 4.1.1).
+Our collaboration proposal aims at contributing towards equal                  Thanks to the inclusiveness of our tool, we contribute by pro-
+rights and equal opportunity education by implementing an                      viding a personalised and, yet, a shared method to access
+inclusive, multi-modal, online and open-access tool for en-                    learning. By virtue of its online access format, we make it
+hancing reading comprehension skills thanks to interactively                   usable in formal and informal contexts, either with a practi-
+creating concept maps. The inclusiveness of the tool is en-                    tioner or in an auto-didactic context.
+sured by tailoring the output of the tool according to user dis-                  Furthermore, the interaction with the system, so successful
+abilities and by respecting web accessibility guidelines. The                  in online learning platforms such as Duolingo, can incentivise
+computational model produces user-specific concept maps                        students to pursue learning. In a nutshell, we want to make
+based on the specific needs and learning goals of the chil-                    learning and education more equitably accessible and inclu-
+dren. To achieve this goal, this research collaboration will                   sive, with no discrimination against people in terms of their
+need to accomplish its objectives along three different fronts:                disability status, gender, race or any other quality that leads
+(I) computational innovation, (II) clinical insights and prac-                 to marginalisation (indicator 4.5).
+tices, and (III) software development. From a computational                       Our long-term impact goes beyond contributing toward a
+point of view, it will need to implement a model for CM-DS                     more accessible and inclusive education. Better education
+with the inclusion of user-personalised extraction. This will                  correlates with better employment outcomes. If children and
+include solving major sub-tasks, such as (1) Mention and Re-                   young adults with learning disabilities have access to more
+
+
+
+                                                                        5238
+
+===== PDF PAGE 4 / 8 =====
+                          Proceedings of the Thirty-First International Joint Conference on Artificial Intelligence (IJCAI-22)
+                                                       Special Track on AI for Good (Projects)
+
+
+qualitative education, then their employment and job satis-                    main of CM-DS, there is not a shared evaluation protocol or
+faction can improve in the long term. Employability and edu-                   common evaluation metrics. As indicated in the Evaluation
+cation together can directly contribute to achieving SDG 10:                   section, we evaluate the output of our systems with a mixture
+“Reduced Inequalities”.                                                        of manual and automatically implemented measures.
+   Last but not least, through this research collaboration, we
+hope to raise awareness about language disorders. Though                       7       Methods
+there are various national and international organisations that
+target language disorders, many countries are not represented.                 We aim at solving CM-DS as an abstract computational prob-
+Even in developed countries with relatively high awareness                     lem and through a pipeline approach that we believe can work
+and support such as the United States, explicit knowledge                      across languages.
+about linguistic concepts or cognitive difficulties relevant to                   The participants of the users’ studies will probably need
+these disorders lacks and even shows, sometimes, misconcep-                    to be a heterogeneous group. The treatment group could be
+tions about the deficits involved. In developing countries this                composed of children in the age range of 9 to 13 years old,
+is even more crucial: paywalls to language disorder tools are                  diagnosed with Learning Disorders. The non-clinical group
+significant barriers to quality education access. We think that                could be composed of children in the same age group as the
+the basic services offered by schools in rich and poor coun-                   treatment group without a diagnosis but in need of support in
+tries will need to include language disorders aware educa-                     developing appropriate study strategies.
+tional resources, even when they do not have teachers trained                     Our contributions could be three-fold. We implement and
+in teaching language disorders students. Let’s just take the                   evaluate a new pipeline for CM-DS and a clinically appro-
+example of Dyslexia, which accounts for 80-90% of learning                     priate web interface. Finally, the benefits of conceptual map
+difficulties. This learning difficulty affects 20% of the world                based summarization techniques have yet to be tested on chil-
+to varying degrees and the available resources worldwide are                   dren with language disabilities.
+now insufficient [Mather et al., 2020]. Our single collab-
+oration rooted in free and accessible open-source practices,                   7.1       Model Pipeline
+based on SDG principles and powered by AI could provide a                      Following [Falke, 2019], we will use a pipeline approach,
+blueprint for global change, a flagship for the resourcing of                  which mimics the best practice indicated for humans to build
+tools for language disorders awareness.                                        a concept map by [Novak and Cañas, 2007]. Our pipeline
+                                                                               would build from the one of [Falke, 2019] and could consist
+6   Challenges                                                                 of four different sub-tasks, as illustrated in Fig. 2: (I) Mention
+                                                                               and Relation Extraction, (II) Concept Grouping, (III) Impor-
+The main challenges posed by this collaboration proposal                       tance Estimation, (IV) Visualisation.
+are clinical and computational. Concerning the clinical chal-                     In the first task, Mention and Relation Extraction, given
+lenges, selecting a statistically significant sample for testing               a document, we could identify all mentions of concepts in
+and evaluating the tool is a demanding task. Samples are ex-                   the document and the relational edges among them [Falke,
+pected to be chosen in such a way as to avoid presenting a                     2019]. This task could be considered an Open Information
+biased view of the population. For the set of user studies, a                  Extraction problem. Several OpenIE tools have been created
+heterogeneous sample will therefore need to be selected. As                    to parse sentences and extract {subject, predicate, object}
+indicated in the Methods section, we plan to make our user                     triples, as in [Angeli et al., 2015; Del Corro and Gemulla,
+studies more robust by splitting our users into a treatment                    2013]. The second task, Concept Grouping, could consist of,
+group and a non-clinical one.                                                  given a set of triples, determining whether and which of the
+   For the clinical group, the overall process of reading is                   extracted nodes refer to the same concept [Falke, 2019]. A
+painful and tiring. Their motivation to participate will need to               baseline approach is to group all mentions that are the same
+be encouraged. We plan to tackle this through the calibration                  or all the morphological variants or synonyms of a particu-
+of the complexity of the stimuli, the use of positive feedback                 lar term or to use WordNet1 , together with a combination of
+given by the system and enforcing an interactive process of                    lexical and vectors representation. To be more selective and
+learning, as indicated in the Methods section.                                 create maps of appropriate size for the users, we could score
+   Ensuring motivation is fundamental especially when de-                      triples and then use only a fixed subsection that scores high-
+veloping tools for online therapies. Tele-practice has several                 est. We could refer to this task as Importance Estimation. The
+advantages, such as reducing travel and waiting room time,                     highest concept will be the seed concept S. Finally, the gener-
+ensuring therapeutic continuity when it is not possible to go                  ated concept map has to be stored against the input document
+to the clinic, lessening the costs, increasing the frequency of                and needs to be visualized. For this last sub-task, Visualisa-
+exercise, and thus, potentially, increasing the effectiveness                  tion, several libraries could be used, such as Cmap2 .
+of the treatment. Nevertheless, the clinicians need to know
+how to calibrate the instrument and how to interpret the data                  7.2       Web Interface’s Workflow
+logged in it. Over-complexity should be avoided in every                       The web interface allows the subject to manually, or semi-
+case. We plan to tackle these challenges by involving all the                  automatically, construct the respective summary from the
+stakeholders from the very beginning of this research collab-
+                                                                                   1
+oration, as indicated in the Ethical Considerations section.                           https://wordnet.princeton.edu/
+                                                                                   2
+   Finally, given the limited amount of research in the do-                            https://github.com/ionstage/cmap
+
+
+
+
+                                                                        5239
+
+===== PDF PAGE 5 / 8 =====
+                              Proceedings of the Thirty-First International Joint Conference on Artificial Intelligence (IJCAI-22)
+                                                           Special Track on AI for Good (Projects)
+
+
+
+
+                            Figure 2: Pipeline of the underlying model, its different subtasks and their dependencies.
+
+
+text, in the form of a concept map. The web interface is di-                       grated. The user experience of the system could then be anal-
+vided into two sections. On the left-hand side, there is the                       ysed and information gathered on how easy or complicated,
+original text divided into sentences. The meaning and the                          boring or motivating, interesting not interesting, creative or
+most relevant entities evoked by the text could also be visu-                      conventional the system is perceived to be. This feasibility
+alised by automatically generated images using popular algo-                       study will have the goal of objectively and rationally uncov-
+rithms such as Clip3 . Moreover, the user can also listen to                       ering the strengths and weaknesses of the tool.
+the audio version of the text generated with known API such
+as Google Text to Speech4 . On the right-hand side, users can                      8.2     Evaluation of Clinical Results
+create the concept map. The concept map is not automati-                           We intend to initially assess the written and oral text com-
+cally displayed at the beginning. The construction of the con-                     prehension skills of the children who will use the platform
+cept map for the given text takes place in steps. The steps                        through the use of standardized tests used in clinical assess-
+will depend on two criteria: the disabilities of the user and                      ment. The assessment protocol includes the administration
+the readability of the text, as illustrated in Fig. 3. Two sce-                    of tests that assess the child’s ability to understand a written
+narios for both two targets will be possible. In the case of                       text: the child reads the text independently and then answers
+simple text, non-clinical groups will be requested to create a                     multiple-choice questions, having the opportunity to consult
+concept map from scratch, while the clinical group will be                         the text. Sub-tests are also administered to specifically assess
+provided with the seed node, to avoid blank page anxiety. In                       language skills, in particular, lexical and morpho-syntactic
+the case of a difficult text, the non-clinical group will be pro-                  comprehension. The assessment is completed by a ’study
+vided with the seed node but they will need to continue them-                      test’ in which the pupils study a text for 30 minutes and then
+selves. The clinical group will already be provided with all                       identify several statements that best represent the content of
+the nodes extracted automatically by the AI algorithm. They                        the passage studied. They will later need to answer open-
+will only need to select the correct label for the edge relation-                  ended questions and true/false questions, without being able
+ships among a set of alternatives provided by the underlying                       to consult the text. More precisely, we will use the follow-
+model. Learning, therefore, will follow the principles of in-                      ing assessment protocol: BVL 4-12, battery for language as-
+tensity, specificity and repetition.                                               sessment, Marini- Marotta, Giunti , 20: grammatical compre-
+                                                                                   hension (test 10), lexical comprehension (test 9) Mt3 clinic,
+8       Evaluation Criteria                                                        Cornoldi et al., Giunti, 2016: reading comprehension. New
+                                                                                   Guide to Text Comprehension, Volume 1: hierarchy to text,
+8.1       Evaluation of the Interface and the Model                                links, Amos 8-15: ability and motivation to study, Cornoldi-
+A combination of existing automatic metrics and manual ones                        De Beni, Erickson, 2005.
+are used for evaluating the efficacy of the underlying compu-
+tational model. The automatic metrics proposed by [Falke,                          9     Mechanism for Collaboration and a
+2019] could be computed to evaluate the model [Falke, 2019].                             Possible Roadmap
+As a benchmark for evaluation, we could use the EDUC cor-
+pus [Falke, 2019]. Moreover, speech therapists evaluate the                        The Parties intend to cooperate to create an open-access web-
+automatically created maps given by the underlying model for                       based tool to help children with reading comprehension dif-
+a set of documents over the ones created over the same texts                       ficulties to interactively create a concept map and afterwards,
+during real-world therapies with children with similar clini-                      have it tested by a selected sample. The Parties will negoti-
+cal profiles. The user studies will evaluate also the usability                    ate a lightweight research agreement, in the same spirit as the
+and accessibility of the interface, as well as the satisfaction                    DESCA model agreement for European projects. The Parties
+of those using the system (therapists and patients). Some                          will define the specifications, features and usefulness of the
+of the dimensions that could be evaluated are: the degree                          tool, an agenda of cooperation and prospect on its eventual
+of difficulty in using the system, how often the user would                        further use in the experiments for the target groups. Sony
+use the system, how much technical support is required by                          CSL Paris will act as Scientific Coordinator and oversee the
+the user to use the system, how well the functions are inte-                       software development and its adaptation to a functional web-
+                                                                                   based learning tool. CRC will use the tool in a set of user
+    3
+        https://huggingface.co/docs/transformers/modeld oc/clip                    studies on a selected sample of children. During the experi-
+    4
+        https://cloud.google.com/text-to-speech                                    ments, the Parties will track progress and address issues that
+
+
+
+                                                                            5240
+
+===== PDF PAGE 6 / 8 =====
+                          Proceedings of the Thirty-First International Joint Conference on Artificial Intelligence (IJCAI-22)
+                                                       Special Track on AI for Good (Projects)
+
+
+
+
+                              Figure 3: The workflow of the tool, including the different scenarios possible.
+
+
+arise from their cooperation. The Parties will organize online                 partners are based in two different countries and most of the
+meetings at least twice a month to discuss their progress. If                  work will be conducted online.
+deemed necessary, the Parties may organise meetings at their
+respective premises.
+                                                                               11      Ethic Considerations
+   To ensure completion, the project collaboration will be di-
+vided into five different milestones. M1: the corpus will be                   Since this project aims to test its tools with children, the CRC
+selected, pre-processed and the readability measures will be                   partner, with decades worth of experience in this domain, will
+implemented (from Month 0 to Month 1) M2: the CM-DS                            ensure that the strictest ethical standards are applied, espe-
+pipeline will be implemented (from Month 1 to Month 3).                        cially for the safety and the privacy of all participants. The
+M3: the web-based interface will be developed (from Month                      project will comply with the ethical standards of each of the
+4 to Month 7). M4: the users’ studies and evaluation will be                   partner’s institutions, countries of origin, as well as the ethi-
+conducted (from Month 7 to Month 8). M4: Finally, the re-                      cal guidelines of the European Union and the IJCAI confer-
+sults will be reported in a subsequent scientific paper (Month                 ence. This includes the selection of age-appropriate teaching
+8 to Month 9).                                                                 materials and data (e.g. in terms of a readability assessment
+                                                                               and in terms of subject matter), as well as special attention
+                                                                               to the privacy and protection of individual data. The project
+10    Risks                                                                    will correctly inform children and their parents or legal repre-
+Given the variability of the type of material that can be in-                  sentatives about its goals and experiments so they can make
+serted and processed within the system, there is a low risk                    an informed decision about consenting to participate in the
+that the clinician does not fully understand the output of the                 study. A privacy impact assessment will be carried out be-
+system. For this reason, it will be important to provide train-                forehand to ensure privacy guidelines are implemented as part
+ing for clinical staff (starting from the experimental phase) so               of the core design architecture.
+that the tool is not used incorrectly, decreasing the effective-                  The project will also follow the best practices that have
+ness of the support provided.                                                  been demonstrated to lead to positive learning experiences
+   Moreover, there is also a moderate risk that the tool would                 and feelings of well-being by children [Mai et al., 2011].
+present an output that are too difficult for a certain functioning                Moreover, the deployment of the tool is centred on the
+profile. This is also why, in the methods section, we decided                  genuine needs of speech-language pathologists and children,
+to introduce parameters selection of the tool to beforehand in-                rather than on commercial imperatives. This is why the tool
+form the systems about who is using the tool and with which                    and the algorithmic results of the research collaboration will
+inputs so that appropriate exercises path could be selected.                   be published under the GNU General Public License 2.0.
+   Given that machine-learning models predict exactly what                     which guarantees freedom to share and change free software.
+they have been trained to predict, the risk for a biased tech-                 The final goal will be to make sure that the software is free
+nology in this research collaboration is then moderate. The                    for all its users.
+need to look for potential biases in the data will be particu-                    Following a Human in the loop approach, all stakehold-
+larly important when the data is presented to children in their                ers will be involved starting from the design phase. Speech-
+learning age. This is why during the pre-processing phase, as                  language pathologists will ask for feedback as soon as a phase
+explained in the methods section, a biased assessment will be                  of the spiral development will be finished. Moreover, the fi-
+done in the data to assess potential risks.                                    nal users, children from clinical and non-clinical groups will
+   Finally, delays in important tasks will be communicated                     also taking part in the set of user studies.
+well in advance. This will provide ample opportunity to                           Finally, we wish to emphasize that we strive for the project
+change the work to inform the two partners of all impend-                      itself to be an inclusive collaboration experience. We are
+ing delays. Moreover, the spiral development model, adopted                    proud of the fact that the project already has women taking
+from the software engineering practices, will make sure that                   leadership roles, and we welcome researchers and teams from
+at end of each cycle, the previous one will already be tested.                 any background to join us in our dream of helping children in
+Delays caused by the pandemics are low, given that the two                     need.
+
+
+
+                                                                        5241
+
+===== PDF PAGE 7 / 8 =====
+                           Proceedings of the Thirty-First International Joint Conference on Artificial Intelligence (IJCAI-22)
+                                                        Special Track on AI for Good (Projects)
+
+
+Acknowledgements                                                                [Leake, 2006] Alejandro Valerio David Leake. Jump-starting con-
+                                                                                   cept map construction with knowledge extracted from docu-
+We thank David Colliaux (Sony Computer Science Labo-                               ments. In In Proceedings of the Second International Conference
+ratories Paris) and Inès Blin (Sony Computer Science Lab-                         on Concept Mapping (CMC, pages 296–303, 2006.
+oratories Paris - Vrije University of Amsterdam) for valu-                      [Mai et al., 2011] Xiaoqin Mai, Twila Tardif, Stacey N. Doan,
+able feedback and comments on the manuscript. We thank                             Chao Liu, William J. Gehring, and Yue-Jia Luo. Brain activ-
+Pietro Gravino (Sony Computer Science Laboratories Paris)                          ity elicited by positive and negative feedback in preschool-aged
+for valuable advice and comments. We thank Andrew Ol-                              children. Plos One, 6(4):1–6, April 2011.
+ney (Psychology Department, University of Memphis, Mem-                         [Mather et al., 2020] Nancy Mather, Jennifer White, and Martha
+phis, USA) for the interesting discussions. We thank Vit-                          Youman. Dyslexia around the world: A snapshot. Learning Dis-
+torio Loreto (Sony Computer Science Laboratories Paris -                           abilities: A Multidisciplinary Journal, 25:1–17, 01 2020.
+Sapienza University of Rome - Complexity Science Hub Vi-                        [Novak and Cañas, 2007] Joseph D Novak and Alberto J Cañas.
+enna) for the constant support.                                                    Theoretical origins of concept maps, how to construct them, and
+                                                                                   uses in education. Reflecting education, 3(1):29–42, 2007.
+References                                                                      [Olney et al., 2011] Andrew M. Olney, Whitney L. Cade, and
+[Angeli et al., 2015] Gabor Angeli, Melvin Jose Johnson Premku-                    Claire Williams. Generating concept map exercises from text-
+                                                                                   books. In Proceedings of the Sixth Workshop on Innovative Use
+  mar, and Christopher D. Manning. Leveraging linguistic struc-
+                                                                                   of NLP for Building Educational Applications, pages 111–119,
+  ture for open domain information extraction. In Proceedings of
+                                                                                   2011.
+  the 53rd Annual Meeting of the Association for Computational
+  Linguistics, volume 1, pages 344–354, Beijing, China, July 2015.              [Qasim et al., 2013] Iqbal Qasim, Jin-Woo Jeong, Jee-Uk Heu, and
+  Association for Computational Linguistics.                                       Dong-Ho Lee. Concept map construction from text documents
+                                                                                   using affinity propagation. Journal of Information Science,
+[Avinesh and Meyer, 2017] PVS Avinesh and Christian M Meyer.
+                                                                                   39(6):719–736, 2013.
+  Joint optimization of user-desired content in multi-document
+  summaries by learning from user feedback. In Proceedings of                   [Rajaraman and Tan, 2002] Kanagasabai Rajaraman and Ah-Hwee
+  the 55th Annual Meeting of the Association for Computational                     Tan. Knowledge discovery from texts: a concept frame graph
+  Linguistics, pages 1353–1363, Vancouver, Canada, July 2017.                      approach. In Proceedings of the eleventh international confer-
+  Association for Computational Linguistics.                                       ence on Information and knowledge management, pages 669–
+                                                                                   671, 2002.
+[Costantini et al., 2020] Arianna Costantini, Ceschi Andrea An-
+                                                                                [Stein et al., 2011] David S Stein, Nathan J Blum, and William J
+  drea, and Riccardo Sartori. Psychosocial interventions for the en-
+  hancement of psychological resources among dyslexic adults: A                    Barbaresi. Developmental and behavioral disorders through the
+  systematic review. Sustainability, 12(19):1–17, September 2020.                  life span. Pediatrics, 128(2):364–373, 2011.
+                                                                                [Tohidast et al., 2020] Seyed Abolfazl Tohidast, Banafshe Mansuri,
+[de Aguiar et al., 2016] Camila de Aguiar, Davidson Cury, and
+                                                                                   Rasool Bagheri, and Hadi Azimi. Provision of speech-language
+   Amal Zouaq. Automatic construction of concept maps from texts.
+                                                                                   pathology services for the treatment of speech and language dis-
+   pages 1–6, 09 2016.
+                                                                                   orders in children during the covid-19 pandemic: Problems, con-
+[Del Corro and Gemulla, 2013] Luciano Del Corro and Rainer                         cerns, and solutions. International journal of pediatric otorhino-
+  Gemulla. Clausie: Clause-based open information extraction. In                   laryngology, 138:110262, 2020.
+  Proceedings of the 22nd International Conference on World Wide                [Villalon and Calvo, 2009] Jorge Villalon and Rafael A Calvo.
+  Web, WWW ’13, page 355–366, New York, NY, USA, 2013. As-                         Concept extraction from student essays, towards concept map
+  sociation for Computing Machinery.                                               mining. In 2009 Ninth IEEE International Conference on Ad-
+[Dexter and Hughes, 2011] Douglas D. Dexter and Charles A.                         vanced Learning Technologies, pages 221–225. IEEE, 2009.
+  Hughes. Graphic organizers and students with learning disabili-               [Vogel et al., 2007] Susan A Vogel, Christopher Murray, Carol
+  ties: A meta-analysis. Learning Disability Quarterly, 34(1):51–                  Wren, and Pamela B Adelman. An exploratory analysis of
+  72, December 2011.                                                               employment-related experiences of educators with learning dis-
+[Falke, 2019] Tobias Falke. Automatic Structured Text Summariza-                   abilities. Educational Considerations, 34(2):15, 2007.
+   tion with Concept Maps. PhD thesis, Technische Universität,                 [Zubrinic et al., 2012] Krunoslav Zubrinic, Damir Kalpic, and
+   Darmstadt, 2019.                                                                Mario Milicevic. The automatic creation of concept maps from
+                                                                                   documents written using morphologically rich languages. Ex-
+[Ghodratnama et al., 2020] Samira Ghodratnama, Mehrdad Zaker-
+                                                                                   pert systems with applications, 39(16):12709–12718, November
+  shahrak, and Fariborz Sobhanmanesh. Adaptive summaries: A
+                                                                                   2012.
+  personalized concept-based summarization approach by learning
+  from users’ feedback. In International Conference on Service-
+  Oriented Computing, pages 281–293. Springer, 2020.
+[Hwang, 2003] Gwo-Jen Hwang. A conceptual map model for de-
+  veloping intelligent tutoring systems. Computers & Education,
+  40(3):217–235, April 2003.
+[Kowata et al., ] Juliana H Kowata, Davidson Cury, and Maria
+  Claudia Silva Boeres. Concept maps core elements candidates
+  recognition from text. In Proceedings of Fourth International
+  Conference on Concept Mapping, pages 120–127.
+
+
+
+
+                                                                         5242
+
+===== PDF PAGE 8 / 8 =====
+                          Proceedings of the Thirty-First International Joint Conference on Artificial Intelligence (IJCAI-22)
+                                                       Special Track on AI for Good (Projects)
+
+
+A    Curricula Vitae                                                           Donatella Tomaiuoli is a speech therapist and Psychopeda-
+Martina Galletti                                                               gogist. She is an expert in the treatment of Language Disor-
+Sony Computer Science Laboratories, Paris                                      ders, specialized in the assessment and treatment of stutter-
+With three master’s degree in both Artificial Intelligence and                 ing, she developed and adopted a specific integrated program
+Linguistics from three different countries, Martina Galletti                   (MIDA-SP). She is the Director of the C.R.C. of Rome, se-
+joined Sony CSL in 2019, where she worked on semantic                          nior Lecturer at Sapienza University of Rome and at Tor Ver-
+analyses of text in the framework of the MUHAI European                        gata, University of Rome. She is a speaker at national and
+Project – www.muhai.org – writing assistance and data sci-                     international scientific congresses and author and co-author
+ence. She worked with text to graph and graph to text al-                      of several publications on stuttering treatment. She is also
+gorithms for both her KU Leuven Master’s thesis, where she                     the creator and Scientific Director of the International Con-
+developed a model to parse text into AMR graphs, and at the                    ference on Stuttering, the only event in Italy that specifically
+Parisian company CS Group, where she used graph repre-                         addresses the multiple aspects of Disfluency Disorders.
+sentations of a source language’s semantics (using Universal                   Remi van Trijp
+Networking Language) for Machine Translation applications.                     Sony Computer Science Laboratories, Paris
+Michael Anslow                                                                 Dr. Remi van Trijp is a computational linguist and the
+Sony Computer Science Laboratories, Paris                                      Principal Investigator of the Language Research team at the
+Michael Anslow has a decade of experience in research per-                     Sony Computer Science Laboratories Paris. His current re-
+taining to Language Processing and Artificial Intelligence.                    search is focused on meaning and understanding in human-
+He was part of the Marie Curie ESSENCE project and the                         centred language technologies. Van Trijp obtained both a
+Horizon 2020 ODYCCEUS project before joining the Lan-                          Teacher’s (2003) and Doctorate degree (2008) from the Uni-
+guage Team at Sony CSL in 2017. His experience covers a                        versity of Antwerp (Belgium), holds two patents on intelli-
+diverse range of topics including language emergence, search                   gent language-tutoring systems, has participated in numerous
+engines, exploratory data science and writing assistance. He                   European projects (ECAgents, ALEAR, ESSENCE, and cur-
+is now a 0 to 1 innovator at Sony CSL, creating new software                   rently the MUHAI project – www.muhai.org) and has pub-
+paradigms using artificial intelligence, by designing and im-                  lished dozens of articles on language processing. He has also
+plementing systems embedded in the current frontiers of re-                    been one of the lead designers of Fluid Construction Gram-
+search.                                                                        mar since 2005, a computational platform for constructional
+                                                                               language processing. Website: http://www.remivantrijp.eu/
+Francesca Bianchi
+Centro Ricerca e Cura of Rome                                                  Diletta Vedovelli
+Francesca Bianchi is a speech therapist at the CRC of Rome.                    Centro Ricerca e Cura of Rome
+Active in the assessment and treatment of neurodevelopmen-                     Diletta Vedovelli is a speech therapist at the CRC of Rome.
+tal disorders, with particular reference to primary language                   Specialized in the assessment and treatment of patients of de-
+disorder, specific learning disabilities and intellectual disabil-             velopmental age with particular reference to stuttering, spe-
+ities. As part of a multidisciplinary approach, she contributes                cific learning disorders and primary language disorder. She
+to the definition of the functional profile of children with                   carries out research activities at the national and international
+autism spectrum diagnosis and the implementation of reha-                      levels.
+bilitation interventions based on the latest guidelines.
+                                                                               Eleonora Pasqua
+Manuela Calanca                                                                Centro Ricerca e Cura of Rome, Sapienza University of Rome
+Centro Ricerca e Cura of Rome, Sapienza University of Rome                     Eleonora Pasqua is Speech therapist and educator at the CRC
+Manuela Calanca is a Speech therapist and educator at the                      of Rome. Specialized in the assessment and treatment of pa-
+CRC of Rome. Specialized in the assessment and treatment                       tients of developmental age with particular reference to the
+of patients of developmental age with particular reference to                  Primary Language Disorder and Specific Learning Disorders.
+the Primary Language Disorder and Specific Learning Disor-                     She conducts training for families, schools of various lev-
+ders. She is in charge of the Tutoring Service of the Abili-                   els and health professionals on Learning Disorders and Lan-
+tative Pole of the CRC of Rome, She conducts training for                      guage, tools for telerehabilitation and compensatory tools to
+families, schools of various levels and health professionals                   support study. She is the head of the department ”Develop-
+on Learning Disorders and Language, tools for telerehabilita-                  ment and Research” at the CRC of Rome, and carries out re-
+tion and compensatory tools to support the study. She carries                  search and conferences at the national and international level.
+out research and conferences at a national level. Professor in                 Member of AIRIPA Lazio - Italian Association for Research
+health care agreement at Sapienza University of Rome, De-                      and Psychopathology of Learning. Professor in health con-
+gree Course in Speech Therapy. Tutor for Specific Learning                     vention at Sapienza University of Rome, Degree Course in
+Disorders for students of the degree course of Speech Ther-                    Speech Therapy. Tutor for Specific Learning Disorders for
+apy for Sapienza University of Rome and University of Tor                      students of the degree course of Speech Therapy at Sapienza
+Vergata.                                                                       University of Rome and University of Tor Vergata.
+Donatella Tomaiuoli
+Centro Ricerca e Cura of Rome, Sapienza University of Rome,
+Tor Vergata University of Rome
+
+
+
+                                                                        5243

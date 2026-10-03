@@ -1,0 +1,1086 @@
+# TYPE Original Research
+
+> Fuente PDF: `R710-development-and-validation-of-a-rapid-and-precise-online-sentence-reading-effici.pdf` · técnica **locator index** (página + ancla) + chunks Graphify
+
+## Metadata
+- Stem: `R710-development-and-validation-of-a-rapid-and-precise-online-sentence-reading-effici`
+- PDF: `R710-development-and-validation-of-a-rapid-and-precise-online-sentence-reading-effici.pdf`
+- DOI: `10.3389/feduc.2024.1494431`
+- Pages: `14`
+- Structured_at: `2026-10-03T23:23:21+00:00`
+- Technique: `pdf-page-locators + heading-chunks`
+
+## Locator index (qué hay y en qué página del PDF)
+
+| Kind | Label | PDF page | MD anchor |
+|------|-------|----------|-----------|
+| abstract | Abstract / blurb | 1 | `#abstract` |
+| concept | dyslexia | ? | `#concept-dyslexia` |
+| concept | reading fluency assessment | 1 | `#concept-reading-fluency-assessment` |
+| concept | screening tools | 1 | `#concept-screening-tools` |
+| concept | reading fluency and comprehension | 1 | `#concept-reading-fluency-and-comprehension` |
+| concept | progress monitoring | 1 | `#concept-progress-monitoring` |
+| concept | psychometrics | 1 | `#concept-psychometrics` |
+| concept | R710 | ? | `#concept-r710` |
+| concept | development | ? | `#concept-development` |
+| concept | validation | ? | `#concept-validation` |
+| concept | rapid | ? | `#concept-rapid` |
+| concept | precise | ? | `#concept-precise` |
+| concept | online | ? | `#concept-online` |
+| concept | sentence | ? | `#concept-sentence` |
+| concept | reading | ? | `#concept-reading` |
+| concept | effici | ? | `#concept-effici` |
+| finding | The speed at which students can accurately read and understand Yeatman JD, Tran JE, Burkha… | 1 | `#finding-the-speed-at-which-students-can-accurate` |
+| finding | This is an open-access article distributed under the terms of the scale validation study t… | 1 | `#finding-this-is-an-open-access-article-distribut` |
+| finding | Finally we validate the reliability and accuracy of (CC BY). | 1 | `#finding-finally-we-validate-the-reliability-and` |
+| finding | The use, distribution or reproduction using artificial intelligence (AI) to generate match… | 1 | `#finding-the-use-distribution-or-reproduction-us` |
+| finding | Moreover, AI can automatically in this journal is cited, in accordance with accepted acade… | 1 | `#finding-moreover-ai-can-automatically-in-this-j` |
+| finding | No use, generate test forms that are matched to manually-authored test forms. | 1 | `#finding-no-use-generate-test-forms-that-are-mat` |
+| page | p.1: TYPE Original Research | 1 | `#pdf-p1` |
+| page | p.2: Yeatman et al. 10.3389/feduc.2024.1494431 | 2 | `#pdf-p2` |
+| page | p.3: Yeatman et al. 10.3389/feduc.2024.1494431 | 3 | `#pdf-p3` |
+| page | p.4: Yeatman et al. 10.3389/feduc.2024.1494431 | 4 | `#pdf-p4` |
+| page | p.5: Yeatman et al. 10.3389/feduc.2024.1494431 | 5 | `#pdf-p5` |
+| page | p.6: Yeatman et al. 10.3389/feduc.2024.1494431 | 6 | `#pdf-p6` |
+| page | p.7: Yeatman et al. 10.3389/feduc.2024.1494431 | 7 | `#pdf-p7` |
+| page | p.8: Yeatman et al. 10.3389/feduc.2024.1494431 | 8 | `#pdf-p8` |
+| page | p.9: Yeatman et al. 10.3389/feduc.2024.1494431 | 9 | `#pdf-p9` |
+| page | p.10: Yeatman et al. 10.3389/feduc.2024.1494431 | 10 | `#pdf-p10` |
+| page | p.11: Yeatman et al. 10.3389/feduc.2024.1494431 | 11 | `#pdf-p11` |
+| page | p.12: Yeatman et al. 10.3389/feduc.2024.1494431 | 12 | `#pdf-p12` |
+| page | p.13: Yeatman et al. 10.3389/feduc.2024.1494431 | 13 | `#pdf-p13` |
+| page | p.14: Yeatman et al. 10.3389/feduc.2024.1494431 | 14 | `#pdf-p14` |
+
+## Abstract
+<a id="abstract"></a>
+
+The speed at which students can accurately read and understand Yeatman JD, Tran JE, Burkhardt AK, connected text is at the foundation of reading development. Timed reading measures Ma WA, Mitchell JL, Yablonski M, Gijbels L, ​ go under a variety of names (e.g., reading fluency, reading efficiency, etc) and involve Townley-Flores C and ​Richie-Halford A (2024) Development and validation of a rapid and different levels of demands on comprehension, making it hard to interpret the extent precise online sentence reading efficiency to which scores reflect differences in reading efficiency versus comprehension. assessment. Front. Educ. 9:1494431. Methods: Here we define a new measure of silent sentence reading efficiency doi: 10.3389/feduc.2024.1494431 (SRE) and explore key aspects of item development for an unproctored, COPYRIGHT online SRE assessment (ROAR-SRE). In doing so, we set forth an argument for © 2024 Yeatman, Tran, Burkhardt, Ma, developing sentences that are simple assertions, with an unambiguous answer, Mitchell, Yablonski, Gijbels, Townley-Flores requiring minimal background knowledge and vocabulary. We then run a large- and Richie-Halford. This is an open-access article distributed under the terms of the scale validation study to document convergent validity between ROAR-SRE and Creative Commons Attribution License other measures of reading. Finally we validate the reliability and accuracy of (CC BY). The use, distribution or reproduction using artificial intelligence (AI) to generate matched test forms. in other forums is permitted, provided the original author(s) and the copyright owner(s) Results: We find that a short, one-minute SRE assessment is highly correlated with are credited and that the original publication other reading measures and has exceptional reliability. Moreover, AI can automatically in this journal is cited, in accordance with accepted academic practice. No use, generate test forms that are matched to manually-authored test forms. distribution or reproduction is permitted Discussion: Together these results highlight the potential for regular screening which does not comply with these terms. and progress monitoring at scale with ROAR-SRE.
+
+## Keywords
+
+- dyslexia
+- reading fluency assessment
+- screening tools
+- reading fluency and comprehension
+- progress monitoring
+- psychometrics
+
+## Concept index (graph hooks + página)
+
+<a id="concept-dyslexia"></a>
+### [PDF p.?] Concept: dyslexia
+- Locator: `R710-development-and-validation-of-a-rapid-and-precise-online-sentence-reading-effici.pdf` · página **?**
+
+<a id="concept-reading-fluency-assessment"></a>
+### [PDF p.1] Concept: reading fluency assessment
+- Locator: `R710-development-and-validation-of-a-rapid-and-precise-online-sentence-reading-effici.pdf` · página **1**
+
+<a id="concept-screening-tools"></a>
+### [PDF p.1] Concept: screening tools
+- Locator: `R710-development-and-validation-of-a-rapid-and-precise-online-sentence-reading-effici.pdf` · página **1**
+
+<a id="concept-reading-fluency-and-comprehension"></a>
+### [PDF p.1] Concept: reading fluency and comprehension
+- Locator: `R710-development-and-validation-of-a-rapid-and-precise-online-sentence-reading-effici.pdf` · página **1**
+
+<a id="concept-progress-monitoring"></a>
+### [PDF p.1] Concept: progress monitoring
+- Locator: `R710-development-and-validation-of-a-rapid-and-precise-online-sentence-reading-effici.pdf` · página **1**
+
+<a id="concept-psychometrics"></a>
+### [PDF p.1] Concept: psychometrics
+- Locator: `R710-development-and-validation-of-a-rapid-and-precise-online-sentence-reading-effici.pdf` · página **1**
+
+<a id="concept-r710"></a>
+### [PDF p.?] Concept: R710
+- Locator: `R710-development-and-validation-of-a-rapid-and-precise-online-sentence-reading-effici.pdf` · página **?**
+
+<a id="concept-development"></a>
+### [PDF p.?] Concept: development
+- Locator: `R710-development-and-validation-of-a-rapid-and-precise-online-sentence-reading-effici.pdf` · página **?**
+
+<a id="concept-validation"></a>
+### [PDF p.?] Concept: validation
+- Locator: `R710-development-and-validation-of-a-rapid-and-precise-online-sentence-reading-effici.pdf` · página **?**
+
+<a id="concept-rapid"></a>
+### [PDF p.?] Concept: rapid
+- Locator: `R710-development-and-validation-of-a-rapid-and-precise-online-sentence-reading-effici.pdf` · página **?**
+
+<a id="concept-precise"></a>
+### [PDF p.?] Concept: precise
+- Locator: `R710-development-and-validation-of-a-rapid-and-precise-online-sentence-reading-effici.pdf` · página **?**
+
+<a id="concept-online"></a>
+### [PDF p.?] Concept: online
+- Locator: `R710-development-and-validation-of-a-rapid-and-precise-online-sentence-reading-effici.pdf` · página **?**
+
+<a id="concept-sentence"></a>
+### [PDF p.?] Concept: sentence
+- Locator: `R710-development-and-validation-of-a-rapid-and-precise-online-sentence-reading-effici.pdf` · página **?**
+
+<a id="concept-reading"></a>
+### [PDF p.?] Concept: reading
+- Locator: `R710-development-and-validation-of-a-rapid-and-precise-online-sentence-reading-effici.pdf` · página **?**
+
+<a id="concept-effici"></a>
+### [PDF p.?] Concept: effici
+- Locator: `R710-development-and-validation-of-a-rapid-and-precise-online-sentence-reading-effici.pdf` · página **?**
+
+
+## Findings index (graph hooks + página)
+
+<a id="finding-the-speed-at-which-students-can-accurate"></a>
+### [PDF p.1] Finding: The speed at which students can accurately read and understand Yeatman JD, Tran JE, Burkhardt AK, connected text is at the foundation of reading development.
+- Locator: `R710-development-and-validation-of-a-rapid-and-precise-online-sentence-reading-effici.pdf` · página **1**
+
+<a id="finding-this-is-an-open-access-article-distribut"></a>
+### [PDF p.1] Finding: This is an open-access article distributed under the terms of the scale validation study to document convergent validity between ROAR-SRE and Creative Commons Attribution License other measures of reading.
+- Locator: `R710-development-and-validation-of-a-rapid-and-precise-online-sentence-reading-effici.pdf` · página **1**
+
+<a id="finding-finally-we-validate-the-reliability-and"></a>
+### [PDF p.1] Finding: Finally we validate the reliability and accuracy of (CC BY).
+- Locator: `R710-development-and-validation-of-a-rapid-and-precise-online-sentence-reading-effici.pdf` · página **1**
+
+<a id="finding-the-use-distribution-or-reproduction-us"></a>
+### [PDF p.1] Finding: The use, distribution or reproduction using artificial intelligence (AI) to generate matched test forms.
+- Locator: `R710-development-and-validation-of-a-rapid-and-precise-online-sentence-reading-effici.pdf` · página **1**
+
+<a id="finding-moreover-ai-can-automatically-in-this-j"></a>
+### [PDF p.1] Finding: Moreover, AI can automatically in this journal is cited, in accordance with accepted academic practice.
+- Locator: `R710-development-and-validation-of-a-rapid-and-precise-online-sentence-reading-effici.pdf` · página **1**
+
+<a id="finding-no-use-generate-test-forms-that-are-mat"></a>
+### [PDF p.1] Finding: No use, generate test forms that are matched to manually-authored test forms.
+- Locator: `R710-development-and-validation-of-a-rapid-and-precise-online-sentence-reading-effici.pdf` · página **1**
+
+
+## Relevance hooks
+### Theme relevance: software engineering and accessibility
+### Theme relevance: cognitive accessibility and neurodiversity
+### Theme relevance: evaluation metrics and WCAG
+
+## Sections (detected in PDF)
+
+_(no numbered sections auto-detected)_
+
+
+## Page chunks (texto por página del PDF)
+
+_Cada heading es un nodo Graphify. El label incluye la página para volver al PDF sin releer todo._
+
+<a id="pdf-p1"></a>
+### [PDF p.1] TYPE Original Research
+- Locator: `R710-development-and-validation-of-a-rapid-and-precise-online-sentence-reading-effici.pdf` · página **1** / 14
+
+TYPE Original Research
+                                                                                                                      PUBLISHED 13 December 2024
+                                                                                                                      DOI 10.3389/feduc.2024.1494431
+
+
+
+
+                                                 Development and validation of a
+OPEN ACCESS                                      rapid and precise online sentence
+                                                 reading efficiency assessment
+EDITED BY
+Maria Cutumisu,
+McGill University, Canada
+
+REVIEWED BY
+Morgan Les DeBusk-Lane,                          Jason D. Yeatman 1,2,3*†, Jasmine E. Tran 1,3†, Amy K. Burkhardt 4,
+Gallup, United States                            Wanjing Anya Ma 1, Jamie L. Mitchell 1,2, Maya Yablonski 1,3,
+Roxanne Hudson,
+University of Washington, United States          Liesbeth Gijbels 5, Carrie Townley-Flores 1 and
+*CORRESPONDENCE                                  Adam Richie-Halford 1,3
+Jason D. Yeatman
+  jyeatman@stanford.edu                          1
+                                                  Graduate School of Education, Stanford University, Stanford, CA, United States, 2 Department of
+                                                 Psychology, Stanford University, Stanford, CA, United States, 3 Division of Developmental Behavioral
+†
+ These authors have contributed equally to
+                                                 Pediatrics, School of Medicine, Stanford University, Stanford, CA, United States, 4 Machine Learning
+this work
+                                                 Team, Cambium Assessment Inc., Washington, DC, United States, 5 Department of Speech and
+RECEIVED 10 September 2024                       Hearing Sciences, University of Washington, Seattle, WA, United States
+ACCEPTED 22 November 2024
+PUBLISHED 13 December 2024
+
+CITATION
+                                                 Introduction: The speed at which students can accurately read and understand
+Yeatman JD, Tran JE, Burkhardt AK,               connected text is at the foundation of reading development. Timed reading measures
+Ma WA, Mitchell JL, Yablonski M, Gijbels L, ​    go under a variety of names (e.g., reading fluency, reading efficiency, etc) and involve
+Townley-Flores C and ​Richie-Halford A (2024)
+Development and validation of a rapid and
+                                                 different levels of demands on comprehension, making it hard to interpret the extent
+precise online sentence reading efficiency       to which scores reflect differences in reading efficiency versus comprehension.
+assessment.
+Front. Educ. 9:1494431.
+                                                 Methods: Here we define a new measure of silent sentence reading efficiency
+doi: 10.3389/feduc.2024.1494431                  (SRE) and explore key aspects of item development for an unproctored,
+COPYRIGHT
+                                                 online SRE assessment (ROAR-SRE). In doing so, we set forth an argument for
+© 2024 Yeatman, Tran, Burkhardt, Ma,             developing sentences that are simple assertions, with an unambiguous answer,
+Mitchell, Yablonski, Gijbels, Townley-Flores     requiring minimal background knowledge and vocabulary. We then run a large-
+and Richie-Halford. This is an open-access
+article distributed under the terms of the       scale validation study to document convergent validity between ROAR-SRE and
+Creative Commons Attribution License             other measures of reading. Finally we validate the reliability and accuracy of
+(CC BY). The use, distribution or reproduction   using artificial intelligence (AI) to generate matched test forms.
+in other forums is permitted, provided the
+original author(s) and the copyright owner(s)    Results: We find that a short, one-minute SRE assessment is highly correlated with
+are credited and that the original publication   other reading measures and has exceptional reliability. Moreover, AI can automatically
+in this journal is cited, in accordance with
+accepted academic practice. No use,              generate test forms that are matched to manually-authored test forms.
+distribution or reproduction is permitted
+                                                 Discussion: Together these results highlight the potential for regular screening
+which does not comply with these terms.
+                                                 and progress monitoring at scale with ROAR-SRE.
+
+                                                 KEYWORDS
+
+                                                 dyslexia, reading fluency assessment, screening tools, reading fluency and
+                                                 comprehension, progress monitoring, psychometrics
+
+
+
+
+                                                 Introduction
+                                                      The use of assessments to identify students struggling with foundational reading skills is
+                                                 a priority across the country (Catts and Hogan, 2020; Odegard et al., 2020; Fletcher et al., 2021;
+                                                 Jones, 2022; Rice and Gilson, 2023). Assessments of phonological awareness, letter-sound
+                                                 knowledge, and decoding skills are widely used for screening and benchmarking early in
+                                                 elementary school (Fletcher et al., 2021), and are written into many states’ dyslexia screening
+                                                 legislation (Ward-Lonergan and Duthie, 2018; Zirkel, 2020). But as reading skills develop, the
+                                                 fluency with which children can read connected text becomes particularly important
+                                                 (Silverman et al., 2013). “Efficient word recognition” was highlighted in the original
+                                                 conceptualization of the “simple view of reading” (Hoover and Gough, 1990), and fluent
+                                                 reading has been implicated as a bridge between decoding skills and reading comprehension
+
+Frontiers in Education                                                 01                                                                frontiersin.org
+
+<a id="pdf-p2"></a>
+### [PDF p.2] Yeatman et al. 10.3389/feduc.2024.1494431
+- Locator: `R710-development-and-validation-of-a-rapid-and-precise-online-sentence-reading-effici.pdf` · página **2** / 14
+
+Yeatman et al.                                                                                                                    10.3389/feduc.2024.1494431
+
+
+
+
+(Pikulski and Chard, 2005; Silverman et al., 2013). Children with                    generally between 0.85 and 0.90 for alternate form reliability (Wagner
+dyslexia and other word reading difficulties often struggle to achieve               et al., 2010; Johnson et al., 2011; Wagner, 2011). Moreover, this
+fluency, and struggles with word reading speed and fluency have                      measure has been shown to be useful for predicting performance on
+always been core to the definition of dyslexia (Lyon et al., 2003; Catts             state reading assessments: For example, Johnson and colleagues
+et al., 2024). In this paper we describe the development of a silent                 demonstrated that TOSREC scores could accurately predict students
+sentence reading efficiency (SRE) measure that was designed to                       who did not achieve grade-level performance benchmarks on end-of-
+be fast, reliable, efficient at scale, and targeted to the issues with speed/        the-year state testing of reading proficiency (Johnson et al., 2011).
+fluency that present a bottleneck for so many struggling readers.                         Further evidence for validity comes from the strong
+     Even though oral reading tasks have long been the focus of                      correspondence between silent sentence reading measures such as the
+screeners, silent reading tasks have some advantages in pursuit: They                TOSREC and Oral Reading Fluency (ORF) measures (Denton et al.,
+can assess reading ability without requiring students to read aloud;                 2011; Johnson et al., 2011; Wagner, 2011; Kim et al., 2012; Price et al.,
+they are not influenced by issues with articulation or pronunciation;                2016; Kang and Shin, 2019). ORF is one of the most widely used
+they are amenable to administration in large, group settings (e.g., a                measures of reading development in research and practice, and some
+classroom); and, if digitized, they can be scaled to an entire district or           have even argued for ORF as an indicator of overall reading
+state, dramatically lowering the resources required for universal                    competence (Fuchs et al., 2001). ORF is widely used to chart reading
+screening. The SRE measure developed here is built as part of the                    progress in the classroom, providing scores with units of words per
+Rapid Online Assessment of Reading (ROAR), an online platform                        minute that can be examined longitudinally [e.g., for progress
+consisting of a suite of reading assessments. To date, validation studies            monitoring (Good et al., 2002; Hoffman et al., 2009; Cummings et al.,
+have been conducted to explore the relationship between, first, a single             2013)], compared across classrooms and districts, and can inform
+word recognition measure (ROAR-SWR) and other standardized                           policy decisions such as how to confront learning loss from the
+assessments of basic reading skills (Yeatman et al., 2021; Ma et al.,                Covid-19 pandemic (Domingue et al., 2021, 2022). Even though silent
+2023), and second, a phonological awareness (PA) measure (ROAR-                      reading and ORF are highly correlated, the measures also have unique
+PA) and individually administered measures of PA (Gijbels et al.,                    variance (Hudson et al., 2008; Wagner, 2011; Kim et al., 2012) and,
+2023). One way that these two ROAR tasks differ from traditional                     theoretically, have different strengths and weaknesses. For example,
+reading assessments is that they are administered online, rather than                even though there are strong empirical connections between ORF and
+face-to-face, and elicit silent responses from students, rather than                 reading comprehension (Kim et al., 2014), ORF does not require any
+verbal responses. The initial validation studies of these silent measures            understanding of the text and has been labeled by some as “barking at
+showed excellent correspondence to conventional measures that                        print” (Samuels, 2007). Silent reading, on the other hand, is the most
+require individually scoring verbal responses (Yeatman et al., 2021;                 common form of reading, particularly as children advance in reading
+Gijbels et al., 2023; Ma et al., 2023). The focus of the present paper is            instruction. In line with this theoretical perspective, Kim and
+the development of the third task, Silent Sentence Reading Efficiency                colleagues found that silent sentence reading fluency was a better
+(ROAR-SRE), which is designed to assess the speed or efficiency with                 predictor of reading comprehension than ORF starting in second
+which a student can read simple sentences for understanding. The goal                grade (Kim et al., 2012). Thus, given the practical benefits of silent
+of the ROAR-SRE task is to isolate reading efficiency by minimizing                  reading measures (easy to administer and score at scale), along with
+comprehension demands while maintaining checks for understanding.                    the strong empirical evidence of reliability, concurrent, and predictive
+This stands in contrast to other silent reading measures that confound               validity, and face validity of the measure, an online measure of silent
+comprehension and efficiency leading to a less interpretable score                   sentence reading efficiency would be useful for both research
+(Wagner et al., 2010; Johnson et al., 2011; Wagner, 2011).                           and practice.
+     Traditional measures that are most similar to ROAR-SRE are                           The strength of silent reading fluency/efficiency tasks is also their
+sometimes referred to as sentence reading fluency tasks, and while they              weakness: On the one hand, these tasks include comprehension,
+are not administered online, they do elicit silent responses from students.          which bolsters the argument for the face validity of silent reading
+For example, the Woodcock Johnson (WJ) Tests of Achievement                          measures. On the other hand, what is meant by comprehension in
+“Sentence Reading Fluency” subtest (Schrank et al., 2014), and Test Of               these sentence reading tasks is often ill-defined and, thus, a low score
+Silent Reading Efficiency and Comprehension (TOSREC; Wagner et al.,                  lacks clarity on whether the student is struggling due to difficulties
+2010), rely on an established design: A student reads a set of sentences and         with “comprehension” or “efficiency/fluency.” As a concrete example,
+endorses whether each sentence is true or false. For example, the sentence,          sentences in the TOSREC incorporate low frequency vocabulary
+Fire is hot, would be endorsed as True. A student endorses as many                   words (e.g., porpoise, bagpipes, locomotive, greyhounds, buzzards)
+sentences as they can within a fixed time limit (usually 3 min). The final           meaning that vocabulary knowledge as well as specific content
+score is the total number of correctly endorsed sentences minus the total            knowledge (e.g., knowledge about porpoises, bagpipes and
+number of incorrectly endorsed sentences.                                            locomotives) will affect scores. While this design decision might be a
+     Both the WJ and TOSREC are standardized to be administered in                   strength in some scenarios (e.g., generalizability to more complex
+a one-on-one setting (though TOSREC can also be group                                reading measures such as state testing), it presents a challenge for
+administered) and the stimuli consist of printed lists of sentences                  interpretability. An interpretable construct is critical if scores are used
+which students read silently and mark True/False with a pencil. Even                 to individualize instruction. For example, does a fourth grade student
+though the criteria for item development on these assessments is not                 with a low TOSREC score need targeted instruction and practice
+specified in detail, there is a growing literature showing the utility of            focused on (a) building greater automaticity and efficiency in reading
+this general approach. First of all, this quick, 3 min assessment is                 or (b) vocabulary, syntax and background knowledge. Our goal in
+straightforward to administer and score and has exceptional reliability,             designing a new silent sentence reading efficiency measure was to
+
+
+Frontiers in Education                                                          02                                                               frontiersin.org
+
+<a id="pdf-p3"></a>
+### [PDF p.3] Yeatman et al. 10.3389/feduc.2024.1494431
+- Locator: `R710-development-and-validation-of-a-rapid-and-precise-online-sentence-reading-effici.pdf` · página **3** / 14
+
+Yeatman et al.                                                                                                              10.3389/feduc.2024.1494431
+
+
+
+
+more directly target reading efficiency by designing simple sentences            sentences suitable for a sentence reading efficiency task, and
+that are unambiguously true or false and have minimal requirements               sentences that are not ideal for this task. After arriving on a list of
+in terms of vocabulary, syntax and background knowledge. Ideally,                suitable stimuli, we next run two validation studies (Study 2 and
+this measure could be used to track reading rate in units of words per           Study 3) to compare performance on ROAR-SRE to the TOSREC
+minute, akin to a silent reading version of the ORF task, but with a             (Wagner et al., 2010), Woodcock Johnson (WJ; Schrank et al., 2014)
+check to ensure reading for understanding. If combined with measures             and Test of Word Reading Efficiency (TOWRE; Torgesen et al.,
+of vocabulary, syntax, morphology, and inferencing skills, it could              2011). Finally, Study 4 considers how the use of these statistics can
+break down reading comprehension into its component processes.                   scale for developing a large item bank for progress monitoring,
+     To consider the ideal characteristics of these sentences, it may            relying on automated, AI-based approaches to generating and
+be helpful to begin by considering the ORF task which is used to                 evaluating new sentences.
+compute an oral reading rate (words per minute) for connected text.
+In an ORF task, the test administrator can simply count the number
+of words read correctly to assess each student’s reading rate.                   Study 1: creation and analysis of
+Translating this task to a silent task that can be administered at scale         sentence reading efficiency items
+online poses an issue because an administrator is unable to monitor
+the number of sentences read by the student. A student could                     Study 1: methods
+be instructed to press a button on the keyboard after the completion
+of a sentence in order to proceed to the next one. However, the validity              Study 1 was an exploratory analysis to understand which
+of this method depends on the student’s ability to exhibit restraint and         sentences make good stimuli for the construct of “Sentence Reading
+wait until the completion of each sentence before proceeding to the              Efficiency.” In this study, we authored 200 sentences (hereafter
+next sentence.                                                                   SRE-Pilot) with the intention of being (a) unambiguously true or false,
+     In the interest of preserving the validity of the interpretations of        (b) requiring minimal background knowledge, and (c) using simple
+the scores, we retain the True/False endorsement of the TOSREC and               vocabulary words and syntactic structure. We built a simple web
+WJ, but reframe its use. That is, for the ROAR-SRE task, the                     application with PsychoPy and hosted it on Pavlovia for data collection
+endorsement of True/False should be interpreted as an indication that            (Peirce and MacAskill, 2018; Peirce et al., 2019). Participants (ages 5
+the student has read the sentence, rather than as an evaluation of               to adulthood) were instructed to endorse as many sentences as
+comprehension per se. In this context, if the student has difficulty             possible within two separate three-minute blocks. The first block
+comprehending a sentence, or if the student takes a long time to                 consisted of the 200 SRE-Pilot sentences presented in a random order.
+consider the correct answer because the sentence is confusing,                   The second block consisted of stimuli from the TOSREC (used with
+syntactically complex, or depends on background knowledge and                    permission), presented in the predetermined order of the published
+high-level reasoning, we lose confidence in the inferences that we can           assessment, with a separate form for each grade level. To properly
+make about a student’s reading efficiency. As such, it is important that         assign the appropriate grade level form, the web application asked
+sentences designed for this task are simple assertions that are                  participants to select their grade and the appropriate TOSREC
+unambiguously true or false.                                                     stimulus list was selected for the grade (the 8th grade form was used
+     However, creating sentences to adhere to these basic standards              for everyone in eighth grade or higher); SRE-Pilot used the same item
+may not always be straightforward. For example, the statement “the               bank in a random order irrespective of grade.
+sky is blue” may be true for a student in the high-plain desert in                    Study 1 comprised two distinct samples of participants: (1)
+Colorado but may be a controversial statement for a student in Seattle.          recruited at Stanford University and University of Washington, aged
+Thus, careful consideration must be given to crafting sentences that             5 to 39 years-old, and (2) recruited from local school partnerships,
+do not depend on specific background knowledge and are aligned                   many of whom were identified as experiencing difficulties with
+with the goal of measuring reading efficiency. To support this goal,             reading, within the grade range of third to seventh grade (see Table 1).
+we propose the following item statistics to guide the process of                 A total of 173 participants completed the online task. Because each
+evaluating field-tested items for their suitability in a sentence reading        trial is a two-alternative forced choice (2AFC), participants who are
+efficiency task: proportion-correct (also referred to in this paper as           guessing would be expected to answer approximately 50% of the items
+“agreement rate”), average response time, and sentence length.                   correctly. There were 16 participants who performed below 60%
+     Departing from the traditional use of the proportion-correct                correct and were excluded due to a high likelihood of random
+statistic for assessing item difficulty, a value near 1 in this context          guessing, leaving us with a final sample of 151 participants
+indicates that the truth of a sentence is unambiguous. Consequently,             (participants with low accuracy also tend to respond very quickly
+a lower value suggests that a statement is controversial or confusing,           relative to their peers, indicative of random guessing).
+which in turn does not meet the criteria for a simple, unambiguous                    The primary objective of this first study was to investigate three
+assertion. The response time statistic can signal that a statement is            item-level statistics for classifying sentences into those that are
+confusing or otherwise difficult to parse. Simple assertions                     appropriate for the task and those that are problematic due to their
+associated with shorter response times are ideal, while longer                   controversial nature or potential to cause confusion. In this section,
+response times may indicate confusion, particularly in the case of               we conduct a qualitative inspection of the flagged items to assess if
+short sentences. Ideally, response time should incrementally                     they are, indeed, in violation of the basic requirement of simple
+increase with sentence length. In the first section of this paper                assertions that are obviously true or false.
+(Study 1), we define criteria based on these three statistics and then                Code to reproduce analyses and figures is available at: https://
+systematically review sentences classified into two groups:                      github.com/yeatmanlab/ROAR-SRE-Public.
+
+
+Frontiers in Education                                                      03                                                             frontiersin.org
+
+<a id="pdf-p4"></a>
+### [PDF p.4] Yeatman et al. 10.3389/feduc.2024.1494431
+- Locator: `R710-development-and-validation-of-a-rapid-and-precise-online-sentence-reading-effici.pdf` · página **4** / 14
+
+Yeatman et al.                                                                                                                                10.3389/feduc.2024.1494431
+
+
+
+
+TABLE 1 Descriptive statistics from SRE-Pilot studies.
+
+ Recruitment                       Sample                                         Age                                  SRE-pilot score              TOSREC Score
+                                     size
+                                                        Min              Max             Mean              SD          Mean            SD           Mean            SD
+ University                            85                5.99            39.38             10.42           7.01         33.89          23.74         27.49          13.06
+
+ Local schools and                     52                6.74            13.77             10.05           1.81         45.38          25.36         29.25          16.39
+ community partners
+
+ Anonymous                             14                NA*             NA*               NA*            NA*           83.21          32.86         48.00          22.44
+
+*These participants took the assessment anonymously—age data for these participants is unavailable.
+
+
+
+
+    FIGURE 1
+    (A) Scatterplot of the agreement rate (y-axis) and average response time (x-axis) for 199 SRE-Pilot items. Sentences with an agreement rate less than
+    85% were filtered out from the final item bank. (B) Scatterplot of the standardized average agreement rate (y-axis) and standardized response time
+    (x-axis) for 161 SRE-Pilot items. The gradient color of the dots on the plot corresponds to the number of words in each sentence, with darker colored
+    dots indicating shorter sentences and lighter colored dots indicating longer sentences.
+
+
+
+
+Study 1: results                                                                                 Reviewing flagged versus suitable sentences
+                                                                                                      Suitable sentences were ideal for their unambiguity — either they
+Flagging criteria                                                                                were clear statements that seemed to resonate with the lived experiences
+    Further analyses consider 199 SRE-Pilot sentences that had                                   of students’ lives, or they were fantastical in nature and clearly not true.
+responses from at least 25 participants. To evaluate these                                       For instance, simple true statements such as “Children enjoy playing with
+sentences, we calculated three item-level statistics for each                                    toys,” “A pillow can be very soft,” and “Sandwiches are food” were quickly
+sentence: the proportion of participants who agreed with the                                     endorsed by students, perhaps because they are aligned with their
+answer key’s truth of the assertion (referred to as the agreement                                everyday experiences. In contrast, false statements that are outlandish,
+rate), the average response time, and the length of the sentence.                                such as “Chairs are alive,” and “Lizards like to cook pasta” are easily
+Figure 1 plots the sentences along two dimensions based on the                                   recognized as false by students, perhaps because they do not interfere
+average response time and the agreement rate. In the context of a                                with students’ expectations of what constitutes a true, lived experience.
+sentence reading efficiency task, it’s crucial for items to                                           Sentences with low agreement rates seemed confusing or
+be relatively easy and clearly interpretable as either true or false.                            ambiguous in nature. For instance, “Potatoes are fruit,” may have been
+To ensure this, sentences with a low agreement rate (<85%; 38                                    confused with the notion that tomatoes are fruit, and it also depends
+sentences) were flagged and filtered out of the final item bank.                                 on background knowledge that will vary among participants.
+These flagged sentences underwent a closer inspection to discern                                 Similarly, the assertion “Candles burn underwater” also received low
+the qualitative characteristics that make them unsuitable for                                    agreement, as some may be familiar with a science experiment that
+the assessment.                                                                                  demonstrates that a candle can burn with a flame beneath the water
+
+
+Frontiers in Education                                                                      04                                                                frontiersin.org
+
+<a id="pdf-p5"></a>
+### [PDF p.5] Yeatman et al. 10.3389/feduc.2024.1494431
+- Locator: `R710-development-and-validation-of-a-rapid-and-precise-online-sentence-reading-effici.pdf` · página **5** / 14
+
+Yeatman et al.                                                                                                                      10.3389/feduc.2024.1494431
+
+
+
+
+    FIGURE 2
+    Scatterplot of the TOSREC final score (y-axis) and SRE score (x-axis) for both the pilot and final fixed form, highlighting the strong relationship between
+    the two measures regardless of decisions concerning the sentence stimuli.
+
+
+
+
+level for a brief period. While the correct answer might seem obvious                of 130 sentences were selected, comprising 40 easy, 64 medium, and
+to some, the intention of the question might be ambiguous to others                  26 hard sentences. These sentences were arranged in ascending order
+leading to confusion as to the correct answer.                                       of difficulty, from easy to hard, and then randomized within their
+     It is worth noting that not all sentences with low agreement rates              respective difficulty bins. This process resulted in the fixed order form,
+seemed to pose confusing or controversial scenarios for some students.               now referred to as SRE-Fixed, that will be used for future iterations of
+In fact, some sentences that are closer to the criterion’s threshold appear          the sentence reading efficiency task. The mean Flesch–Kincaid
+to be simple assertions. For example, “Water is always cold” and “All fish           readability statistic of SRE-Fixed items was 3.03 (SD = 3.12).
+live in the water” had agreement rates of 82 and 83%, respectively. One
+feature of these sentences is the inclusion of modifiers like “always” and           How stable is silent sentence reading efficiency
+“all” which seemed to have confused participants to try to consider fringe           across different sentence constructions?
+cases where the statement might not always be true. There were also                      In the process of determining which sentences are appropriate for
+sentences consisting of only a few words that exhibited an above-average             a sentence reading efficiency task, a fundamental question remained:
+agreement rate, but also a longer-than average response time such as                 how similar are responses to SRE stimuli versus standardized reading
+“Toads like to bake pies” (see Figure 1). There was no clear consensus on            assessment such as the TOSREC? Figure 2 illustrates a high correlation
+why participants took longer to respond to this sentence; it could be due            between total scores based on (a) a random sample of SRE items
+to students having to spend too much time thinking through the                       (SRE-Pilot), (b) SRE-Fixed and (c) grade-specific TOSREC test forms.
+scenario. However, the sentence was ultimately removed because the                   Despite the meticulous curation of the SRE-Fixed form, Sentence
+extended reaction time and short sentence length indicated a certain                 Reading Efficiency seems to be a stable construct that (a) is reliably
+level of confusion. After removing 38 sentences with low agreement rates             measured with a short, online assessment and (b) varies substantially
+and 1 short sentence that had a longer-than average response time, 160               across participants. The variability in reading efficiency is so
+sentences remained for construction of a final test form.                            substantial that the intricacies of the sentences play a relatively minor
+                                                                                     role in comparison. Factors like sentence length will, of course, impact
+Creating the final test form                                                         scores but do not seem to have a large impact on the rank ordering of
+     To obtain an equal number for true and false sentences in the final             participants. Thus, authoring sentences with a specific framework can
+sample, the remaining 160 sentences were categorized into three item                 aid in the interpretability but sentence characteristics are not the
+difficulty (“easy,” “medium,” “hard”) bins based on the agreement rate.              primary factor driving individual differences.
+Sentences with an agreement rate above 95% were classified as “easy,”
+those between 95 and 90% as “medium,” and those below 90% as
+“hard.” The R package MatchIt was utilized to generate pairs of true                 Study 1: discussion and limitations
+and false sentences for each difficulty by using agreement rate as a
+covariant to estimate propensity scores. Every true sentence was                          We proposed a revised construct to the conventional sentence
+matched with an available false sentence that had the closest                        reading fluency task, which we refer to as sentence reading
+propensity score, and any unmatched sentences were removed from                      efficiency. This new construct entails a revised interpretation of the
+the final item bank. Once the matched pairs were established, a total                purpose of true/false statements used commonly in silent sentence
+
+
+Frontiers in Education                                                          05                                                                  frontiersin.org
+
+<a id="pdf-p6"></a>
+### [PDF p.6] Yeatman et al. 10.3389/feduc.2024.1494431
+- Locator: `R710-development-and-validation-of-a-rapid-and-precise-online-sentence-reading-effici.pdf` · página **6** / 14
+
+Yeatman et al.                                                                                                                10.3389/feduc.2024.1494431
+
+
+
+
+    FIGURE 3
+    Gamified ROAR-SRE task. The new version of ROAR-SRE implemented for Study 2 allowed students to choose an animated character to narrate their
+    task instructions. The task was embedded in a short story to be engaging for young participants. Optionally, the ROAR-SRE task could be run without
+    characters or gamification for older students.
+
+
+
+
+reading fluency tasks (Wagner et al., 2010; Johnson et al., 2011;                 correspondence between ROAR-SRE and TOSREC in a large and
+Wagner, 2011), whereby the focus is less on testing comprehension                 diverse sample spanning first through eighth grade. This analysis
+and more on assessing speed or efficiency. Consequently, sentences                serves to determine (a) the reliability of an online sentence reading
+must be simple and unambiguous without low-frequency                              efficiency measure in a natural, large-scale school setting, and (b)
+vocabulary words and with minimal requirements in terms of                        examine the suitability of using a single form of simple sentences in a
+background knowledge.                                                             fixed order (SRE-Fixed) to measure reading efficiency across a broad
+    Through our case study, we demonstrate that agreement rate,                   age range.
+response time, and sentence length seem to effectively distinguish
+problematic sentences from suitable sentences. Sentences that were
+highly agreeable contained unambiguous assertions that did not                    Study 2: methods
+require specific content knowledge to validate their truth
+(unambiguously True), or were fantastical and unrelated to real-world                  ROAR assessments were administered to 3,660 participants,
+experiences (unambiguously False). Conversely, flagged sentences                  across 23 schools through a research-practice-partnership (RPP)
+varied in their reasons for being challenging. These included there               model. Many of these schools specialized in supporting students with
+being reasonable arguments for either a true or false endorsement,                language-based learning difficulties such as dyslexia, dyscalculia, or
+depicting scenarios that required imaginative thinking to resolve, or             dysgraphia (see Table S1 for school demographics). Four ROAR
+otherwise being generally confusing. A major limitation of this study             assessments were included in this research: ROAR Single Word
+was that the qualitative review of flagged sentences is susceptible to            Recognition (ROAR-SWR; Yeatman et al., 2021; Ma et al., 2023),
+confirmation bias, and there are likely other factors at play beyond the          ROAR Sentence Reading Efficiency (ROAR-SRE; White et al., 2022;
+ones we considered.                                                               Burkhardt et al., 2023), ROAR Phonological Awareness (ROAR-PA;
+    This first study provides guidance on how to craft and flag                   Gijbels et al., 2023), and ROAR Vocabulary (ROAR-Vocab). At each
+sentences that could potentially result in inaccurate inferences of               ROAR administration, students completed a varying mix of the
+reading efficiency. Our analysis suggests that sentences should                   assessments, depending on the interests of their district. The following
+be written to either resonate with lived experience for students (true            analyses focus on ROAR-SRE. For Study 2, a new version of
+sentences) or should be fantastical in nature (false sentences). Study 1          ROAR-SRE was built to (a) precisely log timing and (b) provide the
+resulted in a clearer definition of the SRE construct and a SRE test              option for light gamification to be more engaging for young children
+form (“SRE-Fixed”) that could be studied in a larger, quantitative                (Figure 3). All participants in Study 2 completed the gamified version
+validation study (Study 2).                                                       of the assessment.
+                                                                                       Data were analyzed with generalized additive models (GAMs) to
+                                                                                  link ROAR-SRE raw scores to TOSREC standard scores. Rather than
+Study 2: validation of ROAR-SRE in a                                              fitting a separate model for each age/grade, we instead fit a single
+school setting                                                                    GAM with a 2d smoother on ROAR-SRE raw scores and age. We used
+                                                                                  a tensor smoother since the two covariates (raw score and age) have
+    The goal of Study 2 was to validate ROAR-SRE as a rapid screening             different units. We set k = 3 (three basis functions or knots) to ensure
+tool in a school setting. To this end we first examine the                        that we did not overfit the data. The model syntax was as follows:
+
+Frontiers in Education                                                       06                                                               frontiersin.org
+
+<a id="pdf-p7"></a>
+### [PDF p.7] Yeatman et al. 10.3389/feduc.2024.1494431
+- Locator: `R710-development-and-validation-of-a-rapid-and-precise-online-sentence-reading-effici.pdf` · página **7** / 14
+
+Yeatman et al.                                                                                                                10.3389/feduc.2024.1494431
+
+
+
+
+    FIGURE 4
+    Distribution of median response time (RT) and proportion correct for SRE and TOSREC. Participants displaying extremely rapid responses performed
+    near chance on both assessments indicative of disengagement and/or rapid guessing behavior. The same cut points, as indicated by the red lines, were
+    established to flag subjects exhibiting this behavior. Note that SRE exhibits less variation in response time and proportion correct than TOSREC
+    indicating that SRE items adhere to the criteria for determining suitable sentences that was established in Study 1.
+
+
+
+
+                  gam  tosrec ~ te ( SRE,Age,k 3) 
+                                                =                                     We then fit a generalized additive model (GAM) using tensor
+                                                                                 smoothing and the default parameters in the mgcv package (Wood
+                                                                                 and Wood, 2015; Wood, 2017) to link ROAR-SRE scores and age to
+                                                                                 TOSREC Standard scores. We found a strong and systematic
+Study 2: results                                                                 relationship between ROAR-SRE and TOSREC for students across
+                                                                                 this broad age range (Figure 5). Moreover, the correlation between
+Comparison of ROAR-SRE and TOSREC                                                ROAR-SRE and TOSREC was similar across every grade level (e.g.,
+     We first ask whether the SRE-Fixed form created in Study 1 can              r = 0.85 in 1st grade and r = 0.89 in 8th grade). The stability of the
+serve as a measure of silent sentence reading efficiency across a broad          SRE - TOSREC relationship across an 8 year developmental window
+age range spanning 1st through 8th grade. To answer this question,               is surprising given that the simple sentences might seem to be a more
+we analyzed the data of 1,727 1st - 8th graders (Figures 4, 5) who               suitable measure for younger versus older students. This finding
+completed the SRE-Fixed and TOSREC forms (TOSREC has separate                    supports the notion that sentence reading efficiency is a reliable
+test forms for each grade). We first analyzed the distribution of the            construct across the grades and that items need not vary in syntax,
+participants’ accuracy and response time for SRE-Fixed and TOSREC                vocabulary or content knowledge to accurately measure
+items (Figure 4) and noted a bimodal distribution. Most students were            reading efficiency.
+very accurate on both SRE-Fixed (median = 94.9%) and TOSREC
+(median = 85.7%) with an interquartile range of median RTs spanning
+1,941–3,423 ms for SRE-Fixed and 2,879–5,143 ms for                              Study 2: discussion and limitations
+TOSREC. However, there was also a cluster of students with extremely
+fast (<1,000 ms) or slow (>20,000 ms) response times, and accuracy                    We found that a single test form of simple sentences predicted a
+near chance (<65% correct) likely indicating that they were not taking           substantial portion of the variance in TOSREC scores across grades 1–8.
+the assessment seriously and engaging in rapid guessing or idle                  This finding indicates that reading efficiency—or the speed with which
+behavior. Both these behaviors result in scores not representative of            students can silently read sentences for understanding—is the primary
+true ability. Hartigan’s dip test (Hartigan and Hartigan, 1985)                  source of variability in performance on an assessment that was designed
+confirmed a bimodal distribution of response accuracy on both                    to measure a variety of reading skills with test forms that progress in
+SRE-Fixed (D = 0.039, p < 0.000001) and TOSREC (D = 0.014,                       difficulty across the grades. We argue that reading efficiency has the
+p = 0.026). Based on these criteria, we excluded 133 participants who            benefit of increased interpretability since items were designed to have
+met the criteria of less than 65% correct, and median response time              minimal comprehension demands. This interpretation is supported by
+less than 1,000 ms or greater than 20,000 ms.                                    the fact that there is much less variability in the accuracy with which
+
+
+Frontiers in Education                                                      07                                                               frontiersin.org
+
+<a id="pdf-p8"></a>
+### [PDF p.8] Yeatman et al. 10.3389/feduc.2024.1494431
+- Locator: `R710-development-and-validation-of-a-rapid-and-precise-online-sentence-reading-effici.pdf` · página **8** / 14
+
+Yeatman et al.                                                                                                                10.3389/feduc.2024.1494431
+
+
+
+
+    FIGURE 5
+    ROAR-SRE provides a reliable and valid measure of reading efficiency and comprehension between grades 1 and 8. Age-standardized scores on ROAR-
+    SRE accurately predict age standardized TOSREC scores for every age (r = 0.87 based on a generalized additive model; r = 0.87 based on a local
+    regression model). This means that (a) ROAR-SRE has high test-reliability (greater than r = 0.87) and (b) the consistent measurement scale adopted by
+    ROAR-SRE is a valid measure of reading efficiency and comprehension between grades 1 and 8.
+
+
+
+
+students answer questions on SRE versus TOSREC (Figure 4). However,               administered, standardized assessments of reading fluency, decoding,
+the relationship between SRE and other measures of comprehension                  and reading speed.
+will be an important question for future research. It is well established
+that reading efficiency construct is important in reading development
+and contributes to comprehension (Pikulski and Chard, 2005; Kim                   Study 3: methods
+et al., 2012, 2014; Silverman et al., 2013). Moreover, since TOSREC has
+been shown to be highly predictive of high-stakes, summative reading                   Participants for Study 3 were recruited through two methods. The
+assessments [e.g., state tests (Johnson et al., 2011)], we surmise that           initial set of validation data was obtained from a longitudinal study of
+ROAR-SRE is likely to show similar results. However, evaluating the               children with dyslexia (ages 8–14; grades 2–8), where the trained
+predictive validity of ROAR-SRE as a screener and the precision of the            researcher coordinators individually administered standardized
+tool for progress monitoring is an important future direction.                    assessments and participants then completed ROAR-SRE. The rest of
+     A limitation of Study 2 was that both measures (SRE and                      the sample comprised 3rd grade students from a local school district
+TOSREC) were presented in the same online platform meaning that                   that agreed to participate in the validation study (see Table S1 for
+some of the shared variance could be due to extraneous factors such               school demographics). 3rd grade was selected for validation because
+as student engagement in an unproctored online assessment. Thus                   it is the most common age for a dyslexia diagnosis. To conduct
+further validation is warranted to compare ROAR-SRE to a wider                    in-person validations in schools, a team of 7 researcher coordinators
+battery of measures of word and sentence reading (which                           administered assessments to the students. All research coordinators
+we undertake in Study 3).                                                         completed human subjects research training, practiced extensively,
+                                                                                  and shadowed senior administrators before conducting assessments
+                                                                                  on students. Moreover, each research coordinator completed training
+Study 3: construct validity of                                                    with feedback until they were able to reliably administer
+ROAR-SRE: validation against                                                      each assessment.
+individually administered reading                                                      The selection of students was based on the interest of parents and
+assessments                                                                       teachers. Prior to the research, parents and guardians were given the
+                                                                                  opportunity to opt their students out of the research. Teachers were
+   To confirm that the validation results in Study 2 did not reflect              also informed, and their interest in the research was conveyed to the
+something esoteric about either the way that (a) measures were                    district superintendent, who then notified the research team. Students
+implemented in the ROAR platform or (b) participants interact with                were pulled out of their classrooms to complete the following
+unproctored online assessments, we ran an additional study of                     standardized, individually-administered reading assessments: (1)
+construct validity to compare ROAR-SRE to individually                            Woodcock Johnson IV Tests of Achievement Sentence Reading
+
+
+Frontiers in Education                                                       08                                                               frontiersin.org
+
+<a id="pdf-p9"></a>
+### [PDF p.9] Yeatman et al. 10.3389/feduc.2024.1494431
+- Locator: `R710-development-and-validation-of-a-rapid-and-precise-online-sentence-reading-effici.pdf` · página **9** / 14
+
+Yeatman et al.                                                                                                          10.3389/feduc.2024.1494431
+
+
+
+
+Fluency (WJ-SRF) which is similar to ROAR-SRE - participants                  possibility of more regular progress monitoring with a quick and
+silently read sentences as quickly as possible and endorse as true of         automated 1 min assessment. Moreover, given the correspondence
+false - but it is administered on paper in a one-on-one setting; (2)          between ROAR-SRE, TOSREC, WJ and TOWRE scores, there is
+Letter Word Identification (WJ-LWID) in which participants read               reason to be optimistic that ROAR-SRE could also serve to predict
+words out loud and are scored for accuracy; (3) Word Attack (WJ-WA)           end-of-year outcomes on measures of comprehension. However the
+in which participants read pseudowords out loud and are scored for            predictive validity of ROAR-SRE remains an open question for
+accuracy (Schrank et al., 2014); (4) Test of Word Reading Efficiency          future research. Moreover, Study 3 employed a limited set of
+Sight Word Efficiency (TOWRE-SWE) in which participants read lists            outcome measures that leave open the questions of (a) how well
+of real words as quickly and accurately as possible; (5) Phonemic             ROAR-SRE predicts more comprehensive summative assessments
+Decoding Efficiency (TOWRE-PDE) in which participants read lists              and (b) how strong the relationship is between silent sentence
+of pseudowords as quickly and accurately as possible (Torgesen et al.,        reading efficiency and oral read fluency (ORF). ORF is widely used
+2011). Each student had also completed ROAR-SRE within 2 months               by schools for progress monitoring and benchmarking and, based
+prior as part of their regular school day without the presence                on other studies, we expect a lot of similarity between oral and silent
+of researchers.                                                               reading (Denton et al., 2011; Wagner, 2011; Price et al., 2016).
+                                                                              However, a direct comparison between ROAR-SRE and various ORF
+                                                                              measures is an important future direction in order to determine if
+Study 3: results                                                              (a) one measure is superior for a given application versus (b) both
+                                                                              measures provide complementary information. Finally, Study 3 only
+Construct validity of ROAR-SRE                                                examined one SRE-Fixed test form; for this measure to be useful in
+     We found a strong correlation between ROAR-SRE and WJ-SRF                a school context parallel form reliability is critical. We tackle this
+in both samples (r = 0.82, r = 0.91) (Figures 6A, B). In addition,            question in Study 4.
+ROAR-SRE was moderately correlated with untimed, single word
+reading accuracy (WJ-LWID, r = 0.69), untimed pseudoword reading
+accuracy (WJ-WA, r = 0.59), real word list reading speed                      Study 4: comparison of
+(TOWRE-SWE, r = 0.66), and pseudoword list reading speed                      human-authored versus AI-authored
+(TOWRE-PDE, r = 0.57). This pattern of correlations supports the              items
+notion that sentence reading efficiency is a separable, yet highly
+related construct, to single word reading speed and accuracy.                     Previous work (1) explored the potential of prompting a large
+                                                                              language model (LLM) to generate new true and false sentences to
+What is the ideal length of a silent sentence                                 enhance the item bank (White et al., 2022), and (2) created a “item
+reading efficiency assessment?                                                response simulator” (based on fine-tuning a large language model)
+    Many assessments of sentence reading fluency/efficiency are               to calibrate these LLM-generated items and created parallel test
+3 min by convention but previous work has not systematically                  forms for ROAR-SRE (Zelikman et al., 2023). This approach
+analyzed the relationship between assessment length and reliability.          separates the item generation process (which can use a variety of
+Study 3 employed a newer version of the ROAR-SRE web application              models that need not be as large as the current state-of-the-art), and
+that precisely logged timing information. This timing information was         the item calibration process which uses a simulation to arrange
+used to calculate each participants’ ROAR-SRE score at 10 s time              items into matched test forms. The goals of Study 4 were to (a)
+intervals which was then correlated against the full 3 min WJ-SRF             assess the validity of these AI-generated test forms in a large and
+scores. The correlation between ROAR-SRE and TOSREC increased                 diverse sample and (b) determine the alternate form reliability for
+as a function of assessment length. However, the correspondence               ROAR-SRE. The two AI-generated test forms used in Study 4 were
+between the two measures hit a peak between 60 and 90 s (Figure 6C)           the exact forms generated by the item response simulator in
+indicating that the remaining assessment time did not further                 Zelikman et al. (2023). In brief, these test forms were created
+contribute to the reliability of the measure.                                 through a process of prompt engineering as well as training a neural
+                                                                              network model to predict student response patterns to new,
+                                                                              GPT-generated items.
+Study 3: discussion and limitations
+
+    Study 3 demonstrated that the unproctored, online ROAR-SRE                Study 4: methods
+assessment was highly correlated with a similar, standardized
+measure delivered one-on-one in person (WJ SRF). This provides                    ROAR assessments were administered to 1,110 students (grades
+strong evidence for the concurrent validity of an online measure.             1–12), across 11 schools across three states through an RPP model (see
+Moreover, the stronger correspondence between sentence reading                Table S1 for school demographics). Each participant completed two
+(WJ-SRF) versus single word decoding (WJ-LWID and WJ-WA) and                  separate three-minute long ROAR-SRE test forms: (1) SRE-Fixed from
+single word reading efficiency (TOWRE) measures demonstrated                  Study 2/3 and (2) one of two AI-generated parallel test forms from the
+that sentence and word reading are related but dissociable constructs         student response simulator. The order of the test forms was
+as highlighted in other work (Silverman et al., 2013). Finally, the           randomized across participants. Data points were excluded from
+analysis of assessment length demonstrated that even a quick 1 min            analysis based on the criteria for random guessing and disengagement
+SRE measure achieves high reliability. This finding opens the                 established in Study 2.
+
+
+Frontiers in Education                                                   09                                                            frontiersin.org
+
+<a id="pdf-p10"></a>
+### [PDF p.10] Yeatman et al. 10.3389/feduc.2024.1494431
+- Locator: `R710-development-and-validation-of-a-rapid-and-precise-online-sentence-reading-effici.pdf` · página **10** / 14
+
+Yeatman et al.                                                                                                                   10.3389/feduc.2024.1494431
+
+
+
+
+    FIGURE 6
+    ROAR-SRE is highly correlated to standardized, individually-administered, in-person assessments of reading fluency. (A) 3rd grade public school
+    sample demonstrating a strong correlation between ROAR-SRE completed unproctored in the classroom and WJ SRF which was individually
+    administered to each student. (B) N = 83 participants from ongoing dyslexia studies within the lab (grades 2–8 or higher; colors indicate grades as
+    Figure 5) were individually administered WJ and completed ROAR-SRE at home. (C) Correlation between ROAR-SRE and WJ-SRF as a function of
+    assessment time.
+
+
+
+
+Study 4: results                                                                   with caution and continue to document the edge cases where
+                                                                                   generative AI makes mistakes. For example, items still need to
+     Scores on the three test forms were highly correlated (r = 0.88 for           be examined by a human for suitability in a given context (Zelikman
+SRE-Fixed and AI-Form-A; r = 0.89 for SRE-Fixed and AI-Form-B;                     et al., 2023). Moreover, the variability in stimuli generated by the LLM
+Figure 7 top panel) indicating that (a) AI generated parallel test forms           has not been carefully examined and it is likely that additional work
+from the student response simulator are well matched to human                      will need to be done to ensure that the distribution of AI-authored
+authored test forms, and (b) ROAR-SRE has exceptional parallel form                forms truly incorporates the wealth of human knowledge on
+reliability. We next computed parallel form reliability as a function of           assessment design. Thus, at each phase of development it is important
+assessment time and found that a 60 s ROAR-SRE assessment was                      to incorporate the voices of many stakeholders - from teachers to
+highly reliable (r = 0.79 for AI-Form-A; r = 0.80 for AI-Form-B;                   school      administrators      to      students,     researchers     and
+Figure 7 bottom panel) and that reliability only marginally increased              technology developers.
+after 60 s. The median difference between AI-Form A and SRE-Fixed
+was 3.5 and the median difference between AI-Form B and
+SRE-Fixed was 3.                                                                   General discussion
+
+                                                                                        Literacy unlocks a new form of communication through written
+Study 4: discussion and limitations                                                language. Skilled readers are largely able to use written language
+                                                                                   and spoken language interchangeably; from a neuroscience
+    Study 4 validated the technical advancements of previous work                  standpoint, the literate brain processes speech and text using much
+(Zelikman et al., 2023) in a real world setting. Specifically, we validated        of the same circuitry (Preston et al., 2016; Deniz et al., 2019;
+that an LLM could be trained to generate parallel test forms and that,             Yeatman and White, 2021). However, achieving this level of literacy
+in practice, these AI-generated forms are consistent with human-                   requires systematic instruction coupled with years of practice. The
+authored forms. However the correspondence between scores on                       challenge for the young reader is to master foundational reading
+AI-generated and human-authored test forms were not perfect                        skills such that word recognition becomes effortless and automatic
+suggesting that the Item Response Simulator from Zelikman et al.                   and text can be decoded with a level of fluency such that
+(2023) might need additional modifications for zero-shot parallel test             comprehension of written language and spoken language are
+form generation. Alternatively, post-hoc equating methods could                    equivalent (Yeatman, 2022). Even though the end goal of literacy is
+be used to equate scores across forms (van der Linden, 2013; Kolen                 comprehension, the barrier for many children is mastering
+and Brennan, 2014).                                                                foundational skills: individual words must be decoded accurately
+    The technical advance in automated form generation, coupled                    and efficiently to achieve fluency at the word, sentence, and
+with the reliability and scalability of ROAR-SRE, open the possibility             paragraph level. Particularly for children with dyslexia, mastering
+of more regular progress monitoring that is potentially integrated with            decoding and fluency is a considerable challenge (Wolf and Katzir-
+other technology and products used in the classroom. However, even                 Cohen, 2001; Katzir et al., 2006; Peterson and Pennington, 2012;
+though it is theoretically possible to scale this approach to generate an          Reis et al., 2020). Even though comprehension is the end goal of
+infinite number of matched test forms, it is also important to proceed             reading instruction, reading fluency is the bottleneck for many
+
+
+
+
+Frontiers in Education                                                        10                                                                 frontiersin.org
+
+<a id="pdf-p11"></a>
+### [PDF p.11] Yeatman et al. 10.3389/feduc.2024.1494431
+- Locator: `R710-development-and-validation-of-a-rapid-and-precise-online-sentence-reading-effici.pdf` · página **11** / 14
+
+Yeatman et al.                                                                                                               10.3389/feduc.2024.1494431
+
+
+
+
+    FIGURE 7
+    Parallel form reliability for ROAR-SRE. (Top panel) Correlation between scores on the human-authored SRE-Fixed form versus two AI-authored forms.
+    (Bottom panel) parallel form reliability as a function of assessment length.
+
+
+
+
+children (particularly but not limited to those with dyslexia). Here                  A straightforward extension of this work would be to study
+we developed a new measure of silent sentence reading efficiency                 ROAR-SRE as a progress monitoring tool within a multi-tiered system
+that was designed with minimal comprehension demands in order                    of support (Deno et al., 2001; Al Otaiba and Fuchs, 2002; Fletcher
+to provide more specific, diagnostic information on the                          et al., 2006; Miciak and Fletcher, 2020). Since reliable scores can
+development of reading fluency. We use the term “efficiency” to                  be obtained in a minute, and parallel forms can be generated with AI,
+emphasize specific design decisions that were intended to make the               weekly or even daily ROAR-SRE probes should be possible to assess
+measure tap more directly into the rate at which children are able               growth curves under different intervention approaches. Equating test
+to read as opposed to other measures of “reading fluency” which                  forms remains a challenge for many other assessments [e.g., ORF
+incorporate a variety of other constructs including prosody of oral              (Francis et al., 2008)] and another strength of the SRE construct is that
+reading, syntactic knowledge, vocabulary, background knowledge                   the items are short and simple sentences which are straightforward to
+and inferencing skills. Through a series of validation studies,                  design and provide ample flexibility for equating. The SRE construct
+we showed a quick 1 min measure that is scored in real time is (a)               is mainly designed to assess speed or efficiency of word reading (with
+highly reliable, (b) explains most of the variance in other measures             a check on understanding); establishing sufficient speed can be a
+of reading fluency, (c) can efficiently be deployed at scale, and (d)            major barrier for children with dyslexia (Catts et al., 2024). Thus,
+is amenable to automated item generation with AI.                                we see ROAR-SRE as being particularly useful within the context of
+
+
+Frontiers in Education                                                      11                                                              frontiersin.org
+
+<a id="pdf-p12"></a>
+### [PDF p.12] Yeatman et al. 10.3389/feduc.2024.1494431
+- Locator: `R710-development-and-validation-of-a-rapid-and-precise-online-sentence-reading-effici.pdf` · página **12** / 14
+
+Yeatman et al.                                                                                                               10.3389/feduc.2024.1494431
+
+
+
+
+monitoring a student’s response to intervention (RTI) in a multi-                fluidly map written language to spoken language (Pikulski and
+component, evidence-based dyslexia intervention program. In                      Chard, 2005; Kim et al., 2014). This framework predicts a causal
+combination with measures of decoding (Yeatman et al., 2021; Ma                  relationship whereby the development of more basic skills like
+et al., 2023), and phonological awareness (Gijbels et al., 2023), SRE            phonological awareness and single word reading predict the
+will be useful in more accurately pinpointing the root of a student’s            development of higher level skills like SRE which, in turn, directly
+reading difficulties and adjusting instruction accordingly.                      influences comprehension. However this hypothesis will need to
+     Another strength of ROAR-SRE is that it spans a broad age range             be tested with longitudinal data.
+and is a reliable measure from elementary through high-school. Thus,                 In summary, we developed a new measure indexing the speed at
+it might also hold utility as a quick screener for dyslexia. In most             which students can read sentences for comprehension. We presented
+districts it is not currently standard of practice to screen for dyslexia        an argument for the face validity of this measure along with a sequence
+or decoding issues more broadly after 2nd or 3rd grade and dyslexia              of validation studies establishing reliability and construct validity in a
+screening legislation usually focuses on kindergarten through second             laboratory and school setting, for students spanning grades 1–12.
+grade. However many students continue to struggle and their struggles            We believe that the construct of sentence reading efficiency is more
+either go unnoticed or are misattributed to poor comprehension since             interpretable than other, related measures, and will provide a useful
+reading comprehension is the most common assessment target above                 bridge between basic reading skills and higher-level indices of
+3rd grade. Though comprehension is, of course, a specific struggle for           reading comprehension.
+many students (Nation et al., 2010; Foorman et al., 2018; Spencer and
+Wagner, 2018), there is a growing spotlight on decoding problems
+being the bottle-neck for others (Wang et al., 2019). For example, the           Data availability statement
+most recent National Assessment of Educational Progress (NAEP)
+found that measures of ORF and pseudoword reading were correlated                     The datasets presented in this article are not readily available due
+with performance on the NAEP (White et al., 2021). This opens the                to data sharing agreements with partnering school districts that have
+possibility that some children who perform poorly on the NAEP (and               strict stipulations on data re-use and sharing. Requests to access the
+state reading assessments) have yet to establish foundational decoding           datasets should be directed to jyeatman@stanford.edu.
+skills and, for this subset of students, poor decoding might be conflated
+with poor comprehension unless additional assessments are used to
+dissociate these skills. Fortunately, for students with decoding                 Ethics statement
+challenges there is a robust science of reading laying out how to teach
+decoding across the grades (Castles et al., 2018; Lovett et al., 2021).              The studies involving humans were approved by Stanford
+     An open question is how SRE should fit into the broader landscape           University Institutional Review Board. The studies were conducted
+of reading assessments. For example, many schools rely on ORF to                 in accordance with the local legislation and institutional
+benchmark reading development (Fuchs et al., 2001; Domingue et al.,              requirements. The ethics committee/institutional review board
+2022). A more nuanced comparison of (a) the constructs measured by               waived the requirement of written informed consent for
+ORF versus SRE and (b) the psychometric properties of each measure               participation from the participants or the participants’ legal
+will be important for determining the most efficacious use of this new           guardians/next of kin.
+measure. Since achieving fluent reading is the main barrier for
+children with dyslexia as they progress through schooling, SRE might
+be useful for screening and assessing intervention efficacy. However,            Author contributions
+the design decisions that went into SRE could also be a limitation for
+certain applications. For example, if the goal is a quick screener to                JY: Conceptualization, Data curation, Formal analysis, Funding
+predict end-of-the-year, high stakes assessments, then minimizing                acquisition, Investigation, Methodology, Project administration,
+demands on vocabulary, syntax and background knowledge might                     Resources, Software, Supervision, Validation, Visualization, Writing
+be a weakness. With the goal of prediction, the best performing                  – original draft, Writing – review & editing. JT: Data curation, Formal
+screener is usually the one that is most similar to the outcome. Thus,           analysis, Investigation, Methodology, Visualization, Writing –
+in this use case, SRE should be combined with other measures that                original draft, Writing – review & editing. AB: Investigation,
+specifically target vocabulary, morphology, syntax and                           Methodology, Writing – original draft, Writing – review & editing.
+inferencing skills.                                                              WM: Formal analysis, Investigation, Methodology, Resources,
+     Reading development is often conceptualized as a sequence or                Writing – original draft, Writing – review & editing. JM:
+hierarchy of interrelated skills with phonological awareness and                 Methodology, Software, Writing – original draft, Writing – review &
+letter sound knowledge forming the foundation upon which single                  editing. MY: Methodology, Writing – original draft, Writing – review
+word decoding and then sentence reading are built (Hudson et al.,                & editing. LG: Data curation, Investigation, Methodology, Writing
+2008; Castles et al., 2018). Under the simple view of reading,                   – original draft, Writing – review & editing. CT-F: Investigation,
+comprehension is the interaction between skills in decoding and oral             Methodology, Project administration, Writing – original draft,
+language (Hoover and Gough, 1990). Under this framework, SRE                     Writing – review & editing. AR-H: Investigation, Methodology,
+can be viewed as a high-level decoding skill that bridges between                Project administration, Resources, Software, Writing – original draft,
+basic decoding knowledge and the automaticity that is required to                Writing – review & editing.
+
+
+
+
+Frontiers in Education                                                      12                                                              frontiersin.org
+
+<a id="pdf-p13"></a>
+### [PDF p.13] Yeatman et al. 10.3389/feduc.2024.1494431
+- Locator: `R710-development-and-validation-of-a-rapid-and-precise-online-sentence-reading-effici.pdf` · página **13** / 14
+
+Yeatman et al.                                                                                                                                                10.3389/feduc.2024.1494431
+
+
+
+
+Funding                                                                                               Conflict of interest
+    The author(s) declare that financial support was received for the                                      BA was employed by Cambium Assessment Inc.
+research, authorship, and/or publication of this article. This work was                                    The remaining authors declare that the research was conducted in
+funded by NICHD R01HD095861 Advanced Educational Research and                                         the absence of any commercial or financial relationships that could
+Development Fund, Stanford-Sequoia K-12 Research Collaborative,                                       be construed as a potential conflict of interest.
+Stanford Impact Labs, and Neuroscience: Translate grants to J.D.Y.                                         The reviewer RH declared a shared affiliation with the author LG
+                                                                                                      to the handling editor at the time of review.
+
+Acknowledgments
+    We would like to thank the school districts, families and students                                Publisher’s note
+that made this research possible through a research practice
+partnership model. We would also like to thank Nick Haber and Eric                                        All claims expressed in this article are solely those of the authors
+Zelikman for technical support in applying previous work to create                                    and do not necessarily represent those of their affiliated
+AI-generated parallel test forms, Tonya Murray, Albu Ungashe and                                      organizations, or those of the publisher, the editors and the reviewers.
+other research coordinators for support of research practice                                          Any product that may be evaluated in this article, or claim that may
+partnerships, and Joshua Lawrence and Rebecca Silverman for helpful                                   be made by its manufacturer, is not guaranteed or endorsed by
+feedback and discussion of the manuscript.                                                            the publisher.
+
+
+
+References
+  Al Otaiba, S., and Fuchs, D. (2002). Characteristics of children who are unresponsive                 Fuchs, L. S., Fuchs, D., Hosp, M. K., and Jenkins, J. R. (2001). Oral reading fluency as
+to early literacy intervention: a review of the literature. Remedial Spec. Educ. 23, 300–316.         an Indicator of reading competence: a theoretical, empirical, and historical analysis. Sci.
+doi: 10.1177/07419325020230050501                                                                     Stud. Read. 5, 239–256. doi: 10.1207/S1532799XSSR0503_3
+  Burkhardt, A., Yablonski, M., Mitchell, J., Gijbels, L., and Yeatman, J.D. (2023).                    Gijbels, L., Burkhardt, A., Ma, W. A., and Yeatman, J. D. (2023). Rapid online
+“Developing items for a silent reading efficiency task.” in National Council on                       assessment of reading and phonological awareness (ROAR-PA).
+Measurement In Education (NCME) Conference, Chicago, IL, United States.
+                                                                                                        Good, R. H., Gruba, J., and Kaminski, R. A. (2002). “Best practices in using dynamic
+  Castles, A., Rastle, K., and Nation, K. (2018). Ending the reading wars: reading acquisition        indicators of basic early literacy skills (DIBELS) in an outcomes-driven model,” in Best
+from novice to expert. Psychol. Sci. Public Interest 19, 5–51. doi: 10.1177/1529100618772271          practices in school psychology IV, Vols, ed. A. Thomas (Washington, DC, US: National
+                                                                                                      Association of School Psychologists, xv), 1–2.
+  Catts, H. W., and Hogan, T. P. (2020). Dyslexia: an ounce of prevention is better than
+a pound of diagnosis and treatment. PsyArXiv. doi: 10.31234/osf.io/nvgje                                Hartigan, J. A., and Hartigan, P. M. (1985). The dip test of Unimodality. Ann. Stat. 13,
+                                                                                                      70–84. doi: 10.1214/aos/1176346577
+  Catts, H. W., Terry, N. P., Lonigan, C. J., Compton, D. L., Wagner, R. K., Steacy, L. M.,
+et al. (2024). Revisiting the definition of dyslexia. Ann. Dyslexia. 74, 282–302. doi:                  Hoffman, A. R., Jenkins, J. E., and Dunlap, S. K. (2009). Using DIBELS: a survey of
+10.1007/s11881-023-00295-3                                                                            purposes and practices. Read. Psychol. 30, 1–16. doi: 10.1080/02702710802274820
+  Cummings, K. D., Park, Y., and Bauer Schaper, H. A. (2013). Form effects on DIBELS                    Hoover, W. A., and Gough, P. B. (1990). The simple view of reading. Read. Writ. 2,
+next oral reading fluency progress- monitoring passages. Assess. Eff. Interv. 38, 91–104.             127–160. doi: 10.1007/BF00401799
+doi: 10.1177/1534508412447010
+                                                                                                        Hudson, R. F., Pullen, P. C., Lane, H. B., and Torgesen, J. K. (2008). The complex
+  Deniz, F., Nunez-Elizalde, A. O., Huth, A. G., and Gallant, J. L. (2019). The                       nature of reading fluency: a multidimensional view. Read. Writ. Q. 25, 4–32. doi:
+representation of semantic information across human cerebral cortex during listening                  10.1080/10573560802491208
+versus reading is invariant to stimulus modality. J. Neurosci. 39, 7722–7736. doi: 10.1523/
+                                                                                                         Johnson, E. S., Pool, J. L., and Carter, D. R. (2011). Validity evidence for the test of
+JNEUROSCI.0675-19.2019
+                                                                                                      silent reading efficiency and comprehension (TOSREC). Assess. Eff. Interv. 37, 50–57.
+  Deno, S. L., Fuchs, L. S., Marston, D., and Shin, J. (2001). Using curriculum-based                 doi: 10.1177/1534508411395556
+measurement to establish growth standards for students with learning disabilities. Sch.
+                                                                                                        Jones, C. (2022). Why California is among last states not screening children for
+Psych. Rev. 30, 507–524. doi: 10.1080/02796015.2001.12086131
+                                                                                                      dyslexia. EdSource. Available at: https://edsource.org/2022/why-is-california-one-of-
+  Denton, C. A., Barth, A. E., Fletcher, J. M., Wexler, J., Vaughn, S., Cirino, P. T., et al.         the-last-states-to-not-screen-children-for-dyslexia/682543 (Accessed August 8, 2023).
+(2011). The relations among oral and silent reading fluency and comprehension in
+middle school: implications for identification and instruction of students with reading                 Kang, E. Y., and Shin, M. (2019). The contributions of reading fluency and decoding
+difficulties. Sci. Stud. Read. 15, 109–135. doi: 10.1080/10888431003623546                            to reading comprehension for struggling readers in fourth grade. Read. Writ. Q. 35,
+                                                                                                      179–192. doi: 10.1080/10573569.2018.1521758
+  Domingue, B. W., Dell, M., Lang, D., Silverman, R., Yeatman, J., and Hough, H. (2022).
+The effect of COVID on oral reading fluency during the 2020–2021 academic year.                          Katzir, T., Kim, Y., Wolf, M., O’Brien, B., Kennedy, B., Lovett, M., et al. (2006). Reading
+AERA Open 8:23328584221120254. doi: 10.1177/23328584221120254                                         fluency: the whole is more than the parts. Ann. Dyslexia 56, 51–82. doi: 10.1007/
+                                                                                                      s11881-006-0003-5
+  Domingue, B. W., Hough, H. J., Lang, D., and Yeatman, J. (2021). Changing patterns
+of growth in oral reading fluency during the COVID-19 pandemic. Working Paper.                          Kim, Y.-S. G., Park, C. H., and Wagner, R. K. (2014). Is oral/text reading fluency a
+Policy Analysis for California Education, PACE. Available at: https://eric.ed.                        “bridge” to reading comprehension? Read. Writ. 27, 79–99. doi: 10.1007/
+gov/?id=ED612595 (Accessed September 9, 2024).                                                        s11145-013-9434-7
+
+  Fletcher, J. M., Francis, D. J., Foorman, B. R., and Schatschneider, C. (2021). Early                  Kim, Y.-S., Wagner, R. K., and Lopez, D. (2012). Developmental relations between
+detection of dyslexia risk: development of brief, teacher-administered screens. Learn.                reading fluency and reading comprehension: a longitudinal study from grade 1 to grade
+Disabil. Q. 44, 145–157. doi: 10.1177/0731948720931870                                                2. J. Exp. Child Psychol. 113, 93–111. doi: 10.1016/j.jecp.2012.03.002
+  Fletcher, J. M., Lyon, G. R., Fuchs, L. S., and Barnes, M. A. (2006). Learning disabilities:          Kolen, M. J., and Brennan, R. L. (2014). Test equating, scaling, and linking: Methods
+From identification to intervention. New York: Guilford PRess.                                        and practices. New York, NY: Springer.
+  Foorman, B. R., Petscher, Y., and Herrera, S. (2018). Unique and common effects of                    Lovett, M. W., Frijters, J. C., Steinbach, K. A., Sevcik, R. A., and Morris, R. D. (2021).
+decoding and language factors in predicting reading comprehension in grades 1–10.                     Effective intervention for adolescents with reading disabilities: combining reading and
+Learn. Individ. Differ. 63, 12–23. doi: 10.1016/j.lindif.2018.02.011                                  motivational remediation to improve outcomes. J. Educ. Psychol. 113, 656–689. doi:
+                                                                                                      10.1037/edu0000639
+   Francis, D. J., Santi, K. L., Barr, C., Fletcher, J. M., Varisco, A., and Foorman, B. R.
+(2008). Form effects on the estimation of students’ oral reading fluency using DIBELS.                 Lyon, G. R., Shaywitz, S. E., and Shaywitz, B. A. (2003). A definition of dyslexia. Ann.
+J. Sch. Psychol. 46, 315–342. doi: 10.1016/j.jsp.2007.06.003                                          Dyslexia 53, 1–14. doi: 10.1007/s11881-003-0001-9
+
+
+
+
+Frontiers in Education                                                                           13                                                                              frontiersin.org
+
+<a id="pdf-p14"></a>
+### [PDF p.14] Yeatman et al. 10.3389/feduc.2024.1494431
+- Locator: `R710-development-and-validation-of-a-rapid-and-precise-online-sentence-reading-effici.pdf` · página **14** / 14
+
+Yeatman et al.                                                                                                                                                     10.3389/feduc.2024.1494431
+
+
+
+
+   Ma, W. A., Richie-Halford, A., Burkhardt, A., Kanopka, K., Chou, C., Domingue, B.,                       Torgesen, J. K., Wagner, R., and Rashotte, C. (2011). TOWRE 2: Test of word reading
+et al. (2023). ROAR-CAT: rapid online assessment of reading ability with computerized                    efficiency: Pearson Clinical Assessment.
+adaptive testing.
+                                                                                                           van der Linden, W. J. (2013). Some conceptual issues in observed-score equating. J.
+  Miciak, J., and Fletcher, J. M. (2020). The critical role of instructional response for                Educ. Meas. 50, 249–285. doi: 10.1111/jedm.12014
+identifying dyslexia and other learning disabilities. J. Learn. Disabil. 53, 343–353. doi:
+                                                                                                           Wagner, R. K. (2011). Relations among Oral reading fluency, silent reading fluency,
+10.1177/0022219420906801
+                                                                                                         and reading comprehension: a latent variable study of first-grade readers. Sci. Stud. Read.
+  Nation, K., Cocksey, J., Taylor, J. S. H., and Bishop, D. V. M. (2010). A longitudinal                 15, 338–362. doi: 10.1080/10888438.2010.493964
+investigation of early reading and language skills in children with poor reading
+                                                                                                           Wagner, R. K., Torgesen, J. K., Rashotte, C. A., and Pearson, N. A. (2010). Test of silent
+comprehension. J. Child Psychol. Psychiatry 51, 1031–1039. doi:
+                                                                                                         reading efficiency and comprehension. Pro Ed.
+10.1111/j.1469-7610.2010.02254.x
+                                                                                                           Wang, Z., Sabatini, J., O’Reilly, T., and Weeks, J. (2019). Decoding and reading
+  Odegard, T. N., Farris, E. A., Middleton, A. E., Oslund, E., and Rimrodt-Frierson, S.
+                                                                                                         comprehension: a test of the decoding threshold hypothesis. J. Educ. Psychol. 111,
+(2020). Characteristics of students identified with dyslexia within the context of state
+                                                                                                         387–401. doi: 10.1037/edu0000302
+legislation. J. Learn. Disabil. 53, 366–379. doi: 10.1177/0022219420914551
+                                                                                                           Ward-Lonergan, J. M., and Duthie, J. K. (2018). The state of dyslexia: recent legislation
+  Peirce, J., Gray, J. R., Simpson, S., MacAskill, M., Höchenberger, R., Sogo, H., et al.
+                                                                                                         and guidelines for serving school-age children and adolescents with dyslexia. Lang.
+(2019). PsychoPy2: experiments in behavior made easy. Behav. Res. Methods 51,
+                                                                                                         Speech Hear. Serv. Sch. 49, 810–816. doi: 10.1044/2018_LSHSS-DYSLC-18-0002
+195–203. doi: 10.3758/s13428-018-01193-y
+                                                                                                           White, J., Burkhardt, A., Yeatman, J., and Goodman, N. (2022). Automated generation
+  Peirce, J., and MacAskill, M. (2018). Building experiments in PsychoPy. SAGE
+                                                                                                         of sentence reading fluency test items. Proceedings of the Annual Meeting of the
+Publications Ltd.
+                                                                                                         Cognitive Science Society 44. Available at: https://escholarship.org/uc/item/3804p0ff
+  Peterson, R. L., and Pennington, B. F. (2012). Developmental dyslexia. Lancet 379,                     (Accessed June 20, 2022).
+1997–2007. doi: 10.1016/S0140-6736(12)60198-6
+                                                                                                           White, S., Sabatini, J., Park, B. J., Chen, J., Bernstein, J., and Li, M. (2021). The 2018 NAEP
+  Pikulski, J. J., and Chard, D. J. (2005). Fluency: bridge between decoding and reading                 Oral reading fluency study. NCES 2021–025. National Center for Education Statistics.
+comprehension. Read. Teach. 58, 510–519. doi: 10.1598/RT.58.6.2                                          Available at: https://files.eric.ed.gov/fulltext/ED612204.pdf (Accessed September 9, 2024).
+  Preston, J. L., Molfese, P. J., Frost, S. J., Mencl, W. E., Fulbright, R. K., Hoeft, F., et al.          Wolf, M., and Katzir-Cohen, T. (2001). Reading fluency and its intervention. Sci. Stud.
+(2016). Print-speech convergence predicts future reading outcomes in early readers.                      Read. 5, 211–239. doi: 10.1207/S1532799XSSR0503_2
+Psychol. Sci. 27, 75–84. doi: 10.1177/0956797615611921
+                                                                                                           Wood, S. N. (2017). Generalized additive models: An introduction with R. Second
+  Price, K. W., Meisinger, E. B., Louwerse, M. M., and D’Mello, S. (2016). The                           Edn: CRC Press.
+contributions of Oral and silent reading fluency to reading comprehension. Read.
+                                                                                                           Wood, S., and Wood, M. S. (2015). Package “mgcv.” R package version 1, 729.
+Psychol. 37, 167–201. doi: 10.1080/02702711.2015.1025118
+                                                                                                           Yeatman, J. D. (2022). The neurobiology of literacy. In M. J. Snowling and C. Hulme, K.
+  Reis, A., Araújo, S., Morais, I. S., and Faísca, L. (2020). Reading and reading-related
+                                                                                                         Nation (Eds.), The science of reading: A handbook (2nd ed., pp. 533–555). Wiley
+skills in adults with dyslexia from different orthographic systems: a review and meta-
+                                                                                                         Blackwell. doi: 10.1002/9781119705116.ch24
+analysis. Ann. Dyslexia 70, 339–368. doi: 10.1007/s11881-020-00205-x
+                                                                                                           Yeatman, J. D., Tang, K. A., Donnelly, P. M., Yablonski, M., Ramamurthy, M.,
+  Rice, M., and Gilson, C. B. (2023). Dyslexia identification: tackling current issues in
+                                                                                                         Karipidis, I. I., et al. (2021). Rapid online assessment of reading ability. Sci. Rep. 11:6396.
+schools. Interv. Sch. Clin. 58, 205–209. doi: 10.1177/10534512221081278
+                                                                                                         doi: 10.1038/s41598-021-85907-x
+  Samuels, S. J. (2007). The DIBELS tests: is speed of barking at print what we mean by
+                                                                                                           Yeatman, J. D., and White, A. L. (2021). Reading: the confluence of vision and
+reading fluency? Read. Res. Q. 42, 563–566.
+                                                                                                         language. Annu. Rev. Vis. Sci. 7, 487–517. doi: 10.1146/annurev-vision-093019-113509
+ Schrank, F. A., McGrew, K. S., Mather, N., Wendling, B. J., and LaForte, E. M. (2014).
+                                                                                                           Zelikman, E., Ma, W. A., Tran, J. E., Yang, D., Yeatman, J. D., and Haber, N. (2023).
+Woodcock-Johnson IV tests of achievement. Rolling Meadows, IL: Riverside Publishing.
+                                                                                                         “Generating and evaluating tests for K-12 students with language model simulations: a
+   Silverman, R. D., Speece, D. L., Harring, J. R., and Ritchey, K. D. (2013). Fluency has a role        case study on sentence reading efficiency.” in Proceedings of the 2023 Conference on
+in the simple view of reading. Sci. Stud. Read. 17, 108–133. doi: 10.1080/10888438.2011.618153           Empirical Methods in Natural Language Processing, eds. H. Bouamor, J. Pino, and K. Bali
+                                                                                                         (Association for Computational Linguistics). pp. 2190–2205.
+  Spencer, M., and Wagner, R. K. (2018). The comprehension problems of children with
+poor reading comprehension despite adequate decoding: a Meta-analysis. Rev. Educ. Res.                     Zirkel, P. A. (2020). Legal developments for students with dyslexia. Learn. Disabil. Q.
+88, 366–400. doi: 10.3102/0034654317749187                                                               43, 127–139. doi: 10.1177/0731948720931538
+
+
+
+
+Frontiers in Education                                                                              14                                                                                 frontiersin.org

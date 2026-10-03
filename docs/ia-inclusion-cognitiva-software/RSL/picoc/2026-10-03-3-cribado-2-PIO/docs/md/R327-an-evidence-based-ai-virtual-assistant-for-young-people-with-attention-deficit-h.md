@@ -1,0 +1,1699 @@
+# JMIR FORMATIVE RESEARCH Bryant et al
+
+> Fuente PDF: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · técnica **locator index** (página + ancla) + chunks Graphify
+
+## Metadata
+- Stem: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h`
+- PDF: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf`
+- DOI: `10.2196/85013`
+- Pages: `21`
+- Structured_at: `2026-10-03T23:23:15+00:00`
+- Technique: `pdf-page-locators + heading-chunks`
+
+## Locator index (qué hay y en qué página del PDF)
+
+| Kind | Label | PDF page | MD anchor |
+|------|-------|----------|-----------|
+| abstract | Abstract / blurb | 1 | `#abstract` |
+| concept | attention deficit hyperactivity disorder | 1 | `#concept-attention-deficit-hyperactivity-disorder` |
+| concept | neurodevelopmental disorders | 2 | `#concept-neurodevelopmental-disorders` |
+| concept | artificial intelligence | 2 | `#concept-artificial-intelligence` |
+| concept | health services accessibility | 2 | `#concept-health-services-accessibility` |
+| concept | health equity | 2 | `#concept-health-equity` |
+| concept | interdisciplinary research | 2 | `#concept-interdisciplinary-research` |
+| concept | patient participation | 2 | `#concept-patient-participation` |
+| concept | innovation | ? | `#concept-innovation` |
+| concept | underserved population | 2 | `#concept-underserved-population` |
+| concept | generative AI | 2 | `#concept-generative-ai` |
+| concept | R327 | ? | `#concept-r327` |
+| concept | evidence | ? | `#concept-evidence` |
+| concept | based | ? | `#concept-based` |
+| concept | virtual | ? | `#concept-virtual` |
+| concept | assistant | ? | `#concept-assistant` |
+| concept | young | ? | `#concept-young` |
+| concept | people | ? | `#concept-people` |
+| concept | with | ? | `#concept-with` |
+| concept | attention | ? | `#concept-attention` |
+| concept | deficit | ? | `#concept-deficit` |
+| finding | One way to improve access, potentially increase engagement, reduce health care inequalitie… | 1 | `#finding-one-way-to-improve-access-potentially-i` |
+| finding | These have the potential to support long-term condition management and to act as an adjunc… | 1 | `#finding-these-have-the-potential-to-support-long` |
+| finding | Virtual assistants that use large language models can provide information in response to q… | 1 | `#finding-virtual-assistants-that-use-large-langua` |
+| finding | This can be especially valuable for people with ADHD who often struggle to regulate attent… | 1 | `#finding-this-can-be-especially-valuable-for-peop` |
+| finding | Involving people with lived experience in the co-design process is crucial for the develop… | 1 | `#finding-involving-people-with-lived-experience-i` |
+| finding | Therefore, this article explores the views and preferences of young people with ADHD and t… | 1 | `#finding-therefore-this-article-explores-the-vie` |
+| page | p.1: JMIR FORMATIVE RESEARCH Bryant et al | 1 | `#pdf-p1` |
+| page | p.2: JMIR FORMATIVE RESEARCH Bryant et al | 2 | `#pdf-p2` |
+| page | p.3: JMIR FORMATIVE RESEARCH Bryant et al | 3 | `#pdf-p3` |
+| page | p.4: JMIR FORMATIVE RESEARCH Bryant et al | 4 | `#pdf-p4` |
+| page | p.5: JMIR FORMATIVE RESEARCH Bryant et al | 5 | `#pdf-p5` |
+| page | p.6: JMIR FORMATIVE RESEARCH Bryant et al | 6 | `#pdf-p6` |
+| page | p.7: JMIR FORMATIVE RESEARCH Bryant et al | 7 | `#pdf-p7` |
+| page | p.8: JMIR FORMATIVE RESEARCH Bryant et al | 8 | `#pdf-p8` |
+| page | p.9: JMIR FORMATIVE RESEARCH Bryant et al | 9 | `#pdf-p9` |
+| page | p.10: JMIR FORMATIVE RESEARCH Bryant et al | 10 | `#pdf-p10` |
+| page | p.11: JMIR FORMATIVE RESEARCH Bryant et al | 11 | `#pdf-p11` |
+| page | p.12: JMIR FORMATIVE RESEARCH Bryant et al | 12 | `#pdf-p12` |
+| page | p.13: JMIR FORMATIVE RESEARCH Bryant et al | 13 | `#pdf-p13` |
+| page | p.14: JMIR FORMATIVE RESEARCH Bryant et al | 14 | `#pdf-p14` |
+| page | p.15: JMIR FORMATIVE RESEARCH Bryant et al | 15 | `#pdf-p15` |
+| page | p.16: JMIR FORMATIVE RESEARCH Bryant et al | 16 | `#pdf-p16` |
+| page | p.17: JMIR FORMATIVE RESEARCH Bryant et al | 17 | `#pdf-p17` |
+| page | p.18: JMIR FORMATIVE RESEARCH Bryant et al | 18 | `#pdf-p18` |
+| page | p.19: JMIR FORMATIVE RESEARCH Bryant et al | 19 | `#pdf-p19` |
+| page | p.20: JMIR FORMATIVE RESEARCH Bryant et al | 20 | `#pdf-p20` |
+| page | p.21: JMIR FORMATIVE RESEARCH Bryant et al | 21 | `#pdf-p21` |
+
+## Abstract
+<a id="abstract"></a>
+
+Background: Though attention deficit hyperactivity disorder (ADHD) is thought to be the most prevalent neurodevelopmental disorder in young people worldwide, there are inequalities in access to psychoeducation and health care support. One way to improve access, potentially increase engagement, reduce health care inequalities, and enhance care is by co-developing digital responsive interventions. These have the potential to support long-term condition management and to act as an adjunct to usual care. Virtual assistants that use large language models can provide information in response to questions and learn to tailor communication to suit an individual user’s needs. This can be especially valuable for people with ADHD who often struggle to regulate attention and can experience communication challenges. Involving people with lived experience in the co-design process is crucial for the development of effective digital interventions. Therefore, this article explores the views and preferences of young people with ADHD and their supporters from the United Kingdom who collaborated with researchers to co-design a prototype chatbot. Objective: This study aimed to co-develop an evidence-based chatbot prototype, intended to help young people with ADHD thrive through improved access to health care information, psychoeducation, and self-management strategies. Methods: An interdisciplinary team was established, including researchers, software developers, clinicians, and lived experience collaborators. Research advisory and working groups were set up in ways that facilitated flexible involvement. Following the person-based approach, guiding principles were established, and workshops were held with young people with ADHD and supporters of young people with ADHD to co-develop an early prototype. Feedback was sought via think-aloud interviews with lived experience collaborators. Results: In total, 9 experts by lived experience and 3 health care professionals chose to engage in workshops, and this feedback informed the development of a SmartADHD chatbot prototype. An off-the-shelf chatbot (GPT-4o hosted on Convai) was trained using resources from the National Health Service (NHS). Overall, 6 experts by lived experience engaged with think-aloud interviews, providing feedback on the prototype conversational flow and feel, the avatar, the text-to-speech, the chatbox feature, and the content of the messages. Seven recommendations are made for future development, which will info
+
+## Keywords
+
+- attention deficit hyperactivity disorder
+- neurodevelopmental disorders
+- artificial intelligence
+- health services accessibility
+- health equity
+- interdisciplinary research
+- patient participation
+- innovation
+- underserved population
+- generative AI
+
+## Concept index (graph hooks + página)
+
+<a id="concept-attention-deficit-hyperactivity-disorder"></a>
+### [PDF p.1] Concept: attention deficit hyperactivity disorder
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **1**
+
+<a id="concept-neurodevelopmental-disorders"></a>
+### [PDF p.2] Concept: neurodevelopmental disorders
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **2**
+
+<a id="concept-artificial-intelligence"></a>
+### [PDF p.2] Concept: artificial intelligence
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **2**
+
+<a id="concept-health-services-accessibility"></a>
+### [PDF p.2] Concept: health services accessibility
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **2**
+
+<a id="concept-health-equity"></a>
+### [PDF p.2] Concept: health equity
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **2**
+
+<a id="concept-interdisciplinary-research"></a>
+### [PDF p.2] Concept: interdisciplinary research
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **2**
+
+<a id="concept-patient-participation"></a>
+### [PDF p.2] Concept: patient participation
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **2**
+
+<a id="concept-innovation"></a>
+### [PDF p.?] Concept: innovation
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **?**
+
+<a id="concept-underserved-population"></a>
+### [PDF p.2] Concept: underserved population
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **2**
+
+<a id="concept-generative-ai"></a>
+### [PDF p.2] Concept: generative AI
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **2**
+
+<a id="concept-r327"></a>
+### [PDF p.?] Concept: R327
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **?**
+
+<a id="concept-evidence"></a>
+### [PDF p.?] Concept: evidence
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **?**
+
+<a id="concept-based"></a>
+### [PDF p.?] Concept: based
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **?**
+
+<a id="concept-virtual"></a>
+### [PDF p.?] Concept: virtual
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **?**
+
+<a id="concept-assistant"></a>
+### [PDF p.?] Concept: assistant
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **?**
+
+<a id="concept-young"></a>
+### [PDF p.?] Concept: young
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **?**
+
+<a id="concept-people"></a>
+### [PDF p.?] Concept: people
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **?**
+
+<a id="concept-with"></a>
+### [PDF p.?] Concept: with
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **?**
+
+<a id="concept-attention"></a>
+### [PDF p.?] Concept: attention
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **?**
+
+<a id="concept-deficit"></a>
+### [PDF p.?] Concept: deficit
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **?**
+
+
+## Findings index (graph hooks + página)
+
+<a id="finding-one-way-to-improve-access-potentially-i"></a>
+### [PDF p.1] Finding: One way to improve access, potentially increase engagement, reduce health care inequalities, and enhance care is by co-developing digital responsive interventions.
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **1**
+
+<a id="finding-these-have-the-potential-to-support-long"></a>
+### [PDF p.1] Finding: These have the potential to support long-term condition management and to act as an adjunct to usual care.
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **1**
+
+<a id="finding-virtual-assistants-that-use-large-langua"></a>
+### [PDF p.1] Finding: Virtual assistants that use large language models can provide information in response to questions and learn to tailor communication to suit an individual user’s needs.
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **1**
+
+<a id="finding-this-can-be-especially-valuable-for-peop"></a>
+### [PDF p.1] Finding: This can be especially valuable for people with ADHD who often struggle to regulate attention and can experience communication challenges.
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **1**
+
+<a id="finding-involving-people-with-lived-experience-i"></a>
+### [PDF p.1] Finding: Involving people with lived experience in the co-design process is crucial for the development of effective digital interventions.
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **1**
+
+<a id="finding-therefore-this-article-explores-the-vie"></a>
+### [PDF p.1] Finding: Therefore, this article explores the views and preferences of young people with ADHD and their supporters from the United Kingdom who collaborated with researchers to co-design a prototype chatbot.
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **1**
+
+
+## Relevance hooks
+### Theme relevance: software engineering and accessibility
+### Theme relevance: cognitive accessibility and neurodiversity
+### Theme relevance: evaluation metrics and WCAG
+
+## Sections (detected in PDF)
+
+_(no numbered sections auto-detected)_
+
+
+## Page chunks (texto por página del PDF)
+
+_Cada heading es un nodo Graphify. El label incluye la página para volver al PDF sin releer todo._
+
+<a id="pdf-p1"></a>
+### [PDF p.1] JMIR FORMATIVE RESEARCH Bryant et al
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **1** / 21
+
+JMIR FORMATIVE RESEARCH                                                                                                        Bryant et al
+
+     Original Paper
+
+     An Evidence-Based AI Virtual Assistant for Young People With
+     Attention Deficit Hyperactivity Disorder: Co-Design and Prototype
+     Development
+
+     Eleanor F Bryant1, BSc; David Hallett2, BA; Emily Nielsen3, BSc, MSc, PhD; Tali Evans1, BSc; Jacqueline Rees-Lee2,
+     MPhil(RCA), MA, MEd; Nicole Riley4; Tamsin Newlove-Delgado1, PhD; Anna Price1, BSc, PhD
+     1
+      University of Exeter Medical School, University of Exeter, Exeter, United Kingdom
+     2
+      Digital Futures, Torbay and South Devon NHS Foundation Trust, Devon, United Kingdom
+     3
+      School of Engineering Mathematics and Technology, University of Bristol, Bristol, United Kingdom
+     4
+      SmartADHD Research Advisory Group, University of Exeter, Devon, United Kingdom
+
+     Corresponding Author:
+     Eleanor F Bryant, BSc
+     University of Exeter Medical School
+     University of Exeter
+     St Luke's Campus
+     Exeter, EX1 2LU
+     United Kingdom
+     Phone: 44 1392 661000
+     Email: e.bryant@exeter.ac.uk
+
+
+     Abstract
+     Background: Though attention deficit hyperactivity disorder (ADHD) is thought to be the most prevalent neurodevelopmental
+     disorder in young people worldwide, there are inequalities in access to psychoeducation and health care support. One way to
+     improve access, potentially increase engagement, reduce health care inequalities, and enhance care is by co-developing digital
+     responsive interventions. These have the potential to support long-term condition management and to act as an adjunct to usual
+     care. Virtual assistants that use large language models can provide information in response to questions and learn to tailor
+     communication to suit an individual user’s needs. This can be especially valuable for people with ADHD who often struggle to
+     regulate attention and can experience communication challenges. Involving people with lived experience in the co-design process
+     is crucial for the development of effective digital interventions. Therefore, this article explores the views and preferences of young
+     people with ADHD and their supporters from the United Kingdom who collaborated with researchers to co-design a prototype
+     chatbot.
+     Objective: This study aimed to co-develop an evidence-based chatbot prototype, intended to help young people with ADHD
+     thrive through improved access to health care information, psychoeducation, and self-management strategies.
+     Methods: An interdisciplinary team was established, including researchers, software developers, clinicians, and lived experience
+     collaborators. Research advisory and working groups were set up in ways that facilitated flexible involvement. Following the
+     person-based approach, guiding principles were established, and workshops were held with young people with ADHD and
+     supporters of young people with ADHD to co-develop an early prototype. Feedback was sought via think-aloud interviews with
+     lived experience collaborators.
+     Results: In total, 9 experts by lived experience and 3 health care professionals chose to engage in workshops, and this feedback
+     informed the development of a SmartADHD chatbot prototype. An off-the-shelf chatbot (GPT-4o hosted on Convai) was trained
+     using resources from the National Health Service (NHS). Overall, 6 experts by lived experience engaged with think-aloud
+     interviews, providing feedback on the prototype conversational flow and feel, the avatar, the text-to-speech, the chatbox feature,
+     and the content of the messages. Seven recommendations are made for future development, which will inform the SmartADHD
+     program of work.
+     Conclusions: These findings provide rich data on the preferences of people with ADHD. Specific recommendations for a chatbot
+     for young adults with ADHD have not been investigated before with young people, making this study a novel contribution to the
+     field. These findings provide an excellent foundation for chatbot development for this group and may be relevant for those
+
+
+     https://formative.jmir.org/2026/1/e85013                                                            JMIR Form Res 2026 | vol. 10 | e85013 | p. 1
+                                                                                                             (page number not for citation purposes)
+XSL• FO
+RenderX
+
+<a id="pdf-p2"></a>
+### [PDF p.2] JMIR FORMATIVE RESEARCH Bryant et al
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **2** / 21
+
+JMIR FORMATIVE RESEARCH                                                                                                         Bryant et al
+
+     developing digital tools for people with ADHD across the lifespan and other neurodevelopmental conditions. Further work is
+     required to elucidate the views of health care professionals and identify the limits of the technology before subsequent evaluation.
+
+     (JMIR Form Res 2026;10:e85013) doi: 10.2196/85013
+
+     KEYWORDS
+     attention deficit hyperactivity disorder; neurodevelopmental disorders; artificial intelligence; health services accessibility; health
+     equity; interdisciplinary research; patient participation; innovation; underserved population; generative AI
+
+                                                                              like I’m not getting the help I need to carry on through
+     Introduction                                                             life. [A girl aged 16 years] [ 8 ]
+     ADHD Prevalence and Outcomes                                        Even after diagnosis, pharmacological and psychosocial support
+                                                                         can be lacking and is often highly variable depending on the
+     Attention deficit hyperactivity disorder (ADHD) is the most
+                                                                         services available in the area where the young person lives [11].
+     common neurodevelopmental disorder in England and affects
+     nearly 7% of adults globally [1]. It is characterized by            Systemic barriers that face neurodivergent young people when
+     impairment across inattention, impulsivity, and hyperactivity.      accessing the health care system further decrease the likelihood
+     Characterizations of ADHD suggest there are three                   of accessing support [12]. Compounding this, ADHD is highly
+     subtypes—inattentive, hyperactive, and combined subtype, with       heritable, and it is estimated that 44% of people with ADHD
+     heterogeneous traits across and within individuals [2].             also have at least one parent with ADHD, meaning that barriers
+                                                                         persist for young people who need parental support to access
+     young people with ADHD are likely to face poorer outcomes
+                                                                         the health care system [13].
+     in life functioning across domains including academia, antisocial
+     behavior, driving, nonmedicinal drug use or addictive behavior,     There is potential for carefully curated bespoke digital health
+     obesity, occupation, service use, self-esteem, and social           technologies to help address unmet need for young people with
+     functioning outcomes. When compared to people without               ADHD and reduce gaps in service provision. Digital
+     ADHD, those with ADHD face poorer outcomes whether their            technologies represent a financially viable solution, with some
+     condition is treated or untreated [3].                              methods having demonstrated cost-effectiveness [14]. They
+                                                                         also offer the potential to help support young people with ADHD
+     ADHD was previously thought to be a disorder limited to
+                                                                         but lack a rigorous evidence base [15]. Mobile phone apps have
+     childhood, but more recent understanding suggests that in around
+                                                                         been shown to create behavior change and engagement by
+     3% of the population, ADHD with a childhood onset is
+                                                                         harnessing behavior change techniques [16,17]. Other digital
+     maintained into adulthood, equating to nearly 140 million people
+                                                                         health interventions (DHIs) have been effective for ADHD [18].
+     worldwide. When symptoms or traits are considered, regardless
+                                                                         Furthermore, the National Health Service (NHS) is encouraging
+     of childhood diagnosis, this number could include an additional
+                                                                         increasing digitalization as an adjunct to usual care, with the
+     366 million affected adults [4].
+                                                                         July 2025 “Fit for the Future” report recommending a shift from
+     There is ongoing discourse regarding the potential overdiagnosis    “analogue to digital” care [19].
+     of ADHD in the United Kingdom; however, evidence suggests
+                                                                         Nevertheless, current digital information can be unreliable,
+     that, though a small number of cases may incorrectly be
+                                                                         untrustworthy, and not evidence-based, and yet consumed
+     attributed to ADHD, diagnosis rates remain “substantially below
+                                                                         frequently by young people with ADHD [20-23]. Therefore,
+     the population prevalence in the United Kingdom, providing
+                                                                         there is a need for ADHD-specific DHIs that are evidence-based.
+     no evidence at present that ADHD is overdiagnosed at a
+     population level” [5].                                              Large language models (LLMs) are increasingly being used in
+                                                                         DHIs and have been used for a variety of purposes within mental
+     ADHD Care Provision in the United Kingdom and the
+                                                                         health support [24,25]. They have shown promise to support
+     Role of Digital Health                                              young people with ADHD. Chatbots can break down tasks into
+     ADHD health care provision is failing patients [6]. This issue      manageable chunks, reducing overwhelm [26,27]. They can
+     is exacerbated for people with ADHD in transition between           offer on-demand and consistent support [28,29], emotionally
+     childhood and adulthood (ie, aged 18-24 years) [7].                 neutral feedback that avoids judgment [30,31], and engagement
+     There are long waiting lists for ADHD diagnosis, with minimal       and motivation [32,33]. Users often find chatbots more fun and
+     support for those on the waiting list [8]. Not only do young        less intimidating than traditional tools [29,34]. There is also the
+     people have better outcomes when they receive treatment, but        option for personalization in terms of the user’s pace, language,
+     being on a long waiting list can have negative outcomes. These      and preferences [35-37], as well as cultural, linguistic, and
+     individuals are more likely to use more health care resources       neurodiverse needs [35,36]. All the above are features that could
+     than others [9], and being on a waiting list can cause financial    make chatbot interventions appropriate for people with ADHD,
+     stress due to loss of employment, social isolation, lack of         who may face challenges with being easily distracted, forgetful,
+     support, and reduced quality of life [10].                          and finishing tasks.
+
+           Being on the waiting list has personally caused me            Therefore, we suggest that an evidence-based chatbot could
+           to have serious mental health problems because I feel         improve communication of health care information for
+
+     https://formative.jmir.org/2026/1/e85013                                                             JMIR Form Res 2026 | vol. 10 | e85013 | p. 2
+                                                                                                              (page number not for citation purposes)
+XSL• FO
+RenderX
+
+<a id="pdf-p3"></a>
+### [PDF p.3] JMIR FORMATIVE RESEARCH Bryant et al
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **3** / 21
+
+JMIR FORMATIVE RESEARCH                                                                                                          Bryant et al
+
+     individuals with ADHD who may have differing needs. A                 perspective that most general practitioners (GPs) cannot. Digital
+     well-designed chatbot could be accessible to people from              interventions could also reduce administrative tasks for
+     different backgrounds and provide a trustworthy alternative to        consultants, as common queries and requests for information
+     the high volumes of digital misinformation and unreliable             could be fielded through these interventions.
+     resources that exist online [20]. Chatbots have previously been
+                                                                           The provision of information about how to access health care
+     used to provide support for mental health conditions (these are
+                                                                           is recommended by the National Institute for Health and Care
+     advanced in the eating disorder literature especially) [38], but
+                                                                           Excellence (NICE) and the NHS; nevertheless, accessing the
+     this work is novel in being the first that the authors know of
+                                                                           health care system in the United Kingdom, whether public or
+     that aims to act as an adjunct to ADHD care, and particularly
+                                                                           private, can be confusing for young people and supporters.
+     with respect to young people in this transitional period between
+                                                                           Supplying a web portal for community-based ADHD care saw
+     services.
+                                                                           parents rate improved ADHD symptoms and improved ADHD
+     However, there are important concerns around safety after             care quality, showing that digital interventions can improve
+     problems have arisen with other chatbots. There are examples          access to health care [46]. The chatbot may fill this gap by
+     of generative AI (GenAI) tools enabling users to generate             improving communication through the synthesis of information
+     harmful eating disorder content [39]. Indeed, a chatbot launched      and the ability to tailor communication. This has the potential
+     in 2023 by the National Eating Disorder Association in the            to be prescribed through a social prescribing model for health
+     United States was taken down shortly after launch as it provided      care access equity.
+     harmful advice to users about losing weight and dieting [40].
+     This tool was developed by academics, who claim that the
+                                                                           Aims of This Co-Production Work
+     safeguards they set up should not have allowed this to happen,        This paper describes early co-production work, conducted
+     and that edits had been made to the chatbot function before           between January and September 2025, and reports on the
+     publication. Further demonstrating that chatbots for mental           preferences of young people with ADHD and their supporters.
+     health are in their infancy, this was a rule-based chatbot, which,    Preferences relate to an AI chatbot that is trained on
+     unlike GenAI models, was developed for precision. Rule-based          evidence-based materials specifically to give psychoeducational,
+     AI is transparent and inflexible—it always gives the same             behavioral, and health care information for young people aged
+     answer to the same question. This shows that significant              16-25 years with ADHD. The information reported in this article
+     improvement is required before rule-based chatbots, let alone         reflects conversations with collaborators with LE of ADHD and
+     GenAI, are safe for use as patient-facing medical devices.            reflects proof of concept only; this is development work, and
+                                                                           extensive future research would be required to ensure the chatbot
+     Preliminary evidence suggests that the feasibility and                was safe and fit for purpose.
+     acceptability of DHIs for young people with ADHD are
+     strongest when co-developed with experts with lived experience        Methods
+     (LE) [41]. This underlines the need for a development, design,
+     and implementation process that uses co-development methods.          Interdisciplinary Team Development
+     We will outline the processes that we followed in a linked paper.
+                                                                           An interdisciplinary team was established as part of the broader
+     Despite rapidly evolving challenges and solutions in relation to
+                                                                           SmartADHD project [47]. This included project leads from the
+     AI-based health care, it remains essential that early chatbot
+                                                                           University of Exeter and the Digital Futures Lab, an LE expert,
+     development work involves people with LE, digital experts,
+                                                                           and a human-computer interaction (HCI) researcher from the
+     and health care professionals (HCPs). Co-production is focused
+                                                                           University of Bristol. LE and HCP research advisory groups
+     on increasing understanding about the priorities, needs and
+                                                                           (RAGs) were set up in line with UK Standards for Public
+     preferences of young people with ADHD for a chatbot that will
+                                                                           Involvement, with linked working groups (WGs) whose
+     help them manage their condition safely, to access appropriate
+                                                                           members could contribute flexibly to research activities [48].
+     health care, and to thrive.
+                                                                           For details, see terms of reference and role descriptors (see
+     Improving Access to Care and Using Digital Tools to                   Multimedia Appendix 1 and Multimedia Appendix 2 for
+     Enhance Service Provision                                             examples). A mission statement was co-developed, and training
+                                                                           resources (eg, on the basic design principles of HCI) were
+     Consultation with young people has shown that they favor digital
+                                                                           provided for researchers and lived-experience colleagues and
+     apps as a source of health care information, and that this should
+                                                                           shared via YouTube and the study website [49]. Meetings were
+     contain psychoeducation (information about the condition) and
+                                                                           held to discuss research, software engineering, and ADHD
+     information about accessing health care services in the United
+                                                                           specific processes and experiences, to help build a shared
+     Kingdom [42,43].
+                                                                           language across disciplines and experience and, through an
+     Health care providers also favor an online solution, as this allows   iterative process, produce a combined direction of travel and
+     information to be kept up-to-date more easily and the ability to      map a perceived ideal outcome.
+     signpost to one trusted source [11,44]. Clinicians also wish to
+     improve the sharing of information with young people [45], and        Approach
+     support digital interventions as an adjunct to primary care if        The wider research studies with which this co-design exercise
+     “reliable and well-curated” [44]. Digital resources can be            is associated adopt the meta-paradigm of critical realism. This
+     updated frequently when new information comes to light, can           states that an objective reality exists independently of our
+     be accessed quickly by the patient, and can give an LE                knowledge of it, and that while there are real and actual truths
+     https://formative.jmir.org/2026/1/e85013                                                              JMIR Form Res 2026 | vol. 10 | e85013 | p. 3
+                                                                                                               (page number not for citation purposes)
+XSL• FO
+RenderX
+
+<a id="pdf-p4"></a>
+### [PDF p.4] JMIR FORMATIVE RESEARCH Bryant et al
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **4** / 21
+
+JMIR FORMATIVE RESEARCH                                                                                                        Bryant et al
+
+     about the nature of the world, it is impossible to completely        Working Group
+     understand this reality [50]. Critical realism is an appropriate     A diverse LE working group of 13 people was formed to
+     and pragmatic approach commonly used in applied health care          co-develop the Chatbot prototype, with work supported and
+     research and supports the need for theory-driven,                    guided by SmartADHD RAG members and the wider study
+     person-focused, and context-aware intervention development           team. The working group, which included 9 young people with
+     [51].                                                                ADHD and 4 supporters (parents), was made up of a mixture
+     With this in mind, the person-based approach (PBA) was used          of individuals with previous involvement in the Science of
+     to guide digital intervention development, as this is an             ADHD and Neurodevelopment (SAND) collaboration, including
+     established method for combining evidence, theory, and               members of the “Mapping ADHD services in primary Care”
+     person-based research [52]. As part of a larger body of              (MAP) study RAG, and new members [54]. Members were
+     SmartADHD work, a review and synthesis of relevant literature        identified via previous involvement, study networks, and word
+     was conducted by the research team (AP, TE, and EB), and a           of mouth, and invited to express interest in involvement via a
+     summary was created of relevant primary and systematic review        Microsoft Form sent as a link [55]. Members were provided
+     evidence. A theory of change model was drafted, based on the         with terms of reference, links to SmartADHD resources, an
+     behavior change wheel and intervention planning table                introductory meeting, and a schedule of planned meetings. We
+     populated, covering target behaviors, for uptake, engagement,        engaged with colleagues through a range of different methods
+     and knowledge use (Multimedia Appendices 3 and 4) [53].              to help keep all team members well-informed, including frequent
+     Guiding principles for intervention design (covering user            reminders. Meeting invites were sent via email, Microsoft
+     characteristics, design objectives, and key features) were drafted   Teams, WhatsApp (Meta), and text, depending on member
+     and collaboratively reviewed over multiple iterations. Gaps in       preference [56]. Attendance and demographic information for
+     knowledge were identified in relation to user needs (EN) and         these groups can be found in Tables 1 and 2. Some members
+     noted for discussion during workshops. Details of PBA                attended several meetings; some did not attend any.
+     documents will be provided in a linked SmartADHD publication.
+
+
+
+
+     https://formative.jmir.org/2026/1/e85013                                                            JMIR Form Res 2026 | vol. 10 | e85013 | p. 4
+                                                                                                             (page number not for citation purposes)
+XSL• FO
+RenderX
+
+<a id="pdf-p5"></a>
+### [PDF p.5] JMIR FORMATIVE RESEARCH Bryant et al
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **5** / 21
+
+JMIR FORMATIVE RESEARCH                                                                                                                Bryant et al
+
+     Table 1. Demographics of the lived experience working group from which meeting attendees were drawn.
+
+         Categoriesa and subcategories                                                                                    Attendees, n
+         Experience
+
+             Has ADHDb                                                                                                    9
+
+             Supports someone with ADHD                                                                                   4
+         Age (years)
+             18-24                                                                                                        4
+             25-34                                                                                                        3
+             35-44                                                                                                        0
+             45-54                                                                                                        3
+             55-64                                                                                                        1
+             65 or older                                                                                                  0
+             Unknown                                                                                                      2
+         Gender
+             Man                                                                                                          4
+             Woman                                                                                                        9
+             Other                                                                                                        0
+         Ethnicity
+             White British                                                                                                8
+             Mixed or multiple ethnic groups                                                                              3
+             Black, Black British, Caribbean or African                                                                   1
+             Asian or Asian British                                                                                       1
+         Region
+             North East                                                                                                   0
+             North West                                                                                                   2
+             Yorkshire and the Humber                                                                                     0
+             East Midlands                                                                                                2
+             West Midlands                                                                                                1
+             East of England                                                                                              1
+             London                                                                                                       0
+             South East                                                                                                   1
+             South West                                                                                                   5
+             South East Wales                                                                                             1
+
+     a
+      Demographic information was self-identified by collaborators in response to demographic questions. We have reported the demographic information
+     of all members of the working groups to avoid identifying individual members, though not all members attended group meetings or workshops.
+     b
+         ADHD: attention deficit hyperactivity disorder.
+
+
+
+
+     https://formative.jmir.org/2026/1/e85013                                                                    JMIR Form Res 2026 | vol. 10 | e85013 | p. 5
+                                                                                                                     (page number not for citation purposes)
+XSL• FO
+RenderX
+
+<a id="pdf-p6"></a>
+### [PDF p.6] JMIR FORMATIVE RESEARCH Bryant et al
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **6** / 21
+
+JMIR FORMATIVE RESEARCH                                                                                                                        Bryant et al
+
+     Table 2. List of workshop attendees.
+         Workshop name                                 Attendees
+         Identity and guiding principles               •   Lived experience research advisory group facilitator
+                                                       •   Expert by lived experience; supporter
+                                                       •   Expert by lived experience; young person
+                                                       •   Expert by lived experience; young person
+                                                       •   Health care professional; GPa
+                                                       •   Health care professional; senior specialist NDb coach, mentor, trainer, and facilitator
+                                                       •   Health care professional; ADHDc nurse specialist and ADHD service manager
+                                                       •   GP partner
+
+         Tailoring the chatbot to underserved groups   •   Expert by lived experience; young person
+                                                       •   Expert by lived experience; young person
+
+         Detailed content workshop                     •   Lived experience research advisory group facilitator
+                                                       •   Expert by lived experience; supporter
+                                                       •   Expert by lived experience; young person
+                                                       •   Expert by lived experience; young person
+                                                       •   Working group member; supporter of children with ADHD; has ADHD
+
+         The identity of the chatbot                   •   Working group member; supporter of child with ADHD
+                                                       •   Expert by lived experience; young person
+                                                       •   Working group member; supporter of children with ADHD; has ADHD
+
+         Health care professionals consultation        •   Health care professional; senior specialist ND coach, mentor, trainer, and facilitator
+                                                       •   Researcher and health care professional
+                                                       •   Health care professional; ADHD nurse specialist and ADHD service manager
+
+     a
+         GP: general practitioner.
+     b
+         ND: neurodiverse.
+     c
+         ADHD: attention deficit hyperactivity disorder.
+
+                                                                                   Microsoft Teams, often including presentation slides, with notes
+     Workshops                                                                     made on the slides by the meeting facilitator. Minutes were
+     Five workshops were held with LE collaborators on chatbot                     made and shared with attendees afterward. Meetings were
+     co-development, covering guiding principles, tailoring for                    recorded to add detail to notes after each workshop. Feedback
+     underserved groups, language and content, and chatbot identity.               from the workshops was summarized and translated by the
+     A further workshop was held with HCP collaborators. These                     research team, following content analysis methods, into a
+     are built on the guiding principles and theory of change                      specification document to inform prototype development. The
+     documents from the PBA. Sessions were run flexibly via                        workshops and the resulting feedback are outlined in Table 3.
+
+
+
+
+     https://formative.jmir.org/2026/1/e85013                                                                            JMIR Form Res 2026 | vol. 10 | e85013 | p. 6
+                                                                                                                             (page number not for citation purposes)
+XSL• FO
+RenderX
+
+<a id="pdf-p7"></a>
+### [PDF p.7] JMIR FORMATIVE RESEARCH Bryant et al
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **7** / 21
+
+JMIR FORMATIVE RESEARCH                                                                                                                             Bryant et al
+
+     Table 3. A table of workshops that were carried out with lived experience collaborators, the topics that were discussed in this workshop, and the
+     feedback that resulted in specifications for the prototype chatbot.
+         Workshop name                  Topics discussed                                        Changes made
+         Identity and guiding princi- •         Name of the project and app                     •   After the workshop, SmartADHDa was chosen as the name
+         ples                         •         Logo of the project and app                         with agreement from collaborators.
+                                      •         Guiding principles                              •   After the workshop, a logo was designed by a young person in
+                                                                                                    the research advisory group, finessed by the team, and adopted
+                                                                                                •   Guiding principles confirmed
+
+         Tailoring the chatbot to       •       User personas                                   •   None made
+         underserved groups             •       Potential and limitations of the chatbot for    •   Chatbot should summarize and chunk complex information.
+                                                different users                                 •   Chatbot should personalize content dynamically based on inter-
+                                        •       How this relates to underserved groups              action history and user profile.
+                                                                                                •   Options for low literacy or tech literacy users
+
+         Detailed content workshop •            Language and dealing with difficult or sensi-   •   Unambiguous, plain language will be used throughout the app
+                                                tive topics.
+                                                                                                •   Technical terms explained before use (eg, “increasing medica-
+                                        •       Looking at an example app and giving feed-          tion dose [titration]”)
+                                                back on tone, word choice, level of detail      •   Use validating language, avoid language such as “deficit”,
+                                                                                                    “low-functioning” or “disorder” outside clinical definitions
+
+         The identity of the chatbot •          Mock-ups made based on feedback from the        •   None made.
+                                                previous chatbot meeting
+                                        •       The communication identity of the chatbot       •   Capable of being “fun” if context-appropriate and done well
+                                        •       The visual identity of the chatbot              •   Avoid emojis; maintain a professional yet engaging tone
+                                                                                                •   This will be different by individual. Emphasis should be on
+                                                                                                    ability to customize
+
+         Health care professionals      •       Consider how to make the chatbot accessible •       Consider how the chatbot will advise those in the youth justice
+         consultation                           to young people who have had negative expe-         system, those not registered with a GP or those with additional
+                                                riences with services                               mental health problems
+
+     a
+         ADHD: attention deficit hyperactivity disorder.
+
+                                                                                           3. Basic Design Principles of HCI. Discussions were held with
+     Iterative Prototype Development                                                       the software engineer (DH) and wider team, prioritizing feature
+     Following the workshops, a technical specification was                                development and considering technical and resource constraints.
+     developed to guide chatbot initial development, and then                              A final prototype was produced and trialed by research and HCI
+     refinement, with consideration of 1. content from workshops,                          colleagues (EB and EN). Technical information about the
+     2. information collected from the person-based approach, and                          chatbot can be seen in Textbox 1.
+     Textbox 1. Chatbot technical information.
+      An existing online service was leveraged to develop the proof of concept. Although it was within the developers’ capability to run a local model and
+      make use of text to speech and speech to text systems, the use of an online package significantly increased the functionality available, particularly in
+      terms of knowledge banks and reliable character control. It is important to note that the development of a bespoke large language model (LLM) trained
+      specifically for this purpose would require investment in the order of tens of millions of pounds and was neither practical nor necessary for this
+      application. Instead, the team leveraged a pretrained foundation model with a structured prompting and knowledge retrieval approach.
+      This method of using pretrained off-the-shelf LLMs with prompting is a fairly standard method of operating used by many clinical AI-based systems
+      including several which have been approved as medical devices. The chatbot was based on GPT-4o using the Convai [57] platform, which provides
+      memory and integration layers around a selected LLM. Convai acts as a middleware platform, providing session memory, character definition,
+      knowledge retrieval, and input/output integration layers around a selected foundation LLM.
+      DH defined a character mind layer including personality, goals and backstory, behavioral traits, and access to knowledge banks. The core description
+      can be seen in Multimedia Appendix 5. A knowledge bank was used with the aim of mitigating hallucination risk and providing further expertise
+      beyond the training data; The data in the knowledge bank is passed to the LLM as context alongside the message from the user and informs processing
+      and response generation. Documents uploaded to the knowledge bank are retrieved and injected into the LLM prompt as contextual information
+      alongside the user's message, a technique commonly referred to as retrieval-augmented generation (RAG). In this case, National Institute for Health
+      and Care Excellence (NICE) and National Health Services (NHS) documents and website were uploaded to the platform (Multimedia Appendix 6).The
+      chatbot was limited in the advice it could give and based its answers on the trusted sources provided.
+      The Convai system allows user input through speech to text or typed messages. Responses are then provided either as plain text, via speech to text,
+      or driving a lip-synced animated avatar. A number of avatar presets are available within the platform, including varying professions, backgrounds,
+      and costumes. Limited by the platform and bearing in mind the eventual purpose of the chatbot (to provide trusted medical information to young
+      people from underserved groups), the avatar chosen was a female with a dark skin tone wearing blue medical scrubs (Multimedia Appendix 7).
+
+
+
+     https://formative.jmir.org/2026/1/e85013                                                                                 JMIR Form Res 2026 | vol. 10 | e85013 | p. 7
+                                                                                                                                  (page number not for citation purposes)
+XSL• FO
+RenderX
+
+<a id="pdf-p8"></a>
+### [PDF p.8] JMIR FORMATIVE RESEARCH Bryant et al
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **8** / 21
+
+JMIR FORMATIVE RESEARCH                                                                                                           Bryant et al
+
+     Think-Aloud Interviews                                                1.   The overall conversation
+                                                                           2.   The avatar
+     Following established PBA methods, think-aloud interviews
+                                                                           3.   The speech
+     were carried out with LE collaborators to user-test the first
+                                                                           4.   The content
+     prototype of the chatbot and gather feedback on user experience
+                                                                           5.   The chat box (text input)
+     [58]. A set of feedback prompts (see Feedback Points in
+     Multimedia Appendix 8) was developed by EB, trialed with an           Ethical Considerations
+     HCI expert (EN) in a pilot interview, and reviewed by the team.
+                                                                           This study describes patient and public involvement and
+     Then, working group members were invited by email to book
+                                                                           engagement (PPIE) co-production research to inform early
+     a 1-hour online meeting with researcher EB, with a link to a
+                                                                           co-development of a chatbot prototype for people with ADHD.
+     Microsoft bookings page. Reminders were sent via email or
+                                                                           Public involvement is defined by The National Institute for
+     WhatsApp, in line with individual preferences. EB is a female
+                                                                           Health and Care Research (NIHR) as research being carried out
+     research assistant who holds a BSc and had over 3 years’
+                                                                           “with” or “by” members of the public, and public engagement
+     experience in mental health research at the time of interviews.
+                                                                           is described as the “myriad ways in which the activity and
+     EB had an existing relationship with all members of the working
+                                                                           benefits of…research can be shared with the public” [60]. In
+     group as she was involved in coordinating the group.
+                                                                           the United Kingdom, “ethical approval is not needed for PPIE
+     Collaborators had been involved in conversations around the
+                                                                           activities”, which are considered essential as they facilitate more
+     chatbot from the conceptualization of the project, some more
+                                                                           impactful research outcomes [60,61]. Further clarification can
+     directly than others. Collaborators knew about EB’s background
+                                                                           be found in guidance provided by the co-production collective:
+     and role on the project as the coordinator of the public
+     involvement, research, and digital teams. For the purpose of          “Existing research ethics processes and policies focus on the
+     this initial user testing, users were made aware that the chatbot     relationship between researcher and participant and are not
+     was a prototype. They were only given access to this during the       concerned with the consideration of ethical issues in public
+     session and used it in the presence of a researcher. The chat         engagement and Patient and Public Involvement and
+     history was saved within a password-protected login, which            Engagement” [62].
+     could only be accessed by the developers and research team.
+                                                                           In the methods described above, team members were consulted
+     Six think-aloud interviews were conducted over Microsoft              as expert and equal contributors to the design process and
+     Teams, with 3 young people with ADHD (collaborators 2, 3,             provided iterative design feedback via think-aloud interviews,
+     and 6) and 3 supporters (parents) of people with ADHD                 rather than participating as research subjects and providing data.
+     (collaborators 1, 4, and 5). Three collaborators were from South      This work meets UK Health Research Authority best practice
+     West England, with the remaining collaborators from the North         principles for public involvement by engaging experts with LE
+     West, North East, and East of England. Four were female, and          in early stages of intervention co-development [63], and laying
+     two were male. Collaborators brought a diversity of experience        strong foundations for jointly defining the ‘rationale, scope,
+     in relation to previous familiarity with Chatbots and with this       design, and conduct’ of future planned research to develop and
+     project. One supporter had not used a Chatbot before, while the       evaluate a Chatbot for young people with ADHD.
+     rest were experienced users. Some attendees were active
+                                                                           This PPIE and co-production research was conducted in line
+     members of the working group and had been involved in
+                                                                           with international ethical guidelines [48]. It followed UK
+     prototype development, while 2 members - though involved in
+                                                                           Research and Innovation key principles for co-production in
+     the SmartADHD project (either in the WG or RAG) - had not
+                                                                           research [64], and the established framework of UK Standards
+     participated in chatbot-specific workshops, so the chatbot was
+                                                                           for Public Involvement in Research [48]. This included, for
+     completely new to them. Though they may have seen a
+                                                                           example, working together, using clear communication,
+     screenshot of the chatbot previously if involved in workshops,
+                                                                           providing inclusive opportunities, establishing equitable
+     no collaborators had directly interacted with the SmartADHD
+                                                                           partnerships, and supporting learning.
+     chatbot before.
+                                                                           LE colleagues formed a key part of the interdisciplinary research
+     No repeat interviews were carried out. Informal field notes were
+                                                                           team and contributed as equal partners. As described above,
+     made by EB throughout interviews. The think-aloud interviews
+                                                                           terms of reference and role descriptors were provided for all
+     were recorded with permission from collaborators and
+                                                                           RAG and WG members. LE colleagues received payment in
+     transcribed automatically; these were not sent to collaborators
+                                                                           recognition of their time, in the form of online shopping
+     for comment as it was not essential for the transcripts to be
+                                                                           vouchers, while HCPs were provided with certificates of
+     completely accurate, and recordings could be consulted when
+                                                                           continuing professional development. Collaborators were
+     the researchers might have been unsure. We (EN, EB, and AP)
+                                                                           provided with opportunities to learn more about research, receive
+     adopted a deductive analysis approach to categorize feedback,
+                                                                           feedback on the impact of their involvement, and were supported
+     to provide specific information to inform future design iterations.
+                                                                           to contribute to outputs, including this publication.
+     In particular, EB deductively identified feedback using
+     Lumivero’s NVivo 14 [59], in relation to features that worked
+     well, features that did not work well, future developments, and
+     suggestions on every segment of text. These were categorized
+     into the following predefined topics relating to components of
+     the chatbot:
+     https://formative.jmir.org/2026/1/e85013                                                               JMIR Form Res 2026 | vol. 10 | e85013 | p. 8
+                                                                                                                (page number not for citation purposes)
+XSL• FO
+RenderX
+
+<a id="pdf-p9"></a>
+### [PDF p.9] JMIR FORMATIVE RESEARCH Bryant et al
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **9** / 21
+
+JMIR FORMATIVE RESEARCH                                                                                                        Bryant et al
+
+                                                                         purpose of the chatbot should be to condense, chunk, or
+     Results                                                             summarize information, making it shorter and faster to read.
+     Results: Impact of the Views of Experts by LE                       The chatbot should not give one-size-fits-all information and
+                                                                         should be able to tailor information to the user. Collaborators
+     Findings from the 5 workshops, which brought together               had different views about how curious the chatbot should be
+     members of the working groups to co-design the chatbot, are         initially or, conversely, should be able to amend previous
+     summarized in Table 3 (see above), with details provided in the     answers once it is asked to apply further information to these.
+     Feedback From Initial Co-Design Workshops section. Feedback         The chatbot should not only be able to tailor the information
+     from think-aloud meetings with 6 collaborators, where they          given to the user, but also the way this is communicated, for
+     were invited to trial the co-developed early chatbot prototype      example in the formality or complexity of the language.
+     is provided in the Think-Aloud Interviews—Feedback on the
+     Initial Prototype section.                                          Customization
+     Feedback From Initial Co-Design Workshops                           Customization was a topic which came up in nearly every
+                                                                         workshop in one way or another. Users wanted to be able to
+     From across the 5 workshops, we (EB, TE, and AP) drew               customize the appearance of the avatar, the level of detail or
+     together feedback about the chatbot that we then communicated       specificity of information given to them, to discard or encourage
+     with the tech developer (DH) as a product specification. These      information or types of communication, to allow the chatbot to
+     covered the chatbot as a whole, its purpose, design, content,       personalize responses based on current life events and phases,
+     and any features that would facilitate integration with a future    and the same for any co-occurring conditions. Users emphasized
+     SmartADHD app. The specifications document can be seen in           that all people with ADHD are different, and that no one thing
+     Multimedia Appendix 9.                                              would work for all users; therefore, customization would be
+     Whole Chatbot                                                       paramount.
+     Feedback that was relevant to the whole chatbot included the        Collaborators thought that if the user was clicking on lots of
+     focus or emphasis, the personality or tone, the ability for it to   hyperlinks, more detailed information should be provided in
+     function as a stand-alone technology, and to serve underserved      the future. They also thought that users should be able to rate
+     groups.                                                             messages with a thumbs-up or thumbs-down to indicate whether
+                                                                         they are helpful. Thus, this would inform future chatbot response
+     Collaborators felt that the emphasis of the chatbot should not
+                                                                         tailoring. If the user reveals information about themselves, for
+     be the new AI technology, but the ability to help or offer aid to
+                                                                         example, that they are about to start University, the chatbot
+     people with ADHD. Collaborators preferred the chatbot to have
+                                                                         should be able to give information tailored to that specific phase
+     a friendly and warm personality but maintain professionalism.
+                                                                         of life in the future, when users ask for advice. There should be
+     It could use humor, but only if this was done appropriately and
+                                                                         the ability to customize settings, for example, use a red and
+     within the limits of the technology. Collaborators wanted the
+                                                                         green screen filter for color blindness.
+     chatbot to be able to act as a stand-alone device for use either
+     with or without the associated app. Collaborators felt that the     App Integration Features
+     chatbot should be able to understand contextual factors that may    For future integration with an app, collaborators suggested that
+     be relevant to the ability of people from underserved groups to     streaks or reminders and notifications to check the chatbot could
+     access relevant information from the chatbot. For example,          be useful for improving engagement but could also create
+     cultural factors such as religion and attitudes to ADHD, or         feelings of pressure and guilt in users. Notifications that were
+     co-occurring health conditions.                                     too frequent could be annoying.
+     Chatbot Purpose                                                     Think-Aloud Interviews—Feedback on the Initial
+     Collaborators’ views on the purpose of the chatbot included the     Prototype
+     inclusion of behavioral support interventions, health care access
+                                                                         Feedback was collated from the transcripts and notes of
+     information, using evidence-based, credible, and trustworthy
+                                                                         think-aloud meetings with 6 collaborators, which captured their
+     sources, less well-known information, and the ability of the
+                                                                         real-time experiences and views as they interacted with the early
+     chatbot to summarize this information and tailor to the user’s
+                                                                         chatbot prototype. Users provided rich feedback in relation to
+     needs.
+                                                                         strengths, weaknesses and opportunities for development.
+     Collaborators were of the view that the chatbot should be able
+                                                                         From these think-aloud meetings, five topics were identified
+     to provide behavioral advice and strategies to users, broken into
+                                                                         by EB and TE: the chat box and typing interface, the
+     step-by-step instructions. Collaborators felt that the chatbot
+                                                                         text-to-speech function, the conversational flow and feel, the
+     should be able to provide information about accessing
+                                                                         avatar, and the message content. Users were generally very
+     appropriate health care in the UK. For example, seeking a
+                                                                         positive about the content of the chatbot and liked the design
+     diagnosis, or following up with a GP. The chatbot should not
+                                                                         of the interface (aside from some technical problems) and the
+     provide medical advice, but signpost to evidence-based sources
+                                                                         text-to-speech, but there was some specific feedback on how
+     and suggestions of how to navigate the system. Collaborators
+                                                                         the voice could be improved. There were mixed views on the
+     thought that the chatbot should not repeat information that they
+                                                                         avatar. The flow of the conversation was reported as being
+     deemed ‘basic’, and that it should help reveal information that
+                                                                         generally good, but users did not like it when the chatbot session
+     they might not have been able to access previously. A key
+
+     https://formative.jmir.org/2026/1/e85013                                                            JMIR Form Res 2026 | vol. 10 | e85013 | p. 9
+                                                                                                             (page number not for citation purposes)
+XSL• FO
+RenderX
+
+<a id="pdf-p10"></a>
+### [PDF p.10] JMIR FORMATIVE RESEARCH Bryant et al
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **10** / 21
+
+JMIR FORMATIVE RESEARCH                                                                                                      Bryant et al
+
+     “crashed” and erased the chat history. Crucially, though they     illustrative quotes, can be found in Table 4, with further details
+     liked the content of the messages, collaborators were unable to   provided below. A screenshot of the chatbot interface can be
+     identify where the information had come from when asked. A        seen in Multimedia Appendix 7.
+     summary of the feedback from the think-aloud interviews, with
+
+
+
+
+     https://formative.jmir.org/2026/1/e85013                                                         JMIR Form Res 2026 | vol. 10 | e85013 | p. 10
+                                                                                                           (page number not for citation purposes)
+XSL• FO
+RenderX
+
+<a id="pdf-p11"></a>
+### [PDF p.11] JMIR FORMATIVE RESEARCH Bryant et al
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **11** / 21
+
+JMIR FORMATIVE RESEARCH                                                                                                                                Bryant et al
+
+     Table 4. Summary of think-aloud engagement interview findings.
+      Topics, feedback, and illustrative quotes                                                                                                  Collaborators, n
+      Conversational flow and feel
+           Strengths were that the messages were deemed appropriate lengths for the information
+                 Yeah, they were like a little bit lengthy, but I was asking quite lengthy questions, and it was trying to give me tech-         3
+                 nical information. So, I think it makes sense.
+                 “OK, so it did a really nice job here because I asked two separate questions, but actually it made more sense for them 1
+                 to be put together and it put them together for the response.”
+           Weaknesses were mainly to do with technical difficulties, including the chat restarting
+                 “I think that was the only thing that I didn't like that [it] kept on restarting and there's nothing that you could carry       2
+                 on from.”
+           Opportunities for development included improved use of memory and a “typing indicator”
+                 “Just as a general interaction point, when you've asked a question in your text box, it just says ‘Please wait… for a 1
+                 response, but there's no indication that it's actually doing anything, even if it's just like a little animation of thoughts
+                 moving”
+      Avatar
+           Strengths were that the avatar made the chat feel more official or professional
+                 “I think it does make it feel a bit more professional to be fair.”                                                              3
+           Weaknesses were that to some it felt clinical, weird or unsettling
+                 “A bit medically intense.”                                                                                                      6
+           Opportunities for development were limited by the program used for development, but suggestions for future work were to have an
+           animal as an avatar, or options for customization
+                 “Maybe there could be an option for turning her off if you just wanted to just have the text.”                                  5
+                 “Do we always have this female? Can we have a male? Can we change the the person who's chatting at us?”                         4
+      Speech
+           Strengths were that many people found the text-to-speech option helpful
+                 “So I do like that [it] talks to you because I do find that easier rather than having to read through it all.”                  2
+           Weaknesses were that the speech wasn’t helpful for everyone
+                 “It was a little unnatural, a few bits on the intonation”                                                                       1
+                 “I can't read forward while it's still talking to me sometimes”                                                                 3
+           Opportunities for development were improving the pronunciation, tonality, and being able to mute the speech within the software
+                 “I think if I could click something to just stop it at any point then that'd be huge, because if I was using it for an ex- 3
+                 tended period of time, I'd get quite annoyed with it and I'd probably mute the tab.”
+                 “Potentially not as like robotic”                                                                                               6
+      Content
+           Strengths were that the chatbot often provided short, punchy messages, several options which used numbering or bullet points, and
+           asked whether the user would like more information
+                 “It keeps it like conversational enough to like, actually listen to it, but it also keeps it quite professional, and it doesn't 3
+                 go into opinions.”
+                 “That's again really nice, simple piece of advice that sounds great and it's a great little list, so… Positive stuff. Short, 1
+                 concise, nice.”
+                 “OK, I like it that she's given two options because you can't always be like, here's what you can do. This is what you 6
+                 do. She's actually giving me a moment to sit”
+           Weaknesses were that the information was not always specific enough for example, in terms of regional advice, or the chatbot could not
+           tell users where the information came from
+                 “But actually the practical thing that it doesn't really work that way.”                                                        1
+                 “Yeah, this is misleading in terms of real world experience”                                                                    1
+                 I find it very annoying when somebody gives something as a fact without you being able to find out where that fact 4
+                 came from.”
+
+     https://formative.jmir.org/2026/1/e85013                                                                                   JMIR Form Res 2026 | vol. 10 | e85013 | p. 11
+                                                                                                                                     (page number not for citation purposes)
+XSL• FO
+RenderX
+
+<a id="pdf-p12"></a>
+### [PDF p.12] JMIR FORMATIVE RESEARCH Bryant et al
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **12** / 21
+
+JMIR FORMATIVE RESEARCH                                                                                                                             Bryant et al
+
+         Topics, feedback, and illustrative quotes                                                                                            Collaborators, n
+
+                  “I can look up the NHSa stuff. I can do all that stuff myself. I want to know how to hack the system.”                      5
+
+             Opportunities for development were being able to trace back information the chatbot gave to its sources, and that it will be important
+             that the chatbot stays up to date with guidance that changes frequently
+                  “a lot of these things on the surface look like they're really helpful, but actually you need quite a lot of scaffolding    1
+                  and support in order to make them work.”
+         Chatbox and typing interface
+             Strengths were that the chatbot design made it easy to read, and that the chatbot coped fine with typing errors
+                  “I quite like the black with the. Was it green or white or? It was quite easy to read.”                                     5
+             Weaknesses were that the chatbot could be glitchy with scrolling, deleting half-written messages, and that the words did not take up
+             much of the screen when compared with the avatar
+                  “She's been a little bit temperamental on whether or not she would move up and down, so I can go back to what               4
+                  we've read before, but she does after a while”
+             Opportunities for development were linking directly to sources of information, making sure it was optimized for phones, and the textbox
+             expanding when writing a long string of text
+                  “Well, I mean, if you had a link straight to the NHS website, you could just click on it. She's not going anywhere. I 4
+                  could click on it. I could look at it and I could come back and ask her a question
+
+     a
+         NHS: National Health Service.
+
+                                                                                        The Speech
+     Conversational Flow and Feel
+                                                                                        Users liked that the chatbot speaking aloud was an option. Only
+     Users liked that the chatbot was able to answer 2-part questions,
+                                                                                        one did not use this feature due to the settings with the video
+     used numbering in the answers, and that the answers—though
+                                                                                        call in the think-aloud interview.
+     lengthy—contained the right amount of information, which
+     appeared to be accurate. Users did not like when the chatbot                       However, several users muted the voice after some time
+     began replying to their message but then resorted to “Sorry I                      interacting. “The only frustration point was not being able to
+     didn’t quite get that, can you try rephrasing?” halfway through                    say, “enough talking now” (collaborator 3). People thought the
+     a message. They also didn’t like when the chatbot sent more                        speed of reading was good, but found they could read faster
+     than one message in a row (though this only happened on one                        than the chatbot could speak (collaborator 4). Some words, for
+     occasion, and appeared to be a technical problem), or when the                     example, “pediatrician” and abbreviations, for example,
+     chatbot restarted and erased the previous history.                                 “CAMHS” (Child and Adolescent Mental Health Services), and
+                                                                                        “111” (the United Kingdom phone number for urgent
+     To improve the flow of the conversation, users recommended
+                                                                                        nonemergency medical help) were pronounced incorrectly, and
+     a little animation of thoughts moving while generating a
+                                                                                        some parts had unnatural intonation.
+     response (collaborator 1), being able to save your chats
+     (collaborator 2), and the chatbot “getting to know” users to                       Users agreed the feature was useful overall, but wanted to add
+     personalize responses (collaborator 2).                                            a toggle for pitch (Collaborator 4) and tempo (collaborator 3
+                                                                                        and 4). Users also recommended making breaks in the text
+     The Avatar                                                                         reflect more clearly in the speech (collaborator 1), the voice
+     Opinions on the avatar were mixed. Some liked that she looked                      being less robotic (Collaborator 6), and with a toggle for
+     “official” (Collaborator 4) or “professional” (collaborators 3                     switching on or off (Collaborator 3).
+     and 5). But some people thought that “most people you’re
+     speaking to aren’t going to be in scrubs” (collaborator 4) and                     The Message Content
+     found it “distracting” (collaborators 1 and 5) or “unnatural”                      Feedback was that the content of the messages was positive,
+     (collaborator 5) or disliked that the chatbot “wobbled” or had                     with users saying the answers were “short, concise, nice,” “really
+     a mouth that moved (collaborator 4). One user found her “not                       good,” “comprehensive,” “sensible,” and “useful” (collaborators
+     friendly at all” (collaborator 6).                                                 1 to 6). Many users liked that the chatbot was concise
+                                                                                        (collaborator 1 and 6), empathetic (collaborator 5) and used
+     Recommendations for improvement were customization,
+                                                                                        numbering and bullet points to break information down
+     (collaborators 2 and 4) for example skin color “If you have
+                                                                                        (collaborators 2 and 6). Users expressed skepticism about the
+     someone who kind of relates to you, I think it’s easier”
+                                                                                        chatbot, and did try to ‘test’ it with questions they thought it
+     (collaborator 2), an option to turn the avatar off and have just
+                                                                                        would not know the answer to. Some users followed up on
+     the chat, (collaborator 5) having an animal as an avatar,
+                                                                                        statements from the chatbot, asking for further details or about
+     (collaborator 6) or the current one having more expressions (eg,
+                                                                                        information they thought was missing from a response.
+     thinking face before answering questions; collaborator 2).
+                                                                                        Most felt it was pitched correctly and used understandable
+                                                                                        language (collaborator 6). Users also liked the fact that the
+
+     https://formative.jmir.org/2026/1/e85013                                                                                JMIR Form Res 2026 | vol. 10 | e85013 | p. 12
+                                                                                                                                  (page number not for citation purposes)
+XSL• FO
+RenderX
+
+<a id="pdf-p13"></a>
+### [PDF p.13] JMIR FORMATIVE RESEARCH Bryant et al
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **13** / 21
+
+JMIR FORMATIVE RESEARCH                                                                                                                         Bryant et al
+
+     chatbot asked questions or provided options for the user about                  readable (collaborators 2 and 6). However, one user did flag
+     what it could support with next (collaborators 1 and 2).                        that this may be different on phones (collaborator 4). Technical
+                                                                                     issues included that when users switched between screens, the
+     However, some users felt that not all the information that the
+                                                                                     current message was deleted (collaborator 2). And when typing,
+     chatbot communicated was accurate. This was mostly regarding
+                                                                                     this was one continuous bar, so editing questions was difficult
+     the provision of health care service information rather than
+                                                                                     (collaborator 3). As the chatbot messages got longer, the chat
+     psychoeducation or general information about ADHD. For
+                                                                                     would jump, which made it difficult to read (collaborator 3).
+     example, the chatbot was perhaps too optimistic when giving
+     advice: “Not sure that’s necessarily going to be possible”                      People recommended the addition of a scroll bar (collaborator
+     (collaborator 1). Two parents felt that the chatbot should be                   1), allowing files to be attached (collaborator 2), and a zoom
+     making people aware that it may not be easy to get support and                  function to make the text bigger (collaborator 4).
+     that you may have to be more “proactive” with your provider
+     (collaborators 4 and 5).                                                        Discussion
+     There was also a lack of specificity within some answers about                  Summary of Findings
+     service provision, for example, about regional support. Users
+     suggested this could be overcome with links to useful websites                  Initial user feedback on the early prototype of the
+     (collaborators 2 and 4), for example, about waiting list lengths,               evidence-based chatbot suggests that this is an avenue that is
+     travel to specific countries, or “out of hours” support. Other                  feasible for future development. Experts by LE (supporters and
+     recommendations for content were to ensure the chatbot                          young people) commented on aspects that they liked, disliked,
+     mentioned “Right to Choose” (collaborators 1, 3, 4, and 5) as                   and future improvements that could be added to the chatbot,
+     it did not volunteer this information when asked about paths to                 particularly about the overall experience, the purpose, the design,
+     diagnosis and had to be prompted. Additionally, users                           the customization settings, and the integration into a future app.
+     acknowledged that some answers were very region-specific.                       Seven key recommendations for future development can be
+                                                                                     seen in Textbox 2.
+     The Chat Box and Typing Interface
+     Collaborators were positive about the chat box interface, where
+     questions could be typed. The colors, font, and size were
+     Textbox 2. Key recommendations.
+      1.    An evidence-based chatbot prototype was acceptable and usable for young people living with attention deficit hyperactivity disorder (ADHD)
+            and their supporters, including a supporter who had not used a chatbot before.
+      2.    The chatbot was able to provide psychoeducation, information about accessing health care, and behavioral interventions when requested by users,
+            and users thought that this content was generally good, though information on accessing health care and strategies could be improved.
+      3.    The chatbot was able to tailor advice for users and should be tested further to tailor information to users from underserved groups, or to speak
+            languages that are not English.
+      4.    The ability of the chatbot to offer specific and/or regional advice was limited, for example, waiting times within a local integrated care board for
+            a diagnosis, but this is something that users valued and should be investigated further.
+      5.    Further work will need to concern diversifying the sources of information to provide the chatbot with increased functionality. This could involve
+            the development of an app which acts as a database for evidence-based information, and consultation with health care professionals.
+      6.    Digital poverty and digital literacy need to be addressed in future work so as not to increase health inequalities when designing and proposing
+            the introduction of such technologies more widely.
+      7.    A sustainable funding model is required for development and maintenance of such an innovation.
+
+
+                                                                                     Current studies have also flagged the issue of privacy versus
+     Significance                                                                    personalization as a key challenge [28,65]. Personalization has
+     Privacy vs Personalization                                                      been shown to be a key positive feature of other chatbot studies
+                                                                                     [34]. This was particularly relevant for ethnic minority and
+     Collaborators strongly supported the ability of the chatbot to
+                                                                                     non-binary service-users, who are 2 particularly underserved
+     personalize responses to the young person depending on what
+                                                                                     groups [28]. However, no clear solutions are posed in these
+     they input into the chat. However, the ways of doing this whilst
+                                                                                     guidelines. Going forward, using the privacy guidelines of
+     maintaining the privacy of the user need further investigation
+                                                                                     existing successful LLMs could be beneficial for this work. The
+     as data protection guidelines produce technical challenges. The
+                                                                                     ANA Chatbot - an AI support tool for ADHD, Autism and
+     research team sees the ability of the chatbot to personalize
+                                                                                     AuDHD (Autism and ADHD); for example, already uses the
+     responses as one of the main benefits of the technology.
+                                                                                     ChatGPT (OpenAI) established data privacy policies and terms,
+     However, users who are unfamiliar with chatbots or virtual
+                                                                                     and refers users to these [66].
+     assistants may be unaware of this benefit, and therefore less
+     likely to use it. This could increase health inequalities for                   Conversations about safety more broadly did not occur in the
+     individuals who are less technologically literate.                              think-aloud interviews, apart from in relation to medication,
+
+     https://formative.jmir.org/2026/1/e85013                                                                            JMIR Form Res 2026 | vol. 10 | e85013 | p. 13
+                                                                                                                              (page number not for citation purposes)
+XSL• FO
+RenderX
+
+<a id="pdf-p14"></a>
+### [PDF p.14] JMIR FORMATIVE RESEARCH Bryant et al
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **14** / 21
+
+JMIR FORMATIVE RESEARCH                                                                                                           Bryant et al
+
+     which contrasts with much of the literature on mental health          There is some consideration to be given to features that may be
+     chatbots, especially around eating disorders. For example, in a       accessible to expert users rather than casual users, for example
+     2025 article, Sharp and Dwyer [38] identified safety and risk         changing the speed of the text-to-speech or the appearance of
+     management as 1 of 4 themes in qualitative interviews when            the avatar. In terms of the conversational aspect, users were
+     co-designing a chatbot with young people. Potential reasons           happy with the current number of options for next messages.
+     might include that discussions of ADHD are seen as less               Other publications have explored a blend of structured and
+     emotional or “triggering” than conversations around eating            open-ended chatbot conversation options [29,68,69].
+     disorders. An additional reason could be that our collaborators
+     in the think-aloud interviews have been involved in the
+                                                                           Balancing Evidence-Based, Thorough and Accessible
+     conceptualization of the chatbot and conversations around the         Information
+     limitations and future work required to create a product that         The design of the chatbot was viewed as key for the accessibility
+     was suitable (and safe) for launch.                                   of the information. Especially for young people with ADHD,
+                                                                           the importance of visual interest and attraction was highlighted
+     Optimal Functioning of the Chatbot vs Removing                        by collaborators.
+     Barriers to Access
+                                                                           When shown other digital interventions for ADHD, though the
+     To improve knowledge of the abilities of the chatbot,
+                                                                           information contained was evidence-based, collaborators
+     information could be provided to users to support optimum or
+                                                                           commented that this would not “work for an ADHD brain.” For
+     correct use. There is a growing body of literature on how to get
+                                                                           example, collaborators suggested that the sentence structures
+     the best answers out of AI. The ways of communicating the
+                                                                           should be different and the level of information was
+     abilities of the chatbot to users will be key; for example, a user
+                                                                           inappropriate (ie, too in-depth), or in some cases even
+     guide to the benefits they can gain from the chatbot.
+                                                                           inaccurate. For example, the process of obtaining a diagnosis
+     Collaborators felt it was important and useful for instructions
+                                                                           can be lengthy, taking several years, and is highly variable
+     to be provided. However, during the think-aloud sessions, users
+                                                                           regionally or by pathway, so the chatbot was unable to offer
+     were unsure how instructions should be provided to the user.
+                                                                           specific advice. Additionally, some of the information that the
+     This contrasted with the importance to people with ADHD of
+                                                                           chatbot provides may not be relevant to all users and the
+     being able to use the chatbot without having to click through
+                                                                           different support mechanisms they already have in place. This
+     menus, messages, or instructions. This also applied to data use
+                                                                           shows the importance of involving experts with LE in the
+     policies and setting up a profile so the chatbot has background
+                                                                           development process, to highlight where NICE guidelines may
+     information on the user. Both would contribute to the optimal
+                                                                           not reflect the LE. The feedback that information was potentially
+     functioning of the chatbot but would be barriers to access.
+                                                                           inaccurate or unrealistic was primarily provided by parents and
+     Further consultation is needed on how to tread this line correctly.   supporters, who may have more experience navigating the
+     HCI design principles such as considering “expert users” could        current systems on behalf of the young people they support,
+     be considered when designing these additional features. Other         and therefore an enhanced ability to identify inaccurate
+     studies also label chatbots as “accessible,” so these could still     information. It is a crucial point to consider going forward that
+     be better than navigating current systems unaided. Other              the potential users of the chatbot will not be experienced in
+     publications address the issue of instructional guidance for their    navigating these systems and therefore unable to identify where
+     chatbots [27,31]. Guidelines for designing for ADHD have been         there is crucial nuance missing from messages. This is especially
+     published, so these should be considered and, where possible,         important as information was flagged by users as “technically
+     incorporated in future development [67].                              correct,” but not necessarily accurate in all cases.
+     Future work could train LE collaborators in HCI terminology           Chatbots can break down tasks into manageable chunks,
+     to assist in feedback sessions, and user-testing should be done       reducing overwhelm [26,27]. They also offer engagement and
+     with multiple versions to identify the most accessible versions.      motivation [32,33]. This means that they are in a unique position
+                                                                           to provide information that is both thorough and nuanced, as
+     Ability to Customize vs Too Much Choice                               well as being engaging and useful.
+     The ability to customize features was also a recurring topic of
+     conversation. Throughout the development process, users would         The combination of nuanced and thorough information with
+     make different suggested changes, which we would mock up              bite-sized messages that are accessible to varied groups will
+     and present these changes back to users at a later session. When      require thorough consideration and user testing in future
+     collaborators were then asked to make a choice between the            versions.
+     mock-up options, people would often ask, “Why not both of             The Reality of Health Services
+     these? They are both good options that would work for different
+                                                                           While the general psychoeducation information provided by
+     people.” There is further work to be done that explores
+                                                                           the chatbot was highly approved of by users, some did raise
+     customization and choice from the perspective of principles of
+                                                                           concerns about the extent to which the information about the
+     design, and the science of ADHD and choice. To perfect a
+                                                                           health care system was accurate. This was sometimes because
+     balance between catering to a wide and diverse audience whilst
+                                                                           services vary significantly by region, for example the process
+     still maintaining accessibility and ‘usefulness’ will be a key
+                                                                           of getting a diagnosis, waiting list times, and pathways available.
+     ongoing challenge.
+                                                                           However, this was also due to discrepancies between the
+
+
+     https://formative.jmir.org/2026/1/e85013                                                              JMIR Form Res 2026 | vol. 10 | e85013 | p. 14
+                                                                                                                (page number not for citation purposes)
+XSL• FO
+RenderX
+
+<a id="pdf-p15"></a>
+### [PDF p.15] JMIR FORMATIVE RESEARCH Bryant et al
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **15** / 21
+
+JMIR FORMATIVE RESEARCH                                                                                                           Bryant et al
+
+     information provided in NICE guidelines and the realities of          involved in this type of interdisciplinary working will be
+     how these services are delivered.                                     discussed in a linked SmartADHD publication.
+     In services across the UK, NICE guidelines are “seldom fully          Versions of the chatbot were developed with inbuilt languages
+     implemented,” and services are said to be a “postcode lottery”        (Arabic, Bengali, Polish, and Romanian) which are commonly
+     [70]. Though there are few studies auditing service adherence         spoken as a primary or secondary language in England. Emails
+     to guidelines, a previous mapping exercise of adult ADHD              were circulated to LE collaborators, colleagues, and a public
+     services identified that a minority of services offer a               sector organization, asking for their help in finding a young
+     comprehensive range of NICE-recommended services [71].                person who spoke any of these languages fluently (as well as
+                                                                           English). However, there were no responses from any of these
+     The use of these NICE guidelines as a source of information
+                                                                           avenues, so we could not test the functionality of the
+     about health care services should therefore be carefully
+                                                                           multilingual chatbot feature. These versions should be tested
+     considered, and alternative sources of information should be
+                                                                           in the future, especially considering the cultural differences that
+     appraised in order to provide users with advice that is congruent
+                                                                           can apply to ADHD. Differences could include cultural
+     with the current provision of services.
+                                                                           understanding of ADHD, including stigma, parental expectations
+     Additional Features of the Chatbot                                    and social attitudes, differences in help-seeking behavior, and
+     The authors did not anticipate that users would also ask the          barriers or facilitators to accessing support, though there is a
+     chatbot to provide practical tips for managing ADHD (on top           paucity of research in this area [75]. Considering that objective
+     of psychoeducation and information about health services).            queries were simpler for the chatbot to answer than questions
+     Users in a similar co-design study also thought the chatbot           very individual to a user, complex discussions around culture
+     should provide a space to share thoughts and feelings, which          and ADHD will be important to test. Throughout the process
+     was not raised by users in this process, but could feasibly be        of developing the chatbot in English, it was important to people
+     asked of the chatbot by users. Potts and Ennis [72] suggest that      with LE that the chatbot used the right language and semantics.
+     these additional features could be supported by a web app, which      Thus, this work to determine word choice and nuanced meaning
+     could be a future avenue for development of the SmartADHD             would be essential to complete in any alternative languages.
+     Chatbot. Similarly, developers of the chatbot “Ebb,” which is         Though there was some diversity across the group in terms of
+     associated with the app “Headspace,” emphasize the importance         gender, ethnicity, and region, it is critical that any future
+     of embedding AI in a larger suite of resources [73].                  development work prioritizes inclusion of underserved groups.
+     As Potts and Ennis [72] also highlight, responsible design needs      The potential impacts for these groups are significant, and
+     to effectively triangulate the needs of users, what AI is capable     interventions need to address specific barriers to work for these
+     of delivering to an acceptable standard, and what mental health       groups. Additionally, all the users had existing background
+     professionals will endorse. This is particularly relevant to the      knowledge of ADHD to varying levels and had been involved
+     provision of behavioral interventions and space to air thoughts       in research before. None of the users were completely new to
+     and feelings, as these topics can venture into medical advice         learning about ADHD, so they may represent the intended user
+     and therapies. Future development should therefore explore the        group to a limited extent. Additionally, users had been involved
+     bounds of what technology is currently capable of delivering          with this project since conceptualization and were aware that
+     to a high standard, the perspectives of HCPs on these abilities,      they were using an early prototype that would require extensive
+     and the ethical implications of offering these other types of         development to be deemed fit for use. Because of this, users
+     support.                                                              were also aware that the options for avatar design using Convai
+                                                                           were limited, and so our questions and feedback were
+     Limitations                                                           concentrated on aspects we could address, for example,
+     The structured nature of the workshops may have influenced            language. Due to the restricted choices of the platform, time,
+     the categories chosen and the nature of feedback that was             and resource constraints, we were unable to fully report on user
+     identified. However, this pragmatic approach is appropriate for       preferences of the avatar in the role of supporting
+     early intervention development and was necessary to gain              communication.
+     specific feedback and actionable suggestions. The think-aloud         This study presents early development of a prototype chatbot,
+     interviews are likely to have elicited any feedback that did not      as the main aim was to collect opinion-based feedback to inform
+     fit into earlier sessions and, although they followed a brief topic   co-development, not collect generalizable or transferable data.
+     guide, were left as open as possible on purpose.                      These opinions will be used to inform the direction of
+     This was a multidisciplinary project which involved experts by        development of digital interventions by this team and may also
+     LE, digital experts, HCI experts, clinicians and ADHD                 guide future research in the rapidly evolving area of
+     researchers. We all come with a wide range of experience and          AI-supported digital mental health interventions for young
+     expertise, and though the research team were able to understand       people [76]. As such, claims about effectiveness cannot be made
+     the needs and wants of the users, this was sometimes difficult        because the current prototype does not represent a finished
+     for us to communicate and action due to the mismatch in               product. Future testing of the chatbot could include formalized
+     discipline-specific language between us and the digital team          usability testing, safety assessments, and evaluation of feasibility
+     [74]. Further information on challenges and opportunities             or performance.
+
+
+
+     https://formative.jmir.org/2026/1/e85013                                                              JMIR Form Res 2026 | vol. 10 | e85013 | p. 15
+                                                                                                                (page number not for citation purposes)
+XSL• FO
+RenderX
+
+<a id="pdf-p16"></a>
+### [PDF p.16] JMIR FORMATIVE RESEARCH Bryant et al
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **16** / 21
+
+JMIR FORMATIVE RESEARCH                                                                                                        Bryant et al
+
+     A further limitation is that this initial prototype included less   Conclusions
+     functionality than would be present in the final version. For       This study acts as a proof of concept for an LLM chatbot
+     example, this version was trained only on information from the      produced specifically to provide support for young people with
+     NHS and the NICE guidelines, whereas future versions could          ADHD. Young people and parent-carers were positive when
+     be trained on a more extensive range of evidence sources.           user-testing a prototype of the chatbot, particularly about the
+     Additionally, there could be alternative platforms which could      content. Future iterations should aim to state where specific
+     be better suited to hosting the chatbot, both from a developer      information is from, test its functionality in other languages and
+     and a user perspective. This work provides proof of concept for     with underserved groups in ADHD care, consider improvements
+     future development, but many questions remain about what the        to the avatar and text-to-speech function, and address some of
+     eventual product might look like.                                   the technical glitches. In the space of digital interventions for
+     All collaborators who took part in think-aloud interviews were      ADHD, a chatbot could offer a new solution to the existing
+     offered the opportunity to provide feedback on the findings by      problem of gaps in health care provision by combining tailored
+     acting as a coauthor on this article, and one accepted. Findings    communication and evidence-based information. Key
+     from this engagement research are also being communicated           recommendations are presented in Textbox 2.
+     via multiple channels to ensure our LE partners remain informed
+     of developments.
+
+     Acknowledgments
+     We would like to thank all those who have contributed to this study, including the health care professionals and people with
+     ADHD and their supporters involved in the conception, planning and delivery of this research. We would also like to thank the
+     colleagues, collaborators, and research partners who have supported every aspect of this study.
+     For the purpose of open access, the author has applied a Creative Commons Attribution (CC BY) license to any Author Accepted
+     Manuscript version arising from this submission.
+     The authors attest that there was no use of generative AI in the generation of text, figures, or other informational content of this
+     manuscript.
+
+     Data Availability
+     Data sharing is not applicable to this article as no data sets were generated or analyzed during this study.
+
+     Funding
+     This work has been supported by the LEAP Digital Health Hub, which has been funded by EPSRC under grant number
+     EP/X031349/1.
+     The time of AP was supported by the National Institute for Health and Care Research (NIHR) Development and Skills Enhancement
+     Award, grant number DSE304122. The views expressed are those of the authors and not necessarily those of the NIHR or the
+     Department of Health and Social Care.
+
+     Authors' Contributions
+     Methodology, investigation, writing – original draft, project administration, visualization: EFB
+     Investigation, software, writing – review and editing: DH
+     Methodology, writing – review and editing: EN
+     Investigation, writing – original draft, project administration: TE
+     Funding acquisition, supervision, conceptualization, writing – review and editing: JRL
+     Writing – review and editing: NR
+     Funding acquisition, supervision, writing – review and editing: TND
+     Conceptualization, methodology, writing – original draft, writing – review and editing, supervision, funding acquisition: AP
+
+     Conflicts of Interest
+     None declared.
+
+     Multimedia Appendix 1
+     Terms of reference.
+     [DOCX File , 387 KB-Multimedia Appendix 1]
+
+     Multimedia Appendix 2
+     Role descriptor.
+
+     https://formative.jmir.org/2026/1/e85013                                                           JMIR Form Res 2026 | vol. 10 | e85013 | p. 16
+                                                                                                             (page number not for citation purposes)
+XSL• FO
+RenderX
+
+<a id="pdf-p17"></a>
+### [PDF p.17] JMIR FORMATIVE RESEARCH Bryant et al
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **17** / 21
+
+JMIR FORMATIVE RESEARCH                                                                                                      Bryant et al
+
+     [DOCX File , 390 KB-Multimedia Appendix 2]
+
+     Multimedia Appendix 3
+     Logic model.
+     [PNG File , 211 KB-Multimedia Appendix 3]
+
+     Multimedia Appendix 4
+     Intervention planning table.
+     [DOCX File , 237 KB-Multimedia Appendix 4]
+
+     Multimedia Appendix 5
+     Chatbot core description.
+     [DOCX File , 24 KB-Multimedia Appendix 5]
+
+     Multimedia Appendix 6
+     Chatbot training documents.
+     [TXT File , 80 KB-Multimedia Appendix 6]
+
+     Multimedia Appendix 7
+     Screenshot.
+     [PNG File , 295 KB-Multimedia Appendix 7]
+
+     Multimedia Appendix 8
+     Feedback points.
+     [DOCX File , 35 KB-Multimedia Appendix 8]
+
+     Multimedia Appendix 9
+     Chatbot specification document.
+     [DOCX File , 59 KB-Multimedia Appendix 9]
+
+     References
+     1.      Song P, Zha M, Yang Q, Zhang Y, Li X, Rudan I, et al. Global Health Epidemiology Reference Group (GHERG). The
+             prevalence of adult attention-deficit hyperactivity disorder: a global systematic review and meta-analysis. J Glob Health.
+             2021;11:04009. [FREE Full text] [doi: 10.7189/jogh.11.04009] [Medline: 33692893]
+     2.      International Classification of Diseases, Eleventh Revision (ICD-11). World Health Organization. 2021. URL: https://www.
+             who.int/standards/classifications/classification-of-diseases [accessed 2026-06-13]
+     3.      Shaw M, Hodgkins P, Caci H, Young S, Kahle J, Woods AG, et al. A systematic review and analysis of long-term outcomes
+             in attention deficit hyperactivity disorder: effects of treatment and non-treatment. BMC Med. 2012;10:99. [FREE Full text]
+             [doi: 10.1186/1741-7015-10-99] [Medline: 22947230]
+     4.      Di Lorenzo R, Balducci J, Poppi C, Arcolin E, Cutino A, Ferri P, et al. Children and adolescents with ADHD followed up
+             to adulthood: a systematic review of long-term outcomes. Acta Neuropsychiatr. 2021;33(6):283-298. [doi:
+             10.1017/neu.2021.23] [Medline: 34384511]
+     5.      Cortese S, Daley D, Hollis C, Rae S, Ani C, Asherson P, et al. ADHD (over) diagnosis: fiction, fashion and failure. Br J
+             Psychiatry. 2026:1-4. [doi: 10.1192/bjp.2026.10546] [Medline: 41787830]
+     6.      Young S, Asherson P, Lloyd T, Absoud M, Arif M, Colley WA, et al. Failure of healthcare provision for
+             attention-deficit/hyperactivity disorder in the United Kingdom: a consensus statement. Front Psychiatry. 2021;12:649399.
+             [FREE Full text] [doi: 10.3389/fpsyt.2021.649399] [Medline: 33815178]
+     7.      Price A, Janssens A, Woodley AL, Allwood M, Ford T. Review: Experiences of healthcare transitions for young people
+             with attention deficit hyperactivity disorder: a systematic review of qualitative research. Child Adolesc Ment Health.
+             2019;24(2):113-122. [doi: 10.1111/camh.12297] [Medline: 32677182]
+     8.      Waiting times for assessment and support for autism, ADHD and other neurodevelopmental conditions. Children’s
+             Commissioner. 2024. URL: https://assets.childrenscommissioner.gov.uk/wpuploads/2024/10/
+             CCo-report-on-ND-waiting-times_final.pdf [accessed 2026-06-13]
+
+
+
+     https://formative.jmir.org/2026/1/e85013                                                         JMIR Form Res 2026 | vol. 10 | e85013 | p. 17
+                                                                                                           (page number not for citation purposes)
+XSL• FO
+RenderX
+
+<a id="pdf-p18"></a>
+### [PDF p.18] JMIR FORMATIVE RESEARCH Bryant et al
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **18** / 21
+
+JMIR FORMATIVE RESEARCH                                                                                                         Bryant et al
+
+     9.      James C, Denholm R, Wood R. The cost of keeping patients waiting: retrospective treatment-control study of additional
+             healthcare utilisation for UK patients awaiting elective treatment. BMC Health Serv Res. 2024;24(1):556. [FREE Full text]
+             [doi: 10.1186/s12913-024-10931-2] [Medline: 38693557]
+     10.     Report of the independent ADHD taskforce: part 1. NHS England. 2025. URL: https://www.england.nhs.uk/long-read/
+             report-of-the-independent-adhd-taskforce-part-1/ [accessed 2026-06-12]
+     11.     Gudka R, Becker K, Ward J, Smith JR, Mughal F, Melendez-Torres G, et al. Primary care provision for young people with
+             ADHD: a multi-perspective qualitative study. Br J Gen Pract. 2024;74:e404-e416. [doi: 10.3399/bjgp.2023.0626] [Medline:
+             38316468]
+     12.     Babalola T, Sanguedolce G, Dipper L, Botting N. Barriers and facilitators of healthcare access for autistic children in the
+             UK: a systematic review. Rev J Autism Dev Disord. 2024;12(4):780-808. [doi: 10.1007/s40489-023-00420-3]
+     13.     Starck M, Grünwald J, Schlarb AA. Occurrence of ADHD in parents of ADHD children in a clinical sample. Neuropsychiatr
+             Dis Treat. 2016;12:581-588. [FREE Full text] [doi: 10.2147/NDT.S100238] [Medline: 27042071]
+     14.     Gentili A, Failla G, Melnyk A, Puleo V, Tanna GLD, Ricciardi W, et al. The cost-effectiveness of digital health interventions:
+             a systematic review of the literature. Front Public Health. 2022;10:787135. [FREE Full text] [doi: 10.3389/fpubh.2022.787135]
+             [Medline: 36033812]
+     15.     Gabarron E, Denecke K, Lopez-Campos G. Evaluating the evidence: a systematic review of reviews of the effectiveness
+             and safety of digital interventions for ADHD. BMC Psychiatry. 2025;25(1):414. [FREE Full text] [doi:
+             10.1186/s12888-025-06825-0] [Medline: 40264083]
+     16.     Zhao J, Freeman B, Li M. Can mobile phone apps influence people's health behavior change? An evidence review. J Med
+             Internet Res. 2016;18(11):e287. [FREE Full text] [doi: 10.2196/jmir.5692] [Medline: 27806926]
+     17.     Milne-Ives M, Homer SR, Andrade J, Meinert E. Potential associations between behavior change techniques and engagement
+             with mobile health apps: a systematic review. Front Psychol. 2023;14:1227443. [FREE Full text] [doi:
+             10.3389/fpsyg.2023.1227443] [Medline: 37794916]
+     18.     He F, Qi Y, Zhou Y, Cao A, Yue X, Fang S, et al. Meta-analysis of the efficacy of digital therapies in children with
+             attention-deficit hyperactivity disorder. Front Psychiatry. 2023;14:1054831. [FREE Full text] [doi:
+             10.3389/fpsyt.2023.1054831] [Medline: 37260755]
+     19.     Is England's 10 year health plan fit for the future? White Rose Research Online. London.; 2025. URL: https://eprints.
+             whiterose.ac.uk/238544/ [accessed 2026-01-27]
+     20.     Yeung A, Ng E, Abi-Jaoude E. TikTok and attention-deficit/hyperactivity disorder: a cross-sectional study of social media
+             content quality. Can J Psychiatry. 2022;67(12):899-906. [FREE Full text] [doi: 10.1177/07067437221082854] [Medline:
+             35196157]
+     21.     Schiros A, Bowman N, Antshel K. Misinformation mayhem: the effects of TikTok content on ADHD knowledge, stigma,
+             and treatment-seeking intentions. Eur Child Adolesc Psychiatry. 2025;34(11):3521-3533. [doi: 10.1007/s00787-025-02769-8]
+             [Medline: 40471415]
+     22.     Kisely S, Ong G, Takyar A. A survey of the quality of web based information on the treatment of schizophrenia and attention
+             deficit hyperactivity disorder. Aust N Z J Psychiatry. 2003;37(1):85-91. [doi: 10.1046/j.1440-1614.2003.01107.x] [Medline:
+             12534662]
+     23.     King S, Ritchie KC, McGonnell M, Doe C, Corkum PV, Côté E, et al. Paging Dr. Google: availability and reliability of
+             online evidence-based treatment information about ADHD. Evidence-Based Practice in Child and Adolescent Mental
+             Health. 2021;6(2):277-289. [doi: 10.1080/23794925.2021.1901632]
+     24.     Jin Y, Liu J, Li P, Wang B, Yan Y, Zhang H, et al. The applications of large language models in mental health: scoping
+             review. J Med Internet Res. 2025;27:e69284. [FREE Full text] [doi: 10.2196/69284] [Medline: 40324177]
+     25.     Guo Z, Lai A, Thygesen JH, Farrington J, Keen T, Li K. Large language models for mental health applications: systematic
+             review. JMIR Ment Health. 2024;11:e57400. [FREE Full text] [doi: 10.2196/57400] [Medline: 39423368]
+     26.     Park D, Choo M, Cho M, Kim J, Shin YJ. Collaborative school mental health system: leveraging a conversational agent
+             for enhancing children's executive function. USA. Association for Computing Machinery; 2024. Presented at: Proceedings
+             of the 2024 CHI Conference on Human Factors in Computing Systems; May 11, 2024:63; Honolulu, HI, USA. [doi:
+             10.1145/3613904.3642593]
+     27.     Tamdjidi R, Pagès BD. ChatGPT as an assistive technology to enhance reading comprehension for individuals with ADHD.
+             Student thesis. 2023. URL: https://www.diva-portal.org/smash/get/diva2:1778288/FULLTEXT01.pdf [accessed 2026-07-02]
+     28.     Habicht J, Viswanathan S, Carrington B, Hauser TU, Harper R, Rollwage M. Closing the accessibility gap to mental health
+             treatment with a personalized self-referral chatbot. Nat Med. 2024;30(2):595-602. [doi: 10.1038/s41591-023-02766-x]
+             [Medline: 38317020]
+     29.     Grové C. Co-developing a mental health and wellbeing chatbot with and for young people. Front Psychiatry. 2020;11:606041.
+             [FREE Full text] [doi: 10.3389/fpsyt.2020.606041] [Medline: 33597898]
+     30.     Sleath B, Beznos B, Carpenter D, Thomas K, Annis I, Tudor G, et al. A pre-visit video/question prompt list intervention
+             to increase youth question-asking about attention deficit hyperactivity disorder during pediatric visits. Patient Educ Couns.
+             2024;127:108320. [FREE Full text] [doi: 10.1016/j.pec.2024.108320] [Medline: 38851012]
+
+
+     https://formative.jmir.org/2026/1/e85013                                                            JMIR Form Res 2026 | vol. 10 | e85013 | p. 18
+                                                                                                              (page number not for citation purposes)
+XSL• FO
+RenderX
+
+<a id="pdf-p19"></a>
+### [PDF p.19] JMIR FORMATIVE RESEARCH Bryant et al
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **19** / 21
+
+JMIR FORMATIVE RESEARCH                                                                                                        Bryant et al
+
+     31.     Kostenius C, Lindstrom F, Potts C, Pekkari N. Young peoples' reflections about using a chatbot to promote their mental
+             wellbeing in northern periphery areas - a qualitative study. Int J Circumpolar Health. 2024;83(1):2369349. [FREE Full
+             text] [doi: 10.1080/22423982.2024.2369349] [Medline: 38912845]
+     32.     Jang S, Kim J, Kim S, Hong J, Kim S, Kim E. Mobile app-based chatbot to deliver cognitive behavioral therapy and
+             psychoeducation for adults with attention deficit: a development and feasibility/usability study. Int J Med Inform.
+             2021;150:104440. [doi: 10.1016/j.ijmedinf.2021.104440] [Medline: 33799055]
+     33.     Hernández- Capistrán J, Alor-Hernández G, Sánchez-Morales LN, Machorro-Cano I. A decade of apps for ADHD
+             management: a scoping review. Behav Inf Technol. 2025;44(16):4037-4064. [doi: 10.1080/0144929x.2025.2461225]
+     34.     Brandtzæg PB, Skjuve MB. Chatbots as a new user interface for providing health information to young people. Nordicom.
+             2018:59-66. [FREE Full text]
+     35.     Singla A, Khanna R, Kaur M, Kelm K, Zaiane O, Rosenfelt CS, et al. Developing a chatbot to support individuals with
+             neurodevelopmental disorders: tutorial. J Med Internet Res. 2024;26:e50182. [FREE Full text] [doi: 10.2196/50182]
+             [Medline: 38888947]
+     36.     Nadarzynski T, Knights N, Husbands D, Graham C, Llewellyn CD, Buchanan T, et al. Chatbot -assisted self-assessment
+             (CASA): co-designing an AI -powered behaviour change intervention for ethnic minorities. PLOS Digit Health.
+             2025;4(2):e0000724. [FREE Full text] [doi: 10.1371/journal.pdig.0000724] [Medline: 39946375]
+     37.     Laymouna M, Ma Y, Lessard D, Schuster T, Engler K, Lebouché B. Roles, users, benefits, and limitations of chatbots in
+             health care: rapid review. J Med Internet Res. 2024;26:e56930. [FREE Full text] [doi: 10.2196/56930] [Medline: 39042446]
+     38.     Sharp G, Dwyer B, Xie J, McNaney R, Shrestha P, Prawira C, et al. Co-design of a single session intervention chatbot for
+             people on waitlists for eating disorder treatment: a qualitative interview and workshop study. J Eat Disord. 2025;13(1):46.
+             [FREE Full text] [doi: 10.1186/s40337-025-01225-x] [Medline: 40069853]
+     39.     Center for Countering Digital Hate. How Generative AI Enables and Promotes Harmful Eating Disorder content. AI and
+             Eating Disorders. 2023. URL: https://counterhate.com/wp-content/uploads/2023/08/
+             230705-AI-and-Eating-Disorders-REPORT.pdf [accessed 2026-07-02]
+     40.     Bailey C. Eating disorder group pulls chatbot sharing diet advice. BBC News. 2023. URL: https://www.bbc.co.uk/news/
+             world-us-canada-65771872 [accessed 2026-03-11]
+     41.     Gudka R, McGlynn E, Lister K, Shaw N, Pitchforth E, Mughal F, et al. Correction: digital health interventions with healthcare
+             information and self-management resources for young people with ADHD: a mixed-methods systematic review and narrative
+             synthesis. Eur Child Adolesc Psychiatry. 2025;34(10):3323. [doi: 10.1007/s00787-025-02727-4] [Medline: 40304772]
+     42.     Gudka R, Becker K, Newlove-Delgado T, Price A. Provision of digital health interventions for young people with ADHD
+             in primary care: findings from a survey and scoping review. BMC Digit Health. 2024;2(1):71. [doi:
+             10.1186/s44247-024-00129-1]
+     43.     Price A, Van Heerden A. Editorial perspective: digital technology and the future of mental health treatment. BMC Digit
+             Health. 2025;3(1):5. [doi: 10.1186/s44247-024-00146-0]
+     44.     Price A, Becker K, Gudka R, Ward JH, Smith JR, Mughal F, et al. Improving healthcare information for young people with
+             ADHD in general practice: a qualitative study. Br J Gen Pract. 2025;75(758):e586-e596. [doi: 10.3399/bjgp.2024.0755]
+     45.     Price A, Mitchell S, Janssens A, Eke H, Ford T, Newlove-Delgado T. In transition with attention deficit hyperactivity
+             disorder (ADHD): children's services clinicians' perspectives on the role of information in healthcare transitions for young
+             people with ADHD. BMC Psychiatry. 2022;22(1):251. [FREE Full text] [doi: 10.1186/s12888-022-03813-6] [Medline:
+             35397599]
+     46.     Epstein JN, Kelleher KJ, Baum R, Brinkman WB, Peugh J, Gardner W, et al. Impact of a web-portal intervention on
+             community ADHD care and outcomes. Pediatrics. 2016;138(2):e20154240. [FREE Full text] [doi: 10.1542/peds.2015-4240]
+             [Medline: 27462065]
+     47.     SmartADHD. What is SmartADHD? University of Exeter. 2025. URL: https://sites.exeter.ac.uk/smartadhd/ [accessed
+             2025-02-09]
+     48.     The UK public involvement standards development partnership group. UK Standards for Public Involvement. 2019. URL:
+             https://sites.google.com/nihr.ac.uk/pi-standards/home [accessed 2026-06-12]
+     49.     SmartADHD. Crash course: human computer interaction in digital health. YouTube. 2025. URL: https://www.youtube.com/
+             watch?v=-pEQG9CCfcE [accessed 2026-06-12]
+     50.     Bhaskar R. A Realist Theory of Science. Atlantic Highlands. NJ. Humanities Press; 1978.
+     51.     Messiha K, Altenburg TM, Schreier M, Longworth GR, Thomas N, Chastin S, et al. Enriching the evidence base of
+             co-creation research in public health with methodological principles of critical realism. Critical Public Health.
+             2024;34(1):1-19. [doi: 10.1080/09581596.2024.2371323]
+     52.     Holt L, Denford S, Bowers H, Kuberka P, Muller I, Yardley L. The person-based approach to intervention development:
+             a scoping review of methods and applications. Digit Health. 2025;11:20552076241305934. [FREE Full text] [doi:
+             10.1177/20552076241305934] [Medline: 39801581]
+     53.     Michie S, van Stralen MM, West R. The behaviour change wheel: a new method for characterising and designing behaviour
+             change interventions. Implement Sci. 2011;6:42. [FREE Full text] [doi: 10.1186/1748-5908-6-42] [Medline: 21513547]
+
+
+     https://formative.jmir.org/2026/1/e85013                                                           JMIR Form Res 2026 | vol. 10 | e85013 | p. 19
+                                                                                                             (page number not for citation purposes)
+XSL• FO
+RenderX
+
+<a id="pdf-p20"></a>
+### [PDF p.20] JMIR FORMATIVE RESEARCH Bryant et al
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **20** / 21
+
+JMIR FORMATIVE RESEARCH                                                                                                        Bryant et al
+
+     54.     Mapping ADHD services in primary care. University of Exeter. 2024. URL: https://sites.exeter.ac.uk/mapadhd/ [accessed
+             2026-06-12]
+     55.     Microsoft Forms. Microsoft Corporation. 2024. URL: https://www.microsoft.com/en-in/microsoft-365/
+             get-started-with-office-2024 [accessed 2026-06-12]
+     56.     French B, Price A, Salimi A, Russell A. Important considerations for adhd 'patient and public' involvement and engagement
+             in research. Med Res Arch. 2023;11(10):4477. [FREE Full text] [doi: 10.18103/mra.v11i10.4477] [Medline: 38009079]
+     57.     Conversational AI characters. Convai. URL: https://www.convai.com [accessed 2026-06-12]
+     58.     Yardley L, Ainsworth B, Arden-Close E, Muller I. The person-based approach to enhancing the acceptability and feasibility
+             of interventions. Pilot Feasibility Stud. 2015;1:37. [FREE Full text] [doi: 10.1186/s40814-015-0033-z] [Medline: 27965815]
+     59.     NVivo. Lumivero. 2023. URL: https://lumivero.com/resources/support/getting-started-with-nvivo/
+             download-and-activate-nvivo/ [accessed 2026-06-12]
+     60.     Suri S, Harrison SL, Bevin-Nicholls A, Shenton F, Atkinson S, Earle J, et al. Patient and public involvement and engagement:
+             do we need an 'ethical anchor'? Res Involv Engagem. 2024;10(1):113. [FREE Full text] [doi: 10.1186/s40900-024-00624-9]
+             [Medline: 39482787]
+     61.     Exploring engagement. National Coordinating Centre for Public Engagement (NCCPE). 2024. URL: https://www.
+             publicengagement.ac.uk/exploring-engagement [accessed 2026-05-11]
+     62.     Research ethics when working in partnership with people outside of the University system: A project report. In: Co-Production
+             Collective. Liverpool, United Kingdom. The University Partnership Playbook; 2023.
+     63.     HRA best practice principles of public involvement. NHS Health Research Authority. 2025. URL: https://www.hra.nhs.uk/
+             planning-and-improving-research/best-practice/public-involvement/principles-public-involvement/
+             #:~:text=We've%20developed%204%20best,Describe%20how%20it%20helps [accessed 2025-02-09]
+     64.     Co-production in research. UK Research and Innovation. 2026. URL: https://www.ukri.org/manage-your-award/
+             good-research-resource-hub/research-co-production/ [accessed 2026-05-11]
+     65.     Berrezueta-Guzman S, Kandil M, Martín-Ruiz ML, Pau de la Cruz I, Krusche S. Future of adhd care: evaluating the efficacy
+             of ChatGPT in therapy enhancement. Healthcare (Basel). 2024;12(6):683. [FREE Full text] [doi: 10.3390/healthcare12060683]
+             [Medline: 38540647]
+     66.     The Counselling and Therapy Hub (The CATH). URL: https://www.the-cath.org.uk/services/free-ai-assistant-ana [accessed
+             2025-09-20]
+     67.     McKnight L. Designing for ADHD: in search of guidelines. In: Computer Science, Education, Psychology. 2010. Presented
+             at: Proceedings of the 9th International Conference on Interaction Design and Children (IDC 2010); June 12, 2010; Barcelona.
+             URL: https://www.semanticscholar.org/paper/Designing-for-ADHD-%3A-in-search-of-guidelines-McKnight/
+             0b0a5b9bc7cdf104c822d6ac3e5abf0e19be1c46
+     68.     Nordberg OE, Wake JD, Nordby ES, Flobak E, Nordgreen T, Mukhiya SK. Designing chatbots for guiding online peer
+             support conversations for adults with ADHD. Netherlands. Springer-Verlag; 2019. Presented at: Proceedings of the Third
+             International Workshop, CONVERSATIONS 2019; November 19-20, 2019:113-126; Amsterdam, The Netherlands. [doi:
+             10.1007/978-3-030-39540-7_8]
+     69.     Følstad A, Skjuve M, Brandtzaeg PB. Different chatbots for different purposes: towards a typology of chatbots to understand
+             interaction design. Internet Science. 2019:145-156. [doi: 10.1007/978-3-030-17705-8_13]
+     70.     McMurray S. Understanding ADHD care: exploring assessment waiting times, NICE recommendations and care pathways
+             in the UK and RoI. Northern Ireland Assembly. 2024:1-42. [FREE Full text]
+     71.     Price A, Janssens A, Newlove-Delgado T, Eke H, Paul M, Hollis C, et al. Mapping UK mental health services for adults
+             with attention-deficit/hyperactivity disorder: national survey with comparison of reporting between three stakeholder groups.
+             BJPsych Open. 2020;6(4):e76. [FREE Full text] [doi: 10.1192/bjo.2020.65] [Medline: 32723405]
+     72.     Potts C, Ennis E, Bond RB, Mulvenna MD, McTear MF, Boyd K, et al. Chatbots to support mental wellbeing of people
+             living in rural areas: can user groups contribute to co-design? J Technol Behav Sci. 2021;6(4):652-665. [FREE Full text]
+             [doi: 10.1007/s41347-021-00222-6] [Medline: 34568548]
+     73.     How Headspace build AI that feels safe? . Future London Academy. 2025. URL: https://futurelondonacademy.co.uk/en/
+             articles/headspace-released-ebb-ai-companion [accessed 2026-04-01]
+     74.     Blandford A, Gibbs J, Newhouse N, Perski O, Singh A, Murray E. Seven lessons for interdisciplinary research on interactive
+             digital health interventions. Digit Health. 2018;4:2055207618770325. [FREE Full text] [doi: 10.1177/2055207618770325]
+             [Medline: 29942629]
+     75.     Asherson P, Akehurst R, Kooij JJS, Huss M, Beusterien K, Sasané R, et al. Under diagnosis of adult ADHD: cultural
+             influences and societal burden. J Atten Disord. 2012;16(5 Suppl):20S-38S. [doi: 10.1177/1087054711435360] [Medline:
+             22377849]
+     76.     Mutluer T, Gurel Ficicioglu IE, Uysal M, Ekinci S, Coskun CN, Mete HK, et al. A systematic review of artificial intelligence
+             in child and adolescent interventions: from psychotherapy to developmental support. Eur Child Adolesc Psychiatry.
+             2026;35(3):669-689. [doi: 10.1007/s00787-025-02867-7] [Medline: 41779143]
+
+
+
+     https://formative.jmir.org/2026/1/e85013                                                           JMIR Form Res 2026 | vol. 10 | e85013 | p. 20
+                                                                                                             (page number not for citation purposes)
+XSL• FO
+RenderX
+
+<a id="pdf-p21"></a>
+### [PDF p.21] JMIR FORMATIVE RESEARCH Bryant et al
+- Locator: `R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf` · página **21** / 21
+
+JMIR FORMATIVE RESEARCH                                                                                                                 Bryant et al
+
+
+     Abbreviations
+               ADHD: attention deficit hyperactivity disorder
+               AuDHD: Autism and ADHD
+               CAMHS: Child and Adolescent Mental Health Services
+               DHI: digital health intervention
+               GenAI: generative AI
+               GP: general practitioner
+               HCI: human-computer interaction
+               HCP: health care professional
+               LE: lived experience
+               LLM: large language model
+               MAP: Mapping ADHD services in primary Care
+               NHS: National Health Service
+               NICE: National Institute for Health and Care Excellence
+               NIHR: National Institute for Health and Care Research
+               PBA: person-based approach
+               PPIE: patient and public involvement and engagement
+               RAG: research advisory group
+               SAND: Science of ADHD and Neurodevelopment
+               WG: working group
+
+
+
+
+               Edited by A Mavragani; submitted 30.Sep.2025; peer-reviewed by G Sharp, PJL Guo; comments to author 06.Mar.2026; accepted
+               04.Jun.2026; published 10.Sep.2026
+               Please cite as:
+               Bryant EF, Hallett D, Nielsen E, Evans T, Rees-Lee J, Riley N, Newlove-Delgado T, Price A
+               An Evidence-Based AI Virtual Assistant for Young People With Attention Deficit Hyperactivity Disorder: Co-Design and Prototype
+               Development
+               JMIR Form Res 2026;10:e85013
+               URL: https://formative.jmir.org/2026/1/e85013
+               doi: 10.2196/85013
+               PMID:
+
+
+
+
+     ©Eleanor F Bryant, David Hallett, Emily Nielsen, Tali Evans, Jacqueline Rees-Lee, Nicole Riley, Tamsin Newlove-Delgado,
+     Anna Price. Originally published in JMIR Formative Research (https://formative.jmir.org), 10.Sep.2026. This is an open-access
+     article distributed under the terms of the Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/),
+     which permits unrestricted use, distribution, and reproduction in any medium, provided the original work, first published in JMIR
+     Formative Research, is properly cited. The complete bibliographic information, a link to the original publication on
+     https://formative.jmir.org, as well as this copyright and license information must be included.
+
+
+
+
+     https://formative.jmir.org/2026/1/e85013                                                                    JMIR Form Res 2026 | vol. 10 | e85013 | p. 21
+                                                                                                                      (page number not for citation purposes)
+XSL• FO
+RenderX

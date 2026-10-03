@@ -1,0 +1,1288 @@
+===== PDF PAGE 1 / 23 =====
+PLOS ONE
+
+                                                       RESEARCH ARTICLE
+
+                                                       EASIER corpus: A lexical simplification
+                                                       resource for people with cognitive
+                                                       impairments
+                                                       Rodrigo Alarcon ID☯*, Lourdes Moreno☯, Paloma Martı́nez☯
+
+                                                       Computer Science and Engineering Department, Universidad Carlos III de Madrid, Madrid, Spain
+
+                                                       ☯ These authors contributed equally to this work.
+                                                       * ralarcon@inf.uc3m.es
+a1111111111
+a1111111111
+a1111111111
+a1111111111                                            Abstract
+a1111111111
+                                                       Thanks to technologies such as the Internet and devices now available to people, we have
+                                                       increasingly greater access to larger quantities of information. However, people with ageing
+                                                       disabilities or intellectual disabilities, non-native speakers, and others have difficulties read-
+                                                       ing and understanding information. For this reason, it is essential to provide text simplifica-
+   OPEN ACCESS
+                                                       tion mechanisms when accessing information. Natural Language Processing methods can
+Citation: Alarcon R, Moreno L, Martı́nez P (2023)
+                                                       be applied to simplify textual content and improve understanding. These methods often use
+EASIER corpus: A lexical simplification resource for
+people with cognitive impairments. PLoS ONE            machine learning algorithms and models which require resources, such as corpora, to be
+18(4): e0283622. https://doi.org/10.1371/journal.      trained and tested. This article presents the EASIER corpus, a resource that can be used to
+pone.0283622                                           build lexical simplification methods to process Spanish domain-independent texts. The
+Editor: Natalia Grabar, STL UMR8163 CNRS,              EASIER corpus is composed of 260 annotated documents with 8,155 words labelled as
+FRANCE                                                 complex and 5,130 words with at least one proposed context-aware synonym associated.
+Received: July 22, 2022                                Expert linguists in easy-to-read and plain language guidelines have annotated the corpus
+Accepted: March 13, 2023                               based on their experience adapting texts for people with intellectual disabilities. Sixteen
+                                                       annotation guidelines that discriminate between complex and simple words have been
+Published: April 12, 2023
+                                                       defined to help other groups of experts to generate new annotations. Additionally, an inter-
+Copyright: © 2023 Alarcon et al. This is an open
+                                                       annotator agreement test was performed to validate the corpus, obtaining a Fleiss Kappa
+access article distributed under the terms of the
+Creative Commons Attribution License, which            coefficient of 0.641. Furthermore, a qualitative evaluation was conducted with 45 users
+permits unrestricted use, distribution, and            (including people with intellectual disabilities, elderly people, and a control audience). Com-
+reproduction in any medium, provided the original      plex word identification tasks achieved moderate results, but the synonyms proposed to
+author and source are credited.
+                                                       replace complex words achieved almost perfect ratings. This resource has been integrated
+Data Availability Statement: Easier corpus             into the EASIER platform, a tool that helps people with cognitive impairments and intellec-
+available at https://github.com/LURMORENO/
+                                                       tual disabilities to read and understand texts more easily.
+EASIER_CORPUS Annotators used an annotation
+tool created as an extension for Google Chrome:
+https://github.com/ralarcong/EASIER_
+AnnotationTool The evaluations carried out on the
+EASIER corpus can be consulted at: https://github.
+com/ralarcong/EASIERCORPUS_EVALUATIONS.
+                                                       Introduction
+Funding: This work has been supported by the
+R&D&i ACCESS2MEET (PID2020-116527RB-I0)
+                                                       Information and communication technologies, especially the Internet, have transformed how
+project financed by MCIN AEI/10.13039/                 we live and communicate. While millions of texts are produced every day, not all of these texts
+501100011033/. Additionally, this work is part of      are easy to understand for everyone due to their complexity. Texts that contain unusual and
+
+
+
+PLOS ONE | https://doi.org/10.1371/journal.pone.0283622 April 12, 2023                                                                                1 / 23
+
+===== PDF PAGE 2 / 23 =====
+PLOS ONE                                                                 EASIER corpus: A lexical simplification resource for people with cognitive impairments
+
+
+
+the "Intelligent and interactive home care system   complicated words can cause cognitive accessibility barriers for people with intellectual disabil-
+for the mitigation of the COVID-19 pandemic"        ities. In this sense, one solution can be to offer cognitively accessible interfaces and simplified
+project (PRTR-REACT UE) awarded by CAM.
+                                                    text content, which benefit not only individuals with intellectual and learning disabilities but
+CONSEJERÍA DE EDUCACIÓN E INVESTIGACIÓN.
+The funders had no role in study design, data       also deaf and deaf-blind individuals, the elderly, the illiterate and immigrants whose native lan-
+collection and analysis, decision to publish, or    guage is different, among others. The need for simplified texts is becoming increasingly critical
+preparation of the manuscript.                      as the number of individuals with disabilities is growing due to the ageing population [1].
+Competing interests: The authors have declared          Manual production of simplified texts is a non-trivial and, at the same time, time consum-
+that no competing interests exist.                  ing task [2]. In this sense, there are methods that systematically produce simplified content.
+                                                    Natural Language Processing (NLP) and artificial intelligence provide methods to simplify
+                                                    texts promoting readability and understandability for people with intellectual disabilities.
+                                                        Some directives provide guidelines on making content more accessible for individuals with
+                                                    intellectual and learning disabilities. In this regard, the most important noteworthy initiatives
+                                                    are the Web Content Accessibility Guidelines (WCAG) [3], the Easy-to-Read guidelines [4–6],
+                                                    the Plain Language guidelines [7] and the document issued by the Cognitive and Learning Dis-
+                                                    abilities Accessibility Task Force (W3C-COGA TF) [8]. One specific guideline is frequently
+                                                    repeated in all these initiatives: use a simple lexicon. In addition, other guidelines indicate that
+                                                    providing synonyms for complex words is also beneficial. Therefore, providing simplified texts
+                                                    has been found to be helpful for people with intellectual disabilities from a lexical point of view.
+                                                        Lexical simplification is an essential part of text simplification based on machine learning
+                                                    and deep learning methods to replace specific words with simpler ones for a particular audi-
+                                                    ence. Lexical simplification requires a Complex Word Identification (CWI) task to detect
+                                                    words that are considered difficult for a target audience. Once these words are identified, Sub-
+                                                    stitute Generation/Selection (SG/SS) tasks must offer a more straightforward synonym. SG
+                                                    tasks focus on producing substitutes for a target word in all the contexts in which it may
+                                                    appear. On the other hand, SS tasks collect these substitutes and select those that best fit the
+                                                    context in which the target word was found [9].
+                                                        Although these methods have shown promising results, manually annotated data or cor-
+                                                    pora are required for training purposes. Unfortunately, for Spanish, few annotated texts are
+                                                    available. This lack of resources has become the motivation for this work.
+                                                        In this article, the EASIER corpus is presented (https://github.com/LURMORENO/
+                                                    EASIER_CORPUS). This corpus aims to support CWI and SG/SS tasks, two important pro-
+                                                    cesses in text simplification aimed at an audience with intellectual disabilities. This has been
+                                                    achieved through the assistance of an expert linguist in easy-to-read and plain language guide-
+                                                    lines. Two additional experts and people with intellectual disabilities have evaluated the result-
+                                                    ing corpus to ensure the quality of the data provided.
+                                                        The EASIER corpus has been integrated into the EASIER tool [10, 11] (https://github.com/
+                                                    LURMORENO/easier) (http://easier.hulat.uc3m.es/), that improves the readability and under-
+                                                    standability of texts for users with intellectual disabilities.
+                                                        This article is structured as follows. The “Background” Section introduces previous work
+                                                    related to corpora used in simplification tasks. The “Method” Section describes the steps and
+                                                    resources used to develop the corpus as well as the annotation guidelines. The “Corpus
+                                                    Description” Section provides some statistics of the corpus; the “User Evaluation” Section
+                                                    describes the experiments with different types of users. Finally, the “Conclusions” Section pres-
+                                                    ents some conclusions and future work.
+
+
+                                                    Background
+                                                    In 1996, the first automatic text simplification approach [12] performed a superficial analysis
+                                                    of texts to identify verbs and nouns in complex phrases. Syntactic simplification consists in
+
+
+
+PLOS ONE | https://doi.org/10.1371/journal.pone.0283622 April 12, 2023                                                                                   2 / 23
+
+===== PDF PAGE 3 / 23 =====
+PLOS ONE                                                          EASIER corpus: A lexical simplification resource for people with cognitive impairments
+
+
+
+                                            identifying grammatical complexities in sentences and converting them into much simpler
+                                            ones [13]. The case of lexical simplification, which is the focus of this work, consists of substi-
+                                            tuting words in a given phrase to make it simpler without modifying its syntactic structure in
+                                            any way.
+                                                The PSET project [14] aimed to create a system that performs lexical and syntactic proce-
+                                            dures to assist people with aphasia in reading English newspaper texts. In Portuguese, the Por-
+                                            Simples project [15] developed technologies aimed at improving web content for people with
+                                            low literacy levels by performing lexical/syntactic modifications and, at the same time, devel-
+                                            oping resources for this language, such as a parallel corpus with simplified sentences. For the
+                                            French language, works based on parallel corpora such as the Alector corpus [16] have been
+                                            presented, which focus on alleviating reading difficulties for people with low reading level or
+                                            people with dyslexia. Additionally, French domain-specific resources have been proposed,
+                                            such as the CLEAR corpus [17], which contains parallel instances of medical terms with their
+                                            simplified version, aiming to alleviate the difficulty present in text with specialized content.
+                                            The Simplext project [18, 19] worked on Spanish texts using a modular system for lexical and
+                                            syntactic procedures to help people with cognitive disabilities. The FIRST project [20] was
+                                            focused on developing language technologies to help autistic people, relying on a set of rules,
+                                            images and dictionary searches for document simplification. Moreover, for people with intel-
+                                            lectual disabilities, an accessible web e-mail client that performed text simplification was devel-
+                                            oped in the Able2Include project [21] to address web text accessibility in the context of e-mail
+                                            communication. More recently, the authors in the EASIER project developed a web applica-
+                                            tion that provides people with an easier way to improve the readability and comprehension of
+                                            texts in Spanish. This work has been carried out with the objective of providing relevant data
+                                            to improve lexical simplification [10, 22, 23].
+                                                Text simplification has been approached from different perspectives: using rule-based or
+                                            machine learning systems to identify and improve complex texts [24]. Currently, deep learning
+                                            systems are being used to generate a simplified version of a given text in a kind of machine
+                                            translation process, see [25] for a comprehensive state of the art in text simplification. No mat-
+                                            ter what type of system is being used, it is always necessary to have resources to build, train or
+                                            adapt text simplification methods. Annotated and simplified corpora are an essential part of
+                                            these resources in NLP systems development.
+                                                Parallel corpora, which contain original texts together with their simplified versions, are
+                                            very valuable resources for training text simplification algorithms, especially in languages with
+                                            few resources, as is the case of Spanish. There are parallel corpora with aligned texts with a
+                                            range of complexity levels; Table 1 shows some examples of relevant related resources in text
+                                            simplification for English and Spanish.
+                                                The most common are corpora comprised of a set of original sentences and their simplified
+                                            versions. The Simplext project provided new resources such, as a parallel corpus comprised of
+                                            200 news texts, including their original and simplified versions. Other examples are [26–28]
+                                            in English, [29] in Portuguese, [30] in German, [31] in Italian and [18, 28, 32] in Spanish. A
+                                            recent paper [33] presents an overview of parallel corpora for text simplification in different
+                                            languages, which complements the contents of Table 1.
+                                                Regarding lexical simplification, specific resources have been made available over the years.
+                                            In English, SemEval-2012 [34] provided possible substitutes for a target word ranked in
+                                            ascending order by their complexity, taking the context into consideration or based on the
+                                            lexical substitution dataset [50], which focused on finding the best set of candidates for the
+                                            substitution of a target word. Other resources were created using alignment methods. Horn
+                                            et al. [37] created a collection of 500 sentences, which became a crowd-sourced lexical substitu-
+                                            tion resource sampled from English Wikipedia and Simple English Wikipedia alignments. In
+
+
+
+PLOS ONE | https://doi.org/10.1371/journal.pone.0283622 April 12, 2023                                                                            3 / 23
+
+===== PDF PAGE 4 / 23 =====
+PLOS ONE                                                                        EASIER corpus: A lexical simplification resource for people with cognitive impairments
+
+
+
+Table 1. Text simplification resources for English/Spanish.
+      Resource                Annotated text                             Size                        Language: English                Annotation method
+                                                                                                     (EN) Spanish (ES)
+   Simple English          A simplified version of          183,000 content pages to date                   EN                  Pages edited by 1,203 active users
+     Wikipedia               regular Wikipedia
+ SemEval 2012 [34]        English Internet Corpus       2,010 instances of simplicity rankings              EN                       Native English speakers
+                                    [35]
+     LSeval [36]          English Internet Corpus        430 instances of simplicity rankings               EN              46 Amazon Mechanical Turk (turkers), 9
+                                    [35]                                                                                               PHD students
+   LexMTurk [37]                 Wikipedia             500 instances with target complex words              EN                    50 Turkish English speaking
+                                                                and simpler synonyms
+    BenchLS [38]           Compilation of LSeval          929 instances with an average of 7                EN              Corrected and filtered by English speakers
+                             and LexMTurk                   candidates per complex word
+    NNSeval [39]             Filtered version of                    239 instances                           EN                    Non-native english speakers
+                                  BenchLS
+ Wikipedia—Simple        Simple English Wikipedia             167,689 aligned sentences                     EN                      Language modelling [40]
+    Wikipedia
+ PWKP (WikiSmall)          Wikipedia and Simple               108,016 aligned sentences                     EN                    Statistical machine translation
+      [41]                      Wikipedia
+    Simplext [19]                News texts                     200 aligned news texts                       ES              Human editors trained in easy-to-read
+                                                                                                                                         guidelines
+   SS Corpus [42]          Wikipedia and Simple               492,993 aligned sentences                     EN                        Unsupervised method
+                                Wikipedia
+    Newsela [28]                News articles           Parallel simple-complex articles with             EN, ES           Manually produced by professional editors
+                                                                    11-grade levels
+  RANLP 2017 [43]                Wikipedia              14,280 instances with target complex              EN, ES           54 turkers (Native and non-native speakers)
+                                                                       words
+   WikiLarge [44]           WikiSmall, Aligned          2,000 for dev, 359 for test, 296,402 for            EN                 Combination of previously created
+                          sentences pairs [40, 45]                      training                                                   simplification corpora
+   PPDB-S/M [46]                   PPDB               5,709 unigrams for S size, 15,524 unigrams             ES             Built by filtering and ordering paraphrases
+                                                                      for M size                                           pairs from the paraphrases database (PPDB)
+     CASSA [46]                CASSA dataset                      5,640,694 5-grams                          ES            Generated by extracting all unique 5-grams
+                                                                                                                                  pairs from CASSA resource
+     ASSET [47]            TurkCorpus extension        23,590 human simplifications associated              EN                     Amazon Mechanical Turk
+                                                        with 2,359 sentences from TurkCorpus
+ VYTEDU-CW) [48]          Transcripts of academic      9,175 words, 723 annotated as complex                 ES                      430 annotators students
+                                  videos
+    ALEXSIS [49]           RANLP 2017 datasets          381 instances with an average of 10.28               ES                       prolific.co annotators
+                                                               substitutes per instance
+https://doi.org/10.1371/journal.pone.0283622.t001
+
+
+
+                                                     Spanish, Baeza-Yates et al. [24] automatically created a database from the Spanish Open
+                                                     Thesaurus and the 5-gram Google Books Ngram Corpus. This resource was then extended in
+                                                     the work of Štajner et al. [46] by combining it with other resources such as OpenThesaurus
+                                                     (https://web.archive.org/) and EuroWordnet (https://archive.illc.uva.nl/EuroWordNet/). Also,
+                                                     certain resources were given additional specific tasks. For English CWI, in SemEval-2016 [51]
+                                                     a set of instances were presented, each of which had metadata associated with a target word
+                                                     labelled as either simple or complex. Some years later, the same task for English, Spanish, Ger-
+                                                     man and French was proposed [43], with the added value of performing classification for uni-
+                                                     words and multi-words. Recently, the ALEXSIS dataset [49] exploited the data from this task
+                                                     to create a new dataset containing simplicity-ranked substitutes for complex words. Also, a
+                                                     recent workshop [48] proposed a resource by challenging the participants to perform the CWI
+                                                     in academic content. Therefore, the proposed systems had to detect which technical words are
+                                                     commonly used in the domain and labelled them as simple words.
+
+
+
+PLOS ONE | https://doi.org/10.1371/journal.pone.0283622 April 12, 2023                                                                                               4 / 23
+
+===== PDF PAGE 5 / 23 =====
+PLOS ONE                                                          EASIER corpus: A lexical simplification resource for people with cognitive impairments
+
+
+
+                                               Most of these resources have been labelled by annotators without knowledge about cogni-
+                                            tive accessibility, easy-to-read and plain language guidelines. Also, people with disabilities are
+                                            not taken into account in the annotation process as is indicated in the “Annotation method”
+                                            column in Table 1. EASIER corpus addresses this gap providing support for the CWI task and
+                                            searching the corresponding synonym aimed at people with cognitive impairments, such as
+                                            the elderly and people with intellectual disabilities, among others. The EASIER corpus has
+                                            been annotated by easy-to-read and plain language experts following a methodological
+                                            approach that involves people with disabilities.
+
+
+                                            Method
+                                            Before explaining the methodology, recruitment of annotators, materials and instruments, it
+                                            is important to mention that the experiments presented in this article have been reviewed to
+                                            ensure that no confidential information is disclosed and has been approved in written form by
+                                            an IRB at Universidad Carlos III de Madrid (IRB20_12) on October 28, 2020 and by the partic-
+                                            ipants at subsequent dates.
+
+
+                                            Selection of annotators
+                                            Three annotators have taken part in corpus construction. One annotated the entire corpus
+                                            (main annotator), while the other two annotated part of the corpus to calculate the Inter-
+                                            Annotator Agreement (IAA). The three annotators are Spanish native speakers, expert lin-
+                                            guists and specialists in easy-to-read and plain language guidelines. They have more than 15
+                                            years of experience transforming conventional texts into easy-to-read texts. They belong to
+                                            Plena Inclusión (https://plenainclusionmadrid.org/) Madrid and Grupo Amas Fácil (https://
+                                            amasfacil.org/), two organisations that work to offer resources adapted to people with intellec-
+                                            tual and learning disabilities. It should be noted that these annotators manually adapted the
+                                            texts following a methodology that involves people with intellectual disabilities throughout the
+                                            process.
+
+
+                                            Materials
+                                            Two hundred and sixty news articles from the “60 y más” magazine (http://www.
+                                            revista60ymas.es/60mas_01/index.htm), ranging from beginning of 2019 until the first months
+                                            of 2020, were randomly selected based on their length. News covered a range of different topics
+                                            in the areas of current affairs, health, guides for seniors and news. Thus, the EASIER corpus is
+                                            a domain-independent corpus. Each document had a similar length, and the corpus has an
+                                            average of 15 sentences per document. This journal belongs to Imserso (https://www.imserso.
+                                            es/imserso_01/index.htm), the Institute for the Elderly and Social Services in Spain. This
+                                            group’s main objective is to promote the social integration of the elderly through information
+                                            in Spanish.
+
+
+                                            Instruments
+                                            Annotators used an annotation tool created as an extension for Google Chrome (https://
+                                            github.com/ralarcong/EASIER_AnnotationTool). The authors have developed it to (a) select
+                                            and deselect words that are considered complex or unusual in a given text and (b) propose
+                                            simple, context-appropriate synonyms for the target word.
+                                               The corpus construction methodology includes three steps following an iterative process
+                                            (see Fig 1):
+
+
+
+PLOS ONE | https://doi.org/10.1371/journal.pone.0283622 April 12, 2023                                                                            5 / 23
+
+===== PDF PAGE 6 / 23 =====
+PLOS ONE                                                              EASIER corpus: A lexical simplification resource for people with cognitive impairments
+
+
+
+
+                                          Fig 1. Corpus building methodology.
+                                          https://doi.org/10.1371/journal.pone.0283622.g001
+
+
+                                            1. Annotation Guidelines Definition. Based on the annotator’s experience and knowledge of
+                                               easy-to-read and plain language guidelines, the main annotator establishes various annota-
+                                               tion guidelines to detect complex words and suggest simple synonyms.
+                                            2. Annotation Process. The annotator performs the analysis of the texts according to the
+                                               annotation guidelines using the annotation tool.
+                                            3. Annotation Guidelines Validation. In order to validate the annotation guidelines, an ini-
+                                               tial evaluation with the participation of people with intellectual disabilities of the set of texts
+                                               annotated to date was performed. Once the documents have been fully annotated, the
+                                               resulting corpus is described in the “Corpus description” Section. A portion of the data set
+                                               is extracted and annotated by two other annotators to calculate IAA.
+
+
+                                                The annotation process, which describes the steps of the methodology, is shown below.
+
+                                            Annotation guidelines definition
+                                            The main annotator defined the annotations guidelines and annotated complex words in texts
+                                            accordingly. The terms given below should be annotated as complex terms:
+                                            1. Words that are common in verbal communication but probably are unknown to the people
+                                               under study. The Spanish linguistic frequency indexes (Gran Diccionario de Uso del
+                                               Español Actual, Corpus CREA (https://corpus.rae.es/lfrecuencias.html), Corpus CORPES
+                                               XXI (https://www.rae.es/banco-de-datos/corpes-xxi) [4, 6, 52–56] are the resources used to
+                                               identify these words.
+                                            2. The syllable configuration of a word should also be considered. When syllables are long or
+                                               have more consonants, the effort needed to pronounce them could affect comprehension
+                                               [6, 54, 56, 57].
+                                            3. Long words that are difficult to read and pronounce such as “esternocleidomastoideo”,
+                                               (sternocleidomastoid), represent difficulty in reading and pronunciation [6, 56].
+                                            4. Technical jargon, for example, terms used in the medical or legal fields [4, 6, 55, 56].
+                                            5. Abbreviations or acronyms when an explanation is not included in the document. For
+                                               example, a document explaining the objectives of the WHO, but the expansion “World
+                                               Health Organization” is not included in the text [4, 6, 55, 56, 58].
+                                            6. Words in a language other than the main language of the document. Since EASIER’s target
+                                               audience is the elderly and people with disabilities, it should not be assumed that they know
+                                               other languages [4, 6, 56].
+                                            7. Roman numerals [6, 56, 59].
+                                            8. Idioms because they could have a double meaning that is difficult to understand, such as
+                                               “cost an arm and a leg” which gives the sense of something expensive [6, 56].
+
+
+
+PLOS ONE | https://doi.org/10.1371/journal.pone.0283622 April 12, 2023                                                                                6 / 23
+
+===== PDF PAGE 7 / 23 =====
+PLOS ONE                                                          EASIER corpus: A lexical simplification resource for people with cognitive impairments
+
+
+
+                                            9. Metaphorical expressions because are hard to understand [4, 6, 56].
+                                            10. Abstract terms which physical form cannot be perceived or imagined. For example, Terms
+                                                such as “justice” or “emotion” are considered difficult to understand [4, 6, 56].
+                                            11. Multi-word terms of different types [4, 6, 56]:
+
+                                              • Expressions constructed with complex words. For example, “key indicators” or “contrac-
+                                                tual resources”.
+                                              • Expressions including simple words whose more familiar meaning has been modified. For
+                                                example, “social tourism” or “portfolio of services”.
+                                              • Complex expressions including complex and simple words whose most well-known mean-
+                                                ing has been modified. For example, “strategic framework” or “inter-territorial council”.
+                                            12. Common words whose most frequent meaning is modified by the context in which they
+                                                are found (linked to polysemy). For example, the “active” word has two senses: (a) the por-
+                                                tion of the population either with a job or looking for a job and (b) a person who likes to
+                                                be active, being the most used the second one [6, 56].
+                                            13. Percentages and mathematical expressions, for example, numbers expressing largequanti-
+                                                ties [4, 6, 56, 60].
+                                            14. Adverbs ending in “-mente” (-ly) because of their prolonged pronunciation [6, 56].
+                                            15. Collective nouns because are harder to understand than enumeration. For example, the
+                                                concept “indumentaria” (clothing).
+                                            16. Words that are obsolete or in disuse [56].
+                                               The Table in S1 Table shows examples of selected uni-words or multi-words according to
+                                            the criteria described in this section are provided.
+
+
+                                            Annotation guidelines validation
+                                            A quarter of the dataset was annotated to assess the initial set of annotation guidelines, and a
+                                            set of experiments were carried out with people with cognitive disabilities belonging to the tar-
+                                            get group. The aim was to evaluate and refine the expert linguist’s annotation guidelines.
+                                                The participants, the methodology and the results of this validation are explained below.
+                                                Participants. Some validation sessions were held in which people with disabilities are the
+                                            validators to ensure that the adaptation is being done correctly. Eight people with mild intellec-
+                                            tual disabilities (Group 1) and older people (Group 2), with five women and three men were
+                                            chosen to participate in the initial evaluation. Of the five women, three were people with intel-
+                                            lectual disabilities and two were elderly. In the group of men, two were people with intellectual
+                                            disabilities, and one was an older adult. The validators’ age ranged from 25 to 86, seven with
+                                            primary education and one with secondary schooling.
+                                                Methodology. The method used to validate easy reading texts by people with intellectual
+                                            disabilities is supported by results reports from European projects such as the train2validate
+                                            project (https://plenainclusionmadrid.org/train2validate/?lang=es), Pathways project (https://
+                                            www.inclusion-europe.eu/pathways-2/), and complies with standards such as Guidance on
+                                            making written text easy to read and easy to understand [61] and Easy to read. Guidelines and
+                                            recommendations for elaborating documents [6]. This validation is organized in group sessions
+                                            with a facilitator, support professional, and people with intellectual disabilities who partici-
+                                            pated as validator because they have reading comprehension difficulties. The validation session
+
+
+
+PLOS ONE | https://doi.org/10.1371/journal.pone.0283622 April 12, 2023                                                                            7 / 23
+
+===== PDF PAGE 8 / 23 =====
+PLOS ONE                                                                        EASIER corpus: A lexical simplification resource for people with cognitive impairments
+
+
+
+Table 2. An extract of the target/synonym dataset for human evaluation with Group 1 (people with mild intellectual disabilities) and Group 2 (older people).
+Target Word                          Synonyms                                                                                   Conclusion
+Etiquetado (Labelling)               Letrero (sign), inscripción (inscription), rótulo (banner)                               Explanation required for both groups
+Etiqueta (formal/label)              Ceremonia (ceremony), protocolo (protocol)                                                 Explanation required for Group 1
+                                                                                                                                Known Group 2
+Envasados (packaged)                 Empaquetados (packaging)                                                                   Known by both groups
+A granel (in bulk)                   Suelto (loose), sin envase (without packaging)                                             Known for both groups
+On-line (Online)                     en lı́nea (online), conectado a Internet (connected to the Internet)                       Known by Group 1
+                                                                                                                                Explanation required for Group 2
+Comensales (diners)                  Invitados (guests)                                                                         Unknown by Group 1
+                                                                                                                                Known by Group 1
+Saludables (salubrious)              Sanos (healthy), beneficiosos (beneficial)                                                 Explanation required for both groups
+Copiosa (copious)                    Abundante (abundant)                                                                       Unknown by both groups
+Crudos (raw)                         sin cocinar (not cooked)                                                                   Known by both groups
+Denominación (denomination)         Nombre (name)                                                                              Explanation required for both groups
+Reclamar (claim)                     Demandar (sue), quejarse (complain), exigir (demand)                                       Explanation required for both groups
+Irregularidades (irregularities)     Anomalı́a (anomaly), alteración (alteration), variación (variation)                      Unknown by both groups
+Óptimas (optimum)                   Buenas (good), excelentes (excellent)                                                      Explanation required by both groups
+Embalaje (packaging)                 Envase (container), envoltorio (wrapping)                                                  Known for both groups
+Íntegro (exhaustive)                Entero (whole), completo (complete), intacto (intact)                                      Known for both groups
+Consumidor (consumer)                Comprador (buyer/purchaser), cliente (client), usuario (user)                              Explanation required for Group 1
+                                                                                                                                Known Group 2
+Provisional (provisional)            Temporales (temporary)                                                                     Unknown for both groups
+Consejo (Council)                    Asambleas (assembly), juntas (board), comisiones (commission/committee)                    Known for both groups
+Proporcionar (provide)               Dar (give), proporcionar (provide)                                                         Known for both groups
+Ciudadanı́a (citizens)               Sociedad (society), población (populace), nacionalidad (nationality)                      Known for both groups
+Veraz (veracious)                    Real (real), cierta (certain), verdadera (true)                                            Unknown by both groups
+Eficacia (efficiency)                Utilidad (usefulness), efectividad (effectiveness)                                         Unknown by both groups
+Contrastar (contrast)                Comprobada (proven), comparada (compared), verificada (verified)                           Unknown for both groups
+Soporte (base)                       Base (basis), fundamento (foundation), apoyo (support)                                     Unknown for both groups
+Evidencias (evidence)                Certeza (certainty), seguridad (security), prueba (proof), demostración (demonstration)   Known for both groups
+https://doi.org/10.1371/journal.pone.0283622.t002
+
+
+
+
+                                                     lasted three hours, including a twenty-minute break, and was moderated by a facilitator and
+                                                     our expert in easy-to-read who was annotating our corpus. The validators were provided with
+                                                     documents containing twenty-five complex words. These documents belong to the current
+                                                     affairs section (see Table 2), all framed within sentences and the corresponding synonyms. The
+                                                     moderator projected the document on a screen, then read each sentence aloud and asked the
+                                                     group whether they knew the adverse word or not and its meaning. This was an important
+                                                     step that allowed for assessing the participants’ comprehension capacity and clarifying the
+                                                     concepts if there were doubts. Each validator gave his or her opinion and was free to make
+                                                     comments as they saw fit. The moderator then read the synonyms and reread each sentence
+                                                     aloud, substituting each synonym’s adverse word. Finally, the validators commented on the
+                                                     meaning of each synonym, determined the most appropriate option and, if there were several
+                                                     synonyms, ordered them according to their comprehension criteria, which are as follows:
+                                                     • Known for both groups: Every validator understands the meaning of the word.
+                                                     • Explanation required: Every validator has an idea of the meaning of the word due to its con-
+                                                       text but at least one of them needs an explanation.
+
+
+
+
+PLOS ONE | https://doi.org/10.1371/journal.pone.0283622 April 12, 2023                                                                                             8 / 23
+
+===== PDF PAGE 9 / 23 =====
+PLOS ONE                                                              EASIER corpus: A lexical simplification resource for people with cognitive impairments
+
+
+
+                                            • Unknown: At least one validator does not know/understand the word.
+
+
+                                                Results and discussion. Table 2 shows a portion of the dataset used for evaluation. The
+                                            human evaluation showed that most of the words represented a challenge for the participants
+                                            to comprehend (84%), either because they were unfamiliar with said words or needed addi-
+                                            tional explanation by the moderators. This demonstrates moderate results regarding the qual-
+                                            ity of the corpus in the decision making of word complexity criteria. For the synonyms
+                                            proposal, the validators responded well, showing a better understanding of the text with the
+                                            proposed synonyms. However, users gave a different priority to the suggested synonyms. For
+                                            example, they understood the word “alteraciones” (alterations) better than the word “irregular-
+                                            idades” (irregularities). Also, users experienced increased difficulty understanding when more
+                                            than three synonyms were proposed. Thanks to the validation session, the need for several
+                                            resources or elements to assist in understanding the meaning of a complex word was con-
+                                            firmed. In some cases, it was found that merely showing possible substitutions for a word was
+                                            not enough for participants to fully understand it, as the user required additional information
+                                            about the word, such as a definition or an example. This requirement reaffirms the objectives
+                                            of the EASIER project within which this work is framed. In addition to satisfying the processes
+                                            of lexical simplification (CWI, SG/SS), this project offers additional comprehension aids such
+                                            as providing disambiguated definitions and pictograms [10, 62].
+
+                                            Corpus description
+                                            A total of 260 documents were annotated with complex words, from which an average of 15
+                                            sentences per document was obtained. As a result, approximately 8,100 complex words were
+                                            gathered. At the same time, it should be mentioned that more than 5,100 words, for which at
+                                            least one synonym was proposed, were also obtained (see Table 3).
+                                               Two distinct datasets could be distinguished: one for Complex Word Identification (CWI)
+                                            tasks and another for Substitute Generation/Selection (SG/SS) tasks. Each instance of the CWI
+                                            dataset has six columns (See Table in S2 Table) and are represented as follows:
+                                            1. The first column shows the ID of the document.
+                                            2. The second column shows the ID of the sentence for a particular word.
+                                            3. The third column shows the sentence.
+
+                                            Table 3. EASIER corpus statistics.
+                                                                                                                                                   EASIER
+                                            Documents                                                                                                  260
+                                            Sentences                                                                                                 3,778
+                                            Words                                                                                                  134,528
+                                            Average number of sentences per document                                                                    15
+                                            Average number of tokens per document                                                                      517
+                                            Total instances for CWI                                                                                  44,975
+                                            Complex Words                                                                                             8,155
+                                            Total instances for SG/SS                                                                                 5,130
+                                            Proposed synonyms                                                                                         7,892
+                                            Average of complex Words per document                                                                       30
+                                            Average of proposed synonyms per document                                                                   29
+                                            Complex Words with at least one substitute                                                                5,130
+                                            https://doi.org/10.1371/journal.pone.0283622.t003
+
+
+
+
+PLOS ONE | https://doi.org/10.1371/journal.pone.0283622 April 12, 2023                                                                                9 / 23
+
+===== PDF PAGE 10 / 23 =====
+PLOS ONE                                                                EASIER corpus: A lexical simplification resource for people with cognitive impairments
+
+
+
+                                                    4. The fourth and fifth columns show the offset of the target word.
+                                                    5. The sixth column shows the target word.
+                                                    6. The seventh column shows the correct label for the binary task (0: simple or 1: complex).
+                                                       For the second dataset, each instance has five columns (See Table in S3 Table) and are rep-
+                                                    resented as follows:
+                                                    1. The first column shows the ID of the document.
+                                                    2. The second column shows the ID of the target word.
+                                                    3. The third column shows the target word.
+                                                    4. The fourth column shows the sentence.
+                                                    5. The fifth column shows the suggested synonyms for the target word separated commas.
+
+
+                                                    EASIER corpus dataset evaluation
+                                                    In order to determine how well an annotation task is defined, the IAA is used to show how
+                                                    individual annotators compare to each other. This has been done for the CWI adm SG/SS
+                                                    datasets as is explained below.
+                                                       Complex Word Identification (CWI) dataset inter-annotator agreement. Two addi-
+                                                    tional annotators performed the agreement. First, for the CWI dataset evaluation, the decision
+                                                    was made to evaluate the Fleiss Kappa coefficient since it is intended for assessments carried
+                                                    out between two or more annotators. However, to obtain a more in-depth analysis between
+                                                    scorers, the Cohen’s Kappa coefficient between each annotator has been evaluated.
+                                                       Following corpus annotation recommendations [63], to evaluate complex words’ annota-
+                                                    tion, 10% of the corpus was randomly extracted. As a result, 26 documents were obtained,
+                                                    from which 390 sentences to evaluate were obtained. As can be seen in Table 4, these metrics
+                                                    were extracted based on the POS tags, e.g., in the case “N” only metrics were calculated for
+                                                    the nouns of the corpus instances, while for “N—V—A”, they were calculated for the noun,
+                                                    verb and adverb tags as a whole (full evaluation can be found at https://github.com/ralarcong/
+                                                    EASIERCORPUS_EVALUATIONS).
+
+Table 4. EASIER corpus—CWI dataset results where N: nouns, V: verbs, A: adverbs, I: Interjections, PN: proper nouns, M: multi- words.
+POSTAG                             Cohen’s Kappa (Rater 1–2)         Cohen’s Kappa (Rater 1–3)           Cohen’s Kappa (Rater 2–3)          Fleiss Kappa
+N                                             0.4750                           0.4114                              0.5711                       0.484
+V                                             0.4082                           0.5218                              0.4385                       0.454
+A                                             0.2011                           0.1942                              0.4640                       0.31
+I                                             0.5002                           0.1545                              0.2658                       0.3
+PN                                            0.2263                           0.2441                              0.5338                       0.347
+N—V                                           0.4667                           0.4365                              0.5586                       0.487
+N—V—A                                         0.4628                           0.4374                              0.5602                       0.487
+N—V—I                                         0.4689                           0.4342                              0.5559                       0.486
+N—V—I—PN                                      0.4330                           0.4228                              0.5530                       0.471
+N—V—M                                         0.6455                           0.6079                              0.6728                       0.641
+N—V—A—M                                       0.6422                           0.6094                              0.6739                       0.641
+N—V—I—M                                       0.6465                           0.6060                              0.6707                       0.64
+N—V—I—PN—M                                    0.6067                           0.5926                              0.6597                       0.619
+https://doi.org/10.1371/journal.pone.0283622.t004
+
+
+
+
+PLOS ONE | https://doi.org/10.1371/journal.pone.0283622 April 12, 2023                                                                                  10 / 23
+
+===== PDF PAGE 11 / 23 =====
+PLOS ONE                                                             EASIER corpus: A lexical simplification resource for people with cognitive impairments
+
+
+
+
+                                            Fig 2. Annotations between annotator 2 and 3.
+                                            https://doi.org/10.1371/journal.pone.0283622.g002
+
+
+                                               According to the analysis of results, a moderate result was obtained with a Fleiss Kappa
+                                            coefficient of 0.641. The highest agreement was reached when analysing the multi-words since
+                                            long words or phrases make it difficult to understand the message. On the other hand, interjec-
+                                            tions were considered to have lexical content in some cases. Therefore, these few instances are
+                                            removed from the corpus.
+                                               Substitute Generation/Selection (SG/SS) dataset evaluation. Inspired by previous work
+                                            [64–66], a scale-based methodology was used to evaluate the content of the synonym dataset.
+                                            The original annotator proposed synonyms for a target word and did not assign labels for this
+                                            dataset. Therefore, to evaluate this dataset and in order to verify the quality of the proposed
+                                            synonyms, the two additional annotators were asked to assign two types of labels for each syn-
+                                            onym: “0: synonym incorrectly defined” and “1: well-defined synonym”. To this end, 10% of
+                                            the total number of instances were extracted in which the target word needed to have at least
+                                            three proposed synonyms. As a result, a dataset of 513 target words was obtained together with
+                                            their respective synonyms.
+                                               Fig 2 shows that positive results were obtained, as evidenced by the clear difference between
+                                            well-defined and incorrectly defined synonyms. Of the 1,026 synonyms reviewed, annotator 2
+                                            rated 987 synonyms as well-defined and 37 as incorrectly defined. In turn, annotator 3 rated
+                                            913 synonyms as well-defined and 113 as incorrectly defined. Subsequently, an analysis was
+                                            carried out of the instances in which the synonyms were rated as incorrectly defined. It was
+                                            found that in several cases, these words were qualified in this way due to the fact that, although
+                                            they could fit in the context, they presented some ambiguity with regard to their meaning. An
+                                            example of this is the word “salubrity” in the sentence “Tiempos en los que la salubridad era
+                                            escasa.” (Times when salubrity was scarce). The well-defined replacements were “limpieza”
+                                            (cleanliness) and “hygiene” (hygiene). However, the incorrectly defined replacement was
+                                            “salud” (health), which may work within the context of the sentence but modifies its semantics.
+
+
+                                            User evaluation
+                                            In this section, different experiments to validate the EASIER corpus are described including
+                                            participants, materials, procedure, tasks and metrics used for each experimentation (also avail-
+                                            able at https://github.com/ralarcong/EASIERCORPUS_EVALUATION).
+
+
+
+PLOS ONE | https://doi.org/10.1371/journal.pone.0283622 April 12, 2023                                                                              11 / 23
+
+===== PDF PAGE 12 / 23 =====
+PLOS ONE                                                                   EASIER corpus: A lexical simplification resource for people with cognitive impairments
+
+
+
+                                                    Participants
+                                                    A total of 45 participants were recruited for this experimental study. The inclusion criteria
+                                                    were people with cognitive disabilities that included people with mild cognitive impairments
+                                                    medically identified and older people who have cognitive problems due to age deterioration.
+                                                    In addition, people without disabilities as a control group were considered. The participants
+                                                    were recruited by the HULAT group (https://hulat.inf.uc3m.es/) to which the authors belong
+                                                    in collaboration with the AMAS group (https://www.fundacion-amas.org/), an organization
+                                                    that works to provide resources for people with intellectual disabilities.
+                                                        Table 5 shows an overview of the demographic information of the participants. The partici-
+                                                    pants were divided into three groups: Group 1 represented 15 older people (33.3%), Group 2
+                                                    represented 15 people with intellectual disabilities (33.3%) and Group 3 represented 15 control
+                                                    users (33.3%).
+                                                        Across the entire population (all groups), the lowest number of participants corresponded
+                                                    to the age group between 34 and 44 years old with 10 participants (22%) and to participants
+                                                    over 71 years old with 7 participants (16%); on the other hand, the highest number of partici-
+                                                    pants corresponded to the age group under 33 years old with 13 participants (29%) and to par-
+                                                    ticipants between 45 and 70 years old with 15 participants (33%).
+                                                        There was a small difference between the number of female (53%) and male (47%) people
+                                                    with 24 and 21 participants respectively.
+                                                        Regarding the educational level of the participants, the least number of participants were
+                                                    registered for people with no registered studies and people with a university degree with 3
+                                                    (7%) and 10 (22%) participants respectively, and the majority had a high school level of educa-
+                                                    tion with 20 participants (44%), followed by primary level with 12 participants (27%).
+                                                        Finally, the reading level of the participants was evaluated through the number of
+                                                    books read per year, where the lowest number of participants was concentrated by 1 (2%)
+
+Table 5. Participant demographic information for corpus study (Group 1: Elder people, Group2: People with intellectual disabilities, Group 3: Control users).
+Features                                                  Group 1                      Group 2                      Group 3                 All participants
+                                                    N = 15           %          N = 15            %         N = 15             %          N = 45           %
+Age
+                                           71+        7             (47)           -              -            -               -             7            (16)
+                                         45–70        8             (53)          4              (27)          3              (20)          15            (33)
+                                         34–44        -              -            5              (33)          5              (33)          10            (22)
+                                33 or younger         -              -            6              (40)          7              (47)          13            (29)
+Gender
+                                          Male        7             (47)          6              (40)          8              (53)          21            (47)
+                                       Female         8             (53)          9              (60)          7              (47)          24            (53)
+Education (Highest completed)
+                                         None         1             (7)           2              (13)          -               -             3             (7)
+                               Primary school         5             (33)          7              (47)          -               -            12            (27)
+                                  High school         9             (60)          6              (40)          5              (33)          20            (44)
+                         University education         -              -             -              -            10             (67)          10            (22)
+Reading experience (books per year)
+                                         None         3             (20)          9              (60)          3              (20)          15            (33)
+                                           1–3        5             (33)          3              (20)          6              (40)          14            (31)
+                                           3–6        4             (27)          1              (7)           4              (27)           9            (20)
+                                          6–12        3             (20)          2              (13)          1              (7)            6            (13)
+                                           12+        -              -             -              -            1              (7)            1             (2)
+https://doi.org/10.1371/journal.pone.0283622.t005
+
+
+
+
+PLOS ONE | https://doi.org/10.1371/journal.pone.0283622 April 12, 2023                                                                                      12 / 23
+
+===== PDF PAGE 13 / 23 =====
+PLOS ONE                                                          EASIER corpus: A lexical simplification resource for people with cognitive impairments
+
+
+
+                                            participant who read more than 12 books per year, 6 (13%) participants who read 6 to 12
+                                            books per year, followed by 9 (20%) participants who read 3 to 6 books per year. While the
+                                            highest number of participants was presented by participants who do not read any book per
+                                            year and participants who read 1 to 3 books per year with 15 (32%) and 14 (31%) participants
+                                            respectively.
+
+
+                                            Materials
+                                            For this experimental study 29 sentences of similar length were randomly extracted to evaluate
+                                            the detected complex words and suggested replacements.
+
+
+                                            Procedure
+                                            The ethical committee of the Universidad Carlos III de Madrid (IRB20_12) approved this
+                                            experimental study for people with and without disabilities on October 28, 2020. Participants
+                                            were briefed on the purpose of the experiment and signed a consent form. In the case of people
+                                            with intellectual disabilities, permission was obtained from their legal guardians. Next, partici-
+                                            pants were asked to complete a simple demographic questionnaire. Finally, each participant
+                                            was asked to complete the tasks.
+                                                The validation method used with people with intellectual disabilities was similar to the ini-
+                                            tial evaluation of the corpus, described in the Annotation Guidelines Validation section. The
+                                            sessions were conducted at the AMAS Group facilities, where the researcher worked together
+                                            with the AMAS facilitators. The rest of the tests were carried out at the university facilities,
+                                            where the researcher worked directly with the user.
+                                                The main steps were:
+                                            1. Demographic questions about age, gender, education level and reading habits.
+                                            2. Explanation and performance of task 1, referring to the CWI task.
+                                            3. Explanation and performance of task 2, referring to remaining tasks in the lexical simplifi-
+                                               cation process where a substitute is provided by the EASIER corpus.
+
+
+
+                                            Tasks
+                                            To evaluate the corpus, the following tasks were defined.
+                                            1. Task 1 aims to measure the CWI task, i.e., the annotations of the corpus when discerning
+                                               between complex and simple words. Each participant had to analyze 14 randomly selected
+                                               sentences. In each sentence, the participant had to select single or multi-words that he/she
+                                               judged to be complex or difficult to understand.
+                                            2. Task 2 aims to measure the quality of the synonyms of the detected complex words, in
+                                               order to determine whether the synonyms proposed by the EASIER corpus actually help
+                                               to improve the cognitive comprehension of the texts. Each participant had to analyze 15
+                                               sentences, randomly selected. In each sentence, a detected complex word is highlighted
+                                               and three candidate synonyms retrieved from the corpus are suggested. Thus, each
+                                               participant had to analyze the sentences with each candidate and, as a next step,
+                                               answer yes/no questions about whether the candidate helped to further understand the
+                                               sentence.
+
+
+
+
+PLOS ONE | https://doi.org/10.1371/journal.pone.0283622 April 12, 2023                                                                           13 / 23
+
+===== PDF PAGE 14 / 23 =====
+PLOS ONE                                                                     EASIER corpus: A lexical simplification resource for people with cognitive impairments
+
+
+
+                                                      Measures
+                                                      The measures in this experimentation were metrics used in the field of machine learning meth-
+                                                      ods in order to compare the proposal with other related works [9, 38], which are the following:
+                                                      • Accuracy: Represents the amount of correct identified words among all words.
+                                                      • Precision: Amount of positives that are true.
+                                                      • Recall: Amount of complex words correctly captured.
+                                                      • F-1: The harmonic mean between precision and recall
+                                                         In addition, different statistical metrics were used to obtain statistical significance, which
+                                                      are described in the next section.
+
+
+                                                      Results and discussion
+                                                      This section gives results and discussions of the experiments described above. Likewise, this
+                                                      section is divided by the type of experimentation, complemented by subsequent analysis.
+                                                         Table 6 shows the scores for task 1. The results were moderate, obtaining an overall F1
+                                                      score of 0.51 points, with better recall than precision with 0.69 and 0.57 respectively. By evalu-
+                                                      ating the proposal by groups, a difference in precision was observed between groups 1 (older
+                                                      people), 2 (people with intellectual disabilities) and 3 (control users) with 0.57, 0.59 and 0.55
+                                                      points, respectively. In turn, regarding the recall, there was a minor difference between groups,
+                                                      with 0.68 points for Group 1, 0.69 points for Group 2 and 0.69 points for Group 3.
+
+Table 6. Result metrics for both groups in Task 1 where ID = User Id, AC = Acuraccy, PR = Precision and Group 1: older people, Group 2: people with intellectual
+disabilities and Group 3: control users.
+                      GROUP 1                                                  GROUP 2                                              GROUP 3
+ID         AC          PR          RC          F-1        ID         AC        PR         RC        F-1        ID         AC        PR         RC        F-1
+1          0.57        0.78        0.52        0.40       16         0.56      0.52       0.65      0.40       31         0.56      0.52       0.59      0.42
+2          0.58        0.78        0.53        0.42       17         0.63      0.59       0.77      0.54       32         0.60      0.55       0.73      0.47
+3          0.68        0.74        0.65        0.63       18         0.60      0.55       0.73      0.47       33         0.59      0.55       0.73      0.46
+4          0.77        0.80        0.75        0.75       19         0.59      0.55       0.69      0.47       34         0.59      0.54       0.71      0.44
+5          0.70        0.74        0.68        0.67       20         0.61      0.57       0.70      0.51       35         0.59      0.55       0.73      0.46
+6          0.61        0.70        0.57        0.51       21         0.59      0.56       0.58      0.53       36         0.56      0.51       0.78      0.37
+7          0.58        0.78        0.53        0.42       22         0.65      0.61       0.70      0.58       37         0.71      0.70       0.72      0.70
+8          0.56        0.78        0.51        0.37       23         0.59      0.56       0.60      0.53       38         0.58      0.53       0.78      0.42
+9          0.59        0.68        0.54        0.45       24         0.65      0.61       0.77      0.56       39         0.57      0.52       0.68      0.42
+10         0.56        0.58        0.51        0.40       25         0.65      0.61       0.75      0.57       40         0.55      0.50       0.53      0.37
+11         0.63        0.80        0.58        0.52       26         0.66      0.62       0.78      0.58       41         0.63      0.59       0.70      0.54
+12         0.59        0.65        0.54        0.46       27         0.64      0.61       0.69      0.58       42         0.59      0.54       0.79      0.43
+13         0.53        0.51        0.51        0.48       28         0.67      0.64       0.75      0.62       43         0.56      0.52       0.65      0.40
+14         0.56        0.78        0.51        0.37       29         0.65      0.61       0.77      0.56       44         0.63      0.59       0.77      0.54
+15         0.63        0.73        0.59        0.53       30         0.62      0.59       0.65      0.56       45         0.59      0.54       0.71      0.44
+                  GROUP 1 SCORES                                            GROUP 2 SCORES                                       GROUP 3 SCORES
+ID         AC          PR          RC          F-1        ID         AC        PR         RC        F-1        ID         AC        PR         RC        F-1
+ALL        0.61        0.57        0.68        0.51       ALL        0.62      0.59       0.69      0.54       ALL        0.59      0.55       0.69      0.47
+                                                                            OVERALL SCORE
+               ACURACCY                                        PRECISION                                   RECALL                                 F1
+                    0.61                                          0.57                                      0.69                                 0.51
+https://doi.org/10.1371/journal.pone.0283622.t006
+
+
+
+
+PLOS ONE | https://doi.org/10.1371/journal.pone.0283622 April 12, 2023                                                                                      14 / 23
+
+===== PDF PAGE 15 / 23 =====
+PLOS ONE                                                             EASIER corpus: A lexical simplification resource for people with cognitive impairments
+
+
+
+
+                                            Fig 3. Precision scores among every participant divided into groups, where Group 1: older people, Group 2:
+                                            people with intellectual disabilities and Group 3: control users.
+                                            https://doi.org/10.1371/journal.pone.0283622.g003
+
+
+
+                                                Fig 3 shows a comparison of the precision scores between the study groups, where Group 2
+                                            (people with intellectual disabilities) achieved better results than Group 1 (older people) and
+                                            Group 3 (control users). This indicates that the proposed CWI model achieved a higher num-
+                                            ber of quality predictions for people with intellectual disabilities than for older people and
+                                            control users by getting a higher number of true positives. Although the difference in scores
+                                            between the groups is minimal (about 0.02 points with Group 1 and 0.04 points with Group
+                                            3), this suggests that the proposal makes higher quality predictions for people with intellectual
+                                            disabilities. Statistically comparing the precision between groups, the corpus was shown to be
+                                            more beneficial for people with intellectual disabilities (Group 2) compared to older people in
+                                            Group 1 (Wilcoxon test, P = 0.002) and control users in Group 3 (Wilcoxon test, P = 0.03).
+                                                On the other hand, when analyzing recall scores, an increase was noted in comparison to
+                                            precision. Fig 4 compares the recall scores of the study groups, where a greater dispersion of
+                                            the data is clearly seen in the Group 1 and Group 2 than in the Group 3. This metric is impor-
+                                            tant for this study as the corpus seeks to cover as many terms as possible when providing cog-
+                                            nitive language support to people with intellectual disabilities and the elderly. In contrast to
+                                            precision, the corpus provides greater coverage for older people (Group 1) compared to con-
+                                            trol users in Group 3 (Wilcoxon test, P = 0.02).
+                                                In addition, Fig 5 presents the number of words that each participant considered complex,
+                                            divided by groups. Most users in groups 1 and 3 are concentrated in the lower part of the
+                                            graph where they detected a lower number of complex words (between 1 to 10 words across all
+                                            sentences) and with additional values scattered across the graph. On the other hand, users with
+                                            intellectual disabilities (Group 2), concentrated in a higher part of the graph by detecting a
+                                            higher number of complex words, consequently supporting the precision and recall metrics
+                                            described above.
+                                                Results achieved in CWI task do not seem very promising. We believe this could be related
+                                            to ambiguity being greater in the case of open domain texts than in a restricted domain.
+                                            Most research in NLP is devoted to solve the problem of ambiguity; NLP systems built to
+                                            understand natural language only perform adequately in the domain for which they are
+
+
+
+
+PLOS ONE | https://doi.org/10.1371/journal.pone.0283622 April 12, 2023                                                                               15 / 23
+
+===== PDF PAGE 16 / 23 =====
+PLOS ONE                                                             EASIER corpus: A lexical simplification resource for people with cognitive impairments
+
+
+
+
+                                            Fig 4. Recall scores among every participant divided by groups, where Group 1: older people, Group 2: people
+                                            with intellectual disabilities and Group 3: control users.
+                                            https://doi.org/10.1371/journal.pone.0283622.g004
+
+
+
+                                            designed and trained [67, 68], because the terminology is narrowed to a topic. Moreover, Gale
+                                            et al. [69] showed that the sense of a target word is highly consistent within a given document
+                                            (one meaning per discourse) and this reduces the number of synonyms of words in texts; this
+                                            is comparable to the reduction of synonyms if texts of a restricted domain are considered. Nev-
+                                            ertheless, simplification mechanisms are needed for information websites, such as news sites,
+                                            that people access in search of information from a wide range of domains, hence the motiva-
+                                            tion for developing the Easier corpus. Moreover, experimentation with users is extraordinarily
+                                            complex as it is carried out with subjective questions that measure how complex a word is for
+                                            each person.
+
+
+
+
+                                            Fig 5. Number of detected complex words, divided by groups, where Group 1: older people, Group 2: people with
+                                            intellectual disabilities and Group 3: control users.
+                                            https://doi.org/10.1371/journal.pone.0283622.g005
+
+
+
+
+PLOS ONE | https://doi.org/10.1371/journal.pone.0283622 April 12, 2023                                                                               16 / 23
+
+===== PDF PAGE 17 / 23 =====
+PLOS ONE                                                                   EASIER corpus: A lexical simplification resource for people with cognitive impairments
+
+
+
+Table 7. Task2: Number of cases where at least one candidate, two candidates and all candidates were ranked as correct, sorted by groups and sentences where Grp
+1: older people, Grp 2: people with intellectual disabilities and Grp 3: control users.
+                           At least one candidate ranked as correct       At least two candidates ranked as correct        All candidates ranked as correct
+    Sentence-ID          Grp 1 (N:15)    Grp 2 (N:15)     Grp 3 (N:15)   Grp 1 (N:15)   Grp 2 (N:15)   Grp 3 (N:15)   Grp 1 (N:15)   Grp 2 (N:15)   Grp 3 (N:15)
+         S1                   15               15             15             11              12             13             7              9              5
+         S2                   15               15             14              8              10              7             7              7              3
+         S3                   15               15             14             10              9               9             8              8              4
+         S4                   15               15             15             12              10             12             8              7              8
+         S5                   14               15             14             12              11             10             8             10              5
+         S6                   15               15             15             11              11             14            11              9              9
+         S7                   14               15             14             10              11             10             8              7              2
+         S8                   14               15             13             10              11              5             7              8              2
+         S9                   15               14             14             11              10             11             8              7              5
+         S10                  15               15             15             13              12             11            10             10              5
+         S11                  15               14             14             12              11             13            10              8              6
+         S12                  15               15             15             12              11             13            10              9              7
+         S13                  14               15             14             10              10              7             9              8              4
+         S14                  15               15             13              9              11              8             9              5              4
+         S15                  15               14             14             11              6               9             9              5              3
+       MEAN                  14.73            14.80          14.20          10.80          10.40           10.13          8.6            7.8            4.8
+ACCEPTANCE (%)                98               99             95             72              69             68            57             52              32
+https://doi.org/10.1371/journal.pone.0283622.t007
+
+
+
+
+                                                          Related to the second task, the quality of the synonym dataset was evaluated and, as
+                                                      described above, each participant was asked to evaluate three candidate substitutes for
+                                                      each of the 15 sentences of the study. Table 7 shows three types of results divided by
+                                                      groups, the first where the number of users who accepted at least one of the candidates pre-
+                                                      sented for each sentence is recorded, the second which records the number of users who
+                                                      accepted at least two of the candidates presented for each sentence and the last one being
+                                                      the most rigorous one that counts the number of cases where all candidates were accepted
+                                                      by instance.
+                                                          Regarding the first result, an almost perfect percentage of acceptance was achieved for
+                                                      groups 1 (older people) and 2 (people with intellectual disabilities), with an acceptance per-
+                                                      centage of 98% and 99% respectively. On the other hand, control users had a lower but close
+                                                      acceptance rate of 95%, mainly because this group of users does not represent the target user
+                                                      of the corpus. Therefore, this implies that the corpus greatly helps to reduce the level of com-
+                                                      plexity of the sentences, at least with a suggested candidate, and although a good acceptance
+                                                      was achieved in both groups, the group with intellectual disability was the one that received
+                                                      the most benefit. Later, more rigorous tests were carried out, where at least two candidates
+                                                      had to be accepted, obtaining in this case a higher percentage of acceptance of Group 1 than
+                                                      Group 2 with 72% and 69% respectively. Similarly, the acceptance rate of Group 3 dropped to
+                                                      68%. Finally, when evaluating user responses in scenarios where all candidates were to be
+                                                      accepted, acceptance percentages of 57%, 52% and 32% were obtained for groups 1, 2 and 3,
+                                                      respectively.
+                                                          Concerning the second task, statistical significance tests were performed to understand
+                                                      these results, where it was confirmed that the synonyms provided by the corpus help the popu-
+                                                      lation made up of older people in Group 1 and people with intellectual disabilities in Group 2
+                                                      (Fisher test, P = 0.03), complementing the results shown in Table 7.
+
+
+
+PLOS ONE | https://doi.org/10.1371/journal.pone.0283622 April 12, 2023                                                                                       17 / 23
+
+===== PDF PAGE 18 / 23 =====
+PLOS ONE                                                             EASIER corpus: A lexical simplification resource for people with cognitive impairments
+
+
+
+
+                                            Fig 6. Number of instances where at least one substitute was taken as correct of incorrect, divided by group and
+                                            education level, where Group 1: older people, Group 2: people with intellectual disabilities and Group 3: control
+                                            users.
+                                            https://doi.org/10.1371/journal.pone.0283622.g006
+
+
+                                               Later, these results were analyzed in relation to the education and reading level of each pop-
+                                            ulation. For example, the results showed statistically that the help of synonyms depended on
+                                            the reading level of older users (Chi-square, P = 0.01).
+                                               A similar example is shown in Fig 6 which divides the cases in which at least one substitu-
+                                            tion was accepted and the cases in which none was accepted, divided by group and educational
+                                            level. For Group 1 (older people) there is a high number of substitutions accepted in partici-
+                                            pants with a high school level of education and a high number of acceptance for primary level
+                                            of education for Group 2 (people with intellectual disabilities). It is worth mentioning that
+                                            there is a higher concentration of participants with these levels of education for each group.
+                                            For this same reason, there are cases in which the number of acceptances is low, as in the uni-
+                                            versity level, which only had participants in Group 1.
+
+
+                                            Conclusions
+                                            This article introduces the EASIER corpus, which compiles a total of 260 Spanish documents
+                                            of different topics annotated with complex words and synonyms. The EASIER corpus provides
+                                            support for NLP methods to face lexical simplification in Complex Word Identification (CWI)
+                                            and Substitute Generation/Selection (SG/SS) tasks. As a result, approximately 8,100 complex
+                                            words were gathered. Additionally, it contains approximately 5,100 words for which at least
+                                            one synonym was proposed. This corpus was built thanks to the annotation and evaluation of
+                                            linguistic experts, who are specialised in easy-to-read and plain language guidelines. Sixteen
+                                            annotation guidelines to discern between complex and simple words are also defined.
+                                               The CWI dataset evaluation showed moderate IAA with a Fleiss Kappa coefficient of 0.641.
+                                            On the other hand, an evaluation of this dataset with both target and control users, achieved a
+                                            moderate overall F1-score of 0.51 points. However, since this corpus seeks to meet the needs
+                                            of people with cognitive disabilities, greater importance was given to the recall metric,
+                                            which was 0.68 and 0.69 points for older people and people with intellectual disabilities,
+                                            respectively. Finally, a range of significance tests were also performed to confirm the corpus
+                                            support between populations.
+                                               Concerning the moderate IAA in complex word annotation tasks, it is important to high-
+                                            light that tasks that require more interpretation of texts do not obtain a high agreement among
+
+
+
+PLOS ONE | https://doi.org/10.1371/journal.pone.0283622 April 12, 2023                                                                                  18 / 23
+
+===== PDF PAGE 19 / 23 =====
+PLOS ONE                                                          EASIER corpus: A lexical simplification resource for people with cognitive impairments
+
+
+
+                                            annotators [63]. A high IAA is an indicator that the task is well defined and other annotators
+                                            could replicate the work. Specifying if a word or phrase is a complex term is a subjective task,
+                                            which influences the IAA value. In addition, the fact that an annotator has a high IAA certainly
+                                            does not mean that the annotations are correct. It means that annotators have equally inter-
+                                            preted the guidelines. Bayerl and Paul [70] analyzed several factors that could influence IAA
+                                            through different labeled corpora providing some recommendations to improve IAA like
+                                            using few categories, recruiting annotators with the same level of domain expertise and provid-
+                                            ing training to them. To gain confidence in the integrity of annotations, they suggest having
+                                            larger groups of annotators considering the criticality of tasks. In annotation tasks as the one
+                                            described in this study, having expert and trained annotators in plain language and easy-to-
+                                            read guidelines is essential.
+                                               The evaluation of the SG/SS dataset showed positive results. Out of the 1,026 synonyms
+                                            analysed, 987 were scored as well-defined by one annotator and 913 by the other one. The
+                                            same people from the previous study evaluated a portion of the synonym dataset. Near-perfect
+                                            results were obtained for cases where at least one synonym was accepted (out of 3), and mod-
+                                            erate-to-good results were obtained for scenarios where two or more synonyms were accepted.
+                                            As in the former dataset study, statistical tests were performed in order to confirm various
+                                            hypotheses.
+                                               This corpus is publicly available and currently being used in the EASIER platform. It has
+                                            been created as a resource to assist both researchers and companies in carrying out simplifica-
+                                            tion processes, with the added value that has been validated by people with disabilities.
+                                               The EASIER corpus provides support for lexical simplification processes in a generic
+                                            domain; lexical simplification of domain-independent texts is an extremely complex task,
+                                            hence some of its moderate results. An extension of this resource will be developed for
+                                            restricted domains (e.g., eGovernment, legal and health texts, among others) in future work.
+                                            In addition, over the years, different scales have been proposed to evaluate complexity in texts
+                                            [66], so the incorporation of new complexity scales (non-binary scale) will be evaluated.
+
+                                            Supporting information
+                                            S1 Table. Annotation criteria examples.
+                                            (PDF)
+                                            S2 Table. CWI dataset instance examples.
+                                            (PDF)
+                                            S3 Table. SG/SS dataset instance examples.
+                                            (PDF)
+
+
+                                            Author Contributions
+                                            Conceptualization: Rodrigo Alarcon, Lourdes Moreno, Paloma Martı́nez.
+                                            Data curation: Rodrigo Alarcon.
+                                            Formal analysis: Rodrigo Alarcon, Lourdes Moreno, Paloma Martı́nez.
+                                            Funding acquisition: Lourdes Moreno, Paloma Martı́nez.
+                                            Investigation: Rodrigo Alarcon, Lourdes Moreno, Paloma Martı́nez.
+                                            Methodology: Rodrigo Alarcon, Lourdes Moreno, Paloma Martı́nez.
+                                            Project administration: Lourdes Moreno, Paloma Martı́nez.
+
+
+
+
+PLOS ONE | https://doi.org/10.1371/journal.pone.0283622 April 12, 2023                                                                           19 / 23
+
+===== PDF PAGE 20 / 23 =====
+PLOS ONE                                                            EASIER corpus: A lexical simplification resource for people with cognitive impairments
+
+
+
+                                            Resources: Rodrigo Alarcon.
+                                            Software: Rodrigo Alarcon.
+                                            Supervision: Lourdes Moreno, Paloma Martı́nez.
+                                            Validation: Rodrigo Alarcon, Lourdes Moreno, Paloma Martı́nez.
+                                            Writing – original draft: Rodrigo Alarcon.
+                                            Writing – review & editing: Rodrigo Alarcon, Lourdes Moreno, Paloma Martı́nez.
+
+
+                                            References
+                                             1.   Eurostat SE. Population projections in the EU; 2020. September. Available from: https://ec.europa.eu/
+                                                  eurostat/statistics-explained/index.php?title=People_in_the_EU_-_population_projections&oldid=
+                                                  497115#Population_projections.
+                                             2.   Saggion H. Automatic Text Simplification. vol. 10; 2017. https://doi.org/10.1007/978-3-031-02166-4
+                                             3.   W3C. Web Content Accesibility Guidelines (WCAG); 2019. Available from: https://www.w3.org/WAI/
+                                                  standards-guidelines/wcag/.
+                                             4.   Freyhoff G, Hess G, Kerr L, Menzel E, Tronbacke B, Van Der Veken K. Make It Simple, European
+                                                  Guidelines for the Production of Easy-to-Read Information for People with Learning Disability for
+                                                  authors, editors, information providers, translators and other interested persons. International League
+                                                  of Societies for Persons with Mental Handicap European Association, Brussels. 1998;.
+                                             5.   Smith K, Hallam G, Ghosh SB. Guidelines for professional library/information educational programs-
+                                                  2012. IFLA Education and Training Section, IFLA, The Hague, available at: www.ifla.org/publications/
+                                                  guidelinesfor-professionallibraryinformationeducational-programs-2012 (accessed 25 August 2014).
+                                                  2012;.
+                                             6.   UNE. Asociación Española de Normalización, UNE 153101:2018 (Easy to read. Guidelines and recom-
+                                                  mendations for the elaboration of documents); 2018. Available from: https://www.une.org/encuentra-tu-
+                                                  norma/busca-tu-norma/norma?c=N0060036.
+                                             7.   European-Union. How to write clearly; 2011. Available from: https://op.europa.eu/en/publication-
+                                                  detail/-/publication/c2dab20c-0414-408d-87b5-dd3c6e5dd9a5.
+                                             8.   W3C. Grupo de trabajo de accesibilidad para discapacidades cognitivas y de aprendizaje (COGA TF);
+                                                  2020. Available from: https://www.w3.org/TR/coga-usable/.
+                                             9.   Paetzold GH, Specia L. A survey on lexical simplification. Journal of Artificial Intelligence Research.
+                                                  2017; 60:549–593. https://doi.org/10.1613/jair.5526
+                                            10.   Moreno L, Alarcon R, Martı́nez P. EASIER system. Language resources for cognitive accessibility.
+                                                  22nd International ACM SIGACCESS Conference on Computers and Accessibility (virtual). 2020;.
+                                            11.   Alarcon R, Moreno L, Martı́nez P. Lexical Simplification System to Improve Web Accessibility. IEEE
+                                                  Access. 2021; 9:58755–58767. https://doi.org/10.1109/ACCESS.2021.3072697
+                                            12.   Shardlow M. A survey of automated text simplification. International Journal of Advanced Computer Sci-
+                                                  ence and Applications. 2014; 4(1):58–70. https://doi.org/10.14569/SpecialIssue.2014.040109
+                                            13.   Aranzabe MJ, De Ilarraza AD, Gonzalez-Dios I. Transforming complex sentences using dependency
+                                                  trees for automatic text simplification in Basque. Procesamiento del lenguaje natural. 2013; 50:61–68.
+                                            14.   Carroll J, Minnen G, Canning Y, Devlin S, Tait J. Practical simplification of English newspaper text to
+                                                  assist aphasic readers. In: Proceedings of the AAAI-98 Workshop on Integrating Artificial Intelligence
+                                                  and Assistive Technology. Citeseer; 1998. p. 7–10.
+                                            15.   Aluı́sio S, Gasperin C. Fostering digital inclusion and accessibility: the PorSimples project for simplifica-
+                                                  tion of Portuguese texts. In: Proceedings of the NAACL HLT 2010 Young Investigators Workshop on
+                                                  Computational Approaches to Languages of the Americas; 2010. p. 46–53.
+                                            16.   Gala N, Tack A, Javourey-Drevet L, François T, Ziegler JC. Alector: A Parallel Corpus of Simplified
+                                                  French Texts with Alignments of Misreadings by Poor and Dyslexic Readers. In: Proceedings of the
+                                                  Twelfth Language Resources and Evaluation Conference. Marseille, France: European Language
+                                                  Resources Association; 2020. p. 1353–1361. Available from: https://aclanthology.org/2020.lrec-1.169.
+                                            17.   Grabar N, Cardon R. CLEAR—Simple Corpus for Medical French. In: Proceedings of the 1st Workshop
+                                                  on Automatic Text Adaptation (ATA). Tilburg, the Netherlands: Association for Computational Linguis-
+                                                  tics; 2018. p. 3–9. Available from: https://aclanthology.org/W18-7002.
+                                            18.   Bott S, Saggion H. An unsupervised alignment algorithm for text simplification corpus construction. In:
+                                                  Proceedings of the Workshop on Monolingual Text-To-Text Generation; 2011. p. 20–26.
+
+
+
+
+PLOS ONE | https://doi.org/10.1371/journal.pone.0283622 April 12, 2023                                                                                  20 / 23
+
+===== PDF PAGE 21 / 23 =====
+PLOS ONE                                                            EASIER corpus: A lexical simplification resource for people with cognitive impairments
+
+
+
+                                            19.   Saggion H, Štajner S, Bott S, Mille S, Rello L, Drndarevic B. Making it simplext: Implementation and
+                                                  evaluation of a text simplification system for spanish. ACM Transactions on Accessible Computing
+                                                  (TACCESS). 2015; 6(4):1–36. https://doi.org/10.1145/2738046
+                                            20.   Barbu E, Martı́n-Valdivia MT, Martı́nez-Cámara E, Urena-López LA. Language technologies applied to
+                                                  document simplification for helping autistic people. Expert Systems with Applications. 2015; 42
+                                                  (12):5076–5086. https://doi.org/10.1016/j.eswa.2015.02.044
+                                            21.   Saggion H, Ferrés D, Sevens L, Schuurman I, Ripollés M, Rodrı́guez O. Able to read my mail: An acces-
+                                                  sible e-mail client with assistive technology. In: Proceedings of the 14th International Web for All Confer-
+                                                  ence; 2017. p. 1–4.
+                                            22.   Alarcon R, Moreno López L, Segura Bedmar I, Martı́nez Fernández P. Lexical simplification approach
+                                                  using easy-to-read resources. Sociedad Española para el Procesamiento del Lenguaje Natural
+                                                  (SEPLN). 2019;.
+                                            23.   Alarcon R, Moreno L, Martı́nez P. Word-Sense disambiguation system for text readability. In: 9th Inter-
+                                                  national Conference on Software Development and Technologies for Enhancing Accessibility and
+                                                  Fighting Info-exclusion; 2020. p. 147–152.
+                                            24.   Baeza-Yates R, Rello L, Dembowski J. Cassa: A context-aware synonym simplification algorithm. In:
+                                                  Proceedings of the 2015 Conference of the North American Chapter of the Association for Computa-
+                                                  tional Linguistics: Human Language Technologies; 2015. p. 1380–1385.
+                                            25.   Al-Thanyyan SS, Azmi AM. Automated Text Simplification: A Survey. ACM Comput Surv. 2021; 54(2).
+                                                  https://doi.org/10.1145/3442695
+                                            26.   Petersen SE, Ostendorf M. Text simplification for language learners: a corpus analysis. In: Workshop
+                                                  on Speech and Language Technology in Education. Citeseer; 2007.
+                                            27.   Pellow D, Eskenazi M. An open corpus of everyday documents for simplification tasks. In: Proceedings
+                                                  of the 3rd Workshop on Predicting and Improving Text Readability for Target Reader Populations
+                                                  (PITR); 2014. p. 84–93.
+                                            28.   Xu W, Callison-Burch C, Napoles C. Problems in current text simplification research: New data can
+                                                  help. Transactions of the Association for Computational Linguistics. 2015; 3:283–297. https://doi.org/
+                                                  10.1162/tacl_a_00139
+                                            29.   Caseli HM, Pereira TF, Specia L, Pardo TA, Gasperin C, Aluı́sio SM. Building a Brazilian Portuguese
+                                                  parallel corpus of original and simplified texts. Advances in Computational Linguistics, Research in
+                                                  Computer Science. 2009; 41:59–70.
+                                            30.   Klaper D, Ebling S, Volk M. Building a German/simple German parallel corpus for automatic text simpli-
+                                                  fication. Zurich Open Repository and Archive. 2013;.
+                                            31.   Brunato D, Dell’Orletta F, Venturi G, Montemagni S. Design and annotation of the first Italian corpus for
+                                                  text simplification. In: Proceedings of The 9th Linguistic Annotation Workshop; 2015. p. 31–41.
+                                            32.   Štajner S. New data-driven approaches to text simplification; 2016.
+                                            33.   Brunato D, Dell’Orletta F, Venturi G. Linguistically-Based Comparison of Different Approaches to Build-
+                                                  ing Corpora for Text Simplification: A Case Study on Italian. Frontiers in Psychology. 2022; 13. https://
+                                                  doi.org/10.3389/fpsyg.2022.707630 PMID: 35350726
+                                            34.   Specia L, Jauhar SK, Mihalcea R. Semeval-2012 task 1: English lexical simplification. In: * SEM 2012:
+                                                  The First Joint Conference on Lexical and Computational Semantics–Volume 1: Proceedings of the
+                                                  main conference and the shared task, and Volume 2: Proceedings of the Sixth International Workshop
+                                                  on Semantic Evaluation (SemEval 2012); 2012. p. 347–355.
+                                            35.   Sharoff S. Open-source corpora: Using the net to fish for linguistic data. International journal of corpus
+                                                  linguistics. 2006; 11(4):435–462. https://doi.org/10.1075/ijcl.11.4.05sha
+                                            36.   De Belder J, Moens MF. A dataset for the evaluation of lexical simplification. In: International Confer-
+                                                  ence on Intelligent Text Processing and Computational Linguistics. Springer; 2012. p. 426–437.
+                                            37.   Horn C, Manduca C, Kauchak D. Learning a lexical simplifier using Wikipedia. In: Proceedings of the
+                                                  52nd Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers); 2014.
+                                                  p. 458–463.
+                                            38.   Paetzold G, Specia L. Benchmarking Lexical Simplification Systems. In: Proceedings of the Tenth Inter-
+                                                  national Conference on Language Resources and Evaluation (LREC’16). Portorz, Slovenia: European
+                                                  Language Resources Association (ELRA); 2016. p. 3074 -3080. Available from: https://aclanthology.
+                                                  org/L16-1491.
+                                            39.   Paetzold G, Specia L. Unsupervised lexical simplification for non-native speakers. In: Proceedings of
+                                                  the AAAI Conference on Artificial Intelligence. vol. 30; 2016.
+                                            40.   Kauchak D. Improving text simplification language modeling using unsimplified text data. In: Proceed-
+                                                  ings of the 51st annual meeting of the association for computational linguistics (volume 1: Long papers);
+                                                  2013. p. 1537–1546.
+
+
+
+
+PLOS ONE | https://doi.org/10.1371/journal.pone.0283622 April 12, 2023                                                                                21 / 23
+
+===== PDF PAGE 22 / 23 =====
+PLOS ONE                                                           EASIER corpus: A lexical simplification resource for people with cognitive impairments
+
+
+
+                                            41.   Zhu Z, Bernhard D, Gurevych I. A monolingual tree-based translation model for sentence simplification.
+                                                  In: Proceedings of the 23rd International Conference on Computational Linguistics (Coling 2010); 2010.
+                                                  p. 1353–1361.
+                                            42.   Kajiwara T, Komachi M. Building a monolingual parallel corpus for text simplification using sentence
+                                                  similarity based on alignment between word embeddings. In: Proceedings of COLING 2016, the 26th
+                                                  International Conference on Computational Linguistics: Technical Papers; 2016. p. 1147–1158.
+                                            43.   Yimam SM, Štajner S, Riedl M, Biemann C. Multilingual and cross-lingual complex word identification.
+                                                  In: Proceedings of the International Conference Recent Advances in Natural Language Processing,
+                                                  RANLP 2017; 2017. p. 813–822.
+                                            44.   Zhang X, Lapata M. Sentence simplification with deep reinforcement learning. arXiv preprint
+                                                  arXiv:170310931. 2017;.
+                                            45.   Woodsend K, Lapata M. Learning to Simplify Sentences with Quasi-Synchronous Grammar and Integer
+                                                  Programming. In: Proceedings of the 2011 Conference on Empirical Methods in Natural Language Pro-
+                                                  cessing. Edinburgh, Scotland, UK.: Association for Computational Linguistics; 2011. p. 409–420. Avail-
+                                                  able from: https://aclanthology.org/D11-1038.
+                                            46.   Štajner S, Saggion H, Ponzetto SP. Improving lexical coverage of text simplification systems for Span-
+                                                  ish. Expert Systems with Applications. 2019; 118:80–91. https://doi.org/10.1016/j.eswa.2018.08.034
+                                            47.   Alva-Manchego F, Martin L, Bordes A, Scarton C, Sagot B, Specia L. ASSET: A dataset for tuning and
+                                                  evaluation of sentence simplification models with multiple rewriting transformations. arXiv preprint
+                                                  arXiv:200500481. 2020;.
+                                            48.   Ortiz-Zambranoa JA, Montejo-Ráezb A. Overview of ALexS 2020: First Workshop on Lexical Analysis
+                                                  at SEPLN. Sociedad Española para el Procesamiento del Lenguaje Natural (SEPLN). 2020;.
+                                            49.   Ferrés D, Saggion H. ALEXSIS: A Dataset for Lexical Simplification in Spanish; 2022.
+                                            50.   McCarthy D, Navigli R. The English lexical substitution task. Language resources and evaluation. 2009;
+                                                  43(2):139–159. https://doi.org/10.1007/s10579-009-9084-1
+                                            51.   Paetzold G, Specia L. Semeval 2016 task 11: Complex word identification. In: Proceedings of the 10th
+                                                  International Workshop on Semantic Evaluation (SemEval-2016); 2016. p. 560–569.
+                                            52.   Anula A. Lecturas adaptadas a la enseñanza del español como L2: variables lingüı́sticas para la deter-
+                                                  minación del nivel de legibilidad. La evaluación en el aprendizaje y la enseñanza del español como LE
+                                                  L. 2008; 2:162–170.
+                                            53.   Gunning R, et al. Technique of clear writing. 1952;.
+                                            54.   Kincaid J, Fishburn R, Rogers R, Chissom B. Derivation of new readability formulas for Navy enlisted
+                                                  personnel (Research Branch Report 8-75). Memphis, TN: Naval Air Station, Millington, Tennessee.
+                                                  1975; 40.
+                                            55.   W3C. WCAG 2.1; 2018. Available from: https://www.w3.org/TR/WCAG21/.
+                                            56.   Muñoz ÓG. Lectura fácil: métodos de redacción y evaluación. Real patronato sobre discapacidad;
+                                                  2012.
+                                            57.   Drndarevic B, Saggion H. Reducing text complexity through automatic lexical simplification: an empiri-
+                                                  cal study for Spanish. Procesamiento del lenguaje natural. 2012; 49:13–20.
+                                            58.   Aldridge MD. Writing and designing readable patient education materials. Nephrology Nursing Journal.
+                                                  2004; 31(4):373–377. PMID: 15453229
+                                            59.   Baker SJ. Who can read consumer product information? The Australian Journal of Hospital Pharmacy.
+                                                  1997; 27(2):126–131. https://doi.org/10.1002/jppr1997272126
+                                            60.   Bautista S, Saggion H. Can Numerical Expressions Be Simpler? Implementation and Demostration of a
+                                                  Numerical Simplification System for Spanish. In: LREC; 2014. p. 956–962.
+                                            61.   ISO/IEC. ISO/IEC DIS 23859-1 Information technology — User interfaces — Part 1: Guidance on mak-
+                                                  ing written text easy to read and easy to understand; 2022.
+                                            62.   Moreno L, Alarcon R, Martı́nez P. Designing and Evaluating a User Interface for People with Cognitive
+                                                  Disabilities. In: Proceedings of the XXI International Conference on Human Computer Interaction; 2021.
+                                                  p. 1–8.
+                                            63.   Pustejovsky J, Stubbs A. Natural Language Annotation for Machine Learning: A guide to corpus-build-
+                                                  ing for applications. “O’Reilly Media, Inc.”; 2012.
+                                            64.   Yu CH, Miller RC. Enhancing web page readability for non-native readers. In: Proceedings of the sIG-
+                                                  CHI conference on human factors in computing systems; 2010. p. 2523–2532.
+                                            65.   Alonzo O, Seita M, Glasser A, Huenerfauth M. Automatic text simplification tools for deaf and hard of
+                                                  hearing adults: Benefits of lexical simplification and providing users with autonomy. In: Proceedings of
+                                                  the 2020 CHI Conference on Human Factors in Computing Systems; 2020. p. 1–13.
+
+
+
+
+PLOS ONE | https://doi.org/10.1371/journal.pone.0283622 April 12, 2023                                                                               22 / 23
+
+===== PDF PAGE 23 / 23 =====
+PLOS ONE                                                          EASIER corpus: A lexical simplification resource for people with cognitive impairments
+
+
+
+                                            66.   Shardlow M, Cooper M, Zampieri M. CompLex — A New Corpus for Lexical Complexity Prediction from
+                                                  Likert Scale Data. In: Proceedings of the 1st Workshop on Tools and Resources to Empower People
+                                                  with REAding DIfficulties (READI). Marseille, France: European Language Resources Association;
+                                                  2020. p. 57–62. Available from: https://aclanthology.org/2020.readi-1.9.
+                                            67.   Cambria E, White B. Jumping NLP Curves: A Review of Natural Language Processing Research. IEEE
+                                                  Computational Intelligence Magazine. 2014; 9(2):48–57. https://doi.org/10.1109/MCI.2014.2307227
+                                            68.   Hirschberg J, Manning CD. Advances in natural language processing. Science. 2015; 349(6245):261–
+                                                  266. https://doi.org/10.1126/science.aaa8685 PMID: 26185244
+                                            69.   Gale WA, Church K, Yarowsky D. One sense per discourse. In: Speech and Natural Language: Pro-
+                                                  ceedings of a Workshop Held at Harriman, New York, February 23–26, 1992; 1992.
+                                            70.   Bayerl PS, Paul KI. What determines inter-coder agreement in manual annotations? A meta-analytic
+                                                  investigation. Computational Linguistics. 2011; 37(4):699–725. https://doi.org/10.1162/COLI_a_00074
+
+
+
+
+PLOS ONE | https://doi.org/10.1371/journal.pone.0283622 April 12, 2023                                                                           23 / 23

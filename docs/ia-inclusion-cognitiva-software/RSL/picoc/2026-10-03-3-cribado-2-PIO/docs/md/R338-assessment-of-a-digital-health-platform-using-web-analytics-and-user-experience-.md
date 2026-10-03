@@ -1,0 +1,1154 @@
+# JOURNAL OF MEDICAL INTERNET RESEARCH Weinreich et al
+
+> Fuente PDF: `R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.pdf` · técnica **locator index** (página + ancla) + chunks Graphify
+
+## Metadata
+- Stem: `R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-`
+- PDF: `R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.pdf`
+- DOI: `10.2196/64903`
+- Pages: `13`
+- Structured_at: `2026-10-03T23:23:16+00:00`
+- Technique: `pdf-page-locators + heading-chunks`
+
+## Locator index (qué hay y en qué página del PDF)
+
+| Kind | Label | PDF page | MD anchor |
+|------|-------|----------|-----------|
+| abstract | Abstract / blurb | 1 | `#abstract` |
+| concept | data science | 2 | `#concept-data-science` |
+| concept | digital health | 1 | `#concept-digital-health` |
+| concept | learning disorders | 1 | `#concept-learning-disorders` |
+| concept | Reach | ? | `#concept-reach` |
+| concept | Effectiveness | 1 | `#concept-effectiveness` |
+| concept | Adoption | ? | `#concept-adoption` |
+| concept | Implementation | 1 | `#concept-implementation` |
+| concept | and Maintenance | 1 | `#concept-and-maintenance` |
+| concept | RE-AIM | ? | `#concept-re-aim` |
+| concept | usability testing | 2 | `#concept-usability-testing` |
+| concept | R338 | ? | `#concept-r338` |
+| concept | assessment | ? | `#concept-assessment` |
+| concept | digital | ? | `#concept-digital` |
+| concept | health | ? | `#concept-health` |
+| concept | platform | ? | `#concept-platform` |
+| concept | using | ? | `#concept-using` |
+| concept | analytics | ? | `#concept-analytics` |
+| concept | user | ? | `#concept-user` |
+| concept | experience | ? | `#concept-experience` |
+| finding | Background: In recent years, the field of digital health has grown exponentially, leading … | 1 | `#finding-background-in-recent-years-the-field-o` |
+| finding | Thus, it is crucial to identify digital health tools that provide meaningful value and ass… | 1 | `#finding-thus-it-is-crucial-to-identify-digital` |
+| finding | Methods: Data were collected over a 10-month period between May 1, 2024, and March 1, 2025… | 1 | `#finding-methods-data-were-collected-over-a-10-m` |
+| finding | The reach dimension was measured via a pop-up questionnaire (n=1324) collecting demographi… | 1 | `#finding-the-reach-dimension-was-measured-via-a-p` |
+| finding | The adoption dimension was measured via a second pop-up questionnaire (n=160) measuring us… | 1 | `#finding-the-adoption-dimension-was-measured-via` |
+| finding | The implementation dimension was measured via web analytics (N=37,133) measuring reading t… | 1 | `#finding-the-implementation-dimension-was-measure` |
+| page | p.1: JOURNAL OF MEDICAL INTERNET RESEARCH Weinreich et al | 1 | `#pdf-p1` |
+| page | p.2: JOURNAL OF MEDICAL INTERNET RESEARCH Weinreich et al | 2 | `#pdf-p2` |
+| page | p.3: JOURNAL OF MEDICAL INTERNET RESEARCH Weinreich et al | 3 | `#pdf-p3` |
+| page | p.4: JOURNAL OF MEDICAL INTERNET RESEARCH Weinreich et al | 4 | `#pdf-p4` |
+| page | p.5: JOURNAL OF MEDICAL INTERNET RESEARCH Weinreich et al | 5 | `#pdf-p5` |
+| page | p.6: JOURNAL OF MEDICAL INTERNET RESEARCH Weinreich et al | 6 | `#pdf-p6` |
+| page | p.7: JOURNAL OF MEDICAL INTERNET RESEARCH Weinreich et al | 7 | `#pdf-p7` |
+| page | p.8: JOURNAL OF MEDICAL INTERNET RESEARCH Weinreich et al | 8 | `#pdf-p8` |
+| page | p.9: JOURNAL OF MEDICAL INTERNET RESEARCH Weinreich et al | 9 | `#pdf-p9` |
+| page | p.10: JOURNAL OF MEDICAL INTERNET RESEARCH Weinreich et al | 10 | `#pdf-p10` |
+| page | p.11: JOURNAL OF MEDICAL INTERNET RESEARCH Weinreich et al | 11 | `#pdf-p11` |
+| page | p.12: JOURNAL OF MEDICAL INTERNET RESEARCH Weinreich et al | 12 | `#pdf-p12` |
+| page | p.13: JOURNAL OF MEDICAL INTERNET RESEARCH Weinreich et al | 13 | `#pdf-p13` |
+
+## Abstract
+<a id="abstract"></a>
+
+Background: In recent years, the field of digital health has grown exponentially, leading to notable benefits, such as easier access to health-related information, but also to content saturation and misinformation. Thus, it is crucial to identify digital health tools that provide meaningful value and assess them in real-world settings. Objective: This preregistered study aims to quantitatively assess the Lernstörungen Online-Diagnostik und Intervention (LONDI) platform, a German platform designed for different user groups supporting children with learning disorders. This assessment focused on user groups of mental health professionals (ie, learning therapists and school psychologists) and was grounded in 4 of the 5 reach, effectiveness, adoption, implementation, and maintenance (RE-AIM) framework dimensions: reach, adoption, implementation, and maintenance. Methods: Data were collected over a 10-month period between May 1, 2024, and March 1, 2025. The reach dimension was measured via a pop-up questionnaire (n=1324) collecting demographic and professional experience data. The adoption dimension was measured via a second pop-up questionnaire (n=160) measuring user experience (UX) and reuse intention for the platform’s help system. The implementation dimension was measured via web analytics (N=37,133) measuring reading time for pages intended for mental health professionals. Moreover, this dimension was also assessed by comparing chatbot engagement rates with industry benchmarks, in the absence of established benchmarks for digital health chatbots. The maintenance dimension was measured via web analytics as well, comparing the use in the previous (n=20,496) and current platform versions (N=37,133) in terms of number and location of users, time spent on the platform, number of actions per visit, and used devices and software. Results: A total of 21.90% (291/1324) and 10.64% (141/1324) of the users who filled out the first pop-up questionnaire stated that they were learning therapists or school psychologists, respectively, exceeding their percentage in the German population (<0.01%). The second pop-up questionnaire revealed an overall mean UX score of 1.54 (SD 1.14), surpassing the benchmark average, and UX ratings predicted intention to reuse. Time spent on the pages intended for mental health professionals was below the time needed to read them. The 0.18% rate of chatbot engagement was very low compared with industry benchmarks of 35% to 40%. Use changed in t
+
+## Keywords
+
+- data science
+- digital health
+- learning disorders
+- Reach
+- Effectiveness
+- Adoption
+- Implementation
+- and Maintenance
+- RE-AIM
+- usability testing
+
+## Concept index (graph hooks + página)
+
+<a id="concept-data-science"></a>
+### [PDF p.2] Concept: data science
+- Locator: `R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.pdf` · página **2**
+
+<a id="concept-digital-health"></a>
+### [PDF p.1] Concept: digital health
+- Locator: `R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.pdf` · página **1**
+
+<a id="concept-learning-disorders"></a>
+### [PDF p.1] Concept: learning disorders
+- Locator: `R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.pdf` · página **1**
+
+<a id="concept-reach"></a>
+### [PDF p.?] Concept: Reach
+- Locator: `R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.pdf` · página **?**
+
+<a id="concept-effectiveness"></a>
+### [PDF p.1] Concept: Effectiveness
+- Locator: `R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.pdf` · página **1**
+
+<a id="concept-adoption"></a>
+### [PDF p.?] Concept: Adoption
+- Locator: `R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.pdf` · página **?**
+
+<a id="concept-implementation"></a>
+### [PDF p.1] Concept: Implementation
+- Locator: `R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.pdf` · página **1**
+
+<a id="concept-and-maintenance"></a>
+### [PDF p.1] Concept: and Maintenance
+- Locator: `R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.pdf` · página **1**
+
+<a id="concept-re-aim"></a>
+### [PDF p.?] Concept: RE-AIM
+- Locator: `R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.pdf` · página **?**
+
+<a id="concept-usability-testing"></a>
+### [PDF p.2] Concept: usability testing
+- Locator: `R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.pdf` · página **2**
+
+<a id="concept-r338"></a>
+### [PDF p.?] Concept: R338
+- Locator: `R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.pdf` · página **?**
+
+<a id="concept-assessment"></a>
+### [PDF p.?] Concept: assessment
+- Locator: `R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.pdf` · página **?**
+
+<a id="concept-digital"></a>
+### [PDF p.?] Concept: digital
+- Locator: `R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.pdf` · página **?**
+
+<a id="concept-health"></a>
+### [PDF p.?] Concept: health
+- Locator: `R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.pdf` · página **?**
+
+<a id="concept-platform"></a>
+### [PDF p.?] Concept: platform
+- Locator: `R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.pdf` · página **?**
+
+<a id="concept-using"></a>
+### [PDF p.?] Concept: using
+- Locator: `R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.pdf` · página **?**
+
+<a id="concept-analytics"></a>
+### [PDF p.?] Concept: analytics
+- Locator: `R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.pdf` · página **?**
+
+<a id="concept-user"></a>
+### [PDF p.?] Concept: user
+- Locator: `R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.pdf` · página **?**
+
+<a id="concept-experience"></a>
+### [PDF p.?] Concept: experience
+- Locator: `R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.pdf` · página **?**
+
+
+## Findings index (graph hooks + página)
+
+<a id="finding-background-in-recent-years-the-field-o"></a>
+### [PDF p.1] Finding: Background: In recent years, the field of digital health has grown exponentially, leading to notable benefits, such as easier access to health-related information, but also to content saturation and misinformation.
+- Locator: `R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.pdf` · página **1**
+
+<a id="finding-thus-it-is-crucial-to-identify-digital"></a>
+### [PDF p.1] Finding: Thus, it is crucial to identify digital health tools that provide meaningful value and assess them in real-world settings.
+- Locator: `R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.pdf` · página **1**
+
+<a id="finding-methods-data-were-collected-over-a-10-m"></a>
+### [PDF p.1] Finding: Methods: Data were collected over a 10-month period between May 1, 2024, and March 1, 2025.
+- Locator: `R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.pdf` · página **1**
+
+<a id="finding-the-reach-dimension-was-measured-via-a-p"></a>
+### [PDF p.1] Finding: The reach dimension was measured via a pop-up questionnaire (n=1324) collecting demographic and professional experience data.
+- Locator: `R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.pdf` · página **1**
+
+<a id="finding-the-adoption-dimension-was-measured-via"></a>
+### [PDF p.1] Finding: The adoption dimension was measured via a second pop-up questionnaire (n=160) measuring user experience (UX) and reuse intention for the platform’s help system.
+- Locator: `R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.pdf` · página **1**
+
+<a id="finding-the-implementation-dimension-was-measure"></a>
+### [PDF p.1] Finding: The implementation dimension was measured via web analytics (N=37,133) measuring reading time for pages intended for mental health professionals.
+- Locator: `R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.pdf` · página **1**
+
+
+## Relevance hooks
+### Theme relevance: software engineering and accessibility
+### Theme relevance: cognitive accessibility and neurodiversity
+### Theme relevance: evaluation metrics and WCAG
+
+## Sections (detected in PDF)
+
+_(no numbered sections auto-detected)_
+
+
+## Page chunks (texto por página del PDF)
+
+_Cada heading es un nodo Graphify. El label incluye la página para volver al PDF sin releer todo._
+
+<a id="pdf-p1"></a>
+### [PDF p.1] JOURNAL OF MEDICAL INTERNET RESEARCH Weinreich et al
+- Locator: `R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.pdf` · página **1** / 13
+
+JOURNAL OF MEDICAL INTERNET RESEARCH                                                                                             Weinreich et al
+
+     Original Paper
+
+     Assessment of a Digital Health Platform Using Web Analytics and
+     User Experience Measurements: Quantitative Study Based on
+     RE-AIM
+
+     Lior Weinreich1, PhD; Louisa-Marie von Kontz1, MSc; Björn Witzel1, MSc; Olga Hermansson1, MSc; Hanna Laura
+     Hampe2, MSc; Susanne Volkmer1, PhD; Gerd Schulte-Körne1, MD, PhD; Kristina Moll1, PhD
+     1
+      Department of Child and Adolescent Psychiatry, Psychosomatics and Psychotherapy, Faculty of Medicine, Ludwig Maximilian University of Munich
+     University Hospital, Munich, Germany
+     2
+      Department of Teaching and Educational Technology, University of Zurich, Zurich, Switzerland
+
+     Corresponding Author:
+     Lior Weinreich, PhD
+     Department of Child and Adolescent Psychiatry, Psychosomatics and Psychotherapy
+     Faculty of Medicine
+     Ludwig Maximilian University of Munich University Hospital
+     Nussbaumstr. 5
+     Munich, 80336
+     Germany
+     Phone: 49 89 4400 ext 56938
+     Email: lior.weinreich@med.uni-muenchen.de
+
+
+     Abstract
+     Background: In recent years, the field of digital health has grown exponentially, leading to notable benefits, such as easier
+     access to health-related information, but also to content saturation and misinformation. Thus, it is crucial to identify digital health
+     tools that provide meaningful value and assess them in real-world settings.
+     Objective: This preregistered study aims to quantitatively assess the Lernstörungen Online-Diagnostik und Intervention (LONDI)
+     platform, a German platform designed for different user groups supporting children with learning disorders. This assessment
+     focused on user groups of mental health professionals (ie, learning therapists and school psychologists) and was grounded in 4
+     of the 5 reach, effectiveness, adoption, implementation, and maintenance (RE-AIM) framework dimensions: reach, adoption,
+     implementation, and maintenance.
+     Methods: Data were collected over a 10-month period between May 1, 2024, and March 1, 2025. The reach dimension was
+     measured via a pop-up questionnaire (n=1324) collecting demographic and professional experience data. The adoption dimension
+     was measured via a second pop-up questionnaire (n=160) measuring user experience (UX) and reuse intention for the platform’s
+     help system. The implementation dimension was measured via web analytics (N=37,133) measuring reading time for pages
+     intended for mental health professionals. Moreover, this dimension was also assessed by comparing chatbot engagement rates
+     with industry benchmarks, in the absence of established benchmarks for digital health chatbots. The maintenance dimension was
+     measured via web analytics as well, comparing the use in the previous (n=20,496) and current platform versions (N=37,133) in
+     terms of number and location of users, time spent on the platform, number of actions per visit, and used devices and software.
+     Results: A total of 21.90% (291/1324) and 10.64% (141/1324) of the users who filled out the first pop-up questionnaire stated
+     that they were learning therapists or school psychologists, respectively, exceeding their percentage in the German population
+     (<0.01%). The second pop-up questionnaire revealed an overall mean UX score of 1.54 (SD 1.14), surpassing the benchmark
+     average, and UX ratings predicted intention to reuse. Time spent on the pages intended for mental health professionals was below
+     the time needed to read them. The 0.18% rate of chatbot engagement was very low compared with industry benchmarks of 35%
+     to 40%. Use changed in the 2 time periods compared, and most strikingly, there was an 81.2% (n=16,637) increase in the number
+     of users.
+     Conclusions: The study provides evidence of the LONDI platform’s positive contribution to public health in terms of the reach,
+     adoption, and maintenance dimensions of the RE-AIM framework. Further research and endeavors are needed to better understand
+     and improve the platform’s contribution in terms of the implementation dimension.
+
+
+     https://www.jmir.org/2026/1/e64903                                                                     J Med Internet Res 2026 | vol. 28 | e64903 | p. 1
+                                                                                                                   (page number not for citation purposes)
+XSL• FO
+RenderX
+
+<a id="pdf-p2"></a>
+### [PDF p.2] JOURNAL OF MEDICAL INTERNET RESEARCH Weinreich et al
+- Locator: `R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.pdf` · página **2** / 13
+
+JOURNAL OF MEDICAL INTERNET RESEARCH                                                                                            Weinreich et al
+
+     (J Med Internet Res 2026;28:e64903) doi: 10.2196/64903
+
+     KEYWORDS
+     data science; digital health; learning disorders; Reach, Effectiveness, Adoption, Implementation, and Maintenance; RE-AIM;
+     usability testing
+
+                                                                           proportion of users from a targeted population planning to adopt
+     Introduction                                                          an intervention, implementation refers to the manner in which
+     In recent years, the constant growth in digitalization has led to     an intervention is implemented in real-world settings, and
+     an exponential growth in digital health [1]. Digital health is a      maintenance refers to long-term sustainability [16]. Although
+     term encompassing various digital technologies aiming to              these dimensions were initially designed to assess health
+     improve health-related knowledge and practices [2]. One report        promotion interventions, they have been used in recent years
+     estimated that in 2024, the number of digital health apps reached     in other health-related contexts [20]. For example, Fuller et al
+     337,000 [3]. Other reports estimated that in 2024, investments        [21] used RE-AIM to evaluate a digital health tool to facilitate
+     in American companies offering digital health tools exceeded          hospital discharge preparation.
+     $10.1 billion [4,5]. In particular, investments in artificial         In the context of digital health, notable means of assessment
+     intelligence (AI)–operated digital health tools have been on the      are web analytics and user experience (UX) measurements. In
+     rise [4]. Specifically, AI-operated chatbots have become              terms of web analytics, one example is the GDPR (General Data
+     increasingly popular, as they are often cost-effective and provide    Protection Regulation) compliant software Matomo [22].
+     users with 24/7 support, potentially replacing the long waiting       Matomo can be used to track a plethora of anonymous user data,
+     times required for human responses [6,7]. The expansion of            such as the time users spend on different pages, as well as the
+     digital health has led to several notable benefits, such as easier    device and browser they are using [23-25]. This makes it
+     access to health-related information, automation of                   possible to estimate if users spend enough time on a page to
+     time-consuming processes, facilitation of diagnostic and              read its content, based on words per minute (WPM) calculations
+     intervention decisions, and reaching reluctant populations            [26,27]. Moreover, web analytics can be used to track
+     [1,8,9]. For example, it has been found that while adolescents        human-machine engagement rates. These rates can then be used
+     are often reluctant to seek traditional mental health services,       to assess the quality of UX [28]. Nevertheless, while it is
+     they are interested in using anonymous online mental health           possible to gain valuable insights using web analytics, these
+     resources [9,10]. Overall, digital health has the potential to        insights are limited. Specifically, it is not possible to infer users’
+     contribute to a healthier society [1].                                understanding, intentions, or attitudes. Therefore, web analytics
+     Misinformation and misconceptions are common in many                  can be complemented by self-reported measures (eg,
+     health-related fields. For example, although research has shown       questionnaires evaluating chatbot-related attitudes [29,30]).
+     that learning disorders (LDs) are caused by a complex interplay       Similarly, in terms of UX measurements, these include tracking
+     between brain development, genetics, and environmental factors        user messages [31], as well as self-reported measures [32-34].
+     [11], myths about their origin are still commonly believed (eg,       This makes it possible to evaluate different UX facets such as
+     LDs are caused by laziness [12]). Other myths pertaining to           usability (ie, ease of use), perceived value, credibility, and
+     LDs are that people with LDs are less intelligent, children with      satisfaction [35]. Taken together, a multimodal data collection
+     LDs outgrow them in adulthood, and that LDs impact everyone           process combining web analytics and self-reported measures
+     in the same way [12]. Although the rise in digitalization             can lead to detailed insights into evaluations of digital health
+     positively contributes to children and adolescents’ health-related    platforms [36].
+     knowledge, it also leads to content saturation, making it harder      Lernstörungen Online-Diagnostik und Intervention (LONDI)
+     to distinguish between trustworthy and inaccurate information         is a German digital health platform that provides evidence-based
+     [13]. Moreover, adults as well as adolescents often turn to social    information on LDs, as well as an algorithm-based help system
+     media platforms such as YouTube and Facebook for                      for professionals to select suitable diagnostic tools and
+     health-related information, where they are often misinformed          intervention programs [37]. The platform was designed for the
+     [13,14]. To reduce misinformation and misconceptions, health          specific needs of different user groups supporting children with
+     professionals and academic institutions are encouraged to             LDs, namely parents, teachers, school psychologists, learning
+     increase their online presence [14]. Furthermore, it is imperative    therapists, and social workers. The content featured on the
+     to identify digital health tools that provide actual positive value   platform is based on scientific findings and was created by
+     by rigorously assessing them [15].                                    researchers from 2 German academic institutes (the Ludwig
+     One notable assessment framework for public health outcomes           Maximilian University Hospital and the Leibniz Institute for
+     is the reach, effectiveness, adoption, implementation, and            Research and Information in Education). The informational part
+     maintenance (RE-AIM) framework [16]. For over 2 decades,              of the platform is different for each user group, to accommodate
+     numerous studies have used either all or some of the RE-AIM           the specific needs identified by the researchers after consulting
+     dimensions to evaluate health promotion interventions [17-19].        with different user group representatives (eg, regulatory
+     Specifically, the reach dimension refers to the proportion of         information that is only relevant for social workers appears on
+     reached users from a targeted population, effectiveness refers        the information page designated to them). The help system part
+     to an intervention’s success rate, adoption refers to the             of the platform was designed for 2 of the user groups: school
+
+     https://www.jmir.org/2026/1/e64903                                                                    J Med Internet Res 2026 | vol. 28 | e64903 | p. 2
+                                                                                                                  (page number not for citation purposes)
+XSL• FO
+RenderX
+
+<a id="pdf-p3"></a>
+### [PDF p.3] JOURNAL OF MEDICAL INTERNET RESEARCH Weinreich et al
+- Locator: `R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.pdf` · página **3** / 13
+
+JOURNAL OF MEDICAL INTERNET RESEARCH                                                                                         Weinreich et al
+
+     psychologists and learning therapists. These mental health           as this study is based on real-life use in nonexperimental
+     professionals can use the help system to get diagnostic and          settings. Therefore, measuring effectiveness (eg, the platform’s
+     intervention recommendations according to each child’s               effect on children’s academic outcomes) was not feasible. This
+     individual learning profile. Thus, the overall purpose of the        aligns with the study by Glasgow et al [20], whose
+     LONDI platform is to alleviate the hardship experienced by           recommendation is to only evaluate RE-AIM dimensions within
+     children with LDs by providing information and resources to          a study’s scope. For the evaluated dimensions, four research
+     the relevant user groups supporting them.                            questions were defined, with a particular focus on user groups
+                                                                          of mental health professionals (ie, learning therapists and school
+     The work on LONDI began in 2017, with the plan to conduct
+                                                                          psychologists). Specifically, the following research questions
+     2 evaluation phases, identify key issues after each phase, and
+                                                                          were formulated: (1) How many mental health professionals
+     revise the platform accordingly. The first phase assessed the
+                                                                          does LONDI reach (reach)? (2) Do mental health professionals
+     initial version of LONDI, which was launched in 2022. This
+                                                                          intend to keep using the help system and why (adoption)? (3)
+     phase included 2 preregistered studies. The first was a
+                                                                          In what manner do users implement pages intended for mental
+     quantitative study evaluating anonymous online use in
+                                                                          health professionals (implementation)? and (4) Does platform
+     real-world settings [23]. The second was a mixed methods study
+                                                                          use change over time (maintenance)?
+     evaluating input from parents of children with LDs and learning
+     therapists using LONDI in guided sessions [38]. The main issue
+     identified in the first study was that with time, more users were
+                                                                          Methods
+     accessing LONDI via smartphone devices, whereas in the first         Overview
+     months after its launch, most users were accessing LONDI via
+     desktop devices. This was problematic since at that time, LONDI      To answer the research questions, the study used a multimodal
+     was not optimized for smartphone use. The main issues                data collection process combining web analytics as well as
+     identified in the second study were that many users disliked the     self-reported demographic and UX measures.
+     platform’s “text-heavy” content and that the help system was         Data Collection
+     too complicated. Therefore, the newest revised platform version
+                                                                          Data collection took place over the 10-month period between
+     was launched in 2024, after the following changes were made:
+                                                                          May 1, 2024, and March 1, 2025. During this time period, the
+     LONDI was optimized for smartphone use, the platform was
+                                                                          LONDI platform was advertised on social media platforms
+     redesigned to feature more infographics (ie, graphic visual
+                                                                          targeting users in regions in which the majority of the population
+     representations of information), the help system’s design was
+                                                                          are native German speakers (ie, Germany, Switzerland, and
+     simplified, and instructional tutorials were added. Furthermore,
+                                                                          Austria). Visits to the LONDI platform were tracked, and data
+     in alignment with the increase in the integration of chatbots (ie,
+                                                                          were also collected from voluntarily completed pop-up
+     AI-based conversational proxies) in digital health platforms [6],
+                                                                          questionnaires. The data collected for this study enabled an
+     a simple chatbot was added. As noted by Abd-Alrazaq et al
+                                                                          extension of the previous evaluations in 2 ways. First, by
+     [39], evaluating chatbot performance can be a useful outcome
+                                                                          assessing the newest platform version (ie, launched in 2024),
+     metric to assess mental health interventions. Additionally,
+                                                                          and second, by incorporating additional state-of-the-art research
+     further resources were devoted to increasing the platform’s
+                                                                          methods, namely, reading time and chatbot engagement.
+     social media presence (ie, by regularly posting on the LONDI
+     Instagram and Facebook accounts).                                    Measures
+     The current preregistered study is part of the second LONDI          Overview
+     evaluation phase. Its goal was to quantitatively evaluate the
+                                                                          The specific measures used to evaluate each research question
+     anonymous online use of the revised LONDI version (Table S1
+                                                                          are detailed below. These measures were either self-reported
+     in Multimedia Appendix 1 provides the specific elements
+                                                                          or implemented using the web analytics (ie, data tracking)
+     specified a priori). Consistent with the previous LONDI
+                                                                          software Matomo (Figure S1 in Multimedia Appendix 1) [22].
+     evaluations [23,38], the study was grounded on 4 of the 5
+                                                                          Table 1 provides an overview of research questions, measures,
+     RE-AIM dimensions: reach, adoption, implementation, and
+                                                                          and analyses.
+     maintenance. The effectiveness dimension was not included,
+
+
+
+
+     https://www.jmir.org/2026/1/e64903                                                                 J Med Internet Res 2026 | vol. 28 | e64903 | p. 3
+                                                                                                               (page number not for citation purposes)
+XSL• FO
+RenderX
+
+<a id="pdf-p4"></a>
+### [PDF p.4] JOURNAL OF MEDICAL INTERNET RESEARCH Weinreich et al
+- Locator: `R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.pdf` · página **4** / 13
+
+JOURNAL OF MEDICAL INTERNET RESEARCH                                                                                                       Weinreich et al
+
+     Table 1. Summarized overview of research questions, measures, and analyses.
+         Research question                              Measures               Analyses
+         Reach: how many mental health professionals Demographics and pro- •          The relative percentage of mental health professionals using LONDI
+         (ie, learning therapists and school psycholo- fessional experience           vs their number in the general population
+         gists) does LONDIa reach?
+         Adoption: do mental health professionals in-   UXb and reuse intention •     Mean reuse intention ratings vs scale mean and vs mean score obtained
+         tend to keep using the help system and why?                                  in a previous evaluation [23]
+                                                                               •      Mean UX ratings vs benchmarks
+                                                                               •      Multiple linear regressions to assess if UX ratings predict reuse inten-
+                                                                                      tion
+
+         Implementation: in what manner do users im- Reading time and chat- •         Mean time on pages vs minimum time needed to read them, calculated
+         plement pages intended for mental health pro- bot engagement                 according to words per minute estimates
+         fessionals?                                                        •         Chatbot engagement rate vs benchmark
+
+         Maintenance: does platform use change over     Use comparisons        •      Number and location of users
+         time?                                                                 •      Time spent on the platform
+                                                                               •      Number of actions per visit
+                                                                               •      Devices and software
+
+     a
+         Lernstörungen Online-Diagnostik und Intervention.
+     b
+         UX: user experience.
+
+                                                                                    was used to evaluate the ratings. One additional item concerned
+     Demographics and Professional Experience                                       users’ profession, and the last item concerned intention to reuse
+     (Self-Reported)                                                                (ie, “I plan to continue using LONDI”), derived from a validated
+     To evaluate research question 1 (reach: How many mental health                 questionnaire [41]. Possible answers appeared on a 7-point
+     professionals does LONDI reach?), a pop-up questionnaire was                   scale, with answers ranging from “do not agree at all” to “fully
+     used to collect demographic and professional data (Figure S2                   agree.” Answers to this item were also coded in a range between
+     in Multimedia Appendix 1). The questionnaire had 6 items and                   –3 and +3 for the most negative and positive options,
+     was programmed to appear on the front page of the platform.                    respectively. As there are no benchmarks for this item, the scale
+     Participation was not mandatory, and users could opt out by                    mean was used to evaluate the ratings. Thus, ratings above or
+     closing the window in which the questionnaire appeared. The                    below the mean served as indicators of the intention to reuse
+     6 items concerned users’ profession (ie, teacher, school                       the help system. Moreover, as these items were also used in the
+     psychologist, learning therapist, unemployed, or other), years                 evaluation of the previous help system version, this study’s
+     of professional experience (ie, ranging from novice to more                    ratings were also compared with those obtained in the previous
+     than 20 years), age, gender, professional qualifications, and                  evaluation [23].
+     whether they think that more knowledge in the field of LDs
+     would be helpful in their day-to-day tasks. The percentage of                  Reading Time (Tracked Data)
+     learning therapists and school psychologists among the other                   To evaluate research question 3 (implementation: In what
+     professions was calculated and compared with their percentage                  manner do users implement pages intended for mental health
+     in Germany.                                                                    professionals?), data pertaining to the average amount of time
+                                                                                    users spent on different LONDI pages were tracked. The reading
+     UX and Reuse Intention (Self-Reported)                                         time metric was chosen as a way to measure whether users spend
+     To evaluate research question 2 (adoption: Do mental health                    enough time on the platform to read its content. As this study
+     professionals intend to keep using the help system and why?),                  focused on mental health professionals, the time spent on the 5
+     a pop-up questionnaire was used to collect UX and reuse                        pages intended for them was tracked. Of these 5 pages, 2 were
+     intention data (Table S2 in Multimedia Appendix 1). The                        index pages, and 3 were informational pages. Whereas the index
+     questionnaire had 10 items and was programmed to appear after                  pages did not contain a lot of words and their main purpose was
+     using the help system. Participation was not mandatory, and                    to provide links directing users to other relevant pages, the
+     users could opt out by closing the window in which the                         informational pages contained detailed information divided into
+     questionnaire appeared. Eight of the 10 items concerned UX,                    sections. For the index pages, the total number of words was
+     derived from the short version of the User Experience                          counted. For the informational pages, the number of words per
+     Questionnaire [40]. The items were presented using a 7-point                   section was counted. To calculate expected reading time
+     semantic differential scale (eg, boring vs exciting). The first 4              thresholds, the average German WPM rate for silent reading,
+     adjective pairs measured the help system’s pragmatic qualities                 which is 260 words per minute, was used [26]. Based on this,
+     (ie, practical aspects), and the last 4 measured its hedonic                   the minimum time needed to read each of the 5 pages was
+     qualities (ie, pleasurable aspects). Answers were coded in a                   calculated, taking into account the number of words in the
+     range between –3 and +3 for the most negative and positive                     shortest section per informational page, and the total number
+     options, respectively. The comparison with the scale benchmarks                of words per index page (Table S3 in Multimedia Appendix 1).
+
+     https://www.jmir.org/2026/1/e64903                                                                               J Med Internet Res 2026 | vol. 28 | e64903 | p. 4
+                                                                                                                             (page number not for citation purposes)
+XSL• FO
+RenderX
+
+<a id="pdf-p5"></a>
+### [PDF p.5] JOURNAL OF MEDICAL INTERNET RESEARCH Weinreich et al
+- Locator: `R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.pdf` · página **5** / 13
+
+JOURNAL OF MEDICAL INTERNET RESEARCH                                                                                          Weinreich et al
+
+     The average time spent on the pages was compared with the             was not done for this study, due to its real-world setting.
+     minimum time needed to read them.                                     Namely, its participants were those who used the online platform
+                                                                           of their own volition, rather than participating in a study done
+     Chatbot Engagement (Tracked Data)                                     in an experimental setting. Given these circumstances, the ethics
+     To evaluate research question 3 (implementation: In what              committee approved waiving informed consent for this study,
+     manner do users implement pages intended for mental health            provided that strict measures to ensure anonymity were adhered
+     professionals?), in addition to reading time, the ArtiBot.ai          to. Specifically, users’ IP addresses were anonymized via
+     software [42] was used to track users’ engagement with a simple       masking by Matomo, in accordance with strict data protection
+     chatbot. The chatbot engagement metric was chosen as a way            laws, and the experimenters had no access to participants’
+     to measure whether users chose to interact with a virtual agent,      unmasked IP addresses or any other identifying data.
+     and if this interaction exceeded 1 interaction. The chatbot was       Furthermore, when accessing the platform, all users were
+     programmed as a frequently asked questions (FAQ) chatbot              informed via a pop-up notice that the website uses cookies and
+     (Figure S3 in Multimedia Appendix 1). These types of chatbots         similar technologies to track data and were given the option to
+     operate in a question-answer manner, wherein users cannot type        accept or opt out. Compensation was not offered.
+     questions but are presented with options they can tap or click
+     on [7]. Notably, this type of chatbot is only capable of answering    Results
+     a predefined set of questions with predefined answers (eg,
+     “Would you like more information about…?” Then users can              The overall sample comprised 37,133 tracked platform visits.
+     click “Yes” to get suggested options or “No” to end the chat).        The visit bounce rate (ie, proportion of visitors that left the
+     The chatbot appeared as a minimized chat bubble, and users            website after only viewing 1 page) was 18.99% (7055/37,133).
+     could choose to open it by clicking or tapping it. The                The tracked data from the overall sample revealed that the
+     conversation turns per session (CPS) metric was used to assess        majority of visits were from Germany. More specifically,
+     user engagement [43]. CPS is the average number of                    although visits originated from 113 distinct countries, 77.32%
+     conversation turns between a user and a chatbot. For this study,      (28,712/37,133) were from Germany. This is in line with the
+     CPS was simplified due to the restricted nature of the FAQ            fact that LONDI is currently only available in German.
+     chatbot. Engagement was counted when a visit contained the            However, the second, third, and fourth locations with the most
+     actions of opening the chat bubble and clicking or tapping on         visits were the United States, Canada, and Ireland (1122/37,133,
+     at least 1 offered option. As there are no benchmarks in the          3.02%; 798/37,133, 2.15%; 771/37,133, 2.08%, respectively).
+     context of digital health, the comparison with industry               Among the 16 German states, the majority of visits
+     benchmarks was used to evaluate the chatbot engagement rate           (16,436/37,133, 44.26%) were from the state of Hesse, followed
+     (ie, successful engagement rates range around 35%-40% [44]).          by 10.47% (3891/37,133) from North Rhine-Westphalia, 5.63%
+                                                                           (2094/37,133) from Bavaria, 5% (1854/37,133) from Berlin,
+     Use Comparisons (Tracked Data)                                        3.1% (1164/37,133) from Baden-Württemberg, and 2.8% from
+     To evaluate research question 4 (maintenance: Does platform           Lower Saxony (1032/37,133).
+     use change over time?), the Matomo analytics software [22]
+     (Figure S1 in Multimedia Appendix 1) was used. For this               To answer research question 1 (reach: How many mental health
+     purpose, the Matomo date comparison feature was activated.            professionals does LONDI reach?), users’ answers to the first
+     This feature enables the comparison of date ranges for any            pop-up questionnaire (n=1324), collecting demographic and
+     Matomo report containing dates as a dimension. The compared           professional experience, were analyzed. Among the users who
+     time periods were the 10-month period of this study and the           filled out the questionnaire, 21.90% (291/1324) stated that they
+     10-month period of the prior year (ie, before the latest platform     were learning therapists, and 10.64% (141/1324) stated that
+     revisions were made). Specifically, the following parameters          they were school psychologists, with various years of experience
+     were compared: number of visits, user locations, average time         (Table S4 in Multimedia Appendix 1). Although the exact
+     spent on the platform, times of the day in local time with most       number of learning therapists is not publicly known, according
+     visits, average number of actions per visit (ie, average number       to a representative from the German Association for Dyslexia
+     of interactions, including page views, downloads, and links           and Dyscalculia, the combined number for Germany and Austria
+     clicked per single visit), and visits per device and software type.   is roughly 2500 (L Weinreich, personal correspondence,
+     As there are no benchmarks for user growth rate in the context        February 23, 2023). The number of school psychologists in
+     of digital health, the comparison with industry benchmarks was        Germany is publicly known and is roughly 2,500 as well [46].
+     used (ie, it is typically viewed positively when the monthly          Based on these estimates, with an adult population of more than
+     growth in the number of website visits is 10%-20% for a new           70 million [47], their percentage in the German population is
+     website, and 5%-10% for established websites [45]).                   lower than 0.01%. As the relative percentage of mental health
+                                                                           professionals using the platform was higher than that in the
+     Ethical Considerations                                                general population, it can be deduced that the platform reached
+     This study was part of a larger project (ie, LONDI), approved         this user group.
+     by the ethics committee at the university hospital of the Ludwig      To answer research question 2 (adoption: Do mental health
+     Maximilian University of Munich (approval number 22-0300              professionals intend to keep using the help system and why?),
+     1 V). Participants who took part in the project’s controlled          mental health professionals’ answers to the second pop-up
+     experimental studies provided written informed consent. This          questionnaire (n=160), measuring UX and reuse intention for
+
+     https://www.jmir.org/2026/1/e64903                                                                  J Med Internet Res 2026 | vol. 28 | e64903 | p. 5
+                                                                                                                (page number not for citation purposes)
+XSL• FO
+RenderX
+
+<a id="pdf-p6"></a>
+### [PDF p.6] JOURNAL OF MEDICAL INTERNET RESEARCH Weinreich et al
+- Locator: `R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.pdf` · página **6** / 13
+
+JOURNAL OF MEDICAL INTERNET RESEARCH                                                                                                   Weinreich et al
+
+     the platform’s help system, were analyzed. This sample size                item assessing intention to reuse, the mean score was 2.02 (SD
+     was smaller than that of the first pop-up questionnaire, likely            1.21), which is higher than the scale mean (ie, 0) and higher
+     since the second pop-up questionnaire only appeared to users               than the ratings obtained in the evaluation of the previous help
+     who completed all the steps required to use the help system (ie,           system version (ie, 1.90). Additionally, 2 linear regressions
+     answering all the questions regarding a child’s learning profile).         were performed to assess whether the different UX qualities
+     The items’ mean scores were 1.54 (SD 1.14) for all items                   predict intention to reuse. Models for items assessing both
+     combined, 1.45 (SD 1.28) for the pragmatic qualities, and 1.64             qualities were significant for pragmatic qualities (F1,158=26.47;
+     (SD 1.14) for the hedonic qualities. According to the short                P<.001), accounting for 14% of the variance, and for hedonic
+     version of the User Experience Questionnaire benchmarks [48],              qualities (F1,158=32.57; P<.001), accounting for 17% of the
+     these scores can be interpreted as above average for the                   variance. Thus, it can be deduced that mental health
+     pragmatic qualities, good for all items combined, and excellent            professionals planned to adopt the help system.
+     for the hedonic qualities (Figure 1; Hinderks et al [48]). For the
+     Figure 1. Mental health professionals’ mean user experience (UX) scores for the help system. The scores are depicted within the short version of the
+     User Experience Questionnaire benchmark range.
+
+
+
+
+     To answer research question 3 (implementation: In what manner              containing detailed information). Furthermore, chatbot
+     do users implement pages intended for mental health                        engagement data revealed that users rarely interacted with the
+     professionals?), tracked data measuring both reading time and              chatbot. In fact, only 0.18% (67/37,133) of the total number of
+     chatbot engagement were analyzed. Reading time data revealed               platform visits included chatbot engagement. This rate is far
+     that the average time users spent on the tracked pages was lower           below the desired engagement level of at least 35% [44]. Thus,
+     than the minimum time required to read at least 1 complete page            it can be deduced that the platform’s implementation was
+     section (Table 2). This was the case for both the index (ie, pages         suboptimal.
+     designed to redirect users) and the information pages (ie, pages
+
+     Table 2. Time spent on pages for mental health professionals vs the minimum reading time.
+
+         Page                                                 Mean time on page (seconds)                 Minimum time to reada (seconds)
+         Index for learning therapists                        16                                          18.69
+         Index for school psychologists                       12                                          26.77
+         Inf. for learning therapists                         17                                          60.23
+         Inf. for school psychologists 1                      12                                          72.00
+         Inf. for school psychologists 2                      18                                          60.91
+
+     a
+      Minimum reading time was based on the average German word-per-minute rate for silent reading [26]. As the information pages contained multiple
+     sections, the shortest section for each page was used.
+
+
+     https://www.jmir.org/2026/1/e64903                                                                           J Med Internet Res 2026 | vol. 28 | e64903 | p. 6
+                                                                                                                         (page number not for citation purposes)
+XSL• FO
+RenderX
+
+<a id="pdf-p7"></a>
+### [PDF p.7] JOURNAL OF MEDICAL INTERNET RESEARCH Weinreich et al
+- Locator: `R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.pdf` · página **7** / 13
+
+JOURNAL OF MEDICAL INTERNET RESEARCH                                                                                           Weinreich et al
+
+     To answer research question 4 (maintenance: Does platform           none of the user traffic was accounted for by AI assistants (visits
+     use change over time?), tracked data assessing maintenance          from tools such as ChatGPT, Microsoft Copilot, Claude). Since
+     over 2 time periods were analyzed (Table 3). Notably, the           an 80% increase over 1 year is the equivalent of a 5.02%
+     number of visits increased by more than 80% (a visualization        monthly increase, this is a good rate, as desired monthly growth
+     of visits over time and a comparison of platform traffic sources    rates should exceed 5% [45]. Thus, it can be deduced that
+     in 2 time periods is available in Figures S4 and S5 in Multimedia   platform use changes over time, in a manner that can be
+     Appendix 1, respectively). This growth is largely related to        perceived as favorable (ie, increased web traffic). Nevertheless,
+     social media campaigns, accounting for 53% (19,741/37,133)          it is not possible to deduce how many of these visits were by
+     of the user traffic in the second time period, vs less than 1% in   new vs returning users, as users’ IP addresses were masked.
+     the first time period (n=2). Interestingly, in both time periods,
+
+     Table 3. Comparison of platform use in the 2 time periods.
+
+         Category and subcategory                                          T1a                   T2b                          Difference, %
+         Total visits, n                                                   20,496                37,133                       +81.2
+         Visits at frequent locations, n
+              Germany                                                      16,119                28,712                       +78.1
+              United States                                                395                   1,122                        +184.1
+              Canada                                                       279                   798                          +186
+              Ireland                                                      411                   771                          +87.6
+              Austria                                                      415                   608                          +46.5
+              United Kingdom                                               216                   600                          +177.8
+              Netherlands                                                  243                   513                          +111.1
+              Switzerland                                                  288                   449                          +55.9
+         Mean visit duration                                               1 minute 46 seconds   1 minute 44 seconds          –1.9 seconds
+         Mean actions per visit, n                                         3.2                   10.1                         +215.6
+         Frequently used devices, n
+              Smartphone                                                   14,490                26,298                       +81.5
+              Desktop                                                      5,508                 10,200                       +85.2
+              Tablet                                                       351                   433                          +23.4
+         Visits by operating system family, n
+              Android                                                      8,344                 14,229                       +70.5
+              iOS                                                          6,508                 12,622                       +93.9
+              Windows                                                      3,561                 6,101                        +71.3
+              Mac                                                          1,723                 3,753                        +117.8
+
+     a
+         The time period between May 1, 2023, and March 1, 2024.
+     b
+         The time period between May 1, 2024, and March 1, 2025.
+
+                                                                         the results revealed that users did not implement the platform
+     Discussion                                                          as expected, as indicated by the average time they spent on it
+     Principal Results                                                   and by the low chatbot engagement rate. In terms of
+                                                                         maintenance, the results revealed that platform use changed
+     This study’s goal was to perform an assessment of a digital         over time, predominantly indicated by the sharp increase in the
+     health platform, using both web analytics and UX                    number of visits. All in all, the results from all but one of the
+     measurements. Specifically, the following 4 RE-AIM framework        assessed RE-AIM dimensions, namely, implementation,
+     dimensions were assessed: reach, adoption, implementation,          reflected a positive public health contribution.
+     and maintenance. In terms of reach and adoption, the study
+     results revealed that the platform reached its target population    The assessed metrics for reach and adoption were, respectively,
+     of mental health professionals and that they plan to adopt it in    the number of mental health professionals among the LONDI
+     their everyday practice. Moreover, users rated the platform’s       users, and their intention to keep using its help system. Results
+     help system above the benchmark average both in terms of its        for the reach dimension revealed that the proportion of both
+     pragmatic and its hedonic qualities. In terms of implementation,    user groups of mental health professionals (ie, learning therapists
+
+     https://www.jmir.org/2026/1/e64903                                                                   J Med Internet Res 2026 | vol. 28 | e64903 | p. 7
+                                                                                                                 (page number not for citation purposes)
+XSL• FO
+RenderX
+
+<a id="pdf-p8"></a>
+### [PDF p.8] JOURNAL OF MEDICAL INTERNET RESEARCH Weinreich et al
+- Locator: `R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.pdf` · página **8** / 13
+
+JOURNAL OF MEDICAL INTERNET RESEARCH                                                                                          Weinreich et al
+
+     and school psychologists) exceeded their proportion in the            reduced reading durations [52]. It is possible that LONDI
+     German population. In the evaluation study of the initial version     visitors used smartphones for superficial reading of the
+     of LONDI [23], it was also found that the platform reached            platform’s content (eg, only reading the headings). This is in
+     targeted users. This study’s results demonstrate that the retention   line with other studies demonstrating that compared to printed
+     was sustained. This is promising, as there are other valuable         texts, online texts are read in a quicker, shallower manner,
+     sources in the context of LDs for German speakers that users          leading to reduced reading comprehension [53-55]. Thus, the
+     could have reverted to [49]. Nevertheless, the number of learning     findings from this study could be taken as an indication of low
+     therapists was more than double that of the school psychologists,     user engagement. Alternatively, it is possible that users wanted
+     even though their estimated number in the German population           to get a quick overview of the platform, with the intention of
+     is comparable. Further marketing endeavors are required to            reading certain content in more detail at a later point.
+     ensure that the platform is advertised equally to all its user
+                                                                           Notably, in compliance with GDPR, users’ data were
+     groups. The adoption results revealed that users intend to keep
+                                                                           anonymous (users’ IPs were masked), making it impossible to
+     using the help system, and this was predicted by UX qualities
+                                                                           distinguish new users from returning users. Previous studies
+     (eg, ease of use). Users’ intention to reuse the help system
+                                                                           have shown that returning users need less time to read digital
+     increased compared to the first phase evaluation [23]. This
+                                                                           content [56]. A future assessment could ask users to use
+     points toward the potential positive contribution caused by
+                                                                           individual trackable links, enabling a distinction between the
+     revising the help system (ie, the design was simplified and
+                                                                           use data of new vs returning users. Interestingly, the reading
+     instructional tutorials were created). Continued endeavors are
+                                                                           times of all the tracked pages, regardless of their word count,
+     required for technical maintenance of the help system, as well
+                                                                           ranged between 12 and 18 seconds. A future assessment could
+     as regular updates of the featured diagnostic and intervention
+                                                                           also assess whether there is a ceiling effect (ie, the maximum
+     recommendations. Thus, results from both the reach and
+                                                                           amount of time users spent on pages) and whether this differs
+     adoption metrics were positive, and further endeavors are needed
+                                                                           between new and returning users.
+     to optimize and retain this.
+                                                                           In addition to reading time, the other assessed implementation
+     The assessed metrics for implementation were the reading time
+                                                                           metric was chatbot engagement, revealing an engagement rate
+     of the pages intended for mental health professionals, as well
+                                                                           far below the range suggested by industry benchmarks [44].
+     as chatbot engagement. These metrics were not used in the first
+                                                                           However, this finding needs to be interpreted cautiously, as the
+     LONDI evaluation phase. Rather, they were chosen based on
+                                                                           comparison relied on industry benchmarks due to the lack of
+     insights from a first phase study, which used popular metrics
+                                                                           established standards for digital health chatbots. Moreover, the
+     used in commercial websites [23]. For example, the first phase
+                                                                           LONDI platform was not designed for profit, unlike many
+     study used the conversion rate metric (ie, the percentage of
+                                                                           industry-based platforms. Thus, this study’s comparison with
+     website visitors who completed a desired goal) to assess the
+                                                                           industry benchmarks should be viewed as exploratory. In line
+     platform’s implementation. However, such metrics were found
+                                                                           with the findings of Abd-Alrazaq et al [39], further research is
+     to be suboptimal in the context of digital health, as their
+                                                                           required to establish standardized measures for chatbot
+     interpretation is based on online marketing benchmarks for
+                                                                           engagement in the digital health context. Furthermore, in this
+     profit-driven websites [50]. In this study, the chosen
+                                                                           study, a simple FAQ chatbot was chosen over a more complex
+     implementation metrics assessed whether users spend enough
+                                                                           chatbot, as its implementation was feasible within the study’s
+     time on the platform to read its content and whether they interact
+                                                                           scope. The results revealed that chatbot engagement rates were
+     with its chatbot.
+                                                                           far below the industry benchmark [44]. One possible reason for
+     The reading time results revealed that the average time users         the low engagement could be that the users did not think the
+     spent on the pages intended for mental health professionals was       chatbot was useful, as it only offered predefined questions and
+     lower than the minimum time required to read them. The time           answers, not allowing users to type their own questions. This
+     users spend on pages is an important indicator of users’              is in line with the notion that, despite the spike in technological
+     engagement with platform content, as longer sessions enable           advancements, many online interactions are still clumsy and do
+     more in-depth reading [27]. Notably, in the first LONDI               not fulfill their intended purpose [1]. Further endeavors are
+     evaluation phase, a notable shift occurred over time, with more       required to provide a more complex chatbot, better simulating
+     users accessing the platform via smartphones rather than desktop      a conversation with a human agent. Another reason for the low
+     devices [23]. This was also the case for the revised LONDI            engagement could be related to users’ trust in AI and their
+     version, with this study revealing that most users accessed the       willingness to engage with chatbots. Most of the visits to LONDI
+     platform via smartphones. To optimize users’ smartphone               occurred from Germany. Interestingly, a study by Chang et al
+     experience, the design of the revised LONDI version was               [57] showed that compared with other nationalities (eg,
+     optimized for smartphone use. Additionally, in line with the          Brazilians), Germans are less open to engaging with chatbots.
+     recommendation to improve online readability by designing             Another reason for the low engagement could be that the chatbot
+     pages with low visual complexity [51], infographics were added        was too hidden, namely, users did not notice the chat bubble
+     to break up long text blocks. Nevertheless, on average, users         icon they had to press for the chatbot to open. This was done
+     did not spend enough time on the tracked pages to read their          in order not to aggravate the users by having the chatbot pop
+     content. Paradoxically, despite the rise in average screen times      up whenever they use LONDI. This is in line with the literature
+     in recent years, which would, in theory, allow users to have          showing that users prefer a “polite pop-up” that only opens
+     longer reading sessions, smartphones are associated with              when clicked on [58]. Thus, future research should qualitatively
+
+     https://www.jmir.org/2026/1/e64903                                                                  J Med Internet Res 2026 | vol. 28 | e64903 | p. 8
+                                                                                                                (page number not for citation purposes)
+XSL• FO
+RenderX
+
+<a id="pdf-p9"></a>
+### [PDF p.9] JOURNAL OF MEDICAL INTERNET RESEARCH Weinreich et al
+- Locator: `R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.pdf` · página **9** / 13
+
+JOURNAL OF MEDICAL INTERNET RESEARCH                                                                                            Weinreich et al
+
+     examine user reactions to a more complex, attention-grabbing           chatbot engagement in the context of digital health. As the
+     chatbot.                                                               purpose of the assessment was to evaluate how users use the
+                                                                            platform in a natural setting, the sample consisted of anonymous
+     The assessed metric for maintenance was the use comparison
+                                                                            users using the platform of their own accord. Therefore, it was
+     between the previous and the revised platform versions. One
+                                                                            not possible to use this sample to gather qualitative data (eg,
+     notable result was that the number of visits increased by roughly
+                                                                            via interviews) or to follow up with individual users
+     81%. This is encouraging, as increasing user traffic increases a
+                                                                            longitudinally. Nevertheless, the study did use other quantitative
+     website’s impact [59]. Nevertheless, this finding should be
+                                                                            measures (ie, pop-up questionnaires) to collect user input.
+     interpreted cautiously, as it stands in contrast with the finding
+                                                                            Moreover, as the study was part of a larger project, it is
+     that, on average, users do not spend enough time on the platform
+                                                                            complemented by another preregistered study that uses
+     to read its content. Taken together, these results suggest that
+                                                                            qualitative measures [38]. A second limitation is the possibility
+     while visits to the platform increased, many visits were brief
+                                                                            of a self-selection bias. When participants voluntarily participate
+     and allowed only limited, surface-level engagement.
+                                                                            in a study, they are likely to have similar attitudes and traits,
+     Importantly, the growth in the number of visits was largely
+                                                                            compromising sample diversity [64]. On the one hand, this was
+     accounted for by social media campaigns (ie, the LONDI
+                                                                            not a crucial point for this study, as its goal was to target a very
+     Instagram and Facebook accounts). This stresses the importance
+                                                                            specific population, namely, German speakers who have a
+     of instrumentalizing social media to attract visitors. Notably,
+                                                                            special interest in supporting children with LDs. On the other
+     this growth was entirely not accounted for by referrals from AI
+                                                                            hand, this limits the findings’ external validity. Therefore,
+     assistants. This could be the result of the period of data
+                                                                            further similar evaluations targeting different populations are
+     collection ending in early 2025. European-wide data show that
+                                                                            needed, particularly for the interpretation of the RE-AIM
+     adults used AI less frequently than adolescents and young adults
+                                                                            adoption and reach dimensions. A third limitation is the smaller
+     in 2025 [60]. To examine if these changes occur in the future,
+                                                                            number of participants (n=160) used to evaluate the adoption
+     further endeavors should be made to examine changes in AI
+                                                                            dimension, likely due to the smaller number of participants
+     assistant referrals over time. Moreover, the written content of
+                                                                            completing the help system process and answering the respective
+     the revised platform version does not differ from the content of
+                                                                            questionnaire. While this limits this dimension’s generalizability,
+     the previous version. Rather, the versions differ in their design
+                                                                            the other dimensions were measured with larger sample sizes
+     (ie, the new version is more suitable for smartphone use, features
+                                                                            (eg, N=37,133 for implementation), contributing to the current
+     more infographics, and the help system’s design was simplified,
+                                                                            study’s strength. A fourth limitation is that the platform’s impact
+     and instructional tutorials were added). This stresses the
+                                                                            on children’s academic outcomes was not measured (ie, the
+     importance of creating a user-friendly design to attract visitors.
+                                                                            RE-AIM effectiveness dimension). A recent systematic review
+     Another notable result was the increase in the number of visits        has shown that psychoeducational LD interventions targeting
+     from the United States, Canada, and Ireland, even though the           adults, namely parents, are associated with improvements in
+     platform’s content is entirely in German. This is surprising, as       children’s academic, behavioral, and social outcomes [65]. Thus,
+     the number of users from these countries exceeded the number           a future study, with a different methodological and analytical
+     of users from Austria and Switzerland, where German is an              focus, could assess effectiveness by recruiting families and
+     official language [61]. One explanation for this could be that         conducting premeasurements and postmeasurements.
+     users were using a virtual private network, which can make it
+     seem as if users are using the platform from a different location
+                                                                            Conclusions
+     [62]. Another explanation could be that the platform was read          While the influx of digital health brings many benefits, it also
+     in different languages using machine translation (eg, the Google       increases the risk of misinformation and misconceptions. Digital
+     Translate browser extension). Machine translation is often             health tools developed by professionals and academic
+     favored over professional translation, the latter being much           institutions can potentially combat these risks, but they must
+     more resource-intensive and time-consuming [63]. However,              be rigorously assessed. This study assessed the LONDI platform,
+     machine translation is not suitable for the LONDI platform, as         based on the following 4 dimensions of the RE-AIM framework:
+     a lot of its content is tailored to the needs of German residents      reach, adoption, implementation, and maintenance. Results from
+     (eg, specific information on the German school system). Thus,          both web analytics and UX measurements indicated a positive
+     further endeavors should be made to maintain the growth in             public health contribution in all but the implementation
+     user traffic and to obtain the resources to professionally translate   dimension. Specifically, users did not spend enough time on
+     and adapt its content to other languages.                              pages to read their content and did not engage with the
+                                                                            platform’s chatbot as expected. Standard benchmarks for
+     Limitations                                                            engagement with digital health chatbots are needed. Further
+     This study is not without its limitations. One limitation is           research is needed to verify if reading times depend on whether
+     inherent in the use of web analytics. While web analytics offer        users are new or returning, if there is a ceiling effect for time
+     valuable insights, it is not possible to use them to infer actual      spent on pages, and if a more complex chatbot will lead to more
+     engagement with platform content or users’ reading                     engagement. As digital health continues to expand, more
+     comprehension. In particular, the results concerning reading           assessment studies are essential to ensure these tools perform
+     times and chatbot engagement need to be interpreted with               as intended.
+     caution, especially since there are no standard benchmarks for
+
+
+     https://www.jmir.org/2026/1/e64903                                                                    J Med Internet Res 2026 | vol. 28 | e64903 | p. 9
+                                                                                                                  (page number not for citation purposes)
+XSL• FO
+RenderX
+
+<a id="pdf-p10"></a>
+### [PDF p.10] JOURNAL OF MEDICAL INTERNET RESEARCH Weinreich et al
+- Locator: `R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.pdf` · página **10** / 13
+
+JOURNAL OF MEDICAL INTERNET RESEARCH                                                                                         Weinreich et al
+
+     Acknowledgments
+     The authors declare that artificial intelligence (AI) tools were used to assist the translation of the texts included in the appended
+     figures from German to English, and to suggest relevant references.
+
+     Data Availability
+     The datasets generated and analyzed during this study are available from the corresponding author on reasonable request.
+
+     Funding
+     This work was part of the collaborative project: evaluation, implementation, and dissemination of the online platform for the
+     diagnosis and support of children with specific developmental disorders of academic skills (LONDI-2). The project was fully
+     funded by the German Federal Ministry of Education and Research (grant numbers 01GJ2101A and 01GJ2101B).
+
+     Authors' Contributions
+     LW conceptualized the manuscript, set up data collection, wrote most of the manuscript, and analyzed the data; LMvK assisted
+     with manuscript conceptualization, data analyses, and writing; BW, HLH, SV, and OH assisted with data collection; GS-K
+     provided supervision and feedback; and KM assisted with manuscript conceptualization and provided supervision and feedback.
+
+     Conflicts of Interest
+     None declared.
+
+     Multimedia Appendix 1
+     Supplementary tables and figures detailing research design, user demographics, experience questionnaires, estimated reading
+     times, and software screenshots.
+     [DOCX File , 1163 KB-Multimedia Appendix 1]
+
+     References
+     1.     Abernethy A, Adams L, Barrett M, Bechtel C, Brennan P, Butte A, et al. The promise of digital health: then, now, and the
+            future. NAM Perspect. 2022. [FREE Full text] [doi: 10.31478/202206e] [Medline: 36177208]
+     2.     Global Strategy on Digital Health 2020-2025: Digital Health and Innovation. Geneva, Switzerland. World Health
+            Organization; 2021.
+     3.     Digital Health Trends 2024: Implications for Research and Patient Care. Geneva, Switzerland. IQVIA Institute for Human
+            Data Science; 2024.
+     4.     Landi H. Digital health venture funding hit $10.1B in 2024 as investors focused on earlier-stage dealmaking. Fierce
+            Healthcare. URL: https://www.fiercehealthcare.com/digital-health/
+            digital-health-venture-funding-hit-101b-2024-investors-focused-earlier-stage-deals [accessed 2026-06-25]
+     5.     Adams K. How did digital health investors view this year's funding environment—and what do they predict for 2025?
+            MedCity News. URL: https://medcitynews.com/2024/12/digital-health-investment-funding/ [accessed 2025-07-12]
+     6.     Laymouna M, Ma Y, Lessard D, Schuster T, Engler K, Lebouché B. Roles, users, benefits, and limitations of chatbots in
+            health care: rapid review. J Med Internet Res. 2024;26:e56930. [FREE Full text] [doi: 10.2196/56930] [Medline: 39042446]
+     7.     Wroblewski K. What is a FAQ chatbot? benefits, types and use cases. Tidio Blog. 2024. URL: https://www.tidio.com/blog/
+            faq-chatbot/ [accessed 2026-06-25]
+     8.     Frank SR. Digital health care—the convergence of health care and the internet. J Ambul Care Manage. 2000;23(2):8-17.
+            [doi: 10.1097/00004479-200004000-00003]
+     9.     Van Meter A, Agrawal N. LovesCompany: evaluating the safety and feasibility of a mental health-focused online community
+            for adolescents. J Child Adolesc Ment Health. 2022;34(1-3):83-100. [FREE Full text] [doi: 10.2989/17280583.2023.2283030]
+            [Medline: 38504652]
+     10.    Van Meter AR, Birnbaum ML, Rizvi A, Kane JM. Online help-seeking prior to diagnosis: can web-based resources reduce
+            the duration of untreated mood disorders in young people? J Affect Disord. 2019;252:130-134. [doi:
+            10.1016/j.jad.2019.04.019] [Medline: 30981056]
+     11.    Schulte‐Körne G. Annotation: genetics of reading and spelling disorder. J Child Psychol Psychiatry. 2003;42(8):985-997.
+            [doi: 10.1111/1469-7610.00797]
+     12.    Hayes A, Dombrowski E, Shefcyk A, Bulat J. Learning Disabilities Screening and Evaluation Guide for Low- and
+            Middle-Income Countries. Research Triangle Park, NC. RTI Press; 2018.
+     13.    Nagata JM, Huang O, Hur JO, Li EJ, Helmer CK, Weinstein E, et al. Health benefits of social media use in adolescents
+            and young adults. Curr Pediatr Rep. 2024;13(1):22. [doi: 10.1007/s40124-025-00357-7] [Medline: 40823382]
+     14.    Melchior C, Oliveira M. Health-related fake news on social media platforms: a systematic literature review. New Media
+            Soc. 2021;24(6):1500-1522. [doi: 10.1177/14614448211038762]
+
+     https://www.jmir.org/2026/1/e64903                                                               J Med Internet Res 2026 | vol. 28 | e64903 | p. 10
+                                                                                                              (page number not for citation purposes)
+XSL• FO
+RenderX
+
+<a id="pdf-p11"></a>
+### [PDF p.11] JOURNAL OF MEDICAL INTERNET RESEARCH Weinreich et al
+- Locator: `R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.pdf` · página **11** / 13
+
+JOURNAL OF MEDICAL INTERNET RESEARCH                                                                                     Weinreich et al
+
+     15.    Mathews SC, McShea MJ, Hanley CL, Ravitz A, Labrique AB, Cohen AB. Digital health: a path to validation. NPJ Digit
+            Med. 2019;2(1):1-9. [FREE Full text] [doi: 10.1038/s41746-019-0111-3] [Medline: 31304384]
+     16.    Glasgow RE, Vogt TM, Boles SM. Evaluating the public health impact of health promotion interventions: the RE-AIM
+            framework. Am J Public Health. 1999;89(9):1322-1327. [doi: 10.2105/ajph.89.9.1322] [Medline: 10474547]
+     17.    Carlfjord S, Lindberg M, Andersson A. Sustained use of a tool for lifestyle intervention implemented in primary health
+            care: a 2-year follow-up. J Eval Clin Pract. 2013;19(2):327-334. [doi: 10.1111/j.1365-2753.2012.01827.x] [Medline:
+            22332821]
+     18.    Dunton GF, Liao Y, Grana R, Lagloire R, Riggs N, Chou C, et al. State-wide dissemination of a school-based nutrition
+            education programme: a RE-AIM (reach, efficacy, adoption, implementation, maintenance) analysis. Public Health Nutr.
+            2014;17(2):422-430. [FREE Full text] [doi: 10.1017/S1368980012005186] [Medline: 23218458]
+     19.    Lee RE, Reese-Smith JY, Mama SK, Medina AV, Wolfe KL, Estabrooks PA. Reach and representativeness of ethnic
+            minority women in the health is power study: a longitudinal analysis. Transl Behav Med. 2017;7(1):106-114. [FREE Full
+            text] [doi: 10.1007/s13142-016-0385-9] [Medline: 27256575]
+     20.    Glasgow RE, Harden SM, Gaglio B, Rabin B, Smith ML, Porter GC, et al. RE-AIM planning and evaluation framework:
+            adapting to new science and practice with a 20-year review. Front Public Health. 2019;7:64. [FREE Full text] [doi:
+            10.3389/fpubh.2019.00064] [Medline: 30984733]
+     21.    Fuller TE, Pong DD, Piniella N, Pardo M, Bessa N, Yoon C, et al. Interactive digital health tools to engage patients and
+            caregivers in discharge preparation: implementation study. J Med Internet Res. 2020;22(4):1-9. [FREE Full text] [doi:
+            10.2196/15573] [Medline: 32343248]
+     22.    Matomo Analytics. URL: https://matomo.org/ [accessed 2026-06-25]
+     23.    Weinreich L, Metz G, Witzel B, Hermansson O, Dümig P, Schulte-Körne G, et al. Evaluating a German learning disorders
+            platform using the RE-AIM framework. Heliyon. 2024;10(21):e39968. [FREE Full text] [doi: 10.1016/j.heliyon.2024.e39968]
+            [Medline: 39553671]
+     24.    Lang AL, Hohmuth N, Višković V, Konigorski S, Scholz S, Balzer F, et al. COVID-19 vaccine effectiveness and digital
+            pandemic surveillance in germany (eCOV Study): web application-based prospective observational cohort study. J Med
+            Internet Res. 2024;26:1-18. [FREE Full text] [doi: 10.2196/47070] [Medline: 38833299]
+     25.    Metz G, Roosjen H, Zweers W, Crutzen R. Evaluating use of web-based interventions: an example of a Dutch sexual health
+            intervention. Health Promot Int. 2023;38(4):daab190. [FREE Full text] [Medline: 37596929]
+     26.    Brysbaert M. How many words do we read per minute? A review and meta-analysis of reading rate. J Mem Lang.
+            2019;109:104047. [doi: 10.1016/j.jml.2019.104047]
+     27.    Rachi H. Make reading time sexy again: how this overlooked metric could unlock huge comms success. React & Share
+            Blog. 2021. URL: https://www.reactandshare.com/blog/
+            make-reading-time-sexy-again-how-this-overlooked-metric-could-unlock-huge-comms-success#42a708d7 [accessed
+            2026-06-25]
+     28.    Oertel C, Castellano G, Chetouani M, Nasir J, Obaid M, Pelachaud C, et al. Engagement in human-agent interaction: an
+            overview. Front Robot AI. 2020;7:92. [FREE Full text] [doi: 10.3389/frobt.2020.00092] [Medline: 33501259]
+     29.    Gbollie EF, Bantjes J, Jarvis L, Swandevelder S, du Plessis J, Shadwell R, et al. Intention to use digital mental health
+            solutions: a cross-sectional survey of university students attitudes and perceptions toward online therapy, mental health
+            apps, and chatbots. Digit Health. 2023;9:1-19. [FREE Full text] [doi: 10.1177/20552076231216559] [Medline: 38047161]
+     30.    Luk TT, Lui JHT, Wang MP. Efficacy, usability, and acceptability of a chatbot for promoting COVID-19 vaccination in
+            unvaccinated or booster-hesitant young adults: pre-post pilot study. J Med Internet Res. 2022;24(10):e39063. [FREE Full
+            text] [doi: 10.2196/39063] [Medline: 36179132]
+     31.    Chen AT, Swaminathan A, Kearns WR, Alberts NM, Law EF, Palermo TM. Understanding user experience: exploring
+            participants' messages with a web-based behavioral health intervention for adolescents with chronic pain. J Med Internet
+            Res. 2019;21(4):e11756. [FREE Full text] [doi: 10.2196/11756] [Medline: 30985288]
+     32.    Alexandrou C, Rutberg S, Johansson L, Lindqvist A, Müssener U, Löf M. User experiences of an app-based mHealth
+            intervention (MINISTOP 2.0) integrated in Swedish primary child healthcare among Swedish-, Somali- and Arabic-speaking
+            parents and child healthcare nurses: a qualitative study. Digit Health. 2023;9:1-12. [FREE Full text] [doi:
+            10.1177/20552076231203630] [Medline: 37766904]
+     33.    Mayer G, Hummel S, Oetjen N, Gronewold N, Bubolz S, Blankenhagel K, et al. User experience and acceptance of patients
+            and healthy adults testing a personalized self-management app for depression: a non-randomized mixed-methods feasibility
+            study. Digit Health. 2022;8:1-17. [FREE Full text] [doi: 10.1177/20552076221091353] [Medline: 35425641]
+     34.    Wootton SL, Dale MT, Tian Y, King M, Alison JA, Chan ASL, et al. User experience testing of the mobile pulmonary
+            rehabilitation (m-PR) app in people with chronic obstructive pulmonary disease. Digit Health. 2024;10:1-11. [FREE Full
+            text] [doi: 10.1177/20552076241237381] [Medline: 38559582]
+     35.    Newton AS, March S, Gehring ND, Rowe AK, Radomski AD. Establishing a working definition of user experience for
+            eHealth interventions of self-reported user experience measures with eHealth researchers and adolescents: scoping review.
+            J Med Internet Res. 2021;23(12):1-27. [FREE Full text] [doi: 10.2196/25012] [Medline: 34860671]
+
+
+     https://www.jmir.org/2026/1/e64903                                                           J Med Internet Res 2026 | vol. 28 | e64903 | p. 11
+                                                                                                          (page number not for citation purposes)
+XSL• FO
+RenderX
+
+<a id="pdf-p12"></a>
+### [PDF p.12] JOURNAL OF MEDICAL INTERNET RESEARCH Weinreich et al
+- Locator: `R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.pdf` · página **12** / 13
+
+JOURNAL OF MEDICAL INTERNET RESEARCH                                                                                      Weinreich et al
+
+     36.    Metz G, Thielmann RRLC, Roosjen H, Crutzen R. Evaluating the impact of a Dutch sexual health intervention for adolescents:
+            think-aloud and semistructured interview study. JMIR Form Res. 2024;8:e48453. [FREE Full text] [doi: 10.2196/48453]
+            [Medline: 39259573]
+     37.    LONDI (Lernstörungen Online – Plattform für Diagnostik und Intervention). 2024. URL: https://www.londi.de/ [accessed
+            2026-06-25]
+     38.    Hermansson O, Dümig P, Witzel B, Weinreich L, Volkmer S, Schulte-Körne G, et al. Evaluating a website on learning
+            disorders for parents and learning therapists: observational mixed methods study. JMIR Form Res. 2025;9:e68365. [FREE
+            Full text] [doi: 10.2196/68365] [Medline: 41004796]
+     39.    Abd-Alrazaq A, Safi Z, Alajlani M, Warren J, Househ M, Denecke K. Technical metrics used to evaluate health care
+            chatbots: scoping review. J Med Internet Res. 2020;22(6):e18301. [FREE Full text] [doi: 10.2196/18301] [Medline:
+            32442157]
+     40.    Schrepp M, Hinderks A, Thomaschewski J. Design and evaluation of a short version of the user experience questionnaire
+            (UEQ-S). Int J Interact Multimed Artif Intell. 2017;4(6):103-108. [doi: 10.9781/ijimai.2017.09.001]
+     41.    Bhattacherjee A. Understanding information systems continuance: an expectation-confirmation model. MIS Quarterly.
+            2001;25(3):351-370. [doi: 10.2307/3250921]
+     42.    ArtiBot.ai. 2026. URL: https://www.artibot.ai/ [accessed 2026-06-25]
+     43.    Zhou L, Gao J, Li D, Shum HY. The design and implementation of XiaoIce, an empathetic social chatbot. Comput Linguist.
+            2020;46(1):53-93. [doi: 10.1162/coli_a_00368]
+     44.    Chatbot analyticskey metrics you must track in 2025. Tidio. 2025. URL: https://www.tidio.com/blog/chatbot-analytics/
+            [accessed 2026-06-25]
+     45.    Website traffic growth. Geckoboard KPI Examples. URL: https://www.geckoboard.com/best-practice/kpi-examples/
+            website-traffic-growth/ [accessed 2026-06-25]
+     46.    Versorgungszahlen 2024: Schulpsychologinnen und Schulpsychologen in den Bundesländern. URL: https://www.
+            bdp-verband.de/fileadmin/user_upload/BDP/verband/Untergliederungen/Sektionen/Schulpsychologie/PDF/
+            2024_versorgungszahlen.pdf [accessed 2026-06-25]
+     47.    Statistisches Bundesamt. Population by age groups from 2011 to 2022. Destatis. URL: https://www.destatis.de/EN/Themes/
+            Society-Environment/Population/Current-Population/Tables/lrbev01ga.html [accessed 2026-06-25]
+     48.    Hinderks A, Schrepp M, Thomaschewski J. A benchmark for the short version of the User Experience Questionnaire. 2018.
+            Presented at: Proceedings of the 14th International Conference on Web Information Systems and Technologies (WEBIST
+            2018), Volume 1: APMDWE; September 18-20, 2018; Seville, Spain. URL: https://www.scitepress.org/Papers/2018/71883/
+            71883.pdf [doi: 10.5220/0007188303730377]
+     49.    Federal Association for Dyslexia and Dyscalculia. Bundesverband Legasthenie und Dyskalkulie e.V. URL: https://www.
+            bvl-legasthenie.de/ [accessed 2026-06-25]
+     50.    Willson A. 12 reasons your website can have a high bounce rate. Search Engine Journal. URL: https://www.
+            searchenginejournal.com/website-bounce-rate/332439/#close [accessed 2026-06-25]
+     51.    Li Q, Morris MR, Fourney A, Larson K, Reinecke K. The impact of web browser reader views on reading speed and user
+            experience. 2019. Presented at: Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems; May
+            4-9, 2019; Glasgow. [doi: 10.1145/3290605.3300754]
+     52.    The screen time paradox: how social media is both eroding and revitalizing reading 2025. Medium. URL: https://medium.
+            com/%40adnanmasood/the-screen-time-paradox-how-social-media-is-both-eroding-and-revitalizing-reading-79b2d04a5a32
+            [accessed 2026-06-25]
+     53.    Baron NS, Mangen A. Doing the reading: the decline of long long-form reading in higher education. Poetics Today.
+            2021;42(2):253-279. [FREE Full text] [doi: 10.1215/03335372-8883248]
+     54.    Jensen RE, Roe A, Blikstad-Balas M. The smell of paper or the shine of a screen? Students’ reading comprehension, text
+            processing, and attitudes when reading on paper and screen. Comput Educ. 2024;219:105107. [doi:
+            10.1016/j.compedu.2024.105107]
+     55.    Moran K. How people read online: new and old findings. Nielsen Norman Group. 2020. URL: https://www.nngroup.com/
+            articles/how-people-read-online/?lm=how-little-do-users-read&pt=article [accessed 2026-06-25]
+     56.    Groot Kormelink T, Costera Meijer I. A user perspective on time spent: temporal experiences of everyday news use. Journal
+            Stud. 2019;21(2):271-286. [doi: 10.1080/1461670x.2019.1639538]
+     57.    Chang S, Ciesla E, Finch M, Fishkin J, Gelauff LL, Goel A, et al. Meta Community Forum: Results Analysis. Stanford
+            Deliberative Democracy Lab. 2024. URL: https://fsi.stanford.edu/publication/
+            meta-community-forum-results-analysis-april-2024 [accessed 2026-06-25]
+     58.    Willermark S, Íslind AS, Appelgren T, Eklund Taavo M. The polite pop-up: an experimental study of pop-up design
+            characteristics and user experience. 2020. Presented at: Proceedings of the 53rd Hawaii International Conference on System
+            Sciences (HICSS-53); January 7-10, 2020; Maui. [doi: 10.24251/hicss.2020.514]
+     59.    Vaughan L, Yang R. Web traffic and organization performance measures: relationships and data sources examined. J
+            Informetr. 2013;7(3):699-711. [doi: 10.1016/j.joi.2013.04.005]
+
+
+     https://www.jmir.org/2026/1/e64903                                                            J Med Internet Res 2026 | vol. 28 | e64903 | p. 12
+                                                                                                           (page number not for citation purposes)
+XSL• FO
+RenderX
+
+<a id="pdf-p13"></a>
+### [PDF p.13] JOURNAL OF MEDICAL INTERNET RESEARCH Weinreich et al
+- Locator: `R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.pdf` · página **13** / 13
+
+JOURNAL OF MEDICAL INTERNET RESEARCH                                                                                             Weinreich et al
+
+     60.    64% of 16-24-year-olds used AI in 2025. Eurostat News Articles. URL: https://ec.europa.eu/eurostat/web/
+            products-eurostat-news/w/edn-20260210-1 [accessed 2026-06-25]
+     61.    German speaking countries 2025. World Population Review. URL: https://worldpopulationreview.com/country-rankings/
+            german-speaking-countries [accessed 2026-06-25]
+     62.    Ferguson P, Huston G. What is a VPN? Potaroo Network Papers. 1998. URL: https://www.potaroo.net/papers/1998-3-vpn/
+            vpn.pdf [accessed 2026-06-25]
+     63.    Kovacs G, DeNero J. Measuring the effects of human and machine translation on website engagement. 2022. Presented at:
+            Proceedings of the 15th Biennial Conference of the Association for Machine Translation in the Americas (Volume 1:
+            Research Track); September 12-16, 2022; Orlando, FL. URL: https://ipj.dreamhosters.com/wp-content/uploads/issues/1998/
+            ipj01-1.pdf
+     64.    Hiratsuka T. The volunteer participation paradox: Ethical tensions between self-selection and targeted sampling. Res
+            Methods Appl Linguist. 2025;4(2):100206. [doi: 10.1016/j.rmal.2025.100206]
+     65.    Guerra GC, Positano MT, Sperati A, Passaquindici I, Logrieco MG, Lionetti F, et al. Supporting parents of children with
+            learning disorders: a systematic review of intervention strategies. Front Psychol. 2025;16:1-12. [FREE Full text] [doi:
+            10.3389/fpsyg.2025.1536894] [Medline: 40519817]
+
+     Abbreviations
+              AI: artificial intelligence
+              CPS: conversation turns per session
+              FAQ: frequently asked question
+              GDPR: General Data Protection Regulation
+              LD: learning disorder
+              LONDI: Lernstörungen Online-Diagnostik und Intervention
+              RE-AIM: reach, effectiveness, adoption, implementation, and maintenance
+              UX: user experience
+              WPM: words per minute
+
+
+
+
+              Edited by A Stone; submitted 30.Jan.2026; peer-reviewed by L Baumann, M Chakit; comments to author 06.Mar.2026; accepted
+              11.May.2026; published 02.Jul.2026
+              Please cite as:
+              Weinreich L, von Kontz L-M, Witzel B, Hermansson O, Laura Hampe H, Volkmer S, Schulte-Körne G, Moll K
+              Assessment of a Digital Health Platform Using Web Analytics and User Experience Measurements: Quantitative Study Based on
+              RE-AIM
+              J Med Internet Res 2026;28:e64903
+              URL: https://www.jmir.org/2026/1/e64903
+              doi: 10.2196/64903
+              PMID:
+
+
+
+
+     ©Lior Weinreich, Louisa-Marie von Kontz, Björn Witzel, Olga Hermansson, Hanna Laura Hampe, Susanne Volkmer, Gerd
+     Schulte-Körne, Kristina Moll. Originally published in the Journal of Medical Internet Research (https://www.jmir.org), 02.Jul.2026.
+     This is an open-access article distributed under the terms of the Creative Commons Attribution License
+     (https://creativecommons.org/licenses/by/4.0/), which permits unrestricted use, distribution, and reproduction in any medium,
+     provided the original work, first published in the Journal of Medical Internet Research (ISSN 1438-8871), is properly cited. The
+     complete bibliographic information, a link to the original publication on https://www.jmir.org/, as well as this copyright and
+     license information must be included.
+
+
+
+
+     https://www.jmir.org/2026/1/e64903                                                                   J Med Internet Res 2026 | vol. 28 | e64903 | p. 13
+                                                                                                                  (page number not for citation purposes)
+XSL• FO
+RenderX

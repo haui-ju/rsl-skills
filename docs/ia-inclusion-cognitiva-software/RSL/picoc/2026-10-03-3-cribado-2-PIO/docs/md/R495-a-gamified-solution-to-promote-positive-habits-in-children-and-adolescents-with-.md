@@ -1,0 +1,1408 @@
+# Journal on Interactive Systems, 2025, 16:1 doi: 10.5753/jis.2025.5644
+
+> Fuente PDF: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · técnica **locator index** (página + ancla) + chunks Graphify
+
+## Metadata
+- Stem: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-`
+- PDF: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf`
+- DOI: `10.5753/jis.2025.5644`
+- Pages: `17`
+- Structured_at: `2026-10-03T23:23:18+00:00`
+- Technique: `pdf-page-locators + heading-chunks`
+
+## Locator index (qué hay y en qué página del PDF)
+
+| Kind | Label | PDF page | MD anchor |
+|------|-------|----------|-----------|
+| abstract | Abstract / blurb | 1 | `#abstract` |
+| section | 3.1 Design Stage | 3 | `#p3-3-1-design-stage` |
+| section | 3.2 Development Stage | 5 | `#p5-3-2-development-stage` |
+| section | 5 Available | 7 | `#p7-5-available` |
+| section | 3.3 Evaluation Stage | 8 | `#p8-3-3-evaluation-stage` |
+| section | 3.3.1 Player Experience of Need Satisfaction - PENS | 8 | `#p8-3-3-1-player-experience-of-need-satisfaction-pens` |
+| section | 3.3.2 Contrast analysis - Test 1 | 9 | `#p9-3-3-2-contrast-analysis-test-1` |
+| section | 3.3.4 Test with Validator tool | 10 | `#p10-3-3-4-test-with-validator-tool` |
+| section | 3.3.7 Evaluation Discussion | 14 | `#p14-3-3-7-evaluation-discussion` |
+| concept | Gamified Web Solution | 1 | `#concept-gamified-web-solution` |
+| concept | Task Complete | 1 | `#concept-task-complete` |
+| concept | Usability | ? | `#concept-usability` |
+| concept | Game Evaluation | 1 | `#concept-game-evaluation` |
+| concept | Accessibility | 1 | `#concept-accessibility` |
+| concept | Intellectual Disability | 1 | `#concept-intellectual-disability` |
+| concept | R495 | ? | `#concept-r495` |
+| concept | gamified | ? | `#concept-gamified` |
+| concept | solution | ? | `#concept-solution` |
+| concept | promote | ? | `#concept-promote` |
+| concept | positive | ? | `#concept-positive` |
+| concept | habits | ? | `#concept-habits` |
+| concept | children | ? | `#concept-children` |
+| concept | adolescents | ? | `#concept-adolescents` |
+| concept | with | ? | `#concept-with` |
+| finding | The solution converts daily tasks into motivational elements, motivating users through vir… | 1 | `#finding-the-solution-converts-daily-tasks-into-m` |
+| finding | It was created using User-Centered Design principles and was developed and tested with a f… | 1 | `#finding-it-was-created-using-user-centered-desig` |
+| finding | The project incorporated the PENS model and Web Content Accessibility Guidelines (WCAG) to… | 1 | `#finding-the-project-incorporated-the-pens-model` |
+| finding | We also performed a heuristic evaluation aided with Large Language Models in some tasks to… | 1 | `#finding-we-also-performed-a-heuristic-evaluation` |
+| page | p.1: Journal on Interactive Systems, 2025, 16:1 doi: 10.5753/jis.2025.5644 | 1 | `#pdf-p1` |
+| page | p.2: This analysis not only aids the quality of our solution, but as levels, rewards, and compe | 2 | `#pdf-p2` |
+| page | p.3: 3.1 Design Stage | 3 | `#pdf-p3` |
+| page | p.4: spectrum, who likes digital games. João has and cost-effective, ensuring that Carla could  | 4 | `#pdf-p4` |
+| page | p.5: Figure 4. Inventory screen (in Portuguese) - Main menu. Source: | 5 | `#pdf-p5` |
+| page | p.6: while ensuring an efficient and sustainable implementation 3.2.1 Project adherence to WCAG | 6 | `#pdf-p6` |
+| page | p.7: Figure 9 illustrates how this strategy is applied in the presented; | 7 | `#pdf-p7` |
+| page | p.8: – Skills that can be improved: Memorization, To apply the PENS model, the solution was exa | 8 | `#pdf-p8` |
+| page | p.9: the player controls an avatar that evolves as tasks 1.4.3: Minimum contrast (AA) and 1.4.6 | 9 | `#pdf-p9` |
+| page | p.10: All the errors identified by the Validator tool were | 10 | `#pdf-p10` |
+| page | p.11: Complete website, using the provided images that Here, we present a consolidation of the i | 11 | `#pdf-p11` |
+| page | p.12: • No feedback is given about what fields are required | 12 | `#pdf-p12` |
+| page | p.13: • “Fechar/Close” is used with the intention to cancel • On screen 2, the “Close” button is | 13 | `#pdf-p13` |
+| page | p.14: of said method, and the suggestions from the AI may not but also helps create a more inclu | 14 | `#pdf-p14` |
+| page | p.15: and deliver entertainment and utility to an often neglected Authors’ Contributions | 15 | `#pdf-p15` |
+| page | p.16: virtual environment. Scientific Reports, 10(1):3144. DOI: pages 461–477, Cham. Springer Na | 16 | `#pdf-p16` |
+| page | p.17: mapping. Information and software technology, 57:157– design with ai. Interactions, 31(1): | 17 | `#pdf-p17` |
+
+## Abstract
+<a id="abstract"></a>
+
+This paper outlines the development and assessment of a gamified solution called Task Complete, designed to enhance productivity and promote positive habits, particularly among individuals with Intellectual Disabilities. The solution converts daily tasks into motivational elements, motivating users through virtual rewards. It was created using User-Centered Design principles and was developed and tested with a focus on accessibility and usability. The project incorporated the PENS model and Web Content Accessibility Guidelines (WCAG) to ensure the solution is inclusive and suitable for a wide range of user profiles. We also performed a heuristic evaluation aided with Large Language Models in some tasks to identify issues and create a better solution.
+
+## Keywords
+
+- Gamified Web Solution
+- Task Complete
+- Usability
+- Game Evaluation
+- Accessibility
+- Intellectual Disability
+
+## Concept index (graph hooks + página)
+
+<a id="concept-gamified-web-solution"></a>
+### [PDF p.1] Concept: Gamified Web Solution
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **1**
+
+<a id="concept-task-complete"></a>
+### [PDF p.1] Concept: Task Complete
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **1**
+
+<a id="concept-usability"></a>
+### [PDF p.?] Concept: Usability
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **?**
+
+<a id="concept-game-evaluation"></a>
+### [PDF p.1] Concept: Game Evaluation
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **1**
+
+<a id="concept-accessibility"></a>
+### [PDF p.1] Concept: Accessibility
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **1**
+
+<a id="concept-intellectual-disability"></a>
+### [PDF p.1] Concept: Intellectual Disability
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **1**
+
+<a id="concept-r495"></a>
+### [PDF p.?] Concept: R495
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **?**
+
+<a id="concept-gamified"></a>
+### [PDF p.?] Concept: gamified
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **?**
+
+<a id="concept-solution"></a>
+### [PDF p.?] Concept: solution
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **?**
+
+<a id="concept-promote"></a>
+### [PDF p.?] Concept: promote
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **?**
+
+<a id="concept-positive"></a>
+### [PDF p.?] Concept: positive
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **?**
+
+<a id="concept-habits"></a>
+### [PDF p.?] Concept: habits
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **?**
+
+<a id="concept-children"></a>
+### [PDF p.?] Concept: children
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **?**
+
+<a id="concept-adolescents"></a>
+### [PDF p.?] Concept: adolescents
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **?**
+
+<a id="concept-with"></a>
+### [PDF p.?] Concept: with
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **?**
+
+
+## Findings index (graph hooks + página)
+
+<a id="finding-the-solution-converts-daily-tasks-into-m"></a>
+### [PDF p.1] Finding: The solution converts daily tasks into motivational elements, motivating users through virtual rewards.
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **1**
+
+<a id="finding-it-was-created-using-user-centered-desig"></a>
+### [PDF p.1] Finding: It was created using User-Centered Design principles and was developed and tested with a focus on accessibility and usability.
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **1**
+
+<a id="finding-the-project-incorporated-the-pens-model"></a>
+### [PDF p.1] Finding: The project incorporated the PENS model and Web Content Accessibility Guidelines (WCAG) to ensure the solution is inclusive and suitable for a wide range of user profiles.
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **1**
+
+<a id="finding-we-also-performed-a-heuristic-evaluation"></a>
+### [PDF p.1] Finding: We also performed a heuristic evaluation aided with Large Language Models in some tasks to identify issues and create a better solution.
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **1**
+
+
+## Relevance hooks
+### Theme relevance: software engineering and accessibility
+### Theme relevance: cognitive accessibility and neurodiversity
+### Theme relevance: evaluation metrics and WCAG
+
+## Sections (detected in PDF)
+
+<a id="p3-3-1-design-stage"></a>
+### [PDF p.3] Section: 3.1 Design Stage
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **3** · ancla `#p3-3-1-design-stage`
+
+<a id="p5-3-2-development-stage"></a>
+### [PDF p.5] Section: 3.2 Development Stage
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **5** · ancla `#p5-3-2-development-stage`
+
+<a id="p7-5-available"></a>
+### [PDF p.7] Section: 5 Available
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **7** · ancla `#p7-5-available`
+
+<a id="p8-3-3-evaluation-stage"></a>
+### [PDF p.8] Section: 3.3 Evaluation Stage
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **8** · ancla `#p8-3-3-evaluation-stage`
+
+<a id="p8-3-3-1-player-experience-of-need-satisfaction-pens"></a>
+### [PDF p.8] Section: 3.3.1 Player Experience of Need Satisfaction - PENS
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **8** · ancla `#p8-3-3-1-player-experience-of-need-satisfaction-pens`
+
+<a id="p9-3-3-2-contrast-analysis-test-1"></a>
+### [PDF p.9] Section: 3.3.2 Contrast analysis - Test 1
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **9** · ancla `#p9-3-3-2-contrast-analysis-test-1`
+
+<a id="p10-3-3-4-test-with-validator-tool"></a>
+### [PDF p.10] Section: 3.3.4 Test with Validator tool
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **10** · ancla `#p10-3-3-4-test-with-validator-tool`
+
+<a id="p14-3-3-7-evaluation-discussion"></a>
+### [PDF p.14] Section: 3.3.7 Evaluation Discussion
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **14** · ancla `#p14-3-3-7-evaluation-discussion`
+
+
+## Page chunks (texto por página del PDF)
+
+_Cada heading es un nodo Graphify. El label incluye la página para volver al PDF sin releer todo._
+
+<a id="pdf-p1"></a>
+### [PDF p.1] Journal on Interactive Systems, 2025, 16:1 doi: 10.5753/jis.2025.5644
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **1** / 17
+
+Journal on Interactive Systems, 2025, 16:1 doi: 10.5753/jis.2025.5644
+ This work is licensed under a Creative Commons Attribution 4.0 International License.
+
+
+
+
+A gamified solution to promote positive habits in children and
+adolescents with Intellectual Disabilities
+Pedro Afonso F. Michalichem  [ University of São Paulo (USP) | darknighmare1@usp.br ]
+Leonardo Tórtoro Pereira  [ São Paulo State University (UNESP) | leonardo.t.pereira@unesp.br ]
+Kamila Rios da Hora Rodrigues   [ University of São Paulo (USP) | kamila.rios@icmc.usp.br ]
+  Institute of Mathematical and Computing Sciences, University of São Paulo, Avenida Trabalhador São-carlense, 400
+- Centro, São Carlos, SP, 13566-590, Brazil.
+
+Received: 05 March 2025 • Accepted: 19 September 2025 • Published: 22 September 2025
+
+Abstract: This paper outlines the development and assessment of a gamified solution called Task Complete,
+designed to enhance productivity and promote positive habits, particularly among individuals with Intellectual
+Disabilities. The solution converts daily tasks into motivational elements, motivating users through virtual rewards.
+It was created using User-Centered Design principles and was developed and tested with a focus on accessibility and
+usability. The project incorporated the PENS model and Web Content Accessibility Guidelines (WCAG) to ensure
+the solution is inclusive and suitable for a wide range of user profiles. We also performed a heuristic evaluation
+aided with Large Language Models in some tasks to identify issues and create a better solution.
+
+Keywords: Gamified Web Solution, Task Complete, Usability, Game Evaluation, Accessibility, Intellectual Disability.
+
+
+
+1 Introduction                                                                            Disabilities (ID)1 in completely working on good, helpful
+                                                                                          behaviors as they make their everyday activities somewhat
+Intellectual Disability (ID) is characterized by substantial                              more fun and interesting. The method involves obtaining
+limitations in cognitive functioning and behavioral                                       virtual coins for performing tasks, and then using those coins
+adaptation, affecting areas such as practical, interpersonal,                             to acquire virtual avatar accessories.
+and conceptual skills. This condition generally manifests                                    This project comes from working with the ACORDE
+itself in the early stages of development, before the age of 18                           Institution2 , which helps people with ID. ACORDE has tried
+[AAIDD, 2021]. ID involves restrictions in the development                                to improve its educational work by using things like digital
+of essential functions for understanding and interacting with                             games along with gamified setups.
+the environment and is observed in conditions such as                                        When designing and developing Task Complete, we
+Autism Spectrum Disorder (ASD) and Down Syndrome,                                         carefully considered accessibility requirements based on
+among others [Organization et al., 1992].                                                 the Web Content Accessibility Guidelines (WCAG) and
+                                                                                          the GAIA Recommendations [Pichiliani, 2020], which are
+   Gamification, in turn, involves using game design
+                                                                                          tailored to support children on the autism spectrum. By
+elements in non-game contexts [Deterding et al., 2011;
+                                                                                          integrating these guidelines and standards, we aimed to
+Marczewski, 2015], has been researched a lot in different
+                                                                                          improve the solution’s accessibility and create a more
+fields like health [Lewis et al., 2016], software creation                                engaging and inclusive experience for the user—referred to
+[Pedreira et al., 2015], as well as teaching [Bai et al., 2020].                          as the player in this context.
+It attempts to increase user motivation and engagement, as
+                                                                                             This paper is an extended version of the work presented
+incorporating enjoyable elements has an immediate effect on
+                                                                                          in the SBGAMES’24: Proceedings of the XXIII Brazilian
+these users.
+                                                                                          Symposium on Games and Digital Entertainment, titled –
+   It is widely viewed as a method to make various                                        Task Complete: A gamified solution to exercise positive
+tasks or activities more enjoyable as well as appealing by                                habits in players with Intellectual Disabilities [Michalichem
+incorporating many game elements like scoring, rewards,                                   et al., 2024]. We update the study with the heuristic
+challenges, and progression [Marczewski, 2015].                                           evaluation of the usability of the task “add task”, aided by
+   Planning and developing gamification is indeed a complex                               Large Language Model (LLM) solutions, to find issues and
+task, which has ultimately led to the emergence of a                                      recommendations for a better solution while providing a case
+field dedicated to carefully studying multiple methods for                                study for the use of these applications to help in usability
+gamifying both virtual and non-virtual environments. To                                   evaluation, as proposed by some recent works [Duan et al.,
+help developers, technicians, specialists, and researchers                                2024; Schmidt et al., 2024; Duan et al., 2023; Meinecke et al.,
+plan and implement gamification in certain situations, many                               2025].
+frameworks, methods, processes, and other similar strategies
+have been mindfully created over time [Mora et al., 2017].                                     1 Term used according to the Protocol for the Etiological Diagnosis of
+
+                                                                                          Intellectual Disability. Available at: https://www.gov.br/conitec/
+  This document introduces the Task Complete Web                                          pt-br/midias/relatorios/2020/20201203_relatorio_572_
+solution, considerately created as a particular option                                    pcdt_deficiencia-intelectual_.pdf.
+to especially help children and teens with Intellectual                                        2 Available at: https://institutoacorde.org.br/
+
+<a id="pdf-p2"></a>
+### [PDF p.2] This analysis not only aids the quality of our solution, but as levels, rewards, and competitions, to boost students’
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **2** / 17
+
+A gamified solution to promote positive habits in children and adolescents with Intellectual Disabilities   Michalichem, Pereira and Rodrigues 2025
+
+
+
+   This analysis not only aids the quality of our solution, but                  as levels, rewards, and competitions, to boost students’
+is also a novel study case in the literature for generative                      interest and motivation in learning.
+AI-assisted heuristic evaluation using Nielsen’s heuristics,                        Simões-Silva et al. [2022] highlight that gamification
+with the only similar work we found being [Meinecke et al.,                      can be beneficial for individuals with Autism Spectrum
+2025]. However, our analysis’ novelty lies in that their study                   Disorder (ASD), “which is a persistent neurodevelopmental
+gave the LLMs access to the application’s code, while we                         disorder that can be characterized briefly by deficits in verbal
+provided images like human evaluators are often provided.                        and non-verbal communication, difficulties in interaction,
+Furthermore, we propose a collaborative approach, showing                        and manifestation of stereotyped movements or interests”.
+how the LLM models may help humans to locate new issues.                         According to the authors, programs, software, or mobile
+Finally, we also compare the efficiency of different models                      applications designed for individuals with ASD should focus
+in our use case.                                                                 on developing intrapersonal skills (such as motivation) and
+   We also provide additions to the project’s adherence                          interpersonal/social skills.
+to GAIA recommendations [Pichiliani, 2020] and which                                da Cruz Netto et al. [2020] introduce the virtual
+skills can be improved in the target audience with its                           environment “Our Life”, created to help children with Down
+implementation. We also provide new contrast tests, new                          Syndrome memorize action sequences in their daily routines.
+system images, updated figures, and supplementary material                       The project involved a multidisciplinary team, and the
+with all steps from the heuristic evaluation.                                    effectiveness of the tool was evaluated with 30 children
+   The paper is divided as follows: Section 2 describes                          with Down Syndrome from a special education school for
+the related work, Section 3 describes the process of                             individuals with intellectual disabilities (APAE, acronym in
+building the Task Complete gamified application, Section                         Portuguese).
+4 brings a discussion about the importance of thinking                              The children were divided into two groups: experimental
+about accessibility in computational solutions, and Section                      (EG) and control (CG). The results showed that the EG
+5 describes the final considerations and future works.                           outperformed the CG, with the mean progress of the children
+                                                                                 in the EG being 81.82% higher. According to the authors, the
+                                                                                 playful activities incorporated into the virtual environment
+2     Related Works                                                              captured the children’s interest, encouraging them to have
+                                                                                 fun, test hypotheses, and question the sequences of actions
+The following works explore gamified platforms in diverse                        in their daily routines.
+settings or games created for individuals with intellectual                         Neves and Kanda [2016] present the findings of research
+disabilities.   It’s worth highlighting that our solution                        that developed two educational games for individuals with
+was tailored specifically for children and teenagers at the                      intellectual disabilities. The games were evaluated through
+ACORDE institution, an organization dedicated to providing                       usability tests conducted with students from an APAE. The
+afternoon educational programs for individuals with Down                         results showed that the games were well received by the
+Syndrome and Autism Spectrum Disorder [Michalichem                               students and are considered a promising tool for reinforcing
+et al., 2024].                                                                   learning among individuals with intellectual disabilities.
+   Hosseini et al. [2022] examine the impact of gamification                        Venturelli and Ferraz [2019] present the findings of
+on task performance using a between-group experimental                           research that explored the perspectives of teachers who work
+design in the context of the Covid-19 pandemic. Participants                     with children with intellectual disabilities regarding the use
+were asked to complete tasks related to: a) hygiene and                          of digital games to mediate mathematics instruction. The
+infection (e.g., handwashing, maintaining distance, etc.);                       research suggested that teachers hold positive views on
+b) routines (e.g., walking daily, socializing with friends,                      incorporating digital games into mathematics teaching for
+cleaning the house, etc.); and c) personal matters (e.g.,                        students with intellectual disabilities.
+learning something new, checking in with a friend, etc.).                           Mori et al. [2017] present research investigating the
+   According to the authors, gamification improved the                           impact of games on the development of memory and
+quality of work in task performance and subsequent                               attention in students with intellectual disabilities. The study
+submissions over time. Furthermore, it had a positive impact                     found that students who participated in recreational activities
+on timely deliveries.                                                            performed better on memory and attention tasks compared
+   Giacobo and de Souza [2023] introduce a gamified                              to those who did not engage in these activities. The authors
+Web solution designed to engage and motivate students to                         conclude that games can be an effective tool for enhancing
+complete assigned activities both inside and outside the                         these skills in students with intellectual disabilities.
+classroom, within the set deadlines, in an enjoyable, fun, and                      Finally, Jadán-Guerrero et al. [2023] conducted a review
+competitive manner. The solution incorporates gamification                       of 66 studies on gamification in inclusive education for
+elements such as levels, rewards, and competitions.                              children with disabilities. They found that terms such
+Preliminary results from a pilot study conducted with the                        as game-based learning, educational games, e-learning,
+solution indicated that it was well received by students,                        gamification, and serious games were commonly used in
+who showed increased motivation and engagement in the                            these studies. Additionally, they observed that this research
+proposed activities.                                                             is being conducted globally, with contributions from nearly
+   Domingos Filho and Vale [2017] introduce a gamified                           200 authors across various universities in regions such as
+solution aimed at teaching physics to young people and                           the USA, Europe, Brazil, and Mexico, and published in a
+adults. The project incorporates gamification elements, such                     wide range of outlets. Their review highlights that this is a
+
+<a id="pdf-p3"></a>
+### [PDF p.3] 3.1 Design Stage
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **3** / 17
+
+A gamified solution to promote positive habits in children and adolescents with Intellectual Disabilities                 Michalichem, Pereira and Rodrigues 2025
+
+
+
+                                                                                          3.1 Design Stage
+                                 Design Stage
+          Understand users’s needs           Understand system’s requirements             During this stage, as outlined in the Human-Computer
+       Create Personas based on surveys        Analyze studies                            Interaction (HCI) literature [Helen et al., 2019], designers
+       and the literature                      Analyze similar games (e.g.,
+       Carla - Adult pedagogue with ADHD       Habitica)                                  must assess the users’ needs and define the system’s intended
+       João - Teenager student in the                                                     requirements.
+       autism spectrum                                 Prototype screens
+       Maria - Adult dressmaker with low        Task, Habits, Bills, Inventory, Profile      To gather the application requirements, the studies
+       vision
+                                                                                          discussed in Section 2 were reviewed, along with similar
+                                                   Describe the Application
+                                                                                          commercial games, such as Habitica3 and Uno’s colorblind
+                                                                                          version4 .
+                             Development Stage
+                                                                                             In addition, based on the insights gained from the literature
+                                                                                          review, Personas [Cooper and Saffo, 1999; Pruitt and Grudin,
+    Compliance with      Define technologies           Compliance with WCAG
+    GAIA guidelines           and tools                        guidelines                 2003] were developed to represent the solution’s target
+      Color                Visual Studio Code         1.1.1 - Non-textual content
+      Texts                JavaScript                 1.3.2 - Sequence with meaning
+                                                                                          users. Personas are fictional characters created from various
+      Minimalist           React.js                   1.4.1 - Use of colors               sources, helping designers identify the demographic traits,
+      Interface            Jest                       1.4.3 - Contrast (Minimum)
+      Consistency          RESTful                    1.4.6 - Contrast (Enhanced)
+                                                                                          preferences, and behaviors of the target users [Pruitt and
+      Simple               Spring Boot                1.4.11 - Non-text Contrast          Grudin, 2003].
+      Navigation           PostgreSQL                 2.2.3 - No Timing
+                           Spring Data JPA            2.4.2 - Page Titled
+                                                                                             The Persona technique is often used in academic settings
+                           Spring Security            2.4.3 - Focus Order                 when direct access to the target audience isn’t feasible during
+                                                      3.2.1 - On Focus
+                                                                                          the initial stages of requirements gathering and problem
+                                                                                          definition. In this project, since approval from the Research
+                               Evaluation Stage                                           Ethics Committee was still pending at that time, personas
+    Player Experience Need Satisfaction                Contrast Analysis                  were developed to help us better understand the context
+       Purpose                                  Color Contrast Analyzer                   and progress with the development phase. These personas
+       Experience
+       Narrative                                     Test with Validator                  provided valuable insights that shaped key design decisions,
+       System                                   W3C Validator                             informed the mechanics of the gamified solution, and guided
+                               Usability Evaluation                                       the creation of the narrative and accessibility features.
+                        Nielsen’s Heuristics with AI assistance                              As a result, three personas were created to represent
+                                                                                          the key stakeholders: children or adolescents with ASD,
+Figure 1. Overview of the design, development, and evaluation stages of
+Task Complete. Source: Adapted from Michalichem et al. [2024].
+                                                                                          caregivers, and education professionals. These personas
+                                                                                          were developed based on data and surveys about the
+significant and varied area of research.                                                  characteristics of individuals with disabilities, as outlined by
+   There are also several other studies focused on using                                  Valle and Connor [2014]. It’s worth noting that the primary
+games to promote healthy and positive habits in children                                  focus of this work is on individuals with ASD who are
+with ASD and Down Syndrome [Viveiros et al., 2023],                                       supported by our partner institution.
+serious games as a therapeutic tool for individuals with                                     The created personas were:
+intellectual disabilities [Martins et al., 2011], and serious
+                                                                                             • Carla Marin: represented in Figure 2a, she is a
+games designed to help children with Intellectual Disabilities
+                                                                                               pedagogue who greatly values inclusive education. She
+understand healthy eating habits using an iPad [Isasi et al.,
+                                                                                               is a 30-year-old who constantly seeks to strengthen
+2013].
+                                                                                               her skills, actively participating in activities at the
+   Although the studies mentioned above demonstrate
+                                                                                               school where she teaches in the special education
+positive results, many of the solutions are no longer
+                                                                                               class. She also participates in courses offered by
+accessible or fail to meet crucial accessibility requirements
+                                                                                               the education department in her city in this context.
+for the context, which was a key demand from our
+                                                                                               Carla also engages in creative activities such as
+partner institution. Therefore, we applied User-Centered
+                                                                                               community theater, adapted dance, and crafts and
+Design (UCD) techniques, specifically tailored for games
+                                                                                               explores innovative ways to make the teaching-learning
+[Pagulayan et al., 2002], to design and evaluate a gamified
+                                                                                               process more accessible, inclusive, and engaging. She
+solution aimed at promoting positive habits in children and
+                                                                                               was diagnosed with Attention Deficit Hyperactivity
+adolescents with intellectual disabilities. This solution is
+                                                                                               Disorder (ADHD) as a teenager and has difficulty
+intended to be used with the guidance of an education
+                                                                                               focusing on activities that are not engaging her. This
+professional from the partner institution.
+                                                                                               characteristic has helped her to get closer to her
+                                                                                               students.
+                                                                                             • João Silva: represented in Figure 2b, is a curious
+3 Task Complete: An Accessible                                                                 teenager with a 14-year-old, diagnosed on the autism
+  Gamified Solution                                                                           3 Available at: https://habitica.com/. A productivity and task
+
+                                                                                          management app that uses gamification to motivate users to reach their goals
+This section outlines the design, development, and                                        and develop healthy habits.
+                                                                                              4 Available     at:         https://shop.mattel.com/products/
+evaluation phases of the Task Complete solution. An                                       uno-coloradd-hpp33, a special edition of Uno designed for people
+overview of the process is provided in Figure 1, with                                     with color blindness, featuring cards marked with the universal ColorADD
+detailed descriptions in the following sections.                                          color code for color blindness.
+
+<a id="pdf-p4"></a>
+### [PDF p.4] spectrum, who likes digital games. João has and cost-effective, ensuring that Carla could easily
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **4** / 17
+
+A gamified solution to promote positive habits in children and adolescents with Intellectual Disabilities    Michalichem, Pereira and Rodrigues 2025
+
+
+
+     spectrum, who likes digital games.             João has                             and cost-effective, ensuring that Carla could easily
+     difficulty following routine activities and does not like                           implement it with her special education students, while
+     environments with many people.                                                      helping them stay focused and follow the task routine
+   • Maria Oliveira: represented in Figure 2c, is a 42-year-                             playfully without distractions.
+     old, a self-employed seamstress, and a single mother.
+     She lives in a poor community in Rio de Janeiro/Brazil                      3.1.1     Application Description
+     and has a 6-year-old son who was recently diagnosed
+     on the autism spectrum. Maria seeks ways to help her                        The solution was designed after gaining a more in-depth
+     son communicate at home and regular school. She                             understanding of the context and users.
+     learned that a social institution in her community was                          Task Complete is a gamified Web platform that combines
+     carrying out activities with educational games and was                      task management and gamification to enhance productivity
+     interested in taking her son to participate. Maria has                      and foster the development of positive habits. Its goal is to
+     low vision and uses special glasses to carry out her daily                  transform daily task management into an engaging gaming
+     activities.                                                                 experience. Users guide avatars that progress and improve
+                                                                                 as they finish tasks, develop routines, and accomplish
+                                                                                 their objectives, creating a more engaging and rewarding
+                                                                                 experience.
+                                                                                     The platform features four main areas of functionality. In
+                                                                                 the Tasks section, users can add activities to be completed
+                                                                                 in the future. The Daily section allows players to add tasks
+                                                                                 they need to accomplish each day. The Habits section helps
+                          (a) Persona: Carla Marin
+                                                                                 users track tasks they want to repeat in a specific sequence to
+                                                                                 build lasting habits. Finally, the Bills section helps players
+                                                                                 manage their monthly bills. By completing these tasks,
+                                                                                 players earn money to purchase clothing for their avatars,
+                                                                                 allowing them to customize and personalize their appearance.
+                                                                                 Additionally, there is a leveling system that advances as tasks
+                           (b) Persona: João Silva
+                                                                                 are completed.
+                                                                                     A set of screens for the application was prototyped using
+                                                                                 the Figma tool. Figure 3 showcases some of these screens.
+                                                                                     Figure 3a shows the Task section, which is the first option
+                                                                                 in the secondary menu. Here, specific tasks are created based
+                         (c) Persona: Maria Oliveira                             on the player’s needs, and the player can add as many tasks as
+Figure 2. Personas representing the main target-users of the application.        desired. Once completed, the task will be marked as finished,
+Source: Michalichem et al. [2024].                                               and the player will earn coins as a reward for completing the
+                                                                                 tasks they set for themselves. In the top menu, next to the
+  The personas assisted the team in making design decisions,                     Task section, you’ll find the Daily tasks, which are checked
+such as:                                                                         and updated every day. The Habits section (see Figure 3b),
+                                                                                 also located in the menu, keeps track of the sequence in
+   • For Maria Oliveira, who has low vision and wants to                         which the player completes a habit. The sequence number
+     monitor her son’s activities within the gamified solution,                  increases each time the habit is successfully maintained, but
+     a high-contrast color palette was developed. The visual                     it resets if the player misses a step. Finally, the Bills section
+     elements were selected to enhance the identification and                    (the last item in the menu—see Figure 3c) helps players
+     interaction with interface components, ensuring a more                      organize and keep track of their monthly bills.
+     accessible and welcoming experience. Additionally, the                          The inventory acts as a customization area (see Figure 4),
+     application was designed with options to adjust font size                   allowing players to personalize their avatar within the app.
+     and change screen contrast;                                                 It provides a clear view of all the items available on the
+   • For João Silva, the solution had to be intuitive and                        platform, giving users the tools to make their avatar uniquely
+     comfortable for users on the autism spectrum. João                          their own.
+     will use the gamified solution to assist with his daily                         The player profile (see Figure 5) includes basic details like
+     activities. Therefore, the interface was designed with a                    the player’s name and email. It also features a progress bar
+     cleaner and more simplified visual layout, incorporating                    that tracks the player’s advancement, showing the avatar’s
+     rounded edges. This approach was intended to reduce                         current level and highlighting their progress within the
+     cognitive overload, making the platform easier to                           platform.
+     understand and use for this type of user;                                       A feature for increasing and decreasing font sizes was
+   • For Carla Marin, the same accessibility elements                            also designed to offer a more accessible and personalized
+     mentioned earlier were considered. Given her ADHD,                          experience for users who may have difficulty fully
+     it’s essential that she not only understands the solution                   visualizing the components and text.             This option is
+     but also finds ways to engage and motivate her students                     represented by the first icon on the main menu, located on
+     to use it. The solution was designed to be enjoyable                        the right side (see Figure 3[a]).
+
+<a id="pdf-p5"></a>
+### [PDF p.5] Figure 4. Inventory screen (in Portuguese) - Main menu. Source:
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **5** / 17
+
+A gamified solution to promote positive habits in children and adolescents with Intellectual Disabilities   Michalichem, Pereira and Rodrigues 2025
+
+
+
+
+                                                                                 Figure 4. Inventory screen (in Portuguese) - Main menu.   Source:
+                                                                                 Michalichem et al. [2024].
+
+
+
+
+                               (a) Task Screen
+
+
+
+
+                                                                                 Figure 5. Profile screen (in Portuguese) - Main menu.     Source:
+                                                                                 Michalichem et al. [2024].
+
+                                                                                   A dark mode feature is also included, located in the
+                                                                                 top-right corner of the screen (it’s the second icon on the
+                                                                                 main menu, on the right side—see Figure 3[a]). This
+                                                                                 option changes the color scheme from lighter to darker tones,
+                                                                                 improving both the user experience and accessibility by
+                                                                                 boosting the contrast of the elements shown on the screen.
+                              (b) Habits Screen.
+
+
+                                                                                 3.2 Development Stage
+                                                                                 The application was developed using web development
+                                                                                 technologies. The primary tool used for programming and
+                                                                                 structuring the code was Visual Studio Code, an Integrated
+                                                                                 Development Environment (IDE) known for its efficiency
+                                                                                 and advanced features. It was selected for its popularity and
+                                                                                 versatility. One of its key advantages is the extensive library
+                                                                                 of available extensions, allowing developers to customize
+                                                                                 VS Code by adding support for various programming
+                                                                                 languages, frameworks, and tools.
+                                                                                    The programming language selected for implementation
+                                                                                 was JavaScript, a versatile and widely used language in Web
+                                                                                 development. Its dynamic, object-oriented nature provided a
+                               (c) Bills Screen.                                 strong foundation for building an interactive and responsive
+Figure 3. Some prototyped screens for the Task Complete application (in          application, perfectly suited to the project’s objectives.
+Portuguese) - secondary menu items. Source: Michalichem et al. [2024].              We chose the React.js library as the Front-End framework,
+                                                                                 as it offers a declarative and efficient approach to building
+                                                                                 complex user interfaces. Our decision was driven by
+                                                                                 its component-based architecture, enabling a modular
+                                                                                 and scalable code organization, enhancing the system’s
+                                                                                 maintainability and extensibility. By using React.js, the
+                                                                                 development of an engaging user experience was streamlined
+
+<a id="pdf-p6"></a>
+### [PDF p.6] while ensuring an efficient and sustainable implementation 3.2.1 Project adherence to WCAG guidelines -
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **6** / 17
+
+A gamified solution to promote positive habits in children and adolescents with Intellectual Disabilities        Michalichem, Pereira and Rodrigues 2025
+
+
+
+while ensuring an efficient and sustainable implementation                       3.2.1     Project adherence            to    WCAG         guidelines       -
+of Task Complete.                                                                          Accessibility
+   For testing, we used testing tools integrated into VS Code,                   We incorporated several WCAG guidelines throughout the
+such as Jest. Unit tests were developed for each component,                      development of the project to enhance accessibility for
+and they were run directly within the editor.                                    players with varied disabilities. These guidelines are
+   We implemented the RESTful architecture for the back-                         categorized into three compliance levels: A, AA, and AAA.
+end, focusing on stateless communication and resource                            These levels reflect a website’s or an application’s degree of
+manipulation through standard HTTP operations. We chose                          accessibility based on the guidelines. In the Task Complete
+Spring Boot due to its native support for REST, which                            solution, the majority of the implemented guidelines fall
+streamlines the creation of endpoints and simplifies the                         under Level A, with additional guidelines from Levels AA
+handling of requests and responses.                                              and AAA. Some implemented guidelines include:
+   Moreover, we chose PostgreSQL as our database due to
+its reliability, robustness, and seamless integration with the                       • Success Criterion 1.1.1 - Non-text Content [Level
+Spring ecosystem. This integration was made easier through                             A]: Any “non-text” content that is essential for
+Spring Data JPA, which provides an abstraction layer for                               understanding the information must have a text
+data access, simplifying interactions with the relational                              alternative (visible or hidden) to describe the content,
+database.                                                                              such as with captchas, for example.
+                                                                                       In the code snippet shown in Figure 7, an example of the
+   Application security is ensured by Spring Security,
+                                                                                       ALT tag (alternative text) is provided, which is used to
+which enables the implementation of authentication and
+                                                                                       describe one of the images implemented in the solution;
+authorization in a flexible and customizable manner.
+Additionally, Spring Boot provides production-ready
+features like metrics and monitoring, aiding in the efficient
+management of the application in a real environment.                             Figure 7. The code snippet demonstrates the use of the ALT tag to provide
+                                                                                 a description of the logo image. This feature is specifically used by screen
+   Figure 6 illustrates several implemented screens,                             readers to convey the content to users with visual impairments. Source:
+including the Habits Screen, the names of inventory                              Michalichem et al. [2024].
+products, and the names of products in the store.
+                                                                                     • Success Criterion 1.3.2 - Meaningful Sequence
+                                                                                       [Level A]: Regardless of the interaction method, the
+                                                                                       information displayed on the screen must follow a
+                                                                                       logical and consistent sequence. For instance, when an
+                                                                                       error occurs in a form, it should include an alert icon, a
+                                                                                       message explaining how to correct the error, and a color
+                                                                                       change that highlights the information (not relying on
+                                                                                       color alone).
+                                                                                       In Figure 8, an example is shown where an incorrect
+                                                                                       email is entered, triggering an error message. This
+                              (a) Habits Screen                                        message alerts the user that valid information is required
+                                                                                       to proceed;
+
+
+
+
+                        (b) Name of inventory products
+
+
+
+
+                                                                                 Figure 8. Input error and a clear message to the user (in Portuguese).
+                                                                                 Source: Michalichem et al. [2024].
+
+                       (c) Name of products in the store                             • Success Criterion 1.4.1 - Use of Color [Level A]:
+Figure 6. Some screens developed for the Task Complete application (in                 Color should not be the sole visual means of conveying
+Portuguese). Source: Michalichem et al. [2024].
+                                                                                       information, indicating an action, prompting a response,
+                                                                                       or distinguishing a visual element.
+
+<a id="pdf-p7"></a>
+### [PDF p.7] Figure 9 illustrates how this strategy is applied in the presented;
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **7** / 17
+
+A gamified solution to promote positive habits in children and adolescents with Intellectual Disabilities     Michalichem, Pereira and Rodrigues 2025
+
+
+
+      Figure 9 illustrates how this strategy is applied in the                          presented;
+      example of purchasing an item from the store. In this                             In Figure 10, the application menu is displayed,
+      case, green is used to indicate a successful purchase,                            showing the logical sequence in which the elements are
+      while a label is added to clearly represent the button’s                          interacted with. It begins with general tasks, followed
+      action;                                                                           by daily tasks, habits, and finally, bills. These elements
+                                                                                        are all related to the player’s routine, ensuring a logical
+                                                                                        and coherent flow of content;
+
+
+
+
+                                                                                 Figure 10. Example of the content’s logical sequence (in Portuguese).
+                                                                                 Source: Michalichem et al. [2024].
+
+
+                                                                                     • Success Criterion 3.2.1 On Focus [Level A]: No
+                                                                                       unexpected contextual changes, such as opening a
+                                                                                       modal window, should occur when focusing on any
+                                                                                       element in the interface without direct confirmation
+                                                                                       (e.g., a confirmation button).
+                                                                                       One way to ensure consistency is by ensuring that an
+                                                                                       image displays the same text on every page where it
+Figure 9. Example of a purchase confirmation message for an item in the                appears. In Task Complete, for instance, item names are
+store. (in Portuguese). Source: Michalichem et al. [2024].                             identical in both the inventory and the store, as shown
+                                                                                       in Figure 6[c].
+   • Success Criterion 1.4.3 Contrast (Minimum)
+     [Level AA] and Success Criterion 1.4.6 Contrast                                The gamified application also complies with other WCAG
+     (Enhanced) [Level AAA]: Text must have a contrast                           guidelines, including 1.3.3 (Sensory Characteristics), 1.3.4
+     ratio of at least 4.5:1 between the foreground and                          (Orientation), 2.4.11 (Focus Not Obscured - Minimum),
+     background. Note: If the text font size is at least “18pt”                  2.4.12 (Focus Not Obscured - Enhanced), 3.1.3 (Unusual
+     or “14pt bold”, the contrast ratio can be reduced to 3:1.                   Words), and 3.1.5 (Reading Level).
+     Illustrations related to contrast, as per this guideline,
+     will be provided in the following section (see Section                      3.2.2 Project adherence to GAIA Recommendations
+     3.3.2). This includes contrast testing using the Color
+     Contrast Analyzer5 tool;                                                    The project also adheres to the GAIA recommendations
+   • Success Criterion 1.4.11 Non-text Contrast [Level                           [Pichiliani, 2020]. GAIA is an open and collaborative set of
+     AA]: Interface components (e.g., buttons) and images                        28 web accessibility guidelines focused on autism, covering
+     crucial for understanding the content must have a                           areas from content writing to programmable resources. It
+     contrast ratio of at least 3:1 between the foreground and                   is important to note that the GAIA recommendations were
+     background.                                                                 developed in alignment with the WCAG guidelines.
+     Illustrations related to contrast, in accordance with this                     Below are some of the main recommendations we
+     guideline, will be provided in the following section (see                   implemented, and the respective skills that can be improved
+     Section 3.3.2), along with contrast testing using the                       in the target audience with its implementation [Pichiliani,
+     Color Contrast Analyzer tool;                                               2020]:
+   • Success Criterion 2.2.3 No Timing [Level AAA]: No
+                                                                                     • G01, which focuses on Color by ensuring it isn’t the
+     functionality on the screen should require completion
+                                                                                       only way information is conveyed and that there’s
+     within a specific time limit. Note: Real-time events are
+                                                                                       enough contrast between background and foreground
+     exceptions to this rule.
+                                                                                       elements to make content easily distinguishable:
+     In Task Complete, there are no features that are time-
+     limited;                                                                               – Skills that can be improved: Attention, Reading,
+   • Success Criterion 2.4.2 Page Titled [Level A]: Every                                     Verbal or linguistic comprehension, and Visual
+     screen must have a clear main title that accurately                                      comprehension;
+     describes its purpose.                                                          • G02, which deals with Texts, emphasizing the
+     In Figure 6[a], the Habits screen is shown with a clear                           use of clear, straightforward language and avoiding
+     and descriptive title;                                                            unnecessary jargon:
+   • Success Criterion 2.4.3 Focus Order [Level A]: The
+                                                                                            – Skills that can be improved: Attention, Reading,
+     focus order of interactive elements on the screen must
+                                                                                              Verbal or linguistic comprehension;
+     always be sequential and logical, based on the content
+    5 Available
+                                                                                     • G04, which focuses on Compatibility with the real
+                   at:            https://chromewebstore.
+google.com/detail/color-contrast-analyzer/
+                                                                                       world in icons, images, and nomenclature of actions
+dagdlcijhfbmgkjokkjicnnfimlebcll?pli=1      or     https:                              and menus to represent concrete actions and daily life
+//dequeuniversity.com/color-contrast                                                   activities that are easily recognized:
+
+<a id="pdf-p8"></a>
+### [PDF p.8] – Skills that can be improved: Memorization, To apply the PENS model, the solution was examined
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **8** / 17
+
+A gamified solution to promote positive habits in children and adolescents with Intellectual Disabilities      Michalichem, Pereira and Rodrigues 2025
+
+
+
+          – Skills that can be improved: Memorization,                              To apply the PENS model, the solution was examined
+            Attention, Reading, Verbal or linguistic                             through the lens of the gamification concepts outlined by
+            comprehension, Visual comprehension;                                 Schell [2008], which are based on four dimensions: purpose,
+   • G06, which focuses on Informational Customization                           experience, narrative, and system. Each of these dimensions
+     by offering options to customize the display of                             was then analyzed in relation to the Task Complete gamified
+     information, such as player avatar images, with the                         solution:
+     player’s individual preferences (see Figure 6[c]):                              • Purpose: The purpose of Task Complete is to support
+          – Skills that can be improved: Attention, Reading,                           individuals with intellectual disabilities in managing
+            Verbal or linguistic comprehension, Visual                                 their daily tasks related to personal or well-being
+            comprehension, Dealing with change or                                      activities. The solution integrates different gamification
+            transitions, Sensory integration;                                          mechanics to encourage motivation and help players
+   • G10, which highlights a Minimalist Interface, keeping                             stay focused. For example, players can earn experience
+     the design simple and only including elements and                                 points and level up by completing tasks, setting goals,
+     content essential to the task at hand:                                            and overcoming challenges. They can also earn
+                                                                                       rewards, such as coins, which can be used in the store.
+          – Skills that can be improved: Problem-solving,                              These mechanics aim to keep players engaged and
+            Memorization, Attention, Reading, Verbal or                                rewarded for their efforts, as illustrated in Figure 11
+            linguistic comprehension, Visual comprehension;                            (areas marked with red rectangles);
+   • G22, which promotes Consistency, ensuring that
+     similar elements and interactions behave in predictable
+     ways:
+          – Skills that can be improved: Memorization,
+            Visual comprehension, Dealing with changes or
+            transitions;
+   • G23, which focuses on Clickable appearance by
+     using larger icons, buttons, and form controls that
+     provide adequate click/tap area and ensure they appear
+     clickable:
+          – Skills that can be improved: Attention, Visual                       Figure 11. Level and money mechanics (in Portuguese).           Source:
+            comprehension, Sensory integration;                                  Michalichem et al. [2024].
+
+   • G25, which supports Simple Navigation, offering a                               • Experience:       The solution incorporates several
+     smooth and consistent way to move through different                               gamification mechanics to enhance user engagement.
+     pages. These are just a few of the many guidelines we                             For instance, Task Complete features a user interface
+     followed to improve accessibility and usability:                                  designed like a game, with a playful aesthetic
+          – Skills that can be improved: Memorization,                                 that utilizes blue, orange, black, and white colors
+            Attention, Visual comprehension, Dealing with                              throughout the application. Players can personalize
+            changes or transitions;                                                    their avatars and equip them with items. Additionally,
+   • G27, which focuses on Confirmation of actions by                                  the solution uses border styles with rounded elements
+     offering feedback confirming correct actions or alerting                          and fonts. These design choices are more visually
+     about possible errors:                                                            accessible, as straight lines and sharp corners can be too
+                                                                                       heavy for individuals with autism, while curved lines
+          – Skills that can be improved: Problem-solving,                              and rounded edges offer a softer and less stimulating
+            Attention, Verbal or linguistic comprehension,                             experience. Figure 12 illustrates these design features
+            Visual comprehension, Dealing with change or                               implemented in the solution;
+            transitions, Sensory integration.
+
+3.3     Evaluation Stage
+The inspection and checklist evaluations were conducted
+within the Task Complete interface. The following sections
+provide details of these evaluations.
+
+3.3.1 Player Experience of Need Satisfaction - PENS
+                                                                                 Figure 12. Player interface with rounded border (in Portuguese). Source:
+This model was the initial one used to assess the gamified                       Michalichem et al. [2024].
+solution developed. The goal of the evaluation was to
+determine whether the solution could create a positive                               • Narrative: The narrative of Task Complete adds
+experience for the player [Ryan et al., 2006].                                         meaning to the gamification experience. In the solution,
+
+<a id="pdf-p9"></a>
+### [PDF p.9] the player controls an avatar that evolves as tasks 1.4.3: Minimum contrast (AA) and 1.4.6: Enhanced contrast
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **9** / 17
+
+A gamified solution to promote positive habits in children and adolescents with Intellectual Disabilities    Michalichem, Pereira and Rodrigues 2025
+
+
+
+      the player controls an avatar that evolves as tasks                        1.4.3: Minimum contrast (AA) and 1.4.6: Enhanced contrast
+      are completed, gaining experience, leveling up, and                        (AAA). These standards apply to both small and large text,
+      unlocking new clothing items that can be personalized                      UI components, and graphic elements.
+      according to the player’s preferences.                                        For the tests, the base colors used in the prototyping
+      This narrative helps players connect with the                              created in the Figma graphic editor were applied. These
+      application and boosts their motivation. By tracking                       colors included shades of white (#FEF5F5, #FFFFFF),
+      their progress, users can feel a sense of accomplishment                   shades of blue (#005A75, #1DA7CF, #BAE7F4), black
+      as they complete tasks and achieve goals. For example,                     (#000000), and orange (#FF8C00).
+      players can measure their progress through their                              Figure 14 displays the software used for conducting the
+      inventory, where they can see the items they’ve earned                     tests. In this example, the contrast test met the WCAG AA
+      by consistently completing routine activities. This is                     and AAA standards for small text, large text, UI components,
+      illustrated in Figure 13;                                                  and graphical elements. The test involved the blue color
+                                                                                 (#FEF5F5) on the menu and white (#FFFFFF) text on that
+                                                                                 same menu.
+
+
+
+
+Figure 13. Inventory interface with player progress (in Portuguese).
+Source: Michalichem et al. [2024].
+
+   • System: Task Complete is a direct, fair, and consistent
+     solution. The rules are simple to understand and apply.
+     The system is designed to be easy to use and intuitive,
+     eliminating the need for a tutorial. Players can easily
+     understand how to use the application. Additionally,
+     the system is fair, ensuring that all users have an equal
+     opportunity for success.
+
+3.3.2 Contrast analysis - Test 1
+The digital accessibility criterion of minimum contrast (1.4.3
+in WCAG) is essential for supporting individuals with low
+vision and color blindness. Adhering to these guidelines
+enhances accessibility and improves the visual quality of the
+digital project for all users.
+   The free tool Color Contrast Analyzer, developed by
+Deque University6 , simplifies compliance with this criterion                    Figure 14. Use of the Color Contrast Analyzer - Approved menu color
+by enabling the analysis of the contrast between background                      palettes. Source: Michalichem et al. [2024].
+and foreground colors for both large and small text. These
+principles can also be applied to presentation slides, social
+media graphics, e-books, and other digital content.                              3.3.3 Contrast analysis - Test 2
+   To conduct this test, a success criterion is needed to
+                                                                                 We also evaluated the contrast between the foreground (font)
+determine if the contrast is adequate for individuals with
+                                                                                  and the background (solid colors, buttons, etc.), to analyze
+vision impairments to perceive the message. Therefore, the
+                                                                                 whether the elements allow people with low vision to identify
+following success criterion, as recommended by the Color
+                                                                                  the elements and texts on the screen. Figure 15 illustrates the
+Contrast Analyzer, was adopted:
+                                                                                  test carried out, on two of the screens, which shows that the
+   • Success criterion: Ensure a color contrast ratio of at                       icons and fonts are perceptible when evaluated at Level AA
+     least 4.5:1 for small text and 3:1 for large text, including                - Medium Bold and Large Non-bold text (3:1).
+     text that is part of an image. Large text is defined in the                      In conclusion, the tests conducted using the tool, which
+     requirements as 18pt (24 CSS pixels) or 14pt bold (19                        covered the header with the menu, task topics, task item
+     CSS pixels).                                                                 titles, arrow components, footer items, and text boxes, were
+                                                                                  all successful. The base colors from the Figma prototype,
+  In tests using the tool, the colors of the interface elements                   implemented in the Front-End, were applied correctly. As a
+were assessed to ensure they met the following standards:                         result, the findings show that the project complies with the
+    6 Available at: https://dequeuniversity.com/                                  accessibility criteria for color.
+
+<a id="pdf-p10"></a>
+### [PDF p.10] All the errors identified by the Validator tool were
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **10** / 17
+
+A gamified solution to promote positive habits in children and adolescents with Intellectual Disabilities       Michalichem, Pereira and Rodrigues 2025
+
+
+
+                                                                                    All the errors identified by the Validator tool were
+                                                                                 addressed, and none of them were related to accessibility;
+                                                                                 they were all coding issues.
+
+                                                                                 3.3.5     Nielsen’s Usability Heuristic Evaluation - Add
+                                                                                           Task
+                                                                                 As a final evaluation step, we also conducted a heuristic
+                                                                                 evaluation using Nielsen’s usability heuristics [Nielsen and
+                                                                                 Molich, 1990]. For this paper, we will discuss the heuristic
+                                                                                 evaluation of the task related to the “Add Task” procedure,
+                                                                                 and the “Add Habit” interface. We selected these as they
+                                                                                 are core functionalities and representative of the system as a
+                                                                                 whole. However, a careful evaluation of all other interfaces
+                                                                                 is required before releasing the final product. For the “Add
+                                                                                 Task”, we use Figure 12 as the starting point, together with
+                                                                                 the desktop version of Figure 3a, illustrated in Figure 16.
+
+
+
+
+       Figure 15. Use of the Color Contrast Analyzer - Low vision
+                                     .
+3.3.4 Test with Validator tool
+The W3C Markup Validation Service, commonly referred to
+as the W3C Validator or Validator, is an online tool offered
+by the World Wide Web Consortium (W3C)7 . This service
+enables the validation of HTML documents to ensure they
+comply with the specifications and standards set by W3C and                      Figure 16. Prototype screen for the Task Complete website. It shows The
+                                                                                 “Add Task” screen, with the “Close” red button above, and two text fields
+WCAG.                                                                            below: “Task Name” and “Date”, respectively. Then, a checkbox with the
+   Web developers can use the Validator by visiting its                          “Important” text is illustrated, and the “Save Task” button.
+official website, where they can either input a page’s URL
+(Uniform Resource Locator) or submit the code directly                              We conducted the evaluation with the help of one of the
+for validation. By following the Validator’s suggestions,                        authors who was not directly involved in the programming
+developers play a role in promoting a more standardized and                      process (Person 1, 31 y.o., male), to allow for a less biased
+accessible Web.                                                                  perspective, and two other specialists (graduate students) that
+   In this manner, Task Complete was also validated using                        were not involved in the project but have knowledge and
+the Validator. The errors that were identified are described                     experience on Heuristic Evaluation (Person 2, 27 y.o., male
+below.                                                                           and Person 3, 28 y.o., female). Furthermore, following some
+   For instance, we received a warning: “Trailing slash                          recent trends, we also conducted the evaluation with four
+on void elements has no effect and interacts poorly with                         large language models in their free versions: ChatGPT (GPT-
+unquoted attribute values”. This typically happens when a                        4o)8 , DeepSeek (V3)9 , Claude (3.7 Sonnet)10 , and Gemini
+slash (/) is added at the end of a void element tag, such                        (2.0 Flash)11 [Duan et al., 2024; Schmidt et al., 2024; Duan
+as <img>, <br>, <hr>, or <input>. These elements do                              et al., 2023]. To avoid bias, the human evaluation was
+not have content and do not require a closing tag or trailing                    conducted before getting the results from the AI models.
+slash. This error was resolved in the code by checking for                          The input for all models was the same, with a slight
+other void element tags with a trailing slash and removing                       adjustment for Gemini, which can only receive a single
+the unnecessary slash or closing tag.                                            image per input. In this case, we uploaded the first image,
+   We encountered the error: “Bad value image for attribute                      with the prompt “Hold this image in your memory and wait
+type on element link: Subtype missing”. This usually occurs                      for the next input”, and then sent the second image with the
+when there is an issue with the declaration of a link (<link>)                   main prompt:
+in the <head> section of the HTML document, specifically
+with the type attribute. The type attribute specifies the media                          You are a PhD in Computer Science, a specialist
+type of the linked resource.                                                             in Human-Computer Interaction, and well-versed
+   After examining the HTML code where the error was                                     in Jakob Nielsen’s works.          Conduct Jakob
+found, it was confirmed that the <link> tag was correctly                                Nielsen’s heuristic usability evaluation on the Task
+implemented and that the type attribute’s value was                                   8 Available at: https://chatgpt.com/
+appropriate for the component being linked.                                           9 Available at: https://chat.deepseek.com/
+                                                                                     10 Available at: https://claude.ai/chat
+    7 Available at: https://validator.w3.org/                                        11 Available at: https://gemini.google.com/
+
+<a id="pdf-p11"></a>
+### [PDF p.11] Complete website, using the provided images that Here, we present a consolidation of the issues found in the
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **11** / 17
+
+A gamified solution to promote positive habits in children and adolescents with Intellectual Disabilities   Michalichem, Pereira and Rodrigues 2025
+
+
+
+      Complete website, using the provided images that                              Here, we present a consolidation of the issues found in the
+      are, in order of upload: 1 - the main screen of                            format of a list. For each issue, we add a symbol to indicate
+      the website, 2 - the page where you can add tasks,                         their source (many symbols indicate a consensus on these
+      which appears after clicking the “Adicionar”                               issues and suggestions): (* - Person 1; # Person 2; % Person
+      button in image “1”.                                                       3; † - ChatGPT; ‡ - DeepSeek; § - Claude; ¶ - Gemini).
+     For the heuristic evaluation, consider that the                             For this list, we ignored suggestions that did not relate to
+     evaluated product is Task Complete. It is a                                 our specific task or did not belong to a heuristic evaluation
+     website that is targeted at people with autism so                           scope. Furthermore, for brevity, the recommendations were
+     that they can write down tasks, habits, bills to                            omitted but can be found in our spreadsheet in our OSF
+     pay, and daily tasks. The website’s user interface                          repository.
+     was developed with usability and accessibility
+     heuristics, and guidelines focused on helping                                   1. Visibility of System Status:
+     this group of users.      The evaluated task is                                 • “Fechar/Close” is used with the intention to cancel
+     “Add a Task”. You must follow Jakob Nielsen’s                                     creating a Task, but may incorrectly lead users to think
+     heuristic usability evaluation guidelines, which                                  it will close the application.*†‡
+     can be checked on the following link, enclosed                                  • “Salvar Tarefa/Save Task” is enabled even when the user
+     in <>: <https://www.nngroup.com/articles/ten-                                     has not completed filling the data. *†
+     usability-heuristics/> Tips on conducting a                                     • The “Adicione uma Tarefa/Add a Task” page does not
+     good usability evaluation can be checked                                          provide feedback after a task is added. †‡
+     on the following website enclosed in {}:                                        • The system status is unclear on the “Add Task” screen.
+     {https://www.nngroup.com/articles/how-to-                                         #%
+     conduct-a-heuristic-evaluation/.}                                               • The title from Screen 1 (“Add a Task”) remains
+      For each of the 10 usability heuristics, propose                                 unchanged on Screen 2. #
+      a set of issues and recommendations, considering
+      the 2 annexed images.                                                          2. Match Between the System and the Real World:
+
+                                                                                     • The “Data/Date” field appears as a text field. *§
+   The complete tables containing all issues and
+                                                                                     • Usually, a task does not have a name only, but also a
+recommendations for each model and our human evaluation
+                                                                                       description. *¶
+can be accessed in our Open Science Framework (OSF)
+                                                                                     • The field “Importante/Important” seems misleading: if
+project12 . We maintained the original answers, even when
+                                                                                       the user wants to add a task to the app, it probably is
+they were irrelevant to a heuristic evaluation, and only
+                                                                                       important to them. *‡§
+added translations where the Portuguese terms were used
+                                                                                     • Action buttons lack icons. %
+without one.
+   Overall, DeepSeek and ChatGPT were able to provide a                          3. User Control and Freedom:
+good evaluation, although sometimes with generic answers.
+Claude’s answers sometimes did not follow the desired                                • The system does not show a clear way to delete a created
+template, possibly due to it not having internet access and                            task. *
+not being able to access the websites we suggested as                                • The “Fechar” button (Close) is provided, but users may
+guidelines. Moreover, it seldom wrote “issues” that were                               not know if their input will be saved or discarded when
+just reaffirmations of good design decisions. Finally, Gemini                          closing. †‡§
+provided answers that did not follow the expected template,                          • No way to return to the previous screen from the “Add
+adding many issues in a single statement, and suggestions                              Task” screen. %
+that did not match a specific issue. Furthermore, it focused
+on issues unrelated to the task in some cases and also                           4. Consistency and Standards:
+provided many “issues” that were reaffirmations of good                              • The main task menu illustrates “Adicionar/Add” a Task.
+design choices.                                                                        But in the task creation menu, the button to create the
+   A human evaluator read the output of each AI and,                                   task uses the phrase “Salvar Tarefa/Save Task”. *§
+whenever needed, formatted it into a list of issues and                              • The “Salvar Tarefa/Save Task” button is stretched
+their given recommendations. The human evaluator used                                  through the screen, while the “Fechar/Close” button
+the suggestions in the consolidation round, adding each                                is not.     There are other button styles and font
+suggestion to the consolidation sheet. Sometimes, the                                  inconsistencies. *‡
+suggestions from the AI were placed in a different heuristic                         • On screen 2, the “Important” checkbox is placed too far
+than other AIs or human evaluators suggested. In these                                 away from its label. #
+cases, the human consolidator chose the best heuristic to add                        • The accessibility section uses a larger font than other
+the suggestion, to avoid repeated entries. Also, the human                             sections. %
+evaluator was responsible to group similar suggestions
+according to their scope.                                                        5. Error Prevention:
+   12 Available at:     https://osf.io/qfj5v/?view_only=                             • When filling out the form to add a task, no feedback or
+5d7f51364a8b4426802ebf83413557c1                                                       validation is illustrated for wrong inputs. *%†‡§¶
+
+<a id="pdf-p12"></a>
+### [PDF p.12] • No feedback is given about what fields are required
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **12** / 17
+
+A gamified solution to promote positive habits in children and adolescents with Intellectual Disabilities             Michalichem, Pereira and Rodrigues 2025
+
+
+
+   • No feedback is given about what fields are required
+     when adding a task. *%§¶
+   • Users might accidentally close the task addition page
+     without saving. ‡
+   • On Screen 2, the “Close” button is overly prominent
+     (centered and highlighted), increasing the risk of
+     accidental clicks instead of saving. #
+6. Recognition Rather than Recall:
+                                                                                                    (a) Main screen with the “Habits” tab selected.
+   • No pre-filled task examples for guidance. *†‡§
+   • Section meanings are unintuitive. %
+7. Flexibility and Efficiency of Use:
+   • No known keyboard shortcuts or quick-add options to
+     create tasks. *†‡§
+   • Tasks do not allow any customization settings. *¶
+                                                                                                  (b) Screen with the field and button to add a habit.
+   • No apparent way to create multiple tasks efficiently.§
+   • No shortcut for adding recurring tasks. †§¶
+8. Aesthetic and Minimalist Design:
+   • When adding tasks, the user can still see buttons to
+     change context and pending tasks. This is not necessary
+     for the task creation context. *‡§
+   • The task addition form could be better structured and
+     spaced for readability.†‡§
+   • The top menu has too many options, confusing users. %                              (c) Main screen with the “Habits” tab selected after adding some habits.
+
+9. Help Users Recognize, Diagnose, and Recover from                              found more issues that humans did not find in heuristics 7 and
+Errors:                                                                          9, with half or more issues highlighted by AI alone. Finally,
+   • No errors are shown when leaving blank fields when                          we call attention to the fact that the human evaluators are
+     adding tasks or invalid inputs. *†‡§¶                                       still a major component in such analysis, both by contributing
+   • No undo options for accidental actions. †                                   to issues that models could not find and by also being able
+   • Users might not know how to correct mistakes in their                       to consolidate the findings and define priorities and action
+     input. ‡                                                                    courses.
+
+10. Help and Documentation:                                                      3.3.6     Nielsen’s Usability Heuristic Evaluation - Add
+                                                                                           Habit
+   • No help information is given on how to create a task and
+     what each field requires. *†‡§¶                                             To help generalize our findings, we conducted the heuristic
+   • No onboarding tutorial or instructions for first-time                       evaluation on a second, but very similar task: to add a habit
+     users. †§                                                                   instead of a task. Figures 17a to 17c were shown to the
+   • It’s unclear where users would go for assistance.%§                         evaluators (humans and AIs) and they were asked to provide
+                                                                                 another round of the heuristic evaluation (with the same
+   We may observe that 35 issues were consolidated across
+                                                                                 prompt for the AIs). 40 issues were consolidated across the
+the 10 heuristics. 26 were identified by the human evaluators,
+                                                                                 10 heuristics, shown below. The recommendations are also
+and 25 by the AIs. The first person found 16 issues, the
+                                                                                 present in our OSF repository 13 .
+second found 4, and the third found 9. Claude was the AI
+                                                                                    We highlight that Claude and Gemini were unable to
+that found the most issues: 16. DeepSeek and ChatGPT
+                                                                                 format the answer according to our input, showing, in most
+were very close, with 14 and 13 issues, respectively. The
+                                                                                 cases, a list of positive points instead of issues and suggesting
+only model that fell short was Gemini, locating only 7 issues.
+                                                                                 recommendations that were not necessarily related to these
+Nonetheless, it is worth noting that all models, except for
+                                                                                 “issues”. However, we filtered the recommendations and
+Gemini, contributed to locating at least one issue that the
+                                                                                 added issues regarding then when relevant, making them
+others did not find, while the same happened to human
+                                                                                 contribute to the heuristic evaluation after this process. Also,
+evaluators. Overall, 13 issues were found exclusively by
+                                                                                 the version of some AIs changed for this test: GPT-4o,
+1 evaluator, showing that this diversity of evaluators helps
+                                                                                 DeepSeek-V3, Claude Sonnet 4, and Gemini 2.5 Flash.
+finding issues that otherwise would not be discovered.
+                                                                                    1. Visibility of System Status:
+   This means that using such models, at least for our
+use case, contributed to locating 10 issues that the human
+evaluators were unable to identify and also by recommending                         13 Available at:     https://osf.io/qfj5v/?view_only=
+viable actions to solve said issues. Proportionally, the AI                      5d7f51364a8b4426802ebf83413557c1
+
+<a id="pdf-p13"></a>
+### [PDF p.13] • “Fechar/Close” is used with the intention to cancel • On screen 2, the “Close” button is prominently
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **13** / 17
+
+A gamified solution to promote positive habits in children and adolescents with Intellectual Disabilities    Michalichem, Pereira and Rodrigues 2025
+
+
+
+   • “Fechar/Close” is used with the intention to cancel                             • On screen 2, the “Close” button is prominently
+     creating a Task, but may incorrectly lead users to think                          displayed at the center of the screen. This may cause
+     it will close the application.*                                                   inattentive users to accidentally click it instead of saving
+   • “Salvar Hábito/Save Habit” is enabled even when the                               the task. #
+     user has not completed filling the data. *                                      • System allows submitting an empty habit name without
+   • The “Habitos/Habits” menu button does not indicate the                            any warning. *†‡§¶
+     user is in the “Habits” menu. *#%§
+   • The title of the first screen [Add a Habit] remains the                     6. Recognition Rather than Recall:
+     same on the second screen. #                                                    • The user does not know the last time the habit was
+   • No visual feedback when clicking “Salvar Hábito/Save                              updated. *
+     Habit” (e.g., loading indicator or confirmation). †‡§¶                          • No suggestions for habit names or categories. †‡
+   • The transition between states (empty habit list → list                          • Hard to search for habits. §¶
+     with habits) is silent. †¶
+   • The “Hábitos” section does not clearly indicate which                       7. Flexibility and Efficiency of Use:
+     habits are active/completed. ‡
+                                                                                     • No known keyboard shortcuts to create habits. *%‡§
+   2. Match Between the System and the Real World:                                   • Habits do not allow any customization settings. *
+                                                                                     • Too many options in the header menu, causing
+   • Usually, a habit may be daily, weekly, or have any                                confusion. %
+     other regular interval, and sometimes it is sporadic. The                       • Header customization is unavailable. %
+     system does not allow this differentiation.*§¶                                  • No support for batch input of habits. †§
+   • Icons are missing on the main and “Add Habit” screens.                          • No quick-edit or add functionality on the list view. †‡§
+     %§
+   • On the “Added Habits” screen, the loop icon’s function                      8. Aesthetic and Minimalist Design:
+     is non-intuitive, as well as the X. %†‡¶                                        • When adding habits, user can still see buttons to change
+   • Only task items have icons on the “Added Habits”                                  context. This is not necessary for the habit creation
+     screen—action buttons lack them. %                                                context and makes the design cluttered. *%‡§
+   • The term “Hábito/Habit” and others may not be fully                             • Large buttons dominate the space. †
+     clear without examples or descriptions. %†‡
+   • Unexplained elements: The meaning of the numbers “1”                        9. Help Users Recognize, Diagnose, and Recover from
+     and “2” next to the habits, and the blue refresh-like icon                  Errors:
+     (likely for marking as complete or resetting) and the
+     red ’X’ (for deletion), while somewhat standard, could                          • No error messages if habit creation fails or if user
+     benefit from tooltips or a brief explanation for users who                        deletes a habit unintentionally. †§¶
+     might not infer their meaning easily. †¶                                        • The system does not show a clear way to undo a
+                                                                                       mistakenly added streak to a habit. *†‡§¶
+3. User Control and Freedom:                                                         • No error messages for invalid inputs (e.g., duplicate
+                                                                                       habits). ‡§
+   • The system does not show a clear way to edit or delete                          • No color or icons to indicate error states. §
+     a created habit. *‡§¶
+   • “Fechar” button does not confirm if the user has unsaved                    10. Help and Documentation:
+     data. As well as when deleting a habit. %†‡§¶
+                                                                                     • No help information is given on how to create a habit
+   • No “Cancel” option on the “Adicione um Hábito”
+                                                                                       and what each field requires. *%†‡§¶
+     screen—users must click “Fechar” to exit.‡§
+                                                                                     • No visual walkthroughs for newcomers. †‡§
+4. Consistency and Standards:                                                       From the 40 total issues, 23 were highlighted by humans
+                                                                                 and 26 by the AIs, showing how the latter may enhance
+   • The main task menu shows “Adicionar/Add” a Habit.
+                                                                                 the evaluation from the former. Person 1 found 13 issues,
+     But in the task creation menu, the button to create the
+                                                                                 the second found 3, and the third person found 11. Claude
+     Habit uses the phrase “Salvar Hábito/Save Habit”. *‡
+                                                                                 found 17 issues, while ChatGPT and DeepSeek found 13,
+   • The “Salvar Hábito/Save Habit” button is stretched
+                                                                                 and Gemini found 12. 10 issues were reported by a single
+     through the screen, while the “Fechar/Close” button is
+                                                                                 evaluator (mostly human ones). Heuristics 6, 8, 9 and 10
+     not. *§
+                                                                                 were proportionally more impacted by the aid of AI than the
+   • Inconsistent font sizes and types between screens and
+                                                                                 others, with half or more of the found issues being pointed
+     sections.%§
+                                                                                 out exclusively by AI evaluators.
+   • Layout spacing differs slightly from the “Add Task”
+                                                                                    Therefore, based on these two study cases, we bring
+     section. †¶
+                                                                                 evidence that using LLMs to aid in heuristic evaluation may
+5. Error Prevention:                                                             help find early issues that human evaluators may not identify.
+                                                                                 This is especially useful as heuristic evaluations are usually
+   • No feedback is given about what fields are required                         conducted with a small sample of specialists. However,
+     when adding a task. *§¶                                                     we reinforce that the human evaluation is an essential part
+
+<a id="pdf-p14"></a>
+### [PDF p.14] of said method, and the suggestions from the AI may not but also helps create a more inclusive and mindful digital
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **14** / 17
+
+A gamified solution to promote positive habits in children and adolescents with Intellectual Disabilities   Michalichem, Pereira and Rodrigues 2025
+
+
+
+of said method, and the suggestions from the AI may not                          but also helps create a more inclusive and mindful digital
+be applicable to the application, may be presented in an                         environment.
+undesired format, and still need human validation for the                           By detailing the methodological tests and accessibility
+consolidation step.                                                              practices, this work provides a comprehensive reference for
+   We used free models that may be readily available for                         developers aiming to design inclusive applications. In this
+users, and we recommend using a sample of different LLM                          way, the initiative has the potential to not only enhance the
+models to achieve better results. However, Claude was                            quality of life for individuals with intellectual disabilities
+the model that was able to find the most issues (although                        but also contribute to the development of a more accessible,
+showing results in a wrong format), and ChatGPT was able to                      equitable, and inclusive digital environment that addresses
+find slightly more new issues that humans did not find, with                     the diverse needs of society.
+DeepSeek having similar results. So we recommend using at                           This discussion is particularly relevant in the context of
+least one of these models to aid heuristic evaluations.                          games and gamified solutions, as the industry continues to
+                                                                                 explore approaches for delivering more accessible solutions.
+3.3.7 Evaluation Discussion
+The evaluations carried out at this stage were supported                         5      Final Remarks
+by tools and carried out by the development team itself.
+Now, with approval from the ethics committee (protocol                           During the development of the accessible gamified solution,
+number 76853723.3.0000.5504), empirical tests are being                          critical factors were considered to ensure an inclusive and
+planned to be carried out with target users from the partner                     engaging experience for users with varied profiles. Guided
+institution to evaluate the effectiveness of the solution and                    by literature research, the requirements gathering process
+the emotions aroused by its use. Moreover, the issues and                        informed the creation of representative personas. The
+recommendations gathered from the heuristic evaluation are                       prototyping phase enabled the visualization and iterative
+being attended to and will help improve the system.                              refinement of the application’s design, with a focus on
+                                                                                 elements such as color schemes, layout, and the spatial
+                                                                                 arrangement of components on the screen.
+4     Accessibility Discussion                                                      The Front-End implementation, employing technologies
+                                                                                 such as React.js was driven by the principles of efficiency,
+Developing and assessing a gamified solution for individuals                     performance, and usability. The adoption of a modular
+with intellectual disabilities offers significant societal value                 architecture and structured code organization within Visual
+in multiple ways. By integrating accessibility features, the                     Studio Code reflected a commitment to the system’s long-
+solution provides entertainment and fosters digital inclusion,                   term maintainability. Additionally, the integration of unit
+ensuring equal opportunities for participation.                                  tests throughout the development process contributed to
+   The goal of this project was not only to provide                              ensuring the robustness and stability of the Front-End.
+entertainment but also to help individuals develop essential                        Regarding the Back-End, the selection of a RESTful
+skills such as organization, time management, and task                           architecture, supported by Spring Boot and PostgreSQL,
+completion, all of which are crucial for autonomy and                            offered a robust framework for developing scalable Web
+active participation in society. People with intellectual                        services.     This approach facilitates the expansion of
+disabilities often face challenges in adapting to routines,                      the solution, as the team plans to integrate additional
+which can negatively impact their lives. In this context, Task                   functionalities in the future.
+Complete enables these individuals to maintain consistent                           During the evaluation stage, several models were
+and structured routines, as the motivation provided by                           applied, including the PENS model, which focuses on
+gamification encourages them to stay engaged.                                    competence, autonomy, relatedness, and intuitive controls.
+   By emphasizing the significance of accessibility, the                         These factors were strategically integrated to optimize
+project helps raise awareness about the needs of individuals                     player satisfaction, achieve an appropriate balance between
+with intellectual disabilities, fostering a culture of empathy                   challenges and skills, promote autonomy in decision-making,
+and inclusion within society.                                                    foster emotional engagement, and ensure the usability of an
+   The evaluations conducted in the project include a range                      intuitive interface.
+of metrics that emphasize the commitment to ensuring both                           Furthermore, the project incorporated WCAG guidelines
+accessibility and usability, with a specific focus on tests                      to enhance accessibility, implementing alternative text
+aligned with the WCAG guidelines. They revealed that                             for non-textual content and ensuring sufficient contrast.
+there are still adjustments to be made to improve the user                       Tests conducted using the Color Contrast Analyzer tool
+experience with the solution.                                                    confirmed compliance with WCAG AA and AAA standards,
+   These evaluations ensure adherence to specific standards                      underscoring the project’s dedication to both accessibility
+and guidelines while fostering a more inclusive user                             and visual quality. The evaluation addressed both technical
+experience. By addressing factors like contrast, font                            considerations and user experience, with the goal of
+size, and readability, the project meets regulatory                              delivering an engaging and accessible experience for diverse
+requirements and offers a digital experience that respects                       user groups.
+and accommodates diverse user needs. This approach                                  In conclusion, the accessible gamified solution Task
+not only benefits individuals with intellectual disabilities                     Complete represents a concerted effort to eliminate barriers
+
+<a id="pdf-p15"></a>
+### [PDF p.15] and deliver entertainment and utility to an often neglected Authors’ Contributions
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **15** / 17
+
+A gamified solution to promote positive habits in children and adolescents with Intellectual Disabilities     Michalichem, Pereira and Rodrigues 2025
+
+
+
+and deliver entertainment and utility to an often neglected                      Authors’ Contributions
+audience. The integration of accessibility features, alongside
+                                                                                 Pedro Afonso F. Michalichem:              software, methodology,
+the use of robust technologies, significantly contributes                        visualization, data curation, writing-original draft, investigation.
+to promoting digital inclusion. Continuous development                           Leonardo Tórtoro Pereira: validation, data curation, formal
+and the active incorporation of community feedback are                           analysis, investigation, methodology, visualization, writing-
+critical for the ongoing refinement and advancement of this                      original draft, writing-review & editing, formal analysis. Kamila
+accessible application.                                                          Rios da Hora Rodrigues: conceptualization, data curation,
+   Ongoing activities involve planning a longitudinal case                       project administration, validation, visualization, investigation,
+study, which will be conducted in collaboration with                             writing-original draft, writing-review & editing, formal analysis,
+educational professionals from the partner institution. In                       methodology, resources, supervision.
+this study (which is awaiting approval from the educational
+coordinator), five individuals receiving support from the                        Competing interests
+institution will be monitored for a period of one month as
+                                                                                 The authors declare that they have no competing interests.
+they use Task Complete to engage in activities of daily living
+and content related to the mathematics curriculum (treatment
+group). Throughout the intervention, professionals will                          Availability of data and materials
+assess the participants’ performance. Upon completion,
+                                                                                 All data generated and analyzed during this study are included in
+participants will be asked to complete the Game Experience
+                                                                                 this paper, and supplementary materials can be found in our OSF’s
+Questionnaire [Poels et al., 2007; IJsselsteijn et al., 2013]
+                                                                                 project14 .
+and the Game Engagement Questionnaire [Brockmyer et al.,
+2009].
+   Simultaneously, another group of five individuals                             Citation Diversity Statement
+receiving support (control group) will work on the same                          This study acknowledges the importance of diversity and inclusivity
+skills using the methods currently implemented by the                            in academic citations. Our reference list includes works from
+institution’s professionals. At the end of the observation                       a range of scholars with different backgrounds, institutions,
+period, the professionals will assess the performance                            and geographic locations, reflecting contributions from diverse
+of participants in both groups to compare the different                          perspectives in the fields of games.
+methodologies and evaluate the effectiveness of the                                 By including this statement, we aim to raise awareness of
+proposed solution.                                                               citation bias and encourage equitable referencing practices in future
+   An accessibility assessment by inspection is also planned,                    research on serious games and inclusive education.
+using the same tools outlined in Section 3.3.5, and
+applying the Simplified Accessibility Assessment technique
+of de Santana et al. [2008], which is also based on heuristics.
+                                                                                 References
+   Through professional observation, the collection of                           AAIDD (2021).            Defining criteria for intellectual
+system interaction logs, and the assessment of experience                          disability. Available at: https://www.aaidd.org/
+and engagement via questionnaires, the objective is                                intellectual-disability/definition. Accessed
+to empirically evaluate whether the gamified solution                              on 21 September 2025.
+facilitated the development of skills related to daily routines                  Bai, S., Hew, K. F., and Huang, B. (2020). Does gamification
+and positive habits, as well as skills in the content of the                       improve student learning outcome? evidence from a meta-
+associated disciplines, within the study group.                                    analysis and synthesis of qualitative data in educational
+                                                                                   contexts. Educational Research Review, 30:100322. DOI:
+                                                                                   https://doi.org/10.1016/j.edurev.2020.100322.
+Declarations                                                                     Brockmyer, J. H., Fox, C. M., Curtiss, K. A., McBroom,
+                                                                                   E., Burkhart, K. M., and Pidruzny, J. N. (2009). The
+                                                                                   development of the game engagement questionnaire: A
+Acknowledgements                                                                   measure of engagement in video game-playing. Journal
+The authors declare that the Google Translate tool was used to                     of experimental social psychology, 45(4):624–634. DOI:
+support the translation of the paper and the Grammarly tool for                    https://doi.org/10.1016/j.jesp.2009.02.016.
+spelling adjustments. ChatGPT and DeepSeek were also used to                     Cooper, A. and Saffo, P. (1999). The Inmates Are Running
+rewrite some parts of the text.                                                    the Asylum. Macmillan Publishing Co., Inc., USA. DOI:
+                                                                                   https://doi.org/10.1007/978-3-322-99786-91 .
+                                                                                 da Cruz Netto, O. L., Rodrigues, S. C. M., de Castro,
+Funding                                                                            M. V., da Silva, D. P., da Silva, R. R., de Souza,
+                                                                                   R. R. B., de Souza, A. A. F., and Bissaco, M.
+The authors thank the Commission for Culture and Extension                         A. S. (2020).        Memorization of daily routines by
+(CCEX) of the Institute of Mathematics and Computer Science                        children with down syndrome assisted by a playful
+(ICMC) at USP for financial support through extension project
+grants.                                                                             14 Available at:     https://osf.io/qfj5v/?view_only=
+                                                                                 5d7f51364a8b4426802ebf83413557c1
+
+<a id="pdf-p16"></a>
+### [PDF p.16] virtual environment. Scientific Reports, 10(1):3144. DOI: pages 461–477, Cham. Springer Nature Switzerland. DOI:
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **16** / 17
+
+A gamified solution to promote positive habits in children and adolescents with Intellectual Disabilities   Michalichem, Pereira and Rodrigues 2025
+
+
+
+   virtual environment. Scientific Reports, 10(1):3144. DOI:                       pages 461–477, Cham. Springer Nature Switzerland. DOI:
+   https://doi.org/10.1038/s41598-020-60014-5.                                     https://doi.org/10.1007/978-3-031-37105-9_31.
+de Santana, V. F., Almeida, L. D., and Baranauskas,                              Lewis, Z. H., Swartz, M. C., and Lyons, E. J. (2016). What’s
+   M. C. C. (2008).       Aprendendo sobre acessibilidade                          the point?: a review of reward systems implemented in
+   e construção de websites para todos.               Revista                      gamification interventions. Games for health journal,
+   Brasileira de Informática na Educação, 16(03). DOI:                             5(2):93–99. DOI: https://doi.org/10.1089/g4h.2015.0078.
+   https://doi.org/10.5753/rbie.2008.16.03.                                      Marczewski, A. (2015). Even ninja monkeys like to play.
+Deterding, S., Sicart, M., Nacke, L., O’Hara, K., and                            Martins, T., Carvalho, V., Soares, F., and Moreira,
+   Dixon, D. (2011). Gamification. using game-design                               M. F. (2011). Serious game as a tool to intellectual
+   elements in non-gaming contexts. In CHI’11 extended                             disabilities therapy: Total challenge. In 2011 IEEE
+   abstracts on human factors in computing systems, pages                          1st International Conference on Serious Games and
+   2425–2428. Association for Computing Machinery. DOI:                            Applications for Health (SeGAH), pages 1–7. DOI:
+   https://doi.org/10.1145/1979742.1979575.                                        https://doi.org/10.1109/SeGAH.2011.6165444.
+Domingos Filho, C. A. and Vale, M. E. B. d. (2017). Solução                      Meinecke, A., Heidrich, D., Dworatzyk, K., and Theis,
+   gamificada para o aprendizado de física no contexto do                          S. (2025).       A comparative heuristic evaluation of
+   ensino de jovens e adultos. Technical report, Universidade                      kadi4mat through human evaluators and gpt-4.               In
+   de Brasília.                                                                    Marcus, A., Rosenzweig, E., Soares, M. M., Rau, P.-
+Duan, P., Warner, J., and Hartmann, B. (2023).                                     L. P., and Moallem, A., editors, HCI International 2024
+   Towards generating ui design feedback with                                      – Late Breaking Papers, pages 91–108, Cham. Springer
+   llms.     In Adjunct Proceedings of the 36th Annual                             Nature Switzerland. DOI: https://doi.org/10.1007/978-3-
+   ACM Symposium on User Interface Software and                                    031-76821-78 .
+   Technology, UIST ’23 Adjunct, New York, NY,                                   Michalichem, P., Pereira, L., and Rodrigues, K. (2024).
+   USA. Association for Computing Machinery. DOI:                                  Task complete: A gamified solution to exercise positive
+   https://doi.org/10.1145/3586182.3615810.                                        habits in players with intellectual disabilities. In Anais
+Duan, P., Warner, J., Li, Y., and Hartmann, B. (2024).                             do XXIII Simpósio Brasileiro de Jogos e Entretenimento
+   Generating automatic feedback on ui mockups                                     Digital, pages 474–495, Porto Alegre, RS, Brasil. SBC.
+   with large language models.           In Proceedings of                         DOI: https://doi.org/10.5753/sbgames.2024.241189.
+   the 2024 CHI Conference on Human Factors in                                   Mora, A., Riera, D., González, C., and Arnedo-Moreno,
+   Computing Systems, CHI ’24, New York, NY,                                       J. (2017). Gamification: a systematic review of design
+   USA. Association for Computing Machinery. DOI:                                  frameworks. Journal of Computing in Higher Education,
+   https://doi.org/10.1145/3613904.3642782.                                        29:516–548. DOI: https://doi.org/10.1007/s12528-017-
+Giacobo, D. and de Souza, O. M. (2023). Gamifica-                                  9150-4.
+   uma solução gamificada para engajar alunos de                                 Mori, N. N. R., dos Passos Santos, J. P., Shimazaki,
+   ensino médio de um curso técnico em informática.                                E. M., Goffi, L. C. D., and Auada, V. G. C.
+   Anais do Computer on the Beach, 14:465–467. DOI:                                (2017).      Jogos e brincadeiras no desenvolvimento
+   https://doi.org/10.14210/cotb.v14.p465-467.                                     da atenção e da memória em alunos com deficiência
+Helen, S., Jenny, P., and Yvonne, R. (2019). Interaction                           intelectual.    Práxis Educativa, 12(2):551–569. DOI:
+   design: beyond human-computer interaction.                                      https://doi.org/10.5212/PraxEduc.v.12i2.0015.
+Hosseini, C., Humlung, O., Fagerstrøm, A., and                                   Neves, L. A. and Kanda, J. Y. (2016). Desenvolvimento e
+   Haddara, M. (2022).          An experimental study on                           avaliação de jogos educativos para deficientes intelectuais.
+   the effects of gamification on task performance.                                In Congreso Internacional de Informática Educativa
+   Procedia Computer Science, 196:999–1006. DOI:                                   (Conferência Internacional sobre Informática na
+   https://doi.org/10.1016/j.procs.2021.12.102.                                    Educação-TISE), page 612. Available at = https://
+IJsselsteijn, W. A., De Kort, Y. A., and Poels, K. (2013).                         www.tise.cl/volumen12/TISE2016/612-617.pdf,
+   The game experience questionnaire. Technical report,                            Access on 22 September 2025.
+   Technische Universiteit Eindhoven.                                            Nielsen, J. and Molich, R. (1990). Heuristic evaluation of
+Isasi, A. R., Basterretxea, A. L., Zorrilla, A. M.,                                user interfaces. In Proceedings of the SIGCHI conference
+   and Zapirain, B. G. (2013).             Helping children                        on Human factors in computing systems, pages 249–256.
+   with intellectual disability to understand healthy                              DOI: https://doi.org/10.1145/97243.97281.
+   eating habits with an ipad based serious game. In                             Organization, W. H. et al. (1992). The icd-10 classification
+   Proceedings of CGAMES’2013 USA, pages 169–173.                                  of mental and behavioral disorders. Technical report,
+   DOI: https://doi.org/10.1109/CGames.2013.6632628.                               WHO.          Available at:       https://www.who.int/
+Jadán-Guerrero, J., Avilés-Castillo, F., Buele, J., and                            publications/i/item/9241544228. Accessed on
+   Palacios-Navarro, G. (2023). Gamification in inclusive                          21 September 2025.
+   education for children with disabilities: Global trends                       Pagulayan, R. J., Keeker, K., Wixon, D., Romero, R. L., and
+   and approaches - a bibliometric review. In Gervasi, O.,                         Fuller, T. (2002). User-centered design in games, pages
+   Murgante, B., Rocha, A. M. A. C., Garau, C., Scorza,                            915–938. CRC Press.
+   F., Karaca, Y., and Torre, C. M., editors, Computational                      Pedreira, O., García, F., Brisaboa, N., and Piattini, M. (2015).
+   Science and Its Applications – ICCSA 2023 Workshops,                            Gamification in software engineering–a systematic
+
+<a id="pdf-p17"></a>
+### [PDF p.17] mapping. Information and software technology, 57:157– design with ai. Interactions, 31(1):24–31. DOI:
+- Locator: `R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf` · página **17** / 17
+
+A gamified solution to promote positive habits in children and adolescents with Intellectual Disabilities   Michalichem, Pereira and Rodrigues 2025
+
+
+
+  mapping. Information and software technology, 57:157–                            design with ai.          Interactions, 31(1):24–31. DOI:
+  168. DOI: https://doi.org/10.1016/j.infsof.2014.08.007.                          https://doi.org/10.1145/3637436.
+Pichiliani, T. C. P. B. (2020).       Gaia: Um Guia de                           Simões-Silva, V., Marques, A., Pinho, C., Pereira, D. G.,
+  Recomendações Sobre Design Digital Inclusivo para                                Oliveira, J. F., and Barros, M. L. (2022). Gamification
+  Pessoas com Autismo. Appris, 1ª edição edition.                                  applied to autism spectrum disorder. In Digital Therapies
+Poels, K., de Kort, Y. A., and IJsselsteijn, W. A. (2007).                         in Psychosocial Rehabilitation and Mental Health, pages
+  D3. 3: Game experience questionnaire: development of a                           163–186. IGI Global. DOI: http://doi.org/10.4018/978-1-
+  self-report measure to assess the psychological impact of                        7998-8634-1.ch008.
+  digital games. Technical report, Technische Universiteit                       Valle, J. W. and Connor, D. J. (2014). Ressignificando a
+  Eindhoven.                                                                       deficiência: da abordagem social às práticas inclusivas
+Pruitt, J. and Grudin, J. (2003).       Personas: practice                         na escola. AMGH Editora.
+  and theory. In Proceedings of the 2003 conference                              Venturelli, S. and Ferraz, D. P. d. A. (2019). A visão do
+  on Designing for user experiences, pages 1–15. DOI:                              professor sobre jogos digitais no ensino da matemática
+  https://doi.org/10.1145/997078.997089.                                           para alunos com deficiência intelectual: Estado da arte.
+Ryan, R. M., Rigby, C. S., and Przybylski, A. (2006). The                          Educação Matemática Pesquisa, 21(1):180–196. DOI:
+  motivational pull of video games: A self-determination                           https://doi.org/10.23925/1983-3156.2019v21i1p180-196.
+  theory approach. Motivation and emotion, 30:344–360.                           Viveiros, C. S. d., Figueiredo, S. M. d. S., Mori, R. M. S. C.,
+  DOI: https://doi.org/10.1007/s11031-006-9051-8.                                  Nascimento, M. H. M., Sousa, J. M. A., and Teixeira,
+Schell, J. (2008). The Art of Game Design: A book of lenses.                       E. (2023). Jogo da alimentação saudável: tecnologia
+  CRC press.                                                                       de prática educativa para crianças com síndrome de
+Schmidt, A., Elagroudy, P., Draxler, F., Kreuter, F.,                              down. Saude e pesqui.(Impr.), pages 11776–11776. DOI:
+  and Welsch, R. (2024).           Simulating the human                            https://doi.org/10.17765/2176-9206.2023v16n4.e11776.
+  in hcd with chatgpt:            Redesigning interaction

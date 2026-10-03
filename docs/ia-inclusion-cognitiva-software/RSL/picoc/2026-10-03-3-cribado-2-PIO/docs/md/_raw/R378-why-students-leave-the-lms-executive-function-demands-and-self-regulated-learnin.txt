@@ -1,0 +1,839 @@
+===== PDF PAGE 1 / 11 =====
+Why Students Leave the LMS: Executive Function Demands and
+  Self-Regulated Learning in Software Engineering Courses
+                Khawla Shnaikat                                              Ann Barcomb                                     Emily Marasco
+             University of Calgary                                      University of Calgary                              University of Calgary
+             Calgary, AB, Canada                                        Calgary, AB, Canada                                Calgary, AB, Canada
+          khawla.shnaikat@ucalgary.ca                                 ann.barcomb@ucalgary.ca                             eamarasc@ucalgary.ca
+
+Abstract                                                                                  in Software Engineering Courses. In 2026 IEEE/ACM 48th International
+Executive functions (EF)—including planning/organization, task                            Conference on Software Engineering (ICSE-SEET ’26), April 12–18, 2026, Rio
+                                                                                          de Janeiro, Brazil. ACM, New York, NY, USA, 11 pages. https://doi.org/10.
+initiation, working-memory management, cognitive flexibility, and
+                                                                                          1145/3786580.3786967
+help-seeking regulation—are foundational to engineering education
+and core software engineering practices. Yet little is known about
+how learning management systems (LMSs) support students who
+experience EF challenges in day-to-day coursework. We conducted                           1    Introduction
+an exploratory qualitative study using semi-structured interviews
+                                                                                          Executive functions (EF)—including planning/organization, task
+with seven engineering students both neurodivergent (ND) and
+                                                                                          initiation, working-memory management, cognitive flexibility,
+neurotypical—who self-reported EF difficulties, and analyzed the
+                                                                                          and help-seeking regulation—are foundational for engineering
+data thematically through a self-regulated learning (SRL) and EF
+                                                                                          study and core software engineering (SE) practices such as prob-
+lens. Participants reported recurring EF-linked difficulties: (i) un-
+                                                                                          lem decomposition, debugging, coordination, and collaboration
+clear or context-poor instructions prompting repeated re-reading
+                                                                                          [16, 27, 31]. The role of EF in engineering education is significant,
+and searches for external examples; (ii) a strong preference for brief
+                                                                                          and deficits in EF are linked to lower academic performance across
+visual/worked examples over dense text; (iii) peer-first help-seeking
+                                                                                          the general student population [5, 21, 23, 25]. The demands of post-
+outside the LMS and limited use of discussion boards perceived
+                                                                                          secondary education in fields like engineering pose even greater
+as inconvenient; (iv) calendars valued and checklists helpful when
+                                                                                          challenges for individuals with poor EF compared to other academic
+used consistently (but usage was uneven); (v) email as the primary
+                                                                                          disciplines [34].
+yet slow channel, with unease about formal messaging; (vi) grow-
+                                                                                             Focused research on the day-to-day challenges faced by SE stu-
+ing reliance on AI for instant feedback and community sites (e.g.,
+                                                                                          dents and on how to support them effectively in virtual learning
+Stack Overflow) for coding questions. Overall, students regarded
+                                                                                          environments (VLEs) and learning management systems (LMSs)
+LMS tools as necessary for organization but insufficient for timely,
+                                                                                          remains limited. The LMS is a course-administration platform (ma-
+low-effort clarification and support, leading to compensatory prac-
+                                                                                          terials, announcements, assignments, grading), whereas a VLE de-
+tices beyond the platform and increased cross-system switching.
+                                                                                          notes the broader set of online tools and spaces that support active
+We synthesize an EF–SRL–LMS alignment that locates where EF
+                                                                                          participation and knowledge building; a VLE may subsume the LMS
+load accumulates and derive a practice-oriented checklist. We ar-
+                                                                                          alongside interactive tools (e.g., webinar platforms, collaborative
+gue for a more personalized, automated layer of in-platform sup-
+                                                                                          documents). In practice, the terms are sometimes used interchange-
+port—adaptive, context-aware, and designed to reduce switching
+                                                                                          ably [10]. While VLE/LMS platforms are positioned to promote
+between multiple tools and platforms, to better sustain SRL across
+                                                                                          self-regulated learning (SRL) by helping students plan, monitor, and
+forethought, performance, and reflection while lowering EF load.
+                                                                                          reflect on their progress—capacities that are especially important
+                                                                                          in higher education [24]—we know far less about how well these
+CCS Concepts
+                                                                                          tools support SRL under EF demands in software engineering (SE)
+• Applied computing → Learning management systems; Ed-                                    coursework. In practice, EF domains such as planning/organization,
+ucation; Computer-assisted instruction.                                                   task initiation, working memory management, cognitive flexibil-
+                                                                                          ity, and help-seeking regulation can be strained by online study
+Keywords                                                                                  conditions like dense or ambiguous instructions, inconsistent use
+Executive function, Self-regulated learning, Learning management                          of calendars and announcements, fragmented help channels, and
+systems, Software engineering education, Neurodiversity                                   delayed responses. These conditions often require students (both
+ACM Reference Format:                                                                     neurodivergent and neurotypical students who struggle with EF) to
+Khawla Shnaikat, Ann Barcomb, and Emily Marasco. 2026. Why Students                       switch between multiple tools and platforms to assemble context
+Leave the LMS: Executive Function Demands and Self-Regulated Learning                     and obtain timely clarification, increasing EF load and disrupting
+                                                                                          SRL. Addressing this gap requires examining how such students
+                                                                                          utilize and perceive LMS tools and features for SRL, particularly in
+This work is licensed under a Creative Commons Attribution 4.0 International License.     help-seeking contexts, to inform more inclusive instructional prac-
+ICSE-SEET ’26, Rio de Janeiro, Brazil                                                     tices and platform use. We restrict the study to SE courses because
+© 2026 Copyright held by the owner/author(s).
+ACM ISBN 979-8-4007-2423-7/26/04                                                          that is where we teach and make platform decisions; this focus pre-
+https://doi.org/10.1145/3786580.3786967                                                   serves ecological validity for recommendations about LMS/VLE use
+
+
+
+
+                                                                                    128
+
+===== PDF PAGE 2 / 11 =====
+ICSE-SEET ’26, April 12–18, 2026, Rio de Janeiro, Brazil                                              Khawla Shnaikat, Ann Barcomb, and Emily Marasco
+
+
+(e.g., calendars, gradebooks, discussion boards, example provision-        gaps in the literature on day-to-day experiences of neurodivergent
+ing). While SE is the focus of our inquiry, our findings may be more       learners. Finally, Responses to support and help with EF (2.4) reviews
+broadly applicable to similar programs such as other engineering           supports discussed in the literature and highlights the limited evi-
+disciplines.                                                               dence for EF-targeted, LMS specific supports.
+   EF drives routine SE work (planning, initiation, working mem-
+ory, flexibility, help coordination) [18], yet most studies sort by        2.1    Executive Functions and Relevance to
+diagnosis rather than shared EF challenges, obscuring how neu-                    Software Engineering
+rodivergent and EF-challenged neurotypical students experience             EF are control processes that allow learners to plan work, keep
+LMS/VLEs for SRL and help-seeking. Using a transdiagnostic lens,           task information in mind, switch strategies, and initiate action [9].
+we foreground EF to surface barriers common across contexts and            In software engineering (SE) coursework, these processes are rou-
+to derive inclusive instructional and platform principles.                 tinely required by core activities such as decomposing problems
+   The goal is to examine how engineering students who expe-               into units of work, tracing code paths, and debugging faults. In
+rience EF challenges—both neurodivergent and neurotypical—                 particular, working memory, attention control, and cognitive flexibil-
+use and perceive LMS/VLE tools to self-regulate their learning             ity are essential to reading and modifying code, keeping multiple
+in software engineering (SE) courses, with particular attention            constraints in view, and shifting between abstraction levels during
+to help-seeking, and to identify barriers common across con-               decomposition and debugging. Deficits in these areas can hinder
+texts that can inform inclusive instructional and platform                 efficient code tracing and error localization [8, 16, 27, 31]. Essential
+practices.                                                                 EF domains are related to SE activities and core programming skills:
+   We conducted an exploratory qualitative interview study using
+semi-structured interviews with seven engineering students (neuro-              • Working memory and attention control. Reading and
+divergent and neurotypical) who self-reported EF challenges in SE                  modifying code requires maintaining variable states, call
+coursework. Interviews were recorded, transcribed, anonymized,                     chains, and constraints while filtering irrelevant details. Trac-
+and analyzed using reflexive thematic analysis through a self-                     ing execution paths and aligning outputs with specifications
+regulated learning SRL/EF lens.                                                    require sustained attention and the capacity to keep inter-
+   The contributions of this paper are as follows:                                 mediate representations active [8, 16, 27, 31].
+                                                                                • Cognitive flexibility and inhibitory control. Debugging
+     • We report an interview-based characterization of LMS use                    and refactoring involve shifting between abstraction levels
+       under EF demands in SE courses. From semi-structured inter-                 (e.g., algorithmic intent, data structures, control flow) and
+       views with engineering students (neurodivergent and neu-                    suppressing premature or irrelevant hypotheses. Flexibly
+       rotypical with EF challenges), we identify recurring issues                 switching strategies and perspectives supports efficient error
+       with clarity; a preference for brief visual/worked examples;                localization and solution revision [8, 16, 27, 31].
+       limited forum use; reliance on announcements and calen-                  • Planning and organization. Problem decomposition in
+       dars when kept current; slow email exchanges; and frequent                  assignments and projects depends on setting subgoals, or-
+       recourse to peers and external tools (e.g., AI and community                dering steps, and allocating effort across tasks (e.g., envi-
+       sites).                                                                     ronment setup, test execution, incremental implementation).
+     • We present a data-grounded EF–SRL–LMS alignment ma-                         Clear step ordering and explicit criteria provide an exter-
+       trix that links EF domains to SRL phases and LMS touch-                     nal scaffold for planning and prioritization during multistep
+       points, and identifies where cognitive load accumulates and                 programming work [2, 11, 20].
+       how cross-system switching affects help-seeking and self-                • Task initiation and sustained progress. Moving from
+       regulation.                                                                 understanding a requirement to making the first code change
+     • We provide practice-oriented implications for inclusive LMS                 reflects initiation. Short, explicit first actions (e.g., “run the
+       use in SE and principles for configuring instruction and LMS                failing test,” “replicate the error”) help translate intention
+       practices so that support is coherent, predictable, and largely             into action and support continued focus on the task sequence
+       within the LMS, thereby reducing cross-system switching                     [2, 11, 20].
+       and associated EF load.                                                  • Help-seeking regulation. Determining when to consult
+                                                                                   documentation, search for examples, or ask questions de-
+2    Background                                                                    pends on monitoring one’s understanding and the perceived
+This section is organized into four parts. First, Executive Functions              cost of interruption. Calibrated help-seeking supports timely
+(EF) and Relevance to Software Engineering (2.1) defines EF and                    clarification during programming and debugging without
+lists its core processes (e.g., planning/organization, working mem-                excessive disruption of task flow [17].
+ory, cognitive flexibility, task initiation) and links them to key SE
+activities such as program comprehension, decomposition, trac-
+                                                                           2.2    Self-Regulated Learning (SRL) and its
+ing, and debugging. Second, Self-Regulated Learning (SRL) and its                 relationship to EF
+relationship to EF (2.2) outlines the SRL cycle (forethought, perfor-      Self-Regulated Learning (SRL) is often described as a cyclical pro-
+mance/monitoring, reflection) and explains how SRL phases overlap          cess with three phases: forethought (planning and goal setting), per-
+with EF processes. Third, Students’ experiences with LMS/VLEs (2.3)        formance (strategy use and monitoring), and self-reflection (evalua-
+synthesizes reported challenges in online course platforms, noting         tion and adaptation) [36]. SRL provides a procedural complement to
+
+
+
+
+                                                                     129
+
+===== PDF PAGE 3 / 11 =====
+Why Students Leave the LMS: Executive Function Demands and Self-Regulated Learning in Software Engineering CoursesICSE-SEET ’26, April 12–18, 2026, Rio de Janeiro, Brazil
+
+
+EF. In the forethought phase, learners set goals, plan strategies, and                  course materials in a single, well-structured repository and sep-
+allocate time activities that draw on EF for planning/organization                      arating social from academic information are also recommended
+and inhibitory control (e.g., committing to a first step rather than                    to make essential resources easier to find and to avoid overload
+deferring). During performance, learners implement strategies, mon-                     [13]. In line with Universal Design for Learning, multiple content
+itor progress, manage attention, and regulate help-seeking engag-                       formats (visual, audio, text) are encouraged [15]. Finally, involv-
+ing EF processes of attention control and working memory while                          ing ND learners in the design process (co-design) is reported to
+suppressing distractions. In self-reflection, learners evaluate out-                    improve the fit of tools and programs, such as tailored strategies,
+comes, attribute causes, and adapt strategies, relying on cognitive                     peer mentoring, and study/life-skills modules [7]. Overall, these
+flexibility to revise plans. Across phases, SRL encompasses goal                        supports are described for ND students broadly rather than for dis-
+setting, strategic planning, time management, self-monitoring, help-                    crete EF profiles; among the reviewed sources, only one explicitly
+seeking regulation, and self-evaluation; extensive work links SRL to                    foregrounds EF-related challenges and calls for co-design to develop
+greater autonomy, persistence, and academic achievement [3, 4, 36].                     assistive tools responsive to those needs [4]. Beyond platform level
+                                                                                        adjustments, there is also evidence for the efficacy of in-person EF
+2.3     Students’ experiences with LMS/VLEs                                             focused interventions such as cognitive behavioral therapy (CBT),
+                                                                                        structured mentoring, and EF coaching. CBT typically combines
+Neurodivergent (ND) students (e.g., students with conditions such
+                                                                                        weekly small-group sessions and individual mentoring to build
+as ADHD, autism, and dyslexia) constitute a well-known group
+                                                                                        time-management and organizational skills [1, 30]. However, it is
+who often report EF challenges [4]. At the same time, they bring
+                                                                                        unclear how these translate to a VLE.
+valued strengths for software engineering such as creativity, pattern
+recognition, and divergent thinking—the ability to explore many
+                                                                                         3     Methodology
+alternatives and perspectives when solving a problem [22, 32, 33,
+35].                                                                                    This section describes our approach to studying how engineering
+   In software engineering courses that use LMS/VLEs, how stu-                          students who self-report EF difficulties engage with LMS tools in
+dents engage with course materials and workflows is crucial, yet the                    software engineering coursework.
+day-to-day LMS/VLE experiences of ND students are not well doc-
+umented. The available evidence is sparse and fragmented; where                          3.1     Study Design and Context
+studies are available, they frequently lack key context about the                       We conducted an exploratory qualitative interview study to obtain
+tools used (LMS or online learning tools), the learning modality                        detailed accounts of how engineering students who self-report EF
+(in-person, hybrid, online), and course characteristics. Students en-                   difficulties use LMSs in software engineering (SE) coursework. Semi-
+counter practical and technical difficulties when interacting with                      structured interviews are well suited to revealing practices, pain
+LMS/VLEs such as confusing interfaces, problems uploading assign-                       points, and rationales that surveys may miss [28]. Planning and
+ments, trouble entering provided passwords, missing spell-check                         reporting followed established guidance for empirical SE studies
+or clickable links, and challenges filtering what is relevant [13, 29].                 and community standards [26].
+They also face overwhelming or poorly structured pages, partic-                            Context. We focused on SE courses delivered in a web-facilitated
+ularly home pages that mix excessive or irrelevant content [13].                        mode on our institutional LMS, meaning primarily face-to-face
+Locating and retrieving key materials can be time-consuming when                        courses that use the LMS for core logistics (e.g., materials, announce-
+information is buried in deep folder hierarchies or scattered across                    ments, calendar, submissions, discussions) while instruction occurs
+pages and tools [13, 29]. Guidance on how to navigate and use                           in person [10, 19]. Grounding the study in this common LMS feature
+the system may be ineffective or poorly timed—for example, ori-                         set gave participants a shared frame of reference and made work-
+entation that takes place long before students actually need the                        flows comparable across interviews, while still allowing differences
+platform, or training that focuses on rarely used features [13]. In                     in how individual instructors configured their courses.
+addition, some expected interactions are not well supported (e.g.,
+phone numbers that are not clickable, tasks that require switching                       3.2     Participants and Sampling
+to other programs), which further complicates routine use [29].                          Eligibility criteria were (i) undergraduate or graduate engineering
+                                                                                         students who had completed or were enrolled in at least one SE
+2.4     Responses to support and help with EF                                            course on our institutional LMS, and (ii) self-reported difficulty
+Evidence on EF-targeted supports within LMS/VLEs and for SE                              in one or more EF domains (e.g., planning/organization, task ini-
+courses is limited; most reported adjustments are framed for ND                          tiation, working memory, cognitive flexibility, help-seeking). We
+learners in general rather than for specific EF difficulties. Com-                       anonymized identities and refer to interviewees as I1–I7 (I = inter-
+monly proposed measures include allowing learners to personalize                         viewee).
+what the system shows (e.g., views that surface only relevant items,
+use of color to signal state changes, selectable color schemes) and                      3.3     Recruitment and Setting
+enabling smoother connections between tools so the experience                            Participants were recruited via multiple channels: in-person out-
+feels seamless [13, 29]. Another approach emphasizes integrating                         reach using a standard oral script; LMS course-homepage posts;
+complementary tools directly into the platform—such as artificial                        posters shared through the Engineering Students’ Society and Stu-
+intelligence, learning analytics, text-to-speech readers, and spell-                     dent Accessibility Services; and email invitations. Interested stu-
+checkers to reduce friction in everyday tasks [4, 14, 29]. Organizing                    dents reviewed study information and completed a short consent
+
+
+
+
+                                                                                 130
+
+===== PDF PAGE 4 / 11 =====
+ICSE-SEET ’26, April 12–18, 2026, Rio de Janeiro, Brazil                                                  Khawla Shnaikat, Ann Barcomb, and Emily Marasco
+
+
+Table 1: Interviewees and number of SE courses studied (self-                CLARITY, T2: EXAMPLE-BASED LEARNING, T3: HELP CHAN-
+reported)                                                                    NELS, T4: TOOL CONSISTENCY, and T5: OFF-PLATFORM.
+
+                       Interviewee          # SE courses                     3.5     Data/Artifact Availability
+                                                                             Following recommendations on research data availability, we pro-
+                       I1                           12
+                                                                             vide an anonymized snapshot of the analysis artifacts used in this
+                       I2                           10                       study 1 .
+                       I3                           3
+                       I4                           4                        4     Results
+                       I5                           6                        We analyzed seven semi-structured interviews with engineering
+                       I6                           2                        students in SE coursework (neurodivergent and neurotypical) who
+                       I7                           2                        self-reported EF difficulties. Participants described how they used
+                                                                             LMS tools to self-regulate their learning and seek help. While LMS
+                                                                             platforms provided essential organizational functions, students re-
+                                                                             ported recurring challenges with clarity, accessibility, and commu-
+form. Recruitment materials described the study focus and were ap-
+                                                                             nication, closely tied to EF demands in planning/organization, task
+proved through the institutional ethics process. All interviews were
+                                                                             initiation, working memory, cognitive flexibility, and help-seeking
+conducted remotely by audio only. Interviews were semi-structured
+                                                                             regulation. Below, we present the main Themes (T) with illustra-
+and focused on help-seeking behaviors and perceived usefulness of
+                                                                             tive quotes and indicate (in parentheses) the EF domain(s) and SRL
+online tools and LMSes. The interviews lasted 35-55 minutes and
+                                                                             phase(s) primarily implicated.
+were conducted by the first author. We recruited seven participants:
+four who self-identified as neurodivergent (three with ADHD and
+one autistic) and three who identified as neurotypical but reported          4.1     How engineering students use and perceive
+difficulties in one or more EF domains (e.g., working memory, task                   LMS tools for SRL in SE course
+initiation). Prior to the interview, participants were guided through            (1) T1: INSTRUCTION CLARITY (EF: working memory, task ini-
+the consent form, which included brief explanations of relevant                      tiation; SRL: Plan/Do). Students described re-reading dense
+EF domains, such as impulse control (e.g., resisting distractions                    briefs and leaving the LMS to find clearer examples when
+and maintaining task priorities). The recruitment process was op-                    task information lacked structure or context. “The nature of
+portunistic (volunteer-based), not a polar design. Two additional                    slides . . . sometimes not being annotated and notes sometimes
+students expressed interest and self-identified as neurodivergent                    not being thorough enough.” (I2)
+but did not complete an interview; they are not included in the                  (2) T2: EXAMPLE-BASED LEARNING (EF: working memory;
+sample or analysis.                                                                  SRL: Plan/Do). Participants consistently preferred brief, step-
+                                                                                     wise demonstrations over text-heavy pages. “. . . for example,
+3.4     Data Collection and Analysis                                                 for a question. It provides the solution in steps and shows you
+Ethics and data handling. The study received institutional ethics                    how to do it properly.” (I6)
+approval. Participants gave informed consent and could pause
+or withdraw at any time. With permission, sessions were audio-               4.2     Help-seeking choices shaped by effort and
+recorded, transcribed, and de-identified at transcription. Audio and                 timeliness
+transcripts were stored on encrypted institutional drives with access
+restricted to the research team; each transcript and its audio share             (1) T3: HELP CHANNELS (EF: help-seeking regulation; SRL: Do).
+the same random study ID. The consent form allowed participants                      Students used multiple channels to seek help and weighed
+to optionally (i) indicate a neurodevelopmental condition from a                     effort against expected response time. Many consulted peers
+list or select “prefer not to say,” and (ii) if they did not identify as             via short messages or voice notes rather than posting in
+neurodivergent, indicate any EF difficulties they experience. These                  LMS forums. Discussion boards were viewed as occasionally
+attributes were used only in aggregate, stored separately from tran-                 useful but more convenient if anonymous posting were avail-
+scripts, and not linked to quoted IDs to reduce re-identification                    able; email to instructors was common yet often slow and
+risk.                                                                                sometimes felt inappropriate for quick questions. Some stu-
+    Data collection. Semi-structured interviews were conducted                       dents avoided formal or direct messaging altogether. “. . . The
+online. Each session lasted 25–35 minutes. The first author checked                  best way to reach out (to instructors and teacher assistants
+each transcript against the audio and wrote a short memo after the                   (TAs) is through email. It’s a little too formal, I believe, for me
+session.                                                                             to, like, send them a team’s message. And I often find email
+    Analysis. We used reflexive thematic analysis [6]. The first au-                 can take a while for them to respond. Or sometimes they don’t
+thor read transcripts multiple times, noted initial ideas, and created               respond at all.” (I1)
+codes. Some codes were informed by EF/SRL concepts; others were
+developed inductively from the data. Codes were compared across
+interviews and grouped into themes (T1–T5): T1: INSTRUCTION                  1 https://github.com/Shnaikat/Supplemental_Materials_For_ICSE_SEET_2026
+
+
+
+
+                                                                       131
+
+===== PDF PAGE 5 / 11 =====
+Why Students Leave the LMS: Executive Function Demands and Self-Regulated Learning in Software Engineering CoursesICSE-SEET ’26, April 12–18, 2026, Rio de Janeiro, Brazil
+
+
+4.3     Consistency and cross-platform switching                                                students sustain progress without leaving the LMS to look
+        under EF load                                                                           for clarifying materials.
+                                                                                            (3) T3: HELP CHANNELS. Uncertain or slow help pathways in-
+    (1) T4: TOOL CONSISTENCY (EF: planning/organization; SRL:
+                                                                                                crease the cost of help-seeking regulation (SRL: Do). Students
+        Plan/Do). Students valued LMS calendar supported planning
+                                                                                                weigh effort against expected response time; high-effort fo-
+        and progress tracking when instructors kept it current; in-
+                                                                                                rums and delayed email replies push them toward peers or
+        consistent use made it difficult to monitor deadlines and
+                                                                                                informal channels, which can fragment the workflow and
+        upcoming tasks. “. . . One of my profs did use the calendar and
+                                                                                                reduce predictability.
+        he said like I use the calendar religiously. Any due date will be
+                                                                                            (4) T4: TOOL CONSISTENCY. Calendars and checklists support
+        found in the calendar. I found that incredibly helpful.” (I1)
+                                                                                                planning/organization and monitoring (SRL: Plan/Do/Reflect)
+    (2) T5: OFF-PLATFORM (EF: cognitive flexibility, working mem-
+                                                                                                when they are used reliably. EF load accumulates when
+        ory; SRL: Plan/Do/Reflect). Students used external tools or
+                                                                                                updates are inconsistent: students must reconcile multi-
+        resources such as AI tools (e.g., ChatGPT) to obtain feedback
+                                                                                                ple sources, increasing tracking effort and the likelihood
+        on their work and relied on community forums (e.g., Stack
+                                                                                                of missed or late actions. Consistent, in-LMS feedback and
+        Overflow) for programming-specific questions. “I know I’m
+                                                                                                results (e.g., use of the grade book with clear next steps)
+        doing something wrong, but I can’t find where I’m doing it So
+                                                                                                reduce working-memory and monitoring demands during
+        I just take pictures of my work and then it tells me what step I
+                                                                                                reflection by keeping outcomes and follow-up actions in one
+        messed up. . . ” (I5)
+                                                                                                place.
+                                                                                            (5) T5: OFF-PLATFORM. Relying on external tools for explana-
+4.4     Summary of patterns                                                                     tions or coding support increases cognitive flexibility and
+Across themes, students regarded LMS tools as necessary for or-                                 working memory demands (SRL: Plan/Do). Switching be-
+ganization but insufficient for timely, low-effort clarification and                            tween systems (e.g., LMS, AI, community sites) requires con-
+support. As a result, they engaged in compensatory practices be-                                text reconstruction and item juggling, which raises the cost
+yond the platform (peers, AI, community sites), increasing cross-                               of maintaining task state and integrating feedback.
+system switching and the associated EF demands (working memory,                         To summarize, EF load accumulates where instructions lack struc-
+cognitive flexibility, and help-seeking regulation).                                    ture, help pathways are effortful or slow, course tools are inconsis-
+                                                                                        tently maintained, and students must switch across platforms to
+5     Discussion                                                                        obtain examples or feedback. Aligning LMS practices with these
+Our findings show that students who report EF challenges, includ-                       pressure points (clearer instructions with an explicit first step, con-
+ing neurodivergent students and neurotypical students with EF                           cise worked examples in-platform, a predictable help pathway, and
+difficulties, use LMS tools in ways constrained by clarity, consis-                     consistent calendars/announcements) is likely to reduce initiation
+tency, timeliness, and effort. While neurodivergent students some-                      costs, lower working-memory burden, and support more stable SRL
+times described these demands as more persistent or intense, the                        across Plan, Do, and Reflect.
+types of challenges were similar across groups, suggesting that the
+support strategies we propose address shared needs rather than                           5.2     Synthesize the Themes with the Literature
+group-specific differences. Below, we interpret the themes from                                  Findings
+Section 4, consolidate mechanisms via an EF–SRL–LMS alignment,                          In the literature findings, ND students reported practical and tech-
+and translate them into course/LMS practices.                                           nical issues when interacting with the LMS/VLE, including con-
+                                                                                        fusing interfaces, assignment-upload problems, difficulty entering
+5.1     Interpreting the themes: where EF load                                          passwords, lack of spell-check or clickable links, and difficulty iden-
+        accumulates                                                                     tifying relevant information. [13, 29]. In our data, this aligns with
+                                                                                        reports of inconsistent use of LMS tools, which raise EF demands
+Taken together, the themes indicate that EF costs concentrate at
+                                                                                        on attention and working memory.
+specific points in LMS-mediated coursework. Below we connect
+                                                                                           Furthermore, the students reported overwhelming or poorly
+each theme, to the EF domains and SRL phases most affected, and
+                                                                                        structured pages that mixed excessive or irrelevant content, espe-
+we indicate the likely consequence for students’ self-regulation.
+                                                                                        cially on course home pages. [13]. Our participants’ preference for
+    (1) T1: INSTRUCTION CLARITY. When task instructions are                             brief, worked/visual examples and difficulty with dense, text-only
+        unclear or lack context, working memory load increases and                      materials, fits this theme by showing how overload amplifies EF
+        task initiation is delayed (SRL: Plan/Do). Students re-read,                    load during day-to-day SE coursework.
+        hold partial details in mind, and search for missing expla-                        Students struggled to locate or retrieve key items because in-
+        nation and guidance, which elevates cognitive effort before                     formation was buried in deep folder structures or scattered across
+        any productive work begins.                                                     pages and tools. [13, 29]. Our results echo this for inconsistent cal-
+    (2) T2: EXAMPLE-BASED LEARNING. Brief, stepwise, visual                             endars/checklists and lacking feedback, which add planning and
+        or worked examples reduce working memory demands by                             working-memory costs and slow reflection/next-step decisions.
+        externalizing intermediate steps and expected outputs (SRL:                        Students encountered ineffective or poorly timed guidance on
+        Plan/Do). This lowers the cost of getting started and helps                     how to navigate and use the system (e.g., introductory VLE sessions
+
+
+
+
+                                                                                 132
+
+===== PDF PAGE 6 / 11 =====
+ICSE-SEET ’26, April 12–18, 2026, Rio de Janeiro, Brazil                                               Khawla Shnaikat, Ann Barcomb, and Emily Marasco
+
+
+scheduled long before use; coverage of rarely used features) [13].                 • Minimize cross-system switching: Keep essential expla-
+Our interviews extend this by showing that unclear or context-poor                   nations/examples inside the LMS; avoid required hops during
+assignment instructions, and the absence of an explicit “first step”                 Plan–Do–Reflect (T1—T5).
+increase initiation costs and repeated re-reading and looking for                  • Centralize feedback and next steps: Ensure outcomes
+other resources.                                                                     and forward actions live in one in-LMS location to support
+   The literature also notes issues when ND students interact with                   reflection (T4).
+VLEs. When the system expects user action, tasks can be hard
+to complete because supportive information is missing (e.g., non-
+clickable phone numbers; tasks that require switching to other               5.6     Insights From an Introductory Python
+software) [29]. We observe a related pattern—effortful or slow help
+pathways that push students to leave the LMS (email delays, low
+                                                                                     Course: EF–SRL–LMS Alignment and
+forum uptake), increasing cross-system switching and EF load (at-                    Implications for SE Teaching
+tention shifting, working-memory refresh).                                   Because all participants completed an introductory Python course,
+                                                                             their experiences illuminate how foundational software engineer-
+5.3     Extensions beyond literature findings                                ing activities appear in early coursework. Even introductory pro-
+                                                                             gramming requires students to interpret requirements, decompose
+Two recurring patterns in our interviews are only weakly identified
+                                                                             problems, iteratively develop and debug code, document decisions,
+in prior categorizations were: (i) peer-first help outside the LMS
+                                                                             review examples or peers’ work, and manage multiple deadlines.
+(personally or through short messages) as a lower-effort alternative
+                                                                             These activities place sustained demands on planning, working
+when in-LMS help feels slow or high-friction, and (ii) increasing
+                                                                             memory, cognitive flexibility, and help-seeking across the SRL
+reliance on AI tools for instant feedback and quick exemplars. Both
+                                                                             phases. Unlike many non-SE courses, students must coordinate
+reduce immediate interpretation effort but increase cross-system
+                                                                             multiple artifacts (e.g., code, tests, instructions, outputs) and reason
+switching, with implications for EF demands.
+                                                                             across representations, making LMS structure and instructional
+                                                                             design particularly consequential. The EF–SRL–LMS alignment
+5.4     EF–SRL–LMS alignment matrix (EF                                      matrix helps explain why SE courses require more intentional ped-
+        domains, SRL phases and LMS touchpoints)                             agogical and structural support, even at the introductory level.
+The alignment matrix (Table 2) summarizes where EF load accu-                   In the Plan phase, students translate task descriptions into ac-
+mulates across SRL phases and identifying the implicated LMS                 tionable steps and identify dependencies. Unclear goals, scattered
+touchpoints. Additionally, it presents different supports to help the        updates, or missing first steps increase planning overhead and hin-
+students to self-regulate their learning and reduce the potential            der task initiation. This effect is amplified in SE courses, where
+EF load. Below we illustrate these supports: (i) Clear and coherent          assignments often span multiple files or stages and early decisions
+assignment prompts (Task brief or description) reduce working-               shape later work. In the Do phase, students move between the
+memory demands and help students initiate tasks more quickly                 LMS, code editors, test outputs, documentation, and external re-
+(Plan/Do); (ii) consistent calendars/announcements support plan-             sources, increasing working-memory and cognitive-flexibility de-
+ning/monitoring (Plan/Do); (iii) one explicit help pathway with              mands. Reliance on StackOverflow, commented examples, and code-
+stated reply windows reduces the regulatory cost of help-seeking             explanation tools reflects the need for scaffolding when in-LMS
+(Do); (iv) minimizing cross-platform switching curbs cognitive-              resources lack clarity or immediacy. This pattern reflects a defin-
+flexibility and working-memory load (Plan/Do/Reflect); and (v) cen-          ing feature of SE learning, where understanding emerges through
+tralized feedback enables efficient reflection and next-step decisions       iterative testing, error interpretation, and comparison with exem-
+(Reflect).                                                                   plars rather than linear content consumption. In the Reflect phase,
+                                                                             fragmented feedback across systems makes it difficult for students
+5.5     Practice-oriented implications for inclusive                         to evaluate progress and refine debugging and problem-solving
+        LMS use in SE                                                        approaches.
+                                                                                These SE-specific demands directly motivate the checklist recom-
+To operationalize these supports, Table 3 provides a concise review          mendations. Clear task descriptions support initiation; standardized
+checklist for configuring instruction and LMS practices for more             organization reduces planning load; unified help pathways clar-
+inclusive learning environments.                                             ify where to seek assistance; minimizing cross-system switching
+Mapping the themes to the checklist calls for:                               supports focus across the Plan–Do–Reflect cycle; and centralized
+      • Structured assignment and course material descrip-                   feedback supports reflection. In SE courses, where learning depends
+        tions for initiation: Make task goals and first steps explicit;      on sustained engagement with complex, evolving artifacts, these
+        embed a short worked/visual example in-platform (T1–T2).             choices enable core practices such as abstraction, systematic de-
+      • Standardize organizational conventions: Use stable cal-              bugging, and iterative refinement. Together, they allow students
+        endar/announcement conventions across offerings to reduce            to focus cognitive resources on developing SE competencies rather
+        planning overhead (T4).                                              than managing logistical complexity.
+      • Unify help pathways: Provide one visible in-LMS channel                 As instructors use the LMS as the starting point for course tasks,
+        with typical response windows; avoid parallel, competing             students typically access assignments via the LMS/VLE. Instructors
+        channels (T3—T4).                                                    should place worked examples and key resources directly on the
+
+
+
+
+                                                                       133
+
+===== PDF PAGE 7 / 11 =====
+Why Students Leave the LMS: Executive Function Demands and Self-Regulated Learning in Software Engineering CoursesICSE-SEET ’26, April 12–18, 2026, Rio de Janeiro, Brazil
+
+
+                                               Table 2: EF–SRL–LMS Alignment Matrix for SE Courses
+
+
+ EF domain                        Plan (Forethought)                            Do (Performance/Monitoring)                  Reflect
+ Planning /                       LMS touchpoints: Calendar, An-                Supports: Visible “what’s next”              Supports: Clear location for
+ organization                     nouncements, Task brief.                      outline within the course shell.             grades/criteria and next actions.
+                                  Supports: Stable due-date conven-             Risk: Hidden dependencies; shift-            Risk: Feedback spread across tools.
+                                  tions; single location for changes.           ing requirements. Dependencies are           SE learning depends on integrating
+                                  Risk: Inconsistent calendars; scat-           common in programming assign-                feedback into subsequent itera-
+                                  tered updates. SE tasks often span            ments (e.g., function order, test            tions.
+                                  multiple files or milestones, ampli-          readiness).
+                                  fying planning costs when sched-
+                                  ules shift.
+ Task initiation                  LMS touchpoints: Task brief,                  Supports: Direct, in-LMS access to Supports: Short in-LMS prompt for
+                                  Resources.                                    examples and resources.            “what I did / what to improve”.
+                                  Supports: Concise goal state-                 Risk: Leaving LMS to find exam- Risk: Reflection pushed to external
+                                  ment; explicit first step; brief              ples and resources (peers/AI/Stack tools.
+                                  worked/visual example.                        Overflow). Code comprehension
+                                  Risk: Unclear or context-poor                 commonly relies on examples and
+                                  instructions → repeated re-reading.           comparisons.
+                                  SE assignments often lack a single
+                                  obvious starting point.
+ Working memory                   LMS touchpoints: Brief, Rubric.               Supports: Same-page access to in-            Supports: Compact summary of
+                                  Supports: Chunked sections, head-             structions and the submission area.          feedback and criteria in one place.
+                                  ings, criteria summary.                       Risk: Switching tabs to recall de-           Risk: Feedback scattered across
+                                  Risk: Long, dense pages without               tails. Context switching disrupts            emails and forums.
+                                  structure. Programming tasks al-              code tracing and debugging.
+                                  ready require tracking multiple
+                                  states and variables.
+ Cognitive flexibility            LMS      touchpoints:     Naviga- Supports: Minimize switching be-                         Supports: Unified view of out-
+                                  tion/layout.                      tween multiple tools and platforms                       comes and next steps within the
+                                  Supports: Consistent naviga- during tasks.                                                 LMS.
+                                  tion and page structure across Risk: LMS → email → forum →                                 Risk: Outcomes fragmented across
+                                  courses/terms (same menu labels AI → back (context loss), and the                          systems.
+                                  and locations).                   need to verify AI-generated expla-
+                                  Risk: Instructor-specific layouts nations (e.g., from ChatGPT) adds
+                                  and naming that diverge from the additional effort and disrupts task
+                                  standard.                         focus. SE work already requires
+                                                                    frequent shifts between represen-
+                                                                    tations (code, output, documenta-
+                                                                    tion).
+ Help-seeking                     LMS        touchpoints:       Help Supports: Timely replies; search-                       Supports: Allow anonymous posts
+ regulation                       block/FAQ, Discussion board able prior answers; clear tone ex-                             in discussion forums, but include
+                                  policy.                               pectations.                                          safeguards (e.g., review or re-
+                                  Supports: One explicit pathway; Risk: Forums perceived as incon-                           porting) to prevent inappropriate
+                                  stated response windows.              venient; email delays; discomfort                    content. Closure indicators (“An-
+                                  Risk: Parallel/competing channels. with formal messaging → shift to                        swered/Resolved”) and a defined es-
+                                  SE learners often seek rapid clarifi- peers/AI. External tools are fre-                    calation pathway for unanswered
+                                  cation to unblock progress.           quently used to interpret errors or                  posts.
+                                                                        code behavior.                                       Risk: Unresolved threads with
+                                                                                                                             no closure indicator or escalation
+                                                                                                                             route.
+
+
+
+
+                                                                                 134
+
+===== PDF PAGE 8 / 11 =====
+ICSE-SEET ’26, April 12–18, 2026, Rio de Janeiro, Brazil                                                           Khawla Shnaikat, Ann Barcomb, and Emily Marasco
+
+
+        Table 3: Course/LMS Review Checklist (yes/no)                                         Recommendation 2
+                                                                                             Begin each brief with a one-sentence goal, an explicit first
+ Question                                   Evidence to check                                step, and a small worked/visual example; use headings/bullets
+                                                                                             and list dependencies. Put all dates and changes in the LMS
+ Are all dates/changes presented in         Calendar consistency;                            calendar and link back to the assignment page.
+ a single, consistent place?                announcement location and
+                                            naming conventions.                              Provide one in-LMS help pathway with a posted reply window
+                                                                                          (e.g., 24–48h) and a clear escalation route; allow anonymous ques-
+ Is the first step of each task explicit One-sentence goal plus first action              tions with moderation: posts are reviewed by a TA or instructor
+ in the description?                     included with the task.                          before going live, or there is a reporting/flagging system so inap-
+                                                                                          propriate or off-topic content can be quickly removed. Keep prior
+ Can students access a short       Example link placed near the                           answers searchable. Keep feedback, rubric/criteria, and “what to
+ worked/visual example and related brief/resources (no external hop                       do next” in a single LMS location, and mark discussion threads
+ resources inside the LMS?         required).                                             “Answered/Resolved.”
+                                                                                          Why: A single, predictable pathway lowers the effort of help-
+ Is there one help channel with             “Where to ask” block visible;
+                                                                                          seeking and keeps reflection in one place; closure markers reduce
+ stated response windows?                   typical reply times; escalation path.
+                                                                                          uncertainty and unnecessary back-and-forth. Participants also dis-
+ Can students complete                      Count of external hops per task;
+                                                                                          cussed turning to AI tools such as ChatGPT when LMS-based help
+ Plan–Do–Reflect without leaving            centralized feedback and next                 felt unclear or slow, using them to obtain alternative explanations
+ the LMS?                                   steps.                                        or step-by-step reasoning. While this can lower working-memory
+                                                                                          demands and support task monitoring, students expressed concerns
+                                                                                          about accuracy and noted the added effort of verifying AI-generated
+assignment page (or in a single “Course Resources” hub) and refer-                        responses. A unified and easily accessible in-LMS help pathway
+ence them in each task. Keeping help where students start reduces                         therefore reduces unnecessary shifts to external tools and supports
+off-platform searching and rebuilding the context.                                        more reliable, trustworthy help-seeking within the course environ-
+Why: Concentrating resources on the assignment page lowers task-                          ment.
+initiation effort and working-memory load during performance.                             Risks addressed:
+Risks addressed:                                                                              • Help-seeking regulation (Plan): Parallel/competing chan-
+     • Task initiation (Plan/Do): Unclear or context-poor instruc-                              nels.
+        tions → repeated re-reading; leaving the LMS to find exam-                            • Help-seeking regulation (Do): Forums perceived as in-
+        ples/resources.                                                                         convenient; email delays; discomfort with formal messaging
+     • Working memory (Plan/Do): Long, dense pages without                                      → shift to peers/external tools including ChatGPT, which
+        structure; switching tabs to recall details.                                            students viewed as helpful for alternative explanations but
+                                                                                                risky to trust without additional verification).
+     Recommendation 1                                                                         • Help-seeking regulation (Reflect): Unresolved threads
+                                                                                                with no closure indicator or escalation route.
+   Put the worked example and key links on the assignment                                     • Working memory / Cognitive flexibility: Outcomes frag-
+   page (or a “Course Resources” hub) and point to them in each                                 mented across systems.
+   related task.                                                                              • Anonymous option (Potential risk for the support):
+EF demands spike at predictable points: unclear or unstructured                                 Inappropriate content if not moderated.
+task briefs (Plan/Do) and inconsistent organization of dates/updates
+(Plan/Do). Address these issues at their source by making the task                            Recommendation 3
+brief easy to scan and using the calendar as the single, reliable place                      Keep help and feedback in one predictable place in the LMS;
+for all deadlines and changes.                                                               avoid channel and tool switching during a task.
+Why: Clear, chunked briefs and a single source of truth for dates
+reduce repeated re-reading, guesswork about dependencies, and                             Organize the course so students can Plan, Do, and Reflect with min-
+off-platform searching.                                                                   imal extra effort. In practice, that means showing the goal and first
+Risks addressed:                                                                          step up front (Plan), keeping instructions/resources and submission
+     • Task initiation (Plan/Do): Unclear or context-poor instruc-                        together (Do), and putting feedback, criteria, and “what to do next”
+        tions → repeated re-reading; leaving the LMS to find exam-                        in one place (Reflect).
+        ples/resources.                                                                   Why: Small, consistent prompts at each phase lower task-initiation
+     • Planning/organization (Plan/Do): Hidden dependencies;                              effort, reduce page-hopping, and make next steps obvious.
+        shifting requirements; inconsistent calendars; scattered up-                      Risks addressed:
+        dates.                                                                                • Planning/organization (Plan/Do): Inconsistent calendars;
+     • Working memory (Plan/Do): Long, dense pages without                                      scattered updates; hidden dependencies; shifting require-
+        structure.                                                                              ments.
+
+
+
+
+                                                                                    135
+
+===== PDF PAGE 9 / 11 =====
+Why Students Leave the LMS: Executive Function Demands and Self-Regulated Learning in Software Engineering CoursesICSE-SEET ’26, April 12–18, 2026, Rio de Janeiro, Brazil
+
+
+      • Task initiation (Plan/Do): Unclear or context-poor instruc-                     these supports differentially benefit students with EF challenges
+        tions → repeated re-reading; leaving the LMS to find exam-                      compared to the broader student population. A light-touch, context-
+        ples/resources.                                                                 aware in-LMS assistant that offers just-in-time micro-supports and
+      • Working memory (Plan/Do): Long, dense pages without                             routes help within the LMS could be prototyped and compared
+        structure; switching tabs to recall details.                                    with current practice on EF-related outcomes and help-seeking
+      • Help-seeking       regulation        (Do/Reflect):   Paral-                     behavior. The supports in the matrix should also be operationalized
+        lel/competing channels; forum inconvenience and                                 in a reusable LMS course template that standardizes navigation
+        email delays → shift to peers/external tools; unresolved                        and labels, pre-populates assignment pages (goal, inputs, first step,
+        threads without closure/escalation.                                             worked-example slot, single help block with reply windows, central-
+      • Cognitive flexibility (Reflect): Outcomes and feedback                          ized feedback), and uses lightweight checks for required elements
+        fragmented across systems.                                                      and consistent naming and due dates; the effects of this template
+                                                                                        should be evaluated. Testing such templates across multiple insti-
+                                                                                        tutions and LMS platforms would further strengthen claims about
+      Recommendation 4
+                                                                                        transferability and generalizability. Longitudinal studies should fol-
+    Use a light-touch, EF-aware setup: Plan (goal, first step, dates/                   low cohorts across terms to test durability, including impacts on
+    dependencies), Do (instructions + example + submission to-                          EF load, task initiation, course completion, and retention. Finally,
+    gether), Reflect (feedback, criteria, and next actions in one                       precise reporting of context (course size, delivery mode, platform
+    place).                                                                             configuration, assignment types, response-time norms) and the
+                                                                                        development of reusable pattern catalogs or standards handbooks
+6     Conclusion                                                                        for EF-aware LMS practices would support synthesis across studies
+                                                                                        and speed adoption.
+In this section we provide suggestions for future work, discuss the
+study’s limitations, and summarize the paper.
+                                                                                         6.2     Limitations
+6.1     Future Work                                                                     We consider trustworthiness using Guba’s (1981) dimensions of
+                                                                                        credibility, transferability, dependability, and confirmability [12].
+Our study provides an initial interview-based account of how EF
+demands shape LMS use in SE courses and introduces two syn-                             6.2.1 Credibility. Credibility concerns the truth value of the find-
+thesis artifacts: the EF–SRL–LMS alignment and a course/LMS                             ings. Our analysis draws on direct participant quotations and an
+checklist. While the findings are not intended to be broadly general-                   interview guide explicitly aligned with EF/SRL domains (plan-
+izable, they offer actionable guidance for supporting self-regulated                    ning/organization, task initiation, working memory, cognitive flex-
+learning among students who experience EF challenges, including                         ibility, help-seeking), supporting a faithful reading of participants’
+neurodivergent learners, particularly in environments where LMSs                        accounts. Because the data are self-reported, they may include recall
+and VLEs are increasingly integrated into everyday study practices.                     errors (e.g., generalization) and social-desirability effects (e.g., over-
+Given the small, institution-specific sample and the use of a single                    stating desirable practices, underreporting reliance on peers/AI).
+LMS configuration, the findings should be interpreted as illustrative                   We did not triangulate with trace data (e.g., LMS logs). Some in-
+rather than representative of all SE contexts.                                          terpretations may therefore reflect participants’ perceptions rather
+    Future work should replicate the study with larger and more di-                     than observed behavior under real task constraints. To aid inter-
+verse cohorts across institutions, course levels, and delivery modes,                   pretation, we summarize prior literature on LMS use by students
+and should compare different LMS platforms and local course con-                        experiencing EF challenges in the Background section (2) section,
+ventions to test how robust the themes are. Such replications would                     synthesize the findings of the literature with our results in the Dis-
+help establish the extent to which the observed EF–LMS interactions                     cussion section (5) and draw on the first author’s experience with
+generalize beyond the present context and identify which supports                       student LMS practices to clarify terminology and workflows. These
+are broadly effective versus context-dependent. In particular, cross-                   steps provide context for readers’ judgment, but they do not replace
+institutional studies using different LMSs and instructional norms                      triangulation with trace data (e.g., LMS logs). Additionally, our
+would clarify which challenges stem from SE pedagogy itself versus                      small sample size may affect the credibility of the findings. Despite
+local platform or course design choices.                                                a nine-month recruitment effort, participation was likely limited by
+    Methods could be broadened through triangulation by combin-                         social stigma among ND students and the heavy time demands on
+ing interviews with LMS log data, timestamped communication                             engineering students. Additionally, our small sample size may affect
+records, and artifact analysis so that qualitative accounts and quan-                   the credibility of the findings. Despite a nine-month recruitment
+titative indicators can inform and check one another. The alignment                     effort, participation was likely limited by social stigma among ND
+and checklist should be turned into specific course changes and                         students and the heavy time demands on engineering students. To
+then evaluated in practice. Examples include clarifying briefs (goal                    mitigate low response rates, we employed multiple recruitment
++ first step + a short worked example embedded in the LMS), provid-                     strategies over the full nine-month period, including repeated in-
+ing a single in-LMS help pathway with stated reply windows, and                         person outreach using a standard script, LMS course-homepage
+centralizing feedback; these changes can be evaluated for effects on                    posts, and email invitations. When initial responses remained lim-
+time to clarity, help-seeking, cross-system switching, and perfor-                      ited, we extended recruitment to additional channels, including the
+mance or engagement. Evaluations should also examine whether                            Engineering Students’ Society and Student Accessibility Services,
+
+
+
+
+                                                                                 136
+
+===== PDF PAGE 10 / 11 =====
+ICSE-SEET ’26, April 12–18, 2026, Rio de Janeiro, Brazil                                               Khawla Shnaikat, Ann Barcomb, and Emily Marasco
+
+
+to reach students who might otherwise be underrepresented. Al-               6.3    Conclusion
+though two additional students completed the consent form and                This study examined how engineering students who report EF
+expressed interest, they did not proceed to the interview stage; no          challenges—both neurodivergent and neurotypical—use learning
+reasons were provided, a pattern consistent with barriers reported           management systems (LMSs/VLEs) to regulate their learning
+in prior work, such as time constraints and social stigma associated         and seek help in software engineering (SE) courses. Using semi-
+with neurodiversity.                                                         structured interviews (n=7) and thematic analysis through an
+                                                                             EF/SRL lens, we identified recurring barriers tied to EF demand:
+6.2.2 Transferability. Transferability addresses the applicability
+                                                                             unclear or context-poor instructions that prompt re-reading and
+of findings to other contexts. The sample (n=7) comprises en-
+                                                                             external searching; a strong preference for brief visual/worked
+gineering students (neurodivergent and neurotypical) who self-
+                                                                             examples; help-seeking shaped by effort and timeliness (forums
+reported EF difficulties and were studying SE courses delivered
+                                                                             seen as inconvenient; email primary but delayed; discomfort with
+in a web-facilitated LMS modality; this purposive sampling fits
+                                                                             formal messaging); organizational tools that help only when used
+the study purpose but is not representative of all SE students
+                                                                             consistently (gradebook, calendars); increasing reliance on AI and
+or institutions. LMS configurations and course conventions vary
+                                                                             community sites for explanations and coding support; and the lack
+across programs and instructors; therefore, some patterns (e.g.,
+                                                                             of feedback that complicates reflection and next-step decisions.
+calendar/announcement practices, help channels) may differ else-
+                                                                             Overall, students regarded LMS tools as necessary for organization
+where. Because our teaching and platform decisions occur within SE
+                                                                             but insufficient for timely, low-effort clarification and support, lead-
+courses, the study emphasizes SE settings; however, several mecha-
+                                                                             ing to compensatory practices beyond the platform and added EF
+nisms we describe (e.g., EF load associated with instructional clar-
+                                                                             load.
+ity, calendaring/announcement practices, and help-seeking work-
+                                                                                 We contribute two synthesis artifacts derived from the inter-
+flows) likely extend to other engineering domains that use simi-
+                                                                             views: (i) an EF–SRL–LMS alignment matrix that locates where
+lar LMS/VLE configurations. The transdiagnostic EF lens makes
+                                                                             EF demand accumulates across Plan/Do/Reflect phases and identi-
+the findings relevant across diagnostic labels (e.g., ADHD, autism,
+                                                                             fies implicated LMS touchpoints and present the needed supports,
+dyslexia), but it may not capture nuances unique to particular con-
+                                                                             and (ii) a course/LMS review checklist that translates these sup-
+ditions or to specific course formats (e.g., studio/lab, project-based,
+                                                                             ports into practical, in-platform actions to be followed when design-
+large lecture, fully online). LMS configurations and local teaching
+                                                                             ing SE courses. Together, they motivate a light-touch, EF-aware con-
+conventions also vary across programs. We therefore describe the
+                                                                             figuration for SE courses: clear assignment briefs (goal + first step),
+course teaching modality and LMS context in the Methodology sec-
+                                                                             consistent calendars/announcements, embedded worked-example
+tion (3), so the study should be treated as adaptable, not universal.
+                                                                             files and resources inside the LMS, a single in-LMS help pathway
+Additionally, the EF–SRL–LMS alignment and checklist synthe-
+                                                                             with stated reply windows, and centralized feedback with next steps.
+size interview findings from our setting. They should be read as
+                                                                             These principles aim to reduce switching between multiple tools
+data-informed guidance, not as tested interventions. Demonstrating
+                                                                             and platforms, thereby lowering working-memory and cognitive-
+effectiveness will require follow-up evaluation in varied contexts
+                                                                             flexibility demands while supporting self-regulated learning.
+and attention to cognitive equity among student groups.
+                                                                                 Our analysis is qualitative and context-specific; findings should
+6.2.3 Dependability. Dependability asks whether another re-                  be read as data-informed guidance rather than validated interven-
+searcher, using the same materials and steps, would reach broadly            tions. We encourage instructors and course teams to apply the
+similar themes. We aimed for consistency by (i) using the same               checklist to their local LMS configurations and to report outcomes,
+semi-structured interview guide for all participants, (ii) keeping           and researchers to evaluate the alignment and checklist in varied
+a single codebook with brief definitions and example quotes, and             SE contexts (e.g., different course sizes/modalities and LMS setups).
+(iii) applying the same routine to each transcript (first-pass coding,       Clear reporting of course context and terminology will also aid
+grouping into themes, and re-checking earlier transcripts after any          comparison across studies and help build a cumulative, evidence-
+revisions). We also noted when the guide or codebook changed and             based approach to accessible and inclusive software engineering
+why, so we can ensure the reliability of the results.                        education.
+
+6.2.4 Confirmability. Confirmability concerns whether the find-
+ings reflect the data rather than the researcher. We sought to limit re-
+searcher influence by: (i) maintaining an audit trail (dated interview-
+guide revisions, a versioned codebook with brief notes on edits, and         Acknowledgments
+a short decision log linking coding choices to emerging themes); (ii)        We would like to thank Dr. Laleh Behjat, Dr. Ronnie De Souza San-
+keeping reflexive memos that recorded prior assumptions and how              tos, Dr. Diwakar Krishnamurthy, and Dr. Yves Pauchard from the
+they were addressed; (iii) actively seeking and reporting disconfirm-        Department of Electrical and Software Engineering at the Schulich
+ing cases when refining themes; and (iv) anchoring claims in direct          School of Engineering, University of Calgary. We are also grateful
+participant quotations. Together, these steps provide a traceable            to McKenna Sperry, the high-performance team development spe-
+chain of evidence from interview excerpts to codes to themes. Even           cialist from Psychology Department, University of Calgary. Finally,
+so, coding by a single analyst and the use of an a priori EF/SRL lens        we extend our thanks to Jess Lopes, the neurodiversity support
+are constraints that may have foregrounded certain mechanisms                advisor in Student Accessibility Services (SAS) at the University of
+(e.g., working-memory load, initiation costs).                               University of Calgary.
+
+
+
+
+                                                                       137
+
+===== PDF PAGE 11 / 11 =====
+Why Students Leave the LMS: Executive Function Demands and Self-Regulated Learning in Software Engineering CoursesICSE-SEET ’26, April 12–18, 2026, Rio de Janeiro, Brazil
+
+
+References                                                                                   [23] K. Norwalk, J. M. Norvilitis, and M. G. MacLean. 2009. ADHD symptomatology
+ [1] A. D. Anastopoulos, J. M. Langberg, L. D. Eddy, P. J. Silvia, and J. D. Labban.              and its relationship to factors associated with college adjustment. Journal of
+     2021. A Randomized Controlled Trial Examining CBT for College Students                       Attention Disorders 13, 3 (Nov. 2009), 251–258. doi:10.1177/1087054708320441
+     with ADHD. Journal of Consulting and Clinical Psychology 89, 1 (2021), 21–33.                Epub 2008 Jul 31.
+     doi:10.1037/ccp0000553                                                                  [24] Grace Onodipe, Jared Keengwe, and Adrienne Cottrell-Yongye. 2020. Using
+ [2] Hala Annabi, Karthika Sundaresan, and Annuska Zolyomi. 2017. It’s Not Just                   learning management system to promote self-regulated learning in a flipped
+     About Attention to Details: Redefining the Talents Autistic Software Developers              classroom. Journal of Teaching and Learning with Technology 9, 1 (2020), 3–18.
+     Bring to Software Development. http://hdl.handle.net/10125/41827. In Hawaii             [25] Rebecca Petersen, Ellen Lavelle, and A. J. Guarino. 2006. The Relationship between
+     International Conference on System Sciences. ACM, 5501–5510. doi:10.24251/                   College Students’ Executive Functioning and Study Strategies. Journal of College
+     HICSS.2017.663                                                                               Reading and Learning 36, 2 (2006), 59–67. doi:10.1080/10790195.2006.10850188
+ [3] R. A. Barkley. 2011. The important role of executive functioning and self-              [26] Paul Ralph, Nauman bin Ali, Sebastian Baltes, Domenico Bianculli, Jessica Diaz,
+     regulation in ADHD. Journal of Child Neuropsychology 113, 21 (2011), 41–56.                  Yvonne Dittrich, Neil Ernst, Michael Felderer, Robert Feldt, Antonio Filieri, et al.
+ [4] Amy Benians. 2022. Learning analytics from a neurodiversity perspective: Con-                2020. Empirical standards for software engineering research. arXiv preprint
+     siderations for a co-design project. Scope Contemporary Research Topics: Learning            arXiv:2010.03525 (2020), 21 pages. doi:10.48550/arXiv.2010.03525
+     and Teaching 11 (2022), 27–34.                                                          [27] Anthony Robins, Janet Rountree, and Nathan Rountree. 2003. Learning and
+ [5] J. Biederman, C. Petty, R. Fried, J. Fontanella, A. E. Doyle, L. J. Seidman, and             Teaching Programming: A Review and Discussion. Computer Science Education
+     S. V. Faraone. 2006. Impact of psychometrically defined deficits of executive                13, 2 (2003), 137–172. doi:10.1076/csed.13.2.137.14200
+     functioning in adults with attention deficit hyperactivity disorder. American           [28] Carolyn Budinger Seaman. 1999. Qualitative Methods in Empirical Studies of
+     Journal of Psychiatry 163, 10 (Oct. 2006), 1730–1738. doi:10.1176/ajp.2006.163.10.           Software Engineering. IEEE Trans. Software Eng. 25 (1999), 557–572. https:
+     1730                                                                                         //api.semanticscholar.org/CorpusID:2531090
+ [6] Virginia Braun and Victoria Clarke. 2006. Using thematic analysis in psychology.        [29] Beth Sennett. 2016. Adjusting existing VLEs to support students with dyslexia.
+     Qualitative research in psychology 3, 2 (2006), 77–101.                                      Journal of Neurodiversity in Higher Education 2 (2016), 88–103.
+ [7] Charlotte Brownlow, Neil Martin, Donna-Marie Thompson, Amelia Dowe, Ding                [30] Mary V Solanto and Anouk Scheres. 2021. Feasibility, acceptability, and effec-
+     Abawi, Jessica Harrison, and Sonja March. 2023. Navigating University: The                   tiveness of a new cognitive-behavioral intervention for college students with
+     design and evaluation of a holistic support programme for autistic students in               ADHD. Journal of Attention Disorders 25, 14 (2021), 2068–2082.
+     higher education. Education Sciences 13, 5 (2023), 1–14.                                [31] John Sweller. 1988. Cognitive Load During Problem Solving: Effects on Learning.
+ [8] Christine M. Cunningham and William S. Carlsen. 2017. Teaching Engineering                   Cognitive Science 12, 2 (1988), 257–285. doi:10.1207/s15516709cog1202_4
+     Practices. Journal of Science Teacher Education 25, 2 (2017), 197–210. doi:10.1007/     [32] Constance Syharat, Alexandra Hain, and Arash E Zaghi. 2020. Diversifying the
+     s10972-014-9380-5                                                                            engineering pipeline through early engagement of Neurodiverse learners. In
+ [9] Adele Diamond. 2013. Executive functions. Annual Review of Psychology 64                     American Society for Engineering Education. 14 pages.
+     (2013), 135–168. doi:10.1146/annurev-psych-113011-143750                                [33] Christa L Taylor, Arash Esmaili Zaghi, James C Kaufman, Sally M Reis, and
+[10] E. Dobozy and P. Reynolds. 2010. From LMS to VLE or From Supermarkets to                     Joseph S Renzulli. 2020. Divergent thinking and academic performance of stu-
+     Airports: Classifying eLearning Platforms Using Metaphors. In Learning and                   dents with attention deficit hyperactivity disorder characteristics in engineering.
+     Design Conference. 92–103.                                                                   Journal of Engineering Education 109, 2 (2020), 213–229.
+[11] Kiev Gama and Aline Lacerda. 2023. Understanding and Supporting Neurodiverse            [34] Cindy Veenstra, Eric Dey, and Gary Herrin. 2009. A Model for Freshman Engi-
+     Software Developers in Agile Teams. https://doi.org/10.1145/3613372.3613384.                 neering Retention. Advances in Engineering Education 1 (01 2009), 33 pages.
+     In Brazilian Symposium on Software Engineering. ACM, 497–502. doi:10.1145/              [35] Karen D Wang, Jake McCool, and Carl Wieman. 2024. Exploring the learning
+     3613372.3613384                                                                              experiences of neurodivergent college students in STEM courses. Journal of
+[12] Egon G Guba. 1981. Criteria for assessing the trustworthiness of naturalistic                Research in Special Educational Needs (2024), 505–518.
+     inquiries. Educational Technology Research and Development 29, 2 (1981), 75–91.         [36] Barry J Zimmerman. 2002. Becoming a self-regulated learner: An overview.
+[13] Laurence Habib, Gerd Berget, Frode Eika Sandnes, Norun Sanderson, Pia Kahn,                  Theory into practice 41, 2 (2002), 64–70.
+     Siri Fagernes, and Anita Olcay. 2012. Dyslexic students in higher education
+     and virtual learning environments: an exploratory study. Journal of Computer
+     Assisted Learning 28, 6 (2012), 574–584.
+[14] Kornélia Lazányi. 2023. The Role of AI in Higher Education. https://scholars.unh.
+     edu/honors/842. In International Conference on Management, Enterprise, Bench-
+     marking. 113–125.
+[15] Maja Lebenicčnik, Ian Pitt, and Andreja Istenič Starčič. 2020. Optimal multimedia
+     combination for students with dyslexia. https://doi.org/10.51936/MYHK6939.
+     Metodološki Zvezki 17, 2 (2020), 30–48. doi:10.51936/MYHK6939
+[16] Raymond Lister, Elizabeth Adams, Sue Fitzgerald, William Fone, John Hamer,
+     Morten Lindholm, Robert Mccartney, Jan Moström, Kate Sanders, Otto Seppälä,
+     Beth Simon, and Lynda Thomas. 2005. A Multi-National Study of Reading and
+     Tracing Skills in Novice Programmers. ACM SIGCSE Bulletin 36 (01 2005), 119–150.
+     doi:10.1145/1044550.1041673
+[17] Dastyni Loksa, Lauren Margulieux, Brett Becker, Michelle Craig, Paul Denny,
+     Raymond Pettit, and James Prather. 2022. Metacognition and Self-Regulation in
+     Programming Education: Theories and Exemplars of Use. ACM Transactions on
+     Computing Education 22, 4 (2022), 1–31.
+[18] S. Mareva, The CALM Team, and J. Holmes. 2024. Mapping neurodevelopmental
+     diversity in executive function. Cortex 172 (2024), 204–221. doi:10.1016/j.cortex.
+     2023.11.021
+[19] Florence Martin and B. Oyarzun. 2018. Distance Learning: Standards, Perspectives,
+     and Best Practices of Online Education. EdTech Books.
+[20] Meredith Ringel Morris, Andrew Begel, and Ben Wiedermann. 2015. Under-
+     standing the Challenges Faced by Neurodiverse Software Engineering Em-
+     ployees: Towards a More Inclusive and Productive Technical Workforce. https:
+     //doi.org/10.1145/2700648.2809841. In International Conference on Computers &
+     Accessibility. ACM, 173–184. doi:10.1145/2700648.2809841
+[21] B. A. Munro, L. L. Weyandt, M. E. Marraccini, and D. R. Oster. 2017. The re-
+     lationship between nonmedical use of prescription stimulants, executive func-
+     tioning and academic outcomes. Addictive Behaviors 65 (Feb. 2017), 250–257.
+     doi:10.1016/j.addbeh.2016.08.023 Epub 2016 Aug 15.
+[22] L Murphy, T Makhlouf, S Daly, and C Seifert. 2023. “Exploring Other People’s
+     Mind, Exploring Your Own Mind”—A Story of Divergent Thinking from Mechan-
+     ical Engineering Practice. In American Society for Engineering Education. ASEE,
+     11 pages.
+
+
+
+
+                                                                                       138

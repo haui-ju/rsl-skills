@@ -1,0 +1,2056 @@
+# The Experience of Using Artificial Intelligence for the
+
+> Fuente PDF: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · técnica **locator index** (página + ancla) + chunks Graphify
+
+## Metadata
+- Stem: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c`
+- PDF: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf`
+- DOI: `10.15187/adr.2024.07.37.3.167`
+- Pages: `29`
+- Structured_at: `2026-10-03T23:23:19+00:00`
+- Technique: `pdf-page-locators + heading-chunks`
+
+## Locator index (qué hay y en qué página del PDF)
+
+| Kind | Label | PDF page | MD anchor |
+|------|-------|----------|-----------|
+| abstract | Abstract / blurb | 1 | `#abstract` |
+| concept | R566 | ? | `#concept-r566` |
+| concept | experience | ? | `#concept-experience` |
+| concept | using | ? | `#concept-using` |
+| concept | artificial | ? | `#concept-artificial` |
+| concept | intelligence | 1 | `#concept-intelligence` |
+| concept | disabled | ? | `#concept-disabled` |
+| concept | evaluation | ? | `#concept-evaluation` |
+| finding | This study is based on understanding their characteristics and lives and proposes service … | 1 | `#finding-this-study-is-based-on-understanding-the` |
+| finding | Methods This study consisted a literature review, user research, and experience component … | 1 | `#finding-methods-this-study-consisted-a-literatur` |
+| finding | In field research and user surveys through digital Ethnography, their understanding of lif… | 1 | `#finding-in-field-research-and-user-surveys-throu` |
+| finding | Through this, the direction of service development was finally derived by analyzing the fa… | 1 | `#finding-through-this-the-direction-of-service-d` |
+| finding | Results The study resulted in four key service design strategies. | 1 | `#finding-results-the-study-resulted-in-four-key-s` |
+| finding | First, personalized user interface and user experience(UI/UX) design for each type of deve… | 1 | `#finding-first-personalized-user-interface-and-u` |
+| page | p.1: The Experience of Using Artificial Intelligence for the | 1 | `#pdf-p1` |
+| page | p.2: 요구되기 때문에(MOHW, 2020), 자립 생활에 대한 정책 및 서비스 지원 부족으로 자립 생활을 지속하지 | 2 | `#pdf-p2` |
+| page | p.3: 셋째, 도출된 경험요인에 대해 발달장애인 돌봄 가족과 관련 복지 서비스 종사자를 대상으로 Kano 모델 | 3 | `#pdf-p3` |
+| page | p.4: 모두 포함한다(Brisenden, 1989; Morris, 2004). 즉, 발달장애인의 자립생활은 장애인 스스로 생활을 영위할 | 4 | `#pdf-p4` |
+| page | p.5: 차이가 있다는 점이다(Collins, 2015). | 5 | `#pdf-p5` |
+| page | p.6: J. Koh, & S. J. Shin, & | 6 | `#pdf-p6` |
+| page | p.7: 먼저, 이해관계자지도(Stakeholder Map)를 통해 핵심 이해관계자를 파악하였으며, 현장 조사를 통해 성인 | 7 | `#pdf-p7` |
+| page | p.8: Table 6 Destination information of field research | 8 | `#pdf-p8` |
+| page | p.9: 공간에 대한 시청각적 정보를 습득할 수 있다는 이점을 가지며(Blythe M. and Cairns P, 2010) 사용자 경험 | 9 | `#pdf-p9` |
+| page | p.10: Table 8 Index for digital ethnography | 10 | `#pdf-p10` |
+| page | p.11: 서비스의 경험구성요인을 재구성하였다[Table 10]. | 11 | `#pdf-p11` |
+| page | p.12: reddit(2024) 생성형 AI기반 검색 | 12 | `#pdf-p12` |
+| page | p.13: 서비스 개발에 적용하고자 Kano 모델을 활용하였다(Kano, 1984). | 13 | `#pdf-p13` |
+| page | p.14: Table 13 Kano evaluation table | 14 | `#pdf-p14` |
+| page | p.15: 개발을 위해 실증연구를 수행하고자 하였다. 조사 방법은 예비 조사와 동일하게 Google Forms를 활용해 | 15 | `#pdf-p15` |
+| page | p.16: 4. 4. 경험요인별 Kano 모델 및 고객만족계수 분석 결과 | 16 | `#pdf-p16` |
+| page | p.17: 시 조작법이 간단(B-1)’은 Kano 모델과 Timko 고객만족계수 모두 일원적 품질로 분류되어 조작에 소통과 | 17 | `#pdf-p17` |
+| page | p.18: 무관심 요소 2개 등으로 나타났다. 돌봄 구분에 따라 평가 상 차이가 나타난 항목은 다음 [Table 18]과 같다. | 18 | `#pdf-p18` |
+| page | p.19: 장애 유형에 따라 평가 상 차이가 나타난 항목은 다음 [Table 19]와 같다. | 19 | `#pdf-p19` |
+| page | p.20: Table 19 Characteritics of customer satisfaction based on disability type | 20 | `#pdf-p20` |
+| page | p.21: 자립을 위한 인공지능 기술 기반 커뮤니티 서비스 연구 결과에 따라 개발 영역을 도출하였다[Table 21]. | 21 | `#pdf-p21` |
+| page | p.22: 고객 만족 및 불만족도에 미치는 영향도에 따라 도출된 상위 우선순위의 서비스 경험구성요인 [Table | 22 | `#pdf-p22` |
+| page | p.23: Kano 모델을 통해 분석한 경험구성요인 평가에서 차이를 보였던 변인은 돌봄 그룹 구분, 장애 유형 구분, | 23 | `#pdf-p23` |
+| page | p.24: 인공지능 기술 기반 커뮤니티 서비스 단계를 전, 중, 후로 구분하였으며, [Figure 1]에서 도출되었던 | 24 | `#pdf-p24` |
+| page | p.25: 도출된 경험구성요인에 기초하여 Kano 모델 활용 측정 도구를 제작하여 발달장애인의 자립 이해관계자를 | 25 | `#pdf-p25` |
+| page | p.26: 1. Baker, B., Mills, K. A., McDonald, P., & Wang, L. (2023, July). AI, Concepts of Intell | 26 | `#pdf-p26` |
+| page | p.27: 13. Jeong, J. Y. (2016). An evaluation research on the quality components for the service | 27 | `#pdf-p27` |
+| page | p.28: 31. Moon, D. Y., & Yu, Y. M. (2021). Analysis of Conceptualization of Community Care Serv | 28 | `#pdf-p28` |
+| page | p.29: 하는 인공지능 기술 기반의 커뮤니티 서비스에 필요한 경험구성요인 도출 후, Kano 모델을 활용한 설문 조사와 | 29 | `#pdf-p29` |
+
+## Abstract
+<a id="abstract"></a>
+
+Background The purpose of this study is to identify and evaluate the experience components of artificial intelligence technology-based community services that develop strategies to support the independent living of adults with developmental disabilities. This study is based on understanding their characteristics and lives and proposes service scenarios based on this. Methods This study consisted a literature review, user research, and experience component evaluation. The theory of self-reliance and characteristics of the developmentally disabled was considered to derive constituent factors, and the attributes necessary for artificial intelligence technology and community services that can help with this were derived. In field research and user surveys through digital Ethnography, their understanding of life and contextual experiences were reflected and synthesized with the results derived from the previous theoretical review. After deriving the experience components necessary for community services based on artificial intelligence technology that support the self- reliance of adult developmentally disabled people, a survey using the Kano model and a Timko customer satisfaction coefficient were used to evaluate the service experience components. Through this, the direction of service development was finally derived by analyzing the factors that need to be applied first, and this was verified through in-depth interviews with experts. Results The study resulted in four key service design strategies. First, personalized user interface and user experience(UI/UX) design for each type of developmental disability is essential. Second, appropriate arrangement of necessary functions to assist interactions is crucial. Third, a behavioral induction system should be implemented to enable individuals with developmental disabilities to independently select and decide on services. Fourth, a robust operating system must be established to ensure safety and trust. Conclusions According to the derived strategy, a scenario of artificial intelligence technology-based community service for the independent living of adult developmentally disabled people according to the type of disability and the stage of independent living experience was proposed.
+
+## Keywords
+
+- _(none auto-detected)_
+
+## Concept index (graph hooks + página)
+
+<a id="concept-r566"></a>
+### [PDF p.?] Concept: R566
+- Locator: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · página **?**
+
+<a id="concept-experience"></a>
+### [PDF p.?] Concept: experience
+- Locator: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · página **?**
+
+<a id="concept-using"></a>
+### [PDF p.?] Concept: using
+- Locator: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · página **?**
+
+<a id="concept-artificial"></a>
+### [PDF p.?] Concept: artificial
+- Locator: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · página **?**
+
+<a id="concept-intelligence"></a>
+### [PDF p.1] Concept: intelligence
+- Locator: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · página **1**
+
+<a id="concept-disabled"></a>
+### [PDF p.?] Concept: disabled
+- Locator: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · página **?**
+
+<a id="concept-evaluation"></a>
+### [PDF p.?] Concept: evaluation
+- Locator: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · página **?**
+
+
+## Findings index (graph hooks + página)
+
+<a id="finding-this-study-is-based-on-understanding-the"></a>
+### [PDF p.1] Finding: This study is based on understanding their characteristics and lives and proposes service scenarios based on this.
+- Locator: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · página **1**
+
+<a id="finding-methods-this-study-consisted-a-literatur"></a>
+### [PDF p.1] Finding: Methods This study consisted a literature review, user research, and experience component evaluation.
+- Locator: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · página **1**
+
+<a id="finding-in-field-research-and-user-surveys-throu"></a>
+### [PDF p.1] Finding: In field research and user surveys through digital Ethnography, their understanding of life and contextual experiences were reflected and synthesized with the results derived from the previous theoretical review.
+- Locator: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · página **1**
+
+<a id="finding-through-this-the-direction-of-service-d"></a>
+### [PDF p.1] Finding: Through this, the direction of service development was finally derived by analyzing the factors that need to be applied first, and this was verified through in-depth interviews with experts.
+- Locator: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · página **1**
+
+<a id="finding-results-the-study-resulted-in-four-key-s"></a>
+### [PDF p.1] Finding: Results The study resulted in four key service design strategies.
+- Locator: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · página **1**
+
+<a id="finding-first-personalized-user-interface-and-u"></a>
+### [PDF p.1] Finding: First, personalized user interface and user experience(UI/UX) design for each type of developmental disability is essential.
+- Locator: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · página **1**
+
+
+## Relevance hooks
+### Theme relevance: software engineering and accessibility
+### Theme relevance: cognitive accessibility and neurodiversity
+### Theme relevance: evaluation metrics and WCAG
+
+## Sections (detected in PDF)
+
+_(no numbered sections auto-detected)_
+
+
+## Page chunks (texto por página del PDF)
+
+_Cada heading es un nodo Graphify. El label incluye la página para volver al PDF sin releer todo._
+
+<a id="pdf-p1"></a>
+### [PDF p.1] The Experience of Using Artificial Intelligence for the
+- Locator: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · página **1** / 29
+
+The Experience of Using Artificial Intelligence for the
+                           Disabled: Evaluation of Community Service Experience
+                           Factors and Proposal of Strategies for Self-reliance of
+                           the Developmentally Disabled
+                           Leerang Jeong1, Yoori Koo2*
+                           1
+                            Department of Service Design, Graduate School of Industrial Art, Master, Hongik University, Seoul,
+                           Korea
+                           2
+                            Department of Service Design, Graduate School of Industrial Art, Professor, Hongik University, Seoul,
+                           Korea
+
+
+
+                           Abstract
+                           Background        The purpose of this study is to identify and evaluate the experience components of
+                           artificial intelligence technology-based community services that develop strategies to support the
+                           independent living of adults with developmental disabilities. This study is based on understanding their
+                           characteristics and lives and proposes service scenarios based on this.
+                           Methods          This study consisted a literature review, user research, and experience component
+                           evaluation. The theory of self-reliance and characteristics of the developmentally disabled was considered
+                           to derive constituent factors, and the attributes necessary for artificial intelligence technology and
+                           community services that can help with this were derived. In field research and user surveys through
+                           digital Ethnography, their understanding of life and contextual experiences were reflected and synthesized
+                           with the results derived from the previous theoretical review. After deriving the experience components
+                           necessary for community services based on artificial intelligence technology that support the self-
+                           reliance of adult developmentally disabled people, a survey using the Kano model and a Timko customer
+                           satisfaction coefficient were used to evaluate the service experience components. Through this, the
+                           direction of service development was finally derived by analyzing the factors that need to be applied first,
+                           and this was verified through in-depth interviews with experts.
+                           Results         The study resulted in four key service design strategies. First, personalized user interface
+                           and user experience(UI/UX) design for each type of developmental disability is essential. Second,
+                           appropriate arrangement of necessary functions to assist interactions is crucial. Third, a behavioral
+                           induction system should be implemented to enable individuals with developmental disabilities to
+                           independently select and decide on services. Fourth, a robust operating system must be established to
+                           ensure safety and trust.
+                           Conclusions       According to the derived strategy, a scenario of artificial intelligence technology-based
+                           community service for the independent living of adult developmentally disabled people according to the
+                           type of disability and the stage of independent living experience was proposed.
+                           Keywords          Design Research, Service Design, Service Experience, User Research, AI-based Service, AI
+                           for Disabiliity, Human-centered AI, Developmental Disability, Community Service
+
+Copyright : This is
+an Open Access article     This work was done by 2024 Hongik University Master’s degree thesis.
+
+distributed under the
+terms of the Creative      *Corresponding author: Yoori Koo (yrkoo@hongik.ac.kr)
+
+Commons Attribution
+Non-Commercial             Citation: Jeong, L., & Koo, Y. (2024). The Experience of Using Artificial Intelligence for the Disabled: Evaluation of
+License (http://           Community Service Experience Factors and Proposal of Strategies for Self-reliance of the Developmentally Disabled
+
+creativecommons.           [Special Issue]. Archives of Design Research, 37 (3), 167-195.
+
+org/licenses/by-
+nc/3.0/), which permits    http://dx.doi.org/10.15187/adr.2024.07.37.3.167
+
+unrestricted educational
+and non-commercial use,    Received : Feb. 01. 2024 ; Reviewed : Jun. 26. 2024 ; Accepted : Jun. 26. 2024
+
+provided the original      pISSN 1226-8046 eISSN 2288-2987
+
+work is properly cited.
+
+
+
+
+                                                                                                                                     www.aodr.org   167
+
+<a id="pdf-p2"></a>
+### [PDF p.2] 요구되기 때문에(MOHW, 2020), 자립 생활에 대한 정책 및 서비스 지원 부족으로 자립 생활을 지속하지
+- Locator: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · página **2** / 29
+
+1. 서론
+
+
+                       		        1. 1. 연구의 배경 및 목적
+                       발달장애인은 많은 장애유형 중에서도 자기표현 및 자기결정 등의 자립 역량이 부족하거나 불가능한 경우가
+                       많으며, 신체장애인과 다르게 겉으로 드러나지 않는 정신장애와 중복장애 비율 또한 높은 편이다(Lee et
+                       al., 2016). 그 중에서도 성인 발달장애인들은 장애 수준, 교육적인 지원 부족, 사회적인 인식과 협조의 부족,
+                       국가의 정책 부족 등으로 인해 많은 어려움을 겪는다(Kim, 2020). 최근 장애인의 자립생활이 중요시되면서
+                       당사자가 필요로 하는 지원을 받으면서 스스로 생활할 수 있도록 돕는 일련의 활동이 중요시되고 있다. 이는
+                       ‘탈시설 및 지역사회 내 자립생활’의 패러다임으로 변화되면서 거주시설에서 생활하던 발달장애인이 퇴소하여
+                       지역사회에서 생활하는 사례가 증가하고 있다. 하지만 발달장애인은 전형적인 돌봄과 달리 평생 지원이
+                       요구되기 때문에(MOHW, 2020), 자립 생활에 대한 정책 및 서비스 지원 부족으로 자립 생활을 지속하지
+                       못하고 시설로 돌아가게 되거나 지역사회에서 소외된 생활을 하는 등 더 큰 어려움에 직면하고 있다.
+                       이들의 자립을 위한 사회참여를 방해하는 요인들은 여러 가지가 있지만, 그 가운데서도 의사소통과 대인관계의
+                       어려움, 상황에 적합한 사회적 기술 사용의 어려움 등으로 지역사회에의 참여나 통합에 어려움과 아울러
+                       개인의 심리, 사회적 고립과 사회적 안녕에 부정적인 영향을 미칠 수 있다(Hotton & Coles, 2016). 이에 따라
+                       사회참여를 위한 의사소통을 돕고, 자립 생활을 지속할 수 있도록 발달장애인 간에 서로 연결하며 이를 위해
+                       필요 서비스를 스스로 선택하고 결정할 수 있도록 지원이 필요하다.
+
+
+                       이를 돕기 위해 인공지능 기술 활용의 중요성이 강조되고 있다. 인공 지능이 장애인을 위한 사회적 포함과
+                       접근성을 지원하는 주목할 만한 도구임이 입증되면서 이미지, 소리 및 표현 인식과 같이 장애인들의 삶을
+                       지원하거나 또는 변화시킬 수 있는 가능성에 대해 학제 간 많은 연구가 이뤄지고 있다(WHO, 2019). 하지만,
+                       장애인 10명 중 1명만이 보조 기술과 그 제품에 접근할 수 있는 실정이며(Bugtan, 2018) 초기 설계 단계부터
+                       서비스 수혜자가 포함되지 않고 장애에 대한 이해가 부족한 상태로 암묵적으로 편향된 서비스가 제공되고
+                       있다(Nilanjan Chakrabort et al, 2023).
+                       특히 발달장애인은 장애 중에서도 다양한 양상이 나타나기 때문에 상당수의 다중 장애를 가진 실제 사용자
+                       경험을 반영하지 못하고 있는 실정이다(Arthur Theil et al., 2022). 이는 장애를 위한 인공지능 기술이 병리
+                       측면에서 치료법 위주의 기술로만 활용될 뿐, 장애인의 경험과 삶의 맥락을 고려하여 자립을 지원하거나
+                       다양한 측면에서의 사회 참여 기회로 이어지지 못하는 한계를 갖는다(Stramondo, 2019; Williams and
+                       Gilbert, 2019). 또한, 발달장애인은 다른 물리적 장애와 달리 표면적으로 잘 드러나지 않고 내면적이며,
+                       개인별 다양한 양상을 띠고 있어 이들의 삶과 경험에 대해 이해하고 기술을 개발하는 것이 중요하다(Os Keys,
+                       2020).
+                       따라서 본 연구의 목적은 성인 발달장애인의 자립 생활을 지원하기 위한 인공지능 기술 기반 커뮤니티
+                       서비스의 경험구성요인을 도출 및 평가하고, 이를 기반으로 발달장애인을 위한 인공지능 기술 기반의 서비스
+                       전략 및 시나리오를 제안하는 데 있다. 이를 통해 발달장애인 자립 생활 패러다임에 대한 사용자 요구를
+                       충족시키고 향후 발달장애인을 위한 인공지능 서비스 설계 시 적용되어야 하는 우선사항에 대한 이론적 근거를
+                       제시하고자 한다. 궁극적으로 발달장애인의 삶과 경험을 바탕으로, 수혜자인 인간 중심적 관점에서의 인공지능
+                       기술 활용 연구의 미래 조망과 사회적 논의 활성화에 기여하고자 한다.
+
+
+                       		        1. 2. 연구의 방법 및 범위
+                       본 연구는 성인 발달장애인의 자립을 돕는 인공지능 기술 기반 서비스디자인 전략을 제안하는 것을
+                       목적으로 장애의 관계적 모델 관점에서의 인공지능 기술 활용에 관한 연구를 진행하였다. 본 연구의 대상은
+                       발달장애인의 생애주기 중 성인기에 한정하여 다루었으며, 장애 유형은 발달장애인권리보장법을 기준으로
+                       자폐성 장애, 지적 장애와 이와 복합된 장애가 있는 발달장애인을 대상으로 하였다.
+
+
+
+
+168 Archives of Design Research 2024. 07. vol 37. no 3
+
+<a id="pdf-p3"></a>
+### [PDF p.3] 셋째, 도출된 경험요인에 대해 발달장애인 돌봄 가족과 관련 복지 서비스 종사자를 대상으로 Kano 모델
+- Locator: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · página **3** / 29
+
+연구 목적 달성을 위해 서비스디자인 관점에 기반을 둔 연구방법을 활용하여 다음과 같이 4단계로 진행되었다.
+첫째, 문헌 연구를 통해 성인 자달장애인의 삶과 특성, 장애에 수반되는 생활의 어려움을 이해하였으며, 이후
+자립에 필요한 요소를 정립하여 성인 발달장애인을 위한 커뮤니티 서비스로 범위를 한정하였다.
+둘째, 서비스 수혜자인 성인 발달장애인을 중심으로 문제점을 발견하고 구체적 니즈와 해결점을 도출하고자
+현장조사와 디지털 에스노그라피 방법을 통해 발달장애인의 생활맥락 및 자립 여정을 분석하였다. 또한 실질적
+서비스 개발을 구체화하고자 인공지능 기술 사례분석을 진행하고, 커뮤니티 서비스의 구성요인을 도출하였다.
+결과를 종합하여 성인 발달장애인의 자립을 돕기 위한 서비스 기회 영역을 도출하고 커뮤니티 서비스의
+경험구성요인을 도출하였다.
+셋째, 도출된 경험요인에 대해 발달장애인 돌봄 가족과 관련 복지 서비스 종사자를 대상으로 Kano 모델
+설문 조사를 실시하였다. 품질요인에 대한 결과분석을 통해 서비스 경험구성요인을 평가하였으며, Timko
+고객만족계수의 만족 및 불만족계수에 따라 우선 적용이 필요한 요소를 최종 도출하였다.
+넷째, 최종 도출한 요소를 검증하고 실제 서비스 구현을 위해 고려가 필요한 점을 파악하고자 전문가
+심층 인터뷰를 진행하였다. 연구 결과를 종합하여 사용자 유형 및 서비스 개발 방향성을 구체화하였으며,
+최종적으로 성인 발달장애인의 자립을 위한 인공지능 기술 기반 커뮤니티 서비스 시나리오를 제안하였다.
+위 내용을 바탕으로 진행된 연구 프로세스는 다음과 같다[Table 1].
+
+
+Table 1 Flowchart of the Research
+                             이론적 고찰을 통한 발달장애인 자립 현황 파악 및 문제 요인 도출
+                          성인 발달장애인과 자립에 대한 선행 연구 분석을 통한 한계점 파악
+                      성인 발달장애인의 자립을 위한 인공지능 기술 기반 커뮤니티 서비스 개념 재정립
+                                               ↓
+                                       사용자 조사 및 경험구성요인 도출
+                   성인 발달장애인 커뮤니티 서비스 요구사항
+    목적                                                 인공지능 활용 범위 분석 및서비스 아이디어 도출
+                        및 개선 필요 영역 분석
+   방법론            이해관계자 맵, 현장조사,디지털 에스노그라피                     경험구성요인 구조화
+                                               ↓
+                                           경험구성요인 평가
+    목적           경험구성요인별 품질 특성 평가와우선순위 도출               서비스 시나리오 개발을 위한페르소나 도출
+   방법론                    Kano모델과 고객만족계수                Kano모델의 그룹별 차이에 따른 변인 분석
+                                               ↓
+                                    경험구성요인 검증 및 서비스 아이디어 구체화
+    목적                                    서비스 수혜자 중심의 서비스 개발
+   방법론                       전문가 심층 인터뷰                          페르소나
+                                               ↓
+               성인 발달장애인의 자립을 위한 인공지능 기술 기반 커뮤니티 서비스 디자인 방향 및 시나리오 제안
+
+
+
+
+2. 이론적 고찰
+
+
+		         2. 1. 발달장애인 자립의 한계와 관련 커뮤니티 서비스
+2020년 통계청 조사에 따르면 1세부터 40세까지 장애인구 316,229명 중 발달장애가 161,276명(51%)으로
+가장 많은 분포를 차지하고 있다. 발달장애(Developmental Disability)라는 용어는 1970년 미국의 발달장애
+서비스 및 시설 건축법에서 처음으로 그 개념이 대두되었으며, 이후 장애유형으로 분류되었다. 발달장애의
+개념은 범주적 정의에서 기능적인 것으로 전환되었고, 점차 맥락적인 것으로 변화되었으며, 장애를 개인의
+기능적 문제가 아닌 환경과의 상호작용에 대한 문제로 바라보면서 사회통합과 지역사회 생활에 대한 중요성이
+강조되었다. ICF는 사회통합과 지역사회 생활을 강조하고 있으며, UN 장애인권리협약 또한 제19조(자립적
+
+
+
+
+                                                                         www.aodr.org   169
+
+<a id="pdf-p4"></a>
+### [PDF p.4] 모두 포함한다(Brisenden, 1989; Morris, 2004). 즉, 발달장애인의 자립생활은 장애인 스스로 생활을 영위할
+- Locator: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · página **4** / 29
+
+생활 및 지역사회에의 동참)에서 협약 당사국은 모든 장애인이 다른 사람과 동등한 선택을 통하여 지역
+                       사회에서 살 수 있는 동등한 권리를 가짐을 인정하고 지역사회 통합 및 참여를 촉진하기 위해야 함을 규정하고
+                       있다. 즉, 지역사회로부터의 소외 또는 격리를 예방하기 위하여 지역사회 생활을 지속하고 각종 가정 내 지원
+                       서비스를 제공받음으로써 자립 생활을 보장해야 함을 강조하고 있다.
+                       이때 자립 생활은 아무런 지원을 받지 않고도 본인을 돌볼 수 있는 신체적 또는 지적 능력이 온전한 상태에만
+                       국한되는 것이 아니며, 당사자가 필요로 하는 지원을 받으면서 스스로 생활할 수 있도록 돕는 일련의 활동을
+                       모두 포함한다(Brisenden, 1989; Morris, 2004). 즉, 발달장애인의 자립생활은 장애인 스스로 생활을 영위할
+                       수 있는 경우는 물론, 스스로 할 수 없는 경우에도 당사자가 자신에게 필요한 서비스를 선택하고 결정하며,
+                       이를 실행하는 데 영향력을 행사하면서, 자신의 독립을 유지할 수 있다면 가능한 것으로 볼 수 있다(Northway,
+                       2015). 발달장애는 장애 중에서도 다양한 증상이 나타나기 때문에 이러한 다중 장애를 가진 사용자의 실제
+                       경험과 특성을 이해하고, 스스로 생활을 이어나갈 수 있도록 지원이 필요하다.
+
+
+                       Table 2 Characteristics of people with developmental disabilities
+                          분류                                            내용                          연구자
+                                   - 주의집중의 3요소(지속시간, 주의집중의 범위, 초점) 부족                          Park & Shin(2016)
+                         인지적       - 선택적 주의(중요한 자극특성의 변별)와 처리 능력 떨어짐                       Ra, Kong, & Chang, (2018)
+                          특성       - 일반적으로 장기적 정보를 공유하지만, 단기 기억 한계                                 Lee(1995)
+                                   - 정보를 효과적으로 조작하는 능력이 부족                                        Choi(2010)
+                                   - 조음장애가 자주 발생하고, 구어 발달의 지연, 제한된 어휘, 부정확한 문법 사용,
+                         행동적         반향어 등을 포함한 언어장애를 보임                                       Son & Lee(2019)
+                          특성       - 앞뒤로 몸이나 손 흔들기, 제자리 뛰기, 발끝으로 걷기, 등 무의미한 반복적인 행동             Lee et al(2017)
+                                   - 위협이나 해를 끼치는 행동이나 도전 행동과 습관성 고집
+                                   - 모방과 우발학습 능력이 부족하며, 일반화와 전이 어려움
+                         학습적       - 학습이 느리고 비효율적이며 학업성취 어려움                                 Hwang et al.(2010)
+                          특성       - 추상적 및 상징적 사고 능력, 추상적 자료 활용 능력 부족                         Lee et al.(2011)
+                                   - 계획성 부족, 여러 응용문제를 해결에 대한 어려움
+                                   - 감정조절 어려움, 우울감 형성 및 정서가 안정되어 있지 않음                          Wan, Odell, &
+                         심리적       - 과잉행동이나 무기력감을 번갈아보이기도 하며 주위에 무관심                             Lewis(1982)
+                          특성       - 일상생활이나 교육경험을 통한 좌절과 거부로 인한 실패 경험                             Kim(2008)
+                                   - 학습된 무기력으로 인한 낮은 자아존중감                                     Park et al.(2012)
+                                   - 타인의 마음을 파악하거나 정서와 동기를 읽지 못함
+                                   - 언어의 숨은 뜻에 대한 이해가 극히 제한되어 있어 농담이나 비유를 이해하지 못하므로
+                         사회적                                                                Carter & Hughes(2007)
+                                     정상적인 대화가 어려운 경우가 많음
+                          특성                                                                     Bang(2018)
+                                   - 상황 적응 능력 부족
+                                   - 사람들과 어울려 놀기보다 혼자만의 세계에서 놀기를 좋아함
+
+
+
+                       따라서 발달장애인이 기본적 권리인 자립 생활을 보장받기 위해서는 당사자의 지역사회 통합 및 참여를 돕고
+                       필요한 서비스를 선택하고 결정하도록 발달장애인의 특성을 고려한 정보 공유 및 관계 연결을 위한 커뮤니티
+                       서비스가 필요하다.
+                       이에 본 연구는 발달장애인의 자립을 돕는 커뮤니티 서비스의 개념을 정립하고자, 발달장애인의 자립을 위한
+                       관련 선행 연구와 커뮤니티 서비스 사례를 살펴본 결과 다음과 같은 한계점이 지적된다.
+
+
+                       첫째, 발달장애인이 가지고 있는 기본적 특성으로 인해 온라인 서비스 사용에 어려움을 가지고 있으며, 이를
+                       고려하여 UI/UX에 반영한 사례가 드물다. 이는 스스로 서비스를 사용할 수 있도록 지속적인 참여 유도에도
+                       영향을 미치기 때문에 다양한 양상을 띠는 발달장애인의 유형과 개인적 특성에 맞춤화하여 지원하는 것이
+                       중요하다(Kim & Kang, 2012).
+
+
+                       둘째, 발달장애인은 의사소통과 대인관계의 어려움, 상황에 적합한 사회적 기술 사용의 어려움 등으로
+                       상호관계 형성에 한계를 가지고 있다(Hotton & Coles, 2016). 이를 돕기 위해 자조집단 프로그램이 운영되고
+                       있지만 국내 발달장애인의 자립을 위한 자조집단은 오프라인으로만 운영되고 있으며, 당사자가 주도적으로
+                       활성화시키지 못하는 등 그 한계가 분명하여 이를 위한 서비스 지원이 필요한 실정이다. 지역사회의 일부 또는
+
+
+
+
+170 Archives of Design Research 2024. 07. vol 37. no 3
+
+<a id="pdf-p5"></a>
+### [PDF p.5] 차이가 있다는 점이다(Collins, 2015).
+- Locator: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · página **5** / 29
+
+일원이 되어 지역사회 안에서 생활하는 것과 지역사회에 살지만 지역사회에서 소외된 생활을 하는 것에는 큰
+차이가 있다는 점이다(Collins, 2015).
+
+
+셋째, 발달장애인 당사자가 지원 서비스를 선택하고 결정하기 위한 정보 접근성이 떨어지고 얻을 수 있는 정보
+수준도 천차만별이다. 이는 스스로 일상생활과 의사결정 과정에서 자신의 생활을 조정·관리할 수 있도록 돕지
+못함과 지원 서비스를 이용할 때조차 가족과 외부에 의존하게 됨을 의미한다. 이로 인해 자립에 대한 준비 없이
+시설을 떠나게 된 발달장애인이 경우, 사회에서 소외되어 시설에 재입소를 원하는 등의 한계가 있다.(Baek et
+al., 2017).
+
+
+따라서, 성인 발달장애인의 지속적 자립 생활을 위해서 발달장애인이 가진 기본 특성을 고려하여 ‘i) 자발적
+참여’를 촉진하고 ‘ii) 환경과의 상호작용’이 가능하도록 보조하며, 이를 실행할 수 있도록 ‘iii) 지원 서비스
+수혜’ 측면에서의 서비스 고려가 필요하다.
+
+
+Table 3 Community Service Area forIndependence Living of Adult Developmental Disabilities
+                              발달장애인 자립 영역                                                   발달장애인 자립 지원
+              ICF(WHO)            Brisenden, Morris          Northway                       커뮤니티 서비스 영역
+
+  이동성 / 자기관리 / 가정생활                     독립성                   독립 유지             →            A. 자발적 참여
+       커뮤니케이션/ 대인관계 /
+         주요 생활 영역 /                    사회참여                사회 영향력 행사            →           B. 환경과의상호작용
+       공동체, 사회 및 시민 생활
+        기초 학습과 적용 /
+                                         안녕            지원 서비스 선택및 결정            →           C. 지원서비스 수혜
+       일반적 업무와 요구사항
+
+
+		            2. 2. 발달장애인의 자립을 위한 커뮤니티 서비스 및 인공지능(AI) 기술 선행 연구 분석
+본 절에는 선행 연구 분석을 통해 커뮤니티 서비스의 경험요인과 성인 발달장애인의 특성으로 겪게 되는
+어려움을 도울 수 있는 인공지능 활용 서비스 사례를 조사 및 분석하였다. 먼저 선행 연구 분석을 통해 수집한
+커뮤니티 서비스 경험요인은 다음과 같다[Table 4].
+
+
+Table 4 Expericence components of community service
+ 영역       세부 요인                                       정의                                           연구자
+                         공간과 시간 제약이 없어 심리적 접근성이 전제                                              박언규(2011)
+         접근 용이성          비동시성, 다대다 통신, 쌍방향성 등과 같은 편리함과 접근 용이성과 같은 특징을
+                                                                                               Becker(1998)
+                         가짐
+  A.                                                                                         강효진, 이아름, 권규현
+  자        신뢰성           신뢰할 수 있는 공간 구축을 위해 계정의 행동과 신원 검증
+                                                                                                 (2017)
+  발
+  적                                                                                           Mckenna, Green,
+         사용 편의성          자신의 생각과 의견을 자유롭게 표현
+  참                                                                                           Gleason(2002)
+  여                                                                                             M. Alavi, & D.
+           유희성           이용자들의 자발적인 참여를 이끌어 내도록 동기부여
+                                                                                               Leidner (2001)
+                         사용자의 특성 기반, 각 그룹별 차별화된 서비스를 제공함으로써 유연한 사용                           강효진, 이아름, 권규현
+         개인 맞춤성
+                         경험 지원                                                                   (2017)
+  B.                                                                                         김재욱, 최지호 및 한계
+         조작 용이성          원활한 의사소통이 커뮤니티 몰입에 영향을 미침
+  환                                                                                             숙(2002)
+  경
+                         공동체의 가입과 탈퇴가 자유롭기 때문에 구성원 유지를 위해서는 공동체
+  과                                                                                           Valterson(1998)
+          활동 지원          의식 확립 중요
+  의
+  상                      정보에 의한 공통 관심사나 지식을 가지고 구성                                              최재영(2016)
+  호
+  작      의사소통 지원         구성원간 대인관계를 목적으로 이용하여 관계 형성                                          하준식, 동학림(2023)
+  용
+
+
+
+
+                                                                                                www.aodr.org     171
+
+<a id="pdf-p6"></a>
+### [PDF p.6] J. Koh, & S. J. Shin, &
+- Locator: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · página **6** / 29
+
+강효진, 이아름, 권규현
+                               전문가 연계성        기존의 외부 시스템, 서비스, 자원을 활용하여 플랫폼의 연계성을 높임
+                                                                                                                    (2017)
+                                 정보 공유        타인과 사회적 교류를 통한 사회적 지지 및 커뮤니티 활동에 대한 보상                            박유진, 김재휘(2005)
+                         C.
+                                              커뮤니티가 구성되고 유지되기 위해서는 상호 간 관심을 기반으로 활발하고
+                         지        지속성                                                                               구교태(2005)
+                                              지속적 피드백
+                         원
+                         서                                                                                      강효진, 이아름, 권규현
+                               서비스 연계성        전문가와 시스템 내에서 교류되는 지식의 신뢰성 검증 및 관리
+                         비                                                                                          (2017)
+                         스
+                                                                                                                J. Koh, & S. J. Shin, &
+                         수       자기 옹호        자신의 아이덴티티를 표현하여 자신의 목표를 추구하면서 자기의식을 만듦
+                                                                                                                   H. W. Kim(2008)
+                         혜
+                                  소속감         현실세계에서 소외를 당한 사람들에게는 마음의 위안과 자신감을 회복                                  이성식(2004)
+                                              참여자 상호 간 질의응답을 통해 관계를 형성하고 이로 하여금 사회적 또는                               McAllister
+                                  확장성
+                                              경제적 변화                                                               &Taylor(2007)
+
+
+
+                       앞서 선행 연구를 통해 분석한 바와 같이 발달장애인 자립을 지원하는 커뮤니티 서비스의 한정된 지원 및 정책
+                       부족의 한계를 극복하기 위해서 인공지능 기술을 활용하여 보완할 수 있다. 이를 도울 수 있는 인공지능 기술의
+                       활용 범주는 국내외 인공지능 기술을 제공하는 커뮤니티 서비스 및 서비스에 접목할 수 있는 오픈 API 기술을
+                       기준으로 2024년 5월 실 사용되고 있는 서비스 사례를 분석한 결과, 두드러지게 나타나는 특성을 선별하여
+                       ‘효율성’, ‘맞춤성’, ‘안전성’, ‘객관성’이 도출되었다[Table 5].
+
+
+                       Table 5 Analysis of the use of artificial intelligence technologyin community services
+                                                                                                                        인공지능 기술
+                                                  서비스 사례                                              서비스 내용
+                                                                                                                         활용 범주
+                                         Alexa(Amazon)인공지능 비서
+                                        Google Cloud AI(Google) OCR
+                                       Kakaotalkpage(Kakao) 연관 추천
+                                         Mood Mate 감정 분석 및 추천
+                                                                                           다양한 시간대와작업 일정 수용으로
+                                    Thinkbig(Woongjin) 시선추적 기반 추천                          요구 사항과 우려 사항 신속 처리 및             효율성
+                                                                                                반복 작업 감소
+                                      AIQ+(Skelterlabs) 대화형 과업 수행
+                                  Microsoft Designer(Microsoft) 이미지 생성
+                                          A.(SK Telecom) 캐릭터 생성
+                                           opentown(2022) 소셜AI
+                                      Mi:dm(KT Enterprise) 인공지능 비서
+                                         Instagram(Meta) 콘텐츠 추천
+                                                                                           방대한 양의 비정형, 정성적 데이터
+                                            cue:(Naver) 대화형 검색                            실시간 분석 후 참여 데이터를 활용하여
+                                                                                                                            맞춤성
+                         AGE-R(2024) 기기와 연동하여 데이터 및 사용자 데이터 기반 추천                           감정, 주제 및 통찰력을 빠르게
+                                                                                               수집하여 개인 맞춤화
+                                            루리AI(2023) 답글 생성
+                              reddit(2024) 생성형 AI기반 검색(커뮤니티 게시글 학습)
+                                                                                            데이터와 상호 작용 분석자동화로
+                                          Cleanbot(Naver) 모니터링봇                                                             안전성
+                                                                                              중재나 및 실수 위험 감소
+                                   CLOVA Sentiment(Naver)텍스트 감정 분석
+                                                                                         의사결정이 대상을 차별과 주관적 경험에
+                                           Expert(Naver) 전문가 추천                           의존하지 않고, 데이터 학습을 통한               객관성
+                                                                                             객관적 의사결정 지원
+                                       원티드랩(2023) AI 커뮤니티 매니저
+
+
+
+                       이렇듯 인공지능은 장애인을 위한 사회적 포함과 접근성을 지원할 수 있도록 돕는 도구임이 증명되면서
+                       장애인들의 삶을 지원하거나 또는 변화시킬 수 있는 가능성에 대해 학제 간 많은 연구가 이뤄졌다(WHO,
+                       2017). 하지만 시각이나 청각 등 단일 범주의 장애와 관련된 보조 기술 및 치료 시스템 설계에 집중하여 한
+                       번에 하나의 장애를 위한 기술을 설계하는 것이 장애의 과도한 단순화를 촉진하고 있다는 비판이 제기되고
+                       있다. 특히 발달장애와 같이 다중 장애를 가진 사용자의 실제 경험을 반영하지 못한다고 지적한다(Arthur Theil
+                       et al., 2022). 이는 다양한 양상을 띠는 발달장애인의 실질적 경험 및 요구에 근거하여 UI/UX 설계가 필요하며,
+                       이를 위해 인공지능의 잠재력을 최대한 활용한 연구가 필요함을 시사한다.
+
+
+
+
+172 Archives of Design Research 2024. 07. vol 37. no 3
+
+<a id="pdf-p7"></a>
+### [PDF p.7] 먼저, 이해관계자지도(Stakeholder Map)를 통해 핵심 이해관계자를 파악하였으며, 현장 조사를 통해 성인
+- Locator: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · página **7** / 29
+
+3. 발달장애인을 위한 인공지능 기술 기반 커뮤니티 서비스 경험구성요인 도출
+
+
+본 연구에서는 발달장애인의 실질적 경험 및 요구에 근거하여 인공지능 기술 기반 서비스 경험구성요인을
+도출하기 위해 서비스디자인 방법론적으로 접근하였다.
+
+
+먼저, 이해관계자지도(Stakeholder Map)를 통해 핵심 이해관계자를 파악하였으며, 현장 조사를 통해 성인
+발달장애인의 모임 활성화를 돕기 위한 자조모임 지원 프로그램을 관찰하였다. 이를 통해 현재 발달장애인
+커뮤니티 형태인 자조모임의 여정을 파악하였고, 개선 필요 영역에 따라 온라인 커뮤니티 서비스에서 충족이
+가능하도록 여정을 재정리하였다.
+
+
+이후 디지털 에스노그라피를 활용한 사용자 조사를 통해 성인 발달장애인의 커뮤니티 서비스 경험을 구성하는
+주요 영역을 도출하였으며, 앞서 문헌 연구를 통해 도출된 커뮤니티 서비스의 경험요인를 기반으로 주요
+영역과 인공지능 활용 범주를 연결하여 최종적으로 커뮤니티 서비스 경험구성요인을 도출하였다.
+
+
+		        3. 1. 발달장애인 자조모임 이해관계자 정의
+본 절에서는 실증연구 대상자 파악을 위해 성인 발달장애인 자조모임 지원 프로그램의 핵심 이해관계자를
+분석하였다. 자조모임이란, 발달장애인이 자립을 준비하는 과정에서 여러 사람과 상호작용할 수 있는 기회를
+제공하고, 자조단체 활성화 및 사회 참여 지원을 위한 자립지원센터 혹은 장애인 단체의 다각적 프로그램을
+의미한다. 특히 발달장애인에게 자조모임 활동은 시설을 벗어나 자립 공간에서 생활하게 될 경우 소외되지
+않고 지속적으로 사회참여와 사람 간 상호작용을 유지하기 위해서 필수적인 과정이면서 발달장애인의
+오프라인 커뮤니티 형태라고 할 수 있다.
+
+
+
+
+Figure 1 Stakeholder map
+
+
+발달장애인 자조모임과 관련된 이해관계자는 [Figure 1]과 같이 서비스 수혜자인 발달장애인을 중심으로
+서비스 조력자인 발달장애인 가족, 복지 기관, 서비스 공급자로 분류된다. 자조모임 이용자는 a. 발달장애인
+
+
+
+
+                                                     www.aodr.org   173
+
+<a id="pdf-p8"></a>
+### [PDF p.8] Table 6 Destination information of field research
+- Locator: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · página **8** / 29
+
+리더와 b. 구성원이 있으며, 기관이나 단체 소속의 c. 조력자가 존재한다. 지역 복지기관의 서비스를 지원받기
+                       위해 발달장애인의 돌봄 가족이 최초 접근하여 서비스를 신청하거나 후방에서 지원하는 형태를 띤다. 지역
+                       복지기관은 발달장애인 자조모임에 필요한 금전적 지원과 장소 제공 및 사업 지원을 받기 위해 지역사회와
+                       연계되어 있으며 이러한 자립 지원 사업의 정책 및 집행에 관여하고 서비스 종사자를 관리하는 보건복지부
+                       등이 있다.
+
+
+                       		         3. 2. 현장 조사를 통한 발달장애인 자조모임 여정 분석
+                       성인 발달장애인을 위한 커뮤니티 지원의 한계점에 대한 실질적 조사분석을 위해, 서울의 3개 자립지원센터를
+                       선정하여 현장 조사를 수행하였다. 본 연구는 서비스 수혜자인 성인 발달장애인의 커뮤니티 형성 프로세스 및
+                       환경과 어려움에 초점을 두고 있으므로 참여관찰을 통한 현황을 분석하고자 하였다. 관찰의 범위 및 방법은
+                       성인 발달장애인의 자조 모임 참석을 위한 탐색 단계부터 재모임 단계까지 연구자가 직접 참여 관찰하는
+                       능동적 참여 방법으로 조사를 실시하였다.
+
+
+                       현장 조사 대상지 선정의 기준은 i) 단체 및 시설 형태와 관계없이 성인 발달장애인 자조모임의 전형적
+                       이해관계자 구조를 이루며, ii) 온라인 커뮤니티 운영으로 정보 접근성 확보와 지속적 서비스 지원이 진행되며,
+                       iii) 발달장애인의 유형과 중증 정도를 다양하게 지원 대상자로 모집하고 있는 기관을 선정하였다. 자료의
+                       수집을 위한 현장조사 기간은 2023년 10월 2일부터 10월 21일까지 이루어졌다. 모임 과정 및 프로그램에 관한
+                       인터뷰를 추가하여 자료 수집의 정교함을 추구했다.
+
+
+                       Table 6 Destination information of field research
+                                    분류                           지역                   운영 형태         온라인 운영 형태
+                                   A센터                           서울               사회복지단체            홈페이지 게시판
+                                   B센터                           서울               사회복지단체            홈페이지 게시판
+                                   C센터                           서울               장애인 복지시설          홈페이지 게시판
+
+
+
+                       본 연구에서는 성인 발달장애인을 위한 커뮤니티 서비스 경험요인을 수집하기 위해 먼저 성인 발달장애인
+                       커뮤니티 형태인 자조모임을 여정지도(Journey Maps)를 통해 분석하였으며, 각 여정 단계에 따른 발달장애인
+                       및 서비스 관계자의 행동 및 접점을 선형 구조로 정리하였다[Table 7].
+
+
+                       Table 7 Journey map of the self-deprecation program
+                           여정            단계                                  행동                         접점
+                                                    발달장애인         - 기관 검색
+                                                    돌봄 가족         - 모임 정보 수집                     - 포털사이트커뮤니티
+                                      정보탐색
+                                                                                                 - 기관 및 웹사이트
+                                                      조력자         - 기관 및 프로그램 모집 안내
+                                                                  - 주제 및 일정에 알맞은 모임 탐색
+                                                    발달장애인
+                                                                  - 모임 프로그램 신청
+                                                    돌봄 가족                                        - 모임 프로그램
+                                      프로그램                        - 모임 신청 내용 안내 받기
+                                                                                                   홍보서 및 안내문
+                         자조모임          신청                         - 모임 프로그램 안내서 제공               - 모임 신청 정보 문자
+                         프로그램                         조력자         - 모임 문의 응대
+                          탐색                                      - 모임 신청 정보 안내 발송
+                                                                  - 서비스 후기 정보 수집
+                                                    발달장애인
+                                                                  - 서류 준비
+                                                    돌봄 가족
+                                     복지서비스                        - 관련 지원 복지 서비스 신청(활동 보조 등)     - 복지 서비스 안내문
+                                       신청                         - 모임 참여를 돕는 복지 서비스에 대한 정보 제공   - 기관 및 웹사이트
+                                                      조력자         - 돌봄인에게서 발달장애인이 독립 활동할 수
+                                                                    있도록 지원
+
+
+
+
+174 Archives of Design Research 2024. 07. vol 37. no 3
+
+<a id="pdf-p9"></a>
+### [PDF p.9] 공간에 대한 시청각적 정보를 습득할 수 있다는 이점을 가지며(Blythe M. and Cairns P, 2010) 사용자 경험
+- Locator: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · página **9** / 29
+
+- 대중교통 이용을 통한 기관 및 단체 공간 참석
+                    발달장애인
+          프로그램               - 프로그램 소개 및 자기소개                - 관련 모임 장소 안내문
+           참석                - 모임 공간 안내문 부착                  - 관련 모임 장소
+                     조력자
+                             - 팀 생성을 위한 활동 지원
+                             - 자립생활 교육 받기
+                    발달장애인    - 리더 및 규칙 정하기
+                             - 역할 맡기 등 회의                    - 관련 모임 장소
+           활동 및
+                                                             - 자립생활교육 자료
+ 자조모임       교육               - 자립생활교육 제공                     - 보상(간식 및 활동 결과물)
+  준비                 조력자     - 자조모임 사전 교육
+                             - 참여자 간 관계 형성 지원
+                             - 모임 목표 설정
+                    발달장애인    - 모임 안건 모으기
+                             - 모임 안건 투표                      - 관련 모임 장소
+          자조모임
+                                                             - 회의를 위한 화이트보드
+           계획                - 모임 계획을 위한 정보 제공               - 회의 기록물
+                     조력자     - 재정 지원(사업비, 모금, 회비 등)
+                             - 의사결정 지원
+                             - 교통편 알아보기
+                    발달장애인    - 장소 섭외하기
+          자조모임               - 지원금 재정 계획                     - 외부 장소
+           준비                - 모임 준비를 위한 정보 제공               - 회의 기록물
+                     조력자     - 회의 내용 기록
+                             - 회비 안내
+                             - 모임 장소 참석 및 활동
+                    발달장애인    - 모임 목표 달성
+ 자조모임                        - 모임 내용 기록                      - 모임 정보 안내문
+          자조모임
+  진행                                                         - 외부 장소
+           참석                - 모임 전 안내 문자 발송                 - 보상(간식 및 활동 결과물)
+                     조력자     - 모임 목표 달성 지원
+                             - 모임 내용 기록 지원
+                             - 모임 결과 기록
+                    발달장애인    - 모임 홍보
+          자조모임               - 신규 회원 모집                      - 기관 및 웹사이트
+           결과                                                - 모임 활동 및 홍보 자료
+                             - 돌봄 가족에게 공유
+                     조력자
+                             - 모임 홍보 자료 생성 지원
+
+
+		      3. 3. 발달장애인의 자립생활 디지털 에스노그라피
+앞서 현장에서 조사한 접점을 바탕으로 커뮤니티 서비스 경험요인을 도출하기 위해 발달장애인 당사자의 요구
+및 서비스 기회 영역을 파악하고자 하였다. 디지털 에스노그라피란 디지털 자료를 활용한 관찰 연구방법으로,
+전통적 관찰연구인 에스노그라피의 대안 방법론이다. 이는 타 연구방법에서 얻기 어려운 사용자의 행동 및
+공간에 대한 시청각적 정보를 습득할 수 있다는 이점을 가지며(Blythe M. and Cairns P, 2010) 사용자 경험
+조사연구 분야에서 주요한 사용자 관찰 데이터로 활용되고 있다(Payy. J. Kjeldskov, 2012). 특히 발달장애인과
+같이 다양한 형태의 생활 공간과 다수의 이해관계자가 연결된 삶에서 관찰연구를 수행하는 것은 오히려 삶의
+흐름을 방해하고 맥락적 변수로 인한 오류가 발생할 수 있다. 따라서 삶에 개입하지 않고 경험 맥락을 탐구하기
+위해 단어, 이미지, 오디오와 같은 데이터를 활용하고자 하였다. 그 중 유튜브 영상 데이터 기반 디지털
+에스노그라피 방식을 적용하여 자립을 훈련하는 발달장애인의 삶에 초점을 두고 실제 경험 분석을 위한 탐색적
+연구를 진행하였다.
+본 연구는 총 10명의 발달장애인 당사자의 경험이 담긴 영상을 최종 수집하였으며 분석 대상은 질적 연구에서
+주로 활용되는 유목적표집법(Purposeful Sampling)을 기반으로(Palinkas, Horwitz, Green, Wisdom, Duan,
+& Hoagwood, 2015) 선정되었다. 자료 선정을 위해 분석 목적에 맞추어 발달장애인 생활 방식과 정책 지원
+관련 키워드를 활용해 관련 비디오 자료 검색 및 확보하였으며, 신뢰성을 높이고자 발달장애인의 자립에
+관련된 이해관계자 직접 업로드 영상 중 조회수 1,000회 이하 제외 후 단체 및 기간의 댓글 반응에 따라
+스크리닝 과정을 거쳤다[Table 8].
+
+
+
+
+                                                                    www.aodr.org   175
+
+<a id="pdf-p10"></a>
+### [PDF p.10] Table 8 Index for digital ethnography
+- Locator: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · página **10** / 29
+
+Table 8 Index for digital ethnography
+                                   화면                             정보                         화면                          정보
+
+
+                                                                                                                 지적장애, 뇌병변 장애(31세) /
+                                                               지적장애(26세)
+                                                                                                                      자립 5개월
+
+
+
+
+                                                       자폐성 장애(뇌전증 포함)                                              중증 지적 장애(24세) /
+                                                        (23세) / 자립 체험                                                  자립 체험
+
+
+
+
+                                                               지적장애 3급 /                                             발달장애(42세) /
+                                                                자립 체험                                                  자립 체험
+
+
+
+                                                           발달장애(58세) /                                               발달장애(31세) /
+                                                             자립 체험                                                    자립 5년차
+
+
+
+
+                                                        뇌병변 1급 장애(46세) /                                            자폐성 장애(29세)
+                                                            자립 10년                                                   / 취업 10년
+
+
+
+
+                       이렇게 수집한 비디오는 범주화 작업을 위해 주제 분석(Thematic Analysis) 기법을 통해 분석하였는데,
+                       이는 주제 분석이 일련의 경험을 이해하기 위해 구성주의적 관점에서 개별 경험에 영향을 주는 사회구조적
+                       의미를(Braun&Clarke, 2006) 파악할 수 있는 방안이 되기 때문에 연구 목적에도 부합한 분석 방법이라고
+                       할 수 있다. 앞서 현장 조사에서 관찰되었던 것에 기초하여 커뮤니티 서비스에 대한 요구와 기존 오프라인
+                       자조 모임 개선 범위를 맥락과 함께 수집하였다. 분석 예시는 다음과 같이 자립을 준비하거나 자립 훈련 중인
+                       발달장애인 당사자를 중심으로 파악하여 영역을 도출하였다[Table 9].
+
+
+                       Table 9 Derivation of service opportunity areasthrough video ethnography data analysis
+                                          영상 데이터 분석                             발달장애인이 가진 어려움                       서비스 기회 영역
+                       부모연대라는 곳을 통해 알게 되었어요. 다른 친구들도 함께                        낮은 정보 접근성으로 스스로                   단체나 기관의 연계를 통해
+                       했으면 좋겠어요                                                  서비스 접근이 어려움                     서비스 접근 범위 확대 필요
+                                                                                주의력이 낮아 단계별 대화                  상황 적응 및 정보 조작 능력을
+                       선택권을 단계적으로 조금씩 확대하고 기다려 주면 좋아요.
+                                                                                방법과 상황별 응용 어려움                   지원하는 사용성 설계 필요
+
+                       (다른 장애인들이) 내 집에 와서 편하게 반찬 같은 거
+                                                                               모방과 학습 능력이 느리고,
+                       가져가고 편하게 쉴 수 있었으면 좋겠어요. 후배들(탈시설                                                          발달장애인 상호 간 의사소통을
+                                                                               주위에 대한 무관심한 심리로
+                       동료들)한테 조언을 해줄 수 있는 조력자가 되는게 저의                                                               돕는 지원 필요
+                                                                                인해상호 간 결합력이 약함
+                       희망이 바람이자 앞으로 후세를 위한 생각들이고
+
+                       낯선 곳을 굉장히 싫어하고 아주 적극적으로 거부해서...
+                                                                              심리적으로 안정되어 있지 않고
+                       가기 싫은 거 끌려서 갔는데 자기가 좋아하는 노래를                                                             집중력을 높일 수 있도록 취향
+                                                                              경계심과 학습된 무기력감으로
+                       선생님이 쳐주니까 눈에 하트가 나오면서 정말 적극적으로                                                            수집 및 맞춤 기능 필요
+                                                                              인해 동기부여 및 도전의식 낮음
+                       한 몇 초 정도 쳐다보면서 씩 웃는 거예요.
+
+                       “집들이는 우리 이사했어요 하고 사람 초대하는 거야. 하고                        일반적인 모임의 형태와참여                   모임 소개와 알맞은 모임을 선택
+                       싶어?“ 응 안될까?                                              방법에 대한 인지 부족                    및 결정할 수 있도록 지원 필요
+
+                       크리스마스 때 뭐하지. 시설에 있을 땐 이거저거 했죠. 근데                        주간활동이나 취미활동 등
+                                                                                                                복지 서비스 지원사와 연계하여
+                       혼자 있으니까 뭘 해야할지 모르겠네. (시설에 있었을 때                         시설에서 정해진 일정 계획에
+                                                                                                                 적합한 서비스에 대한 정보를
+                       상담 선생님과 통화 연결) 어 용건 없이 크리스마스라서                         익숙하여 스스로 일정 및 서비스
+                                                                                                                제공 받고 선택할 수 있도록 도움
+                       전화한건데 혹시 제가 괜히 전화했나요?                                   수혜 계획에 어려움을 겪음
+                       상담도 하고 스트레스도 같이 공유하고 풀고 이런 목적으로
+                                                                             사회적으로 소외되고 목소리를 낼                  모임의 발전에 따라 권리 주장
+                       (모임에) 들어오게 되잖아요. 그러다 나중에는 우리의
+                                                                              수 있는 단체 결합력이 낮음                    형태로 발전하도록 도움
+                       권리도 주장해야 된다 식으로 이렇게(...)
+
+
+
+
+176 Archives of Design Research 2024. 07. vol 37. no 3
+
+<a id="pdf-p11"></a>
+### [PDF p.11] 서비스의 경험구성요인을 재구성하였다[Table 10].
+- Locator: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · página **11** / 29
+
+비장애인과의 공감 형성 한계로
+장애인들에게 도움을 주기 위해(...)발달장애인 대상으로                                                          상호 간 도움 요청과 문제 해결을
+                                                         인해 상호 작용 대상자와 적절한
+동료 상담가로 활동하고 있어요.                                                                            위한 서비스 연계
+                                                             교환을 하지 못함
+엄마가 우리 딸 훌륭해 잘 하고 있어라고 위로해주면 좋은                           우울감과 실패 경험으로 인한                지속적 피드백으로 긍정적 정서
+것 같아요.                                                       위축된 심리 상태                        형성 지원
+                                                         언어의 숨은 뜻에 대해 이해하지
+(사회의)일원으로 나가는 게 탈시설이라고 생각해요. 그래서
+                                                         못하거나 사람들과 어울려 노는                 발달장애인 상호 간 관계 형성
+좀 더 나가서 사람 만나는 것이 기대돼요.
+                                                             것을 어려워 함
+
+
+		             3. 4. 커뮤니티 서비스 경험구성요인 구조화
+발달장애인의 자립을 위한 인공지능 기술 기반 커뮤니티 서비스 경험구성요인을 최종 도출하고자 커뮤니티
+서비스의 경험구성요인을 재구성하였다[Table 10].
+첫째로, 성인 발달장애인의 자립 요소인 ‘A. 자발적 참여’, ‘B. 환경과의 상호작용’, ‘C. 지원 서비스 수혜’를
+기준으로 발달장애인 특성과 연결하여 선행 연구에서 도출한 커뮤니티 속성 요인 및 사용자 조사에서
+도출되었던 서비스 기회 영역을 구조화하였다. 둘째로, 앞서 분석하였던 인공지능 기술 4가지 ‘효율성’,
+‘맞춤성’, ‘안전성’, ‘객관성’ 특성과 사례를 커뮤니티 경험요인에 따라 아이디어를 구조화하였다.
+
+
+Table 10 Structuring of Artificial intelligence service-based community service expericence components for developmental
+disabilities
+   발달장애인 자립을 위한            커뮤니티        인공지능
+                                                                  사례                              아이디어
+     서비스 기회 영역             경험요인         특성
+
+                             접근           -                        -                  기관 및 단체와 연계하여 서비스 접근
+           스스로 서비스          용이성         효율성            Alexa(Amazon)인공지능 비서           음성이나 버튼을 탭하여 서비스 접속
+            접근 어려움
+                            신뢰성         효율성           Google Cloud AI(Google) OCR     이미지 텍스트 인식에 따른 인증 절차
+
+            상황 적응 및
+  A.                         사용
+           정보 조작 능력                     맞춤성         Mi:dm(KT Enterprise) 인공지능 비서      튜토리얼 및 화면 설정 등의 기초 지원
+  자                         편의성
+             지원 필요
+  발
+  적      집중력 향상을 위한                     효율성          Kakaotalkpage(Kakao) 연관 추천       흥미 유발을 위한 단계별 보상
+                            유희성
+           흥미요소                         효율성                   Mood Mate               자신감을 줄 수 있는 지속적 독려
+  참
+                                                                                      발달장애인 리더 대상 사전교육
+  여                                     맞춤성            Instagram(Meta) 콘텐츠 추천
+         정보 형태와 언어의                                                                   회원 데이터 기반 모임 맞춤 추천
+                             개인
+         숨은 뜻에 대한 개인                    맞춤성              cue:(Naver) 대화형 검색           간단한 조작으로 어려운 용어 설명 제공
+                            맞춤성
+          맞춤 이해 지원
+                                                  AGE-R(2024) 기기와 연동하여 데이터 및
+                                        맞춤성                                           회원 데이터 기반 맞춤 형식의 정보 제공
+                                                         사용자 데이터 기반 추천
+
+                                        효율성        Thinkbig(Woongjin)시선추적 기반 추천       발달장애인 상호 소통 시 간단한 조작
+         정보를 효과적으로           조작
+                                        맞춤성              cue:(Naver) 대화형 검색           원하는 지식과 정보 탐색 시 간단한 조작
+         조작하는 능력 부족         용이성
+                                        맞춤성             Youtube(google) 답글 생성         공감과 수용 표시
+
+                                        안전성            Cleanbot(Naver) 모니터링봇          기준과 규칙으로 부적절한 콘텐츠 관리
+  B.     추상적 및 상징적
+                             활동         효율성         AIQ+(Skelterlabs) 대화형 과업 수행       오프라인 모임 계획에 도움
+  환     사고 능력, 추상적 자료
+                             지원
+  경       활용 능력 부족                                    Microsoft designer(Microsoft)
+                                        효율성                                           참여 유도를 위한 이미지 활용
+  과                                                            이미지 생성
+  의                                     효율성                   A. 캐릭터 생성               캐릭터 및 닉네임을 사용한 평등한 호칭
+
+                                                      Microsoft designer(Microsoft)
+  상                                     효율성                                           예측 가능한 안내의 시각적 이미지 제공
+           발달장애인                                               이미지 생성
+  호                        의사소통
+          상호 간 의사소통                                             CLOVA
+  작                         지원          객관성                                           음성 데이터에 따른 의사소통 능력 관리
+            지원 필요                                   Sentiment(Naver) 텍스트 감정 분석
+  용
+                                                      Microsoft designer(Microsoft)
+                                        효율성                                           다양한 보완대체의사소통의 활용
+                                                               이미지 생성
+        적합한 서비스에 대한
+                            전문가
+         정보를 제공 받고                      객관성             Expert(Naver)전문가 추천           전문적 복지 서비스 지원사 연계 제공
+                            연계성
+        선택할 수 있도록 도움
+
+
+
+
+                                                                                                     www.aodr.org     177
+
+<a id="pdf-p12"></a>
+### [PDF p.12] reddit(2024) 생성형 AI기반 검색
+- Locator: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · página **12** / 29
+
+상호 간 도움 요청과
+                                                                            reddit(2024) 생성형 AI기반 검색
+                                    문제 해결을 위한                 맞춤성                                          정보 탐색이 가능한 온라인 공간 제공
+                                                    정보                           (커뮤니티 게시글 학습)
+                                     서비스 연계
+                         C.                         공유
+                                   발달장애인 상호 간
+                         지                                    효율성              opentown(2022) 소셜AI         상호 간 도움 요청과 문제 해결에 도움
+                                     관계 형성
+                         원
+                                    지속적 피드백        지속성        객관성            Instagram (Meta) 콘텐츠 추천       일상 공유 및 콘텐츠 확산 기능 제공
+                         서            선택 및         서비스                        CLOVA Sentiment(Naver)
+                         비                                    객관성                                          데이터 연계를 통한 복지 서비스 연계
+                                     정 지원 필요       연계성                            텍스트 감정 분석
+                         스
+                                   권리 주장 형태로
+                                                  자기옹호          -                       -                  권리 주장을 위한 활동 활성화에 도움
+                                   발전하도록 도움
+                         수
+                         혜          문제 해결 도움       소속감          -                       -                  긍정적 정서와 정체성 형성을 위한 소속
+
+                                                                                                           의사소통 능력 향상 도움
+                                    문제 해결 도움       확장성          -                       -
+                                                                                                           발달장애인 상호 소통 연결
+
+
+
+                       구조화된 내용을 기반으로 경험구성요인을 도출한 예시는 다음과 같다.
+                       발달장애인의 자립을 위해 ‘A. 자발적 참여’ 속성 내 ‘사용 편의성’은 앞서 비디오 에스노그라피를 통해 도출한
+                       서비스 기회 영역인 ‘상황 적응 및 정보 조작 능력’을 필수 포함하였으며, 이러한 발달장애인의 어려움을 돕기
+                       위해 인공지능의 ‘맞춤성’ 특성이 필요하다. 이를 연결하면 참여 속성 내 접근 용이성에 해당하는 ‘튜토리얼 및
+                       화면 설정 등의 기초지원(A-4)’으로 경험구성요인을 도출할 수 있다.
+
+
+                       		            3. 5. 커뮤니티 서비스 경험구성요인 도출
+                       최종적으로 자발적 참여, 환경과의 상호작용, 지원 서비스 수혜 측면의 15가지 경험요인과 30가지 하위 세부
+                       구성요인이 도출되었다[Table 11].
+
+
+                       Table 11 Artificial intelligence service-based community service expericence components for developmental disabilities
+                          구분              경험요인                                        세부 구성요인의 조작적 정의
+                                                                A-1          기관 및 단체와 연계하여 서비스 접근에 도움
+                                         접근 용이성
+                                                                A-2          음성이나 버튼을 탭하여 서비스 접속에 도움
+                                           신뢰성                  A-3          이미지 텍스트 인식에 따른 인증 절차
+                              A.
+                              자          사용 편의성                 A-4          튜토리얼 및 화면 설정 등의 기초 지원
+                              발                                 A-5          흥미 유발을 위한 단계별 보상 제공
+                              적            유희성
+                                                                A-6          자신감을 줄 수 있는 지속적 독려
+                              참                                 A-7          발달장애인 리더 대상 사전교육
+                              여
+                                                                A-8          회원 데이터 기반 모임 맞춤 추천
+                                         개인 맞춤성
+                                                                A-9          간단한 조작으로 어려운 용어 설명 제공
+                                                                A-10         회원 데이터 기반 맞춤 형식의 정보 제공
+                                                                B-1          발달장애인 상호 소통 시 간단한 조작
+                                         조작 용이성                 B-2          원하는 지식과 정보 탐색 시 간단한 조작
+                              B.
+                              환                                 B-3          공감과 수용 표시 수단의 간단한 조작
+                              경
+                                                                B-4          기준과 규칙으로 부적절한 콘텐츠 관리
+                              과
+                              의           활동 지원                 B-5          오프라인 모임 계획에 도움
+                                                                B-6          참여 유도를 위한 이미지 활용
+                              상
+                              호                                 B-7          캐릭터 및 닉네임을 사용한 평등한 호칭
+                              작                                 B-8          예측 가능한 안내의 시각적 이미지 제공
+                              용         의사소통 지원
+                                                                B-9          음성 데이터에 따른 의사소통 능력 관리
+                                                               B-10          다양한 보완대체의사소통의 활용
+
+
+
+
+178 Archives of Design Research 2024. 07. vol 37. no 3
+
+<a id="pdf-p13"></a>
+### [PDF p.13] 서비스 개발에 적용하고자 Kano 모델을 활용하였다(Kano, 1984).
+- Locator: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · página **13** / 29
+
+전문가 연계성                  C-1         전문적 복지 서비스 지원사 연계 제공
+                                         C-2         정보 탐색이 가능한 온라인 공간 제공
+    C.
+    지             정보 공유                  C-3         상호 간 도움 요청과 문제 해결에 도움
+    원                                    C-4         일상 공유 및 콘텐츠 확산 기능 제공
+
+    서              지속성                   C-5         주기적인 모임을 돕는 보상 제공
+    비           서비스 연계성                  C-6         데이터 연계를 통한 복지 서비스 연계
+    스
+                  자기 옹호                  C-7         권리 주장을 위한 활동 활성화에 도움
+    수              소속감                   C-8         긍정적 정서와 정체성 형성을 위한 소속
+    혜
+                                         C-9         의사소통 능력 향상 도움
+                   확장성
+                                        C-10         발달장애인 상호 소통 연결
+
+
+
+
+4. 발달장애인을 위한 인공지능 기술 기반 커뮤니티 서비스 경험구성요인 평가
+
+
+		         4. 1. 연구 방법
+앞서 도출된 성인 발달장애인의 자립을 위한 커뮤니티 서비스 경험구성요인의 만족도 속성을 평가하고 실제
+서비스 개발에 적용하고자 Kano 모델을 활용하였다(Kano, 1984).
+Kano 모델은 서비스를 제공받는 고객 입장에서의 인식과 경험을 기반으로 품질을 측정하기 때문에 평가된
+품질요인의 활용 및 개선방향에 대한 도출의 적용이 서비스 수혜자 중심적이라는 강점이 있다. 또한, Kano
+모델은 만족 불만족에 대한 일원적 인식방법을 넘어서, 물리적으로 충족이 되더라도 이를 당연하게 생각하면
+만족하지 못할 수 있다는 이원적 개념을 함께 다룸으로써 성인 발달장애인의 자립을 돕기 위해 필수로
+포함되어야 하는 요소를 구분할 수 있다. 이러한 품질요인 측정을 위해 Kano 모델은 매력적, 일원적, 당연적,
+무관심, 역 품질의 5가지 속성으로 품질요인을 분류한다[Table 12].
+
+
+Table 12 Kano model quality attributes and characteristics
+          품질 속성                                       품질 특성                          출처
+         매력적 품질(A)          충족되면 만족하고, 충족되지 않아도 불평하지 않는다.
+         일원적 품질(O)          충족되면 만족하지만, 충족되지 않으면 불평을 받는다.
+         당연적 품질M)           충족되지 않으면 안 되는, 충족되지 않으면 불평을 받는다.                 Kano, N., Seraku, N.,
+                                                                               Takahashi, F. &
+         무관심 품질(I)          충족되어도 반응이 발생하지 않는다.                                Tsuji, S., 1984
+          역품질(R)            충족되면 불만족을 일으키고, 충족되지 못하면 만족된다.
+         회의적 품질(Q)          설문지 이해 오류
+
+
+
+Kano 모델에 활용 설문 조사는 긍정 및 부정 질문이 한 쌍을 이룬 이원적 구성으로 이루어진다. 예를 들어,
+기관 및 단체와의 연계에 대해 응답자가 긍정적 질문에서 ‘① 마음에 든다’라는 답변 후, 부정적 질문에서는 ‘④
+어쩔 수 없다’라는 답변을 했을 경우 [Table 13]의 Kano 모델 평가표 상에서 ‘매력적(A) 품질요소’로 결정되는
+것을 확인할 수 있다. 이와 같은 방법으로 도출된 품질 특성의 수를 집계하여 가장 많은 값을 가진 유형이 해당
+요인의 특성이 된다.
+
+
+
+
+                                                                                   www.aodr.org      179
+
+<a id="pdf-p14"></a>
+### [PDF p.14] Table 13 Kano evaluation table
+- Locator: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · página **14** / 29
+
+Table 13 Kano evaluation table
+
+                                       불충족                                                부정 질문
+                       충족                        ① 마음에든다             ② 당연하다           ③ 상관없다         ④ 어쩔 수없다       ⑤ 마음에 안 든다
+                             ① 마음에 든다              회의적(Q)             매력적(A)              매력적(A)      매력적(A)             일원적(O)
+                        긍
+                             ② 당연하다                역품질(R)             무관심(I)              무관심(I)      무관심(I)             당연적(M)
+                        정
+                             ③ 상관없다                역품질(R)             무관심(I)              무관심(I)      무관심(I)             당연적(M)
+                        질
+                             ④ 어쩔 수 없다             역품질(R)             무관심(I)              무관심(I)      무관심(I)             당연적(M)
+                        문
+                             ⑤ 마음에 안 든다            역품질(R)             역품질(R)              역품질(R)      역품질(R)             회의적(Q)
+
+
+
+                       Kano 모델은 수집된 특성들의 최빈값을 기준으로 최빈값으로 품질 특성이 결정되어 최빈값의 수가 나머지
+                       요인 값과 차이가 적은 경우엔 해당 품질 특성이 상대적으로 약하다 할 수 있다. 이러한 Kano 모델을
+                       활용한 분석의 한계점은 Timko(1993)의 고객만족계수를 이용하여 보완할 수 있다. Timko는 Kano 모델을
+                       활용한 설문 응답 분석으로 도출된 데이터값 중 서비스 요인 비율을 이용한 고객만족계수(Customer
+                       Satisfaction Coefficient)를 측정하는 고객만족(Better)계수와 불만족(Worse)계수를 제안하였다. 만족계수가
+                       불만족계수보다 절댓값이 클 경우, 즉 만족계수가 “+1”에 가깝고, 불만족계수가 “0”에 가까운 경우, 매력적
+                       품질 특성을 갖는다. 이와 반대로 만족계수의 값이 “0”에 가깝고, 불만족계수가 “-1”에 가까운 경우에는
+                       당연적 요소의 특성으로 분류된다. 만족계수가 +1에 가깝고, 불만족계수의 값이 -1에 가까울 경우, 즉 양쪽
+                       절댓값의 크기가 0.5이상일 경우에는 일원적 품질 특성으로 분류된다. 그리고 두 계수의 절댓값이 0.5보다
+                       작을 경우에는 무관심 요소의 특징을 갖는다.
+                       이를 통해 충족되었을 경우, ‘고객 만족’을 증가시킬 수 있는 항목 및 ‘고객 불만’을 감소시킬 수 있는 항목의
+                       우선순위를 파악할 수 있으며 산출 공식은 다음과 같다[Table 14].
+
+
+                       Table 14 Timko’s Customer Satisfaction Factor Calculation Method
+                              분류                          Better Coefficient                         Worse Coefficient
+                                                          A+O / (A+O+M+I)                            O+M / (A+O+M+I)
+                              공식                          A: Attractive(매력적 품질 요소), O: One-dimensional(일원적 품질 요소)
+                                                              M: Must-be(당연적 품질 요소), I: Indifferent(무관심 품질 요소)
+                                                           고객 요구 충족 시                                  고객 요구 충족 시
+                              개념
+                                                        고객 만족 창출 가능 기대 수준                          고객 불만 감소 가능 기대 수준
+
+
+                       		        4. 2. 연구 설계
+                       본 연구는 예비조사와 본조사로 나누어 진행하였으며, 설문의 본조사를 실시하기 전 설문 내용에 대한 적합성
+                       및 대상자 이해도 및 설문 문항의 개선점을 파악하여 설문 도구 신뢰성을 높이고자(Jeong, 2016) 예비조사를
+                       진행하였다. 이를 통해 설문 문항에서 개선 및 수정되어야 할 점을 사전에 파악하여 신뢰도를 검증하고 설문
+                       문항을 구조화함으로써 이후 진행될 본조사를 더욱 안정적으로 진행하고자 하였다.
+                       설문은 인공지능 기술 기반 커뮤니티 서비스 경험요인의 자발적 참여, 환경과의 상호작용, 지원 서비스 수혜
+                       3가지 구분으로 구성하였다. 또한 서비스 사용 전, 중, 후에 대한 단계별 여정을 통해 도출한 사용자 여정지도를
+                       기반으로 경험요인별 서비스 기능에 따라 설문지를 작성하여 일반인이 서비스를 이해하며 설문에 응답할 수
+                       있도록 예시 서비스 화면과 함께 구성하였다. 측정 문항은 긍정적 질문과 부정적 문항을 포함한 총 66문항으로
+                       구성하였으며, 자발적 참여 측면 경험요인 20문항, 환경과의 상호작용 측면 경험요인 28문항, 지원 서비스
+                       수혜 측면 경험요인 18문항으로 같이 구성하였다.
+
+
+                       1) 예비조사
+                       예비조사는 본조사에 사용될 설문 항목을 Google Forms(https://docs.google.com/forms)으로 설문지
+                       제작 후 2023년 11월 2일부터 4일까지 3일 동안 온라인 조사를 실시하였다. 설문 문항의 이해도와 개선점을
+                       파악하고자 하였으므로 설문 대상자인 [Figure 1]에 나타났던 각 3명씩 총 6명의 소수 인원을 대상으로
+                       진행하였다. 예비조사에서 나타난 설문항목에 대한 의견을 정리한 결과는 다음과 같다.
+
+
+
+180 Archives of Design Research 2024. 07. vol 37. no 3
+
+<a id="pdf-p15"></a>
+### [PDF p.15] 개발을 위해 실증연구를 수행하고자 하였다. 조사 방법은 예비 조사와 동일하게 Google Forms를 활용해
+- Locator: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · página **15** / 29
+
+첫째, 문항 공통적으로 서비스 기능에 활용된 인공지능 기술이 어렵게 느껴져 이해가 힘들고 서비스가
+상상되지 않아 질문 난이도를 조절할 필요성이 나타났다. 이에 설문 문항 난이도를 쉽게 조절하기 위해 전문
+용어를 서비스 내용에 대한 설명으로 수정하고 여정 단계에 따라 문항을 재배치하였다.
+둘째, 온라인 커뮤니티 서비스에 익숙하지 않거나 연관 경험이 없는 응답자의 경우, 서비스 기능 동작에 대한
+경험을 떠올리는 것을 어려워하여 문항 보조 설명의 필요성이 나타났다. 이는 예시 서비스 내용과 화면을
+제공하여 사용자의 서비스 이해도를 높이고자 하였다.
+
+
+2) 본조사
+앞서 예비조사를 통해 설문 문항을 검증한 결과, 탈락된 항목은 없었으나 문항의 이해를 돕기 위해 서비스
+내용을 예로 들어 설명하고 예시 화면을 조사해 첨부하는 식의 개선 과정을 거쳤다. 이후 수정된 설문 도구를
+활용하여 본조사는 2023년 11월 8일부터 17일까지 10일 동안 총인원 80명의 발달장애인 돌봄 가족과 관련
+복지 서비스 종사자를 대상으로 설문 조사를 수행하였다. 설문 대상의 경우, 발달장애인 당사자의 배경적,
+환경적 이해도가 높으며, 실제 서비스가 아닌 가상의 서비스이므로 설문 문항에 대한 이해도가 높은 서비스
+조력자인 발달장애인 돌봄 가족, 지원 서비스 제공 종사자를 대상으로 서비스 경험구성요인을 평가하였다.
+이때 대상자의 그룹 분배를 적절하게 분배하여 타당성을 확보하였으며, 이를 바탕으로 수혜자 중심적 서비스
+개발을 위해 실증연구를 수행하고자 하였다. 조사 방법은 예비 조사와 동일하게 Google Forms를 활용해
+온라인으로 진행하였으며, 서비스 단계별 경험요인을 평가하는 항목과 설문 응답자의 돌봄 대상자 특성
+및 통계학적 데이터를 수집하는 항목으로 구분되었다. 경험요인 평가 항목의 경우 ‘서비스 접속 및 온보딩
+단계’, ‘모임 계획 단계’, ‘모임 참여 및 모임 후 단계’, ‘그 외 지원 단계’ 총 4개 단계에 따른 여정의 순서대로
+제시되었다.
+본조사에서 수집된 설문 응답에 대한 데이터 분석은 첫째, 설문 응답자의 돌봄 대상자 유형 및 자립 경험에
+대한 변인을 빈도 분석하여 파악하였다. 둘째, Kano 모델의 이원적 평가 방법을 통해 인공지능 기술 기반
+커뮤니티 서비스 경험구성요인에 대한 품질 속성을 분석하였다. 셋째, Kano 모델에 따른 품질 속성 데이터값을
+바탕으로 Timko 분석 방법을 통해 인공지능 기술 기반 커뮤니티 서비스 경험요인의 고객만족계수를
+측정하였다.
+
+
+		        4. 3. 주요 변인별 분포
+총 80명의 발달장애인 돌봄 가족과 관련 복지 서비스 종사자 대상 온라인 설문 응답 통계 및 그룹 분포를
+정리하면 다음과 같다[Table 15].
+
+
+Table 15 Demographic characeristics and independence experience of the survey subjects
+               특성                             세부 내용                        표본 수           비율(%)
+                                                 남                           15            18.75
+               성별                                여                           65            81.25
+                                                 계                           80           100.00
+                                              20~29세                         18            22.50
+                                              30~39세                         33            41.25
+              연령별
+                                              40~49세                         39            48.75
+                                                 계                           80           100.00
+                                         발달장애인 돌봄 가족                         47            58.75
+            소속 그룹                         복지 서비스 종사자                         33            41.25
+                                                 계                           80           100.00
+                                             자폐성 장애                          34            42.50
+                                              지적 장애                          29            36.25
+       돌봄 대상자 장애 유형
+                                              복합 장애                          17            21.25
+                                                 계                           80           100.00
+
+
+
+
+                                                                                         www.aodr.org   181
+
+<a id="pdf-p16"></a>
+### [PDF p.16] 4. 4. 경험요인별 Kano 모델 및 고객만족계수 분석 결과
+- Locator: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · página **16** / 29
+
+자립 생활 중                               7                   8.75
+                                                                       자립 계획 중                            18                    22.50
+
+                               돌봄 대상자 자립 경험                      자립을 희망하나 계획 없음                           37                    46.25
+                                                                    자립 희망하지 않음                            18                    22.50
+
+                                                                            계                             80                   100.00
+
+
+
+                       		         4. 4. 경험요인별 Kano 모델 및 고객만족계수 분석 결과
+                       인공지능 기술 기반 커뮤니티 서비스 경험구성요인의 특성 분석을 위해 Kano 모델과 Timko 고객만족계수를
+                       이용하여 조사 결과 각 요인별 고객 만족 특성 분포는 다음과 같다[Table 16].
+
+
+                       Table 16 Distribution of customer satisfaction characteristics of artificial intelligence service-based community service
+                       expericence components for developmental disabilities
+                              경험요인                          세부 구성요인의 조작적 정의                            Kano      Better     Worse       Timko
+                                                A-1    기관 및 단체와 연계하여 서비스 접근에 도움                          A        0.74      -0.18        A
+                                 접근 용이성
+                                                A-2    음성이나 버튼을 탭하여 서비스 접속에 도움                           A        0.64      -0.19        A
+                                   신뢰성          A-3    이미지 텍스트 인식에 따른 인증 절차                              I        0.35      -0.22         I
+                         A.
+                         자       사용 편의성         A-4    튜토리얼 및 화면 설정 등의 기초 지원                             A        0.70      -0.28        A
+                         발                      A-5    흥미 유발을 위한 단계 별 보상 제공                              A        0.60      -0.07        A
+                         적
+                                   유희성          A-6    자신감을 줄 수 있는 지속적 독려                                I        0.50      -0.06        A
+                         참                      A-7    발달장애인 리더 대상 사전교육                                  A        0.60      -0.34        A
+                         여
+                                                A-8    회원 데이터 기반 모임 맞춤 추천                                A        0.60      -0.28        A
+                                 개인 맞춤성         A-9    간단한 조작으로 어려운 용어 설명                                O        0.62      -0.55        O
+                                               A-10 회원 데이터 기반 알맞은 형식의 맞춤 정보 제공                           A        0.65      -0.23        A
+                                                B-1    발달장애인 상호 소통 시 간단한 조작                              O        0.67      -0.53        O
+                                 조작 용이성         B-2    원하는 지식과 정보 탐색 시 간단한 조작                            M        0.42      -0.55        M
+                         B.
+                         환                      B-3    공감과 수용 표시 수단의 간단한 조작                              A        0.76      -0.25        A
+                         경
+                                                B-4    기준과 규칙으로 부적절한 콘텐츠 관리                              O        0.65      -0.55        O
+                         과
+                         의        활동 지원         B-5    오프라인 모임 계획에 도움                                    O        0.71      -0.46        A
+                                                B-6    모임 참여 유도를 위한 이미지 활용                               A        0.68      -0.17        A
+                         상
+                         호                      B-7    캐릭터 및 닉네임을 사용한 평등한 호칭 부여                          A        0.78      -0.21        A
+                         작                      B-8    예측 가능한 안내의 시각적 이미지 제공                             O        0.78      -0.43        A
+                         용      의사소통 지원
+                                                B-9    음성 데이터에 따른 의사소통 능력 관리                             A        0.51      -0.21         I
+                                               B-10 다양한 보완대체의사소통의 활용                                     A        0.63      -0.52        O
+                                전문가 연계성         C-1    전문적 복지 서비스 지원사 연계 제공                              A        0.77      -0.31        A
+                                                C-2    정보를 탐색할 수 있는 온라인 공간 제공                            A        0.68      -0.30        A
+                         C.
+                         지        정보 공유         C-3    상호 간 도움 요청과 문제 해결에 도움                             O        0.65      -0.48        A
+                         원                      C-4    일상 공유 및 콘텐츠 확산 기능 제공                              A        0.76      -0.33        A
+
+                         서         지속성          C-5    주기적인 모임을 돕는 보상 제공                                 A        0.65      -0.52        O
+                         비     서비스 연계성          C-6    데이터 연계를 통한 복지 서비스 연계                              O        0.72       -0.4        A
+                         스
+                                  자기 옹호         C-7    권리 주장을 위한 활동 활성화에 도움                              A        0.68      -0.38        A
+                         수         소속감          C-8    긍정적 정서 형성에 도움                                     A        0.62       -0.2        A
+                         혜
+                                                C-9    의사소통 능력 향상에 도움                                    A        0.62      -0.45        A
+                                   확장성
+                                               C-10 발달장애인 상호 간 관계 형성에 도움                                 A        0.68      -0.32        A
+
+
+
+                       매력적 품질로 도출된 세부 항목은 총 20개로 가장 많은 품질 특성 요인이 포함되었으며 지원 서비스 수혜
+                       요인에서 다수 도출되었다. 이는 성인 발달장애인을 위한 커뮤니티 서비스 지원 부족으로 인해 서비스 사용 후
+                       창출되는 측면에서 충족되지 않아도 불만족을 일으키지 않고 서비스 전, 중 과정에서 필요를 충족하는 핵심
+                       기능이 분포한다는 것을 알 수 있다.
+                       일원적 품질(O)로 도출된 세부 항목은 환경과의 상호작용 요인에서 가장 많이 분포되었다.
+
+
+
+182 Archives of Design Research 2024. 07. vol 37. no 3
+
+<a id="pdf-p17"></a>
+### [PDF p.17] 시 조작법이 간단(B-1)’은 Kano 모델과 Timko 고객만족계수 모두 일원적 품질로 분류되어 조작에 소통과
+- Locator: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · página **17** / 29
+
+개인 맞춤성 내 ‘어려운 용어는 간단한 조작으로 설명 제공(A-9)’과 조작 용이성 내 ‘발달장애인 상호 소통
+시 조작법이 간단(B-1)’은 Kano 모델과 Timko 고객만족계수 모두 일원적 품질로 분류되어 조작에 소통과
+서비스 이용의 용이성이 충족될 경우 만족도가 높은 것으로 분석되었다. 또한, 의사소통 지원 내 ‘다양한
+보완대체의사소통의 활용(B-10)’과 지속성 내 ‘주기적인 모임을 돕는 보상 제공(C-5)’은 Timko 고객만족계수
+분석을 통해 매력적 품질에서 일원적 품질의 특성으로 분류되어 서비스의 지속적인 활용하도록 경험 제공이
+필요한 것을 알 수 있었다.
+무관심 품질(I)로 도출된 항목은 신뢰성 내 ‘이미지 텍스트 인식에 따른 인증된 사용자(A-3)’와 유희성
+내 ‘자신감을 줄 수 있는 지속적 독려(A-6)’ 2개 항목으로, 참여 요인에서 관심도가 적음을 알 수 있었다.
+‘음성 데이터에 따른 의사소통 능력 관리(B-9)’는 Kano모델에서는 매력적 품질로 분류되었으나, Timko
+고객만족계수에서는 무관심 품질로 분류되어 다른 매력적 품질의 성격보다 충족 시 만족도가 낮음을 알 수
+있었다.
+당연적 품질(M)로 도출된 조작 용이성 내 ‘원하는 지식과 정보 탐색 조작법이 간단(B-1)’은 Kano모델과
+Timko 고객만족계수 모두 당연적 품질로 분류되어 불충족 시에는 불만족을 일으킬 수 있는 필수적 기능으로
+분석되었다.
+
+
+이를 통해 인공지능 기술 기반 커뮤니티 서비스에서 중요하게 고려해야 하는 경험요인별 주요 속성을 분류하여
+우선순위를 선정하였다.
+우선 Better 지수 0.6 이상인 항목에서 충족되었을 때 고객 만족도를 향상시킬 수 있는 요인을 선정하였다.
+또한, Worse 지수 -0.2보다 작은 항목에서 충족되지 않았을 때 고객 불만족도를 증가시킬 수 있는 요인을
+선정해 불만족을 최소화하고자 하였다. 그 결과 Better 지수가 충분히 높지 않고, Worse 지수가 충분히 낮지
+않은 항목들 즉, 고객 만족도에 영향을 주지 않는 항목들은 우선순위에서 배제되었다.
+
+
+이러한 과정을 거쳐 최종 선정된 경험요인별 속성은 매력적 품질 내 Better 지수 상위 5개 항목 및 일원적
+품질에서 Worse 지수 상위 5개 항목에 색으로 표시하였다.[Table 17]
+
+
+Table 17 Priority selection of service expericence components
+                                                                                       Worse
+   특성               경험요인                                    세부 내용          Better 지수
+                                                                                        지수
+                         사용 편의성           A-4     튜토리얼 및 화면 설정 등의 기초 지원      0.70      -0.28
+                           유희성            A-7     발달장애인 리더 대상 사전교육           0.60      -0.34
+              참여
+                                          A-8     회원 데이터 기반 모임 맞춤 추천         0.60      -0.28
+                         개인 맞춤성
+                                         A-10     회원 데이터 기반 맞춤 형식의 정보 제공     0.65      -0.23
+                         조작 용이성           B-3     공감과 수용 표시 수단의 간단한 조작       0.76      -0.25
+            상호작용                          B-7     캐릭터 및 닉네임을 사용한 평등한 호칭      0.78      -0.21
+                        의사소통 지원
+                                         B-10     다양한 보완대체의사소통의 활용           0.63      -0.52
+  매력적
+                        전문가 연계성           C-1     전문적 복지 서비스 지원사 연계 제공       0.77      -0.31
+   (A)
+                         정보 공유 및          C-2     다양한 정보 탐색 온라인 공간 제공        0.68      -0.30
+                           습득             C-4     일상 공유 및 콘텐츠 확산 기능 제공       0.76      -0.33
+
+             서비스         사용 지속성           C-5     주기적인 모임을 돕는 보상 제공          0.65      -0.52
+              수혜          자기 옹호           C-7     권리 주장을 위한 활동 활성화 도움        0.68       -0..8
+                                          C-9     의사소통 능력 향상에 도움             0.62      -0.45
+                         관계적 효과          C-10     발달장애인 상호 간 관계 형성 도움        0.68      -0.32
+                                          A-9     어려운 용어는 간단한 조작으로 설명 제공     0.62      -0.55
+
+
+
+
+                                                                                 www.aodr.org   183
+
+<a id="pdf-p18"></a>
+### [PDF p.18] 무관심 요소 2개 등으로 나타났다. 돌봄 구분에 따라 평가 상 차이가 나타난 항목은 다음 [Table 18]과 같다.
+- Locator: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · página **18** / 29
+
+참여         조작 용이성           B-1      발달장애인 상호 소통 시 조작법이 간단                       0.67        -0.53
+                                                                 B-4      기준과 규칙 부여로 부적절한 콘텐츠 관리                      0.65        -0.55
+                                     상호          활동 지원
+                         일원적                                     B-5      오프라인 모임 계획에 도움                              0.71        -0.46
+                                     작용
+                          (O)                  의사소통 지원           B-8      예측 가능한 안내의 시각적 이미지 제공                       0.78        -0.43
+
+                                    서비스          정보 공유           C-3      상호 간 도움 요청과 문제 해결에 도움                       0.65        -0.48
+                                     수혜        서비스 연계성           C-6      데이터 연계를 통한 복지 서비스 연계                        0.72        -0.44
+                         당연적         상호
+                                                조작 용이성           B-2      원하는 지식과 정보 탐색 조작법이 간단                       0.42        -0.55
+                          (M)        작용
+
+
+                       		         4. 5. 주요 변인별 분석 결과
+                       앞서 전체 고객 집단에 대한 고객 만족도 속성을 분류했지만, 발달장애인은 유형별로 나타나는 양상이
+                       다양하고 발달장애인 당사자가 설문에 직접 응답한 것이 아닌 서비스 조력자의 답변이라는 점에서 경험의
+                       차이가 존재한다. 따라서 정밀한 변인 간 비교와 서비스 방향성 도출을 위한 페르소나 도출을 위해 응답자의
+                       통계학적 분류와 돌봄 대상자 장애 유형 및 자립 경험을 기준으로 분류하여 좀 더 세분화된 집단별 서비스 만족
+                       요인에 대한 분석을 수행하였다. 그중 변인별 차이가 나타난 그룹은 돌봄 구분, 장애 유형 구분, 자립 경험별
+                       구분에 따른 그룹으로 파악되었다.
+
+
+                           4. 5. 1. 돌봄 구분에 따른 분석 결과
+                       돌봄 구분별 분석에서 나타난 고객의 직업 비율은 발달장애인 관련 복지 서비스 종사자가 34명(42.5%),
+                       발달장애인 부모를 포함한 가족 46명(57.5%)으로 집계되었다.
+                       비교 분석 결과, 발달장애인 관련 복지 서비스 종사자 집단에서는 매력적 요소 18개, 일원적 요소 6개, 무관심
+                       요소 6개 등으로 나타났고, 발달장애인 가족 집단은 매력적 요소 22개, 일원적 요소 5개, 당연적 요소 1개,
+                       무관심 요소 2개 등으로 나타났다. 돌봄 구분에 따라 평가 상 차이가 나타난 항목은 다음 [Table 18]과 같다.
+                       첫째, 관련 복지 서비스 종사자 집단의 무관심 요소 항목은 6개로 평가되었으며 이는 가족 집단에서 2개의
+                       무관심 요소 항목이 나타난 것보다 3배 많게 분포되었다. 대부분의 무관심 요소는 자발적 참여 요인에서
+                       평가되었으며 이는 복지 서비스 종사자 집단에게 환경과의 상호작용과 지원 서비스 수혜를 돕기 위한 서비스가
+                       차등 지원되어야 하는 것을 의미한다.
+                       둘째, 관련 복지 서비스 종사자 집단에서는 ‘오프라인 모임 계획에 도움(B-5)’과 ‘전문적 복지 서비스 지원사
+                       연계 제공(C-1)’ 항목에서 일원적 요소로 평가를 하였고, 발달장애인 가족 집단에서는 ‘원하는 지식과 정보
+                       탐색 조잡법이 간단(B-2)’, ‘기준과 규칙 부여로 부적절한 콘텐츠 관리(B-4)’, ‘데이터 연계를 통한 복지
+                       서비스 연계(C-6)’ 항목에 일원적 요소로 평가를 했다는 것이다. 이는 복지 서비스 종사자 집단은 오프라인
+                       접점에서의 서비스 지원이 제공되어야 하며 발달장애인 가족 집단은 가정 내 온라인 접점에서의 서비스 지원에
+                       만족도가 높음을 알 수 있었다.
+
+
+                       Table 18 Artificial intelligence service-basedcommunity service expericence components for developmental disabilities
+                                                                                                            전체         종사자          가족
+                                  경험요인                            세부 구성요인의 조작적 정의
+                                                                                                            (80)       (34)         (46)
+                                        신뢰성            A-3    이미지 텍스트 인식에 따른 인증 절차                            I           I          I
+                                                       A-6    자신감을 줄 수 있는 지속적 독려                              I           I          A
+                           A.           유희성
+                         자발적                           A-7    발달장애인 리더 대상의 사전교육 제공                           A            I          A
+                          참여
+                                                       A-9    어려운 용어는 간단한 조작으로 설명 제공                         O           O           O
+                                      이해 용이성
+                                                      A-10    알맞은 형태와 형식을 갖춘 정보 제공                           A            I          A
+
+
+
+
+184 Archives of Design Research 2024. 07. vol 37. no 3
+
+<a id="pdf-p19"></a>
+### [PDF p.19] 장애 유형에 따라 평가 상 차이가 나타난 항목은 다음 [Table 19]와 같다.
+- Locator: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · página **19** / 29
+
+B-1   발달장애인 상호 소통 시 조작법이 간단    O    O         O
+          조작 용이성
+                    B-2   원하는 지식과 정보 탐색 조작법이 간단    M    I         M
+                    B-4   기준과 규칙 부여로 부적절한 콘텐츠 관리   O    A         O
+  B.
+ 환경과의      활동 지원    B-5   오프라인 모임 계획에 도움           O    O         A
+ 상호작용
+                    B-6   모임 참여 유도를 위한 이미지 활용      A    I         A
+                    B-8   예측 가능한 안내의 시각적 이미지 제공    O    O         A
+         의사소통 지원
+                    B-9   음성 데이터에 따른 의사소통 능력 관리    A    A         I
+         전문가 연계성    C-1   전문적 복지 서비스 지원사 연계 제공     A    O         A
+   C.      정보 공유    C-3   상호 간 도움 요청과 문제 해결에 도움    O    O         O
+  지원       지속성      C-5   주기적인 모임을 돕는 보상 제공        A    A         A
+ 서비스
+  수혜     서비스 연계성    C-6   데이터 연계를 통한 복지 서비스 연계     O    A         O
+
+           자기 옹호    C-7   권리 주장을 위한 활동 활성화 도움      A    A         A
+
+                                  매력적 요소(A)        20   18       22
+                                  일원적 요소(O)        7    6         5
+계
+                                  당연적 요소(M)        1    0         1
+                                   무관심 요인(I)       2    6         2
+* 집단별로 모두 매력적 요소(A)로 평가된 경험구성요인은 생략
+
+
+
+
+    4. 5. 2. 장애 유형별 분석 결과
+발달장애는 신체장애와 다르게 중증과 경증의 경계가 명확하지 않으므로, 장애의 정도보다는 유형으로 집단을
+분류하여 분석하였다. 장애 유형별 분석에서 나타난 장애 유형 비율은 자폐성 장애 36명(45.0%), 지적 장애
+29명(36.25%), 복합성 장애 15명(18.75%)으로 집계되었으며, 복합성 장애로는 자폐성 장애나 지적 장애에
+언어 장애, 뇌병변 장애 등을 복합적으로 가지고 있는 경우가 수집되었다.
+전체 집단이 일원적 요소로 평가한 항목은 ‘발달장애인 상호 소통 시 조작법이 간단(B-1)’으로 나타났으며
+‘원하는 지식과 정보 탐색 조작법이 간단(B-2)’에 대한 항목은 복합 장애 집단에서 일원적 요소로 나타난 것을
+제외하면 모든 집단에서 당연적 요소로 평가되었다. 이는 장애 유형과 관계없이 원하는 지식과 정보 탐색에
+대한 조작의 용이를 필요로 한다는 것을 의미한다.
+
+
+장애 유형에 따라 평가 상 차이가 나타난 항목은 다음 [Table 19]와 같다.
+첫째, 자폐성 장애 집단이 전체 집단과 비교했을 때, 품질 만족도 양상이 가장 상이한 것으로 나타났다. 그
+중에서도 ‘다양한 보완대체의사소통의 활용(B-10)’에 당연적 요소로 평가했으며, ‘일상 공유 및 콘텐츠 확산
+기능(C-4)’과 ‘데이터 연계를 통한 복지 서비스 연계(C-6)’에 일원적 요소로 평가한 것으로 나타났다.
+둘째, 지적 장애 집단에서 무관심 요소로 평가된 항목이 가장 적고 ‘의사소통 능력 향상에 도움(C-9)’에서
+당연적 요소로 평가한 것으로 나타났다.
+셋째, 장애 유형이 복합적으로 나타나는 집단에서는 다른 유형 집단과 비교하여 지원 서비스 수혜 경험요인을
+매력적 요소로 평가하고 상호작용 측면에서 관심도 차이를 보였다.
+
+
+
+
+                                                         www.aodr.org   185
+
+<a id="pdf-p20"></a>
+### [PDF p.20] Table 19 Characteritics of customer satisfaction based on disability type
+- Locator: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · página **20** / 29
+
+Table 19 Characteritics of customer satisfaction based on disability type
+                                                                                                   전체      자폐     지적     복합
+                                경험요인                        세부 구성요인의 조작적 정의
+                                                                                                   (80)    (36)   (29)   (15)
+                                       신뢰성          A-3    이미지 텍스트 인식에 따른 인증 절차                     I       A      I      I
+                                    사용 편의성          A-4    튜토리얼 및 화면 설정 등의 기초 지원                    A       I      A      A
+                                                    A-5    흥미 유발을 위한 단계별 보상 제공                      A       I      A      A
+                           A.
+                         자발적           유희성          A-6    자신감을 줄 수 있는 지속적 독려                       I       A      I      I
+                          참여
+                                                    A-7    발달장애인 리더 대상의 사전교육 제공                     A       A      A      O
+                                                    A-8    회원 데이터 기반 모임 맞춤 추천                       A       I      A      A
+                                    개인 맞춤성
+                                                    A-9    간단한 조작으로 어려운 용어 설명 제공                    O       A      O      O
+                                                    B-1    발달장애인 상호 소통 시 간단한 조작                     O       O      O      O
+                                    조작 용이성
+                                                    B-2    원하는 지식과 정보 탐색 시 간단한 조작                   M       M      M      O
+                                                    B-4    기준과 규칙으로 부적절한 콘텐츠 관리                     O       O      O      M
+                         B.          활동 지원
+                        환경과의                        B-5    오프라인 모임 계획에 도움                           O       A      O      I
+                        상호작용                        B-8    예측 가능한 안내의 시각적 이미지 제공                    O       A      A      O
+                                   의사소통 지원          B-9    음성 데이터에 따른 의사소통 능력 관리                    A       A      A      I
+                                                   B-10    다양한 보완대체의사소통의 활용                         A       M      A      O
+                                   전문가 연계성          C-1    전문적 복지 서비스 지원사 연계 제공                     A       A      O      A
+                                                    C-2    정보를 탐색할 수 있는 온라인 공간 제공                   A       I      O      A
+                           C.        정보 공유          C-3    상호 간 도움 요청과 문제 해결에 도움                    O       O      O      A
+                          지원
+                                                    C-4    일상 공유 및 콘텐츠 확산 기능 제공                     A       O      A      A
+                         서비스
+                          수혜           지속성          C-5    주기적인 모임을 돕는 보상 제공                        A       A      O      A
+                                   서비스 연계성          C-6    데이터 연계를 통한 복지 서비스 연계                     O       O      A      A
+                                       확장성          C-9    의사소통 능력 향상에 도움                           A       A      M      A
+                                                                      매력적 요소(A)                    20      19     18     19
+                                                                      일원적 요소(O)                     7       5      8      6
+                       계
+                                                                      당연적 요소(M)                     1       2      2      1
+                                                                       무관심 요인(I)                    2       4      2      4
+                      * 집단별로 모두 매력적 품질(A)로 평가된 경험구성요인은 생략
+
+
+                           4. 5. 3. 자립 경험별 분석 결과
+                       자립 경험별 분석에서 나타난 고객의 비율은 자립 생활 중이거나 자립을 계획 중 25명(31.25%), 자립을
+                       희망하나 계획 없음 25명(31.25%), 자립을 희망하지 않음 30명(37.5%)으로 집계되었다.
+                       전체 집단이 동일하게 환경과의 상호작용과 지원 서비스 수혜 요인에 일원적 요소로 평가된 항목이 분포되어
+                       있었으며, 자립 경험 여부에 따라 속성의 변화가 나타난 항목은 다음 [Table 20]과 같다.
+                       첫째, 자립을 희망하지 않는 집단에서 무관심 요소가 가장 많이 도출되었으나 자립 생활 중이거나 자립을 계획
+                       중인 집단에서 당연적 요소가 가장 많이 도출되어 커뮤니티 서비스에 대한 니즈가 더 높은 것을 알 수 있었다.
+                       둘째, 자립 생활 중이거나 자립을 계획 중인 집단에서 ‘발달장애인 리더 대상의 사전 교육 제공(A-7)’, ‘권리
+                       주장을 위한 활동 활성화 도움(C-7)’ 항목이 다른 집단이 매력적 요소로 평가된 것과 다르게 일원적 요소
+                       평가되었다. 이는 자립 생활을 위한 기초 생활에 대한 필요성보다 자립 생활의 목적과 목표점에 관심을 두고
+                       있는 것을 의미한다.
+
+
+                       Table 20 Characteritics of customer satisfaction based on independence experience
+                                                                                                   전체      자폐     지적     복합
+                                경험요인                        세부 구성요인의 조작적 정의
+                                                                                                   (80)    (36)   (29)   (15)
+                                       신뢰성          A-3    이미지 텍스트 인식에 따른 인증 절차                     I       I      I      I
+                                                    A-6    자신감을 줄 수 있는 지속적 독려                       I       A      A      I
+                           A.          유희성
+                         자발적                        A-7    발달장애인 리더 대상의 사전교육 제공                     A       O      A      A
+                          참여
+                                                    A-9    간단한 조작으로 어려운 용어 설명 제공                    O       O      O      O
+                                    개인 맞춤성
+                                                   A-10    알맞은 형태와 형식을 갖춘 정보 제공                     A       A      A      I
+
+
+
+
+186 Archives of Design Research 2024. 07. vol 37. no 3
+
+<a id="pdf-p21"></a>
+### [PDF p.21] 자립을 위한 인공지능 기술 기반 커뮤니티 서비스 연구 결과에 따라 개발 영역을 도출하였다[Table 21].
+- Locator: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · página **21** / 29
+
+B-1    발달장애인 상호 소통 시 조작법이 간단                   O          O          O          O
+             조작 용이성
+                           B-2    원하는 지식과 정보 탐색 조작법이 간단                   M          M          M           I
+                                  기준과 규칙 부여로 부적절한 콘텐츠
+                           B-4                                            O          M          O          A
+  B.          활동 지원               관리
+ 환경과의
+                           B-5    오프라인 모임 계획에 도움                          O          O          A          O
+ 상호작용
+                           B-8    예측 가능한 안내의 시각적 이미지 제공                   O          O          A          O
+            의사소통 지원        B-9    음성 데이터에 따른 의사소통 능력 관리                   A          A           I         A
+                           B-10   다양한 보완대체의사소통 활용                         A          M          A          A
+            전문가 연계성         C-1   전문적 복지 서비스 지원사 연계 제공                    A          A          A          O
+                           C-2    다양한 정보 탐색 온라인 공간 제공                     A          A           I         O
+              정보 공유        C-3    상호 간 도움 요청과 문제 해결에 도움                   O          O          O          A
+    C.
+   지원                      C-4    일상 공유 및 콘텐츠 확산 기능 제공                    A          A          A          O
+  서비스          지속성         C-5    주기적인 모임을 돕는 보상 제공                       A          A          O          A
+   수혜
+            서비스 연계성        C-6    데이터 연계를 통한 복지 서비스 연계                    O          A          O          O
+              자기 옹호        C-7    권리 주장을 위한 활동 활성화 도움                     A          O          A          A
+               확장성         C-9    긍정적 감정표현 및 의사소통 능력 향상                   A          A          A          O
+                                             매력적요소(A)                     20         19         20         17
+                                             일원적 요소(O)                    7          7          6          9
+계
+                                             당연적 요소(M)                    1          3          1          0
+                                             무관심 요인(I)                    2          1          3          4
+* 집단별로 모두 매력적 요소(A)로 평가된 경험구성요인은 생략
+
+
+		        4. 6. 분석 결과 종합
+분석 내용을 바탕으로 우선적으로 반영되어야 하는 세부 요인과 각 품질 특성에 따라 성인 발달장애인의
+자립을 위한 인공지능 기술 기반 커뮤니티 서비스 연구 결과에 따라 개발 영역을 도출하였다[Table 21].
+
+
+Table 21 Integrated experience service plan of artificial intelligence service-based community service expericence
+components for developmental disabilities
+    경험요인                           세부 품질 요인(Kano/Timko)                                    서비스 디자인 영역
+    사용 편의성         A-4    튜토리얼 및 정보 입력, 화면 설정 등의 기초 지원(A/A))
+                                                                                       ①발달장애 유형별 개인화
+    이해 용이성         B-1    발달장애인 상호 소통 시 조작법이 간단(O/O)
+                                                                                      UI/UX 설계를 통한 참여 유도
+                         A-1, A-2, A-9, A-10, B-6, B-8
+    조작 용이성         B-3    실시간 공감 표시 수단의 조작법이 간단(A/A)
+  의사소통지원           B-7    캐릭터 및 닉네임을 사용한 평등한 호칭(A/A)
+  의사소통지원          B-10    다양한 보완대체의사소통의 활용(A/O)                                           ②발달장애인에게 유용한
+                                                                                          상호작용 보조를 위한 필요
+  전문가 연계성          C-1    전문적 복지 서비스 지원사 연계 제공(A/A)                                         기능의 적절한 배치
+    정보 공유          C-3    상호 간 도움 요청과 문제 해결에 도움(O/A)
+                              A-8, B-9, C-6, C-10
+    활동 지원          B-5    오프라인 모임 계획에 도움(O/A)
+    정보 공유          C-4    일상 공유 및 콘텐츠 확산 기능 제공(A/A)                                    ③발달장애인이 스스로 지원
+                                                                                       서비스를 선택하고 결정할 수
+    조작 용이성         B-2    원하는 지식과 정보 탐색 조작법이 간단(M/M)                                     있는 행동 유도 체계
+                          A-5, A-7, C-2, C-7, C-8, C-9
+                                                                                          ④안전과 신뢰 보장을 위한
+    조작 용이성         B-4    기준과 규칙 부여로 부적절한 콘텐츠 관리(O/O)
+                                                                                              운영정책
+
+
+
+분석 내용을 바탕으로 성인 발달장애인의 자립을 위한 인공지능 기술 기반 커뮤니티 서비스 개발 영역과
+시사점을 도출하였다.
+첫째, ‘발달장애 유형별 개인화 UI/UX 설계를 통한 참여 유도’는 장애 유형에 따른 맞춤형 설계와 서비스
+사용에 대한 동기부여 및 흥미 유발과 이를 통한 데이터 기반 서비스 활동 관리와 같은 서비스 확장을 다룬다.
+
+
+
+
+                                                                                                www.aodr.org    187
+
+<a id="pdf-p22"></a>
+### [PDF p.22] 고객 만족 및 불만족도에 미치는 영향도에 따라 도출된 상위 우선순위의 서비스 경험구성요인 [Table
+- Locator: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · página **22** / 29
+
+본 서비스의 장애 유형을 집단으로 구분하여 그에 맞춤화된 화면과 조작 방식으로 구성된다. 이를 위해 단문의
+                       롤플레이 영상 형식으로 튜토리얼 및 맞춤 화면 설정이 가능한 기초 기술지원이 활용된다(A-4). 또한, 챗봇
+                       기반의 보조 서비스로 간단한 조작에 대한 어려운 용어 설명을 제공받을 수 있도록 활용할 수 있으며(A-9),
+                       알맞은 형태와 형식을 갖춘 정보 제공(A-10)으로 콘텐츠 생산 및 확산에 활용할 수 있다. 이를 위해 회원 정보
+                       기반 맞춤 정보 제공을 위한 데이터를 수집해야 한다.
+                       둘째, ‘발달장애인에게 유용한 상호작용 보조를 위한 필요 기능의 적절한 배치’는 개인의 인지, 행동, 학습,
+                       심리 및 사회적 특성 등의 요인을 고려한 인공지능 기술의 활용을 다룬다. 캐릭터 및 닉네임을 생성하여 평등한
+                       호칭(B-7) 사용을 유도함으로써 위축된 심리와 정서를 긍정적 전환이 가능하도록 돕고, 전문적 복지 서비스
+                       지원사 연계 제공(C-1)을 통해 행동이나 학습에 대한 어려움을 지원받아 지속적인 사회참여를 통한 자립
+                       생활을 유지하도록 도울 수 있다.
+                       셋째, ‘발달장애인이 스스로 지원 서비스를 선택하고 결정할 수 있는 행동 유도 체계’는 자립 시작부터
+                       정착까지 커뮤니티 서비스 사용 목적에 따라 목표 달성을 지원한다. 앞서 변인별 분석에서 자립 경험에 따라
+                       경험구성요인의 품질 특성이 상이하게 나타난 점을 확인하였다. 따라서, 자립 단계에 따라 리더 및 구성원
+                       역할을 지정하는 등 오프라인 모임 계획을 돕고(B-5) 일상 공유 및 콘텐츠 확산(C-4)을 유도하여 상호 간
+                       연결과 자립에 대한 동기부여를 일으킬 수 있다.
+                       넷째, ‘안전과 신뢰 보장을 위한 운영정책’은 발달장애인 당사자가 커뮤니티 서비스를 이용하면서 안전하고
+                       신뢰할 수 있는 서비스를 제공받도록 관련 운영체계 수립이 필요함을 시사한다. 앞서 검증하였던 품질
+                       특성이 모든 변인별 집단에게서 일원적 품질(O)로 도출되어 콘텐츠 관리를 필요로 함을 확인하였다. 이는
+                       발달장애인이 부적절한 콘텐츠를 스스로 구분하지 못하거나 범죄에 노출되는 등 악용의 우려가 있음을 알 수
+                       있다. 따라서 콘텐츠 생성 단계에서 커뮤니티 가이드라인을 제시하고 모니터링과 해당 콘텐츠 미노출에 대한
+                       자동화 봇과 신고 절차 마련 등의 운영체계 수립 관련 고려가 필요하다.
+
+
+                       		        4. 7. 추가 심층 인터뷰
+                       고객 만족 및 불만족도에 미치는 영향도에 따라 도출된 상위 우선순위의 서비스 경험구성요인 [Table
+                       21]에 대한 구체적 서비스 방향성 제안을 위해 전문가 집단의 심층 인터뷰를 진행하였다. 이를 기반으로
+                       발달장애인을 위한 인공지능 기술 기반 커뮤니티 서비스 사용성 향상에 관한 전문 관점을 참고 및 분석하는
+                       탐색적 연구 방법을 적용하여 서비스 방안을 도출하고자 하였다[Table 22].
+
+
+                       Table 22 In-depth-Interview
+                          서비스 디자인 영역                  경험요인                        전문가 의견
+                                                               기본 접근성 지침과 버튼이나 글자 크기 조절 및 색상 지정 등 발달장애인 유형에
+                                                     사용편의성
+                                                               따라 다르게 나타나는 양상 보조
+                        ①발달장애 유형별개인화
+                                                               직관적인 아이콘, 단문 제공, 한자어 사용보다는 풀어 쓴 용어 사용 및 풀이 지원,
+                         UI/UX 설계를 통한                개인맞춤성
+                                                               서비스 이용 패턴에 따른 지속적 데이터 학습 모델링 후 UI/UX 개선 과정 필요
+                             참여 유도
+                                                      조작용이성
+                                                               적합한 내비게이션 제시 및 모바일 기기 활용 정도 차이와 지시어 활용 정도 고려
+                                                     의사소통 지원
+                                                               대화 수준 학습 후 에이전트에 활용 및 이미지나 영상과 같은 다양한
+                                                     의사소통 지원
+                                                               보완대체의사소통 콘텐츠 생성 지원
+                        ②발달장애인에게 유용한
+                                                               다양한 유형의 정보를 제공하여 스스로 지원 서비스를 선택하고 결정할 수
+                         상호작용 보조를 위한                 전문가 연계성
+                                                               있도록 특성에 맞는 자기결정 지원
+                        필요 기능의 적절한 배치
+                                                               피드 형태나 보이스룸과 같은 다양한 형태의 공유 공간 제공 및 운영 측에서 관련
+                                                      정보공유
+                                                               주제를 선제시하여 정보 공유 유도
+                                                               초기 자립자는 스스로 모임의 목표를 세우고 배워나갈 수 있도록 지원, 장기
+                                                      활동지원
+                                                               자립자는 초기 자립자의 모임을 주도하고 동기부여할 수 있도록 지원
+                          ③발달장애인이
+                         스스로 지원 서비스를                           자조모임의 목표 중 하나인 정책과 복지 서비스에 대해 목소리를 낼 수 있도록
+                                                      정보공유
+                        선택하고 결정할 수 있는                          관련 단체 회원제 운영
+                           행동 유도 체계
+                                                               음성이 부정확할 수 있어 인공지능 학습을 돕기 위한 모델링 및 화면 조작을 통한
+                                                     조작용이성
+                                                               키워드 검색 제공, 사용자 실수 방지를 위한 예측 가능한 서비스 메시지 노출
+                                                               콘텐츠 가이드라인과 실 사용자 대화 패턴을 학습한 인공지능 모델링 및 알림과
+                         ④안전과 신뢰 보장을
+                                                      활동지원     모니터링에 대한 사람과의 협업 체계 필요, 투명성을 위한 정보 공개, 소프트웨어
+                           위한 운영정책
+                                                               업데이트 정책 마련 필요
+
+
+
+188 Archives of Design Research 2024. 07. vol 37. no 3
+
+<a id="pdf-p23"></a>
+### [PDF p.23] Kano 모델을 통해 분석한 경험구성요인 평가에서 차이를 보였던 변인은 돌봄 그룹 구분, 장애 유형 구분,
+- Locator: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · página **23** / 29
+
+심층 인터뷰를 통해 경험구성요인을 검증하였고, 도출된 인사이트는 다음과 같다.
+첫째, 인공지능을 활용한 추천과 맞춤 지원은 발달장애인의 자기결정을 존중하고 선택의 권리를 침해하지 않는
+선에서 제공이 필요하다. 이를 위해 편향되지 않은 다양한 정보의 선택지를 제공하고, 발달장애인 당사자가
+추천 의사를 취할 수 있도록 운영 정책 마련이 필요하다.
+둘째, 발달장애인의 특성에 따라 인공지능의 학습도 부정확할 수 있는 점이 고려되어야 한다. 발달장애인의
+불시적인 행동 특성과 부정확한 발음 등에 따라 데이터의 질이 낮을 수 있으며, 이에 대해 대체 보조 수단 및
+사용자 정확도 평가와 데이터 후보정에 대한 체계 구축이 필요하다.
+마지막으로, 가입 기반의 데이터 외에 데이터 활용 목적과 수집 접점을 구체화하여 개인정보를 보호하고
+인공지능 모델링을 효율화하여야 한다.
+
+
+
+
+5. 서비스 개발 및 구체화
+
+
+		         5. 1. 사용자 유형에 따른 페르소나 가설 수립
+Kano 모델을 통해 분석한 경험구성요인 평가에서 차이를 보였던 변인은 돌봄 그룹 구분, 장애 유형 구분,
+자립 경험 구분으로 본 서비스는 2가지 사용자 유형에 의한 2가지 콘셉트로 구분할 수 있다. 이를 전문가
+인터뷰를 통해 도출한 서비스 디자인 방향에 따라 세분화하면 스스로 자립 생활을 하며 자조 모임 주도가
+가능한 자립 생활 단계의 성인 발달장애인 집단과 서비스 지원사 연계를 통해 자립 훈련과 동기부여가 필요한
+성인 발달장애인 집단으로 나뉜다. 이는 요인의 특성 비교를 통해 유형화할 수 있으며, 도출된 요인은 성인
+발달장애인 개인의 ‘장애 유형’, ‘자립 여부’, ‘일상행활능력 정도’, ‘의사소통 가능 정도’, ‘모바일 기기 활용
+정도’를 기준으로 한다.
+위 요인별 기준을 고려하여 사용자 유형별 프로토-리서치 페르소나(Proto-Research Persona)를 개발해
+서비스 수혜자의 삶에 대한 이해를 바탕으로 아이디어를 개발하고자 한다. 이는 연구 초반 빠르게 페르소나를
+세우고 이를 나중에 검증하는 방식의 방법론으로, 초기에 제품과 서비스에 대한 수요자 중심의 통찰력을
+제공할 수 있다는 장점이 있다(Jain et al., 2019). 자조모임을 주도하는 성인 발달장애인 리더 집단(a),
+자조모임에 참여하는 성인 발달장애인 구성원 집단(b)의 페르소나 가설을 수립하였다[Table 23].
+
+
+Table 23 Types of Persona based on job classification
+               분류                          발달장애인 모임 리더(a)          발달장애인 모임 구성원(b)
+               분류                                32세 / 여                28세 / 남
+                    장애 유형                      자폐성 장애 2급           지적 장애 2급/뇌병변 장애
+  주요 변인             돌봄 구분                          당사자                   당사자
+                    자립 경험                      자립 생활 2년차             자립 생활 계획 중
+                  일상생활능력
+                                             일정 부분 도움 필요              대부분 도움 필요
+                    정도
+                    의사소통
+  자립 구분                                  대부분 스스로 의사소통 가능         일부 도움을 받아 의사소통 가능
+                    가능 정도
+                   모바일 기기
+                                            대부분 기능 활용 가능           기본 기능 위주 활용 가능
+                    활용 정도
+                                   - 단독 주거 생활 중이며, 사회복지재단    - 부모와 함께 거주중이며, 기초생활훈련과
+                                      바리스타로 재직 중                 사회참여를 위한 의사소통 기술에 대한
+               특성                  - 발달장애인 탈시설을 위한 권리 옹호에       훈련을 필요로 함
+                                      관심이 많으며, 후배 발달장애인을 위한   - 자립 코디네이터, 활동 지원 등 복지서비스
+                                      소통 주도                      이용 중
+
+
+
+
+                                                                                  www.aodr.org   189
+
+<a id="pdf-p24"></a>
+### [PDF p.24] 인공지능 기술 기반 커뮤니티 서비스 단계를 전, 중, 후로 구분하였으며, [Figure 1]에서 도출되었던
+- Locator: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · página **24** / 29
+
+5. 2. 서비스 시나리오 제안
+                       인공지능 기술 기반 커뮤니티 서비스 단계를 전, 중, 후로 구분하였으며, [Figure 1]에서 도출되었던
+                       이해관계자와 [Table 21]에서 도출되었던 서비스디자인 영역에 따른 우선순위 경험요인을 배치하였다. 따라서
+                       기존 발달장애인의 어려움을 해결할 수 있도록 사용자 경험 향상을 위한 경험요인 및 서비스 방향성을 바탕으로
+                       시나리오를 정리하면 다음과 같다[Figure 2].
+
+
+
+
+                       Figure 2 Service scenario
+
+
+
+
+                       6. 결론
+
+
+                       		         6. 1. 결론 및 시사점
+                       본 연구는 발달장애인이 자립을 위한 서비스를 지원받음에 있어서 더욱 수혜자 중심의 경험이 가능한
+                       서비스디자인 방향 및 시나리오를 제안하는 데 목적이 있다.
+                       먼저 서비스 경험 가치 요소를 도출하기 위해 발달장애인의 삶과 이를 고려한 인공지능의 활용 및 커뮤니티
+                       서비스관련 선행 연구를 분석하였다. 그리고 발달장애인의 특성과 자립을 구성하는 영역인 ‘자발적 참여’,
+                       ‘환경과의 상호작용’, ‘지원 서비스 수혜’를 도출하였다. 이를 발달장애인의 특성을 지원하는 ‘효율성’, ‘맞춤성’,
+                       ‘안전성’, ‘객관성’ 인공지능 기술사례에 대해 분석하여 적용 가능 범위를 파악하였다. 또한, 커뮤니티 서비스의
+                       개념 및 ‘접근 용이성’, ‘신뢰성’, ‘사용 편의성’, ‘유희성’, ‘개인 맞춤성’, ‘조작 용이성’, ‘활동 지원’, ‘의사소통
+                       지원’, ‘전문가 연계성’, ‘정보 공유’, ‘지속성’, ‘서비스 연계성’, ‘자기 옹호’, ‘소속감’, ‘확장성’ 구성요인을
+                       도출하였다.
+                       이후 경험요인을 구성하는 세부 구성요인 수집을 위해 서울의 발달장애인 자립지원센터 현장조사를
+                       실시하여 기존 발달장애인 커뮤니티 형태인 자조모임 활성화 프로그램 서비스 여정을 분석하였다. 이를
+                       바탕으로 발달장애인 자조모임 이해관계자지도(Stakeholder Map)와 고객여정지도(Customer Journey
+                       Map)를 제작하였으며 커뮤니티 서비스의 전반적 프로세스와 기능에 대한 이해도를 높였다. 최종적으로
+                       사용자 여정지도를 통해 파악한 세부 기능 요인 및 서비스 개선 필요 영역과 비디오 에스노그라피를 통해
+                       분석한 사용자 요구들을 선행 연구에서 도출한 서비스 경험요인별로 친화도법(Affinity Diagram)을 이용해
+                       분류하였다. 분류된 서비스 경험구성요인은 ‘자발적 참여’, ‘환경과의 상호작용’, ‘지원 서비스 수혜’ 3가지
+                       측면에서 15가지 속성 내 하위 30개 요인을 도출하였다.
+
+
+
+190 Archives of Design Research 2024. 07. vol 37. no 3
+
+<a id="pdf-p25"></a>
+### [PDF p.25] 도출된 경험구성요인에 기초하여 Kano 모델 활용 측정 도구를 제작하여 발달장애인의 자립 이해관계자를
+- Locator: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · página **25** / 29
+
+도출된 경험구성요인에 기초하여 Kano 모델 활용 측정 도구를 제작하여 발달장애인의 자립 이해관계자를
+대상으로 실증 조사를 수행하였다. 이때 설문의 정확도를 높이기 위해 서비스 조력자인 돌봄가족 및 관련 복지
+서비스 종사자를 대상으로 경험요인을 평가하고자 하였다. 설문 문항의 신뢰도 검증을 위해 예비조사 실시 후
+개선 의견을 반영하였고, 서비스 구조도 및 화면 예시 이미지를 제작하여 본조사에 활용하였다. 설문응답은
+Kano 모델과 Timko 고객만족계수를 통해 분석 후 경험요인별 품질 특성 및 우선순위를 파악하여 I) 발달장애
+유형별 개인화 UI/UX 설계를 통한 참여 유도, ⅱ) 발달장애인에게 유용한 상호작용 보조를 위한 필요 기능의
+적절한 배치, ⅲ) 발달장애인이 스스로 지원 서비스를 선택하고 결정할 수 있는 행동 유도 체계 ⅳ) 안전과 신뢰
+보장을 위한 운영체계로 4개의 서비스 디자인 방향을 도출하였다.
+이를 전문가 심층 인터뷰를 통해 실제 서비스에 적용 시 수혜자 관점의 유의사항 및 기술 구현 고려사항 등을
+구체화하였으며, 변인별 분석에서 품질 특성에 차이를 보였던 ‘서비스지원주체’, ‘장애유형’, ‘자립경험단계’를
+기반으로 페르소나 도출 후 시나리오를 제안하였다.
+
+
+본 연구의 학술적 시사점은 다음과 같다.
+첫째, 발달장애인의 자립을 위한 개념 종합 및 요소를 확립하고, 디지털 에스노그라피를 통한 삶의 이해를
+기반으로 이들의 자립을 돕는 커뮤니티 서비스 요소를 도출하였다. 이는 기존의 자립 생활을 이어가지 못하고
+다시 시설로 돌아가는 성인 발달장애인의 맥락과 니즈를 커뮤니티 서비스 속성을 연결하여 재해석하고
+실체화했다는 점에서 의의가 있다.
+둘째, 성인 발달장애인의 특성으로 인한 자립의 어려움을 분석하여 관계적 모델 관점의 인공지능 기술 범주를
+연구하고, 이를 도울 수 있는 기술 활용점과 연결하였다. 이는 그간 장애를 단편적인 치료적 관점으로 바라보며
+의료 기술 연구에만 활용되었던 한계를 극복하고, 하향식 접근에서 벗어나 수혜자 중심의 디자인 전략을
+도출했다는 점에서 의의가 있다.
+셋째, 성인 발달장애인의 자립을 돕는 인공지능 기술 기반의 커뮤니티 서비스에 필요한 경험구성요인을
+도출하였다. 또한, 기술 이해도가 높은 발달장애인 자립 이해관계자에게 품질 특성 파악 후 전문가 심층
+인터뷰를 통해 서비스 개발 전략 제안을 위한 구체적 아이디어로 도출하였다. 이를 통해 수혜자의 직접적인
+경험을 기반으로 한 우선순위를 바탕으로 서비스 개발 방향을 제시함으로써, 향후 수혜자의 근본적 문제해결을
+돕고 더 나은 미래를 위한 연구 논의 발판을 마련할 수 있을 것으로 기대한다.
+
+
+실무적 시사점으로는 첫째, 서비스디자인 관점을 활용하여 발달장애인의 삶과 특성을 이해하고 이를 실제
+인공지능 기술 사례 분석과 연결하여 장애를 위한 인공지능 기술 기반 서비스 미래상을 조망하였다. 이를
+통해 관련 정책 관련자 및 연구자 논의 활성화에 기여하였으며 발달장애인을 위한 자립 지원 서비스 개선과
+인공지능 활용에 도움이 되는 기초자료가 될 것으로 보인다.
+둘째, 본 연구에서 제안한 서비스 전략과 시나리오는 실제 서비스 기획 및 개발에 활용될 수 있다. 발달장애인
+유형과 자립 단계에 따라 나뉜 서비스 전략을 통해 서비스를 구성하는 전반적 요인 및 구조에 대한 구체적
+방향성을 참고할 수 있다. 따라서, 본 연구에서 도출한 인공지능 기술 기반 커뮤니티 서비스의 경험구성요인
+평가 결과와 변인별 품질 특성에 따른 서비스디자인 방향 및 사용자 유형별 시나리오는 실무에서 활용 가능한
+서비스 가이드라인을 도출하였다는 점에 의의가 있다.
+
+
+		    6. 2. 한계 및 제언
+본 연구는 세 가지의 한계를 가지고 있다.
+첫째, 연구 방법론에 관한 한계점이 있다. Kano모델 기반 서비스 품질구성요인의 분류는 도출 속성의
+최빈값만을 사용하여, 최빈값과 비슷하지만 적게 나온 속성의 경우 고려되지 않고 있다. 이를 개선하기위해
+Timko 고객만족계수를 활용한 보완적 접근을 시도하였지만 만족여부와 상관없이 내재된 잠재력에 관하여
+설명하기 힘들다는 한계점이 있다. 또한 전문가 심층 인터뷰를 통한 서비스디자인방향 구체화 시, 질적 연구
+특성상 연구자 관점에 따라 일부 내용이 일반화되기 어렵다는 한계점이 있다.
+둘째, 설문 대상에 관한 한계점이 있다. 본 연구는 상용화된 서비스가 아닌 가상 서비스를 기준으로 하여 설문
+
+
+
+                                                     www.aodr.org   191
+
+<a id="pdf-p26"></a>
+### [PDF p.26] 1. Baker, B., Mills, K. A., McDonald, P., & Wang, L. (2023, July). AI, Concepts of Intelligence, and
+- Locator: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · página **26** / 29
+
+대상자들이 서비스를 체험하지 않고 설문을 진행하였다. 서비스 이해도를 높이기 위해 충분한 서비스 설명과
+                       예시 화면 이미지를 함께 제공했지만, 대상자마다 이해도가 다를 수 있다는 한계점이 있다. 또한, 본 연구에서
+                       발달장애인 돌봄 가족 및 관련 복지 서비스 종사자 80명을 대상으로 설문 조사를 진행하였으나, 발달장애에서
+                       보이는 다양한 양상을 포괄하기에는 한계점이 있으며 표본이 각 변인을 대표하기는 수적 한계가 따른다. 추후
+                       장애 유형 및 자립 경험에 따른 대상자 수를 확장하여 연구가 진행된다면 정교화된 논의가 가능할 것으로
+                       보인다. 셋째, 경험요인 평가 및 서비스디자인 방향 도출에 따른 페르소나별 시나리오를 제안하였으나, 실제
+                       수혜자인 발달장애인 대상의 효과 및 구체적 적용 가능성에 대해서는 검증되지 않았다는 한계가 있다. 본
+                       연구의 한계점에서 나타난 방법론에 대한 보완과 설문 대상 확장 및 정교화의 필요성은 향후 연구 전략을
+                       세우는 데 활용점이 있을 것으로 보인다. 또한 도출된 서비스디자인 방향 및 시나리오에 대한 다각적 평가와
+                       서비스 수혜자의 실제 서비스 이용 과정에 대한 조사를 통해 효과성 검증이 이루어질 필요가 있음을 의미한다.
+                       이를 통해 발달장애인의 자립을 위한 커뮤니티 서비스 품질구성요인 평가를 기반으로 한 서비스 디자인 전략
+                       제안이 추후 수혜자 중심적 서비스 설계와 복지 서비스 발전에 긍정적 영향이 있기를 바란다.
+
+
+
+
+                       References
+                       1. Baker, B., Mills, K. A., McDonald, P., & Wang, L. (2023, July). AI, Concepts of Intelligence, and
+                         Chatbots: The "Figure of Man," the Rise of Emotion, and Future Visions of Education. Teachers
+                         College Reco.
+                       2. B aum, S. (1984). Promoting the well-being of the elderly: A community diagnosis Wan. T.H.
+                         Thomas, Barbara G. Odell, David T. Lewis New York: Haworth Press, 1982. Canadian Journal on
+                         Aging / La Revue Canadienne Du Vieillissement, 3 (2), 100-101. doi:10.1017/S0714980800011612
+                       3. Blythe, M., & Cairns, P. (2009, April). Critical methods and user generated content: the iPhone
+                         on YouTube. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems
+                         (CHI '09) . Association for Computing Machinery, New York, NY, USA, 1467-1476. https://
+                         doi.org/10.1145/1518701.1518923
+                       4. Brad, S. (2018, May). Using AI to empower people with disabilities. Retrieved from Microsoft On The
+                         Issues . https://blogs.microsoft.com/on-the-issues/2018/05/07/using-ai-to-empower-people-
+                         with-disabilities/
+                       5. Carter, E. W., & Hughes, C. (2005). Increasing social interaction among students with intellectual
+                         disabilities and their general education peers: Effective interventions. In: Database of Abstracts of
+                         Reviews of Effects (DARE): Quality-assessed Reviews [Internet] . York (UK): Centre for Reviews and
+                         Dissemination (UK); 1995-. Available from: https://www.ncbi.nlm.nih.gov/books/NBK71534/
+                       6. Chakraborty, N., Mishra, Y., Bhattacharya, R., & Bhattacharya, B. (2023). Artificial Intelligence: The
+                         road ahead for the accessibility of persons with Disability. Materials Today: Proceedings, 80 , 3757-
+                         3761. 10.1016/j.matpr.2021.07.374.
+                       7. Choi, J. Y. (2016). Study on the different anonymity perceptions impacting on posting malicious
+                         message according to types of online communities [Master's Thesis, Hanyang University]. http://
+                         www.riss.kr/link?id=T13960579
+                       8. Collins, P. H. (2015). Intersectionality's definitional dilemmas. Annual Review of Sociology, 41 (1),
+                         1-20. https://doi.org/10.1146/annurev-soc-073014-112142
+                       9. Floridi, L., Cowls, J., King, T. C., & Taddeo, M. (2020). How to Design AI for Social Good: Seven
+                         Essential Factors. Science and Engineering Ethics, 26 . 10.1007/s11948-020-00213-5.
+                       10. Ha, J. S., & Dong, H. R. (2023). The Relationship between Youth's Motivation to Use Community
+                           and Entrepreneurship Attitude An Empirical Study on the Mediating Effect of Social Capital. Korean
+                          Management Consulting Review, 23 (3), 51-63.
+                       11. Hotton, M., & Coles, S. (2016). The effectiveness of social skills training groups for individuals
+                           with autism spectrum disorder. Review Journal of Autism and Developmental Disorders, 3 , 68-81.
+                           10.1007/s40489-015-0066-5.
+                       12. Human, S., & Watkins, R. (2023). Needs and artificial intelligence. AI and Ethics, 3 (3), 811-826..
+                           10.1007/s43681-022-00206-z.
+
+
+192 Archives of Design Research 2024. 07. vol 37. no 3
+
+<a id="pdf-p27"></a>
+### [PDF p.27] 13. Jeong, J. Y. (2016). An evaluation research on the quality components for the service design of
+- Locator: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · página **27** / 29
+
+13. Jeong, J. Y. (2016). An evaluation research on the quality components for the service design of
+   health screening: focusing on KANO model [Doctoral Dissertation, Hongik University]. http://
+   www.riss.kr/link?id=T14040800
+14. J eon, L. S. (2017). Analysis on relationship between Psychological Characteristic and Life
+   Satisfaction. The Journal of the Korean Association on Developmental Disabilities, 2 1(3), 47-67.
+15. Kano, N., Seraku, N., Takahashi, F., & Tsuji, S. (1984). Attractive quality and must-be quality.
+   Journal of the Japanese Society for Quality Control, 14(2), 147-156. https://doi.org/10.20684/
+   quality.14.2_147
+16. Kang, H. J., Lee, A. R., & Kwon, G. H. (2017, February). Values for the Online Professional
+   Community. 한국HCI학회 학술대회[Proceedings of the Kangwon conference of the Korean HCI
+   Society. Korean HCI Society]. 강원(Kangwon).
+17. Kang, S. W., & Kim, M. Y. (2020). Qualitative Research on the Process of Self-help Group Activities
+   for People Developmental Disabilities. The Journal of Humanities and Social science , 11 (6), 1367-
+   1382.
+18. Keyes, O. (2020). Automating autism: Disability, discourse, and Artificial Intelligence. Journal of
+   Sociotechnical Critique, 1 (1), 1-31. https://doi.org/10.25779/89bj-j396
+19. Kim, J. G., & Lee, J. U. (2009). The Effect of the Supporting Services of Brand Community on the
+   Markers of Community, Community Loyalty and Company Brand Loyalty: Focusing on Online Music
+   Brand Communities. Journal of Consumer Studies, 20 (4), 187-214.
+20. Kim, J. Y. (2020). The Effect of Employment Status and Self-Efficacy on Life Satisfaction of People
+   with Developmental Disability: Focusing on mediating effect of Interpersonal Relationship.
+   Disability & Employment, 30 (1), 25-50.
+21. Kim, M. O., & Jeong, H. J. (2018). A Study of the Community Support System for Independence
+   of People with Developmental Disabilities After Deinstitutionalization - Focusing on the Service
+   Experience for Supported Living in the USA and Australia -. Korean Journal of Social Welfare, 70 (3),
+   51-79.
+22. Kim, J. Y., & Kang, K. S. (2012, June). The investigation on the types of post-secondary education
+   for the persons with developmental disabilities in Korea. 특수교육연구[Special Education Research],
+   19 (1), 217-240.
+23. Kim, Y. J., & Jo, W. Y. (2021, September). Conflict Experiences of Parents Having Children with
+   Severe Developmental Disabilities in Adulthood in the Age of Community Care -Focusing on the
+   Binary Choice of Facility Care and Home Care. The Study of Lifelong Education and Welfare for
+   People with Disabilities, 7 (2), 25-57.
+24. Ko, J., Son, J. H., & Yang, S. B. (2014, October). An Exploratory Study on Adoption of Public
+   Institution’s Mobile Service - Focusing on In-Depth Interviews with Users and Experts -. JOURNAL
+   OF THE KOREA CONTENTS ASSOCIATION, 14 (10), 706-722
+25. Lee, H. J. (2018). The effects of cooperative work-centered art therapy on the sociality development
+   of people with severe intellectual disabilities at facilities [Master's Thesis, Hanyang University].
+   http://www.riss.kr/link?id=T14874816
+26. Lee, K. L., & Park, J. H. (2013). A Study of Difficulty of Care-Giving and Support Needs According to
+   Life Cycle of Individuals with Developmental Disabilities. Journal of Intellectual Disabilities, 15(2),
+   349-373.
+27. Lee, S. K. (2016). A Study on Legal foundation for Personal Budgets - Focusing on the revision of
+   Act on the Welfare for People with Disabilities -. Social Welfare and Law Journal, 7 (1), 139-155.
+28. Lee, U. M., & Baek, U. R. (2010, december). A Study on Family Experience and Support Needs
+   Through Life Cycle of Children with Intellectual Disability. Korean Journal of Qualitative Research in
+   Social Welfare, 4 (2), 63-90.
+29. MOHW. (2020). A Study on the Status of Persons with Disabilities. https://www.mohw.go.kr/
+   menu.es?mid=a10104010100
+30. Mason, L. S. (2017, June). The disability employment puzzle: A field experiment on employer hiring
+   behaviour. ILR Review, 71 (2), 329-364.
+
+
+
+
+                                                                                          www.aodr.org   193
+
+<a id="pdf-p28"></a>
+### [PDF p.28] 31. Moon, D. Y., & Yu, Y. M. (2021). Analysis of Conceptualization of Community Care Services for Adult
+- Locator: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · página **28** / 29
+
+31. Moon, D. Y., & Yu, Y. M. (2021). Analysis of Conceptualization of Community Care Services for Adult
+                           Developmental Disabilities. Korea Academy of Disability and Welfare, 51(51), 173-203
+                       32. Nam, K. W. (2022). Analysis of the Characteristics of Smart Platforms by Type of Community
+                           Participation. Journal of the Korean Association of Geographic Information Studies, 25 (4), 119-
+                           135. 10.11108/kagis.2022.25.4.119
+                       33. Newman-Griffis, D., Rauchberg, J. S., Alharbi, R., Hickman, L., & Hochheiser, H. (2023). Definition
+                           drives design: Disability models and mechanisms of bias in AI technologies. First Monday, 28 (1).
+                           https://doi.org/10.5210/fm.v28i1.12903 (Original work published January 16, 2023)
+                       34. Northway, R. (2015). What does independence mean? Journal of Intellectual Disabilities, 19 (3),
+                           203-204. https://doi.org/10.1177/1744629515593659
+                       35. O stherr K. (2022). Artificial Intelligence and Medical Humanities. The Journal of medical
+                          humanities, 43 (2), 211-232. https://doi.org/10.1007/s10912-020-09636-4
+                       36. Paay, J., Kjeldskov, J., Skov, M. B., & O’hara, K. (2013). F-formations in cooking together: A digital
+                           ethnography using youtube. In Human-Computer Interaction-INTERACT 2013: 14th IFIP TC 13
+                          International Conference, Cape Town, South Africa, September 2-6, 2013, Proceedings, Part IV 14
+                           (pp. 37-54). Springer Berlin Heidelberg.. 10.1007/978-3-642-40498-6_3.
+                       37. Paik, E. R., Lee, M. K., Yu, Y. H., & Lim, H. S. (2019). A Study of Community Support systems and
+                           Services for People with Developmental Disabilities: Focusing on the Case of New Hampshire.
+                          Disability & Social Welfare, 10 (1), 1-38.
+                       38. Paraman, P., & Anamalah, S. (2022). Ethical artificial intelligence framework for a good AI society:
+                           principles, opportunities and perils. AI & SOCIETY, 38 , 1-17. 10.1007/s00146-022-01458-3.
+
+
+
+
+194 Archives of Design Research 2024. 07. vol 37. no 3
+
+<a id="pdf-p29"></a>
+### [PDF p.29] 하는 인공지능 기술 기반의 커뮤니티 서비스에 필요한 경험구성요인 도출 후, Kano 모델을 활용한 설문 조사와
+- Locator: `R566-the-experience-of-using-artificial-intelligence-for-the-disabled-evaluation-of-c.pdf` · página **29** / 29
+
+장애인을 위한 인공지능 활용 서비스 경험 연구: 발달장애인
+의 자립을 위한 커뮤니티 서비스 경험요인 평가 및 전략 제안
+정이랑1, 구유리2*
+1
+홍익대학교 산업미술대학원 서비스디자인학과, 석사, 서울, 대한민국
+2
+홍익대학교 산업미술대학원 서비스디자인학과, 교수, 서울, 대한민국
+
+
+
+
+초록
+
+연구배경     본 연구는 성인 발달장애인의 특성과 삶에 대한 이해를 바탕으로, 성인 발달장애인의 자립 생활을
+지원하는 서비스 전략 제안을 위해 인공지능 기술 기반 커뮤니티 서비스의 경험구성요인을 도출 및 평가하고, 이
+를 기반으로 한 서비스 시나리오 제안을 목적으로 한다.
+
+연구방법     문헌 연구와 사용자 조사 및 경험구성요인 평가로 진행하였다. 먼저 발달장애인 자립과 특성에 대한
+이론을 고찰하여 구성요인을 도출하였고, 이를 도울 수 있는 인공지능 기술과 커뮤니티 서비스에 필요한 속성을
+도출하였다. 다음으로, 현장조사 및 디지털 에스노그라피를 통한 사용자 조사에서 이들의 삶의 이해와 맥락적 경
+험을 반영하여 앞서 이론적 고찰에서 도출한 결과와 종합하였다. 이를 기반으로 성인 발달장애인의 자립을 지원
+하는 인공지능 기술 기반의 커뮤니티 서비스에 필요한 경험구성요인 도출 후, Kano 모델을 활용한 설문 조사와
+Timko 고객만족계수를 활용하여 서비스 경험구성요인을 평가하였으며, 이를 통해 우선 적용이 필요한 요소를
+분석하여 서비스 개발 방향성을 최종 도출하였으며, 이를 전문가 심층 인터뷰를 통해 검증하였다.
+
+연구결과     이를 통해 네 가지 서비스디자인 전략이 최종 도출되었다. 첫째, 발달장애 유형별 개인화 UI/UX 설
+계가 필요하며, 둘째, 발달장애인에게 유용한 상호작용 보조를 위한 필요 기능의 적절한 배치, 셋째, 발달장애인
+이 스스로 서비스를 선택하고 결정할 수 있는 행동 유도 체계 지원, 마지막으로 안전과 신뢰 보장을 위한 운영체
+계가 마련되어야 한다.
+
+결론       도출된 전략에 따라 장애 유형과 자립 경험 단계에 따른 성인 발달장애인의 자립을 위한 인공지능
+기술 기반 커뮤니티 서비스 시나리오를 최종 제안하였다.
+
+주제어      디자인 리서치, 서비스 디자인, 서비스 경험, 사용자 조사, AI 서비스, 장애를 위한 AI, 인간중심 AI,
+발달장애인, 커뮤니티 서비스
+
+
+
+이 논문은 2024년 홍익대학교 석사학위 논문을 바탕으로 작성됨
+
+*교신저자: 구유리(yrkoo@hongik.ac.kr)
+
+
+
+
+                                                              www.aodr.org   195

@@ -1,0 +1,1110 @@
+# AI, autism, and the architecture of voice: from engineered exclusion
+
+> Fuente PDF: `R453-ai-autism-and-the-architecture-of-voice-from-engineered-exclusion-to-designed-di.pdf` · técnica **locator index** (página + ancla) + chunks Graphify
+
+## Metadata
+- Stem: `R453-ai-autism-and-the-architecture-of-voice-from-engineered-exclusion-to-designed-di`
+- PDF: `R453-ai-autism-and-the-architecture-of-voice-from-engineered-exclusion-to-designed-di.pdf`
+- DOI: `10.1007/s00146-026-03044-3`
+- Pages: `15`
+- Structured_at: `2026-10-03T23:23:18+00:00`
+- Technique: `pdf-page-locators + heading-chunks`
+
+## Locator index (qué hay y en qué página del PDF)
+
+| Kind | Label | PDF page | MD anchor |
+|------|-------|----------|-----------|
+| abstract | Abstract / blurb | 1 | `#abstract` |
+| section | 2026 Riverhead Books, New York | 14 | `#p14-2026-riverhead-books-new-york` |
+| concept | R453 | ? | `#concept-r453` |
+| concept | autism | ? | `#concept-autism` |
+| concept | architecture | 1 | `#concept-architecture` |
+| concept | voice | ? | `#concept-voice` |
+| concept | from | ? | `#concept-from` |
+| concept | engineered | ? | `#concept-engineered` |
+| concept | exclusion | ? | `#concept-exclusion` |
+| concept | designed | ? | `#concept-designed` |
+| finding | This paper conceptualizes engineered exclusion—the predictable sidelining of disabled user… | 1 | `#finding-this-paper-conceptualizes-engineered-exc` |
+| finding | We examine engineered exclusion through the lived experiences of minimally and nonspeaking… | 1 | `#finding-we-examine-engineered-exclusion-through` |
+| finding | We argue that accessibility must be treated as a core dimension of AI ethics—on par with f… | 1 | `#finding-we-argue-that-accessibility-must-be-trea` |
+| finding | Re-engineering AI for designed dignity requires systems that recognize embodied, multimoda… | 1 | `#finding-re-engineering-ai-for-designed-dignity-r` |
+| page | p.1: AI & SOCIETY (2026) 41:6643–6657 | 1 | `#pdf-p1` |
+| page | p.2: Table 1 Operational mechanisms of engineered exclusion across modalities and corresponding | 2 | `#pdf-p2` |
+| page | p.3: AI & SOCIETY (2026) 41:6643–6657 6645 | 3 | `#pdf-p3` |
+| page | p.4: 6646 AI & SOCIETY (2026) 41:6643–6657 | 4 | `#pdf-p4` |
+| page | p.5: AI & SOCIETY (2026) 41:6643–6657 6647 | 5 | `#pdf-p5` |
+| page | p.6: 6648 AI & SOCIETY (2026) 41:6643–6657 | 6 | `#pdf-p6` |
+| page | p.7: AI & SOCIETY (2026) 41:6643–6657 6649 | 7 | `#pdf-p7` |
+| page | p.8: 6650 AI & SOCIETY (2026) 41:6643–6657 | 8 | `#pdf-p8` |
+| page | p.9: AI & SOCIETY (2026) 41:6643–6657 6651 | 9 | `#pdf-p9` |
+| page | p.10: 6652 AI & SOCIETY (2026) 41:6643–6657 | 10 | `#pdf-p10` |
+| page | p.11: AI & SOCIETY (2026) 41:6643–6657 6653 | 11 | `#pdf-p11` |
+| page | p.12: 6654 AI & SOCIETY (2026) 41:6643–6657 | 12 | `#pdf-p12` |
+| page | p.13: AI & SOCIETY (2026) 41:6643–6657 6655 | 13 | `#pdf-p13` |
+| page | p.14: 6656 AI & SOCIETY (2026) 41:6643–6657 | 14 | `#pdf-p14` |
+| page | p.15: AI & SOCIETY (2026) 41:6643–6657 6657 | 15 | `#pdf-p15` |
+
+## Abstract
+<a id="abstract"></a>
+
+This paper conceptualizes engineered exclusion—the predictable sidelining of disabled users resulting from choices about data provenance, model objectives, and evaluation practices within AI systems. We examine engineered exclusion through the lived experiences of minimally and nonspeaking autistic people whose communicative profiles challenge the speech-centered defaults embedded in contemporary AI pipelines. Here, “voice” refers not only to speech but to the broader architecture through which embodied, multimodal communication—spanning AAC text, gesture, movement, and partial vocalizations— becomes legible within AI systems. “Nonspeaking” is therefore not the absence of language but a heterogeneous spectrum in which communication is often state dependent, varying with fatigue, anxiety, sensory load, and motor planning demands— forms of variation that design abstractions routinely erase. Tracing exclusionary mechanisms across speech recognition, text-to-speech, plain-language systems, and interface design, we introduce measurable designed-dignity metrics for technical evaluation (Table 1) and a governance framework mapping accountability across the AI lifecycle (Table 2). We argue that accessibility must be treated as a core dimension of AI ethics—on par with fairness, privacy, and safety. Re-engineering AI for designed dignity requires systems that recognize embodied, multimodal, and fluctuating forms of communication, expanding what counts as valid signal and responsible innovation.
+
+## Keywords
+
+- _(none auto-detected)_
+
+## Concept index (graph hooks + página)
+
+<a id="concept-r453"></a>
+### [PDF p.?] Concept: R453
+- Locator: `R453-ai-autism-and-the-architecture-of-voice-from-engineered-exclusion-to-designed-di.pdf` · página **?**
+
+<a id="concept-autism"></a>
+### [PDF p.?] Concept: autism
+- Locator: `R453-ai-autism-and-the-architecture-of-voice-from-engineered-exclusion-to-designed-di.pdf` · página **?**
+
+<a id="concept-architecture"></a>
+### [PDF p.1] Concept: architecture
+- Locator: `R453-ai-autism-and-the-architecture-of-voice-from-engineered-exclusion-to-designed-di.pdf` · página **1**
+
+<a id="concept-voice"></a>
+### [PDF p.?] Concept: voice
+- Locator: `R453-ai-autism-and-the-architecture-of-voice-from-engineered-exclusion-to-designed-di.pdf` · página **?**
+
+<a id="concept-from"></a>
+### [PDF p.?] Concept: from
+- Locator: `R453-ai-autism-and-the-architecture-of-voice-from-engineered-exclusion-to-designed-di.pdf` · página **?**
+
+<a id="concept-engineered"></a>
+### [PDF p.?] Concept: engineered
+- Locator: `R453-ai-autism-and-the-architecture-of-voice-from-engineered-exclusion-to-designed-di.pdf` · página **?**
+
+<a id="concept-exclusion"></a>
+### [PDF p.?] Concept: exclusion
+- Locator: `R453-ai-autism-and-the-architecture-of-voice-from-engineered-exclusion-to-designed-di.pdf` · página **?**
+
+<a id="concept-designed"></a>
+### [PDF p.?] Concept: designed
+- Locator: `R453-ai-autism-and-the-architecture-of-voice-from-engineered-exclusion-to-designed-di.pdf` · página **?**
+
+
+## Findings index (graph hooks + página)
+
+<a id="finding-this-paper-conceptualizes-engineered-exc"></a>
+### [PDF p.1] Finding: This paper conceptualizes engineered exclusion—the predictable sidelining of disabled users resulting from choices about data provenance, model objectives, and evaluation practices within AI systems.
+- Locator: `R453-ai-autism-and-the-architecture-of-voice-from-engineered-exclusion-to-designed-di.pdf` · página **1**
+
+<a id="finding-we-examine-engineered-exclusion-through"></a>
+### [PDF p.1] Finding: We examine engineered exclusion through the lived experiences of minimally and nonspeaking autistic people whose communicative profiles challenge the speech-centered defaults embedded in contemporary AI pipelines.
+- Locator: `R453-ai-autism-and-the-architecture-of-voice-from-engineered-exclusion-to-designed-di.pdf` · página **1**
+
+<a id="finding-we-argue-that-accessibility-must-be-trea"></a>
+### [PDF p.1] Finding: We argue that accessibility must be treated as a core dimension of AI ethics—on par with fairness, privacy, and safety.
+- Locator: `R453-ai-autism-and-the-architecture-of-voice-from-engineered-exclusion-to-designed-di.pdf` · página **1**
+
+<a id="finding-re-engineering-ai-for-designed-dignity-r"></a>
+### [PDF p.1] Finding: Re-engineering AI for designed dignity requires systems that recognize embodied, multimodal, and fluctuating forms of communication, expanding what counts as valid signal and responsible innovation.
+- Locator: `R453-ai-autism-and-the-architecture-of-voice-from-engineered-exclusion-to-designed-di.pdf` · página **1**
+
+
+## Relevance hooks
+### Theme relevance: software engineering and accessibility
+### Theme relevance: cognitive accessibility and neurodiversity
+### Theme relevance: evaluation metrics and WCAG
+
+## Sections (detected in PDF)
+
+<a id="p14-2026-riverhead-books-new-york"></a>
+### [PDF p.14] Section: 2026 Riverhead Books, New York
+- Locator: `R453-ai-autism-and-the-architecture-of-voice-from-engineered-exclusion-to-designed-di.pdf` · página **14** · ancla `#p14-2026-riverhead-books-new-york`
+
+
+## Page chunks (texto por página del PDF)
+
+_Cada heading es un nodo Graphify. El label incluye la página para volver al PDF sin releer todo._
+
+<a id="pdf-p1"></a>
+### [PDF p.1] AI & SOCIETY (2026) 41:6643–6657
+- Locator: `R453-ai-autism-and-the-architecture-of-voice-from-engineered-exclusion-to-designed-di.pdf` · página **1** / 15
+
+AI & SOCIETY (2026) 41:6643–6657
+https://doi.org/10.1007/s00146-026-03044-3
+
+    OPEN FORUM
+
+
+
+AI, autism, and the architecture of voice: from engineered exclusion
+to designed dignity
+Hari Srinivasan1
+
+Received: 3 January 2026 / Accepted: 8 April 2026 / Published online: 18 April 2026
+© The Author(s) 2026
+
+
+Abstract
+This paper conceptualizes engineered exclusion—the predictable sidelining of disabled users resulting from choices about
+data provenance, model objectives, and evaluation practices within AI systems. We examine engineered exclusion through the
+lived experiences of minimally and nonspeaking autistic people whose communicative profiles challenge the speech-centered
+defaults embedded in contemporary AI pipelines. Here, “voice” refers not only to speech but to the broader architecture
+through which embodied, multimodal communication—spanning AAC text, gesture, movement, and partial vocalizations—
+becomes legible within AI systems. “Nonspeaking” is therefore not the absence of language but a heterogeneous spectrum in
+which communication is often state dependent, varying with fatigue, anxiety, sensory load, and motor planning demands—
+forms of variation that design abstractions routinely erase. Tracing exclusionary mechanisms across speech recognition,
+text-to-speech, plain-language systems, and interface design, we introduce measurable designed-dignity metrics for technical
+evaluation (Table 1) and a governance framework mapping accountability across the AI lifecycle (Table 2). We argue that
+accessibility must be treated as a core dimension of AI ethics—on par with fairness, privacy, and safety. Re-engineering
+AI for designed dignity requires systems that recognize embodied, multimodal, and fluctuating forms of communication,
+expanding what counts as valid signal and responsible innovation.
+
+Keywords AAC​· Accessibility · AI ethics · Autism · Communication · Designed dignity · Engineered exclusion
+
+
+Artificial intelligence (AI) increasingly mediates how peo-                    they directly affect design and evaluation. While the analysis
+ple learn, work, and communicate, shaping access to infor-                     centers on speech- and language-based systems—such as
+mation and participation in social life through tools such                     speech recognition, text-to-speech, and AAC interfaces—the
+as predictive text, voice assistants, automated translation,                   conceptual frame of engineered exclusion also extends to
+and plain-language summarizers. Yet for many minimally                         generative text systems that mediate communication access
+and nonspeaking autistics, individuals who cannot rely on                      for users with motor or linguistic challenges. These systems,
+speech alone to be heard and understood (Communication-                        too, encode assumptions about fluency, predictability, and
+FIRST, n.d. 2026), the same technologies reproduce long-                       “legible” expression that can marginalize disabled com-
+standing patterns of exclusion, especially for communication                   municators (Bender et al. 2021; Freyer 2024). Documented
+that is variable, multimodal, or state dependent. This paper                   disparities in speech technologies and the predominance
+introduces engineered exclusion, the predictable sidelining                    of “speaking,” native-English user profiles in datasets and
+of disabled users that arises from choices about data prov-                    design assumptions mean minimally or nonspeaking autis-
+enance, model objectives, and evaluation practices in con-                     tics are often misclassified or omitted, patterns that mir-
+temporary AI pipelines. Our focus is squarely on AI systems                    ror historical exclusions regarding whose communication
+and development processes; we do not engage in broader                         is deemed valid (Koenecke et al. 2020; Srinivasan 2025b).
+social debates about terminology or identity except where                         This paper makes three contributions: (1) it frames acces-
+                                                                               sibility as a first-order AI ethics concern rather than a com-
+                                                                               pliance add-on; (2) it proposes operationalizable designed-
+* Hari Srinivasan                                                              dignity metrics (Table 1) that translate critical disability
+  hari.srinivasan@vanderbilt.edu                                               scholarship into engineering-relevant checkpoints; and (3) it
+1                                                                              centers minimally and nonspeaking autistic communicators,
+     Vanderbilt University, Nashville, USA
+
+
+                                                                                                                             Vol.:(0123456789)
+
+<a id="pdf-p2"></a>
+### [PDF p.2] Table 1 Operational mechanisms of engineered exclusion across modalities and corresponding designed-dignity metrics
+- Locator: `R453-ai-autism-and-the-architecture-of-voice-from-engineered-exclusion-to-designed-di.pdf` · página **2** / 15
+
+6644
+
+
+
+
+Table 1  Operational mechanisms of engineered exclusion across modalities and corresponding designed-dignity metrics
+Domain                                  Engineered mechanism                                How exclusion operates                                Designed-dignity metric
+
+Automatic speech recognition (ASR) Distributional underrepresentation                Default training corpora underrepresent atypical,            Inclusion-weighted dataset audits; WER parity
+                                                                                       dysarthric, accented, or state-variable speech.              reporting across speech variability profiles; base-
+                                                                                       Fine-tuned models exist but are not baseline                 line deployment transparency
+                                                                                       deployment behavior
+                                        Enrollment and adaptation dependency         Performance improvements require personal-                   Default-on adaptive modeling; low-sample person-
+                                                                                       ized fine-tuning, sufficient training samples, or           alization benchmarks; fatigue-sensitive evalua-
+                                                                                       stable articulation—placing adaptation burden               tion protocols
+                                                                                       on user
+                                        Ecosystem dependence                         Accessibility improvements may require specific              Cross-platform accessibility parity; multilingual
+                                                                                       devices, updates, or supported languages                     atypical speech coverage reporting
+AAC/text-to-speech (TTS)                Conditional Identity access                  Identity-aligned voices embedded within hard-                Identity-fit availability index; hardware-independ-
+                                                                                       ware ecosystems, premium tiers, or technically               ent voice portability; expressive-fidelity baseline
+                                                                                       complex workflows rather than universal default              standards
+                                        Enrollment burden                            Voice cloning requires sustained recording ses-              Enrollment effort audits; motor-access adaptive
+                                                                                       sions, articulation stability, motor endurance,              enrollment modes; articulation-variability toler-
+                                                                                       and device navigation capacity                               ance testing
+                                        Grapheme-to-phoneme (G2P) normalization bias Acronyms, scientific terms, multilingual names,              Domain-specific pronunciation fidelity testing;
+                                                                                       and non-dominant pronunciations default to                   acronym handling benchmarks; user-controlled
+                                                                                       majority-frequency inference, requiring pho-                 pronunciation override tools
+                                                                                       netic workaround labor
+                                        Correction labor transfer                    Users must pre-correct spelling, spacing, pacing,          Cognitive-labor impact metrics; automated contex-
+                                                                                       or phonetics to force accurate output                     tual pronunciation adaptation; expressive-latency
+                                                                                                                                                 tracking
+Cross-modal Infrastructure              Priority-driven remediation                         Highly visible failures corrected rapidly; subtle   Equity-prioritization review criteria; time-to-reme-
+                                                                                             representational inequities persist longer          diation disparity tracking
+                                        Majority-frequency optimization                     Systems treat statistical frequency as correctness, Variability-weighted evaluation metrics; minority-
+                                                                                             defining normative expression as baseline           expression fidelity thresholds
+
+The table summarizes structural mechanisms through which AI systems embed exclusion and proposes corresponding measurable indicators for designed dignity. These metrics are illustrative
+and intended to guide operationalization across modalities. These metrics are illustrative and intended to guide operationalization; their validity and reliability require empirical evaluation across
+diverse user populations and deployment settings
+
+
+
+                                                                                                                                                                                                          AI & SOCIETY (2026) 41:6643–6657
+
+<a id="pdf-p3"></a>
+### [PDF p.3] AI & SOCIETY (2026) 41:6643–6657 6645
+- Locator: `R453-ai-autism-and-the-architecture-of-voice-from-engineered-exclusion-to-designed-di.pdf` · página **3** / 15
+
+AI & SOCIETY (2026) 41:6643–6657                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    6645
+
+a population largely absent from mainstream AI fairness dis-
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                The table identifies governance sites across the AI lifecycle where design and policy decisions systematically enable or constrain communicative dignity. It establishes the normative governance
+course. We also offer a concise governance map for policy-                                                                                                                                                  Who decides what counts as valid signal at data collection, and whose com-
+makers to identify where accountability should attach across
+the AI lifecycle (Table 2).                                                                                                                                                                                  munication is systematically excluded or reframed?
+   Crucially, “nonspeaking” or “minimally speaking” is not
+                                                                                                                                                                                                            How is communicative diversity weighted during optimization, and what vari-
+a single condition or an absence of language. It names a
+wide spectrum of communication and users of augmenta-
+tive and alternative communication (AAC): some people                                                                                                                                                        ability is preserved rather than suppressed?
+type on keyboards (with varying fluency and with the use
+
+                                                                                                                                                                                                            Who holds agency over configuration, correction, and identity representation,
+of a single index finger to using all 10 fingers), others point
+to letterboards, symbol-based systems, or write on paper.
+                                                                                                                                                                                                             and how is enrollment effort distributed?
+Many also communicate via gesture, rhythmic movement,
+
+
+
+
+                                                                                                                                                                     Dignity-oriented governance question
+partial vocalizations, or echolalia, repetition that can carry
+pragmatic meaning such as affirmation, regulation, or refusal
+(Prizant et al. 2006). AAC refers to the systems and tech-                                                                                                                                                  What forms of change, fluctuation, and adaptive use are recognized as suc-
+
+                                                                                                                                                                                                             cess, and how is effort accounted for in evaluation?
+nologies that support or replace natural speech, from no-
+tech letterboards and laminated picture symbols to high-
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                framework within which engineered exclusion can be identified and addressed, highlighting concrete points where oversight, accountability, and design interventions can shift AI systems toward
+tech speech-generating devices and apps, used to express
+and comprehend language across contexts (Beukelman and                                                                                                                                                      How is communicative inclusion made visible, measurable, and enforceable
+Light 2020).
+   Many autistics may be multimodal, combining varying                                                                                                                                                       across deployment contexts?
+degrees of speech and AAC usage depending on context.
+Within the same person, communicative profiles can vary
+
+                                                                                                                                                                                                                                               Disabled communication underrepresented, medicalized, or distributionally
+across time and setting with fatigue, anxiety, sensory load,
+predictability, and motor planning demands (Tager-Flusberg
+and Kasari 2013). AAC use cuts across the DSM-5 levels in
+
+                                                                                                                                                                                                                                                 marginalized in data collection
+autism, though a substantial share of AAC users also meet
+
+
+
+
+                                                                  Table 2  Governance sites across the AI lifecycle: from engineered exclusion to designed dignity
+the higher support Level 3 criteria, reflecting needs across
+communication, self-regulation, and daily living (Ameri-
+
+                                                                                                                                                                                                            Model training and optimization Variability optimized away as statistical noise; majority-frequency patterns
+can Psychiatric Association 2022; Beukelman and Light
+2020). This overlap does not make the categories coexten-
+sive; moreover, support needs are state -dependent and can
+
+                                                                                                                                                                                                                                                 treated as normative baseline
+intensify with fatigue, overload, or unfamiliar environments
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                dignity-oriented inclusion
+while easing with predictable routines and supports.
+   A related consideration is motor planning. Many mini-
+
+                                                                                                                                                                                                            Interface and configuration design Control and configuration centralized in caregivers, clinicians, or platform
+mally or nonspeaking autistics contend with differences
+
+
+
+
+                                                                                                                                                                     Dominant governance failure
+in planning and sequencing movement, often described
+clinically as apraxia or dyspraxia, alongside atypical sen-
+
+                                                                                                                                                                                                                                                 defaults; enrollment burden placed on users
+sory integration (Dziuk et al. 2007). These differences do
+not preclude intentional communication; they change how
+intention is expressed. Producing an utterance, text, pointed,
+
+                                                                                                                                                                                                            Evaluation and benchmarking        Static, one-shot benchmarks that ignore variability, adaptation burden, and
+gestured, or vocalized, may require conscious sequencing
+and control of movement, so pace and rhythm diverge from
+spontaneous speech even when the message is clear (Torres
+
+                                                                                                                                                                                                                                                 state-dependent performance
+et al. 2013).
+   This heterogeneity, spanning both expressive rhythm and
+mutual understanding, matters because design abstractions
+
+                                                                                                                                                                                                            Deployment and oversight           Limited public accessibility transparency; inclusion treated as feature rather
+tend to erase it. For AI design, the implication is straight-
+forward: systems must center expressive access and tolerate
+
+
+                                                                                                                                                                     AI lifecycle stage                     Data provenance
+variability, rather than presume a single, stable communi-
+
+                                                                                                                                                                                                                                                 than enforceable baseline
+cative profile. This misalignment resembles what Milton
+(2012) describes as the double empathy problem—a break-
+down in mutual understanding between differently minded
+
+<a id="pdf-p4"></a>
+### [PDF p.4] 6646 AI & SOCIETY (2026) 41:6643–6657
+- Locator: `R453-ai-autism-and-the-architecture-of-voice-from-engineered-exclusion-to-designed-di.pdf` · página **4** / 15
+
+6646                                                                                               AI & SOCIETY (2026) 41:6643–6657
+
+communicators. In the same way that autistic and non-autis-      groups. Rather, it names a patterned infrastructural misalign-
+tic interlocutors can misinterpret one another’s signals, the    ment between system assumptions and communicative forms
+“mind” of AI, trained on normative language and rhythm,          that fall outside dominant data distributions. While bias frame-
+can misread the embodied, nonlinear, or intermittent expres-     works often focus on inequitable outputs across predefined
+sions of minimally speaking users. What results is a form        categories, engineered exclusion highlights how entire com-
+of algorithmic double empathy failure: the model assumes         municative modalities—multimodal, state-dependent, AAC-
+the user is incoherent, while the user experiences the model     mediated—may be structurally unrecognized at the level of
+as unresponsive. Both “sides” operate from incompatible          training data, model objectives, and evaluation benchmarks. In
+assumptions about what communication should look like.           this sense, it extends but is not reducible to fairness discourse,
+Reframing engineered exclusion in this way highlights that       emphasizing pipeline architecture rather than outcome dispari-
+accessibility is not simply a matter of adding more data, but    ties alone (Benjamin 2019; Whittaker et al. 2021).
+of fostering systems capable of reciprocal understanding—            The sections that follow trace how this erasure propagates
+systems that learn to adapt to diverse communicative logics      through specific technologies; input–output priorities, voice
+rather than forcing users into legibility.                       identity, recognition, analytics, fairness framings, plain-lan-
+    Engineered exclusion should therefore be understood as       guage generation, and interface agency. The point is simple:
+a dynamic process rather than a fixed condition. AI sys-         any pipeline that assumes a single, stable communicative
+tems evolve rapidly, and visible product-level failures may      profile will systematically underserve people whose expres-
+be partially remediated over time. Developments in person-       sion is embodied, multimodal, and state dependent. This
+alized voice synthesis, expanded atypical speech datasets,       technological bias mirrors a social one: just as workplaces
+and improved generative interfaces demonstrate that specific     and institutions often presume neurotypical modes of com-
+breakdowns can be addressed when prioritized. Yet reme-          munication as the default, favoring fluent, rapid, and verbally
+diation at the product layer does not automatically alter the    consistent interaction, AI systems replicate that presumption
+training distributions, evaluation benchmarks, economic          in code. Both collapse communicative diversity into a nar-
+incentives, or governance structures that define normative       row ideal of legibility, overlooking how expression naturally
+communication. Distinguishing product-level remediation          fluctuates with sensory, emotional, and contextual states
+from pipeline-level structural redesign clarifies how exclu-     (Heasman and Gillespie 2018; Milton 2012).
+sion can appear reduced in particular tools while persisting         This analysis is conceptual rather than empirical. It draws
+infrastructurally, leaving improvements contingent rather        on AI system documentation, benchmarking practices, dis-
+than default.                                                    ability scholarship, and technical literature on ASR (auto-
+    By situating accessibility within the same technical and     matic speech recognition), TTS (text to speech), and AAC
+policy infrastructures that govern fairness, privacy, and        systems to identify recurring patterns of exclusion that cut
+safety, this paper aligns with and extends work in AI ethics     across these domains. The proposed designed-dignity met-
+(Benjamin 2019; Costanza-Chock 2020). We argue that cre-         rics are therefore best understood as operational hypoth-
+ating AI systems usable by minimal and nonspeaking people        eses—ways of translating normative commitments into
+is not only a moral imperative but also a methodological one,    constructs that can be tested, refined, and evaluated within
+expanding what counts as valid signal, legitimate data, and      real-world systems.
+responsible innovation. In doing so, it invites a re-engineer-       The paper proceeds in two stages. First, it identifies
+ing of AI pipelines toward designed dignity rather than engi-    domain-specific mechanisms through which exclusion
+neered exclusion. Designed dignity refers to the intentional     becomes infrastructural across speech recognition and
+embedding of respect, agency, and expressive equity into the     assistive voice systems, translating these into operational
+architecture of technology itself. Where accessibility retro-    designed-dignity metrics (Table 1). Second, it shifts to gov-
+fits systems after exclusion has occurred, designed dignity      ernance, mapping how accountability must attach across
+anticipates human variation from the outset, ensuring that       the AI lifecycle—from data provenance to deployment
+participation is neither conditional nor extractive. It shifts   oversight—if communicative dignity is to be structurally
+the goal from simply enabling function to affirming person-      embedded rather than retrofitted (Table 2). These sections
+hood, treating disabled users not as exceptions to accom-        move from diagnosis to institutional design.
+modate but as co-designers whose modes of communication
+expand what technology can recognize as intelligence or
+intent (Costanza-Chock 2020; Hamraie 2017).                      1 Engineered exclusion in practice
+    Engineered exclusion differs from adjacent concepts in
+AI ethics such as algorithmic bias or algorithmic oppression     Artificial intelligence does not merely mirror human experi-
+(Benjamin 2019) in that it does not primarily describe dispa-    ence; it also helps define what counts as communication and,
+rate error rates or representational harm across demographic     by extension, whose experiences are legible within it. Across
+
+<a id="pdf-p5"></a>
+### [PDF p.5] AI & SOCIETY (2026) 41:6643–6657 6647
+- Locator: `R453-ai-autism-and-the-architecture-of-voice-from-engineered-exclusion-to-designed-di.pdf` · página **5** / 15
+
+AI & SOCIETY (2026) 41:6643–6657                                                                                            6647
+
+speech, language, and communication technologies, choices         speech and voice recognition market was valued at USD
+about data provenance, modeling targets, and evaluation cri-      20.25 billion in 2023, with speech recognition accounting
+teria establish implicit assumptions about the “normal” user      for 64.6% of total share and projected to reach USD 23.11
+and what counts as intelligible behavior. For minimally and       billion by 2030 (Grand View Research 2024). Comparable,
+nonspeaking autistics, exclusion is therefore not accidental      disaggregated data for text-to-speech investment or feature
+but structurally embedded in the AI pipeline—from what            benchmarking remain scarce, suggesting that listening tech-
+data are collected to how system success is evaluated.            nologies attract disproportionate investment while expres-
+   This section examines the mechanisms through which             sive technologies remain siloed as assistive rather than inte-
+these design assumptions translate into engineered exclu-         gral to communication design.
+sion in practice. Table 1 operationalizes these mechanisms           This asymmetry presumes a user who is already speaking,
+by identifying domain-specific sites of exclusion alongside       fluent, and machine-legible—a presumption that fails many
+corresponding designed-dignity metrics. Table 2 situates          minimally or nonspeaking autistics who rely on technology
+these mechanisms within the AI lifecycle, highlighting            to produce communication outwardly. When expressive out-
+where communicative dignity is routinely lost and where           put is treated as an afterthought, participation itself becomes
+accountability must attach. By specifying these domains as        conditional. The pattern echoes a broader social dynamic in
+discrete categories, the framework converts a broad critique      which assistive needs are prioritized only when they align
+into operational levers for design and governance (Costanza-      with dominant user demands (Ellcessor 2016). During the
+Chock 2020; Hamraie 2017).                                        early COVID-19 pandemic, for example, remote-work tech-
+   To make this more concrete, consider how one of these          nologies became “magically possible overnight” when the
+metrics might be instantiated in practice. For example, one       able-bodied world required them, despite disabled people
+way to formalize this is through an Inclusion-weighted word       requesting such flexibility for decades (Srinivasan 2023).
+error rate parity (IW-WERP) index, which evaluates whether           For minimally and nonspeaking autistics, the conse-
+ASR systems perform equitably across speech profiles:             quences are tangible: fewer robust pathways for producing
+                   (           ) (            )                   speech and slower progress on tools that center expressive
+IW − WERP = WERatypical ∕ WERnormative ,                          access (Alper 2017; Wickenden 2011). The imbalance
+                                                                  between input and output is therefore not only technical but
+where ­WERatypical represents the word error rate for atypical
+                                                                  epistemic, shaping whose communication becomes legible
+or AAC-mediated speech, and ­WERnormative represents the
+                                                                  within AI systems. The mechanisms that follow show how
+word error rate for normative speech on the same system.
+                                                                  priorities embedded in benchmarking culture and funding
+Rather than optimizing for aggregate accuracy alone, this
+                                                                  flows translate this asymmetry into engineered exclusion
+formulation reframes performance in terms of parity—cen-
+                                                                  (see Table 1).
+tering whether atypical users are disproportionately bur-
+dened by system error. For instance, a threshold such as
+                                                                  1.2 AAC voices and identity fit
+IW-WERP ≤ 1.25 could be used to indicate that atypical
+users are not disproportionately burdened by system errors.
+                                                                  For minimally and nonspeaking users who rely on text-to-
+Systems exceeding this range would signal a breakdown in
+                                                                  speech (TTS) or other outward communication to participate
+inclusion at the level of core functionality. This example is
+                                                                  in education, employment, and civic life, voice identity is
+illustrative. Similar parity-based or fidelity-based formula-
+                                                                  central to communicative dignity: a mismatched or distorted
+tions can be extended to other domains (e.g., TTS expres-
+                                                                  voice can undermine social standing, while an identity-
+sive fidelity or semantic preservation in text simplification).
+                                                                  aligned one supports autonomy, confidence, and self-pres-
+The broader aim is not to fix a single metric, but to show
+                                                                  entation (Wickenden 2011). Achieving that identity fit, how-
+how dignity can be translated into measurable system con-
+                                                                  ever, is rarely straightforward. Beyond technical barriers,
+straints without collapsing communicative diversity into a
+                                                                  AAC users face additional financial, temporal, and cognitive
+single standard.
+                                                                  costs that compound inequity—turning what should be a
+                                                                  right to self-representation into a labor- and resource-inten-
+1.1 Input–output asymmetry                                       sive task (Alper 2017; Quinn et al. 2025; Wickenden 2011).
+                                                                  These costs manifest in two primary ways: financial barriers
+AI’s design priorities reveal whose voices are treated as         that gate expressive access, and time and effort burdens that
+central to communication systems. Nearly every major              make communication labor intensive.
+platform—from smartphones to virtual assistants—has been             Recent developments complicate a simple paywall nar-
+optimized for receiving speech (speech-to-text) rather than       rative. Apple’s Personal Voice now enables users to gener-
+producing it (text-to-speech or symbol-to-speech) (Liu et al.     ate a synthetic voice from less than 15 min of on-device
+2022). Market indicators reflect this imbalance. The global       recording, integrated with Live Speech and compatible
+
+<a id="pdf-p6"></a>
+### [PDF p.6] 6648 AI & SOCIETY (2026) 41:6643–6657
+- Locator: `R453-ai-autism-and-the-architecture-of-voice-from-engineered-exclusion-to-designed-di.pdf` · página **6** / 15
+
+6648                                                                                             AI & SOCIETY (2026) 41:6643–6657
+
+AAC applications without additional subscription fees           1.2.2 Time and effort costs
+(Apple Inc 2024). ElevenLabs’ Impact Program provides
+free voice-cloning licenses for individuals with permanent      Identity fit is not only about accent or tone; it is also about
+voice loss, blindness, or low vision (ElevenLabs 2025).         fidelity of expression. Many TTS systems fail to handle
+Open-source text-to-speech models such as XTTS-v2 and           even basic English usage, such as long vowels, acronyms,
+FishAudio S1-mini allow cross-lingual voice cloning from        or scientific abbreviations. For instance, the long vowel
+short reference samples, expanding technical feasibility        “A” must often be typed phonetically as “yay” to sound
+beyond proprietary systems (Coqui AI 2024; FishAudio            correct, or it defaults to a short vowel sound. The ubiqui-
+2025). These developments reduce direct licensing costs         tous ABA therapy that many autistic children are subjected
+and demonstrate meaningful progress in identity-aligned         to in childhood must be typed as “yay b yay” to pronounce
+voice synthesis.                                                correctly.
+   However, reduced licensing fees do not eliminate struc-         Acronym handling further exposes how narrow these
+tural access conditions. Voice cloning presupposes access       systems’ assumptions are. Common acronyms are often
+to compatible hardware ecosystems, stable recording con-        misread as words, which works for patterns like “NASA”
+ditions, sufficient motor control for enrollment, and articu-   and “FIFA” but “EEG” results in choked or nonsensical
+lation patterns that can be reliably modeled. For example,      speech; users must add extra spaces between the letters to
+Apple’s Personal Voice requires users to record approxi-        force proper enunciation. Since “EEG” contains long vow-
+mately 150 prompted phrases over a 15–20 min session            els, it must be typed phonetically as “ee ee g” to get legible
+while the device processes the model on charge. While           audio output. If the acronym contains vowels, the system
+brief for many users, such sustained vocal and motor            assumes it is a pronounceable word (“NASA,” “FIFA”),
+effort may be fatiguing or infeasible for individuals with      whereas consonant-only acronyms (“VR”) are treated like
+motor coordination differences, fluctuating speech clar-        true acronyms and each letter is said separately. What seems
+ity, respiratory challenges, or state-dependent articulation    like an arbitrary rule-based inference can be very confusing
+variability. Moreover, successful cloning presumes that         and frustrating for the user. Even then, this rule-based infer-
+the user’s articulation is sufficiently stable to generate a    ence breaks down for mixed or domain-specific patterns.
+usable model; highly variable or low-volume speech may          For example, AR (augmented reality) is rendered as “Arkan-
+not yield reliable synthesis without repeated sessions.         sas,” PT becomes “point,” and the chemical symbol “Ca”
+   Enrollment, therefore, is not a trivial step; it assumes a   for calcium becomes “California.” Even standard phrases
+level of stamina, consistency, and device navigation capac-     like “check-ins” default to “check inches.” These are not
+ity that is unevenly distributed across disability popula-      edge cases; they are ordinary English expressions mispro-
+tions. On-device systems remain embedded in costly hard-        nounced because the system’s grapheme-to-phoneme (G2P)
+ware infrastructures, while open-source implementations         and text normalization modules are tuned to a narrow subset
+require technical literacy, compute resources, or interme-      of English usage (Deviyani 2022; Kuligowska et al. 2018;
+diary support. Identity fit therefore remains conditional       Reichel and Pfitzinger 2006). These front-end normaliza-
+rather than assumed as a baseline design.                       tion modules, trained primarily on web-scale English text,
+                                                                default to the most frequent word associations, “correcting”
+                                                                rare or domain-specific terms into more probable but wrong
+1.2.1 Financial costs                                          pronunciations.
+                                                                   For AAC users, the cost of these design assumptions is
+Achieving a natural, age-appropriate, and culturally rel-       steep. To be understood, they must pre-correct the system—
+evant AAC voice often entails additional cost. Voice            adding apostrophes (e.g., base’d, liv’d), phonetic spellings,
+options that convey individuality are often embedded            artificial pauses, or spelling out acronyms—to force accurate
+within specific hardware ecosystems, premium service            output. In effect, users must learn a complex meta-language
+tiers, or technically complex workflows that create lay-        simply to communicate, discovering through trial and error
+ered barriers to expressive access. Free or default voices      which spellings or formatting will produce intelligible speech.
+tend to sound robotic or infantilizing, or rely on West-        This workaround is not trivial: it adds layers of cognitive and
+ern female accents familiar from Siri, Alexa, or Google         motor labor to an already effortful process. Constructing a
+Maps. For many low-income or non-native English users,          message letter by letter is slow enough; retyping words pho-
+authentic voice representation becomes economically             netically or experimenting with spellings multiplies that bur-
+inaccessible, forcing a choice between limited defaults         den. Communication becomes a form of system debugging
+and silence. Even “premium” voices often lack cultural          rather than self-expression. For minimally and nonspeaking
+nuance, mispronounce non-Western names and intona-              users—whose every utterance already requires coordination
+tions, and thereby erase linguistic identity.                   of attention, motor planning, and intent—this additional layer
+
+<a id="pdf-p7"></a>
+### [PDF p.7] AI & SOCIETY (2026) 41:6643–6657 6649
+- Locator: `R453-ai-autism-and-the-architecture-of-voice-from-engineered-exclusion-to-designed-di.pdf` · página **7** / 15
+
+AI & SOCIETY (2026) 41:6643–6657                                                                                                 6649
+
+of correction can transform accessibility into exhaustion (Koe-     1.3 Inaudible users: data provenance and model
+necke et al. 2020).                                                      assumptions
+   These failures are not simply algorithmic accidents; they
+are predictable outcomes of how AI speech systems are               For many minimally speaking people, the microphone
+built. Modern text-to-speech pipelines are trained on narrow,       becomes a wall rather than a bridge. Commercial assistants
+high-quality datasets dominated by fluent, native-English           such as Siri and Alexa already underperform for accented
+speakers—typically drawn from non-clinical, professionally          speakers (Prinos et al. 2024). But for minimally speak-
+recorded populations. Because such corpora exclude dis-             ing autistics, whose communication may involve atypical
+ordered or atypical speech by design, the resulting systems         prosody, echolalia, reduced articulation, or speech that is
+equate “clarity” with standardized pronunciation and prosody.       still developing, the failure is more fundamental: the system
+“Naturalness” is then evaluated through human-rating metrics        often fails to recognize their vocalizations as speech at all.
+that reward fluency and familiarity, effectively defining “good”    What reads as “silence” in the transcript is not an absence
+speech as what sounds most typical to the majority of listen-       of intent; it is an artifact of how intelligibility is defined and
+ers. This training ecology makes linguistic and articulatory        detected. This invisibility is engineered across the pipeline.
+diversity statistically undesirable, rendering many AAC-style           Recent developments complicate any categorical claim
+utterances—typed, synthesized, or rhythmically patterned—           that atypical speech is unrecognized by commercial ASR
+less intelligible precisely because they deviate from the data      systems. Google’s Project Euphonia has expanded substan-
+distribution (Kuligowska et al. 2018; Prinos et al. 2024; Taylor    tially, now comprising over 1.5 million utterances from
+and Richmond 2019).                                                 approximately 3,000 speakers with disordered speech across
+   These design choices reveal how TTS models implicitly            multiple languages (Martin et al. 2025). Fine-tuned models
+define linguistic normalcy. By treating statistical frequency       within this framework have demonstrably reduced median
+as correctness, AI voices mirror the linguistic dominance of        word error rates for participating speakers. In parallel, recent
+high-resource English and the speakers who produce it. The          work using fine-tuned Whisper architectures shows that per-
+result may sound fluent to outside listeners while distorting       sonalized modeling with limited speaker-specific samples
+the intended meaning of those who depend on the system              can significantly improve recognition accuracy for dysarthric
+most. Voice identity, therefore, is not just an aesthetic prefer-   speech (Raja et al. 2025). These advances indicate mean-
+ence—it marks the boundary between participation and exclu-         ingful product-level remediation in controlled or enrolled
+sion. These financial and labor costs compound one another.         settings.
+As with ASR systems, recent technical advances show that                However, these improvements do not yet represent default
+identity-aligned synthesis is possible when prioritized. The        pipeline behavior. Large-scale ASR systems remain trained
+structural question is whether such accommodation is treated        primarily on corpora dominated by normative speech pat-
+as a universal baseline or remains contingent on enrollment,        terns, and personalized fine-tuning remains optional,
+resources, and platform access. When customization or accu-         resource dependent, or unavailable by default. Recogni-
+racy depends on ecosystem ownership, advanced configura-            tion gains for participating speakers do not imply compre-
+tion, or subscription tiers, inclusivity becomes conditional        hensive inclusion across the heterogeneity of minimally
+rather than guaranteed.                                             speaking autistic communicators, whose articulation pat-
+   Paying for a voice that can correctly pronounce one’s own        terns may vary dynamically across context, state, fatigue,
+name or field-specific terminology should not be a privilege,       and co-occurring motor conditions. The structural concern,
+yet many commercial AI pipelines treat expressive fidelity          therefore, is not whether recognition can be improved in
+as a premium feature. For AAC users, each mispronuncia-             principle, but whether atypical articulation is treated as a
+tion requires additional labor—manual corrections, phonetic         baseline design assumption in dataset construction, evalua-
+workarounds, or repeated testing—translating directly into          tion benchmarks, and deployment defaults.
+time and cognitive load. These burdens emerge from how TTS              Although few datasets are explicitly labeled by neurotype,
+systems are trained, evaluated, and commercialized, where fre-      the functional effect is the same: speech exhibiting atypical
+quency, fluency, and market viability often take precedence         rhythm, articulation, or prosody remains absent or underrep-
+over expressive variability. The mechanisms below show how          resented. This gap differs from, but compounds, other docu-
+technical and economic design decisions translate inequity into     mented disparities such as accent and dialect bias (Koenecke
+infrastructure (see Table 1).                                       et al. 2020; Liu et al. 2022; Lopez Lloreda 2020). Where
+                                                                    disability-related speech does appear, it is typically through
+                                                                    clinically labeled corpora that frame atypical prosody or
+                                                                    articulation as diagnostic deviation to be identified and cor-
+                                                                    rected rather than communicative variation to be modeled
+                                                                    and learned from (Shor et al. 2019). Model assumptions
+
+<a id="pdf-p8"></a>
+### [PDF p.8] 6650 AI & SOCIETY (2026) 41:6643–6657
+- Locator: `R453-ai-autism-and-the-architecture-of-voice-from-engineered-exclusion-to-designed-di.pdf` · página **8** / 15
+
+6650                                                                                                 AI & SOCIETY (2026) 41:6643–6657
+
+then harden those biases. Acoustic front ends and attention         inconsistency. A model trained on an early communication
+mechanisms are optimized for steady temporal and spectral           sample may later misclassify new or more complex utter-
+features, penalizing variability in rhythm, articulation, or        ances as noise or error. Across both timescales, the imme-
+pause structure (Qian et al. 2023). On the language side,           diate state and the long arc of development, AI systems are
+LLM objectives reward statistical predictability: token             not designed to learn with the user. Current benchmarks
+sequences that deviate from normative linguistic patterns—          optimize for performance on static datasets: one session,
+repetition, mixed modalities, non-linear phrasing—may be            one score. Longitudinal variation, session-to-session drift,
+down-weighted during training (Rae et al. 2021). For users          and learning curves are largely absent from AI evaluation
+whose communication diverges from these expectations,               protocols (Masina et al. 2020). As a result, systems are tuned
+deviation itself becomes inaudibility. The problem is not           for momentary accuracy rather than sustained usability. The
+only higher transcription error but outright non-detection. In      same model that performs well in a calm, predictable set-
+many cases, the system fails to detect or reliably transcribe       ting may fail entirely during fatigue or sensory overload, but
+the speaker.                                                        those failures are invisible in benchmark reporting.
+   A similar hierarchy operates in multilingual AI. LLMs               Accounting for change over time—both situational and
+systematically prioritize English and other high-resource           developmental—requires rethinking what counts as stability
+languages, even when prompted in lower-resource ones, pro-          in accessibility research. For populations whose expressive
+ducing distorted or incomplete outputs (Sharma et al. 2024).        bandwidth naturally fluctuates or expands with practice, true
+This linguistic stratification mirrors prosodic stratification in   inclusion depends on adaptability. Systems must calibrate
+speech: what is most common becomes legible; what is rare           to users across states, not just at a single point in time, and
+becomes noise. Just as low-resource languages are treated           evolve with them as communication grows. Ignoring that tra-
+as secondary, minimally produced or atypically patterned            jectory encodes a “neurotypical time constant” into design,
+speech is sidelined, reinforcing which voices AI learns to          one that assumes communication is linear, fluent, and tem-
+recognize, and which it learns to ignore. These failures accu-      porally stable. For many autistics with communication chal-
+mulate from data collection through evaluation. They are            lenges, it is none of these things. These design assumptions
+not isolated anomalies but reproducible outcomes of how             manifest directly in evaluation practices that treat communi-
+training corpora and objectives are structured (see Table 1).       cation as fixed rather than evolving (see Table 1).
+
+1.4 Developmental arc assumes static                               1.5 Feedback loops of invisibility
+
+Most AI evaluation pipelines treat communication as a snap-         When systems fail, users adapt or withdraw, and the data
+shot rather than a process. A speech or language model is           interpret their departure as satisfaction. If a voice interface
+typically validated on a fixed corpus—one utterance, one            fails a user, autistic users often abandon the feature or switch
+condition, one “ground truth” label. But for minimally ver-         to alternative modalities, if available. Yet telemetry logs that
+bal autistics, communicative capacity is dynamic, not static.       withdrawal as “inactive,” not “excluded.” Aggregate accu-
+Expression may expand or contract depending on regulation           racy remains high even as an entire group churns out quietly.
+state, environment, motor fatigue, and predictability (Din-         The system appears fair precisely because its failures are
+stein et al. 2012; Torres et al. 2013). Static testing regimes      invisible (Hovy and Spruit 2016). This “invisibility loop”
+obscure these fluctuations, misrepresenting adaptability as         is particularly acute for minimal and nonspeaking autistics,
+inconsistency and momentary silence as incapacity.                  who already carry greater communication labor to work
+   Beyond short-term variability, many nonspeaking and              around systems not built for them; initiating, sequencing,
+minimally speaking autistics also follow developmental tra-         and executing motor actions demand sustained cognitive and
+jectories in which expressive capacity may increase over the        motor control and, on average, yield much slower output
+years, particularly when given access to robust AAC train-          rates than natural speech (often ~ 10–15 words per minute
+ing and responsive support (Brady et al. 2016; Kasari et al.        vs. ~ 150–200 words per minute for speech for letter by let-
+2014; Schreibman et al. 2015). Some autistic individuals            ter selection) (Cler et al. 2019; Trnka et al. 2008; Vargas
+once considered “nonspeaking” later acquire reliable forms          2019). Text or symbol selection can demand sustained plan-
+of expressive communication; text, symbolic, or spoken,             ning, conscious sequencing, and motor regulation, each layer
+when sensory, motor, and social demands are accommodated            adding friction to already effortful communication. When
+(Iacono et al. 2018). Yet AI systems and evaluation pipe-           technology compresses this diversity of communicative pace
+lines rarely model this longitudinal change. When speech            and modality into narrow templates of legibility—where
+recognition, predictive text, or AAC suggestion algorithms          “successful communication” equals fast, fluent, and speech-
+are tuned only to baseline data, they fail to recognize devel-      like output—it risks erasing slower or alternative expres-
+opmental progress and may even penalize improvement as              sions from what counts as meaningful communication.
+
+<a id="pdf-p9"></a>
+### [PDF p.9] AI & SOCIETY (2026) 41:6643–6657 6651
+- Locator: `R453-ai-autism-and-the-architecture-of-voice-from-engineered-exclusion-to-designed-di.pdf` · página **9** / 15
+
+AI & SOCIETY (2026) 41:6643–6657                                                                                           6651
+
+What looks like user “choice” or “low engagement” may,           variability itself becomes a design signal rather than a source
+in practice, be quiet attrition: users leaving not because the   of error (Masina et al. 2020; Torres et al. 2013).
+technology meets their needs, but because it fails them too         Designing for intersectional accessibility is not simply
+completely to continue.                                          an ethical add-on; it is a methodological imperative. Sys-
+   Unless product analytics explicitly track silent abandon-     tems that ignore intersectionality produce narrow gener-
+ment, fallback behavior, and group-specific error distribu-      alizations that fail under real-world diversity. Conversely,
+tions, the pipeline records success where users experience       systems designed with intersectional inputs produce more
+failure (Masina et al. 2020). Even “inclusive” benchmarks        robust, generalizable models. Designing for mutual adap-
+can mask inequity by defining success through aggregate          tation transforms accessibility from a compliance exercise
+scores that privilege one canonical way of speaking, text,       into a driver of innovation. Yet when inclusion is framed
+or reading. The result is a feedback loop of invisibility: the   primarily as innovation, it risks being measured by its eco-
+less legible a group becomes, the less data is collected to      nomic or productivity gains rather than its human impact.
+improve their experience, further reinforcing invisibility in    Furthermore, inclusion must not be reduced to productivity
+the next design cycle. The fix is not to abandon evaluation,     or market value. AI systems that commodify neurodivergent
+but to redefine what counts as success. True accessibility       “strengths” such as attention to detail, deep focus, or pattern
+metrics should measure persistence, not just participation,      recognition risk recasting disability as a form of conditional
+tracking who remains able to use the system after initial        belonging, valuable only when profitable. A disability-
+failure, not merely who logs in once. This feedback loop         justice approach to technology design begins not with effi-
+is sustained through how system performance is measured          ciency but with dignity and agency (Costanza-Chock 2020;
+(see Table 1).                                                   Piepzna-Samarasinha 2018). It reorients the design question
+                                                                 from How can disabled people fit our systems? to How can
+1.6 Single‑axis fairness                                        our systems expand to fit disabled lives? The gap between
+                                                                 inclusion rhetoric and real-world testing can be traced to
+AI fairness frameworks often treat identity as a checkbox,       how fairness itself is operationalized (see Table 1).
+not an ecosystem. Accessibility testing is typically single-
+axis, focused on one identity category at a time, such as        1.7 AI plain‑language generation
+“disability” or “culture,” without examining how those
+dimensions interact. Vendors may test for “blind” or “deaf”      Plain language is an important accessibility tool for the
+accessibility in isolation, but rarely for intersectional com-   disability community, including for many minimally and
+binations, such as a deaf–blind nonspeaking user relying         nonspeaking autistics. Plain language is the distillation of
+on tactile input, or a multilingual autistic user navigating     complex language into more layman language. The intent of
+both prosodic and linguistic variability. The absence of         plain language is to ensure that readers can find, understand,
+intersectional evaluation frameworks means that even well-       and use information the first time without altering its mean-
+intentioned accessibility audits can reproduce able-bodied       ing, tone, or intent (Plain Language Action & Information
+and neurotypical defaults. This “fairness by fragmentation”      Network n.d. 2026; U.S. Office of Management and Budget
+embeds structural erasure into the design process itself (Ben-   2011). It enables someone to understand a medical form, a
+jamin 2019; Costanza-Chock 2020).                                benefits letter, or a research summary that would otherwise
+   The result is a paradox: AI systems built in the name         remain locked behind technical or bureaucratic jargon. For
+of inclusion often fail precisely at the intersections where     many disabled readers plain language is the bridge between
+access is most needed. For instance, datasets labeled as         information and participation. For AAC users, plain lan-
+“accessible” might include captions for deaf users or alter-     guage can also be the bridge between reception and expres-
+nate text for blind users, but exclude those who rely on sym-    sion. Dense or ambiguous text places additional cognitive
+bol-based AAC or tactile gestures, whose input patterns do       and motor demands, compounding the inequities already
+not fit the system’s predefined accessibility schema. When       created by inaccessible design. Plain language is therefore
+fairness frameworks disaggregate categories rather than rec-     not simplification for its own sake; it is a mode of communi-
+ognize their interdependence, the burden of adaptation falls     cation built on respect for comprehension and reciprocity. At
+back on the user, not the technology. True inclusion requires    its best, plain language is not condescension but conceptual
+a shift from accommodation to mutual adaptation: systems         fidelity delivered with care.
+that learn from and adjust to users’ diverse communication           In recent years, AI has become the main source of
+ecologies. When AI learns from multiple sensory-motor and        plain-language generation. LLMs now promise to instantly
+linguistic pathways, it does not merely “include” disabled       “translate” any text into an “easy-read” or “accessible”
+users; it broadens collective understanding of what counts as    version. Government agencies, hospitals, and even dis-
+communication. Difference is not deviation but information:      ability organizations increasingly rely on these tools to
+
+<a id="pdf-p10"></a>
+### [PDF p.10] 6652 AI & SOCIETY (2026) 41:6643–6657
+- Locator: `R453-ai-autism-and-the-architecture-of-voice-from-engineered-exclusion-to-designed-di.pdf` · página **10** / 15
+
+6652                                                                                            AI & SOCIETY (2026) 41:6643–6657
+
+scale communication. The appeal is obvious: speed, con-            Two mechanisms drive these distortions: (a) semantic
+sistency, and lower cost. But what these systems optimize       loss, where essential disability or policy terms drop out dur-
+for and what they erase reveal a deeper problem. To an          ing simplification, and (b) stance drift, where value-laden
+algorithm, “plain” often means shorter simpler sentences;       phrases are reinterpreted through majority linguistic norms.
+to a disabled reader, it means accurate, respectful, and        Each demands different safeguards; terminology preserva-
+usable. When AI confuses brevity with accessibility, fidel-     tion for the first, perspective auditing for the second. These
+ity becomes the casualty. AI-generated plain language may       distortions are traceable to the way corpora and objectives
+support comprehension in routine or low-stakes contexts,        are structured (see Table 1).
+such as navigation prompts or appointment reminders, but
+it is ill-suited to rights, consent, or benefits communica-     1.8 Agency: technology that speaks about us,
+tion unless reviewed by human experts familiar with dis-             not with us
+ability discourse. Simplification systems smooth the rough
+edges of complexity but also erase intent and perspective.      When meaning shifts, so does agency. The issues seen in
+These same dynamics underpin the generative models that         plain-language generation, where AI decides how to “sim-
+increasingly power voice assistants and plain-language          plify” information for disabled readers, mirror a broader
+tools alike. Systems that convert between text and speech       pattern across health, education, and communication tech-
+share the same training data and value assumptions about        nologies: systems that speak about disabled people, not with
+who is “clear” or “coherent.”                                   them. Whether a voice interface, an AAC program, or an
+    This drift begins upstream. LLMs are trained predomi-       AI-powered classroom tracker, the default assumption is that
+nantly on text authored by sighted, hearing, and nondisa-       expertise and consent reside elsewhere, with “the other adult
+bled writers, entrenching majority norms for what counts as     in the room.” Indeed, in practice, many tools are designed
+“coherent,” “neutral,” or “clear” (Bender et al. 2021). When    to interact through caregivers, clinicians, or teachers rather
+plain-language training corpora are assembled without dis-      than directly with disabled individuals. AAC systems are
+abled readers’ perspectives, accessibility is misdefined as     often configured and updated by speech therapists, educa-
+short sentences rather than faithful meaning (Alva-Man-         tional staff or other caregivers, with limited input from the
+chego et al. 2020). Downstream, optimization for readability    user who must live with the interface daily. Similarly, AI-
+further tilts models toward fluency at the expense of mean-     based “engagement” or “progress tracking” systems used
+ing. Simplification and summarization systems fine-tuned        in classrooms and clinics monitor autistic students’ facial
+on metrics such as sentence length, syntactic simplicity, and   expressions, gaze, or motor activity, sending reports to
+word frequency can distort semantics—particularly around        instructors rather than empowering the students themselves
+disability, benefits, or legal language—precisely where         (Alper 2017; CDT 2022). The result is agency by proxy:
+nuance matters most (Alva-Manchego et al. 2020; Freyer          the technology becomes another layer through which others
+2024). For example, a model might hypothetically reframe        interpret and manage the disabled person, rather than a tool
+“sheltered workshops,” segregated workplaces where              of self-expression or autonomy.
+disabled people are paid subminimum wages, as positive,            As disability scholars have noted, many assistive tech-
+simply because the word “shelter” connotes safety (Freyer       nology paradigms historically emerged from clinical
+2024). Such outputs are not harmless errors; they constitute    models emphasizing supervision and correction rather
+epistemic harm disguised as clarity. Meaning shifts, trust      than autonomy (Hamraie 2017; Hendren 2020). This
+erodes, and access narrows. For communities that depend on      caregiver-centric orientation often extends beyond design
+plain-language content to engage in civic and institutional     itself—into deployment and institutional control—shaping
+life, misrepresentation in wording can mean exclusion from      how communication technologies are used in classrooms,
+rights, benefits, or informed consent. The failures are not     clinics, and research contexts (Hamraie 2017). Assistive
+solely technical but epistemological, rooted in whose words     technologies have long been built around the paternalis-
+and worldviews train the system. Most text corpora encode       tic assumption that the user must be interpreted, moni-
+majority cultural and cognitive norms, defining “readable”      tored, or managed. For minimally or nonspeaking autis-
+and “neutral” through nondisabled expectations of language      tics, these assumptions often take concrete, embodied
+and tone (Bender et al. 2021). Bias begins at data prove-       forms. Devices presume steady gaze, clear articulation,
+nance, long before a single output is generated. Addressing     and precise hand control. Interfaces expect rapid touch or
+these failures therefore requires reframing plain-language      eye-tracking input, even though many users experience
+AI not as a convenience feature but as a site of justice and    apraxia, tremors, or inconsistent motor control. Some rely
+consent. Asking, “How can we make AI write this?” misses        on rhythmic movement or gesture to regulate attention or
+the point. The real question is: Who should be leading this     sensory load—behaviors that remain poorly represented in
+work—and who decides when meaning has been lost?                the datasets used to train sensing and interaction models
+
+<a id="pdf-p11"></a>
+### [PDF p.11] AI & SOCIETY (2026) 41:6643–6657 6653
+- Locator: `R453-ai-autism-and-the-architecture-of-voice-from-engineered-exclusion-to-designed-di.pdf` · página **11** / 15
+
+AI & SOCIETY (2026) 41:6643–6657                                                                                            6653
+
+(Torres et al. 2013). Even with AAC access, communi-             but architectural. How tools are configured determines who
+cation for many nonspeaking users remains slower and             holds control (see Table 1).
+more effortful than speech, requiring sustained planning            Recent technological advances complicate a purely
+and motor regulation (Cler et al. 2019; Trnka et al. 2008;       deficit-oriented account. Commercial ASR systems have
+Vargas 2019).                                                    expanded atypical speech corpora; personalized fine-tuning
+   Yet design and analytics frameworks seldom account for        has improved word error rates for some dysarthric speakers,
+this temporal diversity. By optimizing for fluency and speed,    and voice-cloning tools have reduced barriers to identity-
+many systems implicitly equate “successful communication”        matched synthesis, once prioritized. These developments
+with speech-like output, marginalizing slower or alternative     demonstrate that exclusion is not technically inevitable.
+forms of expression. While disability studies richly theo-       Yet, these improvements often operate as optional layers—
+rizes exclusion and dignity, it often stops short of specify-    personalization features, premium tiers, or research deploy-
+ing how these dynamics manifest within ML architectures.         ments—rather than as default baselines within mainstream
+Conversely, mainstream AI fairness research frequently           pipelines. Distributional assumptions about normative
+addresses demographic bias without sustained engagement          speech, stable articulation, and majority-language usage
+with disability as a structurally mediated communicative         continue to structure model training and evaluation. In this
+condition.                                                       sense, product-level remediation can coexist with infrastruc-
+   Agency loss in AI thus operates on multiple levels:           tural exclusion. The persistence of these underlying design
+interface, inference, and institution. At the interface level,   assumptions motivates the governance analysis that follows.
+disabled users are excluded from configuring their own
+tools. At the inference level, AI systems interpret bodily
+and communicative signals through nondisabled norms. At          2 Governance and accountability:
+the institutional level, deployment contexts (schools, clin-        toward designed dignity
+ics, research laboratories) continue to vest control in pro-
+fessionals rather than participants. The cumulative effect       If engineered exclusion describes how access fails, designed
+is a system that grants the illusion of assistive empower-       dignity asks how it can be built in. Governance, in this con-
+ment while re-inscribing dependency. A truly equitable AI        text, extends beyond compliance or regulation—it encom-
+ecosystem would invert this hierarchy: putting the autistic      passes the full ecology of decision-making that determines
+user in the driver’s seat. That means interfaces co-designed     who is included, heard, and empowered across the AI pipe-
+with disabled users, data pipelines that include their feed-     line. Governance operates across three interconnected lev-
+back loops, and governance structures that give them veto        els—external regulation, internal accountability, and par-
+authority over how their data and likeness are used. As long     ticipatory co-governance. This broader framing aligns with
+as AI systems continue to “speak for” rather than “with,”        work in responsible innovation emphasizing anticipatory
+inclusion will remain conditional, contingent on compliance      and value-sensitive embedding of ethics into technological
+with neurotypical norms. However, the question of agency         design (van Grunsven and Roeser 2022). External regula-
+demands both care and realism. Many minimally and non-           tion includes policy instruments, auditing standards, and
+speaking autistics remain without consistent AAC access          accessibility compliance mechanisms that create enforce-
+or instruction, limiting their ability to participate even in    able guardrails. Internal accountability refers to institutional
+decisions about their own care or technology use (Light and      design processes such as inclusive review boards, ethical AI
+McNaughton 2012, 2013). In such contexts, agency can-            evaluations, and accessibility testing embedded within prod-
+not simply be presumed—it must be scaffolded. Families           uct lifecycles. Participatory governance brings disabled and
+and caregivers often act as intermediaries, voicing needs        nonspeaking users into shared decision-making roles, ensur-
+or preferences on behalf of the AAC user. This dynamic           ing that access is not merely implemented but co-defined
+can be both protective and constraining: it reflects genuine     (Benjamin 2019; Costanza-Chock 2020; Hamraie 2017).
+care and necessity in the absence of reliable communication      Governance is thus the mechanism that translates princi-
+systems, yet it risks reinforcing dependency and erasing the     ple into practice, embedding accountability across the AI
+individual’s evolving voice. “Nothing About Us Without           lifecycle, from dataset creation to model deployment (see
+Us” thus requires a complementary notion of co-agency;           Table 2). For minimally and nonspeaking autistics, whose
+designing systems that allow shared control between users        communication is often mediated through technology, gov-
+and trusted partners. Ethical design should record proxy         ernance must do more than mitigate bias; it must safeguard
+actions transparently, permit retrospective user review, and     affordability, agency, and continuity of participation even
+support gradual transfer of control as expressive capacity       when communication itself is fragile or state dependent.
+evolves (Costanza-Chock 2020; Light and McNaughton                   Regulatory frameworks such as the EU Artificial Intel-
+2012). The challenge of agency is thus not merely ethical        ligence Act (European Parliament and Council of the
+
+<a id="pdf-p12"></a>
+### [PDF p.12] 6654 AI & SOCIETY (2026) 41:6643–6657
+- Locator: `R453-ai-autism-and-the-architecture-of-voice-from-engineered-exclusion-to-designed-di.pdf` · página **12** / 15
+
+6654                                                                                             AI & SOCIETY (2026) 41:6643–6657
+
+European Union 2024) and the US Rehabilitation Act,              McNaughton 2012, 2013). For higher-support autistics,
+Section 508 (U.S. General Services Administration 2023)          co-agency mechanisms such as consent dashboards, review
+already recognize accessibility as a compliance requirement,     loops, or digital logs can document decisions while preserv-
+yet few specify measurable communicative-equity standards.       ing the possibility of future autonomy. Ethical governance
+Designed-dignity metrics could extend these models by            should also protect against permanent proxying: caregivers
+embedding expressive-fidelity and longitudinal-variability       may represent users when communication is limited, but
+measures into certification checklists. Projects like Google’s   systems must remain adaptable so that as communicative
+Project Euphonia (Martin et al. 2025), which partnered with      capacity develops, through therapy, assistive technology use,
+dysarthric speakers to improve ASR inclusivity, demonstrate      or cognitive change, control over decisions and data access
+how participatory data collection can align technical and        transitions back to the individual. Designed dignity thus
+ethical progress. Recent overviews of dysarthric speech tech-    frames governance not as static compliance but as temporal
+nologies similarly note that while model performance has         stewardship, supporting people through evolving trajectories
+improved under controlled personalization conditions, inte-      of voice and agency. Ultimately, designed dignity reframes
+gration into mainstream commercial ASR pipelines remains         governance as a living process, one that evolves alongside
+uneven (Bhat & Strik 2025). Emerging research comparing          the user, ensuring that technology serves not only present
+idiosyncratic speaker modeling to normative speech mod-          needs but future autonomy.
+eling further illustrates the tension between personalization
+and baseline inclusion (Raja et al. 2025).                       2.3 Transparency and traceability
+
+2.1 From inclusion promises to enforcement                      Transparency is often invoked as a principle but rarely
+     mechanisms                                                  extended to disabled users. For accessible AI, transparency
+                                                                 means that users and their families should be able to see,
+Most current AI ethics frameworks emphasize fairness,            and, where possible, edit, how their data, voices, and inter-
+transparency, and privacy but treat accessibility as a sec-      action logs are used. Traceability requires datasets to carry
+ondary or voluntary domain (Whittaker et al. 2021). This         provenance metadata specifying whether disabled or AAC
+omission has tangible consequences. When accessibility           users were included and whether their contributions were
+audits are optional, vendors can claim inclusion without ever    labeled as “error” or “signal.” Without such metadata, audits
+testing whether nonspeaking or AAC users can operate their       cannot distinguish inclusion from exploitation. Public reg-
+systems. A governance model grounded in designed dignity         istries could list certified models that meet minimum acces-
+would make accessibility both measurable and enforceable.        sibility and inclusion benchmarks, analogous to energy-effi-
+This means integrating access metrics, like expressive intel-    ciency ratings in consumer products. Each model’s listing
+ligibility, input–output parity, and error recovery rates—       could display standardized accessibility metrics, such as
+into the same compliance pipelines that monitor bias and         expressive intelligibility, input–output parity, and support
+safety (Masina et al. 2020). The diagnostic metrics outlined     for nonstandard speech inputs, allowing consumers, institu-
+throughout “Engineered Exclusion in Practice” provide            tions, and regulators to compare inclusion performance at a
+a foundation for this integration: collectively, they define     glance. These would not merely signal compliance but also
+measurable points where accessibility can be audited, moni-      drive market competition toward inclusion. Such registries,
+tored, and improved. Accessibility cannot remain an “after-      however, must be grounded in rigorous auditing frameworks
+market” concern; it must be a regulated design requirement       that measure not only whether systems can hear users, but
+with traceable accountability. Ensuring such accountability,     also whether they can speak with them—capturing the full
+however, also requires representation in how those standards     reciprocity of communication.
+are defined and enforced.
+                                                                 2.4 Auditing for expressive access
+2.2 Participatory and tiered oversight
+                                                                 Accessibility audits typically test whether information
+Because not all AAC users can reliably self-advocate,            can be received. For nonspeaking and minimally speaking
+governance structures must support tiered representation:        autistic users, equally vital is whether information can be
+direct participation where possible, and proxy participa-        expressed. A designed-dignity audit must therefore assess
+tion, through trained family members or trusted staff, where     expressive pathways: (a) Can users produce speech out-
+necessary. In participatory AI, users, caregivers, and dis-      put through AAC or symbol-to-speech systems at parity
+ability scholars collaborate at every stage: defining data-      with speech-input accuracy? (b) Are users able to cor-
+sets, labeling content, interpreting outputs, and deciding       rect, override, or personalize automated simplifications or
+what constitutes harm (Costanza-Chock 2020; Light and            voice selections? Audits that capture only comprehension
+
+<a id="pdf-p13"></a>
+### [PDF p.13] AI & SOCIETY (2026) 41:6643–6657 6655
+- Locator: `R453-ai-autism-and-the-architecture-of-voice-from-engineered-exclusion-to-designed-di.pdf` · página **13** / 15
+
+AI & SOCIETY (2026) 41:6643–6657                                                                                                     6655
+
+reproduce the same asymmetry the paper critiques: they            3 Conclusion
+hear input but ignore output.
+                                                                  Artificial intelligence systems mirror the assumptions of
+                                                                  their makers: what counts as data, whose communication
+2.5 Embedding dignity in design culture                          is legible, and what errors are worth fixing. For minimally
+                                                                  and nonspeaking autistics, these assumptions translate into
+Governance is not only procedural but cultural. Metrics           built-in exclusion—when fluency, speed, or predictability
+and audits matter only when teams internalize that acces-         are treated as prerequisites for participation. Across speech
+sibility is the design brief, not an accommodation. Autistic      recognition, text-to-speech, plain-language generation, and
+anxiety often arises not from intrinsic fragility but from        analytic feedback loops, the pattern is consistent: systems
+environments that chronically misread or constrain com-           that privilege the statistically common, systematically
+munication—a dynamic that technological systems risk              erase the communicatively diverse.
+amplifying when they normalize exclusionary defaults                  This paper has argued that such erasure is not accidental
+(Srinivasan 2025a). Embedding dignity in design thus              but engineered. The inverse, designed dignity, is equally
+requires addressing these relational and structural misat-        engineered: it requires deliberate technical, ethical, and
+tunements, not merely their technical manifestations.             governance choices that build reciprocity, accountabil-
+Genuine inclusion requires an antinormative shift—one             ity, and co-agency into AI’s infrastructure. Building for
+that treats access not as compliance but as a challenge to        expressive access, longitudinal variability, and multimodal
+whose ways of knowing and communicating are centered              communication strengthens, not weakens, scientific rigor.
+(Srinivasan et al. 2025). Training programs for data scien-       When models learn from a wider range of human commu-
+tists, clinicians, and product managers should include dis-       nication, they become more adaptive, generalizable, and
+ability-led modules on communication diversity, agency            ethically defensible.
+scaffolding, and participatory ethics (Benjamin 2019;                 Inclusion must therefore move upstream: into how data
+Costanza-Chock 2020). Funding agencies and journals               are sourced, how meaning is validated, and who decides
+can reinforce this shift by requiring accessibility impact        when a system “works.” Engineers, policymakers, and
+statements alongside bias or privacy statements. These            AAC users alike must share authority in defining success
+statements move inclusion upstream—positioning disabled           and harm. Accessibility cannot remain an afterthought or
+collaborators not as compliance checkpoints but as con-           a premium feature; it is foundational to fairness and to
+tributors who shape problem definitions, data protocols,          AI’s claim to universality. If engineered exclusion reflects
+and evaluation criteria, and who co-interpret outcomes.           the limits of today’s systems, designed dignity offers a
+In this way, designed dignity reframes governance from            blueprint for what technology can become: not merely
+gatekeeping to co-creation: an ecosystem where disabled           responsive to difference, but responsible to it.
+users become not passive beneficiaries but co-authors of              Translating designed dignity into practice requires
+technological possibility.                                        aligned action across research, regulation, and design.
+                                                                  Regulatory frameworks should treat accessibility failures
+                                                                  as algorithmic bias, subject to audit and remedy; and AI
+2.6 Limitations                                                  benchmarks should include expressive fidelity and longitu-
+                                                                  dinal variability as core metrics. In research, centering the
+This paper centers minimally and nonspeaking autistic users       needs of minimally and nonspeaking autistics can reori-
+within English-dominant AI systems. It does not address           ent what counts as valid signal and success. Such shifts
+visual-tactile modalities, non-autistic disabilities, or non-     ensure that accessibility is not a retrofit, but an organizing
+Anglophone infrastructures where training data and acces-         principle for responsible AI.
+sibility standards differ. Claims about “neurotypical” bias
+are inferred from dataset composition and benchmarking            Acknowledgements I am deeply grateful to Professors Keivan Stas-
+                                                                  sun and Tim Vogus from the Frist Center for Autism and Innovation
+norms, not direct neurotype labeling. The designed-dignity        at Vanderbilt University, for their thoughtful feedback and guidance
+metrics proposed in Table 1 are therefore conceptual and          on earlier drafts of this manuscript. Their insights helped strengthen
+operational in intent, rather than empirically validated stand-   both the conceptual framing and the clarity of argument throughout.
+ards. Future research should systematically test these met-
+                                                                  Author contributions HS was solely responsible for the conceptualisa-
+rics across populations, contexts, and languages, alongside       tion, analysis, and writing of this article.
+mapping disability representation, comparing open-source
+and commercial systems, and extending analysis to Global          Funding This research received no specific grant from any funding
+South contexts where both data regimes and definitions of         agency in the public, commercial, or not-for-profit sectors. Open access
+accessibility may differ.
+
+<a id="pdf-p14"></a>
+### [PDF p.14] 6656 AI & SOCIETY (2026) 41:6643–6657
+- Locator: `R453-ai-autism-and-the-architecture-of-voice-from-engineered-exclusion-to-designed-di.pdf` · página **14** / 15
+
+6656                                                                                                                       AI & SOCIETY (2026) 41:6643–6657
+
+publication is supported through an institutional agreement with the                CommunicationFIRST, n.d. About nonspeaking people. Available at:
+publisher.                                                                               https://​commu​nicat​ionfi​rst.​org/. Accessed 2 Jan 2026
+                                                                                    Coqui AI (2024) XTTS-v2: cross-lingual voice cloning with minimal
+Data availability No datasets were generated or analysed during the                      reference audio. Technical documentation
+current study.                                                                      Costanza-Chock S (2020) Design justice: community-led practices to
+                                                                                         build the worlds we need. MIT Press, Cambridge
+Declarations                                                                        Deviyani A (2022) Text normalization and its role in speech synthesis.
+                                                                                         In: Proceedings of the S4SG 2022 Workshop
+Conflict of interest The authors declare no competing interests.                    Dinstein I, Heeger DJ, Lorenzi L, Minshew NJ, Malach R, Behr-
+                                                                                         mann M (2012) Unreliable evoked responses in autism. Neuron
+Open Access This article is licensed under a Creative Commons Attri-                     75(6):981–991. https://​doi.​org/​10.​1016/j.​neuron.​2012.​07.​026
+bution 4.0 International License, which permits use, sharing, adapta-               Dziuk MA, Gidley Larson JC, Apostu A, Mahone EM, Denckla
+tion, distribution and reproduction in any medium or format, as long                     MB, Mostofsky SH (2007) Dyspraxia in autism: association
+as you give appropriate credit to the original author(s) and the source,                 with motor, social, and communicative deficits. Dev Med Child
+provide a link to the Creative Commons licence, and indicate if changes                  Neurol 49(10):734–739. https://​doi.​org/​10.​1111/j.​1469-​8749.​
+were made. The images or other third party material in this article are                  2007.​00734.x
+included in the article’s Creative Commons licence, unless indicated                ElevenLabs (2025) Impact program: accessible voice technology.
+otherwise in a credit line to the material. If material is not included in               ElevenLabs Documentation
+the article’s Creative Commons licence and your intended use is not                 Ellcessor E (2016) Restricted access: media, disability, and the poli-
+permitted by statutory regulation or exceeds the permitted use, you will                 tics of participation. New York University Press, New York
+need to obtain permission directly from the copyright holder. To view a             European Parliament and Council of the European Union (2024)
+copy of this licence, visit http://creativecommons.org/licenses/by/4.0/.                 Regulation (EU) 2024/1689 of the European Parliament and
+                                                                                         of the Council of 13 June 2024 on artificial intelligence and
+                                                                                         amending certain Union legislative acts (Artificial Intelligence
+                                                                                         Act). Off J Eur Union L168:1–158
+                                                                                    FishAudio (2025) S1-mini multilingual TTS model documentation
+References                                                                          Freyer N (2024) On the ethical dimensions of LLM-based text sim-
+                                                                                         plification. Ethics Inf Technol 26:Article 34
+Alper M (2017) Giving voice: mobile communication, disability, and                  Grand View Research (2024) Voice and speech recognition market
+     inequality. MIT Press, Cambridge                                                    size, share & trends report, 2024–2030. Grand View Research,
+Alva-Manchego F, Scarton C, Specia L (2020) Data-driven sen-                             San Francisco
+     tence simplification: survey and benchmark. Comput Linguist                    Hamraie A (2017) Building access: universal design and the politics
+     46(1):135–187                                                                       of disability. University of Minnesota Press, Minneapolis
+American Psychiatric Association (2022) Diagnostic and statistical                  Heasman B, Gillespie A (2018) Perspective-taking is two-sided: mis-
+     manual of mental disorders: DSM-5-TR, 5th edn. American Psy-                        understandings between people with autism spectrum disorder
+     chiatric Publishing, Washington                                                     and their family members. Autism 22(6):740–750. https://​doi.​
+Apple, n.d. Personal voice: create a voice that sounds like you. Apple                   org/​10.​1177/​13623​61317​708287
+     Accessibility Support. https://​suppo​rt.​apple.​com. Accessed 2 Jan           Hendren S (2020) What can a body do? How we meet the built world.
+     2026                                                                                Riverhead Books, New York
+Bender EM, Gebru T, McMillan-Major A, Shmitchell S (2021) On the                    Hovy D, Spruit SL (2016) The social impact of natural language
+     dangers of stochastic parrots: can language models be too big?. In:                 processing. In: Proceedings of ACL 2016. pp. 591–598
+     Proceedings of the 2021 ACM conference on fairness, account-                   Iacono T, Trembath D, Erickson S (2018) The role of augmenta-
+     ability, and transparency, pp. 610–623                                              tive and alternative communication for children with autism:
+Benjamin R (2019) Race after technology: abolitionist tools for the                      current status and future trends. Neuropsychiatr Dis Treat
+     New Jim Code. Polity, Cambridge                                                     14:3049–3061
+Beukelman D, Light J (2020) Augmentative and alternative communi-                   Kasari C, Brady N, Lord C, Tager-Flusberg H (2014) Assessing the
+     cation: supporting children and adults with complex communica-                      minimally verbal school-aged child with autism spectrum disor-
+     tion needs, 5th edn. Paul H. Brookes, Baltimore                                     der. Autism Res 7(4):301–310. https://​doi.​org/​10.​1002/​aur.​1334
+Bhat R, Strik H (2025) Advances in dysarthric speech recognition                    Koenecke A, Nam A, Lake E, Nudell J, Quartey M, Mengesha Z,
+     technology: modeling strategies and accessibility implications. J                   Toups C, Rickford JR, Jurafsky D, Goel S (2020) Racial dispari-
+     Speech Lang Hear Res 68(2):455–472                                                  ties in automated speech recognition. Proc Natl Acad Sci USA
+Brady NC, Bruce S, Goldman A, Erickson K, Mineo B, Ogletree BT,                          117(14):7684–7689
+     Paul D, Romski M, Sevcik R, Siegel E, Wilkinson K (2016) Com-                  Kuligowska K, Kisielewicz P, Włodarz A (2018) Speech synthe-
+     munication services and supports for individuals with severe dis-                   sis systems: disadvantages and limitations. Int J Eng Technol
+     abilities: guidance for assessment and intervention. Am J Intellect                 (IJET) 7(2.28):234–239. https://​doi.​org/​10.​14419/​ijet.​v7i2.​28.​
+     Dev Disabil 121(2):121–138. https://​doi.​org/​10.​1352/​1944-​7558-​               12356
+     121.2.​121                                                                     Light J, McNaughton D (2012) Supporting the communication, lan-
+Center for Democracy & Technology (2022) Ableism and disabil-                            guage, and literacy development of children with complex com-
+     ity discrimination in new surveillance technologies. Center for                     munication needs: state of the science and future research priori-
+     Democracy & Technology, Washington                                                  ties. Assist Technol 24(1):34–44. https://​doi.​org/​10.​1080/​10400​
+Cler GJ, Kolin KR, Noordzij JP Jr, Vojtech JM, Fager SK, Stepp                           435.​2011.​648717
+     CE (2019) Optimized and predictive phonemic interfaces for                     Light J, McNaughton D (2013) Putting people first: re-thinking the
+     augmentative and alternative communication. J Speech Lang                           role of technology in augmentative and alternative communication
+     Hear Res 62(7):2065–2081. https:// ​ d oi. ​ o rg/ ​ 1 0. ​ 1 044/ ​ 2 019_​        intervention. Augment Altern Commun 29(4):299–309. https://​
+     JSLHR-S-​MSC18-​18-​0187                                                            doi.​org/​10.​3109/​07434​618.​2013.​848935
+
+<a id="pdf-p15"></a>
+### [PDF p.15] AI & SOCIETY (2026) 41:6643–6657 6657
+- Locator: `R453-ai-autism-and-the-architecture-of-voice-from-engineered-exclusion-to-designed-di.pdf` · página **15** / 15
+
+AI & SOCIETY (2026) 41:6643–6657                                                                                                                                6657
+
+Liu X, Zhang Y, Liu H, Xiang W (2022) A survey of automatic speech                 Shor J, Jansen A, Heck L, Simko J (2019) Towards learning speaker-
+     recognition for dysarthric speech. Electronics (Basel) 12(20):Arti-                invariant representations for dysarthric speech recognition. In:
+     cle 4278. https://​doi.​org/​10.​3390/​elect​ronic​s1220​4278                      Proceedings of interspeech 2019, pp. 4564–4568
+Lopez Lloreda C (2020) Speech recognition tech is yet another exam-                Srinivasan H (2023) Flexible work critics are using the same arguments
+     ple of bias. Scientific American. Available at: https://​www.​scien​               that were used to oppose disabled ramps and closed captioning—
+     tific​ameri​can.​com/​artic​le/​speech-​recog​nition-​tech-​is-​yet-​anoth​        equity of access should never be optional, Fortune. Available at:
+     er-​examp​le-​of-​bias/                                                            https://​fortu​ne.​com/​2023/​07/​27/​flexi​ble-​work-​criti​cs-​using-​same-​
+Martin A, MacDonald RL, Jiang P-P, Ladewig M, Cattiau J, Heywood                        argum​ents-​were-​used-​oppose-​disab​led-​ramps-​closed-​capti​oning-​
+     R, Cave R, Tobin J, Nelson PC, Tomanek K (2025) Project Eupho-                     equity-​access-​never-​optio​nal-​remote-​work-​caree​rs-​hari-​srini​
+     nia: advancing inclusive speech recognition through expanded                       vasan/
+     data collection and evaluation. Front Lang Sci 4:Article 1569448.             Srinivasan H (2025a) Beyond common reassurances of “It’s OK”: the
+     https://​doi.​org/​10.​3389/​flang.​2025.​15694​48                                 reality of anxiety in autism. Autism Adulthood. https://​doi.​org/​10.​
+Masina F, Orso V, Pluchino P, De Angeli A (2020) Investigating the                      1177/​25739​58125​13668​56
+     accessibility of voice assistants with impaired users: a mixed-               Srinivasan H (2025b) Neurodiversity 2.0: harnessing cross-disciplinary
+     methods study. Int J Hum Comput Interact 36(12):1153–1169                          disability insights. Res Autism 127:Article 202652. https://​doi.​
+Milton D (2012) On the ontological status of autism: the “double empa-                  org/​10.​1016/j.​reia.​2025.​202652
+     thy problem.” Disabil Soc 27(6):883–887. https://​doi.​org/​10.​1080/​        Srinivasan H, Chan T, Kim SY, Obeid R, Jones DR, Botha M, Giwa
+     09687​599.​2012.​710008                                                            Onaiwu M, Tan DW, Waisman TC, Kapp SK, Kassous I, Mathaga
+Piepzna-Samarasinha LL (2018) Care work: dreaming disability jus-                       J, Gillespie-Lynch K (2025) Inclusion must be global, decolo-
+     tice. Arsenal Pulp Press, Vancouver                                                nised, culturally and linguistically diverse, and anti-normative. J
+Plain Language Action & Information Network, n.d., What is plain                        Soc Issues (in press)
+     language? US Government. Available at: https://​www.​plain​langu​             Tager-Flusberg H, Kasari C (2013) Minimally verbal school-aged chil-
+     age.​gov/​about/​defin​itions/. Accessed 20 Dec 2025                               dren with autism spectrum disorder: the neglected end of the spec-
+Prinos K, Patwari N, Power C (2024) Speaking of accent: a content                       trum. Autism Res 6(6):468–478. https://​doi.​org/​10.​1002/​aur.​1329
+     analysis of accent misconceptions in ASR research. In: Proceed-               Taylor J, Richmond K (2019) Analysis of pronunciation learning in
+     ings of the 2024 ACM conference on fairness, accountability and                    end-to-end speech synthesis. In: Proceedings of Interspeech 2019,
+     transparency (FAccT ’24), ACM, New York. https://​doi.​org/​10.​                   pp. 2045–2049, ISCA, Graz. https://​doi.​org/​10.​21437/​Inter​speech.​
+     1145/​36301​06.​36589​69                                                           2019-​2830
+Prizant BM, Wetherby AM, Rubin E, Laurent AC, Rydell PJ (2006)                     Torres EB, Brincker M, Isenhower RW, Yanovich P, Stigler KA, Nurn-
+     The SCERTS model: a comprehensive educational approach for                         berger JI, Metaxas DN, José JV (2013) Autism: the micro-move-
+     children with autism spectrum disorders, vol 1. Paul H. Brookes,                   ment perspective. Front Integr Neurosci 7:Article 32. https://​doi.​
+     Baltimore                                                                          org/​10.​3389/​fnint.​2013.​00032
+Qian Z, Yuan Z, Xue Q, Guo X, Qiu T (2023) A survey of automatic                   Trnka K, McCaw J, Yarrington D, McCoy KF, Pennington C (2008)
+     speech recognition for dysarthric speech. Electronics 12(20):Arti-                 Word prediction and communication rate in AAC. Technol Disabil
+     cle 4278                                                                           20(3):191–199
+Quinn ED, Kurin K, Romano M (2025) Experiences and contextual                      US General Services Administration (2023) Section508 of the Reha-
+     factors impacting AAC use at home: a qualitative interview study.                  bilitation Act of 1973 (29 U.S.C. § 794d): Information and com-
+     Top Early Child Spec Educ. https://​doi.​org/​10.​1177/​02711​21425​               munication technology accessibility standards, US GSA, Wash-
+     13898​95                                                                           ington, DC. Available at: https://​www.​secti​on508.​gov/​manage/​
+Rae JW, Potapenko A, Jayakumar SM et al (2021) Scaling language                         laws-​and-​polic​ies/
+     models: Methods, analysis & insights from training Gopher. arXiv              US Office of Management and Budget (2011) Final guidance on imple-
+     preprint arXiv:​2112.​11446                                                        menting the Plain Writing Act of 2010. US OMB, Washington
+Raja V, Ganesan AV, Syamkumar A, Banerjee R, Schwartz, H (2025)                    van Grunsven J, Roeser S (2022) AAC technology, autism, and the
+     Idiosyncratic versus normative modeling of atypical speech rec-                    empathic turn. Soc Epistemol 36(1):95–110
+     ognition: dysarthric case studies. In: Proceedings of the 2025                Vargas M (2019) Design and evaluation of a context-adaptive AAC
+     Conference on Empirical Methods in Natural Language Process-                       system. ACM SIGACCESS Access Comput 124:Article 2
+     ing (EMNLP 2025). Association for Computational Linguistics.                  Whittaker M, Alper M, Moss E, Sloane M, Wang R (2021) Disability,
+     https://​aclan​tholo​gy.​org/​2025.​emnlp-​main.​1701/                             bias, and AI. AI Now Institute, New York
+Reichel UD, Pfitzinger H (2006) Text preprocessing for speech synthe-              Wickenden M (2011) Whose voice is that? Issues of identity, voice
+     sis, In: Text, speech and dialogue: 9th international conference,                  and representation arising in an ethnographic study of teenag-
+     TSD 2006, Springer, Berlin, pp. 185–192                                            ers who use AAC. Disabil Stud Q. https://​doi.​org/​10.​18061/​dsq.​
+Schreibman L, Dawson G, Stahmer AC, Landa R, Rogers SJ, McGee                           v31i4.​1724
+     GG et al (2015) Naturalistic developmental behavioral interven-
+     tions: empirically validated treatments for autism spectrum dis-              Publisher's Note Springer Nature remains neutral with regard to
+     order. J Autism Dev Disord 45(8):2411–2428. https://​doi.​org/​10.​           jurisdictional claims in published maps and institutional affiliations.
+     1007/​s10803-​015-​2407-8
+Sharma N, Murray K and Xiao Z (2024) Faux polyglot: a study on
+     information disparity in multilingual large language models. arXiv
+     preprint arXiv:​2407.​05502

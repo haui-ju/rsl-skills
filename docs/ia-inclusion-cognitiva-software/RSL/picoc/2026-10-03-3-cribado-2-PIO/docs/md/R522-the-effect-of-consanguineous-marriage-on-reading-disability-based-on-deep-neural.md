@@ -1,0 +1,1389 @@
+# Multimedia Tools and Applications (2024) 83:51787–51807
+
+> Fuente PDF: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · técnica **locator index** (página + ancla) + chunks Graphify
+
+## Metadata
+- Stem: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural`
+- PDF: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf`
+- DOI: `10.1007/s11042-023-17587-w`
+- Pages: `21`
+- Structured_at: `2026-10-03T23:23:19+00:00`
+- Technique: `pdf-page-locators + heading-chunks`
+
+## Locator index (qué hay y en qué página del PDF)
+
+| Kind | Label | PDF page | MD anchor |
+|------|-------|----------|-----------|
+| abstract | Abstract / blurb | 1 | `#abstract` |
+| section | 1 Introduction | 2 | `#p2-1-introduction` |
+| section | 3.2 Perform sentiment analysis on learner_interaction | 8 | `#p8-3-2-perform-sentiment-analysis-on-learner-interaction` |
+| section | 3.3 Capture biometric data from learner_interaction | 8 | `#p8-3-3-capture-biometric-data-from-learner-interaction` |
+| section | 3.4 Create a cognitive profile for the learner: | 8 | `#p8-3-4-create-a-cognitive-profile-for-the-learner` |
+| section | 3.4.1 Combine NLP analysis, sentiment analysis, and biometric data | 8 | `#p8-3-4-1-combine-nlp-analysis-sentiment-analysis-and-biometric-data` |
+| section | 3.4.2 Store the cognitive profile in cognitive_profiles dictionary | 8 | `#p8-3-4-2-store-the-cognitive-profile-in-cognitive-profiles-dictionary` |
+| section | 3.5 Append learner_interaction to enriched_training_dataset | 8 | `#p8-3-5-append-learner-interaction-to-enriched-training-dataset` |
+| concept | R522 | ? | `#concept-r522` |
+| concept | effect | ? | `#concept-effect` |
+| concept | consanguineous | 1 | `#concept-consanguineous` |
+| concept | marriage | ? | `#concept-marriage` |
+| concept | reading | ? | `#concept-reading` |
+| concept | disability | ? | `#concept-disability` |
+| concept | based | ? | `#concept-based` |
+| concept | deep | ? | `#concept-deep` |
+| concept | neural | ? | `#concept-neural` |
+| finding | For knowledge acquisition and social engagement, reading comprehension is essential. | 1 | `#finding-for-knowledge-acquisition-and-social-eng` |
+| finding | How- ever, 20% or so of younger students have trouble with it. | 1 | `#finding-how-ever-20-or-so-of-younger-students` |
+| finding | In order to predict the effects of consanguineous marriage on reading handicap and customi… | 1 | `#finding-in-order-to-predict-the-effects-of-consa` |
+| finding | This framework is proposed as a transformative solution that smoothly combines cutting- ed… | 1 | `#finding-this-framework-is-proposed-as-a-transfor` |
+| finding | IALPF provides precise predictions and individualized learning path- ways by utilizing ext… | 1 | `#finding-ialpf-provides-precise-predictions-and-i` |
+| finding | It includes early warning systems, flexible content distribution, and ongoing devel- opmen… | 1 | `#finding-it-includes-early-warning-systems-flexi` |
+| page | p.1: Multimedia Tools and Applications (2024) 83:51787–51807 | 1 | `#pdf-p1` |
+| page | p.2: 51788 Multimedia Tools and Applications (2024) 83:51787–51807 | 2 | `#pdf-p2` |
+| page | p.3: Multimedia Tools and Applications (2024) 83:51787–51807 51789 | 3 | `#pdf-p3` |
+| page | p.4: 51790 Multimedia Tools and Applications (2024) 83:51787–51807 | 4 | `#pdf-p4` |
+| page | p.5: Multimedia Tools and Applications (2024) 83:51787–51807 51791 | 5 | `#pdf-p5` |
+| page | p.6: 51792 Multimedia Tools and Applications (2024) 83:51787–51807 | 6 | `#pdf-p6` |
+| page | p.7: Table 1 A comparative analysis of previous related AI algorithms | 7 | `#pdf-p7` |
+| page | p.8: 51794 Multimedia Tools and Applications (2024) 83:51787–51807 | 8 | `#pdf-p8` |
+| page | p.9: Multimedia Tools and Applications (2024) 83:51787–51807 51795 | 9 | `#pdf-p9` |
+| page | p.10: 51796 Multimedia Tools and Applications (2024) 83:51787–51807 | 10 | `#pdf-p10` |
+| page | p.11: Multimedia Tools and Applications (2024) 83:51787–51807 51797 | 11 | `#pdf-p11` |
+| page | p.12: 51798 Multimedia Tools and Applications (2024) 83:51787–51807 | 12 | `#pdf-p12` |
+| page | p.13: Multimedia Tools and Applications (2024) 83:51787–51807 51799 | 13 | `#pdf-p13` |
+| page | p.14: 51800 Multimedia Tools and Applications (2024) 83:51787–51807 | 14 | `#pdf-p14` |
+| page | p.15: Multimedia Tools and Applications (2024) 83:51787–51807 51801 | 15 | `#pdf-p15` |
+| page | p.16: 51802 Multimedia Tools and Applications (2024) 83:51787–51807 | 16 | `#pdf-p16` |
+| page | p.17: Multimedia Tools and Applications (2024) 83:51787–51807 51803 | 17 | `#pdf-p17` |
+| page | p.18: 51804 Multimedia Tools and Applications (2024) 83:51787–51807 | 18 | `#pdf-p18` |
+| page | p.19: Multimedia Tools and Applications (2024) 83:51787–51807 51805 | 19 | `#pdf-p19` |
+| page | p.20: 51806 Multimedia Tools and Applications (2024) 83:51787–51807 | 20 | `#pdf-p20` |
+| page | p.21: Multimedia Tools and Applications (2024) 83:51787–51807 51807 | 21 | `#pdf-p21` |
+
+## Abstract
+<a id="abstract"></a>
+
+For knowledge acquisition and social engagement, reading comprehension is essential. How- ever, 20% or so of younger students have trouble with it. In order to predict the effects of consanguineous marriage on reading handicap and customize adaptive learning experiences, the study proposes an Intelligent Adaptive Learning and Prediction Framework (IALPF). This framework is proposed as a transformative solution that smoothly combines cutting- edge AI approaches. IALPF provides precise predictions and individualized learning path- ways by utilizing extensive cognitive profiling, data gathering, and hybrid neural network design. It includes early warning systems, flexible content distribution, and ongoing devel- opment based on active learning and feedback loops. The IALPF represents a significant change in education that has wide-ranging effects. We evaluated reading skills among 770 students in a study that included two experimental groups, a control group, and 22 pupils from first-cousin marriages and 21 children of unrelated parents, respectively. Tests were given for word identification and reading comprehension, among other things. The find- ings showed that children of first cousin parents had a higher chance of reading difficulties than those of parents from other families. The outstanding performance of IALPF, which outperformed conventional techniques like Back Propagation (BP) and General Regression Neural Network (GRNN), was further supported by empirical evaluation. This demonstrates IALPF’s success in reinventing personalized learning and predictive analysis, strengthening its potential to improve education in a variety of scenarios. The seamless integration of cut- ting-edge AI methods into IALPF, which forecasts the effect of consanguineous marriage on reading handicap, is a significant innovation. To set it apart from conventional approaches, this special framework integrates cognitive profile, information gathering, and hybrid neu- ral networks for accurate predictions. The empirical analysis demonstrates the revolutionary potential of IALPF by demonstrating its improved predictive accuracy when compared to Back Propagation (BP) and General Regression Neural Network (GRNN).
+
+## Keywords
+
+- _(none auto-detected)_
+
+## Concept index (graph hooks + página)
+
+<a id="concept-r522"></a>
+### [PDF p.?] Concept: R522
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **?**
+
+<a id="concept-effect"></a>
+### [PDF p.?] Concept: effect
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **?**
+
+<a id="concept-consanguineous"></a>
+### [PDF p.1] Concept: consanguineous
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **1**
+
+<a id="concept-marriage"></a>
+### [PDF p.?] Concept: marriage
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **?**
+
+<a id="concept-reading"></a>
+### [PDF p.?] Concept: reading
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **?**
+
+<a id="concept-disability"></a>
+### [PDF p.?] Concept: disability
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **?**
+
+<a id="concept-based"></a>
+### [PDF p.?] Concept: based
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **?**
+
+<a id="concept-deep"></a>
+### [PDF p.?] Concept: deep
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **?**
+
+<a id="concept-neural"></a>
+### [PDF p.?] Concept: neural
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **?**
+
+
+## Findings index (graph hooks + página)
+
+<a id="finding-for-knowledge-acquisition-and-social-eng"></a>
+### [PDF p.1] Finding: For knowledge acquisition and social engagement, reading comprehension is essential.
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **1**
+
+<a id="finding-how-ever-20-or-so-of-younger-students"></a>
+### [PDF p.1] Finding: How- ever, 20% or so of younger students have trouble with it.
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **1**
+
+<a id="finding-in-order-to-predict-the-effects-of-consa"></a>
+### [PDF p.1] Finding: In order to predict the effects of consanguineous marriage on reading handicap and customize adaptive learning experiences, the study proposes an Intelligent Adaptive Learning and Prediction Framework (IALPF).
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **1**
+
+<a id="finding-this-framework-is-proposed-as-a-transfor"></a>
+### [PDF p.1] Finding: This framework is proposed as a transformative solution that smoothly combines cutting- edge AI approaches.
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **1**
+
+<a id="finding-ialpf-provides-precise-predictions-and-i"></a>
+### [PDF p.1] Finding: IALPF provides precise predictions and individualized learning path- ways by utilizing extensive cognitive profiling, data gathering, and hybrid neural network design.
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **1**
+
+<a id="finding-it-includes-early-warning-systems-flexi"></a>
+### [PDF p.1] Finding: It includes early warning systems, flexible content distribution, and ongoing devel- opment based on active learning and feedback loops.
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **1**
+
+
+## Relevance hooks
+### Theme relevance: software engineering and accessibility
+### Theme relevance: cognitive accessibility and neurodiversity
+### Theme relevance: evaluation metrics and WCAG
+
+## Sections (detected in PDF)
+
+<a id="p2-1-introduction"></a>
+### [PDF p.2] Section: 1 Introduction
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **2** · ancla `#p2-1-introduction`
+
+<a id="p8-3-2-perform-sentiment-analysis-on-learner-interaction"></a>
+### [PDF p.8] Section: 3.2 Perform sentiment analysis on learner_interaction
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **8** · ancla `#p8-3-2-perform-sentiment-analysis-on-learner-interaction`
+
+<a id="p8-3-3-capture-biometric-data-from-learner-interaction"></a>
+### [PDF p.8] Section: 3.3 Capture biometric data from learner_interaction
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **8** · ancla `#p8-3-3-capture-biometric-data-from-learner-interaction`
+
+<a id="p8-3-4-create-a-cognitive-profile-for-the-learner"></a>
+### [PDF p.8] Section: 3.4 Create a cognitive profile for the learner:
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **8** · ancla `#p8-3-4-create-a-cognitive-profile-for-the-learner`
+
+<a id="p8-3-4-1-combine-nlp-analysis-sentiment-analysis-and-biometric-data"></a>
+### [PDF p.8] Section: 3.4.1 Combine NLP analysis, sentiment analysis, and biometric data
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **8** · ancla `#p8-3-4-1-combine-nlp-analysis-sentiment-analysis-and-biometric-data`
+
+<a id="p8-3-4-2-store-the-cognitive-profile-in-cognitive-profiles-dictionary"></a>
+### [PDF p.8] Section: 3.4.2 Store the cognitive profile in cognitive_profiles dictionary
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **8** · ancla `#p8-3-4-2-store-the-cognitive-profile-in-cognitive-profiles-dictionary`
+
+<a id="p8-3-5-append-learner-interaction-to-enriched-training-dataset"></a>
+### [PDF p.8] Section: 3.5 Append learner_interaction to enriched_training_dataset
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **8** · ancla `#p8-3-5-append-learner-interaction-to-enriched-training-dataset`
+
+
+## Page chunks (texto por página del PDF)
+
+_Cada heading es un nodo Graphify. El label incluye la página para volver al PDF sin releer todo._
+
+<a id="pdf-p1"></a>
+### [PDF p.1] Multimedia Tools and Applications (2024) 83:51787–51807
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **1** / 21
+
+Multimedia Tools and Applications (2024) 83:51787–51807
+https://doi.org/10.1007/s11042-023-17587-w
+
+
+
+
+The effect of consanguineous marriage on reading disability
+based on deep neural networks
+
+Fatma M. Talaat1,2,3
+
+Received: 18 April 2022 / Revised: 2 October 2023 / Accepted: 22 October 2023 /
+Published online: 15 November 2023
+© The Author(s) 2023
+
+
+Abstract
+For knowledge acquisition and social engagement, reading comprehension is essential. How-
+ever, 20% or so of younger students have trouble with it. In order to predict the effects of
+consanguineous marriage on reading handicap and customize adaptive learning experiences,
+the study proposes an Intelligent Adaptive Learning and Prediction Framework (IALPF).
+This framework is proposed as a transformative solution that smoothly combines cutting-
+edge AI approaches. IALPF provides precise predictions and individualized learning path-
+ways by utilizing extensive cognitive profiling, data gathering, and hybrid neural network
+design. It includes early warning systems, flexible content distribution, and ongoing devel-
+opment based on active learning and feedback loops. The IALPF represents a significant
+change in education that has wide-ranging effects. We evaluated reading skills among 770
+students in a study that included two experimental groups, a control group, and 22 pupils
+from first-cousin marriages and 21 children of unrelated parents, respectively. Tests were
+given for word identification and reading comprehension, among other things. The find-
+ings showed that children of first cousin parents had a higher chance of reading difficulties
+than those of parents from other families. The outstanding performance of IALPF, which
+outperformed conventional techniques like Back Propagation (BP) and General Regression
+Neural Network (GRNN), was further supported by empirical evaluation. This demonstrates
+IALPF’s success in reinventing personalized learning and predictive analysis, strengthening
+its potential to improve education in a variety of scenarios. The seamless integration of cut-
+ting-edge AI methods into IALPF, which forecasts the effect of consanguineous marriage on
+reading handicap, is a significant innovation. To set it apart from conventional approaches,
+this special framework integrates cognitive profile, information gathering, and hybrid neu-
+ral networks for accurate predictions. The empirical analysis demonstrates the revolutionary
+potential of IALPF by demonstrating its improved predictive accuracy when compared to
+Back Propagation (BP) and General Regression Neural Network (GRNN).
+
+Keywords Dyslexia · Consanguineous Marriage · Orthography · Probabilistic Neural
+Network
+
+
+
+
+Extended author information available on the last page of the article
+
+
+                                                                                          13
+                                                                                  Vol.:(0123456789)
+
+<a id="pdf-p2"></a>
+### [PDF p.2] 51788 Multimedia Tools and Applications (2024) 83:51787–51807
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **2** / 21
+
+51788                                         Multimedia Tools and Applications (2024) 83:51787–51807
+
+
+1 Introduction
+
+The ability to read is an essential skill that empowers individuals to access and interpret
+information, opening doors to knowledge, personal growth, and societal participation
+[1]. While the majority of young learners naturally acquire this skill, a substantial frac-
+tion – around 20 percent – faces challenges that hinder their progress [1]. These chal-
+lenges manifest vividly when struggling readers attempt to read aloud, often marked by
+halting progress, mispronunciations, and the omission of words [2]. Such difficulties not
+only impede academic development but also affect self-esteem, as these young individu-
+als grapple with a task seemingly effortless to their peers.
+   The impact of reading disabilities extends beyond the early stages of education. As
+students transition from learning to read to reading to learn, reading-impaired individu-
+als find themselves deprived of the opportunity to fully engage with subjects ranging
+from science and history to literature and mathematics [3]. Tasks that others take for
+granted, like interpreting a road map or following the instructions on a microwave pizza,
+become daunting challenges for those with reading difficulties. In an increasingly text-
+driven information landscape, individuals who struggle with reading are at risk of being
+left behind as they navigate the digital realm of the Internet [4].
+   Globally, the struggle to acquire proficient reading skills is a widespread issue affect-
+ing around ten million children [5]. Alarming dropout rates of 10% to 15% in high
+schools and a mere 2% completion rate of four-year college programs further underscore
+the profound impact of reading difficulties on academic trajectories [4]. Disturbingly,
+surveys reveal that nearly half of adolescent and young adult offenders, as well as those
+with a history of substance addiction, grapple with reading challenges [5]. Even indi-
+viduals with mild reading disabilities often find reading to be a laborious task, leaving
+them with limited mental energy for comprehension [6].
+   Challenging stereotypes, it is important to note that reading disabilities do not discriminate
+based on gender. Research conducted by the National Institute of Child Health and Human
+Development (NICHD) has unveiled that both boys and girls are affected by reading handi-
+caps at nearly equivalent rates [7]. However, societal responses differ: boys, more likely to
+exhibit disruptive behavior due to their struggles, are often referred for therapy, while girls
+may escape notice by withdrawing into silent daydreaming [7]. These nuances emphasize the
+multifaceted nature of reading challenges and the need for comprehensive research.
+   Within the cultural context of the Arab tradition, marked by close family bonds, con-
+sanguineous marriage – marriage between close relatives – is a common practice [8].
+Previous research has suggested potential negative outcomes of consanguineous mar-
+riage, including decreased fertility and an increased risk of offspring mortality, congeni-
+tal deformities, and mental disabilities [9]. Moreover, there is a prevailing belief that
+reading difficulties might be inherited as a family trait, further motivating investigation
+into the potential links between consanguineous marriage and reading disabilities [10].
+   The overarching goal of this study is to examine whether the occurrence of reading dis-
+abilities is higher among children born to first-cousin parents compared to those born to
+unrelated parents. Additionally, the study seeks to explore whether reading-disabled chil-
+dren of first-cousin parents display more pronounced impairments in phonological aware-
+ness and phonological decoding when compared to reading-disabled children of unrelated
+parents and typically reading younger children. The study introduces a novel approach by
+presenting an Effective Prediction Module (EPM) utilizing a Probabilistic Neural Network
+(PNN) to predict the potential effects of consanguineous marriage on reading disabilities.
+
+
+13
+
+<a id="pdf-p3"></a>
+### [PDF p.3] Multimedia Tools and Applications (2024) 83:51787–51807 51789
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **3** / 21
+
+Multimedia Tools and Applications (2024) 83:51787–51807                                 51789
+
+
+   To address these questions, the study employs a comprehensive approach involving
+770 students, divided into various experimental groups. Word recognition and reading
+comprehension tests were conducted to gather data on reading disabilities. These groups
+encompass children of first-cousin marriages, second-cousin marriages, distantly related
+parents, and unrelated parents. Various assessments, including evaluations of non-
+words, actual words, phonological skills, orthographic abilities, and working memory,
+were administered to capture a holistic understanding of the participants’ reading capa-
+bilities. The study’s findings highlight a heightened risk of reading difficulties among
+children of first-cousin parents when compared to other parental relationships.
+
+Research gap While prior studies have looked at how consanguineous marriage affects vari-
+ous health outcomes, there is still a significant knowledge vacuum on how it can be related
+to reading difficulties. In areas where consanguineous marriage is common, like in the Arab
+tradition, this disparity is very important. There is a need for thorough investigations into
+the potential association between consanguineous marriage and reading impairments because
+existing studies have mostly concentrated on health-related outcomes, such as fertility, mor-
+tality, and congenital illnesses. Furthermore, there hasn’t been much focus on the application
+of cutting-edge AI methods to anticipate and address reading impairments in this setting.
+
+Problem definition This study’s research challenge focuses on determining whether con-
+sanguineous marriage may have an impact on the frequency and seriousness of reading
+impairments in kids. The study specifically seeks to respond to two important questions:
+
+
+   i. If compared to children born to unrelated parents or parents with varying degrees
+      of relatedness, do children born to first cousins have a higher prevalence of reading
+      disabilities?
+  ii. Do reading-disabled children of first cousins show more severe deficits in phonologi-
+      cal awareness and decoding than reading-disabled children of unrelated parents and
+      younger children who can read normally?
+
+    The prevalence of consanguineous marriage in some cultural contexts and its possible
+effects on academic performance and personal wellbeing make this study subject particu-
+larly pertinent.
+
+Solution The creation and application of the "Intelligent Adaptive Learning and Prediction
+Framework (IALPF)" constitutes the research problem’s proposed solution. In order to predict
+how consanguineous marriage will affect people with reading impairments and to deliver per-
+sonalized adaptive learning experiences, this framework is a transformative method that seam-
+lessly integrates cutting-edge AI approaches. The following are the solution’s main elements:
+
+
+   i. Advanced AI Methods: To study and forecast the probable impact of consanguineous
+      marriage on reading difficulties, IALPF makes use of cutting-edge AI methods, such
+      as deep learning and probabilistic neural networks.
+  ii. Cognitive profile: Thorough cognitive profile is done, including evaluations of work-
+      ing memory, phonological awareness, and phonological decoding skills. A thorough
+      insight of each participant’s reading abilities is provided by this profiling.
+
+
+                                                                                  13
+
+<a id="pdf-p4"></a>
+### [PDF p.4] 51790 Multimedia Tools and Applications (2024) 83:51787–51807
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **4** / 21
+
+51790                                       Multimedia Tools and Applications (2024) 83:51787–51807
+
+
+ iii. Data collection: 770 students from a variety of parental ties, including first cousins,
+      second cousins, distant relatives, and unrelated parents, are included in the dataset.
+      The analysis is built on top of this dataset.
+ iv. Empirical Evaluation: The solution includes an empirical evaluation of the IALPF’s
+      performance, comparing it to conventional AI approaches such as Back Propagation
+      (BP) and General Regression Neural Networks (GRNN).
+  v. Effective Prediction Module (EPM): A novel component of the solution, the EPM,
+      utilizes a Probabilistic Neural Network (PNN) to predict the potential effects of con-
+      sanguineous marriage on reading disabilities.
+
+   Robustness: Several important factors assure the solution’s robustness:
+
+   i. Comprehensive Dataset: The solution makes use of a large dataset of 770 pupils
+      to make sure that the analysis takes into account a variety of parental relationships
+      and reading levels. The robustness of the results is enhanced by the size and variety
+      of the dataset.
+  ii. Advanced AI Methods: Using advanced AI methods, such as probabilistic neural
+      networks, improves the accuracy of predictions. These methods are renowned for their
+      capacity to manage intricate data patterns and deliver precise results.
+ iii. Holistic Cognitive Profiling: The study’s cognitive profiling was thorough and cov-
+      ered a variety of elements of readers’ ability. The study is complete and reliable
+      because to this all-encompassing approach.
+ iv. Empirical Validation: The solution is made more robust by the empirical evaluation
+      that was done to confirm the IALPF’s effectiveness. The study shows the superiority
+      of the suggested framework by contrasting it to conventional AI techniques.
+  v. Application in Different Contexts: Although the study focuses on consanguineous
+      marriage and reading impairments, the adaptive design of the IALPF implies that it
+      may be effective in addressing related problems in a variety of educational contexts
+      and skill development domains.
+
+   In general, the resilience of the solution comes from the fusion of cutting-edge AI
+algorithms, extensive data, holistic profiling, and empirical validation. The IALPF is a
+potent instrument for resolving the research issue and improving educational practices
+since these factors guarantee that the research findings are trustworthy and practical.
+   The main contributions in this paper are illustrated as follow:
+
+• New Framework: The Intelligent Adaptive Learning and Prediction Framework (IALPF),
+  a revolutionary solution that incorporates cutting-edge AI methods, is presented.
+• The effect of consanguineous marriage on reading impairments is predicted using AI
+  techniques like deep learning and probabilistic neural networks.
+• Cognitive Profiling: Comprehensive cognitive profiling that includes tests of working
+  memory, orthographic skills, phonological awareness, and phonological decoding to
+  provide a thorough picture of reading ability.
+• Empirical Validation: An evaluation of the performance of IALPF using empirical data
+  that shows it to be more effective than more established AI techniques like Back Propa-
+  gation (BP) and General Regression Neural Network (GRNN).
+• Application Flexibility: The IALPF’s adaptability shows that it has the potential to solve
+  related problems in a range of educational contexts and skill development domains.
+
+
+13
+
+<a id="pdf-p5"></a>
+### [PDF p.5] Multimedia Tools and Applications (2024) 83:51787–51807 51791
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **5** / 21
+
+Multimedia Tools and Applications (2024) 83:51787–51807                                    51791
+
+
+   These contributions highlight the value of AI-driven tailored learning and predictive
+analysis in education while also advancing our understanding of the potential link between
+consanguineous marriage and reading problems.
+   The subsequent sections of this paper are structured as follows: Section 2 presents a
+comprehensive literature review, delving into consanguineous marriage practices and the
+application of AI algorithms to predict the impact of such marriages on reading disabilities.
+Section 3 outlines the proposed method, detailing the utilization of the Intelligent Adaptive
+Learning and Prediction Framework (IALPF) and its integration of cognitive profiling and
+adaptive learning techniques. The study’s experimental evaluation is expounded in Sec-
+tion 4, substantiating the exceptional performance of the IALPF when contrasted with tra-
+ditional AI approaches. The results discussion is introduced in Section 5. Finally, the paper
+concludes in Section 6, summarizing the findings and implications of this research.
+
+
+
+2 Literature review
+
+Initially, this section introduces some literature review in consanguineous marriage. Then, it
+introduces a comparative analysis of several AI algorithms that have been previously employed
+in research related to predicting the impact of consanguineous marriage on reading disability.
+    Religion, ethnicity, socio-cultural factors, and population isolation all influence the rate
+of consanguineous marriage in different countries [11]. This was a regular occurrence in
+the past, but the number of consanguineous marriages has dropped in recent years [12].
+However, it is still common in several Asian [12], North African, and Middle Eastern
+nations [13], where rates of such marriages range from 20 to 50 percent [14]. According
+to some twin studies, genetic factors account for 50% of the variance in predicting reading
+and writing [15]. Even when they relocate to North America or Western Europe, immi-
+grants from those nations maintain their cultural traditions [16].
+    High percentages of consanguineous marriages are typically found in rural areas and
+in poor groups with low levels of education [17]. Many consanguineous marriages are
+arranged to retain the land in the family and prevent it from being transferred to an unrelated
+groom’s family [18]. There is also a view that marriage arrangements are less problematic
+when the family’s older generation chooses the prospective mates for their sons or daughters
+based on family norms [19].
+    Back Propagation is a widely used supervised learning algorithm commonly employed in
+neural networks. It aims to minimize the error between predicted and actual outputs by adjust-
+ing the weights of network layers through iterative backward propagation of errors. While BP
+has shown effectiveness in various applications, it may exhibit slow convergence and sensitiv-
+ity to the initial choice of weights. Additionally, BP’s capacity to handle complex data patterns
+and provide accurate predictions may be constrained by its architecture.
+    The General Regression Neural Network is a radial basis function-based algorithm often
+utilized for function approximation and regression tasks. GRNN employs a kernel function to
+estimate the conditional probability of a target value given input features. GRNN’s simplicity
+and rapid training make it an attractive choice for certain applications. However, it may face
+challenges in handling complex relationships within the data and can be prone to overfitting
+when training data is limited.
+    Probabilistic Neural Networks are implemented as a statistical algorithm using kernel dis-
+criminant analysis. This approach involves a multilayered feedforward network with distinct
+layers for input, pattern computation, summation, and output. PNNs are known for their speed
+
+                                                                                     13
+
+<a id="pdf-p6"></a>
+### [PDF p.6] 51792 Multimedia Tools and Applications (2024) 83:51787–51807
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **6** / 21
+
+51792                                           Multimedia Tools and Applications (2024) 83:51787–51807
+
+
+of learning, accurate predicted target probability scores, and relatively insensitivity to outliers.
+However, they may require more memory space to store the model and a representative train-
+ing set. Table 1 introduces a comparative analysis of previous related AI algorithms.
+    The choice of algorithm for predicting the impact of consanguineous marriage on reading
+disability depends on various factors including the complexity of the data and the desired out-
+comes. While traditional AI algorithms like Back Propagation and GRNN offer certain advan-
+tages, Probabilistic Neural Networks (PNN) and the proposed Intelligent Adaptive Learning
+and Prediction Framework (IALPF) provide more nuanced and innovative approaches. PNNs
+offer accurate probability scores, while IALPF’s integration of cognitive profiling and adap-
+tive learning makes it a strong contender for addressing the research problem in a personalized
+and holistic manner.
+    Research gaps can be summarized in the following points:
+
+•   Slow convergence and sensitivity to initial weights affecting efficiency.
+•   Limited handling of intricate data patterns and relationships.
+•   Overfitting risks with limited training data.
+•   Challenges in modeling complex data relationships.
+•   Scalability concerns due to memory requirements.
+•   Need for a representative training set for accurate predictions.
+
+
+Research problem The research aims to investigate the potential impact of consanguine-
+ous marriage on reading disability using advanced AI techniques and deep neural networks.
+Specifically, it seeks to determine whether children born to first-cousin parents are at a
+higher risk of developing reading difficulties compared to those born to distantly related
+or unrelated parents. Additionally, the study explores whether reading-disabled children
+of first-cousin parents exhibit more pronounced phonological awareness and phonological
+decoding impairments when compared to reading-disabled children of unrelated parents
+and typically reading younger children. The research also introduces an Effective Predic-
+tion Module (EPM) utilizing a Probabilistic Neural Network (PNN) to predict the influence
+of consanguineous marriage on reading disability.
+
+
+3 Intelligent adaptive learning and prediction framework (IALPF)
+
+The Intelligent Adaptive Learning and Prediction Framework (IALPF) comprises five distinct
+phases that synergistically integrate advanced AI techniques to provide a holistic and personal-
+ized approach to both prediction and learning. These phases ensure accurate prediction of the
+impact of consanguineous marriage on reading disability and enable tailored adaptive learning
+experiences for individual learners. The proposed Intelligent Adaptive Learning and Predic-
+tion Framework (IALPF) Algorithm consists of several main phases as illustrated in Fig. 1.
+
+3.1 Phase 1: Cognitive profiling and data collection
+
+IALPF initiates by conducting comprehensive cognitive profiling of learners, capturing their
+cognitive strengths, weaknesses, and emotional states using advanced AI techniques such as
+Natural Language Processing (NLP), sentiment analysis, and biometric data analysis. Concur-
+rently, the algorithm collects data from learners’ interactions to continuously enrich the training
+
+
+13
+
+<a id="pdf-p7"></a>
+### [PDF p.7] Table 1 A comparative analysis of previous related AI algorithms
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **7** / 21
+
+Table 1  A comparative analysis of previous related AI algorithms
+     Algorithm                                  Strengths                                  Weaknesses                                 Applicability to Research Problem
+
+     Back Propagation (BP)                      Widely used, applicable to various tasks   Slow convergence, sensitivity to initial   May be limited in handling complex data
+                                                                                             weights                                   patterns
+                                                                                                                                                                                Multimedia Tools and Applications (2024) 83:51787–51807
+
+
+
+
+     General Regression Neural Network          Effective for regression tasks             Prone to overfitting with limited data  May struggle with complex data relation-
+       (GRNN)                                                                                                                       ships
+     Probabilistic Neural Networks (PNN)        Speed of learning, accurate probability    More memory space required, representa- May offer accurate probabilities in multi-
+                                                 scores                                     tive training set needed                classification
+
+
+
+
+                                                                                                                                                                                 51793
+13
+
+<a id="pdf-p8"></a>
+### [PDF p.8] 51794 Multimedia Tools and Applications (2024) 83:51787–51807
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **8** / 21
+
+51794                                                Multimedia Tools and Applications (2024) 83:51787–51807
+
+
+dataset, forming the foundation for accurate predictions and personalized learning paths. The
+steps of the Cognitive Profiling and Data Collection Algorithm are shown in Algorithm 1.
+   Algorithm 1: Cognitive profiling and data collection algorithm.
+
+ Inputs:
+  -Learner interaction data (e.g., text inputs, biometric data)
+  -AI techniques (e.g., NLP, sentiment analysis)
+
+ Outputs:
+ -Cognitive profiles of learners
+ -Enriched training dataset
+ Steps:
+ 1. Initialize cognitive_profiles = empty dictionary
+ 2. Initialize enriched_training_dataset = empty dataset
+ 3. For each learner_interaction in learner_interaction_data:
+  3.1 Perform Natural Language Processing (NLP) on learner_interaction
+  3.2 Perform sentiment analysis on learner_interaction
+  3.3 Capture biometric data from learner_interaction
+  3.4 Create a cognitive profile for the learner:
+  3.4.1      Combine NLP analysis, sentiment analysis, and biometric data
+  3.4.2      Store the cognitive profile in cognitive_profiles dictionary
+  3.5 Append learner_interaction to enriched_training_dataset
+ 4. End loop
+ Algorithm Validation:
+ 1. Accuracy of Cognitive Profiling:
+        Hypothetical Correctly Identified Profiles: 300
+        Total Profiles Generated: 350
+ Accuracy = (Correctly Identified Profiles / Total Profiles Generated) * 100 Accuracy = (300 / 350) *
+ 100 Accuracy ≈ 85.71%
+ 2. Enrichment of Training Dataset:
+        Initial Dataset Size: 500
+        Enriched Dataset Size: 800
+ Enrichment Percentage = ((Enriched Dataset Size - Initial Dataset Size) / Initial Dataset Size) * 100
+ Enrichment Percentage = ((800 - 500) / 500) * 100 Enrichment Percentage = 60%
+ 3. Cross-Validation Performance:
+        Number of Folds (k): 5
+        Accuracy Scores for Each Fold: [80%, 82%, 85%, 78%, 83%]
+ Average Accuracy = (Sum of Accuracy Scores for All Folds) / Number of Folds Average Accuracy =
+ (80% + 82% + 85% + 78% + 83%) / 5 Average Accuracy = 81.6%
+ 4. Expert Evaluation:
+        Number of Profiles Evaluated: 50
+        Correctly Identified Profiles by Experts: 45
+ Expert Evaluation Accuracy = (Correctly Identified Profiles by Experts / Total Profiles Evaluated) *
+ 100 Expert Evaluation Accuracy = (45 / 50) * 100 Expert Evaluation Accuracy = 90%
+
+
+
+
+13
+
+<a id="pdf-p9"></a>
+### [PDF p.9] Multimedia Tools and Applications (2024) 83:51787–51807 51795
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **9** / 21
+
+Multimedia Tools and Applications (2024) 83:51787–51807                                                  51795
+
+
+     Cognitive Profiling and Data Collection                    Hybrid Neural Network Architecture
+
+
+                     Data                                                      HNN
+
+
+
+
+                                       Prediction and Early Detection
+
+
+
+
+        Active Learning and Continuous Improvement
+                                                                Adaptive Learning Pathway Construction
+
+
+
+
+                                    Able
+
+
+
+
+                                   Disable
+
+
+
+
+Fig. 1  The proposed Intelligent Adaptive Learning and Prediction Framework (IALPF)
+
+3.2 Phase 2: Hybrid neural network architecture design
+
+In this phase, IALPF designs a robust hybrid neural network architecture that amalgamates
+the predictive capabilities of Probabilistic Neural Networks (PNN) with Convolutional Neu-
+ral Networks (CNNs) and Recurrent Neural Networks (RNNs). This versatile architecture
+
+                                                                                                13
+
+<a id="pdf-p10"></a>
+### [PDF p.10] 51796 Multimedia Tools and Applications (2024) 83:51787–51807
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **10** / 21
+
+51796                                                    Multimedia Tools and Applications (2024) 83:51787–51807
+
+
+ensures both precise predictions and adaptive learning content delivery. The steps of the
+Hybrid Neural Network Architecture Design Algorithm are shown in Algorithm 2.
+   Algorithm 2: Hybrid neural network architecture design algorithm.
+         # Import required libraries and frameworks
+         import tensorflow as tf
+
+         # Define the hybrid neural network architecture
+         def hybrid_nn_architecture():
+           input_layer = tf.keras.Input(shape=input_shape) # Define input layer
+
+           # Create separate branches for PNN, CNN, and RNN
+           pnn_branch = build_pnn_branch(input_layer)
+           cnn_branch = build_cnn_branch(input_layer)
+           rnn_branch = build_rnn_branch(input_layer)
+
+           # Concatenate the outputs of the three branches
+           concatenated_layers = tf.keras.layers.concatenate([pnn_branch, cnn_branch, rnn_branch])
+
+           # Fully connected layers for prediction
+           fc_layer1 = tf.keras.layers.Dense(units=128, activation='relu')(concatenated_layers)
+           fc_layer2 = tf.keras.layers.Dense(units=64, activation='relu')(fc_layer1)
+           output_layer = tf.keras.layers.Dense(units=1, activation='sigmoid')(fc_layer2)
+
+           # Create the model
+           model = tf.keras.Model(inputs=input_layer, outputs=output_layer,
+         name='hybrid_nn_model')
+
+           return model
+
+         # Define functions to build PNN, CNN, and RNN branches
+         def build_pnn_branch(input_layer):
+           # Construct PNN architecture
+           # ...
+           pnn_output = tf.keras.layers.Dense(units=64, activation='relu')(pnn_layers)
+           return pnn_output
+
+         def build_cnn_branch(input_layer):
+           # Construct CNN architecture
+           # ...
+           cnn_output = tf.keras.layers.Conv2D(filters=32, kernel_size=(3, 3),
+         activation='relu')(cnn_layers)
+           return cnn_output
+
+         def build_rnn_branch(input_layer):
+           # Construct RNN architecture
+           #
+         Algorithm Validation:
+         1. Prediction Performance:
+                True Positives: 350
+                True Negatives: 150
+                False Positives: 20
+                False Negatives: 10
+         Accuracy = (True Positives + True Negatives) / (True Positives + True Negatives + False Positives +
+         False Negatives) Accuracy = (350 + 150) / (350 + 150 + 20 + 10) Accuracy = 95%
+         2. Comparison with Baselines:
+                Baseline Accuracy: 90%
+         Improvement Over Baseline = (Accuracy of Proposed Model - Baseline Accuracy) / Baseline
+         Accuracy Improvement Over Baseline = (95% - 90%) / 90% Improvement Over Baseline
+         3. Cross-Validation Performance:
+                Number of Folds (k): 5
+                Average Accuracy Across Folds: 94%
+
+
+
+
+13
+
+<a id="pdf-p11"></a>
+### [PDF p.11] Multimedia Tools and Applications (2024) 83:51787–51807 51797
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **11** / 21
+
+Multimedia Tools and Applications (2024) 83:51787–51807                                                          51797
+
+
+3.3 Phase 3: Prediction and early detection
+
+Leveraging the hybrid neural network, IALPF enters the prediction phase. It utilizes the
+updated dataset and the designed architecture to accurately predict the potential impact of
+consanguineous marriage on reading disability. Early detection of risk factors and tailored
+prediction outcomes form the cornerstone of this phase. The steps of the Prediction and
+Early Detection are shown in Algorithm 3.
+   Algorithm 3: Prediction and early detection algorithm
+           # Import required libraries and frameworks
+           import tensorflow as tf
+
+           # Define the hybrid neural network architecture
+           def hybrid_nn_architecture():
+             input_layer = tf.keras.Input(shape=input_shape) # Define input layer
+
+             # Create separate branches for PNN, CNN, and RNN
+             pnn_branch = build_pnn_branch(input_layer)
+             cnn_branch = build_cnn_branch(input_layer)
+             rnn_branch = build_rnn_branch(input_layer)
+
+             # Concatenate the outputs of the three branches
+             concatenated_layers = tf.keras.layers.concatenate([pnn_branch, cnn_branch, rnn_branch])
+
+             # Fully connected layers for prediction
+             fc_layer1 = tf.keras.layers.Dense(units=128, activation='relu')(concatenated_layers)
+             fc_layer2 = tf.keras.layers.Dense(units=64, activation='relu')(fc_layer1)
+             output_layer = tf.keras.layers.Dense(units=1, activation='sigmoid')(fc_layer2)
+
+             # Create the model
+             model = tf.keras.Model(inputs=input_layer, outputs=output_layer,
+           name='hybrid_nn_model')
+
+             return model
+
+           # Define functions to build PNN, CNN, and RNN branches
+           def build_pnn_branch(input_layer):
+             # Construct PNN architecture
+             # ...
+             pnn_output = tf.keras.layers.Dense(units=64, activation='relu')(pnn_layers)
+             return pnn_output
+
+           def build_cnn_branch(input_layer):
+             # Construct CNN architecture
+             # ...
+             cnn_output = tf.keras.layers.Conv2D(filters=32, kernel_size=(3, 3),
+           activation='relu')(cnn_layers)
+             return cnn_output
+
+           def build_rnn_branch(input_layer):
+             # Construct RNN architecture
+             #
+           Algorithm Validation:
+
+           1. Prediction Accuracy:
+
+                  True Positives: 120
+                  True Negatives: 60
+                  False Positives: 10
+                  False Negatives: 5
+
+           Accuracy = (True Positives + True Negatives) / (True Positives + True Negatives + False Positives +
+           False Negatives) Accuracy = (120 + 60) / (120 + 60 + 10 + 5) Accuracy = 94.74%
+
+           2. Cross-Validation Performance:
+
+                  Number of Folds (k): 5
+                  Average Accuracy Across Folds: 95%
+
+
+
+
+                                                                                                           13
+
+<a id="pdf-p12"></a>
+### [PDF p.12] 51798 Multimedia Tools and Applications (2024) 83:51787–51807
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **12** / 21
+
+51798                                             Multimedia Tools and Applications (2024) 83:51787–51807
+
+
+3.4 Phase 4: Adaptive learning pathway construction
+
+Upon predicting potential reading difficulties, IALPF dynamically constructs person-
+alized learning pathways for each learner. The algorithm adapts the curriculum, content
+types, and difficulty levels based on prediction outcomes and cognitive profiles. This phase
+ensures optimal engagement, comprehension, and skill development. The steps of the
+Adaptive Learning Pathway Construction Algorithm are shown in Algorithm 4.
+   Algorithm 4: Adaptive learning pathway construction algorithm.
+
+    # Initialize empty dictionaries to store personalized learning pathways
+    learning_pathways = {}
+
+    # Define a function to construct adaptive learning pathways
+    def construct_learning_pathway(cognitive_profile, prediction_outcome):
+      # Determine content types and difficulty levels based on prediction outcome and
+    cognitive profile
+      if prediction_outcome == "high_risk":
+         content_types = ["text", "video"]
+
+
+
+
+13
+
+<a id="pdf-p13"></a>
+### [PDF p.13] Multimedia Tools and Applications (2024) 83:51787–51807 51799
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **13** / 21
+
+Multimedia Tools and Applications (2024) 83:51787–51807                                                   51799
+
+
+3.5 Phase 5: Active learning and continuous improvement
+
+The final phase of IALPF involves continuous improvement through Active Learning
+mechanisms. The algorithm strategically selects challenging prediction cases for human
+expert validation, enhancing prediction accuracy over time. Furthermore, IALPF actively
+engages educators and learners in a collaborative feedback loop, refining predictions and
+adaptive learning strategies. The steps of the Active Learning and Continuous Improve-
+ment Algorithm are shown in Algorithm 5.
+   Algorithm 5: Active learning and continuous improvement algorithm.
+             # Import required libraries and frameworks
+             import random
+
+             # Define a list to store challenging prediction cases for expert validation
+             challenging_cases = []
+
+             # Define a function to select challenging cases for expert validation
+             def select_challenging_cases(prediction_outcomes):
+               for i, prediction in enumerate(prediction_outcomes):
+                  if prediction == "high_risk":
+                     challenging_cases.append(i) # Store index of challenging case
+
+             # Define a function for expert validation and refinement
+             def expert_validation_and_refinement(challenging_cases):
+               for case_index in challenging_cases:
+                  learner_id = cognitive_profiles[case_index]["learner_id"]
+                  prediction = hybrid_nn_model.predict(learner_id) # Obtain prediction for challenging
+             case
+                  expert_validation = get_expert_validation(prediction) # Obtain expert validation
+                  if expert_validation == "correct":
+                     update_prediction_model(learner_id, prediction) # Update prediction model with
+             correct prediction
+                  else:
+                     refine_learning_pathway(learner_id) # Refine learning pathway for incorrect
+             prediction
+
+             # Define a function for collaborative feedback loop with educators and learners
+             def collaborative_feedback_loop(learning_pathways):
+                for learner_id, pathway in learning_pathways.items():
+                   feedback = get_learner_feedback(learner_id) # Obtain feedback from learner
+                   if feedback == "helpful":
+                      adjust_learning_pathway(pathway) # Adjust learning pathway based on helpful
+             feedback
+
+             # Main execution of Active Learning and Continuous Improvement Algorithm
+             select_challenging_cases(prediction_outcomes) # Select challenging cases for expert
+             validation
+             expert_validation_and_refinement(challenging_cases) # Expert validation and refinement
+             collaborative_feedback_loop(learning_pathways) # Collaborative feedback loop with
+             educators and learners
+             Algorithm Validation:
+             1. Challenging Cases Validation:
+
+                    Number of Challenging Cases Correctly Predicted: 15
+                    Total Challenging Cases: 20
+
+             Accuracy for Challenging Cases = (Number of Challenging Cases Correctly Predicted / Total
+             Challenging Cases) * 100 Accuracy for Challenging Cases = (15 / 20) * 100 Accuracy for
+             Challenging Cases = 75%
+
+             2. Collaborative Feedback Assessment:
+
+                    Number of Learning Pathway Adjustments Based on Helpful Feedback: 20
+                    Total Feedback Instances: 25
+
+             Percentage of Adjustments Based on Helpful Feedback = (Number of Learning Pathway
+             Adjustments Based on Helpful Feedback / Total Feedback Instances) * 100 Percentage of
+             Adjustments Based on Helpful Feedback = (20 / 25) * 100 Percentage of Adjustments Based on
+             Helpful Feedback = 80%
+
+
+
+
+                                                                                                          13
+
+<a id="pdf-p14"></a>
+### [PDF p.14] 51800 Multimedia Tools and Applications (2024) 83:51787–51807
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **14** / 21
+
+51800                                         Multimedia Tools and Applications (2024) 83:51787–51807
+
+
+   The main phases of the Intelligent Adaptive Learning and Prediction Framework
+(IALPF) synergize advanced AI techniques to create a powerful and adaptable system. By
+encompassing cognitive profiling, hybrid neural networks, prediction, adaptive learning,
+and continuous improvement, IALPF ensures accurate predictions and personalized learn-
+ing experiences. This innovative framework has the potential to revolutionize education,
+prediction, and skill development in diverse contexts.
+
+
+4 Proposed description
+
+The Intelligent Adaptive Learning and Prediction Framework (IALPF) represents a
+groundbreaking approach designed to address the complex challenge of predicting and
+mitigating reading disabilities, particularly in the context of consanguineous marriage.
+This innovative framework leverages advanced AI techniques and data-driven insights to
+provide accurate predictions, personalized learning pathways, and continuous improvement
+mechanisms. IALPF consists of five interconnected phases, each contributing to its efficacy
+in predicting and addressing reading disabilities.
+
+4.1 Phase 1: Cognitive profiling and data collection
+
+IALPF’s journey begins with Phase 1, where it conducts comprehensive cognitive profil-
+ing and data collection. This phase harnesses the power of advanced AI techniques such
+as Natural Language Processing (NLP), sentiment analysis, and biometric data analysis
+to gain a deep understanding of learners. Cognitive profiling captures not only the cogni-
+tive strengths and weaknesses of learners but also their emotional states during the learn-
+ing process.
+
+• NLP Analysis: IALPF analyzes textual inputs provided by learners, extracting linguis-
+  tic patterns, vocabulary levels, and language fluency. This linguistic insight allows for
+  the tailoring of textual learning materials to match individual proficiency levels.
+• Sentiment Analysis: Emotional states are gauged through sentiment analysis, enabling
+  the framework to optimize the learning experience by providing appropriate emotional
+  support and feedback based on learner emotions such as frustration or engagement.
+• Biometric Data Analysis: The collection and interpretation of physiological data, includ-
+  ing heart rate variability and skin conductance, provide real-time insights into cognitive
+  load and emotional arousal, allowing for adaptive adjustments in the learning process.
+
+    Simultaneously, the algorithm gathers data from learners’ interactions with learning mate-
+rials, quizzes, and exercises, continuously enriching the training dataset. This diverse data
+forms the foundation for accurate predictions and the creation of personalized learning paths.
+
+4.2 Phase 2: Hybrid neural network architecture design
+
+Phase 2 of IALPF focuses on designing a robust hybrid neural network architecture. This
+architecture combines the predictive capabilities of Probabilistic Neural Networks (PNN),
+Convolutional Neural Networks (CNNs), and Recurrent Neural Networks (RNNs). This
+fusion ensures not only precise predictions but also adaptive content delivery tailored to indi-
+vidual learning needs.
+
+13
+
+<a id="pdf-p15"></a>
+### [PDF p.15] Multimedia Tools and Applications (2024) 83:51787–51807 51801
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **15** / 21
+
+Multimedia Tools and Applications (2024) 83:51787–51807                                   51801
+
+
+• PNN Branch: Specializing in probabilistic modeling, the PNN branch excels in capturing
+  intricate data patterns, particularly relevant in situations involving probabilistic outcomes.
+• CNN Branch: The CNN branch focuses on visual and spatial data processing, analyzing
+  visual learning materials such as images and diagrams to extract meaningful information
+  that enhances the learning experience.
+• RNN Branch: Proficient in handling sequential data, the RNN branch tracks the development
+  of reading abilities over time, identifying areas where learners may need additional support.
+
+  These three branches work in synergy, extracting valuable insights from various data
+modalities to provide a comprehensive and adaptive learning experience.
+
+4.3 Phase 3: Prediction and early detection
+
+Leveraging the hybrid neural network architecture, Phase 3 involves prediction and early
+detection. IALPF utilizes the updated dataset and the designed architecture to accurately pre-
+dict the potential impact of consanguineous marriage on reading disability. Early detection of
+risk factors and tailored prediction outcomes form the cornerstone of this phase.
+
+• PNN for Precise Predictions: The PNN branch excels in probabilistic predictions, taking
+  into account various factors, including cognitive profiles, emotional states, and interaction
+  data, to make precise predictions regarding reading difficulties.
+• Early Detection: Identifying individuals at high risk of reading difficulties allows for early
+  intervention, providing targeted support and interventions to mitigate the impact of con-
+  sanguineous marriage on reading disability.
+
+   The hybrid neural network’s ability to analyze multiple data sources ensures robust predic-
+tions, enabling personalized learning pathways that cater to individual needs.
+
+4.4 Phase 4: Adaptive learning pathway construction
+
+Upon predicting potential reading difficulties, IALPF dynamically constructs personalized
+learning pathways for each learner. The algorithm adapts the curriculum, content types, and
+difficulty levels based on prediction outcomes and cognitive profiles. This phase ensures opti-
+mal engagement, comprehension, and skill development.
+
+Personalized Learning Pathways Content types and difficulty levels are determined based
+on prediction outcomes and cognitive profiles, ensuring that each learner receives the right
+level of challenge and support.
+
+4.5 Phase 5: Active learning and continuous improvement
+
+The final phase of IALPF involves continuous improvement through Active Learning
+mechanisms. The algorithm strategically selects challenging prediction cases for human
+expert validation, enhancing prediction accuracy over time.
+
+• Challenging Cases: Cases that are difficult to assess solely through AI techniques are
+  subjected to expert validation, ensuring the highest level of accuracy in predictions.
+
+
+                                                                                    13
+
+<a id="pdf-p16"></a>
+### [PDF p.16] 51802 Multimedia Tools and Applications (2024) 83:51787–51807
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **16** / 21
+
+51802                                         Multimedia Tools and Applications (2024) 83:51787–51807
+
+
+• Collaborative Feedback Loop: IALPF actively engages educators and learners in a
+  collaborative feedback loop, refining predictions and adaptive learning strategies based
+  on human expertise and learner feedback.
+
+    This iterative process ensures that IALPF continuously evolves, becoming more accu-
+rate and effective in predicting reading difficulties and delivering personalized learning
+experiences.
+    In summary, the Intelligent Adaptive Learning and Prediction Framework (IALPF) rep-
+resents a transformative approach that integrates cutting-edge AI techniques to predict and
+address reading disabilities within the context of consanguineous marriage. With its multi-
+modal cognitive profiling, advanced neural network architecture, precise predictions, person-
+alized learning pathways, and continuous improvement mechanisms, IALPF has the potential
+to revolutionize education, prediction, and skill development across diverse contexts.
+
+
+
+5 Implementation and experiements
+
+This section describes the implementation of EPM, the experiements conducted, and the
+used dataset.
+
+
+
+5.1 Dataset
+
+These questions were investigated among 770 pupils using word recognition and reading
+comprehension tests. This population was divided into two experimental groups. A read-
+ing-disabled group of 22 students comprised 22 children of first cousin marriages and 21
+children of unrelated parents. A control group of 21 younger typically reading pupils at the
+same reading level was chosen. Non-words, actual words, phonological, orthographic, and
+working memory assessments were administered to all of the groups. The findings showed
+that children of first-cousin parents had a higher risk of reading difficulties than children of
+second-cousin parents, distantly related parents, or unrelated parents.
+
+
+
+5.2 Results
+
+To test the effect in the case of implementing IALPF, we first partition the used dataset into
+a training dataset and testing dataset, and then we implement Back Propagation (BP), Gen-
+eral Regression Neural Network (GRNN), and IALPF. The values of Mean and Standard
+deviation are shown in Table 2.
+
+5.3 Implications of consanguineous marriage on reading disabilities
+
+The dataset analysis revealed a compelling association between consanguineous mar-
+riage and an elevated risk of reading difficulties among offspring. Specifically, children
+born to first-cousin parents exhibited a notably higher susceptibility to reading disabilities
+compared to those born to parents with more distantly related or unrelated lineage. This
+
+
+13
+
+<a id="pdf-p17"></a>
+### [PDF p.17] Multimedia Tools and Applications (2024) 83:51787–51807 51803
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **17** / 21
+
+Multimedia Tools and Applications (2024) 83:51787–51807                                              51803
+
+
+Table 2  Accuracy of BP, GRNN,      Algorithm         Training Dataset             Testing Dataset
+and IALPF
+                                                      Mean        Standard         Mean         Standard
+                                                                  deviation                     devia-
+                                                                                                tion
+
+                                    BP                17.73       5.25             7.25         3.09
+                                    GRNN              10.01       2.52             7.11         1.35
+                                    IALPF             22.00       0.75             9.00         0.03
+
+                                    The results have proven that IALPF has the best prediction accuracy
+
+statistical difference was particularly pronounced in our findings, as indicated by the fol-
+lowing results:
+
+• First-Cousin Group Mean Reading Score: 62.5
+• Control Group Mean Reading Score: 78.9
+
+   This suggests a significant variation in reading performance between the two groups.
+To assess the significance of this difference, we conducted a t-test, the results of which
+indicated a p-value < 0.001. This provides strong evidence to reject the null hypothesis and
+supports the notion that children of first-cousin parents are indeed at a significantly higher
+risk of reading difficulties.
+   Moreover, these findings align with previous studies that have suggested a potential
+link between consanguineous marriage and various health-related issues, including cogni-
+tive disorders [9]. This further reinforces the validity and importance of our results in the
+broader context of consanguineous marriage and its impact on reading disabilities.
+
+5.4 Efficacy of IALPF in predictive analysis
+
+The comparative analysis of predictive algorithms demonstrated the remarkable performance
+of IALPF in accurately predicting the impact of consanguineous marriage on reading disabil-
+ity. With a mean accuracy of 22.00, and a notably low standard deviation of 0.75, IALPF out-
+performed both Back Propagation (BP) and General Regression Neural Network (GRNN).
+These results are not only statistically significant but also practically meaningful:
+    Accuracy comparison:
+
+• BP Mean Accuracy: 17.73
+• GRNN Mean Accuracy: 10.01
+
+   In terms of predictive performance, IALPF offers a substantial advantage over tradi-
+tional methods. To provide further insight into the predictive capabilities, we calculated the
+precision, recall, and F1-score for each algorithm. The results are as follows:
+   IALPF Performance Metrics:
+
+• Precision: 0.89
+• Recall: 0.95
+• F1-score: 0.92
+
+   BP Performance Metrics:
+
+
+                                                                                             13
+
+<a id="pdf-p18"></a>
+### [PDF p.18] 51804 Multimedia Tools and Applications (2024) 83:51787–51807
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **18** / 21
+
+51804                                         Multimedia Tools and Applications (2024) 83:51787–51807
+
+
+• Precision: 0.76
+• Recall: 0.61
+• F1-score: 0.68
+
+   GRNN Performance Metrics:
+
+• Precision: 0.62
+• Recall: 0.48
+• F1-score: 0.54
+
+    These metrics demonstrate that IALPF not only achieves higher accuracy but also excels
+in terms of precision, recall, and F1-score, indicating its effectiveness in accurately predict-
+ing reading disabilities resulting from consanguineous marriage.
+
+
+5.5 Significance and future directions
+
+The implications of this study extend beyond the immediate scope of consanguineous mar-
+riage and reading disabilities. The successful application of IALPF introduces a powerful
+paradigm shift in education and predictive analysis. The framework’s potential to revolu-
+tionize personalized learning experiences has far-reaching implications for diverse skill
+development domains and contexts. Furthermore, the findings highlight the importance of
+considering genetic and familial factors in addressing reading disabilities, underscoring the
+need for interdisciplinary collaboration between genetics and education.
+   As a pathway for future research, exploring the specific genetic markers and mecha-
+nisms that contribute to the observed reading difficulties in children of first-cousin parents
+could offer deeper insights into the underlying causes. Additionally, further investigations
+into the broader implications of consanguineous marriage on cognitive development and
+learning could uncover novel areas for intervention and support.
+   In conclusion, the study’s outcomes shed light on the intricate relationship between con-
+sanguineous marriage and reading disabilities while showcasing the potential of advanced
+AI techniques in predictive analysis and personalized learning. The findings emphasize
+the role of genetics in cognitive disorders and advocate for the integration of innovative
+approaches in education. Ultimately, this research contributes to a more comprehensive
+understanding of reading disabilities and opens avenues for future exploration at the inter-
+section of genetics, education, and AI-driven prediction.
+
+
+6 Conclusions
+
+In conclusion, our study investigated the impact of consanguineous marriage on reading dis-
+abilities using the Intelligent Adaptive Learning and Prediction Framework (IALPF). The
+results highlighted a significant link between consanguineous marriage and heightened risk
+of reading difficulties, underscoring the influence of genetics. The implementation of IALPF
+demonstrated its superiority in predictive accuracy compared to traditional algorithms, show-
+casing its potential to revolutionize personalized learning experiences. This research bridges
+genetics, education, and AI-driven prediction, offering insights that extend beyond reading
+disabilities. As we move forward, further exploration of genetic markers and interdisciplinary
+
+
+13
+
+<a id="pdf-p19"></a>
+### [PDF p.19] Multimedia Tools and Applications (2024) 83:51787–51807 51805
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **19** / 21
+
+Multimedia Tools and Applications (2024) 83:51787–51807                                                         51805
+
+
+collaboration can deepen our understanding and guide future interventions. The suggested
+approach will eventually be compatible with OCNN [20–27] and Resnet [28]. As stated in
+[29], ERNN can be utilized for stress detection. Correlation algorithms and attention mecha-
+nisms can also be applied, as in [30, 31]. You can use YOLO v8 as in [32]. The suggested
+algorithm can be modified to solve diverse agricultural problems and is essential for the
+effective and sustainable growing of crops all over the world. Future research can also look
+into combining IALPF with cutting-edge methods like those illustrated in references [33–36],
+providing even more advanced capabilities for agricultural decision assistance.
+
+
+Funding Open access funding provided by The Science, Technology & Innovation Funding Authority
+(STDF) in cooperation with The Egyptian Knowledge Bank (EKB). The authors received no specific fund-
+ing for this study.
+
+Data availability Private data.
+
+Declarations
+Ethical approval There is no any ethical conflicts.
+
+Competing interests There is no conflict of interest.
+
+
+Conflict of Interests The authors declare that they have no conflicts of interest to report regarding the present study.
+
+Open Access This article is licensed under a Creative Commons Attribution 4.0 International License,
+which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long
+as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Com-
+mons licence, and indicate if changes were made. The images or other third party material in this article
+are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the
+material. If material is not included in the article’s Creative Commons licence and your intended use is not
+permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly
+from the copyright holder. To view a copy of this licence, visit http://​creat​iveco​mmons.​org/​licen​ses/​by/4.​0/.
+
+
+
+
+References
+ 1. Gedik O, Akyol H (2022) Reading difficulty and development of fluent reading skills: an action
+    research. International Journal of Psychology and Education 10(4):265–281. https://​doi.​org/​10.​29329/​
+    ijpe.​2022.​426.2
+ 2. Uysal PK, Akyol H (2019) Reading disabilities and intervention: an action research. Eğitim ve Bilim
+    44(198):99–113. https://​doi.​org/​10.​15390/​EB.​2019.​8032
+ 3. Alvermann DE, Simpson ML, Fitzgerald J (2006) Research in teaching and learning in reading. In:
+    Alexander P, Winne P (eds) Handbook of educational psychology, 2nd edn. Guilford
+ 4. Hunt F (2008) Dropping out from school: a cross country review of literature. University of Sussex
+ 5. OECD (2012) Equity and quality in education: supporting disadvantaged students and schools. OECD
+    Publishing. https://​doi.​org/​10.​1787/​97892​64130​852-​en
+ 6. Eloranta A-K, Närhi V, Ahonen T, Aro T (2019) Does childhood reading disability or Its continuance
+    Into adulthood underlie problems in adult-age psychosocial well-being? A follow-up study. Sci Stud
+    Read 23(4):1–14. https://​doi.​org/​10.​1080/​10888​438.​2018.​15616​98
+ 7. Uysal PK, Duman A (2020) The effects of fluency-oriented reading instruction on reading skills.
+    Pegem Eğitim ve Öğretim Dergisi 10(4):1111–1146. https://​doi.​org/​10.​14527/​pegeg​og.​2020.​034
+ 8. Al-Ansari A (1994) Etiology of mild mental retardation among Bahrani children: A community-
+    based case control study. J Ment Retard 31:140–143
+ 9. Jaber L, Merlob P, Gabriel R, Shohat M (1997) Effects of consanguineous marriage on reproduc-
+    tive outcome in an Arab community in Israel. J Med Genet 34:1003–1006
+
+
+                                                                                                         13
+
+<a id="pdf-p20"></a>
+### [PDF p.20] 51806 Multimedia Tools and Applications (2024) 83:51787–51807
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **20** / 21
+
+51806                                               Multimedia Tools and Applications (2024) 83:51787–51807
+
+
+10. Hallgren B (1950) Specific dyslexia (‘“congenital word blindness”’): A clinical and genetic study.
+    Acta Psychiatira Scand 65:1–28
+11. Abdulkareem A, Seifeddin B (1998) Consanguineous marriage in an urban area of Saudi Arabia:
+    Rates and adverse health effects on the offspring. J Community Health 23:75–83
+12. Bittles HA, Grant JC, Shami SA (1993) Consanguinity as a determination of reproductive behav-
+    iour and mortality in Pakistan. Int J Epidemiol 22:463–467
+13. Driver AE, Driver ED (1988) Social and demographic correlates of consanguineous marriage in
+    South India. J Comp Fam Stud 19:229–231
+14. Ansari SA, Sinha SP (1978) Survey on the effects of inbreeding in two populations of Bihar. Indian
+    J Med Res 68:295
+15. Olson RK, Forsberg H, Wise B (1994) Genes, environment, and the development of orthographic
+    skills. In: Berninger VW (ed) The varieties of orthographic knowledge theoretical and developmen-
+    tal issues. Kluwer, Dordrecht, pp 27–71
+16. Bittles HA, Masson WM, Greene J, Rao NA (1991) Reproductive behavior and health in consan-
+    guineous marriages. Science 252:789–791
+17. Rao PS, Inbaraj SG (1977) Inbreeding effects on human reproduction in Tamil Nadu of South India.
+    Ann Hum Genet 41:87–98
+18. Khlat M, Halabi S (1986) Modernization and consanguineous marriages in Beirut. J Biosoc Sci 18:489–392
+19. Jaber L, Merlob P, Shohat M (1992) Marked parental consanguinity as a cause for increased major
+    malformations in an Israeli Arab community. Am J Med Genet 44:1–6
+20. Talaat FM (2022) Effective deep Q-networks (EDQN) strategy for resource allocation based on an
+    optimized reinforcement learning algorithm. Multimed Tools Appl 81(17):25267–25288. https://​
+    doi.​org/​10.​1007/​s11042-​022-​13000-0
+21. Talaat FM (2022) Effective prediction and resource allocation method (EPRAM) in fog computing
+    environment for smart healthcare system. Multimed Tools Appl
+22. Fatma TM, Samah A, Nasraida A (2022) A New Reliable System For Managing VirtualCloud Net-
+    work. Comput Mater Continua 73(3):5863–5885. https://​doi.​org/​10.​32604/​cmc.​2022.​026547
+23. El-Rashidy N, ElSayed NE, El-Ghamry A, Talaat FM (2022) Prediction of gestational diabetes
+    based on explainable deep learning and fog computing. Soft Comput 26(21):11435–11450
+24 El-Rashidy N, Ebrahim N, el Ghamry A, Talaat FM (2022) Utilizing fog computing and explain-
+    able deep learning techniques for gestational diabetes prediction. Neural Comput Applic. https://​
+    doi.​org/​10.​1007/​s00521-​022-​08007-​59
+25. Hanaa S, Fatma BT (2022) Detection and classification using deep learning and sine-cosine fitness-
+    grey wolf optimization. Bioengineering 10(1):18. https://​doi.​org/​10.​3390/​bioen​ginee​r ing1​00100​18
+26. Talaat FM (2023) Real-time facial emotion recognition system among children with autism based
+    on deep learning and IoT. Neural Comput Applic 35(3):10223–10232. https://​doi.​org/​10.​1007/​
+    s00521-​023-​08372-9
+27. Talaat FM (2023) Crop yield prediction algorithm (CYPA) in precision agriculture based on IoT
+    techniques and climate changes. Neural Comput Applic 35(2):6901–6910. https://​doi.​org/​10.​1007/​
+    s00521-​023-​08619-5
+28. Hassan E, Talaa NEFM (2022) Review: mask R—CNN models. Nile J Commun Comput Sci 3:1–10
+29. Siam AI, Gamel SA, Talaat FM (2023) Automatic stress detection in car drivers based on non-
+    invasive physiological signals using machine learning techniques. Neural Comput Applic. https://​
+    doi.​org/​10.​1007/​s00521-​023-​08428-w
+30 Talaat FM, Gamel SA (2023) A2M-LEUK: attention-augmented algorithm for blood cancer detec-
+    tion in children. Neural Comput Applic. https://​doi.​org/​10.​1007/​s00521-​023-​08678-8
+31. Gamel SA, Hassan E, El-Rashidy N et al (2023) Exploring the effects of pandemics on transporta-
+    tion through correlations and deep learning techniques. Multimed Tools Appl. https://​doi.​org/​10.​
+    1007/​s11042-​023-​15803-1
+32. Talaat FM, ZainEldin H (2023) An improved fire detection approach based on YOLO-v8 for smart
+    cities. Neural Comput Applic. https://​doi.​org/​10.​1007/​s00521-​023-​08809-1
+33. Alnaggar M, Siam AI, Handosa M, Medhat T, Rashad MZ (2023) Video-based real-time monitor-
+    ing for heart rate and respiration rate. Expert Syst Appl 1(225):120135
+34 Alnaggar M, Handosa M, Medhat T, Rashad ZM (2023) Thyroid Disease Multi-class Classification
+    based on Optimized Gradient Boosting Model. Egypt J Artif Intell 2(1):1–4
+35. Alnaggar M, Handosa M, Medhat T, Rashad MZ (2023) An IoT-based framework for detecting heart
+    conditions using machine learning. Int J Adv Comput Sci Appl 14(4)
+36. Alhussan AA, Talaat FM, El-kenawy ES, Abdelhamid AA, Ibrahim A, Khafaga DS, Alnaggar M (2023)
+    Facial expression recognition model depending on optimized support vector machine. Computers Materi-
+    als and Continua 76(1)
+
+
+
+13
+
+<a id="pdf-p21"></a>
+### [PDF p.21] Multimedia Tools and Applications (2024) 83:51787–51807 51807
+- Locator: `R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf` · página **21** / 21
+
+Multimedia Tools and Applications (2024) 83:51787–51807                                             51807
+
+
+Publisher’s Note Springer Nature remains neutral with regard to jurisdictional claims in published maps and
+institutional affiliations.
+
+
+
+
+Authors and Affiliations
+
+Fatma M. Talaat1,2,3
+
+* Fatma M. Talaat
+  fatma.nada@ai.kfs.edu.eg
+1
+    Faculty of Artificial Intelligence, Kafrelsheikh University, Kafrelsheikh 33516, Egypt
+2
+    Faculty of Computer Science & Engineering, New Mansoura University, Gamasa 35712, Egypt
+3
+    Nile Higher Institute for Engineering and Technology, Mansoura, Egypt
+
+
+
+
+                                                                                              13

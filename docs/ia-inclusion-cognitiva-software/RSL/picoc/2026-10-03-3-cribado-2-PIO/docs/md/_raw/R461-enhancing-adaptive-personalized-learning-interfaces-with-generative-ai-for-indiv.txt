@@ -1,0 +1,931 @@
+===== PDF PAGE 1 / 13 =====
+       Enhancing Adaptive Personalized Learning Interfaces with
+              Generative AI for Individuals with ADHD
+            Rashmi Gunawardana                                             Michelle Perera                                  Rashini Lakshika
+       University of Colombo School of                           University of Colombo School of                    University of Colombo School of
+                 Computing                                                 Computing                                           Computing
+             Colombo, Sri Lanka                                        Colombo, Sri Lanka                                 Colombo, Sri Lanka
+      nirashagunawardana9@gmail.com                               michellenikeetha@gmail.com                        rashinilakshika2020@gmail.com
+
+                                        Chaminda Ranasinghe                                    Kasun Karunanayaka
+                                    University of Colombo School of                        University of Colombo School of
+                                              Computing                                              Computing
+                                          Colombo, Sri Lanka                                     Colombo, Sri Lanka
+                                          crc@ucsc.cmb.ac.lk                                     ktk@ucsc.cmb.ac.lk
+
+
+
+
+                       Figure 1: Prototype testing of Learning Management Systems through User-Centered Design
+Abstract                                                                                  UIs are essential for educational effectiveness. The study promotes
+Students with Attention deficit hyperactivity disorder(ADHD) face                         hybrid methodologies that combine AI efficiency with educator-led
+unique challenges in educational environments due to their im-                            instructional design, providing practical insights for user interface
+pulsivity, hyperactivity, and distractibility. Conventional learning                      (UI) developers and institutions focused on achieving a balanced
+systems often do not cater to the specific needs of ADHD learners,                        user experience (UX) and learning outcomes.
+indicating a demand for tailored ADHD-friendly educational plat-
+forms that provide these students with equitable opportunities to                         CCS Concepts
+excel academically. To address this research gap, we explored how                         • Human-centered computing → HCI design and evaluation
+Generative AI could enhance personalized learning interfaces for                          methods; Accessibility design and evaluation methods; • Ap-
+ADHD students aged 18–30 who have experience with online learn-                           plied computing → Computer-assisted instruction.
+ing. This initiative aims to create an innovative learning platform
+for ADHD individuals to enhance their motivation and academic                             Keywords
+success. We employ statistical analysis methods to evaluate three                         User Interfaces, Accessability, User experience, Artificial Intelli-
+different learning management systems (LMS): a general-purpose                            gence, Attention deficit hyperactivity disorder(ADHD)
+LMS, a manually optimized LMS for ADHD users, and an AI-driven
+LMS with improved prompting features. We evaluated the feedback                           ACM Reference Format:
+from 22 ADHD students to assess measures of the usability and                             Rashmi Gunawardana, Michelle Perera, Rashini Lakshika, Chaminda Ranas-
+                                                                                          inghe, and Kasun Karunanayaka. 2025. Enhancing Adaptive Personalized
+effectiveness of each system through the System Usability Scale
+                                                                                          Learning Interfaces with Generative AI for Individuals with ADHD. In India
+(SUS), the User Experience Questionnaire (UEQ), task analysis, and                        HCI 2025 - The 16th International Conference of Human-Computer Interaction
+evaluations by UI/UX professionals and HCI experts to gauge learn-                        (HCI) Design & Research (IndiaHCI ’25), November 07–09, 2025, Delhi, India.
+ing outcomes and engagement of users. The research discovered                             ACM, New York, NY, USA, 13 pages. https://doi.org/10.1145/3768633.3770138
+that users prefer the AI-generated LMS for usability and the manual
+system for effectiveness. The findings indicate that although AI-
+                                                                                          1    Introduction
+generated user interfaces (UIs) enhance usability, human-designed
+                                                                                          According to Furman [15], ADHD is a common neurodevelopmental
+                                                                                          disorder, which affects children’s ability to control their sponta-
+                                                                                          neous reactions, including movement, speech, and attentiveness.
+This work is licensed under a Creative Commons Attribution 4.0 International License.     ADHD implies a distinct neuro-divergent method of the human
+IndiaHCI ’25, Delhi, India                                                                brain’s function which differs from neurotypical people. It usually
+© 2025 Copyright held by the owner/author(s).
+ACM ISBN 979-8-4007-1848-9/25/11                                                          appears in childhood and persists into adulthood and can be iden-
+https://doi.org/10.1145/3768633.3770138                                                   tified with the persistent and pervasive symptoms of inattention,
+
+
+
+
+                                                                                    131
+
+===== PDF PAGE 2 / 13 =====
+IndiaHCI ’25, November 07–09, 2025, Delhi, India                                                                                 Gunawardana, et al.
+
+
+hyperactivity, and impulsivity [45]. Erskine et al. [13] state that                          Table 1: ASRS v1.1 scale scoring
+long-term ADHD is associated with a high risk of mental disorders,
+interpersonal issues, and academic setbacks.                                                ADHD Score       ADHD Range
+   A significant number of children with ADHD tend to have partic-                          0–9              Low negative
+ular learning disabilities, which may lead to difficulties in reading,                      10–13            High negative
+writing, and mathematics [3]. According to the growing preva-                               14–17            Low positive range
+lence of ADHD diagnoses and the unique challenges encountered                               18–24            High positive range
+by people with them, there is an urgent need to improve specific
+educational tools that enable personalized learning for them. Differ-
+                                                                                  • Inattentive type: Student is unable to focus or maintain con-
+ent studies have been conducted to improve personalized learning
+                                                                                    centration on an assignment or activity. It appears more
+for neurodivergent students, there is a lack of studies in the area
+                                                                                    common in girls to have this disorder.
+of enhancing personalized learning interfaces specific for ADHD
+                                                                                  • Hyperactive-impulsive type: This type of student exhibits ex-
+individuals. Although similar studies like Gkora [16] have been
+                                                                                    cessive behavior and occasionally acts without thinking, but
+conducted to support the primary education of ADHD students,
+                                                                                    they do not display severe issues with attention. It appears
+there is still a significant lack of research in the area of addressing
+                                                                                    more prevalent among boys to have this disorder.
+the specific learning requirements of adult ADHD individuals.
+                                                                                  • Combined type: The learner exhibits impulsivity, hyperac-
+   Our research employs Generative AI (GenAI) to create person-
+                                                                                    tivity, and inattention.
+alised user interfaces for individuals with ADHD and identify the
+needs and preferences of ADHD learners and develop UI designs                 1.1.2 ADHD Severity scales and avoiding associated risks. Based on
+that improve engagement, focus, and learning effectiveness. This              symptom severity and comorbidity, ADHD can range from mild to
+research seeks to address the needs of ADHD students by designing             severe. Assessing severity helps reduce high-risk population risks
+UI based on user feedback, usability heuristics, and Generative AI            and customise ADHD education.When conducting research based
+with the aim of create an accessible and engaging learning envi-              on feedback and user evaluations from ADHD students to enhance
+ronment for ADHD students, enhancing academic outcomes and                    their learning, high-risk individuals who may suffer from complex
+learning experiences.                                                         comorbidities may not be able to participate in user evaluations
+                                                                              due to associated risks.
+                                                                                 Therefore we can use the Adult ADHD Self-Report Scale (ASRS
+                                                                              v1.1) [34], which is a commonly used tool to assess ADHD severity
+1.1     Background                                                            of adults, developed in collaboration with the World Health Orga-
+1.1.1 What is ADHD?. According to Diagnostic and Statistical                  nization(WHO). It is an 18-item self-report questionnaire designed
+Manual of Mental Disorders V (DSM-V), mental disorders that man-              to assess Attention Deficit Hyperactivity Disorder (ADHD) symp-
+ifest during childhood or adolescence can be divided into three               toms in adults (18+). Based on the WHO Composite International
+main categories which consist of Neurodevelopmental disorders                 Diagnostic Interview (2001), this scale’s questions are tailored to
+(NDDs), Autism spectrum disorders (ASDs) and Mental health dis-               address adult symptom manifestation and are in line with both the
+orders (MHDs). ADHD is a common Neurodevelopmental disorder                   DSM-IV and DSM-5-TR criteria [21]. Using the symptom checklist
+that significantly affects people’s ability to perform their daily tasks.     of ASRS v1.1 we can evaluate the level of impairment of the ADHD
+NDDs have been noted as a major reason for childhood disabili-                individuals associated with the symptoms and consider the symp-
+ties, impacting not only the affected child but also their loved ones         tom severity according to symptom frequency. By using 0-24 scale
+and society as a whole. As stated in Barua et al. [5], it is estimated        scoring method participants can be selected as in table 1.
+that between 30% and 50% of kids with ADHD have co-occurring                     Based on the studies like Kessler et al. [21], this Low Negative
+mental health disorders, like depression. It indicates that NDDs              (0-9) range ADHD individuals exhibit minimal symptoms with neg-
+and MHDs often overlap with one another. Such complex combi-                  ligible impact on daily functioning. High Negative (10-13) range
+nations of comorbidities between MHDs and NDDs may lead to                    individuals may suffer with noticeable symptoms, but they are
+learning disabilities and negatively impact a person’s quality of             still manageable without severe interference in daily activities. In
+life [5]. Because of that, if an individual is suffering from ADHD            the low positive (14-1) range, symptoms are more prominent, po-
+along with MHDs, it affects them worse. Therefore, an advanced ap-            tentially affecting focus, impulsivity, and hyperactivity, requiring
+proach is required to enhance personalized learning for individuals           targeted support. Individuals belonging to the high positive (18-
+with ADHD, considering their cognitive and attentional differences.           24) range are more likely to suffer from severe symptoms often
+                                                                              associated with co-occurring other mental health conditions like
+   ADHD is a complex disorder influenced by both genetics and                 depression, anxiety, insomnia, panic disorder and face severe diffi-
+environmental factors. The disorder’s exact cause is unknown, but             culties with managing even daily activities.
+studies suggest it is mainly influenced by genetics and the physical             Therefore, high positive range individuals above 18-24 are not
+environment. Non-genetic factors such as brain injuries, early birth,         encouraged to participate in the evaluations of our study. We se-
+maternal smoking, and exposure to environmental toxins like lead              lected the normal range (low negative, high negative, low positive
+are also linked to ADHD. According to the study, Ibrahim et al. [20]          range) ADHD individuals (0-17) to participate in the research and
+which focuses on the ADHD disorders of students between 6-18                  evaluated the user interfaces to determine what features will have
+years old, there are three forms of ADHD that are prevalent in kids           the most impact for their educational activities.
+and students.
+
+
+
+                                                                        132
+
+===== PDF PAGE 3 / 13 =====
+Enhancing Adaptive Personalized Learning Interfaces with Generative AI for Individuals with ADHD                      IndiaHCI ’25, November 07–09, 2025, Delhi, India
+
+
+1.1.3 Educational difficulties caused by ADHD. Students with                           1.3         Research Questions
+ADHD often have short attention spans and are easily dis-                              The purpose of this research paper is to conduct a comprehensive
+tracted [20]. ADHD symptoms include inattention, anxiety, and                          exploration of the areas addressed by following research questions:
+impulse control significantly impact academic performance and
+the school environment, making ADHD youngsters struggle in                             1.3.1       Primary Research Question.
+school[20]. Additionally, they struggle with task organisation and
+                                                                                               • How can AI-driven customization improve the effec-
+time management[20].
+                                                                                                 tiveness and usability of LMS for individuals with
+   Ferguson et al. [14] Research indicates that university students
+                                                                                                 ADHD compared to conventional and manually op-
+with ADHD typically remain uninformed, humiliated, and hes-
+                                                                                                 timized LMS platforms?
+itant to seek help, resulting in poorer GPAs compared to those
+                                                                                                 Our research focuses on creating three prototypes for ADHD
+without ADHD. ADHD undergraduates must deal with disorder
+                                                                                                 students: a conventional LMS for the general population,
+symptoms and a new social milieu with less parental control com-
+                                                                                                 a manually optimised LMS for ADHD users, and an AI-
+pared to their childhood. Refusing help causes stress and isolation.
+                                                                                                 generated LMS customised to ADHD needs. By conducting a
+Impulse control disorders make focus and job completion chal-
+                                                                                                 comparative analysis, we explore how AI-driven customiza-
+lenging. ADHD kids experience greater problems including new
+                                                                                                 tion improves the effectiveness and usability of LMS com-
+separateness, stress, complex study schedules, and less supports,
+                                                                                                 paring to the other two experiments of conventional and
+which lowers self-esteem due to high symptoms and executive func-
+                                                                                                 manually optimized LMS. The intention is to explore the
+tioning. ADHD students have worse academic performance and
+                                                                                                 best learning experience for the ADHD individuals to en-
+greater dropout rates due to these educational problems.
+                                                                                                 hance their educational outcomes, utilizing the potential of
+                                                                                                 generative AI.
+1.1.4 Importance of digital learning tools. Digital learning tools are
+vital for supporting students with ADHD by offering structured,                        1.3.2       Secondary Research Questions.
+engaging content and aids for organization and time management,
+which improve focus and academic performance. AI technologies                                  • How can user data be effectively used to evaluate the usabil-
+like large language models and generative AI further enhance these                               ity of conventional LMS to identify limitations and areas for
+tools by enabling personalized, adaptive learning experiences. Stud-                             improvement?
+ies show that AI tools such as ChatGPT can effectively assist ADHD                             • What improvements are necessary in personalized learning
+therapy and generate customized educational materials tailored to                                systems to support ADHD students?
+individual needs [7, 38]. Thus, AI-powered digital tools significantly                         • How can prompting strategies in generative AI be optimized
+improve learning outcomes for ADHD students.                                                     to create user interfaces that enhance engagement and us-
+                                                                                                 ability for ADHD learners?
+                                                                                               • How can the impact of GenAI-driven personalized learn-
+1.2     Problem Statement                                                                        ing interfaces on academic performance and usability for
+Students with Attention Deficit Hyperactivity Disorder (ADHD) en-                                individuals with ADHD be assessed?
+counter unique challenges in educational settings, including difficul-
+ties with impulsivity, hyperactivity, and inattention. Even though                     2 Literature Review
+there are many conventional online learning platforms available,
+the majority are unable to meet the unique behavioral and cogni-
+                                                                                       2.1 Personalized Learning for Neurotypical
+tive requirements of ADHD students. A clear research gap can be                            Students
+identified which is still unexplored that is addressing the special                    Personalised learning allows students to reach their educational
+learning abilities of ADHD individuals through exploring personal-                     requirements and capacities by providing adaptable, personalised
+ized learning platforms for them. Even though some studies, like                       content based on their potential and skills. In an e-learning plat-
+Gkora [16], have been done to help ADHD students in primary                            form it is crucial to have personalized interfaces for users ensuring
+school, there is still a dearth of research on how to meet the unique                  individualization and differentiation because the student group we
+learning needs of adults with ADHD.                                                    are focusing on is heterogeneous[44]. When applying personaliza-
+    With technological advancements, although most of the current                      tion it is important to identify the learner first based on learner’s
+research emphasizes gamification, AR, VR, and sensory tools, they                      intelligence according to Gardner’s ”Multiple intelligences” theory
+do not directly address ADHD learners’ needs within personalized                       and the proficiency level in order to Dreyfus’s Proficiency stages
+learning environments. Generative AI shows immense potential, yet                      to address each learner’s unique learning desires and requirements
+its application for creating ADHD-friendly LMS interfaces remains                      [44]. Shih et al. [44] explores how an e-learning system has a person-
+largely unexplored. When applying Generative AI in personalized                        alized interface, enabling different student views/learning objects
+learning, most of the studies like Pesovski et al. [38] which explores                 and activities by applying Gardner’s ”Multiple intelligences” theory,
+a tool for generating personalized learning materials using LLMs,                      Dreyfus’s Proficiency stages focusing on a heterogeneous student
+focus on customization of learning content but not on generating                       group.
+personalized learning interfaces. These research gaps emphasize                           Adaptive user interfaces can also improve student engagement
+the significant need for optimized learning interfaces suitable for                    and educational outcomes, boosting personalisation. Research has
+adult ADHD students to excel in their academics.                                       identified many methods for adapting user interfaces, such as AI,
+
+
+
+
+                                                                                133
+
+===== PDF PAGE 4 / 13 =====
+IndiaHCI ’25, November 07–09, 2025, Delhi, India                                                                                Gunawardana, et al.
+
+
+UM, and HCI for multimodal interfaces [4]. Intersection of person-          comprehension may differ from the general users, by conducting a
+alization and adaptivity improves the usability and effectiveness of        crowd-sourced survey involving 70 participants with and without
+user centered learning. Recently Learning management systems                ADHD. Through that they have found that participants’ accuracy
+(LMS) play a crucial role in assisting personalized education.              and response times are impacted by specific chart elements and
+Among the many technological advancements, Adaptive User Inter-             ADHD. This study reveals that different chart embellishment types
+faces (AUI) has become a key part in keeping students interested in         impact accuracy and response times for individuals with ADHD
+their studies. Bagustari and Santoso [4] is a study which analyzes          differently depending on the types of questions, suggesting visual
+the development of Adaptive User Interfaces( AUI) in education 4.0          design recommendations make accessible data visualizations for
+for improving Learning management systems (LMS) to facilitate               people with ADHD.
+the dynamic changes in education following the approaches of
+AI, UM, HCI and using multimodal interfaces applied to create
+AUI.Bagustari and Santoso [4] discusses the application of tech-            2.3    Existing learning applications for ADHD
+nological and Heutagogical (individual) aspects in their evaluations.              students
+                                                                            2.3.1 AHA: ADHD Augmented (Learning Environment). The AHA
+    Many different studies have been conducted in different areas           project, supported by the European Commission, intends to improve
+focusing on leveraging personalized education using various tech-           education for ADHD children by utilizing Augmented Reality and
+nological advancements. Alves et al. [1] discusses how "personality"        web technologies [19]. The project’s goal is to improve reading and
+is important as a differentiating factor in user interface designing.       spelling skills while also increasing academic engagement by using
+According to Alves et al. [1], personality is defined as the collection     augmented reality into online literacy programs. It aims to help
+of habitual behaviors, cognitive and emotional patterns that result         ADHD students stay focused, make fewer mistakes, and complete
+from biological and environmental influences and it is important for        homework more efficiently. It builds on established methodologies
+fulfilling diverse user needs in customizing user interfaces. It also       and works with the Web Health Application for ADHD Monitoring
+discusses the application of user personality, focusing on improving        (WHAAM) project to ensure user privacy and data security[28].
+Graphical User Interface(GUI) design exploring the application of           AHA aims to give ADHD children a creative learning environment.
+hybrid mental models and introvert, extravert, neutral GUI.
+    Effective user interface design relies on best practices such as
+                                                                            2.3.2 aTenDerAH: a videogame application to support e-Learning
+Nielsen’s usability heuristics, user-centered design principles, and
+                                                                            students with ADHD. aTenDerAH is a videogame that supports
+color theory [19, 30]. While AI-driven personalized learning plat-
+                                                                            e-learning for young adults, particularly those with ADHD[26].
+forms have rapidly evolved, adapting content based on user data,
+                                                                            aTenDerAH was created with Unity, Cinema 4D for 3D modeling
+most are tailored for neurotypical learners. There remains a signifi-
+                                                                            and animation, and Photoshop for texture creation. The video game
+cant gap in platforms designed to meet the specific cognitive and
+                                                                            was integrated into the Atutor e-learning platform to conduct a case
+attentional needs of individuals with neurodevelopmental disorders
+                                                                            study on the perception of aTenDerAH by students with ADHD,
+like ADHD.
+                                                                            non-ADHD students, and teachers. Participants have expressed
+                                                                            satisfaction with the tool’s goals and the videogame’s good impact
+2.2     Personalized Learning for ADHD students                             on their learning process
+ADHD symptoms including impulsivity, hyperactivity, and inat-
+tention must be considered while designing personalised learning            2.3.3 The Facilitating On-going Concentration in Undergraduate
+programs. These provide unique obstacles in traditional educational         Students (FOCUS) Device. As described by Thomas and Cezeaux
+settings. Personalised learning helps ADHD children with attention          [48], the FOCUS application is a prototype aimed at improving
+span and impulse control. Different research have examined how              academic performance in students with ADHD by providing non-
+controlled, distraction-free, engaging, and manageable learning             stigmatizing reminders to help maintain focus during class and
+environments improve ADHD students’ learning experiences.                   study sessions. It utilizes the Texas Instruments eZ430 Chronos
+    Gkora [16] highlights the importance of integrating autonomy-           digital wristwatch to control desk peripherals like vibration motors,
+supportive practices and technological interventions in primary             LEDs, and speakers, delivering discreet alerts through vibrations,
+education for students with ADHD, emphasizing the need for in-              lights, and sounds. Designed based on ADHD student feedback, the
+terdisciplinary approaches. A personalized AI-based system which            device is compact, lightweight, and unobtrusive, with randomized
+analyzes contextual data, identifies user behavior patterns, and ef-        reminders to reduce habituation.
+fectively visualizes the information to provide insights to ADHD
+students, has been explored through the study Ravishankar [43]. As          2.3.4 X5Learn: A Personalised Learning Companion at the Inter-
+stated in Ravishankar [43], the project has used an iterative Double        section of AI and HCI. X5Learn is a human-centered educational
+Diamond framework for incorporating co-design techniques to ex-             platform that uses AI and HCI to help users browse and access
+plore the real life problems of ADHD and ensure that the concept            online educational resources [37]. Available at https://x5learn.org,
+is tailored to the user’s needs.                                            it supports teachers in reusing and sharing course materials and
+    Numerous studies have been conducted on how general users               offers students tools for content selection, note-taking, and reviews.
+comprehend data visualizations. Tran et al. [49] emphasizes how             Its personalized recommendation system adapts learning paths to
+individuals with ADHD interpret data visualizations and how their           user preferences.
+
+
+
+
+                                                                      134
+
+===== PDF PAGE 5 / 13 =====
+Enhancing Adaptive Personalized Learning Interfaces with Generative AI for Individuals with ADHD                    IndiaHCI ’25, November 07–09, 2025, Delhi, India
+
+
+2.3.5 Therapy Tool for Adolescents with ADHD. The Nugawela                             2.5         Use of GenAI in Interface Generation
+et al. [35] study developed an Android app to support ADHD treat-                      Recent advancements in Generative AI have significantly enhanced
+ment by tracking patient progress and symptoms. The app allows                         UI generation capabilities. Goloujeh et al. [17] investigates user
+patients, parents, and doctors to monitor improvements, ensures                        experiences with text-to-image tools, highlighting prompt creation
+accuracy by using individual testing modules, and addresses all                        and refinement through interviews with 19 users. Similarly, Rajcic
+ADHD symptoms. By tracking user performance and development,                           et al. [42] explores how seven visual artists use prompt-based inter-
+the app aims to improve treatment outcomes and help prevent                            faces for ideation and production, emphasizing ethical design con-
+ADHD symptoms from persisting into adulthood.                                          siderations for future GenAI tools. Experimental work by Liu and
+                                                                                       Chilton [23] identifies key hyperparameters and failure modes in
+2.3.6 ECHO ADHD in India: a feasible and acceptable training model                     prompt engineering across five studies, showing notable variation
+for child-care physicians to identify and manage attention deficit hy-                 in output quality. Meanwhile, Weisz et al. [50] outlines six principles
+peractivity disorder. The ECHO ADHD model, piloted in India, is a                      for GenAI application design, grounded in Nielsen’s “intent-based
+tele-mentoring program designed to improve child-care physicians’                      outcome specification” framework [31]. These insights and prin-
+ability to identify and manage ADHD. Through 14 interactive on-                        ciples inform our approach to generating adaptive user interfaces
+line sessions over six months, the program trained pediatricians and                   tailored for enhancing learning experiences in ADHD students.
+specialists using lectures and case discussions. The study found the                   3     Methodology
+ECHO ADHD model to be both feasible and acceptable, with signif-                       The research was conducted in 6 main phases, aligned with the
+icant improvements in participants’ knowledge of ADHD diagnosis                        Design Science Research Methodology (DSRM) [36], which is suit-
+and self-efficacy. However, gains in knowledge about ADHD co-                          able for solving real-world challenges through development and
+morbidities and management were less pronounced. Overall, ECHO                         evaluation of innovative artefacts [9]. The study aimed to create
+ADHD effectively builds physician capacity for ADHD care in low-                       and evaluate personalised learning interfaces for ADHD students
+and middle-income settings like India.                                                 using generative AI. DSRM was chosen because it can provide both
+                                                                                       scientific rigour and practical relevance in Information Systems (IS)
+                                                                                       research [6]. The methodology made it easier to create and compare
+2.4     Use of GenAI in Personalized Learning                                          three different learning management systems: a traditional LMS, a
+AI significantly enhances personalization in education, with Ma-                       manually optimised ADHD-specific LMS, and an AI-driven LMS
+chine Learning (ML), Generative AI (GenAI), and Large Language                         with enhanced prompting.
+Models (LLMs) increasingly powering personalized learning plat-
+forms. GenAI, in particular, enables dynamically adaptive educa-                       3.1         Problem Identification and Motivation
+tional experiences. Key model architectures include Generative                         The study identified a gap in personalized learning platforms for
+Adversarial Networks (GANs), Variational Autoencoders (VAEs),                          adults with ADHD, as most existing research focuses on early ed-
+and Diffusion models. Tools such as GPT, Jasper, AI-Writer (text                       ucation. Despite the potential of generative AI, its application in
+generation), and DALL-E 2, Midjourney, Stable Diffusion (image                         ADHD-friendly LMS design remains unexplored. Surveys and in-
+generation) are transforming educational content creation.                             terviews with medically and self-diagnosed adults (ages 18–30)
+   Several studies demonstrate GenAI’s role in personalized edu-                       confirmed the need for an AI-powered, personalized solution to
+cation. Yu et al. [52] highlights how AI improves MOOCs by en-                         support their academic success.
+abling personalized learning paths and non-linear content access.
+Perez-Ortiz et al. [37] explores a human-centered AI platform that                     3.2         Defining Solution Objectives
+enhances access to free educational resources. A systematic review
+                                                                                       Recognizing the limitations of traditional LMS platforms for ADHD
+by Castro et al. [10] outlines AI’s role in reinforcing personalized
+                                                                                       students, the study aimed to develop a personalized, adaptive learn-
+learning through adaptive pedagogical strategies.
+                                                                                       ing environment using generative AI. It focused on identifying the
+   Pesovski et al. [39] presents a tool integrated into a college LMS
+                                                                                       most effective GenAI tools based on adaptability, accuracy, usability,
+that uses LLMs (via OpenAI’s API) to generate class-specific mate-
+                                                                                       and integration, to enhance attention, engagement, and academic
+rials based on instructor-defined outcomes. Logacheva et al. [24]
+                                                                                       performance for adults with ADHD.
+reports positive results from a user study in a programming course
+using GPT-4 to generate context-aware exercises, noting increased                      3.2.1 Explored AI models and tools for UI generation. The research
+student engagement. Berrezueta-Guzman et al. [8] investigates com-                     team examined seven common AI models to generate user inter-
+bining LLMs and robotics to support ADHD therapies in intelligent                      faces, including DALL·E, Flux AI, Vercel VO, Claude AI, and Chat-
+environments, discussing theoretical, practical, and ethical aspects.                  GPT 4.0, using three custom-designed prompts (Figure 10). A survey
+   Barua et al. [5] evaluates AI tools for students with neurodevel-                   of 25 UI/UX specialists and non-experts evaluated each model us-
+opmental disorders (NDD), showing benefits in social interaction                       ing the criteria accuracy, detail, artistic, relevance and creativity.
+and personalized education. Techniques include both traditional                        Vercel VO had the highest score, but ChatGPT and Claude AI also
+ML and advanced models like CNNs and LSTMs. Sukiman and                                performed well. As a result, the study used a mixed strategy, includ-
+Aziz [46] reviews AI-driven personalized interventions for students                    ing Vercel VO for creativity, Claude for long-term reasoning, and
+with learning difficulties, emphasizing implementation needs and                       ChatGPT for structured responses, to ensure balanced performance
+essential features for success.                                                        while reducing the risk of model-specific errors and blind spots.
+
+
+
+
+                                                                                135
+
+===== PDF PAGE 6 / 13 =====
+IndiaHCI ’25, November 07–09, 2025, Delhi, India                                                                               Gunawardana, et al.
+
+
+3.3     Design and Development                                               and Tailwind CSS and contained basic features such as login, course
+This phase of the research included designing and developing three           listings, a calendar, and assignment tracking, but there were no
+LMS prototypes: a conventional LMS, a manually optimised ADHD-               ADHD-specific design elements or accessibility modifications. Its
+friendly LMS, and an AI-driven LMS built with enhanced prompting.            purpose was to provide a standard for assessing adequately tra-
+The design process used Nielsen’s Usability Heuristics, HCI the-             ditional LMS platforms meet the needs of neurodivergent users.
+ories, UI/UX best practices, and ADHD-specific design concepts               While completely functional, the Base LMS did not address major
+in an iterative manner, integrating expert and user feedback. The            ADHD factors such as cognitive load reduction or user feedback.
+subject "Philosophy of Science" was chosen as the primary content            3.3.5 Prototype Development - Prototype 02: Manually Improved
+to reduce bias from existing knowledge, ensuring that user inter-            LMS. The second prototype, the Manually Improved LMS (Fig-
+action, engagement, and quiz scores accurately represented each              ure 2), was developed mainly to assist students with ADHD by
+prototype’s design and educational effects.                                  including ADHD-friendly design concepts based on research, sur-
+3.3.1 Design guidelines and features of ADHD friendly design.                veys, and expert remarks. It was built with React and Tailwind CSS
+The research utilised ADHD-friendly design principles based on               and included improvements such as simpler navigation, decreased
+the comprehensive literature review, with a particular focus on              visual clutter, micro-interactions, focus mode tools, and enhanced
+improving usability for neurodiverse users. Key guidelines were              typography to minimise cognitive load and increase engagement.
+derived from McKnight’s 15 design principles[27], which are con-             Based on Nielsen’s Usability Heuristics, HCI principles, WCAG 2.1
+sistent with general usability standards, and further strength-              standards[51] and McKnight’s standards[27], the prototype was
+ened by Neuro-Inclusive UX Design Principles[47] and Phalke and              enhanced through iterative input from ADHD users. It acted as a
+Shrivastava’s[40] visual design classification for Health Informatics        bridge between typical LMS platforms and personalised learning
+apps. These design elements were used throughout the development             tools, providing a more inclusive and user-friendly experience for
+of the learning interfaces to ensure that they effectively addressed         neurodivergent students.
+the unique cognitive and behavioural needs of ADHD users.                    3.3.6 Prototype Development – Prototype 03: AI-Generated LMS.
+3.3.2 Usability Heuristics and HCI principles. The prototypes were           The third prototype used the LLMs, - ChatGPT-4, Claude AI, and
+designed and implemented using existing HCI standards and UI/UX              Vercel VO to automatically develop ADHD-friendly LMS interfaces
+best practices to ensure usability and accessibility for students with       based on usability heuristics, HCI principles, and WCAG 2.1 re-
+ADHD. Jakob Nielsen’s 10 usability heuristics[29, 32] were among             quirements (Figure 3). A customised ChatGPT-4 plugin was created
+the key principles, along with guidelines for error messages[33],            to generate low-distraction, neurodiversity-aware UI components
+accessibility[18], visual design, and user-friendly colour schemes.          with constraint-based prompts. Key features were high-contrast
+These principles were integrated and refined based on literature             navigation, customisable themes, progressive disclosures, and ac-
+review findings and feedback from UI/UX specialists, ensuring that           cessibility controls. Despite initial challenges such as a lack of
+the interfaces were both effective and inclusive of neurodiverse             understanding of system architecture, excessive colour use, and
+learners.                                                                    uneven API mapping, feedback loops considerably improved results.
+                                                                             The experiment showed LLMs’ potential and limitations in develop-
+3.3.3 Structured Prompting Approach. Guided by an NIH Stage                  ing inclusive, AI-powered educational systems for neurodivergent
+Model + co-design framework for ADHD-oriented digital interven-              users.
+tions [41], we specify a reproducible prompt-engineering pipeline
+for AI-generated LMS components used in our study (4).
+   Prompting pipeline (inputs → outputs).
+   (1) Stage 0 – Exploratory zero-shot (behavioural goals, user
+       needs) → conceptual page/flow skeletons.
+   (2) Stage 1A – Constraint prompts (functional and visual require-
+       ments) → feasible, testable UI variants.
+   (3) Stage 1B – Accessibility & persona prompts (“ADHD-friendly”,
+       contrast/focus, progressive disclosure; persona = ADHD stu-
+       dents) → neurodiversity-aware artefacts.
+   (4) Stage 3 – Deployment templates (frozen prompt schema +
+       logging of model/temperature/top-𝑝) → fidelity across class-
+       room runs and analyses.
+Template (standardised). Design an [ADHD-friendly] [Component]
+with [Accessibility Feature(s)] and [Interaction Flow]; optimise for                       Figure 2: Manually Improved LMS
+[Behavioural Objective]; return [Output Format].
+3.3.4 Prototype Development – Prototype 01: Base LMS. The
+first prototype developed was a Base LMS (Figure 12), which was              3.4   Demonstration
+used as a control model for an ordinary learning management sys-             The research followed an iterative demonstration phase involving
+tem used by the general student population. It was built with React          22 ADHD participants to evaluate three LMS prototypes—Base,
+
+
+
+
+                                                                       136
+
+===== PDF PAGE 7 / 13 =====
+Enhancing Adaptive Personalized Learning Interfaces with Generative AI for Individuals with ADHD                   IndiaHCI ’25, November 07–09, 2025, Delhi, India
+
+
+                                                                                       methods were applied. Random attention check questions were
+                                                                                       included to avoid careless answers and ensure accurate ratings. In
+                                                                                       this study, participants scored on prototypes using UEQ, highlight-
+                                                                                       ing variations in satisfaction across them, through 6 scales which
+                                                                                       are Attractiveness, Perspicuity, Efficiency, Dependability, Stimula-
+                                                                                       tion, Novelty. The results were used to compare usability through
+                                                                                       comparative statistical analysis. Random attention check questions
+                                                                                       were included to ensure reliability and accuracy in the responses.
+
+
+                                                                                       4.3         Effectiveness of the System
+                                                                                       The study compared the effectiveness of three developed systems
+                                                                                       based on learning outcomes and user engagement, aiming to evalu-
+                     Figure 3: AI-Generated LMS                                        ate how each system helped students with ADHD maintain atten-
+                                                                                       tion and achieve academic goals during the learning process.
+
+Manual, and AI-driven. All participants began with the Base LMS                        4.3.1 Learning Outcomes - Quiz Performance Analysis. To as-
+to establish a baseline. To avoid evaluation bias, the order of the re-                sess learning outcomes, participants completed standardized 10-
+maining prototypes was counterbalanced. After using each system,                       question quizzes (multiple-choice, fill-in-the-blank, and true/false)
+participants completed standardized usability, user experience, and                    designed to evaluate their understanding and retention of the con-
+performance (quiz score) assessments, along with follow-up inter-                      tent.
+views. This mixed-method approach enabled a thorough, real-world
+evaluation of each system’s usability, accessibility, and educational
+effectiveness for students with ADHD.                                                  4.3.2 User Engagement—Task Analysis via Microsoft Clarity. User
+                                                                                       engagement was assessed through detailed task analysis using Mi-
+3.5     Evaluation                                                                     crosoft Clarity, which is a behavioral analytics tool that captures
+                                                                                       real-time user interaction data and provides insights into how users
+Using data from the demonstration phase, the researchers evalu-
+                                                                                       interact with web-based platforms. Through features such as ses-
+ated the usability and effectiveness of the three LMS prototypes.
+                                                                                       sion recordings, heatmaps, click tracking, and scroll depth analysis,
+The data gathered during the demonstration phase were analysed
+                                                                                       we were able to observe how users navigated each system
+to determine changes in engagement, effectiveness, usability, and
+learning outcomes. Ethical standards were strictly followed, with
+informed consent obtained and participant data anonymised. The                         4.4         Experiment 1 - Evaluation of Prototype 1 :
+study ensured the safety, rights, and privacy of all ADHD student                                  Base LMS
+participants during the research.
+                                                                                       4.4.1 SUS Score Analysis. The analysis of the Base LMS usabil-
+4 Evaluation and Results                                                               ity reveals that its median SUS score falls below the acceptable
+                                                                                       threshold of 68, indicating a clear need for improvement. The wide
+4.1 Participants                                                                       interquartile range reflected high variability in user responses, sug-
+Twenty-two students with ADHD (ages 18–30), all with prior ex-                         gesting inconsistent user experiences. With a median score of 56.2
+perience using online learning platforms, participated. To reduce                      and a mean of 58, the overall usability is rated significantly poor.
+bias, recruitment spanned varied educational backgrounds. The co-                      Notably, 40.9% of participants rated the system below 51, classifying
+hort comprised 10 female (4 medically diagnosed; 6 self-diagnosed                      it as having poor usability, while only 22.7% rated it as excellent.
+via the Mental Health America ADHD screening tool [2]) and 12                          These findings collectively highlight that the Base LMS fails to meet
+male participants (4 medically diagnosed; 8 self-diagnosed via the                     usability standards for most users.
+same tool). ADHD severity was assessed using the Adult ADHD
+Self-Report Scale (ASRS v1.1), developed in collaboration with the                     4.4.2 UEQ Results Analysis. This reveals that its median score
+World Health Organization; participants in the high positive range                     falls below the acceptable threshold of 4.0, with low overall scores
+were excluded to improve reliability. Figure 13 shows the severity-                    and high variance, indicating inconsistent user experiences. The
+score distribution, and Table 5 summarises demographics. The near-                     presence of outliers with particularly low scores further contributes
+balanced gender distribution supports objective comparison across                      to the variability. Among the six UEQ dimensions, the lowest mean
+the three LMS prototypes ( Refer Table 5).                                             scores were observed in Stimulation (3.60) and Novelty (3.58), sug-
+                                                                                       gesting the system lacks engagement and innovation. Only De-
+4.2     Usability of the System                                                        pendability (4.19) and Perspicuity (4.07) achieved scores above the
+Usability of each prototype was measured mainly using the Sys-                         threshold, indicating that the remaining dimensions require sig-
+tem Usability Scale (SUS) and the User Experience Questionnaire                        nificant improvement. Additionally, quiz score analysis showed
+(UEQ) with 22 ADHD users. The SUS questionnaire was shared                             high variability, implying inconsistency in learning outcomes and
+with our user group, and based on their scores, statistical analysis                   difficulties in knowledge retention and application among users.
+
+
+
+
+                                                                                137
+
+===== PDF PAGE 8 / 13 =====
+IndiaHCI ’25, November 07–09, 2025, Delhi, India                                                                                 Gunawardana, et al.
+
+
+4.5     Experiment 2 – Evaluation of Prototype 2:                             dispersion standard deviation (SD) of the data. When considering
+        Manually Improved LMS                                                 SUS scores, Base LMS (Mean=57.95) falls below the acceptable
+                                                                              threshold (68) while Manual LMS (Mean=73.75) and AI LMS
+This experiment evaluated an LMS, modified by designers without
+                                                                              (Mean=80.11) are higher than the acceptable threshold. Manual
+using artificial intelligence, tailored for ADHD users, incorporating
+                                                                              LMS shows a significant improvement compared to Base LMS,
+design adjustments from Experiment 1 to reduce cognitive load and
+                                                                              while AI LMS (Mean=80.11) achieves the highest. Base LMS
+enhance focus.
+                                                                              shows highest SD (23.35), indicating inconsistent user experiences
+4.5.1 SUS Scores Analysis. The improved LMS achieved a median                 while AI LMS has the lowest SD (17.16), demonstrating reliable
+SUS score of 75 and a mean of 73.8, both above the usability thresh-          performance. By analysing the range of SUS scores, Base LMS
+old of 68. The distribution was left-skewed, indicating that most             exhibits extreme scores (20-97.5) while AI LMS maintains tighter
+participants rated the system positively. Notably, 36.4% rated its            range (45-100). According to these statistics of SUS scores, Base
+usability as excellent (score > 80.3), reflecting significant improve-        LMS with the lowest mean, indicates poor usability, Manual
+ments over the base LMS.                                                      LMS shows a moderate increase in usability and AI LMS with
+                                                                              the highest mean SUS, indicates exceptional usability and user
+4.5.2 UEQ Results Analysis. UEQ scores remained mixed. The me-
+                                                                              satisfaction.
+dian was below the acceptable threshold of 4.0, with high variance
+across responses. Only Dependability (4.07) and Perspicuity (4.09)
+                                                                                 All systems show mean UEQ scores near neutral (4.0) but, Base
+surpassed the 4.0 mark. Novelty received the lowest mean score
+                                                                              LMS (3.89) and Manual LMS (3.91) fails to meet positive UX thresh-
+(3.76), indicating limited perceived innovation. Further design iter-
+                                                                              old. AI LMS (4.00) is the first to cross neutral benchmark. When
+ations are needed to enhance overall user experience.
+                                                                              considering the inter quartile ranges, Base LMS has widest UX per-
+4.5.3 Learning Outcomes. When measuring the quiz scores ac-                   ception variability while AI LMS shows most consistent positive
+quired for Manual LMS the results indicate an improved median                 ratings with less variance compared to other two prototypes. There-
+quiz score and reduced variance compared to Base LMS. Further,                fore the AI LMS scored consistently high across user experience
+the figure 11, indicates the mean is 6.5, which is comparatively              dimensions. Further the Manual LMS improved upon the Base LMS
+higher than the value acquired in Base LMS, implying improved                 but did not reach AI LMS levels.
+comprehension and retention.
+
+4.6     Experiment 3 – Evaluation of Prototype 3:
+        AI-Generated LMS
+This experiment evaluated the AI-generated LMS prototype, de-
+signed using AI-driven UI generation techniques such as HCI-
+informed prompting and ADHD-specific feedback.
+4.6.1 SUS Scores Analysis. The AI LMS achieved the highest us-
+ability among all prototypes, with a median SUS score of 83.8 and
+a mean of 80.1—well above the acceptable threshold of 68. Notably,
+63.6% of participants rated it as having excellent usability (score           Figure 4: SUS Scores Compar- Figure 5: UEQ Scores Compar-
+> 80.3), indicating strong user satisfaction and preference over              ison                         ison
+previous prototypes.
+4.6.2 UEQ Results Analysis. Despite the high usability, the median
+UEQ score remained slightly below the threshold of 4.0. However,              4.7.2 Comparison Visualizations Analysis. Figure 4 states AI LMS
+the AI LMS recorded higher scores across all six dimensions com-              achieved a median SUS score above 85, the Manual LMS around 72,
+pared to previous versions. Notable improvements were seen in                 and the Base LMS below 60. Therefore this comparison indicates
+Dependability (4.31) and Novelty (4.07), both exceeding the thresh-           that AI LMS has achieved “Excellent” SUS score, while Base LMS
+old, while Attractiveness had the lowest score (3.80), suggesting             falls below 60 in the “Poor” category, implying that AI LMS achieved
+room for enhancement in visual appeal and engagement.                         the highest usability.
+                                                                                 According to Figure 5, when comparing the UEQ scores, similar
+4.6.3 Learning Outcomes. Participants using the AI LMS demon-                 trends can be observed, AI LMS excelling in all dimensions. How-
+strated improved learning performance, with a median quiz score               ever, here it is not much variant across three LMS as in SUS score
+of 6.0 and a mean of 5.9. This reflects better consistency and higher         distribution. All the prototypes indicates median scores near the
+retention than with the Base LMS, and performance comparable                  threshold while AI LMS achieves the highest score ensuring more
+to the Manual LMS. The reduced score variance suggests more                   usability.
+uniform learning effectiveness among users.                                      These Measures showed that the AI LMS has the highest mean
+                                                                              and least SD in SUS scores, indicating consistent user ratings UEQ
+4.7     Overall System Evaluation                                             score mean values of three prototypes show no significant variabil-
+4.7.1 Descriptive statistics Analysis. Descriptive statistics provide         ity, although AI LMS mean score is somewhat higher. Manual LMS
+a foundational understanding of central tendencies (mean) and                 SD seems to have the lowest UEQ score.
+
+
+
+
+                                                                        138
+
+===== PDF PAGE 9 / 13 =====
+Enhancing Adaptive Personalized Learning Interfaces with Generative AI for Individuals with ADHD                    IndiaHCI ’25, November 07–09, 2025, Delhi, India
+
+
+4.7.3 Normality Test. We performed Shapiro-Wilk Test (Normality                        Table 2: Post-hoc Analysis (Wilcoxon Signed-Rank Tests with
+Testing) [25] to check if the SUS & UEQ values of Base LMS, Manual                     Bonferroni Correction)
+LMS, AI-generated LMS are normal or non-normal.
+    Figure 7 shows the Shapiro-Wilk Test Results we derived. P-                                                     SUS Scores
+values for most of the data sets are less than 0.05, indicating that
+                                                                                                   Comparison       W          p          d       adj_p
+the data significantly deviate from a normal distribution. But UEQ
+of Base LMS and AI LMS derived as non-normal.                                                      Base vs Manual   69.5    0.0634    −0.576       0.190
+    According to the below normality test results, although most                                   Base vs AI       38.5    0.0029    −0.808       0.009
+of the SUS & UEQ results of the LMS are normal, there are some                                     Manual vs AI     33.5    0.0734    −0.403       0.220
+non-normal values as well. Further in the evaluations of this study,                                                UEQ Scores
+we are using repeated values by using same user group for rating
+all the three LMSs. Therefore we cannot use One way ANOVA,and                                      Comparison       W          p          d       adj_p
+as an alternative for non-parametric testing, we used Friedman Test                                Base vs Manual   120      0.849    −0.051         1
+for further analysis.                                                                              Base vs AI       72.5     0.225    −0.274       0.675
+                                                                                                   Manual vs AI     98.5     0.808    −0.245         1
+
+
+                                                                                       Table 3: Correlation Analysis—Spearman’s 𝜌 between SUS
+                                                                                       and UEQ
+
+                  Figure 6: Friedman Test Results
+                                                                                                       Condition    Spearman’s 𝜌         𝑝-value
+                                                                                                       Base                0.373          0.0870
+                                                                                                       Manual               0.263         0.2365
+                                                                                                       AI                  -0.158         0.4836
+
+                                                                                           Table 2 displays the results of each pairs of LMS with adjusted p
+                                                                                       values. It shows that SUS score of, Base LMS vs. AI-Generated LMS
+                                                                                       pair is p = 0.0085, representing a statistical significant difference
+                                                                                       (𝑝 < 0.0167). All the other pairs are not performing statistically
+                                                                                       significant difference (𝑝 < 0.0167). It ensures that Base vs AI com-
+                                                                                       parison reached statistical significance with large effect size (d =
+            Figure 7: Normality Tests (Shapiro-Wilk)                                   -0.81) confirming the practical importance.
+                                                                                           Post-hoc comparisons of the SUS scores revealed a statistically
+                                                                                       significant difference between the Base LMS and the AI-enhanced
+4.7.4 Friedman Test. Friedman Test [11], a non-parametric test,                        LMS, with a large effect size, indicating superior usability in the
+was used to assess statistical differences in SUS and UEQ scores                       AI-driven system. In contrast, post-hoc comparisons of the UEQ
+across the three LMS prototypes.                                                       scores did not yield any statistically significant differences between
+                                                                                       system pairs. These results imply that AI LMS shows statistically
+     • Null Hypothesis: No significant differences in SUS or UEQ
+                                                                                       better usability than conventional LMS. Manual optimizations alone
+       scores across LMS variants.
+                                                                                       may not be sufficient for significant ADHD usability improvements.
+     • Alternative Hypothesis: At least one LMS variant differs
+                                                                                       As well as it shows that while AI improves usability with SUS, core
+       significantly.
+                                                                                       UX dimensions with UEQ still remain similar across systems.
+   Figure 6 shows the p-values: SUS (𝑝 = 0.149) and UEQ (𝑝 = 0.538).
+Both values exceed the 0.05 threshold, indicating no statistically                     4.7.6 Correlation Analysis. Spearman’s rank correlation analysis
+significant differences in usability or user experience across the                     [12] was used to examine the relationship between System Usability
+LMSs.                                                                                  Scale (SUS) and User Experience Questionnaire (UEQ) scores across
+                                                                                       three LMS.
+   Despite non-significant results, post hoc Wilcoxon signed-rank                         According to table 3, Base LMS shows 𝜌 = 0.373 (p = 0.087)
+tests [22] were conducted for pairwise comparisons due to the small                    indicating a moderate positive relationship. It fails to reach signifi-
+sample size and potential subtle differences.                                          cance (𝑝 < 0.005) may due to high variability in ADHD responses
+                                                                                       and limited sample size (n=22). Manually improved LMS shows
+4.7.5 Post-hoc Analysis. To identify which specific pairs of LMS                       𝜌 = 0.263(p = 0.237), indicating a weak positive relationship (not
+differ significantly, pairwise comparisons were made using the                         significant). AI LMS represents 𝜌 = −0.158(p = 0.484), indicating a
+Wilcoxon signed rank test [22]. Bonferroni correction was applied                      negligible inverse relationship (not significant). According to the
+to control for Type I error due to multiple comparisons.                               above figures,there were no significant correlations found between
+                                                                                       SUS and UEQ scores.
+
+
+
+
+                                                                                139
+
+===== PDF PAGE 10 / 13 =====
+IndiaHCI ’25, November 07–09, 2025, Delhi, India                                                                                 Gunawardana, et al.
+
+
+4.7.7 Analysis of LMS Evaluation Scores Across ADHD Levels. To               loading time (LCP 4.5s), flawless layout stability (CLS 0), and a
+perform a better analysis of how the ADHD levels of the users have           reduced INP of 190ms.
+affected for the evaluations of each prototype, we compared the                 Prototype 3 showed high exploratory activity, with 8.52 pages
+three LMSs — Base, Manual, and AI LMS based on user feedback                 per session and the highest scroll depth (94.54%). It achieved smooth
+from participants across different ADHD levels using usability and           interaction (INP 150ms) and excellent layout stability (CLS 0.001).
+effectiveness metrics.                                                       However, active engagement dropped to 21.6%, and interaction
+                                                                             friction increased with 4% rage clicks, 32% dead clicks, and 56%
+                                                                             quick backs. The performance score was 80/100, with a slightly
+                                                                             improved LCP of 6.5s. These issues were likely due to overwhelming
+                                                                             or inconsistent AI-generated content.
+                                                                                Comparative results highlight Prototype 2 as the most effective
+                                                                             LMS version. It delivered the best balance of usability, engagement,
+                                                                             and system performance, effectively addressing ADHD-specific
+                                                                             needs through clear layouts and interactive design elements. While
+                                                                             Prototype 3 provided personalized content and high engagement
+                                                                             potential, its complexity reduced usability for neurodivergent learn-
+Figure 8: Analysis of SUS                 Figure 9: Analysis of UEQ
+                                                                             ers, emphasizing the need for thoughtful AI integration.
+Scores Across ADHD Levels                 Scores Across ADHD Levels
+                                                                             4.7.9 Thematic Analysis of Participant Feedback. A brief induc-
+                                                                             tive synthesis of all participant comments surfaced four recurrent
+    As shown in Figure 8, average SUS scores varied across ADHD              themes: Orientation & Feedback — Requests for clearer navi-
+levels and LMS types. Participants with low negative ADHD traits             gation and results transparency (“No back button in the system”;
+gave the highest SUS scores to the Base LMS, indicating its                  “Please show which were the right and wrong answers in quiz”).
+suitability for the general population. Manual and AI LMS were               Focus vs. Distraction — Split reactions to animations, focus mode,
+rated higher by high negative individuals, suggesting improved               and the study timer (“amazing”; “good addition” vs. “too distract-
+usability for users with stronger ADHD symptoms.                             ing”). Progressive Disclosure — Positive reception to staged con-
+    Similarly, Figure 9 shows that while there were no significant           tent (“The way the content was presented was good, not showing
+differences in UEQ scores, the trends mirrored SUS results. The              everything at once”), supporting reduced overload. Content Fi-
+Base LMS was again preferred by low negative individuals, while              delity & Oversight — AI-generated images/interactive elements
+Manual and AI LMS received higher UEQ scores from high                       sometimes lacked contextual relevance and required human correc-
+negative individuals, indicating better alignment with ADHD                  tion. These themes informed the iterative improvements in both
+user needs.                                                                  Manual and AI prototypes and contextualise why engagement pat-
+    Figure 11 shows the comparison of the average Quiz scores of             terns diverged from usability scores.
+different ADHD levels variation across each of the LMS. Overall
+it represents most of the low negative individuals have acquired             4.8    Recommendations
+highest scores across all of the three LMS. Low positive individuals         The AI-Generated LMS. was a significant challenge to develop dur-
+have scored comparatively more than high negative individuals                ing this research due to the limited capacity of LLMs to comprehend
+across all the LMS. It implies that quiz performance has not been            the system architecture of a web application. This constraint led to
+much positively supported for ADHD population.                               architectural inconsistencies, error propagation, and a reduction in
+4.7.8 Microsoft Clarity Analysis. User interaction metrics collected         system reliability. The AI-Generated LMS. necessitated substantial
+via Microsoft Clarity were analyzed across three LMS prototypes to           human supervision and architectural guidance during its devel-
+evaluate usability and engagement, with particular focus on ADHD             opment. Future research directions that concentrate on reference
+users.                                                                       architectures, iterative approaches, and architectural guidance sys-
+   Prototype 1 (Base LMS) exhibited limited sustained engage-                tems have the potential to overcome these constraints. It is advisable
+ment. Attention was concentrated at the top of content pages, sug-           to employ an AI model that is aware of the web system’s architec-
+gesting cognitive fatigue. Users viewed an average of 6.7 pages per          ture in future research and test with a larger, more diverse ADHD
+session and reached 90.4% scroll depth. However, only 28% of the             cohort to improve interpretive clarity and generalizability.
+session time was spent actively, with 26.85% dead clicks and 36.11%
+quick backs, indicating user frustration and navigation issues. The          4.9    Future Work
+performance score was 77/100, hampered by the slowest loading                Building on these findings, several promising avenues can enhance
+time (LCP 7.6s) and highest interaction delay (INP 250ms).                   personalized learning interfaces for ADHD students. Integrating
+   Prototype 2 demonstrated significant improvements. Attention              eye tracking and clickstream analysis can help identify design ele-
+was evenly distributed across pages, indicating improved focus               ments that improve attention and task completion. Longitudinal
+retention. Users visited an average of 8.62 pages per session, with          studies could assess the long-term impact of Manual and AI-driven
+an active time of 40% (approximately 4.5 minutes). Notably, there            LMSs on knowledge retention and academic performance. Wear-
+were 0% rage clicks, only 11.76% dead clicks, and 23.53% quick backs.        able biometric sensors (e.g., EEG headsets, heart-rate monitors, and
+Performance improved with a score of 82/100, featuring the fastest           galvanic skin response sensors) could provide real-time feedback
+
+
+
+
+                                                                       140
+
+===== PDF PAGE 11 / 13 =====
+Enhancing Adaptive Personalized Learning Interfaces with Generative AI for Individuals with ADHD                            IndiaHCI ’25, November 07–09, 2025, Delhi, India
+
+
+to dynamically adjust attention-retention strategies. Interfaces may                   scores. These findings underscore the potential of GenAI to im-
+also be personalized based on real-time behavioral analysis to align                   prove personalization and usability in educational technologies.
+with individual neurocognitive profiles, enabling adaptive, multi-                     However, realizing its full benefits will depend on more advanced
+modal learning experiences.                                                            prompting methods and improved content generation capabilities.
+   Future research could develop specialized AI models tailored                        Overall, the study affirms the promise of GenAI in supporting
+to ADHD learners, offering more effective support than general-                        neurodiverse learners, while also highlighting the importance of
+purpose models. Larger studies with medically diagnosed ADHD                           thoughtful human-centered design and evaluation.
+students are essential to better understand their cognitive chal-
+lenges and refine personalized educational interventions.
+                                                                                       4.11        Conclusion
+                                                                                       This research aimed to explore how Generative AI can enhance per-
+4.10      Discussion                                                                   sonalized learning interfaces for students with ADHD (ages 18–30),
+This study examined the impact of GenAI-driven customization                           improving their academic experience and promoting equity in ed-
+versus manual configuration on LMS usability and effectiveness                         ucation. Through literature reviews, surveys, and user feedback,
+for students with ADHD. Three LMS prototypes were developed                            we identified the unique learning challenges ADHD students face.
+and evaluated on effectiveness, usability, engagement, and learning                    We evaluated three LMS prototypes: a standard Base LMS, a manu-
+outcomes. The GenAI-driven LMS demonstrated superior usability,                        ally optimized LMS tailored for ADHD users, and an AI-generated
+supported by quantitative results and comments such as “This is                        LMS adapted using enhanced prompting techniques. A user group
+much more user-friendly” and “Much better UI.” The Manual LMS                          of 22 ADHD individuals participated in this evaluation. To assess
+slightly outperformed the AI-driven LMS on effectiveness, with                         usability and effectiveness, we collected SUS and UEQ responses
+participants praising animations, focus mode, and the study timer                      and analyzed quiz scores and Microsoft Clarity results. Statisti-
+(e.g., “The graphics and animations were amazing,” “The study timer                    cal methods, including normality tests, Friedman tests, Wilcoxon
+was a good addition”). Notably, some users found these features                        Signed-Rank tests, and Spearman’s correlation, were applied for
+distracting, indicating a need to balance stimulation and cognitive                    deeper insights.
+load in future designs.Addressing the first two secondary research                        Results showed that the AI LMS achieved the highest usability
+questions, the baseline LMS exhibited clear usability limitations in                   scores across SUS and UEQ metrics, particularly excelling in nov-
+navigation and feedback. These insights guided improvements in                         elty and engagement. The Manual LMS had moderate usability and
+the Manual and AI-driven prototypes, demonstrating the value of it-                    outperformed both other systems in effectiveness, based on quiz
+erative, user-informed design. The thematic analysis (Section 4.7.9)                   scores and clarity analytics. The Base LMS showed the lowest per-
+helped us explain why the Manual LMS achieved stronger engage-                         formance overall and was only preferred by users with fewer ADHD
+ment despite the AI-LMS’s superior usability.                                          symptoms. In conclusion, the AI LMS proved most usable, while the
+                                                                                       Manual LMS was most effective in supporting learning outcomes.
+4.10.1 Why High Usability Did Not Maximise Engagement? Despite                         Both tailored systems significantly outperformed the Base LMS for
+higher perceived usability, the AI-generated LMS elicited weaker                       ADHD users, underscoring the importance of personalized learning
+engagement than the Manual LMS. Three mechanisms apparent in                           environments in addressing their specific educational needs.
+participant feedback help explain this divergence: (i) Hedonic stim-
+ulation vs. clarity—the Manual LMS’s animations, focus mode, and                       References
+timer provided motivating cues, whereas the AI UI emphasised low-                        [1] Tomás Alves, Joana Natálio, Joana Henriques-Calado, and Sandra Gama. 2019.
+distraction clarity that aids learnability but offers fewer stimulating                      Incorporating personality in user interface design: A review. Personality and
+                                                                                             Individual Differences 151 (2019), 109709. doi:10.1016/j.paid.2019.109709
+rewards; (ii) Attention scaffolding—timers/focus mode and progres-                       [2] Mental Health America. 2023. ADHD Screening Tool. https://screening.
+sive pacing increased momentum for some but were “too distracting”                           mhanational.org/screening-tools/adhd/
+for others, revealing a trade-off between arousal and cognitive load;                    [3] Giovanni Anobile, Massimo Bartoli, Gabriele Masi, Andrea Tacchi, and Francesca
+                                                                                             Tinelli. 2022. Math difficulties in attention deficit hyperactivity disorder do not
+and (iii) Content fidelity—AI-generated images/interactive elements                          originate from the visual number sense. Frontiers in Human Neuroscience 16
+occasionally lacked contextual relevance and required human over-                            (2022), 949391. doi:10.3389/fnhum.2022.949391
+                                                                                         [4] Bagustari A. Bagustari and Hery B. Santoso. 2019. Adaptive User Interface
+sight, tempering enthusiasm despite ease of use.                                             of Learning Management Systems for Education 4.0: A Research Perspective.
+   The third secondary question focused on optimizing generative                             Journal of Physics: Conference Series 1235, 1 (2019), 012033. doi:10.1088/1742-
+AI prompting strategies to improve engagement and accessibil-                                6596/1235/1/012033
+                                                                                         [5] Prabal Datta Barua, Jahmunah Vicnesh, Raj Gururajan, Shu Lih Oh, Elizabeth
+ity. Prompt engineering enabled the development of user-centered,                            Palmer, Muhammad Mokhzaini Azizan, Nahrizul Adib Kadri, and U. Rajendra
+contextually relevant interfaces. Features such as progressive con-                          Acharya. 2022. Artificial Intelligence Enabled Personalised Assistive Tools to
+tent disclosure and interactive quiz reviews were well received,                             Enhance Education of Children with Neurodevelopmental Disorders—A Review.
+                                                                                             International Journal of Environmental Research and Public Health 19, 3 (2022),
+with comments including ’The way the content was presented was                               1192. doi:10.3390/ijerph19031192
+good, not showing everything at once’. However, limitations in                           [6] Richard Baskerville, Abayomi Baiyere, Shirley Gregor, Alan Hevner, and Matti
+                                                                                             Rossi. 2018. Design Science Research Contributions: Finding a Balance between
+AI-generated content, particularly images and interactive elements,                          Artifact and Theory. Journal of the Association for Information Systems 19 (05
+presented challenges, which required significant human oversight                             2018), 358–376. doi:10.17705/1jais.00495
+due to inaccuracies and lack of contextual relevance.                                    [7] Santiago Berrezueta-Guzman, Mohanad Kandil, María-Luisa Martín-Ruiz,
+                                                                                             Iván Pau de la Cruz, and Stephan Krusche. 2024. Future of ADHD Care: Evaluat-
+   Finally, while AI-driven LMS achieved higher usability, manual                            ing the Efficacy of ChatGPT in Therapy Enhancement. Healthcare 12, 6 (June
+LMS showed slightly better learning outcomes, as reflected in quiz                           2024), 683. doi:10.3390/healthcare12060683
+
+
+
+
+                                                                                141
+
+===== PDF PAGE 12 / 13 =====
+IndiaHCI ’25, November 07–09, 2025, Delhi, India                                                                                                                 Gunawardana, et al.
+
+
+ [8] Santiago Berrezueta-Guzman, Mohanad Kandil, María-Luisa Martín-Ruiz,                     [30] Jakob Nielsen. 1994. Enhancing the explanatory power of usability heuristics. In
+     Iván Pau de la Cruz, and Stephan Krusche. 2024. Future of ADHD Care: Evaluat-                 Proceedings of the SIGCHI Conference on Human Factors in Computing Systems
+     ing the Efficacy of ChatGPT in Therapy Enhancement. Healthcare 12, 6 (2024),                  (Boston, Massachusetts, USA) (CHI ’94). Association for Computing Machinery,
+     683. doi:10.3390/healthcare12060683                                                           New York, NY, USA, 152–158. doi:10.1145/191666.191729
+ [9] John Brooke. 1996. SUS: A ‘quick and dirty’ usability scale. Usability Evaluation in     [31] Jakob Nielsen. 1995. Scenarios in Discount Usability Engineering. In Scenario-
+     Industry (1996), 189–194. https://www.researchgate.net/publication/228593520_                 Based Design: Envisioning Work and Technology in System Development, John M.
+     SUS_A_quick_and_dirty_usability_scale, Accessed: 2025-04-17.                                  Carroll (Ed.). John Wiley & Sons, 59–83. Accessed: 2025-04-17.
+[10] G. Barrera Castro, A. Chiappe, D. F. Becerra Rodriguez, and F. G. Sepulveda. 2024.       [32] Jakob Nielsen. 2020. 10 Usability Heuristics for User Interface Design. https:
+     Harnessing AI for Education 4.0: Drivers of Personalized Learning. Electronic                 //www.nngroup.com/articles/ten-usability-heuristics/. Accessed: 2025-04-17.
+     Journal of e-Learning 22, 5 (2024), 1–16. doi:10.34190/ejel.22.5.3467                    [33] Jakob Nielsen. 2023. Slips: User Errors in User Interfaces. https://www.nngroup.
+[11] DATAtab Team. 2025. Friedman Test Tutorial: Analyzing Repeated Measures                       com/articles/slips/. Accessed: 2025-04-17.
+     Data. https://datatab.net/tutorial/friedman-test. Accessed: 2025-04-17.                  [34] NovoPsych. n.d.. Adult ADHD Self-Report Scale (ASRS). https://novopsych.com.
+[12] DATAtab Team. 2025. Spearman’s Rank Correlation Coefficient: A Beginner’s                     au/assessments/diagnosis/adult-adhd-self-report-scale-asrs/ Accessed: February
+     Guide. https://datatab.net/tutorial/spearman-correlation. Accessed: 2025-04-17.               18, 2025.
+[13] Holly E. Erskine, Rosana E. Norman, Alize J. Ferrari, Gary C. K. Chan, William E.        [35] R.C.W.M.R.H.E. Nugawela, W.G.S. Fonseka, G.U.C. Perera, S.K.S. Mihirangi, and
+     Copeland, Harvey A. Whiteford, and James G. Scott. 2016. Long-Term Outcomes                   K.A.D.C.P. Kahandawaarachchi. 2020. Therapy Tool for Adolescents with ADHD.
+     of Attention-Deficit/Hyperactivity Disorder and Conduct Disorder: A Systematic                In 2020 IEEE 3rd International Conference on Communication, Computing and
+     Review and Meta-Analysis. Journal of the American Academy of Child and                        Digital Systems (C-CODE). 313–318. doi:10.1109/C-CODE49350.2020.9103423
+     Adolescent Psychiatry 55, 10 (2016), 841–850. doi:10.1016/j.jaac.2016.06.016             [36] Ken Peffers, Tuure Tuunanen, Marcus A. Rothenberger, and Samir Chatterjee.
+[14] Ryan Ferguson, Paul W. Cuddihy, Ed Price, Jacob Morin, John A. Buder, and                     2007. A Design Science Research Methodology for Information Systems Research.
+     Vincent J. Berardi. 2013. Further Development of the F.O.C.U.S.: Facilitating                 Journal of Management Information Systems 24, 3 (2007), 45–77. doi:10.2753/
+     On-going Concentration Using Stimulation. In 2013 IEEE 39th Annual Northeast                  MIS0742-1222240302
+     Bioengineering Conference. 209–210. doi:10.1109/NEBEC.2013.6574469                       [37] Maria Perez-Ortiz, Claire Dormann, Yvonne Rogers, Sahan Bulathwela, Stefan
+[15] Lydia Furman. 2005.            What is attention-deficit hyperactivity disorder               Kreitmayer, Emine Yilmaz, Richard Noss, and John Shawe-Taylor. 2021. X5Learn:
+     (ADHD)? Journal of Child Neurology 20, 12 (2005), 994–1002. doi:10.1177/                      A Personalised Learning Companion at the Intersection of AI and HCI. In Compan-
+     08830738050200121301                                                                          ion Proceedings of the 26th International Conference on Intelligent User Interfaces.
+[16] Vana Gkora. 2024. Advancing ADHD education: autonomy, technology, and                         70–74. doi:10.1145/3397482.3450721
+     inclusive strategies. GSC Advanced Research and Reviews 18, 3 (2024), 101–111.           [38] Ivica Pesovski, Ricardo Santos, Roberto Henriques, and Vladimir Trajkovik. 2024.
+     doi:10.30574/gscarr.2024.18.3.0084                                                            Generative AI for Customizable Learning Experiences. Sustainability 16, 7 (July
+[17] Atefeh Mahdavi Goloujeh, Anne Sullivan, and Brian Magerko. 2024. Is It AI or                  2024), 3034. doi:10.3390/su160703034 Available online.
+     Is It Me? Understanding Users’ Prompt Journey with Text-to-Image Generative              [39] Ivica Pesovski, Ricardo Santos, Roberto Henriques, and Vladimir Trajkovik. 2024.
+     AI Tools. In CHI ’24: Proceedings of the 2024 CHI Conference on Human Factors in              Generative AI for Customizable Learning Experiences. Sustainability 16, 7 (2024),
+     Computing Systems. ACM, 1–13. doi:10.1145/3613904.3642861                                     3034. doi:10.3390/su160703034
+[18] Nielsen Norman Group. 2022. 5 Visual Treatments that Improve Accessibility.              [40] Sandesh Phalke and Abhishek Shrivastava. 2024. HI Applications for ADHD
+     https://www.nngroup.com/articles/visual-treatments-accessibility/. Accessed:                  Children: The Graphic Design Perspective. Springer, 105–127. doi:10.1007/978-
+     2025-04-17.                                                                                   981-97-0232-9_2
+[19] Jan Gulliksen, Bengt Göransson, Inger Boivie, Stefan Blomkvist, Jenny Pers-              [41] Sandesh Sanjeev Phalke and Abhishek Shrivastava. 2025. Comprehensive Method-
+     son, and Åsa Cajander. 2003. Key principles for user-centred systems de-                      ological Framework for Representing Curriculum-Based Digital Content for Chil-
+     sign. Behaviour & Information Technology 22, 6 (2003), 397–409. doi:10.1080/                  dren with ADHD: A Practitioner’s Approach. Advance: SAGE Preprint (2025).
+     01449290310001624329                                                                          doi:10.31124/advance.174547488.88398828.v1
+[20] M. Ibrahim, P. W. C. Prasad, Abeer Alsadoon, and L. Pham. 2016. Synchronous              [42] Nina Rajcic, Maria Teresa Llano Rodriguez, and Jon McCormack. 2024. Towards
+     Virtual Classroom for Students with ADHD Disorder. In 2016 13th International                 a Diffractive Analysis of Prompt-Based Generative AI. In CHI ’24: Proceedings
+     Joint Conference on Computer Science and Software Engineering (JCSSE). 1–6.                   of the 2024 CHI Conference on Human Factors in Computing Systems. ACM, 1–15.
+     doi:10.1109/JCSSE.2016.7748860                                                                doi:10.1145/3613904.3641971
+[21] Ronald C. Kessler, Thomas A. Adler, Michael J. Barkley, Daniel M. Biederman,             [43] Vandana Ravishankar. 2022. Designing an Assistive Technology for Self-reflection
+     John T. Faraone, Stephen V. Spencer, and David M. Zaslavsky. 2005. The World                  for Students Suffering from ADHD at Malmö University. Master’s thesis. Malmö
+     Health Organization Adult ADHD Self-Report Scale (ASRS): A short screening                    University, Malmö, Sweden. https://www.diva-portal.org/smash/record.jsf?pid=
+     scale for use in the general population. Psychological Medicine 35, 2 (2005),                 diva2%3A1701424 Accessed: 2025-02-19.
+     245–256. doi:10.1017/S0033291704002892 Accessed: 2023-01-17.                             [44] Timothy K. Shih, Rong-Chi Chang, and Yi-Ming Chen. 2007. A Personalized
+[22] Laerd Statistics. 2025.         Wilcoxon Signed-Rank Test using SPSS Statis-                  E-learning Interface Based on User’s Learning Style. In 2007 European Conference
+     tics. https://statistics.laerd.com/spss-tutorials/wilcoxon-signed-rank-test-using-            on Computer Systems and Technologies (EURCON). 1–4. doi:10.1109/EURCON.
+     spss-statistics.php. Accessed: 2025-04-17.                                                    2007.4400362
+[23] Vivian Liu and Lydia B. Chilton. 2022. Design Guidelines for Prompt En-                  [45] Edmund J. S. Sonuga-Barke, Daniel Brandeis, Samuele Cortese, David Daley,
+     gineering Text-to-Image Generative Models. In CHI ’22: Proceedings of the                     Maite Ferrin, Martin Holtmann, Jim Stevenson, Argyris Stringaris, Eric Taylor,
+     2022 CHI Conference on Human Factors in Computing Systems. ACM, 1–23.                         and Alessandro Zuddas. 2013. Nonpharmacological Interventions for ADHD: Sys-
+     doi:10.1145/3491102.3501825                                                                   tematic Review and Meta-Analyses of Randomized Controlled Trials of Dietary
+[24] Evanfiya Logacheva, Arto Hellas, James Prather, Sami Sarsa, and Juho Leinonen.                and Psychological Treatments. American Journal of Psychiatry 170, 3 (March
+     2024. Evaluating Contextually Personalized Programming Exercises Created with                 2013), 275–289. doi:10.1176/appi.ajp.2012.12070991
+     Generative AI. arXiv abs/2407.11994 (2024). https://arxiv.org/abs/2407.11994             [46] Safura Adeela Sukiman and Noraisyah Abdl Aziz. 2021. Artificial Intelligence
+[25] Gianluca Malato. 2025. An Introduction to the Shapiro-Wilk Test for Normality.                as the Key Player in Learning Interventions: A Mini Review Among Students
+     https://builtin.com/data-science/shapiro-wilk-test. Accessed: 2025-04-17.                     with Learning Difficulties. International Journal of Teaching and Learning in
+[26] Laura Mancera, Silvia Baldiris, Ramón Fabregat, Sergio Gomez, and Carolina                    Higher Education 3, 2 (2021), 16450. https://myjms.mohe.gov.my/index.php/
+     Mejia. 2017. aTenDerAH: A Videogame to Support e-Learning Students with                       ijtmis/article/view/16450
+     ADHD. In 2017 IEEE 17th International Conference on Advanced Learning Tech-              [47] UXmatters Editorial Team. 2024. Embracing Neurodiversity in UX Design:
+     nologies (ICALT). 438–440. doi:10.1109/ICALT.2017.157                                         Crafting Inclusive Digital Environments. https://www.uxmatters.com/mt/
+[27] Lorna McKnight. 2010. Designing for ADHD: in search of guidelines. In IDC 2010:               archives/2024/04/embracing-neurodiversity-in-ux-design-crafting-inclusive-
+     Digital Technologies and Marginalized Youth (Interaction Design and Children).                digital-environments.php. Accessed: 2025-04-17.
+     Barcelona, Spain.                                                                        [48] Maeghan L. Thomas and Judy L. Cezeaux. 2013. Further Development of the
+[28] G. Merlo, G. Chiazzese, M. Sanches-Ferreira, A. Chifari, L. Seta, C. McGee, A.                F.O.C.U.S.: Facilitating On-going Concentration in Undergraduate Students. In
+     Mirisola, and I. Giammusso. 2018. The WHAAM Application: a Tool to Support                    2013 39th Annual Northeast Bioengineering Conference. 283–284. doi:10.1109/
+     the Evidence-Based Practice in the Functional Behaviour Assessment. Journal of                NEBEC.2013.19
+     Innovation in Health Informatics 25, 2 (Jun 29 2018), 63–70. doi:10.14236/jhi.v25i2.     [49] Tien Tran, Hae-Na Lee, and Ji Hwan Park. 2024. Discovering Accessible Data
+     919                                                                                           Visualizations for People with ADHD. In CHI ’24: Proceedings of the 2024 CHI
+[29] Magdalena Mirkowicz and Grzegorz Grodner. 2018. Jakob Nielsen’s Heuristics in                 Conference on Human Factors in Computing Systems. 1–19. doi:10.1145/3613904.
+     Selected Elements of Interface Design of Selected Blogs. Social Communication 4               3642112
+     (12 2018), 30–51. doi:10.2478/sc-2018-0013                                               [50] Justin D. Weisz, Jessica He, Michael Muller, Gabriela Hoefer, Rachel Miles, and
+                                                                                                   Werner Geyer. 2024. Design Principles for Generative AI Applications. In CHI ’24:
+                                                                                                   Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems.
+
+
+
+
+                                                                                        142
+
+===== PDF PAGE 13 / 13 =====
+Enhancing Adaptive Personalized Learning Interfaces with Generative AI for Individuals with ADHD                        IndiaHCI ’25, November 07–09, 2025, Delhi, India
+
+
+     ACM, 1–22. doi:10.1145/3613904.3642466                                                          Table 4: Representative Prompt Evolution
+[51] World Wide Web Consortium (W3C). 2018. Web Content Accessibility Guidelines
+     (WCAG) 2.1. https://www.w3.org/TR/WCAG21/ W3C Recommendation, updated
+     2023-09-21. Published by the Accessibility Guidelines Working Group..              Stage                         Example
+[52] Han Yu, Chunyan Miao, Cyril Leung, and Timothy John White. 2017. Towards
+     AI-powered personalization in MOOC learning. npj Science of Learning 2 (2017).     Initial (zero-shot)           Generate a course page for the learning manage-
+     doi:10.1038/s41539-017-0016-3                                                                                    ment system.
+                                                                                        Refined (constraints)         Create a profile page with editable fields, full-width
+Appendix                                                                                                              layout, an editable picture, and a save action.
+                                                                                        Final (accessibility + per-   Design an ADHD-friendly profile page with
+     • Primary GitHub Repository with all the resources used :
+                                                                                        sona)                         explicit focus states, accessible colors, editable
+       https://github.com/RashmiNirasha/GenAIResearch.git                                                             fields/picture, and a way to save feedback for
+                                                                                                                      ADHD students.
+
+
+                                                                                            Table 5: Demographic profile of participants (N = 22)
+
+                                                                                        Characteristic                Category                             Count (n)   Percent (%)
+                                                                                        Age range                     18–30 years                             22           100
+                                                                                        Gender                        Female                                  10           45.5
+                                                                                                                      Male                                    12           54.5
+                                                                                        ADHD diagnosis type           Medically diagnosed                     7            31.8
+                                                                                                                      Self-diagnosed (MHA tool)               15           68.2
+                                                                                        ASRS v1.1 severity            Low negative                            3            13.6
+           Figure 10: Wireframe Generated for Test 01                                                                 High negative                            4           18.2
+                                                                                                                      Low positive                            15           68.2
+                                                                                                                      High positive (excluded)                 0            0.0
+                                                                                        Education level               High school                             1            4.5
+                                                                                                                      Undergraduate                           20           90.9
+                                                                                                                      Postgraduate (Master’s)                  1           4.5
+                                                                                        Prior LMS experience          All participants had prior experi-      –             –
+                                                                                                                      ence
+
+
+
+
+   Figure 11: Analysis of Quiz Scores Across ADHD Levels
+
+                                                                                                    Figure 13: ADHD Severity Level Distribution
+
+
+
+
+                           Figure 12: Base LMS
+
+
+
+
+                                                                                  143

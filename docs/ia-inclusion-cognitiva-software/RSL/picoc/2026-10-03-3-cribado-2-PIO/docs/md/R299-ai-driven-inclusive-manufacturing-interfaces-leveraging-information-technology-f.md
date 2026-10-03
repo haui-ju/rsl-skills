@@ -1,0 +1,631 @@
+# AI-Driven Inclusive Manufacturing Interfaces: Leveraging
+
+> Fuente PDF: `R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.pdf` · técnica **locator index** (página + ancla) + chunks Graphify
+
+## Metadata
+- Stem: `R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f`
+- PDF: `R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.pdf`
+- DOI: `10.1145/3726101.3726115`
+- Pages: `7`
+- Structured_at: `2026-10-03T23:23:15+00:00`
+- Technique: `pdf-page-locators + heading-chunks`
+
+## Locator index (qué hay y en qué página del PDF)
+
+| Kind | Label | PDF page | MD anchor |
+|------|-------|----------|-----------|
+| abstract | Abstract / blurb | 1 | `#abstract` |
+| section | 1 Introduction | 1 | `#p1-1-introduction` |
+| section | 4.1 Assembly Tasks | 4 | `#p4-4-1-assembly-tasks` |
+| concept | Dyslexia | ? | `#concept-dyslexia` |
+| concept | affecting 5-10% of the adult population worldwide | 1 | `#concept-affecting-5-10-of-the-adult-population-worldwide` |
+| concept | Industry 5.0 | 1 | `#concept-industry-5-0` |
+| concept | inclusive manufacturing | 1 | `#concept-inclusive-manufacturing` |
+| concept | AI-driven interfaces | 1 | `#concept-ai-driven-interfaces` |
+| concept | Dario Antonelli | 1 | `#concept-dario-antonelli` |
+| concept | Alessandro Simeone | 1 | `#concept-alessandro-simeone` |
+| concept | Paolo C. Priarone | 1 | `#concept-paolo-c-priarone` |
+| concept | including increased cognitive load | 1 | `#concept-including-increased-cognitive-load` |
+| concept | higher error rates | 1 | `#concept-higher-error-rates` |
+| concept | reduced confidence and job satisfaction | 1 | `#concept-reduced-confidence-and-job-satisfaction` |
+| concept | [6]. They have broader implica- tions for workforce diversity | 1 | `#concept-6-they-have-broader-implica-tions-for-workforce-diversity` |
+| concept | productivity | 1 | `#concept-productivity` |
+| concept | and overall inclusivity APIT 2025 | 1 | `#concept-and-overall-inclusivity-apit-2025` |
+| concept | Hong Kong | ? | `#concept-hong-kong` |
+| concept | where information technology | 1 | `#concept-where-information-technology` |
+| concept | R299 | ? | `#concept-r299` |
+| concept | driven | ? | `#concept-driven` |
+| concept | inclusive | ? | `#concept-inclusive` |
+| concept | manufacturing | 1 | `#concept-manufacturing` |
+| concept | interfaces | ? | `#concept-interfaces` |
+| concept | leveraging | ? | `#concept-leveraging` |
+| concept | information | ? | `#concept-information` |
+| concept | technology | ? | `#concept-technology` |
+| finding | Leveraging Information Technology for Cognitive Diversity in Industry The transition to In… | 1 | `#finding-leveraging-information-technology-for-co` |
+| finding | In 2025 7th Asia Pacific Information Technology Conference (APIT 2025), January 10–12, 202… | 1 | `#finding-in-2025-7th-asia-pacific-information-tec` |
+| finding | and intelligent systems in manufacturing. | 1 | `#finding-and-intelligent-systems-in-manufacturing` |
+| finding | Traditional text-based as- https://doi.org/10.1145/3726101.3726115 sembly instructions can… | 1 | `#finding-traditional-text-based-as-https-doi-o` |
+| finding | The system provides real-time, multi- lenges for operators with reading-related neurodiver… | 1 | `#finding-the-system-provides-real-time-multi-le` |
+| finding | Recent studies highlight that up to tailored to individual needs, effectively reducing cog… | 1 | `#finding-recent-studies-highlight-that-up-to-tail` |
+| page | p.1: AI-Driven Inclusive Manufacturing Interfaces: Leveraging | 1 | `#pdf-p1` |
+| page | p.2: APIT 2025, January 10–12, 2025, Hong Kong, China Yuchen Fan et al. | 2 | `#pdf-p2` |
+| page | p.3: Figure 1: System architecture overview | 3 | `#pdf-p3` |
+| page | p.4: APIT 2025, January 10–12, 2025, Hong Kong, China Yuchen Fan et al. | 4 | `#pdf-p4` |
+| page | p.5: Figure 4: Experimental scenario. | 5 | `#pdf-p5` |
+| page | p.6: APIT 2025, January 10–12, 2025, Hong Kong, China Yuchen Fan et al. | 6 | `#pdf-p6` |
+| page | p.7: Acknowledgments [10] S. Kernan Freire, M. Foosherian, C. Wang, and E. Niforatos, “Harnessi | 7 | `#pdf-p7` |
+
+## Abstract
+<a id="abstract"></a>
+
+Leveraging Information Technology for Cognitive Diversity in Industry The transition to Industry 5.0 emphasizes the need for inclusive 5.0. In 2025 7th Asia Pacific Information Technology Conference (APIT 2025), January 10–12, 2025, Hong Kong, China. ACM, New York, NY, USA, 7 pages. and intelligent systems in manufacturing. Traditional text-based as- https://doi.org/10.1145/3726101.3726115 sembly instructions can create barriers for workers with cognitive diversity, including dyslexia, by making tasks more challenging and less accessible. This study introduces an AI-driven smart man- 1 Introduction ufacturing interface designed to address these challenges through Manufacturing environments have historically relied heavily on an integrated approach combining computer vision techniques and written instructions and visual cues, presenting significant chal- natural language processing. The system provides real-time, multi- lenges for operators with reading-related neurodiversity, particu- modal guidance through voice, visual, and interactive instructions larly those with dyslexia [1], [2]. Recent studies highlight that up to tailored to individual needs, effectively reducing cognitive load and 80% of assembly instructions in surveyed manufacturing plants are enhancing task performance. Experimental results show a 22.1% primarily text-based, potentially hindering workers with reading reduction in assembly time and a 57.1% decrease in error rates, difficulties [3]. demonstrating the system’s effectiveness in improving operational Information technology has emerged as a transformative force efficiency and accuracy. By leveraging innovative information tech- in modern manufacturing, reshaping how we approach workplace nologies, the interface aligns with the human-centric principles of inclusivity and operational efficiency [4], [5]. The integration of AI- Industry 5.0, supporting diverse and adaptable manufacturing envi- driven information systems is particularly crucial in creating adap- ronments. These findings highlight the potential of smart systems tive manufacturing environments that can accommodate diverse to drive inclusivity and sustainability in industrial ecosystems. cognitive needs. These systems leverage advanced data process- ing and real-time analytics to transform traditional manufacturing CCS Concepts processes into more accessible and inclusive workflows. Recent developments in information technology have made it possible • Accessibility technolo
+
+## Keywords
+
+- Dyslexia
+- affecting 5-10% of the adult population worldwide
+- Industry 5.0
+- inclusive manufacturing
+- AI-driven interfaces
+- Dario Antonelli
+- Alessandro Simeone
+- Paolo C. Priarone
+- including increased cognitive load
+- higher error rates
+- reduced confidence and job satisfaction
+- [6]. They have broader implica- tions for workforce diversity
+- productivity
+- and overall inclusivity APIT 2025
+- Hong Kong
+- where information technology
+
+## Concept index (graph hooks + página)
+
+<a id="concept-dyslexia"></a>
+### [PDF p.?] Concept: Dyslexia
+- Locator: `R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.pdf` · página **?**
+
+<a id="concept-affecting-5-10-of-the-adult-population-worldwide"></a>
+### [PDF p.1] Concept: affecting 5-10% of the adult population worldwide
+- Locator: `R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.pdf` · página **1**
+
+<a id="concept-industry-5-0"></a>
+### [PDF p.1] Concept: Industry 5.0
+- Locator: `R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.pdf` · página **1**
+
+<a id="concept-inclusive-manufacturing"></a>
+### [PDF p.1] Concept: inclusive manufacturing
+- Locator: `R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.pdf` · página **1**
+
+<a id="concept-ai-driven-interfaces"></a>
+### [PDF p.1] Concept: AI-driven interfaces
+- Locator: `R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.pdf` · página **1**
+
+<a id="concept-dario-antonelli"></a>
+### [PDF p.1] Concept: Dario Antonelli
+- Locator: `R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.pdf` · página **1**
+
+<a id="concept-alessandro-simeone"></a>
+### [PDF p.1] Concept: Alessandro Simeone
+- Locator: `R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.pdf` · página **1**
+
+<a id="concept-paolo-c-priarone"></a>
+### [PDF p.1] Concept: Paolo C. Priarone
+- Locator: `R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.pdf` · página **1**
+
+<a id="concept-including-increased-cognitive-load"></a>
+### [PDF p.1] Concept: including increased cognitive load
+- Locator: `R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.pdf` · página **1**
+
+<a id="concept-higher-error-rates"></a>
+### [PDF p.1] Concept: higher error rates
+- Locator: `R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.pdf` · página **1**
+
+<a id="concept-reduced-confidence-and-job-satisfaction"></a>
+### [PDF p.1] Concept: reduced confidence and job satisfaction
+- Locator: `R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.pdf` · página **1**
+
+<a id="concept-6-they-have-broader-implica-tions-for-workforce-diversity"></a>
+### [PDF p.1] Concept: [6]. They have broader implica- tions for workforce diversity
+- Locator: `R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.pdf` · página **1**
+
+<a id="concept-productivity"></a>
+### [PDF p.1] Concept: productivity
+- Locator: `R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.pdf` · página **1**
+
+<a id="concept-and-overall-inclusivity-apit-2025"></a>
+### [PDF p.1] Concept: and overall inclusivity APIT 2025
+- Locator: `R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.pdf` · página **1**
+
+<a id="concept-hong-kong"></a>
+### [PDF p.?] Concept: Hong Kong
+- Locator: `R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.pdf` · página **?**
+
+<a id="concept-where-information-technology"></a>
+### [PDF p.1] Concept: where information technology
+- Locator: `R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.pdf` · página **1**
+
+<a id="concept-r299"></a>
+### [PDF p.?] Concept: R299
+- Locator: `R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.pdf` · página **?**
+
+<a id="concept-driven"></a>
+### [PDF p.?] Concept: driven
+- Locator: `R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.pdf` · página **?**
+
+<a id="concept-inclusive"></a>
+### [PDF p.?] Concept: inclusive
+- Locator: `R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.pdf` · página **?**
+
+<a id="concept-manufacturing"></a>
+### [PDF p.1] Concept: manufacturing
+- Locator: `R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.pdf` · página **1**
+
+<a id="concept-interfaces"></a>
+### [PDF p.?] Concept: interfaces
+- Locator: `R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.pdf` · página **?**
+
+<a id="concept-leveraging"></a>
+### [PDF p.?] Concept: leveraging
+- Locator: `R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.pdf` · página **?**
+
+<a id="concept-information"></a>
+### [PDF p.?] Concept: information
+- Locator: `R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.pdf` · página **?**
+
+<a id="concept-technology"></a>
+### [PDF p.?] Concept: technology
+- Locator: `R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.pdf` · página **?**
+
+
+## Findings index (graph hooks + página)
+
+<a id="finding-leveraging-information-technology-for-co"></a>
+### [PDF p.1] Finding: Leveraging Information Technology for Cognitive Diversity in Industry The transition to Industry 5.0 emphasizes the need for inclusive 5.0.
+- Locator: `R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.pdf` · página **1**
+
+<a id="finding-in-2025-7th-asia-pacific-information-tec"></a>
+### [PDF p.1] Finding: In 2025 7th Asia Pacific Information Technology Conference (APIT 2025), January 10–12, 2025, Hong Kong, China.
+- Locator: `R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.pdf` · página **1**
+
+<a id="finding-and-intelligent-systems-in-manufacturing"></a>
+### [PDF p.1] Finding: and intelligent systems in manufacturing.
+- Locator: `R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.pdf` · página **1**
+
+<a id="finding-traditional-text-based-as-https-doi-o"></a>
+### [PDF p.1] Finding: Traditional text-based as- https://doi.org/10.1145/3726101.3726115 sembly instructions can create barriers for workers with cognitive diversity, including dyslexia, by making tasks more challenging and less accessible.
+- Locator: `R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.pdf` · página **1**
+
+<a id="finding-the-system-provides-real-time-multi-le"></a>
+### [PDF p.1] Finding: The system provides real-time, multi- lenges for operators with reading-related neurodiversity, particu- modal guidance through voice, visual, and interactive instructions larly those with dyslexia [1], [2].
+- Locator: `R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.pdf` · página **1**
+
+<a id="finding-recent-studies-highlight-that-up-to-tail"></a>
+### [PDF p.1] Finding: Recent studies highlight that up to tailored to individual needs, effectively reducing cognitive load and 80% of assembly instructions in surveyed manufacturing plants are enhancing task performance.
+- Locator: `R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.pdf` · página **1**
+
+
+## Relevance hooks
+### Theme relevance: software engineering and accessibility
+### Theme relevance: cognitive accessibility and neurodiversity
+### Theme relevance: evaluation metrics and WCAG
+
+## Sections (detected in PDF)
+
+<a id="p1-1-introduction"></a>
+### [PDF p.1] Section: 1 Introduction
+- Locator: `R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.pdf` · página **1** · ancla `#p1-1-introduction`
+
+<a id="p4-4-1-assembly-tasks"></a>
+### [PDF p.4] Section: 4.1 Assembly Tasks
+- Locator: `R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.pdf` · página **4** · ancla `#p4-4-1-assembly-tasks`
+
+
+## Page chunks (texto por página del PDF)
+
+_Cada heading es un nodo Graphify. El label incluye la página para volver al PDF sin releer todo._
+
+<a id="pdf-p1"></a>
+### [PDF p.1] AI-Driven Inclusive Manufacturing Interfaces: Leveraging
+- Locator: `R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.pdf` · página **1** / 7
+
+AI-Driven Inclusive Manufacturing Interfaces: Leveraging
+  Information Technology for Cognitive Diversity in Industry 5.0
+                     Yuchen Fan                                            Dario Antonelli                                   Alessandro Simeone
+       Politecnico di Torino, Turin, Italy                       Politecnico di Torino, Turin, Italy                   Politecnico di Torino, Turin, Italy
+       Department of Management and                              Department of Management and                          Department of Management and
+            Production Engineering                                    Production Engineering                                Production Engineering
+                  Turin, Italy                                               Turin, Italy                                         Turin, Italy
+             yuchen.fan@polito.it                                     dario.antonalli@polito.it                         alessandro.simeone@polito.it
+
+                                            Paolo C. Priarone                                           Luca Settineri
+                                    Politecnico di Torino, Turin, Italy                      Politecnico di Torino, Turin, Italy
+                                    Department of Management and                             Department of Management and
+                                         Production Engineering                                   Production Engineering
+                                               Turin, Italy                                             Turin, Italy
+                                     paoloclaudio.priarone@polito.it                              luca.settineri@polito.it
+
+Abstract                                                                                     Leveraging Information Technology for Cognitive Diversity in Industry
+The transition to Industry 5.0 emphasizes the need for inclusive                             5.0. In 2025 7th Asia Pacific Information Technology Conference (APIT 2025),
+                                                                                             January 10–12, 2025, Hong Kong, China. ACM, New York, NY, USA, 7 pages.
+and intelligent systems in manufacturing. Traditional text-based as-
+                                                                                             https://doi.org/10.1145/3726101.3726115
+sembly instructions can create barriers for workers with cognitive
+diversity, including dyslexia, by making tasks more challenging
+and less accessible. This study introduces an AI-driven smart man-
+                                                                                             1    Introduction
+ufacturing interface designed to address these challenges through                            Manufacturing environments have historically relied heavily on
+an integrated approach combining computer vision techniques and                              written instructions and visual cues, presenting significant chal-
+natural language processing. The system provides real-time, multi-                           lenges for operators with reading-related neurodiversity, particu-
+modal guidance through voice, visual, and interactive instructions                           larly those with dyslexia [1], [2]. Recent studies highlight that up to
+tailored to individual needs, effectively reducing cognitive load and                        80% of assembly instructions in surveyed manufacturing plants are
+enhancing task performance. Experimental results show a 22.1%                                primarily text-based, potentially hindering workers with reading
+reduction in assembly time and a 57.1% decrease in error rates,                              difficulties [3].
+demonstrating the system’s effectiveness in improving operational                               Information technology has emerged as a transformative force
+efficiency and accuracy. By leveraging innovative information tech-                          in modern manufacturing, reshaping how we approach workplace
+nologies, the interface aligns with the human-centric principles of                          inclusivity and operational efficiency [4], [5]. The integration of AI-
+Industry 5.0, supporting diverse and adaptable manufacturing envi-                           driven information systems is particularly crucial in creating adap-
+ronments. These findings highlight the potential of smart systems                            tive manufacturing environments that can accommodate diverse
+to drive inclusivity and sustainability in industrial ecosystems.                            cognitive needs. These systems leverage advanced data process-
+                                                                                             ing and real-time analytics to transform traditional manufacturing
+CCS Concepts                                                                                 processes into more accessible and inclusive workflows. Recent
+                                                                                             developments in information technology have made it possible
+• Accessibility technologies; • Computer-aided manufactur-
+                                                                                             to create intelligent interfaces that can adapt to different learning
+ing; • Sensor networks;
+                                                                                             styles and cognitive preferences, marking a significant step forward
+                                                                                             in making manufacturing more accessible to all workers.
+Keywords
+                                                                                                Dyslexia, affecting 5-10% of the adult population worldwide,
+Industry 5.0, inclusive manufacturing, AI-driven interfaces, human-                          necessitates a reevaluation of traditional instruction methods in
+machine interaction, cognitive diversity                                                     industrial manufacturing [6]. The continued reliance on text-heavy
+ACM Reference Format:                                                                        instructions not only impacts individual performance but also con-
+Yuchen Fan, Dario Antonelli, Alessandro Simeone, Paolo C. Priarone,                          tradicts the principles of inclusive design in modern manufacturing
+and Luca Settineri. 2025. AI-Driven Inclusive Manufacturing Interfaces:                      environments [7]. These text-based instructions pose several chal-
+                                                                                             lenges for dyslexic operators, including increased cognitive load,
+                                                                                             higher error rates, reduced confidence and job satisfaction, and
+This work is licensed under a Creative Commons Attribution International 4.0 License.        limited career progression [2], [6]. They have broader implica-
+                                                                                             tions for workforce diversity, productivity, and overall inclusivity
+APIT 2025, Hong Kong, China                                                                  in manufacturing.
+© 2025 Copyright held by the owner/author(s).
+ACM ISBN 979-8-4007-0728-5/2025/01                                                              The emergence of Industry 5.0 has brought a renewed focus
+https://doi.org/10.1145/3726101.3726115                                                      on human-centric manufacturing, where information technology
+
+
+
+
+                                                                                        72
+
+<a id="pdf-p2"></a>
+### [PDF p.2] APIT 2025, January 10–12, 2025, Hong Kong, China Yuchen Fan et al.
+- Locator: `R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.pdf` · página **2** / 7
+
+APIT 2025, January 10–12, 2025, Hong Kong, China                                                                                      Yuchen Fan et al.
+
+
+serves as a bridge between human capabilities and automated sys-              processes through real-time data analytics, intelligent decision sup-
+tems [8], [9]. This paradigm shift emphasizes the need for intelligent        port, and adaptive control systems [14]. Recent studies of big data
+information systems that can enhance human-machine interaction                analytics in manufacturing demonstrate how modern information
+while accommodating individual differences. Our research aligns               systems can systematically integrate and process multi-source data
+closely with this vision by developing information processing so-             streams, serving as a foundational element for Industry 5.0’s digital
+lutions that support cognitive diversity in manufacturing environ-            transformation and enabling more responsive and efficient produc-
+ments. This approach not only addresses immediate operational                 tion environments [15]. These systems are increasingly incorpo-
+challenges but also contributes to the broader goals of creating              rating artificial intelligence to enhance their capability to adapt to
+more adaptable and inclusive industrial workplaces.                           different user needs and operational contexts. Recent systematic
+   To address these challenges, this research aims to develop and             reviews of AI applications in management information systems
+evaluate a dyslexic-friendly digital instruction system for manu-             highlight how intelligent process automation and predictive ana-
+facturing assembly tasks. The objectives include designing a mul-             lytics are creating more responsive manufacturing environments,
+timodal human-machine interface, developing a real-time error                 where information systems serve as key enablers for both auto-
+detection system, leveraging large language models for person-                mated processes and human-centric operations [16].
+alized instructions, and evaluating the system’s effectiveness in                Artificial Intelligence (AI) could further enhance HMIs in manu-
+improving task performance and user satisfaction among dyslexic               facturing through increasingly sophisticated applications. Modern
+operators.                                                                    object detection algorithms now offer unprecedented accuracy in
+   Based on these manufacturing challenges, this research aims                real-time quality control and error detection [17], while large lan-
+to develop an intelligent information processing framework that               guage models demonstrate remarkable potential for generating
+integrates computer vision, natural language processing, and adap-            context-aware and personalized instructions [18]. These techno-
+tive interface technologies. The primary goal is to create a system           logical advances, combined with improved information processing
+that supports cognitive diversity through real-time error detection           capabilities, present significant opportunities for creating more
+and personalized instruction delivery. The framework combines                 inclusive and efficient manufacturing environments that can adapt
+YOLOv7-based object detection with context-aware instruction gen-             to diverse user needs and preferences.
+eration, focusing on operators with reading-related neurodiversity.              The literature indicates a need for a comprehensive approach to
+The significance of this work is particularly relevant as manufactur-         HMI design in manufacturing, integrating accessibility principles,
+ing transitions to Industry 5.0, where human-centered approaches              multimodal interaction, and AI-driven personalization. Such an
+are increasingly important.                                                   approach could address the needs of neurodiverse workers while
+   This study is targeted to contribute to inclusive manufacturing by         enhancing overall productivity and user satisfaction in industrial
+integrating advanced technologies to address the needs of dyslexic            settings.
+operators. Aligning with Industry 5.0 principles of human-centric
+design, the findings have the potential to improve productivity,
+reduce errors, and create more diverse and efficient manufacturing            3   METHODOLOGY
+environments, with possible applications to support various forms             This digital instruction system is designed to provide real-time,
+of neurodiversity in industrial settings.                                     personalized support for dyslexic operators in manufacturing envi-
+                                                                              ronments through integrated information processing and adaptive
+                                                                              data flows. At its core, the system processes and coordinates multi-
+2    LITERATURE REVIEW                                                        ple data streams, including real-time visual inputs, user interactions,
+Human-machine interfaces (HMIs) in manufacturing have evolved                 and system feedback, to create a cohesive and responsive manu-
+from paper-based instructions to sophisticated digital systems, in-           facturing support environment. The system architecture consists
+corporating interactive elements and real-time feedback [1], [10].            of four integrated components: (i) a User Interface, (ii) a Visual
+These advancements aim to enhance worker performance and re-                  Object Detection and Error Classification System, (iii) a Personal-
+duce errors, even if their implementation remains inconsistent                ized Instruction Generator, and (iv) a module for Dyslexic Operator
+across industries [3].                                                        Interactions, as shown in Fig.1.
+   Universal design principles in HMIs emphasize flexibility, sim-               The system implements an integrated information architecture
+plicity, and perceptible information, improving accessibility for all         that orchestrates three key data streams: real-time visual inputs
+workers [11]. Multimodal interfaces, combining visual, auditory,              from assembly operations, user interaction signals, and system feed-
+and haptic feedback, have shown effectiveness in reducing cog-                back responses. This unified data flow enables rapid error detection
+nitive load during assembly tasks [12]. The software industry’s               while maintaining system responsiveness to operator needs. This
+customizable interfaces offer valuable insights for manufacturing             integrated approach ensures that all system components work in
+applications, demonstrating the potential for personalized HMIs               harmony to provide timely and relevant support to operators.
+catering to diverse cognitive needs [13].                                        This multimodal approach creates an inclusive learning environ-
+   Beyond interface design considerations, the role of information            ment while maintaining operational efficiency.
+technology in manufacturing has undergone significant transforma-                The User Interface functions as an information hub that combines
+tion in recent years, particularly in the context of smart manufac-           visual guidance with voice instructions for assembly operations.
+turing environments. Recent comprehensive reviews highlight how               The interface presents assembly information through three coordi-
+advanced information systems are revolutionizing manufacturing                nated channels:
+
+
+
+
+                                                                         73
+
+<a id="pdf-p3"></a>
+### [PDF p.3] Figure 1: System architecture overview
+- Locator: `R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.pdf` · página **3** / 7
+
+AI-Driven Inclusive Manufacturing Interfaces: Leveraging Information Technology for Cognitive Diversity in Industry 5.0   APIT 2025, January 10–12, 2025, Hong Kong, China
+
+
+
+
+                                                           Figure 1: System architecture overview
+
+
+
+
+                                                                   Figure 2: The User Interface
+
+
+   The visual component displays real-time camera feeds alongside                            The interface incorporates adaptive layout principles that ad-
+component identification markers, with clear component outlines                           just to user preferences and interaction patterns, ensuring optimal
+and tool positions highlighted for easy recognition. A dedicated                          information accessibility. Interactive elements are strategically
+section shows the current assembly step with corresponding com-                           positioned to create an intuitive workflow, with clear visual hierar-
+ponent images and tool requirements. The voice instruction system                         chies guiding operators through complex assembly sequences. The
+provides step-by-step guidance through text-to-speech conversion,                         system presents assembly instructions through multiple modalities
+offering clear directives particularly beneficial for operators with                      - audio, visual, and textual formats - allowing operators to choose
+reading difficulties. These elements work in concert to provide                           their preferred method of information intake. This multimodal
+clear task guidance while accommodating different information                             approach creates a flexible and inclusive learning environment that
+processing preferences.                                                                   adapts to individual cognitive preferences.
+
+
+
+
+                                                                                    74
+
+<a id="pdf-p4"></a>
+### [PDF p.4] APIT 2025, January 10–12, 2025, Hong Kong, China Yuchen Fan et al.
+- Locator: `R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.pdf` · página **4** / 7
+
+APIT 2025, January 10–12, 2025, Hong Kong, China                                                                                     Yuchen Fan et al.
+
+
+
+
+                                         Figure 3: Horizontal bare-shaft centrifugal pump components
+
+
+   The Visual Object Detection and Error Classification System               4 CASE STUDY
+functions as the system’s primary data acquisition and analysis
+                                                                             4.1 Assembly Tasks
+engine. This module leverages advanced computer vision tech-
+niques, including YOLOv7 [19], selected for its specific advantages          For this study, the assembly of a horizontal bare-shaft centrifu-
+in manufacturing environments: (1) high inference speed (30ms per            gal pump was selected. This choice was motivated by the pump’s
+detection) essential for real-time monitoring, (2) superior accuracy         complexity, involving 26 distinct components and 7 different tools
+in detecting small manufacturing components (mAP of 0.993 at                 (as shown in Fig.3), which provided a suitably challenging task to
+IoU=0.5), and (3) robust performance under the varying lighting              evaluate the system. The diverse operations required in the assem-
+conditions common in industrial environments. These capabilities             bly process, such as aligning, threading, and securing components,
+make it particularly well suited for continuous assembly monitor-            allowed for comprehensive testing of the system across various
+ing compared to alternatives such as Faster R-CNN or YOLO v5.                task types.
+The system continuously processes visual data streams from the
+assembly area, identifying and tracking components and tools with            4.2    Experimental Setup
+high precision. When an error is detected, the system processes              The assembly workstation consisted of a standard industrial work-
+this information through multiple classification layers, categorizing        bench equipped with the necessary tools and components. A web-
+issues into component-, tool-, or operation-related categories. This         cam was installed above the workstation for real-time monitoring
+sophisticated error classification process generates detailed error          of the assembly process. This dyslexic-friendly digital instruction
+logs that feed into both immediate operator feedback and long-term           system was integrated into the workstation, including: (i) a com-
+system optimization.                                                         puter running the custom-trained YOLOv7 object detection model;
+   Upon error detection, the Personalized Instruction Generator              (ii) noise-cancelling headphones for audio instructions; (iii) a large,
+activates its information synthesis processes. This component,               high-contrast screen display for visual aids; (iv) a processing unit
+powered by GPT-4, creates context-aware, dyslexic-friendly in-               for error detection and instruction generation, as shown in Fig.4.
+structions by processing multiple data inputs: the specific error
+type, current assembly stage, and historical operator interaction
+patterns. The resulting instructions are optimized through natural           5     RESULTS AND DISCUSSION
+language processing to ensure clarity and accessibility, featuring           This study evaluated the effectiveness of a dyslexic-friendly digital
+simplified language structures, active voice, and concrete terms that        instruction system for manufacturing assembly tasks, comparing it
+enhance comprehension for dyslexic users. The system’s text-to-              with traditional text-based instructions. The results demonstrate
+speech component further processes these instructions into clear             significant improvements in various performance metrics, including
+audio output, providing additional accessibility options.                    both task completion efficiency and error reduction.
+   The Dyslexic Operator Interactions module serves as the final                The digital instruction system significantly reduced the average
+integration point for all system processes, enabling operators to            assembly time for the horizontal bare-shaft centrifugal pump from
+engage with the assembled information through various interaction            25.3 minutes (SD = 3.2) with the traditional system to 19.7 minutes
+modes including assembly operations, error cancellation, and re-             (SD = 2.5), representing a 22.1% improvement. This reduction in as-
+learning processes. This module continuously monitors and adapts             sembly time indicates enhanced efficiency and potentially reduced
+to operator preferences and interaction patterns, ensuring the sys-          cognitive load for operators with dyslexia.
+tem remains responsive to individual needs.                                     A substantial decrease in the overall error rate was observed,
+                                                                             with the traditional system resulting in an average of 2.8 errors
+                                                                             per assembly (SD = 0.7), while the digital system reduced this
+                                                                             to 1.2 errors per assembly (SD = 0.4), marking a 57.1% reduction.
+
+
+
+
+                                                                        75
+
+<a id="pdf-p5"></a>
+### [PDF p.5] Figure 4: Experimental scenario.
+- Locator: `R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.pdf` · página **5** / 7
+
+AI-Driven Inclusive Manufacturing Interfaces: Leveraging Information Technology for Cognitive Diversity in Industry 5.0   APIT 2025, January 10–12, 2025, Hong Kong, China
+
+
+
+
+                                                                Figure 4: Experimental scenario.
+
+ Hey Yuchen,
+ It looks like there was a small mistake in the assembly process. In step S6, you picked up the wrong component.
+ Here’s what to do to fix it:
+ 1. Stop the current task.
+ 2. Remove the ’Drive shaft companion flange’ from the assembly area.
+ 3. Find and pick up the correct component: ’Hex cap screw (big), C26’.
+ 4. Thread the ’Hex cap screw (big), C26’ by hand into the threaded hole above the support (C1).
+ After you’re done, double-check your work to make sure that the ’Hex cap screw (big), C26’ is properly installed.
+ If you need any more help, just let us know.
+
+
+                                        Figure 5: Digital instructions transcription example (from Error 1).
+
+
+This significant improvement in accuracy suggests that the digital                        components and tools, contributing to the system’s ability to detect
+system not only aids in faster assembly but also in error prevention                      errors quickly and accurately.
+through its integrated information processing approach.                                      In addition to the quantitative improvements, the system lever-
+   The digital instruction system demonstrated remarkable improve-                        aged GPT-4 to generate personalized, dyslexic-friendly instructions
+ments in error handling times. For component-related errors (E1),                         based on detected errors. For example, when the system detected
+the time required decreased from 94 seconds in the traditional                            a component-related error (E1), it generated the prompt shown
+system to 36 seconds in the digital system, a reduction of 61.7%.                         in Fig.5. These results demonstrate that the dyslexic-friendly digi-
+For tool-related errors (E2), error handling time reduced from 88                         tal instruction system could significantly enhance assembly task
+seconds to 52 seconds, representing a 40.9% improvement.                                  performance for operators with reading-related neurodiversities.
+   For E1, instruction input time decreased by 46.8% (from 27.8 to
+14.8 seconds), error detection time saw a dramatic 95.6% reduction
+(from 45 to 2 seconds), and error rectification time improved by                          6     CONCLUSION
+90.9% (from 33 to 3 seconds). For E2, instruction input time re-                          This study demonstrates the significant potential of integrating
+duced by 33.8% (from 14.8 to 9.8 seconds) and error detection time                        advanced information technologies to create an inclusive digital
+improved by 92.0% (from 25 to 2 seconds).                                                 instruction system for manufacturing environments. Through the
+   The YOLOv7 model, a key component of this digital instruction                          innovative combination of computer vision, natural language pro-
+system, demonstrated high accuracy in object detection with an                            cessing, and adaptive interface design, our system showcases how
+overall mAP@.5 of 0.993 and mAP@.5:.95 of 0.899, and precision                            modern IT solutions can effectively address workplace accessibil-
+(P) of 0.992 and recall (R) of 0.94 across all classes. These perfor-                     ity challenges. The empirical results provide compelling evidence
+mance metrics indicate that the model is effective in identifying                         for the value of intelligent information systems in creating more
+                                                                                          inclusive manufacturing environments.
+
+
+
+
+                                                                                    76
+
+<a id="pdf-p6"></a>
+### [PDF p.6] APIT 2025, January 10–12, 2025, Hong Kong, China Yuchen Fan et al.
+- Locator: `R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.pdf` · página **6** / 7
+
+APIT 2025, January 10–12, 2025, Hong Kong, China                                                                                   Yuchen Fan et al.
+
+
+          Table 1: PERFORMANCE COMPARISON BETWEEN TRADITIONAL AND DIGITAL INSTRUCTION SYSTEMS
+
+ Metric                                            Traditional System               Digital System                  Improvement
+ Average Assembly Time (minutes)            25.3 (SD = 3.2)                         19.7 (SD = 2.5)                 22.1% reduction
+ Overall Error Rate                         2.8 (SD = 0.7)                          1.2 (SD = 0.4)                  57.1% reduction
+ Error E1 (Component-related) Timeline (seconds)
+ Instruction Reading                        27.8                                    15.0                            46.0% reduction
+ Component Selection                        5.0                                     5.0                             No change
+ Component Movement                         3.0                                     3.0                             No change
+ Error Detection                            45.0                                    2.0                             95.6% reduction
+ Error Information                          20.0                                    20.0                            No change
+ Error Recovery                             33.0                                    3.0                             90.9% reduction
+ Component Reselection                      5.0                                     5.0                             No change
+ Component Movement 2                       3.0                                     3.0                             No change
+ Error Detection 2                          10.0                                    2.0                             80.0% reduction
+ Total Time for E1                          151.8                                   58.0                            61.8% reduction
+ Error E2 (Tool-related) Timeline (seconds)
+ Instruction Reading                        15.0                                    10.0                            33.3% reduction
+ Tool Selection                             5.0                                     5.0                             No change
+ Tool Movement                              3.0                                     3.0                             No change
+ Error Detection                            25.0                                    2.0                             92.0% reduction
+ Error Information                          18.0                                    18.0                            No change
+ Error Recovery                             3.0                                     3.0                             No change
+ Tool Reselection                           5.0                                     5.0                             No change
+ Tool Movement 2                            3.0                                     3.0                             No change
+ Error Detection 2                          10.0                                    2.0                             80.0% reduction
+ Total Time for E2                          87.0                                    51.0                            41.4% reduction
+ YOLOv7 Model Performance
+ mAP@.5                                     N/A                                     0.993                           N/A
+ mAP@.5:.95                                 N/A                                     0.899                           N/A
+ Precision (P)                              N/A                                     0.992                           N/A
+ Recall (R)                                 N/A                                     0.94                            N/A
+
+
+   The integration of YOLOv7 for real-time object detection and                  • Scalable Information Architecture: Design flexible data struc-
+GPT-4 for context-aware instruction generation represents a novel                  tures and processing pipelines that can accommodate vary-
+application of cutting-edge information technologies in manufac-                   ing levels of manufacturing complexity and different types
+turing. This approach not only improved operational efficiency but                 of assembly operations. This includes developing modular
+also demonstrated how sophisticated IT systems can be leveraged to                 system components that can be easily adapted to different
+support workforce diversity. The significant reductions in assembly                production contexts.
+time (22.1%) and error rates (57.1%) highlight the practical benefits            • Cognitive Load Assessment: Integrate real-time cognitive
+of implementing intelligent information processing solutions in                    load monitoring using physiological sensors, with adaptive
+industrial settings.                                                               information delivery mechanisms that automatically adjust
+   While this study demonstrates promising results, several areas                  instruction complexity based on operator response patterns.
+warrant further investigation. The current implementation primar-                • Collaborative Robotics: Investigate the integration of collab-
+ily focuses on visual and auditory information processing, which                   orative robots with this system to provide physical assistance
+could be expanded to incorporate more diverse data streams and                     and real-time guidance, enhancing workplace inclusivity and
+interaction modalities. Future research directions should address                  enabling more complex assembly tasks.
+both technical advancement and system scalability:
+                                                                                As manufacturing environments continue to evolve toward In-
+                                                                             dustry 5.0, the development of intelligent and inclusive information
+     • System Interoperability: Develop standardized protocols for           systems becomes increasingly critical. Our approach demonstrates
+       integrating the digital instruction system with existing man-         how thoughtfully designed IT solutions can enhance both productiv-
+       ufacturing execution systems (MES) and enterprise resource            ity and workplace inclusivity. By leveraging advanced information
+       planning (ERP) platforms. This would enable seamless data             processing capabilities while maintaining a human-centric focus,
+       exchange and broader system adoption across different man-            such systems can contribute significantly to creating more efficient,
+       ufacturing environments.                                              adaptable, and inclusive manufacturing environments.
+
+
+
+
+                                                                        77
+
+<a id="pdf-p7"></a>
+### [PDF p.7] Acknowledgments [10] S. Kernan Freire, M. Foosherian, C. Wang, and E. Niforatos, “Harnessing Large
+- Locator: `R299-ai-driven-inclusive-manufacturing-interfaces-leveraging-information-technology-f.pdf` · página **7** / 7
+
+AI-Driven Inclusive Manufacturing Interfaces: Leveraging Information Technology for Cognitive Diversity in Industry 5.0              APIT 2025, January 10–12, 2025, Hong Kong, China
+
+
+Acknowledgments                                                                                    [10] S. Kernan Freire, M. Foosherian, C. Wang, and E. Niforatos, “Harnessing Large
+                                                                                                        Language Models for Cognitive Assistants in Factories,” in Proceedings of the
+The authors gratefully acknowledge ALDO BARBERA srl of Bran-                                            5th International Conference on Conversational User Interfaces, in CUI ’23. New
+dizzo, Torino, Italy, for providing the resources for the case study.                                   York, NY, USA: Association for Computing Machinery, Jul. 2023, pp. 1–6. doi:
+                                                                                                        10.1145/3571884.3604313.
+                                                                                                   [11] V. Villani, L. Sabattini, J. N. Czerniaki, A. Mertens, B. Vogel-Heuser, and C. Fan-
+References                                                                                              tuzzi, “Towards modern inclusive factories: A methodology for the development
+ [1] S. Mittal, M. Khan, D. Romero, and T. Wuest, “Smart Manufacturing: Character-                      of smart adaptive human-machine interfaces,” in 2017 22nd IEEE International
+     istics, Technologies and Enabling Factors,” Proc. Inst. Mech. Eng. Part B J. Eng.                  Conference on Emerging Technologies and Factory Automation (ETFA), Sep. 2017,
+     Manuf., vol. 233, pp. 1342–1361, Apr. 2019, doi: 10.1177/0954405417736547.                         pp. 1–7. doi: 10.1109/ETFA.2017.8247634.
+ [2] A. Simeone, Y. Fan, D. Antonelli, A. R. Catalano, P. C. Priarone, and L. Settineri,           [12] S. Feng, X. He, W. He, and M. Billinghurst, “Can you hear it? Stereo sound-
+     “Inclusive manufacturing: A contribution to assembly processes with human-                         assisted guidance in augmented reality assembly,” Virtual Real., vol. 27, no. 2, pp.
+     machine reciprocal learning,” CIRP Ann., May 2024, doi: 10.1016/j.cirp.2024.03.005.                591–601, Jun. 2023, doi: 10.1007/s10055-022-00680-0.
+ [3] S. Mattsson, Å. Fast-Berglund, and D. Li, “Evaluation of Guidelines for Assembly              [13] L. Rello, G. Kanvinde, and R. Baeza-Yates, “Layout guidelines for web text and
+     Instructions,” IFAC-Pap., vol. 49, no. 12, pp. 209–214, Jan. 2016, doi: 10.1016/j.ifa-             a web service to improve accessibility for dyslexics,” in Proceedings of the Inter-
+     col.2016.07.598.                                                                                   national Cross-Disciplinary Conference on Web Accessibility, in W4A ’12. New
+ [4] K.-D. Thoben, S. Wiesner, and T. Wuest, “‘Industrie 4.0’ and Smart Manufacturing                   York, NY, USA: Association for Computing Machinery, Apr. 2012, pp. 1–9. doi:
+     – A Review of Research Issues and Application Examples,” Int. J. Autom. Technol.,                  10.1145/2207016.2207048.
+     vol. 11, pp. 4–19, Jan. 2017, doi: 10.20965/ijat.2017.p0004.                                  [14] B. Wang, F. Tao, X. Fang, C. Liu, Y. Liu, and T. Freiheit, “Smart Manufacturing
+ [5] C. Liu and X. Xu, “Cyber-physical Machine Tool – The Era of Machine Tool 4.0,”                     and Intelligent Manufacturing: A Comparative Review,” Engineering, vol. 7, no. 6,
+     Procedia CIRP, vol. 63, pp. 70–75, Jan. 2017, doi: 10.1016/j.procir.2017.03.078.                   pp. 738–757, Jun. 2021, doi: 10.1016/j.eng.2020.07.017.
+ [6] S. Kernan Freire, M. Foosherian, C. Wang, and E. Niforatos, “Harnessing Large                 [15] E. G. Popkova, “Big Data: A System-Forming Role in the Development of the
+     Language Models for Cognitive Assistants in Factories,” in Proceedings of the                      Information Society and the Digital Economy for the Transition to Industry 5.0,”
+     5th International Conference on Conversational User Interfaces, in CUI ’23. New                    in Big Data in Information Society and Digital Economy, A. V. Bogoviz, Ed., Cham:
+     York, NY, USA: Association for Computing Machinery, Jul. 2023, pp. 1–6. doi:                       Springer International Publishing, 2023, pp. 3–9. doi: 10.1007/978-3-031-29489-
+     10.1145/3571884.3604313.                                                                           1_1.
+ [7] R. Leder, H. Stern, and M. Freitag, “Towards design guidance for the digitalisation           [16] “Artificial Intelligence for Management Information Systems: Opportunities,
+     of work instructions by focusing on technological possibilities and industrial                     Challenges, and Future Directions.” Accessed: Dec. 10, 2024. [Online]. Available:
+     requirements,” Procedia CIRP, vol. 109, pp. 466–471, Jan. 2022, doi: 10.1016/j.pro-                https://www.mdpi.com/1999-4893/16/8/357
+     cir.2022.05.279.                                                                              [17] H. Samma, S. Al-Azani, H. Luqman, and M. Alfarraj, “Contrastive-based YOLOv7
+ [8] G. Fragiadakis, C. Diou, G. Kousiouris, and M. Nikolaidou, Evaluating                              for personal protective equipment detection,” Neural Comput. Appl., vol. 36, no.
+     Human-AI Collaboration: A Review and Methodological Framework. 2024. doi:                          5, pp. 2445–2457, Feb. 2024, doi: 10.1007/s00521-023-09212-6.
+     10.48550/arXiv.2407.19098.                                                                    [18] H. Fan, X. Liu, J. Y. H. Fuh, W. F. Lu, and B. Li, “Embodied intelligence in manu-
+ [9] R. N, B. Nachiappan, A. Mathews, V. Radha, C. Viji, and J. Kovilpillai, “Indus-                    facturing: leveraging large language models for autonomous industrial robotics,”
+     try 5.0: The human-centric future of manufacturing,” 2024, pp. 562–567. doi:                       J. Intell. Manuf., Jan. 2024, doi: 10.1007/s10845-023-02294-y.
+     10.1201/9781003559085-97.                                                                     [19] “What is YOLOv7? A Complete Guide.,” Roboflow Blog. Accessed: Aug. 13, 2024.
+                                                                                                        [Online]. Available: https://blog.roboflow.com/yolov7-breakdown/
+
+
+
+
+                                                                                              78

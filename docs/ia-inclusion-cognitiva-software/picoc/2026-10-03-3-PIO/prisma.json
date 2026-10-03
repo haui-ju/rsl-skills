@@ -23,14 +23,29 @@
   },
   "retrieval": {
     "sought": 133,
-    "not_retrieved": 65
+    "not_retrieved": 12
   },
   "eligibility": {
-    "assessed": null,
-    "excluded_reasons": {}
+    "assessed": 120,
+    "excluded_reasons": {
+      "CI4": 25,
+      "CE1": 8,
+      "CE5": 11,
+      "CI3": 7,
+      "CE2": 1,
+      "CE3": 1,
+      "CI2": 1,
+      "CE4": 2
+    }
   },
   "included": {
-    "studies": null,
-    "reports": null
+    "studies": 73,
+    "reports": 73
+  },
+  "rsl_quota": {
+    "min_rsl": 40,
+    "incluidos_traza": 73,
+    "min_alcanzado": true,
+    "nucleo_si_podria": 73
   }
 }

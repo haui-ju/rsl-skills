@@ -1,0 +1,927 @@
+===== PDF PAGE 1 / 15 =====
+                  ARTICLE
+                  https://doi.org/10.1057/s41599-025-05079-1                OPEN
+
+                  CNReader: a reading practice tool designed for
+                  Chinese children with developmental dyslexia
+                  Lijuan Liu 1 ✉, Tuo Fang2, Enmao Liu1, Shang Shi3, Shuo Zhai3, Yang Chen4, Lingyan Zhang3, Yan Shi1 &
+                  Cheng Yao3
+
+
+
+
+1234567890():,;
+                  Developmental dyslexia among Chinese-speaking children presents distinct linguistic, cog-
+                  nitive, and information-processing deﬁciencies, negatively affecting academic performance
+                  and cognitive development. Existing dyslexia interventions largely rely on manual guidance,
+                  and due to limited resources and a narrow practice approach, results often fall short. This
+                  paper presents an innovative tool, CNReader, designed to support reading training for young
+                  Chinese children with dyslexia. Incorporating user-friendly visual text presentation, perso-
+                  nalized reading guidance, and artiﬁcial intelligence (AI) reading support, CNReader aims to
+                  stimulate and enhance children’s reading interest and ability. Our study engaged children
+                  with mild dyslexia across three experimental phases. Results demonstrated that CNReader
+                  signiﬁcantly reduced reading error rates, enhanced reading ﬂuency, and improved compre-
+                  hension. Notably, AI-paired reading emerged as both more appealing to children and more
+                  effective than conventional human-assisted approaches. Furthermore, following a 1-month
+                  training period, participants exhibited marked improvements in reading speed, accuracy, and
+                  engagement. This research validates CNReader’s efﬁcacy as an intervention tool for Chinese
+                  dyslexia and underscores the potential of AI integration in reading assistance technologies
+                  designed for children with reading disabilities.
+
+
+
+
+                  1 Hangzhou Dianzi University, Hangzhou, China. 2 China Jiliang University, Hangzhou, China. 3 Zhejiang University, Hangzhou, China. 4 National University of
+
+                  Singapore, Singapore, Singapore. ✉email: liulijuan@hdu.edu.cn
+
+                  HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | (2025)12:751 | https://doi.org/10.1057/s41599-025-05079-1                                                 1
+
+===== PDF PAGE 2 / 15 =====
+ARTICLE                                HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | https://doi.org/10.1057/s41599-025-05079-1
+
+
+
+
+D
+Introduction
+         espite having normal intelligence, motivation, and basic         improvement of phonological and morphological awareness.
+         education, children with dyslexia underperform in read-          Additionally, visual cues and interactive speech-assisted elements
+         ing ﬂuency and accuracy relative to their peers (Chen            help direct the child’s attention through the text, thereby reducing
+et al., 2018). About 8.0% of children in China reportedly struggle        spatial neglect. The AI-paired reading mode offers personalized
+with reading and writing Chinese characters and words (Liu et al.,        practice with varying reading complexities and text lengths,
+2013; Zhang et al., 2023). While dyslexia can be alleviated with          training sustained attention, and gradually enhancing the child’s
+suitable interventions (Franceschini et al., 2013; Helenius et al.,       ability to maintain focus over extended periods.
+1999; Lin et al., 2013), training and intervention for children with         We performed three experiments to assess CNReader’s effec-
+dyslexia in Chinese face multiple challenges. These include               tiveness and user experience. In Experiment 1, 75 dyslexic chil-
+insufﬁcient and uneven distribution of professional training, a           dren were involved to test CNReader’s single reading mode while
+limited number of teachers and mental health professionals, and           comparing reading accuracy, rhythm, and semantic comprehen-
+difﬁculties in providing targeted support (Ye, 2023). Moreover,           sion between the experimental and control groups. Experiment 2
+educational resources are scarce, with materials and training tools       evaluated CNReader’s AI-paired reading feature involving 44
+not designed to meet speciﬁc needs, making it challenging to              dyslexic children, comparing it with human-paired reading.
+create environments conducive to children with dyslexia (Ye,              Experiment 3 investigated CNReader’s medium and long-term
+2023). The cost of personalized treatment is high, imposing               effects, involving 15 dyslexic children and their parents in a
+ﬁnancial burdens on families, and the expense of teacher training         month-long endeavor to gauge the children’s reading levels and
+further exacerbates the issue. These problems hinder the effective        experiences post a month of CNReader training and their parents’
+intervention and long-term development of children with                   feedback. The main contributions of this paper include:
+dyslexia.                                                                    Put forward the design implications of Chinese dyslexia prac-
+   Unlike the phonological processing and decoding difﬁculties            tice tools through formative research.
+commonly observed in alphabetic languages, the logographic                   The design of an accessible reading practice tool, CNReader,
+nature of Chinese characters presents these children with unique          for children with mild Chinese dyslexia.
+challenges. Research indicates that children with Chinese dyslexia           Experimental evaluation of CNReader’s effectiveness and user
+typically exhibit deﬁcits in phonological awareness, morphologi-          experience.
+cal awareness, orthographic awareness, and rapid automatized
+naming (RAN) (Lin, 2021; Huang et al., 2023). Phonological
+awareness is crucial for decoding and understanding the sound             Related work
+structure of language, an area in which these children often              Chinese dyslexia. There is a general consensus among researchers
+struggle. Morphological awareness affects their ability to discern        that dyslexia in Chinese reading is associated with deﬁciencies in
+and use the smallest units of meaning in the language, whereas            four cognitive language skills, despite divergent views on its
+orthographic awareness involves recognizing visual patterns and           causes. These are poor phonological awareness, morphological
+the rules within the writing system. RAN deﬁcits impede the swift         awareness, poor understanding of the visual orthography of
+retrieval of linguistic information, further hindering reading ﬂu-        Chinese characters, and poor performance in RAN tasks
+ency. Mastery of prosody and rhythm signiﬁcantly enhances                 (McBride et al., 2018; Huang, 2022; Vellutino et al., 2004). As per
+children’s reading comprehension and memory in Chinese-                   the 2022 version of “Compulsory Education: Chinese Curriculum
+reading training (Li et al., 2023; Chen and Wang, 2019). In               Standards” in China, students in the ﬁrst and second grades are
+addition, spatial attention and sustained attention are key com-          required to recognize 1600 Chinese characters, and of these,
+ponents of the reading process, which are often impaired in               800 should be writable (Ministry of Education of the People’s
+children with reading difﬁculties. Studies have shown that spatial        Republic of China, 2022). However, these students’ Chinese
+attention deﬁcits in children with dyslexia may be associated with        character recognition ability falls signiﬁcantly short of this edu-
+comorbid conditions such as attention deﬁcit hyperactivity dis-           cational benchmark. Experimental data reveal that dyslexic stu-
+order, further complicating the reading process (Zhang, 2021;             dents read a single Chinese character an average of 94 ms slower
+Deng, 2023).                                                              than their age-matched peers. This delay averages 48 ms when
+   Formative research conducted with 13 dyslexic children and             reading a single number (Meng, 2018).
+their parents revealed the main difﬁculties faced by these children          Numerous research studies and various training methods have
+when learning Chinese characters in ﬁrst and second grades,               been explored to improve dyslexia, focusing on four basic
+which include character omission during reading, poor reading             principles: providing successful experiences, feedback, ample
+rhythm and prosody, reading errors, and limited sentence and              training, and individualized learning steps (Meng, 2018). Main-
+passage comprehension. Building upon previous theoretical                 stream intervention strategies primarily target physiological and
+research, we introduce CNReader, an intelligent reading appli-            cognitive aspects, with physiological interventions often utilizing
+cation. CNReader offers a user interface designed to be friendly          clinical strategies such as auditory correction and speech teaching
+for individuals with reading difﬁculties, real-time visual prompts,       (Liu et al., 2013). Comprehensive intervention programs and
+sentence segmentation assistance, an AI companion for reading,            training methods encompassing oral language, visual orthography
+and the generation of images related to the reading text to aid           knowledge, morphological awareness, and character recognition
+comprehension. By integrating enhanced speech processing,                 are widely applied to address cognitive issues (Fung et al., 2022;
+morphological understanding, and orthographic recognition                 Chung and Ho, 2010; Signor et al., 2020; Zhang and Sun, 2016).
+capabilities, CNReader aims to alleviate the reading challenges           In essence, Chinese dyslexic children need to concentrate on
+faced by children with Chinese-reading difﬁculties. CNReader              enhancing and training areas like syllable and phoneme
+employs visually presented text with color-coded cues and                 recognition, vocabulary comprehension, reading ﬂuency, reading
+structured layouts to assist children in more effectively decoding        strategies, and fostering reading interest. Nevertheless, there
+and recognizing characters, thereby enhancing orthographic                remains a scarcity of universally accepted and effective reading
+awareness. The auxiliary sentence segmentation feature provides           training aids for children with reading disorders in simpliﬁed
+guidance in reading rhythm and prosody, aiding in the                     Chinese.
+
+
+2                         HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | (2025)12:751 | https://doi.org/10.1057/s41599-025-05079-1
+
+===== PDF PAGE 3 / 15 =====
+HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | https://doi.org/10.1057/s41599-025-05079-1                                       ARTICLE
+
+Design for children with dyslexia. Dyslexic children commonly                “已”/“己,” “土”/“土”) and resolve ambiguities through contextual
+experience difﬁculties with word recognition, spelling, and                  analysis. Furthermore, AI systems can monitor reading behaviors
+decoding (International Dyslexia Association, 2021; Saunier et al.,          in real-time, identify speciﬁc difﬁculty patterns, and deliver
+2022; Yong and Asmuri, 2021). The advancements in technology,                targeted interventions (Goodman et al., 2022) while adaptively
+especially in the ﬁeld of human-computer interaction design,                 modifying content difﬁculty based on performance metrics to
+have proven effective in assisting these children. Several inter-            create individualized learning trajectories. This research leverages
+active tools like reading aids, training games, and user interfaces          these AI advantages by integrating scanning recognition, natural
+have been developed to strengthen children’s reading skills                  language processing, speech synthesis, and intelligent interaction
+(Gupta et al., 2022; Wu et al., 2019; Wessel et al., 2021). These            into the CNReader system, establishing a comprehensive frame-
+tools employ auditory, visual, and tactile stimuli to aid in                 work designed to provide precise, effective support for children
+knowledge comprehension and retention. For example, Cosmic                   with Chinese dyslexia.
+Sounds (Brennan et al., 2022) improves phonological awareness
+through word games. PhonoBlocks (Fan et al., 2016) provides a                Formative research
+multisensory learning environment using physical objects.                    Methodology. In order to gain a deeper understanding of the
+Moreover, games like Character Alive (Fan et al., 2019) use color            speciﬁc difﬁculties faced by children with mild Chinese dyslexia
+cues, radical cards, and animations to nurture Chinese literacy              during reading, and to determine the design objectives, we con-
+skills. Tools created by Osman and Uda (2014) assist in under-               ducted research including reading tests, observations, and par-
+standing word meanings through innovative visual cues like                   ental interviews. The study was conducted with 13 ﬁrst graders
+noun-speciﬁc images and verb-speciﬁc GIFs. Apps like Aug-                    with mild dyslexia, all of whom participated in the experiment
+menta11y (Gupta et al., 2021) augment reading experiences by                 with their parents’ consent. The test materials were selected from
+scanning textbooks and translating the content into a customiz-              a text in the ﬁrst-grade elementary school curriculum. During the
+able interface.                                                              observation process, we noted issues such as omissions, additions,
+   Despite advancements, current research exhibits notable                   misreading, sentence fragmentation, and difﬁculty in semantic
+limitations. First, existing intervention designs lack sophisticated         comprehension. Meanwhile, parental interviews revealed their
+personalization mechanisms (Fan et al., 2019, 2024). Children                helplessness towards their children’s reading difﬁculties due to
+with reading disabilities present heterogeneous cognitive proﬁles,           the lack of professional assistance, suitable materials for dyslexic
+yet prevailing methodologies typically employ standardized                   children, and their inability to provide adequate tutoring due to
+approaches that cannot dynamically adapt to individual disability            work commitments. Some parents also expressed that their
+characteristics. Second, current dyslexia intervention tools pre-            children’s academic performance was affected by dyslexia, but the
+dominantly need continuous professional human supervision.                   children were unable to receive adequate tutoring from their
+Although AI has demonstrated considerable efﬁcacy as educa-                  teachers.
+tional support in various contexts (Denny et al., 2024; Liu et al.,
+2024), children with dyslexia have not fully beneﬁted from these
+                                                                             Key ﬁndings and design implications. Based on the above
+technological affordances—highlighting a disparity between
+                                                                             research ﬁndings, we set the following design goals for reading
+technological potential and practical implementation for this
+                                                                             training tools for children with Chinese dyslexia:
+vulnerable population. Addressing these challenges, this research
+aims to develop a comprehensive, AI-driven solution speciﬁcally                 1. User-friendly reading interface: Design the textual format
+designed for Chinese children with developmental dyslexia,                         based on the reading preferences of children with dyslexia
+emphasizing personalized reading interventions and intelligent                     and provide them with high-quality reading training
+reading companion systems.                                                         materials.
+                                                                                2. Real-time reading feedback: Provide real-time feedback on
+                                                                                   children’s reading, marking already read content, and
+Assistive technology for dyslexia. Computer-assisted learning                      reading errors.
+can provide a multisensory experience tailored to a variety of                  3. Personalized reading guidance: Set the speed of visual
+learning styles. For dyslexic individuals, technology can offer                    guidance for reading based on individual needs, and
+auditory input via text-to-speech functionality, and visual                        provide sentence-breaking hints for long and difﬁcult
+enhancement through graphics and animations to supplement                          sentences to optimize reading rhythm.
+written content (Sidhu and Manzura, 2010; Powell et al., 2004).                 4. Diversiﬁed reading training methods: In addition to
+Assistive technologies (ATs) for dyslexia provide reading assis-                   conventional training methods, provide innovative reading
+tance through personalized parameters, including text customi-                     training modes such as human-intelligence interaction,
+zation, simpliﬁcation, text-to-speech synthesis (Haug and Klein,                   reading challenges, and automatic generation of images
+2018), combined with scanning, Optical Character Recognition                       from text content, making reading training more attractive.
+technology, character recognition technology, natural language
+processing technology, and visual recognition technology (Rau-
+schenberger et al., 2019; de Avelar et al., 2015; Fourney et al.,            Design of CNReader
+2018; Mohana et al., 2023).                                                  Based on the design objectives outlined above, we carried out the
+   ATs offer reading support and learning opportunities for                  system design for CNReader. This section primarily introduces
+children with dyslexia (Rauschenberger et al., 2019; Huss et al.,            the interface design and the reading practice mode design of
+2011; Madeira et al., 2015); however, the logographic nature and             CNReader.
+polysemic characteristics of Chinese characters present unique
+challenges that conventional approaches inadequately address. AI             Dyslexia-friendly interface. Drawing on the research of scholars
+technology, with its advanced pattern recognition and semantic               at home and abroad on dyslexia-friendly text formats, we
+processing capabilities, proves particularly suitable for managing           designed the system interface of CNReader (Rello et al., 2012;
+the morphological complexities and semantic relationships                    Rello and Yates, 2014; Yang, 2019a, 2019b). As shown in Fig. 1a,
+inherent in Chinese characters. Deep learning algorithms                     we adopted visually friendly black (000000) typeface on a cream-
+effectively discriminate between visually similar characters (e.g.,          colored (FAFAC8) background (Madeira, 2015), and set the font
+
+HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | (2025)12:751 | https://doi.org/10.1057/s41599-025-05079-1                                      3
+
+===== PDF PAGE 4 / 15 =====
+ARTICLE                                   HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | https://doi.org/10.1057/s41599-025-05079-1
+
+
+
+
+Fig. 1 CNReader functional interface. a Dyslexia-friendly interface text format; b Real-time reading feedback, misreading content marked in red; c The “|”
+symbol is used to help you know the rhythm of reading.
+
+
+
+
+Fig. 2 AI-paired reading mode. a Interface of AI-paired reading; b The AI voice assistant stops reading at random, and children need to relay the reading.
+
+size between 18 and 26 for faster reading speed (Rello et al., 2013).         week, for a total of 7 weeks (which can be extended) signiﬁcantly
+We used a Heiti font, which is friendlier to dyslexics (Yang,                 improve their vocabulary recognition, reading ﬂuency, and
+2019a, 2019b). Studies have found that the narrower the spacing               comprehension skills (Meng, 2018). In response to this, we
+between characters and lines, the longer it takes to read an article.         designed an AI voice assistant for CNReader, whose primary
+Combining this with user preferences when using the prototype                 function is to read with the children as a partner.
+on mobile devices, CNReader chose a half-character spacing and                   The current AI-paired reading mode is relay reading, where the
+1.5 line spacing (Yang, 2019a, 2019b). We also set up buttons to              voice assistant starts reading and randomly stops, and then the
+allow for personalized adjustment of font size and spacing, which             child is required to continue reading the assigned part (Fig. 2a, b).
+children can adjust based on their personal preferences. Fur-                 CNReader implements adaptive learning algorithms capable of
+thermore, CNReader has a text format conversion function,                     capturing children’s pronunciation and ﬂuency, including
+which recognizes regular text and converts it into a dyslexia-                identifying subtle errors and providing speciﬁc feedback to
+friendly mode.                                                                correct them. Additionally, it can adjust the AI reading difﬁculty
+                                                                              and speed based on a child’s progress and individual needs,
+Single-player reading practice mode. The CNReader’s single-                   dynamically altering the reading speed and the difﬁculty of the
+player practice mode facilitates repeated practice for children.              reading material.
+Children can press the button to listen to the system reading, with              Additionally, the voice assistant aims to increase the children’s
+the font color changing in real-time to denote the content that has           engagement. The voice agent’s response comprises two parts:
+been read, allowing them to keep pace. They can also choose to                Positive utterances and context-based utterances. Positive utter-
+read independently, with the system providing real-time evalua-               ances are brief verbal responses acknowledging what the children
+tion of their reading content, as shown in Fig. 1b, with incorrect            have said, such as “good,” “keep it up,” and “excellent.” Context-
+content highlighted in red. Sentence segmentation, a fundamental              based utterances provide feedback on the children’s reading
+knowledge and skill in primary school Chinese classes, is learned             results, like “You made two mistakes, try again!” or “It would be
+by the children in grades 1–2. To cater to actual Chinese-reading             great if your reading was smoother!” CNReader also integrates
+needs, the CNReader offers a sentence segmentation aid, as illu-              affective computing technology to assess and respond to the
+strated in Fig. 1c. The symbol “|” is employed to segment long                emotional states of children. For instance, if a child exhibits signs
+sentences, enabling children to analyze sentence structures                   of frustration or boredom during reading, the voice assistant can
+clearly, comprehend the meaning accurately, and enhance their                 introduce motivational statements or suggest brief interactive
+reading skills. Children can choose to enable or disable this fea-            breaks.
+ture based on their individual needs during practice.
+                                                                              Reading challenge mode. To enrich the methods of reading
+AI-paired reading mode. Paired reading is a tutoring strategy                 training and provide an engaging reading experience, CNReader
+specially designed for beginning readers and children with                    offers three different levels of reading challenge modes. As shown
+reading difﬁculties. Research has found that children participating           in Fig. 3a, in Challenge Level 1, sentences in the reading material
+in a paired reading program for 10–15 min a day, 4–5 times a                  are not segmented. Challenge success is conﬁrmed when all words
+
+4                            HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | (2025)12:751 | https://doi.org/10.1057/s41599-025-05079-1
+
+===== PDF PAGE 5 / 15 =====
+HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | https://doi.org/10.1057/s41599-025-05079-1                                              ARTICLE
+
+
+
+
+Fig. 3 Reading challenge mode. a Reading difﬁculty setting; b After the challenge is completed, the system can generate pictures according to the content
+of the article as a reward, and the child can download and save.
+
+are read correctly; in Challenge Level 2, without sentence seg-
+mentation, the system provides a visual guide at a normal reading              Table 1 Background information about the participants of
+speed, requiring children to keep up with the pace, and to read                study 1.
+the words correctly; in Challenge Level 3, children are required to
+select the image related to the reading content from several                   Group         N                        Age              RQ        SPM
+generated images. Upon successful completion of all three levels,              Baseline      25 (F = 13, M = 12)      M = 6.60,        84.04     97.40
+a reward in the form of an image related to the content of the                                                        SD = 0.49
+article is unlocked (Fig. 3b). This serves to aid in the compre-               CNReader      25 (F = 11, M = 14)      M = 6.88          83.08    96.60
+hension of the article’s content.                                                                                     SD = 0.71
+                                                                               X app         25 (F = 11, M = 14)      M = 6.64         84.36     99.08
+                                                                                                                      SD = 0.56
+Studies
+To test the effectiveness and user experience of CNReader, we
+conducted three studies. Study 1 tested the effectiveness of
+CNReader’s single-player reading practice mode. Study 2 tested                language teachers and class supervisors from the respective
+the functionality of CNReader’s AI partner reading mode, and                  schools. Prior to the commencement of the study, researchers
+Study 3 tested the medium-long-term practice effect and user                  thoroughly explained the purpose, procedures, potential risks,
+experience of CNReader. We focus on intervention for Chinese-                 and beneﬁts of the study to the children and their parents. It was
+reading children with reading disabilities in lower grades, as this           explicitly communicated that participation was entirely voluntary,
+period represents a critical window for Chinese character recog-              and individuals could withdraw at any time without any reper-
+nition and reading development. Early intervention can effec-                 cussions. All participants and their parents signed informed
+tively correct inappropriate reading patterns and establish                   consent forms. To ensure the privacy and conﬁdentiality of
+suitable strategies, thereby mitigating the negative impacts of               participant data, all personal information was anonymized and
+reading difﬁculties on children’s academic achievement and                    securely stored. Additionally, multiple measures were taken to
+psychological development (Wang, 2024).                                       safeguard the well-being of the children during the research
+   The children participating in the studies all have mild reading            process. This included providing support from school counselors
+disorders and have undergone Chinese character recognition tests              and psychologists to promptly address any signs of discomfort or
+to assess their language skills. Speciﬁcally, the assessments                 distress. Through these measures, we aim to uphold high stan-
+included tests on Chinese character recognition accuracy and                  dards of research ethics and ensure a safe and respectful research
+speed, as well as evaluations of elementary school students’                  environment for the participants. All participants received gifts as
+reading speed and comprehension level (Meng, 2000, 2018). After               a reward for their participation.
+testing, the total scores of each assessment indicator were con-                 The participants were divided into three groups: a baseline
+verted into composite scores with a mean of 100 and a standard                group, a CNReader group, and a mature Chinese children’s
+deviation of 15, resulting in the Reading Quotient (RQ) (Meng,                reading app (anonymous “X” app). The selection of Chinese
+2000, 2018). An RQ between 90 and 110 indicates typical                       children’s reading tools for the third group met the following
+developmental levels, 110 to 120 is above average, and above 120              criteria: inclusion of reading materials suitable for the age range
+is considered excellent. An RQ below 90 suggests the need for                 of the experimental subjects, display of text materials, and
+improvement and appropriate intervention (Meng, 2000, 2018).                  standard reading conditions. There were no signiﬁcant differ-
+In addition, the children also undertook Raven’s Standard Pro-                ences in age, RQ, and SPM scores of the three groups (Table 1).
+gressive Matrices to assess their non-verbal intelligence. Test
+results between 90 and 110 indicate normal intelligence.                      Procedure. We selected an article for this age group which none of
+                                                                              the participants had read before the test. Prior to the formal
+                                                                              testing, all participants underwent a baseline reading test. The
+Study 1                                                                       reading material was printed on A4 paper. The text was in size 3
+Participants. This study recruited a total of 75 ﬁrst-grade children          black KaiTi font, with pinyin in size 5, and a line spacing of
+with mild dyslexia from elementary schools in Jiujiang, China.                5 mm, adhering to the Chinese national standards for children’s
+The recruitment of participants was facilitated by Chinese                    textbook font sizes. All participants completed the reading test
+
+HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | (2025)12:751 | https://doi.org/10.1057/s41599-025-05079-1                                                5
+
+===== PDF PAGE 6 / 15 =====
+ARTICLE                                        HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | https://doi.org/10.1057/s41599-025-05079-1
+
+
+
+
+Fig. 4 Procedure of study 1.
+
+
+
+
+Fig. 5 Test scenarios of study 1. a Children in the CNReader group read using CNReader; b The textbook group read the textbook; c The app interface read
+by group X.
+
+
+
+
+ Table 2 The statistical metrics on participants’ reading performance.
+
+ Metrics                            Baseline         CNReader          X app group     Baseline and             Baseline and X        CNReader and X
+                                    group            group             (M ± SD)        CNReader                 app                   app
+                                    (M ± SD)         (M ± SD)                          Z/p                      Z/p                   Z/p
+ Finish Time/s                      171.48 ± 71.45   103.88 ± 23.03    201.2 ± 35.65 −4.124/0.000***            −2.853/0.004**        −5.745/0.000***
+ Number of reading errors            12.88 ± 6.36      8.08 ± 3.32     22.96 ± 6.42 −3.007/0.003**              −4.800/0.000***       −6.053/0.000***
+ Reading comprehension                2.48 ± 0.90      3.48 ± 0.50      2.40 ± 0.57 −3.960/0.000***             −0.410/0.682          −5.047/0.000***
+ scores
+ Reading rhythm scores                2.60 ± 0.94       3.28 ± 0.53      1.92 ± 0.27   −2.701/0.007**           −3.215/0.001***       −6.324/0.000***
+
+    **p < 0.010, ***p < 0.001.
+
+
+
+
+independently. We recorded their reading completion times and                    the comprehension of the article. The researchers documented
+conducted a difference analysis on these times. The results indi-                the entire reading process of the children.
+cated no signiﬁcant differences in reading completion times
+among the three groups of children (H = 4.087, p = 0.130).                       Data collection. We collected the children’s reading completion
+   Then, three groups were informed about the reading task prior                 times, the number of reading errors, and invited primary school
+to the test. Experimental procedure as shown in Fig. 4. The                      language teachers as experts to grade their responses to questions
+CNReader group used the CNReader’s single-player practice                        and their sense of reading rhythm on a scale of 1–5, with 5 being
+mode (Fig. 5a), which included instant reading evaluation, user-                 the highest and 1 the lowest.
+friendly reading interface, reading punctuation assistance, and
+image generation after completion of reading. The textbook                       Results. The results are shown in Table 2. Before analyzing the
+group used traditional textbook materials (Fig. 5b), and Chinese                 differences among the groups, we conducted a normality test on
+characters are annotated with pinyin. The X app group utilized                   the data. Shapiro–Wilk test showed the data of the three groups
+the X app to complete the reading task. The interface of the X app               were not normally distributed, so we chose the Mann–Whitney U
+features a reading interaction area on the left side, while the right            test for a non-parametric test.
+side displays Chinese characters with no options to adjust font                     For the average reading ﬁnish time, the Mann–Whitney U test
+size or color (Fig. 5c). The system offers three reading speed                   showed signiﬁcant differences between each of the two groups
+options: 0.5×, 1×, and 1.5×, allowing children to choose to follow               (Table 2). However, when compared to the average reading time
+along. Children conducted the reading test one by one. After                     of typical children (M = 62.43), children using CNReader still
+completing the reading, we asked the children questions related to               took longer.
+
+
+6                                HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | (2025)12:751 | https://doi.org/10.1057/s41599-025-05079-1
+
+===== PDF PAGE 7 / 15 =====
+HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | https://doi.org/10.1057/s41599-025-05079-1                                        ARTICLE
+
+
+
+
+Fig. 6 Reading errors in the textbook group and the X app group. a Mispronounced characters; b Read fewer words or read more words; c Incorrect
+punctuation; d Line skipping.
+
+                                                                                Group 1: The children ﬁrst engaged in collaborative reading
+ Table 3 Background information about the participants of                    with a researcher using printed book materials (Fig. 8a). After
+ study 2.                                                                    completing the reading session, they took a 5-min break and then
+                                                                             engaged in collaborative reading with the CNReader’s AI
+ Group     N                      Age             RQ               SPM       assistant.
+ 1         11 (F = 5, M = 6)      M = 7.36,       83.64 (<90)      98.73        Group 2: The children ﬁrst engaged in collaborative reading
+                                  SD = 0.64                                  with the AI assistant, followed by a 5-min break, and then
+ 2         11 (F = 7, M = 4)      M = 7.82,       84.27 (<90)      95.82     engaged in collaborative reading with a researcher (Fig. 8b).
+                                  SD = 0.39                                     Group 3: Each child completed the reading task alone using the
+ 3         22 (F = 11, M = 11)    M = 7.05,       85.14 (<90)      97.64     traditional textbook.
+                                  SD = 0.58                                     To control experimental variables, we standardized the reading
+                                                                             sequence and content between the AI assistant and the researcher.
+   In terms of reading errors and the rhythm scores, it showed               To differentiate between the effects of human–human collabora-
+signiﬁcant differences between each of the two groups (Table 2).             tive reading and human–AI collaborative reading, we indepen-
+   In expert evaluations of reading comprehension, the baseline              dently recorded performance data during each reading session,
+group and the CNReader group, the CNReader group and the X                   thus eliminating order effects and mixed effects. After the reading
+app group indicated signiﬁcant differences, while the baseline               session, children in group 1 and group 2 participated in a semi-
+group and the X app group showed no signiﬁcant difference                    structured interview to evaluate the interface friendliness and
+(Table 2). This suggests that the images generated by CNReader               their cooperative reading willingness towards the two reading
+based on the text can help children understand the content.                  methods. The entire experimental process was videotaped.
+   The above data results indicate that users of CNReader
+outperform those in the baseline group and the X app group. It               Data collection. We collected data on the number of reading
+is evident that the popular reading software X lacks design features         errors made by children from three groups, and invited language
+tailored for children with dyslexia, such as appropriate background,         teachers as experts to score the children’s reading ﬂuency on a
+font, text size, and color settings. Furthermore, the absence of             scale from 1 to 5. Finally, we collected data on the Group 1 and
+pinyin in X app exacerbates the reading burden for these children            Group 2 children’s perceived levels of interface friendliness and
+(Fig. 5c). Additionally, X app does not offer real-time reading              their willingness to engage in cooperative reading for the two
+guidance or error correction functionalities, preventing children            different reading methods.
+from receiving immediate feedback during reading.
+   In the reading tests, we clearly observed the linguistic                  Results. As shown in Table 4, the number of reading errors made
+characteristics of dyslexia in children. As shown in Fig. 5,                 by children when cooperating with the AI assistant was fewer than
+children in the baseline and X app groups exhibited a higher                 when cooperating with the research associates. Shapiro–Wilk test
+number of pronunciation errors (Fig. 6a), particularly in the X              showed the data of the two groups were not normally distributed.
+app group due to the lack of pinyin prompts. They also frequently            The Wilcoxon signed test indicated a signiﬁcant difference between
+skipped or added characters while reading (Fig. 6b), a situation             the two groups (Z = −2.542, p = 0.011). The ﬂuency score of
+less prevalent in the CNReader group thanks to real-time reading             reading with AI cooperation was also higher than that of
+guidance. Moreover, incorrect reading rhythm was notably                     human–human cooperation, with a signiﬁcant difference (Z =
+apparent in both the baseline and X app groups (Fig. 6c).                     −3.289, p = 0.001). Moreover, the reading interface design of
+Instances of line skipping during reading were also observed in              CNReader received positive feedback from children (M = 4.23,
+these two groups (Fig. 6d), whereas such issues did not occur in             SD = 0.42). We observed that some children adjusted the font size
+the CNReader group.                                                          to their preferred state during reading. Regarding the willingness to
+                                                                             engage in cooperative reading, the AI cooperation reading scored
+                                                                             signiﬁcantly higher than the human–human cooperation (Z =
+Study 2                                                                       −4.109, p = 0.000).
+Participants. In order to evaluate the effectiveness and acceptance             In a comparative study on reading with CNReader and
+of the CNReader AI-paired reading mode, we invited 44 children               independent reading by children, we employed the Mann–Whitney
+with mild reading difﬁculties. They were divided into three                  U test (data were not normally distributed) to analyze the
+groups (Table 3). The tests on RQ and Raven’s Standard Pro-                  differences in the number of reading errors and reading ﬂuency
+gressive Matrices showed no signiﬁcant differences among the                 between the two conditions. The results indicated signiﬁcant
+children in the three groups. All participants and their parents             differences in both error frequency and ﬂuency (Table 4). This
+signed informed consent forms.                                               ﬁnding not only conﬁrms the effectiveness of CNReader in
+                                                                             assisting children with reading difﬁculties but also highlights its
+Procedure. This study used a reading material from the children’s            unique value in paired reading. Through interaction with
+age group that had not been read by the subjects before. The                 CNReader, children can engage in reading within a safe and
+experimental process is shown in Fig. 7.                                     supportive environment, enhancing their reading abilities,
+
+HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | (2025)12:751 | https://doi.org/10.1057/s41599-025-05079-1                                       7
+
+===== PDF PAGE 8 / 15 =====
+ARTICLE                                       HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | https://doi.org/10.1057/s41599-025-05079-1
+
+
+
+
+Fig. 7 Procedure of study 2.
+
+
+
+
+Fig. 8 Test scenarios of study 2. a The child reads in cooperation with a researcher; b The child reads with CNReader’s AI assistant.
+
+
+
+ Table 4 The statistical metrics on participants’ reading performance are reported.
+
+ Metrics                     Human–human cooperative      Human–AI cooperative      Independent reading     Human–human and           Human–AI and
+                             reading (M ± SD)             reading (M ± SD)          (M ± SD)                human–AI Z/p              independent Z/p
+ Number of reading           8.32 ± 4.28                   5.59 ± 1.40              13.27 ± 2.28            −2.542/0.011*             −5.657/0.000***
+ errors
+ Reading ﬂuency              2.27 ± 0.96                   3.32 ± 0.55               1.82 ± 0.70            −3.289/0.001***           −5.502/0.000***
+ score
+ Interface friendliness      2.50 ± 0.58                  4.23 ± 0.42                  __                   −4.102/0.001***           __
+ Cooperative reading         2.05 ± 0.64                  4.09 ± 0.67                  __                   −4.109/0.000***           __
+ willingness
+
+ *p < 0.050, ***p < 0.001.
+
+
+
+
+especially in paired reading exercises without the accompaniment                 analysis revealed that the AI assistant provided a more
+of parents or other guardians.                                                   personalized and autonomous reading experience, enabling
+   To assess the comparative efﬁcacy of human–human versus                       children to control their reading pace and manner more freely.
+human–AI collaborative reading approaches, we analyzed perfor-                   This could be a key factor leading to their higher willingness for
+mance metrics within Group 1 and Group 2 participants (Table 5).                 collaborative reading. In human–human collaboration, the need
+Findings revealed that children with reading disabilities demon-                 to coordinate the reading pace and understanding process of two
+strated signiﬁcantly enhanced outcomes through human–AI                          individuals may cause children to feel pressured and incon-
+collaborative reading compared to traditional human–human                        venienced, thereby affecting their reading experience and
+collaborative interventions.                                                     willingness.
+   In interviews, children mentioned that in human–human
+collaborative reading, both individuals must share the same
+reading material, making the reading process inconvenient (Fig.                  Study 3
+8a). They also felt pressured and worried that reading poorly                    Participants. We conducted a 1-month follow-up test on the
+would embarrass them. These concerns did not exist in the AI-                    impact of CNReader on children’s reading habits and abilities. A
+paired context (Fig. 8b). This phenomenon may differ from                        total of 15 children, with an average age of 6.73 years (SD = 0.68),
+previous literature that suggested human–human interaction is                    diagnosed with mild reading disorders, along with their parents,
+superior to human–AI interaction in shared reading. It is                        participated. All children participants completed the RQ tests
+important to note that the reading scenarios and interaction                     (M = 83.13) and a Raven’s standard progressive matrices test
+forms in this study might have inﬂuenced these results.                          (intellectual ability = normal) prior to the experiment.
+Speciﬁcally, the design of CNReader aims to enhance persona-                     Researchers provided detailed information to children and their
+lized experiences, allowing children to adjust interface settings                parents about the purpose, procedures, potential risks, and ben-
+according to their needs, thereby reducing the inconvenience and                 eﬁts of the study. Informed consent forms were signed by all
+pressure associated with sharing traditional paper books. Further                participants and their parents. All personal information was
+
+8                                HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | (2025)12:751 | https://doi.org/10.1057/s41599-025-05079-1
+
+===== PDF PAGE 9 / 15 =====
+HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | https://doi.org/10.1057/s41599-025-05079-1                                         ARTICLE
+
+ Table 5 The statistical metrics on participants’ reading performance of Group 1 and Group 2.
+
+ Metrics         Number of reading errors       Reading ﬂuency score               Interface friendliness        Cooperative reading willingness
+                 Human–human and human–AI       Human–human and human–AI           Human–human and human–AI      Human–human and human–AI
+                 Z/p                            Z/p                                Z/p                           Z/p
+ Group 1         −4.117/0.001***                −3.796/0.001***                    −4.220/0.001***               −3.782/0.001***
+ Group 2         −4.120/0.001***                −4.072/0.001***                    −4.220/0.001***                4.202/0.001***
+
+ ***p < 0.001.
+
+
+
+
+Fig. 9 Procedure of study 3.
+
+
+
+anonymized and securely stored. Participants received gifts as               analyzed the features that children liked and disliked the most, as
+compensation for their involvement.                                          well as any changes in reading habits or behaviors observed by
+                                                                             parents.
+Procedure. The test process is shown in Fig. 9. Prior to the reading
+exercise, the children underwent a Chinese sentence reading test,            Results. As shown in Fig. 10, after 1 month of practice, improve-
+which assessed rapid word recognition and reading ﬂuency. This               ments were observed among the 15 children. In the Chinese sentence
+test consisted of 100 sentences, ordered from short to long, uti-            reading test, the children were able to read more sentences within
+lizing high-frequency Chinese characters and common sentence                 3 min (Mpre = 8.20 SD = 3.58, Mpost = 14.87 SD = 1.71), and the
+structures. We recorded the number and accuracy of sentences                 Wilcoxon signed-rank test indicated a signiﬁcant difference between
+read by the children within 3 min, as well as the time taken to              the two measurements (Z = −3.125, p = 0.001). The number of
+read all 100 sentences (Lei et al., 2011; Lv and Wan, 2018; Yang             correctly read sentences within 3 min also showed a signiﬁcant
+and Gong, 1997). Following this, the children underwent a ﬁve-               improvement (Mpre = 8.20 SD = 3.58, Mpost = 14.87 SD = 1.71,
+point scale assessment of their reading self-efﬁcacy, primarily              Z = −3.432, p = 0.001). Furthermore, the time taken to read
+focusing on reading conﬁdence and interest. The children and                 100 sentences signiﬁcantly decreased (Mpre = 78.80 SD = 17.91,
+their parents were then introduced to CNReader and instructed                Mpost = 55.07 SD = 15.42, Z = 3.409, p = 0.000). In terms of read-
+to install it on their tablets or computers at home. During the              ing self-efﬁcacy, the children’s reading conﬁdence signiﬁcantly
+1-month trial period, the children were required to use CNReader             increased (Mpre = 2.07 SD = 0.57, Mpost = 3.80 SD = 0.54, Z =
+for 10–15 min daily, ﬁve times a week, under the supervision of               −3.473, p = 0.001), and their interest in reading was signiﬁcantly
+their parents. We provided 30 reading materials suitable for their           enhanced (Mpre = 2.13 SD = 0.62, Mpost = 4.47 SD = 0.50, Z =
+age group, which could be directly accessed through CNReader.                 −3.501, p = 0.000).
+One month later, we once again conducted the Chinese sentence                   During the semi-structured interviews, we further explored the
+reading test and the reading self-efﬁcacy assessment on the                  experiences and perceptions of children and parents regarding the
+children, and carried out a 15–20 min semi-structured interview              speciﬁc functions and design of CNReader.
+with each child and their parent. To gain more detailed user
+experience data, particularly regarding the usability and engage-            Usability. Several children (e.g., Child 3, Child 12, Child 14)
+ment of CNReader from both children and parents, we incor-                   mentioned that they appreciated the feature allowing them to
+porated additional speciﬁc questions into our semi-structured                adjust the font size, which made reading more comfortable.
+interview process. These questions included, but were not limited            Children aged 5 and 9 noted that the immediate feedback func-
+to: What features of CNReader do children most and least enjoy?              tion was particularly helpful, as it enabled instant identiﬁcation
+Has the system increased children’s interest and conﬁdence in                and correction of errors, thereby enhancing their learning out-
+reading? Have parents observed any changes in their children’s               comes. Most respondents indicated that the AI-paired reading
+reading habits or performance? These questions have enabled us               mode was the most popular feature. This mode provided perso-
+to gain a comprehensive understanding of how users interact with             nalized guidance and engagingly increased their interest in
+the tool and their overall satisfaction with it.                             reading. Parents generally found CNReader to offer a wealth of
+                                                                             reading materials, which could be converted into dyslexia-friendly
+Data collection. We collected data on children’s Chinese sentence            text formats, making it highly practical. The AI-paired reading
+reading tests before and after the experiment, self-efﬁcacy eva-             mode was viewed by parents as a signiﬁcant advantage, as it
+luation data on reading. Through semi-structured interviews, we              somewhat replaced the need for a human reading companion,
+not only collected evaluations from children and parents                     alleviating parental guilt associated with being too busy to read
+regarding the user experience and functional design of CNReader,             with their children. However, C6 reported that the system’s voice
+but also paid particular attention to user engagement. We                    feedback was occasionally too fast, making it difﬁcult for him to
+
+HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | (2025)12:751 | https://doi.org/10.1057/s41599-025-05079-1                                      9
+
+===== PDF PAGE 10 / 15 =====
+ARTICLE                                   HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | https://doi.org/10.1057/s41599-025-05079-1
+
+
+
+
+Fig. 10 Children practice using CNReader for 1 month. a Number of sentences read in 3 min; b Number of sentences read correctly in 3 min; c The time it
+takes to read 100 sentences; d Reading conﬁdence; e Reading interest.
+
+
+keep pace. Additionally, C2 and C10 expressed a desire for more              increased his interest and conﬁdence in learning. Many parents
+interactive elements, such as mini-games or reading challenges, to           reported substantial improvements in their children’s rapid
+make the experience more engaging. Some parents hoped for                    character recognition and reading ﬂuency. For example, the
+more customization options, such as the ability to select reading            mother of Child 13 remarked, “My child used to get stuck on
+materials of speciﬁc difﬁculty levels or to create tailored reading          some simple characters, but now he can recognize and under-
+plans.                                                                       stand them more quickly, which has boosted his reading
+                                                                             conﬁdence”.
+Engagement. CNReader has achieved signiﬁcant improvement in
+enhancing children’s reading skills and conﬁdence. Through its               Reading habits. In interviews, parents reported an increase in
+personalized features, instant feedback mechanism, and gamiﬁed               their children’s reading frequency and duration over the past
+design, CNReader effectively increases children’s engagement.                month. During the period of using CNReader, their children were
+Most children report that they enjoy interacting with CNReader               able to maintain the daily reading requirement of 10–15 min and
+daily, and in interviews, all children expressed their willingness to        gradually developed a ﬁxed reading schedule. For instance, the
+use CNReader again. Based on observations and feedback from                  mother of Child 5 mentioned, “My child rarely read voluntarily in
+parents, CNReader’s gamiﬁed design (e.g., unlocking images                   the past, but now uses CNReader every day and has become more
+within articles through repeated reading) greatly enhances chil-             self-disciplined.” In addition to having a set reading time, many
+dren’s motivation and engagement in reading. Several parents                 children also choose a quieter and more comfortable reading
+have reported that their children are willing to read repeatedly to          environment. The father of Child 7 noted, “We have a small
+unlock more images. This design effectively combines learning                reading corner at home, and the children now prefer to use
+with entertainment, thereby enhancing children’s interest in                 CNReader there, which has greatly improved their attention and
+reading.                                                                     reading effectiveness”.
+
+Reading performance. As the experimental results indicate, the
+children demonstrated signiﬁcant progress in the Chinese sen-                Discussion
+tence reading test. Interviews further corroborate this ﬁnding;              Cognitive basis for enhancing reading abilities with CNReader.
+Child 4 mentioned that the instant feedback feature provided by              In this study, we observed signiﬁcant improvements in reading
+CNReader helped him immediately identify and correct reading                 accuracy, ﬂuency, and comprehension with the use of CNReader,
+errors. This not only improved his reading accuracy but also                 which are closely linked to the speciﬁc cognitive challenges faced
+
+10                          HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | (2025)12:751 | https://doi.org/10.1057/s41599-025-05079-1
+
+===== PDF PAGE 11 / 15 =====
+HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | https://doi.org/10.1057/s41599-025-05079-1                                      ARTICLE
+
+by children with developmental dyslexia. These children typically            and social adaptability. Therefore, future research needs to
+exhibit deﬁcits in phonological awareness, morphological                     explore how to balance AI-assisted learning with traditional
+awareness, and orthographic awareness, which directly impede                 teaching methods, ensuring that children can effectively develop
+their reading ability development (Huang et al., 2023). CNReader             their reading abilities in different learning environments.
+effectively aids children in decoding and recognizing Chinese                   It remains unclear whether using AI assistants for paired
+characters through color-coded visual cues and structured text               reading affects children’s reading abilities and social adaptation
+layouts, thereby enhancing their orthographic awareness.                     skills in real-world environments. This is an important area that
+   Simultaneously, CNReader’s auxiliary sentence segmentation                requires further research. By comparing the long-term effects of
+function provides guidance on reading rhythm, assisting in the               AI-assisted learning and traditional learning methods, future
+improvement of children’s phonological and morphological                     studies can provide educators and parents with more detailed
+awareness. Studies have shown that improved phonological                     guidance, enabling them to make more informed choices about
+awareness helps children better understand the sound structure               the most suitable educational tools and methods. In summary, the
+of language, while enhanced morphological awareness facilitates              role and signiﬁcance of AI in training the reading skills of
+the recognition and use of the smallest units of meaning in                  children with dyslexia are not only reﬂected in personalized
+language (Li et al., 2023). By strengthening these key cognitive             learning content and real-time feedback but also require future
+areas, CNReader effectively improves children’s reading ﬂuency               research to explore its long-term educational impacts and the
+and comprehension.                                                           balance point in practical applications.
+   Additionally, the AI-paired reading mode offered by CNReader
+cultivates sustained attention in children during extended reading
+activities by providing personalized practice with varying text              Expansion of CNReader to dyslexic populations in other lan-
+complexities. Sustained attention is central to ﬂuent reading and            guages. Given that developmental dyslexia manifests unique
+information-processing speed, and many children with develop-                linguistic cognition and information-processing deﬁcits in dif-
+mental dyslexia lack this ability. In our study, the introduction of         ferent languages, the fundamental principles of CNReader can be
+the AI-paired reading mode signiﬁcantly improved the children’s              adapted for dyslexic readers of other languages, such as English,
+reading precision and ﬂuency, indicating its potential in helping            Spanish, or Japanese. These languages face similar challenges
+to overcome attention deﬁcits.                                               regarding reading ﬂuency and accuracy. Firstly, the user-friendly
+   By integrating these cognitive foundations with the training              visual text presentation of CNReader can be customized
+effects, CNReader not only provides support for children with                according to the orthographic and phonological features of other
+developmental dyslexia but also offers educators and parents a               languages. For example, in alphabetic languages such as English
+cognitive framework to understand its efﬁcacy. This framework                or Spanish, the tool can highlight phoneme-grapheme corre-
+highlights the critical role of comprehensive interventions                  spondences, provide syllable segmentation, and employ color-
+targeting phonological, morphological, and orthographic aware-               coding strategies to enhance decoding skills. Previous research
+ness in improving reading skills, while also providing a theoretical         has shown that phoneme-grapheme correspondences and syllable
+basis for future research exploring the link between cognitive               segmentation signiﬁcantly impact reading speed and accuracy for
+interventions and actual reading skill enhancements.                         dyslexic individuals (Meng, 2018).
+                                                                                Secondly, personalized reading guidance and visual cues, such
+                                                                             as text highlighting and segmentation, are beneﬁcial in other
+The role of AI voice assistants in children’s paired reading. Our            language learning environments. Speciﬁcally, for languages with
+tests indicate that children tend to prefer AI as their reading              complex structures and where prosody and rhythm are crucial for
+companion during shared reading sessions. In semi-structured                 comprehension, such as Italian or French, the CNReader
+interviews, these children mentioned that AI voice assistants                approach can guide phrase pauses and provide feedback on
+provide a stress-free learning environment, allowing them to                 rhythm and prosody, aiding in improved reading ﬂuency.
+learn at their own pace and comfort. The real-time feedback                  Existing research indicates that dyslexic individuals often require
+function offered by these assistants helps them understand their             visual and auditory cues to enhance reading efﬁcacy when dealing
+mistakes and provides corrective strategies, thereby improving               with the prosody and rhythm of these languages (Meng, 2018).
+their reading skills. Previous research also supports this ﬁnding.              Thirdly, CNReader’s AI-paired reading support is adaptive and
+For instance, some studies have shown that AI-assisted learning              interactive. The AI can ensure proper pronunciation, provide
+can enhance the reading comprehension and ﬂuency of children                 instant feedback on reading errors, simulate paired reading
+with dyslexia (Yang, 2022; Bhushan et al., 2024). These studies              experiences, and encourage repeated reading practice, thereby
+point out that AI technology can personalize learning content,               increasing engagement and motivation. Current literature shows
+enabling children to learn in a more targeted environment.                   that AI applications in language learning have achieved
+   Furthermore, parents have expressed a desire for CNReader to              signiﬁcant results, with their interactivity and prompt feedback
+offer more comprehensive language skills training in the future to           being indispensable for improved learning outcomes (Amonova
+help children improve their listening, speaking, and writing                 et al., 2024; Seow, 2023). Future research could focus on the
+abilities. This demand indicates that expanding the functionality            adaptation and validation of CNReader in different linguistic
+of AI assistants is an essential direction for future development.           environments, incorporating insights from cross-language studies
+Moreover, previous literature has mentioned the signiﬁcant                   on dyslexia and human-computer interaction. Particularly,
+potential of AI in multimodal learning, which can enhance                    through experimental design and data analysis, validating the
+learning outcomes (Rajagopal et al., 2023).                                  efﬁcacy of CNReader across different language groups will
+   While some parents acknowledge the potential of AI assistants             provide valuable data support for cross-linguistic dyslexia
+in education, they also worry about children becoming overly                 research.
+reliant on AI assistants and CNReader, which might affect their                 In conclusion, CNReader has demonstrated signiﬁcant effec-
+reading abilities in real-world settings. Existing research (Han             tiveness among Chinese dyslexic readers, and its methods and
+et al., 2024) also points out that over-reliance on technology may           technological framework hold broad applicability for dyslexic
+have negative impacts on children’s independent learning abilities           populations in other languages as well. With continuous
+
+
+HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | (2025)12:751 | https://doi.org/10.1057/s41599-025-05079-1                                    11
+
+===== PDF PAGE 12 / 15 =====
+ARTICLE                                HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | https://doi.org/10.1057/s41599-025-05079-1
+
+
+technological advancements and deeper cross-linguistic research,          quantitative measures such as eye-tracking and task performance
+CNReader is poised to become an effective tool for dyslexia               metrics to evaluate the actual effectiveness of different interface
+intervention on a global scale.                                           elements.
+
+                                                                          Long-term impact assessment. Implement a longitudinal study,
+Limitations and future work. We have reported on a study of an            carrying out multiple checkpoints over an extended period (e.g.,
+intelligent reading practice tool designed for children with              6 months to a year) to assess the sustained impact of CNReader
+developmental Chinese dyslexia. We acknowledge some limita-               on reading skills. This will involve regular assessments and pro-
+tions of the study and outline future work to address them.               gress tracking to observe long-term improvements and retention.
+   Firstly, in this study, although we have designed a user-friendly
+CNReader interface that incorporates dyslexia-friendly fonts and          Generalization and bias mitigation. Expand the participant pool
+colors for English, and fonts, font sizes, and line spacing that are      to include a broader demographic range and control for potential
+suitable for Chinese, we have not conducted thorough testing to           confounding variables. We will use stratiﬁed sampling techniques
+assess the actual effectiveness of these combined elements.               to ensure representation from different socioeconomic statuses,
+Therefore, our interface design may have certain limitations. In          regions, and age groups, thereby enhancing the generalizability of
+the future, we will continue to delve deeper into this area to reﬁne      our ﬁndings.
+the CNReader interface design. We will conduct rigorous user
+testing with dyslexic children to collect comprehensive feedback          Adaptive and multimodal features. Develop and test adaptive
+and employ quantitative measures to evaluate the usability and            algorithms for personalized reading exercises based on real-time
+effectiveness of the interface elements.                                  performance data. Additionally, integrate multimodal feedback
+   Secondly, while our experimental studies assessed both                 (visual, auditory, and tactile) to cater to different learning pre-
+immediate effects and outcomes following a 1-month training               ferences and needs, providing a more holistic approach to reading
+period with CNReader, dyslexia interventions require long-term            intervention.
+evaluation. Therefore, short-term experimental results may
+inadequately reﬂect the tool’s longitudinal effects. A signiﬁcant         User customization options. Allow parents and educators to cus-
+limitation in Study 3 was the absence of immediate post-                  tomize AI reading sessions based on speciﬁc goals and pre-
+intervention assessment, with only 1-month follow-up data                 ferences. This could include selecting types of feedback, adjusting
+collected. Without a control group and immediate post-test                levels of interactivity, or choosing topics and characters that
+measurements, it remains unclear whether the observed improve-            interest the child.
+ments can be attributed solely to the CNReader intervention or               By addressing these issues, our aim is to overcome current
+whether they resulted from other factors such as natural                  limitations and provide a more robust and effective tool for
+development, concurrent educational activities, or testing effects.       children with developmental dyslexia in reading Chinese,
+Future research will include larger participant samples and               ultimately contributing to better educational outcomes and
+extended training assessment periods. Additionally, we will               quality of life.
+implement longitudinal research designs to elucidate the
+sustained efﬁcacy of CNReader across extended timeframes and              Conclusion
+varied contextual conditions.                                             This study presents a reading training tool named CNReader,
+   Thirdly, inherent potential biases in our research design and          speciﬁcally designed for children with mild Chinese dyslexia. The
+sample selection may affect the generalizability of our research          tool features a user-friendly visual interface and offers three
+results. For example, our research participants were limited to a         reading modes: single-player reading practice mode, AI-paired
+speciﬁc age group and geographical region. Future research                reading mode, and reading challenge mode. It can assess chil-
+should include a more diverse sample, encompassing different              dren’s reading level in real-time and provide personalized reading
+socioeconomic backgrounds, regions, and age groups, to enhance            guidance and smart reading companionship. We validated the
+the external validity of the research results. Additionally, we need      effectiveness of CNReader in both single-player reading practice
+to consider and control for other confounding variables that may          mode and AI-paired reading mode, and explored its impact on
+inﬂuence the results, such as prior exposure to reading                   children’s medium- and long-term reading training. The results
+interventions and varying levels of parental support.                     showed that after using CNReader, children’s reading accuracy,
+   Lastly, our CNReader currently only supports reading training          ﬂuency, interest in reading, and self-conﬁdence have all
+functions. However, dyslexia in Chinese is complex, with                  improved. Moreover, children demonstrated a high level of
+signiﬁcant individual differences, requiring targeted intervention        acceptance towards collaborative reading with AI. However, there
+methods. Therefore, the functionality of CNReader may have                are still areas for improvement in the design of CNReader and its
+certain limitations and may not fully meet the needs of                   study setup. We look forward to constantly optimizing it to better
+individuals with dyslexia. In the future, we will further explore         assist children with Chinese dyslexia in their reading training.
+more aspects of dyslexia in Chinese and propose more targeted
+feature designs. This includes optimizing adaptive learning               Data availability
+algorithms to dynamically adjust training content based on                The data utilized in this study are available upon request from the
+individual progress and difﬁculties, and integrating multimodal           corresponding author. All data have been anonymized and can be
+approaches with auditory and tactile feedback.                            made accessible for academic research purposes, subject to rea-
+   To address the limitations and further enhance and validate the        sonable requests. Data sharing will comply with relevant con-
+tool, our future work will focus on the following speciﬁc research        ﬁdentiality agreements and ethical guidelines to safeguard the
+questions and methodologies:                                              privacy rights of minor participants.
+Usability and effectiveness study. Conduct comprehensive                  Received: 10 May 2024; Accepted: 20 May 2025;
+usability studies on a larger, more diverse group of children with
+dyslexia. This study will include qualitative interviews and
+
+
+12                        HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | (2025)12:751 | https://doi.org/10.1057/s41599-025-05079-1
+
+===== PDF PAGE 13 / 15 =====
+HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | https://doi.org/10.1057/s41599-025-05079-1                                                                ARTICLE
+
+References                                                                               Huang M (2022) Causes and educational implications of Chinese dyslexia in pri-
+Amonova S, Juraeva G, Khidoyatov M (2024) Harnessing the potential of artiﬁcial                mary and middle school students. Front Soc Sci 11(7):2577–2581. https://doi.
+     intelligence in language learning: Is AI threat or opportunity? In: Proceedings           org/10.12677/ASS.2022.117352
+     of the 7th international conference on future networks and distributed sys-         Huang S, Liu Y, Hu Y et al. (2023) Language cognitive deﬁcits of Chinese dyslexic
+     tems (ICFNDS ‘23), Association for Computing Machinery, New York, NY,                     children. J Chengdu Med Coll 18(06):774–777
+     USA, p 292–297. https://doi.org/10.1145/3644713.3644751                             Huss M, Verney JP, Fosker T et al. (2011) Music, rhythm, rise time perception and
+Bhushan S, Arunkumar S, Taiseer Abdalla EE, Nasser M, Singh AK, Kumar P                        developmental dyslexia: perception of musical meter predicts reading and
+     (2024) AI-enhanced dyscalculia screening: a survey of methods and appli-                  phonology. Cortex 47(6):674–689
+     cations for children. Diagnostics 14(13):1441                                       International Dyslexia Association (2021) Deﬁnition of dyslexia. Available online:
+Brennan A, McDonagh T, Dempsey M et al. (2022) Cosmic sounds: a game to                        https://dyslexiaida.org/deﬁnition-of-dyslexia. Accessed 2 Feb 2024
+     support phonological awareness skills for children with dyslexia. IEEE Trans        Lei L, Pan J, Liu H et al. (2011) Developmental trajectories of ｒeading develop-
+     Learn Technol 15(3):301–310                                                               ment and impairment from ages 3 to 8 years in Chinese children. J Child
+Chen H, Zhou Y, Ge Z et al. (2018) Association study of FGF18 with development                 Psychol Psychiatry 2:212–220
+     dyslexia in Chinese population. Psychiatr Genet 28:8–11                             Li Y, Ma X, Hu Y et al. (2023) Potential early identiﬁcation markers for children
+Chen T, Wang Z (2019) Using “rhythm” to awaken the rhythm of reading teaching—                 with developmental dyslexia: atypical rhythm and its characteristics. Adv
+     an exploration of the strategy of constructing and implementing the rhythm of             Psychol Sci 31(12):2306–2318
+     Chinese reading teaching in primary school. Bull Chin Lang Teach 18:49–51           Lin G (2021) A study on the characteristics and interventions of orthographic
+Chung KKH, Ho CSH (2010) Dyslexia in Chinese language: an overview of                          awareness in Chinese primary students with dyslexia. Master’s thesis.
+     research and practice. Aust J Learn Difﬁculties 15(2):213–224                             Southwest University. https://link.cnki.net/doi/10.27684/d.cnki.gxndx.2021.
+de Avelar LO, Rezende GC, Freire AP (2015) WebHelpDyslexia: a browser                          001654
+     extension to adapt web content for people with dyslexia. Proc Comput Sci            Lin O, Wang Z, Meng X (2013) Visual perceptual learning in children with Chinese
+     67:150–159                                                                                developmental dyslexia. Acta Psychol Sin 45(7):762–772
+Deng L (2023) A study on the role of visual-spatial abilities in the reading abilities   Liu L, Tao R, Wang W et al. (2013) Chinese dyslexics show neural differences in
+     of primary school Chinese students with dyslexia. Master’s thesis. Southwest              morphological processing. Dev Cogn Neurosci 6:40–50
+     University. https://link.cnki.net/doi/10.27684/d.cnki.gxndx.2023.000563             Liu R, Zenke C, Lloyd D, Malan DJ (2024) Teaching with AI (GPT). In: Pro-
+Denny P, MacNeil S, Savelka J, Porter L, Luxton-Reilly A (2024) Desirable char-                ceedings of the 55th ACM technical symposium on computer science edu-
+     acteristics for AI teaching assistants in programming education. In: Pro-                 cation V. 2 (SIGCSE 2024), Association for Computing Machinery, New
+     ceedings of the 2024 on innovation and technology in computer science                     York, NY, USA, p 1902. https://doi.org/10.1145/3626253.3633433
+     education V. 1 (ITiCSE 2024), Association for Computing Machinery, New              Lv H, Wan Q (2018) Research progress in reading ﬂuency assessment. Mod Spec
+     York, NY, USA, p 408–414. https://doi.org/10.1145/3649217.3653574                         Educ 08:22–28
+Fan M, Antle AN, Cramer ES (2016) Design rationale: opportunities and recom-             Madeira J, Silva C, Marcelino L, Ferreira P (2015) Assistive mobile applications for
+     mendations for tangible reading systems for children. In: Paper presented at              dyslexia. Procedia Comput Sci 64:417–424
+     the 15th international conference on interaction design and children (IDC           McBride C, Wang Y, Cheang LM (2018) Dyslexia in Chinese. Curr Dev Disord
+     ‘16), Association for Computing Machinery, New York, NY, USA, p 101–112.                  Rep. 5(4):217–225
+     https://doi.org/10.1145/2930674.2930690                                             Meng X (2000) Chinese character representation and processing in Chinese chil-
+Fan M, Fan J, Antle AN et al. (2019) Character alive: a tangible reading and writing           dren with developmental dyslexia. Beijing Normal University, Beijing
+     system for Chinese children at-risk for dyslexia. In: Paper presented at the        Meng X (2018) Out of the maze: understanding developmental dyslexia. Peking
+     2019 CHI conference on human factors in computing systems (CHI EA ‘19),                   University Press, Beijing
+     Association for Computing Machinery, New York, NY, USA, p 1–6. https://             Ministry of Education of the People’s Republic of China (2022) Chinese curriculum
+     doi.org/10.1145/3290607.3312756                                                           standards for compulsory education. Beijing Normal University Press.
+Fan M, Wu Y, Fan J et al. (2024) Character alive: designing and evaluating a tangible          Available https://www.pep.com.cn/ebook/2022yjkcbz/yw/mobile/index.html.
+     system to support children’s chinese radical and character learning. Int J Hum            Accessed 28 Mar 2024
+     Comput Interact 1–16. https://doi.org/10.1080/10447318.2024.2313922                 Mohana M, Silveira ACD, Suvetha V et al. (2023) Technology Enhanced Mulse-
+Fourney A, Ringel Morris M, Ali A, Vonessen L (2018) Assessing the readability of              media Learning (TEML) for learners with dyslexia. In: Paper presented at the
+     web search results for searchers with dyslexia. In: Paper presented at the 41st           2023 ACM international conference on interactive media experiences
+     international ACM SIGIR conference on research and development in                         workshops (IMXw ‘23), Association for Computing Machinery, New York,
+     information retrieval—SIGIR’18, ACM Press, New York, p 1069–1072                          NY, USA, p 62–65. https://doi.org/10.1145/3604321.3604357
+Franceschini S, Gori S, Rufﬁno M et al. (2013) Action video games make dyslexic          Osman WLBW, Uda R (2014) A translator website for dyslexic children. In: Paper
+     children read better. Curr Biol 23(6):462–466                                             presented at the 8th international conference on ubiquitous information
+Fung KY, Perrault ST, Lee LH et al. (2022) Can students with dyslexia learn                    management and communication (ICUIMC ‘14), Association for Computing
+     independently? A seven-week study of Chinese character learning in an                     Machinery, New York, NY, USA, p 1–5. https://doi.org/10.1145/2557977.
+     informal learning environment. IEEE Trans Learn Technol 16(5):619–632                     2558016
+Goodman SM, Buehler E, Clary P et al. (2022) LaMPost: design and evaluation              Powell N, Moore D, Gray J et al. (2004) Dyslexia and learning computer pro-
+     of an AI-assisted email writing prototype for adults with dyslexia. In: Paper             gramming. In: Paper presented at the 9th annual SIGCSE conference on
+     presented at the 24th international ACM SIGACCESS conference on                           Innovation and technology in computer science education (ITiCSE ‘04),
+     computers and accessibility (ASSETS ‘22), Association for Computing                       Association for Computing Machinery, New York, NY, USA, p 242. https://
+     Machinery, New York, NY, USA, p 1–18. https://doi.org/10.1145/3517428.                    doi.org/10.1145/1007996.1008072
+     3544819                                                                             Rajagopal A, Nirmala V, Immanuel JJ, Arun MV, Prajakta UK (2023) Design of
+Gupta T, Aﬂatoony L, Leonard L (2021) Augmenta11y: a reading assistant appli-                  generative multimodal AI agents to enable persons with learning disability.
+     cation for children with dyslexia. In: Paper presented at the 23rd interna-               In: Companion Publication of the 25th International Conference on Multi-
+     tional ACM SIGACCESS conference on computers and accessibility (ASSETS                    modal Interaction (ICMI ‘23 Companion), Association for Computing
+     ‘21), Association for Computing Machinery, New York, NY, USA, p 1–3.                      Machinery, New York, NY, USA, p 259–271. https://doi.org/10.1145/
+     https://doi.org/10.1145/3441852.3476530                                                   3610661.3617514
+Gupta T, Aﬂatoony L, Leonard L (2022) “A Helping Hand”: design and evaluation            Rauschenberger M, Lins C, Rousselle N et al. (2019) Designing a new puzzle app to
+     of a reading assistant application for children with dyslexia. In: Paper pre-             target dyslexia screening in pre-readers. In: Paper presented at the 5th EAI
+     sented at the 33rd Australian conference on human-computer interaction                    international conference on smart objects and technologies for social good
+     (OzCHI ‘21), Association for Computing Machinery, New York, NY, USA,                      (GoodTechs ‘19), Association for Computing Machinery, New York, NY,
+     p 242–251. https://doi.org/10.1145/3520495.3522703                                        USA, p 155–159. https://doi.org/10.1145/3342428.3342679
+Han A, Zhou X, Cai Z, Han S, Ko R, Corrigan S, Peppler AK (2024) Teachers,               Rauschenberger M, Yates RB, Rello L (2019) Technologies for dyslexia. Springer,
+     parents, and students’ perspectives on integrating generative AI into ele-                London. https://doi.org/10.1007/978-1-4471-7440-0_31
+     mentary literacy education. In: Proceedings of the CHI conference on human          Rello L, Kanvinde G, Yates RB (2012) A mobile application for displaying more
+     factors in computing systems (CHI ‘24), Association for Computing                         accessible eBooks for people with dyslexia. Procedia Comput Sci 14:226–233
+     Machinery, New York, NY, USA, p 1–17. https://doi.org/10.1145/3613904.              Rello L, Yates RB (2014) Evaluation of DysWebxia: a reading app designed for
+     3642438                                                                                   people with dyslexia. In: Paper presented at the 11th web for all conference
+Haug KN, Klein PD (2018) The effect of speech-to-text technology on learning a                 (W4A ‘14), Association for Computing Machinery, New York, NY, USA,
+     writing strategy. Read Writ Q 34(1):47–62                                                 p 1–10. https://doi.org/10.1145/2596695.2596697
+Helenius P, Uutela K, Hari R (1999) Auditory stream segregation in dyslexic adults.      Rello L, Yates RB, Saggion H et al. (2013) An iOS reader for people with dyslexia.
+     Brain 122(5):907–913                                                                      In: Paper presented at the 15th international ACM SIGACCESS conference
+
+
+HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | (2025)12:751 | https://doi.org/10.1057/s41599-025-05079-1                                                                 13
+
+===== PDF PAGE 14 / 15 =====
+ARTICLE                                            HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | https://doi.org/10.1057/s41599-025-05079-1
+
+
+     on computers and accessibility (ASSETS ‘13), Association for Computing                   including the abstract, methodology, and results. Tuo Fang: conceptualized the study and
+     Machinery, New York, NY, USA, p 1–2. https://doi.org/10.1145/2513383.                    provided the experimental sites and funding. Enmao Liu: provided expertise on the
+     2513419                                                                                  cognitive and academic challenges faced by children with developmental dyslexia, con-
+Saunier L, Panouilleres M, Fetita C et al. (2022) Visual rehabilitation for learning          tributing to the design of the reading guidance. Shang Shi: conducted the statistical
+     disorders in virtual reality: visual rehabilitation for learning disorder in VR.         analysis of the collected data, interpreting the results from the three experiments. Shuo
+     In: Paper presented at the 27th international conference on 3D web tech-                 Zhai: organized and managed the participation of the 57 children with mild dyslexia,
+     nology (Web3D ‘22), Association for Computing Machinery, New York, NY,                   including obtaining consent and scheduling sessions. Yang Chen: worked on the user
+     USA, p 1–4. https://doi.org/10.1145/3564533.3564574                                      interface design of CNReader, focusing on creating a child-friendly and engaging visual
+Seow O (2023) LingoLand: an AI-assisted immersive game for language learning.                 text presentation. Lingyan Zhang: implemented and optimized the AI-paired reading
+     In: Adjunct proceedings of the 36th annual ACM symposium on user                         feature, ensuring it could effectively assist users in improving their reading skills. Yan Shi:
+     interface software and technology (UIST ‘23 Adjunct), Association for                    oversaw the study timeline and resource allocation, ensuring the project stayed on track
+     Computing Machinery, New York, NY, USA, p 1–3. https://doi.org/10.1145/                  and within budget. Cheng Yao: drafted the paper and coordinated feedback from all
+     3586182.3625117                                                                          contributors to ﬁnalize the manuscript.
+Sidhu SM, Manzura E (2011) An Effective Conceptual Multisensory Multimedia
+     Model to Support Dyslexic Children in Learning. Int J Inf Commun Technol
+     Educ 7(3):34
+                                                                                              Competing interests
+                                                                                              The authors declare no competing interests.
+Signor R, Claessen M, Leitão S (2020) Interventions for dyslexia in Brazil: a scoping
+     review discussed within the perspective of international best practice. Aust J
+     Learn Difﬁculties 25(1):1–30                                                             Ethical approval
+Vellutino FR, Fletcher JM, Snowling MJ et al. (2004) Speciﬁc reading disability               The study "CNReader: a reading practice tool designed for Chinese children with
+     (dyslexia): What have we learned in the past four decades? J child Psychol               developmental dyslexia" received ethics exemption qualiﬁcation on May 7, 2023. The
+     psychiatry 45(1):2–40                                                                    following constitutes the basis for exemption from ethical review. (1) Informed Consent:
+Wang Y (2024) A case study of comprehensive intervention for Chinese children                 This study obtained written informed consent from participants between May 20 and
+     with dyslexia in the lower grades of primary school. Northwest Normal                    May 25, 2023. The experimental subjects were children with mild reading disabilities
+     University, Lanzhou                                                                      and their parents. All age-appropriate children signed the Informed Consent Form,
+Wessel D, Kennecke AK, Heine M (2021) WCAG and dyslexia—improving the                         accompanied by their parents. The document explicitly stated the experimental objec-
+     search function of websites for users with dyslexia (without making it worse             tives, content, and the scope of data utilization. Participants retained the right to
+     for everyone else). In: Paper presented at the Mensch und Computer 2021                  withdraw at any time. The original consent forms were archived by the research team,
+     (MuC ‘21), Association for Computing Machinery, New York, NY, USA,                       with copies provided to the participating families. (2) Content of Experiments: The
+     p 168–179. https://doi.org/10.1145/3473856.3473867                                       experimental tests involve reading exercises from standard educational materials,
+Wu S, Reynolds L, Li X et al. (2019) Design and evaluation of a social media writing          including reading tests of textbook passages and routine sentence tests (please refer to
+     support tool for people with dyslexia. In: Paper presented at the 2019 CHI               the experimental setup for details). (3) Design and Evaluation: The experimental design,
+     conference on human factors in computing systems (CHI ‘19), Association                  test content, and data analysis were evaluated before the experiment by experienced
+     for Computing Machinery, New York, NY, USA, p 1–14. https://doi.org/10.                  primary school Chinese language teachers and parents. The reading exercises mirror
+     1145/3290605.3300746                                                                     those that commonly occur in daily classroom settings. (4) Exemption Criteria in China:
+Yang F (2019a) The effects of web text format on reading efﬁciency of Chinese                 According to the “Measures for Ethical Review of Life Sciences and Medical Research
+     children with dyslexia. Dissertation, Zhejiang University of Technology                  Involving Human Subjects” (issued by the National Health Commission of China,
+Yang F (2019b) The effects of font type and font size on reading speed of Chinese             Ministry of Education, Ministry of Science and Technology, and National Adminis-
+     children with dyslexia. Educ Teach Forum 36:59–60                                        tration of Traditional Chinese Medicine, implemented on February 18, 2023), Article
+Yang H (2022) Effect of story structure instruction based on visual analysis on               32 stipulates that ethical review may be exempted for research that does not cause harm
+     reading comprehension intervention for dyslexic students. Comput Intell                  to the human body, does not involve sensitive personal information or commercial
+     Neurosci 2022:9479709                                                                    interests, in order to reduce unnecessary burden on researchers: Research utilizing
+Yang Z, Gong Y (1997) Development of Chinese reading skill diagnostic test:                   legally obtained public data, or data generated through observation without interfering
+     reliability and validity. Chin J Clin Psychol 03:32–37                                   with public behavior; Research conducted using anonymized information and data.
+Ye W (2023) A study on the contributing factors and cognitive-linguistic char-                Based on the above considerations, this study was granted exemption from requiring
+     acteristics of Chinese dyslexic children in rural areas. Master's thesis. Lanz-          ethics approval.
+     hou Jiaotong University. https://link.cnki.net/doi/10.27205/d.cnki.gltec.2023.
+     001841
+Yong TH, Asmuri SA (2021) Dyslexic children’s experience of home-based                        Informed consent
+     learning during school closures: 4 case studies. Asia Pac J Dev Differ                   In this study, all participants and their parents provided informed consent. The details
+     8(2):190–217                                                                             are as follows: Prior to the commencement of the study, researchers provided compre-
+Zhang L, Xia Z, Zhao Y et al. (2023) Recent advances in Chinese developmental                 hensive explanations to all child participants and their parents regarding the study
+     dyslexia. Annu Rev Linguist 9:439–461                                                    objectives, procedures, potential risks, and beneﬁts. All informed consent was obtained in
+Zhang M, Sun X (2016) Reading acceleration training for individuals with devel-               written form before the study began, jointly signed by the participating children and their
+     opmental dyslexia. Spec Educ China 9:60–64                                               legal guardians (parents). The scope of informed consent included: participation in
+Zhang Y (2021) Visual-spatial attention characteristics and intervention of children          research activities, collection and utilization of personal data, and consent for anon-
+     with Chinese dyslexia. Master's thesis. University of Jinan. https://link.cnki.          ymizing personal information. The consent form explicitly stated that participation was
+     net/doi/10.27166/d.cnki.gsdcc.2021.000047                                                entirely voluntary, and participants could withdraw at any time without any negative
+                                                                                              consequences. As this study involved minors (ﬁrst-grade children with mild reading
+                                                                                              disabilities), we speciﬁcally ensured the following. (1) Recruitment of participants was
+Acknowledgements                                                                              facilitated through school Chinese language teachers and homeroom teachers. (2) Age-
+We extend our heartfelt gratitude to all the children and their parents who participated in   appropriate language was used to explain the research content to children. (3) Consent
+this study. Their time and commitment were invaluable to our research. Special thanks         was obtained from the children themselves as well as written permission from their legal
+are due to the primary school teachers and class advisors whose assistance in recruitment     guardians (parents). (4) School counselors and psychologists were available to provide
+and coordination was essential to the successful implementation of this project. This         support for children experiencing discomfort or distress. All participants’ personal
+research was funded by the Basic Scientiﬁc Research Operating Expenses of Provincial          information was anonymized and securely stored to protect their privacy and data
+Universities-Youth Support Special Project-Science and Engineering Category (No.              security. Participants received gifts as compensation for their participation upon com-
+GK259909299001-032), Scientiﬁc Research Project of Zhejiang Provincial Department of          pletion of the study.
+Education-General Project-Humanities and Social Sciences Category (No. Y202455031),
+University Scientiﬁc Research Project-Scientiﬁc Research Startup Fund (No.                    Additional information
+KYS285624208).                                                                                Correspondence and requests for materials should be addressed to Lijuan Liu.
+
+Author contributions                                                                          Reprints and permission information is available at http://www.nature.com/reprints
+Lijuan Liu: conceptualized the study and designed the overall research methodology. Led
+the development of the CNReader tool and supervised the experiments. Designed the AI          Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in
+reading support system, ensuring adaptation to individual user needs. Drafted the paper,      published maps and institutional afﬁliations.
+
+
+
+
+14                                 HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | (2025)12:751 | https://doi.org/10.1057/s41599-025-05079-1
+
+===== PDF PAGE 15 / 15 =====
+HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | https://doi.org/10.1057/s41599-025-05079-1                  ARTICLE
+
+                  Open Access This article is licensed under a Creative Commons
+                  Attribution-NonCommercial-NoDerivatives 4.0 International License,
+which permits any non-commercial use, sharing, distribution and reproduction in any
+medium or format, as long as you give appropriate credit to the original author(s) and
+the source, provide a link to the Creative Commons licence, and indicate if you modiﬁed
+the licensed material. You do not have permission under this licence to share adapted
+material derived from this article or parts of it. The images or other third party material
+in this article are included in the article’s Creative Commons licence, unless indicated
+otherwise in a credit line to the material. If material is not included in the article’s
+Creative Commons licence and your intended use is not permitted by statutory
+regulation or exceeds the permitted use, you will need to obtain permission directly from
+the copyright holder. To view a copy of this licence, visit http://creativecommons.org/
+licenses/by-nc-nd/4.0/.
+
+
+© The Author(s) 2025
+
+
+
+
+HUMANITIES AND SOCIAL SCIENCES COMMUNICATIONS | (2025)12:751 | https://doi.org/10.1057/s41599-025-05079-1        15

@@ -1,0 +1,852 @@
+# Journal of Information and Communication Technology, Vol. 25, Number 3 (July) 2026, pp: 31-42
+
+> Fuente PDF: `R227-designing-tangible-user-interfaces-for-neurodiversity-a-focus-on-dyslexia-friend.pdf` · técnica **locator index** (página + ancla) + chunks Graphify
+
+## Metadata
+- Stem: `R227-designing-tangible-user-interfaces-for-neurodiversity-a-focus-on-dyslexia-friend`
+- PDF: `R227-designing-tangible-user-interfaces-for-neurodiversity-a-focus-on-dyslexia-friend.pdf`
+- DOI: `10.32890/jict2026.25.3.2`
+- Pages: `12`
+- Structured_at: `2026-10-03T23:23:14+00:00`
+- Technique: `pdf-page-locators + heading-chunks`
+
+## Locator index (qué hay y en qué página del PDF)
+
+| Kind | Label | PDF page | MD anchor |
+|------|-------|----------|-----------|
+| abstract | Abstract / blurb | 1 | `#abstract` |
+| concept | Tangible user interfaces | 1 | `#concept-tangible-user-interfaces` |
+| concept | interaction design | 1 | `#concept-interaction-design` |
+| concept | inclusive design | 1 | `#concept-inclusive-design` |
+| concept | neurodiversity | 1 | `#concept-neurodiversity` |
+| concept | dyslexia | ? | `#concept-dyslexia` |
+| concept | R227 | ? | `#concept-r227` |
+| concept | designing | ? | `#concept-designing` |
+| concept | tangible | ? | `#concept-tangible` |
+| concept | user | ? | `#concept-user` |
+| concept | interfaces | ? | `#concept-interfaces` |
+| concept | focus | ? | `#concept-focus` |
+| concept | friend | ? | `#concept-friend` |
+| finding | Tangible User Interfaces (TUIs) provide multisensory interaction and engagement, which are… | 1 | `#finding-tangible-user-interfaces-tuis-provide` |
+| finding | Given their diverse learning needs, neurodivergent learners require specifically designed … | 1 | `#finding-given-their-diverse-learning-needs-neur` |
+| finding | Existing TUIs provide limited evidence on specific design features, focusing on inclusive … | 1 | `#finding-existing-tuis-provide-limited-evidence-o` |
+| finding | Therefore, this paper presents five finalised inclusive design components for TUIs, specif… | 1 | `#finding-therefore-this-paper-presents-five-fina` |
+| finding | The components were established through thematic analysis of focus group data from five sp… | 1 | `#finding-the-components-were-established-through` |
+| finding | The findings revealed five inclusive design components, mapped directly to the five dimens… | 1 | `#finding-the-findings-revealed-five-inclusive-des` |
+| page | p.1: Journal of Information and Communication Technology, Vol. 25, Number 3 (July) 2026, pp: 31 | 1 | `#pdf-p1` |
+| page | p.2: Journal of Information and Communication Technology, Vol. 25, Number 3 (July) 2026, pp: 31 | 2 | `#pdf-p2` |
+| page | p.3: Journal of Information and Communication Technology, Vol. 25, Number 3 (July) 2026, pp: 31 | 3 | `#pdf-p3` |
+| page | p.4: Journal of Information and Communication Technology, Vol. 25, Number 3 (July) 2026, pp: 31 | 4 | `#pdf-p4` |
+| page | p.5: Journal of Information and Communication Technology, Vol. 25, Number 3 (July) 2026, pp: 31 | 5 | `#pdf-p5` |
+| page | p.6: Journal of Information and Communication Technology, Vol. 25, Number 3 (July) 2026, pp: 31 | 6 | `#pdf-p6` |
+| page | p.7: Journal of Information and Communication Technology, Vol. 25, Number 3 (July) 2026, pp: 31 | 7 | `#pdf-p7` |
+| page | p.8: Journal of Information and Communication Technology, Vol. 25, Number 3 (July) 2026, pp: 31 | 8 | `#pdf-p8` |
+| page | p.9: Journal of Information and Communication Technology, Vol. 25, Number 3 (July) 2026, pp: 31 | 9 | `#pdf-p9` |
+| page | p.10: Journal of Information and Communication Technology, Vol. 25, Number 3 (July) 2026, pp: 31 | 10 | `#pdf-p10` |
+| page | p.11: Journal of Information and Communication Technology, Vol. 25, Number 3 (July) 2026, pp: 31 | 11 | `#pdf-p11` |
+| page | p.12: Journal of Information and Communication Technology, Vol. 25, Number 3 (July) 2026, pp: 31 | 12 | `#pdf-p12` |
+
+## Abstract
+<a id="abstract"></a>
+
+Tangible User Interfaces (TUIs) provide multisensory interaction and engagement, which are essential for learning for neurodivergent learners, such as children with dyslexia, dyscalculia, and autism spectrum disorder. Given their diverse learning needs, neurodivergent learners require specifically designed tools to support their learning. Existing TUIs provide limited evidence on specific design features, focusing on inclusive reading design for neurodivergent children and on Universal Design principles. Therefore, this paper presents five finalised inclusive design components for TUIs, specifically tailored to address the unique needs of children with reading difficulties. The components were established through thematic analysis of focus group data from five specialised educators using Atlas.ti. The findings revealed five inclusive design components, mapped directly to the five dimensions of interaction design and universal design principles. These components are crucial for triggering multisensory engagement and mitigating text-processing barriers for struggling readers, thereby providing a more inclusive and effective learning session. This effort strives to support UNESCO Sustainable Development Goal 4, which aims to promote inclusive and equitable quality education.
+
+## Keywords
+
+- Tangible user interfaces
+- interaction design
+- inclusive design
+- neurodiversity
+- dyslexia
+
+## Concept index (graph hooks + página)
+
+<a id="concept-tangible-user-interfaces"></a>
+### [PDF p.1] Concept: Tangible user interfaces
+- Locator: `R227-designing-tangible-user-interfaces-for-neurodiversity-a-focus-on-dyslexia-friend.pdf` · página **1**
+
+<a id="concept-interaction-design"></a>
+### [PDF p.1] Concept: interaction design
+- Locator: `R227-designing-tangible-user-interfaces-for-neurodiversity-a-focus-on-dyslexia-friend.pdf` · página **1**
+
+<a id="concept-inclusive-design"></a>
+### [PDF p.1] Concept: inclusive design
+- Locator: `R227-designing-tangible-user-interfaces-for-neurodiversity-a-focus-on-dyslexia-friend.pdf` · página **1**
+
+<a id="concept-neurodiversity"></a>
+### [PDF p.1] Concept: neurodiversity
+- Locator: `R227-designing-tangible-user-interfaces-for-neurodiversity-a-focus-on-dyslexia-friend.pdf` · página **1**
+
+<a id="concept-dyslexia"></a>
+### [PDF p.?] Concept: dyslexia
+- Locator: `R227-designing-tangible-user-interfaces-for-neurodiversity-a-focus-on-dyslexia-friend.pdf` · página **?**
+
+<a id="concept-r227"></a>
+### [PDF p.?] Concept: R227
+- Locator: `R227-designing-tangible-user-interfaces-for-neurodiversity-a-focus-on-dyslexia-friend.pdf` · página **?**
+
+<a id="concept-designing"></a>
+### [PDF p.?] Concept: designing
+- Locator: `R227-designing-tangible-user-interfaces-for-neurodiversity-a-focus-on-dyslexia-friend.pdf` · página **?**
+
+<a id="concept-tangible"></a>
+### [PDF p.?] Concept: tangible
+- Locator: `R227-designing-tangible-user-interfaces-for-neurodiversity-a-focus-on-dyslexia-friend.pdf` · página **?**
+
+<a id="concept-user"></a>
+### [PDF p.?] Concept: user
+- Locator: `R227-designing-tangible-user-interfaces-for-neurodiversity-a-focus-on-dyslexia-friend.pdf` · página **?**
+
+<a id="concept-interfaces"></a>
+### [PDF p.?] Concept: interfaces
+- Locator: `R227-designing-tangible-user-interfaces-for-neurodiversity-a-focus-on-dyslexia-friend.pdf` · página **?**
+
+<a id="concept-focus"></a>
+### [PDF p.?] Concept: focus
+- Locator: `R227-designing-tangible-user-interfaces-for-neurodiversity-a-focus-on-dyslexia-friend.pdf` · página **?**
+
+<a id="concept-friend"></a>
+### [PDF p.?] Concept: friend
+- Locator: `R227-designing-tangible-user-interfaces-for-neurodiversity-a-focus-on-dyslexia-friend.pdf` · página **?**
+
+
+## Findings index (graph hooks + página)
+
+<a id="finding-tangible-user-interfaces-tuis-provide"></a>
+### [PDF p.1] Finding: Tangible User Interfaces (TUIs) provide multisensory interaction and engagement, which are essential for learning for neurodivergent learners, such as children with dyslexia, dyscalculia, and autism spectrum disorder.
+- Locator: `R227-designing-tangible-user-interfaces-for-neurodiversity-a-focus-on-dyslexia-friend.pdf` · página **1**
+
+<a id="finding-given-their-diverse-learning-needs-neur"></a>
+### [PDF p.1] Finding: Given their diverse learning needs, neurodivergent learners require specifically designed tools to support their learning.
+- Locator: `R227-designing-tangible-user-interfaces-for-neurodiversity-a-focus-on-dyslexia-friend.pdf` · página **1**
+
+<a id="finding-existing-tuis-provide-limited-evidence-o"></a>
+### [PDF p.1] Finding: Existing TUIs provide limited evidence on specific design features, focusing on inclusive reading design for neurodivergent children and on Universal Design principles.
+- Locator: `R227-designing-tangible-user-interfaces-for-neurodiversity-a-focus-on-dyslexia-friend.pdf` · página **1**
+
+<a id="finding-therefore-this-paper-presents-five-fina"></a>
+### [PDF p.1] Finding: Therefore, this paper presents five finalised inclusive design components for TUIs, specifically tailored to address the unique needs of children with reading difficulties.
+- Locator: `R227-designing-tangible-user-interfaces-for-neurodiversity-a-focus-on-dyslexia-friend.pdf` · página **1**
+
+<a id="finding-the-components-were-established-through"></a>
+### [PDF p.1] Finding: The components were established through thematic analysis of focus group data from five specialised educators using Atlas.ti.
+- Locator: `R227-designing-tangible-user-interfaces-for-neurodiversity-a-focus-on-dyslexia-friend.pdf` · página **1**
+
+<a id="finding-the-findings-revealed-five-inclusive-des"></a>
+### [PDF p.1] Finding: The findings revealed five inclusive design components, mapped directly to the five dimensions of interaction design and universal design principles.
+- Locator: `R227-designing-tangible-user-interfaces-for-neurodiversity-a-focus-on-dyslexia-friend.pdf` · página **1**
+
+
+## Relevance hooks
+### Theme relevance: software engineering and accessibility
+### Theme relevance: cognitive accessibility and neurodiversity
+### Theme relevance: evaluation metrics and WCAG
+
+## Sections (detected in PDF)
+
+_(no numbered sections auto-detected)_
+
+
+## Page chunks (texto por página del PDF)
+
+_Cada heading es un nodo Graphify. El label incluye la página para volver al PDF sin releer todo._
+
+<a id="pdf-p1"></a>
+### [PDF p.1] Journal of Information and Communication Technology, Vol. 25, Number 3 (July) 2026, pp: 31-42
+- Locator: `R227-designing-tangible-user-interfaces-for-neurodiversity-a-focus-on-dyslexia-friend.pdf` · página **1** / 12
+
+Journal of Information and Communication Technology, Vol. 25, Number 3 (July) 2026, pp: 31-42
+
+
+
+
+                     JOURNAL OF INFORMATION AND
+                     COMMUNICATION TECHNOLOGY
+                     https://e-journal.uum.edu.my/index.php/jict
+
+
+How to cite this article:
+Husni, H., Abdul Aziz, N. I., Shaifulrizal, M. K. I., Hashim, N. L., & Zufria. I. (2026). Designing tangible user interfaces for
+neurodiversity: A focus on dyslexia-friendly, inclusive design features. Journal of Information and Communication
+Technology, 25(3), 31-42. https://doi.org/10.32890/jict2026.25.3.2
+
+
+
+                     Designing Tangible User Interfaces for Neurodiversity:
+                     A Focus on Dyslexia-Friendly Inclusive Design Features
+
+       1
+        Husniza Husni, 2Nurul Izzah Abdul Aziz, 3Muhammad Khairul Inas Shaifulrizal,
+                                 4
+                                   Nor Laily Hashim & 5Ilka Zufria
+               1,2,3&4
+                       School of Computing, Universiti Utara Malaysia, Malaysia
+    5
+      Fakultas Sains dan Komputer, Universitas Islam Negeri Sumatera Utara, Indonesia
+
+                                                 *1
+                                                 husniza@uum.edu.my
+                                             2
+                                             nurul.izzah@uum.edu.my
+                                        3
+                                          m_khairul_inas@soc.uum.edu.my
+                                                 4
+                                                   laily@uum.edu.my
+                                              5
+                                                ilkazufria@uinsu.ac.id
+                                              *Corresponding author
+
+       Received: 15/1/2026           Revised: 31/3/2026             Accepted: 31/3/2026            Published: 31/7/2026
+
+
+
+                                                       ABSTRACT
+
+Tangible User Interfaces (TUIs) provide multisensory interaction and engagement, which are essential
+for learning for neurodivergent learners, such as children with dyslexia, dyscalculia, and autism
+spectrum disorder. Given their diverse learning needs, neurodivergent learners require specifically
+designed tools to support their learning. Existing TUIs provide limited evidence on specific design
+features, focusing on inclusive reading design for neurodivergent children and on Universal Design
+principles. Therefore, this paper presents five finalised inclusive design components for TUIs,
+specifically tailored to address the unique needs of children with reading difficulties. The components
+were established through thematic analysis of focus group data from five specialised educators using
+Atlas.ti. The findings revealed five inclusive design components, mapped directly to the five
+dimensions of interaction design and universal design principles. These components are crucial for
+triggering multisensory engagement and mitigating text-processing barriers for struggling readers,
+thereby providing a more inclusive and effective learning session. This effort strives to support
+UNESCO Sustainable Development Goal 4, which aims to promote inclusive and equitable quality
+education.
+
+Keywords: Tangible user interfaces, interaction design, inclusive design, neurodiversity, dyslexia.
+
+                                                              31
+
+<a id="pdf-p2"></a>
+### [PDF p.2] Journal of Information and Communication Technology, Vol. 25, Number 3 (July) 2026, pp: 31-42
+- Locator: `R227-designing-tangible-user-interfaces-for-neurodiversity-a-focus-on-dyslexia-friend.pdf` · página **2** / 12
+
+Journal of Information and Communication Technology, Vol. 25, Number 3 (July) 2026, pp: 31-42
+
+
+                                          INTRODUCTION
+
+Learning to read is an important skill that a child must master to ensure a smooth, successful
+academic journey and a positive learning experience at school. For some individuals, learning to read
+can be a challenge, especially for children with neurodiversity, a natural variation in human brains and
+behaviour. Neurodiversity recognizes and acknowledges conditions such as dyslexia, autism, attention
+deficit hyperactivity disorder (ADHD), and others not as deficits but as differences (Shah et al., 2022).
+Among neurodivergent conditions is dyslexia, a neurobiological condition that impedes reading and
+word decoding, primarily due to phonological deficits (Shaywitz, 2020). Children with autism,
+ADHD, and other learning differences often have reading difficulties and exhibit some of dyslexia’s
+characteristics, especially when it involves comorbid difficulties (Chase, 2025). Due to their specific
+needs, characteristics, and limitations, these children benefit most from multisensory methods,
+enabling them to use their other senses to read (Shaywitz, 2020). Multisensory methods engage
+multiple senses during the learning session, e.g., sight, hearing, movement, and touch. It is very
+common to have reading apps or software that include audio and visual, but not the latter two senses.
+This is where Tangible User Interfaces (TUIs) can be leveraged.
+
+TUIs provide the opportunity to use touch and even movement while interacting with digital
+applications. TUIs are defined as interactive applications that incorporate full-body interaction,
+tangible manipulation, integration with physical space, and a combination of physical and digital
+illustrations (Ullmer & Ishii, 1997; Garzotto & Gonella, 2011). TUIs have the potential to be an
+effective method for facilitating neurodivergent children's learning to read and nurturing their overall
+development, enabling them to reach their full potential (Fan et al., 2017; Teh et al., 2015).
+Additionally, TUIs offer several advantages similar to those of traditional computers, including cost-
+effectiveness (Fan et al., 2016), digital feedback (Jamali et al., 2019), and playful multimedia learning
+incorporating text, images, sounds, and physical objects (Fan et al., 2018).
+
+Despite the promising remarks, works on TUIs for dyslexia, such as Abdul Aziz et al. (2022) and
+Jamali et al. (2018), remains prototype-centric. Consequently, the specific design features required to
+support neurodivergent learners remain underexplored, with limited empirical validation regarding
+their systemic effectiveness (Fan et al., 2017). This gap highlights the critical need to investigate how
+discrete, user-centred design features can be systematically synthesised into structured, inclusive
+design components that leverage multisensory tangible interaction. By clustering design features into
+conceptual design components, designers can better address the cognitive characteristics of dyslexia
+and other reading difficulties. Given the characteristics of dyslexia and reading difficulties, this work
+seeks to answer the following questions: What specific design features of TUIs effectively support
+children with dyslexia in learning to read? How do these discrete TUI design features cluster to form
+broader inclusive design components that align with the five interaction design dimensions? In what
+ways can the inclusive design components of TUIs align with universal design principles to create an
+inclusive, accessible reading experience for children with dyslexia?
+
+
+                                         RELATED WORKS
+
+Neurodiversity and Dyslexia
+
+Neurodiversity is the concept that recognises neurological differences as natural variations in human
+cognition, including conditions such as dyslexia, ADHD, autism spectrum disorder (ASD), and other
+learning differences (Kapp et al., 2013; Armstrong, 2015). This perspective highlights that
+
+                                                   32
+
+<a id="pdf-p3"></a>
+### [PDF p.3] Journal of Information and Communication Technology, Vol. 25, Number 3 (July) 2026, pp: 31-42
+- Locator: `R227-designing-tangible-user-interfaces-for-neurodiversity-a-focus-on-dyslexia-friend.pdf` · página **3** / 12
+
+Journal of Information and Communication Technology, Vol. 25, Number 3 (July) 2026, pp: 31-42
+
+
+neurodivergent individuals have distinct cognitive strengths and challenges that should be recognised and
+supported rather than seen as a disorder (Doyle, 2020). Reading ability is one of a learner's main skills.
+However, few children were experiencing difficulties in reading or learning disability (LD), so-called
+dyslexia, irrespective of their social status, intelligence level, or education. This LD is innate and
+permanent throughout life, thereby requiring early and specialised intervention.
+
+Dyslexia is characterised by a severe impairment in reading and spelling that is inconsistent with the
+child’s intelligence quotient (IQ) or other potential academic abilities (Lyon et al., 2003). Dyslexia is
+characterised by difficulties with reading skills, accurately recognising words, differentiating letter sounds,
+recognising mirror letters, and forming syllables in sentences (Alias & Dahlan, 2015). Besides, children
+with dyslexia also have low confidence, are easily distracted, and rely heavily on teachers or parents during
+their learning processes (Ahmad et al., 2012). The eight major characteristics of dyslexia were presented in
+Table 1 (Bolhasan, 2009).
+
+Table 1
+
+Major Characteristics of Dyslexia
+
+ No.                                        Major Characteristics of Dyslexia
+  1.   Instabilities of writing and speaking vocabulary
+  2.   Late in oral action
+  3.   Weak in arranging the content
+  4.   Short-term memory
+  5.   Incapable of spelling properly
+  6.   Limitation of understanding: only remember things in class, but they will be forgotten during the test
+  7.   Inaccurate in reading
+  8.   Not well-planned
+
+Thus, multisensory methods work best for children with dyslexia because they cannot rely on traditional
+teaching and learning due to their phonological deficits and unique ways of processing phonology and
+orthography. The multisensory method, “known as visual-auditory-kinaesthetic-tactile (VAKT) indicates
+that learners are better taught when knowledge is provided in various modalities, as cited by Sanfilippo et
+al. (2022). According to Sarudin et al. (2019), multisensory methods use the human senses to improve
+learning, including visual (what we see), auditory (what we hear), and tactile (what we do or feel). For
+example, TUIs allow individuals to physically hold or touch letters and spells and perform related
+activities, while also visually stimulating them in the computer's digital space. In short, TUIs hold promise
+as an alternative approach, leveraging technology to actively engage children in their learning sessions.
+TUIs offer a captivating, interactive, and enjoyable learning experience by incorporating various senses,
+making the learning process more stimulating and fun.
+
+Tangible User Interfaces
+
+Research has shown that TUIs enhance children's learning. They also have the potential to support children
+with dyslexia during learning sessions by providing interactive and multisensory experiences (So et al.,
+2018). Ullmer and Ishii (2000) introduced TUIs as a novel interface type that merges the digital and
+physical worlds. TUIs are defined as interactive applications that combine full-body interaction, tangible
+manipulation, integration with physical space, and a set of physical and digital illustrations (Bozgeyikli &
+Bozgeyikli, 2021; Ullmer & Ishii, 2000). To facilitate the learning process for children with dyslexia, TUIs
+can address this group's needs by enabling them to easily undertake unfamiliar learning tasks, thereby
+fostering independence in learning. Additionally, it will boost the children's confidence and ability to learn
+independently without relying on others.
+
+                                                       33
+
+<a id="pdf-p4"></a>
+### [PDF p.4] Journal of Information and Communication Technology, Vol. 25, Number 3 (July) 2026, pp: 31-42
+- Locator: `R227-designing-tangible-user-interfaces-for-neurodiversity-a-focus-on-dyslexia-friend.pdf` · página **4** / 12
+
+Journal of Information and Communication Technology, Vol. 25, Number 3 (July) 2026, pp: 31-42
+
+
+Design Features of TUIs
+
+Previous research has primarily focused on computerised interactive multisensory programs to
+support children with dyslexia in reading, with limited attention to the design features of TUIs that
+could enhance learning experiences and reading acquisition for these children (Fan et al., 2016). Thus,
+this research aims to bridge this gap by extending the design features of TUIs. Design features are
+considered crucial aspects associated with products and designs, significantly influencing their
+functionality, performance, and quality (Han et al., 2018). Although a few studies have explored
+specific design features of TUIs that can support learning outcomes (Fan et al., 2016), greater
+improvement is needed in this area.
+
+There has been a lot of research conducted on TUIs, particularly on the relationships between TUIs
+and children with dyslexia through TUI systems. The design features of TUIs explained what the
+information means, and the content is henceforth presented in the tangible system for children with
+dyslexia. The majority of the studies focused on design features such as 2D tangible letters (Pandey &
+Srivastava, 2011a), 3D tangible letters (Jamali et al., 2019), dynamic colour cues (Cramer et al., 2016)
+and texture cues (Fan & Antle, 2015) to support reading comprehension for children with dyslexia.
+Prior studies used tactile, visual, audio and kinesthetic approaches either separately or in combinations
+(Pandey & Srivastava, 2011b; Antle et al., 2015; Fan & Antle, 2015; Cramer et al., 2016; Jamali et al.,
+2018). The eight design features are considered fundamental and useful as groundwork for designing
+and developing a comprehensive TUI specifically and exclusively for children with dyslexia learning
+to read.
+
+Several studies investigated the effects of design features such as 3D tangible letters, dynamic colour
+cues, texture cues (Antle et al., 2015), and font type (Jamali et al., 2019). Nevertheless, the literature
+offers little guidance on which TUI design features to use and how they can help children with
+dyslexia read (Fan et al., 2017). It is important for the development of a tangible system to use
+suitable design features to enhance user satisfaction, efficiency, and productivity. In addition, the
+TUI's design features need to be supported by theories and other related works in the dyslexia domain
+(Jamali et al., 2019). Present tangible reading systems for children with dyslexia have failed to
+demonstrate how TUI design features can help them, such as 3D tangible letters, dynamic colour cues,
+and texture cues (Fan et al., 2015; Cramer et al., 2016; Fan et al., 2018). This is because few studies
+have adapted TUI design features to develop tangible prototypes or systems for children with
+dyslexia. Thus, there is promising potential for the TUI's design features to be applied to the design of
+a tangible system for children with dyslexia.
+
+Interaction Design Dimensions
+
+When it involves interaction, designing interactive tools requires consideration of interaction design
+(IxD) concepts as well as mapping to the five IxD dimensions (see Figure 1) – 1D Word, 2D Visual
+Representation, 3D Physical Objects/Space, 4D Time, and 5D Behaviour (Interaction Design
+Foundation, 2025). Words define the interaction, for example, button labels. Visuals represent what is
+presented to the user, including typography, diagrams, icons, and graphics. Physical objects or space
+are the hardware with which users interact while visiting an app or website, such as a mouse, a
+keyboard, or a mobile device. Time refers to content that changes over time, such as sound, video, or
+animation (Silver, 2007). The behaviour relates to user experience, as well as to actions or feelings
+after interacting with the system (Aziz et al., 2013).
+
+
+                                                   34
+
+<a id="pdf-p5"></a>
+### [PDF p.5] Journal of Information and Communication Technology, Vol. 25, Number 3 (July) 2026, pp: 31-42
+- Locator: `R227-designing-tangible-user-interfaces-for-neurodiversity-a-focus-on-dyslexia-friend.pdf` · página **5** / 12
+
+Journal of Information and Communication Technology, Vol. 25, Number 3 (July) 2026, pp: 31-42
+
+
+Figure 1
+
+The Interaction Design Dimensions
+
+
+
+
+Universal Design Principles
+
+According to the Centre for Universal Design (1997), the Universal Design principles and related
+guidelines can be applied across design, product development, and education. There are seven
+principles, i.e., equitable use, flexibility in use, simple and intuitive use, perceptible information,
+tolerance for error, low physical effort, and size and space for approach and use. Table 2 presents
+each universal design principle in the context of TUI design, adapted from Dubuc & Edge (2006).
+
+Table 2
+
+Universal Design of TUIs Adapted from Dubuc and Edge (2006)
+
+     Principle    TUIs Design
+                  Hand-sized objects that have a high degree of contrast to their environment are likely to be
+                  used by a larger proportion of the population than very small objects (except for users who
+ Equitable use
+                  are motion impaired) that fade into their environments (except for visually impaired users),
+                  whilst at the same time appealing to the sense of play of all users.
+                  TUIs typically use bimanual skills, but in a natural way, i.e., both left- and right-handed
+                  users can use them equally well. They can also be customised to match the level of user
+ Flexibility in
+                  expertise: beginner users are presented with the minimum number of physical objects
+ use
+                  necessary to complete their task, and expert users have the option to create abstractions and
+                  greater freedom to choose physical-digital mappings.
+                  One of the major benefits of the physical component of TUIs is that it leverages the skills
+ Simple and       we have developed over a lifetime of real-world experience. This is complemented by the
+ intuitive use    TUI virtual component, which can recommend actions and provide interactive feedback on
+                  their effects.
+                  The enduring existence of physical objects ensures that tangible information is always
+                  evident under normal environmental conditions, and even darkness and some visual
+ Perceptible      impairments can be resolved by using appropriate lighting on the object itself. TUIs can
+ information      interact with tactile interaction (using static features, such as object weight and texture) and
+                  haptic interaction (using time-varying features such as skin pressure and muscle tension).
+                  Multiple modes of expression can redundantly present essential information.
+                                                                                                       (continued)
+                                                      35
+
+<a id="pdf-p6"></a>
+### [PDF p.6] Journal of Information and Communication Technology, Vol. 25, Number 3 (July) 2026, pp: 31-42
+- Locator: `R227-designing-tangible-user-interfaces-for-neurodiversity-a-focus-on-dyslexia-friend.pdf` · página **6** / 12
+
+Journal of Information and Communication Technology, Vol. 25, Number 3 (July) 2026, pp: 31-42
+
+
+    Principle      TUIs Design
+                   The fact that TUIs primarily use space as their medium, in contrast to conventional GUIs,
+ Tolerance for     where interaction is mostly time-consuming, gives them a clear advantage in error
+ errors            tolerance. Although physical objects can easily be reorganised in space, GUI events cannot
+                   be rearranged in good time without the additional complexity of temporal abstractions.
+                   In terms of error tolerance, a TUI's physical objects cannot be sufficiently light to prevent
+ Low physical      accidental movement. This condition must be balanced with the requirement that extended
+ effort            use of the TUI does not cause fatigue-the weights of the tangibles should be chosen to
+                   reflect this balance.
+                   The physical objects themselves must be large enough to be easily manipulated with
+ Size and space
+                   minimal effort. The choice of object size should also take into consideration the space
+ for approach
+                   required by all physical objects – any standing or sitting users must be able to access the
+ and use
+                   entire interaction space.
+
+
+Universal design ensures that products, in this context, the TUIs, are designed to be used by all. Such
+a design enables inclusivity, especially in addressing the needs of neurodivergent individuals. The
+beauty of universal design is that, although it is meant for a specific group of people, it is widely
+accepted and used by neurotypicals as well, hence the term "universal." Although the suggestions in
+Table 2 are for designing TUIs following universal design principles, tailoring them to the needs of a
+specific group, i.e., dyslexia, requires further examination of their inclusivity.
+
+
+                                            METHODOLOGY
+
+An important component of the research is data collection and analysis, in which the TUIs' design
+features are identified and analysed based on previous studies. Information on the related study is
+gathered and analysed through a literature review. A comprehensive literature review is essential for
+identifying the design features of TUIs for children with dyslexia learning to read. Based on the
+literature review, eight design features identified in previous works were implemented in the tangible
+systems. Focus group discussions were conducted with special education teachers to validate the
+features.
+
+The Participants
+
+In the focus group discussions, five special education teachers were involved. Previous studies
+indicate that having five special education teachers participate in these focus group sessions is
+considered representative (Aziz & Ikram, 2015; Lee & Lee, 2009). To ensure a rich pool of
+experiential data, purposive sampling was used to select participants who met the strict inclusion
+criterion of having more than 5 years of teaching experience. All participants are female teachers in
+public primary schools in Kedah and Perlis. Their specialised expertise covers a range of learning
+disabilities, with a primary focus on children with special educational needs, such as dyslexia and
+mild autism, as well as on remedial education.
+
+Focus Group Discussions
+
+The primary objective of the focus group discussion is to validate which design features are most
+suitable or effective for helping children with dyslexia learn to read. Two focus group discussions,
+which lasted approximately 1.5 hours each, were conducted with the participants in Kedah and Perlis,
+following a three-phase protocol:
+
+                                                      36
+
+<a id="pdf-p7"></a>
+### [PDF p.7] Journal of Information and Communication Technology, Vol. 25, Number 3 (July) 2026, pp: 31-42
+- Locator: `R227-designing-tangible-user-interfaces-for-neurodiversity-a-focus-on-dyslexia-friend.pdf` · página **7** / 12
+
+Journal of Information and Communication Technology, Vol. 25, Number 3 (July) 2026, pp: 31-42
+
+
+Orientation and contextualisation—The researcher introduced the study’s scope and provided the
+context of discussion to establish a collaborative baseline.
+
+Interactive feature review—The core of the discussion was a review of eight distinct design features
+implemented in a TUI prototype with two parts: tangible and digital (GUI). The TUI prototype was
+shown to the participants, and its usage was demonstrated to facilitate understanding. The participants
+also get to interact with and use the prototype. The participants then evaluated each feature
+implemented through the lens of user experience and pedagogical suitability, examining how specific
+features can impact a child’s reading interaction.
+
+Semi-structured dialogue—Utilising open-ended, semi-structured questioning, the researcher guided
+the dialogue to allow flexibility during the sessions, enabling the participants to provide more insights
+on anecdotes of experience, unexpected usability barriers, and practical classroom constraints.
+
+To ensure data integrity, the focus group discussion sessions were audio-recorded, and photos were
+taken with the consent of all participants.
+
+Data Analysis
+
+Following the completion of the focus group discussion sessions, the audio recordings were
+transcribed and processed using the ATLAS.ti (8th Version) software to facilitate the computer-
+assisted qualitative data analysis, as recommended by Soratto et al. (2020). The analysis followed a
+rigorous thematic approach, beginning with reading the transcripts for data immersion, followed by
+generating codes for segments addressing the eight design features.
+
+
+                                  RESULTS AND DISCUSSIONS
+
+The focus group discussion provided a comprehensive response and experiential insights to the
+questions posed in this study. Following the thematic coding process, the data converged into five
+inclusive design components. As synthesised in Table 3, these components establish a foundational
+framework for designing and developing TUIs tailored to the cognitive and text-processing
+requirements of neurodivergent learners, particularly children navigating dyslexia and other reading
+difficulties. The five inclusive design components are customisation or adaptation, learning content,
+learning style, tangible features, and IxD elements, which are further mapped to the five IxD
+dimensions, and universal design principles are considered. Rather than viewing these components in
+separation or isolation, the thematic framework operationalises them as interconnected layers of an
+inclusive interaction ecosystem for TUIs. In the context of neuroinclusive design, these components
+do not function as static, independent modules; instead, they exist in a state of independent dynamic
+dependency where a modification in one layer directly influences the efficacy of another. For
+example, the tangible features (such as the letter slots, i.e., the physical positioning slots) are
+structurally co-dependent on the IxD elements (such as the real-time sensing responsiveness) to
+successfully deliver the learning content.
+
+
+
+
+                                                   37
+
+<a id="pdf-p8"></a>
+### [PDF p.8] Journal of Information and Communication Technology, Vol. 25, Number 3 (July) 2026, pp: 31-42
+- Locator: `R227-designing-tangible-user-interfaces-for-neurodiversity-a-focus-on-dyslexia-friend.pdf` · página **8** / 12
+
+Journal of Information and Communication Technology, Vol. 25, Number 3 (July) 2026, pp: 31-42
+
+
+Table 3
+
+The Five Essential Inclusive Design Components of Designing TUIs are Mapped to IxD and Universal
+Design Principles
+
+Inclusive Design                                                           IxD           Universal Design
+                                        Description
+  Components                                                           Dimensions           Principles
+                   Characteristics of children with dyslexia and      4D, 5D
+Customisation
+                   reading difficulties
+or adaptation
+                   Challenges and struggles to read
+                   Personal interests
+                   Learning engagement
+                   Motivation driven by feedback
+Learning
+                   Letter recognition                                 1D
+content
+                   Spelling (syllables/words)                                            1.   Equitable use
+                   Syllable patterns                                                     2.   Flexibility in
+                   Structured activities                                                      use
+                   Clear instructions                                                    3.   Simple and
+                   Repetition                                         1D, 2D, 3D,             intuitive use
+Learning style                                                                           4.   Perceptible
+                   Step-by-step activities                            5D
+                   Flexibility                                                                information
+                   Clear, intuitive feedback                                             5.   Tolerance for
+Tangible           3D tangible letters                                3D                      error
+features           Dynamic colour cues                                2D, 5D             6.   Low physical
+                                                                                              effort
+                   Texture Cues                                       3D
+                                                                                         7.   Size and space
+                   Spatial affordances                                3D, 5D
+                                                                                              for approach
+                   Letter slots/spelling board                        3D, 5D
+                                                                                              and use
+IxD elements       Audio feedback/praises                             4D, 5D
+                   Colourful Interface                                2D
+                   Linear Navigation                                  1D
+                   Help icon button with audio                        2D, 5D
+                   Static images                                      2D
+                   Icon with text label                               2D
+                   Voice-over for each instruction                    4D, 5D
+                   Real-time sensing responsiveness                   3D, 4D, 5D
+
+Referring to Table 3, the feature customisation or adaptation reflects the need to consider the
+characteristics of dyslexia, such as having a very short memory span while reading or spelling, reversing
+letters/words, and having difficulties with mirrored letters such as b, d, p, q, m, w, u, n. This situation or
+condition creates challenges for them in learning to read, such as mispronouncing or misspelling words,
+easily getting bored/distracted, or feeling overwhelmed. In this case, it is recommended to empathise with
+them and learn about their personal interests so the design can be customised accordingly. This
+customisation then needs to be planned in accordance with the next two features, i.e., learning content and
+learning styles. Findings suggest that TUIs are better suited to addressing learning challenges in letter
+recognition and syllable spelling. This indicates that TUIs are effective for early intervention to introduce
+letters and syllables to children. To do this effectively, the recommended learning styles include providing
+children with structured activities and clear instructions. Repetition and step-by-step activities are also
+emphasised to strengthen their understanding of each lesson. Most importantly, flexibility is required so
+that adaptation and customisation to a child's learning style align with that child's specific needs.
+
+
+                                                      38
+
+<a id="pdf-p9"></a>
+### [PDF p.9] Journal of Information and Communication Technology, Vol. 25, Number 3 (July) 2026, pp: 31-42
+- Locator: `R227-designing-tangible-user-interfaces-for-neurodiversity-a-focus-on-dyslexia-friend.pdf` · página **9** / 12
+
+Journal of Information and Communication Technology, Vol. 25, Number 3 (July) 2026, pp: 31-42
+
+
+To enable lessons with TUIs, tangible features are a must. The tangible features include 3D tangible
+letters, dynamic colour cues, and texture cues. 3D tangible letters refer to physical alphabets that can
+be touched and felt (see Figure 2). Incorporating texture cues can also be achieved by selecting a
+suitable texture that engages the child’s senses while learning with TUIs. Both of these features are
+mapped to the third IxD dimension (3D), which is physical object/space. Another feature is dynamic
+colour cues, which are mapped to IxD’s visual (2D) and behaviour (5D) dimensions, enabling the
+system to provide colour signals that give clues or feedback to the children, e.g., green for a correct
+answer and red for a wrong answer.
+
+Figure 2
+
+An Example of 3D Tangible Letters, 3D-Printed in a Dyslexia-Friendly Font
+
+
+
+
+The IxD elements are the interactive design features necessary to create an engaging learning session
+supported by TUIs. These elements include audio (4D), praise (5D), a colourful interface (2D), linear
+navigation (1D), a help icon with audio (2D, 5D), static images (2D), an icon with labels (2D), and
+voice-over for each instruction (4D, 5D). Audio and voice-over interactions are mapped to the IxD 4D
+Time dimension, as the sound/voice instruction progresses over time. Most elements are mapped to a
+2D visual representation, as it plays a crucial role in the interaction between a user and a TUI. Another
+feature worth highlighting is the universal design principles. In this context, all seven principles are
+suitable to consider when designing TUIs for dyslexia, as they ensure inclusivity and accessibility of
+the technology. The seven principles are equitable use, flexibility in use, simple and intuitive use,
+perceptible information, tolerance for error, low physical effort, and size and space for approach and
+use, which can be mapped to each dimension and design component.
+
+
+                                           CONCLUSION
+
+Reading is one of the most crucial skills a child should master for academic success, but
+neurodivergent children, especially those with dyslexia, face significant challenges in acquiring it.
+Attributed to phonological deficits and other cognitive challenges, multisensory methods have been
+proven to be effective in facilitating children's learning to read. To enable a multisensory approach,
+TUIs offer a promising solution by integrating touch and movement into interactions with digital
+applications, potentially enhancing children's learning and reading experiences. Although promising
+
+                                                   39
+
+<a id="pdf-p10"></a>
+### [PDF p.10] Journal of Information and Communication Technology, Vol. 25, Number 3 (July) 2026, pp: 31-42
+- Locator: `R227-designing-tangible-user-interfaces-for-neurodiversity-a-focus-on-dyslexia-friend.pdf` · página **10** / 12
+
+Journal of Information and Communication Technology, Vol. 25, Number 3 (July) 2026, pp: 31-42
+
+
+for supporting children with dyslexia and other reading difficulties, TUI's design features tailored to
+dyslexia remain limited and warrant further exploration. Hence, this paper presents the key inclusive
+design components of TUIs identified through thematic analysis of focus group sessions with special
+education and remedial teachers. These features align with interaction design dimensions and the
+seven universal design principles to address gaps and promote inclusivity. Findings from this work
+contributed to the development of inclusive, interactive reading tools that empower neurodivergent
+children to reach their full potential.
+
+
+                                      ACKNOWLEDGMENT
+
+This work was supported by the university’s “Geran Khas APIQ” (S/O code 21783, 2024).
+
+
+                                           REFERENCES
+
+Abdul Aziz, N. I., Husni, H., & Hashim, N. L. (2022). Dyslexia-friendly design features for tangible
+        user interfaces: A systematic literature review. International Journal of Information and
+        Learning Technology, 39(4), 360–372. https://doi.org/10.1108/IJILT-11-2021-0170
+Ahmad, S. Z., Ludin, N. N. A. A. N., Ekhsan, H. M., Rosmani, A. F., & Ismail, M. H. (2012). Bijak
+        Membaca—Applying phonic reading technique and multisensory approach with interactive
+        multimedia for dyslexia children. In 2012 IEEE Colloquium on Humanities, Science and
+        Engineering (CHUSER) (pp. 554–559). https://doi.org/10.1109/CHUSER.2012.6504375
+Alias, N. A., & Dahlan, A. (2015). Enduring difficulties: The challenges of mothers in raising
+        children with dyslexia. Procedia – Social and Behavioral Sciences, 202, 107–114. https://doi.
+        org/10.1016/j.sbspro.2015.08.213
+Antle, A. N., Fan, M., & Cramer, E. S. (2015). PhonoBlocks: A tangible system for supporting
+        children with dyslexia learning to read. In Proceedings of the Ninth International Conference
+        on Tangible, Embedded, and Embodied Interaction (pp. 533–538). https://doi.org/
+        10.1145/2677199.2687897
+Armstrong, T. (2015). The myth of the normal brain: Embracing neurodiversity. AMA Journal of
+        Ethics, 17(4), 348–35. https://doi.org/10.1001/journalofethics.2015.17.4.msoc1-1504
+Aziz, F. A., Husni, H., & Jamaludin, Z. (2013). Translating interaction design guidelines for dyslexic
+        children’s reading application. In Proceedings of the World Congress on Engineering (Vol. 2,
+        pp. 977–980).
+Aziz, N., & Ikram, J. (2015). Role of focus group discussion (FGD) in e-business research. Open
+        Access Library Journal, 2(01), 1. https://doi.org/10.1001/journalofethics.2015.17.4.msoc1-
+        1504.
+Bolhasan, R. A. (2009). A study of dyslexia among primary school students in Sarawak, Malaysia.
+        School of Doctoral Studies (European Union) Journal, 1(1), 250–268.
+Bozgeyikli, E., & Bozgeyikli, L. L. (2021). Evaluating object manipulation interaction techniques in
+        mixed reality: Tangible user interfaces and gesture. In 2021 IEEE Virtual Reality and 3D
+        User Interfaces (VR) (pp. 778–787). https://doi.org/10.1109/VR50410.2021.00105
+Chase, C. (2025). The dyslexia–ADHD overlap: Why evaluators confuse the conditions. ADDitude
+        Magazine.
+
+
+
+
+                                                  40
+
+<a id="pdf-p11"></a>
+### [PDF p.11] Journal of Information and Communication Technology, Vol. 25, Number 3 (July) 2026, pp: 31-42
+- Locator: `R227-designing-tangible-user-interfaces-for-neurodiversity-a-focus-on-dyslexia-friend.pdf` · página **11** / 12
+
+Journal of Information and Communication Technology, Vol. 25, Number 3 (July) 2026, pp: 31-42
+
+
+Cramer, E. S., Antle, A. N., & Fan, M. (2016). The code of many colours: Evaluating the effects of a
+         dynamic colour-coding scheme on children’s spelling in a tangible software system. In
+         Proceedings of the 15th International Conference on Interaction Design and Children (pp.
+         473–485). https://doi.org/10.1145/2930674.293069
+Doyle, N. (2020). Neurodiversity at work: A biopsychosocial model and the impact on working
+         adults. British Medical Bulletin, 135(1), 108–125. https://doi.org/10.1093/bmb/ldaa021
+Dubuc, L., & Edge, D. (2006). TUIs to ease: Tangible user interfaces in assistive technology. In
+         Proceedings of the 3rd Cambridge Workshop on Universal Access and Assistive Technology.
+Fan, M., & Antle, A. N. (2015). Tactile letters: A tangible tabletop with texture cues supporting
+         alphabetic learning for dyslexic children. In Proceedings of the Ninth International
+         Conference on Tangible, Embedded, and Embodied Interaction (pp. 673–678). https://doi.org/
+         10.1145/2677199.2688806
+Fan, M., Antle, A. N., & Cramer, E. S. (2016). Design rationale: Opportunities and recommendations
+         for tangible reading systems for children. In Proceedings of the 15th International Conference
+         on Interaction Design and Children (pp. 101–112). https://doi.org/10.1145/2930674.2930690
+Fan, M., Antle, A. N., Hoskyn, M., & Neustaedter, C. (2018). A design case study of a tangible
+         system supporting young English language learners. International Journal of Child-Computer
+         Interaction, 18, 67–78. https://doi.org/10.1016/j.ijcci.2018.08.001
+Fan, M., Antle, A. N., Hoskyn, M., Neustaedter, C., & Cramer, E. S. (2017). Why tangibility matters:
+         A design case study of at-risk children learning to read and spell. In Proceedings of the 2017
+         CHI Conference on Human Factors in Computing Systems (pp. 1805–1816). https://doi.org/
+         10.1145/3025453.3026048
+Garzotto, F., & Gonella, R. (2011). An open-ended tangible environment for disabled children’s
+         learning. In Proceedings of the 10th International Conference on Interaction Design and
+         Children (pp. 52–61). https://doi.org/10.1145/1999030.1999037
+Han, X., Li, R., Wang, J., Qin, S., & Ding, G. (2018). Identification of key design characteristics for
+         complex product adaptive design. The International Journal of Advanced Manufacturing
+         Technology, 95, 1215–1231. https://doi.org/10.1007/s00170-017-1267-0
+Interaction Design Foundation. (2025). The five languages or dimensions of interaction design.
+         https://www.interaction-design.org/literature/article/the-five-languages-or-dimensions-of-
+         interaction-design.
+Jamali, S. N., Admodisastro, N., Abd Ghani, A. A., Hassan, S. A., Kamaruddin, A., & Hamid, S. S.
+         A. (2018). Exploring design guidelines of tangible interaction in learning for children with
+         dyslexia. International Journal of Engineering & Technology, 7(4.31), 168–174. https://doi.
+         org/10.14419/ijet.v7i4.31.23361
+Jamali, S. N., Admodisastro, N., Kamaruddin, A., Abd Ghani, A. A., & Hassan, S. (2019). Design
+         guidelines of tangible interaction learning model for children with dyslexia. International
+         Journal of Advanced Science and Technology, 28(2), 355–362. https://doi.org/10.14419/ijet.
+         v7i4.31.22073
+Kapp, S. K., Gillespie-Lynch, K., Sherman, L. E., & Hutman, T. (2013). Deficit, difference, or both?
+         Autism and neurodiversity. Developmental Psychology, 49(1), 59–71. https://doi.org/10.1037/
+         a0028353
+Lee, J. J., & Lee, K. P. (2009). Facilitating dynamics of focus group interviews in East Asia: Evidence
+         and tools from a cross-cultural study. International Journal of Design, 3(1), 17-28.
+Lyon, G. R., Shaywitz, S. E., & Shaywitz, B. A. (2003). A definition of dyslexia. Annals of Dyslexia,
+         53, 1–14. https://doi.org/10.1007/s11881-003-0001-9
+
+
+
+                                                  41
+
+<a id="pdf-p12"></a>
+### [PDF p.12] Journal of Information and Communication Technology, Vol. 25, Number 3 (July) 2026, pp: 31-42
+- Locator: `R227-designing-tangible-user-interfaces-for-neurodiversity-a-focus-on-dyslexia-friend.pdf` · página **12** / 12
+
+Journal of Information and Communication Technology, Vol. 25, Number 3 (July) 2026, pp: 31-42
+
+
+Pandey, S., & Srivastava, S. (2011a). SpellBound: A tangible spelling aid for the dyslexic child. In
+        Proceedings of the 3rd International Conference on Human Computer Interaction (pp. 101–
+        104). https://doi.org/10.1145/2407796.2407813
+Pandey, S., & Srivastava, S. (2011b). Tiblo: A tangible learning aid for children with dyslexia. In
+        Proceedings of the Second Conference on Creativity and Innovation in Design (pp. 211–220).
+        https://doi.org/10.1145/2079216.2079247
+Sanfilippo, F., Blazauskas, T., Salvietti, G., Ramos, I., Vert, S., Radianti, J., & Oliveira, D. (2022). A
+        perspective review on integrating VR/AR with haptics into STEM education for multisensory
+        learning. Robotics, 11(2), 41. https://doi.org/10.3390/robotics11020041
+Sarudin, N. A. A., Hashim, H., & Yunus, M. M. (2019). Multisensory approach: How it helps in
+        improving word recognition? Creative Education, 10(12), 3186. https://doi.org/10.4236/ce.
+        2019.1012242
+Shah, P. J., Boilson, M., Rutherford, M., Prior, S., Johnston, L., Maciver, D., & Forsyth, K. (2022).
+        Neurodevelopmental disorders and neurodiversity: Definition of terms from Scotland’s
+        National Autism Implementation Team. The British Journal of Psychiatry, 221(3), 577–579.
+        https://doi.org/10.1192/bjp.2022.43
+Shaywitz, S. E. (2020). Overcoming dyslexia (2nd ed.). Knopf.
+Silver, K. (2007). What puts the design in interaction design. UX Matters, 3, 3–77.
+        https://www.uxmatters.com/mt/archives/2007/08/what-puts.
+So, H. J., Hwang, Y. E., Wang, Y., & Lee, E. (2018). Unpacking the potential of tangible technology
+        in education: A systematic literature review. Educational Technology International, 19(2),
+        199–228.
+Soratto, J., Pires, D. E. P. D., & Friese, S. (2020). Thematic content analysis using ATLAS.ti
+        software: Potentialities for research in health. Revista Brasileira de Enfermagem, 73.
+        https://doi.org/10.1590/0034-7167-2019-0250
+Teh, T. T. L., Ng, K. H., & Parhizkar, B. (2015). TraceIt: An air tracing reading tool for children
+        with dyslexia. In Advances in Visual Informatics: 4th International Visual Informatics
+        Conference (pp. 356–366). https://doi.org/10.1007/978-3-319-25939-0_32
+The Centre for Universal Design. (1997). The principles of universal design. North Carolina State
+        University. https://universaldesign.ie/about-universal-design/the-7-principles.
+Ullmer, B., & Ishii, H. (1997). The metaDESK: Models and prototypes for tangible user interfaces. In
+        Proceedings of the 10th Annual ACM Symposium on User Interface Software and
+        Technology (pp. 223–232). https://doi.org/10.1145/263407.263551
+Ullmer, B., & Ishii, H. (2000). Emerging frameworks for tangible user interfaces. IBM Systems
+        Journal, 39(3–4), 915–931. https://doi.org/10.1147/sj.393.0915
+
+
+
+
+                                                   42

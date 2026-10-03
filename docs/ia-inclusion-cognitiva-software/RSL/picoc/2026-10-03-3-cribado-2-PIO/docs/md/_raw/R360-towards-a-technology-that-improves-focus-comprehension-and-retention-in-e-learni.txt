@@ -1,0 +1,271 @@
+===== PDF PAGE 1 / 4 =====
+Towards a Technology that Improves Focus, Comprehension, and
+  Retention in E-learning for Higher Education students with
+                            ADHD
+                      Aishee Das                                            Aurora Constantin                               Gennaro Imperatore
+               School of Informatics                                      School of Informatics                      Computer and Information Sciences
+           The University of Edinburgh                                 The University of Edinburgh                       University of Strathclyde
+           Edinburgh, United Kingdom                                   Edinburgh, United Kingdom                         Glasgow, United Kingdom
+            aisheedas2003@gmail.com                                    aurora.constantin@ed.ac.uk                     gennaro.imperatore@strath.ac.uk
+
+Abstract                                                                                    ’25), October 26–29, 2025, Denver, CO, USA. ACM, New York, NY, USA, 4 pages.
+Students in Higher Education (HE) with Attention Deficit Hyperac-                           https://doi.org/10.1145/3663547.3759705
+tivity Disorder (ADHD) often face persistent challenges in video-
+based e-learning, including difficulties with sustained attention,                          1    Introduction
+comprehension, and information retention. Existing lecture plat-                            Attention Deficit Hyperactivity Disorder (ADHD) is a neurode-
+forms typically offer limited embedded support, while external                              velopmental condition characterised by inattention (i.e, difficulty
+tools for focus and note-taking operate outside the learning con-                           with following instructions, focus and organisation), hyperactivity
+text and rely heavily on self-regulation. This paper presents the                           (i.e. excessive movement and talking) and impulsivity (i.e, acting
+design, development, and evaluation of a digital learning tool that                         without thinking) [2, 19]. It is typically diagnosed in childhood, but
+integrates support features directly into the lecture interface to as-                      often continues into adulthood, where its symptoms can evolve
+sist students with ADHD. Developed using a user-centered design                             [5, 7, 21]. As individuals mature, hyperactivity and impulsivity usu-
+methodology, the prototype includes chapter-based video segmenta-                           ally decline, while difficulties with inattention often persist and
+tion, AI-generated summaries and quizzes, a context-aware chatbot,                          become more prominent [6]. These challenges can be impactful for
+and visual scaffolds such as mind maps and annotated slides. The                            higher education (HE) students, where there is an expectation of
+design was informed by the input of students with ADHD and ex-                              self-learning and time management [17]. The transition from struc-
+perts in Education, Accessibility, and Human-Computer Interaction                           tured schooling to self-managed learning in HE can be challenging
+(HCI). A high-fidelity prototype has been developed and evaluated                           for students with ADHD, often resulting in negative experiences,
+to assess usability, relevance, and its potential to support focus, com-                    poor academic performance, and reduced motivation [31, 32].
+prehension, and retention. The findings suggest that embedding                                  These challenges are exacerbated in e-learning contexts. In HE
+accessible adaptive features in lecture content can reduce cognitive                        institutions, course delivery has steadily shifted towards e-learning
+load and improve engagement for students with ADHD. The paper                               as a key mode [24]. Lecture capture technologies such as Echo360
+concludes with implications for inclusive e-learning design and                             [15] and Panopto [27] have become common in digital learning
+directions for future research.                                                             environments, providing students with access to recorded lectures.
+                                                                                            However, lecture recordings are often long and non-interactive,
+CCS Concepts                                                                                leading to difficulties for students with ADHD, such as maintaining
+• Human-centered computing → Accessibility technologies.                                    attention and engaging with the course material [12, 14]. Previous
+                                                                                            work found that, for students without ADHD, when viewing con-
+                                                                                            tent passively, attention can start to decline as soon as 10 to 15
+Keywords
+                                                                                            minutes, and this decline in attention is even more prominent in
+Inclusive learning environments, ADHD, Assistive Technology,                                students with ADHD [13]. Although platforms such as Echo360
+Design-based research, Educational technology for Higher Edu-                               and Panopto include accessibility features, such as playback speed
+cation                                                                                      controls and captions, these platforms do not support engagement
+ACM Reference Format:                                                                       or help maintain attention. Additionally, they do not break down
+Aishee Das, Aurora Constantin, and Gennaro Imperatore. 2025. Towards                        content into shorter and more manageable segments, a method that
+a Technology that Improves Focus, Comprehension, and Retention in E-                        has been shown to support attention retention on platforms such
+learning for Higher Education students with ADHD. In The 27th Interna-                      as YouTube [22].
+tional ACM SIGACCESS Conference on Computers and Accessibility (ASSETS                          Several tools and strategies have been developed to help stu-
+                                                                                            dents manage attentional difficulties. For example, Glean [20] al-
+Permission to make digital or hard copies of all or part of this work for personal or       lows students to capture and annotate lecture content. Other tools
+classroom use is granted without fee provided that copies are not made or distributed       and strategies include: the Pomodoro technique [8], and distrac-
+for profit or commercial advantage and that copies bear this notice and the full citation
+on the first page. Copyrights for third-party components of this work must be honored.      tion blockers such as Cold Turkey [10], or Freedom [18], the aim
+For all other uses, contact the owner/author(s).                                            of which is to reduce environmental distractions. However, these
+ASSETS ’25, Denver, CO, USA                                                                 tools are not designed to be integrated into lectures and are heavily
+© 2025 Copyright held by the owner/author(s).
+ACM ISBN 979-8-4007-0676-9/25/10                                                            reliant on self-regulation and motivation of the students. They are
+https://doi.org/10.1145/3663547.3759705                                                     not designed to adapt to moment-to-moment changes in attention,
+
+===== PDF PAGE 2 / 4 =====
+ASSETS ’25, October 26–29, 2025, Denver, CO, USA                                                                                           Das et al.
+
+
+nor do they provide interactive elements within the lecture mate-            2.2    Low fidelity prototype
+rial. Therefore, while these tools can be helpful, they often cannot         Based on the findings from the pre-design studies, a low-fidelity pro-
+support the sustained engagement and retention of information                totype was developed in Figma [16], prioritising simplicity, clarity,
+that students with ADHD require.                                             and support for ADHD-related needs. The prototype featured three
+   This work addresses this gap by presenting a unified digital              sections: Course Library, a Lecture List, and Lecture Content. The
+learning tool that embeds multiple support features directly within          Lecture Content section was composed of a segmented video player
+the lecture interface. Unlike existing platforms, which tend to focus        with visual chapter markers, concise chapter summaries, interactive
+on a single function or rely heavily on self-regulation, our proto-          quizzes, an AI chatbot, a Pomodoro timer, amongst other tools such
+type integrates video segmentation, AI-generated summaries and               as mind-maps, a note-taking feature, and slide annotation tools.
+quizzes, mind maps, a chatbot, and motivational elements into a                 The interface design was informed by a combination of ADHD-
+single interface. This approach reduces cognitive load from switch-          oriented and HCI design principles. Lorna McKnight’s ADHD guide-
+ing between tools and aims to improve attention, comprehension,              lines informed decisions such as the use of a calm, neutral colour
+and retention for HE students with ADHD.                                     palette to reduce visual overstimulation, minimalist layouts to sup-
+                                                                             port concentration, orderly grouping of related content, and concise
+                                                                             and clearly signposted instructions [23]. These design decisions
+2     System Design
+                                                                             were complemented by Nielsen’s usability heuristics, which in-
+This tool was designed using a User-Centered Design approach [1].            formed the layout and interaction design through consistent feed-
+                                                                             back, minimalist structure, intuitive navigation, and flexible user
+                                                                             control [25].
+2.1     Pre-design Studies
+Semi-structured interviews (approximately 50 minutes each) were
+conducted with five university students (S1-S5) with ADHD from               2.3    Formative evaluation
+various academic disciplines in different UK universities. In the            Formative evaluation involved think-aloud sessions with the same
+interviews, the participants discussed their experiences with lecture        participants who took part in the pre-design studies: five students
+recordings, attention-related challenges, and the desired features           and five experts (E1-E5) in HCI, Education, Accessibility, and Soft-
+of supportive digital tools.                                                 ware Engineering. Students described the interface as “very straight-
+    A bottom-up (inductive) thematic analysis [9] was conducted to           forward, very intuitive” (S5), and appreciated the consolidated lay-
+allow key themes to emerge directly from the data. The following             out, “Everything’s labelled and you’ve got symbols and pictures, which
+themes were identified: attention-related challenges, distractions,          make it a lot easier” (S4). Experts emphasised that “having everything
+existing adaptive strategies, and preferred tool functionalities. The        within the same platform makes sure your attention is a little more
+participants described significant difficulties in maintaining atten-        focused at that point” (E3). Suggestions for improvement included
+tion during extended lecture recordings. One participant, S1, stated,        clearer labelling of summaries, chapter-specific progress indicators,
+“If there’s a 50-minute lecture or five 10-minute videos, the shorter        repositioning transcripts for better usability, and integrating a brief
+videos are a lot easier. . . I lose focus often thinking, ‘oh God, there’s   onboarding tutorial. The prototype was improved further based on
+still half an hour of this.’” Similarly, participant S3 shared, “Even if     the feedback to better match user needs and expectations.
+I’m interested, it doesn’t matter. I zone out inevitably.” External dis-
+tractions, such as notifications and background clutter, exacerbated
+these problems. Although students used adaptive strategies such              3     System Implementation
+as modifying playback speed, enabling captions, and setting self-            The high-fidelity prototype was developed to improve the effec-
+directed goals, these were often insufficient in supporting sustained        tiveness of e-learning for HE students with ADHD (Figure 1). One
+comprehension.                                                               of its core features is the segmented video player, which divides
+    The participants were then asked to identify several desired             lectures into manageable, interactive chapters. Clickable sections
+features for a digital learning tool to support their study needs.           on a video progress bar allow students to navigate generated chap-
+Potential features identified included segmentation of long videos,          ters, helping to reduce attentional fatigue. Chapter summaries and
+generation of topic-based chapters, generation of summaries for              quizzes were created using a GPT-3.5-based generative AI model
+each segment, embedding interactive quizzes to support under-                via the Edinburgh Language Model platform [26]. The quizzes pro-
+standing, and offering visual aids, such as mind maps, to show the           vide immediate visual feedback, reinforcing learning through active
+linkage between lecture concepts. Participants also expressed inter-         recall, a crucial strategy for information retention [11]. AI mind
+est in gamified elements to improve motivation, as articulated by S3,        maps are also generated to visually represent concepts discussed in
+“Gamifying the lecture, like watering a plant or building something          lectures with the aim of allowing students to structure and revise
+after completing a segment, would motivate me.” The use of gamified          information. An integrated AI-powered chatbot feature supports
+elements in technology-based tools for higher education students             immediate clarification of lecture content, significantly improving
+has also been shown to be beneficial, supporting engagement, moti-           user autonomy and comprehension.
+vation, and sustained participation in learning activities [3]. Across          The prototype was designed in line with Web Content Accessi-
+all responses, there was a strong emphasis on the importance of a            bility Guidelines (WCAG) 2.2 [29], supporting high-contrast colour
+minimal and intuitive interface to reduce cognitive load and support         schemes (verified via WebAIM [30]) and full keyboard navigation
+ease of use.                                                                 to meet various accessibility needs. A built-in text-to-speech (TTS)
+
+===== PDF PAGE 3 / 4 =====
+A Supportive E-learning Tool for ADHD in Higher Education                                               ASSETS ’25, October 26–29, 2025, Denver, CO, USA
+
+
+                                                                           of 4.43 out of 5, suggesting that students found the tool helpful in
+                                                                           maintaining concentration and managing fatigue.
+                                                                               Comprehension. Students highlighted features such as chapter
+                                                                           summaries, quizzes, and slide annotation to improve understanding.
+                                                                           S1 noted, "The chapter summary is helpful because sometimes you
+                                                                           drift off during the lecture. Having the summary at the end serves as a
+                                                                           good reminder." S2 found quizzes useful, stating "Having quizzes as
+                                                                           I’m going through the lecture is very helpful. It makes it much easier
+                                                                           to break things up rather than me losing attention." Comprehension
+                                                                           averaged 4.29 out of 5, indicating that the tool effectively supported
+                                                                           understanding.
+                  Figure 1: Main lecture interface.                            Information retention. Participants felt that interactive re-
+                                                                           vision tools, particularly mind map and quizzes, supported infor-
+                                                                           mation retention. S7 stated, "The mind map is definitely a feature
+                                                                           I would use. It makes everything make more sense, especially when
+feature, suggested by participants, enables audio playback of sum-
+                                                                           there are lines and lines of text. It’s nice to have a visual way of laying
+maries, supporting multimodal engagement.
+                                                                           things out". S4 described the quiz feature as being similar to playing
+   Additional tools include an annotation interface for personal-
+                                                                           a game, saying "I love the quiz - it’s almost like a game. Instead of
+ising lecture slides and a structured notes section, both of which
+                                                                           just sitting, listening, or taking notes, you’re actively doing something
+directly respond to participant suggestions. Reflective quizzes en-
+                                                                           and testing your knowledge". Retention was rated between 3 and 5,
+courage active learning and support the development of essential
+                                                                           with an average of 3.86 out of 5. The slightly lower score may be
+self-regulation skills for students with ADHD. The application in-
+                                                                           due to the short duration of the evaluation.
+cludes a Pomodoro timer with customisable focus durations and
+                                                                               Accessibility. Students valued features that improved comfort
+breaks to promote sustained attention and structured study habits.
+                                                                           and inclusivity. S2 highlighted dark mode for late-night study ses-
+Students are rewarded for completing timed sessions by the appear-
+                                                                           sions, stating, "I prefer dark mode because I often work late at night,
+ance of visual rewards, which include animations and character
+                                                                           and the white screen can be very glaring and hard on the eyes." Sub-
+badges that grow over time, to positively reinforce self-motivation
+                                                                           titles and alternative formats also supported accessibility, with S2
+and consistency in study routines. An onboarding tutorial, created
+                                                                           noting, "I always end up reading captions. They help me follow along
+with React Tour [28], guides users through the platform to help
+                                                                           better." The text-to-speech (TTS) feature was praised for easing
+them feel at ease from the start.
+                                                                           reading, especially when tired or due to visual stress, dyslexia, and
+                                                                           ADHD, "I really like TTS... It makes reading much easier."
+4    Evaluation
+The high-fidelity prototype was evaluated with seven university
+students diagnosed with ADHD (S1–S7) and five experts (E1, E2,             5    Conclusion
+E5, and two additional experts) in HCI, Accessibility, and Education.      This study highlights the importance of designing educational tech-
+It involved cooperative think-aloud protocols, the System Usability        nologies that are accessible and inclusive for HE students with
+Scale (SUS), and semi-structured interviews. A top-down (deductive)        ADHD. This prototype has been designed to directly address the
+thematic analysis [9] was conducted using the following predefined         main challenges faced by these students, including difficulty staying
+themes: (1) Usability, (2) Attention Support, (3) Comprehension, (4)       focused, processing unstructured content, and retaining informa-
+Information Retention, and (5) Accessibility.                              tion during video-based learning. By including features such as
+    Usability. The participants found the prototype highly intuitive,      segmented videos, chapter summaries, interactive quizzes, and a
+structured, and efficient. S4 highlighted the onboarding tutorial,         Pomodoro timer, the tool helped break content into manageable
+noting, "I like the tour, how it jumps and highlights what it’s talk-      parts and encouraged active re-engagement. The participants per-
+ing about." S6 appreciated the clear chapter segmentation and re-          ceived the tool as promising in supporting HE students with ADHD
+marked, "Nicely and clearly marked, split into decent chunks." The         to stay focused and better understand the material. The findings
+integrated design simplified workflow, reducing cognitive load. S1         highlight how inclusive design can shift the focus from retrofitting
+said, "Usually I’d have to do these things separately. It’s really cool    accessibility to embedding support structures at the heart of educa-
+that everything’s integrated." Usability received SUS scores averag-       tional tools, offering a more equitable experience for all learners.
+ing 94 (students) and 92.5 (experts), which are considered excellent
+on the adjective rating [4].
+    Attention support. Features such as the Pomodoro timer and             6    Future Work
+progress tracker were praised for supporting focus. S4 shared, "Some       While the prototype showed strong initial promise, several lim-
+days I struggle with focusing even for 25 minutes, so being able to        itations suggest directions for future research. First, AI features,
+adjust it based on how I feel that day is great." S3 added: "It was very   while functional, relied on a basic GPT model, which may have
+satisfying to see the progress bar reach a hundred percent." Experts       limited the quality and specificity of generated summaries, quizzes,
+highlighted the timer’s role in promoting structured study habits.         and chatbot responses. Future iterations will integrate validated
+Attention support was rated between 4 and 5, with an average score         educational content, ensuring pedagogical accuracy even when
+
+===== PDF PAGE 4 / 4 =====
+ASSETS ’25, October 26–29, 2025, Denver, CO, USA                                                                                                                        Das et al.
+
+
+modified by AI. Second, the tool was evaluated in a controlled set-                       [13] Barbara Gross Davis. 2009. Tools for teaching. John Wiley & Sons.
+ting with a relatively small sample size. Conducting longitudinal                         [14] Kulari Lokuge Dona, Janet Gregory, and Ekaterina Pechenkina. 2017. Lecture-
+                                                                                               recording technology in higher education: Exploring lecturer and student views
+studies in real academic environments, with a more diverse partic-                             across the disciplines. Australasian Journal of Educational Technology 33, 4 (2017).
+ipant group, would help validate its long-term effectiveness and                          [15] Echo360. 2025. Echo360. https://echo360.com/. Privacy Policy last updated: 17
+                                                                                               January 2025; Accessed: 25 June 2025.
+broader applicability.                                                                    [16] Figma. 2025. Figma. https://www.figma.com/ Accessed: 2025-04-02.
+                                                                                          [17] Andrew P Fleming and Robert J McMahon. 2012. Developmental context and
+References                                                                                     treatment principles for ADHD among college students. Clinical child and family
+                                                                                               psychology review 15 (2012), 303–329.
+ [1] Chadia Abras, Diane Maloney-Krichmar, Jenny Preece, et al. 2004. User-centered
+                                                                                          [18] Freedom. 2023. Freedom. https://freedom.to/. Privacy Policy last modified: 13
+     design. Bainbridge, W. Encyclopedia of Human-Computer Interaction. Thousand
+                                                                                               September 2023; Accessed: 25 June 2025.
+     Oaks: Sage Publications 37, 4 (2004), 445–456.
+                                                                                          [19] Lydia Furman. 2005. What is attention-deficit hyperactivity disorder (ADHD)?
+ [2] American Psychiatric Association. 2022. What is ADHD? American Psychiatric
+                                                                                               Journal of child neurology 20, 12 (2005), 994–1002.
+     Association. https://www.psychiatry.org/patients-families/adhd/what-is-adhd
+                                                                                          [20] Glean. 2025. Glean for Notetaking. https://glean.co. Privacy Policy last updated:
+ [3] Ami Bakhai, Aurora Constantin, and Cristina Adriana Alexandru. 2020. Moti-
+                                                                                               20 May 2025; Accessed: 25 June 2025.
+     vateme!: An Alexa skill to support higher education students with autism. In 14th
+                                                                                          [21] Sam Goldstein. 2002. Continuity of ADHD in adulthood: Hypothesis and theory
+     International Conference on Interfaces and Human Computer Interaction. Internal
+                                                                                               meet reality.
+     Association for Development of the Information Society, 187–191.
+                                                                                          [22] Google. 2025. Manage video chapters on your videos. https://support.google.com/
+ [4] Aaron Bangor, Philip T Kortum, and James T Miller. 2008. An empirical evaluation
+                                                                                               youtube/answer/9884579?hl=en-GB. Feature introduced May 2020; Wikipedia
+     of the system usability scale. Intl. Journal of Human–Computer Interaction 24, 6
+                                                                                               updated late May 2025; Accessed: 19 June 2025.
+     (2008), 574–594.
+                                                                                          [23] Lorna McKnight. 2010. Designing for ADHD: in Search of Guidelines. In Pro-
+ [5] Russell A Barkley and Russell A Barkley. 1998. Attention-deficit hyperactivity
+                                                                                               ceedings of the IDC 2010 Digital Technologies and Marginalized Youth Workshop.
+     disorder: A handbook for diagnosis and treatment. Vol. 2. Guilford press New York.
+                                                                                               ChiCI Group, University of Central Lancashire. https://homepage.divms.uiowa.
+ [6] Joseph Biederman, Stephen Faraone, Sharon Milberger, Shannon Curtis, Lisa
+                                                                                               edu/~hourcade/idc2010-myw/mcknight.pdf Accessed: 25 June 2025.
+     Chen, Abbe Marrs, Cheryl Ouellette, Phoebe Moore, and Thomas Spencer. 1996.
+                                                                                          [24] Attila Nagy. 2005. The impact of e-learning. In E-Content: Technologies and
+     Predictors of persistence and remission of ADHD into adolescence: results from
+                                                                                               perspectives for the European Market. Springer, 79–96.
+     a four-year prospective follow-up study. Journal of the American Academy of
+                                                                                          [25] J. Nielsen. 2005. Heuristic evaluation ten usability heuristics. https://www.
+     Child & Adolescent Psychiatry 35, 3 (1996), 343–351.
+                                                                                               nngroup.com/articles/ten-usability-heuristics/.
+ [7] Joseph Biederman, Eric Mick, and Stephen V Faraone. 2000. Age-dependent
+                                                                                          [26] University of Edinburgh. 2024. Edinburgh Language Model (ELM). https://
+     decline of symptoms of attention deficit hyperactivity disorder: impact of remis-
+                                                                                               information-services.ed.ac.uk/computing/comms-and-collab/elm. Accessed: 3
+     sion definition and symptom type. American journal of psychiatry 157, 5 (2000),
+                                                                                               April 2025.
+     816–818.                                                                             [27] Panopto. 2025. Panopto. https://www.panopto.com/. Accessed: 25 June 2025.
+ [8] Francesco Cirillo. 2006. The Pomodoro Technique. https://lasolutionestenvous.        [28] React Tours. 2024. React Tours Documentation. https://docs.react.tours/. Ac-
+     com/wp-content/uploads/2014/04/ThePomodoroTechnique_v1-3.pdf. Accessed                    cessed: 3 April 2025.
+     on 15 December 2018.                                                                 [29] W3C. 2024. Web Content Accessibility Guidelines (WCAG) 2.2. https://www.w3.
+ [9] Victoria Clarke and Virginia Braun. 2017. Thematic analysis. The journal of               org/TR/WCAG22/. https://www.w3.org/TR/WCAG22/ W3C Recommendation,
+     positive psychology 12, 3 (2017), 297–298.                                                12 December 2024.
+[10] Cold Turkey. 2025. Cold Turkey. https://getcoldturkey.com/. Last major release:      [30] WebAIM. 2024. Contrast Checker – WebAIM. https://webaim.org/resources/
+     7 May 2025; Accessed: 25 June 2025.                                                       contrastchecker/. Accessed: 3 April 2025.
+[11] Brian Robert Cook and Andrea Babon. 2017. Active learning through online             [31] Lisa L Weyandt and George J DuPaul. 2008. ADHD in college students: De-
+     quizzes: Better learning and less (busy) work. Journal of Geography in Higher             velopmental findings. Developmental disabilities research reviews 14, 4 (2008),
+     Education 41, 1 (2017), 24–38.                                                            311–319.
+[12] Jamie Costley, Mik Fanguy, Chris Lange, and Matthew Baldwin. 2021. The effects       [32] Lisa L Weyandt and George J DuPaul. 2013. College students with ADHD: Current
+     of video lecture viewing strategies on cognitive load. Journal of Computing in            issues and future directions. Springer.
+     Higher Education 33 (2021), 19–38.

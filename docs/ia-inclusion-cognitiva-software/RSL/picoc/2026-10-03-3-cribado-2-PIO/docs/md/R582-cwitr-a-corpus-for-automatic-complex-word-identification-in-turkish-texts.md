@@ -1,0 +1,551 @@
+# CWITR: A Corpus for Automatic Complex Word Identification in
+
+> Fuente PDF: `R582-cwitr-a-corpus-for-automatic-complex-word-identification-in-turkish-texts.pdf` · técnica **locator index** (página + ancla) + chunks Graphify
+
+## Metadata
+- Stem: `R582-cwitr-a-corpus-for-automatic-complex-word-identification-in-turkish-texts`
+- PDF: `R582-cwitr-a-corpus-for-automatic-complex-word-identification-in-turkish-texts.pdf`
+- DOI: `10.1145/3582768.3582802`
+- Pages: `7`
+- Structured_at: `2026-10-03T23:23:19+00:00`
+- Technique: `pdf-page-locators + heading-chunks`
+
+## Locator index (qué hay y en qué página del PDF)
+
+| Kind | Label | PDF page | MD anchor |
+|------|-------|----------|-----------|
+| abstract | Abstract / blurb | 1 | `#abstract` |
+| concept | R582 | ? | `#concept-r582` |
+| concept | cwitr | ? | `#concept-cwitr` |
+| concept | corpus | ? | `#concept-corpus` |
+| concept | automatic | ? | `#concept-automatic` |
+| concept | complex | ? | `#concept-complex` |
+| concept | word | ? | `#concept-word` |
+| concept | identification | 1 | `#concept-identification` |
+| concept | turkish | ? | `#concept-turkish` |
+| concept | texts | ? | `#concept-texts` |
+| finding | words and phrases in a text are determined, these units are replaced The Complex Word Iden… | 1 | `#finding-words-and-phrases-in-a-text-are-determin` |
+| finding | Considering all words as complex units port to resolve accessibility barriers for people w… | 1 | `#finding-considering-all-words-as-complex-units-p` |
+| finding | Some LS systems first identify the difficulties with cognitive, language, and learning dis… | 1 | `#finding-some-ls-systems-first-identify-the-diffi` |
+| finding | The complex words and replace them with potentially simpler alterna- task is concerned wit… | 1 | `#finding-the-complex-words-and-replace-them-with` |
+| finding | In contrast to assuming all words as complex units, selecting words that are unusual and d… | 1 | `#finding-in-contrast-to-assuming-all-words-as-com` |
+| finding | CWI systems have a large impact on the output of Text formance on the task efficiency. | 1 | `#finding-cwi-systems-have-a-large-impact-on-the-o` |
+| page | p.1: CWITR: A Corpus for Automatic Complex Word Identification in | 1 | `#pdf-p1` |
+| page | p.2: NLPIR 2022, December 16–18, 2022, Bangkok, Thailand Bahar Ilgen and Chris Biemann | 2 | `#pdf-p2` |
+| page | p.3: CWITR: A Corpus for Automatic Complex Word Identification in Turkish Texts NLPIR 2022, Dec | 3 | `#pdf-p3` |
+| page | p.4: NLPIR 2022, December 16–18, 2022, Bangkok, Thailand Bahar Ilgen and Chris Biemann | 4 | `#pdf-p4` |
+| page | p.5: CWITR: A Corpus for Automatic Complex Word Identification in Turkish Texts NLPIR 2022, Dec | 5 | `#pdf-p5` |
+| page | p.6: NLPIR 2022, December 16–18, 2022, Bangkok, Thailand Bahar Ilgen and Chris Biemann | 6 | `#pdf-p6` |
+| page | p.7: CWITR: A Corpus for Automatic Complex Word Identification in Turkish Texts NLPIR 2022, Dec | 7 | `#pdf-p7` |
+
+## Abstract
+<a id="abstract"></a>
+
+words and phrases in a text are determined, these units are replaced The Complex Word Identification (CWI) task aims to provide sup- by simpler alternatives. Considering all words as complex units port to resolve accessibility barriers for people who experience is not practical in the LS task. Some LS systems first identify the difficulties with cognitive, language, and learning disabilities. The complex words and replace them with potentially simpler alterna- task is concerned with the detection and identification of complex tives. In contrast to assuming all words as complex units, selecting words that are unusual and difficult to understand by certain target too few complex words has the potential of resulting in a bad per- groups. CWI systems have a large impact on the output of Text formance on the task efficiency. On the other hand, identifying Simplification (TS) systems. This paper revisits the CWI task by too many words might lead to erroneous substitutions and mean- extending available datasets by creating a new CWI corpus. In this ing loss [5]. Categories of CWI tasks for the available strategies study, we collect a new CWI dataset (CWITR) of complex single can be classified into five groups. These groups consist of the fol- and multi-token words consisting of different text genres for Turk- lowing approaches: simplifying everything, threshold-based and ish and prepare it for investigation of computational methods on lexicon-based approaches, machine learning assisted and implicit discrimination between complex and non-complex words forms. CWI strategies [6]. In the scope of implicit approaches, CWI is performed implicitly during other steps of the pipeline instead of CCS CONCEPTS an initial step. Regarding the latter approach, the availability of CWI datasets plays an important role in the accuracy of applica- • Computing Methodologies; • Artificial Intelligence; • Natu- tions such as LS tasks. In this study, we collect a new CWI dataset ral Language Processing; • Language Resources; (CWITR) in different groups of text genres (NEWS, WIKIPEDIA, WIKINEWS, PERIODICALS, BOOK SUMMARIES) for Turkish and
+
+## Keywords
+
+- _(none auto-detected)_
+
+## Concept index (graph hooks + página)
+
+<a id="concept-r582"></a>
+### [PDF p.?] Concept: R582
+- Locator: `R582-cwitr-a-corpus-for-automatic-complex-word-identification-in-turkish-texts.pdf` · página **?**
+
+<a id="concept-cwitr"></a>
+### [PDF p.?] Concept: cwitr
+- Locator: `R582-cwitr-a-corpus-for-automatic-complex-word-identification-in-turkish-texts.pdf` · página **?**
+
+<a id="concept-corpus"></a>
+### [PDF p.?] Concept: corpus
+- Locator: `R582-cwitr-a-corpus-for-automatic-complex-word-identification-in-turkish-texts.pdf` · página **?**
+
+<a id="concept-automatic"></a>
+### [PDF p.?] Concept: automatic
+- Locator: `R582-cwitr-a-corpus-for-automatic-complex-word-identification-in-turkish-texts.pdf` · página **?**
+
+<a id="concept-complex"></a>
+### [PDF p.?] Concept: complex
+- Locator: `R582-cwitr-a-corpus-for-automatic-complex-word-identification-in-turkish-texts.pdf` · página **?**
+
+<a id="concept-word"></a>
+### [PDF p.?] Concept: word
+- Locator: `R582-cwitr-a-corpus-for-automatic-complex-word-identification-in-turkish-texts.pdf` · página **?**
+
+<a id="concept-identification"></a>
+### [PDF p.1] Concept: identification
+- Locator: `R582-cwitr-a-corpus-for-automatic-complex-word-identification-in-turkish-texts.pdf` · página **1**
+
+<a id="concept-turkish"></a>
+### [PDF p.?] Concept: turkish
+- Locator: `R582-cwitr-a-corpus-for-automatic-complex-word-identification-in-turkish-texts.pdf` · página **?**
+
+<a id="concept-texts"></a>
+### [PDF p.?] Concept: texts
+- Locator: `R582-cwitr-a-corpus-for-automatic-complex-word-identification-in-turkish-texts.pdf` · página **?**
+
+
+## Findings index (graph hooks + página)
+
+<a id="finding-words-and-phrases-in-a-text-are-determin"></a>
+### [PDF p.1] Finding: words and phrases in a text are determined, these units are replaced The Complex Word Identification (CWI) task aims to provide sup- by simpler alternatives.
+- Locator: `R582-cwitr-a-corpus-for-automatic-complex-word-identification-in-turkish-texts.pdf` · página **1**
+
+<a id="finding-considering-all-words-as-complex-units-p"></a>
+### [PDF p.1] Finding: Considering all words as complex units port to resolve accessibility barriers for people who experience is not practical in the LS task.
+- Locator: `R582-cwitr-a-corpus-for-automatic-complex-word-identification-in-turkish-texts.pdf` · página **1**
+
+<a id="finding-some-ls-systems-first-identify-the-diffi"></a>
+### [PDF p.1] Finding: Some LS systems first identify the difficulties with cognitive, language, and learning disabilities.
+- Locator: `R582-cwitr-a-corpus-for-automatic-complex-word-identification-in-turkish-texts.pdf` · página **1**
+
+<a id="finding-the-complex-words-and-replace-them-with"></a>
+### [PDF p.1] Finding: The complex words and replace them with potentially simpler alterna- task is concerned with the detection and identification of complex tives.
+- Locator: `R582-cwitr-a-corpus-for-automatic-complex-word-identification-in-turkish-texts.pdf` · página **1**
+
+<a id="finding-in-contrast-to-assuming-all-words-as-com"></a>
+### [PDF p.1] Finding: In contrast to assuming all words as complex units, selecting words that are unusual and difficult to understand by certain target too few complex words has the potential of resulting in a bad per- groups.
+- Locator: `R582-cwitr-a-corpus-for-automatic-complex-word-identification-in-turkish-texts.pdf` · página **1**
+
+<a id="finding-cwi-systems-have-a-large-impact-on-the-o"></a>
+### [PDF p.1] Finding: CWI systems have a large impact on the output of Text formance on the task efficiency.
+- Locator: `R582-cwitr-a-corpus-for-automatic-complex-word-identification-in-turkish-texts.pdf` · página **1**
+
+
+## Relevance hooks
+### Theme relevance: software engineering and accessibility
+### Theme relevance: cognitive accessibility and neurodiversity
+### Theme relevance: evaluation metrics and WCAG
+
+## Sections (detected in PDF)
+
+_(no numbered sections auto-detected)_
+
+
+## Page chunks (texto por página del PDF)
+
+_Cada heading es un nodo Graphify. El label incluye la página para volver al PDF sin releer todo._
+
+<a id="pdf-p1"></a>
+### [PDF p.1] CWITR: A Corpus for Automatic Complex Word Identification in
+- Locator: `R582-cwitr-a-corpus-for-automatic-complex-word-identification-in-turkish-texts.pdf` · página **1** / 7
+
+CWITR: A Corpus for Automatic Complex Word Identification in
+                       Turkish Texts
+                                    Bahar Ilgen                                                                 Chris Biemann
+    Language Technology Group, Department of Informatics,                                  Language Technology Group, Department of Informatics,
+               Universität Hamburg, Germany                                                           Universität Hamburg, Germany
+                   baharilgen@gmail.com                                                             christian.biemann@uni-hamburg.de
+
+ABSTRACT                                                                                   words and phrases in a text are determined, these units are replaced
+The Complex Word Identification (CWI) task aims to provide sup-                            by simpler alternatives. Considering all words as complex units
+port to resolve accessibility barriers for people who experience                           is not practical in the LS task. Some LS systems first identify the
+difficulties with cognitive, language, and learning disabilities. The                      complex words and replace them with potentially simpler alterna-
+task is concerned with the detection and identification of complex                         tives. In contrast to assuming all words as complex units, selecting
+words that are unusual and difficult to understand by certain target                       too few complex words has the potential of resulting in a bad per-
+groups. CWI systems have a large impact on the output of Text                              formance on the task efficiency. On the other hand, identifying
+Simplification (TS) systems. This paper revisits the CWI task by                           too many words might lead to erroneous substitutions and mean-
+extending available datasets by creating a new CWI corpus. In this                         ing loss [5]. Categories of CWI tasks for the available strategies
+study, we collect a new CWI dataset (CWITR) of complex single                              can be classified into five groups. These groups consist of the fol-
+and multi-token words consisting of different text genres for Turk-                        lowing approaches: simplifying everything, threshold-based and
+ish and prepare it for investigation of computational methods on                           lexicon-based approaches, machine learning assisted and implicit
+discrimination between complex and non-complex words forms.                                CWI strategies [6]. In the scope of implicit approaches, CWI is
+                                                                                           performed implicitly during other steps of the pipeline instead of
+CCS CONCEPTS                                                                               an initial step. Regarding the latter approach, the availability of
+                                                                                           CWI datasets plays an important role in the accuracy of applica-
+• Computing Methodologies; • Artificial Intelligence; • Natu-
+                                                                                           tions such as LS tasks. In this study, we collect a new CWI dataset
+ral Language Processing; • Language Resources;
+                                                                                           (CWITR) in different groups of text genres (NEWS, WIKIPEDIA,
+                                                                                           WIKINEWS, PERIODICALS, BOOK SUMMARIES) for Turkish and
+KEYWORDS                                                                                   prepare it to investigate the performance of different algorithms.
+Complex word identification, Lexical complexity, Text simplifica-                             Automatic identification of complex words is linked to several
+tion, Crowdsourcing                                                                        language-related areas of research. Lexically and semantically com-
+ACM Reference Format:                                                                      plex words and phrases may cause difficulties in reading and under-
+Bahar Ilgen and Chris Biemann. 2022. CWITR: A Corpus for Automatic                         standing texts. Text Simplification, Lexical Simplification [7] and
+Complex Word Identification in Turkish Texts. In 2022 6th International                    Reading Assessment [8] are principal areas that have the potential
+Conference on Natural Language Processing and Information Retrieval (NLPIR                 to benefit from the CWI task. TS task aims to reduce the linguistic
+2022), December 16–18, 2022, Bangkok, Thailand. ACM, New York, NY, USA,                    complexity of a given text to improve understandability and read-
+7 pages. https://doi.org/10.1145/3582768.3582802                                           ability by still maintaining the original meaning [9, 10]. The output
+                                                                                           of the TS task is utilized to improve the comprehension of different
+1     INTRODUCTION                                                                         groups of people such as individuals with low-literacy levels, chil-
+The first step of Text Simplification (TS) systems is to predict which                     dren, second language learners, and people with several cognitive
+words are complex considering a target population before applying                          impairments. The latter group includes the disorders such as apha-
+any text simplification task. Complex Word Identification (CWI)                            sia and dyslexia in which proposed simplification techniques may
+is the task of determining words and phrases that are considered                           vary based on the needs of special groups. While second language
+difficult to understand by the target audience. CWI is a subtask                           learners possibly have a limited vocabulary, people with cognitive
+of Lexical Simplification (LS) pipeline and accessibility [1-3]. The                       disorders may have difficulties distinguishing passive/active voice
+definition of a complex word and related parameters have been                              forms which may affect the whole meaning of a sentence drastically.
+investigated in the scope of psycho and neurolinguistic research.                          Texts with shorter and more frequent words have been found useful
+Previous research identified major parameters related to word com-                         for people with dyslexia since they have difficulties reading and
+plexity consisting of factors such as word frequency, word length,                         understanding long forms [11]. Apart from its role as a solution in
+and the position of phonemes within a word [4]. Once complex                               target groups, TS is also a preparatory step to improve the results
+                                                                                           of other NLP tasks such as automatic text summarization, machine
+Publication rights licensed to ACM. ACM acknowledges that this contribution was            translation, sentence fusion, and semantic role labeling.
+authored or co-authored by an employee, contractor or affiliate of a national govern-
+ment. As such, the Government retains a nonexclusive, royalty-free right to publish or        Initial attempts on the TS task include the approaches us-
+reproduce this article, or to allow others to do so, for Government purposes only.         ing hand-crafted syntactic rules, generating shorter sentences,
+NLPIR 2022, December 16–18, 2022, Bangkok, Thailand                                        and active/passive voice transformations [12-14]. In a more data-
+© 2022 Copyright held by the owner/author(s). Publication rights licensed to ACM.
+ACM ISBN 978-1-4503-9762-9/22/12. . . $15.00
+                                                                                           driven attempt, Narayan and Gardent [15] utilized the English
+https://doi.org/10.1145/3582768.3582802                                                    Wikipedia (EWKP) and the Simple English Wikipedia (SWKP) to
+
+
+
+
+                                                                                     157
+
+<a id="pdf-p2"></a>
+### [PDF p.2] NLPIR 2022, December 16–18, 2022, Bangkok, Thailand Bahar Ilgen and Chris Biemann
+- Locator: `R582-cwitr-a-corpus-for-automatic-complex-word-identification-in-turkish-texts.pdf` · página **2** / 7
+
+NLPIR 2022, December 16–18, 2022, Bangkok, Thailand                                                                     Bahar Ilgen and Chris Biemann
+
+
+form a parallel corpus for the simplification task. Most of the LS        or very specialized types of usages can be found in the biomedical
+systems rely on the usage of parallel corpora, sentence alignments        domain) [19].
+and news articles. The CWIG32 dataset [16] was annotated by both             The Lexical Complexity Prediction (LCP) task was organized
+native and non-native English speakers. The CWIG32 covers three           at SemEval-2021. During the Semeval-2021 LCP task, participants
+text genres and provides an extension to the Wikipedia genre which        were provided with the augmented version of the Complex Corpus
+is basically addressed in most of the previous studies [2, 17, 18].       [20]. This is a multi-domain corpus with words and multi-word
+Additional categories of professionally written news articles, ama-       expressions (MWEs), which are annotated using a five-point Likert
+teurishly written articles, and Wikipedia articles are the new genres     scale (i.e., very easy, easy, neutral, difficult, very difficult). The task
+of this dataset. In addition, both native and non-native annotators       also featured focusing on two subtasks namely, words and MWEs.
+take part in the annotation process.                                      The participated systems are mainly categorized into three types.
+   In the scope of this study, we collect a Turkish Complex Word          These consist of feature-based systems, deep learning systems, and
+Identification dataset using Amazon Mechanical Turk (MTurk)               a final group of systems that utilizes a hybrid approach of the
+crowdsourcing platform for annotations following similar settings         other two categories [21]. Although the results have shown that
+that are made for the CWIG32 dataset. As in the CWIG32 dataset,           deep learning-based system results are superior to the others, the
+users have been displayed paragraph contexts to let them annotate         results of feature-based systems have been found successful and
+both complex words and word phrases. Annotators are expected              not far behind this group. Word embeddings from resources such as
+to provide native/non-native information with their additional            GLOVE and Word2Vec with other lexical complexity features are
+language-level information. We use Wikipedia and WikiNews gen-            the popular and widely used ones together with regression systems
+res with additional professionally written texts on several subjects.     such as Gradient Boosted Regression and Random Forest Regression
+A sample HIT (Human Intelligence Task) with its sample complex            [19]. Pre-trained language models and fine-tuning using transfer
+word/phrase selections is shown in Figure 1. These annotations are        learning is followed by the groups which are opted to follow deep
+supposed to be utilized for the automatic prediction of complex           learning approaches. In this context, BERT and RoBERTa were
+words and phrases and be investigated in terms of their success           widely used in the scope of Task-1. ALBERT and ERNIE were also
+and impact on different genres.                                           utilized by the participants [22].
+                                                                             Earlier studies on complex word identification handle the prob-
+                                                                          lem by attempting to simplify all the words or to use frequency
+2    RELATED WORK                                                         threshold approaches [7, 23]. During more recent competitions,
+As CWI systems have gained more attention in recent years, sev-           probabilistic classification was also performed on the given tasks.
+eral competitions were organized such as CWI2016, CWI2018, and            This information could be gathered by considering the total number
+CWI2021. The first shared CWI task was organized under the Inter-         of annotators for a complex word.
+national Workshop on Semantic Evaluation (SemEval-2016). Users               There are several techniques such as feature-based and deep
+are asked to label complex and non-complex words to perform               learning approaches for identifying complex words. The set of fea-
+binary classification. Participants were selected from the pool of        tures that are utilized in this scope usually consists of; morphologi-
+non-native English speakers. In the scope of the competition, 21          cal features such as frequency counts, term frequency and several
+teams took place with the submission of 42 systems. Several features      statistics, syntactic and lexical features, psycholinguistic and lexi-
+such as syntactic, semantic, morphological, word and character n-         cal features, word embedding features, and classical ML learning
+grams, word embeddings, psycholinguistic features, and Zipfian            methods. Aroyehun et al. (2018), [24] compared the results of ex-
+distribution were utilized by the participants. The second edition        periments with feature engineering approaches and Deep Learning
+of the competition was held in the scope of the Workshop on In-           approaches using Convolutional Neural Networks (CNN). Sheang
+novative Use of NLP for Building Educational Applications (BEA)           (2019), [25] utilized word embeddings and engineered features with
+in 2018. The second organization brought a new perspective to             an approach to CWI based on CNN trained on pre-trained word
+the research area by including languages and datasets other than          embeddings with morphological and linguistic features. Hartmann
+English such as French, German, and Spanish [19].                         and Dos Santos (2018) [26] developed approaches using feature
+   The complexity of a given word can be explained by several             engineering, a shallow neural network method using only word
+parameters. The following parameters have been pointed out af-            embeddings, and a Long Short-Term Memory (LSTM) language
+ter analyzing the systems and datasets participated in CWI-2016           model that is pre-trained on a large text corpus.
+and CWI-2018. The word might be an archaic word or an atypical
+one because it was borrowed from some other language. It might
+be one of the uncommon or infrequent words. It might relate to            3    COLLECTING CWI TURKISH DATASET
+a very specific concept. Although it is a common word, it may             We collected complex word and phrase annotations (sequences
+have very uncommon usage in the given context as a polysemous             of words, up to a maximum of 50 characters), using the Amazon
+word. The Complex 2.0 dataset has been prepared and annotated for         Mechanical Turk crowdsourcing platform, from native and non-
+complexity levels. During the collection of the dataset three differ-     native Turkish speakers. We asked participants whether they are
+ent sources have been used to provide sufficient complexity levels.       native or non-native Turkish speakers or not and collected their
+These consist of Bible, Europarl, and Biomedical sources. Since these     proficiency levels for non-native speakers. Because Turkish is not
+resources are sufficiently diverse, it is possible to cover different     widely used as a second language, all participating annotators were
+complexity levels (e.g., Bible usually does not have archaic words        native speakers in our experiments. We also prepared a language
+
+
+
+
+                                                                    158
+
+<a id="pdf-p3"></a>
+### [PDF p.3] CWITR: A Corpus for Automatic Complex Word Identification in Turkish Texts NLPIR 2022, December 16–18, 2022, Bangkok, Thailand
+- Locator: `R582-cwitr-a-corpus-for-automatic-complex-word-identification-in-turkish-texts.pdf` · página **3** / 7
+
+CWITR: A Corpus for Automatic Complex Word Identification in Turkish Texts                                NLPIR 2022, December 16–18, 2022, Bangkok, Thailand
+
+
+proficiency exam that is required to be taken before the annotation                3.2    Annotation Procedure
+starts. The proficiency test consists of 9 questions with a total of               Paragraph level texts have been displayed to the workers on the
+100 points. Within the scope of the test, questions about Turkish                  Amazon Mechanical Turk crowdsourcing platform. These consist
+spelling mistakes, semantic integrity, and grammatical structures                  of texts from 5 to 10 sentences. Workers are supposed to highlight
+were asked to participants. The exam requires a browser login so                   at least 3 complex words and/or complex phrases (CP). Otherwise,
+any user can only take it once. Only the annotations of workers                    they are informed that they should leave a comment in the text box
+who have been successful (i.e., participants with a score of 65 and                that is shown in Figure 2. It is prohibited to annotate an arbitrarily
+above) in this exam were accepted for the tasks.                                   large number of selections. The selection cannot exceed 10 complex
+                                                                                   words and/or complex phrases. In addition, a worker cannot select
+3.1     Data Selection                                                             a whole sentence, a part of words or phrases, etc. Annotators are
+Collected texts consist of Wikipedia news, Wikipedia articles, news,               also notified not to select proper nouns and surface forms of the
+novel summaries, and periodicals (i.e., newspaper columns on dif-                  same word or phrases. There are also two additional questions that
+ferent domains including history, technology, science, society, and                workers provide, whether they are native Turkish language speak-
+others). These are paragraph-length texts that can vary between                    ers, and their knowledge level in Turkish (beginner, intermediate,
+specified number of sentences. Figure 1 shows a sample HIT high-                   advanced). Although the system is designed to collect annotations
+lighted with complex word annotations. In Figure 2 and Figure 3,                   of both native and non-native language speakers of participants,
+selections of annotators, and instructions for the annotation process              all MTurk annotators were native speakers in our annotation tasks.
+are displayed respectively. Figure 3 displays the rules of the process
+that are given to annotators. It is expressed that the difficulty level
+in Turkish written texts will be considered and evaluated in terms                 3.3    Preprocessing
+of non-native language users, language learners, children, and peo-                Datasets from batches were preprocessed to gather approved an-
+ple with cognitive disorders. The information given for annotators                 notations and remove irrelevant information from those such as
+includes the minimum and the maximum number of words that                          HITTypeId, title, keywords, several timestamps, and worker infor-
+should be highlighted as well as illegal selection examples (e.g.,                 mation. The final format of the dataset has the following informa-
+selecting a whole sentence, or selecting part of a word). It is also               tion: HITId, text (the sentence in which a complex phrase occurs),
+noted that proper nouns and several surface forms of the same                      offset for the complex phrase where it starts and ends in the sen-
+words should be avoided for annotation.                                            tence, number of native language speakers, number of non-native
+
+
+
+
+                                               Figure 1: Sample HIT for identifying complex words.
+
+
+
+
+             Figure 2: Sample HIT screen of annotated CPs with comment box and user’s language level information.
+
+
+
+
+                                                                             159
+
+<a id="pdf-p4"></a>
+### [PDF p.4] NLPIR 2022, December 16–18, 2022, Bangkok, Thailand Bahar Ilgen and Chris Biemann
+- Locator: `R582-cwitr-a-corpus-for-automatic-complex-word-identification-in-turkish-texts.pdf` · página **4** / 7
+
+NLPIR 2022, December 16–18, 2022, Bangkok, Thailand                                                                  Bahar Ilgen and Chris Biemann
+
+
+speakers, and the total number of annotators. Some of the annota-        paragraphs (HITS). Each HIT is required to be annotated by 5 work-
+tions that are not Turkish words were removed from the dataset.          ers. After applying preprocessing steps that include data cleaning
+Multi-word phrases have also been excluded when they are not in          and removal of unnecessary information such as timestamps, the
+a proper form (e.g., annotation of plain comma-separated words           information belonging to rejected HITs, etc., the dataset is prepared
+instead of compound word phrases). In Figure 4., the dataset format      in the same format as the CWIG3G2 dataset [16]. The dataset con-
+with sample complex phrase annotations is shown. The dataset             sists of 5 genres, and a total of 18 subcategories of periodicals, news,
+contains information about complex phrases annotated with the            WikiNews, Wikipedia and book summaries.
+following statistics. Each line in the dataset represents the infor-         Table 1 shows the distribution of selected complex phrases across
+mation of a sentence with one complex phrase annotation and              all annotators. The percentages of book summaries and periodical
+relevant information (HITId, text, start and end offsets, complex        categories yielded higher results than the others for the multiple-
+word, number of native and non-native speaker annotators, and            selection case. These values account for complete annotations in
+the total number of annotators respectively), each separated by a        all batches. Table 2 and Table 3 display the distribution of HITS and
+TAB character. The first sentence in Figure 4 is “Görüntüler düşük       annotated CPs across genres respectively. In Table 4, the ratio of
+çözünürlüklü kamera ile çekildi.” (“Images were taken with a low-        complex phrases across genres and categories that are selected by
+resolution camera.”) and the word “çözünürlüklü” (“resolution”) is       at least two annotators has been shown for unique instances.
+annotated as a complex word.
+
+
+
+
+                                                       Figure 3: HIT Instructions.
+
+
+
+
+Figure 4: Sample lines from the dataset that represent sentences with one complex phrase (CP) annotation and relevant
+information, each separated by a TAB character.
+
+                                                                             Table 5 summarizes the statistics of annotated words. Among
+                                                                         9229 complex words, the average frequency of the same words in
+4    ANALYSES OF COLLECTED ANNOTATIONS                                   different HITs is 5.56. The average number of syllables, length and
+A total of 25 native speakers of Turkish participated in the anno-       non-vowels are 3.75, 8.84, and 5.15. Since Turkish is an agglutinative
+tation task and a total of 21,436 complex phrase annotations have        language, words may take inflectional and derivational suffixes in
+been collected from all genres, out of which 13,837 unique CPs.          a flexible way. DB stands for “derivational boundary” and indicates
+These were deemed as complex by at least one annotator. Among            that the word takes a new form by changing its structure and the
+these, there are 9,229 single and 4,608 multi-token complex phrases.     main tag. Words might have new forms more than once, and the
+In the following sections, we discuss details of the data collected.     number of DBs indicates the average number of such transforma-
+In total, 6 workers have participated in 50% of 1000 HITs where on       tions for annotated complex words. Among all annotated complex
+average 198 assignments are completed by native speakers. Around         words, approximately 29% of these words have one or more DBs,
+61% of CPs among all annotations have been selected by at least          and ∼71% have no DBs. Table 6 shows the distribution of word
+two annotators. The total Turkish CWI dataset consists of 1000
+
+
+
+
+                                                                   160
+
+<a id="pdf-p5"></a>
+### [PDF p.5] CWITR: A Corpus for Automatic Complex Word Identification in Turkish Texts NLPIR 2022, December 16–18, 2022, Bangkok, Thailand
+- Locator: `R582-cwitr-a-corpus-for-automatic-complex-word-identification-in-turkish-texts.pdf` · página **5** / 7
+
+CWITR: A Corpus for Automatic Complex Word Identification in Turkish Texts                                  NLPIR 2022, December 16–18, 2022, Bangkok, Thailand
+
+
+Table 1: Distributions of selected CPs (in %) across all (native) annotators, The Sing. column stands for annotations selected by
+only one annotator while the Mult. column stands for annotations selected by at least two annotators.
+
+ Dataset                                                                                              All
+                                                                                     Sing.                                              Mult.
+ News                                                                                 47                                                 53
+ Wikipedia                                                                            46                                                 54
+ WikiNews                                                                             41                                                 59
+ Book Sums.                                                                           35                                                 65
+ Periodicals                                                                          36                                                 64
+
+
+                                                  Table 2: Distribution of HITs (in %) across genres
+
+           Wikipedia                               News                      WikiNews                   Periodicals                    Book Sums.
+                35                                   25                              19                     11                                10
+
+
+                                            Table 3: Distribution of annotated CPs (in %) across genres
+
+           Wikipedia                               News                        WikiNews                 Periodicals                    Book Sums.
+                36                                   22                              20                     12                                10
+
+
+                     Table 4: Ratio of CPs (annotated at least 2 times or more – in %) across genres and categories.
+
+ Genres                                                      Categories                                           CP Ratio
+ Book Sums.                                                  Novel-1                                              38
+                                                             Novel-2                                              36
+ Wikipedia                                                   Sports                                               34
+                                                             History                                              31
+                                                             Science                                              33
+                                                             Wiki-Exclusive                                       33
+                                                             Society                                              30
+                                                             Technology                                           29
+                                                             Wikigen2                                             32
+                                                             Wikigen1                                             31
+ News                                                        TurNews-1                                            28
+                                                             TurNews-2                                            29
+                                                             World News                                           35
+                                                             Tur News Final                                       38
+ WikiNews                                                    Wikinews-1                                           35
+                                                             Wikinews-2                                           31
+ Periodicals                                                 Periodicals-1                                        38
+                                                             Periodicals-2                                        37
+
+
+
+types among annotated complex words. These main tagsets consist                       freeze). Since the word is transformed two times as don→ dondur →
+of nouns, verbs, adverbs, adjectives, as well as the other group (i.e.,               dondurma, there are two DBs. The tagset after the last DB belongs
+Conjunctions, Duplications, Pronouns, Postposition, Numbers, and                      to the final form of the word. In this case, it is initially a verb
+Questions) [27].                                                                      and transformed to some causative form (to make it frozen), and
+   Table 7 shows the samples of complex words in surface and root                     a noun at the end. Table 8 summarizes the statistics of all batches
+forms together with their morphological analysis. The root of the                     undertaken with Amazon MTurk.
+word “dondurma” (ice cream) is a verb known as “don-mak” (to
+
+
+
+
+                                                                               161
+
+<a id="pdf-p6"></a>
+### [PDF p.6] NLPIR 2022, December 16–18, 2022, Bangkok, Thailand Bahar Ilgen and Chris Biemann
+- Locator: `R582-cwitr-a-corpus-for-automatic-complex-word-identification-in-turkish-texts.pdf` · página **6** / 7
+
+NLPIR 2022, December 16–18, 2022, Bangkok, Thailand                                                                                       Bahar Ilgen and Chris Biemann
+
+
+    Table 5: Average numbers for word frequencies, DBs, Syllables, length, and non-vowels among annotated complex words.
+
+              Freqs.                              #DBs                  #Syllable                             Length                             Non-vowel
+               5.56                                   1.41                    3.75                              8.84                                 5.15
+
+                                           Table 6: Distribution of word types among complex words
+
+                                                  Word Type                                     Distribution
+                                                      Adjective                                     10.4%
+                                                       Adverb                                       3.4%
+                                                        Noun                                        68.3%
+                                                        Verb                                        17.0%
+                                                       Others                                        0.9%
+
+                                               Table 7: Morphological Analysis of Complex Words
+
+ Word                           Root                              Analysis of Word
+ izinsiz                        izin                              Noun+A3sg+Pnon+Nom+∧ DB+Adj+Without
+ (unauthorized)                 (permission)
+ inip                           in (-mek)                         Verb+Pos+∧ DB+Adverb+AfterDoingSo
+ (after going down)             (going down)
+ etkileyici                     etkile(-mek)                      Verb+Pos+∧ DB+Noun+Agt+A3sg+Pnon+Nom
+ (impressive)                   (to impress)
+ dondurma                       don(-mak)                         Verb+∧ DB+Verb+Caus+Pos+∧ DB+Noun+Inf2+A3sg+Pnon+Nom
+ (ice cream)                    (to freeze)
+
+
+Table 8: Statistics of all batches undertaken with Amazon                           REFERENCES
+Mechanical Turk                                                                      [1] Paetzold, G., and Specia, L. .2016a. Unsupervised lexical simplification for non-
+                                                                                         native speakers. In Proceedings of the AAAI Conference on Artificial Intelli-
+                                                                                         gence (Vol. 30, No. 1).
+       Number of Annotators                                25                        [2] Shardlow, M. .2013a. The CW corpus: A new resource for evaluating the identi-
+        Number of Instances                              13,837                          fication of complex words. In Proceedings of the Second Workshop on Predicting
+                                                                                         and Improving Text Readability for Target Reader Populations (pp. 69-77).
+      Number of Annotations                              21,436                      [3] Shardlow, M. .2014. Out in the Open: Finding and Categorising Errors in the
+      Annotations per Instance                            1.55                           Lexical Simplification Pipeline. Proceedings of the Ninth International Conference
+                                                                                         on Language Resources and Evaluation (LREC’14), (pp. 1583-1590).
+      Instances per Annotator                            857.44                      [4] Ziegler, W., and Aichert, I. 2015. How much is a word? Predicting ease of articu-
+                                                                                         lation planning from apraxic speech error patterns. Cortex, 69, 24-39.
+                                                                                     [5] Shardlow, M. .2013b. A Comparison of Techniques to Automatically Identify
+5     CONCLUSION AND FUTURE WORK                                                         Complex Words. In 51st Annual Meeting of the Association for Computational
+                                                                                         Linguistics Proceedings of the Student Research Workshop (pp. 103-109).
+This paper presents the CWITR – a Turkish CWI dataset - prepara-                     [6] Paetzold, G. H., & Specia, L. .2017. A survey on lexical simplification. Journal of
+                                                                                         Artificial Intelligence Research, 60, 549-593.
+tion steps using the MTurk crowdsourcing platform. In the scope                      [7] Bott, S., Rello, L., Drndarević, B., and Saggion, H. .2012. Can spanish be simpler?
+of this work, we included new genres to the dataset to provide a                         LexSiS: Lexical simplification for Spanish. In Proceedings of COLING 2012, (pp.
+broader and more reliable CWI system. These cover several data                           357-374).
+                                                                                     [8] Collins-Thompson, K. .2014. Computational assessment of text readability: A
+sources in varying complexity levels. Both complex words and word                        survey of current and future research. ITL-International Journal of Applied Lin-
+phrases were annotated by MTurk workers. Although our tasks                              guistics, 165(2), 97-135.
+have been prepared for both native and non-native Turkish speak-                     [9] Al-Thanyyan, S. S., and Azmi, A. M. .2021. Automated text simplification: A
+                                                                                         survey. ACM Computing Surveys (CSUR), 54(2), 1-36.
+ers, only native speakers took part in the annotations. Because                     [10] Siddharthan, A. .2014. A survey of research on text simplification. ITL-
+less-resourced languages are used less frequently as a second lan-                       International Journal of Applied Linguistics, 165(2): 259-298.
+                                                                                    [11] Rello, L., Baeza-Yates, R., Dempere-Marco, L., and Saggion, H. (2013). Frequent
+guage, the scarcity of non-native speakers during the experiments                        words improve readability and short words improve understandability for people
+is evaluated as an expected outcome.                                                     with dyslexia. In IFIP Conference on Human-Computer Interaction (pp. 203-219).
+   The dataset has been shared with appropriate licensing. It will be                    Springer, Berlin, Heidelberg.
+                                                                                    [12] Siddharthan, A. .2002. An architecture for a text simplification system. In Lan-
+utilized in future experiments to investigate the impact of complex                      guage Engineering Conference, 2002. Proceedings (pp. 64-71). IEEE.
+word annotations in Turkish, and to predict complexity scores for                   [13] Siddharthan, A. .2010. Complex lexico-syntactic reformulation of sentences using
+the single words and MWEs.                                                               typed dependency representations. In Proceedings of the 6th International Natural
+                                                                                         Language Generation Conference.
+
+
+
+
+                                                                           162
+
+<a id="pdf-p7"></a>
+### [PDF p.7] CWITR: A Corpus for Automatic Complex Word Identification in Turkish Texts NLPIR 2022, December 16–18, 2022, Bangkok, Thailand
+- Locator: `R582-cwitr-a-corpus-for-automatic-complex-word-identification-in-turkish-texts.pdf` · página **7** / 7
+
+CWITR: A Corpus for Automatic Complex Word Identification in Turkish Texts                                                 NLPIR 2022, December 16–18, 2022, Bangkok, Thailand
+
+
+[14] Siddharthan, A. .2011. Text simplification using typed dependencies: A compari-          [21] Zaharia, G. E., Cercel, D. C., and Dascalu, M. .2021. UPB at SemEval-2021 Task 1:
+     son of the robustness of different generation strategies. In Proceedings of the 13th          Combining Deep Learning and Hand-Crafted Features for Lexical Complexity
+     European Workshop on Natural Language Generation (pp. 2-11).                                  Prediction. Proceedings of the 15th International Workshop on Semantic Evaluation
+[15] Narayan, S., and Gardent, C. .2016. Unsupervised sentence simplification us-                  (SemEval-2021) , (pp. 609-616).
+     ing deep semantics. In Proceedings of the 9th International Natural Language             [22] Shardlow, M., Evans, R., Paetzold, G. H., & Zampieri, M. .2021b. Semeval-2021 task
+     Generation conference, pages 111–120, Edinburgh, UK.                                          1: Lexical complexity prediction. Proceedings of the 15th International Workshop
+[16] Yimam, S. M., Štajner, S., Riedl, M., & Biemann, C..2017. CWIG3G2-complex word                on Semantic Evaluation (SemEval-2021) (pp. 1-16).
+     identification task across three text genres and two user groups. In Proceedings of      [23] Thomas, S. R., & Anderson, S. .2012. WordNet-based lexical simplification of a
+     the Eighth International Joint Conference on Natural Language Processing (Volume              document. In Proceedings of KONVENS 2012, (pp. 80-88).
+     2: Short Papers) (pp. 401-407).                                                          [24] Aroyehun, S. T., Angel, J., Alvarez, D. A. P., and Gelbukh, A..2018. Complex word
+[17] Horn, C., Manduca, C., and Kauchak, D. .2014. Learning a lexical simplifier                   identification: Convolutional neural network vs. feature engineering. In Proceed-
+     using Wikipedia. In Proceedings of the 52nd Annual Meeting of the Association for             ings of the thirteenth workshop on innovative use of NLP for building educational
+     Computational Linguistics (Volume 2: Short Papers) (pp. 458-463).                             applications, (pp. 322-327).
+[18] Paetzold, G., & Specia, L. .2016b. Semeval 2016 task 11: Complex word identifica-        [25] Sheang, K. C. .2019. Multilingual complex word identification: Convolutional
+     tion. In Proceedings of the 10th International Workshop on Semantic Evaluation                neural networks with morphological and linguistic features. In Proceedings of the
+     (SemEval-2016) (pp. 560-569).                                                                 Student Research Workshop Associated with RANLP 2019 (pp. 83-89).
+[19] Shardlow, M., Evans, R., & Zampieri, M. .2021a. Predicting lexical complexity in         [26] Hartmann, N., and Dos Santos, L. B..2018. NILC at CWI 2018: Exploring feature
+     English texts. arXiv preprint arXiv:2102.08773.                                               engineering and feature learning. In Proceedings of the Thirteenth Workshop on
+[20] Shardlow, M., Cooper, M., and Zampieri, M. .2020. Complex: A new corpus                       Innovative Use of NLP for Building Educational Applications (pp. 335-340).
+     for lexical complexity prediction from Likert scale data. Proceedings of the 1st         [27] Oflazer, K. .1994. Two-level description of Turkish morphology. Literary and
+     Workshop on Tools and Resources to Empower People with REAding DIfficulties                   linguistic computing, 9(2), 137-148.
+     (READI) (pp. 57-62).
+
+
+
+
+                                                                                        163

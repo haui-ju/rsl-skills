@@ -1,0 +1,1117 @@
+===== PDF PAGE 1 / 16 =====
+                                                               (IJACSA) International Journal of Advanced Computer Science and Applications,
+                                                                                                                        Vol. 15, No. 8, 2024
+
+
+  DIAUTIS III: A Fuzzy and Affective Platform for
+ Obtaining Autism Mental Models and Learning Aids
+                                  Mohamed El Alami1, Sara El khabbazi2, Fernando de Arriaga3
+               National School of Applied Sciences of Tangier, Abdelmalek Essaadi University, Tangier, Morocco 1, 2
+                  School of Telecommunication Engineering, Universidad Politécnica de Madrid, Madrid, Spain 3
+
+
+     Abstract—Autism spectrum disorders (ASD) are conditions              difficulty with communication, restricted interests, repetitive be-
+characterized by social interaction and communication difficul-           haviors, and affecting functioning in school, work, and other ar-
+ties, atypical patterns of activities, and unusual reactions to sensa-    eas of life [2].
+tions. Characteristics of autism may be detected in early child-
+hood, but diagnosis is often delayed. The diagnosis of autistic chil-          Autism is a spectrum disorder with varying symptoms across
+dren typically aligns with medical and psychological recommen-            genders, races, ethnicities, and economic backgrounds. It can be
+dations, but it does not evaluate all the problems, intensity, or         lifelong, but treatments can improve symptoms and daily func-
+changes in symptoms over time. It also does not identify the affec-       tioning. The American Academy of Pediatrics recommends all
+tive states associated with these deficiencies, making aid less effec-    children receive autism screening, and caregivers should consult
+tive. The mental model of autistic children contains their deficits,      their child's healthcare provider about screening or evaluation
+tasks, and intensities, beyond diagnostics. That why we enhance           [2].
+DIAUTIS platform for achieve our objectives related to helping
+children with ASD. DIAUTIS I is a platform that aim to diagnos-               Mental models are an analogical representation of
+ing autism and identifying its severity using cognitive, fuzzy, and       knowledge, involving a direct correspondence between the enti-
+affective computing. It presents tests, evaluates results, and pre-       ties and relations in the representation structure and the entities
+sents a final model. Then, we implemented DIAUTIS II by adding            and relations of the real network. They represent a functional
+KASP methodology, a new methodology of designing serious                  form of prior conceptions in relation to a specific and momen-
+games, based on knowledge, affect, sensory, and pedagogy, this            tary goal, consisting of elements and their relationships that rep-
+tool allows to DIAUTIS II agents to designing over 80 games, con-         resent the state of things. Each model is predisposed in a way
+sidering a child's background. In this paper, we will present a new       consistent with its intended use.
+tool of formalization of the autism mental model based on fuzzy
+and affective computing. DIAUTIS III is the extension of                      A mental model is a cognitive simulation of how things work
+DIAUTIS II platform aim to represent a cognitive fuzzy mental             and are related, built over time through learning and understand-
+model with using the metrics of category theory. So far, no mental        ing. It helps people make sense of the world, make decisions,
+model has been developed for autism. Our mental model, can be             solve problems, and predict outcomes, enhancing their decision-
+obtained anytime as a fuzzy cognitive map or fuzzy graph and the          making abilities.
+use of affective computing. In addition, the mathematical theory
+of categories represent this mental model of an autistic child from           So far, according to our knowledge, no mental model of au-
+a fuzzy graph, and it allows for operations like CONS and TRA to          tism has been developed, although we have studied the develop-
+evaluate the difference between two mental models. Fuzzy cogni-           ment of other non -mental models.
+tive mental model can be used to develop new techniques for im-               Our mental model emphasizes the importance of emotional
+proving the learning and integration of autistic children into social     aspects in children, as affective states can trigger learning prob-
+life, which is the focus of our immediate future.
+                                                                          lems and improve them. It includes all developed affective rela-
+    Keywords—Fuzzy computing; affective computing; mental mod-            tionships and uses affective computing to determine and im-
+els; learning aids; autism; category theory                               prove these states. This elaborate model can be classified as
+                                                                          fuzzy and affective, as it can be used to treat autistic children
+                        I.    INTRODUCTION                                and improve their emotional well-being. Affective computing
+                                                                          began with the works of Rosalind Pickard, followed by a large
+    Autism, also known as Autism Spectrum Disorder (ASD), is
+                                                                          number of articles and collaborations of different authors [3-4].
+a condition characterized by difficulties in social skills, repeti-
+tive behaviors, speech, and nonverbal communication [1].                      Category theory is a mathematical branch that formalizes
+                                                                          mathematical structure and has powerful applications in mathe-
+    Autism spectrum disorder (ASD) is a neurological and de-
+                                                                          matics and programming languages. Concepts like categorical
+velopmental disorder that affects social interactions, communi-
+                                                                          semantics, monads, functors, and proof assistants are deeply
+cation, learning, and behavior. Symptoms typically appear in the
+                                                                          connected to category theory, making them essential in various
+first two years of life, making it a "developmental disorder." The
+                                                                          fields throughout one's career.
+Diagnostic and Statistical Manual of Mental Disorders (DSM-
+5), used by healthcare providers, identifies ASD symptoms as                  Category theory is a generalization of algebra that focuses
+                                                                          on understanding mathematical objects through structure-pre-
+                                                                          serving transformations called morphisms. It does not embed a
+
+
+
+                                                                                                                              347 | P a g e
+                                                            www.ijacsa.thesai.org
+
+===== PDF PAGE 2 / 16 =====
+                                                            (IJACSA) International Journal of Advanced Computer Science and Applications,
+                                                                                                                     Vol. 15, No. 8, 2024
+
+single group into a category, but studies groups through the cat-      into two categories in DSM-V: 1) fusing troubles in social com-
+egory of all groups Grp, where objects are groups and mor-             munication and interaction; 2) restricted and repetitive behaviors
+phisms are group homomorphism. Instead, we learn about                 [9]. The DSM-V is a tool that can be used by wide clinical pro-
+group’s relationships through morphisms rather than the ele-           fessionals to help in the diagnosis of mental illness and develop-
+ments that make them up.                                               mental disabilities. This manual (DSM-5) is used by psychia-
+                                                                       trists, psychologists, social employees, doctors and nurses for
+    In this perspective, the article first presents an overview of     people with mental illness.
+Autism Spectrum Disorder (ASD), its symptoms, and diagnosis.
+Moreover, it describe the main features and functionalities of         B. Mental Models: Autism Mental Model
+DIAUTIS I and DIAUTIS II. Next, it introduces DIAUTIS III,                 The Mental model theory proposes a theory of inference that
+which will use the mathematics of category theory for formali-         aims to explain different types of thinking according to how the
+zation of fuzzy cognitive mental model of autism and compare           mental model represents. A mental model is a powerful cogni-
+the differences between two mental models for helping autistic         tive entity that organizes people's interpretation of their world
+children to enhance their learning and exceed their learning dis-      and their actions in response to it [10]. We view the concept of
+abilities.                                                             mental models, described as the ideas people form about the
+               II.   AUTISM SPECTRUM DISORDER                          world and the activities they undertake [11].
+
+    American Psychiatric Association define the Autism Spec-               A Mental Model (MM) is a simulation of the reality that we
+trum Disorder (ASD) as a set of permanent neuro-developmen-            are producing, with conscience or unintentionally, in our minds
+tal described by troubles with social interactivity and restricting    [12]. It plays a crucial role in various fields of our life, which a
+and repeating behaviors [5], usually beginning in early child-         main aim of a MM is to help the model’s user to choose the right
+hood, Children with Autism Spectrum Disorder may learn,                action of a target system (Johnson-Laird; Norman, 1983) for
+move, or pay attention with different styles.                          making sense of, solving problems, making decisions, making
+                                                                       plans, or learning/education…etc. A mental model is created,
+    Autistic children often have problems with: Keeping eye            updated and stored through a three-phase process: observation,
+contact, not responding to their name (9 months of age), Ignor-        learning and experience [12].
+ing other children and avoiding play with them (36 months of
+age), etc. Moreover, they may behave in ways that may seem                 The purpose of education is to provide access to knowledge.
+unfamiliar. as: Repeat voices, words or phrases, Have obsessive        In order to assess the evolution of a learner's knowledge, we be-
+hobbies, Flap hands, Spinning in circles, Locked body, Have un-        lieve it is useful to understand the process of learning which has
+usual reactions to some of sounds, odors, flavors, or feels. In ad-    been a principal subject in the field of education [13]. Hence,
+dition, there are other characteristics that autistic children may     mental models are a very important part in this process, which
+have which include hyperactive, unusual eating and sleeping            play a crucial role in understanding the development of
+patterns, anxiety, stress, Not getting scared or getting scared        knowledge and the actions of learners. A learner's knowledge
+more than expected [6].                                                passes by three successive stages; these are the Novice, Learner
+                                                                       and Expert stages. One of the important contributions of cogni-
+A. Diagnosis                                                           tive psychology to learning is the notion of mental models. This
+    Over the past few decades, the symptoms of autism spectrum         notion will allow us to better differentiate between these three
+disorders (ASD) have multiplied, leading to increasing recogni-        stages of learner development [14, 15].
+tion of this developmental disorder [7]. For a diagnosis of ASD            Presenting a mental model visually and formally requires at
+to be made, children must exhibit characteristics related to both      least three phases: extraction, analysis and formalizing. Finding
+social communication difficulties and restricted, repetitive,          ways of modeling a mental model presents a challenge to any
+and/or sensory behaviors from an early age. The diagnostic cri-        discipline using this concept as a tool to better understand indi-
+teria for ASDs have evolved considerably over the years. Cur-          viduals' internal representations of their environment.
+rently, diagnosis is mainly made using observational tracking
+tools that measure the child's social, behavioral and cognitive            Our mental models of autistic children contain all the imper-
+abilities [8]. There are many diagnostic tools, but the two prin-      fections and activities they do not know how to perform, or
+ciple ones used in the diagnosis of ASD are DSM-V and M-               which they perform clumsily. This is why their mental models
+CHAT.                                                                  are so important, because they show all their limitations, which
+                                                                       can be quite different. These can then serve to identify tech-
+    American Psychiatric Association is publishing a book titled       niques or strategies for enhancing their learning.
+“The Diagnostic and Statistical Manual of Mental Disorder” for
+presenting a classification of mental patterns with associated cri-    C. Learning Aids
+teria, this association classifies autism, Asperger's syndrome and         Teaching and learning process needs three essential compo-
+developmental disabilities as Pervasive Developmental Disor-           nents, identifying the input elements (students, teachers, teach-
+ders (PDD). It has been recommended that the term "PDD"                ing and learning materials), the procedure, and the output ele-
+should turn into “DSM-V” with "Autism Spectrum Disorder".              ments (graduation, orientation, skills, diplomats ...). The quality
+Autism is described by a range of signs, including the existence       of teaching and learning can be compromised by unfavorable
+of permanent deficiencies in social communication, deficiencies        general conditions. It is crucial to provide a sophisticated envi-
+in social interaction in a different situations, and restricted and    ronment in which to teach and learn effective skills. Using of
+repetitive patterns of behavior in DSM-IV-TR. It was combined
+
+
+
+
+                                                                                                                            348 | P a g e
+                                                         www.ijacsa.thesai.org
+
+===== PDF PAGE 3 / 16 =====
+                                                              (IJACSA) International Journal of Advanced Computer Science and Applications,
+                                                                                                                       Vol. 15, No. 8, 2024
+
+learning aids help students to hear, see, or perform with effi-               Conduct additional testing with observers, medical and
+ciency during the learning process that become more enjoyable                  clinical staff.
+and less tedious thanks to learning aids [16].
+                                                                             DIAUTIS proposes a set of tests grouped into seven kinds
+    Previous research has repeatedly demonstrated that the use           linked to the troubles identified in DSM-V manual. Each kind
+of learning aids can greatly enhance learning from multimedia            contains a set of elements to be evaluated and the evaluating
+materials. For example, Renkl (2002) studied learning from ex-           agents that intervene in DIAUTIS (control agent, design agent,
+amples worked in a computerized learning environment on                  cognitive agents for sound, gaze and movement, affective
+probability calculations. He found that students learned better          agents, pedagogical agents, rule learning agents, evaluating
+not only when they explained themselves, but also when they              agents, group evaluating agent, interface agent).
+took advantage of pedagogical explanations offered through an
+online help system [17].                                                     DIAUTIS also uses cameras and sensors to receive infor-
+                                                                         mation on gaze, face, gestures and movements, as well as soft-
+    In this twenty-first century, the technological revolution           ware developed in Python to capture emotions and analyze pro-
+plays a vital role in the learning process. The development of           nunciation and intonation to facilitate analysis of the information
+smart phones and other ICT devices has become increasingly               provided by the collection of tests proposed by DIAUTIS and
+popular in the field of communication, literacy and entertain-           approved by medical teams to determine the child's condition.
+ment. These technologies can contribute to the diverse educa-            These tests are based on ENT (the test collection generation cri-
+tional development areas of the autism community [18].                   terion), fuzzy logic techniques to assess the child's condition and
+                                                                         the OOC model introduced in NEOCAMPUS [21] to analyze
+    Children with autism cannot learn new things easily and can-
+                                                                         emotions. Then this platform can facilitate the child's previous
+not actively receive new information, but they can benefit from
+                                                                         diagnostic results and generate a report of each test, indicating
+various types of learning aids specially designed for autistic chil-
+                                                                         the times used, the child's age and the result, which can provide
+dren and other children with learning disabilities. There are
+                                                                         information on the test's difficulty, suitability for a particular age
+many different types of beneficial learning aids available today,
+                                                                         or relationship with the severity of autism.
+including sensory and auditory learning aids, as well as motor
+development aids. These tools enable autistic children to catch              DIAUTIS agents are independent, intelligent and can work
+on quickly and increase their chances of leading a normal life.          autonomously or with other agents. They have learning capabil-
+[19].                                                                    ities thanks to neural networks and machine learning techniques,
+                                                                         as well as specific knowledge to reach affective or cognitive
+    III.      DIAUTIS I: A MULTI-AGENT PLATFORM FOR THE                  goals. They can collaborate with others when objectives surpass
+                     DIAGNOSIS OF AUTISM                                 their capabilities, or when another agent needs them. They can
+    M. El Alami, N. Tahiri and F. de Arriaga have proposed an            be cloned or deleted if necessary, have a natural understanding
+approach based on agents, fuzzy logic and affective computing            of language and can receive information from external sensors.
+to build an automatic and autonomous autism diagnosis platform               The features of NEOCAMPUS for cooperating and control-
+[20]. This platform will offer to clinical teams, doctors, parents,      ling agents [22], [23] have been enhanced to take into account
+guardians and schools a set of tests that help them to get a model       the important set of agents that can try to act simultaneously and
+of the kid that allows them to evaluate the gravity of autism and        the specific roles they perform in DAUTIS.
+the signs of autistic children. In this section, we will describe
+with details the features of this platform.                              B. Diagnosis Model
+A. Features                                                                  The child's diagnosis prepared by DIAUTIS I is represented
+                                                                         by a fuzzy graph consisting of a main node (0) that contains the
+    This research is the beginning for what could be a long pro-         child's personal details and characteristics, connected to seven
+ject. Over time, it may lead to developing a tool for helping pro-       other nodes (1-7) representing different test kinds. Each test kind
+fessionals diagnose autism. Consequently, flexibility was high-          is further divided into subcategories, and the evaluation results
+lighted as an important feature of this work. The aim of this flex-      of each test are linked to the corresponding category or subcate-
+ibility is to anticipate, as far as possible, unknown elements that      gory node.
+could discredit the work carried out to date. In line with these
+ideas, the method developed comprises the following phases                   These fuzzy sets are then integrated into a single fuzzy set,
+[20]:                                                                    which is then joined to the main node. The final child's model is
+                                                                         obtained by using multi-criteria and incorporated into node 0.
+          Acquiring knowledge about autism in its various aspects.      The system keeps a record of all diagnosis meetings, allowing
+          Definition of criteria and tools for diagnosing autism.       analysis and comparison of previous sessions. The integration
+                                                                         fuzzy set can be defuzzified into a single value when necessary,
+          Design of a diagnostic computer model based on a group        making it easy for clinical personnel, tutors, and parents to un-
+           of tests.                                                     derstand. The system primarily communicates with doctors or
+                                                                         clinical teams, who set parameters for the tests and receive im-
+          Selection of a platform to build agents based on its flex-
+                                                                         mediate results and the final child's model. Communication with
+           ibility and conception of the DIAUTIS architecture.
+                                                                         parents and tutors is also possible through interviews stored in
+          Determination the DIAUTIS functional proofs assigned          the system.
+           to the engineering staff.
+
+
+
+
+                                                                                                                                349 | P a g e
+                                                            www.ijacsa.thesai.org
+
+===== PDF PAGE 4 / 16 =====
+                                                              (IJACSA) International Journal of Advanced Computer Science and Applications,
+                                                                                                                       Vol. 15, No. 8, 2024
+
+    DIAUTIS I regularly updates the computer team on system              sub-concepts building the main concept. Mathematically, com-
+performance and agent operation, including the number and type           paring the child's sub-concept weights to the expert's weights
+of agents, cooperation, learning, response time, and diagnosis           helps identify actions that cause significant degradation. The
+stages.                                                                  child's actions influence the sub-concepts' weights, generating a
+                                                                         new vector with new values. The expert is then encouraged to
+    DIAUTIS I, in summary, is a software platform that meets             offer a serious game to assess a concept in children with ASD,
+the objectives of autism diagnostic aid. However, the use of the         consisting of several scenes [26]:
+results can still be clarified. The information from a diagnostic
+session provides medical equipment with a clear view of the re-                   Game S = {Sα, Sβ, Sγ, ⋯} where Si a game scene
+sults obtained and the severity of the disease. This is the essential
+objective of the platform. Nevertheless, DIAUTIS I can also                  The game's main objective is the same as the expert's assess-
+provide other aids such as:                                              ment. Each scene consists of multiple objects representing sub-
+                                                                         concepts, which interact with each other based on the child's ac-
+      Facilitating the comparison of the child's previous diag-         tions:
+       nostic results.
+                                                                            Sγ= (Cγ,Aγ) where {Cγ ={ Cγ1, Cγ2, Cγ3, …}} is the set of
+      Facilitate the history of each test, indicating the periods       sub-concepts of the scene Sγ and
+       used, the age of the children who took them and the re-              Aγ= {Aγ1, Aγ2, Aγ3, … } is the set of the actions of the
+       sult they obtained, individually or statistically. In this        scene Sγ.
+       way, it can provide information on the difficulty of the
+       test, its suitability for a certain age or its relationship          Each action is identified by a weight. The Likert scale
+       with the severity of autism.                                      (Table I) is a reliable tool for measuring perceptions, measures
+                                                                         the influence of an action on a concept through a weight,
+      In the light of the last paragraph, DIAUTIS I may in the          consisting of five levels [27].
+       future begin to develop collections of standardized tests
+       in order to produce test protocols, as indicated by doc-                                     ∀ Aγi ⟹ Wγi ∈ [1, 5]                         (1)
+       tors and medical teams, leading to eventual standards.
+                                                                            Likert’s scale can also be normalysed by dividing its values
+   IV. DIAUTIS II: A MULTI-AGENT PLATFORM FOR THE                        by 5. So {0.2, 0.4, 0.6, 0.8, 1}.
+ DIAGNOSIS OF AUTISM AND THE DESIGN OF SERIOUS GAMES
+                                                                                                TABLE I.       LIKERT'S SCALE
+A. Features
+                                                                                1               2               3           4                5
+    DIAUTIS II extends the capabilities of DIAUTIS I by add-
+                                                                          Very bad                        Acceptable   Correct Ac-     Very good
+ing a methodology for designing serious games based on four               action
+                                                                                           Bad action
+                                                                                                          action       tion            action
+dimensions: Knowledge, Affect, Senses, and Pedagogy. The
+KASP methodology enables DIAUTIS II agents to design                        In addition, the expert attributes a weight to each concept
+games from a set of more than 80 templates, considering the              (Table II) to describe its importance in relation to the main con-
+child's background [24].                                                 cept described on DIAUTIS [21]. The weighting varies from one
+                                                                         scene to another:
+    The results of the tests carried out through DIAUTIS are an-
+alyzed in order to deduce the child's basic abilities by developing                                 ∀Cγi ->Vγi ∈ [1, 2, 3, 4, 5]                 (2)
+a result containing five specifications: motor, behavioral, cogni-
+tive, socio-emotional and sensory. Using machine-learning tech-                    TABLE II.         WEIGHTS ATTRIBUTED BY THE EXPERT
+niques, an intelligent system will be set up to classify these spec-
+                                                                             Concepts               Cγ1         Cγ2         Cγ3            Cγ4
+ifications, which will indicate the type of disorder the diagnosed
+child suffers from. The authors propose using SVM, a super-               Weight/Con-
+                                                                                              Vγ1            Vγ2         Vγ3            Vγ4
+                                                                          cept principal
+vised type algorithm, to classify a child's disorder using an intel-
+ligent classifier on selected diagnostic specifications.                     The expert creates a semantic network of the scene (Fig. 1),
+    DIAUTIS I has been enhanced with KASP (Knowledge, Af-                representing all concepts and actions, and their weights. A node
+fect, Sensory, Pedagogy) [25], a new approach to the conception          represents each concept, with an oriented arc connecting two
+of serious learning games. This is a new solution to aid children        nodes indicating the influence of action on the destination con-
+with learning disabilities to exceed these barriers by considering       cept. The expert must specify at least five actions for each con-
+their cognitive, emotional and sensory aspects.                          cept.
+
+B. Serious Game as an Evaluation Tool for the Autistic Chil-                 After a game session, a child's semantic subnet is created
+    dren                                                                 (Fig. 2), inheriting the expert's network and containing only the
+                                                                         child's actions and associated concepts.
+    Headings, A game is a narrative that combines an intention,
+genre, main concept, and objectives. The balance between the                 After that, the semantic network generates two matrices: the
+objective and the concepts is crucial for a coherent and interest-       expert's matrix (Table III) and the child's matrix (Table IV). The
+ing story. To assess a child's assimilation of a concept with Au-        expert's matrix contains all types of actions and concepts, while
+tism Spectrum Disorder (ASD), it is necessary to consider the            the child's matrix is a submatrix derived from the expert's matrix.
+                                                                         The expert and child's action weights are typically different, as
+
+
+
+
+                                                                                                                                     350 | P a g e
+                                                           www.ijacsa.thesai.org
+
+===== PDF PAGE 5 / 16 =====
+                                                              (IJACSA) International Journal of Advanced Computer Science and Applications,
+                                                                                                                       Vol. 15, No. 8, 2024
+
+the expert's matrix contains all the varieties of actions and con-                     TABLE III.       EXPERT’S MATRIX: SCENE SΑ
+cepts, while the child's matrix is a submatrix derived from the                     Cα1      Cα2          Cα3         Cα4         Cα5        Cα6
+expert's matrix.                                                         Action    WACα1    WACα2        WACα3       WACα4       WACα5      WACα6
+                                                                         Action    WACα1    WACα2        WACα3       WACα4       WACα5      WACα6
+                                                                         Action    WACα1    WACα2        WACα3       WACα4       WACα5      WACα6
+                                                                         Action    WACα1    WACα2        WACα3       WACα4       WACα5      WACα6
+                                                                         Action    WACα1    WACα2        WACα3       WACα4       WACα5      WACα6
+                                                                          …        …        …            …           …           …          …
+                                                                         Action    WACα1    WACα2        WACα3       WACα4       WACα5      WACα6
+                                                                         Action    WACα1    WACα2        WACα3       WACα4       WACα5      WACα6
+
+                                                                                        TABLE IV.       CHILD’S MATRIX: SCENE SΑ
+
+                                                                                           Cα1          Cα2          Cα3         Cα4           Cα5
+                                                                          Action       WACα1        0            0           0             0
+                                                                          Action       0            WACα2        0           0             0
+                                                                          Action       0            WACα2        0           0             0
+                                                                          Action       0            WACα2        0           0             0
+                                                                          Action       0            0            WACα3       0             0
+                                                                          Action       0            0            0           WACα4         0
+                                                                          Action       0            0            0           WACα4         0
+                                                                          Action       0            0            0           0             WACα5
+
+                                                                             Then, we have received:
+                                                                              The expert assigns weights Vαi to scene sub-concepts,
+                                                                               which can be represented as an n-dimensional vector,
+                                                                               representing the number of scene sub-concepts
+             Fig. 1. Expert’s semantic network: Scene Sα.
+                                                                               (Table II).
+                                                                              The child's sub-concept weights V’αi can now be ex-
+                                                                               pressed as: V’αi=Wαj × Wαk × Wαl ×…× Vαi= Π Wαj
+                                                                               × Vαi
+                                                                            The Wαj and Vαi are the normalized child's and expert
+                                                                         weights; they are vectors of n dimensions, with some compo-
+                                                                         nents potentially being 0, based on normalized Likert's scale.
+                                                                              The cosine of two vectors, a real number between -1 and
+                                                                               1, measures the child's ability to assimilate key concepts.
+                                                                             The study found that an acute angle between two vectors
+                                                                         leads to higher understanding in a child, while an obtuse angle
+                                                                         makes the main concept unclear. This allows experts to better
+                                                                         analyze a child's perception of a concept using ADS measure-
+                                                                         ments, enhancing their understanding of the concept.
+                                                                              We identify actions causing significant sub-concept
+                                                                               weight degradation, selecting actions with a weight
+                                                                               WACαi ≤ 3 for each scene, ensuring accuracy:
+                                                                                  o   If WACαi ≤ 3, a significant degradation is applied to
+                                                                                      the sub-concept.
+                                                                                  o   If 4≤ WACαi <5, The sub-concept is subjected to
+                                                                                      low degradation.
+                                                                                  o   If WACαi=5, The weighting of the sub-concept re-
+                                                                                      mains unchanged.
+              Fig. 2. Child’s semantic network: Scene Sα.                   The expert will identify difficult concepts for each child, al-
+                                                                         lowing tutors to adapt learning programs and highlight gaps in
+
+
+
+                                                                                                                                       351 | P a g e
+                                                            www.ijacsa.thesai.org
+
+===== PDF PAGE 6 / 16 =====
+                                                             (IJACSA) International Journal of Advanced Computer Science and Applications,
+                                                                                                                      Vol. 15, No. 8, 2024
+
+the proposed technique to strengthen understanding for the child        evolved from being done "up to isomorphism" to "up to equiva-
+with ADS.                                                               lence" or "bi-equivalence" or even "n-equivalence." This shift in
+                                                                        approach has led to the development of systematic and formal
+ V. DIAUTIS III: A FUZZY AND AFFECTIVE PLATFORM FOR                     graphical languages to express various forms of argumentations.
+ OBTAINING AUTISM MENTAL MODELS AND LEARNING AIDS                       The level of abstraction in mathematics has evolved from "up to
+A. Features                                                             isomorphism" to "up to equivalence" or "bi-equivalence" or "n-
+                                                                        equivalence".
+    DIAUTIS III extends the capabilities of DIAUTIS II by add-
+ing a methodology for formalization of the elaborated mental                Theory of categories focuses on the relationships between
+model of autism (fuzzy graph) based on mathematical theory of           structures, offering a highly abstract yet powerful approach to
+categories. That way autism mental models can be automatically          mathematics, focusing on objects and morphisms. The compo-
+obtained. The theory of categories will be used to formalize the        sition operator is a central element, but reducing the theory to a
+graph as well as its operations. We will explain in next sections       refinement of it is oversimplification and fails for full-featured
+the steps of this formalization.                                        capture its richness and depth [28]:
+    The DIAUTIS III tests, based on KASP methodology, ana-                   1) Abstraction: Category theory is a mathematical field that
+lyze the fuzzy mental model's elements. A collection of serious         emphasizes the relations between structures, rather than individ-
+games is designed to cover all deficiencies in the seven families       ual elements. It defines categories by their objects and mor-
+of the model. These games are divided into two kinds: basic dis-        phisms, rather than their internal aspects. This abstraction allows
+covery of deficiencies and deep exploration of problems, reveal-        for generalization across various mathematical contexts, ena-
+ing details, intensities, features, and concept assimilation. This      bling the transfer of concepts and results across seemingly dis-
+allows for a deeper understanding of learning problems and their        parate areas of Mathematics.
+evolution. The games are displayed on a computer, allowing                   2) Unification: Category theory is a powerful tool that uni-
+children to see moving objects, colors, and sounds.                     fies various mathematical fields by drawing parallels between
+                                                                        seemingly unrelated concepts. It uses factors and natural trans-
+     DIAUTIS III has been enhanced with the theory of catego-           formations to connect different categories, demonstrating that
+ries which will be used to formalize the fuzzy and affective men-       different structures and theories are manifestations of underlying
+tal model of autism, a new approach to the presentation of the          ideas, leading to improved understanding and advancements in
+abstract concepts. The mathematical theory of categories is a           various mathematical fields.
+suitable formalism for representing the mental model of an au-               3) General concepts: Category theory introduces concepts
+tistic child from a blurred graph, allowing operations like CONS        like limits, colimits, and adjunctions, which provide abstract
+and TRA to evaluate the difference between two mental models            perspectives applicable across various mathematical contexts.
+or the trajectory of a collection. This mental model allows for         Examples include products in abstract algebra and products in
+the creation of games that require low concentration levels and         topology. This generality enables mathematicians to apply intu-
+gradually increase them, thereby facilitating learning and allow-       itions and results from one area to another, leading to discoveries
+ing the child's mental model to evolve at any time, reflecting          and advancements in various topics.
+their overall learning experience.                                           4) Applications in other areas: Category theory, a funda-
+B. Mathematical Theory of Categories                                    mental concept in mathematics, has broad applications in fields
+                                                                        like computer science, physics, logic, and philosophy. It is uti-
+    There are various perspectives on the nature and purpose of         lized in type theory and programming language denotational se-
+category theory. Carlos Polanco [28] defines category theory as         mantics, while toposes provide a new framework for intuition-
+a mathematical branch that focuses on abstract and unified math-        istic logic and set theory in logic.
+ematical structures and their relationships. This Theory is a fun-
+damental aspect of modern mathematics, offering a unified                   A category is an abstraction based on objects and mor-
+framework for understanding and formalizing mathematical                phisms, often studied in groups, rings, and topological spaces.
+concepts and theories.                                                  Category theory shifts focus from object elements to morphisms
+                                                                        between objects. The axioms of a category do not require objects
+    Hence, Hoare [29] describes category theory as a broad and          to be sets, making it unnecessary to speak of an object's elements
+abstract branch of pure mathematics, providing little assistance        [31].
+in solving specific problems within its sub-disciplines. As a gen-
+eralist tool, it offers little benefit to practitioners, making it a        A category is a collection of data, denoted by C = (Ob-
+valuable tool for generalists.                                          jects(C), Morphisms(C), ◦, Id) consisting of these items:
+    Category theory is a crucial tool in mathematics, organizing            1) A set of objects Objects(C), which contains all the items
+and unifying many fields such as algebraic topology, homolog-           in the category.
+ical algebra, homotopy theory, representation theory, arithmetic            2) A set of Morphisms(C), containing the arrows (or Mor-
+geometry, and algebraic geometry [30]. It is essential for the de-      phisms) between category objects.
+velopment of new graphical notations and different levels of ab-            3) An operation called composition ◦ that joins Morphisms
+straction in contemporary mathematics. Category theory and its
+                                                                        to form another Morphism, and is associative: (f ◦ g) ◦ h = f ◦ (g
+mathematical disciplines use commutative diagrams, leading to
+philosophical explorations. However, category theorists have            ◦ h), for any f, g, and h in Morphisms(C).
+also developed systematic and formal graphical languages to ex-             4) Identity Morphisms Id for each object in Objects(C).
+press various forms of argumentations. Mathematics has
+
+
+
+                                                                                                                            352 | P a g e
+                                                          www.ijacsa.thesai.org
+
+===== PDF PAGE 7 / 16 =====
+                                                              (IJACSA) International Journal of Advanced Computer Science and Applications,
+                                                                                                                       Vol. 15, No. 8, 2024
+
+C. Obtainment of the Child's Fuzzy Mental Model                          child in learning. Analyzing the link between a deficiency and a
+    Autism is a group of basic behaviors characterized by diffi-         specific affective state is crucial for providing emotional and
+culties in social reciprocity, communication, and behavioral             cognitive aids to improve learning deficiencies.
+flexibility. Children with autism spectrum disorder (ASD) strug-             A universal fuzzy model cannot be developed for specific
+gle to understand others' emotions, feelings, beliefs, and               learning deficiencies, as they vary with autistic children's age
+thoughts. Diagnostics for autistic children typically align with         and present unique characteristics. However, a list of general
+existing medical and psychological recommendations, but they             and concrete deficiencies can guide in expanding, detailing, or
+do not evaluate all the problems, severities, or individual inten-       specifying them in each case.
+sity of the child's symptoms. As they are not repeated, they can-
+not determine the appearance of new symptoms or deficiencies                The first list of deficiencies has been grouped into seven
+with age or changes in intensity. Additionally, the diagnosis            families:
+does not determine the affective states associated with these de-            1) Affective or emotional: This family contains deficien-
+ficiencies, making aid for autistic children ineffective due to ig-
+                                                                         cies related to emotions of the autistic child and her/his affec-
+norance of these factors. A mental model for autistic children
+contains all deficits and tasks they cannot perform, but no autism       tive state when her/his environment changed or meeting people.
+mental model has been developed to date.                                     2) Verbal and language comprehension: The second fam-
+                                                                         ily includes all the deficiencies related to the communications
+    In our last article, we propose a fuzzy affective mental model       and expression that the child with ASD suffers from in her/his
+of autism, based on the DSM-V that considers a child's affective         daily life and/or in classroom.
+states. The model is included their specific deficiencies, intensi-
+ties, frequencies, and associated affective states. It uses affective        3) Monitoring of visual objects: Researchers have identi-
+computation and fuzzy logic to account for affection and uncer-          fied eight visual processing disorders, each affecting different
+tainty. The model can be obtained using the KASP Methodol-               abilities and presenting unique challenges. These disorders in-
+ogy, and can be obtained in the form of a fuzzy cognitive map            clude visual discrimination, optical sequencing, visual figure-
+or graph. This model can be used to improve learning and social          ground differentiation, pictorial memory, visual-spatial relation,
+integration for autistic children.                                       visual closing, letter and symbol reversal, and visual-motor pro-
+    The mental model of an autistic child contains their imper-          cessing.
+fections, awkward actions, and associated affective states. This             4) Attention and response to basic sounds: This family
+model is crucial as it reveals their varied limitations and can help     consists of the difficulties related to the identification of sounds,
+establish techniques or strategies to improve their learning. It is      the memory of oral instructions or the sensitivity to the
+essential for understanding and addressing these difficulties in         noise…etc.
+order to improve their overall development.                                  5) Other social behaviors: The fifth family presents com-
+                                                                         mon disabilities and atypical social behaviors of autistic chil-
+   1) Autism: New Fuzzy Affective Mental Model: The pro-
+                                                                         dren.
+posed new conceptual fuzzy and affective model of autism will
+                                                                             6) Combined tests and deficiencies.
+guide the creation of a specific model for each child, encom-
+                                                                             7) Group behaviors.
+passing their specific deficiencies, intensities, frequencies, and
+associated affective states [32].                                            To better represent the autistic child's specific conditions,
+                                                                         each family should include specific deficiencies, rather than
+    The mental model serves as a child's mental radiography, al-         general ones, which may belong to multiple families based on
+lowing for the identification and treatment of each present defi-        the child's characteristics or decompose in multiple families.
+ciency and its intensity. This article does not address this crucial
+issue, but the model goes beyond diagnosis, as per the DSM-V                Each deficiency has a fuzzy set associated (Table V), with
+[33]:                                                                    elements as below:
+      Persistent deficits in the ability to socialize and interact           Severity or intensity: Described by a number that be-
+       in a wide variety of contexts.                                          longs to the whole [0, 1].
+      Iterative patterns of restricted action, attention, or activ-          Frequency with which this defect occurs: A number be-
+       ity manifesting in at least two contexts.                               longing to the range [0, 1] marks it.
+      These symptoms have to be present in the first stage of                The most commonly associated emotional state. It is de-
+       the development of the disease.                                         fined first by the number of the affective state that be-
+                                                                               longs to Family 1.
+      These symptoms are the result of a loss of distance in
+       one or more areas of normal functioning.                               The intensity of this association is a real number that be-
+                                                                               longs to [0.1].
+      An intellectual or general developmental problem does
+       not seem to be the best explanation for these disorders.              2) Obtaining and Formalization the Fuzzy Mental Model:
+    The mental model should consider a child's deficiencies and          The autistic fuzzy mental model is typically diagnosed through
+their characteristics to provide appropriate techniques. It also         a student progress study to identify learning issues.
+emphasizes the importance of the affective states of the autistic
+
+
+
+                                                                                                                              353 | P a g e
+                                                           www.ijacsa.thesai.org
+
+===== PDF PAGE 8 / 16 =====
+                                                             (IJACSA) International Journal of Advanced Computer Science and Applications,
+                                                                                                                      Vol. 15, No. 8, 2024
+
+    To do this, we have implemented the KASP methodology,                       In order to identify new learning issues, serious games
+already tested and used, enables the development of tests based                  of the first kind are used.
+on the theory of serious games. Serious games, which aim be-
+yond entertainment, have significant potential due to the impact                The games of the second kind are used to go deeper into
+of emotions on learning. However, there is a significant aca-                    the problems found in phase 1. Getting their intensities,
+demic literature on the nature, composition, and effects of these                severities and associated emotional states.
+games.                                                                          The games of the second kind are used to go deeper into
+    This methodology evaluates learning deficiencies in autistic                 the problems found in phase 2. Getting their intensities,
+children by measuring preschool children's concept assimila-                     severities and associated emotional states.
+tion, offering advantages such as identifying continuous learn-                 Creation of the fuzzy cognitive map (Fig. 3).
+ing strategies. It also aids in assessing their learning abilities.
+                                                                               The mental model that is described can be formalized as a
+    A collection of serious games using KASP methodology has               fuzzy cognitive map or a fuzzy graph (Fig. 3), which is charac-
+been designed to cover all deficiencies in the seven families of           terized by its levels:
+the model. Divided into two categories, the first allows basic dis-
+covery of deficiencies, while the second allows deep exploration               Level 1: The name of the child with autism, her/his birth
+of problems, revealing details, intensities, features, and concept         date.
+assimilation. The games are displayed on a computer, allowing
+                                                                               Level 2: The seven families of deficiencies presented above.
+children to see moving objects, colors, and sounds.
+                                                                               Level 3: List of deficiencies contained in each family [32].
+   The process of obtaining the mental model passes via these
+phases:                                                                        Level 4: For each deficiency, the associated fuzzy set formed
+                                                                           by: intensity or severity of the deficiency, frequency, associated
+      Through the first kind of serious games, or diagnosing,             emotional state, and intensity of that association.
+       various crucial deficiencies are detected.
+
+
+
+
+                                                   Fig. 3. Detail of the fuzzy cognitive map.
+
+
+
+
+                                                                                                                               354 | P a g e
+                                                          www.ijacsa.thesai.org
+
+===== PDF PAGE 9 / 16 =====
+                                                                   (IJACSA) International Journal of Advanced Computer Science and Applications,
+                                                                                                                            Vol. 15, No. 8, 2024
+
+                                      TABLE V.       THE ASSOCIATED FUZZY SET OF EACH ELEMENT OF DEFICIENCY
+
+                  Elements                                                                The associated fuzzy set
+ Intensity of the deficiency                 [0,0.25] (weak)             [0.25,0.5] (medium)           [0.5, 0.75] (important)        [0.75, 1] (very important)
+ Frequency of the deficiency                 [0, 0.25] (weak)            [0.25,0.5] (medium)           [0.5, 0.75] (important)        [0.75, 1] (very important)
+ The most frequent emotional state associ-
+                                             It is determined by the number of the emotional state that appears in Family 1 at the list of deficiencies.
+ ated
+                                                                         [0.25,0.5] (medium in-
+ The intensity of association                [0, 0.25] (light)                                         [0.5,0.75] (intense)           [0.75, 1] (very intense)
+                                                                         tense)
+                                                                                        Mij= (Morfija. Morfijb,...Morfijs, morfijr,n,...,morfijh,t) ;
+D. Metrics for the Evaluation of the Difference Between
+    Fuzzy Mental Models of the Same Child                                             If we consider that morfijr,n equivale a morfijn,r ,its cardinal
+    So far, we have used the fuzzy graph as a formalization of                    is s+(s-1)+...+2+1= (s+1).s/2
+the elaborated mental model of autism, composed of a three-                              d) Moreover, it has two operations, dom and codom, as-
+level graph. The first, of a single node, is constituted by the name              signed to each Morphism or morphism. For Morphisms,
+of the child and the date on which the mental model is carried                    Morfijs, the dom is the fuzzy set to apply, which is Cijs, and the
+out; the second level has as many nodes as families of learning                   codom is s, the node of the learning problem to which it is ap-
+problems we have considered. The third level is formed by the                     plied. For morphisms, morfijh,t the dom is the starting node, h,
+nodes that represent the different learning problems, in total n,
+                                                                                  and the codom is its new position, t, of the node. In short:
+that we have found in the child, corresponding to each family
+(Fig. 3).                                                                               dom (Morfijs) = Cijs ,        codom (Morfijs) = s, sЄDij
+
+    This fuzzy graph will be used as the basis of the mathemati-                     dom (morfijh,t) = h, hЄDij , codom (morfih,t) = t, tЄDij (5)
+cal concepts we are going to introduce. Next, we will consider                        The first Morphisms are those that assign a fuzzy set to a
+first the theory of categories [34], to formalize the graph as well               node; without them there is no mental model. The second mor-
+as its operations. We will try to explain in an intuitive manner                  phisms exchange the nodes and the fuzzy sets hanging from
+the steps of this formalization. Subsequently, we will incorpo-                   them. Although dom(morfijh,t) and codom(morfijh,t) are differ-
+rate topological notions, vector spaces and basic algebraic struc-                ent from dom(morfijt,h) and codom (morfijt,h) we consider both
+tures.                                                                            morphisms equivalent, because their effect on the fuzzy sets is
+     1) Concept of mental model: The mental model j of the au-                    the same.
+tistic child i, which we represent by Mentij, is composed of a                           e) It also has an id operation, which assigns to each node
+set of three sub-sets, which are:                                                 b of level 3, or to each fuzzy set h, the morphism idh which is
+        a) A subset Dij = (a,b,c,..s) of some (or all) of the nodes               the identity of h, so that its dom and codom coincide with h. In
+of level 3 of the fuzzy, which are the difficulties presented by                  addition, it is verified:
+the autistic child. In the particular case adopted in this paper,                      Identity law: idh.Morfijh= Morfijh, when h is a node;
+the total number of learning problems considered in the seven                             Morfijh.idh= Morfijh when h is a fuzzy set; in this last
+families is:                                                                              case the composition idh.Morfijh cannot be done
+                 N = 10+13+14+6+15+15+12 = 85                   (3)                    Identity law: idh.morfijr,h= morfijr,h, when h is a node;
+    The cardinal of Dij, i.e. the number of elements containing                         morfijh,t.idh=morfijh,t when h is a node; when h is a
+this subset is s, which will vary in each case of autism. This num-                     fuzzy set the compositions idh.morfijr,h or morfijr,h.idr
+ber s will always be less than or equal to N.                                           cannot be done.
+       b) A set ₡ij =(Cija, Cijb,..., Cijs) of s fuzzy sets that hang                     f) It also has a composition operation of two morphisms
+from the nodes of the level 3 of the fuzzy graph, corresponding                   (f.r) such that:
+to the problems of the child. In our case, as we have already                           The dom of (f.r) is the dom of r, and
+said, s<=85.
+                                                                                       The codom of (f.r) is the codom of f.
+       c) A set of Morphisms and morphisms, Mij = (Morfija,
+Morfijb,...Morfijs, morfijr,n,... morfijh,t); the Morphisms,                          It is worth remembering that, as in other mathematical for-
+called Morfijq apply the fuzzy set Cijq to the node q of level 3.                 malisms, composite expressions or formulas are read from right
+These Morphisms, (with capital letter), are the first-class mor-                  to left, that is, in the case of (f.r), first acts r, and then f. In order
+phisms; besides, there are other morphisms, (with lower case):                    for this composition to exist, the morphisms f and r must have a
+morfijr,n,.......,morfijh,t, which swap the fuzzy sets Cijr and                   particular nature; r must be a Morphism (with capital letter) to
+Cijn hanging on the nodes r and n.                                                be able to act on f, which must be one morphism with lower case.
+                                                                                  This way:
+    So, the mental model is composed of:
+                                                                                                  dom (morfijh,t.Morfijh ) = dom (Morfijh) ; codom
+    Mentij = (Dij, ₡ij, Mij) ; Dij = (a,b,c,..r) ; its cardinal s<=N
+                                                                                                    (morfijh,t.Morfijh) = codom (morf ijh,t)    (6)
+                                 ;
+            ₡ij =(Cija, Cijb,..., Cijr) ; its cardinal is s<=N;        (4)
+
+
+
+                                                                                                                                                  355 | P a g e
+                                                                 www.ijacsa.thesai.org
+
+===== PDF PAGE 10 / 16 =====
+                                                             (IJACSA) International Journal of Advanced Computer Science and Applications,
+                                                                                                                      Vol. 15, No. 8, 2024
+
+      g) Composition is also complied with:                               Both end states corresponding to the left hand and right hand
+   Associative      law     (morfijg,h.morfijb,g).Morfijb         =     members of the last equation coincide.
+morfijg,h.(morfijb,g.Morfijb )                                              The formal demonstration of this general associative law
+   When, as previously verified                                         would follow the same steps commented, only that instead of
+                                                                        using concrete numbers for nodes like 2, 4, and 6, we would use
+ codom(Morfijb)= dom(morfijb,g) and codom(morfijb,g)=co-                generic denominations like r, s, and t. and an arbitrary number
+                    dom(morfijg,h)                   (7)                of nodes. Accordingly, it can be said:
+    In this associative law must appear a Morphism (with capital            Theory 1. The Mentij mental model is a finite category.
+letter), because without it there is no mental model; only one can
+appear, because if more are included the conditions of equality              Theory 2. The number of Morphisms (with capital letter)
+required of doms and codoms cannot be fulfilled. On the other           is s.
+hand, this Morphism must be the first on the right, for the same           Theory 3. The number of morphisms (with lower case) also
+reason of equality of doms and codoms.                                  depends on s and is s+(s-1)+ (N-2)+...1= s(s+1)/2
+    The associative law is also fulfilled with three morphisms              It can also be demonstrated that:
+(with lower case), when the appropriate conditions of doms and
+codoms are verified, since as there is no Morphism, there is not            Theory 4. The set of Morphisms constitutes an isomorphism
+any fuzzy set in any node, therefore, the changes of the material       between the subset of learning problems (nodes), and the sub-
+hung in the nodes are inoperative. The mental model does not            set of fuzzy sets that assess the intensity and other characteristics
+actually exist because the learning problem nodes do not have           of these problems.
+any fuzzy set to evaluate them.                                            For if the doms of two Morphisms are different, so are their
+   We will elementally check that this associative law, which           codoms and reciprocally.
+we will describe intuitively in a particular case, is complied with.       Theory 5. The set of morphisms constitutes an epimorphism
+     Suppose a set of five segments followed by numbers 1 to 6;         between the set of learning problems (nodes), and itself.
+these numbers represent the positions of the third-level nodes of           Indeed, if we remember that in monomorphisms, if the doms
+the fuzzy graph, i.e., the learning problems observed in this au-       are different, the codoms must also be, we see that in this case it
+tistic case:                                                            is not fulfilled, because several doms can lead to the same co-
+                    1-----2-----3-----4-----5-----6                     dom. In the case of isomorphism, all of them with different do-
+                                                                        mains, have different codoms, and also different codoms also
+   Let's imagine that, initially, under each node hangs an empty        correspond to different doms. It is an epimorphism. Whose mor-
+box or contains a fuzzy set in the box. Each box, though empty,         phisms cover all nodes as doms and codoms.
+contains the number of the node it initially hangs from
+                                                                           Let us now present a concrete example to demonstrate this
+                    1-----2-----3-----4-----5-----6                     formalism.
+                     !     !    !     !    !     !                          2) Example: mental model of the autistic child Juanito:
+                    Ʋ1 Ʋ2 Ʋ3 Ʋ4 Ʋ5 Ʋ6                                   Since we will only consider one mental model for the time be-
+                                                                        ing, we can remove the first subindex, i, of Mentij, and place
+   If we consider the associative law (morf4,6.morf2,4).Morf2
+                                                                        the name of the child in place of the second sub-index, j. So, we
+= morf4,6.(morf2,4.Morf2) we have:
+                                                                        will have as the name of this mental model MentJuanito.
+    When performing the right hand member of this equation we
+find:                                                                       Suppose now that the autistic child Juanito has: problems
+                                                                        learning grammar (family 2, number 7), he experiences disgust
+      According to the parenthesis, Morf2 hangs the fuzzy set          when writing (family 3, problem 6), and he does not allow or
+       C2 in the box Ʋ2. And subsequently morf2,4 transfers             maintain social relationships with his peers (problem 13 of fam-
+       C2 to the box Ʋ4.                                                ily 5). These problems are associated respectively with a ten-
+                                                                        dency to be distracted (problem 2 of family 1), with irritability
+      Subsequently morf4,6 moves the fuzzy set C2 from the             and physical over activity (problem 9 of family 1) and feelings
+       box Ʋ4 to the boxƲ6 . That's the final state.                    of anxiety (problem 4 of family 1).
+   By now carrying out the left hand member of the equation,                In this case, the fuzzy graph of Juanito's mental model
+we have:                                                                (Fig. 4) has only three nodes at level 3, which are his three learn-
+      Morf2 hangs the fuzzy set C2 in the box Ʋ2.                      ing problems, which correspond with the numbers 19= (12+7),
+                                                                        36= (12+18+6), and 64= (12+ 18+15+6+13). We have replaced
+      According to the parenthesis, morf2,4 changes C2 from            the numbering by the family and their respective number, by a
+       the box Ʋ2 to Ʋ4, and morf4,6 also to Ʋ6.                        total numbering that already includes the family number.
+
+
+
+
+                                                                                                                              356 | P a g e
+                                                          www.ijacsa.thesai.org
+
+===== PDF PAGE 11 / 16 =====
+                                                          (IJACSA) International Journal of Advanced Computer Science and Applications,
+                                                                                                                   Vol. 15, No. 8, 2024
+
+                                                                         identity law: id19.Morf1-19 = Morf1-19; Morf1-19.id19 =
+                                                                                                     Morf1-19                (8)
+                                                                        and the same would happen with the Morphisms associated
+                                                                     with nodes 36 and 64.
+                                                                         Similarly, for existing morphisms it is verified:
+                                                                            identity law: id36.morf19-36= morf19-36 ; morf19-36=
+                                                                                              morf19-36.id19                  (9)
+                                                                        Furthermore, the following properties are met for the
+                                                                     morphism composition operation:
+                   Fig. 4. Juanito's fuzzy graph.                               Associative law (morf19-36.morf19-36).MorfC1-19 =
+                                                                                    morf19-36 (morf19-36.MorfC1-19)          (10)
+    In addition, three fuzzy sets have been obtained that reflect
+the intensity of the three problems, and are:                            Because here it is verified
+       a) C1=[intensity 0.4, frequency 0.4, associated affective       codom(MorfC1-19) = dom(morf19-36), and codom(morf19-
+problem 2, association intensity 0.], for node 19.                                      36)=dom (morf19-36)            (11)
+       b) C2=[intensity 0.5, frequency 0.5, associated affective          In this associative law must appear a Morphism of the first
+problem 9, association intensity 0.4], for node 36.                  class, because without it there is no mental model; only one can
+       c) C3=[intention 0.6, frequence 0.4, associated affective     appear, because if more are included the conditions of equality
+problem 4, association intensity 0,4], for node 64.                  required of domains and codominions cannot be fulfilled. On the
+    The Morphisms, (with capital letter), available in this case,    other hand, this first-class Morphism must be the last of the
+which we could intuitively consider as arrows, are three: the        right, for the same reason of equality of domains and co-domin-
+first, MorfC1-19, takes the first fuzzy set and hangs it on node     ios.
+19; the second, morfC2-36, takes the second fuzzy set and hangs          The association law is also complied with:
+it on node 36, and the third, morphC3-64, does the same with
+the third fuzzy set and hangs it on node 64. These Morphisms              (morf64-19.morf36-64).morf19-36 = morf64-19.(morf36-
+create a bi-univocal relationship between the set of the three                            64.morf19-36)                   (12)
+nodes of the mental model and the three fuzzy sets; therefore,           However, it is a trivial law, because since no Morphism in-
+they constitute an isomorphism between these two sets.               tervenes, no node has hanged a fuzzy set of evaluation; there-
+    The morphisms, (with lower case) that we have, are like cir-     fore, it does not produce the MentJuanito model.
+cles that swap the position and hanging content of two nodes.            Consequently, Juanito's mental model is a category.
+Therefore, for example, the morf19-36, exchanges node 19 and
+what hangs from it with node 36. The number of existing mor-             3) New transactions with categories: Next, we will define
+phisms in this example is 3: the morf19-36, the morph19-64, and      several operations with mental models of the same autistic
+the morp36-64; as we have already said, we consider morphism         child. We will try to obtain metrics to evaluate the difference
+morf36-19 equivalent to morf19-36, because their effect on the       among them.
+fuzzy sets is the same (Fig. 5).                                         Value consequence of two mental models
+                                                                         Let us now go to the study of a new operation between two
+                                                                     mental models of the same child, which somehow calculates the
+                                                                     separation that exists between them. For this, it is necessary to
+                                                                     introduce, in addition to the categories, notions of elementary
+                                                                     topology, and algebraic structures; for the time being the arith-
+                                                                     metic operations of numbers, and their algebraically structures,
+                                                                     may suffice. Thus, it is possible to define as a value consequence
+                                                                     of two mental models of a child, CONS(Mentij, Mentil),as a new
+                                                                     mental model Mentijl defined as:
+                                                                                    CONS(Mentij, Mentil) = Mentijl                (13)
+                                                                           a) Mentijl contains the same Dij set of Level 3 nodes of
+                    Fig. 5. Existing morphisms.                      Mentij and Mentil, which reflect their learning problems.
+                                                                           b) It has the same morphisms and morfisms as the two
+   Furthermore, for each node, the 19 is considered as an ex-        previous models.
+ample, the morphism id19 that does not change anything of that
+element, and that satisfies the:                                           c) As for their collection of fuzzy sets, each of them is
+                                                                     obtained as an arithmetic difference of the numerical values that
+                                                                     make up them.
+
+
+
+                                                                                                                         357 | P a g e
+                                                        www.ijacsa.thesai.org
+
+===== PDF PAGE 12 / 16 =====
+                                                              (IJACSA) International Journal of Advanced Computer Science and Applications,
+                                                                                                                       Vol. 15, No. 8, 2024
+
+    Thus, if the fuzzy set of a certain learning problem in the first        Theory 6. The CONS operation between categories consti-
+model is Cija = [0.5, 0.4, 9, 0.3], and in the second model is Cila      tutes a non-Abelic semigroup.
+=[0.3, 0.3, 9, 0.2], CONS (Mentij, Mentil) has as fuzzy set for
+that node, Cijla = [0,5-0.3, 0.4-0.3, 9-9, 0.3-0.2]= [0.2, 0.1, 0,          Estimation of the trajectory of several mental models of the
+0.1]                                                                     same child
+
+   The positive values of this latter set indicate the benefits or         It is also possible to analyze a whole trajectory of mental
+achievements obtained from the first mental model to the sec-            models of a child,
+ond.                                                                             TRA(Mentij, Mentik, Mentil, , , , , Mentis) = Mentikl...s
+   However, the following abnormalities may occur:                       to evaluate the overall performance. To do this we will consider
+                                                                         the summary of all your mental models as the following mental
+        a) One of the obtained values is negative. That must trig-
+                                                                         model, Mentikl...s such that:
+ger an alarm that starts a collateral study of the causes that have
+motivated it, to try to overcome them.                                        a) Contains the same set of nodes of level 3 as the mental
+        b) The second mental model obtained contains more                models Mentij, Mentik, Mentil,..., Mentis
+nodes of level 3 that reflect the difficulties of the autistic child,           b) It has the same Morphisms and morphisms as the pre-
+and therefore more fuzzy sets relative to these new nodes. This          vious models.
+happens when new problems arise in his/her evolution. In this                With regard to the contained fuzzy sets, there are several
+case, we have to equalize the number of nodes of the problems,           ways to get them. One would be to obtain the arithmetic average
+incorporating new rows in the first mental model, as well as             of the corresponding values of the mental models of the trajec-
+increasing the Morphisms and morphisms to include these new              tory. However, after studying several practical cases, it seems
+nodes.                                                                   more appropriate to use the geometric average of these values.
+    The values of the fuzzy sets created, relative to these new          In any case, both averages can be used. This new TRA operation
+problems of the first mental model are all null values, according        has the following properties:
+to the operation to be performed (in this first case, arithmetic              a) It is commutative, because it is the product or sum of the
+rest); therefore, they would all be zeros. When performing the           numbers that make up the mental models of the trajectory.
+rest of the numerical values, the values of the new blurred
+CONS(Mentij, Mentil) set appear with a negative sign causing                    b) It is associative, for the same reason above, the asso-
+the corresponding alarm for indicating the appearance of new             ciativity of the sum or product of numbers.
+learning problems.                                                              c) It has an identity, formed by the mental model whose
+                                                                         numerical components are all equal to d) It does not have an
+   This new operation has the following properties:                      inverse element, because there are no fuzzy sets with numbers
+     a) There is no commutative property, or rather, there is the        greater than 1.
+anti-commutative property reflected by:                                      Accordingly:
+                       a.b = -b.a, that is:                                 Theory 7. The TRA operation constitutes an Abelian semi-
+     CONS(Mentij, Mentil) = -CONS(Mentil, Mentij)               (14)     group with the arithmetic operation + (sum) or x (product).
+
+      b) There is a neutral element only on the right, when                                   Example: Juanito's mental model
+Mentil matches Mentij. which has all its elements equal to 0.               Suppose now that Juanito has two mental models; in the first
+               CONS( Mentij, Mentij) = Mentnulo                          one he shows two learning problems corresponding to nodes 19
+                                                                         and 36 of the third level of the fuzzy graph, and their associated
+               CONS(Mentij, Mentnulo)= Mentij (15)
+                                                                         fuzzy sets are:
+This null element only acts on the right, because:
+                                                                                     C1= [0.5, 0.4, 9, 0.3]; C2= [0.4, 0.4, 13, 0.2]
+               CONS(Mentnulo, Mentij)= -Mentij (16)
+                                                                             In the second mental model the associated fuzzy sets are:
+      c) There is an associative property:
+                                                                                     C1= [0.3, 0.3, 9, 0.2]; C2= [0.3, 0.2, 13, 0.1]
+             CONS(Mentik, CONS(Mentij, Mentil)) =
+          CONS(CONS(Mentik,Mentij), Mentil), (17)                           The CONS model obtained from these two previous models
+                                                                         has as its first fuzzy set:
+                             because,
+                                                                                C1= [0.5-0.3, 0.4-0.3, 9-9, 0.3-0.2]= [0.2, 0.1, 0, 0.1]
+    CONS(Mentik, Mentijl)= Mentikjl; CONS(Mentikj, Men-
+                         til)=Mentikjl                                       and as the second set:
+      d) There is the reverse of every mental model, which is                  C2= [0.4-0.3, 0.4-0.2, 13-13, 0.2-0.1]= [0.1, 0.2, 0, 0.1]
+himself, as we have seen in (2). Accordingly, it can be said:                The positive values of these fuzzy sets indicate the benefits
+                                                                         or achievements obtained from the first mental model to the sec-
+                                                                         ond.
+
+
+
+
+                                                                                                                               358 | P a g e
+                                                           www.ijacsa.thesai.org
+
+===== PDF PAGE 13 / 16 =====
+                                                            (IJACSA) International Journal of Advanced Computer Science and Applications,
+                                                                                                                     Vol. 15, No. 8, 2024
+
+   Let us now apply the TRA operation, assuming that Juanito                              TABLE VI.     CHILD’S MATRIX
+has three models of his autistic trajectory, with two learning                                            Mental models
+problems associated with nodes 19 and 36.                                  Fuzzy sets
+                                                                                               Mentij           Mentil          Mentis
+   If the fuzzy sets associated with these two problems are:                             0.6              0.6             0.4
+                                                                                         0.5              0.4             0.4
+   First model: C1 = [0.6, 0.5, 9, 0.4], C2= [0.5, 0.5, 13, 0.3]        Fuzzy set 1
+                                                                                         8                8               8
+   Second model: C1= [0.6, 0.4, 9, 0.3], C2= [0,5, 0.4, 13, 0.2]                         0.4              0.3             0.3
+                                                                                         0.7              0.3             0.3
+   Third model: C1= [0.4, 0.4, 9, 0.3], C2= [0.4, 0,3, 13, 0.2]
+                                                                                         0.5              0.4             0.2
+    The final values of the fuzzy sets of TRA will be, if we use        Fuzzy set 2
+                                                                                         6                6               6
+the geometric average:                                                                   0.5              0.2             0.2
+       C1=[(0.6x0.6x0.4)1/3, (0.5x0.4x0.4)1/3, (9x9x9)1/3,                As you can see, each column vector represents a mental
+          (0.4x0.4x0.3)1/3]= [0.524, 0.43, 9, 0.363]                   model of the child and contains the two fuzzy sets, related to the
+     C2=[(0.5x0.5x0.4)1/3, (0.5, 0.4, 0.3)1/3, (13x13x13)1/3,          two learning problems.
+         (0.3x0.2 x0.2) 1/3]= [0.033, 0.02, 13, 0.04]
+                                                                          Now we can apply the TRA operation, which using the arith-
+       a) Vector Formalism: Another formal way of consider-            metic average produces us the vector column: [0.533 0.4333 8
+ing the mental model is to use vector spaces. In this case it can      0.333 0.4 333 0.3666 6 0.3]
+be assimilated to a column vector in which the fuzzy sets has              Similarly, another column vector would be obtained using
+been aligned within that column; thus the vector has as number         the geometric average, which would be the cubic root of the
+of rows 4xs, being s the number of learning problems corre-            product of the terms of each row.
+sponding to that model.
+                                                                       E. DIAUTIS III: Agent Architecture
+    Using this formalism it is easy to carry out the operations set
+out in the previous paragraph, which are CONS and TRA. So                 The various types of agent used in DIAUTIS III are as fol-
+the result of CONS(Mentij, Mentil)= Mentijl can be obtained as         lows:
+the difference between the numerical values of both vectors.
+                                                                            1) The control agent is responsible for cloning or eliminat-
+     Given that all numerical values are <=1 except the third          ing agents, coordinating performance, and resolving conflicts.
+number of each fuzzy set that is >=1, it is convenient, though not     It grants control to affective or pedagogic agents when re-
+necessary, to normalize that learning problem number by divid-         quested, centralizes communication with users, and handles in-
+ing it by the total number of mental problems of your family,          itial interviews with parents or instructors. It can communicate
+and thus all of them will be <=1. The difference vector shows us       with any agent.
+in its positive terms the advantages achieved, and in the possible
+                                                                            2) The design agent is responsible for designing tests based
+negative ones, the alarms for the emergence of new problems or
+deterioration of the existing ones.                                    on clinical team indications and criteria. They maintain a data-
+                                                                       base of tests and prepare test records. They communicate with
+    New metric offered by vector space. An integral or metric          control agents, interface, affective, cognitive, and possibly ped-
+evaluation that allows directly to obtain this formalism is the ob-    agogic agents, and direct diagnosis achievement. They also de-
+taining of the cosine of the angle that the component models of
+                                                                       sign future normalized diagnosis protocols based on qualifica-
+CONS present. For this we have to take into account that, given
+two vectors A, and B, it is verified that their scalar product A.B     tions, experience, and medical equipment indications, including
+is equal to the product of their modules by the cosine of the angle    the possibility of incorporating affective and pedagogic agents.
+they form; from that expression we can get the cosine of the an-            3) Cognitive agents (type A) manage voice and sound anal-
+gle they form.                                                         ysis, collaborating with other pedagogic agents. They receive
+                                                                       test information and have a sonorous model of the world. They
+    4) Implementation of these new operations: If we consider          communicate evaluation inputs from negative elements, design
+each fuzzy set as a column vector, whose components are real           agent, and children's group.
+numbers belonging to the set [0,1], except for the third which is           4) Cognitive agents (type B) analyze and answer child's ap-
+an integer number, we can construct the matrix formed by these         pearance tests, collaborating with other agents and control and
+vector columns of learning problems of the autistic child. Thus,       design agents. They communicate with evaluation and group
+each column of the matrix contains all the column vectors of           evaluation agents, ensuring test evaluation accuracy.
+the different learning problems of a mental model.                          5) Cognitive agents (type C) monitor child movements, an-
+    Considering the previous example of a trajectory consisting        alyze movements, and use intelligent toys. They have a spatial
+of three mental models and their fuzzy sets, which in this case        model and perform tasks and communications similar to agents
+are two, corresponding to two mental problems, the matrix ob-          A and B.
+tained is (Table VI):                                                       6) Affective agents analyze a child's emotional state during
+                                                                       tests using sensor data, communicate with cognitive agents, and
+                                                                       sometimes, under clinical advice, improve their emotional state.
+
+
+
+                                                                                                                           359 | P a g e
+                                                         www.ijacsa.thesai.org
+
+===== PDF PAGE 14 / 16 =====
+                                                             (IJACSA) International Journal of Advanced Computer Science and Applications,
+                                                                                                                      Vol. 15, No. 8, 2024
+
+    7) Pedagogic agents collaborate on test demonstrations, as-         G. Results
+suming test voice or recommendations, using simple voices, an-              The information highlighted in this paper, shows that
+imals, or friendly objects to gain child confidence and interest.       DIAUTIS III is a software framework that achieves the follow-
+    8) Rule learning agents present various tests using videos,         ing objectives:
+images, or intelligent simulations, similar to cognitive agents,
+                                                                             Capable of getting for the first time the mental model of
+with tasks and communication obligations.                                     an autistic child as a fuzzy graph, by means of affective
+    9) The evaluation agent is responsible for obtaining tests,               computing and fuzzy logic.
+integrating evaluations, and defuzzing them into categories,
+while maintaining a child's cognitive and affective record and               Facilitating of the comparison of previous child diagno-
+diverse diagnosis possibilities.                                              ses and facilitating their results.
+    10) The group evaluation agent, when present, performs the               Providing a comprehensive history of each test, includ-
+same tasks as the evaluation agent but differentiates the child               ing its usage, age, and results, to understand test diffi-
+suffering from the rest of the group members.                                 culty, adequacy at specific ages, and its correlation with
+    11) The interface agent personalizes the interface based on               autism severity.
+test situations and the child's state, using elements like screen            Providing a technique for assessing learning deficits in
+color, scene background, potential pedagogic agents, messages,                autistic children that allows the degree of assimilation of
+and sounds.                                                                   a concept by a preschool child to be measured, based on
+                                                                              our KASP methodology, that already tested and used,
+F. Validation
+                                                                              allows the elaboration of the tests, based on the theory
+    Previous experience in assessing Intelligent E-learning Sys-              of serious games.
+tems [35, 36, 37], has been initially applied and enhanced to take
+into account the specific features of this platform. According to            Incorporating the application of the mathematical theory
+our methodology already established [39,39], quality assess-                  of categories to establish the formalization of the mental
+ment of DIAUTIS III has been obtained by working at two dif-                  model and several other applications.
+ferent levels: the functional evaluation level and the overall eval-
+                                                                             Evaluating the difference existing between two mental
+uation level. So far, no child has participated in the quality as-
+                                                                              models, or the trajectory of a collection of mental mod-
+sessment tests. Instead, some errors o anomalous behaviours,
+                                                                              els of the Autistic child using the metrics of the catego-
+randomly chosen, similar to those presented by autistic children,
+                                                                              ries theory.
+have been introduced as the child’s response to the tests, in order
+to simulate the diagnosis process.                                                            VI.   FUTURE WORKS
+    The first level or functional level, with a more reduced                The authors suggest using a fuzzy logic approach to establish
+scope, follows closely traditional methodologies. The following         an efficient evaluation of the KASP based learning system and
+tests have been carried out:                                            with the aid of metrics of category theory can extend the func-
+                                                                        tionalities of DIAUTIS III.
+    1) Experimental cross-check of functions (agents) and of
+auxiliary hardware: design of follow-up exercises with several              For this purpose, we suggest as future works:
+objects, language questions, social or affective behaviour, by               Layout the intensive tests for children, involving doctors,
+four groups of five observers.                                                medical equipment, schools, families, and associations.
+    2) Experimental cross-check of the design of simple tests                 This system can provide crucial aid to all individuals in-
+according to doctors' indication and initial test qualification               volved with autism, as assessed in previous assessments.
+such as: colour, object, words, questions, etc.
+                                                                             Design of normalized protocols or tests for autism diag-
+    3) Experimental cross-check of the design of collection of
+                                                                              nosis may eventually contribute to the adoption of stand-
+tests from doctor's indications by using ENT and its built-in cri-            ards, with the relevance and discriminant power of these
+teria.                                                                        tests determined by their history and results.
+    4) Experimental cross-check of the fuzzy tests evaluations
+by five observers and members of the clinical equipment.                     Enhance DIAUTIS III with new sensors, software, func-
+    5) Experimental cross-check of the tests integration into                 tionalities, diagnostic tests, and algorithms of artificial
+the category fuzzy set and into the child’s model by five clinical            intelligence, presenting a new world of possibilities due
+                                                                              to rapid technological advancements.
+equipments.
+                                                                             Use the category theory for a better, deeper, and balanced
+    The second level or overall evaluation requires a more crea-
+                                                                              understanding, of the dimensions and characteristics of
+tive approach. It includes the evaluation of four different as-
+                                                                              autism Among the many ways in which this better under-
+pects: overall functionality tested by six groups of experts and
+                                                                              standing could be achieved, it is necessary to identify
+clinical members, reliability considering that the system learn-
+                                                                              patterns, relationships, and underlying structures in the
+ing capability will allow the platform to change parameters ac-
+                                                                              behavior and cognition of autistic children.
+cording to its experience, evidential validity [40, 41, 42]. In ad-
+dition, consequential validity [43, 44].                                     Another line of future work is aimed at the analysis of
+                                                                              feelings. This is a recent research issue that opens with
+
+
+
+                                                                                                                            360 | P a g e
+                                                          www.ijacsa.thesai.org
+
+===== PDF PAGE 15 / 16 =====
+                                                                     (IJACSA) International Journal of Advanced Computer Science and Applications,
+                                                                                                                              Vol. 15, No. 8, 2024
+
+          great possibilities. So far it has been applied to the anal-               Oct. 2016,
+          ysis of the feelings contained in the written language                [8]  R. Lordan, C. Storni, and C. A. De Benedictis, “Autism Spectrum Disor-
+          that is usually sent to social networks to extract opinions                ders: Diagnosis and Treatment,” Exon Publications eBooks, Aug. 23,
+                                                                                     2021. https://www.ncbi.nlm.nih.gov/books/NBK573609/
+          and even future actions. It could also be applied to ex-
+                                                                                [9] Blázquez Hinojosa, L. Lázaro Garcia, O. Puig Navarro, E. Varela
+          tract deep motivations from the autistic child, analyze                    Bondelle, and R. Calvo Escalona, “Sensitivity and specificity of DSM-5
+          them, and even try to modify them where appropriate.                       diagnostic criteria for autism spectrum disorder in a child and adolescent
+                                                                                     sample,” Revista de Psiquiatría y Salud Mental (English Edition), vol. 14,
+                          VII. CONCLUSIONS                                           no. 4, pp. 202–211, Oct. 2021
+    Multi-agent systems with learning, fuzzy, and affective                     [10] P. N. Johnson-Laird, Mental Models. Harvard University Press, 1983.
+skills have great potential in autism diagnosis and patient assis-                   [Online].                                                          Availa-
+                                                                                     ble:http://books.google.ie/booksid=FS3zSKAfLGMC&printsec=frontco
+tance, particularly in learning, as they can help with various is-                   ver&dq=Mental+Models+Towards+a+Cognitive+Science+of+Lan-
+sues.                                                                                guage+Inference+and+Consciousness&hl=&cd=1&source=gbs_api
+                                                                                [11] Gentner, D. and A.L. Stevens, “Mental models,” 2014: Psychology Press.
+    DIAUTIS III is a platform designed to assist individuals with                    (Taylor and Francis) https://doi.org/10.4324/9781315802725
+autism, particularly in diagnosing this condition.
+                                                                                [12] Madiha Anjum, “Understanding, Formalizing, and Reconstructing Men-
+    DIAUTIS III is a diagnostic tool that considers a child's af-                    tal Models with an Online Tool for Serious Discussions,” University of
+                                                                                     Technology Sydney, Faculty of Engineering and Information Technology,
+fective and anomalous behavior to accurately diagnose and un-                        July 2022.
+derstand the severity of their illness.
+                                                                                [13] R. Bhalwankar and J. Treur, “Modeling the development of internal men-
+      DIAUTIS III is a framework that provides:                                      tal models by an adaptive network model,” Proceedings Computer Sci-
+                                                                                     ence, vol. 190, pp. 90–101, 2021,
+    1) The mathematical theory of categories constitutes an ap-                 [14] Carroll, John M., and Judith Reitman Olson. "Mental models in human-
+propriate formalism to represent the mental model of the autis-                      computer interaction." Handbook of human-computer interaction (1988):
+                                                                                     45-65.
+tic child from the blurred graph, and formulate operations such
+                                                                                [15] W. B. Rouse and N. M. Morris, “On looking into the black box: Prospects
+as CONS and TRA that allow evaluating the difference existing                        and limits in the search for mental models.,” Psychological Bulletin, vol.
+between two mental models, or the trajectory of a collection of                      100, no. 3, pp. 349–363, 1986,
+mental models of the Autistic child.                                            [16] Uchechi Bel-Ann Ordu, "The Role of Teaching and Learning Aids/Meth-
+                                                                                     ods in a Changing World," in New Challenges to Education: Lessons from
+    2) Other formalisms, such as the vector spaces, also allow                       Around the World, Vol 19, Sofia: Bulgarian Comparative Education So-
+obtaining the difference between two mental models, as it may                        ciety, 2021, pp. 210-216.
+be from the cosine of the angle formed by the vectors represent-                [17] T. Ruf and R. Ploetzner, “One click away is too far! How the presentation
+ing them.                                                                            of cognitive learning aids influences their use in multimedia learning en-
+                                                                                     vironments,” Computers in Human Behavior, vol. 38, pp. 229–239, Sep.
+    3) The vector formalism also allows a convenient imple-                          2014,
+mentation to obtain the CONS and TRA final values.                              [18] T. Zaki et al., “Towards developing a learning tool for children with au-
+However, some limitations concerning the results of the plat-                        tism,” 2017 6th International Conference on Informatics, Electronics and
+form have to be established:                                                         Vision & 2017 7th International Symposium in Computational Medical
+                                                                                     and Health Technology (ICIEV-ISCMHT), Sep. 2017,
+         DIAUTIS III cannot be applied for the study of other                  [19] T. Shine, “Help Them Shine,” Help Them Shine. https://www.helpthem-
+          syndromes besides autism.                                                  shine.com/blogs/learning-aids-for-autistic-children
+                                                                                [20] M. Alami, N. Tahiri, and F. Arriaga, “DIAUTIS: A Fuzzy and Affective
+         It works according to the DSM-V Manual, therefore the                      Multi-agent Platform for the Diagnosis of Autism,” British Journal of Ap-
+          platform has to assume all future changes advised by                       plied Science & Technology, vol. 21, no. 4, pp. 1–28, Jan. 2017,
+          APA.                                                                  [21] De Arriaga F, El Alami M., “Multi-agent platform for educational re-
+                                                                                     search on intelligent e-learning,” Journal of Advanced Technology on Ed-
+                              REFERENCES                                             ucation, 2005, vol. 1, no. 4, pp. 101-106.
+[1]   “Autism spectrum disorder (ASD) | Autism Speaks,” Autism Speaks.          [22] De Arriaga F, El Alami M., “Agents control for intelligent e-learning sys-
+      https://www.autismspeaks.org/what-autism                                       tems. Proceedings IEEE International Conference IAWTIC’05 on Intelli-
+                                                                                     gent Agents, Web Technology and ECommerce,” 2005, vol. 2, pp. 877-
+[2]   “Autism Spectrum Disorder,” National Institute of Mental Health                884.
+      (NIMH). https://www.nimh.nih.gov/health/topics/autism-spectrum-dis-
+      orders-asd                                                                [23] Laureano-Cruces AL, Ramírez J, De Arriaga F, Escarela R. “Agents con-
+                                                                                     trol in intelligent learning systems: The case of reactive characteristics.
+[3]   R. Picard, Affective Computing, Cambridge, MIT Press, 1997.
+                                                                                     Interactive Learning Environments,” vol. 14, no. 2, 2006, pp. 95-118.
+[4]   De Arriaga, M. El Alami, “Affective Computing and Intelligent Systems,”
+                                                                                [24] El-Alami, M., El-Khabbazi, S. ., Tahiri , N. ., & Arriaga, F. de . (2022).
+      Proceedings IADAT International Conference on Education e-2006, Bar-
+                                                                                     DIAUTIS II: A Multi-agent Platform for the Diagnosis of Autism and the
+      celone, 2006, pp. 115-120.
+                                                                                     Design of Serious Games. Current Overview on Science and Technology
+[5]   American Psychiatric Association, “Diagnostic and statistical manual of        Research, vol. 4, pp. 81–134. https://doi.org/10.9734/bpi/costr/v4/3088C
+      mental disorders: DSM-5,” vol. 5, no. 5, Washington, DC: American Psy-
+                                                                                [25] Tahiri N., El Alami M. “KASP: A Cognitive-Affective Methodology for
+      chiatric                       Association,                       2013.
+                                                                                     Designing Serious Learning Games,” International Journal of Advanced
+      https://doi.org/10.1176/appi.books.9780890425596
+                                                                                     Computer Science and Applications, vol 9, no 11, 2018, pp. 719-729.
+[6]   “Signs and Symptoms of Autism Spectrum Disorder,” Autism Spectrum
+                                                                                [26] N. Tahiri and M. El Alami, “A New Evaluation Technique Through Seri-
+      Disorder (ASD), Jan. 25, 2024. https://www.cdc.gov/autism/signs-symp-
+                                                                                     ous Games for Children with ASD,” International Journal of Emerging
+      toms/?CDC_AAref_Val=https://www.cdc.gov/ncbddd/autism/signs.html
+                                                                                     Technologies in Learning (iJET), vol. 15, no. 11, p. 202, Jun. 2020.
+[7]   E. Gordon-Lipkin, J. Foster, and G. Peacock, “Whittling Down the Wait
+                                                                                [27] R. Likert. (1932).A Technique for the measurement of attitudes. New
+      Time,” Pediatric Clinics of North America, vol. 63, no. 5, pp. 851–859,        York.
+
+
+
+
+                                                                                                                                              361 | P a g e
+                                                                  www.ijacsa.thesai.org
+
+===== PDF PAGE 16 / 16 =====
+                                                                     (IJACSA) International Journal of Advanced Computer Science and Applications,
+                                                                                                                              Vol. 15, No. 8, 2024
+
+[28] Carlos Polanco. (2023). Foundations of Category Theory: An Introduc-        [36] De Arriaga F, El Alami M. Guidelines for the evaluation of intelligent
+     tion to Structures, Transformations, and Applications.                           elearning systems. In Technological Advances applied to Theoretical and
+[29] Hoare, C.A.R. (1989). Notes on an Approach to Category Theory for                Practical Teaching, Iadat. 2005;142-147.
+     Computer Scientists. In: Broy, M. (eds) Constructive Methods in Compu-      [37] De Arriaga F, El Alami M. Fuzzy intelligent e-learning systems: Assess-
+     ting Science. NATO ASI Series, vol 55. Springer, Berlin, Heidelberg.             ment. Journal of Advanced Technology on Education. 2005;1(12):228-
+     https://doi.org/10.1007/978-3-642-74884-4_9.                                     233.
+[30] “Category Theory,” Aug. 29, 2019. https://plato.stanford.edu/entries/cat-   [38] De Arriaga F, El Alami M. Evaluation of Fuzzy intelligent learning sys-
+     egory-theory/                                                                    tems. In Recent Research Developments in Learning Technologies. ed:
+[31] Randall R. Holmes. (2019). Category Theory.                                      Méndez A., Mesa J., Formatex. 2005;1:109-114.
+[32] M. El Alami, S. El khabbazi, F. de Arriaga , "Autism Spectrum Disorder:     [39] El Alami M, De Arriaga F. Fuzzy assessment for affective and cognitive
+     A New Fuzzy and Affective Mental Model," Universal Journal of Public             Computing in intelligent e-learning systems. International Journal of
+     Health, Vol. 12, No. 2, pp. 383 - 395, 2024.                                     Computer Applications. 2014;100(10):40-46.
+[33] M. Colleen, M. Harker, W. L. Stone, “Comparison of the Diagnostic Cri-      [40] Van Lehn K, Martin J. Evaluation of an assessment system based on
+     teria for Autism Spectrum Disorder Across DSM-5, DSM-IV-TR, and the              Bayesian student modelling. International Journal of Artificial Intelli-
+     Individuals with Disabilities Education Act (IDEA) Definition of Autism,”        gence in Education. 1997;8: 179-22.
+     2014.                                                                       [41] Mitrovic A, Ohlsson S. Evaluation of constraint-based tutor for a database
+[34] Asperti, G. Longo, Categories, Types and Structures, Cambridge, The              language. International Journal of Artificial Intelligence in Education.
+     MIT Press, 1991.                                                                 1999;10:230-256.
+[35] Tahiri N, El Alami M. An intelligent E-learning system for autistic chil-   [42] Messick S. The interplay of evidence and consequences in the validation
+     dren: multi-agent architecture. InInternational Conference on Advanced           of performance assessment. Educational Researcher. 1994;23(2):13-23.
+     Intelligent Systems for SustainableDevelopment 2019 Jul 8,. 83-90..         [43] Messick S. Validity, in educational measurement. Linn R. (ed.), Macmil-
+     Springer.                                                                        lan. 1989;13-103.
+                                                                                 [44] Linn RL, et al. Complex, performance-based assessment: Expectations
+                                                                                      andvalidation criteria. Educational Researcher.1991;20(8):15-21.
+
+
+
+
+                                                                                                                                               362 | P a g e
+                                                                  www.ijacsa.thesai.org

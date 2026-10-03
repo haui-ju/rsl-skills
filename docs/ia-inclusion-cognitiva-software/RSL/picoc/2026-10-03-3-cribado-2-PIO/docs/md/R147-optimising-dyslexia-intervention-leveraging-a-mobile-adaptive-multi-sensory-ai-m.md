@@ -1,0 +1,1105 @@
+# JIM Interactive Mobile Technologies
+
+> Fuente PDF: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · técnica **locator index** (página + ancla) + chunks Graphify
+
+## Metadata
+- Stem: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m`
+- PDF: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf`
+- DOI: `10.3991/ijim.v20i09.61571`
+- Pages: `15`
+- Structured_at: `2026-10-03T23:23:13+00:00`
+- Technique: `pdf-page-locators + heading-chunks`
+
+## Locator index (qué hay y en qué página del PDF)
+
+| Kind | Label | PDF page | MD anchor |
+|------|-------|----------|-----------|
+| abstract | Abstract / blurb | 1 | `#abstract` |
+| section | 1 INTRODUCTION | 1 | `#p1-1-introduction` |
+| section | 2 MATERIALS AND METHODS | 3 | `#p3-2-materials-and-methods` |
+| section | 2.1 Research design | 3 | `#p3-2-1-research-design` |
+| section | 2.2 Participants and research setting | 5 | `#p5-2-2-participants-and-research-setting` |
+| section | 3 RESULT AND DISCUSSION | 7 | `#p7-3-result-and-discussion` |
+| section | 3.1 System feasibility and validity | 7 | `#p7-3-1-system-feasibility-and-validity` |
+| section | 3.2 Usability results | 9 | `#p9-3-2-usability-results` |
+| section | 3.3 Learning effectiveness results | 10 | `#p10-3-3-learning-effectiveness-results` |
+| section | 3.4 Learning effectiveness results | 10 | `#p10-3-4-learning-effectiveness-results` |
+| section | 4 DISCUSSION | 11 | `#p11-4-discussion` |
+| section | 5 CONCLUSION | 12 | `#p12-5-conclusion` |
+| section | 6 ACKNOWLEDGMENT | 12 | `#p12-6-acknowledgment` |
+| section | 7 REFERENCES | 12 | `#p12-7-references` |
+| section | 8 AUTHORS | 14 | `#p14-8-authors` |
+| concept | phonological dyslexia | 1 | `#concept-phonological-dyslexia` |
+| concept | adaptive artificial intelligence (AI) | 1 | `#concept-adaptive-artificial-intelligence-ai` |
+| concept | speech analytics | 1 | `#concept-speech-analytics` |
+| concept | mobile learning | 1 | `#concept-mobile-learning` |
+| concept | cognitive rehabilitation | 1 | `#concept-cognitive-rehabilitation` |
+| concept | R147 | ? | `#concept-r147` |
+| concept | optimising | ? | `#concept-optimising` |
+| concept | dyslexia | ? | `#concept-dyslexia` |
+| concept | intervention | 1 | `#concept-intervention` |
+| concept | leveraging | ? | `#concept-leveraging` |
+| concept | mobile | ? | `#concept-mobile` |
+| concept | adaptive | ? | `#concept-adaptive` |
+| concept | multi | ? | `#concept-multi` |
+| concept | sensory | ? | `#concept-sensory` |
+| finding | Conventional dyslexia interventions are often non-adaptive, therapist-dependent, Andhika H… | 1 | `#finding-conventional-dyslexia-interventions-are` |
+| finding | The study employed a research and development (R&D) approach using the ADDIE 2 Universitas… | 1 | `#finding-the-study-employed-a-research-and-develo` |
+| finding | Bandung, Indonesia Participants were elementary school learners diagnosed with phonologica… | 1 | `#finding-bandung-indonesia-participants-were-ele` |
+| finding | Data were collected through expert validation, usability questionnaires, phono- logical re… | 1 | `#finding-data-were-collected-through-expert-valid` |
+| page | p.1: Online-Journals.org | 1 | `#pdf-p1` |
+| page | p.2: Optimising Dyslexia Intervention Leveraging a Mobile Adaptive Multi-Sensory AI Model with  | 2 | `#pdf-p2` |
+| page | p.3: analytics using STT and phonological error detection, and an adaptive self-training | 3 | `#pdf-p3` |
+| page | p.4: Optimising Dyslexia Intervention Leveraging a Mobile Adaptive Multi-Sensory AI Model with  | 4 | `#pdf-p4` |
+| page | p.5: validity and practical relevance within inclusive education contexts [20]. The key | 5 | `#pdf-p5` |
+| page | p.6: Optimising Dyslexia Intervention Leveraging a Mobile Adaptive Multi-Sensory AI Model with  | 6 | `#pdf-p6` |
+| page | p.7: phases: pre-intervention (baseline assessment), intervention implementation, and | 7 | `#pdf-p7` |
+| page | p.8: Optimising Dyslexia Intervention Leveraging a Mobile Adaptive Multi-Sensory AI Model with  | 8 | `#pdf-p8` |
+| page | p.9: specialists in educational technology, speech and language processing, and inclusive | 9 | `#pdf-p9` |
+| page | p.10: Optimising Dyslexia Intervention Leveraging a Mobile Adaptive Multi-Sensory AI Model with  | 10 | `#pdf-p10` |
+| page | p.11: during pre-intervention and post-intervention sessions. These metrics provide | 11 | `#pdf-p11` |
+| page | p.12: Optimising Dyslexia Intervention Leveraging a Mobile Adaptive Multi-Sensory AI Model with  | 12 | `#pdf-p12` |
+| page | p.13: [3] C. Dyah, S. Indrawati, P. Ninghardjanti, C. Huda, and A. Dirgatama, “The effect of pra | 13 | `#pdf-p13` |
+| page | p.14: Optimising Dyslexia Intervention Leveraging a Mobile Adaptive Multi-Sensory AI Model with  | 14 | `#pdf-p14` |
+| page | p.15: specialising in community education strategies and instructional development. With | 15 | `#pdf-p15` |
+
+## Abstract
+<a id="abstract"></a>
+
+Harisman1 , Lili Dasa Phonological dyslexia is a neurodevelopmental learning disorder characterised by persistent Putri1, Efi Fitriana2, Rezki difficulties in phoneme–grapheme mapping, phonological decoding, and pronunciation Ashriyana Sulistiobudi2, accuracy. Conventional dyslexia interventions are often non-adaptive, therapist-dependent, Andhika Herayono1 and limited in scalability, reducing their effectiveness in inclusive education contexts. This study aims to develop and evaluate a mobile adaptive multi-sensory artificial intelligence 1 Universitas Negeri Padang, (AI) model integrated with real-time speech analytics to optimise phonological dyslexia inter- Padang, Indonesia vention. The study employed a research and development (R&D) approach using the ADDIE 2 Universitas Padjadjaran, framework, combined with a quasi-experimental pre- and post-test control group design. Bandung, Indonesia Participants were elementary school learners diagnosed with phonological dyslexia. The pro- posed system integrates multi-sensory phonological training, adaptive difficulty adjustment, resmidarni@ft.unp.ac.id and real-time speech analytics to provide immediate feedback and personalised learning pathways. Data were collected through expert validation, usability questionnaires, phono- logical reading tests, and speech analytics metrics, including phoneme error rate (PER) and word error rate (WER).
+
+## Keywords
+
+- phonological dyslexia
+- adaptive artificial intelligence (AI)
+- speech analytics
+- mobile learning
+- cognitive rehabilitation
+
+## Concept index (graph hooks + página)
+
+<a id="concept-phonological-dyslexia"></a>
+### [PDF p.1] Concept: phonological dyslexia
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **1**
+
+<a id="concept-adaptive-artificial-intelligence-ai"></a>
+### [PDF p.1] Concept: adaptive artificial intelligence (AI)
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **1**
+
+<a id="concept-speech-analytics"></a>
+### [PDF p.1] Concept: speech analytics
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **1**
+
+<a id="concept-mobile-learning"></a>
+### [PDF p.1] Concept: mobile learning
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **1**
+
+<a id="concept-cognitive-rehabilitation"></a>
+### [PDF p.1] Concept: cognitive rehabilitation
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **1**
+
+<a id="concept-r147"></a>
+### [PDF p.?] Concept: R147
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **?**
+
+<a id="concept-optimising"></a>
+### [PDF p.?] Concept: optimising
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **?**
+
+<a id="concept-dyslexia"></a>
+### [PDF p.?] Concept: dyslexia
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **?**
+
+<a id="concept-intervention"></a>
+### [PDF p.1] Concept: intervention
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **1**
+
+<a id="concept-leveraging"></a>
+### [PDF p.?] Concept: leveraging
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **?**
+
+<a id="concept-mobile"></a>
+### [PDF p.?] Concept: mobile
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **?**
+
+<a id="concept-adaptive"></a>
+### [PDF p.?] Concept: adaptive
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **?**
+
+<a id="concept-multi"></a>
+### [PDF p.?] Concept: multi
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **?**
+
+<a id="concept-sensory"></a>
+### [PDF p.?] Concept: sensory
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **?**
+
+
+## Findings index (graph hooks + página)
+
+<a id="finding-conventional-dyslexia-interventions-are"></a>
+### [PDF p.1] Finding: Conventional dyslexia interventions are often non-adaptive, therapist-dependent, Andhika Herayono1 and limited in scalability, reducing their effectiveness in inclusive education contexts.
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **1**
+
+<a id="finding-the-study-employed-a-research-and-develo"></a>
+### [PDF p.1] Finding: The study employed a research and development (R&D) approach using the ADDIE 2 Universitas Padjadjaran, framework, combined with a quasi-experimental pre- and post-test control group design.
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **1**
+
+<a id="finding-bandung-indonesia-participants-were-ele"></a>
+### [PDF p.1] Finding: Bandung, Indonesia Participants were elementary school learners diagnosed with phonological dyslexia.
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **1**
+
+<a id="finding-data-were-collected-through-expert-valid"></a>
+### [PDF p.1] Finding: Data were collected through expert validation, usability questionnaires, phono- logical reading tests, and speech analytics metrics, including phoneme error rate (PER) and word error rate (WER).
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **1**
+
+
+## Relevance hooks
+### Theme relevance: software engineering and accessibility
+### Theme relevance: cognitive accessibility and neurodiversity
+### Theme relevance: evaluation metrics and WCAG
+
+## Sections (detected in PDF)
+
+<a id="p1-1-introduction"></a>
+### [PDF p.1] Section: 1 INTRODUCTION
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **1** · ancla `#p1-1-introduction`
+
+<a id="p3-2-materials-and-methods"></a>
+### [PDF p.3] Section: 2 MATERIALS AND METHODS
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **3** · ancla `#p3-2-materials-and-methods`
+
+<a id="p3-2-1-research-design"></a>
+### [PDF p.3] Section: 2.1 Research design
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **3** · ancla `#p3-2-1-research-design`
+
+<a id="p5-2-2-participants-and-research-setting"></a>
+### [PDF p.5] Section: 2.2 Participants and research setting
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **5** · ancla `#p5-2-2-participants-and-research-setting`
+
+<a id="p7-3-result-and-discussion"></a>
+### [PDF p.7] Section: 3 RESULT AND DISCUSSION
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **7** · ancla `#p7-3-result-and-discussion`
+
+<a id="p7-3-1-system-feasibility-and-validity"></a>
+### [PDF p.7] Section: 3.1 System feasibility and validity
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **7** · ancla `#p7-3-1-system-feasibility-and-validity`
+
+<a id="p9-3-2-usability-results"></a>
+### [PDF p.9] Section: 3.2 Usability results
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **9** · ancla `#p9-3-2-usability-results`
+
+<a id="p10-3-3-learning-effectiveness-results"></a>
+### [PDF p.10] Section: 3.3 Learning effectiveness results
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **10** · ancla `#p10-3-3-learning-effectiveness-results`
+
+<a id="p10-3-4-learning-effectiveness-results"></a>
+### [PDF p.10] Section: 3.4 Learning effectiveness results
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **10** · ancla `#p10-3-4-learning-effectiveness-results`
+
+<a id="p11-4-discussion"></a>
+### [PDF p.11] Section: 4 DISCUSSION
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **11** · ancla `#p11-4-discussion`
+
+<a id="p12-5-conclusion"></a>
+### [PDF p.12] Section: 5 CONCLUSION
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **12** · ancla `#p12-5-conclusion`
+
+<a id="p12-6-acknowledgment"></a>
+### [PDF p.12] Section: 6 ACKNOWLEDGMENT
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **12** · ancla `#p12-6-acknowledgment`
+
+<a id="p12-7-references"></a>
+### [PDF p.12] Section: 7 REFERENCES
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **12** · ancla `#p12-7-references`
+
+<a id="p14-8-authors"></a>
+### [PDF p.14] Section: 8 AUTHORS
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **14** · ancla `#p14-8-authors`
+
+
+## Page chunks (texto por página del PDF)
+
+_Cada heading es un nodo Graphify. El label incluye la página para volver al PDF sin releer todo._
+
+<a id="pdf-p1"></a>
+### [PDF p.1] Online-Journals.org
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **1** / 15
+
+Online-Journals.org
+
+
+    JIM Interactive Mobile Technologies
+                              International Journal of
+
+
+
+                                                                                       iJIM | eISSN: 1865-7923 | Vol. 20 No. 9 (2026) |
+
+                                                                                                                 https://doi.org/10.3991/ijim.v20i09.61571
+
+
+
+PAPER
+
+Optimising Dyslexia Intervention Leveraging
+a Mobile Adaptive Multi-Sensory AI Model with
+Real-Time Speech Analytic
+
+Resmi Darni1(*), Yulyanti                       ABSTRACT
+Harisman1 , Lili Dasa                           Phonological dyslexia is a neurodevelopmental learning disorder characterised by persistent
+Putri1, Efi Fitriana2, Rezki                    difficulties in phoneme–grapheme mapping, phonological decoding, and pronunciation
+Ashriyana Sulistiobudi2,                        accuracy. Conventional dyslexia interventions are often non-adaptive, therapist-dependent,
+Andhika Herayono1                               and limited in scalability, reducing their effectiveness in inclusive education contexts. This
+                                                study aims to develop and evaluate a mobile adaptive multi-sensory artificial intelligence
+1
+ Universitas Negeri Padang,
+                                                (AI) model integrated with real-time speech analytics to optimise phonological dyslexia inter-
+Padang, Indonesia
+                                                vention. The study employed a research and development (R&D) approach using the ADDIE
+2
+ Universitas Padjadjaran,                       framework, combined with a quasi-experimental pre- and post-test control group design.
+Bandung, Indonesia                              Participants were elementary school learners diagnosed with phonological dyslexia. The pro-
+                                                posed system integrates multi-sensory phonological training, adaptive difficulty adjustment,
+resmidarni@ft.unp.ac.id
+                                                and real-time speech analytics to provide immediate feedback and personalised learning
+                                                pathways. Data were collected through expert validation, usability questionnaires, phono-
+                                                logical reading tests, and speech analytics metrics, including phoneme error rate (PER) and
+                                                word error rate (WER).
+
+                                                KEYWORDS
+                                                phonological dyslexia, adaptive artificial intelligence (AI), speech analytics, mobile learning,
+                                                cognitive rehabilitation
+
+
+
+
+                                                1           INTRODUCTION
+
+                                                   Phonological dyslexia is one of the most prevalent cognitive reading disor-
+                                                ders among primary school children worldwide [1]. This neurobiological condi-
+                                                tion is characterised by significant difficulties in associating sounds (phonemes)
+                                                with letter symbols (graphemes), which ultimately hinders reading fluency
+
+
+
+
+    Darni, R., Harisman, Y., Putri, L. D., Fitriana, E., Sulistiobudi, R. A., Herayono, A. (2026). Optimising Dyslexia Intervention Leveraging a Mobile Adaptive
+    Multi-Sensory AI Model with Real-Time Speech Analytic. International Journal of Interactive Mobile Technologies (iJIM), 20(9), pp. 124–138.
+    https://doi.org/10.3991/ijim.v20i09.61571
+    Article submitted 2026-01-04. Revision uploaded 2026-03-11. Final acceptance 2026-03-19.
+    © 2026 by the authors of this article. Published under CC-BY.
+
+
+    124       International Journal of Interactive Mobile Technologies (iJIM)                                                                 iJIM | Vol. 20 No. 9 (2026)
+
+<a id="pdf-p2"></a>
+### [PDF p.2] Optimising Dyslexia Intervention Leveraging a Mobile Adaptive Multi-Sensory AI Model with Real-Time Speech Analytic
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **2** / 15
+
+Optimising Dyslexia Intervention Leveraging a Mobile Adaptive Multi-Sensory AI Model with Real-Time Speech Analytic
+
+
+
+
+                                and comprehension. The prevalence of this disorder reaches 7–10% of the global
+                                population, making it a critical issue that, if left unaddressed, can trigger academic
+                                decline, low self-esteem, and an increased risk of school dropout [2]. In Indonesia,
+                                the provision of rehabilitation services for dyslexic students still faces major chal-
+                                lenges, particularly regarding the limited number of expert therapists and the
+                                minimal utilisation of artificial intelligence-based technology within inclusive edu-
+                                cation. Phonological dyslexia is a specific neurodevelopmental learning disorder
+                                characterised by persistent difficulties in phoneme awareness, phoneme–grapheme
+                                correspondence, and decoding unfamiliar words, despite adequate intelligence
+                                and educational exposure [3]. This condition represents one of the most prevalent
+                                forms of dyslexia, particularly among elementary school learners, with reported
+                                global prevalence rates ranging from 7% to 10%. Learners with phonological dys-
+                                lexia typically struggle to recognise and manipulate speech sounds, leading to slow,
+                                inaccurate reading and reduced comprehension. If not addressed through effective
+                                intervention, these difficulties may persist into adolescence and adulthood, neg-
+                                atively affecting academic achievement, psychological well-being, and long-term
+                                socio-economic outcomes [4]. While such approaches may yield improvements,
+                                they are frequently constrained by limited availability of trained specialists, high
+                                intervention costs, and low scalability. Moreover, conventional methods tend to
+                                apply uniform training strategies, offering minimal personalisation and delayed
+                                feedback, which may reduce learner engagement and limit cognitive rehabilitation
+                                effectiveness [5].
+                                    Recent advancements in educational technology and artificial intelligence (AI)
+                                have opened new possibilities for addressing these limitations [6]. In particular,
+                                speech-based technologies such as text-to-speech (TTS) and speech-to-text (STT)
+                                systems have been increasingly explored to support phonological awareness and
+                                reading development [7]. Several digital interventions and serious games for dys-
+                                lexia have demonstrated that auditory stimulation and interactive feedback can
+                                improve phoneme recognition and reading fluency. However, many existing sys-
+                                tems remain non-adaptive, providing fixed levels of difficulty regardless of indi-
+                                vidual learner progress and offering limited real-time analysis of phonological
+                                errors [8]. Research in cognitive rehabilitation and learning sciences consistently
+                                emphasises that adaptive training, immediate feedback, and personalised scaf-
+                                folding are essential for strengthening phonological processing pathways in the
+                                brain [9].
+                                    Speech analytics, supported by AI-based signal processing and pattern recogni-
+                                tion, offers a promising solution to this challenge [10]. By analysing acoustic features
+                                such as phoneme accuracy, articulation duration, and error patterns, speech analyt-
+                                ics enables objective, real-time assessment of learners’ pronunciation performance.
+                                When integrated into an adaptive learning system, these analytics can drive auto-
+                                matic adjustment of task difficulty, selection of appropriate stimuli, and delivery of
+                                corrective feedback tailored to individual needs [11]. Inclusive education services
+                                often face shortages of specialised therapists and lack digital tools designed specif-
+                                ically for phonological rehabilitation [12]. However, for mobile interventions to be
+                                effective, they must move beyond static content delivery and incorporate adaptive,
+                                data-driven rehabilitation models [13]. To address these challenges, this study pro-
+                                poses a Mobile Adaptive Multi-Sensory AI Model with Real-Time Speech Analytics
+                                designed to optimise dyslexia intervention for learners with phonological dyslexia.
+                                The proposed model integrates auditory simulation through TTS, real-time speech
+
+
+
+
+iJIM | Vol. 20 No. 9 (2026)                                                           International Journal of Interactive Mobile Technologies (iJIM)   125
+
+<a id="pdf-p3"></a>
+### [PDF p.3] analytics using STT and phonological error detection, and an adaptive self-training
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **3** / 15
+
+Darni et al.
+
+
+
+
+                                                 analytics using STT and phonological error detection, and an adaptive self-training
+                                                 engine that dynamically adjusts training difficulty based on learner performance. By
+                                                 combining visual, auditory, and interactive feedback, the system aims to strengthen
+                                                 phonological awareness while reducing cognitive overload and increasing learner
+                                                 autonomy [14].
+                                                     Furthermore, the inclusion of monitoring features allows teachers and therapists
+                                                 to track learner development and adjust intervention strategies when necessary.
+                                                 The novelty of this study lies in the integration of four key elements within a single
+                                                 mobile platform: (1) adaptive self-training logic, (2) multi-sensory phonological stim-
+                                                 ulation, (3) real-time speech analytics, and (4) inclusive, learner-centred design. To
+                                                 the best of our knowledge, this study represents one of the first efforts in Indonesia
+                                                 to develop and empirically evaluate a mobile AI-based adaptive model specifically
+                                                 targeting phonological dyslexia rehabilitation [15]. Accordingly, the objectives of this
+                                                 study are threefold: (1) to develop a valid and practical mobile adaptive multi-sensory
+                                                 AI model for phonological dyslexia intervention, (2) to implement the model within
+                                                 a user-friendly mobile application integrated with real-time speech analytics, and
+                                                 (3) to evaluate the effectiveness of the proposed system in improving phonological
+                                                 reading performance among elementary school learners with dyslexia. By achiev-
+                                                 ing these objectives, this study seeks to contribute both theoretically and practically
+                                                 to the fields of inclusive education, educational technology, and AI-assisted cognitive
+                                                 rehabilitation [16].
+
+
+                                                 2           MATERIALS AND METHODS
+
+                                                 2.1         Research design
+
+                                                    This study adopted a developmental–experimental research design integrating
+                                                 Research and Development (R&D) with a quasi-experimental approach. The design
+                                                 was selected to address two primary objectives: developing a mobile adaptive
+                                                 multi-sensory AI model for phonological dyslexia intervention and empirically evalu-
+                                                 ating its effectiveness. The ADDIE framework guided the development process, while
+                                                 a pretest–posttest control group design assessed intervention outcomes [17]. The
+                                                 R&D approach enabled a systematic process of designing, implementing, and
+                                                 refining the proposed intervention model to ensure alignment with pedagogical
+                                                 principles, cognitive rehabilitation theory, and technological feasibility. The ADDIE
+                                                 framework, consisting of the analyse, design, develop, implement, and evaluate
+                                                 phases, was employed due to its flexibility, iterative structure, and widespread
+                                                 use in educational technology research, particularly for adaptive and learner-
+                                                 centred systems. To evaluate the effectiveness of the developed model, a quasi-
+                                                 experimental pretest–posttest control group design was embedded within the
+                                                 R&D framework [18]. This design facilitated a direct comparison of phonological
+                                                 reading outcomes between learners who used the adaptive AI-based intervention
+                                                 (experimental group) and those who received conventional phonological instruc-
+                                                 tion (control group). By integrating experimental evaluation into the development
+                                                 process, the study moves beyond product development and provides empirical
+                                                 evidence of learning impact [19]. The overall research design integrating the R&D
+                                                 approach, the ADDIE framework, and the quasi-experimental design is illustrated
+                                                 in Figure 1.
+
+
+
+
+   126         International Journal of Interactive Mobile Technologies (iJIM)                                            iJIM | Vol. 20 No. 9 (2026)
+
+<a id="pdf-p4"></a>
+### [PDF p.4] Optimising Dyslexia Intervention Leveraging a Mobile Adaptive Multi-Sensory AI Model with Real-Time Speech Analytic
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **4** / 15
+
+Optimising Dyslexia Intervention Leveraging a Mobile Adaptive Multi-Sensory AI Model with Real-Time Speech Analytic
+
+
+
+
+                                                                      Fig. 1. Research design mind map
+
+                                   The research design emphasises adaptive cognitive rehabilitation, in which inter-
+                                vention difficulty is dynamically adjusted based on learners’ real-time performance
+                                derived from speech analytics. This design is particularly suitable for phonological
+                                dyslexia, a condition characterised by heterogeneous error patterns and varying
+                                levels of phonological processing deficits. By integrating adaptive system develop-
+                                ment with controlled effectiveness testing, the research design ensures both internal
+
+
+
+iJIM | Vol. 20 No. 9 (2026)                                                           International Journal of Interactive Mobile Technologies (iJIM)   127
+
+<a id="pdf-p5"></a>
+### [PDF p.5] validity and practical relevance within inclusive education contexts [20]. The key
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **5** / 15
+
+Darni et al.
+
+
+
+
+                                                 validity and practical relevance within inclusive education contexts [20]. The key
+                                                 components of the research design, including the research type, development
+                                                 model, experimental design, variables, participants, and data types, are summarised
+                                                 in Table 1.
+
+                                                                                              Table 1. Research design framework
+
+                                                                     Component                                                 Description
+                                                   Research Type                                  R&D combined with quasi-experimental design
+                                                   Development Model                              ADDIE
+                                                   Experimental Design                            Pre- and post-test control group
+                                                   Independent Variable                           Mobile adaptive AI-based dyslexia intervention
+                                                   Dependent Variables                            Phonological accuracy, phoneme error rate
+                                                   Participants                                   Elementary learners with phonological dyslexia
+                                                   Data Types                                     Quantitative and qualitative
+
+
+
+                                                 2.2         Participants and research setting
+
+                                                     The participants of this study consisted of elementary school learners diag-
+                                                 nosed with phonological dyslexia, selected using a purposive sampling technique.
+                                                 Participant selection was carried out in collaboration with professional therapists
+                                                 and inclusive education practitioners to ensure that all learners met established
+                                                 diagnostic criteria for phonological dyslexia. These criteria included persistent dif-
+                                                 ficulties in phoneme awareness, phoneme–grapheme correspondence, and phono-
+                                                 logical decoding [21].
+                                                     A total of 20 learners participated in the field implementation phase. Participants
+                                                 were divided into an experimental group receiving the adaptive AI-based interven-
+                                                 tion and a control group following conventional phonological instruction. All partic-
+                                                 ipants had normal or above-average intelligence and no sensory impairments. The
+                                                 study was conducted in two main settings. The first was the Educational Technology
+                                                 Development Laboratory at Universitas Negeri Padang, which supported system
+                                                 development and technical validation. The second was the Inclusive Education and
+                                                 Disability Service Unit of Padang City, serving as the field implementation site [22].
+                                                 The demographic and educational characteristics of the research participants,
+                                                 including age range, grade level, dyslexia type, and group assignment, are presented
+                                                 in Table 2.
+
+                                                                                      Table 2. Characteristic of research participants
+
+                                                                             Characteristic                                          Description
+                                                   Total participants                                            20 learners
+                                                   Age range                                                     7–10 years
+                                                   Grade level                                                   Grades 2–4
+                                                   Dyslexia type                                                 Phonological dyslexia
+                                                   Experimental group                                            10 learners
+                                                   Control group                                                 10 learners
+
+
+
+   128         International Journal of Interactive Mobile Technologies (iJIM)                                                                     iJIM | Vol. 20 No. 9 (2026)
+
+<a id="pdf-p6"></a>
+### [PDF p.6] Optimising Dyslexia Intervention Leveraging a Mobile Adaptive Multi-Sensory AI Model with Real-Time Speech Analytic
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **6** / 15
+
+Optimising Dyslexia Intervention Leveraging a Mobile Adaptive Multi-Sensory AI Model with Real-Time Speech Analytic
+
+
+
+
+                                2.3     Development procedure (ADDIE model), data collection and data analysis
+
+                                    To guide the systematic development of the proposed mobile adaptive multi-
+                                sensory AI intervention, this study adopted the ADDIE instructional design model,
+                                which consists of five iterative phases: analyse, design, develop, implement, and
+                                evaluate. The ADDIE model was selected due to its structured yet flexible nature,
+                                making it particularly suitable for educational technology research that integrates
+                                pedagogical design, cognitive rehabilitation principles, and artificial intelligence–
+                                based systems. In the Analysis phase, learner characteristics, phonological dyslexia
+                                profiles, and limitations of existing intervention approaches were identified through
+                                literature review, field observations, and expert consultations [23]. The Design phase
+                                focused on constructing the adaptive learning architecture, defining system work-
+                                flows, and developing user interface and interaction designs tailored to learners with
+                                dyslexia. During the Develop phase, the conceptual design was implemented into
+                                a functional mobile application integrating speech analytics, auditory simulation,
+                                and adaptive training mechanisms [24]. The systematic development procedure of
+                                the proposed mobile adaptive multi-sensory AI intervention, following the ADDIE
+                                instructional design model, is illustrated in Figure 2.
+
+
+
+
+                                                                        Fig. 2. ADDIE model mind map
+
+                                   Data collection in this study was designed to comprehensively capture both
+                                learning outcomes and system quality of the proposed mobile adaptive multi-
+                                sensory AI intervention. To achieve this objective, the study employed a mixed-
+                                methods data collection strategy, integrating quantitative performance measures
+                                with qualitative evaluative data. Quantitative data were collected to measure
+                                changes in learners’ phonological reading abilities before and after the interven-
+                                tion, as well as to evaluate system performance and usability. These data provide
+                                objective evidence of intervention effectiveness and technical feasibility. Qualitative
+                                data were collected to complement quantitative findings by capturing expert judge-
+                                ments, user experiences, and contextual insights related to system implementation
+                                in inclusive education settings. Data collection was conducted during three main
+
+
+iJIM | Vol. 20 No. 9 (2026)                                                           International Journal of Interactive Mobile Technologies (iJIM)   129
+
+<a id="pdf-p7"></a>
+### [PDF p.7] phases: pre-intervention (baseline assessment), intervention implementation, and
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **7** / 15
+
+Darni et al.
+
+
+
+
+                                                 phases: pre-intervention (baseline assessment), intervention implementation, and
+                                                 post-intervention evaluation [25].
+                                                     Data collection. Data collection in this study employed a mixed-methods
+                                                 approach to capture both learning outcomes and system quality of the adaptive
+                                                 multi-sensory AI intervention. Quantitative data were obtained through phonologi-
+                                                 cal reading assessments and speech analytics metrics, including phoneme accuracy,
+                                                 phoneme error rate (PER), word error rate (WER), and articulation duration. These
+                                                 measurements were collected during pre-intervention and post-intervention phases
+                                                 to evaluate improvements in learners’ phonological performance.
+                                                     In addition, system-related data were collected through expert validation instru-
+                                                 ments and usability questionnaires. Expert validation involved specialists in edu-
+                                                 cational technology, speech processing, and inclusive education, while usability
+                                                 data were gathered from learners and therapists using Likert-scale questionnaires.
+                                                 Observational data were also collected to support quantitative findings [26]. The
+                                                 instruments and indicators used for data collection, including learning outcomes,
+                                                 system quality, and expert validation measures, are detailed in Table 3.
+
+                                                                                 Table 3. Instrument indicators for data collection
+
+                                                                Aspect                        Indicator                        Measurement Method
+                                                   Learning Outcomes             Phoneme accuracy, PER, WER             Speech analytics and reading tests
+                                                   Learning Outcomes             Reading fluency                        Syllables per minute
+                                                   System Quality                Functional suitability                 Black-box testing
+                                                   System Quality                Usability                              Likert-scale questionnaire
+                                                   Expert Validation             Content & technical validity           Expert judgement
+
+
+                                                    Data analysis. Data analysis was conducted using descriptive and inferential
+                                                 statistical techniques. Functional suitability was calculated using a Guttman scale
+                                                 to determine the proportion of successfully implemented system features. Expert
+                                                 validity was analysed using Aiken’s V coefficient, while usability was assessed using
+                                                 percentage-based Likert-scale analysis.
+
+                                                 •     Functional Suitability Index: X = PI
+                                                 •     Aiken’s V for expert validity: V = Σs/[n(c − 1)]
+                                                 •     Usability Percentage: Usability (%) = (Obtained Score/Maximum Score) × 100%
+                                                 •     Learning effectiveness was evaluated by comparing pretest and posttest scores
+                                                       using a paired-sample t-test at a significance level of 0.05. Speech analytics per-
+                                                       formance was further analysed using PER and WER metrics. PER/WER formula:
+                                                       PER = (S + D + I)/N
+
+
+                                                 3           RESULT AND DISCUSSION
+
+                                                 3.1         System feasibility and validity
+
+                                                    System feasibility and validity evaluation were conducted to ensure that the
+                                                 developed mobile adaptive multi-sensory AI intervention met predefined func-
+                                                 tional, technical, and pedagogical requirements prior to effectiveness testing. This
+                                                 evaluation stage is critical in research and development–based studies, as it verifies
+
+
+
+   130         International Journal of Interactive Mobile Technologies (iJIM)                                                                 iJIM | Vol. 20 No. 9 (2026)
+
+<a id="pdf-p8"></a>
+### [PDF p.8] Optimising Dyslexia Intervention Leveraging a Mobile Adaptive Multi-Sensory AI Model with Real-Time Speech Analytic
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **8** / 15
+
+Optimising Dyslexia Intervention Leveraging a Mobile Adaptive Multi-Sensory AI Model with Real-Time Speech Analytic
+
+
+
+
+                                whether the system operates as intended and is suitable for implementation in real
+                                educational settings.
+                                   Figure 3 presents the application interface outputs of the Baca Lexia mobile
+                                system, illustrating the progression of phonological training from single-syllable to
+                                two-syllable and three-syllable reading tasks. These interface outputs demonstrate
+                                how the proposed adaptive multi-sensory AI system operationalises phonological
+                                dyslexia intervention through structured task sequencing, auditory reinforcement,
+                                and learner interaction. The interface design reflects a gradual increase in phono-
+                                logical complexity, which is essential for learners with phonological dyslexia, who
+                                typically experience difficulties when processing multi-syllabic words.
+
+
+
+
+                                                        Fig. 3. Application interface results for phonological training
+
+                                    The application interface results confirm that the developed system successfully
+                                implements a progressive phonological training structure, moving from simple to
+                                more complex syllabic forms. The consistent placement of the audio playback fea-
+                                ture across all training levels ensures continuity of auditory reinforcement, which is
+                                critical for learners with phonological dyslexia. The visual consistency across inter-
+                                faces minimises extraneous cognitive load, allowing learners to focus on phonologi-
+                                cal processing rather than interface navigation. Additionally, the clear segmentation
+                                of syllables and the use of familiar imagery support phonological awareness and
+                                pronunciation accuracy. Overall, the interface outputs demonstrate that the system
+                                is not only functionally operational but also pedagogically aligned with dyslexia
+                                intervention strategies. These visual results provide concrete evidence that the adap-
+                                tive multi-sensory AI model has been effectively translated into a practical mobile
+                                learning application, complementing the quantitative findings on usability, learning
+                                effectiveness, and speech analytics performance reported in previous sections.
+                                    Feasibility assessment focused on functional suitability, examining whether all
+                                core system features such as speech analytics, adaptive difficulty adjustment, and
+                                multi-sensory interaction were successfully implemented and operated without crit-
+                                ical errors. Validity assessment was conducted through expert judgement, involving
+
+
+iJIM | Vol. 20 No. 9 (2026)                                                           International Journal of Interactive Mobile Technologies (iJIM)   131
+
+<a id="pdf-p9"></a>
+### [PDF p.9] specialists in educational technology, speech and language processing, and inclusive
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **9** / 15
+
+Darni et al.
+
+
+
+
+                                                 specialists in educational technology, speech and language processing, and inclusive
+                                                 education. Expert validation aimed to determine the appropriateness, accuracy, and
+                                                 relevance of the system from both technical and pedagogical perspectives shown
+                                                 in Table 4. The results of expert validation assessing the educational, technical,
+                                                 and inclusive design aspects of the adaptive multi-sensory AI system are presented
+                                                 in Table 4.
+
+                                                                            Table 4. Expert validity results of the adaptive multi-sensory AI system
+
+                                                             Validator Domain                    Number of Items               Aiken’s V           Validity Category
+                                                   Educational Technology Expert                          12                     0.89              High validity
+                                                   Speech and Language Expert                             10                     0.87              High validity
+                                                   Inclusive Education Expert                             10                     0.90              High validity
+                                                   Overall Validity                                       32                     0.887             High validity
+
+
+                                                    The expert validity results indicate that the developed system achieved a high
+                                                 level of validity across all expert domains, with Aiken’s V values exceeding the com-
+                                                 monly accepted threshold of 0.80. The highest validity score was obtained from the
+                                                 inclusive education expert, indicating strong alignment with the characteristics and
+                                                 needs of learners with phonological dyslexia.
+                                                    Validation by speech and language experts confirms that the speech analytics
+                                                 and phonological feedback mechanisms embedded in the system are appropriate
+                                                 for phonological rehabilitation. Functional feasibility testing further showed that all
+                                                 designed system features operated successfully, resulting in a functional suitability
+                                                 index of 100%.
+
+
+                                                 3.2         Usability results
+
+                                                    Usability evaluation was conducted to examine the extent to which the devel-
+                                                 oped mobile adaptive multi-sensory AI system is easy to use, understandable, and
+                                                 acceptable for its intended users. In the context of dyslexia intervention, usability
+                                                 plays a critical role, as learners with phonological dyslexia may experience cognitive
+                                                 overload when interacting with complex digital interfaces. The usability assessment
+                                                 involved both learners and therapists. Data were collected using a Likert-scale ques-
+                                                 tionnaire covering key usability dimensions, including ease of use, interface clarity,
+                                                 learnability, and user satisfaction. The usability evaluation results of the adaptive
+                                                 AI-based dyslexia intervention, covering ease of use, interface clarity, learnability,
+                                                 and user satisfaction, are presented in Table 5.
+
+                                                                   Table 5. Usability evaluation results of the adaptive AI-based dyslexia intervention
+
+                                                              Usability Aspect                         Mean Score (%)                       Interpretation
+                                                   Ease of Use                                                 86.5                Very feasible
+                                                   Interface Clarity                                           88.0                Very feasible
+                                                   Learnability                                                84.2                Very feasible
+                                                   User Satisfaction                                           89.1                Very feasible
+                                                   Overall Usability                                           86.9                Very feasible
+
+
+
+
+   132         International Journal of Interactive Mobile Technologies (iJIM)                                                                         iJIM | Vol. 20 No. 9 (2026)
+
+<a id="pdf-p10"></a>
+### [PDF p.10] Optimising Dyslexia Intervention Leveraging a Mobile Adaptive Multi-Sensory AI Model with Real-Time Speech Analytic
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **10** / 15
+
+Optimising Dyslexia Intervention Leveraging a Mobile Adaptive Multi-Sensory AI Model with Real-Time Speech Analytic
+
+
+
+
+                                    The usability results indicate that the system achieved a very feasible level across
+                                all assessed aspects, with an overall usability score of 86.9%. High scores in ease of
+                                use and interface clarity suggest that the system interface is intuitive and accessi-
+                                ble for learners with phonological dyslexia. The high user satisfaction score further
+                                reflects positive acceptance by both learners and therapists. Overall, these findings
+                                demonstrate that the system provides a user-centred learning environment and is
+                                suitable for practical implementation in inclusive education settings.
+
+
+                                3.3     Learning effectiveness results
+
+                                    Learning effectiveness evaluation was conducted to examine the impact of the
+                                mobile adaptive multi-sensory AI intervention on learners’ phonological reading
+                                performance. Effectiveness was measured by comparing learners’ performance
+                                before (pre-test) and after (post-test) the intervention period using a pre- and post-test
+                                control group design.
+                                    The experimental group received the adaptive AI-based intervention, while the
+                                control group followed conventional phonological reading activities. This compari-
+                                son allows the analysis to identify differences in learning improvement attributable
+                                to the proposed system. The comparison of pretest and posttest phonological reading
+                                performance between the experimental and control groups is presented in Table 6.
+
+                                                   Table 6. Pre- and post-test results of phonological reading performance
+
+                                            Group                             Test                   Mean Score                     Standard Deviation
+                                 Experimental                     Pre-test                                 62.4                                  6.8
+                                 Experimental                     Post-test                                82.7                                  5.9
+                                 Control                          Pre-test                                 63.1                                  7.1
+                                 Control                          Post-test                                69.3                                  6.5
+
+
+                                    The results show a substantial improvement in phonological reading perfor-
+                                mance for learners in the experimental group after participating in the adaptive
+                                AI-based intervention. The mean score increased from 62.4 in the pre-test to 82.7 in
+                                the post-test, indicating a notable gain in phonological accuracy and reading ability.
+                                In contrast, the control group demonstrated only a modest improvement, with mean
+                                scores increasing from 63.1 to 69.3. This difference in score progression suggests that
+                                learners who engaged with the mobile adaptive AI system benefited more than those
+                                who received conventional instruction alone. The comparison between experimen-
+                                tal and control groups indicates that the proposed intervention contributed positively
+                                to learning outcomes. These findings provide initial empirical evidence supporting
+                                the effectiveness of adaptive multi-sensory AI-based intervention for improving pho-
+                                nological reading skills in learners with dyslexia. Statistical significance testing is
+                                presented in the subsequent analysis section to further substantiate these results.
+
+
+                                3.4     Learning effectiveness results
+
+                                   Speech analytics performance evaluation was conducted to objectively examine
+                                changes in learners’ phonological accuracy during the intervention. This evalua-
+                                tion employed PER and WER metrics derived from learners’ speech data collected
+
+
+iJIM | Vol. 20 No. 9 (2026)                                                           International Journal of Interactive Mobile Technologies (iJIM)   133
+
+<a id="pdf-p11"></a>
+### [PDF p.11] during pre-intervention and post-intervention sessions. These metrics provide
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **11** / 15
+
+Darni et al.
+
+
+
+
+                                                 during pre-intervention and post-intervention sessions. These metrics provide
+                                                 detailed measurements of pronunciation errors, including substitution, deletion,
+                                                 and insertion errors, which are characteristic of phonological dyslexia. The use of
+                                                 speech analytics allows a more precise assessment of phonological rehabilitation
+                                                 outcomes compared to conventional reading tests alone. The changes in speech ana-
+                                                 lytics performance, measured using PER and WER before and after the intervention,
+                                                 are presented in Table 7.
+
+                                                                             Table 7. Speech analytics performance before and after intervention
+
+                                                                  Group                         Metric                Pretest Mean            Posttest Mean
+                                                   Experimental                         PER                                0.38                        0.16
+                                                   Experimental                         WER                                0.42                        0.18
+                                                   Control                              PER                                0.37                        0.31
+                                                   Control                              WER                                0.41                        0.34
+
+
+                                                    The results show a marked reduction in phonological errors among learn-
+                                                 ers in the experimental group following the adaptive AI-based intervention. PER
+                                                 decreased from 0.38 to 0.16, and WER decreased from 0.42 to 0.18, indicating sub-
+                                                 stantial improvements in phoneme-level and word-level pronunciation accuracy. In
+                                                 contrast, the control group demonstrated only minor reductions in error rates. These
+                                                 findings suggest that the adaptive multi-sensory AI system contributed to more effec-
+                                                 tive phonological rehabilitation compared to conventional instruction.
+
+
+                                                 4           DISCUSSION
+
+                                                     The findings of this study demonstrate that the proposed mobile adaptive
+                                                 multi-sensory AI model with real-time speech analytics constitutes an effective and
+                                                 feasible approach for phonological dyslexia intervention. The combination of high
+                                                 system feasibility and validity, strong usability ratings, significant learning gains,
+                                                 and objective reductions in phonological error rates indicates that the intervention
+                                                 successfully addresses both technical implementation requirements and pedagog-
+                                                 ical needs of learners with phonological dyslexia. The high expert validity scores
+                                                 suggest that the system design aligns well with principles of inclusive education,
+                                                 phonological rehabilitation, and educational technology. From a pedagogical per-
+                                                 spective, experts recognised that the structured progression from single-syllable to
+                                                 multi-syllable tasks reflects evidence-based dyslexia intervention strategies, which
+                                                 emphasise gradual scaffolding and repetition. Technically, the validation results
+                                                 confirm that the integration of speech analytics and adaptive mechanisms func-
+                                                 tions reliably within a mobile environment, supporting the system’s readiness
+                                                 for real-world implementation. Usability results further reinforce the practicality
+                                                 of the proposed system. High scores in ease of use, interface clarity, and user sat-
+                                                 isfaction indicate that learners were able to interact with the application without
+                                                 excessive cognitive burden. This finding is particularly important for learners with
+                                                 phonological dyslexia, who are often sensitive to complex interfaces and cognitively
+                                                 demanding tasks. The consistent layout, clear visual cues, and accessible audio con-
+                                                 trols observed in the application interface outputs contribute to reduced extraneous
+                                                 cognitive load, allowing learners to focus on phonological processing rather than
+                                                 navigation or interface comprehension.
+
+
+   134         International Journal of Interactive Mobile Technologies (iJIM)                                                                     iJIM | Vol. 20 No. 9 (2026)
+
+<a id="pdf-p12"></a>
+### [PDF p.12] Optimising Dyslexia Intervention Leveraging a Mobile Adaptive Multi-Sensory AI Model with Real-Time Speech Analytic
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **12** / 15
+
+Optimising Dyslexia Intervention Leveraging a Mobile Adaptive Multi-Sensory AI Model with Real-Time Speech Analytic
+
+
+
+
+                                   Overall, the findings suggest that integrating adaptive learning logic, multi-sensory
+                                stimulation, and speech analytics within a mobile platform offers a promising solu-
+                                tion for scalable and inclusive dyslexia intervention. While the study demonstrates
+                                encouraging results, it is important to acknowledge that the sample size was limited
+                                and the intervention duration relatively short. Future research should involve larger
+                                and more diverse participant groups, longer intervention periods, and advanced
+                                speech analysis techniques to further validate and extend the applicability of the
+                                proposed model.
+
+
+                                5       CONCLUSION
+
+                                    This study demonstrates that a mobile adaptive multi-sensory AI model integrated
+                                with real-time speech analytics can serve as an effective, feasible, and user-friendly
+                                solution for phonological dyslexia intervention. The integration of adaptive learn-
+                                ing mechanisms, multi-sensory stimulation, and objective speech analytics enables
+                                the system to respond dynamically to individual learner needs, addressing one
+                                of the core limitations of conventional, non-adaptive dyslexia interventions. Despite
+                                these promising outcomes, this study has several limitations. The sample size was
+                                relatively small, and the intervention was conducted over a limited duration. Future
+                                research should involve larger participant populations, extended intervention peri-
+                                ods, and more advanced speech analytics techniques, such as deep phoneme clas-
+                                sification and affect-aware feedback mechanisms. Additionally, longitudinal studies
+                                are needed to examine the sustainability of learning gains over time.
+                                    In conclusion, this study contributes to the growing body of research on AI-assisted
+                                inclusive education by providing empirical evidence that adaptive, multi-sensory,
+                                and speech-driven mobile interventions can effectively support phonological dys-
+                                lexia rehabilitation. The proposed model offers a practical foundation for develop-
+                                ing scalable and data-driven dyslexia intervention tools that bridge technological
+                                innovation and educational inclusion.
+
+
+                                6       ACKNOWLEDGMENT
+
+                                   The authors express their sincere gratitude to Universitas Negeri Padang and
+                                the Institute for Research and Community Service (LP2M) for providing the
+                                financial support and administrative assistance for this study through the Domestic
+                                Research Collaboration Grant (Hibah Penelitian Kerja Sama Dalam Negeri) under con-
+                                tract number No. 2078/UN35.15/LT/2025. Furthermore, the authors extend their deep
+                                appreciation to the research team from Universitas Padjadjaran for their valuable
+                                contributions, expertise, and collaboration throughout the execution of this study.
+
+
+                                7       REFERENCES
+
+                                 [1] Suharno, N. A. Pambudi, and B. Harjanto, “Vocational education in Indonesia: History,
+                                     development, opportunities, and challenges,” Child. Youth Serv. Rev., vol. 115, p. 105092,
+                                     2020. https://doi.org/10.1016/j.childyouth.2020.105092
+                                 [2] R. Darni, Y. Harisman, D. Sukma, E. Fitriana, and R. A. Sulistiobudi, “Integration of a
+                                     mobile-based smart measurement system to assess the level of work readiness of
+                                     vocational students in higher education,” International Journal of Interactive Mobile
+                                     Technologies (iJIM), vol. 18, no. 17, pp. 61–74, 2024. https://doi.org/10.3991/ijim.
+                                     v18i17.50679
+
+
+iJIM | Vol. 20 No. 9 (2026)                                                           International Journal of Interactive Mobile Technologies (iJIM)   135
+
+<a id="pdf-p13"></a>
+### [PDF p.13] [3] C. Dyah, S. Indrawati, P. Ninghardjanti, C. Huda, and A. Dirgatama, “The effect of practi-
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **13** / 15
+
+Darni et al.
+
+
+
+
+                                                  [3] C. Dyah, S. Indrawati, P. Ninghardjanti, C. Huda, and A. Dirgatama, “The effect of practi-
+                                                      cum learning based audiovisual on students’ learning outcomes in Indonesian voca-
+                                                      tional secondary school,” International Journal of Evaluation and Research in Education
+                                                      (IJERE), vol. 11, no. 1, pp. 403–408, 2022. https://doi.org/10.11591/ijere.v11i1.21762
+                                                  [4] D. Amini, M. H. Anhari, and A. Ghasemzadeh, “Modeling the relationship between meta-
+                                                      cognitive strategy awareness, self-regulation and reading proficiency of Iranian EFL
+                                                      learners,” Cogent Educ., vol. 7, no. 1, 2020. https://doi.org/10.1080/2331186X.2020.1787018
+                                                  [5] T. Tang, A. M. Abuhmaid, M. Olaimat, D. M. Oudat, M. Aldhaeebi, and E. Bamanger,
+                                                      “Efficiency of flipped classroom with online-based teaching under COVID-19,” Interact.
+                                                      Learn. Environ., vol. 31, no. 2, pp. 1077–1088, 2020. https://doi.org/10.1080/10494820.
+                                                      2020.1817761
+                                                  [6] S. Wang, R. H. Wardi, and R. Ghazali, “Influencing factors on undergraduate engage-
+                                                      ment with Chinese visual arts in the intangible cultural heritage: A structural equation
+                                                      model approach,” Alexandria Eng. J., vol. 123, pp. 332–340, 2025. https://doi.org/10.1016/
+                                                      j.aej.2025.03.060
+                                                  [7] M. Muafi, W. Syafri, H. Prabowo, and S. A. Nur, “Digital entrepreneurship in Indonesia:
+                                                      A human capital perspective,” J. Asian Financ. Econ. Bus., vol. 8, no. 3, pp. 351–359, 2021.
+                                                      https://doi.org/10.13106/jafeb.2021.vol8.no3.0351
+                                                  [8] S. Nelson et al., “The effectiveness of learning media based on digital augmented reality
+                                                      (AR) technology on the learning outcomes of martial arts,” Retos, vol. 63, pp. 878–885,
+                                                      2025. https://doi.org/10.47197/retos.v63.108948
+                                                  [9] S. Seo, H. Park, and C. Koo, “Impact of interactive learning elements on personal learning
+                                                      performance in immersive virtual reality for construction safety training,” Expert Syst.
+                                                      Appl., vol. 251, p. 124099, 2024. https://doi.org/10.1016/j.eswa.2024.124099
+                                                 [10] B. Sonnleitner and Y. R. Sagaert, “Evaluation of early student performance predic-
+                                                      tion given concept drift,” Comput. Educ. Artif. Intell., vol. 8, p. 100369, 2025. https://doi.
+                                                      org/10.1016/j.caeai.2025.100369
+                                                 [11] R. Darni, L. Mursyida, and A. D. Samala, “Career exploration system (C-EXSYS) in
+                                                      era Society 5.0 based on expert system,” J. Teknol. Inf. dan Pendidik., vol. 14, no. 2,
+                                                      pp. 131–143, 2021. https://doi.org/10.24036/tip.v14i2.491
+                                                 [12] T. Supriyadi and N. Rahminawati, “Higher-order thinking skills in primary school:
+                                                      Teachers’ perceptions of Islamic education,” Journal of Ethnic and Cultural Studies, vol. 9,
+                                                      no. 1, pp. 56–76, 2022. https://doi.org/10.29333/ejecs/994
+                                                 [13] M. Anwar et al., “Blended learning based project in electronics engineering educa-
+                                                      tion courses: A learning innovation after the covid-19 pandemic,” Int. J. Interact. Mob.
+                                                      Technol., vol. 16, no. 14, pp. 107–122, 2022. https://doi.org/10.3991/ijim.v16i14.33307
+                                                 [14] J. Liu, Y. Zheng, L. Zhou, F. Jin, and H. Chen, “Engineering applications of artificial
+                                                      intelligence a novel probabilistic linguistic decision-making method with consistency
+                                                      improvement algorithm and DEA cross-efficiency,” Eng. Appl. Artif. Intell., vol. 99,
+                                                      no. 111, p. 104108, 2021. https://doi.org/10.1016/j.engappai.2020.104108
+                                                 [15] N. Alobidi, R. Alnanih, and H. Bakhsh, “Virtual reality-based interventions for improving
+                                                      learning outcomes in children with ADHD,” Procedia Comput. Sci., vol. 241, pp. 179–186,
+                                                      2024. https://doi.org/10.1016/j.procs.2024.08.025
+                                                 [16] R. Darni, Y. Harisman, and I. N. A. F. Setiawan, “The implementation and empirical anal-
+                                                      ysis of adaptive virtual mentor: Mobile technology empowers introverts’ business com-
+                                                      munication skills,” International Journal of Interactive Mobile Technologies (iJIM), vol. 19,
+                                                      no. 8, pp. 159–173, 2025. https://doi.org/10.3991/ijim.v19i08.53887
+                                                 [17] M. Husen and R. Aditama, “Online career position dictionary as media to improve junior
+                                                      high school students’ career exploration,” TEKNODIKA, vol. 18, no. 2, pp. 133–145, 2020.
+                                                      https://doi.org/10.20961/teknodika.v18i2.43733
+
+
+
+
+   136         International Journal of Interactive Mobile Technologies (iJIM)                                                     iJIM | Vol. 20 No. 9 (2026)
+
+<a id="pdf-p14"></a>
+### [PDF p.14] Optimising Dyslexia Intervention Leveraging a Mobile Adaptive Multi-Sensory AI Model with Real-Time Speech Analytic
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **14** / 15
+
+Optimising Dyslexia Intervention Leveraging a Mobile Adaptive Multi-Sensory AI Model with Real-Time Speech Analytic
+
+
+
+
+                                [18] H. Nofrianto et al., “Validity of cooperative-discovery learning model to improve com-
+                                     petencies of engineering students,” Systematic Reviews in Pharmacy, vol. 11, no. 12,
+                                     pp. 1134–1138, 2020.
+                                [19] D. Fitria et al., “The effect of using web-based interactive learning media for vocational
+                                     high school students to understanding of looping: Qualitative approach,” Journal of
+                                     Science Learning, vol. 5, no. 1, pp. 115–126, 2022. https://doi.org/10.17509/jsl.v5i1.35534
+                                [20] A. P. Pribadi, Y. Mukasyafah, and R. Rahman, “Heliyon analysis of the effectiveness and
+                                     user experience of employing virtual reality to enhance the efficacy of occupational
+                                     safety and health learning for electrical workers and graduate students,” Heliyon, vol. 10,
+                                     no. 15, p. e34918, 2024. https://doi.org/10.1016/j.heliyon.2024.e34918
+                                [21] A. Kompaniets and H. Chemerys, “Using 3D modelling in design training simulator
+                                     with,” in CEUR Workshop Proceedings, 2019, pp. 213–223. https://doi.org/10.31812/
+                                     123456789/3740
+                                [22] S. J. Seage and M. Türegün, “The effects of blended learning on STEM achievement of
+                                     elementary school students,” Int. J. Res. Educ. Sci., vol. 6, no. 1, pp. 133–140, 2020. https://
+                                     doi.org/10.46328/ijres.v6i1.728
+                                [23] X. Song, Y. Cong, Y. Song, Y. Chen, and P. Liang, “A bearing fault diagnosis model based on
+                                     CNN with wide convolution kernels,” J. Ambient Intell. Humaniz. Comput., vol. 13, no. 8,
+                                     pp. 4041–4056, 2022. https://doi.org/10.1007/s12652-021-03177-x
+                                [24] R. Darni, Y. Harisman, D. Sukma, E. Fitriana, R. A. Sulistiobudi, and A. Herayono, “Work
+                                     readiness in vocational education: Perception and correlation between measurement
+                                     level and system integration,” TEM Journal, vol. 14, no. 2, pp. 1388–1397, 2025. https://
+                                     doi.org/10.18421/TEM142-39
+                                [25] R. Ramadhani, N. S. Bina, S. F. Sihotang, S. D. Narpila, and M. R. Mazaly, “Students’
+                                     critical mathematical thinking abilities through flip-problem based learning model
+                                     based on LMS-google classroom,” J. Phys. Conf. Ser., vol. 1657, no. 1, 2020. https://doi.
+                                     org/10.1088/1742-6596/1657/1/012025
+                                [26] K. Domains, C. Scale, T. K. Domains, C. Scale, K. Domains, and C. Scale, “Translation and
+                                     validation of the Kaufman domains of creativity scale on a croatian sample of early
+                                     childhood and preschool education students,” Center for Educational Policy Studies
+                                     Journal, vol. 11, pp. 163–179, 2021. https://doi.org/10.26529/cepsj.708
+
+
+
+                                8       AUTHORS
+
+                                   Resmi Darni is a professional educator, futurologist, dedicated researcher, tech-
+                                nology consultant at Truverse, a company engaged in the development of AI-based
+                                technologies, and Assistant Professor at the Faculty of Engineering, Indonesia, spe-
+                                cialising in Information and Computer Engineering Education, Universitas Negeri
+                                Padang (UNP) (E-mail: resmidarni@ft.unp.ac.id).
+                                   Yulyanti Harisman is a professional educator, highly dedicated researcher, and
+                                assistant professor at the Faculty of Natural Sciences, Universitas Negeri Padang
+                                (UNP), Indonesia, specialising in mathematics education. Yuliyanti Harisma is also
+                                a reviewer for national and international journals such as Jurnal Euclid, Journal
+                                of Honaymath, Jurnal Penelitian Pembelajaran Matematika di Sekolah, and Journal
+                                of Authentic Research on Mathematics Education (E-mail: yulyanti_h@fmipa.
+                                unp.ac.id).
+                                   Lili Dasa Putri is a professional educator, dedicated researcher, and assistant
+                                professor at the Faculty of Education, Universitas Negeri Padang (UNP), Indonesia.
+                                She currently serves as a lecturer in the Department of Nonformal Education,
+
+
+
+
+iJIM | Vol. 20 No. 9 (2026)                                                           International Journal of Interactive Mobile Technologies (iJIM)   137
+
+<a id="pdf-p15"></a>
+### [PDF p.15] specialising in community education strategies and instructional development. With
+- Locator: `R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf` · página **15** / 15
+
+Darni et al.
+
+
+
+
+                                                 specialising in community education strategies and instructional development. With
+                                                 a strong commitment to academic excellence and social empowerment, her work
+                                                 focuses on bridging the gap between theoretical pedagogy and practical community-
+                                                 based learning (E-mail: lilidasaputri@fip.unp.ac.id).
+                                                     Efi Fitriana is a professional educator, highly dedicated researcher, and assis-
+                                                 tant professor at the Faculty of Psychology, specialising in statistics and quantitative
+                                                 measurement, at Universitas Padjadjaran, Bandung, Indonesia. Efi Fitriana is also
+                                                 a test and psychometric consultant who has developed the Knowledge, Attitudes,
+                                                 and Behaviour of Community Pharmacy Personnel in Tuberculosis (TB) Patient
+                                                 Management test instrument and the Family Relations-Bandung test instrument
+                                                 (E-mail: efi.fitriana@unpad.ac.id).
+                                                     Rezki Ashriyana Sulistiobudi is a researcher specialising in industrial-
+                                                 organisational psychology at Universitas Padjadjaran, Bandung, Indonesia. Rezki is
+                                                 also a psychologist, handling various consulting and human resource development
+                                                 projects in organisations. His research expertise focuses on employability and work
+                                                 behaviour within organisations. As a relatively young academic, Rezki has produced
+                                                 many productive works, including 12 high-impact international journals, numer-
+                                                 ous reputable national journals, 7 books, and 26 intellectual property rights. Rezki
+                                                 has also contributed to various partnership collaborations and community service
+                                                 projects between the Faculty of Psychology at Universitas Padjadjaran and various
+                                                 government and private institutions. Most of these collaborations involve the devel-
+                                                 opment of assessment instruments for human resource potential and competency,
+                                                 including with the Ministry of Finance, the Ministry of Education and Culture, and
+                                                 the National Civil Service Agency (BKN). His insights have been utilised for the devel-
+                                                 opment of CASN and P3K selection instruments in Indonesia with the Educational
+                                                 Assessment Center. Additionally, the results of his collaboration with BKN have been
+                                                 used for mapping the competencies of civil servants across Indonesia (E-mail: rezki.
+                                                 ashriyana@unpad.ac.id).
+                                                     Andhika Herayono is a Doctoral student and researcher at the Department
+                                                 of Informatics Engineering Education, Faculty of Engineering, Universitas Negeri
+                                                 Padang, Indonesia. His research interests focus on artificial intelligence in edu-
+                                                 cation, adaptive learning systems, educational data analytics, gamification, and
+                                                 technology-enhanced learning in vocational and inclusive education contexts. He
+                                                 has authored and co-authored several publications indexed in Scopus, particularly
+                                                 in the areas of mobile learning, AI-assisted instruction, and digital learning innova-
+                                                 tion (E-mail: andhikaherayono99@gmail.com).
+
+
+
+
+   138         International Journal of Interactive Mobile Technologies (iJIM)                                            iJIM | Vol. 20 No. 9 (2026)

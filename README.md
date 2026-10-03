@@ -28,6 +28,8 @@ El agente verifica/instala prerrequisitos (node + pnpm, pipx graphifyy, poppler)
 | `rsl-cribado-2-aplicar` | Tras aprobar la evaluación: `resultados-<MARCO>-cribado-2.csv` (solo filas del corpus cribado-2; ¿Se acepta? SI/NO + Justificación cribado 2) | `resultados-*-cribado-2.csv` + `prisma.json` eligibility |
 | `rsl-make-paper` | Nueva versión del paper borrador, solo secciones `on` (mejorar) y `rewrite` (reescribir) de `config.yml` (+ agente `citas-rsl` y `redaccion:lint`) | `docs/[titulo-breve]/paper/<fecha>/paper-borrador.md` |
 | `rsl-polish-paper` | Pule esas secciones (`critico-rsl` + `defensor-rsl`; `impacto-social-rsl` si están Justificación u Objetivo; luego `redaccion-rsl` + `citas-rsl`) → texto limpio + traza de debate | `paper/<fecha>/paper-polish.md` + `paper-debate.md` |
+| `rsl-turnitin-informe` | Pre-entrega Turnitin simulado: `turnitin:qualified` + agente `turnitin-rsl` → informe estructurado (path del polish **obligatorio**) | `{stem}-informe-turnitin.md` junto al polish |
+| `rsl-turnitin-arreglar` | Aplica tramos del informe; no toca el polish | `paper-polish-turnitin.md` o `informe-polish-turnitin.md` |
 | `rsl-qa-destroy` | Intenta romper el flujo a propósito (flujo positivo, orden mezclado, entradas destructivas, marco libre, revisión de skills y agentes) en un sandbox de `/tmp`; solo reporta | `qa/<fecha>/qa-report.md` + `qa-report.json` |
 | `rsl-qa-fix` | Arregla los fallos del último reporte, deja cada uno como caso de regresión y repite `qa:destroy` hasta OK | código corregido + `qa/<fecha>/qa-fix.md` |
 
@@ -94,10 +96,10 @@ global/           ← archivos generales que integra el usuario (líneas UTP, co
   examples/       ← papers RSL reales de referencia (estructura/presentación; grafo propio)
   bibliography/   ← fuentes metodológicas que citan todos los temas (Kitchenham 2007 · PRISMA 2020): PDF + MD + bibliography.md; grafo propio
   citation-style/ ← APA7.md · IEEE.md (reglas de citas; formato.citas de config.yml)
-playbooks/        ← protocolos compartidos que siguen varias skills (vocabulario-controlado.md, redaccion-academica.md)
+playbooks/        ← protocolos compartidos (vocabulario-controlado.md, redaccion-academica.md, deteccion-escritura-ia-turnitin.md)
 ```
 
-Agentes: `.cursor/agents/` (`critico-rsl`, `defensor-rsl`, `impacto-social-rsl`, `viabilidad-negocio-rsl`, `citas-rsl`, `redaccion-rsl`)
+Agentes: `.cursor/agents/` (`critico-rsl`, `defensor-rsl`, `impacto-social-rsl`, `viabilidad-negocio-rsl`, `citas-rsl`, `redaccion-rsl`, `turnitin-rsl`)
 
 ---
 
@@ -142,6 +144,7 @@ En `theme`, el `<slug>` se omite si solo hay un tema; `refresh`/`status` aceptan
 | `picoc:latest docs/<slug>` | Marco configurado en `config.yml` + último `picoc/<fecha>-<MARCO>/picoc.md`: OK, DESFASADO (cambiaste el marco) o FALTA → correr `rsl-picoc`; también imprime la carpeta de la siguiente versión. |
 | `picoc:lint docs/<slug>` | OK/ERROR del último picoc: marco = `config.yml`, pregunta general = § 1.2 de la ficha, una fila por componente 1:1 con las queries Scopus/WoS/IEEE Xplore, T = filtro de año, 1 RQ por componente, descriptores IEEE preferidos, libres al final, 5 o 6 keywords del paper (una por componente como mínimo) y al final criterios de inclusión y exclusión breves (idioma, tipo de documento y años de T). |
 | `redaccion:lint <archivo.md>` | Forma académica de informe o paper: FAIL por marcas pendientes (`[citar]`, TODO…), notas internas (panel, `topic.md`…) o siglas sin definir; avisos por frases largas, notación ×/+ y exceso de siglas. Los marcadores del usuario (`n = X`, `[[ AGREGAR DIAGRAMA ]]`) no fallan: se cuentan en la línea OK. |
+| `turnitin:qualified <archivo.md>` | Texto calificado Turnitin RSL: JSON con oraciones S1…Sn, palabras calificadas y `processable` (≥300 palabras prosa). Entrada de `rsl-turnitin-informe`. |
 | `rsl:source <pdf>` | Convierte un PDF de `global/bibliography/<carpeta>/` en MD junto al PDF (índice con página del PDF) y deja el texto por página en `_raw/`; ERROR si no es un PDF real. |
 | `paper:status docs/<slug>` | Estado del paper según `config.yml`: qué se mejora (on) o reescribe (rewrite), stale, blocked; ERROR si se editó a mano una sección frozen; la línea OK indica el próximo paso. |
 | `paper:status docs/<slug> --init` | Crea `config.yml` y `paper/paper.shadow.yml` por defecto. |

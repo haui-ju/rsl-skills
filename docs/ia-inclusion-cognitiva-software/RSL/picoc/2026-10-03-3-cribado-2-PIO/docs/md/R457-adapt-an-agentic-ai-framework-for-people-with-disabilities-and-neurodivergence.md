@@ -1,0 +1,1389 @@
+# Journal of Disability Research
+
+> Fuente PDF: `R457-adapt-an-agentic-ai-framework-for-people-with-disabilities-and-neurodivergence.pdf` · técnica **locator index** (página + ancla) + chunks Graphify
+
+## Metadata
+- Stem: `R457-adapt-an-agentic-ai-framework-for-people-with-disabilities-and-neurodivergence`
+- PDF: `R457-adapt-an-agentic-ai-framework-for-people-with-disabilities-and-neurodivergence.pdf`
+- DOI: `10.57197/JDR-2026-0830`
+- Pages: `18`
+- Structured_at: `2026-10-03T23:23:18+00:00`
+- Technique: `pdf-page-locators + heading-chunks`
+
+## Locator index (qué hay y en qué página del PDF)
+
+| Kind | Label | PDF page | MD anchor |
+|------|-------|----------|-----------|
+| abstract | Abstract / blurb | 1 | `#abstract` |
+| concept | Agentic AI | ? | `#concept-agentic-ai` |
+| concept | Disabilities | 1 | `#concept-disabilities` |
+| concept | Neurodivergence | 1 | `#concept-neurodivergence` |
+| concept | Healthy eating | 1 | `#concept-healthy-eating` |
+| concept | Assistive technology | 1 | `#concept-assistive-technology` |
+| concept | Personalized healthcare | 1 | `#concept-personalized-healthcare` |
+| concept | Meal planning | 1 | `#concept-meal-planning` |
+| concept | Adaptive reminders | 1 | `#concept-adaptive-reminders` |
+| concept | R457 | ? | `#concept-r457` |
+| concept | adapt | ? | `#concept-adapt` |
+| concept | agentic | ? | `#concept-agentic` |
+| concept | framework | ? | `#concept-framework` |
+| concept | people | ? | `#concept-people` |
+| concept | with | ? | `#concept-with` |
+| finding | The present paper introduces ADAPT, an agentic artificial intelligence (AI) framework aime… | 1 | `#finding-the-present-paper-introduces-adapt-an-a` |
+| finding | Each agent is deployed in a Perception–Reasoning–Action (PRA) loop and communicates with e… | 1 | `#finding-each-agent-is-deployed-in-a-perception-r` |
+| page | p.1: Journal of Disability Research | 1 | `#pdf-p1` |
+| page | p.2: 2 M. S. Siddiqui et al.: ADAPT | 2 | `#pdf-p2` |
+| page | p.3: M. S. Siddiqui et al.: ADAPT 3 | 3 | `#pdf-p3` |
+| page | p.4: 4 M. S. Siddiqui et al.: ADAPT | 4 | `#pdf-p4` |
+| page | p.5: M. S. Siddiqui et al.: ADAPT 5 | 5 | `#pdf-p5` |
+| page | p.6: 6 M. S. Siddiqui et al.: ADAPT | 6 | `#pdf-p6` |
+| page | p.7: M. S. Siddiqui et al.: ADAPT 7 | 7 | `#pdf-p7` |
+| page | p.8: 8 M. S. Siddiqui et al.: ADAPT | 8 | `#pdf-p8` |
+| page | p.9: M. S. Siddiqui et al.: ADAPT 9 | 9 | `#pdf-p9` |
+| page | p.10: 10 M. S. Siddiqui et al.: ADAPT | 10 | `#pdf-p10` |
+| page | p.11: M. S. Siddiqui et al.: ADAPT 11 | 11 | `#pdf-p11` |
+| page | p.12: 12 M. S. Siddiqui et al.: ADAPT | 12 | `#pdf-p12` |
+| page | p.13: M. S. Siddiqui et al.: ADAPT 13 | 13 | `#pdf-p13` |
+| page | p.14: 14 M. S. Siddiqui et al.: ADAPT | 14 | `#pdf-p14` |
+| page | p.15: M. S. Siddiqui et al.: ADAPT 15 | 15 | `#pdf-p15` |
+| page | p.16: 16 M. S. Siddiqui et al.: ADAPT | 16 | `#pdf-p16` |
+| page | p.17: M. S. Siddiqui et al.: ADAPT 17 | 17 | `#pdf-p17` |
+| page | p.18: 18 M. S. Siddiqui et al.: ADAPT | 18 | `#pdf-p18` |
+
+## Abstract
+<a id="abstract"></a>
+
+The present paper introduces ADAPT, an agentic artificial intelligence (AI) framework aimed at assisting people with disabilities and neurodivergent conditions to adopt healthier eating habits and organized daily life. It includes four specialized agents (meal planning, adaptive reminders, food guidance, and physiological monitoring), a Large Language Model (LLM)-based decision layer, a Model Context Protocol (MCP) routing layer, and a multimodal interface. Each agent is deployed in a Perception–Reasoning–Action (PRA) loop and communicates with each other using a shared blackboard and a hybrid reasoning component that uses rules and reinforcement learning. In addition to electronic health records (EHRs), nutritional databases, wearable and Internet of Things (IoT) devices, and smart kitchen gadgets, the framework includes modules for explainable AI (XAI) to provide understandable explanations to the user and the caregiver. A concrete use case is presented showing how the implemented prototype can help a neurodivergent person with diabetes by interpreting multimodal inputs, evaluating meal suitability, making real-time replacements, and providing sensory-sensitive prompts. Results of a synthetic simulation-based evaluation (500 simulated profiles, no real user evaluation) show a positive impact on nutritional adherence and reminder responsiveness, and usability was found to be appropriate across various accessibility profiles. The envisioned framework provides a more unified approach to assistive health technologies and a future path toward personalized, safe, and transparent digital health assistance for individuals with disabilities and neurodivergence.
+
+## Keywords
+
+- Agentic AI
+- Disabilities
+- Neurodivergence
+- Healthy eating
+- Assistive technology
+- Personalized healthcare
+- Meal planning
+- Adaptive reminders
+
+## Concept index (graph hooks + página)
+
+<a id="concept-agentic-ai"></a>
+### [PDF p.?] Concept: Agentic AI
+- Locator: `R457-adapt-an-agentic-ai-framework-for-people-with-disabilities-and-neurodivergence.pdf` · página **?**
+
+<a id="concept-disabilities"></a>
+### [PDF p.1] Concept: Disabilities
+- Locator: `R457-adapt-an-agentic-ai-framework-for-people-with-disabilities-and-neurodivergence.pdf` · página **1**
+
+<a id="concept-neurodivergence"></a>
+### [PDF p.1] Concept: Neurodivergence
+- Locator: `R457-adapt-an-agentic-ai-framework-for-people-with-disabilities-and-neurodivergence.pdf` · página **1**
+
+<a id="concept-healthy-eating"></a>
+### [PDF p.1] Concept: Healthy eating
+- Locator: `R457-adapt-an-agentic-ai-framework-for-people-with-disabilities-and-neurodivergence.pdf` · página **1**
+
+<a id="concept-assistive-technology"></a>
+### [PDF p.1] Concept: Assistive technology
+- Locator: `R457-adapt-an-agentic-ai-framework-for-people-with-disabilities-and-neurodivergence.pdf` · página **1**
+
+<a id="concept-personalized-healthcare"></a>
+### [PDF p.1] Concept: Personalized healthcare
+- Locator: `R457-adapt-an-agentic-ai-framework-for-people-with-disabilities-and-neurodivergence.pdf` · página **1**
+
+<a id="concept-meal-planning"></a>
+### [PDF p.1] Concept: Meal planning
+- Locator: `R457-adapt-an-agentic-ai-framework-for-people-with-disabilities-and-neurodivergence.pdf` · página **1**
+
+<a id="concept-adaptive-reminders"></a>
+### [PDF p.1] Concept: Adaptive reminders
+- Locator: `R457-adapt-an-agentic-ai-framework-for-people-with-disabilities-and-neurodivergence.pdf` · página **1**
+
+<a id="concept-r457"></a>
+### [PDF p.?] Concept: R457
+- Locator: `R457-adapt-an-agentic-ai-framework-for-people-with-disabilities-and-neurodivergence.pdf` · página **?**
+
+<a id="concept-adapt"></a>
+### [PDF p.?] Concept: adapt
+- Locator: `R457-adapt-an-agentic-ai-framework-for-people-with-disabilities-and-neurodivergence.pdf` · página **?**
+
+<a id="concept-agentic"></a>
+### [PDF p.?] Concept: agentic
+- Locator: `R457-adapt-an-agentic-ai-framework-for-people-with-disabilities-and-neurodivergence.pdf` · página **?**
+
+<a id="concept-framework"></a>
+### [PDF p.?] Concept: framework
+- Locator: `R457-adapt-an-agentic-ai-framework-for-people-with-disabilities-and-neurodivergence.pdf` · página **?**
+
+<a id="concept-people"></a>
+### [PDF p.?] Concept: people
+- Locator: `R457-adapt-an-agentic-ai-framework-for-people-with-disabilities-and-neurodivergence.pdf` · página **?**
+
+<a id="concept-with"></a>
+### [PDF p.?] Concept: with
+- Locator: `R457-adapt-an-agentic-ai-framework-for-people-with-disabilities-and-neurodivergence.pdf` · página **?**
+
+
+## Findings index (graph hooks + página)
+
+<a id="finding-the-present-paper-introduces-adapt-an-a"></a>
+### [PDF p.1] Finding: The present paper introduces ADAPT, an agentic artificial intelligence (AI) framework aimed at assisting people with disabilities and neurodivergent conditions to adopt healthier eating habits and organized daily life.
+- Locator: `R457-adapt-an-agentic-ai-framework-for-people-with-disabilities-and-neurodivergence.pdf` · página **1**
+
+<a id="finding-each-agent-is-deployed-in-a-perception-r"></a>
+### [PDF p.1] Finding: Each agent is deployed in a Perception–Reasoning–Action (PRA) loop and communicates with each other using a shared blackboard and a hybrid reasoning component that uses rules and reinforcement learning.
+- Locator: `R457-adapt-an-agentic-ai-framework-for-people-with-disabilities-and-neurodivergence.pdf` · página **1**
+
+
+## Relevance hooks
+### Theme relevance: software engineering and accessibility
+### Theme relevance: cognitive accessibility and neurodiversity
+### Theme relevance: evaluation metrics and WCAG
+
+## Sections (detected in PDF)
+
+_(no numbered sections auto-detected)_
+
+
+## Page chunks (texto por página del PDF)
+
+_Cada heading es un nodo Graphify. El label incluye la página para volver al PDF sin releer todo._
+
+<a id="pdf-p1"></a>
+### [PDF p.1] Journal of Disability Research
+- Locator: `R457-adapt-an-agentic-ai-framework-for-people-with-disabilities-and-neurodivergence.pdf` · página **1** / 18
+
+Journal of Disability Research
+2026 | Volume 5 | Pages: 1–18 | e-location ID: e20260830
+DOI: 10.57197/JDR-2026-0830
+
+
+
+
+ADAPT: An Agentic AI Framework for People with
+Disabilities and Neurodivergence
+Muhammad Shoaib Siddiqui1,2 , Toqeer Ali Syed1,*             and Ali Akarma1,3
+
+1Faculty of Computer and Information Systems, Islamic University of Madinah, Madinah 42351, Saudi Arabia
+2King Salman Center for Disability Research, Riyadh 11614, Saudi Arabia
+3AI V&V Lab, King Fahd University of Petroleum and Minerals, Dhahran 31261, Saudi Arabia
+
+
+
+Correspondence to:
+Toqeer Ali Syed*, e-mail: toqeer@iu.edu.sa
+
+Received: May 6 2026; Revised: June 5 2026; Accepted: June 11 2026; Published Online: June 30 2026
+
+
+      ABSTRACT
+      The present paper introduces ADAPT, an agentic artificial intelligence (AI) framework aimed at assisting people with disabilities and neurodivergent
+      conditions to adopt healthier eating habits and organized daily life. It includes four specialized agents (meal planning, adaptive reminders, food
+      guidance, and physiological monitoring), a Large Language Model (LLM)-based decision layer, a Model Context Protocol (MCP) routing layer, and
+      a multimodal interface. Each agent is deployed in a Perception–Reasoning–Action (PRA) loop and communicates with each other using a shared
+      blackboard and a hybrid reasoning component that uses rules and reinforcement learning. In addition to electronic health records (EHRs), nutritional
+      databases, wearable and Internet of Things (IoT) devices, and smart kitchen gadgets, the framework includes modules for explainable AI (XAI) to
+      provide understandable explanations to the user and the caregiver. A concrete use case is presented showing how the implemented prototype can help
+      a neurodivergent person with diabetes by interpreting multimodal inputs, evaluating meal suitability, making real-time replacements, and providing
+      sensory-sensitive prompts. Results of a synthetic simulation-based evaluation (500 simulated profiles, no real user evaluation) show a positive impact
+      on nutritional adherence and reminder responsiveness, and usability was found to be appropriate across various accessibility profiles. The envisioned
+      framework provides a more unified approach to assistive health technologies and a future path toward personalized, safe, and transparent digital
+      health assistance for individuals with disabilities and neurodivergence.
+
+      KEYWORDS
+      Agentic AI, Disabilities, Neurodivergence, Healthy eating, Assistive technology, Personalized healthcare, Meal planning, Adaptive reminders
+
+
+
+INTRODUCTION
+Daily routines and a healthy diet are widely recognized as                       Neurodivergent individuals are another category of popula-
+important contributors to human wellbeing. A balanced diet,                      tion that is added to this group, including dyslexia, attention
+frequent reminders, and positive counseling may support                          deficit hyperactivity disorder (ADHD), autism spectrum dis-
+long-term quality of life, psychological stability, and physi-                   order (ASD), and other cognitive impairments. These peo-
+cal health (World Health Organization, World Bank, 2011).                        ple typically struggle to obtain the right kind of healthcare
+Nevertheless, keeping such habits poses some specific chal-                      system, nutrition, and assistance related to lifestyle (Kapp
+lenges to neurodivergent people and people with disabilities.                    et al., 2013). Popular digital health solutions provide general
+Mobility issues, sensory issues, executive-functioning issues,                   recommendations, but do not take the complexity of interac-
+and medical issues requiring a special diet may contribute to                    tion between cognitive, behavioral, and physiological needs
+difficulties. These populations often have inadequate access to                  into account, which constitute neurodiversity and disability.
+traditional health applications and digital wellness platforms                      Recent advances in artificial intelligence (AI) now make
+because of their inability to be personalized, inclusive, and                    more inclusive healthcare and lifestyle support a possibil-
+adaptive to their needs and interests, which is why these appli-                 ity. Personalized meal planning systems based on machine
+cations are ineffective in the given scenario (UNICEF, 2021).                    learning have been demonstrated to customize diets to some
+   The cost of disability is high at the international level.                    medical conditions such as diabetes and hypertension. The
+According to the World Health Organization (WHO), >1 bil-                        subject-oriented voice recognition system and the AI vocab-
+lion or approximately 15% of the global population lives with                    ulary expansion are also essential to support the speech pat-
+a disability (World Health Organization, World Bank, 2011).                      terns of older users in the communication process and enlarge
+
+© 2026 The Author(s).       This is an open access article distributed under the terms of the Creative Commons Attribution License (CC BY) 4.0, which permits
+unrestricted use, distribution and reproduction in any medium, provided the original author and source are credited.
+
+                                                                                                                                                                1
+
+<a id="pdf-p2"></a>
+### [PDF p.2] 2 M. S. Siddiqui et al.: ADAPT
+- Locator: `R457-adapt-an-agentic-ai-framework-for-people-with-disabilities-and-neurodivergence.pdf` · página **2** / 18
+
+2                                                                                                  M. S. Siddiqui et al.: ADAPT
+
+
+the scope of their vocabulary use in communication with           advanced intent interpretation, which is powered by a Large
+AI-powered devices, which must be extended to facilitate          Language Model (LLM). This will enable dynamic routing
+their use in communication (Kiran et al. 2024); (Hass, 2020).     of tasks to special modules including the Meal Planner and
+Wearable and mobile interfaces to provide adaptive remind-        Reminder agents. The main element of this system is the
+ers have been shown to be effective in assisting i­ndividuals     Central Reasoning Engine that integrates codified rules with
+with cognitive impairments in their daily task management.        reinforcement learning (RL) to combine real-time inputs
+Likewise, food guidance and monitoring applications have          from the Data Integration Layer [electronic health records
+been utilizing Internet of Things (IoT) sensors, image rec-       (EHRs) and IoT] with the Central Reasoning Engine. This
+ognition, and natural language processing (NLP) to monitor        learning cycle will be continuous, which means that the
+what has been consumed and offer real-time feedback on            Recommendations & Guidance that are shown to the user
+the same. Most of these systems, however, lack a cohesive,        and caregivers are not fixed, but may change depending on
+holistic approach, as most of them concentrate on only one        the specific case and outcome, creating the basis of next-­
+aspect of healthy living.                                         generation personalized care.
+   Agentic AI is a promising shift in paradigm. Orchestrating        This paper makes three targeted contributions. First, it
+autonomy, reasoning, and proactive decision-making, and           offers a comprehensive literature review that highlights gaps
+agentic AI stands in contrast to regular rule-based or pas-       in the field of providing dietary support with AI, assistive
+sive recommendation systems. These systems consist of a           technologies, and multi-agent health systems in relation to
+number of specialized agents that interoperate dynamically        disability and neurodivergence. Second, it suggests a coherent
+to satisfy the evolving needs of a user, for example, an intake   model for agentic AI, which encompasses all aspects of meal
+monitor, a behavioral coach, and a dietary planner. Agentic       planning, adaptive remindings, food guidance, and monitor-
+AI has already shown promise in the healthcare sector for         ing in a single model for this population combination, which
+managing chronic illness conditions, medication non-adher-        has not been assembled in the literature so far. The novelty
+ence, and patient telemonitoring. Older adults with difficulty    of the central system is that the system is built with the com-
+in malnutrition (low protein intake because of chewing prob-      ponents that have been used before to build agent-based and
+lems and impaired sense of taste) are also encouraged to use      LLM-based systems, but they are made accessible-by-design
+AI-powered robots that operate on machine learning algo-          for users with disabilities and other neurodivergent users, and
+rithms to create healthy eating habits based on their pref-       they are connected via Model Context Protocol (MCP) as a
+erences and needs (Jan et al., 2025a,b; Kalu et al., 2025).       disciplined routing protocol from the language-level reason-
+Its possible contribution to the benefit of individuals with      ing to the specialized agents, and these agents are applied to a
+neurodivergence and disabilities is untapped.                     population that has been largely ignored in the previous mul-
+   To address the urgent need for genuinely personalized          ti-agent health systems. Third, the paper provides a prototype
+and adaptive digital health interventions for this under-         implementation and simulation-based evaluation that shows
+served population, we propose ADAPT: a closed-loop mul-           the feasibility of the framework and its capacity to enhance
+ti-agent AI design specifically architected for the disability    adherence and decrease caregiver burden.
+and neurodivergence context. Our system, as explained in             This is the organization of the rest of the paper. In
+Figure 1, combines user communication (voice, text) and           the Background section, the background information on
+
+
+
+
+Figure 1: Architecture of an AI-driven health and wellness system. A closed-loop pipeline processes user input through a
+multimodal interface and LLM for intent understanding, routes tasks via MCP to specialized agents, and integrates outputs
+in a central reasoning engine (rules + reinforcement learning). Context from EHR and IoT data enables personalized recom-
+mendations and feedback. Abbreviations: AI, artificial intelligence; EHR, electronic health record; IoT, Internet of Things; LLM,
+Large Language Model; MCP, Model Context Protocol.
+
+Journal of Disability Research 2026
+
+<a id="pdf-p3"></a>
+### [PDF p.3] M. S. Siddiqui et al.: ADAPT 3
+- Locator: `R457-adapt-an-agentic-ai-framework-for-people-with-disabilities-and-neurodivergence.pdf` · página **3** / 18
+
+M. S. Siddiqui et al.: ADAPT                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  3
+
+neurodivergence, disabilities, and the role of structured                                                                                                                             Simulation-only evaluation; no real user
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                            Entries for prior systems are based on information reported in the cited publications.
+routines in health management is provided. The Literature                                                                                                                             study yet
+Review section gives a detailed literature review of the                                                                                                                              Single model; no agents; no accessibility
+work that has been done in dietary recommendation sys-                                                                                                                                No disability focus; no agents; short-term
+tems, assistive technologies, and multi-agent healthcare                                                                                                                              adherence only
+applications in the past. The proposed agentic AI archi-                                                                                                                              No disability/accessibility design;
+tecture will be discussed in the Proposed Agentic AI                                                                                                                                  budget-centric scope
+Framework section and its implementation and prelim-                                                                                                                                  Single-domain (diabetes only); no
+                                                                                                                                                                                      agents; no neurodivergence support
+
+
+
+                                                                                                                                                               Key limitation
+inary results in the Implementation and Results section.
+The Limitations section provides the key limitations of the                                                                                                                           Cooking-only scope; no disability/neuro-
+                                                                                                                                                                                      divergence; no multi-agent; no EHR/IoT
+study. The Conclusion section provides conclusion and
+                                                                                                                                                                                      Medication reminders only; no diet
+future directions of the paper.                                                                                                                                                       ­planning; no multi-agent; no EHR/IoT
+   A preliminary conceptual outline of this framework was
+disseminated as an arXiv preprint (Jan et al., 2025b) dur-
+                                                                                                                                                               XAI                    Yes
+                                                                                                                                                                                                                   No
+                                                                                                                                                                                                                                                 No                                   No                                  No               No
+ing the manuscript development period. That preprint was                                                                                                                                                           No
+
+merely a conceptual introduction to the four-agent structure
+
+
+
+
+                                                                                                                                                                                                                                                 Yes (budget-aware nutrition)         Yes (food recommendation)
+and the Perception–Reasoning–Action (PRA) loop. The
+present journal submission offers a substantial extension of                                                                                                                                                                                                                                                              Partial (cooking guidance
+
+                                                                                                                                                                                                                   Yes (deep generative)
+that preliminary account in the following ways: (1) 500 syn-
+                                                                                                                                                                                                                                                                                                                          only)
+thetic profiles of users were evaluated, across 8 weeks, with
+
+
+                                                                                                                                                               Meal planning          Yes (RL-based)
+a full simulation-based evaluation presented, which provides
+
+                                                                                                                                                                                                                   Yes (LLM-based)
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                            Abbreviations: Accessibility design, accessibility for sensory, motor, and cognitive differences as a core architectural principle; EHR, electronic health record; IoT, Internet of Things; LLM, Large Language
+concrete performance metrics for the four agents presented
+                                                                                                                                                                                                                                                                                                                          No
+(nutritional adequacy, adherence, usability, caregiver bur-
+den reduction); (2) four complete algorithmic specifications
+are provided, each with structured formal pseudo-code for
+the Meal Planner (Q-learning), the Reminder (contextual                                                                                                        EHR/                                                Partial
+                                                                                                                                                               IoT
+bandits), the Food Guidance [convolutional neural net-                                                                                                         Yes                                                 No                            No                                   No                                  No               No
+work (CNN)/BERT multimodal classification], and the
+Monitoring [Gated Recurrent Unit (GRU)-based anomaly                                                                                                                                                                                                                                  Partial (elderly, nudging
+
+
+
+
+                                                                                                                                                               Accessibility design
+
+
+
+
+                                                                  Table 1: Comparative analysis of ADAPT against prior multi-agent and AI health frameworks.
+                                                                                                                                                                                      Yes (core principle)
+detection] agents; (3) a detailed safety, privacy, and govern-                                                                                                                                                                                                                        UI)
+ance framework is formalized, including regulatory path-
+way analysis under criteria of the FDA and EU MDR 2017,                                                                                                                                                                                                                               Partial (voice, elder-
+data-minimization principles, and explicit clinical edge-case                                                                                                                                                                                                                         ly-focused)
+handling logic as structured text; (4) the MCP routing archi-                                                                                                                                                      No
+                                                                                                                                                                                                                                                 No                                   Yes (disability-targeted)
+tecture and external connector protocol are fully specified;                                                                                                                                                       No
+(5) an accessibility analysis is presented by disability con-
+dition (six distinct population subgroups); and (6) a com-                                                                                                                            Yes (4 agents
+
+
+                                                                                                                                                               Multi-agent                                                                       Yes (agentic)
+prehensive comparative lite
+
+…[truncado en MD; ver RSL/MD/_raw]…
+
+<a id="pdf-p4"></a>
+### [PDF p.4] 4 M. S. Siddiqui et al.: ADAPT
+- Locator: `R457-adapt-an-agentic-ai-framework-for-people-with-disabilities-and-neurodivergence.pdf` · página **4** / 18
+
+4                                                                                                    M. S. Siddiqui et al.: ADAPT
+
+
+limitation, and impairment (World Health Organization,              Importance of structured routines
+World Bank, 2011). Abnormalities in physical, sensory,
+cognitive, and psychosocial ability often accompany long-           Healthy routines provide predictability and stability, which
+term medical conditions, which demand careful lifestyle             can be particularly beneficial to people with neurodiver-
+adjustment. As an example, victims of spinal cord injury            gence and disabilities. Routine activities assist in adherence
+may lack the ability to move around, and therefore, cook-           to medications, sleep–wake cycles, anxiety reduction, and
+ing, shopping, and preparing healthy dishes will be hard.           energy expenditure management. Especially important in the
+Although intellectually disabled persons may struggle to            maintenance of metabolic fitness are nutritional habits such
+comprehend dietary guidelines or manage the amount of               as portioning and eating schedules. The reality is, however,
+food to eat, the visually impaired persons may struggle to          that such routines may be difficult to keep without external
+access nutrition data. Such limitations make conventional           help. Technology-assisted interventions such as reminder
+health management tools less effective and available.               applications and calendar notifications have also shown
+   Nutrition is essential in order to alleviate second-             potential in enhancing the level of adherence. Systematic
+ary health conditions that are associated with disability.          reviews of mHealth interventions for chronic disease man-
+AI-based approaches have demonstrated particular prom-              agement have confirmed measurable improvements in treat-
+ises in diabetes management, spanning glucose monitor-              ment adherence and patient outcomes (Hamine et al., 2015).
+ing, personalized dietary planning, and real-time adherence            However, these solutions are often not customized and
+support (Guan et al., 2023). People with disabilities face          flexible. They do not consider the variation in cognitive abil-
+a disproportionate risk of malnutrition, obesity, and cardi-        ities of people, sensory preferences, and medical needs since
+ovascular conditions compared to the general population             they predict the same user behavior. As a paradigm centered
+(Krahn et al., 2015—a finding that remains broadly con-             on individual user-specific patterns, the dynamic adaptation
+sistent with more recent epidemiological data). As per the          of interventions, and proactive assistance (as compared to a
+latest perspective, the environments of health services are         passive notification), agentic AI offers a possibility of bridg-
+the least integrated with AI technology (Garg et al., 2018;         ing this gap.
+Alowais et al., 2023; Aravazhi et al., 2025). Social stigma,
+lack of access to healthcare, and reliance on caretakers
+may exacerbate these disparities. Interventions to facilitate       Current digital health limitations
+self-management and healthy eating are needed in order to
+enhance long-term outcomes.                                         The availability of wellness coaching, exercise tracking,
+                                                                    and food tracking has been augmented by the proliferation
+                                                                    of mobile health (mHealth) applications. Although there are
+Neurodivergence and lifestyle routines                              more specific applications that help in the management of
+                                                                    chronic illnesses such as diabetes, other applications such
+Cognitive dissonances that do not reflect the standard are          as MyFitnessPal and Noom are popular and have behavioral
+known as neurodivergence (Kapp et al., 2013). Some of               nudges and calorie-tracking features. Although these plat-
+these are ASD, ADHD, dyslexia, dyspraxia, and Tourette              forms are common and often used, they are often inaccessi-
+syndrome. Neurodivergent people often have problems with            ble to people with disabilities due to various factors such as
+behavioral control, executive functions, and sensory integra-       non-inclusive content, overpowering interfaces, or a lack of
+tion. These challenges directly affect meal planning, grocery       compatibility with screen readers. In addition, neurodiver-
+shopping, food preparation, and meal-eating schedules (Jan          gent users tend to complain about the rigid and prescriptive
+et al., 2025a,b).                                                   systems that fail to accommodate their needs in terms of sen-
+   To illustrate, food preferences could be affected by the         sory and mental capabilities of an individual user misfit in
+increased sensory sensitivity in autistic people, which leads       most aspects.
+to restrictive diets that are not balanced in nutritional content      Siloed functionality is another weakness. These current
+(Bandini et al., 2017). AI is very useful in nutritional analy-     tools might be limited to tracking meals, reminding you to
+sis. It requires minimal user input and can measure and ana-        eat, or recommending recipes, but they do not necessarily
+lyze foods through image recognition. The latest machine            work in a unified package to support a lifestyle. Clinicians
+learning methods can deliver nutrient profiles instantly by         and caregivers are frequently required to put together vari-
+analyzing photos of meals, which is achievable by the lat-          ous data that may not be related to each other, resulting in
+est machine learning techniques that analyze the photos of          a lack of services provided and poor health outcomes. This
+meals in real time, without the need to know the food items         highlights the need for unified structures that are capable of
+involved in the meals (Zheng et al., 2024). The ADHD suf-           making smart, autonomous judgments and are accommoda-
+ferers could experience difficulties with their time manage-        tive in nature.
+ment and impulsivity, and this may result in unstable die-
+tary habits or reliance on convenience foods (Faraone et al.,
+2021). These lifestyle pitfalls can worsen such long-term           Agentic AI as an opportunity
+health issues as obesity, diabetes, and gastrointestinal disor-
+ders. Structured routines, visual cues, and adaptive systems        The ability to act autonomously, collaborate with other
+are important in order to assist neurodivergent populations to      agents, and work toward user-oriented goals in dynamically
+live healthier lifestyles.                                          changing environments differentiates agentic AI, which
+
+Journal of Disability Research 2026
+
+<a id="pdf-p5"></a>
+### [PDF p.5] M. S. Siddiqui et al.: ADAPT 5
+- Locator: `R457-adapt-an-agentic-ai-framework-for-people-with-disabilities-and-neurodivergence.pdf` · página **5** / 18
+
+M. S. Siddiqui et al.: ADAPT                                                                                                   5
+
+is grounded on multi-agent system (MAS) architectures.           randomized controlled trial demonstrated that personalized
+Unlike the non-agentic recommender systems, agentic AI           nutrition interventions produce significantly greater behav-
+adjusts to changes in user preferences, context, and envi-       ioral changes compared to generalized dietary advice (Celis-
+ronment. These systems are managed by a central reason-          Morales et al., 2017). For instance, Guan et al. (2023) pro-
+ing engine and may be specialized agents for specific tasks      posed an RL-based system that recommends a balanced diet
+in the healthcare sector, like behavior monitoring, nutri-       to diabetic patients by clustering. Meyers et al. (2015) used
+tional analysis, or adaptive scheduling. Syed et al. (2025,      deep learning to recognize food images, and they incorpo-
+2026a,b) proposed frameworks for integrating finance-            rated this technique into a smartphone in order to track a
+aware and nutrition-aware agentic AI systems. Due to these       diet and give feedback in real-time based on the diet.
+features, agentic AI is particularly the most appropriate to        Designing health-aware meal recommendation algo-
+tackle the problem of neurodiversity and disability, where       rithms has been an ongoing pursuit in the field (Freyne and
+accessibility, flexibility, and personalization are essential    Berkovsky, 2010; Freyne et al., 2011; Harvey, Ludwig and
+factors to consider.                                             Freyne and Berkovsky (2010); Ge, Ricci and Massimo, 2015;
+   It has been demonstrated that technological advancements      Ge et al., 2015). With the advent of LLMs, the design space
+can expose opportunities that could potentially provide care     has grown significantly more recently. The study conducted
+to the elderly in a specialized way and manner of their own      by Guo et al. (2025) on meal planning with ChatGPT showed
+preference, as well as provide food and beverages, AI, and       that, in controlled environments, dietary interventions using
+robotics (Kramarow, Warner and Chen, 2014; Salzmann-             LLM could greatly enhance short-term adherence, but sus-
+Erikson, 2023; Rashid and Kausik, 2024). Designing ­agentic      tainability and depth of personalization are still challenges.
+AI systems can transform digital health to serve vulnerable      Similarly, Papastratis et al. (2024) proposed a deep genera-
+populations and include inclusivity, accessibility, and trans-   tive model combined with ChatGPT for the AI-based nutri-
+parency in its design. They may assist individuals to be more    tion recommendations, achieving high accuracy in a clinical
+independent, reduce the burden of taking care of other peo-      pilot, and calling for multimodal sensing.
+ple, and promote healthier lifestyles, which may result in          AiNutrify is a related work that used the CrewAI mul-
+improved quality of life and more social interactions.           ti-agent framework to build a closed-loop LLM-based
+                                                                 meal planning personal assistant that shares concepts with
+                                                                 ADAPT’s agent-level structure, but does not consider acces-
+                                                                 sibility requirements or the neurodivergent population.
+LITERATURE REVIEW                                                Another line of inquiry was the incorporation of medical
+                                                                 guidelines into recommendation logic. To make changes in
+Extensive research has been done on digital interventions for    the suggestions dynamically, Papastratis et al. (2024) sug-
+diet, health management, and assistive technologies. Viewed      gested a hybrid tool that would integrate reported symptoms
+through the prism of agentic AI, however, there are few stud-    of the user with nutrition databases. Similarly, Ge et al.
+ies that explicitly combine these with neurodivergent and        (2015a, 2015b). examined the application of collaborative
+disabled individuals. The six themes discussed in this sec-      filtering to the proposal of low-sodium diets to individuals
+tion, in terms of the relevant literature review, include die-   with cardiovascular diseases. These works bring up the fea-
+tary recommender systems, disability aid technologies, AI        sibility of AI-based personalization but also point to its lim-
+and neurodivergence, multiple-agent healthcare, adaptive         itations: most of the systems target specific medical groups,
+reminders and behavioral nudges, and intake monitoring           ignore the problem of accessibility, and rarely consider neu-
+through the use of IoT/AI. It is on the basis of these works     rocognitive diversity.
+that we have proposed an agentic AI framework.                      Recently, motivational factors of diet adherence have
+                                                                 been examined as well. As an example, in comparison with
+                                                                 generic guidance, Celis-Morales et al. (2017). concluded that
+Dietary recommender systems                                      customized web-based dietary feedback enhanced adherence
+                                                                 significantly. The interface was, however, not user-friendly
+Dietary recommender systems have experienced a dramatic          with individuals who were cognitively challenged or with
+change over the last decade due to the evolution of machine      less digitally literate individuals. This is an important obser-
+learning, personalization algorithms, and human–com-             vation: accessibility is equally vital to the process of ensuring
+puter interaction. Specifically, machine learning and            equity of results as personalization; by employing ­proactive
+deep-learning methods can greatly enhance the accuracy           modifications, multimodes, and adaptive interfaces, designer
+and performance of the diet assessment and observation of        agentic AI can close this gap.
+eating habits (Salinari et al., 2023; Theodore Armand et al.,
+2024). Among the earliest approaches to nutrition-conscious
+recommendation, Freyne and Berkovsky (2010). offered an          Assistive technologies for disabilities
+approach that prioritizes the importance of finding a com-
+promise between user preferences and health limitations,         Assistive technological research has been aimed at providing
+emphasizing the significance of striking a balance between       more independence and quality to the lives of people with dis-
+user preferences and health constraints. This was followed       abilities alongside the development of dietary recommenda-
+by subsequent research that incorporated user profiles, con-     tion systems. Assistive technologies are as simple as a screen
+textual factors, and health goals. A large-scale European        reader and as complex as AI-based systems. According to
+
+                                                                                    Journal of Disability Research 2026
+
+<a id="pdf-p6"></a>
+### [PDF p.6] 6 M. S. Siddiqui et al.: ADAPT
+- Locator: `R457-adapt-an-agentic-ai-framework-for-people-with-disabilities-and-neurodivergence.pdf` · página **6** / 18
+
+6                                                                                                 M. S. Siddiqui et al.: ADAPT
+
+
+Krahn et al. (2015) assistive technologies have two func-        eating habits (Bandini et al., 2017). The personalization of
+tions: they facilitate social inclusion and make up for the      recommendations, based on sensory sensitivity and main-
+functions of the impaired person. This can be voice-enabled      taining nutritional balance, can be used to accommodate
+kitchen appliances, available recipe websites, and simplified    these trends with the help of AI.
+shopping assistants as far as diet plans are concerned.             Many studies have pointed out the potential of AI to aid
+   There are already promising digital health tools that are     executive-functioning problems that are characteristic of
+specifically developed with people with intellectual and         autism and ADHD. As an example, Faraone et al. (2021)
+developmental disabilities (IDDs). Mohammed et al. (2018)        discovered that although machine learning models could
+demonstrated that the use of mobile reminder apps by adults      forecast adherence patterns, the use of digital reminders
+with intellectual disabilities improved task completion and      increased adherence to structured routines in children with
+independence in their assessment. The study did, however,        ADHD. Similarly, Daniels et al. (2021) proposed the use of
+emphasize the need to have adaptive systems that are capa-       AI-based behavioral tracking devices to assist individuals
+ble of adjusting complexity levels to match cognitive abil-      with autism to cope with their daily activities. These articles
+ities. On the same note, mainstream nutrition applications       indicate the applicability of adaptive technologies to com-
+are often not designed in line with accessibility standards,     pensate for the deficiencies in self-monitoring, time manage-
+thereby restricting their functionality to those with visual     ment, and planning.
+or motor disabilities, as demonstrated in prior accessibility       AI has also been used in augmentative and alternative
+studies.                                                         communication (AAC). Neurodivergent groups can become
+   Advanced systems must support numerous input modal-           more active and self-reliant using predictive keyboards, text-
+ities (e.g., voice, gesture, touch) and adjustable narration     to-speech applications, or visual schedule applications, etc.
+speeds to make them more usable by individuals with hearing      (Light et al., 2019). Since this ensures the availability of the
+or vision deficiencies (Cheng et al., 2018; Seiderer, Ritschel   population with communication challenges, it is necessary
+and André, 2020; Di Martino, Delmastro and Dolciotti,            to integrate such multimodal supports in dietary and health
+2021; Kiran et al., 2024; So et al., 2025). Empirical evalu-     management systems. Digital health interventions for chil-
+ation of voice assistants with impaired users has confirmed      dren and young people with mental health problems have
+that while such interfaces offer meaningful accessibility        shown meaningful effects on symptom management, fur-
+benefits, unresolved barriers persist for users with complex     ther supporting the case for technology-based approaches
+communication needs (Masina et al., 2020). Recent studies        across neurodivergent populations (Hollis et al., 2017).
+have employed AI in enhancing inclusivity. As an example,        Importantly, autistic adults themselves are recognized as
+Masina et al. (2020) recommended a voice-activated helper        critical autism experts whose perspectives should inform the
+that integrates the visual impairment accessibility features     design of inclusive AI tools (Gillespie-Lynch et al., 2017).
+with dietary notifications. Similarly, Esteve et al. (2026)      The latter studies demonstrate that AI is especially flexible
+introduced an intelligent cooking assistant that blends          and personalized, which is why it suits the needs of neurodi-
+voice-delivered instructions with detailed adaptive instruc-     vergent people rather well.
+tions to support the motor-impaired individuals in cooking.
+More recent work has explored proactive conversational
+cooking companions for elderly users as a promising direc-       Multi-agent healthcare systems
+tion in assistive dietary support (Esteve et al., 2026). Our
+proposed agentic system builds on these pieces and must       MASs, which are entities that offer autonomy, scalabil-
+offer personalization, autonomy, and multi-agent collabora-   ity, and modularity, have increased in use in the healthcare
+tion, besides being accessible.                               industry. MAS consists of agents that are specialized to col-
+   The importance of co-design is also highlighted in the     laborate in achieving shared objectives often in unpredicta-
+greater literature of disability and technology. A study by   ble and dynamic contexts (Jennings, 2000). A foundational
+Shinohara and Wobbrock (2016) revealed that including         review of agent-based systems in healthcare documented
+people with disabilities in the design process can lead to    their wide applicability across clinical decision support,
+more inclusive and successful results. This concept aligns    patient monitoring, and workflow management (Isern,
+with the philosophy of agentic AI that requires autonomous    Sánchez and Moreno, 2010). Clinical applications of MAS
+action in addition to adaptive learning to user feedback in anhave topped the list of fields where MAS is utilized, such as
+open and interactive manner.                                  the hospital workflow optimization, diagnostic decision sup-
+                                                              port, and patient monitoring. Isern et al. (2010) implemented
+                                                              a multi-agent platform in the field of chronic disease man-
+AI and neurodivergence                                        agement, which managed the glucose levels of the patients,
+                                                              recommended interventions, and communicated them to
+The fields of education, work, and healthcare have studied caregivers. Hamine et al. (2015) developed an agent-based
+how AI can help neurodivergent people. The authors of the medication adherence model and demonstrated that proac-
+article by Kapp et al. (2013) indicate that inclusive tech- tive prompts and adaptive feedback loops enhanced the level
+nologies must encourage autonomy and identity and self-­ of compliance. It is possible to consider these systems as an
+regulation instead of deficit models. Neurodiversity often illustration of how agentic AI can improve patient outcomes
+influences behavioral control and sensory preferences in the by distributing tasks between independent yet cooperative
+context of diet, which leads to restrictive diets or abnormal entities.
+
+Journal of Disability Research 2026
+
+<a id="pdf-p7"></a>
+### [PDF p.7] M. S. Siddiqui et al.: ADAPT 7
+- Locator: `R457-adapt-an-agentic-ai-framework-for-people-with-disabilities-and-neurodivergence.pdf` · página **7** / 18
+
+M. S. Siddiqui et al.: ADAPT                                                                                                     7
+
+   The elderly care also have been studied in terms of the          Monitoring intake with IoT and AI
+treatment and rehabilitation with MAS. For instance, Kiran
+et al. (2024). introduced a multi-agent home healthcare envi-       A second important aspect of food management is main-
+ronment that uses caregiver dashboards, wearable devices,           taining a monitor on food consumption. Conventional tech-
+and virtual assistants. The system made the senior patients         niques, like self-reporting or manual logging, are frequently
+more independent by monitoring their daily activities and           challenging and imprecise. Mobile dietary assessment apps,
+providing customized interventions. Such architecture can           while increasingly common, face ongoing concerns about
+directly benefit people with disabilities and neurodiversity,       reliability, user burden, and suitability for populations with
+often requiring such support in order to keep routines going        limited digital literacy or cognitive challenges (Khazen
+and keep an eye on health parameters. The literature has con-       et al., 2020). The advancements in IoT and computer vision
+sistently identified three advantages of MAS in the health-         have created new opportunities for automated monitoring.
+care sector, which include resilience, scalability, and adapt-      Meyers et al. (2015) demonstrated a high accuracy of dietary
+ability. These features are very similar to the requirements of     assessment through deep-learning models of recognizing
+inclusive lifestyle and nutrition management. The proposed          food items in smartphone photos. The broader challenge of
+system will employ MAS principles to offer holistic and             food image classification and volume estimation for dietary
+flexible support through assigning particular agents to meal        assessment has been reviewed comprehensively, identifying
+planning, reminders, food guidance, and monitoring intake.          key open problems in portion-size estimation and mixed-
+                                                                    dish recognition (Lo et al., 2020). Similarly, Meyers et al.
+                                                                    (2015) proposed Im2Calories, a calorie estimation system
+Adaptive reminders and behavioral                                   based on the image that turned out to be practical in the con-
+­nudges                                                             sumer world and showed the possibility of its use and utili-
+                                                                    zation by the researchers of the field of computer science and
+Behavioral science research demonstrates that reminders and         mathematics, who created it to assist others with their dieting
+nudges are important to promote the following healthy rou-          and exercise routines.
+tines. It is established that digital notifications via wearables       Also, ambient sensors and wearable sensors have been
+or mobile devices improve commitment toward dietary goals,          employed. Thomaz, Essa and Abowd (2015) explored sen-
+exercise routines, and medication plans. Nevertheless, the          sors on the wrist to signal eating behavior, while Dong et al.
+effect of habituation is that the fixed reminders can become        developed an intake-monitoring device based on an acoustic
+ineffective with time. Adaptive reminders, on the other hand,       sensor to recognize chewing and swallowing. These tech-
+adjust the content, timing, and modality based on the con-          niques reduce the amount of user interaction, particularly
+text and user interaction. Compared with fixed reminders,           where people with poor motor control or cognitive deficits
+Mohammed et al. (2018) demonstrated that adaptive remind-           are concerned.
+ers had a significant positive effect on task completion among          There is also the enhancement of effectiveness by
+intellectually disabled individuals. Similarly, Rabbi, Hane         incorporating intake monitoring with feedback systems.
+Aung and Hamine et al. (2015) applied RL to enhance the             Papastratis et al. (2024) demonstrated that a combination of
+increase in adherence to exercise programs by optimizing the        food recognition and symptom monitoring allowed making
+time when mobile health messages should be delivered. Such          more ­specific and individualized dietary recommendations
+approaches suggest that AI-related flexibility has the ability      ­possible. Similarly, Esteve et al. (2026). proposed an IoT-
+to enhance the effectiveness of reminders, particularly among        controlled intelligent-kitchen helper system, which is able
+groups that have executive-functioning problems.                     to provide real-time nutritional labels on foods with a smart
+   Nudging methods have also been included in digital health         kitchen assistant to the end users. Even though the concepts
+systems. A comprehensive review identified 23 technolo-              of accessibility and personalization are just developing, these
+gy-mediated nudging strategies applicable to health behavior         systems show the growing power of AI and IoT in delivering
+change, highlighting the breadth of design options available         smooth and automated monitoring.
+to system designers (Caraban et al., 2019). Caraban et al.
+(2019) i­mplemented minor modifications to the interface
+in mobile apps to encourage people to eat healthier food.           Synthesis of literature
+Similarly, Purohit et al. (2023). studied digital nudging strat-
+egies and discovered that context-awareness and personali-          These domains have several themes that are recurrent. To
+zation were indispensable to the success of these strategies.       begin with, in both behavioral nudging, assistive technol-
+Smart reminder systems designed specifically for older              ogy, and dietary advice, personalization is always observed
+adults with disabilities have demonstrated improved medi-           to be critical to effectiveness. Second, mainstream solutions
+cation adherence outcomes in this population (Mohammed,             often do not consider the aspect of accessibility, as they do
+Ibrahim and Cavus, 2018). Recent work on nudging in dig-            not meet the requirements of individuals with neurodiver-
+ital health has further highlighted the importance of timing,       gence or disabilities. Third, most systems are only capable of
+personalization, and co-design in maximizing intervention           managing one aspect of health; it is not common to integrate
+effectiveness (Purohit et al., 2023). Flexibility is also essen-    multiple functions such as meal planning, reminders, guid-
+tial in the case of neurodivergent groups because nudges            ance, and monitoring.
+have to be designed in such a way that they do not overbur-            These regular gaps show the importance of an agen-
+den sensory or cognitive functions.                                 tic AI platform designed specifically for disability and
+
+                                                                                      Journal of Disability Research 2026
+
+<a id="pdf-p8"></a>
+### [PDF p.8] 8 M. S. Siddiqui et al.: ADAPT
+- Locator: `R457-adapt-an-agentic-ai-framework-for-people-with-disabilities-and-neurodivergence.pdf` · página **8** / 18
+
+8                                                                                                  M. S. Siddiqui et al.: ADAPT
+
+
+neurodivergence. However, previous multi-agent health sys-        Architectural overview
+tems show the benefit of autonomous and modular agents
+collaborating, but they were developed for general chronic        The system is layered and is related to the workflow pre-
+disease management without consideration for accessibil-          sented in Figure 2.
+ity, sensory sensitivity, or neurocognitive diversity. Dietary       Application and Interface Layer. The interface being
+AI systems (e.g., Papastratis et al., 2024; Guo et al., 2025)     used by users is multimodal, and it accommodates voice,
+push for personalization without providing the coordination       text, high-contrast and large-visuals, captions, and haptics.
+and infrastructure necessary to make AI agents accessible.        Screen assistants and platform access services are examples
+Assistive technology research focuses on accessibility but        of first-class functionality. In the interface, inputs are nor-
+lacks multi-domain health functionality. ADAPT tackles            malized and local context information like time, location,
+these compounded challenges by combining the advan-               and applicable accessibility mode is attached.
+tages of multi-agent architecture, adaptive learning, multi-         Decision Layer. A large language model (LLM) deciphers
+modal accessibility, and EHR/IoT integration under a single       the structured prompt and chooses the following action. The
+umbrella, built from scratch for the disability and neuro-        LLM initially reasons about intent and constraints and sug-
+divergence community. Table 1 summarizes how ADAPT                gests which specialized agent should execute the task.
+compares to the most directly relevant prior systems across          Routing Layer (MCP). The MCP acts as a transla-
+key design dimensions.                                            tor between the language-level reasoning and the tools.
+                                                                  It encapsulates the intent, user profile, and the context to
+                                                                  which the intent applies in a call to a tool and routes that
+                                                                  call into an agent/third-party connector that is selected.
+PROPOSED AGENTIC AI                                               MCP too transfers results and intermediate state to the
+­FRAMEWORK                                                        coordinator.
+                                                                     Multi-Agent Layer. The domain work is done by four spe-
+This segment elaborates the working mechanism of the pro-         cialized agents: Meal Planner, Reminder, Food Guidance,
+posed agentic system, relates it to the architectural perspec-    and Monitoring. The agents are all done internally as PRA
+tive in Figure 2, which anchors the flow, and to the enlarged     loops (Figure 3). Each agent receives task-specific input,
+end-to-end graph with embedded PRA in Figure 3 and the            processes it using rule-based and empirical model-based rea-
+sequence diagram in Figure 4. It is intended to provide the       soning, and generates responses in the form of plans, guid-
+reader with a concrete idea of how user input is converted into   ance, or alert messages.
+safe and explainable actions that help people with disabilities      Reasoning and Coordination. Agents are coordinated
+and neurodivergence to eat healthy and develop a routine.         with the help of a central engine and a blackboard. Goals,
+
+
+
+
+Figure 2: End-to-end architecture of ADAPT (Agentic AI for Disabilities and Neurodivergence). Inputs pass from the interface
+to an LLM-based decision layer, then via Model Context Protocol (MCP) to specialized agents. Each agent executes a Percep-
+tion–Reasoning–Action (PRA) cycle and shares outcomes through a central reasoning engine, which enforces policies, inte-
+grates multimodal data (EHR, IoT, wearables, nutrition), and produces explainable, personalized recommendations. Reports
+and caregiver dashboards close the loop. Abbreviations: AI, artificial intelligence; EHR, electronic health record; IoT, Internet
+of Things; LLM, Large Language Model; UI, user interface; XAI, explainable AI.
+
+Journal of Disability Research 2026
+
+<a id="pdf-p9"></a>
+### [PDF p.9] M. S. Siddiqui et al.: ADAPT 9
+- Locator: `R457-adapt-an-agentic-ai-framework-for-people-with-disabilities-and-neurodivergence.pdf` · página **9** / 18
+
+M. S. Siddiqui et al.: ADAPT                                                                                                   9
+
+
+
+
+Figure 3: Perception–Reasoning–Action (PRA) across four agents. Meal Planner: uses profile, intake, and clinical rules to
+generate menus, adapting via feedback. Reminder: models engagement to optimize timing/modality and learns from user
+responses. Food Guidance: analyzes images/barcodes, aligns intake with plans, and returns approve/limit/swap cues. Moni-
+toring: processes wearable and kitchen data to detect anomalies and trigger alerts, refining sensitivity over time. Abbreviations:
+EHR, electronic health record; GI, glycemic index; GRU, Gated Recurrent Unit; HR, heart rate; IoT, Internet of Things.
+
+
+
+
+Figure 4: Sequence of interactions in the proposed agentic workflow for a real-world scenario. Sara submits a voice/text
+query with a meal photo; the Multimodal UI normalizes context; the LLM selects tools; the MCP routes to Food Guidance (and,
+if needed, Meal Planner); results are coordinated via the central blackboard; a gentle reminder is scheduled; and a concise,
+explainable recommendation is returned to the user and (optionally) logged to the caregiver dashboard. Abbreviations: LLM,
+Large Language Model; MCP, Model Context Protocol; UI, user interface.
+
+
+
+events, and shared context are positioned on the blackboard.         Data and Policy Layer. Many integrated levels offer con-
+The reasoning core applies clinical rules, resolves conflicts,    trolled accessibility of electronic health data, nutrition data-
+and implements long-term changes to policies.                     bases, wearable links, and intelligent-kitchen IoT. A policy
+
+                                                                                     Journal of Disability Research 2026
+
+<a id="pdf-p10"></a>
+### [PDF p.10] 10 M. S. Siddiqui et al.: ADAPT
+- Locator: `R457-adapt-an-agentic-ai-framework-for-people-with-disabilities-and-neurodivergence.pdf` · página **10** / 18
+
+10                                                                                                  M. S. Siddiqui et al.: ADAPT
+
+
+store works with consent, scopes, and minimization of the          low-vision users, the system supports the use of screen read-
+data. Policy checks will be made on all agent requests and         ers and provides descriptions of images where necessary. For
+then the data will be retrieved.                                   deaf or hard-of-hearing users, it reflects speech using text
+   Feedback and Collaboration. The system will provide a           and icons. It has voice-first control and big tap targets for
+user interface with explainable outcomes and, at the discre-       users with motor impairments. For neurodivergent users, it
+tion of the user, will post the results in the form of summa-      provides low-stimulation layouts, pacing predictability, and
+ries on a caregiver or clinician dashboard. Decisions can be       concrete and simplified language.
+turned into simple rationales in a module named the expla-            LLM Decision Node. The LLM converts a normalized
+nations module [explainable AI (XAI)].                             prompt into a plan for an agent. It uses domain instructions,
+                                                                   user preferences, and power limits to make decisions to
+                                                                   call Food Guidance to be recognized, Meal Planner to be
+Interaction flow from input to action                              swapped, Reminder to be adhered to, or monitoring to be
+                                                                   checked. It gives a suggested call graph to be run with MCP.
+The top-down flow in Figure 2 and the sequence in Figure 4            MCP Routing and Third-Party Connectors. MCP is
+follow the same steps.                                             the protocol that transforms a plan into tool calls. It gives
+   Step 1: Input and context. Multimodal input is offered by       the target agent an external service, such as a grocery API, a
+the user. The interface adds the context like the time, recent     nutrition database, a wearable SDK, or a calendar provider,
+compliance, and access preferences.                                provides context, selects the connection, and sends a refer-
+   Step 2: First-pass reasoning. LLM breaks down with intent       ence request. The responses are sent back to the blackboard
+and offers a few or several agents to be called. It can also       with trace metadata so that XAI can subsequently explain
+suggest an alternative if the main action is not admissible.       what occurred.
+   Step 3: MCP routing. MCP prepares a tool call with its             Meal Planner Agent (PRA). Perception consists of
+purpose, user profile, and other supplementary information         profile, EHR limitations, sensory and cultural choices, and
+such as images or sensor referral and routes it to the selected    recent intake. Thoughtful combination is the integration of
+agent.                                                             clinical regulations and a policy learner that allows users
+   Step 4: Agent execution. The chosen agent activates its         to balance between the macronutrients, the time budget,
+PRA cycle: it receives the appropriate signals, uses clinical      and the user acceptance. Action produces a daily or weekly
+rules and acquired policies, and then performs by releasing        menu, safe substitution receivers, and shopping lists. The
+a plan, a course of a plan, or a warning. Findings are put on      agent would prefer gradual changes and routines rather than
+the blackboard.                                                    implementing drastic dietary changes.
+   Step 5: Coordination. The reasoning core will read agent           Reminder Agent (PRA). Perception monitors the inter-
+outputs; access any required facts in the data layer, which is     action and events missed, sleeping periods, and device pres-
+controlled by the policy; resolve any conflicting situations;      ence. Contextual bandits or schedule policies are applied to
+and complete the response.                                         reasoning to select the time and the modality that are most
+   Step 6: Feedback and learning. The interface presents a         likely to be accepted by the user. Action provides soft deliv-
+brief and user-friendly card and, when activated, the dash-        eries of low friction prompts using vibrations, big-text ban-
+board gets a summary. Signals and consequences of rein-            ners, icons, or relaxing sound. The agent does not experience
+forcement are recorded to work with the gradual enhance-           alert fatigue because it learns favorite slots.
+ment of the policy.                                                   Food Guidance Agent (PRA). Perception applies com-
+                                                                   puter vision and text recognition to identify foods and esti-
+                                                                   mate their quantity, as well as to de-scan long ingredient lists
+Perception–Reasoning–Action across the                             or barcodes. Reasoning is a process that compares the iden-
+stack                                                              tified items with the current plan and clinical rules and cal-
+                                                                   culates macro- and micro-implications. The action approves,
+The interface carries out perception through capturing             limits, or swaps change decisions, as well as provides step-
+voice, text, images, haptics, and context normalization. The       by-step assistance with cooking in a modality similar to that
+cross-cutting reasoning offered by the LLM and the central         of the user.
+coordinator is an intent selection, conflict management, and          Monitoring Agent (PRA). Heart rate, steps, sleep proxy,
+safety reasoning. The special agents have their own PRA loop       optional glucose feeds, and smart kitchen sensor events are
+depending on the task involving the domain. Agents perform         examples of wearable data aggregates that are represented
+actions and make them available to the user in a format that       by perception. Logic identifies irregularities and links them
+can be readily accessed. MCP is a transport bridge and a con-      with the recent meals and practices. Action sends a notifi-
+text bridge; it does not use clinical decision-making.             cation, recommends a snack or drink, or alerts a parent or
+                                                                   guardian if permission has been approved and the risk limit
+                                                                   has been crossed.
+Core components                                                       Reasoning Core and Blackboard. The blackboard con-
+                                                                   tains mutual context, objectives, events, and intermediate
+Multimodal User Interface. The interface has voice input           outcomes. The core reconciles the propositions on a priority
+and output interfaces, captions, large icons, and a high-con-      basis. The most important priorities are medical and safety
+trast palette, as well as discrete haptic feedback. For blind or   constraints; user preferences and nudge-based optimization
+
+Journal of Disability Research 2026
+
+<a id="pdf-p11"></a>
+### [PDF p.11] M. S. Siddiqui et al.: ADAPT 11
+- Locator: `R457-adapt-an-agentic-ai-framework-for-people-with-disabilities-and-neurodivergence.pdf` · página **11** / 18
+
+M. S. Siddiqui et al.: ADAPT                                                                                                 11
+
+have lower priorities. The main one aligns agents together        rationalizes on macronutrients, sets the limit, and marks the
+and achieves harmonized results.                                  dish as limited in the EHR. It posts results on the blackboard
+   XAI. The clarification module takes the call graph, black-     and returns two quick alternatives. The coordinator verifies
+board state, and the main rules and produces a condensed          the calendar, sensory inclination, and recent glucose trend
+reason. They may be the reasons for an approved meal for          and requests a 10-min low-glycemic substitute from the Meal
+a portion to be limited, or for a reminder to be delayed.         Planner. The Meal Planner visualizes objects around the pan-
+Explanations are authored in the modality and reading level       try, rationalizes due to lack, and therefore posts a lentil soup
+of the user’s choice and reflected on the dashboard when          and yogurt option with the macronutrients. The Reminder
+enabled.                                                          Agent provides a subtle visual reminder every 5 min. The
+   Policy, Consent, and Data Integration. The policy              user interface (UI) consists of a simple card with only a sin-
+store applies least privilege and keeps track of all the data     gle tap to start cooking steps. The dashboard receives a low-
+accessed. The requests indicate the type of data, its purpose,    risk note when enabled. The results are stored in such a way
+and the retention policy. The level of integration fetches the    that subsequent decisions regarding lunch in the same time
+necessary facts at the time of the decision, for instance, con-   period become more convergent.
+traindication, sodium intake, or a recent glucose value. The
+decision and the explanation identifier are attached to all
+writes.                                                           Communicating with third-party apps via
+   Dashboards and Collaboration. Caregivers and clini-            MCP
+cians can examine summaries, adherence patterns, and alert
+history with permission. The controls enable them to make         MCP is used not only for internal agent calls but also for
+changes to guardrails, as well as leave notes that can refine     external connectors. A consistent audit trail is offered by the
+future decisions without eliminating user autonomy.               same packaging. It might be a grocery search to swap some-
+                                                                  thing, a product barcode search, calendar queries to not dis-
+                                                                  turb a meeting, or recent physiological wearable APIs. Each
+Disability and neurodivergence support                            call undergoes a check for purpose, scope, and retention pol-
+                                                                  icy. The answers contain trace identifiers so that the external
+The architecture bakes accessibility into every layer rather      facts to which they refer in their answer can be explained.
+than adding it later.
+   The interface is also screen-reader first and includes all
+text on the icons, with guidance that can be accessed as          Safety, privacy, and governance
+speech and haptics by blind and low-vision users. For deaf
+or hard-of-hearing users, the system replicates audio in the      Any learned policy is only applied after safety-critical safe-
+form of text and icons, provides captioned instructions,          guards are in place. The policy store is the implementation of
+and may be integrated with device-level hearing support.          hard-coded medical constraint layer, on top of which prefer-
+For users with motor impairments, the interface is voice-         ence-based optimization is performed, so that clinical rules
+first with large tap targets and hands-free flows; the Food       (glycemic threshold, allergen exclusion, medication interac-
+Guidance Agent works with smart appliances with limited           tion contraindication, etc.) always come before it. When the
+motor load. In the case of cognitive and intellectual disabili-   data is not available or sensors become unavailable, the sys-
+ties, the interface language is simple, and distinct pictograms   tem takes conservative safe actions. Explicit exception logic
+with step pauses are applied; intermediate reminders are          is used to deal with clinical edge cases. If the Monitoring
+actual and time-based. In the case of autism spectrum and         Agent detects a physiological reading of a serious adverse
+ADHD, the system provides low-stimulation visualization,          event [such as a glucose reading showing severe hypoglyce-
+predictable structures, sensory-sensitive meal planning, and      mia (SH) or an anomaly in the heart rate outside of defined
+tolerance-based timing, which follows focus window. In the        ranges], then the system automatically escalates to the car-
+case of mental illnesses like anxiety or depression, remind-      egiver or emergency contact (depending on the user’s con-
+ers are caring and nonjudgmental, and the planner assists an      sent) and reduces the frequency of the non-urgent nudges.
+individual with comfort foods within the boundaries of the           The Meal Planner Agent is prohibited from recom-
+clinic.                                                           mending foods flagged as allergens in the user profile;
+                                                                  any substitution recommendation passes through an aller-
+                                                                  gen-check gate before being delivered to the user. If an
+Concrete use case and sequence                                    allergen flag is detected, the agent requests human confir-
+                                                                  mation before proceeding. From a regulatory standpoint, a
+The flow in Figure 4 illustrates how the system operates          system that integrates EHR data and physiological sensor
+in practice for a user who is autistic and managing type 2        feeds to generate real-time dietary recommendations for
+diabetes.                                                         users with chronic conditions would likely be classified as
+   At 12:20, the user asks if lunch is appropriate and uploads    Software as a Medical Device (SaMD) under FDA guid-
+a picture. The interface adds context. The LLM selects Food       ance (21st Century Cures Act) or as a Class I or Class IIa
+Guidance and, if necessary, switches to the Meal Planner.         medical software device under the EU MDR 2017/745,
+The MCP routes the request. Food Guidance identifies the          depending on jurisdiction and the specific risk profile. The
+picture, the creamy pasta, and approximately its size. It         current prototype is a research demonstrator and has not
+
+                                                                                    Journal of Disability Research 2026
+
+<a id="pdf-p12"></a>
+### [PDF p.12] 12 M. S. Siddiqui et al.: ADAPT
+- Locator: `R457-adapt-an-agentic-ai-framework-for-people-with-disabilities-and-neurodivergence.pdf` · página **12** / 18
+
+12                                                                                              M. S. Siddiqui et al.: ADAPT
+
+
+been submitted for regulatory clearance; formal regulatory       that employs a message broker (RabbitMQ) was utilized to
+compliance assessment has been identified as a prerequi-         ensure asynchronous communication. The prototype was
+site for any clinical deployment and is a priority for future    deployed on a hybrid system that consisted of cloud-based
+work. The XAI module is designed to generate clinically          AI services, a smartwatch extension, and an Android/iOS
+interpretable explanations. Rationales are anchored to spe-      mobile application.
+cific data inputs (e.g., “This portion was flagged because          The development framework incorporated:
+your glucose reading at 11:45 was 9.2 mmol/l, above your         • Programming Languages: Python for AI models and
+target ceiling of 8.0 mmol/l”) rather than opaque model             reasoning logic; Kotlin/Swift for mobile interfaces.
+outputs. Explanation depth and reading level are configur-       • Databases: PostgreSQL for structured data (e.g., meal
+able by the user and caregiver.                                     plans, reminders) and MongoDB for unstructured logs
+   The outputs of XAI are checked during every cycle of the         (e.g., sensor streams).
+model updates to look for explanation drift or misleading        • Cloud Services: TensorFlow Serving for deploying
+explanations, as shown in the governance model, with the            trained models; Firebase for real-time notifications.
+purpose of a specific clinical–reviewer role. Agents request     • Accessibility Tools: Google TalkBack, Apple VoiceOver,
+only the necessary data fields for the decision that they           and custom large-font/high-contrast UI modes.
+need to make, and retention periods are bounded and pri-
+vacy governance follows the data-minimization principle.
+Consent can be given for or denied for individual data cate-
+                                                                 Architecture of the Agentic AI Nutrition
+gories (such as glucose data, location, and access to EHRs).
+All data transfers are logged with purpose, timestamp, and       System
+agent identifier. The liability framework for clinical deploy-
+                                                                 Figure 5 shows the Agentic AI Nutrition System’s inter-
+ment is an open design question requiring legal and regu-
+                                                                 nal workflow, which supports users who are neurodiver-
+latory engagement; the authors acknowledge that allocating
+                                                                 gent or cognitively impaired to manage their daily routine
+responsibility between system developers, deploying insti-
+                                                                 and nutrition. The Perception module detects the meal,
+tutions, and clinicians in cases of adverse outcomes will
+                                                                 the portion size, and further information like time, mood,
+require formal governance structures beyond the scope of
+                                                                 etc., from multimodal information (text, voice or image).
+this technical framework paper.
+                                                                 The Reasoning component predicts possible shortages or
+                                                                 missed meals, gets to know the preferences, and arranges
+                                                                 healthy, balanced meals. The Action module also provides
+Operational notes and failure handling                           interactive feedback and timely reminders, encouraging
+                                                                 users to stay engaged and respond proactively. An Adaptive
+In case the Food Guidance Agent is not able to classify an
+                                                                 Memory layer will never stop learning from past behavior
+image, then the system requests a clarifying photo or a small
+                                                                 to obtain better future suggestions. Accessibility and moral
+confirmation instead of making a guess. When wearables
+                                                                 layers ensure data privacy and peaceful, inclusive com-
+are not connected to the network, the Monitoring Agent will
+                                                                 munication, all controlled by the user. The whole system
+switch to intake and schedule signals. In case an external
+                                                                 increases nutritional independence and decreases the cog-
+connector is not working, the plan is calculated without it,
+                                                                 nitive load.
+and the reason is reported in the explanations. Agents also
+decay gracefully and leave the user behind without impeding
+core routines.
+                                                                 Architecture of the Agentic AI Healthcare
+                                                                 Monitor
+IMPLEMENTATION AND RESULTS                                       Figure 6 illustrates the design of the Agentic AI Healthcare
+                                                                 Monitor, a proactive platform that continuously monitors
+To demonstrate the feasibility of the proposed agentic AI        physiological events to improve safety and autonomy for
+system and evaluate its potential impact, a prototype of the     people with physical and/or neuromotor limitations. The
+proposed agentic AI system was implemented. This section         Perception layer gathers important information (heart
+covers the implementation process, the sources of data, algo-    rate, oxygen saturation, activity level) in the context
+rithms, system integration, and initial results of a simulated   of the environment (i.e., sensor on the wearable). The
+pilot study.                                                     Reasoning module predicts the health risk level, identifies
+                                                                 abnormalities, and models the physiological background
+                                                                 for each of the users. The Safety Layer eliminates false
+Implementation methodology                                       alarms and checks on abnormal readings, thereby avoiding
+                                                                 unnecessary notifications. The Action module provides
+The implementation was a modular one as per the mul-             flexible and understanding-notification (rest notification/
+ti-agent architecture of the Proposed Agentic AI Framework       escalation warning) based upon the current status of the
+section. Interoperability and scalability were enabled since     user. Accessibility and ethical layers help to ensure user
+each specialized agent was developed as a microservice. To       consent, privacy, and simplicity of the communication
+regulate agent communication, an event-driven architecture       process. This design fuels the establishment of reliable,
+
+
+Journal of Disability Research 2026
+
+<a id="pdf-p13"></a>
+### [PDF p.13] M. S. Siddiqui et al.: ADAPT 13
+- Locator: `R457-adapt-an-agentic-ai-framework-for-people-with-disabilities-and-neurodivergence.pdf` · página **13** / 18
+
+M. S. Siddiqui et al.: ADAPT                                                                                                    13
+
+
+
+
+Figure 5: Architecture of the Agentic AI Nutrition System for neurodivergent users. Abbreviation: AI, artificial intelligence.
+
+
+
+
+Figure 6: Architecture of the Agentic AI Healthcare Monitor for users with physical or neuromotor disabilities. Abbreviations:
+AI, artificial intelligence; HR, heart rate.
+
+inclusive, and real-time healthcare that is personalized to        • Demographics: age, gender, cultural dietary preferences.
+every patient’s needs.                                             • Medical: condition-specific dietary restrictions, medica-
+                                                                     tion schedules.
+                                                                   • Behavioral: food preferences, sensory sensitivities,
+Dataset design                                                       ­adherence patterns.
+                                                                   • Sensor data: simulated heart rate, blood glucose, hydra-
+To test the system, a simulated dataset was developed that            tion levels, step counts.
+was used to simulate the daily routine and nutritional needs       • Environmental: meal timing, location, and contextual
+of 500 individuals throughout the 8 weeks. The three pri-             disruptions.
+mary clinical profiles that were incorporated in the dataset
+were diabetes, hypertension, and mixed cardiometabolic             The test data was the dataset used to evaluate the perfor-
+conditions. The profiles were also divided by the neurodi-         mance of the system and also as an input to train the RL
+vergent characteristics (ASD, ADHD) and the disability type        models (such as adaptive reminders). In data synthesis, prob-
+(physical, sensory, cognitive). Some of the variables that         abilistic modeling was employed to ensure the model was
+were captured included:                                            realistic and varied while ensuring the confidentiality.
+
+                                                                                     Journal of Disability Research 2026
+
+<a id="pdf-p14"></a>
+### [PDF p.14] 14 M. S. Siddiqui et al.: ADAPT
+- Locator: `R457-adapt-an-agentic-ai-framework-for-people-with-disabilities-and-neurodivergence.pdf` · página **14** / 18
+
+14                                                                                                          M. S. Siddiqui et al.: ADAPT
+
+
+Algorithms and pseudo-code                                              Algorithm 3: Food Guidance Agent (multimodal classifica-
+                                                                        tion and NLP-based recommendation).
+Each agent implements specialized decision-making logic.                Input: Food image or user query
+                                                                        Output: Context-aware dietary recommendation or response
+The following pseudo-code summarizes the core steps for
+                                                                        Initialization: Load a convolutional neural network (CNN) model
+each agent.                                                             for food image classification and a pretrained BERT model for
+  Meal Planner Agent. Recommends meal plans that                        natural language understanding.
+balance nutritional adequacy and user preferences using                 Access a nutrition database and user-specific dietary constraints.
+Q-learning.                                                             Procedure: For each input instance, perform the following:
+                                                                           1. If the input is an image:
+  Reminder Agent. Adjusts reminders dynamically using
+                                                                           a. Process the image using the CNN classifier to obtain the
+contextual bandits based on user responsiveness.                                  predicted food label.
+  Food Guidance Agent. Integrates computer vision and                      b. Retrieve nutritional information corresponding to the identi-
+NLP to provide food guidance.                                                     fied food item from the database.
+                                                                           c. Compare the nutritional profile with user-specific constraints
+                                                                                  (e.g., dietary restrictions, medical conditions).
+                                                                           d. Generate a recommendation categorized as approve,
+                                                                                  limit, or deny.
+Algorithm 1: Meal Planner Agent (Q-learning-based rec-                     2. Else (input is a text query):
+ommendation).                                                              a. Parse the query intent using the BERT model.
+                                                                           b. Generate a context-aware response based on user prefer-
+Input: User profile, dietary preferences, and nutritional constraints
+                                                                                  ences, constraints, and nutritional knowledge.
+Output: Optimized personalized meal plan
+                                                                        End If
+Initialization: Initialize the Q-table Q (s, a) over all states s ∈ S
+                                                                        Return: A personalized dietary recommendation or informative
+(user profiles, preferences, constraints) and actions a ∈ A (candi-
+                                                                        response tailored to the user context.
+date meals).
+Procedure: For each day (episode), perform the following steps:
+  1. Observe the current state s, representing user needs, prefer-
+      ences, and medical requirements.                                  Algorithm 4: Monitoring Agent (GRU-based adherence
+  2. Select an action a (meal) using an ε-greedy policy derived
+                                                                        anomaly detection).
+      from Q (s, a).
+  3. Execute the selected action and receive a reward r, defined       Input: Daily intake sequence and physiological signals
+      as a function of nutritional adequacy minus penalty terms         Output: Adherence assessment and alert notifications
+      (e.g., dietary violations).                                       Initialization: Train a Gated Recurrent Unit (GRU) model on his-
+  4. Observe the next state s′.                                         torical data representing normal adherence patterns.
+  5. Update the Q-value according to:                                   Define a deviation threshold τ for anomaly detection.
+                                                                        Procedure: At runtime, perform the following steps:
+ Q ( s, a ) ← Q ( s, a ) + α [r + γ max Q ( s ′, a ′) − Q ( s, a )]        1. Observe the current input sequence, including daily dietary
+                                       a′
+                                                                               intake and physiological signals.
+  6. Set s ← s′.                                                          2. Use the GRU model to predict the expected adherence score ŷ.
+End For                                                                    3. Compute the deviation between observed adherence and
+Return: The optimized meal plan derived from the learned                        predicted adherence.
+Q-values.                                                                  4. If the deviation exceeds the predefined threshold τ, then:
+                                                                           a. Trigger an alert to the user and/or caregiver.
+                                                                        End If
+                                                                        Return: Adherence score along with alert notifications in case of
+Algorithm 2: Reminder Agent (contextual bandit-based                    significant deviation.
+adaptation).
+Input: Contextual information including time of day, user engage-
+ment level, and prior interaction history
+Output: Optimized reminder strategy (timing and modality)
+                                                                          Monitoring Agent. Monitors adherence by combining
+Definitions:                                                            wearable data with intake logs using a GRU for anomaly
+• Context c: {time of day, user engagement, prior responses}            detection.
+• Action a: {send reminder, delay reminder, change modality}
+• Reward r:
+   +1 if the user complies
+   −1 if the reminder is ignored
+                                                                        System integration
+   0 if the action is postponed
+Initialization: Initialize a contextual bandit model to estimate        The agents were integrated using a central layer of reason-
+expected rewards for each action given context c.                       ing. A blackboard architecture was used to post observations
+Procedure: For each decision step, perform the following:               and choices on a common knowledge base by their agents.
+  1. Observe the current context c.
+  2. Select an action a based on the contextual bandit policy (e.g.,
+                                                                        To settle disputes, the reasoning level used weighted priority
+      ε-greedy or UCB).                                                 rules:
+  3. Execute the selected action (send, delay, or modify reminder
+      modality).
+                                                                        • Medical constraints (highest priority).
+  4. Observe user response and compute reward r.                        • User preferences and sensory sensitivities.
+  5. Update the preference model using the observed tuple (c, a, r).    • Behavioral nudging (lowest priority).
+End For
+Return: An adaptive reminder policy that maximizes user compli-         An example of this is that the reasoning layer would over-
+ance over time.
+                                                                        ride the recommendation of the Meal Planner to eat pasta
+
+Journal of Disability Research 2026
+
+<a id="pdf-p15"></a>
+### [PDF p.15] M. S. Siddiqui et al.: ADAPT 15
+- Locator: `R457-adapt-an-agentic-ai-framework-for-people-with-disabilities-and-neurodivergence.pdf` · página **15** / 18
+
+M. S. Siddiqui et al.: ADAPT                                                                                                15
+
+and replace it with low-glycemic food in case the Monitoring        legumes, dairy products, eggs, poultry, red meat, fruit,
+Agent detected a high blood glucose.                                and processed snacks) were chosen as representative of
+                                                                    the dietary patterns modeled in the synthetic dataset. The
+                                                                    evaluation set consisted of 20% of the synthetically gener-
+Evaluation metrics                                                  ated image-labeled pairs (80/20 simulated train-test split).
+                                                                    The classification results were obtained using the above-­
+Technical and user-based performance metrics were used to           mentioned condition, and the accuracy of the classifier
+assess system performance:                                          was 99%, as seen in Figure 7. This is a moderately sized
+• Nutritional Adequacy: Percentage of daily plans meet-             count but is representative of the “small problem space”:
+  ing dietary guidelines.                                           10 relatively distinct types of synthetic data. The accuracy
+• Adherence Rate: Ratio of completed reminders to total             cannot be directly compared with multi-class benchmarks
+  reminders.                                                        such as Food-101 (101 categories of real photographs) as
+• User Satisfaction: Simulated Likert-scale feedback on             the state-of-the-art accuracy is between 85% and 97%. The
+  usability and accessibility.                                      result achieved here is a first step toward the technical fea-
+• Explainability: Percentage of system decisions that could         sibility of the classification part in the ADAPT simulation
+  be explained in plain language.                                   environment, and an important and necessary requirement
+• Caregiver Burden: Reduction in caregiver interventions            for clinical implementation is the validation on real food
+  required.                                                         images within a broader taxonomy of the classification part.
+                                                                       The Food Guidance Agent’s module for nutrient esti-
+                                                                    mation was evaluated on the simulated evaluation parti-
+Pilot results                                                       tion with mean absolute error (MAE). The ground truth
+                                                                    nutrition values were obtained from a standard nutrition
+The system was evaluated in a simulation environment using          database, where each food category was mapped to one of
+the 500-profile synthetic dataset described in the Architecture     the 10 food categories; 20% of the image-label pairs in the
+of the Agentic AI Healthcare Monitor section. All reported          evaluation set were those used for the image classification
+metrics are simulation-based outcomes derived from algo-            task. The results of the model are represented in Figure 8,
+rithmic performance on synthetic data; they represent with-         with the MAE of around 13.9 kcal (calories), 1.2 g (pro-
+in-simulation comparisons between the ADAPT framework               tein), 1.3 g (fat), and 1.1 g (sugar). The following values
+and a rule-based static planner (the “baseline” comparator),        represent good estimation accuracy for the simulated con-
+not evidence of real-world clinical effectiveness. No confi-        strained setting with 10 categories. Note that these results
+dence intervals or inferential statistical tests are reported, as   are obtained with synthetic data, and the results of MAE
+the results derive from a deterministic simulation rather than      on real-world images of food with a larger visual variation,
+a sampled real-world study; this is acknowledged as a limi-         mixed dishes, or varying portions are expected to vary and
+tation of the current evaluation stage. Key simulation results      need empirical validation.
+included:                                                              The viability and potential efficacy of the proposed frame-
+• Nutritional adequacy improved by 27% relative to the              work are confirmed by the pilot results. Consistent with
+   rule-based static planner baseline (a simulated improve-         previous research on RL to address behavioral intervention
+   ment; no human participants were involved).                      (Rabbi, Hane Aung and Choudhury, 2017), adaptive remind-
+• The algorithmic compliance to reminders, not user com-            ers resulted in a significant increase in adherence. Planning
+   pliance, for the adaptive agent (ADAPT) was compared
+   with that of the static planner, with simulated rates of
+   adherence rising from 54% to 81% for the ADAPT agent.
+• Mean score for usability of the website (simulated survey)
+   was 4.2/5, with accessibility features having the highest
+   score.
+• The success rate of the explainability was 92%, suggest-
+   ing a high possibility of user trust.
+• Simulated caregiver intervention events decreased by 35%
+   relative to the baseline condition, which suggests poten-
+   tial caregiver burden reduction; this figure reflects a sim-
+   ulation-level artifact and does not constitute evidence of
+   actual caregiver outcomes.
+
+
+Discussion of results
+
+The Food Guidance Agent is a CNN classifier trained on
+a small preliminary 10-classe food recognition task, CNN
+(see Algorithm 3 in the Algorithms and Pseudo-code sec-             Figure 7: Food Recognition Accuracy achieved by the pro-
+tion). Ten categories (rice dishes, bread/cereal, vegetables,       posed model.
+
+                                                                                     Journal of Disability Research 2026
+
+<a id="pdf-p16"></a>
+### [PDF p.16] 16 M. S. Siddiqui et al.: ADAPT
+- Locator: `R457-adapt-an-agentic-ai-framework-for-people-with-disabilities-and-neurodivergence.pdf` · página **16** / 18
+
+16                                                                                                  M. S. Siddiqui et al.: ADAPT
+
+
+                                                                  food pictures; this did not demonstrate any generalization to
+                                                                  real-world food photography at scale.
+                                                                     Third, the outputs of the simulations were not reported
+                                                                  with statistical uncertainty quantification (e.g., confidence
+                                                                  intervals, inferential tests) because the simulation environ-
+                                                                  ment was deterministic rather than sampled; future real-
+                                                                  world evaluations should be done under the appropriate
+                                                                  statistical uncertainty quantification. Fourth, the framework
+                                                                  has not been assessed for regulatory approval; there is a need
+                                                                  to prioritize its future regulatory assessment as a framework
+                                                                  for the deployment of food and nutritional recommendations
+                                                                  generated by EHRs for the general population with chronic
+                                                                  conditions, in cooperation with FDA or EU MDR classifi-
+                                                                  cation frameworks. Fifth, there has been no implementation
+Figure 8: Mean absolute error (MAE) for nutrient prediction.
+                                                                  of liability governance, clinical oversight protocols, or par-
+                                                                  ticipatory co-design with disability communities, and these
+                                                                  are crucial for responsible clinical translation.
+and monitoring provided the integration through which pro-           Sixth, there are clearly limitations to the translatability of
+active interventions were made possible, which is also con-       the simulation-based assessment. The 500-profile synthetic
+sistent with prior research in multi-agent chronic disease        dataset was created by probabilistic modeling to represent
+management. Predictive models for treatment of non-adher-         typical clinical profiles, but real-world variables such as
+ence in chronic diseases represent a related line of inquiry      inter-personal variability in device adoption, interface fatigue
+relevant to future ADAPT development (Bashir et al., 2026).       for users with disabilities, non-stationary behavioral patterns
+More importantly, multimodal communication and other              due to changing medical state, photograph diversity of meals
+accessibility options significantly enhanced usability, which     (partial foods, mixed dishes, culturally specific foods), band-
+was a persistent problem with mainstream health applica-          width limitations on caregivers, and connectivity or hardware
+tions. These findings must, however, be interpreted strictly      failures are not accounted for in the simulation environment.
+within their simulation context.                                  Accordingly, the improvement results (27% improvement
+   The synthetic profiles, while designed to reflect plausi-      for nutritional adherence, 54-81% for reminder compliance,
+ble clinical variation, cannot capture the full heterogeneity     and 35% decline in caregiver burden) are algorithmic and
+of real users with disabilities and neurodivergent conditions,    do not necessarily reflect the actual effectiveness in the real
+including atypical co-morbidity patterns, non-stationary          world. Validation studies should include prospective designs
+behavioral dynamics, device habituation effects, and real-        within subjects and populations from the target disability
+world deployment factors such as connectivity failures or         and neurodivergent communities, with their original behav-
+caregiver fatigue. The reported improvements in adherence         ior assessed using ecological momentary assessment and
+and nutritional adequacy represent algorithm-level improve-       individual-level variation accounted for by using appropriate
+ments in a controlled simulation and do not constitute evi-       mixed-effects or Bayesian statistical models.
+dence that ADAPT would produce equivalent gains in a
+live clinical deployment. Bridging this gap requires pro-
+spective trials with real participants, appropriate statistical
+frameworks, and regulatory engagement, as outlined in the
+                                                                  CONCLUSION
+Limitations section.
+                                                                  This paper presents an interdisciplinary framework for an
+                                                                  agentic AI that will assist people with disabilities and neu-
+                                                                  rodivergence to live more organized lives and healthy diets.
+LIMITATIONS                                                       The system incorporates autonomous agents to plan meals
+                                                                  individually, guide the client through interactive food guid-
+Several limitations must be explicitly acknowledged. First,       ance, provide adaptive reminder service, and track intake
+and most importantly, all quantitative outcomes reported in       all controlled by a central reasoning layer. The framework
+this paper are within-simulation algorithmic comparisons          addresses the problem of the current digital health tools
+and not evidence of real-world clinical effectiveness. The        being restrictive, limiting, and inflexible to the individual
+synthetic data are probabilistically generated to simulate        because it integrates the principles of personalization, mul-
+realistic clinical profiles, but do not comprehensively repre-    timodal interaction, and explainability. Implementation of a
+sent variation, complexity of co-morbidity, or the variability    prototype application with a simulated dataset showed major
+in behaviors of real patients with disabilities and neurodi-      increases in reminder adherence, nutritional adequacy, and
+vergent conditions. Clinical validation through prospective       satisfaction with the system, and a decrease in the involve-
+studies involving real users is an essential and non-negotia-     ment of caregivers. These results demonstrate the promise
+ble prerequisite before any effectiveness claims can be made.     of agentic AI to make people more autonomous, relieve the
+Second, the food recognition evaluation was performed in          stress of caregivers, and promote the general quality of life
+the context of a small, simulated image set of 10 classes of      of vulnerable groups.
+
+
+Journal of Disability Research 2026
+
+<a id="pdf-p17"></a>
+### [PDF p.17] M. S. Siddiqui et al.: ADAPT 17
+- Locator: `R457-adapt-an-agentic-ai-framework-for-people-with-disabilities-and-neurodivergence.pdf` · página **17** / 18
+
+M. S. Siddiqui et al.: ADAPT                                                                                                                          17
+
+   Future studies should focus on prospective pilot studies                     FUNDING
+with actual participants, regulatory pathway engagement,
+food recognition benchmarking extension, inclusion of                           This research was funded by the King Salman Center for
+telemedicine platforms, and participatory design processes                      Disability Research under Research Group No. KSRG-2026-
+including people with disabilities and neurodivergent people                    321 (funder ID: https://doi.org/10.13039/501100019345).
+as co-designers. The results of this study provide a techni-
+cally informed basis and architecturally coherent framework
+for agentic, inclusive, and ethically responsible digital health
+systems that are yet to be evaluated using systematic empiri-
+                                                                                CONFLICTS OF INTEREST
+cal follow-up in real-world clinical settings.
+                                                                                The authors declare that they have no conflicts of interest.
+
+
+
+ACKNOWLEDGMENTS                                                                 DATA AVAILABILITY STATEMENT
+The authors extend their appreciation to the King Salman                        The synthetic dataset, simulation models, and prototype source
+Center for Disability Research for funding this work through                    code supporting the findings of this study are publicly availa-
+Research Group No. KSRG-2026-321. The authors grate-                            ble. The complete project repository, including the implemen-
+fully acknowledge the financial and institutional support                       tation of the ADAPT multi-agent framework, is available at:
+provided by the Center, which made this research possible.                      https://github.com/aliakarma/ADAPT.
+
+
+
+
+REFERENCES
+Alowais SA, Alghamdi SS, Alsuhebany N, et al. Revolutionizing health-                 – IEEE International Conference on Communications. IEEE. 2021:
+      care: The role of artificial intelligence in clinical practice. BMC Med         pp. 1–6. doi:10.1109/ICC42927.2021.9500471
+      Educ. 2023;23(1): 689. doi:10.1186/s12909-023-04698-z                     Esteve K, Fredriksson M, Gustafson J, et al. Towards a proactive cooking
+Aravazhi PS, Gunasekaran P, Benjamin NZY, et al. The integration of                   companion for the elderly. In: Proceedings of the 16th International
+      artificial intelligence into clinical medicine: Trends, challenges,             Workshop on Spoken Dialogue Systems Technology. ACL. 2026: pp.
+      and future directions. Dis Mon. 2025;71(6): 101882. doi:10.1016/j.              134–141.
+      disamonth.2025.101882                                                     Faraone SV, Banaschewski T, Coghill D, et al. The World Federation of
+Bandini LG, Curtin C, Phillips S, Anderson SE, Maslin M, Must A. Changes              ADHD International Consensus Statement: 208 evidence-based
+      in food selectivity in children with autism spectrum disorder. J Autism         conclusions about the disorder. Neurosci Biobehav Rev. 2021;128:
+      Dev Disord. 2017;47(2): 439–446. doi:10.1007/s10803-016-2963-6                  789–818. doi:10.1016/j.neubiorev.2021.01.022
+Bashir SG, Salad HA, Abdullahi YB, et al. Artificial intelligence approaches    Freyne J, Berkovsky S. Recommending food: Reasoning on recipes and
+      to predicting treatment non-adherence in chronic diseases: A nar-               ingredients. In: De Bra P, Kobsa A, Chin D, editors. User Modeling,
+      rative review. Front Digit Health. 2026;8: 1769337. doi:10.3389/                Adaptation, and Personalization. UMAP 2010. Lecture Notes in
+      fdgth.2026.1769337                                                              Computer Science. Berlin, Heidelberg: Springer. 2010: pp. 381–386.
+Caraban A, Karapanos E, Gonçalves D, Campos P. 23 ways to nudge: A                    doi:10.1007/978-3-642-13470-8_36
+      review of technology-mediated nudging in human-computer interac-          Freyne J, Berkovsky S, Baghaei N, Kimani S, Smith G. Personalized tech-
+      tion. In: Proceedings of the 2019 CHI Conference on Human Factors               niques for lifestyle change. In: Peleg M, Lavrač N, Combi C, editors.
+      in Computing Systems (CHI ’19). New York, NY, USA: ACM. 2019:                   Proceedings of Artificial Intelligence in Medicine: 13th Conference
+      pp. 1–15. doi:10.1145/3290605.3300733                                           on Artificial Intelligence in Medicine. AIME 2011. Springer. 2011:
+Celis-Morales C, Livingstone KM, Marsaux CF, et al. Effect of personal-               pp. 139–148. doi:10.1007/978-3-642-22218-4_18
+      ized nutrition on health-related behaviour change: Evidence from          Garg S, Williams NL, Ip A, Dicker AP. Clinical integration of digital solu-
+      the Food4Me European randomized controlled trial. Int J Epidemiol.              tions in health care: An overview of the current landscape of digital
+      2017;46(2): 578–588. doi:10.1093/ije/dyw186                                     technologies in cancer care. JCO Clin Cancer Inform. 2018;2(2): 1–9.
+Chao WY, Hass Z. Choice-based user interface design of a smart healthy                doi:10.1200/CCI.17.00159
+      food recommender system for nudging eating behavior of older adult        Ge M, Ricci F, Massimo D. Health-aware food recommender sys-
+      patients with newly diagnosed type II diabetes. In: Gao Q, Zhou J,              tem. In: Proceedings of the 9th ACM Conference on Recom-
+      editors. Human Aspects of IT for the Aged Population. Healthy and               mender Systems. New York, NY, USA: ACM. 2015: pp. 333–334.
+      Active Aging. HCII 2020. Lecture Notes in Computer Science. Cham:               doi:10.1145/2792838.2796554
+      Springer. 2020: pp. 221–234. doi:10.1007/978-3-030-50249-2_17             Ge M, Elahi M, Fernández-Tobías I, Ricci F, Massimo D. Using
+Cheng A, Raghavaraju V, Kanugo J, Handrianto YP, Shang Y. Develop-                    tags and latent factors in a food recommender system. In:
+      ment and evaluation of a healthy coping voice interface application             Proceedings of the 5th International Conference on Digital
+      using the Google Home for elderly patients with type 2 diabetes. In:            Health 2015. New York, NY, USA: ACM. 2015: pp. 105–112.
+      2018 15th IEEE Annual Consumer Communications & Network-                        doi:10.1145/2750511.2750528
+      ing Conference (CCNC). IEEE Press. 2018: pp. 1–5. doi:10.1109/            Gillespie-Lynch K, Kapp SK, Brooks PJ, Pickens J, Schwartzman B.
+      CCNC.2018.8319283                                                               Whose expertise is it? Evidence for autistic adults as critical autism
+Daniels K, Watson D, Nayani R, et al. Implementing practices focused on               experts. Front Psychol. 2017;8: 438. doi:10.3389/fpsyg.2017.
+      workplace health and psychological wellbeing: A systematic review.              00438
+      Soc Sci Med. 2021;277: 113888. doi:10.1016/j.socscimed.2021.113888        Guan Z, Li H, Liu R, et al. Artificial intelligence in diabetes manage-
+Di Martino F, Delmastro F, Dolciotti C. Malnutrition risk assessment in               ment: Advancements, opportunities, and challenges. Cell Rep Med.
+      frail older adults using m-health and machine learning. In: ICC 2021            2023;4(10): 101213. doi:10.1016/j.xcrm.2023.101213
+
+
+
+                                                                                                      Journal of Disability Research 2026
+
+<a id="pdf-p18"></a>
+### [PDF p.18] 18 M. S. Siddiqui et al.: ADAPT
+- Locator: `R457-adapt-an-agentic-ai-framework-for-people-with-disabilities-and-neurodivergence.pdf` · página **18** / 18
+
+18                                                                                                                      M. S. Siddiqui et al.: ADAPT
+
+
+Guo J, Zhang Y, Liu X, Wang L. ChatGPT-based meal planning for dietary                Conference on Computer Vision (ICCV). IEEE. 2015. pp. 1233–
+       adherence: A systematic review of effectiveness and usability. Dietet-         1241. doi:10.1109/ICCV.2015.146
+       ics. 2025;4(1): 12–28. doi:10.3390/dietetics4010007                      Mohammed HBM, Ibrahim D, Cavus N. Mobile device based smart med-
+Hamine S, Gerth-Guyette E, Faulx D, Green BB, Ginsburg AS. Impact                     ication reminder for older people with disabilities. Qual Quant.
+       of mHealth chronic disease management on treatment adherence                   2018;52(2): 539–549. doi:10.1007/s11135-018-0707-8
+       and patient outcomes: A systematic review. J Med Internet Res.           Papastratis I, Konstantinidis D, Daras P, Dimitropoulos K. AI nutrition rec-
+       2015;17(2): e52. doi:10.2196/jmir.3951                                         ommendation using a deep generative model and ChatGPT. Sci Rep.
+Harvey M, Ludwig B, Elsweiler D. Learning user tastes: A first step to                2024;14(1): 14620. doi:10.1038/s41598-024-65438-x
+       generating healthy meal plans? In: Proceedings of the First Inter-       Purohit AK, Schöbel S, Bill O, Holzer A. Nudging to change, the role of
+       national Workshop on Recommendation Technologies for Lifestyle                 digital health. In: Rivas H, Boillat T, editors. Digital Health. Cham:
+       Change (Lifestyle 2012) (CEUR Workshop Proceedings, Vol. 891).                 Springer. 2023: pp. 137–154. doi:10.1007/978-3-031-17666-1_10
+       CEUR-WS. 2012. Available from: https://ceur-ws.org/Vol-891/LIFE-         Rabbi M, Hane Aung H, Choudhury T. Towards health recommenda-
+       STYLE2012_paper2.pdf                                                           tion systems: An approach for providing automated personalized
+Harvey M, Ludwig B, Elsweiler D. You are what you eat: Learning                       health feedback from mobile data. In: Rehg J, Murphy S, Kumar
+       user tastes for rating prediction. In: Kurland O, Lewenstein M,                S, editors. Mobile Health. Cham: Springer. 2017: pp. 519–542.
+       Porat E, editor. Proceedings of String Processing and Information              doi:10.1007/978-3-319-51394-2_26
+       Retrieval: 20th International Symposium, SPIRE 2013, Jerusalem,          Rashid AB, Kausik MAK. AI revolutionizing industries worldwide: A com-
+       Israel, October 7–9, 2013. Cham: Springer. 2013: pp. 153–164.                  prehensive overview of its diverse applications. Hybrid Adv. 2024;7:
+       doi:10.1007/978-3-319-02432-5_19                                               100277. doi:10.1016/j.hybadv.2024.100277
+Hollis C, Falconer CJ, Martin JL, et al. Annual research review: Digital        Salinari A, Machì M, Armas Diaz Y, et al. The application of digital
+       health interventions for children and young people with mental health          technologies and artificial intelligence in healthcare: An overview
+       problems – A systematic and meta-review. J Child Psychol Psychia-              on nutrition assessment. Diseases. 2023;11(3): 97. doi:10.3390/
+       try. 2017;58(4): 474–503. doi:10.1111/jcpp.12663                               diseases11030097
+Isern D, Sánchez D, Moreno A. Agents applied in health care: A                  Salzmann-Erikson M. Integrating technology in aged care: Challenges,
+       review. Int J Med Inform. 2010;79(3): 145–166. doi:10.1016/j.                  opportunities, and a nursing lens. Contemp Nurse. 2023;59(6): 413–
+       ijmedinf.2010.01.003                                                           415. doi:10.1080/10376178.2023.2291119
+Jan S, Razzaqi HA, Akarma A, Belgaum MR. A blockchain-monitored agen-           Seiderer A, Ritschel H, André E. Development of a privacy-by-design
+       tic AI architecture for trusted perception–reasoning–action pipelines.         speech assistant providing nutrient information for German seniors.
+       In: International Conference on Computer and Applications (ICCA).              In: Proceedings of the 6th EAI International Conference on Smart
+       IEEE. 2025a: pp. 1–7. doi:10.1109/ICCA66035.2025.11430865                      Objects and Technologies for Social Good. New York, NY, USA:
+Jan S, Syed TA, Ali G, Akarma A, Belgaum MR, Ali A. Agentic AI frame-                 ACM. 2020: pp. 114–119. doi:10.1145/3411170.3411227
+       work for individuals with disabilities and neurodivergence: A mul-       Shinohara K, Wobbrock JO. Self-conscious or self-confident? A diary study
+       ti-agent system for healthy eating, daily routines, and inclusive              conceptualizing the social accessibility of assistive technology. ACM
+       well-being [Preprint]. 2025b. doi:10.48550/arXiv.2511.22737                    Trans Access Comput. 2016;8(2): 1–31. doi:10.1145/2827857
+Jennings NR. On agent-based software engineering. Artif Intell.                 So K, Kim HJ, Shin DS, et al. A conversational interaction framework using
+       2000;117(2): 277–296. doi:10.1016/S0004-3702(99)00107-1                        large language models for personalized elderly care. In: 2025 IEEE
+Kalu KA, Ataguba G, Onifade O, Orji F, Giweli N, Orji R. Application of               International Conference on Consumer Electronics (ICCE). IEEE.
+       artificial intelligence technologies as an intervention for promoting          2025: pp. 1–2. doi:10.1109/ICCE63647.2025.10930020
+       healthy eating and nutrition in older adults: A systematic literature    Syed TA, Alshahrani A, Ullah A, et al. FinAgent: An agentic AI framework
+       review. Nutrients. 2025;17(20): 3223. doi:10.3390/nu17203223                   integrating personal finance and nutrition planning. In: 2025 Interna-
+Kapp SK, Gillespie-Lynch K, Sherman LE, Hutman T. Deficit, difference,                tional Conference on Computer and Applications (ICCA). 2025: pp.
+       or both? Autism and neurodiversity. Dev Psychol. 2013;49(1): 59–71.            1–7. doi:10.1109/ICCA66035.2025.11430760
+       doi:10.1037/a0028353                                                     Syed TA, Alshahrani A, Akarma A, et al. FinNutriAgent (FNA): An agen-
+Khazen W, Jeanne JF, Demaretz L, Schäfer F, Fagherazzi G. Rethinking the              tic AI for nutrition planning considering budget constraints. Eng
+       use of mobile apps for dietary assessment in medical research. J Med           Technol Appl Sci Res. 2026a;16(3): 36408–36417. doi:10.48084/
+       Internet Res. 2020;22(6): e15619. doi:10.2196/15619                            etasr.15640
+Kiran A, Balaram A, Parshapu P, Naik S, Purushotham P, Silparaj M. AI-en-       Syed TA, Akarma A, Naqash MT, Hameed D, Kamal S, Formisano A.
+       hanced elderly care companion. In: 2024 International Conference on            Agentic AI for Climate-Resilient Cities: A PRISMA-Guided Review
+       Science Technology Engineering and Management (ICSTEM). 2024:                  and Digital Twin Framework. Preprints; 2026b. doi:10.20944/pre-
+       pp. 1–5. doi:10.1109/ICSTEM61137.2024.10560848                                 prints202604.1837.v1
+Krahn GL, Walker DK, Correa-De-Araujo R. Persons with disabilities as           Theodore Armand TP, Nfor KA, Kim JI, Kim HC. Applications of artifi-
+       an unrecognized health disparity population. Am J Public Health.               cial intelligence, machine learning, and deep learning in nutrition:
+       2015;105(Suppl. 2): S198–S206. doi:10.2105/AJPH.2014.302182                    A systematic review. Nutrients. 2024;16(7): 1073. doi:10.3390/
+Kramarow E, Warner M, Chen LH. Food-related choking deaths                            nu16071073
+       among the elderly. Inj Prev. 2014;20(3): 200–203. doi:10.1136/           Thomaz E, Essa I, Abowd GD. A practical approach for recognizing eating
+       injuryprev-2013-040795                                                         moments with wrist-mounted inertial sensing. In: Proceedings of the
+Light J, McNaughton D, Beukelman D, et al. Challenges and opportunities               2015 ACM International Joint Conference on Pervasive and Ubiqui-
+       in augmentative and alternative communication: Research and tech-              tous Computing (UbiComp’ 15). New York, NY, USA: ACM. 2015:
+       nology development to enhance communication and participation                  pp. 1029–1040. doi:10.1145/2750858.2807545
+       for individuals with complex communication needs. Augment Altern         United Nations Children’s Fund. Seen, Counted, Included: Using Data to
+       Commun. 2019;35(1): 1–12. doi:10.1080/07434618.2018.1556732                    Shed Light on the Well-being of Children with Disabilities. UNICEF
+Lo FPW, Sun Y, Qiu J, Lo B. Image-based food classification and volume                Data and Analytics Section. 2021. Available from: https://data.unicef.
+       estimation for dietary assessment: A review. IEEE J Biomed Health              org/resources/children-with-disabilities-report-2021/
+       Inform. 2020;24(7): 1926–1939. doi:10.1109/JBHI.2020.2987943             World Health Organization, World Bank. World Report on Disability. World
+Masina F, Orso V, Pluchino P, et al. Investigating the accessibility of voice         Health Organization; 2011. Available from: https://www.who.int/
+       assistants with impaired users: Mixed methods study. J Med Internet            publications/i/item/9789241564182
+       Res. 2020;22(9): e18431. doi:10.2196/18431                               Zheng J, Wang J, Shen J, An R. Artificial intelligence applications to meas-
+Meyers A, Johnston N, Rathod V, et al. Im2Calories: Towards an automated              ure food and nutrient intakes: Scoping review. J Med Internet Res.
+       mobile vision food diary. In: Proceedings of the IEEE International            2024;26: e54557. doi:10.2196/54557
+
+
+
+
+Journal of Disability Research 2026

@@ -1,0 +1,1255 @@
+# Received 24 December 2025, accepted 11 February 2026, date of publication 23 February 2026, date of current version 26 March 2026.
+
+> Fuente PDF: `R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l.pdf` · técnica **locator index** (página + ancla) + chunks Graphify
+
+## Metadata
+- Stem: `R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l`
+- PDF: `R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l.pdf`
+- DOI: `10.1109/ACCESS.2026.3667133`
+- Pages: `15`
+- Structured_at: `2026-10-03T23:23:12+00:00`
+- Technique: `pdf-page-locators + heading-chunks`
+
+## Locator index (qué hay y en qué página del PDF)
+
+| Kind | Label | PDF page | MD anchor |
+|------|-------|----------|-----------|
+| abstract | Abstract / blurb | 1 | `#abstract` |
+| section | 44742 VOLUME 14, 2026 | 3 | `#p3-44742-volume-14-2026` |
+| section | 44744 VOLUME 14, 2026 | 5 | `#p5-44744-volume-14-2026` |
+| section | 44746 VOLUME 14, 2026 | 7 | `#p7-44746-volume-14-2026` |
+| section | 44748 VOLUME 14, 2026 | 9 | `#p9-44748-volume-14-2026` |
+| section | 44750 VOLUME 14, 2026 | 11 | `#p11-44750-volume-14-2026` |
+| section | 44752 VOLUME 14, 2026 | 13 | `#p13-44752-volume-14-2026` |
+| section | 44754 VOLUME 14, 2026 | 15 | `#p15-44754-volume-14-2026` |
+| concept | R016 | ? | `#concept-r016` |
+| concept | prompt | ? | `#concept-prompt` |
+| concept | engineering | ? | `#concept-engineering` |
+| concept | versus | ? | `#concept-versus` |
+| concept | model | ? | `#concept-model` |
+| concept | selection | ? | `#concept-selection` |
+| concept | cognitive | ? | `#concept-cognitive` |
+| concept | accessibility | 1 | `#concept-accessibility` |
+| concept | large | ? | `#concept-large` |
+| finding | The promise of large language models (LLMs) for individuals with learning disabilities and… | 1 | `#finding-the-promise-of-large-language-models-ll` |
+| finding | In improving output accessibility, both model selection and prompt engineering offer poten… | 1 | `#finding-in-improving-output-accessibility-both` |
+| finding | Prompt engineering accounted for 71.9% of variance (ηp2 = 0.719, p < 0.001) versus only 15… | 1 | `#finding-prompt-engineering-accounted-for-71-9-o` |
+| finding | Cognitive-Explicit prompts improved readability by 37.64 points (Cohen’s d = 2.49), reduci… | 1 | `#finding-cognitive-explicit-prompts-improved-read` |
+| finding | Task type also influenced accessibility, with procedural tasks yielding significantly high… | 1 | `#finding-task-type-also-influenced-accessibility` |
+| finding | Models exhibited differential responsiveness, reflected in a marginally significant Model … | 1 | `#finding-models-exhibited-differential-responsive` |
+| page | p.1: Received 24 December 2025, accepted 11 February 2026, date of publication 23 February 2026 | 1 | `#pdf-p1` |
+| page | p.2: R. R. Nour: Prompt Engineering Versus Model Selection for Cognitive Accessibility in LLMs | 2 | `#pdf-p2` |
+| page | p.3: R. R. Nour: Prompt Engineering Versus Model Selection for Cognitive Accessibility in LLMs | 3 | `#pdf-p3` |
+| page | p.4: R. R. Nour: Prompt Engineering Versus Model Selection for Cognitive Accessibility in LLMs | 4 | `#pdf-p4` |
+| page | p.5: R. R. Nour: Prompt Engineering Versus Model Selection for Cognitive Accessibility in LLMs | 5 | `#pdf-p5` |
+| page | p.6: R. R. Nour: Prompt Engineering Versus Model Selection for Cognitive Accessibility in LLMs | 6 | `#pdf-p6` |
+| page | p.7: R. R. Nour: Prompt Engineering Versus Model Selection for Cognitive Accessibility in LLMs | 7 | `#pdf-p7` |
+| page | p.8: R. R. Nour: Prompt Engineering Versus Model Selection for Cognitive Accessibility in LLMs | 8 | `#pdf-p8` |
+| page | p.9: R. R. Nour: Prompt Engineering Versus Model Selection for Cognitive Accessibility in LLMs | 9 | `#pdf-p9` |
+| page | p.10: R. R. Nour: Prompt Engineering Versus Model Selection for Cognitive Accessibility in LLMs | 10 | `#pdf-p10` |
+| page | p.11: R. R. Nour: Prompt Engineering Versus Model Selection for Cognitive Accessibility in LLMs | 11 | `#pdf-p11` |
+| page | p.12: R. R. Nour: Prompt Engineering Versus Model Selection for Cognitive Accessibility in LLMs | 12 | `#pdf-p12` |
+| page | p.13: R. R. Nour: Prompt Engineering Versus Model Selection for Cognitive Accessibility in LLMs | 13 | `#pdf-p13` |
+| page | p.14: R. R. Nour: Prompt Engineering Versus Model Selection for Cognitive Accessibility in LLMs | 14 | `#pdf-p14` |
+| page | p.15: R. R. Nour: Prompt Engineering Versus Model Selection for Cognitive Accessibility in LLMs | 15 | `#pdf-p15` |
+
+## Abstract
+<a id="abstract"></a>
+
+The promise of large language models (LLMs) for individuals with learning disabilities and cognitive impairments is significant, yet their practical accessibility remains limited by readability barriers. In improving output accessibility, both model selection and prompt engineering offer potential levers, but their relative importance remains unquantified. This study conducted a systematic investigation of prompt engineering versus model selection for enhancing cognitive accessibility of responses in four leading LLMs (Llama-3.3-70B, Llama-3.1-8B, GPT-4o, Claude-Sonnet-4.5). Three prompt engineering approaches were tested: Baseline (task only), Structured (organizational guidance), and Cognitive-Explicit (accessibility con- straints grounded in working memory theory), across two task types (procedural and conceptual), resulting in a 3 × 2×4 factorial experiment (N = 240 responses), with readability quantified as Flesch Reading Ease scores. Prompt engineering accounted for 71.9% of variance (ηp2 = 0.719, p < 0.001) versus only 15.8% from model selection (ηp2 = 0.158, p < 0.001). Cognitive-Explicit prompts improved readability by 37.64 points (Cohen’s d = 2.49), reducing sentence length by 47% with minimal trade-off in lexical diversity. Task type also influenced accessibility, with procedural tasks yielding significantly higher readability than conceptual explanations (p < 0.001, ηp2 = 0.231). Models exhibited differential responsiveness, reflected in a marginally significant Model × Prompt interaction (p = 0.068, ηp2 = 0.052). Claude-Sonnet-4.5 achieved the largest gain (+43.41 points, +128%) and Llama-3.1-8B the smallest (+31.36 points, +64%). These findings establish prompt engineering as the dominant factor for cognitive accessibility in LLMs and offer actionable guidance for practitioners prioritizing accessibility in AI deployments for cognitive disability populations.
+
+## Keywords
+
+- _(none auto-detected)_
+
+## Concept index (graph hooks + página)
+
+<a id="concept-r016"></a>
+### [PDF p.?] Concept: R016
+- Locator: `R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l.pdf` · página **?**
+
+<a id="concept-prompt"></a>
+### [PDF p.?] Concept: prompt
+- Locator: `R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l.pdf` · página **?**
+
+<a id="concept-engineering"></a>
+### [PDF p.?] Concept: engineering
+- Locator: `R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l.pdf` · página **?**
+
+<a id="concept-versus"></a>
+### [PDF p.?] Concept: versus
+- Locator: `R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l.pdf` · página **?**
+
+<a id="concept-model"></a>
+### [PDF p.?] Concept: model
+- Locator: `R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l.pdf` · página **?**
+
+<a id="concept-selection"></a>
+### [PDF p.?] Concept: selection
+- Locator: `R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l.pdf` · página **?**
+
+<a id="concept-cognitive"></a>
+### [PDF p.?] Concept: cognitive
+- Locator: `R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l.pdf` · página **?**
+
+<a id="concept-accessibility"></a>
+### [PDF p.1] Concept: accessibility
+- Locator: `R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l.pdf` · página **1**
+
+<a id="concept-large"></a>
+### [PDF p.?] Concept: large
+- Locator: `R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l.pdf` · página **?**
+
+
+## Findings index (graph hooks + página)
+
+<a id="finding-the-promise-of-large-language-models-ll"></a>
+### [PDF p.1] Finding: The promise of large language models (LLMs) for individuals with learning disabilities and cognitive impairments is significant, yet their practical accessibility remains limited by readability barriers.
+- Locator: `R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l.pdf` · página **1**
+
+<a id="finding-in-improving-output-accessibility-both"></a>
+### [PDF p.1] Finding: In improving output accessibility, both model selection and prompt engineering offer potential levers, but their relative importance remains unquantified.
+- Locator: `R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l.pdf` · página **1**
+
+<a id="finding-prompt-engineering-accounted-for-71-9-o"></a>
+### [PDF p.1] Finding: Prompt engineering accounted for 71.9% of variance (ηp2 = 0.719, p < 0.001) versus only 15.8% from model selection (ηp2 = 0.158, p < 0.001).
+- Locator: `R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l.pdf` · página **1**
+
+<a id="finding-cognitive-explicit-prompts-improved-read"></a>
+### [PDF p.1] Finding: Cognitive-Explicit prompts improved readability by 37.64 points (Cohen’s d = 2.49), reducing sentence length by 47% with minimal trade-off in lexical diversity.
+- Locator: `R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l.pdf` · página **1**
+
+<a id="finding-task-type-also-influenced-accessibility"></a>
+### [PDF p.1] Finding: Task type also influenced accessibility, with procedural tasks yielding significantly higher readability than conceptual explanations (p < 0.001, ηp2 = 0.231).
+- Locator: `R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l.pdf` · página **1**
+
+<a id="finding-models-exhibited-differential-responsive"></a>
+### [PDF p.1] Finding: Models exhibited differential responsiveness, reflected in a marginally significant Model × Prompt interaction (p = 0.068, ηp2 = 0.052).
+- Locator: `R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l.pdf` · página **1**
+
+
+## Relevance hooks
+### Theme relevance: software engineering and accessibility
+### Theme relevance: cognitive accessibility and neurodiversity
+### Theme relevance: evaluation metrics and WCAG
+
+## Sections (detected in PDF)
+
+<a id="p3-44742-volume-14-2026"></a>
+### [PDF p.3] Section: 44742 VOLUME 14, 2026
+- Locator: `R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l.pdf` · página **3** · ancla `#p3-44742-volume-14-2026`
+
+<a id="p5-44744-volume-14-2026"></a>
+### [PDF p.5] Section: 44744 VOLUME 14, 2026
+- Locator: `R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l.pdf` · página **5** · ancla `#p5-44744-volume-14-2026`
+
+<a id="p7-44746-volume-14-2026"></a>
+### [PDF p.7] Section: 44746 VOLUME 14, 2026
+- Locator: `R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l.pdf` · página **7** · ancla `#p7-44746-volume-14-2026`
+
+<a id="p9-44748-volume-14-2026"></a>
+### [PDF p.9] Section: 44748 VOLUME 14, 2026
+- Locator: `R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l.pdf` · página **9** · ancla `#p9-44748-volume-14-2026`
+
+<a id="p11-44750-volume-14-2026"></a>
+### [PDF p.11] Section: 44750 VOLUME 14, 2026
+- Locator: `R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l.pdf` · página **11** · ancla `#p11-44750-volume-14-2026`
+
+<a id="p13-44752-volume-14-2026"></a>
+### [PDF p.13] Section: 44752 VOLUME 14, 2026
+- Locator: `R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l.pdf` · página **13** · ancla `#p13-44752-volume-14-2026`
+
+<a id="p15-44754-volume-14-2026"></a>
+### [PDF p.15] Section: 44754 VOLUME 14, 2026
+- Locator: `R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l.pdf` · página **15** · ancla `#p15-44754-volume-14-2026`
+
+
+## Page chunks (texto por página del PDF)
+
+_Cada heading es un nodo Graphify. El label incluye la página para volver al PDF sin releer todo._
+
+<a id="pdf-p1"></a>
+### [PDF p.1] Received 24 December 2025, accepted 11 February 2026, date of publication 23 February 2026, date of current version 26 March 2026.
+- Locator: `R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l.pdf` · página **1** / 15
+
+Received 24 December 2025, accepted 11 February 2026, date of publication 23 February 2026, date of current version 26 March 2026.
+Digital Object Identifier 10.1109/ACCESS.2026.3667133
+
+
+
+
+Prompt Engineering Versus Model Selection for
+Cognitive Accessibility in Large Language
+Models: An Empirical Study
+REDHWAN R. NOUR
+Department of Computer Science, College of Computer Science and Engineering, Taibah University, Medina 42353, Saudi Arabia
+e-mail: rnour@taibahu.edu.sa
+
+
+
+
+  ABSTRACT The promise of large language models (LLMs) for individuals with learning disabilities and
+  cognitive impairments is significant, yet their practical accessibility remains limited by readability barriers.
+  In improving output accessibility, both model selection and prompt engineering offer potential levers, but
+  their relative importance remains unquantified. This study conducted a systematic investigation of prompt
+  engineering versus model selection for enhancing cognitive accessibility of responses in four leading LLMs
+  (Llama-3.3-70B, Llama-3.1-8B, GPT-4o, Claude-Sonnet-4.5). Three prompt engineering approaches were
+  tested: Baseline (task only), Structured (organizational guidance), and Cognitive-Explicit (accessibility con-
+  straints grounded in working memory theory), across two task types (procedural and conceptual), resulting
+  in a 3 × 2×4 factorial experiment (N = 240 responses), with readability quantified as Flesch Reading
+  Ease scores. Prompt engineering accounted for 71.9% of variance (ηp2 = 0.719, p < 0.001) versus only
+  15.8% from model selection (ηp2 = 0.158, p < 0.001). Cognitive-Explicit prompts improved readability by
+  37.64 points (Cohen’s d = 2.49), reducing sentence length by 47% with minimal trade-off in lexical diversity.
+  Task type also influenced accessibility, with procedural tasks yielding significantly higher readability than
+  conceptual explanations (p < 0.001, ηp2 = 0.231). Models exhibited differential responsiveness, reflected in
+  a marginally significant Model × Prompt interaction (p = 0.068, ηp2 = 0.052). Claude-Sonnet-4.5 achieved
+  the largest gain (+43.41 points, +128%) and Llama-3.1-8B the smallest (+31.36 points, +64%). These
+  findings establish prompt engineering as the dominant factor for cognitive accessibility in LLMs and offer
+  actionable guidance for practitioners prioritizing accessibility in AI deployments for cognitive disability
+  populations.
+
+
+  INDEX TERMS Accessibility design, AI ethics, cognitive accessibility, large language models, learning
+  disabilities, prompt engineering, readability.
+
+
+I. INTRODUCTION                                                                                 purpose, being optimized for fluence, coherency, and factual
+Large language models (LLMs) are rapidly finding applica-                                       accuracy rather than cognitive accessibility [5], [6]. That is,
+tions in domains as diverse as customer service, education,                                     the output of LLMs frequently features lengthy sentences,
+healthcare, and assistive technologies [1], [2]. Especially,                                    complex syntax, and dense vocabulary that are not readily
+they offer a promising avenue for bridging information access                                   encompassed by the working memory and processing capac-
+gaps and thereby supporting individuals with learning disabil-                                  ities of many users with cognitive disabilities [7], [8].
+ities and cognitive impairments such as dyslexia, intellectual                                     In addition, accessibility is further challenged by the rapid
+disabilities, and autism spectrum disorder [3], [4]. However,                                   proliferation of LLM options. Amidst this profusion, organi-
+current LLMs are also fundamentally mismatched with this                                        zations deploying AI systems must make two core decisions:
+                                                                                                (1) choice of model (e.g., GPT-4o, Claude-Sonnet, Llama-
+   The associate editor coordinating the review of this manuscript and                          3.3-70B) and (2) their approach to prompt engineering so
+approving it for publication was Anandakumar Haldorai                .                          as to elicit the desired behavior [9], [10]. The respective
+                                                  2026 The Authors. This work is licensed under a Creative Commons Attribution 4.0 License.
+44740                                                    For more information, see https://creativecommons.org/licenses/by/4.0/                   VOLUME 14, 2026
+
+<a id="pdf-p2"></a>
+### [PDF p.2] R. R. Nour: Prompt Engineering Versus Model Selection for Cognitive Accessibility in LLMs
+- Locator: `R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l.pdf` · página **2** / 15
+
+R. R. Nour: Prompt Engineering Versus Model Selection for Cognitive Accessibility in LLMs
+
+
+
+
+answers to these decisions are well-recognized as key influ-                          The remainder of this paper is organized as follows:
+ences on output quality; however, how they relate to cognitive                     Section II reviews related work on LLM accessibility, prompt
+accessibility remains undetermined. The practical implica-                         engineering, and cognitive disability. Section III details
+tions of this knowledge gap are significant, as the element                        our experimental design, prompt engineering approaches,
+with greater influence on accessibility outcomes should be                         and measurement framework. Section IV presents statisti-
+prioritized. That is, if model selection is more determinant of                    cal analyses of main effects, interactions, and effect sizes.
+accessibility, model procurement strategies should be prior-                       Section V discusses implications for accessibility design, lim-
+itized; but if prompt engineering predominates instead, then                       itations, and future research directions. Section VI concludes
+prompt design, prompt libraries, and user education should                         with practical recommendations for organizations deploying
+receive focus [11], [12].                                                          LLMs for cognitive disability populations.
+   To date, accessibility improvements have been explored
+from each direction in isolation, considering either model                          II. RELATED WORK
+selection [13], [14] or prompt engineering [15], [16].                              A. COGNITIVE ACCESSIBILITY AND LLMS
+No direct comparisons of relative importance yet exist.                            Cognitive accessibility refers to design practices that reduce
+In addition, physical disabilities (e.g., vision, hearing) have                    cognitive load, support working memory limitations, and
+been the focus of attention rather than cognitive accessibil-                      accommodate diverse information processing needs [23],
+ity [17], [18]. What work there is on cognitive accessibility in                   [24]. Overall, an estimated 15-20% of people worldwide
+LLMs has relied on anecdotal examples or small case stud-                          live with some form of learning or cognitive disability [25],
+ies [19]. The current lack of controlled experimental designs                      [26], including dyslexia, intellectual disabilities, ADHD, and
+leaves critical questions answered, namely: How much does                          autism spectrum disorder. This population is disproportion-
+prompt engineering improve readability compared to model                           ately affected by barriers to cognitive accessibility, such as
+selection? Which factor should practitioners prioritize? Do                        dense paragraph structures, complex syntax, lengthy sen-
+these effects interact, such that certain models are more                          tences, and unfamiliar vocabulary [27], [28].
+responsive to accessibility-focused prompts?                                          LLMs offer intriguing possibilities as assistive tools for
+   The present work conducts a systematic factorial exper-                         people with cognitive disability, which recent research has
+iment to address these questions, comparing prompt engi-                           begun to explore. GPT-3 has been demonstrated capable
+neering and model selection as mechanisms for enhancing                            of simplifying medical information for individuals with
+the cognitive accessibility of LLMs. Three prompt engineer-                        intellectual disabilities, though improvements to readabil-
+ing approaches are considered: Baseline (task-only queries),                       ity were inconsistent [29]. Prompt-based text simplification
+Structured (generic organizational guidance), and Cognitive-                       can improve output comprehension by dyslexic readers [30];
+Explicit (specific accessibility constraints grounded in work-                     however, a systematic comparison of prompt approaches
+ing memory theory and cognitive load principles [20], [21]).                       and model architectures is yet lacking. A conversational AI
+These different approaches are evaluated for two task types                        system has been developed specifically for individuals with
+(procedural vs. conceptual) in four leading LLMs (Llama-                           autism and received positive feedback from users; however,
+3.3-70B, Llama-3.1-8B, GPT-4o, Claude-Sonnet-4.5). Flesch                          no quantitative measures of accessibility were collected [31].
+Reading Ease is taken as the primary accessibility metric [22],                    Thus, while these reports support the potential of LLMs
+and the relative contributions of prompt engineering (ηp2 ),                       in improving cognitive accessibility, controlled experimental
+model selection (ηp2 ), and their interaction are quantified                       studies that comprehensively compare model and prompt
+while controlling for task type effects.                                           effects remain needed.
+   The results of this evaluation reveal that prompt engi-
+neering has a 4.6-fold larger effect, accounting for 71.9%                          B. PROMPT ENGINEERING FOR ACCESSIBILITY
+of variance in readability (ηp2 = 0.719), versus just                              Model fine-tuning is one means of shaping LLM behavior;
+15.8% for model selection (ηp2 = 0.158). With regard                               prompt engineering has emerged as another [32], [33]. Engi-
+to different engineering approaches, prompts following the                         neering strategies aimed at improving accessibility include
+Cognitive-Explicit design improved Flesch Reading Ease by                          incorporating explicit readability instructions [34], few-shot
+37.64 points (Cohen’s d = 2.49) and reduced sentence                               examples of simplified text [35], and role-based prompts
+length by 47%. Significant accessibility gains were seen                           (e.g., ‘‘Explain like I’m five’’) [36]; however, these strategies
+with this approach in all four tested models. The marginally                       lack theoretical grounding in cognitive science, and imple-
+significant Model × Prompt interaction (p = 0.068) indi-                           mentations have largely been undertaken in an ad hoc manner,
+cated differential responsiveness of models to accessibility                       without systematic evaluation.
+prompts. The most responsive model was Claude-Sonnet-                                 More recently, efforts have been made towards formalizing
+4.5 (+43.41 points, +128% improvement), and the least                              such accessibility-oriented prompt engineering. ‘‘Cognitive
+Llama-3.1-8B (+31.36 points, +64% improvement). These                              scaffolding prompts,’’ proposed by Zhang et al. [37], have
+results provide the first quantitative evidence that prompt                        been shown to improve comprehension in preliminary tests;
+engineering is the dominant lever for cognitive accessibility                      this strategy involves chunking information, providing con-
+in LLMs, offering actionable guidance for practitioners.                           crete examples, and minimizing jargon. Zero-shot, few-shot,
+
+VOLUME 14, 2026                                                                                                                               44741
+
+<a id="pdf-p3"></a>
+### [PDF p.3] R. R. Nour: Prompt Engineering Versus Model Selection for Cognitive Accessibility in LLMs
+- Locator: `R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l.pdf` · página **3** / 15
+
+R. R. Nour: Prompt Engineering Versus Model Selection for Cognitive Accessibility in LLMs
+
+
+
+
+and chain-of-thought prompting were compared by Williams               Baseline, Structured, and Cognitive-Explicit; task type two
+and Park [38], with example-based approaches being out-                levels: Procedural and Conceptual; and model four levels:
+performed by explicit readability constraints. No study has            Llama-3.3-70B, Llama-3.1-8B, GPT-4o, and Claude-Sonnet-
+yet quantified the relative importance of prompt engineering           4.5. Together, these made for a 3 × 2 × 4 factorial study
+versus model selection for output accessibility, nor has a             design with a total 24 experimental conditions. Each condi-
+systematic comparison of prompt design philosophies been               tion was replicated 10 times with unique task queries, for a
+undertaken (e.g., generic organizational guidance vs. explicit         total N = 240 responses. This design provides 95% power to
+cognitive constraints).                                                detect an effect of medium size (f = 0.25) at α = 0.05 for
+                                                                       main effects and interactions [45].
+C. MODEL SELECTION AND OUTPUT CHARACTERISTICS                             One dependent variable was utilized, Flesch Reading Ease
+The various LLM architectures differ in the character of their         (FRE) [22], which quantitatively represents the cognitive
+outputs, which may have an influence on cognitive accessibil-          accessibility of a text. This measure is computed as:
+ity. Outputs of larger models (e.g., GPT-4, Claude-3.5) tend              FRE = 206.835 - 1.015 × (total words / total sentences) -
+to be more context-rich and verbose, whereas those generated           84.6 × (total syllables / total words)
+by smaller models (e.g., Llama-3.1-8B) tend to be more                    Values range from 0-100, with higher scores indicating
+concise [39], [40]. Models may also be tuned for particular            greater readability. On this scale, an 8th-9th grade reading
+objectives in training, with consequent impacts on output              level (standard) is represented by a score of 60-70, and a 6th
+characteristics; for example, base models prioritize fluency,          grade level (easy) by a score of 80-90.
+but instruction-tuned models put import on helpfulness and                To assess the robustness of the results, we supple-
+harmlessness [41], [42].                                               mented FRE with 14 additional readability metrics (e.g.,
+   Only limited empirical comparisons of model readabil-               Flesch-Kincaid Grade Level, SMOG Index, average sentence
+ity are presently available. In an analysis of five LLMs,              length) [46].
+Patel et al. [43] observed significant readability differences in
+base output, but considered those differences to result from           B. PROMPT ENGINEERING APPROACHES
+training data rather than model architectures. In a compari-           Baseline (control) prompts consisted of the plain task
+son of base versus instruction-tuned models, Rodriguez and             query with no readability guidance. For example, ‘‘What
+Kim [44] found the latter to produce more accessible outputs,          is cloud storage?’’ The two experimental approaches we
+but did not control for prompt engineering. Together, these            designed, Structured and Cognitive-Explicit, were respec-
+findings hint at model selection having an effect on output            tively grounded in working memory theory [20] and Cog-
+accessibility, but its importance in comparison to prompt              nitive Load Theory [21]. Structured prompts incorporated
+design remains to be determined.                                       generic organizational guidance but no specific cognitive
+                                                                       constraints. As a case in point, ‘‘Explain cloud storage using
+D. RESEARCH GAP                                                        simple words and short sentences.’’
+To date, the influence of model selection and prompt engi-                Distinct from the first two types, Cognitive-Explicit
+neering on output accessibility have each been investigated            prompts contained explicit accessibility constraints target-
+in isolation. In addition, studies have largely used infor-            ing working memory capacity (7±2 chunks [20]), lexical
+mal prompts, been conducted on small samples, and lacked               familiarity, sentence length (<15 words), and chunking. For
+control groups. There is no extant systematic comparison               example, ‘‘Explain cloud storage for someone with learning
+of prompt engineering versus model selection in a study                difficulties. Use: (1) simple everyday words, (2) sentences
+using factorial design; no quantification of effect size (ηp2 )        under 15 words, (3) one main idea per sentence, (4) concrete
+for model, prompt, and interaction effects; no study using             examples, (5) bullet points or numbered lists.’’ This category
+prompt design strategies grounded in cognitive science theory          of prompts operationalizes cognitive accessibility principles.
+(working memory, Cognitive Load Theory); and no evalua-                Namely, a sentence length <15 words reduces working mem-
+tion of accessibility across different task types (procedural vs.      ory load [47]; use of simple, everyday words minimizes
+conceptual) in a range of LLMs (Llama, GPT, Claude).                   lexical processing demands [48]; encapsulating only one idea
+   The present study employs a rigorous experimental design            within a sentence prevents cognitive overload from embedded
+in addressing these questions and filling the gaps they rep-           clauses [49]; use of concrete examples supports schema acti-
+resent. It thereby provides the first quantitative evidence on         vation for abstract concepts [50]; and providing output in lists
+the relative importance of prompt engineering versus model             chunks information for easier encoding [51].
+selection for cognitive accessibility in LLMs.                            Complete templates for all prompt types are provided in
+                                                                       Appendix A.
+III. METHODOLOGY
+A. EXPERIMENTAL DESIGN                                                 C. MODEL SELECTION
+Three independent variables were considered: prompt type,              Four leading LLMs were selected for use in this study,
+task type, and model. Prompt type comprised three levels:              representing diverse architectures and parameter scales.
+
+44742                                                                                                                                VOLUME 14, 2026
+
+<a id="pdf-p4"></a>
+### [PDF p.4] R. R. Nour: Prompt Engineering Versus Model Selection for Cognitive Accessibility in LLMs
+- Locator: `R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l.pdf` · página **4** / 15
+
+R. R. Nour: Prompt Engineering Versus Model Selection for Cognitive Accessibility in LLMs
+
+
+
+
+Llama-3.3-70B, from Meta, is instruction-tuned with 70 bil-                        TABLE 1. Descriptive statistics by model and prompt type.
+lion parameters, available under the Apache 2.0 license. Its
+smaller-scale alternative, Llama 3.1-8B, differs in using only
+8 billion parameters. GPT-4o, from OpenAI, is a multimodal
+LLM optimized for speed and cost. Finally, Claude-Sonnet-
+4.5, from Anthropic, is a safety-focused constitutional AI.
+   Official APIs were employed in all cases: the Groq Python
+SDK v0.13 for Llama models, OpenAI Python SDK v1.x,
+and Anthropic Python SDK v0.39. The following standard-                                •Grade Level: Flesch-Kincaid Grade, SMOG Index,
+ized generation parameters were supplied: temperature =                                 Coleman-Liau Index, Gunning Fog
+                                                                                     • Sentence Complexity: Average sentence length, average
+0.7 (moderate creativity), max_tokens = 512 (sufficient for
+explanations), top_p = 1.0 (nucleus sampling disabled).                                 syllables per word
+                                                                                     • Lexical Complexity: Difficult words (≥3 syllables), lex-
+                                                                                        ical diversity (type-token ratio)
+D. TASK DESIGN
+                                                                                     • Structural Features: Bullet points, numbered lists, para-
+Task queries were conceptualized around 4 domains relevant                              graph count
+to everyday life for cognitive disability populations. These
+                                                                                     All metrics were computed using the Python textstat library
+comprised: healthcare, for example medication instructions,
+                                                                                   v0.7.3 [54] with NLTK v3.8 for sentence tokenization [55].
+symptom explanations, medical procedures; concerns of
+                                                                                   The complete readability analysis results are provided in
+daily living, such as banking, transportation, household man-
+                                                                                   Appendix D.
+agement; education, including academic concepts, study
+strategies, homework assistance; and employment and finan-
+                                                                                    G. STATISTICAL ANALYSIS
+cial matters, such as job applications, workplace safety,
+                                                                                   Main effects and interactions were assessed for statistical
+budgeting. Fifteen tasks were created in each domain, for
+                                                                                   significance using three-way ANOVA. Independent variables
+60 unique queries total. Within each domain, about half
+                                                                                   consisted of the model (4 levels), prompt type (3 levels),
+(7-8) of the tasks were procedural in nature (‘‘How do
+                                                                                   and task type (2 levels), with FRE as the dependent variable.
+I. . . ?’’), intended to elicit step-by-step instructions. The other
+                                                                                   Effect size was quantified as partial eta-squared (ηp2 ), inter-
+half were conceptual, requiring definitional explanations in
+                                                                                   preted per Cohen’s guidelines: small (ηp2 = 0.01), medium
+answer. We hypothesized that the sequential, concrete struc-
+                                                                                   (ηp2 = 0.06), large (ηp2 = 0.14) [56]. Tukey’s HSD was
+ture of procedural tasks would produce outputs with higher
+                                                                                   applied in post-hoc pairwise comparisons to control Type I
+baseline readability [52].
+                                                                                   error. Cohen’s d was computed for key contrasts (Baseline vs.
+    The complete task inventory is provided in Appendix B.
+                                                                                   Cognitive-Explicit). All statistical analyses were conducted
+                                                                                   in Python using scipy.stats v1.11 and statsmodels v0.14 [57],
+E. DATA COLLECTION                                                                 [58]. The complete ANOVA results and descriptive statistics
+Data was collected in November 2024. For each of the 60 base                       are provided in Appendix E.
+queries, 3 responses were generated (one per prompt type) for
+each of the 4 models, yielding 240 total responses. All API                         IV. RESULTS
+calls included error handling, retry logic (max 3 attempts),                        A. DESCRIPTIVE STATISTICS
+and response validation (minimum 50 characters, maximum                            Upon evaluating all 240 responses, a clear effect of prompt
+512 tokens). Outputs were also subjected to the following                          type was observed, with Cognitive-Explicit prompts yielding
+quality control checks: response not empty or truncated; not                       substantially higher FRE than Baseline (M = 81.50 ver-
+an API error; and not a duplicate of a previous response. All                      sus 43.86, +37.64 points). Choice of model exhibited a
+240 responses met these quality standards, yielding 100%                           more modest effect, with Llama-3.3-70B achieving the high-
+usable data. The total API cost was $2.10. To ensure repro-                        est readability and Claude-Sonnet-4.5 the lowest (M =
+ducibility, responses were stored with associated metadata                         73.51 versus 60.85). Across Baseline prompts as a class,
+(model, prompt type, task type, timestamp). The complete                           all models yielded difficult-to-read outputs, with scores of
+response dataset is provided in Appendix C.                                        33.93-49.97 (12th-16th grade reading level). Conversely,
+                                                                                   Cognitive-Explicit prompts consistently produced outputs in
+F. READABILITY MEASUREMENT                                                         the ‘‘easy’’ range, scoring 77.34-86.09 (6th-8th grade reading
+Flesch Reading Ease (FRE) served as the primary dependent                          level). The complete descriptive statistics are presented in
+variable on account of it being widely used in accessibil-                         Table 1, while the main effects of model and prompt type on
+ity research, having validated grade-level equivalents, and                        FRE are visualized in Fig. 1.
+aligning with cognitive load principles [22], [53]. An addi-
+tional 14 metrics were computed as supplemental measures                            B. THREE-WAY ANOVA RESULTS
+for robustness evaluation. These grouped into four types as                        Significance analysis (ANOVA) revealed prompt type to have
+follows:                                                                           a significant (p < 0.001), very large main effect, explaining
+
+VOLUME 14, 2026                                                                                                                                44743
+
+<a id="pdf-p5"></a>
+### [PDF p.5] R. R. Nour: Prompt Engineering Versus Model Selection for Cognitive Accessibility in LLMs
+- Locator: `R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l.pdf` · página **5** / 15
+
+R. R. Nour: Prompt Engineering Versus Model Selection for Cognitive Accessibility in LLMs
+
+
+
+
+FIGURE 1. Main effects of model and prompt type on Flesch reading ease.
+
+TABLE 2. Three-way ANOVA for flesch reading ease.
+
+
+
+                                                                             FIGURE 2. Model x prompt engineering interaction.
+
+
+
+
+71.9% of variance. This effect dominated all other factors.
+Model selection also exhibited a significant (p < 0.001)                     FIGURE 3. Task type effects.
+main effect, explaining 15.8% of variance. Although this
+effect is also large in a numeric sense, it is very much                        When comparing the two engineered conditions to each
+dwarfed by the prompt effect, which is 4.6× larger. Task                     other, a significant but smaller difference was observed
+type likewise demonstrated a significant (p < 0.001), less-                  (M_diff = 5.62, 95% CI [2.78, 8.46], p < 0.001), with
+large main effect, explaining 23.1% of variance. Specifically,               medium effect size (d = 0.59). These results indicate
+outputs from procedural tasks were significantly more read-                  that Cognitive-Explicit prompts provide an additional 5.62-
+able than those from conceptual tasks (M = 72.75 versus                      point readability boost over Structured prompts. Thus, when
+61.41, +11.34 points).                                                       engineering LLM prompts with the goal of producing acces-
+   With regard to interaction effects, a marginally significant              sible output, explicit cognitive constraints outperform generic
+but small effect was observed for the interaction of model                   mandates of simplicity.
+and prompt (p = 0.068), explaining just 5.2% of variance.
+This result supports that different models respond differently               D. POST-HOC COMPARISONS: PROMPT EFFECT
+to a given prompt, but with relatively minor impact on the                   The gains achieved by prompt engineering within the context
+resultant output. Meanwhile, the interaction of prompt and                   of each specific model were quantified as the difference in
+task showed a significant (p < 0.001) and nominally large                    FRE scores between the Cognitive-Explicit condition and the
+effect, explaining 16.0% of variance. Specifically, prompt                   corresponding Baseline condition. These scores are presented
+engineering had a greater impact on the accessibility of con-                in Table 3. Large gains on the order of 30-40 points were
+ceptual task responses than for procedural task responses.                   observed for all four models, corresponding to very large
+   Details of the ANOVA results are provided in Table 2. The                 effect sizes (d = 3.12-4.38). These results support the prac-
+Model × Prompt interaction is visualized in Fig. 2, and task                 tical utility of prompt engineering to improve accessibility
+type effects in Fig. 3.                                                      and the efficacy of Cognitive-Explicit prompts across diverse
+                                                                             model architectures. Notably, Claude demonstrated both the
+C. POST-HOC COMPARISONS: PROMPT EFFECT                                       lowest baseline accessibility score and the largest gain, sug-
+For prompt types, all pairwise comparisons were found to                     gesting it to be highly responsive to explicit accessibility
+be significant by post-hoc Tukey’s HSD. In specific terms,                   constraints. This may be attributable to its Constitutional AI
+both Structured and Cognitive-Explicit prompts produced                      training emphasizing instruction-following [60]. Meanwhile,
+outputs with dramatically improved readability over the                      the smallest gain was observed for the smaller Llama model,
+Baseline condition (Structured: M_diff = 32.02, 95% CI                       which may reflect limitations in the ability of smaller models
+[29.18, 34.86], p < 0.001; Cognitive-Explicit: M_diff =                      to follow complex instructions.
+37.64, 95% CI [34.80, 40.48], p < 0.001). With regard to
+Cohen’s d, both engineered prompts exhibited a very large                    E. SENTENCE LENGTH REDUCTION
+effect (d > 1.3 [59]) over Baseline (Structured: d = 2.12;                   In the interest of gaining insight into the mechanisms of
+Cognitive-Explicit: d = 2.49).                                               readability improvement, we analyzed sentence length by
+
+44744                                                                                                                                      VOLUME 14, 2026
+
+<a id="pdf-p6"></a>
+### [PDF p.6] R. R. Nour: Prompt Engineering Versus Model Selection for Cognitive Accessibility in LLMs
+- Locator: `R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l.pdf` · página **6** / 15
+
+R. R. Nour: Prompt Engineering Versus Model Selection for Cognitive Accessibility in LLMs
+
+
+
+
+TABLE 3. Prompt engineering gains by model.                                           Thus, prompt engineering using the Cognitive-Explicit
+                                                                                   design approach improves response readability primarily by
+                                                                                   means of syntactic simplification (shorter sentences) and lex-
+                                                                                   ical substitution (simpler words), with minimal trade-offs in
+                                                                                   vocabulary diversity or information completeness.
+
+                                                                                   V. DISCUSSION
+                                                                                   A. PRIMARY FINDING: PROMPT ENGINEERING
+                                                                                   DOMINATES MODEL SELECTION
+                                                                                   This study provides the first quantitative evidence indicat-
+                                                                                   ing that the cognitive accessibility of LLM responses is
+                                                                                   predominantly influenced by prompt engineering. Specifi-
+                                                                                   cally, we found prompt design to explain 71.9% of vari-
+                                                                                   ance in readability, compared to only 15.8% for model
+                                                                                   selection—a 4.6-fold larger effect. This finding has profound
+                                                                                   implications for LLM deployments relevant to cognitive
+                                                                                   disability populations: namely, far greater gains can be real-
+                                                                                   ized from investing in prompt design, rather than model
+FIGURE 4. Sentence length distributions by prompt type.                            procurement.
+                                                                                      Model selection did exhibit a significant effect on response
+prompt type. Baseline prompts produced responses averaging
+                                                                                   accessibility (ηp2 = 0.158), but with far smaller contribution
+19.44 words per sentence with high variability (SD = 10.77),
+                                                                                   than expected. This finding challenges the common indus-
+whereas both Structured and Cognitive-Explicit prompts
+                                                                                   try assumption that accessibility can be inherently improved
+resulted in shorter and more consistent sentences (Structured:
+                                                                                   by opting for a larger and more expensive model (e.g.,
+M = 11.36 words/sentence, SD = 6.29; Cognitive-Explicit:
+                                                                                   GPT-4o, Claude-3.5) [62], [63]. Instead, a well-designed
+M = 10.28 words/sentence, SD = 5.49). Overall, responses
+                                                                                   prompt applied to a smaller model (e.g., Llama-3.1-8B) can
+from Cognitive-Explicit prompts were 47.1% shorter com-
+                                                                                   yield responses with readability scores comparable to or
+pared to Baseline.
+                                                                                   exceeding those from a larger model given a suboptimal
+   These findings support that Cognitive-Explicit prompts
+                                                                                   prompt.
+successfully enforced the ‘‘<15 words per sentence’’ con-
+straint, a reduction that directly contributes to improved
+                                                                                   B. THE 37.64-POINT IMPROVEMENT:
+readability by lowering working memory demands [47], [61].
+                                                                                   COGNITIVE-EXPLICIT PROMPTS
+Structured prompts also reduced sentence length, indicating
+                                                                                   A remarkable improvement in Flesch Reading Ease of
+that even generic simplicity instructions have measurable
+                                                                                   37.64 points (Cohen’s d = 2.49) was observed when
+effects.
+                                                                                   using Cognitive-Explicit prompts compared to Baseline. This
+   Fig. 4 visualizes the sentence length distributions across
+                                                                                   corresponds to a difference in reading difficulty of approxi-
+prompt types.
+                                                                                   mately seven grade levels (from 12th-16th grade to 6th-8th
+F. LEXICAL COMPLEXITY AND TRADE-OFFS                                               grade). This improvement exceeds prior text simplification
+We next assessed whether gains in readability were accom-                          benchmarks [64], [65] and approaches the gains observed
+panied by reduced lexical diversity or information density.                        with professional human simplification [66], [67]. Notably,
+To evaluate these properties, we compared Baseline and                             our approach achieved this striking result simply by tailoring
+Cognitive-Explicit prompt types in terms of the type-token                         the prompt, without need for model fine-tuning, API access,
+ratio, the proportion of words with ≥3 syllables, and the total                    or custom training data.
+response length.                                                                      The Cognitive-Explicit prompt design used in this study
+   With regard to type-token ratio, responses from Base-                           is theoretically grounded in working memory theory [20]
+line and Cognitive-Explicit prompts had comparable values                          and Cognitive Load Theory [21], foundations that appear
+(0.68 versus 0.65), indicating that the more accessible outputs                    critical to its success. By operationalizing specific cognitive
+still retained a varied vocabulary. In contrast, responses to                      constraints (sentence length <15 words, simple everyday
+Baseline prompts contained twice the proportion of difficult                       words, one idea per sentence, concrete examples, chunk-
+words (18.2% with ≥3 syllables, versus 9.1% for Cognitive-                         ing), the prompt provides actionable, unambiguous guidance
+Explicit prompts), indicating that the engineered prompts                          that LLMs can execute reliably. Comparatively smaller gains
+successfully skewed responses towards using ‘‘simple every-                        were observed when using Structured type prompts, which
+day words’’. Finally, both Baseline and Cognitive-Explicit                         included only a generic instruction to ‘‘use simple words and
+prompts resulted in responses of comparable average length                         short sentences.’’ These findings suggest that vague directives
+(187 versus 176 words), suggesting that accessibility was                          are less effective than explicit constraints when it comes to
+improved through restructuring rather than omission.                               improving response accessibility.
+
+VOLUME 14, 2026                                                                                                                             44745
+
+<a id="pdf-p7"></a>
+### [PDF p.7] R. R. Nour: Prompt Engineering Versus Model Selection for Cognitive Accessibility in LLMs
+- Locator: `R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l.pdf` · página **7** / 15
+
+R. R. Nour: Prompt Engineering Versus Model Selection for Cognitive Accessibility in LLMs
+
+
+
+
+C. MODEL × PROMPT INTERACTION: DIFFERENTIAL                            plain language’’. Working memory principles as used here
+RESPONSIVENESS                                                         in Cognitive-Explicit prompts can provide an effective guide
+Our results also hint at intriguing differences in model               for response formulation: sentence length <15 words, simple
+responsiveness to accessibility prompts, as indicated by               everyday words, one idea per sentence, concrete examples,
+the marginally significant Model × Prompt interac-                     and chunking.
+tion (F(6, 216) = 1.99, p = 0.068, ηp2 = 0.052).                          Third, prompt designs should be tailored to the task
+The single greatest gain was obtained for Claude-                      type. That is, conceptual explanations benefit the most from
+Sonnet-4.5 (+43.41 points, +128%), which also demon-                   explicit cognitive scaffolding. Procedural instructions may
+strated the lowest baseline readability. This may reflect              not need the same intensive prompting, but still benefit from
+Anthropic’s Constitutional AI training, which emphasizes               mandating chunking and provision of concrete examples.
+instruction-following and safety constraints [59], [68].                  Fourth, for advanced use cases, account for model respon-
+Conversely, the least gain was obtained with Llama-3.1-                siveness. When maximum accessibility of responses is
+8B (+31.36 points, +64%), potentially due to smaller models            desired, practitioners should choose models that are highly
+having less capacity for fielding complex multi-constraint             capable of following instructions (e.g., Claude-Sonnet, GPT-
+instructions.                                                          4o). Smaller models (e.g., Llama-3.1-8B) can also achieve
+   Overall, this trend towards interaction suggests that               good accessibility with appropriate prompt design, offering
+model selection may be of greater consequence when                     an avenue for cost savings.
+using advanced prompting techniques. Hence, practi-                       Finally, prompt engineering should be validated with
+tioners seeking maximum accessibility should prioritize                target users. Readability metrics are a necessary compo-
+models with demonstrated responsiveness to explicit instruc-           nent of evaluations, but not sufficient by themselves. User
+tions (e.g., Claude, GPT-4o), particularly when aiming to              comprehension, satisfaction, and usability must be assessed
+serve populations requiring the highest readability standards          through actual testing by individuals with cognitive disabili-
+(e.g., intellectual disabilities, severe dyslexia).                    ties [70], [71].
+
+D. TASK TYPE EFFECTS: PROCEDURAL VS. CONCEPTUAL                        F. LIMITATIONS AND FUTURE WORK
+We further observed readability outcomes to differ according           Several important limitations must be considered in rela-
+to task type, with responses to procedural tasks on average            tion to this work. First, Flesh Reading Ease is a widely
+achieving scores 11.34 points higher than conceptual tasks             validated readability metric, but cannot capture all dimen-
+(M = 72.75 versus 61.41, ηp2 = 0.231). This aligns with                sions of cognitive accessibility. Future work should consider
+schema theory [69]: procedural tasks benefit from a sequen-            other aspects such as visual layout, multimedia support, and
+tial, action-oriented structure that maps naturally onto user          personalization, incorporating user comprehension studies,
+goals (‘‘First, do X. Then, do Y.’’), whereas conceptual tasks         eye-tracking, and qualitative feedback [72], [73]. Second,
+require abstract definitional explanations that are inherently         task scope in this work was limited to text-based explanations
+more complex.                                                          in four conceptual domains. Additional studies are required
+   Notably, a significant Prompt × Task interaction was                to also explore multi-modal outputs (text + images), conver-
+observed (ηp2 = 0.160), with the implication that greater              sational interactions, and domain-specific applications (e.g.,
+gains can be achieved when engineering prompts for concep-             legal, technical documentation). Third, only three prompt
+tual tasks. This suggests that explicit cognitive scaffolding is       design strategies were compared. Future work should explore
+especially valuable when explaining abstract ideas. Overall,           additional techniques for optimizing accessibility prompts
+conceptual explanations should be prioritized in accessibility         (e.g., genetic algorithms, reinforcement learning from human
+interventions, as it is for these tasks that baseline readability      feedback) [16], [74]. Fourth, LLMs are a highly active area
+is lowest and potential engineering gains the greatest. Less-          of development and model capabilities evolve rapidly. Eval-
+intensive prompt design may be needed to achieve acceptable            uations in this study were limited to four models current as
+readability for procedural tasks.                                      of November 2024. Future research should reassess prompt
+                                                                       vs. model effects as new models emerge. Additionally, it is
+E. PRACTICAL RECOMMENDATIONS                                           necessary to extend the research to additional LLMs (e.g.,
+Synthesizing our findings, we propose the following action-            Gemini, Mistral, BLOOM) and open-source alternatives so
+able recommendations for organizations deploying LLMs for              as to evaluate the generalizability. Finally, readability metrics
+cognitive disability populations. First, prompt engineering            are useful predictors of comprehension [75], [76], but no
+should be prioritized. Before upgrading models, practitioners          substitute for direct user testing. Planned follow-up studies
+should invest in prompt design, testing, and refinement. Staff         will conduct user trials with dyslexic readers, individuals with
+and users should be trained on effective prompt formulation,           intellectual disabilities, and autism spectrum populations.
+and prompt libraries should be developed for common acces-
+sibility scenarios (healthcare, education, daily living).              VI. CONCLUSION
+   Second, prompts should specify measurable constraints               This study provides the first systematic, quantitative com-
+as opposed to vague instructions like ‘‘simplify’’ or ‘‘use            parison of prompt engineering versus model selection as
+
+44746                                                                                                                                VOLUME 14, 2026
+
+<a id="pdf-p8"></a>
+### [PDF p.8] R. R. Nour: Prompt Engineering Versus Model Selection for Cognitive Accessibility in LLMs
+- Locator: `R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l.pdf` · página **8** / 15
+
+R. R. Nour: Prompt Engineering Versus Model Selection for Cognitive Accessibility in LLMs
+
+
+
+
+mechanisms for enhancing the cognitive accessibility of                             C. COGNITIVE-EXPLICIT PROMPT TEMPLATE
+LLM responses. Across 240 responses spanning four lead-                            Format:
+ing models and 60 real-world tasks, we demonstrate that                               Explain {topic} for someone with learning difficulties.
+prompt engineering accounts for 71.9% of variance in                               Use: (1) simple everyday words (2) sentences under 15 words
+readability, whereas model selection explains 15.8%—                               (3) one main idea per sentence (4) concrete examples
+a 4.6-fold larger effect. Specifically, Cognitive-Explicit                         (5) bullet points or numbered lists
+prompt designs, grounded in working memory theory and                                 Examples:
+Cognitive Load Theory, improved Flesch Reading Ease                                   • ‘‘Explain cloud storage for someone with learning diffi-
+by 37.64 points (Cohen’s d = 2.49). Mechanistically,                                    culties. Use: (1) simple everyday words, (2) sentences
+this improvement was realized through reduced response                                  under 15 words, (3) one main idea per sentence, (4)
+sentence length (47% shorter) and less use of difficult,                                concrete examples, (5) bullet points or numbered lists.’’
+polysyllabic words (50% fewer). At the same time, trade-
+offs in lexical diversity and information completeness were                         D. THEORETICAL GROUNDING
+minimal.                                                                           The Cognitive-Explicit prompt operationalizes five cognitive
+   The practical implications of these findings are signif-                        accessibility principles:
+icant. Practitioners should regard prompt engineering as                             • Simple everyday words: Reduces lexical processing
+the primary lever for improving the accessibility of LLM                                load [48]
+responses. Model selection merits secondary consideration.                           • Sentences under 15 words: Accommodates working
+Policymakers should develop accessibility guidelines that                               memory capacity (7±2 chunks) [20]
+mandate explicit cognitive design constraints in prompts.                            • One main idea per sentence: Prevents cognitive overload
+Outlining model selection criteria is not by itself sufficient to                       from complex syntax [49]
+ensure accessibility of AI systems. In research, future work                         • Concrete examples: Supports schema activation and
+should extend beyond readability metrics to user comprehen-                             comprehension [50]
+sion studies, multi-modal accessibility, and domain-specific                         • Bullet points/numbered lists: Chunks information for
+applications.                                                                           easier encoding [51]
+   It is undeniable that large language models hold transfor-
+mative potential for individuals with cognitive disabilities,                      APPENDIX B
+but also that realizing this potential necessitates deliberate                     TASK INVENTORY
+design. By prioritizing theoretically-grounded prompt engi-                        This appendix lists all 60 task queries used in the study,
+neering over expensive model upgrades, organizations can                           organized by domain and task type.
+dramatically improve accessibility at minimal cost, advanc-
+ing equity in the AI era.                                                           A. HEALTHCARE DOMAIN (15 TASKS)
+                                                                                   Procedural Tasks (8):
+                                                                                     • How do I take antibiotics correctly?
+APPENDIX A
+                                                                                     • How do I measure my blood pressure at home?
+PROMPT TEMPLATES
+                                                                                     • How do I schedule a doctor’s appointment?
+This appendix provides the complete prompt templates used
+                                                                                     • How do I read a prescription label?
+in the study for all three conditions.
+                                                                                     • How do I use an inhaler for asthma?
+                                                                                     • How do I check for skin cancer signs?
+A. BASELINE PROMPT TEMPLATE
+                                                                                     • How do I prepare for a blood test?
+Format: {task_query}
+                                                                                     • How do I manage diabetes medication?
+  Examples:
+                                                                                   Conceptual Tasks (7):
+   • ‘‘What is cloud storage?’’
+                                                                                     • What is high blood pressure?
+   • ‘‘How do I check my bank balance online?’’
+                                                                                     • What is Type 2 diabetes?
+   • ‘‘What is photosynthesis?’’
+                                                                                     • What are antibiotics?
+                                                                                     • What is an MRI scan?
+B. STRUCTURED PROMPT TEMPLATE                                                        • What is mental health?
+Format: Explain {topic} using simple words and short sen-                            • What is physical therapy?
+tences.                                                                              • What is preventive care?
+   Examples:
+   • ‘‘Explain cloud storage using simple words and short                           B. DAILY LIVING DOMAIN (15 TASKS)
+     sentences.’’                                                                  Procedural Tasks (8):
+   • ‘‘Explain how to check bank balance online using simple                         • How do I check my bank balance online?
+     words and short sentences.’’                                                    • How do I use public transportation?
+   • ‘‘Explain photosynthesis using simple words and short                           • How do I pay bills online?
+     sentences.’’                                                                    • How do I do laundry?
+
+VOLUME 14, 2026                                                                                                                            44747
+
+<a id="pdf-p9"></a>
+### [PDF p.9] R. R. Nour: Prompt Engineering Versus Model Selection for Cognitive Accessibility in LLMs
+- Locator: `R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l.pdf` · página **9** / 15
+
+R. R. Nour: Prompt Engineering Versus Model Selection for Cognitive Accessibility in LLMs
+
+
+
+
+  • How do I cook rice?                                   • Tasks per domain: 15
+  • How do I change a light bulb?                      Domain balance: Healthcare (15), Daily Living (15), Educa-
+  • How do I sort recycling?                           tion (15), Employment/Financial (15)
+  • How do I set up a monthly budget?
+Conceptual Tasks (7):                                  APPENDIX C
+  • What is cloud storage?                             COMPLETE RESPONSE DATASET SUMMARY
+  • What is online banking?                            This appendix provides a summary of the complete response
+  • What is a debit card?                              dataset. Due to space constraints, we present:
+  • What is homeowners insurance?                        • Dataset structure and metadata
+  • What is a lease agreement?                           • Sample responses demonstrating each prompt type
+  • What is public transportation?                       • Data availability statement
+  • What is a utility bill?
+                                                       A. DATASET STRUCTURE
+C. EDUCATION DOMAIN (15 TASKS)                         The complete dataset contains 240 LLM responses with the
+Procedural Tasks (7):                                  following structure:
+  • How do I take effective notes?
+  • How do I prepare for an exam?
+  • How do I write an essay?
+  • How do I cite sources in APA format?
+  • How do I create a study schedule?
+  • How do I use a library catalog?
+  • How do I join a study group?
+Conceptual Tasks (8):
+  • What is photosynthesis?
+  • What is algebra?
+  • What is the scientific method?
+  • What is critical thinking?
+  • What is plagiarism?
+  • What is a thesis statement?
+  • What is peer review?
+  • What is online learning?                           B. SAMPLE RESPONSES: CLOUD STORAGE (P001)
+                                                       Sample 1: Llama-3.3-70B, Baseline ‘‘Cloud storage is a
+D. EMPLOYMENT/FINANCIAL DOMAIN (15 TASKS)              model of data storage where digital data is stored in logical
+Procedural Tasks (7):                                  pools across multiple servers and locations. The physical stor-
+  • How do I write a resume?                           age spans multiple servers (sometimes in multiple locations),
+  • How do I prepare for a job interview?              and the physical environment is typically owned and managed
+  • How do I file taxes?                               by a hosting company. These cloud storage providers are
+  • How do I open a savings account?                   responsible for keeping the data available and accessible,
+  • How do I request time off from work?               and the physical environment protected and running. Cloud
+  • How do I report workplace harassment?              storage is purchased from a third-party cloud vendor who
+  • How do I negotiate salary?                         owns and operates data storage capacity and delivers it over
+Conceptual Tasks (8):                                  the Internet in a pay-as-you-go model. These cloud storage
+  • What is a 401(k) retirement plan?
+                                                       vendors manage capacity, security, and durability to make
+  • What is minimum wage?
+                                                       data accessible to applications all around the world.’’
+  • What is workers’ compensation?
+                                                          Sample 2: Llama-3.3-70B, Cognitive-Explicit "Cloud stor-
+  • What is a credit score?
+                                                       age saves your files online.
+  • What is unemployment insurance?
+                                                          You can access your files from any device.
+  • What is a W-2 form?
+                                                          Here’s how it works:
+  • What is compound interest?                            • You upload files to the internet
+  • What is workplace discrimination?                     • They are stored on remote servers
+                                                          • You can download them anytime
+E. TASK DISTRIBUTION SUMMARY                           Benefits:
+  • Total tasks: 60                                       • Your files are safe if your computer breaks
+  • Procedural tasks: 30 (50%)                            • You can share files easily
+  • Conceptual tasks: 30 (50%)                            • You free up space on your device
+
+44748                                                                                                                VOLUME 14, 2026
+
+<a id="pdf-p10"></a>
+### [PDF p.10] R. R. Nour: Prompt Engineering Versus Model Selection for Cognitive Accessibility in LLMs
+- Locator: `R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l.pdf` · página **10** / 15
+
+R. R. Nour: Prompt Engineering Versus Model Selection for Cognitive Accessibility in LLMs
+
+
+
+
+Common examples: Google Drive, Dropbox, iCloud                                      B. FLESCH READING EASE SUMMARY STATISTICS
+   Think of it like a virtual filing cabinet. You put things in.
+You take things out. But it lives on the internet instead of your
+desk."
+   Sample 3: GPT-4o, Cognitive-Explicit "Cloud storage is a
+way to save files online.
+   It works like this:
+   • You upload files to the internet
+   • They stay on remote computers
+   • You can access them from any device
+                                                                                    C. FRE BY EXPERIMENTAL CONDITION (DETAILED)
+
+Benefits include:
+   • Your files are backed up safely
+   • You can share with others easily
+   • It frees space on your computer
+Examples: Google Drive, Dropbox, OneDrive
+   Think of it as a digital storage locker. You put things in and
+take them out whenever needed.’’
+
+C. DATA AVAILABILITY
+The complete response dataset (240 responses, ∼289 KB) is
+available in a private GitHub repository for reviewer access.
+GitHub Repository: https://github.com/rrnour/cognitive-
+accessibility-llms File Location: data/raw/combined_respons
+es_data.csv. The dataset includes: - All 96 raw LLM
+responses (4 models × 3 prompts × 8 tasks) - Complete
+metadata: Task IDs, task types, model names, prompt cat-
+egories - Response text, word counts, and timestamps -
+Collection metadata and quality control flags Reviewers have
+been granted read-only access to verify all analyses. Upon
+manuscript acceptance, the repository will be made public
+and archived on Zenodo with a permanent DOI.
+   Dataset includes: Raw responses, metadata, collection
+timestamps, quality control flags.
+
+APPENDIX D
+COMPLETE READABILITY ANALYSIS RESULTS
+This appendix presents the complete readability analysis
+results for all 240 responses across 14 metrics.
+
+A. READABILITY METRICS COMPUTED
+For each response, we computed:
+                                                                                    D. SENTENCE LENGTH ANALYSIS
+  • Flesch Reading Ease (FRE) - primary metric
+  • Flesch-Kincaid Grade Level
+  • SMOG Index
+  • Coleman-Liau Index
+  • Gunning Fog Index
+  • Average sentence length (words)
+  • Average syllables per word
+  • Difficult words count (≥3 syllables)                                            E. LEXICAL COMPLEXITY ANALYSIS
+  • Difficult words percentage
+  • Lexical diversity (type-token ratio)
+  • Bullet points count
+  • Numbered lists count
+  • Paragraph count
+  • Total word count
+
+VOLUME 14, 2026                                                                                                                   44749
+
+<a id="pdf-p11"></a>
+### [PDF p.11] R. R. Nour: Prompt Engineering Versus Model Selection for Cognitive Accessibility in LLMs
+- Locator: `R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l.pdf` · página **11** / 15
+
+R. R. Nour: Prompt Engineering Versus Model Selection for Cognitive Accessibility in LLMs
+
+
+
+
+F. DATA AVAILABILITY                                                   C. POST-HOC COMPARISONS: MODEL EFFECT (TUKEY
+Complete readability analysis dataset (240 rows ×                      HSD)
+20 columns, ∼57 KB) is available in the GitHub repository:
+GitHub Repository. https://github.com/rrnour/cognitive-
+accessibilit
+y-llms File Location: data/processed/readability_analysis_
+complete.csv. The dataset includes:
+    - All 14-readability metrics for each of the 96 responses.
+        • Flesch Reading Ease (primary outcome measure)
+        • Flesch-Kincaid Grade Level, SMOG Index,
+           Coleman-Liau Index, Gunning Fog Index
+        • Average sentence length, average syllables per
+           word
+        • Difficult words count and percentage
+        • Lexical diversity (type-token ratio)
+        • Bullet points count, numbered lists count, para-
+           graph count, total word count
+    - Complete metadata: Task ID, Model, Prompt Category,
+      Task Type.
+    - Computed using Python textstat library v0.7.3 with
+      NLTK v3.8 Reviewers can download the CSV file to
+      verify all reported statistics, reproduce all analyses, and
+      validate readability computations.                               D. MODEL-SPECIFIC GAINS: DETAILED ANALYSIS
+                                                                       Baseline → Cognitive-Explicit Gains
+APPENDIX E
+COMPLETE STATISTICAL ANALYSIS RESULTS
+This appendix presents the complete statistical analysis
+results, including detailed ANOVA tables, post-hoc compar-
+isons, and effect size calculations.
+
+A. THREE-WAY ANOVA: DETAILED RESULTS
+
+
+
+
+                                                                       E. TASK TYPE ANALYSIS
+
+
+
+
+B. POST-HOC COMPARISONS: PROMPT EFFECT (TUKEY
+HSD)
+
+
+
+                                                                       F. MODEL × PROMPT INTERACTION ANALYSIS
+                                                                       Simple Effects: Prompt Effect within Each Model
+
+
+
+
+44750                                                                                                                                VOLUME 14, 2026
+
+<a id="pdf-p12"></a>
+### [PDF p.12] R. R. Nour: Prompt Engineering Versus Model Selection for Cognitive Accessibility in LLMs
+- Locator: `R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l.pdf` · página **12** / 15
+
+R. R. Nour: Prompt Engineering Versus Model Selection for Cognitive Accessibility in LLMs
+
+
+
+
+G. EFFECT SIZE INTERPRETATION SUMMARY                                                 Panel A: Model main effect showing marginal means for
+                                                                                   each of the four LLMs (Llama-3.3-70B, Llama-3.1-8B, GPT-
+                                                                                   4o, Claude-Sonnet-4.5). Error bars represent standard error of
+                                                                                   the mean (SEM). Effect size: ηp2 = 0.158 (Large Effect).
+                                                                                      Panel B: Prompt engineering main effect showing
+                                                                                   marginal means for Baseline, Structured, and Cognitive-
+                                                                                   Explicit prompt types. Error bars represent SEM. Effect size:
+                                                                                   ηp2 = 0.719 (Large Effect).
+                                                                                      Key Insight: Prompt effect (Panel B) is 4.6× larger than
+                                                                                   Model effect (Panel A).
+H. ASSUMPTIONS TESTING
+Normality: Shapiro-Wilk test on residuals: W = 0.987, p =                          B. FIGURE 2: MODEL × PROMPT ENGINEERING
+0.062 (assumption met)                                                             INTERACTION
+   Homogeneity of Variance: Levene’s test: F(23, 216) =                            [Note: Figure file provided as separate PNG file at 300 DPI
+1.45, p = 0.092 (assumption met)                                                   resolution]
+   Independence: Responses are independent (unique tasks,                             Line graph displaying Flesch Reading Ease scores across
+different API calls)                                                               the three prompt types (x-axis) for each of the four models
+                                                                                   (separate lines). Error bars represent SEM. Interaction effect:
+1) DATA AVAILABILITY
+                                                                                   F(6, 216) = 1.99, p = 0.068, ηp2 = 0.052 (Marginally
+                                                                                   Significant).
+Complete statistical analysis files are available in the GitHub
+                                                                                      Key Features:
+repository: GitHub Repository: https://github.com/rrnour/
+cognitive-accessibility-llms. File Locations and Contents:                            • All models show increasing readability from Baseline to
+   1. data/processed/anova_results_corrected.csv (862 bytes)                            Cognitive-Explicit
+   - Complete three-way ANOVA table                                                   • Claude-Sonnet-4.5 (purple line) shows steepest slope
+   - F-statistics, p-values, degrees of freedom - Effect sizes                          (+43.41 points)
+(ηp2 ) for all main effects and interactions                                          • Llama-3.1-8B (orange line) shows shallowest slope
+   - Power analysis results                                                             (+31.36 points)
+   2. data/processed/descriptive_statistics_table.csv (1.3 KB)                        • Lines are non-parallel, indicating differential model
+   - Means and standard deviations for all conditions                                   responsiveness
+   - Organized by Model × Prompt × Task Type
+   - Sample sizes for each cell - Marginal means                                    C. FIGURE 3: TASK TYPE EFFECTS
+   3. data/processed/summary_statistics.csv (432 bytes)                            [Note: Figure files provided as separate PNG files at 300 DPI
+   - Key summary statistics across all conditions - Grand                          resolution]
+means and overall effect sizes                                                        Panel A: Task type main effect comparing Procedural vs.
+   - Effect size interpretations (Cohen’s guidelines)                              Conceptual tasks. Bar chart with error bars (SEM). Effect
+   4. data/REAL_DATA_STATISTICS.txt (5.1 KB)                                       size: F(1, 216) = 64.74, p < 0.001, ηp2 = 0.231 (Large
+   - Human-readable statistical report                                             Effect).
+   - Formatted tables with complete ANOVA results                                     Panel B: Task Type × Prompt interaction. Line graph
+   - Post-hoc comparison summaries                                                 showing FRE scores across prompt types (x-axis) for Pro-
+   - Effect size interpretations and practical significance.                       cedural (blue line) and Conceptual (orange line) tasks. Error
+All statistical analyses were conducted in Python using                            bars represent SEM. Interaction effect: F(2, 216) = 20.52,
+scipy.stats v1.11 and statsmodels v0.14. Reviewers can verify                      p < 0.001, ηp2 = 0.160 (Large Effect).
+all reported statistics, reproduce ANOVA results, validate                            Key Insight: Prompt engineering gains are larger for Con-
+effect size calculations, and confirm post-hoc comparisons                         ceptual tasks, which have lower baseline readability.
+using the provided data files.
+                                                                                   D. FIGURE 4: SENTENCE LENGTH DISTRIBUTIONS BY
+APPENDIX F                                                                         PROMPT TYPE
+FIGURES                                                                            [Note: Figure file provided as separate PNG file at 300 DPI
+This appendix presents all four publication-quality figures                        resolution]
+(300 DPI) referenced in the manuscript.                                               Violin plots with overlaid box plots showing the distribu-
+                                                                                   tion of average sentence length (words per sentence) for each
+A. FIGURE 1: MAIN EFFECTS OF MODEL AND PROMPT                                      prompt type. Medians (red lines), means (blue diamonds),
+TYPE ON FLESCH READING EASE                                                        and interquartile ranges are displayed.
+[Note: Figure files are provided as separate PNG files                                Statistics Box (inset):
+at 300 DPI resolution]                                                                • Baseline: M = 19.44 ± 10.77 words
+
+VOLUME 14, 2026                                                                                                                             44751
+
+<a id="pdf-p13"></a>
+### [PDF p.13] R. R. Nour: Prompt Engineering Versus Model Selection for Cognitive Accessibility in LLMs
+- Locator: `R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l.pdf` · página **13** / 15
+
+R. R. Nour: Prompt Engineering Versus Model Selection for Cognitive Accessibility in LLMs
+
+
+
+
+  • Structured: M = 11.36 ± 6.29 words                             B. ACCESS DURING REVIEW
+  • Cognitive-Explicit: M = 10.28 ± 5.49 words                     Reviewers have been granted read-only access to the private
+  • Reduction: 47.1% (Baseline → Cognitive-Explicit)               repository. All files can be viewed online and downloaded for
+                                                                   verification of analyses and results.
+Key Insight: Cognitive-Explicit prompts successfully
+enforce the ‘‘<15 words per sentence’’ constraint, with most       C. POST-PUBLICATION ACCESS
+responses clustered around 10 words per sentence.
+                                                                   Upon manuscript acceptance, the repository will be:
+                                                                     1. Made publicly available on GitHub
+E. FIGURE DATA AVAILABILITY                                          2. Archived on Zenodo with a permanent DOI
+All publication-quality figures (300 DPI PNG format) are             3. Version-tagged (v1.0.0) for citation stability
+available in the GitHub repository for reviewer access:              4. Assigned a citable DOI for long-term accessibility.
+GitHub Repository: https://github.com/rrnour/cognitive-              The Zenodo DOI will be added to the final published
+accessibility-llms Folder Location: figures/ Figure Files:         version of this manuscript.
+1. Figure1_MainEffects.png (173 KB) - Panel A: Model
+main effect (ηp2 = 0.158) - Panel B: Prompt engineer-              D. REPRODUCIBILITY INFORMATION
+ing main effect (ηp2 = 0.719) - 300 DPI resolution,                Software Environment:
+publication-ready 2. Figure2_Interaction.png (295 KB) -              • Python: 3.11.5
+Model × Prompt interaction (F(6, 216) = 1.99, p =.068,               • NumPy: 1.24.3
+ηp2 = 0.052) - 300 DPI resolution, publication-ready 3.              • Pandas: 2.0.3
+Figure3_TaskType.png (256 KB) - Panel A: Task type main              • SciPy: 1.11.2
+effect (ηp2 = 0.231) - Panel B: Task Type × Prompt                   • Statsmodels: 0.14.0
+interaction (ηp2 = 0.160) - 300 DPI resolution, publication-         • Matplotlib: 3.7.2
+ready 4. Figure4_SentenceLength.png (228 KB) - Sentence              • Textstat: 0.7.3
+length distributions showing 47.1% reduction - 300 DPI               • NLTK: 3.8.1
+resolution, publication-ready All figures were generated             • OpenAI Python SDK: 1.3.0
+using matplotlib v3.8.0 and seaborn v0.13.0 in Python.               • Anthropic Python SDK: 0.39.0
+High-resolution PNG files are available for download and             • Groq Python SDK: 0.13.0
+verification.                                                      Hardware:
+                                                                     • Data collection: Standard laptop (16 GB RAM)
+APPENDIX G                                                           • Analysis: Standard desktop (32 GB RAM)
+DATA AVAILABILITY AND REPRODUCIBILITY                                • Total computation time: ∼4 hours (including API calls)
+A. COMPLETE DATASET REPOSITORY                                     API Access:
+All research materials, data, and analysis files are avail-          • OpenAI API: GPT-4o access via official SDK
+able in a private GitHub repository for reviewer access:             • Anthropic API: Claude-Sonnet-4.5 access via official
+GitHub Repository: https://github.com/rrnour/cognitive-                SDK
+accessibility-llms Repository Structure and Contents:                • Groq API: Llama models access via official SDK
+data/raw/ combined_responses_data.csv (289 KB): All                  • Total API cost: $2.10 USD
+96 raw LLM responses with complete metadata. data/
+processed/ readability_analysis_complete.csv (57 KB).              E. REPLICATION INSTRUCTIONS
+Complete readability metrics (14 measures × 96 responses).         To replicate this study:
+anova_results_corrected.csv (862 bytes). Three-way ANOVA
+                                                                     • Clone GitHub repository
+results with F-statistics and effect sizes. descriptive_
+                                                                     • Install dependencies: pip install -r requirements.txt
+statistics_table.csv (1.3 KB). Means, SDs, and sample
+                                                                     • Obtain API keys (OpenAI, Anthropic, Groq)
+sizes by condition. summary_statistics.csv (432 bytes)
+                                                                     • Run data collection: python scripts/collect_responses.py
+Key summary statistics and effect size interpretations
+                                                                     • Run analysis: python scripts/analyze_data.py
+data/ REAL_DATA_STATISTICS.txt (5.1 KB). Human-
+                                                                     • Generate figures: python scripts/generate_figures.py
+readable statistical report with formatted tables figures/
+                                                                     • Compare results to published values in Appendix E
+Figure1_MainEffects.png (173 KB) Figure2_Interaction.png
+(295 KB) Figure3_TaskType.png (256 KB) Figure4_Sentence
+Length.png (228 KB) All publication-quality figures                F. CONTACT INFORMATION
+at 300 DPI docs/ ANALYSIS_COMPLETE_SUMMARY.md                      For questions about data, methods, or replication:
+(7.3 KB) Complete documentation of analysis methodology.             • Primary Contact: Redhwan Nour: rnour@taibahu.edu.sa
+Total Repository Size: ∼952 KB (10 files).                           • ORCID: https://orcid.org/0000-0002-6030-1505
+
+
+
+
+44752                                                                                                                            VOLUME 14, 2026
+
+<a id="pdf-p14"></a>
+### [PDF p.14] R. R. Nour: Prompt Engineering Versus Model Selection for Cognitive Accessibility in LLMs
+- Locator: `R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l.pdf` · página **14** / 15
+
+R. R. Nour: Prompt Engineering Versus Model Selection for Cognitive Accessibility in LLMs
+
+
+
+
+ARTIFICIAL INTELLIGENCE (AI) DISCLOSURE                                             [21] J. Sweller, J. J. G. van Merrienboer, and F. G. W. C. Paas, ‘‘Cognitive
+The figures in this manuscript (Figures 1-4) were gener-                                 architecture and instructional design,’’ Educ. Psychol. Rev., vol. 10, no. 3,
+                                                                                         pp. 251–296, Sep. 1998.
+ated using AI-assisted data visualization tools. Specifically,                      [22] R. Flesch, ‘‘A new readability yardstick,’’ J. Appl. Psychol., vol. 32, no. 3,
+Python libraries matplotlib (v3.8.0) and seaborn (v0.13.0)                               pp. 221–233, 1948.
+were used to automatically generate publication-quality visu-                       [23] J. Seeman and M. Cooper, Cognitive Accessibility Guidance. Cambridge,
+alizations from the statistical analysis results. The AI systems                         MA, USA: W3C Accessibility Guidelines Working Group, 2023.
+                                                                                    [24] J. H. Larkin and H. A. Simon, ‘‘Why a diagram is (sometimes) worth ten
+performed automated chart creation, color scheme optimiza-                               thousand words,’’ Cognit. Sci., vol. 11, no. 1, pp. 65–100, Jan. 1987.
+tion, and layout formatting based on the underlying data. All                       [25] World Report on Disability, World Health Organization, WHO, Geneva,
+data processing, statistical analyses, interpretation of results,                        Switzerland, 2011.
+and manuscript text were conducted by the author without AI                         [26] Diagnostic and Statistical Manual of Mental Disorders, 5th ed., APA,
+                                                                                         American Psychiatric Association, Arlington, VA, USA, 2013.
+assistance.                                                                         [27] S. L. Odom, ‘‘Evidence-based practices for children, youth, and young
+                                                                                         adults with autism spectrum disorder,’’ J. Autism Dev. Disord., vol. 40,
+ACKNOWLEDGMENT                                                                           no. 4, pp. 425–441, 2010.
+                                                                                    [28] S. E. Shaywitz and B. A. Shaywitz, ‘‘Dyslexia (specific reading disabil-
+The author gratefully acknowledges Taibah University for the                             ity),’’ Biol. Psychiatry, vol. 57, no. 11, pp. 1301–1309, Jun. 2005.
+support provided to complete this research.                                         [29] R. Martinez, ‘‘Simplifying medical information with GPT-3: A pilot study
+                                                                                         for intellectual disability populations,’’ J. Med. Syst., vol. 47, no. 1,
+REFERENCES                                                                               pp. 1–12, 2023.
+                                                                                    [30] L. Chen and Y. Liu, ‘‘Prompt-based text simplification for dyslexic read-
+ [1] T. Brown, ‘‘Language models are few-shot learners,’’ in Proc. Adv. Neural
+                                                                                         ers,’’ in Proc. Workshop Text Simplif. Access. NLP, 2022, pp. 45–54.
+     Inf. Process. Syst., vol. 33, 2020, pp. 1877–1901.
+                                                                                    [31] A. Kumar, ‘‘A conversational AI system for individuals with autism spec-
+ [2] R. Martin et al., ‘‘Simplifying medical information with GPT-3: A pilot
+                                                                                         trum disorder,’’ in Proc. CHI Conf. Hum. Factors Comput. Syst., 2023,
+     study,’’ J. Med. Syst., vol. 47, no. 1, pp. 1–12, Jan. 2023.
+                                                                                         pp. 1–14.
+ [3] M. Chen, ‘‘Accessibility in AI: Challenges and opportunities for people
+     with disabilities,’’ ACM Trans. Access. Comput., vol. 15, no. 2, pp. 1–28,     [32] H. Khashabi, ‘‘Prompt waywardness: The curious case of discretized
+     2023.                                                                               interpretation of continuous prompts,’’ in Proc. Conf. North Amer. Chapter
+ [4] R. Kapperman, ‘‘Assistive technology for students with learning disabili-           Assoc. Comput. Linguist., 2022, pp. 3631–3643.
+     ties,’’ J. Learn. Disabil., vol. 54, no. 4, pp. 289–304, 2021.                 [33] X. Liu, Y. Zheng, Z. Du, M. Ding, Y. Qian, Z. Yang, and J. Tang, ‘‘GPT
+ [5] S. Gehrmann, ‘‘The GEM benchmark: Natural language generation, its                  understands, too,’’ 2021, arXiv:2103.10385.
+     evaluation and metrics,’’ in Proc. 1st Workshop Nat. Lang. Gener. Eval.        [34] M. Saggion, ‘‘Automatic text simplification,’’ Synth. Lect. Hum. Lang.
+     Metrics, 2021, pp. 96–120.                                                          Technol., vol. 10, no. 1, pp. 1–137, 2017.
+ [6] M. Chen et al., ‘‘Evaluating large language models trained on code,’’ 2021,    [35] T. Schick and H. Schütze, ‘‘Exploiting cloze-questions for few-shot text
+     arXiv:2107.03374.                                                                   classification and natural language inference,’’ in Proc. 16th Conf. Eur.
+ [7] J. Sweller, ‘‘Cognitive load theory,’’ Psychol. Learn. Motiv., vol. 55,             Chapter Assoc. Comput. Linguistics, Main Volume, 2021, pp. 255–269.
+     pp. 37–76, Jan. 2010.                                                          [36] T. Gao, A. Fisch, and D. Chen, ‘‘Making pre-trained language models
+ [8] N. Cowan, ‘‘The magical number 4 in short-term memory: A reconsid-                  better few-shot learners,’’ in Proc. 59th Annu. Meeting Assoc. Comput.
+     eration of mental storage capacity,’’ Behav. Brain Sci., vol. 24, no. 1,            Linguistics 11th Int. Joint Conf. Natural Lang. Process. (Long Papers),
+     pp. 87–114, Feb. 2001.                                                              vol. 1, 2021, pp. 3816–3830.
+ [9] S. Mishra, D. Khashabi, C. Baral, and H. Hajishirzi, ‘‘Cross-task gen-         [37] Y. Zhang, ‘‘Cognitive scaffolding prompts for improving LLM acces-
+     eralization via natural language crowdsourcing instructions,’’ in Proc.             sibility,’’ in Proc. Workshop Cogn. Modeling Comput. Linguist., 2023,
+     60th Annu. Meeting Assoc. Comput. Linguistics (Long Papers), 2022,                  pp. 112–123.
+     pp. 3470–3487.                                                                 [38] L. Feng, F. Tung, H. Hajimirsadeghi, Y. Bengio, and M. O. Ahmed,
+[10] H. Zhang and Y. Zhang, ‘‘Memory-efficient reversible spiking neural                 ‘‘Memory efficient neural processes via constant memory attention block,’’
+     networks,’’ 2023, arXiv:2312.07922.                                                 2023, arXiv:2305.14567.
+[11] Making Content Usable for People With Cognitive and Learning Disabili-         [39] H. Touvron, T. Lavril, G. Izacard, X. Martinet, M.-A. Lachaux, T. Lacroix,
+     ties, W3C Working Group Note, W3C Cognitive and Learning Disabilities               B. Rozière, N. Goyal, E. Hambro, F. Azhar, A. Rodriguez, A. Joulin,
+     Accessibility Task Force, Wakefield, MA, USA, 2021.                                 E. Grave, and G. Lample, ‘‘LLaMA: Open and efficient foundation lan-
+[12] A. Seeman, Cognitive Accessibility User Research,’’ Cambridge, MA,                  guage models,’’ 2023, arXiv:2302.13971.
+     USA: W3C First Public Working Draft, 2022.                                     [40] H. Touvron, ‘‘Llama 2: Open foundation and fine-tuned chat models,’’
+[13] A. Radford, ‘‘Learning transferable visual models from natural language             2023, arXiv:2307.09288.
+     supervision,’’ in Proc. Int. Conf. Mach. Learn., 2021, pp. 8748–8763.          [41] L. Ouyang, ‘‘Training language models to follow instructions with human
+[14] J. Achiam et al., ‘‘GPT-4 technical report,’’ 2023, arXiv:2303.08774.               feedback,’’ in Proc. Adv. Neural Inf. Process. Syst., vol. 35, 2022,
+[15] J. Reynolds and M. McDonell, ‘‘Prompt programming for large language                pp. 27730–27744.
+     models: Beyond the few-shot paradigm,’’ in Proc. Extended Abstr. (CHI),
+                                                                                    [42] Y. Bai et al., ‘‘Constitutional AI: Harmlessness from AI feedback,’’ 2022,
+     2021, pp. 1–7.
+                                                                                         arXiv:2212.08073.
+[16] Y. Zhou, ‘‘Large language models are human-level prompt engineers,’’ in
+                                                                                    [43] R. Patel, ‘‘Readability across large language models: A comparative
+     Proc. 11th Int. Conf. Learn. Represent., 2023, pp. 1–40.
+                                                                                         analysis,’’ in Proc. Conf. Empir. Methods Nat. Lang. Process., 2023,
+[17] C. Branham and M. Mukkamala, ‘‘Accessibility in AI: Current chal-
+                                                                                         pp. 4521–4533.
+     lenges and promising directions,’’ IEEE Pervasive Comput., vol. 21, no. 3,
+     pp. 56–64, Jan. 2022.                                                          [44] M. Rodriguez and J. Kim, ‘‘Instruction-tuned models and output accessi-
+[18] S. K. Kane, C. Jayant, J. O. Wobbrock, and R. E. Ladner, ‘‘Freedom to               bility,’’ ACM Trans. Intell. Syst. Technol., vol. 14, no. 3, pp. 1–21, 2023.
+     roam: A study of mobile device adoption and accessibility for people with      [45] J. Cohen, Statistical Power Analysis for the Behavioral Sciences, 2nd ed.,
+     visual and motor disabilities,’’ in Proc. 11th Int. ACM SIGACCESS Conf.             Hillsdale, NJ, USA: Erlbaum, 1988.
+     Comput. Accessibility, Oct. 2009, pp. 115–122.                                 [46] W. H. DuBay, The Principles of Readability. Costa Mesa, CA, USA:
+[19] M. Valencia, ‘‘Exploring the use of ChatGPT for text simplification for             Impact Information, 2004.
+     people with intellectual disabilities,’’ in Proc. Workshop Innov. Intell.      [47] G. J. Hitch and A. D. Baddeley, ‘‘Working memory,’’ Psychol. Learn.
+     Assistive Technol., 2023, pp. 23–30.                                                Motiv., vol. 8, pp. 47–89, Jan. 1974.
+[20] G. A. Miller, ‘‘The magical number seven, plus or minus two: Some limits       [48] M. Brysbaert, A. B. Warriner, and V. Kuperman, ‘‘Concreteness ratings for
+     on our capacity for processing information,’’ Psychol. Rev., vol. 63, no. 2,        40 thousand generally known english word lemmas,’’ Behav. Res. Methods,
+     pp. 81–97, 1956.                                                                    vol. 46, no. 3, pp. 904–911, Sep. 2014.
+
+VOLUME 14, 2026                                                                                                                                                 44753
+
+<a id="pdf-p15"></a>
+### [PDF p.15] R. R. Nour: Prompt Engineering Versus Model Selection for Cognitive Accessibility in LLMs
+- Locator: `R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l.pdf` · página **15** / 15
+
+R. R. Nour: Prompt Engineering Versus Model Selection for Cognitive Accessibility in LLMs
+
+
+
+
+[49] M. A. Just and P. A. Carpenter, ‘‘A capacity theory of comprehension:              [70] S. Rello, ‘‘A mobile application for displaying more accessible eBooks for
+     Individual differences in working memory,’’ Psychol. Rev., vol. 99, no. 1,              people with dyslexia,’’ Proc. Comput. Sci., vol. 14, pp. 226–233, Jan. 2012.
+     pp. 122–149, 1992.                                                                 [71] C. Bragg and J. Zeng, ‘‘Measuring cognitive load: A review of tools and
+[50] J. D. Bransford and M. K. Johnson, ‘‘Contextual prerequisites for under-                techniques,’’ in Proc. Hum. Factors Ergonom. Soc. Annu. Meeting, 2021,
+     standing: Some investigations of comprehension and recall,’’ J. Verbal                  pp. 1134–1138.
+     Learn. Verbal Behav., vol. 11, no. 6, pp. 717–726, Dec. 1972.                      [72] K. Rayner, ‘‘Eye movements in reading and information processing: 20
+[51] R. E. Mayer, ‘‘Multimedia learning,’’ in Psychology of Learning and Moti-               years of research,’’ Psychol. Bull., vol. 124, no. 3, pp. 372–422, 1998.
+     vation, vol. 41. New York, NY, USA: Academic, Jan. 2002, pp. 85–139.               [73] A. M. Collins-Thompson, ‘‘Measuring text readability using cognitively
+[52] D. Kieras and S. Bovair, ‘‘The role of a mental model in learning to operate            based indices,’’ Discourse Process., vol. 42, no. 2, pp. 85–112, 2006.
+     a device,’’ Cognit. Sci., vol. 8, no. 3, pp. 255–273, Sep. 1984.                   [74] R. Shin et al., ‘‘AutoPrompt: Eliciting knowledge from language models
+[53] J. S. Chall and E. Dale, Readability Revisited: The New Dale-Chall Read-                with automatically generated prompts,’’ in Proc. Conf. Empir. Methods
+     ability Formula. Cambridge, MA, USA: Brookline Books, 1995.                             Nat. Lang. Process., 2020, pp. 4222–4235.
+[54] S. Banerjee. (2016). Textstat: Calculate Statistics From Text to Determine         [75] W. Kintsch and T. A. van Dijk, ‘‘Toward a model of text comprehension
+     Readability, Complexity and Grade Level. Python Package Index. [Online].                and production,’’ Psychol. Rev., vol. 85, no. 5, pp. 363–394, Sep. 1978.
+     Available: https://pypi.org/project/textstat/                                      [76] M. A. K. Halliday and R. Hasan, Cohesion in English. London, U.K.:
+[55] S. Bird, E. Klein, and E. Loper, Natural Language Processing With Python.               Longman, 1976.
+     Sebastopol, CA, USA: O’Reilly Media, 2009.
+[56] J. Cohen, ‘‘A power primer,’’ Psychol. Bull., vol. 112, no. 1, pp. 155–159,
+     1992.
+[57] P. Virtanen, ‘‘SciPy 1.0: Fundamental algorithms for scientific computing
+     in Python,’’ Nat. Methods, vol. 17, no. 3, pp. 261–272, 2020.
+                                                                                                                    REDHWAN R. NOUR is an esteemed Associate
+[58] S. Seabold and J. Perktold, ‘‘Statsmodels: Econometric and statistical
+                                                                                                                    Professor with Taibah University, whose research
+     modeling with Python,’’ in Proc. 9th Python Sci. Conf., 2010, pp. 92–96.
+                                                                                                                    centers on the interdisciplinary field of human-
+[59] J. Cohen, ‘‘Statistical power analysis,’’ Current Directions Psychol. Sci.,
+     vol. 1, no. 3, pp. 98–101, 1992.                                                                               centered computing. He is a recognized Expert
+[60] Y. Bai, ‘‘Training a helpful and harmless assistant with reinforcement                                         in developing intelligent and inclusive technolog-
+     learning from human feedback,’’ 2022, arXiv:2204.05862.                                                        ical solutions, with a core focus on bridging the
+[61] D. L. Swanson and C. M. De Glopper, ‘‘The effect of instruction in sen-                                        digital divide through cognitive web access, inclu-
+     tence construction on the reading comprehension of students with learning                                      sive design, and assistive technology. His work is
+     disabilities,’’ J. Learn. Disabil., vol. 24, no. 6, pp. 340–348, 1991.                                         driven by a commitment to enhancing accessibility
+[62] S. Bubeck, V. Chandrasekaran, R. Eldan, J. Gehrke, E. Horvitz, E. Kamar,                                       and improving decision-making processes, partic-
+     P. Lee, Y. Tat Lee, Y. Li, S. Lundberg, H. Nori, H. Palangi, M. T. Ribeiro,        ularly for individuals facing cognitive and physical disabilities. A significant
+     and Y. Zhang, ‘‘Sparks of artificial general intelligence: Early experiments       portion of his influential contributions lies in the application of advanced
+     with GPT-4,’’ 2023, arXiv:2303.12712.                                              machine learning (ML) and AI techniques within health informatics. He has
+[63] Anthropic. (Mar. 2024). Introducing Claude 3: A New Standard                       led pioneering research on optimized expert systems and intelligent learn-
+     for AI Assistance. Anthropic Blog. [Online]. Available: https://www.               ing models for the effective prediction and detection of complex medical
+     anthropic.com/claude                                                               conditions. This includes highly-cited work on using stacked support vector
+[64] R. Sun, H. Jin, and X. Wan, ‘‘Document-level text simplification: Dataset,         machines and optimized random forest models for heart failure prediction,
+     criteria and baseline,’’ in Proc. Conf. Empirical Methods Natural Lang.
+                                                                                        alongside studies applying ML for diagnostics in neurological disorders.
+     Process., 2021, pp. 7997–8013.
+                                                                                        This body of work establishes his strong expertise in building data-driven,
+[65] T. Scarton and L. Specia, ‘‘A reading comprehension corpus for machine
+                                                                                        trustworthy decision support systems in the medical field. Beyond health
+     reading evaluation,’’ in Proc. 11th Int. Conf. Lang. Resour. Eval., 2018,
+     pp. 3652–3658.                                                                     applications, his scholarship is diverse, spanning systems optimization, and
+[66] W. Xu, ‘‘Optimizing statistical machine translation for text simplification,’’     comprehensive accessibility assessments. His work includes research on
+     Trans. Assoc. Comput. Linguist., vol. 4, pp. 401–415, Jan. 2016.                   complex computing environments, such as agent-enabled task offloading
+[67] S. Štajner, ‘‘Automatic text simplification for social good: Progress and          in UAV-aided mobile edge computing and studies on stochastic population
+     challenges,’’ in Proc. Findings Assoc. Comput. Linguist. ACL, 2022,                models. He maintains a focus on societal impact through studies assessing
+     pp. 1458–1472.                                                                     the accessibility and usability of real-world services, such as Saudi Online
+[68] D. Ganguli et al., ‘‘Red teaming language models to reduce harms: Meth-            FinTech services for people with disabilities. His commitment to high-impact
+     ods, scaling behaviors, and lessons learned,’’ 2022, arXiv:2209.07858.             research is widely recognized, reflected by an H-index of nine and nearly
+[69] J. R. Anderson, Cognitive Psychology and Its Implications, 8th ed.,                1,000 total citations.
+     New York, NY, USA: Worth Publishers, 2015.
+
+
+
+
+44754                                                                                                                                                   VOLUME 14, 2026

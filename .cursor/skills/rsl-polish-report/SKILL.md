@@ -33,7 +33,7 @@ The critic's job here: real contribution, no false claims, correct citations, co
 The last message of the skill is exactly one line:
 
 - Stop at the first failure (any script returns `ERROR:`, `rsl-picoc` ends in ERROR, or `redaccion:lint` / `--cites` keep failing): `ERROR: <paso y script que falló, con su mensaje>. <cómo arreglarlo>`. Do not continue with later steps.
-- Everything went well: `OK: informe pulido en docs/<slug>/informe-polish.md; marco <al día | regenerado en picoc/<carpeta>/>. Próximo paso: Usa rsl-make-paper sobre docs/<slug>/`.
+- Everything went well: `OK: informe pulido en docs/<slug>/informe-polish.md; marco <al día | regenerado en picoc/<carpeta>/>. Próximo paso: Usa rsl-make-paper sobre docs/<slug>/ (pre-entrega Turnitin: rsl-turnitin-informe y luego rsl-turnitin-arreglar sobre el polish que elijas).`
 
 ## Forbidden
 

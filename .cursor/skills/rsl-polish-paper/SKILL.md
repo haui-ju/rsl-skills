@@ -88,7 +88,7 @@ Contexto 3–5 short paragraphs · El problema 3–4 (arises from the previous �
 The last message of the skill is exactly one line:
 
 - Stop at the first failure (any `paper:status` step returns `ERROR:`, or `redaccion:lint` / `--cites` / `--picoc-sync` keep failing in the worked sections): `ERROR: <mensaje del script o sección que no pasó>. <cómo arreglarlo>`. Do not continue with later steps.
-- Everything went well: `OK: polish paper/<versión>/paper-polish.md (secciones: …; agentes: …). Próximo paso: congela en config.yml las secciones validadas, o Usa rsl-make-paper sobre docs/<slug>/ para los grupos pendientes`.
+- Everything went well: `OK: polish paper/<versión>/paper-polish.md (secciones: …; agentes: …). Próximo paso: congela en config.yml las secciones validadas, o Usa rsl-make-paper sobre docs/<slug>/ para los grupos pendientes (pre-entrega Turnitin: rsl-turnitin-informe y luego rsl-turnitin-arreglar sobre ese paper-polish.md).`
 
 ## Forbidden
 

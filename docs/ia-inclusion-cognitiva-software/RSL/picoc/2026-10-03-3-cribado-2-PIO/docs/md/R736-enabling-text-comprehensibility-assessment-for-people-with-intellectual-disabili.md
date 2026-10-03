@@ -1,0 +1,896 @@
+# TYPE Brief Research Report
+
+> Fuente PDF: `R736-enabling-text-comprehensibility-assessment-for-people-with-intellectual-disabili.pdf` · técnica **locator index** (página + ancla) + chunks Graphify
+
+## Metadata
+- Stem: `R736-enabling-text-comprehensibility-assessment-for-people-with-intellectual-disabili`
+- PDF: `R736-enabling-text-comprehensibility-assessment-for-people-with-intellectual-disabili.pdf`
+- DOI: `10.3389/fcomm.2023.1175625`
+- Pages: `11`
+- Structured_at: `2026-10-03T23:23:22+00:00`
+- Technique: `pdf-page-locators + heading-chunks`
+
+## Locator index (qué hay y en qué página del PDF)
+
+| Kind | Label | PDF page | MD anchor |
+|------|-------|----------|-----------|
+| abstract | Abstract / blurb | 1 | `#abstract` |
+| concept | Easy Language | 1 | `#concept-easy-language` |
+| concept | easy-to-read | 1 | `#concept-easy-to-read` |
+| concept | readability | ? | `#concept-readability` |
+| concept | reading comprehension | 1 | `#concept-reading-comprehension` |
+| concept | text simpliﬁcation | 1 | `#concept-text-simpli-cation` |
+| concept | intellectual disabilities | 1 | `#concept-intellectual-disabilities` |
+| concept | R736 | ? | `#concept-r736` |
+| concept | enabling | ? | `#concept-enabling` |
+| concept | text | ? | `#concept-text` |
+| concept | comprehensibility | 1 | `#concept-comprehensibility` |
+| concept | assessment | ? | `#concept-assessment` |
+| concept | people | ? | `#concept-people` |
+| concept | with | ? | `#concept-with` |
+| concept | intellectual | 1 | `#concept-intellectual` |
+| concept | disabili | ? | `#concept-disabili` |
+| finding | TYPE Brief Research Report PUBLISHED 03 August 2023 DOI 10.3389/fcomm.2023.1175625 | 1 | `#finding-type-brief-research-report-published-03` |
+| page | p.1: TYPE Brief Research Report | 1 | `#pdf-p1` |
+| page | p.2: Säuberli et al. 10.3389/fcomm.2023.1175625 | 2 | `#pdf-p2` |
+| page | p.3: Säuberli et al. 10.3389/fcomm.2023.1175625 | 3 | `#pdf-p3` |
+| page | p.4: Säuberli et al. 10.3389/fcomm.2023.1175625 | 4 | `#pdf-p4` |
+| page | p.5: Säuberli et al. 10.3389/fcomm.2023.1175625 | 5 | `#pdf-p5` |
+| page | p.6: Säuberli et al. 10.3389/fcomm.2023.1175625 | 6 | `#pdf-p6` |
+| page | p.7: Säuberli et al. 10.3389/fcomm.2023.1175625 | 7 | `#pdf-p7` |
+| page | p.8: Säuberli et al. 10.3389/fcomm.2023.1175625 | 8 | `#pdf-p8` |
+| page | p.9: Säuberli et al. 10.3389/fcomm.2023.1175625 | 9 | `#pdf-p9` |
+| page | p.10: Säuberli et al. 10.3389/fcomm.2023.1175625 | 10 | `#pdf-p10` |
+| page | p.11: Säuberli et al. 10.3389/fcomm.2023.1175625 | 11 | `#pdf-p11` |
+
+## Abstract
+<a id="abstract"></a>
+
+TYPE Brief Research Report PUBLISHED 03 August 2023 DOI 10.3389/fcomm.2023.1175625
+
+## Keywords
+
+- Easy Language
+- easy-to-read
+- readability
+- reading comprehension
+- text simpliﬁcation
+- intellectual disabilities
+
+## Concept index (graph hooks + página)
+
+<a id="concept-easy-language"></a>
+### [PDF p.1] Concept: Easy Language
+- Locator: `R736-enabling-text-comprehensibility-assessment-for-people-with-intellectual-disabili.pdf` · página **1**
+
+<a id="concept-easy-to-read"></a>
+### [PDF p.1] Concept: easy-to-read
+- Locator: `R736-enabling-text-comprehensibility-assessment-for-people-with-intellectual-disabili.pdf` · página **1**
+
+<a id="concept-readability"></a>
+### [PDF p.?] Concept: readability
+- Locator: `R736-enabling-text-comprehensibility-assessment-for-people-with-intellectual-disabili.pdf` · página **?**
+
+<a id="concept-reading-comprehension"></a>
+### [PDF p.1] Concept: reading comprehension
+- Locator: `R736-enabling-text-comprehensibility-assessment-for-people-with-intellectual-disabili.pdf` · página **1**
+
+<a id="concept-text-simpli-cation"></a>
+### [PDF p.1] Concept: text simpliﬁcation
+- Locator: `R736-enabling-text-comprehensibility-assessment-for-people-with-intellectual-disabili.pdf` · página **1**
+
+<a id="concept-intellectual-disabilities"></a>
+### [PDF p.1] Concept: intellectual disabilities
+- Locator: `R736-enabling-text-comprehensibility-assessment-for-people-with-intellectual-disabili.pdf` · página **1**
+
+<a id="concept-r736"></a>
+### [PDF p.?] Concept: R736
+- Locator: `R736-enabling-text-comprehensibility-assessment-for-people-with-intellectual-disabili.pdf` · página **?**
+
+<a id="concept-enabling"></a>
+### [PDF p.?] Concept: enabling
+- Locator: `R736-enabling-text-comprehensibility-assessment-for-people-with-intellectual-disabili.pdf` · página **?**
+
+<a id="concept-text"></a>
+### [PDF p.?] Concept: text
+- Locator: `R736-enabling-text-comprehensibility-assessment-for-people-with-intellectual-disabili.pdf` · página **?**
+
+<a id="concept-comprehensibility"></a>
+### [PDF p.1] Concept: comprehensibility
+- Locator: `R736-enabling-text-comprehensibility-assessment-for-people-with-intellectual-disabili.pdf` · página **1**
+
+<a id="concept-assessment"></a>
+### [PDF p.?] Concept: assessment
+- Locator: `R736-enabling-text-comprehensibility-assessment-for-people-with-intellectual-disabili.pdf` · página **?**
+
+<a id="concept-people"></a>
+### [PDF p.?] Concept: people
+- Locator: `R736-enabling-text-comprehensibility-assessment-for-people-with-intellectual-disabili.pdf` · página **?**
+
+<a id="concept-with"></a>
+### [PDF p.?] Concept: with
+- Locator: `R736-enabling-text-comprehensibility-assessment-for-people-with-intellectual-disabili.pdf` · página **?**
+
+<a id="concept-intellectual"></a>
+### [PDF p.1] Concept: intellectual
+- Locator: `R736-enabling-text-comprehensibility-assessment-for-people-with-intellectual-disabili.pdf` · página **1**
+
+<a id="concept-disabili"></a>
+### [PDF p.?] Concept: disabili
+- Locator: `R736-enabling-text-comprehensibility-assessment-for-people-with-intellectual-disabili.pdf` · página **?**
+
+
+## Findings index (graph hooks + página)
+
+<a id="finding-type-brief-research-report-published-03"></a>
+### [PDF p.1] Finding: TYPE Brief Research Report PUBLISHED 03 August 2023 DOI 10.3389/fcomm.2023.1175625
+- Locator: `R736-enabling-text-comprehensibility-assessment-for-people-with-intellectual-disabili.pdf` · página **1**
+
+
+## Relevance hooks
+### Theme relevance: software engineering and accessibility
+### Theme relevance: cognitive accessibility and neurodiversity
+### Theme relevance: evaluation metrics and WCAG
+
+## Sections (detected in PDF)
+
+_(no numbered sections auto-detected)_
+
+
+## Page chunks (texto por página del PDF)
+
+_Cada heading es un nodo Graphify. El label incluye la página para volver al PDF sin releer todo._
+
+<a id="pdf-p1"></a>
+### [PDF p.1] TYPE Brief Research Report
+- Locator: `R736-enabling-text-comprehensibility-assessment-for-people-with-intellectual-disabili.pdf` · página **1** / 11
+
+TYPE Brief Research Report
+                                                                                                                           PUBLISHED 03 August 2023
+                                                                                                                           DOI 10.3389/fcomm.2023.1175625
+
+
+
+
+                                                    Enabling text comprehensibility
+OPEN ACCESS                                         assessment for people with
+                                                    intellectual disabilities using a
+EDITED BY
+Petra Jaecks,
+Bielefeld University, Germany
+
+REVIEWED BY
+Susana Silva,
+                                                    mobile application
+University of Porto, Portugal
+Katharina Weiland,
+Humboldt University of Berlin, Germany              Andreas Säuberli1*, Silvia Hansen-Schirra2 , Franz Holzknecht3 ,
+Susan Buell,
+University of Dundee, United Kingdom                Silke Gutermuth2 , Silvana Deilen2 , Laura Schiffl2 and Sarah Ebling1
+                                                    1
+*CORRESPONDENCE                                       Department of Computational Linguistics, University of Zurich, Zürich, Switzerland, 2 Johannes
+Andreas Säuberli                                    Gutenberg University Mainz, Germersheim, Germany, 3 University of Teacher Education in Special Needs
+  andreas@cl.uzh.ch                                 Zurich, Zürich, Switzerland
+RECEIVED 27 February 2023
+ACCEPTED 06 June 2023
+PUBLISHED 03 August 2023                            In research on Easy Language and automatic text simpliﬁcation, it is imperative
+CITATION                                            to evaluate the comprehensibility of texts by presenting them to target users
+Säuberli A, Hansen-Schirra S, Holzknecht F,         and assessing their level of comprehension. Target readers often include people
+Gutermuth S, Deilen S, Schiffl L and Ebling S
+(2023) Enabling text comprehensibility              with intellectual or other disabilities, which renders conducting experiments more
+assessment for people with intellectual             challenging and time-consuming. In this paper, we introduce Okra, an openly
+disabilities using a mobile application.            available touchscreen-based application to facilitate the inclusion of people with
+Front. Commun. 8:1175625.
+doi: 10.3389/fcomm.2023.1175625                     disabilities in studies of text comprehensibility. It implements several tasks related
+                                                    to reading comprehension and cognition and its user interface is optimized toward
+COPYRIGHT
+© 2023 Säuberli, Hansen-Schirra, Holzknecht,        the needs of people with intellectual disabilities (IDs). We used Okra in a study
+Gutermuth, Deilen, Schiffl and Ebling. This is an   with 16 participants with IDs and tested for effects of modality, comparing reading
+open-access article distributed under the terms
+                                                    comprehension results when texts are read on paper and on an iPad. We found
+of the Creative Commons Attribution License
+(CC BY). The use, distribution or reproduction      no evidence of such an effect on multiple-choice comprehension questions and
+in other forums is permitted, provided the          perceived difficulty ratings, but reading time was signiﬁcantly longer on paper. We
+original author(s) and the copyright owner(s)
+                                                    also tested the feasibility of assessing cognitive skill levels of participants in Okra,
+are credited and that the original publication in
+this journal is cited, in accordance with           and discuss problems and possible improvements. We will continue development
+accepted academic practice. No use,                 of the application and use it for evaluating automatic text simpliﬁcation systems in
+distribution or reproduction is permitted which
+                                                    the future.
+does not comply with these terms.
+
+                                                    KEYWORDS
+
+                                                    Easy Language, easy-to-read, readability, reading comprehension, text simpliﬁcation,
+                                                    intellectual disabilities
+
+
+
+                                                    1. Introduction
+                                                        The terms “Easy Language”, “Plain Language”, “easy-to-read language”, and “simplified
+                                                    language” all denote varieties of standard language which aim to improve comprehensibility
+                                                    for a wide range of target groups, including people with intellectual disabilities1 (IDs)
+                                                    or communicative impairments, people who are deaf or hard-of-hearing, or non-native
+                                                    speakers (Maaβ, 2020). As efforts to automate the process of simplifying texts are increasing
+                                                    (Schulz et al., 2020; Al-Thanyyan and Azmi, 2021), it also becomes increasingly important
+                                                    to develop and apply accurate and reliable methods for evaluating simplified texts.
+                                                        Much of the previous work on comprehensibility assessment of simplified texts has
+                                                    focused on comprehension tests and perceived difficulty ratings by experts (e.g., simplified
+
+                                                    1   We use the term intellectual disability as an umbrella term to include all forms of cognitive impairment
+                                                    leading to a right to information in Easy Language according to the United Nations Convention on the
+                                                    Rights of Persons with Disabilities (UN CRPD).
+
+
+
+
+Frontiers in Communication                                                   01                                                                 frontiersin.org
+
+<a id="pdf-p2"></a>
+### [PDF p.2] Säuberli et al. 10.3389/fcomm.2023.1175625
+- Locator: `R736-enabling-text-comprehensibility-assessment-for-people-with-intellectual-disabili.pdf` · página **2** / 11
+
+Säuberli et al.                                                                                                        10.3389/fcomm.2023.1175625
+
+
+
+
+language translators) or readers sampled from a general population,          Particularly in the field of automatic text simplification, output
+which are not necessarily representative of the target group                 texts are rarely evaluated with vulnerable populations. The main
+(Alva-Manchego et al., 2021). The reason for this is that target             reasons for this are the difficulty and time involved in accessing
+groups are often difficult to access and experiments involving               these groups and adapting the experiments to the special needs of
+them require significantly more time and expertise (Saggion et al.,          the participants, as well as ethical issues (Saggion et al., 2015; Deilen
+2015; Stajner, 2021). Particularly in the field of automatic text            and Schiffl, 2020; Stajner, 2021).
+simplification, evaluation studies involving the target audience are              Several different methods have been proposed and used to
+rare (Stajner, 2021), and most researchers resort to experts or              measure the difficulty of texts. For subjective perception of
+users on crowdsourcing platforms for human evaluation (e.g., Xu              difficulty, Likert scales are most frequently used (e.g. Leroy et al.,
+et al., 2016; Sulem et al., 2018c; Zhao et al., 2020). In addition,          2013, 2022; Fulmer et al., 2015). For measuring actual or objective
+although many people in the target group are active users of                 difficulty, various types of comprehension testing are applied,
+digital media and devices (Ramsten et al., 2018), existing tools and         including multiple-choice questions (Leroy et al., 2013, 2022;
+platforms for human evaluation are rarely optimized for people               Fajardo et al., 2014; Charzyńska and D˛ebowski, 2015; Alonzo et al.,
+with disabilities (Uzor et al., 2021), leading to a high threshold to        2021), cloze tests (Charzyńska and D˛ebowski, 2015; Redmiles et al.,
+including the target group in evaluation studies. These impedes              2019), and free recall questions (Leroy et al., 2013, 2022). Some
+digital participation, because people with IDs are excluded from             studies also measure different aspects of reading behavior, such as
+research on improving communication technology targeted at                   the time taken to read a text (Crossley et al., 2014; Saggion et al.,
+them.                                                                        2015; Alonzo et al., 2021), gaze patterns recorded through eye-
+    We believe that this situation can be improved by providing              tracking (Rello et al., 2013c; Vajjala et al., 2016; Gutermuth, 2020),
+tools which enable more efficient, effective, and inclusive                  or scrolling interactions (Gooding et al., 2021).
+evaluation studies with participants from diverse target groups,
+particularly, people with IDs. Developing digital applications for
+comprehensibility assessment and adapting them to the needs of               2.2. Tools for computer-based reading
+these target groups reduces the need for close supervision and
+                                                                             experiments
+increases flexibility in terms of where and when experiments can be
+conducted. In addition to reducing cost, this also enables a more
+                                                                                  Many tools used in behavioral and psycholinguistic research
+naturalistic reading environment compared to paper-and-pencil
+                                                                             support various types of reading tasks, for example, PsychoPy
+tests in a laboratory setting. In the present work, we introduce
+                                                                             (Peirce et al., 2019), PsyToolkit (Stoet, 2017), or jsPsych (de Leeuw,
+and test such a tool and apply it in an initial experiment with
+                                                                             2015). Survey platforms such as Qualtrics or SurveyMonkey provide
+participants with ID.
+                                                                             basic features for multiple-choice or text-based responses, and
+    The main contributions of this paper are:
+                                                                             Amazon Mechanical Turk and Qualtrics support custom front-
+1. We describe the design and implementation of Okra, a mobile               end implementations to collect behavioral measurements such
+   application for testing text comprehensibility with people with           as reading time and scrolling behavior, which often involves
+   IDs (Section 3).                                                          considerable technical expertise (e.g. Alonzo et al., 2021; Gooding
+2. We present results from a small-scale study with Okra aiming              et al., 2021), and making implementations accessible requires user
+   to detect potential effects of the digital testing modality               testing. We are not aware of any tools specifically developed for
+   compared to traditional paper-and-pencil methods, and to                  reading experiments with people with IDs. Large-scale digitized
+   test the feasibility of administering low-level cognitive tasks           testing for this target group is uncommon, and studies designed
+   (Section 4).                                                              for participants with IDs are still mostly done using paper-based
+                                                                             methods (e.g. Huenerfauth et al., 2009; Fajardo et al., 2014).
+
+2. Background and related work
+2.1. Human evaluation of text difficulty                                     2.3. Usage of technology by people with ID
+
+    Although there is no consensus on best practices, it is generally            Insights from interviews and surveys have shown that the
+accepted that evaluating Easy Language with target readers is                use of information and communication technologies, and mobile
+crucial for obtaining representative results (Alva-Manchego et al.,          devices in particular, has become widespread among adults with
+2020, 2021; Stajner, 2021; Stodden, 2021). However, human                    IDs (Ramsten et al., 2018), and may even have significant
+evaluation of text difficulty is mostly done with populations such           personal and social benefits (Chadwick et al., 2018; Martin
+as crowdworkers (Leroy et al., 2013; Redmiles et al., 2019), experts         et al., 2021). Use of technology has also been found to be
+(Sulem et al., 2018a,b), students (Fulmer et al., 2015; Leroy et al.,        beneficial for people with IDs in education (Maebara et al., 2022)
+2022), or target groups that are more easily accessible, such as non-        and the development of skills in daily life (Jung et al., 2021),
+native speakers (Crossley et al., 2014; Vajjala et al., 2016; Vajjala        particularly due to the variety of modalities (text, images, video,
+and Lucic, 2019). Exceptions include studies with deaf and heard-            audio, etc.) supported by the devices. This strongly suggests that
+of-hearing participants (Alonzo et al., 2021), readers with dyslexia         participation in digital comprehensibility studies should be possible
+(Rello et al., 2013a,b,c), and people with IDs (Huenerfauth et al.,          for this group. However, existing software solutions, including
+2009; Fajardo et al., 2014; Saggion et al., 2015; Gutermuth, 2020).          crowdsourcing platforms such as Amazon Mechanical Turk, are
+
+
+
+Frontiers in Communication                                              02                                                              frontiersin.org
+
+<a id="pdf-p3"></a>
+### [PDF p.3] Säuberli et al. 10.3389/fcomm.2023.1175625
+- Locator: `R736-enabling-text-comprehensibility-assessment-for-people-with-intellectual-disabili.pdf` · página **3** / 11
+
+Säuberli et al.                                                                                                          10.3389/fcomm.2023.1175625
+
+
+
+
+generally suboptimal in terms of accessibility for many user groups,                To address the requirements described in the previous section,
+including users with IDs (Uzor et al., 2021).                                   we designed the graphical user interface to reduce the amount of
+    Due to this increased use of technology and the growing need of             information visible on screen simultaneously and provide clear
+human evaluators from target groups of Easy Language, developing                indicators of the next steps at every point in time. As it is safe to
+a digital application that is accessible for people with ID is a logical        assume that most participants are at least somewhat familiar with
+next step. However, the feasibility of such applications and potential          modern Android or iOS applications (Ramsten et al., 2018), we
+effects of the digital modality compared to conventional paper-                 follow Material Design specifications2 to implement components
+based methods must be thoroughly tested. Our work presents a first              and navigation behavior reminiscent of widely used apps. When
+step in this direction.                                                         participants open Okra, they are asked to scan a QR code given
+                                                                                to them by the researcher, which registers their device and allows
+                                                                                them to receive experiments to participate in. Each experiment
+3. Application description                                                      starts with a screen with instructions written in Easy Language,
+                                                                                followed by a practice task and a number of main tasks. After each
+    In response to the increasing demand for and importance of                  task, an encouraging message is shown for positive reinforcement,
+representative human evaluations of text simplification and the lack            and the participant is allowed to take a break and continue at
+of suitable tools for one of the main target groups of Easy Language            their own pace. Where easily possible, we included gamification
+(people with IDs), we present a prototype of a mobile application               elements such as colorful pictures and animations (see Figure 1 for
+for touchscreen-based assessment of reading comprehension. Its                  sample screenshots). During tasks, user interactions (i.e., scrolling
+main goal is to create a simple way for researchers to set up and               and touch events) are recorded, and the log is sent to the server after
+configure experiments, which can then be presented to participants              the task is finished.
+in an accessible way, either on their own device, or a device                       No personal information is collected or stored in the client
+provided to them by the researcher (in a laboratory setting).                   application, and participants are only identified by randomly
+                                                                                generated identifiers. The researcher is responsible for collecting
+                                                                                personal information and mapping them to participant identifiers.
+3.1. Requirements                                                               This means that data confidentiality can be handled by the
+                                                                                researcher according to individual requirements.
+    Based on the specific needs and difficulties of the target users                The client application is implemented using the cross-platform
+and the shortcomings of existing tools for collecting reading                   user interface (UI) toolkit Flutter3 , meaning that it can be compiled
+comprehension data described in Section 2, we formulate the                     into a native Android/iOS app or a Progressive Web App (PWA)
+following requirements for our application:                                     which can be installed directly from a web browser. The server is a
+    From a participant’s perspective, the application should:                   Django4 app and contains a dashboard for registering participants
+                                                                                and configuring experiments, and the API for communicating
+  • Provide an easy-to-understand and easy-to-use interface,                    with clients.
+    specifically for participants with mild to moderate IDs or
+    limited language skills.
+  • Support independent use as best as possible, i.e. on a personal
+    device, without supervision.                                                3.3. Tasks
+  • Keep up the user’s motivation.
+                                                                                    We identified tasks which can be made accessible to target users
+    From a researcher’s perspective, the application should:                    while remaining useful for Easy Language research and evaluation
+                                                                                of text simplification. In a typical study, measuring low-level
+  • Collect all data which is potentially useful for evaluating Easy            cognitive skills may also be relevant for screening or comparing to a
+    Language.                                                                   control group. Therefore, apart from reading comprehension tasks,
+  • Allow conducting both remote and in-lab experiments.                        we also include tasks for measuring skills such as working memory
+  • Provide a simple and reproducible way of setting up                         and visual attention. The following types of tasks are currently
+    customized experiments.                                                     implemented in the prototype:
+
+                                                                                    • Reading tasks with multiple-choice questions and Likert-scale
+3.2. Design and implementation                                                        or slider ratings [screenshots (A) and (B) in Figure 1].
+                                                                                    • Multiple-choice cloze tests, where a short segment of text with
+    To allow conducting experiments both in a lab and remotely                        a single gap is shown at a time.
+using participants’ personal devices, we chose a client-server                      • Lexical decision tasks, where the user judges whether a string
+implementation. The client application is installed on a touchscreen                  of characters is a word or a non-word.
+device and used by the participant to complete tasks. On the
+server side, we implemented a web application which includes
+a dashboard where researchers can configure experiments and                     2    https://material.io/
+download results, and an application programming interface (API)                3    https://ﬂutter.dev/
+to communicate with registered clients.                                         4    https://www.djangoproject.com/
+
+
+
+
+Frontiers in Communication                                                 03                                                            frontiersin.org
+
+<a id="pdf-p4"></a>
+### [PDF p.4] Säuberli et al. 10.3389/fcomm.2023.1175625
+- Locator: `R736-enabling-text-comprehensibility-assessment-for-people-with-intellectual-disabili.pdf` · página **4** / 11
+
+Säuberli et al.                                                                                                              10.3389/fcomm.2023.1175625
+
+
+
+
+    FIGURE 1
+    Screenshots of Okra. (A) Reading task with comprehension questions on a tablet screen (in German), as it was presented to participants (cf. Section
+    4.2). (B) Difficulty rating on a phone screen. (C) Instructions for a lexical decision task on a phone screen.
+
+
+
+
+Frontiers in Communication                                                   04                                                               frontiersin.org
+
+<a id="pdf-p5"></a>
+### [PDF p.5] Säuberli et al. 10.3389/fcomm.2023.1175625
+- Locator: `R736-enabling-text-comprehensibility-assessment-for-people-with-intellectual-disabili.pdf` · página **5** / 11
+
+Säuberli et al.                                                                                                             10.3389/fcomm.2023.1175625
+
+
+
+
+  • n-back tasks for testing working memory, first introduced by              difficulties and disabilities in Austria. There were no additional
+    Kirchner (1958).                                                          inclusion criteria. They took part on a voluntary basis and
+  • Digit span tasks, where participants need to remember and                 were compensated monetarily. Participants were not screened
+    recall sequences of digits of increasing length.                          for disability specifically, but all participants in the educational
+  • Word-picture-matching tests, where participants choose the                program have some form of cognitive impairment or learning
+    matching picture for the displayed word, as described by                  disorder (the most common being Autism Spectrum Disorder,
+    Deilen (2020).                                                            Down Syndrome, and developmental delay) and a degree of
+  • Reaction time tests, where an image appears on screen and                 disability of at least 50% according to Austrian legislation.5 They
+    participants tap it as quickly as possible.                               were aged between 18 and 38 (median: 26) at the time of the first
+  • Trail Making Tests for testing visual attention (Reitan and               session. Eight of them identified as female, eight as male. All were
+    Wolfson, 1993).                                                           native German speakers. According to their survey responses from
+  • An adaptation of the electronic short-term memory skill game              the first session, 14 of them use a smartphone on a daily basis, two
+    Simon, where participants remember an increasingly long                   only weekly. This is in line with previous research of technology
+    sequence of buttons to press.                                             usage among people with ID (Ramsten et al., 2018) and validates
+                                                                              our assumptions for the design of the application (cf. Section 3.2).
+    Implementations of these tasks are contained in the client                Self-reported reading frequency [“How often do you read texts (for
+application installed on participants’ devices. Instructions, stimulus        example, in newspapers, books, or the internet)?”] was distributed
+data, and procedure details (number of trials, size of UI elements,           between every day (n = 4), once per week or more (n = 8), and less
+timing etc.) can be configured by the researcher through a web                than once per week (n = 4). All of them had at some point read texts
+application. The client is currently available in German and English.         in Easy Language before.
+
+
+
+3.4. Availability                                                             4.2. Procedure, tasks and variables
+    The source code for both client and server implementations are                 There were two sessions per participant. Each session was
+available under free and open source licenses at https://github.com/          administered one-on-one by an employee at the facility where
+saeub/okra and https://github.com/saeub/okra-server. The client               the participants’ educational program took place. The experiment
+application is currently not available through any official app store.        consisted of a reading task, which was split across the two sessions,
+                                                                              and three different low-level cognitive tasks at the beginning of
+                                                                              the second session. Each task was preceded by written instructions
+4. Experiment: effect of testing                                              and a practice trial. These instructions and the remaining text
+modality and feasibility analysis                                             material were checked by a professional in Easy Language to
+                                                                              ensure that they adhere to guidelines designed for the target group.
+    We used Okra in a small-scale experiment with participants                In addition, the session administrator constantly monitored the
+with IDs. The goal of this experiment was to gather initial evidence          participants’ screens during the experiment and, if necessary, added
+for the following two questions:                                              oral instructions, in order to prevent misunderstanding of the tasks.
+                                                                                   For the reading task, we selected eight newspaper articles
+  • Is there a measurable difference between reading                          written in German Easy Language taken from the APA (Austrian
+    comprehension and perceived difficulty rating tasks                       Press Agency) corpus (Säuberli et al., 2020), ranging between 63
+    performed in Okra compared to paper-and-pencil testing?                   and 122 words in length. For each text, we wrote three multiple-
+  • Is it feasible to test low-level cognitive skills with people with        choice comprehension questions with three answer choices. After
+    ID using Okra?                                                            initially reading the text (without seeing the questions yet),
+                                                                              participants had to rate the difficulty of the text on a 5-point rating
+    The latter question is relevant because in future studies, these          scale (1 = very difficult, 5 = very easy). The text was then shown
+cognitive tasks will be useful for characterizing the target group,           again, together with the comprehension questions, and participants
+screening participants, or correlating reading behavior to certain            had unlimited time to answer them. This was followed by two
+cognitive skills.                                                             more 5-point ratings on the difficulty of the questions (1 = very
+    A selection of results of this study has been reported in Säuberli        difficult, 5 = very easy) and enjoyment (“How much did you enjoy
+(2021).                                                                       this task?”; 1 = not at all, 5 = very much). Each participant read
+                                                                              four texts on an Apple iPad 2018 (9.7 inches) using Okra6 , and
+
+
+4.1. Participants                                                             5   Verordnung     des    Bundesministers      für   Arbeit,   Soziales   und
+                                                                              Konsumentenschutz betreffend nähere Bestimmungen über die Feststellung
+    After institutional review board (IRB) approval and a pilot               des Grades der Behinderung (Einschätzungsverordnung), BGBl. II Nr.
+study with two participants, 16 participants took part in                     261/2010.
+the main study. They were recruited directly through their                    6   Okra was built as a PWA from the code in public repository (https://github.
+instructor in an educational program for people with learning                 com/saeub/okra) at commit hash b56c7a7 and run in the Safari web browser.
+
+
+
+
+Frontiers in Communication                                               05                                                                  frontiersin.org
+
+<a id="pdf-p6"></a>
+### [PDF p.6] Säuberli et al. 10.3389/fcomm.2023.1175625
+- Locator: `R736-enabling-text-comprehensibility-assessment-for-people-with-intellectual-disabili.pdf` · página **6** / 11
+
+Säuberli et al.                                                                                                                 10.3389/fcomm.2023.1175625
+
+
+
+
+four on paper, using a pen to mark their answers. Care was taken                        4.4. Results
+that the visual presentation (font size, layout, etc.) was the same in
+both conditions. In the paper condition, the administrator used a                       4.4.1. Reading task
+stopwatch to measure the initial reading time.7                                              Out of the 128 data points obtained (16 participants × 8 texts),
+     In the reaction time (RT) task, a red balloon was visible and                      one measurement was lost due to a software bug (which was
+the participant was instructed to tap it as quickly as possible. After                  immediately fixed), leading to a total of 127 data points.
+popping the balloon, the next one appeared after a random delay                              Figure 2 shows the distribution of measurements for
+between 0 and 1 second. In the lexical decision task, a string of                       participants and items (questions). Question 2 of text G was
+letters was shown on screen and the participant was instructed to                       answered correctly by all participants. For the remaining data
+tap the correct button (labeled “WORD” or “NOT A WORD”) as                              points, mean-square infit statistics range between 0.70 and 1.44
+quickly as possible. We selected ten words from a list of the 5000                      for participants and between 0.75 and 1.38 for items, indicating an
+most frequent German words (Perkuhn et al., 2009), and generated                        acceptable model fit. The model could not statistically separate the
+ten pseudowords using Wuggy (Keuleers and Brysbaert, 2010).                             two elements in the condition facet (separation = 0.00), indicating
+In the short-term memory task, participants had to observe four                         that participants performed equally well in the two conditions.
+differently colored buttons light up in a specific sequence, starting                   The bias analysis showed no significant difference between the two
+with a sequence of length 1. They then had to repeat this sequence                      conditions for any of the items (all p > 0.17). Overall, the ratio of
+by tapping the buttons in the correct order. The sequence was then                      correct answers was quite high, with an average of 17.5 out of 24
+extended by an additional button press and presented again, and so                      correctly answered questions per participant (s.d.: 3.3).
+on. The trial ended as soon as the participant pressed an incorrect                          Figure 3 shows mean rating responses for each text. For
+button. Since the three cognitive tasks heavily rely on precise                         most participants, there was a strong tendency toward very
+stimulus timing and touch-based user interaction, they could only                       positive responses, and some of the participants gave the same
+be performed on the iPad. The main reason for including them is                         responses for all texts (four participants in the case of text
+to test their feasibility with the target group.                                        and question difficulty ratings). All three rating dimensions are
+                                                                                        also highly correlated with each other (Pearson’s r > 0.55,
+                                                                                        p < 0.001). For all ratings, the MFRM analyses resulted in
+                                                                                        0.00 separation of the condition facet, suggesting that there was
+4.3. Analysis                                                                           no difference in perceived difficulty and enjoyment/motivation
+                                                                                        between modalities.
+    We used item response theory (IRT) to answer the question                                Average reading time was noticeably shorter on the iPad than
+on the difference between modalities. IRT models are used to                            on paper for almost all texts, as Figure 4 shows. According to
+study how underlying latent traits (i.e., unobservable traits such                      the linear mixed-effect model, this effect is 9.97 seconds with a
+as reading ability) are linked to observed performances (i.e., scores                   standard error of 2.22 seconds (p < 0.001). The model also
+on a reading test or questionnaire responses on reading difficulty)                     shows considerable variance between individuals, with a standard
+(see also Ockey, 2021). One particular method of IRT is many-                           deviation of 17.53 seconds for the random effect of participants, and
+facet Rasch measurement (MFRM; Linacre, 1994), which allows                             less variance between texts (s.d.: 7.83 seconds).
+researchers not only to investigate the link between latent traits
+and observable performances, but also how other factors (so-called
+“facets”) influence the performances (Eckes, 2015). As the factor we
+were particularly interested in is the condition (paper-and-pencil                      4.4.2. Cognitive tasks
+or Okra), we constructed a MFRM model consisting of three facets                             Since the three cognitive tasks heavily rely on precise stimulus
+(participant, item, and condition) and used MFRM bias analyses                          timing and touch-based user interaction, they could only be
+to study differences between the item and condition facet. For the                      performed on the iPad. A summary of the most relevant
+analysis, we first coded the answers to the items dichotomously as                      measurements is presented in Table 1.
+either correct or incorrect. For the three ratings, we applied separate                      The RT task resulted in a relatively low variance (mean: 0.68
+MFRM models with three facets (participant, text, and condition)                        sec, s.d.: 0.10 sec), and there is no significant correlation with
+using the 5-point rating scale responses.                                               any of the other measurements. This suggests that the effect of
+    To test the difference in reading time between modalities,                          differences in motor response speeds between participants on other
+we applied a linear mixed-effect model with participants and                            tasks is minimal.
+texts as random effects using the R package lme4 (Bates et al.,                              Results from the lexical decision task are in line with
+2015) and the formula reading.time∼condition + (1 |                                     psycholinguistic expectations, with pseudowords generally causing
+participant) + (1 | text).                                                              a longer RT than words. However, three participants (3, 5, and 10)
+                                                                                        gave the same response “WORD” to all trials and did not exhibit
+                                                                                        any difference in RT between words and pseudowords. Responses
+7   Reading time was measured as the duration between the start of the initial          by participant 11 were also equal to random guessing and showed
+text presentation and the end of the ﬁrst rating after reading the text (in both        no difference in RT.
+conditions). Because the text difficulty rating was on the same page as the                  Since the short-term memory task consisted of a single main
+text in the paper condition, it was not possible to measure the end of reading          trial which stopped immediately after the first incorrectly pressed
+precisely.                                                                              button, we used the maximum score out of practice and main trials
+
+
+
+Frontiers in Communication                                                         06                                                          frontiersin.org
+
+<a id="pdf-p7"></a>
+### [PDF p.7] Säuberli et al. 10.3389/fcomm.2023.1175625
+- Locator: `R736-enabling-text-comprehensibility-assessment-for-people-with-intellectual-disabili.pdf` · página **7** / 11
+
+Säuberli et al.                                                                                                                     10.3389/fcomm.2023.1175625
+
+
+
+
+    FIGURE 2
+    Wright map (Many-Facet Rasch Measurement) of performance in comprehension question responses. Participants and comprehension questions
+    (Q1–3 for texts A–H) are projected onto a common logit scale. The higher a participant’s logit value, the better their performance, and the higher a
+    question’s logit value, the higher its difficulty. A participant has an estimated chance of 50% of correctly answering a question with the same logit
+    value as theirs.
+
+
+
+
+    FIGURE 3
+    Mean rating responses for each text. 1 is the lowest (most negative), 5 is the highest (most positive) response. The questions were “How much did
+    you enjoy this task?” (1 = not at all, 5 = very much), “How difficult were the questions?” (1 = very difficult, 5 = very easy, “How difficult was the text?”
+    (1 = very difficult, 5 = very easy) (presented to participants in German, here translated to English by the authors).
+
+
+
+
+Frontiers in Communication                                                       07                                                                  frontiersin.org
+
+<a id="pdf-p8"></a>
+### [PDF p.8] Säuberli et al. 10.3389/fcomm.2023.1175625
+- Locator: `R736-enabling-text-comprehensibility-assessment-for-people-with-intellectual-disabili.pdf` · página **8** / 11
+
+Säuberli et al.                                                                                                                          10.3389/fcomm.2023.1175625
+
+
+
+
+      FIGURE 4
+      Comparison of initial reading times between the two modalities for each text. Reading times are not normalized by text length, as they include the
+      time taken for both reading and the text difficulty rating.
+
+
+
+
+TABLE 1 Summary of aggregated measurements for all participants and tasks.
+
+
+                                       Reading                               RT                                    Lexical decision                   Memory
+  Participant           Avg. correct               Reading               Reaction               Ratio of             Correct            Correct        Longest
+                         responses                 time [s]               time [s]              correct             word RT [s]       pseudoword      sequence
+                                                                                               responses                                 RT [s]
+  1                             2.63                   45.0                  0.68                   0.85                   1.70          2.79             7
+
+  2                             2.29                   43.1                  0.55                   0.90                   1.59          2.13             5
+
+  3                             2.38                   45.5                  0.67                   0.50                   1.89           —               4
+
+  4                             2.13                   46.4                  0.77                   0.95                   2.44          4.11             3
+
+  5                             2.13                   43.3                  0.70                   0.50                   1.23           —               5
+
+  6                             2.63                   52.9                  0.65                   0.95                   2.27          2.43             8
+
+  7                             2.00                   97.8                  0.52                   0.75                   4.11          14.57            2
+
+  8                             1.63                   51.4                  0.67                   0.85                   1.86          5.17             7
+
+  9                             2.88                   37.0                  0.69                   0.95                   1.58          2.04             11
+
+  10                            1.88                   33.8                  0.68                   0.50                   0.88           —               4
+
+  11                            2.50                   59.3                  0.72                   0.50                   0.97          0.88             4
+
+  12                            2.13                   70.1                  0.61                   0.75                   2.67          4.64             4
+
+  13                            2.75                   50.4                  0.69                   1.00                   1.39          2.32             20
+
+  14                            1.63                   31.4                  0.60                   1.00                   1.60          1.76             5
+
+  15                            1.88                   85.9                  0.95                   0.75                   1.64          3.43             5
+
+  16                            1.63                   55.3                  0.80                   1.00                   2.27          2.43             9
+
+  Mean                          2.19                   53.0                  0.68                   0.79                   1.88          3.75             6.4
+
+  ±s.d.                        ±0.41                  ±18.0                 ±0.10                  ±0.19                  ±0.78          ±3.47           ±4.3
+Time measurements are in seconds. Measurements in italics were excluded from further analysis due to chance-level performance.
+
+
+
+
+Frontiers in Communication                                                                08                                                          frontiersin.org
+
+<a id="pdf-p9"></a>
+### [PDF p.9] Säuberli et al. 10.3389/fcomm.2023.1175625
+- Locator: `R736-enabling-text-comprehensibility-assessment-for-people-with-intellectual-disabili.pdf` · página **9** / 11
+
+Säuberli et al.                                                                                                        10.3389/fcomm.2023.1175625
+
+
+
+
+to get a more reliable measurement. Still, we can observe a very                positive responses without any difference in RT between words
+large variance between participants.                                            and pseudowords misunderstood the task or lost motivation, since
+                                                                                two of them did give some negative responses during the practice
+                                                                                task. Further testing is necessary to determine how this task can
+                                                                                be improved.
+4.5. Discussion
+                                                                                     In this study, we refrained from displaying any feedback about
+                                                                                correct or incorrect responses in the application, in order to avoid
+4.5.1. Effect of testing modality
+                                                                                discouraging participants. However, depending on the difficulty of
+    Both in terms of accuracy of responses to the comprehension
+                                                                                the task, it may be better to show feedback, especially if there is
+question and in terms of subjective perception ratings, we found no
+                                                                                little to no personal supervision, to avoid misunderstanding and
+evidence of any difference between the two modalities. However,
+                                                                                strengthen extrinsic motivation (cf. Rodríguez et al., 2022). In
+Figures 2, 3 suggest that there is a ceiling effect due to low text
+                                                                                the future, we would also like to further develop the gamification
+and/or question difficulty. This underlines the need for a sufficiently
+                                                                                elements and put more measures in place to monitor motivation or
+large sample size in the pilot study, since variance between
+                                                                                misunderstanding of instructions.
+participants is difficult to predict in such a diverse target group. The
+relatively small sample size is another obvious limitation. At the
+least, the results allow us to exclude large effect sizes from modality
+for this target group. This confirms our expectations, given the                5. Conclusion and outlook
+frequency of technology use reported by the participants and the
+population of people with IDs in general (Ramsten et al., 2018).                    We presented Okra, a prototype mobile application for
+    The large difference in reading time is more difficult to explain.          conducting reading experiments with people with IDs. Our
+One possibility is that actual reading speed was faster when reading            primary goal was to provide a tool for researchers to enable
+on the iPad than on paper, which contradicts previous research                  digitized comprehensibility evaluation with target readers (instead
+which found differences in comprehension but not in reading                     of experts or general populations) by making use of the increased
+speed (Kong et al., 2018). Another explanation could be that                    technological literacy among people with IDs, and ultimately
+participants are less inhibited to make the conscious decision that             lowering the threshold to including target groups in research on
+they have finished reading and push the “CONTINUE” button in                    Easy Language and text simplification.
+the application, compared to the paper modality, where the end                      Therefore, our mobile application contributes to participation
+of the initial reading stage was indicated by participants using the            in digital technologies (Bosse, 2016) of persons with disabilities.
+pencil to mark an option on the rating scale. In any case, since the            At the same time, automatic text simplification as an assistive
+difference in reading time did not appear to affect comprehension,              technology increases participation through digital technologies;
+we consider it unproblematic.                                                   here, more representative evaluations of texts in Easy Language of
+                                                                                the kind made possible through our mobile application are capable
+                                                                                of improving the quality of automatic text simplification models.
+4.5.2. Feasibility of cognitive tasks                                               We also conducted a study with people with ID, testing the
+     In order to be feasible in studies with people with ID,                    effect of modality (paper vs. iPad) on reading comprehension and
+the administered tasks must be understood by participants, and                  subjective ratings and the feasibility of assessing cognitive skills
+maintain participants’ attention by avoiding excessive strain or                in Okra. Although there was no evidence of a modality effect, we
+boredom. At least in the RT and lexical decision tasks, the high                found that reading times were significantly longer on paper than
+performance and relatively low variance show that most of the                   on the iPad. Observations from this initial study confirm that it is
+participants have correctly understood the tasks. Moreover, based               feasible to use the application for evaluating Easy Language and
+on comments by some participants, the cognitive tasks were                      basic cognitive assessment with this target group. However, we
+perceived as games (the short-term memory task in particular),                  have identified several issues concerning usability and reliability
+which may have supported motivation and attention (cf. Bratu                    of results, which we are going to address in future versions of the
+et al., 2022).                                                                  application. An additional limitation of our study is that we did
+     However, given the random-guessing accuracy of several                     not conduct any standardized testing of language competence or a
+participants in the lexical decision task and the large variance                detailed survey of reading habits. As a next step, we will conduct
+of performance in the short-term memory task, which cannot                      more systematic usability testing and use Okra to evaluate the
+be plausibly explained by differences in memory capacity alone,                 output of human and automatic text simplification with people
+there are clearly still problems with some of the tasks. Particularly           with ID.
+in the memory task, we suspect that performance was heavily                         While the experiments described in this paper were conducted
+influenced by task familiarity and individual learning curves. Some             in a highly controlled environment and with close supervision,
+participants had to repeat the practice trial several times, while one          we will also work to improve the usability and accessibility of
+participant, who performed very highly, remarked that they often                the application to allow participants to use it more independently
+played similar games. Choosing tasks with a high error tolerance                (ideally, outside of laboratory conditions), and to implement and
+(which the memory task was not) or using a larger number of trials              test a wider range of task types. As a long-term goal, the user
+may also yield more reliable results. Regarding the lexical decision            interface should also be made accessible for other target groups
+task, it is unclear whether the three participants who always gave              of Easy Language. Thus, we hope that it will become a tool for
+
+
+
+Frontiers in Communication                                                 09                                                         frontiersin.org
+
+<a id="pdf-p10"></a>
+### [PDF p.10] Säuberli et al. 10.3389/fcomm.2023.1175625
+- Locator: `R736-enabling-text-comprehensibility-assessment-for-people-with-intellectual-disabili.pdf` · página **10** / 11
+
+Säuberli et al.                                                                                                                                      10.3389/fcomm.2023.1175625
+
+
+
+
+researchers to simplify and encourage the inclusion of people                                    Funding
+with disabilities.
+                                                                                                     This work was carried out as part of the project capito
+                                                                                                 automatisiert funded by the Austrian Research Promotion Agency
+Data availability statement                                                                      General Programme under grant agreement number 881202.
+
+    The raw data supporting the conclusions of this
+article will be made available by the authors, without                                           Acknowledgments
+undue reservation.
+                                                                                                     We are greatly indebted to CFS GmbH (capito) for recruiting
+                                                                                                 the participants, running the experiment, and helping to translate
+Ethics statement                                                                                 the material into Easy Language. We would also like to thank APA
+                                                                                                 for providing the texts.
+    The studies involving human participants were reviewed
+and approved by Ethics Committee of the Faculty of Arts and
+Social Sciences, University of Zurich. The patients/participants                                 Conﬂict of interest
+provided their written informed consent to participate in
+this study.                                                                                          The authors declare that the research was conducted in the
+                                                                                                 absence of any commercial or financial relationships that could be
+                                                                                                 construed as a potential conflict of interest.
+Author contributions
+    AS implemented the application, designed the experiment,                                     Publisher’s note
+prepared stimulus data, performed analyses, and wrote the
+manuscript. SE contributed to conceptualization and study design.                                    All claims expressed in this article are solely those of the
+SH-S, SG, SD, and LS contributed to study design and served                                      authors and do not necessarily represent those of their affiliated
+as expert testers for the application. FH contributed to study                                   organizations, or those of the publisher, the editors and the
+design and data analysis. All authors contributed to stimulus                                    reviewers. Any product that may be evaluated in this article, or
+material and manuscript revision, read, and approved the                                         claim that may be made by its manufacturer, is not guaranteed or
+submitted version.                                                                               endorsed by the publisher.
+
+
+
+
+References
+   Alonzo, O., Trussell, J., Dingman, B., and Huenerfauth, M. (2021). “Comparison of                Crossley, S. A., Yang, H. S., and McNamara, D. S. (2014). What’s so simple
+methods for evaluating complexity of simplified texts among deaf and hard-of-hearing             about simplified texts? A computational and psycholinguistic investigation of text
+adults at different literacy levels,” in Proceedings of the 2021 CHI Conference on Human         comprehension and text processing. Read. Foreign. Lang. 26, 92–113.
+Factors in Computing Systems (New York, NY: Association for Computing Machinery).
+                                                                                                    de Leeuw, J. (2015). jspsych: a javascript library for creating behavioral
+doi: 10.1145/3411764.3445038
+                                                                                                 experiments in a web browser. Behav. Res. Methods. 47, 1–12. doi: 10.3758/s13428-01
+  Al-Thanyyan, S. S., and Azmi, A. M. (2021). Automated text simplification: a survey.           4-0458-y
+ACM Comput. Surv. 54, 695. doi: 10.1145/3442695
+                                                                                                    Deilen, S. (2020). “Visual segmentation of compounds in Easy Language: Eye
+   Alva-Manchego, F., Scarton, C., and Specia, L. (2020). Data-driven                            movement studies on the effects of visual, morphological and semantic factors on the
+sentence simplification: survey and benchmark. Comput. Linguist. 46, 135–187.                    processing of German noun-noun compounds,” in Easy Language Research: Text and
+doi: 10.1162/coli_a_00370                                                                        User Perspectives, Hansen-Schirra, S., and Maaβ, C. (eds). Berlin: Frank & Timme. p.
+   Alva-Manchego, F., Scarton, C., and Specia, L. (2021). The (un)suitability of                 241–256.
+automatic evaluation metrics for text simplification. Comput. Linguist. 47, 861–889.
+                                                                                                    Deilen, S., and Schiffl, L. (2020). “Using eye-tracking to evaluate language processing
+doi: 10.1162/coli_a_00418
+                                                                                                 in the easy language target group,” in Easy Language Research: Text and User
+  Bates, D., Mächler, M., Bolker, B., and Walker, S. (2015). Fitting linear mixed-effects        Perspectives, Hansen-Schirra, S., and Maaβ, C., (eds). Berlin: Frank & Timme. p.
+models using lme4. J. Stat. Softw. 67, 1–48. doi: 10.18637/jss.v067.i01                          273–281.
+   Bosse, I. (2016). Teilhabe in einer digitalen Gesellschaft - Wie Medien                          Eckes, T. (2015). Introduction to Many-Facet Rasch Measurement. Bern: Peter Lang.
+Inklusionsprozesse bef6rdern können. Available online at: http://www.bpb.de/
+                                                                                                    Fajardo, I., Ávila, V., Ferrer, A., Tavares, G., Gómez, M., and Hernández, A. (2014).
+gesellschaft/medien/medienpolitik/172759/medien-und-inklusion (accessed May
+                                                                                                 Easy-to-read texts for students with intellectual disability: linguistic factors affecting
+22, 2013).
+                                                                                                 comprehension. J. Appl. Res. Intellect. Disabil. 27, 212–225. doi: 10.1111/jar.12065
+   Bratu, M., Stan, S., and Muntean, C. H. (2022). “Benefits and limitations of                     Fulmer, S. M., D’Mello, S. K., Strain, A., and Graesser, A. C. (2015). Interest-based
+using modern technologies for teaching STEM subjects to students with intellectual               text preference moderates the effect of text difficulty on engagement and learning.
+disabilities,” in 2022 International Conference on Advanced Learning Technologies                Contemp. Educ. Psychol. 41, 98–110. doi: 10.1016/j.cedpsych.2014.12.005
+(ICALT) (Bucharest: IEEE), 259–261. doi: 10.1109/ICALT55010.2022.00084
+                                                                                                    Gooding, S., Berzak, Y., Mak, T., and Sharifi, M. (2021). “Predicting text readability
+   Chadwick, D. D., Chapman, M. J., and Caton, S. (2018). Digital inclusion for                  from scrolling interactions,” in Proceedings of the 25th Conference on Computational
+people with an intellectual disability. The Oxford Handbook of Cyberpsychology.                  Natural Language Learning. Toronto: Association for Computational Linguistics. p.
+doi: 10.1093/oxfordhb/9780198812746.013.17                                                       380–390. doi: 10.18653/v1/2021.conll-1.30
+   Charzyńska, E., and D˛ebowski, Ł. J. (2015). Empirical verification of the polish               Gutermuth, S. (2020). Leichte Sprache für alle? Eine zielgruppenorientierte
+formula of text difficulty. Cognit. Stud. 15. doi: 10.11649/cs.2015.010                          Rezeptionsstudie zu Leichter und Einfacher Sprache [Easy language for everyone? A target
+
+
+
+
+Frontiers in Communication                                                                  10                                                                           frontiersin.org
+
+<a id="pdf-p11"></a>
+### [PDF p.11] Säuberli et al. 10.3389/fcomm.2023.1175625
+- Locator: `R736-enabling-text-comprehensibility-assessment-for-people-with-intellectual-disabili.pdf` · página **11** / 11
+
+Säuberli et al.                                                                                                                                      10.3389/fcomm.2023.1175625
+
+
+
+
+group oriented reception study of “Leichte Sprache” and “Einfache Sprache”]. Berlin:                Rello, L., Bautista, S., Baeza-Yates, R., Gervás, P., Hervás, R., and Saggion, H.
+Frank & Timme.                                                                                   (2013c). “One half or 50%? an eye-tracking study of number representation readability,”
+                                                                                                 in Human-Computer Interaction – INTERACT 2013, eds P. Kotze, G. Marsden, G.
+   Huenerfauth, M., Feng, L., and Elhadad, N. (2009). “Comparing evaluation
+                                                                                                 Lindgaard, J. Wesson, and M. Wincler (Berlin; Heidelberg: Springer), 229–245.
+techniques for text readability software for adults with intellectual disabilities,” in
+Proceedings of the 11th International ACM SIGACCESS Conference on Computers and                     Rodríguez, F., de Blume, A. G., and Soto, C. (2022). Effects of reading motivation
+Accessibility. p. 3–10. doi: 10.1145/1639642.1639646                                             and meta-comprehension on the reading comprehension of students with intellectual
+                                                                                                 disabilities. Elect. J. Res. Educ. Psychol. 30.
+   Jung, S., Ousley, C. L., Mcnaughton, D., and Wolfe, P. S. (2021). The effects
+of technology supports on community grocery shopping skills for students with                       Saggion, H., Štajner, S., Bott, S., Mille, S., Rello, L., and Drndarevic, B. (2015).
+intellectual and developmental disabilities: a meta-analysis. J. Spec. Educ. 37, 351–362.        Making it Simplext: Implementation and evaluation of a text simplification
+doi: 10.1177/0162643421989970                                                                    system for Spanish. ACM Trans. Access. Comput. 6, 8046. doi: 10.1145/
+                                                                                                 2738046
+   Keuleers, E., and Brysbaert, M. (2010). Wuggy: a multilingual pseudoword
+generator. Behav. Res. Methods 42, 627–633. doi: 10.3758/BRM.42.3.627                                Säuberli, A. (2021). “Measuring text comprehension for people with reading
+                                                                                                 difficulties using a mobile application,” in Proceedings of the 23rd International ACM
+   Kirchner, W. K. (1958). Age differences in short-term retention of rapidly changing           SIGACCESS Conference on Computers and Accessibility, ASSETS ’21. New York, NY:
+information. J. Exp. Psychol. 55, 352–358. doi: 10.1037/h0043688                                 Association for Computing Machinery.
+   Kong, Y., Seo, Y. S., and Zhai, L. (2018). Comparison of reading performance                     Säuberli, A., Ebling, S., and Volk, M. (2020). “Benchmarking data-driven automatic
+on screen and on paper: A meta-analysis. Computers & Education 123:138–149.                      text simplification for German,” in Proceedings of the 1st Workshop on Tools and
+doi: 10.1016/j.compedu.2018.05.005                                                               Resources to Empower People with REAding DIfficulties (READI). Marseille, France:
+                                                                                                 European Language Resources Association. p. 41–48.
+   Leroy, G., Endicott, J. E., Kauchak, D., Mouradi, O., and Just, M. (2013). User
+evaluation of the effects of a text simplification algorithm using term familiarity on               Schulz, R., Degenhardt, J., and Czerner-Nicolas, K. (2020). “Easy language
+perception, understanding, learning, and information retention. J. Med. Internet Res.            interpreting,” in Easy Language Research: Text and User Perspectives, Hansen-Schirra,
+15, e144. doi: 10.2196/jmir.2569                                                                 S. and Maaß, C. (eds). Berlin: Frank & Timme. p. 163–178.
+   Leroy, G., Kauchak, D., Haeger, D., and Spegman, D. (2022). Evaluation of an online              Štajner, S. (2021). “Automatic text simplification for social good: Progress and
+text simplification editor using manual and automated metrics for perceived and actual           challenges,” in Findings of the Association for Computational Linguistics: ACL-IJCNLP
+text difficulty. JAMIA Open. 5, ac044. doi: 10.1093/jamiaopen/ooac044                            2021. Toronto: Association for Computational Linguistics. p. 2637–2652.
+   Linacre, J. M. (1994). Many-facet Rasch Measurement. San Diego, CA: MESA Press.                   Stodden, R. (2021). “When the scale is unclear - analysis of the interpretation of
+                                                                                                 rating scales in human evaluation of text simplification,” in Proceedings of the First
+   Maaβ, C. (2020). Easy Language-Plain Language-Easy Language Plus:
+                                                                                                 Workshop on Current Trends in Text Simplification (CTTS 2021) co-located with the
+Balancing comprehensibility and acceptability. Berlin: Frank & Timme.
+                                                                                                 37th Conference of the Spanish Society for Natural Language Processing (SEPLN2021),
+doi: 10.26530/20.500.12657/42089
+                                                                                                 Saggion, H., Štajner, S., Ferrés, D., and Sheang, K. C. (eds). Málaga: CEUR Workshop
+   Maebara, K., Yamaguchi, A., Suzuki, T., and Imai, A. (2022). A qualitative                    Proceedings. CEUR-WS.org.
+study on the function of information and communication technology utilization
+                                                                                                    Stoet, G. (2017). PsyToolkit: a novel web-based method for running online
+in teaching students with intellectual disabilities: implications for techniques
+                                                                                                 questionnaires and reaction-time experiments. Teach. Psychol. 44, 24–31.
+of teaching/job coaching. J. Intell. Disabil. – Diag. Treat. 23, 209–227.
+                                                                                                 doi: 10.1177/0098628316677643
+doi: 10.6000/2292-2598.2022.10.01.2
+                                                                                                    Sulem, E., Abend, O., and Rappoport, A. (2018a). “BLEU is not suitable for
+   Martin, A. J., Strnadová, I., Loblinzk, J., Danker, J., and Cumming, T. M. (2021). The
+                                                                                                 the evaluation of text simplification,” in Proceedings of the 2018 Conference on
+role of mobile technology in promoting social inclusion among adults with intellectual
+                                                                                                 Empirical Methods in Natural Language Processing. Brussels, Belgium: Association for
+disabilities. J. Appl. Res. Intellect. Disabil. 34, 840–851. doi: 10.1111/jar.12869
+                                                                                                 Computational Linguistics. p. 738–744.
+   Ockey, G. J. (2021). “Item response theory and many-facet Rasch measurement,”
+                                                                                                    Sulem, E., Abend, O., and Rappoport, A. (2018b). “Semantic structural evaluation
+in The Routledge Handbook of Language Testing. Oxfordshire: Routledge. p. 462–476.
+                                                                                                 for text simplification,” in Proceedings of the 2018 Conference of the North
+doi: 10.4324/9781003220756-36
+                                                                                                 American Chapter of the Association for Computational Linguistics: Human Language
+    Peirce, J., Gray, J. R., Simpson, S., MacAskill, M. R., Höchenberger, R., Sogo, H.,          Technologies, Volume 1 (Long Papers). New Orleans, Louisiana: Association for
+et al. (2019). PsychoPy2: Experiments in behavior made easy. Behav. Res. Methods. 51,            Computational Linguistics. p. 685–696.
+195–203. doi: 10.3758/s13428-018-01193-y
+                                                                                                    Sulem, E., Abend, O., and Rappoport, A. (2018c). “Simple and effective text
+  Perkuhn, R., Belica, C., Kupietz, M., Keibel, H., and Hennig, S. (2009). DeReWo:               simplification using semantic and neural methods,” in Proceedings of the 56th Annual
+Korpusbasierte Wortformenliste. Kostroma: DeReWo.                                                Meeting of the Association for Computational Linguistics (Volume 1: Long Papers).
+                                                                                                 Melbourne, Australia: Association for Computational Linguistics. p. 162–173.
+   Ramsten, C., Martin, L. K., Dag, M., and Hammar, L. M. (2018). Information
+and communication technology use in daily life among young adults                                   Uzor, S., Jacques, J. T., Dudley, J. J., and Kristensson, P. O. (2021). “Investigating
+with mild-to-moderate intellectual disability. J. Intell. Disabil. 24:289–308.                   the accessibility of crowdwork tasks on mechanical turk,” in Proceedings of the 2021
+doi: 10.1177/1744629518784351                                                                    CHI Conference on Human Factors in Computing Systems, CHI ’21. New York, NY:
+                                                                                                 Association for Computing Machinery.
+   Redmiles, E., Maszkiewicz, L., Hwang, E., Kuchhal, D., Liu, E., Morales, M., et al.
+(2019). “Comparing and developing tools to measure the readability of domain-                       Vajjala, S., and Lucic, I. (2019). “On understanding the relation between expert
+specific texts,” in Proceedings of the 2019 Conference on Empirical Methods in Natural           annotations of text readability and target reader comprehension,” in Proceedings of the
+Language Processing and the 9th International Joint Conference on Natural Language               Fourteenth Workshop on Innovative Use of NLP for Building Educational Applications.
+Processing (EMNLP-IJCNLP), pages 4831-4842, Hong Kong, China. Hong Kong, China:                  Florence, Italy: Association for Computational Linguistics. p. 349–359.
+Association for Computational Linguistics.
+                                                                                                     Vajjala, S., Meurers, D., Eitel, A., and Scheiter, K. (2016). “Towards grounding
+   Reitan, R., and Wolfson, D. (1993). The Halstead-Reitan neuropsychological Test               computational linguistic approaches to readability: Modeling reader-text interaction
+Battery: Theory and Clinical Interpretation. Herndon, VA: Neuropsychology Press.                 for easy and difficult texts,” in Proceedings of the Workshop on Computational Linguistics
+                                                                                                 for Linguistic Complexity (CL4LC). Osaka, Japan: The COLING 2016 Organizing
+   Rello, L., Baeza-Yates, R., Bott, S., and Saggion, H. (2013a). “Simplify or help?
+                                                                                 
+
+…[truncado en MD; ver RSL/MD/_raw]…

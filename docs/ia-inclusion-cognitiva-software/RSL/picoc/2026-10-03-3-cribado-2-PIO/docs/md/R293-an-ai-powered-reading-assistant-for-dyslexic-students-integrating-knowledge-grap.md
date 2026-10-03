@@ -1,0 +1,741 @@
+# An AI-Powered Reading Assistant for Dyslexic Students
+
+> Fuente PDF: `R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap.pdf` · técnica **locator index** (página + ancla) + chunks Graphify
+
+## Metadata
+- Stem: `R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap`
+- PDF: `R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap.pdf`
+- DOI: `10.1145/3806980`
+- Pages: `7`
+- Structured_at: `2026-10-03T23:23:15+00:00`
+- Technique: `pdf-page-locators + heading-chunks`
+
+## Locator index (qué hay y en qué página del PDF)
+
+| Kind | Label | PDF page | MD anchor |
+|------|-------|----------|-----------|
+| abstract | Abstract / blurb | 1 | `#abstract` |
+| section | 2.1 Dyslexia and Reading Difficulties: | 1 | `#p1-2-1-dyslexia-and-reading-difficulties` |
+| section | 3.1 System Architecture and Technical | 2 | `#p2-3-1-system-architecture-and-technical` |
+| section | 3.2 Participant Profiling through | 3 | `#p3-3-2-participant-profiling-through` |
+| section | 3.5 Data Collection and Computational | 3 | `#p3-3-5-data-collection-and-computational` |
+| section | 3.6 Experimental Procedure with Technical | 4 | `#p4-3-6-experimental-procedure-with-technical` |
+| concept | fluency | ? | `#concept-fluency` |
+| concept | and engagement among dyslexic students in vocational Dslexia | 1 | `#concept-and-engagement-among-dyslexic-students-in-vocational-dslexia` |
+| concept | AI-driven educational technology | 1 | `#concept-ai-driven-educational-technology` |
+| concept | Reading comprehension | 1 | `#concept-reading-comprehension` |
+| concept | Guanguan Zeng | 1 | `#concept-guanguan-zeng` |
+| concept | February 06–08 | 1 | `#concept-february-06-08` |
+| concept | 2026 | ? | `#concept-2026` |
+| concept | Beijing | ? | `#concept-beijing` |
+| concept | China. ACM | ? | `#concept-china-acm` |
+| concept | New York | ? | `#concept-new-york` |
+| concept | USA | ? | `#concept-usa` |
+| concept | R293 | ? | `#concept-r293` |
+| concept | powered | ? | `#concept-powered` |
+| concept | reading | ? | `#concept-reading` |
+| concept | assistant | ? | `#concept-assistant` |
+| concept | dyslexic | ? | `#concept-dyslexic` |
+| concept | students | ? | `#concept-students` |
+| concept | integrating | ? | `#concept-integrating` |
+| concept | knowledge | ? | `#concept-knowledge` |
+| concept | grap | ? | `#concept-grap` |
+| finding | sis to enhance English reading skills for students with dyslexia in In vocational and tech… | 1 | `#finding-sis-to-enhance-english-reading-skills-fo` |
+| finding | Proficiency in reading is not only fundamental to patterns and cognitive profiles. | 1 | `#finding-proficiency-in-reading-is-not-only-funda` |
+| finding | This study was conducted in a 16- academic performance but also critical for professional … | 1 | `#finding-this-study-was-conducted-in-a-16-academ` |
+| finding | real-time log analysis and learning state modeling to optimize sys- To address these chall… | 1 | `#finding-real-time-log-analysis-and-learning-stat` |
+| finding | reading support for students with dyslexia. | 1 | `#finding-reading-support-for-students-with-dyslex` |
+| finding | By leveraging natural language processing (NLP) and machine learning algorithms, the syste… | 1 | `#finding-by-leveraging-natural-language-processin` |
+| page | p.1: An AI-Powered Reading Assistant for Dyslexic Students | 1 | `#pdf-p1` |
+| page | p.2: ICBDIE 2026, February 06–08, 2026, Beijing, China Jingqian Gu et al. | 2 | `#pdf-p2` |
+| page | p.3: An AI-Powered Reading Assistant for Dyslexic Students ICBDIE 2026, February 06–08, 2026, B | 3 | `#pdf-p3` |
+| page | p.4: ICBDIE 2026, February 06–08, 2026, Beijing, China Jingqian Gu et al. | 4 | `#pdf-p4` |
+| page | p.5: An AI-Powered Reading Assistant for Dyslexic Students ICBDIE 2026, February 06–08, 2026, B | 5 | `#pdf-p5` |
+| page | p.6: ICBDIE 2026, February 06–08, 2026, Beijing, China Jingqian Gu et al. | 6 | `#pdf-p6` |
+| page | p.7: An AI-Powered Reading Assistant for Dyslexic Students ICBDIE 2026, February 06–08, 2026, B | 7 | `#pdf-p7` |
+
+## Abstract
+<a id="abstract"></a>
+
+of effective classroom instruction. Students with dyslexia frequently This study proposes an AI-driven adaptive learning system that struggle with reading comprehension, which significantly impairs integrates knowledge graphs (KG) and real-time behavior analy- their ability to acquire and process information from written texts. sis to enhance English reading skills for students with dyslexia in In vocational and technical education, where reading skills are a vocational college. The system leverages a microservice-based essential for understanding technical manuals, safety protocols, architecture with a personalized recommendation module that dy- and industry-specific documentation, these challenges become par- namically adjusts learning paths according to individual reading ticularly acute. Proficiency in reading is not only fundamental to patterns and cognitive profiles. This study was conducted in a 16- academic performance but also critical for professional develop- week semester, using a mixed-methods approach, we conducted ment and employment readiness. real-time log analysis and learning state modeling to optimize sys- To address these challenges, this study designs and implements tem performance. Quantitative results from pre- and post-tests an AI-driven adaptive learning system that integrates KG tech- show significant improvements in reading comprehension and flu- nology and real-time behavioral analytics to provide personalized ency, while qualitative feedback confirms enhanced engagement. reading support for students with dyslexia. The system employs The study demonstrates the efficacy of AI-powered adaptive tech- a microservice-based architecture to dynamically adjust learning nologies as assistive tools in special education, emphasizing the pathways based on individual reading patterns and cognitive pro- technical implementation and optimization of the system. files. By leveraging natural language processing (NLP) and machine learning algorithms, the system offers tailored interventions that CCS Concepts target specific phonological and comprehension deficits. The primary objective of this research is to systematically eval- • Applied computing → Education; E-learning;; Education; uate the technical efficacy and educational impact of this AI- Computer-assisted instruction;; Education; Distance learning. enhanced system. Specifically, we assess how the integration of KGs and adaptive algorithms influences reading comprehension,
+
+## Keywords
+
+- fluency
+- and engagement among dyslexic students in vocational Dslexia
+- AI-driven educational technology
+- Reading comprehension
+- Guanguan Zeng
+- February 06–08
+- 2026
+- Beijing
+- China. ACM
+- New York
+- USA
+
+## Concept index (graph hooks + página)
+
+<a id="concept-fluency"></a>
+### [PDF p.?] Concept: fluency
+- Locator: `R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap.pdf` · página **?**
+
+<a id="concept-and-engagement-among-dyslexic-students-in-vocational-dslexia"></a>
+### [PDF p.1] Concept: and engagement among dyslexic students in vocational Dslexia
+- Locator: `R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap.pdf` · página **1**
+
+<a id="concept-ai-driven-educational-technology"></a>
+### [PDF p.1] Concept: AI-driven educational technology
+- Locator: `R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap.pdf` · página **1**
+
+<a id="concept-reading-comprehension"></a>
+### [PDF p.1] Concept: Reading comprehension
+- Locator: `R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap.pdf` · página **1**
+
+<a id="concept-guanguan-zeng"></a>
+### [PDF p.1] Concept: Guanguan Zeng
+- Locator: `R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap.pdf` · página **1**
+
+<a id="concept-february-06-08"></a>
+### [PDF p.1] Concept: February 06–08
+- Locator: `R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap.pdf` · página **1**
+
+<a id="concept-2026"></a>
+### [PDF p.?] Concept: 2026
+- Locator: `R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap.pdf` · página **?**
+
+<a id="concept-beijing"></a>
+### [PDF p.?] Concept: Beijing
+- Locator: `R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap.pdf` · página **?**
+
+<a id="concept-china-acm"></a>
+### [PDF p.?] Concept: China. ACM
+- Locator: `R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap.pdf` · página **?**
+
+<a id="concept-new-york"></a>
+### [PDF p.?] Concept: New York
+- Locator: `R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap.pdf` · página **?**
+
+<a id="concept-usa"></a>
+### [PDF p.?] Concept: USA
+- Locator: `R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap.pdf` · página **?**
+
+<a id="concept-r293"></a>
+### [PDF p.?] Concept: R293
+- Locator: `R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap.pdf` · página **?**
+
+<a id="concept-powered"></a>
+### [PDF p.?] Concept: powered
+- Locator: `R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap.pdf` · página **?**
+
+<a id="concept-reading"></a>
+### [PDF p.?] Concept: reading
+- Locator: `R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap.pdf` · página **?**
+
+<a id="concept-assistant"></a>
+### [PDF p.?] Concept: assistant
+- Locator: `R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap.pdf` · página **?**
+
+<a id="concept-dyslexic"></a>
+### [PDF p.?] Concept: dyslexic
+- Locator: `R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap.pdf` · página **?**
+
+<a id="concept-students"></a>
+### [PDF p.?] Concept: students
+- Locator: `R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap.pdf` · página **?**
+
+<a id="concept-integrating"></a>
+### [PDF p.?] Concept: integrating
+- Locator: `R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap.pdf` · página **?**
+
+<a id="concept-knowledge"></a>
+### [PDF p.?] Concept: knowledge
+- Locator: `R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap.pdf` · página **?**
+
+<a id="concept-grap"></a>
+### [PDF p.?] Concept: grap
+- Locator: `R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap.pdf` · página **?**
+
+
+## Findings index (graph hooks + página)
+
+<a id="finding-sis-to-enhance-english-reading-skills-fo"></a>
+### [PDF p.1] Finding: sis to enhance English reading skills for students with dyslexia in In vocational and technical education, where reading skills are a vocational college.
+- Locator: `R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap.pdf` · página **1**
+
+<a id="finding-proficiency-in-reading-is-not-only-funda"></a>
+### [PDF p.1] Finding: Proficiency in reading is not only fundamental to patterns and cognitive profiles.
+- Locator: `R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap.pdf` · página **1**
+
+<a id="finding-this-study-was-conducted-in-a-16-academ"></a>
+### [PDF p.1] Finding: This study was conducted in a 16- academic performance but also critical for professional develop- week semester, using a mixed-methods approach, we conducted ment and employment readiness.
+- Locator: `R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap.pdf` · página **1**
+
+<a id="finding-real-time-log-analysis-and-learning-stat"></a>
+### [PDF p.1] Finding: real-time log analysis and learning state modeling to optimize sys- To address these challenges, this study designs and implements tem performance.
+- Locator: `R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap.pdf` · página **1**
+
+<a id="finding-reading-support-for-students-with-dyslex"></a>
+### [PDF p.1] Finding: reading support for students with dyslexia.
+- Locator: `R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap.pdf` · página **1**
+
+<a id="finding-by-leveraging-natural-language-processin"></a>
+### [PDF p.1] Finding: By leveraging natural language processing (NLP) and machine learning algorithms, the system offers tailored interventions that CCS Concepts target specific phonological and comprehension deficits.
+- Locator: `R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap.pdf` · página **1**
+
+
+## Relevance hooks
+### Theme relevance: software engineering and accessibility
+### Theme relevance: cognitive accessibility and neurodiversity
+### Theme relevance: evaluation metrics and WCAG
+
+## Sections (detected in PDF)
+
+<a id="p1-2-1-dyslexia-and-reading-difficulties"></a>
+### [PDF p.1] Section: 2.1 Dyslexia and Reading Difficulties:
+- Locator: `R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap.pdf` · página **1** · ancla `#p1-2-1-dyslexia-and-reading-difficulties`
+
+<a id="p2-3-1-system-architecture-and-technical"></a>
+### [PDF p.2] Section: 3.1 System Architecture and Technical
+- Locator: `R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap.pdf` · página **2** · ancla `#p2-3-1-system-architecture-and-technical`
+
+<a id="p3-3-2-participant-profiling-through"></a>
+### [PDF p.3] Section: 3.2 Participant Profiling through
+- Locator: `R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap.pdf` · página **3** · ancla `#p3-3-2-participant-profiling-through`
+
+<a id="p3-3-5-data-collection-and-computational"></a>
+### [PDF p.3] Section: 3.5 Data Collection and Computational
+- Locator: `R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap.pdf` · página **3** · ancla `#p3-3-5-data-collection-and-computational`
+
+<a id="p4-3-6-experimental-procedure-with-technical"></a>
+### [PDF p.4] Section: 3.6 Experimental Procedure with Technical
+- Locator: `R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap.pdf` · página **4** · ancla `#p4-3-6-experimental-procedure-with-technical`
+
+
+## Page chunks (texto por página del PDF)
+
+_Cada heading es un nodo Graphify. El label incluye la página para volver al PDF sin releer todo._
+
+<a id="pdf-p1"></a>
+### [PDF p.1] An AI-Powered Reading Assistant for Dyslexic Students
+- Locator: `R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap.pdf` · página **1** / 7
+
+An AI-Powered Reading Assistant for Dyslexic Students
+                             Integrating Knowledge Graphs and Real-Time Behavioral Adaptation
+                    Jingqian Gu∗                                           Guanguan Zeng                                           Yan Li
+     Shanghai Zhongqiao Vocational and                         Shanghai Zhongqiao Vocational and                  Shanghai Zhongqiao Vocational and
+            Technical University                                     Technical University                               Technical University
+              Shanghai, China                                           Shanghai, China                                    Shanghai, China
+          cherishguug@gmail.com                                      zenggg@shzq.edu.cn                                  liyan@shzq.edu.cn
+
+Abstract                                                                                    of effective classroom instruction. Students with dyslexia frequently
+This study proposes an AI-driven adaptive learning system that                              struggle with reading comprehension, which significantly impairs
+integrates knowledge graphs (KG) and real-time behavior analy-                              their ability to acquire and process information from written texts.
+sis to enhance English reading skills for students with dyslexia in                             In vocational and technical education, where reading skills are
+a vocational college. The system leverages a microservice-based                             essential for understanding technical manuals, safety protocols,
+architecture with a personalized recommendation module that dy-                             and industry-specific documentation, these challenges become par-
+namically adjusts learning paths according to individual reading                            ticularly acute. Proficiency in reading is not only fundamental to
+patterns and cognitive profiles. This study was conducted in a 16-                          academic performance but also critical for professional develop-
+week semester, using a mixed-methods approach, we conducted                                 ment and employment readiness.
+real-time log analysis and learning state modeling to optimize sys-                             To address these challenges, this study designs and implements
+tem performance. Quantitative results from pre- and post-tests                              an AI-driven adaptive learning system that integrates KG tech-
+show significant improvements in reading comprehension and flu-                             nology and real-time behavioral analytics to provide personalized
+ency, while qualitative feedback confirms enhanced engagement.                              reading support for students with dyslexia. The system employs
+The study demonstrates the efficacy of AI-powered adaptive tech-                            a microservice-based architecture to dynamically adjust learning
+nologies as assistive tools in special education, emphasizing the                           pathways based on individual reading patterns and cognitive pro-
+technical implementation and optimization of the system.                                    files. By leveraging natural language processing (NLP) and machine
+                                                                                            learning algorithms, the system offers tailored interventions that
+CCS Concepts                                                                                target specific phonological and comprehension deficits.
+                                                                                                The primary objective of this research is to systematically eval-
+• Applied computing → Education; E-learning;; Education;
+                                                                                            uate the technical efficacy and educational impact of this AI-
+Computer-assisted instruction;; Education; Distance learning.
+                                                                                            enhanced system. Specifically, we assess how the integration of
+                                                                                            KGs and adaptive algorithms influences reading comprehension,
+Keywords
+                                                                                            fluency, and engagement among dyslexic students in vocational
+Dslexia, AI-driven educational technology, Reading comprehension,                           education settings. Through a mixed-methods approach combining
+Vocational and technical education                                                          quantitative metrics and qualitative feedback, this study aims to pro-
+ACM Reference Format:                                                                       vide both technical and pedagogical insights into the optimization
+Jingqian Gu, Guanguan Zeng, and Yan Li. 2026. An AI-Powered Reading                         of AI-assisted learning tools for special educational needs.
+Assistant for Dyslexic Students: Integrating Knowledge Graphs and Real-
+Time Behavioral Adaptation. In 2026 International Conference on Big Data
+and Informatization Education (ICBDIE 2026), February 06–08, 2026, Beijing,
+China. ACM, New York, NY, USA, 7 pages. https://doi.org/10.1145/3806980.                    2 LITERATURE REVIEW
+3806981
+                                                                                            2.1 Dyslexia and Reading Difficulties:
+1    INTRODUCTION                                                                               Computational Perspectives
+Dyslexia is a specific learning disability characterized by difficulties                    Dyslexia, widely recognized as a neurodevelopmental disorder, sig-
+with accurate and/or fluent word recognition and poor spelling                              nificantly impairs a learner’s ability to develop accurate and fluent
+and decoding abilities. These difficulties typically result from a                          word recognition, spelling, and decoding skills [1]. From a computa-
+deficit in the phonological component of language that is often                             tional perspective, these challenges manifest as processing deficits
+unexpected in relation to other cognitive abilities and the provision                       in phonological encoding and pattern recognition systems. The
+                                                                                            phonological deficit disrupts the construction of the mental lexicon,
+∗ Corresponding author
+                                                                                            leading to persistent struggles in both decoding words and com-
+                                                                                            prehending text, regardless of the learner’s intelligence or overall
+                                                                                            cognitive capabilities [2]. The effects of dyslexia extend beyond
+This work is licensed under a Creative Commons Attribution 4.0 International License.       the primary language of instruction and have been observed to cre-
+ICBDIE 2026, Beijing, China                                                                 ate significant hurdles in second language (L2) acquisition, where
+© 2026 Copyright held by the owner/author(s).
+ACM ISBN 979-8-4007-2207-3/2026/02                                                          additional computational complexity arises from cross-linguistic
+https://doi.org/10.1145/3806980.3806981                                                     phonological and orthographic differences [3].
+
+
+
+
+                                                                                        1
+
+<a id="pdf-p2"></a>
+### [PDF p.2] ICBDIE 2026, February 06–08, 2026, Beijing, China Jingqian Gu et al.
+- Locator: `R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap.pdf` · página **2** / 7
+
+ICBDIE 2026, February 06–08, 2026, Beijing, China                                                                                    Jingqian Gu et al.
+
+
+    Traditional intervention strategies include phonics-based instruc-       2.3    Algorithmic Approaches for Dyslexic
+tion emphasizing explicit teaching of sound-letter correspondences,                 Learners
+multisensory approaches engaging multiple sensory pathways, and
+                                                                             AI interventions show particular promise for dyslexic learners by
+basic assistive technologies [4]. While these methods yield incre-
+                                                                             addressing needs often unmet in traditional instruction. Recent
+mental improvements, they lack the algorithmic sophistication
+                                                                             studies demonstrate that algorithmically enhanced tools improve
+to provide truly individualized support, particularly in L2 learning
+                                                                             reading comprehension, fluency, and literacy through speech-text
+contexts where learners encounter compounded linguistic complex-
+                                                                             conversion, interactive platforms, and personalized feedback sys-
+ities [5] [6].
+                                                                             tems [16]. These tools employ computational linguistics methods to
+    Neuropsychological research highlights the heterogeneity of
+                                                                             improve decoding through tailored phonics instruction, vocabulary
+dyslexic profiles, demonstrating that the disorder manifests through
+                                                                             reinforcement, and multisensory experiences.
+diverse cognitive patterns that require precisely tailored interven-
+                                                                                Platforms such as Lexia, Read&Write, and Kurzweil 3000 utilize
+tions [7]. This diversity challenges conventional educational ap-
+                                                                             sophisticated algorithms to address phonological deficits through
+proaches and underscores the need for computational methods
+                                                                             individualized reading passages, scaffolded vocabulary instruction,
+capable of detecting and adapting to individual learning patterns.
+                                                                             and contextual feedback mechanisms [17]. Lexia employs struc-
+For instance, learners with rapid automatized naming (RAN) deficits
+                                                                             tured practice algorithms with immediate correction capabilities
+require different computational support than those with primarily
+                                                                             [18], while Read&Write utilizes real-time text processing to support
+phonological processing challenges [8].
+                                                                             tracking and comprehension through synchronized highlighting
+    The emergence of intelligent tutoring systems represents a signif-
+                                                                             [19].
+icant advancement in addressing this variability. These systems uti-
+                                                                                Empirical studies indicate that both dyslexic learners and in-
+lize machine learning algorithms to provide continuous, real-time
+                                                                             structors report increased motivation, reduced anxiety, and greater
+adjustments to instructional content [9]. Recent developments in
+                                                                             self-confidence when using these algorithmically driven tools [20].
+assistive technologies—including text-to-speech software, adaptive
+                                                                             Educators value the capacity of these technologies to facilitate
+reading programs, and AI-based tutoring systems—demonstrate the
+                                                                             differentiated instruction through computational scaffolding that
+potential of computational approaches to transform learning experi-
+                                                                             would be difficult to achieve in traditional classroom settings. The
+ences for dyslexic students. Fälth et al. [10] and Edmonds et al. [11]
+                                                                             simulated one-on-one interaction provided by AI systems appears
+found that these technologies improve reading fluency and com-
+                                                                             to reduce reading anxiety while fostering engagement and self-
+prehension through algorithmic scaffolding of difficult vocabulary
+                                                                             efficacy [21]. While these computational approaches offer valuable
+and personalized practice environments. However, implementa-
+                                                                             individualized support, further research is needed to optimize algo-
+tion challenges persist, including insufficient teacher training and
+                                                                             rithm performance and classroom integration.
+limited evidence-based integration frameworks [12].
+    Dyslexic learners, particularly in multilingual settings, require
+scalable, innovative solutions. AI-driven interventions can enhance          2.4    Research Question
+teaching frameworks by offering personalized instruction and real-           While previous studies establish the persistent challenges in phono-
+time feedback tailored to individual learner profiles.                       logical processing and reading fluency among dyslexic learners,
+                                                                             and identify AI’s potential as a pedagogical scaffold, critical gaps re-
+                                                                             main in quantifying the efficacy of specific algorithmic approaches
+                                                                             for sustainable skill transfer. This study therefore asks:
+2.2     Computational Architectures in Educational                               Q. To what extent do algorithmically enhanced AI tools quan-
+        AI                                                                   tifiably improve sustainable reading skills in college students with
+The integration of artificial intelligence in education has introduced       dyslexia?
+sophisticated computational architectures that enable personalized
+learning pathways, adaptive assessments, and real-time feedback              3     METHODOLOGY
+systems [13]. These systems employ NLP and machine learning                  A mixed-method approach was adopted in this study to explore
+algorithms to create dynamically tailored educational experiences            the impact of AI-driven educational tools on the English reading
+that adjust to individual pacing, cognitive load, and learning pref-         skills of college students with dyslexia. Quantitative data were
+erences. In language education specifically, AI systems reduce               used to assess improvements in reading comprehension, while qual-
+cognitive demands through automated text simplification, vocabu-             itative feedback was analyzed to explore the nuanced experiences
+lary support, and comprehension assistance [14].                             of students and instructors. Combining these methods allows for
+   For students with learning differences like dyslexia, performance-        a comprehensive understanding of AI’s effectiveness, addressing
+monitoring algorithms enable continuous content optimization to              both statistical and experiential outcomes.
+address specific learning objectives and deficits. Systems such as
+Carnegie Learning’s MATHia demonstrate how response-driven
+adaptation algorithms can create personalized learning pathways,
+                                                                             3.1    System Architecture and Technical
+with similar architectures now being applied to language education                  Framework
+[15]. These AI-driven systems provide immediate feedback and                 A To address the specific needs of dyslexic students, we designed
+targeted recommendations, supporting both skill development and              an AI-enhanced adaptive learning framework that integrates multi-
+self-regulation through computational reinforcement mechanisms.              ple assistive technologies through a unified interface. The system
+
+
+
+
+                                                                         2
+
+<a id="pdf-p3"></a>
+### [PDF p.3] An AI-Powered Reading Assistant for Dyslexic Students ICBDIE 2026, February 06–08, 2026, Beijing, China
+- Locator: `R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap.pdf` · página **3** / 7
+
+An AI-Powered Reading Assistant for Dyslexic Students                                                    ICBDIE 2026, February 06–08, 2026, Beijing, China
+
+
+employs a modular architecture comprising three core components:                   • n is the total number of feature dimensions being considered.
+(1) a user profiling module that dynamically assesses individual                 To illustrate the application of this model, consider a concrete
+reading patterns using the Weighted Scoring Model (WSM); (2)                 example for a student with severe phonological decoding difficul-
+a real-time processing engine that leverages NLP for text adap-              ties. Based on the literature and expert input, the weights were
+tation; and (3) a feedback analytics module that tracks learning             heavily assigned to Text-to-Speech (TTS) and Vocabulary Building
+progress. This technical foundation enables seamless integration             capabilities: 𝑤 {𝑇𝑇 𝑆 } = 0.6 and 𝑤 {𝑉 𝑜𝑐𝑎𝑏 } = 0.4. The feature scores
+of the selected AI tools while maintaining personalized learning             (𝑠𝑖 , 𝑡) for each tool are derived from the qualitative ratings in Table
+pathways.                                                                    1 and quantified on the 0-3 scale.
+                                                                                 The suitability scores are calculated as follows:
+3.2     Participant Profiling through
+                                                                                   • For Kurzweil 3000: 𝑆 {𝐾𝑢𝑟𝑧𝑤𝑒𝑖𝑙 } = (0.6 × 3) + (0.4 × 3) =
+        Computational Assessment
+                                                                                     1.8 + 1.2 = 3.0
+A purposive sampling method was used to select college students                    • For Read&Write: 𝑆 {𝑅&𝑊 } = (0.6 × 3) + (0.4 × 1) = 1.8 +
+who either had a diagnosis of dyslexia or were suspected to have                     0.4 = 2.2
+reading difficulties associated with dyslexia. To enhance selection                • For Grammarly: 𝑆 {𝐺𝑟𝑎𝑚𝑚𝑎𝑟𝑙 𝑦 } = (0.6 × 0) + (0.4 × 2) =
+accuracy, we implemented a computational screening pipeline that                     0.0 + 0.8 = 0.8
+combined standardized assessments with behavioral analytics. The
+dyslexia adult screening test (DAST) was administered to evaluate                This quantitative result confirms the algorithmic selection of
+phonological processing, memory, and other dyslexia indicators,              Kurzweil 3000 as the optimal tool for this specific student profile,
+while the adult reading history questionnaire (ARHQ) provided                demonstrating the model’s operationalization from a theoretical
+supplementary data for profiling. This multi-modal assessment                formula to a practical decision-making aid.
+approach enabled more precise participant grouping based on com-                 For instance, for a student assessed with severe phonolog-
+putational profiling rather than subjective evaluation alone.                ical decoding difficulties, the weights for the “Text-to-Speech”
+   10 students (18-22 years old) volunteered for the study. The group        and “Vocabulary Builder” dimensions were assigned higher value
+included an equal number of male and female participants with                𝑠 (𝑤𝑇𝑇 𝑆 = 0.4, 𝑤𝑉 𝑜𝑐𝑎𝑏 = 0.3) based on the literature and expert
+diverse majors in the vocational and technical university, including         opinion. Consequently, Kurzweil 3000 received the highest suit-
+Applied English, Business Administration, and Information Tech-              ability score for this student’s profile. Conversely, a student whose
+nology. This variety ensured a representative understanding of AI’s          main challenge is written expression would prioritize Grammar
+impact on dyslexic students with different academic backgrounds              Check and Writing Style Optimization, likely leading to the highest
+and language demands.                                                        score for Grammarly.
+                                                                                 1 highlights the complementary strengths of selected tools across
+3.3     AI Tool Integration with Weighted Scoring                            critical dyslexia support dimensions. The algorithmic tool selec-
+                                                                             tion process enabled precise matching between student needs and
+        Algorithm
+                                                                             technological capabilities. For students with primary challenges
+The selection of AI-driven tools was guided by a systematic evalua-          in decoding and fluency, higher weights were assigned to Text-to-
+tion framework based on functional coverage and dyslexia-specific            Speech features, making Read&Write or Kurzweil 3000 optimal.
+requirements. We implemented a WSM to quantify tool suitability              For those struggling with written expression, the algorithm prior-
+based on individual student profiles. The assignment of weights              itized Grammar Check and Writing Style Optimization, typically
+integrated two methodologies. First, based on a review of the litera-        selecting Grammarly.
+ture on dyslexia intervention [4, 8], core intervention priorities for
+different dyslexia subtypes (e.g., phonological deficit, rapid naming        3.4     NLP Processing Pipeline
+deficit) were established. Second, three special education experts
+were invited to independently rate the importance of various func-           The AI tools operate through a sophisticated NLP processing
+tional dimensions, based on the initial assessment profiles (DAST            pipeline. As illustrated in Figure 1, this pipeline involves mul-
+and ARHQ results) of the students screened for this study. The               tiple processing layers including syntactic parsing, semantic analy-
+final weights were determined by averaging the scores provided               sis, and readability optimization. The system employs real-time
+by the experts. This combined approach, leveraging both literature           adaptive algorithms to adjust text complexity, provide contextual
+and expert judgment, ensured that the weight allocation was both             vocabulary support, and generate multi-sensory representations
+pedagogically sound and objective. The total score St for a tool t is        that address dyslexia-specific cognitive challenges.
+calculated as follows:                                                          Further in 1, the workflow illustrates how NLP technologies
+                            Õ𝑛                                              transform raw input into accessible output through layered analy-
+                       𝑆𝑡 =          𝑤𝑖 × 𝑠𝑖,𝑡                               sis. Real-time processing addresses dyslexia-specific difficulties in
+                                    𝑖=1
+   Where:                                                                    grammar, vocabulary, and readability.
+    • 𝑆𝑡 is the total suitability score for tool t.
+    • 𝑤𝑖 is the weight assigned to feature dimension iii, reflecting
+                                                                             3.5     Data Collection and Computational
+      its importance for a specific student ( 𝑤𝑖 = 1).
+                                               Í                                     Modeling
+    • 𝑆𝑖,𝑡 is the score of tool t in dimension i (e.g., on a scale of        This section outlines the framework for data acquisition, the analy-
+      0-3, where 0=absent, 1=basic, 2=good, 3=excellent/FFF).                sis of learning behaviors, and the construction of predictive models
+
+
+
+
+                                                                         3
+
+<a id="pdf-p4"></a>
+### [PDF p.4] ICBDIE 2026, February 06–08, 2026, Beijing, China Jingqian Gu et al.
+- Locator: `R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap.pdf` · página **4** / 7
+
+ICBDIE 2026, February 06–08, 2026, Beijing, China                                                                                 Jingqian Gu et al.
+
+
+                           Table 1: Functional Coverage Comparison of above AI Tools (F= capability strength)
+
+ Feature Dimension                                  Read&Write              Kurzweil 3000                   Grammarly
+ Text-to-Speech (TTS)                               X                       XF (multilingual)               7
+ Real-time Grammar Check                            7                       X                               XF (AI-driven)
+ Vocabulary Building                                Basic                   FFF (adaptive)                  X
+ Writing Style Optimization                         7                       X                               FFF (deep learning)
+ Dyslexia-Specific Support                          FFF                     F                               F
+
+
+
+
+                                       Figure 1: AI-Driven Text Enhanced Process (Grammarly Example).
+
+
+to evaluate the system’s efficacy. The integrated approach connects         the resulting cluster structure was validated with a silhouette score
+raw behavioral data to actionable insights through computational            of 0.62, indicating a reasonable and distinct separation of learning
+methods.                                                                    modes. This analysis aims to discover latent categories of learning
+                                                                            behavior within the student population.
+3.5.1 Data Collection and Experimental Timeline. The AI-powered
+reading tools were introduced to students in a structured, 16-week          3.5.3 Tool Efficacy Prediction Model. To investigate which factors
+semester. An initial training session in week 2 familiarized students       best predict student performance improvement, a Random Forest
+with each tool’s functionality and its underlying AI capabilities.          regression model was developed. The model uses the student’s
+Students then engaged in regular usage of the tools during class            initial proficiency test score, the assigned learning mode cluster
+activities and independent practice from weeks 3 to 15. To mea-             label from the previous analysis, and the usage intensity of the
+sure learning outcomes, data collection was anchored by a pretest           core AI tool features as input features. The prediction target was
+administered in week 1 and a posttest in week 16. This extended             the magnitude of improvement in the post-test score. The model’s
+duration allowed for the assessment of both immediate effects and           inherent feature importance ranking functionality is utilized to
+sustained engagement with the AI system. System logs of all user            identify and interpret the key drivers influencing learning outcomes,
+interactions were recorded throughout this period.                          thereby providing insights into the most impactful components of
+                                                                            the AI-powered assistant.
+3.5.2 Learning Mode Cluster Analysis. To identify distinct student
+learning behavior patterns from the collected data, we constructed a
+feature set based on system log metrics, including weekly tool usage
+                                                                            3.6    Experimental Procedure with Technical
+frequency, invocation counts of different function types, and aver-                Integration
+age single-session learning duration. We employed the K-Means               AI tools were introduced in English reading classes through a struc-
+clustering algorithm for unsupervised learning. The optimal num-            tured technical onboarding process. Each tool’s specific func-
+ber of clusters (k=3) was determined using the elbow method, and            tionality was introduced to students in initial training sessions,
+
+
+
+
+                                                                        4
+
+<a id="pdf-p5"></a>
+### [PDF p.5] An AI-Powered Reading Assistant for Dyslexic Students ICBDIE 2026, February 06–08, 2026, Beijing, China
+- Locator: `R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap.pdf` · página **5** / 7
+
+An AI-Powered Reading Assistant for Dyslexic Students                                                        ICBDIE 2026, February 06–08, 2026, Beijing, China
+
+
+with emphasis on the underlying AI capabilities and their relevance             Table 2: Pretest and posttest scores for 10 participants.
+to reading challenges. Students used these tools for a semester as
+part of regular class activities and independent practice.                     Student      1     2      3       4      5      6     7       8     9     10
+   This study spanned a 16-week semester. Data collection involved
+                                                                              Pretest       52   47     58      50     61     55     60      49   54     56
+a pretest in week 1 and a posttest in week 16. AI tools were intro-
+                                                                               score
+duced in week 2, followed by regular usage from weeks 3 to 15.
+                                                                              Posttest      68   63     75      72     79     71     78      67   70     74
+The extended duration allowed for assessment of both immediate
+                                                                               score
+effects and sustained engagement with the AI systems.
+
+3.7     Multi-Modal Data Analysis                                                  Table 3: Comparison of pretest and posttest scores.
+Pretest and posttest scores were analyzed using paired t-tests to
+assess the statistical significance of reading improvements. Mean                  Test          Mean score            SD          t-value        p-value
+score changes in reading comprehension, speed, and vocabulary
+                                                                                Pretest               54.2             5.56         4.32          < 0.01
+were analyzed. Beyond traditional statistical methods, we employed
+                                                                                Posttest              73.6             4.89
+machine learning techniques to identify patterns in learning
+progression and tool effectiveness across different student profiles.
+   A thematic analysis of interview and survey responses was con-
+ducted to assess students’ engagement, perceived improvements,                  2 shows the progression of each of the 10 students, capturing
+and challenges faced when using AI tools. Instructor observations            individual variations and highlighting the general upward trend in
+were systematically coded and analyzed using computational con-              reading comprehension. Each point represents a student’s pretest
+tent analysis to evaluate students’ progress and the effectiveness           and posttest score, connected by lines to illustrate the upward
+of the tool usage. This integrated analytical approach provided              trend in scores. The visualization demonstrates how the AI
+both quantitative metrics and qualitative insights into the AI tools’        system’s real-time adaptation capabilities catered to diverse
+impact.                                                                      learning trajectories, with all participants showing measurable
+                                                                             improvement regardless of their starting points.
+                                                                                A paired-samples t-test was conducted to evaluate the impact of
+4     RESULTS AND DISCUSSION                                                 the intervention on reading scores. The results indicated that the
+For 10 participants, improvements in reading comprehension were              posttest scores (M = 73.6, SD = 4.89) were statistically significantly
+compared through a pretest and posttest. A paired t-test was used            higher than the pretest scores (𝑀 = 54.2, 𝑆𝐷 = 5.56), t(9) = 4.32, p
+to analyze the difference between the two sets of scores, indicating         < .01.
+a statistically significant increase in reading comprehension. The              To further assess the practical, educational significance of this
+algorithmic adaptation and personalized learning pathways imple-             improvement, Cohen’s d was calculated. The obtained effect size
+mented through the AI tools demonstrated measurable effectiveness            was d = 1.37. According to the benchmarks established by Cohen
+in addressing dyslexia-specific reading challenges.                          (1988), this represents a large effect size. This indicates that the
+                                                                             improvement in reading scores attributable to the AI system’s in-
+4.1     Technical Efficacy Analysis: Performance                             tervention is not only statistically significant but also possesses
+                                                                             substantial practical significance and application value, underscor-
+        Metrics and System Outcomes                                          ing the effectiveness of the WSM and personalized tool selection
+For 10 participants, improvements in reading comprehension were              algorithm.
+compared through a pretest and posttest. A paired t-test was used
+to analyze the difference between the two sets of scores, indicating         4.2     System Engagement Analysis: Qualitative
+a statistically significant increase in reading comprehension. 2 and
+                                                                                     Feedback and User Experience
+3 summarize the results. The mean pretest score was 54.2 while that
+of the posttest was 73.6, reflecting the post-intervention improve-          Interviews and survey results revealed the following three factors
+ment. The standard deviation (SD) of the pretest was 5.56, which             were prominent, providing insights into the human-computer in-
+reflected a large variation. The SD of the posttest was 4.89, which          teraction aspects of the AI tools:
+showed decreased variation, indicating a more uniform improve-                     • Enhanced reading confidence: The majority of the partici-
+ment across participants. This convergence in performance metrics                    pants reported more confidence in their reading abilities after
+suggests that the AI system’s adaptive algorithms effectively ad-                    using AI tools, specifically mentioning the reassurance pro-
+dressed individual learning variability, providing consistent support                vided by features like text-to-speech. The real-time feedback
+regardless of initial proficiency levels.                                            mechanisms and error-correction algorithms created a low-
+   The t-value was 4.32, showing a significant difference between                    stakes learning environment that encouraged risk-taking
+pretest and posttest scores. The p-value was < 0.01, which indicated                 and practice.
+that the difference between the pretest and posttest scores is statis-             • Support for comprehension: The participants appreciated
+tically significant. These quantitative results validate the technical               the vocabulary assistance and reading aids, which made it
+effectiveness of the WSM and personalized tool selection algorithm                   easier to understand and process challenging content. The
+in optimizing learning outcomes.                                                     NLP-powered text simplification and contextual vocabulary
+
+
+
+
+                                                                         5
+
+<a id="pdf-p6"></a>
+### [PDF p.6] ICBDIE 2026, February 06–08, 2026, Beijing, China Jingqian Gu et al.
+- Locator: `R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap.pdf` · página **6** / 7
+
+ICBDIE 2026, February 06–08, 2026, Beijing, China                                                                                       Jingqian Gu et al.
+
+
+                                                                                 among dyslexic students. The substantial pretest-posttest score
+                                                                                 increase, along with students’ positive feedback, indicated that
+                                                                                 the underlying NLP algorithms and adaptive learning architectures
+                                                                                 addressed reading challenges more effectively than traditional meth-
+                                                                                 ods. By providing tailored support through sophisticated pattern
+                                                                                 recognition and real-time adjustment capabilities, the tools fulfilled
+                                                                                 a critical need for dyslexic learners who struggled with conven-
+                                                                                 tional instruction alone.
+                                                                                    The results are consistent with previous research in educational
+                                                                                 technology, which demonstrates the positive impact of computa-
+                                                                                 tional approaches to personalized learning. However, this study
+                                                                                 extends existing knowledge by demonstrating how specific algo-
+                                                                                 rithmic features—such as the WSM for tool selection and real-time
+                                                                                 text adaptation—can be optimized for dyslexia-specific challenges
+                                                                                 in vocational education contexts.
+
+                                                                                 4.3.1 System architecture implications for vocational education. The
+             Figure 2: Individual student’s progress.
+                                                                                 integration of AI-driven tools in vocational education demonstrates
+                                                                                 the potential of modular technical architectures to enhance acces-
+       support effectively reduced cognitive load during reading                 sibility for dyslexic students. The success of the weighted scoring
+       tasks.                                                                    algorithm in matching tools to individual needs suggests that future
+     • Reduced anxiety: The participants expressed a reduction in                systems could benefit from more sophisticated machine learning
+       reading-related stress, noting that the AI tools allowed them             approaches for dynamic tool recommendation. Such computational
+       to engage with material without fear of failure. The adaptive             systems are instrumental in preparing these students for profes-
+       difficulty adjustment and progressive scaffolding algorithms              sional environments by offering personalized support that aligns
+       created a supportive learning progression that minimized                  with their cognitive profiles, ultimately improving their academic
+       frustration.                                                              outcomes and career readiness.
+   AI tools effectively boosted students’ reading confidence and
+                                                                                 4.3.2 Technical training requirements. Providing specialized train-
+comprehension, and reduced anxiety. By providing features such
+                                                                                 ing for instructors on the effective use of AI tools is crucial for
+as text-to-speech and vocabulary support, these tools facilitated
+                                                                                 maximizing system utilization and technical efficacy. Well-trained
+easier engagement with challenging texts, fostering a more positive
+                                                                                 instructors can more effectively interpret system analytics and
+and less stressful reading experience (4).
+                                                                                 performance metrics to identify and address the specific reading
+   The use of AI tools increased the participants’ autonomy and
+                                                                                 challenges of students with dyslexia. Future systems should incor-
+enabled them to approach reading tasks with greater confidence and
+                                                                                 porate dashboard visualization tools and automated insight genera-
+less hesitation. The participants who initially exhibited challenges
+                                                                                 tion to support instructors in making data-informed instructional
+with comprehension demonstrated heightened engagement and
+                                                                                 decisions.
+proactivity in class after familiarizing themselves with the AI tools.
+Furthermore, the participants who had previously struggled with                  4.3.3 Algorithmic support for learner autonomy. The AI tools’ fa-
+traditional instructional methods responded favorably to the self-               cilitation of self-paced learning demonstrates how computational
+paced, AI-driven support, suggesting that this approach may better               systems can promote autonomy among dyslexic students. By en-
+accommodate their learning needs.                                                abling students to engage with reading materials at their own pace
+                                                                                 through intelligent progress tracking and adaptive content delivery,
+4.3     Technical Implementation Discussion:                                     these tools reduce reliance on direct teacher intervention. Future en-
+        System Optimization and Algorithm Efficacy                               hancements could incorporate reinforcement learning algorithms
+The combined quantitative and qualitative findings demonstrated                  to further optimize the balance between challenge and support,
+that AI tools, specifically Read & Write and Kurzweil 3000, signifi-             cultivating greater self-reliance and empowering students to take
+cantly improved reading comprehension and boosted confidence                     ownership of their learning process.
+
+                                                       Table 4: Student feedback on AI tool usage.
+
+ Theme                                  Participants         Testimony
+ Enhanced confidence                    7 students           “I’m not as hesitant to read as before; I feel more capable.”
+                                                             “I dare to attempt CET 4 reading parts.”
+ Comprehension                          6 students           “Using the dictionary feature helped me understand the text better.”
+ Reduced anxiety                        5 students           “I’m not worried about reading mistakes as much.”
+
+
+
+
+                                                                             6
+
+<a id="pdf-p7"></a>
+### [PDF p.7] An AI-Powered Reading Assistant for Dyslexic Students ICBDIE 2026, February 06–08, 2026, Beijing, China
+- Locator: `R293-an-ai-powered-reading-assistant-for-dyslexic-students-integrating-knowledge-grap.pdf` · página **7** / 7
+
+An AI-Powered Reading Assistant for Dyslexic Students                                                                              ICBDIE 2026, February 06–08, 2026, Beijing, China
+
+
+5    CONCLUSION                                                                                 [6] Sparks, R. L.; Patton, J.; Ganschow, L.; Humbach, N.; Javorsky, J. Early first-
+                                                                                                    language reading and spelling skills predict later second-language reading and
+In This study provides evidence that AI-driven educational tools can                                spelling skills. J. Educ. Psychol. 2008, 100(1), 162. https://psycnet.apa.org/doi/10.
+significantly enhance reading comprehension among vocational                                        1037/0022-0663.100.1.162
+                                                                                                [7] Mirela Duranovic and Bojana Vukovic. Temporal Characteristics of Handwriting
+college students with dyslexia. The implementation of a structured                                  in Children With Dyslexia in Transparent Orthography.[J]. Dyslexia (Chichester,
+tool selection framework, combined with NLP technologies, re-                                       England), 2025, 31(4) : e70012. https://doi.org/10.1002/dys.70012
+sulted in statistically meaningful improvements in reading scores                               [8] Norton, E. S.; Wolf, M. Rapid automatized naming (RAN) and reading fluency:
+                                                                                                    Implications for understanding and treatment of reading disabilities. Annu. Rev.
+(p < 0.01). These findings suggest that systematically matching                                     Psychol. 2012, 63(1), 427–452. https://doi.org/10.1146/annurev-psych-120710-
+assistive technologies to individual learning profiles can effectively                              100431
+address the specific challenges faced by dyslexic learners.                                     [9] Van der Kleij, F. M.; Vermeulen, J. A.; Schildkamp, K.; Eggen, T. J. H. M. Integrating
+                                                                                                    data-based decision making, assessment for learning and diagnostic testing in
+   Participants demonstrated not only improved reading abilities                                    formative assessment. Assessment Educ.: Principles, Policy & Practice 2015, 22(3),
+but also greater confidence and reduced anxiety whe Participants                                    324–343. https://doi.org/10.1080/0969594X.2014.999024
+                                                                                               [10] Fälth, L.; Heimann, M.; Gustafson, S. Computer-assisted interventions targeting
+showed improved reading skills, greater confidence, and less anxiety                                reading skills of children with reading disabilities–A longitudinal study. Dyslexia
+when using reading materials, as the adaptive AI tools enabled self-                                2013, 19(1), 37–53. https://doi.org/10.1002/dys.1450
+paced learning with real-time support.                                                         [11] Banerjee, J., Chakraborty, D., Chakraborty, B., Basu, A. (2023). Effective Teaching
+                                                                                                    Aids for People with Dyslexia. In: Garg, L., et al. Key Digital Trends Shaping the
+   Study limitations include a small sample size of ten participants,                               Future of Information and Management Science. ISMS 2022. Lecture Notes in
+a relatively short 16-week intervention, and the use of only three                                  Networks and Systems, vol 671. Springer, Cham. https://doi.org/10.1007/978-3-
+                                                                                                    031-31153-6_48
+AI tools, which may affect generalizability and leave other tech-                              [12] Wood, S. G.; Moxley, J. H.; Tighe, E. L.; Wagner, R. K. Does use of text-to-
+nologies unexamined.                                                                                speech and related read-aloud tools improve reading comprehension for students
+   Future research should involve longer, larger-scale studies with                                 with reading disabilities? A meta-analysis. J. Learn. Disabil. 2018, 51(1), 73–84.
+                                                                                                    https://doi.org/10.1177/0022219416688170
+more diverse groups to confirm these results. Comparing various AI                             [13] Murphy, C.; Barnes-Holmes, D.; Barnes-Holmes, Y.; Stewart, I. Using the Teacher
+tools could identify the most effective supports for dyslexic students,                             IRAP (T-IRAP) interactive computerized program to teach complex flexible rela-
+while also exploring impacts on writing and vocabulary.This study                                   tional responding with children with diagnosed autism spectrum disorder. Behav.
+                                                                                                    Anal. Pract. 2019, 12, 52–65. https://link.springer.com/article/10.1007/s40617-018-
+adds to the evidence for AI’s role in supporting dyslexic students                                  00302-9
+in special education.                                                                          [14] Chen, M.; Tworek, J.; Jun, H.; Kaplan, J.; Petrov, M. Evaluating large language
+                                                                                                    models trained on code. arXiv Preprint 2021, arXiv:2107.03374. https://doi.org/10.
+                                                                                                    48550/arXiv.2107.03374
+Acknowledgments                                                                                [15] Kendra V Saunders et al. Staples of Screening for Dyslexia in University Stu-
+                                                                                                    dents.[J]. Dyslexia (Chichester, England), 2025, 31(4) : e70011. https://doi.org/10.
+National Foreign Language Teaching Advisory Board Grant no:                                         1002/dys.70011
+WYJZW-2025-10-0278.                                                                            [16] Lopez, D.; Rangappa, S. The impact of AI on early intervention and education
+                                                                                                    of children with dyslexia. EDULEARN24 Proc. 2024, IATED. https://doi.org/10.
+                                                                                                    21125/edulearn.2024.1611
+References                                                                                     [17] Wiegand, R. E.; Becker, A.; Ray, W. Estimated SARS-CoV-2 antibody seropreva-
+ [1] Xu, Q. F. Causes, screening, and intervention of second language reading diffi-                lence trends and relationship to reported case prevalence from a repeated, cross-
+     culties in foreign language learning environments. Foreign Language Research.                  sectional study in the 50 states and the District of Columbia, United States—
+     Advance online publication. 2025, 09-28,1-9. https://link.cnki.net/urlid/23.1071.H.            October 25, 2020–February 26, 2022. Lancet Reg. Health–Amer. 2023, 18. https:
+     20250901.1036.008                                                                              //www.thelancet.com/journals/lanam/article/PIIS2667-193X(22)00220-4/fulltext
+ [2] Peterson, R.L.; Pennington, B.F. Developmental dyslexia. Annu. Rev. Clin. Psychol.        [18] Vaughn, S.; Fletcher, J. M.; Snowling, M. J. The critical role of instructional
+     2015, 11, 283–307. https://doi.org/10.1146/annurev-clinpsy-032814-112842                       response in defining and identifying students with dyslexia: A case for updating
+ [3] Roxana Rodriguez-Goncalves, Angel Garcia-Crespo, Adrian Ruiz-Arroyo, Carlos                    existing definitions. Ann. Dyslexia 2024, 74, 1–12. https://link.springer.com/
+     Matheus-Chacin,Development and feasibility analysis of an assistance system for                article/10.1007/s11881-024-00303-0
+     high school students with dyslexia,Research in Developmental Disabilities,Vol-            [19] Maria Vilanova Cifre, Lluís Barceló Coblijn,Study of English as an additional
+     ume 111,2021,103892,ISSN 0891-4222, https://doi.org/10.1016/j.ridd.2021.103892                 language in students with dyslexia,Language and Health,Volume 3, Issue
+ [4] Duranovic, M., E. Vardo, A. Gabeljic, A. Divkovic, A. Simic, and D. Rahmanovic.                1,2025,100045,ISSN 2949-9038, https://doi.org/10.1016/j.laheal.2024.100045
+     2023. “Contribution of Orthographic Knowledge to Reading and Spelling in                  [20] Clark, T. M.; Seipel, T.; Houston, L. Comparing the performance of college
+     Bosnian Highly Transparent Orthography.” Cognitive Processing 24: 549–562.                     chemistry students with ChatGPT for calculations involving acids and bases.
+     https://doi.org/10.1007/s10339-023-01146-0.                                                    J. Chem. Educ. 2023, 100(10), 3934–3944. https://doi.org/10.1021/acs.jchemed.
+ [5] Thom Nevill, Martin Forsey,The social impact of schooling on students with                     3c00500
+     dyslexia: A systematic review of the qualitative research on the primary and              [21] Wang, D.; Li, X.; Yu, C.; Smith, A. When one tutor handles students from different
+     secondary education of dyslexic students,Educational Research Review,Volume                    educational levels: Their dialogic interactions in online one-on-one tutoring. In
+     38,2023,100507,ISSN 1747-938X, https://doi.org/10.1016/j.edurev.2022.100507                    Proc. 18th Int. Conf. Learn. Sci.—ICLS 2024, 2169–2170. https://repository.isls.
+                                                                                                    org//handle/1/10918
+
+
+
+
+                                                                                           7

@@ -1,0 +1,409 @@
+===== PDF PAGE 1 / 9 =====
+      Buddy - A Personal Companion to Match
+      People with Cognitive Disabilities and AT
+
+     Peter Heumader, Tomas Murillo-Morales(B) , and Klaus Miesenberger
+
+         Institut Integriert Studieren, Altenbergerstr. 69, 4040 Linz, Austria
+      {Peter.Heumader,Tomas.Murillo Morales,Klaus.Miesenberger}@jku.at
+
+
+
+       Abstract. This paper presents a novel web-based repository and rec-
+       ommender system to match the requirements of users with cognitive
+       disabilities with available AT solutions when working on the web. Based
+       on personal data from users (questionnaire, simple games) stored in a
+       proﬁle and tool data provided by AT solution providers and AT vendors,
+       Buddy recommends tools supporting particular cognitive needs of target
+       users. Buddy intends to bridge the gap between the growing amount of
+       AT solutions and the actual low level of uptake by involving all stake-
+       holder groups in the value chain on the Buddy platform.
+
+
+       Keywords: Web accessibility · Cognitive accessibility · Assistive
+       technologies · Recommender system
+
+
+1    Introduction
+
+Buddy is a R&D eﬀort addressing the need to overcome the gap between the
+growing number of Assistive Technology (AT) available for people with cognitive
+disabilities when working on the web and the actual low level of uptake and use
+in practice [10].
+    Based on an analysis of the manifold reasons for low uptake (e.g. ﬁndability
+for independent access to tools and features, lacking customization and per-
+sonalization, missing proﬁle building and matching process, low incentive and
+missing training of the support/care environment, low/no interest in innovation
+at funding/commissioning/administrating level e.g. [2, 11]), this paper presents a
+new and innovative web based approach to support the matching process of peo-
+ple with cognitive disabilities and AT. R&D lead to the development of Buddy
+providing:
+
+1. A web repository to search, ﬁnd, explore and exchange Assistive Technology
+   (AT) more independently
+2. An AI-based recommender system matching the user proﬁle with param-
+   eters and functionalities of ATs. The recommender uses data provided by
+     – users through answering questions and/or by playing a series of games to
+       deﬁne the need of support for the diﬀerent dimensions of cognitive skills
+ The Author(s) 2022
+ c
+K. Miesenberger et al. (Eds.): ICCHP-AAATE 2022, LNCS 13342, pp. 275–283, 2022.
+https://doi.org/10.1007/978-3-031-08645-8_32
+
+===== PDF PAGE 2 / 9 =====
+276       P. Heumader et al.
+
+     – AT solution providers adding and categorizing their tools for the matching
+       process
+     – An explicit user-item rating mechanism feeding data into the recom-
+       mender as well as providing an exchange/discussion platform on AT use.
+3. A quality assurance back-end workﬂow to ensure that AT entries stored in
+   the system are up-to-date and of relevance for target users.
+
+Buddy is intended as a personal companion assisting users with cognitive dis-
+abilities and their support environment in ﬁnding the right AT solution for a
+successful web experience. It provides a new level of contact to users and a
+unique, rich and growing source for requirements elicitation for AT designers,
+developers, providers, commissioner and funders to better match ATs and func-
+tionalities towards needs of users and to support personalization.
+
+
+2      End User Survey
+Preparatory desktop research and online user interviews were conducted before
+designing Buddy in order to determine how persons with cognitive disabilities
+ﬁnd, retrieve, and use AT, and to assess needs and problems in these processes.
+All in all, 88 individual responses to the online survey were gathered and anal-
+ysed. 65 responses corresponded to Swedish participants, 20 answers came from
+Austria, 2 from the United Kingdom, and the remaining response came from
+Lithuania1 .
+    Participants where ﬁrst queried regarding whether they were responding the
+questionnaire for themselves or for a third person (e.g. a caregiver responding
+on behalf of a disabled individual). As shown in Fig. 1, approximately half of the
+respondents reported answering for themselves, whereas the second half required
+some form of assistance in ﬁlling in the questionnaire. Therefore, the gathered
+responses are likely to cover a wide range of the cognitive spectrum.
+
+
+          Table 1. Usage of AT by questionnaire participants (answer counts).
+
+      Responding for:   Myself A friend or     A person I      Other N/A Total
+                               relative        support
+      Uses AT           15      5               4              2      2     28
+      Does not use AT 27       25               6              2      0     60
+      Total             42     30              10              4      2     88
+
+
+
+    Participants were additionally inquired about their current usage of AT. The
+collected answers are summarized in Table 1. These results suggest that not
+
+1
+    The full end user survey report is part of Buddy’s “Report on User and Technical
+    Requirements”, publicly available at https://www.buddyproject.eu/main-results.
+
+===== PDF PAGE 3 / 9 =====
+                                             Buddy - A Personal Companion         277
+
+
+
+
+Fig. 1. Responses given by participants to the query “I am responding for...”, as per-
+centage of total gathered answers (88).
+
+
+employing AT results in limited autonomy for the person (only 45% answered
+for themselves).
+    Regarding the type of AT employed, reading support tools were used by the
+majority of users (64%), followed by AT to support writing (43%). AT usage
+by support category is followed by understanding (36%), memory (32%), focus
+(29%), managing time (29%), calculation (25%), managing tasks (21%), and
+managing choices (29%). In addition, most respondents (71%) reported using
+more than one AT type. These results suggest that users commonly employ a
+combination of AT; consequently, potential users of AT are likely to ﬁnd a cen-
+tralized repository of AT helpful for ﬁnding the right solution for their individual
+needs.
+    Next, questions were posed on aspects related to ﬁnding, obtaining, and using
+AT. Participants were asked about the source of the AT they use. 54% of them
+reported that they downloaded a tool from the internet for free. 35% reported
+buying tools themselves, and only 30% obtained AT from a government agency,
+and/or from their school, employer, or similar. When asked whether it was easy
+to ﬁnd AT that meets their needs, only one third of participants reported being
+able to ﬁnd it without external help (more precisely, 15% reported having no
+problem at all to ﬁnd AT whereas 18% stated that the process of ﬁnding AT
+could be improved despite managing it by themselves); on the other hand, 30%
+declared not being able to ﬁnd a better tool, and 29% stated that they could
+ﬁnd suitable AT only with help. Again, these results align with the assumption
+that a majority of users would beneﬁt from a centralized intelligent repository
+that helps them in ﬁnding suitable AT by themselves.
+    In addition, 25% of users reported needing help in using AT even if they
+found a good solution for their needs. Help may be necessary in setting up
+tool preferences, installing the tool, learning how to use it, getting updates, and
+
+===== PDF PAGE 4 / 9 =====
+278      P. Heumader et al.
+
+during regular use of the tool. These results suggest that there exists a signif-
+icant gap in the AT provision process when it comes to training, support, and
+maintenance. Users did not only report needing external help when employing
+AT, but also expressed that current solutions ought to be improved - only 25%
+of surveyed users said that their current AT works ﬂawlessly. Suggested areas
+of improvement include ease of use, more settings/preferences, need for better
+support such as training, and additional functionality.
+    Participants who reported not using AT were asked the reasons why they
+forgo it. 30% of them said that they simply do not need it. However, the majority
+reported not being able to ﬁnd the right tool for their needs: 29% said not to
+know where to ﬁnd AT, and 27% reported that they could not ﬁnd AT that
+works for them. In addition, 5% said that it was too diﬃcult to get the solutions
+they found.
+    In short, despite our sample size (N = 88) not being statistically signiﬁcant,
+this preparatory research provides useful insights with regards to the barriers
+currently present in the AT provision process for persons with cognitive dis-
+abilities. The gathered answers suggest that there is an important need for a
+centralized repository with easily available and clear information about AT sup-
+porting cognitive user needs, including installation and usage instructions as
+well as clear classiﬁcation and search functionality for tools according to the
+support categories they cover. Such a repository would also help mitigate the
+existing latency in regard to user needs, by letting users autonomously ﬁnd AT
+for their speciﬁc support needs among the myriad of existing solutions. In turn,
+AT providers would also beneﬁt from it by exposing their solutions to a large
+audience of potential users.
+
+
+3     The Buddy Approach
+
+The state-of-the-art analysis and a user-centered research, design and devel-
+opment approach based on the IPAR-UCD (Inclusive Participatory Action
+Research for User Centered Design) method [3] for including end-users as co-
+researchers, allowed us to specify, design and implement the concept and the
+components of Buddy. In addition, the diﬀerent versions of the prototype and
+functionalities, developed in an cyclic agile approach, got evaluated by 18 end
+users with cognitive disabilities and from the neuro-diverse spectrum using the
+Think Aloud Protocol [9] and the Heuristic Evaluation [12] method, adapted to
+the requirements of the end users. Each component of Buddy is described next.
+
+
+3.1    Accessible Web Repository of AT
+Buddy intends to become a “one stop shop” for accessing ATs whose functional-
+ity hinges on a fully accessible Web application that serves as a central repository
+of individual AT tools and solutions enabling2 :
+
+2
+    https://develop.buddyproject.eu/.
+
+===== PDF PAGE 5 / 9 =====
+                                             Buddy - A Personal Companion        279
+
+– Target users with a cognitive disability to search, (automatically) ﬁnd, read
+  about, download, and give feedback on AT solutions suitable for their indi-
+  vidual support needs. This functionality is also useful for formal and informal
+  care/support staﬀ, teachers, trainers, employers, etc.; as well as administra-
+  tion and funding or commissioning bodies in search for AT.
+– AT providers to add, describe, exchange, and get ﬁrst hand feedback on their
+  tools and solutions. Buddy invites AT solution providers but also other stake-
+  holder to enter and categorize ATs into the public repository thereby exposing
+  them to a suitable audience, see previous point.
+
+The platform provides ﬁrst hand access to end users, a communication and
+cooperation platform which is a rich source for AT providers to develop their
+tools further but also their market relations and cooperation. The cooperation
+with end user organizations, service provider organizations, administrative and
+political level will help to overcome reluctance and fears and should make Buddy
+the platform to be for the whole sector.
+
+3.2   Proﬁle Building via Traditional Forms and Gamiﬁcation
+
+To generate suitable AT recommendations for a speciﬁc user, the needs and
+preferences of that user must be known. In web accessibility, the key reference
+point for user needs are the standards of accessibility, namely, the standard EN
+301 549 [5] and WCAG 2.1 [14]. However, none of these standards were conceived
+with the aim of proactively supporting cognitive user needs.
+    On the other hand, there exist guidelines issued by standardization agencies
+that do deﬁne cognitive accessibility. We have identiﬁed two such guidelines that
+had the most detailed deﬁnitions of cognitive user needs: namely [4] and [8]. To
+establish a relevant list of cognitive user needs to use as a basis for eliciting the
+user requirements, we mapped the deﬁnition of cognitive functions and needs in
+these guidelines against the cognitive abilities as deﬁned in the international clas-
+siﬁcation of functioning, disability and health [13] (the benchmark for deﬁning
+human abilities and functions).
+    The list was also complemented by deﬁnitions of cognitive user requirements
+developed within research initiatives that explicitly look at requirements for the
+web, most notably the research conducted by the W3C COGA group [15]. The
+result was the following list of user needs for support that cover all required
+aspects:
+
+– Reading
+– Writing
+– Understanding
+– Calculation
+– Focusing on a task or information, and keeping the focus
+– Managing tasks (getting started and completing them)
+– Memory
+– Managing time (planning, allocating and controlling)
+
+===== PDF PAGE 6 / 9 =====
+280    P. Heumader et al.
+
+– Managing choices (evaluating options, deciding)
+
+These preferences can be set by the user with a classic multi step web-form,
+where each step represents a user need mentioned above. However, previous
+projects and user involvement activities have shown that people with cognitive
+disabilities often struggle with long forms as they tend to be tedious and too
+complex. In addition, sometimes users do not know or are unable to express
+which types of support they need.
+    Therefore, a new innovative game-based approach [6] was implemented, in
+which users play mini games that aim to detect the users’ needs for support. The
+games implemented address the cognitive dimensions/skills mentioned above. At
+the moment, 6 mini games have been developed covering 7 out of the 9 support
+categories. For further information on the gamiﬁcation of user proﬁle creation
+in Buddy, the reader is directed to [7].
+    With this gamiﬁcation approach the capabilities of the user can be detected
+and added to his or her proﬁle. The system allows and invites to do R&D for
+more and in particular more speciﬁc as well as attractive proﬁling games. Games
+have been developed and tested using the IPAR-UCD [3] approach to make sure
+that a high level of accessibility and usability is reached. The promising results
+invite to do more R&D to improve the approach.
+
+
+3.3   AI Based Recommendations
+
+Buddy uses both user proﬁles and AT entries stored in the repository as data
+sources for an intelligent recommender subsystem. Its main purpose is to ﬁnd
+suitable ATs for speciﬁc users that may not be aware of their existence. In this
+manner, users are encouraged to try out new technologies that support their
+speciﬁc needs, thereby beneﬁting both users and AT vendors. The implemented
+hybrid recommender system hinges on two complementary methods:
+
+– A knowledge-based recommendation approach that matches ATs to users
+  directly by exploiting explicit knowledge about the support needs of users
+  and support categories of ATs in the repository. A similarity score between
+  ATs and the target user is computed, and the highest-scoring ATs may be
+  recommended to the user.
+– Data-driven recommendations that utilize user ratings of individual ATs to
+  discover similar users and ATs regardless of their speciﬁc proﬁles. This sys-
+  tem is inspired by well-established collaborative ﬁltering methods commonly
+  employed in e-commerce websites. Users are represented as a collection of
+  score vectors, and similar ones to the target user are retrieved according to
+  their similarity (Pearson’s r correlation) in rating data-space. In this man-
+  ner, suitable ATs for a target user may be found even if partial or incorrect
+  knowledge about them is stored in the repository.
+
+The ﬁnal recommendations oﬀered to a target user are based on a weighted
+mean of both scores in order to smooth the ﬁnal score while beneﬁting from both
+
+===== PDF PAGE 7 / 9 =====
+                                                 Buddy - A Personal Companion     281
+
+techniques. Initially, more importance is given to the knowledge-based score. As
+more user ratings are inputted into the system, emphasis is placed on the data-
+driven scores. Speciﬁcally, the ﬁnal likeness score s(ai , ut ) for target user ut and
+a target AT entry ai (yet unrated by ut ) is computed as follows:
+
+                    s(ai , ut ) = w · d(ai , ut ) + (1 − w) · k(ai , ut )         (1)
+where d is the data-driven score, k is the knowledge-based score, and w ∈ [0, 1]
+is a dynamic weighting term that corresponds to the system’s conﬁdence on the
+accuracy of the data-driven score i.e. the more users have been considered in the
+computation of d, the higher the value of w, up to a value of 1.0 once 100 users
+have been taken into account.
+    This method is an instance of a distributed weighted hybrid recommender
+system [1]. Candidate AT entries ai for user ut are sorted according to their
+value of s(ai , ut ). The sorted elements are then oﬀered as suggestions to the
+target user, in descending order.
+
+3.4   Quality Assurance (QA) Back-End
+Lastly, to guarantee the highest quality of the system, a web back-end is pro-
+vided, which allows control of AT descriptions and categorization by expert
+users. A moderation process ensures that each AT entry available to end users
+in Buddy meets the necessary quality and relevance criteria.
+    Users with AT moderator privileges are informed each time a new AT entry
+has been added by an AT vendor user to the system. They may then proceed
+to review the entry (appropriateness of the solution, quality and ease of reading
+of its description, proper categorization, correct download links, etc.) following
+internal guidelines. Once the tool has been deemed appropriate for its inclusion
+to the repository, a new revision is published and made available to all end users,
+which may search for it manually ot get it automatically recommended if the
+solution matches their speciﬁc needs (c.f. Sect. 3.3).
+    Authors may edit their AT entries at any time, whereupon a new revision
+for the AT entry is created in the system. This new revision needs to go again
+through the QA workﬂow previously described. In this manner, Buddy allows
+AT vendors and providers to keep their solutions up to date in the repository
+while ensuring the quality of updated entries.
+
+
+4     Conclusion
+This paper presents a ﬁrst prototype of an online platform that is able to rec-
+ommend suitable AT to individual users with cognitive disabilities. The sys-
+tem intends to provide beneﬁts to all stakeholder groups and to bridge the gap
+between potential and actual use of AT. It is intended and negotiated that the
+system is taken up by larger umbrella organizations to become sustainable and
+used at broad scale. It also provides a rich source for R&D at all levels of the sys-
+tem (e.g. user data for proﬁling, automatic/supported AT integration, AI based
+
+===== PDF PAGE 8 / 9 =====
+282     P. Heumader et al.
+
+recommendation, platform features). Extension to other target groups is on the
+agenda for future R&D.
+
+Acknowledgements. BUDDY has received funding from the European Commis-
+sion’s Work Programme for 2020 for Pilot Projects and Preparatory Actions in the
+ﬁeld of Communications Networks, Content and Technology under grant agreement
+No LC-01610292/101018034 BUDDY.
+
+
+References
+ 1. Burke, R.: Hybrid recommender systems: survey and experiments. User Model.
+    User Adap. Inter. 12(4), 331–370 (2002)
+ 2. Chadwick, D.D., Chapman, M., Caton, S.: Digital inclusion for people with an
+    intellectual disability. In: The Oxford Handbook of Cyberpsychology (2019)
+ 3. Cordula Edler, M.A.: IPAR-UCD – inclusive participation of users with cogni-
+    tive disabilities in software development. In: Miesenberger, K., Manduchi, R.,
+    Covarrubias Rodriguez, M., Peňáz, P. (eds.) ICCHP 2020. LNCS, vol. 12376, pp.
+    43–50. Springer, Cham (2020). https://doi.org/10.1007/978-3-030-58796-3 6
+ 4. European Telecommunications Standards Institute (ETSI): Human factors (HF);
+    guidelines for the design of mobile ICT devices and their related applications for
+    people with cognitive disabilities. ETSI EG 203 350 v1.1.1 (2016–11) (2016)
+ 5. European Telecommunications Standards Institute (ETSI): Accessibility require-
+    ments for ICT products and services. Harmonised European Standard EN 301 549
+    v2.1.2 (2018–08) (2018)
+ 6. Hautala, J., Heikkilä, R., Nieminen, L., Rantanen, V., Latvala, J.M., Richardson,
+    U.: Identiﬁcation of reading diﬃculties by a digital game-based assessment tech-
+    nology. J. Educ. Comput. Res. 58(5), 1003–1028 (2020). https://doi.org/10.1177/
+    0735633120905309
+ 7. Heumader, P., Murillo-Morales, T., Miesenberger, K.: AI based recommendation
+    and assessment of AT for people with cognitive disabilities. J. Technol. Pers. Dis-
+    abil. 10 (2022)
+ 8. International Organization for Standardization (ISO): Cognitive accessibility - Part
+    1: General guidelines. Standard ISO 21801-1:2020 (2020). https://www.iso.org/
+    standard/71711.html
+ 9. Lewis, C.: Using the “thinking-aloud” method in cognitive interface design. IBM
+    TJ Watson Research Center Yorktown Heights (1982)
+10. Miesenberger, K., Edler, C., Heumader, P., Petz, A.: Tools and applications for
+    cognitive accessibility. In: Yesilada, Y., Harper, S. (eds.) Web Accessibility. HIS,
+    pp. 523–546. Springer, London (2019). https://doi.org/10.1007/978-1-4471-7440-
+    0 28
+11. Miesenberger, K., Petz, A.: Easy to read on the web-state of the art and research
+    directions. Procedia Comput. Sci. 27, 318–326 (2014)
+12. Nielsen, J.: How to conduct a heuristic evaluation. Nielsen Norman Group 1(1), 8
+    (1995)
+13. World Health Organization: International classiﬁcation of functioning, disability
+    and health: ICF (2001). https://apps.who.int/iris/handle/10665/42407
+14. World Wide Web Consortium (W3C): Web Content Accessibility Guidelines
+    (WCAG) 2.1 (2018). https://www.w3.org/TR/WCAG21/
+15. World Wide Web Consortium (W3C): Making content usable for people with cog-
+    nitive and learning disabilities (2020). https://www.w3.org/TR/coga-usable/
+
+===== PDF PAGE 9 / 9 =====
+                                             Buddy - A Personal Companion         283
+
+Open Access This chapter is licensed under the terms of the Creative Commons
+Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/),
+which permits use, sharing, adaptation, distribution and reproduction in any medium
+or format, as long as you give appropriate credit to the original author(s) and the
+source, provide a link to the Creative Commons licence and indicate if changes were
+made.
+     The images or other third party material in this chapter are included in the
+chapter’s Creative Commons licence, unless indicated otherwise in a credit line to the
+material. If material is not included in the chapter’s Creative Commons licence and
+your intended use is not permitted by statutory regulation or exceeds the permitted
+use, you will need to obtain permission directly from the copyright holder.

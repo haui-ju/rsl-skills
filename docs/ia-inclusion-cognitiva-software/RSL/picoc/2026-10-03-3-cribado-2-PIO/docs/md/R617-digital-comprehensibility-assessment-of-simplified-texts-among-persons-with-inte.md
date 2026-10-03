@@ -1,0 +1,1090 @@
+# Digital Comprehensibility Assessment of Simplified Texts among
+
+> Fuente PDF: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · técnica **locator index** (página + ancla) + chunks Graphify
+
+## Metadata
+- Stem: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte`
+- PDF: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf`
+- DOI: `10.1145/3613904.3642570`
+- Pages: `11`
+- Structured_at: `2026-10-03T23:23:20+00:00`
+- Technique: `pdf-page-locators + heading-chunks`
+
+## Locator index (qué hay y en qué página del PDF)
+
+| Kind | Label | PDF page | MD anchor |
+|------|-------|----------|-----------|
+| abstract | Abstract / blurb | 1 | `#abstract` |
+| section | 2.2 Comprehension of simplified language by | 2 | `#p2-2-2-comprehension-of-simplified-language-by` |
+| section | 3.1 Texts and comprehension questions | 3 | `#p3-3-1-texts-and-comprehension-questions` |
+| concept | evaluation | ? | `#concept-evaluation` |
+| concept | intellectual disabilities | 1 | `#concept-intellectual-disabilities` |
+| concept | readability | ? | `#concept-readability` |
+| concept | such as persons with Andreas Säuberli | 1 | `#concept-such-as-persons-with-andreas-s-uberli` |
+| concept | Franz Holzknecht | 1 | `#concept-franz-holzknecht` |
+| concept | Patrick Haller | 1 | `#concept-patrick-haller` |
+| concept | Silvana Deilen | 1 | `#concept-silvana-deilen` |
+| concept | Silvia Hansen-Schirra | 1 | `#concept-silvia-hansen-schirra` |
+| concept | May 11–16 | ? | `#concept-may-11-16` |
+| concept | 2024 | ? | `#concept-2024` |
+| concept | Honolulu | ? | `#concept-honolulu` |
+| concept | USA. ACM | ? | `#concept-usa-acm` |
+| concept | New ferent approaches to measuring comprehensibility: multiple-choice York | 1 | `#concept-new-ferent-approaches-to-measuring-comprehensibility-multiple-choice-yor` |
+| concept | USA | ? | `#concept-usa` |
+| concept | 11 pages. https://doi.org/10.1145/3613904.3642570 comprehension questions | 1 | `#concept-11-pages-https-doi-org-10-1145-3613904-3642570-comprehension-questions` |
+| concept | perceived difficulty ratings | 1 | `#concept-perceived-difficulty-ratings` |
+| concept | response time | 1 | `#concept-response-time` |
+| concept | comprehension levels | 1 | `#concept-comprehension-levels` |
+| concept | for instance | 1 | `#concept-for-instance` |
+| concept | while analyzing tures | 1 | `#concept-while-analyzing-tures` |
+| concept | R617 | ? | `#concept-r617` |
+| concept | digital | ? | `#concept-digital` |
+| concept | comprehensibility | 1 | `#concept-comprehensibility` |
+| concept | assessment | ? | `#concept-assessment` |
+| concept | simplified | ? | `#concept-simplified` |
+| concept | texts | ? | `#concept-texts` |
+| concept | among | ? | `#concept-among` |
+| concept | persons | ? | `#concept-persons` |
+| concept | with | ? | `#concept-with` |
+| concept | inte | ? | `#concept-inte` |
+| finding | KEYWORDS Text simplification refers to the process of increasing the compre- Automatic tex… | 1 | `#finding-keywords-text-simplification-refers-to-t` |
+| finding | We conducted an evaluation study of text Schiffl, Silvia Hansen-Schirra, and Sarah Ebling. | 1 | `#finding-we-conducted-an-evaluation-study-of-text` |
+| finding | In Proceedings of the CHI Conference on Human Factors in Com- simplified German texts on a… | 1 | `#finding-in-proceedings-of-the-chi-conference-on` |
+| finding | We explored four dif- puting Systems (CHI ’24), May 11–16, 2024, Honolulu, HI, USA. | 1 | `#finding-we-explored-four-dif-puting-systems-ch` |
+| finding | ACM, New ferent approaches to measuring comprehensibility: multiple-choice York, NY, USA, … | 1 | `#finding-acm-new-ferent-approaches-to-measuring` |
+| finding | https://doi.org/10.1145/3613904.3642570 comprehension questions, perceived difficulty rati… | 1 | `#finding-https-doi-org-10-1145-3613904-3642570` |
+| page | p.1: Digital Comprehensibility Assessment of Simplified Texts among | 1 | `#pdf-p1` |
+| page | p.2: CHI ’24, May 11–16, 2024, Honolulu, HI, USA Säuberli et al. | 2 | `#pdf-p2` |
+| page | p.3: (adapted) standardized tests with participants with mild and border- the A2 level using th | 3 | `#pdf-p3` |
+| page | p.4: CHI ’24, May 11–16, 2024, Honolulu, HI, USA Säuberli et al. | 4 | `#pdf-p4` |
+| page | p.5: Figure 1: Screenshots of the reading task in Okra. (1) Initial reading screen, where only  | 5 | `#pdf-p5` |
+| page | p.6: CHI ’24, May 11–16, 2024, Honolulu, HI, USA Säuberli et al. | 6 | `#pdf-p6` |
+| page | p.7: Target group Control group Target group Control group | 7 | `#pdf-p7` |
+| page | p.8: CHI ’24, May 11–16, 2024, Honolulu, HI, USA Säuberli et al. | 8 | `#pdf-p8` |
+| page | p.9: Particularly the second factor requires further experimental re- Overall, we show that app | 9 | `#pdf-p9` |
+| page | p.10: CHI ’24, May 11–16, 2024, Honolulu, HI, USA Säuberli et al. | 10 | `#pdf-p10` |
+| page | p.11: reading comprehension on paper and screen: A mode-effect study. Computers & the other para | 11 | `#pdf-p11` |
+
+## Abstract
+<a id="abstract"></a>
+
+KEYWORDS Text simplification refers to the process of increasing the compre- Automatic text simplification, evaluation, intellectual disabilities, hensibility of texts. Automatic text simplification models are most reading comprehension, readability, digital testing commonly evaluated by experts or crowdworkers instead of the ACM Reference Format: primary target groups of simplified texts, such as persons with Andreas Säuberli, Franz Holzknecht, Patrick Haller, Silvana Deilen, Laura intellectual disabilities. We conducted an evaluation study of text Schiffl, Silvia Hansen-Schirra, and Sarah Ebling. 2024. Digital Comprehen- comprehensibility including participants with and without intellec- sibility Assessment of Simplified Texts among Persons with Intellectual tual disabilities reading unsimplified, automatically and manually Disabilities. In Proceedings of the CHI Conference on Human Factors in Com- simplified German texts on a tablet computer. We explored four dif- puting Systems (CHI ’24), May 11–16, 2024, Honolulu, HI, USA. ACM, New ferent approaches to measuring comprehensibility: multiple-choice York, NY, USA, 11 pages. https://doi.org/10.1145/3613904.3642570 comprehension questions, perceived difficulty ratings, response time, and reading speed. The results revealed significant variations 1 INTRODUCTION in these measurements, depending on the reader group and whether Text simplification refers to the process of improving the com- the text had undergone automatic or manual simplification. For the prehensibility of texts by reducing complexity at several linguistic target group of persons with intellectual disabilities, comprehension levels, for instance, by using simpler vocabulary and syntactic struc- questions emerged as the most reliable measure, while analyzing tures, reorganizing text structure, and explaining difficult words reading speed provided valuable insights into participants’ reading and concepts. Primary target groups of simplified language1 include behavior. persons with intellectual disabilities, persons with dementia, prelin- gually deaf persons, and non-native readers [36]. In recent years, CCS CONCEPTS both the demand for simplified texts and the amount of available • Human-centered computing → Empirical studies in acces- data have been growing. Therefore, the development of quantitative sibility; • Computing methodologies → Natural language pro- human evaluation methods which include and represent the pri- cessing. mary target gr
+
+## Keywords
+
+- evaluation
+- intellectual disabilities
+- readability
+- such as persons with Andreas Säuberli
+- Franz Holzknecht
+- Patrick Haller
+- Silvana Deilen
+- Silvia Hansen-Schirra
+- May 11–16
+- 2024
+- Honolulu
+- USA. ACM
+- New ferent approaches to measuring comprehensibility: multiple-choice York
+- USA
+- 11 pages. https://doi.org/10.1145/3613904.3642570 comprehension questions
+- perceived difficulty ratings
+- response time
+- comprehension levels
+- for instance
+- while analyzing tures
+
+## Concept index (graph hooks + página)
+
+<a id="concept-evaluation"></a>
+### [PDF p.?] Concept: evaluation
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **?**
+
+<a id="concept-intellectual-disabilities"></a>
+### [PDF p.1] Concept: intellectual disabilities
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **1**
+
+<a id="concept-readability"></a>
+### [PDF p.?] Concept: readability
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **?**
+
+<a id="concept-such-as-persons-with-andreas-s-uberli"></a>
+### [PDF p.1] Concept: such as persons with Andreas Säuberli
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **1**
+
+<a id="concept-franz-holzknecht"></a>
+### [PDF p.1] Concept: Franz Holzknecht
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **1**
+
+<a id="concept-patrick-haller"></a>
+### [PDF p.1] Concept: Patrick Haller
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **1**
+
+<a id="concept-silvana-deilen"></a>
+### [PDF p.1] Concept: Silvana Deilen
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **1**
+
+<a id="concept-silvia-hansen-schirra"></a>
+### [PDF p.1] Concept: Silvia Hansen-Schirra
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **1**
+
+<a id="concept-may-11-16"></a>
+### [PDF p.?] Concept: May 11–16
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **?**
+
+<a id="concept-2024"></a>
+### [PDF p.?] Concept: 2024
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **?**
+
+<a id="concept-honolulu"></a>
+### [PDF p.?] Concept: Honolulu
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **?**
+
+<a id="concept-usa-acm"></a>
+### [PDF p.?] Concept: USA. ACM
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **?**
+
+<a id="concept-new-ferent-approaches-to-measuring-comprehensibility-multiple-choice-yor"></a>
+### [PDF p.1] Concept: New ferent approaches to measuring comprehensibility: multiple-choice York
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **1**
+
+<a id="concept-usa"></a>
+### [PDF p.?] Concept: USA
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **?**
+
+<a id="concept-11-pages-https-doi-org-10-1145-3613904-3642570-comprehension-questions"></a>
+### [PDF p.1] Concept: 11 pages. https://doi.org/10.1145/3613904.3642570 comprehension questions
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **1**
+
+<a id="concept-perceived-difficulty-ratings"></a>
+### [PDF p.1] Concept: perceived difficulty ratings
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **1**
+
+<a id="concept-response-time"></a>
+### [PDF p.1] Concept: response time
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **1**
+
+<a id="concept-comprehension-levels"></a>
+### [PDF p.1] Concept: comprehension levels
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **1**
+
+<a id="concept-for-instance"></a>
+### [PDF p.1] Concept: for instance
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **1**
+
+<a id="concept-while-analyzing-tures"></a>
+### [PDF p.1] Concept: while analyzing tures
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **1**
+
+<a id="concept-r617"></a>
+### [PDF p.?] Concept: R617
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **?**
+
+<a id="concept-digital"></a>
+### [PDF p.?] Concept: digital
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **?**
+
+<a id="concept-comprehensibility"></a>
+### [PDF p.1] Concept: comprehensibility
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **1**
+
+<a id="concept-assessment"></a>
+### [PDF p.?] Concept: assessment
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **?**
+
+<a id="concept-simplified"></a>
+### [PDF p.?] Concept: simplified
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **?**
+
+<a id="concept-texts"></a>
+### [PDF p.?] Concept: texts
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **?**
+
+<a id="concept-among"></a>
+### [PDF p.?] Concept: among
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **?**
+
+<a id="concept-persons"></a>
+### [PDF p.?] Concept: persons
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **?**
+
+<a id="concept-with"></a>
+### [PDF p.?] Concept: with
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **?**
+
+<a id="concept-inte"></a>
+### [PDF p.?] Concept: inte
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **?**
+
+
+## Findings index (graph hooks + página)
+
+<a id="finding-keywords-text-simplification-refers-to-t"></a>
+### [PDF p.1] Finding: KEYWORDS Text simplification refers to the process of increasing the compre- Automatic text simplification, evaluation, intellectual disabilities, hensibility of texts.
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **1**
+
+<a id="finding-we-conducted-an-evaluation-study-of-text"></a>
+### [PDF p.1] Finding: We conducted an evaluation study of text Schiffl, Silvia Hansen-Schirra, and Sarah Ebling.
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **1**
+
+<a id="finding-in-proceedings-of-the-chi-conference-on"></a>
+### [PDF p.1] Finding: In Proceedings of the CHI Conference on Human Factors in Com- simplified German texts on a tablet computer.
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **1**
+
+<a id="finding-we-explored-four-dif-puting-systems-ch"></a>
+### [PDF p.1] Finding: We explored four dif- puting Systems (CHI ’24), May 11–16, 2024, Honolulu, HI, USA.
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **1**
+
+<a id="finding-acm-new-ferent-approaches-to-measuring"></a>
+### [PDF p.1] Finding: ACM, New ferent approaches to measuring comprehensibility: multiple-choice York, NY, USA, 11 pages.
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **1**
+
+<a id="finding-https-doi-org-10-1145-3613904-3642570"></a>
+### [PDF p.1] Finding: https://doi.org/10.1145/3613904.3642570 comprehension questions, perceived difficulty ratings, response time, and reading speed.
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **1**
+
+
+## Relevance hooks
+### Theme relevance: software engineering and accessibility
+### Theme relevance: cognitive accessibility and neurodiversity
+### Theme relevance: evaluation metrics and WCAG
+
+## Sections (detected in PDF)
+
+<a id="p2-2-2-comprehension-of-simplified-language-by"></a>
+### [PDF p.2] Section: 2.2 Comprehension of simplified language by
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **2** · ancla `#p2-2-2-comprehension-of-simplified-language-by`
+
+<a id="p3-3-1-texts-and-comprehension-questions"></a>
+### [PDF p.3] Section: 3.1 Texts and comprehension questions
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **3** · ancla `#p3-3-1-texts-and-comprehension-questions`
+
+
+## Page chunks (texto por página del PDF)
+
+_Cada heading es un nodo Graphify. El label incluye la página para volver al PDF sin releer todo._
+
+<a id="pdf-p1"></a>
+### [PDF p.1] Digital Comprehensibility Assessment of Simplified Texts among
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **1** / 11
+
+Digital Comprehensibility Assessment of Simplified Texts among
+                                                      Persons with Intellectual Disabilities
+                                                          Andreas Säuberli                                            Franz Holzknecht                                        Patrick Haller
+                                                        andreas@cl.uzh.ch                                       franz.holzknecht@hfh.ch                                   haller@cl.uzh.ch
+                                                   Department of Computational                                 Institute for Language and                           Department of Computational
+                                                           Linguistics                                               Communication                                           Linguistics
+                                                       University of Zurich                                 University of Teacher Education in                          University of Zurich
+                                                       Zurich, Switzerland                                        Special Needs Zurich                                  Zurich, Switzerland
+                                                                                                                   Zurich, Switzerland
+
+
+
+
+arXiv:2402.13094v1 [cs.CL] 20 Feb 2024
+                                                            Silvana Deilen                                                Laura Schiffl                                Silvia Hansen-Schirra
+                                                   sideilen@uni-mainz.de                                         laura.schiffl@tum.de                                hansenss@uni-mainz.de
+                                             Johannes Gutenberg University Mainz                          Klinikum rechts der Isar, Technische                 Johannes Gutenberg University Mainz
+                                                   Germersheim, Germany                                          Universität München                                 Germersheim, Germany
+                                                                                                                  München, Germany
+
+                                                                                                                          Sarah Ebling
+                                                                                                                     ebling@cl.uzh.ch
+                                                                                                               Department of Computational
+                                                                                                                        Linguistics
+                                                                                                                   University of Zurich
+                                                                                                                   Zurich, Switzerland
+                                         ABSTRACT                                                                                    KEYWORDS
+                                         Text simplification refers to the process of increasing the compre-                         Automatic text simplification, evaluation, intellectual disabilities,
+                                         hensibility of texts. Automatic text simplification models are most                         reading comprehension, readability, digital testing
+                                         commonly evaluated by experts or crowdworkers instead of the                                ACM Reference Format:
+                                         primary target groups of simplified texts, such as persons with                             Andreas Säuberli, Franz Holzknecht, Patrick Haller, Silvana Deilen, Laura
+                                         intellectual disabilities. We conducted an evaluation study of text                         Schiffl, Silvia Hansen-Schirra, and Sarah Ebling. 2024. Digital Comprehen-
+                                         comprehensibility including participants with and without intellec-                         sibility Assessment of Simplified Texts among Persons with Intellectual
+                                         tual disabilities reading unsimplified, automatically and manually                          Disabilities. In Proceedings of the CHI Conference on Human Factors in Com-
+                                         simplified German texts on a tablet computer. We explored four dif-                         puting Systems (CHI ’24), May 11–16, 2024, Honolulu, HI, USA. ACM, New
+                                         ferent approaches to measuring comprehensibility: multiple-choice                           York, NY, USA, 11 pages. https://doi.org/10.1145/3613904.3642570
+                                         comprehension questions, perceived difficulty ratings, response
+                                         time, and reading speed. The results revealed significant variations                        1    INTRODUCTION
+                                         in these measurements, depending on the reader group and whether                            Text simplification refers to the process of improving the com-
+                                         the text had undergone automatic or manual simplification. For the                          prehensibility of texts by reducing complexity at several linguistic
+                                         target group of persons with intellectual disabilities, comprehension                       levels, for instance, by using simpler vocabulary and syntactic struc-
+                                         questions emerged as the most reliable measure, while analyzing                             tures, reorganizing text structure, and explaining difficult words
+                                         reading speed provided valuable insights into participants’ reading                         and concepts. Primary target groups of simplified language1 include
+                                         behavior.                                                                                   persons with intellectual disabilities, persons with dementia, prelin-
+                                                                                                                                     gually deaf persons, and non-native readers [36]. In recent years,
+                                         CCS CONCEPTS                                                                                both the demand for simplified texts and the amount of available
+                                         • Human-centered computing → Empirical studies in acces-                                    data have been growing. Therefore, the development of quantitative
+                                         sibility; • Computing methodologies → Natural language pro-                                 human evaluation methods which include and represent the pri-
+                                         cessing.                                                                                    mary target groups becomes increasingly important. This is all the
+                                                                                                                                     more true with increasing numbers of automatic text simplification
+                                         Permission to make digital or hard copies of part or all of this work for personal or
+                                         classroom use is granted without fee provided that copies are not made or distributed       (ATS) models being developed [2]. However, current research in
+                                         for profit or commercial advantage and that copies bear this notice and the full citation   ATS mostly resorts to evaluations based on opinions of experts (e.g.,
+                                         on the first page. Copyrights for third-party components of this work must be honored.      simplified language professionals) or crowdworkers who are not
+                                         For all other uses, contact the owner/author(s).
+                                         CHI ’24, May 11–16, 2024, Honolulu, HI, USA                                                 part of the primary target groups.
+                                         © 2024 Copyright held by the owner/author(s).
+                                                                                                                                     1We use the term simplified language as an umbrella term, including many (and often
+                                         ACM ISBN 979-8-4007-0330-0/24/05.
+                                         https://doi.org/10.1145/3613904.3642570                                                     language-specific) varieties such as Easy Language and Plain Language [36].
+
+<a id="pdf-p2"></a>
+### [PDF p.2] CHI ’24, May 11–16, 2024, Honolulu, HI, USA Säuberli et al.
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **2** / 11
+
+CHI ’24, May 11–16, 2024, Honolulu, HI, USA                                                                                          Säuberli et al.
+
+
+    Meanwhile, the use of information and communication technol-          50], scrolling interactions [23], or eye movements [46], is rarely
+ogy, and mobile touchscreen devices in particular, is becoming an         considered.
+integral part of the daily lives of persons in these target groups           In most cases, the participants of such comprehensibility studies
+[40, 44]. This offers the potential of conducting human evaluations       are persons without disabilities or crowdworkers without specific
+with target groups of simplified language in digital form. Apart          inclusion criteria, who are not part of the primary target group of
+from the efficiency gain in data collection and analysis compared to      simplified language. This can be problematic, because what is con-
+paper-and-pencil methods, digital assessment methods also allow           sidered difficult varies between reader groups [24, 60], and the re-
+participants to read texts in a more natural environment (possibly        quirements for text simplification should not be considered univer-
+at home, on their own device), and make it possible to record de-         sal [22]. Some exceptions of studies assessing ATS output among the
+tailed user interactions, enabling measurements such as reading           target groups include experiments with deaf and hard-of-hearing
+speed or scrolling interactions as proxies for reading comprehen-         adults [3], persons with intellectual disabilities [25, 50] or dyslexia
+sion. However, there is currently little research on the most suitable    [46], and language learners [15]. Among these, Saggion et al. [50] is
+methods for measuring text comprehensibility among the different          the most similar to our study, as they evaluated both manually and
+target groups as well as on the effects of text simplification on these   automatically simplified texts with persons with Down syndrome
+measurements. This issue also fundamentally concerns human-               based on comprehension questions and reading time, in addition to
+computer interaction, since persons with intellectual disabilities        an expert evaluation using Likert scale ratings. Their quantitative
+differ not only in their reading skills but also in their requirements    results did not show significant differences in comprehensibility
+for accessible user interfaces [10].                                      between the different text versions, but they reported positive sub-
+    The aim of the present study is to explore different ways of uti-     jective perception of the simplified texts among target readers. Our
+lizing digital tools for measuring comprehensibility. We determine        study differs from this contribution in that it is fully digital, also
+the comprehensibility (sometimes also referred to as readability)         making use of recorded user interactions, and we conduct the same
+of a text by measuring its comprehension on the part of members           comprehension assessment with persons with and without intel-
+of a specific group of readers, while taking into account the fact        lectual disabilities, which allows us to compare its effectiveness
+that comprehensibility may differ between these groups. To discuss        between the two groups.
+the suitability of these methods for evaluating ATS, we will also
+investigate the effect of the automatic simplification process on
+these measurements. More specifically, the study is guided by the
+                                                                          2.2    Comprehension of simplified language by
+following three research questions:                                              persons with intellectual disabilities
+                                                                          Fajardo et al. [19] conducted a study with 28 students with intel-
+   (1) Which methods for measuring comprehensibility can distin-
+                                                                          lectual disability reading news articles in easy-to-read Spanish on
+       guish between simplified and non-simplified texts?
+                                                                          paper, and correlated response accuracy in literal and inferential
+   (2) What is the effect of manual and automatic text simplification
+                                                                          comprehension questions with linguistic measures such as word
+       on these measurements?
+                                                                          and sentence length. In a pilot study by Saletta and Winberg [51],
+   (3) How do these effects differ between persons with intellectual
+                                                                          20 participants with intellectual or developmental disabilities read
+       disabilities (as a primary target group of simplified language)
+                                                                          English texts that had undergone (among others) controlled manip-
+       and a control group of persons without intellectual disabili-
+                                                                          ulations reducing lexical and syntactic complexity. They measured
+       ties?
+                                                                          errors while reading aloud and comprehension question response
+    To answer these questions, we present results from an empirical       accuracy and found a significant effect on the former but not on the
+study including participants with and without intellectual disabil-       latter. They also found a high variability in reading comprehension
+ities, using unsimplified, manually simplified (i.e., simplified by       among participants.
+human experts), and automatically simplified German texts. To the             For German, several studies have investigated the effect of spe-
+best of our knowledge, this is the first study evaluating ATS for         cific features of simplified language on comprehension by persons
+German with this target group.                                            with intellectual disabilities. Schiffl [53] conducted an experiment
+                                                                          using eye-tracking with more than 80 participants, investigating
+2 RELATED WORK                                                            the effects of word length and frequency. They found fundamen-
+                                                                          tal differences in eye movements while reading between persons
+2.1 Human evaluation of automatic text                                    with and without intellectual disabilities. Pappert and Bock [43]
+    simplification                                                        studied compound segmentation (a feature in several varieties of
+While human evaluation is the preferred way of evaluating the             simplified German) using a lexical decision task with participants
+quality of ATS output, there is no consensus on best practices            with intellectual disability or functional illiteracy. Bock and Lange
+[4, 5, 55, 60]. In recent ATS research where human evaluation was         [9] tested sentence and text comprehension skills of 28 persons
+used, the most commonly applied methods were Likert scale ratings,        with intellectual disabilities and showed that certain phenomena
+usually for the categories simplicity, fluency/grammaticality, and        that are assumed to be too difficult for this target group (such as
+adequacy/meaning preservation [38, 39, 49, 54]. Less commonly,            negation and personal pronouns) hardly caused any problems for
+text comprehensibility or difficulty is evaluated using multiple-         the participants.
+choice comprehension questions [3, 32, 33] or free recall questions           More generally, reading comprehension by target groups of sim-
+[33]. Reading behavior, e.g., by measuring reading speed [3, 15, 46,      plified language has been studied by Jones et al. [27], using several
+
+<a id="pdf-p3"></a>
+### [PDF p.3] (adapted) standardized tests with participants with mild and border- the A2 level using the trained model and created four multiple-
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **3** / 11
+
+Digital Comprehensibility Assessment of Simplified Texts among Persons with Intellectual Disabilities                             CHI ’24, May 11–16, 2024, Honolulu, HI, USA
+
+
+(adapted) standardized tests with participants with mild and border-                      the A2 level using the trained model and created four multiple-
+line learning disabilities. This study revealed that the participant                      choice comprehension questions. The first question was always
+group was highly heterogeneous with respect to reading compre-                            “What is the text mainly about?” (four answer options, one correct),
+hension abilities.                                                                        the remaining three questions were about specific details present
+                                                                                          in the text (three answer options, one correct). We created these
+2.3     Digital assessment of reading                                                     questions such that they can be answered based on the original
+        comprehension                                                                     and the manually simplified text, without looking at the automatic
+As mentioned in Section 1, digital assessment has the advantage of                        simplifications in order to avoid an unfair bias in favor of the sys-
+enabling measurements of reading behavior even without expensive                          tem output. Since the ATS model sometimes erroneously omits
+equipment and expertise necessary for eye-tracking experiments.                           information present in the original, the latter three questions have
+Some previous work has studied the connection between behavioral                          an additional fourth answer option “Information does not appear
+measurements such as reading speed or scrolling behavior and                              in the text”. Care was taken that the questions are unambiguous,
+comprehension [17, 18, 56, 61], but there is only little research                         independent of each other (i.e., being able to answer a question
+on exploiting these measurements for assessing comprehension                              was not contingent on getting the correct answer to a previous
+or comprehensibility [23]. Our work contributes to this line of                           question), and unanswerable using world knowledge alone. Each
+research by studying reading speed and response time as proxies                           question was double-checked for these criteria by two co-authors.
+for comprehension.
+   While there is a relatively large body of literature both in human-                     3.2     Participants
+computer interaction and in language assessment dealing with dif-                          We recruited two groups of participants from different populations,
+ferences in comprehension and behavior when reading on digital                             described in the following. All participants took part on a voluntary
+devices compared to paper [1, 13, 29, 30, 57], almost no research                          basis and were compensated monetarily.
+has been conducted on how digital reading assessments need to be
+adapted for persons with intellectual disabilities. This is a signifi-                     3.2.1 Target group. After approval by the institutional ethics re-
+cant research gap, given that these user groups have very different                        view board, we recruited 18 participants from an educational pro-
+needs in terms of interface accessibility [10]. By comparing dif-                          gram for persons with intellectual disabilities in Austria. Eight were
+ferent assessment approaches between readers with and without                              female and ten were male, and they were aged between 18 and 32
+intellectual disabilities, the present paper represents a first step                       (median: 23) at the time of recruitment. All participants had some
+towards addressing this research gap.                                                      form of cognitive impairment (most commonly: autism spectrum
+                                                                                           disorder, Down syndrome, or developmental delay), and a degree
+3 MATERIALS AND METHODS                                                                    of disability of at least 50% according to regulations concerning
+                                                                                           the assessment of the degree of disability in Austria2 . Therefore,
+3.1 Texts and comprehension questions
+                                                                                           these participants represent a primary target group for simplified
+The texts used in this study originate from a parallel corpus of origi-                    language. All participants were legally allowed to sign the consent
+nal and simplified German documents. The documents were created                            forms themselves.
+at capito, a provider of commercial text simplification services for                          In a questionnaire, which all participants filled in before the first
+German. Each document in the corpus was manually simplified by                             session, seven participants stated that they read texts in simplified
+trained experts into one to three levels of simplification following                       language at least once per week, five at least once per month. A total
+the levels of the Common European Framework of Reference for                               of 17 stated that they used a touchscreen device on a daily basis,
+Languages (A1, A2, and B2) [14]. All manual simplifications used                           one person only weekly. Three participants did not list German as
+in this study are at level A2. This means that most of the infor-                          their native language, but all have completed compulsory education
+mation from the original text is retained (i.e., there is little to no                     in German and are proficient at the CEFR level of A2 or higher.
+summarization involved, as would be expected on a level of A1),
+but simpler syntactic structures and vocabulary are used, complex                          3.2.2 Control group. To compare the effects of text simplification
+terminology is explained either inline or at the end of the text, and                      on people outside the primary target groups, we additionally re-
+the layout is more readable, e.g., using bullet point lists and shorter                    cruited 18 people without cognitive impairment—mostly current or
+line lengths. Level A2 is roughly comparable to Easy Language                              former students—through university mailing lists. Twelve were fe-
+(in German: Leichte Sprache), for which persons with intellectual                          male, six were male, and they were aged between 20 and 36 (median:
+disabilities are commonly listed as a primary target group [8, 11].                        25). All were native German speakers.
+   We used a subset of this parallel corpus to train a neural ATS sys-                        Unlike in the target group, most participants in the control group
+tem (fine-tuned mBART transformer model [35]) using the method                             were not used to reading simplified language (only 6 participants
+described in Rios et al. [48]. From the remaining documents, we                            indicated reading simplified texts at least once per month). However,
+selected twelve texts according to several criteria: (1) The texts                         the information and consent forms which the participants received
+should be between 100 and 600 words in length, (2) they should                             before the study were written in A2 simplified language to establish
+cover a diverse range of topics but exclude topics known to be                             a basic level of familiarity.
+familiar to a wide audience, and (3) the texts should not require
+extensive additional context for comprehension. For each of the
+twelve documents, we generated an automatic simplification at                              2 BGBl. II Nr. 261/2010, https://www.ris.bka.gv.at/eli/bgbl/II/2010/261/20100818
+
+<a id="pdf-p4"></a>
+### [PDF p.4] CHI ’24, May 11–16, 2024, Honolulu, HI, USA Säuberli et al.
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **4** / 11
+
+CHI ’24, May 11–16, 2024, Honolulu, HI, USA                                                                                                        Säuberli et al.
+
+
+3.3     Procedure                                                              • Trail making: Tapping randomly positioned numbers in
+All experiments were conducted using the Okra app ([57]; version                 ascending order as quickly as possible [45]; 3 trials; mea-
+0.3.1-alpha) on Apple iPads (9.7-inch). Okra is an app for con-                  surement: mean time between taps. We only included part
+ducting reading experiments on mobile touchscreen devices, and it                A of the trail making task, which primarily assesses visual
+was specifically designed for and tested with users with intellec-               attention and psychomotor speed [7].
+tual disabilities. For instance, it reduces the complexity of the user       Each task was preceded by a practice task, which participants
+interface and the amount of text on screen in order to decrease the        could optionally repeat and whose results were excluded from the
+cognitive load [57].                                                       analysis.
+   Each participant took part in three sessions on separate days. The
+                                                                           3.3.2 Reading tasks. Participants read four texts per session. The
+target group sessions took place at the facilities of the educational
+                                                                           texts were presented in one of three versions (original, manually
+program, the control group sessions in a university seminar room.
+                                                                           simplified, automatically simplified). No participant read the same
+Each session consisted of reading tasks, two sessions also included
+                                                                           text in more than one version. The design was counterbalanced
+cognitive tasks. The app presented all instructions and guided par-
+                                                                           so that all texts in all versions were read by the same number of
+ticipants through the entire session such that several participants
+                                                                           participants in both groups. After reading the text, participants
+could be tested simultaneously without interruptions. Each control
+                                                                           were asked to rate the text’s difficulty on a 5-point scale (1 = very
+group session included up to 12 participants, whereas for the tar-
+                                                                           difficult, 5 = very easy), whereby the level descriptions were marked
+get group, only up to 5 individuals participated per session. This
+                                                                           with textual labels, colors, and emoticons3 . The text was then dis-
+was intended to provide better support in case of problems and to
+                                                                           played again, along with the comprehension questions. Only one of
+shorten waiting times, as reading speeds varied widely in the target
+                                                                           four questions was shown at a time, and participants could switch
+group. One or two test administrators were present in the room
+                                                                           back and forth between questions until they submitted their final
+and available for questions.
+                                                                           answers. The screenshots in Figure 1 show this procedure for one
+   Before the main study, we conducted a usability test with 3 people
+                                                                           text. After finishing the text, participants were asked to take a break
+from the same educational program to improve the usability and
+                                                                           if necessary, and then continue with the next text.
+accessibility of the instructions and tasks implemented in the app.
+                                                                               Apart from the responses, we also recorded timestamped user
+After finalizing the material and procedure, we piloted the entire
+                                                                           interactions such as reading times and scrolling interactions. In the
+experiment with 3 participants from the target group. Participants
+                                                                           present paper, we will focus on the following measurements:
+in the usability test and the pilot study were not recruited for the
+main study.                                                                      • Responses to comprehension questions [with our assessment:
+                                                                                   correct/incorrect]
+                                                                                 • Responses to text difficulty ratings [1–5]
+3.3.1 Cognitive tasks. We included a total of four tasks testing                 • Time taken to answer each question, i.e., the total time during
+several low-level cognitive skills related to reading. The purpose                 which the question was visible to the participant [seconds]
+of these tasks was to provide a basic understanding of some of the               • Reading speed when initially reading the text [words per
+differences between the two groups and the heterogeneity within                    minute, WPM]
+each group. The tests we used were adaptations of tasks commonly               Since the ATS model sometimes does not transfer all information
+used in psychological research (see references below). We adapted          accurately and we designed the comprehension questions without
+the tasks to the target group (by adjusting the difficulty and number      looking at the ATS output, the correct answers in the automatic sim-
+of trials based on results from the usability test) and to the technical   plification could be different from the other versions. For example,
+setup in the present study (by making the interface usable on a            the ATS model at times deleted a sentence from the original which
+touchscreen).                                                              included relevant information for answering a question, changing
+                                                                           the correct answer for this question with respect to the automati-
+      • Digit span: Memorizing and repeating an increasingly long          cally simplified text to “Information does not appear in the text”.
+        sequence of digits in the same order [62]; two trials, each of     Therefore, we manually recoded the answer correctness for the
+        which ended after two consecutive mistakes; measurement:           automatically simplified texts. We removed instances where the
+        longest correctly repeated sequence. This task tests short-        correct answer in the automatic simplification was “Information
+        term memory, sequencing ability, attention and automated           does not appear in the text” in order not to give the ATS model an
+        learning [62].                                                     unfair advantage in the analysis. In total, we removed 9 out of 48
+      • Lexical decision: Deciding as quickly as possible whether          questions from the results of the automatically simplified texts.
+        the displayed strings of characters are words or pseudowords
+        [41]; 37 stimuli; measurements: reaction time on correctly         3.4     Statistical analysis
+        recognized words, ratio of correct responses. This task tests      When analyzing responses to comprehension questions or ratings,
+        vocabulary knowledge and lexical access.                           we took into account that some participants may be more proficient
+      • Reaction time: Tapping randomly appearing balloons as              than others, and some questions may be more difficult to answer
+        quickly as possible; 15 stimuli; measurement: mean time
+                                                                           3We are aware that the interpretation of facial expressions, including emoticons, can
+        between stimulus appearance and tap. Apart from motor
+                                                                           differ between individuals. We used redundant coding with text, colors, and emoticons
+        aspects, reaction time also depends on cognitive factors such      in the interface to avoid ambiguity, while also reducing the amount of text visible on
+        as visual processing speed and attention [6].                      screen.
+
+<a id="pdf-p5"></a>
+### [PDF p.5] Figure 1: Screenshots of the reading task in Okra. (1) Initial reading screen, where only the text is visible. (2) Text difficulty
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **5** / 11
+
+Digital Comprehensibility Assessment of Simplified Texts among Persons with Intellectual Disabilities                      CHI ’24, May 11–16, 2024, Honolulu, HI, USA
+
+
+
+ (1)                                                         (2)                                                    (3)
+
+
+
+
+Figure 1: Screenshots of the reading task in Okra. (1) Initial reading screen, where only the text is visible. (2) Text difficulty
+rating screen. (3) Comprehension question screen; tapping the arrow buttons switches between questions.
+
+
+than others. To model these differences, we analyzed our data using                        iterations, including 1000 warmup iterations. Model code and con-
+the Rasch model, also called the one-parameter logistic model in                           vergence diagnostics are published in the supplementary material.
+item response theory (IRT). These models are widely used in lan-
+guage assessment and psychometrics, and formally comparable to                             4     RESULTS
+generalized linear models with (fixed or random) effects for persons
+                                                                                           Anonymized data and code for reproducing the analyses are avail-
+and items [20, p. 143–145][16]. Whereas the classic Rasch model
+                                                                                           able in the supplementary material. Five participants did not con-
+only considers persons and items in the analysis, the many-facets
+                                                                                           sent to publishing their anonymized raw data. Therefore, the data
+Rasch model allowed us to also take additional parameters (so-
+                                                                                           for these participants is not included in the supplementary material.
+called facets) into account in the modeling of the data [34]. As we
+                                                                                           The numbers and plots in the paper are based on the complete data.
+were interested in the effects of the text version (original, manually
+simplified, automatically simplified) on participants’ performance,
+we specified a many-facets Rasch model with three facets (persons,                         4.1     Cognitive tasks
+items, and text version). We used the estimated parameter values                           Figure 2 compares the measurements from the cognitive tasks be-
+(the “latent traits”) of the text version facet to compare the effect of                   tween the target and control groups. The largest difference is in
+manual and automatic text simplification.                                                  the digit span task for measuring working memory, with median
+   We applied a dichotomous Rasch model for the comprehension                              scores of 4.5 for the target group and 7 for the control group. We
+questions [20, p. 7–9] (equivalent to logistic regression) and a graded                    also measured a longer reaction time in the lexical decision task,
+response model for the difficulty rating [52]. For modeling response                       longer reaction times in general, and slower trail making in the
+time and reading speed, we used log-linear regression models as                            target group. Moreover, variability in the target group is generally
+in [59] and [20, p. 228–231], fitting person, item, and text version                       much higher than in the control group, which is likely to affect
+parameters in the same way as for the Rasch models. All models                             results in reading behavior and comprehension [26].
+are defined in Table 1.
+   We used Bayesian inference with a Markov chain Monte Carlo                              4.2     Reading tasks
+(MCMC) algorithm for fitting the models. This has several advan-
+                                                                                           In total, 1680 responses to comprehension questions (excluding
+tages compared to frequentist statistics: We get posterior distribu-
+                                                                                           the 108 responses to unanswerable questions in the automatically
+tions for parameter values, which provide more information than
+                                                                                           simplified versions, see Section 3.3.2) and 432 difficulty ratings are
+point estimates, it allows including prior knowledge, and Bayesian
+                                                                                           included in the analysis.
+models are usually more accurate for complex IRT models and small
+                                                                                              The estimated effects of the three text versions (original, manu-
+sample sizes [20, p. 2][21][63]. We defined wide normal distribu-
+                                                                                           ally simplified, automatically simplified) on the four measurements
+tions as priors for person, question/document, and text version
+                                                                                           are visualized in Figure 3. Effects are centered around zero, and
+parameters (cf. Table 2). For each measurement, we fit two separate
+                                                                                           parameters for the two groups were estimated independently (as
+models for the target and control groups, since we did not want to
+                                                                                           explained in Section 3.4), therefore the estimates cannot be com-
+generalize across the different populations they are sampled from.
+                                                                                           pared across groups. We calculate the distribution of the difference
+   We used Stan [12] with the PyStan interface [47] for sampling
+                                                                                           between the three text version parameters at each MCMC sam-
+and ArviZ [31] for analysis. For MCMC, we used 4 chains with 2000
+                                                                                           pling step and use highest density intervals (HDI) to quantify the
+                                                                                           credibility of the difference between the text version effects.
+
+<a id="pdf-p6"></a>
+### [PDF p.6] CHI ’24, May 11–16, 2024, Honolulu, HI, USA Säuberli et al.
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **6** / 11
+
+CHI ’24, May 11–16, 2024, Honolulu, HI, USA                                                                                                                                                                                                                        Säuberli et al.
+
+
+                   Measurement                                                                                     Range                                             Model definition
+                   Comprehension question accuracy                                                                 𝑦𝑝,𝑞,𝑣 ∈ {0, 1}                                   𝑃 (𝑦𝑝,𝑞,𝑣 = 1) = logit −1 (𝜇 + 𝛼𝑝 − 𝛽𝑞 − 𝛿 𝑣 )
+                                                                                                                                                                     𝑃 (𝑦𝑝,𝑡,𝑣 = 𝑘) = logit −1 (𝜇 + 𝛼𝑝 − 𝛾𝑡 − 𝛿 𝑣 − 𝑐𝑘 )
+                   Perceived difficulty ratings                                                                    𝑦𝑝,𝑡,𝑣 ∈ {1, 2, 3, 4, 5}
+                                                                                                                                                                                      − logit −1 (𝜇 + 𝛼𝑝 − 𝛾𝑡 − 𝛿 𝑣 − 𝑐𝑘+1 )
+                   Response time                                                                                   𝑦𝑝,𝑞,𝑣 ∈ [0, ∞)                                   log(𝑦𝑝,𝑞,𝑣 ) = 𝜇 + 𝛼𝑝 + 𝛽𝑞 + 𝛿 𝑣 + 𝜖, 𝜖 ∼ N (0, 𝜎)
+                   Reading speed                                                                                   𝑦𝑝,𝑡,𝑣 ∈ [0, ∞)                                   log(𝑦𝑝,𝑡,𝑣 ) = 𝜇 + 𝛼𝑝 + 𝛾𝑡 + 𝛿 𝑣 + 𝜖, 𝜖 ∼ N (0, 𝜎)
+Table 1: Model definitions for each measurement in the reading tasks. 𝛼𝑝 , 𝛽𝑞 , 𝛾𝑡 , 𝛿 𝑣 are parameters for a given person 𝑝,
+comprehension question 𝑞, text 𝑡, and text version 𝑣, 𝜇 and 𝜎 are parameters for mean and standard deviation, and 𝑐𝑘 is a
+parameter for the threshold of each rating category 𝑘 (fixed to −∞ for 𝑘 = 1).
+
+
+
+                                                Digit span                                              Lexical decision                                  Lexical decision                             Reaction time                              Trail making
+                                                                                                  2.2                                                                                                                                       3.5
+                                            9                                                                                                       1.0                                          1.1
+                                                                                                  2.0                                                                                                                                       3.0
+                                            8                                                                                                                                                    1.0
+
+
+
+
+                                                                 Correct word reaction time [s]
+                                                                                                  1.8                                               0.9
+
+
+
+
+                 Longest correct sequence
+                                                                                                                                                                                                                                            2.5
+
+
+
+
+                                                                                                                           Correct response ratio
+                                            7                                                                                                                                                    0.9
+
+
+
+                                                                                                                                                                             Reaction time [s]
+                                                                                                  1.6
+
+
+                                                                                                                                                                                                                         Time per tap [s]
+                                                                                                                                                    0.8                                          0.8                                        2.0
+                                            6                                                     1.4
+
+                                                                                                  1.2                                                                                            0.7                                        1.5
+                                            5                                                                                                       0.7
+                                                                                                  1.0                                                                                            0.6                                        1.0
+                                            4
+                                                                                                  0.8                                               0.6                                          0.5                                        0.5
+                                            3
+                                                                                                  0.6
+                                                target control                                            target control                                    target control                              target control                            target control
+                                                    Group                                                     Group                                             Group                                       Group                                     Group
+
+Figure 2: Boxplots of the measurements from the cognitive tasks, compared between target and control group. Each data point
+is the measured values for a single participant aggregated across all trials/stimuli (maximum for digit span, mean for all others),
+excluding practice trials.
+
+
+4.2.1 Comprehension questions. Overall, the target group answered                                                                                                  4.2.2 Perceived difficulty ratings. In Figure 3b, again, the differ-
+47.5% of the questions correctly, whereas the control group an-                                                                                                    ences between text versions are much smaller in the target group
+swered 92.8% correctly. In the control group, 25 questions were an-                                                                                                compared to the control group. The target group seems to rate
+swered correctly by all participants, and one participant answered                                                                                                 the automatically simplified texts slightly easier than the originals
+all 48 questions correctly. In other words, in the control group,                                                                                                  (CI90% = [0.08, 1.06]), whereas the control group rated the auto-
+about half of the questions were uninformative because they were                                                                                                   matically simplified texts on par with the unsimplified ones. The
+too easy and therefore unable to discriminate between more and                                                                                                     control group had a strong tendency to rate the manually simplified
+less proficient readers and between more and less difficult text ver-                                                                                              texts as less difficult than the original (CI95% = [1.22, 2.58]) and the
+sions. This ceiling effect means that the parameter estimates of                                                                                                   automatically simplified texts (CI95% = [1.26, 2.60]).
+the Rasch model are less precise in the control group, as the wider
+credible intervals in Figure 3a show. Still, the estimated difficulty                                                                                              4.2.3 Comprehension question response times. In response time
+of the manual simplifications is measurably lower than both the                                                                                                    models, a larger effect means a longer response time, which is gen-
+original (CI95% = [0.15, 1.61]) and the automatic simplifications                                                                                                  erally associated with a higher item difficulty in tests [59]. In the
+(CI95% = [0.49, 2.01]), meaning that participants had a significantly                                                                                              target group, from Figure 3c we can observe that manual simplifi-
+higher probability of answering questions correctly with the manu-                                                                                                 cations led to slightly faster response times (CI80% = [0.02, 0.18]),
+ally simplified version. The automatic simplifications appear to have                                                                                              while the automatic simplifications are on par with the originals.
+been slightly more difficult than the originals (CI80% = [0.01, 0.86]).                                                                                            In the control group, the differences are even stronger, and the
+In the target group, the effects are less pronounced, the original                                                                                                 automatic simplifications appear to have been the most difficult.
+being the most difficult and the manual simplification the least                                                                                                   The effects on response time (Figure 3c) look very similar to the ef-
+difficult.                                                                                                                                                         fects on response accuracy (Figure 3a). This is in line with research
+                                                                                                                                                                   on psychological research on test design [59], but in our case, the
+
+<a id="pdf-p7"></a>
+### [PDF p.7] Target group Control group Target group Control group
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **7** / 11
+
+Digital Comprehensibility Assessment of Simplified Texts among Persons with Intellectual Disabilities                                                            CHI ’24, May 11–16, 2024, Honolulu, HI, USA
+
+
+                                              Target group                     Control group                                                    Target group                           Control group
+
+
+                             1.0                                                                                               1.0
+
+
+                                                                                                                               0.5
+                             0.5
+                                                                                                                               0.0
+     Difficulty              0.0                                                                          Difficulty
+                                                                                                                               0.5
+
+                             0.5
+                                                                                                                               1.0
+
+
+                             1.0                                                                                               1.5
+
+                                   original      manual automatic   original      manual automatic                                   original      manual automatic          original     manual automatic
+                                               Text version                     Text version                                                     Text version                           Text version
+
+                                   (a) Comprehension question response accuracy.                                                                   (b) Perceived difficulty rating.
+
+
+                                              Target group                 Control group                                                        Target group                       Control group
+                                                                                                                               0.4
+                             0.2
+                                                                                                                               0.3
+
+                             0.1
+
+
+
+
+   Effect on response time                                                                           Effect on reading speed
+                                                                                                                               0.2
+
+                                                                                                                               0.1
+                             0.0
+                                                                                                                               0.0
+
+                             0.1
+                                                                                                                               0.1
+
+                                                                                                                               0.2
+                             0.2
+
+                                   original      manual automatic   original      manual automatic                                   original      manual automatic         original      manual automatic
+                                               Text version                     Text version                                                     Text version                           Text version
+
+                                      (c) Comprehension question response time.                                                                          (d) Reading speed.
+
+Figure 3: Posterior distributions of the text version parameters for the four measurements in the reading task. Points are
+medians, error bars are 80%, 90%, and 95% credible intervals (CI). A bracket with ▲ indicates that the 80% CI of the difference
+between the two parameters does not include zero (i.e., we are 80% confident that there is a difference). Similarly with ▲▲ for
+90% CI and ▲▲▲ for 95% CI.
+
+
+observations from the two groups of participants do not agree on                                           time it was displayed. We found that a small number of target
+the relative difficulty of the automatically simplified texts.                                             group participants had a stronger tendency towards skimming or
+                                                                                                           skipping, but most of them did not do so consistently, and reading
+4.2.4 Reading speed. In terms of reading times, the behavior of                                            speeds were not distributed bimodally, such that there was no obvi-
+the target group was much more variable and less predictable, as                                           ous threshold to discriminate between reading and skipping. The
+becomes obvious from Figure 3d. Some participants had implausible                                          slowest reading speeds (50 WPM and slower) were also observed
+reading speeds of up to thousands of words per minute, meaning                                             in the target group. Mean reading speeds were 203 WPM in the
+that many only skimmed or even skipped reading the text the first                                          target group and 168 WPM in the control group. For comparison, a
+
+<a id="pdf-p8"></a>
+### [PDF p.8] CHI ’24, May 11–16, 2024, Honolulu, HI, USA Säuberli et al.
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **8** / 11
+
+CHI ’24, May 11–16, 2024, Honolulu, HI, USA                                                                                         Säuberli et al.
+
+
+standardized assessment of reading speed reported a mean of 179          expect a larger effect in the perceived difficulty ratings compared
+WPM for native German speakers [58].                                     to the control group participants, who were mostly unfamiliar with
+   In the target group, the original texts tended to be read (or, more   simplified language.
+plausibly, skipped) more quickly than the two simplified versions           While previous work heavily relied on ratings for evaluating the
+(manual: CI80% = [0.04, 0.42], automatic: CI80% = [0.05, 0.43]),         comprehensibility of simplified texts (see Section 2.1), our results
+while in the control group, the automatic simplifications were read      show that this is not always sufficient, especially for readers with
+more slowly than the other two (original: CI95% = [0.02, 0.20],          intellectual disabilities. The results also revealed significant differ-
+manual: CI95% = [0.06, 0.24]).                                           ences in comprehensibility and perception between persons with
+                                                                         and without intellectual disabilities, highlighting the importance of
+5     DISCUSSION                                                         including the primary target groups in studies on text simplification
+The primary goal of this study was to investigate four different         and bridging the gap to insights from psycholinguistic research
+measurement methods, comparing them with regards to two dif-             (see Section 2.2).
+ferent text simplification methods and two different reader groups,         Although reading speed was mostly unsuccessful in discriminat-
+with the ultimate aim of improving methods for human evaluation          ing between text versions, it revealed important behavioral patterns
+                                                                         in the target group (skimming/skipping texts), which supports the
+of ATS. We will discuss these aspects mainly based on the results
+                                                                         interpretation of other results. Previous work has suggested that
+in Figure 3. The purpose of the cognitive tasks was to character-
+ize the participant groups to support the interpretation of results.     reading time is to be considered separately from comprehension
+Therefore, we will not discuss them in further detail here.              [61]. Our observations support this view, but our interpretation is
+                                                                         limited by our study design: Since the text was shown again after
+                                                                         the initial reading, participants were free to decide not to read the
+5.1     Comparison of measurement methods and                            entire text the first time around.
+        reader groups                                                       Overall, the fact that reading behavior can be measured through
+By design, there are several fundamental differences between the         a mobile application is a major advantage of using digital evaluation
+four measurement methods: Comprehension questions measure                tools such as the one described in this paper compared to paper-
+objective comprehension, while difficulty ratings measure subjec-        and-pencil assessment. Our work represents a first step towards
+tive perception. Measurements such as response time and reading          exploiting this advantage to make comprehensibility assessment
+speed can only serve as proxies for comprehension and require            more inclusive (see Section 2.3).
+specific assumptions about the behavior of participants. For any of
+these measurements to be considered suitable for evaluating text
+simplification, they need to be able to capture a difference between     5.2    Effect of automatic simplification
+less comprehensible and more comprehensible texts. Since the man-        We have seen that manual simplification resulted in noticeable dif-
+ually simplified texts were professionally edited by trained experts     ferences for most measures. By comparing the difficulty estimates in
+and according to guidelines developed and checked with target            the automatic simplification to the original and manual simplifica-
+readers, it is safe to assume that there should be some measurable       tion, we can evaluate the ATS output in terms of comprehensibility.
+difference in comprehensibility between original and manually sim-          Based on the target group measurements, automatic simplifica-
+plified texts. From this perspective, our results suggest that the       tion only had a modest effect. The largest improvement compared
+measurement of comprehension question response accuracy was              to the original texts was observed in the perceived difficulty ratings,
+most successful, and perceived difficulty ratings were least success-    which were generally less reliable with this group, as discussed
+ful with the target group. For the control group, all measurements       in Section 5.1. However, in terms of reading speed, ATS had the
+except reading speed were successful in differentiating between          same effect as manual simplification, which suggests that ATS was
+original and manually simplified texts.                                  somewhat successful in keeping up motivation to continue reading
+   There are two possible factors which may explain why ratings          for the target group. A possible explanation for this is that at the
+were less reliable than comprehension questions for the target           surface level, the texts looked more like the simplified texts the
+group: First, the target group was quite heterogeneous (as evi-          participants were familiar with.
+denced by the cognitive tasks), which led to larger differences in          In the control group, all measurements agreed that ATS outputs
+subjective judgments of texts, especially because we did not give        were equally difficult or more difficult than the original text. Apart
+more specific instructions to calibrate ratings in order to reduce       from lack of quality in the automatic simplifications, several factors
+cognitive load. Second, when readers lose motivation and stop read-      may have contributed to these results: First, as described in Section
+ing, which happened in the target group, rating responses may be         3.1, the comprehension questions were written and optimized for
+more random, whereas responses to comprehension questions will           the original and manually simplified texts. Although we removed
+reliably show a random-guessing accuracy. Both of these may be           responses to questions which were not answerable based on the
+arguments against using perceived difficulty ratings with the target     ATS output, the wording of the questions may still have made the
+group.                                                                   questions more difficult in the automatic simplification. Second, the
+   Familiarity is a confounding factor, because participants in the      control group may be more perceptive or sensitive to grammatical
+target group were mostly very familiar with the specific variety         and semantic errors in the text than the target group. Evidence
+of simplified language in the study, which may have biased their         for this are the control group’s higher difficulty ratings and lower
+perception of the texts. However, if this bias was strong, we would      reading speed for the automatically simplified texts.
+
+<a id="pdf-p9"></a>
+### [PDF p.9] Particularly the second factor requires further experimental re- Overall, we show that applying digital assessment methods for
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **9** / 11
+
+Digital Comprehensibility Assessment of Simplified Texts among Persons with Intellectual Disabilities                              CHI ’24, May 11–16, 2024, Honolulu, HI, USA
+
+
+   Particularly the second factor requires further experimental re-                            Overall, we show that applying digital assessment methods for
+search, as it could have a major influence on human evaluation of                          comprehensibility evaluation to persons with intellectual disabil-
+text simplification: If the linguistic fluency of ATS output only has                      ities is viable, and that combining subjective and objective com-
+a weak influence on comprehension in primary target groups of                              prehensibility assessment with behavioral measurements provides
+simplified texts, this should be accounted for when evaluating ATS                         valuable insights into the impact of text simplification.
+systems. In addition, different types of linguistic errors may have a
+different effect on reading behavior depending on the specific type                        ACKNOWLEDGMENTS
+of cognitive impairment of the reader [42].                                                We are greatly indebted to CFS GmbH (capito), in particular to
+   In the present work, we focused on the evaluation methodology                           Ursula Semlitsch, for recruiting and running the sessions with the
+as opposed to pinpointing specific problems in the ATS output.                             target group participants, and helping to translate the material into
+However, our findings on the comprehensibility of automatically                            simplified language. We would also like to thank Silke Gutermuth
+simplified texts are in line with current research showing that ATS                        for helpful feedback on the experiment design and the compre-
+systems are still quite limited in the effective gain of simplicity they                   hension questions. We thank the anonymous reviewers for their
+can achieve [49]. Recent experiments with large instruction-tuned                          constructive comments. This work was funded by the Swiss Inno-
+language models have already suggested significant improvements                            vation Agency (Innosuisse) Flagship IICT (PFFS-21-47).
+in this regard, and these models would likely outperform our models
+[28, 37]. It is all the more important that these improvements are
+                                                                                           REFERENCES
+evaluated with primary target reader groups in the future.
+                                                                                            [1] Aisha Al-Sulaimi and Hafedh Al-Shihi. 2017. The effects of reading mode (dig-
+                                                                                                ital vs printed text) on reading comprehension: A literature review of the key
+                                                                                                assessment factors. In 2017 6th International Conference on Information and Com-
+                                                                                                munication Technology and Accessibility (ICTA). 1–6. https://doi.org/10.1109/
+6    CONCLUSION                                                                                 ICTA.2017.8336053
+We conducted a study exploring different ways of measuring text                             [2] Suha S. Al-Thanyyan and Aqil M. Azmi. 2021. Automated Text Simplification:
+                                                                                                A Survey. ACM Comput. Surv. 54, 2, Article 43 (mar 2021), 36 pages. https:
+comprehensibility using a mobile application and investigating the                              //doi.org/10.1145/3442695
+effect of manual and automatic text simplification on comprehen-                            [3] Oliver Alonzo, Jessica Trussell, Becca Dingman, and Matt Huenerfauth. 2021.
+                                                                                                Comparison of Methods for Evaluating Complexity of Simplified Texts among
+sion, including participants with and without intellectual disabili-                            Deaf and Hard-of-Hearing Adults at Different Literacy Levels. In Proceedings of
+ties. The results revealed several types of differences which must                              the 2021 CHI Conference on Human Factors in Computing Systems. 1–12.
+be taken into account when designing human evaluation studies:                              [4] Fernando Alva-Manchego, Carolina Scarton, and Lucia Specia. 2020. Data-Driven
+                                                                                                Sentence Simplification: Survey and Benchmark. Computational Linguistics 46, 1
+                                                                                                (2020), 135–187. https://doi.org/10.1162/coli_a_00370
+                                                                                            [5] Fernando Alva-Manchego, Carolina Scarton, and Lucia Specia. 2021. The
+     • Differences between measurement methods: Comprehen-                                      (Un)Suitability of Automatic Evaluation Metrics for Text Simplification. Computa-
+       sion questions, difficulty ratings, and behavioral measure-                              tional Linguistics 47, 4 (Dec. 2021), 861–889. https://doi.org/10.1162/coli_a_00418
+       ments can lead to different conclusions and complement                               [6] Rasoul Amini Vishteh, Ali Mirzajani, Ebrahim Jafarzadehpour, and Samireh
+                                                                                                Darvishpour. 2019. Evaluation of simple visual reaction time of different colored
+       each other when combined.                                                                light stimuli in visually normal students. Clinical Optometry (2019), 167–171.
+     • Differences between manual and automatic simplifica-                                 [7] James A Arnett and Seth S Labovitz. 1995. Effect of physical layout in performance
+       tion: Issues in the ATS output may significantly impair objec-                           of the Trail Making Test. Psychological Assessment 7, 2 (1995), 220.
+                                                                                            [8] Bettina M. Bock. 2014. “Leichte Sprache”: Abgrenzung, Beschreibung und Problem-
+       tive comprehension without affecting subjective perception                               stellungen aus Sicht der Linguistik. Frank & Timme, Berlin, 17–51.
+       (especially in the target group), whereas manually simplified                        [9] Bettina M. Bock and Daisy Lange. 2017. Empirische Untersuchungen zu Satz- und
+                                                                                                Textverstehen bei Menschen mit geistiger Behinderung und funktionalen Analpha-
+       texts lead to more predictable results across measurement                                beten. Frank & Timme, Berlin, 253–274.
+       methods.                                                                            [10] Melinda Braun, Matthias Wölfel, Gregor Renner, and Christian Menschik. 2020.
+     • Differences between reader groups: Results from persons                                  Accessibility of Different Natural User Interfaces for People with Intellectual
+                                                                                                Disabilities. In 2020 International Conference on Cyberworlds (CW). 211–218. https:
+       with intellectual disabilities can be different from (or even in                         //doi.org/10.1109/CW49994.2020.00041
+       contradiction to) those of persons without disabilities, partic-                    [11] Capito. 2023. Easy Language: What is it and why is it important? https:
+       ularly in terms of reading behavior and subjective perception                            //capito.eu/en/easy-language/ Accessed: 2023-12-07.
+                                                                                           [12] Bob Carpenter, Andrew Gelman, Matthew D. Hoffman, Daniel Lee, Ben Goodrich,
+       of difficulty.                                                                           Michael Betancourt, Marcus Brubaker, Jiqiang Guo, Peter Li, and Allen Riddell.
+                                                                                                2017. Stan: A Probabilistic Programming Language. Journal of Statistical Software
+                                                                                                76, 1 (2017), 1–32. https://doi.org/10.18637/jss.v076.i01
+   We consider measuring interactions of users reading on touch-                           [13] Dar-Wei Chen and Richard Catrambone. 2015.                   Paper vs. Screen: Ef-
+screen devices to be a promising approach, especially for assessing                             fects on Reading Comprehension, Metacognition, and Reader Behavior.
+                                                                                                Proceedings of the Human Factors and Ergonomics Society Annual Meet-
+comprehensibility with diverse target groups, as traditional tests                              ing 59, 1 (2015), 332–336.               https://doi.org/10.1177/1541931215591069
+based on comprehension questions can be cognitively demanding.                                  arXiv:https://doi.org/10.1177/1541931215591069
+Another advantage is that this approach allows assessing reading                           [14] Council of Europe. 2020. Common European framework of reference for languages:
+                                                                                                Learning, teaching, assessment. Companion volume. Council of Europe Publishing,
+behavior in a more natural environment. However, further research                               Strasbourg.
+is still required on other aspects of human-computer interaction,                          [15] Scott A Crossley, Hae Sung Yang, and Danielle S McNamara. 2014. What’s so
+                                                                                                Simple about Simplified Texts? A Computational and Psycholinguistic Investiga-
+e.g., regarding the exact relationship between user interactions and                            tion of Text Comprehension and Text Processing. Reading in a Foreign Language
+text comprehension, the ways in which interactions differ between                               26, 1 (2014), 92–113.
+persons with and without intellectual disabilities, and how they can                       [16] Paul De Boeck, Marjan Bakker, Robert Zwitser, Michel Nivard, Abe Hofman,
+                                                                                                Francis Tuerlinckx, and Ivailo Partchev. 2011. The Estimation of Item Response
+be used to design more reliable and accessible comprehensibility                                Models with the lmer Function from the lme4 Package in R. Journal of Statistical
+assessments with diverse user groups.                                                           Software 39, 12 (2011), 1–28. https://doi.org/10.18637/jss.v039.i12
+
+<a id="pdf-p10"></a>
+### [PDF p.10] CHI ’24, May 11–16, 2024, Honolulu, HI, USA Säuberli et al.
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **10** / 11
+
+CHI ’24, May 11–16, 2024, Honolulu, HI, USA                                                                                                                           Säuberli et al.
+
+
+[17] Mary Dyson and Mark Haselgrove. 2000. The effects of reading speed and                       Papers), Anna Rogers, Jordan Boyd-Graber, and Naoaki Okazaki (Eds.). Asso-
+     reading patterns on the understanding of text read from screen. Journal of                   ciation for Computational Linguistics, Toronto, Canada, 16383–16408. https:
+     Research in Reading 23, 2 (2000), 210–223. https://doi.org/10.1111/1467-9817.                //doi.org/10.18653/v1/2023.acl-long.905
+     00115 arXiv:https://onlinelibrary.wiley.com/doi/pdf/10.1111/1467-9817.00115             [38] Jonathan Mallinson, Rico Sennrich, and Mirella Lapata. 2020. Zero-Shot Crosslin-
+[18] MARY C. DYSON and MARK HASELGROVE. 2001. The influence of reading                            gual Sentence Simplification. In Proceedings of the 2020 Conference on Empirical
+     speed and line length on the effectiveness of reading from screen. International             Methods in Natural Language Processing (EMNLP). Association for Computational
+     Journal of Human-Computer Studies 54, 4 (2001), 585–612. https://doi.org/10.                 Linguistics, Online, 5109–5126. https://doi.org/10.18653/v1/2020.emnlp-main.415
+     1006/ijhc.2001.0458                                                                     [39] Louis Martin, Angela Fan, Éric de la Clergerie, Antoine Bordes, and Benoît Sagot.
+[19] Inmaculada Fajardo, Vicenta Ávila, Antonio Ferrer, Gema Tavares, Marcos Gómez,               2022. MUSS: Multilingual Unsupervised Sentence Simplification by Mining
+     and Ana Hernández. 2014. Easy-to-read texts for students with intellectual                   Paraphrases. In Proceedings of the Thirteenth Language Resources and Evaluation
+     disability: linguistic factors affecting comprehension. Journal of applied research          Conference. European Language Resources Association, Marseille, France, 1651–
+     in intellectual disabilities 27, 3 (2014), 212–225.                                          1664. https://aclanthology.org/2022.lrec-1.176
+[20] Jean-Paul Fox. 2010. Bayesian Item Response Modeling: Theory and Applications.          [40] Susana Menéndez Álvarez-Dardet, Bárbara Lorence Lara, and Javier Pérez-Padilla.
+     Springer New York, New York, NY. https://doi.org/10.1007/978-1-4419-0742-4                   2020. Older adults and ICT adoption: Analysis of the use and attitudes toward
+[21] Furong Gao and Lisue Chen. 2005. Bayesian or Non-Bayesian: A Comparison                      computers in elderly Spanish people. Computers in Human Behavior 110 (2020),
+     Study of Item Parameter Estimation in the Three-Parameter Logistic Model.                    106377. https://doi.org/10.1016/j.chb.2020.106377
+     Applied Measurement in Education 18, 4 (oct 2005), 351–380. https://doi.org/10.         [41] David E. Meyer and Roger W. Schvaneveldt. 1971. Facilitation in recognizing
+     1207/s15324818ame1804_2                                                                      pairs of words: Evidence of a dependence between retrieval operations. Journal
+[22] Sian Gooding. 2022. On the Ethical Considerations of Text Simplification. In                 of Experimental Psychology 90, 2 (Oct. 1971), 227–234. https://doi.org/10.1037/
+     Ninth Workshop on Speech and Language Processing for Assistive Technologies                  h0031564
+     (SLPAT-2022). Association for Computational Linguistics, Dublin, Ireland, 50–57.        [42] Martina Micai, Mila Vulchanova, and David Saldaña. 2019. Do Individuals with
+     https://doi.org/10.18653/v1/2022.slpat-1.7                                                   Autism Change Their Reading Behavior to Adapt to Errors in the Text? Journal
+[23] Sian Gooding, Yevgeni Berzak, Tony Mak, and Matt Sharifi. 2021. Predicting                   of Autism and Developmental Disorders 49, 10 (July 2019), 4232–4243. https:
+     Text Readability from Scrolling Interactions. In Proceedings of the 25th Conference          //doi.org/10.1007/s10803-019-04108-8
+     on Computational Natural Language Learning. Association for Computational               [43] Sandra Pappert and Bettina M Bock. 2019. Easy-to-read German put to the
+     Linguistics, Online, 380–390. https://doi.org/10.18653/v1/2021.conll-1.30                    test: Do adults with intellectual disability or functional illiteracy benefit from
+[24] Sian Gooding, Ekaterina Kochmar, Seid Muhie Yimam, and Chris Biemann. 2021.                  compound segmentation? Reading and Writing (2019), 1–27.
+     Word Complexity is in the Eye of the Beholder. In Proceedings of the 2021 Confer-       [44] Camilla Ramsten, Lene Karine Martin, Munir Dag, and Lena Marmstål Ham-
+     ence of the North American Chapter of the Association for Computational Linguis-             mar. 2018. Information and communication technology use in daily life among
+     tics: Human Language Technologies. Association for Computational Linguistics,                young adults with mild-to-moderate intellectual disability. Journal of Intellectual
+     Online, 4439–4449. https://doi.org/10.18653/v1/2021.naacl-main.351                           Disabilities 24 (2018), 289–308.
+[25] Matt Huenerfauth, Lijun Feng, and Noémie Elhadad. 2009. Comparing evaluation            [45] Ralph Reitan and Deborah Wolfson. 1993. The Halstead-Reitan neuropsychological
+     techniques for text readability software for adults with intellectual disabilities.          test battery: Theory and clinical interpretation. Neuropsychology Press.
+     In Proceedings of the 11th international ACM SIGACCESS conference on Computers          [46] Luz Rello, Ricardo Baeza-Yates, Stefan Bott, and Horacio Saggion. 2013. Simplify
+     and accessibility. 3–10.                                                                     or help? Text simplification strategies for people with dyslexia. In Proceedings of
+[26] Verena Johann, Tanja Könen, and Julia Karbach. 2020. The unique contribution                 the 10th International Cross-Disciplinary Conference on Web Accessibility. 1–10.
+     of working memory, inhibition, cognitive flexibility, and intelligence to reading       [47] Allen Riddell, Ari Hartikainen, and Matthew Carter. 2021. pystan. PyPI.
+     comprehension and reading speed. Child Neuropsychology 26, 3 (2020), 324–344.           [48] Annette Rios, Nicolas Spring, Tannon Kew, Marek Kostrzewa, Andreas Säuberli,
+     https://doi.org/10.1080/09297049.2019.1649381 PMID: 31380706.                                Mathias Müller, and Sarah Ebling. 2021. A New Dataset and Efficient Baselines
+[27] FW Jones, K Long, and WML Finlay. 2006. Assessing the reading comprehension                  for Document-level Text Simplification in German. In Proceedings of the Third
+     of adults with learning disabilities. Journal of Intellectual Disability Research 50,        Workshop on New Frontiers in Summarization. Association for Computational
+     6 (2006), 410–418.                                                                           Linguistics, Online and in Dominican Republic, 152–161. https://doi.org/10.
+[28] Tannon Kew, Alison Chi, Laura Vásquez-Rodríguez, Sweta Agrawal, Den-                         18653/v1/2021.newsum-1.16
+     nis Aumiller, Fernando Alva-Manchego, and Matthew Shardlow. 2023.                       [49] Michael Ryan, Tarek Naous, and Wei Xu. 2023. Revisiting non-English Text
+     BLESS: Benchmarking Large Language Models on Sentence Simplification.                        Simplification: A Unified Multilingual Benchmark. In Proceedings of the 61st
+     arXiv:2310.15773 [cs.CL]                                                                     Annual Meeting of the Association for Computational Linguistics (Volume 1: Long
+[29] Hak Joon Kim and Joan Kim. 2013. Reading from an LCD monitor versus paper:                   Papers). Association for Computational Linguistics, Toronto, Canada, 4898–4927.
+     Teenagers’ reading performance. International Journal of Research Studies in                 https://doi.org/10.18653/v1/2023.acl-long.269
+     Educational Technology 2, 1 (April 2013). https://doi.org/10.5861/ijrset.2012.170       [50] Horacio Saggion, Sanja Štajner, Stefan Bott, Simon Mille, Luz Rello, and Biljana
+[30] Yiren Kong, Young Sik Seo, and Ling Zhai. 2018. Comparison of reading perfor-                Drndarevic. 2015. Making It Simplext: Implementation and Evaluation of a Text
+     mance on screen and on paper: A meta-analysis. Computers & Education 123                     Simplification System for Spanish. ACM Trans. Access. Comput. 6, 4, Article 14
+     (2018), 138–149.                                                                             (may 2015), 36 pages. https://doi.org/10.1145/2738046
+[31] Ravin Kumar, Colin Carroll, Ari Hartikainen, and Osvaldo Martin. 2019. ArviZ a          [51] Meredith Saletta and Jennifer Winberg. 2019. Leveled Texts for Adults With
+     unified library for exploratory analysis of Bayesian models in Python. Journal of            Intellectual or Developmental Disabilities: A Pilot Study. Focus on Autism and
+     Open Source Software 4, 33 (2019), 1143. https://doi.org/10.21105/joss.01143                 Other Developmental Disabilities 34, 2 (2019), 118–127. https://doi.org/10.1177/
+[32] Philippe Laban, Tobias Schnabel, Paul Bennett, and Marti A. Hearst. 2021. Keep               1088357618803332 arXiv:https://doi.org/10.1177/1088357618803332
+     It Simple: Unsupervised Simplification of Multi-Paragraph Text. In Proceedings          [52] Fumiko Samejima. 1997. Graded Response Model. Springer New York, New York,
+     of the 59th Annual Meeting of the Association for Computational Linguistics and              NY, 85–100. https://doi.org/10.1007/978-1-4757-2691-6_5
+     the 11th International Joint Conference on Natural Language Processing (Volume          [53] Laura Schiffl. 2020. Hierarchies in Lexical Complexity: Do Effects of Word
+     1: Long Papers). Association for Computational Linguistics, Online, 6365–6378.               Frequency, Word Length and Repetition Exist for the Visual Word Processing of
+     https://doi.org/10.18653/v1/2021.acl-long.498                                                People with Cognitive Impairments? In Easy Language Research: Text and User
+[33] Gondy Leroy, James E Endicott, David Kauchak, Obay Mouradi, and Melissa Just.                Perspectives, Silvia Hansen-Schirra and Christiane Maaß (Eds.). Frank & Timme
+     2013. User evaluation of the effects of a text simplification algorithm using term           GmbH, 227–239.
+     familiarity on perception, understanding, learning, and information retention.          [54] Sanja Štajner and Sergiu Nisioi. 2018. A Detailed Evaluation of Neural Sequence-
+     Journal of medical Internet research 15, 7 (2013), e144.                                     to-Sequence Models for In-domain and Cross-domain Text Simplification. In Pro-
+[34] John Michael Linacre. 1989. Many-faceted Rasch measurement. Ph. D. Dissertation.             ceedings of the Eleventh International Conference on Language Resources and Eval-
+     The University of Chicago.                                                                   uation (LREC 2018). European Language Resources Association (ELRA), Miyazaki,
+[35] Yinhan Liu, Jiatao Gu, Naman Goyal, Xian Li, Sergey Edunov, Marjan Ghazvinine-               Japan. https://www.aclweb.org/anthology/L18-1479
+     jad, Mike Lewis, and Luke Zettlemoyer. 2020. Multilingual Denoising Pre-training        [55] Regina Stodden. 2021. When the Scale is Unclear - Analysis of the Interpretation
+     for Neural Machine Translation. Transactions of the Association for Computational            of Rating Scales in Human Evaluation of Text Simplification. In Proceedings of
+     L
+
+…[truncado en MD; ver RSL/MD/_raw]…
+
+<a id="pdf-p11"></a>
+### [PDF p.11] reading comprehension on paper and screen: A mode-effect study. Computers & the other parameters, the sum-to-zero constraint is achieved by
+- Locator: `R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf` · página **11** / 11
+
+Digital Comprehensibility Assessment of Simplified Texts among Persons with Intellectual Disabilities                     CHI ’24, May 11–16, 2024, Honolulu, HI, USA
+
+
+[56] Hildegunn Støle, Anne Mangen, and Knut Schwippert. 2020. Assessing children’s          adjacent threshold parameters, of which there are three. For all
+     reading comprehension on paper and screen: A mode-effect study. Computers &            the other parameters, the sum-to-zero constraint is achieved by
+     Education 151 (2020), 103861. https://doi.org/10.1016/j.compedu.2020.103861
+[57] Andreas Säuberli, Silvia Hansen-Schirra, Franz Holzknecht, Silke Gutermuth, Sil-       dividing by the mean. For implementation details, refer to the Stan
+     vana Deilen, Laura Schiffl, and Sarah Ebling. 2023. Enabling text comprehensibil-      code in the supplementary material.
+     ity assessment for people with intellectual disabilities using a mobile application.
+     Frontiers in Communication 8 (2023). https://doi.org/10.3389/fcomm.2023.1175625
+[58] Susanne Trauzettel-Klosinski, Klaus Dietz, and the IReST Study Group. 2012.
+     Standardized Assessment of Reading Performance: The New International Read-
+     ing Speed Texts IReST. Investigative Ophthalmology & Visual Science 53, 9 (08
+     2012), 5452–5461. https://doi.org/10.1167/iovs.11-8284
+[59] Wim J Van der Linden, David J Scrams, and Deborah L Schnipke. 1999. Using
+     response-time constraints to control for differential speededness in computerized
+     adaptive testing. Applied psychological measurement 23, 3 (1999), 195–210.
+[60] Sanja Štajner. 2021. Automatic text simplification for social good: Progress and
+     challenges. In Findings of the Association for Computational Linguistics: ACL-
+     IJCNLP 2021. Association for Computational Linguistics, Online, 2637–2652.
+     https://doi.org/10.18653/v1/2021.findings-acl.233
+[61] Sebastian Wallot, Beth A. O’Brien, Anna Haussmann, Heidi Kloos, and Marlene S.
+     Lyby. 2014. The role of reading time complexity and reading speed in text
+     comprehension. Journal of Experimental Psychology: Learning, Memory, and
+     Cognition 40, 6 (2014), 1745–1765. https://doi.org/10.1037/xlm0000030
+[62] David Wechsler. 2003. Wechsler Intelligence Scale for Children, Fourth Edition.
+     https://doi.org/10.1037/t15174-000
+[63] Hyesun You. 2022. Bayesian Versus Frequentist Estimation for Item Response
+     Theory Models of Interdisciplinary Science Assessment. Interdisciplinary Journal
+     of Environmental and Science Education 18, 4 (jul 2022), e2297. https://doi.org/10.
+     21601/ijese/12299
+
+
+A     PRIORS FOR MODEL PARAMETERS
+
+ Measurement                           Parameter               Prior distribution
+ Comprehension question                𝜇∈R                     N (0, 1)
+ accuracy                              𝛼 ∈ R16                 N (0, 1)
+                                       𝛽 ∈ R48                 N (0, 1)
+                                       𝛿 ∈ R3                  N (0, 1)
+ Perceived difficulty                  𝜇∈R                     N (0, 1)
+ ratings                               𝛼 ∈ R16                 N (0, 1)
+                                       𝛾 ∈ R12                 N (0, 1)
+                                       𝛿 ∈ R3                  N (0, 1)
+                                       𝑐𝑘 − 𝑐𝑘 −1 ∈ R3         N (0, 1)
+ Response time                         𝜇∈R                     N (0, 5)
+                                       𝜎∈R                     Γ(1, 5)
+                                       𝛼 ∈ R16                 N (0, 5)
+                                       𝛽 ∈ R48                 N (0, 5)
+                                       𝛿 ∈ R3                  N (0, 5)
+ Reading speed                         𝜇∈R                     N (0, 5)
+                                       𝜎∈R                     Γ(1, 5)
+                                       𝛼 ∈ R16                 N (0, 5)
+                                       𝛾 ∈ R12                 N (0, 5)
+                                       𝛿 ∈ R3                  N (0, 5)
+Table 2: Overview of the prior distributions used for the
+Bayesian models
+
+
+
+   Table 2 shows the prior distributions we chose for all model
+parameters.
+   Note about 𝑐𝑘 : For five rating categories, there are four threshold
+parameters in the graded response model. They need to be in as-
+cending order and sum to zero. Therefore, instead of sampling the
+threshold parameters directly, we sample the differences between

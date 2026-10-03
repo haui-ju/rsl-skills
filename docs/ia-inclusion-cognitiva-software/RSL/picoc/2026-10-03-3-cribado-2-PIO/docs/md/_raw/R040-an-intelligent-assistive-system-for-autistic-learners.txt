@@ -1,0 +1,1306 @@
+===== PDF PAGE 1 / 22 =====
+Engineering Reports
+
+
+
+
+    RESEARCH ARTICLE                                  OPEN ACCESS
+
+
+
+
+An Intelligent Assistive System for Autistic Learners
+Sadia Afrin1               | Afrin Ahmed1 | Mehrin Anannya1 | Samrat Kumar Dey2, 3                                                          | Md. Moshiur Rahman3 | Rashed Mazumder1
+1
+Institute of Information Technology, Jahangirnagar University, Savar, Bangladesh | 2 MU Institute for Data Science and Informatics, University of
+Missouri-Columbia, Columbia, Missouri, USA | 3 School of Science and Technology, Bangladesh Open University, Gazipur, Bangladesh
+
+
+Correspondence: Sadia Afrin (sadiaafrinrimpa6@gmail.com)
+
+Received: 7 April 2025 | Revised: 6 October 2025 | Accepted: 8 October 2025
+
+Funding: This research work is partially funded by the Information and Communication Technology (ICT) Division, Ministry of Posts, Telecommunications,
+and Information Technology, People’s Republic of Bangladesh with Grant number: 1280101-120008431-3631107.
+
+Keywords: assistive technology | autism | eye-tracking | gaze-based access control | smart board | virtual keyboard
+
+
+
+    ABSTRACT
+    This study presents the design and implementation of an educational assistive system tailored for individuals with Autism Spec-
+    trum Disorder (ASD), leveraging eye-tracking technology and machine learning algorithms. The objective is to support commu-
+    nication and learning experiences through ocular gaze and fixation-based keyboard selection. An existing collection of scanpath
+    images obtained from 15 children with ASD was utilized, and a customized heterogeneous dataset was developed by extracting
+    fixation and gaze-related features using machine learning-based processing techniques. In total, 320 scanpath images were ana-
+    lyzed to capture fixation points and gaze directions during left–right and up–down navigation tasks. Based on fixation metrics
+    and Area of Interest (AOI) analysis, a novel keyboard selection method was proposed, distinct from traditional digital keyboards.
+    The system was evaluated using an optimized ensemble algorithm, achieving an accuracy of 83.44%, with macro-averaged F1, pre-
+    cision, and recall of 80.43%, 81.43%, and 80.57%, respectively, outperforming the baseline models. The results indicate the system’s
+    potential to improve communication efficiency and usability, suggesting its suitability for facilitating hands-free keyboard control.
+    This assistive system is intended to support interaction with parents, teachers, and caregivers, which may help promote social
+    engagement for individuals with ASD. Overall, this research demonstrates the promise of integrating eye-tracking and machine
+    learning in educational tools, while contributing a customized dataset and a novel selection method to support neurodiverse learn-
+    ers. The associated code, AOI layout files, and a sample of the derived dataset regarding this study are publicly available to enable
+    independent replication of the analysis. These materials can be accessed at https://github.com/AfrinSadi/AssistiveAI-Autism.git.
+
+
+
+1 |         Introduction                                                                                            of eye-tracking technology and machine learning into inter-
+                                                                                                                    active platforms, such as smart boards, offers an innovative
+Communication difficulties are among the most significant chal-                                                     and inclusive means of communication. However, despite their
+lenges faced by individuals with Autism Spectrum Disorder                                                           potential, existing systems often lack personalization, contextual
+(ASD). In particular, non-verbal or minimally verbal individuals                                                    relevance, and validation through functional communication
+often rely heavily on assistive technologies to engage with their                                                   metrics.
+surroundings. In Bangladesh, these technologies remain largely
+inaccessible or culturally misaligned, leading to significant bar-                                                  Assistive technologies are rapidly evolving to support individ-
+riers in educational and social integration. The integration                                                        uals with Autism Spectrum Disorder (ASD), particularly those
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+This is an open access article under the terms of the Creative Commons Attribution License, which permits use, distribution and reproduction in any medium, provided the
+original work is properly cited.
+© 2025 The Author(s). Engineering Reports published by John Wiley & Sons Ltd.
+
+Engineering Reports, 2025; 7:e70455                                                                                                                                                                                   1 of 22
+https://doi.org/10.1002/eng2.70455
+
+===== PDF PAGE 2 / 22 =====
+                                                                                                                                               25778196, 2025, 11, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/eng2.70455 by Cochrane Peru, Wiley Online Library on [03/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+with limited motor or verbal abilities. While traditional sys-        Assistive technologies for individuals with Autism Spectrum Dis-
+tems often rely on hand-based interaction, recent approaches          order (ASD), particularly those with limited speech or motor
+such as HoloGaze highlight the potential of eye-gaze in aug-          skills, have evolved significantly in recent years. Recent advance-
+mented environments for more natural communication. How-              ments in Computational Intelligence techniques for the early
+ever, in Bangladesh, the adoption of such technologies remains        diagnosis and monitoring of Autism Spectrum Disorder (ASD)
+limited due to accessibility challenges and cultural misalign-        have been reviewed by [8, 9], highlighting the use of machine
+ment, restricting educational and social inclusion for non-verbal     and deep learning across various input modalities, as well as the
+children. Moreover, most existing gaze-based systems lack             challenges faced and future research opportunities.
+personalization and contextual relevance, underscoring the
+need for culturally adaptive, inclusive solutions tailored to         Traditional augmentative and alternative communication (AAC)
+resource-constrained settings.                                        systems often require near-hand interactions, which can be
+                                                                      physically demanding for users with motor impairments. As a
+Autism Spectrum Disorder (ASD) is a complex neurodevelop-             response, eye-tracking technologies have gained attention for
+mental condition marked by a wide range of symptoms and               their non-intrusive and low-effort interaction capabilities. More
+behaviors that vary across individuals. Common traits include         recently, researchers have begun integrating these systems with
+challenges in social interaction, difficulties in communication,      Augmented Reality (AR) platforms to enhance communica-
+and the presence of repetitive behaviors and sensory sensitivi-       tion and engagement. AR-based solutions, when combined with
+ties [1, 2]. Individuals with ASD often struggle to maintain eye      eye-gaze tracking, offer the potential to bypass motor limitations,
+contact, interpret social cues, or engage in reciprocal commu-        enabling more accessible and intuitive interfaces for nonspeaking
+nication. Additionally, co-occurring conditions such as epilepsy,     users. This paradigm shift signifies a growing interest in multi-
+mood disorders, and gastrointestinal issues may further compli-       modal and inclusive technologies aimed at addressing the diverse
+cate management.                                                      needs of individuals with ASD [10].
+
+Diagnosis typically involves behavioral assessments such as           Although recent advances have introduced innovative assis-
+the Autism Diagnostic Observation Schedule (ADOS) and the             tive tools for ASD, many remain inaccessible, unvalidated, or
+Autism Diagnostic Interview-Revised (ADI-R), both of which            poorly suited to users in Bangladesh. Eye-tracking technolo-
+align with the criteria outlined in the Diagnostic and Statisti-      gies, in particular, are rarely adapted to the linguistic and cog-
+cal Manual of Mental Disorders, Fifth Edition (DSM-5) [3, 4].         nitive needs of local users. Moreover, few studies use real gaze
+Early intervention, including approaches like Applied Behavior        data to validate whether these systems can accurately sup-
+Analysis (ABA), speech therapy, and occupational therapy, has         port functional tasks like character selection using machine
+proven effective in mitigating developmental delays and behav-        learning.
+ioral challenges [5]. Educational support tools, such as Individ-
+ualized Education Plans (IEPs), are also employed to promote          This research addresses these gaps by developing a culturally
+academic achievement and social development [6, 7].                   adapted, eye-gaze-based assistive communication system tailored
+                                                                      for individuals with ASD in Bangladesh. A customized dataset
+Advancements in technology have introduced a range of assistive       was constructed from real user data through scanpath image
+tools, from low-tech communication boards to sophisticated dig-       analysis and machine learning techniques, representing a key
+ital platforms and mobile applications. These tools offer support     contribution of this work. A novel fixation and Area of Interest
+in communication, daily routines, and social skills development.      (AOI) based keyboard selection method was proposed and eval-
+However, many of these technologies suffer from limitations such      uated with an optimized ensemble algorithm, showing higher
+as inadequate sample sizes in validation studies, bias in data col-   performance compared to baseline approaches. This study pro-
+lection, and insufficient analysis of key behavioral markers like     vides a data-driven reference to advance inclusive educational
+joint attention and gaze behavior.                                    technologies for neurodiverse learners in underrepresented
+                                                                      communities.
+Machine learning-based ASD detection systems have gained
+increasing attention due to their ability to support early and
+accurate diagnosis. In this context, [8, 9] have proposed a           2 |    Related Work
+scenario-based questionnaire derived from established ASD
+symptoms to systematically capture behavioral traits. The             This section examines previous studies to provide a detailed
+researchers have collected a dataset of 71 responses, including       assessment of advancements in assistive technologies for ASD
+both neurotypical individuals and those clinically diagnosed with     and evaluates the proposed algorithm’s performance compared
+ASD, and have conducted correlation analysis and principal com-       to existing approaches.
+ponent analysis (PCA) to identify the most significant features.
+They have applied four machine learning classifiers—Support
+Vector Machine (SVM), K-Nearest Neighbors (KNN), Random               2.1 | Overview of Assistive Technologies
+Forest (RF), and a custom Artificial Neural Network (ANN)—to          for ASD
+classify ASD and its subtypes. Among these, the ANN algorithm
+has achieved the highest accuracy of 89.8%. The study has             Recent years have seen significant advancements in the develop-
+demonstrated the effectiveness of machine learning in iden-           ment of assistive technologies tailored to individuals with ASD,
+tifying distinct symptom patterns and supporting diagnostic           particularly in the fields of eye-tracking, artificial intelligence,
+decisions.                                                            robotics, and immersive virtual environments.
+
+
+2 of 22                                                                                                            Engineering Reports, 2025
+
+===== PDF PAGE 3 / 22 =====
+                                                                                                                                             25778196, 2025, 11, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/eng2.70455 by Cochrane Peru, Wiley Online Library on [03/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+Eye-tracking systems such as the Tobii Eye Tracker 4C and SR            dynamic key prediction dwell time reduction. Though effective,
+Research EyeLink 1000 have been widely used in autism research          these studies have primarily targeted general SSMI users and
+to study gaze behavior and joint attention [11]. Tools like Tobii       have not considered the unique gaze behaviors and attention span
+Studio have facilitated the detection of fixations and saccades,        patterns associated with ASD [20].
+enabling researchers to measure response accuracy and latency in
+children with ASD. These systems have provided critical insights        Wearable technologies have also gained traction in this domain.
+into social cognition and have been frequently employed in both         For example, facial expression recognition glasses provide
+diagnostic and intervention contexts.                                   real-time feedback to assist in interpreting social cues, while
+                                                                        heartbeat sensors track physiological signals to infer emotional
+AI-based solutions have also been instrumental in automating            states [21]. These insights enable the customization of emo-
+diagnostic processes and personalizing interventions. Machine           tional and behavioral interventions. Although the integration of
+learning algorithms have been introduced that integrate with            eye-tracking, machine-learning, and other assistive technologies
+clinical data to support early diagnosis in primary care settings       has shown promise, current systems rarely incorporate real-time,
+[12]. Similarly, the use of digital tools to evaluate social communi-   gaze-controlled virtual keyboards for non-verbal communica-
+cation by analyzing gaze patterns and facial expressions has been       tion. Moreover, the need for localized, culturally sensitive solu-
+highlighted [13].                                                       tions remains largely unaddressed. In addition to technological
+                                                                        innovations, recent discourse analysis of Facebook status updates
+Mobile applications equipped with eye-tracking capabilities have        during COVID-19 highlighted how online speech acts particu-
+shown promise in early interventions. For instance, An Android          larly expressive forms—reflect identity construction, sociocul-
+application offering customizable social feedback has been devel-       tural behavior, and coping strategies [22]. Such findings under-
+oped to enhance joint attention skills, enabling caregivers to tailor   score the role of cultural and linguistic context in shaping com-
+the intervention according to individual needs [14].                    munication patterns, which is highly relevant when design-
+                                                                        ing assistive technologies for individuals with ASD in diverse
+Robotic systems have emerged as another promising avenue.               communities.
+Socially Assistive Robots (SARs) such as A-Lab Android ST,
+CommU, and Sota provide structured, interactive environments            Recent advancements in gaze-based interaction systems have
+that facilitate communication and social skills training [15].          incorporated deep learning techniques to enhance accuracy and
+These robots, by simulating lifelike interactions, have been            user experience. A notable study has developed a CNN-based face
+shown to improve user engagement and reduce stereotypical               detection model (ResNet34), replacing the traditional Haar Cas-
+behaviors [16].                                                         cade approach. This substitution has significantly improved sys-
+                                                                        tem robustness under varying lighting, head poses, and facial fea-
+Virtual Reality (VR) and Mixed Reality (MR) platforms have              tures. Researchers have employed geometric modeling and facial
+offered immersive experiences for skill development. MR systems         landmark detection to extract elliptical eye contours, allowing
+like Microsoft’s HoloLens 2 have tracked gaze and interaction pat-      more precise gaze estimation and blink detection. The system has
+terns to assess task engagement, making them valuable tools for         implemented a multi-stage virtual keyboard interface, segmented
+individualized assessments [17–19].                                     into four regions, enabling efficient character selection through
+                                                                        gaze direction and intentional blinks. To ensure reliable blink
+One notable direction in recent research has been the devel-            detection across diverse users, personalized Eye Aspect Ratio
+opment of eye-gaze-controlled systems tailored for users with           (EAR) thresholds have been calculated using baseline calibra-
+motor or speech limitations. For example, the system HoloGaze           tion. These individualized profiles have improved the accuracy
+has leveraged Microsoft HoloLens 2 to create an AR-based com-           of classifying voluntary and spontaneous blinks. Furthermore, a
+munication platform using gaze interaction. The system allows           user study involving 10 participants has demonstrated that the
+users to select virtual targets using either pure gaze fixation or a    integration of deep learning has increased interaction accuracy
+gaze-click mechanism (combining gaze and a button press). This          from 85.2% to 92.3%. Although CNNs have introduced higher
+setup has included calibration protocols, training sessions, and a      computational demands, optimizations such as model compres-
+virtual letter board designed for real-time communication. The          sion and OpenCV-based acceleration have maintained real-time
+study has involved 14 participants and has shown that gaze-click        performance at 30 FPS. This work has highlighted the advantages
+interaction is more effective and preferred by users, while also        of modern computer vision in overcoming the limitations of ear-
+highlighting calibration and usability challenges. Such efforts         lier handcrafted methods, underscoring the growing role of deep
+have demonstrated the feasibility of deploying gaze-driven com-         learning in assistive communication technologies [23].
+munication tools in immersive environments for nonspeaking
+autistic individuals [10]. The HoloGaze system, for instance, has       The Hide and Seek Virtual Reality System (HSVRS), to enhance
+explored an AR-based eye-gaze interface for nonspeaking users.          gaze fixation skills in children with Autism Spectrum Disor-
+While promising, such systems have remained technologically             der (ASD) system has incorporated avatar customization using
+intensive and less accessible in low-income settings. Further-          face and voice manipulation technologies, enabling the avatars
+more, gaze-only interaction has often led to fatigue and usability      to resemble familiar individuals such as parents. A pilot study
+issues, which must be addressed through interface adaptation.           involving 24 children has been conducted to evaluate the sys-
+Prior work has investigated the development of optimized vir-           tem’s efficacy. The study has revealed that children in the
+tual keyboards that adapt to users’ gaze patterns. One such study       avatar-customized group have demonstrated significantly bet-
+has proposed a gaze-based English keyboard that uses a genetic          ter gaze fixation and game performance compared to those in
+algorithm for static layout optimization and a Markov model for         the non-customized group. The system has included modules
+
+
+Engineering Reports, 2025                                                                                                          3 of 22
+
+===== PDF PAGE 4 / 22 =====
+                                                                                                                                                     25778196, 2025, 11, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/eng2.70455 by Cochrane Peru, Wiley Online Library on [03/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+for eye tracking, data logging, and adaptive prompting to sup-        the screen. The dense regions indicate areas of high visual atten-
+port individualized learning. Subjective parental feedback and        tion, while more sparse regions suggest rapid transitions (sac-
+objective eye-tracking data have confirmed the positive impact        cades) between fixations.
+of the intervention. Analysis of gaze fixation across predefined
+regions of interest (face, body, background) has shown signifi-
+cantly higher attention to the face region in the customized avatar   3.2 | Area of Interest
+group. These findings have indicated that deep learning-based
+customization in VR games can effectively promote eye contact         AOI, or Area of Interest in Figure 3, refers to a specific region
+and social engagement in autistic children. However, the study        or location within an image or visual field that is of particular
+has acknowledged limitations, including small sample size and         interest or relevance for analysis or observation.
+short duration, suggesting the need for extended longitudinal
+research [24].                                                        When calculating the Euclidean distance using Equation (1)
+                                                                      between two points, the AOI would be the specific coordinates
+                                                                      of those points on a 2D plane.
+2.2 | Summary of Previous Studies on Assistive                                                  √
+                                                                                                    (          )𝟐    (        )𝟐
+Technologies                                                                         𝒅(𝒖,𝒗) =        𝒖𝒙 − 𝒗𝒙        + 𝒖𝒚 − 𝒗𝒚                 (1)
+
+Table 1 presents studies on assistive technologies for individuals    The Equation (1) represents the straight-line distance between
+with ASD that demonstrate significant advancements in engage-         the two points, without any turns or bends. In this study each
+ment, communication, and social skills. Screen readers, adap-         key on the keyboard has specific 𝑋 and 𝑌 coordinates that define
+tive learning systems, and LEGO-based robotics have improved          its AOI. Analyzing the user’s eye gaze fixations within the AOI of
+cognitive abilities and academic performance. Eye-tracking sys-       each key can help determine the character they are most likely
+tems and gaze behavior analysis have highlighted differences          trying to select. In summary, the term AOI refers to the specific
+in participants with ASD and have enhanced communication              regions or areas within a visual field that are of interest for analy-
+through letter boards or virtual keyboards. Socially assistive        sis or observation, such as the coordinates of points in a 2D space
+robots and 3D graphical algorithms have proven effective in           or the locations of keys on a keyboard.
+fostering social skills, despite concerns about cost and fragility.
+Emotion-recognition approaches that use CNN algorithms and
+tools such as HoloLens 2 have shown promising results in under-       3.3 | Keyboard Used for Mapping
+standing and supporting ASD-related challenges, achieving accu-
+racies of up to 81.81%. These studies have underscored the poten-     Figure 4 illustrates the use of the QWERTY keyboard layout
+tial of innovative tools to address the unique needs of individuals   with coordinates to analyze the user’s eye-gaze fixations. The
+with ASD.                                                             QWERTY layout is a standard keyboard arrangement that is
+                                                                      widely used in computers and other electronic devices.
+
+3   | Methods                                                         For better results, assume that the screen size is 1920 * 1080. Each
+                                                                      key size is 50 * 50 except the space button has a size of 100 * 50.
+Autism Spectrum Disorder (ASD) often poses communica-
+tion challenges, particularly for individuals with limited fine
+motor skills, making traditional writing and typing difficult.        3.4 | Dataset Pre-Processing
+This research introduces an innovative assistive system using
+eye-tracking technology for hands-free keyboard control. By           The pre-processing phase of any machine learning work is cru-
+enabling character selection without manual input, the system         cial to ensure the quality and consistency of the data used for
+aims to enhance communication and supports parents, teachers,         modeling. This section outlines the detailed steps undertaken
+and caregivers, offering a valuable tool for education and speech     to pre-process and normalize a dataset consisting of 320 rows
+therapy for autistic individuals.                                     and 64 columns. The dataset primarily comprises fixation coor-
+                                                                      dinates derived from eye-tracking data, which are integral to
+                                                                      building predictive algorithms. After pre-processing, including
+3.1 |     Gaze Points                                                 the removal of duplicate entries, the dataset was refined to 308
+                                                                      rows while maintaining 64 columns.
+A gaze point represents the exact location on a screen where a
+person is looking at a given moment. It is typically measured in
+(𝑥, 𝑦) pixel coordinates.                                             3.4.1   | Checking for Missing Values
+
+Figures 1 and 2 represent detected gaze points, showing where a       Missing data can negatively impact algorithm performance, lead-
+subject looked during the experiment. The blue points indicate        ing to biased or inaccurate results. Therefore, identifying and
+raw gaze locations captured over time, while the red points likely    addressing missing values is a crucial step in pre-processing to
+represent fixations, where the eye remained stable for a threshold    ensure data completeness and confirm that no further impu-
+period. The curved structure of the points suggests a structured      tation or data removal is required. The analysis indicated that
+movement pattern, possibly as the subject followed an object on       the dataset contains no missing values, with all columns and
+
+
+4 of 22                                                                                                                  Engineering Reports, 2025
+
+===== PDF PAGE 5 / 22 =====
+                               TABLE 1   |   Summary of Recent Research Work.
+
+                                Methodology                                                                                     Assistive technology                                                     Dataset                                                       Result                                    Reference(s)
+                                Mixed approach: surveys, interviews, and technical                                             Screen readers, speech                                                     Diverse                                     Showed improvements in                                              [11]
+                                assessments                                                                                  recognition software, and                                                                                                engagement and academic
+   Engineering Reports, 2025
+                                                                                                                            text-to-speech applications                                                                                                     performance
+                                Measured the heart rate, classifies the emotional                                             Heartbeat sensor, Mobile                                            20 autistic child                                                     99.8%                                             [21]
+                                state, and communicated the results to guardians, 3D                                          application, 3D graphical
+                                graphical algorithms to help children improve their                                                  Algorithms
+                                social skills and eye contact
+                                Used a social skills training program involving                                              Multiple humanoid robots                                               14 individuals                                    All sociability index items                                         [15]
+                                multiple humanoid robots to help individuals                                                                                                                                                                                   improved
+                                with autism spectrum condition to improve their
+                                social skills
+                                Used a low-cost eye-tracking system with image                                                   Hands-free computer                                          Images recorded by a                                     Improved mouse cursor                                              [25]
+                                processing                                                                                       mouse control system                                              webcam                                            control for individuals with
+                                                                                                                                                                                                                                                          limited mobility
+                                Eye tracking study comparing gaze behavior in                                                                    NA                                                79 participants                                      Children with ASD                                                 [26]
+                                children with ASD and TD using human face and                                                                                                                                                                       exhibited differences in gaze
+                                classroom scene stimuli                                                                                                                                                                                              behavior compared to TD
+                                                                                                                                                                                                                                                              children
+                                SIT used to assess social interaction deficits in ASD                                                            SIT                                               80 participants                                                       73%                                              [13]
+                                Used a repeated measures design, alternating                                                   An adaptive learning                                                67 participants                                       Increased engagement,                                            [27]
+                                between adaptive and traditional learning systems.                                             system that employed                                                                                                         reduced boredom
+                                Multimodal sensors tracked emotional states, and                                              multi-modal sensor data                                                                                                         significantly
+                                multilevel modeling assessed effects on engagement                                              and ML algorithms
+                                and learning outcomes
+                                Employed a single case research design, combining                                             LEGO Mind storms EV3,                                                 8 participants                                              Positive impact                                           [28]
+                                quantitative analysis based on student assessment                                                   PvBOT
+                                scores and qualitative analysis based on interviews
+                                with special education teachers
+                                Focused on group discussions to explore                                                         NAO humanoid robot                                       Participants were recruited                                Participants showed interest                                          [29]
+                                expectations, concerns, and barriers related to the                                            developed by SoftBank                                      from Aspect Think Tank,                                    in using Socially assistive
+                                implementation of robots in education settings with                                            Robotics, MAX software                                    Aspect education staff, and                                robots for teaching, despite
+                                students on the autism spectrum                                                                 platform and mobile                                       Australian organizations                                   cost and fragility concerns
+                                                                                                                                     application
+                                16 personalized 15-min sessions for ASD participants                                          HoloLens 2headset, MR                                          Raw eye-tracking data                                                     81.81%                                             [17]
+                                using HoloLens 2 with eye-tracking, analyzing                                                device, ARRET toolkit and
+                                progress, fixation durations, and task execution times                                       R programming language
+                                                                                                                                                                                                                                                                                                                       (Continues)
+   5 of 22
+
+
+
+25778196, 2025, 11, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/eng2.70455 by Cochrane Peru, Wiley Online Library on [03/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+===== PDF PAGE 6 / 22 =====
+   6 of 22                     TABLE 1 |    (Continued)
+
+                                Methodology                                                                     Assistive technology                                                       Dataset                                                               Result                                          Reference(s)
+                                Proposed a transfer learning based CNN                                                       Sensors                                     Facial expression recognition                                     Inception ResNetV2 Architecture                                                [30]
+                                algorithm for emotion recognition from                                                                                                     datasets from Kaggle and                                         78.56%, Cross validation 76.70%
+                                facial images                                                                                                                                       CK + 48
+                                Used head mounted eye tracking to study                                      Participants used letter                                          9 nonspeaking autistic                                       Participants pointed to letters                                               [31]
+                                non-speaking autistic individuals using                                    boards with Assistance from                                              participants                                          quickly and accurately, suggesting
+                                letter boards, assessing their                                              an assistant who held the                                                                                                       they conveyed their thoughts
+                                communication process                                                                 board
+                                Developed a system that detects eye gaze                                                   A system                                                             NA                                                                  91%                                                   [32]
+                                and eye blinking to control a virtual
+                                keyboard. Used facial landmarks, HoG
+                                features, and a threshold-based method for
+                                detection
+                                A literature review of 13 studies focusing on                                 Socially Assistive Robots                                                         NA                                          SARs can have a positive impact                                               [16]
+                                the use of SARs in interventions for                                                   (SARs)                                                                                                                   on the social skills and
+                                children with ASD. The studies examined                                                                                                                                                                       communication abilities of
+                                the impact of SARs on various aspects of                                                                                                                                                                          children with ASD
+                                social skills in children with ASD, such
+                                as eye contact, verbal communication, play
+                                skills, stereotypical behavior, engagement,
+                                and positive affect
+                                The paper primarily reviewed and                                               AI-based Software as a                                                           NA                                                                  NA                                                    [12]
+                                discussed various AI-based approaches to                                    Medical Device designed to
+                                ASD diagnosis and treatment, highlighting                                   aid in the diagnosis of ASD
+                                innovative technologies and methods in                                        in primary care settings
+                                the field
+                                Review                                                                                          VR                                                              NA                                          Positive improvement in social                                                [33]
+                                                                                                                                                                                                                                          functioning, emotion recognition,
+                                                                                                                                                                                                                                              and speech or language in
+                                                                                                                                                                                                                                                 individuals with ASD
+                                Developed an Alexa-based skill called                                                       ASPECT                                                              NA                                                                  NA                                                    [34]
+                                ASPECT to measure the recognition of
+                                utterances by autistic children. Participants
+                                inter-acted with ASPECT during therapy
+                                sessions aimed at improving vocalizations
+                                and echoic responses.
+                                                                                                                                                                                                                                                                                                                       (Continues)
+   Engineering Reports, 2025
+
+
+
+
+25778196, 2025, 11, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/eng2.70455 by Cochrane Peru, Wiley Online Library on [03/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+===== PDF PAGE 7 / 22 =====
+                               TABLE 1   |   (Continued)
+   Engineering Reports, 2025
+
+                                Methodology                                                             Assistive technology                                                          Dataset                                                                 Result                                             Reference(s)
+                                A user-centered design approach,                                                    Squizzy                                         Data were collected through                                                      Positive Feedback                                                    [35]
+                                gathering requirements through                                                                                                     interviews with psychologists,
+                                interviews with psychologists,                                                                                                        therapists, and parents of
+                                therapists, and parents of children                                                                                                children with ASD from YCHI
+                                with ASD. The researchers                                                                                                          Autism Cen- ter. Ten children
+                                implemented the Scrum methodology                                                                                                     with ASD tested Squizzy
+                                during development                                                                                                                     during therapy sessions,
+                                                                                                                                                                    accompanied by therapists or
+                                                                                                                                                                               parents
+                                The ASDesign method, involves user                                   Visual tools like picture                                      Analysis of existing research,                                            Showed promising results                                                    [36]
+                                analysis, context analysis, and                                     exchange Communication                                         Interviews with professionals,
+                                defining needs through modules                                       systems (PECS), mobile                                       and a Questionnaire completed
+                                ASDT1, ASDT2, and ASDT3. It                                          applications and robots                                         by parents of children with
+                                focuses on understanding the basic                                                                                                               ASD
+                                needs of ASD children and their
+                                specific needs during confinement,
+                                translating them into functional
+                                requirements and design parameters
+                                for assistive technology
+                                A systematic literature review                                     VR glasses, virtual assistant,                                                  Not specific                                                          Review paper                                                     [18]
+                                conducted in three phases according                                 eye tracker, HMD, spatial
+                                to Kitchenham’s method. Research                                     audio, and Leap Motion
+                                questions were formulated, studies                                            device
+                                were selected based on
+                                inclusion/exclusion criteria, data
+                                extraction and synthesis were
+                                performed, and the results were
+                                analyzed to address the research
+                                questions
+
+
+
+
+   7 of 22
+
+
+
+25778196, 2025, 11, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/eng2.70455 by Cochrane Peru, Wiley Online Library on [03/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+===== PDF PAGE 8 / 22 =====
+                                                                                                                                             25778196, 2025, 11, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/eng2.70455 by Cochrane Peru, Wiley Online Library on [03/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+FIGURE 1       |   Detected gaze points 1.                           FIGURE 3    | Area of interest visualization for fixation and gaze
+                                                                     analysis.
+
+
+                                                                     coordinates in this context to improve algorithm interpretability
+                                                                     and compatibility.
+
+
+                                                                     3.4.3   | Final Clean-Up
+
+                                                                     During this phase, the dataset was refined further for modeling.
+                                                                     Non-essential columns, such as ‘Image name,’ were removed,
+                                                                     ensuring the dataset contains only relevant features for predic-
+                                                                     tion. It’s necessary to reduce dataset size and remove extraneous
+                                                                     information that does not contribute to algorithm learning and to
+                                                                     streamline the dataset for machine learning tasks.
+
+
+                                                                     3.4.4   | Validation of the Final Dataset
+
+                                                                     After pre-processing, the final dataset was inspected to ensure
+                                                                     consistency and readiness for modeling to verify that all
+                                                                     pre-processing steps were applied correctly and to ensure that
+FIGURE 2       |   Detected gaze points 2.                           the dataset is formatted and ready for machine learning. These
+                                                                     involved inspecting the first few rows of the dataset to get an
+                                                                     overview of how it looks after all the pre-processing or transfor-
+rows showing zero missing entries. Missing values were handled       mations and checking the size of the dataset (number of rows and
+through implicit row removal and by assigning a value of zero to     columns), which helps confirm that no data was lost during any
+empty cells.                                                         operations.
+
+
+3.4.2     |   Normalization of Continuous Variables                  3.4.5   | Dataset Augmentation
+
+Normalization is vital for ensuring that the continuous features     Dataset augmentation is a critical step in machine learning,
+in the dataset are scaled appropriately, particularly when they      particularly when working with limited data. Augmentation
+have varying units or ranges. Min-Max Scaling was employed to        enhances the diversity of the dataset by generating additional
+rescale all continuous variables to a range of 0 to 1, preserving    samples, thereby reducing overfitting and improving algorithm
+the relationships between data points while making all features      generalization. In this case, the dataset was augmented to expand
+non-negative to scale features to a consistent range, facilitating   the feature space and labels. To enrich the dataset, augmen-
+convergence during algorithm training, to ensure all fixation val-   tation techniques such as adding Gaussian Noise and applying
+ues remain non-negative, as negative values are non-physical for     small shifts were used. These techniques simulate variations in
+
+
+8 of 22                                                                                                          Engineering Reports, 2025
+
+===== PDF PAGE 9 / 22 =====
+                                                                                                                                                 25778196, 2025, 11, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/eng2.70455 by Cochrane Peru, Wiley Online Library on [03/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+FIGURE 4      |   Keyboard coordinate layout for mapping.
+
+
+
+the data, effectively increasing its size and variability while pre-    classes, leading to biased predictions and poor generalization. To
+serving the underlying distribution. Augmentation Techniques            address this, Random Over-Sampling was applied to the minor-
+include Gaussian Noise (Random noise with a mean of 0 and a             ity classes, artificially increasing their sample sizes to balance the
+standard deviation of 0.01 was added to each feature, simulating        class distribution. Additionally, the raw dataset contained dupli-
+natural variability in fixation data) and Uniform Shifts (Small ran-    cate entries, missing values, and inconsistencies, which could
+dom shifts within a range of −2 to 2 were applied, representing         negatively impact the algorithm’s performance.
+potential minor inconsistencies in gaze tracking).
+                                                                        To address these challenges and improve the dataset’s quality, a
+The algorithm enhanced data augmentation, custom ensemble               series of pre-processing techniques were applied. First, duplicate
+learning, and optimized meta-learning approach, all of which            entries were removed to ensure that redundant data points did
+contribute to its robustness and superior performance. The              not skew the learning process. This helped eliminate bias and
+enhanced data augmentation technique generates diverse train-           made the dataset more representative. Next, missing values were
+ing samples by introducing Gaussian noise, random shifts, and           handled appropriately, either through imputation techniques or
+scaling, helping the algorithm generalize better and handle data        by carefully removing incomplete records that could introduce
+variations effectively.                                                 noise into the training process. Additionally, normalization tech-
+                                                                        niques were applied to standardize the dataset, ensuring that all
+                                                                        feature values were on a similar scale. This step was crucial for
+3.4.6   | Dataset Size Verification                                     preventing certain features from dominating the learning process
+                                                                        due to differences in magnitude. As shown in Figure 6, the refined
+Post-augmentation, the size of the dataset was verified to con-         dataset demonstrates a noticeable improvement. The total num-
+firm the successful addition of augmented samples. The dataset          ber of samples has increased across all classes, which enhances
+expanded from the original size to include augmented samples,           the algorithm’s ability to learn meaningful patterns. While the
+with each feature vector aligned to its corresponding label to val-     dataset remains imbalanced, strategic handling of class distribu-
+idate the effectiveness of augmentation and ensure all new data         tions ensures that underrepresented categories are still utilized
+points are accounted for. The Size of 𝑋 (feature) is (1540, 62) and     effectively. By expanding the dataset and refining its structure,
+the size of 𝑦 (labels) is (1540).                                       the algorithm can now generalize better and avoid overfitting to
+                                                                        dominant classes. Additionally, data augmentation was imple-
+                                                                        mented to ensure that the algorithm does not disregard minority
+3.4.7   |   Handling Class Imbalance                                    classes.
+
+The dataset is real and self-constructed, ensuring its authenticity     Overall, these pre-processing steps have significantly improved
+and relevance for the problem at hand. However, as illustrated          the dataset’s quality, making it more suitable for training a
+in Figure 5, the dataset initially exhibited significant class imbal-   robust machine-learning algorithm. The refined dataset, despite
+ance, with certain classes having very few samples while oth-           its inherent imbalance, has been carefully structured to maxi-
+ers were heavily overrepresented. Such an imbalanced distribu-          mize learning potential, leading to improved accuracy and better
+tion can cause machine learning algorithms to favor the majority        real-world performance.
+
+
+Engineering Reports, 2025                                                                                                             9 of 22
+
+===== PDF PAGE 10 / 22 =====
+                                                                                                                                           25778196, 2025, 11, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/eng2.70455 by Cochrane Peru, Wiley Online Library on [03/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+FIGURE 5     |   Class distribution before dataset pre-processing.
+
+
+
+
+FIGURE 6     |   Class distribution after dataset pre-processing.
+
+
+
+3.4.8   |   Label Encoding                                           the machine learning algorithm. A Stratified Shuffle Split ratio
+                                                                     (80–20) was employed, ensuring that a substantial portion of
+To prepare the target variable for machine learning algorithms,      the data was available for effective training while preserving
+the labels were encoded into a numeric format using the Labe-        a representative subset for reliable and accurate testing. This
+lEncoder. This step not only makes the dataset compatible with       approach ensured a balanced evaluation of the algorithm’s pre-
+classification algorithms but also streamlines the learning pro-     dictive capabilities.
+cess, as numerical values are easier to handle and manipulate for
+algorithm training and evaluation.
+                                                                     3.5 | Dataset Creation Flowchart
+
+3.4.9   |   Splitting the Dataset                                    To evaluate the efficacy of the system in facilitating communi-
+                                                                     cation through ocular gaze and fixation-based selection, a cus-
+The augmented dataset was systematically divided into train-         tom dataset consisting of scanpath images from 15 children
+ing and testing sets to thoroughly evaluate the performance of       diagnosed with Autism Spectrum Disorder (ASD) was created.
+
+
+10 of 22                                                                                                       Engineering Reports, 2025
+
+===== PDF PAGE 11 / 22 =====
+                                                                                                                                          25778196, 2025, 11, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/eng2.70455 by Cochrane Peru, Wiley Online Library on [03/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+                                                                     contour was then analyzed, from which the centroid of the gaze
+                                                                     point was calculated using Equations (2) and (3).
+                                                                                                   [       ]
+                                                                                                  𝑴 ′ 𝒎𝟎𝟏′
+                                                                                             𝑪𝒙 =  [       ]                        (2)
+                                                                                                  𝑴 ′ 𝒎𝟎𝟎′
+                                                                                                   [       ]
+                                                                                                  𝑴 ′ 𝒎𝟎𝟏′
+                                                                                             𝑪𝒚 =  [       ]                        (3)
+                                                                                                  𝑴 ′ 𝒎𝟎𝟎′
+
+FIGURE 7 |       Data collection flowchart.                          The centroids represented gaze points and were stored
+                                                                     sequentially. To group these gaze points into fixations (𝛽), a
+                                                                     distance-based clustering method was applied. Using a threshold
+The process shown in Figure 7 began with collecting scan-
+                                                                     of 20 pixels, points were clustered based on the Equation (1)
+path images, followed by data pre-processing with clustering
+                                                                     ([38]). If the distance between them was less than or equal to 20
+to extract key features and the proposed Fixation Detection
+                                                                     pixels, they were considered part of the same fixation group. The
+Algorithm 1 was then applied to generate essential attributes.
+                                                                     representative fixation value was then computed as the average
+The refined data was organized into a CSV file for structured
+                                                                     of all gaze points within a cluster using Equations (4) and (5):
+analysis.
+                                                                                                            𝒏
+                                                                                                          𝟏∑
+                                                                                           𝒇 𝒊𝒙𝒂𝒕𝒊𝒐𝒏𝒙 =        𝒙                    (4)
+                                                                                                          𝒏 𝒊=𝟏 𝒊
+3.6 | Determining Fixation Co-Ordinates From
+Scanpath Images                                                                                             𝒏
+                                                                                                          𝟏∑
+                                                                                           𝒇 𝒊𝒙𝒂𝒕𝒊𝒐𝒏𝒚 =        𝒚                    (5)
+To enhance character prediction accuracy for hands-free key-                                              𝒏 𝒊=𝟏 𝒊
+board control, the machine learning algorithm utilized several
+fixation-related features extracted from scanpath images using       where 𝑛 is the number of gaze points in the fixation cluster.
+computer vision techniques and mathematical computations.            This feature formed a structured dataset that enabled machine
+Fixation values refer to representative spatial coordinates where    learning algorithms to interpret eye-tracking data accurately for
+a user’s gaze remained stable over time, signifying focused atten-   hands-free keyboard control, making communication easier for
+tion on specific regions of the screen. These fixation values were   individuals with Autism Spectrum Disorder (ASD).
+essential for linking gaze behavior to character selection in a
+virtual keyboard interface designed for individuals with Autism      Algorithm 1 extracts fixation points from a scanpath image (𝛼).
+Spectrum Disorder (ASD).                                             Fixations (𝛽) are determined by clustering gaze point centroids
+                                                                     derived from image contours, based on a distance threshold. The
+For the creation of the fixation-based dataset, no machine           result is a set of fixation coordinates that represent stable gaze
+learning algorithms were used. Instead, a rule-based approach        regions. To enhance clarity, a flowchart has been included in
+was employed, relying on classical image processing tech-            Figure 8 to illustrate the process more effectively.
+niques and geometric heuristics. This approach involved
+extracting gaze points from scanpath images using con-
+tour detection and computing fixations based on spatial              3.7 |    Character Selection Process
+proximity using Euclidean distances. The method is con-
+ceptually aligned with dispersion-based fixation detection           This section presents the algorithm proposed for predicting the
+algorithms, which are particularly effective for structured and      selected character on a visual keyboard using eye-tracking data.
+noise-free input and do not require prior training data. Conse-      The method relies on fixation frequency analysis in conjunction
+quently, the dataset generation process was deterministic and        with spatial proximity measurements within predefined Areas of
+interpretable, making it highly suitable for controlled experi-      Interest (AOIs). The goal is to accurately identify the character
+mental studies preceding the integration of machine learning         that received the highest visual attention, thereby supporting a
+algorithms.                                                          novel keyboard selection technique for individuals with Autism
+                                                                     Spectrum Disorder (ASD).
+Fixation detection was performed using a custom image pro-
+cessing pipeline based on the Suzuki & Abe’s (1985) border-          Each key on the visual keyboard interface is associated with a
+following algorithm, which identified contours corresponding         rectangular Area of Interest (AOI). These AOIs were predefined
+to gaze points [37]. The scanpath image(𝛼) was first con-            using bounding box coordinates specified in a layout file. Each
+verted to grayscale (cvtColor(image, COLOR_BGR2GRAY)),               AOI is defined by four boundaries: 𝑋 MIN, X_MIN, X_MAX,
+followed by binary inverse thresholding (threshold(gray, 128,        Y_MIN, and Y_MAX, which represent the minimum and max-
+255, THRESH_BINARY_INV)) to segment gaze path dots                   imum x and y coordinates encompassing the key. This layout
+from the background. Using the findContours function with            remained consistent for all participants to ensure standardization
+RETR_EXTERNAL and CHAIN_APPROX_SIMPLE, external                      of fixation mapping and to facilitate objective algorithm train-
+contours representing potential gaze points were extracted. Each     ing and evaluation. Individual customization of AOIs was not
+
+
+
+
+Engineering Reports, 2025                                                                                                      11 of 22
+
+===== PDF PAGE 12 / 22 =====
+                                                                                                                                                  25778196, 2025, 11, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/eng2.70455 by Cochrane Peru, Wiley Online Library on [03/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+ALGORITHM 1       |   Fixation detection.
+
+FIXATION-DETECTION (𝛼, 𝛽).
+1. gray ← Convert 𝛼 to grayscale using cvtColor(𝛼, COLOR_BGR2GRAY)
+2. THRESH_BINARY_INV ← Inverted binary thresholding constant
+3. threshold_value, binary ← Apply threshold(gray, 128, 255, THRESH_BINARY_INV)
+4. RETR_EXTERNAL ← Contour retrieval mode to extract only outer contours
+5. CHAIN_APPROX_SIMPLE ← Contour approximation method
+6. contours, hierarchy ← findContours(binary, RETR_EXTERNAL, CHAIN_APPROX_SIMPLE)
+7. gaze_points ← empty list
+8. for each contour in contours
+9.      do 𝑀 [← moments(contour)
+                     ]                        // m00, m10, and m01 are spatial moments of the contour
+10.      if 𝑀 ′ 𝑚00′ ≠ 0 then
+                     𝑀 [′ 𝑚10′ ]
+11.           𝐶𝑥 ← 𝑀 ′ 𝑚00′          // x-coordinate of centroid
+                       [       ]
+                     𝑀 [′ 𝑚01′ ]
+12.           𝐶𝑦 ← 𝑀 ′ 𝑚00′          // y-coordinate of centroid
+                       [( ] )
+13.           Append 𝐶𝑥 , 𝐶𝑦 to gaze_points
+14. fixation_threshold ← 20                // Distance threshold for grouping fixations
+15. 𝛽 ← empty list
+16. if length of gaze_points > 0
+17.      then current_fixation ← [gaze_points[0]]
+18.      for point from gaze_points[1] to gaze_points[end]
+19.           do if euclidean_distance(point, current_fixation[−1]) ≤ fixation_threshold
+20.                then append point to current_fixation
+21.           else
+22.                fixation ← average(current_fixation)
+23.                Append fixation to 𝛽
+24.                current_fixation ← [point]
+25.      fixation ← average(current_fixation)
+26.      Append fixation to 𝛽
+27. return 𝛽
+
+
+
+                                                                     initial filtering phase, isolating the subset of keys that received
+                                                                     the most visual attention based on the number of within-AOI
+                                                                     fixations.
+
+                                                                     To further refine the selection, the algorithm computes the aver-
+                                                                     age Euclidean distance between each fixation point inside a can-
+                                                                     didate
+                                                                     (        AOI and   ) the center of that AOI. The center coordinates
+                                                                       𝑋center , 𝑌center of the AOI are calculated. The distance from
+FIGURE 8    |   Fixation calculating flowchart.                      Equation (6) and average distance using Equation (7) are then
+                                                                     computed for each character with maximum fixation frequency
+                                                                     using the formula:
+applied, as the focus of the study was to assess the algorithm’s
+general performance across participants under a uniform inter-                     √(
+                                                                                      (                      )𝟐 (                      )𝟐 )
+face configuration.                                                   distance =       fixation[𝟎] − 𝑿 center + fixation[𝟏] − 𝒀 center      (6)
+
+To determine whether a given fixation point (𝑋, 𝑌 ) lies within
+                                                                                                               𝒏
+an AOI, the algorithm evaluates a condition. This check is                                                  𝟏∑
+                                                                                         𝒂𝒗𝒈 distance =           distance                 (7)
+implemented via a Boolean function is_within_aoi() and is                                                   𝒏 𝒊=𝟏
+applied to each fixation point in relation to each character’s
+bounding box. The algorithm iterates over each fixation point        where
+                                                                     (        )𝑛 is the number of fixation points within the AOI, and
+and checks whether it lies within the AOI of a given char-             𝑋𝑖 , 𝑌𝑖 represents the coordinates of each fixation point. This
+acter. If a fixation point falls within the AOI, a counter vari-     step serves to disambiguate between characters that share the
+able fixation_frequency associated with that character is incre-     same fixation frequency by favoring the character where the fix-
+mented. This step is repeated for all fixation points and all        ations are more concentrated toward the center of the AOI.
+characters.
+                                                                     From the filtered set of characters with maximum fixation fre-
+After processing all fixation points, the character(s) with the      quency, the algorithm selects the character with the lowest aver-
+highest fixation frequency is identified. This step represents the   age fixation distance to the center of its AOI. This character
+
+
+12 of 22                                                                                                              Engineering Reports, 2025
+
+===== PDF PAGE 13 / 22 =====
+                                                                                                                                                25778196, 2025, 11, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/eng2.70455 by Cochrane Peru, Wiley Online Library on [03/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+is then designated as the final predicted output. This process          3.8 | Proposed Optimized Ensemble Algorithm
+effectively integrates fixation clustering, spatial analysis, and       With a Meta-Learner
+AOI-based mapping using data processing tools such as Pandas
+(for structured data manipulation) and NumPy (for numerical and         The ensemble learning strategy adopted in this research inte-
+distance computations). The use of predefined AOIs enables con-         grates predictions from three base classifiers such as Random
+sistent mapping of gaze behavior across participants and supports       Forest (RF), Support Vector Machine (SVM), and Neural Net-
+a robust, data-driven method for interpreting user intent on the        work (NN). Each base classifier produces a probability esti-
+keyboard.                                                               mate for the predicted class based on extracted fixation fea-
+                                                                        tures. These estimates are then used as meta-features in a logistic
+The proposed algorithm leverages fixation frequency and spa-            regression-based meta-learner to determine the final class pre-
+tial distribution of gaze points to predict character selections in a   diction. The prediction of the Random Forest model is obtained by
+novel eye-tracking-based keyboard system. The incorporation of          averaging the outputs of = 500 decision trees as Equation (8):
+AOI analysis ensures that visual attention is precisely mapped to
+specific keys, while the use of average distance refines the predic-                                            𝑻
+                                                                                                            𝟏∑
+tion by incorporating spatial coherence. This methodology con-                                 𝑷 𝑹𝑭 (𝒙) =        𝒉 (𝒙)                   (8)
+                                                                                                            𝑻 𝒕=𝟏 𝒕
+tributes to an accessible and intelligent character selection mech-
+anism tailored for individuals with ASD.
+                                                                        where ℎ𝑡 (𝑥) denotes the class prediction from the 𝑡th decision tree,
+Algorithm 2 determines the most likely character selected by            and 𝑇 is the total number of trees in the ensemble. This method
+a user based on fixation data. It compares fixation coordinates         improves robustness by reducing variance through ensemble
+against Areas of Interest (AOIs) defined by keyboard char-              averaging [39]. To enable the Support Vector Machine to perform
+acter boundaries, calculates fixation frequency per AOI, and            non-linear classification, the input data is transformed using the
+refines prediction using average spatial distance between fix-          Radial Basis Function (RBF) kernel Equation (9):
+ations and character centers. Using the fixation_list (𝑳) con-
+                                                                                               (      )                𝟐
+taining gaze coordinates and the keyboard_coordinates (𝒌)                                     𝑲 𝒙𝒊 , 𝒙 = 𝒆−𝜸 ||𝒙𝒊 −𝒙||                   (9)
+DataFrame with area-of-interest (AOI) information, the output is
+the final_character (𝝎) predicted based on where the user fixated.      where 𝛾 is the kernel smoothing parameter, 𝑥𝑖 represents a sup-
+To enhance clarity, a flowchart has been included in Figure 9 to        port vector, and 𝑥 is the input feature vector. This transforma-
+illustrate the process more effectively.                                tion allows the classifier to learn more complex boundaries [40].
+                                                                        The decision score from the SVM is computed using following
+                                                                        Equation (10):
+                                                                                                       𝒏
+                                                                                                     ∑        (      )
+ALGORITHM 2         |   Character selection.                                                𝒇 (𝒙) =      𝜶 𝒊 𝑲 𝒙𝒊 , 𝒙 + 𝒃            (10)
+                                                                                                     𝒊=𝟏
+CHARACTER-SELECTION (𝐿, 𝑘, 𝜔)
+                                                                                                                     (      )
+1. for each row in 𝑘                                                    where 𝛼𝑖 is the support vector coefficient, 𝐾 𝑥𝑖 , 𝑥 is the RBF ker-
+2.     do row[’fixation_frequency’] ← 0                                 nel function, and 𝑏 is the learned bias. This function returns a
+3. for each fixation in 𝐿                                               real-valued score used for classification [41]. The raw SVM deci-
+4.     do for each row in 𝑘                                             sion score is calibrated into a probability using a logistic sigmoid
+5.          do if is_within_aoi(fixation, row)                          function Equation (11):
+6.               then row[’fixation_frequency’] += 1
+7. max_frequency ← maximum value in fixation_frequency                                                            𝟏
+   column                                                                                   𝑷 𝑺𝑽 𝑴 (𝒙) =                                (11)
+                                                                                                            𝟏 + 𝒆(𝑨𝒇 (𝒙)+𝑩)
+8. max_frequency_chars ← all rows where fixation_frequency
+   == max_frequency                                                     where 𝐴 and 𝐵 are calibration parameters obtained through [42].
+9. for each row in max_frequency_chars do                               The feedforward neural network used in this ensemble algorithm
+10. X center ← (row[’X_MIN’] + row[’X_MAX’]) / 2                        consists of multiple hidden layers, with architecture parameters
+11. Y center ← (row[’Y_MIN’] + row[’Y_MAX’]) / 2                        set as hidden_layer_sizes = (200, 100) and max_iter = 500. The
+12. total_distance ← 0                                                  input is propagated forward through each layer using the follow-
+13. count ← 0                                                           ing transformation (12):
+14. for each fixation in fixation_list
+                                                                                                    (                    )
+15.     do if is_within_aoi(fixation, row)                                                  𝒛(𝒍) = 𝝈 𝑾 (𝒍) 𝒉(𝒍−𝟏) + 𝒃(𝒍)                (12)
+16.       then calculate distance
+17.       total_distance += distance
+                                                                        where 𝑧(𝑙) is the pre-activation output of the 𝑙th layer, 𝑊 (𝑙)
+18.       count += 1
+                                                                        is the weight matrix for layer 𝑙, ℎ(𝑙−1) is the activation from
+19. if count > 0
+                                                                        the previous layer, 𝑏(𝑙) is the bias vector for layer 𝑙, 𝜎 is the
+20.     then calculate avg_distance
+                                                                        activation function (ReLU) [43]. This operation is repeated for
+21.     row[’average_distance’] ← avg_distance
+                                                                        each layer in the network. The transformation maps input fea-
+22. 𝜔 ← row in max_frequency_chars with minimum
+                                                                        tures into more abstract representations, allowing the network
+    average_distance
+                                                                        to learn complex non-linear relationships in the fixation feature
+23. return 𝜔
+                                                                        space. The final hidden layer’s output is passed to the softmax
+
+
+Engineering Reports, 2025                                                                                                           13 of 22
+
+===== PDF PAGE 14 / 22 =====
+                                                                                                                                                   25778196, 2025, 11, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/eng2.70455 by Cochrane Peru, Wiley Online Library on [03/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+FIGURE 9     |   Character selection process flowchart.
+
+
+
+layer to compute class probabilities. The Neural Network out-              ALGORITHM 3       |   Optimized ensemble.
+puts a class probability distribution using the softmax function
+Equation (13):                                                             OPTIMIZED-ENSEMBLE (𝑋, 𝑦, ŷ)
+                                     𝒆𝒛 𝒋                                   1.   for 𝑡 = 1 to 500
+                       𝑷 𝑵𝑵 (𝒙) = ∑𝑪                        (13)
+                                         𝒆𝒛𝒊                                2.      Predict ℎ𝑡 (𝑥) from tree 𝑡
+                                     𝒊=𝟏
+                                                                            3.   Calculate 𝑃RF (𝑥)
+Here, 𝑧𝑗 is the logit for the predicted class, 𝑧𝑖 are the logits for all    4.   for 𝑖 = 1 to 𝑛 (support vectors) (    )
+C classes. This normalization ensures the output values represent           5.      Compute kernel similarity 𝐾 𝑥𝑖 , 𝑥
+valid probability estimates [43]. The final probability prediction is       6.   Compute decision score 𝑓 (𝑥)
+made using a logistic regression meta-classifier Equation (14) that         7.   Compute probability 𝑃SVM (𝑥)
+takes the individual model predictions as input:                            8.   Pass 𝑥 through fully connected layers with sizes (200, 100)
+                                                                            9.   for each layer l
+                  (            )               𝟏                           10.      Calculate 𝑧(𝑙)
+                 𝑷 𝒀 = 𝟏|𝑿 meta =                                  (14)
+                                      𝟏+𝒆   −(𝝎𝑻 𝑿 meta +𝒃)                11.   Compute logits 𝑧𝑗 for each class
+                  [              ]                                         12.   Compute softmax probability 𝑃NN (𝑥)
+where 𝑋meta = 𝑃RF , 𝑃SVM , 𝑃NN is the meta-feature vector, 𝜔 is            13.   Create meta-feature vector 𝑋meta = [𝑃RF (𝑥), 𝑃SVM (𝑥),
+the weight vector learned during logistic regression training,                   𝑃NN (𝑥)]                        (           )
+and b is the bias term. This meta-level prediction aggregates the          14.      Compute final probability 𝑃 𝑌 = 1|𝑋meta
+strength of the three base classifiers (Hosmer [44]). The final pre-       15.   Select predicted class 𝑦̂ using logistic regression
+dicted class ŷ is chosen based on the maximum probability from                   meta-learner
+the logistic regression output (Equation 15):                              16. Return 𝑦̂ with highest predicted probability from logistic
+                                                                               regression
+                                   (          )
+                      ŷ = 𝒂𝒓𝒈 𝒎𝒂𝒙𝑷 𝒀 |𝑿 meta                      (15)
+
+This strategy ensures the ensemble algorithm selects the class             base models’ predictions, it develops a more discriminative and
+with the highest confidence derived from the combined informa-             informative feature space for final classification. The algorithm
+tion across all base models.                                               is validated using a train-test split approach, and its perfor-
+                                                                           mance is assessed through accuracy measurement, ensuring a
+The algorithm uses a custom ensemble approach, combining                   thorough evaluation. This structured ensemble approach ensures
+Random Forest (RF), Support Vector Machine (SVM), and Neu-                 a balanced trade-off between bias and variance, making the
+ral Network (NN) as base models, leveraging their individual               algorithm more resilient, interpretable, and effective compared
+strengths to improve decision-making. Furthermore, it employs              to standalone algorithms. The ensemble classification algorithm
+an optimized meta-learner in the form of Logistic Regression,              is trained using the original dataset: features X and corresponding
+which stacks the predictions from the base models and enhances             labels y; it returns ŷ with the highest predicted probability from
+overall prediction accuracy. By creating meta-features from the            logistic regression (Algorithm 3).
+
+
+
+
+14 of 22                                                                                                               Engineering Reports, 2025
+
+===== PDF PAGE 15 / 22 =====
+                                                                                                                                              25778196, 2025, 11, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/eng2.70455 by Cochrane Peru, Wiley Online Library on [03/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+3.9 |      Basic Workflow                                               enhancing predictive accuracy, highlighting its potential for
+                                                                        improving assistive communication technologies. This study has
+The scanpath images were generated directly from the chil-              established a foundational benchmark for future research lever-
+dren’s eye movements as they looked in different directions—up,         aging this customized dataset.
+down, left, and right—visually representing their gaze paths.
+These scanpath images were further analyzed to extract fixa-
+tion coordinates (𝑋, 𝑌 ), fixation frequency, and average distance      4 |     Results
+to fixation, ultimately forming a structured dataset for machine
+learning analysis. This data acquisition process was part of a          The results highlight the algorithm’s accuracy, precision, recall,
+broader workflow designed to develop an assistive communi-              and F1-score, along with detailed insights from precision-recall
+cation system for individuals with Autism Spectrum Disorder             analyses, showcasing its strengths and areas for improvement.
+(ASD). The workflow illustrated in Figure 10 began with the col-
+lection of 320 scanpath images, which were then pre-processed,
+cleaned, and normalized to ensure consistency and reliability.          4.1 |       Evaluation Metrics
+Exploratory Data Analysis (EDA) was conducted to identify
+patterns and relationships within the data, guiding feature selec-      In classification problems, evaluating algorithm performance
+tion and algorithm development. Data augmentation techniques            involves understanding how well the algorithm distinguishes
+were applied to address data imbalance and improve algorithm            between classes and predicts outcomes accurately.
+robustness.
+
+A machine-learning algorithm was then trained using the pro-            4.1.1   | Accuracy
+cessed dataset, leveraging fixation attributes to predict charac-
+ters on a hands-free keyboard. The algorithm’s performance              The Optimized Ensemble Algorithm achieved an impressive
+was evaluated using accuracy, precision, and recall, followed by        accuracy of 83.44% significantly outperforming the base models.
+fine-tuning to optimize both its accuracy and generalization. This      This result demonstrates the algorithm’s strong ability to cor-
+systematic approach integrated eye-tracking data and machine            rectly predict outcomes across the dataset using the following
+learning to create an efficient assistive system for individuals with   (Equation 16):
+ASD, enhancing communication by enabling character selection
+without manual input.                                                                                    𝑻𝑷 +𝑻𝑵
+                                                                                       Accuracy =                                     (16)
+                                                                                                    𝑻𝑷 + 𝑻𝑵 + 𝑭𝑷 + 𝑭𝑵
+
+                                                                        Here, TP is True Positives, FP is False Positives, TN is True Nega-
+3.10 | Ensemble Algorithm and Dataset
+                                                                        tives, and FN is False Negatives.
+Overview
+
+In this study, a customized dataset was developed by process-
+ing a pre-existing collection of scanpath images obtained from          4.1.2   |   Macro-Averaged Precision
+15 children with Autism Spectrum Disorder (ASD). As sec-
+ondary users of this image data, fixation points and gaze fea-          Precision measures the proportion of correctly predicted pos-
+tures were extracted using machine learning-based techniques            itive instances out of all positive predictions, calculated as
+to construct a fully de-identified structured dataset suitable          Equation (17):
+for algorithm training and evaluation. Since no prior research                                               TP
+has been conducted using this derived dataset, an ensemble                                   Precision =                              (17)
+                                                                                                           TP + FP
+algorithm has been proposed to analyze and interpret the data
+effectively. To evaluate its performance, a comparative anal-           In multi-class classification, macro-averaging computes preci-
+ysis has been conducted against several traditional machine             sion for each class and averages them equally. A precision 0.8143
+learning algorithms using the same dataset. The results have            means 81.43% of positive predictions are correct, reflecting the
+demonstrated the superiority of the ensemble approach in                algorithm’s accuracy in identifying true positives.
+
+
+
+
+FIGURE 10      |   System model workflow.
+
+
+Engineering Reports, 2025                                                                                                         15 of 22
+
+===== PDF PAGE 16 / 22 =====
+                                                                                                                                                         25778196, 2025, 11, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/eng2.70455 by Cochrane Peru, Wiley Online Library on [03/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+4.1.3   |   Macro-Averaged Recall                                              4.2.1 | Precision-Recall Curve for Multi-Class
+                                                                               Classification
+Recall, or Sensitivity, measures the proportion of actual posi-
+tive instances correctly identified by the algorithm, calculated as            The evaluation of the algorithm’s performance using the
+Equation (18):                                                                 Precision-Recall (PR) curve in Figure 11 demonstrates its robust-
+                                     𝑻𝑷                                        ness and reliability in multi-class classification. A key highlight is
+                       Recall =                                (18)
+                                  𝑻𝑷 + 𝑭𝑵                                      the algorithm’s ability to achieve perfect Average Precision (AP)
+                                                                               scores of 1.00 for multiple classes, including ENTER, I, and Q,
+A recall of 0.8057 means the algorithm correctly identifies 80.57%
+                                                                               indicating that these classes are classified with no false positives
+of actual positives, indicating some true positives are missed.
+                                                                               or false negatives. Furthermore, several other classes, such as A,
+                                                                               D, G, N, S, T, V, Y, and Z, exhibit AP scores above 0.90, reinforc-
+                                                                               ing the algorithm’s capability to maintain both high precision and
+4.1.4   |   Macro-Averaged F1-Score
+                                                                               recall. This result suggests that the algorithm can effectively dif-
+                                                                               ferentiate between these classes, ensuring that relevant instances
+The F1-score, the harmonic mean of precision and recall, bal-
+                                                                               are retrieved while minimizing incorrect classifications.
+ances false positives and false negatives, making it ideal for imbal-
+anced datasets. It is calculated as the following Equation (19):
+                                                                               The PR curve structure further supports the algorithm’s strength
+                                      Precision × Recall                       in precision, where certain classes maintain precision values
+                  𝑭 𝟏 − Score = 𝟐 ×                                (19)        close to 1.0 across the entire recall range. This stability in preci-
+                                      Precision + Recall
+                                                                               sion implies that the algorithm confidently makes correct predic-
+In multi-class classification, it is averaged across all classes.              tions with minimal misclassification. Additionally, the algorithm
+A macro-averaged F1-score of 0.8043 reflects a good balance                    exhibits a well-balanced trade-off between precision and recall,
+between identifying positives and minimizing errors.                           ensuring not only that correct instances are identified but also
+                                                                               that very few relevant instances are missed. This balance is partic-
+                                                                               ularly important in real-world applications, where both precision
+4.2 |       Diagnostic Metrics                                                 (reducing false positives) and recall (minimizing false negatives)
+                                                                               are critical for optimal classification outcomes.
+Diagnostic metrics are used to gain deeper insights into the per-
+formance of a classification algorithm, particularly in terms of               Despite the algorithm’s overall strong performance, certain
+its ability to correctly identify different classes. These metrics,            classes demonstrate lower AP scores that warrant further investi-
+such as the confusion matrix, precision-recall curve, and AUC,                 gation. Notably, Class K (AP = 0.17) performs significantly below
+help in understanding how well the algorithm distinguishes                     the others, suggesting difficulties in distinguishing it from other
+between classes, revealing areas where it may need improvement,                categories. This could be attributed to class imbalance, fea-
+especially in the case of class imbalance or misclassification                 ture similarities with other classes, or limited representation in
+patterns.                                                                      the training data. Similarly, Class M (AP = 0.69) and Class W
+
+
+
+
+FIGURE 11     |    Precision-recall curve using proposed ensemble algorithm.
+
+
+16 of 22                                                                                                                     Engineering Reports, 2025
+
+===== PDF PAGE 17 / 22 =====
+                                                                                                                                                  25778196, 2025, 11, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/eng2.70455 by Cochrane Peru, Wiley Online Library on [03/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+(AP = 0.74) fall slightly below the desirable threshold, indicat-        (SVM). This improvement can be attributed to the ensemble’s
+ing potential areas for fine-tuning and optimization. Addressing         capacity to integrate multiple weak learners, thereby mitigating
+these issues through data augmentation, feature extraction, or           both bias and variance. Furthermore, the algorithm effectively
+adjusting class weighting strategies during training could help          addresses challenges related to class imbalance, contributing to
+improve classification performance for these classes.                    greater robustness and generalizability. Unlike individual classi-
+                                                                         fiers, which are often prone to overfitting and noise sensitivity, the
+Overall, the high AP scores across the majority of classes demon-        ensemble approach offers a more stable and reliable framework
+strate that the algorithm is highly effective at multi-class classifi-   for classification tasks.
+cation, achieving remarkable precision and recall. The presence
+of multiple classes with near-perfect classification further vali-
+dates its robustness and accuracy. While a few classes exhibit           5.1 | Algorithm Evaluation, Validation
+lower performance, targeted refinements in data representation           and Augmentation Strategy
+and algorithm training strategies could significantly enhance
+these areas. With these improvements, the algorithm has the              A comprehensive evaluation of the proposed Optimized Ensem-
+potential to achieve even greater classification accuracy and gen-       ble Approach was conducted using a wide range of performance
+eralization capability, making it a reliable and well-calibrated         metrics beyond conventional accuracy. The dataset was normal-
+multi-class classifier.                                                  ized and augmented to mitigate class imbalance, followed by a
+                                                                         stratified 80/20 train-test split to maintain representative distri-
+                                                                         butions during training and evaluation.
+4.2.2   |   Area Under the Precision-Recall Curve
+                                                                         The dataset used for character-level prediction was constructed
+The Area Under the Precision-Recall curve (AUC-PR) is a cru-             from AOI-based fixation analysis, where each label was algo-
+cial metric for evaluating the performance of a classification           rithmically derived using fixation frequency and the average dis-
+algorithm, particularly in imbalanced datasets. In Figure 11, each       tance from the AOI. However, these AOI-derived labels con-
+colored line represents a Precision-Recall (PR) curve for a dif-         tained noise and exhibited significant class imbalance, posing
+ferent class, and the AP (Average Precision) values in the leg-          challenges for algorithm generalization. The augmentation func-
+end correspond to the AUC-PR for each class. A higher AUC-PR             tion was applied exclusively to the training split (X_train, y_train)
+indicates better classification performance. Several classes, such       after stratified, while the test set remained unchanged. Prior to
+as ENTER, I, and Q, have an AP score of 1.00, meaning their              augmentation, the training set contained 286 samples and the test
+AUC-PR is also 1.00 (100%), signifying perfect classification with       set contained 32 samples. Following augmentation, the training
+zero false positives and zero false negatives. Additionally, classes     set increased to 1144 samples, whereas the test set size remained
+with AP scores close to 1.00, such as A (0.99), D (0.97), G (0.94),      constant at 32 samples shown in Figure 12. This demonstrates
+and Z (0.99), perform exceptionally well, maintaining high preci-        that no augmented samples were introduced into the test set,
+sion and recall across the dataset. However, some classes exhibit        thereby eliminating any possibility of information leakage and
+lower AUC-PR values, indicating difficulty in classification. For        ensuring the validity of the evaluation. To prevent train-test leak-
+example, Class K (AP = 0.17) has the lowest AUC-PR, suggest-             age, a k-fold cross-validation strategy was also applied. While this
+ing that the algorithm struggles to distinguish this class cor-          approach ensured strict isolation between subjects in training
+rectly, likely due to low precision and recall values, leading to a      and testing sets, it substantially reduced the effective number of
+high number of misclassifications. Similarly, Class M (AP = 0.69)        samples per fold. Consequently, the algorithm encountered diffi-
+and Class W (AP = 0.74) show moderate performance, meaning               culties in learning discriminative patterns, leading to a noticeable
+that while the algorithm detects them reasonably well, further           decline in predictive performance, with classification accuracy
+improvements could enhance accuracy. AUC-PR is a more rel-               dropping to 18.75%.
+evant metric than ROC-AUC in imbalanced classification tasks
+since it focuses on false positives and false negatives rather than      To address these challenges, an ensemble-based approach was
+true negatives. A high AUC-PR value indicates that the algorithm         explored by integrating minority-class oversampling and train-set
+is effective in retrieving relevant samples while keeping false          augmentation while maintaining a strict separation between
+positives low. Overall, this algorithm demonstrates exception-           training and testing samples. By leveraging augmented AOI fea-
+ally high performance across most classes, with several achieving        tures, the proposed method demonstrated improved generaliza-
+near-perfect classification. However, certain classes (K, M, and         tion capability under the experimental setup. In these experi-
+W) require additional improvements, which could be addressed             ments, an overall accuracy of 83.44% was achieved, along with
+through data augmentation, class balancing, or enhanced fea-             relatively higher precision and recall across several character
+ture extraction. The overall high AUC-PR scores suggest that this        classes.
+algorithm is well-calibrated and highly effective in multi-class
+classification tasks.                                                    The effect of the validation strategies is illustrated by the
+                                                                         Precision-Recall (PR) curves presented in Figures 11 and 13. As
+                                                                         shown in Figure 13, the k-fold cross-validation approach pro-
+5 |     Comparative Analysis                                             duces PR curves with comparatively lower area under the curve
+                                                                         (AUC) for most classes, indicating limited discriminative ability.
+The proposed ensemble algorithm exhibits enhanced perfor-                In contrast, Figure 11 shows that the ensemble-based approach
+mance relative to conventional classifiers such as Multilayer Per-       yields higher precision and recall across multiple classes under
+ceptron (MLP), Random Forest, and Support Vector Machine                 the same dataset conditions.
+
+
+Engineering Reports, 2025                                                                                                             17 of 22
+
+===== PDF PAGE 18 / 22 =====
+                                                                                                                                                            25778196, 2025, 11, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/eng2.70455 by Cochrane Peru, Wiley Online Library on [03/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+FIGURE 12    |   Verification of training-only augmentation: Dataset sizes before and after augmentation.
+
+
+
+
+FIGURE 13    |   Precision-recall curve using k-fold cross validation method.
+
+
+In summary, the k-fold cross-validation strategy effectively pre-               and SVM, achieving lower error rates and higher stability. By
+vents train-test leakage but may lead to under-fitting due to                   effectively handling class imbalance and reducing variance, the
+reduced sample diversity per fold. Given the noisy and imbal-                   ensemble approach proves to be the most reliable and accurate
+anced nature of AOI-derived labels, the experimental findings                   for eye-gaze-based character selection.
+suggest that augmentation-aware ensemble strategies can help
+extract useful patterns and achieve better predictive performance.              5.2.1   |   Mean Squared Error (MSE)
+
+For classification assessment, macro-averaged precision, recall,
+                                                                                The MSE (Mean Squared Error) as defined in Equation (20)
+and F1-score were calculated. These metrics are particularly
+                                                                                measures the average squared difference between actual and
+suitable for multi-class classification tasks, as they assign equal             predicted values. A lower MSE indicates that the algorithm’s
+weight to each class regardless of frequency, thereby reducing                  predictions are closer to the actual values, reducing the impact
+potential bias introduced by class imbalance. Additionally, Mean                of large errors.
+Squared Error (MSE), Root Mean Squared Error (RMSE), and                                                         𝒏
+                                                                                                              𝟏 ∑(             )𝟐
+Mean Absolute Percentage Error (MAPE) were measured to                                              𝑴𝑺𝑬 =           𝒚 𝒊 − 𝒚 ′𝒊              (20)
+                                                                                                              𝒏 𝒊=𝟏
+assess the magnitude and relative scale of prediction deviations.
+Statistical measures such as variance, standard deviation, and the              where 𝑦𝑖 is the actual value, 𝑦′𝑖 is the predicted value, 𝑛 is the total
+coefficient of variation (CV) were computed to analyze the con-                 number of predictions.
+sistency and dispersion of predictions, while skewness was exam-
+ined to explore potential asymmetries in the error distribution.                The Optimized Ensemble Algorithm significantly outperforms
+                                                                                all other models with the lowest MSE (20.5682). In contrast, MLP
+                                                                                has the highest MSE (57.5831), indicating that its predictions
+5.2 | Error and Variability Analysis                                            have larger errors. The lower MSE in the ensemble algorithm
+in Algorithm Performance                                                        suggests that it generalizes better across different classes, even
+                                                                                with data imbalance. This improvement is likely due to the com-
+The error metrics show that the ensemble algorithm consistently                 bination of multiple weak learners, leading to a more robust
+outperforms individual algorithms such as MLP, Random Forest,                   algorithm.
+
+
+18 of 22                                                                                                                        Engineering Reports, 2025
+
+===== PDF PAGE 19 / 22 =====
+                                                                                                                                            25778196, 2025, 11, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/eng2.70455 by Cochrane Peru, Wiley Online Library on [03/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+5.2.2   |   Root Mean Squared Error (RMSE)                            5.2.5   |   Standard Deviation (STD)
+
+The RMSE (Root Mean Squared Error) defined in Equation (21)           Standard Deviation (STD) defined in Equation (25) represents the
+provides an interpretable measure of error in the same unit as the    dispersion of errors. Lower STD means a more stable algorithm
+target variable. It penalizes larger errors more than smaller ones,   with consistent prediction performance. The formula is:
+making it a crucial metric for assessing prediction quality.                                          √
+                                   √                                                         𝑺𝑻 𝑫 =       Variance                  (25)
+                         RMSE = 𝑴𝑺𝑬                            (21)
+
+The Optimized Ensemble Algorithm achieves the lowest RMSE             The ensemble algorithm has the lowest STD (4.5352), making it
+(4.5352), reinforcing that it has the most precise predictions        the most stable. The MLP model has the highest STD (7.6007),
+among all algorithms. MLP has the highest RMSE (7.5884), indi-        showing that its predictions are highly variable. By combining
+cating poor prediction accuracy. The ensemble algorithm’s suc-        multiple classifiers, the ensemble algorithm smooths out extreme
+cess in lowering RMSE confirms that it effectively reduces large      variations, producing more reliable results.
+errors while handling class imbalance better.
+
+                                                                      5.2.6   |   Coefficient of Variation (CV)
+5.2.3   |   Mean Absolute Percentage Error (MAPE)
+                                                                      CV (Coefficient of Variation) defined in Equation (26) measures
+MAPE (Mean Absolute Percentage Error) defined in                      error variation relative to the mean. A higher CV indicates more
+Equation (22) calculates the error as a percentage of actual          variation in predictions. The formula is:
+values, making it useful for understanding relative prediction
+errors. A lower MAPE indicates better prediction performance.                                          𝑺𝑻 𝑫
+                                                                                            𝑪𝑽 =                                    (26)
+The formula for MAPE is:                                                                            Sample mean
+
+                              𝟏𝟎𝟎% ∑𝒏 || 𝒚 𝒊 − 𝒚 𝒊 ||
+                                                 ′
+                    MAPE =              |           |         (22)    The ensemble algorithm has the highest CV (2.8723), meaning its
+                                𝒏   𝒊=𝟏 |           |
+                                        | 𝒚𝒊 |                        errors are more spread out compared to other models. However,
+                                                                      since its overall performance metrics are superior, this does not
+where: 𝑦𝑖 is the actual value of the 𝑖th observation, 𝑦′𝑖 is the      negatively impact the algorithm.
+predicted value of the 𝑖th observation, 𝑛 is the total number of
+observations.
+                                                                      5.2.7   | Skewness
+The SVM model has the lowest MAPE (41.9792%), meaning it
+provides the most accurate percentage-based error reduction. The      Skewness defined in Equation (27) measures the symmetry of
+ensemble algorithm (43.8389%) also performs well, demonstrat-         errors. A negative skew indicates under predictions, while a pos-
+ing its robustness. However, MLP has the worst MAPE (67.34%),         itive skew suggests over predictions. The formula is:
+meaning its predictions significantly deviate from actual values.
+The ensemble algorithm’s balanced performance suggests that it                                          ∑(          )𝟑
+                                                                                                         𝒚 𝒊 − 𝒚 ′𝒊
+learns well across different classes despite the imbalance.                             Skewness =          (          )            (27)
+                                                                                                   (𝒏 − 𝟏). 𝑺𝑻 𝑫 𝟑
+
+5.2.4 |     Variance                                                  The ensemble algorithm has a low negative skew (−0.2532), indi-
+                                                                      cating balanced errors. Random Forest has the highest skew
+The Variance defined in Equation (23) measures the spread             (−0.8850), meaning it under predicts significantly. The ensemble
+of errors. Lower variance means a more stable and reliable            algorithm remains unbiased and stable across classes.
+algorithm, while high variance suggests inconsistent predictions.
+The formula for Variance is:                                          The Optimized Ensemble Algorithm outperforms traditional
+                                     𝒏                                models in almost all metrics. It has the lowest MSE, RMSE, vari-
+                                𝟏 ∑(               )𝟐
+                   Variance =           𝒚 𝒊 − 𝒚 ′𝒊            (23)    ance, and standard deviation, proving it is the most accurate
+                              𝒏 − 𝟏 𝒊=𝟏
+                                                                      and stable. Even with an imbalanced multiclass dataset, it effec-
+The formula for 𝑦′𝑖 is:                                               tively generalizes well across classes. The improvement is due to
+                                                                      ensemble learning, which combines multiple models to reduce
+                                            𝒏
+                                         𝟏∑                           bias and variance, making it more robust than individual models
+                       Sample mean =          𝒚               (24)
+                                         𝒏 𝒊=𝟏 𝒊                      like MLP, Random Forest, and SVM.
+
+where 𝑦𝑖 is the individual data point, 𝑦′𝑖 is the sample mean
+defined in Equation (24), 𝑛 is the sample size.                       5.3 | Comparison Between Baseline Model
+                                                                      and Proposed Algorithm
+The ensemble algorithm has the lowest variance (20.6263), mak-
+ing it the most consistent in its predictions. High variance in MLP   The Table 2 compares the classification accuracy of MLP, Ran-
+(57.7706) indicates erratic predictions, likely due to overfitting.   dom Forest, SVM, and an Optimized Ensemble Algorithm. MLP
+The ensemble approach reduces variance by combining diverse           achieved the lowest accuracy at 62.66%, likely due to its sensitiv-
+models, thus avoiding overfitting.                                    ity to noise and limited generalization on this dataset. Random
+
+
+Engineering Reports, 2025                                                                                                       19 of 22
+
+===== PDF PAGE 20 / 22 =====
+                                                                                                                                                           25778196, 2025, 11, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/eng2.70455 by Cochrane Peru, Wiley Online Library on [03/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+TABLE 2 |       Performance metrics of machine learning algorithms for eye-gaze-based keyboard selection.
+
+    Algorithm             Accuracy           MSE          RMSE           MAPE             Variance           STD             CV          Skewness
+    MLP                     62.66%          57.5831        7.5884       67.3476%           57.7706          7.6007          1.9741         −0.1037
+    Random Forest           75.89%          47.7305        6.9087       45.3384%           47.5648          6.9087          2.1902         −0.8850
+    SVM                     76.60%          38.5248        6.2068       41.9792%           38.5925          6.2068          2.5612         −0.4598
+    Optimized               83.44%          20.5682        4.5352       43.8389%           20.6263          4.5352          2.8723         −0.2632
+    Ensemble
+    Algorithm
+
+
+
+Forest showed a significant improvement with 75.89%, benefit-
+ing from its ability to handle non-linear relationships and reduce
+                                                                            Author Contributions
+overfitting. SVM slightly outperformed Random Forest with
+76.60%, likely due to its margin-maximizing approach, which                 Sadia Afrin: conceptualization, methodology, software, data curation,
+worked well for the dataset’s feature distribution. The Optimized           investigation, writing – original draft, writing – review and editing, visu-
+Ensemble Algorithm achieved the highest accuracy at 83.44% by               alization, formal analysis, resources. Afrin Ahmed: conceptualization,
+                                                                            formal analysis. Mehrin Anannya: supervision. Samrat Kumar Dey:
+combining predictions from the individual models, leveraging
+                                                                            investigation, validation, visualization. Md. Moshiur Rahman: super-
+their complementary strengths, and reducing biases. This high-              vision. Rashed Mazumder: project administration, supervision.
+lights the ensemble algorithm’s superiority in achieving robust
+and accurate classification, demonstrating its ability to outper-
+                                                                            Acknowledgments
+form standalone models. The Optimized Ensemble Algorithm
+consistently outperforms the other models across several met-               The authors gratefully acknowledge Sabbir Ahmed, Silvia Binte Nur,
+                                                                            Md. Farhad Hossain, M. Shamim Kaiser, and Mufti Mahmud for gen-
+rics, with the lowest Mean Squared Error (MSE) of 20.5682 and
+                                                                            erously sharing the scanpath images, which were essential for creating
+Root Mean Squared Error (RMSE) of 4.5352, indicating superior               the customized dataset and enabling this research. This research work
+algorithm performance. It also has the lowest Mean Absolute Per-            is partially funded by the Information and Communication Technology
+centage Error (MAPE) of 43.3389%, demonstrating its efficiency              (ICT) Division, Ministry of Posts, Telecommunications, and Informa-
+in predicting values. In terms of variance and standard devia-              tion Technology, People’s Republic of Bangladesh with Grant number:
+tion (STD), the Optimized Ensemble Algorithm also shows the                 1280101-120008431-3631107.
+least variation in its predictions (Variance: 20.6263, STD: 4.5352).
+Furthermore, it achieves a relatively lower coefficient of varia-           Ethics Statement
+tion (CV) of 2.8723 and a skewness of −0.2632, indicating a more            This study uses a secondary dataset originally collected with appro-
+balanced and stable prediction distribution compared to MLP,                priate ethical approval that can be accessed at this link: AssistiveAI-
+Random Forest, and SVM.                                                     Autism/Data Permission at main AfrinSadi/AssistiveAI-Autism GitHub.
+                                                                            All procedures performed in studies involving human participants were
+                                                                            in accordance with the ethical standards of the Biosafety, Biosecurity, and
+                                                                            Ethical Clearance Committee of Jahangirnagar University, Savar, 1342
+6     | Conclusion
+                                                                            Dhaka, Bangladesh and with the 1964 Helsinki declaration and its later
+                                                                            amendments or comparable ethical standards.
+In conclusion, this research developed an educational assistive
+system tailored for individuals with Autism Spectrum Disorder               Consent
+(ASD), integrating eye-tracking technology and machine learn-
+ing algorithms into a smart board. By leveraging fixation val-              Informed consent was obtained from all individual participants included
+                                                                            in the study.
+ues and Area of Interest (AOI) analysis, the system introduced a
+novel, hands-free keyboard selection method intended to support
+communication and learning experiences. The evaluation using                Conflicts of Interest
+an Optimized Ensemble Algorithm showed strong performance,                  The authors declare no conflicts of interest.
+achieving an accuracy of 83.44% and outperforming baseline
+models, thereby supporting the system’s functionality. Utilizing            Data Availability Statement
+a pre-existing collection of scanpath images from 15 Bangladeshi
+                                                                            The data that support the findings of this study are openly
+children with ASD, gaze-related features were extracted and pro-            available in AssistiveAI-Autism at https://github.com/AfrinSadi/
+cessed to create a customized dataset for the machine learn-                AssistiveAI-Autism.git.
+ing pipeline. This work demonstrates technical effectiveness and
+offers a culturally relevant, dataset-driven reference for future           References
+assistive technologies in underrepresented communities. The
+                                                                            1. Cleveland Clinic Staff, “What Is Autism Spectrum Disorder (ASD),”
+proposed system shows potential to foster better interaction with
+                                                                            (2024), https://my.clevelandclinic.org/health/diseases/8855-autism.
+parents, teachers, and caregivers, which may contribute to pro-
+moting social engagement and improving quality of life for neu-             2. H. Staff, “Everything You Want to Know About Autism Spectrum Dis-
+rodiverse learners. Overall, this research underscores the poten-           order (ASD),” (2024), https://www.healthline.com/health/autism.
+tial role of innovative technologies in creating inclusive and effec-       3. C. A. Lord, S. Risi, L. Lambrecht, et al., “The Autism Diagnostic
+tive educational solutions for individuals with ASD.                        Observation Schedule—Generic: A Standard Measure of Social and
+
+
+20 of 22                                                                                                                      Engineering Reports, 2025
+
+===== PDF PAGE 21 / 22 =====
+                                                                                                                                                              25778196, 2025, 11, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/eng2.70455 by Cochrane Peru, Wiley Online Library on [03/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+Communication Deficits Associated With the Spectrum of Autism,” Jour-         Ability of Children With Autism Spectrum Disorders,” Computational
+nal of Autism and Developmental Disorders 30 (2000): 205–223.                 Intelligence and Neuroscience 21 (2022): 1–12.
+4. M. A. Marty and D. L. Segal, DSM-5: Diagnostic and Statistical Manual      22. H. A.-K. Mashaqba, “A Corpus-Based Pragmatic Analysis of Jordani-
+of Mental Disorders (Wiley-Blackwell, 2015).                                  ans Facebook Status Updates During COVID-19,” Ampersand 10 (2023):
+                                                                              100099.
+5. J. A.-F. Locke, J. Locke, C. Kasari, E. Rotheram-Fuller, M. Kretzmann,
+and J. Jacobs, “Social Network Changes Over the School Year Among Ele-        23. V. E. Tatinyuy, A. V. N. Woguia, J. M. Ngono, et al., “Multi-Stage
+mentary School-Aged Children With and Without an Autism Spectrum              Gaze-Controlled Virtual Keyboard Using Eye Tracking,” PLoS One 19
+Disorder,” School Mental Health 5 (2012): 38–47.                              (2024).
+6. B. A. Reichow, B. Reichow, A. M. Steiner, and F. Volkmar, “Social Skills   24. C. Yu, S. Wang, D. Zhang, et al., “HSVRS: A Virtual Reality System of
+Groups for People Aged 6 to 21 With Autism Spectrum Disorders (ASD),”         the Hide-and-Seek Game to Enhance Gaze Fixation Ability for Autistic
+Cochrane Database of Systematic Reviews 2012 (2012): CD008511.                Children,” arXiv (2023).
+7. C. M. Schall, P. Wehman, and S. Carr, “Transition From High School         25. G. S. Kumar, G. Sravan Kumar, G. Mythri, G. Tejaswini, K. Ayesha
+to Adulthood for Adolescents and Young Adults With Autism Spectrum            Bhanu, and K. Vaishnavi, “Eye Ball Cursor Movement Using OPENCV,”
+Disorders,” in Adolescents and Adults With Autism Spectrum Disorders          Ymer Digital 21 (2022): 534–539.
+(Springer, 2014), 41–60.
+                                                                              26. Y. Ishizaki, T. Higuchi, Y. Yanagimoto, et al., “Eye Gaze Differences
+8. S. Ahmed, S. B. Nur, Md. F. Hossain, et al., “Computational Intelligence   in School Scenes Between Preschool Children and Adolescents With
+in Detection and Support of Autism Spectrum Disorder. Research Gate,”         High-Functioning Autism Spectrum Disorder and Those With Typical
+(2022).                                                                       Development,” BioPsychoSocial Medicine 15 (2021): 1–7.
+9. S. Ahmed, Md. F. Hossain, S. B. Nur, et al., “Toward Machine               27. I. A. Bhatti, “A Multimodal Affect Recognition Adaptive Learning Sys-
+Learning-Based Psychological Assessment of Autism Spectrum Disorders          tem for Individuals With Intellectual Disabilities,” (2023).
+in School and Community. Research Gate,” (2022).
+                                                                              28. N. I. Arshad, A. Sobri Hashim, M. M. Ariffin, et al., “Robots as Assis-
+10. A. Nazari, L. Alabood, M. K. Rathbun, et al., “Evaluating Gaze Inter-     tive Technology Tools to Enhance Cognitive Abilities and Foster Valuable
+actions Within AR for Nonspeaking Autistic Users,” ACM Symposium on           Learning Experiences Among Young Children With Autism Spectrum
+Virtual Reality Software and Technology (2024): 1–11.                         Disorder,” IEEE Access (2020): 1–1.
+11. R. A. de Belen, H. Pincham, A. Hodge, et al., “Eye-Tracking Corre-
+                                                                              29. D. A. Silvera-Tawil, D. Silvera-Tawil, S. Bruck, Y. Xiao, and
+lates of Response to Joint Attention in Preschool Children With Autism
+                                                                              D. Bradford, “Socially-Assistive Robots to Support Learning in Students
+Spectrum Disorder,” BMC Psychiatry 23 (2023): 1–17.
+                                                                              on the Autism Spectrum: Investigating Educator Perspectives and a Pilot
+12. J. Shannon, C. Salomon, T. Chettiath, et al., “Autism Spectrum Dis-       Trial of a Mobile Platform to Remove Barriers to Implementation,” Sen-
+order and the Promise of Artificial Intelligence,” Journal of Child and       sors (Basel) 22 (2022): 6125.
+Adolescent Behavior 10, no. 1 (2022): 1000428.
+                                                                              30. T. A. Ghosh, “A Monitoring System for Patients of Autism Spectrum
+13. H. A. Drimalla, H. Drimalla, T. Scheffer, et al., “Towards the Auto-      Disorder Using Artificial Intelligence,” (2020).
+matic Detection of Social Biomarkers in Autism Spectrum Disorder:
+                                                                              31. V. K. Jaswal, A. Wayne, and H. Golino, “Eye-Tracking Reveals Agency
+Introducing the Simulated Interaction Task (SIT),” npj Digital Medicine
+                                                                              in Assisted Autistic Communication,” Scientific Reports 10 (2020): 7882.
+3 (2020): 25.
+                                                                              32. P. A. Chakraborty, P. Chakraborty, D. Roy, M. Z. Rahman, and
+14. C. Voss, N. Haber, P. Washington, et al., “Designing a Holistic
+                                                                              S. Rahman, “Eye Gaze Controlled Virtual Keyboard,” International
+At-Home Learning Aid for Autism. arXiv Preprint arXiv:2002.04263,”
+(2020).                                                                       Journal of Recent Technology and Engineering (IJRTE) 8 (2019):
+                                                                              3264–3269.
+15. K. A. Takata, K. Takata, Y. Yoshikawa, et al., “Social Skills Training
+Using Multiple Humanoid Robots for Individuals With Autism Spectrum           33. M. A. Zhang, M. Zhang, H. Ding, M. Naumceska, and Y. Zhang, “Vir-
+Conditions,” Frontiers in Psychiatry 14 (2023): 1168837.                      tual Reality Technology as an Educational and Intervention Tool for Chil-
+                                                                              dren With Autism Spectrum Disorder: Current Perspectives and Future
+16. C. K. Syriopoulou-Delli and E. Gkiolnta, “Review of Assistive Tech-       Directions,” Behavioral Science 12 (2022): 138.
+nology in the Training of Children With Autism Spectrum Disor-
+ders,” International Journal of Developmental Disabilities 68 (2022):         34. K. J. Rechowicz, J. B. Shull, M. M. Hascall, S. Y. Diallo, and K. J.
+73–85.                                                                        O’Brien, “Internet-Of-Things Devices in Support of the Development of
+                                                                              Echoic Skills Among Children With Autism Spectrum Disorder,” Sensors
+17. M. A. Leharanger, M. Leharanger, E. A. Rodriguez Martinez,                21 (2021): 4621.
+O. Balédent, and L. Vandromme, “Familiarization With Mixed Reality for
+Individuals With Autism Spectrum Disorder: An Eye Tracking Study,”            35. Y. Purnama, F. A. Herman, J. Hartono, et al., “Educational Software
+Sensors (Basel) 23 (2023): 6304.                                              as Assistive Technologies for Children With Autism Spectrum Disorder,”
+                                                                              Procedia Computer Science 179 (2021): 6–16.
+18. S. Mahini, “Virtual Reality as a Tool for Children With Autism Spec-
+trum Disorder,” Digital Technologies Research and Applications 3 (2024):      36. R. A. Cañete and M. Estela Peralta, “ASDesign: A User-Centered
+16–23.                                                                        Method for the Design of Assistive Technology That Helps Children With
+                                                                              Autism Spectrum Disorders be More Independent in Their Daily Rou-
+19. J. A. Zhao, J. Zhao, X. Zhang, et al., “Virtual Reality Technol-          tines,” Sustainability 14 (2022): 516.
+ogy Enhances the Cognitive and Social Communication of Children
+With Autism Spectrum Disorder,” Frontiers in Public Health 10 (2022):         37. S. Suzuki and K. Abe, “Topological Structural Analysis of Digitized
+1029392.                                                                      Binary Images by Border Following,” Computer Vision, Graphics, and
+                                                                              Image Processing 30 (1985): 32–46.
+20. J. P. Jain, A. Mukhopadhyay, D. Venkatesh, et al., “Eye Gaze Con-
+trolled Adaptive Virtual Keyboard for Users With SSMI,” Technology and        38. T. E. Oliphant, “scipy.spatial.distance,” (2006), https://docs.scipy.org/
+Disability 33 (2021): 1–20.                                                   doc/scipy/reference/generated/scipy.spatial.distance.euclidean.html#
+                                                                              scipy.spatial.distance.euclidean.
+21. M. A. Hameed, M. Hassaballah, M. E. Hosney, et al., “An AI-Enabled
+Internet of Things Based Autism Care System for Improving Cognitive           39. L. Breiman, “Random Forests,” Machine Learning 45 (2001): 5–32.
+
+
+Engineering Reports, 2025                                                                                                                        21 of 22
+
+===== PDF PAGE 22 / 22 =====
+                                                                                                           25778196, 2025, 11, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/eng2.70455 by Cochrane Peru, Wiley Online Library on [03/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+40. B. Schölkopf, A. Smola, and K. Müller, “Nonlinear Component Anal-
+ysis as a Kernel Eigenvalue Problem,” Neural Computation 10 (1998):
+1299–1319.
+41. A. C. Cortes, C. Cortes, and V. Vapnik, “Support-Vector Networks,”
+Machine Learning 20 (1995): 273–297.
+42. J. Platt, “Probabilistic Outputs for Support Vector Machines and Com-
+parisons to Regularized Likelihood Methods,” Advances in Large Margin
+Classifiers (2000).
+43. C. M. Bishop, Pattern Recognition and Machine Learning (Springer,
+2006).
+44. D. W. Hosmer Jr, S. Lemeshow, R. X. Sturdivant, et al., Applied Logistic
+Regression, 3rd ed. (Wiley, 2013).
+
+Supporting Information
+Additional supporting information can be found online in the Supporting
+Information section. Data S1: Supporting Information.
+
+
+
+
+22 of 22                                                                       Engineering Reports, 2025

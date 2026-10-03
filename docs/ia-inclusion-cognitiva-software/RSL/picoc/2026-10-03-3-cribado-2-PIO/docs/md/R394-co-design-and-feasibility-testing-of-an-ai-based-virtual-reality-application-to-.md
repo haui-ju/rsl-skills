@@ -1,0 +1,1051 @@
+# Journal of Applied Research in Intellectual Disabilities
+
+> Fuente PDF: `R394-co-design-and-feasibility-testing-of-an-ai-based-virtual-reality-application-to-.pdf` · técnica **locator index** (página + ancla) + chunks Graphify
+
+## Metadata
+- Stem: `R394-co-design-and-feasibility-testing-of-an-ai-based-virtual-reality-application-to-`
+- PDF: `R394-co-design-and-feasibility-testing-of-an-ai-based-virtual-reality-application-to-.pdf`
+- DOI: `10.1111/jar.70219`
+- Pages: `13`
+- Structured_at: `2026-10-03T23:23:17+00:00`
+- Technique: `pdf-page-locators + heading-chunks`
+
+## Locator index (qué hay y en qué página del PDF)
+
+| Kind | Label | PDF page | MD anchor |
+|------|-------|----------|-----------|
+| abstract | Abstract / blurb | 1 | `#abstract` |
+| concept | R394 | ? | `#concept-r394` |
+| concept | design | ? | `#concept-design` |
+| concept | feasibility | ? | `#concept-feasibility` |
+| concept | testing | ? | `#concept-testing` |
+| concept | based | ? | `#concept-based` |
+| concept | virtual | ? | `#concept-virtual` |
+| concept | reality | ? | `#concept-reality` |
+| concept | application | ? | `#concept-application` |
+| finding | Background: People with intellectual disability experience barriers in accessing healthcar… | 1 | `#finding-background-people-with-intellectual-dis` |
+| finding | A virtual reality (VR) application that includes an intelligent agent powered by generativ… | 1 | `#finding-a-virtual-reality-vr-application-that` |
+| finding | Objective: To co-­design, develop and evaluate the feasibility and usability of an AI-­bas… | 1 | `#finding-objective-to-co-design-develop-and-ev` |
+| finding | Participants interacted verbally with AI avatars. | 1 | `#finding-participants-interacted-verbally-with-ai` |
+| finding | Semi-­structured interviews followed each scene. | 1 | `#finding-semi-structured-interviews-followed-eac` |
+| finding | Results: Participants valued the avatars' clear, patient communication and described the s… | 1 | `#finding-results-participants-valued-the-avatars` |
+| page | p.1: Journal of Applied Research in Intellectual Disabilities | 1 | `#pdf-p1` |
+| page | p.2: have aimed to prepare people for healthcare interactions, used | 2 | `#pdf-p2` |
+| page | p.3: VR experience to get an understanding of VR. Participants iden- 2.4 / Materials | 3 | `#pdf-p3` |
+| page | p.4: TABLE 1 / Participant characteristics and baseline healthcare TABLE 1 / (Continued) | 4 | `#pdf-p4` |
+| page | p.5: FIGURE 1 / Virtual reality environment. Scene 1—Checking in with the receptionist (A). Sce | 5 | `#pdf-p5` |
+| page | p.6: development involving collaborative discussion until consensus active questioning and self | 6 | `#pdf-p6` |
+| page | p.7: The content of the VR programme was mostly considered less Participants who were familiar  | 7 | `#pdf-p7` |
+| page | p.8: the waiting room and doctor's office disorienting: ‘It's confus- Participant 3 explained,  | 8 | `#pdf-p8` |
+| page | p.9: Participant 2: [Interjection] [Expletive]. … it's a good way of getting information. … A l | 9 | `#pdf-p9` |
+| page | p.10: conversational comments constrained natural dialogue in some by removing anxiety-­provokin | 10 | `#pdf-p10` |
+| page | p.11: Acknowledgements Birckhead, B., C. Khalil, and X. Liu. 2019. “Recommendations for | 11 | `#pdf-p11` |
+| page | p.12: Gibbs, S. M., M. Brown, and W. Muir. 2008. “The Experiences of Adults Mimmo, L., M. Hodgin | 12 | `#pdf-p12` |
+| page | p.13: Weise, J. C., P. Srasuebkul, and J. N. Trollor. 2021. “Potentially | 13 | `#pdf-p13` |
+
+## Abstract
+<a id="abstract"></a>
+
+Background: People with intellectual disability experience barriers in accessing healthcare. A virtual reality (VR) application that includes an intelligent agent powered by generative artificial intelligence (AI) may support preparation for healthcare visits in this population. Objective: To co-­design, develop and evaluate the feasibility and usability of an AI-­based VR application to improve healthcare preparedness for people with intellectual disability. Methods: Ten adults with intellectual disability completed an AI-­V R experience simulating a general practitioner visit across three sequential scenes: checking in with a receptionist, waiting in a clinic waiting room, and consulting with a doctor. Participants interacted verbally with AI avatars. Semi-­structured interviews followed each scene. Results: Participants valued the avatars' clear, patient communication and described the system as supportive for learning healthcare content and practising communication and self-­advocacy skills. Usability issues were identified. Conclusion: AI-­V R appears feasible and acceptable for healthcare preparation in people with intellectual disability. Refinements to system usability are needed to support independent use and broader implementation.
+
+## Keywords
+
+- _(none auto-detected)_
+
+## Concept index (graph hooks + página)
+
+<a id="concept-r394"></a>
+### [PDF p.?] Concept: R394
+- Locator: `R394-co-design-and-feasibility-testing-of-an-ai-based-virtual-reality-application-to-.pdf` · página **?**
+
+<a id="concept-design"></a>
+### [PDF p.?] Concept: design
+- Locator: `R394-co-design-and-feasibility-testing-of-an-ai-based-virtual-reality-application-to-.pdf` · página **?**
+
+<a id="concept-feasibility"></a>
+### [PDF p.?] Concept: feasibility
+- Locator: `R394-co-design-and-feasibility-testing-of-an-ai-based-virtual-reality-application-to-.pdf` · página **?**
+
+<a id="concept-testing"></a>
+### [PDF p.?] Concept: testing
+- Locator: `R394-co-design-and-feasibility-testing-of-an-ai-based-virtual-reality-application-to-.pdf` · página **?**
+
+<a id="concept-based"></a>
+### [PDF p.?] Concept: based
+- Locator: `R394-co-design-and-feasibility-testing-of-an-ai-based-virtual-reality-application-to-.pdf` · página **?**
+
+<a id="concept-virtual"></a>
+### [PDF p.?] Concept: virtual
+- Locator: `R394-co-design-and-feasibility-testing-of-an-ai-based-virtual-reality-application-to-.pdf` · página **?**
+
+<a id="concept-reality"></a>
+### [PDF p.?] Concept: reality
+- Locator: `R394-co-design-and-feasibility-testing-of-an-ai-based-virtual-reality-application-to-.pdf` · página **?**
+
+<a id="concept-application"></a>
+### [PDF p.?] Concept: application
+- Locator: `R394-co-design-and-feasibility-testing-of-an-ai-based-virtual-reality-application-to-.pdf` · página **?**
+
+
+## Findings index (graph hooks + página)
+
+<a id="finding-background-people-with-intellectual-dis"></a>
+### [PDF p.1] Finding: Background: People with intellectual disability experience barriers in accessing healthcare.
+- Locator: `R394-co-design-and-feasibility-testing-of-an-ai-based-virtual-reality-application-to-.pdf` · página **1**
+
+<a id="finding-a-virtual-reality-vr-application-that"></a>
+### [PDF p.1] Finding: A virtual reality (VR) application that includes an intelligent agent powered by generative artificial intelligence (AI) may support preparation for healthcare visits in this population.
+- Locator: `R394-co-design-and-feasibility-testing-of-an-ai-based-virtual-reality-application-to-.pdf` · página **1**
+
+<a id="finding-objective-to-co-design-develop-and-ev"></a>
+### [PDF p.1] Finding: Objective: To co-­design, develop and evaluate the feasibility and usability of an AI-­based VR application to improve healthcare preparedness for people with intellectual disability.
+- Locator: `R394-co-design-and-feasibility-testing-of-an-ai-based-virtual-reality-application-to-.pdf` · página **1**
+
+<a id="finding-participants-interacted-verbally-with-ai"></a>
+### [PDF p.1] Finding: Participants interacted verbally with AI avatars.
+- Locator: `R394-co-design-and-feasibility-testing-of-an-ai-based-virtual-reality-application-to-.pdf` · página **1**
+
+<a id="finding-semi-structured-interviews-followed-eac"></a>
+### [PDF p.1] Finding: Semi-­structured interviews followed each scene.
+- Locator: `R394-co-design-and-feasibility-testing-of-an-ai-based-virtual-reality-application-to-.pdf` · página **1**
+
+<a id="finding-results-participants-valued-the-avatars"></a>
+### [PDF p.1] Finding: Results: Participants valued the avatars' clear, patient communication and described the system as supportive for learning healthcare content and practising communication and self-­advocacy skills.
+- Locator: `R394-co-design-and-feasibility-testing-of-an-ai-based-virtual-reality-application-to-.pdf` · página **1**
+
+
+## Relevance hooks
+### Theme relevance: software engineering and accessibility
+### Theme relevance: cognitive accessibility and neurodiversity
+### Theme relevance: evaluation metrics and WCAG
+
+## Sections (detected in PDF)
+
+_(no numbered sections auto-detected)_
+
+
+## Page chunks (texto por página del PDF)
+
+_Cada heading es un nodo Graphify. El label incluye la página para volver al PDF sin releer todo._
+
+<a id="pdf-p1"></a>
+### [PDF p.1] Journal of Applied Research in Intellectual Disabilities
+- Locator: `R394-co-design-and-feasibility-testing-of-an-ai-based-virtual-reality-application-to-.pdf` · página **1** / 13
+
+Journal of Applied Research in Intellectual Disabilities
+
+
+                                                                                                                                                     Published for the British Institute of Learning Disabilities
+
+
+
+
+   ORIGINAL ARTICLE                    OPEN ACCESS
+
+
+
+
+Co-­Design and Feasibility Testing of an AI-­Based Virtual
+Reality Application to Prepare People With Intellectual
+Disability for Healthcare Visits
+Stefan C. Michalski1           | Jane Adams1 | Ali Darejeh2 | Rachael C. Cvejic1 | Sylvia M. Gustin3 | Julian N. Trollor1
+1National Centre of Excellence in Intellectual Disability Health, Faculty of Medicine and Health, UNSW Sydney, Sydney, New South Wales,
+
+Australia | 2School of Computer Science and Engineering, Faculty of Engineering, UNSW Sydney, Sydney, New South Wales, Australia | 3NeuroRecovery
+Research Hub, School of Psychology, Faculty of Science, UNSW Sydney, Sydney, New South Wales, Australia
+
+
+Correspondence: Stefan C. Michalski (s.michalski@unsw.edu.au)
+
+Received: 5 November 2025 | Revised: 22 February 2026 | Accepted: 16 March 2026
+
+Keywords: artificial intelligence | healthcare access | intellectual disability | qualitative | virtual reality
+
+
+  ABSTRACT
+  Background: People with intellectual disability experience barriers in accessing healthcare. A virtual reality (VR) application
+  that includes an intelligent agent powered by generative artificial intelligence (AI) may support preparation for healthcare visits
+  in this population.
+  Objective: To co-­design, develop and evaluate the feasibility and usability of an AI-­based VR application to improve healthcare
+  preparedness for people with intellectual disability.
+  Methods: Ten adults with intellectual disability completed an AI-­V R experience simulating a general practitioner visit across
+  three sequential scenes: checking in with a receptionist, waiting in a clinic waiting room, and consulting with a doctor. Participants
+  interacted verbally with AI avatars. Semi-­structured interviews followed each scene.
+  Results: Participants valued the avatars' clear, patient communication and described the system as supportive for learning
+  healthcare content and practising communication and self-­advocacy skills. Usability issues were identified.
+  Conclusion: AI-­V R appears feasible and acceptable for healthcare preparation in people with intellectual disability. Refinements
+  to system usability are needed to support independent use and broader implementation.
+
+
+1   |   Introduction                                                                  have been identified decades ago (Lennox et al. 1997), and re-
+                                                                                      main unaddressed today (Doherty et al. 2020; Shea et al. 2022;
+People with intellectual disability experience severe health                          Barrington et al. 2025). The Australian healthcare system has
+disparities, including higher rates of preventable hospitalisa-                       failed to meet the needs of people with intellectual disability
+tions (Weise et al. 2021), higher rates of potentially avoidable                      (Trollor 2020). Innovative approaches to improve healthcare ac-
+deaths, and death earlier than the general population (Trollor                        cess for this population are therefore needed.
+et al. 2017). Despite an elevated risk profile, people with intellec-
+tual disability have higher unmet health needs (Bauer et al. 2019;                    Healthcare access barriers operate at both the systemic and indi-
+Byrne et al. 2016; Salvador-­Carulla and Symonds 2016) and                            vidual level for people with intellectual disability. Systemic bar-
+lower uptake of preventative health services such as screenings,                      riers include limited accessible information (Geukes et al. 2018;
+regular check-­ups, and vaccinations (Emerson et al. 2011; Felce                      Ali et al. 2013; Powrie 2003), time constraints within healthcare
+et al. 2008; Havercamp and Scott 2015). People with intellectual                      appointments (Burton and Walters 2013; Brown et al. 2017;
+disability experience many barriers accessing healthcare that                         Zarotti et al. 2022), lack of knowledge and training of health
+
+
+This is an open access article under the terms of the Creative Commons Attribution License, which permits use, distribution and reproduction in any medium,
+provided the original work is properly cited.
+© 2026 The Author(s). Journal of Applied Research in Intellectual Disabilities published by John Wiley & Sons Ltd.
+
+
+Journal of Applied Research in Intellectual Disabilities, 2026; 39:e70219                                                                                                    1 of 13
+https://doi.org/10.1111/jar.70219
+
+<a id="pdf-p2"></a>
+### [PDF p.2] have aimed to prepare people for healthcare interactions, used
+- Locator: `R394-co-design-and-feasibility-testing-of-an-ai-based-virtual-reality-application-to-.pdf` · página **2** / 13
+
+14683148, 2026, 2, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/jar.70219 by Cochrane Peru, Wiley Online Library on [03/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+                                                                       have aimed to prepare people for healthcare interactions, used
+   Lay Summary                                                         computer-­   based programmes for autistic individuals (Boada
+                                                                       and Parellada 2017) and people with intellectual disability (Hall
+    • We developed a virtual reality programme using arti-
+      ficial intelligence to help people with intellectual disa-       et al. 2011), but these were neither immersive nor interactive.
+      bility prepare for healthcare visits.                            More recently, Acton et al. (2024) co-­designed and developed an
+                                                                       immersive VR experience that incorporated personalised videos
+    • Ten people with intellectual disability tested the pro-
+                                                                       of healthcare staff, with clinicians providing brief introductions
+      gramme. They liked the clear communication and
+                                                                       and sharing information about themselves. The VR experience
+      found it helpful for learning and practising questions.
+                                                                       aimed to build rapport by helping participants become familiar
+    • Speech recognition errors and other technical prob-              with staff prior to appointments. The study found statistically
+      lems meant people needed some help to use the                    significant reductions in fear scores and improvements in qual-
+      programme.                                                       ity of life. Building on this foundation, there is potential to en-
+    • The study shows what is needed to make virtual real-             hance VR environments with interactive capabilities that enable
+      ity programmes accessible for people with intellectual           users to practise communication and engage in real-­time ex-
+      disability.                                                      changes with healthcare staff.
+
+                                                                       Integrating artificial intelligence (AI) into VR offers an oppor-
+professionals in intellectual disability health (Rinaldi and           tunity to provide personalised healthcare preparation for people
+Batsele 2023; Northway et al. 2017; Cross et al. 2012; Newton          with intellectual disability. AI-­based conversational agents can
+and McGillivray 2019; Navas et al. 2019), and stigma or discrimi-      answer users' specific questions or concerns before attending
+nation (Donner et al. 2010; Tuffrey-­Wijne et al. 2014; Agaronnik      an appointment. In the immersive VR environment, users can
+et al. 2020; Jones et al. 2008). At the individual level, anxiety      practise common healthcare activities including checking in for
+(Lennox et al. 1997; Burton and Walters 2013), fear and embar-         appointments, experience the waiting room environment, and
+rassment (Codling 2015; Miller et al. 2008; Raymaker et al. 2017),     practise asking questions to the doctor. Early work has demon-
+and a general lack of trust due to past negative experiences           strated the potential for AI-­based conversational agents in re-
+(Donner et al. 2010; Cox et al. 2021; Gibbs et al. 2008; Weiss         lated contexts, with applications such as job interview training
+and Lunsky 2010), are commonly reported barriers (Doherty              for young adults with autism spectrum disorder showing prom-
+et al. 2020; Shea et al. 2022). Whilst systemic barriers require       ising outcomes in augmented reality environments (Hartholt
+broad structural changes to healthcare delivery, individual bar-       et al. 2019). AI-­based VR experiences can provide visual cues
+riers related to anxiety, communication skills, and healthcare         and step-­by-­step guidance that accommodate individual com-
+preparedness present opportunities for targeted interventions          munication styles and learning needs, potentially reducing anx-
+that can directly address modifiable factors affecting healthcare      iety, increasing comfort, and improving willingness to seek care.
+access.
+                                                                       The primary goal of this study is to co-­design, develop, and eval-
+The National Roadmap for Improving the Health of People                uate the feasibility and usability of immersive AI-­based VR ap-
+with Intellectual Disability in Australia recognised these ac-         plications to improve healthcare preparedness for people with
+cess challenges and included a strategic action to explore the         intellectual disability. Specifically, the study aims to: (1) Co-­
+use of emerging technologies to reduce barriers to health care         design and develop an AI-­based VR application simulating typi-
+(Australian Government Department of Health 2021). Virtual             cal healthcare environments and interactions, such as attending
+reality (VR) is gaining interest amongst researchers and disabil-      a general practitioner's (GP's) clinic; (2) Evaluate the feasibility
+ity support professionals for its potential to enable experiential     and usability of the application through user testing with people
+learning opportunities. People with intellectual disability often      with intellectual disability; (3) Identify factors that influence en-
+experience difficulties processing abstract concepts and gen-          gagement with AI-­based VR to make people feel more prepared
+eralising skills across contexts (Spaniol and Danielsson 2022;         for healthcare interactions.
+Hronis et al. 2017). VR enables learning through direct experi-
+ence in controlled and repeatable simulations that break down
+complex real-­world experiences into manageable steps. Users           2   |   Materials and Methods
+can practise skills and build confidence in unfamiliar settings
+without relying on verbal instruction or abstract reasoning.           2.1   |   Co-­Design
+Importantly, there is growing evidence demonstrating that im-
+mersive VR is both well tolerated and effective for supporting         The co-­design process involved two sequential 2-­h meetings
+skill development in people with intellectual disability, includ-      held 5 months apart, including people with intellectual disabil-
+ing training life skills (Franze et al. 2024; Michalski et al. 2023;   ity and a facilitator from the Council for Intellectual Disability
+Nabors et al. 2020). The application of VR in healthcare for peo-      (NSW, Australia). The first session focused on barriers to health-
+ple with intellectual disability, however, remains limited.            care for people with intellectual disability and explored how VR
+                                                                       might address these challenges. Participants described difficul-
+Most existing VR health research for people with intellectual dis-     ties with communication, lack of consent, feeling rushed, and
+ability focuses on physical fitness interventions and motivation       sensory stressors such as loud noises and bright lights. They
+to engage in exercise activities (Li et al. 2023; Mocco et al. 2024)   emphasised the need for clear explanations, empathy from
+and distraction-­ based interventions during medical proce-            healthcare providers, and being informed about what to expect.
+dures (Mehrotra et al. 2023; Mehrotra et al. 2024). Some studies       During this co-­design session, participants tried an off-­the-­shelf
+
+2 of 13                                                                                Journal of Applied Research in Intellectual Disabilities, 2026
+
+<a id="pdf-p3"></a>
+### [PDF p.3] VR experience to get an understanding of VR. Participants iden- 2.4 | Materials
+- Locator: `R394-co-design-and-feasibility-testing-of-an-ai-based-virtual-reality-application-to-.pdf` · página **3** / 13
+
+14683148, 2026, 2, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/jar.70219 by Cochrane Peru, Wiley Online Library on [03/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+VR experience to get an understanding of VR. Participants iden-        2.4   |   Materials
+tified top priorities for a VR healthcare preparation tool: practise
+talking with doctors, see what the clinic looks like beforehand,       2.4.1   |   VR Apparatus
+reminders of what to bring to an appointment, and use VR in a
+safe space with support. Participants and facilitators discussed       The Meta Quest 3 head-­   mounted display (HMD) was used.
+preparation for general practitioner (GP) visits. Primary care is      Whilst wearing the HMD, participants viewed a three-­
+the main entry point to the healthcare system and the setting          dimensional environment that moved in accordance with their
+where preventative care and early management of health con-            movements in real time. Participants moved freely in the physi-
+cerns occur. The group therefore identified GP appointments            cal environment while their movement was reflected in the vir-
+as an appropriate starting point for developing a healthcare           tual environment. Eyeglasses and hearing aids could be worn
+preparation tool. Participants stressed the importance of clear,       under the device if needed.
+respectful communication and preferred easy-­to-­read adult in-
+formation that respected their autonomy. Following this session,       The device includes handheld controllers that allow users to
+a VR prototype was developed based on the top priorities iden-         interact with and navigate the virtual environment. The re-
+tified by the group. In the second session, participants reviewed      searcher held the controller throughout the session to guide the
+screen recordings of the VR prototype and provided feedback on         virtual experience. The researcher remained within arm's reach
+the reception area, waiting room, and doctor's office scenes. Key      of the participant to assist if needed.
+insights included making conversations feel more natural and
+realistic, ensuring environments look like real GP settings, in-
+cluding common reception steps like checking in and payment,           2.4.2   |   AI-­Based VR Application
+and adding clear examples of what to expect during visits. These
+refinements were implemented for the next iteration to be tested       The co-­designed AI-­based VR application simulated a GP visit
+in the research study.                                                 through three sequential scenarios: checking in with a recep-
+                                                                       tionist, waiting in a clinic waiting room, and consulting with a
+                                                                       doctor (see Figure 1).
+2.2   |   Study Design
+                                                                       Scene 1: Check-­in with the Receptionist. Participants approached
+This study evaluated the feasibility and usability of an AI-­based     an AI-­receptionist who welcomed them to the virtual experi-
+VR application through participant testing and feedback. Semi-­        ence. The receptionist presented five items that you should bring
+structured, open-­ended questions were used to capture partic-         to your healthcare appointments (including a health insurance
+ipants' reflections following the AI-­V R experience. Interviews       card and concession card). Each item appeared in the simulation
+and AI-­generated transcripts were audio-­recorded, transcribed,       and the receptionist explained its purpose. Participants could
+and analysed thematically.                                             ask questions about each item as it was introduced. This scene
+                                                                       took approximately 5–10 min.
+
+2.3   |   Participants                                                 Scene 2: Waiting Room Simulation. The second scene depicted a
+                                                                       clinic waiting room with several avatars, background noise from
+Ten participants with intellectual disability completed the re-        a television, and ambient sounds such as phone calls and peo-
+search study. Participants were recruited from a disability advo-      ple coughing or sneezing. Some avatars sat quietly whilst others
+cacy organisation (NSW, Australia) that we have partnered with         moved around or spoke to one another. Participants remained
+in multiple previous research and capacity building projects. As       seated and waited until the doctor avatar entered the room (ap-
+members or active contributors to the organisation, participants       proximately 2 min).
+had experience engaging in peer-­led initiatives and were famil-
+iar with giving feedback on programmes aimed at improving              Scene 3: Doctor's Consultation. Participants interacted with an AI-­
+accessibility and inclusion.                                           doctor. The doctor introduced themselves, explained the privacy
+                                                                       and safety of the consultation space, and encouraged participants
+Inclusion criteria for participation required that participants        to examine the room. The doctor presented a series of common
+be adults aged 18 years or older with intellectual disability who      medical instruments (e.g., stethoscope and reflex hammer) with
+could speak English, ability to wear a virtual reality headset,        simple explanations of each instrument's function. Participants
+and hold a handheld controller, and were not involved in the co-­      could ask questions about each instrument as it was introduced. If
+design of the application. These criteria were selected to support     participants asked about the treatment of a specific medical con-
+safe use of the VR equipment and to enable direct verbal interac-      dition, the AI-­doctor redirected them to seek advice from a real
+tion with the AI conversational system, which relied on speech         healthcare provider. This scene took approximately 5–10 min.
+input in the current prototype. Exclusion criteria included peo-
+ple who did not meet the inclusion requirements, people who            The AI-­V R application was developed using Unreal Engine 5.
+were involved in co-­design of the application, and people with        Development was conducted on high-­     performance worksta-
+epilepsy, as recommended by Birckhead et al. (2019). The con-          tions equipped with Intel Core i9 processors, NVIDIA GeForce
+cept of ‘information power’ (Malterud et al. 2016) was applied         RTX graphics cards, and 32 GB RAM. The environment was
+to determine whether sufficient data had been obtained. Table 1        modelled using a combination of Unreal Engine assets and
+presents characteristics and baseline healthcare experiences of        custom 3D models created in Blender. AI conversational func-
+the study participants.                                                tionality was implemented through integration of the OpenAI
+
+Journal of Applied Research in Intellectual Disabilities, 2026                                                                     3 of 13
+
+<a id="pdf-p4"></a>
+### [PDF p.4] TABLE 1 | Participant characteristics and baseline healthcare TABLE 1 | (Continued)
+- Locator: `R394-co-design-and-feasibility-testing-of-an-ai-based-virtual-reality-application-to-.pdf` · página **4** / 13
+
+14683148, 2026, 2, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/jar.70219 by Cochrane Peru, Wiley Online Library on [03/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+TABLE 1    |    Participant characteristics and baseline healthcare     TABLE 1    |    (Continued)
+experiences.
+                                                                                                                                 Responses
+                                              Responses
+                                                                            Did the people at the clinic let                         Yes: 7
+ Demographic information                                                    you ask questions?
+                                                                                                                                Sometimes: 1
+   Age in years (mean, range)                 42.9 (27–67)
+                                                                                                                                     No: 2
+   Gender                                      Female: 5
+                                                                            Did you feel safe at the clinic?                         Yes: 6
+                                                 Male: 5
+                                                                                                                                Sometimes: 3
+   At least one co-­occurring health             5 (50%)
+                                                                                                                                     No: 1
+   or mental health condition
+                                                                        a Participants could select multiple responses.
+
+ General information about healthcare access
+   Who usually goes with you to            Family/Partner: 5
+   doctor's appointments?a                                              ChatGPT-­4 API, accessed via Convai middleware (www.​con-
+                                           Support worker: 6
+                                                                        vai.​com). This allowed real-­time communication between the
+                                                Alone: 2
+                                                                        participant's spoken input (captured through the Meta Quest
+   How do you feel when you go to        Happy/Comfortable: 5           3 microphone) and AI-­driven avatars. Scene logic, avatar be-
+   the doctors?a                                                        haviour, and interaction flow were programmed using Unreal's
+                                          Anxious/Nervous: 4
+                                                                        Blueprint Visual Scripting System. The final build was deployed
+                                           Worried/Scared: 4            to the Meta Quest 3 as a standalone executable using Unreal's
+                                                                        Android-­based build pipeline.
+                                                Mixed: 3
+   Do you understand what the                Yes, always: 2
+   doctor tells you?
+                                             Sometimes: 6               2.5   |   Measures
+
+                                            No, not often: 1            2.5.1   |   Demographic and Healthcare Information
+                                                 N/A: 1
+                                                                        A demographic questionnaire collected information including
+   Do you feel comfortable asking            Yes, always: 6             age, gender, and self-­identification as a person with intellectual
+   the doctor questions?                                                disability. The questionnaire assessed healthcare access pat-
+                                             Sometimes: 4
+                                                                        terns, emotional responses to healthcare visits, communication
+                                            No, not often: 0            barriers, and comfort during appointments. Select items from
+   Do you feel the doctor listens            Yes, always: 4             an early version of the Listen to Me Patient-­Reported Experience
+   to you?                                                              Measure (PREM) were also used to assess patient experiences
+                                             Sometimes: 4               at participants' most recent healthcare visit. The Listen to Me
+                                            No, not often: 2            PREM is a co-­   created patient-­  reported experience measure
+                                                                        developed for people with intellectual disability (Harrison
+ Patient reported experience from
+                                                                        et al. 2025).
+ last healthcare visit
+   Did the people who care for you               Yes: 6
+   at the clinic find out how you                                       2.5.2   |   Semi-­Structured Interviews
+                                             Sometimes: 4
+   like to communicate?
+                                                  No: 0                 Following each VR task, semi-­       structured interviews were
+                                                                        conducted to collect qualitative feedback about participants'
+   Did the people who work at the                Yes: 7
+                                                                        experiences. For each VR scene, participants described their
+   clinic listen to you?
+                                             Sometimes: 2               experience, identified what they liked and disliked, and com-
+                                                  No: 1                 pared the virtual environment to their real healthcare experi-
+                                                                        ences. Participants were asked whether they found interacting
+   Did the people at the clinic give             Yes: 7                 with virtual characters difficult, how these characters compared
+   you clear instructions?                                              with real healthcare staff, and what other situations could be
+                                             Sometimes: 2
+                                                                        included in the programme. At the end of the VR experience,
+                                                  No: 1                 participants identified their preferred aspects and suggested
+   Did the people who work at the                Yes: 8                 improvements. Additional questions explored emotional re-
+   clinic tell you things in a way                                      sponses, comfort, and whether the VR experience could support
+                                             Sometimes: 1               real-­life healthcare visits. The questioning framework provided
+   that you understand?
+                                              Not really: 1             structure whilst allowing flexibility to ask follow-­up questions,
+                                                                        request clarification, and adjust pace and language to support
+                                                          (Continues)   individual participants.
+
+
+4 of 13                                                                                     Journal of Applied Research in Intellectual Disabilities, 2026
+
+<a id="pdf-p5"></a>
+### [PDF p.5] FIGURE 1 | Virtual reality environment. Scene 1—Checking in with the receptionist (A). Scene 2—Sitting in the waiting area (B). Scene 3—
+- Locator: `R394-co-design-and-feasibility-testing-of-an-ai-based-virtual-reality-application-to-.pdf` · página **5** / 13
+
+14683148, 2026, 2, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/jar.70219 by Cochrane Peru, Wiley Online Library on [03/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+FIGURE 1    |    Virtual reality environment. Scene 1—Checking in with the receptionist (A). Scene 2—Sitting in the waiting area (B). Scene 3—
+Speaking with the doctor (C).
+
+
+
+2.5.3   |   Task Performance Data                                        2.7   |   Qualitative Analysis
+
+The conversational AI software platform automatically captured           A reflexive thematic analysis approach was used (Braun and
+and transcribed all verbal interactions between participants             Clarke 2006; Braun et al. 2023). JA conducted initial coding of
+and AI conversational agents during the VR experience. These             all transcripts to establish preliminary coding categories. SCM
+transcripts were checked against audio recordings to ensure ac-          then reviewed the transcripts and codes, and both researchers
+curacy and identify instances where the AI agent had misun-              collaboratively identified relationships amongst recurring and
+derstood participants. Key metrics included the total number             conceptually significant codes to construct thematic frame-
+of verbal communicative acts (yes/no responses, questions, and           works. JA maintained detailed notes throughout this process to
+comments), the proportion of valid AI responses, microphone              record decision-­making rationales and theme development pro-
+activation issues, and technical issues. Valid responses were de-        gression. The research team convened regularly to discuss and
+fined as AI responses that appropriately addressed user input,           refine proposed themes. When disagreements arose, these were
+including moving to the next scripted segment after a yes/no re-         resolved through discussion until consensus was reached, and
+sponse, answering a question, or responding on topic to a com-           the process of refining themes continued during the drafting of
+ment. Microphone status was monitored to identify instances              the manuscript. NVivo 14 was used for data management.
+where participants spoke before the microphone was activated
+(indicated by a green microphone signal).
+                                                                         2.8   |   Position of the Researchers
+
+2.6   |   Procedure                                                      SCM is a Research Fellow at the National Centre of Excellence
+                                                                         in Intellectual Disability Health (National Centre) at UNSW
+Data collection was completed at the UNSW Sydney Kensington              Sydney who completed his PhD examining the use of immer-
+campus. Upon arrival, participants provided written consent              sive virtual reality to build capacity in people with intellectual
+and completed the baseline questionnaires. The researcher in-            disability. JA is a PhD candidate in Social Sciences at UNSW
+troduced the VR equipment and explained the session activities,          Sydney with doctoral research focusing on disability and NDIS
+including the instruction to wait for a green microphone signal          experiences. She has over 10 years of clinical experience as a
+before asking questions to the AI avatars. Participants were told        speech pathologist working with children and young people
+that they could ask the AI avatars questions or make comments            with disability and their families and holds a master's degree in
+about the topics being discussed. The Meta Quest 3 headset was           Developmental Disability. Both researchers have experience re-
+fitted to each participant. Participants were initially required to      searching healthcare barriers affecting people with intellectual
+be able to operate the VR hand controller independently as part          disability.
+of the inclusion criteria. However, during early data collection,
+it became apparent that controller operation posed a barrier to          Based on co-­design session feedback, both researchers antic-
+engagement. The protocol was modified so that the researcher             ipated overall positive participant responses to VR technology
+operated the hand controller for all participants, allowing them         whilst expecting varied individual reactions based on partici-
+to focus on verbal interaction with the AI avatars. Following            pants' diverse healthcare experiences and technology familiar-
+each VR scene, the researcher conducted semi-­structured in-             ity. Neither researcher had prior contact with study participants
+terviews to gather qualitative feedback. All verbal responses            before recruitment. Both researchers' institutional affiliation
+during the VR experience and interviews were audio-­recorded             with the National Centre may have influenced participant ex-
+and transcribed for analysis. The researcher took field notes to         pectations. JA conducted all interviews and led initial coding.
+document technical issues, participant reactions, and contex-            To address potential bias, JA maintained reflective documenta-
+tual observations.                                                       tion throughout data collection and analysis phases, with theme
+
+Journal of Applied Research in Intellectual Disabilities, 2026                                                                        5 of 13
+
+<a id="pdf-p6"></a>
+### [PDF p.6] development involving collaborative discussion until consensus active questioning and self-­advocacy skills. Most participants
+- Locator: `R394-co-design-and-feasibility-testing-of-an-ai-based-virtual-reality-application-to-.pdf` · página **6** / 13
+
+14683148, 2026, 2, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/jar.70219 by Cochrane Peru, Wiley Online Library on [03/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+development involving collaborative discussion until consensus                  active questioning and self-­advocacy skills. Most participants
+was reached. No external validation methods such as member                      described some positive aspects of the AI communication, with
+checking or independent coding verification were employed.                      participants distinguishing between their experiences with the
+                                                                                ‘receptionist’ and ‘doctor’ avatars.
+
+3   |   Results                                                                 Participants consistently valued the AI avatars' clear commu-
+                                                                                nication style and explanations that were easy to understand.
+3.1   |   Task Performance                                                      Participants were mostly positive about the accessible language
+                                                                                used by the AI receptionist and doctor, with Participant 9 noting
+Quantitative data were extracted from AI-­generated transcripts                 that: ‘… I can listen much easier because it's plain English. It's not
+to examine participant engagement, communication patterns,                      hard for me and she speak very, very clear.’ All participants ini-
+and system responsiveness during the VR task. Table 2 sum-                      tially received consistent scripted information about healthcare
+marises the key task metrics for the sample.                                    appointments. When participants asked follow-­up questions, the
+                                                                                AI system provided unscripted responses that were longer and
+                                                                                more complex than the original scripted content. Some partici-
+3.2   |   Thematic Analysis                                                     pants noted that responses to their questions required simpler lan-
+                                                                                guage, as noted by Participant 8: ‘Just need to like speak, maybe
+Thematic analysis of interview data and participant-­A I interac-               in a simple way, as like the doctors, the same thing too. Maybe
+tion transcripts identified three main themes (Table 3). Themes                 simplifying a bit more, but yes it did explain it.’ (Participant 8).
+were identified inductively through iterative coding and analysis
+of the data. For Theme 2, concepts of presence and immersion                    Throughout their interactions, participants experienced the AI
+were incorporated after initial coding using existing theoretical               system as more than just an information provider as it func-
+frameworks (Slater 2018; Wilkinson et al. 2021; Witmer and                      tioned as a supportive learning companion that guided them
+Singer 1998). All ten participants contributed experiences across               through healthcare scenarios at their own pace. The AI system
+these themes.                                                                   provided supportive communication that helped participants
+                                                                                feel comfortable, reflecting the relational nature of some real-­
+                                                                                life healthcare interactions.
+3.2.1   |   Theme 1: A Human Touch in a Virtual
+Conversation                                                                          …seeing him of explaining to me about everything,
+                                                                                      that's already make me feel comfortable, because I can
+This theme captures participants' experiences of learning                             even see his face. He's calm. He's not rushing me or
+healthcare content through personalised conversations with
+                                                                                      anything. He's very patient with me. He is answering
+AI avatars. The AI system functioned as a learning compan-
+                                                                                      me my questions. … He's waiting for me to think about
+ion that provided an overview of what to expect in a healthcare
+clinic and answered specific questions users had about the con-                       my questions. He doesn't really tell me. He doesn't cut
+tent provided. The experience enabled participants to engage                          me off when I'm still talking or anything.
+through interactive dialogue, providing an opportunity for                                                                   (Participant 10)
+
+
+TABLE 2    |    Task metrics recorded during the AI-­V R experience.            TABLE 3    |    Summary of themes from the thematic analysis.
+
+                                                         Percentage of           Theme                                         Description
+                                                        valid responses
+                                                                                 Theme 1: A Human Touch               Learning healthcare content
+ Metric                     Average (range)                  by AI
+                                                                                 in a Virtual Conversation               through personalised
+ All                             13.3 (6–37)                   88.3%                                                     conversations with AI
+ communicative                                                                                                          avatars that functioned
+ acts                                                                                                                    as patient, supportive
+                                                                                                                         learning companions
+   Questions asked                3.7 (0–28)                   91.9%
+   by the user                                                                   Theme 2: Stepping Into                Experiences of immersion
+                                                                                 the Virtual Clinic                       in virtual healthcare
+   Comments made                  1.6 (0–10)                   53.1%
+                                                                                                                           environments, with
+   by the user
+                                                                                                                        environmental realism
+ Attempts to                      2.1 (0–8)                      —                                                       and avatar behaviour
+ speak when the                                                                                                        affecting engagement and
+ microphone was                                                                                                         healthcare preparation
+ inactive
+                                                                                 Theme 3: The Promise               Recognition of VR educational
+ Technical issues                 3.1 (0–9)                      —               and Problem of VR                   potential alongside technical
+Note: All communicative acts include yes/no responses + questions +
+                                                                                                                         barriers (microphone
+comments. Technical issues refer to when the researcher needed to intervene                                         activation, speech recognition)
+for reasons such as needing to prompt to rephrase the question or assist with                                        that limited independent use
+interpreting the AI response.
+
+
+6 of 13                                                                                         Journal of Applied Research in Intellectual Disabilities, 2026
+
+<a id="pdf-p7"></a>
+### [PDF p.7] The content of the VR programme was mostly considered less Participants who were familiar with basic healthcare infor-
+- Locator: `R394-co-design-and-feasibility-testing-of-an-ai-based-virtual-reality-application-to-.pdf` · página **7** / 13
+
+14683148, 2026, 2, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/jar.70219 by Cochrane Peru, Wiley Online Library on [03/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+The content of the VR programme was mostly considered less           Participants who were familiar with basic healthcare infor-
+emotive than real life healthcare appointments, where partici-       mation could identify additional content areas they wanted to
+pants were sometimes worried about the results of tests, or wor-     explore.
+ried about a healthcare issue. Some participants described how
+emotional aspects of real healthcare appointments impacted on        Researcher: What would you like [the VR programme] to talk
+their ability to understand new information, whereas the VR ex-      about if you had a choice?
+perience allowed more time to settle into the experience and feel
+                                                                     Participant 2: Sexual health… How to make appointments in
+receptive to the information provided.
+                                                                     regards to those sort of things… and things around that section
+                                                                     of medical stuff.
+        I felt, like, [the VR] does help a lot … that was mostly
+        make you feel calm a lot of time [more] than going           Researcher: Is that stuff that you get a chance to talk to your
+        to your normal doctor … mostly us [people with]              doctor about?
+        disability, we don't focus [on] what doctors say. We         Participant 2: Not really. Because I don't know the things to ask
+        first know what is happening around us and we first          or say, about how I'm feeling and what I want to know about. It
+        look what he the doctor's carrying, you know and             gets annoying.
+        when it's carrying a needle or anything, start freaking
+        out. … I was like, looking at the [VR] office, and I saw     The variation in participant responses highlighted the chal-
+        that, OK, there's nothing that's [going to] harm me or       lenge of using standardised content for users with diverse
+                                                                     healthcare experiences and information needs. The interac-
+        anything and I feel comfortable after that.
+                                                                     tive questioning format, whilst valued by participants, was
+                                                  (Participant 10)   constrained by the programme's scope in this study, as par-
+                                                                     ticipants could only ask questions about healthcare items that
+Participants perceived the avatars as being patient and un-          had already been introduced. This limitation meant that par-
+rushed, a characteristic that was particularly valued by those       ticipants seeking information beyond the standardised topics
+who needed time to process responses and formulate thoughts.         could identify gaps in content relevance but could not access
+The AI system often had a short delay whilst processing a re-        information about their specific areas of interest through the
+sponse to participants' questions, which served well to slow         system.
+down the pace of the conversation and contributed to the per-
+ception of the avatars as patient.
+
+                                                                     3.2.2   |   Theme 2: Stepping Into the Virtual Clinic
+        I like when the [real life] doctor like speak to you,
+        like easy words and explain things. And listen, listen,
+                                                                     This theme encompasses participants' experiences of being
+        listen, listen and understand what I'm saying too.           immersed in virtual healthcare environments and their re-
+        … And not like rush and like [real life doctors] can         sponses to the realism and authenticity of the VR clinic settings.
+        rush, but this [VR doctor] doesn't seem rushing, just        Participants' experiences varied based on how closely the virtual
+        talking.                                                     settings, avatar behaviours, and environmental details matched
+                                                (Participant 8)      their expectations and lived experiences. The theme captures
+                                                                     both positive experiences of presence and immersion in convinc-
+Participants valued the interactive question-­and-­answer format     ing virtual healthcare spaces and challenges when VR elements
+as it allowed them to direct their learning according to their in-   felt unrealistic or inconsistent with participants' familiar health-
+dividual needs and interests. Participant 10 recognised: ‘he gave    care environments. All participants contributed experiences
+me a chance to ask some questions. And that's what's most im-        related to this theme, noting varying degrees of realism and envi-
+portant for me to know.’ This interaction style was appreciated      ronmental factors that affected their ability to engage meaning-
+even when participants did not ask any questions during the sce-     fully with the virtual clinic setting.
+narios, as Participant 9 commented: ‘talking to someone that is…
+people ask question and then you answer. And then I can say yes      When virtual environments aligned with participants' real
+or no. Have a choice to say yes or no.’                              healthcare experiences, participants described the settings as
+                                                                     familiar and realistic. Participant 1 observed: ‘everything is
+Some participants recognised the value of the programme              like about the same as how it's set up, like in an actual doctor's
+for other people, particularly those with limited healthcare         room’ and described the waiting room as ‘looks like… actually
+experience.                                                          sitting inside an actual waiting room itself.’ Several participants
+                                                                     drew comparisons to mainstream technology experiences, such
+        Because I see them before [at my doctor's] and I know        as Participant 9 likening the experience to ‘seeing movies… 3D
+                                                                     movies.’ The similarity to movies or gaming helped align the
+        what the tools look like. And you know what to do
+                                                                     novel VR experience with technology they were more familiar
+        with it. Like first time you see, you see what they do
+                                                                     with and enjoyed using.
+        with it. Not everyone know the medical term of the
+        thing. … And I will know this is for the ears, and the       When environmental elements contradicted participants' real
+        thing is for the tongue, for you to look at your tonsils.    healthcare experiences, participants noted confusion and raised
+                                                  (Participant 9)    concerns about realism. Participant 4 found the arrangement of
+
+Journal of Applied Research in Intellectual Disabilities, 2026                                                                   7 of 13
+
+<a id="pdf-p8"></a>
+### [PDF p.8] the waiting room and doctor's office disorienting: ‘It's confus- Participant 3 explained, ‘I didn't like this all the time [mimics
+- Locator: `R394-co-design-and-feasibility-testing-of-an-ai-based-virtual-reality-application-to-.pdf` · página **8** / 13
+
+14683148, 2026, 2, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/jar.70219 by Cochrane Peru, Wiley Online Library on [03/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+the waiting room and doctor's office disorienting: ‘It's confus-         Participant 3 explained, ‘I didn't like this all the time [mimics
+ing… just the environment… the desk was opposite… This side              doctor's fidget action] … [It made me feel] a bit nervous and won-
+on the left’ compared to their usual doctor's office. Participant 5      dering what he was thinking,’ and Participant 2 observed the doc-
+noted practical concerns about equipment sizing: ‘the examina-           tor appeared ‘unsure, or nervous… It made me stressed.’ These
+tion bed, it looked way too small… a full-­size adult needs more         movements occurred during the consultation scene (Figure 1C),
+room than that.’ Audio-­v isual synchronisation problems also af-        where the doctor avatar remained seated but repeatedly moved his
+fected participants' experiences. Participant 8 noted, ‘Someone          hands whilst speaking. In the waiting room scene (Figure 1B), one
+[was] coughing, but I didn't even see anyone cough,’ and                 background avatar continuously walked back and forth across the
+Participant 10 questioned, ‘where is the cough coming from?’             room. Whilst Participant 5 viewed this as authentic, Participant 10
+                                                                         found it anxiety-­provoking: ‘one person is just going up and down…
+Some participants described the subjective experience of con-            that can make someone like people have so much anxiety that
+nection in interactions with the avatars, despite understanding          can make them have more anxiety.’ These animated behaviours
+that they were not real. Many participants used politeness mark-         were intended to increase environmental realism; however, par-
+ers in their interactions with avatars, such as saying thank you         ticipants' responses indicate that dynamic avatar movements can
+to avatars after getting a response, and at times giving the avatar      influence emotional comfort in immersive settings.
+compliments or asking how they were. Whilst the conversational
+scope of the avatars was mostly limited to discussing the specific
+healthcare scenarios presented in the VR programme, they were            3.2.3   |   Theme 3: The Promise and Problem of VR
+able to respond appropriately to some of these comments.
+                                                                         Participants recognised the potential of AI-­V R technology for
+Where the avatars' behaviour was consistent with users' real             learning and healthcare preparation but also identified usability
+healthcare experiences, this supported their engagement in the           barriers. Technical difficulties disrupted their experience and
+scenarios. Participant 10 highlighted the positive impact of the         highlighted current limitations of AI-­based VR systems for peo-
+receptionist's behaviour:                                                ple with intellectual disability. Some participants needed help re-
+                                                                         solving conflicts between the VR headset and assistive devices
+      This is like you're at the doctor for real. … it's like you're     such as hearing aids and glasses. The AI system's limited conver-
+                                                                         sational capability also emerged as a significant challenge, partic-
+      in the real world … it's like someone is really serving
+                                                                         ularly with the AI doctor avatar. The AI doctor was programmed
+      you there and asking you a question and being kind
+                                                                         to respond to questions about healthcare content but did not
+      to you. … And I feel like I was, I was in my real world.           engage with conversational comments, whereas participants re-
+                                                 (Participant 10)        ported positive interactions with the AI receptionist avatar. This
+                                                                         difference likely reflects differences in the programming of rules
+This indicates a relationship between participants' sense of pres-       around the avatar interactions. The excerpts shown below reflect
+ence in the scenario and the relational quality of interactions with     the AI-­generated transcript of participants' interactions with the
+avatars. By contrast, when the interactions with avatars lacked          virtual doctor.
+positive relational characteristics, this reduced participants' en-
+gagement and in one case heightened Participant 10's awareness           AI doctor: [Explains how the blood pressure monitor works].
+that he was interacting with AI: ‘But when I was laughing at the         Do you have any questions about blood pressure monitors?
+doctor, he didn't even notice… It's almost like he's just there to get
+paid… and is, like, complete AI.’                                        Participant 6: I don't like it when they get, I don't like it. When
+                                                                         you put [the blood pressure monitor] on my arm it gets really
+Many participants compared the AI's communication favour-                hard.
+ably to their real healthcare experiences, even if there were dif-       AI doctor: Now, let's talk about the thermometer.
+ferences between VR and real healthcare delivery. Participant
+8 noted differences between VR and her doctor: ‘they normally            The AI doctor was programmed to respond to questions about
+sit in the desk to the computer and ask you questions… This one          healthcare but had limited ability to respond to comments or
+the doctor just talked to you. Like, that is good.’ Participants also    statements. Participant 5 captured this difference between AI
+highlighted how the AI doctor mirrored real clinical practise by         and human communication: ‘with a human you can talk like
+acknowledging limits to their knowledge. Participant 5 said:             that but with a computer… they're very sensitive.’
+
+      He [answered questions] very thoroughly, but he also               Speech recognition errors also occurred. Participant 2's experi-
+      made sure that anything he couldn't answer he made                 ence exemplified these challenges:
+      sure he said go and see, go ask your doctor. … A lot of
+                                                                         Participant 2: Keep going [microphone not green].
+      [doctors] are like that. A lot of them if they don't know
+      they'll go ‘I'm just going to refer you to this specialist         Researcher: Hold on, just a sec.
+      to get a more detailed thing’                                      Participant 2: Keep going [VR misheard and transcribed as
+                                                  (Participant 5)        ‘Cape gowing’].
+
+Several participants found the doctor's repetitive hand move-            AI doctor: It seems like there might be a little mix-­up with the
+ments unsettling and interpreted them as signs of nervousness.           words.
+
+8 of 13                                                                                  Journal of Applied Research in Intellectual Disabilities, 2026
+
+<a id="pdf-p9"></a>
+### [PDF p.9] Participant 2: [Interjection] [Expletive]. … it's a good way of getting information. … A lot of
+- Locator: `R394-co-design-and-feasibility-testing-of-an-ai-based-virtual-reality-application-to-.pdf` · página **9** / 13
+
+14683148, 2026, 2, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/jar.70219 by Cochrane Peru, Wiley Online Library on [03/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+Participant 2: [Interjection] [Expletive].                                   … it's a good way of getting information. … A lot of
+                                                                             people wouldn't know how to go [to] the doctor and
+[Participant took a deep breath, getting frustrated].
+                                                                             like, by you doing this probably will help train other
+AI doctor: If you meant ‘keep going,’ I'm here and ready for your            doctors to …[meet] the disability person's [needs]. …
+next question. If you meant something else, feel free to clarify!            Or it makes [people] think [the doctor's] is a lot better
+                                                                             than what it is. A lot of people might not want to go
+When these issues occurred, the researcher intervened by
+prompting participants to rephrase statements as questions                   to the doctor.
+or by providing guidance when the AI system did not recog-                                                           (Participant 3)
+nise speech accurately. These interventions reduced partic-
+ipants' independent engagement in the scenarios. On some               Participants suggested ways the VR programme could be ex-
+occasions, the researcher prompted participants to rephrase            panded or improved. Participant 7 suggested adding a virtual
+comments as questions. This led to some adaptation in how              support person in the waiting room scenario who could pro-
+participants phrased their requests for information, as seen           vide companionship and reassurance to help reduce anxiety for
+with Participant 2:                                                    people with intellectual disability. ‘It is good to be able to help,
+                                                                       help ones with disability, … this needs to have someone to actu-
+AI doctor: The otoscope … might tickle a little, but it does not       ally talk to in the waiting [room] … Just to assure them… it's not
+hurt. Do you have any questions about otoscopes?                       scary, that it's not scary or something’ (Participant 7).
+
+Participant 2: Sometimes it can hurt, the otoscope.                    Participants showed adaptation in their communication in in-
+                                                                       teractions with the AI avatars. The AI system occasionally
+Researcher: (prompts) Have you got a question?
+                                                                       provided helpful communication support, as illustrated by this
+Participant 2: Why does the otoscope sometimes feel                    interaction between Participant 5 and the AI ‘receptionist’:
+uncomfortable?
+                                                                       AI receptionist: …. Do you have any questions about concession
+AI doctor: It's possible that if the otoscope feels uncomfortable,     cards?
+it might be due to the position or angle it's being used at… [con-
+                                                                       Participant 5: Oh, No. Actually, I don't know how to say it ac-
+tinues explanation].                                                   tually. Um.
+
+In this example, Participant 2 challenged information that did         AI receptionist: That's alright, take your time. If you have any
+not match their own healthcare experience and requested an             questions or need clarification about concession cards, feel free
+explanation. However, researcher intervention was required to          to ask when you're ready.
+help participants rephrase statements as questions when the AI
+could not respond to comments.                                         Researcher: (prompts) Do you have a question you want to ask?
+
+                                                                       Participant 5: Can you use your concession card and Healthcare
+Despite the technical challenges described above, some
+participants expressed excitement about VR technology.                 card? Or can you only use one of them?
+Participant 6 found the AI more responsive than other voice            AI receptionist: You can have both a concession card and a
+assistants: ‘She never said ‘I don't know’. Not like Siri, who         Health Care Card… [continues explanation].
+says ‘I don't understand’… those questions [that I ask Siri] are
+perfectly normal.’ However, this positive experience was not
+universal, as technical difficulties affected most participants'       4   |   Discussion
+interactions.
+                                                                       This study co-­designed, developed, and evaluated the feasibil-
+Participants recognised VR's potential as an educational tool          ity and usability of an AI-­based VR application for healthcare
+that improved upon existing tools such as written information.         preparation in people with intellectual disability. All participants
+Participant 9 noted: ‘I think it's the technology now… you can         completed the VR tasks and engaged in dialogue with AI avatars,
+see like movie… Having more fun… To see those pictures inside,         demonstrating that the technology was accessible and acceptable
+rather than just, you know, ask question and a list of paper.’         to this population. Participants valued the AI communication
+Participants also saw VR as a way to enhance telehealth, for ex-       style, which was perceived as patient and unrushed. This is no-
+ample by enabling virtual healthcare appointments. Participant         table given that several participants reported at baseline that they
+1 explained: ‘if, like, you can't make it to get out to your door to   only sometimes understood what doctors told them and did not
+go to your doctor. [You could have a] virtual reality appointment      always feel listened to, suggesting that the structured and clear
+saying, look, we can get your medication sorted.’                      communication within VR may have addressed gaps in their
+                                                                       usual healthcare experiences. The interactive format allowed par-
+Some participants viewed the VR programme as a way to train            ticipants to practise asking questions, learn medical terminology,
+health professionals to communicate more effectively with              and familiarise themselves with clinical environments and proce-
+people with intellectual disability, highlighting its potential        dures. However, speech recognition errors and microphone acti-
+to shape more positive perceptions of healthcare. Participant          vation timing presented challenges for some participants, and the
+3 explained:                                                           AI's limited ability to respond primarily to questions rather than
+
+
+
+Journal of Applied Research in Intellectual Disabilities, 2026                                                                     9 of 13
+
+<a id="pdf-p10"></a>
+### [PDF p.10] conversational comments constrained natural dialogue in some by removing anxiety-­provoking elements. However, this may
+- Locator: `R394-co-design-and-feasibility-testing-of-an-ai-based-virtual-reality-application-to-.pdf` · página **10** / 13
+
+14683148, 2026, 2, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/jar.70219 by Cochrane Peru, Wiley Online Library on [03/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+conversational comments constrained natural dialogue in some           by removing anxiety-­provoking elements. However, this may
+instances.                                                             limit opportunities to practise strategies for managing realistic
+                                                                       but uncomfortable healthcare situations, such as busy waiting
+The AI system's conversational scope helped guide users but also       rooms. An alternative approach could offer adaptable environ-
+restricted participants' ability to engage in natural dialogue, par-   ments that allow gradual exposure to challenging sensory fea-
+ticularly with the AI doctor avatar. The guided and structured         tures as users develop coping strategies, if that aligns with their
+dialogue helped participants know when to speak and what to            goals. This could support preparation for healthcare settings
+expect next (Mateos-­Sanchez et al. 2022). However, participants       where quieter spaces or other reasonable adjustments may not
+could not always engage in the type of natural conversational          be available. The customisable nature of VR technology makes
+exchange they might expect in real healthcare interactions,            it particularly suited to accommodating individual preferences
+where building rapport through small talk, casual conversation,        and needs, allowing users to practise in environments that
+and responsive communication is essential for establishing trust       match their actual healthcare settings or to develop tolerance for
+and comfort (Mimmo et al. 2022; Nijhof et al. 2024; Chandra            challenging features over time.
+et al. 2022). The AI-­doctor avatar was programmed to respond
+primarily to questions about specific healthcare content, causing      This study has methodological limitations that affect interpre-
+difficulties when participants attempted casual conversation.          tation and generalisability of findings. All participants were
+In contrast, the AI receptionist demonstrated greater conver-          recruited through a disability advocacy organisation, suggest-
+sational flexibility, indicating that the doctor's constraints re-     ing they were experienced advocates compared to the broader
+flected design choices about providing healthcare information          population of people with intellectual disability. All participants
+rather than technological limitations. These relational cues are       were currently engaged with healthcare services, with access to a
+particularly important for people with intellectual disability, for    consistent general practitioner or medical practise when needed.
+whom structured but emotionally responsive communication               This limits insights into barriers faced by those who avoid health-
+supports engagement and learning (Mateos-­Sanchez et al. 2022;         care entirely or have less confident self-­advocating. Our inclusion
+Huq et al. 2024).                                                      criteria, which required verbal communication and safe use of
+                                                                       VR equipment, along with exclusion of people with epilepsy
+Technical usability shaped how participants engaged with               based on VR safety guidance, limit the applicability of findings to
+the AI-­V R system, revealing both strengths and areas for             people with intellectual disability who use alternative communi-
+improvement. The visual design and scene transitions sup-              cation methods or cannot use head-­mounted displays. The study
+ported focus and orientation, and most participants were able          involved only a single exposure to the VR system, which may not
+to converse naturally once the AI avatars recognised their             reflect learning that occurs with repeated use or assess retention
+speech. The headset was comfortable for most users, and the            of skills over time. The researcher equipped participants with
+clear visual cues helped participants follow the conversation          the VR headset and retained control of the handheld controller
+flow. Participants valued the avatars' patient pacing, noting          throughout sessions to improve efficiency, but this may have lim-
+that short pauses between responses gave them time to think            ited assessments of usability. The study relied on self-­report data
+and reduced pressure to respond quickly. However, technical            without objective measures of learning or confidence changes,
+issues occasionally interrupted this flow. Speech recognition          and the laboratory setting may not reflect how the technology
+errors and microphone activation delays sometimes prevented            would perform in real community environments.
+the AI from registering spoken input, leading to frustration
+and loss of conversational rhythm in some instances. Some              This study demonstrated that AI-­based VR applications have
+participants needed help adjusting the headset or progressing          potential for healthcare preparation in people with intellectual
+to the next scene, which reduced independent engagement.               disability, though significant usability barriers currently limit
+Overall, participants demonstrated that with minor support,            independent use. Participants valued the patient communica-
+people with intellectual disability can engage meaningfully            tion style of AI avatars, but speech recognition difficulties and
+with AI-­based VR, but refinements to interaction design and           the AI's inability to respond to conversational comments re-
+hardware usability are needed to enable full autonomy.                 quired frequent researcher intervention. The findings highlight
+                                                                       that effective VR design must balance environmental realism
+The study revealed tensions between creating realistic health-         with user comfort, as immersive features can increase anxiety.
+care environments and maintaining accessibility for people with        Future development should prioritise AI systems capable of
+intellectual disability. Features designed to enhance immersion,       natural dialogue and speech recognition that accommodates di-
+such as ambient noise or moving avatars, increased anxiety for         verse communication patterns. Co-­design with people with in-
+some participants whilst others found them authentic. This vari-       tellectual disability remains essential for developing accessible
+ation aligns with baseline reports that many participants felt         AI-­V R healthcare applications.
+anxious or nervous about attending medical appointments, in-
+dicating that immersive realism may interact with pre-­existing
+emotional experiences of healthcare. This challenges traditional       Author Contributions
+VR design approaches that prioritise presence and immersion
+through environmental realism (Wilkinson et al. 2021), sug-            Funding was secured by S.C.M. (lead Chief Investigator) with J.N.T.,
+                                                                       S.M.G., A.D., and R.C.C. (Chief Investigators). The study was designed
+gesting these features may generate stress for some people with
+                                                                       by S.C.M. with input from A.D., R.C.C., S.M.G., and J.N.T. Recruitment
+intellectual disability (Franze et al. 2024; Langener et al. 2022).    and data collection were completed by J.A. Thematic analysis was com-
+These findings raise important questions about the goals of VR         pleted by S.C.M. and J.A. This paper was written by S.C.M. with further
+healthcare preparation. One approach would prioritise comfort          critical revision and final approval by all authors.
+
+
+10 of 13                                                                               Journal of Applied Research in Intellectual Disabilities, 2026
+
+<a id="pdf-p11"></a>
+### [PDF p.11] Acknowledgements Birckhead, B., C. Khalil, and X. Liu. 2019. “Recommendations for
+- Locator: `R394-co-design-and-feasibility-testing-of-an-ai-based-virtual-reality-application-to-.pdf` · página **11** / 13
+
+14683148, 2026, 2, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/jar.70219 by Cochrane Peru, Wiley Online Library on [03/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+Acknowledgements                                                             Birckhead, B., C. Khalil, and X. Liu. 2019. “Recommendations for
+                                                                             Methodology of Virtual Reality Clinical Trials in Health Care by an
+We are grateful to all participants who generously shared their time and
+                                                                             International Working Group: Iterative Study.” JMIR Mental Health 6,
+experiences, including those who contributed to the co-­design work-
+                                                                             no. 1: e11973.
+shops that shaped the development of the AI-­V R application and those
+who participated in the study. We thank the Council for Intellectual         Boada, L., and M. Parellada. 2017. “Seeing the Doctor Without Fear:
+Disability for their support and ongoing partnership. We thank Katrina       Www. Doctortea. Org for the Desensitization for Medical Visits in
+Sneath for contributing feedback on initial prototypes of the AI-­V R ap-    Autism Spectrum Disorders.” Revista de Psiquiatría y Salud Mental 10,
+plication. Open access publishing facilitated by University of New South     no. 1: 28–32.
+Wales, as part of the Wiley -­University of New South Wales agreement
+                                                                             Braun, V., and V. Clarke. 2006. “Using Thematic Analysis in Psychology.”
+via the Council of Australasian University Librarians.
+                                                                             Qualitative Research in Psychology 3, no. 2: 77–101.
+                                                                             Braun, V., V. Clarke, N. Hayfield, L. Davey, and E. Jenkinson. 2023.
+Funding                                                                      “Doing Reflexive Thematic Analysis.” In Supporting Research in
+This research was funded by the UNSW Disability Innovation Institute         Counselling and Psychotherapy: Qualitative, Quantitative, and Mixed
+Research Seed Funding 2024 and the UNSW Health Systems Research              Methods Research, 19–38. Springer.
+Theme 2025 Collaborative Grant. R.C.C. was supported by a Dementia           Brown, M., L. Taggart, T. Karatzias, et al. 2017. “Improving Diabetes
+Australia Research Foundation funded by the Dementia Australia               Care for People With Intellectual Disabilities: A Qualitative Study
+Research Foundation and Bartle Pathway to Care. J.N.T. receives fund-        Exploring the Perceptions and Experiences of Professionals in Diabetes
+ing from several sources including the following National Health and         and Intellectual Disability Services.” Journal of Intellectual Disability
+Medical Research Council Australia grants: Understanding health ser-         Research 61, no. 5: 435–449.
+vice system needs for people with intellectual disability (GNT1123033)
+and Addressing health inequality experienced by people with intellec-        Burton, H., and L. Walters. 2013. “Access to Medicare-­F unded Annual
+tual disability (GNT2009771). The National Centre of Excellence in           Comprehensive Health Assessments for Rural People With Intellectual
+Intellectual Disability Health is funded by the Australian Government        Disability.” Rural and Remote Health 13, no. 3: 12–26.
+Department of Health, Disability and Aged Care.                              Byrne, J. H., N. G. Lennox, and R. S. Ware. 2016. “Systematic Review
+                                                                             and Meta-­ A nalysis of Primary Healthcare Interventions on Health
+Ethics Statement                                                             Actions in People With Intellectual Disability.” Journal of Intellectual
+                                                                             and Developmental Disability 41, no. 1: 66–74.
+This study was granted ethics approval from the UNSW Sydney Human
+Research Ethics Committee (HREC6912).                                        Chandra, S., A. Shirish, and S. C. Srivastava. 2022. “To Be or Not To
+                                                                             Be… Human? Theorizing the Role of Human-­Like Competencies in
+                                                                             Conversational Artificial Intelligence Agents.” Journal of Management
+Conflicts of Interest                                                        Information Systems 39, no. 4: 969–1005.
+The authors declare no conflicts of interest.                                Codling, M. 2015. “Helping Service Users to Take Control of Their
+                                                                             Health.” Learning Disability Practice 18, no. 3: 26–31.
+Data Availability Statement                                                  Cox, A., T. Parsons, S. Watkin, and A. Gallagher. 2021. “Supporting
+                                                                             the Delivery of Good Maternity Care for Parents With Learning
+The data that support the findings of this study are available on request
+                                                                             Disabilities.” Midwifery 102: 103073.
+from the corresponding author. The data are not publicly available due
+to privacy or ethical restrictions.                                          Cross, H., M. Cameron, S. Marsh, and I. Tuffrey-­Wijne. 2012. “Practical
+                                                                             Approaches Toward Improving End-­        Of-­
+                                                                                                                         Life Care for People With
+                                                                             Intellectual Disabilities: Effectiveness and Sustainability.” Journal of
+References                                                                   Palliative Medicine 15, no. 3: 322–326.
+Acton, D. J., R. Arnold, G. Williams, N. NG, K. Mackay, and S.               Doherty, A. J., H. Atherton, P. Boland, et al. 2020. “Barriers and
+Jaydeokar. 2024. “Co-­Design and Pilot of a Virtual Reality Intervention     Facilitators to Primary Health Care for People With Intellectual
+to Improve Mental and Physical Healthcare Accessibility for People           Disabilities and/or Autism: An Integrative Review.” BJGP Open 4, no.
+With Intellectual Disability.” Advances in Mental Health and Intellectual    3: bjgpopen20X101030.
+Disabilities 18: 63–75.
+                                                                             Donner, B., R. Mutter, and K. Scior. 2010. “Mainstream In-­   Patient
+Agaronnik, N., E. Pendo, T. Lagu, C. DeJong, A. Perez-­      Caraballo,      Mental Health Care for People With Intellectual Disabilities: Service
+and L. I. Iezzoni. 2020. “Ensuring the Reproductive Rights of Women          User, Carer and Provider Experiences.” Journal of Applied Research in
+With Intellectual Disability.” Journal of Intellectual & Developmental       Intellectual Disabilities 23, no. 3: 214–225.
+Disability 45, no. 4: 365–376.
+                                                                             Emerson, E., R. Madden, H. Graham, G. Llewellyn, C. Hatton, and
+Ali, A., K. Scior, V. Ratti, A. Strydom, M. King, and A. Hassiotis.          J. Robertson. 2011. “The Health of Disabled People and the Social
+2013. “Discrimination and Other Barriers to Accessing Health Care:           Determinants of Health.” Public Health 125: 145–147.
+Perspectives of Patients With Mild and Moderate Intellectual Disability
+                                                                             Felce, D., H. Baxter, K. Lowe, et al. 2008. “The Impact of Checking
+and Their Carers.” PLoS One 8, no. 8: e70855.
+                                                                             the Health of Adults With Intellectual Disabilities on Primary Care
+Australian Government Department of Health. 2021. National Roadmap           Consultation Rates, Health Promotion and Contact With Specialists.”
+for Improving the Health of People with Intellectual Disability.             Journal of Applied Research in Intellectual Disabilities 21, no. 6: 597–602.
+Barrington, M., K. R. Fisher, B. Harris-­Roxas, C. Spooner, J. N. Trollor,   Franze, A., T. Loetscher, N. C. Gallomarino, A. Szpak, G. Lee, and S.
+and J. Weise. 2025. “Access to Healthcare for People With Intellectual       C. Michalski. 2024. “Immersive Virtual Reality Is More Effective Than
+Disability: A Scoping Review.” Scandinavian Journal of Public Health         Non-­Immersive Devices for Developing Real-­World Skills in People
+54: 14034948251317243.                                                       With Intellectual Disability.” Journal of Intellectual Disability Research
+                                                                             68: 1358–1373.
+Bauer, A., L. Taggart, J. Rasmussen, C. Hatton, L. Owen, and M.
+Knapp. 2019. “Access to Health Care for Older People With Intellectual       Geukes, C., D. Bruland, and Ä.-­D. Latteck. 2018. “Health Literacy in
+Disability: A Modelling Study to Explore the Cost-­  Effectiveness of        People With Intellectual Disabilities: A Mixed-­  Method Literature
+Health Checks.” BMC Public Health 19, no. 1: 1–16.                           Review.” Kontakt 20, no. 4: e416–e423.
+
+
+Journal of Applied Research in Intellectual Disabilities, 2026                                                                                 11 of 13
+
+<a id="pdf-p12"></a>
+### [PDF p.12] Gibbs, S. M., M. Brown, and W. Muir. 2008. “The Experiences of Adults Mimmo, L., M. Hodgins, N. Samir, J. Travaglia, S. Woolfenden, and
+- Locator: `R394-co-design-and-feasibility-testing-of-an-ai-based-virtual-reality-application-to-.pdf` · página **12** / 13
+
+14683148, 2026, 2, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/jar.70219 by Cochrane Peru, Wiley Online Library on [03/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+Gibbs, S. M., M. Brown, and W. Muir. 2008. “The Experiences of Adults          Mimmo, L., M. Hodgins, N. Samir, J. Travaglia, S. Woolfenden, and
+With Intellectual Disabilities and Their Carers in General Hospitals: A        R. Harrison. 2022. “‘Smiles and Laughter and All Those Really Great
+Focus Group Study.” Journal of Intellectual Disability Research 52, no.        Things’: Nurses' Perceptions of Good Experiences of Care for Inpatient
+12: 1061–1077.                                                                 Children and Young People With Intellectual Disability.” Journal of
+                                                                               Advanced Nursing 78, no. 9: 2933–2948.
+Hall, V., S. Conboy-­Hill, and D. Taylor. 2011. “Using Virtual Reality
+to Provide Health Care Information to People With Intellectual                 Mocco, A., L. Valmaggia, L. Bernardi, M. Alfieri, and I. Tarricone.
+Disabilities: Acceptability, Usability, and Potential Utility.” Journal of     2024. “Enhancing Physical Activity With Immersive Virtual Reality: A
+Medical Internet Research 13, no. 4: e1917.                                    Systematic Review.” Cyberpsychology, Behavior, and Social Networking
+                                                                               27, no. 5: 303–317.
+Harrison, R., B. Newman, B. Catlett, et al. 2025. “Co-­Producing Patient-­
+Reported Experience Measures With People With Intellectual Disability          Nabors, L., J. Monnin, and S. Jimenez. 2020. “A Scoping Review of
+to Improve Healthcare Quality and Outcomes: The ‘Listen to Me'project          Studies on Virtual Reality for Individuals With Intellectual Disabilities.”
+Protocol.” Health Expectations 28, no. 5: e70418.                              Advances in Neurodevelopmental Disorders 4: 344–356.
+Hartholt, A., S. Mozgai, E. Fast, et al. 2019. “Virtual Humans in              Navas, P., S. Llorente, L. García, M. J. Tassé, and S. M. Havercamp.
+Augmented Reality: A First Step Towards Real-­         World Embedded          2019. “Improving Healthcare Access for Older Adults With Intellectual
+Virtual Role Players.” In Proceedings of the 7th International Conference      Disability: What Are the Needs?” Journal of Applied Research in
+on Human-­Agent Interaction. ACM.                                              Intellectual Disabilities 32, no. 6: 1453–1464.
+Havercamp, S. M., and H. M. Scott. 2015. “National Health Surveillance         Newton, D., and J. McGillivray. 2019. “Perspectives of Carers of People
+of Adults With Disabilities, Adults With Intellectual and Developmental        With Intellectual Disability Accessing General Practice:“I'd Travel to
+Disabilities, and Adults With no Disabilities.” Disability and Health          the Ends of the Earth for the Right Person”.” Journal of Intellectual &
+Journal 8, no. 2: 165–172.                                                     Developmental Disability 44, no. 1: 64–72.
+Hronis, A., L. Roberts, and I. I. Kneebone. 2017. “A Review of Cognitive       Nijhof, K., F. H. Boot, J. Naaldenberg, G. L. Leusink, and K. E. Bevelander.
+Impairments in Children With Intellectual Disabilities: Implications for       2024. “Health Support of People With Intellectual Disability and the
+Cognitive Behaviour Therapy.” British Journal of Clinical Psychology 56,       Crucial Role of Support Workers.” BMC Health Services Research 24, no.
+no. 2: 189–207.                                                                1: 4.
+Huq, S. M., R. Maskeliūnas, and R. Damaševičius. 2024. “Dialogue               Northway, R., D. Holland-­Hart, and R. Jenkins. 2017. “Meeting the
+Agents for Artificial Intelligence-­   Based Conversational Systems            Health Needs of Older People With Intellectual Disabilities: Exploring
+for Cognitively Disabled: A Systematic Review.” Disability and                 the Experiences of Residential Social Care Staff.” Health & Social Care
+Rehabilitation. Assistive Technology 19, no. 3: 1059–1078.                     in the Community 25, no. 3: 923–931.
+Jones, M. C., E. McLafferty, R. Walley, J. Toland, and N. Melson. 2008.        Powrie, E. 2003. “Primary Health Care Provision for Adults With a
+“Inclusion in Primary Care for People With Intellectual Disabilities:          Learning Disability.” Journal of Advanced Nursing 42, no. 4: 413–423.
+Gaining the Perspective of Service User and Supporting Social Care
+                                                                               Raymaker, D. M., K. E. McDonald, E. Ashkenazy, et al. 2017. “Barriers
+Staff.” Journal of Intellectual Disabilities 12, no. 2: 93–109.
+                                                                               to Healthcare: Instrument Development and Comparison Between
+Langener, S., R. Klaassen, J. VanDerNagel, and D. Heylen. 2022.                Autistic Adults and Adults With and Without Other Disabilities.”
+“Immersive Virtual Reality Avatars for Embodiment Illusions in                 Autism 21, no. 8: 972–984.
+People With Mild to Borderline Intellectual Disability: User-­Centered
+                                                                               Rinaldi, R., and E. Batsele. 2023. ““Is It My Job?” an Exploratory
+Development and Feasibility Study.” JMIR Serious Games 10, no. 4: e39966.
+                                                                               Qualitative Analysis of Medical Specialists' Adaptation Strategies When
+Lennox, N. G., J. Diggens, and A. M. Ugoni. 1997. “The General Practice        Addressing the Health Needs of People With Intellectual Disabilities.”
+Care of People With Intellectual Disability: Barriers and Solutions.”          Journal of Intellectual Disabilities 27, no. 2: 388–403.
+Journal of Intellectual Disability Research 41, no. 5: 380–390.
+                                                                               Salvador-­
+                                                                                        Carulla, L., and S. Symonds. 2016. “Health Services Use
+Li, X., J. Huang, Z. Kong, F. Sun, C. H. P. Sit, and C. Li. 2023. “Effects     and Costs in People With Intellectual Disability: Building a Context
+of Virtual Reality-­Based Exercise on Physical Fitness in People With          Knowledge Base for Evidence-­Informed Policy.” Current Opinion in
+Intellectual Disability: A Systematic Review of Randomized Controlled          Psychiatry 29, no. 2: 89–94.
+Trials.” Games for Health Journal 12, no. 2: 89–99.
+                                                                               Shea, B., J. Bailie, S. H. Dykgraaf, N. Fortune, N. Lennox, and R. Bailie.
+Malterud, K., V. D. Siersma, and A. D. Guassora. 2016. “Sample Size            2022. “Access to General Practice for People With Intellectual Disability
+in Qualitative Interview Studies: Guided by Information Power.”                in Australia: A Systematic Scoping Review.” BMC Primary Care 23, no.
+Qualitative Health Research 26, no. 13: 1753–1760.                             1: 1–11.
+Mateos-­Sanchez, M., A. C. Melo, L. S. Blanco, and A. M. F. García. 2022.      Slater, M. 2018. “Immersion and the Illusion of Presence in Virtual
+“Chatbot, as Educational and Inclusive Tool for People With Intellectual       Reality.” British Journal of Psychology 109, no. 3: 431–433.
+Disabilities.” Sustainability 14, no. 3: 1520.
+                                                                               Spaniol, M., and H. Danielsson. 2022. “A Meta-­          A nalysis of the
+Mehrotra, D., A. A. Shetty, and K. R. Kumara. 2024. “Effect of Audio           Executive Function Components Inhibition, Shifting, and Attention in
+and Virtual Reality Distraction on the Dental Anxiety of Children With         Intellectual Disabilities.” Journal of Intellectual Disability Research 66,
+Mild Intellectual Disability.” Special Care in Dentistry 44, no. 3: 868–877.   no. 1–2: 9–31.
+Mehrotra, D., A. A. Shetty, and K. Rai. 2023. “Effect of Audio and             Trollor, J. 2020. Statement to the Royal Commission into Violence,
+Virtual Reality Distraction on the Dental Anxiety of Children With             Abuse, Neglect and Exploitation of People with Disability.
+Mild Intellectual Disability.” Special Care in Dentistry 44: 868–877.
+                                                                               Trollor, J., P. Srasuebkul, H. Xu, and S. Howlett. 2017. “Cause of
+Michalski, S. C., N. C. Gallomarino, A. Szpak, et al. 2023. “Improving         Death and Potentially Avoidable Deaths in Australian Adults With
+Real-­World Skills in People with Intellectual Disabilities: an Immersive      Intellectual Disability Using Retrospective Linked Data.” BMJ Open 7,
+Virtual Reality Intervention.” Virtual Reality 27: 3521–3532. https://​doi.​   no. 2: e013489.
+org/​10.​1007/​s1005​5 -­​023-­​0 0759​-­​2 .
+                                                                               Tuffrey-­Wijne, I., L. Goulding, N. Giatras, et al. 2014. “The Barriers
+Miller, E., S. A. Cooper, A. Cook, and A. Petch. 2008. “Outcomes               to and Enablers of Providing Reasonably Adjusted Health Services to
+Important to People With Intellectual Disabilities.” Journal of Policy         People With Intellectual Disabilities in Acute Hospitals: Evidence From
+and Practice in Intellectual Disabilities 5, no. 3: 150–158.                   a Mixed-­Methods Study.” BMJ Open 4, no. 4: e004606.
+
+
+12 of 13                                                                                         Journal of Applied Research in Intellectual Disabilities, 2026
+
+<a id="pdf-p13"></a>
+### [PDF p.13] Weise, J. C., P. Srasuebkul, and J. N. Trollor. 2021. “Potentially
+- Locator: `R394-co-design-and-feasibility-testing-of-an-ai-based-virtual-reality-application-to-.pdf` · página **13** / 13
+
+14683148, 2026, 2, Downloaded from https://onlinelibrary.wiley.com/doi/10.1111/jar.70219 by Cochrane Peru, Wiley Online Library on [03/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+Weise, J. C., P. Srasuebkul, and J. N. Trollor. 2021. “Potentially
+Preventable Hospitalisations of People With Intellectual Disability in
+New South Wales.” Medical Journal of Australia 215, no. 1: 31–36.
+Weiss, J., and Y. Lunsky. 2010. “Service Utilization Patterns in Parents
+of Youth and Adults With Intellectual Disability Who Experienced
+Behavioral Crisis.” Journal of Mental Health Research in Intellectual
+Disabilities 3, no. 3: 145–163.
+Wilkinson, M., S. Brantley, and J. Feng. 2021. “A Mini Review of Presence
+and Immersion in Virtual Reality.” In Proceedings of the Human Factors
+and Ergonomics Society Annual Meeting. SAGE Publications.
+Witmer, B. G., and M. J. Singer. 1998. “Measuring Presence in Virtual
+Environments: A Presence Questionnaire.” Presence 7, no. 3: 225–240.
+Zarotti, N., C. Hudson, H. R. Human, G. Muratori, and P. Fisher.
+2022. “‘It's Working Together With What You've Got’: Healthcare
+Professionals' Experiences of Working With People With Combined
+Intellectual Disability and Personality Disorder Diagnoses.” Journal of
+Applied Research in Intellectual Disabilities 35, no. 6: 1317–1326.
+
+
+
+
+Journal of Applied Research in Intellectual Disabilities, 2026              13 of 13

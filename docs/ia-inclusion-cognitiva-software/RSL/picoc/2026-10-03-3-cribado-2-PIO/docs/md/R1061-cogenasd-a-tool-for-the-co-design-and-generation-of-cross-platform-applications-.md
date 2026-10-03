@@ -1,0 +1,664 @@
+# SoftwareX 33 (2026) 102512
+
+> Fuente PDF: `R1061-cogenasd-a-tool-for-the-co-design-and-generation-of-cross-platform-applications-.pdf` · técnica **locator index** (página + ancla) + chunks Graphify
+
+## Metadata
+- Stem: `R1061-cogenasd-a-tool-for-the-co-design-and-generation-of-cross-platform-applications-`
+- PDF: `R1061-cogenasd-a-tool-for-the-co-design-and-generation-of-cross-platform-applications-.pdf`
+- DOI: `10.1016/j.softx.2026.102512`
+- Pages: `8`
+- Structured_at: `2026-10-03T23:23:13+00:00`
+- Technique: `pdf-page-locators + heading-chunks`
+
+## Locator index (qué hay y en qué página del PDF)
+
+| Kind | Label | PDF page | MD anchor |
+|------|-------|----------|-----------|
+| abstract | Abstract / blurb | 1 | `#abstract` |
+| section | 0 Metadata | 1 | `#p1-0-metadata` |
+| concept | Current ASD-focused app development faces key limitations | 1 | `#concept-current-asd-focused-app-development-faces-key-limitations` |
+| concept | such as high technical barriers for non-experts | 1 | `#concept-such-as-high-technical-barriers-for-non-experts` |
+| concept | Autism spectrum disorder (ASD) limited personalization | 1 | `#concept-autism-spectrum-disorder-asd-limited-personalization` |
+| concept | and scarce involvement of therapists | 1 | `#concept-and-scarce-involvement-of-therapists` |
+| concept | activities | ? | `#concept-activities` |
+| concept | interaction modes and content | 1 | `#concept-interaction-modes-and-content` |
+| concept | supporting the semi-automatic gen­ eration of cross-platform | 1 | `#concept-supporting-the-semi-automatic-gen-eration-of-cross-platform` |
+| concept | accessible and tailored applications. CoGenASD lowers technical barriers | 1 | `#concept-accessible-and-tailored-applications-cogenasd-lowers-technical-barriers` |
+| concept | promotes inclusive design practices | 1 | `#concept-promotes-inclusive-design-practices` |
+| concept | fostering stakeholder engagement | 1 | `#concept-fostering-stakeholder-engagement` |
+| concept | R1061 | ? | `#concept-r1061` |
+| concept | cogenasd | ? | `#concept-cogenasd` |
+| concept | tool | ? | `#concept-tool` |
+| concept | design | ? | `#concept-design` |
+| concept | generation | ? | `#concept-generation` |
+| concept | cross | ? | `#concept-cross` |
+| concept | platform | ? | `#concept-platform` |
+| concept | applications | 1 | `#concept-applications` |
+| finding | CoGenASD: A tool for the co-design and generation of cross-platform applications for peopl… | 1 | `#finding-cogenasd-a-tool-for-the-co-design-and-g` |
+| finding | Redondo Higher School of Informatics, University of Castilla-La Mancha, 13071, Ciudad Real… | 1 | `#finding-redondo-higher-school-of-informatics-un` |
+| page | p.1: SoftwareX 33 (2026) 102512 | 1 | `#pdf-p1` |
+| page | p.2: Y. Arroyo et al. SoftwareX 33 (2026) 102512 | 2 | `#pdf-p2` |
+| page | p.3: Y. Arroyo et al. SoftwareX 33 (2026) 102512 | 3 | `#pdf-p3` |
+| page | p.4: Y. Arroyo et al. SoftwareX 33 (2026) 102512 | 4 | `#pdf-p4` |
+| page | p.5: Y. Arroyo et al. SoftwareX 33 (2026) 102512 | 5 | `#pdf-p5` |
+| page | p.6: Y. Arroyo et al. SoftwareX 33 (2026) 102512 | 6 | `#pdf-p6` |
+| page | p.7: Y. Arroyo et al. SoftwareX 33 (2026) 102512 | 7 | `#pdf-p7` |
+| page | p.8: Y. Arroyo et al. SoftwareX 33 (2026) 102512 | 8 | `#pdf-p8` |
+
+## Abstract
+<a id="abstract"></a>
+
+CoGenASD: A tool for the co-design and generation of cross-platform applications for people with Autism spectrum disorder Yoel Arroyo * , Ana I. Molina , Carmen Lacave , Miguel Á. Redondo Higher School of Informatics, University of Castilla-La Mancha, 13071, Ciudad Real, Spain
+
+## Keywords
+
+- Current ASD-focused app development faces key limitations
+- such as high technical barriers for non-experts
+- Autism spectrum disorder (ASD) limited personalization
+- and scarce involvement of therapists
+- activities
+- interaction modes and content
+- supporting the semi-automatic gen­ eration of cross-platform
+- accessible and tailored applications. CoGenASD lowers technical barriers
+- promotes inclusive design practices
+- fostering stakeholder engagement
+
+## Concept index (graph hooks + página)
+
+<a id="concept-current-asd-focused-app-development-faces-key-limitations"></a>
+### [PDF p.1] Concept: Current ASD-focused app development faces key limitations
+- Locator: `R1061-cogenasd-a-tool-for-the-co-design-and-generation-of-cross-platform-applications-.pdf` · página **1**
+
+<a id="concept-such-as-high-technical-barriers-for-non-experts"></a>
+### [PDF p.1] Concept: such as high technical barriers for non-experts
+- Locator: `R1061-cogenasd-a-tool-for-the-co-design-and-generation-of-cross-platform-applications-.pdf` · página **1**
+
+<a id="concept-autism-spectrum-disorder-asd-limited-personalization"></a>
+### [PDF p.1] Concept: Autism spectrum disorder (ASD) limited personalization
+- Locator: `R1061-cogenasd-a-tool-for-the-co-design-and-generation-of-cross-platform-applications-.pdf` · página **1**
+
+<a id="concept-and-scarce-involvement-of-therapists"></a>
+### [PDF p.1] Concept: and scarce involvement of therapists
+- Locator: `R1061-cogenasd-a-tool-for-the-co-design-and-generation-of-cross-platform-applications-.pdf` · página **1**
+
+<a id="concept-activities"></a>
+### [PDF p.?] Concept: activities
+- Locator: `R1061-cogenasd-a-tool-for-the-co-design-and-generation-of-cross-platform-applications-.pdf` · página **?**
+
+<a id="concept-interaction-modes-and-content"></a>
+### [PDF p.1] Concept: interaction modes and content
+- Locator: `R1061-cogenasd-a-tool-for-the-co-design-and-generation-of-cross-platform-applications-.pdf` · página **1**
+
+<a id="concept-supporting-the-semi-automatic-gen-eration-of-cross-platform"></a>
+### [PDF p.1] Concept: supporting the semi-automatic gen­ eration of cross-platform
+- Locator: `R1061-cogenasd-a-tool-for-the-co-design-and-generation-of-cross-platform-applications-.pdf` · página **1**
+
+<a id="concept-accessible-and-tailored-applications-cogenasd-lowers-technical-barriers"></a>
+### [PDF p.1] Concept: accessible and tailored applications. CoGenASD lowers technical barriers
+- Locator: `R1061-cogenasd-a-tool-for-the-co-design-and-generation-of-cross-platform-applications-.pdf` · página **1**
+
+<a id="concept-promotes-inclusive-design-practices"></a>
+### [PDF p.1] Concept: promotes inclusive design practices
+- Locator: `R1061-cogenasd-a-tool-for-the-co-design-and-generation-of-cross-platform-applications-.pdf` · página **1**
+
+<a id="concept-fostering-stakeholder-engagement"></a>
+### [PDF p.1] Concept: fostering stakeholder engagement
+- Locator: `R1061-cogenasd-a-tool-for-the-co-design-and-generation-of-cross-platform-applications-.pdf` · página **1**
+
+<a id="concept-r1061"></a>
+### [PDF p.?] Concept: R1061
+- Locator: `R1061-cogenasd-a-tool-for-the-co-design-and-generation-of-cross-platform-applications-.pdf` · página **?**
+
+<a id="concept-cogenasd"></a>
+### [PDF p.?] Concept: cogenasd
+- Locator: `R1061-cogenasd-a-tool-for-the-co-design-and-generation-of-cross-platform-applications-.pdf` · página **?**
+
+<a id="concept-tool"></a>
+### [PDF p.?] Concept: tool
+- Locator: `R1061-cogenasd-a-tool-for-the-co-design-and-generation-of-cross-platform-applications-.pdf` · página **?**
+
+<a id="concept-design"></a>
+### [PDF p.?] Concept: design
+- Locator: `R1061-cogenasd-a-tool-for-the-co-design-and-generation-of-cross-platform-applications-.pdf` · página **?**
+
+<a id="concept-generation"></a>
+### [PDF p.?] Concept: generation
+- Locator: `R1061-cogenasd-a-tool-for-the-co-design-and-generation-of-cross-platform-applications-.pdf` · página **?**
+
+<a id="concept-cross"></a>
+### [PDF p.?] Concept: cross
+- Locator: `R1061-cogenasd-a-tool-for-the-co-design-and-generation-of-cross-platform-applications-.pdf` · página **?**
+
+<a id="concept-platform"></a>
+### [PDF p.?] Concept: platform
+- Locator: `R1061-cogenasd-a-tool-for-the-co-design-and-generation-of-cross-platform-applications-.pdf` · página **?**
+
+<a id="concept-applications"></a>
+### [PDF p.1] Concept: applications
+- Locator: `R1061-cogenasd-a-tool-for-the-co-design-and-generation-of-cross-platform-applications-.pdf` · página **1**
+
+
+## Findings index (graph hooks + página)
+
+<a id="finding-cogenasd-a-tool-for-the-co-design-and-g"></a>
+### [PDF p.1] Finding: CoGenASD: A tool for the co-design and generation of cross-platform applications for people with Autism spectrum disorder Yoel Arroyo * , Ana I.
+- Locator: `R1061-cogenasd-a-tool-for-the-co-design-and-generation-of-cross-platform-applications-.pdf` · página **1**
+
+<a id="finding-redondo-higher-school-of-informatics-un"></a>
+### [PDF p.1] Finding: Redondo Higher School of Informatics, University of Castilla-La Mancha, 13071, Ciudad Real, Spain
+- Locator: `R1061-cogenasd-a-tool-for-the-co-design-and-generation-of-cross-platform-applications-.pdf` · página **1**
+
+
+## Relevance hooks
+### Theme relevance: software engineering and accessibility
+### Theme relevance: cognitive accessibility and neurodiversity
+### Theme relevance: evaluation metrics and WCAG
+
+## Sections (detected in PDF)
+
+<a id="p1-0-metadata"></a>
+### [PDF p.1] Section: 0 Metadata
+- Locator: `R1061-cogenasd-a-tool-for-the-co-design-and-generation-of-cross-platform-applications-.pdf` · página **1** · ancla `#p1-0-metadata`
+
+
+## Page chunks (texto por página del PDF)
+
+_Cada heading es un nodo Graphify. El label incluye la página para volver al PDF sin releer todo._
+
+<a id="pdf-p1"></a>
+### [PDF p.1] SoftwareX 33 (2026) 102512
+- Locator: `R1061-cogenasd-a-tool-for-the-co-design-and-generation-of-cross-platform-applications-.pdf` · página **1** / 8
+
+SoftwareX 33 (2026) 102512
+
+
+                                                                    Contents lists available at ScienceDirect
+
+
+                                                                                  SoftwareX
+                                                           journal homepage: www.elsevier.com/locate/softx
+
+
+
+
+CoGenASD: A tool for the co-design and generation of cross-platform
+applications for people with Autism spectrum disorder
+Yoel Arroyo * , Ana I. Molina , Carmen Lacave , Miguel Á. Redondo
+Higher School of Informatics, University of Castilla-La Mancha, 13071, Ciudad Real, Spain
+
+
+
+
+A R T I C L E I N F O                                      A B S T R A C T
+
+Keywords:                                                  Current ASD-focused app development faces key limitations, such as high technical barriers for non-experts,
+Autism spectrum disorder (ASD)                             limited personalization, and scarce involvement of therapists, families and educators in the design process.
+Model-driven development (MDD)                             This paper presents CoGenASD, a framework that integrates co-design principles with a Model-Driven Devel­
+Co-design
+                                                           opment (MDD) approach to support the semi-automatic generation of cross-platform applications for individuals
+Automatic software generation
+                                                           with ASD. The tool enables multidisciplinary teams (therapists, families and educators) to collaboratively define
+                                                           and model participant profiles, activities, interaction modes and content, supporting the semi-automatic gen­
+                                                           eration of cross-platform, accessible and tailored applications. CoGenASD lowers technical barriers, promotes
+                                                           inclusive design practices, and accelerates the development of support tools. Its potential impact includes
+                                                           increasing application effectiveness, fostering stakeholder engagement, and enabling new research on custom­
+                                                           izable interventions for neurodiverse populations.
+
+
+
+
+0 Metadata
+
+  Nr    Code metadata description              Metadata
+
+  C1    Current code version                   1.0.0.                                       1. Motivation and significance
+  C2    Permanent link to code/repository      https://github.com/ChicoUclm/
+        used for this code version             cogenasd
+                                                                                                Autism Spectrum Disorder (ASD) encompasses a range of neuro­
+  C3    Permanent link to reproducible         https://codeocean.com/capsule/065
+        capsule                                2889/tree                                    developmental conditions that affect communication, social interaction
+  C4    Legal code license                     MIT License                                  and behaviour [1]. ASD is a highly heterogeneous condition, meaning
+  C5    Code versioning system used            Git                                          that each individual exhibits unique manifestations and needs, requiring
+  C6    Software code languages, tools         Eclipse, Emfatic, Epsilon, Epsilon
+                                                                                            personalized support and care [2]. In this context, Augmentative and
+        and services used                      Validation Language, Epsilon Generation
+                                               Language, Epsilon Object Language,           Alternative Communication (AAC) systems,1 predominantly groun­
+                                               Eclipse Communication Framework, Java,       ded in visual resources (typically pictograms2) [3,4], have proven to be
+                                               HTML, JavaScript, CSS                        highly effective in fostering anticipation of situations and the expression
+  C7    Compilation requirements,              Eclipse Epsilon                              of emotions, both of which constitute essential abilities for adaptive
+        operating environments and
+                                                                                            functioning and social integration [5].
+        dependencies
+  C8    If available, link to developer        ​                                                Although digital technologies offer promising avenues to support
+        documentation/manual                                                                individuals with ASD, developing customized applications that effec­
+  C9    Support email for questions            Yoel.Arroyo@uclm.es                          tively address their unique needs remains a complex challenge [6].
+
+
+  * Corresponding author.
+    E-mail addresses: Yoel.Arroyo@uclm.es (Y. Arroyo), AnaIsabel.Molina@uclm.es (A.I. Molina), Carmen.Lacave@uclm.es (C. Lacave), Miguel.Redondo@uclm.es
+(M.Á. Redondo).
+  1
+    Augmentative and Alternative Communication Systems (AACS) are forms of expression other than spoken language that aim to increase the level of expression
+(augmentative) and/or compensate (alternative) for the communication difficulties that some people have in this area.
+  2
+    A pictogram is a simplified graphical representation of an object, concept or action, designed to convey meaning quickly and unambiguously. In the context of
+ASD, pictograms are widely used as visual supports within Augmentative and Alternative Communication (AAC) systems to facilitate understanding, anticipation of
+routines, and expression of needs or emotions.
+
+https://doi.org/10.1016/j.softx.2026.102512
+Received 19 October 2025; Received in revised form 19 December 2025; Accepted 7 January 2026
+Available online 11 January 2026
+2352-7110/© 2026 The Authors. Published by Elsevier B.V. This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).
+
+<a id="pdf-p2"></a>
+### [PDF p.2] Y. Arroyo et al. SoftwareX 33 (2026) 102512
+- Locator: `R1061-cogenasd-a-tool-for-the-co-design-and-generation-of-cross-platform-applications-.pdf` · página **2** / 8
+
+Y. Arroyo et al.                                                                                                                     SoftwareX 33 (2026) 102512
+
+
+Existing solutions often require high technical expertise, lack adapt­            2.1. GUI modelling component
+ability across devices, and rarely involve end-users or stakeholders in the
+design process. For example, many communication or planning appli­                    The GUI modelling component (Fig. 1.a) allows therapists and ASD
+cations provide resources or routines in fixed formats that either cannot         specialists to design the content and structure of activities aimed at users
+be customized or require complex configurations to adapt them to in­              with ASD, using an Eclipse graphical editor. This tool incorporates
+dividual preferences or cognitive levels [7]. This forces users and care­         predefined templates and reusable components that speed up the design
+givers to combine multiple tools or rely heavily on professional support          process. The graphic editor includes a palette (Fig. 2) with icons repre­
+to configure them to meet individual needs, which can lead to rejection           senting the main elements of the DSML proposed for specifying activities
+of this type of technological solution. In response, recent advances              aimed at improving the social skills of people with ASD [13]. So far, the
+emphasize participatory and structured methodologies that actively                editor supports the modelling of the following two types of activities
+involve end-users, therapists and caregivers throughout the process [8,           (Fig. 3):
+9], moving away from traditional designer-driven approaches toward
+frameworks based on co-design principles, iterative prototyping and               1. The planning and anticipation of daily routines activities (Fig. 3)
+recommendations tailored to ASD needs [10]. To address these limita­                 are specified using a generic graphical notation comprising nodes,
+tions, CoGenASD was developed as a semi-automatic software tool that                 links and annotations [13]. Nodes depict elements such as people,
+leverages Model-Driven Development (MDD) to facilitate co-design,                    places or actions, while links define the temporal or logical sequence
+support user requirements specification into high-level models, valida­              among them. Both nodes and links can be annotated with supportive
+tion of design guidelines and the semi-automatic generation of adaptive,             information to enhance understanding and engagement. Supported
+cross-platform applications tailored to individuals with ASD. MDD [11]               annotations include:
+is a software development methodology that uses models, often visual,                • Social recommendations to guide interpersonal communication
+as the primary artifact to create software. Instead of manually writing all             (Fig. 3a). These individualized narratives help people with ASD
+code, developers use these models to specify a system's structure and                   comprehend social cues and improve interaction skills [15–17].
+behaviour, which are then transformed into executable code through                   • Augmentative and alternative communication (AAC) tools, such as the
+automated processes. This approach focuses on abstraction to simplify                   AAC notebook, can be referenced at specific steps where their use
+complexity, automation to accelerate development, and improves                          may be required. Recent studies highlight the benefits of person­
+collaboration by providing a common, understandable blueprint for user                  alized AAC approaches for improved communication and cogni­
+needs. The relevance of CoGenASD lies in combining co-design with                       tive engagement in users with ASD [18,19].
+MDD to empower both developers and non-technical stake­                              • Temporal information, like waiting times or deadlines (Fig. 3b), which
+holders—such as therapists, educators and families— in collaboratively                  are essential for helping individuals with ASD anticipate changes
+creating personalized, accessible applications across devices. Thus, this               and manage anxiety [20].
+tool addresses a significant gap in the assistive technology field by                • Rewards and incentives, emphasizing the role of positive rein­
+lowering the barrier to developing customized solutions while preser­                   forcement (well-supported by ASD intervention literature) to boost
+ving user-centred design principles.                                                    motivation and engagement [21].
+    CoGenASD has been developed as an Eclipse-based plugin using the                 • Calming activities or objects (Fig. 3c), such as toys, with sensory
+Epsilon3 framework to implement a model-driven approach that sup­                       qualities, support self-regulation during stress and help manage
+ports participatory design methodologies [9,12]. Through a                              anxiety, particularly in waiting situations [22].
+domain-specific modelling language (DSML), therapists and care­                   2. For emotion recognition activities (Fig. 3), the diagrams incorpo­
+givers can collaboratively define the structure and behaviour of                     rate nodes representing a target emotion (e.g., a facial expression or
+pictogram-based applications [3,4] for communication, planning or                    social scene) (Fig. 3d) and selectable response options (Fig. 3e). Links
+emotion recognition, using an intuitive visual environment accessible to             between these nodes specify correct or incorrect answers and allow
+non-technical stakeholders [13]. The plugin reduces manual coding and                the inclusion of positive or negative feedback.
+enables the generation of adaptive applications for multiple devices
+(smartphones, tablets, large displays), thus combining technical auto­                The activities designed comply with universal design principles and
+mation with participatory design to deliver efficient, inclusive and              accessibility standards (e.g., WCAG, AAC) using multimodal cues and
+customizable digital supports tailored to individuals with ASD.                   predictable visual patterns. It also takes into account different sensory
+                                                                                  and communicative preferences, reduces cognitive load, and complies
+2. Software description                                                           with specific guidelines for designing applications for users with ASD
+                                                                                  [23].
+    The CoGenASD framework is comprised of three main software                        The CoGenASD graphical editor empowers practitioners (therapists
+components: (1) the Graphical User Interface (GUI) modelling compo­               or ASD specialists) not only to design personalized ASD activity dia­
+nent, (2) the co-design and collaboration component, and (3) the export           grams but also to seamlessly initiate the generation of cross-platform
+and deployment component.                                                         applications for individuals with ASD. This capability is enabled
+    Fig. 1 presents, from a general perspective, the architecture that            thanks to the use of the Eclipse Epsilon environment, a powerful plat­
+underpins CoGenASD and illustrates the relationships between these                form for MDD that automates key model-based engineering tasks [11].
+core components. Thus, the GUI Component provides the ASD graph­                  Table 1 lists the technologies used in this first component of the
+ical editor, built on EMF/GEF/GMF, which automatically transforms                 framework.
+models using predefined templates. The Co-Design and Collaboration                    Once a practitioner completes an ASD activity diagram, the system
+Component integrate the SpacEclipse [14] plugin with Eclipse                      can automatically trigger the generation of a ready-to-deploy applica­
+Communication Framework (ECF) remote services, allowing real-time                 tion. This transformation is driven by a set of predefined templates
+synchronization, messaging and shared editing across multiple users.              created using the Epsilon Generation Language (EGL),4 specifically
+Finally, the Export and Deployment Component generate a multi­                    contained within the Templates.egl file and orchestrated by the Rules.egx
+device ASD application (using HTML, CSS, JavaScript and images) so                file (Fig. 1a). These components, though transparent to the practitioner,
+diagrams can be deployed on web, mobile and desktop platforms.                    enable the high-level visual specification (diagram) to be translated into
+
+
+  3                                                                                4
+      https://eclipse.dev/epsilon/                                                     https://www.eclipse.org/epsilon/doc/egl/
+
+                                                                              2
+
+<a id="pdf-p3"></a>
+### [PDF p.3] Y. Arroyo et al. SoftwareX 33 (2026) 102512
+- Locator: `R1061-cogenasd-a-tool-for-the-co-design-and-generation-of-cross-platform-applications-.pdf` · página **3** / 8
+
+Y. Arroyo et al.                                                                                                                            SoftwareX 33 (2026) 102512
+
+
+
+
+                                             Fig. 1. Overview and key components of the CoGenASD architecture.
+
+
+                                                                                     the activity templates (specified with the proposed DSML) and import
+                                                                                     images from external sources, allowing activities to be tailored to the
+                                                                                     preferences and needs of ASD users.
+                                                                                         This first component (GUI modelling component) can support
+                                                                                     collaborative use (Fig. 1b) through the integration of SpacEclipse [14], a
+                                                                                     plugin for Eclipse that provides model-driven support for the develop­
+                                                                                     ment of collaborative tools. Table 2 enumerates the technologies and
+                                                                                     languages involved in this second component of the framework.
+                                                                                         SpaceEclipse provides abstractions and reusable components to
+                                                                                     manage aspects such as coordination, communication and awareness,5
+                                                                                     enabling developers to create collaborative modelling tools and appli­
+                                                                                     cations in a systematic and efficient way. This functionality relies on the
+                                                                                     Eclipse Communication Framework (ECF) (Fig. 1b), an open-source
+                                                                                     middleware for distributed applications that provides messaging, pres­
+                                                                                     ence, and shared service capabilities, serving as the communication
+                                                                                     backbone of SpacEclipse.
+                                                                                         When the CoGenASD graphical editor and SpacEclipse are present in
+                                                                                     the same Eclipse workspace, their integration can be activated using the
+                                                                                     CollaborativeDiagram.patch (Fig. 1b). This patch modifies the main
+                                                                                     SpacEclipse class to specifically enable support for collaborative design
+                                                                                     of activity specification diagrams. Integration is technically facilitated
+                                                                                     through two main internal components: the Space Java class (Fig. 1b),
+Fig. 2. CoGenASD palette options available, including categories for Planning,       which adapts any generic DSL graphical editor, such as the activity di­
+AAC Notebook and Emotions.                                                           agram editor, to SpacEclipse’s collaborative environment; and the
+                                                                                     SpaceClient class (Fig. 1b), which connects SpacEclipse with an ECF
+a functional, cross-platform ASD application.                                        Generic Server, allowing for real-time multi-user interaction among
+                                                                                     practitioners and support providers for individuals for ASD.
+                                                                                         The collaborative and distributed editing feature supported by
+2.2. Co-design and collaboration component
+
+   CoGenASD supports both mono-user and collaborative modes.
+Collaborative mode is enabled through the co-design and collaboration                 5
+                                                                                         Awareness refers to understanding the activities of others to support one’s
+component (Fig. 1b), which allows support persons for individuals with               own work. It is commonly conveyed through mechanisms such as participant
+ASD (practitioners and family members or caregivers) to jointly partic­              color-coding, telepointers, presence indicators or notifications of changes in the
+ipate in the design process, sharing insights and decisions in real time.            shared workspace. Such awareness mechanisms enhance coordination and
+During this collaborative customization phase, stakeholders instantiate              improve the efficiency of collaborative work.
+
+                                                                                 3
+
+<a id="pdf-p4"></a>
+### [PDF p.4] Y. Arroyo et al. SoftwareX 33 (2026) 102512
+- Locator: `R1061-cogenasd-a-tool-for-the-co-design-and-generation-of-cross-platform-applications-.pdf` · página **4** / 8
+
+Y. Arroyo et al.                                                                                                                                SoftwareX 33 (2026) 102512
+
+
+
+
+Fig. 3. The CoGenASD graphical editor supports visual specification diagrams for: (1) planning and anticipation activities, and (2) emotion recognition. The figure
+shows examples of an activity template and a possible instantiation of that template.
+
+
+                                                                                           CoGenASD is especially valuable when remote participation by family
+Table 1
+                                                                                           members or caregivers is necessary. SpacEclipse enhances the graphical
+Summary of technologies and languages used in the GUI modelling component.
+                                                                                           editor with a suite of collaborative tools (Fig. 4), including a chat, a turn-
+  Technology        Definition                        Use in CoGenASD                      taking panel and a session panel. It also improves user awareness by
+  Eclipse Epsilon   Model management                  Design, validation and               employing color-coded identifiers, telepointers, semaphores to manage
+                    framework providing a set of      generation of the CoGenASD           editing shifts and sound notifications to indicate GUI changes in real time.
+                    domain-specific languages         graphical editor
+                                                                                           These collaborative mechanisms support group decision-making and
+                    (DSLs) to support model-
+                    driven development (MDD)
+                                                                                           participatory design [8,9] sessions, enabling stakeholders to jointly
+                    processes                                                              discuss, negotiate, refine and validate activity designs in real time. In
+  EGL (Epsilon      Language for generating text      Enables the automatic                practice, this environment also facilitates focus-group-style sessions,
+    Generation      or code from models               generation of cross-platform         where therapists, educators and families can collaboratively contribute
+    Language)                                         applications from the
+                                                                                           requirements and feedback during the design process [24].
+                                                      specifications (diagrams) of
+                                                      the ASD activities (.egl file)           A notable feature of CoGenASD is the validation of activity designs
+                                                                                           in both individual and collaborative editing. Using Epsilon Validation
+                                                                                           Language (EVL),6 structural and syntactic constraints can be specified,
+                                                                                           such as, for ensuring all nodes in a plan are connected or limiting the
+Table 2
+                                                                                           number of pictograms (Fig. 5a). The editor generates warnings or errors
+Summary of technologies and languages used in the collaboration component.
+                                                                                           for unmet constraints, which can be corrected manually or automati­
+  Technology            Definition                          Use in CoGenASD
+                                                                                           cally (Fig. 5b). In addition, validations related to usability and
+  SpacEclipse           Plug-in enabling collaboration      Initiates collaborative        accessibility guidelines have been incorporated based on a UX checklist
+                        features (chat, session panel,      sessions in the                for evaluating applications aimed at ASD users [23]. For instance, the
+                        turn-taking panel) in Eclipse       CoGenASD graphical
+                                                            editor
+                                                                                           guideline “the system provides rewards to the user for positive actions or
+  EVL (Epsilon          DSL for defining validation         Enforces ASD diagrams          good performance” has been implemented in EVL, requiring the inclusion
+    Validation          constraints                         validity usability and         of an award or recompense node in planning activities (Fig. 5c). By
+    Language)                                               therapeutic rules              encoding these guidelines as EVL-based validation rules, which are
+  ECF (Eclipse          Framework for real-time and         Enables real-time
+                                                                                           automatically evaluated, CoGenASD integrates them directly into the
+    Communication       asynchronous communication          collaboration in the
+    Framework)          in Eclipse                          CoGenASD graphical             modelling workflow, guiding stakeholders toward accessible,
+                                                            editor
+
+
+                                                                                            6
+                                                                                                https://www.eclipse.org/epsilon/doc/evl/
+
+                                                                                       4
+
+<a id="pdf-p5"></a>
+### [PDF p.5] Y. Arroyo et al. SoftwareX 33 (2026) 102512
+- Locator: `R1061-cogenasd-a-tool-for-the-co-design-and-generation-of-cross-platform-applications-.pdf` · página **5** / 8
+
+Y. Arroyo et al.                                                                                                                                SoftwareX 33 (2026) 102512
+
+
+
+
+Fig. 4. Collaborative and awareness support mechanisms integrated into the collaborative graphical editor: (a) chat, (b) session panel, (c) turn-taking panel
+(semaphores) and (d) telepointers.
+
+
+
+
+Fig. 5. Support for validating and correcting ASD activity designs: (a) specification in EVL of the restriction related to the number of steps in a plan, (b) specification
+in EVL of a UX guideline for applications aimed at users with ASD, and (c) notifications in the graphic editor about any errors or warnings detected in the diagram.
+
+
+guideline-compliant solutions.                                                           This approach ensures that users can interact with the application across
+    Thus, using the features supported by this collaborative component                   different ecosystems, including iOS, Android, Windows, and Linux,
+of CoGenASD, during a co-design session, all participants can jointly                    while maintaining a consistent user experience.
+engage in the specification, customization and validation of the ASD                         At its core, the generated application consists of an index.html file
+activity specification and initiate the automatic generation of cross-                   serving as the main entry point; a suite of JavaScript files (teaw.js, gojs.js)
+platform instances of ASD application. Although this collaborative                       responsible for logic and interactivity; multiple CSS style sheets (teaw_­
+mode is entirely optional, it significantly enhances participation and                   desktop.css, teaw_large.css, teaw_tablet.css and teaw_phone.css) to ensure
+personalization during the design of the ASD application.                                responsive design across various screen sizes; and an image repository
+                                                                                         containing the graphical assets for the GUI. The application logic is
+                                                                                         powered by GoJS,7 a JavaScript library that enables dynamic and cus­
+2.3. Export and deployment component                                                     tomizable rendering and manipulation of diagrams.
+
+    Finally, the export and deployment component (Fig. 1c) converts                      3. Illustrative examples
+the designed model into a deployable cross-platform web ASD applica­
+tion, generating application code, assets and configuration files for the                    This section describes a usage scenario of the proposed platform.
+multi-platform deployment of activities.                                                 Consider the following situation: “Two children—Emma and Ethan—­
+    This component encapsulates the technological foundation and                         classmates enrolled in the same school, attend a specialized care center for
+structural components required for deploying interactive, web-based                      children with ASD during the summer holidays. With the beginning of the
+tools capable of running on mobiles, desktops, tablets and large-
+format touch displays. Being web-based, the generated applications
+can be accessed on any device with a modern web browser, providing
+inherent cross-platform compatibility without additional adaptations.                     7
+                                                                                              https://gojs.net/latest/
+
+                                                                                     5
+
+<a id="pdf-p6"></a>
+### [PDF p.6] Y. Arroyo et al. SoftwareX 33 (2026) 102512
+- Locator: `R1061-cogenasd-a-tool-for-the-co-design-and-generation-of-cross-platform-applications-.pdf` · página **6** / 8
+
+Y. Arroyo et al.                                                                                                                        SoftwareX 33 (2026) 102512
+
+
+school year approaching, educators, therapists, and families decide to use the        process also enhances stakeholder engagement and increased the relevance
+CoGenASD application to anticipate and prepare the children for this new              and acceptance of the resulting applications.
+stage”                                                                                    This model-driven approach offers significant advantages that
+    A few days before the beginning of the academic year, professionals               enhance both the development process and the quality of the resulting
+and family members participate in co-design sessions aimed at defining                therapeutic tools. Efficiency is achieved by automating the generation of
+and modelling a planning activity with CoGenASD. During these ses­                    key components of the ASD application, including its structure,
+sions, and thanks to the advantages of MDD, a visual sequence of                      appearance and behavioral constraints, thus minimizing manual coding
+anticipated steps is quickly constructed and fully understandable by                  efforts. Reusability and consistency are maintained through metamodels
+both professionals and family members, who can incorporate picto­                     and generation templates, which can be adapted across different pro­
+grams and/or real images that represent the actions, locations, and in­               jects or deployment targets while preserving a standardized design
+dividuals involved in the forthcoming scenario. The planning activity is              philosophy. Built-in validation via EVL ensures that each ASD diagram
+subsequently enhanced with contextual annotations, including temporal                 meets structural, usability and therapeutic requirements before any
+cues, social stories, calming objects, and motivational incentives. The               application is generated, reinforcing both reliability and quality.
+distributed collaborative editor implementing MDD enables therapists                  Furthermore, the scalability of the model-driven infrastructure allows for
+and parents (who may be in different locations, such as on vacation) to               the easy extension of the system to support new activity types, user in­
+jointly validate the planning activity (Fig. 6).                                      terfaces or target platforms with minimal changes to the core models.
+    Once the collaborative design phase is completed, CoGenASD auto­                  This flexibility makes it possible to adapt the framework for diverse user
+matically generates multiple views of the activity, which are deployed in             needs, intervention goals and technological environments.
+two formats: a version for a multitouch screen installed in the special­                  The CoGenASD framework exemplifies the benefits of model-driven
+ized care center classroom that the children attend during the summer                 engineering in therapeutic software development. This approach can
+(Fig. 7a), and a mobile version for use by their families (Fig. 7b and c).            reduce time, cost and technical barriers, ensuring tools are scalable,
+    In the classroom, the multitouch screen supports an interactive group             adaptable and aligned with best practices for interventions and user
+experience where the children can explore and become familiar with the                experience (UX) for ASD users. Beyond immediate benefits for re­
+anticipated steps and scenarios of their first day at school, several days in         searchers, practitioners and institutions, CoGenASD provides a repro­
+advance. This view includes a visual sequence combining pictograms                    ducible model that can be extended to other populations with special
+and real images (e.g., photographs of the school building, the teacher,               needs, accelerating the development of assistive technologies and enabling
+etc.), describing the entire process—from leaving home to being                       new research avenues in technology-mediated interventions for neuro­
+welcomed by the teacher—enabling tactile interaction with the antici­                 diverse individuals.
+pated routine. The multitouch interface fosters collaborative learning
+and shared engagement, while educators can present and explain the                    5. Limitations
+content collectively. Meanwhile, the mobile version allows families to
+accompany and monitor the child’s individual progress on the actual                       Despite its merits, CoGenASD presents several limitations that should
+school day (Fig. 7d). Through their mobile devices, parents can also                  be acknowledged. First, the flexibility and expressiveness of the gener­
+access and rehearse the routine in advance, reinforcing the steps at home             ated applications are currently constrained by the supported activity
+and supporting the child’s preparation for the new situation.                         formats and types; future work aims to extend this by creating a tax­
+    In this way, the collaborative approach facilitated by CoGenASD                   onomy of activity types, incorporating multiple formats (pictograms,
+between therapists and families contributes to a smoother adaptation of               text, or combinations), and embedding multimedia resources. Second,
+Emma and Ethan to the beginning of the school year. Furthermore, the                  the tool requires some level of training for stakeholders, which can be
+dual interaction mode—in both classroom and home settings—enhances                    partially addressed through manuals, video tutorials, and guided sup­
+continuity and consistency in anticipation and planning, thereby                      port during the co-design process. Third, integration with external sys­
+reducing potential anxiety and promoting autonomy in children with                    tems, such as AAC tools, and additional coding mechanisms (e.g., color-
+ASD.                                                                                  coding pictogram categories) are not yet fully implemented. Finally, the
+                                                                                      system’s handling of changes and unexpected events in activity plans, as
+4. Impact                                                                             well as its current support for progress tracking and gamification,
+                                                                                      remain areas for improvement.
+    CoGenASD provides an innovative solution to a major challenge in                      Addressing these limitations is planned as future work, alongside the
+the development of digital tools for individuals with ASD: the lack of                enhancement of collaborative communication channels and the expan­
+accessible, customizable and inclusive software creation processes. This              sion of empirical validation. While the system has been deployed and
+system is especially useful for designing applications for children. By               evaluated informally in a real setting in which a 6-year-old girl and an 8-
+combining co-design principles with a MDD approach, CoGenASD em­                      year-old boy, their respective mothers and a psychologist to represent
+powers multidisciplinary agents (including therapists and families or                 the use case in Section 3, a more comprehensive study with a larger and
+caregivers) to actively participate in the semi-automatic generation of               more diverse group of stakeholders is planned to fully assess the
+cross-platform applications tailored to specific user profiles, contexts              framework’s effectiveness and usability. As this evaluation involves
+and goals. The tool facilitates the creation of highly personalized activities,       sensitive data, the complete study design has already been submitted for
+allowing practitioners to define content types and interaction modalities             approval to our university’s Ethics Committee, and authorization is
+that match the specific support requirements of each ASD individual.                  currently pending.
+The integration of co-design techniques throughout the modelling
+
+
+
+
+                      Fig. 6. Planning activity resulting from the individual design and co-design phases supported by CoGenASD editors.
+
+                                                                                  6
+
+<a id="pdf-p7"></a>
+### [PDF p.7] Y. Arroyo et al. SoftwareX 33 (2026) 102512
+- Locator: `R1061-cogenasd-a-tool-for-the-co-design-and-generation-of-cross-platform-applications-.pdf` · página **7** / 8
+
+Y. Arroyo et al.                                                                                                                                  SoftwareX 33 (2026) 102512
+
+
+
+
+Fig. 7. Activity deployed across multiple interaction devices and settings: (a) at the specialized care center in the final days of summer (e.g., projecting onto an
+interactive whiteboard); at home, to anticipate the activity, (b) alone (e.g. using a smartphone) or (c) with the help of a family member (e.g. using a tablet), and (d)
+during its execution (e.g. using a smartphone).
+
+
+6. Conclusions                                                                         Funding acquisition.
+
+    CoGenASD represents a significant step forward in the development
+of inclusive digital tools for individuals with ASD. By integrating co-                Declaration of competing interest
+design methodologies with a model-driven development approach, the
+platform addresses the need for more accessible, participatory and                        The authors declare that they have no conflict of interest.
+scalable software solutions in this field. The tool enables the semi-
+automatic generation of cross-platform applications, fostering the                     Acknowledgements
+active involvement of therapists, educators, families and other stake­
+holders throughout the development process.                                                This work was funded by the APTEA project (TED2021-131956B-
+    The combination of personalization capabilities and participatory                  I00, MICIN/AEI/10.13039/501100000033, EU NextGenerationEU/
+design contributes not only to improving the usability and acceptance of               PRTR), the PlantTEAAF and TEAcompaño projects (2022-GRIN-34175,
+the resulting applications but also to reducing the technical and tem­                 2025-GRIN-38489, UCLM Own Research Plan, ERDF), the collaboration
+poral barriers typically associated with the development of assistive                  and     transfer   agreements      UCLM–AUTRADE    (220413CONV,
+technology.                                                                            250402CONV), and the UCLM–Telefónica Chair in Advanced Interac­
+    Future work will focus on expanding the variety of activities sup­                 tion Systems for Digital and Inclusive Education.
+ported. We also plan to integrate features such as activity restart,
+progress tracking, embedded multimedia and gamification elements.                      References
+Enhancements in co-design support—such as richer communication
+channels—will foster more effective collaboration. Once these im­                      [1] Lord C, Elsabbagh M, Baird G, Veenstra-Vanderweele J. Autism spectrum disorder.
+                                                                                           Lancet Aug. 2018;392(10146):508–20. https://doi.org/10.1016/S0140-6736(18)
+provements are in place, broader validation studies involving ASD users
+                                                                                           31129-2.
+and their families will be conducted to assess the framework’s effec­                  [2] Mottron L, Bzdok D. Autism spectrum heterogeneity: fact or artifact? Mol
+tiveness and generalizability.                                                             Psychiatry Dec. 2020;25(12):3178–85. https://doi.org/10.1038/s41380-020-
+    Moreover, CoGenASD lays the foundation for new research di­                            0748-y.
+                                                                                       [3] Meadan H, Ostrosky MM, Triplett B, Michna A, Fettig A. Using visual supports with
+rections in the areas of collaborative modelling, inclusive technology                     young children with Autism Spectrum disorder. Teach Except Child 2011;43(6):
+design and technology-mediated intervention for neurodiverse pop­                          28–35. https://doi.org/10.1177/004005991104300603.
+ulations. Its reproducible and extensible framework can be adapted to                  [4] Kidder JE, McDonnell AP. Visual aids for positive behavior support of young
+                                                                                           children with Autism spectrum disorders. Young Except Child Sep. 2017;20(3):
+other collectives with special needs, supporting both scientific inquiry                   103–16. https://doi.org/10.1177/1096250615586029.
+and real-world application. Ultimately, CoGenASD aims to contribute                    [5] Rutherford M, Baxter J, Grayson Z, Johnston L, O’Hare A. Visual supports at home
+meaningfully to the inclusion, autonomy and well-being of individuals                      and in the community for individuals with autism spectrum disorders: a scoping
+                                                                                           review. Autism 2020;24(2):447–69. https://doi.org/10.1177/1362361319871756.
+with ASD through accessible and adaptive digital innovation.                           [6] Liu Y, Li S, Huang Y, Li D. Information technology-based intervention on the socio-
+                                                                                           emotional competence of individuals with Autism spectrum disorders: a systematic
+                                                                                           review and meta-analysis. J Intell Aug. 2025;13(8):98. https://doi.org/10.3390/
+CRediT authorship contribution statement
+                                                                                           jintelligence13080098.
+                                                                                       [7] Hasan N, Nene MJ. Determinants of technological interventions for children with
+    Yoel Arroyo: Writing – original draft, Software, Methodology,                          Autism - a systematic review. J Educ Comput Res Mar. 2024;62(1):30–69. https://
+Conceptualization. Ana I. Molina: Writing – review & editing, Super­                       doi.org/10.1177/07356331231200701.
+                                                                                       [8] Maun R, Fabri M, Trevorrow P. Participatory methods to engage autistic people in
+vision, Methodology, Investigation, Conceptualization. Carmen                              the design of digital technology: a systematic literature review. J Autism Dev
+Lacave: Writing – review & editing, Supervision. Miguel Á. Redondo:                       Disord Aug. 2024;54(8):2960–71. https://doi.org/10.1007/s10803-023-06015-5.
+
+
+                                                                                   7
+
+<a id="pdf-p8"></a>
+### [PDF p.8] Y. Arroyo et al. SoftwareX 33 (2026) 102512
+- Locator: `R1061-cogenasd-a-tool-for-the-co-design-and-generation-of-cross-platform-applications-.pdf` · página **8** / 8
+
+Y. Arroyo et al.                                                                                                                                          SoftwareX 33 (2026) 102512
+
+ [9] Glumbić N, Đorđević M, Brojčin B. Participatory design. Digital inclusion of               address the social and emotional health of autistic children in UK primary schools.
+     individuals with autism spectrum disorder. Springer; 2022. p. 19–45. https://doi.             Child Adolesc Ment Health Feb. 2025;30(1):4–12. https://doi.org/10.1111/
+     org/10.1007/978-3-031-12037-4_2.                                                              camh.12740.
+[10] Hijab MHF, Banire B, Neves J, Qaraqe M, Othman A, Al-Thani D. Co-design of               [18] White EN, Ayres KM, Snyder SK, Cagliani RR, Ledford JR. Augmentative and
+     technology involving autistic children: a systematic literature review. Int J                 alternative communication and speech production for individuals with ASD: a
+     Hum–Comput Interact Nov. 2024;40(22):7498–516. https://doi.org/10.1080/                       systematic review. J Autism Dev Disord Nov. 2021;51(11):4199–212. https://doi.
+     10447318.2023.2266248.                                                                        org/10.1007/s10803-021-04868-2.
+[11] Schmidt DC. Model-driven engineering. IEEE Comput Feb. 2006;39(2):25–31.                 [19] Edgar TC, Schlosser R, Koul R. Effects of an augmentative and alternative
+     https://doi.org/10.1109/MC.2006.58.                                                           communication intervention package on socio-communicative behaviors between
+[12] Vandekerckhove P, de Mul M, Bramer WM, de Bont AA. Generative participatory                   minimally speaking autistic children and their peers. Am J Speech-Lang Pathol Jul.
+     design methodology to develop electronic health interventions: systematic                     2024;33(4):1619–38. https://doi.org/10.1044/2024_AJSLP-23-00313.
+     Literature Review. J Med Internet Res Apr. 2020;22(4):e13780. https://doi.org/           [20] Jurek L, et al. How did I get so late so soon? A review of time processing and
+     10.2196/13780.                                                                                management in autism. Behav Brain Res 2019;374(April). https://doi.org/
+[13] Molina AI, Arroyo Y, Lacave C. MultiTEA: a model-driven framework for the co-                 10.1016/j.bbr.2019.112121.
+     design and automatic generation of applications for ASD users. Multimed Tools            [21] Muharib R, Walker VL. Differential reinforcement in applied settings for
+     Appl Apr. 2025;84(34):42081–120. https://doi.org/10.1007/s11042-025-20811-                    individuals with Autism: a systematic literature review. Adv Neurodev Disord Oct.
+     4.                                                                                            2024. https://doi.org/10.1007/s41252-024-00419-9.
+[14] Gallardo J, Bravo C, Redondo MA. A model-driven development method for                   [22] Roberge N, Crasta JE. A systematic review of sensory interventions for children
+     collaborative modeling tools. J Netw Comput Appl 2012;35(3):1086–105. https://                with autism: the effects on attention and self-regulation. Am J Occup Ther Jul.
+     doi.org/10.1016/j.jnca.2011.12.009.                                                           2022;76(Supplement_1). https://doi.org/10.5014/ajot.2022.76S1-PO189.
+[15] Karkhaneh M, Clark B, Ospina MB, Seida JC, Smith V, Hartling L. Social stories™ to            7610510189p1.
+     improve social skills in children with autism spectrum disorder. Autism Nov. 2010;       [23] Valencia K, Botella F, Rusu C. A property checklist to evaluate the user experience
+     14(6):641–62. https://doi.org/10.1177/1362361310373057.                                       for people with Autism spectrum disorder. HCII2022: social computing and social
+[16] Wright B, et al. Impact of social stories on social and emotional health of autism            media: design, user experience and impact, 13315. Springer International
+     spectrum primary school children: the ASSSIST2 RCT with economic evaluation.                  Publishing; 2022. p. 205–16. https://doi.org/10.1007/978-3-031-05061-9_15.
+     Health Technol Assess (Rockv) Aug. 2024:1–121. https://doi.org/10.3310/                       Lecture Notes in Computer Science.
+     JBTM8017.                                                                                [24] Tümen Akyıldız S, Ahmed KH. An overview of qualitative research and focus group
+[17] Wright B, et al. Autism Spectrum Social Stories in Schools Trial 2 (ASSSIST-2): a             discussion. Int J Acad Res Educ Dec. 2021;7(1):1–15. https://doi.org/10.17985/
+     pragmatic randomised controlled trial of the Social Stories™ intervention to                  ijare.866762.
+
+
+
+
+                                                                                          8
