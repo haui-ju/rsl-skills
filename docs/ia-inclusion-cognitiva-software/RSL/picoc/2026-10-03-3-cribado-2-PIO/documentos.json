@@ -10,46 +10,70 @@
       "id": "R003",
       "titulo": "From Granular Grief to Binary Belief: A Collaborative Optimization of Annotation Techniques for Anti-Autistic Language",
       "doi": "10.1145/3757478",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
+      "pdf": "docs/pdf/R003-from-granular-grief-to-binary-belief-a-collaborative-optimization-of-annotation-.pdf",
+      "fuente": "alineamiento",
       "url": null,
-      "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
-      "intentos": [],
-      "duda": true
+      "enlace_manual": "https://dl.acm.org/doi/pdf/10.1145/3757478",
+      "sha256": "2a94823532fdba4e3379ca1eb8792e3f45b1f73073edee9fdc42b137c764200c",
+      "bytes": 1124704,
+      "intentos": [
+        {
+          "fuente": "unpaywall",
+          "url": "https://dl.acm.org/doi/pdf/10.1145/3757478",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "doi-landing",
+          "url": "https://doi.org/10.1145/3757478",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 2,
       "id": "R016",
       "titulo": "Prompt Engineering Versus Model Selection for Cognitive Accessibility in Large Language Models: An Empirical Study",
       "doi": "10.1109/access.2026.3667133",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
+      "pdf": "docs/pdf/R016-prompt-engineering-versus-model-selection-for-cognitive-accessibility-in-large-l.pdf",
+      "fuente": "alineamiento",
       "url": null,
-      "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
-      "intentos": [],
-      "duda": true
+      "enlace_manual": "https://doaj.org/article/53f19333d4d04fe7ab1d281ddba19d12",
+      "sha256": "7c7107357d3fa4f9ad8f184482e04603ec3f945e86b61d9a0d46adfd1bf4d32e",
+      "bytes": 2189443,
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.1109/access.2026.3667133",
+          "resultado": "no es PDF (text/html)"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doaj.org/article/53f19333d4d04fe7ab1d281ddba19d12",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 3,
       "id": "R030",
       "titulo": "FROM EXCLUSION TO EMPOWERMENT: REDESIGNING E-LEARNING TO MITIGATE RISKS FOR DISABLED STUDENTS",
       "doi": "10.37385/jaets.v7i1.7608",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R030-from-exclusion-to-empowerment-redesigning-e-learning-to-mitigate-risks-for-disab.pdf",
+      "fuente": "unpaywall",
+      "url": "https://journal.yrpipku.com/index.php/jaets/article/download/7608/5397",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "9c7dd400c857d99830b31ccad0a6020152ab766497d8827a52ed0fff36475e65",
+      "bytes": 739695,
       "intentos": [],
       "duda": true
     },
@@ -59,30 +83,58 @@
       "titulo": "An Intelligent Assistive System for Autistic Learners",
       "doi": "10.1002/eng2.70455",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://doaj.org/article/8cd365c4312a48d9a81409b1910106dc",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": false
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.1002/eng2.70455",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doaj.org/article/8cd365c4312a48d9a81409b1910106dc",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": false,
+      "oa_registrada": true
     },
     {
       "orden": 5,
       "id": "R047",
       "titulo": "Online coding of the Brief Observation of Social Communication Change (BOSCC) to capture treatment response in minimally verbal children with autism spectrum disorder",
       "doi": "10.1177/20552076251347105",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R047-online-coding-of-the-brief-observation-of-social-communication-change-boscc-to-c.pdf",
+      "fuente": "pmc",
+      "url": "https://europepmc.org/api/getPdf?pmcid=PMC12177254",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
-      "intentos": [],
+      "sha256": "6223eec632b6450a424b70fc8a62a8bfbb37202286b7ebcea6976ca94021d470",
+      "bytes": 748146,
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.1177/20552076251347105",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/12177254",
+          "resultado": "no es PDF (text/html)"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doaj.org/article/859219792eb3472fa42f70b25fb35304",
+          "resultado": "HTTP 403"
+        }
+      ],
       "duda": true
     },
     {
@@ -91,15 +143,22 @@
       "titulo": "Design and Evaluation of a Rule-Based Expert System for Early Screening of Learning Disabilities in Educational Settings",
       "doi": "10.18280/isi.310706",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://doi.org/10.18280/isi.310706",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": false
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.18280/isi.310706",
+          "resultado": "no es PDF (text/html)"
+        }
+      ],
+      "duda": false,
+      "oa_registrada": true
     },
     {
       "orden": 7,
@@ -107,29 +166,36 @@
       "titulo": "Iris: A Content Management System Supporting Typography and Accessibility",
       "doi": "10.1145/3770761.3777217",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://doi.org/10.1145/3770761.3777217",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.1145/3770761.3777217",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 8,
       "id": "R106",
       "titulo": "ATECA: a Web Application to Facilitate Easy-to-Read Adaptations; [ATECA: UNA APLICACIÓN WEB PARA AGILIZAR LAS ADAPTACIONES A LECTURA FÁCIL]",
       "doi": "10.14201/scero.32147",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R106-ateca-a-web-application-to-facilitate-easy-to-read-adaptations-ateca-una-aplicac.pdf",
+      "fuente": "unpaywall",
+      "url": "https://revistas.usal.es/tres/index.php/0210-1696/article/download/32147/30340",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "e58080d11f5d3125802fa4efbd5b5329695741ca6ec674f5ccc882a9e310929a",
+      "bytes": 3120792,
       "intentos": [],
       "duda": true
     },
@@ -138,14 +204,14 @@
       "id": "R123",
       "titulo": "CNReader: a reading practice tool designed for Chinese children with developmental dyslexia",
       "doi": "10.1057/s41599-025-05079-1",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R123-cnreader-a-reading-practice-tool-designed-for-chinese-children-with-developmenta.pdf",
+      "fuente": "unpaywall",
+      "url": "https://www.nature.com/articles/s41599-025-05079-1.pdf?error=cookies_not_supported&code=bd097747-d34e-4522-9b7a-07a64c83090f",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "60e7225765811868d96ab36de211328f910c58706b35967d07ecadb805cdcf5b",
+      "bytes": 1898874,
       "intentos": [],
       "duda": true
     },
@@ -154,14 +220,14 @@
       "id": "R145",
       "titulo": "A user-centred approach to enhancing engagement and task management for ADHD students using AR and generative AI",
       "doi": "10.1007/s44217-026-01264-9",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R145-a-user-centred-approach-to-enhancing-engagement-and-task-management-for-adhd-stu.pdf",
+      "fuente": "unpaywall",
+      "url": "https://ltu.diva-portal.org/smash/get/diva2:2054164/FULLTEXT01",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "5d4e0d23cde424e8217f6e94bb696a239071e02e642dd37bf313736add3aa9d2",
+      "bytes": 1828082,
       "intentos": [],
       "duda": true
     },
@@ -170,14 +236,14 @@
       "id": "R147",
       "titulo": "Optimising Dyslexia Intervention Leveraging a Mobile Adaptive Multi-Sensory AI Model with Real-Time Speech Analytic",
       "doi": "10.3991/ijim.v20i09.61571",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R147-optimising-dyslexia-intervention-leveraging-a-mobile-adaptive-multi-sensory-ai-m.pdf",
+      "fuente": "unpaywall",
+      "url": "https://online-journals.org/index.php/i-jim/article/download/61571/17256",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "e8520f748a7de58d7a4ff2043ebf205de7524e81e91ef4d6577a4555957e8fe0",
+      "bytes": 1088404,
       "intentos": [],
       "duda": true
     },
@@ -186,15 +252,26 @@
       "id": "R151",
       "titulo": "Understanding end-user contexts and identifying design preferences of an artificial intelligence-based clinical decision support tool for early autism detection",
       "doi": "10.1093/jamiaopen/ooag145",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R151-understanding-end-user-contexts-and-identifying-design-preferences-of-an-artific.pdf",
+      "fuente": "pmc",
+      "url": "https://europepmc.org/api/getPdf?pmcid=PMC13394496",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
-      "intentos": [],
+      "sha256": "0ea54d4726a7eefb33e1ae54b70dfab13faef1222c8131e8ccde0279b152135b",
+      "bytes": 903689,
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.1093/jamiaopen/ooag145",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42494774/",
+          "resultado": "no es PDF (text/html)"
+        }
+      ],
       "duda": true
     },
     {
@@ -203,15 +280,42 @@
       "titulo": "Designing and implementing SMILE: An AI-driven platform for enhancing clinical decision-making in mental health and neurodivergence management",
       "doi": "10.1016/j.csbj.2025.02.022",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://repositorio.iscte-iul.pt/bitstream/10071/33556/1/article_109799.pdf",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall",
+          "url": "https://repositorio.iscte-iul.pt/bitstream/10071/33556/1/article_109799.pdf",
+          "resultado": "URLError"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.1016/j.csbj.2025.02.022",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/11916823",
+          "resultado": "no es PDF (text/html)"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doaj.org/article/f1842fa83de843a3868b28da19a6c336",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "pmc",
+          "url": "https://europepmc.org/articles/PMC11916823?pdf=render",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 14,
@@ -219,29 +323,51 @@
       "titulo": "SeekPCMdb: knowledge on disease-associated protein-coding mutations",
       "doi": "10.1093/nar/gkaf1221",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://academic.oup.com/nar/advance-article-pdf/doi/10.1093/nar/gkaf1221/65467661/gkaf1221.pdf",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall",
+          "url": "https://academic.oup.com/nar/advance-article-pdf/doi/10.1093/nar/gkaf1221/65467661/gkaf1221.pdf",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12807789/",
+          "resultado": "no es PDF (text/html)"
+        },
+        {
+          "fuente": "pmc",
+          "url": "https://europepmc.org/articles/PMC12807789?pdf=render",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "doi-landing",
+          "url": "https://doi.org/10.1093/nar/gkaf1221",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 15,
       "id": "R171",
       "titulo": "Real-Time Word-Level Temporal Segmentation in Streaming Speech Recognition",
       "doi": "10.1145/3672539.3686738",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R171-real-time-word-level-temporal-segmentation-in-streaming-speech-recognition.pdf",
+      "fuente": "unpaywall",
+      "url": "https://arxiv.org/pdf/2504.10849",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "a368ecb71a5fb8b0f652ded4456964676d68ee1caefbc8376cdf49e17ec362e9",
+      "bytes": 3249954,
       "intentos": [],
       "duda": true
     },
@@ -251,30 +377,63 @@
       "titulo": "Triple-Shield Privacy in Healthcare: Federated Learning, p-ABCs, and Distributed Ledger Authentication",
       "doi": "10.3390/jcp5030045",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://www.mdpi.com/2624-800X/5/3/45/pdf?version=1752323002",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall",
+          "url": "https://www.mdpi.com/2624-800X/5/3/45/pdf?version=1752323002",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doaj.org/article/76c30ab74e1042c18b5e7e5d2e19f687",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "doi-landing",
+          "url": "https://doi.org/10.3390/jcp5030045",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 17,
       "id": "R177",
       "titulo": "BEACH-Gaze: Supporting Descriptive and Predictive Gaze Analytics in the Era of Artificial Intelligence and Advanced Data Science",
       "doi": "10.3390/jemr18060067",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R177-beach-gaze-supporting-descriptive-and-predictive-gaze-analytics-in-the-era-of-ar.pdf",
+      "fuente": "pmc",
+      "url": "https://europepmc.org/api/getPdf?pmcid=PMC12641676",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
-      "intentos": [],
+      "sha256": "837ac911c4972aad463320e6b7a7dce31357b2c82205d672f7c7039969240ff1",
+      "bytes": 2316320,
+      "intentos": [
+        {
+          "fuente": "unpaywall",
+          "url": "https://www.mdpi.com/1995-8692/18/6/67/pdf?version=1762944775",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/12641676",
+          "resultado": "no es PDF (text/html)"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doaj.org/article/241ae31e1b184ccbb26a884107d953b5",
+          "resultado": "HTTP 403"
+        }
+      ],
       "duda": true
     },
     {
@@ -282,15 +441,21 @@
       "id": "R183",
       "titulo": "Using AI to enhance healthcare resource management and allocation: A focus on the autism community in Alabama",
       "doi": "10.1371/journal.pone.0342700",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R183-using-ai-to-enhance-healthcare-resource-management-and-allocation-a-focus-on-the.pdf",
+      "fuente": "unpaywall-landing",
+      "url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0342700&type=printable",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
-      "intentos": [],
+      "sha256": "c1948aa3d955ff70e3804a5e44316e61b1af0824506c039b1e4a04d71da98f41",
+      "bytes": 1553166,
+      "intentos": [
+        {
+          "fuente": "unpaywall",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12991235/pdf/pone.0342700.pdf",
+          "resultado": "no es PDF (text/html)"
+        }
+      ],
       "duda": true
     },
     {
@@ -299,15 +464,27 @@
       "titulo": "Understanding Human-AI Misalignment in LLM-Based Job-Seeking Support for Neurodivergent Users",
       "doi": "10.1145/3663547.3746361",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://dl.acm.org/doi/pdf/10.1145/3663547.3746361",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall",
+          "url": "https://dl.acm.org/doi/pdf/10.1145/3663547.3746361",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "doi-landing",
+          "url": "https://doi.org/10.1145/3663547.3746361",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 20,
@@ -315,29 +492,41 @@
       "titulo": "\"you're Not Listening\": LLM Smart Speakers' Need to Learn When to Shut Up",
       "doi": "10.1145/3816046.3816307",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://figshare.com/articles/conference_contribution/_You_re_not_listening_LLM_smart_speakers_need_to_learn_when_to_shut_up/33065342",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.1145/3816046.3816307",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://figshare.com/articles/conference_contribution/_You_re_not_listening_LLM_smart_speakers_need_to_learn_when_to_shut_up/33065342",
+          "resultado": "no es PDF (text/html)"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 21,
       "id": "R197",
       "titulo": "A collaborative approach to the evaluation of cognitive accessibility of a conversational agent for public healthcare",
       "doi": "10.1093/iwc/iwaf034",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R197-a-collaborative-approach-to-the-evaluation-of-cognitive-accessibility-of-a-conve.pdf",
+      "fuente": "unpaywall",
+      "url": "https://du.diva-portal.org/smash/get/diva2:1986204/FULLTEXT02",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "ba9305bb18411610626e58306adade5bbdee6fbabc7a02b7c5c51c2a69148c4b",
+      "bytes": 1810235,
       "intentos": [],
       "duda": true
     },
@@ -346,14 +535,14 @@
       "id": "R199",
       "titulo": "“An App That Truly Works for Us”: Co-Designing a Mobile Health Intervention to Support the Transition to Adulthood for the Latino Autism Community",
       "doi": "10.1007/s41347-026-00628-0",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R199-an-app-that-truly-works-for-us-co-designing-a-mobile-health-intervention-to-supp.pdf",
+      "fuente": "unpaywall",
+      "url": "https://link.springer.com/content/pdf/10.1007/s41347-026-00628-0.pdf?error=cookies_not_supported&code=408d73bc-e3e9-4217-a451-8de8cbe87787",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "cf398f273be66746f2098fa52ffd28051f6cbe642ecdd1d28821b6bc6eb479ef",
+      "bytes": 1400727,
       "intentos": [],
       "duda": true
     },
@@ -363,15 +552,22 @@
       "titulo": "LingoLift: Supporting Educators in Personalized Oral Language Teaching for Autistic Children through Content Generation",
       "doi": "10.1145/3772318.3790284",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://doi.org/10.1145/3772318.3790284",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.1145/3772318.3790284",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 24,
@@ -379,29 +575,36 @@
       "titulo": "MTCAI: Leveraging AI to Simplify Medical Reports for Adults With Intellectual and Developmental Disabilities",
       "doi": "10.1111/jppi.70061",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://doi.org/10.1111/jppi.70061",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.1111/jppi.70061",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 25,
       "id": "R219",
       "titulo": "Accessible Application Prototype for Improving Digital Reading in People with Dyslexia: User-Centered Design and Usability Validation",
       "doi": "10.14569/ijacsa.2025.0161229",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R219-accessible-application-prototype-for-improving-digital-reading-in-people-with-dy.pdf",
+      "fuente": "unpaywall",
+      "url": "https://thesai.org/Downloads/Volume16No12/Paper_29-Accessible_Application_Prototype_for_Improving_Digital_Reading.pdf",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "1e0eda07c678edf4cd93a2feb108245685ad7e4f83299eebcd02e1143daeb65b",
+      "bytes": 568465,
       "intentos": [],
       "duda": true
     },
@@ -410,14 +613,14 @@
       "id": "R227",
       "titulo": "Designing Tangible User Interfaces for Neurodiversity: A Focus on Dyslexia-Friendly Inclusive Design Features",
       "doi": "10.32890/jict2026.25.3.2",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R227-designing-tangible-user-interfaces-for-neurodiversity-a-focus-on-dyslexia-friend.pdf",
+      "fuente": "unpaywall",
+      "url": "https://e-journal.uum.edu.my/index.php/jict/article/download/31257/5193",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "060ae0f154c070f5ab4a1da6e3c5109678383da1377dd8863aa34c4ddb4fcacf",
+      "bytes": 569067,
       "intentos": [],
       "duda": true
     },
@@ -427,15 +630,22 @@
       "titulo": "LLM Use in Early Prototyping",
       "doi": "10.1016/j.procs.2026.03.116",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://doi.org/10.1016/j.procs.2026.03.116",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.1016/j.procs.2026.03.116",
+          "resultado": "no es PDF (text/html)"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 28,
@@ -443,15 +653,32 @@
       "titulo": "PlanTEA-WM: A Multi-User Web Platform for Routine Planning and Anticipating Everyday Situations in Individuals With Autism Spectrum Disorder",
       "doi": "10.1109/access.2025.3617152",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://ruidera.uclm.es/bitstreams/c6a3362c-4dce-42e8-b4dc-2d324879ea49/download",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall",
+          "url": "https://ruidera.uclm.es/bitstreams/c6a3362c-4dce-42e8-b4dc-2d324879ea49/download",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.1109/access.2025.3617152",
+          "resultado": "no es PDF (text/html)"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doaj.org/article/ecc7d54cf7414a42a622056bac961f32",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 29,
@@ -459,15 +686,22 @@
       "titulo": "KG-GNN Enhanced Reasoning for Autism LLM",
       "doi": "10.1145/3784833.3784882",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://doi.org/10.1145/3784833.3784882",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.1145/3784833.3784882",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 30,
@@ -475,29 +709,41 @@
       "titulo": "Towards Inclusive Reading: A Neural Text Generation Framework for Dyslexia Accessibility",
       "doi": "10.1145/3696593.3696625",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://dl.acm.org/doi/pdf/10.1145/3696593.3696625",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall",
+          "url": "https://dl.acm.org/doi/pdf/10.1145/3696593.3696625",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "doi-landing",
+          "url": "https://doi.org/10.1145/3696593.3696625",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 31,
       "id": "R246",
       "titulo": "A Novel Fuzzy Logic System for Real-Time Text Difficulty Assessment in Mobile Reading Apps for Dyslexia",
       "doi": "10.14569/ijacsa.2025.0161224",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R246-a-novel-fuzzy-logic-system-for-real-time-text-difficulty-assessment-in-mobile-re.pdf",
+      "fuente": "unpaywall",
+      "url": "https://thesai.org/Downloads/Volume16No12/Paper_24-A_Novel_Fuzzy_Logic_System_for_Real_Time_Text_Difficulty_Assessment.pdf",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "a3e80a26b9dec9bdcaacf02c732f77e974e2481e108a33ac8944658ca4efbe4c",
+      "bytes": 619696,
       "intentos": [],
       "duda": true
     },
@@ -506,14 +752,14 @@
       "id": "R263",
       "titulo": "Design and Implementation of a Voice-Based Electronic Results System for Physically Challenged Students",
       "doi": "10.37933/nipes/7.4.2025.1324",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R263-design-and-implementation-of-a-voice-based-electronic-results-system-for-physica.pdf",
+      "fuente": "unpaywall",
+      "url": "https://journals.nipes.org/index.php/njstr/article/download/1324/1605",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "2f9187cb058622fa17c4cb1d29ba282b0d49151fc34d483ff85fea869a423a8e",
+      "bytes": 966321,
       "intentos": [],
       "duda": true
     },
@@ -522,14 +768,14 @@
       "id": "R264",
       "titulo": "Design and Evaluation of a Generative Artificial Intelligence-Based Tool for Students with Learning Disabilities in Kenya",
       "doi": "10.1609/aaai.v39i28.35229",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R264-design-and-evaluation-of-a-generative-artificial-intelligence-based-tool-for-stu.pdf",
+      "fuente": "unpaywall",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/download/35229/37384",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "dab8e425720e4437924d34407050dc548f46763f4a4a0811b5058bd7e3b73713",
+      "bytes": 56548,
       "intentos": [],
       "duda": true
     },
@@ -538,14 +784,14 @@
       "id": "R285",
       "titulo": "Emotion-aware text simplification of user generated content using LLMs",
       "doi": "10.18653/v1/2026.wassa-1.10",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R285-emotion-aware-text-simplification-of-user-generated-content-using-llms.pdf",
+      "fuente": "unpaywall",
+      "url": "https://aclanthology.org/2026.wassa-1.10.pdf",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "e6dbf5585dd7e4a999a57931e61b442d6eb6f7c9e2958f4c4678cdfeebc2af22",
+      "bytes": 1178659,
       "intentos": [],
       "duda": true
     },
@@ -555,15 +801,32 @@
       "titulo": "An Augmented Reality and AI-Based System for Contextual Appliance Guidance: Implications for Cognitive Accessibility and Assistive Interaction",
       "doi": "10.3390/brainsci16080783",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://europepmc.org/articles/PMC13511069?pdf=render",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.3390/brainsci16080783",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13511069/",
+          "resultado": "no es PDF (text/html)"
+        },
+        {
+          "fuente": "pmc",
+          "url": "https://europepmc.org/articles/PMC13511069?pdf=render",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 36,
@@ -571,30 +834,43 @@
       "titulo": "An AI-Powered Reading Assistant for Dyslexic Students: Integrating Knowledge Graphs and Real-Time Behavioral Adaptation",
       "doi": "10.1145/3806980.3806981",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://doi.org/10.1145/3806980.3806981",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.1145/3806980.3806981",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 37,
       "id": "R296",
       "titulo": "Including people in the automatic text adaptation process: empirical findings from students with intellectual disability",
       "doi": "10.1080/17483107.2025.2536701",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R296-including-people-in-the-automatic-text-adaptation-process-empirical-findings-fro.pdf",
+      "fuente": "unpaywall-landing",
+      "url": "https://liu.diva-portal.org/smash/get/diva2:1991698/FULLTEXT02",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
-      "intentos": [],
+      "sha256": "e761cbf1efa952082c8703d85844642fc33cbb562d81d7944b1d64fb43204b79",
+      "bytes": 2092297,
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.1080/17483107.2025.2536701",
+          "resultado": "HTTP 403"
+        }
+      ],
       "duda": true
     },
     {
@@ -603,15 +879,32 @@
       "titulo": "AI-Driven Inclusive Manufacturing Interfaces: Leveraging Information Technology for Cognitive Diversity in Industry 5.0",
       "doi": "10.1145/3726101.3726115",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://dl.acm.org/doi/pdf/10.1145/3726101.3726115",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall",
+          "url": "https://dl.acm.org/doi/pdf/10.1145/3726101.3726115",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://hdl.handle.net/11583/3013064",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "doi-landing",
+          "url": "https://doi.org/10.1145/3726101.3726115",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 39,
@@ -619,15 +912,27 @@
       "titulo": "Development and usability of a mobile artificial intelligence platform for the management of childhood developmental disorders based on PHRs",
       "doi": "10.1177/14604582251345331",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://doaj.org/article/f22bfd6595374da8a1bd3fdedd19d5ac",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.1177/14604582251345331",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doaj.org/article/f22bfd6595374da8a1bd3fdedd19d5ac",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 40,
@@ -635,15 +940,22 @@
       "titulo": "Teach Yourself to Learn (Facial) Expressions: An Acceptability and Usability Study of an App Teaching Facial Emotion Recognition Skills to Autistic Children",
       "doi": "10.1080/10447318.2025.2474491",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://doi.org/10.1080/10447318.2025.2474491",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.1080/10447318.2025.2474491",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 41,
@@ -651,15 +963,27 @@
       "titulo": "GenRole: Personalizing Role Play for Educators Supporting Autistic Students' Social Interaction Learning",
       "doi": "10.1145/3772318.3791948",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "http://hdl.handle.net/20.500.11850/800662",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.1145/3772318.3791948",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "http://hdl.handle.net/20.500.11850/800662",
+          "resultado": "no es PDF (text/html)"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 42,
@@ -667,30 +991,48 @@
       "titulo": "Interactive Intent-Based Image Recommendations for Assistive Communication: Insights from an Iterative User Study",
       "doi": "10.1145/3800645.3813056",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://doi.org/10.1145/3800645.3813056",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.1145/3800645.3813056",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 43,
       "id": "R327",
       "titulo": "An Evidence-Based AI Virtual Assistant for Young People With Attention Deficit Hyperactivity Disorder: Co-Design and Prototype Development",
       "doi": "10.2196/85013",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R327-an-evidence-based-ai-virtual-assistant-for-young-people-with-attention-deficit-h.pdf",
+      "fuente": "pmc",
+      "url": "https://europepmc.org/api/getPdf?pmcid=PMC13613043",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
-      "intentos": [],
+      "sha256": "412e8a69b5d1743202a30c9113cbd641236da0bca99c502a31f65fb41743d082",
+      "bytes": 262733,
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.2196/85013",
+          "resultado": "no es PDF (text/html)"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42721450/",
+          "resultado": "no es PDF (text/html)"
+        }
+      ],
       "duda": true
     },
     {
@@ -699,30 +1041,58 @@
       "titulo": "Towards Designing a Set of Usability and Accessibility Heuristics Focused on Cognitive Diversity: An Exploratory Case Study with Generative Artificial Intelligence",
       "doi": "10.3390/info15120769",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://www.mdpi.com/2078-2489/15/12/769/pdf?version=1733217975",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall",
+          "url": "https://www.mdpi.com/2078-2489/15/12/769/pdf?version=1733217975",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://hdl.handle.net/10459.1/467402",
+          "resultado": "no es PDF (text/html)"
+        },
+        {
+          "fuente": "doi-landing",
+          "url": "https://doi.org/10.3390/info15120769",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 45,
       "id": "R338",
       "titulo": "Assessment of a Digital Health Platform Using Web Analytics and User Experience Measurements: Quantitative Study Based on RE-AIM",
       "doi": "10.2196/64903",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R338-assessment-of-a-digital-health-platform-using-web-analytics-and-user-experience-.pdf",
+      "fuente": "pmc",
+      "url": "https://europepmc.org/api/getPdf?pmcid=PMC13376844",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
-      "intentos": [],
+      "sha256": "22c53bca3fc5487d4145259407ac90004378fbc5ee28bfdb3bcb38bfb7496922",
+      "bytes": 360494,
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.2196/64903",
+          "resultado": "no es PDF (text/html)"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13376844/",
+          "resultado": "no es PDF (text/html)"
+        }
+      ],
       "duda": true
     },
     {
@@ -731,30 +1101,53 @@
       "titulo": "Human-centered AI for inclusive tourism: enhancing travel planning for adults with autism spectrum disorder",
       "doi": "10.1016/j.ijhcs.2025.103696",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://hdl.handle.net/2318/2114230",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.1016/j.ijhcs.2025.103696",
+          "resultado": "no es PDF (text/html)"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://hdl.handle.net/2318/2114230",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 47,
       "id": "R347",
       "titulo": "Scaffolding Metacognition with GenAI: Exploring Design Opportunities to Support Task Management for University Students with ADHD",
       "doi": "10.1145/3772318.3790697",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R347-scaffolding-metacognition-with-genai-exploring-design-opportunities-to-support-t.pdf",
+      "fuente": "arxiv",
+      "url": "https://arxiv.org/pdf/2602.09381",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
-      "intentos": [],
+      "sha256": "2f241cee8c2364ae939173569af1f0736ad558994d02033c22727a4be0930c66",
+      "bytes": 4584003,
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.1145/3772318.3790697",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://scholars.cityu.edu.hk/en/publications/fccd49db-cd6e-4edd-8c9a-cceb0cf372c7",
+          "resultado": "HTTP 403"
+        }
+      ],
       "duda": true
     },
     {
@@ -763,15 +1156,22 @@
       "titulo": "LLM-Guided Image Recommendation for Supporting Intent Understanding in Non-Verbal Communication",
       "doi": "10.1145/3764687.3769943",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://doi.org/10.1145/3764687.3769943",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.1145/3764687.3769943",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 49,
@@ -779,15 +1179,27 @@
       "titulo": "Towards a Technology that Improves Focus, Comprehension, and Retention in E-learning for Higher Education students with ADHD",
       "doi": "10.1145/3663547.3759705",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://www.research.ed.ac.uk/en/publications/25c2c7e5-020e-41a8-bb7c-d6bbc3a5b640",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://www.research.ed.ac.uk/en/publications/25c2c7e5-020e-41a8-bb7c-d6bbc3a5b640",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "doi-landing",
+          "url": "https://doi.org/10.1145/3663547.3759705",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 50,
@@ -795,30 +1207,48 @@
       "titulo": "AI-Driven Interpretation of Nonverbal Communication in AR-Enhanced Real-Time Captions: Effects on Cognitive Load, Comprehension, and User Engagement",
       "doi": "10.1145/3698061.3734421",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://dl.acm.org/doi/pdf/10.1145/3698061.3734421",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall",
+          "url": "https://dl.acm.org/doi/pdf/10.1145/3698061.3734421",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "doi-landing",
+          "url": "https://doi.org/10.1145/3698061.3734421",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 51,
       "id": "R376",
       "titulo": "Teaching Spell Checkers to Teach: Pedagogical Program Synthesis for Interactive Learning",
       "doi": "10.1145/3742413.3789137",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R376-teaching-spell-checkers-to-teach-pedagogical-program-synthesis-for-interactive-l.pdf",
+      "fuente": "arxiv",
+      "url": "https://arxiv.org/pdf/2512.12115",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
-      "intentos": [],
+      "sha256": "18d79ca4317e0878f55da450f01fa4beb21e8bd3121c3a4679a316845d169b60",
+      "bytes": 6556123,
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.1145/3742413.3789137",
+          "resultado": "HTTP 403"
+        }
+      ],
       "duda": true
     },
     {
@@ -826,14 +1256,14 @@
       "id": "R377",
       "titulo": "AI-based Q-learning model for personalized learning strategies for students with disabilities",
       "doi": "10.3934/steme.2026025",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R377-ai-based-q-learning-model-for-personalized-learning-strategies-for-students-with.pdf",
+      "fuente": "unpaywall",
+      "url": "http://www.aimspress.com/aimspress-data/steme/2026/4/PDF/steme-06-04-025.pdf",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "d90d4e1f2536633a4b10bb5b5184a2898a1a8778101a134cf45bf3a71c500ea2",
+      "bytes": 2272326,
       "intentos": [],
       "duda": true
     },
@@ -843,29 +1273,36 @@
       "titulo": "Why Students Leave the LMS: Executive Function Demands and Self-Regulated Learning in Software Engineering Courses",
       "doi": "10.1145/3786580.3786967",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://doi.org/10.1145/3786580.3786967",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.1145/3786580.3786967",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 54,
       "id": "R391",
       "titulo": "Simple.Text: A Tool for the Automatic Transformation of Spanish Texts into Easy-to-Read",
       "doi": "10.26615/978-954-452-098-4-024",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R391-simple-text-a-tool-for-the-automatic-transformation-of-spanish-texts-into-easy-t.pdf",
+      "fuente": "unpaywall",
+      "url": "https://acl-bg.org/proceedings/2025/RANLP%202025/pdf/2025.ranlp-1.24.pdf",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "98ccaf85b6f1f8b2bdf5134d4a460eded494a9cd40aa5801a996af18378c9334",
+      "bytes": 470351,
       "intentos": [],
       "duda": true
     },
@@ -875,15 +1312,22 @@
       "titulo": "I Can Do It: Exploring Voice Assistants for Adults with Intellectual Disabilities",
       "doi": "10.1145/3772318.3790573",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://doi.org/10.1145/3772318.3790573",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.1145/3772318.3790573",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 56,
@@ -891,15 +1335,32 @@
       "titulo": "Co-Design and Feasibility Testing of an AI-Based Virtual Reality Application to Prepare People With Intellectual Disability for Healthcare Visits",
       "doi": "10.1111/jar.70219",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13061285/pdf/JAR-39-e70219.pdf",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13061285/pdf/JAR-39-e70219.pdf",
+          "resultado": "no es PDF (text/html)"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.1111/jar.70219",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "pmc",
+          "url": "https://europepmc.org/articles/PMC13061285?pdf=render",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 57,
@@ -907,29 +1368,36 @@
       "titulo": "AI-enhanced human-machine collaboration for supporting workers with mathematical learning difficulties",
       "doi": "10.1016/j.cirpj.2026.03.009",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://doi.org/10.1016/j.cirpj.2026.03.009",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.1016/j.cirpj.2026.03.009",
+          "resultado": "no es PDF (text/html)"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 58,
       "id": "R398",
       "titulo": "A DeepSeek cross-modal platform for personalized art education in Autism Spectrum Disorder",
       "doi": "10.1038/s41598-025-28518-0",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R398-a-deepseek-cross-modal-platform-for-personalized-art-education-in-autism-spectru.pdf",
+      "fuente": "unpaywall-landing",
+      "url": "https://www.nature.com/articles/s41598-025-28518-0.pdf?error=cookies_not_supported&code=196787ca-e703-4f3f-84ad-2d18e4bae6a3",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "03ae666edf299abde1788a9362bf9adc6c9130bda77fe510e236c994d2899d73",
+      "bytes": 4636393,
       "intentos": [],
       "duda": true
     },
@@ -938,14 +1406,14 @@
       "id": "R399",
       "titulo": "LLM-Driven Accessible Interface: A Model-Based Approach",
       "doi": "10.1007/978-3-032-22937-3_4",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R399-llm-driven-accessible-interface-a-model-based-approach.pdf",
+      "fuente": "unpaywall",
+      "url": "https://arxiv.org/pdf/2601.06616",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "2f66ab3e4173fd5eab7f3a8f418945db20e5e5c40101c76cb13741bc0539580b",
+      "bytes": 711475,
       "intentos": [],
       "duda": true
     },
@@ -954,14 +1422,14 @@
       "id": "R401",
       "titulo": "The AI scaffold and engagement spectrum as a novel UDL-aligned system for supporting students with dyslexia",
       "doi": "10.1007/s10639-026-13934-0",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R401-the-ai-scaffold-and-engagement-spectrum-as-a-novel-udl-aligned-system-for-suppor.pdf",
+      "fuente": "unpaywall",
+      "url": "https://link.springer.com/content/pdf/10.1007/s10639-026-13934-0.pdf?error=cookies_not_supported&code=ba131797-3715-4ea5-9acf-8855448a9d87",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "16b36d862f01c5a97481a750b1236208b63f0ee30ba04762e9294f0075530046",
+      "bytes": 2599589,
       "intentos": [],
       "duda": true
     },
@@ -971,15 +1439,22 @@
       "titulo": "Interaction Design of ASD Children's Online Health Community Based on Social Network Structure and User Behavior Analysis",
       "doi": "10.1145/3788910.3788993",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://doi.org/10.1145/3788910.3788993",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.1145/3788910.3788993",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 62,
@@ -987,30 +1462,63 @@
       "titulo": "Gathering Requirements for Stress Management in Autistic Adults for the Development of Augmented Reality Self-Interventions",
       "doi": "10.1145/3777370",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://dl.acm.org/doi/pdf/10.1145/3777370",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall",
+          "url": "https://dl.acm.org/doi/pdf/10.1145/3777370",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://napier-repository.worktribe.com/4856762/1/Gathering%20Requirements%20for%20Stress%20Management%20in%20Autistic%20Adults%20for%20the%20Development%20of%20Augmented%20Reality%20Self-Interventions",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "doi-landing",
+          "url": "https://doi.org/10.1145/3777370",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 63,
       "id": "R433",
       "titulo": "Large Language Model–Assisted Annotation Framework for Cross-Platform Analysis of Online Autism Communities: Implications for Parent Education and Digital Support",
       "doi": "10.2196/85290",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R433-large-language-modelassisted-annotation-framework-for-cross-platform-analysis-of.pdf",
+      "fuente": "pmc",
+      "url": "https://europepmc.org/api/getPdf?pmcid=PMC13401076",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
-      "intentos": [],
+      "sha256": "b843378066e7b8c9413da0c2cda600c1ad4ba72d2c4da81e01ac9e8ba7d226d0",
+      "bytes": 1827612,
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.2196/85290",
+          "resultado": "no es PDF (text/html)"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.2196/preprints.85290",
+          "resultado": "no es PDF (text/html)"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13401076/",
+          "resultado": "no es PDF (text/html)"
+        }
+      ],
       "duda": true
     },
     {
@@ -1019,30 +1527,68 @@
       "titulo": "Exploring AI Technology in Grammar Performance Testing for Children with Learning Disabilities",
       "doi": "10.3390/educsci15030351",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://doaj.org/article/913e1cffb0944de6b1ce1b5cd044f13d",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.3390/educsci15030351",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doaj.org/article/913e1cffb0944de6b1ce1b5cd044f13d",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 65,
       "id": "R445",
       "titulo": "Fuzzy-Based Sensor Fusion for Cognitive Load Assessment in Inclusive Manufacturing Strategies",
       "doi": "10.3390/s25113356",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R445-fuzzy-based-sensor-fusion-for-cognitive-load-assessment-in-inclusive-manufacturi.pdf",
+      "fuente": "pmc",
+      "url": "https://europepmc.org/api/getPdf?pmcid=PMC12158042",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
-      "intentos": [],
+      "sha256": "37949f4efe74030931bbd6eacfa10d938d0187742e4602a6988b9f1f9a44c415",
+      "bytes": 2605110,
+      "intentos": [
+        {
+          "fuente": "unpaywall",
+          "url": "https://www.mdpi.com/1424-8220/25/11/3356/pdf?version=1748328293",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/12158042",
+          "resultado": "no es PDF (text/html)"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doaj.org/article/a2753db42f664adebdc1ab49b0bb9a05",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://figshare.com/articles/journal_contribution/Fuzzy-based_sensor_fusion_for_cognitive_load_assessment_in_inclusive_manufacturing_strategies/29900855",
+          "resultado": "no es PDF (text/html)"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://hdl.handle.net/11583/3011308",
+          "resultado": "HTTP 403"
+        }
+      ],
       "duda": true
     },
     {
@@ -1051,29 +1597,41 @@
       "titulo": "Functionality, safety and usability of a digital platform supporting executive functions in children with specific educational support needs",
       "doi": "10.1108/jet-01-2025-0003",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://hdl.handle.net/10550/122841",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://hdl.handle.net/10550/122841",
+          "resultado": "no es PDF (text/html)"
+        },
+        {
+          "fuente": "doi-landing",
+          "url": "https://doi.org/10.1108/jet-01-2025-0003",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 67,
       "id": "R453",
       "titulo": "AI, autism, and the architecture of voice: from engineered exclusion to designed dignity",
       "doi": "10.1007/s00146-026-03044-3",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R453-ai-autism-and-the-architecture-of-voice-from-engineered-exclusion-to-designed-di.pdf",
+      "fuente": "unpaywall",
+      "url": "https://link.springer.com/content/pdf/10.1007/s00146-026-03044-3.pdf?error=cookies_not_supported&code=f8a27667-a1ec-42f4-9deb-c2f5d55afe2f",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "10d6bc74a1e244db88b793a9f667c5f404955be177dc5c8f22a8f9e6b687ea7f",
+      "bytes": 727750,
       "intentos": [],
       "duda": true
     },
@@ -1083,15 +1641,22 @@
       "titulo": "ADAPT: An Agentic AI Framework for People with Disabilities and Neurodivergence",
       "doi": "10.57197/jdr-2026-0830",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://doi.org/10.57197/jdr-2026-0830",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.57197/jdr-2026-0830",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 69,
@@ -1099,29 +1664,41 @@
       "titulo": "Enhancing Adaptive Personalized Learning Interfaces with Generative AI for Individuals with ADHD",
       "doi": "10.1145/3768633.3770138",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://dl.acm.org/doi/pdf/10.1145/3768633.3770138",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall",
+          "url": "https://dl.acm.org/doi/pdf/10.1145/3768633.3770138",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "doi-landing",
+          "url": "https://doi.org/10.1145/3768633.3770138",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 70,
       "id": "R463",
       "titulo": "A machine learning-based classification model to support university students with dyslexia with personalized tools and strategies",
       "doi": "10.1038/s41598-023-50879-7",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R463-a-machine-learning-based-classification-model-to-support-university-students-wit.pdf",
+      "fuente": "unpaywall",
+      "url": "https://www.nature.com/articles/s41598-023-50879-7.pdf?error=cookies_not_supported&code=c5b05f91-54c7-47ee-bb8c-66fde2c3f158",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "09e5a91591693d4b36e2b24a2e5509f0b653ec937300c30d28096b9343d00916",
+      "bytes": 1191528,
       "intentos": [],
       "duda": true
     },
@@ -1130,14 +1707,14 @@
       "id": "R473",
       "titulo": "A Low-Resource Speech-Driven NLP Pipeline for Sinhala Dyslexia Assistance",
       "doi": "10.26615/978-954-452-098-4-106",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R473-a-low-resource-speech-driven-nlp-pipeline-for-sinhala-dyslexia-assistance.pdf",
+      "fuente": "unpaywall",
+      "url": "https://acl-bg.org/proceedings/2025/RANLP%202025/pdf/2025.ranlp-1.106.pdf",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "76184ea5bbde671b9ad1eb93197d92205028120092b07ca94d3480e3552de8f4",
+      "bytes": 1995333,
       "intentos": [],
       "duda": true
     },
@@ -1147,15 +1724,27 @@
       "titulo": "Towards Inclusive Education: Multimodal Classification of Textbook Images for Accessibility",
       "doi": "10.1007/978-981-96-2071-5_16",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://hal.science/hal-04860245v1/document",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall",
+          "url": "https://hal.science/hal-04860245v1/document",
+          "resultado": "no es PDF (text/html)"
+        },
+        {
+          "fuente": "doi-landing",
+          "url": "https://doi.org/10.1007/978-981-96-2071-5_16",
+          "resultado": "no es PDF (text/html)"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 73,
@@ -1163,29 +1752,41 @@
       "titulo": "A Juicy Haptics Enhanced Keyboard for a Touch-Typing Course for Learning Disabled Children",
       "doi": "10.1145/3689050.3705980",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://lirias.kuleuven.be/handle/20.500.12942/770738",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://lirias.kuleuven.be/handle/20.500.12942/770738",
+          "resultado": "no es PDF (text/html)"
+        },
+        {
+          "fuente": "doi-landing",
+          "url": "https://doi.org/10.1145/3689050.3705980",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 74,
       "id": "R493",
       "titulo": "Let AI Read First: Enhancing Reading Abilities for Individuals with Dyslexia through Artificial Intelligence",
       "doi": "10.1145/3706599.3720113",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R493-let-ai-read-first-enhancing-reading-abilities-for-individuals-with-dyslexia-thro.pdf",
+      "fuente": "unpaywall",
+      "url": "https://arxiv.org/pdf/2504.00941",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "45866ca0ff29061b5ff65e3ee2fb0ddea5fb90dc1f5b90635104f6a9de00c022",
+      "bytes": 4323516,
       "intentos": [],
       "duda": true
     },
@@ -1194,14 +1795,14 @@
       "id": "R495",
       "titulo": "A gamified solution to promote positive habits in children and adolescents with Intellectual Disabilities",
       "doi": "10.5753/jis.2025.5644",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R495-a-gamified-solution-to-promote-positive-habits-in-children-and-adolescents-with-.pdf",
+      "fuente": "unpaywall",
+      "url": "https://journals-sol.sbc.org.br/index.php/jis/article/download/5644/3482",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "43f1272f5b91d5be9c972b47b92ec52556863b6409ed3f294f3a3b6942dd449e",
+      "bytes": 1881825,
       "intentos": [],
       "duda": true
     },
@@ -1211,29 +1812,41 @@
       "titulo": "Cognitive Dimensions of Feedback Uptake: Comparing AI-Generated and Teacher Input in EAP Writing",
       "doi": "10.1007/978-3-032-31418-5_21",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://research.birmingham.ac.uk/en/publications/5003d955-72d5-41cd-a85a-c63eaacf1614",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://research.birmingham.ac.uk/en/publications/5003d955-72d5-41cd-a85a-c63eaacf1614",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "doi-landing",
+          "url": "https://doi.org/10.1007/978-3-032-31418-5_21",
+          "resultado": "no es PDF (text/html)"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 77,
       "id": "R504",
       "titulo": "PICTALKY: Augmentative and Alternative Communication for Language Developmental Disabilities",
       "doi": "10.18653/v1/2022.aacl-demo.3",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R504-pictalky-augmentative-and-alternative-communication-for-language-developmental-d.pdf",
+      "fuente": "unpaywall",
+      "url": "https://aclanthology.org/2022.aacl-demo.3.pdf",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "aeac4daf3f272e75949ede0e01e25292c11d6968d8f80ec92c18e8aa1355d87f",
+      "bytes": 870398,
       "intentos": [],
       "duda": true
     },
@@ -1242,14 +1855,14 @@
       "id": "R520",
       "titulo": "Buddy - A Personal Companion to Match People with Cognitive Disabilities and AT",
       "doi": "10.1007/978-3-031-08645-8_32",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R520-buddy-a-personal-companion-to-match-people-with-cognitive-disabilities-and-at.pdf",
+      "fuente": "unpaywall",
+      "url": "https://link.springer.com/content/pdf/10.1007/978-3-031-08645-8_32.pdf?error=cookies_not_supported&code=e88d11cd-c264-46f5-bdf7-7005c2c2cdba",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "128c0cc5e4b7063cc11c85bb8780740f2a26672a99b88aecf5baf7ee219c9fe1",
+      "bytes": 390031,
       "intentos": [],
       "duda": true
     },
@@ -1258,14 +1871,14 @@
       "id": "R522",
       "titulo": "The effect of consanguineous marriage on reading disability based on deep neural networks",
       "doi": "10.1007/s11042-023-17587-w",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R522-the-effect-of-consanguineous-marriage-on-reading-disability-based-on-deep-neural.pdf",
+      "fuente": "unpaywall",
+      "url": "https://link.springer.com/content/pdf/10.1007/s11042-023-17587-w.pdf?error=cookies_not_supported&code=1e116b81-b67e-4bf2-9989-23554afb4fdb",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "fc990a0647c8d78d7d9de5561e0e4db88df37f370274b08fb25aec332ae4ef23",
+      "bytes": 1630135,
       "intentos": [],
       "duda": true
     },
@@ -1275,15 +1888,27 @@
       "titulo": "Enabling secure and inclusive education for students with disabilities and ensuring data through machine learning",
       "doi": "10.1080/2331186x.2024.2391620",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://www.tandfonline.com/doi/pdf/10.1080/2331186X.2024.2391620?needAccess=true",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall",
+          "url": "https://www.tandfonline.com/doi/pdf/10.1080/2331186X.2024.2391620?needAccess=true",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "semanticscholar",
+          "url": "https://doi.org/10.1080/2331186x.2024.2391620",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 81,
@@ -1291,15 +1916,37 @@
       "titulo": "Speech synthesis using generative adversarial network for improving readability of Hindi words to recuperate from dyslexia",
       "doi": "10.1007/s00521-021-05695-3",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://link.springer.com/content/pdf/10.1007/s00521-021-05695-3.pdf",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall",
+          "url": "https://link.springer.com/content/pdf/10.1007/s00521-021-05695-3.pdf",
+          "resultado": "no es PDF (text/html)"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/7883547",
+          "resultado": "no es PDF (text/html)"
+        },
+        {
+          "fuente": "pmc",
+          "url": "https://europepmc.org/articles/PMC7883547?pdf=render",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "doi-landing",
+          "url": "https://doi.org/10.1007/s00521-021-05695-3",
+          "resultado": "no es PDF (text/html)"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 82,
@@ -1307,29 +1954,46 @@
       "titulo": "Drawing Interpretation Using Neural Networks and Accessibility Implementation in Mobile Application",
       "doi": "10.3390/computation10110202",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://www.mdpi.com/2079-3197/10/11/202/pdf?version=1668687115",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall",
+          "url": "https://www.mdpi.com/2079-3197/10/11/202/pdf?version=1668687115",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doaj.org/article/5e8cb6c5fb5449aaab1bc4d3110945e3",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "doi-landing",
+          "url": "https://doi.org/10.3390/computation10110202",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 83,
       "id": "R539",
       "titulo": "AI-Supported UI Design for Enhanced Development of Neurodiverse-Friendly IT-Systems",
       "doi": "10.35199/norddesign2024.42",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R539-ai-supported-ui-design-for-enhanced-development-of-neurodiverse-friendly-it-syst.pdf",
+      "fuente": "unpaywall",
+      "url": "https://www.designsociety.org/download-publication/47634/ai-supported_ui_design_for_enhanced_development_of_neurodiverse-friendly_it-systems",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "b3eca43e90b4e30e4ac75f27e3e1e32c2a557ea79ca6630abba16e2156af3f7b",
+      "bytes": 728119,
       "intentos": [],
       "duda": true
     },
@@ -1338,14 +2002,14 @@
       "id": "R549",
       "titulo": "EASIER corpus: A lexical simplification resource for people with cognitive impairments",
       "doi": "10.1371/journal.pone.0283622",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R549-easier-corpus-a-lexical-simplification-resource-for-people-with-cognitive-impair.pdf",
+      "fuente": "unpaywall",
+      "url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0283622&type=printable",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "d6470e957f0719d33489ba84b6073d415f924743a0629320706114204c51af47",
+      "bytes": 891059,
       "intentos": [],
       "duda": true
     },
@@ -1354,14 +2018,14 @@
       "id": "R559",
       "titulo": "Effects of walking speed on the classification of gait patterns in children with autism",
       "doi": "10.11159/icbes24.147",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R559-effects-of-walking-speed-on-the-classification-of-gait-patterns-in-children-with.pdf",
+      "fuente": "unpaywall",
+      "url": "https://www.avestia.com/EECSS2024_Proceedings/files/paper/ICBES/ICBES_147.pdf",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "e7337e5756d06ae66272080ee2ed718e7c990f1fe66e4abab5b8712088bca1c0",
+      "bytes": 161899,
       "intentos": [],
       "duda": true
     },
@@ -1370,14 +2034,14 @@
       "id": "R565",
       "titulo": "Writing Analytics and AI for Special Education: Preliminary Results on Students with Autism Spectrum Disorder",
       "doi": "10.1007/978-3-031-64312-5_23",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R565-writing-analytics-and-ai-for-special-education-preliminary-results-on-students-w.pdf",
+      "fuente": "unpaywall",
+      "url": "https://discovery.ucl.ac.uk/id/eprint/10195569/1/AIED%20Short%20Final%20Version.pdf",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "f675b59387813175ff1f91f647c4b5ea22975bae57685359eed144eb196d18aa",
+      "bytes": 191897,
       "intentos": [],
       "duda": true
     },
@@ -1387,30 +2051,48 @@
       "titulo": "The Experience of Using Artificial Intelligence for the Disabled: Evaluation of Community Service Experience Factors and Proposal of Strategies for Self-reliance of the Developmentally Disabled; [장애인을 위한 인공지능 활용 서비스 경험 연구: 발달장애인 의 자립을 위한 커뮤니티 서비스 경험요인 평가 및 전략 제안]",
       "doi": "10.15187/adr.2024.07.37.3.167",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://doi.org/10.15187/adr.2024.07.37.3.167",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "http://dx.doi.org/10.15187/adr.2024.07.37.3.167",
+          "resultado": "no es PDF (text/html)"
+        },
+        {
+          "fuente": "semanticscholar",
+          "url": "https://doi.org/10.15187/adr.2024.07.37.3.167",
+          "resultado": "no es PDF (text/html)"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 88,
       "id": "R567",
       "titulo": "Leveraging Knowledge Graphs and Natural Language Processing for Automated Web Resource Labeling and Knowledge Mobilization in Neurodevelopmental Disorders: Development and Usability Study",
       "doi": "10.2196/45268",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R567-leveraging-knowledge-graphs-and-natural-language-processing-for-automated-web-re.pdf",
+      "fuente": "unpaywall",
+      "url": "https://jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
-      "intentos": [],
+      "sha256": "9c196ccbe6c6a595a1adba6cd030d35f7c2e548bbf5e7f1278b0109d8dd9ebaa",
+      "bytes": 2869095,
+      "intentos": [
+        {
+          "fuente": "unpaywall",
+          "url": "https://www.jmir.org/2023/1/e45268/PDF",
+          "resultado": "no es PDF (text/html)"
+        }
+      ],
       "duda": true
     },
     {
@@ -1418,14 +2100,14 @@
       "id": "R568",
       "titulo": "Development of an Alcohol Refusal Training in Immersive Virtual Reality for Patients With Mild to Borderline Intellectual Disability and Alcohol Use Disorder: Cocreation With Experts in Addiction Care",
       "doi": "10.2196/42523",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R568-development-of-an-alcohol-refusal-training-in-immersive-virtual-reality-for-pati.pdf",
+      "fuente": "unpaywall",
+      "url": "https://www.jmir.org:443/api/download?alt_name=formative_v7i1e42523_app1.pdf&filename=a3e7220e0067e7ae23c8faca0b2ee891.pdf",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "5d44821a44a5a5dca6078eb75d3d5cbd3672dab3e925bff59b1d503dd55f6fd8",
+      "bytes": 119018,
       "intentos": [],
       "duda": true
     },
@@ -1435,15 +2117,32 @@
       "titulo": "Dyslexia Data Consortium Repository: A Data Sharing and Delivery Platform for Research",
       "doi": "10.1007/978-3-031-43075-6_15",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10859776/pdf/nihms-1962884.pdf",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10859776/pdf/nihms-1962884.pdf",
+          "resultado": "no es PDF (text/html)"
+        },
+        {
+          "fuente": "pmc",
+          "url": "https://europepmc.org/articles/PMC10859776?pdf=render",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "doi-landing",
+          "url": "https://doi.org/10.1007/978-3-031-43075-6_15",
+          "resultado": "no es PDF (text/html)"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 91,
@@ -1451,15 +2150,27 @@
       "titulo": "When Worlds Collide: AI-Created, Human-Mediated Video Description Services and the User Experience",
       "doi": "10.1007/978-3-030-90328-2_10",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://research.aalto.fi/en/publications/3fff18e4-814e-42ac-a8b1-caae3043c019",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://research.aalto.fi/en/publications/3fff18e4-814e-42ac-a8b1-caae3043c019",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "doi-landing",
+          "url": "https://doi.org/10.1007/978-3-030-90328-2_10",
+          "resultado": "no es PDF (text/html)"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 92,
@@ -1467,15 +2178,22 @@
       "titulo": "LaMPost: AI Writing Assistance for Adults with Dyslexia Using Large Language Models",
       "doi": "10.1145/3626952",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://doi.org/10.1145/3626952",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.1145/3626952",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 93,
@@ -1483,15 +2201,27 @@
       "titulo": "CWITR: A Corpus for Automatic Complex Word Identification in Turkish Texts",
       "doi": "10.1145/3582768.3582802",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://dl.acm.org/doi/pdf/10.1145/3582768.3582802",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall",
+          "url": "https://dl.acm.org/doi/pdf/10.1145/3582768.3582802",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "doi-landing",
+          "url": "https://doi.org/10.1145/3582768.3582802",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 94,
@@ -1499,29 +2229,41 @@
       "titulo": "Design of Generative Multimodal AI Agents to Enable Persons with Learning Disability",
       "doi": "10.1145/3610661.3617514",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://dl.acm.org/doi/pdf/10.1145/3610661.3617514",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall",
+          "url": "https://dl.acm.org/doi/pdf/10.1145/3610661.3617514",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "doi-landing",
+          "url": "https://doi.org/10.1145/3610661.3617514",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 95,
       "id": "R587",
       "titulo": "First steps in the development of a support application for easy-to-read adaptation",
       "doi": "10.1007/s10209-022-00946-z",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R587-first-steps-in-the-development-of-a-support-application-for-easy-to-read-adaptat.pdf",
+      "fuente": "unpaywall",
+      "url": "https://link.springer.com/content/pdf/10.1007/s10209-022-00946-z.pdf?error=cookies_not_supported&code=7ea2fa18-245f-4f1e-8e17-4bcd932960e9",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "0b2be8d3e1f56199b5d65c143455fd5306e4b4f156de9b0402693cf3f79908cb",
+      "bytes": 1793161,
       "intentos": [],
       "duda": true
     },
@@ -1530,14 +2272,14 @@
       "id": "R588",
       "titulo": "ADHD-KG: a knowledge graph of attention deficit hyperactivity disorder",
       "doi": "10.1007/s13755-023-00253-8",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R588-adhd-kg-a-knowledge-graph-of-attention-deficit-hyperactivity-disorder.pdf",
+      "fuente": "unpaywall",
+      "url": "https://link.springer.com/content/pdf/10.1007/s13755-023-00253-8.pdf?error=cookies_not_supported&code=d306ae5d-a4fe-45ab-a1ad-93024f852bc9",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "11f6e2f67d7bfdf7bb429d0645ef9bdd5e70b86497bdf26c6397cbb9c59f44d4",
+      "bytes": 1797048,
       "intentos": [],
       "duda": true
     },
@@ -1546,14 +2288,14 @@
       "id": "R595",
       "titulo": "Cognitive Simplification Operations Improve Text Simplification",
       "doi": "10.18653/v1/2022.conll-1.17",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R595-cognitive-simplification-operations-improve-text-simplification.pdf",
+      "fuente": "unpaywall",
+      "url": "https://aclanthology.org/2022.conll-1.17.pdf",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "991061b677cfb2279031ab2052ba282d39ef0c169b218f165cbdff2f7190d07d",
+      "bytes": 1248900,
       "intentos": [],
       "duda": true
     },
@@ -1563,15 +2305,22 @@
       "titulo": "Helping or Hindering: Inclusive Design of Automated Task Prompting for Workers with Cognitive Disabilities",
       "doi": "10.1145/3628447",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://doi.org/10.1145/3628447",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.1145/3628447",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 99,
@@ -1579,15 +2328,27 @@
       "titulo": "Agreement and disagreement between major emotion recognition systems",
       "doi": "10.1016/j.knosys.2023.110759",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://www.tara.tcd.ie/bitstream/2262/104074/1/Agreement-and-disagreement-between-major-emotion-reco_2023_Knowledge-Based-S.pdf",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall",
+          "url": "https://www.tara.tcd.ie/bitstream/2262/104074/1/Agreement-and-disagreement-between-major-emotion-reco_2023_Knowledge-Based-S.pdf",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.1016/j.knosys.2023.110759",
+          "resultado": "no es PDF (text/html)"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 100,
@@ -1595,15 +2356,27 @@
       "titulo": "BeadMuse AI: Enhancing Inclusive and Independent Crafting Through Adaptive Pixel Art Templates",
       "doi": "10.1145/3627050.3631580",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://dl.acm.org/doi/pdf/10.1145/3627050.3631580",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall",
+          "url": "https://dl.acm.org/doi/pdf/10.1145/3627050.3631580",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "doi-landing",
+          "url": "https://doi.org/10.1145/3627050.3631580",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 101,
@@ -1611,30 +2384,58 @@
       "titulo": "Towards an Automatic Easy-to-Read Adaptation of Morphological Features in Spanish Texts",
       "doi": "10.1007/978-3-031-42280-5_12",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://ifip.hal.science/hal-05716911",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://ifip.hal.science/hal-05716911",
+          "resultado": "no es PDF (text/html)"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.5281/zenodo.8018593",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "doi-landing",
+          "url": "https://doi.org/10.1007/978-3-031-42280-5_12",
+          "resultado": "no es PDF (text/html)"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 102,
       "id": "R617",
       "titulo": "Digital Comprehensibility Assessment of Simplified Texts among Persons with Intellectual Disabilities",
       "doi": "10.1145/3613904.3642570",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R617-digital-comprehensibility-assessment-of-simplified-texts-among-persons-with-inte.pdf",
+      "fuente": "arxiv",
+      "url": "https://arxiv.org/pdf/2402.13094",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
-      "intentos": [],
+      "sha256": "88ba33d4625a7e615847b617e852f78e9bee2ad69d10648d90bb5d8d622310a4",
+      "bytes": 1278363,
+      "intentos": [
+        {
+          "fuente": "unpaywall",
+          "url": "https://dl.acm.org/doi/pdf/10.1145/3613904.3642570",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://www.zora.uzh.ch/handle/20.500.14742/219391",
+          "resultado": "no es PDF (text/html)"
+        }
+      ],
       "duda": true
     },
     {
@@ -1642,14 +2443,14 @@
       "id": "R620",
       "titulo": "Interactive Concept-map Based Summaries for SEND Children",
       "doi": "10.24963/ijcai.2022/727",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R620-interactive-concept-map-based-summaries-for-send-children.pdf",
+      "fuente": "unpaywall",
+      "url": "https://www.ijcai.org/proceedings/2022/0727.pdf",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "b5f3616055e21ff799fedb0d534f2d598557e9e8c4dea9cd99a4c1c473e308c6",
+      "bytes": 393196,
       "intentos": [],
       "duda": true
     },
@@ -1659,15 +2460,32 @@
       "titulo": "A Reading Comprehension Interface for Students with Learning Disorders",
       "doi": "10.1145/3610661.3616176",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://dl.acm.org/doi/pdf/10.1145/3610661.3616176",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall",
+          "url": "https://dl.acm.org/doi/pdf/10.1145/3610661.3616176",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "unpaywall",
+          "url": "https://iris.uniroma1.it/bitstream/11573/1717827/2/Galletti_Reading_2023.pdf",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "doi-landing",
+          "url": "https://doi.org/10.1145/3610661.3616176",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 105,
@@ -1675,15 +2493,37 @@
       "titulo": "Which Are the Needs of People with Learning Disorders for Inclusive Museums? Design of OLOS®—An Innovative Audio-Visual Technology",
       "doi": "10.3390/app14093711",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://www.mdpi.com/2076-3417/14/9/3711/pdf?version=1714141434",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall",
+          "url": "https://www.mdpi.com/2076-3417/14/9/3711/pdf?version=1714141434",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doaj.org/article/6c7b0c3cd76d4c049f1e69af7b2ee4dd",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "http://hdl.handle.net/2067/52821",
+          "resultado": "no es PDF (text/html)"
+        },
+        {
+          "fuente": "doi-landing",
+          "url": "https://doi.org/10.3390/app14093711",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 106,
@@ -1691,29 +2531,41 @@
       "titulo": "Empowering Children with Special Needs (CwSN) in Computer Science: An Interactive Hand Gestures Approach to Number Conversion Teaching",
       "doi": "10.18785/jetde.1702.12",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://aquila.usm.edu/jetde/vol17/iss2/13",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.18785/jetde.1702.12",
+          "resultado": "no es PDF (text/html)"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://aquila.usm.edu/jetde/vol17/iss2/13",
+          "resultado": "no es PDF (text/html)"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 107,
       "id": "R628",
       "titulo": "Maximizing Equitable Reach and Accessibility of ETDs",
       "doi": "10.1109/jcdl57899.2023.00049",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R628-maximizing-equitable-reach-and-accessibility-of-etds.pdf",
+      "fuente": "unpaywall",
+      "url": "https://arxiv.org/pdf/2310.18427",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "d19de12a9ca09ecbaf2b411c22730b19fc77786ef9758acb1945f1b38ac06d30",
+      "bytes": 84631,
       "intentos": [],
       "duda": true
     },
@@ -1722,14 +2574,14 @@
       "id": "R630",
       "titulo": "Gaze-Based Interaction Adaptation for People with Involuntary Head Movements",
       "doi": "10.1609/aaai.v38i21.30519",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R630-gaze-based-interaction-adaptation-for-people-with-involuntary-head-movements.pdf",
+      "fuente": "unpaywall",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/download/30519/32666",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "35133e241dd1a3f29045bed770def7b77f90f6c82772c3333b21337f6f613676",
+      "bytes": 74004,
       "intentos": [],
       "duda": true
     },
@@ -1738,14 +2590,14 @@
       "id": "R643",
       "titulo": "Lexical Simplification System to Improve Web Accessibility",
       "doi": "10.1109/access.2021.3072697",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R643-lexical-simplification-system-to-improve-web-accessibility.pdf",
+      "fuente": "unpaywall",
+      "url": "https://ieeexplore.ieee.org/ielx7/6287639/9312710/09400837.pdf",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "4071eac4741f318309516aad110e285a3d4b246be3dc4cad407da1a00735b873",
+      "bytes": 2170932,
       "intentos": [],
       "duda": true
     },
@@ -1754,14 +2606,14 @@
       "id": "R647",
       "titulo": "CO-DESIGN WITH PERSONS WITH DISABILITIES AS AN INNOVATIVE RESOURCE SET FREE BY AI",
       "doi": "10.35199/epde.2024.95",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R647-co-design-with-persons-with-disabilities-as-an-innovative-resource-set-free-by-a.pdf",
+      "fuente": "unpaywall",
+      "url": "https://www.designsociety.org/download-publication/47295/co-design_with_persons_with_disabilities_as_an_innovative_resource_set_free_by_ai",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "2acc13362c10984f7109dec0e21b8297b49917961c2b34a3d7e71deee9c23fea",
+      "bytes": 638200,
       "intentos": [],
       "duda": true
     },
@@ -1770,14 +2622,14 @@
       "id": "R662",
       "titulo": "Use of recommendation models to provide support to dyslexic students",
       "doi": "10.1016/j.eswa.2024.123738",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R662-use-of-recommendation-models-to-provide-support-to-dyslexic-students.pdf",
+      "fuente": "unpaywall",
+      "url": "https://arxiv.org/pdf/2403.14710",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "0c843ed2ad73b63be1d81ed069c454b4dc86cd3d904fd29344f8a3c9b77bab50",
+      "bytes": 956457,
       "intentos": [],
       "duda": true
     },
@@ -1786,14 +2638,14 @@
       "id": "R663",
       "titulo": "DIAUTIS III: A Fuzzy and Affective Platform for Obtaining Autism Mental Models and Learning Aids",
       "doi": "10.14569/ijacsa.2024.0150835",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R663-diautis-iii-a-fuzzy-and-affective-platform-for-obtaining-autism-mental-models-an.pdf",
+      "fuente": "unpaywall",
+      "url": "https://thesai.org/Downloads/Volume15No8/Paper_35-DIAUTIS_III_A_Fuzzy_and_Affective_Platform.pdf",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "58af720cdd2a8fa0cf66e7726f9ff21c1d0dd98da3e1d03efccc2de886715313",
+      "bytes": 943787,
       "intentos": [],
       "duda": true
     },
@@ -1803,15 +2655,27 @@
       "titulo": "Ability + Motivation: Understanding Factors that Influence People with Cognitive Disabilities in Regularly Practicing Daily Activities",
       "doi": "10.1145/3587281.3587295",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://dl.acm.org/doi/pdf/10.1145/3587281.3587295",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall",
+          "url": "https://dl.acm.org/doi/pdf/10.1145/3587281.3587295",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "doi-landing",
+          "url": "https://doi.org/10.1145/3587281.3587295",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 114,
@@ -1819,29 +2683,46 @@
       "titulo": "Understanding the experience of neurodivergent workers in image and text data annotation",
       "doi": "10.1016/j.chbr.2023.100318",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://doaj.org/article/71ee3fdaa81b4a70b57a59d2ae5ff8a6",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.1016/j.chbr.2023.100318",
+          "resultado": "no es PDF (text/html)"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doaj.org/article/71ee3fdaa81b4a70b57a59d2ae5ff8a6",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "http://hdl.handle.net/20.500.12613/10764",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 115,
       "id": "R693",
       "titulo": "A Computer-Assisted Writing Tool for an Extended Variety of Leichte Sprache (Easy-to-Read German)",
       "doi": "10.3389/fcomm.2021.689009",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R693-a-computer-assisted-writing-tool-for-an-extended-variety-of-leichte-sprache-easy.pdf",
+      "fuente": "unpaywall-landing",
+      "url": "https://www.frontiersin.org/journals/communication/articles/10.3389/fcomm.2021.689009/pdf",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "e82be3bc1df6063cb9411da5db003459e5603697542d80326f43b548e2c132e4",
+      "bytes": 2527925,
       "intentos": [],
       "duda": true
     },
@@ -1851,30 +2732,53 @@
       "titulo": "QuickPic AAC: An AI-Based Application to Enable Just-in-Time Generation of Topic-Specific Displays for Persons Who Are Minimally Speaking",
       "doi": "10.3390/ijerph21091150",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://europepmc.org/articles/PMC11431105?pdf=render",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.3390/ijerph21091150",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/11431105",
+          "resultado": "no es PDF (text/html)"
+        },
+        {
+          "fuente": "pmc",
+          "url": "https://europepmc.org/articles/PMC11431105?pdf=render",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 117,
       "id": "R708",
       "titulo": "Identifying Reading Fluency in Pupils with and without Dyslexia Using a Machine Learning Model on Texts Assessed with a Readability Application; [Prepoznavanje tekočnosti branja pri učencih z disleksijo in brez nje z uporabo modela strojnega učenja na besedilih, ocenjenih z aplikacijo za berljivost]",
       "doi": "10.26529/cepsj.1367",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R708-identifying-reading-fluency-in-pupils-with-and-without-dyslexia-using-a-machine-.pdf",
+      "fuente": "unpaywall",
+      "url": "https://repozitorij.uni-lj.si/Dokument.php?id=180395&amp;dn=",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
-      "intentos": [],
+      "sha256": "9708d6c6ada962f4ec0c871b56f4dd57b24bb80fd53ea0b42ad3c99711de7979",
+      "bytes": 676254,
+      "intentos": [
+        {
+          "fuente": "unpaywall",
+          "url": "https://cepsj.si/index.php/cepsj/article/download/1367/662",
+          "resultado": "no es PDF (text/html)"
+        }
+      ],
       "duda": true
     },
     {
@@ -1882,14 +2786,14 @@
       "id": "R710",
       "titulo": "Development and validation of a rapid and precise online sentence reading efficiency assessment",
       "doi": "10.3389/feduc.2024.1494431",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R710-development-and-validation-of-a-rapid-and-precise-online-sentence-reading-effici.pdf",
+      "fuente": "unpaywall",
+      "url": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2024.1494431/pdf",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "ad1c2fa252d2b0ad101be7d0bef431a59940ad1d53796ce37025d10d08f52be1",
+      "bytes": 2178967,
       "intentos": [],
       "duda": true
     },
@@ -1899,29 +2803,41 @@
       "titulo": "Co-designing a Museum Application with People with Intellectual Disabilities: Findings and Accessible Redesign",
       "doi": "10.1145/3605655.3605687",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://dl.acm.org/doi/pdf/10.1145/3605655.3605687",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall",
+          "url": "https://dl.acm.org/doi/pdf/10.1145/3605655.3605687",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "doi-landing",
+          "url": "https://doi.org/10.1145/3605655.3605687",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 120,
       "id": "R717",
       "titulo": "Development of an Interactive Dashboard for Analyzing Autism Spectrum Disorder (ASD) Data using Machine Learning",
       "doi": "10.5815/ijitcs.2022.04.02",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R717-development-of-an-interactive-dashboard-for-analyzing-autism-spectrum-disorder-a.pdf",
+      "fuente": "unpaywall",
+      "url": "https://www.mecs-press.org/ijitcs/ijitcs-v14-n4/IJITCS-V14-N4-2.pdf",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "3b6131471de76bbedd9ff60444f3e30b0f1e28c3d2cd3f1cc87861f245ea17ea",
+      "bytes": 1005818,
       "intentos": [],
       "duda": true
     },
@@ -1930,14 +2846,14 @@
       "id": "R721",
       "titulo": "Exploring Large Language Models to generate Easy to Read content",
       "doi": "10.3389/fcomp.2024.1394705",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R721-exploring-large-language-models-to-generate-easy-to-read-content.pdf",
+      "fuente": "unpaywall",
+      "url": "https://www.frontiersin.org/journals/computer-science/articles/10.3389/fcomp.2024.1394705/pdf",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "5c9823b933928db5c7fde7c3ed81b7c548e94f19b8d9bb1f4a1021e308cc9796",
+      "bytes": 710702,
       "intentos": [],
       "duda": true
     },
@@ -1946,14 +2862,14 @@
       "id": "R736",
       "titulo": "Enabling text comprehensibility assessment for people with intellectual disabilities using a mobile application",
       "doi": "10.3389/fcomm.2023.1175625",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R736-enabling-text-comprehensibility-assessment-for-people-with-intellectual-disabili.pdf",
+      "fuente": "unpaywall",
+      "url": "https://www.frontiersin.org/journals/communication/articles/10.3389/fcomm.2023.1175625/pdf",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "b6285e3bf5c0f44daf070891a881fea25f80cebf2df840e16bec2a8192e11a84",
+      "bytes": 941929,
       "intentos": [],
       "duda": true
     },
@@ -1962,14 +2878,14 @@
       "id": "R745",
       "titulo": "Enhancing home-based physical activity for neurodivergent children: adapting the InPACT at Home program with AI and universal design",
       "doi": "10.3389/fphys.2024.1496114",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R745-enhancing-home-based-physical-activity-for-neurodivergent-children-adapting-the-.pdf",
+      "fuente": "unpaywall",
+      "url": "https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2024.1496114/pdf",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "d134f4041ce1940e48543b2bb40d057e314ca8a93867bc7a8e216920ecffbb75",
+      "bytes": 1335035,
       "intentos": [],
       "duda": true
     },
@@ -1978,14 +2894,14 @@
       "id": "R769",
       "titulo": "Easy-read and large language models: on the ethical dimensions of LLM-based text simplification",
       "doi": "10.1007/s10676-024-09792-4",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R769-easy-read-and-large-language-models-on-the-ethical-dimensions-of-llm-based-text-.pdf",
+      "fuente": "unpaywall",
+      "url": "https://link.springer.com/content/pdf/10.1007/s10676-024-09792-4.pdf?error=cookies_not_supported&code=a9a0fb65-b28d-4458-bc50-a8fe0f59745d",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "961dbfb21ae3f180875492ea72fe4b00e8f32bfa2e3a8565955ec70ceb985093",
+      "bytes": 792343,
       "intentos": [],
       "duda": true
     },
@@ -1995,15 +2911,27 @@
       "titulo": "Triggering autonomy, not just automation: Design implications for LLM-based home automation assistants for people with intellectual disability",
       "doi": "10.1016/j.ijhcs.2026.103938",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://www.sciencedirect.com/science/article/pii/S1071581926002132",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.1016/j.ijhcs.2026.103938",
+          "resultado": "no es PDF (text/html)"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1071581926002132",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 126,
@@ -2011,29 +2939,36 @@
       "titulo": "Can Artificial Intelligence Tools Generate Text That is Useful for Reading Practice?",
       "doi": "10.1177/09388982251352564",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://doi.org/10.1177/09388982251352564",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.1177/09388982251352564",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 127,
       "id": "R864",
       "titulo": "AI testing, evaluation, verification and validation for accessibility: a comprehensive framework",
       "doi": "10.3389/fdgth.2025.1679603",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R864-ai-testing-evaluation-verification-and-validation-for-accessibility-a-comprehens.pdf",
+      "fuente": "unpaywall",
+      "url": "https://public-pages-files-2025.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2025.1679603/pdf",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "4cdd97d5c9002f8302433b32fbfd219aa6c829f427a3a6823f30feb0d670fffa",
+      "bytes": 829943,
       "intentos": [],
       "duda": true
     },
@@ -2043,15 +2978,32 @@
       "titulo": "Creating an API Ecosystem for Assistive Technologies Oriented to Cognitive Disabilities",
       "doi": "10.1109/access.2024.3487308",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://docta.ucm.es/bitstreams/032d13df-3b77-41a8-ae3d-9684dbf53be3/download",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall",
+          "url": "https://docta.ucm.es/bitstreams/032d13df-3b77-41a8-ae3d-9684dbf53be3/download",
+          "resultado": "URLError"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.1109/access.2024.3487308",
+          "resultado": "no es PDF (text/html)"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doaj.org/article/e6d8c47a89f94dedb27ac5ca09543a34",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 129,
@@ -2059,29 +3011,41 @@
       "titulo": "Navigating Accessibility and Inclusivity: Perceptions and Usability of Artificial Intelligence-Enabled Job Application Systems for Persons With Disabilities",
       "doi": "10.1111/ntwe.70017",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/ntwe.70017",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall",
+          "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/ntwe.70017",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "doi-landing",
+          "url": "https://doi.org/10.1111/ntwe.70017",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 130,
       "id": "R977",
       "titulo": "Evaluating PlanTEA: the practice of a UX evaluation methodology for people with ASD",
       "doi": "10.1007/s10209-024-01175-2",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R977-evaluating-plantea-the-practice-of-a-ux-evaluation-methodology-for-people-with-a.pdf",
+      "fuente": "unpaywall-landing",
+      "url": "https://link.springer.com/content/pdf/10.1007/s10209-024-01175-2.pdf?error=cookies_not_supported&code=426be2da-4be9-45f1-bdcb-3c276f9926f4",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
+      "sha256": "9e3f110ebc7e02a91c5dbe55238516d5cf9e5b48f23cb4823f17c4eaa31483ec",
+      "bytes": 4372346,
       "intentos": [],
       "duda": true
     },
@@ -2091,30 +3055,53 @@
       "titulo": "CoGenASD: A tool for the co-design and generation of cross-platform applications for people with Autism spectrum disorder",
       "doi": "10.1016/j.softx.2026.102512",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://doaj.org/article/516b983c2cb44e8eba223055248b3b93",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.1016/j.softx.2026.102512",
+          "resultado": "no es PDF (text/html)"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doaj.org/article/516b983c2cb44e8eba223055248b3b93",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://www.sciencedirect.com/science/article/pii/S2352711026000063",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     },
     {
       "orden": 132,
       "id": "R1081",
       "titulo": "UDL and AI-based educational personalization: effects on performance and self-regulation",
       "doi": "10.21803/penamer.19.40.1068",
-      "descargado": "no",
+      "descargado": "si",
       "porque": "",
-      "pdf": null,
-      "fuente": null,
-      "url": null,
+      "pdf": "docs/pdf/R1081-udl-and-ai-based-educational-personalization-effects-on-performance-and-self-reg.pdf",
+      "fuente": "doi-landing",
+      "url": "https://publicaciones.americana.edu.co/index.php/pensamientoamericano/article/download/1068/1828",
       "enlace_manual": null,
-      "sha256": null,
-      "bytes": null,
-      "intentos": [],
+      "sha256": "f92d37a009aac50ea9f4fdca73f35d24d128744d1fb2a0d1d3f528c3151d3983",
+      "bytes": 311220,
+      "intentos": [
+        {
+          "fuente": "unpaywall",
+          "url": "https://publicaciones.americana.edu.co/index.php/pensamientoamericano/article/download/1068/1827",
+          "resultado": "HTTP 404"
+        }
+      ],
       "duda": true
     },
     {
@@ -2123,15 +3110,27 @@
       "titulo": "Accessible Augmented Reality in Sheltered Workshops: A Mixed-Methods Evaluation for Users with Mental Disabilities",
       "doi": "10.3390/virtualworlds5010001",
       "descargado": "no",
-      "porque": "",
+      "porque": "No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo.",
       "pdf": null,
       "fuente": null,
       "url": null,
-      "enlace_manual": null,
+      "enlace_manual": "https://doaj.org/article/8032cfe6984543a0862f06cbe54648b0",
       "sha256": null,
       "bytes": null,
-      "intentos": [],
-      "duda": true
+      "intentos": [
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doi.org/10.3390/virtualworlds5010001",
+          "resultado": "HTTP 403"
+        },
+        {
+          "fuente": "unpaywall-landing",
+          "url": "https://doaj.org/article/8032cfe6984543a0862f06cbe54648b0",
+          "resultado": "HTTP 403"
+        }
+      ],
+      "duda": true,
+      "oa_registrada": true
     }
   ],
   "cribado_2_use": "all",

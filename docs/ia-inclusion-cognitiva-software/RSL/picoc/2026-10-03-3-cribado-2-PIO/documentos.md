@@ -6,8 +6,8 @@ Picoc: `docs/ia-inclusion-cognitiva-software/picoc/2026-10-03-3-PIO/picoc.md` ·
 
 | # | id | titulo | enlaces | descargado | porque |
 |---:|---|---|---|---|---|
-| 1 | R003 | From Granular Grief to Binary Belief: A Collaborative Optim… | [DOI](https://doi.org/10.1145/3757478) · [descargar](https://dl.acm.org/doi/pdf/10.1145/3757478) | no | No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo. |
-| 2 | R016 | Prompt Engineering Versus Model Selection for Cognitive Acc… | [DOI](https://doi.org/10.1109/access.2026.3667133) · [descargar](https://doaj.org/article/53f19333d4d04fe7ab1d281ddba19d12) | no | No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo. |
+| 1 | R003 | From Granular Grief to Binary Belief: A Collaborative Optim… | [DOI](https://doi.org/10.1145/3757478) · [PDF](https://dl.acm.org/doi/pdf/10.1145/3757478) | si |  |
+| 2 | R016 | Prompt Engineering Versus Model Selection for Cognitive Acc… | [DOI](https://doi.org/10.1109/access.2026.3667133) · [PDF](https://doaj.org/article/53f19333d4d04fe7ab1d281ddba19d12) | si |  |
 | 3 | R030 | FROM EXCLUSION TO EMPOWERMENT: REDESIGNING E-LEARNING TO MI… | [DOI](https://doi.org/10.37385/jaets.v7i1.7608) · [PDF](https://journal.yrpipku.com/index.php/jaets/article/download/7608/5397) | si |  |
 | 4 | R040 | An Intelligent Assistive System for Autistic Learners | [DOI](https://doi.org/10.1002/eng2.70455) · [descargar](https://doaj.org/article/8cd365c4312a48d9a81409b1910106dc) | no | No se pudo obtener el texto completo. Figura como acceso abierto, pero el documento es de pago o no se dispone de acceso al mismo. |
 | 5 | R047 | Online coding of the Brief Observation of Social Communicat… | [DOI](https://doi.org/10.1177/20552076251347105) · [PDF](https://europepmc.org/api/getPdf?pmcid=PMC12177254) | si |  |
