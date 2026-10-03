@@ -47,12 +47,14 @@ from cribado2_config import (  # noqa: E402
     normalize_use,
     read_cribado2_use,
 )
+from cribado2_integrity import check_corpus, patch_memoria_traza  # noqa: E402
 from cribado2_polish import (  # noqa: E402
     cmd_apply as polish_apply,
     cmd_cuota as polish_cuota,
     cmd_polish_merge as polish_merge,
     cmd_polish_prepare as polish_prepare,
     cmd_polish_report as polish_report,
+    cmd_polish_restore as polish_restore,
 )
 from rsl_out import Fail, error, ok, run  # noqa: E402
 
@@ -79,6 +81,7 @@ META_PDF = re.compile(
 USAGE = (
     "uso: cribado2.py init|download|align|documentos|prepare|build|status docs/<slug> "
     "· polish-prepare|polish-merge|cuota|polish-report|apply docs/<slug> "
+    "· integrity docs/<slug> "
     "· stamp docs/<slug> <pdf> · query docs/<slug> \"<pregunta>\""
 )
 
@@ -843,8 +846,27 @@ def cmd_build(theme: Path) -> int:
     if not res["ok"]:
         return error(f"verify falló: {'; '.join(res['errors'][:3])}", "mejora los MD con más headings y vuelve a correr cribado2:build")
     write_memoria_traza(corpus, lay, meta)
+    patch_memoria_traza(corpus)
+    rep = check_corpus(corpus)
+    if not rep["ok"]:
+        for e in rep["errors"][:8]:
+            print(f"  - {e}")
+        return error(
+            f"integridad PDF/MD falló ({len(rep['errors'])} registro(s))",
+            f"corrige PDF o MD y pnpm -s cribado2:prepare {rel(theme)} / cribado2:build",
+        )
     return ok(f"memoria de {len(meta['files'])} MD en {rel(lay.out / 'graph.json')} ({meta['nodes']} nodos, {meta['edges']} aristas)",
               "Usa rsl-cribado-2-polish sobre el tema cuando el grafo esté listo")
+
+
+def cmd_integrity(theme: Path) -> int:
+    corpus = corpus_or_fail(theme)
+    rep = check_corpus(corpus)
+    if not rep["ok"]:
+        for e in rep["errors"]:
+            print(f"  - {e}")
+        return error(f"{len(rep['errors'])} problema(s) de integridad", f"pnpm -s cribado2:integrity {rel(theme)} tras corregir")
+    return ok("integridad OK (DOI MD ↔ documentos.json)")
 
 
 def cmd_status(theme: Path) -> int:
@@ -863,7 +885,16 @@ def cmd_status(theme: Path) -> int:
     res = off.verify(theme, lay)
     if not res["ok"]:
         return error(f"verify falló: {'; '.join(res['errors'][:3])}", f"pnpm -s cribado2:build {rel(theme)}")
-    return ok(f"memoria al día en {rel(graph)} ({res['nodes']} nodos)")
+    rep = check_corpus(corpus)
+    patch_memoria_traza(corpus)
+    if not rep["ok"]:
+        for e in rep["errors"][:8]:
+            print(f"  - {e}")
+        return error(
+            f"integridad falló ({len(rep['errors'])} registro(s))",
+            f"Usa rsl-cribado-2-memoria: corrige PDF/MD y pnpm -s cribado2:build {rel(theme)}",
+        )
+    return ok(f"memoria al día en {rel(graph)} ({res['nodes']} nodos, integridad OK)")
 
 
 def cmd_query(theme: Path, question: str) -> int:
@@ -893,8 +924,10 @@ def main(args: list[str]) -> int:
         "prepare": cmd_prepare,
         "build": cmd_build,
         "status": cmd_status,
+        "integrity": cmd_integrity,
         "polish-prepare": lambda t: _polish_cmd(t, polish_prepare),
         "polish-merge": lambda t: _polish_cmd(t, polish_merge),
+        "polish-restore": lambda t: _polish_cmd(t, polish_restore),
         "cuota": lambda t: _polish_cmd(t, polish_cuota),
         "polish-report": lambda t: _polish_cmd(t, polish_report),
         "apply": lambda t: _polish_cmd(t, polish_apply),

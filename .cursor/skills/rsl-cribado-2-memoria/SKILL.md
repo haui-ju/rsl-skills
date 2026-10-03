@@ -23,9 +23,10 @@ Invoke: `Usa rsl-cribado-2-memoria sobre docs/<slug>/`.
 
 1. `pnpm -s cribado2:prepare docs/<slug>`. ERROR «no tiene PDF» → run `rsl-cribado-2` and/or alineamiento first.
 2. Exit 2 (`needs_agent`): read only that PDF; write `docs/md/<stem>.md` (≥ 8 headings, `[PDF p.N]`). Then `pnpm -s cribado2:stamp docs/<slug> <archivo.pdf>` and repeat prepare until OK.
-3. `pnpm -s cribado2:build docs/<slug>` until OK (updates `memoria-traza.json`).
-4. Optional: `pnpm -s cribado2:status docs/<slug>`.
-5. Chat: converted/skipped, agent MDs, nodes/edges, graph path, example `pnpm -s cribado2:query docs/<slug> "…"`. Then Cierre.
+3. `pnpm -s cribado2:build docs/<slug>` until OK (updates `memoria-traza.json`; falla si `integridad` PDF/MD ↔ `documentos.json` no pasa).
+4. `pnpm -s cribado2:status docs/<slug>` debe dar **integridad OK** antes de `rsl-cribado-2-polish`. Diagnóstico: `pnpm -s cribado2:integrity docs/<slug>`.
+5. Si integridad falla (PDF duplicado, DOI/título cruzados): sustituir el PDF correcto, borrar `docs/md/<stem>.md` y `_raw`, `prepare` → `build` de nuevo.
+6. Chat: converted/skipped, agent MDs, nodes/edges, graph path, example `pnpm -s cribado2:query docs/<slug> "…"`. Then Cierre.
 
 ## Cierre
 
@@ -35,5 +36,6 @@ Invoke: `Usa rsl-cribado-2-memoria sobre docs/<slug>/`.
 ## Forbidden
 
 - Refreshing root/theme graph or writing theme `RSL/MD/`.
-- Skipping verify or indexing with failed verify.
+- Skipping verify or indexing with failed verify or failed integridad.
+- Declarar memoria lista si el MD no corresponde al `id`/DOI de `documentos.json`.
 - Downloading PDFs or full-text inclusion decisions (other skills).

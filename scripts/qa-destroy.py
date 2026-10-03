@@ -1376,6 +1376,79 @@ def _(sb):
     )
 
 
+@case("C09", "orden", "cribado2 merge ignora lote si sin_acceso y apply CSV solo corpus")
+def _(sb):
+    import json
+    import tempfile
+    from pathlib import Path
+
+    from cribado2_integrity import decision_no_recuperado, no_texto_completo
+    from cribado2_polish import cmd_apply, cmd_polish_merge, csv_accept, work_dir
+
+    with tempfile.TemporaryDirectory() as td:
+        root = Path(td)
+        theme = root / "docs" / "t"
+        folder = theme / "picoc" / "2026-01-01-PICO"
+        corpus = theme / "RSL" / "picoc" / "2026-01-01-cribado-2-PICO"
+        folder.mkdir(parents=True)
+        corpus.mkdir(parents=True)
+        (folder / "picoc.md").write_text(
+            "## Criterios de inclusión y exclusión\n### Inclusión\n- CI1. x\n### Exclusión\n- CE1. y\n",
+            encoding="utf-8",
+        )
+        cat = {
+            "registros": [
+                {
+                    "orden": 1,
+                    "id": "R001",
+                    "titulo": "A",
+                    "doi": "10.1/a",
+                    "descargado": "si",
+                },
+                {
+                    "orden": 2,
+                    "id": "R002",
+                    "titulo": "B",
+                    "doi": "10.1/b",
+                    "descargado": "no",
+                    "sin_acceso": True,
+                    "porque": "Sin acceso al texto completo.",
+                },
+            ]
+        }
+        (corpus / "documentos.json").write_text(json.dumps(cat), encoding="utf-8")
+        w = work_dir(corpus)
+        (w / "evaluaciones").mkdir(parents=True)
+        (w / "evaluaciones" / "lote-01.jsonl").write_text(
+            json.dumps(
+                {
+                    "orden": 2,
+                    "id": "R002",
+                    "decision": "PODRIA",
+                    "motivo": "no debería usarse",
+                    "criterios": [],
+                }
+            )
+            + "\n"
+            + json.dumps(
+                {
+                    "orden": 1,
+                    "id": "R001",
+                    "decision": "SI",
+                    "motivo": "ok",
+                    "criterios": ["CI1"],
+                }
+            )
+            + "\n",
+            encoding="utf-8",
+        )
+        sb.check(cmd_polish_merge(theme, corpus, folder, root) == 0, "merge falló")
+        decs = [json.loads(l) for l in (w / "decisiones.jsonl").read_text().splitlines()]
+        r2 = next(d for d in decs if d["id"] == "R002")
+        sb.check(r2["decision"] == "NO" and "acceso" in r2["motivo"].lower(), f"R002: {r2}")
+        sb.check(no_texto_completo(cat["registros"][1]), "sin_acceso")
+
+
 @case("C08", "orden", "cribado2_config asegura min_rsl=40 y cuota avisa sin ERROR si no alcanza el mínimo")
 def _(sb):
     from cribado2_config import MIN_RSL_DEFAULT, ensure_cribado2_config

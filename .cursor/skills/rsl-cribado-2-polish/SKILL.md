@@ -25,9 +25,9 @@ Invoke: `Usa rsl-cribado-2-polish sobre docs/<slug>/`.
 
 ## Procedure
 
-1. `pnpm -s cribado2:status docs/<slug>` OK.
+1. `pnpm -s cribado2:status docs/<slug>` OK (incluye **integridad**). Si falla → `rsl-cribado-2-memoria`, no polish.
 2. `pnpm -s cribado2:polish-prepare docs/<slug>` → `.cribado-2/criterios.md`, `registros.jsonl`.
-3. Batches of **10** from `registros.jsonl` (indexados first). Per batch:
+3. Batches of **10** solo de registros con `evaluable: true` e `indexado: true` (no lotes para `descargado: no` / `sin_acceso`). Per batch:
    - **defensor-rsl** (modo **cribado-2**): `pnpm -s cribado2:query docs/<slug> "<Id> …"` per record; write table under `.cribado-2/propuestas/lote-NN.md` → `## Defensor`.
    - **critico-rsl** (modo **cribado-2**): same evidence; append `## Crítico` (disagreements only).
    - Resolve disagreements in `.cribado-2/resoluciones.md` if needed.

@@ -25,13 +25,13 @@
       "id": "R002",
       "titulo": "Conversational Voice User Interfaces Supporting Individuals with Down Syndrome: A Literature Review",
       "doi": "10.1145/3715160",
-      "descargado": "si",
-      "porque": "",
-      "pdf": "docs/pdf/R002-conversational-voice-user-interfaces-supporting-individuals-with-down-syndrome-a.pdf",
-      "fuente": "alineamiento",
+      "descargado": "no",
+      "porque": "Hay versión abierta, pero la página del editor (ACM) bloquea las descargas automáticas (HTTP 403, protección contra bot…",
+      "pdf": null,
+      "fuente": null,
       "url": null,
-      "sha256": "a3e80a26b9dec9bdcaacf02c732f77e974e2481e108a33ac8944658ca4efbe4c",
-      "bytes": 619696,
+      "sha256": null,
+      "bytes": null,
       "intentos": [
         {
           "fuente": "unpaywall-landing",
@@ -44,7 +44,8 @@
           "resultado": "no es PDF (text/html)"
         }
       ],
-      "duda": false
+      "duda": false,
+      "enlace_manual": "https://digitalcommons.chapman.edu/engineering_articles/253"
     },
     {
       "orden": 3,
@@ -1119,7 +1120,7 @@
       "doi": "10.1108/jet-01-2025-0003",
       "descargado": "no",
       "sin_acceso": true,
-      "porque": "Sin acceso al texto completo (revisor); DOI Emerald 403 y repositorio sin PDF directo.",
+      "porque": "Hay versión abierta, pero hdl.handle.net muestra una página web sin enlace directo al PDF que el script pueda leer: ábr…",
       "pdf": null,
       "fuente": null,
       "url": null,
@@ -1137,7 +1138,8 @@
           "resultado": "HTTP 403"
         }
       ],
-      "duda": true
+      "duda": true,
+      "enlace_manual": "https://hdl.handle.net/10550/122841"
     }
   ]
 }

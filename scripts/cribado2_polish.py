@@ -11,6 +11,13 @@ from pathlib import Path
 
 import picoc_versions as pv
 from cribado2_config import read_cribado2_min_rsl
+from cribado2_integrity import (
+    check_corpus,
+    decision_no_recuperado,
+    integrity_ok_ids,
+    motivo_sin_acceso,
+    no_texto_completo,
+)
 from rsl_out import Fail, error, ok
 
 WORK = ".cribado-2"
@@ -64,13 +71,31 @@ def criteria_from_picoc(picoc: Path) -> dict[str, str]:
     return out
 
 
-def indexed_ids(corpus: Path) -> set[str]:
+def graph_indexed_ids(corpus: Path) -> set[str]:
     traza = corpus / "memoria-traza.json"
     if not traza.is_file():
         return set()
     data = json.loads(traza.read_text(encoding="utf-8"))
     ids = data.get("ids") or {}
-    return {rid for rid, meta in ids.items() if (meta or {}).get("status") == "graphify_indexed"}
+    return {
+        rid
+        for rid, meta in ids.items()
+        if (meta or {}).get("status") == "graphify_indexed"
+    }
+
+
+def indexed_ids(corpus: Path) -> set[str]:
+    return graph_indexed_ids(corpus) & integrity_ok_ids(corpus)
+
+
+def evaluable_ids(corpus: Path) -> set[str]:
+    cat = json.loads((corpus / "documentos.json").read_text(encoding="utf-8"))
+    ok = integrity_ok_ids(corpus)
+    return {
+        r["id"]
+        for r in cat.get("registros") or []
+        if r.get("id") and not no_texto_completo(r) and r["id"] in ok
+    }
 
 
 def cmd_polish_prepare(theme: Path, corpus: Path, folder: Path, root: Path) -> int:
@@ -82,16 +107,24 @@ def cmd_polish_prepare(theme: Path, corpus: Path, folder: Path, root: Path) -> i
         lines.append(f"- **{code}** {crit[code]}\n")
     (w / "criterios.md").write_text("".join(lines), encoding="utf-8")
     cat = json.loads((corpus / "documentos.json").read_text(encoding="utf-8"))
-    idx = indexed_ids(corpus)
+    idx = graph_indexed_ids(corpus) & integrity_ok_ids(corpus)
     reg_lines = []
+    n_eval = 0
+    n_no_rec = 0
     for r in sorted(cat["registros"], key=lambda x: x["orden"]):
+        evaluable = not no_texto_completo(r)
+        if evaluable:
+            n_eval += 1
+        else:
+            n_no_rec += 1
         reg_lines.append(
             json.dumps(
                 {
                     "orden": r["orden"],
                     "id": r["id"],
                     "titulo": r["titulo"],
-                    "indexado": r["id"] in idx,
+                    "evaluable": evaluable,
+                    "indexado": evaluable and r["id"] in idx,
                     "sin_acceso": bool(r.get("sin_acceso")),
                 },
                 ensure_ascii=False,
@@ -100,7 +133,7 @@ def cmd_polish_prepare(theme: Path, corpus: Path, folder: Path, root: Path) -> i
     (w / "registros.jsonl").write_text("\n".join(reg_lines) + "\n", encoding="utf-8")
     n_idx = sum(1 for ln in reg_lines if json.loads(ln)["indexado"])
     return ok(
-        f".cribado-2 preparado ({len(reg_lines)} registros, {n_idx} indexados)",
+        f".cribado-2 preparado ({len(reg_lines)} corpus, {n_eval} evaluables, {n_no_rec} no recuperados, {n_idx} indexados íntegros)",
         f"corre lotes defensor/crítico y pnpm -s cribado2:polish-merge {rel(theme, root)}",
     )
 
@@ -130,6 +163,90 @@ def merit_decision(row: dict) -> str:
     return d
 
 
+def shadow_to_merit(row: dict) -> str:
+    d = (row.get("decision") or "NO").upper()
+    if d in MERIT:
+        return d
+    if d in {RELLENO_LEVE, RELLENO_ALTO}:
+        return "NO"
+    return "NO"
+
+
+def decisions_from_shadow(cat: dict, shadow_by: dict[str, dict], corpus: Path) -> list[dict]:
+    rep = check_corpus(corpus)
+    bad = rep.get("by_id") or {}
+    ok_idx = integrity_ok_ids(corpus)
+    out: list[dict] = []
+    for r in sorted(cat["registros"], key=lambda x: x["orden"]):
+        rid = r["id"]
+        if no_texto_completo(r):
+            out.append(decision_no_recuperado(r))
+            continue
+        if rid not in ok_idx:
+            msg = "; ".join(bad.get(rid) or ["PDF/MD no alineado con documentos.json"])
+            out.append(
+                {
+                    "orden": r["orden"],
+                    "id": rid,
+                    "titulo": r["titulo"],
+                    "merito": "NO",
+                    "decision": "NO",
+                    "criterios": ["retrieval"],
+                    "motivo": msg[:500],
+                    "fuente": "integridad",
+                }
+            )
+            continue
+        s = shadow_by.get(rid)
+        if not s:
+            out.append(
+                {
+                    "orden": r["orden"],
+                    "id": rid,
+                    "titulo": r["titulo"],
+                    "merito": "NO",
+                    "decision": "NO",
+                    "criterios": [],
+                    "motivo": "Sin decisión en cribado-2.shadow.jsonl.",
+                    "fuente": "shadow",
+                }
+            )
+            continue
+        mer = shadow_to_merit(s)
+        out.append(
+            {
+                "orden": s.get("orden", r["orden"]),
+                "id": rid,
+                "titulo": r["titulo"],
+                "merito": mer,
+                "decision": mer,
+                "criterios": s.get("criterios") or [],
+                "motivo": (s.get("motivo") or "").strip(),
+                "fuente": "cribado-2.shadow.jsonl",
+            }
+        )
+    return out
+
+
+def cmd_polish_restore(theme: Path, corpus: Path, folder: Path, root: Path) -> int:
+    shadow_by, _ = load_shadow(folder)
+    if not shadow_by:
+        return error(
+            f"falta {SHADOW_JSONL} en {rel(folder, root)}",
+            f"pnpm -s cribado2:polish-report {rel(theme, root)} o completa lotes y merge",
+        )
+    cat = json.loads((corpus / "documentos.json").read_text(encoding="utf-8"))
+    out = decisions_from_shadow(cat, shadow_by, corpus)
+    w = work_dir(corpus)
+    (w / DECISIONES).write_text(
+        "".join(json.dumps(x, ensure_ascii=False) + "\n" for x in out), encoding="utf-8"
+    )
+    return ok(
+        f"{len(out)} decisiones restauradas desde shadow en {rel(w / DECISIONES, root)}",
+        f"pnpm -s cribado2:cuota {rel(theme, root)}",
+    )
+
+
 def cmd_polish_merge(theme: Path, corpus: Path, folder: Path, root: Path) -> int:
     cat = json.loads((corpus / "documentos.json").read_text(encoding="utf-8"))
     lotes = load_lotes(corpus)
@@ -140,20 +257,26 @@ def cmd_polish_merge(theme: Path, corpus: Path, folder: Path, root: Path) -> int
     missing = []
     for r in sorted(cat["registros"], key=lambda x: x["orden"]):
         rid = r["id"]
-        if rid not in lotes:
-            if r.get("sin_acceso") or r.get("descargado") != "si":
-                rec = {
+        if no_texto_completo(r):
+            out.append(decision_no_recuperado(r))
+            continue
+        if rid not in integrity_ok_ids(corpus):
+            rep = check_corpus(corpus)
+            msg = "; ".join((rep.get("by_id") or {}).get(rid) or ["PDF/MD no alineado"])
+            out.append(
+                {
                     "orden": r["orden"],
                     "id": rid,
                     "titulo": r["titulo"],
                     "merito": "NO",
                     "decision": "NO",
                     "criterios": ["retrieval"],
-                    "motivo": (r.get("porque") or "Sin texto completo.").strip()[:200],
-                    "fuente": "documentos.json",
+                    "motivo": msg[:500],
+                    "fuente": "integridad",
                 }
-                out.append(rec)
-                continue
+            )
+            continue
+        if rid not in lotes:
             missing.append(rid)
             continue
         raw = lotes[rid]
@@ -195,8 +318,11 @@ def cmd_cuota(theme: Path, corpus: Path, folder: Path, root: Path) -> int:
     if not dec_path.is_file():
         return error(f"falta {rel(dec_path, root)}", f"pnpm -s cribado2:polish-merge {rel(theme, root)}")
     decisions = [json.loads(l) for l in dec_path.read_text(encoding="utf-8").splitlines() if l.strip()]
-    idx = indexed_ids(corpus)
-    evaluables = [d for d in decisions if d["id"] in idx]
+    cat = json.loads((corpus / "documentos.json").read_text(encoding="utf-8"))
+    reg_by_id = {r["id"]: r for r in cat.get("registros") or []}
+    ev_ids = evaluable_ids(corpus)
+    evaluables = [d for d in decisions if d["id"] in ev_ids]
+    no_recuperados = sum(1 for r in cat.get("registros") or [] if no_texto_completo(r))
     min_rsl = read_cribado2_min_rsl(theme)
     nucleo = sum(1 for d in evaluables if d.get("merito") in ("SI", "PODRIA"))
     disponibles = len(evaluables)
@@ -241,7 +367,11 @@ def cmd_cuota(theme: Path, corpus: Path, folder: Path, root: Path) -> int:
         "objetivo": objetivo,
         "relleno_leve": relleno_leve,
         "relleno_alto": relleno_alto,
-        "aceptados_traza": sum(1 for d in decisions if d.get("decision") in ACCEPT_TIERS),
+        "aceptados_traza": sum(
+            1 for d in evaluables if d.get("decision") in ACCEPT_TIERS
+        ),
+        "evaluables": len(evaluables),
+        "no_recuperados": no_recuperados,
         "min_alcanzado": min_alcanzado,
     }
     (w / CUOTA_JSON).write_text(json.dumps(cuota, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -272,7 +402,13 @@ def cmd_polish_report(theme: Path, corpus: Path, folder: Path, root: Path) -> in
     h = decisions_hash(decisions)
     cat = json.loads((corpus / "documentos.json").read_text(encoding="utf-8"))
     by_id = {d["id"]: d for d in decisions}
-    counts = Counter(d.get("decision", "?") for d in decisions)
+    eval_decisions = [
+        d
+        for d in decisions
+        if not no_texto_completo(next((r for r in cat["registros"] if r["id"] == d["id"]), {}))
+    ]
+    counts = Counter(d.get("decision", "?") for d in eval_decisions)
+    n_no_rec = sum(1 for r in cat["registros"] if no_texto_completo(r))
 
     def cell(s: str, n: int = 55) -> str:
         s = " ".join((s or "").split()).replace("|", "/")
@@ -285,8 +421,10 @@ def cmd_polish_report(theme: Path, corpus: Path, folder: Path, root: Path) -> in
         f"",
         f"Picoc: `{cat['picoc']}` · Corpus: `{rel(corpus, root)}/`",
         f"",
-        f"Decisiones: SI {counts.get('SI', 0)} · PODRIA {counts.get('PODRIA', 0)} · "
+        f"Evaluados a texto completo ({len(eval_decisions)}): SI {counts.get('SI', 0)} · PODRIA {counts.get('PODRIA', 0)} · "
         f"RELLENO-LEVE {counts.get(RELLENO_LEVE, 0)} · RELLENO-ALTO {counts.get(RELLENO_ALTO, 0)} · NO {counts.get('NO', 0)}",
+        f"",
+        f"No recuperados (excluidos de evaluación): **{n_no_rec}**",
         f"",
     ]
     cuota_p = w / CUOTA_JSON
@@ -303,6 +441,8 @@ def cmd_polish_report(theme: Path, corpus: Path, folder: Path, root: Path) -> in
         "|---:|---|---|---|---|",
     ]
     for r in sorted(cat["registros"], key=lambda x: x["orden"]):
+        if no_texto_completo(r):
+            continue
         d = by_id.get(r["id"])
         if not d:
             lines.append(f"| {r['orden']} | {r['id']} | {cell(r['titulo'])} | — | sin decisión |")
@@ -311,6 +451,21 @@ def cmd_polish_report(theme: Path, corpus: Path, folder: Path, root: Path) -> in
             f"| {r['orden']} | {r['id']} | {cell(r['titulo'])} | {d['decision']} | {cell(d.get('motivo', ''), 90)} |"
         )
     lines.append("")
+    if n_no_rec:
+        lines += [
+            "## No recuperados (sin texto completo)",
+            "",
+            "| # | id | titulo | motivo |",
+            "|---:|---|---|---|",
+        ]
+        for r in sorted(cat["registros"], key=lambda x: x["orden"]):
+            if not no_texto_completo(r):
+                continue
+            d = by_id.get(r["id"]) or decision_no_recuperado(r)
+            lines.append(
+                f"| {r['orden']} | {r['id']} | {cell(r['titulo'])} | {cell(d.get('motivo', ''), 90)} |"
+            )
+        lines.append("")
     dest = corpus / EVAL_MD
     dest.write_text("\n".join(lines), encoding="utf-8")
     shadow_path = folder / SHADOW_JSONL
@@ -365,13 +520,6 @@ def load_shadow(folder: Path) -> tuple[dict[str, dict], str | None]:
     return by_id, meta.get("hash")
 
 
-def cribado1_justification(row: list[str], header: list[str]) -> tuple[str, str]:
-    """Devuelve (¿Se acepta? cribado 1, justificación cribado 1) de la fila del CSV unificado."""
-    if len(header) >= 2 and header[-2] == COL_OK and header[-1] == COL_WHY1 and len(row) >= len(header):
-        return (row[-2] or "NO").strip(), (row[-1] or "").strip()
-    return "NO", ""
-
-
 def motivo_csv(text: str, fallback: str) -> str:
     why = (text or fallback).strip()
     if not why:
@@ -415,6 +563,8 @@ def cmd_apply(theme: Path, corpus: Path, folder: Path, root: Path) -> int:
                 f"pnpm -s cribado2:polish-report {rel(theme, root)}",
             )
     by_id = shadow_by if shadow_by else {d["id"]: d for d in decisions}
+    cat = json.loads((corpus / "documentos.json").read_text(encoding="utf-8"))
+    reg_by_id = {r["id"]: r for r in cat.get("registros") or []}
     marco = pv.dir_marco(folder / "picoc.md") or "MARCO"
     src = folder / f"resultados-{marco}-cribado-1.csv"
     if not src.is_file():
@@ -428,24 +578,32 @@ def cmd_apply(theme: Path, corpus: Path, folder: Path, root: Path) -> int:
         base_header = header[:-2]
     else:
         base_header = header
+    c1_by_id = {row[0]: row for row in body if row}
     out_rows = []
-    assessed_ids = set(by_id)
     excluded_criteria: Counter[str] = Counter()
     included = 0
-    for row in body:
-        rid = row[0] if row else ""
-        d = by_id.get(rid)
-        c1_ok, c1_why = cribado1_justification(row, header)
-        if d:
-            acc = d.get("acepta") or csv_accept(d.get("decision", "NO"))
-            why = motivo_csv(d.get("motivo") or "", "Sin justificación en cribado 2.")
-            crits = d.get("criterios") or []
-            if acc == "NO" and crits:
-                for c in crits:
-                    excluded_criteria[str(c)] += 1
-        else:
+    assessed = 0
+    for r in sorted(cat["registros"], key=lambda x: x["orden"]):
+        rid = r["id"]
+        row = c1_by_id.get(rid)
+        if not row:
+            continue
+        if no_texto_completo(r):
             acc = "NO"
-            why = motivo_csv(c1_why, "Excluido en cribado 1.")
+            why = motivo_sin_acceso(r)
+        else:
+            assessed += 1
+            d = by_id.get(rid)
+            if not d:
+                acc = "NO"
+                why = motivo_csv("", "Sin decisión en cribado 2.")
+            else:
+                acc = d.get("acepta") or csv_accept(d.get("decision", "NO"))
+                why = motivo_csv(d.get("motivo") or "", "Sin justificación en cribado 2.")
+                crits = d.get("criterios") or []
+                if acc == "NO" and crits:
+                    for c in crits:
+                        excluded_criteria[str(c)] += 1
         if acc == "SI":
             included += 1
         out_rows.append(row[: len(base_header)] + [acc, why])
@@ -454,7 +612,7 @@ def cmd_apply(theme: Path, corpus: Path, folder: Path, root: Path) -> int:
         wcsv = csv.writer(fh, quoting=csv.QUOTE_ALL)
         wcsv.writerow(base_header + [COL_OK, COL_WHY2])
         wcsv.writerows(out_rows)
-    update_prisma_eligibility(folder, len(assessed_ids), included, dict(excluded_criteria))
+    update_prisma_eligibility(folder, assessed, included, dict(excluded_criteria))
     si = sum(1 for r in out_rows if r[-2] == "SI")
     return ok(
         f"{rel(dest, root)} con {len(out_rows)} registros (¿Se acepta? SI {si}, NO {len(out_rows) - si}); prisma eligibility actualizado",

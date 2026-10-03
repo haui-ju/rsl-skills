@@ -1,10 +1,12 @@
 {
   "min_rsl": 40,
-  "disponibles_indexados": 51,
-  "nucleo_si_podria": 34,
+  "disponibles_indexados": 49,
+  "nucleo_si_podria": 32,
   "objetivo": 40,
   "relleno_leve": 0,
   "relleno_alto": 0,
-  "aceptados_traza": 35,
+  "aceptados_traza": 32,
+  "evaluables": 49,
+  "no_recuperados": 1,
   "min_alcanzado": false
 }

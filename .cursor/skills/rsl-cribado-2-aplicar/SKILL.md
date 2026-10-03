@@ -1,6 +1,6 @@
 ---
 name: rsl-cribado-2-aplicar
-description: After the user approves cribado-2-evaluacion.md, writes resultados-<MARCO>-cribado-2.csv from the cribado-1 applied CSV (same rows; last two columns become ¿Se acepta? and Justificación cribado 2). Updates prisma.json eligibility/included. Use when the user says rsl-cribado-2-aplicar.
+description: After the user approves cribado-2-evaluacion.md, writes resultados-<MARCO>-cribado-2.csv for the cribado-2 corpus only (documentos.json rows; e.g. 52 SI retrieval). Binary ¿Se acepta? + Justificación cribado 2. Updates prisma.json eligibility/included. Use when the user says rsl-cribado-2-aplicar.
 ---
 
 # rsl-cribado-2-aplicar
@@ -22,12 +22,12 @@ Invoke: `Usa rsl-cribado-2-aplicar sobre docs/<slug>/`.
 
 ## CSV rules
 
-- Same rows and base columns as `resultados-<MARCO>-cribado-1.csv`.
-- Remove the last two columns of cribado 1 (`¿Se acepta?`, `Justificación cribado 1`).
-- Append **`¿Se acepta?`** and **`Justificación cribado 2`**.
-- `¿Se acepta?` = `SI` if final decision ∈ {SI, PODRIA, RELLENO-LEVE, RELLENO-ALTO}; else `NO`.
-- Justificación = plain `motivo` from `cribado-2.shadow.jsonl` (o `decisiones.jsonl` si no hay shadow); sin etiquetas PODRIA/relleno.
-- Filas **sin** decisión de texto completo (no están en el corpus cribado-2): `¿Se acepta?` = `NO` y **Justificación cribado 2** = la misma **Justificación cribado 1** del CSV de entrada (no usar mensaje genérico).
+- **Solo filas del corpus cribado-2** (`documentos.json`, mismo orden que `documentos.md`), no el CSV unificado completo de cribado 1.
+- Columnas bibliográficas = fila del `resultados-<MARCO>-cribado-1.csv` con el mismo `id` (sin columnas de cribado 1 al final).
+- Append **`¿Se acepta?`** y **`Justificación cribado 2`**.
+- `¿Se acepta?` = **`SI`** o **`NO`** únicamente (`SI` si decisión ∈ {SI, PODRIA, RELLENO-LEVE, RELLENO-ALTO}).
+- Justificación = prosa del `motivo` (shadow/decisiones); **sin** prefijos PODRIA/relleno.
+- No recuperado (`descargado≠si` / `sin_acceso`): **`NO`** y motivo breve de **sin acceso** (`porque` en `documentos.json` o «Sin acceso al texto completo.»).
 
 ## Procedure
 

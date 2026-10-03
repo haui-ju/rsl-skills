@@ -1,17 +1,19 @@
 # Cribado 2 — evaluación a texto completo
 
-<!-- cribado2:hash=e22c2c48fe33 -->
+<!-- cribado2:hash=634a4975ffef -->
 
 Picoc: `docs/ia-inclusion-cognitiva-software/picoc/2026-10-01-PICO/picoc.md` · Corpus: `docs/ia-inclusion-cognitiva-software/RSL/picoc/2026-10-01-cribado-2-PICO/`
 
-Decisiones: SI 19 · PODRIA 16 · RELLENO-LEVE 0 · RELLENO-ALTO 0 · NO 17
+Evaluados a texto completo (51): SI 18 · PODRIA 14 · RELLENO-LEVE 0 · RELLENO-ALTO 0 · NO 19
 
-Cuota: min_rsl **40** · núcleo **34** · objetivo **40** · aceptados traza **35** · min_alcanzado **no**
+No recuperados (excluidos de evaluación): **1**
+
+Cuota: min_rsl **40** · núcleo **32** · objetivo **40** · aceptados traza **32** · min_alcanzado **no**
 
 | # | id | titulo | decision | motivo |
 |---:|---|---|---|---|
 | 1 | R001 | A Novel Fuzzy Logic System for Real-Time Text Difficul… | PODRIA | PWA dislexia con fuzzy logic y React; IA en producto, fase SDLC no explícita. |
-| 2 | R002 | Conversational Voice User Interfaces Supporting Indivi… | PODRIA | MD del grafo no coincide con el PDF (contenido R001); re-prepare antes de decidir CI/CE. |
+| 2 | R002 | Conversational Voice User Interfaces Supporting Indivi… | NO | R002: DOI MD (10.3991/ijet.v15i05.11921) ≠ documentos (10.1145/3715160); título no coinci… |
 | 3 | R008 | Design and Implementation of a Voice-Based Electronic … | PODRIA | Sistema voz ANN/HMM con dislexia; implementación sin marco fase SDLC. |
 | 4 | R009 | Lexical Simplification System to Improve Web Accessibi… | PODRIA | Sistema ML simplificación léxica discapacidad intelectual/aprendizaje; no SDLC. |
 | 5 | R010 | Design and Evaluation of a Generative Artificial Intel… | PODRIA | LD y GenAI: marco y prototipo móvil planificado; evaluación empírica aún limitada. |
@@ -45,7 +47,7 @@ Cuota: min_rsl **40** · núcleo **34** · objetivo **40** · aceptados traza **
 | 33 | R083 | "A little bit of a life raft" - Exploring the Use and … | NO | Estudio cualitativo de apropiación de ChatGPT por adultos con TDAH; herramienta general n… |
 | 34 | R084 | Towards Inclusive Education: Multimodal Classification… | SI | Marco ML multimodal para clasificar imágenes de libros de texto orientado a trastornos de… |
 | 35 | R085 | Iris: A Content Management System Supporting Typograph… | SI | CMS Iris con LLM para simplificación tipográfica y accesibilidad; artefacto evaluado con … |
-| 36 | R091 | LLM Use in Early Prototyping | SI | Uso de LLM en prototipado temprano de la app NeuRoam para niños neurodivergentes alineada… |
+| 36 | R091 | LLM Use in Early Prototyping | NO | R091: MD sin DOI y título no coincide con el PDF indexado |
 | 37 | R093 | Affective User Experience (AUX) in Immersive Environme… | NO | Revisión sistemática PRISMA de experiencia afectiva en entornos inmersivos para TEA; no r… |
 | 38 | R094 | Rethinking Productivity with GenAI: A Neurodivergent S… | NO | Entrevistas sobre productividad académica con GenAI en estudiantes neurodivergentes; sin … |
 | 39 | R095 | PlanTEA-WM: A Multi-User Web Platform for Routine Plan… | SI | Plataforma web PlanTEA-WM con LLM que genera rutinas visuales para TEA; desarrollo de pla… |
@@ -61,4 +63,9 @@ Cuota: min_rsl **40** · núcleo **34** · objetivo **40** · aceptados traza **
 | 49 | R123 | AI testing, evaluation, verification and validation fo… | SI | Marco TEVV para pruebas, verificación y validación de IA en accesibilidad, centrado en ne… |
 | 50 | R132 | Large language models for autism: evaluating theory of… | NO | Juego gamificado con LLM para entrenar theory of mind en autismo; producto principal es t… |
 | 51 | R135 | UDL and AI-based educational personalization: effects … | NO | Cuasi-experimento escolar con personalización UDL y analítica adaptativa IA; intervención… |
-| 52 | R139 | Functionality, safety and usability of a digital platf… | PODRIA | Texto completo no recuperado (sin PDF; DOI/repositorio sin acceso); cribado 1 sugiere pla… |
+
+## No recuperados (sin texto completo)
+
+| # | id | titulo | motivo |
+|---:|---|---|---|
+| 52 | R139 | Functionality, safety and usability of a digital platf… | Sin acceso al texto completo (revisor); DOI Emerald 403 y repositorio sin PDF directo. |

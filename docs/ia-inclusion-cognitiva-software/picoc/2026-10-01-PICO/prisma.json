@@ -14,11 +14,12 @@
   },
   "retrieval": {
     "sought": 52,
-    "not_retrieved": 1
+    "not_retrieved": 2
   },
   "eligibility": {
-    "assessed": 52,
+    "assessed": 51,
     "excluded_reasons": {
+      "retrieval": 2,
       "CI4": 15,
       "CE3": 3,
       "CI3": 1,
@@ -26,7 +27,7 @@
     }
   },
   "included": {
-    "studies": 35,
-    "reports": 35
+    "studies": 32,
+    "reports": 32
   }
 }

@@ -1,6 +1,6 @@
-{"_meta": {"hash": "e22c2c48fe33", "corpus": "docs/ia-inclusion-cognitiva-software/RSL/picoc/2026-10-01-cribado-2-PICO", "stage": "cribado-2"}}
+{"_meta": {"hash": "634a4975ffef", "corpus": "docs/ia-inclusion-cognitiva-software/RSL/picoc/2026-10-01-cribado-2-PICO", "stage": "cribado-2"}}
 {"id": "R001", "orden": 1, "decision": "PODRIA", "acepta": "SI", "criterios": ["CI4"], "motivo": "PWA dislexia con fuzzy logic y React; IA en producto, fase SDLC no explícita."}
-{"id": "R002", "orden": 2, "decision": "PODRIA", "acepta": "SI", "criterios": ["retrieval"], "motivo": "MD del grafo no coincide con el PDF (contenido R001); re-prepare antes de decidir CI/CE."}
+{"id": "R002", "orden": 2, "decision": "NO", "acepta": "NO", "criterios": ["retrieval"], "motivo": "R002: DOI MD (10.3991/ijet.v15i05.11921) ≠ documentos (10.1145/3715160); título no coincide con p.1; R002: PDF duplicado del registro R001 (mismo sha256)"}
 {"id": "R008", "orden": 3, "decision": "PODRIA", "acepta": "SI", "criterios": ["CI4"], "motivo": "Sistema voz ANN/HMM con dislexia; implementación sin marco fase SDLC."}
 {"id": "R009", "orden": 4, "decision": "PODRIA", "acepta": "SI", "criterios": ["CI4"], "motivo": "Sistema ML simplificación léxica discapacidad intelectual/aprendizaje; no SDLC."}
 {"id": "R010", "orden": 5, "decision": "PODRIA", "acepta": "SI", "criterios": ["CI4"], "motivo": "LD y GenAI: marco y prototipo móvil planificado; evaluación empírica aún limitada."}
@@ -34,7 +34,7 @@
 {"id": "R083", "orden": 33, "decision": "NO", "acepta": "NO", "criterios": ["CI4"], "motivo": "Estudio cualitativo de apropiación de ChatGPT por adultos con TDAH; herramienta general no diseñada en el estudio ni fases de ingeniería de software reportadas."}
 {"id": "R084", "orden": 34, "decision": "SI", "acepta": "SI", "criterios": ["CI3", "CI4"], "motivo": "Marco ML multimodal para clasificar imágenes de libros de texto orientado a trastornos del neurodesarrollo; desarrollo e implementación del sistema de clasificación."}
 {"id": "R085", "orden": 35, "decision": "SI", "acepta": "SI", "criterios": ["CI3", "CI4"], "motivo": "CMS Iris con LLM para simplificación tipográfica y accesibilidad; artefacto evaluado con usuarios con dislexia y otras necesidades cognitivas (Abstract)."}
-{"id": "R091", "orden": 36, "decision": "SI", "acepta": "SI", "criterios": ["CI3", "CI4"], "motivo": "Uso de LLM en prototipado temprano de la app NeuRoam para niños neurodivergentes alineada WCAG/COGA; fase diseño explícita."}
+{"id": "R091", "orden": 36, "decision": "NO", "acepta": "NO", "criterios": ["retrieval"], "motivo": "R091: MD sin DOI y título no coincide con el PDF indexado"}
 {"id": "R093", "orden": 37, "decision": "NO", "acepta": "NO", "criterios": ["CI4"], "motivo": "Revisión sistemática PRISMA de experiencia afectiva en entornos inmersivos para TEA; no reporta intervención de IA en ciclo de vida del software del estudio."}
 {"id": "R094", "orden": 38, "decision": "NO", "acepta": "NO", "criterios": ["CI4"], "motivo": "Entrevistas sobre productividad académica con GenAI en estudiantes neurodivergentes; sin diseño, desarrollo ni evaluación de artefacto software."}
 {"id": "R095", "orden": 39, "decision": "SI", "acepta": "SI", "criterios": ["CI3", "CI4"], "motivo": "Plataforma web PlanTEA-WM con LLM que genera rutinas visuales para TEA; desarrollo de plataforma multiusuario (Abstract)."}
@@ -50,4 +50,4 @@
 {"id": "R123", "orden": 49, "decision": "SI", "acepta": "SI", "criterios": ["CI3", "CI4"], "motivo": "Marco TEVV para pruebas, verificación y validación de IA en accesibilidad, centrado en neurodiversidad; fase de testing/auditoría explícita."}
 {"id": "R132", "orden": 50, "decision": "NO", "acepta": "NO", "criterios": ["CE3"], "motivo": "Juego gamificado con LLM para entrenar theory of mind en autismo; producto principal es tutor/intervención social, sin intervención de IA en fases SDLC."}
 {"id": "R135", "orden": 51, "decision": "NO", "acepta": "NO", "criterios": ["CI4"], "motivo": "Cuasi-experimento escolar con personalización UDL y analítica adaptativa IA; intervención pedagógica sin reportar fase del ciclo de vida del software."}
-{"id": "R139", "orden": 52, "decision": "PODRIA", "acepta": "SI", "criterios": ["retrieval"], "motivo": "Texto completo no recuperado (sin PDF; DOI/repositorio sin acceso); cribado 1 sugiere plataforma con IA para funciones ejecutivas en SESN, pendiente confirmar CI/CE."}
+{"id": "R139", "orden": 52, "decision": "NO", "acepta": "NO", "criterios": ["retrieval"], "motivo": "Sin acceso al texto completo (revisor); DOI Emerald 403 y repositorio sin PDF directo."}
