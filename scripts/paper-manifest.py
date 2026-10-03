@@ -282,8 +282,9 @@ class Paper:
                 continue
             self.cfg["format"][ik] = m[v] if m else v
         states: dict[str, str] = {}
+        _SKIP_BLOCKS = frozenset({"formato", "cribado_2"})
         for key, block in human.items():
-            if key == "formato" or not isinstance(block, dict):
+            if key in _SKIP_BLOCKS or not isinstance(block, dict):
                 continue
             for sid, raw in block.items():
                 val = STATE_ALIASES.get(raw, raw.strip().lower() if isinstance(raw, str) else raw) if isinstance(raw, (str, bool)) else raw
